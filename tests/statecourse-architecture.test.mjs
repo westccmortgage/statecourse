@@ -37,10 +37,10 @@ test("all twenty-two launch courses remain distinct unapproved products", async 
 
 test("national homepage does not lead with Virginia", async () => {
   const homepage = await read("index.html");
-  assert.match(homepage, /Your real estate license starts with the right state course/);
+  assert.match(homepage, /Real estate licensing education, organized by state/);
   assert.match(homepage, /Professional pathways/);
   assert.match(homepage, /id="state-directory"/);
-  assert.ok(homepage.indexOf("Your real estate license") < homepage.indexOf('class="finder-code">VA'));
+  assert.ok(homepage.indexOf("Real estate licensing education") < homepage.indexOf('class="finder-code">VA'));
 });
 
 test("state course routes expose state-specific academic records", async () => {

@@ -131,41 +131,37 @@ body:not(.institution-home) .header-action:hover {
 }
 
 .institution-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(500px, .96fr);
-  min-height: 620px;
   background: var(--sc-navy);
   color: #fff;
 }
 
 .hero-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 76px clamp(42px, 4vw, 78px) 70px max(38px, calc((100vw - 1600px) / 2 + 38px));
+  width: min(100%, var(--sc-max));
+  margin: 0 auto;
+  padding: 52px 30px 30px;
 }
 
 .hero-copy .eyebrow { color: #e2bd74; }
 .hero-copy h1 {
-  max-width: 760px;
+  max-width: 980px;
   margin: 0;
   color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: clamp(45px, 4.4vw, 72px);
-  font-weight: 690;
-  line-height: 1.02;
-  letter-spacing: -.045em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 4.2vw, 62px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.025em;
 }
 
 .hero-lede {
-  max-width: 650px;
-  margin: 27px 0 0;
+  max-width: 900px;
+  margin: 18px 0 0;
   color: #d9e0e5;
-  font-size: 19px;
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.hero-actions { display: flex; gap: 25px; align-items: center; margin-top: 34px; }
+.hero-actions { display: flex; gap: 25px; align-items: center; margin-top: 25px; }
 .light-button {
   min-height: 50px;
   padding: 13px 20px;
@@ -177,50 +173,42 @@ body:not(.institution-home) .header-action:hover {
 .text-link-light { color: #fff; font-size: 13px; font-weight: 750; }
 .text-link-light:hover { text-decoration: underline; text-underline-offset: 4px; }
 
-.availability-note {
-  max-width: 680px;
-  margin: 42px 0 0;
-  padding-top: 18px;
+.hero-program-strip {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 34px;
   border-top: 1px solid rgba(255,255,255,.23);
+  border-bottom: 1px solid rgba(255,255,255,.23);
+}
+
+.hero-program-strip span,
+.hero-program-strip a {
+  padding: 13px 19px;
+  border-right: 1px solid rgba(255,255,255,.18);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.hero-program-strip span {
+  padding-left: 0;
+  color: #e2bd74;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.hero-program-strip a:hover { background: rgba(255,255,255,.08); }
+
+.availability-note {
+  max-width: none;
+  margin: 15px 0 0;
   color: #b7c2ca;
   font-size: 12px;
 }
 .availability-note strong { color: #fff; }
-
-.hero-photo {
-  position: relative;
-  min-height: 620px;
-  margin: 0;
-  overflow: hidden;
-  background: #c8bd9f;
-}
-
-.hero-photo::after {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(20,40,59,.24), transparent 28%);
-  content: "";
-  pointer-events: none;
-}
-
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 47%;
-  filter: saturate(.76) contrast(1.03);
-}
-
-.hero-photo figcaption {
-  position: absolute;
-  z-index: 2;
-  right: 22px;
-  bottom: 18px;
-  padding: 9px 12px;
-  background: rgba(12,27,42,.86);
-  color: #fff;
-  font-size: 10px;
-}
 
 .course-finder {
   display: grid;
@@ -527,8 +515,6 @@ body:not(.institution-home) .course-app,
 body:not(.institution-home) .maine-learning-shell { box-shadow: 0 12px 34px rgba(19,38,56,.08); }
 
 @media (max-width: 1080px) {
-  .institution-hero { grid-template-columns: 1.08fr .92fr; }
-  .hero-copy { padding-right: 45px; }
   .course-finder { grid-template-columns: 1fr; gap: 25px; }
   .program-record { grid-template-columns: 100px 1fr 270px; }
   .standards-section { grid-template-columns: 1fr 1.25fr; }
@@ -541,10 +527,7 @@ body:not(.institution-home) .maine-learning-shell { box-shadow: 0 12px 34px rgba
   body:not(.institution-home) .primary-nav { display: none; }
   .institutional-header .header-inner,
   body:not(.institution-home) .header-inner { grid-template-columns: 1fr auto; }
-  .institution-hero { grid-template-columns: 1fr; min-height: 0; }
-  .hero-copy { padding: 65px 30px 58px; }
-  .hero-photo { min-height: 420px; max-height: 520px; }
-  .hero-photo img { object-position: 50% 42%; }
+  .hero-copy { padding-top: 46px; }
   .institution-section-heading { grid-template-columns: 1fr; gap: 24px; }
   .institution-section-heading > p { max-width: 680px; }
   .program-record { grid-template-columns: 86px 1fr; }
@@ -569,13 +552,14 @@ body:not(.institution-home) .maine-learning-shell { box-shadow: 0 12px 34px rgba
   .institutional-header .header-action,
   body:not(.institution-home) .header-action { padding: 9px 11px; font-size: 10px; }
 
-  .hero-copy { padding: 52px 20px 45px; }
-  .hero-copy h1 { font-size: clamp(38px, 11vw, 52px); }
+  .hero-copy { padding: 40px 20px 26px; }
+  .hero-copy h1 { font-size: clamp(36px, 10vw, 48px); }
   .hero-lede { font-size: 16px; }
-  .hero-actions { align-items: flex-start; flex-direction: column; }
-  .availability-note { margin-top: 32px; }
-  .hero-photo { min-height: 350px; height: 62vw; }
-  .hero-photo figcaption { right: 12px; bottom: 12px; left: 12px; text-align: center; }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .hero-program-strip { align-items: stretch; flex-wrap: wrap; margin-top: 28px; }
+  .hero-program-strip span { width: 100%; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+  .hero-program-strip a { flex: 1 1 50%; padding-left: 0; }
+  .availability-note { margin-top: 13px; }
 
   .course-finder { padding: 35px 20px; }
   .finder-options > a { grid-template-columns: 35px 1fr; gap: 14px; }
