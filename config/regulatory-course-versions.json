@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "allowed_statuses": [
+    "development",
+    "submitted",
+    "regulator_correction",
+    "approved"
+  ],
+  "courses": [
+    {
+      "course_id": "wi-salesperson-prelicense-v1",
+      "title": "Wisconsin Salesperson Pre-License v1.0",
+      "state": "WI",
+      "version": "1.0",
+      "status": "development",
+      "submitted_at": null,
+      "regulator_correction_at": null,
+      "approved_at": null,
+      "effective_date": null,
+      "expiration_date": null,
+      "course_approval_number": null,
+      "instructor_id": null,
+      "enrollment_enabled": false
+    },
+    {
+      "course_id": "mo-salesperson-preexam-48-v1",
+      "title": "Missouri Salesperson Pre-Exam 48h v1.0",
+      "state": "MO",
+      "version": "1.0",
+      "status": "development",
+      "submitted_at": null,
+      "regulator_correction_at": null,
+      "approved_at": null,
+      "effective_date": null,
+      "expiration_date": null,
+      "course_approval_number": null,
+      "instructor_id": null,
+      "enrollment_enabled": false
+    },
+    {
+      "course_id": "mo-real-estate-practice-24-v1",
+      "title": "Missouri Real Estate Practice 24h v1.0",
+      "state": "MO",
+      "version": "1.0",
+      "status": "development",
+      "submitted_at": null,
+      "regulator_correction_at": null,
+      "approved_at": null,
+      "effective_date": null,
+      "expiration_date": null,
+      "course_approval_number": null,
+      "instructor_id": null,
+      "enrollment_enabled": false
+    },
+    {
+      "course_id": "ok-basic-prelicense-90-v1",
+      "title": "Oklahoma Basic Pre-License 90h v1.0",
+      "state": "OK",
+      "version": "1.0",
+      "status": "development",
+      "submitted_at": null,
+      "regulator_correction_at": null,
+      "approved_at": null,
+      "effective_date": null,
+      "expiration_date": null,
+      "course_approval_number": null,
+      "instructor_id": null,
+      "enrollment_enabled": false
+    }
+  ]
+}

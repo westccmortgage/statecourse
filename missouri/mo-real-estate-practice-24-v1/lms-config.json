@@ -1,0 +1,182 @@
+{
+  "schema_version": "2.0",
+  "course_id": "mo-real-estate-practice-24-v1",
+  "payment_product_id": "mo-real-estate-practice-24",
+  "state": "MO",
+  "title": "Missouri Real Estate Practice 24h",
+  "version": "1.0",
+  "lifecycle": {
+    "status": "development",
+    "allowed_statuses": [
+      "development",
+      "submitted",
+      "regulator_correction",
+      "approved"
+    ],
+    "effective_date": null,
+    "expiration_date": null,
+    "course_approval_number": null,
+    "enrollment_enabled": false,
+    "credit_enabled": false
+  },
+  "regulator": "Missouri Real Estate Commission",
+  "required_hours": 24,
+  "delivery": {
+    "mode": "asynchronous_distance",
+    "approval_pending": true,
+    "active_time_server_authoritative": true,
+    "concurrent_sessions": false,
+    "idle_time_excluded": true,
+    "module_sequence_required": true,
+    "enrollment_validity_days": null
+  },
+  "instructor": {
+    "instructor_id": null,
+    "regulator_approval_required": true,
+    "approval_number": null,
+    "approval_expiration": null,
+    "response_sla": "end_of_next_regular_business_day",
+    "oklahoma_exam_minimum_each": null
+  },
+  "assessment": {
+    "module_quizzes": true,
+    "remediation_required": true,
+    "final_forms": 2,
+    "questions_per_form": 50,
+    "passing_percent": 75,
+    "passing_percent_source": "regulatory",
+    "secure_bank_public": false
+  },
+  "records": {
+    "retention_years": 4,
+    "audit_log": true,
+    "final_exam_administration": true
+  },
+  "reporting": {
+    "completion_roster_days": 10,
+    "completion_time_statistics": {
+      "automated": true,
+      "due_month_days": [
+        "01-31",
+        "07-31"
+      ],
+      "less_than_submitted_threshold_percent": 50,
+      "correction_window_days": 10
+    }
+  },
+  "certificate": {
+    "template": "mo-real-estate-practice-24-v1-draft",
+    "enabled": false,
+    "requires_valid_approval": true,
+    "requires_valid_instructor": true
+  },
+  "stripe": {
+    "enabled": false,
+    "price_cents": null,
+    "one_time": true,
+    "approval_gate": true
+  },
+  "modules": [
+    {
+      "id": "MO24-01",
+      "title": "Broker Disclosure Form",
+      "hours": 1,
+      "authority": "20 CSR 2250-6.060(2)(A)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "MO24-02",
+      "title": "Listing a property",
+      "hours": 3,
+      "authority": "20 CSR 2250-6.060(2)(B)",
+      "national_core": [
+        "NC-AGY",
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "MO24-03",
+      "title": "Buyer representation",
+      "hours": 3,
+      "authority": "20 CSR 2250-6.060(2)(C)",
+      "national_core": [
+        "NC-AGY",
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "MO24-04",
+      "title": "Dual agency and transaction brokerage",
+      "hours": 2,
+      "authority": "20 CSR 2250-6.060(2)(D)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "MO24-05",
+      "title": "Termination, compensation, and cooperation",
+      "hours": 2,
+      "authority": "20 CSR 2250-6.060(2)(E)-(G)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "MO24-06",
+      "title": "Obligations to clients and customers",
+      "hours": 2,
+      "authority": "20 CSR 2250-6.060(2)(H)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "MO24-07",
+      "title": "Pricing property and the appraiser's role",
+      "hours": 2,
+      "authority": "20 CSR 2250-6.060(2)(I)-(J)",
+      "national_core": [
+        "NC-VAL"
+      ]
+    },
+    {
+      "id": "MO24-08",
+      "title": "Financing and closing costs",
+      "hours": 2,
+      "authority": "20 CSR 2250-6.060(2)(K)-(L)",
+      "national_core": [
+        "NC-FIN"
+      ]
+    },
+    {
+      "id": "MO24-09",
+      "title": "Contracts and earnest money",
+      "hours": 4,
+      "authority": "20 CSR 2250-6.060(2)(M)-(N)",
+      "national_core": [
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "MO24-10",
+      "title": "Avoiding misrepresentation",
+      "hours": 2,
+      "authority": "20 CSR 2250-6.060(2)(O)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "MO24-11",
+      "title": "Types of construction",
+      "hours": 1,
+      "authority": "20 CSR 2250-6.060(2)(P)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    }
+  ]
+}

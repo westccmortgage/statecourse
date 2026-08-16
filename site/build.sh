@@ -22,8 +22,14 @@ test -f dist/content/curriculum/hours-46-60.md
 test -f dist/data/state-registry.json
 test -f dist/real-estate/virginia/pre-license/principles-and-practices/index.html
 test -f dist/real-estate/maine/pre-license/sales-agent/index.html
+test -f dist/real-estate/wisconsin/pre-license/salesperson/index.html
+test -f dist/real-estate/missouri/pre-license/salesperson-pre-exam/index.html
+test -f dist/real-estate/missouri/pre-license/real-estate-practice/index.html
+test -f dist/real-estate/oklahoma/pre-license/basic/index.html
+test -f dist/data/launch-course-frameworks.json
 test -f dist/enroll/index.html
 test -f dist/admin/payments/index.html
 
-node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==50) process.exit(1)'
+node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==50) process.exit(1); for(const c of ["VA","ME","WI","MO","OK"]) if(r.states.find(s=>s.state_code===c)?.public_status!=="In Development") process.exit(1)'
+node -e 'const c=require("./dist/data/course-catalog.json"); if(c.categories[0].programs.flatMap(p=>p.courses).length!==6) process.exit(1)'
 ! find dist -type f -print | grep -Eq 'final-exam-bank|answer-key'

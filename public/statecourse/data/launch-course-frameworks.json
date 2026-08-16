@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0",
+  "last_regulatory_review": "2026-08-16",
+  "courses": [
+    {
+      "course_id": "wi-salesperson-prelicense-v1",
+      "state": "WI",
+      "state_name": "Wisconsin",
+      "title": "Wisconsin Salesperson Pre-License",
+      "version": "1.0",
+      "required_hours": 72,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/wisconsin/pre-license/salesperson/",
+      "regulator": "Wisconsin Department of Safety and Professional Services / Real Estate Examining Board",
+      "delivery": "Online distance education — proposed; approval pending",
+      "modules": [
+        {
+          "id": "WI-01",
+          "title": "Real property and the real estate business",
+          "hours": 5
+        },
+        {
+          "id": "WI-02",
+          "title": "Brokerage and agency",
+          "hours": 7
+        },
+        {
+          "id": "WI-03",
+          "title": "Listing agreements",
+          "hours": 5
+        },
+        {
+          "id": "WI-04",
+          "title": "Interests and legal descriptions",
+          "hours": 6
+        },
+        {
+          "id": "WI-05",
+          "title": "Taxes and other liens",
+          "hours": 4
+        },
+        {
+          "id": "WI-06",
+          "title": "Real estate contracts and approved forms",
+          "hours": 12
+        },
+        {
+          "id": "WI-07",
+          "title": "Title records and transfer",
+          "hours": 5
+        },
+        {
+          "id": "WI-08",
+          "title": "Finance and basic math",
+          "hours": 7
+        },
+        {
+          "id": "WI-09",
+          "title": "Appraisal and market analysis",
+          "hours": 4
+        },
+        {
+          "id": "WI-10",
+          "title": "Fair housing, ethics, and consumer protection",
+          "hours": 7
+        },
+        {
+          "id": "WI-11",
+          "title": "Leases and property management",
+          "hours": 4
+        },
+        {
+          "id": "WI-12",
+          "title": "Land use and environmental concerns",
+          "hours": 3
+        },
+        {
+          "id": "WI-13",
+          "title": "Wisconsin license law, trust funds, and escrow",
+          "hours": 3
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment and credit unavailable."
+    },
+    {
+      "course_id": "mo-salesperson-preexam-48-v1",
+      "state": "MO",
+      "state_name": "Missouri",
+      "title": "Missouri Salesperson Pre-Exam 48h",
+      "version": "1.0",
+      "required_hours": 48,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/missouri/pre-license/salesperson-pre-exam/",
+      "regulator": "Missouri Real Estate Commission",
+      "delivery": "Online / correspondence / home study distance delivery — approval pending",
+      "modules": [
+        {
+          "id": "MO48-01",
+          "title": "Property ownership and land use",
+          "hours": 7
+        },
+        {
+          "id": "MO48-02",
+          "title": "Valuation and market analysis",
+          "hours": 5
+        },
+        {
+          "id": "MO48-03",
+          "title": "Contracts",
+          "hours": 8
+        },
+        {
+          "id": "MO48-04",
+          "title": "Agency and brokerage",
+          "hours": 6
+        },
+        {
+          "id": "MO48-05",
+          "title": "Disclosures and environmental risk",
+          "hours": 3
+        },
+        {
+          "id": "MO48-06",
+          "title": "Real estate finance",
+          "hours": 6
+        },
+        {
+          "id": "MO48-07",
+          "title": "Transfer, title, and settlement",
+          "hours": 4
+        },
+        {
+          "id": "MO48-08",
+          "title": "Practice, leasing, and property management",
+          "hours": 4
+        },
+        {
+          "id": "MO48-09",
+          "title": "Real estate calculations",
+          "hours": 3
+        },
+        {
+          "id": "MO48-10",
+          "title": "Missouri examination and compliance integration",
+          "hours": 2
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment and credit unavailable."
+    },
+    {
+      "course_id": "mo-real-estate-practice-24-v1",
+      "state": "MO",
+      "state_name": "Missouri",
+      "title": "Missouri Real Estate Practice 24h",
+      "version": "1.0",
+      "required_hours": 24,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/missouri/pre-license/real-estate-practice/",
+      "regulator": "Missouri Real Estate Commission",
+      "delivery": "Online / correspondence / home study distance delivery — approval pending",
+      "modules": [
+        {
+          "id": "MO24-01",
+          "title": "Broker Disclosure Form",
+          "hours": 1
+        },
+        {
+          "id": "MO24-02",
+          "title": "Listing a property",
+          "hours": 3
+        },
+        {
+          "id": "MO24-03",
+          "title": "Buyer representation",
+          "hours": 3
+        },
+        {
+          "id": "MO24-04",
+          "title": "Dual agency and transaction brokerage",
+          "hours": 2
+        },
+        {
+          "id": "MO24-05",
+          "title": "Termination, compensation, and cooperation",
+          "hours": 2
+        },
+        {
+          "id": "MO24-06",
+          "title": "Obligations to clients and customers",
+          "hours": 2
+        },
+        {
+          "id": "MO24-07",
+          "title": "Pricing property and the appraiser's role",
+          "hours": 2
+        },
+        {
+          "id": "MO24-08",
+          "title": "Financing and closing costs",
+          "hours": 2
+        },
+        {
+          "id": "MO24-09",
+          "title": "Contracts and earnest money",
+          "hours": 4
+        },
+        {
+          "id": "MO24-10",
+          "title": "Avoiding misrepresentation",
+          "hours": 2
+        },
+        {
+          "id": "MO24-11",
+          "title": "Types of construction",
+          "hours": 1
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment and credit unavailable."
+    },
+    {
+      "course_id": "ok-basic-prelicense-90-v1",
+      "state": "OK",
+      "state_name": "Oklahoma",
+      "title": "Oklahoma Basic Pre-License 90h",
+      "version": "1.0",
+      "required_hours": 90,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/oklahoma/pre-license/basic/",
+      "regulator": "Oklahoma Real Estate Commission",
+      "delivery": "Online distance education — approval pending",
+      "modules": [
+        {
+          "id": "OK-01",
+          "title": "Real Estate Economics and Marketing",
+          "hours": 3
+        },
+        {
+          "id": "OK-02",
+          "title": "Nature of Real Estate",
+          "hours": 3
+        },
+        {
+          "id": "OK-03",
+          "title": "Rights and Interest in Real Estate",
+          "hours": 4
+        },
+        {
+          "id": "OK-04",
+          "title": "Legal Descriptions",
+          "hours": 2
+        },
+        {
+          "id": "OK-05",
+          "title": "Title Search, Encumbrances, and Land Use Control",
+          "hours": 5
+        },
+        {
+          "id": "OK-06",
+          "title": "Transfer of Rights",
+          "hours": 4
+        },
+        {
+          "id": "OK-07",
+          "title": "Service Contracts",
+          "hours": 3
+        },
+        {
+          "id": "OK-08",
+          "title": "Estimating Transaction Expenses",
+          "hours": 3
+        },
+        {
+          "id": "OK-09",
+          "title": "Value and Appraisal",
+          "hours": 4
+        },
+        {
+          "id": "OK-10",
+          "title": "Marketing Activities",
+          "hours": 3
+        },
+        {
+          "id": "OK-11",
+          "title": "Fair Housing",
+          "hours": 4
+        },
+        {
+          "id": "OK-12",
+          "title": "Contract Law Overview",
+          "hours": 4
+        },
+        {
+          "id": "OK-13",
+          "title": "Contract Law and Performance",
+          "hours": 5
+        },
+        {
+          "id": "OK-14",
+          "title": "Offers and Purchase Contracts",
+          "hours": 6
+        },
+        {
+          "id": "OK-15",
+          "title": "Financing Real Estate",
+          "hours": 7
+        },
+        {
+          "id": "OK-16",
+          "title": "Closing a Transaction",
+          "hours": 4
+        },
+        {
+          "id": "OK-17",
+          "title": "Regulations Affecting Real Estate",
+          "hours": 6
+        },
+        {
+          "id": "OK-18",
+          "title": "Disclosures and Environmental Issues",
+          "hours": 4
+        },
+        {
+          "id": "OK-19",
+          "title": "Property Management and Leasing",
+          "hours": 4
+        },
+        {
+          "id": "OK-20",
+          "title": "Risk Management",
+          "hours": 3
+        },
+        {
+          "id": "OK-21",
+          "title": "Professional Standards of Conduct",
+          "hours": 3
+        },
+        {
+          "id": "OK-22",
+          "title": "Law of Agency",
+          "hours": 6
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment and credit unavailable."
+    }
+  ]
+}

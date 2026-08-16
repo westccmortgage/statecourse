@@ -1,0 +1,839 @@
+{
+  "schema_version": "1.0",
+  "national_core": [
+    "NC-OWN",
+    "NC-CON",
+    "NC-AGY",
+    "NC-FIN",
+    "NC-VAL",
+    "NC-FH",
+    "NC-TTL",
+    "NC-PM",
+    "NC-INV"
+  ],
+  "states": {
+    "wi-salesperson-prelicense-v1": {
+      "schema_version": "2.0",
+      "course_id": "wi-salesperson-prelicense-v1",
+      "payment_product_id": "wi-salesperson",
+      "state": "WI",
+      "title": "Wisconsin Salesperson Pre-License",
+      "version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "allowed_statuses": [
+          "development",
+          "submitted",
+          "regulator_correction",
+          "approved"
+        ],
+        "effective_date": null,
+        "expiration_date": null,
+        "course_approval_number": null,
+        "enrollment_enabled": false,
+        "credit_enabled": false
+      },
+      "regulator": "Wisconsin Department of Safety and Professional Services / Real Estate Examining Board",
+      "required_hours": 72,
+      "delivery": {
+        "mode": "asynchronous_distance",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "concurrent_sessions": false,
+        "idle_time_excluded": true,
+        "module_sequence_required": true,
+        "enrollment_validity_days": null
+      },
+      "instructor": {
+        "instructor_id": null,
+        "regulator_approval_required": true,
+        "approval_number": null,
+        "approval_expiration": null,
+        "response_sla": "reasonable_times_and_means",
+        "oklahoma_exam_minimum_each": null
+      },
+      "assessment": {
+        "module_quizzes": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 100,
+        "passing_percent": 75,
+        "passing_percent_source": "provider_proposal_pending_approval",
+        "secure_bank_public": false
+      },
+      "records": {
+        "retention_years": 5,
+        "audit_log": true,
+        "final_exam_administration": false
+      },
+      "reporting": {
+        "regulator_workflow": "pending_approval_configuration"
+      },
+      "certificate": {
+        "template": "wi-salesperson-prelicense-v1-draft",
+        "enabled": false,
+        "requires_valid_approval": true,
+        "requires_valid_instructor": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "one_time": true,
+        "approval_gate": true
+      },
+      "modules": [
+        {
+          "id": "WI-01",
+          "title": "Real property and the real estate business",
+          "hours": 5,
+          "authority": "REEB 25.033(1)-(2)",
+          "national_core": [
+            "NC-OWN",
+            "NC-INV"
+          ]
+        },
+        {
+          "id": "WI-02",
+          "title": "Brokerage and agency",
+          "hours": 7,
+          "authority": "REEB 25.033(3)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "WI-03",
+          "title": "Listing agreements",
+          "hours": 5,
+          "authority": "REEB 25.033(4)",
+          "national_core": [
+            "NC-AGY",
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "WI-04",
+          "title": "Interests and legal descriptions",
+          "hours": 6,
+          "authority": "REEB 25.033(5)-(6)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "WI-05",
+          "title": "Taxes and other liens",
+          "hours": 4,
+          "authority": "REEB 25.033(7)",
+          "national_core": [
+            "NC-OWN",
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "WI-06",
+          "title": "Real estate contracts and approved forms",
+          "hours": 12,
+          "authority": "REEB 25.033(8)",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "WI-07",
+          "title": "Title records and transfer",
+          "hours": 5,
+          "authority": "REEB 25.033(9)",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "WI-08",
+          "title": "Finance and basic math",
+          "hours": 7,
+          "authority": "REEB 25.033(10)",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "WI-09",
+          "title": "Appraisal and market analysis",
+          "hours": 4,
+          "authority": "REEB 25.033(11)",
+          "national_core": [
+            "NC-VAL",
+            "NC-INV"
+          ]
+        },
+        {
+          "id": "WI-10",
+          "title": "Fair housing, ethics, and consumer protection",
+          "hours": 7,
+          "authority": "REEB 25.033(12)-(14)",
+          "national_core": [
+            "NC-FH",
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "WI-11",
+          "title": "Leases and property management",
+          "hours": 4,
+          "authority": "REEB 25.033(15)-(16)",
+          "national_core": [
+            "NC-PM",
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "WI-12",
+          "title": "Land use and environmental concerns",
+          "hours": 3,
+          "authority": "REEB 25.033(17)-(18)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "WI-13",
+          "title": "Wisconsin license law, trust funds, and escrow",
+          "hours": 3,
+          "authority": "REEB 25.033(19)",
+          "national_core": [
+            "NC-AGY",
+            "NC-TTL"
+          ]
+        }
+      ]
+    },
+    "mo-salesperson-preexam-48-v1": {
+      "schema_version": "2.0",
+      "course_id": "mo-salesperson-preexam-48-v1",
+      "payment_product_id": "mo-salesperson-preexam-48",
+      "state": "MO",
+      "title": "Missouri Salesperson Pre-Exam 48h",
+      "version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "allowed_statuses": [
+          "development",
+          "submitted",
+          "regulator_correction",
+          "approved"
+        ],
+        "effective_date": null,
+        "expiration_date": null,
+        "course_approval_number": null,
+        "enrollment_enabled": false,
+        "credit_enabled": false
+      },
+      "regulator": "Missouri Real Estate Commission",
+      "required_hours": 48,
+      "delivery": {
+        "mode": "asynchronous_distance",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "concurrent_sessions": false,
+        "idle_time_excluded": true,
+        "module_sequence_required": true,
+        "enrollment_validity_days": null
+      },
+      "instructor": {
+        "instructor_id": null,
+        "regulator_approval_required": true,
+        "approval_number": null,
+        "approval_expiration": null,
+        "response_sla": "end_of_next_regular_business_day",
+        "oklahoma_exam_minimum_each": null
+      },
+      "assessment": {
+        "module_quizzes": true,
+        "remediation_required": true,
+        "final_forms": 2,
+        "questions_per_form": 50,
+        "passing_percent": 75,
+        "passing_percent_source": "regulatory",
+        "secure_bank_public": false
+      },
+      "records": {
+        "retention_years": 4,
+        "audit_log": true,
+        "final_exam_administration": true
+      },
+      "reporting": {
+        "completion_roster_days": 10,
+        "completion_time_statistics": {
+          "automated": true,
+          "due_month_days": [
+            "01-31",
+            "07-31"
+          ],
+          "less_than_submitted_threshold_percent": 50,
+          "correction_window_days": 10
+        }
+      },
+      "certificate": {
+        "template": "mo-salesperson-preexam-48-v1-draft",
+        "enabled": false,
+        "requires_valid_approval": true,
+        "requires_valid_instructor": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "one_time": true,
+        "approval_gate": true
+      },
+      "modules": [
+        {
+          "id": "MO48-01",
+          "title": "Property ownership and land use",
+          "hours": 7,
+          "authority": "Current testing-service outline required by 20 CSR 2250-6.060(1)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "MO48-02",
+          "title": "Valuation and market analysis",
+          "hours": 5,
+          "authority": "Testing-service content outline",
+          "national_core": [
+            "NC-VAL",
+            "NC-INV"
+          ]
+        },
+        {
+          "id": "MO48-03",
+          "title": "Contracts",
+          "hours": 8,
+          "authority": "Testing-service content outline",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "MO48-04",
+          "title": "Agency and brokerage",
+          "hours": 6,
+          "authority": "Testing-service content outline; Missouri law layer",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "MO48-05",
+          "title": "Disclosures and environmental risk",
+          "hours": 3,
+          "authority": "Testing-service content outline; Missouri law layer",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "MO48-06",
+          "title": "Real estate finance",
+          "hours": 6,
+          "authority": "Testing-service content outline",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "MO48-07",
+          "title": "Transfer, title, and settlement",
+          "hours": 4,
+          "authority": "Testing-service content outline",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "MO48-08",
+          "title": "Practice, leasing, and property management",
+          "hours": 4,
+          "authority": "Testing-service content outline",
+          "national_core": [
+            "NC-PM",
+            "NC-FH"
+          ]
+        },
+        {
+          "id": "MO48-09",
+          "title": "Real estate calculations",
+          "hours": 3,
+          "authority": "Testing-service content outline",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "MO48-10",
+          "title": "Missouri examination and compliance integration",
+          "hours": 2,
+          "authority": "20 CSR 2250-6.060(1)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        }
+      ]
+    },
+    "mo-real-estate-practice-24-v1": {
+      "schema_version": "2.0",
+      "course_id": "mo-real-estate-practice-24-v1",
+      "payment_product_id": "mo-real-estate-practice-24",
+      "state": "MO",
+      "title": "Missouri Real Estate Practice 24h",
+      "version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "allowed_statuses": [
+          "development",
+          "submitted",
+          "regulator_correction",
+          "approved"
+        ],
+        "effective_date": null,
+        "expiration_date": null,
+        "course_approval_number": null,
+        "enrollment_enabled": false,
+        "credit_enabled": false
+      },
+      "regulator": "Missouri Real Estate Commission",
+      "required_hours": 24,
+      "delivery": {
+        "mode": "asynchronous_distance",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "concurrent_sessions": false,
+        "idle_time_excluded": true,
+        "module_sequence_required": true,
+        "enrollment_validity_days": null
+      },
+      "instructor": {
+        "instructor_id": null,
+        "regulator_approval_required": true,
+        "approval_number": null,
+        "approval_expiration": null,
+        "response_sla": "end_of_next_regular_business_day",
+        "oklahoma_exam_minimum_each": null
+      },
+      "assessment": {
+        "module_quizzes": true,
+        "remediation_required": true,
+        "final_forms": 2,
+        "questions_per_form": 50,
+        "passing_percent": 75,
+        "passing_percent_source": "regulatory",
+        "secure_bank_public": false
+      },
+      "records": {
+        "retention_years": 4,
+        "audit_log": true,
+        "final_exam_administration": true
+      },
+      "reporting": {
+        "completion_roster_days": 10,
+        "completion_time_statistics": {
+          "automated": true,
+          "due_month_days": [
+            "01-31",
+            "07-31"
+          ],
+          "less_than_submitted_threshold_percent": 50,
+          "correction_window_days": 10
+        }
+      },
+      "certificate": {
+        "template": "mo-real-estate-practice-24-v1-draft",
+        "enabled": false,
+        "requires_valid_approval": true,
+        "requires_valid_instructor": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "one_time": true,
+        "approval_gate": true
+      },
+      "modules": [
+        {
+          "id": "MO24-01",
+          "title": "Broker Disclosure Form",
+          "hours": 1,
+          "authority": "20 CSR 2250-6.060(2)(A)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "MO24-02",
+          "title": "Listing a property",
+          "hours": 3,
+          "authority": "20 CSR 2250-6.060(2)(B)",
+          "national_core": [
+            "NC-AGY",
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "MO24-03",
+          "title": "Buyer representation",
+          "hours": 3,
+          "authority": "20 CSR 2250-6.060(2)(C)",
+          "national_core": [
+            "NC-AGY",
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "MO24-04",
+          "title": "Dual agency and transaction brokerage",
+          "hours": 2,
+          "authority": "20 CSR 2250-6.060(2)(D)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "MO24-05",
+          "title": "Termination, compensation, and cooperation",
+          "hours": 2,
+          "authority": "20 CSR 2250-6.060(2)(E)-(G)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "MO24-06",
+          "title": "Obligations to clients and customers",
+          "hours": 2,
+          "authority": "20 CSR 2250-6.060(2)(H)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "MO24-07",
+          "title": "Pricing property and the appraiser's role",
+          "hours": 2,
+          "authority": "20 CSR 2250-6.060(2)(I)-(J)",
+          "national_core": [
+            "NC-VAL"
+          ]
+        },
+        {
+          "id": "MO24-08",
+          "title": "Financing and closing costs",
+          "hours": 2,
+          "authority": "20 CSR 2250-6.060(2)(K)-(L)",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "MO24-09",
+          "title": "Contracts and earnest money",
+          "hours": 4,
+          "authority": "20 CSR 2250-6.060(2)(M)-(N)",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "MO24-10",
+          "title": "Avoiding misrepresentation",
+          "hours": 2,
+          "authority": "20 CSR 2250-6.060(2)(O)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "MO24-11",
+          "title": "Types of construction",
+          "hours": 1,
+          "authority": "20 CSR 2250-6.060(2)(P)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        }
+      ]
+    },
+    "ok-basic-prelicense-90-v1": {
+      "schema_version": "2.0",
+      "course_id": "ok-basic-prelicense-90-v1",
+      "payment_product_id": "ok-basic-prelicense-90",
+      "state": "OK",
+      "title": "Oklahoma Basic Pre-License 90h",
+      "version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "allowed_statuses": [
+          "development",
+          "submitted",
+          "regulator_correction",
+          "approved"
+        ],
+        "effective_date": null,
+        "expiration_date": null,
+        "course_approval_number": null,
+        "enrollment_enabled": false,
+        "credit_enabled": false
+      },
+      "regulator": "Oklahoma Real Estate Commission",
+      "required_hours": 90,
+      "delivery": {
+        "mode": "asynchronous_distance",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "concurrent_sessions": false,
+        "idle_time_excluded": true,
+        "module_sequence_required": true,
+        "enrollment_validity_days": 183
+      },
+      "instructor": {
+        "instructor_id": null,
+        "regulator_approval_required": true,
+        "approval_number": null,
+        "approval_expiration": null,
+        "response_sla": "posted_normal_business_hours",
+        "oklahoma_exam_minimum_each": 80
+      },
+      "assessment": {
+        "module_quizzes": true,
+        "remediation_required": true,
+        "final_forms": 2,
+        "questions_per_form": 150,
+        "passing_percent": 75,
+        "passing_percent_source": "regulatory",
+        "secure_bank_public": false
+      },
+      "records": {
+        "retention_years": 5,
+        "audit_log": true,
+        "final_exam_administration": false
+      },
+      "reporting": {
+        "regulator_workflow": "pending_approval_configuration"
+      },
+      "certificate": {
+        "template": "ok-basic-prelicense-90-v1-draft",
+        "enabled": false,
+        "requires_valid_approval": true,
+        "requires_valid_instructor": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "one_time": true,
+        "approval_gate": true
+      },
+      "modules": [
+        {
+          "id": "OK-01",
+          "title": "Real Estate Economics and Marketing",
+          "hours": 3,
+          "authority": "OAC 605:10-3-1(a)(1)(A)",
+          "national_core": [
+            "NC-INV"
+          ]
+        },
+        {
+          "id": "OK-02",
+          "title": "Nature of Real Estate",
+          "hours": 3,
+          "authority": "OAC 605:10-3-1(a)(1)(B)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "OK-03",
+          "title": "Rights and Interest in Real Estate",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(C)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "OK-04",
+          "title": "Legal Descriptions",
+          "hours": 2,
+          "authority": "OAC 605:10-3-1(a)(1)(D)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "OK-05",
+          "title": "Title Search, Encumbrances, and Land Use Control",
+          "hours": 5,
+          "authority": "OAC 605:10-3-1(a)(1)(E)",
+          "national_core": [
+            "NC-OWN",
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "OK-06",
+          "title": "Transfer of Rights",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(F)",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "OK-07",
+          "title": "Service Contracts",
+          "hours": 3,
+          "authority": "OAC 605:10-3-1(a)(1)(G)",
+          "national_core": [
+            "NC-AGY",
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "OK-08",
+          "title": "Estimating Transaction Expenses",
+          "hours": 3,
+          "authority": "OAC 605:10-3-1(a)(1)(H)",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "OK-09",
+          "title": "Value and Appraisal",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(I)",
+          "national_core": [
+            "NC-VAL"
+          ]
+        },
+        {
+          "id": "OK-10",
+          "title": "Marketing Activities",
+          "hours": 3,
+          "authority": "OAC 605:10-3-1(a)(1)(J)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "OK-11",
+          "title": "Fair Housing",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(K)",
+          "national_core": [
+            "NC-FH"
+          ]
+        },
+        {
+          "id": "OK-12",
+          "title": "Contract Law Overview",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(L)",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "OK-13",
+          "title": "Contract Law and Performance",
+          "hours": 5,
+          "authority": "OAC 605:10-3-1(a)(1)(M)",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "OK-14",
+          "title": "Offers and Purchase Contracts",
+          "hours": 6,
+          "authority": "OAC 605:10-3-1(a)(1)(N)",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "OK-15",
+          "title": "Financing Real Estate",
+          "hours": 7,
+          "authority": "OAC 605:10-3-1(a)(1)(O)",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "OK-16",
+          "title": "Closing a Transaction",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(P)",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "OK-17",
+          "title": "Regulations Affecting Real Estate",
+          "hours": 6,
+          "authority": "OAC 605:10-3-1(a)(1)(Q)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "OK-18",
+          "title": "Disclosures and Environmental Issues",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(R)",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "OK-19",
+          "title": "Property Management and Leasing",
+          "hours": 4,
+          "authority": "OAC 605:10-3-1(a)(1)(S)",
+          "national_core": [
+            "NC-PM"
+          ]
+        },
+        {
+          "id": "OK-20",
+          "title": "Risk Management",
+          "hours": 3,
+          "authority": "OAC 605:10-3-1(a)(1)(T)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "OK-21",
+          "title": "Professional Standards of Conduct",
+          "hours": 3,
+          "authority": "OAC 605:10-3-1(a)(1)(U)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "OK-22",
+          "title": "Law of Agency",
+          "hours": 6,
+          "authority": "OAC 605:10-3-1(a)(1)(V)",
+          "national_core": [
+            "NC-AGY"
+          ]
+        }
+      ]
+    }
+  }
+}
