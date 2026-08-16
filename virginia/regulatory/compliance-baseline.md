@@ -25,7 +25,8 @@ The following are provider choices, **not representations of Virginia-mandated t
 
 - Formative knowledge checks: 80% mastery target, unlimited guided retries after feedback.
 - Unit quizzes: 75% required before progression; alternate-item retry after remediation.
-- Monitored final written assessment: 80 scored multiple-choice items, 120-minute limit, 75% passing score.
+- Monitored final written assessment: 50 scored multiple-choice items, 100-minute limit, 75% passing score (38 correct).
+- Final Form A and alternate Form B each contain two items for every required 18VAC135-20-400 subject and do not repeat items.
 - Final retake: one alternate-form retake after assigned remediation; additional attempts require instructor review.
 - Final exam time is excluded from the 3,000 instructional minutes.
 - Course clock advances only during verified active instructional engagement.
