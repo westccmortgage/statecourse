@@ -4,7 +4,7 @@ export default function Home() {
       <iframe
         className="site-frame"
         src="/statecourse/index.html"
-        title="StateCourse Virginia 60-Hour Course"
+        title="StateCourse national professional licensing education catalog"
       />
     </main>
   );

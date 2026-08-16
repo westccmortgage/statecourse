@@ -1,8 +1,28 @@
-const curriculumFiles = [
-  "content/curriculum/hours-01-15.md",
-  "content/curriculum/hours-16-30.md",
-  "content/curriculum/hours-31-45.md",
-  "content/curriculum/hours-46-60.md",
+const contentRoot = document.body.dataset.contentRoot || "content/curriculum/";
+const courseId = document.body.dataset.courseId || "va-salesperson-principles-v1";
+const curriculumFiles = ["hours-01-15.md", "hours-16-30.md", "hours-31-45.md", "hours-46-60.md"]
+  .map((file) => `${contentRoot}${file}`);
+const storageKeys = {
+  reviewed: `statecourse:${courseId}:previewed-hours`,
+  lastHour: `statecourse:${courseId}:last-hour`,
+};
+
+const moduleTitles = [
+  "Foundations of practice",
+  "Ownership and interests",
+  "Land use and title",
+  "Brokerage relationships",
+  "Contracts and agreements",
+  "Finance fundamentals",
+  "Mortgage lending",
+  "Valuation and mathematics",
+  "Listing practice",
+  "Buyer representation",
+  "Transaction management",
+  "Settlement and closing",
+  "Fair housing and disclosure",
+  "Virginia law integration",
+  "Professional readiness",
 ];
 
 const state = {
@@ -93,7 +113,7 @@ function parseHours(markdown) {
 
 function loadReviewed() {
   try {
-    const saved = JSON.parse(localStorage.getItem("statecourse-previewed-hours") || "[]");
+    const saved = JSON.parse(localStorage.getItem(storageKeys.reviewed) || "[]");
     state.reviewed = new Set(saved.filter((value) => Number.isInteger(value)));
   } catch {
     state.reviewed = new Set();
@@ -101,7 +121,7 @@ function loadReviewed() {
 }
 
 function saveReviewed() {
-  localStorage.setItem("statecourse-previewed-hours", JSON.stringify([...state.reviewed].sort((a, b) => a - b)));
+  localStorage.setItem(storageKeys.reviewed, JSON.stringify([...state.reviewed].sort((a, b) => a - b)));
 }
 
 function renderProgress() {
@@ -121,8 +141,9 @@ function renderDays() {
     const last = first + 3;
     return `
       <button class="day-button" type="button" data-day-hour="${first}">
-        <span>Day ${String(index + 1).padStart(2, "0")}</span>
-        <strong>${String(first).padStart(2, "0")}–${String(last).padStart(2, "0")}</strong>
+        <span>Unit ${String(index + 1).padStart(2, "0")}</span>
+        <strong>${escapeHtml(moduleTitles[index])}</strong>
+        <em>Hours ${String(first).padStart(2, "0")}–${String(last).padStart(2, "0")}</em>
       </button>`;
   }).join("");
 }
@@ -220,7 +241,7 @@ function renderLesson() {
 function selectHour(number, shouldScroll = false) {
   if (!state.hours.some((hour) => hour.number === number)) return;
   state.selected = number;
-  localStorage.setItem("statecourse-last-hour", String(number));
+  localStorage.setItem(storageKeys.lastHour, String(number));
   history.replaceState(null, "", `#hour-${String(number).padStart(2, "0")}`);
   renderHourList();
   renderLesson();
@@ -243,7 +264,7 @@ async function loadCourse() {
     if (state.hours.length !== 60) throw new Error(`Expected 60 hours; loaded ${state.hours.length}`);
 
     const hashHour = Number(location.hash.match(/hour-(\d{1,2})/)?.[1]);
-    const savedHour = Number(localStorage.getItem("statecourse-last-hour"));
+    const savedHour = Number(localStorage.getItem(storageKeys.lastHour));
     state.selected = hashHour || savedHour || 1;
     if (state.selected < 1 || state.selected > 60) state.selected = 1;
 

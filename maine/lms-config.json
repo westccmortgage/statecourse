@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "productId": "me-sales-agent-prelicense",
+  "state": "ME",
+  "jurisdiction": "Maine Real Estate Commission",
+  "courseTitle": "The Sales Agent Course",
+  "displayTitle": "Maine Real Estate Sales Agent Pre-License",
+  "deliveryMode": "asynchronous_internet_distance",
+  "regulatoryStatus": "submission_draft_not_approved",
+  "approvalNumber": null,
+  "approvalEffectiveDate": null,
+  "approvalExpirationDate": null,
+  "enrollmentEnabled": false,
+  "qualifyingCreditEnabled": false,
+  "requiredMinutes": 3300,
+  "instructionMinutes": 3000,
+  "assessmentMinutes": 300,
+  "assessmentPercentOfCourse": 9.09,
+  "topicWeightsPercent": {
+    "introduction": 1,
+    "industryOrganization": 1,
+    "maineRealEstateCommission": 13,
+    "agencyRelationships": 13,
+    "productKnowledge": 28,
+    "valuationAndAppraisal": 9,
+    "financing": 9,
+    "contracts": 14,
+    "closings": 8,
+    "miscFederalStateLaw": 4
+  },
+  "assessments": {
+    "quizCount": 3,
+    "quizItemsTotal": 60,
+    "finalItems": 80,
+    "objectiveItemsOnly": true,
+    "overallPassingPercent": 75,
+    "quizProgressionThresholdPercent": 75,
+    "quizProgressionThresholdRegulatorConfirmed": false,
+    "remediationRequiredAfterIncorrectAnswer": true,
+    "finalAvailableAfterRequiredMinutes": true
+  },
+  "caseStudiesRequired": 2,
+  "completionDeadlineDays": null,
+  "refundPolicyVersion": "PENDING",
+  "cancellationPolicyVersion": "PENDING",
+  "disclosureVersion": "ME-QE-PENDING",
+  "instructorOfRecord": null,
+  "instructorResumeApproved": false,
+  "distanceCertification": {
+    "pathway": "PENDING_REGULATOR_CONFIRMATION",
+    "arelloIdeccCertificateId": null,
+    "alternativeAcceptanceLetterId": null
+  },
+  "timer": {
+    "countsOnlyActiveForegroundEngagement": true,
+    "idleAfterSeconds": 300,
+    "idlePolicySource": "StateCourse proposed integrity control; Maine does not publish a mandatory timeout",
+    "idlePolicyRegulatorConfirmed": false,
+    "heartbeatSeconds": 30,
+    "minimumPageTimeEnforced": true,
+    "serverAuthoritative": true,
+    "assessmentTimeSeparated": true
+  },
+  "certificate": {
+    "issueOnlyAfterPassing": true,
+    "requiredFields": [
+      "schoolName",
+      "courseTitle",
+      "studentLegalName",
+      "instructorName",
+      "numericGrade",
+      "courseStartDate",
+      "courseCompletionDate",
+      "authorizedOfficialSignature"
+    ]
+  },
+  "reporting": {
+    "enrollmentReportDueDaysAfterCompletion": 30,
+    "evaluationSummaryIncluded": true,
+    "individualEvaluationsSentToCommission": false
+  },
+  "payments": {
+    "provider": "stripe_checkout",
+    "productionEnabled": false,
+    "paymentDoesNotControlCompliance": true
+  }
+}

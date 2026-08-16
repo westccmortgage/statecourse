@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "categories": [
+    {
+      "category_id": "real-estate",
+      "title": "Real Estate",
+      "status": "active",
+      "programs": [
+        {
+          "program_id": "va-salesperson-prelicense",
+          "state_code": "VA",
+          "program_type": "Salesperson Pre-License",
+          "courses": [
+            {
+              "course_id": "va-principles-practices-v1",
+              "state_id": "VA",
+              "program_type": "Salesperson Pre-License",
+              "course_title": "Principles & Practices of Real Estate",
+              "regulator": "Virginia Real Estate Board",
+              "required_hours": 60,
+              "approved_hours": null,
+              "delivery_method": "Online · self-directed",
+              "approval_status": "In Development / Preparing Submission",
+              "approval_number": null,
+              "approval_date": null,
+              "expiration_date": null,
+              "instructor_id": null,
+              "price": null,
+              "enrollment_enabled": false,
+              "refund_policy_version": "va-draft-pending",
+              "disclosures_version": "va-draft-pending",
+              "course_version": "1.0-draft",
+              "final_exam_rules": "Secure administration package; no public bank",
+              "certificate_template": "va-pending-approval",
+              "reporting_rules": "Pending Board approval",
+              "route": "/real-estate/virginia/pre-license/principles-and-practices/"
+            }
+          ]
+        },
+        {
+          "program_id": "me-sales-agent-prelicense",
+          "state_code": "ME",
+          "program_type": "Sales Agent Pre-License",
+          "courses": [
+            {
+              "course_id": "me-sales-agent-v1",
+              "state_id": "ME",
+              "program_type": "Sales Agent Pre-License",
+              "course_title": "Maine Real Estate Sales Agent Pre-License",
+              "regulator": "Maine Real Estate Commission",
+              "required_hours": 55,
+              "approved_hours": null,
+              "delivery_method": "Online distance education",
+              "approval_status": "In Development",
+              "approval_number": null,
+              "approval_date": null,
+              "expiration_date": null,
+              "instructor_id": null,
+              "price": null,
+              "enrollment_enabled": false,
+              "refund_policy_version": "me-draft-pending",
+              "disclosures_version": "me-draft-pending",
+              "course_version": "1.0-draft",
+              "final_exam_rules": "Minimum 80 objective questions, official topic weighting, administered at end; overall course grade at least 75%.",
+              "certificate_template": "me-qe-sales-agent-draft",
+              "reporting_rules": "Enrollment report and evaluation summary within 30 days; continuous-course batching requires written confirmation.",
+              "route": "/real-estate/maine/pre-license/sales-agent/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "mortgage",
+      "title": "Mortgage / NMLS",
+      "status": "future",
+      "programs": []
+    },
+    {
+      "category_id": "continuing-education",
+      "title": "Continuing Education",
+      "status": "future",
+      "programs": []
+    },
+    {
+      "category_id": "broker-education",
+      "title": "Broker Education",
+      "status": "future",
+      "programs": []
+    },
+    {
+      "category_id": "exam-prep",
+      "title": "Exam Prep",
+      "status": "future",
+      "programs": []
+    }
+  ]
+}

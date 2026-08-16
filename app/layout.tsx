@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "StateCourse | Virginia 60-Hour Real Estate Course",
+  title: "StateCourse | Licensing Education, State by State",
   description:
-    "Preview the StateCourse Virginia 60-hour real estate pre-license curriculum, hour by hour.",
+    "Professional licensing education organized by category, state, program, and approved course.",
   other: {
     "codex-preview": "development",
   },

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" /><meta name="theme-color" content="#172536" />
+    <title>Enrollment | StateCourse</title><link rel="icon" href="../favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="enrollment-page">
+    <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-seal" aria-hidden="true">S</span><span><strong>StateCourse</strong><small>Professional Licensing Education</small></span></a><nav class="enrollment-steps" aria-label="Enrollment steps"><span>1 State</span><span>2 Course</span><span>3 Disclosures</span><span>4 Payment</span></nav><a class="header-action" href="../index.html">Course catalog</a></div></header>
+    <main class="enrollment-shell">
+      <div class="enrollment-heading"><p class="section-kicker">Enrollment</p><h1>Choose the course governed by your state.</h1><p>Payment cannot begin until the selected course is approved, enrollment-enabled, and its current disclosures are accepted.</p></div>
+      <div class="payment-status-banner" id="paymentStatus" role="status">Checking payment availability…</div>
+      <form id="enrollmentForm" class="enrollment-form">
+        <section><div class="form-section-title"><span>01</span><div><p>State &amp; Course</p><h2>Select one state-specific product</h2></div></div><div class="course-choice-grid" id="courseChoices"></div></section>
+        <section><div class="form-section-title"><span>02</span><div><p>Student</p><h2>Confirm the learner record</h2></div></div><div class="student-fields"><label><span>Legal first name</span><input name="firstName" autocomplete="given-name" required /></label><label><span>Legal last name</span><input name="lastName" autocomplete="family-name" required /></label><label class="wide-field"><span>Email</span><input name="email" type="email" autocomplete="email" required /></label></div><p class="field-note">Production checkout will require an authenticated StateCourse student account. A sandbox QA identifier may be generated only when test mode is explicitly enabled.</p></section>
+        <section><div class="form-section-title"><span>03</span><div><p>Required Review</p><h2>Disclosures and acknowledgments</h2></div></div><div class="disclosure-record" id="disclosureRecord"><p>Select a course to load its state-specific disclosure record.</p></div><div class="acknowledgments" id="acknowledgments"></div></section>
+        <section><div class="form-section-title"><span>04</span><div><p>Payment</p><h2>Continue to Stripe Checkout</h2></div></div><div class="checkout-record"><div><strong>Stripe-hosted payment</strong><p>StateCourse never collects or stores raw card numbers or CVV data. Cards and supported Apple Pay / Google Pay wallets are handled by Stripe Checkout.</p></div><button id="checkoutButton" type="submit" disabled>Enrollment unavailable</button></div><p class="checkout-message" id="checkoutMessage"></p></section>
+      </form>
+    </main>
+    <footer class="site-footer"><div><a class="brand footer-brand" href="../index.html"><span class="brand-seal" aria-hidden="true">S</span><span><strong>StateCourse</strong></span></a><p>State-specific enrollment and payment controls</p></div><p>Production Stripe credentials and settlement banking are not configured.</p></footer>
+    <script src="../enrollment.js" defer></script>
+  </body>
+</html>
