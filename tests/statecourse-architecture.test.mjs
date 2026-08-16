@@ -27,9 +27,10 @@ test("Virginia and Maine remain distinct unapproved course products", async () =
 
 test("national homepage does not lead with Virginia", async () => {
   const homepage = await read("index.html");
-  assert.match(homepage, /Licensing Education,[\s\S]*State by State/);
+  assert.match(homepage, /Your real estate license starts with the right state course/);
+  assert.match(homepage, /Professional pathways/);
   assert.match(homepage, /id="state-directory"/);
-  assert.ok(homepage.indexOf("Licensing Education") < homepage.indexOf("Virginia Real Estate"));
+  assert.ok(homepage.indexOf("Your real estate license") < homepage.indexOf('class="finder-code">VA'));
 });
 
 test("state course routes expose state-specific academic records", async () => {

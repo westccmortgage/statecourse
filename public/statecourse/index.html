@@ -3,92 +3,120 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="StateCourse — professional licensing education organized state by state." />
-    <meta name="theme-color" content="#172536" />
-    <title>StateCourse | Licensing Education, State by State</title>
+    <meta name="description" content="StateCourse — state-specific real estate licensing education and professional course pathways." />
+    <meta name="theme-color" content="#14283b" />
+    <title>StateCourse | Professional Licensing Education</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="institutional-v2.css" />
   </head>
-  <body class="catalog-page">
-    <a class="skip-link" href="#state-directory">Skip to state directory</a>
-    <header class="site-header">
+  <body class="catalog-page institution-home">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="utility-bar">
+      <div><span>StateCourse School of Real Estate</span><nav aria-label="Student services"><a href="#programs">Course catalog</a><a href="#state-directory">State directory</a><span class="utility-muted">Student login coming soon</span></nav></div>
+    </div>
+    <header class="site-header institutional-header">
       <div class="header-inner">
-        <a class="brand" href="/" aria-label="StateCourse home">
-          <span class="brand-seal" aria-hidden="true">S</span>
+        <a class="brand" href="index.html" aria-label="StateCourse home">
+          <span class="brand-seal" aria-hidden="true">SC</span>
           <span><strong>StateCourse</strong><small>Professional Licensing Education</small></span>
         </a>
         <nav class="primary-nav" aria-label="Primary navigation">
-          <a href="#paths">License paths</a><a href="#states-in-development">Current programs</a><a href="#state-directory">All states</a>
+          <a href="#programs">Programs</a><a href="#pathways">Career pathways</a><a href="#state-directory">States</a><a href="#standards">Academic standards</a>
         </nav>
-        <a class="header-action" href="#state-directory">Choose your state</a>
+        <a class="header-action" href="#programs">Find a course</a>
       </div>
     </header>
 
-    <main>
-      <section class="national-intro">
-        <div class="national-intro-inner">
-          <p class="catalog-label">Professional education across regulated markets</p>
-          <h1>Licensing Education,<br />State by State.</h1>
-          <p class="national-lede">StateCourse organizes serious professional education around the rules that actually govern it: the learner’s profession, state, license path, approved course, instructor, and completion record.</p>
-          <div class="masthead-actions"><a class="primary-button" href="#state-directory">Choose your state</a><a class="secondary-link" href="#paths">Choose your license path <span aria-hidden="true">↓</span></a></div>
+    <main id="main-content">
+      <section class="institution-hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Online professional education</p>
+          <h1 id="hero-title">Your real estate license starts with the right state course.</h1>
+          <p class="hero-lede">State-specific pre-license education organized around official requirements, substantive instruction, and a clear path from enrollment to completion.</p>
+          <div class="hero-actions"><a class="primary-button light-button" href="#programs">Explore current programs</a><a class="text-link-light" href="#state-directory">Browse all 50 states <span aria-hidden="true">→</span></a></div>
+          <p class="availability-note"><strong>Current availability:</strong> Virginia and Maine course previews are in development. Enrollment and regulatory credit are not yet available.</p>
         </div>
-        <aside class="institution-note" aria-label="Institutional approach">
-          <p class="section-kicker">The StateCourse Standard</p>
-          <blockquote>Education first. Licensing second. Technology quietly underneath.</blockquote>
-          <p>Every regulated course maintains its own approval record, instructor, timed curriculum, assessments, reporting rules, and certificate controls.</p>
-        </aside>
+        <figure class="hero-photo">
+          <img src="images/adult-student-classroom.jpg" alt="An adult learner seated in a sunlit classroom" width="1800" height="2700" />
+          <figcaption>Professional education designed for focused, independent study.</figcaption>
+        </figure>
       </section>
 
-      <section class="path-section" id="paths">
-        <div class="section-intro">
-          <p class="section-number">01</p>
-          <div><p class="section-kicker">Choose Your License Path</p><h2>One institution, organized around professional outcomes.</h2></div>
-        </div>
-        <div class="path-grid">
-          <article class="path-card active-path"><p>Current category</p><h3>Real Estate</h3><span>Pre-License · Broker Education · Continuing Education · Exam Prep</span><a href="#state-directory">Explore by state →</a></article>
-          <article class="path-card"><p>Future category</p><h3>Mortgage / NMLS</h3><span>State and federal education pathways</span><small>Framework ready · programs not yet available</small></article>
-          <article class="path-card"><p>Future expansion</p><h3>Other Licensed Professions</h3><span>Configuration-led professional education</span><small>Programs will be added after regulatory research</small></article>
+      <section class="course-finder" aria-labelledby="finder-title">
+        <div class="finder-heading"><p class="eyebrow">Course finder</p><h2 id="finder-title">Choose a state to review its course.</h2></div>
+        <div class="finder-options">
+          <a href="real-estate/virginia/pre-license/principles-and-practices/"><span class="finder-code">VA</span><span><strong>Virginia</strong><small>Salesperson Pre-License · 60 hours</small></span><em>View course <span aria-hidden="true">→</span></em></a>
+          <a href="real-estate/maine/pre-license/sales-agent/"><span class="finder-code">ME</span><span><strong>Maine</strong><small>Sales Agent Pre-License · 55 hours</small></span><em>View course <span aria-hidden="true">→</span></em></a>
+          <a class="all-states-option" href="#state-directory"><span class="finder-code">50</span><span><strong>All states</strong><small>Research and development registry</small></span><em>Browse directory <span aria-hidden="true">↓</span></em></a>
         </div>
       </section>
 
-      <section class="development-section" id="states-in-development">
-        <div class="section-intro light-intro">
-          <p class="section-number">02</p>
-          <div><p class="section-kicker">Programs in Development</p><h2>The first state implementations inside a national framework.</h2></div>
+      <section class="pathways-section" id="pathways">
+        <div class="institution-section-heading">
+          <div><p class="eyebrow">Professional pathways</p><h2>Education for each stage of a real estate career.</h2></div>
+          <p>Programs are separated by state, license type, and regulatory approval record. A course in one jurisdiction never inherits another state’s rules.</p>
         </div>
-        <div class="featured-state-grid">
-          <article class="featured-state">
-            <div class="state-monogram">VA</div><div><p class="state-status">In Development · Preparing Submission</p><h3>Virginia Real Estate Salesperson Pre-License</h3><p>Principles &amp; Practices of Real Estate · 60 hours</p><a href="real-estate/virginia/pre-license/principles-and-practices/">View Virginia course →</a></div>
+        <div class="pathway-list">
+          <article><span>01</span><div><h3>Pre-License Education</h3><p>Required education before a first salesperson or sales agent license application.</p></div><a href="#programs">Current programs →</a></article>
+          <article><span>02</span><div><h3>Exam Preparation</h3><p>Practice and review products designed separately from qualifying education.</p></div><small>Planned</small></article>
+          <article><span>03</span><div><h3>Continuing Education</h3><p>State-specific renewal education with its own topics, timing, and reporting.</p></div><small>Planned</small></article>
+          <article><span>04</span><div><h3>Broker Education</h3><p>Advanced qualifying education for future broker and supervisory roles.</p></div><small>Planned</small></article>
+        </div>
+      </section>
+
+      <section class="programs-section" id="programs" aria-labelledby="programs-title">
+        <div class="institution-section-heading compact-heading">
+          <div><p class="eyebrow">Programs in development</p><h2 id="programs-title">Review the first StateCourse curricula.</h2></div>
+          <p>These public previews show the educational structure and submission status. They are not enrollment offers.</p>
+        </div>
+        <div class="program-records">
+          <article class="program-record">
+            <div class="program-state"><span>Virginia</span><strong>VA</strong></div>
+            <div class="program-main"><p class="program-status"><i></i> Submission preparation</p><h3>Real Estate Salesperson Pre-License</h3><p>Principles &amp; Practices of Real Estate</p><a href="real-estate/virginia/pre-license/principles-and-practices/">Review the Virginia course <span aria-hidden="true">→</span></a></div>
+            <dl class="program-facts"><div><dt>Course length</dt><dd>60 required hours</dd></div><div><dt>Method</dt><dd>Online, self-directed</dd></div><div><dt>Approval</dt><dd>Not yet approved</dd></div><div><dt>Enrollment</dt><dd>Closed</dd></div></dl>
           </article>
-          <article class="featured-state">
-            <div class="state-monogram">ME</div><div><p class="state-status">In Development</p><h3>Maine Real Estate Sales Agent Pre-License</h3><p>Commission-aligned distance education · 55 hours</p><a href="real-estate/maine/pre-license/sales-agent/">View Maine requirements →</a></div>
+          <article class="program-record">
+            <div class="program-state"><span>Maine</span><strong>ME</strong></div>
+            <div class="program-main"><p class="program-status"><i></i> Course in development</p><h3>Real Estate Sales Agent Pre-License</h3><p>The Sales Agent Course</p><a href="real-estate/maine/pre-license/sales-agent/">Review the Maine course <span aria-hidden="true">→</span></a></div>
+            <dl class="program-facts"><div><dt>Course length</dt><dd>55 required hours</dd></div><div><dt>Method</dt><dd>Online distance education</dd></div><div><dt>Approval</dt><dd>Not yet approved</dd></div><div><dt>Enrollment</dt><dd>Closed</dd></div></dl>
           </article>
         </div>
-        <p class="approval-footnote">Neither course is approved or open for enrollment. Public status changes only after written regulator action is recorded.</p>
       </section>
 
-      <section class="directory-section" id="state-directory">
+      <section class="student-path-section" aria-labelledby="student-path-title">
+        <div class="institution-section-heading light-heading"><div><p class="eyebrow">The student path</p><h2 id="student-path-title">A clear route through regulated education.</h2></div><p>Payment, instruction, assessment, and regulatory credit remain distinct parts of the record.</p></div>
+        <ol class="student-path">
+          <li><span>1</span><h3>Select your state course</h3><p>Review hours, instructor, status, curriculum, and required disclosures.</p></li>
+          <li><span>2</span><h3>Enroll after approval</h3><p>Accept the correct policy versions, then complete secure checkout.</p></li>
+          <li><span>3</span><h3>Complete the curriculum</h3><p>Study required lessons, time, knowledge checks, quizzes, and remediation.</p></li>
+          <li><span>4</span><h3>Meet completion rules</h3><p>The LMS verifies exam eligibility, passing results, and certificate controls.</p></li>
+        </ol>
+      </section>
+
+      <section class="directory-section modern-directory" id="state-directory">
         <div class="directory-heading">
-          <div><p class="section-kicker">50-State Registry</p><h2>Find your state.</h2><p>Search all 50 state configurations. Regulatory details are published only after official-source review.</p></div>
+          <div><p class="eyebrow">National course registry</p><h2>Find your state.</h2><p>Search the 50-state development registry. Course details appear only after official-source review.</p></div>
           <div class="directory-controls">
-            <label><span>Search</span><input id="stateSearch" type="search" placeholder="State name or code" /></label>
-            <label><span>Status</span><select id="statusFilter"><option value="all">All statuses</option><option>In Development</option><option>In Research</option><option>Submitted</option><option>Pending Approval</option><option>Approved</option><option>Not Started</option><option>Not Available</option></select></label>
+            <label><span>Search by state</span><input id="stateSearch" type="search" placeholder="State name or code" /></label>
+            <label><span>Program status</span><select id="statusFilter"><option value="all">All statuses</option><option>In Development</option><option>In Research</option><option>Submitted</option><option>Pending Approval</option><option>Approved</option><option>Not Started</option><option>Not Available</option></select></label>
           </div>
         </div>
         <div class="directory-summary" id="directorySummary">Loading the national registry…</div>
         <div class="state-directory-grid" id="stateDirectory" aria-live="polite"></div>
       </section>
 
-      <section class="national-compliance">
-        <div><p class="section-kicker">Regulatory Architecture</p><h2>Approval controls enrollment.</h2></div>
-        <p>A regulated course cannot accept payment, create a credit-bearing enrollment, promise licensing credit, or issue a certificate unless that exact state/course version is recorded as approved and enrollment-enabled.</p>
+      <section class="standards-section" id="standards">
+        <div><p class="eyebrow">Academic and regulatory standards</p><h2>Course approval controls access and credit.</h2></div>
+        <div class="standards-copy"><p>StateCourse does not accept payment, create a credit-bearing enrollment, or issue a completion certificate until the exact state and course version is approved and enabled.</p><p>Stripe handles payment only. The StateCourse compliance engine controls required study time, assessments, examination eligibility, completion, and certificate issuance.</p></div>
         <a href="#state-directory">Review state status →</a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div><a class="brand footer-brand" href="#top"><span class="brand-seal" aria-hidden="true">S</span><span><strong>StateCourse</strong><small>Professional Licensing Education</small></span></a><p>A national continuing-education framework for state-regulated professions.</p></div>
-      <p>Virginia and Maine are in development · No licensing credit is currently offered.</p>
+    <footer class="site-footer institutional-footer">
+      <div><a class="brand footer-brand" href="#main-content"><span class="brand-seal" aria-hidden="true">SC</span><span><strong>StateCourse</strong><small>Professional Licensing Education</small></span></a><p>State-specific education for regulated real estate careers.</p></div>
+      <div class="footer-links"><a href="#programs">Programs</a><a href="#state-directory">States</a><a href="#standards">Academic standards</a><small>Virginia and Maine are in development. No licensing credit is currently offered.</small></div>
     </footer>
     <script src="catalog.js" defer></script>
   </body>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "StateCourse | Licensing Education, State by State",
+  title: "StateCourse | Professional Licensing Education",
   description:
-    "Professional licensing education organized by category, state, program, and approved course.",
+    "State-specific real estate licensing education and professional course pathways.",
   other: {
     "codex-preview": "development",
   },
