@@ -1,0 +1,173 @@
+{
+  "schema_version": "2.0",
+  "course_id": "mo-salesperson-preexam-48-v1",
+  "payment_product_id": "mo-salesperson-preexam-48",
+  "state": "MO",
+  "title": "Missouri Salesperson Pre-Exam 48h",
+  "version": "1.0",
+  "lifecycle": {
+    "status": "development",
+    "allowed_statuses": [
+      "development",
+      "submitted",
+      "regulator_correction",
+      "approved"
+    ],
+    "effective_date": null,
+    "expiration_date": null,
+    "course_approval_number": null,
+    "enrollment_enabled": false,
+    "credit_enabled": false
+  },
+  "regulator": "Missouri Real Estate Commission",
+  "required_hours": 48,
+  "delivery": {
+    "mode": "asynchronous_distance",
+    "approval_pending": true,
+    "active_time_server_authoritative": true,
+    "concurrent_sessions": false,
+    "idle_time_excluded": true,
+    "module_sequence_required": true,
+    "enrollment_validity_days": null
+  },
+  "instructor": {
+    "instructor_id": null,
+    "regulator_approval_required": true,
+    "approval_number": null,
+    "approval_expiration": null,
+    "response_sla": "end_of_next_regular_business_day",
+    "oklahoma_exam_minimum_each": null
+  },
+  "assessment": {
+    "module_quizzes": true,
+    "remediation_required": true,
+    "final_forms": 2,
+    "questions_per_form": 50,
+    "passing_percent": 75,
+    "passing_percent_source": "regulatory",
+    "secure_bank_public": false
+  },
+  "records": {
+    "retention_years": 4,
+    "audit_log": true,
+    "final_exam_administration": true
+  },
+  "reporting": {
+    "completion_roster_days": 10,
+    "completion_time_statistics": {
+      "automated": true,
+      "due_month_days": [
+        "01-31",
+        "07-31"
+      ],
+      "less_than_submitted_threshold_percent": 50,
+      "correction_window_days": 10
+    }
+  },
+  "certificate": {
+    "template": "mo-salesperson-preexam-48-v1-draft",
+    "enabled": false,
+    "requires_valid_approval": true,
+    "requires_valid_instructor": true
+  },
+  "stripe": {
+    "enabled": false,
+    "price_cents": null,
+    "one_time": true,
+    "approval_gate": true
+  },
+  "modules": [
+    {
+      "id": "MO48-01",
+      "title": "Property ownership and land use",
+      "hours": 7,
+      "authority": "Current testing-service outline required by 20 CSR 2250-6.060(1)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    },
+    {
+      "id": "MO48-02",
+      "title": "Valuation and market analysis",
+      "hours": 5,
+      "authority": "Testing-service content outline",
+      "national_core": [
+        "NC-VAL",
+        "NC-INV"
+      ]
+    },
+    {
+      "id": "MO48-03",
+      "title": "Contracts",
+      "hours": 8,
+      "authority": "Testing-service content outline",
+      "national_core": [
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "MO48-04",
+      "title": "Agency and brokerage",
+      "hours": 6,
+      "authority": "Testing-service content outline; Missouri law layer",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "MO48-05",
+      "title": "Disclosures and environmental risk",
+      "hours": 3,
+      "authority": "Testing-service content outline; Missouri law layer",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "MO48-06",
+      "title": "Real estate finance",
+      "hours": 6,
+      "authority": "Testing-service content outline",
+      "national_core": [
+        "NC-FIN"
+      ]
+    },
+    {
+      "id": "MO48-07",
+      "title": "Transfer, title, and settlement",
+      "hours": 4,
+      "authority": "Testing-service content outline",
+      "national_core": [
+        "NC-TTL"
+      ]
+    },
+    {
+      "id": "MO48-08",
+      "title": "Practice, leasing, and property management",
+      "hours": 4,
+      "authority": "Testing-service content outline",
+      "national_core": [
+        "NC-PM",
+        "NC-FH"
+      ]
+    },
+    {
+      "id": "MO48-09",
+      "title": "Real estate calculations",
+      "hours": 3,
+      "authority": "Testing-service content outline",
+      "national_core": [
+        "NC-FIN"
+      ]
+    },
+    {
+      "id": "MO48-10",
+      "title": "Missouri examination and compliance integration",
+      "hours": 2,
+      "authority": "20 CSR 2250-6.060(1)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    }
+  ]
+}

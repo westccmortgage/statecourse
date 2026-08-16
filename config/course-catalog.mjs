@@ -50,6 +50,82 @@ const courses = {
       cancellationPolicy: "va-salesperson-cancellation-pending-review-v1",
     },
   },
+  "wi-salesperson": {
+    id: "wi-salesperson",
+    state: "WI",
+    name: "Wisconsin Salesperson Pre-License — 72 Hours",
+    productType: "real_estate_prelicense",
+    currency: "usd",
+    approvalStatus: process.env.STATECOURSE_WI_SALESPERSON_APPROVAL_STATUS || "submission_draft",
+    enrollmentEnabled: bool("STATECOURSE_WI_SALESPERSON_ENROLLMENT_ENABLED"),
+    price: {
+      test: cents("STATECOURSE_PRICE_WI_SALESPERSON_TEST_CENTS"),
+      live: cents("STATECOURSE_PRICE_WI_SALESPERSON_LIVE_CENTS"),
+    },
+    versions: {
+      regulatoryAcknowledgment: "wi-salesperson-regulatory-draft-v1",
+      terms: "statecourse-terms-v1",
+      refundPolicy: "wi-salesperson-refund-pending-review-v1",
+      cancellationPolicy: "wi-salesperson-cancellation-pending-review-v1",
+    },
+  },
+  "mo-salesperson-preexam-48": {
+    id: "mo-salesperson-preexam-48",
+    state: "MO",
+    name: "Missouri Salesperson Pre-Exam Course — 48 Hours",
+    productType: "real_estate_prelicense",
+    currency: "usd",
+    approvalStatus: process.env.STATECOURSE_MO_PREEXAM_48_APPROVAL_STATUS || "submission_draft",
+    enrollmentEnabled: bool("STATECOURSE_MO_PREEXAM_48_ENROLLMENT_ENABLED"),
+    price: {
+      test: cents("STATECOURSE_PRICE_MO_PREEXAM_48_TEST_CENTS"),
+      live: cents("STATECOURSE_PRICE_MO_PREEXAM_48_LIVE_CENTS"),
+    },
+    versions: {
+      regulatoryAcknowledgment: "mo-preexam-48-regulatory-draft-v1",
+      terms: "statecourse-terms-v1",
+      refundPolicy: "mo-preexam-48-refund-pending-review-v1",
+      cancellationPolicy: "mo-preexam-48-cancellation-pending-review-v1",
+    },
+  },
+  "mo-real-estate-practice-24": {
+    id: "mo-real-estate-practice-24",
+    state: "MO",
+    name: "Missouri Real Estate Practice Course — 24 Hours",
+    productType: "real_estate_prelicense",
+    currency: "usd",
+    approvalStatus: process.env.STATECOURSE_MO_PRACTICE_24_APPROVAL_STATUS || "submission_draft",
+    enrollmentEnabled: bool("STATECOURSE_MO_PRACTICE_24_ENROLLMENT_ENABLED"),
+    price: {
+      test: cents("STATECOURSE_PRICE_MO_PRACTICE_24_TEST_CENTS"),
+      live: cents("STATECOURSE_PRICE_MO_PRACTICE_24_LIVE_CENTS"),
+    },
+    versions: {
+      regulatoryAcknowledgment: "mo-practice-24-regulatory-draft-v1",
+      terms: "statecourse-terms-v1",
+      refundPolicy: "mo-practice-24-refund-pending-review-v1",
+      cancellationPolicy: "mo-practice-24-cancellation-pending-review-v1",
+    },
+  },
+  "ok-basic-prelicense-90": {
+    id: "ok-basic-prelicense-90",
+    state: "OK",
+    name: "Oklahoma Basic Pre-License Course — 90 Hours",
+    productType: "real_estate_prelicense",
+    currency: "usd",
+    approvalStatus: process.env.STATECOURSE_OK_BASIC_90_APPROVAL_STATUS || "submission_draft",
+    enrollmentEnabled: bool("STATECOURSE_OK_BASIC_90_ENROLLMENT_ENABLED"),
+    price: {
+      test: cents("STATECOURSE_PRICE_OK_BASIC_90_TEST_CENTS"),
+      live: cents("STATECOURSE_PRICE_OK_BASIC_90_LIVE_CENTS"),
+    },
+    versions: {
+      regulatoryAcknowledgment: "ok-basic-90-regulatory-draft-v1",
+      terms: "statecourse-terms-v1",
+      refundPolicy: "ok-basic-90-refund-pending-review-v1",
+      cancellationPolicy: "ok-basic-90-cancellation-pending-review-v1",
+    },
+  },
 };
 
 export function getCourse(courseId) {

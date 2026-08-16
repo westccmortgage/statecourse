@@ -1,0 +1,272 @@
+{
+  "schema_version": "2.0",
+  "course_id": "ok-basic-prelicense-90-v1",
+  "payment_product_id": "ok-basic-prelicense-90",
+  "state": "OK",
+  "title": "Oklahoma Basic Pre-License 90h",
+  "version": "1.0",
+  "lifecycle": {
+    "status": "development",
+    "allowed_statuses": [
+      "development",
+      "submitted",
+      "regulator_correction",
+      "approved"
+    ],
+    "effective_date": null,
+    "expiration_date": null,
+    "course_approval_number": null,
+    "enrollment_enabled": false,
+    "credit_enabled": false
+  },
+  "regulator": "Oklahoma Real Estate Commission",
+  "required_hours": 90,
+  "delivery": {
+    "mode": "asynchronous_distance",
+    "approval_pending": true,
+    "active_time_server_authoritative": true,
+    "concurrent_sessions": false,
+    "idle_time_excluded": true,
+    "module_sequence_required": true,
+    "enrollment_validity_days": 183
+  },
+  "instructor": {
+    "instructor_id": null,
+    "regulator_approval_required": true,
+    "approval_number": null,
+    "approval_expiration": null,
+    "response_sla": "posted_normal_business_hours",
+    "oklahoma_exam_minimum_each": 80
+  },
+  "assessment": {
+    "module_quizzes": true,
+    "remediation_required": true,
+    "final_forms": 2,
+    "questions_per_form": 150,
+    "passing_percent": 75,
+    "passing_percent_source": "regulatory",
+    "secure_bank_public": false
+  },
+  "records": {
+    "retention_years": 5,
+    "audit_log": true,
+    "final_exam_administration": false
+  },
+  "reporting": {
+    "regulator_workflow": "pending_approval_configuration"
+  },
+  "certificate": {
+    "template": "ok-basic-prelicense-90-v1-draft",
+    "enabled": false,
+    "requires_valid_approval": true,
+    "requires_valid_instructor": true
+  },
+  "stripe": {
+    "enabled": false,
+    "price_cents": null,
+    "one_time": true,
+    "approval_gate": true
+  },
+  "modules": [
+    {
+      "id": "OK-01",
+      "title": "Real Estate Economics and Marketing",
+      "hours": 3,
+      "authority": "OAC 605:10-3-1(a)(1)(A)",
+      "national_core": [
+        "NC-INV"
+      ]
+    },
+    {
+      "id": "OK-02",
+      "title": "Nature of Real Estate",
+      "hours": 3,
+      "authority": "OAC 605:10-3-1(a)(1)(B)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    },
+    {
+      "id": "OK-03",
+      "title": "Rights and Interest in Real Estate",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(C)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    },
+    {
+      "id": "OK-04",
+      "title": "Legal Descriptions",
+      "hours": 2,
+      "authority": "OAC 605:10-3-1(a)(1)(D)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    },
+    {
+      "id": "OK-05",
+      "title": "Title Search, Encumbrances, and Land Use Control",
+      "hours": 5,
+      "authority": "OAC 605:10-3-1(a)(1)(E)",
+      "national_core": [
+        "NC-OWN",
+        "NC-TTL"
+      ]
+    },
+    {
+      "id": "OK-06",
+      "title": "Transfer of Rights",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(F)",
+      "national_core": [
+        "NC-TTL"
+      ]
+    },
+    {
+      "id": "OK-07",
+      "title": "Service Contracts",
+      "hours": 3,
+      "authority": "OAC 605:10-3-1(a)(1)(G)",
+      "national_core": [
+        "NC-AGY",
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "OK-08",
+      "title": "Estimating Transaction Expenses",
+      "hours": 3,
+      "authority": "OAC 605:10-3-1(a)(1)(H)",
+      "national_core": [
+        "NC-FIN"
+      ]
+    },
+    {
+      "id": "OK-09",
+      "title": "Value and Appraisal",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(I)",
+      "national_core": [
+        "NC-VAL"
+      ]
+    },
+    {
+      "id": "OK-10",
+      "title": "Marketing Activities",
+      "hours": 3,
+      "authority": "OAC 605:10-3-1(a)(1)(J)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "OK-11",
+      "title": "Fair Housing",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(K)",
+      "national_core": [
+        "NC-FH"
+      ]
+    },
+    {
+      "id": "OK-12",
+      "title": "Contract Law Overview",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(L)",
+      "national_core": [
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "OK-13",
+      "title": "Contract Law and Performance",
+      "hours": 5,
+      "authority": "OAC 605:10-3-1(a)(1)(M)",
+      "national_core": [
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "OK-14",
+      "title": "Offers and Purchase Contracts",
+      "hours": 6,
+      "authority": "OAC 605:10-3-1(a)(1)(N)",
+      "national_core": [
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "OK-15",
+      "title": "Financing Real Estate",
+      "hours": 7,
+      "authority": "OAC 605:10-3-1(a)(1)(O)",
+      "national_core": [
+        "NC-FIN"
+      ]
+    },
+    {
+      "id": "OK-16",
+      "title": "Closing a Transaction",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(P)",
+      "national_core": [
+        "NC-TTL"
+      ]
+    },
+    {
+      "id": "OK-17",
+      "title": "Regulations Affecting Real Estate",
+      "hours": 6,
+      "authority": "OAC 605:10-3-1(a)(1)(Q)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "OK-18",
+      "title": "Disclosures and Environmental Issues",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(R)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    },
+    {
+      "id": "OK-19",
+      "title": "Property Management and Leasing",
+      "hours": 4,
+      "authority": "OAC 605:10-3-1(a)(1)(S)",
+      "national_core": [
+        "NC-PM"
+      ]
+    },
+    {
+      "id": "OK-20",
+      "title": "Risk Management",
+      "hours": 3,
+      "authority": "OAC 605:10-3-1(a)(1)(T)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "OK-21",
+      "title": "Professional Standards of Conduct",
+      "hours": 3,
+      "authority": "OAC 605:10-3-1(a)(1)(U)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "OK-22",
+      "title": "Law of Agency",
+      "hours": 6,
+      "authority": "OAC 605:10-3-1(a)(1)(V)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    }
+  ]
+}
