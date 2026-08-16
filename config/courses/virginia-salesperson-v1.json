@@ -1,0 +1,35 @@
+{
+  "course_id": "va-salesperson-principles-v1",
+  "course_version": "1.0-submission-draft",
+  "state": "VA",
+  "title": "Virginia Principles & Practices of Real Estate",
+  "approval_status": "submission_draft",
+  "approval_number": null,
+  "effective_date": null,
+  "expiration_date": null,
+  "enrollment_enabled": false,
+  "required_hours": 60,
+  "completion_rules": {
+    "required_instructional_minutes_per_hour": 50,
+    "required_sections": 3,
+    "sequential_navigation": true,
+    "active_time_tracking": true,
+    "idle_after_seconds": 120,
+    "heartbeat_gap_seconds": 45,
+    "applied_activity_required": true,
+    "scored_engagement_check_required": true,
+    "remediation_after_incorrect": true,
+    "alternate_question_must_be_correct": true,
+    "instructor_flag_after_failed_attempts": 3,
+    "final_exam_requires_all_hours": true,
+    "proctoring": "pending_board_approved_configuration",
+    "completion_period_days": null
+  },
+  "source_authority": [
+    "https://law.lis.virginia.gov/admincode/title18/agency135/chapter20/section10/",
+    "https://law.lis.virginia.gov/admincode/title18/agency135/chapter20/section362/",
+    "https://law.lis.virginia.gov/admincode/title18/agency135/chapter20/section400/",
+    "https://law.lis.virginia.gov/vacode/title54.1/chapter21/section54.1-2105/"
+  ],
+  "configuration_scope": "Virginia only; no setting is inherited by another state."
+}
