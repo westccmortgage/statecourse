@@ -59,7 +59,7 @@ test("Washington, Pennsylvania, Arizona, and Colorado retain separate regulatory
 
 test("state approval records separate school/provider, instructor, course, and delivery gates", async () => {
   const approvals = JSON.parse(await read("config/state-approval-records.json"));
-  assert.deepEqual(Object.keys(approvals.states).sort(), ["AZ", "CO", "NC", "PA", "WA"]);
+  assert.deepEqual(Object.keys(approvals.states).sort(), ["AZ", "CA", "CO", "NC", "PA", "WA"]);
   for (const state of Object.values(approvals.states)) {
     assert.equal(state.public_status, "In Development");
     assert.equal(state.enrollment_enabled, false);

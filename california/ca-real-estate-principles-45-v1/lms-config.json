@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "state": "CA",
+  "regulator": "California Department of Real Estate",
+  "course_id": "ca-real-estate-principles-45-v1",
+  "payment_product_id": "ca-real-estate-principles-45",
+  "title": "Real Estate Principles",
+  "version": "1.0",
+  "status": "development",
+  "approved": false,
+  "enrollment_enabled": false,
+  "credit_enabled": false,
+  "approval_number": null,
+  "required_hours": 45,
+  "delivery": "correspondence_internet",
+  "lesson_assignments": 15,
+  "lesson_minutes": 180,
+  "sequential_segments": true,
+  "minimum_elapsed_hours": 420,
+  "maximum_completion_days": 365,
+  "cross_course_completion_rule": {
+    "maximum_courses": 2,
+    "window_days": 35,
+    "student_attestation_of_other_school_completions": true
+  },
+  "lesson_mastery": {
+    "passing_percent": 80,
+    "source": "StateCourse provider policy proposed for DRE review",
+    "remediation_required": true
+  },
+  "final_exam": {
+    "forms": 2,
+    "questions_per_form": 100,
+    "passing_percent": 60,
+    "time_minutes": 180,
+    "closed_book": true,
+    "proctored": true,
+    "max_attempts": 2,
+    "form_b_only_after_failed_form_a": true,
+    "printable": false,
+    "downloadable": false,
+    "timeout_required": true
+  },
+  "identity": {
+    "verified_immediately_before_final": true,
+    "accepted_id_rule": "RE 303 Rev. 1/26"
+  },
+  "reviewer_access": {
+    "student_login": true,
+    "regulator_login": true,
+    "bypass_time_only_for_regulator": true,
+    "reviewer_credit_disabled": true
+  },
+  "certificate": {
+    "enabled": false,
+    "deliver_within_days": 15,
+    "requires_current_approval": true,
+    "approval_number_required": true,
+    "sb1495_statement": false
+  },
+  "records": {
+    "duplicate_certificate_records_for_life_of_school": true,
+    "version_locked": true,
+    "audit_log": true
+  },
+  "material_change_requires_dre_review_before_use": true
+}

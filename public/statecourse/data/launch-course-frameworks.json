@@ -1070,6 +1070,282 @@
         }
       ],
       "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "ca-real-estate-principles-45-v1",
+      "state": "CA",
+      "state_name": "California",
+      "title": "Real Estate Principles",
+      "version": "1.0",
+      "required_hours": 45,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/california/pre-license/principles/",
+      "regulator": "California Department of Real Estate",
+      "delivery": "Correspondence/Internet - proposed; approval pending",
+      "modules": [
+        {
+          "id": "CA-PRI-01",
+          "title": "The real estate profession and California regulatory structure",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-02",
+          "title": "Real property, personal property, and fixtures",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-03",
+          "title": "Estates, ownership, and common interests",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-04",
+          "title": "Land description, measurement, and boundaries",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-05",
+          "title": "Encumbrances, liens, easements, and restrictions",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-06",
+          "title": "Government powers, land use, and environmental controls",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-07",
+          "title": "Agency and brokerage relationships",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-08",
+          "title": "Contracts and transaction formation",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-09",
+          "title": "Transfer, deeds, title, and recording",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-10",
+          "title": "Escrow, settlement, and transaction chronology",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-11",
+          "title": "Real estate finance foundations",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-12",
+          "title": "Valuation and appraisal foundations",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-13",
+          "title": "Taxation, investment, and real estate mathematics",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-14",
+          "title": "Fair housing, civil rights, and consumer protection",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRI-15",
+          "title": "Leasing, property management, license law, and integrated transaction",
+          "hours": 3
+        }
+      ],
+      "public_notice": "Course in development. Not approved; enrollment, credit, final administration, and certificates unavailable."
+    },
+    {
+      "course_id": "ca-real-estate-practice-45-v1",
+      "state": "CA",
+      "state_name": "California",
+      "title": "Real Estate Practice",
+      "version": "1.0",
+      "required_hours": 45,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/california/pre-license/practice/",
+      "regulator": "California Department of Real Estate",
+      "delivery": "Correspondence/Internet - proposed; approval pending",
+      "modules": [
+        {
+          "id": "CA-PRA-01",
+          "title": "California practice standards and the regulated professional",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-02",
+          "title": "Building a lawful real estate practice",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-03",
+          "title": "Agency disclosure and fiduciary performance",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-04",
+          "title": "Seller counseling and listing agreements",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-05",
+          "title": "Market analysis and pricing strategy",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-06",
+          "title": "Marketing, advertising, and fair access",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-07",
+          "title": "Buyer representation and property selection",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-08",
+          "title": "Purchase agreements, counteroffers, and contingencies",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-09",
+          "title": "Disclosures and property-condition risk",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-10",
+          "title": "Financing the transaction",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-11",
+          "title": "Escrow, title, closing, and possession",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-12",
+          "title": "Property management and leasing practice",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-13",
+          "title": "Ethics, risk management, and dispute prevention",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-14",
+          "title": "Implicit bias and fair housing participatory practicum",
+          "hours": 3
+        },
+        {
+          "id": "CA-PRA-15",
+          "title": "Integrated California residential transaction",
+          "hours": 3
+        }
+      ],
+      "public_notice": "Course in development. Not approved; enrollment, credit, final administration, and certificates unavailable."
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45-v1",
+      "state": "CA",
+      "state_name": "California",
+      "title": "Mortgage Loan Brokering and Lending",
+      "version": "1.0",
+      "required_hours": 45,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/california/pre-license/mortgage-loan-brokering-and-lending/",
+      "regulator": "California Department of Real Estate",
+      "delivery": "Correspondence/Internet - proposed; approval pending",
+      "modules": [
+        {
+          "id": "CA-MOR-01",
+          "title": "California mortgage brokerage and regulatory structure",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-02",
+          "title": "Money, interest, notes, and loan mathematics",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-03",
+          "title": "Security instruments and lien priority",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-04",
+          "title": "Mortgage markets, sources, and loan products",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-05",
+          "title": "Application, borrower information, and qualification",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-06",
+          "title": "Underwriting, collateral, and approval conditions",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-07",
+          "title": "Federal consumer mortgage law",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-08",
+          "title": "California broker law, trust funds, and records",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-09",
+          "title": "Mortgage disclosures, compensation, and closing costs",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-10",
+          "title": "Origination, processing, and closing workflow",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-11",
+          "title": "Appraisal, title, escrow, and settlement",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-12",
+          "title": "Private money, seller financing, and nontraditional transactions",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-13",
+          "title": "Servicing, payoff, default, and foreclosure",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-14",
+          "title": "Fair lending, fraud prevention, and ethical mortgage practice",
+          "hours": 3
+        },
+        {
+          "id": "CA-MOR-15",
+          "title": "Integrated California mortgage brokerage file",
+          "hours": 3
+        }
+      ],
+      "public_notice": "Course in development. Not approved; enrollment, credit, final administration, and certificates unavailable."
     }
   ]
 }

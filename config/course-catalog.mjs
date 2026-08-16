@@ -12,6 +12,9 @@ const cents = (name) => {
 };
 
 const nextFiveCourseDefinitions = [
+  ["ca-real-estate-principles-45", "CA", "California Real Estate Principles - 45 Hours"],
+  ["ca-real-estate-practice-45", "CA", "California Real Estate Practice - 45 Hours"],
+  ["ca-mortgage-loan-brokering-lending-45", "CA", "California Mortgage Loan Brokering and Lending - 45 Hours"],
   ["az-salesperson-prelicense-90", "AZ", "Arizona Salesperson Pre-License — 90 Hours"],
   ["az-contract-writing-6", "AZ", "Arizona Contract Writing — 6 Hours"],
   ["wa-real-estate-fundamentals-60", "WA", "Washington Real Estate Fundamentals — 60 Hours"],

@@ -261,6 +261,54 @@
       "course_approval_number": null,
       "instructor_id": null,
       "enrollment_enabled": false
+    },
+    {
+      "course_id": "ca-real-estate-principles-45-v1",
+      "title": "Real Estate Principles v1.0",
+      "state": "CA",
+      "version": "1.0",
+      "status": "development",
+      "submitted_at": null,
+      "regulator_correction_at": null,
+      "approved_at": null,
+      "effective_date": null,
+      "expiration_date": null,
+      "course_approval_number": null,
+      "instructor_id": "anatoliy-kanevsky-candidate",
+      "instructor_status": "not_approved",
+      "enrollment_enabled": false
+    },
+    {
+      "course_id": "ca-real-estate-practice-45-v1",
+      "title": "Real Estate Practice v1.0",
+      "state": "CA",
+      "version": "1.0",
+      "status": "development",
+      "submitted_at": null,
+      "regulator_correction_at": null,
+      "approved_at": null,
+      "effective_date": null,
+      "expiration_date": null,
+      "course_approval_number": null,
+      "instructor_id": "anatoliy-kanevsky-candidate",
+      "instructor_status": "not_approved",
+      "enrollment_enabled": false
+    },
+    {
+      "course_id": "ca-mortgage-loan-brokering-lending-45-v1",
+      "title": "Mortgage Loan Brokering and Lending v1.0",
+      "state": "CA",
+      "version": "1.0",
+      "status": "development",
+      "submitted_at": null,
+      "regulator_correction_at": null,
+      "approved_at": null,
+      "effective_date": null,
+      "expiration_date": null,
+      "course_approval_number": null,
+      "instructor_id": "anatoliy-kanevsky-candidate",
+      "instructor_status": "not_approved",
+      "enrollment_enabled": false
     }
   ]
 }

@@ -223,6 +223,140 @@
           "communications": []
         }
       }
+    },
+    "CA": {
+      "state": "CA",
+      "regulator": "California Department of Real Estate",
+      "reviewed": "2026-08-16",
+      "public_status": "In Development",
+      "enrollment_enabled": false,
+      "approval_model": "individual_course_approval_not_provider_approval",
+      "sponsor_id": null,
+      "bppe_determination": null,
+      "approval_records": {
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "real_estate_principles": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "real_estate_practice": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "mortgage_loan_brokering_and_lending": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        }
+      },
+      "courses": {
+        "ca-real-estate-principles-45-v1": {
+          "status": "development",
+          "application": "RE 306 Rev. 1/26",
+          "fee_current": 500,
+          "submitted_at": null,
+          "approved_at": null,
+          "approval_number": null,
+          "expiration_date": null,
+          "enrollment_enabled": false
+        },
+        "ca-real-estate-practice-45-v1": {
+          "status": "development",
+          "application": "RE 306 Rev. 1/26",
+          "fee_current": 500,
+          "submitted_at": null,
+          "approved_at": null,
+          "approval_number": null,
+          "expiration_date": null,
+          "enrollment_enabled": false
+        },
+        "ca-mortgage-loan-brokering-lending-45-v1": {
+          "status": "development",
+          "application": "RE 306 Rev. 1/26",
+          "fee_current": 500,
+          "submitted_at": null,
+          "approved_at": null,
+          "approval_number": null,
+          "expiration_date": null,
+          "enrollment_enabled": false
+        }
+      },
+      "instructor": {
+        "name": "Anatoliy Kanevsky",
+        "dre_license": "01385024",
+        "status": "qualification_package_prepared_not_approved",
+        "re336_signed": false,
+        "dre_determination": null,
+        "teaching_enabled": false
+      },
+      "release_gates": [
+        "RE 306 approval for exact course/method",
+        "RE 336 instructor determination",
+        "BPPE determination",
+        "complete filing data and policy versions",
+        "secure reviewer credentials",
+        "administrator approval record"
+      ],
+      "sources": [
+        {
+          "name": "California DRE Course Provider Handbook, Rev. 01/2026",
+          "url": "https://www.dre.ca.gov/files/pdf/faqs/Course%20Provider%20Handbook.pdf"
+        },
+        {
+          "name": "RE 303 Statutory/Pre-License Course Checklist and Instructions, Rev. 01/2026",
+          "url": "https://www.dre.ca.gov/files/pdf/forms/re303.pdf"
+        },
+        {
+          "name": "RE 306 Statutory/Pre-License Course Approval Application, Rev. 01/2026",
+          "url": "https://www.dre.ca.gov/files/pdf/forms/re306.pdf"
+        },
+        {
+          "name": "RE 307 Regulation Excerpts (Private Vocational Schools)",
+          "url": "https://www.dre.ca.gov/files/pdf/forms/re307.pdf"
+        },
+        {
+          "name": "RE 311 Statutory/Pre-License Course Completion Certificate, Rev. 01/2026",
+          "url": "https://www.dre.ca.gov/files/pdf/forms/re311.pdf"
+        },
+        {
+          "name": "RE 313 Statutory/Pre-License General Information Page, Rev. 01/2026",
+          "url": "https://www.dre.ca.gov/files/word/re313.doc"
+        },
+        {
+          "name": "RE 336 Pre-License Instructor Certification, Rev. 02/2023",
+          "url": "https://www.dre.ca.gov/files/pdf/forms/re336.pdf"
+        },
+        {
+          "name": "RE 423 Examination Qualification Requirements, Rev. 01/2026",
+          "url": "https://www.dre.ca.gov/files/pdf/forms/re423.pdf"
+        },
+        {
+          "name": "RE 206E Education Fees, Rev. 07/2026",
+          "url": "https://www.dre.ca.gov/files/pdf/forms/re206E.pdf"
+        },
+        {
+          "name": "DRE Education Course Availability",
+          "url": "https://www.dre.ca.gov/examinees/EducationCourses.html"
+        },
+        {
+          "name": "DRE Public License Lookup - Anatoliy Kanevsky",
+          "url": "https://www2.dre.ca.gov/PublicASP/pplinfo.asp?License_id=01385024"
+        }
+      ]
     }
   }
 }
