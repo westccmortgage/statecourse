@@ -5,6 +5,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; connect-src 'self'"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
@@ -15,12 +16,82 @@
   [headers.values]
     Cache-Control = "public, max-age=300"
 
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/enroll/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/payment/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
 [[redirects]]
   from = "/course"
-  to = "/index.html"
-  status = 200
+  to = "/real-estate/virginia/pre-license/principles-and-practices/"
+  status = 302
 
 [[redirects]]
   from = "/virginia"
-  to = "/index.html"
+  to = "/real-estate/virginia/pre-license/principles-and-practices/"
+  status = 302
+
+[[redirects]]
+  from = "/maine"
+  to = "/real-estate/maine/pre-license/sales-agent/"
+  status = 302
+
+[[redirects]]
+  from = "/enroll"
+  to = "/enroll/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/success"
+  to = "/payment/success/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/payments"
+  to = "/admin/payments/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/api/payments/config"
+  to = "/.netlify/functions/payment-config"
+  status = 200
+
+[[redirects]]
+  from = "/api/payments/checkout"
+  to = "/.netlify/functions/create-checkout"
+  status = 200
+
+[[redirects]]
+  from = "/api/payments/status"
+  to = "/.netlify/functions/payment-status"
+  status = 200
+
+[[redirects]]
+  from = "/api/stripe/webhook"
+  to = "/.netlify/functions/stripe-webhook"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/payments"
+  to = "/.netlify/functions/admin-payments"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/refunds"
+  to = "/.netlify/functions/request-refund"
   status = 200
