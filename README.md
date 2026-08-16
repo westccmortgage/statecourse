@@ -1,68 +1,108 @@
-# StateCourse
+# vinext-starter
 
-StateCourse is a regulatory-first professional education platform organized by profession, state, license path, approved course version, instructor, enrollment, and completion record.
+A clean full-stack starter running on
+[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
+Drizzle support.
 
-## Current state products
+## Prerequisites
 
-### Virginia
+- Node.js `>=22.13.0`
+- Linux with `flock`, `curl`, and GNU `timeout`
 
-**Virginia Real Estate Salesperson Pre-License — Principles & Practices of Real Estate (60 hours)**
+## Sites Lifecycle
 
-- Academic course page and 60-hour digital reader
-- Timed outline, curriculum, assessments, instructor/student materials, compliance procedures, and submission framework
-- Status: **In Development / Preparing Submission**
-- Enrollment and regulatory credit: **disabled pending written Virginia approval**
+The Sites lifecycle CLI runs the locked dependency install before returning this checkout. Edit the source under `app/`, then checkpoint when a coherent milestone is ready to inspect or share. The remote Sites builder runs `npm run build` against the pushed commit. Do not repeat install or build as a normal pre-checkpoint step.
 
-### Maine
+This starter does not use `wrangler.jsonc`.
 
-**Maine Real Estate Sales Agent Pre-License — The Sales Agent Course (55 hours)**
+`install:ci` is intentionally a single, non-retrying `npm ci`. It refuses a concurrent install for the same project, consumes a matching image-seeded npm cache with `--prefer-offline` while retaining registry fallback for a missing cache object, otherwise downloads and verifies the complete vinext tarball recorded in `package-lock.json`, limits npm to one socket, and terminates a stalled install. `build` applies a short timeout and then validates the Sites artifact. These helpers target Linux and use GNU `timeout`; they are not native macOS scripts.
 
-- Separate Maine regulatory package and online distance-education product
-- 55-hour timed curriculum, 3 quizzes / 60 items, 80-item weighted final, 2 case studies, remediation, certificate, reporting, and application materials
-- Status: **In Development**
-- Enrollment and regulatory credit: **disabled pending written Maine approval**
+Scripts that need writable project-scoped home, npm, XDG, and temporary paths use `scripts/sites-env.sh`. The `dev` and `start` scripts honor the caller's runtime environment and keep Wrangler logs inside the checkout. The generated `.sites-runtime/` directory is disposable and ignored by Git.
 
-## National platform
+## Included Shape
 
-The public site includes a controlled 50-state registry. Only Virginia and Maine have configured course implementations; the remaining states are marked Not Started until official-source research is completed. No Virginia or Maine rule is used as a national default.
+- edit site code under `app/`
+- `app/chatgpt-auth.ts` provides optional dispatch-owned ChatGPT sign-in helpers
+- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
+- `vite.config.ts` simulates declared bindings for local development
+- `db/index.ts` reads the D1 binding from the Cloudflare Worker environment
+- `db/schema.ts` starts intentionally empty
+- `examples/d1/` contains an optional D1 example surface
+- `drizzle.config.ts` supports local migration generation when needed
 
-## Stripe payment framework
+## Workspace Auth Headers
 
-The payment layer prepares Stripe Checkout, cards and supported wallets, promotion codes, verified webhooks, one-time payments, full/partial refunds, tax-ready records, a payment ledger, and separate test/live environments.
+OpenAI workspace sites can read the current user's email from
+`oai-authenticated-user-email`.
 
-Production payments are disabled by default. A paid and verified webhook may create only the purchased course enrollment/access grant. Payment code cannot set study time, exam eligibility or result, regulatory credit, completion, or certificate status; those remain in the LMS compliance engine.
+SIWC-authenticated workspace sites may also receive
+`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
+`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
+`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
 
-Before activation:
+Treat the full name as optional and fall back to email when it is absent:
 
-1. Apply `database/001_payments_enrollment.sql` to the production database.
-2. Configure the server variables in `.env.example`.
-3. Record written approval, approved policies, price, instructor, and approval number for the exact state/course.
-4. Complete `docs/payments/activation-checklist.md`.
-5. Activate test mode first; enable live mode only after StateCourse LLC banking and Stripe verification are complete.
+```tsx
+import { headers } from "next/headers";
 
-## Project map
+export default async function Home() {
+  const requestHeaders = await headers();
+  const email = requestHeaders.get("oai-authenticated-user-email");
+  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
+  const fullName =
+    encodedFullName &&
+    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
+      "percent-encoded-utf-8"
+      ? decodeURIComponent(encodedFullName)
+      : null;
 
-- `public/statecourse/` — national catalog, Virginia/Maine student screens, enrollment, and admin views
-- `virginia/` — Virginia regulatory and curriculum package
-- `maine/` — Maine regulatory and curriculum package
-- `config/` — state/course payment configuration and activation gates
-- `netlify/functions/` — payment, webhook, refund, status, and admin endpoints
-- `database/` — payment/enrollment/access/audit schema and transactional fulfillment procedures
-- `states/` — state-specific provider, course, and instructor version records
-- `docs/payments/` — architecture and activation checklist
-- `docs/ux/` — institutional information and visual design system
-
-## Validation
-
-Run:
-
-```bash
-node --test tests/*.test.mjs
-bash site/build.sh
+  const displayName = fullName ?? email;
+  // ...
+}
 ```
 
-The public build intentionally excludes secure final-examination and answer-key files.
+## Optional Dispatch-Owned ChatGPT Sign-In
 
-## Approval disclaimer
+Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
+optional or required ChatGPT sign-in:
 
-StateCourse does not represent the Virginia or Maine course as approved and does not currently offer licensing credit. Provider eligibility, qualified instructors, regulator acceptance, course approval numbers, controlled delivery, and other filing gates must be completed before enrollment opens.
+- Use `getChatGPTUser()` for optional signed-in UI.
+- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
+  anonymous visitors through Sign in with ChatGPT.
+- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
+  browser links or actions.
+- Pass a same-origin relative `returnTo` path for the destination after sign-in
+  or sign-out. The helper validates and safely encodes it.
+- Mark protected pages with `export const dynamic = "force-dynamic"` because
+  they depend on per-request identity headers.
+
+Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
+OAuth cookies, and identity header injection. Do not implement app routes for
+those reserved paths. Routes that do not import and call the helper remain
+anonymous-compatible.
+
+SIWC establishes identity only; it does not prove workspace membership. Use the
+Sites hosting platform's access policy controls for workspace-wide restrictions,
+or enforce explicit server-side membership or allowlist checks.
+
+Use SIWC for account pages, user-specific dashboards, saved records, and write
+actions tied to the current ChatGPT user. Leave public content anonymous.
+
+## Diagnostic Commands
+
+- `npm run install:ci`: perform the one bounded lockfile install
+- `npm run dev`: start the Vite/Vinext development server
+- `npm run build`: build and validate the deployable Sites artifact
+- `npm run start`: start the built Vinext application
+- `npm test`: build, validate, and verify the rendered development-preview metadata
+- `npm run validate:artifact`: recheck an existing artifact's manifest and ESM `default.fetch` export
+- `npm run db:generate`: generate Drizzle migrations after schema changes
+
+Use build and validation commands for targeted diagnosis after a remote failure, not as part of the normal checkpoint path.
+
+The timeout defaults can be overridden for a controlled canary with `SITES_INSTALL_TIMEOUT`, `SITES_INSTALL_KILL_AFTER`, `SITES_BUILD_TIMEOUT`, and `SITES_BUILD_KILL_AFTER`. A timeout fails the command; the helpers never retry an unchanged install or build.
+
+## Learn More
+
+- [vinext Documentation](https://github.com/cloudflare/vinext)
+- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
