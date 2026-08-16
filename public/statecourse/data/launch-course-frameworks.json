@@ -349,6 +349,727 @@
         }
       ],
       "public_notice": "Course framework in development. Not approved; enrollment and credit unavailable."
+    },
+    {
+      "course_id": "az-salesperson-prelicense-90-v1",
+      "state": "AZ",
+      "state_name": "Arizona",
+      "title": "Arizona Salesperson Pre-License 90h",
+      "version": "1.0",
+      "required_hours": 90,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/arizona/pre-license/salesperson/",
+      "regulator": "Arizona Department of Real Estate",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "AZ90-01",
+          "title": "Property, ownership, and land use",
+          "hours": 8
+        },
+        {
+          "id": "AZ90-02",
+          "title": "Real estate law and professional scope",
+          "hours": 8
+        },
+        {
+          "id": "AZ90-03",
+          "title": "Brokerage relationships and agency",
+          "hours": 9
+        },
+        {
+          "id": "AZ90-04",
+          "title": "Contracts and transaction documents",
+          "hours": 14
+        },
+        {
+          "id": "AZ90-05",
+          "title": "Title and transfer",
+          "hours": 8
+        },
+        {
+          "id": "AZ90-06",
+          "title": "Financing and calculations",
+          "hours": 10
+        },
+        {
+          "id": "AZ90-07",
+          "title": "Valuation and investment",
+          "hours": 8
+        },
+        {
+          "id": "AZ90-08",
+          "title": "Leasing and property management",
+          "hours": 7
+        },
+        {
+          "id": "AZ90-09",
+          "title": "Fair housing, disclosures, and risk",
+          "hours": 8
+        },
+        {
+          "id": "AZ90-10",
+          "title": "Arizona-specific law, forms, and integrated practice",
+          "hours": 10
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "az-contract-writing-6-v1",
+      "state": "AZ",
+      "state_name": "Arizona",
+      "title": "Arizona Contract Writing 6h",
+      "version": "1.0",
+      "required_hours": 6,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/arizona/pre-license/contract-writing/",
+      "regulator": "Arizona Department of Real Estate",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "AZCW-01",
+          "title": "Arizona purchase contract structure",
+          "hours": 2
+        },
+        {
+          "id": "AZCW-02",
+          "title": "Contingencies, addenda, and counteroffers",
+          "hours": 1
+        },
+        {
+          "id": "AZCW-03",
+          "title": "Disclosure and agency documents",
+          "hours": 1
+        },
+        {
+          "id": "AZCW-04",
+          "title": "Closing and transaction-file documents",
+          "hours": 1
+        },
+        {
+          "id": "AZCW-05",
+          "title": "Integrated contract-writing case",
+          "hours": 1
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "wa-real-estate-fundamentals-60-v1",
+      "state": "WA",
+      "state_name": "Washington",
+      "title": "Washington Real Estate Fundamentals 60h",
+      "version": "1.0",
+      "required_hours": 60,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/washington/pre-license/fundamentals/",
+      "regulator": "Washington State Department of Licensing",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "WAF-01",
+          "title": "Property and ownership",
+          "hours": 10
+        },
+        {
+          "id": "WAF-02",
+          "title": "Land use and development",
+          "hours": 6
+        },
+        {
+          "id": "WAF-03",
+          "title": "Valuation",
+          "hours": 6
+        },
+        {
+          "id": "WAF-04",
+          "title": "Contracts",
+          "hours": 10
+        },
+        {
+          "id": "WAF-05",
+          "title": "Agency and brokerage",
+          "hours": 8
+        },
+        {
+          "id": "WAF-06",
+          "title": "Finance",
+          "hours": 8
+        },
+        {
+          "id": "WAF-07",
+          "title": "Transfer and settlement",
+          "hours": 6
+        },
+        {
+          "id": "WAF-08",
+          "title": "Federal practice and applied review",
+          "hours": 6
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "wa-real-estate-practices-30-v1",
+      "state": "WA",
+      "state_name": "Washington",
+      "title": "Washington Real Estate Practices 30h",
+      "version": "1.0",
+      "required_hours": 30,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/washington/pre-license/practices/",
+      "regulator": "Washington State Department of Licensing",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "WAP-01",
+          "title": "Washington license law and supervision",
+          "hours": 5
+        },
+        {
+          "id": "WAP-02",
+          "title": "Washington brokerage relationships",
+          "hours": 5
+        },
+        {
+          "id": "WAP-03",
+          "title": "Washington contracts and forms",
+          "hours": 8
+        },
+        {
+          "id": "WAP-04",
+          "title": "Seller and buyer transaction practice",
+          "hours": 5
+        },
+        {
+          "id": "WAP-05",
+          "title": "Finance, escrow, and closing",
+          "hours": 4
+        },
+        {
+          "id": "WAP-06",
+          "title": "Fair housing, property management, and risk",
+          "hours": 3
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "pa-real-estate-fundamentals-30-v1",
+      "state": "PA",
+      "state_name": "Pennsylvania",
+      "title": "Pennsylvania Real Estate Fundamentals 30h",
+      "version": "1.0",
+      "required_hours": 30,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/pennsylvania/pre-license/fundamentals/",
+      "regulator": "Pennsylvania Real Estate Commission",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "PAF-01",
+          "title": "Real estate law and legal concepts",
+          "hours": 6
+        },
+        {
+          "id": "PAF-02",
+          "title": "Interests, ownership, and legal descriptions",
+          "hours": 5
+        },
+        {
+          "id": "PAF-03",
+          "title": "Land use and environmental controls",
+          "hours": 3
+        },
+        {
+          "id": "PAF-04",
+          "title": "Valuation",
+          "hours": 4
+        },
+        {
+          "id": "PAF-05",
+          "title": "Finance",
+          "hours": 5
+        },
+        {
+          "id": "PAF-06",
+          "title": "Transfer and title",
+          "hours": 3
+        },
+        {
+          "id": "PAF-07",
+          "title": "Contract foundations",
+          "hours": 2
+        },
+        {
+          "id": "PAF-08",
+          "title": "Fair housing and real estate math",
+          "hours": 2
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "pa-real-estate-practice-45-v1",
+      "state": "PA",
+      "state_name": "Pennsylvania",
+      "title": "Pennsylvania Real Estate Practice 45h",
+      "version": "1.0",
+      "required_hours": 45,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/pennsylvania/pre-license/practice/",
+      "regulator": "Pennsylvania Real Estate Commission",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "PAP-01",
+          "title": "Pennsylvania license law and brokerage",
+          "hours": 6
+        },
+        {
+          "id": "PAP-02",
+          "title": "Agency and consumer relationships",
+          "hours": 6
+        },
+        {
+          "id": "PAP-03",
+          "title": "Listing practice",
+          "hours": 5
+        },
+        {
+          "id": "PAP-04",
+          "title": "Buyer practice",
+          "hours": 5
+        },
+        {
+          "id": "PAP-05",
+          "title": "Pennsylvania contracts and forms",
+          "hours": 7
+        },
+        {
+          "id": "PAP-06",
+          "title": "Financing practice",
+          "hours": 4
+        },
+        {
+          "id": "PAP-07",
+          "title": "Closing and title practice",
+          "hours": 4
+        },
+        {
+          "id": "PAP-08",
+          "title": "Leasing and property management",
+          "hours": 3
+        },
+        {
+          "id": "PAP-09",
+          "title": "Fair housing and consumer protection",
+          "hours": 3
+        },
+        {
+          "id": "PAP-10",
+          "title": "Professional conduct and integrated practice",
+          "hours": 2
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "nc-broker-prelicensing-75-v1",
+      "state": "NC",
+      "state_name": "North Carolina",
+      "title": "North Carolina Broker Prelicensing 75h",
+      "version": "1.0",
+      "required_hours": 75,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/north-carolina/pre-license/broker/",
+      "regulator": "North Carolina Real Estate Commission",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "NCB-01",
+          "title": "License law and brokerage regulation",
+          "hours": 5
+        },
+        {
+          "id": "NCB-02",
+          "title": "Property concepts and ownership",
+          "hours": 5
+        },
+        {
+          "id": "NCB-03",
+          "title": "Title, legal descriptions, and transfer",
+          "hours": 5
+        },
+        {
+          "id": "NCB-04",
+          "title": "Land use and environmental matters",
+          "hours": 5
+        },
+        {
+          "id": "NCB-05",
+          "title": "Brokerage relationships and agency",
+          "hours": 5
+        },
+        {
+          "id": "NCB-06",
+          "title": "Contract law",
+          "hours": 5
+        },
+        {
+          "id": "NCB-07",
+          "title": "North Carolina sales contracts and forms",
+          "hours": 5
+        },
+        {
+          "id": "NCB-08",
+          "title": "Real estate finance",
+          "hours": 5
+        },
+        {
+          "id": "NCB-09",
+          "title": "Valuation and brokerage pricing",
+          "hours": 5
+        },
+        {
+          "id": "NCB-10",
+          "title": "Real estate calculations",
+          "hours": 5
+        },
+        {
+          "id": "NCB-11",
+          "title": "Fair housing and consumer protection",
+          "hours": 5
+        },
+        {
+          "id": "NCB-12",
+          "title": "Leasing and property management",
+          "hours": 5
+        },
+        {
+          "id": "NCB-13",
+          "title": "Construction, insurance, and property condition",
+          "hours": 5
+        },
+        {
+          "id": "NCB-14",
+          "title": "Closing, settlement, and taxation",
+          "hours": 5
+        },
+        {
+          "id": "NCB-15",
+          "title": "Integrated North Carolina brokerage practice",
+          "hours": 5
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "co-real-estate-law-practice-48-v1",
+      "state": "CO",
+      "state_name": "Colorado",
+      "title": "Colorado Real Estate Law and Practice 48h",
+      "version": "1.0",
+      "required_hours": 48,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/colorado/qualifying/law-and-practice/",
+      "regulator": "Colorado Division of Real Estate and Colorado Division of Private Occupational Schools",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "COLP-01",
+          "title": "Colorado licensing and regulation",
+          "hours": 6
+        },
+        {
+          "id": "COLP-02",
+          "title": "Property law and ownership",
+          "hours": 6
+        },
+        {
+          "id": "COLP-03",
+          "title": "Agency and brokerage relationships",
+          "hours": 6
+        },
+        {
+          "id": "COLP-04",
+          "title": "Contracts and transaction law",
+          "hours": 6
+        },
+        {
+          "id": "COLP-05",
+          "title": "Finance",
+          "hours": 6
+        },
+        {
+          "id": "COLP-06",
+          "title": "Title and transfer",
+          "hours": 6
+        },
+        {
+          "id": "COLP-07",
+          "title": "Valuation, land use, and environment",
+          "hours": 6
+        },
+        {
+          "id": "COLP-08",
+          "title": "Fair housing, leasing, and professional practice",
+          "hours": 6
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "co-contracts-regulations-48-v1",
+      "state": "CO",
+      "state_name": "Colorado",
+      "title": "Colorado Contracts and Regulations 48h",
+      "version": "1.0",
+      "required_hours": 48,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/colorado/qualifying/contracts-and-regulations/",
+      "regulator": "Colorado Division of Real Estate and Colorado Division of Private Occupational Schools",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "COCR-01",
+          "title": "Colorado Commission rules and brokerage duties",
+          "hours": 6
+        },
+        {
+          "id": "COCR-02",
+          "title": "Listing and buyer contracts",
+          "hours": 6
+        },
+        {
+          "id": "COCR-03",
+          "title": "Contract to Buy and Sell",
+          "hours": 6
+        },
+        {
+          "id": "COCR-04",
+          "title": "Title, off-record matters, and association documents",
+          "hours": 6
+        },
+        {
+          "id": "COCR-05",
+          "title": "Property condition and due diligence",
+          "hours": 6
+        },
+        {
+          "id": "COCR-06",
+          "title": "Finance and appraisal provisions",
+          "hours": 6
+        },
+        {
+          "id": "COCR-07",
+          "title": "Addenda, counterproposals, amendments, and notices",
+          "hours": 6
+        },
+        {
+          "id": "COCR-08",
+          "title": "Integrated Colorado contract file",
+          "hours": 6
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "co-trust-accounts-recordkeeping-8-v1",
+      "state": "CO",
+      "state_name": "Colorado",
+      "title": "Colorado Trust Accounts and Record-Keeping 8h",
+      "version": "1.0",
+      "required_hours": 8,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/colorado/qualifying/trust-accounts/",
+      "regulator": "Colorado Division of Real Estate and Colorado Division of Private Occupational Schools",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "COTA-01",
+          "title": "Trust funds and accounts",
+          "hours": 2
+        },
+        {
+          "id": "COTA-02",
+          "title": "Deposits, disbursements, and disputes",
+          "hours": 2
+        },
+        {
+          "id": "COTA-03",
+          "title": "Ledgers and reconciliation",
+          "hours": 2
+        },
+        {
+          "id": "COTA-04",
+          "title": "Retention, audit, and case",
+          "hours": 2
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "co-current-legal-issues-8-v1",
+      "state": "CO",
+      "state_name": "Colorado",
+      "title": "Colorado Current Legal Issues 8h",
+      "version": "1.0",
+      "required_hours": 8,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/colorado/qualifying/current-legal-issues/",
+      "regulator": "Colorado Division of Real Estate and Colorado Division of Private Occupational Schools",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "COCLI-01",
+          "title": "Current statutes and Commission rules",
+          "hours": 2
+        },
+        {
+          "id": "COCLI-02",
+          "title": "Current forms and contracts",
+          "hours": 2
+        },
+        {
+          "id": "COCLI-03",
+          "title": "Current cases, enforcement, and risk",
+          "hours": 2
+        },
+        {
+          "id": "COCLI-04",
+          "title": "Integrated current-issues workshop",
+          "hours": 2
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "co-real-estate-closings-24-v1",
+      "state": "CO",
+      "state_name": "Colorado",
+      "title": "Colorado Real Estate Closings 24h",
+      "version": "1.0",
+      "required_hours": 24,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/colorado/qualifying/closings/",
+      "regulator": "Colorado Division of Real Estate and Colorado Division of Private Occupational Schools",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "COCL-01",
+          "title": "Contract-to-closing workflow",
+          "hours": 4
+        },
+        {
+          "id": "COCL-02",
+          "title": "Title and payoff",
+          "hours": 4
+        },
+        {
+          "id": "COCL-03",
+          "title": "Closing statements and calculations",
+          "hours": 4
+        },
+        {
+          "id": "COCL-04",
+          "title": "Loan and federal closing documents",
+          "hours": 4
+        },
+        {
+          "id": "COCL-05",
+          "title": "Deeds, settlement, and post-closing",
+          "hours": 4
+        },
+        {
+          "id": "COCL-06",
+          "title": "Integrated closing files",
+          "hours": 4
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+    },
+    {
+      "course_id": "co-practical-applications-32-v1",
+      "state": "CO",
+      "state_name": "Colorado",
+      "title": "Colorado Practical Applications 32h",
+      "version": "1.0",
+      "required_hours": 32,
+      "status": "In Development",
+      "approval_number": null,
+      "enrollment_enabled": false,
+      "route": "/real-estate/colorado/qualifying/practical-applications/",
+      "regulator": "Colorado Division of Real Estate and Colorado Division of Private Occupational Schools",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "modules": [
+        {
+          "id": "COPA-01",
+          "title": "New-broker professional setup",
+          "hours": 4
+        },
+        {
+          "id": "COPA-02",
+          "title": "Seller representation file",
+          "hours": 4
+        },
+        {
+          "id": "COPA-03",
+          "title": "Buyer representation file",
+          "hours": 4
+        },
+        {
+          "id": "COPA-04",
+          "title": "Contract negotiation and management",
+          "hours": 4
+        },
+        {
+          "id": "COPA-05",
+          "title": "Inspection, title, appraisal, and loan problems",
+          "hours": 4
+        },
+        {
+          "id": "COPA-06",
+          "title": "Closing and post-closing",
+          "hours": 4
+        },
+        {
+          "id": "COPA-07",
+          "title": "Leasing, property management, and fair housing",
+          "hours": 4
+        },
+        {
+          "id": "COPA-08",
+          "title": "Integrated capstone",
+          "hours": 4
+        }
+      ],
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
     }
   ]
 }

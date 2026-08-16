@@ -15,6 +15,11 @@ function stateHref(state) {
   if (state.state_code === "WI") return "real-estate/wisconsin/pre-license/salesperson/";
   if (state.state_code === "MO") return "real-estate/missouri/pre-license/salesperson-pre-exam/";
   if (state.state_code === "OK") return "real-estate/oklahoma/pre-license/basic/";
+  if (state.state_code === "AZ") return "real-estate/arizona/pre-license/salesperson/";
+  if (state.state_code === "WA") return "real-estate/washington/pre-license/fundamentals/";
+  if (state.state_code === "PA") return "real-estate/pennsylvania/pre-license/fundamentals/";
+  if (state.state_code === "NC") return "real-estate/north-carolina/pre-license/broker/";
+  if (state.state_code === "CO") return "real-estate/colorado/qualifying/law-and-practice/";
   return `#state-${state.state_code.toLowerCase()}`;
 }
 
@@ -35,7 +40,7 @@ function render() {
 
   summary.textContent = `${filtered.length} of 50 states shown`;
   directory.innerHTML = filtered.map((state) => {
-    const activeCodes = ["VA", "ME", "WI", "MO", "OK"];
+    const activeCodes = ["VA", "ME", "WI", "MO", "OK", "AZ", "WA", "PA", "NC", "CO"];
     const active = activeCodes.includes(state.state_code);
     const programs = {
       VA: "Real Estate Salesperson Pre-License · 60 hours",
@@ -43,6 +48,11 @@ function render() {
       WI: "Real Estate Salesperson Pre-License · 72 hours",
       MO: "Pre-Exam 48h + Practice 24h · separate approvals",
       OK: "Basic Pre-License · 90 hours",
+      AZ: "Salesperson 90h + Contract Writing 6h · separate approvals",
+      WA: "Fundamentals 60h + Practices 30h · separate approvals",
+      PA: "Fundamentals 30h + Practice 45h · separate approvals",
+      NC: "Broker Prelicensing · 75 hours",
+      CO: "Six qualifying courses · 168 hours total",
     };
     const program = programs[state.state_code] || "Coming Soon / Not Yet Available";
     return `<article class="state-directory-card" id="state-${state.state_code.toLowerCase()}">

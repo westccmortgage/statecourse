@@ -6,7 +6,7 @@ import { evaluateCheckoutEligibility, getCourseCatalog } from "../config/course-
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
 
 test("regulated courses default to disabled server-authoritative checkout", () => {
-  assert.equal(getCourseCatalog().length, 6);
+  assert.equal(getCourseCatalog().length, 19);
   for (const course of getCourseCatalog()) {
     assert.equal(course.enrollmentEnabled, false);
     assert.equal(course.approvalStatus, "submission_draft");

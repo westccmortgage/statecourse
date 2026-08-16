@@ -834,6 +834,2250 @@
           ]
         }
       ]
+    },
+    "az-salesperson-prelicense-90-v1": {
+      "schema_version": "3.0",
+      "course_id": "az-salesperson-prelicense-90-v1",
+      "state": "AZ",
+      "title": "Arizona Salesperson Pre-License 90h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "salesperson_prelicense_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "contract_writing_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 90,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": false,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "ADRE SPS 2025.01 compliant proctoring; final not on a student-supplied device"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 90,
+        "bank_ratio": 2,
+        "passing_percent": 75,
+        "passing_percent_source": "regulatory_or_current_application",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "ADRE reviewer credentials, distance audit exports, certificates, and school/course/instructor changes through the ADRE process.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "Server-authoritative identity, unit, timestamp, IP, assessment, completion, exam, certificate, instructor, and version records; retention period to be confirmed in the approved school/course package.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "az-salesperson-prelicense-90-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "AZ90-01",
+          "title": "Property, ownership, and land use",
+          "hours": 8,
+          "authority": "A.R.S. § 32-2124 and current ADRE prelicense outline",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "AZ90-02",
+          "title": "Real estate law and professional scope",
+          "hours": 8,
+          "authority": "Current ADRE prelicense outline",
+          "national_core": [
+            "NC-CON"
+          ],
+          "arizona_specific_hours": 8
+        },
+        {
+          "id": "AZ90-03",
+          "title": "Brokerage relationships and agency",
+          "hours": 9,
+          "authority": "Current ADRE prelicense outline and Arizona license law",
+          "national_core": [
+            "NC-AGY"
+          ],
+          "arizona_specific_hours": 9
+        },
+        {
+          "id": "AZ90-04",
+          "title": "Contracts and transaction documents",
+          "hours": 14,
+          "authority": "Current ADRE prelicense outline",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "AZ90-05",
+          "title": "Title and transfer",
+          "hours": 8,
+          "authority": "Current ADRE prelicense outline",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "AZ90-06",
+          "title": "Financing and calculations",
+          "hours": 10,
+          "authority": "Current ADRE prelicense outline",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "AZ90-07",
+          "title": "Valuation and investment",
+          "hours": 8,
+          "authority": "Current ADRE prelicense outline",
+          "national_core": [
+            "NC-VAL",
+            "NC-INV"
+          ]
+        },
+        {
+          "id": "AZ90-08",
+          "title": "Leasing and property management",
+          "hours": 7,
+          "authority": "Current ADRE prelicense outline",
+          "national_core": [
+            "NC-PM"
+          ]
+        },
+        {
+          "id": "AZ90-09",
+          "title": "Fair housing, disclosures, and risk",
+          "hours": 8,
+          "authority": "Current ADRE prelicense outline",
+          "national_core": [
+            "NC-FH"
+          ]
+        },
+        {
+          "id": "AZ90-10",
+          "title": "Arizona-specific law, forms, and integrated practice",
+          "hours": 10,
+          "authority": "A.R.S. § 32-2124 Arizona-specific instruction",
+          "national_core": [],
+          "arizona_specific_hours": 10
+        }
+      ],
+      "arizona_specific_instruction_minimum_hours": 27
+    },
+    "az-contract-writing-6-v1": {
+      "schema_version": "3.0",
+      "course_id": "az-contract-writing-6-v1",
+      "state": "AZ",
+      "title": "Arizona Contract Writing 6h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "salesperson_prelicense_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "contract_writing_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 6,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": false,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "Course-approval configuration; no requirement imported from the 90-hour final"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 20,
+        "bank_ratio": 2,
+        "passing_percent": 75,
+        "passing_percent_source": "regulatory_or_current_application",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "ADRE reviewer credentials, distance audit exports, certificates, and school/course/instructor changes through the ADRE process.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "Server-authoritative identity, unit, timestamp, IP, assessment, completion, exam, certificate, instructor, and version records; retention period to be confirmed in the approved school/course package.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "az-contract-writing-6-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "AZCW-01",
+          "title": "Arizona purchase contract structure",
+          "hours": 2,
+          "authority": "ADRE 6-Hour Contract Writing application",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "AZCW-02",
+          "title": "Contingencies, addenda, and counteroffers",
+          "hours": 1,
+          "authority": "ADRE 6-Hour Contract Writing application",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "AZCW-03",
+          "title": "Disclosure and agency documents",
+          "hours": 1,
+          "authority": "ADRE 6-Hour Contract Writing application",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "AZCW-04",
+          "title": "Closing and transaction-file documents",
+          "hours": 1,
+          "authority": "ADRE 6-Hour Contract Writing application",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "AZCW-05",
+          "title": "Integrated contract-writing case",
+          "hours": 1,
+          "authority": "ADRE 6-Hour Contract Writing application",
+          "national_core": []
+        }
+      ]
+    },
+    "wa-real-estate-fundamentals-60-v1": {
+      "schema_version": "3.0",
+      "course_id": "wa-real-estate-fundamentals-60-v1",
+      "state": "WA",
+      "title": "Washington Real Estate Fundamentals 60h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "fundamentals_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "practices_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "distance_delivery_method_or_arello": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 60,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "Secure school examination; no separate proctor mandate identified in WAC 308-124H"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 180,
+        "bank_ratio": 1,
+        "passing_percent": 70,
+        "passing_percent_source": "regulatory_or_current_application",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "Certificates and audit-ready school records; DOL observation/audit access and material-change submissions.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "Five-year student, enrollment, start/end, course, examination result, and evaluation records under WAC 308-124H-935.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "wa-real-estate-fundamentals-60-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "WAF-01",
+          "title": "Property and ownership",
+          "hours": 10,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "WAF-02",
+          "title": "Land use and development",
+          "hours": 6,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "WAF-03",
+          "title": "Valuation",
+          "hours": 6,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-VAL"
+          ]
+        },
+        {
+          "id": "WAF-04",
+          "title": "Contracts",
+          "hours": 10,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "WAF-05",
+          "title": "Agency and brokerage",
+          "hours": 8,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "WAF-06",
+          "title": "Finance",
+          "hours": 8,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "WAF-07",
+          "title": "Transfer and settlement",
+          "hours": 6,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "WAF-08",
+          "title": "Federal practice and applied review",
+          "hours": 6,
+          "authority": "Current DOL Real Estate Fundamentals curriculum",
+          "national_core": [
+            "NC-FH",
+            "NC-PM",
+            "NC-INV"
+          ]
+        }
+      ]
+    },
+    "wa-real-estate-practices-30-v1": {
+      "schema_version": "3.0",
+      "course_id": "wa-real-estate-practices-30-v1",
+      "state": "WA",
+      "title": "Washington Real Estate Practices 30h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "fundamentals_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "practices_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "distance_delivery_method_or_arello": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 30,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "Secure school examination; no separate proctor mandate identified in WAC 308-124H"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 90,
+        "bank_ratio": 1,
+        "passing_percent": 70,
+        "passing_percent_source": "regulatory_or_current_application",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "Certificates and audit-ready school records; DOL observation/audit access and material-change submissions.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "Five-year student, enrollment, start/end, course, examination result, and evaluation records under WAC 308-124H-935.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "wa-real-estate-practices-30-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "WAP-01",
+          "title": "Washington license law and supervision",
+          "hours": 5,
+          "authority": "Current DOL Real Estate Practices curriculum",
+          "national_core": []
+        },
+        {
+          "id": "WAP-02",
+          "title": "Washington brokerage relationships",
+          "hours": 5,
+          "authority": "Current DOL Real Estate Practices curriculum",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "WAP-03",
+          "title": "Washington contracts and forms",
+          "hours": 8,
+          "authority": "Current DOL Real Estate Practices curriculum",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "WAP-04",
+          "title": "Seller and buyer transaction practice",
+          "hours": 5,
+          "authority": "Current DOL Real Estate Practices curriculum",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "WAP-05",
+          "title": "Finance, escrow, and closing",
+          "hours": 4,
+          "authority": "Current DOL Real Estate Practices curriculum",
+          "national_core": [
+            "NC-FIN",
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "WAP-06",
+          "title": "Fair housing, property management, and risk",
+          "hours": 3,
+          "authority": "Current DOL Real Estate Practices curriculum",
+          "national_core": [
+            "NC-FH",
+            "NC-PM"
+          ]
+        }
+      ]
+    },
+    "pa-real-estate-fundamentals-30-v1": {
+      "schema_version": "3.0",
+      "course_id": "pa-real-estate-fundamentals-30-v1",
+      "state": "PA",
+      "title": "Pennsylvania Real Estate Fundamentals 30h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "education_provider": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "provider_owner": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "provider_director": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "surety_bond": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "fundamentals_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "practice_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "distance_delivery": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 30,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "Proctored prelicense final under 49 Pa. Code § 35.358"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 75,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "Commission inspection/audit access, transcripts/certificates, instructor/course/provider renewal records, and change notices.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "Provider administrative, course, financial, scholastic, transcript, examination, and completion records under 49 Pa. Code Chapter 35; retention duration is a filing-confirmation gate where the cited rule does not state a numeric term.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "pa-real-estate-fundamentals-30-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "PAF-01",
+          "title": "Real estate law and legal concepts",
+          "hours": 6,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "PAF-02",
+          "title": "Interests, ownership, and legal descriptions",
+          "hours": 5,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "PAF-03",
+          "title": "Land use and environmental controls",
+          "hours": 3,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "PAF-04",
+          "title": "Valuation",
+          "hours": 4,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-VAL"
+          ]
+        },
+        {
+          "id": "PAF-05",
+          "title": "Finance",
+          "hours": 5,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "PAF-06",
+          "title": "Transfer and title",
+          "hours": 3,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "PAF-07",
+          "title": "Contract foundations",
+          "hours": 2,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "PAF-08",
+          "title": "Fair housing and real estate math",
+          "hours": 2,
+          "authority": "Commission Real Estate Fundamentals outline",
+          "national_core": [
+            "NC-FH",
+            "NC-FIN"
+          ]
+        }
+      ]
+    },
+    "pa-real-estate-practice-45-v1": {
+      "schema_version": "3.0",
+      "course_id": "pa-real-estate-practice-45-v1",
+      "state": "PA",
+      "title": "Pennsylvania Real Estate Practice 45h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "education_provider": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "provider_owner": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "provider_director": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "surety_bond": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "fundamentals_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "practice_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "distance_delivery": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 45,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "Proctored prelicense final under 49 Pa. Code § 35.358"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 90,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "Commission inspection/audit access, transcripts/certificates, instructor/course/provider renewal records, and change notices.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "Provider administrative, course, financial, scholastic, transcript, examination, and completion records under 49 Pa. Code Chapter 35; retention duration is a filing-confirmation gate where the cited rule does not state a numeric term.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "pa-real-estate-practice-45-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "PAP-01",
+          "title": "Pennsylvania license law and brokerage",
+          "hours": 6,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": []
+        },
+        {
+          "id": "PAP-02",
+          "title": "Agency and consumer relationships",
+          "hours": 6,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "PAP-03",
+          "title": "Listing practice",
+          "hours": 5,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "PAP-04",
+          "title": "Buyer practice",
+          "hours": 5,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "PAP-05",
+          "title": "Pennsylvania contracts and forms",
+          "hours": 7,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "PAP-06",
+          "title": "Financing practice",
+          "hours": 4,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "PAP-07",
+          "title": "Closing and title practice",
+          "hours": 4,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "PAP-08",
+          "title": "Leasing and property management",
+          "hours": 3,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-PM"
+          ]
+        },
+        {
+          "id": "PAP-09",
+          "title": "Fair housing and consumer protection",
+          "hours": 3,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-FH"
+          ]
+        },
+        {
+          "id": "PAP-10",
+          "title": "Professional conduct and integrated practice",
+          "hours": 2,
+          "authority": "Commission Real Estate Practice outline",
+          "national_core": [
+            "NC-AGY"
+          ]
+        }
+      ]
+    },
+    "nc-broker-prelicensing-75-v1": {
+      "schema_version": "3.0",
+      "course_id": "nc-broker-prelicensing-75-v1",
+      "state": "NC",
+      "title": "North Carolina Broker Prelicensing 75h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "education_provider": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "education_director": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "broker_prelicensing_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "prelicensing_instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 75,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": 180
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "Proctored, closed-book, identity-verified end-of-course examination"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 100,
+        "bank_ratio": 1,
+        "passing_percent": 75,
+        "passing_percent_source": "regulatory_or_current_application",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "Completion report within seven calendar days; prior-month course summary by the fifth day; exact roster fields and audit trail retained.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "Three years: enrollment/attendance, every graded exam and answer, master exam/key, evaluations, advertising, delivery certification, PPD, schedules, materials, and required reports.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "nc-broker-prelicensing-75-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "NCB-01",
+          "title": "License law and brokerage regulation",
+          "hours": 5,
+          "authority": "Current NCREC Broker Prelicensing syllabus",
+          "national_core": []
+        },
+        {
+          "id": "NCB-02",
+          "title": "Property concepts and ownership",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "NCB-03",
+          "title": "Title, legal descriptions, and transfer",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "NCB-04",
+          "title": "Land use and environmental matters",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "NCB-05",
+          "title": "Brokerage relationships and agency",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-AGY"
+          ]
+        },
+        {
+          "id": "NCB-06",
+          "title": "Contract law",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "NCB-07",
+          "title": "North Carolina sales contracts and forms",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-CON"
+          ]
+        },
+        {
+          "id": "NCB-08",
+          "title": "Real estate finance",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "NCB-09",
+          "title": "Valuation and brokerage pricing",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-VAL"
+          ]
+        },
+        {
+          "id": "NCB-10",
+          "title": "Real estate calculations",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-FIN"
+          ]
+        },
+        {
+          "id": "NCB-11",
+          "title": "Fair housing and consumer protection",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-FH"
+          ]
+        },
+        {
+          "id": "NCB-12",
+          "title": "Leasing and property management",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-PM"
+          ]
+        },
+        {
+          "id": "NCB-13",
+          "title": "Construction, insurance, and property condition",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-OWN"
+          ]
+        },
+        {
+          "id": "NCB-14",
+          "title": "Closing, settlement, and taxation",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": [
+            "NC-TTL"
+          ]
+        },
+        {
+          "id": "NCB-15",
+          "title": "Integrated North Carolina brokerage practice",
+          "hours": 5,
+          "authority": "Current NCREC syllabus",
+          "national_core": []
+        }
+      ]
+    },
+    "co-real-estate-law-practice-48-v1": {
+      "schema_version": "3.0",
+      "course_id": "co-real-estate-law-practice-48-v1",
+      "state": "CO",
+      "title": "Colorado Real Estate Law and Practice 48h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "dpos_school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "dpos_programs": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "school_agents": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructional_staff": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "six_dre_qualifying_courses": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 48,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "DPOS-approved course policy; no universal DRE course-final score identified"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 96,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "DPOS student assessments/reports and regulator access; DRE qualifying completion evidence and six separate course records.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "DPOS student, enrollment, catalog, agreement, financial, progress, completion, instructor/staff, program, and closure records plus DRE REC-33 completion evidence.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "co-real-estate-law-practice-48-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "COLP-01",
+          "title": "Colorado licensing and regulation",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COLP-02",
+          "title": "Property law and ownership",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COLP-03",
+          "title": "Agency and brokerage relationships",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COLP-04",
+          "title": "Contracts and transaction law",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COLP-05",
+          "title": "Finance",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COLP-06",
+          "title": "Title and transfer",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COLP-07",
+          "title": "Valuation, land use, and environment",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COLP-08",
+          "title": "Fair housing, leasing, and professional practice",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        }
+      ]
+    },
+    "co-contracts-regulations-48-v1": {
+      "schema_version": "3.0",
+      "course_id": "co-contracts-regulations-48-v1",
+      "state": "CO",
+      "title": "Colorado Contracts and Regulations 48h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "dpos_school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "dpos_programs": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "school_agents": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructional_staff": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "six_dre_qualifying_courses": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 48,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "DPOS-approved course policy; no universal DRE course-final score identified"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 96,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "DPOS student assessments/reports and regulator access; DRE qualifying completion evidence and six separate course records.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "DPOS student, enrollment, catalog, agreement, financial, progress, completion, instructor/staff, program, and closure records plus DRE REC-33 completion evidence.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "co-contracts-regulations-48-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "COCR-01",
+          "title": "Colorado Commission rules and brokerage duties",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCR-02",
+          "title": "Listing and buyer contracts",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCR-03",
+          "title": "Contract to Buy and Sell",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCR-04",
+          "title": "Title, off-record matters, and association documents",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCR-05",
+          "title": "Property condition and due diligence",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCR-06",
+          "title": "Finance and appraisal provisions",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCR-07",
+          "title": "Addenda, counterproposals, amendments, and notices",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCR-08",
+          "title": "Integrated Colorado contract file",
+          "hours": 6,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        }
+      ]
+    },
+    "co-trust-accounts-recordkeeping-8-v1": {
+      "schema_version": "3.0",
+      "course_id": "co-trust-accounts-recordkeeping-8-v1",
+      "state": "CO",
+      "title": "Colorado Trust Accounts and Record-Keeping 8h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "dpos_school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "dpos_programs": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "school_agents": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructional_staff": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "six_dre_qualifying_courses": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 8,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "DPOS-approved course policy; no universal DRE course-final score identified"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 25,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "DPOS student assessments/reports and regulator access; DRE qualifying completion evidence and six separate course records.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "DPOS student, enrollment, catalog, agreement, financial, progress, completion, instructor/staff, program, and closure records plus DRE REC-33 completion evidence.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "co-trust-accounts-recordkeeping-8-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "COTA-01",
+          "title": "Trust funds and accounts",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COTA-02",
+          "title": "Deposits, disbursements, and disputes",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COTA-03",
+          "title": "Ledgers and reconciliation",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COTA-04",
+          "title": "Retention, audit, and case",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        }
+      ]
+    },
+    "co-current-legal-issues-8-v1": {
+      "schema_version": "3.0",
+      "course_id": "co-current-legal-issues-8-v1",
+      "state": "CO",
+      "title": "Colorado Current Legal Issues 8h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "dpos_school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "dpos_programs": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "school_agents": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructional_staff": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "six_dre_qualifying_courses": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 8,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "DPOS-approved course policy; no universal DRE course-final score identified"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 25,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "DPOS student assessments/reports and regulator access; DRE qualifying completion evidence and six separate course records.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "DPOS student, enrollment, catalog, agreement, financial, progress, completion, instructor/staff, program, and closure records plus DRE REC-33 completion evidence.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "co-current-legal-issues-8-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "COCLI-01",
+          "title": "Current statutes and Commission rules",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCLI-02",
+          "title": "Current forms and contracts",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCLI-03",
+          "title": "Current cases, enforcement, and risk",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCLI-04",
+          "title": "Integrated current-issues workshop",
+          "hours": 2,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        }
+      ]
+    },
+    "co-real-estate-closings-24-v1": {
+      "schema_version": "3.0",
+      "course_id": "co-real-estate-closings-24-v1",
+      "state": "CO",
+      "title": "Colorado Real Estate Closings 24h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "dpos_school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "dpos_programs": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "school_agents": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructional_staff": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "six_dre_qualifying_courses": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 24,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "DPOS-approved course policy; no universal DRE course-final score identified"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 48,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "DPOS student assessments/reports and regulator access; DRE qualifying completion evidence and six separate course records.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "DPOS student, enrollment, catalog, agreement, financial, progress, completion, instructor/staff, program, and closure records plus DRE REC-33 completion evidence.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "co-real-estate-closings-24-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "COCL-01",
+          "title": "Contract-to-closing workflow",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCL-02",
+          "title": "Title and payoff",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCL-03",
+          "title": "Closing statements and calculations",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCL-04",
+          "title": "Loan and federal closing documents",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCL-05",
+          "title": "Deeds, settlement, and post-closing",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COCL-06",
+          "title": "Integrated closing files",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        }
+      ]
+    },
+    "co-practical-applications-32-v1": {
+      "schema_version": "3.0",
+      "course_id": "co-practical-applications-32-v1",
+      "state": "CO",
+      "title": "Colorado Practical Applications 32h",
+      "course_version": "1.0",
+      "lifecycle": {
+        "status": "development",
+        "approval_number": null,
+        "submitted_at": null,
+        "correction_at": null,
+        "approved_at": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "enrollment_enabled": false,
+        "regulatory_credit_enabled": false
+      },
+      "approvals": {
+        "dpos_school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "dpos_programs": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "school_agents": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "instructional_staff": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        },
+        "six_dre_qualifying_courses": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null
+        }
+      },
+      "required_hours": 32,
+      "delivery": {
+        "mode": "asynchronous_distance_proposed",
+        "approval_pending": true,
+        "active_time_server_authoritative": true,
+        "instructional_minutes_per_clock_hour": 50,
+        "idle_time_excluded": true,
+        "tab_hidden_time_excluded": true,
+        "disconnected_time_excluded": true,
+        "concurrent_sessions": false,
+        "sequential_units": true,
+        "reviewer_bypass_isolated": true,
+        "enrollment_validity_days": null
+      },
+      "identity": {
+        "state_approved_method_pending": true,
+        "username_password_alone_sufficient": null,
+        "ip_session_device_audit": true,
+        "exam_proctoring": "DPOS-approved course policy; no universal DRE course-final score identified"
+      },
+      "instructor": {
+        "assigned_instructor_id": null,
+        "approval_required": true,
+        "assignment_required_for_enrollment": true
+      },
+      "assessment": {
+        "formative_checks": true,
+        "remediation_required": true,
+        "final_forms": 1,
+        "questions_per_form": 64,
+        "bank_ratio": 1,
+        "passing_percent": null,
+        "passing_percent_source": "not_specified_release_gate",
+        "secure_bank_public": false
+      },
+      "reporting": {
+        "state_workflow": "DPOS student assessments/reports and regulator access; DRE qualifying completion evidence and six separate course records.",
+        "automated_events": true
+      },
+      "records": {
+        "state_rule": "DPOS student, enrollment, catalog, agreement, financial, progress, completion, instructor/staff, program, and closure records plus DRE REC-33 completion evidence.",
+        "append_only_completion_audit": true,
+        "exact_course_version_required": true
+      },
+      "certificate": {
+        "enabled": false,
+        "template": "co-practical-applications-32-v1-draft",
+        "valid_approval_required": true,
+        "valid_instructor_required": true
+      },
+      "stripe": {
+        "enabled": false,
+        "price_cents": null,
+        "approval_gate": true,
+        "payment_never_controls_completion": true
+      },
+      "modules": [
+        {
+          "id": "COPA-01",
+          "title": "New-broker professional setup",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COPA-02",
+          "title": "Seller representation file",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COPA-03",
+          "title": "Buyer representation file",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COPA-04",
+          "title": "Contract negotiation and management",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COPA-05",
+          "title": "Inspection, title, appraisal, and loan problems",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COPA-06",
+          "title": "Closing and post-closing",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COPA-07",
+          "title": "Leasing, property management, and fair housing",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        },
+        {
+          "id": "COPA-08",
+          "title": "Integrated capstone",
+          "hours": 4,
+          "authority": "Colorado DRE official qualifying course outline",
+          "national_core": []
+        }
+      ]
     }
   }
 }

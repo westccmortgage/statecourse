@@ -11,6 +11,45 @@ const cents = (name) => {
   return Number.isSafeInteger(parsed) && parsed > 0 ? parsed : null;
 };
 
+const nextFiveCourseDefinitions = [
+  ["az-salesperson-prelicense-90", "AZ", "Arizona Salesperson Pre-License — 90 Hours"],
+  ["az-contract-writing-6", "AZ", "Arizona Contract Writing — 6 Hours"],
+  ["wa-real-estate-fundamentals-60", "WA", "Washington Real Estate Fundamentals — 60 Hours"],
+  ["wa-real-estate-practices-30", "WA", "Washington Real Estate Practices — 30 Hours"],
+  ["pa-real-estate-fundamentals-30", "PA", "Pennsylvania Real Estate Fundamentals — 30 Hours"],
+  ["pa-real-estate-practice-45", "PA", "Pennsylvania Real Estate Practice — 45 Hours"],
+  ["nc-broker-prelicensing-75", "NC", "North Carolina Broker Prelicensing — 75 Hours"],
+  ["co-real-estate-law-practice-48", "CO", "Colorado Real Estate Law and Practice — 48 Hours"],
+  ["co-contracts-regulations-48", "CO", "Colorado Contracts and Regulations — 48 Hours"],
+  ["co-trust-accounts-recordkeeping-8", "CO", "Colorado Trust Accounts and Record-Keeping — 8 Hours"],
+  ["co-current-legal-issues-8", "CO", "Colorado Current Legal Issues — 8 Hours"],
+  ["co-real-estate-closings-24", "CO", "Colorado Real Estate Closings — 24 Hours"],
+  ["co-practical-applications-32", "CO", "Colorado Practical Applications — 32 Hours"],
+];
+
+const nextFiveCourse = ([id, state, name]) => {
+  const envId = id.toUpperCase().replaceAll("-", "_");
+  return {
+    id,
+    state,
+    name,
+    productType: "real_estate_prelicense",
+    currency: "usd",
+    approvalStatus: process.env[`STATECOURSE_${envId}_APPROVAL_STATUS`] || "submission_draft",
+    enrollmentEnabled: bool(`STATECOURSE_${envId}_ENROLLMENT_ENABLED`),
+    price: {
+      test: cents(`STATECOURSE_PRICE_${envId}_TEST_CENTS`),
+      live: cents(`STATECOURSE_PRICE_${envId}_LIVE_CENTS`),
+    },
+    versions: {
+      regulatoryAcknowledgment: `${id}-regulatory-draft-v1`,
+      terms: "statecourse-terms-v1",
+      refundPolicy: `${id}-refund-pending-review-v1`,
+      cancellationPolicy: `${id}-cancellation-pending-review-v1`,
+    },
+  };
+};
+
 const courses = {
   "me-sales-agent": {
     id: "me-sales-agent",
@@ -126,6 +165,10 @@ const courses = {
       cancellationPolicy: "ok-basic-90-cancellation-pending-review-v1",
     },
   },
+  ...Object.fromEntries(nextFiveCourseDefinitions.map((definition) => {
+    const course = nextFiveCourse(definition);
+    return [course.id, course];
+  })),
 };
 
 export function getCourse(courseId) {

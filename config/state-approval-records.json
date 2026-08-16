@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "reviewed": "2026-08-16",
+  "states": {
+    "AZ": {
+      "regulator": "Arizona Department of Real Estate",
+      "provider_application": "ADRE School Approval Application (rev. 09/2025)",
+      "public_status": "In Development",
+      "enrollment_enabled": false,
+      "approval_records": {
+        "school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "salesperson_prelicense_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "contract_writing_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        }
+      }
+    },
+    "WA": {
+      "regulator": "Washington State Department of Licensing",
+      "provider_application": "Real Estate School Application",
+      "public_status": "In Development",
+      "enrollment_enabled": false,
+      "approval_records": {
+        "school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "fundamentals_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "practices_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "distance_delivery_method_or_arello": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        }
+      }
+    },
+    "PA": {
+      "regulator": "Pennsylvania Real Estate Commission",
+      "provider_application": "Initial Real Estate Education Provider Approval",
+      "public_status": "In Development",
+      "enrollment_enabled": false,
+      "approval_records": {
+        "education_provider": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "provider_owner": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "provider_director": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "surety_bond": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "fundamentals_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "practice_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "distance_delivery": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        }
+      }
+    },
+    "NC": {
+      "regulator": "North Carolina Real Estate Commission",
+      "provider_application": "Education Provider Certification",
+      "public_status": "In Development",
+      "enrollment_enabled": false,
+      "approval_records": {
+        "education_provider": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "education_director": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "broker_prelicensing_course": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "prelicensing_instructor": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        }
+      }
+    },
+    "CO": {
+      "regulator": "Colorado Division of Real Estate and Colorado Division of Private Occupational Schools",
+      "provider_application": "DPOS Certificate of Approval",
+      "public_status": "In Development",
+      "enrollment_enabled": false,
+      "approval_records": {
+        "dpos_school": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "dpos_programs": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "school_agents": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "instructional_staff": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        },
+        "six_dre_qualifying_courses": {
+          "status": "development",
+          "approval_number": null,
+          "effective_date": null,
+          "expiration_date": null,
+          "communications": []
+        }
+      }
+    }
+  }
+}
