@@ -79,8 +79,8 @@ function remediationTemplate(context) {
 }
 function appliedActivityTemplate(progress) { return `<section class="lesson-section applied-activity"><h4><span class="section-index">04</span>Applied exercise</h4><p>Complete the applied exercise described in the instructional sequence. Record completion only after you have classified each item and reviewed your reasoning against the lesson concepts.</p><button type="button" id="completeActivity" ${!isStudent() || progress.activityComplete ? "disabled" : ""}>${progress.activityComplete ? "Applied exercise complete" : "Record applied exercise completion"}</button></section>`; }
 function modeBanner() {
-  if (state.reviewerBypass) return `<div class="mode-banner review-mode"><strong>Regulatory Review Mode</strong><span>Time and sequencing restrictions bypassed. Reviewer actions generate no student completion credit.</span></div>`;
   if (state.mode === "admin") return `<div class="mode-banner admin-mode"><strong>Admin Mode</strong><span>Administrative review actions are audit logged and generate no student completion credit.</span></div>`;
+  if (state.reviewerBypass) return `<div class="mode-banner review-mode"><strong>Regulatory Review Mode</strong><span>Time and sequencing restrictions bypassed. Reviewer actions generate no student completion credit.</span></div>`;
   return `<div class="mode-banner student-mode"><strong>Student Mode</strong><span>${state.complianceCreditEligible ? "Server-authoritative time and completion controls are active." : "Non-credit simulation: course approval or eligible enrollment is not active."}</span></div>`;
 }
 function renderLesson() {

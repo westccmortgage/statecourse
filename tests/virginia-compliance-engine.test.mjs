@@ -67,6 +67,8 @@ test("Virginia rules are course scoped and preserve the exact course version", a
   assert.equal(config.course_version, VIRGINIA_COURSE_RULES.courseVersion);
   assert.equal(config.completion_rules.required_instructional_minutes_per_hour, 50);
   assert.match(config.configuration_scope, /Virginia only/);
+  const route = await readFile(new URL("../app/api/course/route.ts", import.meta.url), "utf8");
+  assert.match(route, /APPROVAL_STATUS === "approved"/);
 });
 
 test("student interface has no manual preview-completion control and hides expected rationale before submission", async () => {
