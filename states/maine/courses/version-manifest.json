@@ -1,0 +1,12 @@
+{
+  "state": "ME",
+  "course_id": "me-sales-agent",
+  "title": "Maine Real Estate Sales Agent Pre-License Course",
+  "version": "submission-draft-1.0",
+  "public_status": "In Development",
+  "approval_number": null,
+  "enrollment_enabled": false,
+  "instructor_of_record": null,
+  "distance_education_acceptance_path": "Pending provider decision and Maine written acceptance",
+  "document_control": "Private source records and secure assessments are referenced by hash/version after filing; they are not published in the web artifact."
+}
