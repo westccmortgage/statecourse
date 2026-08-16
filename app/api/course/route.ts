@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const COURSE_ID = "va-salesperson-principles-v1";
 const COURSE_VERSION = "1.0-submission-draft";
+const APPROVAL_STATUS = "submission_draft";
 const REQUIRED_SECONDS = 3_000;
 const REQUIRED_SECTIONS = 3;
 const MAX_HEARTBEAT_GAP = 45;
@@ -164,7 +165,7 @@ export async function GET(request: NextRequest) {
     const hour = Math.min(60, Math.max(1, Number(url.searchParams.get("hour")) || 1));
     const ctx = await contextFor(request);
     const enrollmentId = ctx.enrollment?.id as string | undefined;
-    const creditEligible = Boolean(ctx.enrollment?.compliance_credit_eligible);
+    const creditEligible = Boolean(ctx.enrollment?.compliance_credit_eligible) && APPROVAL_STATUS === "approved";
     let progress = normalizeProgress(null, hour);
     let completedHours: number[] = [];
     let currentHour = 1;
@@ -183,7 +184,7 @@ export async function GET(request: NextRequest) {
       complianceCreditEligible: creditEligible,
       courseId: COURSE_ID,
       courseVersion: COURSE_VERSION,
-      approvalStatus: "submission_draft",
+      approvalStatus: APPROVAL_STATUS,
       requiredActiveSeconds: REQUIRED_SECONDS,
       requiredSections: REQUIRED_SECTIONS,
       completedHours,
@@ -243,7 +244,7 @@ export async function POST(request: NextRequest) {
         const last = Date.parse(String(session.last_heartbeat_at ?? stamp));
         const elapsed = Math.max(0, Math.floor((Date.now() - last) / 1_000));
         const signalsActive = body.visible === true && body.focused === true && body.connected === true && Number(body.secondsSinceInteraction) <= IDLE_AFTER;
-        const credit = Boolean(ctx.enrollment.compliance_credit_eligible) && signalsActive && elapsed <= MAX_HEARTBEAT_GAP ? Math.min(elapsed, HEARTBEAT_CAP) : 0;
+        const credit = Boolean(ctx.enrollment.compliance_credit_eligible) && APPROVAL_STATUS === "approved" && signalsActive && elapsed <= MAX_HEARTBEAT_GAP ? Math.min(elapsed, HEARTBEAT_CAP) : 0;
         await database.batch([
           database.prepare("UPDATE study_sessions SET last_heartbeat_at = ?, active_seconds = active_seconds + ?, inactive_seconds = inactive_seconds + ? WHERE id = ?")
             .bind(stamp, credit, Math.max(0, elapsed - credit), sessionId),
