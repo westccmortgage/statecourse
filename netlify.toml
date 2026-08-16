@@ -47,6 +47,21 @@
   status = 302
 
 [[redirects]]
+  from = "/wisconsin"
+  to = "/real-estate/wisconsin/pre-license/salesperson/"
+  status = 302
+
+[[redirects]]
+  from = "/missouri"
+  to = "/real-estate/missouri/pre-license/salesperson-pre-exam/"
+  status = 302
+
+[[redirects]]
+  from = "/oklahoma"
+  to = "/real-estate/oklahoma/pre-license/basic/"
+  status = 302
+
+[[redirects]]
   from = "/enroll"
   to = "/enroll/index.html"
   status = 200
@@ -94,4 +109,9 @@
 [[redirects]]
   from = "/api/admin/refunds"
   to = "/.netlify/functions/request-refund"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/compliance/missouri-completion-times"
+  to = "/.netlify/functions/admin-missouri-completion-report"
   status = 200

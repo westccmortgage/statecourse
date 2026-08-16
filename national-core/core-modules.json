@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "reviewed": "2026-08-16",
+  "modules": [
+    {
+      "id": "NC-OWN",
+      "title": "Ownership and interests",
+      "scope": "Real and personal property, estates, concurrent ownership, encumbrances, legal descriptions, and land-use foundations."
+    },
+    {
+      "id": "NC-CON",
+      "title": "Contracts",
+      "scope": "Formation, enforceability, performance, breach, remedies, contingencies, purchase agreements, and leases."
+    },
+    {
+      "id": "NC-AGY",
+      "title": "Agency and brokerage relationships",
+      "scope": "Creation and termination of relationships, duties, compensation, disclosure, and conflicts."
+    },
+    {
+      "id": "NC-FIN",
+      "title": "Financing and calculations",
+      "scope": "Notes, mortgages or deeds of trust, loan markets, qualification, amortization, points, ratios, and settlement math."
+    },
+    {
+      "id": "NC-VAL",
+      "title": "Valuation",
+      "scope": "Value principles, market analysis, sales comparison, cost, income, and basic investment calculations."
+    },
+    {
+      "id": "NC-FH",
+      "title": "Fair housing",
+      "scope": "Federal protected classes, prohibited conduct, advertising, disability accommodation, and equal professional service."
+    },
+    {
+      "id": "NC-TTL",
+      "title": "Transfer and title",
+      "scope": "Deeds, recording, title evidence, involuntary transfer, closing, and settlement documents."
+    },
+    {
+      "id": "NC-PM",
+      "title": "Property management",
+      "scope": "Leasing, management agreements, operations, maintenance, risk, and tenant relations."
+    },
+    {
+      "id": "NC-INV",
+      "title": "Investment concepts",
+      "scope": "Cash flow, leverage, return measures, taxation orientation, and risk-return analysis."
+    }
+  ]
+}

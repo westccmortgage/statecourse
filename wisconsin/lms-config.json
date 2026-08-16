@@ -1,0 +1,196 @@
+{
+  "schema_version": "2.0",
+  "course_id": "wi-salesperson-prelicense-v1",
+  "payment_product_id": "wi-salesperson",
+  "state": "WI",
+  "title": "Wisconsin Salesperson Pre-License",
+  "version": "1.0",
+  "lifecycle": {
+    "status": "development",
+    "allowed_statuses": [
+      "development",
+      "submitted",
+      "regulator_correction",
+      "approved"
+    ],
+    "effective_date": null,
+    "expiration_date": null,
+    "course_approval_number": null,
+    "enrollment_enabled": false,
+    "credit_enabled": false
+  },
+  "regulator": "Wisconsin Department of Safety and Professional Services / Real Estate Examining Board",
+  "required_hours": 72,
+  "delivery": {
+    "mode": "asynchronous_distance",
+    "approval_pending": true,
+    "active_time_server_authoritative": true,
+    "concurrent_sessions": false,
+    "idle_time_excluded": true,
+    "module_sequence_required": true,
+    "enrollment_validity_days": null
+  },
+  "instructor": {
+    "instructor_id": null,
+    "regulator_approval_required": true,
+    "approval_number": null,
+    "approval_expiration": null,
+    "response_sla": "reasonable_times_and_means",
+    "oklahoma_exam_minimum_each": null
+  },
+  "assessment": {
+    "module_quizzes": true,
+    "remediation_required": true,
+    "final_forms": 1,
+    "questions_per_form": 100,
+    "passing_percent": 75,
+    "passing_percent_source": "provider_proposal_pending_approval",
+    "secure_bank_public": false
+  },
+  "records": {
+    "retention_years": 5,
+    "audit_log": true,
+    "final_exam_administration": false
+  },
+  "reporting": {
+    "regulator_workflow": "pending_approval_configuration"
+  },
+  "certificate": {
+    "template": "wi-salesperson-prelicense-v1-draft",
+    "enabled": false,
+    "requires_valid_approval": true,
+    "requires_valid_instructor": true
+  },
+  "stripe": {
+    "enabled": false,
+    "price_cents": null,
+    "one_time": true,
+    "approval_gate": true
+  },
+  "modules": [
+    {
+      "id": "WI-01",
+      "title": "Real property and the real estate business",
+      "hours": 5,
+      "authority": "REEB 25.033(1)-(2)",
+      "national_core": [
+        "NC-OWN",
+        "NC-INV"
+      ]
+    },
+    {
+      "id": "WI-02",
+      "title": "Brokerage and agency",
+      "hours": 7,
+      "authority": "REEB 25.033(3)",
+      "national_core": [
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "WI-03",
+      "title": "Listing agreements",
+      "hours": 5,
+      "authority": "REEB 25.033(4)",
+      "national_core": [
+        "NC-AGY",
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "WI-04",
+      "title": "Interests and legal descriptions",
+      "hours": 6,
+      "authority": "REEB 25.033(5)-(6)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    },
+    {
+      "id": "WI-05",
+      "title": "Taxes and other liens",
+      "hours": 4,
+      "authority": "REEB 25.033(7)",
+      "national_core": [
+        "NC-OWN",
+        "NC-FIN"
+      ]
+    },
+    {
+      "id": "WI-06",
+      "title": "Real estate contracts and approved forms",
+      "hours": 12,
+      "authority": "REEB 25.033(8)",
+      "national_core": [
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "WI-07",
+      "title": "Title records and transfer",
+      "hours": 5,
+      "authority": "REEB 25.033(9)",
+      "national_core": [
+        "NC-TTL"
+      ]
+    },
+    {
+      "id": "WI-08",
+      "title": "Finance and basic math",
+      "hours": 7,
+      "authority": "REEB 25.033(10)",
+      "national_core": [
+        "NC-FIN"
+      ]
+    },
+    {
+      "id": "WI-09",
+      "title": "Appraisal and market analysis",
+      "hours": 4,
+      "authority": "REEB 25.033(11)",
+      "national_core": [
+        "NC-VAL",
+        "NC-INV"
+      ]
+    },
+    {
+      "id": "WI-10",
+      "title": "Fair housing, ethics, and consumer protection",
+      "hours": 7,
+      "authority": "REEB 25.033(12)-(14)",
+      "national_core": [
+        "NC-FH",
+        "NC-AGY"
+      ]
+    },
+    {
+      "id": "WI-11",
+      "title": "Leases and property management",
+      "hours": 4,
+      "authority": "REEB 25.033(15)-(16)",
+      "national_core": [
+        "NC-PM",
+        "NC-CON"
+      ]
+    },
+    {
+      "id": "WI-12",
+      "title": "Land use and environmental concerns",
+      "hours": 3,
+      "authority": "REEB 25.033(17)-(18)",
+      "national_core": [
+        "NC-OWN"
+      ]
+    },
+    {
+      "id": "WI-13",
+      "title": "Wisconsin license law, trust funds, and escrow",
+      "hours": 3,
+      "authority": "REEB 25.033(19)",
+      "national_core": [
+        "NC-AGY",
+        "NC-TTL"
+      ]
+    }
+  ]
+}
