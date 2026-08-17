@@ -149,7 +149,7 @@ async function loadStates() {
     const response = await fetch(new URL("data/state-registry.json", platformRoot));
     if (!response.ok) throw new Error("State registry unavailable");
     const { states } = await response.json();
-    const jurisdictions = [...states, { state_name: "District of Columbia", state_code: "DC" }].sort((a, b) => a.state_name.localeCompare(b.state_name));
+    const jurisdictions = [...states].sort((a, b) => a.state_name.localeCompare(b.state_name));
     stateSelect.insertAdjacentHTML("beforeend", jurisdictions.map((state) => `<option value="${state.state_code}" data-slug="${slugify(state.state_name)}">${state.state_name}</option>`).join(""));
   } catch (error) {
     console.error(error);
