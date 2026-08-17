@@ -29,6 +29,9 @@ test -f dist/real-estate/oklahoma/pre-license/basic/index.html
 test -f dist/data/launch-course-frameworks.json
 test -f dist/enroll/index.html
 test -f dist/admin/payments/index.html
+test -f dist/student/index.html
+test -f dist/student/sign-in/index.html
+test -f dist/student/student-portal.js
 
 node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==50) process.exit(1); for(const c of ["VA","ME","WI","MO","OK"]) if(r.states.find(s=>s.state_code===c)?.public_status!=="In Development") process.exit(1)'
 node -e 'const c=require("./dist/data/course-catalog.json"); if(c.categories[0].programs.flatMap(p=>p.courses).length!==6) process.exit(1)'
