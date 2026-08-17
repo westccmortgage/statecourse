@@ -7,6 +7,7 @@ const checkoutButton = document.querySelector("#checkoutButton");
 const checkoutMessage = document.querySelector("#checkoutMessage");
 const accountStatus = document.querySelector("#accountStatus");
 const accountAction = document.querySelector("#accountAction");
+const accountSignIn = document.querySelector("#accountSignIn");
 
 const publicCourses = [
   {id:"va-salesperson",state:"VA",stateName:"Virginia",name:"Principles & Practices of Real Estate",hours:60,status:"In Development / Preparing Submission",regulator:"Virginia Real Estate Board"},
@@ -55,7 +56,9 @@ function accountReturnPath(){return `/enroll/?course=${encodeURIComponent(select
 
 async function loadStudentSession(){
   const registerUrl=`/student/register/?course=${encodeURIComponent(selectedId)}&return_to=${encodeURIComponent(accountReturnPath())}`;
+  const signInUrl=`/student/sign-in/?return_to=${encodeURIComponent(accountReturnPath())}`;
   accountAction.href=registerUrl;
+  accountSignIn.href=signInUrl;
   try{
     const response=await fetch("/api/student/session",{credentials:"same-origin",headers:{accept:"application/json"}});
     if(!response.ok)throw new Error("not_signed_in");
@@ -67,10 +70,12 @@ async function loadStudentSession(){
     accountStatus.textContent=`Signed in as ${data.student.email}.`;
     accountAction.textContent="Open My Courses";
     accountAction.href="/student/";
+    accountSignIn.hidden=true;
   }catch{
     studentSession=null;
     accountStatus.textContent="Create or sign in to your StateCourse account to continue.";
     accountAction.textContent="Create Account";
+    accountSignIn.hidden=false;
   }
   updateButton();
 }
