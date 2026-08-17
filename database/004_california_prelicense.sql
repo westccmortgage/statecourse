@@ -16,6 +16,8 @@ on conflict(id) do update set
   current_version=excluded.current_version,
   course_route=excluded.course_route;
 
+alter table enrollments alter column course_version set default '1.0';
+
 insert into regulatory_course_versions(
   course_id,version,lifecycle_status,required_hours,enrollment_enabled,regulatory_credit_enabled,configuration
 )
@@ -378,16 +380,20 @@ begin
       insert into lms_compliance_state(enrollment_id,required_study_seconds,credited_study_seconds)
       values(v_enrollment,162000,0);
       insert into student_portal_state(enrollment_id,student_id,course_id,course_version,resume_path)
-      values(v_enrollment,p_student_id,v_course,'1.0','/student/course/?enrollment_id='||v_enrollment::text);
+      values(v_enrollment,p_student_id,v_course,'1.0','/student/course/?enrollment_id='||v_enrollment::text)
+      on conflict(enrollment_id) do nothing;
       insert into final_exam_authorizations(enrollment_id,student_id,course_id,course_version)
-      values(v_enrollment,p_student_id,v_course,'1.0');
+      values(v_enrollment,p_student_id,v_course,'1.0')
+      on conflict(enrollment_id) do nothing;
       insert into lms_assignment_state(enrollment_id,student_id,course_id,course_version,assignment_id)
       select v_enrollment,p_student_id,v_course,'1.0',assignment_id
       from regulated_course_assignments where course_id=v_course and course_version='1.0'
-      order by sequence_number;
+      order by sequence_number
+      on conflict(enrollment_id,assignment_id,assignment_version) do nothing;
       insert into lms_assignment_progress(enrollment_id,course_id,course_version,assignment_id,assignment_version)
       select v_enrollment,v_course,'1.0',assignment_id,'1.0'
-      from regulated_course_assignments where course_id=v_course and course_version='1.0';
+      from regulated_course_assignments where course_id=v_course and course_version='1.0'
+      on conflict(enrollment_id,assignment_id,assignment_version) do nothing;
     end if;
     perform refresh_california_eligibility(v_enrollment);
     course_id:=v_course;
@@ -396,6 +402,52 @@ begin
     v_enrollment:=null;
   end loop;
 end $$;
+
+create or replace function initialize_california_enrollment()
+returns trigger language plpgsql security definer set search_path=public as $$
+begin
+  if new.course_id not in (
+    'ca-real-estate-principles-45',
+    'ca-real-estate-practice-45',
+    'ca-mortgage-loan-brokering-lending-45'
+  ) then return new; end if;
+  new.course_version:=coalesce(new.course_version,'1.0');
+  new.started_at:=coalesce(new.started_at,now());
+  new.expires_at:=coalesce(new.expires_at,now()+interval '365 days');
+  return new;
+end $$;
+
+create or replace function initialize_california_enrollment_records()
+returns trigger language plpgsql security definer set search_path=public as $$
+begin
+  if new.course_id not in (
+    'ca-real-estate-principles-45',
+    'ca-real-estate-practice-45',
+    'ca-mortgage-loan-brokering-lending-45'
+  ) then return new; end if;
+  insert into student_portal_state(enrollment_id,student_id,course_id,course_version,resume_path)
+  values(new.id,new.student_id,new.course_id,new.course_version,'/student/course/?enrollment_id='||new.id::text)
+  on conflict(enrollment_id) do nothing;
+  insert into final_exam_authorizations(enrollment_id,student_id,course_id,course_version)
+  values(new.id,new.student_id,new.course_id,new.course_version)
+  on conflict(enrollment_id) do nothing;
+  insert into lms_assignment_state(enrollment_id,student_id,course_id,course_version,assignment_id)
+  select new.id,new.student_id,new.course_id,new.course_version,assignment_id
+  from regulated_course_assignments where course_id=new.course_id and course_version=new.course_version
+  on conflict(enrollment_id,assignment_id,assignment_version) do nothing;
+  insert into lms_assignment_progress(enrollment_id,course_id,course_version,assignment_id,assignment_version)
+  select new.id,new.course_id,new.course_version,assignment_id,'1.0'
+  from regulated_course_assignments where course_id=new.course_id and course_version=new.course_version
+  on conflict(enrollment_id,assignment_id,assignment_version) do nothing;
+  return new;
+end $$;
+
+drop trigger if exists california_enrollment_defaults on enrollments;
+create trigger california_enrollment_defaults before insert on enrollments
+for each row execute function initialize_california_enrollment();
+drop trigger if exists california_enrollment_records on enrollments;
+create trigger california_enrollment_records after insert on enrollments
+for each row execute function initialize_california_enrollment_records();
 
 alter table regulated_course_assignments enable row level security;
 alter table lms_assignment_state enable row level security;
