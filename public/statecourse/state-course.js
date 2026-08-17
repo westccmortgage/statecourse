@@ -24,7 +24,7 @@ function renderCourse(course) {
     <article class="framework-module">
       <span>${String(index + 1).padStart(2, "0")}</span>
       <div><p>${escapeHtml(module.id)}</p><h3>${escapeHtml(module.title)}</h3></div>
-      <strong>${escapeHtml(module.hours)} ${module.hours === 1 ? "hour" : "hours"}</strong>
+      <div class="framework-module-action"><strong>${escapeHtml(module.hours)} ${module.hours === 1 ? "hour" : "hours"}</strong><a href="/student/course-preview/?course_id=${encodeURIComponent(course.course_id)}&assignment=${index + 1}">Read lesson preview →</a></div>
     </article>`).join("");
 }
 

@@ -26,11 +26,14 @@
 .framework-module > span { color: #a74335; font-family: Georgia,serif; font-size: 22px; }
 .framework-module p { margin: 0 0 5px; color: #72787c; font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .framework-module h3 { margin: 0; color: #14283b; font-size: 19px; line-height: 1.25; }
-.framework-module > strong { color: #4d565b; font-size: 12px; text-align: right; }
+.framework-module > strong,.framework-module-action strong { color: #4d565b; font-size: 12px; text-align: right; }
+.framework-module-action { display: grid; justify-items: end; gap: 6px; text-align: right; }
+.framework-module-action a { color: #a74335; font-size: 11px; font-weight: 800; text-decoration: none; }
+.framework-module-action a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .framework-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding-top: 55px; }
 .framework-bottom article { padding: 28px; border-top: 4px solid #a74335; background: #fffdf8; }
 .framework-bottom h3 { margin: 0 0 14px; color: #14283b; font-family: Georgia,serif; font-size: 24px; font-weight: 400; }
 .framework-bottom p { margin: 0; color: #566067; font-size: 13px; line-height: 1.7; }
 .framework-error { padding: 25px 0; color: #8c3027; }
 @media (max-width: 850px) { .framework-title-grid,.framework-intro { grid-template-columns: 1fr; gap: 32px; } .framework-status { padding-left: 20px; } .framework-facts { grid-template-columns: 1fr 1fr; } .framework-facts div:nth-child(3) { border-left: 0; } .framework-heading { display: block; } .framework-heading p { margin-top: 18px; } }
-@media (max-width: 540px) { .framework-masthead { padding: 38px 20px 30px; } .framework-title-grid h1 { font-size: 39px; } .framework-facts { grid-template-columns: 1fr; } .framework-facts div,.framework-facts div + div { padding: 13px 0; border-left: 0; border-top: 1px solid #d8d6cf; } .framework-body { padding: 48px 20px 65px; } .framework-module { grid-template-columns: 43px 1fr; padding: 17px 0; } .framework-module > strong { grid-column: 2; text-align: left; } .framework-bottom { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .framework-masthead { padding: 38px 20px 30px; } .framework-title-grid h1 { font-size: 39px; } .framework-facts { grid-template-columns: 1fr; } .framework-facts div,.framework-facts div + div { padding: 13px 0; border-left: 0; border-top: 1px solid #d8d6cf; } .framework-body { padding: 48px 20px 65px; } .framework-module { grid-template-columns: 43px 1fr; padding: 17px 0; } .framework-module > strong,.framework-module-action { grid-column: 2; justify-items: start; text-align: left; } .framework-bottom { grid-template-columns: 1fr; } }
