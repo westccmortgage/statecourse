@@ -51,3 +51,21 @@ test("course reader and migration contain sequencing, heartbeat, remediation, re
   assert.match(sql,/record_california_heartbeat/);
   assert.match(sql,/create_qa_california_bundle/);
 });
+
+test("California reader uses a wide editorial column with accessible course-tool drawers",async()=>{
+  const [html,css,client,preview]=await Promise.all([
+    fs.readFile("public/statecourse/student/course/index.html","utf8"),
+    fs.readFile("public/statecourse/student/course/student-course.css","utf8"),
+    fs.readFile("public/statecourse/student/course/student-course.js","utf8"),
+    fs.readFile("public/statecourse/student/course-preview/course-preview.js","utf8")
+  ]);
+  assert.match(html,/id="assignmentToggle"[^>]+aria-controls="assignmentRail"/);
+  assert.match(html,/id="progressToggle"[^>]+aria-controls="statusPanel"/);
+  assert.match(html,/id="drawerScrim"/);
+  assert.match(css,/\.lesson-column\{width:100%;max-width:940px/);
+  assert.match(css,/\.course-drawer\{position:fixed/);
+  assert.match(client,/class=\"lesson-metadata\"/);
+  assert.match(client,/titleCaseHeading/);
+  assert.match(client,/sentenceCase/);
+  assert.match(preview,/titleCaseHeading/);
+});
