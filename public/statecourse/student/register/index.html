@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#172b3d" />
+    <title>Create Student Account | StateCourse</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../student-portal.css" />
+  </head>
+  <body>
+    <header class="portal-header"><a class="brand" href="../../"><span aria-hidden="true">SC</span><strong>StateCourse</strong><small>Student Portal</small></a><nav><a href="../../get-licensed/">Course finder</a><a href="../sign-in/" id="headerSignIn">Student sign in</a></nav></header>
+    <main class="signin-main">
+      <section class="signin-panel" aria-labelledby="register-title">
+        <p class="eyebrow">Student account</p>
+        <h1 id="register-title">Create your StateCourse account</h1>
+        <p>Your account connects your licensing path, required disclosures, payments, enrollments, course progress, and permanent records.</p>
+        <form id="studentRegister">
+          <label><span>Legal first name</span><input id="firstName" name="firstName" autocomplete="given-name" maxlength="100" required /></label>
+          <label><span>Legal last name</span><input id="lastName" name="lastName" autocomplete="family-name" maxlength="100" required /></label>
+          <label><span>Email address</span><input id="email" name="email" type="email" autocomplete="username" required /></label>
+          <label><span>Password</span><input id="password" name="password" type="password" autocomplete="new-password" minlength="10" maxlength="200" required /><small>Use at least 10 characters.</small></label>
+          <label><span>Confirm password</span><input id="passwordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="10" maxlength="200" required /></label>
+          <button type="submit">Create Account</button>
+        </form>
+        <p class="signin-message" id="registerMessage" aria-live="polite"></p>
+        <div class="signin-note"><strong>Enrollment is separate.</strong><span>Creating an account does not create a course enrollment, start instructional time, award regulatory credit, or issue a certificate. Enrollment is created only after an eligible course checkout and verified payment webhook.</span></div>
+        <a class="back-link" id="studentSignInLink" href="../sign-in/">Already have an account? Student sign in →</a>
+      </section>
+    </main>
+    <footer><span>StateCourse secure student access</span><small>Passwords are handled by the configured authentication provider and are not stored by StateCourse.</small></footer>
+    <script src="student-register.js" defer></script>
+  </body>
+</html>
+
