@@ -25,9 +25,11 @@ test("California Real Estate Practice uses 45 assignment-specific assessment ite
   assert.equal(prompts.size, 45);
 });
 
-test("Practice Assignments 01 and 02 are editorially rewritten content", () => {
+test("Practice Assignments 01 through 04 are editorially rewritten content", () => {
   const first = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-01.md", "utf8");
   const second = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-02.md", "utf8");
+  const third = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-03.md", "utf8");
+  const fourth = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-04.md", "utf8");
   assert.match(first, /Business and Professions Code section 10131/);
   assert.match(first, /Commissioner’s Regulation 2725/);
   assert.match(first, /Unlicensed administrative assistants/);
@@ -35,5 +37,12 @@ test("Practice Assignments 01 and 02 are editorially rewritten content", () => {
   assert.match(second, /team name/);
   assert.match(second, /antitrust/i);
   assert.match(second, /digitally altered property images/i);
-  assert.doesNotMatch(first + second, /is studied as an operating concept, not as a vocabulary label/);
+  assert.match(third, /Civil Code section 2079\.14/);
+  assert.match(third, /dual agency/i);
+  assert.match(third, /2079\.21/);
+  assert.match(fourth, /24 months/);
+  assert.match(fourth, /12 months/);
+  assert.match(fourth, /listing agreement/i);
+  assert.match(fourth, /open house/i);
+  assert.doesNotMatch(first + second + third + fourth, /is studied as an operating concept, not as a vocabulary label/);
 });

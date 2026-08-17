@@ -1,4 +1,4 @@
-# Real Estate Practice - Lesson Assignment 03
+# Real Estate Practice — Lesson Assignment 03
 
 ## Agency disclosure and fiduciary performance
 
@@ -6,286 +6,267 @@
 **Assignment time:** 180 instructional minutes  
 **Regulatory status:** Not approved; no California credit is available.
 
+Agency answers three practical questions: who is the client, what has the broker agreed to do, and whose interests must guide the broker’s judgment? California also requires a statutory disclosure process for many residential sales. A professional does not treat that form as an isolated signature page. The form, the employment agreement, the parties’ conduct, the offer, the agency confirmation, and the transaction record must tell the same story.
+
 ## Learning objectives
 
-- Analyze seller and buyer agency using verified facts, current authority, and a documented professional workflow.
-- Analyze dual agency consent using verified facts, current authority, and a documented professional workflow.
-- Analyze California disclosure sequence using verified facts, current authority, and a documented professional workflow.
-- Analyze fiduciary duties in practice using verified facts, current authority, and a documented professional workflow.
-- Analyze compensation and conflicts using verified facts, current authority, and a documented professional workflow.
-- Analyze agency documentation case using verified facts, current authority, and a documented professional workflow.
+After completing this assignment, the student will be able to:
+
+- distinguish a principal, an agent, a subagent, and a nonclient party;
+- identify how actual authority, apparent authority, ratification, and agency by conduct can affect a transaction;
+- apply the timing rules in Civil Code section 2079.14 to seller and buyer relationships;
+- explain the acknowledgment and refusal procedure in Civil Code section 2079.15;
+- distinguish disclosure of possible agency relationships from confirmation of the relationship actually selected;
+- analyze dual agency consent and the confidential-price limits in Civil Code section 2079.21;
+- apply fiduciary duties to instructions, material facts, compensation, offers, records, and conflicts; and
+- create a chronological agency record that a broker or regulator can reconstruct.
 
 ## Timed sequence
 
-| Activity | Minutes | Evidence |
+| Activity | Minutes | Student evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
-| Lesson assessment | 10 | Five scored items submitted |
+| Guided reading: agency creation, authority, and roles | 45 | Sections 1–2 viewed; relationship map completed |
+| Guided reading: California disclosure and confirmation | 45 | Section 3 viewed; disclosure chronology completed |
+| Guided reading: dual agency and fiduciary performance | 50 | Sections 4–5 viewed; conflict analysis completed |
+| Applied agency-file exercise | 30 | Written response submitted |
+| Scored lesson assessment | 10 | Applied and engagement questions submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. seller and buyer agency
+## 1. Agency begins with authority and agreement
 
-### 1.1 Concept and purpose
+### 1.1 The relationship, not the label
 
-seller and buyer agency is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Agency disclosure and fiduciary performance, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+An agency relationship exists when one person, the principal, authorizes another, the agent, to act on the principal’s behalf and subject to the principal’s control. In a licensed real estate transaction, the brokerage is ordinarily the agent. A salesperson or broker associate performs licensed activity on behalf of the responsible broker. Consumers may casually say “my agent” when they have only received general information, or they may believe no agency exists even after asking a licensee to negotiate for them. The professional therefore identifies the relationship from agreements, authority, and conduct rather than from an informal label.
 
-### 1.2 Essential elements
+The distinction matters because a client is owed loyalty and other fiduciary duties. A nonclient party is still owed honest and fair dealing and disclosure of material facts that the agent knows and that affect the value or desirability of the property. The licensee must never interpret the absence of a fiduciary relationship as permission to mislead, conceal, discriminate, or exploit.
 
-The essential elements of seller and buyer agency are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 1.2 Creation of authority
 
-### 1.3 Roles and duties
+Agency can arise through an express agreement. A listing agreement expressly employs a broker to act for a seller. A buyer-representation agreement expressly states services, compensation, duration, and authority for a buyer. California’s current buyer-representation rules require a written agreement as soon as practicable and no later than execution of the buyer’s offer; association or MLS rules may impose an earlier operational deadline. The law, the contract, and a private platform rule are separate sources and should not be blended into one vague statement.
 
-Responsibility for seller and buyer agency may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Authority may also be implied from the principal’s express authority and the acts reasonably necessary to carry it out. If a seller authorizes marketing, the broker may have implied authority to perform ordinary, lawful marketing tasks within the agreement and broker policy. Implied authority does not authorize changing price, accepting an offer, making an undisclosed promise, or signing for the owner without actual authority.
 
-### 1.4 Workflow
+Apparent authority concerns the reasonable perception created by the principal’s conduct toward a third party. A licensee should not manufacture apparent authority through a title, email, or promise that exceeds the broker’s actual authorization. Ratification can occur when a principal, with knowledge of material facts, later accepts an unauthorized act. Students must not treat possible ratification as permission to act first and seek approval later. A professional obtains authority before acting.
 
-A defensible workflow for seller and buyer agency starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 1.3 Broker and salesperson roles
 
-### 1.5 Documents and evidence
+A salesperson is licensed to act under the supervision and control of the responsible broker. The listing belongs to the broker, not personally to the salesperson. Records, advertising, negotiations, compensation, and transaction handling must follow the broker’s procedures. When two affiliated salespersons work with opposite parties, the brokerage’s role must be analyzed; using different salespersons does not automatically eliminate dual agency at the broker level.
 
-Documents connected with seller and buyer agency must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+A subagent owes agency duties to the principal whose interests the subagent undertakes to represent, even when the subagent is not employed directly by that principal. Modern residential practice often uses a buyer’s agent rather than traditional seller subagency, but the student must read the actual relationship. Cooperation, access to an MLS, or receipt of compensation does not by itself answer whom the broker represents.
 
-### 1.6 Quantitative and factual analysis
+### 1.4 Authority matrix
 
-Where seller and buyer agency involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Before performing a material act, the licensee should record:
 
-### 1.7 California law and professional boundary
+| Question | Required evidence |
+|---|---|
+| Who is the principal? | Identity, capacity, ownership or other authority |
+| Which brokerage is engaged? | Executed employment agreement and license identity |
+| What services are authorized? | Scope, property, transaction, and exclusions |
+| What is not authorized? | Contract limits, broker policy, and legal boundaries |
+| Who may instruct the brokerage? | Named principal or verified representative |
+| When does authority end? | Expiration, completion, revocation, or other lawful event |
 
-California law controls the licensed activity associated with seller and buyer agency; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+If a trust, estate, entity, power of attorney, conservatorship, or multiple-owner situation is involved, the licensee must verify capacity and obtain broker or legal guidance rather than assume the signer can bind every interest.
 
-### 1.8 Consumer protection and fair access
+## 2. Duties to clients and duties to everyone else
 
-Consumer protection requires that seller and buyer agency be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 2.1 Fiduciary performance
 
-### 1.9 Applied scenario
+A fiduciary must place the client’s interests ahead of the agent’s interests within the lawful scope of the relationship. Practical performance includes loyalty, obedience to lawful instructions, reasonable care and diligence, disclosure, confidentiality, and accounting. These duties operate together.
 
-Scenario: during agency disclosure and fiduciary performance, the file raises a question about seller and buyer agency. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Loyalty requires the agent to avoid self-dealing and undisclosed adverse interests. Obedience means following lawful instructions, not carrying out discrimination, concealment, fraud, or another unlawful demand. Reasonable care means competent investigation and performance within the licensee’s role, prompt attention to deadlines, and escalation when expertise is required. Disclosure to the client includes facts material to the agency and transaction, including conflicts and compensation. Confidentiality protects information whose disclosure would harm the client or violate a statutory or contractual duty. Accounting requires control and traceability of money and property entrusted to the brokerage.
 
-### 1.10 Decision checklist
+### 2.2 Lawful instructions and professional advice
 
-Before treating seller and buyer agency as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+Suppose a seller says, “Do not present offers from investors,” or “Do not tell buyers about the recurring foundation movement.” The agent cannot follow an instruction that causes unlawful discrimination or concealment of a known material fact. The correct workflow is to stop, explain the professional boundary without providing personal legal advice, document the instruction, notify the supervising broker, and obtain specialist guidance where needed. If the client persists, the broker determines what lawful steps follow.
 
-## 2. dual agency consent
+The agent also must not substitute personal preferences for the client’s informed decision. A listing agent may advise that a verified offer has financing risk or an unusually long contingency, but the seller decides whether to accept, reject, or counter. Advice should identify facts, sources, alternatives, and consequences. “This is the best offer” is less useful than a written comparison of price, net proceeds, financing evidence, contingencies, timing, requested credits, and performance risk.
 
-### 2.1 Concept and purpose
+### 2.3 Material facts and nonclients
 
-dual agency consent is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Agency disclosure and fiduciary performance, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Agency loyalty does not permit deception of the other party. A licensee must deal honestly and fairly and disclose known material facts affecting value or desirability when disclosure is required. The agent should distinguish:
 
-### 2.2 Essential elements
+- a verified fact personally observed or documented;
+- a statement attributed to the principal or another source;
+- a professional report outside the agent’s expertise;
+- an opinion or estimate; and
+- an unresolved inconsistency requiring investigation.
 
-The essential elements of dual agency consent are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+The record should identify the source. A licensee who notices fresh paint over repeated water staining should not diagnose mold or structural failure, but should document the observation, ask appropriate questions, advise the client of the disclosure issue, and recommend qualified investigation.
 
-### 2.3 Roles and duties
+### 2.4 Offers, compensation, and secret profit
 
-Responsibility for dual agency consent may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+An agent must transmit offers and material communications according to law, contract, and broker policy. Production incentives cannot justify delaying a lower-compensation offer, steering a client toward an affiliated provider, or suppressing a transaction that produces less income. Business and Professions Code section 10176 identifies disciplinary grounds including substantial misrepresentation, false promises, acting for more than one party without knowledge or consent, and taking secret or undisclosed compensation or profit.
 
-### 2.4 Workflow
+Compensation must be transparent and negotiated. A licensee should not state that a commission is fixed by law or “standard.” The agency record should show what the client agreed to pay, what services are included, when compensation is earned or due, any compensation from another source, and any written modification. A gift, referral payment, ownership interest, or benefit that could influence advice must be evaluated and disclosed as required before the client makes the affected decision.
 
-A defensible workflow for dual agency consent starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 2.5 Confidentiality after the transaction
 
-### 2.5 Documents and evidence
+Closing does not turn confidential information into public information. The licensee preserves client information under applicable law, the agency agreement, broker policy, and professional duty. The file may be disclosed to the supervising broker, regulator, court, insurer, or other authorized recipient when required, but curiosity or marketing convenience is not authorization.
 
-Documents connected with dual agency consent must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Transaction stories used in advertising or education should be de-identified and approved. A “just sold” campaign should not disclose the seller’s financial pressure, the buyer’s maximum budget, medical circumstances, divorce, immigration status, or negotiation strategy.
 
-### 2.6 Quantitative and factual analysis
+## 3. California’s statutory agency disclosure sequence
 
-Where dual agency consent involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 3.1 Disclosure is not the employment agreement
 
-### 2.7 California law and professional boundary
+For covered transactions, Civil Code section 2079.16 contains a statutory disclosure form explaining the possible agency relationships: seller’s agent, buyer’s agent, or agent for both. The disclosure helps a consumer understand the roles. It does not by itself employ the broker, set compensation, authorize services, or replace the listing or buyer-representation agreement.
 
-California law controls the licensed activity associated with dual agency consent; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+The statutory form explains that a seller’s agent acts solely for the seller; a buyer’s agent acts solely for the buyer; and an agent acting for both is a dual agent. It also explains that a dual agent may not disclose one principal’s confidential price position without express permission. Students should read the current statutory text rather than memorize a trade-form number because publishers may update forms and formatting.
 
-### 2.8 Consumer protection and fair access
+### 3.2 Seller-side timing under Civil Code section 2079.14
 
-Consumer protection requires that dual agency consent be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+When the listing agent enters into a listing agreement involving covered residential property, the seller’s agent must give the seller the section 2079.16 disclosure before the seller signs the listing agreement. “Before” is a sequencing rule, not merely a file-completeness goal. Sending the disclosure after the listing has been executed does not reconstruct the required pre-signing opportunity to understand the relationship.
 
-### 2.9 Applied scenario
+A defensible seller-side chronology is:
 
-Scenario: during agency disclosure and fiduciary performance, the file raises a question about dual agency consent. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+1. identify the property and proposed representation;
+2. provide the statutory disclosure and allow review;
+3. answer role questions accurately;
+4. obtain acknowledgment or document refusal under section 2079.15;
+5. execute the listing agreement; and
+6. preserve the delivered and signed versions with timestamps.
 
-### 2.10 Decision checklist
+### 3.3 Buyer-side timing under Civil Code section 2079.14
 
-Before treating dual agency consent as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+A buyer’s agent must provide the statutory disclosure as soon as practicable before execution of a buyer-representation agreement and before the buyer executes an offer to purchase. If an offer is not prepared by the buyer’s agent, the statute addresses delivery no later than the next business day after the buyer’s agent receives the offer from the buyer. The exact facts matter, and broker review is required when the expected sequence is disrupted.
 
-## 3. California disclosure sequence
+The current representation agreement and the statutory agency disclosure serve different functions. The representation agreement states the services, compensation, duration, and other employment terms. The disclosure explains the nature of the agency choices. A complete file contains both when both are required.
 
-### 3.1 Concept and purpose
+### 3.4 Acknowledgment and refusal
 
-California disclosure sequence is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Agency disclosure and fiduciary performance, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Civil Code section 2079.15 calls for signed acknowledgment of receipt. A signature acknowledges delivery; it is not proof that every later agency choice was made correctly. If a seller or buyer refuses to sign, the agent does not forge, backdate, or treat silence as a signature. The agent prepares and signs a written declaration of the facts of refusal as the statute directs, alerts the broker, and keeps proof of delivery and the declaration.
 
-### 3.2 Essential elements
+The professional does not pressure a consumer to sign a document the consumer has not been allowed to read. If the consumer requests legal interpretation, the agent explains the real estate process within competence and recommends independent counsel for legal advice.
 
-The essential elements of California disclosure sequence are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 3.5 Confirmation of actual agency
 
-### 3.3 Roles and duties
+The disclosure of possible relationships comes before the later confirmation of whom each agent represents in the transaction. Civil Code section 2079.17 requires the agency relationship to be confirmed in the contract to purchase and sell or in a separate writing executed or acknowledged by the seller, the buyer, and the agents before or concurrently with the purchase contract. The confirmation identifies the listing agent’s role and the selling agent’s role for that transaction.
 
-Responsibility for California disclosure sequence may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+The disclosure, employment agreements, confirmation, MLS information, offer, and conduct must be consistent. If the listing identifies one brokerage, the offer identifies another, and a team member communicates as though representing both parties, the file is not ready. The licensee must resolve the conflict before proceeding.
 
-### 3.4 Workflow
+## 4. Dual agency, consent, and confidential information
 
-A defensible workflow for California disclosure sequence starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 4.1 How dual agency arises
 
-### 3.5 Documents and evidence
+Dual agency exists when the same broker represents both seller and buyer in the same transaction. It can arise when one individual licensee works with both parties or when different affiliated licensees under the same responsible broker work with opposite parties. The office cannot avoid the analysis merely by assigning separate salespersons.
 
-Documents connected with California disclosure sequence must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+California permits dual agency only with disclosure and the knowledge and consent of both parties. Business and Professions Code section 10176(d) identifies acting for more than one party without the knowledge or consent of all parties as disciplinary grounds. The consent must be informed: each principal should understand the divided loyalty and the limits placed on advocacy and confidential information.
 
-### 3.6 Quantitative and factual analysis
+### 4.2 Consent is transaction-specific
 
-Where California disclosure sequence involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+A general policy statement that the brokerage “may practice dual agency” is not enough to complete the transaction record. The file should show the actual relationship, the parties’ written acknowledgment or consent, and the time at which consent was obtained. The agent should explain that the dual agent continues to owe fiduciary duties to both principals but cannot advocate one principal’s bargaining position against the other in the same way separate agents might.
 
-### 3.7 California law and professional boundary
+Consent cannot cure misrepresentation, concealment, secret profit, discrimination, or careless performance. A dual agent should use neutral, documented processes: transmit each side’s communications accurately, disclose known material facts, avoid favoring one side, and escalate conflicts to the supervising broker.
 
-California law controls the licensed activity associated with California disclosure sequence; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 4.3 Civil Code section 2079.21 confidentiality
 
-### 3.8 Consumer protection and fair access
+Civil Code section 2079.21 provides a specific dual-agency confidentiality boundary. Without the seller’s express permission, a dual agent may not disclose that the seller is willing to accept less than the listing price. Without the buyer’s express permission, the dual agent may not disclose that the buyer is willing to pay more than the offered price. The rule protects each principal’s confidential bargaining position.
 
-Consumer protection requires that California disclosure sequence be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+This does not mean the dual agent may conceal a known material property fact or make a false statement. Price-position confidentiality and material-fact disclosure are different duties. The agent must identify which kind of information is involved before responding.
 
-### 3.9 Applied scenario
+### 4.4 Scenario: the “helpful” text message
 
-Scenario: during agency disclosure and fiduciary performance, the file raises a question about California disclosure sequence. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+A buyer texts the dual agent: “We can go to $920,000 if we have to, but please start at $885,000.” The seller later asks, “Can they go higher?” The agent may explain that an offer is negotiable and may transmit a counteroffer, but may not reveal the buyer’s confidential maximum without express permission. The original text should be kept in the transaction record with access limited under broker policy.
 
-### 3.10 Decision checklist
+Now assume the buyer also reports that an inspection found active roof leakage. That information requires a different analysis. The agent cannot use price confidentiality as a reason to conceal a material property issue. The broker should determine the disclosure and documentation required based on the facts and reports.
 
-Before treating California disclosure sequence as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.5 When interests diverge
 
-## 4. fiduciary duties in practice
+Common dual-agency conflicts include price, repairs, credits, possession, appraisal shortages, contingency removal, extension requests, default, and cancellation. The dual agent should not privately design a strategy for one side that depends on exploiting confidential information from the other. The agent may explain documents and objective alternatives, communicate each principal’s decisions, recommend independent legal or other advice, and document informed choices.
 
-### 4.1 Concept and purpose
+If the agent cannot perform the relationship lawfully and competently, the broker must evaluate reassignment, separate representation where permissible, withdrawal, or other authorized action. The salesperson should not improvise a structural remedy without broker direction.
 
-fiduciary duties in practice is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Agency disclosure and fiduciary performance, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+## 5. Agency controls through the transaction
 
-### 4.2 Essential elements
+### 5.1 Intake and identity
 
-The essential elements of fiduciary duties in practice are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+At intake, verify names, contact information, license identities, brokerage affiliations, ownership or purchasing capacity, and any representative authority. Fraud risk is especially high when a remote person claims to own vacant land or requests unusual communication and payment methods. Identity verification is not separate from fiduciary care; following instructions from an impostor harms the true owner.
 
-### 4.3 Roles and duties
+Record the client’s goals and lawful instructions, preferred communication method, accessibility or language needs, confidentiality expectations, and decision makers. Do not place protected-class information into marketing criteria or negotiation notes unless a lawful operational need requires it and access is controlled.
 
-Responsibility for fiduciary duties in practice may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 5.2 Decision and communication log
 
-### 4.4 Workflow
+An agency log should contain:
 
-A defensible workflow for fiduciary duties in practice starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+- date, time, and actor;
+- communication channel and participants;
+- instruction, disclosure, offer, or decision communicated;
+- material source documents;
+- deadline or next action;
+- conflict or exception identified;
+- broker or specialist consultation; and
+- final resolution and retained version.
 
-### 4.5 Documents and evidence
+The purpose is not to write down every casual word. It is to preserve material agency events. The log supports supervision, continuity, consumer service, and later review.
 
-Documents connected with fiduciary duties in practice must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 5.3 Offers and objective comparison
 
-### 4.6 Quantitative and factual analysis
+Every offer should be routed promptly according to the listing agreement and broker policy. The listing agent can organize an objective comparison without making the decision for the seller. Relevant fields may include offered price, financing, deposit, verification of funds, contingencies, appraisal terms, requested credits, included property, closing date, possession, and expiration.
 
-Where fiduciary duties in practice involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The comparison must not rank buyers using protected characteristics, names, family status, perceived nationality, disability, or other irrelevant personal information. “Love letters” and photographs can introduce information that should not influence housing decisions. The broker should use a consistent policy to reduce that risk.
 
-### 4.7 California law and professional boundary
+### 5.4 Amendments, termination, and continuing duties
 
-California law controls the licensed activity associated with fiduciary duties in practice; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+If representation changes, the written record must change. Do not cross out an agency role informally while leaving other documents inconsistent. Obtain the required agreement, disclosure, consent, confirmation, and broker approval. Preserve the prior version rather than overwriting history.
 
-### 4.8 Consumer protection and fair access
+Termination may end future authority, but it does not necessarily erase confidentiality, accounting, record-retention, compensation, or dispute obligations. The licensee should follow the agreement and broker instructions and avoid telling a client that termination has a legal effect the licensee is not qualified to determine.
 
-Consumer protection requires that fiduciary duties in practice be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 6. Applied agency-file exercise
 
-### 4.9 Applied scenario
+### 6.1 File facts
 
-Scenario: during agency disclosure and fiduciary performance, the file raises a question about fiduciary duties in practice. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Harbor Street Realty lists a one-unit residence owned by Elena. Before the listing was signed, the listing salesperson emailed a statutory agency disclosure, but the file contains no delivery timestamp or acknowledgment. Two weeks later, another Harbor Street salesperson begins working with buyer Marcus. Marcus signs a buyer-representation agreement, but the disclosure of agency relationships is delivered the following afternoon. Marcus tells his salesperson that he could pay $40,000 more than his planned opening offer. Elena tells the listing salesperson that she would accept $25,000 less than list price.
 
-### 4.10 Decision checklist
+Marcus submits an offer. The purchase contract identifies Harbor Street Realty on both sides but one confirmation box is blank. Elena asks her salesperson whether Marcus can pay more. Marcus asks his salesperson whether Elena will take less. Both salespersons say that because they are different people, this is not dual agency.
 
-Before treating fiduciary duties in practice as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 6.2 Required analysis
 
-## 5. compensation and conflicts
+Prepare a broker escalation memorandum that:
 
-### 5.1 Concept and purpose
+1. identifies the brokerage-level agency relationship;
+2. states the seller-side and buyer-side timing questions under Civil Code section 2079.14;
+3. explains the missing acknowledgment or refusal records under section 2079.15;
+4. identifies the incomplete agency confirmation;
+5. applies section 2079.21 to each confidential price statement;
+6. separates a material fact from a confidential negotiation position;
+7. lists the records that must be preserved; and
+8. states what must be resolved before further negotiation.
 
-compensation and conflicts is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Agency disclosure and fiduciary performance, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Do not decide that a late disclosure is legally cured or that the contract is enforceable. Those are broker and, when appropriate, legal questions. Your task is to find the exception, protect confidential information, stop inconsistent conduct, and create an accurate chronology.
 
-### 5.2 Essential elements
+### 6.3 Model decision path
 
-The essential elements of compensation and conflicts are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A strong response first recognizes dual agency at the Harbor Street brokerage level. It does not assume separate affiliated salespersons create separate broker representation. It flags that the seller disclosure was reportedly sent before the listing but lacks proof and acknowledgment, while the buyer disclosure appears to have followed the representation agreement. It requires review of the precise delivery facts and the statute.
 
-### 5.3 Roles and duties
+The response also flags the blank confirmation and obtains broker direction before treating the agency record as complete. It does not reveal Elena’s lower acceptable price or Marcus’s higher maximum because neither principal gave express permission. It distinguishes those positions from a known material property fact, which would require its own disclosure analysis. Finally, it preserves emails, agreements, offer versions, disclosures, acknowledgments or refusal declarations, messages, consultation notes, and corrected documents without deleting the original record.
 
-Responsibility for compensation and conflicts may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 6.4 Completion checklist
 
-### 5.4 Workflow
+Before this assignment is complete, confirm that you can answer:
 
-A defensible workflow for compensation and conflicts starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+- Who is the principal and which broker is the agent?
+- What document creates employment and what document explains agency choices?
+- When must the seller and buyer receive the statutory disclosure?
+- What happens if a party refuses to acknowledge receipt?
+- Where is the actual agency relationship confirmed?
+- When does dual agency exist at the brokerage level?
+- What confidential price information may a dual agent not reveal?
+- Which client instructions must the agent refuse?
+- What evidence proves disclosure, consent, communication, and supervision?
 
-### 5.5 Documents and evidence
+## Official sources for this assignment
 
-Documents connected with compensation and conflicts must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+- [California Civil Code section 2079.14 — timing of agency disclosure](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2079.14.)
+- [California Civil Code section 2079.15 — acknowledgment and refusal declaration](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2079.15.)
+- [California Civil Code section 2079.16 — statutory disclosure text](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2079.16.)
+- [California Civil Code section 2079.17 — confirmation of agency](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2079.17.)
+- [California Civil Code section 2079.21 — dual-agency confidential price limits](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2079.21.)
+- [California Business and Professions Code section 10176 — disciplinary grounds](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10176.)
+- [California DRE: Changes to Buyer Representation and Compensation](https://www.dre.ca.gov/Licensees/Advisories/Advisory_2024_11_14_Changes_to_Buyer_Representation.html)
+- [California DRE: 2026 Real Estate Law](https://www.dre.ca.gov/Publications/RealEstateLaw.html)
 
-### 5.6 Quantitative and factual analysis
+## Course boundary
 
-Where compensation and conflicts involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 5.7 California law and professional boundary
-
-California law controls the licensed activity associated with compensation and conflicts; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 5.8 Consumer protection and fair access
-
-Consumer protection requires that compensation and conflicts be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 5.9 Applied scenario
-
-Scenario: during agency disclosure and fiduciary performance, the file raises a question about compensation and conflicts. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 5.10 Decision checklist
-
-Before treating compensation and conflicts as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
-
-## 6. agency documentation case
-
-### 6.1 Concept and purpose
-
-agency documentation case is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Agency disclosure and fiduciary performance, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
-
-### 6.2 Essential elements
-
-The essential elements of agency documentation case are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
-
-### 6.3 Roles and duties
-
-Responsibility for agency documentation case may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
-
-### 6.4 Workflow
-
-A defensible workflow for agency documentation case starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with agency documentation case must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where agency documentation case involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with agency documentation case; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that agency documentation case be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during agency disclosure and fiduciary performance, the file raises a question about agency documentation case. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating agency documentation case as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
-
-## Required applied assignment
-
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
-
-## Knowledge check and remediation
-
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
-
-## Assignment completion
-
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+This assignment teaches professional issue recognition and workflow. It does not give legal advice for a particular transaction and does not substitute for responsible-broker supervision, current forms, or advice from a qualified attorney or other specialist. The student must use the current official source and the broker’s approved procedure when facts change.
