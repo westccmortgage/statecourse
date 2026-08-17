@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#172b3d" />
+    <title>Student Sign In | StateCourse</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../home-compact.css" />
+    <style>
+      .signin-main { display: grid; place-items: center; min-height: calc(100vh - 149px); padding: 42px 20px; }
+      .signin-panel { width: min(100%, 540px); padding: 34px; border: 1px solid var(--rule); border-top: 4px solid var(--burgundy); background: var(--surface); }
+      .signin-panel h1 { margin: 0; color: var(--navy); font-family: Georgia, serif; font-size: 36px; font-weight: 500; }
+      .signin-panel > p { margin: 13px 0 0; color: var(--muted); font-size: 14px; }
+      .portal-status { margin-top: 25px; padding: 16px; border-left: 3px solid var(--gold); background: #f2eee5; }
+      .portal-status strong { display: block; color: var(--navy); font-size: 13px; }
+      .portal-status span { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; }
+      .signin-panel > a { display: inline-block; margin-top: 24px; color: var(--burgundy-dark); font-size: 12px; font-weight: 800; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../../"><span class="brand-seal" aria-hidden="true">SC</span><span class="brand-name"><strong>StateCourse</strong><small>Student Portal</small></span></a>
+        <nav><a href="../../">Course finder</a></nav>
+      </div>
+    </header>
+    <main class="signin-main">
+      <section class="signin-panel" aria-labelledby="signin-title">
+        <p class="eyebrow">Returning student</p>
+        <h1 id="signin-title">Continue your course</h1>
+        <p>This permanent student-portal route is reserved for secure authentication, enrolled-course access, and resuming the last recorded lesson.</p>
+        <div class="portal-status"><strong>Student sign-in is not active yet.</strong><span>Enrollment is closed while course approvals are in development. Production authentication will be activated before the first student enrollment.</span></div>
+        <a href="../../">← Return to the course finder</a>
+      </section>
+    </main>
+    <footer><div><strong>StateCourse</strong><span>Secure student access</span></div><small>No course credit is generated from this page.</small></footer>
+  </body>
+</html>
