@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>California Course | StateCourse Student Portal</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/student/student-portal.css">
+  <link rel="stylesheet" href="/student/course/student-course.css">
+  <script src="/student/course/student-course.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lessonContent">Skip to lesson</a>
+  <header class="course-header">
+    <a class="portal-brand" href="/student/"><span>SC</span><strong>StateCourse</strong><small>California student course</small></a>
+    <nav aria-label="Student navigation"><a href="/student/">My courses</a><button id="signOut" type="button">Sign out</button></nav>
+  </header>
+  <div id="reviewBanner" class="review-banner" hidden></div>
+  <div id="courseMessage" class="course-message" role="status">Opening your California course record…</div>
+  <main id="courseShell" class="course-shell" hidden>
+    <aside class="assignment-rail" aria-label="Course assignments">
+      <p class="eyebrow">California correspondence course</p>
+      <h1 id="courseTitle">Course</h1>
+      <p id="courseMeta" class="course-meta"></p>
+      <div class="course-progress"><span id="courseProgressBar"></span></div>
+      <p id="courseProgressText" class="progress-copy"></p>
+      <ol id="assignmentList"></ol>
+      <a class="back-link" href="/student/">← Back to My StateCourse</a>
+    </aside>
+
+    <article id="lessonContent" class="lesson-column" tabindex="-1">
+      <div class="lesson-folio">
+        <p id="assignmentNumber" class="eyebrow"></p>
+        <h2 id="assignmentTitle"></h2>
+        <p class="deck">One of 15 separate California DRE correspondence-course lesson assignments.</p>
+      </div>
+      <div class="california-note">
+        <strong>California course control</strong>
+        <span>This course uses lesson completion plus the 2.5-week minimum calendar period. Recorded active study documents engagement; it is not a leave-the-page-open countdown.</span>
+      </div>
+      <div id="lessonBody" class="textbook-body"></div>
+      <section id="appliedSection" class="assessment-section" aria-labelledby="appliedHeading">
+        <p class="eyebrow">Applied exercise</p>
+        <h3 id="appliedHeading">Apply the lesson to a transaction file</h3>
+        <div id="appliedAssessment"></div>
+      </section>
+      <section id="engagementSection" class="assessment-section" aria-labelledby="engagementHeading">
+        <p class="eyebrow">Scored engagement check</p>
+        <h3 id="engagementHeading">Confirm your understanding</h3>
+        <div id="engagementAssessment"></div>
+      </section>
+      <section id="remediationSection" class="assessment-section remediation" hidden aria-labelledby="remediationHeading">
+        <p class="eyebrow">Required remediation</p>
+        <h3 id="remediationHeading">Review the concept a different way</h3>
+        <p>Pause the transaction before an irreversible deadline. Identify the missing fact, consult the current controlling source, document what remains unresolved, and obtain broker or specialist guidance when the issue exceeds the licensee’s role.</p>
+        <p><strong>Second scenario:</strong> A consumer asks for immediate action while a material record is incomplete. The compliant response protects the consumer by separating verified facts from assumptions and preserving the decision path.</p>
+        <button id="remediationViewed" type="button">I reviewed the alternate explanation</button>
+        <div id="remediationAssessment"></div>
+      </section>
+      <nav class="lesson-pagination" aria-label="Assignment navigation">
+        <button id="previousAssignment" type="button">← Previous assignment</button>
+        <button id="nextAssignment" type="button">Next assignment →</button>
+      </nav>
+    </article>
+
+    <aside class="status-panel" aria-label="Assignment progress">
+      <p class="eyebrow">Your progress</p>
+      <h2 id="statusHeading">Assignment 01</h2>
+      <div class="timer-readout"><strong id="activeTime">0:00</strong><span>active study recorded</span></div>
+      <p id="timerState" class="timer-state">Timer begins when you actively use this page.</p>
+      <dl class="requirements">
+        <div><dt>Instructional sections</dt><dd id="sectionStatus">0 / 6</dd></div>
+        <div><dt>Applied exercise</dt><dd id="appliedStatus">Pending</dd></div>
+        <div><dt>Engagement check</dt><dd id="engagementStatus">Pending</dd></div>
+        <div><dt>Remediation</dt><dd id="remediationStatus">Not required</dd></div>
+      </dl>
+      <p class="unlock-note">The next assignment unlocks automatically when the required lesson work is complete.</p>
+      <div class="calendar-box">
+        <span>Earliest final examination</span>
+        <strong id="earliestFinal">Pending</strong>
+        <small id="finalRequirements"></small>
+      </div>
+      <button id="requestHelp" class="secondary-action" type="button">Request instructor help</button>
+      <p id="actionMessage" class="action-message" role="status"></p>
+      <p class="version-lock">Course and assignment version 1.0 · Every completion event is audit logged.</p>
+    </aside>
+  </main>
+</body>
+</html>

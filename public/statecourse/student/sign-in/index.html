@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#172b3d" />
+    <title>Student Sign In | StateCourse</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../student-portal.css" />
+  </head>
+  <body>
+    <header class="portal-header"><a class="brand" href="../../"><span aria-hidden="true">SC</span><strong>StateCourse</strong><small>Student Portal</small></a><nav><a href="../../">Course finder</a></nav></header>
+    <main class="signin-main">
+      <section class="signin-panel" aria-labelledby="signin-title">
+        <p class="eyebrow">Returning student</p>
+        <h1 id="signin-title">Continue your course</h1>
+        <p>Sign in with the account connected to your StateCourse enrollment.</p>
+        <form id="studentSignIn">
+          <label><span>Email address</span><input id="email" name="email" type="email" autocomplete="username" required /></label>
+          <label><span>Password</span><input id="password" name="password" type="password" autocomplete="current-password" minlength="8" required /></label>
+          <button type="submit">Student sign in</button>
+        </form>
+        <p class="signin-message" id="signinMessage" aria-live="polite"></p>
+        <div class="signin-note"><strong>New student?</strong><span>Your account will be tied to the email used for enrollment. Course access is created only after a verified payment webhook.</span></div>
+        <a class="back-link" href="../../">← Return to course finder</a>
+      </section>
+    </main>
+    <footer><span>StateCourse secure student access</span><small>Passwords are not stored by StateCourse.</small></footer>
+    <script src="student-signin.js" defer></script>
+  </body>
+</html>
