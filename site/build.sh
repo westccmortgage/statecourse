@@ -54,6 +54,10 @@ test -f dist/real-estate/district-of-columbia/index.html
 test -f dist/content/california/ca-real-estate-principles-45-v1/lesson-15.md
 test -f dist/content/california/ca-real-estate-practice-45-v1/lesson-15.md
 test -f dist/content/california/ca-mortgage-loan-brokering-lending-45-v1/lesson-15.md
+test -f dist/media/statecourse-intro.mp4
+test -f dist/media/statecourse-intro-poster.webp
+test -f dist/media/statecourse-intro.vtt
+test -f dist/data/homepage-video.json
 
 node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==51) process.exit(1); for(const c of ["VA","ME","WI","MO","OK","AZ","WA","PA","NC","CO","CA"]) if(r.states.find(s=>s.state_code===c)?.public_status!=="In Development") process.exit(1)'
 node -e 'const c=require("./dist/data/course-catalog.json"); const courses=c.categories[0].programs.flatMap(p=>p.courses); for(const id of ["ca-real-estate-principles-45","ca-real-estate-practice-45","ca-mortgage-loan-brokering-lending-45"]) if(!courses.find(x=>x.course_id===id)) process.exit(1)'
