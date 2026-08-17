@@ -25,11 +25,12 @@ test("California Real Estate Practice uses 45 assignment-specific assessment ite
   assert.equal(prompts.size, 45);
 });
 
-test("Practice Assignments 01 through 04 are editorially rewritten content", () => {
+test("Practice Assignments 01 through 05 are editorially rewritten content", () => {
   const first = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-01.md", "utf8");
   const second = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-02.md", "utf8");
   const third = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-03.md", "utf8");
   const fourth = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-04.md", "utf8");
+  const fifth = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-05.md", "utf8");
   assert.match(first, /Business and Professions Code section 10131/);
   assert.match(first, /Commissioner’s Regulation 2725/);
   assert.match(first, /Unlicensed administrative assistants/);
@@ -44,5 +45,10 @@ test("Practice Assignments 01 through 04 are editorially rewritten content", () 
   assert.match(fourth, /12 months/);
   assert.match(fourth, /listing agreement/i);
   assert.match(fourth, /open house/i);
-  assert.doesNotMatch(first + second + third + fourth, /is studied as an operating concept, not as a vocabulary label/);
+  assert.match(fifth, /price per square foot/i);
+  assert.match(fifth, /Bureau of Real Estate Appraisers/);
+  assert.match(fifth, /Business and Professions Code section 11345\.4/);
+  assert.match(fifth, /valuation bias/i);
+  assert.match(fifth, /seller net/i);
+  assert.doesNotMatch(first + second + third + fourth + fifth, /is studied as an operating concept, not as a vocabulary label/);
 });
