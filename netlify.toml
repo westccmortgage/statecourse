@@ -34,6 +34,11 @@
 [[headers]]
   for = "/student/*"
   [headers.values]
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/student/*"
+  [headers.values]
     Cache-Control = "no-store, private"
 
 [[redirects]]
@@ -97,6 +102,11 @@
   status = 200
 
 [[redirects]]
+  from = "/student/course"
+  to = "/student/course/index.html"
+  status = 200
+
+[[redirects]]
   from = "/api/student/session"
   to = "/.netlify/functions/student-session"
   status = 200
@@ -104,6 +114,11 @@
 [[redirects]]
   from = "/api/student/portal"
   to = "/.netlify/functions/student-portal"
+  status = 200
+
+[[redirects]]
+  from = "/api/student/course"
+  to = "/.netlify/functions/student-course"
   status = 200
 
 [[redirects]]
