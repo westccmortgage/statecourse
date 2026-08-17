@@ -2,4 +2,8 @@
 
 Assignment: **Unassigned — production release gate**
 
-The file must contain the current Arizona instructor application/approval or DPOS-qualified staff record, approved subject scope, approval number, effective/expiration dates, résumé/CV, education, licenses, experience, teaching-method evidence, background/disclosure material, renewal evidence, availability/response commitments, and course assignment. No owner, contractor, author, or reviewer is deemed qualified without the applicable state record.
+The file must contain the current Arizona Instructor Application, ADRE approval, approved subject scope, approval number, effective/expiration dates, detailed résumé, education, licenses, experience, legal-presence evidence, Arizona DPS Fingerprint Clearance Card, disciplinary disclosure if applicable, instructional-methods workshop evidence, renewal evidence, availability/response commitments, and exact course-version assignment.
+
+For original approval or a new competency area, the December 2025 form requires evidence supporting competence in the requested prelicense subjects. It also calls for proof of at least three hours of ADRE-approved instruction-methods training (or qualifying evidence described by the form) within the preceding 24 months. The filing reviewer must use the current form and verify the applicant's specific subject qualifiers.
+
+No owner, contractor, author, regulator reviewer, or internal administrator is deemed qualified to instruct merely because that person has industry experience. Assignment remains blocked until ADRE approval is recorded.

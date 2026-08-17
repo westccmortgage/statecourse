@@ -6,7 +6,7 @@ const root = new URL("../", import.meta.url);
 const read = (relative) => readFile(new URL(relative, root), "utf8");
 
 const courses = [
-  ["arizona/az-salesperson-prelicense-90-v1", "AZ", 90, 180],
+  ["arizona/az-salesperson-prelicense-90-v1", "AZ", 90, 0],
   ["arizona/az-contract-writing-6-v1", "AZ", 6, 40],
   ["washington/wa-real-estate-fundamentals-60-v1", "WA", 60, 180],
   ["washington/wa-real-estate-practices-30-v1", "WA", 30, 90],
@@ -42,6 +42,7 @@ test("generated unit curricula and secure banks match each course configuration"
     assert.equal([...curriculum.matchAll(/^## Unit \d{3}/gm)].length, hours);
     assert.equal([...bank.matchAll(/^## Bank Item \d{3}/gm)].length, bankItems);
     assert.match(bank, /CONFIDENTIAL/);
+    if (bankItems === 0) assert.match(bank, /no production-ready bank exists yet/i);
   }
 });
 

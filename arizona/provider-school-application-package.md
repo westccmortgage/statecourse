@@ -1,38 +1,50 @@
-# Arizona Provider, School, Instructor, and Course Application Package
+# Arizona School, Instructor, and Course Application Package
 
-## Filing order
+Status: **Development — filing data and approvals pending**
 
-1. Confirm entity eligibility and regulator account/portal.
-2. File ADRE School Approval Application (rev. 09/2025) with ownership, administrators/director, location/delivery, financial/bond, catalog, enrollment agreement, refund/cancellation, records, and advertising exhibits required by the current form.
-3. File each instructor separately with qualification evidence and course scope.
-4. File every regulatory course separately with the exact title, hours, outline, curriculum, objectives, materials, assessments, final/key, evaluation, certificate, delivery method, reviewer access, and policies.
-5. Record regulator corrections, approval number, effective date, expiration, approved delivery method, instructor scope, and renewal schedule before public activation.
+## Official filing sequence
 
-## Current form/fee register
+1. Complete the current ADRE School Approval Application (rev. 09/2025).
+2. Attach the administrator/director/instructor roster, each owner/administrator qualification form, required supporting documents, organization documents and authority resolution identified by the form.
+3. Submit original-school instructor applications with the evidence required by the current Instructor Application (rev. 12/2025).
+4. Submit the 90-hour course through the current Pre-Licensing Course Application with its enrollment agreement, detailed outline and distance-learning exhibits.
+5. Submit the six-hour Contract Writing course separately through the current CE / 6-Hour Contract Writing application.
+6. Record every ADRE correction and do not enable the affected record until the issued approval is entered and verified.
 
-- School Approval Application Form (rev. 09/2025)
-- Instructor Application Form (rev. 12/2025)
-- Course Application Form — Pre-Licensing (rev. 09/2025)
-- Course Application Form — Continuing Education or 6-Hour Contract Writing (rev. 01/2026)
-- ED-106 owner/administrator statements and current fingerprint-clearance-card exhibits identified by the school/instructor forms
+## School exhibit checklist
 
-## Current fee register
+- legal/DBA name, entity type, statutory agent and contact details;
+- articles of organization/incorporation or partnership agreement as applicable;
+- resolution/operating agreement naming the authorized signer where required;
+- each person/entity/beneficiary with at least 10% ownership as requested by the form;
+- primary and additional administrators/directors and Arizona DPS Fingerprint Clearance Card evidence where applicable;
+- instructors and their separate application records;
+- prelicensing and distance-learning education types;
+- filing signature, date, Message Center/School Login receipt and ADRE correspondence.
 
-| Filing | Current amount | Control note |
-|---|---:|---|
-| School approval | Not listed on the current ADRE fee page/application | Confirm in ADRE Message Center at filing; no zero-dollar assumption. |
-| Instructor approval | Not listed on the current ADRE fee page/application | Confirm at filing. |
-| Prelicense course approval | Not listed on the current ADRE fee page/application | Confirm at filing. |
-| Contract Writing course approval | Not listed on the current ADRE fee page/application | Confirm at filing. |
+## Instructor exhibit checklist
 
-Fees are point-in-time regulatory data. The administrator must attach the filing-day official fee page or portal receipt; the platform does not silently reuse an old amount.
+- current Instructor Application;
+- disciplinary disclosure and supporting material if applicable;
+- proof of legal presence;
+- Arizona DPS Fingerprint Clearance Card;
+- detailed résumé showing real-estate knowledge/experience;
+- prelicense subject qualifiers and supporting course evidence;
+- instructional-methods workshop/event evidence within the current form's timeframe;
+- issued instructor number, approved scope and dates after approval.
 
-## Required submission exhibits
+## Prelicense distance-course exhibits
 
-- official-source register and compliance matrix;
-- entity, owner, administrator/director, school/location, bond/financial, and agent exhibits as applicable;
-- course application and regulator-outline crosswalk for each course;
-- complete student/instructor materials, timed outline, objectives, activities, assessments, remediation, secure final, and answer key;
-- identity, attendance/time, inactivity, support, accessibility, technical, security, proctor/reviewer, records, certificate, reporting, evaluation, complaint, refund/cancellation, and change-control policies;
-- instructor approval file and assignment;
-- regulator correction log and final version manifest.
+- completed current course application and enrollment agreement;
+- detailed 90-hour outline and 2026 ADRE objective crosswalk;
+- student/instructor materials and objective-linked assessments;
+- identity method linking registrant, learner, quiz taker and final examinee;
+- emergency contact, student-assistance contact and in-course help tool;
+- persistent ADRE reviewer credentials: student view and no-time-constraint review;
+- IP/time/progress reports and SPS 2025.01 controls;
+- comprehensive-final security, bank, lockdown, proctor/device policy;
+- certificate, evaluation, records, complaint and version/change-control policies.
+
+## Fees and dates
+
+No filing fee is invented. The filing administrator verifies the amount, approval term and renewal process in the current ADRE portal/Message Center and saves the official receipt or written response. Blank approval numbers/dates are release gates, not zero values.

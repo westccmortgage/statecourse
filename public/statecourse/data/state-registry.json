@@ -99,7 +99,7 @@
       "final_exam_rules": "90-hour prelicense final: 75% passing, 2:1 bank ratio, final outside instructional hours, SPS 2025.01 controls. Contract Writing remains a separate course record.",
       "proctoring_rules": "ADRE-compliant proctored prelicense final; exam not delivered on a student-supplied device. Contract Writing uses its own approved configuration.",
       "certificate_rules": "ADRE school/course/student/start/end/hours/contact/signature fields and verification configured; separate certificates for 90h and 6h courses.",
-      "notes": "Two separate regulatory records: Arizona Salesperson Pre-License 90h v1.0 and Arizona Contract Writing 6h v1.0. Not approved; enrollment disabled.",
+      "notes": "Separate development records: 90-hour salesperson course with a 63-hour National Core and proposed 27-hour ADRE-specific layer, plus a separate 6-hour Contract Writing course. No approval or enrollment claim.",
       "public_status": "In Development",
       "course_ids": [
         "az-salesperson-prelicense-90",

@@ -1,2833 +1,962 @@
-# Arizona Salesperson Pre-License 90h v1.0 — Unit-by-Unit Curriculum
+# Arizona Salesperson Pre-License 90h v1.0 — Hour-by-Hour Curriculum Blueprint
 
-**Development draft. No enrollment, credit, or certificate.**
+**Development draft — not an approved course and not a finished student textbook.**
 
-## AZ90-01 — Property, ownership, and land use
+This controlled blueprint replaces the earlier repeated placeholder prose. It defines 90 distinct 50-minute instructional units, their source layer, measurable objective and applied work. Final lesson manuscripts, media, citations, scored items and accessibility review must be completed and accepted before submission release.
 
-Authority mapping: A.R.S. § 32-2124 and current ADRE prelicense outline
+The secure school final is outside the 90 instructional hours. The separate six-hour Contract Writing course is also outside this record.
 
-## Unit 001 — Real property and personal property
+## Delivery pattern for every 50-minute unit
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+- source-grounded reading/explanation and examples;
+- a scenario-based interactive activity;
+- server-authoritative active time with no passive-page credit;
+- a scored unit quiz requiring 75%;
+- alternate remediation and a new scored item after an incorrect response;
+- identity, sequencing and audit controls from the Arizona LMS configuration.
 
-### Learning objectives
+## Module summary
 
-By the end of this unit, the student can:
+| Module | Layer | Hours | Units | Authority |
+|---|---|---:|---|---|
+| AZ90-N01 — Property fundamentals and ownership | national core | 9 | 01–09 | A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core |
+| AZ90-N02 — Land, legal descriptions and public controls | national core | 6 | 10–15 | A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core |
+| AZ90-N03 — Agency and brokerage principles | national core | 7 | 16–22 | A.R.S. § 32-2124(E)(3); StateCourse proposed National Core |
+| AZ90-N04 — Contracts and transaction documents | national core | 10 | 23–32 | A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core |
+| AZ90-N05 — Real estate finance and calculations | national core | 9 | 33–41 | A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core |
+| AZ90-N06 — Valuation and investment fundamentals | national core | 7 | 42–48 | A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core |
+| AZ90-N07 — Title, transfer and closing | national core | 6 | 49–54 | A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core |
+| AZ90-N08 — Leasing and property management | national core | 5 | 55–59 | A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core |
+| AZ90-N09 — Federal fair housing and professional practice | national core | 4 | 60–63 | A.R.S. § 32-2124(E)(3)-(4); StateCourse proposed National Core |
+| AZ90-A01 — ADRE Section 1 — Arizona regulatory framework | arizona specific | 4 | 64–67 | AZ-CURR-2026 §§ 1.1–1.5 |
+| AZ90-A02 — ADRE Section 2 — Arizona consumer protection laws | arizona specific | 2 | 68–69 | AZ-CURR-2026 §§ 2.1–2.4 |
+| AZ90-A03 — ADRE Section 3 — Advertising | arizona specific | 2 | 70–71 | AZ-CURR-2026 §§ 3.1–3.4 |
+| AZ90-A04 — ADRE Section 4 — Arizona agency | arizona specific | 2 | 72–73 | AZ-CURR-2026 §§ 4.1–4.4 |
+| AZ90-A05 — ADRE Section 5 — Licensee duties and obligations | arizona specific | 3 | 74–76 | AZ-CURR-2026 §§ 5.1–5.7 |
+| AZ90-A06 — ADRE Section 6 — Competencies and duties | arizona specific | 4 | 77–80 | AZ-CURR-2026 §§ 6.1–6.3.5 |
+| AZ90-A07 — ADRE Section 7 — Reasonable skill and care | arizona specific | 2 | 81–82 | AZ-CURR-2026 §§ 7.1–7.3 |
+| AZ90-A08 — ADRE Section 8 — Contracts | arizona specific | 3 | 83–85 | AZ-CURR-2026 §§ 8.1–8.2.5 |
+| AZ90-A09 — ADRE Section 9 — Critical business services | arizona specific | 2 | 86–87 | AZ-CURR-2026 §§ 9.1–9.3 |
+| AZ90-A10 — ADRE Section 10 — Ownership and encumbrances | arizona specific | 2 | 88–89 | AZ-CURR-2026 §§ 10.1–10.5 |
+| AZ90-A11 — ADRE Section 11 — Foreclosure, short sale and deed in lieu | arizona specific | 1 | 90–90 | AZ-CURR-2026 §§ 11.1–11.2 |
+|  | **Total** | **90** | **1–90** |  |
 
-1. explain **real property and personal property** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## AZ90-N01 — Property fundamentals and ownership
 
-### Instructional lesson
+**Layer:** national core
 
-**Rule and purpose.** Real property and personal property is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Hours:** 9
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+Property classification, rights, estates and forms of ownership used to analyze a transaction before applying Arizona-specific law.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 001 — Real property, personal property and the bundle of rights
 
-### Applied exercise
+**Learning objective:** Classify property and explain possession, control, enjoyment, exclusion and disposition.
 
-Analyze a Arizona transaction involving **real property and personal property**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Classify disputed items in a residential sale file.
 
-### Scored check and remediation
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 001 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 002 — Fixtures, trade fixtures and emblements
 
-## Unit 002 — Fixtures and trade fixtures
+**Learning objective:** Apply intent, attachment, adaptation and agreement factors without giving legal advice.
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Applied activity:** Document a fixture dispute and identify the contract clause requiring clarification.
 
-### Learning objectives
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-By the end of this unit, the student can:
+## Unit 003 — Freehold and leasehold estates
 
-1. explain **fixtures and trade fixtures** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Distinguish fee simple, life estate and leasehold interests and their transaction effects.
 
-### Instructional lesson
+**Applied activity:** Identify which party can convey which interest in a fact pattern.
 
-**Rule and purpose.** Fixtures and trade fixtures is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 004 — Concurrent ownership
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Compare tenancy in common, joint tenancy, community-property concepts and ownership entities.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Prepare questions for title/qualified counsel from an ambiguous vesting instruction.
 
-### Applied exercise
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-Analyze a Arizona transaction involving **fixtures and trade fixtures**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 005 — Ownership by business and trust entities
 
-### Scored check and remediation
+**Learning objective:** Recognize corporations, partnerships, LLCs, trusts and authority evidence.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 002 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Identify missing signatory-authority evidence before contract execution.
 
-## Unit 003 — Estates and ownership
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 006 — Condominiums, cooperatives and planned communities
 
-### Learning objectives
+**Learning objective:** Distinguish ownership structure, common elements and association obligations.
 
-By the end of this unit, the student can:
+**Applied activity:** Compare a condominium resale file with a cooperative interest.
 
-1. explain **estates and ownership** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Instructional lesson
+## Unit 007 — Encumbrances and liens
 
-**Rule and purpose.** Estates and ownership is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Classify monetary and nonmonetary encumbrances and explain priority at an introductory level.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Read a title commitment excerpt and flag items for escrow/title review.
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 008 — Easements, licenses and encroachments
 
-### Applied exercise
+**Learning objective:** Distinguish easement creation and termination from revocable permission and physical encroachment.
 
-Analyze a Arizona transaction involving **estates and ownership**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Analyze access shown on a survey and identify the needed source document.
 
-### Scored check and remediation
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 003 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 009 — Property fundamentals integrated case
 
-## Unit 004 — Legal descriptions
+**Learning objective:** Synthesize classification, ownership and encumbrance facts within professional scope.
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Applied activity:** Create a transaction issue log for a property with mixed fixtures, co-owners and an access issue.
 
-### Learning objectives
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-By the end of this unit, the student can:
+## AZ90-N02 — Land, legal descriptions and public controls
 
-1. explain **legal descriptions** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Layer:** national core
 
-### Instructional lesson
+**Hours:** 6
 
-**Rule and purpose.** Legal descriptions is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Authority:** A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+Land description, measurement, public control and environmental orientation needed before the Arizona layer.
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 010 — Metes and bounds
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Recognize calls, monuments, point of beginning and closure limitations.
 
-### Applied exercise
+**Applied activity:** Trace a simplified description and identify a closure defect for surveyor referral.
 
-Analyze a Arizona transaction involving **legal descriptions**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Scored check and remediation
+## Unit 011 — Rectangular survey system
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 004 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Locate township, range, section and aliquot parts and perform basic acreage calculations.
 
-## Unit 005 — Easements and encumbrances
+**Applied activity:** Convert a section fraction into acreage and locate it on a diagram.
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Learning objectives
+## Unit 012 — Lot-and-block descriptions and plats
 
-By the end of this unit, the student can:
+**Learning objective:** Connect a recorded plat reference to lot, block, subdivision and county records.
 
-1. explain **easements and encumbrances** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Locate the controlling plat information for a sample listing file.
 
-### Instructional lesson
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Rule and purpose.** Easements and encumbrances is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 013 — Government powers and land-use controls
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Differentiate police power, eminent domain, taxation and escheat.
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Classify a zoning restriction, condemnation notice, tax lien and abandoned estate.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Applied exercise
+## Unit 014 — Zoning, building controls and nonconforming uses
 
-Analyze a Arizona transaction involving **easements and encumbrances**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Explain zoning classifications, variances, conditional uses and lawful nonconformity.
 
-### Scored check and remediation
+**Applied activity:** Prepare a verification plan for a buyer proposing a home occupation.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 005 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-## Unit 006 — Government powers
+## Unit 015 — Environmental and natural-resource orientation
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Learning objective:** Recognize material environmental conditions and the licensee's disclosure/referral boundaries.
 
-### Learning objectives
+**Applied activity:** Route flood, soil, septic, well and contamination questions to appropriate sources.
 
-By the end of this unit, the student can:
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-1. explain **government powers** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## AZ90-N03 — Agency and brokerage principles
 
-### Instructional lesson
+**Layer:** national core
 
-**Rule and purpose.** Government powers is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Hours:** 7
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** A.R.S. § 32-2124(E)(3); StateCourse proposed National Core
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+General agency doctrine, fiduciary responsibilities, brokerage relationships, supervision and compensation concepts.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 016 — Agency creation and authority
 
-### Applied exercise
+**Learning objective:** Distinguish express, implied and apparent authority and ratification risks.
 
-Analyze a Arizona transaction involving **government powers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Determine whether an agent had authority in three communication scenarios.
 
-### Scored check and remediation
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3); StateCourse proposed National Core.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 006 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 017 — Fiduciary duties
 
-## Unit 007 — Zoning and subdivision
+**Learning objective:** Apply loyalty, obedience, disclosure, confidentiality, accounting and reasonable care.
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Applied activity:** Prioritize duties when a client's instruction conflicts with law or fact.
 
-### Learning objectives
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3); StateCourse proposed National Core.
 
-By the end of this unit, the student can:
+## Unit 018 — Clients, customers and third parties
 
-1. explain **zoning and subdivision** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Differentiate duties owed to represented and unrepresented parties.
 
-### Instructional lesson
+**Applied activity:** Draft a communication plan for a client and an unrepresented buyer.
 
-**Rule and purpose.** Zoning and subdivision is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3); StateCourse proposed National Core.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 019 — Single, dual and designated agency concepts
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Compare representation structures and informed-consent risks.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Identify the decision points when two represented parties enter the same transaction.
 
-### Applied exercise
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3); StateCourse proposed National Core.
 
-Analyze a Arizona transaction involving **zoning and subdivision**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 020 — Broker supervision and salesperson scope
 
-### Scored check and remediation
+**Learning objective:** Explain the broker-salesperson relationship and limits of independent action.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 007 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Route a novel contract, escrow and advertising issue through supervision.
 
-## Unit 008 — Environmental and water issues
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3); StateCourse proposed National Core.
 
-Module: AZ90-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 021 — Compensation, cooperation and antitrust
 
-### Learning objectives
+**Learning objective:** Separate brokerage compensation, offers of cooperation and prohibited concerted conduct.
 
-By the end of this unit, the student can:
+**Applied activity:** Evaluate commission conversations for antitrust and disclosure risk.
 
-1. explain **environmental and water issues** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3); StateCourse proposed National Core.
 
-### Instructional lesson
+## Unit 022 — Agency termination and surviving duties
 
-**Rule and purpose.** Environmental and water issues is studied within Property, ownership, and land use. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Identify termination events and duties that continue after termination.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Close an agency file while preserving confidentiality and accounting obligations.
 
-**Arizona layer.** Apply A.R.S. § 32-2124 and current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3); StateCourse proposed National Core.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## AZ90-N04 — Contracts and transaction documents
 
-### Applied exercise
+**Layer:** national core
 
-Analyze a Arizona transaction involving **environmental and water issues**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Hours:** 10
 
-### Scored check and remediation
+**Authority:** A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 008 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+Contract formation, performance, remedies and transaction-document workflow. Arizona document authority and forms appear in the state layer and separate Contract Writing course.
 
-## AZ90-02 — Real estate law and professional scope
+## Unit 023 — Contract classifications and elements
 
-Authority mapping: Current ADRE prelicense outline
+**Learning objective:** Classify bilateral/unilateral, express/implied, executed/executory, valid/void/voidable/unenforceable agreements.
 
-## Unit 009 — Sources of real estate law
+**Applied activity:** Diagnose formation issues in four short scenarios.
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Learning objectives
+## Unit 024 — Offer, acceptance and communication
 
-By the end of this unit, the student can:
+**Learning objective:** Apply objective assent, counteroffer, revocation, rejection and lapse concepts.
 
-1. explain **sources of real estate law** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Build a timestamped offer/counteroffer chronology.
 
-### Instructional lesson
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Rule and purpose.** Sources of real estate law is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 025 — Consideration, capacity and lawful purpose
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Identify consideration and capacity issues that require broker or legal escalation.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Flag missing capacity/authority evidence in a proposed agreement.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Applied exercise
+## Unit 026 — Contract interpretation and time
 
-Analyze a Arizona transaction involving **sources of real estate law**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Explain material terms, ambiguity, time provisions and integrated writing concepts.
 
-### Scored check and remediation
+**Applied activity:** Identify ambiguous dates and inconsistent addenda before execution.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 009 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-## Unit 010 — Arizona statutes and Commissioner's Rules
+## Unit 027 — Contingencies and conditions
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+**Learning objective:** Distinguish contingency protection, condition, covenant and deadline.
 
-### Learning objectives
+**Applied activity:** Create a contingency calendar for financing, inspection and appraisal.
 
-By the end of this unit, the student can:
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-1. explain **arizona statutes and commissioner's rules** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 028 — Performance, breach and discharge
 
-### Instructional lesson
+**Learning objective:** Recognize performance, mutual agreement, impossibility and breach pathways.
 
-**Rule and purpose.** Arizona statutes and Commissioner's Rules is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Classify events in a failed closing without selecting a legal remedy.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 029 — Remedies orientation
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Explain damages, rescission, specific performance and liquidated damages at a licensee-appropriate level.
 
-### Applied exercise
+**Applied activity:** Identify when broker supervision and legal referral are required.
 
-Analyze a Arizona transaction involving **arizona statutes and commissioner's rules**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Scored check and remediation
+## Unit 030 — Listing and buyer-representation agreements
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 010 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Identify employment terms, duties, compensation, duration and termination issues.
 
-## Unit 011 — Legal capacity and authority
+**Applied activity:** Audit a representation agreement for missing operational terms.
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Learning objectives
+## Unit 031 — Purchase agreements, addenda and disclosures
 
-By the end of this unit, the student can:
+**Learning objective:** Organize the complete contract package and resolve conflicts by controlled review.
 
-1. explain **legal capacity and authority** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Assemble a transaction document index in signing order.
 
-### Instructional lesson
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Rule and purpose.** Legal capacity and authority is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 032 — Electronic records and document integrity
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Apply electronic-signature, delivery, version and retention concepts.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Reconstruct which signed version controls from an audit trail.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Applied exercise
+## AZ90-N05 — Real estate finance and calculations
 
-Analyze a Arizona transaction involving **legal capacity and authority**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Layer:** national core
 
-### Scored check and remediation
+**Hours:** 9
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 011 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Authority:** A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core
 
-## Unit 012 — Unauthorized practice of law
+Financing instruments, markets, underwriting orientation, consumer protections and transaction calculations.
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+## Unit 033 — Promissory notes, mortgages and deeds of trust
 
-### Learning objectives
+**Learning objective:** Distinguish debt evidence from security instruments and party roles.
 
-By the end of this unit, the student can:
+**Applied activity:** Label parties and instruments in a secured-loan diagram.
 
-1. explain **unauthorized practice of law** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-### Instructional lesson
+## Unit 034 — Primary and secondary mortgage markets
 
-**Rule and purpose.** Unauthorized practice of law is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Explain origination, servicing, sale and securitization at an introductory level.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Trace a loan from application through sale into the secondary market.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 035 — Conventional, FHA, VA and other programs
 
-### Applied exercise
+**Learning objective:** Compare broad program features without acting as a loan originator.
 
-Analyze a Arizona transaction involving **unauthorized practice of law**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Match buyer needs to questions for a licensed lender.
 
-### Scored check and remediation
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 012 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 036 — Qualification and underwriting orientation
 
-## Unit 013 — Statute of Frauds
+**Learning objective:** Explain income, assets, credit, debt ratios, collateral and automated/manual review.
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+**Applied activity:** Calculate sample housing and total debt ratios.
 
-### Learning objectives
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-By the end of this unit, the student can:
+## Unit 037 — Loan-to-value and down payment
 
-1. explain **statute of frauds** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Calculate LTV, CLTV, equity and down payment from a transaction.
 
-### Instructional lesson
+**Applied activity:** Solve purchase and refinance LTV scenarios.
 
-**Rule and purpose.** Statute of Frauds is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 038 — Interest, amortization and loan cost
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Calculate simple interest and explain amortization, term, points and APR distinctions.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Compare two loan-cost examples without recommending a product.
 
-### Applied exercise
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-Analyze a Arizona transaction involving **statute of frauds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 039 — Mortgage insurance and risk allocation
 
-### Scored check and remediation
+**Learning objective:** Distinguish private and government mortgage-insurance concepts.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 013 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Identify when a borrower should obtain lender-specific information.
 
-## Unit 014 — Electronic records
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+## Unit 040 — Federal lending and settlement protections
 
-### Learning objectives
+**Learning objective:** Recognize key consumer-protection purposes of TILA, RESPA and ECOA.
 
-By the end of this unit, the student can:
+**Applied activity:** Classify disclosures and prohibited referral-fee scenarios.
 
-1. explain **electronic records** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-### Instructional lesson
+## Unit 041 — Prorations and settlement math
 
-**Rule and purpose.** Electronic records is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Calculate commissions, tax/rent prorations, transfer charges and cash-to-close components.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Complete a simplified buyer/seller settlement worksheet.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(1)-(4); StateCourse proposed National Core.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## AZ90-N06 — Valuation and investment fundamentals
 
-### Applied exercise
+**Layer:** national core
 
-Analyze a Arizona transaction involving **electronic records**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Hours:** 7
 
-### Scored check and remediation
+**Authority:** A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 014 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+Value principles, appraisal approaches, CMA boundaries and introductory investment analysis.
 
-## Unit 015 — Consumer-protection method
+## Unit 042 — Value, price and cost
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+**Learning objective:** Distinguish market value, price, cost and investment value.
 
-### Learning objectives
+**Applied activity:** Classify figures in a property-analysis scenario.
 
-By the end of this unit, the student can:
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-1. explain **consumer-protection method** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 043 — Highest and best use and value principles
 
-### Instructional lesson
+**Learning objective:** Apply legally permissible, physically possible, financially feasible and maximally productive tests.
 
-**Rule and purpose.** Consumer-protection method is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Evaluate two alternative uses at a conceptual level.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 044 — Sales comparison approach
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Select and adjust comparable sales conceptually.
 
-### Applied exercise
+**Applied activity:** Rank comparables and explain adjustment direction.
 
-Analyze a Arizona transaction involving **consumer-protection method**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Scored check and remediation
+## Unit 045 — Cost approach and depreciation
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 015 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Explain replacement/reproduction cost, depreciation and site value.
 
-## Unit 016 — Professional referral and documentation
+**Applied activity:** Estimate an indicated value from simplified cost data.
 
-Module: AZ90-02 · Proposed clock hours: 1 · Content layer: NC-CON
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Learning objectives
+## Unit 046 — Income capitalization approach
 
-By the end of this unit, the student can:
+**Learning objective:** Calculate NOI and direct capitalization and distinguish potential/effective income.
 
-1. explain **professional referral and documentation** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Build a one-year income statement and capitalization result.
 
-### Instructional lesson
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Rule and purpose.** Professional referral and documentation is studied within Real estate law and professional scope. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 047 — CMA, BPO and appraisal boundaries
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Distinguish brokerage pricing work from a licensed appraisal and disclose purpose/limits.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Select the appropriate work product for three requests.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Applied exercise
+## Unit 048 — Investment risk and return
 
-Analyze a Arizona transaction involving **professional referral and documentation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Calculate cash flow, cap rate, leverage effects and basic tax-sensitive questions for referral.
 
-### Scored check and remediation
+**Applied activity:** Compare two investments using stated assumptions without advising on tax.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 016 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-## AZ90-03 — Brokerage relationships and agency
+## AZ90-N07 — Title, transfer and closing
 
-Authority mapping: Current ADRE prelicense outline and Arizona license law
+**Layer:** national core
 
-## Unit 017 — Agency creation
+**Hours:** 6
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Authority:** A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core
 
-### Learning objectives
+Voluntary/involuntary transfer, deeds, recording, title evidence, escrow and closing workflow.
 
-By the end of this unit, the student can:
+## Unit 049 — Deed requirements and deed types
 
-1. explain **agency creation** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Identify grantor/grantee, intent, description, execution, delivery and deed distinctions.
 
-### Instructional lesson
+**Applied activity:** Audit a sample deed for facial issues requiring title/legal review.
 
-**Rule and purpose.** Agency creation is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 050 — Delivery, acceptance and recording
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Explain transfer effectiveness and recording's notice/priority function.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Analyze the risk created by delayed recording.
 
-### Applied exercise
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-Analyze a Arizona transaction involving **agency creation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 051 — Voluntary and involuntary transfer
 
-### Scored check and remediation
+**Learning objective:** Distinguish sale, gift, devise, descent, foreclosure, eminent domain and adverse possession concepts.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 017 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Classify ten transfer events.
 
-## Unit 018 — Fiduciary duties
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+## Unit 052 — Title evidence and title insurance
 
-### Learning objectives
+**Learning objective:** Compare public-record search, abstract, opinion and title-insurance functions.
 
-By the end of this unit, the student can:
+**Applied activity:** Read title-commitment requirements/exceptions at an introductory level.
 
-1. explain **fiduciary duties** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Instructional lesson
+## Unit 053 — Escrow and neutral settlement
 
-**Rule and purpose.** Fiduciary duties is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Explain escrow instructions, deposits, authorization and closing conditions.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Resolve a missing-condition scenario through the escrow chain.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 054 — Closing workflow and post-closing records
 
-### Applied exercise
+**Learning objective:** Sequence final verification, signing, funding, recording, possession and file retention.
 
-Analyze a Arizona transaction involving **fiduciary duties**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Build a pre-closing and post-closing checklist.
 
-### Scored check and remediation
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 018 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## AZ90-N08 — Leasing and property management
 
-## Unit 019 — Clients and customers
+**Layer:** national core
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Hours:** 5
 
-### Learning objectives
+**Authority:** A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core
 
-By the end of this unit, the student can:
+Leasehold, rental operations, management agreements, accounting, maintenance and risk before applying Arizona landlord-tenant law.
 
-1. explain **clients and customers** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 055 — Leasehold estates and lease clauses
 
-### Instructional lesson
+**Learning objective:** Distinguish tenancy for years, periodic tenancy, tenancy at will and holdover.
 
-**Rule and purpose.** Clients and customers is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Classify occupancy facts and identify the needed agreement terms.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 056 — Residential and commercial lease operations
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Compare operational and allocation differences without drafting legal terms.
 
-### Applied exercise
+**Applied activity:** Build a rent/notice/renewal calendar from a lease abstract.
 
-Analyze a Arizona transaction involving **clients and customers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Scored check and remediation
+## Unit 057 — Property-management agreements
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 019 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Identify scope, authority, compensation, accounting, maintenance and termination terms.
 
-## Unit 020 — Broker supervision
+**Applied activity:** Audit an owner's instructions against the management agreement.
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Learning objectives
+## Unit 058 — Trust funds, rent and security deposits
 
-By the end of this unit, the student can:
+**Learning objective:** Explain separation, authorization, reconciliation and documentation principles.
 
-1. explain **broker supervision** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Reconcile a simplified property-management ledger.
 
-### Instructional lesson
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-**Rule and purpose.** Broker supervision is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 059 — Maintenance, vendors and risk management
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Prioritize habitability/safety response, vendor controls and owner communication.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Triage emergency and routine service requests.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(2)-(4); StateCourse proposed National Core.
 
-### Applied exercise
+## AZ90-N09 — Federal fair housing and professional practice
 
-Analyze a Arizona transaction involving **broker supervision**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Layer:** national core
 
-### Scored check and remediation
+**Hours:** 4
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 020 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Authority:** A.R.S. § 32-2124(E)(3)-(4); StateCourse proposed National Core
 
-## Unit 021 — Salesperson duties
+Federal civil-rights protections, advertising, disability accommodation and ethical file practice.
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+## Unit 060 — Federal Fair Housing Act
 
-### Learning objectives
+**Learning objective:** Identify protected classes, covered conduct, exemptions and enforcement pathways.
 
-By the end of this unit, the student can:
+**Applied activity:** Evaluate steering, selection and service scenarios.
 
-1. explain **salesperson duties** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3)-(4); StateCourse proposed National Core.
 
-### Instructional lesson
+## Unit 061 — Fair-housing advertising and lead handling
 
-**Rule and purpose.** Salesperson duties is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Recognize discriminatory words, targeting and inconsistent response practices.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Rewrite an ad and standardize a prospect-response workflow.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3)-(4); StateCourse proposed National Core.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 062 — Disability accommodations and modifications
 
-### Applied exercise
+**Learning objective:** Distinguish accommodation from modification and route requests consistently.
 
-Analyze a Arizona transaction involving **salesperson duties**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Process an assistance-animal and access request without demanding prohibited information.
 
-### Scored check and remediation
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3)-(4); StateCourse proposed National Core.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 021 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 063 — Professional ethics, fraud prevention and file integrity
 
-## Unit 022 — Compensation and antitrust
+**Learning objective:** Recognize misrepresentation, concealment, wire-fraud and record-integrity risks.
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Applied activity:** Create a verification and escalation record for changed wiring instructions.
 
-### Learning objectives
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite A.R.S. § 32-2124(E)(3)-(4); StateCourse proposed National Core.
 
-By the end of this unit, the student can:
+## AZ90-A01 — ADRE Section 1 — Arizona regulatory framework
 
-1. explain **compensation and antitrust** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Layer:** arizona specific
 
-### Instructional lesson
+**Hours:** 4
 
-**Rule and purpose.** Compensation and antitrust is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Authority:** AZ-CURR-2026 §§ 1.1–1.5
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+Arizona sources of law, ADRE/Commissioner, Recovery Fund, licensing and permitted licensed/unlicensed activity.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 064 — Arizona sources of real estate law and Article 26
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Distinguish constitutional, statutory, administrative, SPS and case-law authority and explain Article 26's transaction-document context.
 
-### Applied exercise
+**Applied activity:** Place five authorities in hierarchy and identify when current text must be verified.
 
-Analyze a Arizona transaction involving **compensation and antitrust**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 1.1–1.5.
 
-### Scored check and remediation
+## Unit 065 — ADRE and Commissioner authority
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 022 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Explain appointment, duties, investigations, demands, discipline and public-protection powers.
 
-## Unit 023 — Disclosure and conflicts
+**Applied activity:** Respond to an ADRE demand scenario through the designated broker and retained record.
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 1.1–1.5.
 
-### Learning objectives
+## Unit 066 — Recovery Fund and licensing requirements
 
-By the end of this unit, the student can:
+**Learning objective:** Explain Recovery Fund purpose/consequences and the core Arizona licensing statuses and prerequisites.
 
-1. explain **disclosure and conflicts** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Map a claim/licensing scenario to the correct ADRE process without promising recovery.
 
-### Instructional lesson
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 1.1–1.5.
 
-**Rule and purpose.** Disclosure and conflicts is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 067 — Licensed activity, broker supervision and unlicensed assistance
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Classify licensed acts, salesperson/broker roles, teams, compensation, file review and unlicensed-assistant limits.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Assign tasks among salesperson, broker and assistant and document supervision.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 1.1–1.5.
 
-### Applied exercise
+## AZ90-A02 — ADRE Section 2 — Arizona consumer protection laws
 
-Analyze a Arizona transaction involving **disclosure and conflicts**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Layer:** arizona specific
 
-### Scored check and remediation
+**Hours:** 2
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 023 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Authority:** AZ-CURR-2026 §§ 2.1–2.4
 
-## Unit 024 — Termination
+Arizona Consumer Fraud Act, Statute of Frauds, Arizona fair housing and homestead orientation.
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+## Unit 068 — Consumer Fraud Act and Arizona Statute of Frauds
 
-### Learning objectives
+**Learning objective:** Apply deceptive-practice and written-agreement concepts to licensee communications and transaction documents.
 
-By the end of this unit, the student can:
+**Applied activity:** Identify the misrepresentation and writing defects in a sales scenario.
 
-1. explain **termination** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 2.1–2.4.
 
-### Instructional lesson
+## Unit 069 — Arizona fair housing and homestead protection
 
-**Rule and purpose.** Termination is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Connect Arizona protections and remedies to federal fair-housing practice and explain homestead limits at a referral-appropriate level.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Route a discrimination complaint and a judgment-lien question to the correct sources.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 2.1–2.4.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## AZ90-A03 — ADRE Section 3 — Advertising
 
-### Applied exercise
+**Layer:** arizona specific
 
-Analyze a Arizona transaction involving **termination**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Hours:** 2
 
-### Scored check and remediation
+**Authority:** AZ-CURR-2026 §§ 3.1–3.4
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 024 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+Arizona licensee, promotional and development advertising with broker supervision.
 
-## Unit 025 — Arizona agency case
+## Unit 070 — Licensee advertising and brokerage identification
 
-Module: AZ90-03 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Learning objective:** Apply Arizona advertising definitions, clear-and-prominent brokerage identification, owner-agent disclosure and anti-misleading rules.
 
-### Learning objectives
+**Applied activity:** Audit digital, sign and social-media advertisements.
 
-By the end of this unit, the student can:
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 3.1–3.4.
 
-1. explain **arizona agency case** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 071 — Promotions, developments and advertising supervision
 
-### Instructional lesson
+**Learning objective:** Analyze inducements, lotteries/contests, subdivision public-report advertising and designated-broker review.
 
-**Rule and purpose.** Arizona agency case is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Build an approval record for a promotional campaign.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 3.1–3.4.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and Arizona license law and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## AZ90-A04 — ADRE Section 4 — Arizona agency
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Layer:** arizona specific
 
-### Applied exercise
+**Hours:** 2
 
-Analyze a Arizona transaction involving **arizona agency case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Authority:** AZ-CURR-2026 §§ 4.1–4.4
 
-### Scored check and remediation
+Arizona agency types, creation, client/customer case law and termination.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 025 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 072 — Arizona agency types and creation
 
-## AZ90-04 — Contracts and transaction documents
+**Learning objective:** Apply Arizona express/implied agency and representation-disclosure requirements.
 
-Authority mapping: Current ADRE prelicense outline
+**Applied activity:** Select and time the proper disclosure in a transaction chronology.
 
-## Unit 026 — Contract elements
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 4.1–4.4.
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+## Unit 073 — Arizona clients, customers, case law and termination
 
-### Learning objectives
+**Learning objective:** Distinguish duties using the outline's Arizona authority and identify surviving obligations.
 
-By the end of this unit, the student can:
+**Applied activity:** Resolve a confidentiality/disclosure conflict after termination.
 
-1. explain **contract elements** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 4.1–4.4.
 
-### Instructional lesson
+## AZ90-A05 — ADRE Section 5 — Licensee duties and obligations
 
-**Rule and purpose.** Contract elements is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Layer:** arizona specific
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Hours:** 3
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Authority:** AZ-CURR-2026 §§ 5.1–5.7
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+Arizona disclosure, conflicts, compensation, competence, prompt performance, records and cross-sale disputes.
 
-### Applied exercise
+## Unit 074 — Material facts, seller disclosures and inspection boundaries
 
-Analyze a Arizona transaction involving **contract elements**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Apply Arizona material-fact disclosure duties and distinguish seller, licensee and inspector responsibilities.
 
-### Scored check and remediation
+**Applied activity:** Build a disclosure decision record from known and disputed facts.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 026 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 5.1–5.7.
 
-## Unit 027 — Offer and acceptance
+## Unit 075 — Conflicts, compensation and competency disclosures
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Learning objective:** Disclose present/prospective interests, compensation and work outside a licensee's expertise.
 
-### Learning objectives
+**Applied activity:** Escalate a related-party purchase and unfamiliar property type.
 
-By the end of this unit, the student can:
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 5.1–5.7.
 
-1. explain **offer and acceptance** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 076 — Prompt performance, document delivery, offers, records and disputes
 
-### Instructional lesson
+**Learning objective:** Apply expeditious performance, signed-copy delivery, offer presentation, broker record and compensation-dispute rules.
 
-**Rule and purpose.** Offer and acceptance is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Reconstruct a delayed-offer file and identify corrective/instructor actions.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 5.1–5.7.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## AZ90-A06 — ADRE Section 6 — Competencies and duties
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Layer:** arizona specific
 
-### Applied exercise
+**Hours:** 4
 
-Analyze a Arizona transaction involving **offer and acceptance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Authority:** AZ-CURR-2026 §§ 6.1–6.3.5
 
-### Scored check and remediation
+Competence, property types, new development, property management, timeshare, vacant land and commercial practice.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 027 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 077 — Arizona competency and property types
 
-## Unit 028 — Consideration and capacity
+**Learning objective:** Apply Arizona competency rules to geography, water rights, housing forms, manufactured housing and income property.
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Applied activity:** Create a supervision/referral plan for an unfamiliar property.
 
-### Learning objectives
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 6.1–6.3.5.
 
-By the end of this unit, the student can:
+## Unit 078 — New homes, subdivisions and public reports
 
-1. explain **consideration and capacity** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Explain public-report triggers, earnest-money disclosures, advertising and rescission distinctions.
 
-### Instructional lesson
+**Applied activity:** Audit a new-lot sales chronology for public-report and deposit issues.
 
-**Rule and purpose.** Consideration and capacity is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 6.1–6.3.5.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 079 — Arizona property management
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Apply agency, Residential Landlord and Tenant Act orientation, deposits, records, agreements and finder-fee rules.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Triage a deposit/entry/termination scenario within licensee scope.
 
-### Applied exercise
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 6.1–6.3.5.
 
-Analyze a Arizona transaction involving **consideration and capacity**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 080 — Timeshare, vacant land and commercial practice
 
-### Scored check and remediation
+**Learning objective:** Recognize the specialized disclosures, resources, due diligence and competency boundaries for each niche.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 028 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Build a risk/source checklist for a vacant-land transaction.
 
-## Unit 029 — Performance and breach
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 6.1–6.3.5.
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+## AZ90-A07 — ADRE Section 7 — Reasonable skill and care
 
-### Learning objectives
+**Layer:** arizona specific
 
-By the end of this unit, the student can:
+**Hours:** 2
 
-1. explain **performance and breach** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Authority:** AZ-CURR-2026 §§ 7.1–7.3
 
-### Instructional lesson
+Arizona reasonable skill/care, property taxes, special assessments, utilities and environmental regulation.
 
-**Rule and purpose.** Performance and breach is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 081 — Arizona reasonable skill and care
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Apply the licensee's verification, communication, disclosure, supervision and referral duties.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Write a compliant action plan for conflicting property information.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 7.1–7.3.
 
-### Applied exercise
+## Unit 082 — Taxes, assessments, utilities and environmental sources
 
-Analyze a Arizona transaction involving **performance and breach**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Identify Arizona transaction sources for tax, assessment, utility, water, septic and environmental questions.
 
-### Scored check and remediation
+**Applied activity:** Complete a source-verification worksheet for a rural home.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 029 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 7.1–7.3.
 
-## Unit 030 — Remedies
+## AZ90-A08 — ADRE Section 8 — Contracts
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Layer:** arizona specific
 
-### Learning objectives
+**Hours:** 3
 
-By the end of this unit, the student can:
+**Authority:** AZ-CURR-2026 §§ 8.1–8.2.5
 
-1. explain **remedies** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+Arizona employment agreements, purchase contracts, consideration, conditions, closing, possession and costs.
 
-### Instructional lesson
+## Unit 083 — Arizona employment agreements
 
-**Rule and purpose.** Remedies is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Identify Arizona listing/buyer-employment requirements, duration, compensation and supervision issues.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Audit an employment agreement and disclosure chronology.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 8.1–8.2.5.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 084 — Arizona purchase-contract validity, consideration and terms
 
-### Applied exercise
+**Learning objective:** Apply Arizona contract authority to parties, property, price, signatures, consideration, contingencies and deadlines.
 
-Analyze a Arizona transaction involving **remedies**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Analyze a counteroffer/addendum package for formation and conflict issues.
 
-### Scored check and remediation
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 8.1–8.2.5.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 030 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 085 — Arizona closing, possession and transaction costs
 
-## Unit 031 — Purchase contracts
+**Learning objective:** Sequence escrow, final walkthrough, funding, recording, possession and cost allocation.
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Applied activity:** Resolve a possession-before-closing scenario through broker/escrow controls.
 
-### Learning objectives
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 8.1–8.2.5.
 
-By the end of this unit, the student can:
+## AZ90-A09 — ADRE Section 9 — Critical business services
 
-1. explain **purchase contracts** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Layer:** arizona specific
 
-### Instructional lesson
+**Hours:** 2
 
-**Rule and purpose.** Purchase contracts is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Authority:** AZ-CURR-2026 §§ 9.1–9.3
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+Arizona escrow, title insurance and lending roles, documents and consumer communications.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 086 — Arizona escrow and title insurance
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Explain Arizona escrow authority, instructions, deposits, title commitments, exceptions and policies.
 
-### Applied exercise
+**Applied activity:** Route a title exception and disputed release instruction.
 
-Analyze a Arizona transaction involving **purchase contracts**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 9.1–9.3.
 
-### Scored check and remediation
+## Unit 087 — Arizona lending and loan-process boundaries
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 031 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Recognize Arizona lending participants, disclosures, fraud risks and real-estate-licensee scope.
 
-## Unit 032 — Contingencies
+**Applied activity:** Respond to lender-condition and wire-change scenarios.
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 9.1–9.3.
 
-### Learning objectives
+## AZ90-A10 — ADRE Section 10 — Ownership and encumbrances
 
-By the end of this unit, the student can:
+**Layer:** arizona specific
 
-1. explain **contingencies** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Hours:** 2
 
-### Instructional lesson
+**Authority:** AZ-CURR-2026 §§ 10.1–10.5
 
-**Rule and purpose.** Contingencies is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+Arizona ownership, liens, deeds, planned communities, easements and encumbrances.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 088 — Arizona ownership, liens and deeds
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Apply Arizona community-property/vesting orientation, lien priority, deed types, recording and deed-fraud red flags.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Escalate a vesting/signature/fraud concern to broker, title and counsel.
 
-### Applied exercise
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 10.1–10.5.
 
-Analyze a Arizona transaction involving **contingencies**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 089 — Arizona HOAs, restrictions, easements and encumbrances
 
-### Scored check and remediation
+**Learning objective:** Explain planned-community disclosures/enforcement and classify Arizona easement/encumbrance issues.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 032 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Audit HOA and access documents for a resale transaction.
 
-## Unit 033 — Addenda
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 10.1–10.5.
 
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
+## AZ90-A11 — ADRE Section 11 — Foreclosure, short sale and deed in lieu
 
-### Learning objectives
+**Layer:** arizona specific
 
-By the end of this unit, the student can:
+**Hours:** 1
 
-1. explain **addenda** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Authority:** AZ-CURR-2026 §§ 11.1–11.2
 
-### Instructional lesson
+Arizona anti-deficiency, trustee/judicial foreclosure, redemption, short sale, deed in lieu and professional limits.
 
-**Rule and purpose.** Addenda is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 090 — Arizona default and foreclosure pathways
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Distinguish trustee and judicial foreclosure, anti-deficiency coverage, lien effects, deed in lieu, short sale and licensee referral limits.
 
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Build a deadline/source/referral map for a homeowner facing a trustee's sale.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **addenda**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 033 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 034 — Counteroffers
-
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **counteroffers** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Counteroffers is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **counteroffers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 034 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 035 — Options and rights
-
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **options and rights** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Options and rights is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **options and rights**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 035 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 036 — Leases
-
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **leases** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Leases is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **leases**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 036 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 037 — Electronic signatures
-
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **electronic signatures** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Electronic signatures is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **electronic signatures**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 037 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 038 — Document chronology
-
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **document chronology** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Document chronology is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **document chronology**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 038 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 039 — Contract case
-
-Module: AZ90-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **contract case** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Contract case is studied within Contracts and transaction documents. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **contract case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 039 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## AZ90-05 — Title and transfer
-
-Authority mapping: Current ADRE prelicense outline
-
-## Unit 040 — Deeds
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **deeds** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Deeds is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **deeds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 040 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 041 — Delivery and acceptance
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **delivery and acceptance** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Delivery and acceptance is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **delivery and acceptance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 041 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 042 — Recording
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **recording** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Recording is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **recording**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 042 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 043 — Title evidence
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **title evidence** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Title evidence is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **title evidence**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 043 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 044 — Escrow
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **escrow** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Escrow is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **escrow**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 044 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 045 — Voluntary transfer
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **voluntary transfer** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Voluntary transfer is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **voluntary transfer**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 045 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 046 — Involuntary transfer
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **involuntary transfer** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Involuntary transfer is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **involuntary transfer**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 046 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 047 — Arizona title case
-
-Module: AZ90-05 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona title case** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona title case is studied within Title and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona title case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 047 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## AZ90-06 — Financing and calculations
-
-Authority mapping: Current ADRE prelicense outline
-
-## Unit 048 — Notes and deeds of trust
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **notes and deeds of trust** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Notes and deeds of trust is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **notes and deeds of trust**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 048 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 049 — Loan markets
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **loan markets** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Loan markets is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **loan markets**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 049 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 050 — Conventional financing
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **conventional financing** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Conventional financing is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **conventional financing**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 050 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 051 — FHA and VA orientation
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **fha and va orientation** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** FHA and VA orientation is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **fha and va orientation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 051 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 052 — Qualification
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **qualification** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Qualification is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **qualification**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 052 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 053 — Loan-to-value
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **loan-to-value** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Loan-to-value is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **loan-to-value**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 053 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 054 — Interest and amortization
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **interest and amortization** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Interest and amortization is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **interest and amortization**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 054 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 055 — Points and mortgage insurance
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **points and mortgage insurance** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Points and mortgage insurance is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **points and mortgage insurance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 055 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 056 — Default and foreclosure
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **default and foreclosure** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Default and foreclosure is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **default and foreclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 056 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 057 — Settlement math
-
-Module: AZ90-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **settlement math** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Settlement math is studied within Financing and calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **settlement math**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 057 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## AZ90-07 — Valuation and investment
-
-Authority mapping: Current ADRE prelicense outline
-
-## Unit 058 — Value principles
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **value principles** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Value principles is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **value principles**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 058 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 059 — Highest and best use
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **highest and best use** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Highest and best use is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **highest and best use**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 059 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 060 — Sales comparison
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **sales comparison** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Sales comparison is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **sales comparison**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 060 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 061 — Cost approach
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **cost approach** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Cost approach is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **cost approach**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 061 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 062 — Income approach
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **income approach** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Income approach is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **income approach**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 062 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 063 — Depreciation
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **depreciation** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Depreciation is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **depreciation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 063 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 064 — CMA and appraisal roles
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **cma and appraisal roles** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** CMA and appraisal roles is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **cma and appraisal roles**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 064 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 065 — Investment risk and return
-
-Module: AZ90-07 · Proposed clock hours: 1 · Content layer: NC-VAL, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **investment risk and return** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Investment risk and return is studied within Valuation and investment. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **investment risk and return**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 065 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## AZ90-08 — Leasing and property management
-
-Authority mapping: Current ADRE prelicense outline
-
-## Unit 066 — Leasehold estates
-
-Module: AZ90-08 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **leasehold estates** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Leasehold estates is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **leasehold estates**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 066 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 067 — Lease terms
-
-Module: AZ90-08 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **lease terms** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Lease terms is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **lease terms**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 067 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 068 — Management agreements
-
-Module: AZ90-08 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **management agreements** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Management agreements is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **management agreements**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 068 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 069 — Rent and deposits
-
-Module: AZ90-08 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **rent and deposits** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Rent and deposits is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **rent and deposits**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 069 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 070 — Maintenance and risk
-
-Module: AZ90-08 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **maintenance and risk** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Maintenance and risk is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **maintenance and risk**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 070 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 071 — Landlord-tenant orientation
-
-Module: AZ90-08 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **landlord-tenant orientation** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Landlord-tenant orientation is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **landlord-tenant orientation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 071 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 072 — Management case
-
-Module: AZ90-08 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **management case** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Management case is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **management case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 072 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## AZ90-09 — Fair housing, disclosures, and risk
-
-Authority mapping: Current ADRE prelicense outline
-
-## Unit 073 — Federal fair housing
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **federal fair housing** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Federal fair housing is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **federal fair housing**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 073 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 074 — Arizona fair housing layer
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona fair housing layer** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona fair housing layer is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona fair housing layer**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 074 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 075 — Advertising
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **advertising** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Advertising is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **advertising**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 075 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 076 — Disability accommodation
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **disability accommodation** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Disability accommodation is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **disability accommodation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 076 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 077 — Property disclosures
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **property disclosures** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Property disclosures is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **property disclosures**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 077 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 078 — Environmental disclosure
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **environmental disclosure** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Environmental disclosure is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **environmental disclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 078 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 079 — Misrepresentation and fraud
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **misrepresentation and fraud** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Misrepresentation and fraud is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **misrepresentation and fraud**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 079 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 080 — Risk-management file
-
-Module: AZ90-09 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **risk-management file** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Risk-management file is studied within Fair housing, disclosures, and risk. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply Current ADRE prelicense outline and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **risk-management file**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 080 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## AZ90-10 — Arizona-specific law, forms, and integrated practice
-
-Authority mapping: A.R.S. § 32-2124 Arizona-specific instruction
-
-## Unit 081 — ADRE authority and licensing
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **adre authority and licensing** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** ADRE authority and licensing is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **adre authority and licensing**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 081 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 082 — Arizona broker records
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona broker records** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona broker records is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona broker records**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 082 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 083 — Arizona trust and escrow controls
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona trust and escrow controls** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona trust and escrow controls is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona trust and escrow controls**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 083 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 084 — Arizona subdivisions and public reports
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona subdivisions and public reports** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona subdivisions and public reports is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona subdivisions and public reports**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 084 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 085 — Arizona water disclosure
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona water disclosure** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona water disclosure is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona water disclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 085 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 086 — Arizona residential resale transaction
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona residential resale transaction** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona residential resale transaction is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona residential resale transaction**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 086 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 087 — Arizona agency disclosure
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona agency disclosure** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona agency disclosure is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona agency disclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 087 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 088 — Arizona contract form orientation
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona contract form orientation** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona contract form orientation is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona contract form orientation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 088 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 089 — Arizona disciplinary scenarios
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **arizona disciplinary scenarios** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Arizona disciplinary scenarios is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **arizona disciplinary scenarios**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 089 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 090 — Integrated Arizona case
-
-Module: AZ90-10 · Proposed clock hours: 1 · Content layer: AZ-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **integrated arizona case** with accurate entry-level professional vocabulary;
-2. apply it to a Arizona transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Integrated Arizona case is studied within Arizona-specific law, forms, and integrated practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Arizona layer.** Apply A.R.S. § 32-2124 Arizona-specific instruction and the controlled Arizona source register. A national concept may be reused for explanation, but Arizona terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Arizona transaction involving **integrated arizona case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 090 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript requirement:** develop the rule/concept, vocabulary, worked example, Arizona or national-source note as applicable, professional-scope boundary, scenario interaction, quiz and alternate remediation. Cite AZ-CURR-2026 §§ 11.1–11.2.

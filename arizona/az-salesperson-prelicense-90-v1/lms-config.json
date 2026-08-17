@@ -1,9 +1,17 @@
 {
-  "schema_version": "3.0",
+  "schema_version": "4.0",
   "course_id": "az-salesperson-prelicense-90-v1",
   "state": "AZ",
   "title": "Arizona Salesperson Pre-License 90h",
   "course_version": "1.0",
+  "required_hours": 90,
+  "content_status": {
+    "regulatory_matrix": "verified_2026-08-17",
+    "timed_blueprint": "complete_draft",
+    "instructional_manuscript": "in_development",
+    "assessment_bank": "not_production_ready",
+    "submission_package": "in_development"
+  },
   "lifecycle": {
     "status": "development",
     "approval_number": null,
@@ -22,44 +30,63 @@
       "effective_date": null,
       "expiration_date": null
     },
-    "instructor": {
-      "status": "development",
-      "approval_number": null,
+    "assigned_instructor": {
+      "instructor_id": null,
+      "status": "unassigned",
+      "approved_subjects": [],
       "effective_date": null,
       "expiration_date": null
     },
     "salesperson_prelicense_course": {
       "status": "development",
       "approval_number": null,
-      "effective_date": null,
-      "expiration_date": null
-    },
-    "contract_writing_course": {
-      "status": "development",
-      "approval_number": null,
+      "approved_delivery_method": null,
       "effective_date": null,
       "expiration_date": null
     }
   },
-  "required_hours": 90,
+  "hours": {
+    "required": 90,
+    "instructional_minutes_per_hour": 50,
+    "national_core": 63,
+    "arizona_specific": 27,
+    "final_exam_time_included": false,
+    "contract_writing_hours_included": false
+  },
   "delivery": {
-    "mode": "asynchronous_distance_proposed",
+    "proposed_mode": "asynchronous_distance",
     "approval_pending": true,
+    "module_minimum_minutes": 12.5,
+    "module_maximum_minutes": 50,
+    "statecourse_module_minutes": 50,
     "active_time_server_authoritative": true,
-    "instructional_minutes_per_clock_hour": 50,
-    "idle_time_excluded": true,
-    "tab_hidden_time_excluded": true,
-    "disconnected_time_excluded": true,
-    "concurrent_sessions": false,
+    "passive_page_time_counted": false,
+    "idle_time_counted": false,
+    "hidden_tab_time_counted": false,
+    "disconnected_time_counted": false,
+    "concurrent_sessions_allowed": false,
     "sequential_units": true,
-    "reviewer_bypass_isolated": true,
-    "enrollment_validity_days": null
+    "student_manual_completion": false,
+    "inactivity_logout_minutes": 15,
+    "inactivity_return_behavior": "restart_current_unit_and_reverify_identity",
+    "required_unit_components": [
+      "instructional_content",
+      "scenario_interactivity",
+      "active_time",
+      "quiz",
+      "remediation_if_triggered",
+      "identity_check",
+      "no_compliance_block"
+    ]
   },
   "identity": {
-    "state_approved_method_pending": true,
     "username_password_alone_sufficient": false,
-    "ip_session_device_audit": true,
-    "exam_proctoring": "ADRE SPS 2025.01 compliant proctoring; final not on a student-supplied device"
+    "student_attestation_alone_sufficient": false,
+    "method": null,
+    "state_acceptance_pending": true,
+    "registration_learning_quiz_final_identity_link_required": true,
+    "photo_id_each_final_login": true,
+    "ip_session_device_audit": true
   },
   "instructor": {
     "assigned_instructor_id": null,
@@ -67,29 +94,96 @@
     "assignment_required_for_enrollment": true
   },
   "assessment": {
-    "formative_checks": true,
-    "remediation_required": true,
-    "final_forms": 1,
-    "questions_per_form": 90,
-    "bank_ratio": 2,
-    "passing_percent": 75,
-    "passing_percent_source": "regulatory_or_current_application",
+    "unit_quiz_required": true,
+    "unit_quiz_passing_percent": 75,
+    "unit_quiz_source": "ADRE SPS 2025.01",
+    "remediation_required_after_failure": true,
+    "alternate_item_after_remediation": true,
+    "answers_hidden_before_submission": true,
+    "comprehensive_final_required": true,
+    "final_passing_percent": 75,
+    "final_minimum_bank_ratio": 2,
+    "final_questions_per_form": null,
+    "final_length_status": "provider_blueprint_pending_SME_and_ADRE_review",
+    "final_time_excluded_from_course_hours": true,
+    "lockdown_browser_required": true,
     "secure_bank_public": false
   },
-  "reporting": {
-    "state_workflow": "ADRE reviewer credentials, distance audit exports, certificates, and school/course/instructor changes through the ADRE process.",
-    "automated_events": true
+  "proctoring": {
+    "status": "pending_ADRE_confirmation_and_vendor_selection",
+    "statutory_in_person_language_review_required": true,
+    "methods_described_by_sps_2025_01": [
+      "proctored_online",
+      "approved_school_in_person",
+      "approved_independent_third_party_in_person"
+    ],
+    "student_provided_device_allowed": false,
+    "exam_incident_audit_required": true
+  },
+  "reviewer_access": {
+    "persistent_credentials_required": true,
+    "roles": [
+      {
+        "id": "regulator_student_view",
+        "time_bypass": false,
+        "writes_student_credit": false
+      },
+      {
+        "id": "regulator_unrestricted_review",
+        "time_bypass": true,
+        "writes_student_credit": false
+      }
+    ]
+  },
+  "support": {
+    "emergency_contact": null,
+    "student_assistance_contact": null,
+    "linked_help_tool_required": true,
+    "named_contacts_release_gate": true
   },
   "records": {
-    "state_rule": "Server-authoritative identity, unit, timestamp, IP, assessment, completion, exam, certificate, instructor, and version records; retention period to be confirmed in the approved school/course package.",
+    "events": [
+      "identity_verification",
+      "login",
+      "logout",
+      "inactivity_logout",
+      "unit_start",
+      "interaction",
+      "active_time",
+      "quiz_attempt",
+      "remediation",
+      "unit_completion",
+      "final_attempt",
+      "proctor_incident",
+      "course_completion",
+      "certificate_issue"
+    ],
+    "timestamps_required": true,
+    "ip_required": true,
     "append_only_completion_audit": true,
-    "exact_course_version_required": true
+    "exact_course_version_required": true,
+    "retention_period": null,
+    "retention_rule_verification_pending": true
   },
   "certificate": {
     "enabled": false,
-    "template": "az-salesperson-prelicense-90-v1-draft",
-    "valid_approval_required": true,
-    "valid_instructor_required": true
+    "valid_school_approval_required": true,
+    "valid_course_approval_required": true,
+    "valid_instructor_assignment_required": true,
+    "administrator_signature_required": true,
+    "fields": [
+      "course_provider_name",
+      "school_certification_number",
+      "course_number",
+      "course_title",
+      "course_start_date",
+      "course_completion_date",
+      "student_name",
+      "credit_hours",
+      "credit_categories",
+      "school_contact_information",
+      "administrator_signature"
+    ]
   },
   "stripe": {
     "enabled": false,
@@ -98,98 +192,25 @@
     "payment_never_controls_completion": true
   },
   "modules": [
-    {
-      "id": "AZ90-01",
-      "title": "Property, ownership, and land use",
-      "hours": 8,
-      "authority": "A.R.S. § 32-2124 and current ADRE prelicense outline",
-      "national_core": [
-        "NC-OWN"
-      ]
-    },
-    {
-      "id": "AZ90-02",
-      "title": "Real estate law and professional scope",
-      "hours": 8,
-      "authority": "Current ADRE prelicense outline",
-      "national_core": [
-        "NC-CON"
-      ],
-      "arizona_specific_hours": 8
-    },
-    {
-      "id": "AZ90-03",
-      "title": "Brokerage relationships and agency",
-      "hours": 9,
-      "authority": "Current ADRE prelicense outline and Arizona license law",
-      "national_core": [
-        "NC-AGY"
-      ],
-      "arizona_specific_hours": 9
-    },
-    {
-      "id": "AZ90-04",
-      "title": "Contracts and transaction documents",
-      "hours": 14,
-      "authority": "Current ADRE prelicense outline",
-      "national_core": [
-        "NC-CON"
-      ]
-    },
-    {
-      "id": "AZ90-05",
-      "title": "Title and transfer",
-      "hours": 8,
-      "authority": "Current ADRE prelicense outline",
-      "national_core": [
-        "NC-TTL"
-      ]
-    },
-    {
-      "id": "AZ90-06",
-      "title": "Financing and calculations",
-      "hours": 10,
-      "authority": "Current ADRE prelicense outline",
-      "national_core": [
-        "NC-FIN"
-      ]
-    },
-    {
-      "id": "AZ90-07",
-      "title": "Valuation and investment",
-      "hours": 8,
-      "authority": "Current ADRE prelicense outline",
-      "national_core": [
-        "NC-VAL",
-        "NC-INV"
-      ]
-    },
-    {
-      "id": "AZ90-08",
-      "title": "Leasing and property management",
-      "hours": 7,
-      "authority": "Current ADRE prelicense outline",
-      "national_core": [
-        "NC-PM"
-      ]
-    },
-    {
-      "id": "AZ90-09",
-      "title": "Fair housing, disclosures, and risk",
-      "hours": 8,
-      "authority": "Current ADRE prelicense outline",
-      "national_core": [
-        "NC-FH"
-      ]
-    },
-    {
-      "id": "AZ90-10",
-      "title": "Arizona-specific law, forms, and integrated practice",
-      "hours": 10,
-      "authority": "A.R.S. § 32-2124 Arizona-specific instruction",
-      "national_core": [],
-      "arizona_specific_hours": 10
-    }
-  ],
-  "arizona_specific_instruction_minimum_hours": 27
+    { "id": "AZ90-N01", "layer": "national_core", "title": "Property fundamentals and ownership", "hours": 9, "units": "01-09" },
+    { "id": "AZ90-N02", "layer": "national_core", "title": "Land, legal descriptions and public controls", "hours": 6, "units": "10-15" },
+    { "id": "AZ90-N03", "layer": "national_core", "title": "Agency and brokerage principles", "hours": 7, "units": "16-22" },
+    { "id": "AZ90-N04", "layer": "national_core", "title": "Contracts and transaction documents", "hours": 10, "units": "23-32" },
+    { "id": "AZ90-N05", "layer": "national_core", "title": "Real estate finance and calculations", "hours": 9, "units": "33-41" },
+    { "id": "AZ90-N06", "layer": "national_core", "title": "Valuation and investment fundamentals", "hours": 7, "units": "42-48" },
+    { "id": "AZ90-N07", "layer": "national_core", "title": "Title, transfer and closing", "hours": 6, "units": "49-54" },
+    { "id": "AZ90-N08", "layer": "national_core", "title": "Leasing and property management", "hours": 5, "units": "55-59" },
+    { "id": "AZ90-N09", "layer": "national_core", "title": "Federal fair housing and professional practice", "hours": 4, "units": "60-63" },
+    { "id": "AZ90-A01", "layer": "arizona_specific", "title": "Arizona regulatory framework", "hours": 4, "arizona_specific_hours": 4, "units": "64-67", "adre_sections": "1.1-1.5" },
+    { "id": "AZ90-A02", "layer": "arizona_specific", "title": "Arizona consumer protection laws", "hours": 2, "arizona_specific_hours": 2, "units": "68-69", "adre_sections": "2.1-2.4" },
+    { "id": "AZ90-A03", "layer": "arizona_specific", "title": "Advertising", "hours": 2, "arizona_specific_hours": 2, "units": "70-71", "adre_sections": "3.1-3.4" },
+    { "id": "AZ90-A04", "layer": "arizona_specific", "title": "Arizona agency", "hours": 2, "arizona_specific_hours": 2, "units": "72-73", "adre_sections": "4.1-4.4" },
+    { "id": "AZ90-A05", "layer": "arizona_specific", "title": "Licensee duties and obligations", "hours": 3, "arizona_specific_hours": 3, "units": "74-76", "adre_sections": "5.1-5.7" },
+    { "id": "AZ90-A06", "layer": "arizona_specific", "title": "Licensee competencies and duties", "hours": 4, "arizona_specific_hours": 4, "units": "77-80", "adre_sections": "6.1-6.3.5" },
+    { "id": "AZ90-A07", "layer": "arizona_specific", "title": "Reasonable skill and care", "hours": 2, "arizona_specific_hours": 2, "units": "81-82", "adre_sections": "7.1-7.3" },
+    { "id": "AZ90-A08", "layer": "arizona_specific", "title": "Contracts", "hours": 3, "arizona_specific_hours": 3, "units": "83-85", "adre_sections": "8.1-8.2.5" },
+    { "id": "AZ90-A09", "layer": "arizona_specific", "title": "Critical business services", "hours": 2, "arizona_specific_hours": 2, "units": "86-87", "adre_sections": "9.1-9.3" },
+    { "id": "AZ90-A10", "layer": "arizona_specific", "title": "Ownership and encumbrances", "hours": 2, "arizona_specific_hours": 2, "units": "88-89", "adre_sections": "10.1-10.5" },
+    { "id": "AZ90-A11", "layer": "arizona_specific", "title": "Foreclosure, short sale and deed in lieu", "hours": 1, "arizona_specific_hours": 1, "units": "90", "adre_sections": "11.1-11.2" }
+  ]
 }
