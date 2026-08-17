@@ -3,7 +3,12 @@ const $=(selector)=>document.querySelector(selector);
 const message=$("#courseMessage"),shell=$("#courseShell"),actionMessage=$("#actionMessage");
 
 function escapeHtml(value){return String(value??"").replace(/[&<>'"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));}
-function inline(text){return escapeHtml(text);}
+function inline(text){
+  return escapeHtml(text)
+    .replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
+    .replace(/\*([^*]+)\*/g,"<em>$1</em>");
+}
 function renderMarkdown(markdown){
   const lines=String(markdown||"").replace(/\r/g,"").split("\n"),output=[];
   let paragraph=[],list=[],table=[],tracked=0;

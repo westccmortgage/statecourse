@@ -1,3 +1,5 @@
+import { getPracticeAssessment } from "./california-practice-assessments.mjs";
+
 const COURSE_DEFINITIONS = {
   "ca-real-estate-principles-45": {
     title: "Real Estate Principles",
@@ -111,6 +113,10 @@ export function getCaliforniaAssessment(courseId, assignmentId, kind = "engageme
   const course = getCaliforniaCourse(courseId);
   const assignment = course?.assignments.find((item) => item.id === assignmentId);
   if (!course || !assignment) return null;
+  if (courseId === "ca-real-estate-practice-45") {
+    const curated = getPracticeAssessment(assignment.sequence, kind);
+    if (curated) return { id: assignment.id + "-" + kind, ...curated };
+  }
   const correctIndex = kind === "remediation"
     ? (assignment.sequence + 1) % CHOICES.length
     : assignment.sequence % CHOICES.length;
