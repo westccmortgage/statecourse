@@ -1,38 +1,58 @@
-# North Carolina Provider, School, Instructor, and Course Application Package
+# North Carolina Education Provider, Instructor, and Course Application Package
 
 ## Filing order
 
-1. Confirm entity eligibility and regulator account/portal.
-2. File Education Provider Certification with ownership, administrators/director, location/delivery, financial/bond, catalog, enrollment agreement, refund/cancellation, records, and advertising exhibits required by the current form.
-3. File each instructor separately with qualification evidence and course scope.
-4. File every regulatory course separately with the exact title, hours, outline, curriculum, objectives, materials, assessments, final/key, evaluation, certificate, delivery method, reviewer access, and policies.
-5. Record regulator corrections, approval number, effective date, expiration, approved delivery method, instructor scope, and renewal schedule before public activation.
+1. Confirm StateCourse LLC entity good standing and create the current NCREC applicant account.
+2. Designate an education director and complete the Education Provider certification filing for the principal location/distance operation.
+3. File the Broker Prelicensing course and the self-paced distance delivery method with a full reviewer copy, course guide, time study, attendance evidence, technical requirements/support, materials-possession method, and final-exam proctor procedure.
+4. Assign and document at least one Commission-approved Prelicensing instructor.
+5. Resolve regulator corrections, record approval numbers/dates, then conduct a production-readiness audit before any advertising, payment, or enrollment.
 
-## Current form/fee register
+## Current fee and lifecycle register
 
-- NCREC Education Provider certification filing in the current Education Provider portal
-- NCREC Broker Prelicensing course approval filing with current 75-hour syllabus/course guide
-- NCREC Prelicensing instructor approval filing and New Instructor Seminar evidence
-- Policies and Procedures Disclosure receipt, course schedule/roster, completion-report, and monthly-summary workflows prescribed by 21 NCAC 58H
-
-## Current fee register
-
-| Filing | Current amount | Control note |
+| Filing | Verified amount / cycle | Source and control |
 |---|---:|---|
-| Initial Education Provider certification | $200 per location | 21 NCAC 58H .0202. |
-| Prelicensing course approval | $40 per course/location | Current 58H course-approval rule. |
-| Annual provider renewal | $100 per location | Due June 1; certification expires June 30. |
-| Annual course renewal | $25 per course | Current 58H renewal rule. |
-| Instructor approval | No separate fee identified in the cited current rule | Confirm in the NCREC portal at filing; no zero-dollar assumption. |
+| Initial Education Provider certification | $200 per proposed location | 21 NCAC 58H .0202(c) |
+| Prelicensing course at a branch location | $40 per course/location | 21 NCAC 58H .0401(i); confirm portal applicability to principal self-paced filing |
+| Annual provider renewal | $100 per location | 58H .0209(d); expires June 30; statutory renewal filing no later than June 1 |
+| Annual Prelicensing course renewal | $25 per course | 58H .0416; approval expires June 30; original application required after two renewals |
+| Instructor approval | No fee stated in verified 58H .0302 text | Confirm live portal before filing; do not encode a zero-dollar regulatory fact |
 
-Fees are point-in-time regulatory data. The administrator must attach the filing-day official fee page or portal receipt; the platform does not silently reuse an old amount.
+## Provider exhibits
 
-## Required submission exhibits
+- entity name, ownership type, NCSOS identification and good-standing evidence;
+- website, physical/mailing address, telephone, principal and any branch locations;
+- education director information and signed compliance certification;
+- ownership, disciplinary, criminal, license, and prior-provider disclosures requested by current form;
+- Policies and Procedures Disclosure with signed prepayment receipt;
+- admissions, registration, attendance/completion, grades, student conduct, complaint, accessibility, privacy, refund/cancellation, technology, support and exam policies;
+- financial-capacity and business-operation evidence required by the current form;
+- advertising examples with no unapproved-credit or employment claims;
+- three-year records and Commission-access procedure.
 
-- official-source register and compliance matrix;
-- entity, owner, administrator/director, school/location, bond/financial, and agent exhibits as applicable;
-- course application and regulator-outline crosswalk for each course;
-- complete student/instructor materials, timed outline, objectives, activities, assessments, remediation, secure final, and answer key;
-- identity, attendance/time, inactivity, support, accessibility, technical, security, proctor/reviewer, records, certificate, reporting, evaluation, complaint, refund/cancellation, and change-control policies;
-- instructor approval file and assignment;
-- regulator correction log and final version manifest.
+## Instructor exhibit
+
+- Commission application data and requested disclosures;
+- active non-provisional North Carolina broker license;
+- qualifying continuing education/status evidence;
+- 60 accredited semester hours;
+- qualifying recent brokerage/teaching/other-jurisdiction instructor/equivalent experience;
+- passing Commission instructor-approval exam;
+- New Instructor Seminar within six months and successful 15-minute teaching block;
+- course assignment and annual six-hour instructor-development/renewal controls.
+
+## Course and self-paced distance exhibits
+
+- application identification, ownership permission, education director signature, prospective instructor;
+- course objectives and per-topic Bloom-aligned learning objectives;
+- Commission-syllabus crosswalk and 75-hour timed outline;
+- complete student course and instructor materials;
+- required activities, formative checks, remediation and assessment map;
+- full review copy on the intended medium;
+- 225-wpm word-count plus actual audio/video duration time study;
+- mechanism to verify/record completion of every unit and assessment;
+- required hardware/software and technical-support contact;
+- required-material possession verification;
+- comprehensive proctored closed-book final, secure bank/key, approved identity/security and alternate-form procedure;
+- certificate, seven-day completion report, day-five monthly summary, evaluation and three-year record procedures;
+- regulator reviewer credentials and test data isolated from student credit.

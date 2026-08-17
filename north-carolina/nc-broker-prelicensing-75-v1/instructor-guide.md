@@ -1,29 +1,35 @@
-# North Carolina Broker Prelicensing 75h — Instructor Guide
+# North Carolina Broker Prelicensing 75h v1.0 — Instructor Guide
 
-The assigned instructor must be eligible for this exact state and subject scope before any student enrollment. The LMS supplies current-source links, lesson objectives, student attempts, remediation history, help requests, and version context; it does not replace instructor judgment or regulator approval.
+**Assignment: unassigned — current NCREC instructor approval required before enrollment.**
 
-| Module | Subject | Hours | Instructor control |
-|---|---|---:|---|
-| NCB-01 | License law and brokerage regulation | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-02 | Property concepts and ownership | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-03 | Title, legal descriptions, and transfer | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-04 | Land use and environmental matters | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-05 | Brokerage relationships and agency | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-06 | Contract law | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-07 | North Carolina sales contracts and forms | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-08 | Real estate finance | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-09 | Valuation and brokerage pricing | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-10 | Real estate calculations | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-11 | Fair housing and consumer protection | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-12 | Leasing and property management | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-13 | Construction, insurance, and property condition | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-14 | Closing, settlement, and taxation | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
-| NCB-15 | Integrated North Carolina brokerage practice | 5 | Check the current source/form edition; review quiz analytics; answer scope questions; approve remediation escalation notes. |
+The assigned instructor supports the exact approved course version. The LMS provides current-source links, objectives, student attempts, remediation history, help requests and version context; it does not replace instructor judgment or Commission approval.
 
-## Student support
+## Module responsibilities
 
-Answer within the state/course-approved response window. Correct misconceptions with an alternate explanation and scenario; do not reveal secure answers as remediation. Repeated failure, the same misconception, an integrity anomaly, or a help request creates an attributed support record. Do not change credited time, scores, or completion silently.
+| Module | Hours | Instructor control |
+|---|---:|---|
+| NCB-01 — North Carolina licensure | 2 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-02 — Basic real estate concepts | 1 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-03 — Property characteristics, description, and use | 4 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-04 — Property ownership types and transfers | 6 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-05 — Property disclosures and environmental issues | 6 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-06 — Property taxation and insurance | 4 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-07 — Agency and brokerage relationships | 13 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-08 — Contracts and closing | 18 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-09 — Real estate financing and settlement | 7 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-10 — Real property valuation and appraisal | 6 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-11 — Fair housing and anti-discrimination | 2 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-12 — Landlord, tenant, and property management | 3 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
+| NCB-13 — Proctored end-of-course examination | 3 | Verify the current syllabus/form/source edition; review objective and assessment mapping; respond to student misconceptions; document interventions; escalate legal or regulator ambiguity. |
 
-## Version and source control
+## Before release
 
-Before facilitating a changed lesson, verify the course version, regulator approval record, current form/source snapshot, and change classification. Escalate legal questions and regulator ambiguities; do not invent a rule or import another state's practice.
+- verify current non-provisional North Carolina broker license and NCREC instructor approval;
+- confirm course assignment and approval scope;
+- review all 72 student manuscripts, required activities and authorized North Carolina resources;
+- validate formative items, rationales and remediation;
+- participate in secure final/legal-content review without exposing items;
+- complete the approved self-paced support and response-time procedure; and
+- verify the exact approved course version before any student cohort begins.
+
+The education director, not the instructor alone, signs certificates and owns the Commission reporting and examination-security duties assigned by Rule .0203.

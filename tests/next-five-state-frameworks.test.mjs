@@ -12,7 +12,7 @@ const courses = [
   ["washington/wa-real-estate-practices-30-v1", "WA", 30, 0],
   ["pennsylvania/pa-real-estate-fundamentals-30-v1", "PA", 30, 0],
   ["pennsylvania/pa-real-estate-practice-45-v1", "PA", 45, 0],
-  ["north-carolina/nc-broker-prelicensing-75-v1", "NC", 75, 100],
+  ["north-carolina/nc-broker-prelicensing-75-v1", "NC", 75, 0],
   ["colorado/co-real-estate-law-practice-48-v1", "CO", 48, 96],
   ["colorado/co-contracts-regulations-48-v1", "CO", 48, 96],
   ["colorado/co-trust-accounts-recordkeeping-8-v1", "CO", 8, 25],
@@ -75,6 +75,12 @@ test("state approval records separate school/provider, instructor, course, and d
 test("state-specific regulatory controls are not promoted to national defaults", async () => {
   const controls = JSON.parse(await read("config/state-regulatory-controls.json"));
   assert.equal(controls.states["nc-broker-prelicensing-75-v1"].delivery.enrollment_validity_days, 180);
+  assert.equal(controls.states["nc-broker-prelicensing-75-v1"].delivery.time_study_method, "225 words per minute plus actual audio/video duration");
+  assert.equal(controls.states["nc-broker-prelicensing-75-v1"].delivery.every_unit_and_assessment_required, true);
+  assert.equal(controls.states["nc-broker-prelicensing-75-v1"].assessment.passing_percent, 75);
+  assert.equal(controls.states["nc-broker-prelicensing-75-v1"].assessment.questions_per_form, null);
+  assert.equal(controls.states["nc-broker-prelicensing-75-v1"].assessment.production_bank_status, "not_started_release_gate");
+  assert.equal(controls.states["nc-broker-prelicensing-75-v1"].records.retention_years, 3);
   assert.equal(controls.states["az-salesperson-prelicense-90-v1"].identity.username_password_alone_sufficient, false);
   assert.equal(controls.states["pa-real-estate-fundamentals-30-v1"].assessment.passing_percent, null);
   assert.equal(controls.states["pa-real-estate-fundamentals-30-v1"].assessment.questions_per_form, null);

@@ -11,8 +11,10 @@ Students completing an approved release will explain the prescribed subjects, ap
 
 ## Delivery and completion
 
-In-person, synchronous distance, blended, or asynchronous distance only as approved for the 75-hour Prelicensing course. Asynchronous learners complete every unit and assessment; synchronous learners must remain visible on camera effective July 1, 2026. The exact course configuration controls active time, sequence, units, interactions, assessment, remediation, identity, inactivity, final eligibility, completion period, and proctoring. Payment never determines completion or credit.
+StateCourse proposes self-paced distance delivery. NCREC must approve this exact course and delivery method before it may be offered. The submitted course must be reviewable in full and its time outline must use 225 words per minute plus actual audio/video duration. A distance student must complete every unit and assessment, pass the end-of-course examination, and complete the course within 180 days of enrollment. Payment never determines completion or credit.
+
+The 75 course hours consist of 72 subject hours and three hours for the comprehensive final. The major-subject emphasis follows the March 2024 Commission syllabus. Its recommended 1.5-hour Fair Housing and 3.5-hour Landlord/Tenant allocations are implemented as two and three whole LMS hour records while preserving their combined five hours and the 75-hour total.
 
 ## Assessment
 
-Formative checks and module quizzes trigger objective-specific remediation. Draft final configuration: 1 form(s), 100 items/form, passing standard: 75%. Proctored, closed-book, identity-verified end-of-course examination. Any item count not prescribed by the regulator is a StateCourse submission proposal.
+Formative checks and module assignments trigger objective-specific remediation. The final is comprehensive, closed-book, proctored, and requires a score of at least 75 percent. Item count, bank ratio, retake procedure, and remote-proctor method remain written-confirmation/application gates. No production-ready final bank exists yet.

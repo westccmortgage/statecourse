@@ -1,2388 +1,884 @@
-# North Carolina Broker Prelicensing 75h v1.0 — Unit-by-Unit Curriculum
+# North Carolina Broker Prelicensing 75h v1.0 — Hour-by-Hour Course Blueprint
 
-**Development draft. No enrollment, credit, or certificate.**
+**Development draft — not approved and not a finished student textbook.**
 
-## NCB-01 — License law and brokerage regulation
+This blueprint defines 72 instructional clock hours and a three-hour comprehensive end-of-course examination. The Commission's March 2024 syllabus major-subject emphasis is marked as recommended; the two half-hour recommendations are balanced into whole StateCourse hour records without changing the 75-hour total.
 
-Authority mapping: Current NCREC Broker Prelicensing syllabus
+Self-paced distance delivery remains unavailable until NCREC approves this exact delivery method, course copy, time study, identity/attendance method, and proctoring procedure.
 
-## Unit 001 — Commission authority
+## Required instructional-unit pattern
 
-Module: NCB-01 · Proposed clock hours: 1 · Content layer: NC-specific
+- source-grounded lesson manuscript and current North Carolina authority;
+- stated Bloom-aligned objective at the prescribed instructional level;
+- worked example, scenario, document, or calculation;
+- student interaction and scored mastery check;
+- targeted remediation and alternate assessment;
+- server-authoritative unit/assessment completion evidence; and
+- immutable course-version and student audit record.
 
-### Learning objectives
+## Major-subject emphasis
 
-By the end of this unit, the student can:
+| Module | Course hours | NCREC recommended hours | Authority |
+|---|---:|---:|---|
+| NCB-01 — North Carolina licensure | 2 | 2 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-02 — Basic real estate concepts | 1 | 1 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-03 — Property characteristics, description, and use | 4 | 4 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-04 — Property ownership types and transfers | 6 | 6 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-05 — Property disclosures and environmental issues | 6 | 6 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-06 — Property taxation and insurance | 4 | 4 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-07 — Agency and brokerage relationships | 13 | 13 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-08 — Contracts and closing | 18 | 18 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-09 — Real estate financing and settlement | 7 | 7 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-10 — Real property valuation and appraisal | 6 | 6 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-11 — Fair housing and anti-discrimination | 2 | 1.5 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-12 — Landlord, tenant, and property management | 3 | 3.5 | NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H |
+| NCB-13 — Proctored end-of-course examination | 3 | 3 | 21 NCAC 58H .0207 and NCREC Broker Prelicensing Course Syllabus |
+|  | **75** | **75** |  |
 
-1. explain **commission authority** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+# NCB-01 — North Carolina licensure
 
-### Instructional lesson
+**Course hours:** 2
 
-**Rule and purpose.** Commission authority is studied within License law and brokerage regulation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**NCREC recommended hours:** 2
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-**North Carolina layer.** Apply Current NCREC Broker Prelicensing syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 001 — North Carolina licensing pathway, application, character review, and license examination
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Explain and apply north carolina licensing pathway, application, character review, and license examination at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **commission authority**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on north carolina licensing pathway, application, character review, and license examination.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 001 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 002 — License categories, qualifications, status, renewal, education duties, and Commission authority
 
-## Unit 002 — Broker license
+**Type:** Instruction
 
-Module: NCB-01 · Proposed clock hours: 1 · Content layer: NC-specific
+**Learning objective:** Distinguish and analyze license categories, qualifications, status, renewal, education duties, and commission authority at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on license categories, qualifications, status, renewal, education duties, and commission authority.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **broker license** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+# NCB-02 — Basic real estate concepts
 
-### Instructional lesson
+**Course hours:** 1
 
-**Rule and purpose.** Broker license is studied within License law and brokerage regulation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**NCREC recommended hours:** 1
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-**North Carolina layer.** Apply Current NCREC Broker Prelicensing syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 003 — Real property, personal property, the bundle of rights, and brokerage vocabulary
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Explain and apply real property, personal property, the bundle of rights, and brokerage vocabulary at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **broker license**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on real property, personal property, the bundle of rights, and brokerage vocabulary.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 002 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+# NCB-03 — Property characteristics, description, and use
 
-## Unit 003 — Firm and BIC
+**Course hours:** 4
 
-Module: NCB-01 · Proposed clock hours: 1 · Content layer: NC-specific
+**NCREC recommended hours:** 4
 
-### Learning objectives
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-By the end of this unit, the student can:
+## Unit 004 — Physical and economic characteristics of land and improvements
 
-1. explain **firm and bic** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Type:** Instruction
 
-### Instructional lesson
+**Learning objective:** Explain and apply physical and economic characteristics of land and improvements at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Rule and purpose.** Firm and BIC is studied within License law and brokerage regulation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on physical and economic characteristics of land and improvements.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**North Carolina layer.** Apply Current NCREC Broker Prelicensing syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 005 — Fixtures, trade fixtures, emblements, and property classification
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Distinguish and analyze fixtures, trade fixtures, emblements, and property classification at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **firm and bic**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on fixtures, trade fixtures, emblements, and property classification.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 003 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 006 — Legal descriptions, surveys, measurements, and area calculations
 
-## Unit 004 — Education and examination
+**Type:** Instruction
 
-Module: NCB-01 · Proposed clock hours: 1 · Content layer: NC-specific
+**Learning objective:** Identify and document legal descriptions, surveys, measurements, and area calculations at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on legal descriptions, surveys, measurements, and area calculations.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **education and examination** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 007 — Public and private land-use controls, environmental orientation, and development due diligence
 
-### Instructional lesson
+**Type:** Instruction
 
-**Rule and purpose.** Education and examination is studied within License law and brokerage regulation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Calculate or evaluate public and private land-use controls, environmental orientation, and development due diligence at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on public and private land-use controls, environmental orientation, and development due diligence.
 
-**North Carolina layer.** Apply Current NCREC Broker Prelicensing syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+# NCB-04 — Property ownership types and transfers
 
-### Applied exercise
+**Course hours:** 6
 
-Analyze a North Carolina transaction involving **education and examination**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**NCREC recommended hours:** 6
 
-### Scored check and remediation
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 004 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 008 — Freehold, leasehold, defeasible, and life estates
 
-## Unit 005 — Discipline
+**Type:** Instruction
 
-Module: NCB-01 · Proposed clock hours: 1 · Content layer: NC-specific
+**Learning objective:** Explain and apply freehold, leasehold, defeasible, and life estates at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on freehold, leasehold, defeasible, and life estates.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **discipline** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 009 — Severalty, tenancy in common, joint tenancy, tenancy by the entirety, and trust ownership
 
-### Instructional lesson
+**Type:** Instruction
 
-**Rule and purpose.** Discipline is studied within License law and brokerage regulation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Distinguish and analyze severalty, tenancy in common, joint tenancy, tenancy by the entirety, and trust ownership at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on severalty, tenancy in common, joint tenancy, tenancy by the entirety, and trust ownership.
 
-**North Carolina layer.** Apply Current NCREC Broker Prelicensing syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 010 — Condominiums, cooperatives, planned communities, and time-share orientation
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **discipline**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Identify and document condominiums, cooperatives, planned communities, and time-share orientation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on condominiums, cooperatives, planned communities, and time-share orientation.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 005 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## NCB-02 — Property concepts and ownership
+## Unit 011 — Easements, licenses, encroachments, appurtenant rights, and adverse possession
 
-Authority mapping: Current NCREC syllabus
+**Type:** Instruction
 
-## Unit 006 — Real/personal property
+**Learning objective:** Calculate or evaluate easements, licenses, encroachments, appurtenant rights, and adverse possession at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Module: NCB-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on easements, licenses, encroachments, appurtenant rights, and adverse possession.
 
-### Learning objectives
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 012 — Liens, lien priority, marketable title, and title evidence
 
-1. explain **real/personal property** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Type:** Instruction
 
-### Instructional lesson
+**Learning objective:** Compare and apply liens, lien priority, marketable title, and title evidence at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Rule and purpose.** Real/personal property is studied within Property concepts and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on liens, lien priority, marketable title, and title evidence.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 013 — Deed requirements, deed types, delivery, recording, and voluntary or involuntary transfer
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Explain and apply deed requirements, deed types, delivery, recording, and voluntary or involuntary transfer at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **real/personal property**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on deed requirements, deed types, delivery, recording, and voluntary or involuntary transfer.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 006 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+# NCB-05 — Property disclosures and environmental issues
 
-## Unit 007 — Fixtures
+**Course hours:** 6
 
-Module: NCB-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**NCREC recommended hours:** 6
 
-### Learning objectives
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-By the end of this unit, the student can:
+## Unit 014 — Material facts, discoverability, broker inquiry, and disclosure duties
 
-1. explain **fixtures** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Type:** Instruction
 
-### Instructional lesson
+**Learning objective:** Explain and apply material facts, discoverability, broker inquiry, and disclosure duties at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Rule and purpose.** Fixtures is studied within Property concepts and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on material facts, discoverability, broker inquiry, and disclosure duties.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 015 — Residential Property and Owners' Association Disclosure Statement workflow
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Distinguish and analyze residential property and owners' association disclosure statement workflow at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **fixtures**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on residential property and owners' association disclosure statement workflow.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 007 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 016 — Mineral and Oil and Gas Rights Mandatory Disclosure Statement workflow
 
-## Unit 008 — Estates
+**Type:** Instruction
 
-Module: NCB-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Learning objective:** Identify and document mineral and oil and gas rights mandatory disclosure statement workflow at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on mineral and oil and gas rights mandatory disclosure statement workflow.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **estates** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 017 — Federal lead-based paint disclosure and record responsibilities
 
-### Instructional lesson
+**Type:** Instruction
 
-**Rule and purpose.** Estates is studied within Property concepts and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Calculate or evaluate federal lead-based paint disclosure and record responsibilities at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on federal lead-based paint disclosure and record responsibilities.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 018 — Environmental hazards, contamination, flood, radon, asbestos, mold, and referral boundaries
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **estates**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Compare and apply environmental hazards, contamination, flood, radon, asbestos, mold, and referral boundaries at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on environmental hazards, contamination, flood, radon, asbestos, mold, and referral boundaries.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 008 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## Unit 009 — Concurrent ownership
+## Unit 019 — Stigmatized property, square footage, construction condition, and integrated disclosure case
 
-Module: NCB-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Explain and apply stigmatized property, square footage, construction condition, and integrated disclosure case at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on stigmatized property, square footage, construction condition, and integrated disclosure case.
 
-1. explain **concurrent ownership** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+# NCB-06 — Property taxation and insurance
 
-**Rule and purpose.** Concurrent ownership is studied within Property concepts and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Course hours:** 4
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**NCREC recommended hours:** 4
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 020 — Ad valorem assessment, tax rates, special assessments, and tax calculations
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **concurrent ownership**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Explain and apply ad valorem assessment, tax rates, special assessments, and tax calculations at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on ad valorem assessment, tax rates, special assessments, and tax calculations.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 009 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## Unit 010 — Common interests
+## Unit 021 — Excise tax, prorations, debits, credits, and transaction calculations
 
-Module: NCB-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Distinguish and analyze excise tax, prorations, debits, credits, and transaction calculations at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on excise tax, prorations, debits, credits, and transaction calculations.
 
-1. explain **common interests** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 022 — Homeowner, hazard, liability, title, and mortgage insurance foundations
 
-**Rule and purpose.** Common interests is studied within Property concepts and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Type:** Instruction
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Identify and document homeowner, hazard, liability, title, and mortgage insurance foundations at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on homeowner, hazard, liability, title, and mortgage insurance foundations.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Applied exercise
+## Unit 023 — Flood insurance and federal income-tax orientation for home ownership and sale
 
-Analyze a North Carolina transaction involving **common interests**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Type:** Instruction
 
-### Scored check and remediation
+**Learning objective:** Calculate or evaluate flood insurance and federal income-tax orientation for home ownership and sale at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 010 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on flood insurance and federal income-tax orientation for home ownership and sale.
 
-## NCB-03 — Title, legal descriptions, and transfer
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-Authority mapping: Current NCREC syllabus
+# NCB-07 — Agency and brokerage relationships
 
-## Unit 011 — Legal descriptions
+**Course hours:** 13
 
-Module: NCB-03 · Proposed clock hours: 1 · Content layer: NC-TTL
+**NCREC recommended hours:** 13
 
-### Learning objectives
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-By the end of this unit, the student can:
+## Unit 024 — Agency creation, authority, clients, customers, and third parties
 
-1. explain **legal descriptions** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Type:** Instruction
 
-### Instructional lesson
+**Learning objective:** Explain and apply agency creation, authority, clients, customers, and third parties at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Rule and purpose.** Legal descriptions is studied within Title, legal descriptions, and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on agency creation, authority, clients, customers, and third parties.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 025 — Common-law duties, statutory duties, fiduciary obligations, and reasonable skill and care
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Distinguish and analyze common-law duties, statutory duties, fiduciary obligations, and reasonable skill and care at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **legal descriptions**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on common-law duties, statutory duties, fiduciary obligations, and reasonable skill and care.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 011 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 026 — Broker supervision, provisional brokers, broker-in-charge duties, and compensation
 
-## Unit 012 — Deeds
+**Type:** Instruction
 
-Module: NCB-03 · Proposed clock hours: 1 · Content layer: NC-TTL
+**Learning objective:** Identify and document broker supervision, provisional brokers, broker-in-charge duties, and compensation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on broker supervision, provisional brokers, broker-in-charge duties, and compensation.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **deeds** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 027 — Working With Real Estate Agents disclosure purpose and timing
 
-### Instructional lesson
+**Type:** Instruction
 
-**Rule and purpose.** Deeds is studied within Title, legal descriptions, and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Calculate or evaluate working with real estate agents disclosure purpose and timing at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on working with real estate agents disclosure purpose and timing.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 028 — Seller agency creation, listing agreements, and listing-side duties
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **deeds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Compare and apply seller agency creation, listing agreements, and listing-side duties at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on seller agency creation, listing agreements, and listing-side duties.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 012 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## Unit 013 — Recording
+## Unit 029 — Buyer agency creation, written agreements, and buyer-side duties
 
-Module: NCB-03 · Proposed clock hours: 1 · Content layer: NC-TTL
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Explain and apply buyer agency creation, written agreements, and buyer-side duties at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on buyer agency creation, written agreements, and buyer-side duties.
 
-1. explain **recording** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 030 — Dual agency disclosure, authorization, conflicts, and informed consent
 
-**Rule and purpose.** Recording is studied within Title, legal descriptions, and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Type:** Instruction
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Distinguish and analyze dual agency disclosure, authorization, conflicts, and informed consent at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on dual agency disclosure, authorization, conflicts, and informed consent.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Applied exercise
+## Unit 031 — Designated dual agency structure, limits, and supervision
 
-Analyze a North Carolina transaction involving **recording**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Type:** Instruction
 
-### Scored check and remediation
+**Learning objective:** Identify and document designated dual agency structure, limits, and supervision at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 013 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on designated dual agency structure, limits, and supervision.
 
-## Unit 014 — Title evidence
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-Module: NCB-03 · Proposed clock hours: 1 · Content layer: NC-TTL
+## Unit 032 — Subagency, cooperation, referrals, and out-of-state broker interaction
 
-### Learning objectives
+**Type:** Instruction
 
-By the end of this unit, the student can:
+**Learning objective:** Calculate or evaluate subagency, cooperation, referrals, and out-of-state broker interaction at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-1. explain **title evidence** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on subagency, cooperation, referrals, and out-of-state broker interaction.
 
-### Instructional lesson
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Rule and purpose.** Title evidence is studied within Title, legal descriptions, and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 033 — Agency contract terms, termination, compensation, and surviving duties
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Type:** Instruction
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Compare and apply agency contract terms, termination, compensation, and surviving duties at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on agency contract terms, termination, compensation, and surviving duties.
 
-### Applied exercise
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-Analyze a North Carolina transaction involving **title evidence**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 034 — Material-fact identification and disclosure within agency practice
 
-### Scored check and remediation
+**Type:** Instruction
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 014 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Explain and apply material-fact identification and disclosure within agency practice at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-## Unit 015 — Transfer
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on material-fact identification and disclosure within agency practice.
 
-Module: NCB-03 · Proposed clock hours: 1 · Content layer: NC-TTL
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 035 — Advertising, solicitation, antitrust, fair competition, and brokerage risk controls
 
-By the end of this unit, the student can:
+**Type:** Instruction
 
-1. explain **transfer** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Distinguish and analyze advertising, solicitation, antitrust, fair competition, and brokerage risk controls at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Instructional lesson
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on advertising, solicitation, antitrust, fair competition, and brokerage risk controls.
 
-**Rule and purpose.** Transfer is studied within Title, legal descriptions, and transfer. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 036 — Integrated North Carolina agency selection, disclosure, and conflict-resolution case
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Type:** Instruction
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Identify and document integrated north carolina agency selection, disclosure, and conflict-resolution case at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Applied exercise
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on integrated north carolina agency selection, disclosure, and conflict-resolution case.
 
-Analyze a North Carolina transaction involving **transfer**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Scored check and remediation
+# NCB-08 — Contracts and closing
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 015 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Course hours:** 18
 
-## NCB-04 — Land use and environmental matters
+**NCREC recommended hours:** 18
 
-Authority mapping: Current NCREC syllabus
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-## Unit 016 — Government powers
+## Unit 037 — Contract classifications, essential elements, capacity, consideration, and lawful purpose
 
-Module: NCB-04 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Explain and apply contract classifications, essential elements, capacity, consideration, and lawful purpose at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on contract classifications, essential elements, capacity, consideration, and lawful purpose.
 
-1. explain **government powers** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 038 — Offer, acceptance, counteroffer, revocation, rejection, and communication
 
-**Rule and purpose.** Government powers is studied within Land use and environmental matters. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Type:** Instruction
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Distinguish and analyze offer, acceptance, counteroffer, revocation, rejection, and communication at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on offer, acceptance, counteroffer, revocation, rejection, and communication.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Applied exercise
+## Unit 039 — Reality of consent: mistake, misrepresentation, fraud, duress, and undue influence
 
-Analyze a North Carolina transaction involving **government powers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Type:** Instruction
 
-### Scored check and remediation
+**Learning objective:** Identify and document reality of consent: mistake, misrepresentation, fraud, duress, and undue influence at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 016 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on reality of consent: mistake, misrepresentation, fraud, duress, and undue influence.
 
-## Unit 017 — Zoning
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-Module: NCB-04 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 040 — Statute of Frauds, electronic signatures, assignment, novation, and interpretation
 
-### Learning objectives
+**Type:** Instruction
 
-By the end of this unit, the student can:
+**Learning objective:** Calculate or evaluate statute of frauds, electronic signatures, assignment, novation, and interpretation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-1. explain **zoning** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on statute of frauds, electronic signatures, assignment, novation, and interpretation.
 
-### Instructional lesson
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Rule and purpose.** Zoning is studied within Land use and environmental matters. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 041 — Performance, discharge, breach, damages, rescission, and specific performance
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Type:** Instruction
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Compare and apply performance, discharge, breach, damages, rescission, and specific performance at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on performance, discharge, breach, damages, rescission, and specific performance.
 
-### Applied exercise
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-Analyze a North Carolina transaction involving **zoning**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 042 — North Carolina Offer to Purchase and Contract structure and paragraph navigation
 
-### Scored check and remediation
+**Type:** Instruction
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 017 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Explain and apply north carolina offer to purchase and contract structure and paragraph navigation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-## Unit 018 — Subdivision
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on north carolina offer to purchase and contract structure and paragraph navigation.
 
-Module: NCB-04 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 043 — Due diligence fee, earnest money deposit, escrow, and trust-account handling
 
-By the end of this unit, the student can:
+**Type:** Instruction
 
-1. explain **subdivision** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Distinguish and analyze due diligence fee, earnest money deposit, escrow, and trust-account handling at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Instructional lesson
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on due diligence fee, earnest money deposit, escrow, and trust-account handling.
 
-**Rule and purpose.** Subdivision is studied within Land use and environmental matters. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 044 — Property description, fixtures, personal property, and possession provisions
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Type:** Instruction
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Identify and document property description, fixtures, personal property, and possession provisions at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Applied exercise
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on property description, fixtures, personal property, and possession provisions.
 
-Analyze a North Carolina transaction involving **subdivision**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Scored check and remediation
+## Unit 045 — Financing, appraisal, loan assumption, and sale-of-other-property issues
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 018 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Type:** Instruction
 
-## Unit 019 — Private controls
+**Learning objective:** Calculate or evaluate financing, appraisal, loan assumption, and sale-of-other-property issues at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Module: NCB-04 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on financing, appraisal, loan assumption, and sale-of-other-property issues.
 
-### Learning objectives
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 046 — Due diligence period, inspections, repairs, risk of loss, and termination rights
 
-1. explain **private controls** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Type:** Instruction
 
-### Instructional lesson
+**Learning objective:** Compare and apply due diligence period, inspections, repairs, risk of loss, and termination rights at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Rule and purpose.** Private controls is studied within Land use and environmental matters. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on due diligence period, inspections, repairs, risk of loss, and termination rights.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 047 — Common addenda, disclosures, backups, and contract-document control
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Explain and apply common addenda, disclosures, backups, and contract-document control at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **private controls**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on common addenda, disclosures, backups, and contract-document control.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 019 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 048 — Contract formation chronology, delivery, notice, dates, and deadline management
 
-## Unit 020 — Environmental issues
+**Type:** Instruction
 
-Module: NCB-04 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Learning objective:** Distinguish and analyze contract formation chronology, delivery, notice, dates, and deadline management at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on contract formation chronology, delivery, notice, dates, and deadline management.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **environmental issues** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 049 — Title examination, surveys, restrictive covenants, liens, and closing due diligence
 
-### Instructional lesson
+**Type:** Instruction
 
-**Rule and purpose.** Environmental issues is studied within Land use and environmental matters. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Identify and document title examination, surveys, restrictive covenants, liens, and closing due diligence at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on title examination, surveys, restrictive covenants, liens, and closing due diligence.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 050 — Attorney, lender, broker, settlement agent, and recording roles in North Carolina
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **environmental issues**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Calculate or evaluate attorney, lender, broker, settlement agent, and recording roles in north carolina at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on attorney, lender, broker, settlement agent, and recording roles in north carolina.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 020 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## NCB-05 — Brokerage relationships and agency
+## Unit 051 — Closing disclosure, settlement figures, prorations, debits, credits, and broker review
 
-Authority mapping: Current NCREC syllabus
+**Type:** Instruction
 
-## Unit 021 — Agency formation
+**Learning objective:** Compare and apply closing disclosure, settlement figures, prorations, debits, credits, and broker review at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Module: NCB-05 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on closing disclosure, settlement figures, prorations, debits, credits, and broker review.
 
-### Learning objectives
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 052 — Broker responsibilities before and after settlement, possession, and file retention
 
-1. explain **agency formation** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Type:** Instruction
 
-### Instructional lesson
+**Learning objective:** Explain and apply broker responsibilities before and after settlement, possession, and file retention at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Rule and purpose.** Agency formation is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on broker responsibilities before and after settlement, possession, and file retention.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 053 — Unauthorized practice of law, drafting limits, prohibited conduct, and escalation
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Distinguish and analyze unauthorized practice of law, drafting limits, prohibited conduct, and escalation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **agency formation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on unauthorized practice of law, drafting limits, prohibited conduct, and escalation.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 021 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 054 — Integrated North Carolina contract-to-closing transaction case
 
-## Unit 022 — Duties
+**Type:** Instruction
 
-Module: NCB-05 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Learning objective:** Identify and document integrated north carolina contract-to-closing transaction case at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on integrated north carolina contract-to-closing transaction case.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **duties** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+# NCB-09 — Real estate financing and settlement
 
-### Instructional lesson
+**Course hours:** 7
 
-**Rule and purpose.** Duties is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**NCREC recommended hours:** 7
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 055 — Promissory notes, mortgages, deeds of trust, priority, default, and foreclosure
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Instruction
 
-### Applied exercise
+**Learning objective:** Explain and apply promissory notes, mortgages, deeds of trust, priority, default, and foreclosure at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-Analyze a North Carolina transaction involving **duties**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on promissory notes, mortgages, deeds of trust, priority, default, and foreclosure.
 
-### Scored check and remediation
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 022 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 056 — Primary and secondary mortgage markets, loan origination, and underwriting
 
-## Unit 023 — Working With Real Estate Agents disclosure
+**Type:** Instruction
 
-Module: NCB-05 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Learning objective:** Distinguish and analyze primary and secondary mortgage markets, loan origination, and underwriting at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on primary and secondary mortgage markets, loan origination, and underwriting.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **working with real estate agents disclosure** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 057 — Conventional loans, private mortgage insurance, and qualification standards
 
-### Instructional lesson
+**Type:** Instruction
 
-**Rule and purpose.** Working With Real Estate Agents disclosure is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Identify and document conventional loans, private mortgage insurance, and qualification standards at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on conventional loans, private mortgage insurance, and qualification standards.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 058 — FHA, VA, USDA, seller financing, assumptions, and alternative financing
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **working with real estate agents disclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Calculate or evaluate fha, va, usda, seller financing, assumptions, and alternative financing at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on fha, va, usda, seller financing, assumptions, and alternative financing.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 023 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## Unit 024 — Dual agency
+## Unit 059 — Loan-to-value, debt ratios, interest, points, payments, and finance calculations
 
-Module: NCB-05 · Proposed clock hours: 1 · Content layer: NC-AGY
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Compare and apply loan-to-value, debt ratios, interest, points, payments, and finance calculations at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on loan-to-value, debt ratios, interest, points, payments, and finance calculations.
 
-1. explain **dual agency** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 060 — Federal lending laws, fair lending, TILA, ECOA, TRID, and RESPA
 
-**Rule and purpose.** Dual agency is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Type:** Instruction
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Explain and apply federal lending laws, fair lending, tila, ecoa, trid, and respa at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on federal lending laws, fair lending, tila, ecoa, trid, and respa.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Applied exercise
+## Unit 061 — Loan process, settlement disclosures, servicing, and financing-risk case
 
-Analyze a North Carolina transaction involving **dual agency**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Type:** Instruction
 
-### Scored check and remediation
+**Learning objective:** Distinguish and analyze loan process, settlement disclosures, servicing, and financing-risk case at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 024 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on loan process, settlement disclosures, servicing, and financing-risk case.
 
-## Unit 025 — Termination
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-Module: NCB-05 · Proposed clock hours: 1 · Content layer: NC-AGY
+# NCB-10 — Real property valuation and appraisal
 
-### Learning objectives
+**Course hours:** 6
 
-By the end of this unit, the student can:
+**NCREC recommended hours:** 6
 
-1. explain **termination** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-### Instructional lesson
+## Unit 062 — Value, price, cost, market forces, and appraisal regulation
 
-**Rule and purpose.** Termination is studied within Brokerage relationships and agency. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Type:** Instruction
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Explain and apply value, price, cost, market forces, and appraisal regulation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on value, price, cost, market forces, and appraisal regulation.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Applied exercise
+## Unit 063 — Highest and best use, substitution, contribution, conformity, and anticipation
 
-Analyze a North Carolina transaction involving **termination**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Type:** Instruction
 
-### Scored check and remediation
+**Learning objective:** Distinguish and analyze highest and best use, substitution, contribution, conformity, and anticipation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 025 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on highest and best use, substitution, contribution, conformity, and anticipation.
 
-## NCB-06 — Contract law
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-Authority mapping: Current NCREC syllabus
+## Unit 064 — Appraisal process, data collection, reconciliation, and report orientation
 
-## Unit 026 — Formation
+**Type:** Instruction
 
-Module: NCB-06 · Proposed clock hours: 1 · Content layer: NC-CON
+**Learning objective:** Identify and document appraisal process, data collection, reconciliation, and report orientation at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Learning objectives
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on appraisal process, data collection, reconciliation, and report orientation.
 
-By the end of this unit, the student can:
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-1. explain **formation** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 065 — Sales comparison approach and adjustment analysis
 
-### Instructional lesson
+**Type:** Instruction
 
-**Rule and purpose.** Formation is studied within Contract law. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Calculate or evaluate sales comparison approach and adjustment analysis at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** Resolve a calculation or decision in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on sales comparison approach and adjustment analysis.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 066 — Cost approach, depreciation, land value, and replacement or reproduction cost
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **formation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Compare and apply cost approach, depreciation, land value, and replacement or reproduction cost at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Prepare a broker-escalation record for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on cost approach, depreciation, land value, and replacement or reproduction cost.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 026 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## Unit 027 — Capacity and consideration
+## Unit 067 — Income approach, capitalization, gross rent multiplier, CMA, and BPO boundaries
 
-Module: NCB-06 · Proposed clock hours: 1 · Content layer: NC-CON
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Explain and apply income approach, capitalization, gross rent multiplier, cma, and bpo boundaries at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on income approach, capitalization, gross rent multiplier, cma, and bpo boundaries.
 
-1. explain **capacity and consideration** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+# NCB-11 — Fair housing and anti-discrimination
 
-**Rule and purpose.** Capacity and consideration is studied within Contract law. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Course hours:** 2
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**NCREC recommended hours:** 1.5
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 068 — Federal Fair Housing Act protected classes, prohibited conduct, exemptions, and enforcement
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **capacity and consideration**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Explain and apply federal fair housing act protected classes, prohibited conduct, exemptions, and enforcement at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on federal fair housing act protected classes, prohibited conduct, exemptions, and enforcement.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 027 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## Unit 028 — Statute of Frauds
+## Unit 069 — North Carolina anti-discrimination duties, advertising, disability requests, and applied case
 
-Module: NCB-06 · Proposed clock hours: 1 · Content layer: NC-CON
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Distinguish and analyze north carolina anti-discrimination duties, advertising, disability requests, and applied case at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on north carolina anti-discrimination duties, advertising, disability requests, and applied case.
 
-1. explain **statute of frauds** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+# NCB-12 — Landlord, tenant, and property management
 
-**Rule and purpose.** Statute of Frauds is studied within Contract law. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Course hours:** 3
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**NCREC recommended hours:** 3.5
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Authority:** NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 070 — North Carolina landlord-tenant duties, leases, remedies, and residential protections
 
-### Applied exercise
+**Type:** Instruction
 
-Analyze a North Carolina transaction involving **statute of frauds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Explain and apply north carolina landlord-tenant duties, leases, remedies, and residential protections at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-### Scored check and remediation
+**Applied activity / control:** Classify the facts in a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on north carolina landlord-tenant duties, leases, remedies, and residential protections.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 028 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-## Unit 029 — Performance
+## Unit 071 — Tenant Security Deposit Act, Vacation Rental Act, trust money, and accounting
 
-Module: NCB-06 · Proposed clock hours: 1 · Content layer: NC-CON
+**Type:** Instruction
 
-### Learning objectives
+**Learning objective:** Distinguish and analyze tenant security deposit act, vacation rental act, trust money, and accounting at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-By the end of this unit, the student can:
+**Applied activity / control:** Build an issue log for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on tenant security deposit act, vacation rental act, trust money, and accounting.
 
-1. explain **performance** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 072 — Property-management agreements, agency duties, maintenance, risk, and integrated case
 
-**Rule and purpose.** Performance is studied within Contract law. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Type:** Instruction
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Identify and document property-management agreements, agency duties, maintenance, risk, and integrated case at the instructional level prescribed by the NCREC syllabus and within an entry-level North Carolina broker's scope.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity / control:** Complete a document review for a realistic North Carolina buyer, seller, property, agency, finance, or closing scenario focused on property-management agreements, agency duties, maintenance, risk, and integrated case.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** Complete the explanation, definitions, cited North Carolina authority, worked example, interaction, scored item, feedback, and alternate remediation before submission release.
 
-### Applied exercise
+# NCB-13 — Proctored end-of-course examination
 
-Analyze a North Carolina transaction involving **performance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Course hours:** 3
 
-### Scored check and remediation
+**NCREC recommended hours:** 3
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 029 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Authority:** 21 NCAC 58H .0207 and NCREC Broker Prelicensing Course Syllabus
 
-## Unit 030 — Breach/remedies
+## Unit 073 — Secure closed-book proctored examination — session one
 
-Module: NCB-06 · Proposed clock hours: 1 · Content layer: NC-CON
+**Type:** Secure end-of-course examination
 
-### Learning objectives
+**Learning objective:** Demonstrate comprehensive mastery of the Commission-prescribed Broker Prelicensing subjects under the approved identity, security, and proctoring procedure.
 
-By the end of this unit, the student can:
+**Applied activity / control:** No instructional content, hints, feedback, remediation, or answer review occurs during this secure examination block.
 
-1. explain **breach/remedies** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 074 — Secure closed-book proctored examination — session two
 
-### Instructional lesson
+**Type:** Secure end-of-course examination
 
-**Rule and purpose.** Breach/remedies is studied within Contract law. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Demonstrate comprehensive mastery of the Commission-prescribed Broker Prelicensing subjects under the approved identity, security, and proctoring procedure.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity / control:** No instructional content, hints, feedback, remediation, or answer review occurs during this secure examination block.
 
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 075 — Secure closed-book proctored examination — session three and submission
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Type:** Secure end-of-course examination
 
-### Applied exercise
+**Learning objective:** Demonstrate comprehensive mastery of the Commission-prescribed Broker Prelicensing subjects under the approved identity, security, and proctoring procedure.
 
-Analyze a North Carolina transaction involving **breach/remedies**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 030 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-07 — North Carolina sales contracts and forms
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 031 — Offer to Purchase and Contract
-
-Module: NCB-07 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **offer to purchase and contract** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Offer to Purchase and Contract is studied within North Carolina sales contracts and forms. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **offer to purchase and contract**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 031 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 032 — Contingencies
-
-Module: NCB-07 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **contingencies** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Contingencies is studied within North Carolina sales contracts and forms. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **contingencies**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 032 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 033 — Addenda
-
-Module: NCB-07 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **addenda** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Addenda is studied within North Carolina sales contracts and forms. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **addenda**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 033 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 034 — Counteroffers
-
-Module: NCB-07 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **counteroffers** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Counteroffers is studied within North Carolina sales contracts and forms. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **counteroffers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 034 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 035 — Transaction file
-
-Module: NCB-07 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **transaction file** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Transaction file is studied within North Carolina sales contracts and forms. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **transaction file**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 035 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-08 — Real estate finance
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 036 — Notes/security instruments
-
-Module: NCB-08 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **notes/security instruments** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Notes/security instruments is studied within Real estate finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **notes/security instruments**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 036 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 037 — Loan types
-
-Module: NCB-08 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **loan types** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Loan types is studied within Real estate finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **loan types**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 037 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 038 — Qualification
-
-Module: NCB-08 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **qualification** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Qualification is studied within Real estate finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **qualification**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 038 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 039 — Interest/amortization
-
-Module: NCB-08 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **interest/amortization** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Interest/amortization is studied within Real estate finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **interest/amortization**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 039 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 040 — Default
-
-Module: NCB-08 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **default** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Default is studied within Real estate finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **default**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 040 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-09 — Valuation and brokerage pricing
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 041 — Value principles
-
-Module: NCB-09 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **value principles** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Value principles is studied within Valuation and brokerage pricing. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **value principles**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 041 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 042 — Sales comparison
-
-Module: NCB-09 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **sales comparison** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Sales comparison is studied within Valuation and brokerage pricing. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **sales comparison**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 042 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 043 — Cost
-
-Module: NCB-09 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **cost** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Cost is studied within Valuation and brokerage pricing. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **cost**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 043 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 044 — Income
-
-Module: NCB-09 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **income** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Income is studied within Valuation and brokerage pricing. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **income**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 044 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 045 — CMA versus appraisal
-
-Module: NCB-09 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **cma versus appraisal** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** CMA versus appraisal is studied within Valuation and brokerage pricing. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **cma versus appraisal**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 045 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-10 — Real estate calculations
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 046 — Area/acreage
-
-Module: NCB-10 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **area/acreage** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Area/acreage is studied within Real estate calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **area/acreage**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 046 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 047 — Commission
-
-Module: NCB-10 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **commission** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Commission is studied within Real estate calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **commission**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 047 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 048 — Taxes
-
-Module: NCB-10 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **taxes** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Taxes is studied within Real estate calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **taxes**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 048 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 049 — Prorations
-
-Module: NCB-10 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **prorations** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Prorations is studied within Real estate calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **prorations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 049 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 050 — Loan calculations
-
-Module: NCB-10 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **loan calculations** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Loan calculations is studied within Real estate calculations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **loan calculations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 050 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-11 — Fair housing and consumer protection
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 051 — Federal/NC fair housing
-
-Module: NCB-11 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **federal/nc fair housing** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Federal/NC fair housing is studied within Fair housing and consumer protection. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **federal/nc fair housing**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 051 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 052 — Advertising
-
-Module: NCB-11 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **advertising** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Advertising is studied within Fair housing and consumer protection. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **advertising**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 052 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 053 — Disability
-
-Module: NCB-11 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **disability** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Disability is studied within Fair housing and consumer protection. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **disability**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 053 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 054 — Disclosure
-
-Module: NCB-11 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **disclosure** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Disclosure is studied within Fair housing and consumer protection. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **disclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 054 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 055 — Consumer case
-
-Module: NCB-11 · Proposed clock hours: 1 · Content layer: NC-FH
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **consumer case** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Consumer case is studied within Fair housing and consumer protection. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **consumer case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 055 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-12 — Leasing and property management
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 056 — Lease estates
-
-Module: NCB-12 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **lease estates** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Lease estates is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **lease estates**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 056 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 057 — Residential rental law
-
-Module: NCB-12 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **residential rental law** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Residential rental law is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **residential rental law**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 057 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 058 — Management agreements
-
-Module: NCB-12 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **management agreements** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Management agreements is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **management agreements**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 058 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 059 — Deposits
-
-Module: NCB-12 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **deposits** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Deposits is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **deposits**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 059 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 060 — Operations
-
-Module: NCB-12 · Proposed clock hours: 1 · Content layer: NC-PM
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **operations** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Operations is studied within Leasing and property management. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **operations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 060 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-13 — Construction, insurance, and property condition
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 061 — Construction vocabulary
-
-Module: NCB-13 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **construction vocabulary** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Construction vocabulary is studied within Construction, insurance, and property condition. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **construction vocabulary**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 061 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 062 — Systems
-
-Module: NCB-13 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **systems** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Systems is studied within Construction, insurance, and property condition. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **systems**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 062 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 063 — Insurance
-
-Module: NCB-13 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **insurance** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Insurance is studied within Construction, insurance, and property condition. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **insurance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 063 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 064 — Inspections
-
-Module: NCB-13 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **inspections** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Inspections is studied within Construction, insurance, and property condition. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **inspections**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 064 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 065 — Condition disclosures
-
-Module: NCB-13 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **condition disclosures** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Condition disclosures is studied within Construction, insurance, and property condition. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **condition disclosures**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 065 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-14 — Closing, settlement, and taxation
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 066 — Closing process
-
-Module: NCB-14 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **closing process** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Closing process is studied within Closing, settlement, and taxation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **closing process**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 066 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 067 — Settlement documents
-
-Module: NCB-14 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **settlement documents** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Settlement documents is studied within Closing, settlement, and taxation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **settlement documents**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 067 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 068 — Trust funds
-
-Module: NCB-14 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **trust funds** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Trust funds is studied within Closing, settlement, and taxation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **trust funds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 068 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 069 — Prorations
-
-Module: NCB-14 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **prorations** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Prorations is studied within Closing, settlement, and taxation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **prorations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 069 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 070 — Tax orientation
-
-Module: NCB-14 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **tax orientation** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Tax orientation is studied within Closing, settlement, and taxation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **tax orientation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 070 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## NCB-15 — Integrated North Carolina brokerage practice
-
-Authority mapping: Current NCREC syllabus
-
-## Unit 071 — Seller file
-
-Module: NCB-15 · Proposed clock hours: 1 · Content layer: NC-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **seller file** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Seller file is studied within Integrated North Carolina brokerage practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **seller file**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 071 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 072 — Buyer file
-
-Module: NCB-15 · Proposed clock hours: 1 · Content layer: NC-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **buyer file** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Buyer file is studied within Integrated North Carolina brokerage practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **buyer file**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 072 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 073 — Agency case
-
-Module: NCB-15 · Proposed clock hours: 1 · Content layer: NC-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **agency case** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Agency case is studied within Integrated North Carolina brokerage practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **agency case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 073 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 074 — Contract-to-closing case
-
-Module: NCB-15 · Proposed clock hours: 1 · Content layer: NC-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **contract-to-closing case** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Contract-to-closing case is studied within Integrated North Carolina brokerage practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **contract-to-closing case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 074 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 075 — Final review/remediation
-
-Module: NCB-15 · Proposed clock hours: 1 · Content layer: NC-specific
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **final review/remediation** with accurate entry-level professional vocabulary;
-2. apply it to a North Carolina transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Final review/remediation is studied within Integrated North Carolina brokerage practice. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**North Carolina layer.** Apply Current NCREC syllabus and the controlled North Carolina source register. A national concept may be reused for explanation, but North Carolina terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a North Carolina transaction involving **final review/remediation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 075 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity / control:** No instructional content, hints, feedback, remediation, or answer review occurs during this secure examination block.

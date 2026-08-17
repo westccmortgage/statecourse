@@ -13,6 +13,6 @@
 - Approved instructor: {{instructor_name}} / {{instructor_approval_number}}
 - Final result when required: {{final_result}}
 - Certificate ID and verification: {{certificate_id}} / {{verification_url}}
-- Authorized signature: {{authorized_signatory}}
+- Education director signature: {{education_director_signature}}
 
-State-specific mandatory fields from the issued course approval are added before activation. A paid order cannot issue this certificate.
+Rule-required fields are the course, completion date, student, and instructor. Additional StateCourse verification fields are retained only if accepted by NCREC. A paid order cannot issue this certificate.

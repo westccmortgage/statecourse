@@ -2183,10 +2183,14 @@
       },
       "required_hours": 75,
       "delivery": {
-        "mode": "asynchronous_distance_proposed",
+        "mode": "self_paced_distance_proposed",
         "approval_pending": true,
+        "approval_scope": "Specific NCREC approval required for this course and this delivery method",
         "active_time_server_authoritative": true,
         "instructional_minutes_per_clock_hour": 50,
+        "time_study_method": "225 words per minute plus actual audio/video duration",
+        "full_regulator_review_copy_required": true,
+        "every_unit_and_assessment_required": true,
         "idle_time_excluded": true,
         "tab_hidden_time_excluded": true,
         "disconnected_time_excluded": true,
@@ -2199,35 +2203,67 @@
         "state_approved_method_pending": true,
         "username_password_alone_sufficient": null,
         "ip_session_device_audit": true,
-        "exam_proctoring": "Proctored, closed-book, identity-verified end-of-course examination"
+        "exam_proctoring": "Comprehensive closed-book proctored final; approved identity/security procedure pending"
       },
       "instructor": {
         "assigned_instructor_id": null,
         "approval_required": true,
-        "assignment_required_for_enrollment": true
+        "assignment_required_for_enrollment": true,
+        "required_controls": [
+          "active_non_provisional_NC_broker_license",
+          "active_status_education_current",
+          "60_accredited_semester_hours",
+          "qualifying_recent_experience_path",
+          "instructor_approval_exam_passed",
+          "New_Instructor_Seminar_within_six_months",
+          "15_minute_teaching_block_completed"
+        ]
       },
       "assessment": {
         "formative_checks": true,
         "remediation_required": true,
-        "final_forms": 1,
-        "questions_per_form": 100,
-        "bank_ratio": 1,
+        "final_hours_in_course": 3,
+        "final_forms": null,
+        "questions_per_form": null,
+        "bank_ratio": null,
         "passing_percent": 75,
-        "passing_percent_source": "regulatory_or_current_application",
+        "passing_percent_source": "21_NCAC_58H_0207_and_NCREC_syllabus",
+        "comprehensive": true,
+        "closed_book": true,
+        "proctored": true,
+        "retake_attempts": null,
+        "production_bank_status": "not_started_release_gate",
+        "written_confirmation_gates": [
+          "item_count",
+          "bank_ratio",
+          "retake_attempts",
+          "retest_interval",
+          "approved_remote_proctor_procedure"
+        ],
         "secure_bank_public": false
       },
       "reporting": {
-        "state_workflow": "Completion report within seven calendar days; prior-month course summary by the fifth day; exact roster fields and audit trail retained.",
+        "state_workflow": "Education director submits completion report within seven calendar days and prior-month Prelicensing summary by the fifth day.",
+        "completion_report_days": 7,
+        "monthly_summary_due_day": 5,
         "automated_events": true
       },
       "records": {
-        "state_rule": "Three years: enrollment/attendance, every graded exam and answer, master exam/key, evaluations, advertising, delivery certification, PPD, schedules, materials, and required reports.",
+        "state_rule": "21 NCAC 58H .0208: three-year retention of enrollment/attendance, each graded final and answer sheet, master final/key/course dates/instructor, evaluations, advertisements, delivery certifications, official publications/PPD, schedules, student materials, signed receipts and consents.",
+        "retention_years": 3,
         "append_only_completion_audit": true,
         "exact_course_version_required": true
       },
       "certificate": {
         "enabled": false,
         "template": "nc-broker-prelicensing-75-v1-draft",
+        "education_director_signature_required": true,
+        "required_fields": [
+          "course",
+          "completion_date",
+          "student",
+          "instructor"
+        ],
         "valid_approval_required": true,
         "valid_instructor_required": true
       },
@@ -2240,136 +2276,153 @@
       "modules": [
         {
           "id": "NCB-01",
-          "title": "License law and brokerage regulation",
-          "hours": 5,
-          "authority": "Current NCREC Broker Prelicensing syllabus",
+          "title": "North Carolina licensure",
+          "hours": 2,
+          "recommended_hours": 2,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
           "national_core": []
         },
         {
           "id": "NCB-02",
-          "title": "Property concepts and ownership",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-OWN"
-          ]
+          "title": "Basic real estate concepts",
+          "hours": 1,
+          "recommended_hours": 1,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-03",
-          "title": "Title, legal descriptions, and transfer",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-TTL"
-          ]
+          "title": "Property characteristics, description, and use",
+          "hours": 4,
+          "recommended_hours": 4,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-04",
-          "title": "Land use and environmental matters",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-OWN"
-          ]
+          "title": "Property ownership types and transfers",
+          "hours": 6,
+          "recommended_hours": 6,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-05",
-          "title": "Brokerage relationships and agency",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-AGY"
-          ]
+          "title": "Property disclosures and environmental issues",
+          "hours": 6,
+          "recommended_hours": 6,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-06",
-          "title": "Contract law",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-CON"
-          ]
+          "title": "Property taxation and insurance",
+          "hours": 4,
+          "recommended_hours": 4,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-07",
-          "title": "North Carolina sales contracts and forms",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-CON"
-          ]
+          "title": "Agency and brokerage relationships",
+          "hours": 13,
+          "recommended_hours": 13,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-08",
-          "title": "Real estate finance",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-FIN"
-          ]
+          "title": "Contracts and closing",
+          "hours": 18,
+          "recommended_hours": 18,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-09",
-          "title": "Valuation and brokerage pricing",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-VAL"
-          ]
+          "title": "Real estate financing and settlement",
+          "hours": 7,
+          "recommended_hours": 7,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-10",
-          "title": "Real estate calculations",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-FIN"
-          ]
+          "title": "Real property valuation and appraisal",
+          "hours": 6,
+          "recommended_hours": 6,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-11",
-          "title": "Fair housing and consumer protection",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-FH"
-          ]
+          "title": "Fair housing and anti-discrimination",
+          "hours": 2,
+          "recommended_hours": 1.5,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-12",
-          "title": "Leasing and property management",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-PM"
-          ]
+          "title": "Landlord, tenant, and property management",
+          "hours": 3,
+          "recommended_hours": 3.5,
+          "type": "instruction",
+          "authority": "NCREC Broker Prelicensing Course Syllabus, March 2024 edition; 21 NCAC 58H",
+          "national_core": []
         },
         {
           "id": "NCB-13",
-          "title": "Construction, insurance, and property condition",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-OWN"
-          ]
-        },
-        {
-          "id": "NCB-14",
-          "title": "Closing, settlement, and taxation",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
-          "national_core": [
-            "NC-TTL"
-          ]
-        },
-        {
-          "id": "NCB-15",
-          "title": "Integrated North Carolina brokerage practice",
-          "hours": 5,
-          "authority": "Current NCREC syllabus",
+          "title": "Proctored end-of-course examination",
+          "hours": 3,
+          "recommended_hours": 3,
+          "type": "exam",
+          "authority": "21 NCAC 58H .0207 and NCREC Broker Prelicensing Course Syllabus",
           "national_core": []
         }
-      ]
+      ],
+      "content": {
+        "blueprint_hours": 75,
+        "instructional_hours": 72,
+        "end_of_course_exam_hours": 3,
+        "blueprint_status": "complete_development_draft",
+        "commission_syllabus_mapping": "complete_development_draft",
+        "student_manuscripts_status": "not_complete",
+        "formative_item_bank_status": "not_complete",
+        "secure_final_bank_status": "not_complete",
+        "time_study_status": "not_complete",
+        "commission_acceptance": "pending"
+      },
+      "fees": {
+        "provider_initial_per_location": 200,
+        "prelicense_course_per_branch_location": 40,
+        "provider_renewal_per_location": 100,
+        "prelicense_course_renewal": 25,
+        "instructor_application": null,
+        "instructor_fee_confirmation_required": true,
+        "currency": "USD",
+        "verified_at": "2026-08-17"
+      },
+      "renewal": {
+        "provider_expiration": "June 30 annually",
+        "provider_statutory_filing_deadline": "June 1",
+        "course_expiration": "June 30 annually",
+        "course_original_application_after_renewals": 2,
+        "instructor_expiration": "June 30 annually",
+        "instructor_renewal_window_days": 45,
+        "instructor_development_hours": 6
+      }
     },
     "co-real-estate-law-practice-48-v1": {
       "schema_version": "3.0",

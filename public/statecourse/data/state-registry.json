@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_regulatory_review": "2026-08-16",
+  "last_regulatory_review": "2026-08-17",
   "statuses": [
     "Not Started",
     "Coming Soon",
@@ -981,11 +981,12 @@
       "final_exam_rules": "Proctored, closed-book, identity-verified end-of-course examination; minimum 75% passing.",
       "proctoring_rules": "Approved proctoring with identity verification and closed-book security for distance/blended/synchronous delivery.",
       "certificate_rules": "Course completion certificate and exact 7-day regulator roster/report event configured.",
-      "notes": "75-hour Broker Prelicensing v1.0. Asynchronous Prelicensing is configured under the current 58H rules; synchronous attendance includes the July 1, 2026 camera-visibility requirement.",
+      "notes": "One 75-hour Broker Prelicensing course. March 2024 NCREC syllabus recommends 72 subject hours plus a three-hour comprehensive final. Self-paced distance requires specific course/delivery approval, full reviewer copy and 225-wpm/audio-video time study. Every unit/assessment, 75% proctored closed-book final, 180-day completion, three-year records, seven-day completion report and day-five monthly summary are configured. Not approved; enrollment disabled.",
       "public_status": "In Development",
       "course_ids": [
         "nc-broker-prelicensing-75"
-      ]
+      ],
+      "last_regulatory_review": "2026-08-17"
     },
     {
       "state_name": "North Dakota",

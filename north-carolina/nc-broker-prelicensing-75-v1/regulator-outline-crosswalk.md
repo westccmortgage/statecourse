@@ -1,22 +1,20 @@
-# North Carolina Broker Prelicensing 75h — Regulator Outline Crosswalk
+# North Carolina Broker Prelicensing 75h v1.0 — NCREC Syllabus Crosswalk
 
-| Regulator subject / authority | StateCourse module | Hours | Evidence |
-|---|---|---:|---|
-| Current NCREC Broker Prelicensing syllabus | NCB-01 — License law and brokerage regulation | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-02 — Property concepts and ownership | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-03 — Title, legal descriptions, and transfer | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-04 — Land use and environmental matters | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-05 — Brokerage relationships and agency | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-06 — Contract law | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-07 — North Carolina sales contracts and forms | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-08 — Real estate finance | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-09 — Valuation and brokerage pricing | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-10 — Real estate calculations | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-11 — Fair housing and consumer protection | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-12 — Leasing and property management | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-13 — Construction, insurance, and property condition | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-14 — Closing, settlement, and taxation | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Current NCREC syllabus | NCB-15 — Integrated North Carolina brokerage practice | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-|  | **Total** | **75** |  |
+| NCREC major subject | StateCourse module / unit records | Proposed hours | Recommended hours | Evidence |
+|---|---|---:|---:|---|
+| North Carolina licensure | NCB-01, Units 1–2 | 2 | 2 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Basic real estate concepts | NCB-02, Units 3–3 | 1 | 1 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Property characteristics, description, and use | NCB-03, Units 4–7 | 4 | 4 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Property ownership types and transfers | NCB-04, Units 8–13 | 6 | 6 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Property disclosures and environmental issues | NCB-05, Units 14–19 | 6 | 6 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Property taxation and insurance | NCB-06, Units 20–23 | 4 | 4 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Agency and brokerage relationships | NCB-07, Units 24–36 | 13 | 13 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Contracts and closing | NCB-08, Units 37–54 | 18 | 18 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Real estate financing and settlement | NCB-09, Units 55–61 | 7 | 7 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Real property valuation and appraisal | NCB-10, Units 62–67 | 6 | 6 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Fair housing and anti-discrimination | NCB-11, Units 68–69 | 2 | 1.5 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Landlord, tenant, and property management | NCB-12, Units 70–72 | 3 | 3.5 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+| Proctored end-of-course examination | NCB-13, Units 73–75 | 3 | 3 | Timed outline; objective/activity blueprint; manuscript and assessment gates |
+|  | **Total** | **75** | **75** | Complete course-level blueprint |
 
-The filing reviewer must compare this table to a dated snapshot of the regulator's current outline. StateCourse allocations remain proposed until accepted.
+Filing QA must compare every unit to a dated, checksummed copy of the complete NCREC Broker Prelicensing Course Syllabus, including its required activities, referenced resources and instructional levels.

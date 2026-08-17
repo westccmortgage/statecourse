@@ -795,85 +795,110 @@
       "enrollment_enabled": false,
       "route": "/real-estate/north-carolina/pre-license/broker/",
       "regulator": "North Carolina Real Estate Commission",
-      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "delivery": "Self-paced distance proposed; separate NCREC delivery-method approval required",
       "modules": [
         {
           "id": "NCB-01",
-          "title": "License law and brokerage regulation",
-          "hours": 5
+          "title": "North Carolina licensure",
+          "hours": 2,
+          "recommended_hours": 2,
+          "type": "instruction"
         },
         {
           "id": "NCB-02",
-          "title": "Property concepts and ownership",
-          "hours": 5
+          "title": "Basic real estate concepts",
+          "hours": 1,
+          "recommended_hours": 1,
+          "type": "instruction"
         },
         {
           "id": "NCB-03",
-          "title": "Title, legal descriptions, and transfer",
-          "hours": 5
+          "title": "Property characteristics, description, and use",
+          "hours": 4,
+          "recommended_hours": 4,
+          "type": "instruction"
         },
         {
           "id": "NCB-04",
-          "title": "Land use and environmental matters",
-          "hours": 5
+          "title": "Property ownership types and transfers",
+          "hours": 6,
+          "recommended_hours": 6,
+          "type": "instruction"
         },
         {
           "id": "NCB-05",
-          "title": "Brokerage relationships and agency",
-          "hours": 5
+          "title": "Property disclosures and environmental issues",
+          "hours": 6,
+          "recommended_hours": 6,
+          "type": "instruction"
         },
         {
           "id": "NCB-06",
-          "title": "Contract law",
-          "hours": 5
+          "title": "Property taxation and insurance",
+          "hours": 4,
+          "recommended_hours": 4,
+          "type": "instruction"
         },
         {
           "id": "NCB-07",
-          "title": "North Carolina sales contracts and forms",
-          "hours": 5
+          "title": "Agency and brokerage relationships",
+          "hours": 13,
+          "recommended_hours": 13,
+          "type": "instruction"
         },
         {
           "id": "NCB-08",
-          "title": "Real estate finance",
-          "hours": 5
+          "title": "Contracts and closing",
+          "hours": 18,
+          "recommended_hours": 18,
+          "type": "instruction"
         },
         {
           "id": "NCB-09",
-          "title": "Valuation and brokerage pricing",
-          "hours": 5
+          "title": "Real estate financing and settlement",
+          "hours": 7,
+          "recommended_hours": 7,
+          "type": "instruction"
         },
         {
           "id": "NCB-10",
-          "title": "Real estate calculations",
-          "hours": 5
+          "title": "Real property valuation and appraisal",
+          "hours": 6,
+          "recommended_hours": 6,
+          "type": "instruction"
         },
         {
           "id": "NCB-11",
-          "title": "Fair housing and consumer protection",
-          "hours": 5
+          "title": "Fair housing and anti-discrimination",
+          "hours": 2,
+          "recommended_hours": 1.5,
+          "type": "instruction"
         },
         {
           "id": "NCB-12",
-          "title": "Leasing and property management",
-          "hours": 5
+          "title": "Landlord, tenant, and property management",
+          "hours": 3,
+          "recommended_hours": 3.5,
+          "type": "instruction"
         },
         {
           "id": "NCB-13",
-          "title": "Construction, insurance, and property condition",
-          "hours": 5
-        },
-        {
-          "id": "NCB-14",
-          "title": "Closing, settlement, and taxation",
-          "hours": 5
-        },
-        {
-          "id": "NCB-15",
-          "title": "Integrated North Carolina brokerage practice",
-          "hours": 5
+          "title": "Proctored end-of-course examination",
+          "hours": 3,
+          "recommended_hours": 3,
+          "type": "exam"
         }
       ],
-      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+      "public_notice": "Development: verified North Carolina controls and a 75-hour syllabus blueprint are complete. Student manuscripts, formative items, secure final, time study, approved instructor and accepted self-paced delivery remain release gates. Not approved; enrollment, payment and credit are unavailable.",
+      "regulatory_summary": {
+        "subject_hours": 72,
+        "proctored_final_hours": 3,
+        "passing_percent": 75,
+        "completion_days": 180,
+        "records_years": 3,
+        "completion_report_days": 7,
+        "monthly_summary_due_day": 5
+      }
     },
     {
       "course_id": "co-real-estate-law-practice-48-v1",
