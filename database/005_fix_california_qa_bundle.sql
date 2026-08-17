@@ -64,7 +64,7 @@ begin
         enrollment_id,student_id,course_id,course_version,resume_path
       ) values(
         v_enrollment,p_student_id,v_course,'1.0',
-        '/student/course/?enrollment_id='||v_enrollment::text
+        '/student-course.html?enrollment_id='||v_enrollment::text
       ) on conflict(enrollment_id) do nothing;
 
       insert into final_exam_authorizations(

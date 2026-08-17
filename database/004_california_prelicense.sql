@@ -381,7 +381,7 @@ begin
       insert into lms_compliance_state(enrollment_id,required_study_seconds,credited_study_seconds)
       values(v_enrollment,162000,0);
       insert into student_portal_state(enrollment_id,student_id,course_id,course_version,resume_path)
-      values(v_enrollment,p_student_id,v_course,'1.0','/student/course/?enrollment_id='||v_enrollment::text)
+      values(v_enrollment,p_student_id,v_course,'1.0','/student-course.html?enrollment_id='||v_enrollment::text)
       on conflict(enrollment_id) do nothing;
       insert into final_exam_authorizations(enrollment_id,student_id,course_id,course_version)
       values(v_enrollment,p_student_id,v_course,'1.0')
@@ -427,7 +427,7 @@ begin
     'ca-mortgage-loan-brokering-lending-45'
   ) then return new; end if;
   insert into student_portal_state(enrollment_id,student_id,course_id,course_version,resume_path)
-  values(new.id,new.student_id,new.course_id,new.course_version,'/student/course/?enrollment_id='||new.id::text)
+  values(new.id,new.student_id,new.course_id,new.course_version,'/student-course.html?enrollment_id='||new.id::text)
   on conflict(enrollment_id) do nothing;
   insert into final_exam_authorizations(enrollment_id,student_id,course_id,course_version)
   values(new.id,new.student_id,new.course_id,new.course_version)
