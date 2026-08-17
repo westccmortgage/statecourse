@@ -11,7 +11,7 @@ const introReplay = document.querySelector("#introReplay");
 const introCaptions = document.querySelector("#statecourseIntroCaptions");
 const introConfig = {
   videoId: "statecourse-national-introduction",
-  src: new URL("media/statecourse-intro.mp4", platformRoot).href,
+  src: "https://statecourse.com/media/statecourse-intro.mp4",
   poster: new URL("media/statecourse-intro-poster.webp", platformRoot).href,
   captions: new URL("media/statecourse-intro.vtt", platformRoot).href,
   regulatedInstruction: false,

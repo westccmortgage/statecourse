@@ -1,7 +1,7 @@
 {
   "version": 1,
   "videoId": "statecourse-national-introduction",
-  "src": "media/statecourse-intro.mp4",
+  "src": "https://statecourse.com/media/statecourse-intro.mp4",
   "poster": "media/statecourse-intro-poster.webp",
   "captions": "media/statecourse-intro.vtt",
   "preload": "none",
