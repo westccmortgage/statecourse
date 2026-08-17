@@ -102,6 +102,11 @@
   status = 200
 
 [[redirects]]
+  from = "/student/register"
+  to = "/student/register/index.html"
+  status = 200
+
+[[redirects]]
   from = "/student/course"
   to = "/student-course.html"
   status = 200
@@ -114,6 +119,11 @@
 [[redirects]]
   from = "/api/student/session"
   to = "/.netlify/functions/student-session"
+  status = 200
+
+[[redirects]]
+  from = "/api/student/register"
+  to = "/.netlify/functions/student-register"
   status = 200
 
 [[redirects]]
