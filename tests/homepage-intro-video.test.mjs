@@ -14,9 +14,18 @@ test("homepage keeps the licensing finder ahead of the introduction video",async
   assert.match(html,/preload="none"/);
   assert.match(html,/playsinline/);
   assert.doesNotMatch(html,/<video[^>]+\ssrc=/);
+  assert.match(html,/href="https:\/\/statecourse\.com\/media\/statecourse-intro\.mp4"/);
   assert.match(html,/Read Transcript/);
   assert.match(html,/Explore State Requirements/);
   assert.match(html,/never counts toward regulated course time or completion/i);
+});
+
+test("video source is CDN-backed while poster and captions remain configurable",async()=>{
+  const config=JSON.parse(await read("public/statecourse/data/homepage-video.json"));
+  assert.equal(config.src,"https://statecourse.com/media/statecourse-intro.mp4");
+  assert.equal(config.poster,"media/statecourse-intro-poster.webp");
+  assert.equal(config.captions,"media/statecourse-intro.vtt");
+  assert.equal(config.preload,"none");
 });
 
 test("production video is preserved and poster is lightweight",async()=>{
