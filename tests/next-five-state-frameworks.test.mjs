@@ -10,8 +10,8 @@ const courses = [
   ["arizona/az-contract-writing-6-v1", "AZ", 6, 40],
   ["washington/wa-real-estate-fundamentals-60-v1", "WA", 60, 0],
   ["washington/wa-real-estate-practices-30-v1", "WA", 30, 0],
-  ["pennsylvania/pa-real-estate-fundamentals-30-v1", "PA", 30, 75],
-  ["pennsylvania/pa-real-estate-practice-45-v1", "PA", 45, 90],
+  ["pennsylvania/pa-real-estate-fundamentals-30-v1", "PA", 30, 0],
+  ["pennsylvania/pa-real-estate-practice-45-v1", "PA", 45, 0],
   ["north-carolina/nc-broker-prelicensing-75-v1", "NC", 75, 100],
   ["colorado/co-real-estate-law-practice-48-v1", "CO", 48, 96],
   ["colorado/co-contracts-regulations-48-v1", "CO", 48, 96],
@@ -77,6 +77,10 @@ test("state-specific regulatory controls are not promoted to national defaults",
   assert.equal(controls.states["nc-broker-prelicensing-75-v1"].delivery.enrollment_validity_days, 180);
   assert.equal(controls.states["az-salesperson-prelicense-90-v1"].identity.username_password_alone_sufficient, false);
   assert.equal(controls.states["pa-real-estate-fundamentals-30-v1"].assessment.passing_percent, null);
+  assert.equal(controls.states["pa-real-estate-fundamentals-30-v1"].assessment.questions_per_form, null);
+  assert.equal(controls.states["pa-real-estate-fundamentals-30-v1"].records.retention_years, 10);
+  assert.equal(controls.states["pa-real-estate-practice-45-v1"].assessment.questions_per_form, null);
+  assert.equal(controls.states["pa-real-estate-practice-45-v1"].records.retention_years, 10);
   assert.equal(controls.states["co-current-legal-issues-8-v1"].assessment.passing_percent, null);
   assert.equal(controls.states["wa-real-estate-fundamentals-60-v1"].assessment.questions_per_form, 180);
   assert.equal(controls.states["wa-real-estate-practices-30-v1"].assessment.questions_per_form, 90);

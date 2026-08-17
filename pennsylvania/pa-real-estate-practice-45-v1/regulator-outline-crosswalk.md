@@ -1,17 +1,16 @@
-# Pennsylvania Real Estate Practice 45h — Regulator Outline Crosswalk
+# Pennsylvania Real Estate Practice 45h v1.0 — Commission Outline Crosswalk
 
-| Regulator subject / authority | StateCourse module | Hours | Evidence |
+| Commission subject | StateCourse module / units | Proposed hours | Evidence |
 |---|---|---:|---|
-| Commission Real Estate Practice outline | PAP-01 — Pennsylvania license law and brokerage | 6 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-02 — Agency and consumer relationships | 6 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-03 — Listing practice | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-04 — Buyer practice | 5 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-05 — Pennsylvania contracts and forms | 7 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-06 — Financing practice | 4 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-07 — Closing and title practice | 4 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-08 — Leasing and property management | 3 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-09 — Fair housing and consumer protection | 3 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-| Commission Real Estate Practice outline | PAP-10 — Professional conduct and integrated practice | 2 | Timed outline; unit curriculum; quiz/remediation; final blueprint; instructor guide |
-|  | **Total** | **45** |  |
+| The real estate business | PAP-01, Units 1–4 | 4 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Law, ethics and consumer protection | PAP-02, Units 5–9 | 5 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Agency and consumer relationships | PAP-03, Units 10–15 | 6 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Homeownership and listing practice | PAP-04, Units 16–21 | 6 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Buyer practice and risk reduction | PAP-05, Units 22–26 | 5 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Agreement of sale and escrow | PAP-06, Units 27–33 | 7 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Residential financing | PAP-07, Units 34–38 | 5 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Valuation and appraisal | PAP-08, Units 39–41 | 3 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+| Closing the residential transaction | PAP-09, Units 42–45 | 4 | Timed outline; unit blueprint; objectives; activity and assessment-development records |
+|  | **Total** | **45** | Complete course-level blueprint |
 
-The filing reviewer must compare this table to a dated snapshot of the regulator's current outline. StateCourse allocations remain proposed until accepted.
+Filing QA must compare every blueprint topic to a dated snapshot of the complete Commission outline. Allocations become regulatory delivery commitments only after Commission acceptance.

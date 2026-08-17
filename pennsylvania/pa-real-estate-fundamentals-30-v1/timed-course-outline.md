@@ -1,18 +1,19 @@
 # Pennsylvania Real Estate Fundamentals 30h v1.0 — Timed Course Outline
 
-Status: **Development — not approved — enrollment disabled**  
-Official-source review: 2026-08-16
+**Development — not approved — enrollment disabled.**
+
+This StateCourse proposal contains 30 distinct clock-hour units. Each clock hour provides at least 50 minutes of instruction. Individual topic allocations are the provider's proposed implementation of the Commission outline, not Commission-assigned topic hours.
 
 | Module | Subject | Units | Hours | Controlling mapping |
 |---|---|---:|---:|---|
-| PAF-01 | Real estate law and legal concepts | 1–6 | 6 | Commission Real Estate Fundamentals outline |
-| PAF-02 | Interests, ownership, and legal descriptions | 7–11 | 5 | Commission Real Estate Fundamentals outline |
-| PAF-03 | Land use and environmental controls | 12–14 | 3 | Commission Real Estate Fundamentals outline |
-| PAF-04 | Valuation | 15–18 | 4 | Commission Real Estate Fundamentals outline |
-| PAF-05 | Finance | 19–23 | 5 | Commission Real Estate Fundamentals outline |
-| PAF-06 | Transfer and title | 24–26 | 3 | Commission Real Estate Fundamentals outline |
-| PAF-07 | Contract foundations | 27–28 | 2 | Commission Real Estate Fundamentals outline |
-| PAF-08 | Fair housing and real estate math | 29–30 | 2 | Commission Real Estate Fundamentals outline |
-|  | **Total** |  | **30** |  |
+| PAF-01 | Land, real estate and property | 1–3 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-02 | Public and private controls; environmental issues | 4–6 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-03 | Legal descriptions and interests in real estate | 7–10 | 4 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-04 | Forms of ownership | 11–13 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-05 | Transfer of title and title records | 14–18 | 5 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-06 | Principles of contract law | 19–21 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-07 | Principles of financing | 22–25 | 4 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-08 | Pennsylvania license law, rules and regulation | 26–30 | 5 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+|  | **Total** | **1–30** | **30** | 2 credits |
 
-Topic-hour allocations are StateCourse's submission proposal unless the cited regulator outline assigns them. They become regulatory delivery commitments only after acceptance. Final-examination time is excluded from instructional hours where the controlling state rule requires that separation.
+The required proctored final is outside these instructional hours in this development plan. Final duration, item count, passing score and attempt rules remain written Commission-confirmation gates.

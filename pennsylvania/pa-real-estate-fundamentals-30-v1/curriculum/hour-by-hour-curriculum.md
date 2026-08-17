@@ -1,965 +1,319 @@
-# Pennsylvania Real Estate Fundamentals 30h v1.0 — Unit-by-Unit Curriculum
+# Pennsylvania Real Estate Fundamentals 30h v1.0 — Unit-by-Unit Curriculum Blueprint
 
-**Development draft. No enrollment, credit, or certificate.**
+**Development draft — not approved and not a finished student textbook.**
 
-## PAF-01 — Real estate law and legal concepts
+This blueprint defines 30 distinct 50-minute instructional units. Topic-hour allocations are StateCourse's submission proposal mapped to the complete Commission Fundamentals outline; the Commission outline specifies required content but does not assign hours to its individual topics.
 
-Authority mapping: Commission Real Estate Fundamentals outline
+The required proctored final examination is outside the 30 instructional clock hours. The Commission materials reviewed do not state a numeric item count or passing score; those values remain Commission-confirmation and approval gates.
 
-## Unit 001 — Sources of law
+## Required delivery pattern
 
-Module: PAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+- source-grounded lesson manuscript and worked example;
+- scenario-based interactive activity with direct feedback;
+- server-authoritative active-time and inactivity exclusion;
+- scored progress check;
+- individual remediation and alternate assessment;
+- authenticated reviewer access;
+- immutable course-version and completion audit record.
 
-### Learning objectives
+## Module summary
 
-By the end of this unit, the student can:
+| Module | Units | Hours | Authority |
+|---|---:|---:|---|
+| PAF-01 — Land, real estate and property | 01–03 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-02 — Public and private controls; environmental issues | 04–06 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-03 — Legal descriptions and interests in real estate | 07–10 | 4 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-04 — Forms of ownership | 11–13 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-05 — Transfer of title and title records | 14–18 | 5 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-06 — Principles of contract law | 19–21 | 3 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-07 — Principles of financing | 22–25 | 4 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+| PAF-08 — Pennsylvania license law, rules and regulation | 26–30 | 5 | Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019) |
+|  | **1–30** | **30** |  |
 
-1. explain **sources of law** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+# PAF-01 — Land, real estate and property
 
-### Instructional lesson
+**Hours:** 3
 
-**Rule and purpose.** Sources of law is studied within Real estate law and legal concepts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 001 — Land, real estate, real property and personal property
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Explain and distinguish land, real estate, real property and personal property in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on land, real estate, real property and personal property.
 
-### Applied exercise
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Analyze a Pennsylvania transaction involving **sources of law**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 002 — Annexation, severance, manufactured housing and fixtures
 
-### Scored check and remediation
+**Learning objective:** Apply and document annexation, severance, manufactured housing and fixtures in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 001 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on annexation, severance, manufactured housing and fixtures.
 
-## Unit 002 — Real versus personal property
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Module: PAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 003 — Bundle of rights, surface, subsurface and air rights
 
-### Learning objectives
+**Learning objective:** Analyze and select bundle of rights, surface, subsurface and air rights in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-By the end of this unit, the student can:
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on bundle of rights, surface, subsurface and air rights.
 
-1. explain **real versus personal property** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+# PAF-02 — Public and private controls; environmental issues
 
-**Rule and purpose.** Real versus personal property is studied within Real estate law and legal concepts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Hours:** 3
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 004 — Sources of public controls and licensee obligations
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Explain and distinguish sources of public controls and licensee obligations in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Applied exercise
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on sources of public controls and licensee obligations.
 
-Analyze a Pennsylvania transaction involving **real versus personal property**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+## Unit 005 — Land-use controls, zoning, subdivision and building codes
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 002 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Apply and document land-use controls, zoning, subdivision and building codes in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-## Unit 003 — Fixtures
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on land-use controls, zoning, subdivision and building codes.
 
-Module: PAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 006 — Private controls, environmental laws and property hazards
 
-By the end of this unit, the student can:
+**Learning objective:** Analyze and select private controls, environmental laws and property hazards in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-1. explain **fixtures** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on private controls, environmental laws and property hazards.
 
-### Instructional lesson
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Rule and purpose.** Fixtures is studied within Real estate law and legal concepts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+# PAF-03 — Legal descriptions and interests in real estate
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Hours:** 4
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 007 — Metes and bounds, lot and block, rectangular survey and condominium descriptions
 
-### Applied exercise
+**Learning objective:** Explain and distinguish metes and bounds, lot and block, rectangular survey and condominium descriptions in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-Analyze a Pennsylvania transaction involving **fixtures**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on metes and bounds, lot and block, rectangular survey and condominium descriptions.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 003 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 008 — Government powers: police power, eminent domain, taxation and escheat
 
-## Unit 004 — Legal capacity
+**Learning objective:** Apply and document government powers: police power, eminent domain, taxation and escheat in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-Module: PAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on government powers: police power, eminent domain, taxation and escheat.
 
-### Learning objectives
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 009 — Freehold and leasehold estates; Pennsylvania landlord-tenant orientation
 
-1. explain **legal capacity** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Analyze and select freehold and leasehold estates; pennsylvania landlord-tenant orientation in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Instructional lesson
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on freehold and leasehold estates; pennsylvania landlord-tenant orientation.
 
-**Rule and purpose.** Legal capacity is studied within Real estate law and legal concepts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 010 — Liens, restrictions, easements, encroachments, licenses and water rights
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Compare and evaluate liens, restrictions, easements, encroachments, licenses and water rights in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Resolve the decision point in a realistic property, ownership, contract, financing or license-law scenario focused on liens, restrictions, easements, encroachments, licenses and water rights.
 
-### Applied exercise
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Analyze a Pennsylvania transaction involving **legal capacity**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+# PAF-04 — Forms of ownership
 
-### Scored check and remediation
+**Hours:** 3
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 004 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-## Unit 005 — Professional scope
+## Unit 011 — Severalty, joint tenancy, tenancy in common and tenancy by the entireties
 
-Module: PAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Learning objective:** Explain and distinguish severalty, joint tenancy, tenancy in common and tenancy by the entireties in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Learning objectives
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on severalty, joint tenancy, tenancy in common and tenancy by the entireties.
 
-By the end of this unit, the student can:
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-1. explain **professional scope** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 012 — Trust, partnership, corporation and limited-liability-company ownership
 
-### Instructional lesson
+**Learning objective:** Apply and document trust, partnership, corporation and limited-liability-company ownership in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-**Rule and purpose.** Professional scope is studied within Real estate law and legal concepts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on trust, partnership, corporation and limited-liability-company ownership.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 013 — Condominium, cooperative, timeshare and campground interests
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Analyze and select condominium, cooperative, timeshare and campground interests in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Applied exercise
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on condominium, cooperative, timeshare and campground interests.
 
-Analyze a Pennsylvania transaction involving **professional scope**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+# PAF-05 — Transfer of title and title records
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 005 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Hours:** 5
 
-## Unit 006 — Applied legal concepts
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-Module: PAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 014 — Deed types and appropriate transfer uses
 
-### Learning objectives
+**Learning objective:** Explain and distinguish deed types and appropriate transfer uses in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-By the end of this unit, the student can:
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on deed types and appropriate transfer uses.
 
-1. explain **applied legal concepts** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 015 — Essential deed elements, execution, delivery and acceptance
 
-**Rule and purpose.** Applied legal concepts is studied within Real estate law and legal concepts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Apply and document essential deed elements, execution, delivery and acceptance in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on essential deed elements, execution, delivery and acceptance.
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 016 — Voluntary and involuntary alienation; foreclosure and adverse possession
 
-### Applied exercise
+**Learning objective:** Analyze and select voluntary and involuntary alienation; foreclosure and adverse possession in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-Analyze a Pennsylvania transaction involving **applied legal concepts**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on voluntary and involuntary alienation; foreclosure and adverse possession.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 006 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 017 — Probate, wills, descent and distribution; estate and inheritance tax orientation
 
-## PAF-02 — Interests, ownership, and legal descriptions
+**Learning objective:** Compare and evaluate probate, wills, descent and distribution; estate and inheritance tax orientation in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-Authority mapping: Commission Real Estate Fundamentals outline
+**Applied activity:** Resolve the decision point in a realistic property, ownership, contract, financing or license-law scenario focused on probate, wills, descent and distribution; estate and inheritance tax orientation.
 
-## Unit 007 — Estates
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Module: PAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 018 — Recording, notice, chain of title, marketable title and title insurance
 
-### Learning objectives
+**Learning objective:** Identify and resolve recording, notice, chain of title, marketable title and title insurance in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-By the end of this unit, the student can:
+**Applied activity:** Prepare a broker-escalation record for a realistic property, ownership, contract, financing or license-law scenario focused on recording, notice, chain of title, marketable title and title insurance.
 
-1. explain **estates** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+# PAF-06 — Principles of contract law
 
-**Rule and purpose.** Estates is studied within Interests, ownership, and legal descriptions. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Hours:** 3
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 019 — Contract classifications, validity and essential elements
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Explain and distinguish contract classifications, validity and essential elements in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Applied exercise
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on contract classifications, validity and essential elements.
 
-Analyze a Pennsylvania transaction involving **estates**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+## Unit 020 — Statute of Frauds, parol evidence, limitations and performance
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 007 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Apply and document statute of frauds, parol evidence, limitations and performance in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-## Unit 008 — Concurrent ownership
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on statute of frauds, parol evidence, limitations and performance.
 
-Module: PAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 021 — Assignment, novation, discharge, breach and remedies
 
-By the end of this unit, the student can:
+**Learning objective:** Analyze and select assignment, novation, discharge, breach and remedies in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-1. explain **concurrent ownership** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on assignment, novation, discharge, breach and remedies.
 
-### Instructional lesson
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Rule and purpose.** Concurrent ownership is studied within Interests, ownership, and legal descriptions. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+# PAF-07 — Principles of financing
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Hours:** 4
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 022 — Primary market, secondary market and Federal Reserve orientation
 
-### Applied exercise
+**Learning objective:** Explain and distinguish primary market, secondary market and federal reserve orientation in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-Analyze a Pennsylvania transaction involving **concurrent ownership**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on primary market, secondary market and federal reserve orientation.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 008 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 023 — Promissory note and mortgage; parties and core provisions
 
-## Unit 009 — Easements
+**Learning objective:** Apply and document promissory note and mortgage; parties and core provisions in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-Module: PAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on promissory note and mortgage; parties and core provisions.
 
-### Learning objectives
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 024 — Repayment structures, interest, prepayment, acceleration and default
 
-1. explain **easements** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Analyze and select repayment structures, interest, prepayment, acceleration and default in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Instructional lesson
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on repayment structures, interest, prepayment, acceleration and default.
 
-**Rule and purpose.** Easements is studied within Interests, ownership, and legal descriptions. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 025 — Recording priority, foreclosure, deficiency judgments and redemption
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Compare and evaluate recording priority, foreclosure, deficiency judgments and redemption in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Resolve the decision point in a realistic property, ownership, contract, financing or license-law scenario focused on recording priority, foreclosure, deficiency judgments and redemption.
 
-### Applied exercise
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Analyze a Pennsylvania transaction involving **easements**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+# PAF-08 — Pennsylvania license law, rules and regulation
 
-### Scored check and remediation
+**Hours:** 5
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 009 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Authority:** Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)
 
-## Unit 010 — Liens
+## Unit 026 — RELRA definitions, application, exclusions and Commission authority
 
-Module: PAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Learning objective:** Explain and distinguish relra definitions, application, exclusions and commission authority in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Learning objectives
+**Applied activity:** Classify the facts in a realistic property, ownership, contract, financing or license-law scenario focused on relra definitions, application, exclusions and commission authority.
 
-By the end of this unit, the student can:
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-1. explain **liens** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 027 — License qualifications, applications, status, renewal and employment changes
 
-### Instructional lesson
+**Learning objective:** Apply and document license qualifications, applications, status, renewal and employment changes in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-**Rule and purpose.** Liens is studied within Interests, ownership, and legal descriptions. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Build an issue-and-authority log for a realistic property, ownership, contract, financing or license-law scenario focused on license qualifications, applications, status, renewal and employment changes.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 028 — Real estate office operation, broker supervision and general licensee duties
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Analyze and select real estate office operation, broker supervision and general licensee duties in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-### Applied exercise
+**Applied activity:** Complete a source and document review for a realistic property, ownership, contract, financing or license-law scenario focused on real estate office operation, broker supervision and general licensee duties.
 
-Analyze a Pennsylvania transaction involving **liens**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+## Unit 029 — Consumer relationships, disclosures, escrow and prohibited conduct
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 010 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Compare and evaluate consumer relationships, disclosures, escrow and prohibited conduct in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-## Unit 011 — Legal descriptions
+**Applied activity:** Resolve the decision point in a realistic property, ownership, contract, financing or license-law scenario focused on consumer relationships, disclosures, escrow and prohibited conduct.
 
-Module: PAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 030 — Discipline, reporting, hearings and the Real Estate Recovery Fund
 
-By the end of this unit, the student can:
+**Learning objective:** Identify and resolve discipline, reporting, hearings and the real estate recovery fund in an entry-level Pennsylvania real estate scenario while remaining within the licensee's permitted professional role.
 
-1. explain **legal descriptions** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Prepare a broker-escalation record for a realistic property, ownership, contract, financing or license-law scenario focused on discipline, reporting, hearings and the real estate recovery fund.
 
-### Instructional lesson
-
-**Rule and purpose.** Legal descriptions is studied within Interests, ownership, and legal descriptions. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **legal descriptions**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 011 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## PAF-03 — Land use and environmental controls
-
-Authority mapping: Commission Real Estate Fundamentals outline
-
-## Unit 012 — Government powers
-
-Module: PAF-03 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **government powers** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Government powers is studied within Land use and environmental controls. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **government powers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 012 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 013 — Zoning and subdivision
-
-Module: PAF-03 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **zoning and subdivision** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Zoning and subdivision is studied within Land use and environmental controls. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **zoning and subdivision**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 013 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 014 — Environmental concerns
-
-Module: PAF-03 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **environmental concerns** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Environmental concerns is studied within Land use and environmental controls. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **environmental concerns**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 014 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## PAF-04 — Valuation
-
-Authority mapping: Commission Real Estate Fundamentals outline
-
-## Unit 015 — Value principles
-
-Module: PAF-04 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **value principles** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Value principles is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **value principles**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 015 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 016 — Sales comparison
-
-Module: PAF-04 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **sales comparison** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Sales comparison is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **sales comparison**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 016 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 017 — Cost approach
-
-Module: PAF-04 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **cost approach** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Cost approach is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **cost approach**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 017 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 018 — Income approach
-
-Module: PAF-04 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **income approach** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Income approach is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **income approach**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 018 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## PAF-05 — Finance
-
-Authority mapping: Commission Real Estate Fundamentals outline
-
-## Unit 019 — Notes and mortgages
-
-Module: PAF-05 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **notes and mortgages** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Notes and mortgages is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **notes and mortgages**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 019 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 020 — Loan markets
-
-Module: PAF-05 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **loan markets** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Loan markets is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **loan markets**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 020 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 021 — Qualification
-
-Module: PAF-05 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **qualification** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Qualification is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **qualification**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 021 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 022 — Interest and amortization
-
-Module: PAF-05 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **interest and amortization** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Interest and amortization is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **interest and amortization**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 022 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 023 — Default and foreclosure
-
-Module: PAF-05 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **default and foreclosure** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Default and foreclosure is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **default and foreclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 023 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## PAF-06 — Transfer and title
-
-Authority mapping: Commission Real Estate Fundamentals outline
-
-## Unit 024 — Deeds
-
-Module: PAF-06 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **deeds** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Deeds is studied within Transfer and title. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **deeds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 024 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 025 — Recording and title evidence
-
-Module: PAF-06 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **recording and title evidence** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Recording and title evidence is studied within Transfer and title. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **recording and title evidence**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 025 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 026 — Voluntary/involuntary transfer
-
-Module: PAF-06 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **voluntary/involuntary transfer** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Voluntary/involuntary transfer is studied within Transfer and title. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **voluntary/involuntary transfer**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 026 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## PAF-07 — Contract foundations
-
-Authority mapping: Commission Real Estate Fundamentals outline
-
-## Unit 027 — Formation and performance
-
-Module: PAF-07 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **formation and performance** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Formation and performance is studied within Contract foundations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **formation and performance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 027 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 028 — Breach and remedies
-
-Module: PAF-07 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **breach and remedies** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Breach and remedies is studied within Contract foundations. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **breach and remedies**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 028 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## PAF-08 — Fair housing and real estate math
-
-Authority mapping: Commission Real Estate Fundamentals outline
-
-## Unit 029 — Federal fair housing
-
-Module: PAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **federal fair housing** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Federal fair housing is studied within Fair housing and real estate math. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **federal fair housing**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 029 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 030 — Core transaction calculations
-
-Module: PAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **core transaction calculations** with accurate entry-level professional vocabulary;
-2. apply it to a Pennsylvania transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Core transaction calculations is studied within Fair housing and real estate math. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Pennsylvania layer.** Apply Commission Real Estate Fundamentals outline and the controlled Pennsylvania source register. A national concept may be reused for explanation, but Pennsylvania terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Pennsylvania transaction involving **core transaction calculations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 030 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, current cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.

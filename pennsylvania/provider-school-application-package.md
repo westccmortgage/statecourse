@@ -1,43 +1,52 @@
-# Pennsylvania Provider, School, Instructor, and Course Application Package
+# Pennsylvania Education Provider Application Package
 
-## Filing order
+**Development assembly — not filed and not approved.**
 
-1. Confirm entity eligibility and regulator account/portal.
-2. File Initial Real Estate Education Provider Approval with ownership, administrators/director, location/delivery, financial/bond, catalog, enrollment agreement, refund/cancellation, records, and advertising exhibits required by the current form.
-3. File each instructor separately with qualification evidence and course scope.
-4. File every regulatory course separately with the exact title, hours, outline, curriculum, objectives, materials, assessments, final/key, evaluation, certificate, delivery method, reviewer access, and policies.
-5. Record regulator corrections, approval number, effective date, expiration, approved delivery method, instructor scope, and renewal schedule before public activation.
+## Filing ledger
 
-## Current form/fee register
+| Filing | Current form | Fee shown by current form | StateCourse exhibit status |
+|---|---|---:|---|
+| Initial Education Provider | 04/2024 | $120 | Form pending business/facility data |
+| Owner approval | 10/2024 | $75 standalone; no separate fee with initial provider filing | Resume, two original references and background check pending |
+| Director approval | 10/2024 | $75 standalone; no separate fee with initial provider filing | Director identity/resume/background check pending |
+| Surety bond | current Commission instrument | $10,000 penal sum | Carrier and executed instrument pending |
+| Instructor approval | 04/2024 | $20 per application | Instructor unassigned; qualification evidence pending |
+| Fundamentals distance course | 04/2024 | $25 | Separate package in development |
+| Practice distance course | 04/2024 | $25 | Separate package in development |
+| Failed-inspection reinspection | provider form | $65 if needed | Contingency only; out-of-state providers are not inspected under current form |
 
-- Application for Initial Real Estate Education Provider Approval (rev. 04/2024)
-- Education Provider Owner Approval
-- Education Provider Director Approval
-- Real Estate Education Provider Surety Bond
-- Real Estate Instructor Approval Application
-- Distance Education Course Approval Application — filed separately for Fundamentals and Practice
+## Initial provider exhibits
 
-## Current fee register
+1. Proposed education-provider name and Commission acceptability review.
+2. Entity formation/authority and fictitious-name documents, if applicable.
+3. Main administrative location, records location and exclusive publicly listed telephone.
+4. Full location diagram, including offices, classrooms if any, restrooms, entries, halls, doors, windows and capacities.
+5. Designated custodian of records for termination.
+6. Owner package(s), top five if more than five owners/officers/partners.
+7. Director package and day-to-day compliance responsibility acknowledgment.
+8. Executed $10,000 bond.
+9. Out-of-state education-provider approval from home jurisdiction, if applicable.
+10. Student enrollment agreement.
+11. Pennsylvania-specific tuition/refund/termination policy.
+12. Sample official transcript.
 
-| Filing | Current amount | Control note |
-|---|---:|---|
-| Initial Education Provider | $120 | Current initial provider application rev. 04/2024. |
-| Owner approval | $75 standalone | No separate fee when included with initial provider application. |
-| Director approval | $75 standalone | No separate fee when included with initial provider application. |
-| Instructor approval | $20 | Per current instructor application. |
-| Distance Education course | $25 per course | Fundamentals and Practice filed separately. |
-| Failed inspection / reinspection | $65 | Where applicable. |
-| Annual renewal | $375 provider + $15 instructor + $15 each course | Renewal due by October 31; satellite fee $15 if applicable. |
-| Surety bond | $10,000 bond amount | Bond amount, not Commission fee. |
+## Owner package
 
-Fees are point-in-time regulatory data. The administrator must attach the filing-day official fee page or portal receipt; the platform does not silently reuse an old amount.
+- current Commission form for each required owner/officer/partner;
+- detailed education-provider/college ownership, administration or teaching résumé;
+- two signed, dated original reference letters;
+- residence-state police background check received by Commission within 180 days;
+- conviction exhibits when applicable;
+- approval and effective/renewal metadata kept separate from provider status.
 
-## Required submission exhibits
+## Director package
 
-- official-source register and compliance matrix;
-- entity, owner, administrator/director, school/location, bond/financial, and agent exhibits as applicable;
-- course application and regulator-outline crosswalk for each course;
-- complete student/instructor materials, timed outline, objectives, activities, assessments, remediation, secure final, and answer key;
-- identity, attendance/time, inactivity, support, accessibility, technical, security, proctor/reviewer, records, certificate, reporting, evaluation, complaint, refund/cancellation, and change-control policies;
-- instructor approval file and assignment;
-- regulator correction log and final version manifest.
+- current Commission form;
+- detailed teaching, supervision and education-administration résumé addressing instructor evaluation, curriculum/content evaluation, exam analysis, records and facilities;
+- residence-state police background check within 180 days;
+- outgoing director resignation letter if changing an existing director;
+- no course release until director approval is recorded.
+
+## Renewal control
+
+Renew annually no later than October 31 with director's notarized compliance certification, upcoming-period $10,000 bond evidence and current fee. The 04/2024 provider form lists $375 provider, $15 satellite, $15 instructor and $15 course renewal fees; filing staff reverify on renewal day.

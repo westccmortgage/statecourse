@@ -1132,7 +1132,7 @@
       "final_exam_rules": "Separate proctored finals for 30h Fundamentals and 45h Practice. No passing percentage is invented where the controlling source does not specify it.",
       "proctoring_rules": "Prelicense final examinations proctored under 49 Pa. Code § 35.358.",
       "certificate_rules": "Separate transcript/completion evidence for each course, exact course/version/approval fields, issuance disabled pending approval.",
-      "notes": "Two separate approval records: Real Estate Fundamentals 30h v1.0 and Real Estate Practice 45h v1.0. $10,000 surety bond and owner/director/provider approvals are separate gates.",
+      "notes": "Separate development records: 30-hour / 2-credit Fundamentals and 45-hour / 3-credit Practice. Verified controls include 50-minute clock hours, Commission-outline conformity, approved distance method, proctored final per course, director-signed transcript within 30 days and 10-year prelicense attendance/scholastic retention. Numeric exam rules remain written-confirmation gates. No approval or enrollment claim.",
       "public_status": "In Development",
       "course_ids": [
         "pa-real-estate-fundamentals-30",

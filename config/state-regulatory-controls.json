@@ -1783,13 +1783,17 @@
         "concurrent_sessions": false,
         "sequential_units": true,
         "reviewer_bypass_isolated": true,
-        "enrollment_validity_days": null
+        "enrollment_validity_days": null,
+        "regulatory_basis": "49 Pa. Code §§ 35.201 and 35.358; current Commission Distance Education Course Application",
+        "method_approval_required": "ARELLO/IDECC or other Commission-approved comparable certifying body",
+        "reviewer_credentials_required": true,
+        "inactivity_exclusion": true
       },
       "identity": {
         "state_approved_method_pending": true,
         "username_password_alone_sufficient": null,
         "ip_session_device_audit": true,
-        "exam_proctoring": "Proctored prelicense final under 49 Pa. Code § 35.358"
+        "exam_proctoring": "Required for each prelicense course under 49 Pa. Code § 35.358(b)(2); approved procedure pending"
       },
       "instructor": {
         "assigned_instructor_id": null,
@@ -1800,20 +1804,22 @@
         "formative_checks": true,
         "remediation_required": true,
         "final_forms": 1,
-        "questions_per_form": 75,
-        "bank_ratio": 1,
+        "questions_per_form": null,
+        "bank_ratio": null,
         "passing_percent": null,
-        "passing_percent_source": "not_specified_release_gate",
-        "secure_bank_public": false
+        "passing_percent_source": "not_stated_in_verified_sources_written_confirmation_required",
+        "secure_bank_public": false,
+        "production_bank_status": "not_started_release_gate"
       },
       "reporting": {
-        "state_workflow": "Commission inspection/audit access, transcripts/certificates, instructor/course/provider renewal records, and change notices.",
+        "state_workflow": "Director-signed official prelicense transcript within 30 days under §§ 35.359–35.360; records available to student and Commission; annual provider renewal due by October 31.",
         "automated_events": true
       },
       "records": {
-        "state_rule": "Provider administrative, course, financial, scholastic, transcript, examination, and completion records under 49 Pa. Code Chapter 35; retention duration is a filing-confirmation gate where the cited rule does not state a numeric term.",
+        "state_rule": "49 Pa. Code § 35.360: complete financial, facility, personnel, curriculum, scholastic and attendance records; prelicense attendance and scholastic records retained 10 years.",
         "append_only_completion_audit": true,
-        "exact_course_version_required": true
+        "exact_course_version_required": true,
+        "retention_years": 10
       },
       "certificate": {
         "enabled": false,
@@ -1830,78 +1836,87 @@
       "modules": [
         {
           "id": "PAF-01",
-          "title": "Real estate law and legal concepts",
-          "hours": 6,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "title": "Land, real estate and property",
+          "hours": 3,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-OWN"
           ]
         },
         {
           "id": "PAF-02",
-          "title": "Interests, ownership, and legal descriptions",
-          "hours": 5,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "title": "Public and private controls; environmental issues",
+          "hours": 3,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-OWN"
           ]
         },
         {
           "id": "PAF-03",
-          "title": "Land use and environmental controls",
-          "hours": 3,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "title": "Legal descriptions and interests in real estate",
+          "hours": 4,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-OWN"
           ]
         },
         {
           "id": "PAF-04",
-          "title": "Valuation",
-          "hours": 4,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "title": "Forms of ownership",
+          "hours": 3,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-VAL"
           ]
         },
         {
           "id": "PAF-05",
-          "title": "Finance",
+          "title": "Transfer of title and title records",
           "hours": 5,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-FIN"
           ]
         },
         {
           "id": "PAF-06",
-          "title": "Transfer and title",
+          "title": "Principles of contract law",
           "hours": 3,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-TTL"
           ]
         },
         {
           "id": "PAF-07",
-          "title": "Contract foundations",
-          "hours": 2,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "title": "Principles of financing",
+          "hours": 4,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-CON"
           ]
         },
         {
           "id": "PAF-08",
-          "title": "Fair housing and real estate math",
-          "hours": 2,
-          "authority": "Commission Real Estate Fundamentals outline",
+          "title": "Pennsylvania license law, rules and regulation",
+          "hours": 5,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Fundamentals outline (final draft January 28, 2019)",
           "national_core": [
             "NC-FH",
             "NC-FIN"
           ]
         }
-      ]
+      ],
+      "content": {
+        "blueprint_units": 30,
+        "blueprint_status": "complete_development_draft",
+        "commission_outline_mapping": "complete_development_draft",
+        "student_manuscripts_status": "not_complete",
+        "formative_item_bank_status": "not_complete",
+        "secure_final_bank_status": "not_complete",
+        "commission_acceptance": "pending"
+      }
     },
     "pa-real-estate-practice-45-v1": {
       "schema_version": "3.0",
@@ -1982,13 +1997,17 @@
         "concurrent_sessions": false,
         "sequential_units": true,
         "reviewer_bypass_isolated": true,
-        "enrollment_validity_days": null
+        "enrollment_validity_days": null,
+        "regulatory_basis": "49 Pa. Code §§ 35.201 and 35.358; current Commission Distance Education Course Application",
+        "method_approval_required": "ARELLO/IDECC or other Commission-approved comparable certifying body",
+        "reviewer_credentials_required": true,
+        "inactivity_exclusion": true
       },
       "identity": {
         "state_approved_method_pending": true,
         "username_password_alone_sufficient": null,
         "ip_session_device_audit": true,
-        "exam_proctoring": "Proctored prelicense final under 49 Pa. Code § 35.358"
+        "exam_proctoring": "Required for each prelicense course under 49 Pa. Code § 35.358(b)(2); approved procedure pending"
       },
       "instructor": {
         "assigned_instructor_id": null,
@@ -1999,20 +2018,22 @@
         "formative_checks": true,
         "remediation_required": true,
         "final_forms": 1,
-        "questions_per_form": 90,
-        "bank_ratio": 1,
+        "questions_per_form": null,
+        "bank_ratio": null,
         "passing_percent": null,
-        "passing_percent_source": "not_specified_release_gate",
-        "secure_bank_public": false
+        "passing_percent_source": "not_stated_in_verified_sources_written_confirmation_required",
+        "secure_bank_public": false,
+        "production_bank_status": "not_started_release_gate"
       },
       "reporting": {
-        "state_workflow": "Commission inspection/audit access, transcripts/certificates, instructor/course/provider renewal records, and change notices.",
+        "state_workflow": "Director-signed official prelicense transcript within 30 days under §§ 35.359–35.360; records available to student and Commission; annual provider renewal due by October 31.",
         "automated_events": true
       },
       "records": {
-        "state_rule": "Provider administrative, course, financial, scholastic, transcript, examination, and completion records under 49 Pa. Code Chapter 35; retention duration is a filing-confirmation gate where the cited rule does not state a numeric term.",
+        "state_rule": "49 Pa. Code § 35.360: complete financial, facility, personnel, curriculum, scholastic and attendance records; prelicense attendance and scholastic records retained 10 years.",
         "append_only_completion_audit": true,
-        "exact_course_version_required": true
+        "exact_course_version_required": true,
+        "retention_years": 10
       },
       "certificate": {
         "enabled": false,
@@ -2029,93 +2050,93 @@
       "modules": [
         {
           "id": "PAP-01",
-          "title": "Pennsylvania license law and brokerage",
-          "hours": 6,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "The real estate business",
+          "hours": 4,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": []
         },
         {
           "id": "PAP-02",
-          "title": "Agency and consumer relationships",
-          "hours": 6,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "Law, ethics and consumer protection",
+          "hours": 5,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-AGY"
           ]
         },
         {
           "id": "PAP-03",
-          "title": "Listing practice",
-          "hours": 5,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "Agency and consumer relationships",
+          "hours": 6,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-AGY"
           ]
         },
         {
           "id": "PAP-04",
-          "title": "Buyer practice",
-          "hours": 5,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "Homeownership and listing practice",
+          "hours": 6,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-AGY"
           ]
         },
         {
           "id": "PAP-05",
-          "title": "Pennsylvania contracts and forms",
-          "hours": 7,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "Buyer practice and risk reduction",
+          "hours": 5,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-CON"
           ]
         },
         {
           "id": "PAP-06",
-          "title": "Financing practice",
-          "hours": 4,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "Agreement of sale and escrow",
+          "hours": 7,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-FIN"
           ]
         },
         {
           "id": "PAP-07",
-          "title": "Closing and title practice",
-          "hours": 4,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "Residential financing",
+          "hours": 5,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-TTL"
           ]
         },
         {
           "id": "PAP-08",
-          "title": "Leasing and property management",
+          "title": "Valuation and appraisal",
           "hours": 3,
-          "authority": "Commission Real Estate Practice outline",
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-PM"
           ]
         },
         {
           "id": "PAP-09",
-          "title": "Fair housing and consumer protection",
-          "hours": 3,
-          "authority": "Commission Real Estate Practice outline",
+          "title": "Closing the residential transaction",
+          "hours": 4,
+          "authority": "Pennsylvania State Real Estate Commission Real Estate Practice minimum course-content outline",
           "national_core": [
             "NC-FH"
           ]
-        },
-        {
-          "id": "PAP-10",
-          "title": "Professional conduct and integrated practice",
-          "hours": 2,
-          "authority": "Commission Real Estate Practice outline",
-          "national_core": [
-            "NC-AGY"
-          ]
         }
-      ]
+      ],
+      "content": {
+        "blueprint_units": 45,
+        "blueprint_status": "complete_development_draft",
+        "commission_outline_mapping": "complete_development_draft",
+        "student_manuscripts_status": "not_complete",
+        "formative_item_bank_status": "not_complete",
+        "secure_final_bank_status": "not_complete",
+        "commission_acceptance": "pending"
+      }
     },
     "nc-broker-prelicensing-75-v1": {
       "schema_version": "3.0",

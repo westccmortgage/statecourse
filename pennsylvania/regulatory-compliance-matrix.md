@@ -1,28 +1,33 @@
 # Pennsylvania Regulatory Compliance and Traceability Matrix
 
-Verified 2026-08-16. StateCourse design choices are labeled as provider proposals, never state mandates.
+Verified **2026-08-17**. StateCourse design choices are labeled as provider proposals, never Commission mandates.
 
-| Requirement | Controlling source | StateCourse evidence | Status |
+| Requirement | Official authority | StateCourse evidence | Current status |
 |---|---|---|---|
-| Provider / school | Initial Real Estate Education Provider Approval | Separate provider/school approval record, application index, ownership/administrator exhibits, status and dates | Development; filing gate |
-| Instructor | Current instructor rule/application | Separate instructor approval records and course assignments; no owner is presumed eligible | Unassigned; release gate |
-| Courses | Current state course rule and regulator outline | Pennsylvania Real Estate Fundamentals 30h (30h); Pennsylvania Real Estate Practice 45h (45h) | Separate v1.0 approval records |
-| Distance delivery | Current state distance rule/application | Distance delivery method approved by ARELLO/IDECC or another Commission-accepted body; prelicense final proctored. | Configured; acceptance pending |
-| Assessments | Course-specific rule/application | Versioned formative pools, remediation, secure finals and attempt audit | Draft; SME/psychometric/regulator review pending |
-| Identity / attendance | Course-specific distance standard | Authentication, no concurrent sessions, server time, inactivity exclusion, unit progression, assessment evidence, reviewer bypass isolation | Configured per course |
-| Certificate | Current state certificate/transcript rule | State/course/version/approval/instructor/student/hours/date and verification fields | Controlled template; issuance disabled |
-| Records | Current state rule | Provider administrative, course, financial, scholastic, transcript, examination, and completion records under 49 Pa. Code Chapter 35; retention duration is a filing-confirmation gate where the cited rule does not state a numeric term. | Data model and policy built |
-| Reporting | Current state rule/application | Commission inspection/audit access, transcripts/certificates, instructor/course/provider renewal records, and change notices. | Workflow configured; regulator credentials pending |
-| Renewal | Current approval lifecycle | Annual provider/instructor/course renewal due by October 31 using current Commission renewal process. | Independent approval dates required |
-| Enrollment and advertising | StateCourse approval gate | No Approved/State Approved/Enroll Now/payment/credit until administrator records valid regulator approval | Enforced |
+| Approved education provider before operating or advertising | Education Information; provider application; § 35.341 | Provider approval record, filing index and hard enrollment/advertising gate | Development; not filed |
+| Qualified owner and director | Owner/director forms; §§ 35.341–35.342 | Separate owner and director records, resumes, references/background-check checklist | Individuals/documents pending |
+| $10,000 surety bond | § 35.341; bond form | Bond record, carrier/instrument/effective/renewal fields | Pending procurement |
+| Separate required courses | Education Information; Commission outlines | `pa-real-estate-fundamentals-30-v1` and `pa-real-estate-practice-45-v1` | Separate development records |
+| 30 / 45 hours and 2 / 3 credits | Commission course page; § 35.358(b)(1) | 30 and 45 distinct 50-minute units; separate totals and approvals | Blueprint complete |
+| Required outline conformity | § 35.358(a)(2) | Topic-level blueprints and regulator-outline crosswalks | Complete draft; Commission acceptance pending |
+| Clock hour | § 35.201 | 50 active instructional minutes per unit; inactivity/hidden/disconnected time excluded as StateCourse control | Configured proposal |
+| Distance-method approval | § 35.358(a)(4); distance application | Separate method-approval record, ARELLO/IDECC field, reviewer login and acceptance gate | Not certified/approved |
+| Proctored final per course | § 35.358(b)(2); distance application | Separate proctor workflow and secure exam-development record for each course | Required; production banks not complete |
+| Numeric pass/item/attempt rules | Official sources reviewed | Fields remain `null`; written confirmation/approval correction log | Not stated; never invented |
+| Instructor qualification/approval | § 35.353; instructor form | Degree or three-year-experience evidence, director certification and separate course assignment | Instructor unassigned |
+| Enrollment agreement | § 35.357; provider application | Tuition/materials itemization, state-specific refund/termination language and complaint number | Business terms pending |
+| Official transcript | §§ 35.359–35.360 | Director-signed transcript workflow with all required fields; issued within 30 days | Template built; issuance disabled |
+| Records and inspection | §§ 35.360, 35.362 | Financial, facility, personnel, curriculum, scholastic and attendance records; reviewer export | 10-year prelicense retention configured |
+| Annual renewal | § 35.343; provider application | October 31 calendar gate; bond copy; provider/instructor/course fee records | Workflow configured |
+| No premature approval/enrollment claim | Provider application; StateCourse gate | Development status, blank approval numbers, Stripe/enrollment/credit/certificate disabled | Enforced |
 
-## Approval records
+## Release blockers
 
-- `pa_education_provider`: status Development; approval number/effective/expiration blank; enrollment dependency active.
-- `pa_provider_owner`: status Development; approval number/effective/expiration blank; enrollment dependency active.
-- `pa_provider_director`: status Development; approval number/effective/expiration blank; enrollment dependency active.
-- `pa_surety_bond`: status Development; approval number/effective/expiration blank; enrollment dependency active.
-- `pa_instructor`: status Development; approval number/effective/expiration blank; enrollment dependency active.
-- `pa_fundamentals_course`: status Development; approval number/effective/expiration blank; enrollment dependency active.
-- `pa_practice_course`: status Development; approval number/effective/expiration blank; enrollment dependency active.
-- `pa_distance_delivery`: status Development; approval number/effective/expiration blank; enrollment dependency active.
+1. Provider name, entity evidence, office diagram, listed telephone and custodian of records.
+2. Approved owner and director packages plus current background checks/references.
+3. Executed $10,000 bond and, if applicable, inspection.
+4. Qualified instructor assignment and $20 instructor application.
+5. Complete student lesson manuscripts, handouts and unique secure proctored finals/keys.
+6. ARELLO/IDECC or other Commission-accepted delivery-method approval.
+7. Separate $25 distance-course applications and reviewer credentials for Fundamentals and Practice.
+8. Written resolution of numeric final-exam/pass/attempt rules.

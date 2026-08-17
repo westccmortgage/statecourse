@@ -676,50 +676,50 @@
       "enrollment_enabled": false,
       "route": "/real-estate/pennsylvania/pre-license/fundamentals/",
       "regulator": "Pennsylvania Real Estate Commission",
-      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "delivery": "Asynchronous distance delivery proposed under 49 Pa. Code § 35.358; ARELLO/IDECC or other Commission-accepted method approval pending",
       "modules": [
         {
           "id": "PAF-01",
-          "title": "Real estate law and legal concepts",
-          "hours": 6
-        },
-        {
-          "id": "PAF-02",
-          "title": "Interests, ownership, and legal descriptions",
-          "hours": 5
-        },
-        {
-          "id": "PAF-03",
-          "title": "Land use and environmental controls",
+          "title": "Land, real estate and property",
           "hours": 3
         },
         {
-          "id": "PAF-04",
-          "title": "Valuation",
+          "id": "PAF-02",
+          "title": "Public and private controls; environmental issues",
+          "hours": 3
+        },
+        {
+          "id": "PAF-03",
+          "title": "Legal descriptions and interests in real estate",
           "hours": 4
         },
         {
+          "id": "PAF-04",
+          "title": "Forms of ownership",
+          "hours": 3
+        },
+        {
           "id": "PAF-05",
-          "title": "Finance",
+          "title": "Transfer of title and title records",
           "hours": 5
         },
         {
           "id": "PAF-06",
-          "title": "Transfer and title",
+          "title": "Principles of contract law",
           "hours": 3
         },
         {
           "id": "PAF-07",
-          "title": "Contract foundations",
-          "hours": 2
+          "title": "Principles of financing",
+          "hours": 4
         },
         {
           "id": "PAF-08",
-          "title": "Fair housing and real estate math",
-          "hours": 2
+          "title": "Pennsylvania license law, rules and regulation",
+          "hours": 5
         }
       ],
-      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+      "public_notice": "Development: verified Pennsylvania controls and 30-unit Commission-outline blueprint complete. Student manuscripts and the unique secure proctored final remain in development. Not approved; enrollment, payment, credit and transcripts are unavailable."
     },
     {
       "course_id": "pa-real-estate-practice-45-v1",
@@ -733,60 +733,55 @@
       "enrollment_enabled": false,
       "route": "/real-estate/pennsylvania/pre-license/practice/",
       "regulator": "Pennsylvania Real Estate Commission",
-      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "delivery": "Asynchronous distance delivery proposed under 49 Pa. Code § 35.358; ARELLO/IDECC or other Commission-accepted method approval pending",
       "modules": [
         {
           "id": "PAP-01",
-          "title": "Pennsylvania license law and brokerage",
-          "hours": 6
+          "title": "The real estate business",
+          "hours": 4
         },
         {
           "id": "PAP-02",
+          "title": "Law, ethics and consumer protection",
+          "hours": 5
+        },
+        {
+          "id": "PAP-03",
           "title": "Agency and consumer relationships",
           "hours": 6
         },
         {
-          "id": "PAP-03",
-          "title": "Listing practice",
-          "hours": 5
-        },
-        {
           "id": "PAP-04",
-          "title": "Buyer practice",
-          "hours": 5
+          "title": "Homeownership and listing practice",
+          "hours": 6
         },
         {
           "id": "PAP-05",
-          "title": "Pennsylvania contracts and forms",
-          "hours": 7
+          "title": "Buyer practice and risk reduction",
+          "hours": 5
         },
         {
           "id": "PAP-06",
-          "title": "Financing practice",
-          "hours": 4
+          "title": "Agreement of sale and escrow",
+          "hours": 7
         },
         {
           "id": "PAP-07",
-          "title": "Closing and title practice",
-          "hours": 4
+          "title": "Residential financing",
+          "hours": 5
         },
         {
           "id": "PAP-08",
-          "title": "Leasing and property management",
+          "title": "Valuation and appraisal",
           "hours": 3
         },
         {
           "id": "PAP-09",
-          "title": "Fair housing and consumer protection",
-          "hours": 3
-        },
-        {
-          "id": "PAP-10",
-          "title": "Professional conduct and integrated practice",
-          "hours": 2
+          "title": "Closing the residential transaction",
+          "hours": 4
         }
       ],
-      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+      "public_notice": "Development: verified Pennsylvania controls and 45-unit Commission-outline blueprint complete. Student manuscripts and the unique secure proctored final remain in development. Not approved; enrollment, payment, credit and transcripts are unavailable."
     },
     {
       "course_id": "nc-broker-prelicensing-75-v1",

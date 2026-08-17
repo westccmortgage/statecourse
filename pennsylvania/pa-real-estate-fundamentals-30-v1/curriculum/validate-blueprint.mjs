@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import { course, modules, allUnits } from "./course-blueprint.mjs";
+assert.equal(allUnits.length, 30);
+assert.equal(modules.reduce((sum, entry) => sum + entry.hours, 0), 30);
+for (const entry of modules) assert.equal(entry.topics.length, entry.hours, `${entry.id} topic count`);
+assert.equal(new Set(allUnits.map((unit) => unit.title)).size, 30);
+assert.equal(new Set(allUnits.map((unit) => unit.objective)).size, 30);
+assert.equal(course.instructionalMinutesPerHour, 50);
+assert.equal(course.finalExamRequired, true);
+assert.equal(course.finalExamProctored, true);
+assert.equal(course.finalExamQuestions, null);
+assert.equal(course.passingPercent, null);
+console.log("Pennsylvania Fundamentals blueprint valid: 30 units; proctored final; numeric exam rules remain confirmation gates.");
