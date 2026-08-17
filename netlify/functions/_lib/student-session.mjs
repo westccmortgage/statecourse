@@ -40,23 +40,56 @@ async function authRequest(path, { method="GET", token, body }={}) {
   return data;
 }
 
-async function syncStudent(user) {
+async function syncStudent(user, { signedIn = true } = {}) {
   const email = String(user.email || "").trim().toLowerCase();
   if (!user.id || !EMAIL.test(email)) throw Object.assign(new Error("invalid_student_session"), { statusCode: 401 });
+  const record = {
+    id: user.id,
+    email,
+    first_name: String(user.user_metadata?.first_name || "").slice(0,100) || null,
+    last_name: String(user.user_metadata?.last_name || "").slice(0,100) || null,
+    preferred_name: String(user.user_metadata?.preferred_name || "").slice(0,100) || null,
+    updated_at: new Date().toISOString()
+  };
+  if (signedIn) record.last_sign_in_at = new Date().toISOString();
   await dbRequest("students?on_conflict=id", {
     method: "POST",
     prefer: "resolution=merge-duplicates,return=minimal",
-    body: {
-      id: user.id,
-      email,
-      first_name: String(user.user_metadata?.first_name || "").slice(0,100) || null,
-      last_name: String(user.user_metadata?.last_name || "").slice(0,100) || null,
-      preferred_name: String(user.user_metadata?.preferred_name || "").slice(0,100) || null,
-      last_sign_in_at: new Date().toISOString(),
-      updated_at: new Date().toISOString()
-    }
+    body: record
   });
   return { id: user.id, email, firstName: user.user_metadata?.first_name || null, lastName: user.user_metadata?.last_name || null, preferredName: user.user_metadata?.preferred_name || null };
+}
+
+export async function registerStudent(input = {}) {
+  const email = String(input.email || "").trim().toLowerCase();
+  const password = String(input.password || "");
+  const firstName = String(input.firstName || "").trim().slice(0,100);
+  const lastName = String(input.lastName || "").trim().slice(0,100);
+  const intendedCourse = String(input.courseId || "").trim().slice(0,100);
+  if (!EMAIL.test(email) || password.length < 10 || password.length > 200 || !firstName || !lastName) {
+    throw Object.assign(new Error("invalid_registration"), { statusCode: 400 });
+  }
+  const origin = String(process.env.STATECOURSE_BASE_URL || "").replace(/\/$/,"");
+  const redirect = origin.startsWith("https://") ? `?redirect_to=${encodeURIComponent(`${origin}/student/sign-in/`)}` : "";
+  const result = await authRequest(`signup${redirect}`, {
+    method:"POST",
+    body:{
+      email,
+      password,
+      data:{
+        first_name:firstName,
+        last_name:lastName,
+        intended_course:intendedCourse || null
+      }
+    }
+  });
+  if (!result.user?.id) throw Object.assign(new Error("registration_unavailable"), { statusCode: 503 });
+  const student = await syncStudent(result.user,{ signedIn:Boolean(result.access_token) });
+  return {
+    student,
+    session:result.access_token ? result : null,
+    confirmationRequired:!result.access_token
+  };
 }
 
 export async function signInStudent(emailInput,passwordInput) {

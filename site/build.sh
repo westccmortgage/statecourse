@@ -43,6 +43,8 @@ test -f dist/enroll/index.html
 test -f dist/admin/payments/index.html
 test -f dist/student/index.html
 test -f dist/student/sign-in/index.html
+test -f dist/student/register/index.html
+test -f dist/student/register/student-register.js
 test -f dist/student/student-portal.js
 test -f dist/student/course/index.html
 test -f dist/student/course/student-course.js
@@ -50,6 +52,10 @@ test -f dist/student-course.html
 test -f dist/get-licensed/index.html
 test -f dist/state-requirements/index.html
 test -f dist/real-estate/california/index.html
+test -f dist/real-estate/california/pre-license/index.html
+test -f dist/real-estate/california/pre-license/principles/index.html
+test -f dist/real-estate/california/pre-license/practice/index.html
+test -f dist/real-estate/california/pre-license/mortgage-loan-brokering-and-lending/index.html
 test -f dist/real-estate/district-of-columbia/index.html
 test -f dist/content/california/ca-real-estate-principles-45-v1/lesson-15.md
 test -f dist/content/california/ca-real-estate-practice-45-v1/lesson-15.md

@@ -1,11 +1,17 @@
 const form = document.querySelector("#studentSignIn");
 const message = document.querySelector("#signinMessage");
 const button = form.querySelector("button");
+const createAccountLink = document.querySelector("#createAccountLink");
+const headerCreateAccount = document.querySelector("#headerCreateAccount");
 
 function returnPath() {
   const value = new URLSearchParams(location.search).get("return_to") || "/student/";
   return value.startsWith("/") && !value.startsWith("//") ? value : "/student/";
 }
+
+const registrationUrl = `../register/?return_to=${encodeURIComponent(returnPath())}`;
+createAccountLink.href = registrationUrl;
+headerCreateAccount.href = registrationUrl;
 
 async function existingSession() {
   const response = await fetch("/api/student/session",{ credentials:"same-origin" }).catch(() => null);
