@@ -25,10 +25,15 @@ test("California Real Estate Practice uses 45 assignment-specific assessment ite
   assert.equal(prompts.size, 45);
 });
 
-test("Practice Assignment 01 is identified as editorially rewritten content", () => {
-  const manuscript = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-01.md", "utf8");
-  assert.match(manuscript, /Business and Professions Code section 10131/);
-  assert.match(manuscript, /Commissioner’s Regulation 2725/);
-  assert.match(manuscript, /Unlicensed administrative assistants/);
-  assert.doesNotMatch(manuscript, /is studied as an operating concept, not as a vocabulary label/);
+test("Practice Assignments 01 and 02 are editorially rewritten content", () => {
+  const first = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-01.md", "utf8");
+  const second = fs.readFileSync("california/ca-real-estate-practice-45-v1/curriculum/lesson-02.md", "utf8");
+  assert.match(first, /Business and Professions Code section 10131/);
+  assert.match(first, /Commissioner’s Regulation 2725/);
+  assert.match(first, /Unlicensed administrative assistants/);
+  assert.match(second, /Business and Professions Code section 10140\.6/);
+  assert.match(second, /team name/);
+  assert.match(second, /antitrust/i);
+  assert.match(second, /digitally altered property images/i);
+  assert.doesNotMatch(first + second, /is studied as an operating concept, not as a vocabulary label/);
 });
