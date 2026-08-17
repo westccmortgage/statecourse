@@ -4,7 +4,7 @@ export default function Home() {
       <iframe
         className="site-frame"
         src="/statecourse/index.html"
-        title="StateCourse national professional licensing education catalog"
+        title="StateCourse — real estate licensing, state by state"
       />
     </main>
   );

@@ -7,11 +7,12 @@ const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 test("homepage uses a compact institutional hero without photography", async () => {
   const [html, css] = await Promise.all([
     read("public/statecourse/index.html"),
-    read("public/statecourse/institutional-v2.css"),
+    read("public/statecourse/national.css"),
   ]);
-  assert.match(html, /Real estate licensing education, organized by state/);
-  assert.match(html, /hero-program-strip/);
+  assert.match(html, /Real Estate Licensing/);
+  assert.match(html, /State by State/);
+  assert.match(html, /licensing-finder/);
   assert.doesNotMatch(html, /hero-photo|adult-student-classroom/);
   assert.doesNotMatch(css, /min-height:\s*620px/);
-  assert.match(css, /font-family: Georgia, "Times New Roman", serif/);
+  assert.match(css, /--serif: Georgia, "Times New Roman", serif/);
 });

@@ -19,6 +19,7 @@ if [[ ! -x "${vinext}" ]]; then
 fi
 
 echo "Running bounded vinext build..."
+node "${SITES_PROJECT_ROOT}/scripts/generate-national-platform.mjs"
 node "${script_dir}/sync-california-pdf-downloads.mjs"
 timeout \
   --signal=TERM \

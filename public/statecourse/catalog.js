@@ -10,21 +10,8 @@ function escapeHtml(value = "") {
 }
 
 function stateHref(state) {
-  if (state.state_code === "VA") return "real-estate/virginia/pre-license/principles-and-practices/";
-  if (state.state_code === "ME") return "real-estate/maine/pre-license/sales-agent/";
-  if (state.state_code === "WI") return "real-estate/wisconsin/pre-license/salesperson/";
-  if (state.state_code === "MO") return "real-estate/missouri/pre-license/salesperson-pre-exam/";
-  if (state.state_code === "OK") return "real-estate/oklahoma/pre-license/basic/";
-  if (state.state_code === "AZ") return "real-estate/arizona/pre-license/salesperson/";
-  if (state.state_code === "WA") return "real-estate/washington/pre-license/fundamentals/";
-  if (state.state_code === "PA") return "real-estate/pennsylvania/pre-license/fundamentals/";
-  if (state.state_code === "NC") return "real-estate/north-carolina/pre-license/broker/";
-  if (state.state_code === "CO") return "real-estate/colorado/qualifying/law-and-practice/";
-  if (state.state_code === "CA") return "real-estate/california/pre-license/";
-  if (state.state_code === "CA") return "real-estate/california/pre-license/";
-  if (state.state_code === "CA") return "real-estate/california/pre-license/";
-  if (state.state_code === "CA") return "real-estate/california/pre-license/";
-  return `#state-${state.state_code.toLowerCase()}`;
+  const slug = state.state_name.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replaceAll(/^-|-$/g, "");
+  return `real-estate/${slug}/`;
 }
 
 function cardAction(state) {
@@ -42,7 +29,7 @@ function render() {
     return matchesQuery && matchesStatus;
   });
 
-  summary.textContent = `${filtered.length} of 50 states shown`;
+  summary.textContent = `${filtered.length} of ${registry.length} jurisdictions shown`;
   directory.innerHTML = filtered.map((state) => {
     const activeCodes = ["VA", "ME", "WI", "MO", "OK", "AZ", "WA", "PA", "NC", "CO", "CA"];
     const active = activeCodes.includes(state.state_code);
@@ -57,9 +44,6 @@ function render() {
       PA: "Fundamentals 30h + Practice 45h · separate approvals",
       NC: "Broker Prelicensing · 75 hours",
       CO: "Six qualifying courses · 168 hours total",
-      CA: "Principles + Practice + Mortgage Lending · three 45h approvals",
-      CA: "Principles + Practice + Mortgage Lending · three 45h approvals",
-      CA: "Principles + Practice + Mortgage Lending · three 45h approvals",
       CA: "Principles + Practice + Mortgage Lending · three 45h approvals",
     };
     const program = programs[state.state_code] || "Coming Soon / Not Yet Available";
