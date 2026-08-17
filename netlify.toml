@@ -103,7 +103,12 @@
 
 [[redirects]]
   from = "/student/course"
-  to = "/student/course/index.html"
+  to = "/student-course.html"
+  status = 200
+
+[[redirects]]
+  from = "/student/course/"
+  to = "/student-course.html"
   status = 200
 
 [[redirects]]

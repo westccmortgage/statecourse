@@ -24,6 +24,11 @@ function sameOriginPath(value) {
   return path.startsWith("/") && !path.startsWith("//") && !path.includes("\\") ? path : "";
 }
 
+function deploySafeResumePath(value) {
+  const path = sameOriginPath(value);
+  return path.replace(/^\/student\/course\/?\?/,"/student-course.html?");
+}
+
 function date(value,fallback="Pending") {
   if (!value) return fallback;
   const parsed = new Date(value);
@@ -39,7 +44,7 @@ function card(enrollment) {
   const progress = Math.max(0,Math.min(100,Number(enrollment.progress_percent || 0)));
   const access = enrollment.access_status === "active";
   const completed = Boolean(enrollment.completed_at) || enrollment.regulatory_credit_status === "earned";
-  const resumePath = sameOriginPath(enrollment.resume_path);
+  const resumePath = deploySafeResumePath(enrollment.resume_path);
   const action = access && resumePath && !completed
     ? `<a class="resume-course" href="${escapeHtml(encodeURI(resumePath))}" data-enrollment="${safeText(enrollment.enrollment_id)}">Resume course →</a>`
     : "";

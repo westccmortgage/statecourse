@@ -7,6 +7,7 @@ rm -rf dist
 mkdir -p dist/content/curriculum dist/content/reference dist/content/california
 
 cp -R public/statecourse/. dist/
+cp dist/student/course/index.html dist/student-course.html
 
 if [[ -d virginia/curriculum ]]; then
   cp virginia/curriculum/hours-01-15.md dist/content/curriculum/
@@ -45,6 +46,7 @@ test -f dist/student/sign-in/index.html
 test -f dist/student/student-portal.js
 test -f dist/student/course/index.html
 test -f dist/student/course/student-course.js
+test -f dist/student-course.html
 test -f dist/get-licensed/index.html
 test -f dist/state-requirements/index.html
 test -f dist/real-estate/california/index.html

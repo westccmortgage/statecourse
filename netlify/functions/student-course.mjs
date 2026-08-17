@@ -216,7 +216,7 @@ async function finishIfReady(ctx,assignmentId) {
     const next = ctx.course.assignments.find((item) => item.sequence === assignment.sequence+1);
     await dbRequest(`student_portal_state?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}`,{
       method:"PATCH",prefer:"return=minimal",
-      body:{last_lesson_id:next?.id || assignmentId,resume_path:"/student/course/?enrollment_id="+ctx.enrollment.id+(next ? "&assignment="+next.id : ""),last_activity_at:completedAt,updated_at:completedAt}
+      body:{last_lesson_id:next?.id || assignmentId,resume_path:"/student-course.html?enrollment_id="+ctx.enrollment.id+(next ? "&assignment="+next.id : ""),last_activity_at:completedAt,updated_at:completedAt}
     });
     await audit(ctx,assignmentId,"assignment_completed",{automatic:true,requirements:["sections","applied_exercise","engagement_check","remediation"]});
   }
