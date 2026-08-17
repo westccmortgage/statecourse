@@ -616,3 +616,125 @@ body:not(.institution-home) .maine-learning-shell { box-shadow: 0 12px 34px rgba
   .modern-directory .state-directory-grid { grid-template-columns: 1fr; }
   .program-facts div { grid-template-columns: 1fr 1fr; }
 }
+
+/* Compact institutional homepage masthead */
+.institution-hero {
+  display: block;
+  min-height: 0;
+  background: var(--sc-navy);
+  color: #fff;
+}
+
+.institution-hero .hero-copy {
+  display: block;
+  width: min(100%, var(--sc-max));
+  margin: 0 auto;
+  padding: 48px 30px 28px;
+}
+
+.institution-hero .hero-copy h1 {
+  max-width: 980px;
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 4.2vw, 62px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.025em;
+}
+
+.institution-hero .hero-lede {
+  max-width: 900px;
+  margin: 18px 0 0;
+  color: #d9e0e5;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.institution-hero .hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.institution-hero .hero-program-strip {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 32px;
+  border-top: 1px solid rgba(255,255,255,.23);
+  border-bottom: 1px solid rgba(255,255,255,.23);
+}
+
+.institution-hero .hero-program-strip span,
+.institution-hero .hero-program-strip a {
+  padding: 13px 19px;
+  border-right: 1px solid rgba(255,255,255,.18);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.institution-hero .hero-program-strip span {
+  padding-left: 0;
+  color: #e2bd74;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.institution-hero .hero-program-strip a:hover {
+  background: rgba(255,255,255,.08);
+}
+
+.institution-hero .availability-note {
+  max-width: none;
+  margin: 14px 0 0;
+  padding: 0;
+  border: 0;
+  color: #b7c2ca;
+  font-size: 12px;
+}
+
+.institution-hero .hero-photo {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .institution-hero .hero-copy {
+    padding: 38px 20px 24px;
+  }
+
+  .institution-hero .hero-copy h1 {
+    font-size: clamp(36px, 10vw, 48px);
+  }
+
+  .institution-hero .hero-lede {
+    font-size: 16px;
+  }
+
+  .institution-hero .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .institution-hero .hero-program-strip {
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 26px;
+  }
+
+  .institution-hero .hero-program-strip span {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+  }
+
+  .institution-hero .hero-program-strip a {
+    flex: 1 1 50%;
+    padding-left: 0;
+  }
+}
