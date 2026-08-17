@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+node scripts/generate-national-platform.mjs
+
 rm -rf dist
 mkdir -p dist/content/curriculum dist/content/reference dist/content/california
 
@@ -43,10 +45,14 @@ test -f dist/student/sign-in/index.html
 test -f dist/student/student-portal.js
 test -f dist/student/course/index.html
 test -f dist/student/course/student-course.js
+test -f dist/get-licensed/index.html
+test -f dist/state-requirements/index.html
+test -f dist/real-estate/california/index.html
+test -f dist/real-estate/district-of-columbia/index.html
 test -f dist/content/california/ca-real-estate-principles-45-v1/lesson-15.md
 test -f dist/content/california/ca-real-estate-practice-45-v1/lesson-15.md
 test -f dist/content/california/ca-mortgage-loan-brokering-lending-45-v1/lesson-15.md
 
-node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==50) process.exit(1); for(const c of ["VA","ME","WI","MO","OK","AZ","WA","PA","NC","CO","CA"]) if(r.states.find(s=>s.state_code===c)?.public_status!=="In Development") process.exit(1)'
+node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==51) process.exit(1); for(const c of ["VA","ME","WI","MO","OK","AZ","WA","PA","NC","CO","CA"]) if(r.states.find(s=>s.state_code===c)?.public_status!=="In Development") process.exit(1)'
 node -e 'const c=require("./dist/data/course-catalog.json"); const courses=c.categories[0].programs.flatMap(p=>p.courses); for(const id of ["ca-real-estate-principles-45","ca-real-estate-practice-45","ca-mortgage-loan-brokering-lending-45"]) if(!courses.find(x=>x.course_id===id)) process.exit(1)'
 ! find dist -type f -print | grep -Eq 'final-exam-bank|answer-key'

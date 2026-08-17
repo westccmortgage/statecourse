@@ -19,6 +19,8 @@ if [[ ! -x "${vinext}" ]]; then
 fi
 
 echo "Running bounded vinext build..."
+node "${SITES_PROJECT_ROOT}/scripts/generate-national-platform.mjs"
+node "${script_dir}/sync-california-pdf-downloads.mjs"
 timeout \
   --signal=TERM \
   --kill-after="${SITES_BUILD_KILL_AFTER:-10s}" \

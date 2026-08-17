@@ -5,14 +5,14 @@ import test from "node:test";
 const root = new URL("../public/statecourse/", import.meta.url);
 const read = (path) => readFile(new URL(path, root), "utf8");
 
-test("national registry contains all 50 states and controlled statuses", async () => {
+test("national registry contains all 50 states plus Washington, D.C. and controlled statuses", async () => {
   const registry = JSON.parse(await read("data/state-registry.json"));
-  assert.equal(registry.states.length, 50);
-  assert.equal(new Set(registry.states.map((state) => state.state_code)).size, 50);
+  assert.equal(registry.states.length, 51);
+  assert.equal(new Set(registry.states.map((state) => state.state_code)).size, 51);
   for (const state of registry.states) assert.ok(registry.statuses.includes(state.public_status));
 });
 
-test("all six launch courses remain distinct unapproved products", async () => {
+test("all twenty-two launch courses remain distinct unapproved products", async () => {
   const catalog = JSON.parse(await read("data/course-catalog.json"));
   const courses = catalog.categories.flatMap((category) => category.programs ?? []).flatMap((program) => program.courses ?? []);
   const virginia = courses.find((course) => course.state_id === "VA");
@@ -21,7 +21,7 @@ test("all six launch courses remain distinct unapproved products", async () => {
   const missouri48 = courses.find((course) => course.course_id === "mo-salesperson-preexam-48");
   const missouri24 = courses.find((course) => course.course_id === "mo-real-estate-practice-24");
   const oklahoma = courses.find((course) => course.course_id === "ok-basic-prelicense-90");
-  assert.equal(courses.length, 6);
+  assert.equal(courses.length, 22);
   assert.equal(virginia.required_hours, 60);
   assert.equal(maine.required_hours, 55);
   assert.equal(virginia.enrollment_enabled, false);
@@ -37,10 +37,10 @@ test("all six launch courses remain distinct unapproved products", async () => {
 
 test("national homepage does not lead with Virginia", async () => {
   const homepage = await read("index.html");
-  assert.match(homepage, /Your real estate license starts with the right state course/);
-  assert.match(homepage, /Professional pathways/);
-  assert.match(homepage, /id="state-directory"/);
-  assert.ok(homepage.indexOf("Your real estate license") < homepage.indexOf('class="finder-code">VA'));
+  assert.match(homepage, /Real Estate Licensing/);
+  assert.match(homepage, /State by State/);
+  assert.match(homepage, /id="licensing-finder"/);
+  assert.match(homepage, /My Courses/);
 });
 
 test("state course routes expose state-specific academic records", async () => {
@@ -74,9 +74,16 @@ test("secure Maine exam and answer materials are never referenced by public asse
   assert.doesNotMatch(publicFiles.join("\n"), /final-exam-bank\.md|assessments\/quizzes\.md|answer key/i);
 });
 
-test("five launch states are visible and all others are coming soon", async () => {
+test("eleven launch states are visible and all others are coming soon", async () => {
   const registry = JSON.parse(await read("data/state-registry.json"));
   const launch = registry.states.filter((state) => state.public_status === "In Development");
-  assert.deepEqual(launch.map((state) => state.state_code).sort(), ["ME", "MO", "OK", "VA", "WI"]);
-  assert.equal(registry.states.filter((state) => state.public_status === "Coming Soon").length, 45);
+  assert.deepEqual(launch.map((state) => state.state_code).sort(), ["AZ", "CA", "CO", "ME", "MO", "NC", "OK", "PA", "VA", "WA", "WI"]);
+  assert.equal(registry.states.filter((state) => state.public_status === "Coming Soon").length, 40);
+});
+
+test("national routes and jurisdiction hubs are generated", async () => {
+  for (const route of ["get-licensed/index.html", "state-requirements/index.html", "courses/index.html", "exam-prep/index.html", "continuing-education/index.html", "resources/index.html", "blog/index.html", "my-statecourse/index.html", "real-estate/california/index.html", "real-estate/district-of-columbia/index.html"]) {
+    const html = await read(route);
+    assert.match(html, /StateCourse/);
+  }
 });
