@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>California Lesson Preview | StateCourse</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/student/student-portal.css">
+  <link rel="stylesheet" href="/student/course/student-course.css">
+  <link rel="stylesheet" href="/student/course-preview/course-preview.css">
+  <script src="/student/course-preview/course-preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#previewLessonBody">Skip to lesson</a>
+  <header class="course-header">
+    <a class="portal-brand" href="/"><span>SC</span><strong>StateCourse</strong><small>California course library</small></a>
+    <nav aria-label="Preview navigation"><a href="/real-estate/california/pre-license/">California courses</a><a href="/exam-prep/">Free practice exam</a></nav>
+  </header>
+  <div class="review-banner preview-banner">Course Library Preview — reading does not create enrollment, study time, completion, or California credit.</div>
+  <div id="previewMessage" class="course-message">Opening the California lesson library…</div>
+  <main id="previewShell" class="course-shell preview-shell" hidden>
+    <section class="course-context" aria-labelledby="previewCourseTitle">
+      <div class="course-context-copy">
+        <p class="eyebrow">California correspondence course</p>
+        <h1 id="previewCourseTitle">Course</h1>
+        <p class="course-meta">45 hours · 15 lesson assignments · Version 1.0 development draft</p>
+        <p class="progress-copy">Public course-library view · No student progress is recorded</p>
+      </div>
+      <div class="course-tools">
+        <button id="previewAssignmentToggle" class="course-tool" type="button" aria-controls="previewAssignmentRail" aria-expanded="false"><span>Course assignments</span><strong id="previewAssignmentLabel">Assignment 01</strong></button>
+      </div>
+    </section>
+    <div id="previewDrawerScrim" class="drawer-scrim" hidden></div>
+    <aside id="previewAssignmentRail" class="assignment-rail course-drawer" aria-label="Course assignments" hidden>
+      <div class="drawer-heading">
+        <div><p class="eyebrow">Course navigation</p><h2>Assignments</h2></div>
+        <button id="previewAssignmentClose" class="drawer-close" type="button" aria-label="Close course assignments">Close</button>
+      </div>
+      <ol id="previewAssignmentList"></ol>
+      <a class="back-link" href="/real-estate/california/pre-license/">← California course library</a>
+    </aside>
+    <article class="lesson-column" tabindex="-1">
+      <div class="lesson-folio">
+        <p id="previewAssignmentNumber" class="eyebrow"></p>
+        <h2 id="previewAssignmentTitle"></h2>
+        <p class="deck">Complete student manuscript for one of 15 separate lesson assignments.</p>
+      </div>
+      <div class="california-note">
+        <strong>Student-view preview</strong>
+        <span>The enrolled course uses sequential assignments, assessments, remediation, identity controls, the California minimum calendar period, and a proctored final. Those regulated records are intentionally disabled in this public library view.</span>
+      </div>
+      <div id="previewLessonBody" class="textbook-body"></div>
+      <section class="assessment-section preview-assessment">
+        <p class="eyebrow">Enrolled student experience</p>
+        <h3>Lesson assessment and remediation</h3>
+        <p>In Student Mode, the learner completes the assignment activity and scored knowledge check without seeing answers in advance. Incorrect answers open alternate instruction, a second scenario, and a new scored question. This preview does not record answers or course progress.</p>
+      </section>
+      <nav class="lesson-pagination" aria-label="Preview assignment navigation">
+        <button id="previewPrevious" type="button">← Previous assignment</button>
+        <button id="previewNext" type="button">Next assignment →</button>
+      </nav>
+    </article>
+  </main>
+</body>
+</html>
