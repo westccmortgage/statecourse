@@ -8,8 +8,8 @@ const read = (relative) => readFile(new URL(relative, root), "utf8");
 const courses = [
   ["arizona/az-salesperson-prelicense-90-v1", "AZ", 90, 0],
   ["arizona/az-contract-writing-6-v1", "AZ", 6, 40],
-  ["washington/wa-real-estate-fundamentals-60-v1", "WA", 60, 180],
-  ["washington/wa-real-estate-practices-30-v1", "WA", 30, 90],
+  ["washington/wa-real-estate-fundamentals-60-v1", "WA", 60, 0],
+  ["washington/wa-real-estate-practices-30-v1", "WA", 30, 0],
   ["pennsylvania/pa-real-estate-fundamentals-30-v1", "PA", 30, 75],
   ["pennsylvania/pa-real-estate-practice-45-v1", "PA", 45, 90],
   ["north-carolina/nc-broker-prelicensing-75-v1", "NC", 75, 100],

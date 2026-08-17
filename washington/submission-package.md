@@ -8,4 +8,4 @@ Status: **Development / not filed / not approved**
 4. practices course application and approval record
 5. distance delivery method or arello application and approval record
 
-Each course below has a separate timed outline, syllabus, full unit curriculum, assessments, remediation, secure final bank, administration/identity/records/reporting policy, instructor file, and certificate template. Regulator-issued numbers and dates remain blank.
+Each course has a separate timed outline, syllabus, 60- or 30-unit curriculum blueprint, assessment/remediation specification, administration/identity/records/reporting policy, instructor file and certificate template. Production student manuscripts and the unique secure 180/90-question finals do **not** yet exist and remain submission release gates. Regulator-issued numbers and dates remain blank.

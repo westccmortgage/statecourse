@@ -1,1895 +1,559 @@
-# Washington Real Estate Fundamentals 60h v1.0 — Unit-by-Unit Curriculum
+# Washington Real Estate Fundamentals 60h v1.0 — Unit-by-Unit Curriculum Blueprint
 
-**Development draft. No enrollment, credit, or certificate.**
+**Development draft — not approved and not a finished student textbook.**
 
-## WAF-01 — Property and ownership
+This blueprint defines 60 distinct 50-minute instructional units. Topic-hour allocations are StateCourse's submission proposal mapped to the current DOL-prescribed Fundamentals curriculum; DOL acceptance remains a release gate.
 
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
+The comprehensive final examination is outside the 60 instructional clock hours. A production-ready secure bank does not yet exist.
 
-## Unit 001 — Real and personal property
+## Required delivery pattern
 
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+- source-grounded lesson manuscript and worked example;
+- scenario-based interactive activity with direct feedback;
+- server-authoritative active-time and inactivity shutdown;
+- regular scored progress check;
+- individual remediation and alternate assessment;
+- instructor access and identity/completion certification;
+- immutable course-version audit record.
 
-### Learning objectives
+## Module summary
 
-By the end of this unit, the student can:
+| Module | Units | Hours | Authority |
+|---|---:|---:|---|
+| WAF-01 — Property and ownership | 01–10 | 10 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+| WAF-02 — Land use and development | 11–16 | 6 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+| WAF-03 — Valuation | 17–22 | 6 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+| WAF-04 — Contracts | 23–32 | 10 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+| WAF-05 — Agency and brokerage | 33–40 | 8 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+| WAF-06 — Finance | 41–48 | 8 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+| WAF-07 — Transfer and settlement | 49–54 | 6 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+| WAF-08 — Federal practice and applied review | 55–60 | 6 | DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820 |
+|  | **1–60** | **60** |  |
 
-1. explain **real and personal property** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+# WAF-01 — Property and ownership
 
-### Instructional lesson
+**Hours:** 10
 
-**Rule and purpose.** Real and personal property is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 001 — Real property, personal property and the bundle of rights
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Explain and apply real property, personal property and the bundle of rights in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on real property, personal property and the bundle of rights.
 
-### Applied exercise
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Analyze a Washington transaction involving **real and personal property**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 002 — Fixtures, trade fixtures and crops
 
-### Scored check and remediation
+**Learning objective:** Distinguish and analyze fixtures, trade fixtures and crops in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 001 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on fixtures, trade fixtures and crops.
 
-## Unit 002 — Fixtures
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 003 — Freehold and leasehold estates
 
-### Learning objectives
+**Learning objective:** Identify and document freehold and leasehold estates in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-By the end of this unit, the student can:
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on freehold and leasehold estates.
 
-1. explain **fixtures** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Fixtures is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **fixtures**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 002 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 003 — Estates
-
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **estates** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Estates is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **estates**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 003 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
 ## Unit 004 — Concurrent ownership
 
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Learning objective:** Calculate or evaluate concurrent ownership in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Learning objectives
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on concurrent ownership.
 
-By the end of this unit, the student can:
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-1. explain **concurrent ownership** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 005 — Business, trust and common-interest ownership
 
-### Instructional lesson
+**Learning objective:** Compare and apply business, trust and common-interest ownership in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Rule and purpose.** Concurrent ownership is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on business, trust and common-interest ownership.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 006 — Legal descriptions and survey systems
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Explain and apply legal descriptions and survey systems in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Applied exercise
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on legal descriptions and survey systems.
 
-Analyze a Washington transaction involving **concurrent ownership**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+## Unit 007 — Easements, licenses and encroachments
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 004 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Distinguish and analyze easements, licenses and encroachments in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-## Unit 005 — Condominiums and common interests
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on easements, licenses and encroachments.
 
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 008 — Liens, priority and encumbrances
 
-By the end of this unit, the student can:
+**Learning objective:** Identify and document liens, priority and encumbrances in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-1. explain **condominiums and common interests** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on liens, priority and encumbrances.
 
-### Instructional lesson
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Rule and purpose.** Condominiums and common interests is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 009 — Government powers affecting property
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Calculate or evaluate government powers affecting property in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on government powers affecting property.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Applied exercise
+## Unit 010 — Ownership and title issue-spotting case
 
-Analyze a Washington transaction involving **condominiums and common interests**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Compare and apply ownership and title issue-spotting case in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Scored check and remediation
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on ownership and title issue-spotting case.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 005 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-## Unit 006 — Legal descriptions
+# WAF-02 — Land use and development
 
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Hours:** 6
 
-### Learning objectives
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-By the end of this unit, the student can:
+## Unit 011 — Zoning classifications and lawful nonconforming uses
 
-1. explain **legal descriptions** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Explain and apply zoning classifications and lawful nonconforming uses in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Instructional lesson
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on zoning classifications and lawful nonconforming uses.
 
-**Rule and purpose.** Legal descriptions is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 012 — Subdivision, platting and development controls
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Distinguish and analyze subdivision, platting and development controls in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on subdivision, platting and development controls.
 
-### Applied exercise
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Analyze a Washington transaction involving **legal descriptions**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 013 — Building codes, permits and occupancy
 
-### Scored check and remediation
+**Learning objective:** Identify and document building codes, permits and occupancy in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 006 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on building codes, permits and occupancy.
 
-## Unit 007 — Easements
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+## Unit 014 — Deed restrictions and private controls
 
-### Learning objectives
+**Learning objective:** Calculate or evaluate deed restrictions and private controls in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-By the end of this unit, the student can:
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on deed restrictions and private controls.
 
-1. explain **easements** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 015 — Site, access, utility and survey due diligence
 
-**Rule and purpose.** Easements is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Compare and apply site, access, utility and survey due diligence in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on site, access, utility and survey due diligence.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 016 — Land-use feasibility and referral case
 
-### Applied exercise
+**Learning objective:** Explain and apply land-use feasibility and referral case in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Analyze a Washington transaction involving **easements**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on land-use feasibility and referral case.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 007 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+# WAF-03 — Valuation
 
-## Unit 008 — Liens
+**Hours:** 6
 
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-### Learning objectives
+## Unit 017 — Value, price, cost and market forces
 
-By the end of this unit, the student can:
+**Learning objective:** Explain and apply value, price, cost and market forces in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-1. explain **liens** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on value, price, cost and market forces.
 
-### Instructional lesson
-
-**Rule and purpose.** Liens is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **liens**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 008 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 009 — Government powers
-
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **government powers** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Government powers is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **government powers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 009 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 010 — Environmental matters
-
-Module: WAF-01 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **environmental matters** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Environmental matters is studied within Property and ownership. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **environmental matters**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 010 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## WAF-02 — Land use and development
-
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
-
-## Unit 011 — Zoning
-
-Module: WAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **zoning** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Zoning is studied within Land use and development. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **zoning**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 011 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 012 — Subdivision
-
-Module: WAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **subdivision** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Subdivision is studied within Land use and development. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **subdivision**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 012 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 013 — Building regulation
-
-Module: WAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **building regulation** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Building regulation is studied within Land use and development. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **building regulation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 013 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 014 — Private controls
-
-Module: WAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **private controls** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Private controls is studied within Land use and development. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **private controls**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 014 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 015 — Survey and site issues
-
-Module: WAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **survey and site issues** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Survey and site issues is studied within Land use and development. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **survey and site issues**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 015 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 016 — Development analysis
-
-Module: WAF-02 · Proposed clock hours: 1 · Content layer: NC-OWN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **development analysis** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Development analysis is studied within Land use and development. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **development analysis**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 016 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## WAF-03 — Valuation
-
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
-
-## Unit 017 — Value principles
-
-Module: WAF-03 · Proposed clock hours: 1 · Content layer: NC-VAL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **value principles** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Value principles is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **value principles**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 017 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
 ## Unit 018 — Highest and best use
 
-Module: WAF-03 · Proposed clock hours: 1 · Content layer: NC-VAL
+**Learning objective:** Distinguish and analyze highest and best use in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Learning objectives
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on highest and best use.
 
-By the end of this unit, the student can:
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-1. explain **highest and best use** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 019 — Sales comparison approach
 
-### Instructional lesson
+**Learning objective:** Identify and document sales comparison approach in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Rule and purpose.** Highest and best use is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on sales comparison approach.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 020 — Cost approach and depreciation
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Calculate or evaluate cost approach and depreciation in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Applied exercise
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on cost approach and depreciation.
 
-Analyze a Washington transaction involving **highest and best use**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+## Unit 021 — Income capitalization approach
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 018 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Compare and apply income capitalization approach in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-## Unit 019 — Sales comparison
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on income capitalization approach.
 
-Module: WAF-03 · Proposed clock hours: 1 · Content layer: NC-VAL
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 022 — CMA, BPO and licensed-appraisal boundaries
 
-By the end of this unit, the student can:
+**Learning objective:** Explain and apply cma, bpo and licensed-appraisal boundaries in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-1. explain **sales comparison** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on cma, bpo and licensed-appraisal boundaries.
 
-### Instructional lesson
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Rule and purpose.** Sales comparison is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+# WAF-04 — Contracts
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Hours:** 10
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 023 — Contract classifications and essential elements
 
-### Applied exercise
+**Learning objective:** Explain and apply contract classifications and essential elements in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Analyze a Washington transaction involving **sales comparison**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on contract classifications and essential elements.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 019 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 024 — Capacity, lawful purpose and consideration
 
-## Unit 020 — Cost approach
+**Learning objective:** Distinguish and analyze capacity, lawful purpose and consideration in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Module: WAF-03 · Proposed clock hours: 1 · Content layer: NC-VAL
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on capacity, lawful purpose and consideration.
 
-### Learning objectives
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 025 — Statute of Frauds and electronic records
 
-1. explain **cost approach** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Identify and document statute of frauds and electronic records in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Instructional lesson
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on statute of frauds and electronic records.
 
-**Rule and purpose.** Cost approach is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 026 — Offer, acceptance, revocation and counteroffer
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Calculate or evaluate offer, acceptance, revocation and counteroffer in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on offer, acceptance, revocation and counteroffer.
 
-### Applied exercise
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Analyze a Washington transaction involving **cost approach**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 027 — Contract interpretation, dates and deadlines
 
-### Scored check and remediation
+**Learning objective:** Compare and apply contract interpretation, dates and deadlines in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 020 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on contract interpretation, dates and deadlines.
 
-## Unit 021 — Income approach
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Module: WAF-03 · Proposed clock hours: 1 · Content layer: NC-VAL
+## Unit 028 — Conditions, covenants and contingencies
 
-### Learning objectives
+**Learning objective:** Explain and apply conditions, covenants and contingencies in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-By the end of this unit, the student can:
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on conditions, covenants and contingencies.
 
-1. explain **income approach** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 029 — Performance, discharge and breach
 
-**Rule and purpose.** Income approach is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Distinguish and analyze performance, discharge and breach in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on performance, discharge and breach.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 030 — Damages, rescission and specific-performance orientation
 
-### Applied exercise
+**Learning objective:** Identify and document damages, rescission and specific-performance orientation in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Analyze a Washington transaction involving **income approach**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on damages, rescission and specific-performance orientation.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 021 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 031 — Leases, options and representation agreements
 
-## Unit 022 — CMA and appraisal roles
+**Learning objective:** Calculate or evaluate leases, options and representation agreements in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Module: WAF-03 · Proposed clock hours: 1 · Content layer: NC-VAL
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on leases, options and representation agreements.
 
-### Learning objectives
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 032 — Integrated contract chronology case
 
-1. explain **cma and appraisal roles** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Compare and apply integrated contract chronology case in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Instructional lesson
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on integrated contract chronology case.
 
-**Rule and purpose.** CMA and appraisal roles is studied within Valuation. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+# WAF-05 — Agency and brokerage
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Hours:** 8
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-### Applied exercise
+## Unit 033 — Agency creation and authority
 
-Analyze a Washington transaction involving **cma and appraisal roles**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Explain and apply agency creation and authority in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Scored check and remediation
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on agency creation and authority.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 022 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-## WAF-04 — Contracts
+## Unit 034 — Fiduciary duties and reasonable skill and care
 
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
+**Learning objective:** Distinguish and analyze fiduciary duties and reasonable skill and care in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-## Unit 023 — Formation
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on fiduciary duties and reasonable skill and care.
 
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 035 — Clients, customers and third parties
 
-By the end of this unit, the student can:
+**Learning objective:** Identify and document clients, customers and third parties in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-1. explain **formation** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on clients, customers and third parties.
 
-### Instructional lesson
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Rule and purpose.** Formation is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+## Unit 036 — Single, dual and designated representation concepts
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Learning objective:** Calculate or evaluate single, dual and designated representation concepts in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on single, dual and designated representation concepts.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Applied exercise
+## Unit 037 — Disclosure and informed consent
 
-Analyze a Washington transaction involving **formation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Learning objective:** Compare and apply disclosure and informed consent in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Scored check and remediation
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on disclosure and informed consent.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 023 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-## Unit 024 — Capacity and consideration
+## Unit 038 — Compensation, cooperation and antitrust
 
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Learning objective:** Explain and apply compensation, cooperation and antitrust in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Learning objectives
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on compensation, cooperation and antitrust.
 
-By the end of this unit, the student can:
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-1. explain **capacity and consideration** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 039 — Termination and surviving duties
 
-### Instructional lesson
+**Learning objective:** Distinguish and analyze termination and surviving duties in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Rule and purpose.** Capacity and consideration is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on termination and surviving duties.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 040 — Integrated brokerage-relationship case
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Identify and document integrated brokerage-relationship case in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Applied exercise
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on integrated brokerage-relationship case.
 
-Analyze a Washington transaction involving **capacity and consideration**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+# WAF-06 — Finance
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 024 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Hours:** 8
 
-## Unit 025 — Statute of Frauds
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
+## Unit 041 — Promissory notes and security instruments
 
-### Learning objectives
+**Learning objective:** Explain and apply promissory notes and security instruments in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-By the end of this unit, the student can:
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on promissory notes and security instruments.
 
-1. explain **statute of frauds** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 042 — Primary and secondary mortgage markets
 
-**Rule and purpose.** Statute of Frauds is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Distinguish and analyze primary and secondary mortgage markets in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on primary and secondary mortgage markets.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 043 — Conventional and government loan programs
 
-### Applied exercise
+**Learning objective:** Identify and document conventional and government loan programs in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Analyze a Washington transaction involving **statute of frauds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on conventional and government loan programs.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 025 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 044 — Loan application and underwriting factors
 
-## Unit 026 — Offer and acceptance
+**Learning objective:** Calculate or evaluate loan application and underwriting factors in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on loan application and underwriting factors.
 
-### Learning objectives
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 045 — Loan-to-value, debt ratios and qualification math
 
-1. explain **offer and acceptance** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Compare and apply loan-to-value, debt ratios and qualification math in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Instructional lesson
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on loan-to-value, debt ratios and qualification math.
 
-**Rule and purpose.** Offer and acceptance is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 046 — Interest, points, APR and loan cost
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Explain and apply interest, points, apr and loan cost in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on interest, points, apr and loan cost.
 
-### Applied exercise
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Analyze a Washington transaction involving **offer and acceptance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+## Unit 047 — Amortization, payments and remaining balance
 
-### Scored check and remediation
+**Learning objective:** Distinguish and analyze amortization, payments and remaining balance in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 026 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on amortization, payments and remaining balance.
 
-## Unit 027 — Performance
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
+## Unit 048 — Default, foreclosure and consumer-protection orientation
 
-### Learning objectives
+**Learning objective:** Identify and document default, foreclosure and consumer-protection orientation in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-By the end of this unit, the student can:
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on default, foreclosure and consumer-protection orientation.
 
-1. explain **performance** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+# WAF-07 — Transfer and settlement
 
-**Rule and purpose.** Performance is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Hours:** 6
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 049 — Deed requirements and deed types
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Explain and apply deed requirements and deed types in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Applied exercise
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on deed requirements and deed types.
 
-Analyze a Washington transaction involving **performance**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+## Unit 050 — Delivery, acceptance and recording
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 027 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Learning objective:** Distinguish and analyze delivery, acceptance and recording in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-## Unit 028 — Breach and remedies
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on delivery, acceptance and recording.
 
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Learning objectives
+## Unit 051 — Title evidence and title insurance
 
-By the end of this unit, the student can:
+**Learning objective:** Identify and document title evidence and title insurance in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-1. explain **breach and remedies** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on title evidence and title insurance.
 
-### Instructional lesson
-
-**Rule and purpose.** Breach and remedies is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **breach and remedies**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 028 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 029 — Purchase agreements
-
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **purchase agreements** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Purchase agreements is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **purchase agreements**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 029 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 030 — Contingencies
-
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **contingencies** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Contingencies is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **contingencies**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 030 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 031 — Leases
-
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **leases** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Leases is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **leases**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 031 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 032 — Contract case
-
-Module: WAF-04 · Proposed clock hours: 1 · Content layer: NC-CON
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **contract case** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Contract case is studied within Contracts. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **contract case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 032 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## WAF-05 — Agency and brokerage
-
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
-
-## Unit 033 — Agency creation
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **agency creation** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Agency creation is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **agency creation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 033 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 034 — Duties
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **duties** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Duties is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **duties**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 034 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 035 — Clients and customers
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **clients and customers** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Clients and customers is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **clients and customers**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 035 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 036 — Disclosure
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **disclosure** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Disclosure is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **disclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 036 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 037 — Compensation
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **compensation** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Compensation is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **compensation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 037 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 038 — Antitrust
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **antitrust** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Antitrust is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **antitrust**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 038 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 039 — Termination
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **termination** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Termination is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **termination**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 039 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 040 — Brokerage case
-
-Module: WAF-05 · Proposed clock hours: 1 · Content layer: NC-AGY
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **brokerage case** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Brokerage case is studied within Agency and brokerage. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **brokerage case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 040 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## WAF-06 — Finance
-
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
-
-## Unit 041 — Notes and security instruments
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **notes and security instruments** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Notes and security instruments is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **notes and security instruments**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 041 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 042 — Loan markets
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **loan markets** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Loan markets is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **loan markets**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 042 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 043 — Loan programs
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **loan programs** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Loan programs is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **loan programs**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 043 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 044 — Qualification
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **qualification** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Qualification is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **qualification**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 044 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 045 — LTV and ratios
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **ltv and ratios** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** LTV and ratios is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **ltv and ratios**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 045 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 046 — Interest
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **interest** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Interest is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **interest**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 046 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 047 — Amortization
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **amortization** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Amortization is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **amortization**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 047 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 048 — Default
-
-Module: WAF-06 · Proposed clock hours: 1 · Content layer: NC-FIN
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **default** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Default is studied within Finance. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **default**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 048 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## WAF-07 — Transfer and settlement
-
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
-
-## Unit 049 — Deeds
-
-Module: WAF-07 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **deeds** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Deeds is studied within Transfer and settlement. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **deeds**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 049 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 050 — Recording
-
-Module: WAF-07 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **recording** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Recording is studied within Transfer and settlement. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **recording**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 050 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 051 — Title evidence
-
-Module: WAF-07 · Proposed clock hours: 1 · Content layer: NC-TTL
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **title evidence** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Title evidence is studied within Transfer and settlement. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **title evidence**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 051 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
 ## Unit 052 — Voluntary and involuntary transfer
 
-Module: WAF-07 · Proposed clock hours: 1 · Content layer: NC-TTL
+**Learning objective:** Calculate or evaluate voluntary and involuntary transfer in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Learning objectives
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on voluntary and involuntary transfer.
 
-By the end of this unit, the student can:
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-1. explain **voluntary and involuntary transfer** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+## Unit 053 — Escrow, settlement and closing sequence
 
-### Instructional lesson
+**Learning objective:** Compare and apply escrow, settlement and closing sequence in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Rule and purpose.** Voluntary and involuntary transfer is studied within Transfer and settlement. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on escrow, settlement and closing sequence.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+## Unit 054 — Commissions, prorations and closing calculations
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Learning objective:** Explain and apply commissions, prorations and closing calculations in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Applied exercise
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on commissions, prorations and closing calculations.
 
-Analyze a Washington transaction involving **voluntary and involuntary transfer**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Scored check and remediation
+# WAF-08 — Federal practice and applied review
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 052 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Hours:** 6
 
-## Unit 053 — Escrow and settlement
+**Authority:** DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820
 
-Module: WAF-07 · Proposed clock hours: 1 · Content layer: NC-TTL
+## Unit 055 — Federal Fair Housing Act and protected conduct
 
-### Learning objectives
+**Learning objective:** Explain and apply federal fair housing act and protected conduct in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-By the end of this unit, the student can:
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on federal fair housing act and protected conduct.
 
-1. explain **escrow and settlement** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-### Instructional lesson
+## Unit 056 — Fair-housing advertising and disability requests
 
-**Rule and purpose.** Escrow and settlement is studied within Transfer and settlement. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Learning objective:** Distinguish and analyze fair-housing advertising and disability requests in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+**Applied activity:** Build an issue log for a realistic buyer, seller, property or closing scenario focused on fair-housing advertising and disability requests.
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+## Unit 057 — Federal lead-based-paint and consumer disclosures
 
-### Applied exercise
+**Learning objective:** Identify and document federal lead-based-paint and consumer disclosures in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Analyze a Washington transaction involving **escrow and settlement**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
+**Applied activity:** Complete a document review for a realistic buyer, seller, property or closing scenario focused on federal lead-based-paint and consumer disclosures.
 
-### Scored check and remediation
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 053 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+## Unit 058 — Property-management and leasing foundations
 
-## Unit 054 — Prorations
+**Learning objective:** Calculate or evaluate property-management and leasing foundations in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-Module: WAF-07 · Proposed clock hours: 1 · Content layer: NC-TTL
+**Applied activity:** Resolve a calculation or decision in a realistic buyer, seller, property or closing scenario focused on property-management and leasing foundations.
 
-### Learning objectives
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-By the end of this unit, the student can:
+## Unit 059 — Investment property income and risk foundations
 
-1. explain **prorations** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
+**Learning objective:** Compare and apply investment property income and risk foundations in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-### Instructional lesson
+**Applied activity:** Prepare a broker-escalation record for a realistic buyer, seller, property or closing scenario focused on investment property income and risk foundations.
 
-**Rule and purpose.** Prorations is studied within Transfer and settlement. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.
 
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
+## Unit 060 — Comprehensive fundamentals transaction case
 
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
+**Learning objective:** Explain and apply comprehensive fundamentals transaction case in an entry-level real estate transaction while remaining within a broker's professional scope.
 
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
+**Applied activity:** Classify facts in a realistic buyer, seller, property or closing scenario focused on comprehensive fundamentals transaction case.
 
-### Applied exercise
-
-Analyze a Washington transaction involving **prorations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 054 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## WAF-08 — Federal practice and applied review
-
-Authority mapping: Current DOL Real Estate Fundamentals curriculum
-
-## Unit 055 — Federal fair housing
-
-Module: WAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-PM, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **federal fair housing** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Federal fair housing is studied within Federal practice and applied review. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **federal fair housing**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 055 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 056 — Federal disclosure
-
-Module: WAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-PM, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **federal disclosure** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Federal disclosure is studied within Federal practice and applied review. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **federal disclosure**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 056 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 057 — Consumer credit orientation
-
-Module: WAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-PM, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **consumer credit orientation** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Consumer credit orientation is studied within Federal practice and applied review. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **consumer credit orientation**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 057 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 058 — Property management foundations
-
-Module: WAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-PM, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **property management foundations** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Property management foundations is studied within Federal practice and applied review. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **property management foundations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 058 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 059 — Investment foundations
-
-Module: WAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-PM, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **investment foundations** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Investment foundations is studied within Federal practice and applied review. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **investment foundations**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 059 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
-
-## Unit 060 — Integrated fundamentals case
-
-Module: WAF-08 · Proposed clock hours: 1 · Content layer: NC-FH, NC-PM, NC-INV
-
-### Learning objectives
-
-By the end of this unit, the student can:
-
-1. explain **integrated fundamentals case** with accurate entry-level professional vocabulary;
-2. apply it to a Washington transaction fact pattern;
-3. distinguish the licensee's permitted task from legal, tax, appraisal, lending, inspection, engineering, or surveying work; and
-4. identify the controlling source, required communication, and retained evidence.
-
-### Instructional lesson
-
-**Rule and purpose.** Integrated fundamentals case is studied within Federal practice and applied review. The student identifies the parties, property, money, documents, deadlines, disclosures, and consumer-protection purpose. The rule is applied only after its current effective date and form edition are checked.
-
-**Transaction method.** Read the file chronologically: source document, known facts, missing facts, decision point, permitted broker action, consumer communication, performance, and retained evidence. A compliant response verifies material facts from an appropriate source, stays within the broker's role, uses the current approved document when required, communicates promptly, and escalates unresolved professional questions.
-
-**Washington layer.** Apply Current DOL Real Estate Fundamentals curriculum and the controlled Washington source register. A national concept may be reused for explanation, but Washington terminology, forms, examples, citations, assessments, version, and approval record remain independent. When a source or form changes, new enrollment is held until impact review is recorded.
-
-**Common error.** Custom, memory, another state's form, a payment event, or a technology default never replaces the controlling state rule or an approval condition. The audit file records what was checked, when it was checked, the result, and who was responsible.
-
-### Applied exercise
-
-Analyze a Washington transaction involving **integrated fundamentals case**. Prepare a five-entry compliance note: known fact; missing fact; controlling source; permitted action; required follow-up/referral. Then select the document or record that proves the action occurred.
-
-### Scored check and remediation
-
-The LMS presents a scenario-based item after the lesson and applied exercise. A correct response requires the current state source, verified facts, professional-scope limit, and audit evidence. An incorrect response opens an alternate explanation, a different transaction example, and a parallel scored item. Answers are not shown before submission. Unit 060 earns no completion credit until the configured active-time, content, exercise, check, remediation, identity, and sequencing controls are satisfied.
+**Manuscript gate:** complete the explanation, vocabulary, cited authority, worked example, scope boundary, interaction, scored item and alternate remediation before submission release.

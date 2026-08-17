@@ -59,7 +59,10 @@
     "concurrent_sessions": false,
     "sequential_units": true,
     "reviewer_bypass_isolated": true,
-    "enrollment_validity_days": null
+    "enrollment_validity_days": null,
+    "regulatory_basis": "WAC 308-124H-830 through -845",
+    "inactivity_shutdown_required": true,
+    "student_and_school_clock_hour_certification": true
   },
   "identity": {
     "state_approved_method_pending": true,
@@ -79,8 +82,9 @@
     "questions_per_form": 180,
     "bank_ratio": 1,
     "passing_percent": 70,
-    "passing_percent_source": "regulatory_or_current_application",
-    "secure_bank_public": false
+    "passing_percent_source": "WAC 308-124H-820(8)",
+    "secure_bank_public": false,
+    "production_bank_status": "not_started_release_gate"
   },
   "reporting": {
     "state_workflow": "Certificates and audit-ready school records; DOL observation/audit access and material-change submissions.",
@@ -108,7 +112,7 @@
       "id": "WAF-01",
       "title": "Property and ownership",
       "hours": 10,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-OWN"
       ]
@@ -117,7 +121,7 @@
       "id": "WAF-02",
       "title": "Land use and development",
       "hours": 6,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-OWN"
       ]
@@ -126,7 +130,7 @@
       "id": "WAF-03",
       "title": "Valuation",
       "hours": 6,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-VAL"
       ]
@@ -135,7 +139,7 @@
       "id": "WAF-04",
       "title": "Contracts",
       "hours": 10,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-CON"
       ]
@@ -144,7 +148,7 @@
       "id": "WAF-05",
       "title": "Agency and brokerage",
       "hours": 8,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-AGY"
       ]
@@ -153,7 +157,7 @@
       "id": "WAF-06",
       "title": "Finance",
       "hours": 8,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-FIN"
       ]
@@ -162,7 +166,7 @@
       "id": "WAF-07",
       "title": "Transfer and settlement",
       "hours": 6,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-TTL"
       ]
@@ -171,12 +175,19 @@
       "id": "WAF-08",
       "title": "Federal practice and applied review",
       "hours": 6,
-      "authority": "Current DOL Real Estate Fundamentals curriculum",
+      "authority": "DOL prescribed Washington Real Estate Fundamentals curriculum; WAC 308-124H-820",
       "national_core": [
         "NC-FH",
         "NC-PM",
         "NC-INV"
       ]
     }
-  ]
+  ],
+  "content": {
+    "blueprint_units": 60,
+    "blueprint_status": "complete_development_draft",
+    "student_manuscripts_status": "not_complete",
+    "secure_final_bank_status": "not_complete",
+    "dol_prescribed_curriculum_acceptance": "pending"
+  }
 }

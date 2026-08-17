@@ -572,7 +572,7 @@
       "enrollment_enabled": false,
       "route": "/real-estate/washington/pre-license/fundamentals/",
       "regulator": "Washington State Department of Licensing",
-      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "delivery": "Asynchronous distance delivery proposed under WAC 308-124H-830 through -845; DOL or qualifying ARELLO acceptance pending",
       "modules": [
         {
           "id": "WAF-01",
@@ -615,7 +615,7 @@
           "hours": 6
         }
       ],
-      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+      "public_notice": "Development: verified Washington controls and 60-unit blueprint complete. Student manuscripts and the unique secure 180-question final remain in development. Not approved; enrollment, payment, credit, and certificates are unavailable."
     },
     {
       "course_id": "wa-real-estate-practices-30-v1",
@@ -629,7 +629,7 @@
       "enrollment_enabled": false,
       "route": "/real-estate/washington/pre-license/practices/",
       "regulator": "Washington State Department of Licensing",
-      "delivery": "Online distance delivery proposed; regulator approval pending",
+      "delivery": "Asynchronous distance delivery proposed under WAC 308-124H-830 through -845; DOL or qualifying ARELLO acceptance pending",
       "modules": [
         {
           "id": "WAP-01",
@@ -653,16 +653,16 @@
         },
         {
           "id": "WAP-05",
-          "title": "Finance, escrow, and closing",
+          "title": "Finance, escrow and closing",
           "hours": 4
         },
         {
           "id": "WAP-06",
-          "title": "Fair housing, property management, and risk",
+          "title": "Fair housing, property management and risk",
           "hours": 3
         }
       ],
-      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
+      "public_notice": "Development: verified Washington controls and 30-unit blueprint complete. Student manuscripts and the unique secure 90-question final remain in development. Not approved; enrollment, payment, credit, and certificates are unavailable."
     },
     {
       "course_id": "pa-real-estate-fundamentals-30-v1",

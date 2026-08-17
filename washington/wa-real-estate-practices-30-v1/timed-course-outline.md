@@ -1,7 +1,7 @@
 # Washington Real Estate Practices 30h v1.0 — Timed Course Outline
 
 Status: **Development — not approved — enrollment disabled**  
-Official-source review: 2026-08-16
+Official-source review: 2026-08-17
 
 | Module | Subject | Units | Hours | Controlling mapping |
 |---|---|---:|---:|---|
@@ -13,4 +13,4 @@ Official-source review: 2026-08-16
 | WAP-06 | Fair housing, property management, and risk | 28–30 | 3 | Current DOL Real Estate Practices curriculum |
 |  | **Total** |  | **30** |  |
 
-Topic-hour allocations are StateCourse's submission proposal unless the cited regulator outline assigns them. They become regulatory delivery commitments only after acceptance. Final-examination time is excluded from instructional hours where the controlling state rule requires that separation.
+Topic-hour allocations are StateCourse's submission proposal mapped to the current DOL-prescribed Practices curriculum. They become regulatory delivery commitments only after acceptance. Every clock hour is 50 minutes of actual instruction. The separate comprehensive final is specified at 90 questions with a minimum 70% passing grade; final-exam time is excluded from these 30 instructional hours in this draft.

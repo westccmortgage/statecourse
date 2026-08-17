@@ -59,7 +59,10 @@
     "concurrent_sessions": false,
     "sequential_units": true,
     "reviewer_bypass_isolated": true,
-    "enrollment_validity_days": null
+    "enrollment_validity_days": null,
+    "regulatory_basis": "WAC 308-124H-830 through -845",
+    "inactivity_shutdown_required": true,
+    "student_and_school_clock_hour_certification": true
   },
   "identity": {
     "state_approved_method_pending": true,
@@ -79,8 +82,9 @@
     "questions_per_form": 90,
     "bank_ratio": 1,
     "passing_percent": 70,
-    "passing_percent_source": "regulatory_or_current_application",
-    "secure_bank_public": false
+    "passing_percent_source": "WAC 308-124H-820(8)",
+    "secure_bank_public": false,
+    "production_bank_status": "not_started_release_gate"
   },
   "reporting": {
     "state_workflow": "Certificates and audit-ready school records; DOL observation/audit access and material-change submissions.",
@@ -108,14 +112,14 @@
       "id": "WAP-01",
       "title": "Washington license law and supervision",
       "hours": 5,
-      "authority": "Current DOL Real Estate Practices curriculum",
+      "authority": "DOL prescribed Real Estate Practices curriculum; chapter 18.85 RCW; title 308 WAC",
       "national_core": []
     },
     {
       "id": "WAP-02",
       "title": "Washington brokerage relationships",
       "hours": 5,
-      "authority": "Current DOL Real Estate Practices curriculum",
+      "authority": "DOL prescribed Real Estate Practices curriculum; chapter 18.86 RCW",
       "national_core": [
         "NC-AGY"
       ]
@@ -124,7 +128,7 @@
       "id": "WAP-03",
       "title": "Washington contracts and forms",
       "hours": 8,
-      "authority": "Current DOL Real Estate Practices curriculum",
+      "authority": "DOL prescribed Real Estate Practices curriculum; current Washington authority and approved course materials",
       "national_core": [
         "NC-CON"
       ]
@@ -133,16 +137,16 @@
       "id": "WAP-04",
       "title": "Seller and buyer transaction practice",
       "hours": 5,
-      "authority": "Current DOL Real Estate Practices curriculum",
+      "authority": "DOL prescribed Real Estate Practices curriculum; chapters 18.85 and 18.86 RCW",
       "national_core": [
         "NC-AGY"
       ]
     },
     {
       "id": "WAP-05",
-      "title": "Finance, escrow, and closing",
+      "title": "Finance, escrow and closing",
       "hours": 4,
-      "authority": "Current DOL Real Estate Practices curriculum",
+      "authority": "DOL prescribed Real Estate Practices curriculum; Washington transaction practice",
       "national_core": [
         "NC-FIN",
         "NC-TTL"
@@ -150,13 +154,20 @@
     },
     {
       "id": "WAP-06",
-      "title": "Fair housing, property management, and risk",
+      "title": "Fair housing, property management and risk",
       "hours": 3,
-      "authority": "Current DOL Real Estate Practices curriculum",
+      "authority": "DOL prescribed Real Estate Practices curriculum; federal Fair Housing Act; Washington Law Against Discrimination",
       "national_core": [
         "NC-FH",
         "NC-PM"
       ]
     }
-  ]
+  ],
+  "content": {
+    "blueprint_units": 30,
+    "blueprint_status": "complete_development_draft",
+    "student_manuscripts_status": "not_complete",
+    "secure_final_bank_status": "not_complete",
+    "dol_prescribed_curriculum_acceptance": "pending"
+  }
 }

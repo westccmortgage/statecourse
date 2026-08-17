@@ -1393,7 +1393,7 @@
       "final_exam_rules": "Minimum three questions per clock hour and at least 90 items for 30+ hour courses; 70% passing. Fundamentals bank 180; Practices bank 90.",
       "proctoring_rules": "Secure school final. No separate universal proctor requirement is imported where WAC 308-124H does not state one.",
       "certificate_rules": "WAC 308-124H-855 completion certificate fields configured separately for each course.",
-      "notes": "Two separate approvals: Real Estate Fundamentals 60h v1.0 and Real Estate Practices 30h v1.0. School, instructor, each course, and distance method tracked independently.",
+      "notes": "Separate development records: 60-hour Fundamentals and 30-hour Practices. Verified controls include 50-minute clock hours, interactive distance delivery, inactivity shutdown, individual remediation, five-year records, 180/90-question finals and 70% minimum passing grade. No approval or enrollment claim.",
       "public_status": "In Development",
       "course_ids": [
         "wa-real-estate-fundamentals-60",
