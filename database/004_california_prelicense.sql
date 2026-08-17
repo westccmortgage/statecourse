@@ -351,6 +351,7 @@ end $$;
 
 create or replace function create_qa_california_bundle(p_student_id uuid)
 returns table(course_id text,enrollment_id uuid) language plpgsql security definer set search_path=public as $$
+#variable_conflict use_column
 declare
   v_course text;
   v_attempt uuid;
