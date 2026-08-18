@@ -71,6 +71,36 @@ A prediction stated as a certainty is actionable:
 
 The defect is not optimism. It is stating as certain something the licensee cannot know, on which the client will rely.
 
+### 1.6 The pressures that produce dishonesty
+
+Almost nobody enters this business intending to misrepresent anything. **The misrepresentations that occur are produced by a small number of recurring pressures**, and a licensee who can name the pressure he is under is much better placed to resist it.
+
+| The pressure | The statement it produces |
+|---|---|
+| **A transaction about to fail** | "It'll appraise." "The loan is fine." "They'll approve it." |
+| **A client who wants reassurance** | "Don't worry, that's normal for a house this age." |
+| **Not knowing the answer in front of a client** | A confident guess, offered because "I'll find out" feels like weakness |
+| **A number needed to make a deal work** | A square footage, a tax figure, a fee "usually around" an amount |
+| **A colleague or manager applying pressure** | Participation in something the licensee would not initiate |
+| **Money the licensee needs this month** | Every item above, with the volume turned up |
+| **An error already made** | The second statement, covering the first — **and this is the one that ends careers** |
+
+**Two observations about this table.**
+
+**The first six rows produce misstatements about the transaction. The last row produces misstatements about the licensee**, and Section 6.6 explains why that difference is the whole difference. A licensee who told a buyer something inaccurate has a correctable problem. A licensee who then adjusts a record so the inaccuracy is not visible has a different kind of problem entirely.
+
+**The sixth row is the one Lesson 02's business plan addresses.** A licensee with three months of reserves and a licensee with none face the same client conversation, and they do not face it the same way. **Financial pressure is a compliance risk factor**, which is an unusual sentence in an ethics chapter and a true one.
+
+**The defenses are not attitudes. They are sentences prepared in advance:**
+
+- **"I don't know — let me find out and get back to you today."** Solves rows three and four permanently, and clients respond to it far better than licensees expect.
+- **"That's a question for your inspector."** And for the lender, the tax advisor, the attorney, the title officer. Section 1.3's category discipline, in its practical form.
+- **"I can't predict that, and here's what I can tell you."** Row one, answered without abandoning the client.
+- **"I'm not comfortable with that — let's take it to the broker."** Row five, and it does not require confrontation.
+- **"I made a mistake. Here's what happened."** Row seven, said early, when it is still a small sentence.
+
+> **The pattern worth internalizing:** every one of those is shorter than the misstatement it replaces. **Honesty in this business is almost always the less effortful option in the moment and always the less effortful option afterward.**
+
 ## 2. Errors, omissions, and supervision
 
 ### 2.1 The correction obligation
@@ -132,6 +162,26 @@ Report to the broker promptly:
 
 The bias should be toward reporting. A report that turns out to be unnecessary costs a conversation. An unreported matter that becomes a claim costs the coverage and the credibility.
 
+### 2.6 Errors made by other people
+
+Section 2.1 addresses the licensee's own errors. A large share of what a licensee encounters is somebody else's — the other agent's, escrow's, the lender's, a vendor's, or his own client's — and the handling differs by whose it is.
+
+**Another licensee's error.** Raise it directly and promptly, with the fact rather than a characterization: "the removal in the file is undated" rather than "you didn't do your job." **Most are genuine mistakes and are fixed in a phone call.** Where it is not fixed, or where it affects the licensee's own client's rights, it goes to the broker — **and the licensee documents that he raised it and what the response was.**
+
+**A service provider's error.** Escrow's figure, the lender's disclosure, the title company's report, an inspector's report with the wrong address. Raise it in writing, to the provider, with the supporting document. **Do not correct it yourself on a document that is not yours**, and do not tell the client "it's fine, they'll fix it" until they have.
+
+**The client's own error.** A client who has stated something inaccurate — about a repair, an income figure, an occupancy intention, the condition of the property. **This is the most delicate category and the most consequential.** The licensee's obligation is not to conceal it and not to accuse. He tells the client what the document says, asks, and — where the answer confirms a material inaccuracy in something already submitted — **tells the client it must be corrected and escalates if it is not.** Lesson 09's worked walkthrough and Lesson 14 of the mortgage course both address what happens when it is a contradiction rather than an ambiguity.
+
+**An error nobody has noticed but you.** The hardest case, because raising it creates work and delay for people who are content. **It is raised anyway.** A licensee who sees a defect and says nothing has joined it, and "it wasn't mine" is not a position the record will support once it shows he knew.
+
+**Three rules across all four categories:**
+
+1. **In writing, promptly, factually.** Sections 6.1 and 6.3 supply the form.
+2. **To your broker whenever it affects your client's rights**, and always when the response is inadequate.
+3. **Never fix another party's document.** Not to be helpful, not to save a closing. **The correction belongs to whoever authored it**, and a licensee who edits somebody else's record has created the problem Section 6.6 describes.
+
+> **What must not happen:** a private accommodation between two agents to "just not put that in the file." That is the beginning of the only category of conduct this course treats as unsurvivable, and it always begins as a favor.
+
 ## 3. Fraud warning signs
 
 ### 3.1 Fraud presents as a pattern
@@ -191,6 +241,39 @@ Sent early, it costs nothing and prevents the largest single loss a residential 
 
 Escalate to the broker, who determines what reporting is required.
 
+### 3.7 The escalation, written
+
+Section 3.6 states what a licensee must not do when he suspects fraud. This section supplies what he does instead, in the form it must take.
+
+**The escalation is written, prompt, factual, and addressed to the responsible broker.** Each of those four words is doing work.
+
+**Written**, because an oral report leaves the licensee with nothing showing he made it, and because the broker needs the facts in a form that can be forwarded.
+
+**Prompt**, because delay is itself a fact that will be examined, and because the transaction is moving.
+
+**Factual**, which is the part licensees get wrong. **The memorandum states observations, not conclusions.**
+
+| Do not write | Write instead |
+|---|---|
+| "The buyer is committing occupancy fraud." | "The application states owner occupancy. The file contains a lease for the property signed by the buyer as landlord, dated eleven days before the application." |
+| "The seller is hiding something." | "The seller stated on [date] that the ceiling stain was from a repaired leak in 2019. The disclosure does not mention it. I recorded the statement in my note of that date." |
+| "This vendor seems shady." | "The invoice is for work at a different address. The vendor's phone number matches the one on the buyer's employer verification." |
+| "Something feels wrong." | The specific facts that produced the feeling, listed, with dates. |
+
+**Why the distinction matters.** A conclusion is the licensee's opinion, and stating it can expose him — to a defamation claim, to an accusation of bad faith, and to being wrong. **A fact is a fact.** The broker, and whoever the broker involves, draws the conclusion.
+
+**What the memorandum contains:**
+
+1. **The transaction and the parties**, identified.
+2. **What was observed**, each item with its date and its source — a document, a statement, an observation.
+3. **What the licensee did** — what he asked, whom he told, what he declined to do.
+4. **What he is asking the broker to decide**, stated plainly. Usually: whether to proceed, and what to report.
+5. **Nothing else.** No speculation, no theory of the scheme, no characterization of anyone's character.
+
+**And what happens after it is sent.** The licensee does not investigate, does not warn the party, does not tell the other side, and does not quietly withdraw hoping it resolves itself. Section 3.6 lists each of those and the reasons hold. **The decision about reporting belongs to the broker**, and the licensee's role is complete when the facts are delivered and he has declined to participate.
+
+> **One sentence that appears in enforcement matters repeatedly:** "I told my manager and he said to keep going." **Documenting an improper instruction does not transfer responsibility for the act.** If the answer to a written escalation is an instruction to do the thing, the licensee is back to Section 6.5 — this is now a question for counsel, and the licensee still does not perform the act.
+
 ## 4. Conflicts and referral disclosure
 
 ### 4.1 What creates a conflict
@@ -233,6 +316,31 @@ Where a licensee buys or sells for their own account, or for a relative or entit
 ### 4.5 Personal relationships
 
 A licensee representing a client in a transaction where the other party is a friend or relative should disclose it. The disclosure is inexpensive; discovering it later is expensive, because the client will reinterpret every recommendation in light of it.
+
+### 4.6 A conflicts inventory
+
+Conflicts are managed transaction by transaction and they accumulate practice-wide. **A licensee who has never listed his own is nearly certain to miss one**, because the ones that get missed are the arrangements that have been in place long enough to feel like background.
+
+**The inventory, reviewed annually and whenever anything changes:**
+
+1. **Every vendor from whom you receive anything** — a fee, a lead, an event sponsorship, marketing materials, a meal budget, a co-branded mailer. **Value is value**, and Section 5.6 of Lesson 03 establishes that its form does not change the analysis.
+2. **Every vendor to whom you send business without receiving anything**, listed anyway — because the referral relationship exists and because next year's version of it may include something.
+3. **Every entity in which you or a family member holds an interest** that touches real estate transactions: a title or escrow interest, a warranty company, a contracting business, an investment entity that buys property.
+4. **Every affiliated business arrangement** your brokerage has, whether or not you personally use it.
+5. **Your own property holdings**, and those of immediate family, in the markets you serve.
+6. **Client relationships that could collide** — two clients interested in the same property, a client who is also a vendor, a client who is a relative.
+7. **Compensation arrangements that vary** by product, by property, by builder, or by outcome — bonuses, incentives, and anything a third party offers contingent on a result.
+8. **Personal relationships with parties on the other side** of transactions you handle. Section 4.5 covers these; the inventory is where you notice you have four of them.
+
+**What the inventory produces.** For each item: **when it must be disclosed, to whom, and in what form** — and the disclosure language, written once and reused, so that it is delivered the same way every time rather than improvised under pressure.
+
+**Two entries deserve a standing rule rather than a case-by-case judgment.**
+
+**Anything received from a settlement service provider** is disclosed at the point of recommendation, every time, without the licensee deciding whether it is large enough to matter. **The consumer decides what matters to him**, and Section 4.2's timing requirement makes the point unanswerable: disclosure must reach him while he can still act.
+
+**Anything involving the licensee as principal** — Section 4.4 — is disclosed in its own document rather than folded into a paragraph, because it is the disclosure most likely to be later characterized as buried.
+
+> **The value of an inventory is not the list. It is that a licensee reviewing one every year notices the arrangement that grew.** A vendor who bought lunch twice in 2023 and now sponsors a monthly event is a different relationship than he was, and nobody made a decision to change it.
 
 ## 5. Complaint response
 
@@ -278,6 +386,34 @@ A consumer who reports that another brokerage discriminated against them should 
 - **Notify your broker.**
 
 What not to do: investigate the other brokerage, tell the consumer such complaints rarely succeed, or take no action because the conduct was someone else's.
+
+### 5.6 A worked complaint
+
+> **The message**, received eleven weeks after a closing, from a buyer: *"We found out the addition was never permitted. The listing said 4 bedrooms. Our contractor says the whole thing has to be redone to be legal. You knew or should have known. We want you to make this right or we're filing with the DRE and calling a lawyer."*
+>
+> **The first hour.**
+>
+> **Do not reply yet.** Section 5.1 establishes that the first response sets the trajectory, and the reply written in the first hour is the one written by adrenaline.
+>
+> **Notify the broker immediately.** This message contains a demand, a threat of a regulatory filing, and an allegation about the licensee's own conduct. **It is a potential claim from this moment**, and Section 2.5's reporting obligation attaches now rather than when something is filed.
+>
+> **Preserve everything.** Section 5.3. The file, the emails, the texts, the listing service history including prior versions, the photographs, the advertising archive, the seller's disclosures, the licensee's own visual inspection note, and the delivery records. **Nothing is deleted, tidied, or organized in a way that changes it.** A text thread is exported today.
+>
+> **The reconstruction, before any response.** What did the licensee actually know and when? What did the listing say and where did the bedroom count come from — the public record, the prior listing, or the seller? **Section 1.2 of Lesson 06 required a source for every factual claim, and this is the moment that requirement pays or does not.** What did the seller disclose? What did the licensee's own note record? What did the buyer receive, and when?
+>
+> **The four outcomes this reconstruction can produce**, and they are genuinely different:
+>
+> **1. The source was the public record and the record says four bedrooms.** The claim is about the permitting history, which is a different question, and the file shows where the number came from.
+>
+> **2. The source was the seller and the licensee repeated it.** Weaker, and the file should show it was attributed. **This is the scenario Lesson 03's reasonable-care section warns about.**
+>
+> **3. The licensee knew the addition was unpermitted.** Then Section 4.3 of Lesson 09 governs and the exposure is real. **The response is the broker's and counsel's, and it is not a denial.**
+>
+> **4. Nobody can tell**, because the file does not record the source. **The most common outcome**, and the reason the requirement exists.
+>
+> **The response itself**, whatever the outcome: prompt, acknowledging the message and saying it is being reviewed seriously; **factual, not defensive**; free of admissions of legal conclusions and equally free of denials the file cannot support; and **sent with the broker's involvement.**
+>
+> **What must not happen:** a fast reassuring reply ("we had no idea, the seller told us"), an offer to pay for something, contact with the seller to coordinate a story, an edit to the listing archive, or a note added to the file today and left undated. **The last is the only one on this list that would end a career**, and it is the one that will feel most reasonable at eleven o'clock that night.
 
 ## 6. Documentation, escalation, and legal referral
 
@@ -341,7 +477,26 @@ What is not survivable is **falsifying the record**: creating a document after t
 
 Corrections are made visibly, with the original preserved and the change attributable. A record that can be silently altered is not a record.
 
-### 6.7 Checkpoint
+### 6.8 Reading your own file as an adversary would
+
+Every documentation habit in this lesson answers one question: **what will this file look like to someone whose job is to find its weakness?** The habit that keeps the other habits alive is periodically taking that view deliberately.
+
+**Pick a closed file and read it as opposing counsel would.** The questions are always the same:
+
+1. **What is undated?** Every undated document is an opportunity, because its timing can be argued to whatever the adversary needs it to be.
+2. **What is signed but not evidenced as delivered?** Section 5.2 of Lesson 09 — the gap between execution and receipt is where rights are contested.
+3. **What is asserted with no source?** Numbers, conditions, representations about the property. **A claim with no source in the file is the licensee's own statement**, whatever its actual origin.
+4. **Where does the file characterize rather than record?** "Everything went smoothly" and "buyer was happy" are the licensee's conclusions. **Facts survive cross-examination; characterizations invite it.**
+5. **What is missing that would exist if the process had been followed?** An absence is evidence too, and the adversary will say so.
+6. **Where do two documents disagree?** Names, dates, amounts, property descriptions. **Any inconsistency becomes the theme of the questioning**, regardless of how immaterial it is.
+7. **What is in the file that should not be?** An unexecuted draft, a superseded figure without its context, a note written in frustration, a message that reads badly out of context. **Section 6.3's guidance about how to write it exists because everything written is eventually read by someone else.**
+8. **What decisions does the file not explain?** A price, a strategy, a waiver, a removal. **A decision with no recorded reasoning looks like it had none.**
+
+**Do this twice a year on a file chosen at random**, and the findings will be about the process rather than the file — which is the point. **A defect found in one closed file is present in every file that process produced.**
+
+> **The reframe worth carrying:** documentation is not paperwork performed for a regulator. **It is the only version of events that will exist when the people involved have forgotten, moved, retired, or become adverse.** Everything in this course about dating, evidencing, sourcing, and recording reduces to that one fact — and a licensee who has read one of his own files this way stops needing to be told.
+
+### 6.9 Checkpoint
 
 You should be able to classify a statement as innocent error, negligent misrepresentation, or fraud; state the correct first response to a client complaint; and name the trigger that requires referral to counsel.
 
