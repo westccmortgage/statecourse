@@ -1,0 +1,28 @@
+{
+  "_note": "Input for scripts/fill-re336.mjs. Values are the applicant's own identifying data, taken from the instructor qualification package. VERIFY legalName against the California Secretary of State registration before filing - RE 306 and RE 336 must carry the exact registered entity name. sponsorId stays empty until DRE assigns one.",
+  "provider": {
+    "legalName": "StateCourse LLC",
+    "sponsorId": "",
+    "street": "407 N Pacific Coast Highway, Unit 1028",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "zip": "90277"
+  },
+  "primaryContact": {
+    "name": "Kanevsky, Anatoliy",
+    "declarantName": "Anatoliy Kanevsky",
+    "title": "Founder / CEO",
+    "city": "Redondo Beach",
+    "state": "California"
+  },
+  "instructor": {
+    "name": "Kanevsky, Anatoliy",
+    "licenseNumber": "01385024",
+    "heldCaliforniaLicense": true
+  },
+  "courses": [
+    "Real Estate Principles",
+    "Real Estate Practice",
+    "Mortgage Loan Brokering and Lending"
+  ]
+}
