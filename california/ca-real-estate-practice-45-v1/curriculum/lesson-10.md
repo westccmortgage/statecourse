@@ -2,290 +2,339 @@
 
 ## Financing the transaction
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze preapproval and loan terms using verified facts, current authority, and a documented professional workflow.
-- Analyze conventional government and alternative financing using verified facts, current authority, and a documented professional workflow.
-- Analyze financing disclosures using verified facts, current authority, and a documented professional workflow.
-- Analyze appraisal and underwriting using verified facts, current authority, and a documented professional workflow.
-- Analyze closing cost and seller credit using verified facts, current authority, and a documented professional workflow.
-- Analyze financing failure and contingency response using verified facts, current authority, and a documented professional workflow.
+- Explain what preapproval establishes and how a seller's agent should evaluate one.
+- Describe the common loan program types at the level a licensee may properly discuss, and identify where the conversation must move to a lender.
+- Explain how the appraisal interacts with the loan amount, and advise a buyer facing a shortfall.
+- Apply seller credits and concessions correctly, including their interaction with program limits and the appraisal.
+- Recognize the events during escrow that jeopardize a conditional approval.
+- Respond to a financing failure through the contract's mechanism rather than improvising.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: preapproval and loan program orientation | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: disclosures, appraisal, and underwriting | 50 | Sections 3-4 viewed |
+| Guided reading: credits, concessions, and financing failure | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. preapproval and loan terms
+## 1. Preapproval and loan terms
 
-### 1.1 Concept and purpose
+### 1.1 Why a licensee needs to understand financing
 
-preapproval and loan terms is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Financing the transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+A real estate licensee does not originate loans, does not underwrite, and must not advise on loan program suitability. A licensee nonetheless needs a working understanding of financing for three reasons:
 
-### 1.2 Essential elements
+1. **To advise a buyer on the strength of his own position** and on how his offer will read.
+2. **To advise a seller on the probability that an offer will close** — which is half of what a seller is actually choosing between.
+3. **To recognize the events that jeopardize a transaction** early enough to respond.
 
-The essential elements of preapproval and loan terms are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+The boundary is consistent: **explain how financing works generally; refer the specific recommendation to a qualified lender.**
 
-### 1.3 Roles and duties
+### 1.2 The three levels of lender assessment
 
-Responsibility for preapproval and loan terms may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+| | Basis | What it establishes | What it does not |
+|---|---|---|---|
+| **Prequalification** | Largely stated information | A rough borrowing range | Verification of anything |
+| **Preapproval** | Lender review of supporting information | A likely loan amount, subject to conditions | A commitment to lend |
+| **Loan commitment** | Underwriting complete | Substantially more certainty | Immunity from changed circumstances |
 
-### 1.4 Workflow
+None guarantees funding. All remain contingent on the property, the appraisal, and the borrower's circumstances holding through funding.
 
-A defensible workflow for preapproval and loan terms starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 1.3 Reading a preapproval as a seller's agent
 
-### 1.5 Documents and evidence
+A seller's agent evaluating an offer should read the letter rather than note its existence. The questions:
 
-Documents connected with preapproval and loan terms must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+- **What was verified?** Income, assets, employment, credit — or nothing beyond the borrower's statements?
+- **What conditions remain?**
+- **What program and terms does it assume?** A letter assuming a program the buyer will not use is worth little.
+- **Is the amount a maximum or the amount for this property?**
+- **When does it expire?**
+- **Who issued it?** A lender the agent can contact, or an unnamed source?
 
-### 1.6 Quantitative and factual analysis
+A letter that verifies nothing and expires in ten days tells the seller something real about the offer's strength, and that is information the seller is entitled to when choosing.
 
-Where preapproval and loan terms involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 1.4 Reading a preapproval as a buyer's agent
 
-### 1.7 California law and professional boundary
+The same reading, for a different purpose: to know how the offer will be received, and to advise the buyer on strengthening it. A buyer who can obtain a fully underwritten preapproval before offering is materially more competitive than one with a two-line letter, and that is advice worth giving early.
 
-California law controls the licensed activity associated with preapproval and loan terms; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 1.5 What a licensee may say about financing
 
-### 1.8 Consumer protection and fair access
+**May:** explain the general characteristics of common program types; explain what preapproval is; explain how the appraisal interacts with the loan; explain how a credit affects the transaction; recommend the buyer speak with more than one lender; explain what tends to make an offer read as strong.
 
-Consumer protection requires that preapproval and loan terms be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**May not:** recommend a specific program as suitable for this buyer; predict what a lender will approve; advise on structuring the buyer's finances to qualify; suggest that anything be omitted or characterized differently on an application.
 
-### 1.9 Applied scenario
+## 2. Loan program orientation
 
-Scenario: during financing the transaction, the file raises a question about preapproval and loan terms. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 2.1 Conventional financing
 
-### 1.10 Decision checklist
+A conventional loan is one not insured or guaranteed by a government agency. Terms vary by the borrower's credit profile, the down payment, the property type, and occupancy. Where the down payment is below a program threshold, mortgage insurance is commonly required, adding to the monthly cost.
 
-Before treating preapproval and loan terms as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 2.2 Government-backed programs
 
-## 2. conventional government and alternative financing
+Government-backed programs share a common structure: **a government agency insures or guarantees the lender against certain losses**, which reduces the lender's risk and supports terms — notably lower down payments — that qualifying borrowers might not otherwise obtain.
 
-### 2.1 Concept and purpose
+Three points licensees regularly misstate:
 
-conventional government and alternative financing is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Financing the transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+- **The government is not the lender.** Private lenders make the loans.
+- **The loans bear interest** on ordinary terms.
+- **They are not restricted to new construction**, and they are not restricted to first-time buyers as a general matter.
 
-### 2.2 Essential elements
+Government programs commonly carry property condition requirements, which matters to a seller evaluating an offer: a property with deferred maintenance may not satisfy them, and that is a closing-probability question rather than a preference.
 
-The essential elements of conventional government and alternative financing are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 2.3 Rate structures
 
-### 2.3 Roles and duties
+| Structure | Characteristic | The buyer's exposure |
+|---|---|---|
+| **Fixed rate** | Rate and payment fixed for the term | None to rate movement; pays for that certainty |
+| **Adjustable rate** | Rate changes per an index plus a margin, within caps | Payment changes over time |
+| **Interest-only period** | Scheduled payments cover interest only for a period | Principal is not retired during it |
+| **Balloon** | Scheduled payments do not retire principal by maturity | A large sum due at maturity |
 
-Responsibility for conventional government and alternative financing may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+For adjustable-rate loans, what determines the rate at each adjustment is **the index plus the lender's margin, subject to the caps in the note** — not the lender's discretion, and not the borrower's credit at that time.
 
-### 2.4 Workflow
+### 2.4 Occupancy matters, and misstating it is fraud
 
-A defensible workflow for conventional government and alternative financing starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Occupancy — owner-occupied, second home, or investment — affects pricing, program eligibility, and which consumer protections apply. It is therefore a material fact the lender relies on.
 
-### 2.5 Documents and evidence
+A buyer who asks a licensee to record owner-occupancy on a property he intends to rent is asking for participation in loan fraud. The correct response is to decline plainly, explain why, and record the loan as it actually is. Whether the buyer can afford the payment either way is beside the point.
 
-Documents connected with conventional government and alternative financing must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 2.5 Where the conversation must move to the lender
 
-### 2.6 Quantitative and factual analysis
+The moment the question becomes "which is better for me," it belongs to the lender. Suitability depends on the borrower's full financial detail, plans, and tolerance for payment change — facts the licensee does not hold and is not qualified to weigh.
 
-Where conventional government and alternative financing involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+What a licensee can properly do is help the buyer ask better questions: what the payment would be under each option, what happens if rates move, what the total cost looks like over the period he expects to hold the property, and what the break-even is on paying points.
 
-### 2.7 California law and professional boundary
+## 3. Financing disclosures
 
-California law controls the licensed activity associated with conventional government and alternative financing; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 3.1 The disclosures a buyer receives
 
-### 2.8 Consumer protection and fair access
+Federal law requires the buyer to receive an early estimate of loan terms and costs, and a final disclosure of the actual terms before consummation, with a period to review the final against the estimate.
 
-Consumer protection requires that conventional government and alternative financing be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+The licensee's role is not to interpret these documents. It is to:
 
-### 2.9 Applied scenario
+1. **Ensure the buyer knows they are coming** and roughly when.
+2. **Ensure the buyer reads them** and compares the final against the estimate.
+3. **Direct questions to the lender**, which is the party that can answer them.
+4. **Track how the review period interacts with the closing date**, because a change requiring re-disclosure can move the closing.
 
-Scenario: during financing the transaction, the file raises a question about conventional government and alternative financing. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 3.2 Why the review period matters to the transaction
 
-### 2.10 Decision checklist
+The waiting period before consummation exists for the buyer's benefit. It also has a practical consequence for scheduling: certain late changes can restart it. A licensee who understands this will not promise a seller a closing date that a late change makes impossible, and will raise the issue when a buyer proposes a late change to his loan.
 
-Before treating conventional government and alternative financing as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 3.3 What changes can move the closing
 
-## 3. financing disclosures
+| Change | Effect |
+|---|---|
+| Buyer changes loan program or term | Product change; new disclosures, and the timeline moves |
+| Rate lock expires and is re-locked | May change disclosed figures |
+| A fee increases beyond its tolerance | Requires disclosure, and may require a revised final |
+| Buyer changes lenders mid-escrow | Restarts substantial parts of the process |
+| Property or appraisal issue changes the loan amount | Terms change; disclosure follows |
 
-### 3.1 Concept and purpose
+A buyer who proposes any of these should be told plainly what it does to the closing date, before he decides.
 
-financing disclosures is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Financing the transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 3.4 What a licensee must not do
 
-### 3.2 Essential elements
+- Do not tell a buyer that a fee is "standard" or that a figure is "about right." Those are lender questions.
+- Do not compare loan offers for a buyer as though selecting between them.
+- Do not suggest a buyer withhold information from the lender, or provide anything the licensee knows to be inaccurate.
+- Do not accept anything of value for referring a buyer to a settlement service provider. Referrals happen; payment for them does not.
 
-The essential elements of financing disclosures are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+That last point deserves emphasis: a licensee who accepts a fee from an escrow company, title company, lender, or home warranty provider for sending business has a serious federal problem, and disclosure does not cure it.
 
-### 3.3 Roles and duties
+## 4. Appraisal and underwriting
 
-Responsibility for financing disclosures may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 4.1 What the appraisal does for the lender
 
-### 3.4 Workflow
+The lender obtains an appraisal to measure its collateral risk: what could be recovered if the loan is not repaid. **Lenders lend against the lower of the appraised value and the purchase price.**
 
-A defensible workflow for financing disclosures starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+That single sentence explains everything that follows from a low appraisal.
 
-### 3.5 Documents and evidence
+### 4.2 The low appraisal, worked
 
-Documents connected with financing disclosures must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+> Contract price $920,000. Buyer putting 20 percent down, so a $736,000 loan. The appraisal comes in at $900,000.
+>
+> **The lender will now lend against $900,000.** At 80 percent that is $720,000 — $16,000 less than planned.
+>
+> **The buyer's options:**
+>
+> 1. **Bring the additional $16,000**, if he has it and chooses to.
+> 2. **Renegotiate the price**, in whole or part.
+> 3. **Negotiate another resolution** — a credit, a split, a term change.
+> 4. **Cancel**, if a contingency permits and its procedure is followed.
+>
+> **What does not happen automatically:** the price does not adjust to the appraised value by operation of any loan program; the loan is not denied; and no one is entitled to a second appraisal as of right.
 
-### 3.6 Quantitative and factual analysis
+### 4.3 Where the appraisal contingency has been removed
 
-Where financing disclosures involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The buyer's position is materially different, and this is where a licensee must be careful:
 
-### 3.7 California law and professional boundary
+- The practical options remain — bring funds, renegotiate, seek a negotiated resolution.
+- **Whether he may cancel and what happens to his deposit is a legal question** turning on the contract's terms and the circumstances.
+- The licensee should lay out the practical options, state plainly that the removed contingency limits his contractual rights, and **recommend counsel before he decides to stop performing**.
 
-California law controls the licensed activity associated with financing disclosures; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+What a licensee must not do is tell the buyer he may cancel and recover his deposit because "the property isn't worth the price," or tell him he simply must perform. Both are legal conclusions, and both may be wrong.
 
-### 3.8 Consumer protection and fair access
+### 4.4 Appraiser independence and the licensee
 
-Consumer protection requires that financing disclosures be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+A licensee may provide genuinely relevant information through the proper channel: sales the licensee believes relevant, information about condition and improvements, a copy of the contract.
 
-### 3.9 Applied scenario
+A licensee may **not** communicate a target. "The deal dies without another $25,000" is the request independence rules exist to prevent, and a value that moves after that conversation is unreliable for the purpose the appraisal serves — including when the request comes from the licensee's own client.
 
-Scenario: during financing the transaction, the file raises a question about financing disclosures. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 4.5 Underwriting conditions
 
-### 3.10 Decision checklist
+An approval is commonly conditional. Conditions typically address verification — employment, funds, explanations for large deposits, documentation of gift funds — and property matters such as insurance and, where required, repairs.
 
-Before treating financing disclosures as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+Two implications for the licensee:
 
-## 4. appraisal and underwriting
+1. **Conditions are not formalities.** A prior-to-funding condition that is not satisfied means the loan does not fund.
+2. **The facts must hold through funding.** An approval rests on the file as underwritten, and lenders commonly re-check credit and employment before funding.
 
-### 4.1 Concept and purpose
+### 4.6 What jeopardizes an approval during escrow
 
-appraisal and underwriting is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Financing the transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Advise the buyer of these at the start of escrow, in writing, because by the time they surface it is usually late:
 
-### 4.2 Essential elements
+| Buyer action | Effect |
+|---|---|
+| Opening new credit, financing furniture or a car | Changes the debt-to-income analysis the approval rested on |
+| Changing or leaving a job | Employment is a condition; a change may end the approval |
+| Large unexplained deposits | Requires sourcing; may look like undisclosed borrowed funds |
+| Moving money between accounts | Complicates asset verification |
+| Paying off debt with funds needed for closing | Reduces verified cash to close |
+| Missing a payment on any obligation | Affects credit at the re-check |
 
-The essential elements of appraisal and underwriting are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A short written note at the start of escrow — *do not open credit, change jobs, or move large sums without telling your lender first* — prevents more failed transactions than any other single communication a licensee sends.
 
-### 4.3 Roles and duties
+## 5. Closing costs and seller credits
 
-Responsibility for appraisal and underwriting may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 5.1 What a seller credit is
 
-### 4.4 Workflow
+A seller credit is an agreed amount the seller contributes toward the buyer's closing costs. It is used to reduce the buyer's cash requirement without reducing the price.
 
-A defensible workflow for appraisal and underwriting starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 5.2 Two constraints licensees must know
 
-### 4.5 Documents and evidence
+**Program limits.** Loan programs limit how much a seller may contribute, and the limit varies by program, occupancy, and down payment. A credit exceeding the limit cannot simply be applied; the terms must be restructured, usually late in escrow when there is least time.
 
-Documents connected with appraisal and underwriting must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**The appraisal.** This is the point buyers most often get wrong:
 
-### 4.6 Quantitative and factual analysis
+> **A closing cost credit is not a price reduction for appraisal purposes.** The property must still appraise at the contract price.
 
-Where appraisal and underwriting involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+> A buyer offers $920,000 with a $15,000 credit rather than $905,000 with none. The seller's net is similar. But the appraisal must now support $920,000 rather than $905,000 — and if it comes in at $900,000, the buyer faces a gap he did not anticipate.
 
-### 4.7 California law and professional boundary
+### 5.3 Comparing offers on net rather than price
 
-California law controls the licensed activity associated with appraisal and underwriting; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+Sellers price-shop; licensees should net-compare. Worked:
 
-### 4.8 Consumer protection and fair access
+| | Offer A | Offer B |
+|---:|---:|---:|
+| Price | $920,000 | $895,000 |
+| Buyer credit | −$15,000 | $0 |
+| Compensation (5%) | −$46,000 | −$44,750 |
+| Escrow, title, transfer, recording (est.) | −$9,200 | −$9,000 |
+| **Net before loan payoff** | **$849,800** | **$841,250** |
 
-Consumer protection requires that appraisal and underwriting be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Offer A nets about $8,550 more — and that is not the whole answer. The seller should also weigh: the higher appraisal requirement on A, the financing strength behind each, the contingency periods, and the closing and possession dates. A net comparison that produces a number without that context invites a decision on the number alone.
 
-### 4.9 Applied scenario
+### 5.4 Repairs versus credits
 
-Scenario: during financing the transaction, the file raises a question about appraisal and underwriting. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Where investigation produces requests, the parties commonly choose between the seller performing repairs and the seller giving a credit.
 
-### 4.10 Decision checklist
+| | Seller performs | Credit |
+|---|---|---|
+| Control of quality | Seller's contractor | Buyer's, after closing |
+| Timing risk | Work must finish before closing | None |
+| Lender treatment | May be required for some programs | Subject to credit limits |
+| Dispute risk | Workmanship disputes before closing | Buyer bears the outcome |
 
-Before treating appraisal and underwriting as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+Neither is automatically better. What matters is that the buyer understands which risk he is accepting, and that whatever is agreed is documented in a signed amendment rather than in correspondence between agents.
 
-## 5. closing cost and seller credit
+### 5.5 Prorations and the closing statement
 
-### 5.1 Concept and purpose
+Continuing charges — property taxes, association dues, certain assessments — are allocated between seller and buyer at the ownership boundary. A seller who prepaid the year is reimbursed for the buyer's portion; a seller who has not paid is charged for theirs.
 
-closing cost and seller credit is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Financing the transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Licensees should be able to explain the concept and should not attempt to compute the final figures, which escrow prepares.
 
-### 5.2 Essential elements
+### 5.6 The payoff surprise
 
-The essential elements of closing cost and seller credit are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Sellers routinely expect the payoff to equal the principal balance. It does not: a payoff demand includes **accrued interest to the payoff date and any other amounts owed under the note.**
 
-### 5.3 Roles and duties
+Explaining this at listing, on the net sheet, prevents an unhappy conversation at closing — and it is one of the small things that distinguishes a licensee who prepared the client from one who did not.
 
-Responsibility for closing cost and seller credit may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+## 6. Financing failure and contingency response
 
-### 5.4 Workflow
+### 6.1 Respond through the contract
 
-A defensible workflow for closing cost and seller credit starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+When financing fails, the response runs through the contract's mechanism. A buyer whose loan is denied while the loan contingency is in effect must **follow the contract's cancellation procedure** — the written notice it requires, within its terms, with any supporting documentation.
 
-### 5.5 Documents and evidence
+What forfeits the protection:
 
-Documents connected with closing cost and seller credit must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+- Notifying the other agent verbally, on the theory that the denial itself ends the contract.
+- Instructing escrow unilaterally to return the deposit.
+- Ceasing to perform and allowing the seller to cancel for non-performance.
 
-### 5.6 Quantitative and factual analysis
+### 6.2 The seller's side
 
-Where closing cost and seller credit involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Where a buyer's financing looks doubtful, the seller's licensee should:
 
-### 5.7 California law and professional boundary
+1. **Confirm the contract's dates** and what each permits.
+2. **Communicate in writing** and record the responses.
+3. **Deliver the contractual notice** where the contract provides one, rather than treating a passed date as self-executing.
+4. **Advise the seller on the options** — including backup offers and the risks of cancelling prematurely.
 
-California law controls the licensed activity associated with closing cost and seller credit; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+A seller who cancels without following the procedure may find the cancellation ineffective and their own position compromised.
 
-### 5.8 Consumer protection and fair access
+### 6.3 Early warning signs
 
-Consumer protection requires that closing cost and seller credit be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Financing failures rarely arrive without notice. Signals worth acting on:
 
-### 5.9 Applied scenario
+- The buyer changes lenders mid-escrow.
+- Conditions are outstanding well into the period with no movement.
+- The lender stops responding to status requests.
+- The appraisal is delayed or not ordered promptly.
+- The buyer becomes evasive about documentation requests.
+- The buyer mentions a job change, a new purchase, or moving funds.
 
-Scenario: during financing the transaction, the file raises a question about closing cost and seller credit. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+A licensee who checks status weekly in writing, and records the answers, converts a surprise into a managed problem.
 
-### 5.10 Decision checklist
+### 6.4 Extensions
 
-Before treating closing cost and seller credit as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+Where the loan needs more time, an extension is a **change to a term of the contract** and is made by written amendment signed by both parties and delivered to escrow. An email between agents does not extend a contractual date.
 
-## 6. financing failure and contingency response
+The seller's decision whether to extend is the seller's, and it is a real decision: an extension keeps the property committed to a transaction that may still fail.
 
-### 6.1 Concept and purpose
+### 6.5 What the licensee must not do
 
-financing failure and contingency response is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Financing the transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+- Do not advise on whether the buyer is entitled to his deposit. That is a legal question.
+- Do not tell a seller she may keep the deposit, or a buyer that he will recover it.
+- Do not instruct escrow on behalf of a party, or attempt to resolve a dispute between the parties.
+- Do not let a contractual date pass while waiting for informal resolution.
 
-### 6.2 Essential elements
+### 6.6 Documenting the failure
 
-The essential elements of financing failure and contingency response are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Whatever the outcome, the file should show: the contract's financing terms and dates; the status communications and their dates; the notices delivered and the evidence; any amendments; the cancellation or resolution and its date; and the disposition of the deposit, or the fact that it remains unresolved.
 
-### 6.3 Roles and duties
+A financing failure with a complete file is a business disappointment. The same failure with an incomplete file is a dispute in which the brokerage cannot show what it did.
 
-Responsibility for financing failure and contingency response may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 6.7 Checkpoint
 
-### 6.4 Workflow
-
-A defensible workflow for financing failure and contingency response starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with financing failure and contingency response must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where financing failure and contingency response involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with financing failure and contingency response; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that financing failure and contingency response be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during financing the transaction, the file raises a question about financing failure and contingency response. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating financing failure and contingency response as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to advise a buyer facing a low appraisal with and without an appraisal contingency, name six events during escrow that jeopardize a conditional approval, and state how a closing date is extended.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. State the buyer's practical options and which of them the contract's terms permit, identify what you would recommend be referred to counsel and why, state the notices the next step requires and their delivery method, prepare the net comparison the seller needs, and identify the evidence you would retain. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
