@@ -235,7 +235,7 @@ The identification requirements were written for a world of signs, print, and ma
 
 ### 3.7 A worked advertising review
 
-> **Submitted for approval:** a thirty-second video for a social platform. On screen: exterior and interior footage of a listing, the licensee on camera for the last eight seconds. Overlaid text reads "JUST LISTED — 3BR — $749,000 — DM me!" The caption below the video reads: "Another one! My clients LOVE this neighborhood — best schools in the area and values here are only going up. Serving the whole county. Call or text me anytime — Jordan." The licensee's profile bio reads "Jordan | Real Estate | Let's find your home."
+> **Submitted for approval:** a thirty-second video for a social platform. On screen: exterior and interior footage of a listing, the licensee on camera for the last eight seconds. Overlaid text reads "JUST LISTED — 3BR — $749,000 — DM me!" The caption below the video reads: "Another one! My clients LOVE this neighborhood — best schools in the area and values here are only going up. Serving the whole county. Call or text me anytime — Jordan." The licensee's profile bio reads "Jordan — Real Estate — Let's find your home."
 >
 > **The findings, in order of seriousness.**
 >
