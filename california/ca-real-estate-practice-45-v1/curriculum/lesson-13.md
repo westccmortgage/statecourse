@@ -345,6 +345,281 @@ Corrections are made visibly, with the original preserved and the change attribu
 
 You should be able to classify a statement as innocent error, negligent misrepresentation, or fraud; state the correct first response to a client complaint; and name the trigger that requires referral to counsel.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Honesty and fair dealing** | The duties owed to **everyone** — the other party, their agent, lenders, escrow, appraisers, the public. Distinct from fiduciary duties, which run only to the principal. |
+| **"I don't represent them"** | A correct answer to the question of whose interests you advance, and no answer at all to whether you may mislead them. |
+| **Innocent error** | A mistake made with reasonable care on a reasonable basis. |
+| **Negligent misrepresentation** | A statement made without reasonable basis or reasonable care. Turns on **the care taken**, not on intent — which is why most claims against licensees involve no dishonesty at all. |
+| **Fraud** | A knowing misstatement or concealment intended to be relied on. Turns on **intent to deceive**. |
+| **The three categories of statement** | Verified fact stated with its source; unverified report attributed and flagged; professional opinion identified as opinion. |
+| **Category collapse** | Nearly every misrepresentation in residential practice: an unverified report delivered as a fact, or an opinion delivered as a certainty. |
+| **Concealment** | Silence about a known material fact where a duty to disclose exists. Careful silence is worse rather than better, because it demonstrates awareness. |
+| **Correction obligation** | Correcting a known error immediately, in writing, to everyone who received the original — and before the recipient acts on it, if that is still possible. |
+| **"An error you leave uncorrected"** | No longer an error. Waiting to see whether a mistake matters is what converts it into a misrepresentation. |
+| **Escalating above the instruction** | The response to a manager who tells you to conceal an error. Following an improper instruction and documenting its source does not transfer responsibility — it documents that you knew. |
+| **Errors and omissions coverage** | Responds to claims from professional services within its terms and limits, commonly conditioned on **prompt notice**. Late reporting can forfeit it; intentional acts are generally excluded. |
+| **Fraud as a pattern** | Fraud rarely presents as one obvious falsehood. It presents as small inconsistencies, each individually explainable. |
+| **Selective scrutiny** | Applying heightened suspicion based on characteristics rather than the pattern. Where fair housing problems begin. |
+| **Occupancy contradiction** | A file containing both an owner-occupancy representation and a lease for the same property. Different in kind from a missing document: the file itself contains the evidence contradicting a material representation to the lender. |
+| **Conflict of interest** | Any interest that could reasonably influence the licensee's advice — a referral arrangement, an ownership interest including a relative's, a threshold bonus, a personal relationship. |
+| **Disclosure in time to matter** | Before the client relies on the advice the conflict affects. Freedom to choose elsewhere, an intention not to be influenced, disclosing on request, and disclosing after acceptance are each inadequate. |
+| **Settlement service referral prohibition** | No fee, kickback, or thing of value for referring settlement service business, and no fee split where no services were performed. **Disclosure does not cure it.** |
+| **Affiliated business arrangement** | Where the brokerage has an ownership interest in a provider it refers to. Carries its own disclosure and conditions. |
+| **Licensee as principal** | Buying or selling for one's own account, or for a relative or entity. The highest-risk position in the business; requires disclosure, informed consent, and the broker's involvement. |
+| **Preservation** | The practical obligation attaching the moment a complaint is foreseeable. Nothing deleted — not texts, not drafts, not the email that reads badly. |
+| **Contemporaneous record** | A record created as events occurred, with dates and sources. Weightier not as a technicality but as **credibility**: a note written before anyone knew there would be a dispute reads differently from one assembled afterwards. |
+| **The trigger for counsel** | **The nature of the question** — not the client's request, the stage of the dispute, or whose interests are exposed. |
+| **Falsification** | Creating a document after the fact and dating it to match, altering an executed document, deleting unfavorable records, or removing surrounding documents so an inconsistency does not show. |
+
+## Practice problems
+
+### Problem 1
+
+Three licensees make three statements. (a) One repeats a square footage figure from a prior listing
+without verifying or attributing it; it is wrong. (b) One tells a buyer "this will definitely
+appreciate over the next two years." (c) One knows the seller concealed a drainage problem, says
+nothing affirmatively false, and steers the buyer's attention away from the side yard during the
+walkthrough.
+
+**Classify each.**
+
+> **Solution.** (a) **Negligent misrepresentation.** No lie was told and no dishonesty is required —
+> the standard is **the care taken**, and repeating an unverified figure as fact is a category
+> collapse: an unverified report delivered as verified fact. Most claims against licensees look
+> exactly like this.
+>
+> (b) **A prediction stated as a certainty**, and actionable. The defect is not optimism but stating
+> as certain something the licensee cannot know, on which the client will rely. The compliant version
+> is "property in this area has appreciated in recent years; here is the data — past performance
+> doesn't predict the future."
+>
+> (c) **Fraud territory — concealment with intent.** Where a duty to disclose exists, silence is
+> concealment, and careful silence is **worse** rather than better, because avoiding an affirmative
+> false statement while ensuring the fact is not discovered demonstrates awareness.
+
+### Problem 2
+
+A licensee realizes she transposed two digits reporting square footage. The buyer relied on it in
+setting his offer. Escrow closes in four days. Her manager tells her to say nothing: the buyer has
+his own inspection report, the figure came from a public record, and raising it now may kill the
+transaction.
+
+**What is the correct action, and why does each alternative fail?**
+
+> **Solution.** **Correct the figure in writing to both sides immediately, notify the broker, and let
+> the buyer decide what to do with accurate information while he still can.**
+>
+> *Say nothing because it came from a public record* — the source is irrelevant once she knows the
+> figure she gave was wrong. *Say nothing because the buyer could have verified* — the buyer's
+> diligence does not discharge her duty. *Wait and offer a credit if he raises it* — arrives after the
+> decision it should have informed. *Correct it verbally to the other agent* — not to the person
+> relying on it, and no record.
+>
+> **The manager's advice is the problem, not the guidance.** A licensee told to conceal a known error
+> escalates **above** the person who told her. Following an improper instruction and documenting that
+> it came from someone else does not transfer responsibility for the act; it documents that she knew.
+
+### Problem 3
+
+A licensee handles a brewing client complaint quietly for three months, hoping it resolves. It becomes
+a claim. She assumes the brokerage's E&O policy will handle it, and separately assumes it covers her
+decision to omit a known defect from a marketing sheet.
+
+**Assess both assumptions.**
+
+> **Solution.** Both are wrong, and the first is the more expensive.
+>
+> **E&O is commonly conditioned on prompt notice of a potential claim**, so three months of quiet
+> handling may have **forfeited the coverage** that would otherwise have responded. The bias must run
+> toward reporting: a report that turns out unnecessary costs a conversation; an unreported matter that
+> becomes a claim costs the coverage and the credibility.
+>
+> **Intentional acts are generally excluded.** Coverage protects against mistakes, not against
+> decisions to deceive — and it does not transfer responsibility for the underlying conduct in any
+> event. E&O is what responds when supervision and documented procedures fail; it is not a substitute
+> for them.
+>
+> The report-promptly list is worth memorizing: any error affecting a client's decision or a
+> transaction's terms; any dissatisfaction that could become a claim; any allegation of
+> misrepresentation, discrimination, or mishandling; any contact from another party's counsel; any
+> regulatory contact; any suspected fraud; any wire fraud incident **or near-miss**.
+
+### Problem 4
+
+A transaction features: pressure to close in nine days, a buyer who never appears and acts through an
+intermediary, funds arriving from a party unconnected to the transaction, and a purchase price well
+above anything the market supports with no explanation offered. The listing agent notes the buyer also
+negotiates aggressively, is self-employed with variable income, and asks a lot of questions.
+
+**Separate the signals from the noise, and state the correct response.**
+
+> **Solution.** **The first four are the pattern.** Urgency combined with changing parties or funding
+> can exist to defeat verification; a principal who never appears raises identity and authority
+> questions; unconnected funds are money laundering exposure; and a price materially inconsistent with
+> the property and market with no explanation suggests value or flipping fraud.
+>
+> **The last three are noise** — and treating them as signals is its own problem. An aggressive
+> negotiator, variable or self-employed income, and a consumer who asks many questions are not
+> suspicious. Applying heightened scrutiny based on characteristics rather than the pattern is where
+> **fair housing problems begin.**
+>
+> **The correct response:** document the inconsistencies, resolve them with evidence, and escalate if
+> they cannot be resolved. Proceeding because "suspicion is not proof" is how a licensee becomes the
+> documented participant in someone else's scheme.
+>
+> **What must not happen:** investigating alone, confronting the suspected participant, warning them
+> that concerns have been raised, withdrawing quietly so the next licensee faces the file blind, or
+> participating in any requested act however small. Escalate to the broker, who determines what
+> reporting is required.
+
+### Problem 5
+
+A licensee recommends an escrow company that pays her brokerage $300 per file, refers buyers to a
+home warranty provider her brother owns, and stands to receive a builder bonus if a particular home
+sells above a threshold. She plans to mention all three after the offers are accepted, and notes that
+clients are always free to use someone else.
+
+**Assess each arrangement and each justification.**
+
+> **Solution.** **The $300 per file is prohibited, not merely undisclosed.** A licensee may not give or
+> accept a fee, kickback, or thing of value for referring settlement service business, or split a fee
+> where no services were performed. **Disclosure does not cure this one** — unlike an ordinary conflict,
+> which disclosure manages, payment for referrals is prohibited whether disclosed or not. The
+> arrangement's resemblance to ordinary business courtesy is exactly why it catches people.
+>
+> **The brother's company and the builder bonus are conflicts requiring disclosure before the client
+> relies on the advice they affect** — and if the brokerage has an ownership interest in a provider it
+> refers to, that is an affiliated business arrangement with its own disclosure and conditions.
+>
+> **Both justifications fail.** "Free to choose someone else" — a client cannot weigh a recommendation
+> without knowing what the recommender receives. "Disclose after acceptance" — information after the
+> decision has no value. Three more that fail the same way: *I'll disclose if they ask* (they don't
+> know to), *I won't let it influence me* (a private intention is not something a client can evaluate),
+> and *the fee comes from the seller* (who pays does not change that the advice carries an interest).
+
+### Problem 6
+
+A client emails alleging the licensee mishandled a disclosure. The licensee immediately sends a
+detailed six-paragraph defense, apologizes for "dropping the ball," offers to reduce her commission
+by $2,000, deletes a text thread that reads badly, and decides to tell her broker if the client
+escalates.
+
+**Identify each error and give the correct sequence.**
+
+> **Solution.** Five errors, and the deletion is categorically the worst.
+>
+> **The immediate detailed defense** commits a position before anyone has reviewed the file, and is
+> frequently wrong on details. **The apology accepting fault** may be treated as an admission and can
+> compromise coverage. **The fee reduction** commits the brokerage, may read as an admission, and
+> rarely ends the matter. **Waiting to tell the broker** turns the original problem into a supervision
+> failure compounding it.
+>
+> **The deletion converts a defensible dispute about professional judgment into a question about
+> integrity** — and it is generally discoverable anyway. The moment a complaint is foreseeable,
+> preservation attaches in practice: nothing is deleted, not texts, not drafts, not the email that
+> reads badly.
+>
+> **The correct sequence:** acknowledge promptly, because silence reads as evasion; notify the broker
+> immediately; preserve everything; respond factually without admitting or denying liability before
+> the file is reviewed; offer no settlement on your own initiative; and report to the carrier where the
+> matter could become a claim.
+
+### Problem 7
+
+A file note reads: "Discussed inspection issues with buyer. Seller was difficult about disclosure.
+Possible old roof leak, appears repaired." A colleague adds that notes like this are protected from
+disclosure anyway, and that anything missing can be written up accurately after the fact if a dispute
+arises.
+
+**Rewrite the note and correct both claims.**
+
+> **Solution.** **Rewritten:** "Recommended buyer obtain structural evaluation of the foundation crack
+> before the 17th; buyer declined by text on the 12th." — "Seller instructed that the drainage issue
+> not be disclosed. Advised it must be. Escalated to broker 6/14." — "Brown staining approx. 3 ft
+> across on NW bedroom ceiling; paint appears newer in that area."
+>
+> Specific, dated, factual, and separating observation from inference. **Characterizations of people
+> age badly; recorded facts do not** — "seller was difficult" tells a later reader nothing and reads as
+> hostility.
+>
+> **Both claims are wrong.** Contemporaneous notes are **not privileged** from disclosure — write them
+> as though they will be read, because they may be. And a later reconstruction is **not inadmissible**;
+> it is simply **weaker**. The advantage of a contemporaneous record is credibility rather than
+> admissibility: a note written before anyone knew there would be a dispute reads differently from an
+> account assembled once the outcome was known.
+
+### Problem 8
+
+Preparing for a Department inquiry, a licensee with twenty years of experience decides to answer the
+investigator's questions informally by phone, tells a buyer he is "definitely entitled" to his deposit
+back, and recreates a missing contingency removal with a matching date so the file is complete.
+
+**Assess each.**
+
+> **Solution.** **The informal response is wrong.** Contact from the Department is a matter for the
+> broker and usually for counsel. The licensee's obligations are to notify the broker immediately,
+> preserve records, and not respond independently or informally. Cooperation is expected —
+> **improvised** cooperation without review is where licensees make statements they cannot support.
+>
+> **The deposit statement is a legal conclusion.** Entitlement to a deposit is squarely on the referral
+> list, alongside the legal effect of documents, whether a party may cancel or refuse to perform, the
+> consequences of how title is taken, boundary and easement claims, and estate, probate, trust, and
+> entity authority questions. The trigger is **the nature of the question**, and **experience does not
+> extend the scope of the license** — twenty years confers no more entitlement to advise on legal
+> effect than two weeks.
+>
+> **The recreated document is the one that ends the career.** Everything else in this lesson is
+> survivable — errors, complaints, claims, even regulatory findings — provided the conduct in response
+> was honest. A documented gap is a compliance problem; a manufactured document is a question about
+> integrity. Corrections are made **visibly**, with the original preserved and the change attributable.
+> A record that can be silently altered is not a record.
+
+## Chapter summary
+
+**Fiduciary duties run to the principal; honesty and fair dealing run to everyone.** "I don't
+represent them" answers the wrong question.
+
+**Innocent error, negligent misrepresentation, and fraud** are separated by care and by intent — and
+most claims are negligence claims requiring no dishonesty at all.
+
+**Keep the three categories of statement distinct:** verified fact with its source, unverified report
+attributed, opinion identified as opinion. Nearly every misrepresentation is a collapse between them.
+
+**Silence about a known material fact is concealment**, and careful silence is worse rather than
+better.
+
+**Correct known errors immediately, in writing, to everyone who received the original**, before they
+act on it. An error you leave uncorrected is no longer an error — and an instruction to conceal one is
+escalated above the person who gave it.
+
+**E&O responds within its terms, on prompt notice, and not to intentional acts.** Late reporting can
+forfeit it.
+
+**Fraud presents as a pattern of small explainable inconsistencies.** Document, resolve with evidence,
+escalate — and do not apply scrutiny to characteristics instead of the pattern.
+
+**Do not investigate, confront, warn, quietly withdraw, or participate.** Escalate to the broker.
+
+**Disclose conflicts before the client relies on the advice they affect** — and note that a payment for
+settlement service referrals is prohibited outright, which disclosure does not cure.
+
+**Acting as principal, or opposite a friend or relative, requires disclosure, consent, and the
+broker's involvement.**
+
+**The first response to a complaint sets the trajectory:** acknowledge, notify the broker, preserve
+everything, respond factually, commit nothing, notify the carrier. Deleting an unfavorable record is
+worse than the record.
+
+**Contemporaneous, specific, dated records win on credibility.** Notes are not privileged;
+reconstructions are not inadmissible, only weaker.
+
+**Refer on the nature of the question**, and remember that experience does not enlarge the license.
+
+**Falsifying the record is the one thing that is not survivable.** Corrections are visible, originals
+are preserved, and changes are attributable.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Classify the conduct at issue, identify who must be told and in what order, state what must be preserved, draft the correction or communication you would send and to whom, identify what you would escalate and what you would refer to counsel, and state what you would decline to do and why. The instructor version contains the scoring rubric.

@@ -317,6 +317,274 @@ The fourth question is the one that matters. A plan that changes nothing next we
 
 You should be able to state why structure outperforms effort, produce the words you would use to decline a neighborhood-composition question, and write a plan element that someone else could verify you performed.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Explicit bias** | A consciously held attitude the person is aware of. The conduct fair housing law was originally written against. |
+| **Implicit bias** | An association operating automatically, outside conscious awareness. Produces the same effects in people who sincerely reject the attitude. |
+| **Systemic bias** | Patterns built into practices, policies, and structures, producing unequal outcomes with **no individual acting with bias at all.** |
+| **Sincerity is not protective** | A licensee holding genuinely egalitarian views can act on associations they are unaware of. No contradiction — the association is not the belief. |
+| **Self-report cannot detect it** | "I know I don't have any biases" is not evidence, because the thing denied is by definition unavailable to introspection. |
+| **Discretion** | Where implicit bias operates: any decision made case by case, without a standard, on incomplete information, under time pressure. |
+| **Racially restrictive covenant** | A recorded restriction prohibiting sale or occupancy by members of specified groups. Unenforceable now; the language still appears in title chains and the settlement patterns persist. |
+| **Redlining** | Federally influenced appraisal and lending practice grading neighborhoods for risk, with grades correlated to racial composition. Poorly graded areas received less mortgage capital for decades. |
+| **Exclusionary land use** | Zoning and subdivision requirements — minimum lot sizes, multifamily prohibitions, parking and setback rules — that raise cost and restrict who can live in an area, with effects independent of stated intent. |
+| **Unequal terms** | Contract-for-deed and similar arrangements transferring occupancy without equity, so payments built no ownership. |
+| **Compounding** | Why exclusion does not end when the practice ends: housing wealth is inherited and becomes the next generation's down payment. Equal treatment starting now does not by itself produce equal outcomes. |
+| **Corrective steering** | Selecting properties for a buyer based on a protected characteristic with a corrective intent. Still steering. |
+| **Structure beats effort** | The central finding: conscious effort to be fair does not reliably reduce implicit bias, because effort depends on noticing. Structure works by removing the discretion. |
+| **Interruption practice** | A specific structural control — written criteria, uniform scripts, consumer-driven search, objective sources, uniform showing protocols, documented evaluations, slowing under time pressure, outcome review. |
+| **Outcome review** | Periodically examining your own patterns rather than your intentions — properties shown mapped, response times by source, who was encouraged or discouraged, whom your marketing reached. |
+| **Declining well** | Refusing the characterization, giving an honest reason, and pointing to a usable source. Distinct from refusing flatly, answering "in general terms," or answering by redirecting the search. |
+| **Steering by omission** | Redirecting the search or downplaying a property instead of answering the question asked. |
+| **Participatory component** | The consumer and licensee role-plays, written submissions, structured feedback, and revision. Cannot be satisfied by reading, and cannot be waived. |
+| **The revision** | The part of the practicum that matters most — the gap is not between knowing the rule and not knowing it, but between knowing it and producing compliant words while a client you like waits for an answer. |
+| **Checkability** | The test of an action plan element: could someone else verify whether you did it? |
+| **Unlawful instruction script** | Words written in advance: refuse plainly, explain without lecturing, offer a lawful alternative addressing the real concern, escalate transparently. |
+
+## Practice problems
+
+### Problem 1
+
+A licensee says: "I understand implicit bias, but honestly it doesn't apply to me — I genuinely
+believe in equal treatment, I've never had a complaint in fifteen years, and I'd know if I were doing
+something wrong."
+
+**Address each of the three claims.**
+
+> **Solution.** Each claim relies on an intuition that implicit bias specifically defeats.
+>
+> **"I believe in equal treatment."** Sincerity is not protective. The association operates
+> automatically and outside awareness, and it is not the belief — so a licensee who genuinely holds
+> egalitarian views can act on associations they do not know they have. There is no contradiction to
+> resolve.
+>
+> **"No complaints in fifteen years."** The consumer in this position usually **cannot name what
+> happened** — most describe feeling vaguely managed, or assume the agent knew something they did not.
+> That is exactly why the conduct is hard to detect and hard to complain about, and why the obligation
+> sits on the licensee rather than on the consumer to object.
+>
+> **"I'd know."** Self-report is the one instrument implicit bias reliably evades. That is why the
+> practicum targets **practices and outcomes**, which are observable, rather than self-assessment.
+>
+> **What transfers:** the productive response is not to argue about whether he has biases. It is that
+> a licensee who applies uniform practices produces fair outcomes whatever he holds internally.
+
+### Problem 2
+
+Three brokerages produce unequal outcomes. Brokerage A has an owner who instructs managers to prefer
+certain applicants. Brokerage B has an agent who sincerely believes in equal treatment and
+consistently shows buyers "where they'd be more comfortable." Brokerage C applies one screening
+criterion identically to every applicant, builds its business entirely on client referrals, and spends
+its marketing budget where response rates are highest.
+
+**Classify each, and explain why the third is the hardest to see.**
+
+> **Solution.** **A is explicit bias** — a consciously held attitude, acted on deliberately. **B is
+> implicit bias** — the same effects produced by someone who rejects the attitude, and experiences his
+> own conduct as helpfulness.
+>
+> **C is systemic**, and nobody in it is acting with bias at all. A criterion applied identically can
+> still produce unequal outcomes where it correlates with a history of unequal access. A referral-based
+> model **reproduces the composition of the existing client base**. And a marketing budget spent where
+> response rates are highest **concentrates opportunity where it already exists.**
+>
+> It is hardest to see because every individual decision is defensible and none of them is about a
+> protected characteristic. Recognizing the category is what allows a licensee to ask whether an
+> inherited practice is producing an outcome they would not choose.
+
+### Problem 3
+
+A licensee lists the decisions she makes in a typical week: which properties to show and in what
+order, how quickly to return an inquiry, how warmly to describe a property, whether to accompany a
+visitor, whether to ask about preapproval, whether to encourage an application, and how firmly to
+apply a screening criterion. She observes that none of these is about a protected characteristic.
+
+**Why is that observation the point rather than the reassurance?**
+
+> **Solution.** Because implicit bias operates in **discretion**, not in decisions people recognize as
+> being about protected characteristics. Wherever a licensee decides case by case, without a standard,
+> on incomplete information, under time pressure, there is room for it to work — and every item on her
+> list has exactly that shape.
+>
+> The corresponding structural controls map onto them one for one: written criteria applied uniformly
+> constrain the decision itself; uniform service scripts constrain differential treatment at first
+> contact; the consumer's criteria driving the search constrain whose judgment selects properties;
+> objective sources constrain characterization; uniform showing protocols constrain selective
+> supervision; documented evaluations make the basis reviewable, which itself changes behavior; and
+> slowing decisions matters because **bias operates most strongly when fast.**
+>
+> **What transfers:** the reason this lesson sits in a practice course rather than an ethics seminar.
+> Effort fails because it depends on noticing, and the thing to be noticed operates outside awareness.
+
+### Problem 4
+
+A buyer asks to see two homes on Alder Street. The licensee, warm and helpful throughout, says he has
+"a couple of places you'll like better," shows three homes elsewhere, tells her she would "be more
+comfortable over here," and mentions the schools are "a better fit for a family like yours."
+
+**From the consumer's position: what did she receive, what does she now know about the Alder Street
+homes, and did his friendliness change the effect?**
+
+> **Solution.** **She received three properties she did not ask for and none of the two she did.** She
+> now knows **nothing** about the Alder Street homes — not their condition, not their price against the
+> market, not whether they met her criteria. She cannot evaluate them, and she cannot even tell that
+> she was prevented from evaluating them.
+>
+> **The friendliness changed nothing about the effect and made the conduct harder to name.** The
+> licensee is warm, well-meaning, and trying to be useful; the consumer still did not see the homes she
+> asked about. **Effect is independent of intent** — which is exactly what the consumer-side role-play
+> exists to make concrete, because being told this is different from experiencing the gap from that
+> side.
+>
+> "A better fit for a family like yours" is the sentence that carries the most and looks the most
+> innocuous. It sorts people, and it was delivered as helpfulness.
+
+### Problem 5
+
+A client you like says during a showing: "Can you tell us honestly what the neighbors are like? We
+just want to know if we'd fit in. And which schools would be right for our kids? We trust your
+judgment more than some website."
+
+**Give the words you would say — then handle "come on, off the record."**
+
+> **Solution.** Something close to: *"I can't answer the question about the neighbors, and I want to be
+> straight with you rather than just dodging — I don't describe neighborhoods by who lives in them, and
+> honestly my impression wouldn't be worth much to you anyway. What I can do is point you to the census
+> data and the city's own information, and the district publishes its own performance data so you can
+> weigh what actually matters to your family. And here's what I can tell you: the property itself, and
+> what's within walking distance."*
+>
+> **On the follow-up:** *"There isn't really an off the record for this one, and my honest answer is
+> the same — I'd be guessing about people, and you'd be making a real decision on my guess."* Held
+> without hostility, and without lecturing.
+>
+> Against the criteria: it declines the characterization, gives an honest reason, redirects to a usable
+> source, preserves the relationship, handles the follow-up, distinguishes property from people, and
+> does not steer by omission.
+
+### Problem 6
+
+Evaluate four responses to the same question: (a) "It's a great neighborhood, you'll love it."
+(b) "I'm not allowed to discuss that" — then a change of subject. (c) "Let me just say the families
+around here are a lot like you." (d) "The schools here are excellent."
+
+**Rank them by how badly they fail.**
+
+> **Solution.** **(c) is the worst** — direct steering, delivered in the warmest possible form, and the
+> warmth is what makes it effective rather than what excuses it.
+>
+> **(d) is next:** a ranking the licensee cannot support, and one of the most common proxies in
+> residential practice. School quality is a proxy question far more often than it is a school question.
+>
+> **(a) is a characterization**, and a favorable one is still a characterization. Licensees say it
+> without noticing that they have answered the question they meant to decline.
+>
+> **(b) declines correctly and still fails** — it leaves the client with nothing, reads as evasive, and
+> sends him to a less careful source. The consumer has a real informational need, and refusing without
+> redirecting does not make it go away.
+>
+> Two related failures worth naming: answering "in general terms," since a general characterization is
+> still a characterization; and answering by **showing rather than telling** — redirecting the search
+> toward what you would have said.
+
+### Problem 7
+
+Two action plans. Plan 1: "I will treat all clients equally, be aware of my biases, and not
+discriminate." Plan 2: "I will use the same eight intake questions with every buyer and record their
+stated criteria in the file; map the properties I showed each quarter against those criteria; and
+answer neighborhood-composition questions with the census and district scripts in my plan, noting the
+request in the file."
+
+**Apply the test, and identify what Plan 2 still needs.**
+
+> **Solution.** **The test is: could someone else check whether you did it?** Plan 1 fails every
+> element — commitment, awareness, and non-discrimination are not observable behaviors, and a plan of
+> that kind leaves day-to-day practice exactly as it was. Plan 2's three elements each pass.
+>
+> **Plan 2 is still incomplete.** The eight required elements are intake, search, questions you will
+> decline, showing and access protocol, screening or referral criteria, advertising review — **including
+> the audience it will be delivered to** — outcome review, and escalation.
+>
+> Plan 2 covers intake, part of search, the declining scripts, and part of outcome review. It is
+> missing the uniform showing and access protocol, screening criteria with documented evaluations,
+> advertising review including audience targeting, and the escalation script.
+>
+> **On outcome review specifically:** it is the practice most likely to detect a problem and the least
+> used. Mapped showings, response times grouped by source, who was encouraged or discouraged, and whom
+> the marketing reached. Individual decisions rarely reveal anything; **patterns do** — and a licensee
+> who reviews their own patterns finds problems while they are still correctable.
+
+### Problem 8
+
+An owner tells you casually, while signing, that he does not want the unit shown to a particular
+category of applicant. The listing is worth several months of income. Write what you would say.
+
+**Then identify the four components your answer must contain.**
+
+> **Solution.** Something close to: *"I can't do that, and I want to be straight with you about why.
+> That's protected under California law, and screening or showing on that basis isn't something I'm
+> able to do — it would put your listing and my license at risk. What I can do is apply the same
+> written criteria to every applicant, which is what actually protects you if a decision is ever
+> questioned. I'm also going to let my broker know we discussed this, because that's the process."*
+>
+> **The four components:** it **refuses plainly**; it **explains without lecturing**; it **offers a
+> lawful alternative that addresses the underlying concern**; and it **escalates transparently** rather
+> than behind the client's back.
+>
+> **Why this is written in advance:** it is the hardest thing in the lesson to do in the moment. The
+> client is in front of you, the listing is at stake, and the instruction is usually delivered
+> casually — which is exactly the condition under which people improvise something softer and end up
+> complying informally.
+>
+> Three failures to name: following it while documenting that it came from the owner, which does not
+> transfer responsibility; complying informally by scheduling around those applicants, which achieves
+> the same exclusion; and withdrawing quietly without explanation, which leaves the owner free to
+> repeat the instruction with the next licensee.
+
+## Chapter summary
+
+**Three kinds of bias, and this lesson is about the second and third.** Explicit bias is the one
+licensees already know they must not act on. Implicit bias produces the same effects in people who
+reject the attitude. Systemic bias produces unequal outcomes with no individual acting with bias at
+all.
+
+**Sincerity, self-report, and good intentions each fail** as protections, because the association
+operates outside awareness and the most consequential steering is committed by licensees who
+experience their conduct as helpfulness.
+
+**Bias operates in discretion** — case-by-case decisions, without a standard, on incomplete
+information, under time pressure. None of them looks like a decision about a protected characteristic,
+and that is the point.
+
+**The history is in a practice course because the patterns are still on the ground.** Covenants,
+redlining, steering, exclusionary land use, and unequal terms produced settlement patterns a licensee
+who does not know their origin will read as natural facts and pass on as market insight.
+
+**Exclusion compounds**, because housing wealth is inherited and becomes the next generation's down
+payment. That explains why equal treatment starting now does not by itself produce equal outcomes —
+and it does **not** license corrective steering, which is still steering.
+
+**Structure beats effort.** Effort depends on noticing; structure removes the discretion. Written
+criteria, uniform scripts, consumer-driven search, objective sources, uniform protocols, documented
+evaluations, slowing under pressure, and outcome review.
+
+**Review outcomes, not intentions.** Patterns reveal what individual decisions never do.
+
+**Have the declining scripts ready**, because licensees steer partly because declining is hard in the
+moment. Decline the characterization, give an honest reason, point to a usable source — and never
+refuse flatly, answer "in general terms," or answer by redirecting the search.
+
+**The participatory components cannot be satisfied by reading.** The consumer role makes the
+independence of effect from intent concrete; the licensee role and its **revision** close the gap
+between knowing the rule and producing compliant words under real social pressure.
+
+**A plan is real when someone else can check it.** Eight elements, in operational terms, each
+verifiable — and the question that matters is what you will do differently next week.
+
+**Write the unlawful-instruction script in advance:** refuse, explain, offer the lawful alternative,
+escalate transparently.
 ## Required applied assignment
 
 Submit your written fair housing action plan covering all eight required elements in operational terms, together with your written reflection. Each element must be specific enough that a third party could verify whether you performed it. The instructor version contains the scoring rubric, including the checkability standard applied to each element.

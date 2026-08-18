@@ -287,6 +287,298 @@ When you meet a situation this course did not cover, four questions will usually
 
 You should be able to take an unfamiliar transaction problem, apply the four questions, and produce both the action and the record it requires.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **The chronology** | The organizing principle of a transaction: each step supplies the information the next step requires. Every common sequencing error is a decision made before its information arrived. |
+| **The ordering test** | Does this decision have, in front of it, the information it was meant to be made with? |
+| **Authority to convey** | Who can actually sell — the trustee within the trust's authority, the person the entity's documents authorize, what a probate appointment permits, or all co-owners. Never assumed from occupancy or the tax roll. |
+| **Disclose, elect, confirm** | The agency sequence, at three times, each preceding the decision it informs: before the listing is signed, before the buyer signs an offer, and before or when the offer is presented. |
+| **Informed written consent** | What dual agency requires from **both** parties, and it must precede the brokerage acting on both sides rather than follow it. |
+| **Negotiable compensation** | Set independently by the brokerage and negotiated with the client. Never standard, never set by an association or listing service. |
+| **Protection clause** | Compensation where a buyer the brokerage introduced purchases shortly after the term. Applies on its terms — explained at signing rather than initialed past. |
+| **The pricing division** | The analysis and the advice are the licensee's obligation; the price is the client's decision. Both halves, and licensees fail in both directions. |
+| **Counteroffer** | A rejection of the original and the substitution of a new one. The original is **gone, not suspended** — including where the change is handwritten on a signed form. |
+| **Permissible silence versus misrepresentation** | Declining to disclose competing terms is the seller's prerogative; inventing them is a misrepresentation a client's instruction cannot authorize. |
+| **Two independent duties** | The seller discloses known material facts; the licensee performs and discloses their own visual inspection. Neither discharges the other, and a professional inspection discharges neither. |
+| **Observation versus inference** | What the licensee saw, stated as such — never the conclusion about what it means. |
+| **Rights run from delivery** | Why an undated disclosure proves the wrong thing, and why receipt before closing does not cure late delivery. |
+| **Written removal** | How contingencies end under the standard California form. A passed date removes nothing; the seller's route is the contractual notice. |
+| **Mutual written instruction** | The only basis on which escrow acts. Where the parties disagree, escrow stops rather than deciding. |
+| **Exception** | An item the title policy does not insure against — which is why exceptions are read and the underlying documents obtained. |
+| **Lower of value or price** | What lenders lend against. The sentence from which every consequence of a low appraisal follows. |
+| **Signed amendment** | The only way a contract term changes. An agent email, a verbal agreement, or an instruction to escrow alone changes nothing. |
+| **The closing sequence** | Signing, funding, recording, disbursement — in that order, with recording order establishing lien priority. |
+| **Reconstructability** | The audit standard: could a person who was not there determine what happened, when, and on what basis? |
+| **Superseded versions** | Kept, because the sequence of versions is what shows when a term changed and who agreed — the question a dispute usually asks. |
+| **Documented gap versus manufactured document** | A gap is a compliance problem a brokerage survives. A backdated or created document is falsification, and it ends careers. |
+| **The four questions** | Whose decision is this? Whose duty is engaged? Does this decision have the information it requires? What will the file show? |
+
+## Practice problems
+
+### Problem 1
+
+A licensee takes a listing from a woman living in the home. Title is held by her late mother's trust;
+she is one of three beneficiaries. The listing agreement is signed at the appointment; the agency
+disclosure is signed three days later; the property goes live the same week with photographs from the
+prior listing and a square footage figure copied from it.
+
+**Apply the ordering test to each event.**
+
+> **Solution.** Four failures, and three of them are sequencing failures of the same kind.
+>
+> **Authority was never verified** — the most common and most expensive intake failure. The
+> **trustee** signs, within the authority the trust document grants; beneficiaries do not, however many
+> and however clearly they benefit. This surfaces in escrow, where unwinding costs the most.
+>
+> **The agency disclosure came after the listing agreement.** The seller committed before being
+> informed. The document now exists and the protection it was meant to give does not.
+>
+> **The photographs and the square footage** each precede the information they required: truthfulness
+> is measured against the property's **current** condition, and copying a figure from a prior listing
+> launders an unverified number rather than verifying it.
+>
+> **The ordering test disposes of all three:** does this decision have, in front of it, the information
+> it was meant to be made with?
+
+### Problem 2
+
+A seller lists $150,000 above the licensee's supported range after receiving the analysis and written
+advice. Two weeks later the licensee revises her comparative market analysis upward so the file
+"matches the list price," and tells a buyer's agent that the price reflects the brokerage's opinion of
+value.
+
+**What was right, and what was wrong?**
+
+> **Solution.** **The listing at the seller's number was right.** Price is the seller's decision; the
+> analysis and the advice are the licensee's obligation. She discharged both — the analysis, the
+> written advice, and the seller's informed decision are what the file needs.
+>
+> **The revision is the failure**, and it is worse than having no analysis. An analysis that follows
+> the price rather than informing it documents nothing. And representing the list price as the
+> brokerage's opinion of value **adopts the seller's reasoning as the brokerage's** — the one thing the
+> file must not do.
+>
+> **What the file should show:** the comparables with sources as of the date, the adjustment grid with
+> direction and basis, the reconciliation and its weighting, the comparables rejected and why, the
+> market conditions evidence, the recommendation as a range with a most-probable point, the written
+> advice, and the seller's decision.
+
+### Problem 3
+
+A buyer offers $880,000. The seller strikes the price to $895,000, signs, and returns it. The buyer
+signs but writes a different closing date before returning it. Meanwhile the seller's agent tells two
+other buyers there are "several offers well above asking," when there is one, and counters three
+offers at $940,000 with no further provision.
+
+**State where the parties stand and identify every defect.**
+
+> **Solution.** **No contract.** The seller's changes were a counteroffer, which **rejected** the
+> $880,000 offer and substituted a new one — the original is gone, not suspended. The buyer's
+> handwritten date change is a **further counteroffer**, however small; signing does not convert a
+> modification into an acceptance. The buyer's counter is outstanding.
+>
+> **"Several offers well above asking" is a misrepresentation.** Declining to disclose competing terms
+> is permissible and is the seller's decision; inventing them is not, and a client's instruction
+> cannot authorize it.
+>
+> **Countering three offers without a final election** exposes the seller on more than one acceptance
+> — the customary protection makes the seller's obligation contingent on subsequent written acceptance
+> of the buyer's acceptance.
+>
+> Worth adding for the competing buyers' agents: the seller chooses, there is no obligation to accept
+> the highest, and there is no priority by order of receipt.
+
+### Problem 4
+
+The listing agent observes ceiling staining with fresh paint. The seller says a pipe leaked, was
+repaired, and "there's nothing to disclose." The seller's disclosure comes back with two blanks. The
+transfer disclosure is delivered to the buyer nine days after he removed his contingencies, and the
+listing agent proposes extending the closing by a week if he objects.
+
+**Address each.**
+
+> **Solution.** **Both duties are engaged and neither discharges the other.** The seller discloses the
+> leak and the repair — a repaired condition is still material, because the adequacy of the repair is
+> exactly what a buyer evaluates, and here there are no records. The agent separately records and
+> discloses **the observation**: "brown staining approximately three feet across on the northwest
+> bedroom ceiling; paint appears newer in that area." Not the inference that there was a leak that has
+> been repaired.
+>
+> **The blanks are completed** — every item answered, "unknown" where that is true, never "no" where
+> the seller does not know, and never completed by the licensee on the seller's behalf.
+>
+> **The late delivery is raised immediately**, not managed. Rights run from delivery and are not
+> extinguished because the buyer acted earlier without the information; late delivery may revive or
+> extend his ability to respond. **Receipt before closing does not cure it, and moving the closing date
+> does not address the right to respond.**
+
+### Problem 5
+
+The buyer's investigation contingency period ends on the 17th. Nothing is delivered. On the 18th the
+seller's agent tells the seller she is free to accept a better offer. The buyer's agent, separately,
+has not yet ordered insurance quotes for a property in a mapped fire area, with four days left in the
+period.
+
+**Correct the first and assess the second.**
+
+> **Solution.** **The contingency remains in effect.** Under the standard California form contingencies
+> end only by **written removal**; a passed date removes nothing, the buyer is not committed, and the
+> seller is not free to sell elsewhere. The seller's route is the contractual notice, which starts the
+> period the contract specifies — after which she may cancel per its procedure.
+>
+> **The insurance is the other half of the same lesson.** Most failed transactions fail because a track
+> **started late**, and in mapped fire and flood areas availability and cost have become a common cause
+> of failure. A buyer who learns in week one that coverage will cost far more than assumed can act; one
+> who learns it with four days left generally cannot.
+>
+> **The control for both:** build the deadline calendar from the contract's own terms, share it in
+> writing, and start the slow items first — insurance, association documents, permit research,
+> specialist inspections.
+
+### Problem 6
+
+The appraisal comes in $20,000 below the contract price on a transaction where the buyer waived the
+appraisal contingency. The buyer asks whether he can cancel and recover his deposit. His agent emails
+the appraiser three sales and adds that "the deal dies without another $20,000." The parties then
+agree by email to move closing back a week, and the buyer separately asks escrow to hold $3,000 from
+the seller's proceeds.
+
+**Assess each of the four.**
+
+> **Solution.** **The deposit question is legal.** Lay out the practical options — bring funds,
+> renegotiate, seek another resolution — state plainly that the removed contingency limits his
+> contractual rights, and **recommend counsel before he decides to stop performing.** Telling him he
+> may cancel and recover the deposit, or that he simply must perform, are both legal conclusions and
+> both may be wrong.
+>
+> **The email to the appraiser mixes the permitted with the prohibited.** Relevant sales through the
+> proper channel are **information** and are fine. "The deal dies without another $20,000" is a
+> **target**, and a value that moves after that conversation is worthless for the purpose the appraisal
+> serves — including when the request serves the licensee's own client.
+>
+> **The email closing extension changes nothing.** A change to a term is a written amendment signed by
+> both parties and delivered to escrow. If the transaction fails, the parties litigate on the original
+> date with correspondence between non-parties as the evidence.
+>
+> **Escrow cannot act on the holdback.** It acts only on mutual written instructions; one party cannot
+> redirect funds, and an agent's confirmation is not the other party's consent. **Escrow stops** — and
+> the agents' job is to get a mutual instruction in place before the closing date.
+
+### Problem 7
+
+Rank the defects in this closed file and state the correct response: (a) an agency disclosure dated
+three days after the listing agreement; (b) a confirmation naming the brokerage as buyer's agent while
+the listing file shows seller's agent, with no dual agency consent anywhere; (c) an email agreeing to
+move closing, no signed amendment; (d) a contingency removal signed but undated; (e) a transfer
+disclosure with two blanks; (f) a referral fee disclosure dated the day of closing for a warranty the
+buyer bought six weeks earlier.
+
+**Rank, and give the response.**
+
+> **Solution.** **1. (b), the undisclosed dual agency** — different in kind from every other item. It
+> describes the brokerage acting on both sides without either party's informed written consent: a
+> breach of duties actually owed, not a documentation failure.
+>
+> **2. (d), the undated removal.** Rights ran from it and the file cannot show when. This is the defect
+> a dispute is most likely to turn on.
+>
+> **3. (a), disclosure after the agreement.** The seller committed before being informed.
+>
+> **4. (f), the late conflict disclosure.** Delivered after the buyer acted — the one thing a conflict
+> disclosure must not be, since information after the decision has no value.
+>
+> **5. (c), the unsigned date change.** The operative contract still says the original date.
+>
+> **6. (e), the blanks.** Ambiguous about whether the items were addressed.
+>
+> **The response:** record each finding, escalate to the broker, obtain what legitimately exists, and
+> address the **processes** that produced them rather than only the instances.
+>
+> **What must not happen:** dating the removal now, completing the blanks now, producing an amendment
+> with a matching date, or creating the consent that was never obtained. A documented gap is survivable;
+> a manufactured document is falsification.
+
+### Problem 8
+
+A licensee faces a situation this course did not cover: a seller's adult son, who holds a power of
+attorney, wants to accept an offer while the seller is hospitalized, and asks the licensee whether the
+power of attorney is sufficient and whether the seller's condition must be disclosed to the buyer.
+
+**Apply the four questions.**
+
+> **Solution.** **Whose decision is this?** Not the licensee's, on either question. Whether the power
+> of attorney authorizes conveyance of real property is a **legal** question — it depends on the
+> instrument's terms and its current validity — and it goes to counsel, with escrow and title involved.
+> Whether to accept the offer is the principal's decision, exercised by whoever actually holds
+> authority.
+>
+> **Whose duty is engaged?** Honesty and fair dealing run to the buyer; fiduciary duties run to the
+> seller. The disclosure question is genuinely constrained on both sides — a seller's illness is
+> subject to specific California limits, and this is squarely a **do not volunteer, do not
+> misrepresent, escalate** situation rather than one to resolve at a signing table.
+>
+> **Does this decision have the information it requires?** No. Acceptance cannot precede verified
+> authority, and the licensee does not yet have it.
+>
+> **What will the file show?** Right now, nothing. So the record is created contemporaneously: what was
+> asked, what was said, what was escalated and when, and what was referred to counsel.
+>
+> **What transfers:** the four questions are what the course leaves you with. They resolve situations
+> nobody wrote a lesson about.
+
+## Chapter summary
+
+**A transaction is a chronology in which each step supplies the information the next requires.** Every
+common sequencing error is a decision made before its information arrived, and the ordering test finds
+them.
+
+**Verify authority at intake against a source** — trustee, entity representative, personal
+representative, all co-owners — and stop and escalate where it is unclear.
+
+**Disclose, elect, confirm**, each preceding the decision it informs, with dual agency consent
+preceding the brokerage acting on both sides.
+
+**Compensation is negotiable; the termination date protects the seller; the protection clause is
+explained rather than initialed past.**
+
+**The analysis and advice are the licensee's obligation; the price is the client's decision.** Never
+revise the analysis to match the price.
+
+**Start the disclosure work at the listing appointment**, and separate the negotiable preferences from
+the obligations openly.
+
+**Advertising is truthful against current condition, sourced, identified, property-focused, approved,
+and archived** — with audience targeting examined as part of the advertisement.
+
+**A counteroffer rejects and replaces.** An offer may generally be revoked before acceptance.
+Declining to disclose competing terms is permissible; inventing them is not. Counter multiple offers
+only with a final election preserved.
+
+**Terms are the client's; advice is the licensee's** — put waivers and their consequences in writing
+before the decision, and then follow it.
+
+**Two independent disclosure duties**, observations recorded as observations, every item answered,
+delivery evidenced with its date.
+
+**Contingencies end by written removal**, not by a passed date, and the seller's route is the
+contractual notice.
+
+**Escrow acts only on mutual written instruction and stops when the parties disagree.** An exception
+means the policy does not insure against that item. Vesting goes to counsel before the deed is drawn.
+
+**Lenders lend against the lower of value or price**, a credit is not a price reduction for appraisal
+purposes, and the start-of-escrow warnings — credit, employment, moving funds, and wire fraud — are
+the cheapest protection available.
+
+**Every change is a signed amendment.** Signing, funding, recording, disbursement, in that order.
+
+**Audit for reconstructability, keep superseded versions, obtain what exists, record what does not,
+and fix the process.** A documented gap is survivable; a manufactured document is not.
+
+**And when the situation is unfamiliar, four questions:** whose decision, whose duty, does this
+decision have its information, and what will the file show.
 ## Required applied assignment
 
 Prepare a full transaction audit memorandum for the file presented with this assignment. Sequence the transaction's compliance events and identify any that occurred out of order; identify each defect and **rank** the defects by seriousness with your reasoning; state, for each, what may legitimately be obtained now and what may not be created; identify the process failure behind each rather than only the instance; and state what you would escalate. The instructor version contains the scoring rubric, including the ranking rationale.
