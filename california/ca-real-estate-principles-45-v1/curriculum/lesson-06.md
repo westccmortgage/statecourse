@@ -154,7 +154,36 @@ From Lesson 05, restated because it belongs here too: **zoning and recorded priv
 >
 > **Incorrect:** "The zoning allows it, so you're fine."
 
-### 2.7 Checkpoint
+### 2.8 A worked land-use inquiry
+
+> **A buyer under contract on a residence tells the licensee he intends to convert the detached garage into a rental unit, run a small contracting business from the property, and add a second story.**
+>
+> **Three plans, and each is governed by more than one system.**
+>
+> **The public side — Section 2.2's ordinance.** Whether the zone permits an accessory dwelling unit, what standards apply to it, whether a home occupation is permitted and on what conditions, and what height, setback, and coverage limits apply to a second story. **Each has an answer, and the answers come from the jurisdiction rather than from the licensee.**
+>
+> **The relief mechanisms — Section 2.3.** Where the ordinance does not permit something as of right, a variance or a conditional use permit may exist as a path. **They are processes with standards, timelines, hearings, and no guaranteed outcome**, and "you can just get a variance" is one of the more damaging sentences a licensee can say.
+>
+> **The private side — Section 2.5 and Lesson 05, Section 4.2.** Recorded restrictions can prohibit what zoning permits. **A property in a development whose declaration forbids rentals or business use is a property where the zoning answer is irrelevant to the buyer's plan.**
+>
+> **The building side — Section 3.2.** Permits, plans, and inspections, and a conversion of existing space carries its own requirements. **Section 3.3's unpermitted-work problem is what this becomes if the buyer proceeds without them.**
+>
+> **The practical sequence the licensee recommends, in writing:**
+>
+> 1. **Ask the jurisdiction** — planning for use and standards, building for permit requirements — **before removing contingencies.**
+> 2. **Obtain and read the recorded restrictions**, and route their interpretation to counsel.
+> 3. **Confirm with a design or construction professional** what the existing structure will actually support.
+> 4. **Confirm insurance and financing implications** where a use changes.
+>
+> **What the licensee says, and what he does not.**
+>
+> **He says:** these are three separate questions with four sources of answers, here is where each answer comes from, and here is the deadline by which you need them.
+>
+> **He does not say:** "ADUs are allowed everywhere now," "nobody enforces the home-occupation rules," "you can add a second story, the neighbor did," or **any version of what the ordinance permits.** Section 2.6 states the boundary, and the neighbor's second story is the least reliable evidence available — it may have been permitted under a different ordinance, granted relief, or built without permission.
+>
+> > **The recurring error this prevents.** A buyer removes his contingencies on the strength of a licensee's encouragement, closes, and discovers that the conversion he bought the property for requires a discretionary approval he will not get. **The information was available on day two, from a phone call to a public counter, and the licensee's contribution was to say who to call.**
+
+### 2.9 Checkpoint
 
 You should be able to distinguish a variance from a conditional use permit, explain the limits on a nonconforming use, and answer a buildability question correctly.
 

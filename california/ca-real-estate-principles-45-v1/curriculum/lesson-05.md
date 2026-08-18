@@ -204,7 +204,37 @@ Easements can end by express release, by merger of the dominant and servient par
 
 **Non-use alone generally does not terminate an easement.** A client who says "nobody has used that road in twenty years, so it's gone" has stated a conclusion the law usually does not reach. Route it.
 
-### 3.7 Checkpoint
+### 3.8 A worked easement problem
+
+> **The property.** A residential lot. The preliminary report lists: a public utility easement along the rear ten feet, recorded 1958; an easement for ingress and egress in favor of the adjoining parcel, recorded 1974, described as a twenty-foot strip along the northern boundary; and a drainage easement in favor of the county, recorded 1991.
+>
+> **The buyer intends to build a detached workshop in the rear yard and to fence the north side.**
+>
+> **What each easement means for his plan.**
+>
+> **The utility easement.** Section 3.2's easement in gross — it benefits a utility rather than a neighboring parcel. **A structure built within it is a structure built where someone else has a recorded right of access**, and the practical consequence is not theoretical: excavation, repair, or replacement can require removal.
+>
+> **The ingress and egress easement.** Appurtenant, benefiting the adjoining parcel, and **it runs with the land** — meaning it does not end because the current neighbor is friendly or because the strip is not currently used. **The fence the buyer plans would obstruct a recorded right of access**, which is the fact pattern of a neighbor dispute and possibly of an injunction.
+>
+> **The drainage easement.** Benefiting a public entity, with its own scope defined by the instrument.
+>
+> **What the licensee does — and Section 3.4 defines the boundary precisely.**
+>
+> **He obtains the recorded instruments**, not the one-line summaries in the report. **The summaries state that an easement exists; the instruments state what it permits, where exactly it runs, and what it prohibits.** This is the single most valuable thing a licensee does with a preliminary report and the thing most often skipped.
+>
+> **He tells the buyer his stated plans are affected by items in the report**, identifies which ones, and recommends in writing that he review them with counsel and, for location, obtain a survey.
+>
+> **He recommends the buyer confirm with the jurisdiction** what may be built where, because Lesson 06's public controls operate independently of these private ones — **and a plan can be defeated by either.**
+>
+> **What the licensee does not do.**
+>
+> **He does not interpret the instruments.** Whether the 1974 easement permits a gate, whether the 1958 easement has been abandoned by non-use, and whether anything about the arrangement has changed by operation of law are **legal questions**, and Section 3.6's termination doctrines are exactly the kind of analysis a licensee must not perform for a client.
+>
+> **He does not reassure.** "That easement is ancient, nobody uses it" is the sentence that appears in the complaint.
+>
+> **The professional summary.** **The buyer is buying a lot on which he cannot do two of the things he intends without answering questions first.** He is entitled to know that before he removes his contingencies, and the licensee's contribution is that he learns it on day three rather than after closing.
+
+### 3.9 Checkpoint
 
 You should be able to identify the dominant and servient parcels, distinguish an easement from a license, and state the correct handling of an easement shown in a preliminary report.
 
@@ -374,7 +404,42 @@ The preliminary report and the underlying documents belong at the front of the t
 
 An exception discovered late — an easement across the building site, an unreleased lien requiring a document from a lender that no longer exists — takes time to resolve. A buyer who receives the report on day three has options; one who receives it on day twelve of a fourteen-day review has a formality.
 
-### 6.7 Checkpoint
+### 6.8 A worked preliminary report
+
+> **The report** on a suburban residence, in the order the items appear:
+>
+> 1. **General and special taxes for the current fiscal year**, a lien not yet due and payable.
+> 2. **A supplemental assessment.**
+> 3. **A bond or assessment district obligation.**
+> 4. **Covenants, conditions and restrictions recorded 1964**, with a note that any provision restricting on a protected basis is void and unenforceable.
+> 5. **An easement for public utilities**, 1964.
+> 6. **A deed of trust**, 2019, securing an original amount, in favor of a named lender.
+> 7. **A second deed of trust**, 2021, in favor of a different lender.
+> 8. **A notice of a pending action** affecting the property, recorded four months ago.
+> 9. **A judgment against a person whose name is similar to the seller's.**
+> 10. **Requirements**: satisfactory evidence of the authority of the parties, and a statement regarding parties in possession.
+>
+> **How a licensee reads this, applying Sections 6.2 through 6.4.**
+>
+> **Items 1 through 3 are cost items**, and the buyer's monthly figure has probably not included the third. **Section 6.4's discipline is to read every item rather than the ones that look important.**
+>
+> **Item 4 is a private restriction**, and it is separate from zoning. Section 4.2. **The unenforceable-provision note is standard and does not make the remaining provisions unenforceable** — which is precisely the misreading a licensee must not encourage. **Obtain the document; route its interpretation.**
+>
+> **Item 5** is located from the instrument rather than assumed.
+>
+> **Items 6 and 7 are monetary liens** expected to be paid at closing. **Two deeds of trust means two payoff demands**, and Lesson 10 of the practice course explains why the good-through date on each matters.
+>
+> **Item 8 is the most serious item on the report.** A recorded notice of a pending action puts the world on notice of a claim affecting the property. **It is not cleared by paying it**, its resolution depends on the underlying matter, and it can affect insurability and financing. **This is escalated to the broker and the title officer immediately** — and it raises a disclosure question for the seller that the licensee does not answer alone.
+>
+> **Item 9 is the similar-name judgment.** Section 5.3's priority rules make this consequential if it is the seller. **The title company resolves it through its process**, and the licensee's contribution is flagging it early rather than discovering on day twenty-five that clearance takes time.
+>
+> **Item 10's requirements are not exceptions.** Section 6.3's distinction. **They are conditions the title company will insist on before issuing**, and the authority requirement is Lesson 03's ownership question arriving from the title side.
+>
+> **What the licensee does with the whole document.** Deliver it promptly with delivery evidenced; **obtain the underlying recorded instruments for items 4 and 5**; flag items 8, 9, and 10 to escrow, the broker, and the client in writing; recommend review with counsel; and record what was recommended and when.
+>
+> **What he does not do.** Rank the items by seriousness for the client as legal advice, tell the buyer item 8 "will probably clear," characterize the 1964 restrictions, or forward the report with "let me know if you have questions." **Section 6.6's timing point is the reason:** a report delivered without the recommendation that it be reviewed has been delivered in a way that does not produce a review.
+
+### 6.9 Checkpoint
 
 You should be able to explain what an exception means, distinguish exceptions from exclusions and requirements, and state the correct response to each item on a preliminary report.
 

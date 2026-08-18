@@ -247,7 +247,41 @@ They are genuinely useful within their limits: identifying the parcel for resear
 4. **Never substitute an address or an APN for a legal description** in a document intended to convey.
 5. **State sources for every measurement** used in marketing.
 
-### 4.5 Checkpoint
+### 4.5 A worked description problem
+
+> **A licensee is preparing a listing for a rural parcel. He has three documents.**
+>
+> - **The deed**, describing the property by metes and bounds, running from a monument and closing back to it.
+> - **The assessor's parcel map**, showing a parcel with an assessor's parcel number and an area of "4.7 AC."
+> - **The seller's statement** that "it's about five acres, and the fence line is the property line."
+>
+> **The listing service form asks for lot size, and it asks for the legal description.**
+>
+> **What each document is and is not.**
+>
+> **The deed's description is the legal description.** It is what conveys, and it is what belongs on the listing and in the agreement. Section 4.1's distinction governs.
+>
+> **The assessor's parcel number is not a legal description.** Section 4.2 explains what the assessor's records are for — taxation — and their boundaries and areas are maintained for that purpose. **An APN identifies a tax parcel and does not describe the land conveyed.** Using it as the legal description is the error Section 4.1 names, and it is common because it is convenient.
+>
+> **"4.7 AC" on the assessor's map is an assessor's figure.** It may be accurate; it is not authoritative for what the deed conveys.
+>
+> **The seller's "about five acres" is a recollection.** Lesson 03 of the practice course establishes what happens when a licensee repeats a number from a client's memory: **it becomes the licensee's representation.**
+>
+> **"The fence line is the property line" is Section 5.1's problem exactly** — the difference between the boundary of record and the boundary in use, and it is the sentence that precedes most boundary disputes.
+>
+> **What the licensee does.**
+>
+> **The legal description comes from the deed**, transcribed exactly, not paraphrased and not replaced with the APN.
+>
+> **The area is stated with its source.** "Assessor's records show 4.7 acres" is defensible. "5 acres" is not, and "approximately 5 acres" is the same representation with a hedge in front of it.
+>
+> **The fence statement goes into the disclosure conversation**, and the licensee recommends a survey — Section 5.6 — in writing, because a seller who volunteers that the fence and the line differ has disclosed a known condition affecting what the buyer is acquiring.
+>
+> **The licensee does not** locate the boundary, interpret the metes and bounds description, opine on whether the fence has legal significance, or reconcile the deed's area against the assessor's. **Section 5.5 forbids each of those**, and the last one is the most tempting because it looks like arithmetic.
+>
+> **The result.** A listing whose description is the deed's, whose area is attributed, and whose file contains a written survey recommendation with a date. **Three sentences of work, and it removes the two representations most likely to produce a claim on a rural parcel.**
+
+### 4.6 Checkpoint
 
 You should be able to explain why a separate tax bill does not establish a separately saleable parcel, and list the operative sources of a legal description.
 
@@ -390,7 +424,30 @@ A licensee who writes "1,840 sq ft (per assessor; buyer to verify)" has given th
 
 Every measurement a licensee reports should carry three things: **the number, the unit, and the source.** A number without a source is an assertion; a number with a source is information the buyer can evaluate and verify.
 
-### 6.7 Checkpoint
+### 6.8 Where measurement errors reach the client
+
+Section 6.4 covers unit errors and Section 6.5 covers the square footage problem. This section connects the arithmetic to the consequence, because a principles course can make measurement feel like an exam topic when it is a liability topic.
+
+| The measurement | How the error reaches the client |
+|---|---|
+| **Living area** | Stated in the listing, relied on by buyers, used in price-per-square-foot comparisons, and **relied on by the appraiser's grid.** An overstatement inflates the comparison in both directions — this property and every property later compared to it. |
+| **Lot size** | Determines what can be built, whether a division is conceivable, and what setbacks permit. **A buyer purchasing for a specific use is buying the dimension, not the house.** |
+| **Frontage** | Access, and in some settings value directly. |
+| **Acreage** | On rural parcels, frequently the price basis itself. **A five percent error is five percent of the purchase price.** |
+| **Room dimensions** | Whether furniture fits, which sounds trivial and is the complaint that arrives in week one. |
+| **Ceiling height and volume** | Where a use, a conversion, or a code requirement depends on it. |
+
+**The three rules that prevent all of it:**
+
+1. **Give the source with every number.** "Per assessor," "per builder's plans," "per the prior listing," "measured by [name] on [date]." **A number without a source is the licensee's own statement**, whatever its origin.
+2. **Do not convert between sources.** Taking an assessor's acreage and restating it in square feet, or a builder's plan area and adjusting it for what was added, produces a number no source stands behind.
+3. **Distinguish what is included.** Section 6.5's point. **Whether a converted garage, an enclosed patio, a basement, or an accessory structure counts as living area is a definitional question with a real answer**, and different sources answer it differently — which is why two accurate figures can disagree by hundreds of square feet.
+
+**The arithmetic in Section 6.3 is worth practicing for a reason beyond the examination.** A licensee who can compute area, convert units, and check a figure against its dimensions **will notice when a source is wrong** — and a listing whose stated area does not reconcile with its own stated dimensions is a listing with a defect that nobody caught because nobody multiplied.
+
+> **The professional standard here is unusually simple:** report, attribute, and refuse to improve. **The number you were given, from the source you were given it by, with the source named.** Every measurement claim that has ever produced a complaint was an improvement on one of those three.
+
+### 6.9 Checkpoint
 
 You should be able to compute acreage and value from lot dimensions, convert between units correctly, apply a reasonableness check, and state a square footage figure the way a professional states it.
 
