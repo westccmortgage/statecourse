@@ -327,6 +327,266 @@ A financing failure with a complete file is a business disappointment. The same 
 
 You should be able to advise a buyer facing a low appraisal with and without an appraisal contingency, name six events during escrow that jeopardize a conditional approval, and state how a closing date is extended.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **The financing boundary** | Explain how financing works generally; refer the specific recommendation to a qualified lender. The moment the question becomes "which is better for me," it belongs to the lender. |
+| **Prequalification** | An assessment on largely stated information. A rough range; verification of nothing. |
+| **Preapproval** | A lender's review of supporting information. A likely amount subject to conditions — **not** a commitment to lend. |
+| **Loan commitment** | Underwriting complete. Substantially more certainty, and not immunity from changed circumstances. |
+| **Conventional loan** | A loan not insured or guaranteed by a government agency. Mortgage insurance is commonly required below a program's down payment threshold. |
+| **Government-backed program** | A loan where an agency insures or guarantees the lender against certain losses. **The government is not the lender**, the loans bear ordinary interest, and they are limited neither to new construction nor to first-time buyers as a general matter. |
+| **Property condition requirements** | Standards common to government programs. A closing-probability question for a seller weighing an offer on a property with deferred maintenance — not a preference. |
+| **Index plus margin** | What determines an adjustable rate at each adjustment, subject to the note's caps. Not lender discretion and not the borrower's credit at that time. |
+| **Interest-only period** | A period whose scheduled payments cover interest only; principal is not retired during it. |
+| **Balloon** | A structure whose scheduled payments do not retire principal by maturity, leaving a large sum due. |
+| **Occupancy** | Owner-occupied, second home, or investment. Affects pricing, eligibility, and which protections apply — and is therefore a material fact the lender relies on. Misstating it is loan fraud. |
+| **Loan estimate and final disclosure** | The early estimate of loan terms and costs, and the final disclosure before consummation, with a review period. The licensee ensures the buyer knows they are coming, reads them, compares them, and asks the lender. |
+| **Re-disclosure** | The consequence of certain late changes: new disclosures, and a timeline that can move the closing date. |
+| **Referral fee prohibition** | A licensee may not accept anything of value for referring a buyer to a settlement service provider. Referrals happen; payment for them does not, and disclosure does not cure it. |
+| **Lower of value or price** | The rule that explains every consequence of a low appraisal: lenders lend against the lower of appraised value and purchase price. |
+| **Appraisal gap** | The difference the buyer must resolve when the appraisal falls below the contract price. Resolved by funds, renegotiation, another negotiated outcome, or cancellation under a contingency — never automatically. |
+| **Underwriting condition** | A requirement that must be satisfied for the loan to fund. Not a formality: an unsatisfied prior-to-funding condition means no funding. |
+| **The facts must hold** | An approval rests on the file as underwritten, and lenders commonly re-check credit and employment before funding. |
+| **Seller credit** | An agreed seller contribution toward the buyer's closing costs, reducing the buyer's cash requirement without reducing the price. Constrained by program limits **and** by the appraisal. |
+| **Proration** | Allocation of continuing charges — taxes, dues, assessments — at the ownership boundary. Escrow computes the final figures. |
+| **Payoff demand** | What satisfies the loan: principal **plus accrued interest to the payoff date and other amounts owed under the note.** |
+| **Respond through the contract** | The rule when financing fails: the written notice the contract requires, within its terms, with supporting documentation. |
+
+## Practice problems
+
+### Problem 1
+
+A seller receives two offers at the same price. Buyer A's letter is two lines from an unnamed source,
+verifies nothing, and expires in ten days. Buyer B's letter names the lender, states that income,
+assets, employment, and credit were reviewed, lists two remaining conditions, and states the amount
+for this property.
+
+**What should the seller's agent do with these, and what may she not say?**
+
+> **Solution.** **Read them and advise on closing probability** — which is half of what the seller is
+> actually choosing between. Noting that both offers "came with a preapproval" is not advice.
+>
+> The questions each letter should answer: what was verified; what conditions remain; what program and
+> terms it assumes; whether the amount is a maximum or the amount for this property; when it expires;
+> and who issued it. Buyer A's letter answers almost none of them, and that is real information the
+> seller is entitled to when choosing.
+>
+> What she may **not** do is predict what either lender will approve, or recommend a program to either
+> buyer. She explains what makes an offer read as strong; she does not underwrite it.
+>
+> **The buyer-side mirror:** the same reading, for a different purpose. A buyer who can obtain a fully
+> underwritten preapproval before offering is materially more competitive, and that is advice worth
+> giving early rather than after he loses a property.
+
+### Problem 2
+
+A buyer intends to rent out the property but asks the licensee to help him "put it down as
+owner-occupied since the rate is better — I can afford either payment anyway."
+
+**Respond, and explain why the affordability point does not matter.**
+
+> **Solution.** Decline plainly, explain why, and record the loan as it actually is.
+>
+> Occupancy affects pricing, program eligibility, and which consumer protections apply. It is
+> therefore a **material fact the lender relies on**, and misstating it is loan fraud — participation
+> in which is what the buyer is requesting, however casually phrased.
+>
+> Affordability is beside the point because the misstatement is not about whether the buyer will pay.
+> It is about obtaining terms on a false representation of the risk the lender is pricing.
+>
+> **What transfers:** this is the same principle as undisclosed borrowed funds from a relative, seen
+> from the occupancy side — a hidden fact that undermines the analysis the lender actually performed.
+
+### Problem 3
+
+Three weeks before closing, a buyer tells his agent he has found a lender offering a slightly better
+rate and wants to switch, and separately asks whether the escrow fee on his estimate is "about
+right."
+
+**What are the consequences of the switch, and how should the fee question be handled?**
+
+> **Solution.** **Switching lenders mid-escrow restarts substantial parts of the process**, and the
+> agent's obligation is to tell him plainly what it does to the closing date **before he decides** —
+> not after. Other changes with the same character: changing program or term, a re-lock after a rate
+> lock expires, a fee increasing beyond its tolerance, and a loan amount change from a property or
+> appraisal issue. Each can require re-disclosure, and certain late changes can restart the waiting
+> period before consummation.
+>
+> The practical corollary: do not promise a seller a closing date that a late change makes impossible.
+>
+> **On the fee: it is a lender question.** Do not tell a buyer a fee is "standard" or a figure is
+> "about right," and do not compare loan offers for him as though selecting between them. Direct it to
+> the lender, which is the party that can answer it.
+
+### Problem 4
+
+Contract price $920,000; the buyer is putting 20 percent down. The appraisal comes in at $900,000.
+The buyer's agent tells him the price will automatically adjust to the appraised value and that he
+can demand a second appraisal.
+
+**Work the numbers and correct the advice.**
+
+> **Solution.** The lender lends against **the lower of appraised value and price**, so against
+> $900,000. At 80 percent that is **$720,000**, against the $736,000 planned — a **$16,000** shortfall
+> in loan proceeds.
+>
+> The buyer's options: bring the additional $16,000; renegotiate the price in whole or part; negotiate
+> another resolution such as a credit, a split, or a term change; or cancel if a contingency permits
+> and its procedure is followed.
+>
+> **Both statements to the buyer are wrong.** The price does not adjust to appraised value by
+> operation of any loan program, the loan is not denied, and **no one is entitled to a second
+> appraisal as of right.**
+
+### Problem 5
+
+Same facts, except the buyer removed the appraisal contingency to win in competition. He asks his
+agent whether he can now cancel and get his deposit back "since the property isn't worth the price."
+
+**What may the agent say?**
+
+> **Solution.** The **practical options are unchanged** — bring funds, renegotiate, seek a negotiated
+> resolution — and the agent should lay them out.
+>
+> What the agent must say next: **the removed contingency limits his contractual rights**, and whether
+> he may cancel and what happens to his deposit **is a legal question** turning on the contract's
+> terms and the circumstances. Recommend counsel before he decides to stop performing.
+>
+> Two answers the agent must not give, and they fail in opposite directions: that he may cancel and
+> recover his deposit because the property "isn't worth the price," and that he simply must perform.
+> Both are legal conclusions, and both may be wrong.
+
+### Problem 6
+
+Two weeks into escrow, a buyer finances $9,000 of furniture, moves $22,000 from a relative's account
+into his checking account, and pays off a car loan using part of his down payment funds. His agent
+learns this the week before closing.
+
+**Assess each act, and state what should have happened at the start of escrow.**
+
+> **Solution.** All three attack the file the approval rested on.
+>
+> **Financing furniture** changes the debt-to-income analysis. **The $22,000 deposit** requires
+> sourcing and may look like undisclosed borrowed funds — the gift-versus-loan distinction again.
+> **Paying off the car with closing funds** reduces verified cash to close, solving one ratio by
+> breaking another.
+>
+> Underlying all three: an approval rests on the file **as underwritten**, and lenders commonly
+> re-check credit and employment before funding. Conditions are not formalities — an unsatisfied
+> prior-to-funding condition means the loan does not fund.
+>
+> **What should have happened:** a short written note at the start of escrow — *do not open credit,
+> change jobs, or move large sums without telling your lender first.* Also on that list: leaving a job,
+> moving money between accounts, and missing a payment on any obligation. That single communication
+> prevents more failed transactions than any other a licensee sends.
+
+### Problem 7
+
+A buyer offers $920,000 with a $15,000 seller credit rather than $905,000 with none, and tells his
+agent the two are equivalent to the seller and that the credit protects him if value is soft.
+Separately, the investigation produces a repair request and the parties are choosing between the
+seller performing the work and giving a credit; the agents confirm the choice by email.
+
+**Correct the buyer, and assess the repair decision.**
+
+> **Solution.** **A credit is not a price reduction for appraisal purposes.** The property must
+> appraise at **$920,000**, not $905,000. If it comes in at $900,000 the gap is $20,000 rather than
+> $5,000 — so the structure he thinks protects him against soft value increases his exposure to it.
+> A second constraint he has not considered: **program limits** cap what a seller may contribute, and
+> a credit exceeding the limit must be restructured, usually late in escrow when there is least time.
+>
+> On repairs versus credit: neither is automatically better. **Seller performs** gives the seller's
+> contractor control of quality, carries timing risk before closing, may be required by some programs,
+> and creates workmanship disputes before closing. **A credit** shifts quality control and outcome to
+> the buyer after closing, carries no timing risk, and is subject to credit limits. What matters is
+> that the buyer understands which risk he is accepting.
+>
+> **The email is the defect.** Whatever is agreed goes into a **signed amendment**, not correspondence
+> between agents, who are not the parties.
+
+### Problem 8
+
+A buyer's loan is denied. He tells the listing agent by phone, emails escrow to release his deposit,
+and stops responding. The listing agent tells the seller the contract is over, that she may keep the
+deposit, and that a two-week extension agreed by email would have saved it anyway.
+
+**Identify every error.**
+
+> **Solution.** Errors on both sides of the transaction.
+>
+> **The buyer forfeited his protection rather than exercising it.** A denial does not end the contract
+> by itself. The loan contingency provides a path with requirements: the **written notice the contract
+> requires**, within its terms, with supporting documentation. A verbal notification to the other
+> agent, a unilateral instruction to escrow, and simply ceasing to perform each abandon it — the last
+> invites cancellation for non-performance, a materially worse position.
+>
+> **The seller's agent gave three wrong answers.** The contract is not "over" because a date passed or
+> a loan was denied — the seller confirms the contract's dates, communicates in writing, and delivers
+> **the contractual notice** rather than treating anything as self-executing; a seller who cancels
+> without following the procedure may find the cancellation ineffective and her own position
+> compromised. Whether she may keep the deposit is a **legal question** the licensee must not answer.
+> And an **email between agents does not extend a contractual date** — an extension is a change to a
+> term, made by signed amendment delivered to escrow, and whether to grant one is the seller's real
+> decision, since it keeps the property committed to a transaction that may still fail.
+>
+> **What transfers:** most of this was visible early. Changing lenders mid-escrow, conditions
+> outstanding with no movement, a lender that stops responding, a delayed appraisal, evasiveness about
+> documentation, a mentioned job change — a licensee who checks status weekly **in writing** converts
+> a surprise into a managed problem. A financing failure with a complete file is a business
+> disappointment; the same failure with an incomplete file is a dispute the brokerage cannot answer.
+
+## Chapter summary
+
+**A licensee explains how financing works and refers the recommendation to a lender.** The
+understanding exists to advise a buyer on his position, advise a seller on closing probability, and
+recognize trouble early.
+
+**Prequalification, preapproval, and commitment are three levels, none of which guarantees funding.**
+Read the letter rather than noting its existence.
+
+**Government-backed does not mean government-lent.** Private lenders make the loans, the loans bear
+ordinary interest, and property condition requirements are a closing-probability fact a seller is
+entitled to weigh.
+
+**An adjustable rate is set by index plus margin within the note's caps** — not by lender discretion
+or the borrower's later credit.
+
+**Occupancy is a material fact the lender relies on**, and misstating it is fraud regardless of
+whether the buyer could afford the payment either way.
+
+**The licensee's role in loan disclosures is procedural**, and late changes can move the closing —
+which is why a seller should never be promised a date a proposed change makes impossible.
+
+**Never accept anything of value for a settlement service referral.** Disclosure does not cure it.
+
+**Lenders lend against the lower of appraised value and price.** Everything about a low appraisal
+follows from that sentence, and nothing about the resolution is automatic.
+
+**Where the appraisal contingency was removed, the practical options remain but the contractual
+rights are limited** — and entitlement to the deposit is a legal question for counsel, not for the
+licensee.
+
+**Supply an appraiser information, never a target** — including when the request comes from your own
+client.
+
+**Conditions are not formalities and the facts must hold through funding.** The written
+start-of-escrow warning about credit, employment, and moving funds prevents more failures than
+anything else a licensee sends.
+
+**A seller credit is constrained twice** — by program limits and by the appraisal, which must still
+support the full contract price.
+
+**Compare offers on net, then on everything the net does not capture:** appraisal requirement,
+financing strength, contingency periods, closing and possession.
+
+**Explain the payoff at listing.** It includes accrued interest and other amounts under the note, not
+the principal balance alone.
+
+**When financing fails, respond through the contract** — written notice, within its terms, with
+evidence. Extensions are signed amendments, not agent emails, and the deposit question belongs to
+the parties, their contract, and if necessary the courts.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. State the buyer's practical options and which of them the contract's terms permit, identify what you would recommend be referred to counsel and why, state the notices the next step requires and their delivery method, prepare the net comparison the seller needs, and identify the evidence you would retain. The instructor version contains the scoring rubric.
