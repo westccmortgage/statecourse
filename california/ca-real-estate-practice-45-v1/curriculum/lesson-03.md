@@ -291,6 +291,208 @@ Date everything at the moment it happens, evidence delivery rather than relying 
 
 You should be able to take a file's agency documents, put them in date order, and say whether each decision was made with the information it required.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Agency** | The relationship in which one person is authorized to act on behalf of another in dealings with third parties. |
+| **Principal** | The party the agent represents. Also called the client. |
+| **Agent** | The party authorized to act for the principal. In California residential practice, the **broker** is the agent; the salesperson acts for the broker. |
+| **Third party** | A participant who is not the agent's principal. Owed honesty, fair dealing, and disclosure of material facts — but not the fiduciary duties. |
+| **Express agreement** | Agency created by a listing agreement, representation agreement, or other engagement, written or oral. |
+| **Agency by conduct** | Agency arising because the licensee acted as an agent and the consumer reasonably relied, even with nothing signed. |
+| **Ratification** | Agency created when a principal accepts the benefit of acts performed on their behalf, adopting them after the fact. |
+| **Fiduciary duties** | The duties owed to a principal: loyalty, obedience to lawful instructions, disclosure, confidentiality, accounting, and reasonable care and diligence. |
+| **Loyalty** | Placing the principal's interests ahead of the agent's own, and surfacing rather than silently resolving conflicts. |
+| **Obedience** | Following the principal's instructions — **limited to lawful instructions**. |
+| **Confidentiality** | Protecting the principal's confidential information, such as their lowest acceptable price. Does **not** extend to concealing material facts about the property. |
+| **Accounting** | Accounting for all funds and property belonging to the principal. |
+| **Reasonable care and diligence** | Performing with the skill of a competent licensee. Breached by carelessness alone, without any dishonesty. |
+| **Disclose, elect, confirm** | The three steps of California's agency disclosure, occurring at three different times. |
+| **Agency confirmation** | The record, in or with the purchase agreement, of which relationship was actually elected. |
+| **Dual agency** | One brokerage representing both seller and buyer in the same transaction. |
+| **Informed written consent** | What dual agency requires from **both** principals: understanding of what dual agency means and its limits, in writing, from each. |
+| **Confidential negotiating position** | A party's lowest acceptable or highest payable price and similar information. Never disclosed to the other side without that party's permission, even under dual agency. |
+| **Conflict of interest** | Any interest that could reasonably influence the licensee's advice, requiring disclosure before the client relies on it. |
+| **Termination of agency** | Ending the relationship by completion, expiration, mutual agreement, revocation, or renunciation — with the power to end distinct from the right to end without consequence. |
+
+## Practice problems
+
+### Problem 1
+
+A homeowner and a licensee have talked for five weeks. He has advised her on pricing, recommended
+repairs, and told her what he thinks buyers will accept. Nothing is signed and he has not been paid.
+He now represents a buyer making an offer on her home and says no agency existed with her.
+
+**Is he right?**
+
+> **Solution.** No. Agency can arise from conduct, and five weeks of advice the homeowner reasonably
+> relied on looks like the conduct of an agent. Payment is not what creates duties, and the absence
+> of a signed agreement does not prevent the relationship.
+>
+> The consequence is not merely that he cannot claim a commission. He may have owed her fiduciary
+> duties throughout, and representing the buyer without disclosure and consent breaches duties
+> actually owed.
+>
+> **What transfers:** the reason the agency disclosure belongs early is precisely this — the
+> relationship may already exist while the consumer is unaware of it.
+
+### Problem 2
+
+A seller's agent learns during a listing appointment that the home's foundation was underpinned
+after movement six years ago. The seller says the work was done properly, produces no records, and
+instructs the agent not to mention it because "it's fixed."
+
+**What controls, and what does the agent do?**
+
+> **Solution.** The duty of honesty and disclosure of material facts to the buyer controls. The
+> seller's instruction to conceal cannot be followed.
+>
+> Confidentiality protects the seller's **negotiating position**, not concealment of a material
+> physical condition — and the adequacy of a repair with no records is exactly what a buyer would
+> want to evaluate.
+>
+> The agent tells the seller that the condition must be disclosed and why, involves the broker, and
+> does not follow the instruction. Careful silence while avoiding an affirmative false statement is
+> still concealment.
+>
+> **What transfers:** the boundary between confidentiality and disclosure is the most consequential
+> line in agency practice, and it falls in the same place every time.
+
+### Problem 3
+
+A brokerage lists a home. A buyer the same brokerage has been working with wants to offer on it.
+Both parties sign a dual agency consent. During negotiation the seller privately tells the broker
+the lowest number he would take. The buyer asks the broker directly what the seller will accept.
+
+**What may the broker say?**
+
+> **Solution.** Nothing about the seller's floor, without the seller's permission.
+>
+> Consent to dual agency permits the brokerage to represent both parties. It does **not** convert
+> either party's confidential negotiating position into shared information.
+>
+> Two wrong answers worth naming: that both are clients so both are entitled to what the broker
+> knows — being a client entitles a party to loyalty about their own interests, not to the other
+> client's confidences; and that disclosing both sides' limits keeps it balanced — that does not cure
+> the breach, it commits it twice.
+>
+> A vague answer conveying the same information is still a disclosure. The form of words does not
+> matter.
+
+### Problem 4
+
+A buyer's agent presents an offer. The agency disclosure is delivered to the listing side the
+following week, after acceptance, and is signed and dated then.
+
+**Is the file compliant?**
+
+> **Solution.** No. The disclosure must be provided before or at the time the offer is presented, so
+> the seller knows whose interests the presenting agent serves **while evaluating it**.
+>
+> The file now contains a signed disclosure and is still defective. The document exists; the
+> protection it was meant to give does not, because the seller made the decision without it.
+>
+> **What transfers:** every timing rule in the agency sequence is the same principle — the disclosure
+> precedes the decision it informs. Apply that and unfamiliar fact patterns resolve themselves.
+
+### Problem 5
+
+A licensee will receive a bonus from a builder if a particular home sells above a set price. Her
+buyer client is weighing that home against two others. She has no intention of pushing him toward it.
+
+**What is required?**
+
+> **Solution.** Disclose the bonus arrangement before the buyer relies on her advice about that
+> property.
+>
+> Three inadequate substitutes: that the bonus comes from the builder rather than the buyer's pocket
+> (who pays does not change that her advice now carries a financial interest); that she will not let
+> it influence her (a private intention is not something the client can evaluate); and disclosing
+> after acceptance (information after the decision has no value).
+>
+> **What transfers:** a conflict is managed by putting it in front of the client while they can still
+> act on it. That is the whole mechanism.
+
+### Problem 6
+
+A principal instructs her agent not to show the property to a category of buyers. The agent believes
+refusing will cost her the listing.
+
+**What must the agent do, and which three responses fail?**
+
+> **Solution.** Refuse the instruction, explain that it would be unlawful discrimination, escalate to
+> the broker, and address whether the listing can continue.
+>
+> The three failures: following it while documenting that it came from the client — documentation
+> does not transfer responsibility for the act; following it informally by scheduling around those
+> buyers — which achieves the same exclusion; and withdrawing quietly without explanation — which
+> leaves the client free to repeat the instruction with the next licensee.
+>
+> **What transfers:** obedience extends only to lawful instructions. That limit is not negotiable
+> against the value of the listing.
+
+### Problem 7
+
+A listing expires unsold. Six months later the same licensee represents a buyer interested in the
+property, now listed with another brokerage. He knows the former seller's lowest acceptable price.
+
+**May he use it?**
+
+> **Solution.** No. Confidentiality generally survives the end of the agency. He may not use or
+> disclose the former principal's confidential information afterwards — including for a new client,
+> and including after the property is relisted elsewhere.
+>
+> **What transfers:** a duty that evaporated when the engagement ended would not be worth having.
+> This is why the obligation is described as surviving rather than lapsing.
+
+### Problem 8
+
+An audit finds: an agency disclosure dated three days after the listing agreement; a purchase
+agreement confirming the brokerage as buyer's agent while the listing file shows it as seller's
+agent; and no dual agency consent anywhere.
+
+**Rank the findings and state the correct response.**
+
+> **Solution.** The **contradiction is the most serious**, and it is different in kind from the
+> other. It describes the brokerage acting on both sides without either party's informed written
+> consent — a breach of duties actually owed, not a documentation failure.
+>
+> The late disclosure is second: the seller committed before being informed.
+>
+> The correct response is to record both findings, escalate to the broker, and obtain anything that
+> legitimately exists. What must **not** happen is creating the consent that was never obtained or
+> re-dating the disclosure. A documented gap is survivable; a manufactured document is falsification.
+
+## Chapter summary
+
+**Agency is created three ways**, and only one involves paperwork. Conduct is the route that
+surprises licensees, which is why disclosure belongs early rather than at the offer.
+
+**The broker is the agent; the salesperson acts for the broker.** This is why assigning a second
+salesperson to the other side does not eliminate a dual agency question.
+
+**Payment and representation are separate questions.** A buyer's agent compensated from the seller's
+side still represents the buyer — and the arrangement is still disclosed.
+
+**Non-clients are not unprotected.** Honesty, fair dealing, and disclosure of material facts run to
+everyone. The distinction is whose interests you advance, not whether you owe anything.
+
+**The disclosure sequence is disclose, elect, confirm**, at three different times, each preceding the
+decision it informs: before the listing is signed, before the buyer signs an offer, and before or
+when the offer is presented.
+
+**Confidentiality protects the negotiating position, never a material defect.** This single boundary
+resolves the majority of agency questions in practice.
+
+**Dual agency consent permits representation, not disclosure.** Neither party's confidential position
+may cross without that party's permission, and disclosing both does not balance it.
+
+**Conflicts are managed by disclosure that arrives in time to matter.** Freedom to choose another
+provider, an intention not to be influenced, and disclosure after the decision are each inadequate.
+
+**Duties survive the relationship.** Confidentiality does not end when the listing expires.
+
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify the agency relationships in play, the disclosure that each required and when, the duty engaged by the disputed conduct, the party to whom it was owed, the action required, the applicable deadline, the communication you would send, the escalation if any, and the evidence you would retain. The instructor version contains the scoring rubric.

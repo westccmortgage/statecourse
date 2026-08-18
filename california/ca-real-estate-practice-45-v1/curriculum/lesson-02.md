@@ -279,6 +279,204 @@ Findings are recorded and corrected honestly. A gap noted in the file is surviva
 
 You should be able to explain who owns transaction records and why, what a departing licensee may and may not take, and why cancelled transactions matter as much as closed ones.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Capacity** | The number of transactions a licensee can handle while still performing the compliance work each one requires. The honest basis for a business plan. |
+| **Solicitation** | Contacting a person to obtain business. Lawful, and regulated differently by channel — telephone, text, email, and in person each carry their own requirements. |
+| **Do-not-call obligations** | Restrictions on telephone solicitation that bind the caller. A lead vendor's assurance that a list is clean does not transfer the obligation. |
+| **Established business relationship** | A defined, limited exception to certain solicitation restrictions. It has boundaries and it lapses. |
+| **Consent** | For text and email marketing, defined by what the consumer was actually told when the information was collected — not by the fact that a number was written down. |
+| **Opt-out mechanism** | A required means of stopping further messages. Necessary, and not a substitute for the consent needed to send the first one. |
+| **Licensee identification** | The requirement that advertising and solicitation material identify the licensee and the brokerage, including license identification, so a consumer knows who is responsible and can verify licensure. |
+| **Team name** | A brand used by a group within a brokerage. Compliant when it does not create the impression of a separate licensed firm. |
+| **Price fixing** | An agreement among competitors on what to charge, on a minimum, or on future pricing intentions. Among the most serious antitrust violations. |
+| **Group boycott** | An agreement among competitors to refuse to deal with a particular firm, typically one competing on price or model. |
+| **Market allocation** | An agreement among competitors to divide territories, property types, or customer segments. |
+| **Tying** | Conditioning the availability of one service on the customer's purchase of another. |
+| **Inferred agreement** | An agreement established by conduct, parallel behavior, or exchange of pricing intentions rather than by a signed document. Why remaining in the conversation is itself a risk. |
+| **Negotiable compensation** | The rule that brokerage compensation is set independently by each firm and negotiated with the client. There is no standard rate and none set by any association or listing service. |
+| **Access control** | Limiting who can reach consumer personal information to those who need it for the work. |
+| **Secure disposal** | Destroying documents and media so the data cannot be reconstructed. A recycling bin is not disposal. |
+| **Wire fraud** | The pattern in which an attacker monitors a compromised email account, then sends altered wire instructions from an address one character different from the genuine one, timed to when funds are expected. |
+| **Independent verification** | Confirming instructions through a channel the attacker does not control — a number obtained from engagement documents or a published listing, never from the email itself. |
+| **Records ownership** | The principle that transaction records belong to the brokerage and the responsible broker answers for them, whoever created them. |
+| **Retention period** | The period for which records must be kept, running from closing. It applies to cancelled and failed transactions as well as closed ones. |
+
+## Practice problems
+
+### Problem 1
+
+A new licensee sets a target of sixteen transactions in her first year, based on what the top
+producer in her office closed. She has no support staff and works part-time hours in her first six
+months.
+
+**What is wrong with the plan, and how should it be rebuilt?**
+
+> **Solution.** The number is not tied to capacity. Each transaction consumes a fixed quantity of
+> compliance work — intake and verification, disclosure preparation and delivery, deadline tracking,
+> written confirmations, file assembly — that cannot be compressed without cutting something.
+>
+> Rebuild by working backward: hours a transaction actually requires including that work, hours she
+> can genuinely give after prospecting and administration, divide. If capacity falls short of her
+> income requirement, the honest responses are to change her market, price point, efficiency, or
+> support — not to plan on doing less work per file.
+>
+> **What transfers:** a target that exceeds capacity is still met, by skipping the steps nobody sees
+> until something goes wrong.
+
+### Problem 2
+
+A licensee collects phone numbers on an open-house sign-in sheet headed only "Please sign in." Two
+weeks later he sends a marketing text to everyone who signed.
+
+**Is the text permissible?**
+
+> **Solution.** No, on the consent question. Consent for text marketing is defined by what the
+> consumer was told when the information was collected. A sheet saying nothing about future contact
+> has not obtained consent for a marketing campaign.
+>
+> Adding "reply STOP" does not cure it — an opt-out mechanism is necessary but does not create the
+> consent required to send the first message.
+>
+> **The fix is upstream:** write the register so it states plainly what the visitor is agreeing to
+> receive, and apply it to every visitor.
+
+### Problem 3
+
+At an industry lunch, a competing broker says he is tired of a discount brokerage undercutting
+everyone, and proposes that those present hold their rates at the same level and stop showing that
+brokerage's listings. Your licensee says nothing and leaves when the lunch ends.
+
+**Is silence sufficient?**
+
+> **Solution.** No. Two of the most serious antitrust violations were just proposed — price fixing
+> and a group boycott — and agreement can be inferred from conduct rather than requiring anything
+> signed. Remaining at the table can be treated as participation.
+>
+> The required response is to **leave the conversation immediately and visibly, say why, and report
+> it to the broker.** Leaving is what creates the record that she did not participate; reporting is
+> what protects her and the brokerage.
+>
+> **What transfers:** "I didn't agree to anything" is not the standard. Presence during the
+> discussion is the exposure.
+
+### Problem 4
+
+A seller asks why the compensation in the listing agreement is stated as a negotiated figure rather
+than the standard rate.
+
+**What is the correct answer, and why does the wording matter?**
+
+> **Solution.** "Compensation is negotiable between you and our brokerage. There is no standard rate,
+> and no rate set by any association or listing service. Here is what our brokerage charges and what
+> it covers."
+>
+> The wording matters because describing a rate as standard, customary, or set by a listing service
+> is both factually wrong and an antitrust exposure. It is the sentence that later gets quoted, and
+> a casual "everyone charges about this" is the version most licensees actually say.
+
+### Problem 5
+
+A team within a brokerage advertises under a name displayed far more prominently than the
+brokerage's, styled with its own logo and suggesting an independent company. Every advertisement is
+factually accurate about the properties.
+
+**Is there a defect?**
+
+> **Solution.** Yes. The test is the impression created for a consumer, not the internal
+> organizational chart. A team identity presented as a separate firm obscures which licensed
+> brokerage is accountable — the same defect as omitting the brokerage entirely.
+>
+> Accuracy about the properties is a different requirement and does not cure it.
+>
+> **The fix:** brokerage identity present and legible wherever the team identity appears, and a team
+> name that does not use terms suggesting it is itself a brokerage.
+
+### Problem 6
+
+Two days before closing, a buyer receives wire instructions in the existing email thread from what
+appears to be the escrow officer's address. The instructions match the expected amount and closing
+date. The reply-to address differs from earlier messages by one character.
+
+**What should happen, and what does not work?**
+
+> **Solution.** Stop. Verify by calling escrow at a number obtained independently — from the
+> engagement documents or the company's published listing, **never** from the email. Warn the client
+> in writing not to send funds until verified.
+>
+> What does not work: replying to the email to ask for confirmation (the attacker receives the
+> reply); forwarding it to the client with a note to be careful; a small test wire, which confirms
+> nothing about who controls the account; or proceeding because the message arrived in a familiar
+> thread.
+>
+> **What transfers:** verification must use a channel the attacker does not control. Everything else
+> is theatre.
+
+### Problem 7
+
+A licensee is leaving her brokerage and wants to take copies of the files for every transaction she
+personally handled, with the clients' personal information removed.
+
+**May she?**
+
+> **Solution.** Not unilaterally. Transaction records belong to the brokerage, and the responsible
+> broker answers for them. What she may take is governed by the brokerage's policy and by client
+> direction.
+>
+> Redaction addresses a different risk and does not change who owns the record. Neither does the fact
+> that she created the documents.
+>
+> **What transfers:** the departure question should be settled in writing in the office policy long
+> before anyone departs. A brokerage without a written answer will discover this during an argument.
+
+### Problem 8
+
+A brokerage's laptop containing client files is lost. It was password-protected but the drive was
+not encrypted. The office manager suggests waiting to see whether anything comes of it.
+
+**What determines the severity, and what should happen now?**
+
+> **Solution.** Severity is determined by **what data the device held and whether it was protected** —
+> not by whether a client has yet complained, and not by whether the hardware is insured.
+>
+> What happens now: report to the broker immediately, preserve the evidence, and determine the
+> categories of personal information exposed. Breach obligations can carry notification timelines,
+> and the clock does not wait for an internal decision about whether it matters.
+>
+> **What transfers:** password protection is not encryption, and waiting is a decision with a
+> deadline attached.
+
+## Chapter summary
+
+**A business plan is a capacity calculation, not a target.** Each transaction consumes fixed
+compliance work. A number that exceeds capacity gets met by skipping the steps nobody sees.
+
+**Choosing a brokerage is a compliance decision.** File review, written policies, escalation path,
+advertising approval, training, and what happens on departure determine the supervision a new
+licensee actually receives.
+
+**Prospecting is lawful; solicitation is regulated by channel.** Telephone contact carries do-not-call
+and identification obligations. Text and email consent is defined by what the consumer was told at
+collection. An opt-out is necessary and not sufficient.
+
+**Advertising identification exists so a consumer can find who is responsible.** Personal branding,
+team names, and social posts are all advertising, and identification belongs in the post rather than
+only in the profile.
+
+**Antitrust is the most serious topic in the lesson.** Each brokerage sets prices and chooses
+partners independently. Agreement can be inferred from conduct, which is why the response to a
+competitor raising it is to leave visibly and report — not to stay silent.
+
+**Three controls carry information security:** access, protected transmission, and secure disposal.
+Wire fraud is defeated by verification through a channel the attacker does not control, and by
+nothing else.
+
+**Records belong to the brokerage.** The licensee's obligation is to route complete documentation
+into the brokerage's system — including for transactions that failed, which are disproportionately
+the ones that later produce disputes.
+
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify the issue, the category of controlling source, the facts that remain unverified, the parties affected, the action required, the applicable deadline, the communication you would send, the escalation if any, and the evidence you would retain. The instructor version contains the scoring rubric.
