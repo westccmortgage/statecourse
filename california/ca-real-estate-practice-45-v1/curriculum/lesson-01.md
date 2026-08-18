@@ -377,6 +377,234 @@ Findings are recorded, not quietly repaired. A brokerage that can show it audits
 
 You should be able to state the reconstructability standard, explain why a signature without a delivery date is insufficient, and describe the correct response to a gap found in a closed file.
 
+## Key terms
+
+These terms recur throughout the course. A student who can define each one in a sentence, and say
+why it matters, is prepared for the assignments that follow.
+
+| Term | Definition |
+| --- | --- |
+| **Real Estate Law** | The body of California statute governing real estate licensure and licensed conduct, enacted by the Legislature and found in the Business and Professions Code. |
+| **Commissioner's Regulations** | Administrative regulations adopted by the Real Estate Commissioner under statutory authority, supplying operational detail the statute leaves open. |
+| **Licensed activity** | Conduct that requires a real estate license: acting for another, for compensation, in one of the activities the statute lists. |
+| **Broker** | The holder of an independent license, who may operate a brokerage, employ salespersons, hold trust funds, and contract with clients in the brokerage's name. |
+| **Salesperson** | The holder of a derivative license, authorized to perform licensed activity only for and under the supervision of an employing broker. |
+| **Responsible broker** | The broker accountable for a brokerage's licensed activity, including supervision of everyone acting under the license. |
+| **Designated officer** | The licensed broker through whom a corporate licensee acts, and who carries the supervisory responsibility personally. |
+| **Supervision** | The responsible broker's non-delegable obligation covering transactions, documents, advertising, trust funds, familiarity with the law, complaints, and records. |
+| **Delegation** | Assigning a supervisory task to another person. Transfers the work, never the responsibility. |
+| **Independent contractor status** | A tax and compensation arrangement common for salespersons. It does not reduce the broker's supervisory obligation by any degree. |
+| **Competence** | The professional obligation to perform work one is equipped to perform, or to obtain real supervision and disclose the limits honestly. |
+| **Unauthorized practice of law** | Performing services reserved to attorneys — drafting custom legal provisions, advising on the legal effect of executed documents, or opining on rights and remedies. |
+| **Comparative market analysis** | A licensee's opinion of value prepared to advise a client on pricing. Not an appraisal, and never to be held out as one. |
+| **Visual inspection duty** | The licensee's own obligation to conduct a reasonably competent and diligent visual inspection of accessible areas and disclose material facts it reveals. |
+| **Material fact** | A fact that would affect a reasonable buyer's decision to buy or the price they would pay. |
+| **Verified fact** | Information the licensee knows and can support, stated with its source. |
+| **Unverified report** | Information the licensee was told, attributed to its source and flagged as unverified. |
+| **Professional opinion** | The licensee's judgment, identified as judgment rather than as fact. |
+| **Trust funds** | Money belonging to others received in the course of licensed activity, which must be held separately and fully accounted for. |
+| **Commingling** | Mixing trust funds with the brokerage's own funds. Complete on deposit into the wrong account, regardless of internal tracking. |
+| **Reconstructability** | The standard a transaction file must meet: could a person who was not there determine what happened, when, and on what basis? |
+| **Delivery evidence** | Proof of when a document reached a party — distinct from a signature, which proves only that it was received at some point. |
+| **Escalation** | Routing a matter to the responsible broker, or to counsel, rather than resolving it at the licensee's own level. |
+| **Falsification** | Creating, backdating, altering, or removing a record so that the file shows something other than what happened. Distinct in kind from a documented gap. |
+| **Public license lookup** | The Department's public record of license status, expiration, employing broker, and disciplinary history. |
+
+## Practice problems
+
+Work each problem before reading the solution. The reasoning matters more than the conclusion — in
+practice you will meet variations, and what transfers is the analysis rather than the answer.
+
+### Problem 1
+
+A salesperson has worked at a brokerage for six years and has closed more transactions than anyone
+else in the office. She wants to begin taking listings under her own trade name, with her own
+signage, paying the brokerage a flat fee per transaction. Her broker is agreeable.
+
+**Is this permissible?**
+
+> **Solution.** No. The salesperson license authorizes licensed activity only for and under the
+> employing broker. Advertising under her own trade name presents her as an independent principal,
+> which the identification requirements exist to prevent, and taking listings in her own name means
+> contracting with clients in her own right, which a salesperson may not do.
+>
+> The broker's agreement does not cure it. A broker cannot authorize a salesperson to do what the
+> license does not permit, and the arrangement would leave the broker answerable for activity he has
+> structurally given up the ability to supervise.
+>
+> **What transfers:** experience never converts a derivative license into an independent one, and
+> "my broker approved it" is not an analysis of what the license permits.
+
+### Problem 2
+
+A licensee's client asks her to review a contract he signed last year with a contractor, tell him
+whether the contractor breached it, and advise whether he can withhold the final payment.
+
+**What may she do?**
+
+> **Solution.** Very little of what was asked. Determining whether a party breached an executed
+> contract and advising on withholding performance is advising on legal rights and remedies — the
+> practice of law.
+>
+> What she may do: acknowledge the question, explain plainly that it is outside what a real estate
+> licensee may advise on, refer him to an attorney, and note the referral in the file.
+>
+> **What transfers:** the boundary is not about the subject matter being real-estate-adjacent. It is
+> about whether the answer would be a legal conclusion. Her twenty years of experience with
+> contractors does not extend the license.
+
+### Problem 3
+
+A broker delegates advertising approval to a licensed office manager, trains him, and documents the
+delegation. Eight months later a regulator finds that a quarter of the office's social posts
+carried no brokerage identification.
+
+**Where does responsibility sit, and what was missing?**
+
+> **Solution.** Responsibility sits with the broker. Delegation transferred the task, not the
+> obligation.
+>
+> What was missing is the fourth component of a defensible delegation: **monitoring**. The broker had
+> a named person, a defined scope, and training — and no way of learning whether approval was
+> actually happening. A delegation nobody checks is a document about supervision rather than
+> supervision.
+>
+> **What transfers:** when a supervision failure is examined, the questions are about the system.
+> Three of the four components present is still a failure.
+
+### Problem 4
+
+A consumer calls about a listing and asks whether the property is on a septic system. The licensee
+does not know. The seller mentioned something about it at the listing appointment but the licensee
+did not write it down.
+
+**What should she say?**
+
+> **Solution.** That she does not know, when she will confirm it, and from what source — then follow
+> up in writing with the answer, or with a note that it remains unverified.
+>
+> What she must not do is repeat her recollection of the seller's remark as a fact. That is an
+> unverified report delivered as a verified one, and if it turns out to be wrong it is a
+> misrepresentation regardless of her good faith.
+>
+> **What transfers:** the four-part formulation — I don't know, here is where the answer comes from,
+> here is when, and here it is in writing — is the professional response, and it builds rather than
+> costs credibility.
+
+### Problem 5
+
+An office policy requires transaction files to be submitted within five business days of closing. A
+licensee routinely submits at three weeks, and no one has said anything. She learns the law's
+retention requirement does not specify a submission deadline at all.
+
+**May she follow the law rather than the policy?**
+
+> **Solution.** No. Office policy binds her conduct within the brokerage, and a brokerage may hold
+> itself to a stricter standard than the legal floor. Consistency is what makes a policy defensible;
+> individual licensees deciding which parts to follow is exactly what creates the gaps.
+>
+> If the policy is wrong for the business, that is a policy-level conversation that starts with
+> confirming the current requirement — not a decision made at a filing cabinet.
+>
+> **What transfers:** "the law doesn't require this" is not a reason to depart from office policy.
+> The two operate at different levels, and the stricter one governs conduct.
+
+### Problem 6
+
+A licensee gives a buyer a square footage figure taken from the prior listing. It is wrong by 180
+square feet. The buyer relied on it in setting his offer. Closing is in a week and the licensee
+realizes the error.
+
+**What must happen, and what is the risk if she waits?**
+
+> **Solution.** Correct it in writing, immediately, to everyone who received the original — and
+> notify her broker.
+>
+> The risk of waiting is that the character of the problem changes. Right now it is an error made
+> without reasonable care: a negligent misrepresentation, serious but survivable. An error she knows
+> about and leaves uncorrected while the buyer proceeds becomes something worse, because she now has
+> knowledge.
+>
+> **What transfers:** copying a figure from a prior listing is not verification. It launders an
+> unverified number into an apparently authoritative one, and it is one of the most common sources
+> of claims against licensees.
+
+### Problem 7
+
+A file contains a disclosure signed by the buyer. There is no date next to the signature and no
+record of when it was sent. The transaction closed without incident nine months ago.
+
+**Is there a problem, and what should be done now?**
+
+> **Solution.** Yes. The signature proves the buyer received the disclosure; it proves nothing about
+> **when**. Because rights and response periods run from delivery, the file cannot show that the
+> buyer's period was honored.
+>
+> What to do now: record the gap, escalate to the broker, and obtain any evidence that legitimately
+> exists — a transmittal email, a delivery receipt, a platform audit trail.
+>
+> What must **not** happen: writing a date on it now. A documented gap is a compliance problem the
+> brokerage can survive. A date added after the fact is falsification.
+>
+> **What transfers:** "the transaction closed without incident" describes the past, not the
+> retention period. The dispute that tests this file has not happened yet.
+
+### Problem 8
+
+A licensee is asked by a friend to help sell a house. There is no compensation discussed. He shows
+the property twice, advises on price, and helps the friend evaluate an offer.
+
+**Has he performed licensed activity, and does it matter that he was not paid?**
+
+> **Solution.** The compensation element is genuinely in question — licensed activity generally
+> requires compensation or the expectation of it, and "compensation" is read broadly to include
+> things of value beyond cash.
+>
+> But the more important point is that the analysis does not end there. He has been acting as an
+> agent: advising on price, evaluating offers, exercising judgment his friend is relying on. Agency
+> can arise from conduct, and the duties that come with it do not wait for a payment.
+>
+> The professional answer is to run it through his broker rather than treating it as a favor outside
+> the brokerage. Informal arrangements between friends are where the file that would have protected
+> everyone does not exist.
+>
+> **What transfers:** the absence of payment answers one question and leaves several open.
+
+## Chapter summary
+
+**The license exists because of an information asymmetry.** Consumers cannot evaluate the quality of
+real estate advice until long after they have relied on it. Licensing responds by creating an
+identifiable, accountable person subject to standards and to a regulator. When a rule seems
+burdensome, ask what consumer harm it prevents; the answer usually produces the right conduct.
+
+**Two bodies of authority govern, and brokerage policy operates inside them.** Statute and the
+Commissioner's Regulations both bind, they change on different schedules, and office policy may be
+stricter but never looser. Local custom authorizes nothing.
+
+**The salesperson license is derivative.** Activity, compensation, advertising identity, contracting,
+and trust funds all run through the employing broker. Experience does not change this, and neither
+does the broker's agreement.
+
+**Supervision is a non-delegable obligation.** The task can be assigned; the responsibility cannot.
+A defensible delegation has a named person, a defined scope, training, and monitoring — and the
+fourth is the one usually missing.
+
+**Competence is an obligation rather than a credential.** Unfamiliar work is permitted with honest
+disclosure and real support. The boundary with legal advice is not about difficulty or experience;
+it is about whether the answer would be a legal conclusion.
+
+**Consumers must be able to tell three things apart:** verified fact, unverified report, and
+professional opinion. Nearly every misrepresentation in residential practice is a collapse of those
+categories, and most are negligent rather than dishonest.
+
+**The file is the record of your professional conduct.** The standard is reconstructability. Dates
+and delivery evidence matter as much as content, superseded versions stay, and corrections are made
+visibly.
+
+**One line separates a survivable problem from a career-ending one.** A documented gap is a
+compliance failure. A manufactured document is falsification. Everything in this course is
+recoverable except that.
+
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify the issue, the category of controlling source, the facts that remain unverified, the parties affected, the action required, the applicable deadline, the communication you would send, the escalation if any, and the evidence you would retain. The instructor version contains the scoring rubric.
