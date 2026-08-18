@@ -328,6 +328,204 @@ An engagement that ends informally, by everyone ceasing to act, is the one that 
 
 You should be able to distinguish expiration, cancellation, and withdrawal; state who decides a cancellation and why; and name the two obligations that survive the end of a listing.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Intake** | The process establishing who has authority to convey, what is being sold, and what constraints affect the transaction — before marketing begins. |
+| **Authority to convey** | The legal power to sell the property, which rests with the owners, the trustee, the authorized entity representative, or the court-appointed personal representative — not with the occupant or the person on the tax bill. |
+| **Trustee** | The person holding legal title under a trust, who may convey only within the authority the trust document grants. |
+| **Attorney-in-fact** | A person acting under a power of attorney, whose authority to convey real property must be currently valid and expressly granted. |
+| **Legal description** | The description that defines the property in law. The street address does not. |
+| **Included and excluded items** | Personal property and disputable fixtures named expressly in the agreement, so the fixture tests never have to be applied. |
+| **Listing agreement** | The contract between the seller and the **brokerage** engaging it to market the property, on negotiated terms. |
+| **Definite termination date** | The stated end of the listing term, which protects the seller from an indefinite engagement. |
+| **Protection (safety) clause** | The provision addressing compensation where a buyer the brokerage introduced during the term purchases shortly after it ends, ordinarily limited to buyers identified to the seller. |
+| **Negotiable compensation** | Compensation set independently by the brokerage and negotiated with the seller. Never "standard," and never set by an association or listing service. |
+| **Comparative market analysis** | The licensee's opinion of value, built from closed sales with adjustments, prepared to advise on pricing. |
+| **Seller net sheet** | An itemized estimate of the seller's proceeds after costs and payoffs, which answers the question the seller is actually asking. |
+| **Payoff demand** | The lender's statement of what satisfies the loan, including accrued interest and other amounts owed — routinely higher than the principal balance. |
+| **Materiality** | The standard for disclosure: whether a fact would affect a reasonable buyer's decision or the price they would pay. |
+| **Unknown** | The honest answer to a disclosure item the seller cannot answer. Distinct from a blank, which is ambiguous. |
+| **Delivery evidence** | Proof of when a disclosure reached the buyer. Rights run from delivery, so a signature without a date proves the wrong thing. |
+| **Access control** | The showing and access protocol, applied identically to every visitor for both security and fair access reasons. |
+| **Expiration** | The listing ending on its stated date. |
+| **Cancellation** | The listing being ended before its term expires, under the agreement's terms — a **broker-level decision**. |
+| **Withdrawal** | Taking the property off the market while the listing remains in force. |
+
+## Practice problems
+
+### Problem 1
+
+A woman calls to list the home she has lived in for twelve years. At the appointment she explains
+that the house is held in her late mother's trust, that she is one of three children named as
+beneficiaries, and that she has paid the taxes and upkeep since her mother died.
+
+**Whose signature is required, and what must be verified?**
+
+> **Solution.** The **trustee's**, acting within the authority the trust document grants. Not the
+> beneficiaries', however many there are and however clearly they benefit.
+>
+> What must be verified: who the current trustee is, that the trust authorizes sale of real property,
+> and what the trust requires of the trustee in doing so. Occupancy, payment of taxes, and beneficial
+> interest are all evidence of connection to the property and none establishes authority to sell it.
+>
+> **What transfers:** intake failures surface in escrow, where the cost of unwinding is highest. Ten
+> minutes with the trust document at the appointment prevents it.
+
+### Problem 2
+
+A seller shows the licensee a competing brokerage's estimate $150,000 above her supported range. It
+uses three homes currently listed, two of which have sat for over ninety days, and makes no
+adjustments.
+
+**How should the licensee respond?**
+
+> **Solution.** By making both analyses legible rather than competing on the number or attacking the
+> competitor.
+>
+> Active listings show what sellers are asking; they are not evidence of value — and two of the three
+> have been declined by the market for three months. Closed sales show what buyers actually paid.
+> Present the closed evidence, the adjustments, and the reasoning, and let the seller decide with the
+> basis of each number in front of her.
+>
+> **What transfers:** "they're just buying the listing" attacks a competitor and gives the seller
+> nothing to evaluate. "I can do that number" abandons the analysis. Neither is advice.
+
+### Problem 3
+
+At the listing appointment a seller says he wants the highest possible price, weekend-only showings,
+a listing he can cancel any time, and to leave the disclosure paperwork until an offer arrives.
+
+**Which requests are negotiable?**
+
+> **Solution.** The first three. Price, showing windows, and cancellation terms are business terms
+> the parties set together.
+>
+> The fourth is not. Disclosure obligations run on their own schedule, and deferring them until an
+> offer arrives compresses the buyer's review, creates pressure at the worst moment, and puts both
+> the seller and the brokerage at risk.
+>
+> The professional move is to separate the categories openly at the appointment rather than defer the
+> conversation — and to start the disclosure work while there is no deadline pressure.
+
+### Problem 4
+
+A seller's transfer disclosure comes back with four items left blank. He says he genuinely does not
+know the answers.
+
+**What should the licensee advise?**
+
+> **Solution.** Complete every item, answering **"unknown"** where that is the truth.
+>
+> A blank is ambiguous: it invites a later dispute about whether the item was addressed at all.
+> "Unknown" is a real, honest, and complete answer.
+>
+> Two things the licensee must not do: mark the uncertain items "no," which asserts knowledge the
+> seller does not have; or complete the seller's disclosure on his behalf, which misattributes the
+> statement.
+
+### Problem 5
+
+A seller wants a lockbox so any licensee can show while he is at work. He keeps firearms, prescription
+medication, and a coin collection in the house.
+
+**What must be addressed, and what if he declines?**
+
+> **Solution.** Secure or remove the firearms, medications, and valuables; agree how showings are
+> logged; confirm the access method the seller authorizes; and disclose any recording devices in the
+> home.
+>
+> If he is told and declines, he has made an informed choice and the file should show the conversation
+> happened. A seller who was never asked has not made a choice at all — and that is the licensee's
+> failure rather than his.
+>
+> **What transfers:** convenient access and secure access are different problems. The licensee's job
+> is to raise the conflict before it produces a loss.
+
+### Problem 6
+
+A licensee accompanies some open-house visitors through the property and lets others walk through
+alone, based on her sense of who seems serious.
+
+**What is wrong with this?**
+
+> **Solution.** Two things, and the second is the more serious.
+>
+> First, the property is unsupervised for some visitors, which is the security failure.
+>
+> Second, and worse: judgments about which visitors seem serious or trustworthy are exactly where
+> bias operates, and the distinction cannot be explained afterwards in neutral terms. Selective
+> supervision is a fair housing exposure alongside a security one.
+>
+> **The control is uniformity.** Everyone is accompanied, or the same supervision applies to everyone.
+
+### Problem 7
+
+Two weeks into a ninety-day listing the seller calls and says she wants to cancel. The licensee has
+spent $1,400 on photography and marketing and has held two open houses.
+
+**Who decides, and what governs?**
+
+> **Solution.** The **broker** decides, because the listing is the brokerage's contract with the
+> seller — not the individual licensee's, however sympathetic he is or however much he wants to
+> accommodate her.
+>
+> What governs is the agreement's cancellation and compensation terms. The marketing spend and the
+> showings may inform a negotiation; they do not decide the question, and neither does the licensee's
+> view of whether her reason is good.
+>
+> **A useful first step:** find out what she actually wants. "I want to cancel" often means "nothing
+> is happening and no one is telling me why," which is a communication problem with a different fix.
+
+### Problem 8
+
+A listing expires unsold. Three weeks later the property sells to a buyer the brokerage introduced
+and identified to the seller in writing during the term.
+
+**What applies, and what else survives the expiration?**
+
+> **Solution.** The **protection clause** may apply on its terms — typically to buyers identified to
+> the seller in writing within a defined period after the term ends.
+>
+> Also surviving: **confidentiality**. The former listing agent may not use or disclose the seller's
+> confidential information, including her lowest acceptable price, afterwards — including for another
+> client and including after the property is relisted elsewhere.
+>
+> **What transfers:** explain the protection clause properly at signing. A seller who understands it
+> accepts it; a seller told "it's standard, just initial here" disputes it later.
+
+## Chapter summary
+
+**Intake establishes three things:** who can convey, what is being sold, and what constrains the
+transaction. Verify authority against a source rather than assuming it from occupancy or the tax
+roll, and stop and escalate where it is unclear.
+
+**Name the disputable items** in the agreement — chandeliers, mounted televisions, appliances,
+outbuildings — so the fixture tests never have to be applied after the fact.
+
+**The listing agreement is the brokerage's contract**, and the licensee should be able to explain
+every operative provision. Compensation is negotiable and never described as standard. The definite
+termination date protects the seller. The protection clause is explained rather than initialed past.
+
+**Price is the seller's decision; the analysis and advice are the licensee's obligation.** Both halves
+matter, and licensees fail in both directions. Where the seller prices above the supported range, the
+file shows the analysis, the written advice, and the seller's decision — and does not adopt the
+seller's reasoning as the brokerage's opinion of value.
+
+**A net sheet answers the seller's real question**, which is proceeds rather than price. Itemize it,
+label it an estimate, and update it — and warn about the payoff, which includes accrued interest.
+
+**Disclosure obligations cannot be scheduled around.** Separate them from the negotiable preferences
+openly at the appointment, complete every item, answer "unknown" honestly, and evidence delivery.
+
+**Access protocols must be uniform**, because selective supervision is a fair housing exposure as
+well as a security failure.
+
+**Expiration, cancellation, and withdrawal are three different things.** Cancellation is a
+broker-level decision governed by the agreement, and confidentiality survives whichever way the
+engagement ends.
+
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify which of the seller's requests are negotiable business terms and which are obligations that cannot be deferred, the authority you would verify and how, the advice you would give in writing, the applicable deadline, the communication you would send, the escalation if any, and the evidence you would retain. The instructor version contains the scoring rubric.

@@ -447,6 +447,250 @@ Note what is not on the list: quietly deleting the post and moving on. Silent re
 
 You should be able to describe an approval and archive process that would allow a brokerage to answer, six months later, exactly what ran, where, when, and with whose approval.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Truthfulness standard** | Advertising is measured against the property **as it is when the advertisement runs** — not as photographed, not as the seller described it, not as assumed. |
+| **Sourcing** | The discipline of being able to name where each factual claim in marketing came from. |
+| **Per seller** | The honest attribution for an unverified figure supplied by the seller. The alternative is to omit it. |
+| **Laundering a figure** | Copying an unverified number from a prior listing so it acquires apparent authority. Not verification. |
+| **Virtual staging** | Digitally added furnishings. Acceptable **when labeled**; unacceptable when presented as existing condition. |
+| **Puffery** | Opinion a consumer understands as opinion — "charming," "stunning." Distinct from a factual claim about value, entitlement, or feasibility. |
+| **Status accuracy** | The requirement that a listing's advertised availability reflect reality. Misusing status to preserve exposure or market time misrepresents to everyone relying on the data. |
+| **Identification** | The requirement that advertising and solicitation identify the licensee, license identification, and the brokerage, so a consumer knows who is responsible and can verify licensure. |
+| **Conspicuousness** | The standard for identification: legible and prominent. Merely present is not the standard. |
+| **Team name** | A brand used by a group within a brokerage. Compliant when it does not create the impression of a separate licensed firm. |
+| **Audience targeting** | Selecting who sees an advertisement. Part of the advertisement — neutral copy delivered selectively can exclude as effectively as discriminatory wording. |
+| **Protected characteristics** | The categories advertising may not express a preference about. **California protects more than the federal seven**, so "not one of the seven" is not clearance. |
+| **Describe the property, not the people** | The workable form of the fair housing advertising rule. Property-focused copy is also more informative. |
+| **Equal housing statement** | An appropriate and expected element of advertising. **Not a cure** for discriminatory content. |
+| **Reasonable accommodation** | A change to a **rule, policy, practice, or service** made because of a disability. |
+| **Reasonable modification** | A change to the **physical premises**, generally at the requester's expense in private housing, subject to reasonable conditions. |
+| **Assistance animal** | Not a pet for fair housing purposes. No pet deposit or pet rent may be charged, and no certification may be required. |
+| **Interactive process** | Engaging about workable alternatives where a request as made is not. Delay functions as denial. |
+| **Verification limits** | A provider may seek enough to establish the disability and the disability-related need — **not** a diagnosis, medical records, or the nature or severity of the condition. |
+| **Steering** | Directing a consumer toward or away from properties based on an assumption. Includes deciding on a buyer's behalf what will "work for them." |
+| **Uniformity** | The control that satisfies fair access at showings: the same protocol for every visitor, including safety practices. |
+| **Archive** | The record of what actually ran, where, on what dates, and with whose approval. Ephemeral formats require deliberate capture. |
+
+## Practice problems
+
+### Problem 1
+
+A listing description reads: "1,840 sq ft, 4 bedrooms, all improvements permitted, walking distance
+to excellent schools, room for a pool." The square footage came from the prior listing, the fourth
+bedroom is a converted garage space with no egress window, and the seller told the licensee the
+work was permitted.
+
+**Identify each defect and state what each claim required.**
+
+> **Solution.** Four defects.
+>
+> **Square footage:** copying from the prior listing is not verification — it launders an unverified
+> number into an apparently authoritative one. Required: measurement, appraisal, or public record,
+> **with the source stated**. "1,840 sq ft (per assessor; buyer to verify)" is both more useful and a
+> materially better position if it turns out wrong.
+>
+> **Bedroom count:** a room counts if it meets the local definition. A converted space with no egress
+> does not become a bedroom because it has a bed in it.
+>
+> **Permitted status:** "the seller says it was permitted" is not a source. Permit records are.
+>
+> **"Room for a pool":** this reads as opinion and is a factual claim about feasibility — it requires
+> setbacks, soils, and access that would actually permit one.
+>
+> "Walking distance to excellent schools" is separately a fair housing problem, addressed in
+> Problem 5.
+
+### Problem 2
+
+A listing's photographs were taken before a storm damaged the rear deck. The licensee digitally
+removes a power line from the front elevation and adds furniture to the empty living room.
+
+**Classify each of the three and state the test.**
+
+> **Solution.** **Stale photographs: not acceptable.** Truthfulness is measured against the property
+> as it is when the advertisement runs, and the deck is not what the images show.
+>
+> **Removing the power line: not acceptable.** Digital alteration that changes what the property is
+> — removing a power line, a neighboring structure, or a visible defect — misrepresents it.
+>
+> **Adding furniture: acceptable, labeled as virtual staging.** Unlabeled, it is not.
+>
+> **The test:** whether a consumer viewing the property in person would feel the images described a
+> different place.
+
+### Problem 3
+
+A licensee posts a listing to her personal Instagram account. Her brokerage is named in her profile
+bio but not in the post. She boosts it with targeting set to homeowners aged 25–45 within three ZIP
+codes.
+
+**Identify the two problems and rank them.**
+
+> **Solution.** **The targeting is the more serious**, and it is easy to miss because it does not
+> appear in the copy at all. Restricting who may see a housing advertisement can deny groups access
+> to the housing opportunity — that is the harm the rules exist to prevent — and age-based selection
+> plus geographic proxies is exactly that. Neutral copy delivered selectively excludes as effectively
+> as discriminatory wording, and "the platform offered that option" is not an answer.
+>
+> **The identification defect is second.** Each post is an advertisement in itself. Identifying the
+> profile is not identifying the advertisement — and a personal account posting listings is
+> advertising regardless of what the licensee considers it.
+>
+> **What transfers:** examine targeting choices with the same care as the words.
+
+### Problem 4
+
+A team advertises as "Summit Realty Group" with its own logo, displayed far more prominently than the
+brokerage name in small type at the bottom. Every property fact in the advertisements is accurate.
+
+**Is there a defect?**
+
+> **Solution.** Yes, and the accuracy of the property facts is a different requirement that does not
+> cure it. The test is the impression created for a consumer, not the internal organizational chart:
+> a team identity presented as a separate firm obscures which licensed brokerage is accountable.
+>
+> "Group" and similar terms compound it by suggesting the team is itself a company. And "present" is
+> not the standard — legible and conspicuous is.
+>
+> **The fix:** brokerage identity legible wherever the team identity appears, a team name that does
+> not suggest a brokerage, and relative prominence that does not let a reader take the team for the
+> firm.
+
+### Problem 5
+
+Rewrite each phrase so it describes the property: (a) "family-friendly neighborhood"; (b) "not
+suitable for anyone with mobility issues"; (c) "walking distance to St. Anne's parish."
+
+**Then state what makes each rewrite better than an omission.**
+
+> **Solution.** (a) "Cul-de-sac location; park two blocks away." (b) "Second-floor unit; access by
+> stairs, no elevator." (c) "Walking distance to the town center."
+>
+> Each rewrite is **more informative than the original**. That is the point worth carrying: (b)
+> especially tells a buyer with a mobility concern exactly what they need to know, without deciding
+> on their behalf whether the property will work for them.
+>
+> This is also the answer to the common overcorrection of omitting accessibility features entirely.
+> The rule governs who the property is *for*, not what the property *has*. Describe the step-free
+> entry, the roll-in shower, the elevator. Do not characterize who it suits.
+>
+> A seller who insists on the original copy does not authorize it, documenting that it came from him
+> does not transfer responsibility, and a softened version conveying the same preference is the same
+> violation in gentler words.
+
+### Problem 6
+
+A tenant with a disability asks the property manager to waive the no-pet policy for her assistance
+animal and to install grab bars in the bathroom. The manager replies that the building does not
+allow pets, that certification would be required in any event, and that a pet deposit would apply.
+
+**Classify each request and identify every error in the reply.**
+
+> **Solution.** The animal is a request for a **reasonable accommodation** — a change to a rule or
+> policy. The grab bars are a **reasonable modification** — a change to the physical premises,
+> generally at the requester's expense, subject to reasonable conditions such as workmanlike
+> installation and permits.
+>
+> Four errors in the reply. It **evaluated the accommodation under the ordinary pet policy**, which
+> is the classic mistake: it produced a denial that never engaged the actual standard. An assistance
+> animal **is not a pet**, so the no-pet policy does not by itself justify refusal. **Certification
+> may not be required.** And a **pet deposit or pet rent may not be charged**, because it imposes a
+> condition on a protected group others do not bear.
+>
+> What the provider may still do: conduct a genuine reasonableness analysis, engage about
+> alternatives, and hold the resident responsible for damage and for the animal's behavior. What it
+> may not do is let the request sit — delay functions as denial.
+
+### Problem 7
+
+A licensee working an open house greets one couple warmly and walks them through the property, lets
+a second visitor tour alone, and asks a third whether he is preapproved before showing him the back
+bedrooms. She also meets some unfamiliar prospects at the office and others at vacant properties,
+depending on her impression of them.
+
+**Identify the exposures.**
+
+> **Solution.** Every distinction here is drawn on impression, and impression is precisely where bias
+> operates — none of it can be explained afterwards in neutral terms.
+>
+> **Accompaniment** must be uniform: everyone accompanied, or the same supervision for everyone. The
+> unaccompanied visitor is separately a property security failure.
+>
+> **Qualifying questions** must be the same questions asked of everyone, in the same way. Asking one
+> visitor about preapproval before showing him areas others saw freely is a fair housing exposure at
+> the first point of contact, before any property was discussed.
+>
+> **The safety practice is the subtle one.** Meeting unfamiliar prospects at the office first is
+> sound practice — but applied selectively by impression it reintroduces exactly the problem
+> uniformity solves. Apply it to everyone or to no one.
+>
+> **What transfers:** three obligations run at every showing — security, fair access, and personal
+> safety — and a practice designed for one of them fails the others unless it is uniform.
+
+### Problem 8
+
+A quarterly review finds eleven social posts with no brokerage identification, one flyer reading
+"walking distance to excellent family schools," one listing still advertised as available three
+weeks after going into contract, and no archive of any social content.
+
+**Rank the findings and state the response.**
+
+> **Solution.** The **flyer is the most serious in kind** — fair housing copy that sorts people. The
+> **status misrepresentation** misled every consumer and agent relying on that data. The
+> **identification failures** are the most numerous and the easiest to fix.
+>
+> But the **absence of an archive is the finding that makes the others worse**: the brokerage cannot
+> show what else ran, so the quarter cannot actually be audited, only sampled.
+>
+> **Response:** correct and record each instance; identification in the post rather than the profile;
+> fair housing language on the approval checklist; a named owner and timing for status updates; and
+> archiving social content **at publication**, because the platform does not keep ephemeral formats
+> for you.
+>
+> What must not happen is quietly deleting the posts. Silent removal leaves no record the problem
+> existed, no evidence it was addressed, and no correction of the process that produced it — and how
+> a brokerage answers its own findings is itself evidence about the supervision system.
+
+## Chapter summary
+
+**Truthfulness is measured against the property as it is when the advertisement runs.** Most defects
+are not lies; they are statements that were true once, true of something else, or true if an
+assumption held.
+
+**Every factual claim needs a nameable source.** Where the source is the seller and it has not been
+verified, attribute it or omit it. Copying from a prior listing is not verification.
+
+**Photographs are advertising.** Virtual staging and renderings are acceptable when labeled;
+alteration that changes what the property is, is not.
+
+**Opinion is permitted; opinion stated as verifiable fact is not.** Claims about value, entitlement,
+and feasibility are factual claims and must be supportable.
+
+**Identification exists so a consumer can find who is responsible and verify licensure.** It belongs
+in the post, not only in the profile, and legibility — not mere presence — is the standard.
+
+**Audience targeting is part of the advertisement.** Restricting who sees a housing advertisement can
+deny access as effectively as the words, and using a platform's tool does not shift responsibility.
+
+**Describe the property; do not describe the people who should live in it.** California protects more
+than the federal seven, intent is not a defense, and an equal housing statement does not cure
+discriminatory content. Property-focused copy is consistently more informative.
+
+**Accommodations change rules; modifications change premises.** Evaluating an accommodation under the
+ordinary policy is the classic error. Assistance animals are not pets, no certification may be
+required, no pet charge may be imposed, and delay functions as denial.
+
+**Verification asks whether the need exists, not what the condition is.**
+
+**Uniformity is the fair access control at showings** — including safety practices, which must be
+applied to everyone to be defensible.
+
+**Approval and archive are how a broker's accountability becomes real.** The measure of an approval
+process is whether publishing without it is noticed; the measure of an archive is whether the
+brokerage can say, six months later, exactly what ran, where, when, and with whose approval.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify each defect in the proposed marketing, classify it as truthfulness, identification, fair housing, or status accuracy, provide the corrected copy, state what source each factual claim requires, describe the approval and archive steps, and identify what you would escalate. The instructor version contains the scoring rubric.

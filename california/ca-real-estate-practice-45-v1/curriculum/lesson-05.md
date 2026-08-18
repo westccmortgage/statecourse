@@ -381,6 +381,229 @@ The most useful evidence in a price-reduction conversation is the property's own
 
 You should be able to take an adjustment grid, state which comparable is the strongest indicator and why, produce a range with a most-probable point, and list what the file must retain for the opinion to be reconstructable.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Comparative market analysis** | The licensee's opinion of the price a willing, informed buyer would most likely pay within a reasonable marketing period. Produces a range, not a certainty. |
+| **Market area** | The area within which a buyer for this property would consider alternatives. A behavioral definition, which is why a radius search is not one. |
+| **Competitive set** | The comparables that resemble the subject in the characteristics driving buyer decisions in this market. |
+| **Effective age** | Age as reflected by condition and updating, rather than the year the improvement was built. |
+| **Market conditions adjustment** | The adjustment applied because the market has moved since the comparable closed. Driven by change, not by the calendar. |
+| **Direction of adjustment** | Adjustments are made **to the comparable, never to the subject**. Comparable better, subtract; comparable worse, add. |
+| **Paired sales analysis** | Deriving an adjustment amount by comparing sales that differ in a single characteristic. The preferred source. |
+| **Contribution** | What the market pays for an improvement. Distinct from what the improvement cost. |
+| **Over-improvement** | An improvement whose contribution falls well below its cost because the pool of buyers who want it is small. |
+| **Reconciliation** | Weighting the indicated values by reliability to reach a range and a most-probable point. **Not** averaging. |
+| **Gross versus net adjustment** | Gross is the total adjustment applied; net is the sum after offsets. A small net can conceal a large gross, and reliability tracks gross. |
+| **Closed sale** | A completed transaction. The only direct evidence of price the market produces. |
+| **Pending sale** | A price agreed but not closed. Evidence of where the market is moving, not of a final price. |
+| **Active listing** | A property currently offered. Evidence of the competition and of asking prices — never evidence of value. |
+| **Months of supply** | Active inventory divided by the average monthly rate of sales. Answers how long it would take to sell everything now listed. |
+| **Days on market** | How long properties take to go under contract. Often the earliest visible sign a market is turning. |
+| **Stale-listing effect** | The headwind an overpriced property generates for itself once buyer attention has passed and market time is visible. |
+| **Seller net sheet** | An itemized estimate translating price into proceeds. Answers the question the seller is actually asking. |
+| **Payoff demand** | The lender's statement of what satisfies the loan, including accrued interest and other amounts under the note — routinely above the principal balance. |
+| **Appraisal** | An independent opinion of value prepared by a licensed or certified appraiser under appraisal standards, for a defined use. A licensee's analysis is not one and may not be called one. |
+| **Appraiser independence** | The principle permitting a licensee to supply relevant **information** to an appraiser and prohibiting the supply of a **target**. |
+| **Reconstructability** | The test of a defensible opinion: could a reviewer later see what data, what adjustments, what reasoning, and what date. |
+
+## Practice problems
+
+### Problem 1
+
+A licensee prepares an analysis using a one-mile radius search. Four of the six comparables sit
+across a six-lane arterial in a newer tract of two-story homes on smaller lots. The subject is a 1962
+single-story ranch in a tract of about 200 similar homes.
+
+**What is the defect, and are the four sales unusable?**
+
+> **Solution.** The defect is that the market was never defined. A radius is an administrative
+> convenience; the relevant market is the area within which a buyer for *this* property would consider
+> alternatives, and a buyer choosing among 1962 single-story ranches is not weighing the two-story
+> tract as an equivalent.
+>
+> The four sales are not unusable. They are **secondary evidence**, usable with a location adjustment
+> and a stated explanation. What is wrong is treating them as directly comparable, because that
+> overstates the confidence the conclusion deserves.
+>
+> **What transfers:** the market definition determines whether the comparables mean anything. It is
+> the step new licensees skip and the step that decides the analysis.
+
+### Problem 2
+
+A comparable sold for $902,000 five months ago in a rising market. It is 180 square feet larger than
+the subject and has a fourth bedroom the subject lacks.
+
+**State the direction of each adjustment and why.**
+
+> **Solution.** Three adjustments, in two directions.
+>
+> **Market conditions: upward.** The market has risen since it closed, so it would sell for more today.
+>
+> **Living area: downward.** The comparable is larger — superior — so its price is adjusted down toward
+> the subject.
+>
+> **Bedroom count: downward.** Same logic; the extra bedroom is superior to the subject.
+>
+> Each answers the same question: *what would this comparable have sold for if it had been like the
+> subject?* Comparable better, subtract. And every adjustment lands on the comparable — never on the
+> subject.
+
+### Problem 3
+
+Three comparables produce adjusted values of $844,000 (net adjustment $1,000), $874,000 (net
+$28,000), and $861,000 (net $51,000, and the most recent sale).
+
+**A licensee averages them to $859,667. What is wrong, and what is the defensible conclusion?**
+
+> **Solution.** Averaging treats the comparable requiring $51,000 of adjustment as exactly as reliable
+> as the one requiring $1,000. It is not, and the average silently discards that information.
+>
+> Reconciliation weights by reliability: adjustment size first, then recency, then similarity in what
+> drives this market. The first comparable is the strongest indicator; the third carries the heaviest
+> adjustment burden, partly offset by being the most recent.
+>
+> A defensible conclusion: **a supported range of roughly $845,000 to $870,000, most probable near
+> $850,000 to $855,000, weighted toward the least-adjusted and most similar indicator** — a range,
+> a point, and a stated reason for the weighting.
+>
+> **What transfers:** a single number with no reasoning attached cannot be defended later, however
+> close it turns out to be.
+
+### Problem 4
+
+A seller spent $150,000 building a recording studio into the garage of a home in a neighborhood of
+family homes. He expects the analysis to reflect it.
+
+**How should the licensee explain the result?**
+
+> **Solution.** By explaining contribution rather than arguing about the number.
+>
+> Money spent on a property does not become value in the property; the market decides what an
+> improvement contributes. Here the pool of buyers who want a recording studio — and would pay for
+> one — is small, and the studio also consumed the garage, which most buyers in this neighborhood do
+> want. That is over-improvement relative to the neighborhood: a recognized phenomenon, not a
+> rhetorical device for arguing a seller down.
+>
+> Worth saying honestly in the same conversation: the relationship runs both ways, and some modest
+> improvements contribute more than they cost because they remove a specific buyer objection.
+
+### Problem 5
+
+A seller points to three nearby homes listed at $1.3 million and asks why the recommendation is
+lower. The three have been on the market 94, 112, and 130 days without an offer.
+
+**Frame the response.**
+
+> **Solution.** Read the same data more carefully rather than arguing with it.
+>
+> Active listings prove what sellers are asking — a seller can ask any number at all. What these
+> three additionally prove is that **the market has declined to pay $1.3 million three separate
+> times, over three months each.**
+>
+> The framing that works: "Those listings tell us what our competition is asking. They also tell us
+> that at that price, buyers have walked past three homes like yours for over three months. Here is
+> what buyers actually paid, in the last four months, for homes like yours."
+>
+> **What transfers:** it does not attack the competitor and does not argue with the seller. It puts
+> the evidence in front of her and lets her draw the conclusion.
+
+### Problem 6
+
+Submarket X has 48 active listings and 36 properties went under contract over the past three months.
+Submarket Y has 96 actives and 8 going under contract per month. Recent closed prices look similar.
+
+**Compute months of supply for each and state the pricing consequence.**
+
+> **Solution.** Submarket X: 36 ÷ 3 = 12 sales per month; 48 ÷ 12 = **4 months of supply.**
+> Submarket Y: 96 ÷ 8 = **12 months of supply.**
+>
+> Same-looking closed prices, materially different markets. Four months of supply is a market where
+> a correctly priced property meets buyers quickly; twelve is one where inventory sits, days on market
+> climb, and closed prices are a lagging picture of a market that has already turned.
+>
+> **What transfers:** the licensee needs an independent view of market direction — supply, days on
+> market, sale-to-list ratio — **before** pulling a single comparable, because that view is what
+> decides whether a six-month-old sale needs a market conditions adjustment.
+
+### Problem 7
+
+A seller is weighing a $920,000 offer with a $15,000 buyer closing cost credit against an $895,000
+offer with no credit. Compensation is 5%; closing costs are about $9,200 and $9,000 respectively.
+
+**Which nets more, and what else belongs in the advice?**
+
+> **Solution.** Offer A: $920,000 − $15,000 − $46,000 − $9,200 = **$849,800.**
+> Offer B: $895,000 − $44,750 − $9,000 = **$841,250.** Offer A nets about **$8,550 more** before payoff.
+>
+> That is the arithmetic and not the whole answer. Also in front of the seller: financing strength,
+> since a credit-heavy offer sometimes signals a buyer stretched on cash; **appraisal exposure**, since
+> the higher price carries more shortfall risk and the credit does not reduce the price the appraisal
+> must support; contingencies and timelines, which affect the probability of closing at all; and
+> occupancy terms, which may matter more to this seller than $8,550.
+>
+> **What transfers:** a net sheet that produces a number without that context invites the seller to
+> decide on the number alone.
+
+### Problem 8
+
+A lender's appraisal comes in $30,000 below the contract price. The listing agent emails the
+appraiser a list of three sales she believes were overlooked and asks him to "take another look —
+we need $920,000 to make this work."
+
+**What is the appraisal event, and what is wrong with the email?**
+
+> **Solution.** The appraisal is a **financing event**, not a verdict on anyone's analysis: lenders
+> lend against the lower of appraised value and price. The paths are the buyer covering the gap,
+> renegotiation, another negotiated resolution, or cancellation if a contingency permits and its
+> procedure is followed. None happens automatically — the price does not adjust by operation of any
+> loan program, the loan is not automatically denied, and no one is entitled to a second appraisal as
+> of right.
+>
+> The email mixes something permitted with something prohibited. Sending relevant sales through the
+> proper channel is **information** and is fine. "We need $920,000" is a **target**, and a value that
+> moves after the appraiser is told what it must be is worthless for the purpose the appraisal exists
+> to serve.
+>
+> **What transfers:** the request to reconsider with a number attached is the pattern to refuse —
+> including when it comes from your own client.
+
+## Chapter summary
+
+**Define the market before pulling comparables.** The relevant market is where a buyer for this
+property would consider alternatives — a behavioral boundary, which is why radius searches, ZIP
+codes, and listing service districts mislead.
+
+**Adjustments are made to the comparable, never to the subject.** Comparable better, subtract;
+comparable worse, add. Every adjustment answers one question: what would this comparable have sold
+for if it had been like the subject?
+
+**Adjustment amounts are derived, not invented** — paired sales first, then market-derived rates,
+then cost with depreciation, then reasoned judgment identified as judgment.
+
+**Contribution is not cost.** The market decides what an improvement adds, and for specialized
+improvements the contribution is usually well below what was spent.
+
+**Reconcile, do not average.** Weight by adjustment size, recency, and similarity, and state the
+weighting. The conclusion is a range with a most-probable point and a reason.
+
+**Closed sales prove price; pending sales show direction; active listings are the competition.**
+Active listings never establish value, and a long-unsold listing is evidence the market has refused
+that price rather than evidence it will pay it.
+
+**Months of supply and days on market give the licensee an independent view of direction**, which is
+what decides whether a comparable needs a market conditions adjustment.
+
+**A net sheet answers the seller's real question, which is proceeds.** Label it an estimate, update
+it, and warn that the payoff includes accrued interest rather than the principal balance alone.
+
+**A comparative market analysis is not an appraisal** — different preparer, standards, independence,
+and purpose — and it may never be held out as one. Supply an appraiser information; never a target.
+
+**Defensibility is reconstructability.** The file shows the data, the adjustments, the reasoning, the
+comparables rejected and why, the range, the date, and the seller's decision. An analysis quietly
+revised upward to match a list price is worse than no analysis.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Construct the adjustment grid, state the direction and basis of each adjustment, reconcile to a range with a most-probable point, identify the comparables you rejected and why, prepare an estimated net at the recommended price, and state the written advice you would give the seller. The instructor version contains the scoring rubric.
