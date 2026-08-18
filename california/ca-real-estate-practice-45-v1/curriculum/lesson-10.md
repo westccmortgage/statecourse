@@ -71,6 +71,34 @@ The same reading, for a different purpose: to know how the offer will be receive
 
 **May not:** recommend a specific program as suitable for this buyer; predict what a lender will approve; advise on structuring the buyer's finances to qualify; suggest that anything be omitted or characterized differently on an application.
 
+### 1.6 Cash offers and unconventional funding
+
+An offer that says "cash" removes the financing contingency from the conversation and replaces it with a verification problem most licensees handle worse.
+
+**"Cash" means the buyer has the funds and is not obtaining a loan secured by the property.** It does not mean the money is sitting in a checking account today, and the difference is where cash transactions fail.
+
+| The source | What it actually requires |
+|---|---|
+| **Funds on deposit** | The simplest case. Proof of funds identifies the institution, the account holder, and a balance as of a date. |
+| **Funds in securities** | A liquidation that takes time and produces a different amount than the statement shows. |
+| **Funds from a sale closing first** | **Not cash. It is a contingent transaction wearing a cash label**, and the dependency belongs in the offer. |
+| **A loan against other property or assets** | Financing, secured elsewhere. It has its own approval and its own timeline. |
+| **Funds from a retirement or self-directed account** | Frequently subject to procedural requirements and custodial timelines that are slower than the closing period. |
+| **Funds from another person** | Raises who the buyer actually is, and whether the person on the contract is the person acquiring. |
+| **Funds arriving from outside the country** | Transfer timelines and institutional requirements that can exceed the closing period substantially. |
+
+**What a listing agent does with a cash offer.** Read the proof of funds as carefully as Section 1.3 reads a preapproval: **whose name, which institution, what date, and does the amount cover the price plus costs.** A statement in a name other than the buyer's, a screenshot with no institution identified, or a letter making an assertion without a source is not verification.
+
+**What a buyer's agent does.** Confirm with the buyer where the money actually is and how long it takes to become available in the escrow, **before** proposing a short closing period. **A fourteen-day close proposed by a buyer whose funds require a twenty-day custodial process is a default the buyer scheduled himself.**
+
+**Two boundaries hold in every case.**
+
+**The source of funds question belongs to escrow, title, and the institutions**, which have their own obligations. A licensee who becomes aware of facts suggesting the funds are not what they are represented to be **escalates to the broker** rather than investigating, on the same reasoning Lesson 14 of the mortgage course applies to origination.
+
+**A cash buyer still gets an appraisal if he wants one.** Removing the lender does not remove the value question, and a buyer who wants an independent valuation should have it as a contingency rather than an afterthought.
+
+> **The seller's version of this conversation:** cash is faster and more certain **when the money is actually liquid.** A cash offer contingent on a securities liquidation, an overseas transfer, or another closing is not more certain than a strong financed offer — **it is less certain, with fewer disclosures.**
+
 ## 2. Loan program orientation
 
 ### 2.1 Conventional financing
@@ -150,6 +178,35 @@ A buyer who proposes any of these should be told plainly what it does to the clo
 
 That last point deserves emphasis: a licensee who accepts a fee from an escrow company, title company, lender, or home warranty provider for sending business has a serious federal problem, and disclosure does not cure it.
 
+### 3.5 The buyer who wants to shop lenders mid-transaction
+
+A buyer under contract calls: a different lender has quoted a better rate, and he wants to switch.
+
+**It is his decision.** He may change lenders at any point, and a licensee who tells him he cannot has misstated his rights. **What the licensee owes him is the consequence, stated clearly and before he acts.**
+
+**What changing lenders costs, and none of it is obvious to a first-time buyer:**
+
+1. **The timeline restarts in substance.** A new lender begins its own process — application, disclosures, underwriting, appraisal. **The days already spent do not transfer.**
+2. **A new appraisal is usually required**, because an appraisal is generally ordered for and delivered to a particular lender. **The buyer may pay twice**, and the second appraisal can come in differently.
+3. **The loan contingency deadline does not move because he switched.** It is a contract date, and Section 6.4 governs extensions — which require the seller's agreement.
+4. **New disclosures and their timing apply**, which can affect the closing date, as Section 3.3 describes.
+5. **The rate that motivated the change may not survive** underwriting, the appraisal, or the delay.
+
+**What the licensee does:**
+
+- **Lay out the five points above in writing**, without recommending either lender.
+- **Tell him to ask the new lender for a realistic closing date** in writing, and to tell both lenders the contract deadlines.
+- **Raise the extension question with the seller's side early** if the timeline is genuinely at risk — Section 6.3's early-warning discipline, applied to a self-inflicted delay.
+- **Record the conversation and the buyer's decision.**
+
+**What the licensee does not do:**
+
+- **Compare the loan offers.** Section 1.5 and Section 3.4 both draw this line. **Rate, cost, and program comparison is the lender's work**, and a licensee who says "that second offer is better" has advised on a matter he is not licensed for.
+- **Discourage him from switching to protect the closing date.** The buyer's economics are the buyer's, and a licensee whose advice is shaped by his own interest in a smooth closing has a loyalty problem.
+- **Tell the current lender the buyer is shopping**, or the new lender what the current one quoted.
+
+> **The related situation, and it is more common:** the buyer does not switch, but starts a second application "just to compare." **That is a second credit inquiry and a second file**, and the two lenders' processes can interfere. The instruction is the same one Section 3.7 of Lesson 07 gives about every financial move: **talk to the lender before doing it**, and tell the licensee it happened.
+
 ## 4. Appraisal and underwriting
 
 ### 4.1 What the appraisal does for the lender
@@ -213,6 +270,28 @@ Advise the buyer of these at the start of escrow, in writing, because by the tim
 
 A short written note at the start of escrow — *do not open credit, change jobs, or move large sums without telling your lender first* — prevents more failed transactions than any other single communication a licensee sends.
 
+### 4.7 A worked underwriting failure
+
+> **Day 24 of a 35-day escrow.** The loan contingency was removed on day 21. The buyer's agent receives a call: underwriting has issued a new condition requiring documentation of a 12,000 deposit made to the buyer's account eleven days ago, and the buyer has told the loan officer it was "money my dad gave me for the down payment."
+>
+> **What has actually happened.** A gift, undocumented, deposited during the transaction. It is an ordinary and entirely fixable situation — **and every way of making it go away quickly is a way of making it worse.**
+>
+> **What the buyer's agent does.**
+>
+> **Route it to the lender and stay routed.** The condition is the lender's, its cure is the lender's to specify, and Section 3.4's prohibition governs. **The licensee does not tell the buyer what to write, does not suggest characterizing the funds differently, and does not propose that the father "just take it back and re-send it later."** Lesson 14 of the mortgage course names each of those.
+>
+> **Tell the buyer plainly what is at stake in time.** The loan contingency is removed. **The deposit is exposed if the loan does not fund**, and the condition is now the thing standing between him and closing. This is information he needs today, not on day 33.
+>
+> **Get the actual timeline from the lender in writing**: what documents, from whom, and how long after receipt underwriting needs. **"We should be fine" is not a timeline** and it is what a loan officer under pressure says.
+>
+> **Raise it with the listing side early.** Section 6.3's early-warning discipline. A seller who learns on day 24 that there is a condition has options; a seller who learns on day 34 has a problem and a grievance. **What is communicated is the fact and its timeline — not a characterization of the buyer's finances**, which is his private information.
+>
+> **Prepare for the extension conversation** rather than making it at the deadline. Section 6.4 governs, and an extension is the seller's to grant.
+>
+> **What the listing agent does.** Takes the information to the seller, sets out the options — extend, hold, or address a failure to perform — and **does not advise the seller that the buyer is "probably fine."** The seller's decision is his, and the licensee's job is to make sure it is informed and documented.
+>
+> **The retrospective finding.** The contingency was removed on day 21 while the file carried an undocumented deposit made on day 13. **Nobody asked.** Section 4.6 lists what jeopardizes an approval during escrow, and the discipline that would have prevented this is the one in Section 3.7 of Lesson 07: **ask the buyer periodically whether anything changed with work, credit, or money, and route the answer to the lender before the removal deadline rather than after.**
+
 ## 5. Closing costs and seller credits
 
 ### 5.1 What a seller credit is
@@ -267,6 +346,30 @@ Licensees should be able to explain the concept and should not attempt to comput
 Sellers routinely expect the payoff to equal the principal balance. It does not: a payoff demand includes **accrued interest to the payoff date and any other amounts owed under the note.**
 
 Explaining this at listing, on the net sheet, prevents an unhappy conversation at closing — and it is one of the small things that distinguishes a licensee who prepared the client from one who did not.
+
+### 5.7 Reading an estimated closing statement
+
+Clients receive an estimated statement and look at one number. **The licensee's job is to read the rest of it**, because errors in a closing statement are found by the people who know what the transaction was supposed to say, and escrow is not one of them.
+
+**What to check, in order:**
+
+1. **The parties and the property.** Names spelled as they appear on title, the property described correctly. A misspelling here follows the file into the recorded instruments.
+2. **The sale price and the deposit.** Against the agreement and against the receipt.
+3. **The loan amount and its terms**, against the buyer's lender documents.
+4. **Every credit.** A seller credit negotiated in an amendment must appear, in the amount the amendment states. **Section 5.1's credits are the single most frequently omitted item**, because they were agreed late and the amendment reached escrow late or not at all.
+5. **Prorations.** Taxes, association dues, rent and deposits where the property is tenant-occupied, and any prepaid service. **Check the date they are prorated to** — a proration to the wrong date is a small error in a familiar place, which is why it survives.
+6. **The payoff figures**, against the demands, including whether the demand's good-through date covers the actual closing. Section 5.6 covers what happens when it does not.
+7. **Fees**, against what the parties were told they would pay and against who agreed to pay them.
+8. **Commission and any referral or administrative charge**, against the agreements — and, on the licensee's own side, against what was disclosed to the client.
+9. **The bottom line**, which should now be the arithmetic result of everything above rather than the first thing anyone looked at.
+
+**Two habits.**
+
+**Compare against the last estimate, not only against the contract.** Statements are revised, and the revision that matters is the one nobody read because it looked like the previous version.
+
+**Raise discrepancies immediately and in writing, to escrow, with the document that supports the correction attached.** Escrow acts on instructions and documents; a phone call reporting that "the credit is wrong" without the amendment attached produces a delay rather than a correction.
+
+> **What the licensee does not do:** explain the tax consequences of any line, advise on how title should be taken, or tell a client that a charge is "standard." **Section 2.4 of Lesson 11 draws the vesting line**, and "standard" is a characterization of someone else's fee that the licensee has no basis to make.
 
 ## 6. Financing failure and contingency response
 
@@ -323,7 +426,27 @@ Whatever the outcome, the file should show: the contract's financing terms and d
 
 A financing failure with a complete file is a business disappointment. The same failure with an incomplete file is a dispute in which the brokerage cannot show what it did.
 
-### 6.7 Checkpoint
+### 6.8 After a financing failure
+
+A transaction that fails on financing produces two subsequent problems, and licensees handle the second one badly.
+
+**The first problem is the deposit**, and Section 6.1 governs. The disposition follows the contract's procedure. **It is not decided by which side feels wronged**, and it is a broker and counsel matter where it is disputed.
+
+**The second problem is what the seller says about the property when it goes back on the market.**
+
+**What must be disclosed.** The property's condition is what it was; the failure was the buyer's financing, not the house. **But a transaction that failed after an appraisal came in low has produced information about value** — and where the seller now knows the property appraised at a number, that knowledge exists and its treatment is a question for the broker, because whether and how it must be disclosed depends on facts and on law rather than on preference.
+
+**What must not be said.** "It fell out for personal reasons" when it fell out on a low appraisal is a misrepresentation to the next buyer. **The temptation here is strong and the licensee should recognize it as the same category as every other convenient characterization in this course.**
+
+**What the listing service record should show.** The status change, accurately and promptly. Days-on-market treatment is governed by the service's own rules, and **manipulating a listing's history by cancelling and relisting to reset a counter is a misrepresentation to the market**, whatever the service's mechanics permit.
+
+**What the next buyer's agent should ask, and what he is entitled to.** Why the prior transaction failed is a fair question. **The listing side answers it truthfully or declines to answer** — it does not answer it falsely. A licensee whose seller instructs him to give a false reason is in Lesson 03's obedience situation.
+
+**The one item that is frequently missed:** inspection reports and specialist evaluations obtained by the failed buyer. They belong to the buyer who paid for them, and **they are not the seller's to distribute without permission.** But where their contents revealed a material fact the seller now knows about his own property, **the seller's disclosure obligation runs on his knowledge regardless of where the knowledge came from.** The report and the fact are two different things, and only one of them is the buyer's property.
+
+> **The professional handling in one paragraph:** update the disclosures with anything the failed transaction taught the seller about the property, tell the truth about why it failed, change the listing status accurately, keep the failed file complete, and let the next buyer make an informed decision. **A property that comes back to market with an updated disclosure package is a stronger listing than one that comes back pretending nothing happened** — and the second one produces the claim.
+
+### 6.9 Checkpoint
 
 You should be able to advise a buyer facing a low appraisal with and without an appraisal contingency, name six events during escrow that jeopardize a conditional approval, and state how a closing date is extended.
 
