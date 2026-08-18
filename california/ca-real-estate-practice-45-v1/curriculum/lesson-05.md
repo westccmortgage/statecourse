@@ -86,7 +86,26 @@ The test is not the age of the sale but whether the market has changed since it 
 
 Where sources conflict, say so in the analysis rather than silently choosing one. A note that "the listing service reports 1,840 square feet and the assessor reports 1,790; the analysis uses 1,840 with the discrepancy noted" is stronger than an unexplained number.
 
-### 1.6 Checkpoint
+### 1.7 Property types where the standard method breaks down
+
+The market-area and competitive-set method in Sections 1.2 and 1.3 assumes something that is true of most suburban resale housing and false of several common property types: **that enough genuinely similar properties sold recently nearby.**
+
+Where that assumption fails, the method does not stop working — it starts producing a number with false precision, which is worse than producing none.
+
+| Property type | Why the assumption fails | What the analysis does instead |
+|---|---|---|
+| **Attached housing in a common-interest development** | Two units with identical floor plans can differ materially by association dues, reserves, pending assessments, litigation, and rental restrictions. **The physical comparison is the easy part and the least important.** | Obtain the association's documents and compare on total monthly cost and restriction, not on price per square foot |
+| **Acreage and rural property** | Sales are few, far apart, and driven by water, access, zoning, and usable versus total acreage | Widen the area deliberately and adjust for the drivers rather than the improvements; state the widening in the analysis |
+| **A genuinely unique property** | No competitive set exists in any meaningful sense | Present a range with its reasoning rather than a point, and say plainly that the data does not support precision |
+| **New construction in an active subdivision** | The builder's prices are list prices set by a single seller, and the incentives are frequently not in the recorded price | Treat builder pricing as active-listing evidence under Section 3.3, and pursue what the incentives actually were |
+| **Deed-restricted or income-restricted housing** | Price is constrained by a governing instrument rather than by the market | **Read the restriction.** The analysis is bounded by it, and this is a legal document rather than a market fact |
+| **Mixed residential and income use** | Value derives partly from income, which the residential method does not capture | Recognize the limit and say so; an income analysis is a different discipline |
+
+**The professional obligation in every row is the same:** state what the data supports and what it does not.
+
+> **The failure this prevents:** a single-page analysis with three comparables, a confident number, and no acknowledgment that the subject is a five-acre parcel with a shared well and the nearest similar sale is eleven months old and four miles away. **The number is not wrong because the licensee was careless. It is wrong because the method was applied where its assumptions did not hold**, and nothing on the page tells the seller that.
+
+### 1.8 Checkpoint
 
 You should be able to define a market area for a given subject and justify one comparable you included and one you excluded, in terms of buyer behavior rather than distance.
 
@@ -182,6 +201,27 @@ The complement is also true: some modest improvements contribute more than they 
 | Making a lot of small adjustments to reach a target | The grid becomes an argument for a predetermined number |
 | No adjustment for a distressed sale, or automatic exclusion | Whether it reflects this market is an analytical question, not a preference |
 
+### 2.7 Bracketing, and the grid that proves too much
+
+Two disciplines separate a defensible grid from a persuasive one.
+
+**Bracketing.** For each significant characteristic, the comparable set should contain properties both **above and below** the subject. A subject with four bedrooms compared only against three-bedroom sales produces an adjusted range built entirely on upward adjustments, and **an adjustment applied in only one direction cannot be checked.** Where the set brackets, an error in the adjustment amount tends to show itself: the grid's indications spread apart rather than converging.
+
+**Net and gross adjustment.** Two figures, and they answer different questions.
+
+- **Net adjustment** is the sum of the adjustments with their signs, and it tells you how far the comparable sits from the subject overall.
+- **Gross adjustment** is the sum of their absolute values, and it tells you **how much work the grid is doing.**
+
+A comparable with a small net and a large gross has been adjusted heavily in both directions — six thousand up for size, six thousand down for condition, and so on — and the small net conceals it. **A comparable requiring large gross adjustment is a weak comparable regardless of how close its net lands to the subject.**
+
+> **The grid that proves too much.** Three comparables, each adjusted by amounts approaching a fifth of its sale price, all landing within a few thousand dollars of each other and of the number the seller mentioned on the phone. **Convergence produced by heavy adjustment is not evidence. It is the analyst's judgment restated three times**, and a reviewer will read it that way.
+
+**What to do when the grid does not converge:**
+
+1. **Re-examine the competitive set** before touching the adjustments. A wide spread usually means one comparable does not belong.
+2. **Check for a characteristic not in the grid** — a corner lot on an arterial, a view, a functional obsolescence, a school attendance boundary the price data reflects and the property card does not.
+3. **Report the range honestly** where the spread is real. Section 2.3 reconciles; it does not average. **A wide supported range is a more useful answer than a narrow unsupported one**, and Section 6.1 makes it defensible only if the reasoning is on the page.
+
 ## 3. Active, pending, and sold evidence
 
 ### 3.1 What each category proves
@@ -234,6 +274,29 @@ A property that sits generates its own headwind. Buyers and their agents read lo
 This is the substantive argument against overpricing, and it is more persuasive to sellers than "the comps don't support it," because it describes a mechanism rather than asserting a conclusion:
 
 > "If we launch above the market, the first three weeks — when buyer attention is highest and every agent with a matching buyer looks at it — go to a price the market won't meet. After that we are competing for attention with the next new listing, carrying the market time as a visible number. Sellers who reduce later frequently end up below where they would have started."
+
+### 3.6 Concessions, and why the recorded price is not the price
+
+A closed sale's recorded price is the number the analysis starts from. **It is frequently not the number the parties agreed to in economic terms**, and the difference is concessions.
+
+**What moves value away from the recorded price:**
+
+| Concession | Effect |
+|---|---|
+| **Seller credit toward buyer's closing costs** | The buyer paid a higher nominal price in exchange for cash back. The recorded price overstates the market price. |
+| **Rate buydown paid by the seller** | Same mechanism, larger and less visible. A meaningful buydown can support a materially higher nominal price. |
+| **Personal property included** | Furnishings, equipment, or a vehicle bundled into the price. |
+| **Repairs credited rather than performed** | The price reflects a property that was never brought to the condition the price assumes. |
+| **Seller-carried financing on favorable terms** | The price and the financing are one bargain. **A price achieved with seller financing at below-market terms is not a cash-equivalent price.** |
+| **Leaseback or delayed possession at no cost** | Value transferred outside the price. |
+
+**The analytical consequence.** A grid built on recorded prices in a market where credits are common systematically overstates value, and the overstatement is invisible on the page. **The licensee who does not pursue concession data is comparing nominal numbers in a market that trades in net ones.**
+
+**Where the data comes from:** the listing service's concession fields where they are populated, the closing information the licensee has for his own transactions, and — most reliably and least often used — **asking the agent who closed the comparable.** That call takes two minutes and is the single highest-value verification step in market analysis.
+
+**The same discipline applies to the subject.** A seller told "the house down the street sold for 812" is being given a number that may have carried a substantial credit. Section 4.4 establishes that price interacts with terms; **this section establishes that the interaction is already baked into the comparables**, and a net sheet built on a gross comparable is wrong before the arithmetic starts.
+
+> **State it in the analysis.** Where concession data was available, say what was found. Where it was not, say that too. **"Concession information not available for comparables 2 and 3" is a professional statement**, and it tells the seller how much confidence the range deserves.
 
 ## 4. Seller net and pricing consequences
 
@@ -289,6 +352,30 @@ Sellers frequently under-weight terms. Three worth explaining explicitly:
 
 A net sheet prepared at listing is an estimate built on assumptions. It should be updated when the price changes materially, when an offer with different terms is under consideration, and when the payoff figure is actually obtained — which is frequently higher than the seller expects, because it includes accrued interest and other amounts under the note rather than the principal balance alone.
 
+### 4.6 The seller who may not have enough equity
+
+A net sheet sometimes produces a negative number, or a number too small to cover the seller's next step. This changes the conversation from pricing to something else, and the licensee's obligation is to recognize the change rather than to keep discussing price.
+
+**What the net sheet has revealed:** that the transaction as contemplated does not work, which is a fact the seller needs before he makes commitments — a deposit on a replacement property, a moving date, a school enrollment.
+
+**The paths that exist**, none of which the licensee decides:
+
+1. **Bring funds to closing.** Available to some sellers and not others, and its consequences are the seller's own financial question.
+2. **Reduce the cost of sale.** Real but usually small, and it does not close a large gap.
+3. **Do not sell now.** A legitimate outcome and often the right one. **A licensee who cannot say this to a seller has an incentive problem, not a knowledge problem.**
+4. **A sale requiring lienholder approval.** A transaction of a different kind, with its own timeline, its own documentation, its own disclosure requirements, and consequences to the seller — credit, tax, and potentially deficiency — that are **legal and tax questions, not licensee questions.**
+5. **Alternatives outside a sale**, which belong to the seller's lender, counsel, and tax advisor.
+
+**Three obligations attach the moment the number comes back short.**
+
+**Route the questions.** The tax consequences of debt forgiveness, whether a deficiency can be pursued, and what any of it does to the seller's credit are **not questions a licensee answers.** They are referred, and the referral is recorded.
+
+**Do not promise an outcome that depends on a third party.** Whether a lienholder will approve anything is a lienholder's decision. "They'll approve it, they always do" is the assurance category from Lesson 02, and it is made to sellers under exactly this pressure.
+
+**Watch for the schemes that target this seller.** A distressed seller is the target of arrangements involving up-front fees, title transfers with promised leasebacks, and rescue offers. **A licensee who encounters one raises it with the broker immediately**, and does not participate on the theory that the seller wanted to.
+
+> **The net sheet's value here is that it produced the bad news early**, while the seller still has options. Section 4.5's requirement to update it is what keeps the news current — a gap that was manageable at one price is not at another, and the seller should learn that from the licensee rather than at closing.
+
 ## 5. Appraisal versus comparative market analysis
 
 ### 5.1 The boundary
@@ -329,6 +416,31 @@ A licensee may provide genuinely relevant information to an appraiser through th
 A licensee may **not** tell an appraiser what value the transaction needs. The distinction is between supplying information and supplying a target, and a value that moves after the appraiser is told what it must be is unreliable for exactly the purpose the appraisal exists to serve.
 
 Requests to "take another look" that arrive with a number attached are the pattern to recognize and refuse — including when the request comes from your own client.
+
+### 5.5 Opinions prepared for purposes other than a sale
+
+A licensee is asked for a value opinion in circumstances that have nothing to do with listing the property: an estate settling, a marital dissolution, a property tax matter, a relocation program, a lender's request, a partner buying out another partner.
+
+**Each of these carries a use to which the opinion will be put**, and the use changes what the opinion must contain, who may prepare it, and what it may be called.
+
+**Three questions come first, before the analysis.**
+
+**1. Who will rely on this, and for what?** An opinion prepared for a seller deciding a list price and an opinion prepared for a court, a taxing authority, or a lender making a credit decision are not the same document, and the last three carry requirements that may place the assignment outside what a real estate license authorizes. **The answer determines whether the licensee may accept the engagement at all**, and Section 5.1's boundary is where that determination starts.
+
+**2. What is the effective date?** A dissolution or an estate frequently requires value **as of a past date** — a date of death, a date of separation, a date of acquisition. A retrospective opinion uses the data available as of that date and excludes what came after, which is a different exercise from the analysis in Section 1.4 and easy to perform incorrectly by using current data out of habit.
+
+**3. Is the licensee independent of the outcome?** Where a licensee expects to list the property if the value comes back a particular way, the interest is real and it must be disclosed. **An opinion prepared by a person who benefits from one answer is a conflict**, whatever the analysis says.
+
+**What the licensee does not do:**
+
+- Call an opinion an appraisal, format it to resemble one, or describe himself in terms that suggest a credential he does not hold. Section 5.1 governs.
+- Accept a fee arranged so that it depends on the value reached.
+- Accept an assignment where the intended use requires something the license does not authorize. **The correct response is a referral**, and the person asking is usually relieved rather than annoyed.
+- Answer the legal question underneath — what a dissolution requires, what an estate must file, what a tax appeal needs — which belongs to counsel.
+
+> **The pattern to recognize:** the request arrives casually, from a client or a friend of a client, and the consequences attach to a proceeding the licensee never sees. **"Just tell me what you think it's worth" is a different request when it is going to a court**, and the licensee's first obligation is to ask where it is going.
+
+**Where the assignment is proper**, the file requirements in Section 6.2 apply with more force rather than less, because the opinion will be read by someone adverse to the person who asked for it.
 
 ## 6. Pricing presentation and file support
 
@@ -377,7 +489,33 @@ A pricing recommendation has a shelf life. Where the market moves, or where the 
 
 The most useful evidence in a price-reduction conversation is the property's own market feedback: showings without offers, feedback themes, and how the competition has moved. That is data the seller can evaluate, and it is more persuasive than repeating the original opinion.
 
-### 6.6 Checkpoint
+### 6.7 The opinion, read two years later
+
+Section 6.1 makes an opinion defensible and Section 6.2 lists what the file holds. This section supplies the reason, which is the only thing that makes either habit survive a busy week.
+
+> **The situation.** Two years after a closing, the licensee receives a demand letter. The seller alleges the property was listed too low, that it sold in four days for materially less than it was worth, and that the licensee's analysis was careless.
+>
+> **The claim is not that the licensee was dishonest.** It is Lesson 03's reasonable-care claim: the work fell below the standard of a competent licensee. That is the claim licensees actually face, and it is decided by what the file shows about the work rather than by what the outcome was.
+>
+> **What the licensee needs, and either has or does not:**
+>
+> **The comparables as they existed then**, printed or exported at the time. A listing service re-queried today returns different data — records get corrected, concessions get added, and properties that were active then are sold now. **The current query cannot reproduce the analysis and will sometimes contradict it.**
+>
+> **The selection reasoning.** Why these comparables, and why the excluded ones were excluded. Section 1.3 makes this an analytical requirement; here it is the difference between a defensible judgment and an unexplained one.
+>
+> **The adjustments and their derivation.** Section 2.4 requires that the amounts come from somewhere. Two years later, "somewhere" must be on the page.
+>
+> **The market conditions statement.** Absorption and direction as of the date, which is what answers the allegation that the price ignored a rising market.
+>
+> **The presentation and the seller's decision.** Section 6.3 and Section 6.4 — what the seller was shown, what range was recommended, and what he chose. **If the seller listed below the recommendation, that document ends the claim.** If he listed at it, the claim is about the recommendation and the reasoning is the answer.
+>
+> **The four-day sale is not itself evidence of anything.** A property priced correctly in a market with low inventory sells quickly. **What makes it look like evidence is an empty file**, because in the absence of contemporaneous reasoning the only facts available are the price and the speed.
+>
+> **What must not happen** is the reconstruction: re-running the query today, building the grid now, and producing it as the analysis. Lesson 03's closing line and Lesson 02's close-out routine both govern. **A file with a thin analysis is a defensible weakness; a file with a reconstructed analysis presented as contemporaneous is not.**
+
+**The practical instruction is one sentence.** When the pricing analysis is delivered, **save it as it was delivered, with its data as of that date**, and put it in the file the same day. It takes a minute and it is the difference between a claim that is answered and a claim that is argued.
+
+### 6.8 Checkpoint
 
 You should be able to take an adjustment grid, state which comparable is the strongest indicator and why, produce a range with a most-probable point, and list what the file must retain for the opinion to be reconstructable.
 
