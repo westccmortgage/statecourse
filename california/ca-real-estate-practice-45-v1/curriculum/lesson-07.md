@@ -193,7 +193,33 @@ A gift and a loan are treated differently, because an undisclosed loan is a hidd
 
 That last one deserves emphasis. A buyer who asks a licensee to help him present his finances more favorably is asking for participation in loan fraud, however casually the request is phrased.
 
-### 3.6 Checkpoint
+### 3.7 When readiness changes mid-search
+
+A buyer's financial position is established at consultation and then treated as settled. It frequently is not, and the changes that matter are the ones the buyer does not think to mention because they do not feel like loan events.
+
+| What the buyer does | Why it matters |
+|---|---|
+| **Opens a credit account** — a store card at a furniture purchase, a financed appliance | New debt and a new inquiry, both visible to the lender, both potentially re-underwritten before closing |
+| **Changes jobs**, including to a better one | Employment history is part of the determination, and a change of structure — salaried to commission, employee to contractor — can be more consequential than the amount |
+| **Moves money between accounts** | Creates deposits the lender will ask about, and Lesson 14 of the mortgage course explains what the answer must and must not be |
+| **Receives a gift** | Documentable, and the documentation is easier before the funds move than after |
+| **Pays off a debt using reserve funds** | Improves one number and damages another |
+| **Co-signs for someone** | An obligation, whether or not the buyer thinks of it as his |
+| **Has a rate lock expire** | Changes the payment and therefore the qualifying amount, sometimes materially |
+
+**The licensee's obligations here are narrow and important.**
+
+**Tell the buyer at consultation** that these categories exist and that the rule is simple: **talk to the lender before doing any of them.** That single sentence, said once at the beginning, prevents most of what appears on this list.
+
+**Ask periodically** during a long search — "anything change with work, credit, or the money since we started?" — and record the answer. A search running four months is a search in which something has probably changed.
+
+**Route it to the lender, always.** Section 3.5 sets the boundary and it holds here. **The licensee does not evaluate whether a change matters**, does not tell the buyer a job change is fine, and does not advise on how to handle a deposit. He tells the buyer to call the lender, and he confirms the buyer did.
+
+**Update the search when the answer comes back.** A buyer whose qualifying amount has fallen is being shown properties he can no longer buy, which wastes his time and sets up a failure at the worst moment.
+
+> **The failure this prevents.** A buyer in contract, three weeks from closing, whose lender re-pulls credit and finds a financed furniture purchase made the week the offer was accepted — because nobody told him not to, and because buying furniture for the new house is the most natural thing a person in his position does.
+
+### 3.8 Checkpoint
 
 You should be able to read a preapproval letter and tell the buyer what it establishes, what it leaves open, and how a seller's agent will read it.
 
@@ -328,7 +354,29 @@ In a competitive market buyers propose waiving inspection contingencies. This is
 
 Both failure modes are wrong: refusing to write the offer overstates the licensee's role, and writing it without comment abandons the advisory duty.
 
-### 5.7 Checkpoint
+### 5.8 A worked inspection response
+
+> **The facts.** A buyer's general inspection on a fifty-year-old house returns forty-one items. Among them: an active roof leak at a valley; two double-tapped breakers in the panel; a water heater with no seismic strapping; "evidence of past moisture" at the base of a bedroom wall with the note "further evaluation recommended"; a furnace at the end of its expected life but currently operating; original galvanized supply piping; and a retaining wall in the rear yard described as "leaning, recommend evaluation by a qualified professional."
+>
+> **What the licensee does with this, and what he does not.**
+>
+> **He does not sort the list into important and unimportant items for the buyer.** Section 5.4 governs: the report is the inspector's, its recommendations are the inspector's, and a licensee who tells a buyer which items to ignore has substituted his judgment for a professional's in a field he is not licensed in.
+>
+> **He does read it carefully**, because two categories in this report require action rather than opinion.
+>
+> **The "further evaluation recommended" items are the report's most important content**, and they are the ones buyers skim past. The moisture at the wall base and the retaining wall are both flagged for specialist evaluation, and **a general inspection that recommends further evaluation has told the buyer that it did not answer the question.** Section 5.3's obligation is to recommend the investigation, in writing, and to record that it was recommended.
+>
+> **The active leak is a present condition affecting a system**, and it interacts with the moisture note. **Whether they are the same problem is exactly what the specialist determines.**
+>
+> **He helps the buyer understand the process without characterizing the findings:** what the report says, that certain items were referred for further evaluation, what the contract's timelines are, what the options within them are, and what happens at each deadline. **"What do I do about this?" is answered with the process, not with a recommendation about which items to request.**
+>
+> **He puts the recommendation in writing.** Every item flagged for further evaluation, listed, with the recommendation that the buyer obtain it before removing his investigation contingency. **This is the single document that matters most in this scenario two years from now.**
+>
+> **If the buyer declines the specialist evaluations**, Section 5.6 governs: the declination is documented, in the buyer's words where possible, with the recommendation that preceded it. **The licensee does not talk him out of the decision and does not pretend it was not made.**
+>
+> **What the licensee must not say**, in any form: that the furnace "has years left," that galvanized piping "is normal for the age," that the double-tapped breakers are "an easy fix," or that the retaining wall is "cosmetic." **Each of those is an opinion about a building system, offered by a person without the qualification to hold it**, and each is the sentence a claim quotes.
+
+### 5.9 Checkpoint
 
 You should be able to look at a property's features and produce a specific investigation recommendation, and respond correctly to a buyer asking you to evaluate an inspection finding.
 
@@ -407,7 +455,29 @@ The moment of acceptance starts the clock on everything that follows, and the bu
 - Open the investigation work early rather than at the end of the period.
 - Warn the buyer, in writing, about wire fraud before any funds move — and that wire instructions will never be changed by email.
 
-### 6.9 Checkpoint
+### 6.10 When the offer is not accepted
+
+Most offers do not become transactions, and the practices around an unaccepted offer are where buyer-side files are thinnest.
+
+**What happens to the offer.** A rejected or expired offer is part of the buyer's file. It records what was offered, when, and on what advice — which is what answers a later question about whether the licensee's advice was sound. **A file containing only the accepted offer shows a buyer who made one decision, when in fact he made eight.**
+
+**Backup position.** Where the buyer wants to remain in position behind an accepted offer, the arrangement is a contractual one with real consequences: what triggers it, what happens to the deposit, and what obligations run in the meantime. **These are contract terms, and the buyer's questions about their legal effect go to counsel.** The licensee's role is to make sure the buyer knows he is entering an agreement rather than expressing interest.
+
+**Feedback and information.** A buyer's agent frequently learns why the offer failed — price, terms, timing, or another offer's structure. **What may be repeated is limited by what the listing side was permitted to say.** A buyer's agent who is told the winning number by a listing agent who should not have said it has received information whose disclosure was a breach; Lesson 03's second worked audit addresses what to do with it.
+
+**Re-engagement.** Properties come back. A transaction that fails after inspection or appraisal returns to the market, and the buyer who offered before is the most informed buyer available. **Track it**, and note that the property's return is itself information — a buyer should know that a property came back and, where it is knowable, why.
+
+**What the file shows after an unaccepted offer:**
+
+1. The offer as submitted, with its date and expiration.
+2. The advice given about strategy, and the buyer's decision where it differed.
+3. The response — rejection, counter, expiration, or silence — with its date.
+4. Any backup agreement, with its terms.
+5. What was learned, and from whom.
+
+> **The habit that matters:** the file is updated when the offer fails, not when a later one succeeds. **An unaccepted offer reconstructed months afterward from an inbox is the same problem as every other reconstruction in this course** — and unlike the others, this one is trivially avoidable, because the offer document already exists and only needs to be filed.
+
+### 6.11 Checkpoint
 
 You should be able to build an offer strategy that competes on terms rather than price alone, explain why a credit does not reduce the appraisal requirement, and list what the file must contain to show the terms were the buyer's informed decision.
 

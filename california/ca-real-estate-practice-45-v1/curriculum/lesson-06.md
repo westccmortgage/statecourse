@@ -109,7 +109,25 @@ The truthfulness standard covers claims about the licensee as much as claims abo
 - Testimonials must be genuine and must not be presented in a way that implies a typical result where it is not.
 - Claims about a course a licensee has taken must not imply approval, endorsement, or a credential that was not conferred.
 
-### 1.7 Checkpoint
+### 1.8 Advertising a property that has a problem
+
+The rules in this section are easy to apply to an ordinary property. They get difficult when the property carries something the seller would rather the advertising did not raise.
+
+**Four categories, and they are not treated alike.**
+
+**A physical condition.** Advertising does not have to catalogue every defect — that is what the disclosures do — but **it may not create a false impression of condition.** A property with a failed foundation may be advertised without describing the foundation; it may not be advertised with photographs and copy conveying a sound, move-in-ready home. Section 1.3's principle governs: the images must show the property as it is.
+
+**A permitting or legal-use problem.** Unpermitted square footage, a converted space with no record, a use the zoning does not allow. **This is the category where advertising most often becomes a misrepresentation**, because the licensee repeats a bedroom count or a square footage figure that the records do not support. Section 1.2 requires a source, and the source here is the public record rather than the seller's description or the prior listing.
+
+**A title or use constraint.** An easement, a shared facility, a restriction, a pending assessment, an association's rental limitation. These belong in the disclosures and frequently belong in the copy as well, because **a buyer attracted by an advertisement that omits a constraint fundamental to the use he is buying for has been misled by the omission.**
+
+**A stigma or a history.** This is the category requiring the most care and the least improvisation. What must, may, or must not be said about a property's history — including deaths, alleged criminal events, and neighborhood matters — is **governed by specific California rules with specific boundaries**, and some inquiries touch protected characteristics where an answer is prohibited regardless of the questioner's intent. **This is a question for the responsible broker before anything is published or answered**, and the licensee's obligation is to know that the question exists rather than to answer it from instinct.
+
+> **The seller's instruction is not the analysis.** "Don't mention the addition isn't permitted" is a request to omit; "describe it as a four-bedroom" is a request to state something the records contradict. **The first may or may not be permissible depending on what the advertisement conveys as a whole. The second is a misrepresentation** and Lesson 03's obedience limit governs.
+
+**The practical procedure:** before publishing, list every factual claim the advertisement makes, name the source for each, and identify any claim whose source is the seller's recollection. **Those are the ones to verify or remove**, and they are where every advertising complaint in this category originates.
+
+### 1.9 Checkpoint
 
 You should be able to take a listing description, identify each factual claim in it, name the source each would require, and mark the claims that are opinion.
 
@@ -303,7 +321,27 @@ The obligation is not limited to the property. It extends to how a licensee prov
 
 That last point is the one licensees most often get wrong with the best intentions. Deciding on a buyer's behalf that a two-story house "won't work for him" and not showing it is steering, however kindly meant.
 
-### 4.8 Checkpoint
+### 4.9 A worked accommodation request
+
+> **The request.** A licensee is showing a rental property he has listed for an owner. An applicant emails: "I have a service dog. The listing says no pets. Also, I use a wheelchair, and I'd need the bathroom doorway widened and a ramp at the back entrance. Is that possible?"
+>
+> **Section 4.1's first move: separate the requests**, because they are governed differently.
+>
+> **1. The animal.** Section 4.2 governs. **An assistance animal is not a pet**, and a no-pets policy is not the answer to the request. Waiving the policy for an assistance animal is a **reasonable accommodation** — a change to a rule — and the ordinary pet deposit and pet rent do not attach to it, though the tenant remains responsible for damage the animal actually causes.
+>
+> **What may be asked is limited**, and Section 4.5 sets the boundary: where the disability and the need are not obvious, reliable information that the person has a disability-related need may be requested. **What may not be asked** is the diagnosis, the medical records, or a demonstration of the animal's training. The licensee does not improvise this conversation — he follows the brokerage's procedure and asks the broker where anything is unclear.
+>
+> **2. The ramp and the doorway.** Section 4.4 governs. These are **modifications** — physical changes to the property — and modifications are analyzed differently from accommodations, including on the question of who pays and what conditions may attach. **The analysis is fact-specific and it belongs to the owner with the broker's guidance**, not to the licensee at the keyboard.
+>
+> **What the licensee does immediately, before any of that is resolved:** he does not treat the email as a reason to stop processing the application. **The most common violation in this scenario is not a wrong answer about the ramp. It is the applicant quietly not hearing back**, which Lesson 14 of the mortgage course names as discouragement and which produces a denial with no record of one.
+>
+> **What the licensee says to the owner.** Owners react to these requests, and some react badly. "We don't allow dogs" and "I'm not remodeling a bathroom for a tenant" are the two responses to expect. **The licensee's job is to tell the owner what the framework actually requires** — that the animal is not a pet question, and that the modification question has an analysis rather than a preference — and to escalate to the broker rather than to relay the owner's instruction.
+>
+> **What the file shows afterward:** the request with its date, the response with its date, what was asked and on what basis, what the owner was told, what was escalated, and the disposition of the application on the same criteria applied to every other applicant.
+>
+> **And what the licensee must never do:** ask the applicant what her disability is, tell her the property "probably isn't a good fit," suggest she look at a different property, or answer the modification question with an off-the-cuff no. **Each of those is a steering or discouragement problem in a matter that already involves two protected characteristics.**
+
+### 4.10 Checkpoint
 
 You should be able to classify a request as an accommodation or a modification, state the standard applied to it, and identify what may and may not be asked in verification.
 
@@ -443,7 +481,28 @@ Note what is not on the list: quietly deleting the post and moving on. Silent re
 >
 > **Response.** Correct and record each instance; institute identification in the post rather than the profile; add fair housing language to the approval checklist; define who updates status and when; and begin archiving social content at publication. The response is documented, because how a brokerage answers its own findings is itself evidence about the supervision system.
 
-### 6.7 Checkpoint
+### 6.8 The advertisement you did not make
+
+A licensee's advertising footprint includes material he never wrote and cannot edit. It is still his footprint.
+
+| The source | What the licensee is responsible for |
+|---|---|
+| **Syndication to portals** | Content reformatted by systems he does not control, where identification can be stripped and photographs re-cropped. **He is responsible for what appears about his listing**, which means checking what it looks like on the portals rather than only in the listing service. |
+| **Aggregator profiles** | Assembled from scraped data, sometimes with stale listings, wrong contact details, or claims he never made. **The obligation to correct is his**, and most platforms provide a claim-and-correct process. |
+| **A colleague's post about his listing** | Advertising of the property, subject to the same requirements. Where it is wrong, he raises it — with the colleague and, if needed, the broker. |
+| **A seller's own posts** | Not the licensee's advertisement, but a licensee who sees a seller advertising the property with a claim he knows is false has a problem he cannot ignore. |
+| **A vendor's marketing naming him** | A lender, warranty company, or photographer promoting "our partner agent." **Value received and a representation made** — both of which have appeared earlier in this course. |
+| **Automated listing alerts and drip campaigns** | Written once, sending for years, often containing claims and identification that have gone stale. |
+
+**Two of these deserve emphasis.**
+
+**Stale automation is the largest silent exposure in this list.** A campaign built two years ago with a market claim that was true then, sending weekly, is making a false statement every week — and nobody is reading it, which is exactly why it persists. **Automated content is reviewed on a schedule**, not when someone happens to notice.
+
+**Portal appearance is not listing service appearance.** The identification that satisfies the requirement in the listing service field may not survive syndication into a portal's template. **Check the destination**, because the consumer sees the destination.
+
+> **The archive obligation extends to all of it.** Section 6.3 requires capturing what was published as published. For syndicated and third-party material, that means periodic captures of how the listing actually appears where consumers find it — which is also how a licensee discovers that a portal has been showing a photograph he removed six weeks ago.
+
+### 6.9 Checkpoint
 
 You should be able to describe an approval and archive process that would allow a brokerage to answer, six months later, exactly what ran, where, when, and with whose approval.
 
