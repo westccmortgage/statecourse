@@ -100,3 +100,56 @@ test("heading title-casing does not capitalize after an apostrophe", () => {
   assert.match(html, /Commissioner&#39;s Regulations/);
   assert.match(html, /Fair-Housing Advertising/);
 });
+
+/* RE 303 p.4 requires a final examination of not less than 100 questions per form with
+   comprehensive coverage of the entire course, 60% to pass, and one retake on different
+   questions. These guard the properties that make the bank an examination rather than a
+   pool of questions, and — critically — that the answer key's material references are
+   real, since RE 303 requires the instructor version to say where each answer is found. */
+
+test("the final examination answer key references resolve to real lesson subsections", () => {
+  /* Reported as a finding rather than a count, so a wrong reference names itself. */
+  const section = report.slice(report.indexOf("Final examinations"), report.indexOf("Gates"));
+  assert.doesNotMatch(section, /has no section/);
+  assert.doesNotMatch(section, /references unknown/);
+  assert.doesNotMatch(section, /answer key reference incomplete/);
+});
+
+test("no question appears on both the examination and its retake", () => {
+  assert.doesNotMatch(report, /appear on both the exam and the retake/);
+  assert.match(report, /\[pass\] the retake uses different questions/);
+});
+
+test("an authored final examination form is complete and covers every assignment", async () => {
+  const engine = await import("../config/california-course-engine.mjs");
+  const exam = engine.getCaliforniaFinalExam("ca-real-estate-principles-45", "A");
+  assert.equal(exam.items.length, 100);
+  assert.equal(exam.passingPercent, 60);
+  assert.equal(new Set(exam.items.map((item) => item.source.assignment)).size, 15);
+});
+
+test("the final examination never sends an answer key to the browser", async () => {
+  const engine = await import("../config/california-course-engine.mjs");
+  const exam = engine.getCaliforniaFinalExam("ca-real-estate-principles-45", "A");
+  const published = engine.publicAssessment(exam);
+  const keys = new Set(published.items.flatMap((item) => Object.keys(item)));
+  assert.deepEqual([...keys].sort(), ["choices", "id", "prompt"]);
+  for (const field of ["correctChoice", "rationale", "source", "crossReferences"]) {
+    assert.ok(!Object.prototype.hasOwnProperty.call(published.items[0], field), `${field} reached the browser`);
+  }
+});
+
+test("the retake is a different form and there is no third attempt", async () => {
+  const engine = await import("../config/california-course-engine.mjs");
+  assert.equal(engine.californiaFinalExamForm(1), "A");
+  assert.equal(engine.californiaFinalExamForm(2), "B");
+  assert.equal(engine.californiaFinalExamForm(3), null);
+});
+
+test("the final examination passes at 60 percent and not below", async () => {
+  const engine = await import("../config/california-course-engine.mjs");
+  const exam = engine.getCaliforniaFinalExam("ca-real-estate-principles-45", "A");
+  const answers = (correct) => exam.items.map((item, index) => (index < correct ? item.correctChoice : (item.correctChoice + 1) % item.choices.length));
+  assert.equal(engine.scoreCaliforniaAssessment(exam, answers(59)).passed, false);
+  assert.equal(engine.scoreCaliforniaAssessment(exam, answers(60)).passed, true);
+});

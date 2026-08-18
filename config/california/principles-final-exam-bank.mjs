@@ -1054,6 +1054,1032 @@ const formA = [
    material with different questions. It is authored separately and must not repeat a
    Form A item. */
 const formB = [
+  /* Assignment 01 — The real estate profession and California regulatory structure */
+  { source: { assignment: "assignment-01", section: "1.4" },
+    prompt: "Which statement correctly distinguishes land from real property?",
+    choices: [
+      "Land is the surface, what lies beneath, and the space above; real property is land together with what is affixed and appurtenant to it and the rights it carries.",
+      "Land includes improvements, while real property is the unimproved surface only.",
+      "Land is the legal concept and real property is the physical concept.",
+      "The terms are interchangeable in California law."
+    ],
+    correctChoice: 0,
+    rationale: "Real property is the broader concept, taking in the land plus attachments, appurtenances, and the bundle of rights." },
+  { source: { assignment: "assignment-01", section: "2.5" },
+    prompt: "What is the function of the Real Estate Recovery Account?",
+    choices: [
+      "To provide a limited source of recovery to a member of the public who obtains an unsatisfied judgment against a licensee for specified conduct.",
+      "To reimburse licensees for losses caused by clients who fail to pay commissions.",
+      "To fund the Department's investigation and enforcement operations.",
+      "To insure brokerages against errors and omissions claims."
+    ],
+    correctChoice: 0,
+    rationale: "The account exists for injured members of the public who cannot collect a judgment. It is not licensee insurance, an operating fund, or an errors and omissions policy." },
+  { source: { assignment: "assignment-01", section: "3.5" },
+    prompt: "Which of the following may a salesperson NOT do?",
+    choices: [
+      "Accept compensation for licensed activity directly from a party rather than through the employing broker.",
+      "Prepare a comparative market analysis for a seller.",
+      "Present an offer to a seller on behalf of a buyer.",
+      "Hold a listing agreement in the brokerage's name."
+    ],
+    correctChoice: 0,
+    rationale: "Compensation for licensed activity flows through the employing broker. The other three are ordinary salesperson activity performed under the broker's authority." },
+  { source: { assignment: "assignment-01", section: "5.1" },
+    prompt: "In the hierarchy of California real estate law, what is the relationship between the Real Estate Law and the Commissioner's Regulations?",
+    choices: [
+      "The statute is enacted by the Legislature and the regulations are adopted under authority the statute grants; both are binding.",
+      "The regulations are advisory interpretations that carry no independent force.",
+      "The regulations supersede the statute where the two address the same subject.",
+      "The statute applies to brokers and the regulations apply to salespersons."
+    ],
+    correctChoice: 0,
+    rationale: "Regulations are adopted under statutory authority and are binding. They neither supersede the statute nor divide by license level." },
+  { source: { assignment: "assignment-01", section: "6.3" },
+    prompt: "Which of the following will escrow NOT do?",
+    choices: [
+      "Notice that a term the parties agreed to never reached escrow and adjust the closing accordingly.",
+      "Follow written instructions signed by both parties.",
+      "Hold funds and documents pending satisfaction of the conditions in its instructions.",
+      "Prepare a closing statement from the documents and instructions it holds."
+    ],
+    correctChoice: 0,
+    rationale: "Escrow is neutral and acts on the instructions it holds. Detecting an agreement it never received is not its function, which is why transmission is the licensee's task." },
+  { source: { assignment: "assignment-01", section: "2.6" },
+    prompt: "A licensee receives a document request in a Department investigation. What is the correct first step?",
+    choices: [
+      "Preserve everything, respond with the broker and, where appropriate, counsel, and produce what is requested rather than answering personally and quickly.",
+      "Answer immediately in his own words to demonstrate cooperation.",
+      "Organize and clean up the file before producing it so the record reads clearly.",
+      "Decline to respond until served with a formal accusation."
+    ],
+    correctChoice: 0,
+    rationale: "The process is largely documentary. Preservation is immediate and total, and an improvised personal response is how licensees say what they did not need to say." },
+  { source: { assignment: "assignment-01", section: "6.5" },
+    prompt: "Which task in a residential transaction has no assigned owner outside the brokerage?",
+    choices: [
+      "Building and watching the deadline calendar the contract creates.",
+      "Searching title and issuing the preliminary report.",
+      "Underwriting the buyer's loan.",
+      "Performing the appraisal."
+    ],
+    correctChoice: 0,
+    rationale: "Title, underwriting, and valuation each have a named owner outside the brokerage. Deadlines belong to no participant by default, which is why they are the most failure-prone element." },
+  /* Assignment 02 — Real property, personal property, and fixtures */
+  { source: { assignment: "assignment-02", section: "1.2" },
+    prompt: "Standing timber is cut and stacked for sale. What has happened to its classification?",
+    choices: [
+      "It moved from real property to personal property by severance.",
+      "It moved from personal property to real property by annexation.",
+      "It remained real property, because it originated from the land.",
+      "Its classification is determined by the intent of the buyer rather than by severance."
+    ],
+    correctChoice: 0,
+    rationale: "Severance converts real property to personal property; annexation moves an item the other way. Origin does not fix the classification permanently." },
+  { source: { assignment: "assignment-02", section: "2.6" },
+    prompt: "Which factor does the 'relationship of the parties' test consider?",
+    choices: [
+      "Whether the person who installed the item was an owner or a tenant, because that context bears on whether it was meant to become part of the realty.",
+      "Whether the buyer and seller are related by blood or marriage.",
+      "Whether the listing and selling agents work for the same brokerage.",
+      "Whether the installer was licensed for the work performed."
+    ],
+    correctChoice: 0,
+    rationale: "The test looks at the installer's relationship to the property — owner or tenant — as evidence of intent. The distractors describe unrelated relationships." },
+  { source: { assignment: "assignment-02", section: "4.3" },
+    prompt: "Crops requiring annual cultivation are generally treated how?",
+    choices: [
+      "As personal property, even while growing and attached to the soil.",
+      "As real property until harvested, like all growing things.",
+      "As trade fixtures, because they serve the agricultural business.",
+      "As personal property only after the harvest is complete."
+    ],
+    correctChoice: 0,
+    rationale: "Annually cultivated crops are treated as personal property while growing, which distinguishes them from perennial growth such as trees and shrubs." },
+  { source: { assignment: "assignment-02", section: "5.2" },
+    prompt: "A buyer is purchasing rural acreage and intends to build. Which water question matters most at intake?",
+    choices: [
+      "Whether a confirmed and lawful supply exists for the intended use, and on what basis it is held or shared.",
+      "Whether the seller's water bills have been paid current.",
+      "Whether the county assesses a water availability fee.",
+      "Whether the parcel has ever flooded."
+    ],
+    correctChoice: 0,
+    rationale: "Without a confirmed supply the buyer may have purchased land he cannot use as intended. Billing, fees, and flood history are separate questions." },
+  { source: { assignment: "assignment-02", section: "6.2" },
+    prompt: "What is the purpose of naming items in the purchase agreement?",
+    choices: [
+      "To settle in advance the items whose classification is genuinely uncertain, so the analysis is never needed.",
+      "To create a complete inventory of every item present at the property.",
+      "To satisfy a statutory requirement that all fixtures be itemized.",
+      "To transfer title to personal property without a bill of sale in every case."
+    ],
+    correctChoice: 0,
+    rationale: "The naming list targets the uncertain items — the ones the fixture tests would have to resolve. A complete inventory is neither required nor useful." },
+  { source: { assignment: "assignment-02", section: "1.5" },
+    prompt: "Why can the same item's classification be contested by parties who were not at the negotiation?",
+    choices: [
+      "Because the classification also determines what a security instrument covers, how the transfer is documented, and how the item is taxed.",
+      "Because any third party may intervene in a purchase agreement dispute.",
+      "Because classification is determined by the county assessor for all purposes.",
+      "Because personal property disputes are resolved in a different forum than real property disputes."
+    ],
+    correctChoice: 0,
+    rationale: "One classification answers four separate systems' questions, so a lender, an assessor, or a lienholder can have a stake the buyer and seller never considered." },
+  /* Assignment 03 — Estates, ownership, and common interests */
+  { source: { assignment: "assignment-03", section: "1.2" },
+    prompt: "A tenancy that continues from period to period until one party gives proper notice describes which leasehold estate?",
+    choices: [
+      "An estate from period to period.",
+      "An estate for years.",
+      "An estate at will.",
+      "An estate at sufferance."
+    ],
+    correctChoice: 0,
+    rationale: "A periodic tenancy renews automatically until notice. An estate for years has a fixed term, and an estate at sufferance describes a holdover after the right to possession ended." },
+  { source: { assignment: "assignment-03", section: "2.2" },
+    prompt: "An estate that may terminate if a stated condition occurs is best described as which of the following?",
+    choices: [
+      "A defeasible fee.",
+      "A fee simple absolute.",
+      "A life estate.",
+      "A leasehold estate."
+    ],
+    correctChoice: 0,
+    rationale: "A defeasible fee is a fee that can end on a stated event. A fee simple absolute has no such limitation, and a life estate is measured by a life rather than by a condition." },
+  { source: { assignment: "assignment-03", section: "2.4" },
+    prompt: "Which act is generally outside a life tenant's authority?",
+    choices: [
+      "Committing waste that permanently impairs the value of the future interest.",
+      "Occupying the property.",
+      "Leasing the property for a term within the life estate.",
+      "Collecting rents produced by the property."
+    ],
+    correctChoice: 0,
+    rationale: "A life tenant has the use and its income but may not impair the interest that follows. The other three are ordinary incidents of the estate." },
+  { source: { assignment: "assignment-03", section: "3.3" },
+    prompt: "Which set states the four unities of a joint tenancy?",
+    choices: [
+      "Time, title, interest, and possession.",
+      "Time, transfer, intent, and possession.",
+      "Title, interest, survivorship, and recording.",
+      "Interest, possession, consideration, and capacity."
+    ],
+    correctChoice: 0,
+    rationale: "Time, title, interest, and possession must all be present. Survivorship is the consequence of the unities rather than one of them." },
+  { source: { assignment: "assignment-03", section: "3.5" },
+    prompt: "Co-owners cannot agree on the disposition of jointly held property. What remedy addresses the deadlock?",
+    choices: [
+      "A partition action, which may divide the property or order it sold and the proceeds divided.",
+      "A quiet title action, which determines the validity of competing claims to title.",
+      "A specific performance action against the non-consenting owner.",
+      "An action for adverse possession by the owner in possession."
+    ],
+    correctChoice: 0,
+    rationale: "Partition is the remedy for co-owners who cannot agree. Quiet title resolves competing claims, and neither of the last two applies between co-owners in this posture." },
+  { source: { assignment: "assignment-03", section: "6.3" },
+    prompt: "A seller says the property is owned by his limited liability company and that he is a member. What establishes his authority to sign?",
+    choices: [
+      "The entity's governing documents and any resolution they require, not the title he uses.",
+      "His membership, which carries authority to convey entity property by operation of law.",
+      "A statement of information filed with the Secretary of State.",
+      "The entity's tax identification number and its bank signature card."
+    ],
+    correctChoice: 0,
+    rationale: "Authority comes from the governing documents. Membership alone does not confer it, and none of the other documents establishes signing authority." },
+  /* Assignment 04 — Land description, measurement, and boundaries */
+  { source: { assignment: "assignment-04", section: "2.3" },
+    prompt: "In the government survey system, how many acres are in a full section?",
+    choices: [
+      "640",
+      "160",
+      "36",
+      "43,560"
+    ],
+    correctChoice: 0,
+    rationale: "A section is nominally one mile square, or 640 acres. A quarter section is 160 acres, a township contains 36 sections, and 43,560 is the square feet in one acre." },
+  { source: { assignment: "assignment-04", section: "2.4" },
+    prompt: "How many acres are described by 'the NW 1/4 of the SE 1/4' of a section?",
+    choices: [
+      "40",
+      "80",
+      "160",
+      "20"
+    ],
+    correctChoice: 0,
+    rationale: "Multiply the fractions and apply them to 640: 1/4 × 1/4 × 640 = 40 acres." },
+  { source: { assignment: "assignment-04", section: "1.6" },
+    prompt: "In a metes and bounds description, a call to a natural monument conflicts with a stated distance. Which generally controls?",
+    choices: [
+      "The monument, under the established order of priority among conflicting calls.",
+      "The distance, because it is the more precise measurement.",
+      "Whichever appears first in the description.",
+      "Neither; the description fails for uncertainty."
+    ],
+    correctChoice: 0,
+    rationale: "Monuments generally prevail over courses and distances in the priority order, on the reasoning that a physical marker reflects what was actually intended on the ground." },
+  { source: { assignment: "assignment-04", section: "3.2" },
+    prompt: "Why must a lot and block description include the recording reference for the map?",
+    choices: [
+      "Because the lot and block have meaning only by reference to the specific recorded map that defines them.",
+      "Because the recorder assigns a new reference each time the property is sold.",
+      "Because the reference establishes the property's assessed value.",
+      "Because the reference is what transfers title at closing."
+    ],
+    correctChoice: 0,
+    rationale: "Lot and block numbers are meaningless without the map that defines them, which is why the book and page reference is part of the description." },
+  { source: { assignment: "assignment-04", section: "5.6" },
+    prompt: "Which circumstance most clearly calls for recommending a survey?",
+    choices: [
+      "A fence, wall, or structure appears to sit near or across a boundary, or the parties describe the line differently.",
+      "The property is described by lot and block rather than metes and bounds.",
+      "The buyer is obtaining conventional rather than government-backed financing.",
+      "The preliminary report lists more than three exceptions."
+    ],
+    correctChoice: 0,
+    rationale: "Physical indications of a boundary problem are the trigger. The description method, the loan type, and the number of exceptions are not." },
+  { source: { assignment: "assignment-04", section: "6.2" },
+    prompt: "A rectangular lot measures 120 feet by 90 feet. What is its area in square feet, and approximately what fraction of an acre is that?",
+    choices: [
+      "10,800 square feet, about one quarter of an acre.",
+      "10,800 square feet, about half an acre.",
+      "1,080 square feet, about one fortieth of an acre.",
+      "21,600 square feet, about half an acre."
+    ],
+    correctChoice: 0,
+    rationale: "120 × 90 = 10,800 square feet; 10,800 ÷ 43,560 ≈ 0.248 acre. The distractors misplace a decimal, double the area, or misstate the fraction." },
+  /* Assignment 05 — Encumbrances, liens, easements, and restrictions */
+  { source: { assignment: "assignment-05", section: "2.2" },
+    prompt: "Which characteristic distinguishes a property tax lien from most other liens?",
+    choices: [
+      "It generally takes priority over other liens regardless of when they were recorded.",
+      "It must be recorded to attach to the property.",
+      "It attaches to all of the owner's property rather than to the taxed parcel.",
+      "It expires automatically if not enforced within one year."
+    ],
+    correctChoice: 0,
+    rationale: "Property tax liens are specific to the parcel and generally hold priority ahead of recorded liens, which is what makes them different from the ordinary priority rule." },
+  { source: { assignment: "assignment-05", section: "2.3" },
+    prompt: "What distinguishes a mechanic's lien from most other involuntary liens?",
+    choices: [
+      "Its priority may relate back to a point earlier than its recording, tied to the commencement of the work or improvement.",
+      "It may be recorded by anyone who believes he is owed money by the owner.",
+      "It attaches to the contractor's property rather than the owner's.",
+      "It requires a court judgment before it can be recorded."
+    ],
+    correctChoice: 0,
+    rationale: "The relation-back feature is what makes mechanic's liens dangerous to a lender and a buyer: a lien recorded later can outrank an intervening instrument." },
+  { source: { assignment: "assignment-05", section: "3.3" },
+    prompt: "Which of the following is a recognized way an easement may be created?",
+    choices: [
+      "By express grant or reservation, by implication, by necessity, or by prescription.",
+      "By an oral agreement between neighbors, in every case.",
+      "By continuous use for any period, without more.",
+      "By the county assessor's designation on a parcel map."
+    ],
+    correctChoice: 0,
+    rationale: "Grant, reservation, implication, necessity, and prescription are the recognized routes. Use alone, an oral arrangement, and an assessor's map do not create an interest in land." },
+  { source: { assignment: "assignment-05", section: "4.4" },
+    prompt: "Who generally enforces a private recorded restriction in a common interest development?",
+    choices: [
+      "The association or a benefited owner, through the remedies the declaration and the law provide.",
+      "The city or county planning department.",
+      "The Department of Real Estate, through its disciplinary process.",
+      "The title insurer that issued the owner's policy."
+    ],
+    correctChoice: 0,
+    rationale: "Private restrictions are privately enforced. Public agencies enforce public land use controls, and the title insurer's role is coverage rather than enforcement." },
+  { source: { assignment: "assignment-05", section: "5.1" },
+    prompt: "A neighbor's garage extends two feet onto the subject property. What is this?",
+    choices: [
+      "An encroachment, which is a physical intrusion and a matter a survey rather than a title search reveals.",
+      "An easement by prescription, established by the structure's presence.",
+      "A license, revocable by the owner at any time.",
+      "A nonconforming use under the zoning ordinance."
+    ],
+    correctChoice: 0,
+    rationale: "An encroachment is a physical intrusion. Whether it has ripened into any legal right is a separate question, and it is the classic survey matter." },
+  { source: { assignment: "assignment-05", section: "6.5" },
+    prompt: "What is the essential difference between an owner's policy and a lender's policy of title insurance?",
+    choices: [
+      "The owner's policy insures the owner's interest, while the lender's policy insures the lender's security interest and generally declines with the loan balance.",
+      "The owner's policy covers survey matters, while the lender's policy does not.",
+      "The owner's policy is issued after closing, while the lender's policy is issued before.",
+      "They are the same policy issued to two payees."
+    ],
+    correctChoice: 0,
+    rationale: "The two policies insure different interests for different amounts and durations. Neither, in standard form, performs the function of a survey." },
+  /* Assignment 06 — Government powers, land use, and environmental controls */
+  { source: { assignment: "assignment-06", section: "1.5" },
+    prompt: "Property passes to the state because an owner died without a will and without heirs. Which power is this?",
+    choices: [
+      "Escheat.",
+      "Eminent domain.",
+      "Police power.",
+      "Taxation."
+    ],
+    correctChoice: 0,
+    rationale: "Escheat addresses property with no owner to take it. Eminent domain involves a taking for public use with compensation." },
+  { source: { assignment: "assignment-06", section: "2.1" },
+    prompt: "What is the relationship between a general plan and a zoning ordinance?",
+    choices: [
+      "The general plan states the jurisdiction's long-range policy and the zoning ordinance implements it parcel by parcel.",
+      "The zoning ordinance states policy and the general plan implements it.",
+      "They are alternative names for the same document.",
+      "The general plan applies to unincorporated areas and zoning to incorporated ones."
+    ],
+    correctChoice: 0,
+    rationale: "Policy sits above implementation in the planning hierarchy, which is why a zoning question can turn on consistency with the general plan." },
+  { source: { assignment: "assignment-06", section: "3.2" },
+    prompt: "Why does a buyer need to know whether work on a property was permitted?",
+    choices: [
+      "Unpermitted work can affect legal use, insurability, financing, valuation, and what may lawfully be advertised about the property.",
+      "Permits determine the property's assessed value for the following fiscal year only.",
+      "A permit is required before a property may be listed for sale.",
+      "Unpermitted work voids the seller's title."
+    ],
+    correctChoice: 0,
+    rationale: "The consequences reach several systems at once. Unpermitted work does not void title, and no permit is required to list a property." },
+  { source: { assignment: "assignment-06", section: "4.2" },
+    prompt: "Which fact triggers the federal lead-based paint disclosure obligation for residential property?",
+    choices: [
+      "The dwelling was built before 1978.",
+      "The dwelling has visible peeling paint.",
+      "The dwelling is being sold rather than leased.",
+      "The buyer intends to occupy the property with children."
+    ],
+    correctChoice: 0,
+    rationale: "The obligation is age-triggered for target housing built before 1978, and it applies to both sales and leases regardless of condition or the buyer's household." },
+  { source: { assignment: "assignment-06", section: "5.4" },
+    prompt: "Why is a fire hazard severity zone determination increasingly consequential to a California buyer beyond the disclosure itself?",
+    choices: [
+      "It can affect the availability and cost of insurance, which a buyer should establish before removing contingencies.",
+      "It prohibits any new construction within the zone.",
+      "It requires the seller to complete defensible space work before closing in every case.",
+      "It reduces the property's assessed value automatically."
+    ],
+    correctChoice: 0,
+    rationale: "Insurance availability is the practical consequence and it surprises buyers late. The other options state prohibitions and automatic effects that do not follow from the determination itself." },
+  { source: { assignment: "assignment-06", section: "6.5" },
+    prompt: "What is the recurring due diligence failure this lesson identifies?",
+    choices: [
+      "The buyer's stated plan is never tested against the property's actual public and private constraints before contingencies are removed.",
+      "Buyers order too many specialist reports and run out of time.",
+      "Licensees rely on surveys rather than on the title report.",
+      "Sellers refuse to disclose zoning information."
+    ],
+    correctChoice: 0,
+    rationale: "The failure is that nobody asks the jurisdiction and nobody reads the recorded restrictions, and the omission is discovered after closing when it costs the most." },
+  /* Assignment 07 — Agency and brokerage relationships */
+  { source: { assignment: "assignment-07", section: "2.2" },
+    prompt: "A principal instructs his agent to do something unlawful. What does the duty of obedience require?",
+    choices: [
+      "The agent must refuse, explain why, and escalate, because the duty extends only to lawful instructions.",
+      "The agent must comply, because obedience is owed to the principal without qualification.",
+      "The agent may comply if he documents that the instruction came from the principal.",
+      "The agent must resign immediately without explanation."
+    ],
+    correctChoice: 0,
+    rationale: "Obedience is limited to lawful instructions. Documenting an improper instruction records that the agent knew; it does not transfer responsibility for the act." },
+  { source: { assignment: "assignment-07", section: "2.6" },
+    prompt: "What does a licensee owe to a party who is not his client?",
+    choices: [
+      "Honesty, fair dealing, and disclosure of material facts.",
+      "Nothing, because duties run only to the principal.",
+      "The same fiduciary duties owed to the principal.",
+      "Only the duty to present offers promptly."
+    ],
+    correctChoice: 0,
+    rationale: "Fiduciary duties run to the principal; honesty, fair dealing, and disclosure of material facts run to everyone, and that duty is not reduced by the other party having representation." },
+  { source: { assignment: "assignment-07", section: "3.3" },
+    prompt: "What may a dual agent NOT do?",
+    choices: [
+      "Disclose to one party the price or terms the other party is willing to accept, absent that party's written authorization.",
+      "Present offers and counteroffers between the parties.",
+      "Disclose material facts about the property's condition to both parties.",
+      "Explain the provisions of the purchase agreement to both parties."
+    ],
+    correctChoice: 0,
+    rationale: "Confidential negotiating information may not move between the sides. Presenting offers, disclosing material facts, and explaining provisions all remain required." },
+  { source: { assignment: "assignment-07", section: "5.5" },
+    prompt: "A salesperson commits a violation in the course of licensed activity. What is the broker's exposure?",
+    choices: [
+      "The broker may be responsible for the acts of licensees under his supervision, because supervision is an affirmative duty rather than an optional oversight function.",
+      "None, provided the salesperson signed an independent contractor agreement.",
+      "None, because discipline runs only against the individual who acted.",
+      "The broker is responsible only if he directed the specific act."
+    ],
+    correctChoice: 0,
+    rationale: "Vicarious responsibility follows from the supervisory duty. Independent contractor status for tax and payroll purposes does not reduce it." },
+  { source: { assignment: "assignment-07", section: "6.8" },
+    prompt: "Which obligation survives the termination of an agency relationship?",
+    choices: [
+      "Confidentiality as to the former principal's confidential information.",
+      "The duty to continue marketing the property.",
+      "The duty of obedience to the former principal's instructions.",
+      "The right to compensation on any future sale, regardless of the agreement's terms."
+    ],
+    correctChoice: 0,
+    rationale: "Confidentiality continues after the engagement ends. Performance duties end with it, and compensation after termination is governed by the agreement's own terms." },
+  { source: { assignment: "assignment-07", section: "6.5" },
+    prompt: "Why is the referral fee prohibition different from an ordinary conflict of interest?",
+    choices: [
+      "Where a payment is prohibited, disclosing it does not make it lawful — the first question is whether it may be received at all.",
+      "Referral fees must be disclosed only to the paying party.",
+      "Referral fees are permitted if the referring licensee performs no work.",
+      "Referral fees become lawful once the client signs an acknowledgment."
+    ],
+    correctChoice: 0,
+    rationale: "A conflict is managed by timely disclosure; a prohibited payment is not cured by disclosure at all. Asking only whether it was disclosed skips the first question." },
+  /* Assignment 08 — Contracts and transaction formation */
+  { source: { assignment: "assignment-08", section: "1.3" },
+    prompt: "Which describes a unilateral contract?",
+    choices: [
+      "A promise given in exchange for an act, where the offeree is not obligated to perform.",
+      "A contract signed by only one of the two parties.",
+      "A contract in which only one party receives consideration.",
+      "A contract that may be terminated by one party without notice."
+    ],
+    correctChoice: 0,
+    rationale: "The distinction is promise-for-act versus promise-for-promise, not the number of signatures or who benefits." },
+  { source: { assignment: "assignment-08", section: "2.4" },
+    prompt: "Which event does NOT terminate an offer before acceptance?",
+    choices: [
+      "The offeror's expression of hope that the offeree will accept soon.",
+      "Revocation communicated to the offeree.",
+      "Rejection by the offeree.",
+      "Lapse of the time stated in the offer."
+    ],
+    correctChoice: 0,
+    rationale: "Revocation, rejection, lapse, and in some circumstances death or incapacity terminate an offer. An expression of hope does not." },
+  { source: { assignment: "assignment-08", section: "2.5" },
+    prompt: "What distinguishes an option from an ordinary offer?",
+    choices: [
+      "Consideration has been given to keep the offer open, so it cannot be revoked during the option period.",
+      "An option must be recorded to be enforceable.",
+      "An option obligates the optionee to purchase.",
+      "An option may be created orally while an offer must be written."
+    ],
+    correctChoice: 0,
+    rationale: "Consideration purchases irrevocability for the stated period. The optionee is not obligated to exercise, which is the point of an option." },
+  { source: { assignment: "assignment-08", section: "3.4" },
+    prompt: "A contract falls within the Statute of Frauds and was never reduced to writing. How is it best described?",
+    choices: [
+      "Unenforceable.",
+      "Void.",
+      "Voidable at the option of either party.",
+      "Executed."
+    ],
+    correctChoice: 0,
+    rationale: "Non-compliance with the statute makes an otherwise valid agreement unenforceable rather than void, which is a different consequence with different remedies." },
+  { source: { assignment: "assignment-08", section: "5.3" },
+    prompt: "How does a contingency in a residential purchase agreement generally cease to protect the buyer?",
+    choices: [
+      "By removal or waiver in the manner and within the time the agreement specifies.",
+      "Automatically, when the underlying condition is satisfied.",
+      "When the seller notifies the buyer that the contingency period has ended.",
+      "When escrow confirms that the buyer's inspections are complete."
+    ],
+    correctChoice: 0,
+    rationale: "Removal follows the agreement's own procedure and timing. Satisfaction of the condition, a seller's notice, and escrow's observation do not remove it by themselves." },
+  { source: { assignment: "assignment-08", section: "6.4" },
+    prompt: "What is a liquidated damages provision?",
+    choices: [
+      "An advance agreement fixing the amount recoverable on a specified breach, in place of proving actual damages.",
+      "A provision requiring the breaching party to pay the other's attorney fees.",
+      "A provision converting the deposit into an option payment.",
+      "A provision requiring the parties to mediate before filing suit."
+    ],
+    correctChoice: 0,
+    rationale: "Liquidated damages fix an amount in advance. Fee-shifting, option treatment, and dispute resolution are separate provisions with separate functions." },
+  /* Assignment 09 — Transfer, deeds, title, and recording */
+  { source: { assignment: "assignment-09", section: "1.2" },
+    prompt: "Which element is required for a valid deed?",
+    choices: [
+      "A grantee identified with reasonable certainty.",
+      "The signature of the grantee.",
+      "Recording within a stated period after execution.",
+      "A statement of the consideration actually paid."
+    ],
+    correctChoice: 0,
+    rationale: "The grantee must be identifiable. The grantee does not sign, recording is not an element of validity, and the actual consideration need not be stated." },
+  { source: { assignment: "assignment-09", section: "2.3" },
+    prompt: "What does a quitclaim deed convey?",
+    choices: [
+      "Whatever interest the grantor has, if any, with no warranty that he has any.",
+      "Fee simple absolute, warranted against all claims.",
+      "The interest described in the preliminary report.",
+      "Nothing, since a quitclaim deed only releases claims and cannot transfer title."
+    ],
+    correctChoice: 0,
+    rationale: "A quitclaim passes whatever the grantor holds without warranty. It can transfer a full interest if the grantor has one; it simply promises nothing." },
+  { source: { assignment: "assignment-09", section: "2.5" },
+    prompt: "What does a deed of reconveyance accomplish?",
+    choices: [
+      "It reconveys title held by the trustee back to the trustor once the secured obligation is satisfied.",
+      "It transfers the property from the borrower to the lender after default.",
+      "It corrects an error in a previously recorded deed.",
+      "It conveys a partial interest to a junior lienholder."
+    ],
+    correctChoice: 0,
+    rationale: "Reconveyance is the release step under a deed of trust when the debt is paid. Transfer to the lender after default and correction of a prior deed are different instruments." },
+  { source: { assignment: "assignment-09", section: "4.2" },
+    prompt: "Which describes constructive notice?",
+    choices: [
+      "Notice the law imputes from the public record, whether or not the person actually examined it.",
+      "Notice a person actually has from having been told.",
+      "Notice arising from facts that would cause a reasonable person to inquire further.",
+      "Notice given by publication in a newspaper of general circulation."
+    ],
+    correctChoice: 0,
+    rationale: "Constructive notice is imputed from the record. The second describes actual notice and the third inquiry notice." },
+  { source: { assignment: "assignment-09", section: "6.4" },
+    prompt: "Land is gradually added to a riverfront parcel by the slow deposit of soil. What is this called?",
+    choices: [
+      "Accretion, and the added land generally belongs to the owner of the parcel to which it attached.",
+      "Avulsion, which is the sudden loss or addition of land.",
+      "Reliction, which is land uncovered by the permanent recession of water.",
+      "Erosion, which is the gradual loss of land."
+    ],
+    correctChoice: 0,
+    rationale: "Accretion is gradual addition by deposit. Avulsion is sudden, reliction is exposure by receding water, and erosion is gradual loss." },
+  /* Assignment 10 — Escrow, settlement, and transaction chronology */
+  { source: { assignment: "assignment-10", section: "1.1" },
+    prompt: "What is escrow?",
+    choices: [
+      "A neutral third party that holds funds and documents and performs the parties' written instructions when the stated conditions are satisfied.",
+      "An agent of the buyer, responsible for protecting the buyer's deposit.",
+      "A division of the title company that issues the policy of title insurance.",
+      "A licensee acting as an intermediary between the two brokerages."
+    ],
+    correctChoice: 0,
+    rationale: "Neutrality and instruction-following define escrow. It represents neither party, and issuing title insurance is a separate function." },
+  { source: { assignment: "assignment-10", section: "1.6" },
+    prompt: "A licensee is offered a payment by an escrow company for each transaction he directs to it. What is the problem?",
+    choices: [
+      "It is a payment for the referral of settlement service business, which the referral prohibition reaches; disclosure does not make it permissible.",
+      "Nothing, provided the licensee discloses the arrangement to his client.",
+      "Nothing, provided the client is free to choose a different escrow holder.",
+      "It is permissible only if the payment is made to the brokerage rather than to the licensee."
+    ],
+    correctChoice: 0,
+    rationale: "Whether the payment may be received at all comes before whether it was disclosed, and routing it to the brokerage does not change its character." },
+  { source: { assignment: "assignment-10", section: "3.2" },
+    prompt: "Buyer and seller each demand the deposit after a cancellation. What determines the disposition?",
+    choices: [
+      "The contract's own procedure and, failing agreement, a legal determination — not escrow's assessment of who is right.",
+      "The escrow holder's judgment, applied neutrally to both claims.",
+      "The listing broker's decision, since the deposit is held in the brokerage's trust account.",
+      "Automatic return to the buyer, since the deposit is his funds."
+    ],
+    correctChoice: 0,
+    rationale: "Neutrality prevents escrow from deciding. The contract sets the procedure, and an unresolved dispute is a legal question rather than a brokerage or escrow determination." },
+  { source: { assignment: "assignment-10", section: "4.4" },
+    prompt: "Why must a proration state the convention used?",
+    choices: [
+      "Because a 360-day and a 365-day basis, and the treatment of the closing date itself, produce different dollar amounts from the same facts.",
+      "Because the county requires the convention to be recorded with the deed.",
+      "Because the lender selects the convention and it varies by loan program.",
+      "Because the convention determines which party is charged for the item."
+    ],
+    correctChoice: 0,
+    rationale: "The convention changes the arithmetic, which is why a proration is checked against the convention rather than only against the total." },
+  { source: { assignment: "assignment-10", section: "5.6" },
+    prompt: "What is the relationship between possession and ownership at closing?",
+    choices: [
+      "They are separate: ownership transfers on recording of the deed, and possession transfers as the agreement provides.",
+      "They are the same event and cannot be separated by agreement.",
+      "Possession always transfers before ownership in a residential sale.",
+      "Ownership transfers on funding and possession on recording."
+    ],
+    correctChoice: 0,
+    rationale: "Possession is a contract term and ownership is a title event. Any arrangement other than possession at closing needs its own written agreement." },
+  { source: { assignment: "assignment-10", section: "6.5" },
+    prompt: "A post-closing audit finds a required disclosure with no evidence of when it was delivered. What is the correct handling?",
+    choices: [
+      "Record the finding, attempt to obtain evidence that legitimately exists, and escalate — without creating a delivery record after the fact.",
+      "Enter today's date as the delivery date so the file is complete.",
+      "Remove the disclosure from the file, since an undated document has no value.",
+      "Ask the buyer to sign a receipt dated as of the original delivery."
+    ],
+    correctChoice: 0,
+    rationale: "A documented gap is survivable; a manufactured record is not. Back-dating a receipt through the buyer's signature is the same act performed by a different hand." },
+  /* Assignment 11 — Real estate finance foundations */
+  { source: { assignment: "assignment-11", section: "1.4" },
+    prompt: "What does an acceleration clause in a promissory note permit?",
+    choices: [
+      "The holder to declare the entire unpaid balance immediately due on the occurrence of a stated event, such as default.",
+      "The borrower to prepay the loan without penalty at any time.",
+      "The lender to raise the interest rate at its discretion.",
+      "The loan to be assumed by a subsequent purchaser."
+    ],
+    correctChoice: 0,
+    rationale: "Acceleration makes the whole balance due on default. Prepayment, rate adjustment, and assumption are governed by separate clauses." },
+  { source: { assignment: "assignment-11", section: "1.5" },
+    prompt: "What distinguishes a straight note from an amortized note?",
+    choices: [
+      "A straight note provides for interest-only payments with the principal due at maturity; an amortized note's payments retire principal over the term.",
+      "A straight note carries a fixed rate and an amortized note an adjustable one.",
+      "A straight note is unsecured and an amortized note is secured.",
+      "A straight note is used for commercial property and an amortized note for residential."
+    ],
+    correctChoice: 0,
+    rationale: "The distinction is how principal is repaid. Rate structure, security, and property type are separate variables." },
+  { source: { assignment: "assignment-11", section: "4.3" },
+    prompt: "A borrower pays 2 points on a loan of $425,000. What is the dollar cost?",
+    choices: [
+      "$8,500",
+      "$850",
+      "$4,250",
+      "$21,250"
+    ],
+    correctChoice: 0,
+    rationale: "A point is one percent of the loan amount: $425,000 × 0.02 = $8,500. The distractors misplace a decimal, use one point, and use five." },
+  { source: { assignment: "assignment-11", section: "4.6" },
+    prompt: "What is an impound account?",
+    choices: [
+      "An account into which the borrower pays a portion of taxes and insurance with each payment, from which the servicer pays those items when due.",
+      "An account holding the borrower's down payment until closing.",
+      "A reserve the lender holds against future rate increases.",
+      "An account into which rents are deposited during a default."
+    ],
+    correctChoice: 0,
+    rationale: "Impounds collect and disburse taxes and insurance. The other descriptions are of escrow deposits, rate reserves, and receivership arrangements." },
+  { source: { assignment: "assignment-11", section: "6.6" },
+    prompt: "A senior lienholder completes a nonjudicial foreclosure sale. What generally happens to junior liens against the property?",
+    choices: [
+      "Junior liens are generally extinguished as to the property, though the underlying obligations may survive against the borrower depending on the circumstances.",
+      "Junior liens attach to the purchaser at the sale and must be paid by him.",
+      "Junior liens are unaffected and remain enforceable against the property.",
+      "Junior liens advance in priority and become the new first lien."
+    ],
+    correctChoice: 0,
+    rationale: "A senior lien's foreclosure clears junior liens from the property. Whether the debt survives against the borrower personally is a separate question." },
+  { source: { assignment: "assignment-11", section: "3.3" },
+    prompt: "Which statement about government-backed loan programs is accurate?",
+    choices: [
+      "The agency insures or guarantees the loan against loss; the loan itself is made by an approved lender.",
+      "The agency lends the money directly to the borrower.",
+      "The agency sets the interest rate the borrower will pay.",
+      "The agency appraises the property and issues the title policy."
+    ],
+    correctChoice: 0,
+    rationale: "Insuring or guaranteeing is not lending. The rate is set in the market between lender and borrower, and appraisal and title are separate functions." },
+  /* Assignment 12 — Valuation and appraisal foundations */
+  { source: { assignment: "assignment-12", section: "1.2" },
+    prompt: "Which condition is part of the definition of market value?",
+    choices: [
+      "Buyer and seller are each typically motivated, well informed, and acting without undue duress, with the property exposed on the open market for a reasonable time.",
+      "The transaction closes for cash without financing of any kind.",
+      "The price equals the cost to replace the improvements.",
+      "The buyer and seller are related and the price reflects a family arrangement."
+    ],
+    correctChoice: 0,
+    rationale: "Market value assumes typical motivation, information, absence of duress, and reasonable exposure. Cost is not value, and a related-party arrangement is the opposite of an arm's-length sale." },
+  { source: { assignment: "assignment-12", section: "1.6" },
+    prompt: "A homeowner spends $60,000 on a swimming pool and the property's value rises by $25,000. Which principle does this illustrate?",
+    choices: [
+      "Contribution — a component adds what the market says it adds, which is not what it cost.",
+      "Substitution — a buyer will pay no more than the cost of an equivalent substitute.",
+      "Conformity — value is maximized where a property conforms to its surroundings.",
+      "Progression — a lesser property gains value from better surrounding properties."
+    ],
+    correctChoice: 0,
+    rationale: "Contribution measures what a component adds to value. The gap between cost and contribution is the single most useful point in a pricing conversation." },
+  { source: { assignment: "assignment-12", section: "2.2" },
+    prompt: "Which set states the four tests of highest and best use?",
+    choices: [
+      "Legally permissible, physically possible, financially feasible, and maximally productive.",
+      "Zoned, financed, marketable, and improved.",
+      "Available, affordable, appropriate, and approved.",
+      "Permitted, profitable, popular, and permanent."
+    ],
+    correctChoice: 0,
+    rationale: "The four tests are applied in that order, and a use failing any one of them is not the highest and best use." },
+  { source: { assignment: "assignment-12", section: "3.6" },
+    prompt: "What does an active listing prove for valuation purposes?",
+    choices: [
+      "What a seller is asking, which sets an upper boundary on the market's response rather than establishing value.",
+      "What a buyer has agreed to pay for a comparable property.",
+      "What a property actually sold for after negotiation.",
+      "What an appraiser concluded about a comparable property."
+    ],
+    correctChoice: 0,
+    rationale: "An asking price is an offer to the market, not a transaction. Closed sales prove what buyers actually paid, which is why they dominate the analysis." },
+  { source: { assignment: "assignment-12", section: "4.6" },
+    prompt: "What is the difference between effective age and actual age?",
+    choices: [
+      "Actual age is chronological; effective age reflects condition, maintenance, and updating, and may be less or more than actual age.",
+      "Effective age is the age since the last sale; actual age is the age since construction.",
+      "Effective age applies to improvements and actual age to the land.",
+      "They are the same measure expressed on different scales."
+    ],
+    correctChoice: 0,
+    rationale: "Effective age reflects the condition the market perceives, which is why a well-maintained older improvement can have a lower effective age than its chronological age." },
+  { source: { assignment: "assignment-12", section: "5.6" },
+    prompt: "A property rents for $3,200 per month and comparable properties sell at a gross rent multiplier of 180. What value does the multiplier indicate?",
+    choices: [
+      "$576,000",
+      "$57,600",
+      "$480,000",
+      "$38,400"
+    ],
+    correctChoice: 0,
+    rationale: "$3,200 × 180 = $576,000. A gross rent multiplier is applied to monthly rent; the last figure is annual rent, which pairs with a gross income multiplier instead." },
+  /* Assignment 13 — Taxation, investment, and real estate mathematics */
+  { source: { assignment: "assignment-13", section: "1.6" },
+    prompt: "What is a Mello-Roos charge?",
+    choices: [
+      "A special tax levied within a community facilities district to finance public facilities or services, appearing on the property tax bill.",
+      "A county surcharge applied to properties sold within one year of purchase.",
+      "A state levy on the gain realized from the sale of investment property.",
+      "A homeowners association assessment collected by the county."
+    ],
+    correctChoice: 0,
+    rationale: "It is a district-based special tax appearing on the tax bill, and it is a real cost item a buyer's budget frequently omits." },
+  { source: { assignment: "assignment-13", section: "2.2" },
+    prompt: "Which statement about documentary transfer tax is accurate?",
+    choices: [
+      "It is imposed on the transfer of an interest in real property and is generally computed on the consideration, with certain transfers exempt.",
+      "It is imposed annually on the assessed value of the property.",
+      "It is paid by the lender at the time the deed of trust is recorded.",
+      "It applies only to commercial transactions."
+    ],
+    correctChoice: 0,
+    rationale: "The tax attaches to the transfer, not to ownership over time, and exemptions exist for defined categories of transfer." },
+  { source: { assignment: "assignment-13", section: "3.1" },
+    prompt: "How is net operating income derived?",
+    choices: [
+      "Gross scheduled income, less vacancy and collection loss, plus other income, less operating expenses — before debt service.",
+      "Gross income less debt service and income taxes.",
+      "Gross income less operating expenses and depreciation.",
+      "Cash flow before taxes plus principal reduction."
+    ],
+    correctChoice: 0,
+    rationale: "Net operating income is calculated before debt service and before income tax effects, which is why it can be compared across properties with different financing." },
+  { source: { assignment: "assignment-13", section: "3.3" },
+    prompt: "A buyer invests $180,000 of his own funds and the property produces $14,400 in annual cash flow before taxes. What is the cash-on-cash return?",
+    choices: [
+      "8%",
+      "12.5%",
+      "0.8%",
+      "80%"
+    ],
+    correctChoice: 0,
+    rationale: "$14,400 ÷ $180,000 = 0.08. The distractors invert the ratio and misplace the decimal." },
+  { source: { assignment: "assignment-13", section: "4.7" },
+    prompt: "A client asks the licensee to prepare a ten-year projection showing the return on a rental property. What is the professional handling?",
+    choices: [
+      "Prepare the analysis with every assumption stated on the page, verify the inputs that are verifiable, and present the projection as assumptions being tested rather than as an expectation.",
+      "Prepare it using the appreciation rate the local market has averaged, presented as the expected result.",
+      "Decline, because projections are outside a licensee's scope in every case.",
+      "Prepare it and omit the assumptions, so the client focuses on the conclusion."
+    ],
+    correctChoice: 0,
+    rationale: "An analysis with visible assumptions survives being wrong. A projected appreciation rate presented as an expectation is a prediction stated as a plan." },
+  { source: { assignment: "assignment-13", section: "5.6" },
+    prompt: "A loan of $290,000 carries interest at 7.2% per year. What is the interest for one month?",
+    choices: [
+      "$1,740",
+      "$2,088",
+      "$20,880",
+      "$1,450"
+    ],
+    correctChoice: 0,
+    rationale: "$290,000 × 0.072 = $20,880 per year; ÷ 12 = $1,740. The distractors use the wrong divisor, the annual figure, and a 6% rate." },
+  /* Assignment 14 — Fair housing, civil rights, and consumer protection */
+  { source: { assignment: "assignment-14", section: "3.1" },
+    prompt: "A licensee tells owners that a protected group is moving into the area and that values will fall, in order to obtain listings. What is this?",
+    choices: [
+      "Blockbusting, which is prohibited.",
+      "Steering, which concerns where buyers are shown property.",
+      "Redlining, which concerns the availability of credit by area.",
+      "Puffery, which is permitted opinion."
+    ],
+    correctChoice: 0,
+    rationale: "Inducing sales by representations about the entry of a protected group is blockbusting. It is neither steering nor redlining, and it is not opinion." },
+  { source: { assignment: "assignment-14", section: "2.3" },
+    prompt: "Which characteristic is protected under California law and is not among the federal protected classes for housing?",
+    choices: [
+      "Source of income.",
+      "National origin.",
+      "Religion.",
+      "Familial status."
+    ],
+    correctChoice: 0,
+    rationale: "California's list is broader than the federal baseline and includes source of income among other characteristics. The other three are federally protected." },
+  { source: { assignment: "assignment-14", section: "4.4" },
+    prompt: "A tenant with a disability asks to install a grab bar in the bathroom at her own expense. How is the request characterized?",
+    choices: [
+      "A reasonable modification — a physical change to the premises — analyzed on its own terms, including who bears the cost and what conditions may attach.",
+      "A reasonable accommodation, because it changes a rule about alterations.",
+      "A request the provider may decline because it alters the physical premises.",
+      "A request that requires the tenant to purchase additional insurance in every case."
+    ],
+    correctChoice: 0,
+    rationale: "A physical change is a modification; a change to a rule is an accommodation. The analysis of cost and conditions is fact-specific rather than an automatic denial." },
+  { source: { assignment: "assignment-14", section: "4.5" },
+    prompt: "What may a housing provider generally request when a disability and the disability-related need are not obvious?",
+    choices: [
+      "Reliable information that the person has a disability and that the requested accommodation is related to that disability.",
+      "The applicant's medical records and diagnosis.",
+      "A demonstration of an assistance animal's training.",
+      "A physician's certification that the applicant cannot live independently."
+    ],
+    correctChoice: 0,
+    rationale: "The inquiry is limited to whether a disability-related need exists. Diagnosis, records, and training demonstrations exceed it." },
+  { source: { assignment: "assignment-14", section: "3.6" },
+    prompt: "A brokerage restricts who sees a housing advertisement using a platform's audience tools. What is the correct analysis?",
+    choices: [
+      "Restricting the audience for a housing advertisement is a fair housing question, and using a platform's tool does not shift responsibility to the platform.",
+      "It is a marketing decision outside the fair housing framework, since no one is refused housing.",
+      "It is permissible provided the targeting parameters do not name a protected characteristic.",
+      "It is permissible because the platform is responsible for its own compliance."
+    ],
+    correctChoice: 0,
+    rationale: "The advertisement is the advertiser's, including who was permitted to see it, and a parameter that operates as a proxy is still exclusion." },
+  { source: { assignment: "assignment-14", section: "6.3" },
+    prompt: "A buyer asks the licensee what kind of people live in a neighborhood. What is the correct response?",
+    choices: [
+      "Decline to characterize the composition of the neighborhood and direct the buyer to public data sources and his own investigation.",
+      "Answer accurately, since factual information about a neighborhood is not a violation.",
+      "Answer only in general terms that avoid naming any specific group.",
+      "Answer if the buyer is a member of the group he is asking about."
+    ],
+    correctChoice: 0,
+    rationale: "Composition is not characterized, and the prohibition does not depend on accuracy, vagueness, or who is asking." },
+  /* Assignment 15 — Leasing, property management, license law, and integrated transaction */
+  { source: { assignment: "assignment-15", section: "1.5" },
+    prompt: "Which describes the implied warranty of habitability in a residential tenancy?",
+    choices: [
+      "The landlord must maintain the premises in a condition fit for human occupancy, and the obligation cannot generally be waived by the tenant in advance.",
+      "The tenant must accept the premises as they are on the date of possession.",
+      "The obligation applies only where the lease expressly states it.",
+      "The obligation ends once the tenant takes possession."
+    ],
+    correctChoice: 0,
+    rationale: "Habitability is implied by law and continues through the tenancy. A general advance waiver by the tenant does not eliminate it." },
+  { source: { assignment: "assignment-15", section: "1.7" },
+    prompt: "A tenant is several months behind in rent. Which action by the landlord is prohibited?",
+    choices: [
+      "Changing the locks or shutting off utilities to force the tenant out.",
+      "Serving the notice the statute requires for nonpayment.",
+      "Filing an unlawful detainer action after the notice period expires.",
+      "Applying the security deposit as the lease and the statute permit at the end of the tenancy."
+    ],
+    correctChoice: 0,
+    rationale: "Self-help eviction is prohibited regardless of how far behind the tenant is. The lawful path runs through notice and the court process." },
+  { source: { assignment: "assignment-15", section: "3.6" },
+    prompt: "What must a trust account reconciliation compare?",
+    choices: [
+      "The bank balance, the control record, and the sum of the individual beneficiary ledgers, all as of the same date.",
+      "The bank balance against the control record only.",
+      "The total deposits against the total disbursements for the month.",
+      "The broker's operating account against the trust account."
+    ],
+    correctChoice: 0,
+    rationale: "A three-way reconciliation is what detects a negative individual ledger inside an account whose total happens to balance." },
+  { source: { assignment: "assignment-15", section: "4.4" },
+    prompt: "Which is most likely to produce discipline against a licensee?",
+    choices: [
+      "Mishandling trust funds, misrepresentation, or failure to supervise.",
+      "Losing a listing to a competing brokerage.",
+      "Advising a client to reject an offer that later proves to have been the best one received.",
+      "Charging a commission above the local average."
+    ],
+    correctChoice: 0,
+    rationale: "Trust fund handling, misrepresentation, and supervision failures are the recurring sources of discipline. Commissions are negotiable and a judgment that proves wrong is not itself a violation." },
+  { source: { assignment: "assignment-15", section: "5.4" },
+    prompt: "During a visual inspection the licensee sees a stain on a ceiling. What should the disclosure state?",
+    choices: [
+      "What was observed — the stain, its location, and that its cause and current status were not determined.",
+      "That there was a prior roof leak that has since been repaired.",
+      "That the stain is cosmetic and does not affect the property.",
+      "Nothing, because a stain is not a defect."
+    ],
+    correctChoice: 0,
+    rationale: "Observation is recorded; inference is not. The second and third options assert causes and conclusions the licensee has no basis to state." },
+  { source: { assignment: "assignment-15", section: "5.9" },
+    prompt: "What is the three-part test for whether a condition must be disclosed?",
+    choices: [
+      "Is it known, is it material, and has it been disclosed in a way the file can show.",
+      "Is it visible, is it recent, and is it expensive to repair.",
+      "Is it recorded, is it insured, and is it repairable.",
+      "Did the buyer ask, did the seller answer, and was the answer written."
+    ],
+    correctChoice: 0,
+    rationale: "Knowledge, materiality, and evidenced disclosure are the three parts. Visibility, cost, and whether the buyer thought to ask do not determine the obligation." },
+  /* Integrative items — each answer requires material from more than one assignment */
+  { source: { assignment: "assignment-05", section: "6.4" },
+    crossReferences: [{ assignment: "assignment-03", section: "5.2" }],
+    prompt: "A preliminary report on a condominium lists a recorded declaration and a notice of a pending action involving the association. Which item most affects the buyer's ability to close as planned?",
+    choices: [
+      "The pending action, because it can affect insurability and financing availability in addition to what it may cost.",
+      "The declaration, because private restrictions must be removed before title can be insured.",
+      "Neither, because both are ordinary items in a common interest development.",
+      "Both equally, since every exception carries the same weight."
+    ],
+    correctChoice: 0,
+    rationale: "A recorded declaration is expected and is not removed; a pending action affecting the association can reach insurability, lender program eligibility, and value at once." },
+  { source: { assignment: "assignment-08", section: "2.6" },
+    crossReferences: [{ assignment: "assignment-10", section: "3.6" }],
+    prompt: "An email arrives from what appears to be the other agent's address, attaching a signed acceptance and new delivery instructions. What is the correct handling?",
+    choices: [
+      "Verify by voice through a number obtained independently before treating the acceptance as communicated or acting on the instructions.",
+      "Treat the acceptance as communicated, since electronic delivery is valid and the address matches.",
+      "Reply to the email asking the sender to confirm both items.",
+      "Act on the acceptance but not on the delivery instructions."
+    ],
+    correctChoice: 0,
+    rationale: "Electronic delivery is valid, which is exactly why a compromised or spoofed thread is dangerous. Verification must run through a channel the sender does not control." },
+  { source: { assignment: "assignment-12", section: "6.7" },
+    crossReferences: [{ assignment: "assignment-13", section: "6.5" }],
+    prompt: "Two years after a sale, a former seller claims the licensee's pricing analysis was careless. What determines the outcome?",
+    choices: [
+      "What the file shows about the comparables as they existed then, the selection reasoning, the adjustments and their derivation, and the seller's own recorded pricing decision.",
+      "Whether the property in fact sold quickly, which establishes that the price was too low.",
+      "Whether the licensee can reproduce the analysis today from current data.",
+      "Whether the licensee's opinion matched the appraisal obtained by the buyer's lender."
+    ],
+    correctChoice: 0,
+    rationale: "A negligence claim is decided by what the file shows about the work. A fast sale proves nothing by itself, and a re-run query today cannot reproduce the analysis and may contradict it." },
+  { source: { assignment: "assignment-14", section: "6.8" },
+    crossReferences: [{ assignment: "assignment-15", section: "2.5" }],
+    prompt: "A property manager applies the same written income and credit criteria to every applicant but keeps no record of what was said to telephone inquiries. What is the exposure?",
+    choices: [
+      "Uniform criteria do not answer a claim that different callers received different information, and only an inquiry log can.",
+      "None, because written criteria applied uniformly are a complete defense.",
+      "None, because telephone inquiries are not applications.",
+      "The exposure is limited to the applicants who were denied."
+    ],
+    correctChoice: 0,
+    rationale: "Differential information given at the inquiry stage leaves almost no trace and is the least visible violation in leasing. The screening criteria address a different stage." },
+  { source: { assignment: "assignment-09", section: "5.7" },
+    crossReferences: [{ assignment: "assignment-06", section: "6.2" }],
+    prompt: "Why does the timing of delivery of the preliminary report and the association documents matter so much to a buyer?",
+    choices: [
+      "The buyer's review period is what remains after delivery, so late delivery consumes the time in which he could still investigate and respond.",
+      "Late delivery invalidates the documents.",
+      "The seller must extend the closing date by the length of any delay.",
+      "The title company will not issue a policy if delivery was late."
+    ],
+    correctChoice: 0,
+    rationale: "Delivery starts the clock and the review time is the remainder. Nothing about lateness invalidates the documents or automatically extends the transaction." },
+  { source: { assignment: "assignment-11", section: "5.6" },
+    crossReferences: [{ assignment: "assignment-08", section: "5.3" }],
+    prompt: "A buyer whose loan contingency has been removed opens a store credit account to furnish the new house. What is the risk?",
+    choices: [
+      "The lender may re-verify credit before funding, the new debt can affect qualification, and the deposit is exposed because the contingency is gone.",
+      "None, because approval is final once the contingency is removed.",
+      "None, because consumer credit is not considered in mortgage underwriting.",
+      "The risk is limited to a delay in the closing date."
+    ],
+    correctChoice: 0,
+    rationale: "Approval is not final until funding, and removing the contingency removed the protection. This is why the instruction is to talk to the lender before any financial move." },
+  { source: { assignment: "assignment-07", section: "4.6" },
+    crossReferences: [{ assignment: "assignment-01", section: "6.2" }],
+    prompt: "A file contains a purchase agreement confirming the same brokerage on both sides and no consent from either party. How should this finding be ranked against a disclosure delivered three days late?",
+    choices: [
+      "More serious, because it describes duties actually owed being breached rather than a document arriving late.",
+      "Less serious, because the confirmation itself is accurate and complete.",
+      "Equally serious, because both are documentation defects.",
+      "Less serious, because the parties closed without objecting."
+    ],
+    correctChoice: 0,
+    rationale: "An undisclosed dual agency is different in kind from a timing defect. That the parties did not object establishes only that they did not know." },
+  { source: { assignment: "assignment-02", section: "6.4" },
+    crossReferences: [{ assignment: "assignment-14", section: "3.3" }],
+    prompt: "A listing photograph shows a chandelier the seller intends to take. What is the correct handling?",
+    choices: [
+      "State the exclusion where the photograph appears, or replace the fixture before marketing, because the advertisement is a representation about what is offered.",
+      "Nothing, because the purchase agreement will control what conveys.",
+      "Nothing, because photographs are illustrative rather than representational.",
+      "Remove the photograph after an offer is accepted."
+    ],
+    correctChoice: 0,
+    rationale: "Marketing consistency is an advertising obligation, not only a fixture question. A buyer who saw the item in the listing has a grievance whatever the fixture analysis concludes." },
+  { source: { assignment: "assignment-10", section: "6.2" },
+    crossReferences: [{ assignment: "assignment-09", section: "3.2" }],
+    prompt: "A closed file contains a deed with no date of delivery and an escrow instruction amendment signed by only one party. Which is the more serious finding?",
+    choices: [
+      "The undated delivery, because delivery is what transferred title and the file cannot show when it occurred.",
+      "The one-sided amendment, because escrow cannot act on it.",
+      "Neither, because the transaction closed and title was insured.",
+      "Both equally, because each is a missing signature or date."
+    ],
+    correctChoice: 0,
+    rationale: "Delivery is the operative transfer event, so a file that cannot evidence it has a gap at the point that matters most. A one-sided amendment simply was not effective, which is a smaller and more visible problem." },
+  { source: { assignment: "assignment-15", section: "6.6" },
+    crossReferences: [{ assignment: "assignment-12", section: "6.2" }],
+    prompt: "A client asks a licensee for a written opinion of value to submit in a court proceeding. What is the correct first step?",
+    choices: [
+      "Establish what the opinion will be used for and by whom, because the intended use determines whether the licensee may accept the assignment at all.",
+      "Prepare the analysis using the same method as a listing presentation.",
+      "Prepare it and label it clearly as an appraisal for litigation purposes.",
+      "Decline, because a licensee may never express an opinion of value in writing."
+    ],
+    correctChoice: 0,
+    rationale: "The intended use governs. Labeling a licensee's opinion an appraisal is precisely what may not be done, and licensees do prepare written opinions for appropriate purposes." },
 ];
 
 export default {

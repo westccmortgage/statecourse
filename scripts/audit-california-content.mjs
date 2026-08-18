@@ -228,6 +228,88 @@ report.assessments = {
   worstPosition
 };
 
+/* 5: final examination integrity. RE 303 p.4 requires not less than 100 questions per
+   form, comprehensive coverage of the entire course, and a retake on DIFFERENT questions.
+   The answer key must reference where in the material each answer is found, so every
+   source reference is resolved against the actual lesson heading rather than trusted. */
+const FINAL_QUESTION_COUNT = 100;
+const finalExams = [];
+const finalFindings = [];
+const lessonHeadings = new Map();
+for (const lesson of lessonFiles()) {
+  const headings = new Set();
+  for (const line of fs.readFileSync(lesson.file, "utf8").split("\n")) {
+    const match = line.match(/^#{3,6}\s+(\d+\.\d+)\s/);
+    if (match) headings.add(match[1]);
+  }
+  lessonHeadings.set(`${lesson.courseId}:${lesson.assignmentId}`, headings);
+}
+for (const courseId of engine.CALIFORNIA_COURSE_IDS) {
+  const course = engine.getCaliforniaCourse(courseId);
+  const assignmentIds = new Set(course.assignments.map((assignment) => assignment.id));
+  for (const form of engine.CALIFORNIA_FINAL_EXAM_FORMS) {
+    const exam = engine.getCaliforniaFinalExam(courseId, form);
+    if (!exam) {
+      finalFindings.push(`${courseId} form ${form}: not authored`);
+      continue;
+    }
+    if (exam.items.length !== FINAL_QUESTION_COUNT) {
+      finalFindings.push(`${courseId} form ${form}: ${exam.items.length} items, expected ${FINAL_QUESTION_COUNT}`);
+    }
+    const covered = new Set();
+    for (const item of exam.items) {
+      const references = [item.source, ...(item.crossReferences ?? [])];
+      for (const reference of references) {
+        if (!reference?.assignment || !reference?.section) {
+          finalFindings.push(`${courseId} form ${form} ${item.id}: answer key reference incomplete`);
+          continue;
+        }
+        if (!assignmentIds.has(reference.assignment)) {
+          finalFindings.push(`${courseId} form ${form} ${item.id}: references unknown ${reference.assignment}`);
+          continue;
+        }
+        const headings = lessonHeadings.get(`${courseId}:${reference.assignment}`);
+        if (!headings?.has(reference.section)) {
+          finalFindings.push(`${courseId} form ${form} ${item.id}: ${reference.assignment} has no section ${reference.section}`);
+        }
+      }
+      covered.add(item.source?.assignment);
+    }
+    const uncovered = course.assignments.filter((assignment) => !covered.has(assignment.id));
+    if (uncovered.length) {
+      finalFindings.push(`${courseId} form ${form}: no items covering ${uncovered.map((assignment) => assignment.id).join(", ")}`);
+    }
+    const positions = [0, 0, 0, 0];
+    for (const item of exam.items) positions[item.correctChoice] += 1;
+    finalExams.push({
+      courseId,
+      form,
+      items: exam.items.length,
+      assignmentsCovered: covered.size,
+      positions,
+      worstPosition: exam.items.length ? Math.max(...positions) / exam.items.length : 0,
+      prompts: exam.items.map((item) => item.prompt)
+    });
+  }
+  const forms = finalExams.filter((exam) => exam.courseId === courseId);
+  if (forms.length === 2) {
+    const shared = forms[0].prompts.filter((prompt) => forms[1].prompts.includes(prompt));
+    if (shared.length) finalFindings.push(`${courseId}: ${shared.length} question(s) appear on both the exam and the retake`);
+  }
+}
+const finalItemTotal = finalExams.reduce((sum, exam) => sum + exam.items, 0);
+const finalPrompts = finalExams.flatMap((exam) => exam.prompts);
+report.finalExams = {
+  courses: engine.CALIFORNIA_COURSE_IDS.length,
+  formsAuthored: finalExams.length,
+  formsExpected: engine.CALIFORNIA_COURSE_IDS.length * engine.CALIFORNIA_FINAL_EXAM_FORMS.length,
+  items: finalItemTotal,
+  distinctPrompts: new Set(finalPrompts).size,
+  worstPosition: finalExams.length ? Math.max(...finalExams.map((exam) => exam.worstPosition)) : 0,
+  findings: finalFindings,
+  forms: finalExams.map(({ prompts, ...rest }) => rest)
+};
+
 /* Gates that define "California ready" for these four dimensions. */
 const gates = [
   { name: "no raw Markdown reaches the student reader", pass: report.render.length === 0, detail: `${report.render.length} finding(s)` },
@@ -248,6 +330,21 @@ const gates = [
     name: "correct answers are spread across positions (no position over 40%)",
     pass: report.assessments.items > 0 && report.assessments.worstPosition <= 0.4,
     detail: `positions A/B/C/D = ${report.assessments.positions.join(" / ")} (worst ${(report.assessments.worstPosition * 100).toFixed(1)}%)`
+  },
+  {
+    name: "each course has both final examination forms, 100 items each",
+    pass: report.finalExams.formsAuthored === report.finalExams.formsExpected && report.finalExams.items === report.finalExams.formsExpected * 100,
+    detail: `${report.finalExams.formsAuthored} / ${report.finalExams.formsExpected} forms authored, ${report.finalExams.items} items`
+  },
+  {
+    name: "final examinations cover every lesson and reference where each answer is found",
+    pass: report.finalExams.findings.length === 0,
+    detail: report.finalExams.findings.length ? `${report.finalExams.findings.length} finding(s) (first: ${report.finalExams.findings[0]})` : "every item resolves to a real lesson subsection"
+  },
+  {
+    name: "the retake uses different questions and answers are spread across positions",
+    pass: report.finalExams.items > 0 && report.finalExams.distinctPrompts === report.finalExams.items && report.finalExams.worstPosition <= 0.4,
+    detail: `${report.finalExams.distinctPrompts} distinct prompts across ${report.finalExams.items} items; worst position ${(report.finalExams.worstPosition * 100).toFixed(1)}%`
   },
   {
     name: "every scored item has its own answer choices",
@@ -291,6 +388,15 @@ out.push(`  distinct correct answers ...... ${report.assessments.distinctCorrect
 out.push(`  distinct rationales ........... ${report.assessments.distinctRationales}`);
 out.push(`  correct-answer positions ...... ${report.assessments.positions.join(" / ")}`);
 out.push("");
+out.push("");
+out.push("Final examinations");
+out.push(`  forms authored ................. ${report.finalExams.formsAuthored} / ${report.finalExams.formsExpected}`);
+out.push(`  questions ..................... ${report.finalExams.items}`);
+out.push(`  distinct questions ............ ${report.finalExams.distinctPrompts}`);
+for (const form of report.finalExams.forms) {
+  out.push(`    ${form.courseId.padEnd(38)} form ${form.form}: ${String(form.items).padStart(3)} items, ${form.assignmentsCovered}/15 assignments, positions ${form.positions.join("/")}`);
+}
+for (const finding of report.finalExams.findings.slice(0, 5)) out.push(`  - ${finding}`);
 out.push("Gates");
 for (const gate of gates) out.push(`  [${gate.pass ? "pass" : "FAIL"}] ${gate.name}\n         ${gate.detail}`);
 console.log(out.join("\n"));
