@@ -9,7 +9,9 @@ const passwordError = document.querySelector("#passwordError");
 
 function returnPath() {
   const value = new URLSearchParams(location.search).get("return_to") || "/student/";
-  return value.startsWith("/") && !value.startsWith("//") && !value.includes("\\") ? value : "/student/";
+  const safePath = value.startsWith("/") && !value.startsWith("//") && !value.includes("\\") ? value : "/student/";
+  const protectedContinuations = ["/student/", "/student-course.html", "/enroll/"];
+  return protectedContinuations.some((prefix) => safePath.startsWith(prefix)) ? safePath : "/student/";
 }
 
 const registrationUrl = `../register/?return_to=${encodeURIComponent(returnPath())}`;
