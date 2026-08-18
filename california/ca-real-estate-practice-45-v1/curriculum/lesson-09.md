@@ -2,290 +2,345 @@
 
 ## Disclosures and property-condition risk
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze transfer disclosure framework using verified facts, current authority, and a documented professional workflow.
-- Analyze agent visual inspection duties using verified facts, current authority, and a documented professional workflow.
-- Analyze natural hazard and environmental disclosure using verified facts, current authority, and a documented professional workflow.
-- Analyze lead-based paint using verified facts, current authority, and a documented professional workflow.
-- Analyze material facts and stigma limits using verified facts, current authority, and a documented professional workflow.
-- Analyze disclosure delivery and rescission timing using verified facts, current authority, and a documented professional workflow.
+- Explain the seller's transfer disclosure obligation and apply the materiality standard to specific conditions.
+- Perform and record the licensee's own visual inspection, and distinguish it from the seller's disclosure and from a professional inspection.
+- Identify when natural hazard, environmental, and age-triggered disclosures apply and what each obligates.
+- Apply the limits on disclosing a prior occupant's death or illness, and explain why those limits exist.
+- Distinguish a material fact from a stigma or opinion that must not be represented as fact.
+- Sequence disclosure delivery correctly and explain the consequence of late delivery.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: transfer disclosure and the visual inspection duty | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: hazard, environmental, and age-triggered disclosures | 50 | Sections 3-4 viewed |
+| Guided reading: material facts, stigma limits, and delivery timing | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. transfer disclosure framework
+## 1. Transfer disclosure framework
 
-### 1.1 Concept and purpose
+### 1.1 The obligation
 
-transfer disclosure framework is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Disclosures and property-condition risk, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+A seller of residential property must disclose known material facts affecting the value or desirability of the property. In California this is delivered principally through a statutory transfer disclosure statement completed by the seller, supplemented by other disclosures the property, its age, and its location require.
 
-### 1.2 Essential elements
+Two features define the obligation and resolve most questions about it:
 
-The essential elements of transfer disclosure framework are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+1. **It is about what the seller knows.** The seller is not required to investigate or to become an expert. The seller is required to disclose what they actually know.
+2. **It is measured by materiality to a reasonable buyer**, not by the seller's own view of importance.
 
-### 1.3 Roles and duties
+### 1.2 The materiality standard
 
-Responsibility for transfer disclosure framework may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+A fact is material if it would affect a reasonable buyer's decision to buy or the price they would pay.
 
-### 1.4 Workflow
+Apply that standard and the recurring seller objections resolve themselves:
 
-A defensible workflow for transfer disclosure framework starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+| Seller's position | Analysis |
+|---|---|
+| "It's fixed, so there's nothing to disclose." | The repair's adequacy is exactly what a buyer wants to evaluate. Disclose the condition **and** the repair. |
+| "It only happens in heavy rain." | Frequency is not the test. A drainage problem that appears three times a year is material. |
+| "The buyer could see it himself." | Obviousness is not the test. Assuming the buyer noticed is how disputes begin. |
+| "Nobody asked." | Disclosure is not question-driven. |
+| "It's not a problem for me." | The standard is a reasonable buyer, not this seller. |
+| "It happened before I owned it." | If the seller knows it, the seller discloses it. |
 
-### 1.5 Documents and evidence
+### 1.3 Completing the disclosure
 
-Documents connected with transfer disclosure framework must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Four rules, each of which prevents a specific failure:
 
-### 1.6 Quantitative and factual analysis
+1. **The seller completes the seller's disclosure.** A licensee who fills it in on the seller's behalf misattributes the statement and may create a misrepresentation attributed to the seller.
+2. **Every item is answered.** A blank is ambiguous; "unknown" is an honest, available, and complete answer.
+3. **Uncertain items are not answered "no."** Marking an item "no" asserts knowledge the seller does not have.
+4. **Amend when new information arrives.** A disclosure is a statement of what the seller knows, and knowledge acquired during the transaction updates it.
 
-Where transfer disclosure framework involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 1.4 Counseling the reluctant seller
 
-### 1.7 California law and professional boundary
+The counseling argument that works is not moral — it is practical, and it is true:
 
-California law controls the licensed activity associated with transfer disclosure framework; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+> "Undisclosed conditions are far more expensive than disclosed ones. Disclosed, this is a fact the buyer prices in and moves past. Undisclosed and discovered during inspection, it becomes a renegotiation with your credibility gone. Undisclosed and discovered after closing, it becomes a claim. The only version where this costs you least is the one where you disclose it now, with the repair records."
 
-### 1.8 Consumer protection and fair access
+### 1.5 What the licensee does with the seller's disclosure
 
-Consumer protection requires that transfer disclosure framework be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+The licensee's obligations regarding the seller's disclosure are specific:
 
-### 1.9 Applied scenario
+- **Ensure it is delivered** to the buyer, and record when.
+- **Do not alter it** or complete it on the seller's behalf.
+- **Do not suppress it**, and do not follow an instruction to conceal a material condition.
+- **Where the licensee knows something the disclosure omits**, raise it with the seller and the broker. The licensee's own knowledge creates the licensee's own obligation.
 
-Scenario: during disclosures and property-condition risk, the file raises a question about transfer disclosure framework. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+That last point is the one that separates a compliant licensee from a complicit one. A licensee who knows of a material condition the seller has omitted, and delivers the disclosure without addressing it, has adopted the omission.
 
-### 1.10 Decision checklist
+## 2. Agent visual inspection duties
 
-Before treating transfer disclosure framework as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 2.1 An independent obligation
 
-## 2. agent visual inspection duties
+In a residential transaction the licensee conducts a **reasonably competent and diligent visual inspection of the reasonably and normally accessible areas** and discloses material facts it reveals.
 
-### 2.1 Concept and purpose
+This is the licensee's own duty. It is not satisfied by:
 
-agent visual inspection duties is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Disclosures and property-condition risk, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+- Reviewing the seller's disclosure.
+- Recommending that the buyer hire an inspector.
+- The buyer's own agent conducting one.
+- The presence of a professional inspection report.
 
-### 2.2 Essential elements
+### 2.2 What the duty includes and excludes
 
-The essential elements of agent visual inspection duties are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+| Included | Excluded |
+|---|---|
+| Areas reasonably and normally accessible | Areas requiring moving belongings or furniture |
+| Visual observation | Opening walls, floors, or ceilings |
+| Conditions apparent on inspection | Operating systems to test them |
+| The interior and accessible exterior | Roofs, crawl spaces, or areas not reasonably accessible |
+| What a competent licensee would notice | What only a specialist would recognize |
 
-### 2.3 Roles and duties
+The licensee is not an inspector. The licensee is a professional expected to notice what a diligent professional would notice, and to say so.
 
-Responsibility for agent visual inspection duties may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 2.3 What to record
 
-### 2.4 Workflow
+Record observations rather than conclusions, and record them whether or not their significance is clear:
 
-A defensible workflow for agent visual inspection duties starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+- **Observation:** "Brown staining approximately three feet across on the ceiling of the northwest bedroom; paint in that area appears newer than the surrounding ceiling."
+- **Not a conclusion:** "There was a roof leak that has been repaired."
 
-### 2.5 Documents and evidence
+The first is what the licensee observed and is qualified to state. The second is an inference the licensee is not qualified to make, and it may be wrong in a way the buyer relies on.
 
-Documents connected with agent visual inspection duties must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 2.4 The worked case
 
-### 2.6 Quantitative and factual analysis
+> Previewing a listing, the agent notices ceiling staining and fresh paint around it. The seller says a pipe leaked two years ago, was repaired, and "there's nothing to disclose because it's fixed." The draft transfer disclosure says nothing about it.
+>
+> **What is required:**
+>
+> 1. The **past leak and the repair are disclosed by the seller** — a repaired condition is still a fact a buyer would want, because the repair's adequacy is the question.
+> 2. The **agent's visual observation is separately recorded and disclosed** — the staining is what the agent saw, and that is the agent's own duty regardless of what the seller discloses.
+> 3. The **buyer is advised to have the repair evaluated** by an appropriate professional before his contingency expires.
+>
+> **What is not sufficient:** disclosing the staining but not the leak, because the agent observed one and the seller knows the other and both obligations exist. Nor is leaving it to the buyer's inspector, which discharges neither duty.
 
-Where agent visual inspection duties involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 2.5 Where the duty meets the competence limit
 
-### 2.7 California law and professional boundary
+When the visual inspection reveals something the licensee does not understand well enough to evaluate, the correct sequence is:
 
-California law controls the licensed activity associated with agent visual inspection duties; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+1. **Disclose the observation.**
+2. **Recommend evaluation** by the appropriate specialist.
+3. **Document** the recommendation and the buyer's response.
 
-### 2.8 Consumer protection and fair access
+What is not appropriate: offering a general impression of how serious such conditions usually are, asking the listing agent whether the seller considers it significant, or waiting to see whether the inspector flags it.
 
-Consumer protection requires that agent visual inspection duties be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 3. Natural hazard and environmental disclosure
 
-### 2.9 Applied scenario
+### 3.1 Natural hazard disclosure
 
-Scenario: during disclosures and property-condition risk, the file raises a question about agent visual inspection duties. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+California requires disclosure of whether a property lies within certain mapped hazard zones — flood, fire, seismic, and related designations. The disclosure is commonly prepared by a third-party report provider.
 
-### 2.10 Decision checklist
+What it does and does not do:
 
-Before treating agent visual inspection duties as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+- **Does:** tell the buyer that the property is within a mapped zone, so the buyer can investigate what that means for insurance, construction requirements, and risk.
+- **Does not:** certify the property is safe, predict whether an event will occur, or substitute for the buyer's own investigation.
 
-## 3. natural hazard and environmental disclosure
+It applies based on **mapping**, not on the property's event history. A property that has never flooded is disclosed as within a flood zone if it is mapped in one.
 
-### 3.1 Concept and purpose
+### 3.2 Why it matters more than buyers assume
 
-natural hazard and environmental disclosure is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Disclosures and property-condition risk, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Hazard zone status drives consequences buyers frequently discover late:
 
-### 3.2 Essential elements
+- **Insurance availability and cost.** In some areas this is now the determining factor in whether a transaction closes at all, and it should be investigated **early in the contingency period** rather than at the end.
+- **Construction and improvement requirements**, which can materially affect a buyer's renovation plans.
+- **Financing**, where lenders require particular coverage.
+- **Disclosure obligations** the buyer will inherit as a future seller.
 
-The essential elements of natural hazard and environmental disclosure are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A licensee who ensures a buyer investigates insurance early has prevented a common and avoidable failure.
 
-### 3.3 Roles and duties
+### 3.3 Environmental conditions
 
-Responsibility for natural hazard and environmental disclosure may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Depending on the property, environmental disclosures and investigations may include soil and groundwater contamination, proximity to industrial or agricultural use, radon, mold, methamphetamine contamination, and other conditions.
 
-### 3.4 Workflow
+The licensee's role is consistent throughout: **disclose what is known, recommend appropriate investigation, and do not evaluate.** A licensee who tells a buyer that visible mold "is just surface mold, it'll clean off" has made an assessment they are not qualified to make.
 
-A defensible workflow for natural hazard and environmental disclosure starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 3.4 Age-triggered disclosures
 
-### 3.5 Documents and evidence
+Certain obligations are triggered by the age of the housing rather than by any observed condition. For housing built before 1978, the federal lead-based paint requirements apply.
 
-Documents connected with natural hazard and environmental disclosure must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Those requirements are specific, and licensees routinely misstate them:
 
-### 3.6 Quantitative and factual analysis
+| The obligation is | The obligation is not |
+|---|---|
+| Disclose **known** lead-based paint and hazards | Test the property |
+| Provide **available records and reports** | Create records that do not exist |
+| Provide the required **pamphlet** | Certify the property is free of lead |
+| Give the buyer the **opportunity to conduct an assessment** | Remediate before transfer |
 
-Where natural hazard and environmental disclosure involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+It is triggered by the age of the housing, **not** by whether children will occupy it.
 
-### 3.7 California law and professional boundary
+### 3.5 Water, drought, and California-specific conditions
 
-California law controls the licensed activity associated with natural hazard and environmental disclosure; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+California transactions increasingly involve water-related requirements: conservation obligations, fixture requirements, well and septic conditions on rural property, and supply questions that affect what may be built.
 
-### 3.8 Consumer protection and fair access
+These are investigation items and, where known, disclosure items. A licensee marketing rural property who has not asked about water source, adequacy, and rights has skipped a question that determines whether the property is usable as intended.
 
-Consumer protection requires that natural hazard and environmental disclosure be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 3.6 Common interest developments
 
-### 3.9 Applied scenario
+Where the property is in a common interest development, the buyer's investigation extends to the association: governing documents and use restrictions, budget and reserves, assessments including any special assessment, meeting minutes, and pending or threatened litigation.
 
-Scenario: during disclosures and property-condition risk, the file raises a question about natural hazard and environmental disclosure. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Construction-defect litigation affecting the building is a clear material fact, and the buyer should have the documents in time to review them within the contingency period — which means requesting them promptly rather than late.
 
-### 3.10 Decision checklist
+## 4. Lead-based paint, material facts, and stigma limits
 
-Before treating natural hazard and environmental disclosure as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.1 The limits on death and illness disclosure
 
-## 4. lead-based paint
+California imposes specific limits on the disclosure of a prior occupant's death and on disclosure relating to a prior occupant's illness. These limits exist for a reason worth teaching: without them, disclosure practice would operate as a channel for discrimination against people with particular illnesses, and would attach a permanent penalty to properties for reasons unrelated to their condition.
 
-### 4.1 Concept and purpose
+The practical guidance for a licensee:
 
-lead-based paint is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Disclosures and property-condition risk, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+- **Do not volunteer** information about the manner of a prior occupant's death or about a prior occupant's illness.
+- **Do not misrepresent.** Where a direct question arises and the answer is constrained, the licensee should not lie.
+- **Escalate.** The precise boundary is a legal question with real consequences on both sides — disclose too much and there is one exposure, too little and another. This is a question for the broker and, where necessary, counsel, not one to resolve at a showing.
 
-### 4.2 Essential elements
+### 4.2 Material fact versus stigma
 
-The essential elements of lead-based paint are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+| Category | Treatment |
+|---|---|
+| **Physical condition of the property** | Material; disclose if known |
+| **Legal condition** — liens, boundary disputes, litigation, permit status | Material; disclose if known |
+| **Conditions affecting use** — zoning, association restrictions, easements | Material; disclose if known |
+| **Neighborhood characteristics that are objective and verifiable** | Point the buyer to the source rather than characterizing |
+| **Characteristics of neighbors or residents** | Do not characterize — this is steering territory |
+| **Prior occupant's death or illness** | Subject to specific legal limits; escalate |
+| **Rumor, reputation, and speculation** | Do not represent as fact |
 
-### 4.3 Roles and duties
+### 4.3 The licensee's own knowledge
 
-Responsibility for lead-based paint may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+A licensee's disclosure obligation attaches to what the licensee knows, from any source. Two situations recur:
 
-### 4.4 Workflow
+> **A neighbor tells the agent the home flooded three years ago. The seller has said nothing about it.**
+>
+> The report is neither ignorable nor assertable as fact. The correct path runs through the seller and the broker: raise it, ask the seller, and ensure the disclosure addresses what is known and what remains unverified. The file should show the issue was surfaced and how it was resolved.
 
-A defensible workflow for lead-based paint starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+> **The agent sold the same property four years ago and knows of a condition disclosed then.**
+>
+> The agent knows it. The obligation is the agent's, regardless of the current seller's disclosure.
 
-### 4.5 Documents and evidence
+### 4.4 Unverified information
 
-Documents connected with lead-based paint must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+The professional treatment of unverified information is to **attribute it and flag it**, never to launder it into apparent fact:
 
-### 4.6 Quantitative and factual analysis
+- Acceptable: "The seller reports the roof was replaced in approximately 2019; this has not been verified."
+- Not acceptable: "Roof replaced 2019."
+- Not acceptable: repeating a figure from a prior listing as though the licensee had verified it.
 
-Where lead-based paint involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 4.5 What must not be represented as fact
 
-### 4.7 California law and professional boundary
+- A prediction — that values will rise, that a permit will issue, that a variance will be granted.
+- A legal conclusion — that a use is permitted, that an encroachment is unimportant, that a neighbor has no claim.
+- A specialist's assessment — that a crack is cosmetic, that a repair was adequate, that mold is harmless.
+- Anything the licensee has not verified and cannot attribute.
 
-California law controls the licensed activity associated with lead-based paint; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+## 5. Delivery, timing, and rescission
 
-### 4.8 Consumer protection and fair access
+### 5.1 Delivery is where rights attach
 
-Consumer protection requires that lead-based paint be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Content is half the obligation. **Delivery, and evidence of when it occurred, is the other half**, because disclosure rules attach consequences to delivery — including periods during which a buyer may respond.
 
-### 4.9 Applied scenario
+A file with a signed disclosure and no delivery date proves that the buyer received it, and proves nothing about when. Timing is what disputes are about.
 
-Scenario: during disclosures and property-condition risk, the file raises a question about lead-based paint. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 5.2 What the file must show
 
-### 4.10 Decision checklist
+For each disclosure:
 
-Before treating lead-based paint as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+1. **What** was delivered — the specific document and version.
+2. **To whom.**
+3. **When** — the date, and where the rule is time-sensitive, the time.
+4. **By what method**, and that the method was one the contract or the law authorizes.
+5. **Evidence** — delivery receipt, signed acknowledgment with date, platform audit trail.
 
-## 5. material facts and stigma limits
+### 5.3 Early delivery is a professional advantage
 
-### 5.1 Concept and purpose
+Disclosures delivered early give the buyer time to review and investigate within the contingency period, which produces better decisions and fewer late renegotiations. Disclosures delivered late compress that review, create pressure, and generate the disputes that follow from pressure.
 
-material facts and stigma limits is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Disclosures and property-condition risk, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+This is why the disclosure work belongs at the listing appointment rather than at the offer. A seller who resists — "let's wait until we have an offer" — is asking for the arrangement most likely to cost them.
 
-### 5.2 Essential elements
+### 5.4 Late delivery and its consequence
 
-The essential elements of material facts and stigma limits are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+> The seller delivers a required disclosure after the buyer has already removed his contingencies.
+>
+> **What is true:** rights that run from delivery are not extinguished by the buyer having acted earlier without the information. The late delivery may revive or extend the buyer's ability to respond.
+>
+> **What the licensee must do:** identify the issue immediately and raise it, rather than proceeding as though the transaction were firm.
+>
+> **What is not a resolution:** treating it as cured because the buyer received it before closing, or extending the closing date, neither of which addresses the buyer's right to respond.
 
-### 5.3 Roles and duties
+### 5.5 Amending a disclosure
 
-Responsibility for material facts and stigma limits may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Where information changes or new information arrives — a new leak, a notice from the association, a claim filed — the disclosure is amended and re-delivered, with a new delivery date. The buyer's rights run from the delivery of the new information.
 
-### 5.4 Workflow
+An amendment does not erase the original. Both stay in the file, so the sequence shows what was known when.
 
-A defensible workflow for material facts and stigma limits starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 5.6 The correction obligation
 
-### 5.5 Documents and evidence
+Where a licensee discovers that a disclosure or a statement was wrong, the obligation is to correct it **immediately, in writing, to everyone who received the original** — before the recipient acts on it if that is still possible.
 
-Documents connected with material facts and stigma limits must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Waiting to see whether the error matters is how an error becomes a misrepresentation. A correction that arrives after closing is worth almost nothing to the person who relied on it.
 
-### 5.6 Quantitative and factual analysis
+## 6. Disclosure risk management
 
-Where material facts and stigma limits involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 6.1 The three-part test for any condition
 
-### 5.7 California law and professional boundary
+When a licensee encounters something about a property and is unsure what to do, three questions resolve it:
 
-California law controls the licensed activity associated with material facts and stigma limits; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+1. **Do I know it?** If yes, the licensee's own obligation is engaged, whatever the seller does.
+2. **Would a reasonable buyer consider it important?** If yes, it is material.
+3. **Am I qualified to evaluate it?** If no, disclose the observation, recommend the specialist, and do not characterize.
 
-### 5.8 Consumer protection and fair access
+### 6.2 The failure modes, and which is worse
 
-Consumer protection requires that material facts and stigma limits be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+| Failure | Consequence |
+|---|---|
+| **Not disclosing a known material fact** | The most serious. Concealment, and it survives closing as a claim |
+| **Disclosing but not evidencing delivery** | The file cannot show the buyer's rights were honored |
+| **Evaluating beyond competence** | A statement the buyer relies on that the licensee could not support |
+| **Disclosing what the law limits** | A different exposure, and potentially a discrimination issue |
+| **Over-disclosing rumor as fact** | Misrepresentation, and potential harm to the seller |
 
-### 5.9 Applied scenario
+Note that the failures run in both directions. "Disclose everything" is not the rule; "disclose what is material and known, attribute what is unverified, decline what the law limits, and evaluate nothing" is.
 
-Scenario: during disclosures and property-condition risk, the file raises a question about material facts and stigma limits. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 6.3 Building the disclosure file
 
-### 5.10 Decision checklist
+A defensible disclosure file contains:
 
-Before treating material facts and stigma limits as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+- The seller's disclosures, completed with no blanks, signed and dated.
+- The licensee's visual inspection disclosure, with observations recorded as observations.
+- Hazard and third-party reports.
+- Age-triggered disclosures with the required acknowledgments.
+- Association documents where applicable, with the date requested and the date delivered.
+- Delivery evidence for every item.
+- Amendments, with their own delivery evidence, and the originals retained.
+- A record of recommendations made to the buyer and the buyer's responses.
 
-## 6. disclosure delivery and rescission timing
+### 6.4 The audit question
 
-### 6.1 Concept and purpose
+The test to apply to any disclosure file: **could a reviewer, reading only this file, determine what the buyer knew and when he knew it?**
 
-disclosure delivery and rescission timing is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Disclosures and property-condition risk, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+If the answer is no, the gap is not a paperwork problem. It is the specific gap that a dispute will be about.
 
-### 6.2 Essential elements
+### 6.5 Checkpoint
 
-The essential elements of disclosure delivery and rescission timing are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
-
-### 6.3 Roles and duties
-
-Responsibility for disclosure delivery and rescission timing may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
-
-### 6.4 Workflow
-
-A defensible workflow for disclosure delivery and rescission timing starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with disclosure delivery and rescission timing must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where disclosure delivery and rescission timing involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with disclosure delivery and rescission timing; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that disclosure delivery and rescission timing be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during disclosures and property-condition risk, the file raises a question about disclosure delivery and rescission timing. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating disclosure delivery and rescission timing as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to apply the three-part test to a condition, state which failure mode a given file defect represents, and explain why late delivery is not cured by delivery before closing.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify each condition and whether it is material, state whose disclosure obligation each engages, distinguish your own observations from the seller's knowledge and from unverified reports, identify what you would recommend the buyer investigate, state the delivery evidence you would create, and identify anything you would escalate rather than resolve. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
