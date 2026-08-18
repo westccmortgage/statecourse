@@ -2,290 +2,644 @@
 
 ## Real property, personal property, and fixtures
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze real versus personal property using verified facts, current authority, and a documented professional workflow.
-- Analyze fixtures and the fixture tests using verified facts, current authority, and a documented professional workflow.
-- Analyze trade fixtures using verified facts, current authority, and a documented professional workflow.
-- Analyze natural and artificial attachments using verified facts, current authority, and a documented professional workflow.
-- Analyze water and mineral interests using verified facts, current authority, and a documented professional workflow.
-- Analyze fixture disputes in a sale using verified facts, current authority, and a documented professional workflow.
+- Distinguish real property from personal property and explain the consequences that follow from the classification.
+- Apply the fixture tests to specific items and explain why the tests are applied together rather than in isolation.
+- Explain what a trade fixture is, why it is treated differently, and what happens when it is not removed.
+- Classify natural and artificial attachments, and apply the rules governing growing things.
+- Describe water and mineral interests at the level a licensee must understand, and identify what belongs to a specialist.
+- Prevent fixture disputes in a sale by naming disputable items rather than relying on the tests after the fact.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: classification and the fixture tests | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: trade fixtures and attachments | 50 | Sections 3-4 viewed |
+| Guided reading: water and mineral interests, and dispute prevention | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. real versus personal property
+## 1. Real versus personal property
 
-### 1.1 Concept and purpose
+### 1.1 The classification and why it matters
 
-real versus personal property is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Real property, personal property, and fixtures, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**Real property** is land, what is permanently attached to it, and the bundle of legal rights in it.
+**Personal property** — also called *personalty* or *chattels* — is everything else: movable things not permanently attached.
 
-### 1.2 Essential elements
+The classification is not academic. It determines a series of practical consequences, and this table is the reason the rest of the lesson exists.
 
-The essential elements of real versus personal property are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+| Question | Real property | Personal property |
+|---|---|---|
+| How is it transferred? | By **deed** | By **bill of sale** or delivery |
+| Is the transfer recorded? | Yes, in the county records | Generally not |
+| How is it described? | By legal description | By identification of the item |
+| How is a security interest created? | Deed of trust or mortgage | Security agreement under commercial law |
+| Does it pass with the property in a sale? | Yes, unless excluded | No, unless included |
+| How is it taxed? | Real property taxation | Different treatment |
+| Does the Statute of Frauds apply? | Yes, to interests in land | Depends on the transaction |
 
-### 1.3 Roles and duties
+**The last two rows in bold are where transactions actually break.** A buyer assumes the refrigerator conveys; the seller assumes it does not. Both are relying on the default for a different classification.
 
-Responsibility for real versus personal property may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 1.2 The two directions of movement
 
-### 1.4 Workflow
+Items do not stay in one category. They move, and the direction has a name.
 
-A defensible workflow for real versus personal property starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+**Annexation** — personal property becomes real property by being attached. Lumber in a yard is personal property; the same lumber framed into a house is real property.
 
-### 1.5 Documents and evidence
+**Severance** — real property becomes personal property by being detached. A tree growing on the land is real property; the same tree cut into firewood is personal property.
 
-Documents connected with real versus personal property must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Severance can also occur **on paper**, without anything physically moving. A seller who contracts to sell standing timber, or who reserves the mineral rights in a deed, has severed those interests from the rest of the parcel by agreement.
 
-### 1.6 Quantitative and factual analysis
+### 1.3 The classification is made at a moment in time
 
-Where real versus personal property involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The same object can be personal property on Monday and real property on Friday. What matters is its status **at the moment the question arises** — when the deed was delivered, when the lien attached, when the contract was signed.
 
-### 1.7 California law and professional boundary
+> A homeowner buys a chandelier, keeps it boxed in the garage for a month, then installs it. Between purchase and installation it is personal property. After installation the fixture analysis applies to it.
+>
+> If the property is sold during that month, the boxed chandelier does not convey. If it is sold after installation, the analysis in Section 2 decides.
 
-California law controls the licensed activity associated with real versus personal property; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 1.4 Why the default rules cause trouble
 
-### 1.8 Consumer protection and fair access
+The defaults are opposite, and consumers do not know them:
 
-Consumer protection requires that real versus personal property be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+> **Real property conveys unless excluded. Personal property does not convey unless included.**
 
-### 1.9 Applied scenario
+Neither party is being unreasonable when a dispute arises over the washer and dryer. The buyer applies one default and the seller applies the other, and the contract said nothing.
 
-Scenario: during real property, personal property, and fixtures, the file raises a question about real versus personal property. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Section 6 gives the professional answer, and it is not "know the tests better."
 
-### 1.10 Decision checklist
+### 1.5 Checkpoint
 
-Before treating real versus personal property as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to state four consequences that follow from classifying an item as real rather than personal property.
 
-## 2. fixtures and the fixture tests
+## 2. Fixtures and the fixture tests
 
-### 2.1 Concept and purpose
+### 2.1 What a fixture is
 
-fixtures and the fixture tests is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Real property, personal property, and fixtures, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+A **fixture** is an item that was personal property and has become real property through attachment to the land or to an improvement. Having become real property, it conveys with the property unless excluded.
 
-### 2.2 Essential elements
+Most of the difficulty in this area is not in the definition. It is that reasonable people look at the same mounted television and disagree.
 
-The essential elements of fixtures and the fixture tests are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 2.2 The tests
 
-### 2.3 Roles and duties
+Courts apply several tests, and the common memory device is **MARIA**:
 
-Responsibility for fixtures and the fixture tests may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+| Test | Question |
+|---|---|
+| **M** — Method of attachment | How is it attached? Can it be removed without damage? |
+| **A** — Adaptability | Is it specially adapted to this property, or would it fit anywhere? |
+| **R** — Relationship of the parties | What is the relationship — landlord and tenant, buyer and seller, lender and borrower? |
+| **I** — Intention | Did the person who attached it intend it to become permanent? |
+| **A** — Agreement | What did the parties agree? |
 
-### 2.4 Workflow
+### 2.3 The two tests that actually decide
 
-A defensible workflow for fixtures and the fixture tests starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+The five are not equal in weight, and students who treat them as a checklist get the wrong answers.
 
-### 2.5 Documents and evidence
+**Intention is generally the most important test.** The others are largely evidence of it. The question courts return to is what the annexor intended at the time of attachment — and because intention is invisible, it is inferred from how the item was attached, how well it was adapted, and what the parties said.
 
-Documents connected with fixtures and the fixture tests must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Agreement overrides everything.** Where the parties have expressly agreed that an item conveys or does not, the tests never have to be applied. This is why Section 6 concludes that the professional response to fixture questions is documentary rather than analytical.
 
-### 2.6 Quantitative and factual analysis
+### 2.4 Method of attachment, worked
 
-Where fixtures and the fixture tests involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The intuition — bolted down means fixture, plugged in means personal property — is a decent first approximation and is frequently wrong.
 
-### 2.7 California law and professional boundary
+| Item | Attachment | Typical analysis |
+|---|---|---|
+| Built-in dishwasher | Plumbed and secured, cabinet cut to fit | Fixture. Adaptation is strong even though removal is possible |
+| Freestanding refrigerator | Plugged in, water line sometimes connected | Usually personal property, and the single most disputed item in residential practice |
+| Wall-mounted television | Bracket bolted to studs; the set lifts off | **The bracket and the set are frequently treated differently**, which is exactly why it is named in contracts |
+| Chandelier | Hardwired, hangs from a ceiling box | Fixture, and among the most commonly removed by sellers who assumed otherwise |
+| Above-ground spa | Sits on a pad, may be wired | Contested. Adaptation and wiring pull one way; portability pulls the other |
+| Storage shed | Sits on the ground under its own weight | Depends heavily on whether it is anchored and on local practice |
+| Window coverings | Rods mounted; panels slide off | Rods usually fixtures; panels often disputed |
+| Security cameras and smart devices | Mounted, often tied to an account | Increasingly disputed, and the account access is a separate problem |
 
-California law controls the licensed activity associated with fixtures and the fixture tests; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+Notice that the table's honest answer for several items is "disputed." That is the state of the law, not a gap in the lesson.
 
-### 2.8 Consumer protection and fair access
+### 2.5 Adaptability
 
-Consumer protection requires that fixtures and the fixture tests be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+An item specially adapted to this property points toward fixture status even when it is easy to remove. Custom storm windows cut to these openings, a key to this lock, and shelving built to these alcove dimensions are all evidence that the annexor meant them to stay — because they are worth much less anywhere else.
 
-### 2.9 Applied scenario
+### 2.6 Relationship of the parties
 
-Scenario: during real property, personal property, and fixtures, the file raises a question about fixtures and the fixture tests. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+The same item can be classified differently depending on who is arguing:
 
-### 2.10 Decision checklist
+- **Between buyer and seller**, doubt is generally resolved in favor of the buyer — the item stays.
+- **Between landlord and tenant**, doubt tends to favor the tenant, particularly for trade fixtures.
+- **Between lender and borrower**, doubt tends to favor the lender, whose security was measured by the property as it stood.
 
-Before treating fixtures and the fixture tests as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+This is why "is it a fixture?" is an incomplete question. **A fixture as between whom?**
 
-## 3. trade fixtures
+### 2.7 Checkpoint
 
-### 3.1 Concept and purpose
+You should be able to apply the tests to an item, say which test is doing the work, and explain how the relationship of the parties changes the outcome.
 
-trade fixtures is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Real property, personal property, and fixtures, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+## 3. Trade fixtures
 
-### 3.2 Essential elements
+### 3.1 What they are
 
-The essential elements of trade fixtures are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A **trade fixture** is an item a tenant attaches to leased premises for the conduct of the tenant's trade or business.
 
-### 3.3 Roles and duties
+Trade fixtures are treated differently from ordinary fixtures, and the difference exists for a straightforward commercial reason: businesses would not be able to operate in leased space if their equipment became the landlord's property on installation.
 
-Responsibility for trade fixtures may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 3.2 The rule
 
-### 3.4 Workflow
+> **A tenant may generally remove trade fixtures at or before the end of the tenancy, and must repair the damage removal causes.**
 
-A defensible workflow for trade fixtures starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Two limits carry most of the practical consequences.
 
-### 3.5 Documents and evidence
+**Timing.** Removal happens during the tenancy or within the period the lease or the law allows. A tenant who leaves and comes back a month later has usually lost the right.
 
-Documents connected with trade fixtures must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Accession.** Trade fixtures not removed in time may become the landlord's property. This is the rule that surprises tenants, and it converts a valuable asset into a gift by inattention.
 
-### 3.6 Quantitative and factual analysis
+### 3.3 What is and is not a trade fixture
 
-Where trade fixtures involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+| Item in a leased restaurant | Analysis |
+|---|---|
+| Walk-in refrigeration installed by the tenant | Trade fixture |
+| Commercial hood and exhaust installed by the tenant | Trade fixture, though removal damage can be substantial |
+| Bar and back-bar built by the tenant | Trade fixture |
+| New roof paid for by the tenant | **Not** a trade fixture — a building improvement, not trade equipment |
+| Upgraded electrical service to the building | Generally an improvement to the realty |
+| Signage on the building | Frequently a trade fixture, subject to the lease |
 
-### 3.7 California law and professional boundary
+The distinction runs between **equipment used in the business** and **improvements to the building itself.**
 
-California law controls the licensed activity associated with trade fixtures; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 3.4 The lease usually decides
 
-### 3.8 Consumer protection and fair access
+As with ordinary fixtures, agreement controls. Commercial leases routinely address what the tenant may install, what may be removed, the condition on removal, and whether restoration is required. A well-drafted lease makes the trade fixture analysis unnecessary.
 
-Consumer protection requires that trade fixtures be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Where a lease is silent, the parties are left to argue about categories — which is expensive and avoidable.
 
-### 3.9 Applied scenario
+### 3.5 Why licensees need this
 
-Scenario: during real property, personal property, and fixtures, the file raises a question about trade fixtures. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Licensees encounter trade fixtures in three situations: leasing commercial space, selling a building occupied by a commercial tenant, and property management. In each, the practical question is the same:
 
-### 3.10 Decision checklist
+> **What is in this space that belongs to someone other than the owner, and what does the lease say happens to it?**
 
-Before treating trade fixtures as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+A buyer purchasing a leased commercial building who assumes the tenant's equipment conveys has misread the transaction.
 
-## 4. natural and artificial attachments
+### 3.6 Checkpoint
 
-### 4.1 Concept and purpose
+You should be able to distinguish a trade fixture from a building improvement and state what happens to a trade fixture that is not removed in time.
 
-natural and artificial attachments is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Real property, personal property, and fixtures, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+## 4. Natural and artificial attachments
 
-### 4.2 Essential elements
+### 4.1 The two categories
 
-The essential elements of natural and artificial attachments are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**Natural attachments** are things growing on the land. **Artificial attachments** are things people have placed there — buildings, fences, walls, paving, and the fixtures already discussed.
 
-### 4.3 Roles and duties
+Both are ordinarily real property. The interesting rules concern the natural ones.
 
-Responsibility for natural and artificial attachments may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 4.2 Trees, shrubs, and perennial growth
 
-### 4.4 Workflow
+Growing things that do not require annual cultivation — trees, shrubs, perennial grasses — are generally real property and convey with the land.
 
-A defensible workflow for natural and artificial attachments starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Two practical consequences:
 
-### 4.5 Documents and evidence
+- **A seller who removes mature landscaping before closing** has removed real property, and it is a contract problem rather than a matter of taste.
+- **A tree on a boundary** raises questions about trunk location, encroaching branches and roots, and who may cut what. That is a legal question, and the licensee's role is to identify it and refer it.
 
-Documents connected with natural and artificial attachments must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 4.3 Crops requiring annual cultivation
 
-### 4.6 Quantitative and factual analysis
+Crops that require annual planting and cultivation are treated differently and are generally regarded as **personal property**, even while growing and attached.
 
-Where natural and artificial attachments involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The reasoning is economic. Annual crops represent the cultivator's labor and investment for the season rather than a permanent characteristic of the land, and treating them as personal property allows them to be sold, pledged, and harvested independently of the land.
 
-### 4.7 California law and professional boundary
+> **The consequence in a sale:** a growing annual crop does not automatically pass to a buyer of the land the way an orchard does. In agricultural transactions this must be addressed expressly — who owns the crop in the ground, who harvests it, and who bears the cost.
 
-California law controls the licensed activity associated with natural and artificial attachments; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+The distinction between a **perennial orchard** and an **annual row crop** is the one to hold. The orchard is part of the land; the season's tomatoes are not.
 
-### 4.8 Consumer protection and fair access
+### 4.4 Severance and its timing
 
-Consumer protection requires that natural and artificial attachments be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Growing things become personal property when severed — by cutting, or by a contract that severs them on paper. The same standing timber can be real property in the morning and, following a contract for its sale, treated as personal property that afternoon.
 
-### 4.9 Applied scenario
+For a licensee the practical point is that **a contract can change the classification without anything physically moving**, and a transaction involving timber, crops, or minerals may have had its classification altered by an agreement that does not appear in the deed.
 
-Scenario: during real property, personal property, and fixtures, the file raises a question about natural and artificial attachments. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 4.5 Artificial attachments and the surprise cases
 
-### 4.10 Decision checklist
+Most artificial attachments are unremarkable. Three are worth naming because they generate disputes:
 
-Before treating natural and artificial attachments as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**Fences and walls.** Ordinarily real property. Location is the recurring issue — a fence built years ago is not evidence of the boundary, and a survey is what answers the question.
 
-## 5. water and mineral interests
+**Improvements built by mistake on another's land.** These raise encroachment questions taken up in Lesson 05, and they are legal questions.
 
-### 5.1 Concept and purpose
+**Solar panels and similar systems.** Frequently subject to a lease or a financing arrangement that does not convey automatically with the property. A licensee who assumes the panels convey has skipped a question that changes what the buyer receives and what the buyer owes.
 
-water and mineral interests is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Real property, personal property, and fixtures, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 4.6 Checkpoint
 
-### 5.2 Essential elements
+You should be able to explain why an orchard and a field of annual vegetables are classified differently, and state what a licensee should do about solar panels on a listing.
 
-The essential elements of water and mineral interests are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+## 5. Water and mineral interests
 
-### 5.3 Roles and duties
+### 5.1 The scope of this section
 
-Responsibility for water and mineral interests may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Water and mineral rights are specialist areas. What a licensee needs is enough to **recognize when the question is present, ask the right question at intake, and refer it** — not enough to advise on it.
 
-### 5.4 Workflow
+That framing is the section's most important content, and it applies to every rule below.
 
-A defensible workflow for water and mineral interests starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 5.2 Water rights, in outline
 
-### 5.5 Documents and evidence
+California recognizes more than one basis for the right to use water, and the framework is complex, contested, and beyond the scope of a licensee's advice.
 
-Documents connected with water and mineral interests must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+| Concept | In outline |
+|---|---|
+| **Riparian rights** | Rights arising from ownership of land bordering a watercourse, to reasonable use of that water |
+| **Appropriative rights** | Rights arising from the diversion of water to beneficial use, under a system of priority |
+| **Groundwater** | Water beneath the surface, subject to its own body of law and increasingly to management regimes |
+| **Percolating and surface water** | Distinguished from a defined watercourse, with different treatment |
 
-### 5.6 Quantitative and factual analysis
+**Two doctrines a licensee should know by name.** Under **littoral** rights, ownership adjoins a lake or sea rather than a flowing watercourse. Under **accretion**, land gradually added by deposit generally belongs to the owner; under **avulsion**, a sudden change generally does not shift boundaries.
 
-Where water and mineral interests involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 5.3 The questions to ask at intake
 
-### 5.7 California law and professional boundary
+For rural, agricultural, or unimproved property, these questions belong at the listing appointment:
 
-California law controls the licensed activity associated with water and mineral interests; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+1. **What is the water source?** Municipal, well, shared well, mutual water company, district?
+2. **If a well: what is its documented production and quality?** When was it tested?
+3. **Is any water right appurtenant to the parcel, and is it documented?**
+4. **Is the property within a groundwater management area, and what does that mean here?**
+5. **Are there shared-facility agreements** — a shared well, a pipeline, an easement for access?
+6. **Is the supply sufficient for the buyer's intended use?**
 
-### 5.8 Consumer protection and fair access
+A licensee marketing rural property who has not asked about source, adequacy, and rights has skipped the question that determines whether the property is usable as intended.
 
-Consumer protection requires that water and mineral interests be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 5.4 Mineral rights
 
-### 5.9 Applied scenario
+Ownership of land includes the subsurface, but **mineral rights can be severed** — sold or reserved separately — and once severed they stay severed through subsequent transfers.
 
-Scenario: during real property, personal property, and fixtures, the file raises a question about water and mineral interests. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Two consequences:
 
-### 5.10 Decision checklist
+**A buyer may receive land whose minerals belong to someone else.** This appears in the preliminary report as an exception, and the licensee's role is to ensure the buyer sees it, obtains the underlying document, and understands that it is a title matter for review rather than a formality.
 
-Before treating water and mineral interests as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**The mineral estate may carry surface access rights.** The holder of severed mineral rights may have rights to reach them, which can affect the surface owner's use. Whether and how is a legal question.
 
-## 6. fixture disputes in a sale
+### 5.5 Oil, gas, and support
 
-### 6.1 Concept and purpose
+Oil and gas are treated under their own body of law, reflecting that they migrate rather than sit in a fixed place.
 
-fixture disputes in a sale is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Real property, personal property, and fixtures, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Two related concepts a licensee should be able to name:
 
-### 6.2 Essential elements
+**Lateral support** — the support a parcel receives from adjoining land. An excavation next door that causes a neighbor's land to subside raises a real claim.
 
-The essential elements of fixture disputes in a sale are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**Subjacent support** — support from beneath. Relevant where subsurface rights are severed and extraction affects the surface.
 
-### 6.3 Roles and duties
+### 5.6 What the licensee actually does
 
-Responsibility for fixture disputes in a sale may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+For every topic in this section, the professional response is the same three steps:
 
-### 6.4 Workflow
+1. **Recognize** that the question is present — from the property type, the preliminary report, or the seller's answers at intake.
+2. **Ask the intake questions** and obtain the documents.
+3. **Refer** the interpretation to counsel, and the technical questions to the appropriate specialist, before the buyer's contingency expires.
 
-A defensible workflow for fixture disputes in a sale starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+A licensee who tells a buyer that a severed mineral interest is "standard and nothing to worry about" has given a legal opinion on a document neither of them has read.
 
-### 6.5 Documents and evidence
+### 5.7 Checkpoint
 
-Documents connected with fixture disputes in a sale must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+You should be able to list the water questions you would ask on a rural listing and explain what a severed mineral interest means for a buyer.
 
-### 6.6 Quantitative and factual analysis
+## 6. Fixture disputes in a sale
 
-Where fixture disputes in a sale involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 6.1 The professional answer
 
-### 6.7 California law and professional boundary
+Everything in Sections 1 through 4 describes how a dispute is **resolved**. This section is about not having one.
 
-California law controls the licensed activity associated with fixture disputes in a sale; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+> **The professional practice is to make the fixture tests unnecessary by naming the disputable items in the agreement.**
 
-### 6.8 Consumer protection and fair access
+Agreement overrides the tests. A contract that says the chandelier stays and the mounted television goes has answered the question, and no analysis of intention or adaptation is required.
 
-Consumer protection requires that fixture disputes in a sale be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 6.2 The naming list
 
-### 6.9 Applied scenario
+In most residential transactions, these are worth addressing expressly:
 
-Scenario: during real property, personal property, and fixtures, the file raises a question about fixture disputes in a sale. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+- Appliances — refrigerator, washer, dryer, freestanding range
+- Window coverings — rods and panels separately
+- Mounted televisions **and their brackets**
+- Chandeliers and distinctive light fixtures
+- Above-ground spas and portable water features
+- Storage sheds and outbuildings
+- Security cameras, doorbells, thermostats, and other smart-home devices
+- Water treatment and filtration systems
+- Mounted shelving and closet systems
+- Potted and container plantings
+- Anything the seller has mentioned intending to take
+- Anything the buyer has admired aloud
 
-### 6.10 Decision checklist
+The last two are the practical ones. **A seller who says "I'll be taking the dining room fixture, it was my grandmother's" has just told you what to name in the contract.** A licensee who nods and writes nothing has created the dispute.
 
-Before treating fixture disputes in a sale as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 6.3 The intake conversation
+
+The right time is the listing appointment, and the right question is direct:
+
+> "Before we photograph, walk me through anything you're planning to take with you — light fixtures, appliances, anything mounted, anything with sentimental value. I'd rather name it now than have it come up two days before closing."
+
+This costs five minutes and prevents the most common non-financial dispute in residential practice.
+
+### 6.4 Marketing consistency
+
+A second source of disputes is the gap between marketing and contract. If the photographs show the chandelier, the description mentions the built-in wine refrigerator, and the seller intends to take both, the buyer has been shown something he is not getting.
+
+**Photographs are advertising**, and they are held to the truthfulness standard. Where staging includes items that are not conveying — or where the seller intends to remove a photographed fixture — say so in the marketing rather than leaving it for the walkthrough.
+
+### 6.5 When it surfaces at the walkthrough
+
+The final verification confirms that included items are present. Where a named item is missing:
+
+1. **Document it** — photographs and dated notes.
+2. **Address it through the contract before closing**, because the ordinary leverage disappears at closing.
+3. **Do not instruct escrow to hold funds** — escrow acts only on mutual written instructions.
+4. **Do not close and pursue afterward**, which converts a solvable issue into a claim.
+
+### 6.6 The licensee's limits
+
+Where the parties genuinely dispute whether an item was a fixture and the contract is silent, the licensee's role is to state what the contract says, document the positions, and escalate. **Whether a particular item was a fixture is a legal conclusion** the licensee should not deliver, however clear it seems.
+
+The honest position is: "The contract doesn't name it, which means this comes down to how the law classifies it. That's a question for counsel, and here's what I can do in the meantime."
+
+### 6.7 Checkpoint
+
+You should be able to run the intake conversation, produce the naming list for a specific property, and state the correct sequence when an item is missing at the walkthrough.
+
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Real property** | Land, permanent attachments, and the bundle of legal rights. Transfers by deed, is recorded, and **conveys unless excluded**. |
+| **Personal property** | Movable things not permanently attached. Transfers by bill of sale or delivery, and **does not convey unless included**. |
+| **Annexation** | Personal property becoming real property by attachment. |
+| **Severance** | Real property becoming personal property by detachment — physically, or **on paper** by contract or reservation. |
+| **Fixture** | An item that was personal property and became real property through attachment. Conveys unless excluded. |
+| **MARIA** | Method of attachment, Adaptability, Relationship of the parties, Intention, Agreement. |
+| **Intention** | Generally the most important test. The other tests are largely evidence of it, since intention itself is invisible. |
+| **Agreement** | The test that overrides the others. Where the parties named the item, the analysis is never reached. |
+| **Adaptability** | Special adaptation to this property — custom storm windows, a key to this lock — pointing toward fixture status even where removal is easy. |
+| **Relationship of the parties** | Why "is it a fixture?" is incomplete. Doubt tends to favor the buyer against a seller, the tenant against a landlord, and the lender against a borrower. |
+| **Trade fixture** | An item a tenant attaches to leased premises for the tenant's trade or business, generally removable at or before the end of the tenancy, with repair of removal damage. |
+| **Accession** | The rule by which trade fixtures not removed in time may become the landlord's property. |
+| **Building improvement** | A change to the building itself rather than trade equipment — a new roof, upgraded service. Not a trade fixture. |
+| **Natural attachment** | Things growing on the land. |
+| **Artificial attachment** | Things people placed — buildings, fences, walls, paving. |
+| **Perennial growth** | Trees, shrubs, and growth not requiring annual cultivation. Generally real property, conveying with the land. |
+| **Annual crop** | Growth requiring annual planting and cultivation. Generally **personal property**, even while growing, because it represents the season's labor rather than a permanent characteristic of the land. |
+| **Riparian rights** | Rights arising from ownership of land bordering a watercourse, to reasonable use. |
+| **Appropriative rights** | Rights arising from diversion to beneficial use, under a system of priority. |
+| **Littoral rights** | Rights of an owner adjoining a lake or sea rather than a flowing watercourse. |
+| **Accretion and avulsion** | Gradual deposit, which generally benefits the owner; and sudden change, which generally does not shift boundaries. |
+| **Severed mineral rights** | Subsurface rights sold or reserved separately. Once severed they stay severed, appear as a title exception, and may carry surface access rights. |
+| **Lateral and subjacent support** | Support a parcel receives from adjoining land, and from beneath. |
+| **Naming the item** | The professional practice that makes the fixture tests unnecessary. |
+
+## Practice problems
+
+### Problem 1
+
+A buyer and seller dispute the refrigerator. The buyer says it was in the house when he saw it and
+nobody said it was going. The seller says appliances are obviously hers and she never offered it. The
+contract is silent.
+
+**Explain why both are reasoning correctly, and state the professional failure.**
+
+> **Solution.** They are applying **opposite defaults, and each default is correct for its own
+> category.** Real property conveys unless excluded; personal property does not convey unless included.
+> The buyer looked at the house and applied one; the seller looked at her appliance and applied the
+> other.
+>
+> A freestanding refrigerator is usually personal property — which makes it the single most disputed
+> item in residential practice, because it is also the item buyers most reliably assume conveys.
+>
+> **The professional failure is the silent contract.** Neither party did anything unreasonable. The
+> licensee had one job in this dispute — to name the item at the listing appointment — and did not do
+> it.
+
+### Problem 2
+
+Apply the tests to a wall-mounted television and its bracket, a hardwired chandelier, and a custom
+storm window cut to fit one opening.
+
+**State which test does the work in each.**
+
+> **Solution.** **The television and bracket: method of attachment separates them.** The bracket is
+> bolted to studs and cannot come off without damage; the set lifts off. They are frequently treated
+> differently, which is exactly why both are named in contracts rather than analyzed.
+>
+> **The chandelier: attachment plus intention.** Hardwired into a ceiling box, it is ordinarily a
+> fixture — and it is among the most commonly removed by sellers who assumed otherwise, usually for
+> sentimental reasons.
+>
+> **The storm window: adaptability.** It is easy to remove and worth very little anywhere else, and
+> that special adaptation is evidence the annexor meant it to stay. The same reasoning covers a key to
+> this lock and shelving built to these alcove dimensions.
+>
+> **What transfers:** the five tests are not a checklist of equal weight. **Intention is generally the
+> most important**, and the others are largely evidence of it — because intention itself is invisible
+> and must be inferred.
+
+### Problem 3
+
+The same above-ground spa is argued over in three settings: between a buyer and a seller at closing;
+between a landlord and a tenant at the end of a lease; and between a lender and a borrower after
+default.
+
+**Does the analysis change?**
+
+> **Solution.** The item is identical and the outcome may differ, because **"is it a fixture?" is an
+> incomplete question. A fixture as between whom?**
+>
+> **Buyer and seller:** doubt is generally resolved in favor of the buyer — the item stays.
+>
+> **Landlord and tenant:** doubt tends to favor the tenant, particularly where the item is a trade
+> fixture.
+>
+> **Lender and borrower:** doubt tends to favor the lender, whose security was measured by the property
+> as it stood when the loan was made.
+>
+> The spa itself is genuinely contested on the other tests — adaptation and wiring pull toward fixture,
+> portability pulls away — which is why the relationship test carries more weight here than it would
+> for a hardwired chandelier.
+
+### Problem 4
+
+A restaurant tenant installed walk-in refrigeration, a commercial hood, a built bar, and a new roof.
+The lease is silent on removal. The tenant vacates on the last day of the term, returns three weeks
+later for the equipment, and finds the landlord has changed the locks.
+
+**Classify each item and assess the timing.**
+
+> **Solution.** **Trade fixtures:** the refrigeration, the hood, and the bar — equipment the tenant
+> attached for the conduct of its business, removable at or before the end of the tenancy with repair
+> of the damage removal causes. The hood's removal damage may be substantial, and repairing it is the
+> tenant's obligation, not a reason the fixture is not removable.
+>
+> **Not a trade fixture:** the roof. That is a **building improvement** rather than trade equipment,
+> and the distinction runs exactly there.
+>
+> **The timing is fatal.** Removal happens during the tenancy or within the period the lease or law
+> allows. A tenant who vacates and returns three weeks later has usually lost the right, and under
+> **accession** the unremoved trade fixtures may become the landlord's property.
+>
+> **What transfers:** this rule exists because businesses could not operate in leased space if their
+> equipment became the landlord's on installation — and inattention converts that protection into a
+> gift. A well-drafted lease addressing installation, removal, condition, and restoration makes the
+> whole analysis unnecessary.
+
+### Problem 5
+
+A licensee lists a 40-acre parcel with a mature walnut orchard, forty acres of tomatoes planted this
+spring, mature landscaping around the house, and solar panels on the roof. The seller mentions he
+plans to dig up several ornamental trees before closing.
+
+**Classify each item and identify what must be addressed.**
+
+> **Solution.** **The orchard is real property** — perennial growth not requiring annual cultivation,
+> conveying with the land.
+>
+> **The tomatoes are generally personal property**, even while growing and attached, because an annual
+> crop represents the cultivator's labor and investment for the season rather than a permanent
+> characteristic of the land. This does **not** pass automatically the way the orchard does, and the
+> agreement must address who owns the crop in the ground, who harvests it, and who bears the cost.
+>
+> **The mature landscaping is real property.** A seller who removes it before closing has removed real
+> property — a contract problem, not a matter of taste. Say so now, and name any specific plants he is
+> keeping.
+>
+> **The solar panels require a question, not a classification.** They are frequently subject to a lease
+> or financing arrangement that does not convey automatically. A licensee who assumes they convey has
+> skipped a question that changes both what the buyer receives and what the buyer owes.
+
+### Problem 6
+
+A buyer is purchasing rural acreage intending to plant an orchard and build a house. The preliminary
+report shows a reservation of mineral rights to a third party. The listing agent tells him mineral
+reservations are standard in the area and nothing to worry about, and that the well "has always been
+fine."
+
+**Assess both statements and list the questions that should have been asked.**
+
+> **Solution.** **Both statements are outside the license**, and the mineral one is a legal opinion on
+> a document neither of them has read.
+>
+> A severed mineral interest **stays severed** through subsequent transfers, and the mineral estate may
+> carry **surface access rights** that affect the surface owner's use — which matters a great deal to a
+> buyer planning an orchard and a house. Whether and how is a legal question. The licensee's role is to
+> ensure the buyer sees the exception, obtains the underlying document, and gets it reviewed **before
+> his contingency expires.**
+>
+> **The water questions belong at the listing appointment:** what is the source — municipal, well,
+> shared well, mutual water company, district? If a well, what is its documented production and
+> quality, and when was it tested? Is any water right appurtenant to the parcel and documented? Is the
+> property within a groundwater management area? Are there shared-facility agreements — a shared well,
+> a pipeline, an access easement? And is the supply sufficient for **the buyer's intended use**, which
+> here includes irrigating an orchard.
+>
+> **What transfers:** for every topic in this area the response is the same three steps — **recognize,
+> ask and obtain, refer.** "It has always been fine" is not a documented answer to any of the six
+> questions.
+
+### Problem 7
+
+At the listing appointment a seller mentions that the dining room chandelier was her grandmother's and
+she will be taking it. The licensee nods, photographs the room with the chandelier in it, and lists
+the property. Two days before closing the buyer's agent asks about it.
+
+**Trace the failures.**
+
+> **Solution.** Three, and they compound.
+>
+> **The seller told the licensee exactly what to name in the contract**, and nothing was written.
+> "Anything the seller has mentioned intending to take" is at the top of the naming list precisely
+> because sellers volunteer it.
+>
+> **The photograph made it worse.** Photographs are advertising and are held to the truthfulness
+> standard. The buyer has been shown something he is not getting — and where staging or photography
+> includes items that are not conveying, the marketing should say so rather than leaving it for the
+> walkthrough.
+>
+> **The timing is now the worst possible.** With two days to closing the parties have maximum pressure
+> and minimum flexibility, over an item that five minutes at the listing appointment would have
+> settled.
+>
+> **The conversation that prevents it:** *"Before we photograph, walk me through anything you're
+> planning to take — light fixtures, appliances, anything mounted, anything with sentimental value.
+> I'd rather name it now than have it come up two days before closing."*
+
+### Problem 8
+
+At the final verification the buyer finds a named built-in wine refrigerator has been removed. His
+agent proposes instructing escrow to hold $4,000 and closing on schedule; the listing agent says the
+item was "obviously personal property anyway."
+
+**State the correct sequence and the licensee's limit.**
+
+> **Solution.** **The item was named**, which ends the fixture argument entirely — agreement overrides
+> the tests, and the listing agent's classification opinion is both irrelevant and outside the license.
+>
+> **The sequence:** document the finding with photographs and dated notes; **address it through the
+> contract before closing**, because the ordinary leverage to resolve it disappears once the
+> transaction closes; do not instruct escrow to hold funds, since escrow acts only on **mutual** written
+> instructions; and do not close intending to pursue the seller afterward, which converts a solvable
+> issue into a claim.
+>
+> **Where an item is genuinely disputed and the contract is silent**, the licensee states what the
+> contract says, documents both positions, and escalates. Whether a particular item was a fixture is a
+> **legal conclusion**, however clear it seems. The honest position: "The contract doesn't name it,
+> which means this comes down to how the law classifies it — that's a question for counsel, and here's
+> what I can do in the meantime."
+
+## Chapter summary
+
+**The classification decides transfer, recording, description, security interests, taxation, and what
+conveys.** Real property transfers by deed and conveys unless excluded; personal property transfers by
+bill of sale and does not convey unless included — and those opposite defaults are why ordinary
+disputes arise between reasonable people.
+
+**Items move between categories** by annexation and severance, and severance can occur on paper
+without anything physically moving.
+
+**Classification is made at a moment in time** — when the deed was delivered, when the lien attached,
+when the contract was signed.
+
+**MARIA lists the tests; intention generally decides them**, with the others serving largely as
+evidence of an invisible fact. **Agreement overrides everything.**
+
+**Relationship matters:** doubt tends to favor the buyer against a seller, the tenant against a
+landlord, and the lender against a borrower. "Is it a fixture?" is incomplete without "as between
+whom?"
+
+**Trade fixtures are the tenant's business equipment**, removable at or before the end of the tenancy
+with repair of damage — and lost to accession if left. Building improvements are not trade fixtures,
+and a well-drafted lease makes the analysis unnecessary.
+
+**Perennial growth is real property; annual crops are generally personal property**, which must be
+addressed expressly in agricultural transactions. Removing mature landscaping before closing removes
+real property.
+
+**Solar panels require a question rather than an assumption**, because a lease or financing
+arrangement may not convey with the property.
+
+**Water and mineral interests are specialist areas** where the licensee's job is to recognize, ask and
+obtain, and refer. Ask the six water questions on rural property, and never characterize a severed
+mineral interest as routine.
+
+**Do not resolve fixture disputes — prevent them.** Run the intake conversation, name the disputable
+items, keep marketing consistent with what conveys, and at the walkthrough document, address it before
+closing, and leave the legal conclusion to counsel.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. Classify each item in dispute and state which test drives your analysis, identify how the relationship of the parties affects the outcome, state what the agreement should have said and draft that language, identify anything you would refer to counsel or to a specialist, and state the evidence you would create and retain. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
