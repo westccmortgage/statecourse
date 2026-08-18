@@ -2,290 +2,810 @@
 
 ## Taxation, investment, and real estate mathematics
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze property taxation and assessments using verified facts, current authority, and a documented professional workflow.
-- Analyze transfer and income tax orientation using verified facts, current authority, and a documented professional workflow.
-- Analyze cash flow and return using verified facts, current authority, and a documented professional workflow.
-- Analyze leverage and risk using verified facts, current authority, and a documented professional workflow.
-- Analyze commissions prorations and area math using verified facts, current authority, and a documented professional workflow.
-- Analyze investment comparison and documentation using verified facts, current authority, and a documented professional workflow.
+- Explain California property taxation, the assessment mechanism, and how assessments change on transfer and improvement.
+- Identify the transfer and income tax concepts a licensee must recognize and route, without advising on them.
+- Compute cash flow, cash-on-cash return, and the measures an investor uses to compare properties.
+- Explain leverage in both directions and identify the risks an investor carries.
+- Perform the commission, proration, area, and percentage calculations a licensee needs daily.
+- Compare investments and document the analysis so the basis of a recommendation is reconstructable.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: property taxation and tax orientation | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: cash flow, return, and leverage | 50 | Sections 3-4 viewed |
+| Guided reading: transaction mathematics and investment comparison | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. property taxation and assessments
+## 1. Property taxation and assessments
 
-### 1.1 Concept and purpose
+### 1.1 The California framework
 
-property taxation and assessments is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Taxation, investment, and real estate mathematics, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+California property taxation operates on an **assessed value** system with a constitutional limit on the general tax rate and on annual increases in assessed value.
 
-### 1.2 Essential elements
+The framework's operative features:
 
-The essential elements of property taxation and assessments are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+- **A base year value** is established, generally on a change in ownership or on new construction.
+- **Annual increases in assessed value are limited** by an inflation factor, subject to the constitutional cap.
+- **The general tax rate is capped**, with additional voter-approved indebtedness levied on top of it.
+- **Reassessment to current market value occurs on a change in ownership** or on new construction, rather than continuously.
 
-### 1.3 Roles and duties
+### 1.2 The consequence that matters most in practice
 
-Responsibility for property taxation and assessments may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+> **Two identical houses side by side can carry very different property tax bills, because their base year values were set in different years.**
 
-### 1.4 Workflow
+This is not an anomaly; it is how the system works. And it produces the single most common tax misstatement a licensee makes:
 
-A defensible workflow for property taxation and assessments starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+> **A buyer's property tax will not be the seller's property tax.** It will be based on a new base year value established on the change in ownership.
 
-### 1.5 Documents and evidence
+A licensee who tells a buyer "the taxes are about $4,200 a year" — quoting the seller's bill on a property held since 1998 — has given a number the buyer will budget against and that will be wrong by a multiple. **The correct statement quotes the seller's current bill as the seller's, explains that the property will be reassessed, and directs the buyer to the county assessor and to a tax professional for an estimate.**
 
-Documents connected with property taxation and assessments must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 1.3 New construction and improvements
 
-### 1.6 Quantitative and factual analysis
+New construction generally triggers reassessment **of the new construction**, added to the existing base year value rather than replacing it. Ordinary maintenance and repair generally do not.
 
-Where property taxation and assessments involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The line between an improvement that triggers reassessment and maintenance that does not is an assessor question, and a licensee advising a client that a renovation "won't affect your taxes" has answered it without authority.
 
-### 1.7 California law and professional boundary
+### 1.4 Exemptions and exclusions
 
-California law controls the licensed activity associated with property taxation and assessments; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+California provides various exemptions and exclusions, including a homeowners' exemption for an owner-occupied residence, exemptions for certain veterans, and exclusions from reassessment for certain transfers.
 
-### 1.8 Consumer protection and fair access
+**The rules governing transfer exclusions have changed**, and their application depends on the relationship, the property's use, and value thresholds.
 
-Consumer protection requires that property taxation and assessments be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**This is a referral, not a summary.** A licensee who tells a client that a transfer "won't trigger reassessment" has given tax advice on a question whose rules have moved and whose application is fact-specific. The correct response names the issue and routes it to the assessor and to a tax professional **before the transfer**, because the structure of a transaction can determine the outcome.
 
-### 1.9 Applied scenario
+### 1.5 Supplemental assessments
 
-Scenario: during taxation, investment, and real estate mathematics, the file raises a question about property taxation and assessments. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+When a property is reassessed on transfer or new construction, a **supplemental assessment** captures the difference between the old and new assessed value for the remainder of the tax year.
 
-### 1.10 Decision checklist
+Buyers regularly do not know this exists. **A supplemental tax bill arriving months after closing, for an amount nobody mentioned, is a preventable client surprise** — and telling the buyer to expect one is a small thing that separates a prepared client from an angry one.
 
-Before treating property taxation and assessments as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 1.6 Special assessments and Mello-Roos
 
-## 2. transfer and income tax orientation
+**Special assessments** fund improvements benefiting particular property, and they are levied in addition to the general tax.
 
-### 2.1 Concept and purpose
+**Community facilities district (Mello-Roos) special taxes** fund infrastructure and services in defined districts and can add substantially to the annual obligation. They have their own disclosure requirements in a residential transaction, and they can continue for many years.
 
-transfer and income tax orientation is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Taxation, investment, and real estate mathematics, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**A buyer inherits the remaining obligation**, which is why the total annual carrying cost — not the general tax rate alone — is what a buyer should be looking at.
 
-### 2.2 Essential elements
+### 1.7 Payment, delinquency, and the tax lien
 
-The essential elements of transfer and income tax orientation are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Property taxes are payable on a schedule of installments with defined delinquency dates, and unpaid taxes become a **lien on the property**.
 
-### 2.3 Roles and duties
+Two features from Lesson 05, restated: the tax lien is **involuntary and specific**, and it **generally takes priority over other liens regardless of when they attached.**
 
-Responsibility for transfer and income tax orientation may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Continued nonpayment leads ultimately to sale of the property under the applicable process.
 
-### 2.4 Workflow
+### 1.8 Checkpoint
 
-A defensible workflow for transfer and income tax orientation starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+You should be able to explain why two neighbors pay different taxes, state what a licensee may say about a buyer's future tax bill, and describe what a supplemental assessment is.
 
-### 2.5 Documents and evidence
+## 2. Transfer and income tax orientation
 
-Documents connected with transfer and income tax orientation must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 2.1 The scope of this section
 
-### 2.6 Quantitative and factual analysis
+**Every topic below is a referral.** The purpose is to let a licensee recognize an issue, use the vocabulary accurately, and route it to a tax professional — not to advise.
 
-Where transfer and income tax orientation involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+A licensee giving tax advice is doing two things wrong at once: exceeding the license, and answering a question whose rules change and whose application depends on facts the licensee does not hold.
 
-### 2.7 California law and professional boundary
+### 2.2 Documentary transfer tax
 
-California law controls the licensed activity associated with transfer and income tax orientation; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+California counties and some cities impose a **documentary transfer tax** on conveyances, computed on the consideration or value transferred, with exemptions for certain transfers.
 
-### 2.8 Consumer protection and fair access
+Practical points: the tax is collected at recording; the allocation between buyer and seller is a matter of the contract and local custom; and some cities impose **additional** transfer taxes that can be substantial. A licensee working across city lines who assumes uniformity will misstate closing costs.
 
-Consumer protection requires that transfer and income tax orientation be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 2.3 Income tax concepts a licensee should recognize
 
-### 2.9 Applied scenario
+| Concept | In outline |
+|---|---|
+| **Basis** | Generally what was paid, adjusted over time |
+| **Adjusted basis** | Basis increased by capital improvements and reduced by depreciation taken |
+| **Capital gain** | Generally the amount realized less adjusted basis |
+| **Depreciation (tax)** | A deduction available for **income-producing** property, taken over a recovery period. **Land is not depreciable** |
+| **Depreciation recapture** | Depreciation previously taken may be treated differently on sale |
+| **Principal residence exclusion** | An exclusion from gain on the sale of a principal residence, subject to ownership, use, and amount conditions |
+| **Like-kind exchange** | A deferral mechanism for qualifying investment or business property, with strict identification and completion timing |
+| **Installment sale** | Recognition of gain over time where payments are received over time |
+| **Passive activity rules** | Limits on the use of losses from rental activity |
+| **Interest and tax deductions** | Available on a personal residence subject to limits and conditions |
 
-Scenario: during taxation, investment, and real estate mathematics, the file raises a question about transfer and income tax orientation. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 2.4 The three that generate the most improper advice
 
-### 2.10 Decision checklist
+**The principal residence exclusion.** Clients ask whether they will "pay tax on the profit," and the answer depends on ownership and use periods, prior use of the exclusion, the amount of gain, and filing status. A licensee who says "you're fine, it's under the limit" has computed a client's tax.
 
-Before treating transfer and income tax orientation as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**The like-kind exchange.** The identification and completion deadlines are strict, the structure requires a qualified intermediary, and a mistake is generally not fixable after the fact. **A licensee's role is to identify early that a client may want an exchange and get a tax professional and intermediary involved before the sale closes** — because after closing, the opportunity is usually gone.
 
-## 3. cash flow and return
+**Depreciation and recapture.** Investors frequently do not distinguish tax depreciation from the appraisal depreciation in Lesson 12, and they are entirely different concepts sharing a word.
 
-### 3.1 Concept and purpose
+### 2.5 The two depreciations
 
-cash flow and return is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Taxation, investment, and real estate mathematics, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Worth stating explicitly because the collision is guaranteed:
 
-### 3.2 Essential elements
+| | Appraisal depreciation | Tax depreciation |
+|---|---|---|
+| What it is | Loss in value from any cause | A **deduction** taken over a recovery period |
+| Depends on | Actual condition, function, and externalities | A schedule |
+| Applies to | Improvements | Improvements on **income-producing** property |
+| Land | Not depreciated | Not depreciable |
+| Purpose | Estimating value | Computing taxable income |
 
-The essential elements of cash flow and return are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A property can be appreciating in value while being depreciated for tax purposes. Both statements are true simultaneously.
 
-### 3.3 Roles and duties
+### 2.6 What a licensee says
 
-Responsibility for cash flow and return may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+> "That's a tax question and I'm not able to advise on it — the rules depend on facts I don't have and they change. What I can do is flag it now, while there's still time to structure things, and get you to a tax professional before we go further."
 
-### 3.4 Workflow
+**Two features of that answer matter:** it names the limit honestly rather than deflecting, and it **connects the referral to timing.** Most tax opportunities in a real estate transaction close when the transaction does.
 
-A defensible workflow for cash flow and return starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 2.7 Checkpoint
 
-### 3.5 Documents and evidence
+You should be able to use the vocabulary accurately, distinguish the two depreciations, and explain why the exchange referral must happen before closing.
 
-Documents connected with cash flow and return must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+## 3. Cash flow and return
 
-### 3.6 Quantitative and factual analysis
+### 3.1 Building from NOI
 
-Where cash flow and return involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Lesson 12 built net operating income. Investment analysis continues from there.
 
-### 3.7 California law and professional boundary
+| Line | Computation |
+|---|---|
+| **Potential gross income** | All income at full occupancy |
+| **− Vacancy and collection loss** | |
+| **= Effective gross income** | |
+| **− Operating expenses** (including reserves) | |
+| **= Net operating income** | The property's performance |
+| **− Annual debt service** | |
+| **= Before-tax cash flow** | The investor's performance |
 
-California law controls the licensed activity associated with cash flow and return; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+> **NOI is the property; cash flow is the investor.** NOI excludes debt service precisely so two buyers with different loans can compare the same property. Cash flow includes it because that is what the investor actually receives.
 
-### 3.8 Consumer protection and fair access
+### 3.2 A worked cash flow
 
-Consumer protection requires that cash flow and return be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+> **12 units at $2,100 monthly. Vacancy and collection 5%. Operating expenses $118,000 including reserves. Annual debt service $126,000.**
+>
+> PGI = 12 × 2,100 × 12 = **$302,400**
+> Less vacancy: −15,120 → **EGI = $287,280**
+> Less operating expenses: −118,000 → **NOI = $169,280**
+> Less debt service: −126,000 → **Before-tax cash flow = $43,280**
 
-### 3.9 Applied scenario
+### 3.3 The return measures
 
-Scenario: during taxation, investment, and real estate mathematics, the file raises a question about cash flow and return. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+| Measure | Formula | What it measures |
+|---|---|---|
+| **Capitalization rate** | NOI ÷ value | The property's unleveraged return |
+| **Cash-on-cash return** | Before-tax cash flow ÷ cash invested | The return on the money actually put in |
+| **Gross rent multiplier** | Price ÷ gross monthly rent | A screening ratio ignoring expenses |
+| **Operating expense ratio** | Operating expenses ÷ effective gross income | Expense efficiency |
+| **Debt coverage ratio** | NOI ÷ annual debt service | The cushion between income and the loan payment |
+| **Break-even occupancy** | (Operating expenses + debt service) ÷ PGI | The occupancy needed to cover everything |
 
-### 3.10 Decision checklist
+### 3.4 Worked returns
 
-Before treating cash flow and return as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+Using the property above, purchased for $2,944,000 with $736,000 down and $60,000 of closing and acquisition costs — **$796,000 of cash invested.**
 
-## 4. leverage and risk
+> **Cap rate:** 169,280 ÷ 2,944,000 = **5.75%**
+>
+> **Cash-on-cash:** 43,280 ÷ 796,000 = **5.44%**
+>
+> **Debt coverage ratio:** 169,280 ÷ 126,000 = **1.34**
+>
+> **Operating expense ratio:** 118,000 ÷ 287,280 = **41.1%**
+>
+> **Break-even occupancy:** (118,000 + 126,000) ÷ 302,400 = 244,000 ÷ 302,400 = **80.7%**
 
-### 4.1 Concept and purpose
+### 3.5 Reading the numbers
 
-leverage and risk is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Taxation, investment, and real estate mathematics, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**The debt coverage ratio of 1.34** means NOI covers debt service 1.34 times. Lenders require a cushion above 1.00, and the required level varies by lender and property type — **which is a lender question a licensee does not answer with a threshold.**
 
-### 4.2 Essential elements
+**The break-even occupancy of 80.7%** is the operating leverage in one number: below about 81% occupancy, the property does not cover its expenses and its loan. An investor looking at a submarket where occupancy has run at 88% has a 7-point cushion; one where it has run at 84% has three.
 
-The essential elements of leverage and risk are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**Cash-on-cash below the cap rate** — 5.44% against 5.75% — tells the investor the financing is costing more than the property earns on the borrowed portion. That is **negative leverage**, and Section 4 develops it.
 
-### 4.3 Roles and duties
+### 3.6 The measures that mislead
 
-Responsibility for leverage and risk may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**Cap rate ignores financing**, which is a feature when comparing properties and a limitation when evaluating an investor's actual return.
 
-### 4.4 Workflow
+**Cash-on-cash ignores appreciation, principal reduction, and tax effects** — three of the four sources of return on real estate. An investor comparing a real estate cash-on-cash return to a bond yield is comparing incomparable things.
 
-A defensible workflow for leverage and risk starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+**GRM ignores expenses entirely.** Two properties with identical gross rents and very different expense structures produce identical multipliers and materially different values.
 
-### 4.5 Documents and evidence
+**None of these is a valuation.** They are comparison tools with defined limits, and a licensee should be able to state each limit when quoting the number.
 
-Documents connected with leverage and risk must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 3.7 The four sources of return
 
-### 4.6 Quantitative and factual analysis
+Real estate return comes from four places, and an analysis quoting only one is incomplete:
 
-Where leverage and risk involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+1. **Cash flow** — what the property pays out.
+2. **Principal reduction** — the loan balance falling with each amortized payment.
+3. **Appreciation** — value change, which may be negative.
+4. **Tax effects** — which are a tax professional's territory.
 
-### 4.7 California law and professional boundary
+### 3.8 Checkpoint
 
-California law controls the licensed activity associated with leverage and risk; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+You should be able to build a cash flow from PGI, compute each return measure, and state each measure's limitation.
 
-### 4.8 Consumer protection and fair access
+## 4. Leverage and risk
 
-Consumer protection requires that leverage and risk be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 4.1 What leverage is
 
-### 4.9 Applied scenario
+**Leverage** is the use of borrowed funds to increase the return on invested capital. It works in both directions, and the second direction is the one investors underweight.
 
-Scenario: during taxation, investment, and real estate mathematics, the file raises a question about leverage and risk. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 4.2 Positive and negative leverage
 
-### 4.10 Decision checklist
+> **Positive leverage:** the property's return exceeds the cost of the borrowed money, so borrowing raises the return on equity.
+>
+> **Negative leverage:** the cost of borrowing exceeds the property's return, so borrowing **lowers** the return on equity.
 
-Before treating leverage and risk as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+The comparison is between the property's unleveraged return — roughly the cap rate — and the cost of debt.
 
-## 5. commissions prorations and area math
+### 4.3 Worked both ways
 
-### 5.1 Concept and purpose
+> **A $1,000,000 property producing $60,000 NOI — a 6% cap rate.**
+>
+> **All cash:** return = 60,000 ÷ 1,000,000 = **6.0%.**
+>
+> **75% financing at 5%:** loan $750,000, interest-only for simplicity = $37,500.
+> Cash flow = 60,000 − 37,500 = $22,500 on $250,000 invested = **9.0%.**
+> **Positive leverage** — borrowing at 5% to earn 6% raised the equity return by three points.
+>
+> **75% financing at 7.5%:** interest = $56,250.
+> Cash flow = 60,000 − 56,250 = $3,750 on $250,000 = **1.5%.**
+> **Negative leverage** — the same property, the same NOI, and a return well below the all-cash 6%.
 
-commissions prorations and area math is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Taxation, investment, and real estate mathematics, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**The property did not change.** The financing did, and it moved the equity return from 9.0% to 1.5%.
 
-### 5.2 Essential elements
+### 4.4 Leverage amplifies losses too
 
-The essential elements of commissions prorations and area math are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+The same mechanism magnifies downside. A 10% decline in the value of an all-cash $1,000,000 property costs the investor 10% of his capital. The same decline on $250,000 of equity costs **40%** of it.
 
-### 5.3 Roles and duties
+**That is the whole risk of leverage in one sentence**, and it is why a licensee should never present leverage as free return.
 
-Responsibility for commissions prorations and area math may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 4.5 The risks an investor carries
 
-### 5.4 Workflow
+| Risk | What it is |
+|---|---|
+| **Market risk** | Value and rent movement |
+| **Vacancy and credit risk** | Units empty or tenants not paying |
+| **Operating risk** | Expenses rising faster than income |
+| **Interest rate risk** | Rate movement on adjustable debt, and at refinance |
+| **Liquidity risk** | Real estate cannot be sold quickly at a known price |
+| **Legislative and regulatory risk** | Rent regulation, tax changes, land use changes |
+| **Management risk** | Performance depends on operations |
+| **Physical risk** | Casualty, deferred maintenance, hazard exposure |
+| **Refinance risk** | A balloon or maturity arriving in an unfavorable market |
 
-A defensible workflow for commissions prorations and area math starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+**Liquidity risk traces straight back to Lesson 01.** Immobility and uniqueness are why real estate cannot be sold quickly at a known price, which is why it is not comparable to a listed security however attractive the return looks.
 
-### 5.5 Documents and evidence
+### 4.6 Diversification and concentration
 
-Documents connected with commissions prorations and area math must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+An investor holding one property in one submarket carries **concentration risk**: the specific building, the specific tenant mix, and the specific local economy.
 
-### 5.6 Quantitative and factual analysis
+A licensee should be able to name that as a consideration. **A licensee should not tell a client how much of their net worth belongs in real estate**, which is investment advice requiring information and qualification the licensee does not have.
 
-Where commissions prorations and area math involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 4.7 What a licensee may and may not do with investment analysis
 
-### 5.7 California law and professional boundary
+**May:** compute and explain the measures; explain what each includes and excludes; explain how leverage works in both directions; gather and present the operating data and its sources; and identify the questions the client should take to their advisors.
 
-California law controls the licensed activity associated with commissions prorations and area math; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**May not:** project future appreciation or rent growth as fact; state a required return or a suitable allocation; advise on the tax consequences; predict interest rates or market direction; or present a pro forma as anything other than a set of assumptions.
 
-### 5.8 Consumer protection and fair access
+### 4.8 Pro formas and the assumption problem
 
-Consumer protection requires that commissions prorations and area math be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+A **pro forma** is a projected operating statement. It is built from assumptions — rent growth, vacancy, expense inflation, and an exit value — and the assumptions carry the answer.
 
-### 5.9 Applied scenario
+**Three disciplines:**
 
-Scenario: during taxation, investment, and real estate mathematics, the file raises a question about commissions prorations and area math. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+1. **Label it as projected**, never as actual.
+2. **State each assumption and its source**, so a reader can substitute their own.
+3. **Distinguish actual historical operating figures from projections** on the same page, because a pro forma presented as an operating statement is a misrepresentation.
 
-### 5.10 Decision checklist
+A seller's pro forma showing full occupancy at above-market rents is not evidence of income. It is a set of assumptions, and it should be presented as one.
 
-Before treating commissions prorations and area math as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.9 Checkpoint
 
-## 6. investment comparison and documentation
+You should be able to demonstrate positive and negative leverage numerically, explain how leverage amplifies loss, and state what a pro forma must be labeled.
 
-### 6.1 Concept and purpose
+## 5. Commissions, prorations, and area math
 
-investment comparison and documentation is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Taxation, investment, and real estate mathematics, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 5.1 The percentage relationships
 
-### 6.2 Essential elements
+Nearly every transaction calculation is one relationship in three forms:
 
-The essential elements of investment comparison and documentation are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+> **Part = Whole × Rate**
+> **Whole = Part ÷ Rate**
+> **Rate = Part ÷ Whole**
 
-### 6.3 Roles and duties
+Identifying which quantity is missing is most of the work.
 
-Responsibility for investment comparison and documentation may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 5.2 Commission calculations
 
-### 6.4 Workflow
+> **A property sells for $840,000 at a 5% total compensation. What is the total?**
+> 840,000 × 0.05 = **$42,000.**
 
-A defensible workflow for investment comparison and documentation starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+> **The listing and selling sides split it evenly, and the selling salesperson's brokerage splits 60/40 with her. What does she receive?**
+> Selling side: 42,000 × 0.50 = $21,000. Her share: 21,000 × 0.60 = **$12,600.**
 
-### 6.5 Documents and evidence
+> **A salesperson received $9,450, being 60% of her brokerage's share, which was half the total at 4.5%. What was the sale price?**
+> Brokerage share: 9,450 ÷ 0.60 = $15,750. Total compensation: 15,750 ÷ 0.50 = $31,500.
+> Price: 31,500 ÷ 0.045 = **$700,000.**
 
-Documents connected with investment comparison and documentation must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Work backward one step at a time**, and identify at each step which quantity you have and which you need.
 
-### 6.6 Quantitative and factual analysis
+### 5.3 Net to seller
 
-Where investment comparison and documentation involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+> **A seller wants to net $600,000 after 5% compensation and $9,000 of closing costs. What must the price be?**
+>
+> The error is multiplying $600,000 by 1.05. The compensation is a percentage **of the price**, not of the net.
+>
+> Price − 0.05(Price) − 9,000 = 600,000
+> 0.95(Price) = 609,000
+> Price = 609,000 ÷ 0.95 = **$641,052.63**
+>
+> **Check:** 641,052.63 × 0.05 = 32,052.63. 641,052.63 − 32,052.63 − 9,000 = **$600,000.** ✓
 
-### 6.7 California law and professional boundary
+**The net-to-seller problem is the most reliably missed calculation in this material**, and it is missed the same way every time: applying the rate to the wrong base.
 
-California law controls the licensed activity associated with investment comparison and documentation; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 5.4 Prorations
 
-### 6.8 Consumer protection and fair access
+From Lesson 10, with the direction rule restated because it is what students reverse:
 
-Consumer protection requires that investment comparison and documentation be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+> **Seller prepaid beyond the boundary → seller credited, buyer debited.**
+> **Charge accrued or money held for the buyer's period → seller debited, buyer credited.**
 
-### 6.9 Applied scenario
+> **Annual taxes $7,300 paid through June 30; closing May 31; 365-day basis; day of closing to the buyer.**
+> Buyer's period: May 31 – June 30 = 31 days. 7,300 ÷ 365 = $20.00/day × 31 = **$620.00 credited to the seller.**
 
-Scenario: during taxation, investment, and real estate mathematics, the file raises a question about investment comparison and documentation. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+> **A tenant paid $2,400 rent on the 1st of a 30-day month; closing the 10th.**
+> Buyer's days: the 10th – 30th = 21. 2,400 ÷ 30 = $80/day × 21 = **$1,680.00 credited to the buyer.**
 
-### 6.10 Decision checklist
+**Read the convention rather than assuming it:** the day-count basis, who gets the day of closing, and the fact that California's property tax year does not align with the calendar year.
 
-Before treating investment comparison and documentation as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 5.5 Area and volume
+
+| Constant | Value |
+|---|---|
+| Acre | **43,560 sq ft** |
+| Mile | **5,280 ft** |
+| Section | 1 mile square = 640 acres |
+| Square yard | 9 sq ft |
+| Cubic yard | 27 cu ft |
+
+> **A 130 × 250 ft lot at $12,000 per acre.**
+> 130 × 250 = 32,500 sq ft ÷ 43,560 = 0.746 acres × 12,000 = **$8,957.**
+
+> **A 5-acre rectangular parcel with 400 ft of frontage — how deep?**
+> 5 × 43,560 = 217,800 ÷ 400 = **544.5 ft.**
+
+> **Concrete for a drive 60 ft × 12 ft × 4 in.**
+> 4 in = 0.333 ft. 60 × 12 × 0.333 = 240 cu ft ÷ 27 = **8.9 cubic yards.**
+
+### 5.6 Interest and loan calculations
+
+> **One month's interest on a $400,000 balance at 6%:** 400,000 × 0.06 ÷ 12 = **$2,000.**
+
+> **A payment of $2,398.20 on that balance:** interest $2,000.00, principal **$398.20**, new balance **$399,601.80.**
+
+> **Two points on a $400,000 loan:** 400,000 × 0.02 = **$8,000.** One point is one percent of the **loan**, not the price.
+
+> **A $920,000 purchase, 20% down, appraisal $900,000:** the lender lends against the lower of value or price. 900,000 × 0.80 = **$720,000**, a **$16,000** shortfall against the $736,000 planned.
+
+### 5.7 The three errors that produce most wrong answers
+
+1. **Applying a rate to the wrong base** — the net-to-seller error, and the same error whenever a percentage is taken of the result rather than the source.
+2. **Unit errors** — mixing feet and inches, confusing linear with square measure, dividing when multiplying by 43,560 was required.
+3. **Skipping the reasonableness check.**
+
+> **The reasonableness check catches nearly all of them.** A residential lot of 0.55 acres is plausible; 550 acres is not. A commission of $42,000 on an $840,000 sale is plausible; $420,000 is not. **Before reporting a number, ask whether it is the right order of magnitude.**
+
+### 5.8 Checkpoint
+
+You should be able to work a commission problem backward, compute net to seller correctly, prorate in both directions, and apply a reasonableness check.
+
+## 6. Investment comparison and documentation
+
+### 6.1 Comparing on a common basis
+
+Two properties cannot be compared until the numbers describe the same thing.
+
+**The recurring failures:**
+
+- One NOI includes reserves and the other does not.
+- One set of expenses is actual and the other is projected.
+- One property's income is at market rent and the other's is at in-place rent.
+- One analysis deducts debt service and the other does not.
+- Acquisition costs are counted as cash invested in one and omitted in the other.
+
+**A licensee's contribution is to normalize the presentation and state what was normalized** — not to declare a winner.
+
+### 6.2 A worked comparison
+
+> **Property A:** price $2,944,000; NOI $169,280; debt service $126,000; cash invested $796,000.
+> **Property B:** price $2,400,000; NOI $132,000; debt service $102,000; cash invested $660,000.
+
+| Measure | A | B |
+|---|---:|---:|
+| Cap rate | 169,280 ÷ 2,944,000 = **5.75%** | 132,000 ÷ 2,400,000 = **5.50%** |
+| Cash flow | 169,280 − 126,000 = **$43,280** | 132,000 − 102,000 = **$30,000** |
+| Cash-on-cash | 43,280 ÷ 796,000 = **5.44%** | 30,000 ÷ 660,000 = **4.55%** |
+| Debt coverage | 169,280 ÷ 126,000 = **1.34** | 132,000 ÷ 102,000 = **1.29** |
+
+**A leads on every measure computed — and that is not the answer.** The comparison is incomplete without: whether both NOIs include reserves on the same basis; whether both sets of income are actual or projected; the condition and deferred maintenance of each; the lease structure and tenant quality; the submarket's occupancy history against each property's break-even; the loan terms, including whether either has a balloon; and the exit assumptions.
+
+**A licensee who presents the table alone has presented four numbers as a decision.**
+
+### 6.3 What the client decides and what the licensee supplies
+
+The division is the same one that governs listing price and offer terms:
+
+> **The investment decision is the client's. The analysis, the data, its sources, and the risks are the licensee's obligation.**
+
+**The licensee supplies:** the operating data with its sources, the computed measures with their limitations stated, the risks identified, the questions to take to a tax professional and to counsel, and the written record of what was recommended.
+
+**The licensee does not supply:** a projection presented as fact, a required return, an allocation recommendation, a tax conclusion, or a prediction about rates or market direction.
+
+### 6.4 Verifying the data
+
+Investment analysis rests on operating figures, and the figures come from a seller with an interest in them.
+
+**What to verify and against what:**
+
+| Item | Source |
+|---|---|
+| Rents | Leases and a rent roll, not a summary |
+| Occupancy | Rent roll and payment history |
+| Operating expenses | Actual statements and bills, not a percentage estimate |
+| Property taxes | The assessor — and **reassessed on transfer**, not the seller's current bill |
+| Insurance | A quote for **this buyer**, especially in mapped hazard areas |
+| Deferred maintenance | Inspection, not the seller's characterization |
+| Utility responsibility | The leases |
+
+**The property tax line is the one most often carried forward wrongly.** A seller's pro forma using the seller's tax bill understates the buyer's expense, sometimes by a large multiple — and it flows straight through NOI into value.
+
+### 6.5 Documenting the analysis
+
+The test is the same one Lesson 12 applied to a valuation: **reconstructability.** Could a reviewer see what data was used, from what source, what assumptions were applied, and when?
+
+The file should contain:
+
+1. The operating data and **its source for each line**.
+2. What was actual and what was projected, distinguished.
+3. Every assumption in any projection, with its basis.
+4. The computed measures and their date.
+5. The risks identified and communicated.
+6. Referrals made to a tax professional, to counsel, and to specialists — with the client's response.
+7. The client's decision, and any instruction that departed from the advice.
+
+### 6.6 The recurring failure
+
+Not that a licensee computed something wrong. **That a licensee presented a seller's pro forma as though it were operating data**, and the client bought the assumptions.
+
+The discipline that prevents it is small and consistent: **label projections, source every figure, verify what can be verified, and state what could not be.**
+
+### 6.7 Checkpoint
+
+You should be able to normalize two properties for comparison, state what the table does not capture, and list what the file must show.
+
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Base year value** | The assessed value established generally on a change in ownership or new construction, with annual increases limited thereafter. |
+| **Reassessment on transfer** | Why **a buyer's property tax will not be the seller's**, and why two identical neighboring houses carry different bills. |
+| **Supplemental assessment** | The bill capturing the difference between old and new assessed value for the remainder of the tax year after a transfer or new construction. |
+| **Special assessment / Mello-Roos** | Levies beyond the general tax, funding improvements or district infrastructure and services. Inherited by the buyer. |
+| **Property tax lien** | Involuntary and specific, and **generally takes priority regardless of when it attached**. |
+| **Documentary transfer tax** | A county and sometimes city tax on conveyances, with some cities imposing substantial additional taxes. |
+| **Basis / adjusted basis** | Generally what was paid; adjusted upward by capital improvements and downward by depreciation taken. |
+| **Tax depreciation** | A deduction for **income-producing** property over a recovery period. Land is not depreciable, and this is a different concept from appraisal depreciation. |
+| **Depreciation recapture** | Depreciation previously taken may be treated differently on sale. |
+| **Principal residence exclusion** | An exclusion from gain subject to ownership, use, amount, and filing conditions. A referral, never a computation. |
+| **Like-kind exchange** | A deferral mechanism with strict identification and completion timing and a required intermediary. **The referral must happen before closing.** |
+| **Net operating income** | The property's performance — excluding debt service and depreciation, including reserves. |
+| **Before-tax cash flow** | NOI less annual debt service. **The investor's performance.** |
+| **Cash-on-cash return** | Before-tax cash flow ÷ cash invested. Ignores appreciation, principal reduction, and tax effects. |
+| **Debt coverage ratio** | NOI ÷ annual debt service. The cushion between income and the loan payment. |
+| **Operating expense ratio** | Operating expenses ÷ effective gross income. |
+| **Break-even occupancy** | (Operating expenses + debt service) ÷ potential gross income. Operating leverage in one number. |
+| **The four sources of return** | Cash flow, principal reduction, appreciation, and tax effects. An analysis quoting one is incomplete. |
+| **Leverage** | Borrowed funds used to increase return on invested capital. **Positive** where the property's return exceeds the cost of debt; **negative** where it does not. |
+| **Amplification of loss** | The other half of leverage: a 10% value decline costs 10% of an all-cash investor's capital and 40% of a 25%-equity investor's. |
+| **Liquidity risk** | Real estate cannot be sold quickly at a known price — traceable to immobility and uniqueness. |
+| **Concentration risk** | One property, one submarket, one tenant mix. |
+| **Pro forma** | A **projected** operating statement. Labeled as projected, with every assumption and its source stated, and never presented as operating data. |
+| **Part, whole, rate** | Part = Whole × Rate; Whole = Part ÷ Rate; Rate = Part ÷ Whole. |
+| **Net to seller** | Price − (rate × price) − costs = net. **The rate applies to the price, not to the net** — the most reliably missed calculation in the material. |
+| **The reasonableness check** | Asking whether an answer is the right order of magnitude before reporting it. |
+| **Normalization** | Restating two properties' figures on a common basis before comparing, and stating what was normalized. |
+
+## Practice problems
+
+### Problem 1
+
+A buyer asks what the property taxes will be. The seller has owned the house since 1998 and pays
+$4,200 a year. The listing agent tells the buyer "about $4,200," and adds that the planned kitchen
+remodel "won't affect your taxes." The property is in a Mello-Roos district.
+
+**Identify every error.**
+
+> **Solution.** **Three errors, and the first will be wrong by a multiple.**
+>
+> **A buyer's property tax will not be the seller's.** California establishes a **base year value**
+> generally on a change in ownership, with annual increases limited thereafter — which is exactly why
+> two identical neighboring houses carry very different bills. A property held since 1998 carries a base
+> year value from 1998, and this buyer's will be set on transfer.
+>
+> **The correct statement** quotes the seller's current bill **as the seller's**, explains that the
+> property will be reassessed on the change in ownership, and directs the buyer to the county assessor
+> and to a tax professional for an estimate.
+>
+> **The remodel answer is an assessor question he answered without authority.** New construction
+> generally triggers reassessment **of the new construction**, added to the existing base year value;
+> ordinary maintenance and repair generally do not — and the line between them is not the licensee's to
+> draw.
+>
+> **The Mello-Roos was never mentioned.** A community facilities district special tax can add
+> substantially to the annual obligation, continues for many years, carries its own disclosure
+> requirements, and is **inherited by the buyer.** The number a buyer should be looking at is the total
+> annual carrying cost, not the general rate.
+>
+> **And nobody told him about the supplemental assessment** — the bill capturing the difference between
+> old and new assessed value for the remainder of the tax year, which will arrive months after closing
+> for an amount nobody mentioned.
+
+### Problem 2
+
+A seller asks whether she will owe tax on her gain, whether she can "do a 1031" on the rental she is
+also selling, and whether the depreciation she has taken on the rental means it has lost value. Her
+agent says the gain is under the limit so she is fine, that they can set up the exchange after closing,
+and that depreciation means the building is worth less.
+
+**Correct each.**
+
+> **Solution.** **All three are wrong, and the second is the one that cannot be undone.**
+>
+> **The principal residence exclusion depends on ownership and use periods, prior use of the exclusion,
+> the amount of gain, and filing status.** "You're under the limit so you're fine" **computes a client's
+> tax** on facts the licensee does not hold, under rules that change.
+>
+> **A like-kind exchange generally cannot be arranged after the sale closes.** The identification and
+> completion deadlines are strict, the structure requires a **qualified intermediary**, and a mistake is
+> generally not fixable after the fact. **The referral must happen before closing** — which is why the
+> licensee's real job here is to identify early that she may want an exchange and get a tax professional
+> and intermediary involved **now**.
+>
+> **The two depreciations are entirely different concepts sharing a word.** Tax depreciation is a
+> **deduction** taken over a recovery period on income-producing property; appraisal depreciation is
+> **loss in value from any cause**. A property can be appreciating in value while being depreciated for
+> tax purposes — both true simultaneously. Her building has not lost value because she deducted
+> depreciation, and **recapture** means that depreciation may be treated differently on sale, which is a
+> further referral.
+>
+> **What the licensee says:** *"That's a tax question and I'm not able to advise on it — the rules
+> depend on facts I don't have and they change. What I can do is flag it now, while there's still time
+> to structure things, and get you to a tax professional before we go further."*
+
+### Problem 3
+
+Build the analysis: 12 units at $2,100 monthly, vacancy and collection 5%, operating expenses $118,000
+including reserves, annual debt service $126,000, price $2,944,000, cash invested $796,000.
+
+**Compute PGI, EGI, NOI, cash flow, cap rate, cash-on-cash, debt coverage, and break-even occupancy —
+then say what the last two tell the investor.**
+
+> **Solution.** PGI = 12 × 2,100 × 12 = **$302,400.**
+> Less vacancy 5% (15,120) → **EGI = $287,280.**
+> Less operating expenses → **NOI = $169,280.**
+> Less debt service → **Before-tax cash flow = $43,280.**
+>
+> **Cap rate:** 169,280 ÷ 2,944,000 = **5.75%.**
+> **Cash-on-cash:** 43,280 ÷ 796,000 = **5.44%.**
+> **Debt coverage:** 169,280 ÷ 126,000 = **1.34.**
+> **Break-even occupancy:** (118,000 + 126,000) ÷ 302,400 = **80.7%.**
+>
+> **NOI is the property; cash flow is the investor.** NOI excludes debt service precisely so two buyers
+> with different loans can compare the same property.
+>
+> **The debt coverage of 1.34** means NOI covers the payment 1.34 times. Lenders require a cushion above
+> 1.00 and the required level varies — **a lender question a licensee does not answer with a
+> threshold.**
+>
+> **The break-even of 80.7% is the operating leverage in one number.** Below about 81% occupancy the
+> property covers neither its expenses nor its loan. An investor in a submarket running 88% has a
+> seven-point cushion; one running 84% has three.
+>
+> **And cash-on-cash below the cap rate — 5.44% against 5.75% — signals negative leverage.**
+
+### Problem 4
+
+A $1,000,000 property produces $60,000 NOI. Compare: all cash; 75% financing at 5% interest-only; and
+75% financing at 7.5% interest-only. Then state what a 10% value decline costs the investor in the
+all-cash and 75%-financed cases.
+
+**Show the arithmetic and name the principle.**
+
+> **Solution.** **All cash:** 60,000 ÷ 1,000,000 = **6.0%.**
+>
+> **75% at 5%:** interest = 750,000 × 0.05 = $37,500. Cash flow = 60,000 − 37,500 = $22,500 on $250,000
+> = **9.0%. Positive leverage** — borrowing at 5% to earn 6% raised the equity return by three points.
+>
+> **75% at 7.5%:** interest = $56,250. Cash flow = 60,000 − 56,250 = $3,750 on $250,000 = **1.5%.
+> Negative leverage** — the same property, the same NOI, and a return well below the all-cash 6%.
+>
+> **The property did not change. The financing did**, and it moved the equity return from 9.0% to 1.5%.
+>
+> **On the downside:** a 10% decline costs the all-cash investor **10%** of his capital ($100,000 of
+> $1,000,000). It costs the leveraged investor **40%** of his ($100,000 of $250,000).
+>
+> **That is the whole risk of leverage in one sentence**, and it is why leverage is never presented as
+> free return.
+
+### Problem 5
+
+A seller wants to net $600,000 after 5% compensation and $9,000 of closing costs. A salesperson
+received $9,450, being 60% of her brokerage's share, which was half of a 4.5% total.
+
+**Compute the required price and the sale price, and name the error the first problem invites.**
+
+> **Solution.** **Net to seller.** The error is multiplying $600,000 by 1.05 — **the compensation is a
+> percentage of the price, not of the net.**
+>
+> Price − 0.05(Price) − 9,000 = 600,000
+> 0.95(Price) = 609,000
+> **Price = 609,000 ÷ 0.95 = $641,052.63**
+>
+> **Check:** 641,052.63 × 0.05 = 32,052.63; 641,052.63 − 32,052.63 − 9,000 = **$600,000.** ✓
+>
+> **The commission problem, worked backward one step at a time.** Brokerage share: 9,450 ÷ 0.60 =
+> $15,750. Total compensation: 15,750 ÷ 0.50 = $31,500. **Price: 31,500 ÷ 0.045 = $700,000.**
+>
+> **The net-to-seller problem is the most reliably missed calculation in this material**, and it is
+> missed the same way every time: **applying the rate to the wrong base.**
+
+### Problem 6
+
+Compute and state the direction: (a) annual taxes $7,300 paid through June 30, closing May 31,
+365-day basis, day of closing to the buyer; (b) a tenant's $2,400 rent paid on the 1st of a 30-day
+month, closing the 10th. Then compute (c) a 130 × 250 ft lot at $12,000 per acre and (d) concrete for
+a 60 × 12 ft drive 4 inches thick.
+
+**Answer, and name the three errors that produce most wrong results.**
+
+> **Solution.** (a) Buyer's period May 31 – June 30 = 31 days. 7,300 ÷ 365 = $20.00/day × 31 =
+> **$620.00 credited to the seller, debited to the buyer** — he reimburses her for the period she paid
+> and he owns.
+>
+> (b) Buyer's days the 10th – 30th = 21. 2,400 ÷ 30 = $80/day × 21 = **$1,680.00 credited to the buyer,
+> debited to the seller** — the opposite direction, because she holds money for his period.
+>
+> (c) 130 × 250 = 32,500 sq ft ÷ 43,560 = 0.746 acres × $12,000 = **$8,957.**
+>
+> (d) 4 in = **0.333 ft.** 60 × 12 × 0.333 = 240 cu ft ÷ 27 = **8.9 cubic yards.**
+>
+> **The three errors:** applying a rate to the wrong base (the net-to-seller error); **unit errors** —
+> mixing feet and inches, which in (d) would have produced 106 cubic yards, confusing linear with square
+> measure, or dividing where multiplying by 43,560 was required; and **skipping the reasonableness
+> check.**
+>
+> Also read the convention rather than assuming it: the day-count basis, who gets the day of closing,
+> and the fact that **California's property tax year does not align with the calendar year.**
+
+### Problem 7
+
+An investor is comparing two buildings. Property A: price $2,944,000, NOI $169,280, debt service
+$126,000, cash invested $796,000. Property B: price $2,400,000, NOI $132,000, debt service $102,000,
+cash invested $660,000. A leads on every computed measure, and the licensee recommends A.
+
+**Compute the table and state why the recommendation is premature.**
+
+> **Solution.** **Cap rate:** A 5.75%, B 5.50%. **Cash flow:** A $43,280, B $30,000. **Cash-on-cash:**
+> A 5.44%, B 4.55%. **Debt coverage:** A 1.34, B 1.29.
+>
+> **A leads on all four — and that is not the answer.**
+>
+> **The comparison is incomplete without:** whether both NOIs include reserves on the same basis;
+> whether both sets of income are **actual or projected**; whether both are at market rent or in-place
+> rent; condition and deferred maintenance; lease structure and tenant quality; each submarket's
+> occupancy history against each property's break-even; the loan terms including whether either carries
+> a **balloon**; and the exit assumptions.
+>
+> **A licensee who presents the table alone has presented four numbers as a decision.** The investment
+> decision is the client's; the analysis, the data, its sources, and the risks are the licensee's
+> obligation — along with normalizing the presentation and **stating what was normalized.**
+>
+> Note also what the measures themselves omit. Cash-on-cash ignores **appreciation, principal reduction,
+> and tax effects** — three of the four sources of return.
+
+### Problem 8
+
+A seller's marketing package shows an operating statement with 100% occupancy, market rents 8% above
+the current rent roll, expenses stated as "35% of gross," and the seller's current property tax bill.
+The buyer's agent forwards it with the comment "the numbers work."
+
+**Identify every defect and state the discipline that prevents this.**
+
+> **Solution.** **This is a pro forma presented as an operating statement**, which is a
+> misrepresentation whoever authored it — and forwarding it with "the numbers work" adopts it.
+>
+> **100% occupancy** is an assumption, not a figure. Actual occupancy comes from the rent roll and
+> payment history.
+>
+> **Rents 8% above the rent roll** are projected. Actual rents come from **the leases**, not a summary.
+>
+> **"35% of gross" is an estimate substituting for data.** Operating expenses come from actual
+> statements and bills.
+>
+> **The seller's property tax bill is the single most consequential error**, because the property will
+> be **reassessed on transfer.** Carrying the seller's bill forward understates the buyer's expense,
+> sometimes by a large multiple — and it flows straight through NOI into value.
+>
+> Two more to verify: **insurance quoted for this buyer**, especially in mapped hazard areas, and
+> **deferred maintenance from an inspection** rather than the seller's characterization.
+>
+> **The discipline:** label projections as projected, **source every figure**, verify what can be
+> verified, and state what could not be. Distinguish actual from projected on the same page — and record
+> the assumptions and their basis, the measures and their date, the risks communicated, the referrals
+> made, and the client's decision.
+>
+> **The recurring failure is not a computation error. It is presenting a seller's pro forma as operating
+> data**, and the client buying the assumptions.
+
+## Chapter summary
+
+**California taxes on a base year value system**, so a buyer's tax will not be the seller's, two
+identical neighbors pay differently, and a supplemental assessment follows the transfer. Quote the
+seller's bill as the seller's, and route the estimate to the assessor and a tax professional.
+
+**Special assessments and Mello-Roos are inherited**, and the number that matters is total annual
+carrying cost.
+
+**Every income and transfer tax topic is a referral.** Use the vocabulary accurately, recognize the
+issue, and **connect the referral to timing** — most tax opportunities close when the transaction does,
+and the like-kind exchange is the clearest case.
+
+**Tax depreciation and appraisal depreciation are different concepts sharing a word.**
+
+**NOI is the property; cash flow is the investor.** Cap rate, cash-on-cash, debt coverage, operating
+expense ratio, and break-even occupancy each measure something specific — and each has a limitation to
+state when quoting it.
+
+**Return comes from four places:** cash flow, principal reduction, appreciation, and tax effects.
+
+**Leverage works both directions.** Positive where the property's return exceeds the cost of debt,
+negative where it does not — and it amplifies losses in exactly the same proportion.
+
+**Name the risks**, including liquidity risk, which traces to immobility and uniqueness — and never
+state a suitable allocation.
+
+**A pro forma is a set of assumptions.** Label it, source every assumption, and never present it as
+operating data.
+
+**Part, whole, rate answers most transaction math.** Work commissions backward one step at a time, and
+compute net to seller by applying the rate to the price rather than the net.
+
+**Prorations run in two directions**, and the conventions change the answer.
+
+**Most wrong answers come from the wrong base, unit errors, and a skipped reasonableness check.**
+
+**Normalize before comparing, state what was normalized, and verify the data against leases,
+statements, the assessor, and an inspection.** The client decides; the licensee supplies the analysis,
+the sources, the risks, and the record.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. State what you would tell the client about property taxation and what you would route to the assessor and to a tax professional, identify every tax issue present and the deadline that makes each referral urgent, build the operating statement and compute each return measure with its limitation stated, demonstrate whether the financing produces positive or negative leverage, perform every transaction calculation the scenario requires showing your bases and units, identify each figure you would verify and against what source, state what you would decline to project or conclude, and list what the file must show for the analysis to be reconstructable. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
