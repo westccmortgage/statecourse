@@ -98,6 +98,7 @@ const rawMarkdown = [
 ];
 
 const paragraphCounts = new Map();
+const lessonStats = [];
 let totalParagraphs = 0;
 let totalWords = 0;
 
@@ -112,8 +113,10 @@ for (const lesson of lessons) {
   }
 
   for (const heading of html.matchAll(/<h[2-6][^>]*>(.*?)<\/h[2-6]>/g)) {
-    const plain = heading[1].replace(/<[^>]+>/g, "").trim();
+    const plain = heading[1].replace(/<[^>]+>/g, "").replace(/&#39;|&quot;|&amp;/g, (entity) => ({ "&#39;": "'", "&quot;": '"', "&amp;": "&" }[entity])).trim();
     if (plain && /^[a-z]/.test(plain)) report.typography.push(`${relative}: heading renders lowercase - "${plain}"`);
+    /* Title-casing must not capitalize the letter after an apostrophe: "Commissioner'S". */
+    if (/['\u2019][A-Z]/.test(plain)) report.typography.push(`${relative}: heading capitalizes after an apostrophe - "${plain}"`);
   }
   for (const paragraph of html.matchAll(/<p>(.*?)<\/p>/g)) {
     const plain = paragraph[1].replace(/<[^>]+>/g, "").trim();
@@ -121,7 +124,9 @@ for (const lesson of lessons) {
   }
 
   const topics = topicsFor(markdown, lesson.subject);
-  totalWords += markdown.split(/\s+/).filter(Boolean).length;
+  const lessonWords = markdown.split(/\s+/).filter(Boolean).length;
+  totalWords += lessonWords;
+  lessonStats.push({ course: lesson.courseId, id: lesson.assignmentId, words: lessonWords, templated: null });
   for (const line of markdown.split("\n")) {
     if (!isProse(line)) continue;
     const normalized = normalizeParagraph(line.trim(), topics);
@@ -129,6 +134,12 @@ for (const lesson of lessons) {
     totalParagraphs += 1;
   }
 }
+
+/* DRE's benchmark for a 45-hour statutory course is instructional material of a length
+   comparable to a college textbook - RE 303 puts that at roughly 450 pages per course.
+   Across 15 lesson assignments that is about 30 pages, or roughly 8,000 words, each.
+   The target is reported per lesson so the rebuild's progress is measurable. */
+const WORD_TARGET = 8000;
 
 /* 3: substance. Distinct paragraphs are the honest measure of how much was written;
    word count only measures how many times the template was stamped out. */
@@ -232,6 +243,9 @@ out.push(`  words across all lessons ....... ${report.substance.words.toLocaleSt
 out.push(`  body paragraphs ............... ${report.substance.paragraphs.toLocaleString("en-US")}`);
 out.push(`  distinct paragraphs ........... ${report.substance.distinctParagraphs}`);
 out.push(`  templated share ............... ${(report.substance.templatedShare * 100).toFixed(1)}%`);
+out.push(`  per-lesson word target ........ ${WORD_TARGET.toLocaleString("en-US")} (RE 303: ~450 pages per 45-hour course)`);
+const shortLessons = lessonStats.filter((lesson) => lesson.words < WORD_TARGET);
+out.push(`  lessons under target .......... ${shortLessons.length} of ${lessonStats.length}`);
 for (const template of report.substance.worstTemplates) out.push(`    ${String(template.count).padStart(3)}x  ${template.preview}...`);
 out.push("");
 out.push("Assessment integrity");

@@ -91,3 +91,12 @@ test("no two scored items share answer choices", () => {
 test("the correct answer is not always in the same position", () => {
   assert.match(report, /\[pass\] correct answers are spread across positions/);
 });
+
+test("heading title-casing does not capitalize after an apostrophe", () => {
+  const { renderMarkdown } = loadRenderer();
+  /* "the Commissioner's Regulations" must not render as "Commissioner'S", while a
+     hyphenated term must still capitalize both halves. */
+  const html = renderMarkdown("## Subtitle\n\n### the Commissioner's Regulations\n\n### fair-housing advertising\n\ntext");
+  assert.match(html, /Commissioner&#39;s Regulations/);
+  assert.match(html, /Fair-Housing Advertising/);
+});

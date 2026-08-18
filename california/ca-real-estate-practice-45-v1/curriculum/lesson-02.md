@@ -2,290 +2,291 @@
 
 ## Building a lawful real estate practice
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze business planning using verified facts, current authority, and a documented professional workflow.
-- Analyze prospecting and solicitation using verified facts, current authority, and a documented professional workflow.
-- Analyze advertising identification using verified facts, current authority, and a documented professional workflow.
-- Analyze antitrust and competition using verified facts, current authority, and a documented professional workflow.
-- Analyze privacy and information security using verified facts, current authority, and a documented professional workflow.
-- Analyze records and retention workflow using verified facts, current authority, and a documented professional workflow.
+- Construct a business plan in which growth targets are tied to the compliance work each transaction actually requires.
+- Apply solicitation restrictions to calling, texting, emailing, and door-to-door prospecting, and identify what consent each requires.
+- Evaluate advertising for licensee and brokerage identification, including team names and social media.
+- Recognize price fixing, group boycotts, and market allocation, and state the correct response when a competitor raises them.
+- Apply access, transmission, and disposal controls to consumer personal information, and identify the wire fraud pattern.
+- Design a records workflow that routes complete documentation into the brokerage's system and survives a licensee's departure.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: business planning and solicitation | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: advertising and antitrust | 50 | Sections 3-4 viewed |
+| Guided reading: information security and records | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. business planning
+## 1. Business planning
 
-### 1.1 Concept and purpose
+### 1.1 The problem with a volume target
 
-business planning is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Building a lawful real estate practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Most new licensees write a business plan that begins and ends with a number: transactions per quarter, gross commission income for the year. That number is not a plan. It is a wish with arithmetic attached, and it creates a specific hazard.
 
-### 1.2 Essential elements
+A transaction consumes a fixed quantity of work that cannot be compressed without cutting something. Intake and verification of authority. Disclosure preparation and delivery. Deadline tracking. Written confirmations. File assembly. When a licensee sets a target that exceeds their capacity to do that work, the target is still met — by skipping steps. The steps that get skipped are invisible until something goes wrong, which is precisely why they are the ones that get skipped.
 
-The essential elements of business planning are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A professional plan therefore works backward from capacity rather than forward from ambition:
 
-### 1.3 Roles and duties
+1. Estimate the hours a transaction of your type actually requires, **including the compliance work**, not just the client-facing time.
+2. Determine how many hours you can genuinely give to transactions after prospecting, administration, and continuing education.
+3. Divide. That is your capacity.
+4. If capacity is below your income requirement, the honest responses are to change your market, your price point, your efficiency, or your support — not to plan on doing less work per file.
 
-Responsibility for business planning may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 1.2 Choosing a brokerage as a compliance decision
 
-### 1.4 Workflow
+New licensees usually evaluate brokerages on commission split and brand. Those matter. They are not the whole question, because the brokerage you join determines the supervision you receive, and supervision is what protects you in your first two years when you do not yet know what you do not know.
 
-A defensible workflow for business planning starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Questions worth asking before signing:
 
-### 1.5 Documents and evidence
+- Who reviews my files, at what points, and what happens when something is missing?
+- What is the written policy set, and may I read it before I join?
+- What is the escalation path when I have a question I cannot answer?
+- Who approves advertising, and how long does approval take?
+- What training exists beyond the required licensing course?
+- What happens to my files and my pending transactions if I leave?
 
-Documents connected with business planning must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+A brokerage that cannot answer these is telling you something about the supervision you would receive.
 
-### 1.6 Quantitative and factual analysis
+### 1.3 Budgeting for the work nobody bills for
 
-Where business planning involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+A realistic plan carries line items that new licensees routinely omit:
 
-### 1.7 California law and professional boundary
+| Item | Why it belongs in the plan |
+|---|---|
+| Errors and omissions coverage | Terms and limits vary; the cost is real and the coverage is conditional on prompt notice |
+| Continuing education | Required for renewal, and the deadline arrives whether or not the business is good |
+| Records storage and security | Retention obligations run for years past closing |
+| Transaction management tools | The deadline tracking that prevents most disputes |
+| Time for corrections | Every practice generates errors; the plan should assume some |
 
-California law controls the licensed activity associated with business planning; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 1.4 What a defensible plan looks like
 
-### 1.8 Consumer protection and fair access
+Rather than "twelve transactions this quarter," a defensible plan reads: *twelve transactions this quarter requires roughly N client hours and M compliance hours; that is X hours per week against my available Y; the gap is closed by adding transaction coordination support at Z cost, which the plan funds from the projected income.*
 
-Consumer protection requires that business planning be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+That version can be evaluated, adjusted, and defended. The number by itself cannot.
 
-### 1.9 Applied scenario
+## 2. Prospecting and solicitation
 
-Scenario: during building a lawful real estate practice, the file raises a question about business planning. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 2.1 Prospecting is lawful; solicitation is regulated
 
-### 1.10 Decision checklist
+Building a client base by reaching out to people is a normal and necessary part of the business. The regulation sits on *how* you reach out, and the rules come from several directions at once: telephone solicitation restrictions, requirements for identifying yourself, consent requirements for text and email, and the general prohibition on misleading representations.
 
-Before treating business planning as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+A licensee who thinks of this as one topic — "am I allowed to contact this person?" — will get it wrong, because the answer differs by channel.
 
-## 2. prospecting and solicitation
+### 2.2 Telephone contact
 
-### 2.1 Concept and purpose
+Two obligations dominate.
 
-prospecting and solicitation is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Building a lawful real estate practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**Do-not-call restrictions.** Registries exist and must be respected. A licensee cannot rely on a lead vendor's assurance that a list is clean; the obligation is the caller's. Established business relationships and inquiries create defined, limited exceptions — and their limits matter, because an exception that has lapsed is not an exception.
 
-### 2.2 Essential elements
+**Identification.** A caller must identify who they are and on whose behalf they are calling. A licensee who opens with a question rather than an identification has already created a problem.
 
-The essential elements of prospecting and solicitation are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+#### Expired listings and unrepresented sellers
 
-### 2.3 Roles and duties
+Contacting owners whose listings recently expired, or who are selling without representation, is a standard prospecting approach and is not prohibited as such. What the licensee must confirm first is whether the number may lawfully be called, and what identification the call requires. "The listing expired, so they are fair game" is not an analysis of either question.
 
-Responsibility for prospecting and solicitation may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 2.3 Text and email
 
-### 2.4 Workflow
+Text messaging carries consent requirements that are stricter than most licensees assume, and the consent is defined by **what the consumer was actually told when the information was collected** — not by the fact that a number was written down.
 
-A defensible workflow for prospecting and solicitation starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+This is where open house sign-in sheets become a compliance question rather than a marketing one. If a visitor provides a phone number on a sheet that says nothing about future contact, that number has not been consented for a marketing text campaign. If the sheet says plainly what the visitor is agreeing to receive, it has.
 
-### 2.5 Documents and evidence
+Two further points:
 
-Documents connected with prospecting and solicitation must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+- An **opt-out mechanism is necessary but not sufficient.** Including "reply STOP" does not create the consent required to send the first message.
+- **Commercial email** carries its own requirements — accurate headers and subject lines, identification, a functioning opt-out, and honoring opt-outs promptly.
 
-### 2.6 Quantitative and factual analysis
+### 2.4 In-person and door-to-door
 
-Where prospecting and solicitation involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Local ordinances may regulate door-to-door solicitation, and some communities require permits. Common-interest developments frequently prohibit solicitation on the property entirely. A licensee working a neighborhood should know which rules apply before knocking, and should never represent that they are calling on behalf of a neighbor, an association, or any party who has not authorized it.
 
-### 2.7 California law and professional boundary
+### 2.5 The representation that must not be made
 
-California law controls the licensed activity associated with prospecting and solicitation; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+Across every channel, one category of statement is uniformly prohibited: a representation that creates a false impression of urgency, endorsement, or authority. "The neighbors asked me to reach out." "Values in this area are about to drop." "I have a buyer for your house" — when no such buyer exists. Each is a misrepresentation, and prospecting pressure is not a defense.
 
-### 2.8 Consumer protection and fair access
+### 2.6 Checkpoint
 
-Consumer protection requires that prospecting and solicitation be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+You should be able to state, for a phone call, a text, and an email, what makes the contact permissible and where the consent or exception comes from.
 
-### 2.9 Applied scenario
+## 3. Advertising identification
 
-Scenario: during building a lawful real estate practice, the file raises a question about prospecting and solicitation. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 3.1 Why identification is required
 
-### 2.10 Decision checklist
+A consumer looking at an advertisement needs to know two things that the property description does not tell them: who is responsible for this, and are they licensed. Identification requirements exist so a consumer can answer both, and so the supervising brokerage can be held accountable for what goes out under its name.
 
-Before treating prospecting and solicitation as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+That purpose explains the shape of the rules. California requires a licensee's identification — including license identification — to appear on solicitation materials, and requires that advertising identify the brokerage under which the licensee operates. A salesperson may not advertise in a way that presents them as an independent principal.
 
-## 3. advertising identification
+### 3.2 The most common defects
 
-### 3.1 Concept and purpose
+| Defect | Why it fails |
+|---|---|
+| Personal brand and mobile number, no brokerage named | The consumer cannot tell there is a supervising brokerage, or which one |
+| License identification omitted from solicitation material | The consumer cannot verify licensure |
+| Team name displayed more prominently than the brokerage, styled as a separate firm | Creates the impression of an independent company that is not licensed |
+| Social media property posts treated as personal expression | Promoting listings is advertising regardless of the platform |
+| Photographs no longer showing the property's condition | Truthfulness is measured against the property now, not when the photo was taken |
+| Photographs of a different, nicer unit | Misrepresents the unit actually offered, however similar the units are |
 
-advertising identification is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Building a lawful real estate practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 3.3 Team names
 
-### 3.2 Essential elements
+Teams are ordinary and useful. The compliance question is whether the team's presentation misleads a consumer about who the responsible brokerage is. A team identity that appears to be a separate company obscures accountability just as effectively as omitting the brokerage entirely, and the internal organizational chart is not the test — the impression created for a consumer is.
 
-The essential elements of advertising identification are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Practical guidance: the brokerage's identity should be present and legible wherever the team's identity appears, and the team's name should not use words suggesting it is itself a brokerage or an independent entity.
 
-### 3.3 Roles and duties
+### 3.4 Approval and archive
 
-Responsibility for advertising identification may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Two office controls make advertising compliance real rather than aspirational.
 
-### 3.4 Workflow
+**Pre-publication approval.** A named approver, a defined turnaround, and no exceptions. If approval is optional in practice, the brokerage cannot demonstrate control of its own advertising.
 
-A defensible workflow for advertising identification starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+**An archive.** What ran, when, on what platform, with what approval. An advertisement that cannot be produced cannot be reviewed — and a consumer complaint about an advertisement from eight months ago is exactly when the archive earns its cost.
 
-### 3.5 Documents and evidence
+### 3.5 Truthfulness beyond identification
 
-Documents connected with advertising identification must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Identification is necessary and not sufficient. An advertisement must also be accurate about the property, and accuracy is measured at the time it runs. Square footage should trace to a source and the source should be stated. Features described must exist. Photographs must represent the property as it is. "Priced below market" is an opinion presented as fact unless it can be supported.
 
-### 3.6 Quantitative and factual analysis
+## 4. Antitrust and competition
 
-Where advertising identification involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 4.1 Why this is the most serious topic in the lesson
 
-### 3.7 California law and professional boundary
+Most compliance failures in real estate produce a fine, a correction, or discipline. Antitrust violations can produce criminal exposure and very large civil liability, and they attach to conduct that feels social rather than commercial — a conversation at a lunch, a comment at an association meeting, a thread in a group chat.
 
-California law controls the licensed activity associated with advertising identification; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+The core principle is short: **each brokerage sets its own prices and chooses its own business partners independently.** Anything that looks like coordination among competitors on those decisions is dangerous.
 
-### 3.8 Consumer protection and fair access
+### 4.2 The four patterns to recognize
 
-Consumer protection requires that advertising identification be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+1. **Price fixing** — an agreement among competitors on what to charge, on a minimum, on a "customary" rate that everyone will observe, or even on future pricing intentions. Commission rates are negotiable between a brokerage and its client, and always have been. A licensee who tells a seller that a rate is "standard," "set by the MLS," or "what everyone charges" has both misstated the law and edged toward the violation.
 
-### 3.9 Applied scenario
+2. **Group boycotts** — an agreement among competitors to refuse to deal with a particular brokerage, typically one competing on price or on a different model. "We shouldn't show their listings" is the sentence to recognize.
 
-Scenario: during building a lawful real estate practice, the file raises a question about advertising identification. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+3. **Market allocation** — an agreement among competitors to divide territories, property types, or customer segments so as not to compete for them.
 
-### 3.10 Decision checklist
+4. **Tying** — conditioning the availability of one service on the customer's purchase of another.
 
-Before treating advertising identification as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.3 Agreements do not require documents
 
-## 4. antitrust and competition
+The single most dangerous misconception is that an agreement requires something signed, or explicit. It does not. Agreement can be inferred from conduct, from parallel behavior following a discussion, and from the exchange of information about future pricing intentions.
 
-### 4.1 Concept and purpose
+This is why simply *listening* is a risk. If competitors at a table discuss coordinating rates and you stay, your presence can be treated as participation.
 
-antitrust and competition is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Building a lawful real estate practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+#### The required response
 
-### 4.2 Essential elements
+> **Leave the conversation immediately and visibly. Say why. Report it to your broker.**
+>
+> Not "change the subject." Not "stay and say nothing." Leaving is what creates the record that you did not participate, and reporting it is what protects both you and the brokerage.
 
-The essential elements of antitrust and competition are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 4.4 What is lawful
 
-### 4.3 Roles and duties
+The rules do not prohibit competition or discussion of the industry. A brokerage may set whatever rates it chooses, may change them, may advertise them, and may decide independently which brokerages it prefers to work with and why. Licensees may discuss market conditions, inventory, and general practice. The line is coordination with competitors on price or on refusing to deal.
 
-Responsibility for antitrust and competition may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 4.5 What to tell a seller about compensation
 
-### 4.4 Workflow
+When a seller asks why the compensation is stated as a negotiated figure:
 
-A defensible workflow for antitrust and competition starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+> "Compensation is negotiable between you and our brokerage. There is no standard rate and no rate set by any association or listing service. Here is what our brokerage charges and what it covers."
 
-### 4.5 Documents and evidence
+That answer is accurate, it is the law, and it forecloses the follow-up question that a wrong answer invites.
 
-Documents connected with antitrust and competition must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+## 5. Privacy and information security
 
-### 4.6 Quantitative and factual analysis
+### 5.1 What a transaction file actually contains
 
-Where antitrust and competition involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+A residential transaction file holds identification documents, Social Security numbers, bank statements, tax returns, employment records, and the address where a family now lives. Collectively that is enough to open credit in someone's name. Real estate licensees hold this material routinely and often think of it as paperwork rather than as sensitive data.
 
-### 4.7 California law and professional boundary
+Three controls carry most of the protection.
 
-California law controls the licensed activity associated with antitrust and competition; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**Access.** Limit file access to the people who need it for the work. Office-wide access to every file "in case someone needs to cover" is convenient and indefensible.
 
-### 4.8 Consumer protection and fair access
+**Transmission.** Protected channels for documents containing personal information. Ordinary email is not a protected channel, and "please delete this after you use it" is not a control.
 
-Consumer protection requires that antitrust and competition be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**Disposal.** Destroy documents so the data cannot be reconstructed. A recycling bin is not disposal. This applies to electronic media as well as paper.
 
-### 4.9 Applied scenario
+### 5.2 Wire fraud
 
-Scenario: during building a lawful real estate practice, the file raises a question about antitrust and competition. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+This is the single most damaging fraud pattern in residential real estate, and it is worth learning as a specific sequence rather than as general caution.
 
-### 4.10 Decision checklist
+**How it works.** An attacker gains access to an email account somewhere in the transaction — the licensee's, the escrow officer's, sometimes the consumer's. They watch quietly, learn the closing date and the amounts, then send wire instructions that look exactly like the real ones from an address one character different from the genuine one, usually timed to arrive when the consumer is expecting them.
 
-Before treating antitrust and competition as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**Why it succeeds.** The instructions arrive in the right thread, at the right time, with the right names and figures. Nothing about the content is wrong. Only the account details and one character of the sender address differ.
 
-## 5. privacy and information security
+**What defeats it.** Verification through a channel the attacker does not control:
 
-### 5.1 Concept and purpose
+1. Call the settlement agent at a number you obtained independently — from the engagement documents or the company's published listing — **never** from the email itself.
+2. Verify the account details by voice before any funds move.
+3. Warn every consumer in writing, early, that wire instructions will never be changed by email and that they must call to verify.
 
-privacy and information security is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Building a lawful real estate practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**What does not defeat it.** Replying to the email to ask for confirmation — the attacker receives the reply. Encryption — the message is genuine-looking, not intercepted. A small test wire — it confirms nothing about who controls the account.
 
-### 5.2 Essential elements
+### 5.3 When something goes wrong
 
-The essential elements of privacy and information security are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+If a device is lost, an account is compromised, or a document is misdirected, the questions that determine severity are: what data was exposed, was it protected, and who could read it. Insurance addresses the hardware; procedure addresses fault; neither tells the brokerage what was actually at risk.
 
-### 5.3 Roles and duties
+Report immediately to the broker. Preserve the evidence. Do not attempt to quietly assess it alone — breach obligations can carry notification requirements with timelines, and the clock does not wait for an internal decision.
 
-Responsibility for privacy and information security may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 5.4 Checkpoint
 
-### 5.4 Workflow
+You should be able to describe the wire fraud sequence and name the one verification step that defeats it, and explain why replying to the suspicious email does not.
 
-A defensible workflow for privacy and information security starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+## 6. Records and retention workflow
 
-### 5.5 Documents and evidence
+### 6.1 The records belong to the brokerage
 
-Documents connected with privacy and information security must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+A licensee generates documents, but the transaction records are the brokerage's, and the broker is answerable for them. That single fact resolves most questions in this section.
 
-### 5.6 Quantitative and factual analysis
+The licensee's obligation is therefore not to *keep* the record but to **route complete documentation into the brokerage's system**, promptly, in the form the office requires. A personal folder, a phone's photo library, and a personal email account are not the record. They are copies, and a file that exists only in them is a file the brokerage cannot produce.
 
-Where privacy and information security involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 6.2 What the workflow must produce
 
-### 5.7 California law and professional boundary
+A working records process delivers four things:
 
-California law controls the licensed activity associated with privacy and information security; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+1. **Completeness** — every required document, including for transactions that did not close. Failed and cancelled transactions are disproportionately the ones that later produce disputes.
+2. **Dates and delivery evidence** — not just signatures.
+3. **Retention** — for the required period, which runs from closing rather than from when the file stopped being interesting.
+4. **Retrievability** — a file that cannot be found within a reasonable time is functionally not retained.
 
-### 5.8 Consumer protection and fair access
+### 6.3 Retention length and the temptation to shorten it
 
-Consumer protection requires that privacy and information security be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Retention obligations run for years. Storage costs money, and the temptation to purge early is real and recurring.
 
-### 5.9 Applied scenario
+Two points settle it. First, the obligation runs to the regulator, so neither the client's consent, nor payoff of a loan, nor the absence of any dispute authorizes early destruction. Second, if office policy sets a longer period than the legal minimum, the policy governs the licensee's conduct — and changing it is a deliberate policy decision that starts with confirming the current requirement, not an individual judgment call made at a filing cabinet.
 
-Scenario: during building a lawful real estate practice, the file raises a question about privacy and information security. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 6.4 Departure
 
-### 5.10 Decision checklist
+When a licensee leaves a brokerage, three things must be settled and should have been settled in writing long before:
 
-Before treating privacy and information security as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+- **The files stay.** They are the brokerage's records. What the departing licensee may take in copy form is governed by office policy and by client direction.
+- **The clients choose.** Representation agreements are between the client and the brokerage; where a client goes is the client's decision, made with accurate information about their options.
+- **Pending transactions need a named owner.** A transaction mid-escrow with an unclear responsible licensee is where deadlines are missed.
 
-## 6. records and retention workflow
+### 6.5 The audit habit
 
-### 6.1 Concept and purpose
+The most useful records practice is a short review at two points: when a transaction closes, and periodically across open files.
 
-records and retention workflow is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Building a lawful real estate practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+At closing, confirm that every required document is present, dated, and evidenced; that the documents reconcile; and that the chronology makes sense against the contract's deadlines. Across open files, confirm that upcoming deadlines are tracked and that nothing is sitting unrouted in a licensee's personal storage.
 
-### 6.2 Essential elements
+Findings are recorded and corrected honestly. A gap noted in the file is survivable. A gap filled in afterward with a backdated document is falsification, and it converts a compliance problem into conduct that ends a career.
 
-The essential elements of records and retention workflow are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 6.6 Checkpoint
 
-### 6.3 Roles and duties
-
-Responsibility for records and retention workflow may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
-
-### 6.4 Workflow
-
-A defensible workflow for records and retention workflow starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with records and retention workflow must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where records and retention workflow involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with records and retention workflow; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that records and retention workflow be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during building a lawful real estate practice, the file raises a question about records and retention workflow. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating records and retention workflow as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to explain who owns transaction records and why, what a departing licensee may and may not take, and why cancelled transactions matter as much as closed ones.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify the issue, the category of controlling source, the facts that remain unverified, the parties affected, the action required, the applicable deadline, the communication you would send, the escalation if any, and the evidence you would retain. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.

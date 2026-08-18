@@ -7,7 +7,7 @@ function sentenceCase(text){return String(text??"").replace(/[A-Za-z]/,(letter)=
 function titleCaseHeading(text){
   const minor=new Set(["a","an","and","as","at","but","by","for","from","in","into","nor","of","on","or","over","per","the","to","via","with"]),known=new Map([["dre","DRE"],["mls","MLS"],["hoa","HOA"],["fha","FHA"],["va","VA"],["apr","APR"],["tila","TILA"],["respa","RESPA"],["cfpb","CFPB"]]);
   const source=String(text??""),words=source.match(/[A-Za-z][A-Za-z'’-]*/g)||[];let index=0;
-  return source.replace(/[A-Za-z][A-Za-z'’-]*/g,(word)=>{const lower=word.toLowerCase(),position=index++;if(known.has(lower))return known.get(lower);if(/^[A-Z0-9]{2,}$/.test(word))return word;if(position>0&&position<words.length-1&&minor.has(lower))return lower;return lower.replace(/(^|[-'’])([a-z])/g,(_,prefix,letter)=>prefix+letter.toUpperCase());});
+  return source.replace(/[A-Za-z][A-Za-z'’-]*/g,(word)=>{const lower=word.toLowerCase(),position=index++;if(known.has(lower))return known.get(lower);if(/^[A-Z0-9]{2,}$/.test(word))return word;if(position>0&&position<words.length-1&&minor.has(lower))return lower;return lower.replace(/(^|-)([a-z])/g,(_,prefix,letter)=>prefix+letter.toUpperCase());});
 }
 function inline(text){
   const code=[];
