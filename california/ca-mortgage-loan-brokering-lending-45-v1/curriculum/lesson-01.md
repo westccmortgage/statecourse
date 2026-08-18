@@ -379,7 +379,27 @@ In a mortgage file, nearly every question a regulator or a borrower asks is answ
 
 That test governs the rest of this course.
 
-### 6.8 Checkpoint
+### 6.8 A worked regulatory boundary problem
+
+> **A DRE-licensed real estate broker operating a mortgage brokerage is presented with six proposed activities in one week.** For each, the questions are the ones this lesson has been building: **what authority does it require, whose framework governs, and who supervises it?**
+>
+> **1. Arranging a residential purchase loan for a consumer with third-party lenders.** Within the broker's mortgage authority, and Section 2's endorsement requirement attaches to the individual performing the activity. **Ordinary, and the file is built accordingly.**
+>
+> **2. Making a loan with the brokerage's own funds.** A different capacity — principal rather than agent — with different disclosure consequences and a different analysis under Section 3's regulator boundaries. **The characterization is not the brokerage's to choose after the fact; it follows from what actually happened.**
+>
+> **3. Soliciting private individuals to fund loans the brokerage arranges.** This engages frameworks beyond the ones governing the borrower side, and **the question of what may be offered, to whom, and with what disclosure is not answered by holding a real estate broker license.** Route to counsel before anything is offered.
+>
+> **4. An unlicensed assistant taking applications by telephone "just to gather the information."** Section 4's boundary. **Taking a residential mortgage loan application is the activity the endorsement framework exists for**, and calling it information gathering does not change what occurred. **The correct answer is that it does not happen.**
+>
+> **5. A referral arrangement with a real estate brokerage that sends borrowers, paid per closed loan.** Two separate questions, and Section 3's boundaries do not answer both. **Whether the payment is permissible at all comes first; whether it is disclosed comes second**, and disclosure does not cure a prohibited payment. Route it.
+>
+> **6. Servicing the loans the brokerage arranged.** A different activity with its own framework, and **whether the brokerage's existing authority reaches it is a question with an answer** — obtained before the first payment is collected rather than after.
+>
+> **What the week demonstrates.** Four of the six require an authority determination before anything happens, **and none of the four is obvious from the activity's description.** A brokerage that answers these by analogy to what it already does will be wrong on at least one.
+>
+> **The operating rule this lesson produces:** **before a new activity begins, name the authority that permits it and the person who supervises it.** Where either answer is "I assume so," the activity does not start. Section 5's supervision requirement and Section 4's licensing boundary are the same question asked from two directions, and **the cost of asking is a phone call; the cost of not asking is Section 6.2's list.**
+
+### 6.9 Checkpoint
 
 You should be able to name the enforcement categories, state the correct response to regulator contact and to a borrower complaint, and explain the line between a documented gap and a falsified record.
 

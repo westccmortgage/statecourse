@@ -489,7 +489,23 @@ Not that a licensee computed something wrong. **That a licensee presented a sell
 
 The discipline that prevents it is small and consistent: **label projections, source every figure, verify what can be verified, and state what could not be.**
 
-### 6.7 Checkpoint
+### 6.7 Why the comparison is the deliverable
+
+Sections 6.1 through 6.6 describe how to compare investments and what the file must hold. The point worth ending on is why the comparison — rather than the recommendation — is what a licensee actually delivers.
+
+**Three reasons.**
+
+**The decision is the client's, and it depends on facts the licensee does not have.** Tax position, other holdings, risk tolerance, liquidity needs, and time horizon are the inputs that decide between two properties with similar returns. **A licensee who recommends has substituted assumptions about those inputs for the client's actual answers.**
+
+**A recommendation cannot be checked; a comparison can.** Section 6.5's documentation requirement exists so that a client — or anyone later — can see the inputs, the arithmetic, and the assumptions. **A client who disagrees with an assumption can say so and the analysis is rebuilt.** A client who disagrees with a recommendation has only the licensee's judgment to argue with.
+
+**The comparison survives being wrong.** Projections are wrong routinely — vacancy, expenses, and appreciation all move. **An analysis whose assumptions are on the page is defensible when the outcome disappoints**, because the reader can see what was assumed and that the assumption was reasonable when made. **A number with no assumptions attached is indefensible the moment it is off.**
+
+> **The one thing that must never appear in an investment analysis:** a projected appreciation rate presented as an expectation rather than as an assumption being tested. Section 6.4's verification requirement covers the inputs that are knowable. **Future value is not one of them**, and the sentence "these have been going up about six percent a year" is a prediction stated as a plan.
+
+**Section 6.6's recurring failure, restated:** the analysis that was performed carefully, delivered verbally, and never written down. **The client made a good decision on good information, and the file cannot say so** — which is the same finding this course reaches in agency, in disclosure, in valuation, and in escrow, and it is the finding that is entirely within the licensee's control.
+
+### 6.8 Checkpoint
 
 You should be able to normalize two properties for comparison, state what the table does not capture, and list what the file must show.
 

@@ -438,7 +438,31 @@ A fair housing action plan written at the end of a course and never opened again
 
 **And the reflection this component asks for is not a summary of the course.** It is a specific answer to a specific question: **which of your own current practices did this lesson identify as unstructured, and what will replace it?** A reflection that names no practice of your own has answered a different question.
 
-### 6.7 Checkpoint
+### 6.7 What the practicum is for
+
+This lesson has asked you to take a consumer's position, take a licensee's position, receive structured feedback, revise, and write a plan. **The reason it is built that way rather than as a set of rules is worth stating plainly at the end.**
+
+**The rules are easy and they are not the difficulty.** Almost no licensee, asked in a classroom whether he may steer a buyer on a protected basis, gets the answer wrong. **The violations that occur are not produced by ignorance of the rule.**
+
+**They are produced by three things this course can only address through practice:**
+
+**Speed.** Section 1.2's point about implicit bias is that it operates fastest under time pressure and cognitive load — which describes a working licensee's ordinary day. **A structural control operates at that speed; a good intention does not.**
+
+**Social difficulty.** The comment in the room, the client's remark in the car, the manager's instruction. Section 3.4's scripts exist because **the gap between knowing what to say and having said it is the entire distance**, and it is closed by having said it before rather than by understanding why it matters.
+
+**Invisibility.** Section 1.5's stage-by-stage map shows that most of what produces unequal service is distribution — information, effort, follow-up — rather than refusal. **A person cannot detect his own distribution from inside it.** Section 3.6's measurements exist because the only way to see it is to count.
+
+**What you should be able to do, having finished this component:**
+
+1. **Name the stage of a transaction where a given risk lives**, rather than treating fair housing as a topic that applies generally.
+2. **Say the sentence** — to a client, a colleague, an owner, or a manager — without rehearsing it first.
+3. **Answer a neighborhood question from the scripts** rather than from instinct, including when the question is friendly and the answer would have been complimentary.
+4. **Run a measurement on your own practice** and read the result without explaining it away.
+5. **Point to a structural control you installed**, not an intention you formed.
+
+> **The single most useful thing to carry out of this lesson.** Every control in it works whether or not you are thinking about bias on a given day — **and the day you are not thinking about it is the day it operates.** That is not a statement about anyone's character. It is the reason the profession's answer is structure rather than sincerity, and it is why the action plan in Section 6.2 asks for practices rather than commitments.
+
+### 6.8 Checkpoint
 
 You should be able to state why structure outperforms effort, produce the words you would use to decline a neighborhood-composition question, and write a plan element that someone else could verify you performed.
 

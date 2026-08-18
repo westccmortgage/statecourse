@@ -397,7 +397,29 @@ Nothing in this section authorizes a licensee to advise on remedies. What a brok
 
 > **A defect surfaced at intake is a condition. The same defect surfaced after funding is a loss.**
 
-### 6.9 Checkpoint
+### 6.9 What the security instrument means to the borrower in front of you
+
+This lesson has treated the deed of trust structurally. **Borrowers experience it as a set of consequences**, and a broker who can state those plainly is doing the part of the job the documents do not do.
+
+**What the borrower is actually agreeing to:**
+
+1. **He is conveying an interest as security**, and Section 1 explains the mechanism. **He keeps possession and use, and he remains the owner for practical purposes** — which is the reassurance most borrowers need and rarely receive.
+2. **The obligation is the note; the deed of trust is what secures it.** Section 3 separates them, and the separation matters: **the note is what he owes, and the instrument is what happens if he does not pay it.**
+3. **Priority is determined by the recording system**, Section 4, which is why the order of recording is not a clerical matter and why a subordination — Section 5 — changes his position materially.
+4. **A default has a defined sequence**, Section 6.3, with defined opportunities that depend on where in the sequence he is. **Reinstatement and redemption are different things with different amounts**, and the difference is the single most consequential thing a borrower in trouble does not know.
+5. **Reconveyance is not automatic in the sense he assumes.** Section 5's mechanism should occur; **whether it did is a question with a record**, and a borrower who paid off a loan years ago and never confirmed may discover the problem at his next transaction.
+
+**Three questions to answer before he signs, whether or not he asks:**
+
+- **"What happens if I miss a payment?"** The sequence, stated accurately, without prediction about what a servicer will do.
+- **"What if I want to pay it off early?"** Whether a prepayment provision applies, and what the instrument requires on payoff.
+- **"What if I want a second loan later?"** Priority, and what a lender in second position is agreeing to.
+
+> **The professional boundary holds throughout.** Section 6.8's point governs: **the broker explains how the instruments work; the legal effect on this borrower's rights, in his circumstances, is counsel's.** A broker who explains reinstatement as a concept is doing his job. **A broker who tells a delinquent borrower what he can do about his particular default is not.**
+
+**And the reason this belongs at the end of a security-instrument lesson.** Every concept in Sections 1 through 5 exists in a document the borrower will sign without reading. **The broker is the only participant with both the knowledge to explain it and a reason to be in the room** — and Lesson 13's finding, that most servicing complaints are origination failures arriving late, begins with the explanation that was never given.
+
+### 6.10 Checkpoint
 
 You should be able to compare the foreclosure paths, explain the reinstatement window, state what happens to junior liens, and name the security risks a broker should surface.
 

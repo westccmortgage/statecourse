@@ -471,7 +471,33 @@ A number given to a borrower should carry the assumptions it rests on: the loan 
 
 > **A quote without its assumptions is not information. It is a number the borrower will hold you to.**
 
-### 6.9 Checkpoint
+### 6.9 Reading a payment quote critically
+
+Borrowers are quoted payments constantly, and the quoted figure is frequently not the figure they will pay. **A broker who can take a quote apart protects the borrower from a surprise and protects himself from having repeated a number he did not verify.**
+
+**What a quoted "payment" may or may not include:**
+
+| Component | Frequently omitted from a quick quote |
+|---|---|
+| **Principal and interest** | Always included — this is usually the whole quote |
+| **Property taxes** | Often omitted, and Section 6.3's PITI is the reason it matters |
+| **Hazard insurance** | Often omitted, and in some California markets it is now the largest surprise |
+| **Mortgage insurance** | Omitted whenever the quote assumes a down payment the borrower is not making |
+| **Association dues** | Not part of the loan payment and entirely part of the borrower's obligation |
+| **Flood or other required coverage** | Omitted until a determination is made |
+| **Special assessments** | Rarely surfaced before closing |
+
+**Three checks a broker performs on any quote before repeating it:**
+
+1. **Does the payment reconcile to the rate, term, and loan amount?** Section 6.1's factor method answers this in seconds, and **a payment that does not reconcile means one of the four inputs is not what was stated.**
+2. **What down payment does it assume?** A quote built on twenty percent is not a quote for a borrower bringing ten, and the difference is not only the loan amount.
+3. **What is the escrow assumption?** A quote excluding an escrowed item is a quote for a payment the borrower will not make.
+
+**And the disclosure that resolves all of it:** Section 6.8's requirement that **every figure carries its basis.** A payment stated with its rate, term, amount, down payment, and what it includes is a professional statement. **The same number without those five is a figure the borrower will hold the broker to.**
+
+> **The failure this prevents.** A borrower quoted a payment early, who budgeted against it, and who sees a materially higher figure on his disclosures. **Nothing was misrepresented on purpose** — the quote assumed a different down payment and excluded taxes and insurance — and the borrower experiences it as having been misled, which for every practical purpose is the outcome that matters.
+
+### 6.10 Checkpoint
 
 You should be able to compute a payment from a factor and work backward, build a PITI figure, compute both ratios without stating thresholds, and compute yield at a discount and a premium.
 

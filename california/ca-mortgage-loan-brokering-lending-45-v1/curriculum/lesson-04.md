@@ -434,7 +434,37 @@ Not that a licensee computed something wrong. **That a licensee presented the pr
 
 If a comparison in the file cannot be reproduced from the figures it contains, it is not a record of advice. It is a marketing document that happens to be in a loan file.
 
-### 6.8 Checkpoint
+### 6.8 A worked product presentation
+
+> **The borrower.** Purchasing a primary residence at 720,000 with fifteen percent down. Employed on salary for nine years, stable. Two children, ages 4 and 7. He says he expects to stay "probably forever, but who knows." Reserves after closing: about four months of expenses. He mentions his brother-in-law told him adjustable loans are "how you actually save money."
+>
+> **Three structures are available**, and Section 6.2's standard requires all three on a common basis.
+>
+> **What is held constant:** the same loan amount, the same assumed closing date, the same horizon for total cost, and the same treatment of costs paid versus financed.
+>
+> **What is shown for each:** rate, payment, **worst-case payment where the payment can change**, mortgage insurance where the down payment triggers it, total cost over the stated horizon, and every feature that changes the obligation.
+>
+> **The plain-language explanations Section 6.3 requires, each with its number:**
+>
+> **On the fixed structure:** the payment does not change; the mortgage insurance applies and here is what ends it and when.
+>
+> **On the adjustable structure:** the rate is fixed for the initial period and then can change on a schedule, by a limited amount each time, to a stated maximum — **and at that maximum the payment is this figure**, which is the number the presentation exists to convey.
+>
+> **On the balloon structure:** the payment is based on a longer schedule and the entire remaining balance is due on a date. **The borrower must repay, refinance, or sell by then, and none of those is guaranteed to be available.**
+>
+> **The suitability facts, from Section 6.4, and what they indicate.**
+>
+> **"Probably forever, but who knows."** The most common answer, and the least useful as stated. **The follow-up is what makes it useful:** what would cause you to move? A job change, a school change, a family need. **A borrower with two young children and a nine-year employment history is not a short-horizon borrower**, which weighs against paying for a rate that is fixed for a period shorter than his likely holding period.
+>
+> **Four months of reserves.** Thin against a payment that can rise. **This is a fact about payment-shock tolerance, and it is not a function of income size.**
+>
+> **The brother-in-law.** Not a reason for anything, and **not a thing to argue with either.** The response is the presentation: here is what the adjustable does under its worst case, here is what the fixed costs to avoid that, and the decision is yours.
+>
+> **What the broker does not do.** Recommend a product, tell the borrower the adjustable is "safe because you'll refinance," present the initial payment as the payment, or characterize the fixed structure as expensive without showing what it buys. **Section 6.1's boundary is that the conclusion is the borrower's**, and Section 6.5's recurring failure is the presentation that made it for him.
+>
+> **What the file shows afterward**, per Section 6.6: the three structures on a common basis with worst cases, the explanations given, the suitability questions asked and answered, and the borrower's selection with its date. **Section 6.7's test applied: could a reviewer reconstruct the presentation without the broker present?**
+
+### 6.9 Checkpoint
 
 You should be able to present two products on a common basis, list the features requiring plain-language explanation, and state what the file must show.
 
