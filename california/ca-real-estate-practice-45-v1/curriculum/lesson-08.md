@@ -140,11 +140,7 @@ Electronic signature is ordinary in California residential practice. Two points 
 1. **Delivery still has to happen and still has to be evidenced.** An executed document in a signing platform that no one delivered has not been delivered, and the platform's audit trail is frequently the best evidence of when it was.
 2. **The contract's own notice provisions govern** what constitutes delivery for a notice that carries legal effect. Delivery by a method the contract does not authorize may not count.
 
-### 2.6 Checkpoint
-
-You should be able to take a sequence of signed documents and say at which point, if any, a contract was formed and on whose terms.
-
-### 2.7 A worked formation problem
+### 2.6 A worked formation problem
 
 > **The sequence.**
 >
@@ -176,6 +172,10 @@ You should be able to take a sequence of signed documents and say at which point
 > **Do not present the second offer to the seller as though the first sequence had not happened**, and do not accept it, until the brokerage knows where it stands.
 >
 > **The preventable failure is not the mistake. It is the automation.** A scheduled transmission of a document whose authorization can change is a system that acts without a person, and the first thing the broker should change is that documents go out when someone sends them.
+
+### 2.7 Checkpoint
+
+You should be able to take a sequence of signed documents and say at which point, if any, a contract was formed and on whose terms.
 
 ## 3. Counteroffers and multiple offers
 

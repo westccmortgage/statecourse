@@ -430,11 +430,7 @@ A file left to be completed later is completed from memory, by someone who has s
 
 > **The obtainable-now test:** for every gap, ask whether the document can still be obtained from the party who holds it. The answer is usually yes in week one and usually no in year two, and that difference is the entire argument for the routine.
 
-### 6.7 Checkpoint
-
-You should be able to explain who owns transaction records and why, what a departing licensee may and may not take, and why cancelled transactions matter as much as closed ones.
-
-### 6.8 A worked close-out
+### 6.7 A worked close-out
 
 > **A transaction closed eleven days ago.** The licensee opens the file for the close-out routine and finds:
 >
@@ -463,6 +459,10 @@ You should be able to explain who owns transaction records and why, what a depar
 > **The written result** is a short close-out memorandum listing what was obtained, from whom, on what date; what remains missing and why; and which items were escalated to the broker. It is dated today and filed with the transaction.
 >
 > **That memorandum is the difference between a file with gaps and a file nobody checked.** Two years from now it will be the only document that says the licensee looked.
+
+### 6.8 Checkpoint
+
+You should be able to explain who owns transaction records and why, what a departing licensee may and may not take, and why cancelled transactions matter as much as closed ones.
 
 ## Key terms
 
