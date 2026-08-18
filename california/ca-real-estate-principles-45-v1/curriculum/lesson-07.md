@@ -143,7 +143,34 @@ Non-clients are not unprotected. Every licensee owes **honesty, fair dealing, an
 
 The distinction is whose interests you advance, not whether you owe anything.
 
-### 2.7 Checkpoint
+### 2.8 Which duty was breached
+
+Section 2.1 through 2.6 state the duties. **The skill a principles course is trying to build is recognizing which duty a given failure breaches**, because the answer determines the analysis, the remedy, and frequently whether the conduct is negligence or something worse.
+
+| The conduct | The duty breached |
+|---|---|
+| Failing to present a competing offer to the seller | **Disclosure** |
+| Telling a buyer's agent the lowest price the seller would take | **Confidentiality** |
+| Buying the client's property through a relative without saying so | **Loyalty** |
+| Missing a contingency deadline | **Reasonable care** |
+| Following an instruction not to show the property to a category of buyers | **The obedience limit** — the instruction was unlawful, and following it is the licensee's own violation |
+| Depositing an earnest money check into an operating account | **Accounting** |
+| Recommending a vendor who pays a fee, without disclosing it | **Loyalty**, and the conflict framework |
+| Preparing a pricing analysis from three comparables in a market with twenty | **Reasonable care** |
+| Concealing a known material defect at the seller's instruction | **Honesty to non-clients**, and the obedience limit |
+| Substituting the licensee's judgment on price for the seller's | **Obedience** — the decision was the principal's |
+| Telling a buyer client "the seller will take 700" without knowing | **Reasonable care**, and it is a misrepresentation |
+| Continuing to use a former client's confidential information | **Confidentiality**, which survives termination — Section 6.8 |
+
+**Two observations worth carrying.**
+
+**Reasonable care is the most frequently breached and the least dramatic.** Section 2.5 notes it can be breached without dishonesty, and most rows on any real list of claims are careless rather than dishonest. **A licensee who does careful work is protected from most of this table without ever facing an ethical dilemma.**
+
+**Several rows breach two duties at once**, and the second is usually the more serious. Concealing a defect at the seller's instruction breaches honesty to the buyer **and** describes the licensee performing an unlawful instruction. Recommending an undisclosed paid referral breaches loyalty **and** engages a separate framework with its own consequences.
+
+> **The diagnostic question that resolves most cases:** whose interest was subordinated, and to what? **If the answer is "the principal's, to the licensee's," it is loyalty. If it is "the principal's, to nobody's — it was just done badly," it is care.** If it is "a non-client's, to the principal's," it is the honesty duty in Section 2.6, and that duty does not bend to fiduciary loyalty.
+
+### 2.9 Checkpoint
 
 You should be able to name the six duties, state the confidentiality-disclosure boundary, and explain why a careless licensee can breach a fiduciary duty without any dishonesty.
 
@@ -241,7 +268,34 @@ A recurring confusion: the agency disclosure describes the relationship options 
 
 **The agency disclosure is required regardless of whether a representation agreement is signed.** A licensee who requires a signed representation agreement before showing property is stating a brokerage policy, which is legitimate — but the disclosure obligation does not depend on it.
 
-### 4.6 Checkpoint
+### 4.7 The dates, and what they prove
+
+The three steps in Section 4.1 exist as a sequence, and **their dates are what a file audit examines** — not their presence.
+
+**The chain, with what each date has to precede:**
+
+| Step | Its date must precede |
+|---|---|
+| **Disclosure to the seller** | The listing agreement. The seller must know what the relationship is before he commits to it. |
+| **Disclosure to the buyer** | The advice. Section 4.2's timing runs from the outset of the working relationship, not from the offer. |
+| **Disclosure to the other party** | The presentation of the offer. |
+| **Election** | Recorded in the agreement itself. |
+| **Consent to dual agency**, where applicable | **The brokerage acting on both sides.** Consent dated after the conduct is a record of the problem. |
+| **Confirmation** | Nothing — it is the last link, and its job is to be **consistent with the four above.** |
+
+**Three defects a file audit finds, in descending order of seriousness:**
+
+**1. A confirmation that contradicts the file.** A purchase agreement confirming the brokerage as buyer's agent while the listing file shows it as seller's agent, with no consent anywhere, **describes an undisclosed dual agency** — a breach of duties actually owed rather than a documentation failure.
+
+**2. A disclosure dated after the agreement.** The document exists and the protection it was designed to give never operated.
+
+**3. A signature with no evidence of delivery.** Section 4.3 establishes that late delivery is not cured by delivery. **A file that cannot show when a disclosure reached the party cannot show that it was timely**, and the burden of that ambiguity does not fall on the consumer.
+
+**Why the buyer side fails more often than the listing side.** A listing agreement forces the paperwork; **nothing forces it on the buyer side.** A licensee can work with a buyer for six weeks, give advice throughout, and produce a disclosure on the day the offer is written — and the file will contain a properly executed document that proves nothing about the six weeks.
+
+> **The one habit that closes all three defects:** date everything at the moment it happens, evidence delivery rather than relying on signature, and **read the chain forward as a sequence** rather than checking off documents as a set. If the dates do not run in order, something happened out of order — and that is worth knowing while the transaction can still respond to it.
+
+### 4.8 Checkpoint
 
 You should be able to state when each disclosure is due, explain why a signature after the decision does not cure lateness, and identify what an audit finding of a contradictory confirmation means.
 

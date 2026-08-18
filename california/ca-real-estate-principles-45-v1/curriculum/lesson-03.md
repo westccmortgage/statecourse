@@ -420,7 +420,31 @@ Ten minutes with the trust document, the operating agreement, or the letters of 
 
 And where the answer is genuinely unclear, the licensee's role is not to resolve it. It is to route it to title and to counsel **before the listing is signed.**
 
-### 6.6 Checkpoint
+### 6.6 Trust ownership and entity ownership, compared
+
+Sections 6.2 and 6.3 of Lesson 03 introduce these. The comparison is worth setting out directly, because a licensee will meet both constantly and the questions they raise are structurally similar and practically different.
+
+| | **Trust ownership** | **Entity ownership** |
+|---|---|---|
+| **Who holds title** | The trustee, in that capacity | The entity itself |
+| **Who signs** | The **currently serving** trustee — which may not be the person who created the trust | Whoever the entity's governing documents authorize |
+| **What establishes authority** | The trust instrument and, where required, the documentation the title company accepts | The formation documents, the operating or governing agreement, and any resolution required |
+| **The common failure** | Assuming the person describing it as "my trust" is the acting trustee — **after a death or incapacity the office may have passed** | Assuming a member, officer, or partner is authorized because of the title he uses |
+| **What changes on death** | Depends on the instrument; a successor may take office, with its own documentary requirements | Depends on the governing documents and the interest held |
+| **Where it goes wrong in a transaction** | At title clearance, typically late | At title clearance, typically late |
+| **Whose question it is** | **Counsel and the title company** | **Counsel and the title company** |
+
+**The two rows that matter most to a licensee are the last two, and they are identical.**
+
+**Both fail at the same point** — when the title company asks for evidence of authority and the documents do not say what the seller said they say. **By then the property has been marketed, an offer accepted, and a buyer's deadlines are running.**
+
+**Both are resolved by the same intake practice.** Section 6.5 of Lesson 03: **ask how title is held, ask to see the document, and ask who must sign.** Three questions, asked before the listing agreement, and routed to counsel and the title company when the answer is not immediately clear from the document.
+
+**What a licensee must never do with either.** Advise which structure to use, advise on whether to move property into or out of one, interpret an instrument's provisions, or **conclude from a person's description that he has authority.** Each is a legal determination, and the last one is the one that feels like ordinary listening rather than like a legal conclusion.
+
+> **A useful framing for the client conversation.** "The title company is going to need to see the document that shows who can sign. Let's get it now — if there's anything in it that needs attention, today is a much better day to find out than three weeks into escrow." **Clients accept this immediately**, because it is obviously true and it is offered as service rather than as suspicion.
+
+### 6.7 Checkpoint
 
 You should be able to list what you would verify at a listing appointment where title is held in a trust, and explain why a beneficiary's signature is insufficient.
 
