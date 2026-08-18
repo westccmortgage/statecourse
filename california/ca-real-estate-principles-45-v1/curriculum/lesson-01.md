@@ -73,7 +73,28 @@ The terms are used loosely in conversation and precisely in documents.
 
 The distinction that matters in practice is between real property and **personal property**, because they transfer differently, are financed differently, and are described differently. Lesson 02 takes that up in detail.
 
-### 1.5 Checkpoint
+### 1.5 The market these characteristics produce
+
+The legal treatment in Section 1.1 and the economic consequences in Section 1.2 combine to produce a market that behaves unlike almost any other, and the differences explain most of what a licensee spends his time on.
+
+| Characteristic | What follows |
+|---|---|
+| **Immobility** | **Every market is local**, and there is no national real estate market in any operational sense. Conditions two miles away can differ from conditions here, which is why Lesson 05 of the practice course spends its first section defining a market area. |
+| **Fixed short-run supply** | New supply takes years — entitlement, financing, construction. **Demand moves in weeks and supply cannot answer**, which is why prices move sharply rather than smoothly. |
+| **Heterogeneity** | No two parcels are identical, so **there is no single price and no ticker.** Value is estimated by comparison, which is a judgment rather than a lookup. |
+| **High transaction costs** | Commissions, financing costs, title, escrow, moving, and time. **This suppresses trading**, which means the market has far fewer data points than a liquid market and each one matters more. |
+| **Information asymmetry** | The seller knows the property; the buyer does not. **Almost the entire disclosure framework exists to address this one line**, and it is why Lesson 09 of the practice course is as long as it is. |
+| **Financing dependence** | Most transactions require credit, so **credit conditions transmit directly into prices** and a change in rates moves the market without anything happening to any property. |
+| **Durability** | Buildings last decades, so **most of what will be sold in twenty years already exists**, and its condition, location, and design were determined by decisions made long ago. |
+| **Government influence** | Zoning, building standards, taxation, environmental regulation, and public investment shape what may be built, where, and at what cost. |
+
+**Two conclusions a licensee should carry out of this table.**
+
+**The information asymmetry is the licensee's actual job.** Buyers cannot evaluate what they cannot see, and the entire apparatus of disclosure, investigation, and professional duty exists to close a gap the market cannot close by itself. **A licensee who understands his function as closing that gap will make correct decisions in situations no rule covers.**
+
+**Illiquidity is why mistakes are expensive.** In a liquid market an error is corrected by selling. **Here the correction costs a substantial fraction of the asset's value and takes months**, which is why the consumer's decision has to be right the first time, and why the framework insists so heavily that information arrive before decisions rather than after them.
+
+### 1.6 Checkpoint
 
 You should be able to name a rule from later in this course and trace it back to immobility, indestructibility, or uniqueness.
 
@@ -126,7 +147,31 @@ California maintains an account, funded by license fees, from which a consumer w
 
 Two features are worth understanding. It is a **last resort**, available after the consumer has pursued the licensee. And payment from it has consequences for the licensee, whose license is affected until the account is reimbursed.
 
-### 2.6 Checkpoint
+### 2.6 How a complaint actually proceeds
+
+Section 2.4 lists what triggers discipline. Licensees rarely learn what the process looks like from the inside, and the gap produces two errors: panic at the first contact, and improvisation at the moment improvisation is most costly.
+
+**The general shape**, stated at the level of generality that is accurate:
+
+1. **A complaint arrives**, from a consumer, another licensee, a lender, a title company, or an agency. **It does not require that anyone lost money**, and it does not require that the complainant be the licensee's own client.
+2. **A review determines whether the allegations, if true, would describe a violation.** Many complaints end here — not because the licensee did well, but because the conduct described is not something the Department regulates.
+3. **An investigation gathers facts**, which means requests for documents, for a written response, and sometimes an interview.
+4. **A determination follows** — no action, an informal resolution, or a formal accusation initiating an administrative proceeding.
+5. **An administrative proceeding** carries process rights, and its outcomes range through a range of sanctions up to revocation, with conditions and restrictions available in between.
+
+**What matters most to the licensee happens at step three, and it happens in the first week.**
+
+**The response is prepared with the broker and, where appropriate, counsel.** A licensee who answers a document request personally, quickly, and in his own voice will say something he did not need to say.
+
+**The file is what answers the questions.** Everything in Section 6 of this lesson exists for this moment: dated documents, evidenced delivery, sourced statements, and contemporaneous notes. **The investigation asks what happened and when, and the file answers or it does not.**
+
+**Preservation is immediate and total.** Nothing is deleted, tidied, reorganized, or "cleaned up." **This includes text messages, informal notes, and drafts** — and it includes material that is unflattering.
+
+**Nothing is created after the fact and presented as contemporaneous.** This is the line the practice course returns to repeatedly, and it is worth stating here in its regulatory form: **a documentation gap produces a finding; a fabricated document produces a different proceeding about a different subject**, and the second one is the one that ends a career.
+
+> **The most useful thing to know about this process in advance** is that it is largely documentary. **The licensee's recollection, sincerity, and explanation carry very little weight against a record that says something else, and they carry almost none against a record that says nothing at all.**
+
+### 2.7 Checkpoint
 
 You should be able to state the purpose of the license law and use it to explain why a particular rule takes the form it does.
 
@@ -174,7 +219,31 @@ A brokerage that responds to a supervision question with "our agents are indepen
 
 That third one recurs in property management, where a salesperson signing leases in her own name is a common and serious audit finding.
 
-### 3.6 Checkpoint
+### 3.6 A worked supervision failure
+
+> **The facts.** A brokerage has one responsible broker and forty-one salespersons across three offices. The broker reviews files "when something comes up." Advertising approval is delegated to an office manager who is a salesperson. Trust deposits are made by whoever is in the office. A salesperson at the second office has been signing listing agreements with a term left blank and filling it in later.
+>
+> **This surfaces when a seller complains** that his listing "was supposed to be three months" and the copy in the file says six.
+>
+> **What the review finds.**
+>
+> **The blank term.** The individual failure, and the one everyone will focus on. It is real: an agreement with a material term left blank and completed afterward is not the agreement the seller signed.
+>
+> **But the salesperson's conduct is the smallest finding here**, and treating it as the whole problem is how a brokerage repeats it.
+>
+> **The delegated advertising approval.** Section 3.3 establishes supervision as an affirmative duty and Section 3.5 establishes what a salesperson may not do. **Delegation of a supervisory function to a salesperson does not move the duty**, and a brokerage whose approvals are performed by someone without supervisory authority has a structural defect rather than a staffing arrangement.
+>
+> **Trust deposits by whoever is present.** A control that depends on availability is not a control. **The accounting duty is the broker's**, and an unassigned task is an unperformed one, which is exactly the failure Lesson 11 of the practice course names.
+>
+> **File review "when something comes up."** Review that is triggered by problems cannot find problems. **A review at defined points — at listing, at acceptance, at closing — is the only kind that detects a pattern before a complaint does**, and this pattern ran for months.
+>
+> **Forty-one licensees across three offices under one broker.** Whether that is supervisable is a question about capacity, not about intent. Section 2.4 of Lesson 01 of the practice course raises branch offices and scale for this reason: **a supervision structure that cannot function at the brokerage's actual size is a defect of the structure.**
+>
+> **The conclusion the file supports.** One salesperson made an error that a functioning review would have caught at the first listing. **The brokerage's exposure is not that error; it is that nothing in the brokerage was built to find it**, and the same absence applies to every other file the brokerage holds.
+>
+> **What a licensee should take from this.** Lesson 03 of the practice course states that delegation does not transfer responsibility. **The reciprocal is equally true and less often said: a salesperson working inside a brokerage with no functioning supervision is exposed personally**, because when the review arrives there will be no record that anyone checked anything, including his own work.
+
+### 3.7 Checkpoint
 
 You should be able to explain why a listing agreement names the brokerage, and what follows from that when a seller wants to cancel.
 
@@ -218,7 +287,30 @@ Referring badly costs the relationship; referring well strengthens it. The compo
 
 Name the limit, give what you can, and connect the referral to the deadline that makes it urgent.
 
-### 4.5 Checkpoint
+### 4.5 The questions licensees are actually asked
+
+Section 4.2 supplies the test. This section applies it to the questions that arrive in practice, because the boundary is easy in the abstract and hard at nine in the evening with a client on the phone.
+
+| The question | Category | The answer |
+|---|---|---|
+| "What does this contingency clause mean?" | **Legal effect** | Explain what the provision provides for procedurally; **its legal effect on the parties' rights goes to counsel.** The two are closer together than licensees would like. |
+| "Should I take title as joint tenants?" | **Legal and tax** | Route. Lesson 03, Section 6.4 — this affects survivorship, creditors, and taxation, and no part of it is the licensee's. |
+| "If I back out, do I lose my deposit?" | **Legal** | Route. Explain the contract's procedure; **do not predict the outcome.** |
+| "Will I owe tax on the gain?" | **Tax** | Route, without a general summary. |
+| "Can I rent it out? The HOA docs are confusing." | **Legal** | Route, and **obtain the governing documents** so counsel is reading the actual instrument. |
+| "Is this a good price?" | **Within scope** | Yes — this is the licensee's analysis, delivered with its reasoning. |
+| "Will the value go up?" | **Prediction** | **Not statable.** Explain what is knowable — current conditions, absorption, direction — and what is not. |
+| "Is the foundation okay?" | **Outside competence** | Route to a qualified professional. |
+| "Can I put an ADU in the back?" | **Land use** | Route to the jurisdiction, and note that the answer may also depend on private restrictions. |
+| "My tenant won't leave — what do I do?" | **Legal** | Route. **Nothing about eviction procedure is licensee territory.** |
+| "Can you just write in that they'll fix the roof?" | **Drafting** | Section 4.1's boundary. Approved-form completion is one thing; **authoring a provision that alters rights is another.** |
+| "What's this fee for?" | **Depends** | Answer if it is yours and you know. **Do not characterize another party's charge as "standard."** |
+
+**The pattern:** roughly two of every three questions a client asks in the ordinary course belong to someone else. **That is not a defect in the profession.** It reflects that a real estate transaction sits at the intersection of law, tax, finance, construction, and valuation, and the licensee is the participant who coordinates specialists rather than the one who replaces them.
+
+**Section 4.4 addresses the delivery.** The version that works is short and confident: **"That one's a question for your attorney — and it's worth asking, because the answer changes what you'd want in the contract. Do you have someone, or would you like a couple of names?"** It answers the client's real need, which is knowing what to do next.
+
+### 4.6 Checkpoint
 
 You should be able to take a list of consumer questions and sort them into within-scope and refer, giving your reason for each.
 
@@ -256,7 +348,31 @@ Law changes. An answer that was right three years ago may be wrong now, and the 
 
 A licensee's duty is not to be a legal scholar. It is to know that the answer may have changed and to check rather than to remember.
 
-### 5.5 Checkpoint
+### 5.5 Reading the source rather than a summary
+
+Section 5.3 establishes that forms and publications are not law. The practical corollary is that a licensee occasionally has to read the actual provision, and doing so is a skill worth having rather than a task to avoid.
+
+**What to notice when reading a statute or a regulation:**
+
+1. **The definitions.** Statutory schemes define their own terms, and a defined term means what the statute says it means regardless of ordinary usage. **Most misreadings are definitional.**
+2. **The scope provision.** What transactions, persons, or property the section applies to — and, critically, **what it excludes.** The exclusions are frequently where the answer lives.
+3. **The operative verb.** "Shall," "may," and "is not required to" describe three different worlds.
+4. **The trigger.** Almost every obligation is conditioned on an event. **Identify what starts it**, because that is what a file will later be measured against.
+5. **The exceptions**, which are usually narrow and usually the part someone is trying to fit into.
+6. **Cross-references.** A section that operates by reference to another is not readable alone.
+7. **The consequence provision**, where one exists — what happens if the requirement is not met. **Sometimes nothing, sometimes a right of rescission, sometimes a penalty**, and the difference matters enormously to advice.
+
+**Three cautions.**
+
+**Currency.** Section 5.4 makes the point; the operational version is that **a printout, a saved copy, or a memory of a provision is a snapshot.** Check the current text.
+
+**Reading is not interpreting.** A licensee reading a provision to understand what a form is for is doing something appropriate. **A licensee reading a provision to tell a client what his rights are has crossed Section 4.1's boundary** regardless of how carefully he read.
+
+**One provision is rarely the whole answer.** California real estate obligations are distributed across statutes, regulations, local ordinances, and — separately — private instruments recorded against the property. **A confident answer built on a single section is the characteristic shape of a wrong one.**
+
+> **Why this belongs in a principles course at all.** Not so that licensees will practice law, but so that they can tell the difference between a rule and a habit. **A great deal of what circulates in this business as "the rule" is a brokerage practice, a form's convention, or something someone said in a class**, and the only way to know which is to look.
+
+### 5.6 Checkpoint
 
 You should be able to take a question and say which source category would control it, and where the answer would be found.
 
@@ -303,7 +419,35 @@ Nobody else in the transaction holds the whole picture. The lender sees the loan
 
 That is why the coordination practices this course keeps returning to — build the calendar from the contract, start the slow items first, confirm status in writing, escalate early — are professional obligations rather than administrative habits.
 
-### 6.5 Checkpoint
+### 6.5 A worked accountability map
+
+> **A single transaction**, with the question asked at each stage: **who is responsible, and what happens if they do not perform?**
+>
+> **The seller's disclosures.** Prepared by the seller, on his knowledge. **The licensee's obligation is to counsel, deliver, and evidence delivery** — not to complete them. If the seller does not disclose a known material fact, the exposure is the seller's, and it is also the licensee's if the licensee knew.
+>
+> **The licensee's own inspection disclosure.** The licensee's, independently. **Nobody else performs it and nobody else is answerable for it.**
+>
+> **The buyer's investigation.** The buyer's, on the licensee's written recommendation. **A licensee who recommends investigation in writing and a buyer who declines have produced a documented decision. A licensee who recommends nothing has produced an exposure.**
+>
+> **The loan.** The lender's decision, on a file the buyer supplies. **The licensee does not evaluate, promise, or advise on it**, and Lesson 10 of the practice course explains what happens when he does.
+>
+> **The appraisal.** The appraiser's independent judgment, ordered through a channel designed to keep the licensee out of it.
+>
+> **Title.** The title company's search and the insurer's policy. **The licensee delivers the report and routes its legal questions.**
+>
+> **Escrow.** Section 6.3. **Escrow follows instructions and is neutral**, which means it will not notice that a term the parties agreed never reached it. **Somebody has to notice, and that somebody is the licensee.**
+>
+> **Deadlines.** Nobody's, formally — which is why they are missed. **The contract sets them and no participant is assigned to watch them**, so the licensee who does not build the calendar has left the transaction's most failure-prone element unowned.
+>
+> **The closing figures.** Escrow prepares them from the documents it holds. **Their accuracy against the agreement is checked by the people who know what the agreement said**, which is the two licensees.
+>
+> **The record.** The brokerage's, through the licensee. **No other participant retains a file that shows what the licensee did.**
+>
+> **The pattern.** Four of these have a named owner outside the brokerage. Three have an owner and a supervising duty. **Three have no owner at all until the licensee takes them** — the deadlines, the transmission of agreed terms to escrow, and the reconciliation of the figures — **and those three produce a disproportionate share of the disputes in this business.**
+>
+> **Section 6.4 calls the licensee a coordinator.** This map is what that word means: **the participant whose job includes everything that would otherwise belong to nobody.**
+
+### 6.6 Checkpoint
 
 You should be able to take a transaction task and name who owns it, by what date, and what evidence shows it was done.
 
