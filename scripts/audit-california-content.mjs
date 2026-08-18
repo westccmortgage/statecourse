@@ -78,6 +78,9 @@ function topicsFor(markdown, subject) {
 function isProse(line) {
   const trimmed = line.trim();
   if (!trimmed) return false;
+  /* A bare ">" is the blank line inside a blockquote, not a paragraph. Counting it
+     inflated the templated share by one entry per blank line in every worked example. */
+  if (/^>\s*$/.test(trimmed)) return false;
   return !/^(#|\||-|\*|\d+\.)/.test(trimmed);
 }
 

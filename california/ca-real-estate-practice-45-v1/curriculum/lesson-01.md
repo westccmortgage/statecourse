@@ -100,7 +100,31 @@ The Commissioner's disciplinary authority extends to suspension, revocation, and
 
 The Department also maintains a **public license lookup**, which reports license status, expiration, employing broker, and any public disciplinary record. Consumers use it. So should licensees, before agreeing to work with an unfamiliar counterpart on the other side of a transaction.
 
-### 1.6 Checkpoint
+### 1.6 What the license does not authorize
+
+Section 1.3 states what activity requires a license. The reciprocal question is asked less often and produces more discipline: **what does holding one not permit?**
+
+| The activity | Why the license does not reach it |
+|---|---|
+| **Giving legal advice** | Section 3.2 draws the boundary. Interpreting a contract's legal effect, advising on how title should be taken, or opining on the enforceability of a restriction is the practice of law. |
+| **Preparing legal instruments beyond filling in approved forms** | Drafting provisions that alter legal rights is authorship of a legal document. |
+| **Giving tax advice** | Holding periods, basis, exclusions, exchanges, and the treatment of credits belong to a tax advisor. |
+| **Appraising** | Lesson 05, Section 5.1. A comparative market analysis is not an appraisal and may not be presented as one. |
+| **Inspecting** | Opinions about the condition or remaining life of building systems require a qualification the license does not confer. |
+| **Loan origination activity requiring its own authority** | Mortgage activity carries its own licensing and endorsement framework. |
+| **Acting outside the brokerage** | A salesperson's authority flows through the responsible broker; there is no independent practice. |
+| **Escrow activity beyond what the framework permits** | Escrow is regulated separately, and holding funds is the accounting duty in Section 6, not a service to be improvised. |
+| **Practicing in another jurisdiction** | A California license is a California license. |
+
+**Two of these are worth stating with more force.**
+
+**The legal boundary is crossed most often by accident**, in answers to ordinary questions: what a clause means, whether a contingency still protects the client, what happens if someone breaches. **These sound like transaction questions and they are legal questions**, and Section 3.4's "I don't know" is the professional answer.
+
+**The scope of the salesperson's authority is a structural fact, not a formality.** Every agreement is the brokerage's, every client is the brokerage's client, every trust fund is subject to the broker's control, and every decision to release, escalate, or settle is the broker's. **A salesperson who thinks of the brokerage as an administrative arrangement has misunderstood what his own license is.**
+
+> **The practical consequence of this table:** a licensee who can name the eight boundaries above will route eight categories of question rather than answering them. **Section 3.4's argument is that routing is competence.** This table is the list of what gets routed.
+
+### 1.7 Checkpoint
 
 Before continuing, you should be able to state: which two bodies of authority govern licensed conduct and how they differ; the three elements that make an activity require a license; and four specific things a salesperson may not do that a broker may.
 
@@ -269,7 +293,27 @@ Brokerages frequently adopt policies stricter than the legal minimum: longer ret
 
 It also creates a trap worth naming. When a licensee discovers that office policy exceeds the legal requirement, the temptation is to follow the law instead. That is the wrong move for two reasons. The policy binds the licensee's conduct within the brokerage regardless of the legal floor, and the licensee's reading of the legal minimum may simply be wrong. Changing a policy is a policy-level decision that starts with confirming the current requirement — not a decision an individual licensee makes case by case.
 
-### 4.5 Checkpoint
+### 4.6 Reading a policy manual as a new licensee
+
+Section 4.2 lists what a working policy set covers. The obligation running the other direction is rarely stated: **the licensee has to read it, and reading it is a specific task rather than a gesture.**
+
+**What to look for, in order:**
+
+1. **What must be submitted for review, and when.** Advertising, agreements, disclosures, trust deposits. **Anything requiring approval has a turnaround time, and knowing it changes how you plan a listing.**
+2. **The escalation path.** Who you contact for a question, who you contact for a problem, and what the after-hours answer is. **A licensee who does not know this before he needs it will improvise on the day he most needs not to.**
+3. **What the brokerage prohibits beyond what the law requires.** Section 4.4 establishes that stricter is legitimate. **A prohibition you did not know about is one you will violate.**
+4. **Trust fund handling** — where funds go, how fast, and who is authorized. Never improvised, ever.
+5. **The transaction file standard.** What documents, in what form, by when.
+6. **How supervision actually happens** — at which points a file is reviewed, and what a reviewer looks at.
+7. **Departure.** What happens to your files, your pending transactions, and your clients if you leave. **Read this on the day you join, not on the day you leave**, because the terms are the same either way and your reading of them will not be.
+
+**Then the follow-up that most licensees skip:** ask the broker the questions the manual does not answer. A manual is written against the transactions the brokerage has already seen; **the situation you are in is often not one of them.**
+
+**And the obligation that has no manual:** where a written policy conflicts with what you are being told to do in practice, **that is a question, not a discrepancy to resolve on your own.** Section 2.2 establishes that delegation does not transfer responsibility; the corollary is that an informal practice does not amend a written policy, and a licensee following the informal version is exposed on both.
+
+> **What a policy set is actually for.** It is not primarily a compliance artifact. **It is the accumulated answer to problems the brokerage has already had**, which means every provision that seems excessive is a scar. Reading it as history rather than as rules makes it considerably more interesting and much easier to follow.
+
+### 4.7 Checkpoint
 
 You should be able to name the four components of a defensible delegation and explain why "we have a written policy" is not by itself evidence of supervision.
 
@@ -315,7 +359,26 @@ It does not mean telling the consumer whatever they want to hear, and it does no
 
 Nor does it mean answering every question asked. Some questions — about the characteristics of a neighborhood's residents, about a prior occupant's illness, about whether a neighbor has a legal claim — must be declined, and declining them well is itself a professional skill: explain why you cannot answer, and point to where a proper answer comes from.
 
-### 5.5 Checkpoint
+### 5.5 The confirming message
+
+Section 5.2 requires timeliness and a written record. The instrument that satisfies both, on almost every file, is one habit: **after any consequential conversation, send a short message confirming what was said.**
+
+**What it contains:** the date, what the client asked or decided, what you told him, what happens next, and by when. Four or five sentences.
+
+**What it accomplishes, all at once:**
+
+- **It creates the record**, contemporaneously and in a form the client received rather than one you wrote for yourself.
+- **It catches the misunderstanding while it is small.** A client who read the conversation differently replies immediately, which is the cheapest moment for that to happen.
+- **It reduces the number of calls**, because a client who has the summary in writing does not call to re-ask.
+- **It communicates competence** more effectively than any other single practice available to a new licensee.
+
+**What it must not do:** state legal conclusions, characterize other parties, predict outcomes, or restate an assurance you should not have given verbally. Section 5.1's three categories govern the message as much as the conversation, and **the message is the version that survives.**
+
+> **The version that fails** is the long one, sent two days later, hedged into ambiguity. **Short, same day, specific.**
+
+**One extension worth adopting.** Where a client instructs you to do something you advised against, the confirming message records both — the advice, and the instruction. **Not as a defensive maneuver and not phrased as one:** "As we discussed, my recommendation was X and you've decided on Y — I'll proceed with Y." That sentence protects the client's autonomy and the licensee's record in the same breath, and it is the sentence Lesson 04's pricing section and Lesson 07's investigation section both ultimately depend on.
+
+### 5.6 Checkpoint
 
 You should be able to take a consumer question and produce an answer that is correctly categorized as fact, report, or opinion, and that identifies its source.
 
@@ -373,7 +436,36 @@ The most useful review of a file happens shortly after closing, while the partic
 
 Findings are recorded, not quietly repaired. A brokerage that can show it audits its own files and acts on what it finds is in a materially different position from one that cannot.
 
-### 6.7 Checkpoint
+### 6.7 The first ninety days
+
+A new licensee is unlikely to be asked to do anything in his first three months that this course has not covered. **He is very likely to be asked to do all of it at once, on a file where he does not yet know which part matters.** These are the practices to install before the first transaction rather than after.
+
+**Set up before the first client:**
+
+1. **A file structure**, the same for every transaction, matching the brokerage's standard. Section 6.2 supplies the contents.
+2. **A deadline tracker** that is not your memory and not one calendar entry per transaction.
+3. **A delivery log** — what was sent, to whom, when, how, and with what confirmation. Section 6.3 explains why.
+4. **An advertising archive**, with captures as published.
+5. **A contact and consent record**, so that Lesson 02's channel rules can be answered from a record rather than a recollection.
+6. **A place to put notes the same day**, which is the habit that either forms in the first month or does not form.
+
+**Ask your broker, in the first week:**
+
+- Which documents require review, and how long review takes.
+- Who I contact for a question, and who I contact for a problem.
+- What this brokerage prohibits that the law permits.
+- At what points a file is reviewed, and what the reviewer looks at.
+- What happens to a file if I am unavailable.
+
+**Decline, without exception, in the first ninety days and afterward:**
+
+- Any question whose answer is legal, tax, structural, or valuation-professional. **Route it.** Section 3.4 makes this competence rather than weakness.
+- Any assurance about approval, appraisal, value, or outcome.
+- Any instruction you believe is unlawful, from any source, including a manager. Section 2.2 governs.
+
+> **The one measure of whether the first ninety days went well** is not the number of transactions. It is whether the files you opened can be read by someone else. **A new licensee with two well-documented files is in a better professional position than one with six that depend on his recollection**, and the difference is entirely front-loaded — it is decided by what was set up before the first client called.
+
+### 6.8 Checkpoint
 
 You should be able to state the reconstructability standard, explain why a signature without a delivery date is insufficient, and describe the correct response to a gap found in a closed file.
 
