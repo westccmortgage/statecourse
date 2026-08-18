@@ -2,290 +2,305 @@
 
 ## Escrow, title, closing, and possession
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze opening escrow using verified facts, current authority, and a documented professional workflow.
-- Analyze title and vesting review using verified facts, current authority, and a documented professional workflow.
-- Analyze transaction coordination using verified facts, current authority, and a documented professional workflow.
-- Analyze final verification and closing using verified facts, current authority, and a documented professional workflow.
-- Analyze recording disbursement and possession using verified facts, current authority, and a documented professional workflow.
-- Analyze post-closing file audit using verified facts, current authority, and a documented professional workflow.
+- Explain the escrow holder's neutrality and the limits it places on what escrow may do.
+- Read a preliminary report, distinguish an exception from a defect, and route each item correctly.
+- Explain why the manner of taking title is a legal and tax question outside the licensee's scope.
+- Coordinate the transaction's parallel tracks and identify what must be confirmed before closing.
+- Conduct a final verification of condition and respond correctly to what it reveals.
+- Distinguish recording, funding, disbursement, and possession, and document post-closing obligations.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: escrow's role and title review | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: vesting, coordination, and final verification | 50 | Sections 3-4 viewed |
+| Guided reading: closing mechanics, possession, and post-closing audit | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. opening escrow
+## 1. Opening escrow
 
-### 1.1 Concept and purpose
+### 1.1 What escrow is
 
-opening escrow is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Escrow, title, closing, and possession, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Escrow is a neutral third party holding funds and documents under the parties' conditional delivery, authorized to act **only according to their mutual written instructions**.
 
-### 1.2 Essential elements
+Two elements make it an escrow: a **binding contract between the parties**, and **conditional delivery** to a neutral holder. Without both, what exists is a stakeholder arrangement, not an escrow.
 
-The essential elements of opening escrow are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 1.2 Neutrality, and what it forbids
 
-### 1.3 Roles and duties
+Escrow's neutrality is not a courtesy. It is the structural feature that lets both parties rely on the same holder, and it produces limits licensees must be able to explain:
 
-Responsibility for opening escrow may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+| Escrow may | Escrow may not |
+|---|---|
+| Follow mutual written instructions | Act on one party's instruction alone |
+| Hold funds and documents | Advise either party |
+| Prepare and circulate documents per the instructions | Decide a dispute between the parties |
+| Record and disburse when conditions are met | Release funds because one party says they are entitled |
+| Report status to both parties | Take a position on who is right |
 
-### 1.4 Workflow
+Escrow is sometimes described as a **limited dual agent** — owing duties to both parties simultaneously, bounded strictly by the instructions. That description is useful precisely because it explains why escrow stops rather than deciding when the parties disagree.
 
-A defensible workflow for opening escrow starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 1.3 A worked test of neutrality
 
-### 1.5 Documents and evidence
+> The day before recording, the buyer emails escrow: hold back $3,000 from the seller's proceeds for a repair the seller promised verbally. The seller knows nothing about it.
+>
+> **Escrow may not act on it.** A change to the disbursement requires mutual written instructions. One party cannot redirect funds.
+>
+> **Nor may escrow simply disburse in full**, which also acts on one side's position where a genuine dispute has been raised.
+>
+> **Nor does the buyer's agent confirming the request supply the missing consent.** An agent is not the other party.
+>
+> **The correct outcome:** escrow stops. The parties resolve it in writing, and the resolution reaches escrow as a mutual instruction. The agents' job is to get that done before the closing date, not to argue with escrow.
 
-Documents connected with opening escrow must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 1.4 Who selects escrow
 
-### 1.6 Quantitative and factual analysis
+Selection is negotiable between the parties and is often addressed in the purchase agreement. Two points for the licensee:
 
-Where opening escrow involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+- **A licensee must not accept anything of value for directing settlement business.** Referrals are ordinary; payment for them is a serious federal problem, and disclosure does not cure it.
+- **Where the brokerage has a financial interest** in an escrow or title provider, that is an affiliated business arrangement, and it carries disclosure and other conditions.
 
-### 1.7 California law and professional boundary
+### 1.5 Opening properly
 
-California law controls the licensed activity associated with opening escrow; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+What escrow needs at opening: the fully executed purchase agreement and all amendments; the parties' contact and identification details; the deposit per the contract; lender contact where financing is involved; and title order details.
 
-### 1.8 Consumer protection and fair access
+The licensee's contribution is accuracy and completeness. An escrow opened on a partially executed contract, or without the amendment that changed a term, will produce instructions that do not match the agreement — which surfaces later, usually at the worst time.
 
-Consumer protection requires that opening escrow be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 2. Title and vesting review
 
-### 1.9 Applied scenario
+### 2.1 What a preliminary report is
 
-Scenario: during escrow, title, closing, and possession, the file raises a question about opening escrow. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+A preliminary report reports the condition of title as shown in the records and states **the terms on which the title insurer would be willing to issue a policy**, including the exceptions it would take.
 
-### 1.10 Decision checklist
+Three things it is not:
 
-Before treating opening escrow as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+- **Not a guarantee** that title is clear.
+- **Not the policy.** It is superseded by the policy, not replaced by it.
+- **Not a boundary or condition survey.** It addresses record title, not the physical property.
 
-## 2. title and vesting review
+### 2.2 Exceptions, and what they mean
 
-### 2.1 Concept and purpose
+An **exception** is an item the policy will not insure against. That is the entire significance, and it is why exceptions must be read rather than skimmed:
 
-title and vesting review is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Escrow, title, closing, and possession, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+> If an item is excepted, the buyer bears that risk unless it is otherwise addressed.
 
-### 2.2 Essential elements
+Common exceptions include easements, covenants and restrictions, mineral rights reservations, assessments, and matters a survey would disclose.
 
-The essential elements of title and vesting review are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 2.3 Reading the report as a licensee
 
-### 2.3 Roles and duties
+The licensee's role is to **ensure the buyer reviews the underlying documents and understands their effect on his intended use** — and to route legal questions to counsel.
 
-Responsibility for title and vesting review may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+| Item | Correct handling |
+|---|---|
+| Utility easement along the rear line | Obtain and review the document: width, location, permitted use. A rear-line easement can prevent structures the buyer intends to build. |
+| Recorded CC&Rs | Obtain and review; use restrictions bind the buyer regardless of zoning |
+| An unreleased deed of trust the seller says was paid | A recorded reconveyance or other clearing document must be obtained; the seller's recollection does not clear the record |
+| A mechanic's lien | Route to escrow and title; note that its priority may relate back to when work commenced |
+| A judgment lien against a similarly named person | Route to title for resolution; do not assume it is the seller |
+| An item the buyer does not understand | Refer to counsel |
 
-### 2.4 Workflow
+Three responses that are wrong in every case: treating an item as routine because most properties have one, asking the title company to "remove" an exception, and predicting the practical effect of an easement on the buyer's plans.
 
-A defensible workflow for title and vesting review starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 2.4 Vesting is not the licensee's question
 
-### 2.5 Documents and evidence
+How the buyer takes title — sole ownership, joint tenancy, tenancy in common, community property in its forms, a trust, an entity — carries **ownership, survivorship, tax, and estate consequences**.
 
-Documents connected with title and vesting review must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+A licensee may explain that the choice matters and that it has those consequences. A licensee may **not** advise which to choose. The correct action is a referral to legal and tax counsel **before escrow prepares the deed**, because changing it later is neither free nor simple.
 
-### 2.6 Quantitative and factual analysis
+> Two unmarried siblings buying together say they want the survivor to take the whole property automatically, **and** each to be able to leave her share to her own children.
+>
+> Those two goals point in different directions. Resolving that tension is estate planning, not a form selection, and it belongs to counsel.
 
-Where title and vesting review involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 2.5 Title insurance
 
-### 2.7 California law and professional boundary
+The owner's policy insures the buyer's interest; the lender's policy insures the lender's lien and its priority. They insure different interests, which is why both commonly exist.
 
-California law controls the licensed activity associated with title and vesting review; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+What a policy does: indemnifies the insured against covered losses from title defects, **within its terms and excluding what it excepts**. What it does not do: guarantee perfect title, insure physical condition, or oblige the insurer to clear what it excepted.
 
-### 2.8 Consumer protection and fair access
+## 3. Transaction coordination
 
-Consumer protection requires that title and vesting review be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 3.1 Parallel tracks
 
-### 2.9 Applied scenario
+A residential transaction runs several tracks at once, each with its own deadlines and its own failure modes:
 
-Scenario: during escrow, title, closing, and possession, the file raises a question about title and vesting review. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+| Track | Owner | Typical failure |
+|---|---|---|
+| **Contract deadlines** | The agents | A notice missed or delivered by the wrong method |
+| **Investigation** | Buyer, with the agent's coordination | Started late, so findings arrive with no time to act |
+| **Disclosure delivery** | Seller and both agents | Delivered late; delivery not evidenced |
+| **Financing** | Buyer and lender | Conditions unsatisfied; a change restarts the timeline |
+| **Appraisal** | Lender | Ordered late; value below price |
+| **Title** | Escrow and title | An exception discovered late that takes time to clear |
+| **Escrow** | Escrow | Instructions that do not match the agreement |
+| **Insurance** | Buyer | Availability or cost, especially in mapped hazard areas |
 
-### 2.10 Decision checklist
+Most transactions that fail do not fail because one track was impossible. They fail because a track started late.
 
-Before treating title and vesting review as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 3.2 What the licensee actually coordinates
 
-## 3. transaction coordination
+1. **Build the deadline calendar from the contract** and share it in writing.
+2. **Start the slow items first** — insurance in hazard areas, association documents, permit research, specialist inspections.
+3. **Confirm status weekly in writing**, and record the answers.
+4. **Escalate early.** A problem raised on day ten has options; the same problem on day twenty-eight has few.
+5. **Reconcile escrow's instructions against the agreement**, including every amendment.
 
-### 3.1 Concept and purpose
+### 3.3 The insurance track
 
-transaction coordination is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Escrow, title, closing, and possession, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Insurance deserves its own attention in California. In mapped fire and flood areas, availability and cost have become a common cause of failed transactions, and the problem is discovered late because buyers treat insurance as a formality.
 
-### 3.2 Essential elements
+The advice: **obtain quotes early in the contingency period**, not at the end. A buyer who learns in week one that coverage will cost far more than assumed can act; a buyer who learns it two days before closing generally cannot.
 
-The essential elements of transaction coordination are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 3.4 Communication that prevents disputes
 
-### 3.3 Roles and duties
+A short written status note at each milestone — what has been delivered, what remains, what the next date is — does more to prevent disputes than any other practice, because most disputes are about whether something was delivered and when.
 
-Responsibility for transaction coordination may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+## 4. Final verification and closing
 
-### 3.4 Workflow
+### 4.1 What the final verification is
 
-A defensible workflow for transaction coordination starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+The buyer's final verification of condition — the walkthrough — confirms that the property is in the condition the contract requires: agreed repairs completed, included items present, and the property not materially changed since the buyer's investigation.
 
-### 3.5 Documents and evidence
+It is **not** an inspection, and it is not a new opportunity to renegotiate condition the buyer already accepted.
 
-Documents connected with transaction coordination must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 4.2 What to check
 
-### 3.6 Quantitative and factual analysis
+- **Agreed repairs**, against the amendment that agreed them, with any documentation required.
+- **Included personal property** present — appliances, fixtures, window coverings, anything named in the contract.
+- **Systems operating** as they were.
+- **No new damage**, including damage from the seller's move-out.
+- **Property vacant** where the contract requires it, and personal property removed.
 
-Where transaction coordination involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 4.3 Responding to a problem
 
-### 3.7 California law and professional boundary
+> At the final verification the buyer finds an agreed repair was not completed.
+>
+> **The correct path:** document the finding — photographs, dated notes — and address it through the contract **before closing**, because the ordinary leverage to resolve it disappears once the transaction closes.
+>
+> **What does not work:** closing as scheduled and pursuing the seller afterward, which converts a solvable issue into a claim; instructing escrow to withhold funds, which escrow cannot do without mutual instruction; or treating the walkthrough as informational because it is not an inspection.
 
-California law controls the licensed activity associated with transaction coordination; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 4.4 The closing sequence
 
-### 3.8 Consumer protection and fair access
+Four events that licensees regularly conflate, in order:
 
-Consumer protection requires that transaction coordination be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+1. **Signing.** The parties execute the closing documents. The transaction is not closed.
+2. **Funding.** The lender releases loan proceeds to escrow, subject to its conditions.
+3. **Recording.** The deed and security instrument are recorded, establishing the interests of record and giving constructive notice. **This is generally when the buyer becomes the owner of record.**
+4. **Disbursement.** Escrow disburses once recording is confirmed.
 
-### 3.9 Applied scenario
+Recording precedes disbursement deliberately: it prevents a gap in which money has moved but the interests are not of record.
 
-Scenario: during escrow, title, closing, and possession, the file raises a question about transaction coordination. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 4.5 Recording order matters
 
-### 3.10 Decision checklist
+Where multiple instruments record, **the order establishes lien priority.** An out-of-sequence recording can place a new lender behind an interest it was to be ahead of. This is why closing is sequenced rather than simultaneous, and it is not a clerical preference.
 
-Before treating transaction coordination as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.6 Wire fraud at closing
 
-## 4. final verification and closing
+The highest-risk moment in the transaction is when the buyer sends funds. The pattern is covered in Lesson 02; the closing-specific practices are:
 
-### 4.1 Concept and purpose
+1. **Warn the buyer in writing, early**, that wire instructions will never change by email and that he must verify by voice before sending.
+2. **Verify by calling escrow at an independently obtained number** — never a number from the email carrying the instructions.
+3. **Treat any change to instructions as presumptively fraudulent** until verified through that independent channel.
 
-final verification and closing is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Escrow, title, closing, and possession, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+A licensee who sends that warning at the start of escrow, rather than the day funds move, has done the single most valuable thing available to protect a client's money.
 
-### 4.2 Essential elements
+## 5. Recording, disbursement, and possession
 
-The essential elements of final verification and closing are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 5.1 Possession is not ownership
 
-### 4.3 Roles and duties
+Ownership transfers at recording. **Possession transfers when the contract says it does**, which is frequently the same day and frequently not.
 
-Responsibility for final verification and closing may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Where they diverge, the arrangement must be documented.
 
-### 4.4 Workflow
+### 5.2 Post-closing occupancy
 
-A defensible workflow for final verification and closing starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Where the seller remains after closing, a written occupancy agreement should address:
 
-### 4.5 Documents and evidence
+| Term | Why |
+|---|---|
+| Duration and end date | The holdover risk is the whole problem |
+| Payment | What the seller pays, if anything |
+| Condition on delivery | The standard the property must meet |
+| Insurance | Who insures what, in whose name |
+| Utilities and maintenance | Responsibility during the period |
+| Deposit or holdback | Security for damage or holdover |
+| Remedy for failure to vacate | The point at which this becomes expensive |
 
-Documents connected with final verification and closing must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+A brief term does not reduce the need for terms. "They only need three days" is how a holdover with no agreed remedy begins, and the buyer now owns a property occupied by someone with no obligation he can enforce quickly.
 
-### 4.6 Quantitative and factual analysis
+### 5.3 Early possession before closing
 
-Where final verification and closing involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Riskier still, and generally to be discouraged. A buyer occupying before closing who then fails to close leaves the seller with an occupant and a property that must be re-marketed. Where it happens at all, it should be documented at least as carefully as post-closing occupancy, with counsel involved.
 
-### 4.7 California law and professional boundary
+### 5.4 Keys, access, and the transfer of control
 
-California law controls the licensed activity associated with final verification and closing; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+Practical items that generate complaints when handled loosely: when keys transfer and from whom; garage and gate remotes, mailbox keys, association access devices; changing codes on smart locks and alarms; and confirming the seller's remote access to cameras and smart devices is removed.
 
-### 4.8 Consumer protection and fair access
+That last one has become a real issue. A seller who retains app access to interior cameras after closing is a problem, and it should be addressed explicitly rather than assumed.
 
-Consumer protection requires that final verification and closing be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 5.5 Utilities and services
 
-### 4.9 Applied scenario
+Coordinate transfer dates so that services are not interrupted and neither party is billed for the other's period. This is administrative rather than legal, and it is a common source of avoidable client dissatisfaction.
 
-Scenario: during escrow, title, closing, and possession, the file raises a question about final verification and closing. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 5.6 Confirming closing to the client
 
-### 4.10 Decision checklist
+When recording is confirmed, tell the client — in writing, with the date and what it means. Clients frequently do not know whether they own the property, and the licensee is the person they will ask.
 
-Before treating final verification and closing as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+## 6. Post-closing file audit
 
-## 5. recording disbursement and possession
+### 6.1 Audit while memories are fresh
 
-### 5.1 Concept and purpose
+The most useful review of a transaction file happens shortly after closing. Its purpose is to confirm the file can answer questions later, and to catch anything obtainable while the participants still respond to messages.
 
-recording disbursement and possession is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Escrow, title, closing, and possession, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 6.2 The audit questions
 
-### 5.2 Essential elements
+1. **Completeness.** Every required document present — agency disclosures, agreement, offer and counteroffers, disclosures, notices, amendments, closing documents.
+2. **Dates.** Every document dated, and delivery evidenced where timing matters.
+3. **Consistency.** Names, dates, amounts, and property descriptions reconcile across documents.
+4. **Chronology.** The sequence makes sense against the contract's deadlines — the agency disclosure precedes the agreement, disclosures precede contingency removal, amendments precede the dates they change.
+5. **Nothing improper present.** No unexecuted draft mistaken for final, no superseded figure presented as current.
 
-The essential elements of recording disbursement and possession are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 6.3 Keep the superseded versions
 
-### 5.3 Roles and duties
+The instinct to keep only final documents should be resisted. **The sequence of versions is frequently what shows when a term changed and who agreed to it.** A file containing only executed finals can prove what was agreed but not how the parties arrived there — which is the question a dispute usually asks.
 
-Responsibility for recording disbursement and possession may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 6.4 What to do with findings
 
-### 5.4 Workflow
+- **Obtain what legitimately exists** — a missing copy, an unrecorded acknowledgment.
+- **Record what does not**, plainly.
+- **Escalate to the broker.**
+- **Address the process** that produced the gap, not only the instance.
 
-A defensible workflow for recording disbursement and possession starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 6.5 The line
 
-### 5.5 Documents and evidence
+> Creating a document now and dating it to match the transaction, or removing surrounding records so an inconsistency does not show, is **falsification**.
+>
+> A documented gap is survivable. A manufactured document is not, and it converts a compliance failure into conduct that ends a career.
 
-Documents connected with recording disbursement and possession must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+The same principle governs corrections generally: they are made visibly, with the original preserved and the change attributable. A record that can be silently altered is not a record.
 
-### 5.6 Quantitative and factual analysis
+### 6.6 Retention
 
-Where recording disbursement and possession involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The file is retained for the required period, which runs from closing. Cancelled and failed transactions are retained too — and are disproportionately the ones that later produce disputes, which is exactly why they must not be discarded as uninteresting.
 
-### 5.7 California law and professional boundary
+### 6.7 Checkpoint
 
-California law controls the licensed activity associated with recording disbursement and possession; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 5.8 Consumer protection and fair access
-
-Consumer protection requires that recording disbursement and possession be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 5.9 Applied scenario
-
-Scenario: during escrow, title, closing, and possession, the file raises a question about recording disbursement and possession. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 5.10 Decision checklist
-
-Before treating recording disbursement and possession as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
-
-## 6. post-closing file audit
-
-### 6.1 Concept and purpose
-
-post-closing file audit is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Escrow, title, closing, and possession, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
-
-### 6.2 Essential elements
-
-The essential elements of post-closing file audit are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
-
-### 6.3 Roles and duties
-
-Responsibility for post-closing file audit may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
-
-### 6.4 Workflow
-
-A defensible workflow for post-closing file audit starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with post-closing file audit must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where post-closing file audit involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with post-closing file audit; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that post-closing file audit be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during escrow, title, closing, and possession, the file raises a question about post-closing file audit. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating post-closing file audit as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to sequence signing, funding, recording, and disbursement; explain why escrow stops rather than deciding when the parties disagree; and state the correct response to a missing document found in a closed file.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. Separate the title issue from the contract issue and state which party and which process resolves each, identify what escrow may and may not do on the facts given, state the documentation the resolution requires, identify what you would refer to counsel, and list the evidence you would retain. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
