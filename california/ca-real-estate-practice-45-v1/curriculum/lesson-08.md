@@ -330,6 +330,255 @@ Most transaction disputes are not about substance. They are about **whether some
 
 You should be able to state how a term of the contract is changed, what escrow may do when the parties disagree, and why an undated notice is a defect even when everyone remembers what happened.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Purchase agreement** | The operative contract of the transaction. Everything after it — escrow instructions, lender documents, disclosures, notices — implements it or reports on it. |
+| **Conflict with escrow instructions** | Resolved in favor of **the parties' agreement**, reconciled by the parties in writing. Escrow does not decide. |
+| **Deposit (earnest money)** | The fund signaling commitment and from which a seller's remedy is typically drawn on buyer default. |
+| **Liquidated damages** | An amount agreed in advance as the seller's recovery on default. Must be properly agreed, and its enforceability is constrained by law. Not a penalty the seller may simply impose. |
+| **Naming what conveys** | Listing appliances, window coverings, mounted televisions, chandeliers, sheds, and smart-home equipment expressly, so the fixture tests never have to be applied after the fact. |
+| **Offer** | A proposal that, if accepted without change, forms a contract. |
+| **Mirror-image acceptance** | An acceptance must match the offer. Any change to a material term is not an acceptance. |
+| **Communication of acceptance** | Acceptance must reach the offeror in the manner contemplated. A signed acceptance in a drawer has not been communicated. |
+| **Counteroffer** | A **rejection** of the original offer and the substitution of a new one. The original is gone and cannot be accepted unless renewed. |
+| **Revocation** | Withdrawal of an offer before acceptance, generally permitted even where the offer states a deadline — unless supported by consideration as an option. |
+| **Seller's final election** | The provision making a seller's obligation contingent on subsequent written acceptance of the buyer's acceptance. The protection when countering multiple offers. |
+| **Backup offer** | A contract that becomes primary if the first transaction fails, in the position and on the terms agreed. Must be documented; "next in line" without one is nothing. |
+| **Contingency** | A condition on a party's obligation **inside a formed contract**. Not a delay of formation, not a general right to cancel, not a transfer of responsibility. |
+| **Removal in writing** | Under the standard California residential form, how a contingency ends. Contingencies **do not expire automatically** when the date passes. |
+| **Notice to buyer to perform** | The seller's route when a date passes without removal: a contractual notice starting a defined period, after which the seller may cancel per the contract. |
+| **Waiver** | Giving up a contingency. Removes the contractual path to act on what is found; does not prevent the buyer from investigating. |
+| **Counting of periods** | How the contract defines time — calendar or business days, whether the triggering day counts, weekend and holiday rolls, and the time of day a deadline falls. |
+| **Authorized delivery method** | The method the contract specifies for notices. A text message is not delivery unless the contract makes it so. |
+| **Undated notice** | A notice with no proof of timing — and timing is what disputes are about. |
+| **Amendment** | A change to a contract term, made by **writing signed by both parties** and delivered to escrow. Agent emails, verbal agreements, and escrow instructions alone do not amend. |
+| **Cancellation** | Exercising a right the contract provides, by the procedure it specifies. Not accomplished by announcing an intention, ceasing to perform, or instructing escrow. |
+| **Mutual instruction** | The only basis on which escrow may act where parties disagree. Escrow stops; it does not decide, and it cannot release a deposit on one party's say-so. |
+
+## Practice problems
+
+### Problem 1
+
+A buyer offers $880,000 with a 21-day investigation period and a March 30 closing. The seller strikes
+the price and writes $895,000, changes closing to March 20, signs, and returns it. The buyer signs
+it, but crosses out March 20 and writes March 25 before sending it back. The seller then says he no
+longer wants to sell at $895,000 and would accept the original $880,000 offer instead.
+
+**Trace the formation. Is there a contract, and can the seller accept the original offer?**
+
+> **Solution.** No contract, and no — the original offer is gone.
+>
+> The seller's changes were a **counteroffer**, which rejected the $880,000 offer and substituted a
+> new one. That is not an "acceptance with modifications" forming a contract on the seller's terms,
+> and it does not suspend the original offer leaving it available later. The original cannot be
+> accepted unless the buyer renews it.
+>
+> The buyer's signature with March 25 written on it is a **further counteroffer**, however small the
+> change. Signing does not convert a modification into an acceptance.
+>
+> Where the parties stand: the buyer's counteroffer at $895,000 / March 25 is outstanding. The seller
+> may accept it, reject it, or counter again — or ask the buyer to renew the original $880,000 terms,
+> which the buyer is free to decline.
+
+### Problem 2
+
+A buyer's offer states it is open for acceptance until 5:00 p.m. Friday. On Wednesday the buyer finds
+another property and withdraws it. On Thursday the seller signs the original offer and puts it in a
+file; his agent emails the signed copy to the buyer's agent on Friday morning.
+
+**Was a contract formed?**
+
+> **Solution.** No, on two independent grounds.
+>
+> **The offer was revoked before acceptance.** An offer may generally be revoked before acceptance
+> even where it states a deadline, unless supported by consideration as an option. A stated expiration
+> sets an outer limit; it does not make the offer irrevocable in the meantime.
+>
+> **And acceptance was not communicated on Thursday.** A signed acceptance sitting in a file has not
+> been communicated to the offeror — by Friday there was nothing left to accept.
+>
+> **What transfers, in both directions:** a buyer relying on "open until Friday" should know it can be
+> withdrawn Wednesday, and a seller intending to accept should not assume the offer will still be
+> there.
+
+### Problem 3
+
+A seller receives four offers. His agent counters three of them at $940,000 without any further
+provision. Two buyers accept.
+
+**What has happened, and what should have been done?**
+
+> **Solution.** The seller may now be **exposed on two contracts for one property**, which is the
+> hazard countering multiple offers creates.
+>
+> The customary protection is a provision making the seller's obligation contingent on the seller's
+> **subsequent written acceptance of the buyer's acceptance** — preserving a final election. A
+> licensee who counters multiple offers without it has exposed the client.
+>
+> Worth stating alongside it, because buyers assume otherwise: the seller chooses, there is no
+> obligation to accept the highest offer, and there is no priority by order of receipt.
+
+### Problem 4
+
+A seller instructs his agent to tell competing buyers there are three offers on the table. There is
+one. Separately, a buyer's agent asks the listing agent to reveal the competing offer's price, and
+the listing agent declines without asking the seller.
+
+**Assess both.**
+
+> **Solution.** These fail in **opposite directions**, and the licensee must satisfy both duties at
+> once.
+>
+> **The seller's instruction must be refused.** Saying there are multiple offers when there are not is
+> a misrepresentation, and a client's instruction cannot authorize one. Inventing competition breaches
+> the duty of honesty owed to the buyer. The same is true of describing an anticipated offer as an
+> existing one.
+>
+> **Declining to disclose the competing price is permissible** — whether competing terms are disclosed
+> is the seller's decision, not a right the competing buyers hold. But the agent should route it: the
+> call belongs to the seller. Disclosing terms **without** the seller's authorization would breach
+> confidentiality owed to the seller.
+>
+> **What transfers:** permissible silence and affirmative falsehood are not near neighbors. One is the
+> seller's prerogative; the other ends careers.
+
+### Problem 5
+
+The buyer's investigation contingency period ends on the 17th. Nothing is delivered. On the 18th the
+seller's agent tells the seller the contingency expired, the buyer is now committed, and the seller
+may accept a better offer that arrived overnight.
+
+**Correct each statement.**
+
+> **Solution.** All three are wrong, and they are the most confidently repeated errors in California
+> residential practice.
+>
+> **The contingency did not expire.** Under the standard form, contingencies remain in effect until
+> the buyer **removes them in writing**. They are not self-executing on a date.
+>
+> **The buyer is not committed.** He has not removed anything, so the protection is intact.
+>
+> **The seller is not free to sell elsewhere.** The seller's route is to deliver the **notice the
+> contract requires**, which starts the period the contract specifies. If the buyer removes during
+> that period, the notice is satisfied and the transaction continues; if he does not, the seller may
+> cancel per the contract's procedure.
+>
+> What is not true at any point: that the contract became void, that the buyer automatically became
+> committed, or that the seller could cancel on the 18th without notice.
+>
+> **The durable habit, more useful than the rule:** read the contract's own removal mechanism.
+> Different forms and negotiated terms operate differently, and the contract in front of you governs.
+
+### Problem 6
+
+A buyer's loan is denied while the loan contingency is in effect. He tells the listing agent by phone,
+emails escrow asking for his deposit back, and stops responding to requests for documents.
+
+**What has he done wrong, and what does the deposit dispute look like?**
+
+> **Solution.** He had a **path** and did not follow it. A contingency provides a route with
+> requirements: the written notice the contract specifies, within its terms, with any supporting
+> documentation.
+>
+> Each of his three acts forfeits protection rather than exercising it. A verbal notification to the
+> other agent is not the contractual notice. A unilateral instruction to escrow is not cancellation —
+> escrow may act only on **mutual** written instructions, and where the parties disagree it stops. And
+> simply ceasing to perform invites the seller to cancel for non-performance instead, which is a
+> materially worse position.
+>
+> On the deposit: it does not follow automatically from who was right. Escrow holds pending mutual
+> instruction or resolution through the contract's dispute resolution provisions or the courts. The
+> licensee explains that mechanism and does **not** predict the outcome or advise on entitlement,
+> which is a legal question.
+
+### Problem 7
+
+The parties agree during escrow to move closing back one week. The agents confirm by email, escrow is
+told, and everyone proceeds. The transaction later fails and the parties dispute who breached.
+
+**What is the operative closing date?**
+
+> **Solution.** **The original one.** A change to a contract term is made by written amendment signed
+> by both parties and delivered to escrow so the instructions match the agreement.
+>
+> An email between the agents does not amend the contract — the agents are not the parties. Neither
+> does a verbal agreement between the parties, an instruction to escrow alone, or a shared
+> understanding that a short extension "won't matter."
+>
+> The parties are now litigating on a contract whose closing date is the original one, with an email
+> chain between non-parties as the evidence of a change.
+>
+> **What transfers:** time is a term. A licensee who treats a closing date as a scheduling preference
+> will eventually explain to a client why the other party was entitled to act.
+
+### Problem 8
+
+A closed file contains: an email agreeing to move the closing date with no signed amendment; a
+contingency removal that is signed but undated; a transfer disclosure with two items blank; and an
+agency confirmation naming a relationship different from the disclosure earlier in the file.
+
+**Rank the defects and state the correct response.**
+
+> **Solution.** **The agency contradiction is the most serious**, and different in kind: it suggests
+> the brokerage acted on both sides without documented consent — a breach of duties actually owed
+> rather than a paperwork gap.
+>
+> **The undated removal is next.** Rights ran from it, and the file cannot show when. An undated
+> notice is a notice with no proof of timing, and timing is what disputes are about — even when
+> everyone remembers what happened.
+>
+> **The unsigned date change** means the operative contract still says the original date. **The blanks**
+> leave the disclosure ambiguous about whether those items were addressed at all.
+>
+> **The response:** record each finding, escalate to the broker, and obtain what legitimately exists.
+> What must **not** happen is dating the removal now, completing the blanks now, or producing an
+> amendment now with a matching date. A documented gap is survivable; a backdated document is
+> falsification, and it converts a compliance problem into conduct that ends a career.
+
+## Chapter summary
+
+**The purchase agreement is a contract to be understood, not a form to be filled.** Where escrow's
+instructions conflict with it, the parties' agreement governs, reconciled by the parties in writing.
+
+**Learn the functional components** — parties and property, price and deposit, financing, escrow and
+title, cost allocation, contingencies, disclosures, investigation rights, repairs, closing and
+possession, notices, default and remedies, dispute resolution, agency confirmation — rather than a
+form's paragraph numbers.
+
+**Name what conveys** so the fixture tests never have to be applied after the fact.
+
+**Three formation rules dispose of most questions:** an offer accepted without change forms a
+contract; an acceptance must match the offer; acceptance must be communicated.
+
+**A counteroffer rejects and replaces.** The original offer is gone, not suspended, and a signature
+with a change written on it is a further counteroffer however small the change.
+
+**An offer may generally be revoked before acceptance**, even one stating a deadline.
+
+**Counter multiple offers only with the seller's final election preserved**, or the seller may end up
+bound twice.
+
+**Declining to disclose competing terms is the seller's prerogative; inventing them is a
+misrepresentation** — and a client's instruction cannot authorize one. Disclosing without the
+seller's authority breaches the other duty. Both must be satisfied at once.
+
+**A contingency conditions an obligation inside a formed contract**, and under the standard
+California form it ends only by **written removal**. Dates are not self-executing; the seller's route
+is the contractual notice to perform.
+
+**Waiver removes the path, not the ability to investigate**, and the exposure should be put in writing
+before the buyer decides.
+
+**Build the deadline calendar from the contract**, read its own definitions of how time is counted,
+deliver notices by the authorized method, and keep the evidence.
+
+**Amend in writing, signed, and deliver to escrow.** Cancel by the contract's procedure. Escrow acts
+only on mutual instruction and never decides between the parties.
+
+**Most disputes are about whether something was delivered, to whom, and when** — which is why the
+practices that prevent them are documentary rather than interpersonal.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. State whether a contract exists and on whose terms, identify each contingency in effect and what would be required to remove it, build the deadline calendar from the contract's terms, identify the notice each next step requires and its delivery method, and state what evidence you would retain. The instructor version contains the scoring rubric.

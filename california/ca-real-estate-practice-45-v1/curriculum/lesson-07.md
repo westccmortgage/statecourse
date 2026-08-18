@@ -411,6 +411,263 @@ The moment of acceptance starts the clock on everything that follows, and the bu
 
 You should be able to build an offer strategy that competes on terms rather than price alone, explain why a credit does not reduce the appraisal requirement, and list what the file must contain to show the terms were the buyer's informed decision.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Buyer consultation** | The meeting establishing objectives, constraints, and financial position before any property is shown. Also sets the professional relationship before the emotional part of house-hunting begins. |
+| **Stated criterion versus purpose** | "Three bedrooms" is a proxy; the purpose behind it is the actual specification. Knowing the purpose changes which properties qualify. |
+| **Decision process** | Who actually decides. A buyer whose spouse has not seen the property, or whose parent supplies funds, has decision-makers not in the room. |
+| **Buyer representation agreement** | A contract between the buyer and the **brokerage** engaging it to represent the buyer, on negotiable terms. |
+| **Exclusivity** | The term binding the buyer to the brokerage within the agreed scope and term — including for a property the buyer finds himself. The term buyers least expect and the one that generates complaints. |
+| **Scope** | The geographic area, property type, and price range the agreement covers. A narrow scope leaves the buyer free outside it. |
+| **Source of payment** | Who pays the buyer's agent. Does **not** determine representation — a buyer's agent compensated from the seller's side still represents the buyer. |
+| **Prequalification** | A lender's preliminary assessment on largely stated information. Establishes a rough range; verifies nothing. |
+| **Preapproval** | A lender's review of supporting information. Establishes a likely amount, subject to conditions. **Not** a commitment to lend. |
+| **Loan commitment** | A conditional or firm commitment after underwriting. Substantially more certainty, and still not immunity from changed circumstances. |
+| **The three numbers** | What the buyer can borrow, what cash is available, and what the buyer is willing to spend. The third should drive the search. |
+| **Gift versus loan** | Family assistance treated differently by the lender. An undisclosed loan is a hidden obligation that undermines the capacity analysis. |
+| **Steering** | Letting the licensee's judgment about where a buyer belongs shape which properties he sees or how they are presented. Defined by **whose criteria drove the selection**, not by intent. |
+| **Assumed suitability** | Deciding on a buyer's behalf that a property "won't work" for him and not showing it. Steering, committed with good intentions. |
+| **Declining to characterize** | The professional skill of answering a neighborhood question by refusing the characterization, giving an honest reason, and pointing to a source the buyer can use himself. |
+| **Visual inspection duty** | The licensee's own reasonably competent and diligent visual inspection of accessible areas, with disclosure of material facts it reveals. Bounded, and **independent** of the seller's disclosure and of any professional inspection. |
+| **Matched investigation** | Investigation recommendations driven by this property's features rather than recited generically. |
+| **The limit of the license** | The licensee advises investigation and discloses observations; the licensee does not evaluate conditions, assess repairs, estimate costs, or advise whether a finding is serious. |
+| **Contingency waiver** | The buyer's decision to give up a contractual protection. The licensee's obligation is to make it informed in writing — neither refusing to write the offer nor writing it without comment. |
+| **Concession** | A credit or other term requested from the seller. **Not** a price reduction for appraisal purposes. |
+| **Escalation clause** | An automatic increase over a competing offer up to a cap. Whether to use one is the buyer's decision; whether he understands it is the licensee's responsibility. |
+| **Probability of closing** | What sellers weigh alongside price. The lever that lets a buyer compete on terms rather than only on money. |
+
+## Practice problems
+
+### Problem 1
+
+A buyer says he needs three bedrooms in a specific district, under $850,000, within sixty days. At
+week six the licensee learns that the third bedroom is for the buyer's mother, who uses a walker,
+and that the sixty days is driven by a lease that cannot be extended.
+
+**What did the consultation fail to establish, and what changes?**
+
+> **Solution.** Both the **purpose** behind the criterion and the **nature of the constraint**.
+>
+> "Three bedrooms" was a proxy. The actual specification is single-story or a ground-floor bedroom
+> with accessible bathroom access, and proximity to care — which disqualifies properties that met the
+> stated criterion and qualifies some that failed it.
+>
+> The constraint is equally consequential: a lease that cannot be extended makes the sixty days hard
+> rather than a preference, which changes the offer strategy and the contingency periods.
+>
+> **What transfers:** a constraint the licensee learns in week six was a constraint in week one. The
+> consultation is where "what's your budget?" is replaced by "what monthly payment are you
+> comfortable with?" and "how many bedrooms?" by "who will be living there, and how will each room be
+> used?"
+
+### Problem 2
+
+A licensee tells a buyer that a representation agreement is "just so I can show you properties" and
+that state law requires one before showings. The buyer signs. Six weeks later he buys a home he found
+himself at an open house in the same area and price range, and objects to the compensation claim.
+
+**Identify both defects.**
+
+> **Solution.** **The law was misstated.** A signed representation agreement before showing is a
+> **brokerage policy** decision, not a legal requirement. What is not optional is the **agency
+> disclosure**, which is required regardless of whether a representation agreement is signed. A
+> licensee may state a policy as a policy; stating it as law is a misrepresentation.
+>
+> **Exclusivity was never explained.** The honest version says plainly that within this area and price
+> range and for this term the brokerage represents him — **including a home he finds himself at an
+> open house, and including if he works with another agent on it** — and offers to shorten the term or
+> narrow the scope if he would rather not commit that way.
+>
+> **What transfers:** a buyer who hears that and signs has agreed. A buyer who signs after "it's just
+> so I can show you properties" has not, and will say so later — as this one did.
+
+### Problem 3
+
+A buyer presents a preapproval letter for $1.1 million. It states that no income or asset
+documentation was reviewed, lists six outstanding conditions, and expired four days ago. The buyer's
+comfortable monthly payment supports roughly $860,000, and a relative has offered $100,000 of help.
+
+**What should the licensee do with each fact?**
+
+> **Solution.** **Read the letter and tell the buyer what it establishes** — which here is very little.
+> Nothing was verified, six conditions remain, and it has expired. Say so plainly, because the
+> seller's agent will read it exactly the same way, and an offer carrying it will be weighed
+> accordingly.
+>
+> **Search to $860,000, not $1.1 million.** What the buyer is willing to spend is usually below what
+> he can borrow, and it is the number that should drive the search. Searching to the lender's maximum
+> shows properties the buyer will feel unable to afford. Where the numbers conflict, the conflict is
+> the conversation — held now, deliberately, rather than discovered at the offer stage.
+>
+> **The relative's $100,000: confirm with the lender first.** Ask the buyer to confirm how the
+> assistance would be treated and documented, do not build the search around the higher figure until
+> that is confirmed, and do not contact the relative directly. A gift and a loan are treated
+> differently, because an undisclosed loan is a hidden obligation that undermines the lender's
+> capacity analysis.
+
+### Problem 4
+
+A buyer asks his agent to describe "what kind of people live" in a neighborhood, whether it is safe,
+and which schools are good. The agent replies that he cannot discuss those topics and suggests they
+look at another area he thinks would suit the buyer better.
+
+**What is wrong, and what should each answer have been?**
+
+> **Solution.** Two failures. The refusal was a **dead end** — the buyer has a real informational need
+> and will get an answer somewhere, probably a worse one. And the redirection is **steering**:
+> answering by showing rather than telling, which conveys the characterization the agent declined to
+> state.
+>
+> Each answer should do three things — decline the characterization, give an honest reason, and leave
+> the buyer better equipped:
+>
+> *Who lives there:* "I don't describe neighborhoods by who lives in them, and honestly my impression
+> wouldn't be worth much. Here's census data and the city's own information so you can look at
+> whatever matters to you."
+>
+> *Safety:* "That isn't something I can characterize for you. Local law enforcement publishes incident
+> data by area — here's where. I'd also visit at different times of day."
+>
+> *Schools:* "Evaluate them against your own priorities. The district publishes performance data —
+> here's the link. I'd avoid ranking them, because what matters in a school varies a lot by family."
+>
+> **What transfers:** answering "in general terms" is not a middle path. A general characterization is
+> still a characterization.
+
+### Problem 5
+
+A buyer with a mobility impairment asks about a two-story listing. His agent, believing the stairs
+will be a problem, does not schedule it and shows three single-story homes instead. He also follows
+up on some buyer inquiries within an hour and others in two days, and presents certain listings
+warmly and others flatly.
+
+**Classify each behavior.**
+
+> **Solution.** All three are steering, and the first is the one committed with the best intentions.
+>
+> **Assumed suitability.** The buyer decides what works for him; the licensee provides accurate
+> information about the property — here, that access is by stairs with no elevator. Deciding on his
+> behalf and omitting the property is steering however kindly meant.
+>
+> **Differential effort.** Prompt follow-up on some inquiries and slower on others allocates access
+> unequally, and the distinction cannot be defended afterward in neutral terms.
+>
+> **Differential enthusiasm.** Showing everything but presenting some properties warmly and others
+> flatly shapes the selection just as effectively as declining to show them.
+>
+> **The defense is the record:** the buyer's stated criteria, the search parameters used, the
+> properties presented with dates, and the reason where a matching property was not shown. A list of
+> properties shown without the criteria that produced it shows what happened without showing why.
+
+### Problem 6
+
+A 1958 house sits on a downslope lot with a retaining wall, a converted garage, a septic system, and
+a pool. The buyer says a general home inspection is enough.
+
+**What should be recommended, and how should the licensee handle "the inspector flagged the
+electrical panel — is that a big deal?"**
+
+> **Solution.** A general inspection is the baseline; the property calls for more. Systems and sewer
+> or septic inspection, and given the age, lead-based paint and asbestos evaluation where applicable.
+> Geotechnical or drainage evaluation for the slope and retaining wall. **Permit records for the
+> converted garage**, which also bears on legal square footage. Pool equipment and safety compliance.
+> Insurance availability and cost if the property is in a mapped fire, flood, or seismic area —
+> obtained **before the contingency expires**, not after.
+>
+> On the panel: "That's outside what I'm qualified to assess, and it's exactly the kind of finding
+> worth having an electrician look at before your contingency expires. Would you like me to arrange
+> that? I'll note in the file that we discussed it."
+>
+> What must not be said is "those panels come up all the time, it's usually not serious" — an
+> evaluation the licensee is not qualified to make, on which the buyer may rely.
+>
+> **What transfers:** the licensee's three jobs are advise investigation, disclose what he knows and
+> what his own visual inspection revealed, and refer beyond the limit of the license. Reviewing the
+> seller's disclosure is not performing the visual inspection, and recommending an inspector does not
+> discharge it.
+
+### Problem 7
+
+In competition, a buyer wants to waive the inspection contingency. One licensee refuses to write the
+offer. Another writes it without comment.
+
+**Both are wrong. What is correct?**
+
+> **Solution.** Refusing overstates the licensee's role — the terms are the buyer's decision. Writing
+> it without comment abandons the advisory duty. The correct path is between them:
+>
+> Explain **in writing** what protection the contingency provides and what waiving it exposes him to.
+> Note that he may still investigate without the contingency — he simply has no contractual path to
+> act on what he finds. Then follow his informed decision, and record it.
+>
+> **What transfers:** the same division governs offer terms as governs listing price. The buyer
+> decides; the licensee supplies the analysis, the risks, and the options, and the file shows the
+> decision was informed.
+
+### Problem 8
+
+A buyer is choosing between offering $920,000 with a $15,000 closing cost credit and $905,000 with
+none. He assumes the seller sees them as equivalent and that the credit reduces his exposure. He also
+assumes the highest offer must be accepted.
+
+**Correct each assumption.**
+
+> **Solution.** **The credit is not a price reduction for appraisal purposes.** The property must
+> still appraise at **$920,000** for the lender to lend against it — against $905,000 on the other
+> structure. If it comes in at $900,000, the gap on the first is $20,000 rather than $5,000, and it
+> is the buyer's to cover.
+>
+> **The seller does not see them as equivalent, and price is not the only factor.** There is no rule
+> requiring the highest offer to be accepted and no priority by order of receipt. Sellers weigh
+> **probability of closing** alongside price — financing strength and verified funds, a closing date
+> matched to their needs, fewer or shorter contingencies, appraisal gap coverage, and post-closing
+> occupancy where they need it. That is how a buyer competes on terms instead of only on money.
+>
+> One more thing worth saying at acceptance: build the deadline calendar from the contract, confirm
+> the deposit is delivered per its terms, open the investigation work early, and **warn the buyer in
+> writing about wire fraud before any funds move** — including that wire instructions will never be
+> changed by email.
+
+## Chapter summary
+
+**The consultation comes before any showing.** Objectives, constraints, financial position, decision
+process, and expectations about the sequence. The stated criterion is a proxy; the purpose behind it
+is the specification.
+
+**Agency disclosure belongs at the consultation**, because agency can arise from conduct. Disclose,
+then discuss representation, then search.
+
+**The representation agreement is the brokerage's contract and is negotiable.** Exclusivity is the
+term buyers least expect, and explaining it honestly is what makes it enforceable in practice. The
+source of compensation does not determine who is represented.
+
+**Prequalification, preapproval, and commitment are three different things**, and none guarantees
+funding. Read the letter rather than filing it.
+
+**Three numbers, and the search follows the third:** what he can borrow, what cash exists, and what
+he is willing to spend.
+
+**The buyer sets the criteria; the licensee applies them.** Steering is defined by whose criteria
+drove the selection — which is why assumed suitability, differential effort, and differential
+enthusiasm are steering despite good intentions.
+
+**Decline characterizations well:** refuse, give an honest reason, and point to a source the buyer
+can use. Refusing flatly and answering "in general terms" both fail.
+
+**The visual inspection duty is the licensee's own** — bounded to accessible areas and visual
+observation, and independent of both the seller's disclosure and any professional inspection.
+
+**Match investigation to the property.** Age, slope, conversions, well and septic, pool, mapped
+hazard areas, and common interest developments each call for something specific.
+
+**Do not evaluate findings.** Confirm the buyer engaged with the report, help him identify which
+findings warrant a specialist, track the deadline, and document what was recommended and decided.
+
+**Terms are the buyer's; advice is the licensee's** — including on waivers, escalation clauses, and
+concessions. A credit does not reduce what the appraisal must support, and sellers weigh probability
+of closing alongside price.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify the buyer's stated criteria and the purpose behind each, the financial facts that require confirmation and from whom, the questions you would decline to answer and how you would respond instead, the investigation you would recommend for this property, the offer terms you would advise and why, and the evidence you would retain. The instructor version contains the scoring rubric.
