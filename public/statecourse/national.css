@@ -215,6 +215,24 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .source-box a { color: var(--brick-dark); text-decoration: underline; text-underline-offset: 3px; }
 .notice { padding: 18px 20px; background: #f0e3df; border-left: 4px solid var(--brick); color: #603d37; font-size: 13px; }
 
+.state-cta { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: center; margin: 0 0 40px; padding: 34px 36px; background: var(--navy); color: #fffdf8; }
+.state-cta .overline { color: var(--gold); }
+.state-cta h2 { margin: 0 0 10px; color: #fffdf8; font: 400 30px/1.15 var(--serif); }
+.state-cta p { margin: 0; max-width: 58ch; color: #cfd8de; font-size: 14px; line-height: 1.55; }
+.state-cta .cta-actions { display: grid; gap: 12px; justify-items: stretch; text-align: center; }
+.cta-button { display: inline-block; min-width: 232px; padding: 15px 26px; background: var(--brick); color: #fff; border: 1px solid var(--brick); font-size: 14px; font-weight: 850; letter-spacing: .02em; text-align: center; }
+.cta-button:hover { background: var(--brick-dark); border-color: var(--brick-dark); color: #fff; }
+.cta-secondary { color: #cfd8de; font-size: 12px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.cta-secondary:hover { color: #fffdf8; }
+.source-box + .state-cta { margin-top: 55px; margin-bottom: 0; }
+.state-cta .cta-note { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,253,248,.18); color: #aebdc7; font-size: 12px; line-height: 1.5; }
+
+@media (max-width: 860px) {
+  .state-cta { grid-template-columns: 1fr; gap: 22px; padding: 26px 22px; }
+  .state-cta h2 { font-size: 25px; }
+  .cta-button { width: 100%; min-width: 0; }
+}
+
 @media (max-width: 1080px) {
   .desktop-nav { display: none; }
   .header-shell { grid-template-columns: 1fr auto auto; }
