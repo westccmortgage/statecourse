@@ -2,290 +2,342 @@
 
 ## Purchase agreements, counteroffers, and contingencies
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze California purchase agreement architecture using verified facts, current authority, and a documented professional workflow.
-- Analyze offer presentation using verified facts, current authority, and a documented professional workflow.
-- Analyze counteroffers and multiple offers using verified facts, current authority, and a documented professional workflow.
-- Analyze financing appraisal and inspection contingencies using verified facts, current authority, and a documented professional workflow.
-- Analyze deadlines notices and removal using verified facts, current authority, and a documented professional workflow.
-- Analyze amendment cancellation and dispute prevention using verified facts, current authority, and a documented professional workflow.
+- Identify the structural components of a California residential purchase agreement and explain what each governs.
+- Apply offer, acceptance, and counteroffer rules to determine whether a contract exists and on whose terms.
+- Explain what a contingency does inside a formed contract, and how the standard California form removes one.
+- Build a deadline calendar from a contract and apply the notice mechanism the contract requires.
+- Distinguish a permissible refusal to disclose competing offer terms from a misrepresentation about them.
+- Document amendments, cancellations, and notices so that a later dispute about timing can be answered.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: agreement architecture and offer formation | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: multiple offers and contingency mechanics | 50 | Sections 3-4 viewed |
+| Guided reading: deadlines, notices, and dispute prevention | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
 ## 1. California purchase agreement architecture
 
-### 1.1 Concept and purpose
+### 1.1 What the agreement is
 
-California purchase agreement architecture is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Purchase agreements, counteroffers, and contingencies, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+The residential purchase agreement is the operative contract of the transaction. Everything that follows — escrow instructions, lender documents, disclosures, notices — implements it or reports on it. Where escrow's instructions and the purchase agreement conflict, **the parties' agreement governs**, and the discrepancy is reconciled by the parties in writing rather than by escrow deciding.
 
-### 1.2 Essential elements
+Licensees who treat the agreement as a form to be filled rather than a contract to be understood cannot answer their client's questions about their own transaction, and cannot recognize when a proposed change matters.
 
-The essential elements of California purchase agreement architecture are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 1.2 The functional components
 
-### 1.3 Roles and duties
+Rather than memorizing a form's paragraph numbers, learn what any residential purchase agreement must address:
 
-Responsibility for California purchase agreement architecture may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+| Component | What it governs |
+|---|---|
+| **Parties and property** | Who is bound, and what is being conveyed, including personal property |
+| **Price and deposit** | The consideration, and what the deposit secures |
+| **Financing terms** | The loan the buyer will obtain, and the down payment |
+| **Escrow and title** | Who holds, who insures, and the form of title policy |
+| **Allocation of costs** | Which party pays which closing costs |
+| **Contingencies** | The conditions qualifying the buyer's obligation, and their periods |
+| **Disclosure obligations** | What the seller must deliver, and when |
+| **Investigation rights** | The buyer's right to inspect, and the seller's obligation to provide access |
+| **Repairs and credits** | Whether any are agreed, and how they are performed |
+| **Closing and possession** | When title transfers, and when the buyer takes possession |
+| **Notices and delivery** | How communications that carry legal effect must be made |
+| **Default and remedies** | What happens if a party fails to perform, including liquidated damages |
+| **Dispute resolution** | Mediation and arbitration provisions |
+| **Agency confirmation** | The relationships elected |
 
-### 1.4 Workflow
+### 1.3 The deposit
 
-A defensible workflow for California purchase agreement architecture starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+The deposit — earnest money — performs two functions: it signals commitment, and it is the fund from which a seller's remedy is typically drawn if the buyer defaults.
 
-### 1.5 Documents and evidence
+Points the buyer must understand before he offers it:
 
-Documents connected with California purchase agreement architecture must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+- **Where it goes.** To escrow, per the contract's terms, within the time the contract specifies.
+- **When it is at risk.** Not on any change of mind — a buyer acting within a contingency generally has a path to recover it. Once contingencies are removed, the exposure changes materially.
+- **Liquidated damages.** Where the parties agree in advance that a specified amount will be the seller's recovery on default, that provision must be properly agreed, and its enforceability is constrained by law. It is not a penalty the seller may simply impose.
 
-### 1.6 Quantitative and factual analysis
+### 1.4 What conveys
 
-Where California purchase agreement architecture involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Fixtures generally convey; personal property generally does not. Because the fixture tests are difficult to apply after the fact, the professional practice is to make them unnecessary by naming the disputed items.
 
-### 1.7 California law and professional boundary
+Items worth naming explicitly in most transactions: appliances, window coverings, mounted televisions and their brackets, chandeliers and light fixtures, above-ground spas, storage sheds and outbuildings, security and smart-home equipment, water treatment systems, and anything the seller has said they intend to take.
 
-California law controls the licensed activity associated with California purchase agreement architecture; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 1.5 Time is a term
 
-### 1.8 Consumer protection and fair access
+Nearly every obligation in the agreement carries a date or a period, and those dates are terms of the contract rather than administrative targets. A licensee who treats a closing date as a scheduling preference will eventually explain to a client why the other party was entitled to act.
 
-Consumer protection requires that California purchase agreement architecture be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 2. Offer presentation and formation
 
-### 1.9 Applied scenario
+### 2.1 The formation rules
 
-Scenario: during purchase agreements, counteroffers, and contingencies, the file raises a question about California purchase agreement architecture. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Three rules resolve most questions:
 
-### 1.10 Decision checklist
+1. **An offer is a proposal that, if accepted without change, forms a contract.**
+2. **An acceptance must match the offer.** Any change to a material term is not an acceptance.
+3. **Acceptance must be communicated** to the offeror in the manner the offer or the law contemplates. A signed acceptance sitting in a drawer has not been communicated.
 
-Before treating California purchase agreement architecture as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 2.2 The counteroffer
 
-## 2. offer presentation
+When a seller changes the price and the closing date and signs, the effect is precise and is worth stating in full:
 
-### 2.1 Concept and purpose
+> The counteroffer **rejects** the original offer and **substitutes a new one**. The original offer can no longer be accepted unless it is renewed. The buyer may accept, reject, or counter again.
 
-offer presentation is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Purchase agreements, counteroffers, and contingencies, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Two consequences licensees regularly get wrong:
 
-### 2.2 Essential elements
+- It is **not** an "acceptance with modifications" that forms a contract on the seller's terms.
+- It does **not** suspend the original offer, leaving it available if the counteroffer is rejected. The original is gone.
 
-The essential elements of offer presentation are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+The same applies in the other direction. A buyer who signs a counteroffer but writes a change on it before returning it has made a further counteroffer, however small the change. Signing does not convert a modification into an acceptance.
 
-### 2.3 Roles and duties
+### 2.3 Revocation and expiration
 
-Responsibility for offer presentation may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+An offer may generally be **revoked before acceptance**, even where it states a deadline — unless it is supported by consideration as an option. A stated expiration sets an outer limit; it does not make the offer irrevocable in the meantime.
 
-### 2.4 Workflow
+Practical consequence for a buyer's licensee: an offer stated to be open until Friday can be withdrawn Wednesday, and a buyer who is relying on the deadline should know that. Practical consequence for a seller's licensee: a seller intending to accept should not assume the offer will still be there.
 
-A defensible workflow for offer presentation starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 2.4 Presenting offers
 
-### 2.5 Documents and evidence
+The seller's licensee presents offers; the seller decides. Within that:
 
-Documents connected with offer presentation must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+- **All offers are presented** unless the seller has lawfully instructed otherwise, and the licensee should understand and document any such instruction.
+- **The presentation is accurate.** Terms are described as they are, including terms unfavorable to a quick decision.
+- **The licensee advises**, including on the terms that make one offer more likely to close than another, rather than presenting price alone.
+- **The seller's decision is the seller's**, including a decision the licensee considers unwise.
 
-### 2.6 Quantitative and factual analysis
+### 2.5 Electronic signature and delivery
 
-Where offer presentation involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Electronic signature is ordinary in California residential practice. Two points matter:
 
-### 2.7 California law and professional boundary
+1. **Delivery still has to happen and still has to be evidenced.** An executed document in a signing platform that no one delivered has not been delivered, and the platform's audit trail is frequently the best evidence of when it was.
+2. **The contract's own notice provisions govern** what constitutes delivery for a notice that carries legal effect. Delivery by a method the contract does not authorize may not count.
 
-California law controls the licensed activity associated with offer presentation; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 2.6 Checkpoint
 
-### 2.8 Consumer protection and fair access
+You should be able to take a sequence of signed documents and say at which point, if any, a contract was formed and on whose terms.
 
-Consumer protection requires that offer presentation be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 3. Counteroffers and multiple offers
 
-### 2.9 Applied scenario
+### 3.1 How multiple offers actually work
 
-Scenario: during purchase agreements, counteroffers, and contingencies, the file raises a question about offer presentation. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Three rules that dispose of most buyer and seller misconceptions:
 
-### 2.10 Decision checklist
+1. **The seller chooses.** There is no obligation to accept the highest offer.
+2. **There is no priority by order of receipt.** An earlier offer has no claim over a later one.
+3. **The seller decides whether competing terms are disclosed.** Disclosure is the seller's call, made with their agent, not a right the competing buyers hold.
 
-Before treating offer presentation as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 3.2 Countering multiple offers
 
-## 3. counteroffers and multiple offers
+A seller may counter more than one offer at once. Doing so creates a real hazard the licensee must manage: if two counteroffers are accepted, the seller may be exposed on both.
 
-### 3.1 Concept and purpose
+The customary protection is a provision making the seller's obligation contingent on the seller's subsequent written acceptance of the buyer's acceptance — so the seller retains a final election. A licensee who counters multiple offers without that protection has exposed the client.
 
-counteroffers and multiple offers is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Purchase agreements, counteroffers, and contingencies, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 3.3 The line between confidentiality and misrepresentation
 
-### 3.2 Essential elements
+This is the most consequential distinction in the section.
 
-The essential elements of counteroffers and multiple offers are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+| Conduct | Assessment |
+|---|---|
+| Declining to disclose competing offer terms | **Permissible.** The seller decides. |
+| Saying "there are multiple offers" when there are | Permissible and accurate |
+| Saying "there are multiple offers" when there are not | **Misrepresentation** |
+| Describing a competing offer's terms accurately, with the seller's authorization | Permissible |
+| Inventing a competing offer's terms to raise the price | **Misrepresentation** |
+| Describing an anticipated offer as an existing one | **Misrepresentation** |
+| Disclosing terms without the seller's authorization | Breach of duty to the seller |
 
-### 3.3 Roles and duties
+Note that two of these fail in opposite directions: inventing competition breaches the duty of honesty owed to the buyer; disclosing without authority breaches the duty of confidentiality owed to the seller. A licensee must satisfy both at once.
 
-Responsibility for counteroffers and multiple offers may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+A client's instruction cannot authorize a misrepresentation. A seller who directs the agent to say there are three offers when there are none has asked for something the agent must refuse.
 
-### 3.4 Workflow
+### 3.4 Backup offers
 
-A defensible workflow for counteroffers and multiple offers starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+A backup offer is a contract that becomes primary if the first transaction fails, in the position and on the terms agreed. It must be documented as such — a buyer who believes he is "next in line" without a written backup agreement has nothing.
 
-### 3.5 Documents and evidence
+The seller's licensee should ensure the primary buyer's rights are not compromised and that the backup buyer understands his position, including whether and when his deposit is at risk.
 
-Documents connected with counteroffers and multiple offers must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 3.5 Advising a buyer in competition
 
-### 3.6 Quantitative and factual analysis
+Useful advice competes on terms rather than only on price — financing strength, timeline, contingency periods, occupancy — and is honest about the exposures each concession creates. Advice that is not useful: encouraging a buyer to waive protections without explaining what he is giving up, or presenting an escalation clause without ensuring he understands its mechanics and that the escalated price must still appraise.
 
-Where counteroffers and multiple offers involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+## 4. Contingency mechanics
 
-### 3.7 California law and professional boundary
+### 4.1 What a contingency is
 
-California law controls the licensed activity associated with counteroffers and multiple offers; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+A contingency **conditions a party's obligation** on a defined event or approval, inside a contract that has already been formed. Three things it is not:
 
-### 3.8 Consumer protection and fair access
+- It does not delay formation. The contract exists.
+- It is not a general right to cancel for any reason.
+- It does not transfer the underlying responsibility to the other party.
 
-Consumer protection requires that counteroffers and multiple offers be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 4.2 The common residential contingencies
 
-### 3.9 Applied scenario
+| Contingency | What it protects | Typical resolution |
+|---|---|---|
+| **Investigation / inspection** | The buyer's ability to evaluate condition | Removed after investigation, or used to request repairs or cancel |
+| **Loan** | The buyer's ability to obtain the financing described | Removed on loan approval, or used to cancel if denied |
+| **Appraisal** | The buyer's exposure if value does not support the price | Removed, or used to renegotiate or cancel |
+| **Sale of buyer's property** | The buyer's dependence on another closing | Removed on that closing, subject to the agreed terms |
+| **Review of documents** | Time to review disclosures, reports, HOA documents | Removed after review |
+| **Title review** | The buyer's ability to evaluate title exceptions | Removed after review of the preliminary report |
 
-Scenario: during purchase agreements, counteroffers, and contingencies, the file raises a question about counteroffers and multiple offers. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 4.3 How removal actually works
 
-### 3.10 Decision checklist
+This is the single most misunderstood mechanic in California residential practice, and getting it wrong produces confident, wrong advice on both sides.
 
-Before treating counteroffers and multiple offers as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+> **Under the standard California residential purchase agreement form, contingencies remain in effect until the buyer removes them in writing. They do not expire automatically when the date passes.**
 
-## 4. financing appraisal and inspection contingencies
+Consequences:
 
-### 4.1 Concept and purpose
+- A buyer who lets the date pass without delivering a removal has **not** removed the contingency.
+- A seller cannot treat the transaction as firm merely because the date has passed.
+- The seller's route is to deliver the **notice the contract requires**, giving the buyer a defined period to act, after which the seller may cancel per the contract.
 
-financing appraisal and inspection contingencies is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Purchase agreements, counteroffers, and contingencies, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+The habit to build is more durable than the rule: **read the contract's own removal mechanism** rather than assuming deadlines are self-executing. Different forms and negotiated terms can operate differently, and the contract in front of you governs.
 
-### 4.2 Essential elements
+### 4.4 A worked sequence
 
-The essential elements of financing appraisal and inspection contingencies are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+> The buyer's investigation contingency period ends on the 17th. Nothing is delivered.
+>
+> **On the 18th, what is true?** The contingency remains in effect. The buyer has not removed it. The seller is not free to sell to someone else.
+>
+> **What may the seller do?** Deliver the contractual notice requiring the buyer to act, which starts the period the contract specifies.
+>
+> **What if the buyer removes the contingency during that period?** The notice is satisfied and the transaction continues.
+>
+> **What if the buyer does not?** The seller may cancel per the contract's procedure.
+>
+> **What is not true at any point?** That the contract became void, that the buyer automatically became committed, or that the seller could cancel on the 18th without notice.
 
-### 4.3 Roles and duties
+### 4.5 Cancelling under a contingency
 
-Responsibility for financing appraisal and inspection contingencies may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+A contingency provides a path, and the path has requirements. A buyer whose loan is denied while the loan contingency is in effect must **follow the contract's cancellation procedure** — the written notice it requires, within its terms, with any supporting documentation.
 
-### 4.4 Workflow
+What forfeits the protection: notifying the other agent verbally, instructing escrow unilaterally to return the deposit, or simply ceasing to perform and letting the seller cancel for non-performance.
 
-A defensible workflow for financing appraisal and inspection contingencies starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 4.6 Waiver and its consequences
 
-### 4.5 Documents and evidence
+A buyer may waive a contingency, and in competitive markets many do. Two points the buyer must understand:
 
-Documents connected with financing appraisal and inspection contingencies must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+1. **He may still investigate.** Waiving the contingency removes the contractual path to act on what he finds; it does not prevent him from looking.
+2. **The exposure is concrete.** Where the appraisal contingency is waived and the appraisal comes in low, the buyer's options narrow to bringing funds, renegotiating without leverage, or defaulting — with his deposit exposed.
 
-### 4.6 Quantitative and factual analysis
+The licensee's obligation is to put that in writing before the buyer decides, then follow his decision.
 
-Where financing appraisal and inspection contingencies involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+## 5. Deadlines, notices, and removal
 
-### 4.7 California law and professional boundary
+### 5.1 Build the calendar from the contract
 
-California law controls the licensed activity associated with financing appraisal and inspection contingencies; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+The first act after acceptance is to build a deadline calendar **from the contract's own terms**, not from habit or from what is usual. Every date, every period, and what triggers each one.
 
-### 4.8 Consumer protection and fair access
+Then share it with the client in writing. A buyer who knows his investigation period ends on the 17th behaves differently from one who is told on the 16th.
 
-Consumer protection requires that financing appraisal and inspection contingencies be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 5.2 How periods are counted
 
-### 4.9 Applied scenario
+Contracts define how time is counted, and the definitions vary: calendar days versus business days, whether the triggering day counts, when a period ending on a weekend or holiday rolls, and what time of day a deadline falls.
 
-Scenario: during purchase agreements, counteroffers, and contingencies, the file raises a question about financing appraisal and inspection contingencies. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+**Read the definitions in the contract in front of you.** A licensee who assumes and is wrong by one day has cost a client a right.
 
-### 4.10 Decision checklist
+### 5.3 Notices carry legal effect
 
-Before treating financing appraisal and inspection contingencies as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+The contract specifies how notices must be delivered because rights depend on whether and when delivery occurred. Consequences:
 
-## 5. deadlines notices and removal
+- **Use the method the contract authorizes.** A text message is not delivery unless the contract makes it so.
+- **Preserve the evidence.** Delivery confirmation, platform audit trail, signed receipt — whatever the method produces.
+- **An undated notice is a notice with no proof of timing**, and timing is what disputes are about.
 
-### 5.1 Concept and purpose
+### 5.4 The common notices
 
-deadlines notices and removal is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Purchase agreements, counteroffers, and contingencies, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+| Notice | Function |
+|---|---|
+| **Contingency removal** | The buyer removes a specified contingency in writing |
+| **Notice to buyer to perform** | The seller requires the buyer to act within the contract's period |
+| **Notice to seller to perform** | The buyer requires the seller to act |
+| **Request for repair** | The buyer requests repairs or credits following investigation |
+| **Cancellation** | A party cancels under a right the contract provides |
+| **Demand to close** | A party requires the other to close |
 
-### 5.2 Essential elements
+Each has a form and a timing requirement in the contract. Sending the wrong one, or the right one by the wrong method, is a common and expensive error.
 
-The essential elements of deadlines notices and removal are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 5.5 Amendments
 
-### 5.3 Roles and duties
+Any change to a term of the contract — the closing date, the price, what conveys, an agreed repair — is made by **written amendment signed by both parties** and delivered to escrow so the instructions match the agreement.
 
-Responsibility for deadlines notices and removal may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+What does not change the contract: an email between the agents, a verbal agreement between the parties, an instruction to escrow alone, or an informal understanding that a short extension "won't matter."
 
-### 5.4 Workflow
+> The parties agree during escrow to move the closing by a week. The agents confirm by email. Escrow is told. No amendment is signed.
+>
+> If the transaction later fails, the parties are litigating on a contract whose closing date is the original one, with an email chain between non-parties as the evidence of a change.
 
-A defensible workflow for deadlines notices and removal starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 5.6 Tracking and confirming
 
-### 5.5 Documents and evidence
+Two habits prevent most deadline disputes:
 
-Documents connected with deadlines notices and removal must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+1. **A written timeline** with each contractual date, the notice each requires, and the evidence of what was delivered.
+2. **Written status confirmation at each milestone** — a short message confirming what has been delivered, what remains, and what the next date is.
 
-### 5.6 Quantitative and factual analysis
+Relying on escrow to track dates, on software reminders, or on verbal confirmation with the other agent may help the work happen, but none of them creates the record.
 
-Where deadlines notices and removal involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+## 6. Amendment, cancellation, and dispute prevention
 
-### 5.7 California law and professional boundary
+### 6.1 Cancellation is a procedure
 
-California law controls the licensed activity associated with deadlines notices and removal; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+A party cancels by exercising a right the contract provides, following the procedure the contract specifies. Cancellation is not accomplished by announcing an intention, by ceasing to perform, or by instructing escrow.
 
-### 5.8 Consumer protection and fair access
+Where a cancellation is disputed, escrow's position is instructive: escrow may act only on **mutual** written instructions. Where the parties disagree, escrow stops. It does not decide between them, and it cannot release the deposit on one party's say-so.
 
-Consumer protection requires that deadlines notices and removal be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 6.2 The deposit in a disputed cancellation
 
-### 5.9 Applied scenario
+Buyers and sellers both assume the deposit follows automatically from who was right. It does not. Escrow holds pending mutual instruction or a resolution through the contract's dispute resolution provisions or the courts.
 
-Scenario: during purchase agreements, counteroffers, and contingencies, the file raises a question about deadlines notices and removal. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+The licensee's role is to explain the mechanism, not to predict the outcome or to advise on entitlement — that is a legal question.
 
-### 5.10 Decision checklist
+### 6.3 Mediation and arbitration
 
-Before treating deadlines notices and removal as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+The contract's dispute resolution provisions are substantive rights, and they are frequently initialed without explanation. A licensee should ensure the client understands, at minimum, that mediation is generally a required first step before other remedies, and that an arbitration provision, where agreed, affects how disputes will be resolved and what review is available.
 
-## 6. amendment cancellation and dispute prevention
+Where a client asks what the provisions mean for their position, that is a question for counsel.
 
-### 6.1 Concept and purpose
+### 6.4 What actually prevents disputes
 
-amendment cancellation and dispute prevention is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Purchase agreements, counteroffers, and contingencies, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Most transaction disputes are not about substance. They are about **whether something was delivered, to whom, and when** — which is why the practices that prevent them are documentary rather than interpersonal:
 
-### 6.2 Essential elements
+1. Build the deadline calendar from the contract and share it.
+2. Deliver notices by the authorized method and keep the evidence.
+3. Confirm materially important conversations in writing.
+4. Amend in writing, signed, and deliver to escrow.
+5. Correct errors immediately, in writing, to everyone who received the original.
+6. Keep superseded drafts, so the sequence of versions shows how terms changed.
+7. Audit the file at closing while memories are fresh.
 
-The essential elements of amendment cancellation and dispute prevention are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 6.5 A worked file audit
 
-### 6.3 Roles and duties
+> A closed file contains: an email agreeing to move the closing date, with no signed amendment; a contingency removal that is signed but undated; a transfer disclosure with two items left blank; and an agency confirmation naming a relationship different from the disclosure earlier in the file.
+>
+> **Assessment.** Four defects, and they are not equivalent. The agency contradiction is the most serious, because it suggests the brokerage acted on both sides without documented consent. The undated removal is next: rights ran from it and the file cannot show when. The unsigned date change means the operative contract still says the original date. The blanks make the disclosure ambiguous about whether the items were addressed.
+>
+> **The correct response.** Record each finding, escalate to the broker, and obtain what legitimately exists. **What must not happen** is dating the removal now, completing the blanks now, or producing an amendment now with a matching date. A documented gap is survivable. A backdated document is falsification, and it converts a compliance problem into conduct that ends a career.
 
-Responsibility for amendment cancellation and dispute prevention may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 6.6 Checkpoint
 
-### 6.4 Workflow
-
-A defensible workflow for amendment cancellation and dispute prevention starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with amendment cancellation and dispute prevention must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where amendment cancellation and dispute prevention involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with amendment cancellation and dispute prevention; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that amendment cancellation and dispute prevention be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during purchase agreements, counteroffers, and contingencies, the file raises a question about amendment cancellation and dispute prevention. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating amendment cancellation and dispute prevention as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to state how a term of the contract is changed, what escrow may do when the parties disagree, and why an undated notice is a defect even when everyone remembers what happened.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. State whether a contract exists and on whose terms, identify each contingency in effect and what would be required to remove it, build the deadline calendar from the contract's terms, identify the notice each next step requires and its delivery method, and state what evidence you would retain. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
