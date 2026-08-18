@@ -5,31 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="theme-color" content="#172b3d" />
-    <title>Create Student Account | StateCourse</title>
+    <title>Create Your Student Account | StateCourse</title>
+    <meta name="description" content="Create your StateCourse student account to keep your licensing path, courses, progress, payments, and certificates in one place." />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../student-portal.css" />
+    <link rel="stylesheet" href="../student-portal.css?v=20260818-registration" />
   </head>
-  <body>
-    <header class="portal-header"><a class="brand" href="../../"><span aria-hidden="true">SC</span><strong>StateCourse</strong><small>Student Portal</small></a><nav><a href="../../get-licensed/">Course finder</a><a href="../sign-in/" id="headerSignIn">Student sign in</a></nav></header>
-    <main class="signin-main">
-      <section class="signin-panel" aria-labelledby="register-title">
-        <p class="eyebrow">Student account</p>
-        <h1 id="register-title">Create your StateCourse account</h1>
-        <p>Your account connects your licensing path, required disclosures, payments, enrollments, course progress, and permanent records.</p>
-        <form id="studentRegister">
-          <label><span>Legal first name</span><input id="firstName" name="firstName" autocomplete="given-name" maxlength="100" required /></label>
-          <label><span>Legal last name</span><input id="lastName" name="lastName" autocomplete="family-name" maxlength="100" required /></label>
-          <label><span>Email address</span><input id="email" name="email" type="email" autocomplete="username" required /></label>
-          <label><span>Password</span><input id="password" name="password" type="password" autocomplete="new-password" minlength="10" maxlength="200" required /><small>Use at least 10 characters.</small></label>
-          <label><span>Confirm password</span><input id="passwordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="10" maxlength="200" required /></label>
-          <button type="submit">Create Account</button>
-        </form>
-        <p class="signin-message" id="registerMessage" aria-live="polite"></p>
-        <div class="signin-note"><strong>Enrollment is separate.</strong><span>Creating an account does not create a course enrollment, start instructional time, award regulatory credit, or issue a certificate. Enrollment is created only after an eligible course checkout and verified payment webhook.</span></div>
-        <a class="back-link" id="studentSignInLink" href="../sign-in/">Already have an account? Student sign in →</a>
+  <body class="registration-page">
+    <a class="skip-link" href="#registration-form">Skip to account form</a>
+
+    <header class="portal-header registration-header">
+      <a class="brand" href="../../" aria-label="StateCourse home">
+        <span aria-hidden="true">SC</span>
+        <strong>StateCourse</strong>
+        <small>Professional Licensing Education</small>
+      </a>
+      <nav aria-label="Account navigation">
+        <a href="../../get-licensed/">Course Finder</a>
+        <a href="../sign-in/" id="headerSignIn">Student Sign In</a>
+      </nav>
+    </header>
+
+    <main class="registration-main">
+      <section class="registration-shell" aria-labelledby="register-title">
+        <header class="registration-intro">
+          <p class="eyebrow">Student Account</p>
+          <h1 id="register-title">Create your StateCourse account</h1>
+          <p>Keep your licensing path, courses, progress, payments, and certificates in one place.</p>
+        </header>
+
+        <div class="registration-card">
+          <form id="studentRegister" novalidate>
+            <div class="name-row">
+              <div class="form-field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" maxlength="100" aria-describedby="firstNameError" required />
+                <p class="field-error" id="firstNameError" aria-live="polite"></p>
+              </div>
+              <div class="form-field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" maxlength="100" aria-describedby="lastNameError" required />
+                <p class="field-error" id="lastNameError" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" autocapitalize="none" aria-describedby="emailError" required />
+              <p class="field-error" id="emailError" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="password">Password</label>
+              <div class="password-input">
+                <input id="password" name="password" type="password" autocomplete="new-password" minlength="10" maxlength="200" aria-describedby="passwordHelp passwordStrength passwordError" required />
+                <button class="password-toggle" type="button" data-password-toggle="password" aria-controls="password" aria-pressed="false">Show</button>
+              </div>
+              <div class="password-guidance">
+                <span id="passwordHelp">At least 10 characters</span>
+                <span id="passwordStrength" class="password-strength" aria-live="polite">Not entered</span>
+              </div>
+              <div class="strength-track" aria-hidden="true"><span id="strengthBar"></span></div>
+              <p class="field-error" id="passwordError" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="passwordConfirm">Confirm Password</label>
+              <div class="password-input">
+                <input id="passwordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="10" maxlength="200" aria-describedby="passwordConfirmError" required />
+                <button class="password-toggle" type="button" data-password-toggle="passwordConfirm" aria-controls="passwordConfirm" aria-pressed="false">Show</button>
+              </div>
+              <p class="field-error" id="passwordConfirmError" aria-live="polite"></p>
+            </div>
+
+            <button class="create-account-button" type="submit">Create My Account</button>
+            <p class="signin-message" id="registerMessage" role="status" aria-live="polite"></p>
+          </form>
+          <p class="existing-account">Already have an account? <a id="studentSignInLink" href="../sign-in/">Sign in</a></p>
+        </div>
+
+        <aside class="enrollment-callout" aria-labelledby="enrollment-note-title">
+          <h2 id="enrollment-note-title">Creating an account does not enroll you in a course.</h2>
+          <p>Your course enrollment begins only after you:</p>
+          <ol>
+            <li>select an eligible course,</li>
+            <li>review required disclosures,</li>
+            <li>complete checkout.</li>
+          </ol>
+          <p>Creating an account alone does not start instructional time or award licensing credit.</p>
+        </aside>
       </section>
     </main>
-    <footer><span>StateCourse secure student access</span><small>Passwords are handled by the configured authentication provider and are not stored by StateCourse.</small></footer>
-    <script src="student-register.js?v=20260817-account-path" defer></script>
+
+    <footer class="registration-footer">
+      <span>StateCourse — Professional Licensing Education</span>
+      <nav aria-label="Legal and support">
+        <a href="../../privacy/">Privacy</a>
+        <a href="../../terms/">Terms</a>
+        <a href="mailto:support@statecourse.com">Contact</a>
+        <a href="../../accessibility/">Accessibility</a>
+      </nav>
+    </footer>
+    <script src="student-register.js?v=20260818-registration" defer></script>
   </body>
 </html>

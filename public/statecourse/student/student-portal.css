@@ -48,4 +48,90 @@ main { width:min(100%,var(--max)); min-height:calc(100vh - 144px); margin:0 auto
 .empty-state p:not(.eyebrow) { max-width:650px; color:var(--muted); font-size:13px; }
 .empty-state a { color:var(--burgundy); font-size:12px; font-weight:800; }
 footer { display:flex; justify-content:space-between; gap:20px; min-height:68px; padding:18px max(28px,calc((100vw - var(--max))/2 + 28px)); background:var(--navy-dark); color:#cbd4da; font-size:10px; }
-@media(max-width:760px){.portal-header{padding:0 18px}.brand small,.portal-header nav>a{display:none}main{padding:30px 18px 50px}.portal-intro{grid-template-columns:1fr;gap:20px}.portal-summary{grid-template-columns:repeat(3,1fr)}.course-card{grid-template-columns:55px 1fr}.course-actions{grid-column:1/-1}.section-heading{display:block}.section-heading h2{margin-top:5px}footer{display:grid;padding:16px 18px}}
+
+/* Student registration */
+.registration-page { background:linear-gradient(180deg,#f8f5ee 0,#f3eee4 100%); }
+.registration-header { min-height:82px; }
+.registration-header nav a { padding:10px 2px; border-bottom:2px solid transparent; }
+.registration-header nav a:hover { border-color:var(--burgundy); }
+.registration-main { width:100%; max-width:none; min-height:calc(100vh - 158px); padding:60px 24px 76px; }
+.registration-shell { width:min(100%,720px); margin:0 auto; }
+.registration-intro { margin:0 auto 30px; text-align:center; }
+.registration-intro .eyebrow { margin-bottom:12px; }
+.registration-intro h1 { margin:0; color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:clamp(36px,5vw,52px); font-weight:500; line-height:1.08; letter-spacing:-.025em; }
+.registration-intro > p:last-child { max-width:610px; margin:17px auto 0; color:#50585e; font-size:17px; line-height:1.65; }
+.registration-card { padding:38px 42px 34px; border:1px solid #cec5b7; border-top:5px solid var(--navy); background:var(--surface); box-shadow:0 16px 45px rgba(33,38,41,.06); }
+#studentRegister { display:grid; gap:22px; }
+.name-row { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.form-field { min-width:0; }
+.form-field label { display:block; margin-bottom:8px; color:var(--navy); font-size:13px; font-weight:750; letter-spacing:.01em; }
+.form-field input { display:block; width:100%; height:54px; padding:0 15px; border:1px solid #9d9a93; border-radius:2px; outline:0; background:#fff; color:var(--ink); font:inherit; font-size:16px; transition:border-color .15s,box-shadow .15s,background .15s; }
+.form-field input:hover { border-color:#676b6d; }
+.form-field input:focus-visible { border-color:var(--navy); box-shadow:0 0 0 3px rgba(23,43,61,.18); }
+.form-field input[aria-invalid="true"] { border-color:#a43f34; background:#fffafa; }
+.form-field input[aria-invalid="true"]:focus-visible { box-shadow:0 0 0 3px rgba(164,63,52,.18); }
+.field-error { min-height:0; margin:6px 0 0; color:#872f27; font-size:12px; font-weight:700; line-height:1.4; }
+.field-error:empty { display:none; }
+.password-input { position:relative; }
+.password-input input { padding-right:76px; }
+.password-toggle { position:absolute; top:7px; right:7px; min-width:58px; height:40px; padding:0 10px; border:0; border-left:1px solid var(--rule); background:#fff; color:var(--burgundy); font-size:12px; font-weight:800; cursor:pointer; }
+.password-toggle:hover { background:#f5f1e8; }
+.password-toggle:focus-visible,.create-account-button:focus-visible,.registration-page a:focus-visible { outline:3px solid #c68a32; outline-offset:3px; }
+.password-guidance { display:flex; justify-content:space-between; gap:14px; margin-top:7px; color:var(--muted); font-size:12px; }
+.password-strength { color:#6a4d25; font-weight:700; text-align:right; }
+.password-strength[data-level="2"],.password-strength[data-level="3"] { color:#2f684a; }
+.strength-track { height:3px; margin-top:7px; overflow:hidden; background:#e4ded2; }
+.strength-track span { display:block; width:0; height:100%; background:#9b4036; transition:width .2s,background .2s; }
+.strength-track span[data-level="1"] { width:33%; }
+.strength-track span[data-level="2"] { width:66%; background:#a7772f; }
+.strength-track span[data-level="3"] { width:100%; background:#3f7658; }
+.create-account-button { width:100%; min-height:56px; margin-top:2px; padding:14px 22px; border:1px solid var(--burgundy); border-radius:1px; background:var(--burgundy); color:#fff; font-size:15px; font-weight:800; letter-spacing:.01em; cursor:pointer; }
+.create-account-button:hover { border-color:#713029; background:#713029; }
+.create-account-button:disabled { cursor:wait; opacity:.72; }
+.signin-message { display:none; margin:0; padding:13px 15px; border-left:3px solid var(--gold); background:#f0ebdf; color:var(--navy); font-size:13px; }
+.signin-message:not(:empty) { display:block; }
+.signin-message.error { border-color:#9b4036; background:#fbefec; color:#762e27; }
+.signin-message.success { border-color:#3f7658; background:#edf5ef; color:#244d39; }
+.existing-account { margin:25px 0 0; text-align:center; color:var(--muted); font-size:14px; }
+.existing-account a { color:var(--burgundy); font-weight:800; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+.enrollment-callout { margin-top:24px; padding:24px 28px 23px; border:1px solid var(--rule); border-left:4px solid var(--gold); background:#eee8dc; }
+.enrollment-callout h2 { margin:0 0 10px; color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:20px; font-weight:600; line-height:1.3; }
+.enrollment-callout p { margin:8px 0; color:#4e5559; font-size:13px; line-height:1.6; }
+.enrollment-callout ol { margin:8px 0 10px 20px; padding:0; color:#3f464a; font-size:13px; line-height:1.7; }
+.registration-footer { align-items:center; min-height:76px; }
+.registration-footer nav { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:18px; }
+.registration-footer a { color:#eef1f2; text-decoration:underline; text-underline-offset:3px; }
+
+@media(max-width:760px){
+  .portal-header{padding:0 18px}.brand small,.portal-header nav>a{display:none}main{padding:30px 18px 50px}.portal-intro{grid-template-columns:1fr;gap:20px}.portal-summary{grid-template-columns:repeat(3,1fr)}.course-card{grid-template-columns:55px 1fr}.course-actions{grid-column:1/-1}.section-heading{display:block}.section-heading h2{margin-top:5px}footer{display:grid;padding:16px 18px}
+  .registration-header { min-height:70px; }
+  .registration-header .brand small { display:none; }
+  .registration-header nav { gap:14px; }
+  .registration-header nav a { display:block; font-size:10px; }
+  .registration-main { padding:42px 16px 52px; }
+  .registration-intro { margin-bottom:24px; text-align:left; }
+  .registration-intro h1 { font-size:36px; }
+  .registration-intro > p:last-child { margin-top:13px; font-size:15px; }
+  .registration-card { padding:29px 22px 25px; }
+  .name-row { grid-template-columns:1fr; gap:22px; }
+  .form-field input { height:54px; }
+  .create-account-button { min-height:58px; }
+  .enrollment-callout { padding:21px 21px 19px; }
+  .registration-footer { gap:13px; text-align:center; }
+  .registration-footer nav { justify-content:center; gap:12px 18px; }
+}
+
+@media(max-width:420px){
+  .registration-header { align-items:flex-start; min-height:108px; padding-top:15px; padding-bottom:13px; }
+  .registration-header nav { display:grid; gap:3px; text-align:right; }
+  .registration-header .brand { gap:9px; }
+  .registration-header .brand > span { width:36px; height:36px; }
+  .registration-header .brand strong { font-size:18px; }
+  .registration-main { padding:34px 14px 44px; }
+  .registration-intro h1 { font-size:32px; }
+  .registration-card { padding:26px 18px 23px; }
+  .password-guidance { align-items:flex-start; flex-direction:column; gap:3px; }
+  .password-strength { text-align:left; }
+}
+
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
