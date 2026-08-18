@@ -7,33 +7,45 @@ function sentenceCase(text){return String(text??"").replace(/[A-Za-z]/,(letter)=
 function titleCaseHeading(text){
   const minor=new Set(["a","an","and","as","at","but","by","for","from","in","into","nor","of","on","or","over","per","the","to","via","with"]),known=new Map([["dre","DRE"],["mls","MLS"],["hoa","HOA"],["fha","FHA"],["va","VA"],["apr","APR"],["tila","TILA"],["respa","RESPA"],["cfpb","CFPB"]]);
   const source=String(text??""),words=source.match(/[A-Za-z][A-Za-z'’-]*/g)||[];let index=0;
-  return source.replace(/[A-Za-z][A-Za-z'’-]*/g,(word)=>{const lower=word.toLowerCase(),position=index++;if(known.has(lower))return known.get(lower);if(/^[A-Z0-9]{2,}$/.test(word))return word;if(position>0&&position<words.length-1&&minor.has(lower))return lower;return lower.replace(/(^|[-'’])([a-z])/g,(_,prefix,letter)=>prefix+letter.toUpperCase());});
+  return source.replace(/[A-Za-z][A-Za-z'’-]*/g,(word)=>{const lower=word.toLowerCase(),position=index++;if(known.has(lower))return known.get(lower);if(/^[A-Z0-9]{2,}$/.test(word))return word;if(position>0&&position<words.length-1&&minor.has(lower))return lower;return lower.replace(/(^|-)([a-z])/g,(_,prefix,letter)=>prefix+letter.toUpperCase());});
 }
 function inline(text){
+  const code=[];
   return escapeHtml(text)
+    .replace(/`([^`]+)`/g,(_,body)=>{code.push(body);return "\u0001"+(code.length-1)+"\u0001";})
     .replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
     .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
-    .replace(/\*([^*]+)\*/g,"<em>$1</em>");
+    .replace(/\*([^*]+)\*/g,"<em>$1</em>")
+    .replace(/\u0001(\d+)\u0001/g,(_,index)=>"<code>"+code[Number(index)]+"</code>");
 }
 function renderMarkdown(markdown){
   const lines=String(markdown||"").replace(/\r/g,"").split("\n"),output=[];
-  let paragraph=[],list=[],table=[],metadata=[],tracked=0,primaryHeadingSeen=false;
+  let paragraph=[],list=[],ordered=[],quote=[],table=[],metadata=[],tracked=0,primaryHeadingSeen=false;
   const flushParagraph=()=>{if(paragraph.length){output.push("<p>"+inline(sentenceCase(paragraph.join(" ")))+"</p>");paragraph=[];}};
   const flushList=()=>{if(list.length){output.push("<ul>"+list.map((item)=>"<li>"+inline(sentenceCase(item))+"</li>").join("")+"</ul>");list=[];}};
   const flushTable=()=>{if(!table.length)return;const rows=table.filter((row)=>!row.every((cell)=>/^:?-+:?$/.test(cell)));if(rows.length)output.push('<div class="table-wrap"><table><thead><tr>'+rows[0].map((cell)=>"<th>"+inline(titleCaseHeading(cell))+"</th>").join("")+"</tr></thead><tbody>"+rows.slice(1).map((row)=>"<tr>"+row.map((cell)=>"<td>"+inline(sentenceCase(cell))+"</td>").join("")+"</tr>").join("")+"</tbody></table></div>");table=[];};
+  const flushOrdered=()=>{if(ordered.length){output.push("<ol>"+ordered.map((item)=>"<li>"+inline(sentenceCase(item))+"</li>").join("")+"</ol>");ordered=[];}};
+  const flushQuote=()=>{if(quote.length){output.push("<blockquote><p>"+inline(sentenceCase(quote.join(" ")))+"</p></blockquote>");quote=[];}};
   const flushMetadata=()=>{if(metadata.length){output.push('<dl class="lesson-metadata">'+metadata.map(({label,value})=>`<div><dt>${inline(titleCaseHeading(label))}</dt><dd>${inline(sentenceCase(value))}</dd></div>`).join("")+"</dl>");metadata=[];}};
-  const flush=()=>{flushParagraph();flushList();flushTable();flushMetadata();};
+  const flushText=()=>{flushParagraph();flushList();flushOrdered();flushQuote();};
+  const flush=()=>{flushText();flushTable();flushMetadata();};
   for(const raw of lines){
     const line=raw.trim();
-    if(line.startsWith("|")&&line.endsWith("|")){flushParagraph();flushList();table.push(line.slice(1,-1).split("|").map((cell)=>cell.trim()));continue;}
+    if(line.startsWith("|")&&line.endsWith("|")){flushText();table.push(line.slice(1,-1).split("|").map((cell)=>cell.trim()));continue;}
     if(table.length)flushTable();
-    if(!line){flushParagraph();flushList();continue;}
+    if(!line){flushText();continue;}
+    if(/^(-{3,}|\*{3,}|_{3,})$/.test(line)){flush();output.push("<hr>");continue;}
+    const quoted=line.match(/^>\s?(.*)$/);
+    if(quoted){flushParagraph();flushList();flushOrdered();if(quoted[1])quote.push(quoted[1]);continue;}
+    if(quote.length)flushQuote();
     const metadataLine=line.match(/^\*\*([^:*]+):\*\*\s*(.+)$/);
-    if(metadataLine){flushParagraph();flushList();metadata.push({label:metadataLine[1],value:metadataLine[2]});continue;}
+    if(metadataLine){flushText();metadata.push({label:metadataLine[1],value:metadataLine[2]});continue;}
     if(metadata.length)flushMetadata();
-    const heading=line.match(/^(#{1,3})\s+(.+)$/);
+    const heading=line.match(/^(#{1,6})\s+(.+)$/);
     if(heading){flush();const level=heading[1].length;if(level===1)continue;if(level===2&&!primaryHeadingSeen){primaryHeadingSeen=true;continue;}const isTracked=level===2&&/^\d+\./.test(heading[2])&&tracked<6;if(isTracked)tracked+=1;output.push(`<h${level}${isTracked?` class="section-marker" data-section="${tracked}"`:""}>${inline(titleCaseHeading(heading[2]))}</h${level}>`);continue;}
-    if(/^[-*]\s+/.test(line)){flushParagraph();list.push(line.replace(/^[-*]\s+/,""));continue;}
+    if(/^[-*]\s+/.test(line)){flushParagraph();flushOrdered();list.push(line.replace(/^[-*]\s+/,""));continue;}
+    if(/^\d+[.)]\s+/.test(line)){flushParagraph();flushList();ordered.push(line.replace(/^\d+[.)]\s+/,""));continue;}
+    flushList();flushOrdered();
     paragraph.push(line);
   }
   flush();return output.join("");
@@ -59,18 +71,50 @@ function renderStatus(){
   const remediation=selected.remediationStatus;$("#remediationStatus").textContent=remediation==="not_required"?"Not required":remediation==="satisfied"?"Complete":remediation==="content_viewed"?"Alternate question pending":"Required";$("#remediationStatus").className=remediation==="not_required"||remediation==="satisfied"?"complete":"pending";
   const eligibility=page.data.progress.eligibility;$("#earliestFinal").textContent=formatDate(eligibility?.earliest_final_exam_at);const remaining=Array.isArray(eligibility?.remaining_requirements)?eligibility.remaining_requirements:[];$("#finalRequirements").textContent=remaining.length?remaining.join(" · "):"Final eligibility requirements complete";
 }
-function renderAssessment(target,assessment,kind,complete,enabled){
+function assessmentLabel(kind,count){
+  if(kind==="applied")return"Submit applied response";
+  return kind==="remediation"?`Submit alternate answers (${count})`:`Submit answers (${count})`;
+}
+function renderAssessment(target,assessment,kind,complete,enabled,blockedMessage){
   if(complete){target.innerHTML='<p class="assessment-result"><strong>Complete.</strong> This requirement is recorded for the assignment version.</p>';return;}
-  if(!assessment){target.innerHTML="";return;}
-  const name=kind+"Choice";
-  target.innerHTML=`<form data-kind="${kind}"><fieldset ${enabled?"":"disabled"}><legend>${escapeHtml(assessment.prompt)}</legend>${assessment.choices.map((choice,index)=>`<label class="choice"><input type="radio" name="${name}" value="${index}" required><span>${escapeHtml(choice)}</span></label>`).join("")}</fieldset><button type="submit" ${enabled?"":"disabled"}>${kind==="remediation"?"Submit alternate answer":"Submit answer"}</button>${enabled?"":'<p class="assessment-result">Complete the preceding lesson requirement first.</p>'}<div class="assessment-result" hidden></div></form>`;
+  if(!assessment||!assessment.items?.length){target.innerHTML="";return;}
+  const items=assessment.items,total=items.length;
+  const threshold=kind==="applied"?"":`<p class="assessment-standard">${total} scored items · ${assessment.passingPercent}% required to complete this check.</p>`;
+  target.innerHTML=`<form data-kind="${kind}">${threshold}${items.map((item,position)=>`<fieldset ${enabled?"":"disabled"} data-item="${escapeHtml(item.id)}"><legend>${total>1?`<span class="item-number">Question ${position+1} of ${total}</span>`:""}${escapeHtml(item.prompt)}</legend>${item.choices.map((choice,index)=>`<label class="choice"><input type="radio" name="${escapeHtml(item.id)}" value="${index}" required><span>${escapeHtml(choice)}</span></label>`).join("")}<p class="item-result" hidden></p></fieldset>`).join("")}<button type="submit" ${enabled?"":"disabled"}>${assessmentLabel(kind,total)}</button>${enabled?"":`<p class="assessment-result">${escapeHtml(blockedMessage||"Complete the preceding lesson requirement first.")}</p>`}<div class="assessment-result" hidden></div></form>`;
   const form=target.querySelector("form");
-  form?.addEventListener("submit",async(event)=>{event.preventDefault();const selected=new FormData(form).get(name);if(selected===null)return;const button=form.querySelector("button"),result=form.querySelector(".assessment-result:last-child");button.disabled=true;try{const response=await post("answer_"+kind,{choice:Number(selected)});if(!response)return;result.hidden=false;result.innerHTML=`<strong>${response.correct?"Correct.":"Not yet."}</strong> ${escapeHtml(response.rationale||response.message||"")}`;actionMessage.textContent=response.message||"";if(response.remediationRequired||response.completed||response.correct)setTimeout(()=>loadCourse(page.data.selectedAssignment.id),800);}catch(error){result.hidden=false;result.textContent="We could not record this answer. Please try again.";button.disabled=false;}});
+  form?.addEventListener("submit",async(event)=>{
+    event.preventDefault();
+    const data=new FormData(form),answers=items.map((item)=>data.get(item.id));
+    if(answers.some((answer)=>answer===null))return;
+    const button=form.querySelector("button"),result=form.querySelector(".assessment-result:last-child");
+    button.disabled=true;
+    try{
+      const response=await post("answer_"+kind,{answers:answers.map(Number)});
+      if(!response)return;
+      /* Per-item feedback marks which questions were missed. Rationales arrive only on a
+         passing attempt; on a failed attempt the student is routed to remediation. */
+      for(const outcome of response.results||[]){
+        const field=form.querySelector(`[data-item="${CSS.escape(outcome.itemId)}"] .item-result`);
+        if(!field)continue;
+        field.hidden=false;
+        field.className="item-result "+(outcome.correct?"correct":"incorrect");
+        field.innerHTML=`<strong>${outcome.correct?"Correct.":"Incorrect."}</strong> ${escapeHtml(outcome.rationale||"")}`;
+      }
+      result.hidden=false;
+      const scoreLine=typeof response.percent==="number"&&response.total>1?`${response.correctCount} of ${response.total} correct (${response.percent}%). `:"";
+      result.innerHTML=`<strong>${response.correct?"Requirement met.":"Not yet."}</strong> ${escapeHtml(scoreLine)}${escapeHtml(response.message||"")}`;
+      actionMessage.textContent=response.message||"";
+      if(response.remediationRequired||response.completed||response.correct)setTimeout(()=>loadCourse(page.data.selectedAssignment.id),1400);
+    }catch(error){result.hidden=false;result.textContent="We could not record these answers. Please try again.";button.disabled=false;}
+  });
 }
 function renderAssessments(){
   const selected=page.data.selectedAssignment,review=page.data.mode!=="student",contentReady=selected.viewedSections.length>=selected.sectionCount;
-  renderAssessment($("#appliedAssessment"),page.data.assessments.applied,"applied",selected.appliedComplete,review||contentReady);renderAssessment($("#engagementAssessment"),page.data.assessments.engagement,"engagement",selected.engagementComplete,review||selected.appliedComplete);
-  const needs=selected.remediationStatus==="required"||selected.remediationStatus==="content_viewed";$("#remediationSection").hidden=!needs;$("#remediationViewed").disabled=selected.remediationStatus==="content_viewed";renderAssessment($("#remediationAssessment"),page.data.assessments.remediation,"remediation",selected.remediationStatus==="satisfied",review||selected.remediationStatus==="content_viewed");
+  const viewed=selected.viewedSections.length,sections=selected.sectionCount,remainingSections=Math.max(0,sections-viewed);
+  const appliedBlocked=`Read the lesson to unlock this exercise. You have viewed ${viewed} of ${sections} sections — ${remainingSections} remaining.`;
+  const engagementBlocked="Submit the applied exercise above to unlock the scored check.";
+  renderAssessment($("#appliedAssessment"),page.data.assessments.applied,"applied",selected.appliedComplete,review||contentReady,appliedBlocked);renderAssessment($("#engagementAssessment"),page.data.assessments.engagement,"engagement",selected.engagementComplete,review||selected.appliedComplete,engagementBlocked);
+  const needs=selected.remediationStatus==="required"||selected.remediationStatus==="content_viewed";$("#remediationSection").hidden=!needs;$("#remediationViewed").disabled=selected.remediationStatus==="content_viewed";renderAssessment($("#remediationAssessment"),page.data.assessments.remediation,"remediation",selected.remediationStatus==="satisfied",review||selected.remediationStatus==="content_viewed","Review the remediation content above and mark it viewed to unlock the alternate questions.");
 }
 function setupSectionTracking(){
   page.observer?.disconnect();for(const timer of page.sectionTimers.values())clearTimeout(timer);page.sectionTimers.clear();const viewed=new Set(page.data.selectedAssignment.viewedSections);

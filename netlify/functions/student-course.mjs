@@ -1,7 +1,7 @@
 import { dbRequest, rpc } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
-import { getCaliforniaAssessment, getCaliforniaCourse, publicAssessment } from "../../config/california-course-engine.mjs";
+import { getCaliforniaAssessment, getCaliforniaCourse, publicAssessment, scoreCaliforniaAssessment } from "../../config/california-course-engine.mjs";
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const ASSIGNMENT = /^assignment-(0[1-9]|1[0-5])$/;
@@ -247,9 +247,12 @@ async function handleStudentEvent(ctx,input) {
     const kind=ANSWER_EVENTS.get(eventType);
     if (kind) {
       const assessment=getCaliforniaAssessment(ctx.course.courseId,assignmentId,kind);
-      const correct=Number(input.choice)===assessment.correctChoice;
-      await audit(ctx,assignmentId,"review_assessment",{kind,correct,no_student_credit:true});
-      return {ok:true,correct,rationale:assessment.rationale,noStudentCredit:true};
+      if(!assessment) fail("assessment_unavailable",409);
+      const score=scoreCaliforniaAssessment(assessment,input.answers);
+      if(!score) fail("invalid_answers");
+      await audit(ctx,assignmentId,"review_assessment",{kind,percent:score.percent,passed:score.passed,no_student_credit:true});
+      /* A reviewer always sees every rationale; reviewer answers never touch student records. */
+      return {ok:true,correct:score.passed,percent:score.percent,correctCount:score.correctCount,total:score.total,results:score.results,noStudentCredit:true};
     }
     await audit(ctx,assignmentId,"review_"+eventType,{no_student_credit:true});
     return {ok:true,noStudentCredit:true};
@@ -288,11 +291,15 @@ async function handleStudentEvent(ctx,input) {
   if (kind==="engagement" && !row.applied_exercise_complete) fail("complete_applied_exercise_first",409);
   if (kind==="remediation" && row.remediation_status!=="content_viewed") fail("view_remediation_first",409);
   const assessment=getCaliforniaAssessment(ctx.course.courseId,assignmentId,kind);
-  const choice=Number(input.choice);
-  if (!Number.isInteger(choice) || choice<0 || choice>=assessment.choices.length) fail("invalid_choice");
-  const attempts=(await dbRequest(`lms_assessment_attempts?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}&assignment_id=eq.${encodeURIComponent(assignmentId)}&assessment_kind=eq.${kind}&select=id`))?.length || 0;
-  const correct=choice===assessment.correctChoice;
-  await dbRequest("lms_assessment_attempts",{method:"POST",prefer:"return=minimal",body:{enrollment_id:ctx.enrollment.id,student_id:ctx.studentId,course_id:ctx.course.courseId,course_version:ctx.enrollment.course_version,assignment_id:assignmentId,assessment_kind:kind,question_id:assessment.id,selected_choice:choice,correct,attempt_number:attempts+1,reviewer_bypass:false}});
+  if (!assessment) fail("assessment_unavailable",409);
+  const score=scoreCaliforniaAssessment(assessment,input.answers);
+  if (!score) fail("invalid_answers");
+  /* One attempt covers the whole item set, so the attempt number comes from the highest
+     recorded attempt rather than the row count: a five-item quiz writes five rows. */
+  const previous=await dbRequest(`lms_assessment_attempts?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}&assignment_id=eq.${encodeURIComponent(assignmentId)}&assessment_kind=eq.${kind}&select=attempt_number&order=attempt_number.desc&limit=1`);
+  const attemptNumber=Number(previous?.[0]?.attempt_number || 0)+1;
+  const correct=score.passed;
+  await dbRequest("lms_assessment_attempts",{method:"POST",prefer:"return=minimal",body:score.results.map((result)=>({enrollment_id:ctx.enrollment.id,student_id:ctx.studentId,course_id:ctx.course.courseId,course_version:ctx.enrollment.course_version,assignment_id:assignmentId,assessment_kind:kind,question_id:result.itemId,selected_choice:result.selectedChoice,correct:result.correct,attempt_number:attemptNumber,reviewer_bypass:false}))});
   if (kind==="applied") {
     await patchAssignment(ctx,assignmentId,{applied_exercise_complete:correct || row.applied_exercise_complete,assessment_attempts:row.assessment_attempts+1,status:"in_progress",started_at:row.started_at || isoNow()});
   } else if (kind==="engagement" && correct) {
@@ -304,12 +311,16 @@ async function handleStudentEvent(ctx,input) {
     await patchAssignment(ctx,assignmentId,{engagement_check_complete:correct,remediation_status:correct?"satisfied":"content_viewed",remediation_attempts:row.remediation_attempts+1,status:correct?"in_progress":"remediation_required"});
     await dbRequest("lms_remediation_events",{method:"POST",prefer:"return=minimal",body:{enrollment_id:ctx.enrollment.id,student_id:ctx.studentId,course_id:ctx.course.courseId,course_version:ctx.enrollment.course_version,assignment_id:assignmentId,event_type:correct?"alternate_question_correct":"alternate_question_incorrect",attempt_number:row.remediation_attempts+1}});
   }
-  await audit(ctx,assignmentId,"assessment_submitted",{kind,correct,attempt:attempts+1});
-  if (!correct) await maybeSupportFlag(ctx,assignmentId,attempts+1);
+  await audit(ctx,assignmentId,"assessment_submitted",{kind,correct,percent:score.percent,correct_count:score.correctCount,total_items:score.total,attempt:attemptNumber});
+  if (!correct) await maybeSupportFlag(ctx,assignmentId,attemptNumber);
   const completed=await finishIfReady(ctx,assignmentId);
   return {
     ok:true,correct,completed,
-    rationale:correct ? assessment.rationale : null,
+    percent:score.percent,correctCount:score.correctCount,total:score.total,
+    /* Rationales are withheld on a failed attempt: the student is routed to the
+       alternate explanation and the remediation item set instead of being handed the
+       answer key to the questions they just missed. */
+    results:score.results.map((result)=>({itemId:result.itemId,correct:result.correct,rationale:correct?result.rationale:null})),
     remediationRequired:kind==="engagement" && !correct,
     message:correct ? "Correct. The explanation is now available." : (kind==="engagement" ? "Review the alternate explanation and complete the remediation question." : "Review the lesson section and try again.")
   };

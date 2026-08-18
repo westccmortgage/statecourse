@@ -1,0 +1,30 @@
+{
+  "_note": "Input for scripts/fill-re336.mjs. legalName is the entity's exact registered name as filed with the Wyoming Secretary of State on 2026-08-16 (Certificate of Organization, lowercase as filed). If the entity registers in California under an alternate name, or adopts a DBA, update this and regenerate. sponsorId stays empty until DRE assigns one.",
+  "provider": {
+    "legalName": "state course LLC",
+    "sponsorId": "",
+    "street": "407 N Pacific Coast Highway, Unit 1028",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "zip": "90277",
+    "formationState": "WY",
+    "formationDate": "2026-08-16"
+  },
+  "primaryContact": {
+    "name": "Kanevsky, Anatoliy",
+    "declarantName": "Anatoliy Kanevsky",
+    "title": "Founder / CEO",
+    "city": "Redondo Beach",
+    "state": "California"
+  },
+  "instructor": {
+    "name": "Kanevsky, Anatoliy",
+    "licenseNumber": "01385024",
+    "heldCaliforniaLicense": true
+  },
+  "courses": [
+    "Real Estate Principles",
+    "Real Estate Practice",
+    "Mortgage Loan Brokering and Lending"
+  ]
+}

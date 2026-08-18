@@ -27,8 +27,27 @@ const states = [...registry.states, ...(registry.states.some((state) => state.st
 
 const esc = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 const slugify = (name) => name.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replaceAll(/^-|-$/g, "");
+// Six state course pages are hand-authored and tracked in git. They carry
+// state-specific academic detail this generator does not model, and an earlier
+// run silently replaced them with the generic template. The generator now
+// refuses to overwrite them; delete the file first if a route is meant to
+// return to generated output.
+const handBuiltRoutes = new Set([
+  "real-estate/virginia/pre-license/principles-and-practices/index.html",
+  "real-estate/maine/pre-license/sales-agent/index.html",
+  "real-estate/wisconsin/pre-license/salesperson/index.html",
+  "real-estate/missouri/pre-license/salesperson-pre-exam/index.html",
+  "real-estate/missouri/pre-license/real-estate-practice/index.html",
+  "real-estate/oklahoma/pre-license/basic/index.html",
+]);
+const preserved = [];
+
 const write = (relativePath, content) => {
   const target = path.join(publicRoot, relativePath);
+  if (handBuiltRoutes.has(relativePath) && fs.existsSync(target)) {
+    preserved.push(relativePath);
+    return;
+  }
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, content);
 };
@@ -100,8 +119,31 @@ for (const state of states) {
   const stateCourses = catalogCourses.filter((course) => course.state_id === state.state_code);
   const courseRows = stateCourses.length ? stateCourses.map((course) => `<article class="course-row"><div><h3>${esc(course.course_title)}</h3><p>${esc(course.required_hours)} hours · ${esc(course.delivery_method)}</p></div><span>${esc(course.approval_status)}</span><a href="${relativeRoute(prefix, course.route)}">Review record →</a></article>`).join("") : `<p class="notice">StateCourse education is not yet available in this jurisdiction. The licensing guide and official-source research will remain available as development continues.</p>`;
   const official = state.regulator_url ? `<a href="${esc(state.regulator_url)}" target="_blank" rel="noopener">Open the regulator’s official website ↗</a>` : "Official regulator identification and source review are pending.";
-  const accountAction = stateCourses.length ? `<div class="notice"><strong>Continue with StateCourse.</strong> Create your student account, review the exact course record and required disclosures, and continue through the same enrollment path that will be used after approval. <a href="${prefix}student/register/?state=${encodeURIComponent(state.state_code)}">Create Account →</a></div>` : "";
-  const body = `${pageHero(`${state.state_code} · ${state.public_status}`, `${state.state_name} Real Estate Licensing`, `Regulator: ${state.regulator_name}. Review the state path, current education research, and StateCourse availability before taking the next step.`, true)}<section class="page-body">${accountAction}<div class="state-summary"><aside class="state-record"><p class="overline">Jurisdiction record</p><dl><div><dt>Entry education</dt><dd>${state.prelicense_hours ? `${esc(state.prelicense_hours)} hours` : "Pending verification"}</dd></div><div><dt>Online delivery</dt><dd>${state.asynchronous_online_allowed === true ? "Allowed subject to approval" : state.asynchronous_online_allowed === false ? "Not allowed" : "Pending verification"}</dd></div><div><dt>StateCourse status</dt><dd>${esc(state.public_status)}</dd></div><div><dt>Course approval</dt><dd>${stateCourses.length ? "Not yet approved" : "No course record"}</dd></div><div><dt>Enrollment</dt><dd>Closed until approval</dd></div></dl></aside><div><p class="overline">Your licensing path</p><ol class="license-path">${genericPath.map(([heading, copy]) => `<li><h3>${esc(heading)}</h3><p>${esc(copy)}</p></li>`).join("")}</ol></div></div><section class="course-list"><p class="overline">StateCourse programs</p><h2>${stateCourses.length ? `Programs currently in development for ${esc(state.state_name)}.` : "No approved StateCourse program yet."}</h2>${courseRows}</section><div class="source-box"><h2>Official source and verification</h2><p>${official}<br/>Last internal regulatory review: ${esc(registry.last_regulatory_review)}. StateCourse status is independent from regulator approval.</p></div></section>`;
+  const registerHref = `${prefix}student/register/?state=${encodeURIComponent(state.state_code)}`;
+  const signInHref = `${prefix}student/sign-in/?return_to=${encodeURIComponent("/student/")}`;
+  const ctaPanel = (heading, copy, primaryLabel, primaryHref, note) => `<section class="state-cta"><div><p class="overline">Next step</p><h2>${heading}</h2><p>${copy}</p><p class="cta-note">${note}</p></div><div class="cta-actions"><a class="cta-button" href="${primaryHref}">${primaryLabel}</a><a class="cta-secondary" href="${signInHref}">Already have an account? Sign in</a></div></section>`;
+  const accountAction = stateCourses.length
+    ? ctaPanel(
+        `Create your free ${esc(state.state_name)} account.`,
+        `Set up your student account to follow the ${esc(state.state_name)} course records, see the required disclosures, and be ready to enroll the day approval is recorded. Creating an account is free and takes about a minute.`,
+        "Create Free Account →",
+        registerHref,
+        "Creating an account does not enroll you, start study time, award credit, or issue a certificate. Enrollment stays closed until the regulator approval record is entered.")
+    : ctaPanel(
+        `Track ${esc(state.state_name)} licensing with a free account.`,
+        `StateCourse education is not yet available in ${esc(state.state_name)}. Create a free account to keep your licensing research in one place, or compare the verified requirements for this jurisdiction first.`,
+        "Create Free Account →",
+        registerHref,
+        "Creating an account does not enroll you in any course and does not create regulatory credit. No StateCourse program is offered in this jurisdiction yet.");
+  const closingAction = stateCourses.length
+    ? ctaPanel(
+        "Ready to continue?",
+        `Your account is where course records, required disclosures, enrollment, progress, and certificates live. Create it now and you will not have to repeat any of this when ${esc(state.state_name)} approval is recorded.`,
+        "Create Free Account →",
+        registerHref,
+        "Account creation and public previews are separate from enrollment, study time, course credit, and certificates.")
+    : `<section class="state-cta"><div><p class="overline">Next step</p><h2>Compare requirements across states.</h2><p>See verified entry education, delivery rules, and regulator information for every jurisdiction while ${esc(state.state_name)} remains in development.</p><p class="cta-note">Requirement research is informational and is not a substitute for the regulator's official published requirements.</p></div><div class="cta-actions"><a class="cta-button" href="${prefix}state-requirements/">Compare State Requirements →</a><a class="cta-secondary" href="${registerHref}">Create a free account</a></div></section>`;
+  const body = `${pageHero(`${state.state_code} · ${state.public_status}`, `${state.state_name} Real Estate Licensing`, `Regulator: ${state.regulator_name}. Review the state path, current education research, and StateCourse availability before taking the next step.`, true)}<section class="page-body">${accountAction}<div class="state-summary"><aside class="state-record"><p class="overline">Jurisdiction record</p><dl><div><dt>Entry education</dt><dd>${state.prelicense_hours ? `${esc(state.prelicense_hours)} hours` : "Pending verification"}</dd></div><div><dt>Online delivery</dt><dd>${state.asynchronous_online_allowed === true ? "Allowed subject to approval" : state.asynchronous_online_allowed === false ? "Not allowed" : "Pending verification"}</dd></div><div><dt>StateCourse status</dt><dd>${esc(state.public_status)}</dd></div><div><dt>Course approval</dt><dd>${stateCourses.length ? "Not yet approved" : "No course record"}</dd></div><div><dt>Enrollment</dt><dd>Closed until approval</dd></div></dl></aside><div><p class="overline">Your licensing path</p><ol class="license-path">${genericPath.map(([heading, copy]) => `<li><h3>${esc(heading)}</h3><p>${esc(copy)}</p></li>`).join("")}</ol></div></div><section class="course-list"><p class="overline">StateCourse programs</p><h2>${stateCourses.length ? `Programs currently in development for ${esc(state.state_name)}.` : "No approved StateCourse program yet."}</h2>${courseRows}</section><div class="source-box"><h2>Official source and verification</h2><p>${official}<br/>Last internal regulatory review: ${esc(registry.last_regulatory_review)}. StateCourse status is independent from regulator approval.</p></div>${closingAction}</section>`;
   write(`real-estate/${slugify(state.state_name)}/index.html`, document({ title: `${state.state_name} Real Estate Licensing`, description: `${state.state_name} real estate licensing requirements and StateCourse program status.`, prefix, body }));
 }
 
@@ -152,3 +194,4 @@ if (californiaCourses.length) {
 }
 
 console.log(`Generated national platform: ${states.length} jurisdiction hubs, ${catalogCourses.length} course records, and core service routes.`);
+if (preserved.length) console.log(`Preserved ${preserved.length} hand-authored course pages: ${preserved.join(", ")}`);
