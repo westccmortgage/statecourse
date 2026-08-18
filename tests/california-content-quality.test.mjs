@@ -153,3 +153,40 @@ test("the final examination passes at 60 percent and not below", async () => {
   assert.equal(engine.scoreCaliforniaAssessment(exam, answers(59)).passed, false);
   assert.equal(engine.scoreCaliforniaAssessment(exam, answers(60)).passed, true);
 });
+
+/* RE 303 items 13 and 14 require the student version to be an exact copy of what the
+   student sees and the instructor version to carry an answer key. Both are generated
+   from the same engine call the portal makes, so these guard that the printed copies
+   cannot drift from what is served — and that the student copy carries no answers. */
+
+test("the printed student examination matches what the engine serves, and carries no answers", async () => {
+  const { readFileSync, existsSync } = await import("node:fs");
+  const engine = await import("../config/california-course-engine.mjs");
+  const file = new URL("../california/ca-real-estate-principles-45-v1/submission/final-exam-form-a-student.md", import.meta.url);
+  assert.ok(existsSync(file), "student version not generated - run scripts/generate-california-final-exam-package.mjs");
+  const printed = readFileSync(file, "utf8");
+  const exam = engine.getCaliforniaFinalExam("ca-real-estate-principles-45", "A");
+
+  for (const [index, item] of exam.items.entries()) {
+    assert.ok(printed.includes(`**${index + 1}.** ${item.prompt}`), `item ${index + 1} prompt missing or out of order`);
+    for (const choice of item.choices) assert.ok(printed.includes(choice), `item ${index + 1} is missing a choice`);
+  }
+  for (const marker of ["Correct answer", "correctChoice", "Found in the course material"]) {
+    assert.ok(!printed.includes(marker), `the student copy leaks "${marker}"`);
+  }
+  for (const item of exam.items) assert.ok(!printed.includes(item.rationale), "the student copy leaks a rationale");
+});
+
+test("the instructor answer key states the correct letter and where the answer is found", async () => {
+  const { readFileSync } = await import("node:fs");
+  const engine = await import("../config/california-course-engine.mjs");
+  const key = readFileSync(new URL("../california/ca-real-estate-principles-45-v1/submission/final-exam-form-a-answer-key.md", import.meta.url), "utf8");
+  const exam = engine.getCaliforniaFinalExam("ca-real-estate-principles-45", "A");
+  const letters = ["A", "B", "C", "D"];
+
+  assert.match(key, /NOT FOR DISTRIBUTION TO STUDENTS/);
+  for (const [index, item] of exam.items.entries()) {
+    assert.ok(key.includes(`**Correct answer: ${letters[item.correctChoice]}.** ${item.rationale}`), `item ${index + 1} answer or rationale wrong`);
+    assert.ok(key.includes(`section ${item.source.section}`), `item ${index + 1} has no material reference`);
+  }
+});
