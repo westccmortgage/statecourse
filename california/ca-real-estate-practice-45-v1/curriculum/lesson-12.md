@@ -2,290 +2,344 @@
 
 ## Property management and leasing practice
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze management agreement using verified facts, current authority, and a documented professional workflow.
-- Analyze tenant selection and fair housing using verified facts, current authority, and a documented professional workflow.
-- Analyze rents deposits and accounting using verified facts, current authority, and a documented professional workflow.
-- Analyze maintenance habitability and access using verified facts, current authority, and a documented professional workflow.
-- Analyze lease enforcement and termination using verified facts, current authority, and a documented professional workflow.
-- Analyze owner reporting and risk controls using verified facts, current authority, and a documented professional workflow.
+- Identify the terms a management agreement must establish and explain why unsigned authority is a structural defect.
+- Apply uniform written screening criteria and recognize where discretion admits bias.
+- Handle rents, security deposits, and owner funds as trust funds, and explain why internal ledgers do not cure commingling.
+- Apply habitability obligations and lawful entry requirements to maintenance and access.
+- Distinguish the notice requirements that govern lease enforcement and termination.
+- Produce owner reporting that satisfies the accounting duty rather than summarizing it.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: management agreements and tenant selection | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: trust funds, habitability, and access | 50 | Sections 3-4 viewed |
+| Guided reading: enforcement, termination, and owner reporting | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. management agreement
+## 1. Management agreement
 
-### 1.1 Concept and purpose
+### 1.1 Property management is licensed activity
 
-management agreement is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Property management and leasing practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Managing real property for another for compensation is licensed activity. It is performed for and under the employing broker, the funds handled are trust funds, and the records are the brokerage's records. Everything in this lesson follows from those three facts.
 
-### 1.2 Essential elements
+Property management also differs from sales in a way that shapes the risk: **it is continuous.** A sale ends. A tenancy runs for years, generating funds monthly, decisions weekly, and exposure continuously. A defect in a sales file is one transaction. A defect in a management practice repeats every month across every unit.
 
-The essential elements of management agreement are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 1.2 What the agreement establishes
 
-### 1.3 Roles and duties
+| Term | What it governs |
+|---|---|
+| **Parties** | The owner and the **brokerage** |
+| **Property** | Exactly which units are managed |
+| **Term and termination** | Duration, notice to terminate, what happens on termination |
+| **Scope of authority** | What the manager may do without asking, and what requires owner approval |
+| **Spending authority** | The threshold above which owner approval is required, and emergency authority below it |
+| **Compensation** | Management fee, leasing fee, renewal fee, and any other charges |
+| **Trust funds** | Where funds are held and how they are accounted for |
+| **Reporting** | What the owner receives and how often |
+| **Owner obligations** | Funding reserves, maintaining insurance, providing disclosures and documents |
+| **Insurance and indemnity** | Coverage each party maintains |
+| **Fair housing** | The parties' obligations, and the manager's authority to refuse unlawful instructions |
 
-Responsibility for management agreement may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 1.3 Unsigned authority is a structural defect
 
-### 1.4 Workflow
+A manager acting without a signed agreement is acting without established authority. That is not a paperwork gap:
 
-A defensible workflow for management agreement starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+- The scope of authority is undefined, so every decision is arguable.
+- The compensation is unenforceable.
+- The handling of funds is not authorized in writing.
+- The owner can dispute any action taken.
 
-### 1.5 Documents and evidence
+An audit that finds two owners with no signed agreement has found a defect of the same order as commingling, not a filing oversight.
 
-Documents connected with management agreement must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 1.4 Spending authority and emergencies
 
-### 1.6 Quantitative and factual analysis
+The most practically important term is the threshold above which the manager must obtain owner approval, paired with **emergency authority** below or outside it.
 
-Where management agreement involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Emergencies do not wait for approval. A burst pipe, a failed heater in cold weather, a security failure — these require action, and the agreement should say so, define what counts, and require prompt notice to the owner afterward.
 
-### 1.7 California law and professional boundary
+A manager without written emergency authority faces a genuine dilemma: act and be second-guessed, or wait and let the damage compound while a habitability obligation runs. Settling it in the agreement removes the dilemma.
 
-California law controls the licensed activity associated with management agreement; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 1.5 Owner disclosures the manager needs
 
-### 1.8 Consumer protection and fair access
+Before managing, the manager should obtain from the owner: known property conditions and repair history; permit status of improvements; existing leases and their terms; existing deposits held and their amounts; association documents where applicable; insurance details; and any pending disputes or claims.
 
-Consumer protection requires that management agreement be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Deposits held by the owner from an existing tenancy deserve particular attention. Where deposits transfer to the manager, they are trust funds from the moment received, and the amounts must reconcile to the leases.
 
-### 1.9 Applied scenario
+## 2. Tenant selection and fair housing
 
-Scenario: during property management and leasing practice, the file raises a question about management agreement. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 2.1 Written criteria applied uniformly
 
-### 1.10 Decision checklist
+The defensible practice, and the only one that survives review:
 
-Before treating management agreement as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+1. **Written criteria**, established before applications are taken.
+2. **Objective standards** — income relative to rent, credit history, rental history, verifiable identity, lawful occupancy standards.
+3. **Applied identically to every applicant.**
+4. **Documented** — how each application was evaluated against each criterion.
+5. **Disclosed** to applicants before they apply, along with any application fee.
 
-## 2. tenant selection and fair housing
+Uniformity is not merely fair; it is what makes a decision explainable afterward in neutral terms.
 
-### 2.1 Concept and purpose
+### 2.2 Where bias operates
 
-tenant selection and fair housing is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Property management and leasing practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+| Practice | Problem |
+|---|---|
+| "I get a feel for people at the showing" | Impression-based selection is where bias operates and cannot be defended |
+| Choosing whoever the current tenants would get along with | Compatibility judgments reproduce the existing composition |
+| Preferring applicants referred by existing tenants | Same effect, at scale |
+| Applying criteria strictly to some applicants and flexibly to others | Differential application is discrimination even with neutral criteria |
+| Discouraging an application rather than denying it | Steering, and harder to detect, which is why it is dangerous |
 
-### 2.2 Essential elements
+That last one deserves attention. Telling an applicant "you probably wouldn't qualify" or "the owner is looking for someone long-term" — instead of taking the application and evaluating it — is discouragement, and it produces no record of a denial while achieving one.
 
-The essential elements of tenant selection and fair housing are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 2.3 Occupancy standards
 
-### 2.3 Roles and duties
+Occupancy limits must be reasonable and applied uniformly. A limit set so restrictively that it excludes families with children functions as familial status discrimination however it is phrased.
 
-Responsibility for tenant selection and fair housing may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 2.4 Source of income
 
-### 2.4 Workflow
+California protects source of income. An owner instruction to refuse applicants using housing assistance is an unlawful instruction, and the manager's obligations are those covered in Lesson 03: refuse it, explain why, escalate to the broker, and address whether the engagement can continue.
 
-A defensible workflow for tenant selection and fair housing starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 2.5 Assistance animals
 
-### 2.5 Documents and evidence
+For fair housing purposes, an assistance animal is **not a pet**. Three consequences:
 
-Documents connected with tenant selection and fair housing must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+1. A no-pet policy does not by itself justify denial.
+2. **No pet deposit or pet rent may be charged** for an assistance animal.
+3. The request cannot be refused merely because the animal lacks "certification."
 
-### 2.6 Quantitative and factual analysis
+The provider may still evaluate reasonableness, and the resident remains responsible for damage and for the animal's behavior.
 
-Where tenant selection and fair housing involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 2.6 The worked case
 
-### 2.7 California law and professional boundary
+> An owner instructs: "No housing assistance, no service animals because of my no-pet rule, and I'd prefer a quiet single person over a family with kids. Also that unit has two steps at the entry so it won't work for the applicant in a wheelchair anyway."
+>
+> **Every clause is a problem.** Source of income and familial status are protected in California. A service animal is not a pet. And deciding on the applicant's behalf that a unit will not work for him is not the manager's decision — accessibility is addressed through accommodation and modification, not exclusion.
+>
+> **The response:** refuse the instructions, explain each, evaluate the applicant on the same written criteria as everyone else, treat the entry steps as a possible modification question, and escalate to the broker on whether the brokerage can act for this owner.
+>
+> **What does not work:** applying only the "quiet tenant" preference by recasting familial status as a noise concern; documenting that the instructions came from the owner and following them anyway; or declining the engagement quietly without explaining the problem, which leaves the owner to repeat it with the next manager.
 
-California law controls the licensed activity associated with tenant selection and fair housing; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 2.7 Advertising
 
-### 2.8 Consumer protection and fair access
+Rental advertising is subject to the same rules covered in Lesson 06: describe the property, not the occupants. "Ideal for professionals, no students," "quiet building, adults preferred," and "perfect for a single person" all sort people. And the photographs must depict **the actual unit** — advertising a vacancy with images of a nicer unit in the building misrepresents what is offered, however similar the floor plans.
 
-Consumer protection requires that tenant selection and fair housing be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 3. Rents, deposits, and accounting
 
-### 2.9 Applied scenario
+### 3.1 What is a trust fund
 
-Scenario: during property management and leasing practice, the file raises a question about tenant selection and fair housing. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Money received in the course of licensed activity that belongs to someone else is a trust fund. In property management that includes rents collected for the owner, security deposits, owner-provided reserves, and application fees held pending processing.
 
-### 2.10 Decision checklist
+### 3.2 The three obligations
 
-Before treating tenant selection and fair housing as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+1. **Separation.** Trust funds go into a trust account or neutral depository, kept separate from the brokerage's own funds.
+2. **Records.** A complete accounting of every receipt and disbursement, identifying whose funds they are.
+3. **Timeliness.** Funds are placed as required, without being held personally in the interim.
 
-## 3. rents deposits and accounting
+### 3.3 Why internal ledgers do not cure commingling
 
-### 3.1 Concept and purpose
+The most common defense a manager offers is that funds in the operating account are tracked separately in the accounting system. It does not work, for a structural reason worth teaching:
 
-rents deposits and accounting is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Property management and leasing practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+> Funds in a brokerage operating account are exposed to the brokerage's creditors, to its operating losses, and to ordinary business risk. A ledger entry does not protect the money. **Separation is what protects it**, and the record is what proves the separation was maintained.
 
-### 3.2 Essential elements
+Commingling is complete when the funds are deposited in the wrong account, regardless of how carefully the total is tracked and regardless of whether anyone loses money.
 
-The essential elements of rents deposits and accounting are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 3.4 Shortages and overages
 
-### 3.3 Roles and duties
+| Finding | What it means | Correct response |
+|---|---|---|
+| **Shortage** | Someone else's money is missing | Cure immediately from the broker's own funds; document the cause; reconcile |
+| **Overage** | The records do not accurately reflect whose funds are held | Investigate and document the source; the broker may not simply keep it |
 
-Responsibility for rents deposits and accounting may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Neither is a rounding matter. There is no tolerance threshold, and neither may be deferred to the next reconciliation.
 
-### 3.4 Workflow
+> A manager discovers he deposited a tenant's rent into the operating account by mistake. The correct response is to correct it immediately, **document the error and the correction**, and notify the broker so the trust records reconcile and the cause is addressed. Correcting it quietly without a record is its own problem: trust accounting is judged by the record as much as by the balance.
 
-A defensible workflow for rents deposits and accounting starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 3.5 Security deposits
 
-### 3.5 Documents and evidence
+Deposits are the tenant's funds held for defined purposes, and California regulates their handling and their return.
 
-Documents connected with rents deposits and accounting must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Practical obligations:
 
-### 3.6 Quantitative and factual analysis
+- **Hold them as trust funds**, separate from the brokerage's funds. Forwarding them to the owner is governed by the agreement and the law, not by convenience.
+- **Document condition at move-in**, thoroughly, with dated photographs. A deposit dispute is decided on the difference between move-in and move-out condition, and a manager without move-in documentation has no case.
+- **Distinguish damage from ordinary wear and tear.** Wear and tear is not deductible.
+- **Account in writing** on termination, itemizing deductions with supporting documentation, within the required time.
+- **Return the balance** within the required period.
 
-Where rents deposits and accounting involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Deposit accounting is the single most common source of tenant complaints, and nearly all of it is prevented by move-in documentation and an itemized written accounting.
 
-### 3.7 California law and professional boundary
+### 3.6 Reconciliation
 
-California law controls the licensed activity associated with rents deposits and accounting; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+The trust account is reconciled on a regular cycle, and the reconciliation compares three things: the bank balance, the book balance, and the **total of the individual beneficiary ledgers**. All three must agree.
 
-### 3.8 Consumer protection and fair access
+A reconciliation that balances the bank against the book but never against the beneficiary ledgers will not detect the error that matters most — money in the account belonging to a different beneficiary than the records say.
 
-Consumer protection requires that rents deposits and accounting be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 4. Maintenance, habitability, and access
 
-### 3.9 Applied scenario
+### 4.1 The habitability obligation
 
-Scenario: during property management and leasing practice, the file raises a question about rents deposits and accounting. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+A residential landlord must maintain the property in a habitable condition. The obligation covers the elements that make a dwelling fit to live in — weather protection, plumbing, hot and cold water, heating, electrical, sanitary facilities, and structural integrity, among others.
 
-### 3.10 Decision checklist
+Two features shape how a manager must respond:
 
-Before treating rents deposits and accounting as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+1. **It is not waivable** by agreement. A lease clause purporting to relieve the landlord does not.
+2. **It runs continuously**, not only at move-in.
 
-## 4. maintenance habitability and access
+### 4.2 Triage
 
-### 4.1 Concept and purpose
+Not every repair request is equal, and a manager who treats them uniformly will respond too slowly to the ones that matter.
 
-maintenance habitability and access is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Property management and leasing practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+| Category | Examples | Response |
+|---|---|---|
+| **Emergency** | No water, no heat in cold weather, sewage backup, gas odor, electrical hazard, security failure, flooding | Immediate; emergency authority applies |
+| **Habitability** | Failed plumbing, non-functioning heat, pest infestation, mold, roof leak | Prompt, documented |
+| **Ordinary** | Appliance malfunction, cosmetic damage, minor fixtures | Scheduled within a reasonable period |
+| **Cosmetic or improvement** | Repainting by preference, upgrades | Owner decision |
 
-### 4.2 Essential elements
+A loss of water is not routine maintenance and does not wait for the next scheduled visit. Requiring a written request before responding, or referring the tenant to the owner, may be part of the process but neither justifies delaying the response.
 
-The essential elements of maintenance habitability and access are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 4.3 Documentation
 
-### 4.3 Roles and duties
+Every request and every response is recorded: when the request was received, its nature, when the manager responded, what was done, by whom, and what it cost. In a later dispute — with the tenant, with the owner, or with an insurer — that record is the entire case.
 
-Responsibility for maintenance habitability and access may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 4.4 Lawful entry
 
-### 4.4 Workflow
+A tenant has a possessory right, and entry requires:
 
-A defensible workflow for maintenance habitability and access starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+1. **A permitted purpose** — necessary repairs, agreed services, showing the unit, inspection where permitted, or emergency.
+2. **Proper notice**, in the manner and within the time the law requires.
+3. **A reasonable time** of day.
+4. **Documentation** that notice was given.
 
-### 4.5 Documents and evidence
+What does not substitute for notice: the tenant being home, the owner's authorization, the manager holding a key, or the convenience of the contractor's schedule.
 
-Documents connected with maintenance habitability and access must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 4.5 Showing an occupied unit
 
-### 4.6 Quantitative and factual analysis
+Where a unit is shown while occupied — for re-rental or for sale — the entry rules apply to each showing. The practical approach is to agree a protocol with the tenant in advance, honor it, and document the notices.
 
-Where maintenance habitability and access involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+A tenant who is cooperated with is far easier to show around than one whose rights are treated as an obstacle, and a manager who treats notice as optional will eventually meet a tenant who does not.
 
-### 4.7 California law and professional boundary
+### 4.6 Habitability and the tenant's remedies
 
-California law controls the licensed activity associated with maintenance habitability and access; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+Where a habitability obligation goes unmet, a tenant may have remedies. A manager's practical concern is that the exposure grows with delay, and that a documented prompt response is the defense.
 
-### 4.8 Consumer protection and fair access
+Where a tenant asserts a remedy, the matter should be escalated to the broker and, where appropriate, to counsel. It is not a matter for the manager to resolve by argument with the tenant.
 
-Consumer protection requires that maintenance habitability and access be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+## 5. Lease enforcement and termination
 
-### 4.9 Applied scenario
+### 5.1 Notice is where enforcement succeeds or fails
 
-Scenario: during property management and leasing practice, the file raises a question about maintenance habitability and access. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Termination and enforcement procedures are formal and unforgiving. **A good reason delivered by a defective notice fails**, and the landlord starts over — having lost weeks and given the tenant a stronger position.
 
-### 4.10 Decision checklist
+The elements that must be right: the type of notice; its content; the period it gives; who is named; how it is served; and the proof of service. Each has requirements, and each is a common failure point.
 
-Before treating maintenance habitability and access as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 5.2 What matters most, in order
 
-## 5. lease enforcement and termination
+1. **The correct notice type** for the circumstance.
+2. **Correct content**, stating what the law requires it to state.
+3. **Correct period**, calculated correctly.
+4. **Correct service method**, with proof.
+5. **Correct parties** named.
 
-### 5.1 Concept and purpose
+A manager who documents the tenant's conduct impeccably and then serves the wrong notice has accomplished nothing. Documentation matters — it just does not cure a defective notice.
 
-lease enforcement and termination is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Property management and leasing practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 5.3 Retaliation and its appearance
 
-### 5.2 Essential elements
+Enforcement action taken close in time to a tenant's complaint, repair request, or assertion of a right can look retaliatory, and California protects tenants against retaliation.
 
-The essential elements of lease enforcement and termination are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+The manager's protection is a documented, independent basis for the action that predates or is unconnected to the tenant's protected activity. This is another reason the maintenance log matters: it establishes what happened and when.
 
-### 5.3 Roles and duties
+### 5.4 Self-help is prohibited
 
-Responsibility for lease enforcement and termination may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Changing locks, removing doors, shutting off utilities, removing a tenant's belongings, or otherwise forcing a tenant out without process is unlawful and carries serious consequences.
 
-### 5.4 Workflow
+There is no version of this that becomes acceptable because the tenant is badly behaved, has not paid, or has abandoned the unit in the manager's judgment. Where a unit appears abandoned, there is a legal process for that too.
 
-A defensible workflow for lease enforcement and termination starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 5.5 Escalation
 
-### 5.5 Documents and evidence
+Termination and eviction are legal proceedings. The manager's role is to maintain the record, follow the process, and involve counsel — not to advise the owner on the strength of the case or predict the outcome.
 
-Documents connected with lease enforcement and termination must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+An owner asking "can we just get them out by the first?" is asking a legal question, and the honest answer describes the process and its timeline rather than promising a date.
 
-### 5.6 Quantitative and factual analysis
+### 5.6 Move-out
 
-Where lease enforcement and termination involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+At the end of a tenancy:
 
-### 5.7 California law and professional boundary
+- **Document condition** as thoroughly as at move-in, dated, with photographs.
+- **Compare against move-in documentation**, which is why move-in documentation exists.
+- **Distinguish damage from ordinary wear and tear.**
+- **Itemize deductions in writing** with supporting documentation.
+- **Return the balance** within the required period.
+- **Retain the record**, including the photographs.
 
-California law controls the licensed activity associated with lease enforcement and termination; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+## 6. Owner reporting and risk controls
 
-### 5.8 Consumer protection and fair access
+### 6.1 Reporting discharges the accounting duty
 
-Consumer protection requires that lease enforcement and termination be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+The manager holds and handles the owner's money. Reporting is how the accounting duty is discharged, which is why it must be **regular and itemized** rather than summary.
 
-### 5.9 Applied scenario
+An accounting that cannot be verified is not an accounting. Owner preference for more or less detail does not change the obligation.
 
-Scenario: during property management and leasing practice, the file raises a question about lease enforcement and termination. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 6.2 What the owner receives
 
-### 5.10 Decision checklist
+| Item | Frequency |
+|---|---|
+| Rent collected, by unit, with dates | Monthly |
+| Delinquencies and their status | Monthly |
+| Disbursements, itemized, with supporting documentation | Monthly |
+| Management and leasing fees charged | Monthly |
+| Reserve balance and trust funds held | Monthly |
+| Security deposits held, by tenant | Monthly, and on any change |
+| Maintenance activity, including requests and responses | Monthly |
+| Vacancy and leasing activity | Monthly |
+| Annual summary and tax reporting information | Annually |
 
-Before treating lease enforcement and termination as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 6.3 An owner who has not been reported to for four months
 
-## 6. owner reporting and risk controls
+That is not an administrative lapse. The owner has been unable to verify the handling of their own funds for a third of a year, the trust records have gone that long without external scrutiny, and if there is an error in them nobody has been in a position to find it.
 
-### 6.1 Concept and purpose
+An audit finding of that kind sits alongside commingling and unsigned agreements as a structural failure, not a filing backlog.
 
-owner reporting and risk controls is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Property management and leasing practice, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 6.4 Risk controls that pay for themselves
 
-### 6.2 Essential elements
+1. **Move-in and move-out documentation**, dated, photographic, complete. Prevents most deposit disputes outright.
+2. **A maintenance log** capturing request, response, action, and cost. Answers habitability and retaliation questions.
+3. **Written screening criteria applied uniformly**, with documented evaluations. Answers fair housing questions.
+4. **Monthly trust reconciliation** against beneficiary ledgers, not only bank against book.
+5. **Written notices with proof of service**, retained.
+6. **Insurance verification** — the owner's, and where required the tenant's.
+7. **Vendor management** — licensing, insurance, and workmanship standards for contractors sent to the property.
 
-The essential elements of owner reporting and risk controls are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 6.5 The audit view
 
-### 6.3 Roles and duties
+> A review of a management practice finds: security deposits in the operating account; one owner unreported for four months; two management agreements never signed; and a salesperson signing leases in her own name. The broker says nothing has gone wrong and no one has complained.
+>
+> **Each is an independent defect and none depends on harm having occurred.** Deposits are trust funds that may not be commingled. Owners are owed an accounting. Authority must rest on a signed agreement. And a salesperson may not contract in her own name for licensed activity — the lease is the brokerage's, executed for the broker.
+>
+> **The absence of complaints is not evidence of compliance.** It usually means the problems have not surfaced yet, and in a management practice — which repeats monthly across every unit — they will.
 
-Responsibility for owner reporting and risk controls may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 6.6 Checkpoint
 
-### 6.4 Workflow
-
-A defensible workflow for owner reporting and risk controls starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with owner reporting and risk controls must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where owner reporting and risk controls involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with owner reporting and risk controls; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that owner reporting and risk controls be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during property management and leasing practice, the file raises a question about owner reporting and risk controls. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating owner reporting and risk controls as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to explain why an internal ledger does not cure commingling, name the three balances a trust reconciliation must agree, and state why a defective notice defeats a well-documented enforcement action.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify each instruction or practice that cannot be followed and why, state the correct handling of the funds involved, identify the fair housing analysis that applies to each applicant request, state the documentation you would create and retain, and identify what you would escalate to the broker or to counsel. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
