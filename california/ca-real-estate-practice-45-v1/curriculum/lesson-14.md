@@ -71,6 +71,33 @@ Systemic effects live in structures and persist through neutral actors. A screen
 
 None of that requires anyone to intend it. Recognizing it is what allows a licensee to ask whether a practice they inherited is producing an outcome they would not choose.
 
+### 1.5 Where bias enters a transaction, step by step
+
+Section 1.3 identifies where bias operates. This section walks a single transaction and names the decision point at each stage, because **the abstraction is easy to accept and hard to apply until it is attached to a specific act.**
+
+| Stage | The decision | How bias enters |
+|---|---|---|
+| **Advertising** | Where the advertisement is placed and who is targeted | An audience defined by a proxy — a platform's interest category, a zip code, an income band — reaches some people and not others **before anyone applies** |
+| **The first call** | How much information is given, how warmly | Different callers receive different levels of detail, encouragement, and follow-up. **The least visible violation in the business** |
+| **Qualification** | Whether the caller is asked to prove readiness before being served | Applied unevenly, this is a gate that operates on impression |
+| **Property selection** | Which properties are shown | Areas quietly added or omitted against the buyer's stated criteria |
+| **Commentary while showing** | What is said about neighborhoods, schools, and "fit" | Section 4.6 of Lesson 09 governs, and this is where most of it happens |
+| **Advice on offers** | How aggressive a strategy is recommended | Assumptions about what a buyer can afford or will accept |
+| **Advocacy in negotiation** | How hard the licensee pushes | Effort is a resource, and it is distributed |
+| **Vendor referrals** | Which inspector, lender, or contractor | Networks are homogeneous unless they are built deliberately |
+| **Responsiveness** | How fast calls are returned | Measurable, and rarely measured |
+| **Tenant or applicant screening** | Which criteria, applied how | Section 2.8 of Lesson 12 |
+
+**Three observations.**
+
+**Only two of these rows involve a denial.** The rest are distributions of information, effort, and attention — **which is why "I never refused anyone" is a sincere statement that answers a question nobody asked.**
+
+**Every row has a structural control**, and every control is the same one: **do the thing the same way for everyone, and record that you did.** Uniform information scripts, a logged inquiry list, criteria-driven property selection, a documented search, scripted answers to neighborhood questions, and measured response times.
+
+**The rows compound.** A buyer who received less information on the first call, saw fewer properties, and got a less aggressive offer strategy did not experience three small differences. He experienced a different transaction, and he has no way to know it.
+
+> **The exercise worth doing once:** take your last ten clients and, for each row above, ask whether you can show — from the file rather than from memory — that you did the same thing. **The rows where the answer is "I know I did" and not "here it is" are the rows to build a control for.**
+
 ## 2. Historical and social impacts
 
 ### 2.1 Why history is in a practice course
@@ -105,6 +132,30 @@ Exclusion from housing markets therefore does not end when the exclusionary prac
 - Refuse to transmit them as market wisdom — "this side of the boulevard is where you want to be" carries more than it says.
 - Apply uniform practices, because uniformity is what stops a licensee from reproducing the pattern without deciding to.
 - Give consumers objective information and let them apply their own criteria.
+
+### 2.5 Mechanisms that persist with nobody operating them
+
+Section 2.4 states what history does and does not imply for a licensee. This section addresses the harder professional question underneath it: **why does a practice that has stopped keep producing effects?**
+
+**Four mechanisms, none of which requires a present-day actor:**
+
+**Inherited networks.** A licensee's business comes from referrals, and referrals come from the people he already knows. **A network assembled in a segregated market reproduces its composition indefinitely**, without a single decision by anyone currently in it. This is why Section 3.2's interruption practices include deliberately expanding referral sources — not as outreach, but as a correction to a mechanism.
+
+**Capitalized value.** Property values reflect decades of investment, maintenance, and public spending. **Areas that received less capital have less value now**, and the difference is not a current judgment about those areas — it is the accumulated arithmetic of what happened. A comparable-sales analysis measures it accurately and thereby carries it forward, which is what makes Lesson 05's work both correct and consequential.
+
+**Inherited equity.** Housing wealth passes to the next generation and becomes its down payment. **A family excluded from ownership for a generation arrives at today's market without the asset that today's market assumes**, which is why equal treatment beginning now does not produce equal outcomes.
+
+**Encoded criteria.** Standards that make no reference to any protected characteristic can still operate as proxies — a requirement, a threshold, a preference that correlates with something it does not name. **These are the hardest to see because each was adopted for a real reason**, and the reason is usually still real.
+
+**What this means for a licensee, precisely.**
+
+**It does not mean adjusting service by group.** Section 2.4 is unequivocal, and steering on a protected basis is prohibited including with a corrective intent.
+
+**It does mean that "I treat everyone the same" is a statement about conduct and not about outcomes**, and that a practitioner who wants his practice to be fair examines the mechanisms rather than only his intentions.
+
+**And it means the structural controls in Section 3.1 are the actual work.** Widening a referral network, publishing criteria, using uniform information scripts, and measuring outcomes are corrections to mechanisms. **Each of them operates whether or not the licensee is thinking about bias on a given day**, which is the only property that matters, because the day he is not thinking about it is the day it operates.
+
+> **The professional framing that avoids both errors:** history explains why the present distribution exists. **It does not license unequal treatment in either direction.** What it licenses is skepticism about processes that produce unequal results while everyone involved is acting in good faith.
 
 ## 3. Recognition and interruption strategies
 
@@ -161,6 +212,32 @@ Licensees steer partly because declining is hard in the moment. Having language 
 - **Refusing and changing the subject.** The consumer has a real informational need and will get an answer somewhere less careful.
 - **Answering "in general terms."** A general characterization is still a characterization.
 - **Answering by showing rather than telling** — redirecting the search toward what you would have said.
+
+### 3.6 The measurements that reveal what intentions conceal
+
+Section 3.3 introduces outcome review. This section makes it operational, because a review nobody knows how to perform does not get performed.
+
+**What to measure, for an individual licensee:**
+
+1. **Response time to first contact**, by lead source, over a quarter. **The most revealing single measure available**, because it is generated automatically, it is unaffected by intention, and it varies.
+2. **Conversion from inquiry to appointment**, and from appointment to representation.
+3. **Properties shown per buyer**, and the geographic spread of those properties against each buyer's stated criteria.
+4. **Time from listing to first showing** across listings.
+5. **Where advertisements ran and who they reached**, including the audience parameters of any paid targeting.
+6. **Vendor referral distribution** — which providers get sent business, and how that set was assembled.
+7. **Exceptions**: every time the licensee did something outside his ordinary process, with the reason.
+
+**For a brokerage, add:**
+
+8. **Applicant and client outcomes by office and by licensee**, examined as distributions rather than as individual decisions.
+9. **Complaint patterns**, including the informal ones that never became complaints.
+10. **The composition of the referral network and the lead sources** the brokerage buys.
+
+**What to do with a pattern.** A disparity is not a verdict. **It is a question**, and the professional response is to look for the neutral explanation and then test it. A licensee whose response times are slower for one lead source may have an inbox routing problem rather than a bias problem — **and he will not know which until he looks, and the routing problem is real and worth fixing either way.**
+
+**What not to do with a pattern:** explain it away without examining it, stop measuring because the measurement produced something uncomfortable, or treat "I can explain each individual case" as an answer. **Section 1.4 is the reason: a set of individually explainable decisions can still produce a distribution that is not explainable.**
+
+> **The uncomfortable property of this section:** these measurements find problems in the practices of people who are not biased, because much of what produces unequal service is structural — which lead sources you buy, which network you inherited, how your inbox sorts. **That is the good news.** Structural causes have structural fixes, and they do not require anyone to be a different person.
 
 ## 4. Participatory practicum: the consumer role
 
@@ -258,6 +335,27 @@ Two points typically arise in debrief, and both are worth stating:
 
 **"I don't have biases, so this doesn't apply to me."** The response is not to argue about whether the student has biases. It is that the practicum targets **practices and outcomes**, which are observable, rather than self-assessment, which is the one instrument implicit bias reliably evades. A student who applies uniform practices produces fair outcomes whatever they hold internally.
 
+### 5.7 Giving feedback to a peer
+
+The practicum asks you to receive structured feedback. In practice you will more often be the person who has to give it — to a colleague whose comment, advertisement, or handling of a client was a problem. **Most licensees say nothing**, and the silence is what allows the conduct to continue.
+
+**Why it is hard, named honestly:** the person is a peer or a superior, the comment was probably not malicious, the setting is social, and raising it makes the licensee the person who made things awkward. **All four of those are real and none of them changes what is required.**
+
+**What works:**
+
+1. **Address the conduct, not the person.** "That phrasing in the listing describes who the neighborhood is for" lands. "That's discriminatory" makes the conversation about whether the person is a bigot, which is a conversation nobody wins and which the person will spend the rest of the exchange defending.
+2. **Be specific and immediate.** The general observation delivered a week later cannot be acted on. The specific one delivered now can.
+3. **Assume it was not deliberate**, out loud. **Most of it is not**, and the assumption gives the person somewhere to go other than defensiveness.
+4. **Offer the replacement.** "You can point them at the district's own data" is more useful than "you can't say that," and it removes the objection that the licensee is being unhelpful.
+5. **Say it privately where the audience does not need to hear it** — and publicly where the audience already heard the original, because a room that hears a comment and no response has learned something.
+6. **Escalate what needs escalating.** Section 3.4's scripts cover the unlawful instruction; a pattern in a colleague's conduct goes to the broker, and a single careless phrase in an advertisement usually does not.
+
+**What does not work:** hinting, joking about it, telling someone else, sending an anonymous note, or resolving to bring it up if it happens again.
+
+> **The reciprocal obligation, and it is the harder half:** be the person who can receive this. **A licensee who reacts badly the one time a colleague raises something has ensured that nobody raises anything again** — and the next thing nobody raises will be worse than the thing they did not raise this time.
+
+**What the practicum is training** is not the ability to identify bias in a written scenario, which is easy. **It is the ability to say something in a room**, which is the skill that actually interrupts anything, and which is why the exercise asks you to write the words rather than to describe what you would generally do.
+
 ## 6. Fair housing action plan and reflection
 
 ### 6.1 What makes a plan real
@@ -313,7 +411,34 @@ Submit a short reflection addressing:
 
 The fourth question is the one that matters. A plan that changes nothing next week will not change anything later.
 
-### 6.6 Checkpoint
+### 6.6 Sustaining the plan
+
+A fair housing action plan written at the end of a course and never opened again is a document, not a plan. **The difference is a review cycle and a small number of things that happen whether or not anyone remembers.**
+
+**What runs on a schedule:**
+
+| Cadence | What happens |
+|---|---|
+| **Every transaction** | The search is documented against the buyer's stated criteria; neighborhood questions are answered from the scripts in Section 3.4; every inquiry is logged |
+| **Monthly** | Automated marketing and drip content reviewed for stale or sorting language; audience parameters on any paid advertising re-checked |
+| **Quarterly** | The Section 3.6 measurements run; exceptions reviewed; the vendor referral distribution examined |
+| **Annually** | The conflicts and vendor inventory; the advertising archive spot-checked; the criteria and scripts reviewed against what California currently protects, **because the list is added to** |
+| **On any incident** | An instruction refused, a comment made by a client, a pattern noticed — recorded, escalated, and added to what the next review looks at |
+
+**What makes a plan fail:**
+
+- **It depends on remembering.** Anything that requires the licensee to notice in the moment will fail on the day he is busy, which is the day it matters.
+- **It has no owner.** In a brokerage, a plan everyone supports and no one runs does not run.
+- **It measures nothing**, so it cannot tell whether it is working.
+- **It has no place to put an uncomfortable finding**, so findings stop being recorded.
+
+**What makes a plan durable:** it is short, its items are things that happen rather than things people intend, and **it produces a record even when nothing is wrong** — because a review that only generates documents when there is a problem creates an incentive not to find one.
+
+> **The last element, and the one most often left out:** what the licensee does when the plan's own review finds something. **Decide that in advance** — who is told, what gets examined, and what changes — because deciding it in the moment, about your own practice, is the hardest version of the decision.
+
+**And the reflection this component asks for is not a summary of the course.** It is a specific answer to a specific question: **which of your own current practices did this lesson identify as unstructured, and what will replace it?** A reflection that names no practice of your own has answered a different question.
+
+### 6.7 Checkpoint
 
 You should be able to state why structure outperforms effort, produce the words you would use to decline a neighborhood-composition question, and write a plan element that someone else could verify you performed.
 
