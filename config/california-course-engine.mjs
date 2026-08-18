@@ -1,6 +1,7 @@
 import practiceBank from "./california/practice-question-bank.mjs";
 import principlesBank from "./california/principles-question-bank.mjs";
 import mortgageBank from "./california/mortgage-question-bank.mjs";
+import principlesFinal from "./california/principles-final-exam-bank.mjs";
 
 const COURSE_DEFINITIONS = {
   "ca-real-estate-principles-45": {
@@ -79,6 +80,18 @@ const QUESTION_BANKS = {
    against the 80% lesson mastery threshold the lesson plan states. */
 const PASSING_PERCENT = { applied: 100, engagement: 80, remediation: 80 };
 
+/* RE 303 p.4 and database/004_california_prelicense.sql both fix the final examination
+   at two forms of 100 questions, 60% to pass, one retake on different questions. The
+   banks live outside `public/` and site/build.sh fails the build if a file matching
+   /final-exam-bank|answer-key/ reaches `dist`. */
+const FINAL_EXAM_BANKS = {
+  "ca-real-estate-principles-45": principlesFinal
+};
+const FINAL_PASSING_PERCENT = 60;
+const FINAL_QUESTION_COUNT = 100;
+const FINAL_EXAM_MINUTES = 180;
+export const CALIFORNIA_FINAL_EXAM_FORMS = Object.freeze(["A", "B"]);
+
 export function getCaliforniaCourse(courseId) {
   const course = COURSE_DEFINITIONS[courseId];
   if (!course) return null;
@@ -92,7 +105,11 @@ export function getCaliforniaCourse(courseId) {
     assignmentCount: 15,
     expectedMinutesPerAssignment: 180,
     minimumElapsedHours: 420,
-    finalPassingPercent: 60,
+    finalPassingPercent: FINAL_PASSING_PERCENT,
+    finalQuestionCount: FINAL_QUESTION_COUNT,
+    finalExamMinutes: FINAL_EXAM_MINUTES,
+    finalExamOpenBook: false,
+    finalExamProctored: true,
     maxFinalAttempts: 2,
     approvalStatus: "Submission draft — not yet approved",
     subjects: [...course.subjects],
@@ -152,6 +169,45 @@ export function getCaliforniaAssessment(courseId, assignmentId, kind = "engageme
   };
 }
 
+/* The final examination is served through the same shape as a lesson assessment, so
+   `publicAssessment` strips the answer key and `scoreCaliforniaAssessment` grades it by
+   the same code path the tests already cover. `form` selects the attempt: A is the first
+   examination, B the single retake, and RE 303 requires the retake to use different
+   questions. `source` stays on the server object for the instructor answer key and is
+   dropped by `publicAssessment` before anything reaches a browser. */
+export function getCaliforniaFinalExam(courseId, form = "A") {
+  const course = getCaliforniaCourse(courseId);
+  const authored = FINAL_EXAM_BANKS[courseId]?.forms?.[form];
+  if (!course || !Array.isArray(authored) || authored.length !== FINAL_QUESTION_COUNT) return null;
+  return {
+    id: `${courseId}-final-${form}`,
+    kind: "final",
+    form,
+    assignmentId: null,
+    passingPercent: FINAL_PASSING_PERCENT,
+    minutes: FINAL_EXAM_MINUTES,
+    items: authored.map((item, index) => {
+      const id = `final-${form}-${String(index + 1).padStart(3, "0")}`;
+      const presented = permuteChoices(item.choices, item.correctChoice, `${courseId}:${id}`);
+      return {
+        id,
+        prompt: item.prompt,
+        choices: presented.choices,
+        correctChoice: presented.correctChoice,
+        rationale: item.rationale,
+        source: item.source,
+        crossReferences: item.crossReferences ?? []
+      };
+    })
+  };
+}
+
+/* Which form a given attempt uses. Attempt 1 is Form A; the single permitted retake is
+   Form B. Anything beyond `maxFinalAttempts` has no form, which is the point. */
+export function californiaFinalExamForm(attemptNumber) {
+  return CALIFORNIA_FINAL_EXAM_FORMS[Number(attemptNumber) - 1] ?? null;
+}
+
 /* The student payload must never carry an answer key. Stripping happens per item so
    that adding a field to an item cannot accidentally leak it to the browser. */
 export function publicAssessment(assessment) {
@@ -161,6 +217,11 @@ export function publicAssessment(assessment) {
     kind: assessment.kind,
     assignmentId: assessment.assignmentId,
     passingPercent: assessment.passingPercent,
+    /* Present only on a final examination. The form letter and the time limit are not
+       secrets — the student is told both — but the answer key, the rationale, and the
+       answer-key source reference are stripped with every other unlisted field. */
+    ...(assessment.form ? { form: assessment.form } : {}),
+    ...(assessment.minutes ? { minutes: assessment.minutes } : {}),
     items: assessment.items.map((item) => ({ id: item.id, prompt: item.prompt, choices: [...item.choices] }))
   };
 }
