@@ -73,6 +73,28 @@ What escrow needs at opening: the fully executed purchase agreement and all amen
 
 The licensee's contribution is accuracy and completeness. An escrow opened on a partially executed contract, or without the amendment that changed a term, will produce instructions that do not match the agreement — which surfaces later, usually at the worst time.
 
+### 1.6 Escrow instructions, and amending them
+
+Escrow acts on instructions. That sentence explains most of what goes wrong.
+
+**The instructions are not the purchase agreement.** They are a separate set of directions to the escrow holder, and where the two differ, escrow follows what it was instructed to do. **A term negotiated in an amendment that never reached escrow does not exist as far as escrow is concerned**, which is why Section 5.7 of Lesson 10 finds missing credits on closing statements.
+
+**What this means in practice:**
+
+1. **Every amendment goes to escrow when it is signed**, not in a batch before closing. The licensee's transmittal is dated and recorded.
+2. **Instructions are amended in writing by the parties**, and the escrow holder will not act on an agent's phone call.
+3. **Both parties must instruct.** A change one party wants is not a change until the other has instructed it too, and a licensee who tells his client "it's handled" after a one-sided call has misinformed him.
+4. **Conflicting instructions stop escrow rather than being resolved by it.** Section 1.2's neutrality forbids the escrow holder from deciding between the parties, so a conflict produces a hold, not a ruling.
+5. **The licensee does not draft instructions or interpret them for the client.** Their legal effect is a legal question.
+
+**Two situations that recur.**
+
+**The late verbal change.** A seller agrees on the phone to a credit two days before closing. Unless it becomes a signed amendment and reaches escrow, the closing statement will not show it, and the discovery happens at signing with everyone in a room. **The fix is the same day: reduce it to writing, get both signatures, send it to escrow, confirm receipt.**
+
+**The instruction the client did not read.** Clients sign escrow instructions the way they sign everything, and then are surprised by a provision. **The licensee's contribution is to tell the client, before signing, that these are operative directions rather than formalities, and that questions about their effect go to counsel** — not to answer the questions himself.
+
+> **A useful mental model:** the purchase agreement is what the parties owe each other. The escrow instructions are what a neutral third party has been told to do. **Keeping them aligned is a task somebody has to perform on every file, and on most files that somebody is the licensee.**
+
 ## 2. Title and vesting review
 
 ### 2.1 What a preliminary report is
@@ -124,6 +146,30 @@ The owner's policy insures the buyer's interest; the lender's policy insures the
 
 What a policy does: indemnifies the insured against covered losses from title defects, **within its terms and excluding what it excepts**. What it does not do: guarantee perfect title, insure physical condition, or oblige the insurer to clear what it excepted.
 
+### 2.6 A worked preliminary report review
+
+> **The report** on a suburban parcel lists, among the exceptions: general and special taxes for the current fiscal year; a supplemental assessment; a deed of trust in favor of a lender; an easement for public utilities recorded in 1962; covenants, conditions and restrictions recorded in 1958; an easement for ingress and egress in favor of the adjoining parcel recorded in 1979; a mechanic's lien recorded four months ago; a notice of a special assessment district; and an abstract of judgment against a person with the same surname as the seller.
+>
+> **How a licensee reads this — and Section 2.3's boundary applies throughout: he identifies items that require attention and routes the legal questions.**
+>
+> **The mechanic's lien is the first item.** It is recent, it is a monetary encumbrance, and it must be resolved or addressed before the buyer takes title. **It also tells a story:** work was done on the property recently and someone was not paid. **That is a fact about the property's condition and history**, and it belongs in the disclosure conversation as well as the title conversation.
+>
+> **The abstract of judgment against a similar name is the item most often mishandled.** It may be the seller. It may be an unrelated person with the same surname. **This is resolved by the title company through its own process**, and the licensee's role is to flag it early — because if it is the seller, it must be dealt with, and if it is not, clearing the record takes time nobody scheduled.
+>
+> **The 1979 ingress and egress easement is a use question the buyer needs to understand.** Someone has a recorded right to cross this property. **Where it runs, how wide it is, and what it permits are answered by the recorded document**, which the buyer should obtain and read. A buyer planning a fence, a structure, or a landscaping project across it will discover the problem later at greater cost.
+>
+> **The 1958 covenants and restrictions may constrain use** — setbacks, permitted structures, architectural approval, or provisions that are no longer enforceable. **Which provisions still operate is a legal question**, and it is one buyers ask licensees constantly.
+>
+> **The utility easement from 1962** is ordinary and still worth locating, for the same reason as the ingress easement.
+>
+> **The special assessment district and the supplemental assessment** are cost items the buyer's budget has probably not included, and the supplemental bill in particular surprises first-time buyers after closing. **Section 5.5 of Lesson 10 and this exception are the same subject arriving from two directions.**
+>
+> **The deed of trust** is expected and will be paid at closing from the seller's proceeds.
+>
+> **What the licensee does.** Deliver the report to the buyer promptly with a written recommendation to review it with the title officer and, for the recorded documents, with counsel; obtain the underlying documents for the easements and restrictions rather than relying on the one-line description; raise the lien and the judgment with escrow and the listing side immediately; and record the delivery and the recommendation.
+>
+> **What the licensee does not do.** Tell the buyer the restrictions are "old and unenforceable," that the easement is "just for the utility company," that the judgment is "probably a different person," or that the lien is "the seller's problem." **Four characterizations, none of which he has a basis for, each of which a buyer will rely on.**
+
 ## 3. Transaction coordination
 
 ### 3.1 Parallel tracks
@@ -160,6 +206,28 @@ The advice: **obtain quotes early in the contingency period**, not at the end. A
 ### 3.4 Communication that prevents disputes
 
 A short written status note at each milestone — what has been delivered, what remains, what the next date is — does more to prevent disputes than any other practice, because most disputes are about whether something was delivered and when.
+
+### 3.5 How coordination fails
+
+Section 3.1 describes the parallel tracks. Coordination failures have a small number of recognizable shapes, and each has a control.
+
+| The failure | What it looks like | The control |
+|---|---|---|
+| **The unowned task** | Everyone assumed someone else ordered the association documents | A written task list with a name against each item, made at opening |
+| **The silent dependency** | The appraisal cannot be scheduled until access is arranged with a tenant nobody has contacted | Map what each item waits on, not just when it is due |
+| **The stale assumption** | Work continues on the belief that a condition cleared last week | Confirm status rather than assume continuity; verify at each check-in |
+| **The one-way message** | An email sent, no response, no follow-up, and the recipient never saw it | Follow-up is scheduled, not remembered; no consequential item rests on an unacknowledged message |
+| **The out-of-band change** | Parties agree to something in a phone call and no document follows | Same-day written confirmation of every agreement, without exception |
+| **The vacation gap** | A participant is out and their work stops without anyone knowing | Ask who covers, at opening, for every party |
+| **The last-week compression** | Four items all land in the final three days | Front-load: order everything orderable in week one |
+
+**The two that cause the most damage are the unowned task and the silent dependency**, because both are invisible until the deadline. Nothing looks wrong — no one is behind on anything, because no one has started.
+
+**The practical instrument is a single document**, made the day escrow opens, listing every item the transaction needs, who owns it, what it depends on, and when it must be complete. It is reviewed at each check-in, and the review takes minutes.
+
+> **What it replaces** is a licensee holding the entire transaction in his head, which works until he has four transactions, and then fails on all four at once. Lesson 02's capacity analysis and this document are the same idea applied at two scales.
+
+**One communication rule sits above all of it.** Section 3.4 explains why communication prevents disputes; the operational form is that **the client hears from the licensee on a schedule, including when nothing has happened.** A client who has to ask what is going on has already begun to lose confidence, and most cancellation requests — Section 6.3 of Lesson 04 — start there rather than with an actual failure.
 
 ## 4. Final verification and closing
 
@@ -210,6 +278,41 @@ The highest-risk moment in the transaction is when the buyer sends funds. The pa
 
 A licensee who sends that warning at the start of escrow, rather than the day funds move, has done the single most valuable thing available to protect a client's money.
 
+### 4.7 A worked final verification
+
+> **The walkthrough**, the afternoon before a scheduled closing. The buyer and his agent find:
+>
+> - **(a)** The refrigerator is gone. It appeared in the listing photographs and was not excluded in the agreement.
+> - **(b)** A repair the seller agreed to make in a signed amendment — replacing a failed water heater — has been done, but the unit is not strapped and there is no permit record.
+> - **(c)** Water staining on the garage ceiling that was not present at the inspection five weeks ago.
+> - **(d)** The seller's belongings fill half the garage. He says the movers come "the day after close."
+> - **(e)** A hole in a bedroom wall where a mounted television was removed.
+> - **(f)** The rear slider does not lock; it did at the inspection.
+>
+> **Sorting these, because they are not the same kind of problem.**
+>
+> **(c) is the serious one.** New water intrusion since the inspection is **a change in the property's condition**, and its cause is unknown. It may be a roof failure, a plumbing failure, or the new water heater in item (b). **The buyer is being asked to close tomorrow on a property with an active unexplained condition.** This is escalated immediately — to both brokers — and it is a legitimate basis for the buyer to seek a delay while it is evaluated. **It is not resolved by a credit negotiated in a hallway.**
+>
+> **(b) is a performance question with a safety component.** The amendment required a replacement; what was delivered may not meet the requirements applicable to the work. **Whether the amendment was satisfied is a contract question**, and the permit and strapping issues are matters for the appropriate authority and a qualified professional rather than for the licensees' judgment.
+>
+> **(d) is a possession problem and it is bigger than it looks.** Belongings in the garage after closing means the seller occupies the property after title transfers, which Section 5.2 addresses. **A day is not nothing** — it raises insurance, liability, condition, and what happens if the movers do not come. **It requires a written agreement, not a handshake at the walkthrough.**
+>
+> **(a) and (e) are ordinary items** — a fixture-versus-personal-property question and damage from removing one. Section 1.6 of Lesson 08 explains why the refrigerator question exists at all. They are negotiated or credited, and the resolution is written.
+>
+> **(f) is small and belongs on the list anyway**, because a lock that no longer works is a security item on the property the buyer takes possession of tomorrow.
+>
+> **What the agents do, in order.**
+>
+> **Document everything now** — photographs, dated, with locations, before anyone moves anything or begins negotiating.
+>
+> **Notify both brokers and escrow the same day**, because a closing scheduled for tomorrow may not happen and every participant's schedule depends on knowing.
+>
+> **Take the items to the parties as facts rather than as demands.** The buyer decides what he wants; Section 4.3 governs the response and the options belong to him.
+>
+> **Reduce whatever is agreed to writing before closing**, and get it to escrow — Section 1.6 of this lesson.
+>
+> **What must not happen:** closing on a verbal promise to fix item (c) afterward, allowing the seller to remain in the garage without a written agreement, or a licensee reassuring his client that the staining is "probably from the old heater" — **a characterization of a building condition by a person not qualified to make it**, and one made under the pressure of a closing date.
+
 ## 5. Recording, disbursement, and possession
 
 ### 5.1 Possession is not ownership
@@ -252,6 +355,30 @@ Coordinate transfer dates so that services are not interrupted and neither party
 
 When recording is confirmed, tell the client — in writing, with the date and what it means. Clients frequently do not know whether they own the property, and the licensee is the person they will ask.
 
+### 5.7 Week one after closing
+
+Most post-closing calls arrive in the first ten days, and they follow a short list. Knowing the list lets a licensee handle each correctly rather than defensively.
+
+| The call | The correct handling |
+|---|---|
+| **"The [system] doesn't work."** | Sympathy, then process. What the contract provided, whether a warranty applies, and — where the buyer believes a condition was concealed — **a matter for the broker rather than an argument between agents.** The licensee does not diagnose and does not concede. |
+| **"There's a bill I wasn't expecting."** | Frequently a supplemental tax assessment or an association charge. Explain what it is; **the amount and its calculation come from the assessing authority or the association.** |
+| **"The seller left things behind."** | A cleanup and possession question. Where a post-closing occupancy agreement exists, it governs; where it does not, this is why Section 5.2 requires one. |
+| **"The keys don't work for the side gate."** | Section 5.4's transfer of control was incomplete. Fix it, and note for future files that "keys" means every point of access. |
+| **"Nobody told me about [X]."** | **The most important call on this list.** Determine what the file shows was delivered and when, before responding. **Do not answer from memory** — Section 5.2 of Lesson 09 exists for this moment. |
+| **"Can you send me everything for my taxes?"** | Provide copies of the transaction documents. **The tax questions themselves go to the client's tax advisor**, without exception and without a "generally speaking." |
+| **"My neighbor says the property line isn't where I think."** | A survey and legal question. Refer, and do not offer an opinion about the boundary. |
+
+**Three disciplines apply to all of them.**
+
+**Respond quickly, even when the answer is "I need to check."** Most post-closing complaints escalate because of silence rather than because of substance.
+
+**Check the file before answering.** A licensee who says "you were definitely given that" and turns out to be wrong has converted a service problem into a credibility problem.
+
+**Loop in the broker on anything that sounds like a claim.** Not later, and not only if it develops. **The first communication about a potential claim is the one that matters most**, and it should not be improvised by the person whose work is being questioned.
+
+> **And one thing not to do:** offer to pay for something out of your own pocket to make a complaint go away. It feels generous, it is fast, and it is a decision with implications for the brokerage, for insurance, and for what the payment is later said to mean. **That decision belongs to the broker.**
+
 ## 6. Post-closing file audit
 
 ### 6.1 Audit while memories are fresh
@@ -289,7 +416,27 @@ The same principle governs corrections generally: they are made visibly, with th
 
 The file is retained for the required period, which runs from closing. Cancelled and failed transactions are retained too — and are disproportionately the ones that later produce disputes, which is exactly why they must not be discarded as uninteresting.
 
-### 6.7 Checkpoint
+### 6.8 What the client asks for later
+
+The relationship does not end at closing, and the requests that arrive months or years afterward have their own rules.
+
+**Copies of documents.** Ordinary and easily satisfied — **if the file is complete and findable.** This is the least dramatic argument for the retention discipline in Section 6.6 and the one that actually comes up: a client refinancing, appealing an assessment, settling an estate, or preparing a return needs a document from a transaction the licensee handled, and either it is in the file or it is not.
+
+**Tax questions.** Referred, every time. Holding period, basis, exclusions, exchanges, and the treatment of credits and improvements are the tax advisor's work. **"I'm not a tax advisor, and here is why that question is worth asking one" is a complete answer**, and the client is better served by it than by a confident summary.
+
+**A value opinion.** Section 5.5 of Lesson 05 governs. **Ask what it is for before preparing it**, because the answer determines whether the licensee may prepare it at all.
+
+**Referrals to service providers.** Section 5.6 of Lesson 03 applies unchanged. **Time does not extinguish the disclosure obligation** — a referral fee received on a contractor referral two years after closing is the same conflict it would have been during escrow.
+
+**Information about the other party.** A former client asking for the buyer's contact information, or for something the licensee learned about him during the transaction. **Confidentiality survives**, and information about a party who is not the licensee's client was never his to distribute.
+
+**"Would you tell me what you'd do?"** The former client is asking for advice — about a refinance, a rental, an addition, a family transfer. **The categories that were outside the licensee's competence during the transaction are still outside it**, and the pressure to answer is higher because the relationship is warmer.
+
+**A request to change something in the file.** It arrives innocently — a name spelled differently, a date the client remembers otherwise. **The file is a record.** Corrections are made visibly, dated as of today, with the original preserved. Section 6.5's line governs and does not soften with time.
+
+> **The habit that makes all of this easy:** a complete, dated, retrievable file, and a standing willingness to say "that one goes to your attorney" or "that one goes to your tax advisor" without treating it as a failure to help. **A licensee who has said it a hundred times says it comfortably**, and clients read the comfort as competence rather than as evasion.
+
+### 6.9 Checkpoint
 
 You should be able to sequence signing, funding, recording, and disbursement; explain why escrow stops rather than deciding when the parties disagree; and state the correct response to a missing document found in a closed file.
 
