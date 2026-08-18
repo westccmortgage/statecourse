@@ -3,6 +3,9 @@ const emptyState = document.querySelector("#emptyState");
 const activeGroup = document.querySelector("#activeGroup");
 const completedGroup = document.querySelector("#completedGroup");
 const otherGroup = document.querySelector("#otherGroup");
+const profileCompletion = document.querySelector("#profileCompletion");
+const profileNameForm = document.querySelector("#profileNameForm");
+const profileFormMessage = document.querySelector("#profileFormMessage");
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>'"]/g,(character) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "'":"&#39;", '"':"&quot;" })[character]);
@@ -40,6 +43,19 @@ function remainingRequirements(enrollment) {
   return requirements.length ? requirements.map((item) => safeText(item)).join(" · ") : "None currently listed";
 }
 
+function displayName(student = {}) {
+  return String(student.preferred_name || student.first_name || student.firstName || "").trim().replace(/[\u0000-\u001f\u007f]/g,"").slice(0,100);
+}
+
+function personalize(student = {}) {
+  const name = displayName(student);
+  document.querySelector("#studentGreeting").textContent = name ? `Welcome back, ${name}.` : "Welcome back.";
+  const accountName = document.querySelector("#studentAccountName");
+  accountName.textContent = name;
+  accountName.hidden = !name;
+  profileCompletion.hidden = Boolean(name);
+}
+
 function card(enrollment) {
   const progress = Math.max(0,Math.min(100,Number(enrollment.progress_percent || 0)));
   const access = enrollment.access_status === "active";
@@ -69,8 +85,7 @@ function render(data) {
   const current = active.filter((item) => !completedIds.has(item.enrollment_id));
   const other = enrollments.filter((item) => !completedIds.has(item.enrollment_id) && !active.includes(item));
   const certificateCount = enrollments.filter((item) => item.portal_certificate_status === "issued").length;
-  const name = data.student?.preferred_name || data.student?.first_name || data.student?.firstName;
-  document.querySelector("#studentGreeting").textContent = name ? `Welcome back, ${String(name)}` : "Your courses";
+  personalize(data.student);
   document.querySelector("#activeCount").textContent = current.length;
   document.querySelector("#completedCount").textContent = completed.length;
   document.querySelector("#certificateCount").textContent = certificateCount;
@@ -99,6 +114,31 @@ async function loadPortal() {
     message.classList.add("error");
   }
 }
+
+profileNameForm.addEventListener("submit",async(event) => {
+  event.preventDefault();
+  profileFormMessage.textContent = "Saving your name…";
+  const button = profileNameForm.querySelector("button");
+  button.disabled = true;
+  try {
+    const input = Object.fromEntries(new FormData(profileNameForm));
+    const response = await fetch("/api/student/portal",{
+      method:"PATCH",
+      credentials:"same-origin",
+      headers:{ "content-type":"application/json",accept:"application/json" },
+      body:JSON.stringify(input)
+    });
+    if (!response.ok) throw new Error("profile_update_failed");
+    const result = await response.json();
+    personalize(result.student);
+    profileFormMessage.textContent = "Your name has been saved.";
+  } catch (error) {
+    console.error(error);
+    profileFormMessage.textContent = "We could not save your name. Please check both fields and try again.";
+  } finally {
+    button.disabled = false;
+  }
+});
 
 document.addEventListener("click",async(event) => {
   const link = event.target.closest(".resume-course");

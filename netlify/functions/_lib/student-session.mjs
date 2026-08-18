@@ -124,6 +124,20 @@ export async function requireStudentSession(event) {
   return { student, accessToken, refreshedSession };
 }
 
+export async function updateStudentProfile(accessToken,input = {}) {
+  const firstName = String(input.firstName || "").trim().slice(0,100);
+  const lastName = String(input.lastName || "").trim().slice(0,100);
+  if (!firstName || !lastName) {
+    throw Object.assign(new Error("invalid_student_profile"), { statusCode:400 });
+  }
+  const user = await authRequest("user", {
+    method:"PUT",
+    token:accessToken,
+    body:{ data:{ first_name:firstName,last_name:lastName } }
+  });
+  return syncStudent(user,{ signedIn:false });
+}
+
 export async function signOutStudent(event) {
   const parsed = cookies(event);
   const token = parsed[ACCESS_COOKIE];

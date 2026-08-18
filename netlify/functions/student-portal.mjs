@@ -1,6 +1,6 @@
 import { dbRequest } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
-import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
+import { requireStudentSession, sessionCookies, sessionResponse, updateStudentProfile } from "./_lib/student-session.mjs";
 
 const EVENT_TYPES = new Set(["portal_opened","course_resume_clicked","certificate_viewed","receipt_viewed","profile_viewed"]);
 
@@ -36,6 +36,18 @@ export const handler = async (event) => {
         await dbRequest(`enrollments?id=eq.${encodeURIComponent(enrollmentId)}&student_id=eq.${encodeURIComponent(auth.student.id)}`,{ method:"PATCH",prefer:"return=minimal",body:{ last_portal_accessed_at:new Date().toISOString() } });
       }
       return sessionResponse(200,{ ok:true },cookies);
+    }
+
+    if (event.httpMethod === "PATCH") {
+      requireSameOrigin(event);
+      const input = parseJson(event);
+      const student = await updateStudentProfile(auth.accessToken,input);
+      await dbRequest("student_portal_events",{
+        method:"POST",
+        prefer:"return=minimal",
+        body:{ student_id:auth.student.id,event_type:"profile_viewed",metadata:{ source:"student_portal",action:"name_updated" } }
+      });
+      return sessionResponse(200,{ ok:true,student },cookies);
     }
 
     throw Object.assign(new Error("method_not_allowed"),{ statusCode:405 });
