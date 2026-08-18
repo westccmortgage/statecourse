@@ -88,6 +88,33 @@ Intake is also where the professional relationship is set. Two habits pay for th
 - **Ask open questions and listen for what is not said.** "Is there anything about the property that has surprised you since you bought it?" surfaces more than a checklist question about defects.
 - **Record what you were told, and by whom.** Seller-provided information is unverified report, and the file should show that you treated it as such.
 
+### 1.6 A worked intake
+
+> **The appointment.** A licensee arrives at a single-family home. The person who called is Diane. During the first twenty minutes the following emerges:
+>
+> - The home was her mother's. Her mother died fourteen months ago. Diane believes the house "is hers now."
+> - She has a brother who lives out of state. She says he "doesn't care about the house."
+> - The garage was converted to a bedroom "years ago, by my dad."
+> - There is a shared driveway with the neighbor. "We've always just worked it out."
+> - She wants to list next week because she has already put a deposit on a condominium.
+> - Tenants have been living in the converted bedroom since March, paying cash, with no written lease.
+>
+> **What the intake has to establish, in order.**
+>
+> **1. Authority.** "It's hers now" is a belief, not a fact the file can rely on. The property may have passed by a trust, by a will requiring administration, by intestate succession, or by an instrument that has not been recorded. **Fourteen months and a brother are the two facts that make this urgent** — if title stands in more than one name, one owner cannot list alone. **The listing does not proceed on Diane's characterization.** The licensee asks how title is currently held and asks to see what document she has. Where the answer is unclear, **this is a legal question and it goes to counsel**, not to the licensee's best guess.
+>
+> **2. What is being sold.** The converted garage is now the central question of the file. Was it permitted? Does the county record it as living area? **A licensee who advertises the bedroom count without knowing has made a representation he cannot support**, and square footage is exactly the number Section 3.6 of Lesson 03 warns about. The answer comes from the records, not from Diane's recollection of her father's work.
+>
+> **3. Constraints.** The shared driveway is either a recorded easement, an unrecorded arrangement, or a boundary the parties have been wrong about for thirty years. All three are disclosable and the third is a dispute. "We've always just worked it out" describes a relationship, not a right, and it does not transfer to a buyer.
+>
+> **4. Occupancy.** There are tenants. Their rights do not disappear because the tenancy is oral and paid in cash, and Section 5.5 governs access to their space. **Their existence changes the listing, the showing plan, and the disclosures.**
+>
+> **5. The seller's timeline.** Diane has committed money to a purchase before establishing she can sell. **This is the fact that will apply pressure to every decision in the transaction**, and naming it now is a service to her.
+>
+> **What the licensee does not do:** take the listing today and sort it out later. **Every one of these five is easier to resolve before the property is on the market** and nearly impossible to resolve once a buyer is in contract and Diane's condominium deposit is at risk.
+>
+> **What the licensee does:** write it all down, tell Diane plainly which items must be answered before listing and which can run in parallel, identify the two that require counsel, and set a date to reconvene. **An intake that ends without a listing is not a failed appointment.** It is the appointment doing its job.
+
 ## 2. Listing agreement structure
 
 ### 2.1 What the agreement actually does
@@ -135,6 +162,28 @@ Its ordinary limits matter and should be explained:
 - It commonly does not apply where the seller lists with another brokerage after expiration.
 
 A seller who understands it accepts it. A seller who is told "it's standard, just initial here" is the seller who disputes it later.
+
+### 2.6 Changing a term after the agreement is signed
+
+Listings get amended. A price changes, a term is extended, a compensation arrangement is restructured, a property is withdrawn and returned. Each of those is a change to a contract between the seller and the brokerage, and the discipline is the same one that governs the original.
+
+**In writing, signed, dated, and retained — with the prior version kept.**
+
+| The change | What it touches |
+|---|---|
+| **Price** | The marketing, the listing service record, and the seller's net analysis. **The reduction is documented as the seller's decision**, on the same basis as the original price in Section 3.5. |
+| **Term extension** | The expiration date, and therefore what Section 6 does at the end. An extension agreed verbally leaves two parties with different beliefs about when the engagement ends. |
+| **Compensation** | A term the brokerage is party to. **Not a licensee-level change.** |
+| **Scope** | What is included in the sale — a change here changes what is being advertised. |
+| **Withdrawal and return** | Listing status in the service, which Section 6.4 notes must be accurate. |
+
+**Two failures recur.**
+
+**The verbal amendment.** A seller says "go ahead and drop it to 699" in a phone call, the licensee changes the listing service, and no document is created. The marketing now reflects a price the file cannot show the seller authorized. **The correction is a confirming email the same day at minimum**, and a signed amendment as soon as practical.
+
+**The overwritten record.** A change made by editing the original agreement, or by replacing the prior listing service entry, destroys the evidence of what the terms were before. **Prior versions are retained in sequence**, because the question a later dispute asks is almost always "when did this change, and who agreed?"
+
+> **The test for whether a change needs a document:** would a person reading only the file know that this term is now different, when it changed, and that the seller agreed? If not, the change is undocumented regardless of how clearly both parties understood it at the time.
 
 ## 3. Pricing discussion
 
@@ -186,6 +235,29 @@ Where the seller chooses a price above the supported range, the file should cont
 
 What should **not** be in the file: the seller's reasoning adopted as the brokerage's own opinion of value. That misattributes whose opinion it is.
 
+### 3.6 When the seller's price is above your recommendation
+
+This is the most common disagreement in listing practice, and it has a correct handling that is neither capitulation nor refusal.
+
+**What the licensee owes:** an honest recommendation, the data behind it, and a clear statement of the consequences of pricing above it. **What the seller owns:** the decision.
+
+**The consequences, stated plainly and in advance:**
+
+1. **The first two weeks are the property's best exposure**, and an overpriced property spends them being seen and passed over by exactly the buyers most ready to act.
+2. **Days on market accumulate and are visible.** A property that reduces after eight weeks is negotiated against differently than a property priced correctly at the start, because the market now has information about the seller.
+3. **A reduction later usually lands below where the original recommendation was**, which is the outcome the seller was trying to avoid.
+4. **Appraisal is a separate gate.** A buyer willing to pay a number does not end the question where financing is involved.
+
+**Then the licensee documents the conversation** — Section 3.5's requirement — and, if the seller proceeds above the recommendation, prices it there and works it professionally. **Pricing at the seller's number and then marketing it half-heartedly is a breach of the duty of reasonable care**, and it is a common quiet response to being overruled.
+
+**Two things the licensee should not do.**
+
+**Do not adopt the seller's number as your own opinion.** If asked later — by the seller, by a buyer's agent, by a reviewer — the honest answer is that the recommendation was one number and the seller chose another, which is entirely his right. A licensee who has stated the seller's price as his own professional opinion has made a representation he cannot support.
+
+**Do not agree to a price you believe is unsupportable in order to win the listing, planning to "get a reduction in three weeks."** That is a plan built on telling the seller something now and something different later, and Section 3.3 already named it: the strategy of buying a listing is the strategy of misleading a client at the outset.
+
+> **A useful framing for the conversation:** "I'll list it at your number and work it hard. Here is what I expect to see in the first two weeks, and here is the point at which I'll come back and ask you to look at it again. Let's agree now on what we'll do if that happens." **The seller has made an informed decision and a review date exists**, which is what turns a disagreement into a plan.
+
 ## 4. Seller disclosures
 
 ### 4.1 The line that is not negotiable
@@ -233,6 +305,33 @@ Content is only half of it. Delivery, and evidence of when delivery occurred, is
 
 Where a disclosure is delivered late — after contingencies have been removed, for example — the correct response is to identify the issue immediately rather than proceeding as though the transaction were firm. Rights that run from delivery are not extinguished by the buyer having acted earlier without the information.
 
+### 4.6 The disclosure conversation that goes wrong
+
+Section 4.3 supplies answers to the seller's predictable objections. This section addresses the harder case: the seller who has heard the answers and still instructs the licensee to leave something out.
+
+> **The facts.** A seller discloses to his agent, privately, that the master bathroom shower leaked into the ceiling below "a few years ago," that he had a handyman open the ceiling and dry it out, and that there was "some black stuff" which the handyman "cleaned with bleach." No permit, no invoice, no professional remediation. He says the ceiling has been fine since. He does not want it on the disclosure, because "it will scare buyers into thinking there's mold."
+>
+> **What has just happened.** The seller has told the licensee about a **known material fact affecting the value or desirability of the property.** It concerns water intrusion, a concealed area, and a possible biological contaminant remediated informally. It is not close to the line.
+>
+> **What the licensee does not do.**
+>
+> - Leave it off because the seller directed it. Lesson 03, Section 3.3: **an instruction to conceal a material fact is not a lawful instruction**, and following it while documenting that the seller asked does not transfer responsibility.
+> - Suggest phrasing that technically discloses while conveying nothing — "minor prior moisture, resolved." A disclosure that a reasonable buyer would not understand as describing what happened is not a disclosure.
+> - Rely on the buyer's inspector to find it. Section 4.2's third principle governs, and the ceiling has been closed.
+> - Say nothing and hope the seller reconsiders while the file moves forward.
+>
+> **What the licensee does.**
+>
+> **First, explain the exposure to the seller in his own terms** — not as a rule, but as the consequence: a buyer who discovers this after closing has a claim, and the fact that it was disclosed to his agent and left off the form is the worst possible version of the record.
+>
+> **Second, offer the stronger path.** Disclose it fully **with the remediation history and an invitation to inspect.** Section 4.3 already establishes why this is stronger than silence: a buyer evaluating a disclosed, documented condition negotiates; a buyer discovering a concealed one litigates. Where the seller is willing, a professional assessment before listing converts the unknown into a fact.
+>
+> **Third, involve the broker immediately** if the seller holds his position. This is not a conversation the licensee finishes alone, and the broker will decide whether the brokerage can continue with the listing.
+>
+> **Fourth, record it** — what the seller said, when, what the licensee advised, and what was escalated. **The note is written the day it happens**, because it is the only evidence that the licensee did not participate.
+>
+> **And the licensee's own disclosure is independent.** Section 4.4's last point governs: the licensee's observations are the licensee's statement. A seller's refusal does not make the licensee's own obligation disappear.
+
 ## 5. Showing and access controls
 
 ### 5.1 Two obligations at once
@@ -277,6 +376,27 @@ Open houses concentrate the risk: multiple strangers, an unsecured property, and
 Where a tenant occupies the property, the tenant's rights govern access. Entry for showings requires the notice the law provides, for a permitted purpose, at a reasonable time. A seller's desire to show the property does not override it, and a licensee who enters without proper notice exposes the seller as well as themselves.
 
 Practical approach: agree a showing protocol with the tenant in advance, honor it, and document notices given.
+
+### 5.6 When something goes missing
+
+Access controls exist because sometimes they fail. What a licensee does in the first hours after a report determines whether the situation is handled or compounded.
+
+**The report arrives** — a seller says jewelry is gone, medication is missing, or a laptop that was on the desk is not there.
+
+**What the licensee does, in order:**
+
+1. **Take it seriously and say so.** The instinct to reassure ("it's probably just misplaced") reads to the seller as dismissal, and it is the response that turns an incident into a complaint about the licensee.
+2. **Notify the broker immediately.** This is a brokerage matter from the first minute, and it may involve insurance, the listing service, and law enforcement.
+3. **Tell the seller to contact law enforcement**, and do not discourage it. A licensee who steers a seller away from a report — for any reason, including protecting a colleague — has made himself part of the problem.
+4. **Preserve the access record.** Section 5.3's uniformity requirement produces the log that answers who entered and when. **Print it, export it, and preserve it now**, before an electronic system rolls over its retention window.
+5. **Do not conduct your own investigation.** Do not call the agents who showed the property to ask what happened, do not accuse anyone, and do not repeat a seller's suspicion about a named person to anyone other than the broker. **A statement about an identified person's honesty carries its own exposure.**
+6. **Do not alter the log or the file.** Whatever it shows, it is the record.
+
+**What the file should contain afterward:** the seller's report with its date and what was said, the access record, the notification to the broker with its time, the referral to law enforcement, and any report number.
+
+> **The prevention is the log, and the log is only useful if it was uniform.** Section 5.3 makes the point in terms of fair treatment; this section makes it in terms of evidence. **An access process that was relaxed for people the licensee knew produces a record that cannot answer the question**, and the seller's loss becomes an argument about the licensee's diligence.
+
+**One related situation.** Where a licensee is the one who discovers something — a door left unlocked, a window open, a lockbox missing — the same sequence applies, starting with the seller and the broker. **The instinct to quietly fix it and say nothing is the instinct to create an undocumented event**, and undocumented events are the ones that reappear as accusations.
 
 ## 6. Listing cancellation, expiration, and protection
 
@@ -324,7 +444,57 @@ Whatever the mechanism, the file should show:
 
 An engagement that ends informally, by everyone ceasing to act, is the one that generates a dispute six weeks later when the property sells.
 
-### 6.7 Checkpoint
+### 6.7 Three listings that ended
+
+> **Listing A — the seller who wants out.** Four weeks into a six-month term, the seller calls: "Nothing is happening. I want to cancel and list with someone else."
+>
+> **The first move is to find out which of the three things he means**, and Section 6.1 supplies the question. He means cancellation.
+>
+> **The second move is to find out what actually happened.** Four weeks with what activity? How many showings, what feedback, what has the licensee reported and how often? Section 6.3 notes that a cancellation request frequently follows a communication failure rather than a marketing failure, and this one has the shape of it — the seller does not say the price is wrong or the photographs are bad. He says nothing is happening, which is what a seller says when nobody has told him anything.
+>
+> **The third move is the broker.** Whatever the licensee concludes about the merits, the release is the brokerage's decision. **The licensee does not tell the seller "I'll let you out."**
+>
+> **The outcome is documented either way** — released on stated terms, or continued with an agreed communication schedule and a review date.
+
+> **Listing B — the expiration nobody noticed.** A six-month listing expires on a Sunday. On Wednesday the licensee shows the property to a buyer, having not noticed. On Friday the buyer writes an offer.
+>
+> **The licensee is acting under no agreement.** The engagement ended Sunday, and there is no compensation agreement, no authority to market, and no current listing service authorization.
+>
+> **What must not happen is a listing agreement signed Friday and dated to the prior term.** Section 6.6's principle and Lesson 03's closing line both govern: a documented gap is survivable, a manufactured document is not.
+>
+> **What happens instead:** tell the seller immediately, present the offer — which the seller is entitled to see regardless — and address the engagement going forward with a new agreement dated today, on terms the broker approves. **The calendar failure is the real finding**, and it is a systems problem: expirations belong in a tracker, not in memory.
+
+> **Listing C — the protection period.** A listing expires. Six weeks later the property sells to a buyer who toured it during the term, now working with a different brokerage.
+>
+> **The protection clause may apply, on its terms**, and the terms are the ones in the agreement rather than the ones the licensee remembers. Whether the buyer was identified to the seller in the manner the clause requires, and within the period it specifies, are factual questions answered by what was actually delivered during the term.
+>
+> **The file is what decides it.** A licensee who provided the seller a written list of protected buyers before expiration has an answer. One who did not is arguing from recollection against a seller who has already paid another brokerage.
+>
+> **And the claim is the brokerage's**, not the licensee's, which means the decision whether to assert it is the broker's.
+
+### 6.8 The listing file, at a glance
+
+The documents a listing file should hold, in the order they normally arise:
+
+1. **The agency disclosure**, dated before the listing agreement.
+2. **The listing agreement**, with every blank completed and the term definite.
+3. **Evidence of authority** — how title is held, and the instrument or authority under which anyone signing on another's behalf acts.
+4. **The pricing analysis and the net sheet**, with the seller's decision recorded, including where it departed from the recommendation.
+5. **The seller's disclosures**, completed by the seller, with delivery evidenced.
+6. **The licensee's own visual inspection disclosure**, as the licensee's separate statement.
+7. **Advertising as published**, with dates, and any required approvals.
+8. **The access record**, uniform and complete.
+9. **Amendments**, each signed and dated, with prior versions retained in sequence.
+10. **Vendor and conflict disclosures**, each dated before the seller acted on the recommendation.
+11. **Correspondence evidencing decisions** — the price change, the showing instruction, the disclosure conversation.
+12. **The ending** — expiration, cancellation, or withdrawal, with its date, authorization, and listing service status change.
+13. **The protected-buyer list**, where the agreement provides for one, delivered before the term ended.
+
+**Two of these are the ones missing from most files:** item 4, because the pricing conversation feels like a conversation rather than a decision, and item 13, because the protection clause is remembered only after it matters.
+
+> **Run the list at the listing appointment and again at the ending.** At the appointment it tells you what to collect. At the ending it tells you what is still obtainable — which, as Lesson 02's close-out routine establishes, is a category that shrinks every week.
+
+### 6.9 Checkpoint
 
 You should be able to distinguish expiration, cancellation, and withdrawal; state who decides a cancellation and why; and name the two obligations that survive the end of a listing.
 
