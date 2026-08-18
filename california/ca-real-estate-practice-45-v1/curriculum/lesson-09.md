@@ -78,6 +78,33 @@ The licensee's obligations regarding the seller's disclosure are specific:
 
 That last point is the one that separates a compliant licensee from a complicit one. A licensee who knows of a material condition the seller has omitted, and delivers the disclosure without addressing it, has adopted the omission.
 
+### 1.6 When the seller cannot complete the disclosure
+
+The framework assumes a seller who has lived in the property and knows things about it. A significant share of transactions do not have one.
+
+| The seller | The problem |
+|---|---|
+| **A trustee or personal representative** | Has authority to convey and may have never entered the property |
+| **A successor who inherited** | Knows the house socially and not structurally, and may be confusing childhood memory with fact |
+| **An institutional owner after foreclosure** | Has no occupancy knowledge at all |
+| **An investor who bought, held, and never occupied** | Knows what he did to it and nothing about what preceded him |
+| **An owner who has been away for years** | Knows the property as it was, not as it is |
+| **A seller in a dissolution** | May have knowledge that is genuinely disputed between two people who each have to sign |
+
+**What does not change.** The obligation is about **known** material facts, and a seller who genuinely does not know something answers accordingly. **"Unknown" is an honest and available answer**, as Section 1.3 establishes, and it is the correct one far more often in these transactions than in an ordinary owner-occupied sale.
+
+**What changes is everything around it.**
+
+**The exemption question is a legal one.** Certain transfers are treated differently under the disclosure framework, and **which exemptions apply to a given transfer is a question for counsel and the broker**, not a determination the licensee makes from the seller's description of how he acquired the property. A licensee who concludes "this is a trust sale so the disclosure isn't required" has answered a legal question.
+
+**An exemption from one requirement is not an exemption from everything.** The most consequential error in this area is treating an exemption as a general release. **The obligation not to conceal known material facts, the obligation of honesty, and the licensee's own independent obligations do not disappear** because a particular form is not required of a particular seller.
+
+**The licensee's own duty is unaffected and becomes more important.** Section 2.1 establishes it as independent. Where the seller's disclosure is thin because the seller genuinely knows little, **the licensee's own observations are a larger share of what the buyer receives** — and the buyer's need for independent investigation is correspondingly greater.
+
+**The counseling move** is to say all of this to the buyer plainly and early: this seller has limited knowledge of the property, the disclosure will reflect that, and **the investigation contingency is carrying more weight in this transaction than it usually does.**
+
+> **What must not happen:** a disclosure completed by a licensee, a family member, or anyone other than the seller, filling in from what "everybody knows about the house." Section 1.3 forbids it and the reason is that the resulting document misattributes a statement — it tells the buyer the seller said something the seller did not say.
+
 ## 2. Agent visual inspection duties
 
 ### 2.1 An independent obligation
@@ -133,6 +160,36 @@ When the visual inspection reveals something the licensee does not understand we
 3. **Document** the recommendation and the buyer's response.
 
 What is not appropriate: offering a general impression of how serious such conditions usually are, asking the listing agent whether the seller considers it significant, or waiting to see whether the inspector flags it.
+
+### 2.6 A worked walkthrough
+
+> **The property.** A single-story house built in 1968, owner-occupied, listed by the licensee. He conducts his visual inspection on a Tuesday afternoon.
+>
+> **What he observes, and what each observation obligates.**
+>
+> **A brown stain on the ceiling of the hall bathroom, roughly a foot across, dry to appearance.** **Recorded and disclosed.** He does not determine whether it is active, does not conclude it is old because it looks dry, and does not describe it as "prior water intrusion, repaired" — which asserts two facts he does not know. **He writes what he saw: a stain, its location, its approximate size, and that its cause and status were not determined.**
+>
+> **A hairline crack running diagonally from the corner of a doorway.** Recorded. He does not characterize it as settlement, cosmetic, or structural. Section 2.5's competence limit governs — **the characterization is exactly the part he is not qualified to supply.**
+>
+> **A door that does not latch and a window that sticks.** Recorded. Individually trivial; **noted because a pattern of doors and windows out of square is information, and the pattern is the sort of thing a professional evaluates.**
+>
+> **A subpanel in the garage with a hand-lettered label.** Recorded. Electrical work of unknown provenance in a house of this age is an observation, not a conclusion.
+>
+> **Fresh paint on one interior wall and nowhere else.** Recorded. He does not accuse anyone of concealment. **He writes what is observable**, which is that one wall was recently painted, and a reviewer can make of it what a reviewer makes of it.
+>
+> **A gate in the rear fence that opens onto a neighbor's yard.** Recorded, and it prompts a question to the seller about the boundary — which produces the answer that "the fence has always been about three feet inside the line." **That answer is a material fact and it belongs on the seller's disclosure**, and the licensee's note records that he asked and what he was told.
+>
+> **What he does not do.**
+>
+> **He does not move furniture, lift carpet, enter the crawlspace, or climb onto the roof.** Section 2.2's scope is a reasonably competent and diligent **visual** inspection of accessible areas, and exceeding it creates an expectation he cannot meet on every property.
+>
+> **He does not omit an item because the seller says it was fixed.** A repaired condition is disclosed, and the licensee records both the observation and the seller's statement about it as two separate things.
+>
+> **He does not omit an item because it will be obvious to the buyer.** Section 1.2 of Lesson 04 disposes of that.
+>
+> **He does not write "no issues observed" on a fifty-seven-year-old house.** That sentence is a statement about the property that the inspection did not support, and **it is the single most dangerous phrase in this document.**
+>
+> **What the record looks like.** Dated, specific, factual, in his own words, with locations. **Photographs where the description is hard.** And it is written the same day — Section 2.3's requirement — because the value of the note is that it is contemporaneous.
 
 ## 3. Natural hazard and environmental disclosure
 
@@ -191,6 +248,26 @@ Where the property is in a common interest development, the buyer's investigatio
 
 Construction-defect litigation affecting the building is a clear material fact, and the buyer should have the documents in time to review them within the contingency period — which means requesting them promptly rather than late.
 
+### 3.7 Reading a hazard report properly
+
+A natural hazard disclosure arrives as a report from a third-party provider, and it is treated by most participants as a form to be delivered. **It is a document with content, and three habits separate a licensee who uses it from one who forwards it.**
+
+**Read what it actually says.** The report states whether the property is within mapped zones, and its statements are qualified in ways that matter: mapping is done at a scale, boundaries are approximate, and maps are revised. **A property just outside a mapped boundary is not a property without the hazard**, and a buyer who reads "not in a zone" as "not at risk" has misread it.
+
+**Understand what each determination does downstream.** A flood zone determination drives lender-required insurance. A fire severity zone determination can drive insurance availability, cost, and — increasingly in California — whether coverage is obtainable at all. A seismic or landslide zone can drive disclosure and investigation obligations. **Insurance availability is the item that most often surprises a buyer late**, and it is knowable early.
+
+**Tell the buyer to price insurance before removing contingencies.** This is the practical instruction that flows from the report, and it is the one most often given too late. **A buyer who discovers at day nineteen that coverage will cost several times what he assumed, or that carriers will not write it, has lost the ability to respond** — and Section 5.4 of this lesson explains why the timing of information determines whether it protects anyone.
+
+**Three things the licensee does not do:**
+
+- **Interpret the maps.** The report is the disclosure; the licensee is not the source of the determination and does not offer an opinion about whether a boundary is "really" where it is drawn.
+- **Reassure.** "It's technically in the zone but nothing's ever flooded there" is a prediction and a characterization, and it is offered to buyers constantly.
+- **Answer the insurance question himself.** The carrier answers it. **The licensee's contribution is telling the buyer to ask, early, and recording that he did.**
+
+> **What belongs in the file:** the report, its delivery with a date, and the licensee's written recommendation that the buyer obtain insurance quotes and any further evaluation the report suggests, delivered early enough for the buyer to act inside his periods.
+
+**And where the seller knows something the report does not say** — that the street floods, that the property was evacuated in a fire season, that a slope moved — **that is a known material fact and the report does not cover it.** Section 4.3 governs: the seller's knowledge and the licensee's knowledge are separate obligations, and neither is satisfied by a third-party map.
+
 ## 4. Lead-based paint, material facts, and stigma limits
 
 ### 4.1 The limits on death and illness disclosure
@@ -241,6 +318,30 @@ The professional treatment of unverified information is to **attribute it and fl
 - A legal conclusion — that a use is permitted, that an encroachment is unimportant, that a neighbor has no claim.
 - A specialist's assessment — that a crack is cosmetic, that a repair was adequate, that mold is harmless.
 - Anything the licensee has not verified and cannot attribute.
+
+### 4.6 The questions buyers ask about the surrounding area
+
+Buyers ask about schools, crime, neighbors, demographics, "what kind of area is this," and whether a neighborhood is "good." **These questions are the most reliable way for a licensee to create a fair housing violation while trying to be helpful**, and the correct handling is a discipline rather than a script.
+
+**The principle:** a licensee does not characterize the composition of a neighborhood or the desirability of an area in terms that sort people, whatever the question's phrasing and whatever the buyer's evident intent.
+
+| The question | The correct handling |
+|---|---|
+| **"How are the schools?"** | Direct the buyer to the district's own published information and to the district itself for attendance boundaries. **Do not rate, rank, or compare.** Attendance boundaries change, and a boundary stated from memory is also a reasonable-care problem. |
+| **"Is it safe?"** | Direct the buyer to law enforcement's published data and to his own investigation. **Do not characterize.** "Safe" and "bad area" are exactly the terms that carry composition. |
+| **"What kind of people live here?"** | **Do not answer.** Not carefully, not vaguely, not with a compliment. Explain that you do not describe the composition of neighborhoods and that public sources exist for demographic data. |
+| **"Would you buy here?"** | The buyer is inviting the characterization through a side door. **The answer is about the property and his criteria**, not about the area's desirability. |
+| **"Are there a lot of families?"** | Familial status. **Do not answer**, including favorably. |
+| **"Is it quiet?"** | An observable condition rather than a composition question, and it is answerable by direction to investigate — visit at different hours, check for a nearby flight path, arterial, rail line, or venue. |
+| **"Any problems with the neighbors?"** | Section 4.3 governs the licensee's own knowledge of material facts. **A known material fact is disclosed; a characterization of people is not offered.** |
+
+**Two clarifications that licensees find genuinely confusing.**
+
+**Refusing to characterize is not refusing to help.** The buyer gets a better answer from the district, the police department, and his own visits than from the licensee's impression, and **saying so is a service rather than an evasion.** The professional version is: "I don't characterize neighborhoods — I'd be giving you my impression when you need facts. Here is where the actual data lives, and here is what I'd go look at myself."
+
+**The prohibition does not depend on the buyer's intent or on the answer being positive.** A licensee who says "you'll love it, it's a great family area" to a buyer who asked innocently has still steered, and the violation does not require anyone to have been excluded on purpose.
+
+> **The file consequence:** Section 4.5 of Lesson 07 requires documenting the search on the buyer's stated criteria. **A search record built on the buyer's criteria is the evidence that the search was not built on anything else**, which is why the documentation habit and the fair housing discipline are the same habit.
 
 ## 5. Delivery, timing, and rescission
 
@@ -329,7 +430,41 @@ The test to apply to any disclosure file: **could a reviewer, reading only this 
 
 If the answer is no, the gap is not a paperwork problem. It is the specific gap that a dispute will be about.
 
-### 6.5 Checkpoint
+### 6.5 A worked disclosure timeline
+
+> **The transaction.** Acceptance communicated on a Monday. The agreement gives the buyer an investigation period and a defined period to respond to disclosures, running from delivery.
+>
+> **What the file records:**
+>
+> - **Day 1 (Monday).** Acceptance communicated.
+> - **Day 4.** Seller's transfer disclosure signed by the seller. No delivery record.
+> - **Day 6.** Natural hazard report ordered.
+> - **Day 9.** Buyer's general inspection performed. Report recommends specialist evaluation of the subfloor.
+> - **Day 11.** Natural hazard report received by the listing agent. Forwarded "to the buyer's agent" by email — **no record of transmission to the buyer.**
+> - **Day 14.** Buyer signs a receipt acknowledging the transfer disclosure. The receipt is undated in the buyer's hand; the email transmitting the disclosure to him is dated Day 13.
+> - **Day 16.** Seller amends the transfer disclosure to add a prior roof repair he had forgotten. The amendment is emailed to the buyer's agent.
+> - **Day 17.** Buyer removes his investigation contingency. He has not obtained the subfloor evaluation.
+> - **Day 19.** Buyer's agent forwards the Day 16 amendment to the buyer.
+>
+> **The findings, ranked.**
+>
+> **1. The amendment reached the buyer after he removed his contingency.** This is the defect with consequences, and Section 5.5 and Section 5.6 both govern. **An amended disclosure delivered after the buyer's decision has been delivered too late to inform the decision it was about**, and Section 5.4 establishes that rights running from delivery are not extinguished by the buyer having already acted without the information. **The correct response is to raise it immediately**, not to proceed as though the removal settled it.
+>
+> **2. Delivery of the transfer disclosure is documented only by inference.** The seller signed on Day 4; the file's evidence of the buyer receiving it is a Day 13 email and an undated receipt. **The response period cannot be computed from the file**, which is Section 5.2's requirement.
+>
+> **3. The hazard report's delivery to the buyer is unevidenced.** Forwarding to the agent is not, by itself, evidence the buyer received it, and the file has no record beyond the agent-to-agent email.
+>
+> **4. The nine-day gap between the seller's signature and transmission** is not itself a violation, but Section 5.3 explains what it costs: **the buyer's review time was consumed by the file rather than by the buyer.**
+>
+> **5. The contingency removed without the recommended evaluation** is a Lesson 07 issue rather than a disclosure issue, and it is recorded here because it interacts with finding 1 — **the buyer made an uninformed decision twice on the same day.**
+>
+> **What happens now.** Both agents raise it with their brokers immediately. The buyer is told what the amendment says and when it reached him. **Whether his rights are affected is a legal question**, and the licensees do not resolve it between themselves.
+>
+> **What must not happen:** dating the Day 14 receipt, re-sending the amendment now with a new date and treating that as delivery on Day 16, or persuading the buyer that the roof repair "doesn't change anything." **The third is the most tempting and the most serious**, because it substitutes the licensee's judgment for the buyer's on the exact question the disclosure existed to give him.
+>
+> **The process fix.** Every disclosure and every amendment is transmitted **directly to the party**, with delivery evidenced, and logged the day it is sent. Four of the five findings above disappear under that one rule.
+
+### 6.6 Checkpoint
 
 You should be able to apply the three-part test to a condition, state which failure mode a given file defect represents, and explain why late delivery is not cured by delivery before closing.
 

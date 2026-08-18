@@ -75,6 +75,26 @@ Items worth naming explicitly in most transactions: appliances, window coverings
 
 Nearly every obligation in the agreement carries a date or a period, and those dates are terms of the contract rather than administrative targets. A licensee who treats a closing date as a scheduling preference will eventually explain to a client why the other party was entitled to act.
 
+### 1.6 What the agreement does not do
+
+A purchase agreement is comprehensive about the things it addresses and silent about a great many things the parties assume it covers. **Most transaction disputes live in that silence**, and a licensee who knows where it falls can close it before it becomes an argument.
+
+| The parties assume | The agreement's actual position |
+|---|---|
+| "The seller will fix everything on the inspection." | It says nothing of the kind unless a repair term was negotiated and written. **An inspection contingency is a right to investigate and respond, not a promise of repair.** |
+| "Obviously the appliances stay." | What conveys is what the agreement says conveys, plus what the law treats as part of the real property. **A washer and dryer are personal property until an agreement makes them otherwise.** |
+| "We agreed on the closing date in the email." | The operative date is the one in the agreement, amended in writing. Section 5.5 governs. |
+| "The seller said he'd leave the patio furniture." | An oral side agreement about personal property, unrecorded anywhere, discovered at walkthrough. |
+| "Possession is at closing." | Only if the agreement says so. Delayed possession and rent-back are terms, and each carries insurance, liability, and condition questions. |
+| "The warranty is included." | A negotiated term, and one that is frequently discussed and not written. |
+| "They're taking the solar with them." | Depends on ownership, lease, or financing arrangement — **a question with a documentary answer that must be obtained rather than assumed.** |
+
+**Three of these produce the most walkthrough failures:** what conveys, possession, and anything the parties handled in conversation.
+
+**The licensee's practice is a habit rather than a rule.** At the point the offer is written, run the list of assumptions out loud with the client: what stays, when possession happens, what the repair expectation is, and whether anything was discussed that is not on the page. **Whatever comes out of that conversation goes into the offer or into a written amendment**, and whatever does not go in does not exist.
+
+> **The sentence that prevents most of them:** "If it matters to you and it isn't written down, it isn't part of the deal." It is not a legal opinion, it is accurate, and clients understand it immediately.
+
 ## 2. Offer presentation and formation
 
 ### 2.1 The formation rules
@@ -123,6 +143,39 @@ Electronic signature is ordinary in California residential practice. Two points 
 ### 2.6 Checkpoint
 
 You should be able to take a sequence of signed documents and say at which point, if any, a contract was formed and on whose terms.
+
+### 2.7 A worked formation problem
+
+> **The sequence.**
+>
+> - **Monday 9:00 a.m.** Buyer signs an offer with an expiration of Wednesday at 5:00 p.m. It is delivered to the listing agent at 9:20.
+> - **Tuesday 11:00 a.m.** The seller signs a counteroffer changing price and closing date, with its own expiration Thursday at 5:00 p.m. The listing agent puts it in her outbox and does not send it.
+> - **Tuesday 3:00 p.m.** A second buyer's offer arrives, better on price.
+> - **Tuesday 4:00 p.m.** The seller tells the listing agent he wants to withdraw the counteroffer and work with the second buyer.
+> - **Tuesday 4:30 p.m.** The listing agent sends the first counteroffer by mistake — a scheduled send she forgot to cancel.
+> - **Tuesday 4:45 p.m.** The first buyer signs the counteroffer and returns it immediately.
+>
+> **The questions this raises**, and they are contract-law questions on which the parties will need counsel — **the licensee's job is to recognize them, preserve the record, and escalate, not to declare who has a deal.**
+>
+> **1. Was the counteroffer effective before it was sent?** A counteroffer signed and sitting in an outbox has not been communicated. Section 2.1's formation rules turn on communication rather than on signature, which is why the 4:30 transmission matters more than the 11:00 signature.
+>
+> **2. Did the seller's 4:00 instruction revoke it?** Revocation generally must be communicated to be effective, and at 4:00 the counteroffer had not been communicated to anyone. **Whether an instruction to withdraw something that was never sent has any operative effect is precisely the kind of question that goes to counsel.**
+>
+> **3. What did the 4:30 send do?** The listing agent transmitted a document her principal had told her thirty minutes earlier not to send. **That is a serious problem for the listing agent independent of the contract question** — Lesson 03's obedience duty is engaged, and this is a broker matter immediately.
+>
+> **4. What is the first buyer's position?** He received a counteroffer, within its stated period, and accepted it. From his side the sequence looks ordinary. **Nothing about the listing brokerage's internal failure is visible to him**, which is why the situation is dangerous rather than merely awkward.
+>
+> **What both licensees do now.**
+>
+> **Preserve everything immediately** — the send record with its timestamp, the 4:00 instruction and how it was given, the scheduling configuration that produced the send, and every message in both directions. **Nothing is deleted, unsent, or recalled.** An attempted recall is itself an act on the record.
+>
+> **Notify the brokers.** Both of them, now.
+>
+> **Say nothing to either buyer about whether a contract exists.** "I don't know, and my broker and counsel are addressing it" is the accurate answer, and the buyer is better served by it than by a confident wrong one.
+>
+> **Do not present the second offer to the seller as though the first sequence had not happened**, and do not accept it, until the brokerage knows where it stands.
+>
+> **The preventable failure is not the mistake. It is the automation.** A scheduled transmission of a document whose authorization can change is a system that acts without a person, and the first thing the broker should change is that documents go out when someone sends them.
 
 ## 3. Counteroffers and multiple offers
 
@@ -232,6 +285,33 @@ A buyer may waive a contingency, and in competitive markets many do. Two points 
 
 The licensee's obligation is to put that in writing before the buyer decides, then follow his decision.
 
+### 4.7 Contingencies under competitive pressure
+
+In a market where sellers receive several offers, buyers are advised — often by other buyers, sometimes by licensees — to shorten or remove contingencies to compete. **This is a real strategy with real consequences, and the licensee's obligation is that the buyer understands the consequence before he chooses it.**
+
+**What each shortening actually costs:**
+
+| The move | What the buyer gives up |
+|---|---|
+| **Shortening the investigation period** | Time to obtain the specialist evaluations a general inspection recommends. **The evaluations do not get faster because the period got shorter.** |
+| **Waiving investigation entirely** | The right to respond to what he finds — and Section 4.6 establishes that the property's condition is unchanged by the waiver. |
+| **Waiving the appraisal contingency** | The obligation to cover a shortfall in cash, in an amount he cannot know in advance. **This is the waiver whose cost is most often misunderstood**, because it is stated as a risk and experienced as a bill. |
+| **Waiving the loan contingency** | Exposure of the deposit — and potentially more — if financing fails for a reason outside his control. |
+| **Shortening the closing period** | A deadline his own lender may not be able to meet, converting his aggressiveness into his default. |
+| **Increasing the deposit** | More money at risk under every scenario above. |
+
+**The licensee's role here has three parts and one prohibition.**
+
+**Explain the mechanism with numbers.** "Waiving the appraisal contingency means if it appraises at 40,000 below your price, you bring 40,000 more in cash or you are in breach." **The number makes it real in a way the word "risk" does not.**
+
+**Confirm the capacity is real.** A buyer waiving an appraisal contingency should have the funds, and the licensee should know he has told his lender what he is doing. **A waiver the buyer cannot perform is a default with a delay built in.**
+
+**Document the decision.** Section 6.4 and Lesson 03's file requirements govern. The advice given, the consequence explained, and the buyer's decision — in writing, before the offer goes out.
+
+**The prohibition:** the licensee does not recommend a waiver. **The strategy belongs to the buyer**, and a licensee whose file shows he advised waiving an appraisal contingency for a buyer who then could not perform has advised on a matter with financial consequences he does not carry.
+
+> **One further point, easily missed.** The listing side has an interest in these waivers, and a listing agent who tells buyers' agents that "non-contingent offers only" will be considered is communicating the seller's preference — which is legitimate — while **also creating pressure on buyers to waive protections without advice.** Where a licensee sees a buyer waiving under that pressure with no apparent understanding, the professional response is to make sure the buyer's own agent has explained it, not to assume someone did.
+
 ## 5. Deadlines, notices, and removal
 
 ### 5.1 Build the calendar from the contract
@@ -286,6 +366,35 @@ Two habits prevent most deadline disputes:
 
 Relying on escrow to track dates, on software reminders, or on verbal confirmation with the other agent may help the work happen, but none of them creates the record.
 
+### 5.7 A worked calendar
+
+> **The contract.** Acceptance is communicated on a Friday. The agreement provides an investigation period of seventeen days, a loan contingency of twenty-one days, an appraisal contingency of seventeen days, delivery of association documents "within seven days," a seller disclosure delivery obligation with a response period running from delivery, and a closing thirty days from acceptance.
+>
+> **Building the calendar — the questions that must be answered before a single date is written.**
+>
+> **1. What is day zero?** Periods run from a defined starting event, and the agreement defines it. **Assuming acceptance day is day one is the most common error**, and it shifts every deadline in the file by one.
+>
+> **2. Are the periods in calendar days or business days?** The agreement says which, and different periods within the same agreement can be counted differently.
+>
+> **3. What happens when a deadline lands on a weekend or holiday?** The agreement addresses it, and the rule is not the same in every agreement.
+>
+> **4. Which periods run from delivery rather than from acceptance?** The disclosure response period is the important one, and **it cannot be calendared until delivery actually occurs.** Section 5.2 governs, and this is why a file with an undated delivery has a deadline nobody can compute.
+>
+> **5. What is the time of day?** A deadline at 5:00 p.m. and a deadline at 11:59 p.m. are different deadlines, and a removal delivered at 8:00 p.m. on the correct date may be late.
+>
+> **The calendar that results contains more entries than the contract has deadlines**, because each deadline generates work that must happen before it:
+>
+> - **Association documents ordered** — the day after acceptance, not on the seventh day. The seven-day delivery obligation is the seller's; the buyer's review time is what remains after it.
+> - **Inspections scheduled** — within the first three days, because Section 5.8 of Lesson 07 establishes that further-evaluation items need time inside the same period.
+> - **Specialist evaluations ordered** — the moment the general report recommends them.
+> - **Appraisal ordered** through the lender, with a follow-up date, because it is the item over which the buyer's side has the least control.
+> - **A check-in three days before each removal deadline**, which is the entry that actually prevents the failure.
+> - **Delivery confirmations** for every notice, recorded on the calendar as tasks rather than assumed.
+>
+> **The two failures this structure prevents.** First, the deadline that arrives with the work not started — the association documents ordered on day six, the specialist called on day fifteen. Second, **the removal delivered on time to the wrong place or with no proof**, which Section 5.3 identifies as carrying legal effect and Section 5.6 requires be confirmed.
+>
+> **And the calendar is built the day acceptance is communicated**, not later in the week. **A calendar built on day four has already lost the three days it would have protected.**
+
 ## 6. Amendment, cancellation, and dispute prevention
 
 ### 6.1 Cancellation is a procedure
@@ -326,7 +435,39 @@ Most transaction disputes are not about substance. They are about **whether some
 >
 > **The correct response.** Record each finding, escalate to the broker, and obtain what legitimately exists. **What must not happen** is dating the removal now, completing the blanks now, or producing an amendment now with a matching date. A documented gap is survivable. A backdated document is falsification, and it converts a compliance problem into conduct that ends a career.
 
-### 6.6 Checkpoint
+### 6.6 A second audit — the transaction that did not close
+
+> **The file.** A purchase cancelled twenty-two days after acceptance. The buyer wants his deposit. The seller says the buyer defaulted. The file contains:
+>
+> - **(a)** The purchase agreement, fully executed, acceptance communicated by email on a Friday afternoon.
+> - **(b)** An inspection report dated day twelve.
+> - **(c)** A signed investigation contingency removal, **undated**, in the file with no transmittal.
+> - **(d)** A text from the buyer's agent to the listing agent on day sixteen: "we're good on inspection."
+> - **(e)** A request for repairs sent on day eighteen — **after** items (c) and (d).
+> - **(f)** A cancellation signed by the buyer on day twenty-two, citing the loan contingency, with the loan contingency period stated in the agreement as twenty-one days.
+> - **(g)** No delivery evidence for the seller's disclosures.
+>
+> **Ranked by consequence to the deposit:**
+>
+> **1. (g) The missing delivery evidence.** Rights run from delivery, and a file that cannot show when the disclosures reached the buyer cannot show that the buyer's response period ever started — **which may mean it never closed.** This item is first because it potentially changes the answer to everything below it, and it is the item nobody looks at because it is not about the cancellation.
+>
+> **2. (c) The undated removal.** The single most consequential defect in the file's own terms. **The contingency either was or was not removed before the events that followed, and the document cannot say.** Section 5.3 and Lesson 03's first worked audit both rank an undated removal near the top for exactly this reason.
+>
+> **3. (f) The cancellation timing.** Cited on day twenty-two under a contingency stated as twenty-one days. **Whether the period had expired depends on the day-zero and counting questions in Section 5.7**, which is why those questions are not clerical.
+>
+> **4. (e) The repair request after the removal.** A request made after the contingency was apparently removed. It may have been a negotiation the seller was free to decline, or it may indicate the parties did not believe the contingency had been removed. **It is evidence about what everyone understood**, and it points in a different direction from item (c).
+>
+> **5. (d) The text.** Informal, ambiguous, and now evidence. "We're good on inspection" is not a removal and was probably not intended as one, **but it is dated, which is more than the removal is.**
+>
+> **6. (b) The inspection at day twelve.** Not a defect. It is here because it establishes the timeline the other items sit on.
+>
+> **What the licensees do now.** Preserve everything including the texts. Escalate to both brokers immediately. **Deposit disposition is a contractual and legal question with a defined procedure**, and it is not resolved by the licensees' view of who was right. Section 6.2 governs and counsel decides.
+>
+> **What must not happen:** dating the removal now, producing a delivery receipt now, or characterizing the text as a removal in a communication to the other side. Each is Lesson 03's manufactured document.
+>
+> **The lesson the brokerage should take.** Four of these six items are the same failure: **a document exists and its date does not.** A transaction management process that refuses to accept an undated document — and that records delivery as an event rather than assuming it — would have prevented all four.
+
+### 6.7 Checkpoint
 
 You should be able to state how a term of the contract is changed, what escrow may do when the parties disagree, and why an undated notice is a defect even when everyone remembers what happened.
 
