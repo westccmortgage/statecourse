@@ -293,6 +293,263 @@ The file is retained for the required period, which runs from closing. Cancelled
 
 You should be able to sequence signing, funding, recording, and disbursement; explain why escrow stops rather than deciding when the parties disagree; and state the correct response to a missing document found in a closed file.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Escrow** | A neutral third party holding funds and documents under conditional delivery, authorized to act **only on the parties' mutual written instructions**. |
+| **The two elements** | A binding contract between the parties, and conditional delivery to a neutral holder. Without both, what exists is a stakeholder arrangement, not an escrow. |
+| **Neutrality** | The structural feature letting both parties rely on the same holder. It is why escrow **stops** rather than deciding when the parties disagree. |
+| **Limited dual agent** | The description of escrow that explains its shape: duties to both parties simultaneously, bounded strictly by the instructions. |
+| **Mutual written instruction** | The only basis on which escrow may change disbursement, release funds, or act on a disputed matter. An agent's confirmation is not the other party's consent. |
+| **Affiliated business arrangement** | Where the brokerage has a financial interest in a settlement provider. Carries disclosure and other conditions. Accepting anything of value for directing settlement business is separately prohibited. |
+| **Preliminary report** | A report of record title stating **the terms on which the insurer would issue a policy**, including the exceptions it would take. Not a guarantee, not the policy, not a survey. |
+| **Exception** | An item the policy **will not insure against**. The buyer bears that risk unless it is otherwise addressed. |
+| **Reconveyance** | The recorded document clearing a paid deed of trust. The seller's recollection that a loan was paid does not clear the record. |
+| **Mechanic's lien** | A lien for work performed whose priority may relate back to when work commenced. Routed to escrow and title, not evaluated by the licensee. |
+| **Vesting** | How the buyer takes title. Carries ownership, survivorship, tax, and estate consequences — and is a question for legal and tax counsel **before escrow prepares the deed**. |
+| **Owner's versus lender's policy** | The owner's policy insures the buyer's interest; the lender's insures the lien and its priority. Different interests, which is why both commonly exist. |
+| **Parallel tracks** | Contract deadlines, investigation, disclosure, financing, appraisal, title, escrow, and insurance — each with its own deadlines and failure modes. |
+| **Started late** | Why most failed transactions fail. Not that a track was impossible. |
+| **Final verification of condition** | The walkthrough: confirming agreed repairs are done, included items are present, and the property is not materially changed. **Not** an inspection and not a renegotiation. |
+| **Signing** | Execution of the closing documents. The transaction is not closed. |
+| **Funding** | The lender's release of loan proceeds to escrow, subject to its conditions. |
+| **Recording** | Recording of the deed and security instrument, establishing the interests of record and giving constructive notice. Generally when the buyer becomes owner of record. |
+| **Disbursement** | Escrow's release of funds, **after** recording is confirmed — deliberately, to prevent a gap in which money has moved but interests are not of record. |
+| **Recording order** | The sequence establishing lien priority. Out-of-sequence recording can place a lender behind an interest it was to precede. Not a clerical preference. |
+| **Possession** | Transfers **when the contract says it does** — frequently the same day as recording and frequently not. Ownership and possession are separate questions. |
+| **Post-closing occupancy** | The seller remaining after closing, under a written agreement addressing duration, payment, condition, insurance, utilities, deposit, and the remedy for failure to vacate. |
+| **Superseded versions** | Earlier drafts kept in the file because the **sequence of versions** is what shows when a term changed and who agreed to it. |
+| **Falsification** | Creating a document now and dating it to match the transaction, or removing records so an inconsistency does not show. Distinct from a documented gap, which is survivable. |
+
+## Practice problems
+
+### Problem 1
+
+The day before recording, the buyer emails escrow asking it to hold back $3,000 from the seller's
+proceeds for a repair the seller promised verbally. The seller knows nothing about it. The buyer's
+agent emails escrow confirming the request is legitimate.
+
+**What may escrow do?**
+
+> **Solution.** **Escrow stops.** That is the whole answer, and each alternative fails for its own
+> reason.
+>
+> It **may not act on the holdback**: a change to disbursement requires mutual written instructions,
+> and one party cannot redirect funds.
+>
+> It **may not simply disburse in full** either — that also acts on one side's position once a genuine
+> dispute has been raised.
+>
+> And **the agent's confirmation supplies nothing.** An agent is not the other party.
+>
+> **The correct outcome:** the parties resolve it in writing and the resolution reaches escrow as a
+> mutual instruction. The agents' job is to get that done before the closing date, not to argue with
+> escrow about its neutrality.
+
+### Problem 2
+
+A preliminary report shows a ten-foot utility easement along the rear property line, recorded CC&Rs,
+an unreleased deed of trust the seller says was paid in 2019, and a judgment lien against a person
+with a similar name. The buyer plans to build a workshop at the rear of the lot. The agent tells him
+easements are routine, asks title to remove the judgment, and predicts the workshop will be fine.
+
+**Route each item correctly and identify the three wrong responses.**
+
+> **Solution.** **The easement:** obtain and review the document — width, location, permitted use. A
+> rear-line easement can prevent exactly the structure this buyer intends, which makes it the most
+> consequential item on the report for him. **The CC&Rs:** obtain and review; use restrictions bind
+> him regardless of zoning. **The unreleased deed of trust:** a recorded reconveyance or other
+> clearing document must be obtained — the seller's recollection does not clear the record. **The
+> judgment lien:** route to title for resolution; do not assume it is or is not the seller.
+>
+> The three wrong responses, and the agent made all three: **treating an item as routine** because
+> most properties have one; **asking title to "remove" an exception**; and **predicting the practical
+> effect** of an easement on the buyer's plans, which is a legal question for counsel.
+>
+> **What an exception means, stated once:** the policy will not insure against it, so the buyer bears
+> that risk unless it is otherwise addressed. That is why exceptions are read rather than skimmed.
+
+### Problem 3
+
+Two unmarried siblings buying together tell the licensee they want the survivor to take the whole
+property automatically, **and** each to be able to leave her share to her own children. They ask
+which vesting to use, and escrow needs the deed instruction tomorrow.
+
+**How should the licensee respond?**
+
+> **Solution.** By naming the tension and referring it — not by choosing.
+>
+> **Those two goals point in different directions.** Automatic survivorship and the ability to devise
+> a share to one's own children are not both satisfied by a single form, and resolving that is
+> **estate planning, not form selection.**
+>
+> The licensee may explain that the choice matters and carries ownership, survivorship, tax, and
+> estate consequences. The licensee may **not** advise which to choose. The referral goes to legal and
+> tax counsel **before escrow prepares the deed**, because changing it afterwards is neither free nor
+> simple — and escrow's deadline is a scheduling pressure, not a reason to answer a question outside
+> the license.
+
+### Problem 4
+
+At the final verification the buyer finds an agreed repair was never completed and a built-in
+microwave named in the contract has been removed. The listing agent suggests closing on schedule and
+sorting it out afterward; the buyer's agent suggests instructing escrow to hold back funds.
+
+**Assess both suggestions.**
+
+> **Solution.** Both fail, and the walkthrough's purpose explains why.
+>
+> It confirms that the property is in the condition the contract requires — agreed repairs completed
+> against the amendment that agreed them, included items present, systems operating, no new damage
+> including from the move-out, and vacancy where required. It is **not** an inspection and not a new
+> chance to renegotiate condition already accepted — but it is not informational either.
+>
+> **Closing and pursuing afterward** converts a solvable issue into a claim: the ordinary leverage to
+> resolve it disappears at closing. **Instructing escrow to hold back** cannot work — escrow acts only
+> on mutual instruction.
+>
+> **Correct:** document the finding with photographs and dated notes, and address it through the
+> contract **before closing**.
+
+### Problem 5
+
+A licensee tells his client the transaction "closed" the afternoon the parties signed. Funding
+occurs the next morning; recording that afternoon; disbursement the following day. The client had
+already given notice on her apartment based on the signing date.
+
+**Sequence the four events and explain why recording precedes disbursement.**
+
+> **Solution.** **Signing** — the parties execute the closing documents, and the transaction is **not**
+> closed. **Funding** — the lender releases proceeds to escrow subject to its conditions.
+> **Recording** — the deed and security instrument are recorded, establishing the interests of record
+> and giving constructive notice; this is generally when the buyer becomes owner of record.
+> **Disbursement** — escrow disburses once recording is confirmed.
+>
+> Recording precedes disbursement **deliberately**: it prevents a gap in which money has moved but the
+> interests are not of record.
+>
+> Related, and not clerical: where multiple instruments record, **the order establishes lien
+> priority**, and an out-of-sequence recording can place a new lender behind an interest it was meant
+> to precede. That is why closing is sequenced rather than simultaneous.
+>
+> **The client-facing lesson:** when recording is confirmed, tell the client in writing, with the date
+> and what it means. Clients frequently do not know whether they own the property, and the licensee is
+> who they will ask.
+
+### Problem 6
+
+Two days before funding, the buyer receives an email in the existing escrow thread with updated wire
+instructions. The reply-to address differs by one character. He forwards it to his agent asking
+whether it looks right.
+
+**What should the agent do, and what should have happened earlier?**
+
+> **Solution.** **Treat the change as presumptively fraudulent until verified**, and verify by calling
+> escrow at a number obtained **independently** — from the engagement documents or the company's
+> published listing, never from the email carrying the instructions. Tell the buyer in writing not to
+> send funds until that call is made.
+>
+> What should have happened earlier is the more important half: **the written warning at the start of
+> escrow** that wire instructions will never change by email and that he must verify by voice before
+> sending. A licensee who sends that at the start of escrow rather than the day funds move has done
+> the single most valuable thing available to protect a client's money.
+>
+> This is the highest-risk moment in the transaction, and the moment a client is least able to
+> recover from an error.
+
+### Problem 7
+
+The seller needs three extra days in the house after closing. Both agents agree it is too short to
+need paperwork. The seller stays eleven days, leaves damage in the garage, and the buyer discovers
+the seller still has app access to the interior cameras.
+
+**What was missing, and what else belongs on the list?**
+
+> **Solution.** **A written occupancy agreement**, whose absence is exactly what produced all three
+> problems. "They only need three days" is how a holdover with no agreed remedy begins — and the buyer
+> now owns a property occupied by someone with no obligation he can enforce quickly.
+>
+> The terms it should have carried: duration and end date; payment; condition on delivery; insurance
+> and in whose name; utilities and maintenance; a deposit or holdback as security for damage or
+> holdover; and **the remedy for failure to vacate**, which is the point at which this becomes
+> expensive. A brief term does not reduce the need for terms.
+>
+> **The camera access belongs on the transfer-of-control list**, alongside when keys transfer and from
+> whom, garage and gate remotes, mailbox keys, association access devices, and changing codes on smart
+> locks and alarms. A seller retaining app access to interior cameras after closing is a real problem
+> and must be addressed explicitly rather than assumed.
+>
+> Worth noting: **early possession before closing is riskier still** and generally to be discouraged —
+> a buyer who occupies and then fails to close leaves the seller with an occupant and a property to
+> re-market.
+
+### Problem 8
+
+A post-closing audit finds a missing signed copy of an amendment, an inconsistency between the
+closing statement and an earlier figure, and only executed final documents — the drafts were
+discarded as clutter. A colleague suggests recreating the amendment with a matching date and deleting
+the superseded closing statement so nothing conflicts.
+
+**State the correct response and the line.**
+
+> **Solution.** **Obtain what legitimately exists** — the missing signed copy may still be
+> retrievable, which is why the audit happens while participants still respond to messages. **Record
+> what does not**, plainly. **Escalate to the broker.** And **address the process** that produced the
+> gap, not only the instance.
+>
+> **The colleague's suggestion is falsification.** Creating a document now and dating it to match the
+> transaction, or removing surrounding records so an inconsistency does not show, converts a
+> compliance failure into conduct that ends a career. A documented gap is survivable.
+>
+> **Discarding the drafts was itself a mistake.** The sequence of versions is frequently what shows
+> when a term changed and who agreed to it. A file of executed finals can prove what was agreed but
+> not how the parties arrived there — which is the question a dispute usually asks.
+>
+> The same principle governs corrections generally: made visibly, with the original preserved and the
+> change attributable. A record that can be silently altered is not a record. And the file is retained
+> from closing — **including cancelled and failed transactions**, which are disproportionately the
+> ones that later produce disputes.
+
+## Chapter summary
+
+**Escrow is neutral and acts only on mutual written instructions.** It holds, it does not decide;
+where the parties disagree it stops, and no agent's confirmation substitutes for the other party's
+consent.
+
+**Never accept anything of value for directing settlement business**, and disclose affiliated
+business arrangements where the brokerage has an interest.
+
+**Open escrow on the complete, fully executed agreement including amendments**, or the instructions
+will not match the contract — which surfaces later, at the worst time.
+
+**A preliminary report states the terms on which a policy would issue.** An exception is a risk the
+policy will not cover, so exceptions are read, the underlying documents obtained, and legal questions
+routed to counsel. Never call an item routine, never ask title to "remove" one, never predict its
+effect on the buyer's plans.
+
+**Vesting is a legal and tax question**, referred before escrow prepares the deed.
+
+**Transactions fail because a track started late.** Build the calendar from the contract, start the
+slow items first — insurance in hazard areas, association documents, permit research, specialist
+inspections — confirm status weekly in writing, escalate early, and reconcile escrow's instructions
+against the agreement.
+
+**The final verification confirms contract compliance, not condition generally** — and problems are
+resolved before closing, while leverage still exists.
+
+**Signing, funding, recording, disbursement** are four events in that order. Recording is generally
+when ownership transfers; disbursement follows it deliberately; and recording order establishes lien
+priority.
+
+**Warn about wire fraud in writing at the start of escrow**, and verify any change through a channel
+the attacker does not control.
+
+**Possession transfers when the contract says**, and any divergence from recording is documented —
+post-closing occupancy in full, early possession rarely and with counsel.
+
+**Audit the file shortly after closing**, keep superseded versions, obtain what exists, record what
+does not, and fix the process. A documented gap is survivable; a manufactured document is not.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Separate the title issue from the contract issue and state which party and which process resolves each, identify what escrow may and may not do on the facts given, state the documentation the resolution requires, identify what you would refer to counsel, and list the evidence you would retain. The instructor version contains the scoring rubric.

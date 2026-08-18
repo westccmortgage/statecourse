@@ -332,6 +332,274 @@ An audit finding of that kind sits alongside commingling and unsigned agreements
 
 You should be able to explain why an internal ledger does not cure commingling, name the three balances a trust reconciliation must agree, and state why a defective notice defeats a well-documented enforcement action.
 
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Continuity of exposure** | What distinguishes management from sales: a defect in a sales file is one transaction; a defect in a management practice repeats every month across every unit. |
+| **Management agreement** | The contract between the owner and the **brokerage** establishing property, term, scope, spending authority, compensation, trust fund handling, reporting, owner obligations, insurance, and fair housing obligations. |
+| **Unsigned authority** | A structural defect, not a filing gap. Scope is undefined, compensation is unenforceable, fund handling is unauthorized, and every action is disputable. |
+| **Spending authority** | The threshold above which owner approval is required, paired with **emergency authority** below or outside it. |
+| **Emergency authority** | Written authority to act without approval where waiting compounds damage while a habitability obligation runs. Its absence creates a genuine dilemma; the agreement removes it. |
+| **Written screening criteria** | Objective standards established before applications are taken, disclosed to applicants, applied identically, and documented against each criterion. |
+| **Differential application** | Applying neutral criteria strictly to some applicants and flexibly to others. Discrimination, even though the criteria are neutral. |
+| **Discouragement** | Telling an applicant they probably would not qualify instead of taking and evaluating the application. Achieves a denial while producing no record of one. |
+| **Occupancy standards** | Limits that must be reasonable and uniform. A limit restrictive enough to exclude families with children functions as familial status discrimination however phrased. |
+| **Source of income** | A characteristic California protects. An instruction to refuse applicants using housing assistance is an unlawful instruction. |
+| **Trust fund** | Money received in licensed activity belonging to someone else — rents, security deposits, owner reserves, application fees held pending processing. |
+| **The three obligations** | Separation into a trust account or neutral depository; complete records identifying whose funds they are; and timely placement. |
+| **Commingling** | Depositing trust funds into the wrong account. Complete on deposit, regardless of how carefully the total is tracked and regardless of whether anyone loses money. |
+| **Why a ledger does not cure it** | Funds in an operating account are exposed to the brokerage's creditors, losses, and business risk. A ledger entry does not protect money; **separation** does, and the record proves it was maintained. |
+| **Shortage** | Someone else's money missing. Cured immediately from the broker's own funds, with the cause documented. No tolerance threshold. |
+| **Overage** | Records that do not accurately reflect whose funds are held. Investigated and documented; the broker may not simply keep it. |
+| **Move-in documentation** | Dated, photographic, complete condition record. A deposit dispute turns on the difference between move-in and move-out condition, so a manager without it has no case. |
+| **Ordinary wear and tear** | Not deductible from a security deposit. Distinguished from damage in the itemized written accounting. |
+| **Three-way reconciliation** | Bank balance, book balance, and the **total of individual beneficiary ledgers** — all three must agree. Bank-to-book alone misses the error that matters most. |
+| **Habitability** | The obligation to maintain the property fit to live in. **Not waivable** by agreement, and running continuously rather than only at move-in. |
+| **Triage** | Sorting requests into emergency, habitability, ordinary, and cosmetic. A manager who treats them uniformly responds too slowly to the ones that matter. |
+| **Lawful entry** | A permitted purpose, proper notice in the required manner and time, a reasonable hour, and documentation. Not substituted for by the tenant being home, the owner's authorization, holding a key, or a contractor's schedule. |
+| **Retaliation** | Enforcement action close in time to a tenant's complaint or assertion of a right. The defense is a documented, independent basis predating or unconnected to the protected activity. |
+| **Self-help** | Changing locks, removing doors, shutting off utilities, or removing belongings to force a tenant out. Unlawful, with no exception for a badly behaved or non-paying tenant. |
+| **Defective notice** | A notice wrong in type, content, period, service, or parties. **A good reason delivered by a defective notice fails**, and documentation does not cure it. |
+
+## Practice problems
+
+### Problem 1
+
+An audit of a management practice finds two owners with no signed management agreement. The broker
+calls it a filing oversight — the properties have been managed for three years without complaint,
+fees have been collected, and the owners are happy.
+
+**Assess.**
+
+> **Solution.** It is a defect of the same order as commingling, not a filing oversight.
+>
+> Acting without a signed agreement means acting **without established authority**: the scope is
+> undefined so every decision is arguable, the compensation is unenforceable, the handling of funds is
+> not authorized in writing, and the owner can dispute any action taken over three years.
+>
+> The absence of complaints is not evidence of compliance. In a management practice — which repeats
+> monthly across every unit — it usually means the problems have not surfaced yet.
+>
+> **What transfers:** the same reasoning applies to the neighboring findings in a typical audit —
+> deposits in the operating account, an owner unreported for months, a salesperson signing leases in
+> her own name. Each is an independent defect and **none depends on harm having occurred.**
+
+### Problem 2
+
+An owner instructs: "No housing assistance, no service animals because of my no-pet rule, I'd prefer
+a quiet single person over a family with kids, and that unit has two steps at the entry so it won't
+work for the applicant in a wheelchair anyway."
+
+**Address each clause and identify three responses that do not work.**
+
+> **Solution.** Every clause is a problem. **Source of income** and **familial status** are protected in
+> California. **A service animal is not a pet** — a no-pet policy does not by itself justify denial, no
+> pet deposit or pet rent may be charged, and certification may not be required. And **deciding on the
+> applicant's behalf** that a unit will not work for him is not the manager's decision; accessibility is
+> addressed through accommodation and modification, not exclusion — here the entry steps are a possible
+> modification question.
+>
+> **The response:** refuse the instructions, explain each, evaluate the applicant on the same written
+> criteria as everyone else, treat the steps as a modification question, and escalate to the broker on
+> whether the brokerage can act for this owner.
+>
+> **Three that do not work:** applying only the "quiet tenant" preference by recasting familial status
+> as a noise concern; documenting that the instructions came from the owner and following them anyway;
+> and declining the engagement quietly without explaining the problem, which leaves the owner free to
+> repeat it with the next manager.
+
+### Problem 3
+
+A manager says she selects tenants by getting a feel for people at the showing, favors applicants
+referred by existing tenants, and tells applicants she doubts will qualify that the owner is "looking
+for someone long-term" rather than taking their applications.
+
+**Identify the problem in each, and state the defensible practice.**
+
+> **Solution.** **Impression-based selection** is exactly where bias operates and cannot be explained
+> afterwards in neutral terms. **Referral preference** reproduces the existing composition of the
+> building at scale — the same effect as choosing whoever the current tenants would get along with.
+> **And the third is the most dangerous**: discouraging an application rather than denying it achieves
+> a denial while producing no record of one, which is why it is harder to detect.
+>
+> **The defensible practice:** written criteria established before applications are taken; objective
+> standards — income relative to rent, credit history, rental history, verifiable identity, lawful
+> occupancy standards; applied identically to every applicant; documented as to how each application
+> was evaluated against each criterion; and disclosed to applicants before they apply, along with any
+> application fee.
+>
+> Uniformity is not merely fair. It is what makes a decision **explainable** afterwards.
+
+### Problem 4
+
+A manager deposits a month's rents and three security deposits into the brokerage operating account.
+He points out that his accounting software tracks each beneficiary separately to the cent, that the
+total is correct, and that no one has lost a dollar.
+
+**Why does this fail, and what is the correct response?**
+
+> **Solution.** **Commingling was complete on deposit.** It does not depend on the total being wrong or
+> on anyone losing money.
+>
+> The structural reason the ledger does not cure it: funds in a brokerage operating account are exposed
+> to the brokerage's **creditors, operating losses, and ordinary business risk.** A ledger entry does
+> not protect the money. **Separation protects it**, and the record proves the separation was
+> maintained.
+>
+> **The correct response** to the mistake: correct it immediately, **document the error and the
+> correction**, and notify the broker so the trust records reconcile and the cause is addressed.
+> Correcting it quietly without a record is its own problem — trust accounting is judged by the record
+> as much as by the balance.
+>
+> Related: a **shortage** is cured immediately from the broker's own funds with the cause documented;
+> an **overage** is investigated and documented and may not simply be kept. Neither is a rounding
+> matter, neither has a tolerance threshold, and neither waits for the next reconciliation.
+
+### Problem 5
+
+A monthly reconciliation shows the bank balance agreeing with the book balance to the cent. The
+manager reports the trust account as clean. Two months later a tenant's deposit turns out to have been
+credited to a different tenant's ledger.
+
+**What did the reconciliation miss, and why?**
+
+> **Solution.** **The third balance.** A trust reconciliation compares the bank balance, the book
+> balance, **and the total of the individual beneficiary ledgers** — and all three must agree.
+>
+> A reconciliation that balances bank against book alone cannot detect the error that matters most:
+> money in the account belonging to a **different beneficiary** than the records say. The total was
+> right the whole time, which is exactly why it went unnoticed for two months.
+>
+> **What transfers:** the same shape as the commingling defense in Problem 4. A correct total is not
+> evidence that the right people's money is being held correctly.
+
+### Problem 6
+
+A tenant reports on Friday morning that the unit has had no water since Thursday night. The manager
+tells him to submit a written request, that the plumber's next routine visit is Tuesday, and that he
+should contact the owner directly. Separately, the manager lets the plumber in on Tuesday without
+notice because the tenant is home.
+
+**Assess the response and the entry.**
+
+> **Solution.** **A loss of water is an emergency**, not routine maintenance, and it sits at the top of
+> the triage list alongside no heat in cold weather, sewage backup, gas odor, electrical hazard,
+> security failure, and flooding. Emergency authority exists precisely so this does not wait for
+> approval.
+>
+> The habitability obligation is **not waivable** and runs **continuously** rather than only at
+> move-in. Requiring a written request may be part of the process and referring to the owner may be
+> part of the structure, but **neither justifies delaying the response** — and the exposure grows with
+> the delay.
+>
+> **The entry is separately unlawful.** Entry requires a permitted purpose, proper notice in the manner
+> and time the law requires, a reasonable hour, and documentation that notice was given. The tenant
+> being home does not substitute for notice — nor does the owner's authorization, the manager holding a
+> key, or the convenience of the contractor's schedule.
+>
+> **The record is the case.** Every request and response — when received, its nature, when answered,
+> what was done, by whom, and at what cost — is what answers a later dispute with the tenant, the
+> owner, or an insurer.
+
+### Problem 7
+
+A tenant files a complaint with the city about a persistent roof leak. Eleven days later the manager
+serves a termination notice. The stated reason is a lease violation the manager has been documenting
+for four months. The notice names only one of the two tenants on the lease and is served by leaving it
+under the door. The owner then asks whether they can "just change the locks if she won't leave."
+
+**Assess the retaliation exposure, the notice, and the owner's question.**
+
+> **Solution.** **The timing creates a retaliation appearance**, and California protects tenants against
+> retaliation. The manager's protection here is real but must be shown: a **documented, independent
+> basis** predating or unconnected to the protected activity — which is what four months of
+> contemporaneous records provide. This is another reason the maintenance and enforcement logs matter.
+>
+> **The notice is defective on at least two elements** — correct parties named, and correct service
+> method with proof. Termination procedures are formal and unforgiving: type, content, period, parties,
+> service, and proof of service each have requirements, and **a good reason delivered by a defective
+> notice fails.** The landlord starts over, having lost weeks and given the tenant a stronger position.
+> Impeccable documentation of the conduct does not cure it.
+>
+> **The owner's question is answered flatly: no.** Changing locks, removing doors, shutting off
+> utilities, or removing belongings is unlawful self-help, with no exception for a badly behaved or
+> non-paying tenant — and where a unit appears abandoned, there is a legal process for that too.
+>
+> "Can we get them out by the first?" is a **legal question**. The honest answer describes the process
+> and its timeline rather than promising a date, and the matter goes to counsel. The manager maintains
+> the record and follows the process; the manager does not assess the strength of the case.
+
+### Problem 8
+
+A tenancy ends. The manager withholds the full deposit for carpet replacement and repainting, sending
+the tenant a one-line note four weeks later. There is no move-in condition record. Separately, one
+owner has received no report for four months.
+
+**Assess both.**
+
+> **Solution.** **The deposit handling fails on every element.** A deposit dispute is decided on the
+> difference between **move-in and move-out condition**, and a manager without move-in documentation
+> has no case — which is the whole reason move-in documentation exists. **Ordinary wear and tear is not
+> deductible**, and carpet wear and repainting after a tenancy are the standard examples. The
+> termination accounting must be **itemized in writing with supporting documentation** and delivered
+> within the required time, with the balance returned within the required period. A one-line note four
+> weeks later is none of that.
+>
+> Nearly all deposit complaints — the single most common source of tenant complaints — are prevented by
+> two practices: dated photographic documentation at move-in and move-out, and an itemized written
+> accounting.
+>
+> **The unreported owner is not an administrative lapse.** The owner has been unable to verify the
+> handling of their own money for a third of a year, the trust records have gone that long without
+> external scrutiny, and if there is an error nobody has been positioned to find it. **Reporting is how
+> the accounting duty is discharged** — regular and itemized, not summary — and an accounting that
+> cannot be verified is not an accounting. Owner preference for less detail does not change the
+> obligation.
+
+## Chapter summary
+
+**Management is licensed activity performed for the broker, with trust funds and brokerage records** —
+and unlike a sale, it is continuous, so a defective practice repeats monthly across every unit.
+
+**The agreement is with the brokerage**, and unsigned authority is a structural defect: undefined
+scope, unenforceable compensation, unauthorized fund handling, and disputable actions.
+
+**Settle spending and emergency authority in writing**, so no manager has to choose between acting
+without authority and letting damage compound.
+
+**Written criteria, objective standards, uniform application, documented evaluation, disclosed in
+advance.** Impression, compatibility, referral preference, differential strictness, and discouragement
+are each how bias enters — and the last leaves no record of the denial it accomplishes.
+
+**Source of income and familial status are protected in California**; assistance animals are not pets;
+and accessibility is addressed by accommodation and modification, never by exclusion.
+
+**Trust funds require separation, records, and timeliness.** A ledger does not cure commingling,
+because a ledger entry does not shield money from the brokerage's creditors and losses — separation
+does.
+
+**Reconcile three balances**, not two. Bank against book alone misses money held for the wrong
+beneficiary.
+
+**Move-in documentation is what wins deposit disputes**, wear and tear is not deductible, and the
+termination accounting is itemized, supported, and timely.
+
+**Habitability is not waivable and runs continuously.** Triage requests, respond promptly to
+emergencies, and record request, response, action, and cost — that record is the entire case later.
+
+**Entry requires purpose, notice, a reasonable hour, and documentation.** Nothing about the tenant
+being home, the owner's say-so, or a contractor's schedule substitutes.
+
+**A defective notice defeats a good reason.** Type, content, period, parties, service, proof — each
+must be right, and documentation of the conduct does not cure a defect in the notice.
+
+**Self-help is prohibited without exception**, and termination is a legal proceeding for counsel, not
+a date to promise an owner.
+
+**Reporting discharges the accounting duty.** Regular, itemized, verifiable — and an owner who has not
+been reported to for months is a structural failure, not a backlog. The absence of complaints is not
+evidence of compliance.
 ## Required applied assignment
 
 Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify each instruction or practice that cannot be followed and why, state the correct handling of the funds involved, identify the fair housing analysis that applies to each applicant request, state the documentation you would create and retain, and identify what you would escalate to the broker or to counsel. The instructor version contains the scoring rubric.
