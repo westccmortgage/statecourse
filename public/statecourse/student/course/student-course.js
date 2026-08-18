@@ -75,12 +75,12 @@ function assessmentLabel(kind,count){
   if(kind==="applied")return"Submit applied response";
   return kind==="remediation"?`Submit alternate answers (${count})`:`Submit answers (${count})`;
 }
-function renderAssessment(target,assessment,kind,complete,enabled){
+function renderAssessment(target,assessment,kind,complete,enabled,blockedMessage){
   if(complete){target.innerHTML='<p class="assessment-result"><strong>Complete.</strong> This requirement is recorded for the assignment version.</p>';return;}
   if(!assessment||!assessment.items?.length){target.innerHTML="";return;}
   const items=assessment.items,total=items.length;
   const threshold=kind==="applied"?"":`<p class="assessment-standard">${total} scored items · ${assessment.passingPercent}% required to complete this check.</p>`;
-  target.innerHTML=`<form data-kind="${kind}">${threshold}${items.map((item,position)=>`<fieldset ${enabled?"":"disabled"} data-item="${escapeHtml(item.id)}"><legend>${total>1?`<span class="item-number">Question ${position+1} of ${total}</span>`:""}${escapeHtml(item.prompt)}</legend>${item.choices.map((choice,index)=>`<label class="choice"><input type="radio" name="${escapeHtml(item.id)}" value="${index}" required><span>${escapeHtml(choice)}</span></label>`).join("")}<p class="item-result" hidden></p></fieldset>`).join("")}<button type="submit" ${enabled?"":"disabled"}>${assessmentLabel(kind,total)}</button>${enabled?"":'<p class="assessment-result">Complete the preceding lesson requirement first.</p>'}<div class="assessment-result" hidden></div></form>`;
+  target.innerHTML=`<form data-kind="${kind}">${threshold}${items.map((item,position)=>`<fieldset ${enabled?"":"disabled"} data-item="${escapeHtml(item.id)}"><legend>${total>1?`<span class="item-number">Question ${position+1} of ${total}</span>`:""}${escapeHtml(item.prompt)}</legend>${item.choices.map((choice,index)=>`<label class="choice"><input type="radio" name="${escapeHtml(item.id)}" value="${index}" required><span>${escapeHtml(choice)}</span></label>`).join("")}<p class="item-result" hidden></p></fieldset>`).join("")}<button type="submit" ${enabled?"":"disabled"}>${assessmentLabel(kind,total)}</button>${enabled?"":`<p class="assessment-result">${escapeHtml(blockedMessage||"Complete the preceding lesson requirement first.")}</p>`}<div class="assessment-result" hidden></div></form>`;
   const form=target.querySelector("form");
   form?.addEventListener("submit",async(event)=>{
     event.preventDefault();
@@ -110,8 +110,11 @@ function renderAssessment(target,assessment,kind,complete,enabled){
 }
 function renderAssessments(){
   const selected=page.data.selectedAssignment,review=page.data.mode!=="student",contentReady=selected.viewedSections.length>=selected.sectionCount;
-  renderAssessment($("#appliedAssessment"),page.data.assessments.applied,"applied",selected.appliedComplete,review||contentReady);renderAssessment($("#engagementAssessment"),page.data.assessments.engagement,"engagement",selected.engagementComplete,review||selected.appliedComplete);
-  const needs=selected.remediationStatus==="required"||selected.remediationStatus==="content_viewed";$("#remediationSection").hidden=!needs;$("#remediationViewed").disabled=selected.remediationStatus==="content_viewed";renderAssessment($("#remediationAssessment"),page.data.assessments.remediation,"remediation",selected.remediationStatus==="satisfied",review||selected.remediationStatus==="content_viewed");
+  const viewed=selected.viewedSections.length,sections=selected.sectionCount,remainingSections=Math.max(0,sections-viewed);
+  const appliedBlocked=`Read the lesson to unlock this exercise. You have viewed ${viewed} of ${sections} sections — ${remainingSections} remaining.`;
+  const engagementBlocked="Submit the applied exercise above to unlock the scored check.";
+  renderAssessment($("#appliedAssessment"),page.data.assessments.applied,"applied",selected.appliedComplete,review||contentReady,appliedBlocked);renderAssessment($("#engagementAssessment"),page.data.assessments.engagement,"engagement",selected.engagementComplete,review||selected.appliedComplete,engagementBlocked);
+  const needs=selected.remediationStatus==="required"||selected.remediationStatus==="content_viewed";$("#remediationSection").hidden=!needs;$("#remediationViewed").disabled=selected.remediationStatus==="content_viewed";renderAssessment($("#remediationAssessment"),page.data.assessments.remediation,"remediation",selected.remediationStatus==="satisfied",review||selected.remediationStatus==="content_viewed","Review the remediation content above and mark it viewed to unlock the alternate questions.");
 }
 function setupSectionTracking(){
   page.observer?.disconnect();for(const timer of page.sectionTimers.values())clearTimeout(timer);page.sectionTimers.clear();const viewed=new Set(page.data.selectedAssignment.viewedSections);
