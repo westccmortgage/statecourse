@@ -1,0 +1,170 @@
+Tx        1a sponsor number
+      Enter DRE pre-license sponsor number (if applicable)
+Tx        1 NAME OF APPLICANT SCHOOL
+      NAME OF APPLICANT SCHOOL
+Tx        2 OTHER NAMES USED BY THE SCHOOL
+      OTHER NAMES USED BY THE SCHOOL
+Tx        3a Business Area Code
+      Area Code of Business Telephone Number
+Tx        3b Business telephone
+      Business telephone number
+Tx        SCHOOLS BUSINESS ADDRESS   CITY STATE ZIP CODE
+      SCHOOLS BUSINESS ADDRESS   CITY STATE ZIP CODE
+Tx        SCHOOLS MAILING ADDRESS
+      SCHOOLS MAILING ADDRESS, CITY STATE ZIP CODE
+Tx        Email Address
+      Enter Primary Contact's Business Email Address
+Tx        School Website
+      Enter school website address
+Btn       SCHOOL APPROVED  [YES | Off]
+      Is the school approved by the Bureau for Provate Postsecondary Education - Yes
+Btn       SCHOOL NOT APPROVED  [NO | Off]
+      Is the school approved by the Bureau for Provate Postsecondary Education - No
+Btn       SCHOOL EXEMPT  [Yes | Off]
+      Is the school approved by the Bureau for Provate Postsecondary Education - Exempt
+Tx        EXPLAIN EXEMPTION
+      Explain exemption 
+Tx        EXPLAIN EXEMPTION 2
+      Explain exemption 
+Btn       INDIVIDUAL  [On | Off]
+      What is the type of ownership of the school - Individual Owner
+Btn       PARTNERSHIP  [On | Off]
+      What is the type of ownership of the school - Partnership
+Btn       CORPORATION  [On | Off]
+      What is the type of ownership of the school - CORPORATION
+Btn       LLC  [Yes | Off]
+      What is the type of ownership of the school - LLC
+Btn       OTHER  [On | Off]
+      What is the type of ownership of the school - Other
+Tx        Other 123
+      What is the type of ownership of the school - Explain answer of other
+Btn       DBA YES  [Yes | Off]
+      Is the individual or school using a DBA or fictitious business name - Yes
+Btn       DBA NO  [Yes | Off]
+      Is the individual or school using a DBA or fictitious business name - No
+Tx        DBA NAME
+      Print name of DBA. Attach copy of filed FBNS
+Sig       Signature1
+      SIGNATURE
+Tx        Printed name 1
+      Enter name of first person
+Tx        Area code1
+      enter area code of first person
+Tx        Phone number 1
+      enter phone number of first person
+Tx        Email address 1
+      enter email address of first person
+Tx        Printed name 2
+      Enter name of second person
+Sig       Signature2
+      SIGNATURE
+Tx        Area code2
+      enter area code of second person
+Tx        Phone number 2
+      enter phone number of second person
+Tx        Email address 2
+      enter email address of second person
+Tx        Printed name 3
+      Enter name of third person
+Sig       Signature3
+      SIGNATURE
+Tx        Area code3
+      Area codeenter area code of third person
+Tx        Phone number 3
+      enter phone number of third person
+Tx        Email address 3
+      enter email address of third person
+Tx        COURSE TITLE
+      Enter course title
+Tx        LANGUAGE
+      what language will be used to teach the course
+Tx        TOTAL NUMBER OF INSTRUCTION HOURS Minimum 45 hours required
+      Enter TOTAL NUMBER OF INSTRUCTION HOURS (Minimum 45 hours required)
+Tx        Publication TitleRow1
+      Title of first publication to be used in the course
+Tx        AuthorRow1
+      Author of first publication to be used in the course
+Tx        Date of PublicationRow1
+      Publication date of first publication to be used in the course
+Tx        Edition 1
+      Edition of first publication to be used in the course
+Tx        Publication TitleRow2
+      Title of second publication to be used in the course
+Tx        AuthorRow2
+      Author of second publication to be used in the course
+Tx        Date of PublicationRow2
+      Publication date of second publication to be used in the course
+Tx        Edition 2
+      Edition of second publication to be used in the course
+Tx        Publication TitleRow3
+      Title of third publication to be used in the course
+Tx        AuthorRow3
+      Author of third publication to be used in the course
+Tx        Date of PublicationRow3
+      Publication date of third publication to be used in the course
+Tx        Edition 3
+      Edition of third publication to be used in the course
+Tx        NUMBER OF QUESTIONS ON FINAL EXAM
+      NUMBER OF QUESTIONS ON FINAL EXAM
+Tx        MINIMUM PASSING SCORE
+      MINIMUM PASSING SCORE
+Tx        Exam Time Given
+      Time given for exam
+Btn       OPEN BOOK  [On | Off]
+      exam will be administered as Open Book
+Btn       CLOSED BOOK  [On | Off]
+      exam will be administered as Closed Book
+Tx        EXPLAIN YOUR PROCEDURE TO PROVIDE THE GENERAL INFORMATION PAGE TO STUDENTS PRIOR TO REGISTRATIONENROLLMENT 1
+      EXPLAIN YOUR PROCEDURE TO PROVIDE THE “GENERAL INFORMATION PAGE” TO STUDENTS PRIOR TO REGISTRATION/ENROLLMENT
+Tx        EXPLAIN HOW AND WHEN STUDENTS WILL BE INFORMED OF THE AVAILABILITY OF THE ONLINE COURSE AND INSTRUCTOR EVALUATION LOCATED ON THE DRE WEB SITE 1
+      EXPLAIN HOW AND WHEN STUDENTS WILL BE INFORMED OF THE AVAILABILITY OF THE ON-LINE COURSE AND INSTRUCTOR EVALUATION LOCATED ON THE DRE WEB SITE
+Btn       Check Box1  [Yes | Off]
+      Yes
+Btn       Check Box2  [Yes | Off]
+      No
+Tx        Detail the interactive participatory component
+      Detail the interactive participatory component
+Btn       Live Classroom / Conference / Symposium  [On | Off]
+      Live Classroom / Conference / Symposium
+Btn       live: online webinar  [On | Off]
+      live: online webinar
+Btn       Correspondence and Internet  [On | Off]
+      Correspondence and Internet
+Btn       Correspondence  [Yes | Off]
+      Correspendence
+Btn       Internet and mobile device app  [On | Off]
+      Internet and mobile device app
+Btn       mobile device app  [On | Off]
+      mobile device app
+Btn       In person proctored  [On | Off]
+      In person proctored
+Btn       Internet
+      Internet
+Btn       Mobile Device App  [On | Off]
+      Mobile Device App
+Sig       Signature4
+      ORIGINAL OR ELECTRONIC* SIGNATURE OF PRIMARY CONTACDT
+Tx        PRINTED NAME OF PRIMARY CONTACT
+      PRINTED NAME OF Primary Contact
+Tx        DATE
+      Date signed by Owner or authorized school official
+Tx        TITLE OF PRIMARY CONTACT
+      TITLE of primary contact
+Tx        Primary conatact's phone number (include area code)
+      Primary conatact's phone number (include area code)
+Tx        DRE LICENSE NUMBER
+      DRE LICENSE NUMBER
+Sig       Signature5
+      ORIGINAL OR ELECTRONIC* SIGNATURE OF OWNER OR AUTHORIZED SCHOOL OFFICIAL
+Tx        PRINTED NAME OF OWNER OR AUTHORIZED OFFICIAL
+      PRINTED NAME OF OWNER OR AUTHORIZED OFFICIAL
+Tx        DATE 2
+      Date signed by Owner or authorized school official
+Tx        OWNER'S EMAIL ADDRESS
+      Owner's email address
+Tx        Owner (or authorized school official) conatact's phone number (include area code)
+      Primary conatact's phone number (include area code)
+Tx        DRE LICENSE 2
+      DRE LICENSE NUMBER
+Btn       Internet Final Exam  [On | Off]
+      Internet
