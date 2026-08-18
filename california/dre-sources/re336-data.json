@@ -1,14 +1,17 @@
 {
-  "_note": "Input for scripts/fill-re336.mjs. legalName is the entity's exact registered name as filed with the Wyoming Secretary of State on 2026-08-16 (Certificate of Organization, lowercase as filed). If the entity registers in California under an alternate name, or adopts a DBA, update this and regenerate. sponsorId stays empty until DRE assigns one.",
+  "_note": "Input for scripts/fill-re336.mjs. legalName is the sponsoring entity's exact registered name. The DRE applicant is StateCourse LLC, a California limited liability company; its registration with the California Secretary of State was in process as of 2026-08-18 and no entity number has been issued yet. Fill californiaEntityNumber and californiaRegistrationDate from the filed record before signing, and do not represent the entity as registered until the Secretary of State certificate is in hand. The Wyoming entity 'state course LLC' (Certificate of Organization filed 2026-08-16) is retained for a separate future purpose and is NOT the DRE applicant. sponsorId stays empty until DRE assigns one.",
   "provider": {
-    "legalName": "state course LLC",
+    "legalName": "StateCourse LLC",
     "sponsorId": "",
     "street": "407 N Pacific Coast Highway, Unit 1028",
     "city": "Redondo Beach",
     "state": "CA",
     "zip": "90277",
-    "formationState": "WY",
-    "formationDate": "2026-08-16"
+    "formationState": "CA",
+    "formationDate": "",
+    "californiaEntityNumber": "",
+    "californiaRegistrationStatus": "registration in process as of 2026-08-18; certificate not yet issued",
+    "californiaRegistrationDate": ""
   },
   "primaryContact": {
     "name": "Kanevsky, Anatoliy",
@@ -26,5 +29,11 @@
     "Real Estate Principles",
     "Real Estate Practice",
     "Mortgage Loan Brokering and Lending"
-  ]
+  ],
+  "_retainedEntity": {
+    "legalName": "state course LLC",
+    "formationState": "WY",
+    "formationDate": "2026-08-16",
+    "role": "Not the DRE applicant. Retained for a separate future purpose; name and status to be changed at that time."
+  }
 }
