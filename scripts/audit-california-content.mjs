@@ -81,6 +81,29 @@ function isProse(line) {
   return !/^(#|\||-|\*|\d+\.)/.test(trimmed);
 }
 
+/* RE 303 measures instructional material in pages, not words, and DRE requires printed
+   copies. Word count understates a page carrying a table or a callout, so this estimates
+   typeset length instead: prose wraps at roughly 12 words per line, table rows and list
+   items take their own line, headings take a line plus spacing, and a page holds about
+   40 lines. The authoritative figure is the printed submission copy; this is the working
+   estimate while the rebuild is in progress. */
+const WORDS_PER_LINE = 12;
+const LINES_PER_PAGE = 40;
+
+function estimatePages(markdown) {
+  let lines = 0;
+  for (const raw of markdown.split("\n")) {
+    const line = raw.trim();
+    if (!line) continue;
+    const words = line.split(/\s+/).length;
+    if (/^#{1,6}\s/.test(line)) { lines += 2; continue; }
+    if (line.startsWith("|")) { lines += 1; continue; }
+    if (/^([-*]|\d+[.)]|>)\s/.test(line)) { lines += Math.max(1, Math.ceil(words / WORDS_PER_LINE)); continue; }
+    lines += Math.ceil(words / WORDS_PER_LINE) + 1;
+  }
+  return lines / LINES_PER_PAGE;
+}
+
 const renderer = loadReaderRenderer();
 const lessons = lessonFiles();
 const report = { render: [], typography: [], substance: null, assessments: null };
@@ -126,7 +149,7 @@ for (const lesson of lessons) {
   const topics = topicsFor(markdown, lesson.subject);
   const lessonWords = markdown.split(/\s+/).filter(Boolean).length;
   totalWords += lessonWords;
-  lessonStats.push({ course: lesson.courseId, id: lesson.assignmentId, words: lessonWords, templated: null });
+  lessonStats.push({ course: lesson.courseId, id: lesson.assignmentId, words: lessonWords, pages: estimatePages(markdown) });
   for (const line of markdown.split("\n")) {
     if (!isProse(line)) continue;
     const normalized = normalizeParagraph(line.trim(), topics);
@@ -139,7 +162,10 @@ for (const lesson of lessons) {
    comparable to a college textbook - RE 303 puts that at roughly 450 pages per course.
    Across 15 lesson assignments that is about 30 pages, or roughly 8,000 words, each.
    The target is reported per lesson so the rebuild's progress is measurable. */
-const WORD_TARGET = 8000;
+/* RE 303: "approximately 450 pages of text/instructional material is equivalent to
+   textbooks offered by a California college or university" for a 45-hour course. Across
+   15 lesson assignments that is 30 pages each. */
+const PAGE_TARGET = 30;
 
 /* 3: substance. Distinct paragraphs are the honest measure of how much was written;
    word count only measures how many times the template was stamped out. */
@@ -243,9 +269,14 @@ out.push(`  words across all lessons ....... ${report.substance.words.toLocaleSt
 out.push(`  body paragraphs ............... ${report.substance.paragraphs.toLocaleString("en-US")}`);
 out.push(`  distinct paragraphs ........... ${report.substance.distinctParagraphs}`);
 out.push(`  templated share ............... ${(report.substance.templatedShare * 100).toFixed(1)}%`);
-out.push(`  per-lesson word target ........ ${WORD_TARGET.toLocaleString("en-US")} (RE 303: ~450 pages per 45-hour course)`);
-const shortLessons = lessonStats.filter((lesson) => lesson.words < WORD_TARGET);
-out.push(`  lessons under target .......... ${shortLessons.length} of ${lessonStats.length}`);
+out.push(`  estimated pages, all lessons .. ${Math.round(lessonStats.reduce((sum, lesson) => sum + lesson.pages, 0))}`);
+out.push(`  per-course target ............. 450 pages (RE 303) = ${PAGE_TARGET} per lesson assignment`);
+for (const courseId of engine.CALIFORNIA_COURSE_IDS) {
+  const inCourse = lessonStats.filter((lesson) => lesson.course === courseId);
+  const pages = inCourse.reduce((sum, lesson) => sum + lesson.pages, 0);
+  const short = inCourse.filter((lesson) => lesson.pages < PAGE_TARGET).length;
+  out.push(`    ${courseId.padEnd(38)} ~${String(Math.round(pages)).padStart(3)} pages, ${short}/${inCourse.length} lessons under target`);
+}
 for (const template of report.substance.worstTemplates) out.push(`    ${String(template.count).padStart(3)}x  ${template.preview}...`);
 out.push("");
 out.push("Assessment integrity");
