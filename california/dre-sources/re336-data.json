@@ -1,12 +1,14 @@
 {
-  "_note": "Input for scripts/fill-re336.mjs. Values are the applicant's own identifying data, taken from the instructor qualification package. VERIFY legalName against the California Secretary of State registration before filing - RE 306 and RE 336 must carry the exact registered entity name. sponsorId stays empty until DRE assigns one.",
+  "_note": "Input for scripts/fill-re336.mjs. legalName is the entity's exact registered name as filed with the Wyoming Secretary of State on 2026-08-16 (Certificate of Organization, lowercase as filed). If the entity registers in California under an alternate name, or adopts a DBA, update this and regenerate. sponsorId stays empty until DRE assigns one.",
   "provider": {
-    "legalName": "StateCourse LLC",
+    "legalName": "state course LLC",
     "sponsorId": "",
     "street": "407 N Pacific Coast Highway, Unit 1028",
     "city": "Redondo Beach",
     "state": "CA",
-    "zip": "90277"
+    "zip": "90277",
+    "formationState": "WY",
+    "formationDate": "2026-08-16"
   },
   "primaryContact": {
     "name": "Kanevsky, Anatoliy",

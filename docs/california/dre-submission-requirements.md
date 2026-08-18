@@ -46,9 +46,9 @@ A **separate** application, fee, and full package is required for each of the th
 | --- | --- | --- | --- |
 | 1 | Course Approval Application (RE 306) | **Not started** | Form in hand; 85 fillable fields; 23 numbered items. |
 | 2 | Course offering fee | **Blocked** | Amount is in **RE 206E**, which we do not have. |
-| 3 | Corporation documents | **Not started** | StateCourse LLC needs a Certificate of Good Standing / Qualification / Registration from the CA Secretary of State, and must stay in good standing throughout any approval term. |
-| 4 | Fictitious Business Name Statement | **Open question** | Required if operating under a DBA. If the LLC name differs from "StateCourse," an FBNS filed with the county recorder is required. |
-| 5 | Consent to Service of Process (RE 304) | **Not applicable** | Out-of-state applicants only. |
+| 3 | Corporation documents | **Blocked — see §2a** | The entity is a **Wyoming** LLC. RE 303 requires a document issued by the **California** Secretary of State; the Wyoming Certificate of Organization does not satisfy it. |
+| 4 | Fictitious Business Name Statement | **Required — see §2a** | The registered name is `state course LLC`; the platform trades as "StateCourse". That gap needs an FBNS. |
+| 5 | Consent to Service of Process (RE 304) | **Likely required — see §2a** | RE 303 ties RE 304 to non-resident applicants and to evidence of California qualification. A Wyoming entity not yet registered in California engages both. |
 | 6 | Copies of all student instructional materials | **Not ready** | See §3 — this is the critical gap. **Printed** copies must be mailed; digital media cannot be accessed by DRE. |
 | 7 | Copyright authorization | **Not applicable if content stays original** | Required only for third-party copyrighted material. |
 | 8 | Instructor Certification (RE 336) + substantiation | **Not started** | Form in hand. One form per instructor, and the form names a single course title, so three are needed. See §5. |
@@ -67,6 +67,49 @@ repeating the same potential deficiencies on subsequent applications." The plan 
 simultaneous RE 306 packages runs against the Department's own advice. Filing one course first — and
 absorbing its correction round — is likely to be faster overall than correcting the same deficiency
 three times.
+
+## 2a. The entity is a Wyoming LLC, and that blocks three checklist items
+
+The Articles of Organization filed on August 16, 2026 establish the sponsor as a **Wyoming** limited
+liability company, registered agent in Sheridan, Wyoming, with its principal office in Redondo Beach,
+California. Its exact registered name is **`state course LLC`**, filed in lowercase.
+
+RE 303 item 3 is specific about what a company must produce:
+
+> A Company or Partnership (whether Domestic or Foreign) shall submit one of the following documents,
+> **issued by the California Secretary of State**: Certificate of Qualification, Certificate of
+> Registration, or Certificate of Good Standing.
+
+The Wyoming Certificate of Organization is not one of those. RE 306 page 1 and RE 303 both also require
+the sponsor to "maintain good legal standing with the California Secretary of State during any term of
+course approval," which a foreign entity can only do once it has registered here. RE 303 item 5 adds that
+a non-resident applicant must file a Consent to Service of Process (RE 304) "along with evidence that the
+entity as permitted by the California Secretary of State is qualified to transact interstate business in
+the state of California."
+
+Three consequences, in order of urgency:
+
+1. **Register the LLC in California as a foreign LLC** with the California Secretary of State, and obtain
+   the resulting certificate. This is a prerequisite to checklist item 3 and probably to item 5, and it
+   has its own processing time. It is also independently required of an entity whose principal office is
+   in California and which will transact business here — this is not only a DRE requirement.
+2. **Resolve the name.** Every form must carry the exact registered name. `state course LLC` is what is
+   filed; the site, the domain, and the course materials all say "StateCourse." If California registration
+   requires an alternate name because `state course LLC` is unavailable here, the alternate name becomes
+   the operative one. Either way, trading publicly as "StateCourse" while registered as `state course LLC`
+   points to a Fictitious Business Name Statement (RE 306 item 10 asks for it and requires a copy of the
+   filed FBNS).
+3. **Decide the RE 304 question** with counsel. Whether the applicant is a "non-resident" for RE 303's
+   purposes when it is a Wyoming entity with a California principal office is not something to guess at,
+   and the answer determines whether another form joins the package.
+
+The RE 336 forms generated in `california/dre-sources/generated/` use `state course LLC` because that is
+what is registered today. If the California registration produces a different operative name, update
+`re336-data.json` and regenerate before signing.
+
+**Not needed for the package:** the IRS EIN assignment notice (CP 575) is not on the RE 303 checklist and
+is not required by RE 306. It is deliberately not committed to this repository — an EIN in version control
+is a durable exposure with no offsetting benefit, and the DRE package does not ask for it.
 
 ## 3. The critical gap: content equivalence and who certifies it
 
@@ -217,7 +260,7 @@ Ordered by lead time rather than by checklist position.
 4. **Resolve the BPPE approval-or-exemption question**, since evidence of it must accompany the
    application.
 5. **Confirm the instructor's degree** to determine which RE 336 qualification path applies.
-6. **Obtain the Secretary of State standing document** for the LLC, and an FBNS if a DBA is used.
+6. **Register the Wyoming LLC in California** and obtain the California Secretary of State certificate, then file an FBNS if the public name differs from the registered name (see §2a).
 7. **Decide whether to file one course first**, per the Department's own recommendation.
 
 ## 10. Engine work this analysis adds
