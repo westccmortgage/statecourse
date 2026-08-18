@@ -76,6 +76,34 @@ A recurring error is to treat "I don't represent them" as meaning "I owe them no
 
 The distinction is not between duty and no duty. It is between *whose interests you advance* and *how honestly you deal with everyone*.
 
+### 1.6 The accidental client
+
+Section 1.2 established that agency can arise from conduct. That sentence deserves more weight than it usually gets, because **the most common agency problem in practice is not a wrong election. It is a relationship nobody meant to create.**
+
+Consider what a licensee does with an unrepresented buyer at an open house who begins asking real questions:
+
+| What the licensee does | How it reads to the visitor |
+|---|---|
+| Answers questions about the property's condition and history | Ordinary, and expected of a listing agent |
+| Explains what the seller is likely to accept | **Advice**, given on the visitor's behalf against the seller's interest |
+| Suggests an offer strategy | **Advice**, and the visitor now believes he has an advisor |
+| Says "let's write it up and I'll take care of you" | A representation that the licensee is acting for him |
+| Recommends a lender and an inspector | The service pattern of a buyer's agent |
+
+**The first row is the listing agent doing her job. The rest are not**, and the visitor cannot be expected to know where the line falls, because from his side of the conversation the whole exchange looked the same.
+
+**Three consequences follow.**
+
+**First, the visitor may become a client by conduct**, which — in a transaction where the licensee already represents the seller — creates a dual agency that neither party consented to and that no one intended.
+
+**Second, if he does not become a client, he may still reasonably believe he is one**, and a belief the licensee's conduct created is a belief the licensee is answerable for.
+
+**Third, the seller's interests were damaged in either case**, because "here is what the seller will probably take" is confidential negotiating information disclosed to the party negotiating against him.
+
+**The correction is a sentence, said early and without ceremony:** "I represent the seller in this transaction. I'm glad to tell you anything about the property, and if you want someone advising you, I can explain how that works." The sentence is not adversarial and it does not cost the licensee the transaction. **What costs the licensee the transaction is saying it after the offer is written.**
+
+> **The test that resolves most of these:** if the visitor repeated your last statement to the seller, would the seller be comfortable? If not, you have begun acting for the wrong party.
+
 ## 2. California disclosure sequence
 
 ### 2.1 Three steps: disclose, elect, confirm
@@ -122,6 +150,34 @@ Placed in the wider transaction, the compliance order runs:
 
 Every common sequencing error puts a decision before the information meant to inform it: signing the listing before the agency disclosure, removing contingencies before the disclosures arrive, confirming agency only at closing.
 
+### 2.5 The sequence, worked three ways
+
+The three steps are the same in every transaction. **What changes is when each one arrives**, and the timing is what a file audit examines.
+
+> **Transaction A — the listing side.**
+>
+> A licensee meets a homeowner considering selling. **The disclosure comes first**, before the listing agreement is presented, because the homeowner is about to commit to a relationship and must know what the relationship is. The election follows in the listing agreement itself. **The confirmation comes later**, when an offer produces a purchase agreement.
+>
+> **The dates run: disclosure, then agreement, then confirmation.** A file in which the listing agreement predates the disclosure has the seller committing before being informed, and Section 6.2 ranks that failure for a reason.
+
+> **Transaction B — the buyer side.**
+>
+> A licensee begins working with a buyer. **The disclosure comes at the outset of the working relationship**, not at the first showing that produces an offer — because by the time an offer exists, weeks of advice have already been given.
+>
+> The election follows, in the representation agreement where one is used. **The confirmation arrives with the purchase agreement**, and it must agree with the election.
+>
+> **The failure here is subtler than in Transaction A.** The buyer file often contains a confirmation and no early disclosure at all, because nothing forced the conversation. The transaction proceeded, the confirmation was signed, and the file shows a relationship that was disclosed on the day it was already three weeks old.
+
+> **Transaction C — presenting an offer to a listing brokerage.**
+>
+> A licensee representing a buyer delivers an offer to the listing agent. **The disclosure obligation runs to the seller too**, and it attaches to the presentation of the offer rather than to some later moment.
+>
+> This is the step most often missed, because the licensee is thinking about his own client. The seller is entitled to know, before considering the offer, who the person delivering it represents.
+
+**The pattern across all three:** the disclosure attaches to **the beginning of the relationship or the moment of contact with the other party**, the election attaches to **the agreement**, and the confirmation attaches to **the purchase agreement.** A file whose dates do not run in that order is telling you something happened out of sequence, and Section 6.3 explains why that is worth knowing while the transaction can still respond.
+
+> **One further point about delivery.** Each step is evidenced by delivery rather than by the existence of a signed page. A disclosure signed on the day of closing, whatever date is written on it, was not delivered at the beginning of the relationship — and the file's other documents will say so.
+
 ## 3. Fiduciary duties in practice
 
 ### 3.1 The duties, and what each one actually prohibits
@@ -166,6 +222,56 @@ Three responses that do not work:
 
 Confidentiality generally continues after the agency ends. A former listing agent who knows the seller's lowest acceptable price may not use or disclose it afterward — including for a new client, and including after the listing expires and the property is relisted elsewhere. A duty that evaporated when the engagement ended would not be worth having.
 
+### 3.5 Loyalty when your own interest appears
+
+Loyalty is easy to state and easy to satisfy in the ordinary case, because in the ordinary case the licensee's interest and the client's point the same way: the transaction closes, the client is served, the licensee is paid.
+
+**The duty does work only in the cases where they diverge**, and those cases are specific and recognizable.
+
+**Buying or selling for your own account.** A licensee who wants to buy his own listing, or to sell property he owns to a client, has an interest directly opposed to the principal's on the one term that matters most. The disclosure obligation here is heightened rather than ordinary — the principal must know the licensee is a principal, not merely an agent, and the fact that a price is fair does not substitute for the disclosure.
+
+**A relative in the transaction.** The analysis does not change because the interest belongs to a family member rather than to the licensee. A licensee whose sibling is the buyer has an interest, and the seller is entitled to know it.
+
+**The offer that pays you more.** Two offers arrive. One is better for the seller. One produces a larger commission for the licensee. **The duty is not to disclose the conflict and then advocate for the second — it is to advise on the merits of both from the seller's position**, and to present both regardless.
+
+**The transaction that ends your income.** A buyer client is deciding whether to continue renting for another year. A seller client is deciding whether to take the property off the market. **In both cases the advice that serves the client costs the licensee everything**, and it is the advice the duty requires.
+
+**The referral you receive something for.** Covered in Section 5.2 as a conflict, and it is a loyalty question first: a recommendation the client believes is professional judgment, when it is partly economics, is a use of the client's trust for the licensee's benefit.
+
+> **The operative question is not "am I being honest?"** Most loyalty failures involve licensees who are being honest about everything except the fact that their interest is in the room.
+>
+> **The question is: does my principal know everything that could influence what I am about to tell him?** If not, disclose it before the advice, not after the decision.
+
+**And one structural point.** Loyalty is owed to the principal, and the principal is the brokerage's client rather than the individual licensee's. Where a licensee's personal interest conflicts with a client of his brokerage — including a client he has never met, worked by a colleague — **the conflict is real and the disclosure runs through the broker.**
+
+### 3.6 Reasonable care, and why it produces most claims
+
+Section 3.1 noted that reasonable care can be breached without any dishonesty. That observation deserves expansion, because **it describes the majority of what licensees are actually sued for.**
+
+Fraud requires intent and is comparatively rare. Negligence requires only that the work fell below the standard of a competent licensee, and it is produced by ordinary pressure applied to an ordinary practice.
+
+**What breaches it, in the order the claims arrive:**
+
+| The failure | How it happens |
+|---|---|
+| **A deadline missed** | Tracked in memory or in one person's calendar rather than in a system |
+| **A document not delivered** | Sent, assumed received, never confirmed |
+| **A disclosure prepared from an old file** | Copied forward, carrying facts about a different property |
+| **A condition observed and not mentioned** | Noticed in passing, deferred to "the inspector will catch it" |
+| **A referral made carelessly** | A vendor recommended because he is familiar, not because he is qualified for this |
+| **Advice given outside competence** | A legal, tax, structural, or environmental question answered rather than routed |
+| **A number stated from memory** | Square footage, lot size, tax amount, or fee quoted without verification |
+
+**Three of these deserve a specific note.**
+
+**"The inspector will catch it" is not a standard.** A licensee who observes a condition has an obligation about what he observed, and the possibility that another professional will independently find it does not discharge it.
+
+**Advice outside competence is the most tempting failure**, because the client asked, the licensee has an opinion, and saying "that is a question for your attorney" feels like a failure to help. It is not. **The competent answer to a legal question is the referral**, and the licensee who gives the legal answer has assumed responsibility for it.
+
+**Stated numbers become representations.** Square footage from a memory of the listing, a tax figure from last year, a fee "usually around" an amount — each is relied on, and each is the licensee's statement regardless of where it originated. **Verify or attribute: give the source, or do not give the number.**
+
+> **The protective habit is not caution. It is system.** Deadlines in a tracker, delivery confirmed and recorded, disclosures built from the current property, questions routed by category, and numbers sourced. Every item on that list is a procedure, and procedures survive a bad week in a way that carefulness does not.
+
 ## 4. Dual agency consent
 
 ### 4.1 What dual agency is
@@ -206,6 +312,23 @@ What the dual agent cannot do is advocate for one party against the other or mov
 ### 4.5 When to raise it
 
 The moment a possible dual agency becomes foreseeable — typically when a buyer the brokerage is working with becomes interested in a property the brokerage has listed. Raising it at the point an offer is written is late, because both parties have already invested effort under an assumption that may be wrong.
+
+### 4.6 Why the brokerage is the agent, and what follows
+
+Section 4.1 stated that agency belongs to the brokerage. Almost every practical dual agency problem follows from that one fact, and it is worth working out.
+
+**What follows immediately:**
+
+- **Two salespersons in the same office on opposite sides of one transaction produce a dual agency**, even if they have never spoken about the file and work from different locations.
+- **A licensee can create a dual agency without knowing it**, because he does not know every listing his brokerage holds or every buyer his colleagues work with.
+- **The consent required is the brokerage's to obtain**, from both parties, and it cannot be given by one salesperson on behalf of a client he does not represent.
+- **Confidential information held by one salesperson is held by the brokerage**, which is why the internal separation of the two sides matters and why a casual conversation between colleagues about "what their buyer will really pay" is a breach rather than office chatter.
+
+**The practical control is a check, performed early:** before showing a brokerage-held listing to a buyer the brokerage works with, determine that it is a brokerage-held listing and raise the consent question then. Section 4.5 fixes the timing — the moment it becomes foreseeable — and the check is what makes that timing achievable in a brokerage large enough that no one person knows the whole inventory.
+
+**Where a brokerage uses a designated or assigned arrangement**, in which different salespersons are designated to each party, the arrangement's mechanics and what it does and does not change are **matters of the brokerage's written policy and of law**, and they are questions for the responsible broker rather than for the individual licensee's judgment. **What does not change under any arrangement** is that the consent must be informed, in writing, from both parties, and obtained before the brokerage acts on both sides.
+
+> **The failure to watch for:** a licensee who learns of the dual agency at the offer stage, obtains consent then, and treats the file as cured. The consent is dated after weeks of advice given to both parties by one firm. **Consent obtained after the conduct it was supposed to authorize is a record of the problem, not a resolution of it.**
 
 ## 5. Compensation and conflicts
 
@@ -253,6 +376,29 @@ An agency may end by completion of its purpose, expiration of its term, mutual a
 
 Because the listing is the brokerage's contract, a request to cancel is a broker-level decision, not one the individual licensee makes.
 
+### 5.6 The vendor relationship, in practice
+
+Section 5.2 lists referral fees among the conflicts requiring disclosure. In daily practice this is less a rule than a habit of mind, because a working licensee accumulates vendor relationships constantly and most of them are entirely proper.
+
+**The relationships, sorted by what they require:**
+
+| The relationship | What it requires |
+|---|---|
+| A vendor you use because he is good, with no arrangement | Nothing beyond ordinary care in recommending someone competent for this work |
+| A vendor who refers business to you | **Disclosure** — the exchange runs both ways and the client cannot see it |
+| A vendor who pays you a referral fee | **Disclosure before the recommendation**, and the arrangement must itself be lawful |
+| A vendor in which you or a relative hold an interest | **Disclosure**, and the interest stated plainly rather than implied |
+| A vendor who provides you marketing support, event sponsorship, or materials | **Disclosure** — value received is value received, and its form does not change the analysis |
+| A vendor your brokerage owns or is affiliated with | **Disclosure on the terms the affiliated-business framework requires** |
+
+**Two boundaries are worth stating explicitly.**
+
+**First, whether a payment may be received at all is a separate question from whether it is disclosed.** Some payments are prohibited outright, and disclosing a prohibited payment does not make it lawful. A licensee who asks only "did I disclose it?" has asked the second question without asking the first.
+
+**Second, a recommendation carries an implied representation of competence.** A client who is told "use this inspector" hears that the licensee believes the inspector is good at inspecting. Recommending a vendor the licensee has never evaluated, because the vendor is convenient or generous, is a reasonable-care problem independent of any conflict.
+
+**The practice that handles all of it:** offer more than one name where you can, state what you receive if you receive anything, say what your basis for the recommendation is, and record that you did. **Three names and a sentence about your relationship with each takes thirty seconds and removes the entire category from a later dispute.**
+
 ## 6. Agency documentation case
 
 ### 6.1 What the file must show
@@ -287,7 +433,56 @@ Agency is the area where documentation most often fails, because the documents l
 
 Date everything at the moment it happens, evidence delivery rather than relying on signature alone, and check the agency chain — disclosure, agreement, election, confirmation — as a sequence rather than as a set of documents. If the dates do not run in order, something happened out of order, and that is worth knowing while the transaction can still respond.
 
-### 6.4 Checkpoint
+### 6.4 A second worked audit — the buyer side
+
+Section 6.2 audited a listing file. Buyer files fail differently, because nothing in a buyer relationship forces the paperwork the way a listing agreement does.
+
+> **A closed buyer-side file contains:**
+>
+> - **(a)** An agency disclosure signed by the buyer, **dated the same day as the purchase agreement.** The file's earliest email to the buyer is dated five weeks earlier and reads "here are three properties I think fit what you described."
+> - **(b)** **No buyer representation agreement** of any kind.
+> - **(c)** A confirmation in the purchase agreement naming the licensee as the buyer's agent.
+> - **(d)** An email from the licensee to the buyer stating "I spoke with the listing agent and I think they'd take 715 — let's come in at 705 and see."
+> - **(e)** A home warranty referral, with no disclosure of the referral fee the file's commission statement later shows was received.
+> - **(f)** No record of any disclosure delivered to the **seller** when the offer was presented.
+>
+> **Ranked by seriousness:**
+>
+> **1. (e) The undisclosed referral fee.** A payment received in connection with a recommendation the client relied on, disclosed nowhere. It is a conflict failure and a loyalty failure at once, and unlike the timing defects below it involves money moving without the client's knowledge.
+>
+> **2. (a) The five-week gap.** The disclosure exists and is dated the day the buyer's decision was already made. Five weeks of advice preceded it. The document is present; **the protection it was designed to give never operated**, and item (d) proves advice was being given throughout.
+>
+> **3. (f) No disclosure to the seller.** Section 2.5 established that the obligation attaches to the presentation of the offer. Its absence means the seller evaluated an offer without knowing who the person delivering it represented.
+>
+> **4. (d) The disclosure of the seller's position.** Read carefully: the licensee is reporting what the **listing agent** told him about what the seller would take. If that information was volunteered in breach of the listing agent's confidentiality duty, the failure is primarily the listing agent's — but a buyer's agent who solicits it is participating, and the file now documents the conversation. **This is escalated to the broker rather than resolved by the licensee.**
+>
+> **5. (b) No representation agreement.** The relationship was created by conduct, as Section 1.6 describes, and the file's only evidence of its terms is a confirmation signed at the end.
+>
+> **6. (c) is not a finding.** The confirmation is correct and consistent. It is listed to make the point that **a file can contain an accurate document and still fail**, because the question is never whether a document is right but whether the decision it governed had it in time.
+>
+> **What happens now.** Record every finding with its date. Escalate the referral fee and item (d) to the broker immediately — the first because money must be accounted for, the second because it describes conduct by another licensee. Determine whether the referral fee can still be disclosed and addressed with the buyer, which is a broker and counsel question rather than a licensee one. **Change the intake procedure**, because items (a), (b), and (f) are not this licensee's carelessness — they are a brokerage with no step that forces buyer-side paperwork at the beginning.
+>
+> **What must not happen:** re-dating the disclosure to the first email, producing a representation agreement now, or adding a seller disclosure to the file today. Section 6.2's closing sentence governs both audits. **A documented gap is survivable; a manufactured document is falsification.**
+
+### 6.5 The agency chain, in one page
+
+Everything in this lesson reduces to a chain of five links, each of which has a date, and each of which must precede the decision it was meant to inform.
+
+1. **Disclosure** — delivered at the beginning of the relationship, and to the other party at the moment of contact. **Before the client commits to anything.**
+2. **Election** — the relationship chosen, recorded in the agreement.
+3. **Agreement** — the listing or representation contract, dated **after** the disclosure.
+4. **Consent**, where the brokerage acts on both sides — informed, written, from both parties, dated **before** the brokerage acted on both sides.
+5. **Confirmation** — in or with the purchase agreement, and **consistent with links 1 through 4.**
+
+**Around the chain sit two continuing obligations** that are not dated events and are therefore the easiest to forget: **conflict disclosures**, each delivered before the client acts on the advice it affects, and **delivery evidence** for every link, because a signature proves execution and not receipt.
+
+> **The audit question for each link:** what is its date, what decision did it precede, and can the file show it arrived?
+>
+> **Three answers indicate a defect.** A link with no date. A link dated after the decision it governed. A link the file can show was signed but cannot show was delivered.
+
+**Run the chain forward once at intake and once at close-out.** At intake it prevents the problem; at close-out it finds it while the other participants still answer the phone.
+
+### 6.6 Checkpoint
 
 You should be able to take a file's agency documents, put them in date order, and say whether each decision was made with the information it required.
 
