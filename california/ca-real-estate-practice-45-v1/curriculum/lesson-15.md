@@ -2,290 +2,299 @@
 
 ## Integrated California residential transaction
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze intake and agency using verified facts, current authority, and a documented professional workflow.
-- Analyze listing and marketing using verified facts, current authority, and a documented professional workflow.
-- Analyze offer and negotiation using verified facts, current authority, and a documented professional workflow.
-- Analyze disclosure and investigation using verified facts, current authority, and a documented professional workflow.
-- Analyze escrow finance and closing using verified facts, current authority, and a documented professional workflow.
-- Analyze complete file compliance audit using verified facts, current authority, and a documented professional workflow.
+- Sequence a complete California residential transaction and explain why each step precedes the next.
+- Carry a single transaction from intake through closing, identifying the obligation engaged at each stage.
+- Recognize, at each stage, the failure that most commonly occurs there and the control that prevents it.
+- Audit a completed file and rank its defects by seriousness rather than listing them.
+- Distinguish a documented gap from a falsified record, and state the correct response to each.
+- Apply the course's recurring principles — whose decision, whose duty, what evidence — to an unfamiliar situation.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: transaction chronology and the listing side | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: offer through investigation | 50 | Sections 3-4 viewed |
+| Guided reading: closing and complete file audit | 45 | Sections 5-6 viewed |
+| Applied scenario: full transaction audit | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. intake and agency
+## 1. Intake and agency
 
-### 1.1 Concept and purpose
+### 1.1 The chronology, and why it is a chronology
 
-intake and agency is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Integrated California residential transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+A residential transaction is a sequence in which **each step supplies the information the next step requires**. That is the organizing principle of this lesson, and it is the test to apply when you are unsure whether something is in the right order:
 
-### 1.2 Essential elements
+> Does this decision have, in front of it, the information it was meant to be made with?
 
-The essential elements of intake and agency are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Every common sequencing error is a decision made before its information arrived.
 
-### 1.3 Roles and duties
+| # | Step | Supplies |
+|---:|---|---|
+| 1 | Agency disclosure | The consumer's understanding of the relationship |
+| 2 | Listing or representation agreement | Authority to act, and its terms |
+| 3 | Pricing analysis and advice | The basis for the client's price decision |
+| 4 | Seller disclosure preparation | The material facts, before pressure exists |
+| 5 | Marketing | Exposure, on compliant copy |
+| 6 | Offer and negotiation | The terms |
+| 7 | Acceptance | The contract, and the deadline clock |
+| 8 | Disclosure delivery | What the buyer needs before committing |
+| 9 | Investigation | What the buyer needs before removing contingencies |
+| 10 | Contingency removal | The buyer's commitment, informed |
+| 11 | Loan and appraisal | The financing |
+| 12 | Final verification | Condition confirmed while leverage exists |
+| 13 | Signing, funding, recording, disbursement | The transfer |
+| 14 | Possession | Control |
+| 15 | Audit and retention | The record |
 
-Responsibility for intake and agency may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 1.2 The intake questions that determine everything after
 
-### 1.4 Workflow
+**Authority.** Who can convey? Confirmed against title and the governing instrument — not assumed from occupancy or the tax roll. Trust means the trustee within the trust's authority; entity means the person the governing documents authorize; probate means what the appointment permits; co-owners means all of them.
 
-A defensible workflow for intake and agency starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+**Subject matter.** The legal description, the boundaries, and what conveys — with disputable items named in the agreement so the fixture tests never need to be applied.
 
-### 1.5 Documents and evidence
+**Constraints.** Loans and liens, association obligations, leases and occupants, easements and encroachments, known conditions and repair history, permit status, and any pending matter affecting the ability to convey.
 
-Documents connected with intake and agency must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 1.3 The agency sequence
 
-### 1.6 Quantitative and factual analysis
+Disclose, elect, confirm — at three different times:
 
-Where intake and agency involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+| Role | Disclosure timing |
+|---|---|
+| Seller's agent | **Before the listing agreement is signed** |
+| Buyer's agent | **As soon as practicable before the buyer signs an offer** |
+| Agent presenting an offer to the seller | **Before or at the time the offer is presented** |
 
-### 1.7 California law and professional boundary
+Each is the same principle: the disclosure precedes the decision it informs.
 
-California law controls the licensed activity associated with intake and agency; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+Where the brokerage will act on both sides, informed written consent from **both** parties is required, and it must precede the brokerage acting on both sides — not follow it.
 
-### 1.8 Consumer protection and fair access
+### 1.4 The failure that occurs here
 
-Consumer protection requires that intake and agency be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**The most common intake failure is unverified authority**, and it is expensive because it surfaces in escrow. A listing signed by one of two co-owners, by a beneficiary rather than the trustee, or by a person whose power of attorney does not authorize real property conveyance cannot deliver what it promises.
 
-### 1.9 Applied scenario
+**The control:** verify against a source at intake, and stop and escalate where authority is unclear rather than postponing the question.
 
-Scenario: during integrated california residential transaction, the file raises a question about intake and agency. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+## 2. Listing and marketing
 
-### 1.10 Decision checklist
+### 2.1 The agreement
 
-Before treating intake and agency as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+The listing is the brokerage's contract with the seller. The licensee should be able to explain every operative provision, and three deserve particular care:
 
-## 2. listing and marketing
+- **Compensation** is negotiable between the seller and the brokerage. Not standard, not set by any association or listing service.
+- **The definite termination date** protects the seller from an indefinite engagement.
+- **The protection clause** applies on its terms, ordinarily to buyers identified to the seller within a defined period after the term.
 
-### 2.1 Concept and purpose
+### 2.2 Pricing
 
-listing and marketing is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Integrated California residential transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+The analysis and the advice are the licensee's obligation; the price is the seller's decision. Both halves.
 
-### 2.2 Essential elements
+The file should show the comparables used with their sources as of the date, the adjustment grid with the direction and basis of each adjustment, the reconciliation and its weighting, the comparables rejected and why, the market conditions evidence, the recommendation as a range with a most-probable point, and the written advice with the seller's decision.
 
-The essential elements of listing and marketing are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Where the seller lists above the supported range, the file must show that the decision was informed — and must **not** adopt the seller's reasoning as the brokerage's opinion of value.
 
-### 2.3 Roles and duties
+### 2.3 Disclosures start now, not at offer
 
-Responsibility for listing and marketing may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+The disclosure work belongs at the listing appointment. A seller who wants to defer it until an offer arrives is asking for the arrangement most likely to cost them: compressed buyer review, pressure at the worst moment, and the disputes that follow from pressure.
 
-### 2.4 Workflow
+Separate the categories openly: price, showing schedule, and cancellation terms are negotiable; disclosure obligations are not.
 
-A defensible workflow for listing and marketing starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 2.4 Marketing
 
-### 2.5 Documents and evidence
+Truthful against the property's **current** condition. Every factual claim traceable to a source, with the source stated where it is the seller. Licensee and brokerage identification present and legible, including on each social post rather than only in the profile. Copy that describes the property rather than the people who should live in it — and audience targeting examined as part of the advertisement.
 
-Documents connected with listing and marketing must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Approval before publication, and an archive of what ran, where, when, and with whose approval.
 
-### 2.6 Quantitative and factual analysis
+### 2.5 The failure that occurs here
 
-Where listing and marketing involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+**Late disclosure preparation**, and **advertising that runs without approval or without identification**. Both are invisible until they are not.
 
-### 2.7 California law and professional boundary
+**The control:** disclosure work scheduled at listing, and an approval process fast enough that licensees do not route around it.
 
-California law controls the licensed activity associated with listing and marketing; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+## 3. Offer and negotiation
 
-### 2.8 Consumer protection and fair access
+### 3.1 Formation
 
-Consumer protection requires that listing and marketing be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+An acceptance must match the offer. Any change to a material term is a counteroffer, which **rejects** the original and substitutes a new one — the original is gone, not suspended. This is true of a handwritten change on a signed counteroffer as much as of a formal document.
 
-### 2.9 Applied scenario
+An offer may generally be revoked before acceptance even where it states a deadline, unless supported by consideration as an option.
 
-Scenario: during integrated california residential transaction, the file raises a question about listing and marketing. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 3.2 Multiple offers
 
-### 2.10 Decision checklist
+The seller chooses; there is no obligation to take the highest and no priority by order of receipt. Whether competing terms are disclosed is the seller's decision.
 
-Before treating listing and marketing as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+The line to hold: **declining to disclose competing terms is permissible; inventing them is a misrepresentation.** A client's instruction cannot authorize the second.
 
-## 3. offer and negotiation
+Where multiple counteroffers go out, the seller needs the protection of a final election, or the seller may be exposed on more than one acceptance.
 
-### 3.1 Concept and purpose
+### 3.3 Terms are the client's; advice is the licensee's
 
-offer and negotiation is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Integrated California residential transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+For a buyer waiving contingencies, a seller weighing a credit-heavy offer, or either party considering an escalation clause: explain in writing what the term does and what it exposes them to, then follow the informed decision.
 
-### 3.2 Essential elements
+Both failure modes are wrong — refusing to write what the client instructs overstates the licensee's role; writing it without comment abandons the advisory duty.
 
-The essential elements of offer and negotiation are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 3.4 The failure that occurs here
 
-### 3.3 Roles and duties
+**Misrepresenting competing offers**, and **failing to document that a waiver was informed.**
 
-Responsibility for offer and negotiation may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**The control:** never describe an offer that does not exist, and put the consequences of a waiver in writing before the client decides.
 
-### 3.4 Workflow
+## 4. Disclosure and investigation
 
-A defensible workflow for offer and negotiation starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 4.1 Two independent duties
 
-### 3.5 Documents and evidence
+The **seller** discloses known material facts. The **licensee** conducts a reasonably competent visual inspection of accessible areas and discloses what it reveals. Neither discharges the other, and a professional inspection discharges neither.
 
-Documents connected with offer and negotiation must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Record observations as observations. "Brown staining approximately three feet across on the northwest bedroom ceiling; paint appears newer in that area" is what a licensee is qualified to state. "There was a roof leak that has been repaired" is an inference the licensee is not qualified to make and that the buyer may rely on.
 
-### 3.6 Quantitative and factual analysis
+### 4.2 Materiality
 
-Where offer and negotiation involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Measured by effect on a reasonable buyer's decision — not by the seller's view of importance, not by how often the condition appears, and not by whether the buyer could have seen it. A repaired condition is disclosed, because the adequacy of the repair is the question.
 
-### 3.7 California law and professional boundary
+Every item answered; "unknown" where uncertain; never "no" where the seller does not know; never completed by the licensee on the seller's behalf.
 
-California law controls the licensed activity associated with offer and negotiation; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 4.3 Delivery is where rights attach
 
-### 3.8 Consumer protection and fair access
+Content is half. **Delivery and its date is the other half**, because rights run from delivery.
 
-Consumer protection requires that offer and negotiation be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Where a disclosure arrives after contingencies were removed, the correct response is to raise it immediately rather than proceed as though the transaction were firm. Delivery before closing does not cure late delivery, and moving the closing date does not address the buyer's right to respond.
 
-### 3.9 Applied scenario
+### 4.4 Investigation
 
-Scenario: during integrated california residential transaction, the file raises a question about offer and negotiation. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Recommend investigation matched to the property, not recited generically. Confirm the buyer engaged with the report; do not interpret it. Where a finding exceeds the licensee's competence, disclose the observation, recommend the specialist, and document the recommendation and the buyer's response.
 
-### 3.10 Decision checklist
+Start the slow items first — insurance in mapped hazard areas, association documents, permit research — because a finding that arrives with two days left in the contingency period is a finding the buyer cannot act on.
 
-Before treating offer and negotiation as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.5 Contingency removal
 
-## 4. disclosure and investigation
+Under the standard California residential form, contingencies **remain in effect until removed in writing**. A passed date removes nothing. The seller's route is the contractual notice, which starts the period the contract specifies.
 
-### 4.1 Concept and purpose
+Read the contract's own mechanism rather than assuming deadlines are self-executing.
 
-disclosure and investigation is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Integrated California residential transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 4.6 The failure that occurs here
 
-### 4.2 Essential elements
+**Undated or missing delivery evidence**, and **assuming a passed date removed a contingency.**
 
-The essential elements of disclosure and investigation are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**The control:** evidence every delivery with its date, and build the deadline calendar from the contract's own terms.
 
-### 4.3 Roles and duties
+## 5. Escrow, finance, and closing
 
-Responsibility for disclosure and investigation may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 5.1 Escrow
 
-### 4.4 Workflow
+Neutral, acting only on **mutual** written instructions. It does not advise, does not decide disputes, and does not release funds because one party asserts entitlement. Where the parties disagree, escrow stops.
 
-A defensible workflow for disclosure and investigation starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Escrow's instructions implement the purchase agreement; where they conflict, the parties' agreement governs and the discrepancy is reconciled by the parties in writing.
 
-### 4.5 Documents and evidence
+### 5.2 Title
 
-Documents connected with disclosure and investigation must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+The preliminary report states the terms on which the insurer would insure, including exceptions. **An exception means the policy does not insure against that item** — which is why exceptions are read rather than skimmed, and why the underlying documents matter.
 
-### 4.6 Quantitative and factual analysis
+Vesting is a legal and tax question. Refer it to counsel **before escrow prepares the deed**.
 
-Where disclosure and investigation involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 5.3 Financing
 
-### 4.7 California law and professional boundary
+Lenders lend against the lower of appraised value and purchase price. A low appraisal is a financing event first: the buyer may bring funds, renegotiate, seek another resolution, or cancel if a contingency permits and its procedure is followed.
 
-California law controls the licensed activity associated with disclosure and investigation; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+Where the appraisal contingency has been removed, lay out the practical options, state that the removed contingency limits his contractual rights, and **recommend counsel before he decides to stop performing.**
 
-### 4.8 Consumer protection and fair access
+A credit is not a price reduction for appraisal purposes. Program limits constrain how large a credit can be.
 
-Consumer protection requires that disclosure and investigation be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Warn the buyer in writing at the start of escrow about the events that void a conditional approval — new credit, job changes, large unexplained deposits, moving funds — and about **wire fraud**, before any funds move.
 
-### 4.9 Applied scenario
+### 5.4 Closing
 
-Scenario: during integrated california residential transaction, the file raises a question about disclosure and investigation. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Signing, funding, recording, disbursement — four events, in that order. Recording establishes the interests of record and generally makes the buyer the owner of record; disbursement follows confirmation of recording. Recording **order** establishes lien priority.
 
-### 4.10 Decision checklist
+Possession transfers when the contract says, which may not be at recording. Any occupancy arrangement is documented with term, payment, condition, insurance, and a remedy for holdover.
 
-Before treating disclosure and investigation as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 5.5 The failure that occurs here
 
-## 5. escrow finance and closing
+**Changes made without a signed amendment.** A date change agreed by email between agents does not change the contract, and if the transaction fails the parties are litigating on the original terms with correspondence between non-parties as the evidence.
 
-### 5.1 Concept and purpose
+**The control:** every change to a term is a written amendment signed by both parties and delivered to escrow.
 
-escrow finance and closing is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Integrated California residential transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+## 6. Complete file compliance audit
 
-### 5.2 Essential elements
+### 6.1 The standard
 
-The essential elements of escrow finance and closing are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**Reconstructability:** could a person who was not there determine what happened, when, and on what basis?
 
-### 5.3 Roles and duties
+### 6.2 The audit sequence
 
-Responsibility for escrow finance and closing may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+1. **Completeness** — every required document present, including for the parts that did not go smoothly.
+2. **Dates** — everything dated; delivery evidenced where timing matters.
+3. **Consistency** — names, dates, amounts, and property descriptions reconcile.
+4. **Chronology** — the order makes sense against the contract and against the disclose-before-decide principle.
+5. **Nothing improper present** — no unexecuted draft mistaken for final, no superseded figure presented as current.
+6. **Retention** — filed where it will be found, for the required period.
 
-### 5.4 Workflow
+Keep superseded versions. The sequence of versions is frequently what shows when a term changed and who agreed — which is the question a dispute usually asks.
 
-A defensible workflow for escrow finance and closing starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 6.3 A worked audit, ranked
 
-### 5.5 Documents and evidence
+> A closed file contains:
+>
+> - **(a)** An agency disclosure signed and dated three days **after** the listing agreement.
+> - **(b)** A confirmation naming the brokerage as buyer's agent, while the listing file shows it as seller's agent, with **no dual agency consent** anywhere.
+> - **(c)** An email agreeing to move the closing date, with **no signed amendment**.
+> - **(d)** A contingency removal, signed but **undated**.
+> - **(e)** A transfer disclosure with **two items left blank**.
+> - **(f)** A referral fee disclosure dated the day of closing, for a warranty the buyer bought six weeks earlier.
+>
+> **Ranked by seriousness:**
+>
+> **1. (b) The undisclosed dual agency.** Different in kind from the others. It describes the brokerage acting on both sides without either party's consent — a breach of duties actually owed, not a documentation failure.
+>
+> **2. (d) The undated removal.** Rights ran from it and the file cannot show when. This is the defect a dispute is most likely to turn on.
+>
+> **3. (a) Disclosure after the agreement.** The seller committed before being informed. The document exists; the protection it was meant to give does not.
+>
+> **4. (f) Late conflict disclosure.** Delivered after the buyer acted, which is the one thing a conflict disclosure must not be.
+>
+> **5. (c) Unsigned date change.** The operative contract still says the original date.
+>
+> **6. (e) Blanks in the disclosure.** Ambiguous about whether the items were addressed.
+>
+> **The response:** record each finding, escalate to the broker, obtain what legitimately exists, and address the processes that produced them.
 
-Documents connected with escrow finance and closing must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 6.4 The line
 
-### 5.6 Quantitative and factual analysis
+> **What must not happen:** dating the removal now, completing the blanks now, producing an amendment now with a matching date, or creating the consent that was never obtained.
+>
+> A **documented gap** is a compliance problem a brokerage can survive.
+>
+> A **manufactured document** is falsification. It converts a defensible situation into a question about integrity, and it ends careers.
 
-Where escrow finance and closing involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Corrections are made visibly, with the original preserved and the change attributable. A record that can be silently altered is not a record.
 
-### 5.7 California law and professional boundary
+### 6.5 The course in four questions
 
-California law controls the licensed activity associated with escrow finance and closing; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+When you meet a situation this course did not cover, four questions will usually produce the right answer:
 
-### 5.8 Consumer protection and fair access
+1. **Whose decision is this?** Price, terms, and whether to proceed belong to the client. The analysis and the advice belong to you. Legal effect belongs to counsel.
+2. **Whose duty is engaged?** Fiduciary duties run to the principal; honesty, fair dealing, and disclosure of material facts run to everyone.
+3. **Does this decision have the information it requires?** If not, something is out of order.
+4. **What will the file show?** If the answer is "nothing," create the record now, while it is contemporaneous and true.
 
-Consumer protection requires that escrow finance and closing be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 6.6 Checkpoint
 
-### 5.9 Applied scenario
-
-Scenario: during integrated california residential transaction, the file raises a question about escrow finance and closing. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 5.10 Decision checklist
-
-Before treating escrow finance and closing as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
-
-## 6. complete file compliance audit
-
-### 6.1 Concept and purpose
-
-complete file compliance audit is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Integrated California residential transaction, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
-
-### 6.2 Essential elements
-
-The essential elements of complete file compliance audit are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
-
-### 6.3 Roles and duties
-
-Responsibility for complete file compliance audit may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
-
-### 6.4 Workflow
-
-A defensible workflow for complete file compliance audit starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
-
-### 6.5 Documents and evidence
-
-Documents connected with complete file compliance audit must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
-
-### 6.6 Quantitative and factual analysis
-
-Where complete file compliance audit involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
-
-### 6.7 California law and professional boundary
-
-California law controls the licensed activity associated with complete file compliance audit; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
-
-### 6.8 Consumer protection and fair access
-
-Consumer protection requires that complete file compliance audit be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
-
-### 6.9 Applied scenario
-
-Scenario: during integrated california residential transaction, the file raises a question about complete file compliance audit. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
-
-### 6.10 Decision checklist
-
-Before treating complete file compliance audit as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+You should be able to take an unfamiliar transaction problem, apply the four questions, and produce both the action and the record it requires.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a full transaction audit memorandum for the file presented with this assignment. Sequence the transaction's compliance events and identify any that occurred out of order; identify each defect and **rank** the defects by seriousness with your reasoning; state, for each, what may legitimately be obtained now and what may not be created; identify the process failure behind each rather than only the instance; and state what you would escalate. The instructor version contains the scoring rubric, including the ranking rationale.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied audit memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
