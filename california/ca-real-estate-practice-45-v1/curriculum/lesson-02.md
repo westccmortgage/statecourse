@@ -74,6 +74,46 @@ Rather than "twelve transactions this quarter," a defensible plan reads: *twelve
 
 That version can be evaluated, adjusted, and defended. The number by itself cannot.
 
+### 1.5 The revenue-timing problem
+
+Capacity planning answers how much work you can do. It does not answer the question that ends most new practices, which is **when the money arrives.**
+
+A transaction pays at closing. The work, the expenses, and the obligations begin long before that, and a purchase that opens in one month and closes two months later has consumed twelve weeks of a licensee's capacity before producing a dollar. **A plan built on annual income against annual expenses will balance on paper and fail in month five**, because the expenses are monthly and the income is lumpy.
+
+The honest version of the plan carries three additional lines:
+
+| Line | The question it answers |
+|---|---|
+| **Months of fixed costs held in reserve** | How long can the practice operate before the first closing pays? |
+| **Expected lag from first client contact to first closing** | Measured for your market and your price point, not assumed |
+| **What happens if the first two transactions fall out** | Which they may, for reasons having nothing to do with your work |
+
+**The failure this prevents is not financial. It is ethical.** A licensee who is out of money in month five is a licensee under pressure to close a transaction that should not close, to skip a disclosure conversation that would slow things down, or to accept a client whose situation he is not equipped to handle. Every enforcement matter involving a new licensee has a version of this pressure somewhere behind it.
+
+**Illustrative only — the figures are yours to determine:** a licensee who calculates fixed monthly costs of a given amount, an expected lag of ninety to one hundred twenty days from first contact to first closing, and a reserve covering three months, can see immediately that the reserve is short by the length of one transaction cycle. That is a solvable problem in month zero and an unsolvable one in month four.
+
+**The plan is revisited quarterly**, against what actually happened rather than what was projected. A plan that is never compared to results is a document, not a plan — and the comparison is most valuable in the quarters where the projection was wrong.
+
+### 1.6 A worked plan
+
+> **Facts.** A newly licensed salesperson intends to work resale residential in a market where the median price supports a typical side commission of roughly nine thousand dollars at his brokerage's split. He wants sixty thousand dollars in his first year. He writes: "Ten transactions. Eight hundred contacts. Two open houses a week."
+>
+> **What the plan does not say.**
+>
+> **Capacity.** He has not estimated the hours a transaction takes. Working backward from Section 1.1: a resale purchase in his market consumes client-facing time — showings, negotiation, walkthrough — plus compliance time that does not vary with the price of the house. Disclosure preparation, delivery and receipt tracking, deadline management, written confirmations, and file assembly are the same work on a modest condominium as on an estate. **The compliance hours are the ones his plan has silently valued at zero.**
+>
+> **Sequence.** Ten transactions in twelve months is not ten transactions spread evenly. Buyers cluster, escrows overlap, and two files closing in the same week consume the compliance time of both at once. **A plan that averages is a plan that has not asked what the worst week looks like.**
+>
+> **Cash.** Eight hundred contacts produce a first client at some point, and that client closes some weeks after that. Section 1.5 asks the question this plan does not: what does he live on until then, and what does he do if the first two files fall out?
+>
+> **Support.** He has assumed he does everything himself. That is a decision, not a default, and it is the decision that determines whether the tenth transaction is done to the same standard as the first.
+>
+> **The rewritten plan.**
+>
+> *Ten sides at roughly nine thousand net is ninety thousand gross against a sixty-thousand income requirement, leaving thirty thousand for costs. Each transaction requires an estimated client-facing block plus a compliance block; ten transactions therefore consume a total that, spread across my available weekly hours, leaves a specific number of prospecting hours. Two open houses weekly plus follow-up consumes most of them. The gap closes by engaging transaction coordination at a per-file cost, funded from the thirty thousand, which also carries errors and omissions coverage, continuing education, records storage, and a correction allowance. I hold three months of fixed costs in reserve against an expected ninety-to-one-hundred-twenty-day lag to first closing. I will compare this to actuals at the end of each quarter.*
+>
+> **The difference between the two versions is not optimism.** It is that the second one can be wrong in a way that is visible in time to fix, and the first one can only be wrong in a way that is discovered in month nine.
+
 ## 2. Prospecting and solicitation
 
 ### 2.1 Prospecting is lawful; solicitation is regulated
@@ -113,7 +153,25 @@ Local ordinances may regulate door-to-door solicitation, and some communities re
 
 Across every channel, one category of statement is uniformly prohibited: a representation that creates a false impression of urgency, endorsement, or authority. "The neighbors asked me to reach out." "Values in this area are about to drop." "I have a buyer for your house" — when no such buyer exists. Each is a misrepresentation, and prospecting pressure is not a defense.
 
-### 2.6 Checkpoint
+### 2.6 The record that makes a contact defensible
+
+Every rule in this section is proved or disproved by one thing: **what the file can show about where the contact came from and what the consumer agreed to.**
+
+A licensee who cannot answer "why was this person contacted, and on what basis" is in the same position regardless of whether the contact was lawful. The complaint is answered by the record or it is not answered.
+
+**What a defensible contact record contains:**
+
+1. **The source of the contact information** — the specific open house, the specific inquiry, the specific referral, with its date. "Purchased list" is a source, and it is the one that carries the licensee's own obligation to verify.
+2. **What the person was told when the information was collected** — the actual language of the sign-in sheet or the web form, retained as it appeared at that time.
+3. **The registry check**, where the channel requires one, with its date.
+4. **The exception relied on, if any**, and the date the relationship or inquiry that created it began — because **an exception has a duration, and a lapsed exception is not an exception.**
+5. **Every opt-out received**, with the date and the channel, honored across all channels rather than only the one it arrived through.
+
+**The sign-in sheet deserves a note of its own.** The version in the file must be the version the visitor actually signed. A brokerage that revises its sheet language and retains only the current version has destroyed the evidence for every contact collected under the prior wording — and the prior wording is precisely what a complaint about an older contact will turn on.
+
+> **The practical test:** hand your contact records to someone who was not present and ask them to determine, for any single contact, whether it was permissible. If they cannot, neither can a regulator, and the burden of the ambiguity does not fall on the consumer.
+
+### 2.7 Checkpoint
 
 You should be able to state, for a phone call, a text, and an email, what makes the contact permissible and where the consent or exception comes from.
 
@@ -153,6 +211,47 @@ Two office controls make advertising compliance real rather than aspirational.
 ### 3.5 Truthfulness beyond identification
 
 Identification is necessary and not sufficient. An advertisement must also be accurate about the property, and accuracy is measured at the time it runs. Square footage should trace to a source and the source should be stated. Features described must exist. Photographs must represent the property as it is. "Priced below market" is an opinion presented as fact unless it can be supported.
+
+### 3.6 Advertising where advertising actually happens
+
+The identification requirements were written for a world of signs, print, and mailers, and they apply without modification to every place a licensee now actually advertises. The difficulty is not that the rules are unclear. It is that these channels do not feel like advertising while you are using them.
+
+| Channel | Where licensees go wrong |
+|---|---|
+| **Social profile** | The profile itself is advertising. A bio naming the licensee and the service without the required identification is a defect on every post it appears above. |
+| **Short video** | Identification burned into a caption that the platform crops, or spoken so quickly it is not conveyed. **Presence is not the standard; conveyance is.** |
+| **Direct messages** | Feel like conversation, function as solicitation, and carry the same identification and consent obligations as any other channel. |
+| **Review and referral sites** | Profiles written by the platform from scraped data still advertise the licensee's services. **The obligation is the licensee's, not the platform's.** |
+| **Syndicated listings** | Content is reformatted by systems the licensee does not control, and identification can be stripped in the process. |
+| **Paid targeting** | Restricting who sees a housing advertisement is a fair housing question before it is a marketing one. |
+
+**Two habits close most of these gaps.**
+
+**First, the archive.** Capture what was actually published, as published, with its date — a screenshot of the post as it rendered, not the draft that was submitted. Platforms edit, crop, expire, and delete, and a licensee whose only record is the text he wrote cannot show what the consumer saw.
+
+**Second, the review point.** Advertising review that happens only for print and signage will never see the channels that produce the volume. **If approval is required, it is required for the medium where most of the advertising occurs**, and a policy that exempts social media in practice has exempted advertising in practice.
+
+> A licensee who would not put an unidentified sign in a yard should not put an unidentified video on a platform. The consumer's confusion is identical and so is the rule.
+
+### 3.7 A worked advertising review
+
+> **Submitted for approval:** a thirty-second video for a social platform. On screen: exterior and interior footage of a listing, the licensee on camera for the last eight seconds. Overlaid text reads "JUST LISTED — 3BR — $749,000 — DM me!" The caption below the video reads: "Another one! My clients LOVE this neighborhood — best schools in the area and values here are only going up. Serving the whole county. Call or text me anytime — Jordan." The licensee's profile bio reads "Jordan | Real Estate | Let's find your home."
+>
+> **The findings, in order of seriousness.**
+>
+> **1. No license identification anywhere.** Not in the video, not in the overlay, not in the caption, not in the bio. The video, the caption, and the profile are each advertising, and **none of them identifies the licensee as a licensee or names the brokerage.** This is the defect that appears in every channel in Section 3.6 and it is present here three times.
+>
+> **2. "Best schools in the area."** A statement about the composition and quality of a neighborhood, attached to a housing advertisement. **This is a fair housing problem before it is an accuracy problem** — school-quality claims are among the most common ways an advertisement conveys a preference about who a neighborhood is for. It comes out, and if the client's interest is in schools, the licensee directs the client to the district's own published information.
+>
+> **3. "Values here are only going up."** A prediction stated as a fact, in an advertisement, about the thing the consumer is being invited to spend money on. **It is not defensible in any market**, and it is the sentence a complaint quotes.
+>
+> **4. "Serving the whole county."** Only if true. A claim about service area is a representation, and one that is aspirational today is a misrepresentation today.
+>
+> **5. "DM me" and "text me anytime."** An invitation to contact is not consent to be contacted. The messages the licensee sends **after** a consumer responds are governed by Section 2.3, and an inbound direct message does not create standing consent for a marketing campaign.
+>
+> **6. No archive.** Nothing in the submission captures how the post will render — where the platform crops the overlay, whether the caption truncates behind a "more" link, and whether the identification, once added, survives either. **The archive requirement in Section 3.6 is what makes the approval meaningful**, because approval of a draft is not evidence about the publication.
+>
+> **The corrected version** carries the required identification in the caption's first line where truncation cannot hide it and in the profile bio, drops the school claim and the value prediction entirely, states the service area accurately, and is archived as published with its date. **It is not a worse advertisement.** The two removed sentences were the two that could not be defended.
 
 ## 4. Antitrust and competition
 
@@ -196,6 +295,24 @@ When a seller asks why the compensation is stated as a negotiated figure:
 
 That answer is accurate, it is the law, and it forecloses the follow-up question that a wrong answer invites.
 
+### 4.6 Leaving a conversation that has turned
+
+The rules in this section describe conduct. The practical difficulty is different: these conversations begin in ordinary professional settings, among people who are friendly, and the moment they turn is not announced.
+
+An agent at a caravan says, "Nobody around here is going below a certain rate anymore." A broker in a class says, "We should all stop showing the discount brokerages." A colleague says, "That new firm is going to have a hard time — I've told everyone I know not to work with them."
+
+**Each of those is an invitation, and silence in the room reads as agreement.** Section 4.3 established that an agreement does not require a document — a course of conduct following a conversation is evidence of the conversation, and the participants who said nothing are participants.
+
+**The exit has three parts, and all three matter:**
+
+1. **Say it out loud, immediately.** "I set my own fees independently and I don't discuss them with other firms." It is short, it is not accusatory, and it is heard by everyone present — which is the point, because the record you are creating is the recollection of the other people in the room.
+2. **Leave the conversation.** Physically, or from the thread. Continuing to participate on other topics after the statement weakens it.
+3. **Write it down that day.** A dated note: where you were, who was present, what was said, what you said, and that you left. Send it to your broker.
+
+**The third step is the one that gets skipped and the one that works.** Antitrust exposure is reconstructed years later from testimony about rooms full of people. A contemporaneous note from the person who objected is worth more than a confident memory, and it is the difference between being a witness and being a defendant.
+
+> **What does not work:** changing the subject, laughing it off, replying privately afterward, or staying and saying nothing because the speaker is senior. **The response is the same regardless of who is speaking**, and a licensee who cannot make it to his own manager has learned something important about where he works.
+
 ## 5. Privacy and information security
 
 ### 5.1 What a transaction file actually contains
@@ -232,7 +349,25 @@ If a device is lost, an account is compromised, or a document is misdirected, th
 
 Report immediately to the broker. Preserve the evidence. Do not attempt to quietly assess it alone — breach obligations can carry notification requirements with timelines, and the clock does not wait for an internal decision.
 
-### 5.4 Checkpoint
+### 5.4 The perimeter you do not control
+
+A licensee's information security is only as good as the weakest party holding the same data, and in a transaction that data is held by many parties at once — the brokerage, the transaction coordinator, the lender, escrow, title, the inspector, the photographer, and whatever software each of them uses.
+
+**The licensee cannot secure the perimeter. He can control four things.**
+
+**What he sends.** The single most effective control in the list, and the least used. A vendor who needs to know the closing date does not need the file. A photographer does not need the seller's contact information. **Data not sent cannot be leaked**, and most over-sharing happens because sending the whole file is faster than assembling the part.
+
+**How he sends it.** Documents containing identification numbers, financial account information, or dates of birth do not travel as ordinary email attachments. The brokerage's designated method exists for this, and "it was faster" is the explanation given after every incident of this kind.
+
+**What is on his own devices.** A phone containing a year of transaction photographs, client messages, and document scans is a file cabinet that fits in a pocket and is left in restaurants. Device encryption, a real passcode, remote wipe capability, and separation of business from personal accounts are baseline rather than advanced.
+
+**What happens when a relationship ends.** Access is removed when a coordinator, assistant, or vendor stops working on the file — not when someone remembers. An account that remains active after the relationship ends is the access no one is monitoring.
+
+> **The vendor question to ask before engaging one:** what data will you hold, where, for how long, who else can see it, and what happens to it when we stop working together? A vendor who cannot answer has answered.
+
+**And one obligation that survives everything:** the duty attaching to a client's confidential information does not end when the transaction closes. Section 5.1 listed what the file contains; **that content remains sensitive for as long as it exists**, which is why the retention workflow in Section 6 and the security discipline here are the same subject approached from two directions.
+
+### 5.5 Checkpoint
 
 You should be able to describe the wire fraud sequence and name the one verification step that defeats it, and explain why replying to the suspicious email does not.
 
@@ -275,9 +410,59 @@ At closing, confirm that every required document is present, dated, and evidence
 
 Findings are recorded and corrected honestly. A gap noted in the file is survivable. A gap filled in afterward with a backdated document is falsification, and it converts a compliance problem into conduct that ends a career.
 
-### 6.6 Checkpoint
+### 6.6 The close-out routine
+
+Everything in this section works if one habit exists and fails if it does not: **the file is finished when the transaction closes, not eventually.**
+
+A file left to be completed later is completed from memory, by someone who has since worked forty other transactions, if it is completed at all. The close-out routine exists because the only moment at which a file can be assembled accurately is the moment the facts are still fresh and the other participants still answer the phone.
+
+**The routine, performed within days of closing:**
+
+1. **Inventory against the checklist.** Every document the transaction type requires, present, including for the parts that did not go smoothly.
+2. **Dates.** Everything dated. Delivery evidenced wherever a right or a deadline ran from receipt.
+3. **Signatures.** Every required signature present, and no unexecuted draft filed where the executed version belongs.
+4. **Consistency.** Names, addresses, amounts, and dates reconcile across documents. A property described two ways is a defect even where everyone knew what was meant.
+5. **Versions.** Superseded versions retained, in sequence, so the file can show when a term changed and who agreed to it.
+6. **Communications.** The messages that evidence a decision, an instruction, or a disclosure, moved from an inbox into the file — because **an email is not in the file merely because it exists somewhere.**
+7. **The gaps, written down.** What is missing, why, and what was done to obtain it.
+
+**Step seven is the one that separates a professional file from a hopeful one.** A file with a documented gap is a file that was audited. A file with an undocumented gap is a file that was not — and from the outside the two are indistinguishable until someone asks.
+
+> **The obtainable-now test:** for every gap, ask whether the document can still be obtained from the party who holds it. The answer is usually yes in week one and usually no in year two, and that difference is the entire argument for the routine.
+
+### 6.7 Checkpoint
 
 You should be able to explain who owns transaction records and why, what a departing licensee may and may not take, and why cancelled transactions matter as much as closed ones.
+
+### 6.8 A worked close-out
+
+> **A transaction closed eleven days ago.** The licensee opens the file for the close-out routine and finds:
+>
+> - The purchase agreement, fully executed, and three counteroffers — one of which is present only as an unsigned draft.
+> - A transfer disclosure with the seller's signature and no buyer acknowledgment.
+> - A contingency removal, signed, dated in the buyer's handwriting.
+> - An agency disclosure signed by the buyer, and none for the seller.
+> - A text thread on the licensee's phone in which the parties agreed to extend the inspection period by four days.
+> - An inspection report addressed to the buyer, forwarded by email.
+> - A closing statement, and a commission disbursement authorization.
+>
+> **What the routine produces.**
+>
+> **The unsigned counteroffer is the most urgent item**, because the executed version exists somewhere — the other brokerage has it, and eleven days after closing the other agent still answers the phone. In eight months she may not, and the file will permanently show a negotiation with a missing link. **Obtainable now, not later.**
+>
+> **The missing buyer acknowledgment on the transfer disclosure** is the same kind of item and the second call. Receipt is what starts the buyer's rights running; a disclosure the file cannot show was received is a disclosure the file cannot rely on.
+>
+> **The seller agency disclosure** may exist in the listing file rather than the transaction file, which is a filing problem rather than a missing document — **but the licensee confirms that rather than assuming it.** If it does not exist, that is a finding, and it is recorded as one.
+>
+> **The text thread is evidence of a contract modification living on a personal device.** It is exported into the file today. An extension agreed by text and never reduced to an amendment is a separate issue to raise with the broker; the immediate act is preserving what exists before a phone is replaced.
+>
+> **The contingency removal is dated, which is the good news**, and the date is checked against the extension in the text thread — because if the removal is dated by reference to the original inspection deadline rather than the extended one, the file's chronology does not reconcile.
+>
+> **The disbursement authorization and closing statement are checked against each other** for amount and payee.
+>
+> **The written result** is a short close-out memorandum listing what was obtained, from whom, on what date; what remains missing and why; and which items were escalated to the broker. It is dated today and filed with the transaction.
+>
+> **That memorandum is the difference between a file with gaps and a file nobody checked.** Two years from now it will be the only document that says the licensee looked.
 
 ## Key terms
 
