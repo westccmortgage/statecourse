@@ -418,7 +418,7 @@ Every mechanism in this lesson answers one of three questions, and a licensee wh
 
 A licensee who can place a problem into one of those three, and route it accordingly, is doing the job. A licensee who answers it is not.
 
-### 6.9 A worked title problem
+### 6.8 A worked title problem
 
 > **A licensee takes a listing. The preliminary report reveals:**
 >
@@ -453,7 +453,7 @@ A licensee who can place a problem into one of those three, and route it accordi
 >
 > **Why this lesson puts it here.** Sections 1 through 5 supply every concept required to see the issues — deed requirements, delivery, recording, notice, priority, and what a preliminary report is. **What they do not supply is the answer**, and knowing the difference is the professional skill.
 
-### 6.10 Checkpoint
+### 6.9 Checkpoint
 
 You should be able to distinguish voluntary from involuntary transfer, state the adverse possession elements including California's tax requirement, and place a title problem into one of the three questions.
 

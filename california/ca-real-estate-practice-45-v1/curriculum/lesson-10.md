@@ -205,7 +205,7 @@ A buyer under contract calls: a different lender has quoted a better rate, and h
 - **Discourage him from switching to protect the closing date.** The buyer's economics are the buyer's, and a licensee whose advice is shaped by his own interest in a smooth closing has a loyalty problem.
 - **Tell the current lender the buyer is shopping**, or the new lender what the current one quoted.
 
-> **The related situation, and it is more common:** the buyer does not switch, but starts a second application "just to compare." **That is a second credit inquiry and a second file**, and the two lenders' processes can interfere. The instruction is the same one Section 3.7 of Lesson 07 gives about every financial move: **talk to the lender before doing it**, and tell the licensee it happened.
+> **The related situation, and it is more common:** the buyer does not switch, but starts a second application "just to compare." **That is a second credit inquiry and a second file**, and the two lenders' processes can interfere. The instruction is the same one Section 3.6 of Lesson 07 gives about every financial move: **talk to the lender before doing it**, and tell the licensee it happened.
 
 ## 4. Appraisal and underwriting
 
@@ -290,7 +290,7 @@ A short written note at the start of escrow — *do not open credit, change jobs
 >
 > **What the listing agent does.** Takes the information to the seller, sets out the options — extend, hold, or address a failure to perform — and **does not advise the seller that the buyer is "probably fine."** The seller's decision is his, and the licensee's job is to make sure it is informed and documented.
 >
-> **The retrospective finding.** The contingency was removed on day 21 while the file carried an undocumented deposit made on day 13. **Nobody asked.** Section 4.6 lists what jeopardizes an approval during escrow, and the discipline that would have prevented this is the one in Section 3.7 of Lesson 07: **ask the buyer periodically whether anything changed with work, credit, or money, and route the answer to the lender before the removal deadline rather than after.**
+> **The retrospective finding.** The contingency was removed on day 21 while the file carried an undocumented deposit made on day 13. **Nobody asked.** Section 4.6 lists what jeopardizes an approval during escrow, and the discipline that would have prevented this is the one in Section 3.6 of Lesson 07: **ask the buyer periodically whether anything changed with work, credit, or money, and route the answer to the lender before the removal deadline rather than after.**
 
 ## 5. Closing costs and seller credits
 
@@ -426,7 +426,7 @@ Whatever the outcome, the file should show: the contract's financing terms and d
 
 A financing failure with a complete file is a business disappointment. The same failure with an incomplete file is a dispute in which the brokerage cannot show what it did.
 
-### 6.8 After a financing failure
+### 6.7 After a financing failure
 
 A transaction that fails on financing produces two subsequent problems, and licensees handle the second one badly.
 
@@ -446,7 +446,7 @@ A transaction that fails on financing produces two subsequent problems, and lice
 
 > **The professional handling in one paragraph:** update the disclosures with anything the failed transaction taught the seller about the property, tell the truth about why it failed, change the listing status accurately, keep the failed file complete, and let the next buyer make an informed decision. **A property that comes back to market with an updated disclosure package is a stronger listing than one that comes back pretending nothing happened** — and the second one produces the claim.
 
-### 6.9 Checkpoint
+### 6.8 Checkpoint
 
 You should be able to advise a buyer facing a low appraisal with and without an appraisal contingency, name six events during escrow that jeopardize a conditional approval, and state how a closing date is extended.
 

@@ -509,7 +509,7 @@ Price is the client's decision; the analysis and advice are the licensee's oblig
 
 > **An analysis that follows the price rather than informing it is worse than no analysis.** It documents nothing and looks, later, like an opinion manufactured to fit.
 
-### 6.10 A worked reconciliation
+### 6.9 A worked reconciliation
 
 > **Three approaches, one property**: a forty-year-old single-family residence in an established neighborhood, owner-occupied, being valued for a listing decision.
 >
@@ -530,6 +530,20 @@ Price is the client's decision; the analysis and advice are the licensee's oblig
 > **The reconciliation, written.** Primary weight to sales comparison, supported by the three clustering comparables; the cost approach as a check with its depreciation limitation stated; the income approach reported and given minimal weight with the reason. **A range, with a most-probable figure inside it, and the reasoning for each on the page.**
 >
 > **Why this matters for a licensee who will never appraise.** Section 6.7's requirement is that a licensee's own opinion be defensible, and defensibility is exactly this: **the reasoning is visible, the weight given to each indication is explained, and a reader who disagrees can see where.** An opinion that states a number and shows nothing is not defensible even when it is right — **and Section 6.1's boundary means the licensee's opinion is a comparative market analysis, never an appraisal**, however carefully it was constructed.
+
+### 6.10 The three sentences that create appraisal problems
+
+Section 6.4 states the independence requirement and Section 6.6 addresses bias. In practice, licensee involvement in valuation goes wrong through a small number of sentences, each of which sounds harmless.
+
+**"The contract is at 640, so we need it to come in there."** A target, communicated. **The politeness of the phrasing does not change what was conveyed**, and Section 6.4's requirement does not distinguish between pressure and a helpful heads-up.
+
+**"Here are a few comps I pulled that support the price."** Supplying sales an appraiser may not have is legitimate **when the sales are supplied because they are relevant.** Supplying sales selected because they support a number is the same instruction with an extra step. **The test is how the set was assembled**, and a set assembled by working backward from a figure is a target in a different form.
+
+**"Let's use Whitfield — his numbers come in."** The most serious of the three, because it is systemic. **Selecting appraisers by favorable history builds the pressure into the ordering pattern**, it affects every future file, and it is visible in the brokerage's own ordering records.
+
+**What is permissible**, and it is substantial: providing the contract, the property's improvements and their dates, permits, and comparable sales offered as data. **Information, never a target** — and where the licensee cannot tell which one he is providing, the question is whether he assembled it before or after knowing the number the file needs.
+
+> **And where the appraisal comes in low**, Section 6.5 governs: it is a fact, not a problem to solve. It may support a reconsideration through the prescribed channel with additional data, and the appraiser remains free to reject it. **What it does not support is pressure, and "my manager told me to" does not transfer responsibility for making the call.**
 
 ### 6.11 Checkpoint
 

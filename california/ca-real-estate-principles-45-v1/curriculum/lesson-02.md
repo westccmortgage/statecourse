@@ -163,7 +163,7 @@ The same item can be classified differently depending on who is arguing:
 
 This is why "is it a fixture?" is an incomplete question. **A fixture as between whom?**
 
-### 2.8 A worked fixture analysis
+### 2.7 A worked fixture analysis
 
 > **The property**, a single-family home. In dispute at the walkthrough:
 >
@@ -195,7 +195,7 @@ This is why "is it a fixture?" is an incomplete question. **A fixture as between
 >
 > **What the licensee should have done six weeks earlier:** named (a), (c), (d), (e), and (f) in the agreement, and asked at intake whether the seller intended to take anything. **Five of the seven disputes would not exist.**
 
-### 2.9 Checkpoint
+### 2.8 Checkpoint
 
 You should be able to apply the tests to an item, say which test is doing the work, and explain how the relationship of the parties changes the outcome.
 
@@ -359,7 +359,7 @@ For every topic in this section, the professional response is the same three ste
 
 A licensee who tells a buyer that a severed mineral interest is "standard and nothing to worry about" has given a legal opinion on a document neither of them has read.
 
-### 5.8 What the intake questions are actually protecting against
+### 5.7 What the intake questions are actually protecting against
 
 Section 5.3 supplies the intake questions and Section 5.6 supplies what the licensee does. This section explains what goes wrong when the questions are not asked, because the failures are specific and expensive.
 
@@ -384,7 +384,7 @@ Section 5.3 supplies the intake questions and Section 5.6 supplies what the lice
 
 > **The recurring theme of this lesson.** These are technical subjects the licensee does not practice in. **What he is responsible for is noticing that the transaction has walked into one**, and the noticing is done with a checklist of questions rather than with knowledge.
 
-### 5.9 Checkpoint
+### 5.8 Checkpoint
 
 You should be able to list the water questions you would ask on a rural listing and explain what a severed mineral interest means for a buyer.
 
@@ -454,7 +454,7 @@ Fixture disputes are among the most preventable problems in a transaction, and t
 
 **Two: the marketing shows what conveys.** Section 6.4's consistency requirement. **A photograph is a representation**, and a buyer who saw an item in the listing and does not find it at the walkthrough has a grievance whatever the fixture analysis says. Where an item appears in a photograph and is excluded, **the exclusion is stated where the photograph is**, not buried in a document delivered later.
 
-**Three: the uncertain items are named in the agreement.** Not the obvious ones — the uncertain ones. **Section 2.8's shed, television bracket, and wine refrigerator are the items to name**, because the items whose classification is clear do not produce disputes.
+**Three: the uncertain items are named in the agreement.** Not the obvious ones — the uncertain ones. **Section 2.7's shed, television bracket, and wine refrigerator are the items to name**, because the items whose classification is clear do not produce disputes.
 
 **A fourth habit for the buyer's side**, less often stated: **walk the property asking what the buyer assumes is included.** Lesson 08 of the practice course makes the same point about the agreement generally — "if it matters to you and it isn't written down, it isn't part of the deal" — and fixtures are where that sentence earns its keep. **A buyer who assumed the play structure, the workbench, or the water softener conveys should learn now rather than at the walkthrough.**
 

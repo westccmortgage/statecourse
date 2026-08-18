@@ -168,7 +168,7 @@ Fair housing exposure in leasing is concentrated in a process that takes a week,
 
 6. **Applications are processed in a defined order**, and the order is documented. First-come-first-served is a rule; "whoever seems easiest" is not.
 7. **The same verification steps run for every applicant.** Additional scrutiny applied to some applicants is the pattern Lesson 14 of the mortgage course calls selective scrutiny, and it produces a violation even where every decision was defensible.
-8. **Accommodation requests are handled on their own track** — Section 2.5 and Section 4.9 of Lesson 06 — **and never as a reason the application slows down or stops.**
+8. **Accommodation requests are handled on their own track** — Section 2.5 and Section 4.8 of Lesson 06 — **and never as a reason the application slows down or stops.**
 
 **When a decision is made:**
 
@@ -422,7 +422,7 @@ An audit finding of that kind sits alongside commingling and unsigned agreements
 >
 > **The absence of complaints is not evidence of compliance.** It usually means the problems have not surfaced yet, and in a management practice — which repeats monthly across every unit — they will.
 
-### 6.7 The owner who wants something the manager cannot do
+### 6.6 The owner who wants something the manager cannot do
 
 Managers receive improper instructions more often than sales licensees do, because owners think of the property as theirs and of the manager as staff. **The instructions are usually not malicious. They are the owner solving a problem the only way he has thought of.**
 
@@ -446,7 +446,7 @@ Managers receive improper instructions more often than sales licensees do, becau
 
 > **And the fifth step, when the owner insists:** this goes to the broker. **A manager who continues managing a property for an owner who has instructed him to break the law, without escalating, has made the brokerage's problem into his own.** Whether the engagement can continue is a brokerage decision, and Section 1.6's suggested term is what makes the conversation easier when it comes.
 
-### 6.8 Checkpoint
+### 6.7 Checkpoint
 
 You should be able to explain why an internal ledger does not cure commingling, name the three balances a trust reconciliation must agree, and state why a defective notice defeats a well-documented enforcement action.
 

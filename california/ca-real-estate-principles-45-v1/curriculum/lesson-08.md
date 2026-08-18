@@ -414,7 +414,7 @@ Most transaction disputes are not about substance. They are about **whether some
 6. Keep superseded drafts, so the sequence of versions shows how terms changed.
 7. Audit the file at closing while memories are fresh.
 
-### 6.10 The contract questions a licensee must route
+### 6.9 The contract questions a licensee must route
 
 This lesson describes contract law because a licensee works with contracts daily. **It does not qualify him to answer questions about them**, and the boundary is harder here than anywhere else in the course, because the questions arrive constantly and they sound like transaction questions.
 
@@ -444,7 +444,55 @@ This lesson describes contract law because a licensee works with contracts daily
 
 **And the reason the boundary is protective rather than restrictive.** Section 4.3 of Lesson 01 makes the general point; here it is specific. **A licensee who answers a contract question and is wrong has caused a loss he is answerable for**, on a subject where he had no authority to speak and where the client had a right to a qualified answer. **The referral costs nothing and transfers the question to the person who can answer it.**
 
-### 6.11 Checkpoint
+### 6.10 What actually goes wrong in formation
+
+The elements in Section 1 and the mechanics in Section 2 describe how a contract forms. **Real transactions fail formation in a small number of recognizable ways**, and each is prevented by a habit rather than by knowledge.
+
+| The failure | What happened | The habit that prevents it |
+|---|---|---|
+| **Acceptance not communicated** | A signature exists; nothing shows it reached the offeror before expiration | Transmit and confirm receipt the moment a document is signed |
+| **Signed after expiration** | The offer lapsed before the signature | Calendar every expiration, on both sides |
+| **A counteroffer treated as an acceptance** | A term was changed; the original offer is terminated and a new one exists | Read what was returned rather than assuming it came back the way it went out |
+| **Two documents both signed** | An offer and a counteroffer both executed, in an unclear order | One live document at a time, and the sequence dated |
+| **A term left blank** | Filled in later, by someone, off the page | Never transmit an incomplete document, and never complete one after signature |
+| **An oral agreement to change a term** | Section 4's problem, and the operative document still says the original | Same-day written amendment, without exception |
+| **Delivery to the wrong person** | Sent to a party rather than through the agreed channel, or to an address never consented to | Use the transmission method the agreement specifies, and evidence it |
+| **Signature by someone without authority** | A co-owner, a trustee, an entity signatory, or an attorney-in-fact whose authority was assumed | Lesson 03's intake questions, asked before the offer |
+| **A margin note** | An annotation on a signed page that may or may not be a change of terms | Anything that changes a term goes in an amendment, not in a margin |
+
+**Two of these deserve emphasis because they recur most.**
+
+**Communication of acceptance.** Formation turns on it, and licensees consistently treat the signature as the event. **A signed acceptance in an outbox has not formed a contract**, and the practice course's worked formation problem shows how quickly that fact becomes consequential when circumstances change in the intervening hour.
+
+**The incomplete document.** A blank in a material term is not a formality. **The document the party signed is not the document in the file**, and no explanation of good intent survives that fact.
+
+> **What a licensee should take from this section.** Section 6.9 establishes that the legal questions route to counsel. **This table is not legal analysis — it is a list of operational habits**, and every one of them is performed by the licensee rather than by anyone else in the transaction. **The contract questions belong to counsel; the reasons counsel gets called usually belong to the file.**
+
+### 6.11 What a licensee actually does with contract law
+
+This lesson is the longest legal treatment in the course, and its practical yield is smaller and more specific than students expect.
+
+**It does not qualify a licensee to advise on contracts.** Section 6.9 lists what routes.
+
+**What it does is make four things possible.**
+
+**One: recognizing that a legal question exists.** A client asks something that sounds procedural and is not. **A licensee who has studied formation, capacity, the Statute of Frauds, and remedies will notice** — and noticing is the whole service, because a client who does not know he needs counsel will not call one.
+
+**Two: performing the operational work correctly.** Section 6.10's table is entirely operational: transmitting, confirming, calendaring, refusing to send an incomplete document, reducing agreements to writing the same day. **None of that requires legal judgment and all of it prevents legal problems.**
+
+**Three: preserving the facts an answer will depend on.** When a contract question does arise, its answer turns on dates, sequence, what was communicated, and what each party received. **A licensee who has kept that record has given counsel something to work with; one who has not has given counsel four recollections.**
+
+**Four: explaining the document's own terms without characterizing their effect.** "Your contingency period ends Friday at five, and here is what the agreement says the removal has to look like" is a service. **"You're protected until Friday" is an opinion about rights.** The two sentences are close, and the distance between them is the entire boundary.
+
+**The three habits that carry most of the value:**
+
+1. **Everything material in writing, the same day.**
+2. **Every deadline in a system**, counted from the event the agreement names rather than from the day everyone remembers.
+3. **Every transmission evidenced**, because formation and performance both turn on communication rather than on signature.
+
+> **The test of whether this lesson worked.** Not whether a student can recite the elements — **but whether, handed a real situation, he can say which parts are his to handle, which parts are counsel's, and what the file needs to show either way.** Those three judgments are what the lesson was for, and they are what a first year in practice will ask for repeatedly.
+
+### 6.12 Checkpoint
 
 You should be able to name the remedies, explain why specific performance is available for real property, and give the correct answer to a client asking about a deposit.
 

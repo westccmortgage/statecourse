@@ -424,7 +424,7 @@ A licensee who writes "1,840 sq ft (per assessor; buyer to verify)" has given th
 
 Every measurement a licensee reports should carry three things: **the number, the unit, and the source.** A number without a source is an assertion; a number with a source is information the buyer can evaluate and verify.
 
-### 6.8 Where measurement errors reach the client
+### 6.7 Where measurement errors reach the client
 
 Section 6.4 covers unit errors and Section 6.5 covers the square footage problem. This section connects the arithmetic to the consequence, because a principles course can make measurement feel like an exam topic when it is a liability topic.
 
@@ -446,6 +446,28 @@ Section 6.4 covers unit errors and Section 6.5 covers the square footage problem
 **The arithmetic in Section 6.3 is worth practicing for a reason beyond the examination.** A licensee who can compute area, convert units, and check a figure against its dimensions **will notice when a source is wrong** — and a listing whose stated area does not reconcile with its own stated dimensions is a listing with a defect that nobody caught because nobody multiplied.
 
 > **The professional standard here is unusually simple:** report, attribute, and refuse to improve. **The number you were given, from the source you were given it by, with the source named.** Every measurement claim that has ever produced a complaint was an improvement on one of those three.
+
+### 6.8 Why the measurement topics belong in a licensing course
+
+A principles course teaches area formulas and section arithmetic, and students reasonably ask why a licensee needs them when a listing service supplies the numbers.
+
+**Four reasons, in ascending order of importance.**
+
+**One: the numbers supplied are frequently wrong.** A listing service field is populated by a person, from a source, sometimes by carrying forward what the last listing said. **A licensee who can check a stated area against its own stated dimensions will catch errors that otherwise propagate** — into the next listing, into a comparable grid, and into an appraisal.
+
+**Two: units are where errors hide.** Section 6.4's unit errors are not exam artifacts. **Acres and square feet, front feet and lineal feet, dimensions in feet and inches** — a conversion performed casually produces an answer wrong by a factor, and a factor-of-ten error looks obviously wrong on paper and entirely plausible on a form.
+
+**Three: the arithmetic underlies the analysis.** Price per square foot, adjustment amounts, lot coverage, buildable area, and yield all rest on measurement. **A licensee who cannot compute them cannot check them**, which means he cannot tell whether an analysis handed to him is sound.
+
+**Four, and most important: a stated measurement is a representation.** Section 6.6 establishes what a measurement must carry. **The number goes into a listing, a buyer relies on it, and it is the licensee's statement unless it was attributed to a source.** This is the reason the topic sits in a licensing course rather than in a technical one — **the arithmetic is the small part, and the discipline of sourcing, attributing, and refusing to improve is the large part.**
+
+**The three-part rule, restated as a working practice:**
+
+1. **Report the number from a source**, and name the source.
+2. **Check it against itself** where you can — dimensions against area, area against acreage, unit against unit. **An internal inconsistency is a signal that one of the inputs is wrong.**
+3. **Do not reconcile sources.** Where the assessor says one thing and the plans say another, **report both with their sources** rather than producing a third number that no source stands behind.
+
+> **The failure this prevents is not an arithmetic failure.** It is a licensee who repeated a number, was believed, and turned out to be the only person who had ever asserted it. **Section 5.5's prohibition and this section's arithmetic are the same subject:** the licensee's job is to convey what is known, from where it is known, and to be visibly absent from the parts he is not qualified to determine.
 
 ### 6.9 Checkpoint
 

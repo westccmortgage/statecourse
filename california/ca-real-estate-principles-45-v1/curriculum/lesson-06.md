@@ -154,7 +154,7 @@ From Lesson 05, restated because it belongs here too: **zoning and recorded priv
 >
 > **Incorrect:** "The zoning allows it, so you're fine."
 
-### 2.8 A worked land-use inquiry
+### 2.7 A worked land-use inquiry
 
 > **A buyer under contract on a residence tells the licensee he intends to convert the detached garage into a rental unit, run a small contracting business from the property, and add a second story.**
 >
@@ -183,7 +183,7 @@ From Lesson 05, restated because it belongs here too: **zoning and recorded priv
 >
 > > **The recurring error this prevents.** A buyer removes his contingencies on the strength of a licensee's encouragement, closes, and discovers that the conversion he bought the property for requires a discretionary approval he will not get. **The information was available on day two, from a phone call to a public counter, and the licensee's contribution was to say who to call.**
 
-### 2.9 Checkpoint
+### 2.8 Checkpoint
 
 You should be able to distinguish a variance from a conditional use permit, explain the limits on a nonconforming use, and answer a buildability question correctly.
 
@@ -439,7 +439,31 @@ Not that a licensee gave wrong land use advice. That a licensee **gave land use 
 
 The questions in this lesson are answered by the planning counter, the building department, the recorded documents, the specialist, and counsel. The licensee's professional contribution is knowing which question goes where, and getting it there while the buyer can still act on the answer.
 
-### 6.6 Checkpoint
+### 6.6 The due diligence failure, restated for a new licensee
+
+Section 6.5 names the recurring failure. Stated as a working rule, it is this: **the buyer's plan was never tested against the property's actual constraints, and nobody noticed until after closing.**
+
+**The pattern is always the same:**
+
+1. The buyer says what he intends to do with the property.
+2. Everyone finds it reasonable, because it usually is.
+3. **Nobody asks the jurisdiction, and nobody reads the recorded restrictions.**
+4. Contingencies are removed on the strength of the plan being reasonable.
+5. The plan turns out to require an approval, a permit, or a use the restrictions forbid.
+
+**Step three is the whole failure**, and it costs a phone call and a document request.
+
+**The three questions that prevent it**, asked as soon as a buyer states an intention:
+
+- **"Have you confirmed with the city or county that this is permitted here?"**
+- **"Have we read what the recorded restrictions say about it?"**
+- **"Do we know what permits this needs and what the existing structure will support?"**
+
+**The licensee answers none of them.** He asks them, in writing, with a date, before the contingency deadline — and records the answer.
+
+> **Why this belongs at the end of a government-powers lesson.** Every concept in Sections 1 through 5 — police power, zoning, subdivision control, building regulation, environmental and hazard frameworks — **operates on a property whether or not anyone looked.** The lesson's purpose is not to make a licensee an expert in any of them. **It is to make him the participant who asks, on day two, whether anyone has checked.**
+
+### 6.7 Checkpoint
 
 You should be able to build a due diligence sequence for a specific property, justify the ordering by lead time, and state what the file must show.
 

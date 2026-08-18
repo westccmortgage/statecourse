@@ -293,7 +293,7 @@ Brokerages frequently adopt policies stricter than the legal minimum: longer ret
 
 It also creates a trap worth naming. When a licensee discovers that office policy exceeds the legal requirement, the temptation is to follow the law instead. That is the wrong move for two reasons. The policy binds the licensee's conduct within the brokerage regardless of the legal floor, and the licensee's reading of the legal minimum may simply be wrong. Changing a policy is a policy-level decision that starts with confirming the current requirement — not a decision an individual licensee makes case by case.
 
-### 4.6 Reading a policy manual as a new licensee
+### 4.5 Reading a policy manual as a new licensee
 
 Section 4.2 lists what a working policy set covers. The obligation running the other direction is rarely stated: **the licensee has to read it, and reading it is a specific task rather than a gesture.**
 
@@ -313,7 +313,7 @@ Section 4.2 lists what a working policy set covers. The obligation running the o
 
 > **What a policy set is actually for.** It is not primarily a compliance artifact. **It is the accumulated answer to problems the brokerage has already had**, which means every provision that seems excessive is a scar. Reading it as history rather than as rules makes it considerably more interesting and much easier to follow.
 
-### 4.7 Checkpoint
+### 4.6 Checkpoint
 
 You should be able to name the four components of a defensible delegation and explain why "we have a written policy" is not by itself evidence of supervision.
 

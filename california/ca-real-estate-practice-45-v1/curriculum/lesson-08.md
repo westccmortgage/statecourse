@@ -385,7 +385,7 @@ Relying on escrow to track dates, on software reminders, or on verbal confirmati
 > **The calendar that results contains more entries than the contract has deadlines**, because each deadline generates work that must happen before it:
 >
 > - **Association documents ordered** — the day after acceptance, not on the seventh day. The seven-day delivery obligation is the seller's; the buyer's review time is what remains after it.
-> - **Inspections scheduled** — within the first three days, because Section 5.8 of Lesson 07 establishes that further-evaluation items need time inside the same period.
+> - **Inspections scheduled** — within the first three days, because Section 5.7 of Lesson 07 establishes that further-evaluation items need time inside the same period.
 > - **Specialist evaluations ordered** — the moment the general report recommends them.
 > - **Appraisal ordered** through the lender, with a follow-up date, because it is the item over which the buyer's side has the least control.
 > - **A check-in three days before each removal deadline**, which is the entry that actually prevents the failure.

@@ -416,7 +416,7 @@ The same principle governs corrections generally: they are made visibly, with th
 
 The file is retained for the required period, which runs from closing. Cancelled and failed transactions are retained too — and are disproportionately the ones that later produce disputes, which is exactly why they must not be discarded as uninteresting.
 
-### 6.8 What the client asks for later
+### 6.7 What the client asks for later
 
 The relationship does not end at closing, and the requests that arrive months or years afterward have their own rules.
 
@@ -436,7 +436,7 @@ The relationship does not end at closing, and the requests that arrive months or
 
 > **The habit that makes all of this easy:** a complete, dated, retrievable file, and a standing willingness to say "that one goes to your attorney" or "that one goes to your tax advisor" without treating it as a failure to help. **A licensee who has said it a hundred times says it comfortably**, and clients read the comfort as competence rather than as evasion.
 
-### 6.9 Checkpoint
+### 6.8 Checkpoint
 
 You should be able to sequence signing, funding, recording, and disbursement; explain why escrow stops rather than deciding when the parties disagree; and state the correct response to a missing document found in a closed file.
 

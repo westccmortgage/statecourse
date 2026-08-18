@@ -143,7 +143,7 @@ Non-clients are not unprotected. Every licensee owes **honesty, fair dealing, an
 
 The distinction is whose interests you advance, not whether you owe anything.
 
-### 2.8 Which duty was breached
+### 2.7 Which duty was breached
 
 Section 2.1 through 2.6 state the duties. **The skill a principles course is trying to build is recognizing which duty a given failure breaches**, because the answer determines the analysis, the remedy, and frequently whether the conduct is negligence or something worse.
 
@@ -170,7 +170,7 @@ Section 2.1 through 2.6 state the duties. **The skill a principles course is try
 
 > **The diagnostic question that resolves most cases:** whose interest was subordinated, and to what? **If the answer is "the principal's, to the licensee's," it is loyalty. If it is "the principal's, to nobody's — it was just done badly," it is care.** If it is "a non-client's, to the principal's," it is the honesty duty in Section 2.6, and that duty does not bend to fiduciary loyalty.
 
-### 2.9 Checkpoint
+### 2.8 Checkpoint
 
 You should be able to name the six duties, state the confidentiality-disclosure boundary, and explain why a careless licensee can breach a fiduciary duty without any dishonesty.
 
@@ -268,7 +268,7 @@ A recurring confusion: the agency disclosure describes the relationship options 
 
 **The agency disclosure is required regardless of whether a representation agreement is signed.** A licensee who requires a signed representation agreement before showing property is stating a brokerage policy, which is legitimate — but the disclosure obligation does not depend on it.
 
-### 4.7 The dates, and what they prove
+### 4.6 The dates, and what they prove
 
 The three steps in Section 4.1 exist as a sequence, and **their dates are what a file audit examines** — not their presence.
 
@@ -295,7 +295,7 @@ The three steps in Section 4.1 exist as a sequence, and **their dates are what a
 
 > **The one habit that closes all three defects:** date everything at the moment it happens, evidence delivery rather than relying on signature, and **read the chain forward as a sequence** rather than checking off documents as a set. If the dates do not run in order, something happened out of order — and that is worth knowing while the transaction can still respond to it.
 
-### 4.8 Checkpoint
+### 4.7 Checkpoint
 
 You should be able to state when each disclosure is due, explain why a signature after the decision does not cure lateness, and identify what an audit finding of a contradictory confirmation means.
 
@@ -433,7 +433,7 @@ Agency ends by:
 
 **Compensation provisions may also survive**, including a protection clause applying to buyers identified during the term.
 
-### 6.10 A worked agency audit
+### 6.9 A worked agency audit
 
 > **A brokerage reviews one closed file.** It contains:
 >
@@ -462,6 +462,40 @@ Agency ends by:
 > **What the brokerage does.** Records every finding with its date; preserves the file including item (e); escalates to counsel, because items 1, 2, and 3 are not internal training matters; determines what obligation exists to the parties, which is a legal question; and **changes the procedures that produced items (a), (b), and (d)** — because a brokerage whose buyer files have no disclosure step and whose system does not detect that both sides are its own will produce this file again.
 >
 > **What the brokerage does not do.** Produce a consent now, re-date item (b), or add a referral disclosure to the file today. **A documented gap is a compliance problem. A manufactured document is a different proceeding**, and every one of these findings is survivable in a way that fabrication is not.
+
+### 6.10 The agency questions a licensee answers, and the ones he does not
+
+This lesson has drawn several boundaries. Collecting them makes the working rule visible.
+
+**What a licensee explains, and should be able to explain well:**
+
+- **What the three disclosure steps are and when each happens.** Section 4.1 and Section 4.2.
+- **What representation means** — that the brokerage owes the client fiduciary duties and owes everyone honesty, fair dealing, and disclosure of material facts.
+- **That the brokerage, not the individual, is the agent.** Section 5.1, which surprises consumers and licensees alike.
+- **That who pays does not determine who is represented.** Section 6.2, and consumers regularly assume the opposite.
+- **What dual agency is, what it requires, and what it costs the parties** — specifically that no one will advocate against the other side on price. Sections 3.2 through 3.5.
+- **That compensation is negotiable.** Section 6.1.
+- **What conflicts exist in this transaction**, disclosed before the client acts. Section 6.4.
+
+**What routes to counsel:**
+
+- Whether a particular agency relationship arose on particular facts.
+- The legal effect of a defective or late disclosure.
+- Whether a duty was breached and what follows.
+- What a representation agreement's provisions mean for the client's obligations.
+- Whether the client can terminate, and what termination costs. Section 6.7 describes the mechanisms; **the application is legal.**
+
+**What routes to the broker:**
+
+- Any dual agency, at the moment it becomes foreseeable rather than at the offer.
+- Any request to release a client from an agreement.
+- Any instruction the licensee believes is unlawful. Section 2.2's limit.
+- Any conduct by another licensee that engages a duty — including confidential information volunteered by the other side.
+- Any compensation arrangement that varies from the brokerage's standard.
+
+> **The organizing principle across all three lists.** A licensee explains **how the framework works**; counsel says **what it means for these facts**; the broker decides **what the brokerage does.** Almost every agency question a consumer asks fits one of those three, and a licensee who can sort them in the moment will handle correctly a great many situations he has never seen.
+
+**And the one question that appears in all three lists at once**, which is why it is the hardest: *"Whose side are you on?"* **The explanation is the licensee's, the legal characterization is counsel's, and if the honest answer is uncomfortable, that discomfort is information the broker needs before the transaction goes further.**
 
 ### 6.11 Checkpoint
 

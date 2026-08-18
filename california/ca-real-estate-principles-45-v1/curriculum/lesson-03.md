@@ -68,7 +68,7 @@ When a leasehold ends, possession returns to the owner. That future interest is 
 
 The landlord's estate is not suspended by the lease. It is a fee simple subject to a leasehold, which is why the landlord can sell, mortgage, and devise it while the tenant is in possession.
 
-### 1.6 Why the estate concept controls everything downstream
+### 1.5 Why the estate concept controls everything downstream
 
 A principles course opens with estates because **the estate held determines what can be done with the property**, and every later topic assumes the answer.
 
@@ -90,7 +90,7 @@ A principles course opens with estates because **the estate held determines what
 
 > **The failure this prevents.** A listing taken from a person who describes himself as the owner, marketed, and put under contract — after which title clearance reveals a co-owner, a life estate, a trust with a successor trustee requirement, or an entity whose authority document says something other than what the signer said. **Every one of those is discoverable at intake with a question and a document**, and every one of them is expensive at day nineteen.
 
-### 1.7 Checkpoint
+### 1.6 Checkpoint
 
 You should be able to name a leasehold estate from a description of how it terminates, and state what happens to a lease when the property is sold.
 
@@ -200,7 +200,7 @@ Vesting has ownership, survivorship, tax, and estate consequences, and **advisin
 >
 > Those goals point in different directions. Survivorship and the ability to devise a share are not both satisfied by a single form. Resolving that tension is estate planning, and it belongs to counsel — not to the licensee, and not to escrow's deadline for the deed instruction.
 
-### 3.8 A worked ownership intake
+### 3.7 A worked ownership intake
 
 > **Six listing appointments in one week.** At each, the licensee asks the Section 6.5 questions: **how is title currently held, may I see the document, and who must sign to convey?**
 >
@@ -216,9 +216,9 @@ Vesting has ownership, survivorship, tax, and estate consequences, and **advisin
 >
 > **6. "I bought it with my partner but it's really mine — she just helped with the loan."** **Two different claims: what the record says and what the seller believes the arrangement was.** The record controls who must sign. **What the parties intended between themselves is a legal question the licensee does not resolve**, and a listing taken on the seller's characterization is a listing that will fail.
 >
-> **What the week produced.** Six appointments, six documents requested, two matters routed to counsel before listing. **None of the six sellers described their situation inaccurately on purpose.** Each described it the way people describe ownership in conversation, which is by relationship rather than by interest — and Section 1.6's point is that those are not the same thing.
+> **What the week produced.** Six appointments, six documents requested, two matters routed to counsel before listing. **None of the six sellers described their situation inaccurately on purpose.** Each described it the way people describe ownership in conversation, which is by relationship rather than by interest — and Section 1.5's point is that those are not the same thing.
 
-### 3.9 Checkpoint
+### 3.8 Checkpoint
 
 You should be able to state the operative differences between the two forms, explain what severance does to a three-party joint tenancy, and say what you would do when a client asks which to choose.
 
@@ -326,7 +326,7 @@ This is one of the slow items. An association that takes three weeks to produce 
 >
 > **Incorrect:** "They look fine to me — this association seems well run."
 
-### 5.7 What a buyer in a common interest development is actually buying
+### 5.6 What a buyer in a common interest development is actually buying
 
 Section 5.3 explains why this belongs in a principles course. This section makes the point concrete, because the gap between what a buyer thinks he is buying and what he is buying is wider here than anywhere else in residential real estate.
 
@@ -359,7 +359,7 @@ Section 5.3 explains why this belongs in a principles course. This section makes
 
 > **Section 5.5's limit governs all of it.** The licensee delivers the documents, recommends they be reviewed with counsel, and **does not interpret the restrictions.** Whether a provision permits a particular use is a legal question about a recorded instrument, and it is asked of licensees constantly.
 
-### 5.8 Checkpoint
+### 5.7 Checkpoint
 
 You should be able to name what a buyer must review, explain why the documents must be ordered early, and answer a reserves question correctly.
 
@@ -444,7 +444,31 @@ Sections 6.2 and 6.3 of Lesson 03 introduce these. The comparison is worth setti
 
 > **A useful framing for the client conversation.** "The title company is going to need to see the document that shows who can sign. Let's get it now — if there's anything in it that needs attention, today is a much better day to find out than three weeks into escrow." **Clients accept this immediately**, because it is obviously true and it is offered as service rather than as suspicion.
 
-### 6.7 Checkpoint
+### 6.7 The intake questions, and why each one exists
+
+Section 6.5 supplies the intake practice. Each question earns its place by preventing a specific, recurring failure.
+
+| The question | The failure it prevents |
+|---|---|
+| **"How is title currently held?"** | A listing taken from someone whose interest is not what he described — a life tenant, a co-owner, a beneficiary rather than a trustee |
+| **"May I see the document?"** | The gap between what a person says an instrument provides and what it provides. **The single most valuable question in this lesson** |
+| **"Who must sign to convey?"** | A transaction that reaches title clearance and discovers a required signature nobody obtained |
+| **"Is anyone else on title, or claiming an interest?"** | Unrecorded interests, family arrangements, and the person who "helped with the loan" |
+| **"Has anyone died, been divorced, or lost capacity since acquisition?"** | Every event that changes who may act, and none of which is visible in the property |
+| **"Is anyone in possession other than you?"** | Tenancies, family occupancy, and the rights that come with them |
+| **"Is there any pending matter affecting the property?"** | Litigation, liens, association proceedings, and code matters |
+
+**Two properties of this list are worth noticing.**
+
+**None of the questions requires legal knowledge to ask**, and none of the answers is evaluated by the licensee. **The entire value is in surfacing the issue and routing it**, which Sections 6.2 through 6.4 establish for each ownership form.
+
+**Every question is cheap now and expensive later.** Asked at the listing appointment, each produces at most a document request and occasionally a referral. **Discovered at day nineteen of an escrow, each is a transaction in trouble** — with a buyer's deadlines running, a lender's timeline committed, and a seller who has already made plans.
+
+**What the licensee records:** what was asked, what was answered, what document was produced, and what was routed to whom. **Two minutes at the appointment, and it is the record that shows the question was asked** — which matters, because a seller who gave an incomplete answer and a licensee who never asked look identical in a file with no note.
+
+> **The framing that makes clients cooperative rather than defensive.** The questions are not about them. **They are about what the title company will require**, which is true, verifiable, and obviously in the seller's interest — and a seller told "let's get this now so it isn't a problem in escrow" produces the document without being asked twice.
+
+### 6.8 Checkpoint
 
 You should be able to list what you would verify at a listing appointment where title is held in a trust, and explain why a beneficiary's signature is insufficient.
 

@@ -86,7 +86,7 @@ The test is not the age of the sale but whether the market has changed since it 
 
 Where sources conflict, say so in the analysis rather than silently choosing one. A note that "the listing service reports 1,840 square feet and the assessor reports 1,790; the analysis uses 1,840 with the discrepancy noted" is stronger than an unexplained number.
 
-### 1.7 Property types where the standard method breaks down
+### 1.6 Property types where the standard method breaks down
 
 The market-area and competitive-set method in Sections 1.2 and 1.3 assumes something that is true of most suburban resale housing and false of several common property types: **that enough genuinely similar properties sold recently nearby.**
 
@@ -105,7 +105,7 @@ Where that assumption fails, the method does not stop working — it starts prod
 
 > **The failure this prevents:** a single-page analysis with three comparables, a confident number, and no acknowledgment that the subject is a five-acre parcel with a shared well and the nearest similar sale is eleven months old and four miles away. **The number is not wrong because the licensee was careless. It is wrong because the method was applied where its assumptions did not hold**, and nothing on the page tells the seller that.
 
-### 1.8 Checkpoint
+### 1.7 Checkpoint
 
 You should be able to define a market area for a given subject and justify one comparable you included and one you excluded, in terms of buyer behavior rather than distance.
 
@@ -489,7 +489,7 @@ A pricing recommendation has a shelf life. Where the market moves, or where the 
 
 The most useful evidence in a price-reduction conversation is the property's own market feedback: showings without offers, feedback themes, and how the competition has moved. That is data the seller can evaluate, and it is more persuasive than repeating the original opinion.
 
-### 6.7 The opinion, read two years later
+### 6.6 The opinion, read two years later
 
 Section 6.1 makes an opinion defensible and Section 6.2 lists what the file holds. This section supplies the reason, which is the only thing that makes either habit survive a busy week.
 
@@ -515,7 +515,7 @@ Section 6.1 makes an opinion defensible and Section 6.2 lists what the file hold
 
 **The practical instruction is one sentence.** When the pricing analysis is delivered, **save it as it was delivered, with its data as of that date**, and put it in the file the same day. It takes a minute and it is the difference between a claim that is answered and a claim that is argued.
 
-### 6.8 Checkpoint
+### 6.7 Checkpoint
 
 You should be able to take an adjustment grid, state which comparable is the strongest indicator and why, produce a range with a most-probable point, and list what the file must retain for the opinion to be reconstructable.
 

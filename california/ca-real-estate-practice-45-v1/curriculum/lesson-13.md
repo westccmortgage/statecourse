@@ -477,7 +477,7 @@ What is not survivable is **falsifying the record**: creating a document after t
 
 Corrections are made visibly, with the original preserved and the change attributable. A record that can be silently altered is not a record.
 
-### 6.8 Reading your own file as an adversary would
+### 6.7 Reading your own file as an adversary would
 
 Every documentation habit in this lesson answers one question: **what will this file look like to someone whose job is to find its weakness?** The habit that keeps the other habits alive is periodically taking that view deliberately.
 
@@ -496,7 +496,7 @@ Every documentation habit in this lesson answers one question: **what will this 
 
 > **The reframe worth carrying:** documentation is not paperwork performed for a regulator. **It is the only version of events that will exist when the people involved have forgotten, moved, retired, or become adverse.** Everything in this course about dating, evidencing, sourcing, and recording reduces to that one fact — and a licensee who has read one of his own files this way stops needing to be told.
 
-### 6.9 Checkpoint
+### 6.8 Checkpoint
 
 You should be able to classify a statement as innocent error, negligent misrepresentation, or fraud; state the correct first response to a client complaint; and name the trigger that requires referral to counsel.
 

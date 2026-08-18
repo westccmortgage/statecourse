@@ -204,7 +204,7 @@ Easements can end by express release, by merger of the dominant and servient par
 
 **Non-use alone generally does not terminate an easement.** A client who says "nobody has used that road in twenty years, so it's gone" has stated a conclusion the law usually does not reach. Route it.
 
-### 3.8 A worked easement problem
+### 3.7 A worked easement problem
 
 > **The property.** A residential lot. The preliminary report lists: a public utility easement along the rear ten feet, recorded 1958; an easement for ingress and egress in favor of the adjoining parcel, recorded 1974, described as a twenty-foot strip along the northern boundary; and a drainage easement in favor of the county, recorded 1991.
 >
@@ -234,7 +234,7 @@ Easements can end by express release, by merger of the dominant and servient par
 >
 > **The professional summary.** **The buyer is buying a lot on which he cannot do two of the things he intends without answering questions first.** He is entitled to know that before he removes his contingencies, and the licensee's contribution is that he learns it on day three rather than after closing.
 
-### 3.9 Checkpoint
+### 3.8 Checkpoint
 
 You should be able to identify the dominant and servient parcels, distinguish an easement from a license, and state the correct handling of an easement shown in a preliminary report.
 
@@ -404,7 +404,7 @@ The preliminary report and the underlying documents belong at the front of the t
 
 An exception discovered late — an easement across the building site, an unreleased lien requiring a document from a lender that no longer exists — takes time to resolve. A buyer who receives the report on day three has options; one who receives it on day twelve of a fourteen-day review has a formality.
 
-### 6.8 A worked preliminary report
+### 6.7 A worked preliminary report
 
 > **The report** on a suburban residence, in the order the items appear:
 >
@@ -439,7 +439,7 @@ An exception discovered late — an easement across the building site, an unrele
 >
 > **What he does not do.** Rank the items by seriousness for the client as legal advice, tell the buyer item 8 "will probably clear," characterize the 1964 restrictions, or forward the report with "let me know if you have questions." **Section 6.6's timing point is the reason:** a report delivered without the recommendation that it be reviewed has been delivered in a way that does not produce a review.
 
-### 6.9 Checkpoint
+### 6.8 Checkpoint
 
 You should be able to explain what an exception means, distinguish exceptions from exclusions and requirements, and state the correct response to each item on a preliminary report.
 

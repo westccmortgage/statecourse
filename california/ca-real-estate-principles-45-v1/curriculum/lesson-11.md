@@ -430,7 +430,7 @@ Distressed transactions concentrate every risk in this course, and three practic
 2. **Never predict an outcome** — approval of a short sale, forgiveness of a deficiency, the credit effect, or the timeline.
 3. **Recognize the fraud patterns.** Distressed situations attract equity-stripping schemes, rescue arrangements, and transfers that leave the owner worse off. A licensee who sees one escalates to the broker and does not participate, however the request is framed.
 
-### 6.9 Two loans, compared honestly
+### 6.8 Two loans, compared honestly
 
 > **A borrower is offered two structures on the same purchase.**
 >
@@ -459,7 +459,7 @@ Distressed transactions concentrate every risk in this course, and three practic
 >
 > **What he does not do.** Recommend either loan, characterize one as cheaper, tell the borrower "you can always refinance," or opine that rates will move in a direction. **The first three are the lender's work and the fourth is a prediction stated as a plan** — which is, across this entire course, the single most damaging sentence available in a financing conversation.
 
-### 6.10 Checkpoint
+### 6.9 Checkpoint
 
 You should be able to compare the two foreclosure paths on speed and deficiency, explain the reinstatement window, and state what a licensee says to a distressed client asking about a deficiency.
 

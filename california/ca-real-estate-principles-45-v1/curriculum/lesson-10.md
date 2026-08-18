@@ -409,7 +409,7 @@ Most transaction disputes are not about substance. They are about **whether some
 6. Keep superseded drafts.
 7. Audit at closing while memories are fresh.
 
-### 6.9 The escrow file, item by item
+### 6.8 The escrow file, item by item
 
 Section 6.2 supplies the audit questions. This section supplies the inventory, because an audit without a list of what should be present can only find defects in what is there.
 
@@ -440,6 +440,39 @@ Section 6.2 supplies the audit questions. This section supplies the inventory, b
 **Section 6.3's superseded versions belong in items 2, 4, and 15.** The sequence of versions is what proves when a term changed and who agreed, which is the question a dispute usually asks.
 
 > **The audit's real question, restated:** could a person who was not present reconstruct what happened, when, and on what basis? **Item 19 is what makes the answer yes even where items are missing**, because a documented gap is a file that was checked, and an undocumented gap is a file that was not — and from the outside those two look identical until someone asks.
+
+### 6.9 The chain of decisions escrow cannot make
+
+Section 6.7 addresses what prevents disputes. This section states the structural reason escrow does not prevent them, because licensees consistently assume it will.
+
+**Escrow is neutral, and neutrality is a constraint rather than a service level.** It means the escrow holder:
+
+- **Follows the instructions it has**, and does not act on what it was told verbally or on what one party says was agreed.
+- **Does not decide between the parties.** Conflicting instructions produce a hold, not a resolution.
+- **Does not police the transaction.** It will not notice that a disclosure was late, that a contingency period was miscounted, or that an amendment was never sent to it.
+- **Does not advise.** Not either party, on anything, including on whether a figure looks wrong.
+
+**The consequence is a list of things that will not happen unless a licensee does them:**
+
+| What must happen | Who does it if the licensee does not |
+|---|---|
+| Every amendment reaches escrow | **Nobody** |
+| The closing statement is checked against the agreement | **Nobody** |
+| The deadlines are calendared and watched | **Nobody** |
+| Someone notices that a credit was agreed and is not shown | **Nobody** |
+| Someone notices that the payoff demand expires before closing | **Nobody** |
+| Someone confirms delivery of the documents rights run from | **Nobody** |
+| Someone tells the client what he is about to sign | **Nobody** |
+
+**Seven rows, one answer.** This is the concrete version of Section 6.4's coordinator description, and it is why the file audit in Section 6.2 finds what it finds: **the transaction's most failure-prone elements are the ones with no assigned owner outside the brokerage.**
+
+**Two implications for a new licensee.**
+
+**Do not read escrow's silence as approval.** An escrow that has not raised an issue has not reviewed for it. **Its silence carries no information.**
+
+**Do not read a smooth closing as a well-run one.** Most transactions close without anyone testing whether the amendments arrived, the deadlines were counted correctly, or the disclosures were delivered on time. **The file finds out later, and by then the answer is fixed.**
+
+> **The one habit that covers most of the table:** at every point where something is agreed, ask two questions — **who has to receive this, and how will the file show they did?** Both answers are usually the licensee, and both take a minute.
 
 ### 6.10 Checkpoint
 

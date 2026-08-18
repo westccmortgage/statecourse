@@ -447,7 +447,30 @@ That is why the coordination practices this course keeps returning to — build 
 >
 > **Section 6.4 calls the licensee a coordinator.** This map is what that word means: **the participant whose job includes everything that would otherwise belong to nobody.**
 
-### 6.6 Checkpoint
+### 6.6 What a new licensee should do in the first month
+
+This lesson has described a regulatory structure, a supervision relationship, a scope boundary, a body of law, and a set of participants. **The practical question a student has at the end of it is what to actually do**, and the answer is short.
+
+**Establish the four things that make everything else possible:**
+
+1. **Know who your responsible broker is and how to reach him**, including outside business hours. Section 3.3 makes supervision an affirmative duty; **the duty operates only if you use it.**
+2. **Read the written policy set before your first transaction**, and ask about what it does not cover.
+3. **Set up a file structure and a deadline tracker** before you have anything to put in them. Section 6.2 supplies the contents.
+4. **Write down the categories you will route** — legal, tax, valuation-professional, structural, lending — and the words you will use. Section 4.4 explains why the delivery matters as much as the referral.
+
+**Adopt three habits that will not form later if they do not form now:**
+
+**Date everything at the moment it happens.** Not later, not from memory. Section 6.3's point about delivery evidence begins here.
+
+**Send a confirming message after any consequential conversation.** Short, same day, factual. It creates the record, catches misunderstandings early, and is the single most effective practice available to a new licensee.
+
+**Say "I don't know, let me find out" out loud, early, and often.** Section 4.4 argues that this is competence. **It is also the habit that prevents the largest category of licensee misstatement**, which is the confident guess offered because admitting uncertainty felt like weakness.
+
+**And understand one structural fact that a new licensee usually learns too slowly.** Section 3.2 states it: **the clients are the brokerage's, the agreements are the brokerage's, the trust funds are subject to the broker's control, and the decisions to release, settle, or escalate are the broker's.** A salesperson who thinks of the brokerage as an administrative arrangement will make a decision that was not his to make, and will do it while trying to help a client.
+
+> **What this course is preparing you for is not the examination.** It is a first year in which you will encounter facts no lesson covered. **The regulatory structure, the scope boundary, the sources of law, and the file are the four things that will answer them** — and the file is the one that will still be answering them in five years, when nobody remembers anything else.
+
+### 6.7 Checkpoint
 
 You should be able to take a transaction task and name who owns it, by what date, and what evidence shows it was done.
 

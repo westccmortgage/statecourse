@@ -147,12 +147,12 @@ The listing stage in Sections 2.1 through 2.4 assumes an owner who can convey, a
 |---|---|
 | **Multiple owners, or an owner acting for another** | The authority question, answered from documents rather than description — Lesson 04, Section 1.6 |
 | **A trust, estate, or dissolution** | Authority, plus disclosure limits from a seller with little knowledge — Lesson 09, Section 1.6 |
-| **Unpermitted or unrecorded improvements** | Verification of what may be advertised, before a square footage or a room count is published — Lesson 06, Section 1.8 |
+| **Unpermitted or unrecorded improvements** | Verification of what may be advertised, before a square footage or a room count is published — Lesson 06, Section 1.7 |
 | **A tenant in possession** | Access rules, notice requirements, and disclosures the tenancy generates — Lesson 12 |
 | **A property in a common-interest development** | Association documents ordered at the start, because the buyer's review period is what remains after delivery |
 | **Insufficient equity** | A different conversation entirely, with routing rather than pricing — Lesson 05, Section 4.6 |
 | **A property with a hazard or insurance problem** | Insurance availability established early, because a buyer discovers it late otherwise — Lesson 09, Section 3.7 |
-| **A thin comparable set** | A range with its reasoning rather than a number with false precision — Lesson 05, Section 1.7 |
+| **A thin comparable set** | A range with its reasoning rather than a number with false precision — Lesson 05, Section 1.6 |
 
 **The common structure across every row:** the complication is knowable at intake and expensive after an offer. **A licensee who takes the listing and resolves the complication later has moved the work to the point in the chronology where it collides with a buyer's deadlines**, and Section 1.1 explains why that is the definition of a timing defect.
 
@@ -211,7 +211,7 @@ Both failure modes are wrong — refusing to write what the client instructs ove
 >
 > **What the licensee does not do.** Tell either buyer's agent what the other offered. Lesson 08, Section 3.3 draws the line between confidentiality and misrepresentation, and **"there's another offer at 855" is confidential negotiating information about the seller's position, disclosed to the party negotiating against him.**
 >
-> **What the file records:** both offers, the analysis presented, the questions asked and their answers, the seller's decision and its date, and the disposition of the offer not accepted — Lesson 07, Section 6.10.
+> **What the file records:** both offers, the analysis presented, the questions asked and their answers, the seller's decision and its date, and the disposition of the offer not accepted — Lesson 07, Section 6.9.
 
 ## 4. Disclosure and investigation
 

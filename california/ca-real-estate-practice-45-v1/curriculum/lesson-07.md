@@ -193,7 +193,7 @@ A gift and a loan are treated differently, because an undisclosed loan is a hidd
 
 That last one deserves emphasis. A buyer who asks a licensee to help him present his finances more favorably is asking for participation in loan fraud, however casually the request is phrased.
 
-### 3.7 When readiness changes mid-search
+### 3.6 When readiness changes mid-search
 
 A buyer's financial position is established at consultation and then treated as settled. It frequently is not, and the changes that matter are the ones the buyer does not think to mention because they do not feel like loan events.
 
@@ -219,7 +219,7 @@ A buyer's financial position is established at consultation and then treated as 
 
 > **The failure this prevents.** A buyer in contract, three weeks from closing, whose lender re-pulls credit and finds a financed furniture purchase made the week the offer was accepted — because nobody told him not to, and because buying furniture for the new house is the most natural thing a person in his position does.
 
-### 3.8 Checkpoint
+### 3.7 Checkpoint
 
 You should be able to read a preapproval letter and tell the buyer what it establishes, what it leaves open, and how a seller's agent will read it.
 
@@ -354,7 +354,7 @@ In a competitive market buyers propose waiving inspection contingencies. This is
 
 Both failure modes are wrong: refusing to write the offer overstates the licensee's role, and writing it without comment abandons the advisory duty.
 
-### 5.8 A worked inspection response
+### 5.7 A worked inspection response
 
 > **The facts.** A buyer's general inspection on a fifty-year-old house returns forty-one items. Among them: an active roof leak at a valley; two double-tapped breakers in the panel; a water heater with no seismic strapping; "evidence of past moisture" at the base of a bedroom wall with the note "further evaluation recommended"; a furnace at the end of its expected life but currently operating; original galvanized supply piping; and a retaining wall in the rear yard described as "leaning, recommend evaluation by a qualified professional."
 >
@@ -376,7 +376,7 @@ Both failure modes are wrong: refusing to write the offer overstates the license
 >
 > **What the licensee must not say**, in any form: that the furnace "has years left," that galvanized piping "is normal for the age," that the double-tapped breakers are "an easy fix," or that the retaining wall is "cosmetic." **Each of those is an opinion about a building system, offered by a person without the qualification to hold it**, and each is the sentence a claim quotes.
 
-### 5.9 Checkpoint
+### 5.8 Checkpoint
 
 You should be able to look at a property's features and produce a specific investigation recommendation, and respond correctly to a buyer asking you to evaluate an inspection finding.
 
@@ -455,7 +455,7 @@ The moment of acceptance starts the clock on everything that follows, and the bu
 - Open the investigation work early rather than at the end of the period.
 - Warn the buyer, in writing, about wire fraud before any funds move — and that wire instructions will never be changed by email.
 
-### 6.10 When the offer is not accepted
+### 6.9 When the offer is not accepted
 
 Most offers do not become transactions, and the practices around an unaccepted offer are where buyer-side files are thinnest.
 
@@ -477,7 +477,7 @@ Most offers do not become transactions, and the practices around an unaccepted o
 
 > **The habit that matters:** the file is updated when the offer fails, not when a later one succeeds. **An unaccepted offer reconstructed months afterward from an inbox is the same problem as every other reconstruction in this course** — and unlike the others, this one is trivially avoidable, because the offer document already exists and only needs to be filed.
 
-### 6.11 Checkpoint
+### 6.10 Checkpoint
 
 You should be able to build an offer strategy that competes on terms rather than price alone, explain why a credit does not reduce the appraisal requirement, and list what the file must contain to show the terms were the buyer's informed decision.
 

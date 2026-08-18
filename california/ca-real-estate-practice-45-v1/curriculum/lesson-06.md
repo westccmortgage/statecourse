@@ -109,7 +109,7 @@ The truthfulness standard covers claims about the licensee as much as claims abo
 - Testimonials must be genuine and must not be presented in a way that implies a typical result where it is not.
 - Claims about a course a licensee has taken must not imply approval, endorsement, or a credential that was not conferred.
 
-### 1.8 Advertising a property that has a problem
+### 1.7 Advertising a property that has a problem
 
 The rules in this section are easy to apply to an ordinary property. They get difficult when the property carries something the seller would rather the advertising did not raise.
 
@@ -127,7 +127,7 @@ The rules in this section are easy to apply to an ordinary property. They get di
 
 **The practical procedure:** before publishing, list every factual claim the advertisement makes, name the source for each, and identify any claim whose source is the seller's recollection. **Those are the ones to verify or remove**, and they are where every advertising complaint in this category originates.
 
-### 1.9 Checkpoint
+### 1.8 Checkpoint
 
 You should be able to take a listing description, identify each factual claim in it, name the source each would require, and mark the claims that are opinion.
 
@@ -321,7 +321,7 @@ The obligation is not limited to the property. It extends to how a licensee prov
 
 That last point is the one licensees most often get wrong with the best intentions. Deciding on a buyer's behalf that a two-story house "won't work for him" and not showing it is steering, however kindly meant.
 
-### 4.9 A worked accommodation request
+### 4.8 A worked accommodation request
 
 > **The request.** A licensee is showing a rental property he has listed for an owner. An applicant emails: "I have a service dog. The listing says no pets. Also, I use a wheelchair, and I'd need the bathroom doorway widened and a ramp at the back entrance. Is that possible?"
 >
@@ -341,7 +341,7 @@ That last point is the one licensees most often get wrong with the best intentio
 >
 > **And what the licensee must never do:** ask the applicant what her disability is, tell her the property "probably isn't a good fit," suggest she look at a different property, or answer the modification question with an off-the-cuff no. **Each of those is a steering or discouragement problem in a matter that already involves two protected characteristics.**
 
-### 4.10 Checkpoint
+### 4.9 Checkpoint
 
 You should be able to classify a request as an accommodation or a modification, state the standard applied to it, and identify what may and may not be asked in verification.
 
@@ -481,7 +481,7 @@ Note what is not on the list: quietly deleting the post and moving on. Silent re
 >
 > **Response.** Correct and record each instance; institute identification in the post rather than the profile; add fair housing language to the approval checklist; define who updates status and when; and begin archiving social content at publication. The response is documented, because how a brokerage answers its own findings is itself evidence about the supervision system.
 
-### 6.8 The advertisement you did not make
+### 6.7 The advertisement you did not make
 
 A licensee's advertising footprint includes material he never wrote and cannot edit. It is still his footprint.
 
@@ -502,7 +502,7 @@ A licensee's advertising footprint includes material he never wrote and cannot e
 
 > **The archive obligation extends to all of it.** Section 6.3 requires capturing what was published as published. For syndicated and third-party material, that means periodic captures of how the listing actually appears where consumers find it — which is also how a licensee discovers that a portal has been showing a photograph he removed six weeks ago.
 
-### 6.9 Checkpoint
+### 6.8 Checkpoint
 
 You should be able to describe an approval and archive process that would allow a brokerage to answer, six months later, exactly what ran, where, when, and with whose approval.
 
