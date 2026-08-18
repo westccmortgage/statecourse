@@ -430,7 +430,36 @@ Distressed transactions concentrate every risk in this course, and three practic
 2. **Never predict an outcome** — approval of a short sale, forgiveness of a deficiency, the credit effect, or the timeline.
 3. **Recognize the fraud patterns.** Distressed situations attract equity-stripping schemes, rescue arrangements, and transfers that leave the owner worse off. A licensee who sees one escalates to the broker and does not participate, however the request is framed.
 
-### 6.8 Checkpoint
+### 6.9 Two loans, compared honestly
+
+> **A borrower is offered two structures on the same purchase.**
+>
+> - **Loan A:** fixed rate for the full term, no points, higher rate.
+> - **Loan B:** fixed for an initial period and adjustable afterward, two points paid at closing, lower initial rate.
+>
+> **The comparison a licensee is not qualified to perform**, and the analysis that shows why it matters anyway.
+>
+> **Section 4's mechanics supply the vocabulary.** Points are paid now to reduce the rate later, which makes the comparison a question about **how long the borrower holds the loan.** The shorter the holding period, the worse the points look; the longer it is, the better.
+>
+> **Section 4's amortization supplies the second half.** Early payments on an amortizing loan are mostly interest, so **a borrower who sells in four years has paid down very little principal** — which means the difference between the two structures is nearly all rate and points rather than equity.
+>
+> **The adjustable feature is the third variable, and it is the one presented worst.** The initial payment on Loan B is the number the borrower will be shown. **It is the one figure guaranteed to be true for the shortest time**, and the meaningful number is the worst case: what the payment becomes if the rate adjusts to its maximum.
+>
+> **What determines the right answer**, and none of it is on the rate sheet: how long the borrower expects to hold the property, how stable his income is, what reserves he holds, and what he would do if the payment rose to its maximum.
+>
+> **What the licensee does.**
+>
+> **He explains the mechanics** — what points are, what amortization means early in a loan, what an adjustment does — because these are concepts, and Section 4 exists so that he can.
+>
+> **He tells the borrower to ask the lender for both structures on a common basis**, including the worst-case payment on Loan B and a total cost over the holding period the borrower actually expects.
+>
+> **He asks the questions the rate sheet does not** — holding period, income stability, reserves — because those are the facts that decide it and nobody else in the transaction is asking.
+>
+> **He records the conversation.**
+>
+> **What he does not do.** Recommend either loan, characterize one as cheaper, tell the borrower "you can always refinance," or opine that rates will move in a direction. **The first three are the lender's work and the fourth is a prediction stated as a plan** — which is, across this entire course, the single most damaging sentence available in a financing conversation.
+
+### 6.10 Checkpoint
 
 You should be able to compare the two foreclosure paths on speed and deficiency, explain the reinstatement window, and state what a licensee says to a distressed client asking about a deficiency.
 

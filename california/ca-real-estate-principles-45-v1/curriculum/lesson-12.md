@@ -509,7 +509,29 @@ Price is the client's decision; the analysis and advice are the licensee's oblig
 
 > **An analysis that follows the price rather than informing it is worse than no analysis.** It documents nothing and looks, later, like an opinion manufactured to fit.
 
-### 6.9 Checkpoint
+### 6.10 A worked reconciliation
+
+> **Three approaches, one property**: a forty-year-old single-family residence in an established neighborhood, owner-occupied, being valued for a listing decision.
+>
+> - **Sales comparison** indicates a range, with the three closest comparables clustering and one outlier requiring large gross adjustment.
+> - **Cost approach** indicates a figure well above the comparison range.
+> - **Income capitalization** indicates a figure well below it.
+>
+> **The reconciliation is not an average**, and Section 3's reconciliation discussion makes the point. It is a judgment about **which approach the market for this property actually uses.**
+>
+> **Why sales comparison dominates here.** Buyers of owner-occupied single-family homes decide by comparison to other homes. **The approach mirrors the actual decision process of the actual buyers**, which is the criterion.
+>
+> **Why the cost approach comes in high, and why that is expected.** Section 4's method estimates replacement cost less depreciation plus land. **Depreciation on a forty-year-old improvement is the hardest element to estimate**, and it is systematically understated — physical wear is visible, functional obsolescence is easy to miss, and external obsolescence is frequently ignored entirely. **A high cost indication on an older property usually means the depreciation estimate is light**, not that the property is worth more than comparable sales say.
+>
+> **Why the income approach comes in low, and why it is nearly irrelevant here.** Section 5's method converts income to value. **Owner-occupied homes in most markets sell for more than their rent supports**, because the buyers are not buying income. Applying the approach produces an accurate answer to a question no participant in this market is asking.
+>
+> **The outlier comparable.** Section 3's adjustment discussion governs: a comparable requiring large gross adjustment is a weak comparable regardless of where its adjusted figure lands. **It is given little weight, and the reasoning is stated rather than the comparable being quietly dropped.**
+>
+> **The reconciliation, written.** Primary weight to sales comparison, supported by the three clustering comparables; the cost approach as a check with its depreciation limitation stated; the income approach reported and given minimal weight with the reason. **A range, with a most-probable figure inside it, and the reasoning for each on the page.**
+>
+> **Why this matters for a licensee who will never appraise.** Section 6.7's requirement is that a licensee's own opinion be defensible, and defensibility is exactly this: **the reasoning is visible, the weight given to each indication is explained, and a reader who disagrees can see where.** An opinion that states a number and shows nothing is not defensible even when it is right — **and Section 6.1's boundary means the licensee's opinion is a comparative market analysis, never an appraisal**, however carefully it was constructed.
+
+### 6.11 Checkpoint
 
 You should be able to state the appraisal-CMA boundary, distinguish supplying information from supplying a target, and list what makes an opinion reconstructable.
 

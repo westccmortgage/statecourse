@@ -414,7 +414,37 @@ Most transaction disputes are not about substance. They are about **whether some
 6. Keep superseded drafts, so the sequence of versions shows how terms changed.
 7. Audit the file at closing while memories are fresh.
 
-### 6.9 Checkpoint
+### 6.10 The contract questions a licensee must route
+
+This lesson describes contract law because a licensee works with contracts daily. **It does not qualify him to answer questions about them**, and the boundary is harder here than anywhere else in the course, because the questions arrive constantly and they sound like transaction questions.
+
+| The question | Why it routes |
+|---|---|
+| "Is this contract still enforceable?" | **Enforceability is the legal conclusion**, and it depends on facts and law rather than on the document's appearance |
+| "Did they breach?" | A legal characterization with consequences attached to it |
+| "Can I cancel and get my deposit back?" | Two legal questions — the right to cancel and the disposition of the deposit |
+| "What are my damages?" | Section 6.1's territory, and none of it is the licensee's |
+| "Does the liquidated damages clause apply here?" | Section 6.4 explains the concept; **whether it operates on these facts is counsel's** |
+| "Can I sue for specific performance?" | Section 6.3 explains why the remedy exists; **whether to pursue it is legal advice** |
+| "Is this counteroffer still open?" | Formation and revocation, applied to facts — the practice course's worked formation problem shows how quickly this gets hard |
+| "Was that email an acceptance?" | Same |
+| "Can I add a clause saying they'll pay if the appraisal is low?" | **Drafting a provision that alters rights.** Section 4.1 of Lesson 01 |
+| "They signed but wrote a note in the margin — what does that do?" | Formation, again, and the answer is genuinely uncertain |
+| "Do I have to disclose that the last deal fell through?" | A disclosure question with a legal answer |
+
+**What the licensee can do with every one of these**, and it is substantial:
+
+1. **Explain what the document provides for procedurally** — what step comes next, what the deadline is, what the form requires.
+2. **Identify that a legal question exists**, which is a service most clients cannot perform for themselves.
+3. **Recommend counsel in writing, with a date**, before the deadline that makes the answer moot.
+4. **Preserve the facts** — the dates, the communications, the sequence — so that counsel is answering from a record rather than from recollection.
+5. **Escalate to the broker**, who decides what the brokerage does.
+
+> **The distinction that makes this workable.** "Your contingency period ends Friday at 5" is a fact about the document. **"Your contingency protects you if you cancel Friday" is a legal opinion about your rights**, and the two sentences are one word apart.
+
+**And the reason the boundary is protective rather than restrictive.** Section 4.3 of Lesson 01 makes the general point; here it is specific. **A licensee who answers a contract question and is wrong has caused a loss he is answerable for**, on a subject where he had no authority to speak and where the client had a right to a qualified answer. **The referral costs nothing and transfers the question to the person who can answer it.**
+
+### 6.11 Checkpoint
 
 You should be able to name the remedies, explain why specific performance is available for real property, and give the correct answer to a client asking about a deposit.
 

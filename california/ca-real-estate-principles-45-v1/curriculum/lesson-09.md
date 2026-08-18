@@ -418,7 +418,42 @@ Every mechanism in this lesson answers one of three questions, and a licensee wh
 
 A licensee who can place a problem into one of those three, and route it accordingly, is doing the job. A licensee who answers it is not.
 
-### 6.8 Checkpoint
+### 6.9 A worked title problem
+
+> **A licensee takes a listing. The preliminary report reveals:**
+>
+> - Title vested in a person who died two years ago.
+> - A deed from that person to the current occupant, **signed and notarized but never recorded.**
+> - A deed of trust recorded eighteen months ago, signed by the occupant.
+> - A lien recorded against the deceased owner's name eleven months ago.
+>
+> **The occupant says: "My uncle gave me the house before he died. I have the deed."**
+>
+> **What each element means, applying this lesson.**
+>
+> **An unrecorded deed can still be effective between the parties.** Section 3 establishes that delivery and acceptance are what transfer title, not recording. **The occupant may well own the property.**
+>
+> **Recording is about notice to the world.** Section 4. **An unrecorded deed does not give constructive notice**, which means subsequent parties dealing with the record owner may take without knowledge of it — and the consequences depend on rules this course states and does not resolve on particular facts.
+>
+> **The eleven-month-old lien is the problem the unrecorded deed created.** It was recorded against a person the record still showed as the owner, after the deed was signed and before it was recorded. **Whether it attaches is exactly the question the recording system exists to answer**, and it is a legal question with real stakes.
+>
+> **The deed of trust signed by the occupant** was presumably underwritten on some showing of ownership, which raises its own questions about what the lender was given.
+>
+> **The delivery question is live.** Section 3.2's requirements — **was the deed delivered during the uncle's lifetime, with intent to pass title presently?** "He gave it to me" describes a belief. A deed found in a drawer after death is a different fact pattern from a deed handed over with intent, and the difference determines whether title passed at all or whether the property is part of the estate.
+>
+> **What the licensee does.**
+>
+> **He does not take the listing on the occupant's description.** Lesson 03's intake questions apply with force: how is title held, may I see the document, who must sign.
+>
+> **He routes it — to counsel and to the title company — before marketing.** **Every one of the questions above is legal**, and the title company will not insure until they are resolved.
+>
+> **He records what he was told and when**, and he does not repeat the occupant's characterization of ownership in any advertisement.
+>
+> **What he must not do.** Conclude that the unrecorded deed settles it, record the deed himself, tell the occupant the lien "won't matter because the deed is older," or market the property while the questions are open. **The fourth is the one that turns a solvable title problem into a transaction with a buyer whose deadlines are running.**
+>
+> **Why this lesson puts it here.** Sections 1 through 5 supply every concept required to see the issues — deed requirements, delivery, recording, notice, priority, and what a preliminary report is. **What they do not supply is the answer**, and knowing the difference is the professional skill.
+
+### 6.10 Checkpoint
 
 You should be able to distinguish voluntary from involuntary transfer, state the adverse possession elements including California's tax requirement, and place a title problem into one of the three questions.
 

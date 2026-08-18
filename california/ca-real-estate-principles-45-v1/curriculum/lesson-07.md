@@ -433,7 +433,37 @@ Agency ends by:
 
 **Compensation provisions may also survive**, including a protection clause applying to buyers identified during the term.
 
-### 6.9 Checkpoint
+### 6.10 A worked agency audit
+
+> **A brokerage reviews one closed file.** It contains:
+>
+> - **(a)** A listing agreement dated March 4. An agency disclosure signed by the seller dated March 7.
+> - **(b)** A buyer working with the same brokerage since February, with no disclosure in the buyer file until April 19 — the date of the purchase agreement.
+> - **(c)** A purchase agreement confirming the brokerage as **both** the listing and the selling brokerage.
+> - **(d)** **No dual agency consent from either party.**
+> - **(e)** An email dated April 12 from the buyer's salesperson to the buyer: "I talked to our listing side — I think they'd take 690."
+> - **(f)** A referral fee received from a home warranty company, disclosed nowhere in the file.
+> - **(g)** A commission disbursement showing the brokerage paid from both sides.
+>
+> **The findings, ranked.**
+>
+> **1. (c) and (d) together: an undisclosed dual agency.** Section 3.2 requires informed written consent from **both** parties, and there is none. **This is a breach of duties actually owed rather than a documentation failure**, and it is the finding that changes the character of the whole file.
+>
+> **2. (e) The confidential information moved between sides.** Section 3.3 states what dual agency does not permit, and this is the clearest possible violation of it: **the seller's negotiating position, communicated by the brokerage to the party negotiating against the seller.** It also proves item 1 was operating in fact rather than only on paper.
+>
+> **3. (f) The undisclosed referral fee.** Section 6.3 and Section 6.4. **Money received in connection with a recommendation the client relied on, with no disclosure at any point.** Unlike the timing failures below, this involves value moving without the client's knowledge.
+>
+> **4. (b) The disclosure that arrived at the offer.** Ten weeks of a working relationship, and the disclosure is dated the day of the purchase agreement. Section 4.3: **late delivery is not cured by delivery.** The document exists; nothing it was designed to accomplish occurred.
+>
+> **5. (a) The disclosure after the listing agreement.** Three days late, and the seller committed before being informed.
+>
+> **6. (g) The two-sided payment.** Section 6.2 establishes that source of payment does not determine representation, so **this is not itself a violation.** It is listed because it is the item an examiner uses to find item 1 — the disbursement is what makes the dual agency visible in thirty seconds.
+>
+> **What the brokerage does.** Records every finding with its date; preserves the file including item (e); escalates to counsel, because items 1, 2, and 3 are not internal training matters; determines what obligation exists to the parties, which is a legal question; and **changes the procedures that produced items (a), (b), and (d)** — because a brokerage whose buyer files have no disclosure step and whose system does not detect that both sides are its own will produce this file again.
+>
+> **What the brokerage does not do.** Produce a consent now, re-date item (b), or add a referral disclosure to the file today. **A documented gap is a compliance problem. A manufactured document is a different proceeding**, and every one of these findings is survivable in a way that fabrication is not.
+
+### 6.11 Checkpoint
 
 You should be able to state the negotiability sentence correctly, explain why the referral fee prohibition is not cured by disclosure, and say what survives the end of an agency.
 

@@ -409,7 +409,39 @@ Most transaction disputes are not about substance. They are about **whether some
 6. Keep superseded drafts.
 7. Audit at closing while memories are fresh.
 
-### 6.8 Checkpoint
+### 6.9 The escrow file, item by item
+
+Section 6.2 supplies the audit questions. This section supplies the inventory, because an audit without a list of what should be present can only find defects in what is there.
+
+**A complete escrow file contains:**
+
+1. **The purchase agreement**, fully executed, with acceptance evidenced and dated.
+2. **Every counteroffer**, in sequence, each executed — including any that were superseded.
+3. **Escrow instructions**, executed by both parties.
+4. **Every amendment**, executed, dated, and — critically — **with evidence it reached escrow.**
+5. **The deposit receipt**, and evidence of its handling.
+6. **The seller's disclosures**, with delivery evidenced to the buyer.
+7. **The licensee's own disclosure**, as a separate document.
+8. **The preliminary report**, with delivery evidenced.
+9. **Association documents** where applicable, with delivery evidenced and the date of delivery recorded.
+10. **Inspection and evaluation reports** obtained, and the written recommendations that preceded them.
+11. **Every contingency removal or waiver**, dated and with delivery evidenced.
+12. **Every notice**, with what it said, when, to whom, and by what method.
+13. **Payoff demands**, with their good-through dates.
+14. **The loan documents' key facts** — approval, conditions cleared, and the terms actually closed.
+15. **The estimated and final closing statements**, with the review that compared them to the agreement.
+16. **Recording confirmation and disbursement records.**
+17. **Possession arrangements**, where anything other than possession at closing was agreed.
+18. **The correspondence that evidences a decision**, moved out of an inbox and into the file.
+19. **The close-out memorandum** — what was obtained, what is missing, and what was escalated.
+
+**The five items most often absent**, and they are not random: **4, 9, 11, 12, and 18.** Every one of them is about **transmission rather than execution** — a document that exists somewhere and whose journey to the person who needed it is not recorded.
+
+**Section 6.3's superseded versions belong in items 2, 4, and 15.** The sequence of versions is what proves when a term changed and who agreed, which is the question a dispute usually asks.
+
+> **The audit's real question, restated:** could a person who was not present reconstruct what happened, when, and on what basis? **Item 19 is what makes the answer yes even where items are missing**, because a documented gap is a file that was checked, and an undocumented gap is a file that was not — and from the outside those two look identical until someone asks.
+
+### 6.10 Checkpoint
 
 You should be able to run the post-closing audit, state what may legitimately be obtained after closing and what may never be created, and explain why failed transactions are retained.
 
