@@ -82,6 +82,27 @@ Where the brokerage will act on both sides, informed written consent from **both
 
 **The control:** verify against a source at intake, and stop and escalate where authority is unclear rather than postponing the question.
 
+### 1.5 The buyer-side version of the same stage
+
+Sections 1.2 and 1.3 walk the seller-side intake. **The buyer side runs the same chronology with different content**, and it fails more often because nothing forces the paperwork.
+
+**What the buyer consultation must establish, in the order it matters:**
+
+1. **Capacity and agency**, disclosed at the outset of the working relationship — Lesson 03, Section 2.5, Transaction B. **Not at the first showing that produces an offer**, by which point weeks of advice have been given.
+2. **What the buyer is actually trying to do.** The property is the instrument; the objective is a household, a timeline, a monthly cost, or an investment return. **A search built on a property description and not on an objective produces the buyer who sees forty houses and likes none of them.**
+3. **Financial readiness, in the three separate senses** — what a lender will lend, what the buyer can carry, and what cash exists at closing. Lesson 07 separates them; the intake is where the separation is made and recorded.
+4. **The criteria, written down.** Lesson 07, Section 4.5 requires the search be documented against them, and the record only works if the criteria exist first.
+5. **The constraints the buyer has not mentioned** — a lease expiration, a school year, a co-buyer in another city, a gift that arrives on a date, a job that has not started.
+6. **What the licensee will and will not do**, including the categories that route to counsel, a tax advisor, and the lender.
+
+**Two intake failures produce most buyer-side problems.**
+
+**No agency disclosure until the offer.** Lesson 03's second worked audit is built on it, and the defect is invisible until a complaint arrives, because the file contains a signed disclosure.
+
+**Readiness assumed from a preapproval letter.** Lesson 07, Section 3.2 explains how to read one. **A buyer whose readiness was assumed is a buyer whose transaction will fail during escrow rather than before it**, and Lesson 10's worked underwriting failure is what that looks like.
+
+> **The buyer-side intake note is the same two-minute document as the seller-side one** in Section 1.4 of Lesson 02: what he said he wanted, what he was told about capacity and compensation, and what he was told the licensee would not do. **It is the only evidence that will exist about the conversation that framed the rest.**
+
 ## 2. Listing and marketing
 
 ### 2.1 The agreement
@@ -118,6 +139,25 @@ Approval before publication, and an archive of what ran, where, when, and with w
 
 **The control:** disclosure work scheduled at listing, and an approval process fast enough that licensees do not route around it.
 
+### 2.6 When the listing is not straightforward
+
+The listing stage in Sections 2.1 through 2.4 assumes an owner who can convey, a property that is what it appears to be, and a market with comparables. **Where any of those fails, the stage takes longer and skipping the extra work is the defect that surfaces later.**
+
+| The complication | What it adds before marketing begins |
+|---|---|
+| **Multiple owners, or an owner acting for another** | The authority question, answered from documents rather than description — Lesson 04, Section 1.6 |
+| **A trust, estate, or dissolution** | Authority, plus disclosure limits from a seller with little knowledge — Lesson 09, Section 1.6 |
+| **Unpermitted or unrecorded improvements** | Verification of what may be advertised, before a square footage or a room count is published — Lesson 06, Section 1.8 |
+| **A tenant in possession** | Access rules, notice requirements, and disclosures the tenancy generates — Lesson 12 |
+| **A property in a common-interest development** | Association documents ordered at the start, because the buyer's review period is what remains after delivery |
+| **Insufficient equity** | A different conversation entirely, with routing rather than pricing — Lesson 05, Section 4.6 |
+| **A property with a hazard or insurance problem** | Insurance availability established early, because a buyer discovers it late otherwise — Lesson 09, Section 3.7 |
+| **A thin comparable set** | A range with its reasoning rather than a number with false precision — Lesson 05, Section 1.7 |
+
+**The common structure across every row:** the complication is knowable at intake and expensive after an offer. **A licensee who takes the listing and resolves the complication later has moved the work to the point in the chronology where it collides with a buyer's deadlines**, and Section 1.1 explains why that is the definition of a timing defect.
+
+> **The professional posture:** an intake that identifies three items requiring resolution before listing has done its job. **The seller who wants to go on the market Friday is served, not obstructed, by being told which two of the three can run in parallel and which one cannot.**
+
 ## 3. Offer and negotiation
 
 ### 3.1 Formation
@@ -145,6 +185,33 @@ Both failure modes are wrong — refusing to write what the client instructs ove
 **Misrepresenting competing offers**, and **failing to document that a waiver was informed.**
 
 **The control:** never describe an offer that does not exist, and put the consequences of a waiver in writing before the client decides.
+
+### 3.5 A worked negotiation
+
+> **The situation.** A listing at 849,000, eleven days on market, one showing-heavy weekend. Two offers arrive Sunday evening.
+>
+> - **Offer A:** 842,000, conventional financing with twenty percent down, standard periods, no repair requests contemplated, close in thirty days, preapproval from a lender the listing agent has not heard of.
+> - **Offer B:** 855,000, ten percent down, investigation period shortened to ten days, appraisal contingency waived, close in twenty-one days, a letter about how much the buyers love the house, preapproval from a national lender.
+>
+> **What the licensee does first.** Presents both. Lesson 08, Section 2.4 governs, and neither offer is characterized before the seller has seen them.
+>
+> **Then the analysis the seller needs, which is not a ranking.**
+>
+> **On price:** B is 13,000 higher nominally. **The net comparison is what matters** — Lesson 10, Section 5.3 — and the offers must be compared on proceeds after costs and credits rather than on the headline.
+>
+> **On the appraisal waiver:** B's waiver is worth something only if the buyer can perform it. **Ten percent down and a waived appraisal contingency is a combination that deserves scrutiny** — if the property appraises 20,000 low, the buyer must produce that cash on top of his down payment, and the file gives no indication he has it. Lesson 08, Section 4.7 explains the mechanism, and Lesson 10, Section 1.6 explains what verifying capacity actually looks like.
+>
+> **On the lenders:** the unfamiliar lender on A is not a defect. **Lesson 10, Section 1.3 governs how to read a preapproval**, and the reading is about what the letter says was verified, not about brand recognition. Treating a national name as inherently stronger is a shortcut, and it is the sort of shortcut that quietly disadvantages some buyers.
+>
+> **On the timelines:** B closes in twenty-one days. **Whether B's lender can close in twenty-one days is a question with an answer**, obtainable by asking, and an aggressive date the lender cannot meet converts the buyer's strength into his default.
+>
+> **On the letter:** it is set aside. **Personal letters can convey protected characteristics**, and Lesson 14's analysis applies — a seller's decision influenced by what a letter reveals about who the buyers are is exactly the decision fair housing law reaches. **The listing agent's handling of these is a brokerage policy question, decided in advance rather than offer by offer.**
+>
+> **What the licensee says.** The analysis, the risks in each, the questions he recommends asking before the seller decides, and **no recommendation about which buyer deserves the house.** Lesson 03, Section 3.1: the terms and the decision are the seller's; the analysis is the licensee's.
+>
+> **What the licensee does not do.** Tell either buyer's agent what the other offered. Lesson 08, Section 3.3 draws the line between confidentiality and misrepresentation, and **"there's another offer at 855" is confidential negotiating information about the seller's position, disclosed to the party negotiating against him.**
+>
+> **What the file records:** both offers, the analysis presented, the questions asked and their answers, the seller's decision and its date, and the disposition of the offer not accepted — Lesson 07, Section 6.10.
 
 ## 4. Disclosure and investigation
 
@@ -220,6 +287,43 @@ Possession transfers when the contract says, which may not be at recording. Any 
 
 **The control:** every change to a term is a written amendment signed by both parties and delivered to escrow.
 
+### 5.6 The closing week
+
+The last seven days of a transaction concentrate more failure modes than the preceding forty, because everything deferred arrives at once and everyone involved is working against the same date.
+
+**What should already be done by day minus seven**, and the list is short because it is the list that cannot be compressed:
+
+1. **All contingencies resolved**, with the removals dated and delivered.
+2. **All amendments signed and at escrow** — Lesson 11, Section 1.6. **Anything agreed and not transmitted does not exist to escrow.**
+3. **Loan clear to close**, with any remaining conditions identified by name rather than described as "just a couple of things."
+4. **Payoff demands obtained**, with good-through dates that cover the actual closing.
+5. **Association documents delivered and any transfer requirements started.**
+6. **Insurance bound**, which is the item most often assumed and least often confirmed.
+7. **The estimated closing statement reviewed** against the agreement and the amendments — Lesson 10, Section 5.7.
+
+**What happens in the final days:**
+
+**The walkthrough** — Lesson 11, Section 4.7 — performed with enough margin before signing that a finding can be addressed. **A walkthrough the morning of closing is a walkthrough that cannot produce a response.**
+
+**Wire instructions**, and the single non-negotiable discipline in this course: **verify by voice, at a number obtained independently, before any funds move.** Not the number in the email. Not by replying to the thread. The warning is given at the start of the transaction and repeated in the closing week, because that is when the attack arrives.
+
+**The signing**, where the client will be handed documents he has not seen. **The licensee's contribution is that nothing at the table is a surprise** — which is a statement about the preceding six weeks rather than about the signing.
+
+**Possession**, arranged, documented, and — if anyone will be in the property after closing — **reduced to a written agreement rather than a courtesy.** Lesson 11, Section 5.2.
+
+**The failure modes to watch for, each addressed elsewhere in the course:**
+
+| The failure | Where it was prevented |
+|---|---|
+| A credit agreed and never transmitted | Lesson 11, Section 1.6 |
+| A condition surfacing on day 33 | Lesson 10, Section 4.7 |
+| A payoff demand expiring before closing | Lesson 10, Section 5.6 |
+| A walkthrough finding with no time to respond | Lesson 11, Section 4.7 |
+| Wire instructions from a compromised thread | Lesson 11, Section 4.6 |
+| Possession by handshake | Lesson 11, Section 5.2 |
+
+> **The pattern in all six:** none is a hard problem. **Each is an easy problem that arrived on the day it could no longer be solved**, and the closing week is where the chronology's earlier shortcuts present their bill.
+
 ## 6. Complete file compliance audit
 
 ### 6.1 The standard
@@ -283,7 +387,43 @@ When you meet a situation this course did not cover, four questions will usually
 3. **Does this decision have the information it requires?** If not, something is out of order.
 4. **What will the file show?** If the answer is "nothing," create the record now, while it is contemporaneous and true.
 
-### 6.6 Checkpoint
+### 6.6 The four questions, applied
+
+Section 6.5 supplies four questions for situations this course did not cover. Their value is only demonstrable on situations it did not cover, so here are three.
+
+> **Situation one.** A past client calls. Her elderly father is selling his house and moving in with her. She wants you to list it. On the visit, the father is present but says little; the daughter answers for him, produces a power of attorney, and mentions that "he gets confused sometimes." She wants a fast sale at a price you think is well below the range.
+>
+> **Whose decision is this?** The seller's. **Which raises the question of who the seller is** — the father, with the daughter acting under an authority whose scope is a document you have not read and whose validity is a legal question.
+>
+> **Whose duty is engaged?** If you take the listing, fiduciary duties run to the principal. **Determining who the principal is, and whether the person instructing you has authority to instruct you, is the first task and not a formality.**
+>
+> **Does this decision have the information it requires?** The price is below your range and the seller has not spoken. **You do not know that the father knows what is being done.**
+>
+> **What will the file show?** Right now, nothing. **The correct actions:** read the authority, speak with the father directly and privately, deliver the pricing analysis to him, document what you observed, and take the whole thing to your broker — because elder financial abuse is a live concern with specific California frameworks, and this fact pattern is one of its recognized shapes. **You do not accuse anyone. You escalate facts.**
+
+> **Situation two.** Your buyer client, in contract, tells you he has decided to rent the property out rather than live in it, and asks you not to mention it because "the loan is an owner-occupied loan and it's none of their business."
+>
+> **Whose decision is this?** His occupancy is his. **What he tells his lender is not a matter of preference** — occupancy is material to the credit decision.
+>
+> **Whose duty is engaged?** Confidentiality runs to him. **It does not extend to participating in a misrepresentation to a third party**, which is the boundary Lesson 03, Section 3.2 draws in a different context and which holds here.
+>
+> **Does this decision have the information it requires?** He may not know that occupancy is material or that a misstatement is loan fraud. **Telling him is the first step and it frequently ends the problem.**
+>
+> **What will the file show?** Whatever you write down today. **The correct actions:** tell him plainly, tell him to inform his lender, decline to be part of any communication that states otherwise, and escalate to your broker. **You do not resolve it by not asking again.**
+
+> **Situation three.** A seller you represent tells you at the listing appointment that the neighbor's fence has been three feet onto his property for twenty years and "we've had an understanding." He would rather not raise it now.
+>
+> **Whose decision is this?** Whether to resolve the boundary is his. **Whether it is disclosed is not.**
+>
+> **Whose duty is engaged?** Disclosure of material facts runs to everyone. **A boundary discrepancy affects what the buyer is acquiring**, and it is squarely material.
+>
+> **Does this decision have the information it requires?** No — **and neither does the seller**, because the legal effect of twenty years of an "understanding" is a question with real answers that neither of you knows.
+>
+> **What will the file show?** **The correct actions:** disclose it, recommend the seller obtain legal advice about it before listing, recommend a survey, document the conversation the day it happens, and do not characterize the boundary yourself.
+
+**The pattern across all three.** None was covered by a rule you memorized. **All three resolved to the same four steps: identify the decision-maker, identify the duty, determine whether the decision is informed, and create the record.** That sequence is what this course was building, and it will answer situations that have not happened yet.
+
+### 6.7 Checkpoint
 
 You should be able to take an unfamiliar transaction problem, apply the four questions, and produce both the action and the record it requires.
 
