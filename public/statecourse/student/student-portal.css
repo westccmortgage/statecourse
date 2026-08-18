@@ -102,6 +102,22 @@ footer { display:flex; justify-content:space-between; gap:20px; min-height:68px;
 .registration-footer nav { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:18px; }
 .registration-footer a { color:#eef1f2; text-decoration:underline; text-underline-offset:3px; }
 
+/* Student sign in */
+.signin-main-redesign { padding-top:66px; }
+.signin-shell { width:min(100%,620px); }
+.signin-card { padding:40px 44px 36px; }
+#studentSignIn { display:grid; gap:22px; }
+.signin-button { margin-top:3px; }
+.new-account-section { margin-top:28px; padding-top:25px; border-top:1px solid var(--rule); text-align:center; }
+.new-account-section p { margin:0; color:var(--muted); font-size:13px; line-height:1.55; }
+.new-account-section p strong { color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:19px; font-weight:600; }
+.new-account-section p + p { margin-top:7px; }
+.secondary-account-link { display:block; width:100%; min-height:50px; margin-top:18px; padding:13px 18px; border:1px solid var(--burgundy); color:var(--burgundy); font-size:13px; font-weight:800; text-align:center; }
+.secondary-account-link:hover { background:#f4ebe7; }
+.signin-assurance { display:grid; grid-template-columns:minmax(180px,.75fr) 1.25fr; gap:22px; margin-top:24px; padding:22px 25px; border:1px solid var(--rule); border-left:4px solid var(--gold); background:#eee8dc; }
+.signin-assurance strong { color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:17px; line-height:1.35; }
+.signin-assurance span { color:#4e5559; font-size:12px; line-height:1.6; }
+
 @media(max-width:760px){
   .portal-header{padding:0 18px}.brand small,.portal-header nav>a{display:none}main{padding:30px 18px 50px}.portal-intro{grid-template-columns:1fr;gap:20px}.portal-summary{grid-template-columns:repeat(3,1fr)}.course-card{grid-template-columns:55px 1fr}.course-actions{grid-column:1/-1}.section-heading{display:block}.section-heading h2{margin-top:5px}footer{display:grid;padding:16px 18px}
   .registration-header { min-height:70px; }
@@ -119,6 +135,9 @@ footer { display:flex; justify-content:space-between; gap:20px; min-height:68px;
   .enrollment-callout { padding:21px 21px 19px; }
   .registration-footer { gap:13px; text-align:center; }
   .registration-footer nav { justify-content:center; gap:12px 18px; }
+  .signin-main-redesign { padding-top:42px; }
+  .signin-card { padding:31px 23px 27px; }
+  .signin-assurance { grid-template-columns:1fr; gap:8px; padding:20px 21px; }
 }
 
 @media(max-width:420px){
