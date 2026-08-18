@@ -75,6 +75,22 @@ Before managing, the manager should obtain from the owner: known property condit
 
 Deposits held by the owner from an existing tenancy deserve particular attention. Where deposits transfer to the manager, they are trust funds from the moment received, and the amounts must reconcile to the leases.
 
+### 1.6 The management agreement's hardest terms
+
+Section 1.2 lists what the agreement establishes. Four of its terms produce nearly all management disputes, and each is worth negotiating deliberately rather than accepting from a template.
+
+**Scope of authority over money.** Section 1.4 sets spending authority; the harder question is what the manager may do when the authority is insufficient and the owner cannot be reached. **An emergency provision with no dollar figure and no definition of emergency is a provision that will be argued about**, and it will be argued about after the manager has already spent the money.
+
+**Who decides on a tenant.** The agreement should say whether the manager approves applicants against the written criteria or forwards them to the owner. **The second arrangement is where fair housing exposure concentrates**, because an owner reviewing applicants is an owner making decisions on information the criteria do not include. Where an owner insists on approving, **the criteria still govern, the manager still applies them first, and the manager does not transmit an owner's improper reason to an applicant.**
+
+**Term, termination, and what happens to the tenancies.** A management agreement ending does not end the leases. **The transfer of trust funds, deposits, records, and keys on termination is a term**, and its absence is why manager transitions produce deposit disputes years later.
+
+**What the manager is not responsible for.** Habitability obligations run to the owner, and an agreement cannot make the manager the party who does not perform them. **What an agreement can do is state who does what**, and clarity here is protective for both sides. An agreement silent on who obtains required inspections, who maintains required systems, and who holds the compliance obligations produces a gap that shows up during an enforcement matter.
+
+> **A term worth adding that most agreements lack:** what happens when the owner instructs the manager to do something the manager may not lawfully do. **Naming it in advance — the manager declines, states why in writing, and the instruction does not proceed — converts a future confrontation into a term both parties already accepted.**
+
+**And one practical requirement.** The manager cannot perform an agreement he cannot find. **A signed original, in the file, with every exhibit** — the criteria, the fee schedule, the authority limits — is the baseline, and Section 1.3's point about unsigned authority is the reason.
+
 ## 2. Tenant selection and fair housing
 
 ### 2.1 Written criteria applied uniformly
@@ -133,6 +149,35 @@ The provider may still evaluate reasonableness, and the resident remains respons
 
 Rental advertising is subject to the same rules covered in Lesson 06: describe the property, not the occupants. "Ideal for professionals, no students," "quiet building, adults preferred," and "perfect for a single person" all sort people. And the photographs must depict **the actual unit** — advertising a vacancy with images of a nicer unit in the building misrepresents what is offered, however similar the floor plans.
 
+### 2.8 The application process, start to finish
+
+Fair housing exposure in leasing is concentrated in a process that takes a week, and most of it is decided before any applicant applies.
+
+**Before the property is advertised:**
+
+1. **Written criteria exist** — income standard, credit standard, rental history, and whatever else the owner lawfully requires — with each element defined so that two people applying it reach the same result.
+2. **The criteria have been reviewed** against what California prohibits, which Section 2.4 notes is broader than the federal baseline, and against how each element operates in practice rather than only in intent.
+3. **The criteria are published or available to applicants**, so an applicant knows what he is being measured against.
+
+**When inquiries arrive:**
+
+4. **Every inquiry gets the same information** — availability, price, terms, criteria, and the application process. **The most common violation in leasing is not a denial. It is different information given to different callers**, and it leaves almost no trace.
+5. **Every inquiry is logged** — date, contact, property, what was said. This is the record that answers a testing complaint, and there is no substitute for it.
+
+**When applications arrive:**
+
+6. **Applications are processed in a defined order**, and the order is documented. First-come-first-served is a rule; "whoever seems easiest" is not.
+7. **The same verification steps run for every applicant.** Additional scrutiny applied to some applicants is the pattern Lesson 14 of the mortgage course calls selective scrutiny, and it produces a violation even where every decision was defensible.
+8. **Accommodation requests are handled on their own track** — Section 2.5 and Section 4.9 of Lesson 06 — **and never as a reason the application slows down or stops.**
+
+**When a decision is made:**
+
+9. **The decision states the criterion it rests on**, recorded at the time.
+10. **Adverse action requirements are met** where a consumer report contributed, including the disclosures the framework requires.
+11. **The file is retained** — approved and denied alike. **Denied applications are the ones an examination is interested in**, for the same reason denied loan files are.
+
+> **The test of the whole process:** hand the file to someone who was not there and ask them to explain why each applicant was approved or denied. **If the answer requires knowing what the manager thought, the process failed** — not necessarily unlawfully, but in the only way that can be proved either direction.
+
 ## 3. Rents, deposits, and accounting
 
 ### 3.1 What is a trust fund
@@ -184,6 +229,35 @@ The trust account is reconciled on a regular cycle, and the reconciliation compa
 
 A reconciliation that balances the bank against the book but never against the beneficiary ledgers will not detect the error that matters most — money in the account belonging to a different beneficiary than the records say.
 
+### 3.7 A worked trust account month
+
+> **A manager holds funds for nine properties in one trust account. During March:**
+>
+> - Rent arrives for eight of nine properties; one tenant pays partially.
+> - Two owners are due disbursements; one has asked that his be held for an upcoming repair.
+> - A plumber is paid from property four's funds.
+> - A tenant at property seven moves out; the deposit must be accounted for.
+> - The manager's monthly fees are earned across all nine.
+> - A tenant at property two pays with a check that is returned unpaid after the manager has already disbursed to that owner.
+>
+> **What each event requires.**
+>
+> **The partial rent** is recorded against that property's ledger for the amount actually received. **It is not rounded, netted, or recorded as full with a note.** Section 3.3 explains why the property-level ledger is what makes the account auditable.
+>
+> **The held disbursement** stays in trust and stays on the owner's ledger. **It is the owner's money being held on his instruction**, which is a different thing from money the manager has not gotten around to sending, and the instruction should be in writing.
+>
+> **The plumber's payment** comes from property four's funds and is recorded against property four. **A payment for one property made from another property's funds is a use of one owner's money for another's benefit**, and it is a violation regardless of whether the total balance was sufficient.
+>
+> **The move-out deposit** is accounted for on the terms the deposit framework requires, within the required period, with the itemization the framework prescribes. Section 3.5 governs. **The deposit was never the owner's money and it is not now the manager's**, and a deduction is documented by what was actually spent or reasonably estimated on stated terms.
+>
+> **The manager's fees** are earned when the agreement says they are earned, and **they are removed from the trust account** rather than left in it. Section 3.2's second obligation cuts both ways: broker funds do not stay in trust any more than trust funds go into the operating account.
+>
+> **The returned check is the month's real problem.** The manager disbursed money against funds that did not exist. **The account is now short**, and Section 3.4 governs: the shortage is corrected by the broker, immediately, from broker funds, and documented — **it is not carried until the tenant makes good, and it is not covered by the balances of the other eight properties**, which is exactly what "the account still has enough in it" means and exactly why that reasoning is wrong.
+>
+> **The reconciliation at month end** compares the bank balance to the sum of the individual ledgers, and Section 3.6 requires that both sides be examined. **A bank-to-book reconciliation alone would show this account balancing**, because the total is right; the property-level comparison is what reveals that property two's ledger is negative and property four paid property four's plumber with property four's money only because the total happened to cover it.
+>
+> **What the file shows afterward:** every receipt, every disbursement, the corrected shortage with its date and source, the owner's written hold instruction, the deposit accounting with its itemization, and a three-way reconciliation signed by the person who performed it.
+
 ## 4. Maintenance, habitability, and access
 
 ### 4.1 The habitability obligation
@@ -234,6 +308,26 @@ A tenant who is cooperated with is far easier to show around than one whose righ
 Where a habitability obligation goes unmet, a tenant may have remedies. A manager's practical concern is that the exposure grows with delay, and that a documented prompt response is the defense.
 
 Where a tenant asserts a remedy, the matter should be escalated to the broker and, where appropriate, to counsel. It is not a matter for the manager to resolve by argument with the tenant.
+
+### 4.7 A worked maintenance week
+
+> **Monday.** A tenant reports no hot water. **Triage places this high** — Section 4.2 — because hot water is a habitability item rather than a convenience. The manager dispatches the same day, records the report time, the dispatch time, and the vendor.
+>
+> **Monday, later.** A different tenant reports a dripping faucet. Logged, scheduled, and communicated with a date. **The fact that it is minor does not mean it goes unanswered** — an unanswered minor request is how a tenant learns that reports do not produce responses, which is how the next urgent report arrives late.
+>
+> **Tuesday.** The hot water vendor reports the unit is failed and replacement exceeds the manager's spending authority. **Section 1.4 governs.** The manager reaches the owner, documents the contact and the authorization, and proceeds. **Where the owner cannot be reached and the condition is a habitability item, the emergency provision is what the manager relies on** — and this is why Section 1.6 argues for defining it in advance.
+>
+> **Wednesday.** The owner instructs the manager to install a used unit a friend is providing rather than the quoted replacement. The manager confirms in writing what was instructed, states what the requirement is for the work and the permit, and **routes the question rather than deciding it.** An owner's cost preference does not override the standard the work must meet.
+>
+> **Thursday.** A tenant at another property reports a broken window she says was broken by a neighbor's child. **Repair first, allocate later.** The security of the unit is a present condition; who pays is a separate question resolved afterward on the lease's terms and the facts.
+>
+> **Thursday, later.** The manager needs to enter a unit to inspect a reported leak. **Section 4.4 governs**, and the notice requirements apply to an inspection just as they apply to a repair. **A tenant's earlier report is not a standing invitation to enter**, and entering without the required notice converts a maintenance visit into a violation.
+>
+> **Friday.** A tenant who reported the hot water on Monday and has now had it fixed asks whether her rent will be reduced for the four days. **The manager does not answer this.** Whether any adjustment is owed is a legal question about remedies, and it goes to the broker and, where appropriate, counsel. **What the manager does is give the owner the facts and the dates**, which are exactly the facts the question will be decided on.
+>
+> **What the week produced in the file.** Every report with its date and time. Every dispatch with its vendor. Every authorization with who gave it. Every entry with its notice. Every invoice against the property it belongs to. **Section 4.3's documentation requirement is not a separate task performed at the end of the week — it is the week, written down as it happened.**
+>
+> **The failure this prevents.** Six months later a tenant alleges the hot water was out for three weeks and the manager entered her unit twice without notice. **The log answers both allegations in thirty seconds, or it answers neither.**
 
 ## 5. Lease enforcement and termination
 
@@ -328,7 +422,31 @@ An audit finding of that kind sits alongside commingling and unsigned agreements
 >
 > **The absence of complaints is not evidence of compliance.** It usually means the problems have not surfaced yet, and in a management practice — which repeats monthly across every unit — they will.
 
-### 6.6 Checkpoint
+### 6.7 The owner who wants something the manager cannot do
+
+Managers receive improper instructions more often than sales licensees do, because owners think of the property as theirs and of the manager as staff. **The instructions are usually not malicious. They are the owner solving a problem the only way he has thought of.**
+
+| The instruction | Why it cannot be followed |
+|---|---|
+| **"Don't rent to [category]."** | Unlawful, whatever the phrasing, including where the owner offers a business reason. Lesson 03's obedience limit governs and the answer is refusal plus escalation. |
+| **"Just change the locks, he hasn't paid in two months."** | Section 5.4. **Self-help is prohibited**, and the manager who performs it has done the unlawful act himself. |
+| **"Shut off the water until she pays."** | The same category, and it compounds a habitability failure onto an unlawful eviction attempt. |
+| **"Don't give the deposit back, he was a bad tenant."** | The deposit is governed by a framework with a procedure and a timeline. **"Bad tenant" is not a deduction category.** |
+| **"Use this month's rent from the other building to cover my repair."** | One owner's funds for another's benefit. Section 3.7's plumber, in a more explicit form. |
+| **"Skip the inspection this year."** | Where an inspection is required, it is required. **The manager does not certify or record that something happened when it did not.** |
+| **"Tell the tenant the landlord is a management company"** when the owner wants to conceal his identity | Disclosure obligations about who the owner is exist for a reason, and misstating it is a misrepresentation. |
+| **"Raise her rent, she keeps complaining."** | Section 5.3. **A rent increase following complaints has the appearance of retaliation** regardless of the owner's actual reason, and the appearance is itself the problem. |
+
+**The response is the same in every row, and it has four parts:**
+
+1. **Decline clearly.** Not "let me look into it" when the answer is already known.
+2. **Say why**, in terms of what the manager may lawfully do rather than in terms of the owner's motives. **The owner is far more likely to accept a limit on the manager than an accusation about himself.**
+3. **Offer the lawful path** where one exists — the notice procedure instead of the lockout, the deduction process instead of withholding the deposit, the documented business reason instead of the retaliatory-looking increase.
+4. **Write it down the same day**, and send the confirmation to the owner. **The written record is what protects the manager if the owner does it himself**, and it is what the broker needs.
+
+> **And the fifth step, when the owner insists:** this goes to the broker. **A manager who continues managing a property for an owner who has instructed him to break the law, without escalating, has made the brokerage's problem into his own.** Whether the engagement can continue is a brokerage decision, and Section 1.6's suggested term is what makes the conversation easier when it comes.
+
+### 6.8 Checkpoint
 
 You should be able to explain why an internal ledger does not cure commingling, name the three balances a trust reconciliation must agree, and state why a defective notice defeats a well-documented enforcement action.
 
