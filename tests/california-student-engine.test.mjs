@@ -20,12 +20,19 @@ test("California keeps three independent 45-hour course records",()=>{
 });
 
 test("student assessment payload never exposes its answer or rationale",()=>{
-  const full=getCaliforniaAssessment(CALIFORNIA_COURSE_IDS[0],"assignment-01","engagement");
+  const full=getCaliforniaAssessment("ca-real-estate-practice-45","assignment-01","engagement");
   const safe=publicAssessment(full);
-  assert.equal(typeof full.correctChoice,"number");
-  assert.equal(typeof full.rationale,"string");
-  assert.equal("correctChoice" in safe,false);
-  assert.equal("rationale" in safe,false);
+  assert.ok(full.items.length>1);
+  for(const item of full.items){
+    assert.equal(typeof item.correctChoice,"number");
+    assert.equal(typeof item.rationale,"string");
+  }
+  for(const item of safe.items){
+    assert.equal("correctChoice" in item,false);
+    assert.equal("rationale" in item,false);
+  }
+  assert.equal(JSON.stringify(safe).includes("correctChoice"),false);
+  assert.equal(JSON.stringify(safe).includes("rationale"),false);
 });
 
 test("California is not assigned the Virginia 50-minute hour completion rule",()=>{

@@ -13,8 +13,9 @@ node scripts/audit-california-content.mjs --strict   # exit 1 unless every gate 
 
 ## Summary
 
-Four of the six Phase 1 concerns recorded in the project handoff are already resolved in `main`. Two are
-confirmed open, and one previously unrecorded defect was found in the assessment engine.
+Four of the six Phase 1 concerns recorded in the project handoff were already resolved in `main`. One
+previously unrecorded defect was found in the assessment engine and has been fixed here. One concern — the
+lesson prose — remains open and is the largest remaining item in Phase 1.
 
 | Handoff item | Recorded status | Verified status |
 | --- | --- | --- |
@@ -22,11 +23,11 @@ confirmed open, and one previously unrecorded defect was found in the assessment
 | Raw Markdown appears in rendered lessons | Open | **Resolved** — 0 leaks across all 45 lessons |
 | Headings and body text start lowercase | Open | **Resolved** — the reader title-cases headings and sentence-cases prose at render time |
 | Lesson content is generic or insufficient | Open | **Open — confirmed, and worse than described** (see below) |
-| California DRE submission artifacts missing | Open | **Open — confirmed absent**; also blocked in the current environment |
-| Scored assessments | Not recorded | **Open — newly found defect** |
+| California DRE submission artifacts missing | Open | **Open — confirmed absent**; official forms now supplied, see `dre-submission-requirements.md` |
+| Scored assessments | Not recorded | **Was a newly found defect — now resolved** |
 
-The handoff's instruction to rebuild the reader and fix rendering and capitalization has therefore already been
-carried out. The remaining Phase 1 work is the lesson prose and the assessments.
+The handoff's instruction to rebuild the reader and fix rendering and capitalization had therefore already
+been carried out before this audit. **The remaining Phase 1 work is the lesson prose.**
 
 ## Finding 1 — lesson prose is one template stamped 2,836 times
 
@@ -60,11 +61,11 @@ not be prepared for the salesperson examination.
 the per-lesson objectives, the 180-minute timed sequence, and the six-topic lesson structure. The scaffolding is
 right; only the prose inside it is placeholder.
 
-## Finding 2 — all 135 scored items are the same question
+## Finding 2 — all 135 scored items were the same question (**resolved**)
 
-`getCaliforniaAssessment()` in `config/california-course-engine.mjs` builds every applied exercise, engagement
+`getCaliforniaAssessment()` in `config/california-course-engine.mjs` built every applied exercise, engagement
 check, and remediation item in all three courses from one fixed four-item answer list, rotated into a different
-order per lesson.
+order per lesson. As found:
 
 | Measure | Value |
 | --- | --- |
@@ -74,17 +75,56 @@ order per lesson.
 | **Distinct correct answers** | **1** |
 | Distinct rationales | 3 |
 
-The correct answer is always the same sentence — *"Verify the governing facts and current authority, document
-the analysis, and escalate questions beyond the licensee's scope."* — and the three distractors are the same
-three implausible options every time. A student who notices this after one lesson can answer every remaining
+The correct answer was always the same sentence — *"Verify the governing facts and current authority, document
+the analysis, and escalate questions beyond the licensee's scope."* — and the three distractors were the same
+three implausible options every time. A student who noticed this after one lesson could answer every remaining
 scored item in all three courses without reading anything.
 
-Two further inconsistencies follow from this:
+Two further inconsistencies followed from this:
 
 - Each lesson's timed sequence table promises a *"Lesson assessment — five scored items"*, but the engine
-  serves exactly one item per kind. The published lesson plan and the running system disagree.
+  served exactly one item per kind. The published lesson plan and the running system disagreed.
 - The lesson text states an 80% lesson mastery threshold. With a single item per check, the only achievable
-  scores are 0% and 100%, so the threshold cannot function as written.
+  scores were 0% and 100%, so the threshold could not function as written.
+
+### What replaced it
+
+Per-lesson question banks now live in `config/california/*-question-bank.mjs`, one module per course:
+
+| Measure | Before | After |
+| --- | --- | --- |
+| Assessments authored | 0 (all generated from one template) | 135 / 135 |
+| Scored items | 135 | 495 |
+| Distinct answer-choice sets | 1 | 495 |
+| Distinct correct answers | 1 | 495 |
+| Distinct rationales | 3 | 495 |
+
+Each lesson carries one applied scenario, a five-item engagement check, and five alternate remediation items
+covering the same concepts a second way, so a student who fails the check is retested rather than re-shown
+the question they already missed. That makes the lesson plan's two claims true: the check is genuinely five
+scored items, and the 80% threshold is now achievable and meaningful (4 of 5).
+
+Items test reasoning, roles, sequence, and professional boundaries. They deliberately do not turn on a
+specific fee, filing deadline, or code section number, because those must be verified against current DRE
+and California statutory sources before submission and an item hard-coding an unverified figure would teach
+a rule the course cannot yet support.
+
+Three supporting changes were needed:
+
+- **Scoring moved into the engine** (`scoreCaliforniaAssessment`) so the student path, the reviewer path,
+  and the tests grade identically. The API now returns an item set with a passing percentage rather than a
+  single question.
+- **The attempt counter was corrected.** It previously counted attempt rows; a five-item quiz writes five
+  rows per attempt, so it now takes the highest recorded attempt number instead. One audit row per item is
+  still written, which the existing schema already supported — no migration was required.
+- **Choices are permuted deterministically per item.** Items are authored with the correct answer first,
+  which keeps the banks reviewable, so presenting them in authored order would have reproduced the original
+  defect in a new form: every correct answer at position A. The order is derived from the item id, so it is
+  stable across requests and sessions — which the audit trail requires, since a recorded `selected_choice`
+  must keep meaning the same option permanently.
+
+Rationales are withheld on a failed attempt: the student is routed to the alternate explanation and the
+remediation items instead of being handed the answer key to the questions just missed.
 
 ## Finding 3 — the DRE submission package does not exist
 
@@ -93,12 +133,11 @@ Information Page, a proctor package, or a student/instructor examination version
 application artifact of any kind is committed. The handoff's statement that these were never completed is
 accurate and should not be reported otherwise.
 
-**New constraint:** this build environment cannot reach the regulator. Both `dre.ca.gov` and
-`leginfo.legislature.ca.gov` are blocked by the network egress proxy, for direct requests and for the fetch
-tooling alike. Because the project's controlling rule is that official current regulator sources govern and that
-no requirement may be invented, the RE 306 and RE 336 packages cannot be built here without fabricating form
-structure and filing requirements. Phase 2 needs either an environment with egress to `dre.ca.gov` allowed, or
-the official forms and the current Course Provider Handbook supplied directly into the repository.
+**Resolved during this session.** This build environment cannot reach the regulator — both `dre.ca.gov` and
+`leginfo.legislature.ca.gov` are blocked by the network egress proxy — so the owner supplied RE 303, RE 306,
+RE 307, and RE 336 directly. They are committed in `california/dre-sources/`, and the requirements they impose
+are mapped in [`dre-submission-requirements.md`](dre-submission-requirements.md). That analysis supersedes this
+finding and should be read instead of it for anything Phase 2.
 
 ## Finding 4 — what is verified working
 
@@ -143,15 +182,15 @@ pages have no committed hand-built version.
    block quotes as `<blockquote>`, headings to level 6, thematic breaks as `<hr>`, and backticked form names as
    `<code>`, each with matching textbook styling. Code spans are escaped before rendering, so a form name cannot
    smuggle markup into the lesson body. Covered by `tests/california-content-quality.test.mjs`.
-2. **Rebuild the assessments** into genuine per-lesson question banks with distinct items, real distractors,
-   per-item rationales, and enough items to make the stated five-item check and 80% threshold true.
+2. ~~**Rebuild the assessments**~~ — **done in this change.** 135 authored assessments, 495 items, every
+   item with its own choices, distractors, and rationale; see Finding 2.
 3. **Rebuild the lesson prose**, course by course, against the existing outlines. This is the large item and the
    one that determines whether California can be submitted at all.
 4. **Phase 2 (submission package)** once regulator source access is available.
 
 ## Gate status
 
-`scripts/audit-california-content.mjs` encodes these as gates. Render integrity and typography pass today and
-are protected by `tests/california-content-quality.test.mjs`. Substance and assessment integrity fail by design
-until items 2 and 3 above are complete; `--strict` is the definition-of-done check for the rebuild and should
-not be added to CI until it passes.
+`scripts/audit-california-content.mjs` encodes these as gates. Render integrity, typography, and all three assessment gates pass today and are protected by
+`tests/california-content-quality.test.mjs`. The substance gate still fails by design until the lesson
+rebuild is complete; `--strict` is the definition-of-done check for that work and should not be added to CI
+until it passes.

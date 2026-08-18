@@ -71,13 +71,42 @@ function renderStatus(){
   const remediation=selected.remediationStatus;$("#remediationStatus").textContent=remediation==="not_required"?"Not required":remediation==="satisfied"?"Complete":remediation==="content_viewed"?"Alternate question pending":"Required";$("#remediationStatus").className=remediation==="not_required"||remediation==="satisfied"?"complete":"pending";
   const eligibility=page.data.progress.eligibility;$("#earliestFinal").textContent=formatDate(eligibility?.earliest_final_exam_at);const remaining=Array.isArray(eligibility?.remaining_requirements)?eligibility.remaining_requirements:[];$("#finalRequirements").textContent=remaining.length?remaining.join(" · "):"Final eligibility requirements complete";
 }
+function assessmentLabel(kind,count){
+  if(kind==="applied")return"Submit applied response";
+  return kind==="remediation"?`Submit alternate answers (${count})`:`Submit answers (${count})`;
+}
 function renderAssessment(target,assessment,kind,complete,enabled){
   if(complete){target.innerHTML='<p class="assessment-result"><strong>Complete.</strong> This requirement is recorded for the assignment version.</p>';return;}
-  if(!assessment){target.innerHTML="";return;}
-  const name=kind+"Choice";
-  target.innerHTML=`<form data-kind="${kind}"><fieldset ${enabled?"":"disabled"}><legend>${escapeHtml(assessment.prompt)}</legend>${assessment.choices.map((choice,index)=>`<label class="choice"><input type="radio" name="${name}" value="${index}" required><span>${escapeHtml(choice)}</span></label>`).join("")}</fieldset><button type="submit" ${enabled?"":"disabled"}>${kind==="remediation"?"Submit alternate answer":"Submit answer"}</button>${enabled?"":'<p class="assessment-result">Complete the preceding lesson requirement first.</p>'}<div class="assessment-result" hidden></div></form>`;
+  if(!assessment||!assessment.items?.length){target.innerHTML="";return;}
+  const items=assessment.items,total=items.length;
+  const threshold=kind==="applied"?"":`<p class="assessment-standard">${total} scored items · ${assessment.passingPercent}% required to complete this check.</p>`;
+  target.innerHTML=`<form data-kind="${kind}">${threshold}${items.map((item,position)=>`<fieldset ${enabled?"":"disabled"} data-item="${escapeHtml(item.id)}"><legend>${total>1?`<span class="item-number">Question ${position+1} of ${total}</span>`:""}${escapeHtml(item.prompt)}</legend>${item.choices.map((choice,index)=>`<label class="choice"><input type="radio" name="${escapeHtml(item.id)}" value="${index}" required><span>${escapeHtml(choice)}</span></label>`).join("")}<p class="item-result" hidden></p></fieldset>`).join("")}<button type="submit" ${enabled?"":"disabled"}>${assessmentLabel(kind,total)}</button>${enabled?"":'<p class="assessment-result">Complete the preceding lesson requirement first.</p>'}<div class="assessment-result" hidden></div></form>`;
   const form=target.querySelector("form");
-  form?.addEventListener("submit",async(event)=>{event.preventDefault();const selected=new FormData(form).get(name);if(selected===null)return;const button=form.querySelector("button"),result=form.querySelector(".assessment-result:last-child");button.disabled=true;try{const response=await post("answer_"+kind,{choice:Number(selected)});if(!response)return;result.hidden=false;result.innerHTML=`<strong>${response.correct?"Correct.":"Not yet."}</strong> ${escapeHtml(response.rationale||response.message||"")}`;actionMessage.textContent=response.message||"";if(response.remediationRequired||response.completed||response.correct)setTimeout(()=>loadCourse(page.data.selectedAssignment.id),800);}catch(error){result.hidden=false;result.textContent="We could not record this answer. Please try again.";button.disabled=false;}});
+  form?.addEventListener("submit",async(event)=>{
+    event.preventDefault();
+    const data=new FormData(form),answers=items.map((item)=>data.get(item.id));
+    if(answers.some((answer)=>answer===null))return;
+    const button=form.querySelector("button"),result=form.querySelector(".assessment-result:last-child");
+    button.disabled=true;
+    try{
+      const response=await post("answer_"+kind,{answers:answers.map(Number)});
+      if(!response)return;
+      /* Per-item feedback marks which questions were missed. Rationales arrive only on a
+         passing attempt; on a failed attempt the student is routed to remediation. */
+      for(const outcome of response.results||[]){
+        const field=form.querySelector(`[data-item="${CSS.escape(outcome.itemId)}"] .item-result`);
+        if(!field)continue;
+        field.hidden=false;
+        field.className="item-result "+(outcome.correct?"correct":"incorrect");
+        field.innerHTML=`<strong>${outcome.correct?"Correct.":"Incorrect."}</strong> ${escapeHtml(outcome.rationale||"")}`;
+      }
+      result.hidden=false;
+      const scoreLine=typeof response.percent==="number"&&response.total>1?`${response.correctCount} of ${response.total} correct (${response.percent}%). `:"";
+      result.innerHTML=`<strong>${response.correct?"Requirement met.":"Not yet."}</strong> ${escapeHtml(scoreLine)}${escapeHtml(response.message||"")}`;
+      actionMessage.textContent=response.message||"";
+      if(response.remediationRequired||response.completed||response.correct)setTimeout(()=>loadCourse(page.data.selectedAssignment.id),1400);
+    }catch(error){result.hidden=false;result.textContent="We could not record these answers. Please try again.";button.disabled=false;}
+  });
 }
 function renderAssessments(){
   const selected=page.data.selectedAssignment,review=page.data.mode!=="student",contentReady=selected.viewedSections.length>=selected.sectionCount;

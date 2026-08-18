@@ -74,3 +74,20 @@ test("a code span cannot smuggle markup into the lesson body", () => {
   assert.ok(!html.includes("<script>"));
   assert.match(html, /<code>&lt;script&gt;/);
 });
+
+/* The assessment rebuild replaced one reused question with per-lesson item banks.
+   These guard the properties that make the banks real assessments rather than a
+   restatement of the defect they replaced. */
+
+test("every California lesson has a complete authored question bank", () => {
+  assert.match(report, /\[pass\] every lesson has an authored question bank/);
+  assert.match(report, /135 \/ 135 assessments authored/);
+});
+
+test("no two scored items share answer choices", () => {
+  assert.match(report, /\[pass\] every scored item has its own answer choices/);
+});
+
+test("the correct answer is not always in the same position", () => {
+  assert.match(report, /\[pass\] correct answers are spread across positions/);
+});
