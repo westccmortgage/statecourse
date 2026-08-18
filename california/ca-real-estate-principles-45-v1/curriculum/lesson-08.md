@@ -2,290 +2,719 @@
 
 ## Contracts and transaction formation
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 development draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze contract elements using verified facts, current authority, and a documented professional workflow.
-- Analyze offer acceptance and counteroffer using verified facts, current authority, and a documented professional workflow.
-- Analyze consideration capacity and legality using verified facts, current authority, and a documented professional workflow.
-- Analyze Statute of Frauds using verified facts, current authority, and a documented professional workflow.
-- Analyze contingencies and performance using verified facts, current authority, and a documented professional workflow.
-- Analyze breach rescission and remedies using verified facts, current authority, and a documented professional workflow.
+- Identify the elements required to form a contract and classify contracts by the standard categories.
+- Apply the offer, acceptance, and counteroffer rules to determine whether a contract exists and on whose terms.
+- Explain consideration, capacity, and legality, and identify what makes a contract void, voidable, or unenforceable.
+- State what the Statute of Frauds requires in real estate and identify the recurring exceptions.
+- Explain what a contingency does inside a formed contract and how performance obligations are discharged.
+- Distinguish the remedies available for breach and explain what a licensee may say about them.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: contract elements and formation | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: consideration, capacity, legality, and the Statute of Frauds | 50 | Sections 3-4 viewed |
+| Guided reading: contingencies, performance, and remedies | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. contract elements
+## 1. Contract elements
 
-### 1.1 Concept and purpose
+### 1.1 The four elements
 
-contract elements is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Contracts and transaction formation, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+A contract is an agreement the law will enforce. Four elements are required:
 
-### 1.2 Essential elements
+| Element | What it requires |
+|---|---|
+| **Mutual assent** | An offer and an acceptance — a meeting of the minds on the same terms |
+| **Consideration** | Something of value exchanged, or a legally recognized substitute |
+| **Capacity** | Parties legally able to contract |
+| **Lawful object** | A purpose the law permits |
 
-The essential elements of contract elements are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Where any is missing, the analysis in Section 3 determines whether what exists is void, voidable, or unenforceable — three different outcomes that students routinely merge.
 
-### 1.3 Roles and duties
+### 1.2 The classifications
 
-Responsibility for contract elements may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Contracts are described along several axes, and the vocabulary appears throughout the transaction.
 
-### 1.4 Workflow
+| Axis | Types |
+|---|---|
+| **Formation** | **Express** — stated in words. **Implied** — inferred from conduct |
+| **Obligation** | **Bilateral** — a promise for a promise. **Unilateral** — a promise for an act |
+| **Performance** | **Executory** — something remains to be done. **Executed** — fully performed |
+| **Enforceability** | Valid, void, voidable, unenforceable |
 
-A defensible workflow for contract elements starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 1.3 Bilateral and unilateral, in practice
 
-### 1.5 Documents and evidence
+**A residential purchase agreement is bilateral.** The buyer promises to buy; the seller promises to sell. Both are bound on formation.
 
-Documents connected with contract elements must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**An open listing or a reward is unilateral.** The offeror promises to pay if someone performs an act; nobody is bound to perform.
 
-### 1.6 Quantitative and factual analysis
+**An exclusive right to sell listing is bilateral** — the brokerage promises to market and the seller promises to pay on the terms agreed.
 
-Where contract elements involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The distinction matters because in a unilateral contract there is no breach by failing to act. Nobody promised to.
 
-### 1.7 California law and professional boundary
+### 1.4 Executory and executed
 
-California law controls the licensed activity associated with contract elements; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**A purchase agreement is executory** from acceptance until closing. Both parties still owe performance.
 
-### 1.8 Consumer protection and fair access
+**It becomes executed at closing**, when both have fully performed.
 
-Consumer protection requires that contract elements be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+The vocabulary trips students because "executed" also colloquially means "signed." In contract classification it means **fully performed**, and a signed but unperformed agreement is executory.
 
-### 1.9 Applied scenario
+### 1.5 What a licensee's role in contracts actually is
 
-Scenario: during contracts and transaction formation, the file raises a question about contract elements. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+A licensee prepares transaction documents within the scope of the transaction and explains what provisions do in the transaction.
 
-### 1.10 Decision checklist
+A licensee does **not** advise on legal effect, on rights and remedies, on whether a party may cancel or refuse to perform, or on entitlement to money. The test from Lesson 01 governs: **would answering require a legal conclusion?**
 
-Before treating contract elements as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+This lesson teaches contract principles so a licensee can recognize what is happening and route it — not so the licensee can advise on it.
 
-## 2. offer acceptance and counteroffer
+### 1.6 Checkpoint
 
-### 2.1 Concept and purpose
+You should be able to name the four elements, classify a purchase agreement on all four axes, and state what "executed" means in classification.
 
-offer acceptance and counteroffer is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Contracts and transaction formation, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+## 2. Offer, acceptance, and counteroffer
 
-### 2.2 Essential elements
+### 2.1 The three formation rules
 
-The essential elements of offer acceptance and counteroffer are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Three rules resolve most questions in practice:
 
-### 2.3 Roles and duties
+1. **An offer is a proposal that, if accepted without change, forms a contract.**
+2. **An acceptance must match the offer.** Any change to a material term is not an acceptance.
+3. **Acceptance must be communicated** to the offeror in the manner the offer or the law contemplates.
 
-Responsibility for offer acceptance and counteroffer may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**The third rule is the one that gets skipped.** A signed acceptance sitting in a drawer, or in a signing platform nobody delivered, has not been communicated — and no contract has formed.
 
-### 2.4 Workflow
+### 2.2 What makes an offer an offer
 
-A defensible workflow for offer acceptance and counteroffer starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+An offer must show present intent to be bound, be reasonably definite in its terms, and be communicated to the offeree.
 
-### 2.5 Documents and evidence
+Statements that are **not** offers: an invitation to negotiate, an advertisement in the ordinary case, a listing, or a statement of what someone might accept. A listing invites offers; it is not one.
 
-Documents connected with offer acceptance and counteroffer must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 2.3 The counteroffer
 
-### 2.6 Quantitative and factual analysis
+The single most misunderstood formation rule, and it is worth stating in full:
 
-Where offer acceptance and counteroffer involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+> **A counteroffer rejects the original offer and substitutes a new one. The original can no longer be accepted unless it is renewed.**
 
-### 2.7 California law and professional boundary
+Two consequences licensees regularly get wrong:
 
-California law controls the licensed activity associated with offer acceptance and counteroffer; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+- It is **not** an "acceptance with modifications" forming a contract on the counterofferor's terms.
+- It does **not** suspend the original offer, leaving it available if the counteroffer is rejected. **The original is gone.**
 
-### 2.8 Consumer protection and fair access
+And it works in both directions. **A party who signs a counteroffer but writes a change on it before returning it has made a further counteroffer**, however small the change. Signing does not convert a modification into an acceptance.
 
-Consumer protection requires that offer acceptance and counteroffer be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 2.4 Revocation, rejection, lapse, and death
 
-### 2.9 Applied scenario
+An offer can end without ever being accepted:
 
-Scenario: during contracts and transaction formation, the file raises a question about offer acceptance and counteroffer. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+| Method | Effect |
+|---|---|
+| **Revocation** | The offeror withdraws it **before acceptance** — generally permitted even where the offer states a deadline, unless supported by consideration as an option |
+| **Rejection** | The offeree declines; a counteroffer is a rejection |
+| **Lapse** | The stated time expires, or a reasonable time passes where none is stated |
+| **Death or incapacity** | Of either party, before acceptance, generally terminates the offer |
 
-### 2.10 Decision checklist
+**The revocation rule surprises people in both directions.** A buyer's offer stated to be open until Friday can be withdrawn Wednesday, and a buyer relying on the deadline should know that. A seller intending to accept should not assume the offer will still be there.
 
-Before treating offer acceptance and counteroffer as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 2.5 The option
 
-## 3. consideration capacity and legality
+An **option** is a contract in which the optionor gives the optionee the right to buy on stated terms within a stated time, supported by consideration.
 
-### 3.1 Concept and purpose
+The difference from an ordinary offer is precisely that consideration makes it **irrevocable** for the period. That is what the optionee paid for.
 
-consideration capacity and legality is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Contracts and transaction formation, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+An option is generally unilateral in the sense that the optionee is not obligated to exercise it — but the option contract itself binds the optionor.
 
-### 3.2 Essential elements
+### 2.6 Electronic signature and delivery
 
-The essential elements of consideration capacity and legality are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Electronic signature is ordinary in California residential practice. Two points matter:
 
-### 3.3 Roles and duties
+**Delivery still has to happen and still has to be evidenced.** An executed document in a signing platform that no one delivered has not been delivered, and the platform's audit trail is frequently the best evidence of when it was.
 
-Responsibility for consideration capacity and legality may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**The contract's own notice provisions govern** what constitutes delivery for a communication carrying legal effect. Delivery by a method the contract does not authorize may not count.
 
-### 3.4 Workflow
+### 2.7 Checkpoint
 
-A defensible workflow for consideration capacity and legality starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+You should be able to trace a sequence of signed documents and say at which point, if any, a contract formed and on whose terms.
 
-### 3.5 Documents and evidence
+## 3. Consideration, capacity, and legality
 
-Documents connected with consideration capacity and legality must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 3.1 Consideration
 
-### 3.6 Quantitative and factual analysis
+**Consideration** is what each party gives in exchange — a benefit conferred or a detriment incurred. It is what distinguishes a contract from a gift promise.
 
-Where consideration capacity and legality involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Points that recur:
 
-### 3.7 California law and professional boundary
+**Adequacy is generally not examined.** Courts do not ordinarily weigh whether the price was a good deal. Gross inadequacy may be evidence of something else — fraud, duress, or incapacity — but by itself it is not a defect.
 
-California law controls the licensed activity associated with consideration capacity and legality; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**Past consideration is generally not consideration.** A promise to pay for something already done, with nothing new exchanged, is generally not enforceable as a contract.
 
-### 3.8 Consumer protection and fair access
+**Forbearance can be consideration.** Agreeing not to do something you have a right to do can support a promise.
 
-Consumer protection requires that consideration capacity and legality be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 3.2 Capacity
 
-### 3.9 Applied scenario
+Parties must be legally able to contract. The recurring categories:
 
-Scenario: during contracts and transaction formation, the file raises a question about consideration capacity and legality. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+| Category | Effect |
+|---|---|
+| **Minors** | Contracts of a minor are generally **voidable by the minor** |
+| **Mental incapacity** | Depending on the circumstances, a contract may be voidable, or void where a guardianship or conservatorship applies |
+| **Entities** | Capacity depends on existence and on internal authorization |
 
-### 3.10 Decision checklist
+**A licensee's practical concern is authority, not diagnosis.** A licensee does not assess mental capacity. Where a party's capacity is genuinely in question, the licensee's role is to stop, escalate to the broker, and route it to counsel — never to proceed on the theory that the person seemed fine, and never to characterize a person's capacity in the file.
 
-Before treating consideration capacity and legality as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 3.3 Lawful object
+
+A contract for an unlawful purpose is not enforceable, and a contract can be unlawful in part.
+
+Two forms recur in real estate:
+
+**Contracts to accomplish an unlawful act** — an agreement to conceal a material defect, or to discriminate in the sale or rental of housing.
+
+**Provisions the law will not enforce** — a lease clause purporting to waive the habitability obligation, or a restriction that discriminates on a protected basis. The provision fails whether or not both parties agreed to it.
+
+### 3.4 Void, voidable, and unenforceable
+
+Three outcomes students merge, with three different consequences.
+
+| | What it means | Example |
+|---|---|---|
+| **Void** | No contract exists and never did. Nobody can enforce it | An agreement for an unlawful purpose |
+| **Voidable** | A valid contract that one party may **elect** to avoid | A minor's contract; one induced by fraud or duress |
+| **Unenforceable** | A contract the court will not enforce, though it may have other effects | An oral agreement within the Statute of Frauds |
+
+**The critical distinction is between void and voidable.** A voidable contract is valid and binding until the party entitled to avoid it does so — and that party may instead choose to affirm it. A void agreement was never a contract at all.
+
+### 3.5 Defects in assent
+
+Even where the four elements appear present, assent can be defective:
+
+**Fraud** — a knowing misstatement or concealment of a material fact, intended to be relied on and relied on.
+
+**Misrepresentation** — including negligent misrepresentation, made without reasonable basis or care. Most claims against licensees are here rather than in fraud.
+
+**Duress and undue influence** — coercion, or improper pressure exploiting a relationship of trust or a party's weakness.
+
+**Mistake** — mutual mistake about a material fact may affect a contract; a unilateral mistake generally does not, with exceptions.
+
+**Whether any of these applies is a legal conclusion.** A licensee who recognizes the pattern escalates and refers; a licensee who tells a client "you were defrauded, you can get out of this" has practiced law and may be wrong.
+
+### 3.6 Checkpoint
+
+You should be able to distinguish void from voidable and state the practical difference, and explain what a licensee does when capacity is in question.
 
 ## 4. Statute of Frauds
 
-### 4.1 Concept and purpose
+### 4.1 The requirement
 
-Statute of Frauds is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Contracts and transaction formation, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+The **Statute of Frauds** requires certain contracts to be in writing and signed by the party to be charged in order to be enforceable.
 
-### 4.2 Essential elements
+In real estate the categories that matter:
 
-The essential elements of Statute of Frauds are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+- **Contracts for the sale of real property or an interest in it.**
+- **Leases exceeding one year.**
+- **Agreements to pay compensation for services in connection with the sale or purchase of real property** — the reason a listing agreement's compensation provision is written.
+- **Agreements not to be performed within one year.**
 
-### 4.3 Roles and duties
+### 4.2 What "in writing" requires
 
-Responsibility for Statute of Frauds may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+The writing must generally identify the parties, describe the property, state the price or the method of determining it, and reflect the essential terms — signed by the party against whom enforcement is sought.
 
-### 4.4 Workflow
+**It need not be a single elegant document** in every case; the essential point is a signed writing containing the essential terms. But a transaction assembled from fragments is a transaction in trouble, which is why practice uses a complete written agreement.
 
-A defensible workflow for Statute of Frauds starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 4.3 The consequence of non-compliance
 
-### 4.5 Documents and evidence
+An oral agreement within the statute is **unenforceable**, not void. That distinction has consequences: the agreement may have other effects, a party may perform voluntarily, and doctrines exist under which a court may enforce despite the absence of a writing.
 
-Documents connected with Statute of Frauds must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Part performance** is the recurring one: where a buyer has taken possession, paid, and made improvements in reliance, a court may enforce an oral agreement. **Estoppel** doctrines may operate similarly where one party relied to their detriment.
 
-### 4.6 Quantitative and factual analysis
+These are legal doctrines with requirements. A licensee should know they exist — so as not to tell a client that an oral agreement is worthless — and should route the question rather than answering it.
 
-Where Statute of Frauds involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 4.4 Why this matters to a licensee daily
 
-### 4.7 California law and professional boundary
+Because the practical rule that flows from it is one licensees violate constantly:
 
-California law controls the licensed activity associated with Statute of Frauds; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+> **Every agreement affecting the transaction goes in a signed writing.**
 
-### 4.8 Consumer protection and fair access
+An extension of the closing date, a change to what conveys, an agreed repair, a price adjustment — each is a **change to a term of the contract**, made by written amendment signed by both parties and delivered to escrow.
 
-Consumer protection requires that Statute of Frauds be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**What does not change a contract:** an email between the agents, a verbal agreement between the parties, an instruction to escrow alone, or a shared understanding that a short extension "won't matter."
 
-### 4.9 Applied scenario
+> The parties agree during escrow to move closing by a week. The agents confirm by email. Escrow is told. No amendment is signed.
+>
+> If the transaction later fails, **the parties are litigating on a contract whose closing date is the original one**, with an email chain between non-parties as the evidence of a change.
 
-Scenario: during contracts and transaction formation, the file raises a question about Statute of Frauds. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 4.5 Oral agreements that are enforceable
 
-### 4.10 Decision checklist
+Not everything must be written. Many agreements are enforceable orally, including agreements outside the statute's categories and short leases. The professional practice of writing everything down is a **risk practice**, not a legal requirement in every case — and it is worth doing precisely because the boundary is not obvious in the moment.
 
-Before treating Statute of Frauds as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.6 Checkpoint
 
-## 5. contingencies and performance
+You should be able to state which real estate agreements must be written, explain why an oral agreement is unenforceable rather than void, and state what actually amends a contract.
 
-### 5.1 Concept and purpose
+## 5. Contingencies and performance
 
-contingencies and performance is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Contracts and transaction formation, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 5.1 What a contingency is
 
-### 5.2 Essential elements
+A **contingency** conditions a party's obligation on a defined event or approval, **inside a contract that has already been formed.**
 
-The essential elements of contingencies and performance are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Three things it is not:
 
-### 5.3 Roles and duties
+- It does not delay formation. **The contract exists.**
+- It is not a general right to cancel for any reason.
+- It does not transfer the underlying responsibility to the other party.
 
-Responsibility for contingencies and performance may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 5.2 The common residential contingencies
 
-### 5.4 Workflow
+| Contingency | What it protects |
+|---|---|
+| **Investigation / inspection** | The buyer's ability to evaluate condition |
+| **Loan** | The buyer's ability to obtain the financing described |
+| **Appraisal** | The buyer's exposure if value does not support the price |
+| **Sale of buyer's property** | The buyer's dependence on another closing |
+| **Review of documents** | Time to review disclosures, reports, association documents |
+| **Title review** | The buyer's ability to evaluate title exceptions |
 
-A defensible workflow for contingencies and performance starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 5.3 How removal actually works
 
-### 5.5 Documents and evidence
+The single most misunderstood mechanic in California residential practice:
 
-Documents connected with contingencies and performance must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+> **Under the standard California residential purchase agreement form, contingencies remain in effect until the buyer removes them in writing. They do not expire automatically when the date passes.**
 
-### 5.6 Quantitative and factual analysis
+Consequences:
 
-Where contingencies and performance involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+- A buyer who lets the date pass without delivering a removal has **not** removed the contingency.
+- A seller cannot treat the transaction as firm merely because the date passed.
+- The seller's route is to deliver **the notice the contract requires**, giving the buyer a defined period to act, after which the seller may cancel per the contract.
 
-### 5.7 California law and professional boundary
+**The habit is more durable than the rule: read the contract's own removal mechanism.** Different forms and negotiated terms can operate differently, and the contract in front of you governs.
 
-California law controls the licensed activity associated with contingencies and performance; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 5.4 Time and performance
 
-### 5.8 Consumer protection and fair access
+Nearly every obligation carries a date or a period, and those are **terms of the contract** rather than administrative targets.
 
-Consumer protection requires that contingencies and performance be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Contracts define how time is counted, and the definitions vary: calendar days versus business days, whether the triggering day counts, when a period ending on a weekend or holiday rolls, and what time of day a deadline falls. **Read the definitions in the contract in front of you.** A licensee who assumes and is wrong by one day has cost a client a right.
 
-### 5.9 Applied scenario
+### 5.5 Discharge of obligations
 
-Scenario: during contracts and transaction formation, the file raises a question about contingencies and performance. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+A contractual obligation can end several ways:
 
-### 5.10 Decision checklist
+| Method | How |
+|---|---|
+| **Performance** | The obligation is carried out |
+| **Substantial performance** | Performance falling short in a minor respect may discharge the obligation, subject to an allowance |
+| **Agreement** | The parties release, rescind, or substitute — including **novation**, where a new party or contract is substituted with consent |
+| **Impossibility** | Performance becomes objectively impossible |
+| **Operation of law** | Including the running of limitations periods |
+| **Breach by the other party** | Which may excuse further performance |
 
-Before treating contingencies and performance as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**Assignment and novation are worth distinguishing.** Assignment transfers rights, and the assignor may remain liable. Novation substitutes a party with all parties' consent and generally releases the original. A seller who "let the buyer assign" and assumes he is released has assumed a novation he did not obtain.
 
-## 6. breach rescission and remedies
+### 5.6 Waiver
 
-### 6.1 Concept and purpose
+A party may waive a contract right — a contingency, a condition, a requirement. Two points the client must understand:
 
-breach rescission and remedies is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Contracts and transaction formation, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+1. **Waiving the contingency removes the contractual path to act**, not the ability to investigate. A buyer may still inspect; he simply has no contractual route to respond to what he finds.
+2. **The exposure is concrete.** Where an appraisal contingency is waived and the appraisal is low, the buyer's options narrow to bringing funds, renegotiating without leverage, or defaulting with his deposit exposed.
 
-### 6.2 Essential elements
+**The licensee's obligation is to put that in writing before the buyer decides, then follow the decision.** Both failure modes are wrong: refusing to write what the client instructs overstates the licensee's role; writing it without comment abandons the advisory duty.
 
-The essential elements of breach rescission and remedies are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 5.7 Checkpoint
 
-### 6.3 Roles and duties
+You should be able to explain what a contingency does inside a formed contract, state how removal works under the standard form, and distinguish assignment from novation.
 
-Responsibility for breach rescission and remedies may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+## 6. Breach, rescission, and remedies
 
-### 6.4 Workflow
+### 6.1 What breach is
 
-A defensible workflow for breach rescission and remedies starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+A **breach** is a failure to perform a contractual obligation without a legal excuse. A **material breach** goes to the essence of the bargain and may excuse the other party's further performance; a minor breach generally does not.
 
-### 6.5 Documents and evidence
+Whether a given failure is material is a legal question, and it is one clients ask licensees constantly.
 
-Documents connected with breach rescission and remedies must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 6.2 The remedies
 
-### 6.6 Quantitative and factual analysis
+| Remedy | What it is |
+|---|---|
+| **Damages** | Money compensating the injured party |
+| **Specific performance** | A court order requiring the actual performance promised |
+| **Rescission** | Unwinding the contract and restoring the parties to their prior positions |
+| **Liquidated damages** | An amount the parties agreed in advance would be the recovery on default |
+| **Reformation** | Correcting a writing to reflect what the parties actually agreed |
 
-Where breach rescission and remedies involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+### 6.3 Specific performance and why real estate is different
 
-### 6.7 California law and professional boundary
+**Specific performance is available for real property in a way it is not for most goods**, and the reason traces to Lesson 01: **uniqueness.** No two parcels occupy the same location, so damages may not make a buyer whole — only the parcel will.
 
-California law controls the licensed activity associated with breach rescission and remedies; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+This is the clearest example in the course of a legal rule flowing directly from a physical characteristic of land.
 
-### 6.8 Consumer protection and fair access
+### 6.4 Liquidated damages
 
-Consumer protection requires that breach rescission and remedies be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Where the parties agree in advance that a specified amount — commonly the deposit, subject to limits — will be the seller's recovery on the buyer's default, that is a **liquidated damages** provision.
 
-### 6.9 Applied scenario
+Three points:
 
-Scenario: during contracts and transaction formation, the file raises a question about breach rescission and remedies. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+- **It must be properly agreed**, which typically requires specific formalities.
+- **Its enforceability is constrained by law.** It is not a penalty the seller may simply impose.
+- **It generally limits the recovery** rather than adding to it.
 
-### 6.10 Decision checklist
+### 6.5 Rescission
 
-Before treating breach rescission and remedies as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+Rescission unwinds the contract, and it typically requires **restoration** — each party giving back what they received. It is available on grounds including fraud, mistake, duress, undue influence, and failure of consideration, and it is sometimes available by agreement.
+
+A licensee should recognize that rescission is a remedy with requirements, not a synonym for cancellation. **Cancelling under a contract's own contingency provision is not rescission**; it is performing the contract according to its terms.
+
+### 6.6 What the licensee must not do
+
+This section produces more improper legal advice than any other in the course, because the questions arrive in emotional moments.
+
+**Must not:**
+
+- Tell a party whether they may cancel, rescind, or refuse to perform.
+- Tell a party whether they are entitled to the deposit.
+- Characterize a breach as material or minor.
+- Predict what a court would do.
+- Advise a party to stop performing.
+- Instruct escrow on a party's behalf, or attempt to resolve a dispute between the parties.
+
+**Must:**
+
+- Explain the mechanism — that escrow acts only on mutual written instructions, that the contract has a cancellation procedure, that the deposit is held pending resolution.
+- Follow the contract's procedures for any notice the licensee's client wishes to give.
+- Document communications and their dates.
+- Escalate to the broker and recommend counsel, before any deadline passes.
+
+> **A buyer whose loan is denied asks whether he gets his deposit back.**
+>
+> **Correct:** "That's a legal question and I can't answer it. What I can tell you is the mechanism: the contract has a cancellation procedure with a written notice requirement, escrow can only act on instructions both parties sign, and if you disagree the deposit stays put until it's resolved. Let's get the notice right and get you an answer from an attorney before the date runs."
+
+### 6.7 Cancellation is a procedure
+
+Cancellation is accomplished by exercising a right the contract provides, following the procedure the contract specifies. It is **not** accomplished by announcing an intention, by ceasing to perform, or by instructing escrow.
+
+What forfeits a contingency's protection: notifying the other agent verbally, instructing escrow unilaterally to return the deposit, or simply ceasing to perform and letting the other party cancel for non-performance — which is a materially worse position.
+
+### 6.8 What actually prevents disputes
+
+Most transaction disputes are not about substance. They are about **whether something was delivered, to whom, and when** — which is why the practices that prevent them are documentary:
+
+1. Build the deadline calendar from the contract and share it in writing.
+2. Deliver notices by the authorized method and keep the evidence.
+3. Confirm materially important conversations in writing.
+4. Amend in writing, signed, and deliver to escrow.
+5. Correct errors immediately, in writing, to everyone who received the original.
+6. Keep superseded drafts, so the sequence of versions shows how terms changed.
+7. Audit the file at closing while memories are fresh.
+
+### 6.9 Checkpoint
+
+You should be able to name the remedies, explain why specific performance is available for real property, and give the correct answer to a client asking about a deposit.
+
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **The four elements** | Mutual assent, consideration, capacity, and lawful object. |
+| **Express / implied** | Stated in words, or inferred from conduct. |
+| **Bilateral / unilateral** | A promise for a promise, or a promise for an act. A purchase agreement is bilateral; an open listing is unilateral. |
+| **Executory / executed** | Something remains to be done, or fully performed. **"Executed" in classification means performed, not signed.** |
+| **Offer** | A proposal showing present intent to be bound, reasonably definite, and communicated. A listing invites offers; it is not one. |
+| **Mirror-image acceptance** | An acceptance must match the offer; any change to a material term is not an acceptance. |
+| **Communication of acceptance** | The rule most often skipped. A signed acceptance nobody delivered has not been communicated. |
+| **Counteroffer** | A **rejection** of the original offer and the substitution of a new one. The original is gone, not suspended — including where the change is handwritten on a signed form. |
+| **Revocation** | Withdrawal before acceptance, generally permitted even where the offer states a deadline. |
+| **Option** | A contract making an offer **irrevocable** for a period, supported by consideration. |
+| **Consideration** | Value exchanged. Adequacy is generally not examined; past consideration generally is not consideration; forbearance can be. |
+| **Capacity** | The legal ability to contract. A licensee's concern is **authority, not diagnosis** — where capacity is in question, stop, escalate, and refer. |
+| **Lawful object** | A purpose the law permits. Provisions the law will not enforce fail whether or not both parties agreed. |
+| **Void** | No contract exists and never did. |
+| **Voidable** | A valid contract one party may **elect** to avoid — and may instead affirm. |
+| **Unenforceable** | A contract a court will not enforce, though it may have other effects. |
+| **Fraud / negligent misrepresentation** | A knowing misstatement intended to be relied on; or a statement made without reasonable basis or care. Most claims against licensees are the second. |
+| **Statute of Frauds** | The requirement that certain contracts be in writing and signed by the party to be charged — including sales of real property, leases over one year, and compensation agreements. |
+| **Part performance** | A doctrine under which a court may enforce an oral agreement where a party took possession, paid, and improved in reliance. |
+| **Written amendment** | The only thing that changes a contract term. Agent emails, verbal agreements, and escrow instructions alone change nothing. |
+| **Contingency** | A condition on a party's obligation **inside a formed contract** — not a delay of formation, not a general right to cancel. |
+| **Written removal** | How contingencies end under the standard California form. A passed date removes nothing; the seller's route is the contractual notice. |
+| **Assignment** | Transfer of contract rights, with the assignor frequently remaining liable. |
+| **Novation** | Substitution of a party or contract with all parties' consent, generally releasing the original. |
+| **Waiver** | Giving up a contract right. Removes the contractual path to act, not the ability to investigate. |
+| **Material breach** | A failure going to the essence of the bargain, which may excuse further performance. Whether a breach is material is a **legal question**. |
+| **Specific performance** | A court order requiring the promised performance. Available for real property because of **uniqueness**. |
+| **Liquidated damages** | An amount agreed in advance as the recovery on default. Must be properly agreed, is constrained by law, and generally limits rather than adds. |
+| **Rescission** | Unwinding the contract with restoration. **Not a synonym for cancellation** under a contingency. |
+| **Cancellation** | Exercising a right the contract provides, by the procedure it specifies. Not accomplished by announcing, ceasing to perform, or instructing escrow. |
+
+## Practice problems
+
+### Problem 1
+
+Classify a residential purchase agreement on all four axes at the moment of acceptance. Then classify
+an open listing offering compensation to whoever produces a buyer.
+
+**Answer.**
+
+> **Solution.** **The purchase agreement at acceptance:** **express** — stated in words; **bilateral**
+> — the buyer promises to buy and the seller promises to sell, and both are bound on formation;
+> **executory** — both still owe performance until closing; and **valid**, assuming the four elements
+> are present.
+>
+> It becomes **executed** at closing, when both have fully performed. The vocabulary trips students
+> because "executed" colloquially means signed — in classification it means **fully performed**, so a
+> signed but unperformed agreement is executory.
+>
+> **The open listing is unilateral** — a promise to pay if someone performs an act. Nobody is bound to
+> perform, and therefore **nobody breaches by not performing.** An exclusive right to sell listing, by
+> contrast, is bilateral: the brokerage promises to market and the seller promises to pay on the agreed
+> terms.
+
+### Problem 2
+
+A buyer offers $880,000, open until 5:00 p.m. Friday. Wednesday, he withdraws it. Thursday, the seller
+signs it and puts it in his file. Friday morning the seller's agent emails the signed copy.
+
+**Was a contract formed?**
+
+> **Solution.** **No, on two independent grounds — either one is enough.**
+>
+> **The offer was revoked before acceptance.** An offer may generally be revoked before acceptance even
+> where it states a deadline, unless supported by consideration as an **option** — which is precisely
+> what an option buys: irrevocability for the period.
+>
+> **And acceptance was not communicated on Thursday.** A signed acceptance sitting in a file has not
+> been communicated to the offeror, so nothing formed then; by Friday there was nothing left to accept.
+>
+> **What transfers, in both directions:** a buyer relying on "open until Friday" should know it can be
+> withdrawn Wednesday, and a seller intending to accept should not assume the offer will still be
+> there. The communication rule is the one most often skipped — including in signing platforms, where
+> an executed document nobody delivered has not been delivered.
+
+### Problem 3
+
+A buyer offers $880,000. The seller strikes the price to $895,000 and the closing date to March 20,
+signs, and returns it. The buyer signs it but crosses out March 20 and writes March 25 before
+returning. The seller now says he prefers the original $880,000 offer and will accept it.
+
+**Where do the parties stand?**
+
+> **Solution.** **No contract, and the original offer is gone.**
+>
+> The seller's changes were a **counteroffer**, which **rejected** the $880,000 offer and substituted a
+> new one. It was not an "acceptance with modifications" forming a contract on his terms, and it did
+> not suspend the original leaving it available — the original can no longer be accepted unless the
+> buyer renews it.
+>
+> **The buyer's handwritten date change is a further counteroffer**, however small. Signing does not
+> convert a modification into an acceptance.
+>
+> **The buyer's counteroffer at $895,000 / March 25 is outstanding.** The seller may accept it, reject
+> it, or counter again — or ask the buyer to renew the original terms, which the buyer is free to
+> decline.
+
+### Problem 4
+
+Four situations: (a) a seller and buyer agree to conceal a known foundation defect from the lender;
+(b) a 17-year-old signs a purchase agreement; (c) an oral agreement to sell a house, where the buyer
+has taken possession, paid $60,000, and rebuilt the kitchen; (d) a lease clause waiving the landlord's
+habitability obligation.
+
+**Classify each as void, voidable, or unenforceable, and state the practical consequence.**
+
+> **Solution.** (a) **Void.** A contract for an unlawful purpose. No contract exists and never did;
+> nobody can enforce it.
+>
+> (b) **Voidable by the minor.** This is a **valid, binding contract until the minor elects to avoid
+> it** — and the minor may instead choose to affirm it. That is the practical difference from void, and
+> the one students merge: voidable contracts operate until someone acts.
+>
+> (c) **Unenforceable under the Statute of Frauds** — but not worthless. Unenforceable is not void, and
+> **part performance** is exactly the doctrine these facts raise: possession, payment, and improvements
+> in reliance. Whether it applies is a legal question. A licensee should know the doctrine exists so as
+> not to tell a client an oral agreement is worthless, and should route it rather than answer it.
+>
+> (d) **The provision is unenforceable**, and the rest of the lease may stand. The habitability
+> obligation is **not waivable**, and the clause fails **whether or not both parties agreed to it.**
+
+### Problem 5
+
+A seller in her late eighties seems confused during the listing appointment, asks the same questions
+repeatedly, and at one point does not recall that her husband died. Her son, who brought the licensee
+in, says she is "sharp as ever" and urges signing today. The licensee notes in the file that the
+seller "appeared to lack capacity."
+
+**What should the licensee do, and what is wrong with the file note?**
+
+> **Solution.** **Stop, escalate to the broker, and route it to counsel.** Do not sign today, and do not
+> proceed on the theory that she seemed fine or that a family member vouched for her.
+>
+> **A licensee's concern is authority, not diagnosis.** A licensee is not qualified to assess mental
+> capacity, and the file note **characterizes her capacity** — which is exactly the conclusion the
+> licensee may not draw and which will be read later by people who were not there.
+>
+> **What the note should record instead is observation:** what was said, what was asked repeatedly, what
+> the son said and when, that the licensee did not proceed, and that the matter was escalated on a
+> stated date. Observation, not inference — the same discipline as recording ceiling staining rather
+> than diagnosing a roof leak.
+>
+> **Two further flags:** the son's pressure to sign today is exactly the pattern that raises **undue
+> influence**, and depending on the circumstances a contract with an incapacitated person may be
+> voidable, or void where a conservatorship applies. All of that is for counsel.
+
+### Problem 6
+
+The parties agree during escrow to move closing back one week. The agents confirm by email, escrow is
+told, and everyone proceeds. The seller also verbally agrees to leave the washer and dryer. The
+transaction fails and the parties dispute who breached.
+
+**What is the operative contract?**
+
+> **Solution.** **The original closing date, and no obligation about the appliances.**
+>
+> A change to a contract term is made by **written amendment signed by both parties** and delivered to
+> escrow so the instructions match the agreement. **An email between the agents does not amend the
+> contract — the agents are not the parties.** Neither does a verbal agreement between the parties, an
+> instruction to escrow alone, or a shared understanding that a short extension "won't matter."
+>
+> The parties are now litigating on a contract whose closing date is the original one, with an email
+> chain between non-parties as the evidence of a change.
+>
+> **The appliances fail for the same reason plus one more:** the agreement concerns an interest in real
+> property within the Statute of Frauds, and personal property that does not convey unless included has
+> not been included in any writing.
+>
+> **The practical rule:** every agreement affecting the transaction goes in a signed writing. The
+> boundary of what strictly must be written is not obvious in the moment, which is exactly why the
+> practice is to write everything.
+
+### Problem 7
+
+The buyer's investigation contingency period ends on the 17th. Nothing is delivered. On the 18th the
+seller's agent tells the seller the contingency expired, the buyer is committed, and she may accept a
+better offer that arrived overnight. Separately, the buyer waived the appraisal contingency to win the
+property, and the appraisal comes in $20,000 low.
+
+**Correct the first, and state what the licensee owed the buyer on the second.**
+
+> **Solution.** **All three statements about the contingency are wrong.** Under the standard California
+> form, contingencies remain in effect **until the buyer removes them in writing** — they are not
+> self-executing on a date. The buyer has not removed anything, so his protection is intact, he is not
+> committed, and the seller is not free to sell elsewhere. **The seller's route is the contractual
+> notice**, which starts the period the contract specifies; if the buyer removes during it the
+> transaction continues, and if not the seller may cancel by the contract's procedure.
+>
+> **The durable habit is better than the rule: read the contract's own removal mechanism.** Different
+> forms and negotiated terms operate differently.
+>
+> **On the waiver, what was owed before he decided:** an explanation **in writing** of what the
+> contingency protected and what waiving it exposed him to — that he could still investigate but would
+> have no contractual path to act on what he found, and that a low appraisal would narrow him to
+> bringing funds, renegotiating without leverage, or defaulting with his deposit exposed. Then follow
+> his informed decision.
+>
+> **Both failure modes are wrong:** refusing to write the offer overstates the licensee's role; writing
+> it without comment abandons the advisory duty.
+
+### Problem 8
+
+A buyer's loan is denied. He phones the listing agent, emails escrow demanding his deposit, and stops
+responding. The listing agent tells her seller the contract is over, that she may keep the deposit,
+and that the buyer "clearly materially breached." The buyer's agent tells him he will "definitely get
+it back" and should sue for specific performance if the seller resists.
+
+**Identify every error and state the correct posture.**
+
+> **Solution.** **Errors on both sides, and almost all of them are legal conclusions.**
+>
+> **The buyer forfeited his protection rather than exercising it.** A denial does not end the contract
+> by itself; the loan contingency provides a path with requirements — the **written notice the contract
+> requires**, within its terms, with supporting documentation. A phone call to the other agent is not
+> that notice; a unilateral instruction to escrow is not cancellation, since escrow acts only on
+> **mutual** written instructions; and ceasing to perform invites cancellation for non-performance, a
+> materially worse position. **Cancellation is a procedure**, not an announcement.
+>
+> **The listing agent gave three wrong answers.** Whether a breach is **material** is a legal question.
+> Whether the seller may keep the deposit is a legal question — and any liquidated damages provision
+> must have been properly agreed, is constrained by law, and generally **limits** recovery rather than
+> adding to it. And the contract is not "over" because a date passed.
+>
+> **The buyer's agent gave two.** "You'll definitely get it back" is a legal conclusion he is not
+> entitled to give. And **specific performance is a remedy for compelling performance** — available for
+> real property because of **uniqueness**, which is Lesson 01's physical characteristic producing a
+> legal rule — not a route to recovering a deposit.
+>
+> **The correct posture, for both:** explain the mechanism — the contract has a cancellation procedure
+> with a written notice requirement, escrow acts only on mutual instructions, and a disputed deposit
+> stays put until resolved. Get the notice right, document everything with dates, escalate to the
+> broker, and get the client an answer from counsel **before the deadline runs.**
+
+## Chapter summary
+
+**Four elements form a contract:** mutual assent, consideration, capacity, lawful object.
+
+**Classify on four axes** — express or implied, bilateral or unilateral, executory or executed, and by
+enforceability. "Executed" in classification means performed, not signed.
+
+**Three formation rules resolve most questions:** an offer accepted without change forms a contract; an
+acceptance must match the offer; **acceptance must be communicated.**
+
+**A counteroffer rejects and replaces.** The original is gone, not suspended — and a signature with a
+change written on it is a further counteroffer.
+
+**An offer can be revoked before acceptance even where it states a deadline**, unless consideration
+made it an option.
+
+**Adequacy of consideration is generally not examined**; past consideration generally is not
+consideration.
+
+**Capacity is a matter for authority and referral, never diagnosis.** Record observations, not
+characterizations, and escalate.
+
+**Void, voidable, and unenforceable are three different outcomes.** A voidable contract is binding
+until the entitled party elects to avoid it — and may be affirmed instead.
+
+**The Statute of Frauds requires a signed writing for sales of real property, leases over a year, and
+compensation agreements.** Non-compliance makes an agreement unenforceable, not void, and part
+performance may still reach it.
+
+**Only a signed written amendment changes a contract term.** Agent emails, verbal agreements, and
+escrow instructions alone change nothing.
+
+**A contingency conditions an obligation inside a formed contract**, and under the standard California
+form it ends only by **written removal** — never by a passed date.
+
+**Read the contract's definitions of how time is counted.** Being wrong by one day costs a client a
+right.
+
+**Distinguish assignment from novation**, and explain a waiver's real exposure in writing before the
+client decides.
+
+**Specific performance is available for real property because land is unique** — the clearest case in
+the course of a legal rule flowing from a physical characteristic.
+
+**Liquidated damages must be properly agreed, are constrained by law, and generally limit recovery.**
+
+**Cancellation is a procedure; rescission is a remedy.** They are not synonyms.
+
+**Never tell a client whether they may cancel, whether a breach is material, or who gets the deposit.**
+Explain the mechanism, follow the contract's procedures, document, escalate, and refer before the
+deadline.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. Trace the formation sequence and state whether a contract exists and on whose terms, identify any element or assent defect and classify the result as void, voidable, or unenforceable, state which agreements in the scenario must be in a signed writing and what actually amends the contract, identify each contingency in effect and what would be required to remove it, state the notice the next step requires and its delivery method, identify every question you would decline to answer and why, and state what you would escalate to the broker and refer to counsel and by what deadline. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
