@@ -68,7 +68,29 @@ When a leasehold ends, possession returns to the owner. That future interest is 
 
 The landlord's estate is not suspended by the lease. It is a fee simple subject to a leasehold, which is why the landlord can sell, mortgage, and devise it while the tenant is in possession.
 
-### 1.5 Checkpoint
+### 1.6 Why the estate concept controls everything downstream
+
+A principles course opens with estates because **the estate held determines what can be done with the property**, and every later topic assumes the answer.
+
+| What the estate determines | Where it surfaces later |
+|---|---|
+| **What can be conveyed** | A seller cannot convey more than he holds. A life tenant conveying "the property" conveys a life estate measured by his life, and the buyer finds out later. |
+| **What can be encumbered** | A lender's security is limited by the estate pledged, which is why a lender's title requirements probe the estate rather than accepting a description. |
+| **Who must sign** | Concurrent owners, spouses, trustees, and entity signatories — Sections 3, 4, and 6 of this lesson are all versions of this one question. |
+| **What happens at death** | Survivorship, probate, or the terms of an instrument. **The difference between two forms of concurrent ownership is invisible on the property and total in effect.** |
+| **What a creditor can reach** | Which affects who is willing to lend and on what terms. |
+| **What the occupant may do** | Alter, encumber, lease, or let deteriorate — the life tenant's limits in Section 2.4 are the clearest case. |
+| **How long it lasts** | Perpetual, for a life, for a term, or until a condition occurs. |
+
+**Two conclusions.**
+
+**The most consequential fact about a property is frequently invisible.** Two identical houses on the same street can be held under estates with completely different consequences for conveyance, financing, and inheritance, and **nothing about the property reveals it.** The estate is established from documents, which is why the intake practice in Section 6.5 asks for them rather than for a description.
+
+**"Who owns it?" is the wrong question.** The professional question is **"what interest is held, by whom, and who has authority to convey it?"** — three questions, frequently with three different answers, and a transaction that assumes they collapse into one is the transaction that fails at title clearance.
+
+> **The failure this prevents.** A listing taken from a person who describes himself as the owner, marketed, and put under contract — after which title clearance reveals a co-owner, a life estate, a trust with a successor trustee requirement, or an entity whose authority document says something other than what the signer said. **Every one of those is discoverable at intake with a question and a document**, and every one of them is expensive at day nineteen.
+
+### 1.7 Checkpoint
 
 You should be able to name a leasehold estate from a description of how it terminates, and state what happens to a lease when the property is sold.
 
@@ -178,7 +200,25 @@ Vesting has ownership, survivorship, tax, and estate consequences, and **advisin
 >
 > Those goals point in different directions. Survivorship and the ability to devise a share are not both satisfied by a single form. Resolving that tension is estate planning, and it belongs to counsel — not to the licensee, and not to escrow's deadline for the deed instruction.
 
-### 3.7 Checkpoint
+### 3.8 A worked ownership intake
+
+> **Six listing appointments in one week.** At each, the licensee asks the Section 6.5 questions: **how is title currently held, may I see the document, and who must sign to convey?**
+>
+> **1. "My wife and I own it."** Two people, married, and the form of ownership is a question with several possible answers — Section 4.2's concepts are engaged, and the answer affects survivorship, creditors, and taxation. **The licensee does not advise on which form is better** and does not assume which one applies. He obtains the vesting from the record.
+>
+> **2. "It's in my trust."** Section 6.2 governs. **The trustee conveys, and the question is who currently holds that office** — which the trust instrument answers and the seller's description does not. A successor trustee acting after a death or incapacity is a different situation with its own documentary requirements. **The licensee obtains the documentation the title company and counsel will require, and routes the legal questions.**
+>
+> **3. "My brother and I inherited it."** Two owners, and the form of their concurrent ownership determines what happens if one dies before closing and whether one can act alone. **Both sign.** How the property passed to them — by will, by trust, by operation of law — may also determine whether an administration is required, which is a legal question with a timeline attached to it.
+>
+> **4. "It's owned by our LLC."** Section 6.3. **The entity conveys, through whoever its governing documents authorize**, and the authority is established from the documents rather than from the person's title on a business card. **A member is not automatically authorized.**
+>
+> **5. "I have power of attorney for my father."** Section 6.4. **The instrument's scope is what matters** — whether it reaches real property, whether it is currently effective, and whether any conditions on it have been satisfied. **This is a legal question and it goes to counsel and the title company early**, because a defect discovered at closing cannot be repaired at closing. **And where the principal's capacity is in question, Lesson 15 of the practice course applies:** speak with the principal directly, document what you observed, and escalate.
+>
+> **6. "I bought it with my partner but it's really mine — she just helped with the loan."** **Two different claims: what the record says and what the seller believes the arrangement was.** The record controls who must sign. **What the parties intended between themselves is a legal question the licensee does not resolve**, and a listing taken on the seller's characterization is a listing that will fail.
+>
+> **What the week produced.** Six appointments, six documents requested, two matters routed to counsel before listing. **None of the six sellers described their situation inaccurately on purpose.** Each described it the way people describe ownership in conversation, which is by relationship rather than by interest — and Section 1.6's point is that those are not the same thing.
+
+### 3.9 Checkpoint
 
 You should be able to state the operative differences between the two forms, explain what severance does to a three-party joint tenancy, and say what you would do when a client asks which to choose.
 
@@ -286,7 +326,40 @@ This is one of the slow items. An association that takes three weeks to produce 
 >
 > **Incorrect:** "They look fine to me — this association seems well run."
 
-### 5.6 Checkpoint
+### 5.7 What a buyer in a common interest development is actually buying
+
+Section 5.3 explains why this belongs in a principles course. This section makes the point concrete, because the gap between what a buyer thinks he is buying and what he is buying is wider here than anywhere else in residential real estate.
+
+**The buyer is acquiring four things at once:**
+
+1. **An interest in a unit or a lot**, defined by an instrument rather than by the walls he can see. **What is his, what is common, and what is exclusive-use common area is a documentary question**, and it determines who repairs what.
+2. **An undivided interest in common area**, with its condition, its deferred maintenance, and its future costs.
+3. **Membership in an association**, with governing documents that bind him and a board that can act.
+4. **A share of an ongoing financial obligation** — regular assessments, and special assessments that have not happened yet.
+
+**What the documents answer, and what each one is for:**
+
+| The document | The question it answers |
+|---|---|
+| **Declaration and restrictions** | What may and may not be done — rentals, pets, alterations, business use, parking, occupancy |
+| **Bylaws and rules** | How the association operates and what it may enforce |
+| **Budget and reserve study** | **Whether the association can pay for what is coming** — the single most predictive document in the package |
+| **Financial statements** | Present condition, delinquency rates, and whether assessments are being collected |
+| **Minutes** | What the board has been discussing, which is frequently where a future special assessment first appears |
+| **Insurance information** | What the association covers and, more importantly, what it does not |
+| **Litigation disclosures** | Pending matters, which can affect both value and financing availability |
+
+**Three points a licensee should make to every buyer, in writing.**
+
+**Order the documents on day one.** Section 5.4's timing point. **The buyer's review period is what remains after delivery**, and a package ordered on day six against a seven-day delivery obligation leaves a buyer reading hundreds of pages in a weekend.
+
+**Read the reserve study and the minutes.** Buyers read the pet rules and skip these two. **A thinly funded reserve is a special assessment that has not been announced yet**, and the minutes are where it is visible first.
+
+**Confirm what financing requires.** Some programs impose conditions on the development itself — owner-occupancy ratios, litigation status, budget requirements — and **a buyer can be approved while the development is not.**
+
+> **Section 5.5's limit governs all of it.** The licensee delivers the documents, recommends they be reviewed with counsel, and **does not interpret the restrictions.** Whether a provision permits a particular use is a legal question about a recorded instrument, and it is asked of licensees constantly.
+
+### 5.8 Checkpoint
 
 You should be able to name what a buyer must review, explain why the documents must be ordered early, and answer a reserves question correctly.
 

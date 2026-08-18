@@ -75,7 +75,32 @@ Neither party is being unreasonable when a dispute arises over the washer and dr
 
 Section 6 gives the professional answer, and it is not "know the tests better."
 
-### 1.5 Checkpoint
+### 1.5 Why the classification produces litigation
+
+Section 1.4 explains why the default rules cause trouble. The deeper reason is worth stating, because it explains why this topic occupies a whole lesson in a principles course rather than a paragraph.
+
+**The classification decides four separate questions at once**, and the parties are usually thinking about only one of them.
+
+| The question | What turns on the classification |
+|---|---|
+| **What conveys with the property** | Real property passes with the deed; personal property does not. **This is the question the parties are thinking about.** |
+| **What the security instrument covers** | A lender's lien on real property does not automatically reach personal property, and different mechanisms apply to each. |
+| **How the transfer is documented** | Real property transfers by deed and is recorded; personal property does not transfer that way. |
+| **How it is taxed and assessed** | Different systems, different rates, and different timing. |
+
+**Because four systems depend on one classification, an item's status can be contested by parties who were not at the negotiation** — a lender, an assessor, a lienholder, a trustee in a later proceeding. **The buyer and seller can agree on an item and still not have settled its status for every purpose.**
+
+**Three practical consequences for a licensee.**
+
+**An agreement between the parties resolves the contract question and not the others.** Writing "refrigerator included" settles what conveys between these two people. It does not determine how the item is treated for a lender's purposes or an assessor's.
+
+**Value follows the classification in ways clients do not expect.** An item classified as real property is part of what was appraised and financed; an item that is personal property is not. **A transaction in which a substantial amount of value is personal property is a transaction where the financing may not cover what the buyer thinks he is buying.**
+
+**The moment of classification is what gets litigated.** Section 1.3 makes the point that classification happens at a moment in time. **A dispute is almost always about what the item was on a particular date** — the date of the security instrument, the date of the contract, the date of the assessment — and the answer can differ across those dates for the same item.
+
+> **What this means for the intake conversation in Section 6.3.** It is not a courtesy or a way to avoid an argument at the walkthrough. **It is the moment the licensee resolves a question that four different systems will otherwise answer independently and possibly inconsistently.**
+
+### 1.6 Checkpoint
 
 You should be able to state four consequences that follow from classifying an item as real rather than personal property.
 
@@ -138,7 +163,39 @@ The same item can be classified differently depending on who is arguing:
 
 This is why "is it a fixture?" is an incomplete question. **A fixture as between whom?**
 
-### 2.7 Checkpoint
+### 2.8 A worked fixture analysis
+
+> **The property**, a single-family home. In dispute at the walkthrough:
+>
+> - **(a)** A wall-mounted television, on a bracket the seller installed and left.
+> - **(b)** Custom window coverings cut to fit each window.
+> - **(c)** A chandelier in the dining room, which the seller says was his grandmother's.
+> - **(d)** A shed in the back yard, resting on gravel, not bolted.
+> - **(e)** A wine refrigerator installed into a cabinet opening built for it.
+> - **(f)** An above-ground pool with plumbing to a permanent pump on a concrete pad.
+> - **(g)** Mature roses the seller dug up the morning of the walkthrough.
+>
+> **Applying the tests in Sections 2.2 through 2.6 — and Section 2.3's point governs: attachment and the parties' intent as objectively evidenced do most of the work.**
+>
+> **(a) The television and the bracket are usually treated differently.** The bracket is attached; the television sits on it and is removed without damage. **The typical analysis separates them**, and this is exactly why the naming list in Section 6.2 exists — the analysis is defensible and the parties still both believed something else.
+>
+> **(b) The window coverings are the classic fixture.** Adapted to this property specifically, cut to these windows, useless elsewhere. **Adaptability, Section 2.5, is decisive.**
+>
+> **(c) The chandelier's sentimental history is legally irrelevant.** It is attached, it serves the room, and an outside observer would take it as part of the house. **The seller's subjective intent does not control**, which is the hardest point in this section for clients to accept. **The professional answer is to have replaced it before listing** — Section 6.3 — not to argue about it at the walkthrough.
+>
+> **(d) The shed is the genuinely uncertain one.** Not attached, resting on gravel, movable. **Size, permanence in appearance, and whether it was treated as part of the property all matter**, and reasonable people reach different answers. **An item whose analysis is uncertain is an item to name in the agreement**, which is the entire point of the naming list.
+>
+> **(e) The wine refrigerator is a fixture** by adaptation and attachment — the cabinet opening was built for it, and its removal leaves a hole that fits nothing else.
+>
+> **(f) The pool is attached through its plumbing and pad** notwithstanding that it is called above-ground. **The label is not the test.**
+>
+> **(g) The roses were real property until the seller severed them**, and severing them the morning of the walkthrough is removal of part of the property the buyer contracted for. Section 4.4's timing point governs. **This is not a fixture argument; it is a removal of the real property itself.**
+>
+> **What the licensee does with all seven.** Nothing at the walkthrough. **The analysis above is what a court would do; the licensee's role is Section 6.6's limit** — identify the issue, decline to declare the outcome, and take it to the broker while the parties consider their options.
+>
+> **What the licensee should have done six weeks earlier:** named (a), (c), (d), (e), and (f) in the agreement, and asked at intake whether the seller intended to take anything. **Five of the seven disputes would not exist.**
+
+### 2.9 Checkpoint
 
 You should be able to apply the tests to an item, say which test is doing the work, and explain how the relationship of the parties changes the outcome.
 
@@ -302,7 +359,32 @@ For every topic in this section, the professional response is the same three ste
 
 A licensee who tells a buyer that a severed mineral interest is "standard and nothing to worry about" has given a legal opinion on a document neither of them has read.
 
-### 5.7 Checkpoint
+### 5.8 What the intake questions are actually protecting against
+
+Section 5.3 supplies the intake questions and Section 5.6 supplies what the licensee does. This section explains what goes wrong when the questions are not asked, because the failures are specific and expensive.
+
+**The rural parcel with no confirmed water.** A buyer purchases acreage intending to build. **The water question was never asked**, and it turns out the parcel's supply depends on an arrangement whose status is unclear. **The buyer has bought land he cannot use as intended**, and the cost of discovering this after closing is the difference between the parcel's value with water and without.
+
+**The property with severed mineral rights.** A buyer discovers after closing that the mineral estate was severed decades ago, and that the holder has rights of access. **Nothing was concealed** — it appears in the title report's exceptions. **Nobody read them to the buyer**, and Lesson 11 of the practice course explains why a preliminary report is a document with content rather than a form to be forwarded.
+
+**The shared well.** Two or more properties served by one source, governed by an agreement whose terms determine cost sharing, maintenance responsibility, and what happens when the source fails. **A buyer who did not obtain and read the agreement has bought into an obligation he cannot describe.**
+
+**The property whose historical use suggests a problem.** Prior agricultural, industrial, or fuel-storage use, on a parcel that now looks residential. **The question is not whether the licensee can assess it** — he cannot — **but whether he recognized that it should be assessed by someone who can.**
+
+**The surface-use agreement nobody located.** A recorded instrument granting access, drilling, or extraction rights, discoverable in the title report and never discussed.
+
+**What all five have in common.** **In none of them did anyone conceal anything.** The information existed, in a title report, a recorded instrument, a public record, or the seller's own knowledge — and no one connected it to a question the buyer needed answered before he decided.
+
+**The licensee's contribution in each case is the same**, and it is not expertise:
+
+1. **Ask the question at intake**, so the issue is identified while there is time.
+2. **Obtain the underlying documents** rather than the one-line description of them.
+3. **Recommend the right specialist in writing** — a water professional, a title officer, counsel, an environmental professional.
+4. **Record the recommendation and the client's response.**
+
+> **The recurring theme of this lesson.** These are technical subjects the licensee does not practice in. **What he is responsible for is noticing that the transaction has walked into one**, and the noticing is done with a checklist of questions rather than with knowledge.
+
+### 5.9 Checkpoint
 
 You should be able to list the water questions you would ask on a rural listing and explain what a severed mineral interest means for a buyer.
 
@@ -364,7 +446,23 @@ Where the parties genuinely dispute whether an item was a fixture and the contra
 
 The honest position is: "The contract doesn't name it, which means this comes down to how the law classifies it. That's a question for counsel, and here's what I can do in the meantime."
 
-### 6.7 Checkpoint
+### 6.7 The habits that eliminate the category
+
+Fixture disputes are among the most preventable problems in a transaction, and three habits eliminate nearly all of them.
+
+**One: the seller names what he is taking, before listing.** Section 6.3's intake conversation, asked directly — "is there anything here you intend to take with you?" — and written down. **The chandelier, the appliance, the light fixture, the plant, the mounted equipment.** The best answer is that the seller removes and replaces it before any photograph is taken, so no buyer ever saw it.
+
+**Two: the marketing shows what conveys.** Section 6.4's consistency requirement. **A photograph is a representation**, and a buyer who saw an item in the listing and does not find it at the walkthrough has a grievance whatever the fixture analysis says. Where an item appears in a photograph and is excluded, **the exclusion is stated where the photograph is**, not buried in a document delivered later.
+
+**Three: the uncertain items are named in the agreement.** Not the obvious ones — the uncertain ones. **Section 2.8's shed, television bracket, and wine refrigerator are the items to name**, because the items whose classification is clear do not produce disputes.
+
+**A fourth habit for the buyer's side**, less often stated: **walk the property asking what the buyer assumes is included.** Lesson 08 of the practice course makes the same point about the agreement generally — "if it matters to you and it isn't written down, it isn't part of the deal" — and fixtures are where that sentence earns its keep. **A buyer who assumed the play structure, the workbench, or the water softener conveys should learn now rather than at the walkthrough.**
+
+> **Why this is worth a licensee's time.** The amounts in dispute are usually small and the damage is not. **A transaction that reaches the walkthrough and turns into an argument about a chandelier has lost the goodwill that was carrying every other unresolved item**, and the closing that was on schedule is now a negotiation between people who are angry.
+
+**And the limit, restated.** Section 6.6 applies to all of it. **When a dispute arises anyway, the licensee identifies the issue and declines to declare who is right.** The classification of a contested item is a legal question, and a licensee who announces the answer at the walkthrough has given legal advice under pressure to a party who will rely on it.
+
+### 6.8 Checkpoint
 
 You should be able to run the intake conversation, produce the naming list for a specific property, and state the correct sequence when an item is missing at the walkthrough.
 
