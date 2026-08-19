@@ -367,4 +367,4 @@ Complete the five-item engagement check. The mastery threshold is 80 percent. An
 
 ## Module completion
 
-Completion requires all six instructional sections, the applied exercise, the engagement check, and any triggered remediation. These four clock hours are the civil rights and equal opportunity in housing instruction required by MCL 339.2504, and no part of that requirement is satisfied by any other module of this course.
+Completion requires all six instructional sections, the applied exercise, the engagement check, and any triggered remediation. Michigan requires attendance at 100 percent of a prelicensure course and, for distance learning, hours attended equal to hours approved (R 339.22152). These four clock hours are the civil rights and equal opportunity in housing instruction required by MCL 339.2504, and no part of that requirement is satisfied by any other module of this course.
