@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - ".github/workflows/export-california-source.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/export-california-source.yml"
   workflow_dispatch:
 
 permissions:
