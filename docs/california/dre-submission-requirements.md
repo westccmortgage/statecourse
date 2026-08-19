@@ -53,11 +53,11 @@ A **separate** application, fee, and full package is required for each of the th
 | 7 | Copyright authorization | **Not applicable if content stays original** | Required only for third-party copyrighted material. |
 | 8 | Instructor Certification (RE 336) + substantiation | **Not started** | Form in hand. One form per instructor, and the form names a single course title, so three are needed. See §5. |
 | 9 | General Information Page (**RE 313**) | **Blocked** | We do not have RE 313. RE 306 item 21 also asks how the page is provided to students **prior to registration**. |
-| 10 | Timed course outline | **Partially exists** | The engine defines 15 assignments × 180 minutes = 45 hours; needs to be produced as a submission document. |
-| 11 | Student final exam instructions | **Not started** | |
-| 12 | Exam proctor/monitor instructions | **Not started** | Must include a certification statement **with a signature field** confirming the proctor complied with all exam rules. |
-| 13 | Student version of the final exam | **Not started** | Must be an exact copy of what students see. |
-| 14 | Instructor version + answer key | **Not started** | Answer key must **reference where each answer is found in the course material**. |
+| 10 | Timed course outline | **Done** | Generated per course at `california/<course>/submission/timed-course-outline.md` by `scripts/generate-california-timed-outlines.mjs`, which refuses to run unless every lesson's timed sequence sums to 180 minutes, carries six sections, and matches the engine title. Regenerate after any lesson change; never hand-edit. |
+| 11 | Student final exam instructions | **Done** | `california/<course>/submission/final-exam-student-instructions.md`, one per course. |
+| 12 | Exam proctor/monitor instructions | **Done** | `california/<course>/submission/final-exam-proctor-instructions.md`, with the certification statement and signature field. |
+| 13 | Student version of the final exam | **Done** | Forms A and B per course at `california/<course>/submission/final-exam-form-{a,b}-student.md` — exact copies of the delivered exam, never published to students. |
+| 14 | Instructor version + answer key | **Done** | `california/<course>/submission/final-exam-form-{a,b}-answer-key.md`; the audit gate verifies every item's reference resolves to a real lesson subsection. |
 | 15 | Student and regulator log-in credentials | **Partially exists** | Reviewer mode exists in the engine. The regulator account must bypass study-time requirements and expose all assessments and final exams; real credentials must be issued. |
 | 16 | Course Completion Certificate (**RE 311**) | **Blocked** | We do not have RE 311. Required fields are listed in RE 303 — see §6. |
 
