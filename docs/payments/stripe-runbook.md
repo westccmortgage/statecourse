@@ -87,6 +87,12 @@ Prices are **in cents**, integer, greater than zero. Anything else reads as no p
 
 ---
 
+## The publishable key — you do not need it
+
+Stripe issues a publishable key (`pk_test_...` / `pk_live_...`) alongside the secret one. It is public by design and safe to expose — but **this platform has no use for it**. Checkout runs entirely through Stripe-hosted pages: `create-checkout.mjs` creates the session server-side with the secret key and redirects the browser to `session.url`. There is no Stripe.js, no Elements, and no client-side Stripe call anywhere in the build, so there is nowhere for a publishable key to go.
+
+If a future change embeds Stripe.js (for example, an on-page payment element), the publishable key would then be served to the browser through `payment-config.mjs` from a `STRIPE_PUBLISHABLE_KEY_*` variable — never hard-coded. Until then, ignore it.
+
 ## Bring-up, in order
 
 ### 1. The Stripe account
