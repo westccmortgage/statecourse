@@ -2,8 +2,8 @@
 
 **Jurisdiction:** Alaska (AK)
 **Regulator:** Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing
-**Public status:** In Research
-**Status treatment:** `coming_soon`
+**Public status:** In Development
+**Status treatment:** `in_development`
 **Target length:** approximately 85 seconds
 
 > **Generated file — do not edit by hand.** Produced by
@@ -32,9 +32,10 @@
 
 ### status — ~25s
 
-> StateCourse does not offer courses in Alaska yet.
-> We have not built or submitted any course for approval by the Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing.
-> What follows is an outline of what Alaska requires, so you know what to look for — whether or not you ever study with us.
+> StateCourse is building courses for Alaska, and they are not approved yet.
+> We are developing one course for Alaska: Alaska Real Estate Salesperson Prelicense Education.
+> These courses have not been approved by the Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing. You cannot enroll in them, and they do not currently earn credit toward any licensing requirement.
+> We will say so here, plainly, when that changes.
 
 ### close — ~12s
 
@@ -53,6 +54,12 @@
 | Requirement | 40 hours pre-license education |
 | Status | Not approved — no credit available |
 | Close | https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/RealEstateCommission.aspx |
+
+## Courses referenced
+
+| Course | Hours | Approval status | Enrollment |
+| --- | ---: | --- | --- |
+| Alaska Real Estate Salesperson Prelicense Education | 40 | In Development / Preparing Submission | Disabled |
 
 ## Recording notes
 

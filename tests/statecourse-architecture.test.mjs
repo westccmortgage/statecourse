@@ -83,16 +83,30 @@ test("secure Maine exam and answer materials are never referenced by public asse
   assert.doesNotMatch(publicFiles.join("\n"), /final-exam-bank\.md|assessments\/quizzes\.md|answer key/i);
 });
 
-test("twelve launch states are visible, nothing is approved, and the rest are honestly labelled", async () => {
+test("development status tracks the catalogue exactly, nothing is approved, and the rest are honestly labelled", async () => {
   const registry = JSON.parse(await read("data/state-registry.json"));
-  const launch = registry.states.filter((state) => state.public_status === "In Development");
-  assert.deepEqual(launch.map((state) => state.state_code).sort(), ["AZ", "CA", "CO", "ME", "MI", "MO", "NC", "OK", "PA", "VA", "WA", "WI"]);
-  /* A state moves from "Coming Soon" to "In Research" as its rules are read from the
-     primary sources, which is why this counts buckets rather than pinning one number:
-     the invariant is that no state outside the eleven claims development, and that no
-     state claims approval anywhere. */
+  const catalog = JSON.parse(await read("data/course-catalog.json"));
+  const catalogStates = new Set(
+    catalog.categories
+      .flatMap((category) => category.programs ?? [])
+      .flatMap((program) => program.courses ?? [])
+      .map((course) => course.state_id)
+  );
+  const launch = new Set(
+    registry.states.filter((state) => state.public_status === "In Development").map((state) => state.state_code)
+  );
+
+  /* Pinning the list turned adding a state into a failure that said nothing about
+     honesty. The invariant that actually matters is the coupling in both directions:
+     a state claims development only where a course record exists, and a state with a
+     course record does not understate its status. Adding a state satisfies both or
+     fails loudly. */
+  assert.deepEqual([...launch].sort(), [...catalogStates].sort(),
+    "every In Development state must have a catalogue course, and every catalogue course a development state");
+  assert.ok(launch.size > 0, "the launch set must not be empty");
+
   const others = registry.states.filter((state) => state.public_status !== "In Development");
-  assert.equal(others.length, registry.states.length - 12);
+  assert.equal(others.length, registry.states.length - launch.size);
   for (const state of others) {
     assert.ok(["Coming Soon", "In Research", "Not Started"].includes(state.public_status),
       `${state.state_code} carries an unexpected public status: ${state.public_status}`);

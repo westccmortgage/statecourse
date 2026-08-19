@@ -21,7 +21,7 @@
       "state_code": "AK",
       "state_name": "Alaska",
       "script": "marketing/state-intros/AK-alaska.md",
-      "status_treatment": "coming_soon",
+      "status_treatment": "in_development",
       "blocked": false,
       "src": null,
       "poster": null,

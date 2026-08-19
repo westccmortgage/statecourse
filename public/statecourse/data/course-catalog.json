@@ -644,6 +644,37 @@
               "route": "/real-estate/michigan/pre-license/principles-of-real-estate/"
             }
           ]
+        },
+        {
+          "program_id": "ak-salesperson-prelicense",
+          "state_code": "AK",
+          "program_type": "Salesperson Prelicense",
+          "courses": [
+            {
+              "course_id": "ak-salesperson-prelicense-40-v1",
+              "state_id": "AK",
+              "program_type": "Salesperson Prelicense",
+              "course_title": "Alaska Real Estate Salesperson Prelicense Education",
+              "regulator": "Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing",
+              "required_hours": 40,
+              "approved_hours": null,
+              "delivery_method": "Correspondence · self-paced",
+              "approval_status": "In Development / Preparing Submission",
+              "approval_number": null,
+              "approval_date": null,
+              "expiration_date": null,
+              "instructor_id": null,
+              "price": null,
+              "enrollment_enabled": false,
+              "refund_policy_version": "ak-draft-pending",
+              "disclosures_version": "ak-draft-pending",
+              "course_version": "1.0-draft",
+              "final_exam_rules": "Alaska prescribes no proctored final examination. 12 AAC 64.430(b) requires an unanswered examination or project activity turned in to the approved INSTRUCTOR for grading on completion, filed with the Commission for prior approval and never published to students.",
+              "certificate_template": "ak-pending-approval",
+              "reporting_rules": "No periodic completion report is prescribed in 12 AAC 64 Article 7 as read on 2026-08-19. A change in course content or materials made under 12 AAC 64.420(e) is reported within 15 days; any other substantive change is filed as an outline amendment 45 days before offering (12 AAC 64.420(b)). The Commission may audit a certified course at any time (12 AAC 64.470(c)).",
+              "route": "/real-estate/alaska/pre-license/salesperson-prelicense-education/"
+            }
+          ]
         }
       ]
     },
