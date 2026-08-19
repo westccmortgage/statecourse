@@ -1,9 +1,6 @@
 name: Export California Source
 
 on:
-  push:
-    paths:
-      - ".github/workflows/export-california-source.yml"
   pull_request:
     paths:
       - ".github/workflows/export-california-source.yml"
