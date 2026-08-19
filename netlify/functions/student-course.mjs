@@ -26,15 +26,28 @@ async function contextFor(studentId,enrollmentId) {
   const review = (reviewRows || []).find((item) => !item.expires_at || new Date(item.expires_at) > new Date());
   const owner = enrollment.student_id === studentId;
   if (!owner && !review) fail("course_access_denied",403);
+  let accessGrantedAt = null;
   if (owner) {
-    const grants = await dbRequest(`access_grants?enrollment_id=eq.${encodeURIComponent(enrollmentId)}&student_id=eq.${encodeURIComponent(studentId)}&status=eq.active&select=id&limit=1`);
+    const grants = await dbRequest(`access_grants?enrollment_id=eq.${encodeURIComponent(enrollmentId)}&student_id=eq.${encodeURIComponent(studentId)}&status=eq.active&select=id,granted_at&limit=1`);
     if (!grants?.[0]) fail("course_access_not_active",403);
+    accessGrantedAt = grants[0].granted_at ?? null;
+    /* RE 303 p.4 requires the coursework to be completed within one year of
+       registration; after that the student re-enrolls. The database refuses to credit
+       study time to a lapsed enrollment, and refusing here as well means the student is
+       told now rather than allowed to keep reading and be stopped at the final. A
+       reviewer is unaffected: the regulator's account must reach the material whatever
+       a student's clock says. */
+    if (enrollment.status === "expired"
+        || (enrollment.expires_at && new Date(enrollment.expires_at) <= new Date())) {
+      fail("enrollment_expired",403);
+    }
   }
   const course = getCaliforniaCourse(enrollment.course_id);
   if (!course) fail("california_course_configuration_missing",503);
   return {
     enrollment,
     course,
+    accessGrantedAt,
     mode: review ? (review.access_role === "administrator" ? "admin" : "reviewer") : "student",
     actorId: studentId,
     studentId: enrollment.student_id
@@ -127,6 +140,9 @@ async function coursePayload(ctx,requestedAssignment) {
       id:ctx.enrollment.id,
       status:ctx.enrollment.status,
       registeredAt:ctx.enrollment.enrollment_date,
+      /* The minimum-period clock runs from access, not from registration - RE 303 p.3 -
+         so the student is shown the date the clock actually started. */
+      accessGrantedAt:ctx.accessGrantedAt,
       expiresAt:ctx.enrollment.expires_at,
       qaOnly:ctx.enrollment.status === "qa_non_credit",
       creditEligible:Boolean(ctx.enrollment.compliance_credit_eligible)

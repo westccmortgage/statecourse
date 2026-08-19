@@ -144,9 +144,9 @@ therefore a submission blocker, not a polish item.**
 | --- | --- | --- |
 | A single correspondence course may not be completed in less than **2½ weeks** | RE 303 p.3 | **Modeled.** `california_final_eligibility` sets the earliest final at `enrollment_date + interval '420 hours'` (17.5 days). |
 | **No more than two courses** may be completed in a five-week period; the schedule is cumulative (4 courses = 10 weeks, 6 = 15 weeks, 8 = 20 weeks) | RE 303 p.3 | **Modeled.** The same function counts the student's other California completions inside `interval '35 days'` and blocks the final when two or more exist. Note the rule applies regardless of how many schools the student attends, which no single provider can observe — the control is necessarily partial. |
-| Completion time runs from **the date the student receives access** to the date the final exam is **successfully passed** | RE 303 p.3 | **Verify.** The engine measures from `enrollment_date`. That is correct only if enrollment and access-grant are the same event; if access can be granted later, the clock starts too early and understates the required period. |
-| All courses must be completed **within one year** of registration; otherwise the student must re-enroll | RE 303 p.4 | **Partially modeled.** `enrollments.expires_at` is set to 365 days, but nothing enforces it: the course access path checks reviewer expiry, not enrollment expiry, and there is no re-enrollment flow. |
-| Completion document delivered **within 15 days** of successful completion | §3000(a)(6) | **Not modeled.** No certificate table or issuance path exists in the California migration. |
+| Completion time runs from **the date the student receives access** to the date the final exam is **successfully passed** | RE 303 p.3 | **Modeled.** `006_california_timing_and_certificates.sql` measures from `access_grants.granted_at`. Where no active grant exists the clock has not started and the calendar requirement stays unsatisfied, rather than falling back to `enrollment_date` as the earlier version did. |
+| All courses must be completed **within one year** of registration; otherwise the student must re-enroll | RE 303 p.4 | **Modeled.** Migration 006 blocks study-time credit and final-exam eligibility on a lapsed enrollment, the API refuses it with `enrollment_expired`, and `expire_lapsed_california_enrollments()` marks lapsed records expired and revokes their access grants. Re-enrollment is a new enrollment through the ordinary path; the lapsed record is never revived and its completion history is never edited. |
+| Completion document delivered **within 15 days** of successful completion | §3000(a)(6) | **Mechanism modeled; content blocked.** Migration 006 adds `course_completion_certificates` with `delivery_due_at` computed from the completion date rather than the issuance date, an issuance function that reads only the completion event, delivery recording, an append-and-supersede correction path for §3000(a)(4) duplicates, and the `california_certificate_delivery_overdue` report. **The certificate's own required fields come from RE 311, which we do not have** — see §2 item 16. |
 
 The cross-course pacing rule matters commercially: it limits how fast a student can finish a
 three-course bundle, and any marketing must not imply otherwise. §3004(c) prohibits advertising that
@@ -265,14 +265,30 @@ Ordered by lead time rather than by checklist position.
 
 ## 10. Engine work this analysis adds
 
-Beyond the paperwork, the regulations require platform behavior that does not exist yet:
+Beyond the paperwork, the regulations require platform behavior beyond the lesson engine.
 
-- enforcement of the one-year completion deadline, and a re-enrollment path when it lapses;
-- certificate delivery within 15 days of successful completion;
+**Closed by migration `006_california_timing_and_certificates.sql`:**
+
+- the minimum period measured from the access grant rather than from the enrollment date;
+- enforcement of the one-year completion deadline, with a lapse sweep that expires the enrollment and
+  revokes its access grant, and re-enrollment as a new enrollment through the ordinary path;
+- the certificate record and the 15-day delivery deadline, computed from the completion date so a late
+  issuance cannot move its own deadline, with an append-and-supersede correction path and an overdue
+  report.
+
+**Closed by the final examination work:**
+
+- proctor instructions with a signed compliance certification, and student instructions covering the
+  photo-ID requirement in the accepted forms;
+- the secure examination banks themselves, with the answer key held server-side and excluded from the
+  published site by a build guard.
+
+**Still to build:**
+
 - the DRE evaluation-form notice to each student;
-- final-exam delivery that is non-printable, non-downloadable, and time-limited, with the exam never
-  furnished directly to students;
-- photo-ID verification at the exam, in one of the two accepted forms;
-- proctor instructions with a signed compliance certification;
+- final-exam **delivery** that is non-printable, non-downloadable, and time-limited in the browser — the
+  banks and the rules exist; the delivery surface does not;
+- photo-ID **capture and verification** at the exam, as distinct from the instruction that it be done;
+- the certificate artefact itself, blocked on RE 311;
 - a regulator log-in that bypasses study-time requirements and exposes all assessments and exams without
-  creating student credit.
+  creating student credit — reviewer mode exists in the engine; real credentials must be issued.
