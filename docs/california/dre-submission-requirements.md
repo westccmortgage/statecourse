@@ -44,7 +44,7 @@ A **separate** application, fee, and full package is required for each of the th
 
 | # | Checklist item | Status | Note |
 | --- | --- | --- | --- |
-| 1 | Course Approval Application (RE 306) | **Not started** | Form in hand; 85 fillable fields; 23 numbered items. |
+| 1 | Course Approval Application (RE 306) | **Content ready** | Complete item-by-item answers for all three courses at `california/submission/re306-answer-sheet.md`; filling the form is transcription. Two answers wait on people: BPPE (item 8) and the 15B delivery-method box, which needs one call to the Education Section. |
 | 2 | Course offering fee | **Blocked** | Amount is in **RE 206E**, which we do not have. |
 | 3 | Corporation documents | **Satisfied** | **StateCourse LLC** was formed as a California domestic LLC on **18 August 2026**, Secretary of State file number **B20260376786**. The stamped Articles of Organization are the document RE 303 asks for and are held at `california/dre-sources/ca-articles-of-organization-B20260376786.pdf`. |
 | 4 | Fictitious Business Name Statement | **Open question — see §2a** | The registered name is `StateCourse LLC` and the platform trades as "StateCourse". Whether dropping the entity designator requires an FBNS is a question for counsel, not one to assume either way. |
@@ -316,6 +316,10 @@ than today's constant.
 
 
 ---
+
+## The envelope
+
+The physical package, item by item with repository locations and blockers, is maintained at `california/submission/package-index.md`. The single highest-leverage next action is one call to the Education Section at (916) 576-3366: request RE 206E, RE 313, and RE 311, and resolve RE 306 item 15B while on the line.
 
 ## Entity record, as filed
 
