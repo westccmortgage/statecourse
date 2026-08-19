@@ -1,3 +1,11 @@
+-- 002 Regulatory course records, instructors, time events, and reporting
+--
+-- Adds the Wisconsin, Missouri, and Oklahoma course records, the versioned regulatory
+-- course table, the instructor register and course/instructor assignments, the raw
+-- instructional time event log, course completion events, and the regulator report
+-- table. Every course lands with approval_status 'submission_draft' and enrollment
+-- disabled; nothing here approves a course or opens enrollment.
+
 begin;
 
 insert into courses(id,state,name,product_type,approval_status,enrollment_enabled)

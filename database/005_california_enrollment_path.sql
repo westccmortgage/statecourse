@@ -1,3 +1,11 @@
+-- 005 California enrollment path: course records, policy versions, and catalogue wiring
+--
+-- Registers the three California 45-hour courses, their draft policy versions
+-- (regulatory acknowledgment, terms, refund, cancellation), and the enrollment path
+-- that carries a student from a purchased course to an access grant. Every course
+-- lands with approval_status 'submission_draft' and enrollment disabled: no row here
+-- approves a course, opens enrollment, or creates regulatory credit.
+
 begin;
 
 insert into courses(id,state,name,product_type,approval_status,enrollment_enabled)

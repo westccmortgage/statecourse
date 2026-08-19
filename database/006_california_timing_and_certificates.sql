@@ -184,8 +184,8 @@ begin
      where enrollment_id=p_enrollment_id;
   end if;
 
-  insert into lms_audit_events(
-    enrollment_id,student_id,actor_id,actor_role,course_id,course_version,assignment_id,event_type,session_id,detail
+  insert into lms_regulatory_audit(
+    enrollment_id,student_id,actor_id,actor_mode,course_id,course_version,assignment_id,event_type,session_id,detail
   ) values(
     p_enrollment_id,v_enrollment.student_id,p_actor_id,p_mode,
     v_enrollment.course_id,v_enrollment.course_version,p_assignment_id,'heartbeat',p_session_id,
@@ -215,8 +215,8 @@ begin
     update enrollments set status='expired', updated_at=now() where id=v_row.id;
     update access_grants set status='revoked', revoked_at=now()
       where enrollment_id=v_row.id and status='active';
-    insert into lms_audit_events(
-      enrollment_id,student_id,actor_id,actor_role,course_id,course_version,assignment_id,event_type,detail
+    insert into lms_regulatory_audit(
+      enrollment_id,student_id,actor_id,actor_mode,course_id,course_version,assignment_id,event_type,detail
     )
     select v_row.id,v_row.student_id,v_row.student_id,'system',v_row.course_id,e.course_version,null,'enrollment_expired',
            jsonb_build_object('reason','one_year_completion_limit','expires_at',e.expires_at)
@@ -319,8 +319,8 @@ begin
      set certificate_number=v_number
    where enrollment_id=p_enrollment_id and certificate_number is null;
 
-  insert into lms_audit_events(
-    enrollment_id,student_id,actor_id,actor_role,course_id,course_version,assignment_id,event_type,detail
+  insert into lms_regulatory_audit(
+    enrollment_id,student_id,actor_id,actor_mode,course_id,course_version,assignment_id,event_type,detail
   ) values(
     p_enrollment_id,v_enrollment.student_id,v_enrollment.student_id,'system',
     v_enrollment.course_id,v_enrollment.course_version,null,'certificate_issued',
@@ -351,8 +351,8 @@ begin
          delivery_method=p_delivery_method, delivery_evidence=coalesce(p_evidence,'{}'::jsonb)
    where id=p_certificate_id;
 
-  insert into lms_audit_events(
-    enrollment_id,student_id,actor_id,actor_role,course_id,course_version,assignment_id,event_type,detail
+  insert into lms_regulatory_audit(
+    enrollment_id,student_id,actor_id,actor_mode,course_id,course_version,assignment_id,event_type,detail
   ) values(
     v_cert.enrollment_id,v_cert.student_id,v_cert.student_id,'system',
     v_cert.course_id,v_cert.course_version,null,'certificate_delivered',
