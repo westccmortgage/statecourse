@@ -157,7 +157,11 @@ begin
   if not v_reviewer and v_enrollment.student_id <> p_actor_id then raise exception 'course_access_denied'; end if;
   if p_mode not in ('student','reviewer','admin') then raise exception 'invalid_mode'; end if;
 
-  /* RE 303 p.4 one-year limit, enforced rather than merely recorded. */
+  /* The one change this migration makes to the heartbeat. RE 303 p.4 requires the
+     coursework to be completed within one year of registration; after that the student
+     re-enrolls. Study time may not be credited to a lapsed enrollment. A reviewer is
+     unaffected: the regulator's account must reach the material whatever the student's
+     clock says, and reviewer heartbeats never carry credit anyway. */
   if not v_reviewer and (v_enrollment.status='expired'
       or (v_enrollment.expires_at is not null and now() >= v_enrollment.expires_at)) then
     raise exception 'enrollment_expired';
@@ -165,29 +169,31 @@ begin
 
   select * into v_session from lms_active_sessions where id=p_session_id for update;
   if not found then
-    raise exception 'session_not_found';
+    insert into lms_active_sessions(id,enrollment_id,student_id,course_id,course_version,assignment_id,mode,device_metadata)
+    values(p_session_id,p_enrollment_id,v_enrollment.student_id,v_enrollment.course_id,v_enrollment.course_version,p_assignment_id,p_mode,p_metadata);
+  else
+    v_elapsed := greatest(0,floor(extract(epoch from now()-v_session.last_heartbeat_at))::integer);
+    if p_active and not v_reviewer and p_mode='student' and v_elapsed between 1 and 90 then
+      v_credit := least(v_elapsed,30);
+    end if;
+    update lms_active_sessions set
+      last_heartbeat_at=now(),
+      active_seconds=active_seconds+v_credit,
+      inactive_seconds=inactive_seconds+case when v_credit=0 then least(v_elapsed,90) else greatest(v_elapsed-v_credit,0) end,
+      device_metadata=coalesce(device_metadata,'{}'::jsonb)||coalesce(p_metadata,'{}'::jsonb)
+    where id=p_session_id;
+    if v_credit>0 then
+      update lms_assignment_state set active_seconds=active_seconds+v_credit,updated_at=now()
+      where enrollment_id=p_enrollment_id and assignment_id=p_assignment_id and assignment_version='1.0';
+      update lms_compliance_state set credited_study_seconds=credited_study_seconds+v_credit,updated_at=now()
+      where enrollment_id=p_enrollment_id;
+      insert into lms_time_events(enrollment_id,course_id,module_id,event_type,active_seconds,detail)
+      values(p_enrollment_id,v_enrollment.course_id,p_assignment_id,'engagement',v_credit,p_metadata);
+    end if;
   end if;
-  if v_session.enrollment_id <> p_enrollment_id then raise exception 'session_enrollment_mismatch'; end if;
 
-  v_elapsed := greatest(0,least(120,extract(epoch from now()-v_session.last_seen_at)::integer));
-  if p_active and p_mode='student' then v_credit := v_elapsed; end if;
-
-  update lms_active_sessions
-     set last_seen_at=now(),
-         active_seconds=active_seconds+v_elapsed,
-         credited_seconds=credited_seconds+v_credit
-   where id=p_session_id;
-
-  if v_credit>0 then
-    update lms_compliance_state
-       set credited_study_seconds=credited_study_seconds+v_credit,updated_at=now()
-     where enrollment_id=p_enrollment_id;
-  end if;
-
-  insert into lms_regulatory_audit(
-    enrollment_id,student_id,actor_id,actor_mode,course_id,course_version,assignment_id,event_type,session_id,detail
-  ) values(
-    p_enrollment_id,v_enrollment.student_id,p_actor_id,p_mode,
+  insert into lms_regulatory_audit(actor_id,actor_mode,student_id,enrollment_id,course_id,course_version,assignment_id,event_type,session_id,detail)
+  values(p_actor_id,case when v_reviewer then 'reviewer' else p_mode end,v_enrollment.student_id,p_enrollment_id,
     v_enrollment.course_id,v_enrollment.course_version,p_assignment_id,'heartbeat',p_session_id,
     jsonb_build_object('active_signal',p_active,'credited_seconds',v_credit)||coalesce(p_metadata,'{}'::jsonb));
   return v_credit;

@@ -50,9 +50,32 @@ test("every table written by a migration is created by a migration", () => {
         assert.ok(known.has(column), `${file.name}: inserts into ${table}.${column}, which that table does not have`);
       }
     }
-    for (const match of body.matchAll(/\bupdate\s+([a-z_][a-z0-9_]*)\s+set\b/gi)) {
+    /* Migration 006 also replaced record_california_heartbeat with a body that read
+       lms_active_sessions.last_seen_at and credited_seconds — neither column exists.
+       Update targets are checked by column for the same reason inserts are. */
+    for (const match of body.matchAll(/\bupdate\s+([a-z_][a-z0-9_]*)\s+set\b([\s\S]*?)(?:\bwhere\b|;)/gi)) {
       const table = match[1].toLowerCase();
       assert.ok(createdTables.has(table), `${file.name}: updates "${table}", which no migration creates`);
+      const known = columnsFor.get(table);
+      if (!known) continue;
+      for (const assignment of match[2].matchAll(/(?:^|,)\s*([a-z_][a-z0-9_]*)\s*=/g)) {
+        assert.ok(known.has(assignment[1].toLowerCase()),
+          `${file.name}: sets ${table}.${assignment[1]}, which that table does not have`);
+      }
+    }
+    /* A function that reads a column the table does not have fails just as hard as one
+       that writes it. Row variables are typed %rowtype from the table, so a field read
+       off one is checked the same way. */
+    for (const match of body.matchAll(/declare([\s\S]*?)\bbegin\b/gi)) {
+      for (const declaration of match[1].matchAll(/\b(v_[a-z0-9_]+)\s+([a-z_][a-z0-9_]*)%rowtype/gi)) {
+        const known = columnsFor.get(declaration[2].toLowerCase());
+        if (!known) continue;
+        const reads = new RegExp(`\\b${declaration[1]}\\.([a-z_][a-z0-9_]*)`, "gi");
+        for (const read of body.matchAll(reads)) {
+          assert.ok(known.has(read[1].toLowerCase()),
+            `${file.name}: reads ${declaration[1]}.${read[1]}, which ${declaration[2]} does not have`);
+        }
+      }
     }
   }
 });
