@@ -2,8 +2,8 @@
 
 **Jurisdiction:** Michigan (MI)
 **Regulator:** Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing
-**Public status:** In Research
-**Status treatment:** `coming_soon`
+**Public status:** In Development
+**Status treatment:** `in_development`
 **Target length:** approximately 85 seconds
 
 > **Generated file — do not edit by hand.** Produced by
@@ -32,9 +32,10 @@
 
 ### status — ~25s
 
-> StateCourse does not offer courses in Michigan yet.
-> We have not built or submitted any course for approval by the Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing.
-> What follows is an outline of what Michigan requires, so you know what to look for — whether or not you ever study with us.
+> StateCourse is building courses for Michigan, and they are not approved yet.
+> We are developing one course for Michigan: Principles of Real Estate.
+> These courses have not been approved by the Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing. You cannot enroll in them, and they do not currently earn credit toward any licensing requirement.
+> We will say so here, plainly, when that changes.
 
 ### close — ~12s
 
@@ -53,6 +54,12 @@
 | Requirement | 40 hours pre-license education |
 | Status | Not approved — no credit available |
 | Close | https://www.michigan.gov/lara/bureau-list/bpl/occ/prof/real-estate |
+
+## Courses referenced
+
+| Course | Hours | Approval status | Enrollment |
+| --- | ---: | --- | --- |
+| Principles of Real Estate | 40 | In Development / Preparing Submission | Disabled |
 
 ## Recording notes
 

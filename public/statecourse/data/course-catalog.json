@@ -613,6 +613,37 @@
               "route": "/real-estate/california/pre-license/mortgage-loan-brokering-and-lending/"
             }
           ]
+        },
+        {
+          "program_id": "mi-salesperson-prelicense",
+          "state_code": "MI",
+          "program_type": "Salesperson Prelicensure",
+          "courses": [
+            {
+              "course_id": "mi-salesperson-prelicensure-40-v1",
+              "state_id": "MI",
+              "program_type": "Salesperson Prelicensure",
+              "course_title": "Principles of Real Estate",
+              "regulator": "Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing",
+              "required_hours": 40,
+              "approved_hours": null,
+              "delivery_method": "Distance (online) · self-directed",
+              "approval_status": "In Development / Preparing Submission",
+              "approval_number": null,
+              "approval_date": null,
+              "expiration_date": null,
+              "instructor_id": null,
+              "price": null,
+              "enrollment_enabled": false,
+              "refund_policy_version": "mi-draft-pending",
+              "disclosures_version": "mi-draft-pending",
+              "course_version": "1.0-draft",
+              "final_exam_rules": "Provider-administered final examination; Michigan prescribes none. Secure bank, never published.",
+              "certificate_template": "mi-pending-approval",
+              "reporting_rules": "Names of successful students within 5 business days of the conclusion of the last course (R 339.22154(7))",
+              "route": "/real-estate/michigan/pre-license/principles-of-real-estate/"
+            }
+          ]
         }
       ]
     },
