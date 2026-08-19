@@ -300,3 +300,17 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .intro-end-card:not([hidden]) { animation: none; } }
+.approval-block{margin:34px 0;padding:26px 28px;border:1px solid var(--rule,#d7d0c4);background:var(--surface,#fffdf8)}
+.approval-block h2{margin:0 0 4px;font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.15}
+.approval-regulator{margin:0 0 18px;font-size:13px;color:#687078}
+.approval-numbers{margin:0 0 18px;padding:0;list-style:none}
+.approval-numbers li{padding:12px 0;border-top:1px solid var(--rule,#d7d0c4)}
+.approval-numbers strong{display:block;font-size:16px}
+.approval-numbers span{display:block;margin-top:3px;font-size:13px;color:#687078;font-variant-numeric:tabular-nums}
+.approval-absent{margin:0 0 18px;padding:14px 18px;border-left:4px solid #a47b39;background:#ece5d8;font-size:14px}
+.verify-steps{padding-top:16px;border-top:1px solid var(--rule,#d7d0c4)}
+.verify-steps ol{margin:0 0 14px;padding-left:22px}
+.verify-steps li{margin-bottom:8px;font-size:14px}
+.verify-note{margin:0 0 14px;font-size:13px;color:#4f575e}
+.verify-reviewed{margin:10px 0 0;font-size:11px;color:#687078}
+@media(max-width:760px){.approval-block{padding:18px 16px}.approval-block h2{font-size:23px}}

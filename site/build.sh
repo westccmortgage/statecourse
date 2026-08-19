@@ -54,6 +54,7 @@ test -f dist/state-requirements/index.html
 test -f dist/exam-prep/index.html
 test -f dist/continuing-education/index.html
 test -f dist/service-area.js
+test -f dist/approvals/index.html
 test -f dist/student/final-exam/index.html
 test -f dist/student/final-exam/final-exam.js
 test -f dist/student/final-exam/final-exam.css
@@ -74,3 +75,5 @@ test -f dist/data/homepage-video.json
 node -e 'const r=require("./dist/data/state-registry.json"); if(r.states.length!==51) process.exit(1); for(const c of ["VA","ME","WI","MO","OK","AZ","WA","PA","NC","CO","CA"]) if(r.states.find(s=>s.state_code===c)?.public_status!=="In Development") process.exit(1)'
 node -e 'const c=require("./dist/data/course-catalog.json"); const courses=c.categories[0].programs.flatMap(p=>p.courses); for(const id of ["ca-real-estate-principles-45","ca-real-estate-practice-45","ca-mortgage-loan-brokering-lending-45"]) if(!courses.find(x=>x.course_id===id)) process.exit(1)'
 ! find dist -type f -print | grep -Eq 'final-exam-bank|answer-key'
+! grep -rlq 'correctChoice' dist
+! grep -rlq 'FINAL_EXAM_BANKS' dist
