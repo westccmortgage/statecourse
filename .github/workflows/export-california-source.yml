@@ -1,0 +1,26 @@
+name: Export California Source
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/export-california-source.yml"
+      - "california/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pull request source
+        uses: actions/checkout@v4
+
+      - name: Upload California source package
+        uses: actions/upload-artifact@v4
+        with:
+          name: california-source
+          path: california/
+          include-hidden-files: true
+          retention-days: 1
