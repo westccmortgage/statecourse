@@ -19,9 +19,9 @@
  *      way to touch live objects by forgetting a flag.
  *
  * Usage:
- *   STRIPE_SECRET_KEY_TEST=sk_test_51U6HpAI5Vlt1VlIgUKIHtVMDVZrZiKLSrX3fA00eUCpVZdzX2zyYR8pupwEqYXhzLbBqjIGRQK7tJhl2pHIp4k1x00do3gIuIz node scripts/stripe-setup.mjs
- *   STRIPE_SECRET_KEY_TEST=sk_test_51U6HpAI5Vlt1VlIgUKIHtVMDVZrZiKLSrX3fA00eUCpVZdzX2zyYR8pupwEqYXhzLbBqjIGRQK7tJhl2pHIp4k1x00do3gIuIznode scripts/stripe-setup.mjs --webhook https://statecourse.example/.netlify/functions/stripe-webhook
- *   STRIPE_SECRET_KEY_LIVE=sk_test_51U6HpAI5Vlt1VlIgUKIHtVMDVZrZiKLSrX3fA00eUCpVZdzX2zyYR8pupwEqYXhzLbBqjIGRQK7tJhl2pHIp4k1x00do3gIuIznode scripts/stripe-setup.mjs --live --webhook https://...
+ *   STRIPE_SECRET_KEY_TEST=sk_test_... node scripts/stripe-setup.mjs
+ *   STRIPE_SECRET_KEY_TEST=sk_test_... node scripts/stripe-setup.mjs --webhook https://statecourse.example/.netlify/functions/stripe-webhook
+ *   STRIPE_SECRET_KEY_LIVE=sk_live_... node scripts/stripe-setup.mjs --live --webhook https://...
  *
  * Add --dry-run to print what would be created without calling Stripe.
  */
