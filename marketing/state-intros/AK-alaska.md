@@ -1,28 +1,68 @@
-# Alaska — introductory video: NOT READY TO RECORD
+# Alaska — introductory video script
 
 **Jurisdiction:** Alaska (AK)
-**Public status:** Coming Soon
-**Status treatment:** `not_researched`
+**Regulator:** Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing
+**Public status:** In Research
+**Status treatment:** `coming_soon`
+**Target length:** approximately 85 seconds
 
-> **Do not record a video for this jurisdiction.** The registry does not yet hold verified
-> information about it, so there is nothing accurate to say. A script generated from the
-> current data would state that licensing is regulated by "Regulator research pending" and
-> would promise an outline of requirements that does not exist.
+> **Generated file — do not edit by hand.** Produced by
+> `scripts/generate-state-intro-scripts.mjs` from `data/state-registry.json` and
+> `data/course-catalog.json`. Editing the script here would let it drift from the
+> data it is supposed to reflect. Change the registry, then regenerate.
 
-## What is missing
+> **No approval claimed.** This script states plainly that nothing here is approved and
+> that no credit is earned. Do not soften that language when recording. RE 303:
+> offerings *"may not be promoted as being DRE-approved until actual approval is issued."*
 
-- verified regulator name
-- regulator source URL
-- verified pre-license hour requirement
-- permitted delivery methods
+## Script
 
-## What to do
+### identification — ~8s
 
-1. Research the jurisdiction against the regulator's own published sources.
-2. Record the verified values in `public/statecourse/data/state-registry.json`.
-3. Regenerate: `node scripts/generate-state-intro-scripts.mjs`.
-4. A recordable script will replace this file once the data supports one.
+> This is StateCourse, from state course LLC.
+> A short introduction to real estate licensing in Alaska.
 
-Producing a video before that point would be advertising a jurisdiction we have not
-researched, which is the kind of statement Regulation 3004(d) addresses.
+### requirement — ~30s
+
+> Real estate licensing in Alaska is regulated by the Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing.
+> The pre-license education requirement is 40 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
+> Approved courses may be delivered by: Classroom, Virtual course (student present on a device with video and audio), Correspondence course (self-paced).
+> Courses must be approved by the regulator before they count toward the requirement. A course that is not approved earns nothing, however good it is.
+> Instructors must also be qualified or approved.
+
+### status — ~25s
+
+> StateCourse does not offer courses in Alaska yet.
+> We have not built or submitted any course for approval by the Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing.
+> What follows is an outline of what Alaska requires, so you know what to look for — whether or not you ever study with us.
+
+### close — ~12s
+
+> Everything we know about Alaska requirements is on this page, with links to the regulator's own sources.
+> If anything here disagrees with the regulator, the regulator is right and we want to know about it.
+
+### disclaimer — ~10s
+
+> This video is information about licensing requirements. It is not instruction, it does not count toward any course or study-time requirement, and watching it earns no credit.
+
+## On-screen text
+
+| When | Text |
+| --- | --- |
+| Open | StateCourse · state course LLC |
+| Requirement | 40 hours pre-license education |
+| Status | Not approved — no credit available |
+| Close | https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/RealEstateCommission.aspx |
+
+## Recording notes
+
+- **Captions are required.** A WebVTT caption file must accompany the video. RE 303 notes the
+  ADA obligation to offer courses and examinations accessibly, and this is the cheapest place
+  to meet it.
+- **A transcript must be published** alongside the video on the page.
+- **Do not add claims while recording.** Anything not in this script is not in the data.
+- **Do not state or imply a completion time** shorter than the hours above. Regulation 3004(c)
+  prohibits advertising that implies a course can be completed in less time than its approved hours.
+- **Re-record when the status changes.** Regenerate these scripts after any registry change and
+  compare; a changed script means the recorded video is now inaccurate.
 
