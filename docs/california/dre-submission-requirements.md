@@ -250,8 +250,9 @@ Ordered by lead time rather than by checklist position.
 
 1. **Recruit college instructors** willing to sign the equivalence certification on institutional
    letterhead, one per course. External dependency, longest lead time, and it cannot be compressed.
-2. **Rebuild the lesson content** so it can survive that certification and a reviewer reading it in
-   print. Currently 14 distinct paragraphs across all 45 lessons.
+2. ~~**Rebuild the lesson content**~~ — done. All 45 lessons across the three courses are authored to
+   roughly 450 pages each, and the templated share of prose fell from 45.4% to 3.4% under the content
+   auditor's nine gates.
 3. **Obtain the missing DRE forms:** RE 313 (General Information Page), RE 311 (Course Completion
    Certificate), RE 206E (fee schedule), and RE 909 if paying by card. All are on dre.ca.gov, which this
    build environment cannot reach; supply them the same way the first four were supplied.
@@ -283,12 +284,32 @@ Beyond the paperwork, the regulations require platform behavior beyond the lesso
 - the secure examination banks themselves, with the answer key held server-side and excluded from the
   published site by a build guard.
 
+**Closed by migration `007_california_final_examination.sql` and the examination surface:**
+
+- the examination **administration** itself — the proctor record, the identity check, the timed session,
+  the responses, the score, and the completion event a passing score produces. Before this, a student who
+  satisfied every requirement had nothing to sit and no California course could be completed;
+- photo-ID **capture and verification** as a recorded act rather than an instruction: the accepted
+  category, the issuing authority, the verifier, and the time, with the trade-organization credential's
+  five-year limit checked rather than trusted. Deliberately no image of the document is retained — RE 303
+  requires the participant to *present* identification, not the school to keep a copy, and retained images
+  of government identification would be a standing breach target for no compliance benefit;
+- final-exam **delivery** in the browser: one question at a time, a clock that does not pause, answers
+  saved as they are made, automatic submission at zero, printing refused by replacing the document rather
+  than hiding questions in a print stylesheet, and no path by which an answer key, a rationale, or a
+  per-item verdict reaches the student — before, during, or after;
+- the **DRE evaluation-form notice**, versioned, delivered with every course payload, rendered in the
+  course panel, and written to the audit trail so notification can be evidenced rather than assumed.
+
 **Still to build:**
 
-- the DRE evaluation-form notice to each student;
-- final-exam **delivery** that is non-printable, non-downloadable, and time-limited in the browser — the
-  banks and the rules exist; the delivery surface does not;
-- photo-ID **capture and verification** at the exam, as distinct from the instruction that it be done;
 - the certificate artefact itself, blocked on RE 311;
 - a regulator log-in that bypasses study-time requirements and exposes all assessments and exams without
   creating student credit — reviewer mode exists in the engine; real credentials must be issued.
+
+**Two values are provider-proposed, not regulator-fixed,** and are labelled `PROVIDER-SET` wherever they
+appear so a reviewer is never shown a proposal presented as a rule: the 180-minute examination limit
+(RE 306 items 19–20 ask the provider to state it) and the 60-minute reading of "immediately before" for
+the identity check, which the regulation does not quantify. Both are recorded on every session, alongside
+the passing percentage and question count, so an audit shows the rule that governed a given attempt rather
+than today's constant.
