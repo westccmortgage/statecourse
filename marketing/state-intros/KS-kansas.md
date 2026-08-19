@@ -26,7 +26,7 @@
 
 > Real estate licensing in Kansas is regulated by the Kansas Real Estate Commission.
 > The pre-license education requirement is 60 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
-> Approved courses may be delivered by: Asynchronous distance education, Synchronous distance education, In-person education.
+> Approved courses may be delivered by: In-person education course, Synchronous distance education course, Asynchronous distance education course (self-paced).
 > Courses must be approved by the regulator before they count toward the requirement. A course that is not approved earns nothing, however good it is.
 
 ### status — ~25s
