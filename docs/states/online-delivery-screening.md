@@ -20,7 +20,7 @@ A third case cut the other way and is just as instructive. A summary reported th
 
 | State | Entry hours | Asynchronous online | Verdict | Read in |
 | --- | --- | --- | --- | --- |
-| **Michigan** | 40, including at least 4 of civil rights law and equal opportunity in housing | **Yes** — the approval application's own course-type selector is "Non-Distance (classroom) / Distance (online)" | **Viable** | Michigan Real Estate Salesperson Licensing Guide (rev. 1/26/2026); Real Estate Salesperson & Broker Prelicensure Course Approval Application, BPL/REPRELICCOURSEAPPROVALAPPL (rev. 3/23), authority 1980 PA 299 |
+| **Michigan** | 40, including at least 4 of civil rights law and equal opportunity in housing | **Yes** — the approval application's own course-type selector is "Non-Distance (classroom) / Distance (online)" | **Built.** Course written and submission package drafted | Michigan Real Estate Salesperson Licensing Guide (rev. 1/26/2026); Real Estate Salesperson & Broker Prelicensure Course Approval Application, BPL/REPRELICCOURSEAPPROVALAPPL (rev. 3/23), authority 1980 PA 299 |
 | **Kansas** | 60 — a 30-hour Principles course and a 30-hour Kansas Practice course | **Yes** — "asynchronous distance education course" is a defined, separately approvable course type | **Viable** | Kansas Register vol. 43 no. 50 (Dec 12, 2024), permanent regulation implementing K.S.A. 58-3046a |
 | **Nebraska** | 60 — two commission-approved courses of not less than 30 class hours each | **Yes, on its face** — "or completed equivalent distance education courses approved by the Commission" | **Promising, not yet confirmed** — Title 299 text still to be read in full | Nebraska Real Estate Commission pre-license education pages; Title 299 to be read before this row is relied on |
 | **Iowa** | 60 online or live, **plus 36 hours that must be live** | **Partial** — the 60 may be distance/online; the additional 12+12+12 may not | **Not viable alone** | Iowa Administrative Code 193E—16.2(543B), and 193E—17.10(543B) for distance standards |
@@ -72,11 +72,21 @@ The consequence for sequencing is concrete. ARELLO Distance Education Certificat
 
 And Montana adds a maintenance obligation the others do not spell out: approval there is not merely granted on the strength of a certification, it is **contingent on the certification remaining in effect**, and lapses the moment the certification does. A certification that expires quietly does not degrade the offering; it ends the approval.
 
+## What building Michigan taught that screening did not
+
+Michigan was screened first and built first, and the build surfaced three things the screening pass had missed. That is itself the finding: a delivery-rule screen tells you whether a state is possible, not what it will cost.
+
+**The rules had been renumbered.** Everything in the old R 339.22301–R 339.22667 range now reads "Rescinded", effective 4 June 2025, and LARA's own current course-approval form still cites the superseded numbers. A screen that reads the form and stops would cite rescinded rules throughout. Reading the rules in full is not the same as reading the form that references them.
+
+**There is a second regulator.** R 339.22143(2) binds a proprietary real estate school to the Proprietary Schools Act, 1943 PA 148. Whether an out-of-state distance provider is a proprietary school within that act is a legal question, and it is Michigan's analogue of the California BPPE question — which means Maryland's two-regulator problem is not the exception the screening table implied. **Every future screen must ask who else licenses schools in the state**, not only who approves the course.
+
+**Approval expires in one year.** R 339.22143(1), with renewal filed 60 days ahead. Against Virginia's three years and California's course life, Michigan turns approval maintenance into an annual routine, and the cost of a state is not only the cost of entering it.
+
 ## Method, so this is repeatable
 
-1. Find the controlling text — statute, administrative rules, and the regulator's current course-approval form. Prefer the legislature or secretary-of-state publication of the rules; regulator sites often refuse an automated request, and the rule text is what governs anyway.
+1. Find the controlling text — statute, administrative rules, and the regulator's current course-approval form. Check whether the rules have been renumbered, and whether the form predates the renumbering. Prefer the legislature or secretary-of-state publication of the rules; regulator sites often refuse an automated request, and the rule text is what governs anyway.
 2. Answer the delivery question first, from the rule, in full sentences quoted or closely paraphrased into the register.
-3. Answer the operational questions second: who approves the school, who approves the instructor, how long records are kept, what the completion report must contain and when it is due, and what the certificate must carry.
+3. Answer the operational questions second: who approves the school, **whether a separate private-school or proprietary-school agency also licenses it**, how long the approval lasts, who approves the instructor, how long records are kept, what the completion report must contain and when it is due, and what the certificate must carry.
 4. Record the date read and the document revision. Rules change; a fact without a date is not a fact for long.
 5. Fill the public registry only from what was read, and leave anything unread empty rather than plausible.
 
