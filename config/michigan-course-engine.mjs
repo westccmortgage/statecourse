@@ -150,7 +150,14 @@ export function scoreMichiganAssessment(assessment, answers) {
   if (!Array.isArray(answers) || answers.length !== assessment.items.length) return null;
   const results = [];
   for (const [index, item] of assessment.items.entries()) {
-    const selectedChoice = Number(answers[index]);
+    /* Number(null), Number(""), Number(false) and Number([]) are all 0, so a coerced
+       read would silently record choice 0 — a selection the student never made — into a
+       permanent selected_choice. Accept a real number, or a string of digits from a form
+       post, and nothing else. */
+    const raw = answers[index];
+    const selectedChoice = typeof raw === "number"
+      ? raw
+      : (typeof raw === "string" && /^\d+$/.test(raw.trim()) ? Number(raw.trim()) : Number.NaN);
     if (!Number.isInteger(selectedChoice) || selectedChoice < 0 || selectedChoice >= item.choices.length) return null;
     const correct = selectedChoice === item.correctChoice;
     results.push({ itemId: item.id, selectedChoice, correct, rationale: item.rationale });

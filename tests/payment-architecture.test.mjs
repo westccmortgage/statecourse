@@ -6,8 +6,13 @@ import { evaluateCheckoutEligibility, getCourseCatalog } from "../config/course-
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
 
 test("regulated courses default to disabled server-authoritative checkout", () => {
-  assert.equal(getCourseCatalog().length, 6);
-  for (const course of getCourseCatalog()) {
+  /* Asserted as an invariant rather than a count. A pinned number turns adding a state
+     into a test failure that says nothing about payments, and the thing that actually
+     matters is that no course in the catalogue can be bought while it is unapproved. */
+  const catalog = getCourseCatalog();
+  assert.ok(catalog.length > 0, "the catalogue must not be empty");
+  assert.equal(new Set(catalog.map((course) => course.id)).size, catalog.length, "course ids must be distinct");
+  for (const course of catalog) {
     assert.equal(course.enrollmentEnabled, false);
     assert.equal(course.approvalStatus, "submission_draft");
     assert.equal(course.price.test, null);
