@@ -74,11 +74,24 @@ test("secure Maine exam and answer materials are never referenced by public asse
   assert.doesNotMatch(publicFiles.join("\n"), /final-exam-bank\.md|assessments\/quizzes\.md|answer key/i);
 });
 
-test("eleven launch states are visible and all others are coming soon", async () => {
+test("eleven launch states are visible, nothing is approved, and the rest are honestly labelled", async () => {
   const registry = JSON.parse(await read("data/state-registry.json"));
   const launch = registry.states.filter((state) => state.public_status === "In Development");
   assert.deepEqual(launch.map((state) => state.state_code).sort(), ["AZ", "CA", "CO", "ME", "MO", "NC", "OK", "PA", "VA", "WA", "WI"]);
-  assert.equal(registry.states.filter((state) => state.public_status === "Coming Soon").length, 40);
+  /* A state moves from "Coming Soon" to "In Research" as its rules are read from the
+     primary sources, which is why this counts buckets rather than pinning one number:
+     the invariant is that no state outside the eleven claims development, and that no
+     state claims approval anywhere. */
+  const others = registry.states.filter((state) => state.public_status !== "In Development");
+  assert.equal(others.length, registry.states.length - 11);
+  for (const state of others) {
+    assert.ok(["Coming Soon", "In Research", "Not Started"].includes(state.public_status),
+      `${state.state_code} carries an unexpected public status: ${state.public_status}`);
+  }
+  for (const state of registry.states) {
+    assert.notEqual(state.public_status, "Approved", `${state.state_code} claims approval`);
+    assert.equal(state.provider_approval_number ?? null, null, `${state.state_code} carries a provider approval number`);
+  }
 });
 
 test("national routes and jurisdiction hubs are generated", async () => {
