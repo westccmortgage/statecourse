@@ -78,7 +78,11 @@ Note who earns it. The **broker** earns the commission. **AS 08.88.331** require
 
 **12 AAC 64.130(6)** makes it grounds for revocation or suspension to advertise a property for sale, lease, or rent "without first obtaining the **written** authority of the owner or the owner's authorized agent." A verbal go-ahead to put it on the market is not written authority.
 
-**Checkpoint 1.** A seller tells you on the phone to extend the exclusive listing that expires Friday for another sixty days, and you do. What has gone wrong, and under which provision?
+#### Checkpoint 1.1
+
+A seller tells you on the phone to extend the exclusive listing that expires Friday for another sixty days, and you do. What has gone wrong, and under which provision?
+
+*Answer:* An oral extension. **AS 08.88.341** requires all real estate listings to be in writing signed by both sides, and requires an **exclusive** listing to carry a definite expiration date that "may be renewed or extended only by a written agreement signed by the client or the client's authorized representative." The phone call extends nothing. The listing expires Friday, and after that any advertising continues without written owner authority, which **12 AAC 64.130(6)** makes grounds for revocation or suspension. Prepare a written extension and get it signed before Friday.
 
 ## 2. AS 08.88.405 and the limits of preparation
 
@@ -126,7 +130,11 @@ So the two statutes fit together cleanly:
 
 **AS 08.88.403** allows a real estate broker to contract with and pay an attorney or an associate broker to **assist the broker to review a real estate transaction before the transaction closes**. Alaska anticipated that documents prepared under .405 would be reviewed, and made room for it to be paid for.
 
-**Checkpoint 2.** Your buyer wants a clause making the sale contingent on his ability to subdivide the parcel within eighteen months. Under AS 08.88.405 may you prepare the purchase agreement? Under AS 08.88.620(3) what else do you owe him?
+#### Checkpoint 2.1
+
+Your buyer wants a clause making the sale contingent on his ability to subdivide the parcel within eighteen months. Under AS 08.88.405 may you prepare the purchase agreement? Under AS 08.88.620(3) what else do you owe him?
+
+*Answer:* Yes, you may prepare it. **AS 08.88.405** authorises an Alaska licensee to prepare real property contracts and earnest money agreements in the course of licensed work, and a subdivision contingency negotiated by the parties is a term of that contract. What you owe him in addition is **AS 08.88.620(3)**: a duty to advise a represented person to seek expert advice on matters beyond your expertise. Whether an eighteen-month subdivision is achievable, and what happens to his money if it is not, are planning and legal questions. Prepare the document, recommend counsel and the platting authority, and record the recommendation in the file. **AS 08.88.403** exists so the broker can arrange and pay for that review.
 
 ## 3. Formation: offer, counteroffer, acceptance
 
@@ -178,7 +186,11 @@ This sits alongside **AS 08.88.615**, which imposes duties in every licensee rel
 
 These are legal doctrines, and a licensee's job when one comes up is to recognise it and route it — not to advise on it.
 
-**Checkpoint 3.** A seller counters, the buyer does not respond, and two days later the seller says "fine, I'll take the original offer." What is the seller's legal position, and what do you do?
+#### Checkpoint 3.1
+
+A seller counters, the buyer does not respond, and two days later the seller says "fine, I'll take the original offer." What is the seller's legal position, and what do you do?
+
+*Answer:* There is nothing left to accept. The counteroffer **rejected** the buyer's offer and replaced it, so the $440,000 offer no longer exists. The seller's "acceptance" is a new offer to the buyer, which the buyer is free to reject. What you do is prepare that new offer in writing and present it — and explain to the seller, before the next negotiation, that every counter kills the offer it answers.
 
 ## 4. The purchase and sale agreement
 
@@ -220,7 +232,11 @@ Where the contract says time is of the essence, the dates are material terms and
 
 Any change after signature requires a written amendment signed by both parties. An email in which both sides seem to agree is not an amendment to a contract for the sale of real property; AS 09.25.010(a)(6) required the writing in the first place and a modification of a material term needs the same formality. Prepare the amendment — AS 08.88.405 permits you to — and get it signed.
 
-**Checkpoint 4.** A purchase agreement makes the sale contingent on a satisfactory well test but sets no date. Identify the risk to each party.
+#### Checkpoint 4.1
+
+A purchase agreement makes the sale contingent on a satisfactory well test but sets no date. Identify the risk to each party.
+
+*Answer:* The buyer's risk is that a contingency with no date has no deadline to satisfy, so on most forms it either never matures or is argued to have been waived at closing — and if the well fails the buyer may find they have no exit. The seller's risk is the mirror image: an open-ended condition the buyer can invoke at any time, which prevents the seller from treating the property as sold or responding to a backup offer. Neither party can plan. Fix it with an amendment stating the date to test, the date to object, the seller's response period, and the consequence if the parties do not agree.
 
 ## 5. Earnest money and the trust account
 
@@ -278,7 +294,11 @@ Trust accounts must be **reconciled monthly** — 12 AAC 64.220(f) — by reconc
 
 When a transaction fails and the parties disagree about the earnest money, the broker is holding money two people claim. The broker may not simply decide. The path is the contract's dispute provision, a written mutual release signed by both parties, or, failing those, a legal process. What the broker must not do is disburse on one party's say-so, or hold indefinitely without accounting — 12 AAC 64.250(6) forbids refusing an accounting to the principals.
 
-**Checkpoint 5.** A buyer offers a $15,000 promissory note as earnest money. List every step required before the seller accepts.
+#### Checkpoint 5.1
+
+A buyer offers a $15,000 promissory note as earnest money. List every step required before the seller accepts.
+
+*Answer:* Four. (1) The non-cash substitute must be **communicated to the owner before the owner accepts the offer** — 12 AAC 64.130(12). (2) The acceptance of the substitute must be **identified as a non-cash substitute on the earnest money receipt** — the same paragraph. (3) **Control over the item must be surrendered to the broker** — 12 AAC 64.271. (4) The broker must **inform the principal parties** — also 64.271. Doing any of this after acceptance does not cure it. Whether a note is acceptable is the seller's decision; your obligation is that the seller knows what is actually on deposit.
 
 ## 6. AS 34.70 residential disclosure
 
@@ -360,7 +380,11 @@ Treble damages for a wilful violation is the number to remember. Alaska did not 
 
 **AS 34.70.200(4):** "transfer" means transfers by **sale, exchange, installment land sale contract, lease with an option to purchase, other option to purchase, or a ground lease coupled with improvements**. A lease-option is a transfer for this chapter. A triplex is not two single-family dwellings in one building.
 
-**Checkpoint 6.** A seller mails the disclosure statement three days after accepting a written offer. What right does the buyer now have, and for how long?
+#### Checkpoint 6.1
+
+A seller mails the disclosure statement three days after accepting a written offer. What right does the buyer now have, and for how long?
+
+*Answer:* A right to **terminate the offer**. **AS 34.70.010** requires delivery **before** the buyer makes a written offer, and this was three days after acceptance. Under **AS 34.70.020** the buyer may terminate by delivering written notice of termination to the seller or the seller's agent **within six days** after the statement is deposited in the mail — three days if it had been delivered in person. The delivery method sets the clock.
 
 ## 7. The other documents a transaction requires
 
@@ -413,7 +437,11 @@ Separately, **12 AAC 64.130(9)** makes it grounds for discipline to fail to disc
 
 **AS 08.88.391**, from module 01, requires a licensee with a conflict of interest to disclose it verbally and confirm it in writing as soon as possible after it is identified, in a written disclosure that begins with the words **"Disclosure of Conflict of Interest."** underlined and in bold. Buying the listing yourself, or having your spouse buy it, is a conflict, and **12 AAC 64.130(10)** separately prohibits using third-party purchasers, entities, friends, relatives, or business associates in a way that conceals the licensee's profit and identity.
 
-**Checkpoint 7.** Your buyer is under contract on a condominium unit and the association has not produced the resale certificate eight days before closing. What is the buyer's position under AS 34.08.590(c)?
+#### Checkpoint 7.1
+
+Your buyer is under contract on a condominium unit and the association has not produced the resale certificate eight days before closing. What is the buyer's position under AS 34.08.590(c)?
+
+*Answer:* The buyer holds a live termination right. **AS 34.08.590(c)** makes the purchase contract **voidable by the purchaser until the certificate has been provided and for five days after it was provided, or until conveyance, whichever occurs first**. With eight days to closing and no certificate, the buyer can walk. The seller is not liable for the association's delay, but the deadline still moves — the association has ten days from a written request under .590(b), and five more run after delivery. This is why the certificate is ordered at listing.
 
 ## 8. Performance, breach, and the transaction file
 
@@ -460,7 +488,11 @@ Signed listing agreement with a definite expiration date. Written advertising au
 
 The test is simple and it is the one an auditor applies: **could someone who was not there reconstruct what happened and when, from the file alone?**
 
-**Checkpoint 8.** A listing signed in March expires in September without selling. Until when must the broker retain the file, and under which provision?
+#### Checkpoint 8.1
+
+A listing signed in March expires in September without selling. Until when must the broker retain the file, and under which provision?
+
+*Answer:* **Until three years after the listing agreement ended** — so until September three years on. **AS 08.88.351(c)** runs the three-year period from the **ending** date, not from when the file was opened: three years after a listing agreement ends, a sales transaction closes or otherwise ends, a management contract ends, or another contractual or fiduciary obligation ends, whichever applies. The March signing date is irrelevant to the retention calculation.
 
 ## Key terms
 

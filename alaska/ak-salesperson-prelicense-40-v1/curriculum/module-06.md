@@ -86,7 +86,11 @@ Two common structures:
 
 Both are documents "related to real property," so **AS 08.88.405** permits a licensee to prepare them in the course of licensed work. Both also carry consequences — what happens on default under a contract for deed is a genuinely hard question — so **AS 08.88.620(3)**'s duty to advise a represented person to seek expert advice is squarely engaged. Prepare the instrument; recommend counsel; note it in the file.
 
-**Checkpoint 1.** A buyer says he will "assume the seller's loan and take over payments." Name the clause that stands in his way and the doctrine that would release the seller.
+#### Checkpoint 1.1
+
+A buyer says he will "assume the seller's loan and take over payments." Name the clause that stands in his way and the doctrine that would release the seller.
+
+*Answer:* The **alienation, or due-on-sale, clause**, which makes the balance due on transfer and is generally enforceable under the Garn-St Germain Depository Institutions Act, 12 U.S.C. 1701j-3. The doctrine that would release the seller is **novation** — a substitution of the buyer for the seller as obligor, with the lender's agreement. Without a novation, an assumption leaves the seller liable on the note, which sellers routinely assume is not so.
 
 ## 2. Loan products, AHFC, and who may originate
 
@@ -128,7 +132,11 @@ Recommending financing generally is part of a licensee's work. **Originating a m
 
 So: explain loan types, refer to lenders, and help a client assemble what a lender asks for. **Do not take a loan application, do not negotiate loan terms, and do not offer or negotiate rates**, unless you hold the separate licence. Referral compensation is also constrained — RESPA section 8 in module 08, and **AS 08.88.401(b)** with **12 AAC 64.130(7)** on your own side of the line.
 
-**Checkpoint 2.** Your buyer asks you to "lock in 6.25 percent" with a lender you work with often. Which two statutes tell you what you may and may not do?
+#### Checkpoint 2.1
+
+Your buyer asks you to "lock in 6.25 percent" with a lender you work with often. Which two statutes tell you what you may and may not do?
+
+*Answer:* **AS 06.60.012** and **AS 06.60.010**. Locking a rate is offering or negotiating terms of a residential mortgage loan, which requires a **mortgage loan originator** licence under AS 06.60.012 — held by an individual registered with a unique identifier and sponsored by a mortgage licensee — and the entity itself must be licensed under AS 06.60.010. You may explain loan types and refer him to a lender. You may not take the application, negotiate terms, or quote and lock a rate.
 
 ## 3. Loan arithmetic
 
@@ -191,7 +199,11 @@ The **note rate** prices the loan. The **annual percentage rate** expresses the 
 
 Advertising a rate can trigger Regulation Z's trigger-term rules: state a trigger term — such as the down payment amount, the payment amount, the number of payments, the term, or the finance charge — and the required additional disclosures must accompany it. **The practical rule for a licensee is not to advertise financing terms at all**, because the disclosure obligation belongs with a lender who is set up to meet it. Layer on **12 AAC 64.130(8)**, which requires the broker's registered business name in every advertisement, and the safe habit is clear.
 
-**Checkpoint 3.** Price $420,000, appraisal $409,000, loan $360,000. Compute the LTV and say which figure you used and why.
+#### Checkpoint 3.1
+
+Price $420,000, appraisal $409,000, loan $360,000. Compute the LTV and say which figure you used and why.
+
+*Answer:* **LTV = 360,000 ÷ 409,000 = 88.0 percent.** You use the **appraisal**, because LTV is computed on the **lesser** of price or appraised value and $409,000 is lower than the $420,000 price. The practical consequence is that the $11,000 gap between price and appraisal is the buyer's to bring in cash unless the contract's appraisal contingency says otherwise — which is why that contingency needs a date and a stated consequence.
 
 ## 4. Default and Alaska's two foreclosure routes
 
@@ -252,7 +264,11 @@ Alternatives a licensee should be able to name: **reinstatement** (curing under 
 
 **Never** tell a distressed seller what their deficiency exposure will be. The answer depends on which instrument secures the loan, whether the lender proceeds under AS 34.20 or AS 09.45, whether there is a second lien, and federal tax consequences. That is AS 08.88.620(3) in its purest form.
 
-**Checkpoint 4.** A lender holding a deed of trust sues on the note and obtains a judgment. May it then conduct a trustee's sale? Cite the provision.
+#### Checkpoint 4.1
+
+A lender holding a deed of trust sues on the note and obtains a judgment. May it then conduct a trustee's sale? Cite the provision.
+
+*Answer:* **No.** **AS 34.20.070(a)** provides that "if the deed of trust is foreclosed judicially or the note secured by the deed of trust is sued on and a judgment is obtained by the beneficiary, the beneficiary may not exercise the nonjudicial remedies described in this section." Having taken a judgment on the note, the lender is on the judicial track — where a deficiency is enforceable by execution under AS 09.45.180 but the debtor gets the AS 09.35.250 redemption right.
 
 ## 5. The settlement statement and prorations
 
@@ -311,7 +327,11 @@ Days remaining, 6 August through 30 September = 26 + 30 = **56 days**. Daily = 6
 
 A licensee should verify, before closing: the price and earnest money match the contract as amended; every proration uses the agreed convention and the agreed closing-day ownership; the brokerage compensation matches the written agreement; the payoff matches the lender's demand; and no charge appears that no document supports. Find the error the day before closing, not on it.
 
-**Checkpoint 5.** Annual tax $5,110, closing 22 April, taxes paid in arrears by the buyer, seller owns the day of closing, 365-day convention. Compute the seller's share and say who is debited.
+#### Checkpoint 5.1
+
+Annual tax $5,110, closing 22 April, taxes paid in arrears by the buyer, seller owns the day of closing, 365-day convention. Compute the seller's share and say who is debited.
+
+*Answer:* Daily rate = 5,110 ÷ 365 = **$14.00**. Days 1 January through 22 April = 31 + 28 + 31 + 22 = **112**. Seller's share = 112 × 14.00 = **$1,568.00**. Because the buyer will pay the whole year's bill in arrears, the seller is **debited $1,568.00** and the buyer credited the same amount.
 
 ## 6. Trust accounting arithmetic
 
@@ -394,7 +414,11 @@ Now the rules that constrain the payment:
 
 **12 AAC 64.240(c):** the property management fee is disbursed from the trust account on a **regular monthly basis**, after collection of that month's receipts and disbursement of that month's expenses are complete.
 
-**Checkpoint 6.** Your broker's adjusted bank balance is $61,400 and the transaction ledgers sum to $61,850. State what has happened, what it is called, and which regulation characterises the failure.
+#### Checkpoint 6.1
+
+Your broker's adjusted bank balance is $61,400 and the transaction ledgers sum to $61,850. State what has happened, what it is called, and which regulation characterises the failure.
+
+*Answer:* The ledgers claim **$450 more than the bank holds**. That is a **trust account shortage** — money the records say is being held for clients that is not there. It is found by the third step of the **12 AAC 64.220(f)** monthly reconciliation, the cross-check of the bank balance against the sum of the transaction ledgers, which is the step the first two cannot substitute for. **12 AAC 64.260** characterises failure to comply with 12 AAC 64.180 – 64.271 as **fraudulent and dishonest conduct** within the meaning of AS 08.88.071(a)(3)(A)(iv). Trace it and cure it immediately.
 
 ## Key terms
 
