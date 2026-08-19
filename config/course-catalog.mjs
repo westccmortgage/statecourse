@@ -18,6 +18,11 @@ function configuredCourse({ id, state, name, productType = "real_estate_prelicen
     name,
     productType,
     currency: "usd",
+    /* The suffix every STATECOURSE_* variable for this course is built from. Exposed rather
+       than left implicit because tooling has to print the exact variable names an operator
+       must set, and a tool that recomputes them from the course id gets a different answer
+       — `ca-real-estate-principles-45` is not `CA_PRINCIPLES_45`. One source, no drift. */
+    envKey: env,
     approvalStatus: process.env[`STATECOURSE_${env}_APPROVAL_STATUS`] || "submission_draft",
     enrollmentEnabled: bool(`STATECOURSE_${env}_ENROLLMENT_ENABLED`),
     price: {
