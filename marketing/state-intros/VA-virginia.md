@@ -26,8 +26,9 @@
 
 > Real estate licensing in Virginia is regulated by the Virginia Real Estate Board, Department of Professional and Occupational Regulation.
 > The pre-license education requirement is 60 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
-> Approved courses may be delivered by: Online delivery subject to written course approval.
+> Approved courses may be delivered by: Online (self-directed, student-paced web-based coursework without real-time instructor-led training), Correspondence (self-directed, student-paced coursework without instruction), In-person or virtual classroom (student and instructor real-time interaction).
 > Courses must be approved by the regulator before they count toward the requirement. A course that is not approved earns nothing, however good it is.
+> Instructors must also be qualified or approved.
 
 ### status — ~25s
 

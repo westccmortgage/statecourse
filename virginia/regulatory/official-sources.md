@@ -1,7 +1,7 @@
 # Virginia 60-Hour Pre-License Course — Official Source Register
 
 **Course:** Principles and Practices of Real Estate (Salesperson)  
-**Control date:** August 16, 2026  
+**Control date:** August 16, 2026 (sources rechecked August 19, 2026 — see Verification record)  
 **Source policy:** Virginia statutes, Virginia Administrative Code, Virginia DPOR/Real Estate Board forms and instructions control. Federal material uses official federal sources. Commercial exam-prep sources do not establish compliance requirements.
 
 ## Controlling Virginia course-approval sources
@@ -33,6 +33,12 @@
 9. [Code of Virginia § 54.1-2105.02](https://law.lis.virginia.gov/vacode/title54.1/chapter21/section54.1-2105.02/)  
    Authorizes Board regulation of real estate education providers, instructors, curricula, and financial responsibility.
 
+10. [18VAC135-20-360 — Certification of proprietary schools](https://law.lis.virginia.gov/admincode/title18/agency135/chapter20/section360/)  
+    Requires a CPA-certified letter, balance sheet, or financial statement showing a minimum net worth of $2,000.
+
+11. [18VAC135-20-390 — Withdrawal of approval](https://law.lis.virginia.gov/admincode/title18/agency135/chapter20/section390/)  
+    Lists the grounds on which the Board may withdraw approval of a school, course, or instructor, including failure to transmit timely and accurate completion data and any handling of licensing-examination questions.
+
 ## Controlling Virginia practice-law sources
 
 - [Code of Virginia, Title 54.1, Chapter 21 — Real Estate Brokers, Sales Persons and Rental Location Agents](https://law.lis.virginia.gov/vacode/title54.1/chapter21/)
@@ -63,3 +69,18 @@ Before submission and before every production release:
 3. Diff current law/regulation against the course source notes.
 4. Update affected lessons on the law’s effective date.
 5. Treat changes to approved topic allocation or time allocation as potentially substantial and consult DPOR before release.
+
+## Verification record
+
+**August 19, 2026 — reviewer: StateCourse compliance build.** Retrieved and read in full: 18VAC135-20-10, 18VAC135-20-360, 18VAC135-20-361, 18VAC135-20-362, and 18VAC135-20-390 from law.lis.virginia.gov (each showing the April 1, 2026 effective date from Virginia Register Volume 42, Issue 14), and Form A490-0214PRE-v9 (rev. 04/01/2026) from dpor.virginia.gov. The public state registry entry for Virginia was populated from that text; every value now carries its section or attachment citation.
+
+Findings recorded from this reading:
+
+- **Instructor certification is mandatory for prelicense.** 18VAC135-20-362(A) requires the course to be taught by a certified prelicense instructor; 18VAC135-20-361(A) sets the two-of-seven qualification table and the board's equivalence waiver.
+- **Record retention is five years.** 18VAC135-20-362(D) requires all student and class records to be kept a minimum of five years and open to board inspection during normal business hours.
+- **Completion reporting is five business days.** 18VAC135-20-362(F). Failure to transmit timely, accurate completion data is an independent ground for withdrawal of approval under 18VAC135-20-390(6).
+- **Course approval expires in three years.** 18VAC135-20-362(C), measured from the last day of the month in which the board granted it.
+- **Asynchronous online prelicense delivery is contemplated by the current form.** Item 6 of A490-0214PRE lists "Online — self-directed, student-paced Web-based coursework without real-time instructor-led training" and "Correspondence — self-directed, student-paced coursework without instruction" alongside "In-Person or Virtual Classroom." It also states that only courses offered at proctored locations may satisfy board-ordered education, and requires evidence of a course timer (Attachment 7) for online or other distance learning courses. Delivery remains subject to the board's written course approval; the form's listing of a delivery type is not itself an approval.
+- **The monitoring mechanism is not prescribed by regulation.** 18VAC135-20-362(A) requires a monitored, final written assessment and leaves the method to the application: Attachment 5 is a description of how the written, monitored final exam will be administered. Item 6 of the form separately requires correspondence and online courses to carry testing procedures verifying completion plus a notarized affidavit certifying the student met the course requirements. No specific proctoring technology, vendor, or identity-verification method is imposed by the chapter or the form, so none may be represented as required.
+- **No ARELLO requirement exists in the controlling sources.** The term does not appear anywhere in 18VAC135-20 Part VI (sections 360, 361, 362, 390) or in Form A490-0214PRE-v9. ARELLO certification is therefore recorded as not required. This is an absence finding: it must be rechecked whenever the chapter or the form is amended.
+- **Certificate contents are fixed.** 18VAC135-20-362(E) lists seven required fields; Attachment 6 of the form adds the § 54.1-2105 approval statement and the school director's name and signature. The course approval number is one of the required fields, so no certificate may be issued before the board assigns one.

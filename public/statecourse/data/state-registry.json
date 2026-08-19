@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_regulatory_review": "2026-08-16",
+  "last_regulatory_review": "2026-08-19",
   "statuses": [
     "Not Started",
     "Coming Soon",
@@ -1345,24 +1345,26 @@
       "provider_approval_date": null,
       "provider_expiration_date": null,
       "allowed_delivery_methods": [
-        "Online delivery subject to written course approval"
+        "Online (self-directed, student-paced web-based coursework without real-time instructor-led training)",
+        "Correspondence (self-directed, student-paced coursework without instruction)",
+        "In-person or virtual classroom (student and instructor real-time interaction)"
       ],
-      "asynchronous_online_allowed": null,
-      "live_online_allowed": null,
-      "classroom_allowed": null,
-      "ARELLO_required": null,
-      "ARELLO_status": "Not evaluated",
-      "instructor_approval_required": null,
+      "asynchronous_online_allowed": true,
+      "live_online_allowed": true,
+      "classroom_allowed": true,
+      "ARELLO_required": false,
+      "ARELLO_status": "No ARELLO requirement appears in 18VAC135-20 Part VI (sections 360, 361, 362, 390) or in Form A490-0214PRE (rev. 04/01/2026).",
+      "instructor_approval_required": true,
       "prelicense_hours": 60,
       "course_approval_required": true,
-      "reporting_requirements": "Pending official-source research",
-      "record_retention_period": "Pending official-source research",
+      "reporting_requirements": "Electronic transmission of course completion data to the Board in an approved format and method within five business days of each individual course completion (18VAC135-20-362 F). Course materials must be updated when applicable law or regulation changes take effect, without separate approval (18VAC135-20-362 G). Failure to transmit timely and accurate completion data is a ground for withdrawal of approval (18VAC135-20-390 6).",
+      "record_retention_period": "Minimum five years for all student and class records; records open to Board inspection during normal business hours (18VAC135-20-362 D).",
       "refund_policy_rules": "Course-specific policy pending approval and business review",
       "enrollment_period": "Pending Virginia submission decision",
       "final_exam_rules": "Maintained in the Virginia submission package; secure bank is non-public",
-      "proctoring_rules": "Pending official-source research",
-      "certificate_rules": "Virginia-specific template pending approval",
-      "notes": "StateCourse must not enroll for credit or claim approval before written Board authorization.",
+      "proctoring_rules": "Prelicense courses require a monitored, final written assessment (18VAC135-20-362 A). The regulation does not prescribe the monitoring mechanism; Form A490-0214PRE Attachment #5 requires the applicant to describe how the written, monitored final exam will be administered, and the form separately requires correspondence and online courses to use testing procedures verifying completion plus a notarized affidavit certifying the student met the course requirements. The form notes that only courses offered at proctored locations may satisfy Board-ordered education.",
+      "certificate_rules": "Certificate of completion must carry the student name, school name, course name, course approval number, course completion date, hours of credit completed, and the statement that the course is \"Approved by the Real Estate Board\" (18VAC135-20-362 E). Form A490-0214PRE Attachment #6 additionally requires the approval statement to cite Code of Virginia § 54.1-2105 and to carry the school director's name and signature. No approval number may appear before the Board issues one.",
+      "notes": "StateCourse must not enroll for credit or claim approval before written Board authorization. Course approval expires three years from the last day of the month in which it was granted (18VAC135-20-362 C). Online and other distance courses must submit evidence of a course timer (Form A490-0214PRE Attachment #7), and every course must include a mechanism reasonably ensuring active engagement for each class hour (18VAC135-20-362 A).",
       "public_status": "In Development"
     },
     {
