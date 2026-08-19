@@ -2,6 +2,7 @@ import practiceBank from "./california/practice-question-bank.mjs";
 import principlesBank from "./california/principles-question-bank.mjs";
 import mortgageBank from "./california/mortgage-question-bank.mjs";
 import principlesFinal from "./california/principles-final-exam-bank.mjs";
+import practiceFinal from "./california/practice-final-exam-bank.mjs";
 
 const COURSE_DEFINITIONS = {
   "ca-real-estate-principles-45": {
@@ -85,7 +86,8 @@ const PASSING_PERCENT = { applied: 100, engagement: 80, remediation: 80 };
    banks live outside `public/` and site/build.sh fails the build if a file matching
    /final-exam-bank|answer-key/ reaches `dist`. */
 const FINAL_EXAM_BANKS = {
-  "ca-real-estate-principles-45": principlesFinal
+  "ca-real-estate-principles-45": principlesFinal,
+  "ca-real-estate-practice-45": practiceFinal
 };
 const FINAL_PASSING_PERCENT = 60;
 const FINAL_QUESTION_COUNT = 100;
