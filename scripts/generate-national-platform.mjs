@@ -95,14 +95,87 @@ const coursesBody = `${pageHero("National course catalog", "Regulated education,
 write("courses/index.html", document({ title: "Course Catalog", description: "StateCourse real estate licensing education catalog.", body: coursesBody }));
 
 const simplePages = [
-  ["exam-prep", "exam", "Exam Preparation", "Prepare for the examination—separately from regulatory credit.", "StateCourse exam preparation will combine state-specific and national domains, diagnostics, explanations, timed simulations, and topic-level mastery without exposing regulated course finals.", [["Free practice", "Try representative practice questions before creating an account."], ["Topic mastery", "See agency, contracts, financing, valuation, and state-law readiness separately."], ["Recommended study", "Return to precise lessons and sections rather than receiving vague recommendations."]]],
-  ["continuing-education", "renew", "Renew / Continuing Education", "Stay licensed with the right state requirements.", "Renewal cycles, mandatory subjects, reporting, certificates, and approved offerings remain state-specific. No CE product will be represented as available until its separate approval is recorded.", [["Renewal cycle", "See your state deadline and education window."], ["Mandatory subjects", "Keep required topics distinct from elective education."], ["Permanent records", "Retrieve eligible completion certificates from your account."]]],
   ["resources", "resources", "Resources", "Practical licensing guidance before you purchase anything.", "Use state checklists, vocabulary, real estate math, financing guides, exam-day guidance, application steps, and regulator-linked updates.", [["State licensing checklists", "Understand education, examination, application, and background requirements."], ["Sample lessons", "Review StateCourse’s text-first digital textbook approach."], ["Real estate math", "Practice prorations, commissions, financing, valuation, and investment calculations."]]],
   ["blog", "blog", "StateCourse Journal", "Clear reporting on licensing and professional practice.", "Editorial state guides, exam preparation, regulatory updates, continuing education, finance, and career topics—each with an author, review date, and official sources when regulatory facts are discussed.", [["State Guides", "How to understand the licensing path in a specific jurisdiction."], ["Exam Preparation", "What candidates should expect and how to study responsibly."], ["Regulatory Updates", "Material changes reviewed against official regulator sources."]]],
 ];
 for (const [route, active, overline, title, lede, cards] of simplePages) {
   const body = `${pageHero(overline, title, lede)}<section class="page-body"><div class="content-grid">${cards.map(([heading, copy], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p><a href="../state-requirements/">Start with your state →</a></article>`).join("")}</div><div class="source-box"><h2>Development status</h2><p>This national service area is being built inside the shared StateCourse platform. Regulated products remain unavailable until their individual approvals are recorded.</p></div></section>`;
   write(`${route}/index.html`, document({ title: overline, description: lede, active, body }));
+}
+
+/* Exam Prep and Renew / CE are the two destinations the homepage finder sends people
+   to with ?state=XX. They used to be generic template pages that ignored the state
+   entirely and promised products in the future tense — "Try representative practice
+   questions" linked to a page with no questions on it. Each now answers for the
+   selected jurisdiction and states plainly what StateCourse offers there today.
+
+   The availability sentence is derived from the catalog category, so it cannot drift
+   from what actually exists, and it uses the same approval/enrollment coupling as the
+   state pages: a course counts as available only with an approval number AND an
+   enabled enrollment flag. */
+const serviceAreas = [
+  {
+    route: "exam-prep",
+    active: "exam",
+    service: "exam",
+    categoryId: "exam-prep",
+    overline: "Exam Preparation",
+    title: "Prepare for the examination—separately from regulatory credit.",
+    lede: "Choose your jurisdiction to see who administers the license, what education must come first, and exactly what StateCourse offers there today.",
+    product: "exam preparation",
+    cards: [
+      ["Education comes first", "Every jurisdiction requires its own pre-license education before the licensing examination. Confirm those hours before spending anything on preparation."],
+      ["Regulator rules control the exam", "Examination content, scoring, scheduling, and retake rules come from the regulator and its examination provider, not from a course provider."],
+      ["Course finals stay closed", "StateCourse final examinations are secure regulatory instruments. They are never published, previewed, or reused as practice material."],
+    ],
+    sourceHeading: "What this page does not claim",
+    sourceCopy: "StateCourse does not publish examination questions, pass rates, or vendor procedures for any jurisdiction. Regulated course final examinations are administered only inside an approved course and are never furnished to students as study material.",
+  },
+  {
+    route: "continuing-education",
+    active: "renew",
+    service: "renew",
+    categoryId: "continuing-education",
+    overline: "Renew / Continuing Education",
+    title: "Stay licensed with the right state requirements.",
+    lede: "Choose your jurisdiction to see its regulator, what StateCourse offers there today, and where the controlling renewal instructions live.",
+    product: "continuing education",
+    cards: [
+      ["Renewal is jurisdiction-specific", "Cycles, deadlines, mandatory subjects, and accepted delivery methods differ by state and are set by the regulator."],
+      ["Approval is per course", "A continuing-education course must carry its own approval record in its own jurisdiction. Approval of any other StateCourse program does not extend to it."],
+      ["Records stay with your account", "Completion records and eligible certificates always point to the exact approved course and version completed."],
+    ],
+    sourceHeading: "What this page does not claim",
+    sourceCopy: "StateCourse has not published verified renewal cycles, continuing-education hour requirements, or mandatory subjects for any jurisdiction. Nothing on this page substitutes for the regulator's current renewal instructions.",
+  },
+];
+
+for (const area of serviceAreas) {
+  const category = catalog.categories.find((entry) => entry.category_id === area.categoryId);
+  const areaCourses = (category?.programs ?? []).flatMap((program) => program.courses ?? []);
+  const areaRecord = deriveJurisdictionRecord(areaCourses);
+  const availability = !areaRecord.hasCourseRecord
+    ? `StateCourse does not offer ${area.product} in any jurisdiction yet. No course record exists, so nothing on this page is an offer, and no enrollment, credit, or certificate is available here.`
+    : areaRecord.enrollmentOpen
+      ? `StateCourse ${area.product} is open only where an approval record and an enabled enrollment are both recorded: ${areaRecord.approvedCourses.filter((entry) => entry.enrollmentEnabled).map((entry) => entry.courseTitle).join(", ")}.`
+      : `StateCourse has ${areaCourses.length} ${area.product} course record${areaCourses.length === 1 ? "" : "s"} in development. Enrollment stays closed until each one's own approval is recorded.`;
+  const cards = area.cards.map(([heading, copy], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p></article>`).join("");
+  const body = `${pageHero(area.overline, area.title, area.lede)}<section class="page-body" data-service="${esc(area.service)}">
+    <div class="notice"><strong>Availability:</strong> ${esc(availability)}</div>
+    <div class="page-tools"><label>Jurisdiction<select id="serviceStateSelect"><option value="">Choose your state</option></select></label></div>
+    <div class="state-summary">
+      <aside class="state-record"><p class="overline" id="serviceRecordTitle">Jurisdiction record</p><dl id="serviceRecord"><div><dt>Selected state</dt><dd>None selected</dd></div></dl></aside>
+      <div>
+        <p class="overline">Where the answer actually comes from</p>
+        <p id="serviceMessage">Choose a jurisdiction above to see its regulator and the education already verified for it. Requirements are published here only after official-source review.</p>
+        <div class="cta-actions" id="serviceLinks"></div>
+        <p class="cta-note">Selecting a state here does not create an account, an enrollment, study time, or regulatory credit.</p>
+      </div>
+    </div>
+    <div class="content-grid" style="margin-top:34px">${cards}</div>
+    <div class="source-box"><h2>${esc(area.sourceHeading)}</h2><p>${esc(area.sourceCopy)} Compare every jurisdiction on the <a href="../state-requirements/">State Requirements</a> directory.</p></div>
+  </section>`;
+  write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js" defer></script>' }));
 }
 
 write("my-statecourse/index.html", document({ title: "My StateCourse", description: "Return to your StateCourse licensing path and courses.", body: `${pageHero("Returning student", "Continue where you left off.", "Sign in to view active courses, progress, assessments, instructor support, payments, and certificates tied to your exact course version.")}<section class="page-body"><div class="content-grid"><article class="content-card"><p class="overline">My Licensing Path</p><h2>See the next required action</h2><p>Your education, exam preparation, application milestones, and renewal path remain organized in one account.</p><a href="../student/sign-in/">Student sign in →</a></article><article class="content-card"><p class="overline">My Courses</p><h2>Return to active education</h2><p>Continue only the courses connected to your verified enrollment record.</p><a href="../student/">Open course dashboard →</a></article><article class="content-card"><p class="overline">Records</p><h2>Preserve completed education</h2><p>Eligible certificates always point to the exact approved course and version completed.</p><a href="../student/">View my records →</a></article></div></section>` }));
