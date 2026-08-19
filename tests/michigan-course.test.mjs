@@ -221,3 +221,42 @@ test("every module file names the rules it implements", () => {
     assert.match(text, /R 339\.22152/, `${moduleId} does not state Michigan's attendance rule`);
   }
 });
+
+test("the submission package answers every element of R 339.22157(2)", () => {
+  const pkg = read("michigan/submission/course-approval-package.md");
+  for (const element of ["(a)", "(b)", "(c)", "(d)", "(e)", "(f)"]) {
+    assert.ok(pkg.includes(`### ${element}`), `the package does not answer R 339.22157(2)${element}`);
+  }
+  assert.match(pkg, /R 339\.22157\(5\)/, "the hardware and software failure remedy is not addressed");
+  /* Every attachment R 339.22141(1) requires must appear in the attachment table with a
+     status, including the one that does not apply — a silent omission and a stated
+     "not applicable" look identical to a reviewer only until they ask. */
+  for (const attachment of ["22141(1)(e)", "22141(1)(f)", "22141(1)(g)", "22141(1)(h)", "22141(1)(i)", "22141(1)(j)"]) {
+    assert.ok(pkg.includes(attachment), `the attachment table omits R 339.${attachment}`);
+  }
+});
+
+test("the package states what is a StateCourse standard rather than a Michigan rule", () => {
+  const pkg = read("michigan/submission/course-approval-package.md");
+  assert.match(pkg, /80 percent threshold is a StateCourse instructional standard, not a Michigan requirement/);
+  assert.match(pkg, /Michigan prescribes none/);
+  assert.match(pkg, /does not describe proctoring as a Michigan requirement/);
+  /* And it must not claim an approval anywhere. */
+  assert.match(pkg, /No StateCourse course is approved in any jurisdiction/);
+  assert.doesNotMatch(pkg, /is approved by the Michigan Department/);
+});
+
+test("no certificate can be produced before an approval number exists", () => {
+  const pkg = read("michigan/submission/course-approval-package.md");
+  /* The school's approval number is one of the five fields R 339.22141(1)(f) requires on
+     the certificate, so a certificate before approval is a certificate that lies. */
+  assert.match(pkg, /No certificate can be issued before the Department assigns an approval number/);
+  assert.match(pkg, /refuses to produce a certificate while the approval number is absent/);
+});
+
+test("the open items are recorded rather than assumed away", () => {
+  const pkg = read("michigan/submission/course-approval-package.md");
+  for (const item of [/Proprietary Schools Act/, /instructor route/i, /program coordinator/i, /ARELLO or equivalence/i, /one-year approval term/i]) {
+    assert.match(pkg, item);
+  }
+});
