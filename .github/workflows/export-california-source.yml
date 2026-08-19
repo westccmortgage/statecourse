@@ -1,6 +1,9 @@
 name: Export California Source
 
 on:
+  push:
+    paths:
+      - ".github/workflows/export-california-source.yml"
   pull_request:
     paths:
       - ".github/workflows/export-california-source.yml"
@@ -14,7 +17,7 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out pull request source
+      - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Upload California source package
