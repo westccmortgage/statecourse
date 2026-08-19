@@ -46,9 +46,9 @@ A **separate** application, fee, and full package is required for each of the th
 | --- | --- | --- | --- |
 | 1 | Course Approval Application (RE 306) | **Not started** | Form in hand; 85 fillable fields; 23 numbered items. |
 | 2 | Course offering fee | **Blocked** | Amount is in **RE 206E**, which we do not have. |
-| 3 | Corporation documents | **Pending — see §2a** | The applicant is **StateCourse LLC, a California LLC**, registration in process. RE 303 requires a document issued by the California Secretary of State; the certificate satisfies this item once issued. |
+| 3 | Corporation documents | **Satisfied** | **StateCourse LLC** was formed as a California domestic LLC on **18 August 2026**, Secretary of State file number **B20260376786**. The stamped Articles of Organization are the document RE 303 asks for and are held at `california/dre-sources/ca-articles-of-organization-B20260376786.pdf`. |
 | 4 | Fictitious Business Name Statement | **Open question — see §2a** | The registered name is `StateCourse LLC` and the platform trades as "StateCourse". Whether dropping the entity designator requires an FBNS is a question for counsel, not one to assume either way. |
-| 5 | Consent to Service of Process (RE 304) | **Probably not required — see §2a** | RE 303 ties RE 304 to non-resident applicants. A California LLC with a California principal office is not obviously one, but confirm with counsel rather than omit the form on an assumption. |
+| 5 | Consent to Service of Process (RE 304) | **Probably not required — see §2a** | RE 303 ties RE 304 to non-resident applicants. The formed entity is a California domestic LLC with a California principal office in Burbank and a California agent for service of process, which is about as far from a non-resident applicant as an applicant gets. **Still confirm with counsel** rather than omit a form on an assumption. |
 | 6 | Copies of all student instructional materials | **Not ready** | See §3 — this is the critical gap. **Printed** copies must be mailed; digital media cannot be accessed by DRE. |
 | 7 | Copyright authorization | **Not applicable if content stays original** | Required only for third-party copyrighted material. |
 | 8 | Instructor Certification (RE 336) + substantiation | **Not started** | Form in hand. One form per instructor, and the form names a single course title, so three are needed. See §5. |
@@ -83,7 +83,7 @@ purpose; its name and status are expected to change at that time. It should not 
 
 | Item | Former position | Position now |
 | --- | --- | --- |
-| **3. Corporation documents** | Blocked — a Wyoming Certificate of Organization is not a document issued by the California Secretary of State | **Satisfied once the certificate issues.** A California domestic LLC obtains the California document RE 303 asks for directly, with no foreign qualification step in between. |
+| **3. Corporation documents** | Blocked — a Wyoming Certificate of Organization is not a document issued by the California Secretary of State | **Satisfied, 18 August 2026.** StateCourse LLC is a California domestic LLC, file number B20260376786. The Secretary of State's stamped Articles of Organization are in hand, with no foreign qualification step in between. |
 | **5. Consent to Service of Process (RE 304)** | Likely required — a Wyoming entity engages the non-resident and California-qualification language | **Probably not required.** A California LLC with a California principal office is not obviously a non-resident applicant. **Confirm with counsel** rather than omit the form on an assumption. |
 | **Good standing during the approval term** | A foreign entity would first have to qualify here | Maintained directly with the California Secretary of State. |
 
@@ -313,3 +313,41 @@ appear so a reviewer is never shown a proposal presented as a rule: the 180-minu
 the identity check, which the regulation does not quantify. Both are recorded on every session, alongside
 the passing percentage and question count, so an audit shows the rule that governed a given attempt rather
 than today's constant.
+
+
+---
+
+## Entity record, as filed
+
+Recorded here because five checklist items and the approval-verification page all resolve to the same facts, and a submission that states them inconsistently is a submission that invites a question.
+
+| Field | Value | Source |
+|---|---|---|
+| Legal name | StateCourse LLC | Articles of Organization |
+| Type | California domestic limited liability company | Articles of Organization |
+| Secretary of State file number | **B20260376786** | Filing stamp |
+| Date filed | **18 August 2026** | Filing stamp |
+| Principal office | 150 E Olive Avenue, Suite 112, Burbank, CA 91502-1846 | Articles of Organization |
+| Mailing address | 407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277-2872 | Articles of Organization |
+| Agent for service of process | Anatoliy Kanevsky, 407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277 | Articles of Organization |
+| Management | Member-managed — all LLC members | Articles of Organization |
+| Organizer | Anatoliy Kanevsky | Articles of Organization |
+
+**A federal employer identification number has been issued to the entity.** The number itself is deliberately **not recorded in this repository**, and no StateCourse source file, configuration file, or generated page contains it. It is a tax identifier, it is needed by Stripe and by the bank rather than by the platform, and the project rule against production secrets in GitHub covers it. Where a form asks for it, it is entered from the IRS notice directly.
+
+**Two addresses, and which one goes on which form.** The Articles give Burbank as the *principal office* and Redondo Beach as the *mailing address*. `PROVIDER_FACTS` carries both, so a form asking for the principal place of business and a form asking for a mailing address do not silently receive the same answer. Before RE 306 is filed, decide which address is the school's business address for DRE purposes and use it consistently — the private vocational school regulations in RE 307 attach to a location, and an address that appears one way on RE 306 and another way on the approval verification page is a discrepancy a reviewer will find.
+
+## What remains blocked, and on whom
+
+| Item | Blocked on | Who can clear it |
+|---|---|---|
+| RE 311 — Course Completion Certificate | The form itself | Request from DRE; the certificate's required fields cannot be authored without it |
+| RE 313 — General Information Page | The form itself | Request from DRE |
+| RE 206E — fee schedule | The form itself | Request from DRE; item 2 of the checklist is the course offering fee |
+| Instructor certifications (RE 336 × 3) | Three qualifying instructors, one form per course title | Recruit or qualify instructors |
+| BPPE determination | Whether the Bureau for Private Postsecondary Education asserts jurisdiction | Counsel, or a written BPPE determination |
+| RE 304 | Whether a California domestic LLC is a non-resident applicant | Counsel |
+| Fictitious Business Name Statement | Whether trading as "StateCourse" while registered as "StateCourse LLC" requires one | Counsel |
+| Printed instructional materials | RE 303 item 6 requires **printed** copies mailed to DRE | Print and mail once the content is final |
+
+Nothing on this list is blocked on engineering.

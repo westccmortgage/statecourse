@@ -53,8 +53,17 @@ export const VERIFICATION_PROCEDURES = Object.freeze({
 export const PROVIDER_FACTS = Object.freeze({
   legalName: "StateCourse LLC",
   formationState: "CA",
-  registrationStatus: "California registration in process; certificate not yet issued",
+  /* Articles of Organization filed with and stamped by the California Secretary of State
+     on 18 August 2026. This is the document RE 303 item 3 asks for — a document issued by
+     the California Secretary of State — and it is now held in the submission sources.
+     The file number is public record; nothing else about the entity is published here. */
+  registrationStatus: "California domestic LLC, formed 18 August 2026",
+  secretaryOfStateFileNumber: "B20260376786",
+  secretaryOfStateFiledOn: "2026-08-18",
+  principalOffice: "150 E Olive Avenue, Suite 112, Burbank, CA 91502",
   address: "407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277",
+  managementStructure: "Member-managed",
+  agentForServiceOfProcess: "Anatoliy Kanevsky",
   principal: "Anatoliy Kanevsky, Founder",
   principalLicense: "California real estate broker licence 01385024",
   sponsorNumber: null,
