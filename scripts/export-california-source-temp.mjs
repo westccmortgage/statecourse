@@ -1,6 +1,7 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 
+// Temporary submission-package export. Remove after artifact retrieval.
 const root = process.cwd();
 const sourceRoot = path.join(root, 'california');
 const outputDir = path.join(root, 'public', '__statecourse_private_export_8f3c1a7d');
