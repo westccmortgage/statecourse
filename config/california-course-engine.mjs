@@ -248,4 +248,45 @@ export function scoreCaliforniaAssessment(assessment, answers) {
   return { results, correctCount, total: results.length, percent, passed: percent >= assessment.passingPercent };
 }
 
+/* Final examinations are scored separately from lesson assessments for two reasons. An
+   unanswered item must count as incorrect rather than reject the submission, because a
+   timed examination auto-submits whatever the student has when the clock stops; and the
+   result carries no rationale at any point, because RE 303 forbids furnishing the final
+   examination to the student and a per-item explanation is the examination.
+
+   `answers` is positional, one entry per item in the order the items were presented.
+   null, undefined, and an empty string all mean "not answered". Anything else that is
+   not a valid choice index is a malformed submission and returns null, so a client bug
+   cannot silently score a student zero. */
+export function scoreCaliforniaFinalExam(exam, answers) {
+  if (!exam || exam.kind !== "final") return null;
+  if (!Array.isArray(answers) || answers.length !== exam.items.length) return null;
+  const results = [];
+  for (const [index, item] of exam.items.entries()) {
+    const raw = answers[index];
+    const unanswered = raw === null || raw === undefined || raw === "";
+    const selectedChoice = unanswered ? null : Number(raw);
+    if (!unanswered && (!Number.isInteger(selectedChoice) || selectedChoice < 0 || selectedChoice >= item.choices.length)) {
+      return null;
+    }
+    results.push({
+      itemId: item.id,
+      itemPosition: index + 1,
+      selectedChoice,
+      correct: selectedChoice === item.correctChoice
+    });
+  }
+  const correctCount = results.filter((result) => result.correct).length;
+  const answeredCount = results.filter((result) => result.selectedChoice !== null).length;
+  const percent = Math.round((correctCount / results.length) * 100);
+  return {
+    results,
+    correctCount,
+    answeredCount,
+    total: results.length,
+    percent,
+    passed: percent >= exam.passingPercent
+  };
+}
+
 export const CALIFORNIA_COURSE_IDS = Object.freeze(Object.keys(COURSE_DEFINITIONS));

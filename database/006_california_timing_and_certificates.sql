@@ -35,6 +35,8 @@
 -- 1 + 2. Eligibility: measure from access, and stop an expired enrollment
 -- ---------------------------------------------------------------------------
 
+begin;
+
 create or replace function refresh_california_eligibility(p_enrollment_id uuid)
 returns jsonb language plpgsql security definer set search_path=public as $$
 declare
@@ -379,3 +381,5 @@ select c.id, c.enrollment_id, c.student_id, c.course_id, c.certificate_number,
   from course_completion_certificates c
   join courses cs on cs.id=c.course_id
  where cs.state='CA' and c.delivery_status='pending' and now() > c.delivery_due_at;
+
+commit;
