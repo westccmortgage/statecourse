@@ -54,6 +54,9 @@ test -f dist/state-requirements/index.html
 test -f dist/exam-prep/index.html
 test -f dist/continuing-education/index.html
 test -f dist/service-area.js
+test -f dist/student/final-exam/index.html
+test -f dist/student/final-exam/final-exam.js
+test -f dist/student/final-exam/final-exam.css
 test -f dist/real-estate/california/index.html
 test -f dist/real-estate/california/pre-license/index.html
 test -f dist/real-estate/california/pre-license/principles/index.html

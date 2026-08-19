@@ -186,3 +186,81 @@ test("the time limit is carried on the session, not read from configuration at r
   assert.match(migration, /PROVIDER-SET/);
   assert.match(endpoint, /PROVIDER-SET/);
 });
+
+const examPage = fs.readFileSync(path.join(root, "public/statecourse/student/final-exam/index.html"), "utf8");
+const examScript = fs.readFileSync(path.join(root, "public/statecourse/student/final-exam/final-exam.js"), "utf8");
+const examStyles = fs.readFileSync(path.join(root, "public/statecourse/student/final-exam/final-exam.css"), "utf8");
+const coursePage = fs.readFileSync(path.join(root, "public/statecourse/student/course/index.html"), "utf8");
+const courseEndpoint = fs.readFileSync(path.join(root, "netlify/functions/student-course.mjs"), "utf8");
+
+test("the examination page refuses to print rather than printing the paper", () => {
+  /* Hiding the questions in a print stylesheet still hands over whatever the browser
+     decides to keep. Every direct child of the body is removed and a refusal is
+     printed in its place. */
+  assert.match(examStyles, /@media print\{[\s\S]*body\.exam-body>\*\{display:none!important\}/);
+  assert.match(examStyles, /\.print-block\{display:block!important/);
+  assert.match(examPage, /cannot be printed/);
+});
+
+test("the examination page ships no answer key and no scoring of its own", () => {
+  for (const source of [examPage, examScript]) {
+    assert.doesNotMatch(source, /correctChoice|rationale|answerKey/i);
+  }
+  /* The page must never decide whether an answer is right: it has nothing to decide
+     with, and a client-side check would mean the key had been sent. */
+  assert.doesNotMatch(examScript, /\bcorrect\b\s*[=:]/);
+  assert.match(examScript, /answer key never reaches the browser/i);
+});
+
+test("the clock submits the attempt when it reaches zero", () => {
+  assert.match(examScript, /if \(remaining === 0\)/);
+  assert.match(examScript, /submit\(true\)/);
+  /* An automatic submission must not stop for a confirmation dialogue nobody is there
+     to answer. */
+  const submit = examScript.slice(examScript.indexOf("async function submit("), examScript.indexOf("function renderResult"));
+  assert.match(submit, /if \(!automatic\) \{[\s\S]*window\.confirm/);
+});
+
+test("answers are saved while the attempt is running", () => {
+  assert.match(examScript, /SAVE_INTERVAL_MS/);
+  assert.match(examScript, /action: "save"/);
+  /* A failed save is surfaced. A student must not finish an examination believing work
+     was recorded when it was not. */
+  assert.match(examScript, /could not be saved/);
+});
+
+test("the student is told why the examination is closed, in sentences", () => {
+  assert.match(examPage, /What California still requires/);
+  assert.match(examScript, /payload\.eligibility\.remaining/);
+  /* The page composes no requirement of its own; it renders what the server derived
+     from the eligibility record. */
+  assert.doesNotMatch(examScript, /2\.5-week|five-week|fifteen lesson/i);
+});
+
+test("unanswered questions are declared as incorrect before the student submits", () => {
+  assert.match(examScript, /scored as incorrect/);
+});
+
+test("the course page notifies each student of the Department's evaluation form", () => {
+  /* RE 303, Course & Instructor Evaluation. */
+  assert.match(courseEndpoint, /dre-course-evaluation/);
+  assert.match(courseEndpoint, /online evaluation of courses and instructors is available/i);
+  assert.match(courseEndpoint, /dre\.ca\.gov/);
+  assert.match(coursePage, /id="regulatoryNotices"/);
+  /* Delivery is recorded, not assumed. */
+  assert.match(courseEndpoint, /regulatory_notice_delivered/);
+  const audited = courseEndpoint.slice(courseEndpoint.indexOf('"regulatory_notice_delivered"'));
+  assert.match(audited.slice(0, 200), /notices:CALIFORNIA_NOTICES\.map/);
+});
+
+test("the reviewer does not generate a student notice-delivery record", () => {
+  const block = courseEndpoint.slice(courseEndpoint.indexOf('"course_opened"'), courseEndpoint.indexOf('"course_opened"') + 400);
+  assert.match(block, /if \(ctx\.mode === "student"\)/);
+});
+
+test("the final examination link appears only when the engine says the exam is open", () => {
+  const courseScript = fs.readFileSync(path.join(root, "public/statecourse/student/course/student-course.js"), "utf8");
+  assert.match(courseScript, /function renderFinalExamLink/);
+  assert.match(courseScript, /page\.data\.mode==="student"&&Boolean\(final\?\.eligible\)/);
+  assert.match(coursePage, /id="finalExamLink"[^>]*hidden/);
+});

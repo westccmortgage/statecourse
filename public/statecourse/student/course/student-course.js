@@ -70,6 +70,25 @@ function renderStatus(){
   const selected=page.data.selectedAssignment;$("#statusHeading").textContent=`Assignment ${String(selected.sequence).padStart(2,"0")}`;$("#activeTime").textContent=formatDuration(selected.activeSeconds);$("#toolbarProgressLabel").textContent=formatDuration(selected.activeSeconds);$("#sectionStatus").textContent=`${selected.viewedSections.length} / ${selected.sectionCount}`;$("#sectionStatus").className=selected.viewedSections.length>=selected.sectionCount?"complete":"pending";requirement($("#appliedStatus"),selected.appliedComplete);requirement($("#engagementStatus"),selected.engagementComplete);
   const remediation=selected.remediationStatus;$("#remediationStatus").textContent=remediation==="not_required"?"Not required":remediation==="satisfied"?"Complete":remediation==="content_viewed"?"Alternate question pending":"Required";$("#remediationStatus").className=remediation==="not_required"||remediation==="satisfied"?"complete":"pending";
   const eligibility=page.data.progress.eligibility;$("#earliestFinal").textContent=formatDate(eligibility?.earliest_final_exam_at);const remaining=Array.isArray(eligibility?.remaining_requirements)?eligibility.remaining_requirements:[];$("#finalRequirements").textContent=remaining.length?remaining.join(" · "):"Final eligibility requirements complete";
+  renderFinalExamLink();renderNotices();
+}
+/* The link appears only once the engine says the examination is open. A student who is
+   not eligible is not shown a door that will refuse them. */
+function renderFinalExamLink(){
+  const link=$("#finalExamLink"),final=page.data.finalExam;
+  if(!link)return;
+  const open=page.data.mode==="student"&&Boolean(final?.eligible);
+  link.hidden=!open;
+  if(open&&final.href)link.href=final.href;
+}
+/* RE 303 requires the school to notify each student that the Department's online course
+   and instructor evaluation exists. The notice text and its version come from the
+   server so that one wording is delivered, recorded, and displayed. */
+function renderNotices(){
+  const panel=$("#regulatoryNotices"),notices=Array.isArray(page.data.regulatoryNotices)?page.data.regulatoryNotices:[];
+  if(!panel)return;
+  panel.hidden=notices.length===0;
+  panel.innerHTML=notices.map((notice)=>`<h3>${escapeHtml(notice.heading)}</h3><p>${escapeHtml(notice.body)}${notice.linkHref?` <a href="${escapeHtml(notice.linkHref)}" target="_blank" rel="noopener">${escapeHtml(notice.linkLabel||"Open")} ↗</a>`:""}</p>`).join("");
 }
 function assessmentLabel(kind,count){
   if(kind==="applied")return"Submit applied response";

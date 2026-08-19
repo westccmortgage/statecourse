@@ -111,8 +111,15 @@
         <strong id="earliestFinal">Pending</strong>
         <small id="finalRequirements"></small>
       </div>
+      <a id="finalExamLink" class="secondary-action link-action" href="/student/final-exam/" hidden>Go to the final examination</a>
       <button id="requestHelp" class="secondary-action" type="button">Request instructor help</button>
       <p id="actionMessage" class="action-message" role="status"></p>
+      <!-- RE 303: the Commissioner's Regulations require the school to notify each
+           student that an online evaluation of courses and instructors is available on
+           the Department's website. The notice is delivered by the server with the
+           course record and its delivery is audit logged, so notification can be
+           evidenced rather than assumed. -->
+      <section id="regulatoryNotices" class="regulatory-notices" aria-label="California notices" hidden></section>
       <p class="version-lock">Course and assignment version 1.0 · Every completion event is audit logged.</p>
     </aside>
   </main>

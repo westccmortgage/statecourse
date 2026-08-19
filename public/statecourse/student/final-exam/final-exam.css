@@ -1,0 +1,130 @@
+/* The examination room deliberately looks unlike the course. A student should be able
+   to tell at a glance that they are in a timed, proctored assessment and not in a
+   lesson they can leave and return to. */
+:root{--paper:#f4f0e7;--surface:#fffdf8;--ink:#172536;--charcoal:#2b2d2f;--muted:#687078;--rule:#d7d0c4;--brick:#9f3e32;--gold:#a47b39;--forest:#315a49;--navy:#0d2233}
+*{box-sizing:border-box}
+body.exam-body{margin:0;background:var(--paper);color:var(--charcoal);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+.skip-link{position:fixed;left:16px;top:-80px;z-index:20;background:#fff;color:#000;padding:10px 14px}.skip-link:focus{top:16px}
+
+.exam-header{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:74px;padding:10px max(20px,calc((100vw - 1180px)/2));border-top:4px solid var(--navy);border-bottom:1px solid var(--rule);background:var(--surface)}
+.portal-brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+.portal-brand span{display:grid;place-items:center;width:38px;height:38px;background:var(--brick);color:#fff;font-size:12px;font-weight:800}
+.portal-brand strong{font-size:20px}
+.portal-brand small{padding-left:12px;border-left:1px solid var(--rule);text-transform:uppercase;letter-spacing:.13em;font-size:9px;color:var(--muted)}
+
+.exam-clock{text-align:right;min-width:150px}
+.exam-clock span{display:block;font-size:9px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.exam-clock strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.05;color:var(--ink);font-variant-numeric:tabular-nums}
+.exam-clock small{display:block;font-size:10px;color:var(--muted)}
+.exam-clock.warning strong{color:var(--brick)}
+.exam-clock.warning small{color:var(--brick);font-weight:750}
+
+main{max-width:1180px;margin:0 auto;padding:26px max(20px,4vw) 96px}
+main:focus{outline:none}
+.eyebrow{margin:0 0 10px;font-size:10px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:var(--brick)}
+.exam-message{max-width:860px;margin:70px auto;padding:26px;border:1px solid var(--rule);background:var(--surface);font-family:Georgia,serif;font-size:22px}
+.exam-message.error{border-color:#b9635b;color:#6b251e}
+
+h1{margin:0 0 8px;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:44px;line-height:1.08;letter-spacing:-.02em}
+.gate-course{margin:0 0 28px;color:var(--muted);font-size:15px}
+
+.exam-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 0 36px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.exam-facts div{padding:14px 16px;border-right:1px solid var(--rule)}
+.exam-facts div:last-child{border-right:0}
+.exam-facts dt{margin-bottom:5px;font-size:9px;font-weight:850;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.exam-facts dd{margin:0;color:var(--ink);font-family:Georgia,serif;font-size:19px}
+
+.gate-panel{margin:0 0 30px;padding:26px 28px;border-left:4px solid var(--gold);background:#ece5d8}
+.gate-panel.ready{border-left-color:var(--forest);background:#eaf0ec}
+.gate-panel.history{border-left-color:var(--rule);background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--rule)}
+.gate-panel h2{margin:0 0 10px;color:var(--ink);font-family:Georgia,serif;font-size:26px;line-height:1.2}
+.panel-lede{margin:0 0 18px;font-size:14px;color:#4f575e}
+
+/* Each blocked requirement is a sentence, not a status code. */
+.requirement-list,.rule-list{margin:0;padding:0;list-style:none}
+.requirement-list li{padding:13px 0 13px 26px;border-top:1px solid var(--rule);font-size:15px;position:relative}
+.requirement-list li:first-child{border-top:0}
+.requirement-list li::before{content:"";position:absolute;left:0;top:19px;width:11px;height:11px;border:2px solid var(--gold);border-radius:50%}
+.rule-list li{padding:9px 0 9px 22px;font-size:14px;position:relative}
+.rule-list li::before{content:"·";position:absolute;left:6px;font-weight:800;color:var(--forest)}
+
+.attempt-list{margin:0;padding-left:20px}
+.attempt-list li{padding:9px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.attempt-list li:last-child{border-bottom:0}
+.attempt-list strong{color:var(--ink)}
+
+.primary-action{margin-top:6px;padding:14px 22px;border:0;background:var(--brick);color:#fff;font:inherit;font-weight:800;cursor:pointer}
+.primary-action:disabled{opacity:.45;cursor:not-allowed}
+.action-message{min-height:20px;margin:12px 0 0;font-size:13px;color:#6b251e}
+.gate-back{margin-top:34px;font-size:13px}
+.gate-back a{color:var(--brick);font-weight:750;text-decoration:none}
+
+.exam-status{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px;padding-bottom:12px;border-bottom:4px solid var(--ink)}
+.exam-status .eyebrow{margin:0}
+.answered-count{margin:0;font-size:13px;font-weight:750;color:#4f575e;font-variant-numeric:tabular-nums}
+
+.question-card{padding:30px 32px;border:1px solid var(--rule);background:var(--surface)}
+.question-number{margin:0 0 14px;font-size:10px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:var(--brick)}
+.question-prompt{margin:0 0 24px;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:25px;line-height:1.4;font-weight:400}
+.choice-form{margin:0}
+.choice{display:flex;gap:12px;align-items:flex-start;padding:14px 12px;border-top:1px solid var(--rule);cursor:pointer;font-size:16px}
+.choice:last-child{border-bottom:1px solid var(--rule)}
+.choice:hover{background:#f2ece1}
+.choice input{margin-top:5px;flex:none}
+.choice-letter{flex:none;width:22px;font-weight:800;color:var(--brick)}
+
+.question-nav{display:flex;gap:10px;justify-content:space-between;margin-top:22px}
+.question-nav button{flex:1;padding:13px 14px;border:1px solid var(--ink);background:var(--surface);color:var(--ink);font:inherit;font-weight:750;cursor:pointer}
+.question-nav button:hover:not(:disabled){border-color:var(--brick);color:var(--brick)}
+.question-nav button:disabled{opacity:.4;cursor:not-allowed}
+
+.question-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:6px;margin-top:18px;padding:18px;border:1px solid var(--rule);background:var(--surface)}
+.question-grid button{padding:9px 0;border:1px solid var(--rule);background:transparent;color:var(--muted);font:inherit;font-size:12px;font-weight:750;cursor:pointer;font-variant-numeric:tabular-nums}
+.question-grid button[data-answered=true]{border-color:var(--forest);background:#eaf0ec;color:var(--forest)}
+.question-grid button[aria-current=true]{border-color:var(--brick);background:var(--brick);color:#fff}
+
+.exam-submit{margin-top:34px;padding-top:24px;border-top:1px solid var(--rule)}
+.submit-summary{margin:0 0 14px;font-size:15px;font-family:Georgia,serif;color:var(--ink)}
+
+.exam-result{max-width:760px}
+.result-score{margin:0 0 16px;font-family:Georgia,serif;font-size:52px;line-height:1.05;color:var(--ink);font-variant-numeric:tabular-nums}
+.result-message{margin:0 0 20px;font-size:17px;font-family:Georgia,serif;color:#3a3d3f}
+.result-note{padding:14px 18px;border-left:4px solid var(--gold);background:#ece5d8;font-size:13px}
+
+:focus-visible{outline:3px solid #d6a342;outline-offset:3px}
+
+/* The question text is not selectable. This is a deterrent against casual copying, not
+   a security control — the control that matters is that the answer key never leaves the
+   server. Deliberately scoped to the prompt and choices so that a student can still
+   select everything else on the page, including the instructions and their own result. */
+.question-prompt,.choice{-webkit-user-select:none;user-select:none}
+
+@media(max-width:820px){
+  .exam-header{min-height:64px;padding:8px 16px}
+  .portal-brand small{display:none}
+  .portal-brand strong{font-size:17px}
+  .exam-clock{min-width:0}
+  .exam-clock strong{font-size:26px}
+  .exam-clock small{display:none}
+  main{padding:18px 16px 84px}
+  h1{font-size:32px}
+  .exam-facts{grid-template-columns:1fr 1fr}
+  .exam-facts div:nth-child(2){border-right:0}
+  .exam-facts div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+  .gate-panel{padding:20px 18px}
+  .question-card{padding:20px 18px}
+  .question-prompt{font-size:21px}
+  .choice{font-size:15px;padding:13px 6px}
+  /* On a phone the navigation is the thing the hand reaches for, so it stays put. */
+  .question-nav{position:sticky;bottom:0;z-index:6;margin:18px -16px 0;padding:10px 16px;background:var(--paper);border-top:1px solid var(--rule)}
+  .question-nav button{padding:12px 8px;font-size:13px}
+  .result-score{font-size:40px}
+}
+
+/* Printing is refused. A print stylesheet that merely hides the questions still hands
+   over whatever the browser decides to keep, so the whole document is replaced. */
+.print-block{display:none}
+@media print{
+  body.exam-body>*{display:none!important}
+  .print-block{display:block!important;padding:40px;font-family:Georgia,serif;font-size:20px}
+}

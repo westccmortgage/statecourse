@@ -11,6 +11,21 @@ const ANSWER_EVENTS = new Map([
   ["answer_remediation","remediation"]
 ]);
 
+/* RE 303, "Course & Instructor Evaluation": the Commissioner's Regulations require the
+   school to notify each student that an online evaluation of courses and instructors is
+   available on the Department's website. Delivering it is the requirement, so it is
+   sent with every course payload and its first delivery is written to the audit trail —
+   a notice the school cannot evidence is a notice the school cannot prove it gave.
+   Versioned so a record shows which wording a given student was shown. */
+const CALIFORNIA_NOTICES = Object.freeze([Object.freeze({
+  id: "dre-course-evaluation",
+  version: "re303-2026-08",
+  heading: "California course and instructor evaluation",
+  body: "An online evaluation of courses and instructors is available on the California Department of Real Estate website. Your evaluation goes to the Department, not to StateCourse.",
+  linkLabel: "Open the Department of Real Estate website",
+  linkHref: "https://www.dre.ca.gov"
+})]);
+
 function fail(message,statusCode=400) {
   throw Object.assign(new Error(message),{ statusCode });
 }
@@ -133,8 +148,20 @@ async function coursePayload(ctx,requestedAssignment) {
     ? await dbRequest(`course_final_eligibility?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}&select=*&limit=1`)
     : [];
   const completed = assignments.filter((item) => item.status === "completed").length;
+  const eligibility = eligibilityRows?.[0] || null;
   return {
     mode:ctx.mode,
+    /* Sent on every load. The student cannot dismiss it away permanently, because the
+       obligation is to notify the student, not to have notified them once. */
+    regulatoryNotices:CALIFORNIA_NOTICES,
+    finalExam:{
+      /* The examination lives on its own page; the course record says only whether it
+         is open and, when it is not, what is still outstanding. */
+      eligible:Boolean(eligibility?.final_exam_eligible),
+      earliestAt:eligibility?.earliest_final_exam_at || null,
+      remaining:Array.isArray(eligibility?.remaining_requirements) ? eligibility.remaining_requirements : [],
+      href:`/student/final-exam/?enrollment_id=${encodeURIComponent(ctx.enrollment.id)}`
+    },
     reviewNotice:ctx.mode === "student" ? null : "Regulatory Review Mode — time and sequencing restrictions bypassed. Reviewer activity creates no student completion credit.",
     enrollment:{
       id:ctx.enrollment.id,
@@ -164,7 +191,7 @@ async function coursePayload(ctx,requestedAssignment) {
       total:assignments.length,
       percent:Math.round(100*completed/assignments.length),
       activeSeconds:assignments.reduce((sum,item) => sum+item.activeSeconds,0),
-      eligibility:eligibilityRows?.[0] || null
+      eligibility
     },
     assignments,
     selectedAssignment:selected,
@@ -354,6 +381,11 @@ export const handler=async(event)=>{
     if (event.httpMethod==="GET") {
       const payload=await coursePayload(ctx,String(event.queryStringParameters?.assignment || ""));
       await audit(ctx,payload.selectedAssignment.id,"course_opened",{mode:ctx.mode});
+      if (ctx.mode === "student") {
+        await audit(ctx,null,"regulatory_notice_delivered",{
+          notices:CALIFORNIA_NOTICES.map((notice) => ({id:notice.id,version:notice.version}))
+        });
+      }
       return sessionResponse(200,payload,cookies);
     }
     if (event.httpMethod==="POST") {
