@@ -1049,6 +1049,1026 @@ const formA = [
    material with different questions. It is authored separately and must not repeat a
    Form A item. */
 const formB = [
+  /* Assignment 01 — California practice standards and the regulated professional */
+  { source: { assignment: "assignment-01", section: "1.4" },
+    prompt: "What is the operative difference between a broker license and a salesperson license?",
+    choices: [
+      "A broker may operate independently and supervise licensees; a salesperson's authority flows through an employing broker.",
+      "A broker may list property and a salesperson may only sell it.",
+      "A broker must be a natural person and a salesperson may be an entity.",
+      "A broker may handle trust funds and a salesperson may not touch any transaction document."
+    ],
+    correctChoice: 0,
+    rationale: "The distinction is independent operation and supervisory authority. Salespersons perform the full range of licensed activity under a broker's authority." },
+  { source: { assignment: "assignment-01", section: "2.3" },
+    prompt: "An independent contractor agreement states the salesperson controls his own schedule and methods. What does it do to the broker's supervisory duty?",
+    choices: [
+      "Nothing — independent contractor status addresses tax and payroll treatment and does not reduce supervision.",
+      "It transfers the supervisory duty to the salesperson for his own files.",
+      "It limits supervision to the files the broker personally reviews.",
+      "It eliminates vicarious responsibility for the salesperson's acts."
+    ],
+    correctChoice: 0,
+    rationale: "The status is a tax and payroll characterization. The supervisory duty and vicarious responsibility are unaffected by it." },
+  { source: { assignment: "assignment-01", section: "3.2" },
+    prompt: "Which activity crosses from real estate practice into the practice of law?",
+    choices: [
+      "Drafting a provision that alters the parties' legal rights, rather than completing an approved form with negotiated terms.",
+      "Explaining what a deadline in the agreement is and when it falls.",
+      "Recommending that a client consult an attorney about a clause.",
+      "Delivering a document prepared by the other party's counsel."
+    ],
+    correctChoice: 0,
+    rationale: "Authorship of provisions that change legal rights is the boundary. Explaining the document's own procedure, referring, and delivering are all within scope." },
+  { source: { assignment: "assignment-01", section: "4.2" },
+    prompt: "Which belongs in a working brokerage policy set?",
+    choices: [
+      "What must be submitted for review and when, the escalation path, trust fund handling, and the file standard.",
+      "The brokerage's commission splits and recruiting terms.",
+      "A directory of preferred vendors and their pricing.",
+      "The marketing calendar for the coming year."
+    ],
+    correctChoice: 0,
+    rationale: "The policy set governs supervision, escalation, funds, and records. Compensation and marketing are business documents rather than the compliance framework." },
+  { source: { assignment: "assignment-01", section: "5.5" },
+    prompt: "What should a confirming message after a consequential client conversation contain?",
+    choices: [
+      "The date, what the client asked or decided, what he was told, and what happens next by when — in a few sentences, sent the same day.",
+      "A complete transcript of the conversation.",
+      "The licensee's assessment of the client's likely motives.",
+      "A statement that the client agreed with the licensee's recommendation."
+    ],
+    correctChoice: 0,
+    rationale: "Short, same day, specific. A transcript is not the point, and characterizing motives or asserting agreement puts the licensee's conclusions into the record." },
+  { source: { assignment: "assignment-02", section: "1.1" },
+    prompt: "What is wrong with a business plan that consists of a transaction target and a gross income figure?",
+    choices: [
+      "It does not work backward from the hours a transaction actually requires, including the compliance work, so the target is met by skipping steps.",
+      "It fails to account for market conditions that may change during the year.",
+      "It cannot be evaluated by a brokerage during recruiting.",
+      "It omits the commission split, which determines net income."
+    ],
+    correctChoice: 0,
+    rationale: "A target exceeding capacity is still met — by cutting the work that is invisible until something goes wrong, which is precisely the work that gets cut." },
+  { source: { assignment: "assignment-02", section: "2.2" },
+    prompt: "A lead vendor assures a licensee that its call list has been screened against do-not-call registries. Where does the obligation sit?",
+    choices: [
+      "With the caller — a licensee cannot rely on a vendor's assurance.",
+      "With the vendor, which contracted to supply a compliant list.",
+      "With the brokerage, which purchased the list.",
+      "With whichever party the calling script identifies."
+    ],
+    correctChoice: 0,
+    rationale: "The obligation belongs to the person placing the call, and identification of the caller is a separate requirement rather than a way of allocating this one." },
+  { source: { assignment: "assignment-02", section: "2.5" },
+    prompt: "Which prospecting statement is prohibited in every channel?",
+    choices: [
+      "\"I have a buyer for your house,\" when no such buyer exists.",
+      "\"I sold a property on your street last month,\" when that is true.",
+      "\"I would be glad to prepare a market analysis at no cost.\"",
+      "\"May I ask whether you have considered selling?\""
+    ],
+    correctChoice: 0,
+    rationale: "A representation creating a false impression of urgency, endorsement, or authority is prohibited, and prospecting pressure is not a defense." },
+  { source: { assignment: "assignment-02", section: "3.3" },
+    prompt: "A team markets itself under a name displayed more prominently than the brokerage, styled like a separate firm. What is the defect?",
+    choices: [
+      "It creates the impression of an independent company that is not licensed, which the identification requirements exist to prevent.",
+      "Team names may not be used in California advertising at all.",
+      "The team name must be registered with the Department before use.",
+      "Nothing, provided the brokerage's name appears somewhere in the advertisement."
+    ],
+    correctChoice: 0,
+    rationale: "Team names are permitted; presenting one as though it were the licensed entity is the problem, and mere presence of the brokerage name does not cure prominence." },
+  { source: { assignment: "assignment-02", section: "5.4" },
+    prompt: "Which control most reduces a brokerage's exposure when a vendor it uses suffers a data breach?",
+    choices: [
+      "Sending the vendor only the data it actually needs, rather than the whole file.",
+      "Requiring the vendor to carry cyber liability insurance.",
+      "Using a vendor located in the same state as the brokerage.",
+      "Encrypting the brokerage's own devices."
+    ],
+    correctChoice: 0,
+    rationale: "Data not sent cannot be leaked, and most over-sharing happens because sending the whole file is faster than assembling the part. The other measures help but do not reduce what the vendor holds." },
+  { source: { assignment: "assignment-02", section: "6.3" },
+    prompt: "Why is shortening a retention period a poor economy?",
+    choices: [
+      "The obligation runs from the transaction rather than from convenience, and a complaint can arrive long after a file was destroyed.",
+      "Storage costs are trivial compared with brokerage revenue.",
+      "The listing service requires records to be kept indefinitely.",
+      "Destroyed records must be reconstructed at the brokerage's expense."
+    ],
+    correctChoice: 0,
+    rationale: "The period runs from the transaction, and retention extends where a complaint has been made or a proceeding is pending. Cost is not the reason the rule exists." },
+  /* Assignment 03 — Agency disclosure and fiduciary performance */
+  { source: { assignment: "assignment-03", section: "2.2" },
+    prompt: "When must the agency disclosure be delivered to a buyer the brokerage is working with?",
+    choices: [
+      "At the outset of the working relationship, before advice is given — not at the point an offer is written.",
+      "With the purchase agreement, where the confirmation also appears.",
+      "Within a defined period after the buyer identifies a property of interest.",
+      "Before escrow opens, so the parties' roles are settled for closing."
+    ],
+    correctChoice: 0,
+    rationale: "By the time an offer exists, weeks of advice have been given. The confirmation is a later, separate step." },
+  { source: { assignment: "assignment-03", section: "3.3" },
+    prompt: "A seller instructs his agent not to show the property to a category of buyers. Why can the agent not follow it, even documenting that it came from the client?",
+    choices: [
+      "The duty of obedience extends only to lawful instructions, and documentation does not transfer responsibility for the act.",
+      "The agent may follow it if the brokerage's policy manual permits.",
+      "The agent may follow it if the property is owner-occupied.",
+      "The agent may follow it provided he does not state the reason to anyone."
+    ],
+    correctChoice: 0,
+    rationale: "Following it informally achieves the same exclusion, and the documentation records that the agent knew rather than shielding him." },
+  { source: { assignment: "assignment-03", section: "3.4" },
+    prompt: "Which duty continues after the agency relationship has ended?",
+    choices: [
+      "Confidentiality, including as to the lowest price a former seller would have accepted.",
+      "Obedience to the former principal's instructions.",
+      "The duty to continue marketing the property.",
+      "The duty to account for funds not yet received."
+    ],
+    correctChoice: 0,
+    rationale: "A duty that evaporated at the end of the engagement would not be worth having, and it applies even when the licensee later works with a different client." },
+  { source: { assignment: "assignment-03", section: "4.3" },
+    prompt: "Both parties have signed a dual agency consent. What does the consent NOT authorize?",
+    choices: [
+      "Disclosing to one party the price or terms the other is willing to accept.",
+      "Presenting offers and counteroffers between the parties.",
+      "Disclosing material facts about the property's condition to both.",
+      "Explaining the agreement's provisions to both parties."
+    ],
+    correctChoice: 0,
+    rationale: "Confidential negotiating information may not move between sides even with consent to the dual agency itself. Everything else in the list remains required." },
+  { source: { assignment: "assignment-03", section: "4.5" },
+    prompt: "When should a possible dual agency be raised with the parties?",
+    choices: [
+      "As soon as it becomes foreseeable, typically when a buyer the brokerage works with becomes interested in a brokerage listing.",
+      "When the offer is written, since that is when both sides are represented in one transaction.",
+      "At closing, when the compensation from both sides becomes visible.",
+      "Only if one of the parties asks whether the brokerage represents the other."
+    ],
+    correctChoice: 0,
+    rationale: "Raising it at the offer is late, because both parties have already invested effort under an assumption that may be wrong. Consent obtained after the conduct records the problem." },
+  { source: { assignment: "assignment-03", section: "3.5" },
+    prompt: "A licensee wants to buy a property his brokerage has listed. What does loyalty require?",
+    choices: [
+      "Disclosing that he is acting as a principal rather than an agent, on terms heightened beyond ordinary disclosure, and routing the matter through the broker.",
+      "Nothing beyond offering a fair price, since price is what the seller cares about.",
+      "Withdrawing from the brokerage's representation of the seller and proceeding as an ordinary buyer.",
+      "Obtaining an appraisal to demonstrate the price is market value."
+    ],
+    correctChoice: 0,
+    rationale: "The interest is directly opposed to the principal's on the term that matters most, and a fair price does not substitute for disclosure of the licensee's role." },
+  { source: { assignment: "assignment-04", section: "2.5" },
+    prompt: "What does a protection clause in a listing agreement generally address?",
+    choices: [
+      "Compensation where the property is sold after expiration to a buyer identified to the seller during the term, on the clause's own terms.",
+      "The brokerage's right to renew the listing automatically.",
+      "The seller's obligation to reimburse marketing costs on cancellation.",
+      "The buyer's obligation to work exclusively with the listing brokerage."
+    ],
+    correctChoice: 0,
+    rationale: "The clause operates on its own terms as to buyers identified during the term, which is why a written protected-buyer list delivered before expiration is what makes it usable." },
+  { source: { assignment: "assignment-04", section: "1.3" },
+    prompt: "At intake a seller mentions the garage was converted to a bedroom years ago by a family member. What must be established?",
+    choices: [
+      "Whether the work was permitted and how the records describe the property, before any room count or square footage is published.",
+      "Whether the conversion is structurally sound, which the licensee should assess during the walkthrough.",
+      "Whether the buyer will want the space returned to a garage.",
+      "Nothing, since the seller's description of his own property may be relied on."
+    ],
+    correctChoice: 0,
+    rationale: "The published figures become the licensee's representation. Structural assessment is outside his competence and the buyer's preferences are a marketing question." },
+  { source: { assignment: "assignment-04", section: "4.3" },
+    prompt: "A seller says a defect is 'fixed, so there's nothing to disclose.' What is the counseling response?",
+    choices: [
+      "The repair is exactly what the buyer wants to evaluate, and disclosing it with the repair records is stronger than silence.",
+      "Agree, provided the repair was performed by a licensed contractor.",
+      "Agree, provided the repair is more than five years old.",
+      "Disclose it only if the buyer's inspector identifies the underlying condition."
+    ],
+    correctChoice: 0,
+    rationale: "A repaired condition is still disclosed. Neither the contractor's licensure nor the passage of time removes it, and waiting for the inspector concedes the point." },
+  { source: { assignment: "assignment-04", section: "6.4" },
+    prompt: "A seller needs the property off the market temporarily for a family matter. What is the correct mechanism?",
+    choices: [
+      "Withdrawal — the listing continues and the marketing pauses, documented with an accurate listing service status change.",
+      "Cancellation, which ends the engagement and can be reinstated later.",
+      "Expiration, by allowing the term to run out.",
+      "A verbal instruction to stop showings, since no document is needed to pause marketing."
+    ],
+    correctChoice: 0,
+    rationale: "Withdrawal and cancellation are different things, and misrepresenting a property's status in a listing service is its own problem." },
+  { source: { assignment: "assignment-04", section: "5.5" },
+    prompt: "A listed property is occupied by tenants. What changes about showings?",
+    choices: [
+      "The tenants' rights govern access, including notice, and the showing plan is built around them rather than around the seller's preference.",
+      "Nothing, since the seller owns the property and controls access.",
+      "Showings are prohibited until the tenancy ends.",
+      "The tenants may be required to vacate for open houses."
+    ],
+    correctChoice: 0,
+    rationale: "A tenancy carries possession rights that a sale does not suspend, and entry requirements apply regardless of who wants the showing." },
+  { source: { assignment: "assignment-04", section: "6.6" },
+    prompt: "What should the file show when a listing engagement ends?",
+    choices: [
+      "The date and method, who authorized it for the brokerage, any agreement about compensation or protected buyers, and the listing service status change with its date.",
+      "Only the expiration date stated in the original agreement.",
+      "A written statement of the seller's reasons for ending it.",
+      "Nothing, if the engagement simply expired by its own terms."
+    ],
+    correctChoice: 0,
+    rationale: "An engagement that ends informally by everyone ceasing to act is the one that generates a dispute six weeks later when the property sells." },
+  /* Assignment 05 — Market analysis and pricing strategy */
+  { source: { assignment: "assignment-05", section: "1.3" },
+    prompt: "What defines a defensible competitive set?",
+    choices: [
+      "Properties a buyer would genuinely consider instead of the subject, with each inclusion and exclusion justified.",
+      "The three closest sales by distance regardless of characteristics.",
+      "Every sale in the subject's zip code in the last twelve months.",
+      "The sales producing the tightest range of indicated values."
+    ],
+    correctChoice: 0,
+    rationale: "Substitution is the principle; proximity, an arbitrary geographic filter, and selecting for convergence are all ways of choosing the answer first." },
+  { source: { assignment: "assignment-05", section: "3.3" },
+    prompt: "How should active listings be used in a market analysis?",
+    choices: [
+      "As evidence of current competition and an upper boundary, not as evidence of what buyers have paid.",
+      "As the primary indication, because they reflect present market conditions.",
+      "As a substitute for closed sales where recent closings are scarce.",
+      "They should be excluded entirely from any analysis."
+    ],
+    correctChoice: 0,
+    rationale: "An asking price is an offer to the market. Actives inform strategy and mislead when used as value evidence, but they are not excluded." },
+  { source: { assignment: "assignment-05", section: "3.4" },
+    prompt: "What does the absorption rate measure?",
+    choices: [
+      "The rate at which available inventory is being sold, which indicates how long the current supply would last.",
+      "The share of listings that expire without selling.",
+      "The average number of days a property remains on the market.",
+      "The percentage of list price that sellers actually receive."
+    ],
+    correctChoice: 0,
+    rationale: "Absorption relates inventory to sales pace. Days on market and list-to-sale ratio are separate measures of different things." },
+  { source: { assignment: "assignment-05", section: "2.7" },
+    prompt: "Three comparables each required adjustments approaching a fifth of their sale prices, and all three converge on the number the seller mentioned. What does that convergence show?",
+    choices: [
+      "Little — convergence produced by heavy adjustment is the analyst's judgment restated three times.",
+      "That the analysis is well supported, since three independent indications agree.",
+      "That the comparables were correctly selected.",
+      "That the seller's expectation is consistent with the market."
+    ],
+    correctChoice: 0,
+    rationale: "Gross adjustment measures how much work the grid is doing. A comparable requiring large gross adjustment is weak however close its adjusted figure lands." },
+  { source: { assignment: "assignment-05", section: "6.2" },
+    prompt: "What must the pricing file contain for the opinion to be reconstructable later?",
+    choices: [
+      "The comparables as they existed on that date, the selection reasoning, the derivation of the adjustments, and the market conditions statement.",
+      "The final range and the date it was delivered.",
+      "The seller's signature acknowledging the recommendation.",
+      "A copy of the listing agreement showing the price selected."
+    ],
+    correctChoice: 0,
+    rationale: "A listing service re-queried later returns different data and can contradict the original analysis, so the contemporaneous export and the reasoning are what answer a claim." },
+  { source: { assignment: "assignment-05", section: "1.6" },
+    prompt: "A subject property is a five-acre rural parcel and the nearest similar sale is eleven months old and four miles away. What does the analysis owe the seller?",
+    choices: [
+      "A range with its reasoning and a plain statement of what the data does and does not support.",
+      "A single figure derived from the nearest available sale.",
+      "A figure adjusted upward for the passage of time since the comparable sold.",
+      "A refusal to provide any opinion, since the method does not apply."
+    ],
+    correctChoice: 0,
+    rationale: "Applying the method where its assumptions fail produces false precision, which is worse than no number. Stating the limit is the professional obligation, and refusing entirely is not required." },
+  { source: { assignment: "assignment-05", section: "5.4" },
+    prompt: "An appraisal comes in below the contract price. What may the licensee do?",
+    choices: [
+      "Submit additional data through the prescribed reconsideration channel, with the appraiser free to reject it.",
+      "Contact the appraiser directly to explain what the transaction needs.",
+      "Ask the lender to order a second appraisal from a different appraiser who is more familiar with the area.",
+      "Advise the seller that the appraisal is wrong and should be disregarded."
+    ],
+    correctChoice: 0,
+    rationale: "A low appraisal is a fact, not a problem to solve. Data may be submitted through the channel; a target, direct pressure, or shopping for a different result may not." },
+  /* Assignment 06 — Marketing, advertising, and fair access */
+  { source: { assignment: "assignment-06", section: "1.4" },
+    prompt: "Which statement crosses from puffery into misrepresentation?",
+    choices: [
+      "\"The addition is fully permitted,\" where the records do not show a permit.",
+      "\"A wonderful home for entertaining.\"",
+      "\"One of the nicest streets in the neighborhood.\"",
+      "\"You will love the natural light.\""
+    ],
+    correctChoice: 0,
+    rationale: "Puffery is obvious opinion a buyer does not rely on as fact. A statement about permitting is a verifiable fact and, if unsupported, a misrepresentation." },
+  { source: { assignment: "assignment-06", section: "2.4" },
+    prompt: "A licensee promotes a listing on a personal social account. What applies?",
+    choices: [
+      "The same identification requirements as any other advertisement — the platform does not change what the advertisement is.",
+      "Nothing, because a personal account is personal expression.",
+      "Only the truthfulness requirement, since identification applies to paid media.",
+      "The requirements apply only if the post is boosted with paid promotion."
+    ],
+    correctChoice: 0,
+    rationale: "Promoting listings is advertising regardless of platform or whether money changed hands, and the profile itself advertises the licensee's services." },
+  { source: { assignment: "assignment-06", section: "3.3" },
+    prompt: "Which listing phrase must be rewritten?",
+    choices: [
+      "\"Walk to St. Anne's — perfect for a young family.\"",
+      "\"Three bedrooms, two baths, 1,480 square feet per assessor.\"",
+      "\"Corner lot with alley access and detached workshop.\"",
+      "\"Roof replaced in 2021; permits in the seller's disclosure package.\""
+    ],
+    correctChoice: 0,
+    rationale: "The phrase conveys a preference about who the property is for and identifies the neighborhood by a religious landmark. The others are sourced factual descriptions." },
+  { source: { assignment: "assignment-06", section: "3.4" },
+    prompt: "How should accessibility features be handled in listing copy?",
+    choices: [
+      "Described factually as features of the property, because omitting them denies information to the people who need it.",
+      "Omitted, since mentioning them may imply a preference about who should apply.",
+      "Mentioned only if the seller authorizes it in writing.",
+      "Described only in response to a direct inquiry."
+    ],
+    correctChoice: 0,
+    rationale: "Accessibility information belongs in the copy. Withholding it does not avoid a fair housing problem — it creates one." },
+  { source: { assignment: "assignment-06", section: "6.5" },
+    prompt: "An advertisement is discovered to contain an inaccurate square footage figure. What is required?",
+    choices: [
+      "Correct or take it down promptly across every channel where it appears, and record what was corrected and when.",
+      "Correct the listing service entry only, since that is the source syndication draws from.",
+      "Leave it and disclose the correct figure to any buyer who makes an offer.",
+      "Correct it at the next scheduled marketing update."
+    ],
+    correctChoice: 0,
+    rationale: "The correction has to reach where consumers actually see it, and syndicated copies do not always update from the source. Waiting continues the misstatement." },
+  { source: { assignment: "assignment-06", section: "6.7" },
+    prompt: "A portal displays a photograph the licensee removed from the listing six weeks ago. Whose problem is it?",
+    choices: [
+      "The licensee's — he is responsible for what appears about his listing, which is why the destination is checked rather than only the source.",
+      "The portal's, which controls its own display.",
+      "The listing service's, which supplies the feed.",
+      "Nobody's, since the photograph was accurate when published."
+    ],
+    correctChoice: 0,
+    rationale: "Syndicated content is reformatted by systems the licensee does not control, and periodic capture of how the listing actually appears is how the problem is found." },
+  /* Assignment 07 — Buyer representation and property selection */
+  { source: { assignment: "assignment-07", section: "2.3" },
+    prompt: "How should exclusivity in a buyer representation agreement be explained?",
+    choices: [
+      "Honestly — what the buyer is agreeing to, for how long, in what area, and what happens if he buys through someone else.",
+      "As a formality the brokerage requires before showing property.",
+      "As protection for the buyer that carries no obligation on his part.",
+      "As terminable by the buyer at any time without consequence."
+    ],
+    correctChoice: 0,
+    rationale: "The agreement creates real obligations, and describing it as a formality or as consequence-free misstates what the buyer is signing." },
+  { source: { assignment: "assignment-07", section: "3.4" },
+    prompt: "A buyer's parents will contribute to the down payment. What should the licensee do?",
+    choices: [
+      "Direct the buyer to raise it with the lender early, because how the funds are documented and transferred matters to the approval.",
+      "Advise that the funds be deposited a few months before application so they season.",
+      "Advise structuring the contribution as a loan rather than a gift.",
+      "Treat it as the buyer's private financial matter and say nothing."
+    ],
+    correctChoice: 0,
+    rationale: "Documentation is the lender's requirement and easier before funds move than after. Advising on seasoning or on characterizing the funds is advising on how to present facts to a lender." },
+  { source: { assignment: "assignment-07", section: "4.3" },
+    prompt: "A buyer asks which schools are best in the area. What is the correct response?",
+    choices: [
+      "Direct him to the district's own published information and to the district for attendance boundaries, without rating or comparing.",
+      "Share the ratings the licensee has seen on a widely used website.",
+      "Describe which schools local buyers consider strongest.",
+      "Answer if the buyer has already told the licensee he has children."
+    ],
+    correctChoice: 0,
+    rationale: "School-quality claims are among the most common ways an advertisement or a conversation conveys a preference about who a neighborhood is for, and a boundary stated from memory is also a care problem." },
+  { source: { assignment: "assignment-07", section: "4.5" },
+    prompt: "Why is the property search documented against the buyer's stated criteria?",
+    choices: [
+      "Because it is the evidence that the search was not built on anything else, including assumptions the licensee never articulated.",
+      "Because the listing service requires a record of properties shown.",
+      "Because the buyer may later dispute the commission if the record is incomplete.",
+      "Because the seller's agent is entitled to see which properties were considered."
+    ],
+    correctChoice: 0,
+    rationale: "Areas quietly added or omitted against stated criteria is where steering lives, and the record is what shows the search followed the buyer rather than the licensee." },
+  { source: { assignment: "assignment-07", section: "5.5" },
+    prompt: "A buyer is purchasing new construction and asks whether an inspection is necessary.",
+    choices: [
+      "Recommend investigation in writing — new construction is not an exception, and the buyer's decision either way is documented.",
+      "Advise that the builder's warranty and municipal inspections make an independent inspection unnecessary.",
+      "Advise against it, since builders commonly refuse access before closing.",
+      "Leave the decision to the buyer without a recommendation."
+    ],
+    correctChoice: 0,
+    rationale: "Municipal inspection and a warranty answer different questions than an independent inspection. The recommendation is made and recorded regardless of what the buyer decides." },
+  { source: { assignment: "assignment-07", section: "6.6" },
+    prompt: "What is the central risk a buyer should understand about an escalation clause?",
+    choices: [
+      "It reveals what he is willing to pay and depends on how competing offers are verified, so its mechanics and their consequences must be explained before he uses one.",
+      "It is prohibited in California residential transactions.",
+      "It binds the seller to accept the highest escalated amount.",
+      "It replaces the appraisal contingency automatically."
+    ],
+    correctChoice: 0,
+    rationale: "The clause discloses the buyer's ceiling and turns on verification of the competing offer. It binds nobody to accept and does not touch the appraisal contingency." },
+  /* Assignment 08 — Purchase agreements, counteroffers, and contingencies */
+  { source: { assignment: "assignment-08", section: "1.3" },
+    prompt: "What is the function of the deposit in a residential purchase agreement?",
+    choices: [
+      "It is consideration held under the agreement's terms, whose disposition on cancellation follows the contract's procedure.",
+      "It is a fee earned by the listing brokerage when the offer is accepted.",
+      "It is applied to the buyer's closing costs and cannot be at risk.",
+      "It is a penalty automatically forfeited if the buyer does not close."
+    ],
+    correctChoice: 0,
+    rationale: "Disposition follows the contract's procedure and, where disputed, a legal determination. It is neither automatically forfeited nor immune from risk." },
+  { source: { assignment: "assignment-08", section: "1.5" },
+    prompt: "What does it mean that time is a term of a purchase agreement?",
+    choices: [
+      "The dates are substantive obligations rather than administrative targets, and missing one has contractual consequences.",
+      "The agreement expires automatically if any deadline passes.",
+      "Escrow may extend any deadline to accommodate the parties.",
+      "Deadlines are enforceable only if the agreement states that time is of the essence for that item."
+    ],
+    correctChoice: 0,
+    rationale: "Dates carry obligations. The agreement does not evaporate on a missed date, escrow does not extend terms, and treating deadlines as targets is how files fail." },
+  { source: { assignment: "assignment-08", section: "2.4" },
+    prompt: "A seller receives an offer and instructs his agent not to present a second one that arrives an hour later. What is the agent's obligation?",
+    choices: [
+      "Explain that offers are presented, and take the instruction to the broker rather than following it silently.",
+      "Follow the instruction, since the seller may decide which offers to consider.",
+      "Present the second offer directly to the seller's spouse instead.",
+      "Advise the second buyer's agent that the property is no longer available."
+    ],
+    correctChoice: 0,
+    rationale: "Withholding a competing offer is a disclosure failure, and telling the second buyer the property is unavailable is a misrepresentation on top of it." },
+  { source: { assignment: "assignment-08", section: "3.4" },
+    prompt: "What is a backup offer?",
+    choices: [
+      "A contractual position behind an accepted offer, with defined triggers and its own obligations — not an expression of continuing interest.",
+      "An offer held by the listing agent and presented only if the first transaction cancels.",
+      "A second offer accepted at the same time as the first.",
+      "An option to purchase exercisable if the first buyer defaults."
+    ],
+    correctChoice: 0,
+    rationale: "A buyer entering backup position is entering an agreement with consequences for his deposit and his obligations, which is what he must understand before signing." },
+  { source: { assignment: "assignment-08", section: "4.6" },
+    prompt: "A buyer waives his investigation contingency at the outset to strengthen an offer. What does the waiver change?",
+    choices: [
+      "His ability to respond to what an investigation would reveal — the property's condition is unchanged by it.",
+      "The seller's disclosure obligations, which are reduced accordingly.",
+      "The licensee's duty to recommend investigation, which no longer applies.",
+      "The lender's appraisal requirement, which the waiver supersedes."
+    ],
+    correctChoice: 0,
+    rationale: "A waiver removes the buyer's response right and nothing else. Disclosure duties, the recommendation, and the lender's requirements are untouched." },
+  { source: { assignment: "assignment-08", section: "5.5" },
+    prompt: "The parties agree by telephone to move the closing date. What is required?",
+    choices: [
+      "A written amendment signed by both, transmitted to escrow, with a same-day confirming message at minimum.",
+      "Nothing, since the parties' agreement is what governs.",
+      "A note in the file recording the conversation.",
+      "Notification to the listing service of the revised date."
+    ],
+    correctChoice: 0,
+    rationale: "The operative date remains the one in the agreement until amended in writing, and escrow acts on what it receives." },
+  { source: { assignment: "assignment-08", section: "6.3" },
+    prompt: "What is the practical effect of the mediation and arbitration provisions in a residential purchase agreement?",
+    choices: [
+      "They set the dispute resolution path the parties agreed to, and the consequences of declining to follow it are contractual questions for counsel.",
+      "They prevent the parties from ever litigating any dispute.",
+      "They allow the brokerage to resolve disputes between the parties.",
+      "They apply only to disputes about the deposit."
+    ],
+    correctChoice: 0,
+    rationale: "The provisions set a path and carry consequences; their operation on particular facts is a legal question, and the brokerage does not adjudicate between the parties." },
+  /* Assignment 09 — Disclosures and property-condition risk */
+  { source: { assignment: "assignment-09", section: "1.6" },
+    prompt: "A property is being sold by a trustee who has never entered it. What follows for the disclosures?",
+    choices: [
+      "The obligation is about known facts, so 'unknown' will be the honest answer to much of it — and the licensee's own inspection disclosure carries correspondingly more weight.",
+      "The disclosure obligation does not apply to a trustee.",
+      "The trustee must have the property inspected to complete the form.",
+      "The licensee should complete the form from the property records."
+    ],
+    correctChoice: 0,
+    rationale: "Whether a particular transfer is exempt from a particular requirement is a legal question, and an exemption from one requirement is not a general release. The licensee never completes the seller's disclosure." },
+  { source: { assignment: "assignment-09", section: "3.1" },
+    prompt: "What does the natural hazard disclosure convey?",
+    choices: [
+      "Whether the property falls within mapped zones, based on maps at a scale with approximate boundaries that are revised over time.",
+      "Whether the property has ever suffered damage from a natural hazard.",
+      "Whether the property is insurable against the hazards identified.",
+      "Whether the seller is required to remediate any hazard identified."
+    ],
+    correctChoice: 0,
+    rationale: "It reports mapped status, not history, insurability, or a remediation obligation — and 'not in a zone' is not a statement that no risk exists." },
+  { source: { assignment: "assignment-09", section: "3.7" },
+    prompt: "What practical instruction follows from a hazard report identifying a fire severity zone?",
+    choices: [
+      "Tell the buyer to obtain insurance quotes early, before the contingency period runs, and record that the recommendation was made.",
+      "Tell the buyer that coverage is available at standard rates within mapped zones.",
+      "Tell the buyer the seller must complete defensible space work before closing.",
+      "Tell the buyer the designation will be removed if no fire occurs within five years."
+    ],
+    correctChoice: 0,
+    rationale: "Insurance availability and cost is the practical consequence and it surprises buyers late. The other statements assert requirements and outcomes that do not follow from the designation." },
+  { source: { assignment: "assignment-09", section: "4.2" },
+    prompt: "What distinguishes a material fact from a stigma question?",
+    choices: [
+      "A material fact affects value or desirability and is disclosed; some historical or reputational matters are governed by specific rules that limit or prohibit what may be said.",
+      "A material fact is physical and a stigma is anything non-physical, which never requires disclosure.",
+      "A material fact must be disclosed only if the buyer asks about it.",
+      "A stigma must always be disclosed if the licensee is aware of it."
+    ],
+    correctChoice: 0,
+    rationale: "The category is governed by specific California rules with boundaries, and some inquiries touch protected characteristics where an answer is prohibited. It is a question for the broker before anything is said." },
+  { source: { assignment: "assignment-09", section: "4.4" },
+    prompt: "A neighbor tells the listing agent that the house 'had a mold problem years ago.' What should the agent do with the information?",
+    choices: [
+      "Treat it as unverified, raise it with the seller and the broker, and not repeat it as fact to a buyer.",
+      "Include it in the marketing description as a disclosed condition.",
+      "Ignore it, since a neighbor is not a party to the transaction.",
+      "Tell buyers that the property is reported to have had mold."
+    ],
+    correctChoice: 0,
+    rationale: "Unverified information is not represented as fact, and it is not simply discarded either — it is raised with the seller and the broker." },
+  { source: { assignment: "assignment-09", section: "6.2" },
+    prompt: "Which disclosure failure is worse: content that is incomplete, or delivery that is late?",
+    choices: [
+      "Both are serious, but late delivery is the one that defeats the protection entirely, because a decision was made without the information.",
+      "Incomplete content, because it can never be corrected.",
+      "Late delivery, because it voids the purchase agreement.",
+      "Neither, provided the buyer signs an acknowledgment before closing."
+    ],
+    correctChoice: 0,
+    rationale: "Incomplete content can be amended; a decision already made cannot be un-made. Late delivery does not void the agreement, and an acknowledgment does not restore the lost opportunity." },
+  { source: { assignment: "assignment-10", section: "1.2" },
+    prompt: "Which describes the strongest of the three levels of lender assessment?",
+    choices: [
+      "An underwritten approval, where a person has reviewed verified documentation, as distinct from a prequalification based on stated information.",
+      "A prequalification, because it is issued fastest and reflects current conditions.",
+      "A rate quote, because it commits the lender to specific terms.",
+      "A credit report, because it is the objective element of the file."
+    ],
+    correctChoice: 0,
+    rationale: "The levels differ by what was actually verified and by whom. A rate quote commits nothing about qualification and a credit report is one input." },
+  { source: { assignment: "assignment-10", section: "3.2" },
+    prompt: "Why does a buyer's disclosure review period matter to the transaction as a whole?",
+    choices: [
+      "Certain changes restart waiting periods, which can move the closing date, so a change requested late has consequences the buyer should know before he decides.",
+      "The lender may not order the appraisal until the review period ends.",
+      "The seller may cancel if the buyer does not complete the review promptly.",
+      "Escrow cannot open until the review period has run."
+    ],
+    correctChoice: 0,
+    rationale: "A borrower who learns after the fact that his own request delayed closing by a week has been surprised by his own decision, which is the outcome the regime exists to prevent." },
+  { source: { assignment: "assignment-10", section: "3.4" },
+    prompt: "Which action by a licensee is prohibited when a buyer asks about his loan documents?",
+    choices: [
+      "Comparing the terms of two loan offers and identifying which is better for the buyer.",
+      "Explaining what the closing timeline is and which deadlines depend on the lender.",
+      "Telling the buyer to ask his lender for the worst-case payment on an adjustable product.",
+      "Recording in the file what the buyer was told and when."
+    ],
+    correctChoice: 0,
+    rationale: "Comparing loan offers is the lender's work. Explaining timelines, directing the buyer to ask the right question, and documenting are all within scope." },
+  { source: { assignment: "assignment-10", section: "4.5" },
+    prompt: "Underwriting issues a condition requiring documentation of a large deposit. What is the licensee's role?",
+    choices: [
+      "Route it to the lender and the borrower, and never draft the borrower's explanation or advise how the funds should be characterized.",
+      "Draft the explanation for the borrower's signature to keep the file moving.",
+      "Advise the borrower to return the funds and re-deposit them later.",
+      "Tell the borrower the condition is routine and can be satisfied at closing."
+    ],
+    correctChoice: 0,
+    rationale: "The condition asks where the money came from, and the answer is source documents plus the borrower's own words. Drafting it, advising on seasoning, and minimizing it are all improper." },
+  { source: { assignment: "assignment-10", section: "5.4" },
+    prompt: "A buyer requests repairs; the seller proposes a credit instead. What should the licensee explain?",
+    choices: [
+      "That the two are different in effect — a credit leaves the work undone and the condition unchanged, and lender limits may apply to credits.",
+      "That a credit is always preferable because the buyer controls the work.",
+      "That a repair is always preferable because the property is delivered complete.",
+      "That the choice is purely a matter of the parties' convenience."
+    ],
+    correctChoice: 0,
+    rationale: "Which is better depends on the buyer's circumstances and on constraints outside the parties' control, so the licensee explains the difference rather than recommending one." },
+  { source: { assignment: "assignment-10", section: "6.3" },
+    prompt: "Which is an early warning sign that a financing contingency is at risk?",
+    choices: [
+      "The lender stops giving specific answers about outstanding conditions and timelines.",
+      "The buyer asks for a copy of the appraisal.",
+      "The appraisal is ordered later than the licensee expected but is completed on time.",
+      "The buyer changes his mind about a repair request."
+    ],
+    correctChoice: 0,
+    rationale: "\"We should be fine\" is what a loan officer under pressure says. Vagueness about named conditions and dates is the signal worth acting on early." },
+  /* Assignment 11 — Escrow, title, closing, and possession */
+  { source: { assignment: "assignment-11", section: "2.2" },
+    prompt: "What does an exception in a preliminary report mean?",
+    choices: [
+      "A matter that will not be covered by the policy, which the buyer should understand before he relies on the coverage.",
+      "A condition the title company will require to be cleared before closing.",
+      "A defect that renders title uninsurable.",
+      "An item the seller has agreed to remove."
+    ],
+    correctChoice: 0,
+    rationale: "Exceptions are matters outside coverage; requirements are conditions to issuance. Confusing the two produces a file surprised at title clearance." },
+  { source: { assignment: "assignment-11", section: "2.5" },
+    prompt: "What does an owner's policy of title insurance do?",
+    choices: [
+      "Insures the owner's interest against covered title matters, subject to its exceptions and exclusions.",
+      "Guarantees that the property has no undisclosed physical defects.",
+      "Replaces the need for a survey by insuring the boundaries as fenced.",
+      "Insures the lender's security interest for the life of the loan."
+    ],
+    correctChoice: 0,
+    rationale: "It insures title, not condition, and standard coverage generally does not perform a survey's function. The lender's interest is covered by a separate policy." },
+  { source: { assignment: "assignment-11", section: "3.3" },
+    prompt: "Why is the insurance track worth managing separately during escrow?",
+    choices: [
+      "Coverage must be bound before closing and, in some California markets, availability itself is uncertain — which is discovered late if nobody asks early.",
+      "Because the lender selects the carrier and the buyer cannot influence it.",
+      "Because escrow will not open until a policy is in force.",
+      "Because the seller's existing policy transfers to the buyer at closing."
+    ],
+    correctChoice: 0,
+    rationale: "Insurance is the item most often assumed and least often confirmed, and a policy does not transfer with the property." },
+  { source: { assignment: "assignment-11", section: "4.2" },
+    prompt: "What is the purpose of the final verification of condition?",
+    choices: [
+      "To confirm the property is in the condition the agreement requires, that agreed repairs were made, and that nothing has changed since the buyer's investigation.",
+      "To give the buyer a final opportunity to renegotiate price.",
+      "To confirm the seller has vacated, which is the only issue it addresses.",
+      "To satisfy the lender's funding conditions."
+    ],
+    correctChoice: 0,
+    rationale: "It verifies condition against the agreement. It is neither a renegotiation opportunity nor limited to occupancy, and it is not a lender requirement." },
+  { source: { assignment: "assignment-11", section: "5.4" },
+    prompt: "What does a complete transfer of control at closing include?",
+    choices: [
+      "Every point of access — keys, gate and garage remotes, alarm codes, mailbox, and any keyed outbuilding — not simply the front door key.",
+      "The front door key, with other access provided on request.",
+      "Whatever the seller happens to leave on the counter.",
+      "Access codes only, since physical keys are the buyer's to replace."
+    ],
+    correctChoice: 0,
+    rationale: "\"Keys\" means every point of access, which is why the week-one call about a gate nobody could open is a transfer that was incomplete." },
+  { source: { assignment: "assignment-11", section: "6.7" },
+    prompt: "A former client asks the licensee to explain the tax treatment of his sale. What is the correct response?",
+    choices: [
+      "Refer him to a tax advisor, without a general summary — the categories outside a licensee's competence during the transaction are still outside it afterward.",
+      "Explain the general rules, since the transaction has closed and no advice is being given about it.",
+      "Provide the closing statement and explain which figures are taxable.",
+      "Decline and provide nothing further."
+    ],
+    correctChoice: 0,
+    rationale: "The pressure to answer is higher because the relationship is warmer, but the boundary has not moved. Documents are provided; the tax analysis is not." },
+  /* Assignment 12 — Property management and leasing practice */
+  { source: { assignment: "assignment-12", section: "1.3" },
+    prompt: "Why is an unsigned management agreement a structural defect rather than a paperwork gap?",
+    choices: [
+      "Everything the manager does rests on authority the agreement confers, so without it the scope of authority, the spending limits, and the fee are all unestablished.",
+      "Because the owner may refuse to pay for services rendered.",
+      "Because the listing service will not accept the property.",
+      "Because an unsigned agreement makes the manager a tenant at will."
+    ],
+    correctChoice: 0,
+    rationale: "The agreement is the source of authority. A manager acting without it cannot say what he was authorized to do, which is the question every later dispute asks." },
+  { source: { assignment: "assignment-12", section: "1.4" },
+    prompt: "A habitability item requires immediate replacement exceeding the manager's spending authority and the owner cannot be reached. What governs?",
+    choices: [
+      "The agreement's emergency provision — which is why defining what an emergency is, and up to what amount, belongs in the agreement rather than in the moment.",
+      "The manager's judgment, which is unlimited where habitability is involved.",
+      "The tenant's instruction, since the tenant occupies the unit.",
+      "The manager must wait for the owner regardless of the condition."
+    ],
+    correctChoice: 0,
+    rationale: "An emergency provision with no figure and no definition is a provision that will be argued about — after the money is spent." },
+  { source: { assignment: "assignment-12", section: "2.3" },
+    prompt: "How should an occupancy standard be set?",
+    choices: [
+      "By a neutral, reasonable standard applied uniformly, recognizing that a restrictive standard can operate as familial status discrimination.",
+      "By the owner's preference about how many people should live in the unit.",
+      "By one person per bedroom, which is the safe universal rule.",
+      "By whatever the local fire code permits, applied case by case."
+    ],
+    correctChoice: 0,
+    rationale: "An unreasonably restrictive occupancy limit operates against households with children. There is no universal safe number, and the owner's preference is not the standard." },
+  { source: { assignment: "assignment-12", section: "2.4" },
+    prompt: "An applicant intends to pay part of the rent with a housing subsidy. What does California law require?",
+    choices: [
+      "The subsidy may not be the basis for refusal — source of income is a protected characteristic in California.",
+      "The applicant may be refused if the owner does not wish to participate in the program.",
+      "The applicant must meet an income standard measured against the full rent without counting the subsidy.",
+      "The applicant may be charged a higher deposit to offset administrative burden."
+    ],
+    correctChoice: 0,
+    rationale: "Source of income is protected in California, and applying an income standard that ignores the subsidy, or charging more, are ways of refusing on the same basis." },
+  { source: { assignment: "assignment-12", section: "3.4" },
+    prompt: "A trust account shows an overage that cannot be attributed to any beneficiary. What is the correct treatment?",
+    choices: [
+      "It remains trust funds and is researched and handled under the applicable framework — it does not become brokerage income over time.",
+      "It is transferred to the operating account after a reasonable period.",
+      "It is distributed pro rata among the current beneficiaries.",
+      "It is applied against any shortage elsewhere in the account."
+    ],
+    correctChoice: 0,
+    rationale: "An overage is not the broker's money, and using it to offset a shortage uses one person's funds for another's benefit." },
+  { source: { assignment: "assignment-12", section: "4.1" },
+    prompt: "Which item is a habitability matter rather than a convenience repair?",
+    choices: [
+      "No hot water.",
+      "A dripping faucet.",
+      "A cabinet door that will not close.",
+      "A worn carpet in a bedroom."
+    ],
+    correctChoice: 0,
+    rationale: "Habitability items drive triage priority. The others are logged, scheduled, and communicated — an unanswered minor request teaches a tenant that reports produce nothing." },
+  { source: { assignment: "assignment-13", section: "1.6" },
+    prompt: "Which pressure most reliably precedes a licensee's misstatement?",
+    choices: [
+      "A transaction about to fail, or an error already made that the next statement would cover.",
+      "A client who asks too many questions.",
+      "A competing brokerage marketing aggressively in the same area.",
+      "A listing service policy the licensee disagrees with."
+    ],
+    correctChoice: 0,
+    rationale: "The first six pressures produce misstatements about the transaction; the covering statement produces a misstatement about the licensee, and that is the one that ends careers." },
+  { source: { assignment: "assignment-13", section: "2.3" },
+    prompt: "A licensee is told informally to do something the written office policy prohibits. What is the correct response?",
+    choices: [
+      "Treat the conflict as a question to raise, since an informal practice does not amend a written policy and following it exposes him under both.",
+      "Follow the informal practice, since it reflects how the office actually operates.",
+      "Follow the written policy silently and say nothing about the instruction.",
+      "Follow whichever the client would prefer."
+    ],
+    correctChoice: 0,
+    rationale: "A licensee following the informal version is exposed on both, and silence leaves the conflict in place for the next transaction." },
+  { source: { assignment: "assignment-13", section: "2.6" },
+    prompt: "A licensee notices that the other brokerage's contingency removal in the file is undated. What should he do?",
+    choices: [
+      "Raise it directly and promptly with the fact rather than a characterization, and escalate to his broker if it is not corrected or it affects his client's rights.",
+      "Correct the document himself so the file is complete.",
+      "Say nothing, since it is the other brokerage's document.",
+      "Raise it only if his client is later disadvantaged by it."
+    ],
+    correctChoice: 0,
+    rationale: "A licensee never fixes another party's document, and a defect he saw and said nothing about becomes his once the record shows he knew." },
+  { source: { assignment: "assignment-13", section: "4.6" },
+    prompt: "Why should a licensee keep a practice-wide conflicts inventory?",
+    choices: [
+      "Because the arrangements that get missed are the ones that grew gradually and now feel like background.",
+      "Because the Department requires an annual filing of vendor relationships.",
+      "Because clients are entitled to a list of the licensee's business relationships.",
+      "Because the brokerage's insurer requires it as a condition of coverage."
+    ],
+    correctChoice: 0,
+    rationale: "A vendor who bought lunch twice and now sponsors a monthly event is a different relationship, and nobody made a decision to change it." },
+  { source: { assignment: "assignment-13", section: "5.4" },
+    prompt: "A regulator contacts a licensee directly about a transaction. What is the correct step?",
+    choices: [
+      "Notify the broker immediately, preserve everything, and respond with the broker and, where appropriate, counsel.",
+      "Answer fully and immediately to demonstrate cooperation.",
+      "Decline to communicate until served with a formal accusation.",
+      "Refer the regulator to the other party's brokerage."
+    ],
+    correctChoice: 0,
+    rationale: "The process is largely documentary and the first response matters most. An improvised personal answer and a refusal to engage are both wrong." },
+  { source: { assignment: "assignment-13", section: "6.4" },
+    prompt: "Which situation must be escalated to the broker rather than handled by the licensee?",
+    choices: [
+      "Anything that sounds like a claim, any suspected fraud, and any instruction the licensee believes is unlawful.",
+      "Any client question the licensee cannot answer immediately.",
+      "Any request from the other brokerage for an extension.",
+      "Any inspection report identifying more than ten items."
+    ],
+    correctChoice: 0,
+    rationale: "Claims, suspected fraud, and unlawful instructions are brokerage matters from the first minute. Routine transaction questions are not." },
+  /* Assignment 14 — Implicit bias and fair housing participatory practicum */
+  { source: { assignment: "assignment-14", section: "1.4" },
+    prompt: "Why is systemic bias not simply the sum of individual bias?",
+    choices: [
+      "Structures — inherited networks, lead sources, referral composition, encoded criteria — produce unequal outcomes without any individual holding a discriminatory belief.",
+      "Because systemic bias is unlawful while individual bias is not.",
+      "Because systemic bias affects only institutions that make lending decisions.",
+      "Because individual bias is always conscious and therefore correctable."
+    ],
+    correctChoice: 0,
+    rationale: "This is why the professional answer is structure rather than sincerity: the mechanisms operate whether or not anyone is thinking about them." },
+  { source: { assignment: "assignment-14", section: "1.3" },
+    prompt: "Where does implicit bias most often operate in a licensee's day?",
+    choices: [
+      "In the distribution of information, effort, follow-up, and attention — decisions made quickly and never recorded as decisions.",
+      "In the decision to accept or reject a written offer.",
+      "In the preparation of the closing statement.",
+      "In the selection of the escrow holder."
+    ],
+    correctChoice: 0,
+    rationale: "Only a small share of what produces unequal service is a refusal. The rest is distribution, which is why 'I never refused anyone' answers a question nobody asked." },
+  { source: { assignment: "assignment-14", section: "3.2" },
+    prompt: "Which is an interruption practice rather than an intention?",
+    choices: [
+      "Using the same information script for every inquiry and logging every one.",
+      "Committing to treat every client equally.",
+      "Reviewing fair housing law annually.",
+      "Being alert to one's own assumptions during showings."
+    ],
+    correctChoice: 0,
+    rationale: "A practice happens whether or not the licensee is thinking about it. Commitment, review, and alertness all depend on attention on the day it is needed." },
+  { source: { assignment: "assignment-14", section: "3.4" },
+    prompt: "A client makes a remark about the composition of a neighborhood during a showing. What is the professional response?",
+    choices: [
+      "Say plainly that you do not characterize neighborhoods and point to the public sources, in the moment rather than afterward.",
+      "Change the subject to avoid an uncomfortable exchange.",
+      "Agree noncommittally and move on, since the client is not the licensee.",
+      "Report the client to the broker without saying anything to him."
+    ],
+    correctChoice: 0,
+    rationale: "The scripts exist because the gap between knowing what to say and having said it is the entire distance. Silence reads as agreement." },
+  { source: { assignment: "assignment-14", section: "3.6" },
+    prompt: "Which measurement is most revealing when reviewing a licensee's own practice for unequal service?",
+    choices: [
+      "Response time to first contact by lead source, because it is generated automatically and is unaffected by intention.",
+      "The number of transactions closed in the period.",
+      "The licensee's average commission per transaction.",
+      "The percentage of listings that sold above asking price."
+    ],
+    correctChoice: 0,
+    rationale: "It is produced by the system rather than by recollection, and it varies. The others measure production rather than distribution." },
+  { source: { assignment: "assignment-14", section: "6.2" },
+    prompt: "What makes a fair housing action plan real rather than a document?",
+    choices: [
+      "It names practices that happen on a schedule, produces a record even when nothing is wrong, and states in advance what happens when a review finds something.",
+      "It is signed by every licensee in the brokerage.",
+      "It restates the protected characteristics under federal and California law.",
+      "It is reviewed by counsel before adoption."
+    ],
+    correctChoice: 0,
+    rationale: "A plan that depends on remembering fails on the day it matters, and one that generates documents only when there is a problem creates an incentive not to find one." },
+  /* Assignment 15 — Integrated California residential transaction */
+  { source: { assignment: "assignment-15", section: "1.2" },
+    prompt: "Which intake question most often determines whether a listing can proceed at all?",
+    choices: [
+      "How title is currently held and who must sign to convey, answered from the documents.",
+      "What price the seller has in mind.",
+      "When the seller would like to close.",
+      "Whether the seller has interviewed other brokerages."
+    ],
+    correctChoice: 0,
+    rationale: "Authority is established from documents rather than description, and it is cheap at intake and expensive at title clearance with a buyer's deadlines running." },
+  { source: { assignment: "assignment-15", section: "2.3" },
+    prompt: "When does the disclosure work begin in a listing?",
+    choices: [
+      "At the listing stage, while there is no deadline pressure — not when an offer arrives.",
+      "When the buyer's investigation period opens.",
+      "When escrow is opened and the file is assembled.",
+      "When the buyer requests the disclosure package."
+    ],
+    correctChoice: 0,
+    rationale: "Deferring compresses the buyer's review period and creates pressure at exactly the wrong moment, which is why the timing is not a negotiable business term." },
+  { source: { assignment: "assignment-15", section: "3.3" },
+    prompt: "In a multiple offer situation, what belongs to the client and what belongs to the licensee?",
+    choices: [
+      "The terms and the decision are the client's; the analysis and the advice are the licensee's.",
+      "Both belong to the client, and the licensee only transmits.",
+      "Both belong to the licensee, who is engaged for his judgment.",
+      "The decision is the client's and the analysis belongs to the brokerage's manager."
+    ],
+    correctChoice: 0,
+    rationale: "Withholding the analysis and substituting the licensee's judgment are opposite failures of the same division." },
+  { source: { assignment: "assignment-15", section: "4.5" },
+    prompt: "A buyer removes his investigation contingency without obtaining a specialist evaluation the general inspection recommended. What should the file show?",
+    choices: [
+      "The written recommendation that preceded the removal and the buyer's decision, recorded in his words where possible.",
+      "A statement by the licensee that the evaluation was unnecessary.",
+      "An indemnity from the buyer releasing the brokerage.",
+      "Nothing, since the removal is the buyer's decision alone."
+    ],
+    correctChoice: 0,
+    rationale: "The licensee does not talk the buyer out of the decision and does not pretend it was not made. An indemnity is not what the file needs." },
+  { source: { assignment: "assignment-15", section: "5.2" },
+    prompt: "A preliminary report reveals a recorded notice of a pending action affecting the property. What is the correct handling?",
+    choices: [
+      "Escalate to the broker and the title officer immediately, because it can reach insurability and financing as well as cost.",
+      "Treat it as an ordinary exception the buyer accepts with the rest.",
+      "Explain to the buyer what the action is likely to be about.",
+      "Ask escrow to have it removed before closing."
+    ],
+    correctChoice: 0,
+    rationale: "It is the item on a report most likely to affect whether the transaction can close at all, and characterizing the underlying dispute is not the licensee's to do." },
+  { source: { assignment: "assignment-15", section: "6.2" },
+    prompt: "What is the standard a closed file is audited against?",
+    choices: [
+      "Reconstructability — could a person who was not present determine what happened, when, and on what basis.",
+      "Completeness of the brokerage's own checklist.",
+      "Whether the transaction closed without a complaint.",
+      "Whether every document bears an original signature."
+    ],
+    correctChoice: 0,
+    rationale: "Every retention rule, dating requirement, and delivery obligation serves that one standard, and no amount of accurate recollection substitutes." },
+  { source: { assignment: "assignment-15", section: "5.4" },
+    prompt: "What must never be assumed about wire instructions in the closing week?",
+    choices: [
+      "That instructions arriving in a familiar email thread are genuine — verification runs by voice through an independently obtained number.",
+      "That the buyer knows how much to bring to closing.",
+      "That escrow has received the lender's funding package.",
+      "That the seller has scheduled his move."
+    ],
+    correctChoice: 0,
+    rationale: "The attack is timed to when funds are expected and arrives from a near-identical address inside a thread that looks familiar." },
+  /* Integrative items — each answer requires material from more than one assignment */
+  { source: { assignment: "assignment-11", section: "1.6" },
+    crossReferences: [{ assignment: "assignment-10", section: "5.7" }],
+    prompt: "A seller credit negotiated in an amendment does not appear on the estimated closing statement. What happened, and what is the fix?",
+    choices: [
+      "The amendment never reached escrow; transmit it with the supporting document attached and confirm receipt, rather than telephoning that the figure is wrong.",
+      "Escrow made an arithmetic error and will correct it before closing.",
+      "The credit was disallowed by the lender and must be renegotiated as a repair.",
+      "The statement is an estimate, so the credit will appear on the final version automatically."
+    ],
+    correctChoice: 0,
+    rationale: "Escrow performs the instructions it holds. A call reporting that a figure is wrong, without the amendment, produces a delay rather than a correction." },
+  { source: { assignment: "assignment-09", section: "5.4" },
+    crossReferences: [{ assignment: "assignment-08", section: "4.3" }],
+    prompt: "A disclosure amendment is delivered two days after the buyer removed his investigation contingency. What is the correct sequence of steps?",
+    choices: [
+      "Raise it with both brokers immediately, tell the buyer what the amendment says and when it reached him, and treat whether his rights are affected as a legal question.",
+      "Proceed to closing, since the contingency was removed before the amendment arrived.",
+      "Obtain the buyer's written statement that the amendment does not change his decision.",
+      "Treat the amendment as informational because the period has closed."
+    ],
+    correctChoice: 0,
+    rationale: "Rights running from delivery are not extinguished by the buyer having acted earlier without the information, and asking him to waive the point substitutes the licensee's judgment for his." },
+  { source: { assignment: "assignment-06", section: "5.2" },
+    crossReferences: [{ assignment: "assignment-14", section: "1.5" }],
+    prompt: "Why is a uniform showing and inquiry procedure a fair access control as well as a security control?",
+    choices: [
+      "Because a procedure relaxed for visitors the licensee knows produces unequal treatment that nobody decided and a record that cannot answer the question later.",
+      "Because fair housing law requires identical scheduling for all showings.",
+      "Because the listing service audits showing records for uniformity.",
+      "Because a uniform procedure eliminates the need to document individual showings."
+    ],
+    correctChoice: 0,
+    rationale: "Distribution of access, information, and follow-up is where unequal service lives, and structure operates on the day attention does not." },
+  { source: { assignment: "assignment-13", section: "3.4" },
+    crossReferences: [{ assignment: "assignment-10", section: "2.4" }],
+    prompt: "A buyer's file states owner occupancy and also contains a lease for the same property signed by the buyer as landlord, dated before the application. What is this?",
+    choices: [
+      "A contradiction within the file on a material representation, which is escalated rather than resolved by asking the buyer to explain it away.",
+      "An ambiguity to clarify with the buyer before deciding whether it matters.",
+      "A private matter between the buyer and his lender.",
+      "A clerical inconsistency that the lender's underwriting will catch."
+    ],
+    correctChoice: 0,
+    rationale: "Where the file contradicts itself on a material point, the response is escalation. Resolving it himself is how a person who was not part of a fraud becomes part of one." },
+  { source: { assignment: "assignment-04", section: "3.5" },
+    crossReferences: [{ assignment: "assignment-05", section: "6.6" }],
+    prompt: "Why is the seller's pricing decision documented, including where it departed from the recommendation?",
+    choices: [
+      "Because a later negligence claim about the price is answered by what the file shows the seller was told and chose.",
+      "Because the listing service requires a record of the price rationale.",
+      "Because the brokerage's commission depends on the recommended price.",
+      "Because the seller may not change the price after listing without a documented reason."
+    ],
+    correctChoice: 0,
+    rationale: "If the seller listed below the recommendation, that document ends the claim; if he listed at it, the claim is about the recommendation and the reasoning is the answer." },
+  { source: { assignment: "assignment-01", section: "6.6" },
+    crossReferences: [{ assignment: "assignment-15", section: "6.4" }],
+    prompt: "A post-closing audit finds that a required disclosure has no evidence of delivery. Which response is prohibited?",
+    choices: [
+      "Asking the buyer to sign a receipt dated as of the original delivery.",
+      "Recording the finding and escalating it to the broker.",
+      "Searching the licensee's own sent items for a transmission record.",
+      "Adding a memorandum dated today describing what the file does and does not show."
+    ],
+    correctChoice: 0,
+    rationale: "Back-dating a receipt through the buyer's hand is the same act performed by a different hand. A documented gap is survivable; a manufactured record is not." },
+  { source: { assignment: "assignment-07", section: "1.5" },
+    crossReferences: [{ assignment: "assignment-03", section: "1.6" }],
+    prompt: "What must a licensee avoid doing at a buyer consultation before any agency disclosure has been delivered?",
+    choices: [
+      "Giving advice that would lead a reasonable person to believe he is being represented, since agency can arise from conduct.",
+      "Asking the buyer about his timeline and financial readiness.",
+      "Explaining how buyer representation and compensation work.",
+      "Describing the process from search through closing."
+    ],
+    correctChoice: 0,
+    rationale: "The disclosure attaches to the outset of the working relationship precisely because advice given before it is advice given inside an undisclosed relationship." },
+  { source: { assignment: "assignment-12", section: "5.5" },
+    crossReferences: [{ assignment: "assignment-13", section: "6.4" }],
+    prompt: "An owner instructs a property manager to change the locks on a delinquent tenant. What does the manager do?",
+    choices: [
+      "Decline clearly, say why in terms of what he may lawfully do, offer the lawful notice procedure, confirm it in writing the same day, and escalate to the broker if the owner insists.",
+      "Comply, since the owner owns the property and directs its management.",
+      "Comply while advising the owner in writing that the action carries risk.",
+      "Resign the management engagement without explanation."
+    ],
+    correctChoice: 0,
+    rationale: "Self-help is prohibited and the manager who performs it has done the unlawful act himself. A written warning does not transfer responsibility, and a silent resignation leaves the owner free to do it himself." },
 ];
 
 export default {
