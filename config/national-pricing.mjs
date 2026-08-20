@@ -112,7 +112,10 @@ export const STATE_PRICING = Object.freeze([
   state("OK", "Oklahoma", 90, 299, 399, BUILD_STATUS.BUILT, { marketRange: "$299–$829" }),
   state("WA", "Washington", 90, 299, 399, BUILD_STATUS.RESEARCHED, { marketRange: "$379–$785" }),
   state("PA", "Pennsylvania", 75, 299, 399, BUILD_STATUS.RESEARCHED, { marketRange: "$252–$685" }),
-  state("NC", "North Carolina", 75, 299, 399, BUILD_STATUS.RESEARCHED, { marketRange: "$299–$549" }),
+  state("NC", "North Carolina", 75, 299, 399, BUILD_STATUS.BUILT, {
+    marketRange: "$299–$549",
+    composition: "One 75-hour Broker Prelicensing Course following the Commission's sixteen Syllabus sections — 72.0 instructional hours plus the 3.0-hour end-of-course examination, which the Commission counts INSIDE the 75"
+  }),
   state("AZ", "Arizona", 96, 399, 549, BUILD_STATUS.RESEARCHED, {
     marketRange: "$549–$929",
     /* 96 is 90 + 6, and they are two separate regulatory records. The Arizona bundle must
