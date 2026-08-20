@@ -32,7 +32,11 @@ The textbook carve-out exists so that an applicant does not mail DRE a commercia
 | Total instructional time | 2700 minutes = 45 hours |
 | Source | `california/ca-real-estate-practice-45-v1/curriculum/lesson-01.md` … `lesson-15.md` |
 
-Bind with a **cover page**, a **publication page** (title, author StateCourse LLC, copyright 2026, edition 1.0), and a **table of contents** at the front, so the volume simultaneously satisfies the textbook-identification instruction and the full-material instruction. The exact page count goes on RE 313's "Pages" field once the volume is bound.
+## The volume is built
+
+`scripts/build-california-print-volume.mjs` produces the bound volume as HTML and renders it to PDF with headless Chromium. **This course: 330 pages.** Output is in `california/print/`; regenerate after any lesson change and put the new count into RE 313.
+
+It is bound with a **cover page**, a **publication page** (title, author StateCourse LLC, copyright 2026, edition 1.0), and a **table of contents** at the front, so the volume simultaneously satisfies the textbook-identification instruction and the full-material instruction. The exact page count goes on RE 313's "Pages" field once the volume is bound.
 
 ## What is NOT printed and NOT mailed
 

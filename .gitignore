@@ -68,3 +68,7 @@ next-env.d.ts
 # Local-only export destination for scripts/export-california-source-temp.mjs.
 # Never inside public/ or dist/ — see tests/no-answer-key-published.test.mjs
 .local-export/
+
+# Print-ready course volumes: 13 MB of generated PDFs, rebuilt by
+# scripts/build-california-print-volume.mjs. The HTML is tracked; the PDFs are not.
+california/print/*.pdf

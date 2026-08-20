@@ -2,7 +2,7 @@
 
 **This document is for you. It is not part of the application and must not be mailed to DRE.**
 
-Read it once through before printing anything. Total print run is roughly **1,100 pages**, so a mistake found on page 900 is expensive.
+Read it once through before printing anything. Total print run is **996 pages of course text** plus roughly 120 pages of forms and documents, so a mistake found on page 900 is expensive.
 
 ---
 
@@ -47,11 +47,17 @@ If you decide to mail without them, that is a legitimate risk to take knowingly.
 | 13 | Instructor/Answer Key **Form B** | ~28 | Double-sided OK |
 | 14 | Login instructions | 2 | **Single-sided** — you write credentials on it by hand |
 | 15 | **RE 311** official sample + the specimen field map | ~4 | Single-sided |
-| **4** | **The full printed course text** | **~280–300** | **Double-sided, bound separately** |
+| **4** | **The full printed course text** — already built as a PDF | **332 / 330 / 334** | **Double-sided, bound separately** |
 
-**Course text page counts:** Principles ~280 · Practice ~296 · Mortgage ~276.
+**The course texts are already built** as print-ready PDFs at `california/print/` — cover, publication page, table of contents and all fifteen assignments, in order. Send these to the printer as they are.
 
-Bind each course text as its own volume with a **cover page**, a **publication page** (title; author StateCourse LLC; copyright 2026; edition 1.0), and a **table of contents** at the front. Then write the finished page count into RE 313's "Pages" field — that field cannot be filled until the volume exists.
+| Course | File | Pages |
+|---|---|---:|
+| Real Estate Principles | `ca-real-estate-principles-45-v1-course-text.pdf` | **332** |
+| Real Estate Practice | `ca-real-estate-practice-45-v1-course-text.pdf` | **330** |
+| Mortgage Loan Brokering and Lending | `ca-mortgage-loan-brokering-lending-45-v1-course-text.pdf` | **334** |
+
+Each PDF already contains the cover page, publication page and table of contents, so the printer needs no instructions beyond **double-sided, bound or spiral-bound, one volume per course**. The page counts are already written into each course's RE 313 sheet.
 
 ### Administrative section — print ONE set, not three
 
@@ -117,7 +123,6 @@ Sign in **blue ink**, so an original is distinguishable from a photocopy at a gl
 | Public contact email | RE 306 item 6; RE 313 — **use an address you actually monitor**; DRE deficiency notices go there |
 | Course fees | RE 313 — must match exactly what your enrollment flow charges |
 | Refund/cancellation policy | RE 313 — must match exactly the policy version your enrollment flow presents |
-| Course text page count | RE 313 "Pages" — after binding |
 | Regulator and sample student credentials | Login instructions sheet, each course |
 
 ---

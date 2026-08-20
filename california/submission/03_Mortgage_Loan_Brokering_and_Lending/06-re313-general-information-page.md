@@ -32,7 +32,7 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | TEXTBOOK / WORKBOOK / OUTLINE — Title | *Mortgage Loan Brokering and Lending — StateCourse LLC California Course Text* |
 | — Author(s) | StateCourse LLC |
 | — Copyright Date | 2026 |
-| — Pages | *(enter the final bound page count of the printed course text)* |
+| — Pages | **334** — the bound volume at `california/print/`; regenerate and re-check if any lesson changes |
 | — Edition | 1.0 |
 | REFUND/CANCELLATION POLICY | *(enter at signing — must be the same policy version the enrollment flow presents and records. See the note below.)* |
 | FINAL EXAMINATION CRITERIA — Number of questions | **100** |

@@ -2,7 +2,7 @@
 
 ## Buyer representation and property selection
 
-**Course version:** 1.0 development draft
+**Course version:** 1.0 submission draft
 **Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
