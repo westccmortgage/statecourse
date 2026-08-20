@@ -111,7 +111,10 @@ export const STATE_PRICING = Object.freeze([
   }),
   state("OK", "Oklahoma", 90, 299, 399, BUILD_STATUS.BUILT, { marketRange: "$299–$829" }),
   state("WA", "Washington", 90, 299, 399, BUILD_STATUS.RESEARCHED, { marketRange: "$379–$785" }),
-  state("PA", "Pennsylvania", 75, 299, 399, BUILD_STATUS.RESEARCHED, { marketRange: "$252–$685" }),
+  state("PA", "Pennsylvania", 75, 299, 399, BUILD_STATUS.BUILT, {
+    marketRange: "$252–$685",
+    composition: "Real Estate Fundamentals (30 hours / 2 credits) plus Real Estate Practice (45 hours / 3 credits) — the two courses 49 Pa. Code § 35.272(b)(2) names by title. NOTE: the regulatory minimum in § 35.272(a)(2) is four credits, or 60 hours; 75 exceeds it by one credit"
+  }),
   state("NC", "North Carolina", 75, 299, 399, BUILD_STATUS.BUILT, {
     marketRange: "$299–$549",
     composition: "One 75-hour Broker Prelicensing Course following the Commission's sixteen Syllabus sections — 72.0 instructional hours plus the 3.0-hour end-of-course examination, which the Commission counts INSIDE the 75"
