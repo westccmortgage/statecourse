@@ -71,7 +71,7 @@ would rather you judge the actual material.
 Thank you for considering it. I am happy to talk by phone if that is easier.
 
 Anatoliy Kanevsky
-Founder, state course LLC
+Founder, StateCourse LLC
 California Real Estate Broker, DRE #01385024
 [phone] · [email]
 

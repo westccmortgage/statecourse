@@ -1,6 +1,6 @@
 # Course dossier — Mortgage Loan Brokering and Lending
 
-**Provider:** state course LLC (registered name; California registration pending)
+**Provider:** StateCourse LLC (California domestic LLC, CA SoS file B20260376786, filed 18 August 2026)
 **Course:** Mortgage Loan Brokering and Lending
 **Course identifier:** `ca-mortgage-loan-brokering-lending-45`, version 1.0
 **Instruction hours:** 45

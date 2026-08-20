@@ -1,5 +1,13 @@
 # California DRE statutory/pre-license course submission — requirements and gap analysis
 
+> **Superseded for filing purposes.** The regulator-ready package is at `california/submission/`, and
+> its `README.md` is the current index. This document is retained as the analysis history that
+> produced it; where the two disagree, the package controls.
+>
+> Resolved since this was written: RE 311, RE 313 and RE 206E are in hand; the fee is $500 per
+> course ($1,500 total); the entity is a California domestic LLC; RE 304 is not required;
+> BPPE is exempt under EDC § 94874(d)(2)(A); RE 306 item 15B checks both boxes.
+
 **Sources:** the official DRE forms committed in `california/dre-sources/`, supplied by the owner on
 August 18, 2026. Every requirement below is taken from those documents; nothing here is inferred from
 secondary sources.

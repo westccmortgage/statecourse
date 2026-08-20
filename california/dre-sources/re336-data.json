@@ -1,5 +1,5 @@
 {
-  "_note": "Input for scripts/fill-re336.mjs. legalName is the sponsoring entity's exact registered name. The DRE applicant is StateCourse LLC, a California limited liability company; its registration with the California Secretary of State was in process as of 2026-08-18 and no entity number has been issued yet. Fill californiaEntityNumber and californiaRegistrationDate from the filed record before signing, and do not represent the entity as registered until the Secretary of State certificate is in hand. The Wyoming entity 'state course LLC' (Certificate of Organization filed 2026-08-16) is retained for a separate future purpose and is NOT the DRE applicant. sponsorId stays empty until DRE assigns one.",
+  "_note": "Input for scripts/fill-re336.mjs. The DRE applicant is StateCourse LLC, a California domestic limited liability company formed 18 August 2026, Secretary of State file number B20260376786. sponsorId stays empty until DRE assigns one; it must never be invented. The Wyoming entity 'state course LLC' is NOT the DRE applicant and is retained for a separate future purpose.",
   "provider": {
     "legalName": "StateCourse LLC",
     "sponsorId": "",
@@ -7,11 +7,16 @@
     "city": "Redondo Beach",
     "state": "CA",
     "zip": "90277",
+    "principalOfficeStreet": "150 E Olive Avenue, Suite 112",
+    "principalOfficeCity": "Burbank",
+    "principalOfficeState": "CA",
+    "principalOfficeZip": "91502",
+    "website": "https://statecourse.com",
     "formationState": "CA",
-    "formationDate": "",
-    "californiaEntityNumber": "",
-    "californiaRegistrationStatus": "registration in process as of 2026-08-18; certificate not yet issued",
-    "californiaRegistrationDate": ""
+    "formationDate": "2026-08-18",
+    "californiaEntityNumber": "B20260376786",
+    "californiaRegistrationStatus": "California domestic LLC, Articles of Organization filed and stamped by the California Secretary of State",
+    "californiaRegistrationDate": "2026-08-18"
   },
   "primaryContact": {
     "name": "Kanevsky, Anatoliy",
@@ -23,7 +28,8 @@
   "instructor": {
     "name": "Kanevsky, Anatoliy",
     "licenseNumber": "01385024",
-    "heldCaliforniaLicense": true
+    "heldCaliforniaLicense": true,
+    "approvalStatus": "Instructor approval pending DRE review. Not a DRE-approved instructor."
   },
   "courses": [
     "Real Estate Principles",
@@ -34,6 +40,6 @@
     "legalName": "state course LLC",
     "formationState": "WY",
     "formationDate": "2026-08-16",
-    "role": "Not the DRE applicant. Retained for a separate future purpose; name and status to be changed at that time."
+    "role": "Not the DRE applicant. Retained for a separate future purpose."
   }
 }

@@ -1,6 +1,6 @@
 # Course dossier — Real Estate Principles
 
-**Provider:** state course LLC (registered name; California registration pending)
+**Provider:** StateCourse LLC (California domestic LLC, CA SoS file B20260376786, filed 18 August 2026)
 **Course:** Real Estate Principles
 **Course identifier:** `ca-real-estate-principles-45`, version 1.0
 **Instruction hours:** 45

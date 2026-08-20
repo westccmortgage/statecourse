@@ -45,7 +45,7 @@ Attn: Education Section
 651 Bannon Street, STE 504
 Sacramento, CA 95811
 
-**Re: Certification of curriculum equivalence — [Course Title], submitted by state course LLC**
+**Re: Certification of curriculum equivalence — [Course Title], submitted by StateCourse LLC**
 
 To the Department:
 
@@ -53,7 +53,7 @@ I am [Name], [title] at [Institution], where I teach [course name(s)] in the [de
 I have taught this subject for [duration]. [Optional: relevant licensure, designations, or industry
 experience.]
 
-At the request of state course LLC, I have reviewed the curriculum for its proposed
+At the request of StateCourse LLC, I have reviewed the curriculum for its proposed
 statutory pre-license course, **[Course Title]**, consisting of [15] lesson assignments totaling
 [45] hours of instruction. My review covered the course outline, the learning objectives for each
 lesson assignment, the instructional content, the time allocation, and the assessment design.
