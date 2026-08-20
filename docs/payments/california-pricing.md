@@ -1,5 +1,8 @@
 # California pricing and products
 
+> Superseded in part by `docs/payments/national-pricing.md`, which sets pricing for all
+> thirteen states. California's own numbers below are unchanged and remain correct.
+
 **Decided:** 2026-08-20 · **Status:** prices live in the Stripe sandbox; nothing is sellable, because no course is approved.
 
 ## The three products
