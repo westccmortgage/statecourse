@@ -8,6 +8,8 @@
 
 | State | Hours | Required Education | Complete Path | Market today |
 |---|---:|---:|---:|---|
+| Alaska | 40 | $299 | $399 | $385–$395 |
+| Michigan | 40 | $199 | $299 | $135–$499 |
 | Florida | 63 | $149 | $249 | $99–$448 |
 | Virginia | 60 | $199 | $299 | $239–$519 |
 | Maine | 55 | $299 | $399 | $349–$629 |
@@ -36,11 +38,11 @@ Our registry recorded `prelicense_hours: 90`. That field is correct as far as it
 
 **Consequence for the bundle:** `SC-AZ-EDU` must grant **two** courses. Any implementation that assumes one course per state gets Arizona wrong.
 
-### 2. Alaska and Michigan are built and unpriced
+### 2. Alaska and Michigan — priced 2026-08-20
 
-Both have complete curricula and drafted submission packages — 40 hours each — and neither appears in the pricing table. They are recorded in `PRICING_GAPS`, and a test fails if any state in development is neither priced nor listed there, so this cannot be quietly forgotten.
+Both were built and unpriced; both now have prices, and `PRICING_GAPS` is empty. The test that fails when a state in development has neither a price nor a gap entry stays, because the next state built lands there until someone prices it.
 
-**A price is needed for both.** At 40 hours they sit below Maine's 55, but Alaska is a very small market and Michigan a large competitive one, so they should not be priced the same as each other.
+At the same 40 hours they are priced differently on purpose. **Alaska $299** against a market near $390 — a small market with few providers. **Michigan $199** against a $135–$499 spread — a large competitive market, priced in the middle of it. Hours alone would have made them identical and both wrong.
 
 ### 3. Florida and Texas are priced but not researched
 

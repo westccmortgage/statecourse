@@ -25,11 +25,13 @@ Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds 
 
 ## State product structure
 
-27 products, two per state plus the California single course, created 2026-08-20 by
+31 products, two per state plus the California single course, created 2026-08-20 by
 `scripts/stripe-setup-bundles.mjs` from `config/national-pricing.mjs`.
 
 | State | SC-*-EDU | SC-*-COMPLETE |
 |---|---:|---:|
+| Alaska | $299 | $399 |
+| Michigan | $199 | $299 |
 | Florida | $149 | $249 |
 | Virginia | $199 | $299 |
 | Maine | $299 | $399 |

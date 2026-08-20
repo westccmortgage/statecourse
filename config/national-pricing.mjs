@@ -43,6 +43,18 @@ const state = (code, name, hours, edu, complete, status, notes = {}) => Object.f
 
 export const STATE_PRICING = Object.freeze([
   /* Tier 1 — lower-hour states, 40–65 hours */
+  state("AK", "Alaska", 40, 299, 399, BUILD_STATUS.BUILT, {
+    marketRange: "$385–$395",
+    composition: "One 40-hour salesperson prelicense course, delivered as correspondence under 12 AAC 64.430",
+    /* Priced well above Michigan at the same hour count: a small market with few providers,
+       where approved education sits near $390. Hours alone would price this wrong. */
+    note: "Small market, few providers — priced on market value rather than on hours"
+  }),
+  state("MI", "Michigan", 40, 199, 299, BUILD_STATUS.BUILT, {
+    marketRange: "$135–$499",
+    composition: "One 40-hour salesperson prelicensure course, including the 4 hours of civil rights law and equal opportunity in housing MCL 339.2504 requires",
+    note: "Large, competitive market with a wide spread — priced in the middle of it"
+  }),
   state("FL", "Florida", 63, 149, 249, BUILD_STATUS.UNRESEARCHED, {
     hoursSource: "market research only; Florida rules have not been read from primary sources",
     marketRange: "$99–$448"
@@ -99,10 +111,9 @@ export const STATE_PRICING = Object.freeze([
    left to be noticed, because an unpriced built course is a finished product that cannot be
    sold for a reason nobody wrote down. */
 export const PRICING_GAPS = Object.freeze([
-  Object.freeze({ code: "AK", name: "Alaska", requiredHours: 40, buildStatus: BUILD_STATUS.BUILT,
-    reason: "Curriculum complete, submission package drafted. No price decided." }),
-  Object.freeze({ code: "MI", name: "Michigan", requiredHours: 40, buildStatus: BUILD_STATUS.BUILT,
-    reason: "Curriculum complete, submission package drafted. No price decided." })
+  /* Empty as of 2026-08-20: Alaska and Michigan were the two built states without a price
+     and both are now priced. The list stays, and the test that reads it stays, because the
+     next state built will land here until someone prices it. */
 ]);
 
 /* Neither exists in any state. The completePath tier cannot be delivered until they do. */
