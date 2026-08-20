@@ -1,0 +1,425 @@
+# Colorado Real Estate Law and Practice — Module 04
+
+## Real estate finance and settlement
+
+**Course:** Real Estate Law and Practice (48 classroom hours) · **Instructional hours: 12.0** of 48.0
+**Commission outline topic:** **IV — Real Estate Finance and Settlement**, allocated **12 hours**
+**Course version:** 1.0 submission draft
+**Regulatory status:** Development. Not approved. No Colorado qualifying education hours are available.
+
+> ### What the Commission's outline puts in this topic
+>
+> | Sub-topic | Delivered in |
+> |---|---|
+> | **A.** Financing components — **1. Instruments** (notes, mortgages, **contract for deed (land contract)**, deeds of trust); **2. Sources** (primary market, secondary market, seller financing); **3. Loan types**; **4. Financing concepts, terminology and obligations** | Parts A–D |
+> | **B.** Lender requirements | Part E |
+> | **C.** Settlement/closing | Part F |
+> | **D.** Settlement documents (e.g. title review, **RESPA**) | Part G |
+> | **E.** Financing costs / property taxation proration calculations and other closing cost | Part H |
+>
+> **This is the national finance module.** The **Closings** course — 24 hours, of which the Commission
+> allocates **16 to the preparation of a minimum of eight closing problems** — is where Colorado practice is
+> taught, and this module points forward to it rather than duplicating it.
+
+## Learning objectives
+
+1. Distinguish the note from the security instrument and say what each does.
+2. Distinguish a mortgage, a deed of trust and a contract for deed by who holds what.
+3. Distinguish the primary and secondary mortgage markets and name what the secondary market does.
+4. State the principal loan types and what distinguishes each.
+5. Calculate loan-to-value, points, and a simple interest figure from given data.
+6. State what a lender ordinarily requires and what underwriting looks at.
+7. State what happens at settlement and what a broker's role is and is not.
+8. Prorate a shared item across a closing date using a stated convention.
+
+---
+
+## A. Instruments
+
+### A.1 The note and the security instrument are two documents
+
+| Document | What it does |
+|---|---|
+| **Promissory note** | The borrower's **promise to repay**. It creates the **debt** |
+| **Security instrument** | Pledges the property as **security** for that promise. It creates the **lien** |
+
+**Two instruments, two functions.** A release of one does not by itself release the other, and a borrower
+who assumes otherwise has assumed something expensive.
+
+**What a note states:** principal, interest rate, payment amount and schedule, maturity, and the
+provisions the parties negotiated — prepayment, late charges, acceleration, and default.
+
+### A.2 Mortgage, deed of trust, and contract for deed
+
+| Instrument | Parties | Who holds what |
+|---|---|---|
+| **Mortgage** | Mortgagor (borrower), mortgagee (lender) | Borrower holds title; lender holds a **lien** |
+| **Deed of trust** | Borrower, lender (beneficiary), and a **third party trustee** | A **trustee** holds title or a power of sale for the lender's benefit until the debt is satisfied |
+| **Contract for deed (land contract)** | Vendor (seller), vendee (buyer) | **Seller retains legal title**; buyer takes **equitable title** and possession, and receives the deed when the contract is performed |
+
+**The contract for deed is the one the Commission's outline names explicitly and the one new brokers
+understand least.** The buyer occupies and pays but does **not** hold legal title, so the buyer's position
+depends entirely on the contract's terms and on the law governing forfeiture and foreclosure of such
+contracts.
+
+> **A boundary this module holds, and it matters here more than anywhere else in this course.** **Colorado's
+> foreclosure statutes, its public trustee system, and its law governing contracts for deed were NOT read by
+> this project.** **No Colorado foreclosure procedure, notice, period, cure right, redemption right, or
+> deficiency rule is stated anywhere in this build.**
+>
+> Colorado uses a **public trustee** system that is distinctive among the states. **This course does not
+> describe it**, because the statute establishing it was not read. A broker whose transaction involves a
+> contract for deed, a foreclosure, or a deed of trust in default takes it to counsel — and **Rule 6.2.B**
+> supplies the four routes: decline, obtain the knowledge, obtain assistance, or co-list.
+>
+> The **Contracts and Regulations** outline names **deeds of trust** and **foreclosure** under its Topic
+> V.B, and the **Current Legal Issues** outline names **financing, liens and foreclosures** among its
+> representative areas. Those are the Colorado courses.
+
+**Lien theory and title theory** describe two approaches: under a **lien theory** the borrower holds title
+and the lender holds a lien; under a **title theory** the lender or a trustee holds legal title until the
+debt is satisfied. **Which approach a state follows, and what its process is, is that state's law**, and
+this course states no Colorado answer.
+
+### A.3 Provisions that travel with security instruments
+
+| Provision | Effect |
+|---|---|
+| **Acceleration clause** | On default, the whole balance becomes due |
+| **Alienation (due-on-sale) clause** | On transfer of the property, the lender may call the loan |
+| **Prepayment provision** | Whether, and on what terms, the borrower may pay early |
+| **Subordination** | An agreement placing one lien behind another |
+| **Release / partial release** | Discharge of the lien, in whole or as to part of the property |
+| **Defeasance** | The provision defeating the security interest on full payment |
+
+**The alienation clause is why an assumption needs the lender.** A buyer taking over an existing loan
+ordinarily needs the lender's approval, **and without a written release the seller may remain liable on the
+note.** That continuing liability is the point a broker ensures the seller understands and takes to
+counsel — a release is a legal document and its absence is a legal exposure.
+
+---
+
+## B. Sources
+
+### B.1 The primary mortgage market
+
+Where loans are **originated** — the lenders who deal with borrowers directly: banks, savings
+institutions, credit unions, mortgage bankers and mortgage brokers.
+
+### B.2 The secondary mortgage market
+
+Where existing loans are **bought and sold** after origination. Its function is to give originators
+liquidity: a lender that sells a loan recovers its capital and can lend again.
+
+**Its practical consequence for a borrower** is that the entities buying loans set **underwriting
+standards**, and those standards shape what a borrower is offered long before anyone meets a lender.
+
+**A borrower's loan may be sold and its servicing transferred.** That is ordinary, and it does not change
+the terms of the note.
+
+### B.3 Seller financing
+
+The seller takes back a note secured by the property, or sells on a contract for deed. Named by the
+Commission's outline, and named again by the **Contracts and Regulations** outline's Topic IV note, which
+requires the student's sales contract work to *"include examples of **new financing, loan assumption, and
+owner carry financing.**"*
+
+**"Owner carry" is the Colorado term of art**, and a broker will see it on Commission-approved forms.
+
+---
+
+## C. Loan types
+
+| Type | What distinguishes it |
+|---|---|
+| **Fixed rate** | The note rate does not change for the term |
+| **Adjustable rate** | The rate changes on stated dates by an **index plus a margin**, subject to any **caps** the note provides |
+| **Conventional** | Not insured or guaranteed by a government programme |
+| **FHA-insured** | Insured by the Federal Housing Administration |
+| **VA-guaranteed** | Guaranteed by the Department of Veterans Affairs |
+| **Interest-only** | Payments cover interest for a period; principal is unretired during it |
+| **Balloon** | A payment schedule that does not fully amortise, leaving a lump sum at maturity |
+| **Construction** | Advanced in draws against progress, ordinarily short term |
+| **Blanket** | One loan secured by more than one parcel, ordinarily with a partial release provision |
+| **Wraparound** | A new loan that wraps an existing one, the new lender servicing the underlying debt |
+| **Reverse** | Advances against equity, with repayment deferred |
+| **Home equity** | A loan or line secured by the equity in a property already owned |
+
+**On an adjustable-rate loan the borrower's exposure is the product of four things** — the **index**, the
+**margin**, the **adjustment dates**, and the **caps** — and all four are in the note. That is a
+conversation with the lender.
+
+**The Closings course requires the eight closing problems to use a mix of "cash, owner carry, assumptions
+(FHA, VA and conventional), new loans (FHA, VA and conventional), and a closing involving a multi-family
+property."** This table is the vocabulary that course assumes.
+
+---
+
+## D. Financing concepts, terminology and obligations
+
+### D.1 Amortisation
+
+**Repayment of principal and interest over a term in level payments.** Early payments are mostly interest;
+the principal portion grows with each payment until the balance is retired at maturity.
+
+**Why it matters to a broker:** a seller who has held a loan a few years has retired far less principal
+than they expect, and the payoff figure is rarely what they guess. The number comes from the lender.
+
+**A partially amortising loan leaves a balloon.** A fully amortising loan does not.
+
+### D.2 Loan-to-value ratio
+
+> **LTV = Loan Amount ÷ the LESSER of purchase price or appraised value**
+
+**The "lesser of" is the part that matters when an appraisal comes in below contract price.** The lender
+lends against the lower figure, and the gap becomes the buyer's problem to solve — with more cash, a
+renegotiated price, or a contract that ends on its appraisal contingency.
+
+### D.3 Points
+
+**A discount point is one percent of the LOAN AMOUNT**, paid at closing to reduce the interest rate.
+
+*Worked, with every figure given:* on a **$400,000** purchase with **25 percent** down, the loan is
+**$300,000**. **Two points cost $6,000.** If those points reduce the rate by **0.25 percent**, the first
+year's interest saving is **$300,000 × 0.25% = $750**, so on those figures the points take **eight years**
+of holding to recover.
+
+**Whether that is worth doing depends on how long the borrower keeps the loan**, which is the borrower's
+decision with the lender and their tax adviser. **A broker can do the arithmetic with figures the lender
+supplies. A broker does not tell a borrower which product to take** — §§ 12-10-404(1)(c)(V),
+12-10-405(1)(c)(V) and 12-10-407(2)(b)(II) each require advising the party to obtain expert advice on
+material matters beyond the broker's expertise.
+
+### D.4 Simple interest
+
+> **Interest = Principal × Rate × Time**
+
+*Worked, with every figure given:* **$260,000** at **6.5 percent** for **one month** is
+**$260,000 × 0.065 ÷ 12 = $1,408.33.**
+
+Interest in a mortgage payment is ordinarily paid **in arrears** — the payment made on the first of a month
+covers the interest that accrued the previous month. That fact is the reason for the **prepaid interest**
+line at closing, covered in Part H.
+
+### D.5 Mortgage insurance
+
+**Private mortgage insurance protects the LENDER**, not the borrower, on a higher loan-to-value
+conventional loan, and the borrower pays for it. **FHA loans carry their own mortgage insurance
+premiums.** Borrowers routinely assume the coverage protects them, and correcting that assumption is
+ordinary competent service. **Every rule about when it may be cancelled comes from the lender and from
+federal law this project did not read.**
+
+### D.6 Qualifying
+
+**Underwriting looks at four things:** the borrower's **income**, their **debts**, their **credit**, and
+the **collateral.** **Prequalification** is an informal estimate on stated information; **preapproval**
+involves verification and a conditional commitment. **Neither is a guarantee**, and a broker representing a
+seller has a duty that turns on exactly that: **§ 12-10-404(3)(a)** and **§ 12-10-407(2)(b)(VII)** require
+disclosure of adverse material facts **actually known** concerning the buyer's financial ability to perform.
+
+**No qualifying ratio, credit score, down payment minimum or loan limit is stated in this course**, because
+none was read from a primary source. Those figures come from the lender and change without notice.
+
+---
+
+## E. Lender requirements
+
+What a lender ordinarily requires before funding, and what a broker should expect to see moving:
+
+| Requirement | Why |
+|---|---|
+| **Application and documentation** | Income, assets, employment, identity |
+| **Appraisal** | To establish the value the loan is measured against |
+| **Title work** | Commitment and, ordinarily, a **lender's policy** of title insurance |
+| **Survey or ILC**, where required | To confirm boundaries and improvements |
+| **Hazard insurance** | The lender's collateral must be insured |
+| **Flood determination** and, where required, flood insurance | Statutory and programme requirements |
+| **Payoff and lien releases** | So the lender's lien takes the agreed priority |
+| **Closing instructions** | What the closing entity must do before funds are released |
+
+**Colorado's Improvement Location Certificate** is named by the **Contracts and Regulations** outline at
+Topic V.D, alongside land descriptions and surveys.
+
+**A lender's policy of title insurance insures the LENDER's interest.** A buyer who wants their own
+coverage needs an **owner's policy**, and that is a decision the buyer makes with the title company.
+
+---
+
+## F. Settlement and closing
+
+**What happens at a closing:** the deed is delivered; the consideration is paid; the loan is funded; liens
+to be discharged are paid and released; prorations are settled; the closing statement is signed; and the
+deed and security instrument are recorded.
+
+**Who conducts it varies**, and Colorado contemplates both: the **Closings** outline's Topic I.A
+distinguishes a **broker prepared closing** from a **title company prepared closing**, and states *"the
+**individual responsibility of licensee holding listing or buyer brokerage agreement**"* separately from
+both.
+
+> **This is the point at which this module stops and the Closings course begins.** That course carries 24
+> hours, of which the Commission allocates:
+>
+> | Closings course topic | Hours |
+> |---|---|
+> | I. Broker's responsibility relating to closing | 1.0 |
+> | II. Introduction to a 6-column worksheet | 2.0 |
+> | III. Closing to a prepared contract | 4.0 |
+> | IV. Legal documents | 1.0 |
+> | **V. Preparation of a minimum of 8 closing problems** | **16.0** |
+>
+> **Two-thirds of that course is the eight problems**, and its outline requires *"**ALL STUDENTS MUST
+> SUCCESSFULLY COMPLETE A WRITTEN EXAMINATION COVERING ALL MAJOR TOPIC AREAS OF THIS OUTLINE.**"*
+
+**One Colorado rule about closing was read and belongs here.** **Rule 6.19** governs closing responsibility
+and **Good Funds**; the Closings outline names **Good Funds** at its Topic I.E, and names **withholding**
+for a **non-resident seller** and under the **Foreign Investor Real Property Tax Act** at Topic I.D. **The
+withholding statutes themselves were NOT read by this project**, and **no rate, threshold, exemption or
+form is stated anywhere in this build.**
+
+**What a broker does at closing:** review the closing statement against the contract — confirming price,
+deposit, compensation and prorations — and **ask about anything that does not match.** What a broker does
+**not** do is opine on the legal effect of documents or on tax consequences. **§ 12-10-403(4)(c)** requires
+the broker to advise the parties that the forms **have important legal consequences** and that they
+**should consult legal counsel before signing.**
+
+---
+
+## G. Settlement documents
+
+| Document | What it is |
+|---|---|
+| **Title commitment** | The title company's undertaking to insure on stated terms — **its exceptions schedule is where its substance lives** |
+| **Deed** | The instrument of conveyance |
+| **Note and security instrument** | The debt and the lien |
+| **Closing statement** | The accounting of the transaction between the parties |
+| **Payoff statements and lien releases** | What discharges existing liens |
+| **Escrow or closing instructions** | What the closing entity is directed to do |
+| **Federal disclosures** | The disclosures required of the lender and the settlement agent |
+
+**RESPA is named by the Commission's outline**, and it is the federal statute governing settlement
+services on covered residential transactions — disclosures, the prohibition on kickbacks and unearned
+fees, and limits on required use of affiliated providers.
+
+> **The RESPA text was NOT read by this project.** **No RESPA disclosure, form, timing requirement, dollar
+> threshold, exemption or penalty is stated anywhere in this build.**
+>
+> **What WAS read is Colorado's rule about it.** **Rule 6.21.A**: *"Brokers and Brokerage Firms **will not
+> pay or receive a referral fee except in accordance with RESPA** and unless a **reasonable cause for
+> payment of the referral fee exists** pursuant to section 12-10-304(1), C.R.S."* **§ 12-10-304 was not
+> read**, and its content is stated nowhere.
+>
+> And **Rule 6.18** requires **affiliated business arrangement disclosures**. Its statutory basis,
+> **§ 12-10-218**, was **not read**, and no requirement from it is stated here.
+>
+> Two more Colorado rules bear directly on money at settlement, and both **were** read in full: **Rule
+> 5.17** requires a broker to obtain the **prior written consent** of the consumer they represent before
+> assessing or receiving **mark-ups or other compensation** for services performed, and to disclose all
+> mark-ups paid by any customer; and **§ 12-10-410(6)** requires that, **prior to entering into a brokerage
+> or listing agreement or a contract to buy, sell or lease**, *"**the identity of those parties, persons, or
+> entities paying compensation or commissions to any broker shall be disclosed to the parties to the
+> transaction.**"*
+
+---
+
+## H. Prorations and closing costs
+
+### H.1 The method
+
+Every proration is the same three steps:
+
+1. **Find the daily (or monthly) rate** — the annual amount divided by the number of days or months the
+   convention uses.
+2. **Count the periods on each side of the closing**, using the convention the contract states.
+3. **Multiply**, and enter the result as a credit to one party and a debit to the other.
+
+**The convention is stated in the contract**, and **this course prescribes none.** A **360-day year with
+30-day months** ("statutory" or "banker's" year) and a **365-day year with actual days** are both in use,
+and **which party is charged for the day of closing** is likewise a matter of the contract.
+
+### H.2 Worked, with every figure and convention given
+
+> **Prepaid taxes.** Annual taxes of **$3,600** were paid in full by the seller on **1 January**. Closing
+> is **1 October**. Using a **360-day year with 30-day months**, and charging the **buyer** for the day of
+> closing:
+>
+> Daily rate **$3,600 ÷ 360 = $10.00**. The buyer holds **90 of the 360** (October, November, December).
+> **Buyer's share = 90 × $10.00 = $900**, credited to the seller and debited to the buyer.
+
+> **Taxes paid in arrears.** Annual taxes of **$3,600** are payable **after** the year they cover, and
+> closing is again **1 October** on the same convention. The **seller** owes for the **270 days** they held
+> — **270 × $10.00 = $2,700** — credited to the **buyer**, who will pay the bill.
+
+**Whether a given item is prepaid or in arrears decides the direction of the entry**, and getting the
+direction backwards is the classic error. **How Colorado property taxes are levied, assessed and billed was
+NOT read by this project, and no Colorado tax convention, rate, assessment ratio or due date is stated
+anywhere in this build.**
+
+### H.3 Items ordinarily prorated or entered
+
+| Item | Ordinarily |
+|---|---|
+| **Property taxes** | Prorated |
+| **Rents and security deposits** | Prorated / transferred |
+| **Homeowners association assessments** | Prorated |
+| **Interest on an assumed loan** | Prorated |
+| **Prepaid interest on a new loan** | Charged to the buyer from funding to the end of the month |
+| **Insurance** | Prorated where a policy is assumed; otherwise a new premium |
+| **Utilities and service contracts** | Prorated or transferred |
+
+### H.4 Debit and credit, in one sentence each
+
+**A debit is what a party pays. A credit is what a party receives or is credited toward what they owe.**
+The purchase price is a **debit to the buyer** and a **credit to the seller**; earnest money already paid
+is a **credit to the buyer**; a new loan is a **credit to the buyer**; and a lien to be paid off is a
+**debit to the seller.**
+
+**The six-column worksheet the Closings course teaches is this logic in a grid**, and the Record Keeping
+and Trust Accounts course then requires the student to work *"from a sample contract and **6-column
+settlement worksheet**"* to create journal and ledger entries and reconcile them.
+
+### H.5 Seller's net — the calculation clients ask for most
+
+*Worked, with every figure given:* a seller wants **$282,000** in hand after a **6 percent** commission
+and **$3,000** of other closing costs.
+
+$282,000 + $3,000 = **$285,000**, which is **94 percent** of the price, so the price is
+**$285,000 ÷ 0.94 = $303,191.49.**
+
+**The commission is a percentage of the PRICE, not of the net.** That is why the net plus costs is
+**divided by the complement of the rate**, and why multiplying the net by the rate gives the wrong answer.
+
+**The Practical Applications outline names this at its Topic VI.A.1.c** — *"Calculating seller's net
+proceeds & buyers cash to close"* — and that course applies it to a live transaction.
+
+---
+
+## Module 04 engagement check
+
+Eleven items — one applied, five engagement, five remediation. The **80 percent** engagement threshold and
+the **100 percent** applied threshold are **StateCourse standards**. The Commission's outline requires that
+*"**testing is required** to establish individual's satisfactory completion of the statutory
+requirements"*, and **these items are not that test.**
+
+---
+
+## Instructor source note for Module 04
+
+Written to the **Commission's Real Estate Law and Practice qualifying education outline, approved April 1,
+1998**, Topic IV and its sub-topics A through E, in the outline's own order and using the outline's own
+sub-item names, including **"contract for deed (land contract)"** and **"RESPA"**. The hour figure is the
+Commission's.
+
+The Colorado provisions cited — **§§ 12-10-403(4), 12-10-404(1)(c)(V) and (3)(a), 12-10-405(1)(c)(V),
+12-10-407(2)(b)(II) and (VII), and 12-10-410(6)**, and **Rules 5.17, 6.2, 6.19 and 6.21.A** — are
+transcribed from **C.R.S. Title 12 Article 10** and **4 CCR 725-1**, read on 2026-08-20.
+
+**Not read, and therefore the source of nothing here:** **RESPA, TILA, TRID and ECOA**; Colorado's
+**foreclosure statutes and public trustee provisions**; its law on **contracts for deed**; its **property
+tax, assessment and levy** statutes; the **non-resident seller withholding** provisions and **FIRPTA**;
+**C.R.S. §§ 12-10-218 and 12-10-304**; and **every Commission-approved form**, including the closing
+instructions and settlement forms.
+
+**No qualifying ratio, credit score, down payment minimum, loan limit, interest rate, mortgage insurance
+threshold, withholding rate, tax rate, assessment ratio, proration convention, RESPA requirement, penalty
+or form provision is stated in this module.** Every figure used in a worked calculation is supplied inside
+that calculation as a given, and the arithmetic is shown so a reviewer can check it.
