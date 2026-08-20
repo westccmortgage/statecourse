@@ -101,7 +101,10 @@ export const STATE_PRICING = Object.freeze([
     note: "Wide spread with a low floor — priced with Virginia at the same hour count"
   }),
   /* Tier 2 — mid-hour states, 66–100 hours */
-  state("WI", "Wisconsin", 72, 249, 349, BUILD_STATUS.RESEARCHED, { marketRange: "$279–$679" }),
+  state("WI", "Wisconsin", 72, 249, 349, BUILD_STATUS.BUILT, {
+    marketRange: "$279–$679",
+    composition: "One 72-hour salesperson pre-license course covering the nineteen topics REEB 25.033 lists"
+  }),
   state("MO", "Missouri", 72, 249, 349, BUILD_STATUS.BUILT, {
     marketRange: "$298–$582",
     composition: "48-hour pre-exam course plus 24-hour practice course"

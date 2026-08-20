@@ -3,8 +3,9 @@
 ## Hours 28–39 · Real estate contracts and the Board-approved forms
 
 **Board topic covered:** REEB 25.033(8) Real estate contracts
-**Clock hours:** 12 — the largest single allocation in the course · **Hour allocation:** a StateCourse
-proposal for Board review; REEB 25.033 allocates no hours among its nineteen topics.
+**Clock hours:** 12 — the largest single allocation in the course.
+**Hour allocation:** a StateCourse proposal for Board review; REEB 25.033 allocates no hours
+among its nineteen topics.
 **Course version:** 1.0 submission draft
 **Regulatory status:** Development. Not approved. No Wisconsin pre-license credit is available.
 
