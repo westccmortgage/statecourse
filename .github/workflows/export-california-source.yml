@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   export:
@@ -30,3 +30,14 @@ jobs:
           path: california/
           include-hidden-files: true
           retention-days: 1
+
+      - name: Record successful private export run
+        if: github.event_name == 'push'
+        run: |
+          mkdir -p .github/generated
+          printf 'California private export completed for %s\n' "$GITHUB_SHA" > .github/generated/california-export-ran.txt
+          git config user.name "StateCourse Repository Automation"
+          git config user.email "westccmortgage@gmail.com"
+          git add .github/generated/california-export-ran.txt
+          git commit -m "Record California source export run" || exit 0
+          git push
