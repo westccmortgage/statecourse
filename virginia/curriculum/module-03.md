@@ -33,7 +33,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 9 — Legal descriptions, plats, and surveys
+## Hour 09 — Legal descriptions, plats, and surveys
 
 ## 9.1 Why the address will not do
 
@@ -106,7 +106,7 @@ opining on where the line is falls outside the licence.
 Vertical descriptions matter too. Condominium units are described by reference to a recorded
 condominium plat and by elevation, because the unit is a volume of space, not a footprint.
 
-## Hour 9 engagement check
+### Hour 09 engagement check
 
 **Question.** A deed's description calls for a course of "S 12° 00′ 00″ W, 320 feet to a large oak
 tree at the edge of the branch". A modern survey finds the oak stump 344 feet from the prior point.
@@ -120,7 +120,7 @@ the licensee's job is to get it in front of the surveyor and the title examiner,
 
 ---
 
-# Hour 10 — Deeds and voluntary transfer
+## Hour 10 — Deeds and voluntary transfer
 
 ## 10.1 What a deed does
 
@@ -215,7 +215,7 @@ warranty deed is legal advice.
 A licensee who is asked "which deed should we use?" has one correct answer: *that is a question for
 your attorney or the settlement agent, and here is how to reach them.*
 
-## Hour 10 engagement check
+### Hour 10 engagement check
 
 **Question.** A grantor signs and acknowledges a deed, puts it in a safe deposit box, and tells no
 one. The grantor dies two years later and the deed is found. Did title pass? What element decides?
@@ -228,7 +228,7 @@ by intestate succession.
 
 ---
 
-# Hour 11 — Title search, chain of title, and notice
+## Hour 11 — Title search, chain of title, and notice
 
 ## 11.1 The public records and what they hold
 
@@ -306,7 +306,7 @@ attorney's **title opinion** is a legal opinion on the state of title based on t
 Together they were the traditional method, and title insurance largely supplanted them because an
 opinion compensates only if the attorney was negligent, whereas a policy pays on the risk.
 
-## Hour 11 engagement check
+### Hour 11 engagement check
 
 **Question.** A buyer walks a property twice and both times sees a family living in the detached
 guest cottage. The seller says they are "just friends staying for a while", and no lease is
@@ -321,7 +321,7 @@ must not accept or relay the seller's characterisation as though it settled the 
 
 ---
 
-# Hour 12 — Title defects and title insurance
+## Hour 12 — Title defects and title insurance
 
 ## 12.1 What title insurance is
 
@@ -401,7 +401,7 @@ establishes succession. A **quiet title** action resolves what nothing else will
 and the deadline the contract sets for title objections is why Schedule B-I must be read the day it
 arrives.
 
-## Hour 12 engagement check
+### Hour 12 engagement check
 
 **Question.** A commitment lists, under Schedule B-II, "rights of parties in possession" and
 "matters that an accurate survey would disclose". After closing the buyer discovers the neighbour's

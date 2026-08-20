@@ -34,7 +34,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 21 — Virginia duties to sellers, buyers, landlords, and tenants
+## Hour 21 — Virginia duties to sellers, buyers, landlords, and tenants
 
 ## 21.1 Five duty sections, one architecture
 
@@ -150,7 +150,7 @@ Four standards appear in these sections and a student should attach each to the 
 - **In writing** — the physical-condition disclosure under § 54.1-2131 B, consent to release
   confidential information, and the brokerage agreement itself.
 
-## Hour 21 engagement check
+### Hour 21 engagement check
 
 **Question.** A listing licensee learns from the seller that the county has approved a plan to widen
 the road in front of the property, and separately observes active water staining on a bedroom
@@ -169,7 +169,7 @@ disclosed to the seller.
 
 ---
 
-# Hour 22 — Virginia brokerage disclosures: dual, designated, limited service
+## Hour 22 — Virginia brokerage disclosures: dual, designated, limited service
 
 ## 22.1 Disclosure of brokerage relationship — § 54.1-2138
 
@@ -286,7 +286,7 @@ company**.
 And **§ 54.1-2138.2** requires a licensee to **disclose an ownership interest in specific real
 property**. Buying or selling for one's own account is permitted; concealing it is not.
 
-## Hour 22 engagement check
+### Hour 22 engagement check
 
 **Question.** A firm's supervising broker assigns Licensee A to the seller and Licensee B to the
 buyer in the same residential transaction. The buyer asks Licensee B whether the seller would take
@@ -305,7 +305,7 @@ than when the offer is presented to the seller.
 
 ---
 
-# Hour 23 — Virginia licensing structure and regulatory authority
+## Hour 23 — Virginia licensing structure and regulatory authority
 
 ## 23.1 The Board and the Department
 
@@ -427,7 +427,7 @@ fund on that licensee's account.
 The Fund is a consumer-protection mechanism and, for the licensee, a reminder that the profession
 collectively pays for individual misconduct.
 
-## Hour 23 engagement check
+### Hour 23 engagement check
 
 **Question.** A newly licensed salesperson joins a firm whose supervising broker lives 70 miles from
 the branch office where the salesperson works. The salesperson is given an unlicensed assistant and
@@ -445,7 +445,7 @@ licence (B 4), and retain the supervision records for **three years** (B 7).
 
 ---
 
-# Hour 24 — Virginia standards of conduct and discipline
+## Hour 24 — Virginia standards of conduct and discipline
 
 ## 24.1 Where the disciplinary power comes from
 
@@ -554,7 +554,7 @@ the complainant to argue; preserve every record, and change nothing; respond wit
 and obtain counsel. **18VAC135-20-240** requires provision of information to the Board — failing to
 respond is itself a violation.
 
-## Hour 24 engagement check
+### Hour 24 engagement check
 
 **Question.** A salesperson receives three written offers and presents only two, believing the third
 to be too low to be worth the seller's time. The supervising broker had written policies, reviewed

@@ -32,7 +32,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 45 — Real estate investment fundamentals
+## Hour 45 — Real estate investment fundamentals
 
 ## 45.1 What an investor is buying
 
@@ -116,7 +116,7 @@ Under **§ 54.1-2131 A 4** and **§ 54.1-2132 A 5** the duty is ordinary care, a
 matter. The professional sentence is: *here are the figures and where each came from; here is what I
 could not verify; take this to your accountant and your attorney.*
 
-## Hour 45 engagement check
+### Hour 45 engagement check
 
 **Question.** An investor is considering a property producing $88,000 NOI at a price of $1,200,000,
 with $300,000 down and $900,000 borrowed at 7% interest-only. Compute the unleveraged return and the
@@ -130,7 +130,7 @@ rate of 7.33% would make it neutral and anything above would make it negative.
 
 ---
 
-# Hour 46 — Investment and tax calculations
+## Hour 46 — Investment and tax calculations
 
 ## 46.1 Before-tax cash flow
 
@@ -213,7 +213,7 @@ or state what a client will owe.
 
 The rule to carry: **compute the property; refer the person.**
 
-## Hour 46 engagement check
+### Hour 46 engagement check
 
 **Question.** An investor buys for $1,450,000 with $362,500 down plus $21,000 of closing costs. NOI
 is $94,000 and annual debt service is $71,600, of which $66,900 is interest in year one. Compute
@@ -233,7 +233,7 @@ they will owe. That is the accountant's work, and I will put the referral in wri
 
 ---
 
-# Hour 47 — Feasibility, market analysis, and the investment decision
+## Hour 47 — Feasibility, market analysis, and the investment decision
 
 ## 47.1 What feasibility asks
 
@@ -318,7 +318,7 @@ The licensee's presentation should show: the base case with every assumption sou
 case; what could not be verified; and the questions that remain open. It should not show a
 recommendation to invest, a forecast of appreciation, or a projected return described as expected.
 
-## Hour 47 engagement check
+### Hour 47 engagement check
 
 **Question.** A client is looking at a 20-unit building at $1,375 per unit, 5% vacancy, $138,000
 operating expenses, offered at $3,600,000. Compute NOI, the implied cap rate, and the value if the
@@ -339,7 +339,7 @@ conclusion is theirs and their accountant's, not mine.
 
 ---
 
-# Hour 48 — Residential construction, property condition, and development risk
+## Hour 48 — Residential construction, property condition, and development risk
 
 ## 48.1 Why a licensee needs construction vocabulary
 
@@ -448,7 +448,7 @@ the **Chesapeake Bay Preservation Act** resource protection areas that § 55.1-7
 purchasers to investigate; access and any VDOT entrance permit; and the association documents and
 the developer's remaining control.
 
-## Hour 48 engagement check
+### Hour 48 engagement check
 
 **Question.** At a showing you observe a diagonal crack in a basement wall about four feet long, fresh
 water staining below it, and a downspout discharging directly against the foundation at that corner.

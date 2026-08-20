@@ -33,7 +33,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 33 — Real property management
+## Hour 33 — Real property management
 
 ## 33.1 What a property manager is engaged to do
 
@@ -124,7 +124,7 @@ may and may not do. **18VAC135-20-165 3** requires the supervising broker to pro
 supervision over unlicensed individuals. An unlicensed person who negotiates a lease term has
 performed licensed activity, and the broker's exposure is decided by **18VAC135-20-330**.
 
-## Hour 33 engagement check
+### Hour 33 engagement check
 
 **Question.** A manager holds deposits and rents for 40 owners in one escrow account. In March, a
 roof emergency at Owner A's property costs $9,400 and Owner A's ledger holds $3,100. The manager
@@ -142,7 +142,7 @@ threshold and the emergency procedure in advance.
 
 ---
 
-# Hour 34 — Promissory notes, mortgages, and deeds of trust
+## Hour 34 — Promissory notes, mortgages, and deeds of trust
 
 ## 34.1 Two documents, two jobs
 
@@ -240,7 +240,7 @@ On payoff, a **certificate of satisfaction** is recorded. Payment without releas
 record, and an unreleased paid-off deed of trust is one of the most common clouds a title
 examination reveals.
 
-## Hour 34 engagement check
+### Hour 34 engagement check
 
 **Question.** In a Virginia residential purchase, the buyer borrows $340,000 from a bank. Name every
 document created, name each party to the security instrument by its Virginia name, and say which
@@ -256,7 +256,7 @@ recorded. On payoff, a **certificate of satisfaction** must be recorded to relea
 
 ---
 
-# Hour 35 — Default, foreclosure, and lien enforcement
+## Hour 35 — Default, foreclosure, and lien enforcement
 
 ## 35.1 The sequence
 
@@ -340,7 +340,7 @@ jurisdiction, including property acquired later, and it must be satisfied at clo
 **Association assessment liens** are enforced under the Property Owners' Association Act or the
 Condominium Act.
 
-## Hour 35 engagement check
+### Hour 35 engagement check
 
 **Question.** A buyer says, "I want to buy at the trustee's sale — the opening bid is far below
 market and I'll wipe out the other liens." Correct the three assumptions embedded in that sentence.
@@ -356,7 +356,7 @@ is to state those three things and refer the buyer to counsel — not to advise 
 
 ---
 
-# Hour 36 — Conventional, FHA, VA, and USDA mortgage programs
+## Hour 36 — Conventional, FHA, VA, and USDA mortgage programs
 
 ## 36.1 The one rule for this hour
 
@@ -445,7 +445,7 @@ front of them — and a general refusal to consider VA or FHA offers can shade i
 implicate **military status**, a Virginia protected class under § 36-96.3, and into disparate
 treatment on other protected bases.
 
-## Hour 36 engagement check
+### Hour 36 engagement check
 
 **Question.** A buyer says, "my credit is around 600, I have $6,000 saved, I'm an Army veteran, and
 I want a house 20 minutes outside town." Identify which programme categories are worth exploring and

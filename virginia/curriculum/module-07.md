@@ -33,7 +33,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 25 — Virginia escrow, records, advertising, and supervision
+## Hour 25 — Virginia escrow, records, advertising, and supervision
 
 ## 25.1 Escrow — the account itself
 
@@ -144,7 +144,7 @@ the chapter and the regulations under B 5, and must have written policies coveri
 marketing of the brokerage firm and any affiliated real estate teams or business entities** under
 B 2 c. A team's branding is the firm's advertising.
 
-## Hour 25 engagement check
+### Hour 25 engagement check
 
 **Question.** A firm receives a $10,000 earnest money deposit on Friday. The office manager, who is
 unlicensed, deposits it Monday into the firm's operating account "because the escrow account was
@@ -165,7 +165,7 @@ individuals. Whether the broker is disciplined for the manager's act is decided 
 
 ---
 
-# Hour 26 — Federal and Virginia fair housing
+## Hour 26 — Federal and Virginia fair housing
 
 ## 26.1 The federal floor
 
@@ -279,7 +279,7 @@ And under **§ 54.1-2131 A 7** and **§ 54.1-2132 A 8**, compliance with all fai
 regulations applicable to residential transactions is itself a statutory duty owed to the client —
 so a fair housing violation is simultaneously a Real Estate Board matter.
 
-## Hour 26 engagement check
+### Hour 26 engagement check
 
 **Question.** A licensee is asked by a landlord client to "screen out the voucher people" and to
 "keep the building quiet — no kids". A second client, selling their own home privately, asks the
@@ -296,7 +296,7 @@ exemption **does not inure to the benefit of any Real Estate Board licensee rega
 
 ---
 
-# Hour 27 — Disability, accessibility, assistance animals, and housing legislation
+## Hour 27 — Disability, accessibility, assistance animals, and housing legislation
 
 ## 27.1 The two things a disabled person may ask for
 
@@ -386,7 +386,7 @@ have **written procedures and policies giving clear guidance on complying with f
 fair housing laws and regulations.** A licensee should have read their firm's policy, and if the
 firm does not have one, that is itself a supervision failure.
 
-## Hour 27 engagement check
+### Hour 27 engagement check
 
 **Question.** A tenant with a mobility impairment asks a landlord for (a) permission to install a
 ramp at the front entrance and grab bars in the bathroom, and (b) an assigned parking space nearer
@@ -404,7 +404,7 @@ of making it; no fee may be charged for the accommodation itself.
 
 ---
 
-# Hour 28 — Real estate marketing and advertising compliance
+## Hour 28 — Real estate marketing and advertising compliance
 
 ## 28.1 Marketing the property, not the people
 
@@ -498,7 +498,7 @@ Client data collected through a website is subject to privacy obligations and to
 policy; and lead information, once collected, is a record. Hour 50 covers data protection and wire
 fraud, which is where a marketing website becomes a security question.
 
-## Hour 28 engagement check
+### Hour 28 engagement check
 
 **Question.** Audit this social post and list every problem with its source: *"JUST LISTED by the
 Carter Team! Charming 3BR in a quiet, established neighborhood — perfect for empty nesters. No

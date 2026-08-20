@@ -35,7 +35,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 17 — Sales contract structure and risk allocation
+## Hour 17 — Sales contract structure and risk allocation
 
 ## 17.1 A contract is a map of who bears which risk
 
@@ -114,7 +114,7 @@ Initials missing where a change was made. A deposit whose delivery deadline has 
 Those are within the licensee's competence and are exactly what ordinary care under § 54.1-2131 A 4
 requires. **What a clause means, and what a party should do about a breach, are not.**
 
-## Hour 17 engagement check
+### Hour 17 engagement check
 
 **Question.** A ratified contract sets settlement for 30 October, a financing contingency expiring
 15 November, and an inspection period of "ten days from ratification" where ratification occurred
@@ -131,7 +131,7 @@ limits of § 54.1-2101.1.
 
 ---
 
-# Hour 18 — Performance, breach, remedies, and contingencies
+## Hour 18 — Performance, breach, remedies, and contingencies
 
 ## 18.1 What a contingency does
 
@@ -215,7 +215,7 @@ Against each, record **who acts, what document is required, and what happens if 
 Then work backward and set internal reminders several days ahead of each. A deadline discovered on
 the day it falls is a deadline already partly lost.
 
-## Hour 18 engagement check
+### Hour 18 engagement check
 
 **Question.** The inspection report identifies a failing HVAC system. The buyer's licensee is asked,
 "can we just cancel and get our deposit back?" What does the licensee do, and what does the licensee
@@ -232,7 +232,7 @@ the question in front of the right person in time.
 
 ---
 
-# Hour 19 — Electronic transactions and property disclosures
+## Hour 19 — Electronic transactions and property disclosures
 
 ## 19.1 Electronic records and signatures
 
@@ -327,7 +327,7 @@ The licensee's obligation is to ensure compliance and to retain the signed ackno
 one of the few disclosure requirements where the licensee is personally exposed, and it is not
 waivable by the seller's preference.
 
-## Hour 19 engagement check
+### Hour 19 engagement check
 
 **Question.** A buyer asks, "the seller has to tell me about any problems with the house, right?"
 Give the accurate Virginia answer in three sentences, and say what you would put in writing.
@@ -344,7 +344,7 @@ contingency period, and name the deadline.
 
 ---
 
-# Hour 20 — Brokerage agreements and agency fundamentals
+## Hour 20 — Brokerage agreements and agency fundamentals
 
 ## 20.1 The vocabulary, and why Virginia's differs
 
@@ -445,7 +445,7 @@ arrangement to be explained up front precisely so that nobody confuses them.
 Similarly, **§ 54.1-2141**: a brokerage relationship is not created by using a common source
 information company.
 
-## Hour 20 engagement check
+### Hour 20 engagement check
 
 **Question.** A licensee meets a prospective buyer at an open house. The buyer asks to see three
 other properties that afternoon. List, in order, what the licensee must do before showing any of

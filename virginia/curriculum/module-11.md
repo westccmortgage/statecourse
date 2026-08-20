@@ -31,7 +31,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 41 — Prorations, closing calculations, and reconciliation
+## Hour 41 — Prorations, closing calculations, and reconciliation
 
 ## 41.1 Debit and credit, once and properly
 
@@ -135,7 +135,7 @@ come from the lender's Closing Disclosure and the settlement agent's statement. 
 ordinary care. Every estimate should state its assumptions — the payoff figure used and its good-
 through date, the tax convention, the fee, and what has been excluded.
 
-## Hour 41 engagement check
+### Hour 41 engagement check
 
 **Question.** Settlement 20 April. Annual taxes $3,650, calendar year, paid in arrears. The seller
 prepaid an annual insurance policy of $1,460 on 1 January which the buyer will not assume. A tenant
@@ -153,7 +153,7 @@ debit seller, credit buyer.**
 
 ---
 
-# Hour 42 — Appraisal foundations
+## Hour 42 — Appraisal foundations
 
 ## 42.1 What an appraisal is
 
@@ -240,7 +240,7 @@ The sequence, which is examinable:
    averaging.
 8. **Report**, in the form the assignment requires.
 
-## Hour 42 engagement check
+### Hour 42 engagement check
 
 **Question.** A seller says, "I spent $110,000 on the addition, so the house is worth $110,000 more."
 Name the principle that answers this, and name the principle that explains why an addition making the
@@ -254,7 +254,7 @@ still. **Increasing and diminishing returns** describes the same effect from the
 
 ---
 
-# Hour 43 — Residential sales comparison and cost approaches
+## Hour 43 — Residential sales comparison and cost approaches
 
 ## 43.1 Sales comparison, in one rule
 
@@ -366,7 +366,7 @@ standard, and it must never be represented as either. Presenting a CMA as an app
 misrepresentation finding under **18VAC135-20-300** and a problem under the separate statute
 governing appraisers.
 
-## Hour 43 engagement check
+### Hour 43 engagement check
 
 **Question.** The subject has a finished basement. Comp D, otherwise identical, has none and sold for
 $389,000. Finished basements in this market contribute about $22,000. What is Comp D's adjusted
@@ -379,7 +379,7 @@ up while a comparable superior to the subject is adjusted down.
 
 ---
 
-# Hour 44 — Income-producing property appraisal
+## Hour 44 — Income-producing property appraisal
 
 ## 44.1 The income statement, line by line
 
@@ -467,7 +467,7 @@ income and expense figures supplied by an owner, and may not tell an investor wh
 achieve. Under **§ 54.1-2131 A 4** the standard is ordinary care, and passing on unverified figures as
 fact fails it. State the source of every number, and say what has not been verified.
 
-## Hour 44 engagement check
+### Hour 44 engagement check
 
 **Question.** A 16-unit building rents at $1,275 per unit per month with $4,800 other annual income.
 Vacancy and collection loss is 7%. Operating expenses are $101,000 including an $8,000 replacement

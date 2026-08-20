@@ -32,7 +32,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 49 — Property, flood, and transaction insurance
+## Hour 49 — Property, flood, and transaction insurance
 
 ## 49.1 The four coverages a residential transaction touches
 
@@ -130,7 +130,7 @@ warranty. Matters **excepted** on Schedule B-II of the title commitment, includi
 in possession and anything an accurate survey would show. Business use of the property. And anything
 above the policy limits.
 
-## Hour 49 engagement check
+### Hour 49 engagement check
 
 **Question.** A buyer under contract on a 1998 house says: "I'm getting title insurance and a home
 warranty, so I don't need the inspection." Identify precisely what each product would and would not
@@ -149,7 +149,7 @@ to exercise, and that I will confirm the contingency deadline in writing.
 
 ---
 
-# Hour 50 — Risk management, data protection, and regulatory compliance
+## Hour 50 — Risk management, data protection, and regulatory compliance
 
 ## 50.1 Wire fraud — the loss that actually happens
 
@@ -254,7 +254,7 @@ counsel.
 the public with an unsatisfied judgment against a licensee may recover — with **§ 54.1-2119**
 providing that the licensee's licence is **revoked** on payment from the fund on their account.
 
-## Hour 50 engagement check
+### Hour 50 engagement check
 
 **Question.** Two days before settlement your buyer forwards you an email, apparently from the
 settlement agent's paralegal, with the subject "Updated wire instructions — bank change", from the
@@ -272,7 +272,7 @@ change nothing. Whatever the outcome, document the whole sequence in the file.
 
 ---
 
-# Hour 51 — Integrated seller transaction: listing through contract
+## Hour 51 — Integrated seller transaction: listing through contract
 
 ## 51.1 Before the appointment
 
@@ -376,7 +376,7 @@ of presentation; all brokerage-relationship disclosures signed and dated; any du
 consents; the ratified contract with every addendum referenced and attached; the deposit receipt and
 evidence of deposit to escrow; and the advertising record.
 
-## Hour 51 engagement check
+### Hour 51 engagement check
 
 **Question.** A seller signs a listing on 4 March. The agreement states a fee and the services but no
 termination date. On 20 June the seller accepts an offer from a buyer represented by another licensee
@@ -397,7 +397,7 @@ execution under **18VAC135-20-185 C 1**.
 
 ---
 
-# Hour 52 — Integrated buyer transaction: financing through closing
+## Hour 52 — Integrated buyer transaction: financing through closing
 
 ## 52.1 Before showing anything
 
@@ -496,7 +496,7 @@ be kept confidential — unless the law provides otherwise or the client consent
 The confidentiality duty does not end with the transaction. It is the one that surfaces years later,
 when a former client's circumstances become interesting to someone else.
 
-## Hour 52 engagement check
+### Hour 52 engagement check
 
 **Question.** Contract ratified 1 May on a condominium; settlement set for 5 June. The resale
 certificate is delivered 30 May. The contract specifies no cancellation period. On 2 June the buyer,

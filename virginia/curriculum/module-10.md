@@ -32,7 +32,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 37 — Alternative financing and consumer protection
+## Hour 37 — Alternative financing and consumer protection
 
 ## 37.1 Structures other than the level-payment fixed loan
 
@@ -128,7 +128,7 @@ the client to a **HUD-approved housing counselling agency**, to counsel, or to a
 comparison — and to keep out of any arrangement in which the licensee's own benefit depends on the
 borrower choosing a particular lender.
 
-## Hour 37 engagement check
+### Hour 37 engagement check
 
 **Question.** A title company offers a licensee's firm $1,200 a month for a "marketing services
 agreement" under which the firm displays the title company's brochures. The firm's actual referrals
@@ -145,7 +145,7 @@ money changes hands, and § 54.1-2110.1 B 2 requires the firm to have written po
 
 ---
 
-# Hour 38 — Finance mathematics
+## Hour 38 — Finance mathematics
 
 ## 38.1 Loan-to-value and down payment
 
@@ -241,7 +241,7 @@ Brokerage fees are negotiable between the client and the broker, and **§ 54.1-2
 the licensee to advise a prospective client of the broker's compensation and whether it will be
 shared with a broker representing another party **before the relationship begins**.
 
-## Hour 38 engagement check
+### Hour 38 engagement check
 
 **Question.** Purchase price $460,000. The buyer plans 10% down. The appraisal returns $448,000 and
 the lender will lend 90% LTV. Compute the loan, the required cash for the down payment, and the
@@ -256,7 +256,7 @@ termination under the contract's terms.
 
 ---
 
-# Hour 39 — The loan process and financing a transaction
+## Hour 39 — The loan process and financing a transaction
 
 ## 39.1 The stages
 
@@ -333,7 +333,7 @@ The licensee **may not**: state that a buyer will qualify; state a rate; state w
 requires as though it were settled; complete or advise on the loan application; or receive anything
 of value for a referral, which is Hour 37's RESPA section 8 problem.
 
-## Hour 39 engagement check
+### Hour 39 engagement check
 
 **Question.** A buyer's file is approved with conditions on 3 October for a 20 October settlement. On
 15 October the lender adds a condition: documentation of a $9,000 deposit made in September. The
@@ -351,7 +351,7 @@ deposit and does not contact the donor.
 
 ---
 
-# Hour 40 — Settlement, closing, and title transfer
+## Hour 40 — Settlement, closing, and title transfer
 
 ## 40.1 Who is at the table
 
@@ -439,7 +439,7 @@ from execution** — under **§ 54.1-2138 D** — brokerage-relationship disclos
 executed purchase contracts for **three years** — and under **§ 54.1-2146**, which requires licensee
 maintenance of records.
 
-## Hour 40 engagement check
+### Hour 40 engagement check
 
 **Question.** Two days before settlement the lender issues a revised Closing Disclosure changing the
 loan product. The buyer's licensee has promised the seller possession on the settlement date, and the

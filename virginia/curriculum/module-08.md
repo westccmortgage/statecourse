@@ -32,7 +32,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 29 — Home ownership, associations, and common-interest communities
+## Hour 29 — Home ownership, associations, and common-interest communities
 
 ## 29.1 What a common interest community is
 
@@ -133,7 +133,7 @@ Leasing restrictions deserve their own mention. A buyer who intends to rent the 
 discovers after closing that the community caps rentals or imposes a waiting period has lost the
 entire basis of their purchase. **Ask the question before the offer, and get the answer in writing.**
 
-## Hour 29 engagement check
+### Hour 29 engagement check
 
 **Question.** A buyer is comparing a condominium unit and a house in a POA, and says "the dues are
 $310 a month in one and $95 a quarter in the other, so the second is cheaper." What is wrong with
@@ -151,7 +151,7 @@ coverage, and the leasing, pet and alteration restrictions.
 
 ---
 
-# Hour 30 — Subdivisions, condominiums, and the Resale Disclosure Act
+## Hour 30 — Subdivisions, condominiums, and the Resale Disclosure Act
 
 ## 30.1 Creating the community
 
@@ -260,7 +260,7 @@ applies, and adjusted by any period the parties agreed.
 **Never agree to waive the seller's obligation.** § 55.1-2309 A says it **shall not be waived or
 changed by agreement**, and a licensee who drafts around it has drafted something ineffective.
 
-## Hour 30 engagement check
+### Hour 30 engagement check
 
 **Question.** A contract for a condominium resale is ratified 3 June and specifies no cancellation
 period. The seller's agent requests the resale certificate in writing on 5 June. Nothing arrives.
@@ -277,7 +277,7 @@ delivery** — so the notice goes by a method that produces proof, and the proof
 
 ---
 
-# Hour 31 — Leasehold estates and lease agreements
+## Hour 31 — Leasehold estates and lease agreements
 
 ## 31.1 What a lease is
 
@@ -354,7 +354,7 @@ Where a landlord asks what remedy to pursue, the answer is counsel and the statu
 the licensee's contribution is documentation: the ledger, the notices actually given and how, the
 condition record, and the correspondence.
 
-## Hour 31 engagement check
+### Hour 31 engagement check
 
 **Question.** A tenant with eight months remaining transfers the apartment to a friend for the
 remaining eight months, with the landlord's written consent to the transfer but nothing more. Six
@@ -368,7 +368,7 @@ agreement by the landlord substituting the new tenant and expressly releasing th
 
 ---
 
-# Hour 32 — The Virginia residential landlord-tenant framework
+## Hour 32 — The Virginia residential landlord-tenant framework
 
 ## 32.1 Which statute governs
 
@@ -462,7 +462,7 @@ rent rather than to the whole where a subsidy pays the balance.
 anywhere else, and the assistance-animal request is the most common of all. A no-pets policy is not
 an answer to it.
 
-## Hour 32 engagement check
+### Hour 32 engagement check
 
 **Question.** A property manager asks you how many days' notice they must give a tenant before
 entering to show the unit, and how long they have to return a security deposit after move-out. What

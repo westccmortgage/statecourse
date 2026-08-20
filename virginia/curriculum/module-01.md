@@ -33,7 +33,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 1 — The real estate profession and its economic role
+## Hour 01 — The real estate profession and its economic role
 
 ## 1.1 Three words that are not synonyms
 
@@ -127,7 +127,7 @@ job. It does not guarantee an investment result. It does not make the licensee a
 property's condition. And it does not displace the buyer's own responsibility to investigate —
 which, as Hour 19 will show, Virginia takes further than most states.
 
-## Hour 1 engagement check
+### Hour 01 engagement check
 
 **Question.** A seller conveys the surface of a parcel and expressly reserves the mineral rights.
 Has the seller conveyed real estate, real property, or neither? Explain.
@@ -140,7 +140,7 @@ them does not turn either share into personal property.
 
 ---
 
-# Hour 2 — Supply, demand, and real estate cycles
+## Hour 02 — Supply, demand, and real estate cycles
 
 ## 2.1 Demand, supply, and the lag that makes real estate different
 
@@ -228,7 +228,7 @@ Second, **aggregates hide the property**. A median sale price for a county descr
 properties, and a change in the median can be entirely a change in the mix. If more large houses
 sold this quarter, the median rose without any individual property becoming more valuable.
 
-## Hour 2 engagement check
+### Hour 02 engagement check
 
 **Question.** A large employer announces 3,000 new jobs in a locality where residential
 construction takes about two years from entitlement to occupancy. Describe what happens to price
@@ -242,7 +242,7 @@ time the price signal has already been given — which is the mechanism that pro
 
 ---
 
-# Hour 3 — Market data and comparative analysis
+## Hour 03 — Market data and comparative analysis
 
 ## 3.1 Defining the market area
 
@@ -309,7 +309,7 @@ Adjustment mechanics belong to Hour 43. The habit to build now is the discipline
 *why* each comparable was included and each near-miss excluded. That written record is what makes
 the analysis reviewable, and it is what protects the licensee if the price is later disputed.
 
-## Hour 3 engagement check
+### Hour 03 engagement check
 
 **Question.** A subject property is a 1,900-square-foot three-bedroom house. Which is stronger
 evidence of its value: a 1,950-square-foot house two streets away that sold four months ago
@@ -324,7 +324,7 @@ indicator.
 
 ---
 
-# Hour 4 — Real property, personal property, and fixtures
+## Hour 04 — Real property, personal property, and fixtures
 
 ## 4.1 The distinction and why it decides disputes
 
@@ -406,7 +406,7 @@ information in advertising must be consistent with the property's condition and 
 A photograph showing a chandelier the seller intends to remove is inconsistent property
 information, and fixing it is not optional courtesy.
 
-## Hour 4 engagement check
+### Hour 04 engagement check
 
 **Question.** A seller installed a custom-fitted bookcase into a wall alcove, screwed to studs and
 cut to the alcove's exact dimensions. The contract is silent. The seller wants to take it. What is

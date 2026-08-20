@@ -33,7 +33,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 13 — Liens, priority, and release
+## Hour 13 — Liens, priority, and release
 
 ## 13.1 What a lien is
 
@@ -131,7 +131,7 @@ licensee's contribution is timing and disclosure: get the title work ordered ear
 B-I when it arrives, escalate anything involving construction or a judgment immediately, and
 disclose material facts actually known under § 54.1-2131 A 6 or § 54.1-2132 A 7.
 
-## Hour 13 engagement check
+### Hour 13 engagement check
 
 **Question.** A property is sold at a foreclosure sale under a deed of trust recorded in 2019.
 Also of record: unpaid real property taxes for the current year, a judgment docketed in 2021, and a
@@ -148,7 +148,7 @@ needs counsel.
 
 ---
 
-# Hour 14 — Taxes in real estate
+## Hour 14 — Taxes in real estate
 
 ## 14.1 Ad valorem taxation
 
@@ -239,7 +239,7 @@ to the seller**, because the buyer will pay the whole bill when it comes due.
 Change any convention — a 360-day year, a different settlement-day rule, taxes paid in advance —
 and the number changes. **The convention comes from the contract, not from a habit.**
 
-## Hour 14 engagement check
+### Hour 14 engagement check
 
 **Question.** A property is assessed at $412,000 in a locality with a rate of $0.89 per $100.
 Compute the annual tax. Then state, in one sentence each, why the licensee may not tell the buyer
@@ -253,7 +253,7 @@ prediction the licensee cannot support and the buyer must confirm with the local
 
 ---
 
-# Hour 15 — Contract foundations
+## Hour 15 — Contract foundations
 
 ## 15.1 The four requirements
 
@@ -338,7 +338,7 @@ manner the statute permits is licensed activity. **Deciding what a clause means,
 language to solve a legal problem, or advising a client whether to declare a breach is not.** The
 question "am I in default?" goes to an attorney every time.
 
-## Hour 15 engagement check
+### Hour 15 engagement check
 
 **Question.** Classify each and give the one-line reason. (a) An oral agreement to buy a house,
 fully agreed on all terms. (b) A sales contract signed by a 16-year-old buyer. (c) A contract to
@@ -353,7 +353,7 @@ performance remains outstanding.
 
 ---
 
-# Hour 16 — Offer, acceptance, and contract formation
+## Hour 16 — Offer, acceptance, and contract formation
 
 ## 16.1 The offer
 
@@ -441,7 +441,7 @@ verifying identity, preserving the record, controlling version drift when severa
 copies circulate, and — the risk that actually causes losses — **wire fraud**, where an intercepted
 email carries changed settlement instructions. Hour 50 is devoted to it.
 
-## Hour 16 engagement check
+### Hour 16 engagement check
 
 **Question.** Buyer A offers $400,000. Seller counters at $415,000. While the counteroffer is
 outstanding, Buyer B offers $412,000. Buyer A then says "we accept your counter" but has not yet

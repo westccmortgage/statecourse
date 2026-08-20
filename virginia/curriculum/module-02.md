@@ -34,7 +34,7 @@ By the end of this module the student will be able to:
 
 ---
 
-# Hour 5 — Estates in land and future interests
+## Hour 05 — Estates in land and future interests
 
 ## 5.1 What an estate is
 
@@ -113,7 +113,7 @@ entry.
 
 Virginia's residential landlord-tenant treatment is Hour 32. Leases as contracts are Hour 31.
 
-## Hour 5 engagement check
+### Hour 05 engagement check
 
 **Question.** A grants Blackacre "to B for life, then to C." A dies. Then B dies. Who owns
 Blackacre at each stage, and what is C's interest called before B's death?
@@ -126,7 +126,7 @@ would take on B's death.
 
 ---
 
-# Hour 6 — Forms of ownership and home ownership
+## Hour 06 — Forms of ownership and home ownership
 
 ## 6.1 Ownership in severalty
 
@@ -210,7 +210,7 @@ property-tax deductions, the exclusion of gain on a principal residence, and the
 the standard deduction all depend on the individual's circumstances and on law that changes.
 **Refer the client to a tax professional and say so in writing.**
 
-## Hour 6 engagement check
+### Hour 06 engagement check
 
 **Question.** Two unmarried siblings take title as joint tenants with right of survivorship. One
 sibling sells their interest to a third party. Describe the resulting ownership, and describe it
@@ -223,7 +223,7 @@ surviving sibling would hold the whole in severalty, outside probate.
 
 ---
 
-# Hour 7 — Private rights, easements, and encumbrances
+## Hour 07 — Private rights, easements, and encumbrances
 
 ## 7.1 Encumbrances
 
@@ -304,7 +304,7 @@ for what the instrument means. Under § 54.1-2131 A 6 the duty is to disclose ma
 which the licensee has **actual knowledge** — a shared driveway the licensee knows about is a
 material fact; the legal effect of the instrument creating it is not the licensee's to opine on.
 
-## Hour 7 engagement check
+### Hour 07 engagement check
 
 **Question.** A buyer is told by a neighbour, "your seller has always let me cut across the back
 corner to reach my dock." The arrangement is not in any recorded instrument. What is it most
@@ -320,7 +320,7 @@ neighbour has a right.
 
 ---
 
-# Hour 8 — Public controls, land use, and development
+## Hour 08 — Public controls, land use, and development
 
 ## 8.1 The four government powers
 
@@ -410,7 +410,7 @@ a licence to conceal — it is a statement of what the physical-condition duty c
 including the duty of ordinary care and the client-side duty to disclose material facts under
 § 54.1-2131 A 6, operate independently.
 
-## Hour 8 engagement check
+### Hour 08 engagement check
 
 **Question.** A buyer wants to run a small dog-grooming business from a house in a district that
 permits only single-family dwellings and home occupations of a listed kind not including animal

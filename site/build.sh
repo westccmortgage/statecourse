@@ -10,10 +10,7 @@ cp -R public/statecourse/. dist/
 cp dist/student/course/index.html dist/student-course.html
 
 if [[ -d virginia/curriculum ]]; then
-  cp virginia/curriculum/hours-01-15.md dist/content/curriculum/
-  cp virginia/curriculum/hours-16-30.md dist/content/curriculum/
-  cp virginia/curriculum/hours-31-45.md dist/content/curriculum/
-  cp virginia/curriculum/hours-46-60.md dist/content/curriculum/
+  cp virginia/curriculum/module-*.md dist/content/curriculum/
   cp virginia/submission/60-hour-timed-course-outline.md dist/content/reference/
   cp virginia/student/student-guide.md dist/content/reference/
   cp virginia/regulatory/compliance-baseline.md dist/content/reference/
@@ -30,7 +27,10 @@ done
 
 test -f dist/index.html
 test -f dist/app.js
-test -f dist/content/curriculum/hours-46-60.md
+test -f dist/content/curriculum/module-01.md
+test -f dist/content/curriculum/module-15.md
+# 60 hour headings across the fifteen Course Day files, or the student portal will refuse to load.
+test "$(grep -h '^## Hour' dist/content/curriculum/module-*.md | wc -l)" -eq 60
 test -f dist/data/state-registry.json
 test -f dist/real-estate/virginia/pre-license/principles-and-practices/index.html
 test -f dist/real-estate/maine/pre-license/sales-agent/index.html
@@ -84,3 +84,6 @@ node -e 'const c=require("./dist/data/course-catalog.json"); const courses=c.cat
 ! grep -rlq 'instructor version and answer key' dist
 ! grep -rlq 'Items, with the material reference for each answer' dist
 ! grep -rlq '__statecourse_private_export' dist
+# Virginia's secure final bank lives in virginia/assessments and is never copied. Prove it.
+! grep -rlq 'secure-final-bank' dist
+! test -e dist/content/curriculum/secure-final-bank-t01-t13.md
