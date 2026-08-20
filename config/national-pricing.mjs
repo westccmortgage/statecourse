@@ -110,7 +110,10 @@ export const STATE_PRICING = Object.freeze([
     composition: "48-hour pre-exam course plus 24-hour practice course"
   }),
   state("OK", "Oklahoma", 90, 299, 399, BUILD_STATUS.BUILT, { marketRange: "$299–$829" }),
-  state("WA", "Washington", 90, 299, 399, BUILD_STATUS.RESEARCHED, { marketRange: "$379–$785" }),
+  state("WA", "Washington", 90, 299, 399, BUILD_STATUS.BUILT, {
+    marketRange: "$379–$785",
+    composition: "Real Estate Fundamentals (60 clock hours, including the three-hour fair housing and consumer protection block RCW 18.85.101(1)(c) requires) plus Real Estate Practices (30 clock hours) — the two courses the statute names. A Washington clock hour is 50 minutes of actual instruction"
+  }),
   state("PA", "Pennsylvania", 75, 299, 399, BUILD_STATUS.BUILT, {
     marketRange: "$252–$685",
     composition: "Real Estate Fundamentals (30 hours / 2 credits) plus Real Estate Practice (45 hours / 3 credits) — the two courses 49 Pa. Code § 35.272(b)(2) names by title. NOTE: the regulatory minimum in § 35.272(a)(2) is four credits, or 60 hours; 75 exceeds it by one credit"
