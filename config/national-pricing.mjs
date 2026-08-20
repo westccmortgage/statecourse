@@ -66,7 +66,40 @@ export const STATE_PRICING = Object.freeze([
        approved education runs $405–$480. Hours alone would price this wrong. */
     note: "Small market, few providers — priced on market value rather than on hours"
   }),
-
+  state("VT", "Vermont", 40, 299, 399, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$309–$775",
+    composition: "One 40-hour Commission-approved salesperson course",
+    /* The smallest market screened. Priced with Alaska rather than with Michigan, for the
+       same reason: at 40 hours the hour count says nothing about what the market pays. */
+    note: "Small market, few providers — priced on market value rather than on hours"
+  }),
+  state("NH", "New Hampshire", 40, 249, 349, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$250–$500",
+    composition: "One 40-hour accredited pre-licensing course, of which a minimum of 32 hours must be classroom or real-time live-class attendance",
+    note: "Priced mid-market; the delivery cap is a build constraint, not a pricing one"
+  }),
+  state("MA", "Massachusetts", 40, 249, 349, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$285–$750",
+    composition: "One 40-hour board-approved salesperson course",
+    note: "Dense market with in-person schools at the top of the range — priced in the middle"
+  }),
+  state("WY", "Wyoming", 54, 299, 399, BUILD_STATUS.RESEARCHED, {
+    marketRange: "not published — no approved provider lists a price publicly",
+    composition: "Salesperson Course I of 30 hours and Salesperson Course II of 24 hours, against a curriculum the Commission publishes annually",
+    /* Priced with Maine, the nearest comparable: a small market at a similar hour count where
+       the approved providers do not compete on advertised price. */
+    note: "Small market, no published price to anchor to — priced by comparison with Maine"
+  }),
+  state("KS", "Kansas", 60, 299, 399, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$385 typical, sold as $245 plus $170",
+    composition: "A 30-hour principles of real estate course and a 30-hour Kansas practice course, separately approved",
+    note: "The market prices the two courses separately and discounts the pair; the bundle grants both"
+  }),
+  state("MS", "Mississippi", 60, 199, 299, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$149–$595",
+    composition: "One 60-hour salesperson pre-license course",
+    note: "Wide spread with a low floor — priced with Virginia at the same hour count"
+  }),
   /* Tier 2 — mid-hour states, 66–100 hours */
   state("WI", "Wisconsin", 72, 249, 349, BUILD_STATUS.RESEARCHED, { marketRange: "$279–$679" }),
   state("MO", "Missouri", 72, 249, 349, BUILD_STATUS.BUILT, {
@@ -86,7 +119,50 @@ export const STATE_PRICING = Object.freeze([
     note: "Two separate regulatory records; the bundle grants both"
   }),
 
+  state("MT", "Montana", 70, 249, 349, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$250–$400",
+    composition: "70 hours of board-approved prelicensing education, obtained within the 24 months before application",
+    note: "The tightest spread of any state screened — priced at the bottom of it"
+  }),
+  state("ID", "Idaho", 90, 399, 549, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$719–$1,019",
+    composition: "Module 1, Idaho Real Estate Practices, and Module 2, Real Estate Principles — 45 hours each",
+    /* The highest floor of any state in the table: the cheapest package found is $719. Priced
+       far below it deliberately rather than at the market, because $719 is one provider's
+       package price and not evidence of what the market clears at. */
+    note: "Priced well under a market whose visible floor is $719"
+  }),
+  state("NE", "Nebraska", 90, 349, 449, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$350–$800",
+    composition: "Three commission-approved courses composed of not less than 90 class hours in total",
+    /* Providers currently advertise a 96-hour Nebraska course — three 30-hour courses plus a
+       6-hour professional practice and standards course — and describe it as effective
+       1 January 2026. Neb. Rev. Stat. 81-885.13(2), read on 2026-08-19, says ninety. The
+       statute controls until the later text is read directly, so 90 is what is priced; if the
+       96-hour figure is confirmed at the statute, this row and the registry both move. */
+    note: "Secondary sources describe 96 hours effective 2026-01-01; unconfirmed against the statute"
+  }),
+  state("NM", "New Mexico", 90, 299, 399, BUILD_STATUS.RESEARCHED, {
+    marketRange: "not reliably published — providers quote by package, not by course",
+    composition: "Three commission-approved 30-hour prelicensing courses, completed within three years before the examination",
+    note: "Priced with Oklahoma and Washington at the same hour count, for want of a visible market floor"
+  }),
+  state("IA", "Iowa", 96, 349, 449, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$300–$600",
+    /* 96 is 60 + 36, and the 36 is three separate 12-hour courses that must be live. The
+       bundle therefore grants four courses, and only one of the four can be asynchronous. */
+    composition: "A 60-hour prelicensing course, which may be distance or live, plus three 12-hour courses that must be live instruction",
+    note: "Four separate regulatory records; three of them cannot be delivered asynchronously"
+  }),
   /* Tier 3 — high-hour states, 101–150 hours */
+  state("SD", "South Dakota", 116, 499, 649, BUILD_STATUS.RESEARCHED, {
+    marketRange: "$1,000–$1,250",
+    composition: "One 116-hour broker associate course — South Dakota's entry licence is the broker associate",
+    /* The highest floor in the table and the largest single course. Priced with Texas at
+       180 hours rather than with Colorado at 168, because Texas splits into six courses and
+       South Dakota does not: the whole 116 hours is one approval and one enrolment. */
+    note: "Priced at half the visible market; the largest single course of any state screened"
+  }),
   state("CA", "California", 135, 199, 299, BUILD_STATUS.BUILT, {
     marketRange: "$139–$449",
     composition: "Real Estate Principles, Real Estate Practice, and Mortgage Loan Brokering and Lending — 45 hours each",

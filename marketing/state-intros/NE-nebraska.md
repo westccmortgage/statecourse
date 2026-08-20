@@ -25,7 +25,7 @@
 ### requirement — ~30s
 
 > Real estate licensing in Nebraska is regulated by the Nebraska Real Estate Commission.
-> The pre-license education requirement is 60 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
+> The pre-license education requirement is 90 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
 > Courses must be approved by the regulator before they count toward the requirement. A course that is not approved earns nothing, however good it is.
 
 ### status — ~25s
@@ -48,7 +48,7 @@
 | When | Text |
 | --- | --- |
 | Open | StateCourse · state course LLC |
-| Requirement | 60 hours pre-license education |
+| Requirement | 90 hours pre-license education |
 | Status | Not approved — no credit available |
 | Close | https://nrec.nebraska.gov/ |
 

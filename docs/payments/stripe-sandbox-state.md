@@ -25,8 +25,10 @@ Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds 
 
 ## State product structure
 
-31 products, two per state plus the California single course, created 2026-08-20 by
-`scripts/stripe-setup-bundles.mjs` from `config/national-pricing.mjs`.
+55 products, two per state plus the California single course, created 2026-08-20 by
+`scripts/stripe-setup-bundles.mjs` from `config/national-pricing.mjs`. The first 31 covered
+the 15 states priced that morning; the remaining 24 were added the same day when the twelve
+"In Research" states were priced.
 
 | State | SC-*-EDU | SC-*-COMPLETE |
 |---|---:|---:|
@@ -35,6 +37,12 @@ Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds 
 | Florida | $149 | $249 |
 | Virginia | $199 | $299 |
 | Maine | $299 | $399 |
+| Vermont | $299 | $399 |
+| New Hampshire | $249 | $349 |
+| Massachusetts | $249 | $349 |
+| Wyoming | $299 | $399 |
+| Kansas | $299 | $399 |
+| Mississippi | $199 | $299 |
 | Wisconsin | $249 | $349 |
 | Missouri | $249 | $349 |
 | Oklahoma | $299 | $399 |
@@ -42,6 +50,12 @@ Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds 
 | Pennsylvania | $299 | $399 |
 | North Carolina | $299 | $399 |
 | Arizona | $399 | $549 |
+| Montana | $249 | $349 |
+| Idaho | $399 | $549 |
+| Nebraska | $349 | $449 |
+| New Mexico | $299 | $399 |
+| Iowa | $349 | $449 |
+| South Dakota | $499 | $649 |
 | California | $199 | $299 |
 | Colorado | $499 | $699 |
 | Texas | $499 | $649 |

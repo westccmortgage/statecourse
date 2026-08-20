@@ -13,6 +13,12 @@
 | Florida | 63 | $149 | $249 | $99–$448 |
 | Virginia | 60 | $199 | $299 | $239–$519 |
 | Maine | 55 | $299 | $399 | $349–$629 |
+| Vermont | 40 | $299 | $399 | $309–$775 |
+| New Hampshire | 40 | $249 | $349 | $250–$500 |
+| Massachusetts | 40 | $249 | $349 | $285–$750 |
+| Wyoming | 54 | $299 | $399 | not published — no approved provider lists a price publicly |
+| Kansas | 60 | $299 | $399 | $385 typical, sold as $245 plus $170 |
+| Mississippi | 60 | $199 | $299 | $149–$595 |
 | Wisconsin | 72 | $249 | $349 | $279–$679 |
 | Missouri | 72 | $249 | $349 | $298–$582 |
 | Oklahoma | 90 | $299 | $399 | $299–$829 |
@@ -20,6 +26,12 @@
 | Pennsylvania | 75 | $299 | $399 | $252–$685 |
 | North Carolina | 75 | $299 | $399 | $299–$549 |
 | Arizona | 96 | $399 | $549 | $549–$929 |
+| Montana | 70 | $249 | $349 | $250–$400 |
+| Idaho | 90 | $399 | $549 | $719–$1,019 |
+| Nebraska | 90 | $349 | $449 | $350–$800 |
+| New Mexico | 90 | $299 | $399 | not reliably published — providers quote by package, not by course |
+| Iowa | 96 | $349 | $449 | $300–$600 |
+| South Dakota | 116 | $499 | $649 | $1,000–$1,250 |
 | California | 135 | $199 | $299 | $139–$449 |
 | Colorado | 168 | $499 | $699 | $429–$1,299 |
 | Texas | 180 | $499 | $649 | $498–$1,000 |
@@ -52,6 +64,35 @@ This is recorded rather than hidden: their `buildStatus` is `unresearched` and t
 
 **The risk this guards against is real and has bitten this project four times.** Iowa, New Hampshire, Mississippi and Nebraska each had an hour figure or a delivery rule from a secondary source that the primary text contradicted — Nebraska by 30 hours. Florida's 63 and Texas's 180 are plausible and widely quoted; they are not yet verified, and no build should start on them until they are.
 
+### 4. The twelve research-queue states — priced 2026-08-20
+
+Every state at "In Research" now carries a price. Four of the twelve did not price off their
+hour count:
+
+**Idaho** has the highest visible floor in the whole table — the cheapest package found is
+$719 for the two 45-hour modules. It is priced at $399, well under that, because a single
+provider's package price is not evidence of what the market clears at.
+
+**South Dakota** is the largest single course of any state screened: 116 hours in one
+approval, one enrolment, priced around $1,000–$1,250 by the two schools that publish. Priced
+at $499 — the same as Texas at 180 hours, because Texas splits into six courses and South
+Dakota does not.
+
+**Wyoming and New Mexico have no usable market floor.** Wyoming's approved providers do not
+advertise a price at all, and New Mexico's quote by package rather than by course. Both are
+priced by comparison — Wyoming with Maine at a similar hour count and market size, New Mexico
+with Oklahoma and Washington at the same 90 hours.
+
+**Iowa's bundle is four courses, not one.** 96 = 60 + 12 + 12 + 12, and only the 60 may be
+delivered asynchronously. It is the second state after Arizona whose `SC-*-EDU` cannot be one
+enrolment, and the first where part of the bundle cannot be delivered by this platform at all.
+
+**Nebraska carries an open hour question.** Providers advertise a 96-hour Nebraska course —
+three 30-hour courses plus a 6-hour professional practice and standards course — described as
+effective 1 January 2026. Neb. Rev. Stat. 81-885.13(2), read on 2026-08-19, says ninety. The
+statute is what is priced. If the 96-hour figure is confirmed at the statute, the pricing row
+and the registry both move.
+
 ## What has to be built before either tier can be sold
 
 ### Both tiers are bundles, and bundles do not exist yet
@@ -70,9 +111,15 @@ Both are **non-credit**. Neither is statutory pre-license education, neither car
 
 Sandbox only, test mode, account `acct_1U6HpAI5Vlt1VlIg`.
 
-**Three California course prices at $79** — the single-course tier, which is the only tier the platform can currently fulfil. The six non-California courses still carry a $199 placeholder that is not a pricing decision for those states.
+**55 state-level products** — `SC-<STATE>-EDU` and `SC-<STATE>-COMPLETE` for all 27 priced
+states, plus `SC-CA-SINGLE` at $79. Created by `scripts/stripe-setup-bundles.mjs`, which finds
+products by `metadata['statecourse_sku']` and reconciles rather than duplicating.
 
-**No `SC-*-EDU` or `SC-*-COMPLETE` product exists in Stripe.** Creating them before the bundle fulfilment exists would put a purchasable price in front of a checkout that cannot deliver what it sells.
+**The nine per-course products** created earlier remain alongside them. They are the
+course-level objects, keyed by `metadata['statecourse_course_id']`, and they are what the
+current checkout actually uses.
+
+Full inventory in `docs/payments/stripe-sandbox-state.md`.
 
 ## And the standing rule
 
