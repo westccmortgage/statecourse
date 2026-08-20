@@ -30,9 +30,49 @@ export const PROVIDER = Object.freeze({
     zip: "90277"
   }),
   website: "https://statecourse.com",
+  phone: "(310) 686-5053",
+  publicEmail: "info@statecourse.com",
+  /* Decided 2026-08-20: trade publicly under the full legal name, so "StateCourse" is never
+     used as a business name and no fictitious business name statement is required. See
+     california/submission/00_administrative/A5-fbns-determination.md, Option A.
+     RE 306 item 2 is therefore blank and item 10 is NO. */
+  fictitiousBusinessName: null,
+  tradingName: "StateCourse LLC",
   /* Assigned by DRE on approval. Never invented, never guessed, never filled with a
      placeholder that could be mistaken for real. */
   dreSponsorId: null
+});
+
+/* What a student pays. RE 313's fee field asks for the total "INCLUDING ANY SHIPPING AND
+   HANDLING FEES, COURSE GROUP PACKAGE FEES, DISCOUNTS ETC.", so the package prices are
+   disclosed on every course's General Information Page, not only the single-course price.
+
+   Note what these names deliberately do NOT say. No product name or description may call a
+   course "DRE-approved" until DRE has approved it; doing so would be a false statement to
+   consumers and a Regulation 3000(a)(5) advertising violation. */
+export const PRICING = Object.freeze({
+  singleCourse: Object.freeze({
+    name: "Individual California Course — 45 Hours",
+    usd: 79,
+    cents: 7900,
+    includes: "Any one of the three California statutory pre-license courses."
+  }),
+  requiredEducation: Object.freeze({
+    name: "California Required Education — 135 Hours",
+    usd: 199,
+    cents: 19900,
+    includes: "All three courses: Real Estate Principles, Real Estate Practice, and Mortgage Loan Brokering and Lending."
+  }),
+  completePath: Object.freeze({
+    name: "California Complete Licensing Path",
+    usd: 299,
+    cents: 29900,
+    includes: "All 135 hours, plus California Exam Prep and the Licensing/Application Navigator."
+  }),
+  /* Required by RE 313 and not yet decided. It must be the same policy version the
+     enrollment flow presents and records; inventing one here would put a DRE-filed document
+     at odds with what a student actually agrees to. */
+  refundPolicy: null
 });
 
 export const INSTRUCTOR = Object.freeze({

@@ -19,8 +19,8 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | STATUTORY/PRE-LICENSE SCHOOL NAME | **StateCourse LLC** |
 | WEB SITE ADDRESS / MOBILE DEVICE APP NAME | **https://statecourse.com** |
 | DRE STATUTORY/PRE-LICENSE SCHOOL ID # | *(leave blank — DRE assigns this on approval)* |
-| PHONE NUMBER | *(enter at signing)* |
-| EMAIL ADDRESS | *(enter at signing)* |
+| PHONE NUMBER | **(310) 686-5053** |
+| EMAIL ADDRESS | **info@statecourse.com** |
 | ADDRESS (STREET, CITY, STATE, ZIP CODE) | **407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277** |
 | COURSE NAME | **Real Estate Principles** |
 | BRIEF COURSE DESCRIPTION | A 45-hour statutory pre-license course covering the fundamentals of California real estate: the profession and its regulatory structure, property rights and estates, agency, contracts, financing, appraisal, land use, taxation, and the licensing and disclosure obligations of a California licensee. |
@@ -28,11 +28,11 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | COURSE HOURS | **45** |
 | METHOD OF FINAL EXAM PRESENTATION | **IN PERSON PROCTORED and INTERNET** — the examination is delivered over the internet and supervised in person by a school-designated proctor |
 | COURSE DATES AND LOCATION (for live lectures) | **Not applicable — this is not a live lecture course.** |
-| COURSE FEES | *(enter at signing — must state the total the student pays, including any shipping, handling, package, or discount terms. Must match what the enrollment flow charges.)* |
+| COURSE FEES | See the fee block below — the field asks for package and discount terms too, so all three prices are disclosed |
 | TEXTBOOK / WORKBOOK / OUTLINE — Title | *Real Estate Principles — StateCourse LLC California Course Text* |
 | — Author(s) | StateCourse LLC |
 | — Copyright Date | 2026 |
-| — Pages | **332** — the bound volume at `california/print/`; regenerate and re-check if any lesson changes |
+| — Pages | *(enter the final bound page count of the printed course text)* |
 | — Edition | 1.0 |
 | REFUND/CANCELLATION POLICY | *(enter at signing — must be the same policy version the enrollment flow presents and records. See the note below.)* |
 | FINAL EXAMINATION CRITERIA — Number of questions | **100** |
@@ -52,9 +52,23 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 >
 > **Completion certificate.** Delivered within 15 days of successful completion. A duplicate certificate is available on request for as long as the school holds the record.
 
-## Two fields that must not be guessed
+## COURSE FEES — text to enter
 
-**COURSE FEES** and **REFUND/CANCELLATION POLICY** are left for entry at signing rather than filled here. Both are commercial terms that must match, exactly, what the enrollment flow presents to the student and records against the enrollment. Writing a number here that the platform does not charge would put a discrepancy between a DRE-filed document and the student's actual experience, and that is the kind of discrepancy that ends an approval.
+RE 313's fee field asks for the total "**including any shipping and handling fees, course group package fees, discounts etc.**", so every way a student can buy this course is disclosed, not only the single-course price.
+
+> **$79** — this course purchased on its own.
+>
+> **$199** — *California Required Education — 135 Hours*: this course together with the other two California statutory pre-license courses, 135 hours in total.
+>
+> **$299** — *California Complete Licensing Path*: all 135 hours plus California Exam Prep and the Licensing/Application Navigator. **Exam Prep and the Navigator are not statutory pre-license education, carry no DRE course credit, and are not part of this application.**
+>
+> No shipping or handling fee. The course is delivered online; no printed material is shipped to the student.
+
+## The one field that must not be guessed
+
+**REFUND/CANCELLATION POLICY** is left for entry at signing rather than filled here, because no policy has been decided. It must match, exactly, the policy version the enrollment flow presents to the student and records against the enrollment. Writing a policy here that the platform does not implement would put a DRE-filed document at odds with what a student actually agrees to, and that is the kind of discrepancy that ends an approval.
+
+**This is an outstanding item. RE 313 cannot be printed without it.**
 
 ## Delivery to the student
 

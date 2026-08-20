@@ -19,7 +19,7 @@ Everything below is a test-mode object identifier. These are not secrets — the
 | ca-real-estate-practice-45 | `prod_V6UwMrEakYzLdc` | `price_1U6KVHI5Vlt1VlIgByrC7lPi` | $199.00 |
 | ca-mortgage-loan-brokering-lending-45 | `prod_V6Uw9czNINCn7M` | `price_1U6KVII5Vlt1VlIgDsO24xaO` | $199.00 |
 
-**$199 is a placeholder, not a pricing decision.** It exists so the plumbing has something to exercise. Whatever the real number turns out to be, changing it means updating `STATECOURSE_PRICE_<KEY>_TEST_CENTS` and re-running the setup script, which archives the old Stripe price and creates a new one — prices are immutable in Stripe so that every past payment keeps pointing at the amount it actually charged.
+**California is priced at $79 per course as of 2026-08-20** — see `docs/payments/california-pricing.md`. The earlier $199 placeholders were archived and replaced. **The six non-California courses still carry the $199 placeholder**, which is not a pricing decision for those states; each will be set when its own pricing is decided. Changing a price means updating `STATECOURSE_PRICE_<KEY>_TEST_CENTS` and re-running the setup script, which archives the old Stripe price and creates a new one — prices are immutable in Stripe so that every past payment keeps pointing at the amount it actually charged.
 
 Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds a price to compare against the configured amount.
 

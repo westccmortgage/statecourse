@@ -8,14 +8,17 @@ Read it once through before printing anything. Total print run is **996 pages of
 
 ## Before you print: two things must be settled
 
-### 1. The FBNS decision — read `00_administrative/A5-fbns-determination.md`
+### 1. ~~The FBNS decision~~ — DECIDED, nothing to do
 
-You cannot sign RE 306 without answering item 10, and item 10 is yes-or-no under your signature.
+Option A. The school trades as **StateCourse LLC**. RE 306 item 2 blank, item 10 **NO**. No FBNS, nothing to attach, nothing to renew.
 
-- **Option A (recommended):** present the school publicly as **"StateCourse LLC"**. Item 2 blank, item 10 **NO**, no FBNS, nothing to attach, nothing to renew. Your domain and logo are unaffected.
-- **Option B:** trade as **"StateCourse"**. You must file the FBNS with the **Los Angeles County Clerk** and publish four weeks **before** you can mail, because item 10 requires the filed copy as an attachment.
+**One rule follows and it is binding:** the *school name* on RE 313, in the enrollment flow, and on the completion certificate reads **StateCourse LLC**. Marketing prose may still say "StateCourse" the way any company refers to itself informally.
 
-**Everything below assumes Option A.** If you choose B, add roughly six weeks and one attachment.
+### 1b. The refund and cancellation policy — STILL NEEDED
+
+**RE 313 has a mandatory REFUND/CANCELLATION POLICY field and no policy has been decided.** The form cannot be printed without it, and whatever it says must be exactly what the enrollment flow shows the student and records against the enrollment.
+
+This is now the only piece of RE 313 that is not filled.
 
 ### 2. The college instructor certifications — read `00_administrative/A7-instructor-package.md`, section A7.2
 
@@ -117,12 +120,11 @@ Sign in **blue ink**, so an original is distinguishable from a photocopy at a gl
 
 ## What to fill in by hand that I could not fill for you
 
+Phone **(310) 686-5053**, email **info@statecourse.com**, and all three prices are already printed on the forms — nothing to write in by hand for those.
+
 | Field | Where |
 |---|---|
-| Business telephone number | RE 306 item 3; RE 313; RE 311 specimen |
-| Public contact email | RE 306 item 6; RE 313 — **use an address you actually monitor**; DRE deficiency notices go there |
-| Course fees | RE 313 — must match exactly what your enrollment flow charges |
-| Refund/cancellation policy | RE 313 — must match exactly the policy version your enrollment flow presents |
+| Refund/cancellation policy | RE 313 — **the only field still empty**; must match exactly the policy version your enrollment flow presents |
 | Regulator and sample student credentials | Login instructions sheet, each course |
 
 ---

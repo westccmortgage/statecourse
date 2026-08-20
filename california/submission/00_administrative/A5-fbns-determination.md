@@ -2,7 +2,15 @@
 
 **Applicant:** StateCourse LLC
 **Prepared:** August 20, 2026
-**Status:** Submission draft. Not filed. **This determination requires a decision from the owner before RE 306 can be signed** — see "The decision" below.
+**Status:** Submission draft. Not filed.
+
+> ## DECIDED — 2026-08-20: Option A. No FBNS.
+>
+> The school trades under its full registered name, **StateCourse LLC**. No fictitious business name is used, none is filed, and nothing is attached to the application.
+>
+> **RE 306 item 2: blank. RE 306 item 10: NO.**
+>
+> The analysis below is retained because it is the reasoning that supports those two answers under a signature, and because the consistency rule at the end of Option A is now binding.
 
 ## The question
 
@@ -56,9 +64,9 @@ Note that **RE 307 Regulation 3004(a)** independently requires advertising to "c
 - Renew every five years.
 - **The application cannot be filed until the FBNS is filed**, because item 10 requires the copy as an attachment. Add the county's processing time and the four-week publication run to the schedule.
 
-### Recommendation
+### Recommendation — adopted
 
-**Option A.** It costs nothing, delays nothing, removes an attachment from the envelope, satisfies Regulation 3004(a) at the same stroke, and eliminates a recurring five-year obligation. The brand is unaffected in every place a brand actually lives. Option B buys the ability to put "StateCourse" on an enrollment agreement, and that is the only thing it buys.
+**Option A**, and this is the decision taken. It costs nothing, delays nothing, removes an attachment from the envelope, satisfies Regulation 3004(a) at the same stroke, and eliminates a recurring five-year obligation. The brand is unaffected in every place a brand actually lives. Option B buys the ability to put "StateCourse" on an enrollment agreement, and that is the only thing it buys.
 
 **If Option A is chosen, one consistency rule follows and the audit enforces it:** the *school name* on RE 313, on the enrollment flow, and on the completion certificate reads "StateCourse LLC". Marketing prose elsewhere may say "StateCourse" the way any company refers to itself informally.
 

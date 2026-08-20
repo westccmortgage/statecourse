@@ -20,7 +20,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  COURSES, COURSE_DESIGN, DRE, ENROLLMENT_RULES, FEES, FINAL_EXAM, INSTRUCTOR, PROVIDER, STATUS_LINE
+  COURSES, COURSE_DESIGN, DRE, ENROLLMENT_RULES, FEES, FINAL_EXAM, INSTRUCTOR, PRICING, PROVIDER, STATUS_LINE
 } from "../config/california/submission-facts.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -72,16 +72,16 @@ Where an answer will not fit in the official field, the field gets a short entry
 |---|---|---|
 | 1A | DRE statutory/pre-license sponsor # | *(blank — no sponsor number has been issued)* |
 | 1B | Name of applicant sponsor/school | **${PROVIDER.legalName}** |
-| 2 | Other names used by the sponsor/school | *See administrative sheet A5. If Option A is chosen, this is **blank**.* |
-| 3 | Business telephone number | *(to be entered by hand at signing)* |
+| 2 | Other names used by the sponsor/school | **Blank — none.** The school trades under its full legal name. See administrative sheet A5. |
+| 3 | Business telephone number | **${PROVIDER.phone}** |
 | 4 | Sponsor/school classroom facility address | **${addr(PROVIDER.principalOffice)}** — annotate: *"No classroom instruction. ${COURSE_DESIGN.methodOfPresentation} course. Address shown is the principal office."* |
 | 5 | Sponsor/school mailing address | **${addr(PROVIDER.mailingAddress)}** |
-| 6 | Public contact email address | *(to be entered by hand at signing — must be monitored; DRE deficiency notices arrive there)* |
+| 6 | Public contact email address | **${PROVIDER.publicEmail}** — monitored; DRE deficiency notices arrive here |
 | 7 | Sponsor/school website address | **${PROVIDER.website}** |
 | 8 | Approved by the Bureau for Private Postsecondary Education? | **☐ YES ☒ NO/EXEMPT** — Exemption: **California Education Code § 94874(d)(2)(A)**. See administrative sheet A4. |
 | 9 | Type of ownership | ☐ Individual ☐ Partnership ☐ Corporation **☒ LLC** ☐ Other |
-| 10 | Using a DBA or fictitious business name? | *See administrative sheet A5. Option A → **NO**. Option B → **YES**, print "StateCourse", attach the filed FBNS.* |
-| 11 | Contact authorization — primary | **${INSTRUCTOR.name}**, ${PROVIDER.legalName}. Original signature, telephone and email entered by hand. No secondary contacts; those lines stay blank. |
+| 10 | Using a DBA or fictitious business name? | **☐ YES ☒ NO** — the school trades under its registered name, ${PROVIDER.legalName}, so no name other than the one in its Articles of Organization is used and B&P § 17900(b)(5) is not engaged. Nothing to attach. See administrative sheet A5. |
+| 11 | Contact authorization — primary | **${INSTRUCTOR.name}**, ${PROVIDER.legalName}, ${PROVIDER.phone}, ${PROVIDER.publicEmail}. **Original signature written by hand.** No secondary contacts; those lines stay blank. |
 
 ## Course summary — items 12 to 23
 
@@ -165,8 +165,8 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | STATUTORY/PRE-LICENSE SCHOOL NAME | **${PROVIDER.legalName}** |
 | WEB SITE ADDRESS / MOBILE DEVICE APP NAME | **${PROVIDER.website}** |
 | DRE STATUTORY/PRE-LICENSE SCHOOL ID # | *(leave blank — DRE assigns this on approval)* |
-| PHONE NUMBER | *(enter at signing)* |
-| EMAIL ADDRESS | *(enter at signing)* |
+| PHONE NUMBER | **${PROVIDER.phone}** |
+| EMAIL ADDRESS | **${PROVIDER.publicEmail}** |
 | ADDRESS (STREET, CITY, STATE, ZIP CODE) | **${addr(PROVIDER.mailingAddress)}** |
 | COURSE NAME | **${course.title}** |
 | BRIEF COURSE DESCRIPTION | ${course.description} |
@@ -174,7 +174,7 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | COURSE HOURS | **${COURSE_DESIGN.hours}** |
 | METHOD OF FINAL EXAM PRESENTATION | **${COURSE_DESIGN.re306_15B.join(" and ")}** — the examination is delivered over the internet and supervised in person by a school-designated proctor |
 | COURSE DATES AND LOCATION (for live lectures) | **Not applicable — this is not a live lecture course.** |
-| COURSE FEES | *(enter at signing — must state the total the student pays, including any shipping, handling, package, or discount terms. Must match what the enrollment flow charges.)* |
+| COURSE FEES | See the fee block below — the field asks for package and discount terms too, so all three prices are disclosed |
 | TEXTBOOK / WORKBOOK / OUTLINE — Title | *${course.title} — ${PROVIDER.legalName} California Course Text* |
 | — Author(s) | ${PROVIDER.legalName} |
 | — Copyright Date | 2026 |
@@ -198,9 +198,23 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 >
 > **Completion certificate.** Delivered within ${ENROLLMENT_RULES.certificateDeliveryDays} days of successful completion. A duplicate certificate is available on request for as long as the school holds the record.
 
-## Two fields that must not be guessed
+## COURSE FEES — text to enter
 
-**COURSE FEES** and **REFUND/CANCELLATION POLICY** are left for entry at signing rather than filled here. Both are commercial terms that must match, exactly, what the enrollment flow presents to the student and records against the enrollment. Writing a number here that the platform does not charge would put a discrepancy between a DRE-filed document and the student's actual experience, and that is the kind of discrepancy that ends an approval.
+RE 313's fee field asks for the total "**including any shipping and handling fees, course group package fees, discounts etc.**", so every way a student can buy this course is disclosed, not only the single-course price.
+
+> **$${PRICING.singleCourse.usd}** — this course purchased on its own.
+>
+> **$${PRICING.requiredEducation.usd}** — *${PRICING.requiredEducation.name}*: this course together with the other two California statutory pre-license courses, ${COURSE_DESIGN.hours * 3} hours in total.
+>
+> **$${PRICING.completePath.usd}** — *${PRICING.completePath.name}*: all ${COURSE_DESIGN.hours * 3} hours plus California Exam Prep and the Licensing/Application Navigator. **Exam Prep and the Navigator are not statutory pre-license education, carry no DRE course credit, and are not part of this application.**
+>
+> No shipping or handling fee. The course is delivered online; no printed material is shipped to the student.
+
+## The one field that must not be guessed
+
+**REFUND/CANCELLATION POLICY** is left for entry at signing rather than filled here, because no policy has been decided. It must match, exactly, the policy version the enrollment flow presents to the student and records against the enrollment. Writing a policy here that the platform does not implement would put a DRE-filed document at odds with what a student actually agrees to, and that is the kind of discrepancy that ends an approval.
+
+**This is an outstanding item. RE 313 cannot be printed without it.**
 
 ## Delivery to the student
 

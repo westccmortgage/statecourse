@@ -15,16 +15,16 @@ Where an answer will not fit in the official field, the field gets a short entry
 |---|---|---|
 | 1A | DRE statutory/pre-license sponsor # | *(blank — no sponsor number has been issued)* |
 | 1B | Name of applicant sponsor/school | **StateCourse LLC** |
-| 2 | Other names used by the sponsor/school | *See administrative sheet A5. If Option A is chosen, this is **blank**.* |
-| 3 | Business telephone number | *(to be entered by hand at signing)* |
+| 2 | Other names used by the sponsor/school | **Blank — none.** The school trades under its full legal name. See administrative sheet A5. |
+| 3 | Business telephone number | **(310) 686-5053** |
 | 4 | Sponsor/school classroom facility address | **150 E Olive Avenue, Suite 112, Burbank, CA 91502** — annotate: *"No classroom instruction. Correspondence/Independent Study, Internet course. Address shown is the principal office."* |
 | 5 | Sponsor/school mailing address | **407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277** |
-| 6 | Public contact email address | *(to be entered by hand at signing — must be monitored; DRE deficiency notices arrive there)* |
+| 6 | Public contact email address | **info@statecourse.com** — monitored; DRE deficiency notices arrive here |
 | 7 | Sponsor/school website address | **https://statecourse.com** |
 | 8 | Approved by the Bureau for Private Postsecondary Education? | **☐ YES ☒ NO/EXEMPT** — Exemption: **California Education Code § 94874(d)(2)(A)**. See administrative sheet A4. |
 | 9 | Type of ownership | ☐ Individual ☐ Partnership ☐ Corporation **☒ LLC** ☐ Other |
-| 10 | Using a DBA or fictitious business name? | *See administrative sheet A5. Option A → **NO**. Option B → **YES**, print "StateCourse", attach the filed FBNS.* |
-| 11 | Contact authorization — primary | **Anatoliy Kanevsky**, StateCourse LLC. Original signature, telephone and email entered by hand. No secondary contacts; those lines stay blank. |
+| 10 | Using a DBA or fictitious business name? | **☐ YES ☒ NO** — the school trades under its registered name, StateCourse LLC, so no name other than the one in its Articles of Organization is used and B&P § 17900(b)(5) is not engaged. Nothing to attach. See administrative sheet A5. |
+| 11 | Contact authorization — primary | **Anatoliy Kanevsky**, StateCourse LLC, (310) 686-5053, info@statecourse.com. **Original signature written by hand.** No secondary contacts; those lines stay blank. |
 
 ## Course summary — items 12 to 23
 
