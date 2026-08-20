@@ -419,6 +419,11 @@ service belongs to the buyer, not to the property, so it never enters the calcul
 > carries an extraction or typographical artefact. **No item in this module's bank turns on the divide
 > form**, and the engagement items state the relationship in words — *the multiplier converts rent into
 > value, and value is the larger number* — so that a student is never graded on the ambiguity.
+>
+> **Section XVI settles the practical consequence.** In its Required Activity for the income approach the
+> Commission states, in its own words: ***"There will be no calculations using a GRM."*** GRM is therefore
+> examinable as a **concept** — what it relates, and which property class it serves — and **no computation
+> using it is required anywhere in this course.** See Module NC-16.
 
 The consistency warning in the Commission's note is worth its own line: a GRM derived from **monthly**
 rent must be applied to **monthly** rent. Mixing monthly and annual figures produces an answer wrong by a
