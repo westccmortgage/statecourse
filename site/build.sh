@@ -77,3 +77,10 @@ node -e 'const c=require("./dist/data/course-catalog.json"); const courses=c.cat
 ! find dist -type f -print | grep -Eq 'final-exam-bank|answer-key'
 ! grep -rlq 'correctChoice' dist
 ! grep -rlq 'FINAL_EXAM_BANKS' dist
+# The three checks above all miss a bundle: a build step once copied the whole california/
+# tree into one published JSON file, whose NAME matched no pattern and whose CONTENT was
+# prose markdown containing neither correctChoice nor FINAL_EXAM_BANKS. These catch the
+# answer-key material by what it says rather than by where it lives or what it is called.
+! grep -rlq 'instructor version and answer key' dist
+! grep -rlq 'Items, with the material reference for each answer' dist
+! grep -rlq '__statecourse_private_export' dist

@@ -2,9 +2,15 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 
 // Temporary submission-package export. Remove after artifact retrieval.
+//
+// CHANGED 2026-08-20. This wrote into public/, so every build published the whole
+// california/ tree - including all six final-exam answer keys - to the live site. RE 303:
+// "Under no circumstances shall the final exam be furnished directly to the students."
+// The output now goes to a gitignored local directory that no build publishes. Do not
+// point this back at public/ or dist/ for any reason.
 const root = process.cwd();
 const sourceRoot = path.join(root, 'california');
-const outputDir = path.join(root, 'public', '__statecourse_private_export_8f3c1a7d');
+const outputDir = path.join(root, '.local-export');
 const outputPath = path.join(outputDir, 'california-source.json');
 
 async function walk(dir, base = dir) {

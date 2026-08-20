@@ -64,3 +64,7 @@ next-env.d.ts
 # Program segments vary by state - "pre-license", "qualifying", and others - so this
 # matches any program directory under a jurisdiction rather than naming each one.
 /public/statecourse/real-estate/*/*/
+
+# Local-only export destination for scripts/export-california-source-temp.mjs.
+# Never inside public/ or dist/ — see tests/no-answer-key-published.test.mjs
+.local-export/

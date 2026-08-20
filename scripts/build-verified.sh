@@ -21,7 +21,13 @@ fi
 echo "Running bounded vinext build..."
 node "${SITES_PROJECT_ROOT}/scripts/generate-national-platform.mjs"
 node "${script_dir}/sync-california-pdf-downloads.mjs"
-node "${script_dir}/export-california-source-temp.mjs"
+# REMOVED 2026-08-20. This line ran export-california-source-temp.mjs, which copied the
+# entire california/ tree - including all six final-exam answer keys - into
+# public/__statecourse_private_export_8f3c1a7d/california-source.json, i.e. straight onto
+# the live site. RE 303: "Under no circumstances shall the final exam be furnished directly
+# to the students." Publishing the keys would have invalidated every examination.
+# The script is retained for the GitHub-artifact route only and must never be wired into a
+# build again; tests/no-answer-key-published.test.mjs now fails the suite if it is.
 timeout \
   --signal=TERM \
   --kill-after="${SITES_BUILD_KILL_AFTER:-10s}" \
