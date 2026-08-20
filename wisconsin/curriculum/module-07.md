@@ -346,6 +346,76 @@ not be able to discover through reasonably vigilant observation.
 
 ---
 
+## Extended treatment — title worked through
+
+### E7.1 The deeds compared
+
+| Deed | Warrants | Typical use | Buyer's risk |
+|---|---|---|---|
+| Warranty deed | Against **all** defects, whenever arising | Residential resale | Lowest |
+| Special warranty | Only defects arising **during the grantor's ownership** | Fiduciaries, entities, builders | Pre-ownership defects uncovered |
+| Quit claim | **Nothing** — conveys whatever the grantor has | Curative; family; releasing an interest | The grantor may have owned nothing |
+| Personal representative's | The authority under which the signer acts | Estate sales | Whether the authority was properly obtained |
+| Sheriff's | The judicial process behind it | Foreclosure sales | Whether the process was completed correctly |
+| Deed in lieu | Voluntary conveyance to a lender | Avoiding foreclosure | **Junior liens generally survive** |
+
+### E7.2 A chain of title, read
+
+*The commitment shows: 1971 warranty deed to Harold and Ruth; 1998 quit claim from Ruth to Harold; 2004
+warranty deed from Harold to the current seller; a 1999 mortgage marked unsatisfied; a 2016 judgment
+against "H. Anderson"; and a 2021 easement to a utility.*
+
+**The 1998 quit claim** is ordinary — a spouse releasing an interest, most likely on a divorce or an
+estate plan — but a quit claim in a chain always raises the question of **what interest existed to
+release**, and in Wisconsin the **marital property** question sits behind it.
+
+**The 1999 mortgage marked unsatisfied** is a Schedule B-I requirement and probably the longest lead
+item: locating a lender acquired twice since and obtaining a recorded **satisfaction** takes weeks.
+
+**The 2016 judgment against "H. Anderson"** is a **common-name** problem. It may be the seller or it may
+be a different person entirely, and clearing it requires an affidavit or a search the title company
+directs. It is routine and it takes time.
+
+**The 2021 utility easement** is a Schedule B-II **exception** — a risk the insurer declines and the
+buyer keeps — and its location matters if the buyer intends to build.
+
+**The licensee's part in all four:** read Schedule B-I the day it arrives, identify the owner and the
+deadline for each requirement, escalate to the closing agent, and tell the client in writing what may
+move the closing date.
+
+### E7.3 Recording, notice, and the possession problem
+
+**Recording gives constructive notice** and does not transfer title. **Title passes on delivery** with
+present intent, and on acceptance.
+
+**Possession is inquiry notice**, and it is the notice a licensee is most likely to encounter and least
+likely to act on. A tenant, a relative, a former owner, a person storing equipment in an outbuilding —
+each raises a question a reasonable purchaser must investigate, and the buyer is charged with what a
+proper inquiry would have revealed even where nothing is recorded.
+
+**And it lines up with the Schedule B-II exception for "rights of parties in possession"**, so the
+policy will not cover whatever the inquiry would have found.
+
+**What a licensee does:** disclose the occupancy in writing as a fact the firm knows —
+**§ 452.133(1)(c)** — and insist the question go in writing to the seller and to the closing agent
+before closing. **Never accept the seller's characterisation as settling it.**
+
+### E7.4 Probate's effect on a timetable
+
+| Step | Who | Typical effect on a closing date |
+|---|---|---|
+| Determining whether administration is required | Title company, counsel | Days |
+| Appointment of a personal representative | Court | **Weeks** |
+| Confirming the scope of the letters | Title company | Days |
+| Court approval of a sale, where required | Court | **Weeks** |
+| Executing a personal representative's deed | Personal representative | At closing |
+
+**A purchase contract written on an estate property with an ordinary closing date is a contract that will
+need amendment.** The licensee's contribution is to ask at listing whether an owner has died, route the
+answer, and set a realistic date — not to discover it when the commitment arrives.
+
+---
+
 ## Instructor source note for Module WI-07
 
 Wisconsin statements rest on text read directly from `docs.legis.wisconsin.gov` on 2026-08-20 and

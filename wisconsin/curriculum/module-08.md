@@ -446,6 +446,100 @@ seller's financing that **§ 452.133(1)(c)** reaches.
 
 ---
 
+## Extended treatment — finance developed
+
+### E8.1 An amortisation schedule, first four months
+
+*Loan $249,600 at 6.375%, monthly payment $1,557.50.*
+
+| Month | Opening balance | Interest | Principal | Closing balance |
+|---:|---:|---:|---:|---:|
+| 1 | $249,600.00 | $1,326.00 | $231.50 | $249,368.50 |
+| 2 | $249,368.50 | $1,324.77 | $232.73 | $249,135.77 |
+| 3 | $249,135.77 | $1,323.53 | $233.97 | $248,901.80 |
+| 4 | $248,901.80 | $1,322.29 | $235.21 | $248,666.59 |
+
+Four payments totalling $6,230.00 have retired **$933.41** of principal. That is what a buyer means when
+they say the early years "all go to interest", and showing it beats asserting it — particularly to a
+buyer weighing discount points against a short expected holding period.
+
+**The break-even on points.** *1.5 points on $249,600 costs $3,744 and lowers the payment by $61 a
+month.* 3,744 ÷ 61 = **61 months**, a little over five years. Whether that is worth doing depends on how
+long the borrower holds the loan, which the borrower knows and the licensee does not.
+
+### E8.2 The loan process, stage by stage, and what stops it
+
+**Pre-qualification** — a conversation. **Pre-approval** — a submitted application with verified
+documentation and usually a conditional underwriting decision.
+
+**Application** — starts the TRID clock; the **Loan Estimate** follows.
+
+**Processing** — documentation gathered: income, employment, assets, credit explanations, the accepted
+offer and every amendment, and any condominium or association documents.
+
+**Appraisal and title** — ordered by the lender and the closing agent. Both can stop a closing and both
+are outside the buyer's control.
+
+**Underwriting** — automated first in most cases, manual where the file requires it. The output is an
+approval **with conditions**.
+
+**Conditions** — prior-to-document conditions clear before the closing package issues; prior-to-funding
+conditions before money moves. **This is the stage that most often breaks a closing date**, because a
+condition raised on Tuesday for a Thursday closing cannot be met in time.
+
+**Clear to close, Closing Disclosure, consummation, funding, recording.**
+
+**Servicing** — frequently sold or transferred. The borrower is notified and **the terms of the note do
+not change.**
+
+### E8.3 Managing the financing contingency
+
+Read the clause and extract four things: **the loan type and amount** it protects; **the deadline**;
+**what notice** must be given and to whom; and **what happens** if the deadline passes without action.
+
+Then work backwards from binding acceptance: application within the period; documentation to the lender
+immediately; appraisal ordered early enough that a **reconsideration of value** is possible; conditions
+chased **weekly, in writing**, with a record of each request and response; and escalation to the
+supervising broker the moment a deadline is at risk.
+
+On a Wisconsin property with a **private well**, a **septic system**, an **outbuilding**, **acreage**, or
+a **seasonal cottage**, add one more: find out early whether the lender's product has **property
+standards** the property will not meet. Discovering an FHA minimum property standard problem two weeks
+before closing is discovering it too late — and the answer is frequently a **portfolio lender**.
+
+### E8.4 The buyer behaviours that undo an approval
+
+Give this list in writing at binding acceptance, because every item on it happens:
+
+Do not change or leave a job. Do not open credit accounts, and do not finance furniture, a vehicle, a
+snowmobile or appliances. Do not close accounts or pay off collections without asking the loan officer —
+either can move a score. Do not make large deposits that cannot be documented; a gift needs a **gift
+letter and a paper trail**. Do not move money between accounts unnecessarily. Do not co-sign for anyone.
+Do not miss a payment on anything.
+
+Underwriting is frequently **re-verified immediately before closing**, so a purchase made a week before
+closing can undo an approval given a month earlier.
+
+### E8.5 A land contract compared with a mortgage
+
+| | Mortgage | Land contract |
+|---|---|---|
+| Legal title | **Buyer**, subject to the lien | **Vendor**, until performance |
+| Buyer holds | Fee, encumbered | **Possession and equitable title** |
+| Instrument recorded | Mortgage | **The land contract** |
+| Lender | A third party | **The seller** |
+| Underwriting | The lender's | **The vendor's judgment** |
+| Buyer's protection on vendor default | N/A | **Depends on recording and on the contract** |
+| Effect of vendor's existing mortgage | N/A | **May trigger the due-on-sale clause** |
+| Taxes and insurance | Usually escrowed | **Must be allocated and verified in the contract** |
+| Remedy on buyer default | Judicial foreclosure | **Statutory remedies; the vendee's exposure is real** |
+| Deed | Delivered at purchase | **Delivered at the end** |
+
+Every row in the right column is a legal question, which is why Hour 48.4's instruction is that both
+parties go to counsel before signing.
+
+---
+
 ## Instructor source note for Module WI-08
 
 Wisconsin statements rest on text read directly from `docs.legis.wisconsin.gov` on 2026-08-20 and

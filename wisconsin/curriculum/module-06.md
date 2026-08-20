@@ -766,6 +766,131 @@ fair presentation and prompt notification, and the buyers not selected are notif
 
 ---
 
+## Extended treatment — contracts worked through
+
+### E6.1 The four contract states, applied to Wisconsin facts
+
+| Facts | Classification | Why |
+|---|---|---|
+| Oral agreement to sell a farm, all terms agreed | **Unenforceable** | Statute of frauds; a conveyance must be written and signed — ch. 706, and § 240.10 for a broker's contract |
+| Offer signed by a 17-year-old buyer | **Voidable by the minor** | Capacity; it operates until disaffirmed |
+| Agreement to sell a property for an unlawful use | **Void** | Unlawful objective; no legal effect ever |
+| Offer with binding acceptance delivered, closing in five weeks | **Valid and executory** | All elements present; performance outstanding |
+| Homestead offer signed by one spouse only | **Question, not a classification** | Ch. 766 and § 706.02 — route to the title company and counsel |
+
+The last row is the Wisconsin one. A licensee's instinct is to classify; the correct response is to
+identify that the answer requires reading ch. 766 and the deed, and to route it.
+
+### E6.2 Binding acceptance, traced through a real sequence
+
+*Monday 9:00* — Buyer signs an offer with a binding acceptance deadline of Wednesday 5:00 p.m.
+*Monday 14:00* — Offer delivered to the listing firm.
+*Tuesday 11:00* — Seller signs a **counter-offer** at a higher price, with its own binding acceptance
+deadline of Thursday noon.
+
+**The buyer's offer is now dead.** A counter-offer is a rejection plus a new offer, so the seller cannot
+change their mind on Wednesday and accept the original.
+
+*Tuesday 16:00* — Counter-offer delivered to the buyer's firm.
+*Wednesday 10:00* — Buyer telephones and says "we accept".
+
+**Nothing has happened.** An oral acceptance is not binding acceptance. No clock has started.
+
+*Wednesday 15:00* — Buyer signs the counter-offer.
+
+**Still nothing**, unless signing is accompanied by delivery in the manner the form requires.
+
+*Wednesday 16:20* — The signed counter-offer is delivered as the form provides.
+
+**That is binding acceptance**, and **every deadline in the file runs from Wednesday.** An inspection
+period of ten days ends on a date computed from Wednesday, not from Monday when the offer was written
+and not from Tuesday when the counter was signed.
+
+**The failure mode:** a licensee who diaries deadlines from the date the offer was written will run every
+deadline two days early — which is survivable — or, worse, will compute from the wrong document and run
+them late.
+
+### E6.3 Contingency mechanics, worked
+
+*An offer has a ten-day inspection contingency running from binding acceptance on Wednesday 3 June. The
+inspection occurs on 11 June and reveals a failed drain tile.*
+
+**What are the buyer's options?** Whatever the contingency provides — typically to proceed, to give
+notice requiring the seller to address the defect, or to terminate — within the period and by the notice
+the form requires.
+
+**When does the period end?** Computed from binding acceptance under the form's day-counting rule, which
+the licensee reads rather than assumes. Whether the day of binding acceptance counts, whether weekends
+count, and what happens when the last day is a weekend or holiday are all answered in the form.
+
+**What if the buyer does nothing?** Under many provisions the contingency is deemed satisfied or waived,
+and the protection is gone. **The period is a date after which a right disappears, not a date on which
+something may be done.**
+
+**What if the seller says "take your time"?** That is not an extension. An extension is a written
+**amendment** requiring the assent of all parties.
+
+**What does the licensee do?** State in writing exactly what the contingency permits, exactly when it
+expires, and exactly what notice is required — and make sure the buyer acts within the period. The
+licensee does **not** advise whether to terminate, whether the seller is in default, or whether the
+earnest money is returnable, because those are legal conclusions and **§ 452.133(2)(am)** limits advice
+to matters within the scope of ch. 452.
+
+### E6.4 Amendment or notice? A test that works
+
+Ask one question: **does this change the deal, or exercise a right the deal already gave?**
+
+| Situation | Instrument | Why |
+|---|---|---|
+| Extending the financing deadline by ten days | **Amendment** | Changes an agreed term; needs everyone's assent |
+| Buyer terminating under the inspection contingency | **Notice** | Exercises a right the contract gave |
+| Reducing the price after an appraisal | **Amendment** | Changes an agreed term |
+| Buyer waiving the inspection contingency | **Notice** | Exercises a right |
+| Agreeing that the seller will replace the furnace | **Amendment** | New obligation |
+| Seller notifying the buyer that a bump clause has been triggered | **Notice** | Exercises a right |
+| Changing the closing date | **Amendment** | Changes an agreed term |
+
+Getting it wrong has consequences in both directions: an amendment sent as a notice binds nobody, and a
+notice sent as an amendment invites the other side to refuse to sign something they never had to agree
+to.
+
+### E6.5 The file at binding acceptance — a checklist
+
+Run it the day binding acceptance occurs, not the week before closing:
+
+**Binding acceptance date recorded**, and every deadline computed from it and diarised.
+**The offer**, with every blank completed and every change initialled and dated by every party.
+**Every addendum** referenced in the offer actually attached, and every attached addendum referenced.
+**Any counter-offer or multiple counter-proposal**, complete, with the acceptance and delivery evidenced.
+**Earnest money** receipted, and its delivery to the named holder evidenced.
+**§ 452.135 disclosures** — Disclosure to Customers before negotiating on behalf of a non-client;
+Disclosure to Clients not later than the agency agreement.
+**The ch. 709 condition report**, delivered as the transaction requires.
+**The federal lead-based paint package** for pre-1978 housing, with the signed acknowledgment.
+**Every § 452.133(1)(c) written disclosure** of a material adverse fact, with the date it was given.
+**Any § 452.133(3)(b) self-dealing consent**, in the transaction contract where the statute requires it,
+and any **(3)(c)** referral disclosure.
+**The names and contact details** of the closing agent, the lender and the inspectors.
+
+A file that shows all of that answers a complaint. A file assembled afterwards answers nothing.
+
+### E6.6 Twelve errors and their corrections
+
+**Computing deadlines from the wrong date.** Compute from binding acceptance.
+**Treating an oral acceptance as acceptance.** It is not.
+**Countering several offers with ordinary counter-offers.** Use a multiple counter-proposal.
+**Believing the original offer survives a counter.** It does not.
+**Sending an extension as a notice.** An extension is an amendment.
+**Leaving a blank because the parties have not decided.** An undecided term is a term to decide.
+**Referencing an addendum that is not attached.**
+**Using a superseded version of an approved form.**
+**Altering an approved form's printed provisions.**
+**Writing a clause to solve a legal problem.** Route it.
+**Advising on default or on entitlement to earnest money.** Legal conclusions.
+**Letting a contingency lapse without notice.** The protection is gone.
+
+---
+
 ## Instructor source note for Module WI-06
 
 Wisconsin statements rest on text read directly from `docs.legis.wisconsin.gov` on 2026-08-20 and
