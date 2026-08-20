@@ -146,7 +146,7 @@ only what R4-28-1101(B) itself says.
 
 ### Item 4 — the existence of a lien or encumbrance
 
-Stated flatly. **Existence**, disclosed in writing to all other parties. Module AZ-03 built the general
+Stated flatly. **Existence**, disclosed in writing to all other parties. Module AZ-02 built the general
 content on liens and encumbrances; this is the rule that requires the licensee to say so.
 
 ---
@@ -263,7 +263,7 @@ broker who represents a party in the transaction.** Ordinary co-brokerage is not
 excluded by the rule's text.
 
 **A boundary this module does not cross.** Federal law also governs referral arrangements and settlement
-services, and Module AZ-08 covers the general federal content. **This module states only what R4-28-1101(G)
+services, and Module AZ-06 covers the general federal content. **This module states only what R4-28-1101(G)
 requires**, and does **not** state how (G) interacts with any federal requirement — that comparison was not
 worked from primary federal text for Arizona purposes and is **not stated here.**
 
@@ -386,7 +386,7 @@ contact cannot supply it.
 **exclusively through the principal's broker or the broker's representative** unless the buyer waives in
 writing or the same three people are unavailable for 24 hours.
 
-**Where this sits in practice.** Module AZ-06 covers the general content on presenting and negotiating
+**Where this sits in practice.** Module AZ-04 covers the general content on presenting and negotiating
 offers. **R4-28-1102 is the Arizona rule that decides *whom you may talk to* while doing it**, and it is a
 rule licensees breach out of impatience rather than intent.
 

@@ -166,7 +166,7 @@ process has put the designated broker in breach of a rule the salesperson does n
 
 **"Either alone or modified"** closes the obvious workaround — "nearly an acre," "acre-plus," "a full acre"
 are all inside the rule. **43,560 square feet** is the figure the rule states, and it is the figure Module
-AZ-04 uses in the general land-measurement content.
+AZ-09 uses in the general land-measurement content.
 
 ### B.6 Signs and electronic publication — subsection (I)
 

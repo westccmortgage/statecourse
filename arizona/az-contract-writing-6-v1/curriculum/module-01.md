@@ -126,7 +126,7 @@ because it drives the drafting standard: **write it down, completely, and have i
 
 ### C.1 What "identify the property" means when drafting
 
-A street address is an identifier, not a legal description. Module AZ-04 of the 90-hour course delivered the
+A street address is an identifier, not a legal description. Module AZ-02 of the 90-hour course delivered the
 general content on legal descriptions. **The drafting instruction is to use the description that identifies
 the property unambiguously, and never to invent or abbreviate one.**
 

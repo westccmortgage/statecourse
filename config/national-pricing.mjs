@@ -122,13 +122,13 @@ export const STATE_PRICING = Object.freeze([
     marketRange: "$299–$549",
     composition: "One 75-hour Broker Prelicensing Course following the Commission's sixteen Syllabus sections — 72.0 instructional hours plus the 3.0-hour end-of-course examination, which the Commission counts INSIDE the 75"
   }),
-  state("AZ", "Arizona", 96, 399, 549, BUILD_STATUS.RESEARCHED, {
+  state("AZ", "Arizona", 96, 399, 549, BUILD_STATUS.BUILT, {
     marketRange: "$549–$929",
     /* 96 is 90 + 6, and they are two separate regulatory records. The Arizona bundle must
        therefore grant TWO courses, and the registry's prelicense_hours field records only
        the 90 — it is the pre-license figure, not the total a student must complete. */
-    composition: "90-hour salesperson pre-license course plus 6-hour contract writing course",
-    note: "Two separate regulatory records; the bundle grants both"
+    composition: "Real Estate Salesperson Prelicense (90 hours under A.R.S. § 32-2124(B), of which 27 are the Arizona-specific course the commissioner may NOT waive) plus Real Estate Contract Law and Contract Writing (6 hours under § 32-2124(L), requiring the applicant's participation in DRAFTING a purchase contract, a listing agreement and a lease agreement)",
+    note: "Two separate regulatory records; the bundle grants both. Subsection (L) requires its six hours AFTER the requirements of subsection (B), certified at the time of application, so the six are additional to the ninety and never inside them"
   }),
 
   state("MT", "Montana", 70, 249, 349, BUILD_STATUS.RESEARCHED, {

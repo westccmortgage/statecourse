@@ -107,7 +107,7 @@ inexperienced drafter may expect it to do.
 ### C.1 What a lease creates
 
 A lease conveys a **leasehold estate** — possession for a term — and simultaneously contains **covenants**
-between the parties. Module AZ-02 of the 90-hour course delivered the general content on leasehold estates.
+between the parties. Module AZ-01 of the 90-hour course delivered the general content on leasehold estates.
 The drafting consequence is that a lease must settle both halves: **the estate** (who has possession, of
 what, for how long) and **the promises** (who does what during it).
 
