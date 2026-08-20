@@ -23,6 +23,36 @@ Everything below is a test-mode object identifier. These are not secrets — the
 
 Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds a price to compare against the configured amount.
 
+## State product structure
+
+27 products, two per state plus the California single course, created 2026-08-20 by
+`scripts/stripe-setup-bundles.mjs` from `config/national-pricing.mjs`.
+
+| State | SC-*-EDU | SC-*-COMPLETE |
+|---|---:|---:|
+| Florida | $149 | $249 |
+| Virginia | $199 | $299 |
+| Maine | $299 | $399 |
+| Wisconsin | $249 | $349 |
+| Missouri | $249 | $349 |
+| Oklahoma | $299 | $399 |
+| Washington | $299 | $399 |
+| Pennsylvania | $299 | $399 |
+| North Carolina | $299 | $399 |
+| Arizona | $399 | $549 |
+| California | $199 | $299 |
+| Colorado | $499 | $699 |
+| Texas | $499 | $649 |
+
+Plus `SC-CA-SINGLE` at $79.
+
+Products are found by `metadata['statecourse_sku']` and prices by lookup key
+`sc_<state>_<tier>_test`, so re-running the script reconciles rather than duplicating.
+Changing a price archives the old one and creates a new one.
+
+The nine per-course products created earlier remain alongside these — they are the
+course-level objects, keyed by `metadata['statecourse_course_id']`.
+
 ## Webhook
 
 | | |
