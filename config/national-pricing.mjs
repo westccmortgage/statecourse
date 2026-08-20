@@ -183,9 +183,16 @@ export const STATE_PRICING = Object.freeze([
   }),
 
   /* Tier 4 — very high-hour states, 150+ hours */
-  state("CO", "Colorado", 168, 499, 699, BUILD_STATUS.RESEARCHED, {
+  state("CO", "Colorado", 168, 499, 699, BUILD_STATUS.BUILT, {
     marketRange: "$429–$1,299",
-    note: "Kaplan is $799 for 168 hours plus exam prep, $1,299 for its career package"
+    /* SIX courses, not one. C.R.S. § 12-10-203(4)(a) fixes 48 and 48 exactly and then "a total of
+       seventy-two hours" from four named subjects, allocating none among the four; 4 CCR 725-1 Rule
+       2.1.A.2 makes that allocation, stating the first two as EXACT and the other four as FLOORS.
+       The bundle must therefore grant six courses, and the registry's prelicense_hours field records
+       the 168 total. */
+    composition: "Real Estate Law and Practice (48) plus Colorado Real Estate Contracts (48) plus, from the statutory 72-hour group, Real Estate Closings (not less than 24), Trust Accounts and Record Keeping (not less than 8), Current Legal Issues (not less than 8) and Practical Application (not less than 32) — the six courses Rule 2.1.A.2 names",
+    note: "Six separate courses; the bundle grants all six. § 12-10-203(4)(b) waives all but CONTRACTS and CLOSINGS for a broker licensed elsewhere, and (4)(c) waives all but CONTRACTS and the 72-hour group for a salesperson licensed elsewhere — so the Colorado contracts course is the one every applicant completes. Kaplan is $799 for 168 hours plus exam prep, $1,299 for its career package",
+    marketNote: "The Commission publishes its own qualifying education outline for each of the six, with hours allocated per topic in five of them"
   }),
   state("TX", "Texas", 180, 499, 649, BUILD_STATUS.UNRESEARCHED, {
     hoursSource: "market research only; Texas rules have not been read from primary sources",
