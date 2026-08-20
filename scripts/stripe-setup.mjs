@@ -89,9 +89,28 @@ async function stripe(path, { method = "GET", params } = {}) {
     headers["content-type"] = "application/x-www-form-urlencoded";
   }
   const res = await fetch(`https://api.stripe.com/v1${path}`, { method, headers, body });
-  const data = await res.json();
+  /* A proxy or captive network answers with plain text, not JSON, and res.json() then throws
+     a SyntaxError that says nothing useful about what went wrong. Read the body once and
+     report what actually came back. */
+  const text = await res.text();
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    fail(`Stripe ${method} ${path} returned ${res.status} but not JSON:\n    ${text.slice(0, 300)}${proxyHint()}`);
+  }
   if (!res.ok) fail(`Stripe ${method} ${path}: ${data?.error?.message || res.status}`);
   return data;
+}
+
+/* Node's fetch ignores HTTPS_PROXY unless told to use it, so behind a proxy every call fails
+   in a way that looks like a Stripe problem and is not one. */
+function proxyHint() {
+  const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
+  if (proxy && process.env.NODE_USE_ENV_PROXY !== "1") {
+    return "\n\n    HTTPS_PROXY is set but Node is not using it. Re-run with NODE_USE_ENV_PROXY=1.";
+  }
+  return "";
 }
 
 /* The env suffix the catalogue derives price and approval variables from. Read off the

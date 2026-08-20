@@ -1,22 +1,60 @@
 # Stripe sandbox state
 
-**Account:** StateCourse LLC sandbox (`acct_1U6HpAI5Vlt1VlIg`, test mode).
-Connected via the Stripe connector on 2026-08-19. Object IDs below are test-mode identifiers, not secrets; no key or signing secret appears here or anywhere in this repository.
+**Account:** StateCourse LLC sandbox (`acct_1U6HpAI5Vlt1VlIg`), **test mode**.
+Everything below is a test-mode object identifier. These are not secrets — they address nothing that holds money, and a test-mode object cannot charge a real card. No key or signing secret appears here or anywhere in this repository.
 
-## Created so far (2 of 9 products)
+**Brought up:** 2026-08-19. All nine catalogue courses have a product and a price, reconciled by `scripts/stripe-preflight.mjs --check-stripe`.
 
-| Course | Product | Created |
-|---|---|---|
-| ca-real-estate-principles-45 | `prod_V6UvqU6cvVogzu` | 2026-08-19 |
-| ca-mortgage-loan-brokering-lending-45 | `prod_V6Uw9czNINCn7M` | 2026-08-19 |
+## Products and prices
 
-The connector disconnected mid-run. **Resuming is safe**: both the connector path and `scripts/stripe-setup.mjs` find existing products by `metadata['statecourse_course_id']` before creating, so a re-run completes the remaining seven without duplicating these two.
+| Course | Product | Price (test) | Amount |
+|---|---|---|---|
+| me-sales-agent | `prod_V6XaHdNYkJHjVL` | `price_1U6KVDI5Vlt1VlIgoQm3tTpS` | $199.00 |
+| va-salesperson | `prod_V6XazAxRmjbAYi` | `price_1U6KVDI5Vlt1VlIgLxJacnP5` | $199.00 |
+| wi-salesperson | `prod_V6XaBKek5q2MuM` | `price_1U6KVEI5Vlt1VlIgqoojqaPK` | $199.00 |
+| mo-salesperson-preexam-48 | `prod_V6Xay4AD3aVtHw` | `price_1U6KVFI5Vlt1VlIgGhMzfU59` | $199.00 |
+| mo-real-estate-practice-24 | `prod_V6XaF8AVGNQzKx` | `price_1U6KVGI5Vlt1VlIgSAM9vKKa` | $199.00 |
+| ok-basic-prelicense-90 | `prod_V6XaF8tb9MeaUb` | `price_1U6KVGI5Vlt1VlIgM5q2nSNT` | $199.00 |
+| ca-real-estate-principles-45 | `prod_V6UvqU6cvVogzu` | `price_1U6KVHI5Vlt1VlIgI94wqYJ7` | $199.00 |
+| ca-real-estate-practice-45 | `prod_V6UwMrEakYzLdc` | `price_1U6KVHI5Vlt1VlIgByrC7lPi` | $199.00 |
+| ca-mortgage-loan-brokering-lending-45 | `prod_V6Uw9czNINCn7M` | `price_1U6KVII5Vlt1VlIgDsO24xaO` | $199.00 |
 
-## Remaining
+**$199 is a placeholder, not a pricing decision.** It exists so the plumbing has something to exercise. Whatever the real number turns out to be, changing it means updating `STATECOURSE_PRICE_<KEY>_TEST_CENTS` and re-running the setup script, which archives the old Stripe price and creates a new one — prices are immutable in Stripe so that every past payment keeps pointing at the amount it actually charged.
 
-1. Products for the other 7 catalogue courses (ca-real-estate-practice-45, va-salesperson, me-sales-agent, wi-salesperson, mo-salesperson-preexam-48, mo-real-estate-practice-24, ok-basic-prelicense-90).
-2. Test prices (lookup key `statecourse_<course id>_test`) — amounts are the user's pricing decision; whatever is chosen must equal `STATECOURSE_PRICE_<KEY>_TEST_CENTS` in the hosting environment or preflight `--check-stripe` will flag the mismatch.
-3. Webhook endpoint — needs the production/staging domain for `https://<domain>/.netlify/functions/stripe-webhook`; the signing secret goes straight into `STRIPE_WEBHOOK_SECRET_TEST`, never into a file.
-4. `node scripts/stripe-preflight.mjs --check-stripe` to reconcile.
+Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds a price to compare against the configured amount.
 
-Either path completes this: reconnect the Stripe connector, or run `scripts/stripe-setup.mjs` with the sandbox secret key from the dashboard (`https://dashboard.stripe.com/acct_1U6HpAI5Vlt1VlIg/apikeys`) set only in the shell environment.
+## What still has to happen
+
+**1. The webhook endpoint — the one remaining blocker.** Preflight reports it as a problem, correctly: without it a paid checkout is never finalised, so no enrollment and no access are ever granted. It needs the real site origin:
+
+```bash
+NODE_USE_ENV_PROXY=1 node scripts/stripe-setup.mjs \
+  --webhook https://<domain>/.netlify/functions/stripe-webhook
+```
+
+The signing secret prints once at creation and goes straight into `STRIPE_WEBHOOK_SECRET_TEST` in the hosting environment. If it is lost, roll it in the dashboard — it cannot be read back.
+
+**2. Hosting environment variables** — the runbook lists them. Nothing here is set in this sandbox; the values used to reconcile were placeholders passed on the command line for one run.
+
+**3. A real price decision** before anything is offered to anyone.
+
+## Running the scripts from this environment
+
+Node's `fetch` ignores `HTTPS_PROXY` unless told to use it, and this environment routes egress through a proxy. Without the flag the proxy answers in plain text, which used to surface as an unhelpful `SyntaxError` from `JSON.parse`. Both scripts now report the real response and say what to do:
+
+```bash
+NODE_USE_ENV_PROXY=1 node scripts/stripe-setup.mjs
+NODE_USE_ENV_PROXY=1 node scripts/stripe-preflight.mjs --check-stripe
+```
+
+`curl` is unaffected — it honours `HTTPS_PROXY` on its own.
+
+## Nothing here is sellable
+
+Preflight's own summary: **0 of 9 courses would accept a payment.** Every one is blocked, and the reason is the right one — each is still `submission_draft` with enrollment off. A Stripe price is a commercial object; selling a regulated course additionally requires a regulator's approval, and the platform keeps those two facts apart deliberately.
+
+## About the key in git history
+
+The sandbox secret key was committed to `scripts/stripe-setup.mjs` in commit `05f079d` and pushed. It has been removed from the working tree but remains in history. **The account owner has reviewed this and decided not to roll it**, on the basis that a test-mode sandbox key cannot reach money or real customer data. That reasoning holds for this key and this account.
+
+It does not extend to a live key. A `sk_live_` key in history is a different matter entirely, and the secret-scan test in `tests/stripe-setup-tooling.test.mjs` fails the build on any of them — test or live — so this cannot happen again by accident.

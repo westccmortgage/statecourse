@@ -111,6 +111,8 @@ Done in the Stripe dashboard, not here.
 
 Set the price variables first, then:
 
+**Behind a proxy** (including this development environment), prefix every command with `NODE_USE_ENV_PROXY=1` — Node's `fetch` ignores `HTTPS_PROXY` otherwise, and the scripts will tell you so if you forget.
+
 ```bash
 # see what it would do, no network calls, no key needed
 node scripts/stripe-setup.mjs --dry-run

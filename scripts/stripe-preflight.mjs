@@ -110,7 +110,19 @@ if (checkStripe) {
     console.log("\nStripe objects");
     const call = async (path) => {
       const res = await fetch(`https://api.stripe.com/v1${path}`, { headers: { authorization: `Bearer ${secretKey}` } });
-      const data = await res.json();
+      /* Same trap as the setup script: a proxy answers in plain text and res.json() throws a
+         SyntaxError that blames Stripe for a local network problem. */
+      const text = await res.text();
+      let data;
+      try {
+        data = JSON.parse(text);
+      } catch {
+        const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
+        const hint = proxy && process.env.NODE_USE_ENV_PROXY !== "1"
+          ? " HTTPS_PROXY is set but Node is not using it; re-run with NODE_USE_ENV_PROXY=1."
+          : "";
+        throw new Error(`${res.status}, non-JSON response: ${text.slice(0, 160)}.${hint}`);
+      }
       if (!res.ok) throw new Error(data?.error?.message || String(res.status));
       return data;
     };
