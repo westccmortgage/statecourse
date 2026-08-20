@@ -1,6 +1,12 @@
 name: Export California Source
 
 on:
+  push:
+    branches:
+      - "claude/new-session-e08nli"
+    paths:
+      - ".github/workflows/export-california-source.yml"
+      - "california/**"
   pull_request:
     paths:
       - ".github/workflows/export-california-source.yml"
@@ -14,7 +20,7 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out pull request source
+      - name: Check out source
         uses: actions/checkout@v4
 
       - name: Upload California source package
