@@ -3,7 +3,7 @@
 ## Hours 23–29 · Product knowledge II: Maine land use, environment, transfer, and construction
 
 **Commission topic covered:** Product Knowledge (28%, 840 instructional minutes) — this module
-carries the remaining 390, and includes Case Study 1.
+carries the remaining 405, and includes Case Study 1.
 **Course version:** 1.0 submission draft
 **Regulatory status:** Not approved. No Maine sales agent credit is available for this course.
 
@@ -30,7 +30,7 @@ By the end of this module the student will be able to:
 | 27 | 0–60 | Registry, municipal, DEP/LUPC/DOT and service-provider sources | Section completed |
 | 28 | 0–60 | House styles, construction components, condition vocabulary | Section completed |
 | 29 | 0–45 | Case Study 1 — rural and waterfront property investigation and disclosure | Module engagement check |
-| **Total** | **390** | | Hour 29, minutes 45–60, begins Module 05 |
+| **Total** | **405** | | Hour 29, minutes 45–60, begins Module 05 |
 
 ---
 
@@ -565,6 +565,129 @@ advice on material matters beyond my expertise**, which both of these plainly ar
 their benefit and **§ 13283 3 B** from verifying the accuracy or completeness of the seller's
 statements — including "year-round potential". Either way: name the office, put it in writing, and do
 not opine.
+
+---
+
+## Extended treatment — Maine conditions and the record
+
+### E4.1 The Maine due-diligence matrix
+
+For a typical Maine residential property, the question, the office, and the document:
+
+| Question | Who answers | Document that records it |
+|---|---|---|
+| Zoning district and dimensional requirements | Code enforcement officer | Written zoning determination |
+| Shoreland zone and sub-district | Code enforcement officer | Ordinance and official map |
+| Nonconforming status of a structure | Code enforcement officer | Written determination |
+| Permits issued; open violations | Code enforcement officer | Permit file |
+| Subsurface wastewater permit and bedroom count | Local plumbing inspector | HHE-200 design on file |
+| Water quality on a private well | Certified laboratory | Test report |
+| Radon in air and water | Certified tester | Test report |
+| Lot lawfully created; subdivision status | Planning board; Registry | Recorded plan; approval file |
+| Access: public, private or discontinued way | Road commissioner; Registry | Town records; recorded plan |
+| Road maintenance obligation | Registry; road association | Recorded agreement |
+| Assessed value; current-use classification | Assessor | Property card; classification file |
+| Taxes owed; liens | Tax collector | Tax status letter |
+| Recorded easements, covenants, reservations | Title abstractor | Title commitment |
+| Flood zone | FEMA mapping; municipality | Flood map determination |
+| Underground oil storage tank | DEP; seller; fuel dealer | Registration; removal records |
+| Entrance permit on a state highway | Maine DOT | Permit |
+| Conservation easement | Registry; holder | Recorded easement |
+
+A licensee who hands a buyer this matrix, populated with what is known and blank where it is not, has
+served them properly whether they are a client or a customer — and has done it without giving a
+single answer that was not theirs to give.
+
+### E4.2 Reading a Maine property card
+
+The municipal assessor's property card is the most under-used document in Maine brokerage. It
+typically carries: the owner of record and the deed reference; the map and lot; acreage; assessed
+land and building values and the year of the last revaluation; a sketch with dimensions; a
+description of the improvements including year built, living area, bedroom and bath count, heating
+type, and outbuildings; and — critically — any **exemption or current-use classification**.
+
+Three uses:
+
+**Corroboration.** The card's living area, bedroom count and year built can be checked against the
+listing. A discrepancy is a question, not a fact — assessors' records contain errors — but it is a
+question a licensee should have asked before advertising the number.
+
+**Discovery.** A current-use classification, an exemption, or an outbuilding on the sketch that is
+not on the ground each tells the licensee something.
+
+**Boundaries the card does not answer.** Assessors' maps are for taxation and are **not survey
+grade**. They must never be used to describe a boundary.
+
+### E4.3 The chain of title, read
+
+A title abstractor works backward from the current owner and forward again. What a licensee should be
+able to recognise when the commitment arrives:
+
+**A gap.** A conveyance out from someone who never appears as a grantee. In Maine the usual causes are
+an **unprobated estate**, a deed never recorded, or a name change on marriage.
+
+**An unprobated estate.** Extremely common on inherited camps and family land. Title cannot be
+conveyed until the estate is administered, and the time that takes is measured in months.
+
+**An unreleased mortgage.** Payment does not clear the record; a **discharge** does.
+
+**A reservation.** Timber, mineral, or a right of way reserved by a predecessor, which binds the
+current owner whether or not anyone mentioned it.
+
+**A conservation easement.** Common in Maine, permanent, and it limits development in ways a buyer
+must understand before closing.
+
+**A tax-acquired chain.** Title through a municipal tax foreclosure raises its own questions about
+whether the process was completed correctly, and it is why title insurers examine those chains
+closely.
+
+None of these is the licensee's to resolve. All of them are the licensee's to **notice, escalate, and
+diary**, because each takes time and each is discovered when the commitment arrives — which is why
+title is ordered early.
+
+### E4.4 Construction conditions a Maine licensee reports accurately
+
+Described, never diagnosed:
+
+**Sill and foundation.** Rot at the sill plate where it meets the foundation; a fieldstone or brick
+foundation with mortar loss; a crawl space with standing water; a camp on posts or piers with no
+frost protection.
+
+**Roof and ice.** Ice damming at the eaves and the staining that follows it inside; a roof with
+multiple layers; missing or improvised flashing at a chimney or valley.
+
+**Heating.** An aged boiler or furnace; a buried or above-ground tank; a wood stove without
+documented clearances; a chimney with no recent inspection; a heat pump as the sole heat source in a
+climate that will test it.
+
+**Water.** A dug well; a spring; a shared well with no recorded agreement; a pressure tank that
+short-cycles; treatment equipment whose purpose nobody can explain.
+
+**Wastewater.** A tank with no permit on file; a leach field with lush green growth or standing
+water; a cesspool; a system in the shoreland zone that could not be replaced where it sits.
+
+**Insects and structure.** Carpenter ant frass; powder-post beetle damage; a beam that has been
+sistered without documentation.
+
+For every one of them the sentence is the same: **I can see it, I have written it down, and here is
+who can tell you what it is.**
+
+### E4.5 Case Study 1 debrief — what the file must show
+
+The case is graded not on conclusions but on the **file**. At the end of it, the student's
+documentation must show:
+
+The **§ 173 disclosure statement** as furnished, with every blank identified.
+The **investigation prompt list**, with an office named against every line.
+**Written** communication to the buyer of each item, with the contingency deadline stated.
+The **licensee's own disclosures**, and the section they were made under — § 13273 1 B (3) to a
+client, or § 13283 2 B to a buyer as a transaction broker.
+The **referrals**, with the person or office and the date.
+And the **absence of any characterisation** by the licensee of the condition, the legality, or the
+outcome of any of it.
+
+A file that shows all six is a file that answers a complaint. A file that shows a licensee's opinion
+about the septic system is a file that creates one.
 
 ---
 

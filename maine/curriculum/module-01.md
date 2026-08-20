@@ -662,6 +662,143 @@ verifying the accuracy or completeness of statements made by the seller.
 
 ---
 
+## Extended treatment — Commission topics developed
+
+### E1.1 The agency licence lifecycle, in practice
+
+A sales agent works inside a licensed business, and the business's status is not background — it
+decides whether the sales agent may work at all.
+
+**Formation and application.** § 13171 establishes the real estate brokerage agency; § 13172 governs
+the original application and § 13173 the qualifications; § 13174 denial. The agency must have a
+**designated broker**, and the designated broker is the individual on whom the statutory obligations
+in §§ 13178, 13179 and 13184 fall.
+
+**Trade names — § 13176.** An agency operating under a name other than its licensed name has a
+compliance question, and advertising under a name the Commission does not have on file is where it
+surfaces.
+
+**Changes — § 13175.** A change of designated broker, of address, of ownership, or of trade name is
+reportable. The consequences of not reporting fall on the agency and, through supervision, on
+everyone affiliated with it.
+
+**Display — § 13181.** The licence's contents and display are prescribed.
+
+**Renewal — § 13182** for the agency, **§ 13194** for the individual, **§ 13196** for inactive status,
+and **§ 13197** for continuing education. A licensee whose licence has lapsed is not merely
+inconvenienced: they are unlicensed, and § 13003 requires a licence.
+
+**Termination of employment — § 13180.** When a sales agent leaves an agency, the mechanics matter,
+because the sales agent's authority is derived from the agency's licence. Between agencies, a sales
+agent is not conducting brokerage.
+
+**What happens to the files.** Client files, brokerage agreements and transaction records belong to
+the **agency**, not to the departing licensee, and § 13184 makes the designated broker responsible
+for them. A licensee who takes files with them has created a problem for the agency and for
+themselves.
+
+### E1.2 Trust account concepts a sales agent must be able to explain
+
+§ 13178 is the designated broker's obligation, but a sales agent handles the money that goes into the
+account and is the person a client asks about it.
+
+**What is trust money.** Earnest money deposits; rents collected on behalf of an owner; security
+deposits; and any other money received in connection with a transaction that belongs to someone
+else.
+
+**Why it is separate.** Because it is not the agency's money. The two failures the scheme prevents
+are **commingling** — mixing trust money with operating funds — and **conversion** — using trust
+money for anything other than its purpose. Neither is an accounting error. An agency that pays its
+rent from the trust account has converted client funds.
+
+**Delivery.** A deposit is delivered to the person the agreement names, within the time the agreement
+and the Commission's rules require. A cheque carried in a bag over a weekend is a problem in the
+making, and a cheque held to "see whether the deal firms up" is worse.
+
+**Records.** The agency must be able to show, for every dollar, **from whom it was received, when,
+where it was deposited, when, and its final disposition.** That is the shape of the record whatever
+the rule's detail.
+
+**Disputes.** When buyer and seller both claim a deposit, the agency does **not** pick a side. The
+matter goes to the designated broker and, where necessary, to counsel, and the money is released only
+as the agreement and the law permit.
+
+**Interest.** Whether a trust account bears interest and to whom the interest belongs is set by the
+rules and by the agreement, and a licensee should never assume it belongs to the agency.
+
+### E1.3 Advertising standards, worked
+
+Advertising is where the Commission's minimum standards meet daily practice, and the recurring
+failures are predictable.
+
+**Identify the agency.** Advertising is done in the agency's name, and a licensee's personal branding
+may not obscure it. A team name, a personal logo and a social handle are all advertising.
+
+**Keep it accurate and current.** A listing left live after it has gone under contract; a price that
+no longer applies; a photograph showing a condition or a feature that has changed; a description of
+acreage, frontage or bedroom count that is not supported. Each is a misrepresentation waiting to be
+alleged.
+
+**Where a third party controls the platform**, the licensee's obligation does not evaporate — it
+becomes an obligation to request the correction, in writing, and to keep the request.
+
+**Support every claim.** "Year-round", "buildable", "four-bedroom septic", "deeded water access", "no
+covenants", "town-maintained road" — each is a factual claim about a matter someone else determines,
+and each must rest on a document the licensee can produce.
+
+**Watch the fair housing line.** "Ideal for retirees", "great for a young family", "quiet building,
+no children" — Module 09 is the law; the drafting habit belongs here. Describe the property, never
+the occupants.
+
+### E1.4 Self-interest, documents, and the everyday standards
+
+**Self-interest.** A licensee acting for their own account, for a family member, or through an entity
+they hold an interest in, discloses it. The disclosure is not an apology; it is what allows the other
+party to evaluate what they are dealing with.
+
+**Documents.** Parties get copies of what they sign, when they sign it. A file in which the client
+has never received the signed version of their own brokerage agreement is a file that will not
+survive a complaint — and § 13177-A requires the agreement to be signed by the client to be charged.
+
+**Referral fees and inducements.** Anything of value passing between a licensee and a settlement
+service provider raises the federal RESPA section 8 question that Module 06 develops, and anything
+passing between a licensee and a consumer raises the agency's own policy question. Both go to the
+designated broker.
+
+**Net listings.** An arrangement under which the seller takes a fixed sum and the agency keeps
+everything above it puts the agency's interest directly against the client's. It is never taken
+without the designated broker.
+
+**Guarantees.** "I can get you $X" is a representation about a future price that nobody can support.
+A licensee presents evidence and a range.
+
+### E1.5 The property disclosure conversation at listing
+
+Hour 7 covered 33 M.R.S. § 173. What a licensee actually does with it at a listing appointment:
+
+**Give the statement to the seller and let the seller complete it.** The seller answers about their
+own property. A licensee who fills it in has substituted their knowledge for the seller's, and has
+created a document the seller may not be able to stand behind.
+
+**Do not coach toward "unknown".** A seller who genuinely does not know may say so; a seller
+encouraged to say so about something they do know has been helped into a misrepresentation, and the
+licensee's own duty under § 13273 1 B (3) — actual knowledge **or should have known** — is engaged.
+
+**Read the completed statement as an investigation prompt.** Blanks are information. A blank water
+test date, a heating age of "unknown", an installation date of "approximately", a septic servicing
+contractor left empty — each is a line for the buyer's investigation list and, on the listing side, a
+question the seller may want answered before marketing rather than during a contingency period.
+
+**Corroborate what can be corroborated.** The § 173(2-A) annual fuel consumption figure can be
+checked against the dealer's delivery history; the § 173(3) septic details against the plumbing
+inspector's file; the § 173(1) water test against the laboratory report. A listing supported by
+documents is a listing that survives a buyer's investigation.
+
+**Update it when things change.** A statement that was accurate in April and is not in September is a
+problem, and the update is the seller's to make.
+
+---
+
 ## Instructor source note for Module 01
 
 Maine statements in this module rest on text read directly from `legislature.maine.gov` on

@@ -3,7 +3,7 @@
 ## Hours 15–22 · Product knowledge I: property, ownership, and interests
 
 **Commission topic covered:** Product Knowledge (28%, 840 instructional minutes) — this module
-carries 450 of them; Module 04 carries the remaining 390.
+carries 435 of them; Module 04 carries the remaining 405.
 **Course version:** 1.0 submission draft
 **Regulatory status:** Not approved. No Maine sales agent credit is available for this course.
 
@@ -31,7 +31,7 @@ By the end of this module the student will be able to:
 | 20 | 0–60 | Maine landlord-tenant fundamentals | Section completed |
 | 21 | 0–60 | Private land-use controls, covenants, associations | Section completed |
 | 22 | 0–60 | Zoning, permits, variances, nonconforming use, codes | Module engagement check |
-| **Total** | **450** | | Quiz 1 is delivered in Hour 15, minutes 15–60 |
+| **Total** | **435** | | Quiz 1 is delivered in Hour 15, minutes 15–60 |
 
 ---
 
@@ -551,6 +551,133 @@ Under **§ 13273 1 B (4)** — if the buyer is my client — I am required to ad
 advice on material matters beyond my expertise; as a **transaction broker** under § 13283 3 I am
 barred from conducting the investigation or verifying anyone's statements. Either way the answer is
 the same: name the offices, get it in writing, and do not opine.
+
+---
+
+## Extended treatment — product knowledge developed
+
+### E3.1 Estates and interests, in one table
+
+| Interest | Duration | Holder's power | What the grantor keeps |
+|---|---|---|---|
+| Fee simple absolute | Potentially infinite | Full, subject to PETE and private restrictions | Nothing |
+| Fee simple determinable | Until the stated event, **automatically** | Full while it lasts | **Possibility of reverter** |
+| Fee simple subject to condition subsequent | Until the grantor **acts** on the condition | Full until re-entry | **Right of re-entry** |
+| Life estate | The measuring life | Use, possession, income; **no waste**; cannot convey more than held | **Reversion** (or a third party holds a **remainder**) |
+| Life estate pur autre vie | Another's life | Same, and **inheritable** while the measuring life continues | Same |
+| Estate for years | Fixed term | Exclusive possession | Reversion |
+| Periodic estate | Renews until notice | Exclusive possession | Reversion |
+| Estate at will | No fixed period | Exclusive possession | Reversion |
+| Estate at sufferance | None — holdover | Bare possession | Right to recover possession |
+
+### E3.2 Co-ownership consequences, worked
+
+*Three siblings inherit a camp. The deed says "to A, B and C".*
+
+No survivorship language, so they hold as **tenants in common** in equal undivided thirds. Each may
+possess the whole. Each may sell or mortgage their third without the others' consent — and a
+purchaser of one third becomes a co-tenant with the other two, which is how camps end up owned by
+strangers. On a sibling's death, that third passes under their will or by intestate succession rather
+than to the survivors. Any of them may seek **partition**, and where physical division is impractical
+— which it is for a camp — partition means a court-ordered **sale**.
+
+*The same deed reading "to A, B and C as joint tenants with right of survivorship".*
+
+Survivorship operates: on a death the interest passes to the survivors outside probate. But if A
+conveys their interest to X, the joint tenancy is severed as to that third: X holds a third as a
+**tenant in common**, while B and C remain joint tenants as between themselves.
+
+**The listing consequence.** A licensee taking a listing on inherited or jointly held Maine property
+must establish, at intake, **exactly who is on title, in what form, and who must sign to convey**.
+Life estates with remaindermen, tenancies in common among a dispersed family, and unprobated estates
+are all common in Maine, and each is discovered at listing or at closing — and closing is expensive.
+
+### E3.3 Leases: the terms that actually get argued about
+
+**Rent and escalation** — the amount, the due date, the grace period if any, the late fee, and any
+increase mechanism.
+
+**Utilities** — and in Maine specifically **heating fuel**: who fills the tank, at what level it is
+delivered and returned, and who pays for the fuel in it at the start and end of the term.
+
+**Snow removal and maintenance** — allocated expressly, because "reasonable" means different things
+in December.
+
+**Access** — the landlord's right of entry and the notice required, which is statutory and must be
+read from **14 M.R.S.** rather than assumed.
+
+**Alterations**, including satellite dishes, garden beds, and — increasingly — vehicle charging.
+
+**Pets**, and the separate question of **assistance animals**, which are not pets and which Module 09
+covers.
+
+**Subletting and assignment**, usually restricted, and the rule from Hour 19.3 that consent is not a
+release.
+
+**Use and occupancy limits**, and any **short-term rental** prohibition, which matters in Maine
+tourist markets and which many municipalities now regulate separately.
+
+**Termination and holdover**, and what happens to a security deposit.
+
+### E3.4 Private land-use control, worked into a Maine transaction
+
+*A buyer is under contract on a lot in a 1978 subdivision. The recorded declaration restricts
+buildings to a single family dwelling of at least 1,200 square feet, prohibits mobile homes, requires
+approval of plans by an architectural committee that has not met since 2004, and grants each lot
+owner a right of way over "the roadway as shown on the plan".*
+
+The questions this raises, and where each goes:
+
+**Does the declaration still bind?** Recorded covenants generally run with the land, and Maine's
+**Marketable Title Act** in 33 M.R.S. can extinguish certain ancient interests after a statutory
+period — which this course does not state and which is a legal question for counsel.
+
+**Who enforces it?** Privately — by a lot owner or an association. Not the municipality. An
+architectural committee that has not met may be defunct, dormant, or revivable, and which of those it
+is decides whether the buyer's plans need approval.
+
+**Is the roadway a right of way, a private way, or a town way?** Registry of Deeds for the recorded
+plan and any maintenance agreement; the municipal road commissioner for the road's status; and
+counsel for what the grant actually conveys. Whether the road is **plowed** is a separate and equally
+important question.
+
+**Does the covenant conflict with zoning?** If zoning permits an accessory dwelling and the covenant
+forbids one, the owner is bound by both and must satisfy the stricter.
+
+**Is there anything in the declaration that is void?** Any discriminatory covenant is unenforceable
+and must not be honoured.
+
+### E3.5 Public land-use control: the questions a Maine licensee asks first
+
+For any Maine property, before marketing:
+
+1. **Is the property in an organised municipality or in LUPC jurisdiction?**
+2. **Does the municipality have zoning at all?** Several do not, and that is a fact a buyer needs.
+3. **What district is it in, and what are the dimensional requirements?** Code enforcement officer.
+4. **Is any part of it in the shoreland zone?** If so, which sub-district?
+5. **Is any structure nonconforming?** As to what — setback, height, lot coverage, lot size?
+6. **Are there open permits or violations?**
+7. **Was every structure permitted?** An unpermitted addition is a title, insurance and financing
+   problem as well as a code one.
+8. **Is there a subsurface wastewater permit on file, and for how many bedrooms?**
+9. **Is the lot a lawfully created lot?** Subdivision status, and whether the plan is recorded.
+10. **Is the access a public way, a private way, or a discontinued way?**
+
+Ten questions, ten offices, and none of them answered by the licensee. A licensee who has this list
+and uses it is doing the job; one who improvises answers is creating liability.
+
+### E3.6 Zoning relief compared
+
+| | Variance | Conditional use permit | Nonconforming use | Rezoning |
+|---|---|---|---|---|
+| Relieves | A **dimensional** requirement | Nothing — it is the ordinance operating | Nothing — it predates the change | The ordinance itself |
+| Granted by | Board of appeals | Planning board or board of appeals | No one; it exists | Municipal legislative body |
+| Requires | **Undue hardship** arising from the property | Satisfying stated criteria and conditions | Lawful establishment before the change | A legislative decision |
+| Does **not** authorise | **A prohibited use** | An unlisted use | Expansion, generally | — |
+| Lost by | — | Breach of conditions | **Abandonment or destruction**, often | Amendment |
+
+Maine's undue-hardship standard is statutory and is applied strictly; this course states no element
+of it, and the board of appeals and counsel answer it.
 
 ---
 

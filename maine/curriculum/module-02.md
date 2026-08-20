@@ -477,6 +477,113 @@ disclose.
 
 ---
 
+## Extended treatment — agency worked through
+
+### E2.1 The four relationships, side by side
+
+| | Transaction broker | Seller agent | Buyer agent | Disclosed dual agent |
+|---|---|---|---|---|
+| Source | § 13283 (default under § 13282) | § 13273 | § 13274 | § 13275 |
+| Requires | Nothing; it is the presumption | Written brokerage agreement | Written brokerage agreement | Written agreement plus **informed written consent of all parties** |
+| Bound by the § 13272 duties | **No** — § 13283 1 | Yes | Yes | Yes, as limited by § 13275 |
+| Disclosure standard | **Actual notice or knowledge** of material defects in physical condition, to a buyer | **Actual knowledge or should have known**, of material facts, to the client | Same architecture as § 13273 | Both, as limited |
+| Must advise client to get expert advice | No such duty | **Yes** — § 13273 1 B (4) | Yes | Yes |
+| May investigate for a party | **No** — § 13283 3 A | Yes, within competence | Yes, within competence | Yes, as limited |
+| May verify others' statements | **No** — § 13283 3 B | — | — | — |
+| May promote a party's interests | **No** — § 13283 3 C | Yes, for the client | Yes, for the client | **Neither** — the duties are limited |
+| Four protected categories | n/a | n/a | n/a | **§ 13275 1 C** |
+
+The table is the module in one page, and the column that surprises people is the first. A transaction
+broker is the **default**, owes real duties, and is **prohibited** from doing three things a consumer
+will assume they are doing.
+
+### E2.2 Duties illustrated, one at a time
+
+**Loyalty.** A listing agent learns the buyer's agent is a friend and would like to help the deal
+close. Loyalty means the seller's interest governs, and any personal interest is disclosed.
+
+**Obedience.** A seller instructs the agent not to present offers below a figure. That instruction
+**cannot be followed**: § 13273 1 B (2) requires all offers to be presented in a timely manner even
+when the property is under contract. Obedience is to **lawful** instructions.
+
+**Disclosure.** The agent learns from a neighbour that the road association has voted a $9,000 per lot
+assessment. Actual knowledge of a material fact concerning the transaction; § 13273 1 B (3) requires
+it be disclosed to the client — and the "should have known" limb means the agent cannot avoid the
+duty by declining to ask an obvious question.
+
+**Confidentiality.** The seller says they are relocating for a job in six weeks. That could have a
+negative impact on the seller's real estate activity, so § 13273 1 F protects it — and § 13281 2 B
+keeps protecting it after the agreement ends.
+
+**Reasonable care.** The agent computes a net-proceeds estimate and omits the mortgage prepayment
+penalty. § 13273 1 C is engaged, and the fix is to state assumptions and to say what has not been
+verified.
+
+**Diligence.** A listing sits unmarketed for five weeks. § 13272 lists diligence as a duty, and
+§ 13273 1 A requires performance of the agreement's terms.
+
+**Accounting.** A deposit is held by the agency for four months and never reconciled against the
+client's file. § 13273 1 B (5) and § 13178.
+
+### E2.3 What is owed to a customer
+
+A **customer** is a party to the transaction whom the agency does not represent. What is owed:
+
+**Honesty**, and **no knowingly false information** — § 13283 2 E for a transaction broker, and the
+same principle throughout the chapter.
+
+**Disclosure of material defects in the physical condition** of the property that are actually known.
+
+**Fair housing compliance**, which runs to everyone.
+
+**Ministerial acts** as agreed — opening a door, providing a form, transmitting a document.
+
+What is **not** owed: loyalty, confidentiality, advocacy, or advice. And saying so plainly, early, in
+writing, and with the § 13279 form, prevents most complaints in Maine brokerage.
+
+### E2.4 The conversation that prevents the complaint
+
+A Maine licensee meeting a consumer for the first time has one job before anything else: make the
+relationship visible.
+
+*"Before we go any further — I want to be clear about who I work for. Right now I'm not representing
+you. In Maine that's the default, and it's called transaction brokerage. Here's the Commission's
+disclosure form that explains it. What it means practically is that I'll be honest with you, I'll
+tell you about any material defect in the property's condition that I actually know about, and I'll
+handle the paperwork — but I won't be advising you on price or strategy, I can't investigate the
+property for you, and I can't verify what the seller tells you. If you'd like me to represent you,
+that takes a written agreement, and I'd be glad to explain what that would change."*
+
+That paragraph is the whole of §§ 13279, 13282, 13283 2 and 13283 3 in language a consumer can act
+on. A licensee who says it in the first ten minutes will rarely have the argument later.
+
+### E2.5 Termination scenarios
+
+**Expiration.** The agreement's stated date arrives — and § 13177-A requires every Maine agreement to
+have one. The relationship ends; § 13281 2's two duties survive; and a protection period, if any,
+runs but cannot extend beyond **six months** and cannot be enforced against a client who in good
+faith engaged another agency after expiration.
+
+**Mutual release.** Both sides agree in writing. Record who released what, and whether any protection
+period survives.
+
+**Client termination.** A client may end the relationship; whether they owe a fee is a contract
+question. A licensee who argues about it rather than referring it to the designated broker has made a
+service problem into a dispute.
+
+**Agency withdrawal.** An agency may withdraw, and must where continuing would require a violation —
+a client instructing a fair housing breach being the clearest case.
+
+**Completion.** Performance completes it, and § 13281 1 says so.
+
+**Death or incapacity of the client**, which raises questions of authority and of the estate that go
+to counsel.
+
+In every case: the record of **how and when it ended** is what the surviving duties are measured
+from, and it belongs in the file.
+
+---
+
 ## Instructor source note for Module 02
 
 Every Maine statement in this module rests on text read directly from `legislature.maine.gov` on
