@@ -33,7 +33,7 @@ Set these in the hosting environment (Netlify → Site configuration → Environ
 
 ```
 STRIPE_MODE=test                 # or "live"
-STATECOURSE_BASE_URL=https://<your site origin>
+STATECOURSE_BASE_URL=https://statecourse.com
 STATECOURSE_ADMIN_API_TOKEN=<long random string>
 SUPABASE_URL=...                 # already required by the platform
 SUPABASE_ANON_KEY=...            # server-side; the service-role key is never exposed
@@ -120,8 +120,13 @@ node scripts/stripe-setup.mjs --dry-run
 # test mode
 STRIPE_SECRET_KEY_TEST=sk_test_... \
   node scripts/stripe-setup.mjs \
-  --webhook https://<your site>/.netlify/functions/stripe-webhook
+  --webhook https://statecourse.com/api/stripe/webhook
 ```
+
+**Use the `/api/` path, not `/.netlify/functions/`.** Both reach the same handler —
+netlify.toml rewrites one to the other with status 200, preserving the raw body that
+signature verification needs — but `/api/stripe/webhook` is the designed public surface and
+does not break if the function file is renamed.
 
 The script is idempotent. It finds a product by `metadata['statecourse_course_id']`, so renaming a course in the catalogue does not orphan its Stripe object, and it finds a price by lookup key `statecourse_<course id>_<mode>`.
 

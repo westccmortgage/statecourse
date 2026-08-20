@@ -23,20 +23,39 @@ Everything below is a test-mode object identifier. These are not secrets — the
 
 Lookup keys follow `statecourse_<course id>_test`, which is how preflight finds a price to compare against the configured amount.
 
+## Webhook
+
+| | |
+|---|---|
+| Endpoint | `we_1U6KavI5Vlt1VlIgibtThu3O` |
+| URL | `https://statecourse.com/api/stripe/webhook` |
+| Status | enabled |
+| Events | 7, matching the handler's `case` labels exactly |
+
+The URL is the **public API path**, not `/.netlify/functions/stripe-webhook`. Both reach the
+same function — netlify.toml rewrites one to the other with status 200, which preserves the
+raw body signature verification depends on — but the `/api/` path is the designed public
+surface and survives the function file being renamed.
+
+**The signing secret was issued at creation and is not recorded here.** Stripe shows it once
+and will not return it on a later read; it belongs in `STRIPE_WEBHOOK_SECRET_TEST` in the
+Netlify environment. If it is lost, the endpoint is deleted and recreated (which is what
+happened once during bring-up), or the secret is rolled in the dashboard.
+
+Until that variable is set in Netlify, `POST https://statecourse.com/api/stripe/webhook`
+returns **503 `webhook_not_configured`** — which is exactly what it returns today, and is the
+correct refusal rather than a fault.
+
 ## What still has to happen
 
-**1. The webhook endpoint — the one remaining blocker.** Preflight reports it as a problem, correctly: without it a paid checkout is never finalised, so no enrollment and no access are ever granted. It needs the real site origin:
+**1. Netlify environment variables.** Nothing is set there yet. `payment-config` currently
+reports `amount: null` for every course, which confirms it. The runbook lists them; at
+minimum `STRIPE_MODE`, `STRIPE_SECRET_KEY_TEST`, `STRIPE_WEBHOOK_SECRET_TEST`,
+`STATECOURSE_BASE_URL=https://statecourse.com`, `STATECOURSE_ADMIN_API_TOKEN`, the nine
+`STATECOURSE_PRICE_*_TEST_CENTS`, and — for test-mode exercise against unapproved courses —
+`STATECOURSE_SANDBOX_ALLOW_DRAFT_COURSES=true`.
 
-```bash
-NODE_USE_ENV_PROXY=1 node scripts/stripe-setup.mjs \
-  --webhook https://<domain>/.netlify/functions/stripe-webhook
-```
-
-The signing secret prints once at creation and goes straight into `STRIPE_WEBHOOK_SECRET_TEST` in the hosting environment. If it is lost, roll it in the dashboard — it cannot be read back.
-
-**2. Hosting environment variables** — the runbook lists them. Nothing here is set in this sandbox; the values used to reconcile were placeholders passed on the command line for one run.
-
-**3. A real price decision** before anything is offered to anyone.
+**2. A real price decision** before anything is offered to anyone.
 
 ## Running the scripts from this environment
 
