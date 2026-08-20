@@ -1,0 +1,514 @@
+# North Carolina Broker Prelicensing Course — Module NC-08
+
+## Section VIII · Agency in NC
+
+**Commission Syllabus section:** VIII — Agency in NC
+**Instructional Level:** **3** except as noted. *Assigned by the Commission; providers and instructors
+are **REQUIRED to comply**.* **Part A, the overview of laws and regulations, is Level 1**; **Additional
+Agency Disclosure Requirements is Level 2**; **Working in Property Management is Level 2 except the
+property management fee, which is Level 3**; and the **typical property management duties are Level 1.**
+**Licence examination weight:** **State Exam Category — 16 items — tied with Section VII for the
+heaviest section in the entire examination, and the heaviest of the 60 state items.**
+**Instructional hours:** **7.0**, the largest single allocation in this course, drawn from the
+Commission's recommended 13.0 hours for the Agency subject area.
+**Course version:** 1.0 submission draft
+**Regulatory status:** Development. Not approved. No North Carolina prelicensing credit is available.
+
+## Learning objectives
+
+1. State the two primary purposes of agency disclosure. *(Level 3)*
+2. State when the WWREA Disclosure must be provided, by what method, and within what time.
+3. Explain what the **review** component of the disclosure requires and what does not satisfy it.
+4. State the retention period for the disclosure form and when it applies.
+5. Describe the additional disclosure requirements. *(Level 2)*
+6. Explain intentional disclosed dual agency and why unintentional undisclosed dual agency is
+   prohibited. *(Level 3)*
+7. **Explain designated dual agency and apply its seven major provisions to a fact pattern.** *(Level 3)*
+8. Recite the eight agent's duties to a principal under North Carolina License Law and rules.
+9. State the agent's duty to third persons and contrast it with the duty to a principal. *(Level 3)*
+10. State the four requirements for a written agency agreement and the one exception.
+11. Work a listing appointment through the Commission's prelisting and listing sequence.
+12. Work a buyer engagement through the Commission's sequence, including oral buyer agency limits.
+13. Describe property management agency and the contract's typical provisions. *(Level 2)*
+
+---
+
+## A. Overview of NC Laws and Regulations Governing Brokerage Relationships *(Level 1)*
+
+The three sources the Commission names:
+
+1. **NC Real Estate License Law** — **NCGS 93A**.
+2. **NC Real Estate Commission rules** — **Chapter 58A, Title 21 NCAC**.
+3. **Disclosure of Agency Relationships in Residential and Commercial Sales** — **NCGS 93A-6(a)(4) and
+   (6); Commission Rule 58A .0104(c)–(i), (m), (o) and (p)**.
+
+**This course states no provision of NCGS 93A or 21 NCAC 58A in its own text**, because neither was
+obtained for this project — the North Carolina rules hosts are outside this environment's network
+egress allowlist. **Everything below is what the Commission's own Syllabus states**, with its citations
+preserved so a student can read the source. **Read the LLCR.** It is free from the Commission and it is
+the operative text.
+
+---
+
+## B. Agency Disclosure *(Level 3)*
+
+### B.1 The two primary purposes
+
+Transcribed from the Syllabus:
+
+1. **"To ensure that the consumer understands AS SOON AS POSSIBLE that there is NO CONFIDENTIALITY
+   between the broker and the consumer until an agency relationship is established."**
+2. **"To introduce the consumer to available agency options."**
+
+**Purpose 1 is the one consumers get wrong and licensees let them.** Before there is an agency
+relationship, **nothing a consumer tells you is confidential.** A prospective buyer chatting at an open
+house about the maximum they would pay has told a seller's subagent, and the disclosure exists to make
+sure they knew that before they spoke.
+
+### B.2 The Working with Real Estate Agents (WWREA) Disclosure — Commission Rule 58A .0104(c)
+
+**Scope:**
+
+> **"Applies to ALL residential AND commercial sales transactions; NOT REQUIRED for property management
+> or lease transactions."**
+
+**Timing — provide at First Substantial Contact:**
+
+- **In person:** **provide and review the WWREA IMMEDIATELY at first substantial contact.**
+- **By phone or electronic means** — email, social media and the like: **at the earliest opportunity
+  after first substantial contact, NO LATER THAN 3 DAYS AFTER**, transmitting a copy of the WWREA to
+  the consumer.
+
+**Then, in both cases:**
+
+- **Review the agency options at the earliest practicable opportunity after receipt by the consumer.**
+- **Determine whether the broker will act as an agent of the buyer or the seller in the transaction.**
+
+> **Required Activity — prescribed by the Commission:** *"Provide examples of **when first substantial
+> contact occurs** in various situations, including, but not limited to, contact **in-person, by phone,
+> by electronic means such as email or social media, and at open houses.**"*
+>
+> **This activity must be completed.** Work each of those four settings and state, with reasons, the
+> point at which first substantial contact occurred and what the broker was then required to do.
+
+**Mandatory review of the disclosure form — and what does NOT satisfy it. Transcribed:**
+
+> **"Inclusion of the WWREA Disclosure form in a broker's email signature or sending by an electronic
+> signature program ALONE DOES NOT COMPLY with the review component of disclosure requirements."**
+
+**Read that twice, because it is exactly how a modern brokerage would try to automate the obligation
+away.** Attaching the form to every outgoing email is not compliance. Sending it through a signature
+platform is not compliance. **The rule requires a review**, and a review is something a broker does
+with a consumer.
+
+**Completion and retention — Commission Rule 58A .0108:**
+
+> **"Completion and retention of the disclosure form for 3 years (EVEN IF AGENCY IS NOT REACHED)."**
+
+**Even if agency is not reached.** The consumer who received the form and then went elsewhere still
+generates a record you keep for three years.
+
+**And the companion piece:** the Commission's **Questions & Answers on: Working with Real Estate
+Agents** — *"a companion piece for the WWREA Disclosure that brokers should strongly consider giving
+consumers to provide more detail on agency options."*
+
+**This project has not obtained the WWREA Disclosure form or the Questions & Answers publication, and
+no document in this build reproduces, describes or paraphrases either.** Obtaining the current form
+from the Commission is a **submission gate** for this module.
+
+### B.3 Additional agency disclosure requirements *(Level 2)*
+
+Five, with the Commission's citations:
+
+- **Disclosure of agency status by a seller agent or subagent to a prospective buyer** — Rule 58A
+  .0104(e).
+- **Disclosure of agency status by a buyer agent to the seller or seller agent** — Rule 58A .0104(f).
+  **Instructor Note:** *"The Standard 2-T Offer to Purchase and Contract provides a place for agency
+  disclosure and license numbers in the signature area."*
+- **Disclosure of and consent to proposed dual and designated (dual) agency** — NCGS 93A-6(a)(4) and
+  (6); Rule 58A .0104(d), (i)–(n).
+- **Broker with an ownership interest in a listing** — Rule 58A .0104(o).
+- **Disclosure in auction sales situations** — Rule 58A .0104(g)–(h).
+
+---
+
+## C. Dual Agency *(Level 3)*
+
+### C.1 Dual agency basics
+
+- **The inherent potential conflict of interest centres around the agent's common law duty to disclose
+  all material facts to their principal.** Two principals with opposed interests cannot both receive
+  that.
+- **Intentional, disclosed dual agency requires the informed, WRITTEN consent of BOTH principals** —
+  with **oral agreement permitted in certain situations** — NCGS 93A-6(a)(4) and Rule 58A .0104(d).
+- **Unintentional, undisclosed dual agency is PROHIBITED.**
+
+**Recall from Module NC-07 why undisclosed dual agency happens by accident:** all brokers affiliated
+with a firm **automatically** become subagents of any principal-client of the firm. So the moment your
+firm lists a property, every agent in it is on the seller's side — and an agent who then starts acting
+for a buyer on that property has created dual agency whether or not anyone said so.
+
+### C.2 Limiting the dual agent's duties by contract
+
+- **Limiting disclosure of certain information to principals.**
+- **Limiting the duties of loyalty and skill, care, and diligence.**
+- **"Effectually eliminates agent's role as an advocate for either client."**
+
+That last phrase is what a consumer must understand before consenting: **in dual agency, nobody is
+advocating for you.**
+
+### C.3 Designated dual agency — Commission Rule 58A .0104(i)–(n)
+
+**The basic concept:**
+
+- **An optional approach when the brokerage company is a dual agent.**
+- **One or more agents of the company are designated to represent ONLY the interests of the seller.**
+- **One or more agents of the company are designated to represent ONLY the interests of the buyer.**
+- **The company and all non-designated agents of the company REMAIN AS DUAL AGENTS.**
+
+**Major rule provisions:**
+
+- **Prior express approval required.**
+- **Confidential information of a designated client may NOT be shared with the designated agent of the
+  other party.**
+- **The identity of all designated agents must be disclosed.**
+
+**Key concepts — and these seven are the examinable heart of the section:**
+
+1. **Dual agency is NOT eliminated; it is merely a form of dual agency.**
+2. **Only possible for in-house dual agency sales situations.**
+3. **Mandatory WRITTEN approval of both seller and buyer NO LATER THAN the making of the 1st offer.**
+4. **Individual designated dual agents act only as agent for the principal for whom they are
+   designated**, similar to an exclusive listing agent or buyer agent.
+5. **A comprehensive written company policy on the practice of designated dual agency is recommended.**
+6. **A broker may NOT be appointed as a designated dual agent for one party if that broker has ALREADY
+   RECEIVED CONFIDENTIAL INFORMATION about the other party.**
+7. **A broker-in-charge (BIC) must NOT serve as a designated dual agent in a transaction OPPOSITE AN
+   AFFILIATED PROVISIONAL BROKER** — Rule 58A .0104(j).
+
+**Instructor Note:** *"Multiple agents can be designated to represent a principal, such as including
+the licensed personal assistant of a designated dual agent."*
+
+**Provision 6 is the trap.** A licensee who took a call from the buyer weeks earlier, and learned what
+they would pay, cannot then be designated for the seller. **Provision 7 is the one that catches
+offices:** your BIC cannot be designated against you, because the supervisory relationship makes the
+separation unreal.
+
+### C.4 Individual broker dual agent — Commission Rule 58A .0104(n)
+
+A single broker, not a firm:
+
+- **Can represent a prospective buyer who wishes to buy a property listed with that broker, with the
+  permission of both clients.**
+- **The broker CANNOT share a client's information without their permission that pertains to:**
+  - **willingness to agree to a price, terms or any conditions of sale other than those offered;**
+  - **motivation for engaging in the transaction, unless disclosure is required by statute or rule;
+    and**
+  - **any information the client has identified as confidential, unless disclosure is required by
+    statute or rule.**
+
+**Three protected categories, each with the "unless required by statute or rule" carve-out on the last
+two.** A client cannot make a material fact confidential merely by labelling it so.
+
+---
+
+## D. Agent's Duties
+
+> **Required Activity — prescribed by the Commission:** *"**Compare and contrast duties owed to clients
+> vs. third parties.** It is critical that licensees understand the difference in the standard for
+> determining what information must be disclosed to a principal/client versus what must be disclosed
+> to a third party/customer (such as a lender)."*
+
+### D.1 Duties to the principal under NC License Law and Commission rules — eight
+
+Transcribed, with the Commission's citations:
+
+**a.** **The duty to avoid any wilful or negligent misrepresentation of a material fact to the
+principal, and to disclose to the principal all material facts about which the agent has knowledge or
+should reasonably have acquired knowledge** — NCGS 93A-6(a)(1) and (3).
+
+**b.** **The duty to avoid making any false promises to the principal** — NCGS 93A-6(a)(2) and (3).
+
+**c.** **The duty to avoid any undisclosed conflict of interest** — NCGS 93A-6(a)(4); Rule 58A
+.0104(d)–(f), (i) and (j).
+
+**d.** **The duty to properly account for funds held in trust for the principal** — NCGS 93A-6(a)(7),
+(12) and (14).
+
+**e.** **The duty to act competently in the performance of services required by the agency
+relationship** — NCGS 93A-6(a)(8); various rules.
+
+**f.** **The duty to avoid improper conduct and to be honest in all dealings with the principal — as
+well as in dealings with other parties** — NCGS 93A-6(a)(10).
+
+**g.** **The duty to deliver a copy of any written agency and transactional documents to the client
+WITHIN 3 DAYS of the broker's receipt of the executed document** — NCGS 93A-6(a)(13); Rule 58A .0106.
+
+**h.** **The duty to disclose any commissions, referral fees, kickbacks and similar payments from third
+parties** — Rule 58A .0109.
+
+**Duty (g) is a hard deadline and it is the one most often missed in ordinary practice: three days from
+your receipt of the executed document.**
+
+### D.2 Duties to third persons — NCGS 93A-6(a) and case law *(Level 3)*
+
+**Instructor Note, transcribed, and it is the Commission telling you where to put the emphasis:**
+
+> *"Emphasis should be on a proper understanding of **misrepresentation and omission**, and especially
+> the **AFFIRMATIVE DUTY TO DISCOVER AND DISCLOSE MATERIAL FACTS TO ALL PARTIES to the contract,
+> REGARDLESS OF AGENCY RELATIONSHIPS.**"*
+
+The duty itself:
+
+> **"Duty to avoid any wilful or negligent misrepresentation of a material fact to a third party and to
+> disclose to the third party all material facts RELATING TO THE PROPERTY about which the broker has
+> knowledge or should reasonably have acquired knowledge"** — NCGS 93A-6(a)(1) and (3) and case law.
+
+**Now compare D.1(a) and D.2, which is what the Required Activity asks you to do:**
+
+| | To the **principal/client** | To a **third party/customer** |
+|---|---|---|
+| Scope | **all material facts** about which the agent has or should have knowledge | **all material facts RELATING TO THE PROPERTY** about which the broker has or should have knowledge |
+| Standard | knowledge, or should reasonably have acquired knowledge | knowledge, or should reasonably have acquired knowledge |
+| Affirmative duty to discover | yes | **yes** |
+
+**The standard is the same; the SCOPE differs.** To a client, everything material to the transaction —
+including, per Module NC-07, **personal information about a third party that might influence your
+principal**. To a customer, everything material **relating to the property**.
+
+**And the affirmative duty to DISCOVER runs to everyone.** North Carolina does not permit a broker to
+be a passive conduit for whatever the seller happened to mention.
+
+---
+
+## E. General Requirements for Agency Contracts — NCGS 93A-13; Rule 58A .0104(a)
+
+**Instructor Note, transcribed:** *"Prior to entering an agency agreement with a prospective client, the
+broker should **ask if they already have an agency agreement with another broker**. If 'yes,' the broker
+should **wait for that existing agency agreement to be terminated or expire**."*
+
+### E.1 The writing requirement
+
+> **"Agency contracts with PROPERTY OWNERS must be in writing FROM THE OUTSET of the relationship."**
+>
+> **Instructor Note: "Oral listing agreements and property management agreements are UNLAWFUL in NC."**
+
+### E.2 Requirements for a written agency agreement — four, plus one exception
+
+**a.** **Have a definite expiration date.**
+**b.** **Contain the anti-discriminatory language prescribed by rule in a clear, conspicuous manner** —
+Rule 58A .0104(b).
+**c.** **Be signed by all parties.**
+**d.** **Include the listing broker's individual licence number.**
+
+**e. Exception:** **non-exclusive BUYER or TENANT agency contracts can be ORAL for an unspecified
+period of time IF reduced to writing PRIOR TO the 1st offer.**
+
+**Note precisely where the exception runs.** Owner-side agreements — listings and property management —
+must be written from the outset, always. Only **non-exclusive buyer or tenant** agency may begin
+orally, and only if reduced to writing before the first offer.
+
+---
+
+## F. Listing Practices (Working with Sellers)
+
+### F.1 Prelisting activities
+
+Advise the seller to gather:
+
+- **a copy of the seller's deed;**
+- **a copy of the survey, if available;**
+- **a copy of the protective covenants and HOA information, including dues and assessments;**
+- **the balance due on the seller's mortgage(s) and the status of the mortgage(s).**
+
+### F.2 The prelisting/listing meeting
+
+**Agency disclosure first:**
+
+- **Caution the seller about sharing confidential information PRIOR to signing a listing contract** —
+  which is purpose 1 of the WWREA disclosure, applied.
+- **Advise the seller of the company's proposed brokerage fee and services.**
+- **Determine the agency relationship with the seller.**
+
+**Inspect the property and prepare the listing data sheet:**
+
+- **Explain the listing agent's obligation to disclose material facts to ALL prospective buyers.**
+- **Note all significant features and defects.**
+- **Identify personal property to be transferred and fixtures NOT to be conveyed.**
+- **Suggest needed repairs, improvements, staging.**
+- **Determine square footage and acreage.**
+- **Make sure listing data is accurate and complete.**
+
+**And four further inquiries the Commission specifies:**
+
+- **Inquire about construction/alteration/repair to uncover possible mechanic's liens and the need for
+  permits.** *(Module NC-06: a mechanic's lien is effective from the first day services or materials
+  were provided.)*
+- **Inquire about septic system capacity/permit, if the property has an onsite septic system.**
+- **Discuss the marketing plan.**
+- **Review documents and information obtained from the seller.**
+- **Verify and properly report building square footage.**
+
+*(The Commission's **Residential Square Footage Guidelines** is a required resource for that last item.
+**This project has not obtained it and states no measurement standard from it.**)*
+
+### F.3 Determine an appropriate listing price
+
+> **Required Activity — prescribed by the Commission:** *"**Assign math practice problems; students
+> traditionally have difficulty with this on the license exam.**"*
+
+- **Perform a Comparative Market Analysis (CMA).**
+- **Calculate the sale price needed to net "X" amount to the seller**, or estimate net to seller at
+  various sale prices.
+- **Calculate net profit/loss to the seller on the sale.**
+- **Review with the seller all factors that should be considered.**
+
+*Worked — net to seller.* A seller must net **$92,000** after paying a **6%** brokerage fee, a loan
+payoff of **$186,400**, and other seller costs of **$3,150**.
+
+Required before the fee: 92,000 + 186,400 + 3,150 = **$281,550**.
+That is **94%** of the sale price, since the fee takes 6%.
+Sale price = 281,550 ÷ 0.94 = **$299,521.28**, so **$299,600** rounded to a workable listing figure.
+
+*Check:* 299,600 × 0.06 = 17,976 fee. 299,600 − 17,976 − 186,400 − 3,150 = **$92,074.** ✓
+
+**Divide by (1 − rate). Do not multiply by (1 + rate)** — that is the error the Commission is warning
+about, and it gets the answer wrong every time.
+
+### F.4 Complete the listing contract form
+
+**Instructor Note, transcribed:** *"**Listing price must be determined BEFORE seller signs listing
+contract.**"*
+
+### F.5 Comply with the Residential Lead-Based Paint Hazard Reduction Act, if applicable
+
+Module NC-05, including the broker's own compliance duty.
+
+### F.6 Market the listed property per the contract and customary marketing practices
+
+---
+
+## G. Working with Buyers
+
+### G.1 Provide and review the WWREA; explain agency options; create the relationship
+
+**Working with buyers as a SELLER SUBAGENT**, or **as a BUYER AGENT**.
+
+**Temporary oral buyer agency — five conditions, all of which must hold:**
+
+1. **Must be nonexclusive.**
+2. **May not bind the buyer for any specific period of time.**
+3. **All terms of the written agency agreement must be addressed in the oral agreement.**
+4. **If the oral agreement is limited to a specific brokerage company or for a specific time period,
+   the agency must be reduced to a written agreement IMMEDIATELY.**
+5. **Must be reduced to writing NO LATER THAN the time an offer to purchase is made by ANY party.**
+
+Then: **exclusive versus nonexclusive written agreement**; **the option of limiting the duration of an
+exclusive agreement**; **the option of limiting an exclusive agreement to specific properties.**
+
+**Working with an unrepresented seller (FSBO) as a buyer agent — three steps:**
+
+1. **Provide and review the WWREA Disclosure.**
+2. **Obtain a written agreement signed by the seller.**
+3. **Refrain from actions that might be interpreted as the broker representing the seller.**
+
+**Step 3 is where undisclosed dual agency is created by accident.** Helping a FSBO seller with their
+paperwork, advising them on price, or holding their open house looks like representation, and looking
+like it is enough.
+
+### G.2 The remaining steps
+
+2. **Prequalify the buyer.** **Instructor Note:** *"Preferable approach is to have buyer prequalified by
+   a mortgage loan officer."*
+3. **Select properties for showing.**
+4. **Schedule properties for showing** — **disclose agency status to the listing agent, or to the seller
+   if a FSBO**, and **obtain a cooperation agreement with the listing company if needed**. **Instructor
+   Note:** *"In the Buyer Agency Agreement, the brokerage company promises to **first seek compensation
+   from the listing firm or the seller before looking to the buyer client** for payment."*
+5. **Show properties.**
+6. **Discover and disclose material facts to the buyer.**
+7. **Obtain or verify information for the buyer** — property disclosure statements, HOA information,
+   protective covenants, other information requested.
+8. **Perform a CMA** to assist the buyer in determining an appropriate offer price.
+9. **Assist the buyer with preparation of offers; present and negotiate offers.**
+10. **Assist the buyer with preparations for closing.**
+
+---
+
+## H. Working in Property Management *(Level 2 except as noted)*
+
+### H.1 The relationship
+
+**Instructor Note, transcribed:** *"**In NC, there is NO SEPARATE real estate license for 'property
+managers'.**"*
+
+- **The authority of the broker (agent) is established by the property management contract.**
+- **Duties of the broker to the property owner (principal) and to third persons (tenants and
+  prospective tenants).**
+- **Property management fee** *(Level 3 — this subtopic)*.
+
+> **Required Activity — prescribed by the Commission:** *"**Discuss factors that may/may not be
+> considered due to Fair Housing Act criteria (e.g., credit reports, criminal records).**"*
+>
+> **This activity must be completed**, and Module NC-09 supplies the fair housing framework it applies.
+
+### H.2 Typical provisions of property management contracts
+
+**Instructor Note, transcribed:** *"Per Commission Rule 58A .0104(a), **all property management
+agreements must be in writing from inception of the relationship**."*
+
+- **Property description.**
+- **Contract period** — Rule 58A .0104(a) — which **may allow automatic renewal**, and under which the
+  **landlord may terminate with notice at the end of any contract period or renewal period.**
+- **The agent's management fee.**
+- **The agent's authority.**
+- **The responsibilities of agent and owner.**
+
+### H.3 Typical property management duties *(Level 1)*
+
+**Preparing a management plan** — establishing a rental schedule, preparing an operating budget;
+**marketing the property**; **qualifying and selecting tenants**; **executing leases for the owner**;
+**collecting rents and security deposits**; **handling collected monies according to laws/rules**;
+**maintaining the property**; **preparing/enforcing rules and regulations**; **maintaining property
+insurance**; **maintaining accurate records.**
+
+*(North Carolina's Tenant Security Deposit Act and Vacation Rental Act are Section XIV's business and
+are taken up in Module NC-14, where the gap in this project's reading is recorded.)*
+
+---
+
+## Required Activities in this section — all four must be completed
+
+1. **Examples of when first substantial contact occurs** — in person, by phone, by electronic means such
+   as email or social media, and at open houses. *(B.2)*
+2. **Compare and contrast duties owed to clients versus third parties**, with emphasis on the difference
+   in the disclosure standard. *(D)*
+3. **Math practice problems** on listing price, net to seller and net profit/loss — *"students
+   traditionally have difficulty with this on the license exam."* *(F.3)*
+4. **Discuss factors that may or may not be considered due to Fair Housing Act criteria**, e.g. credit
+   reports and criminal records. *(H.1)*
+
+## Module NC-08 engagement check
+
+Eleven items, delivered as in Module NC-01. The 80 percent engagement threshold and the 100 percent
+applied threshold are **StateCourse standards**; the **75 percent** end-of-course standard is the
+Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
+
+---
+
+## Instructor source note for Module NC-08
+
+Drawn from **Section VIII** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
+May 2026, read on 2026-08-20 and transcribed in `north-carolina/regulatory/primary-text-readings.md`.
+Every Instructor Note, Required Activity, rule citation and numbered requirement above is **transcribed
+from the Syllabus.**
+
+**Not read, and therefore stated nowhere in this module in its own text:** **NCGS 93A**, including
+93A-6(a)(1), (2), (3), (4), (6), (7), (8), (10), (12), (13) and (14), and **93A-13**; **21 NCAC 58A**,
+including Rules .0104, .0106, .0108 and .0109 — the citations are the Syllabus's and the rules
+themselves were not obtained. **Also not obtained:** the **WWREA Disclosure form**; the **Questions &
+Answers on: Working with Real Estate Agents**; **NC REALTORS® Standard Form 2-T**; the **Residential
+Square Footage Guidelines**; the **LLCR**; and **RELINC**. **No field, wording or layout of any form is
+described**, and no measurement standard, notice period or fee figure from any unread source is stated.
+Obtaining the WWREA form and Form 2-T is a **submission gate** for this module. The worked net-to-seller
+figures are invented for arithmetic.
