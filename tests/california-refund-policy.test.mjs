@@ -4,7 +4,13 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { PRICING } from "../config/california/submission-facts.mjs";
-import { getCourse, getPackage, packageAllocation } from "../config/course-catalog.mjs";
+import {
+  CALIFORNIA_COMPLIMENTARY_COMPONENTS,
+  COMPLIMENTARY_DISCLOSURE,
+  getCourse,
+  getPackage,
+  packageAllocation,
+} from "../config/course-catalog.mjs";
 import {
   FULL_REFUND_BUSINESS_DAYS,
   PRO_RATA_CEILING_PERCENT,
@@ -152,10 +158,17 @@ const base = {
   certificateIssued: false,
 };
 
-test("seven business days skips weekends", () => {
-  /* Monday 2 March plus seven business days is Wednesday 11 March, not Monday 9 March. */
-  const anchor = addBusinessDays(new Date(MARCH_2), FULL_REFUND_BUSINESS_DAYS);
-  assert.equal(anchor.toISOString().slice(0, 10), "2026-03-11");
+test("seven business days skips weekends and California holidays", () => {
+  /* Monday 2 March 2026 plus seven business days is Wednesday 11 March: no holiday falls in
+     that span, so only the weekend moves it. */
+  assert.equal(addBusinessDays(new Date(MARCH_2), FULL_REFUND_BUSINESS_DAYS).toISOString().slice(0, 10), "2026-03-11");
+  /* Tuesday 10 February 2026 crosses three holidays — 12 February Lincoln Day, 16 February
+     the third Monday, 17 February Lunar New Year — so seven business days reaches 24
+     February rather than 19 February. Excluding them lengthens the student's window. */
+  assert.equal(
+    addBusinessDays(new Date(Date.UTC(2026, 1, 10)), FULL_REFUND_BUSINESS_DAYS).toISOString().slice(0, 10),
+    "2026-02-24",
+  );
   assert.equal(addBusinessDays(new Date(MARCH_2), 0).toISOString(), new Date(MARCH_2).toISOString());
   assert.throws(() => addBusinessDays(new Date(MARCH_2), -1), RangeError);
 });
@@ -278,15 +291,38 @@ test("a package is decided course by course, and a finished course does not redu
 /* ------------------------------------------------------------------- the allocation */
 
 test("a package allocation sums to the package price exactly, with no cent lost or invented", () => {
-  const { allocated } = packageAllocation("ca-required-education-135");
-  assert.equal(allocated.length, 3);
-  assert.equal(
-    allocated.reduce((sum, entry) => sum + entry.allocatedAmount, 0),
-    getPackage("ca-required-education-135").priceCents,
-  );
-  /* Deterministic: the same package always allocates the same way, or a pro-rata refund
-     computed today and re-checked next year would not agree. */
-  assert.deepEqual(packageAllocation("ca-required-education-135").allocated, allocated);
+  for (const packageId of ["ca-required-education-135", "ca-complete-path"]) {
+    const { allocated } = packageAllocation(packageId);
+    assert.equal(
+      allocated.reduce((sum, entry) => sum + entry.allocatedAmount, 0),
+      getPackage(packageId).priceCents,
+      `${packageId} allocation does not sum to its price`,
+    );
+    /* Deterministic: the same package always allocates the same way, or a pro-rata refund
+       computed today and re-checked next year would not agree. */
+    assert.deepEqual(packageAllocation(packageId).allocated, allocated, `${packageId} is not deterministic`);
+  }
+});
+
+/*
+ * The Complete Licensing Path is the case the rule was written for. Its price also includes
+ * Exam Prep and the Licensing Navigator, which carry no DRE credit; they are complimentary
+ * and take no tuition, so the whole $299 goes to the three DRE-credit courses.
+ */
+test("the complete path allocates its whole price to the three DRE-credit courses", () => {
+  const { allocated } = packageAllocation("ca-complete-path");
+  const byId = Object.fromEntries(allocated.map((entry) => [entry.courseId, entry]));
+  assert.equal(byId["ca-real-estate-principles-45"].allocatedAmount, 9967);
+  assert.equal(byId["ca-real-estate-practice-45"].allocatedAmount, 9967);
+  assert.equal(byId["ca-mortgage-loan-brokering-lending-45"].allocatedAmount, 9966);
+  assert.equal(byId["ca-exam-prep"].allocatedAmount, 0);
+  assert.equal(byId["ca-licensing-navigator"].allocatedAmount, 0);
+  /* Complimentary components stay in the record rather than being dropped, so a student can
+     see that what they bought includes them and that they carry no refundable value. */
+  assert.equal(byId["ca-exam-prep"].complimentary, true);
+  assert.equal(byId["ca-licensing-navigator"].complimentary, true);
+  assert.equal(byId["ca-real-estate-principles-45"].complimentary, false);
+  assert.equal(allocated.reduce((sum, entry) => sum + entry.allocatedAmount, 0), 29900);
 });
 
 test("an indivisible price distributes the remainder rather than dropping it", () => {
@@ -304,29 +340,39 @@ test("an indivisible price distributes the remainder rather than dropping it", (
     { courseId: "dear", listAmount: 25000 },
   ]);
   assert.deepEqual(weighted.map((entry) => entry.allocatedAmount), [5000, 25000]);
+  /* The stated rule: the first n-1 take the rounded share, the last takes the remainder. */
+  const equal = allocatePackagePrice(29900, [
+    { courseId: "a", listAmount: 7900 },
+    { courseId: "b", listAmount: 7900 },
+    { courseId: "c", listAmount: 7900 },
+  ]);
+  assert.deepEqual(equal.map((entry) => entry.allocatedAmount), [9967, 9967, 9966]);
   assert.throws(() => allocatePackagePrice(100, []), /at least one component/);
   assert.throws(() => allocatePackagePrice(100, [{ courseId: "a", listAmount: 0 }]), /total zero/);
 });
 
-/*
- * The complete-path package costs more than the three courses because it also buys Exam
- * Prep and the Licensing Navigator, which carry no DRE course credit. Nothing states how
- * that price divides, so it must refuse to allocate rather than guess — a guessed split
- * would decide real money in a real refund.
- */
-test("a package whose statutory tuition share is undecided refuses to allocate", () => {
-  const result = packageAllocation("ca-complete-path");
-  assert.equal(result.allocated, null);
-  assert.equal(result.reason, "statutory_tuition_share_undecided");
-  assert.equal(getPackage("ca-complete-path").statutoryTuitionCents, null);
+test("an unknown package is refused rather than allocated", () => {
+  assert.equal(packageAllocation("no-such-package").allocated, null);
   assert.equal(packageAllocation("no-such-package").reason, "unknown_package");
+});
+
+test("the complimentary components are disclosed rather than silently priced at zero", () => {
+  assert.equal(CALIFORNIA_COMPLIMENTARY_COMPONENTS.length, 2);
+  for (const component of CALIFORNIA_COMPLIMENTARY_COMPONENTS) {
+    assert.ok(COMPLIMENTARY_DISCLOSURE.includes(component.name), `${component.name} is not named in the disclosure`);
+  }
+  assert.match(COMPLIMENTARY_DISCLOSURE, /no additional charge/i);
+  assert.match(COMPLIMENTARY_DISCLOSURE, /no Department of Real Estate course credit/i);
+  assert.match(COMPLIMENTARY_DISCLOSURE, /no separately allocated tuition/i);
 });
 
 test("neither California package is purchasable yet, and each says why", () => {
   for (const packageId of ["ca-required-education-135", "ca-complete-path"]) {
     const bundle = getPackage(packageId);
     assert.equal(bundle.purchasable, false, `${packageId} must not be purchasable before package enrollment fan-out exists`);
-    assert.ok(bundle.notPurchasableReason.length > 20, `${packageId} does not say why`);
+    assert.match(bundle.notPurchasableReason, /one enrollment per component course/i, `${packageId} does not say why`);
+    /* The blocker is the fan-out, not an undecided price: both allocate. */
+    assert.ok(packageAllocation(packageId).allocated, `${packageId} must allocate`);
   }
 });
 

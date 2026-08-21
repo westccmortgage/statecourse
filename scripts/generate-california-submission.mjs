@@ -19,6 +19,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { BUSINESS_DAY_CONVENTION } from "../config/california/business-day-calendar.mjs";
+import { COMPLIMENTARY_DISCLOSURE } from "../config/course-catalog.mjs";
 import {
   COURSES, COURSE_DESIGN, DRE, ENROLLMENT_RULES, FEES, FINAL_EXAM, INSTRUCTOR, PRICING, PROVIDER, STATUS_LINE
 } from "../config/california/submission-facts.mjs";
@@ -208,6 +210,8 @@ RE 313's fee field asks for the total "**including any shipping and handling fee
 >
 > **$${PRICING.completePath.usd}** — *${PRICING.completePath.name}*: all ${COURSE_DESIGN.hours * 3} hours plus California Exam Prep and the Licensing/Application Navigator. **Exam Prep and the Navigator are not statutory pre-license education, carry no DRE course credit, and are not part of this application.**
 >
+> **${COMPLIMENTARY_DISCLOSURE}**
+>
 > No shipping or handling fee. The course is delivered online; no printed material is shipped to the student.
 
 ## REFUND/CANCELLATION POLICY — text to enter
@@ -229,7 +233,7 @@ The policy stated clause by clause, as it is implemented:
 
 **How the percentages are measured.** Regulation 3000(a)(1) defines a correspondence course as a number of separate lesson assignments, so completion is counted in **assignments completed out of ${COURSE_DESIGN.lessonAssignments}**, not in elapsed time and not in pages opened. The 60% threshold is therefore reached after the ${Math.floor(COURSE_DESIGN.lessonAssignments * 0.6)}th assignment; a student at or below ${Math.floor(COURSE_DESIGN.lessonAssignments * 0.6)} completed assignments who has not attempted the final examination is inside the pro-rata window.
 
-**"Seven business days"** is counted Monday through Friday. The adopted policy names no holiday calendar and ${PROVIDER.legalName} has not adopted one, so none is applied; this is recorded rather than left implicit because a holiday convention would lengthen the window, and the shorter reading is the one currently implemented.
+**"Seven business days".** ${BUSINESS_DAY_CONVENTION} This convention is ${PROVIDER.legalName}'s own. **5 CCR § 70000(d)**, effective 1 July 2026, gives the window its shape — *"'Cancellation Period' means the period from the signing of the enrollment agreement either through the student's attendance at the first class session, or the **seventh business day after enrollment, whichever is later**"* — but **5 CCR §§ 70000–76245 use "business day" throughout and define it nowhere**, so the count above is adopted rather than imposed. **The Department of Real Estate does not prescribe it either**: the Course Provider Handbook requires the refund and cancellation policy to be disclosed on this page before registration/enrollment, and is not the source of the seven-day figure. Excluding the § 6700 holidays lengthens the student's window rather than shortening it.
 
 **Where the platform enforces it.** The policy version is written into the checkout attempt and the Stripe session metadata before payment, and into a per-course allocation row that records how many cents of the purchase are this course's tuition. The refund path recomputes the entitlement from that allocation and from the student's own progress record; an administrator can refund less than the policy allows but cannot refund more without an explicit override, and the policy's own decision is stored alongside whatever was sent.
 

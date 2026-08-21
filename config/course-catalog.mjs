@@ -96,17 +96,18 @@ const courses = Object.fromEntries([
  *
  * A package is not a course. It has no DRE course approval of its own, and buying one buys
  * the component courses. Refunds are calculated course by course under CA-2026-08-20-v1, so
- * every package must carry an allocation that says how many cents of the package price are
- * that course's tuition — otherwise a pro-rata refund on one course of three cannot be
- * reproduced from the record.
+ * every package carries an allocation saying how many cents of the package price are that
+ * course's tuition — otherwise a pro-rata refund on one course of three cannot be reproduced
+ * from the record.
  *
- * `statutoryTuitionCents` is the part of the price that buys DRE statutory pre-license
- * education and is therefore the part a refund is calculated against. For the
- * required-education package that is the whole price. For the complete path it is NOT,
- * because that price also buys Exam Prep and the Licensing Navigator, which carry no DRE
- * course credit — and no source in this project states how the price divides between them.
- * That split is a business decision and is left null rather than guessed; `packageAllocation`
- * refuses to allocate a package whose statutory tuition is undecided.
+ * The Complete Licensing Path costs more than the three courses because it also includes
+ * California Exam Prep and the Licensing/Application Navigator. Those are NOT statutory
+ * pre-license education and carry no DRE course credit, so they are included at no additional
+ * charge and take no allocated tuition: the whole package price is attributed to the three
+ * DRE-credit courses, which is the allocation most favourable to a student seeking a refund,
+ * and it invents no price for a product that has never been sold separately. They remain in
+ * the component list at zero rather than being dropped, so a student can see that what they
+ * bought includes them and that they carry no refundable tuition value.
  */
 const CALIFORNIA_STATUTORY_COURSE_IDS = Object.freeze([
   "ca-real-estate-principles-45",
@@ -114,28 +115,47 @@ const CALIFORNIA_STATUTORY_COURSE_IDS = Object.freeze([
   "ca-mortgage-loan-brokering-lending-45",
 ]);
 
+/* Included in the Complete Licensing Path, carrying no DRE credit and no allocated tuition.
+   Named here rather than inline so the checkout disclosure and the RE 313 fee block read the
+   same list. */
+export const CALIFORNIA_COMPLIMENTARY_COMPONENTS = Object.freeze([
+  Object.freeze({ id: "ca-exam-prep", name: "California Exam Prep" }),
+  Object.freeze({ id: "ca-licensing-navigator", name: "Licensing/Application Navigator" }),
+]);
+
+export const COMPLIMENTARY_DISCLOSURE =
+  "California Exam Prep and the Licensing/Application Navigator are complimentary package " +
+  "features included at no additional charge. They are not statutory pre-license education, " +
+  "carry no Department of Real Estate course credit, and have no separately allocated tuition " +
+  "value; the entire package price is allocated to the three DRE-credit courses for refund " +
+  "purposes.";
+
+const californiaPackage = ({ id, pricing, complimentary }) =>
+  Object.freeze({
+    id,
+    state: "CA",
+    name: pricing.name,
+    priceCents: pricing.cents,
+    /* The whole price buys statutory education; anything else in the package is included at
+       no charge. There is no undecided share left to guess at. */
+    statutoryTuitionCents: pricing.cents,
+    componentCourseIds: CALIFORNIA_STATUTORY_COURSE_IDS,
+    complimentaryComponents: complimentary,
+    purchasable: false,
+    notPurchasableReason:
+      "Package checkout must create one enrollment per component course, and the paid-webhook path creates exactly one. Single-course checkout is unaffected.",
+  });
+
 const packages = Object.freeze({
-  "ca-required-education-135": Object.freeze({
+  "ca-required-education-135": californiaPackage({
     id: "ca-required-education-135",
-    state: "CA",
-    name: PRICING.requiredEducation.name,
-    priceCents: PRICING.requiredEducation.cents,
-    statutoryTuitionCents: PRICING.requiredEducation.cents,
-    componentCourseIds: CALIFORNIA_STATUTORY_COURSE_IDS,
-    purchasable: false,
-    notPurchasableReason:
-      "Package checkout creates one enrollment per component course, which is not built. Single-course checkout is unaffected.",
+    pricing: PRICING.requiredEducation,
+    complimentary: Object.freeze([]),
   }),
-  "ca-complete-path": Object.freeze({
+  "ca-complete-path": californiaPackage({
     id: "ca-complete-path",
-    state: "CA",
-    name: PRICING.completePath.name,
-    priceCents: PRICING.completePath.cents,
-    statutoryTuitionCents: null,
-    componentCourseIds: CALIFORNIA_STATUTORY_COURSE_IDS,
-    purchasable: false,
-    notPurchasableReason:
-      "The division of this price between statutory tuition and the non-credit Exam Prep and Navigator products is undecided, so no refund allocation can be recorded.",
+    pricing: PRICING.completePath,
+    complimentary: CALIFORNIA_COMPLIMENTARY_COMPONENTS,
   }),
 });
 
@@ -148,21 +168,20 @@ export function getPackageCatalog() {
 }
 
 /*
- * The allocation a package purchase must persist at checkout. Component list prices come
- * from the catalog itself, so the split is reproducible from the record rather than from a
- * figure typed at the time of sale.
+ * The allocation a package purchase must persist at checkout. Component standalone prices
+ * come from the catalog itself, so the split is reproducible from the record rather than from
+ * a figure typed at the time of sale, and complimentary components are carried at zero.
  */
 export function packageAllocation(packageId) {
   const bundle = packages[packageId];
   if (!bundle) return { allocated: null, reason: "unknown_package" };
-  if (bundle.statutoryTuitionCents == null) {
-    return { allocated: null, reason: "statutory_tuition_share_undecided" };
-  }
-  const components = bundle.componentCourseIds.map((courseId) => {
-    const course = courses[courseId];
-    if (!course) throw new Error(`packageAllocation: ${packageId} names unknown course ${courseId}`);
-    return { courseId, listAmount: PRICING.singleCourse.cents };
-  });
+  const components = [
+    ...bundle.componentCourseIds.map((courseId) => {
+      if (!courses[courseId]) throw new Error(`packageAllocation: ${packageId} names unknown course ${courseId}`);
+      return { courseId, listAmount: PRICING.singleCourse.cents };
+    }),
+    ...bundle.complimentaryComponents.map((component) => ({ courseId: component.id, listAmount: 0 })),
+  ];
   return { allocated: allocatePackagePrice(bundle.statutoryTuitionCents, components), reason: null };
 }
 
