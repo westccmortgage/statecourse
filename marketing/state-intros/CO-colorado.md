@@ -26,7 +26,7 @@
 
 > Real estate licensing in Colorado is regulated by the Colorado Division of Real Estate + Division of Private Occupational Schools.
 > The pre-license education requirement is 168 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
-> Approved courses may be delivered by: DPOS-approved asynchronous/distance delivery, Other DPOS-approved delivery methods.
+> Approved courses may be delivered by: Online delivery, subject to the Division's Online Course Approval Checklist (not yet obtained), Other DPOS-approved delivery methods.
 > Courses must be approved by the regulator before they count toward the requirement. A course that is not approved earns nothing, however good it is.
 > Instructors must also be qualified or approved.
 

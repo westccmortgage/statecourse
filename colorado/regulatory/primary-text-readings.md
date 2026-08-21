@@ -984,5 +984,57 @@ these:**
 **No disciplinary consequence, penalty, fine, sanction, examination passing score, fee, form version,
 landlord-tenant figure, or unauthorized-practice boundary is stated anywhere in this build.**
 
+---
+
+## Addendum — audit pass, 2026-08-21
+
+Two items were checked against the Division's own pages after the build, because both are named in the
+public state record and neither had been traced to a primary source.
+
+### REC-33 — CONFIRMED from the Division's own page
+
+The Division's **Real Estate Broker Application Instruction Guide** at
+`dre.colorado.gov/division-programs/real-estate-broker/licensing/real-estate-broker-application-instruction-guide`
+states, under **First Time Applicants**:
+
+> *"In order to be eligible to apply for the broker credential from the Colorado Division of Real Estate you
+> must: **complete 168 course work and obtain proof of completion, (REC-33 certificate(s)) from your course
+> provider** or hold a degree with a major course of study in real estate, and take and pass both national
+> and state portions of the Colorado Real Estate Broker's Exam. **Exam results are good for one year from
+> the date of each portion's passing score.** PSI is the current exam vendor for the Division of Real
+> Estate."*
+
+**This confirms three things from the regulator directly:** the **168** figure the six courses total; that
+**proof of completion is the REC-33 certificate**, issued **by the course provider**, not by the Division;
+and that **exam results are good for one year from each portion's passing score.** It also names **PSI** as
+the current exam vendor. **No passing score, item count, time limit or fee is stated on that page and none
+is imported here.**
+
+### The Online Course Approval Checklist — STILL NOT OBTAINED
+
+The **Practical Applications (32 Hours) Qualifying Education Outline** requires that *"Courses taught online
+must meet the requirements set forth in the Online Course Approval Checklist created by the Division of Real
+Estate."* That qualifying-education checklist was searched for again and **was not found on the Division's
+Broker Education Providers & Course Approval page.**
+
+What that page does publish is a **different, continuing-education-scoped form** — the **REAL ESTATE BROKER
+LIVE ONLINE VIRTUAL CLASSROOM CHECKLIST, Rev. Date 2025-05**, which by its own terms is submitted *"in
+conjunction with a **Continuing Education Course Application** form"* and defines a live-online course as
+*"a real-time, interactive program delivered by electronic devices that permit mutual webcam viewing of
+faces, participation and communication between the presenters and students."* It requires **Zoom, WebEx or
+an equivalent platform**, an **administrator monitoring the live active video feed of every student** (one
+administrator for **fifty students or less**, **two** for more than fifty), an **active video feed
+throughout the course to receive credit**, **registration in the licensed name**, and submission **at least
+thirty days prior to the initial proposed course date**. It states that **classes are audited** and that
+**failure to comply may result in suspension or revocation of course approval.**
+
+**That form is CE-scoped and is NOT the qualifying-education checklist the Practical Applications outline
+names.** None of its figures are imported into any qualifying-education module or into the public state
+record. **The qualifying-education Online Course Approval Checklist remains an unclosed submission gate for
+every one of the six courses delivered online**, and the public record now says so rather than asserting an
+approved asynchronous delivery method.
+
+---
+
 **Course version 1.0 submission draft — NOT APPROVED. No Colorado qualifying education hours are
 available.**

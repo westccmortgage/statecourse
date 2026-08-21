@@ -26,7 +26,7 @@
 
 > Real estate licensing in Arizona is regulated by the Arizona Department of Real Estate.
 > The pre-license education requirement is 90 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
-> Approved courses may be delivered by: Synchronous distance, Asynchronous distance, Classroom — only as separately approved.
+> Approved courses may be delivered by: Live classroom course (A.R.S. § 32-2124(B)), Distance learning course (A.R.S. § 32-2124(B)), Course segments in any combination of in-person or synchronous remote delivery (A.R.S. § 32-2124(B)).
 > Courses must be approved by the regulator before they count toward the requirement. A course that is not approved earns nothing, however good it is.
 > Instructors must also be qualified or approved.
 
