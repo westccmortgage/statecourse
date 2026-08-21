@@ -19,7 +19,7 @@
 
 ### identification — ~8s
 
-> This is StateCourse, from state course LLC.
+> This is StateCourse, from StateCourse LLC.
 > A short introduction to real estate licensing in Wisconsin.
 
 ### requirement — ~30s
@@ -50,7 +50,7 @@
 
 | When | Text |
 | --- | --- |
-| Open | StateCourse · state course LLC |
+| Open | StateCourse · StateCourse LLC |
 | Requirement | 72 hours pre-license education |
 | Status | Not approved — no credit available |
 | Close | https://dsps.wi.gov/Pages/Professions/RESalesperson/Default.aspx |

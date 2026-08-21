@@ -83,10 +83,51 @@ async function processEvent(event, mode) {
         p_status: object.status || (event.type === "refund.failed" ? "failed" : "pending"),
         p_reason: object.reason || null,
       });
+      await classifyRefundOrigin(object);
       break;
     default:
       break;
   }
+}
+
+/*
+ * A refund issued outside this system — by hand in the Stripe Dashboard, typically.
+ *
+ * It has already been paid by the time we hear about it, so there is nothing to reject and
+ * nothing to reverse. Two things must happen, and only one of them belongs here.
+ *
+ * HERE: record that the refund happened, at the amount Stripe reports, and that this system
+ * did not decide it. That is a fact about Stripe, which is what a webhook is for.
+ *
+ * NOT HERE: deciding whether the amount exceeded what the policy would have allowed. That is
+ * a judgement, it needs the student's course progress, and this handler must stay clear of
+ * compliance state in both directions — payment must never determine study time, examination
+ * eligibility, credit or a certificate, and the cleanest way to keep that true is for the
+ * payment path not to read those records at all. It is also work that must not run inside an
+ * endpoint Stripe retries: an entitlement calculation that throws would fail an event that
+ * had already been recorded correctly.
+ *
+ * The assessment is done by admin-refund-exceptions.mjs, against the same policy engine the
+ * refund path uses, and until it runs the refund is marked as external with its entitlement
+ * unassessed rather than assumed to be fine.
+ */
+async function classifyRefundOrigin(refundObject) {
+  const rows = await dbRequest(
+    `refunds?stripe_refund_id=eq.${encodeURIComponent(refundObject.id)}&select=id,origin,policy_version,policy_amount&limit=1`,
+  );
+  const refund = rows?.[0];
+  if (!refund) return;
+  /* A refund the engine decided already carries its decision. */
+  if (refund.policy_version && refund.origin === "platform" && refund.policy_amount != null) return;
+
+  await rpc("mark_external_refund", {
+    p_stripe_refund_id: refundObject.id,
+    p_actual_amount: refundObject.amount,
+    /* Null is "not yet assessed", not "nothing was owed". mark_external_refund records it as
+       awaiting assessment rather than treating it as within the entitlement. */
+    p_policy_amount: null,
+    p_note: "Issued outside StateCourse and recorded at the amount Stripe reports. Entitlement not yet assessed.",
+  });
 }
 
 /*
@@ -95,7 +136,10 @@ async function processEvent(event, mode) {
  * A mismatch is recorded and NOT thrown. Throwing would fail the event, Stripe would retry it
  * on a schedule of hours and days, and every retry would find the same disagreement — the
  * database would never converge and the alert would arrive as an outage rather than as a
- * discrepancy. It is written to the audit log instead, where it can be looked at.
+ * discrepancy. It is written where an operator can look at it instead.
+ *
+ * The comparison is on identifiers and amounts only. It reads no course progress, because the
+ * payment path must stay clear of compliance state in both directions.
  */
 async function reconcileAgainstRecord(event, object) {
   const intentId = idOf(object.payment_intent) ?? (event.type.startsWith("payment_intent.") ? object.id : null);

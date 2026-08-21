@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { PROVIDER } from "../config/california/submission-facts.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 
@@ -63,7 +64,12 @@ test("every recordable script identifies the legal entity", () => {
      the entity and include its name. */
   for (const { name, body } of scripts) {
     if (body.includes("NOT READY TO RECORD")) continue;
-    assert.match(body, /state course LLC/, `${name} omits the legal entity name`);
+    /* The legal entity name, which Regulation 3004(a) requires the advertisement to carry.
+       This assertion used to demand "state course LLC" — the Wyoming-era misspelling of a
+       name that is StateCourse LLC — and so held all 51 scripts to the wrong name. It now
+       comes from the same facts file the generator reads. */
+    assert.match(body, new RegExp(PROVIDER.legalName), `${name} omits the legal entity name`);
+    assert.equal(/state course LLC/.test(body), false, `${name} carries the superseded entity name`);
   }
 });
 

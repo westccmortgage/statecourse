@@ -1,6 +1,6 @@
 # Course dossier — Real Estate Practice
 
-**Provider:** StateCourse LLC (California domestic LLC, CA SoS file B20260376786, filed 18 August 2026)
+**Provider:** StateCourse LLC (California domestic limited liability company, CA SoS file B20260376786, filed August 18, 2026)
 **Course:** Real Estate Practice
 **Course identifier:** `ca-real-estate-practice-45`, version 1.0
 **Instruction hours:** 45
@@ -44,39 +44,35 @@ five-item remediation set covering the same concepts a second way for students w
 | --- | --- |
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
-| Words of instructional text | 58,219 |
-| Estimated typeset pages | ~196 |
+| Words of instructional text | 134,207 |
+| Estimated typeset pages | ~450 |
 | Scored assessment items | 165 |
 
 RE 303 states that *"approximately 450 pages of text/instructional material is equivalent to
 textbooks offered by a California college or university"* for a 45-hour course.
 
-**This course is currently at approximately 196 pages, against that ~450-page benchmark.**
-The material is written instruction rather than placeholder text, but it is not yet at the depth
-the benchmark implies, and it is presented here as work in progress. A reviewing instructor is
-being asked to evaluate the approach, the coverage, and the quality of what exists — and their
-comments are wanted while the remaining depth is being written, not afterwards.
+This course is at approximately 450 pages, meeting the benchmark.
 
 ## Timed course outline
 
 | # | Lesson assignment | Minutes | Est. pages | Status |
 | ---: | --- | ---: | ---: | --- |
-| 1 | California practice standards and the regulated professional | 180 | ~16.6 | Written |
-| 2 | Building a lawful real estate practice | 180 | ~12.0 | Written |
-| 3 | Agency disclosure and fiduciary performance | 180 | ~11.9 | Written |
-| 4 | Seller counseling and listing agreements | 180 | ~12.7 | Written |
-| 5 | Market analysis and pricing strategy | 180 | ~14.3 | Written |
-| 6 | Marketing, advertising, and fair access | 180 | ~16.7 | Written |
-| 7 | Buyer representation and property selection | 180 | ~15.4 | Written |
-| 8 | Purchase agreements, counteroffers, and contingencies | 180 | ~12.9 | Written |
-| 9 | Disclosures and property-condition risk | 180 | ~12.2 | Written |
-| 10 | Financing the transaction | 180 | ~12.2 | Written |
-| 11 | Escrow, title, closing, and possession | 180 | ~11.1 | Written |
-| 12 | Property management and leasing practice | 180 | ~12.5 | Written |
-| 13 | Ethics, risk management, and dispute prevention | 180 | ~11.9 | Written |
-| 14 | Implicit bias and fair housing participatory practicum | 180 | ~12.1 | Written |
-| 15 | Integrated California residential transaction | 180 | ~11.5 | Written |
-| | **Total** | **2700 minutes = 45 hours** | **~196** | |
+| 1 | California practice standards and the regulated professional | 180 | ~29.6 | Written |
+| 2 | Building a lawful real estate practice | 180 | ~29.9 | Written |
+| 3 | Agency disclosure and fiduciary performance | 180 | ~29.3 | Written |
+| 4 | Seller counseling and listing agreements | 180 | ~29.4 | Written |
+| 5 | Market analysis and pricing strategy | 180 | ~29.9 | Written |
+| 6 | Marketing, advertising, and fair access | 180 | ~29.9 | Written |
+| 7 | Buyer representation and property selection | 180 | ~29.6 | Written |
+| 8 | Purchase agreements, counteroffers, and contingencies | 180 | ~30.4 | Written |
+| 9 | Disclosures and property-condition risk | 180 | ~30.2 | Written |
+| 10 | Financing the transaction | 180 | ~29.4 | Written |
+| 11 | Escrow, title, closing, and possession | 180 | ~29.6 | Written |
+| 12 | Property management and leasing practice | 180 | ~30.1 | Written |
+| 13 | Ethics, risk management, and dispute prevention | 180 | ~31.2 | Written |
+| 14 | Implicit bias and fair housing participatory practicum | 180 | ~30.2 | Written |
+| 15 | Integrated California residential transaction | 180 | ~30.8 | Written |
+| | **Total** | **2700 minutes = 45 hours** | **~450** | |
 
 ## Lesson detail
 
@@ -114,6 +110,16 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | May two salespersons at different brokerages split a fee between themselves? | No. The split is broker to broker. |
 | May a salesperson open an office and advertise under a personal brand? | Not independently. Advertising must identify the employing brokerage. |
 | May a salesperson hold a buyer's deposit in a personal account? | No. Trust funds are the broker's responsibility and belong in the broker's trust account. |
+| The activity | Why the license does not reach it |
+| Giving legal advice | Section 3.2 draws the boundary. Interpreting a contract's legal effect, advising on how title should be taken, or opining on the enforceability of a restriction is the practice of law. |
+| Preparing legal instruments beyond filling in approved forms | Drafting provisions that alter legal rights is authorship of a legal document. |
+| Giving tax advice | Holding periods, basis, exclusions, exchanges, and the treatment of credits belong to a tax advisor. |
+| Appraising | Lesson 05, Section 5.1. A comparative market analysis is not an appraisal and may not be presented as one. |
+| Inspecting | Opinions about the condition or remaining life of building systems require a qualification the license does not confer. |
+| Loan origination activity requiring its own authority | Mortgage activity carries its own licensing and endorsement framework. |
+| Acting outside the brokerage | A salesperson's authority flows through the responsible broker; there is no independent practice. |
+| Escrow activity beyond what the framework permits | Escrow is regulated separately, and holding funds is the accounting duty in Section 6, not a service to be improvised. |
+| Practicing in another jurisdiction | A California license is a California license. |
 
 ### 2. Building a lawful real estate practice
 
@@ -150,6 +156,10 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Records storage and security | Retention obligations run for years past closing |
 | Transaction management tools | The deadline tracking that prevents most disputes |
 | Time for corrections | Every practice generates errors; the plan should assume some |
+| Line | The question it answers |
+| Months of fixed costs held in reserve | How long can the practice operate before the first closing pays? |
+| Expected lag from first client contact to first closing | Measured for your market and your price point, not assumed |
+| What happens if the first two transactions fall out | Which they may, for reasons having nothing to do with your work |
 | Defect | Why it fails |
 | Personal brand and mobile number, no brokerage named | The consumer cannot tell there is a supervising brokerage, or which one |
 | License identification omitted from solicitation material | The consumer cannot verify licensure |
@@ -157,6 +167,13 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Social media property posts treated as personal expression | Promoting listings is advertising regardless of the platform |
 | Photographs no longer showing the property's condition | Truthfulness is measured against the property now, not when the photo was taken |
 | Photographs of a different, nicer unit | Misrepresents the unit actually offered, however similar the units are |
+| Channel | Where licensees go wrong |
+| Social profile | The profile itself is advertising. A bio naming the licensee and the service without the required identification is a defect on every post it appears above. |
+| Short video | Identification burned into a caption that the platform crops, or spoken so quickly it is not conveyed. Presence is not the standard; conveyance is. |
+| Direct messages | Feel like conversation, function as solicitation, and carry the same identification and consent obligations as any other channel. |
+| Review and referral sites | Profiles written by the platform from scraped data still advertise the licensee's services. The obligation is the licensee's, not the platform's. |
+| Syndicated listings | Content is reformatted by systems the licensee does not control, and identification can be stripped in the process. |
+| Paid targeting | Restricting who sees a housing advertisement is a fair housing question before it is a marketing one. |
 
 ### 3. Agency disclosure and fiduciary performance
 
@@ -194,15 +211,36 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Accounting | Reasonable care in statements made |
 | Disclosure of all material information | Visual inspection disclosure (residential) |
 | Reasonable care and diligence |  |
+| What the licensee does | How it reads to the visitor |
+| Answers questions about the property's condition and history | Ordinary, and expected of a listing agent |
+| Explains what the seller is likely to accept | Advice, given on the visitor's behalf against the seller's interest |
+| Suggests an offer strategy | Advice, and the visitor now believes he has an advisor |
+| Says "let's write it up and I'll take care of you" | A representation that the licensee is acting for him |
+| Recommends a lender and an inspector | The service pattern of a buyer's agent |
 | Role | When the disclosure must be provided |
 | Seller's agent | Before the listing agreement is signed — so the seller understands the relationship before being bound |
 | Buyer's agent | As soon as practicable before the buyer signs an offer — so the buyer understands whom the agent represents before committing |
 | Agent presenting an offer to the seller | Before or at the time the offer is presented — so the seller knows whose interests the presenting agent serves while evaluating it |
+| The failure | How it happens |
+| A deadline missed | Tracked in memory or in one person's calendar rather than in a system |
+| A document not delivered | Sent, assumed received, never confirmed |
+| A disclosure prepared from an old file | Copied forward, carrying facts about a different property |
+| A condition observed and not mentioned | Noticed in passing, deferred to "the inspector will catch it" |
+| A referral made carelessly | A vendor recommended because he is familiar, not because he is qualified for this |
+| Advice given outside competence | A legal, tax, structural, or environmental question answered rather than routed |
+| A number stated from memory | Square footage, lot size, tax amount, or fee quoted without verification |
 | Inadequate approach | Why it fails |
 | "The client is free to choose someone else" | The client cannot weigh a recommendation without knowing what the recommender receives |
 | "I'll disclose it if they ask" | Waiting to be asked defeats the purpose; the client does not know to ask |
 | "I won't let it influence me" | A private intention is not something the client can evaluate |
 | Disclosing after the client has acted | Information that arrives after the decision has no value |
+| The relationship | What it requires |
+| A vendor you use because he is good, with no arrangement | Nothing beyond ordinary care in recommending someone competent for this work |
+| A vendor who refers business to you | Disclosure — the exchange runs both ways and the client cannot see it |
+| A vendor who pays you a referral fee | Disclosure before the recommendation, and the arrangement must itself be lawful |
+| A vendor in which you or a relative hold an interest | Disclosure, and the interest stated plainly rather than implied |
+| A vendor who provides you marketing support, event sponsorship, or materials | Disclosure — value received is value received, and its form does not change the analysis |
+| A vendor your brokerage owns or is affiliated with | Disclosure on the terms the affiliated-business framework requires |
 
 ### 4. Seller counseling and listing agreements
 
@@ -254,6 +292,12 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Protection or safety clause | Compensation where a buyer produced during the term buys shortly after it ends |
 | Dispute resolution | Mediation and arbitration provisions |
 | Agency disclosure confirmation | Records the relationship |
+| The change | What it touches |
+| Price | The marketing, the listing service record, and the seller's net analysis. The reduction is documented as the seller's decision, on the same basis as the original price in Section 3.5. |
+| Term extension | The expiration date, and therefore what Section 6 does at the end. An extension agreed verbally leaves two parties with different beliefs about when the engagement ends. |
+| Compensation | A term the brokerage is party to. Not a licensee-level change. |
+| Scope | What is included in the sale — a change here changes what is being advertised. |
+| Withdrawal and return | Listing status in the service, which Section 6.4 notes must be accurate. |
 | Seller's position | The counseling response |
 | "It's fixed, so there's nothing to disclose." | The repair is what the buyer wants to evaluate. Disclosing it with the repair records is stronger than silence. |
 | "It only happens in heavy rain." | Materiality is about whether a buyer would consider it important, not about frequency. |
@@ -300,6 +344,13 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Garage and parking | Especially where street parking is constrained |
 | View, orientation, and exposure | Can dominate all other factors in some markets |
 | Site influences | Corner lot, arterial frontage, adjacency to commercial or rail |
+| Property type | Why the assumption fails |
+| Attached housing in a common-interest development | Two units with identical floor plans can differ materially by association dues, reserves, pending assessments, litigation, and rental restrictions. The physical comparison is the easy part and the least important. |
+| Acreage and rural property | Sales are few, far apart, and driven by water, access, zoning, and usable versus total acreage |
+| A genuinely unique property | No competitive set exists in any meaningful sense |
+| New construction in an active subdivision | The builder's prices are list prices set by a single seller, and the incentives are frequently not in the recorded price |
+| Deed-restricted or income-restricted housing | Price is constrained by a governing instrument rather than by the market |
+| Mixed residential and income use | Value derives partly from income, which the residential method does not capture |
 | Sale price | $845,000 |
 | Closed | 2 months ago |
 | Living area | 1,800 |
@@ -328,6 +379,13 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Pending sales | Price agreed, not yet closed |
 | Active listings | Currently offered |
 | Expired and withdrawn | Failed to sell |
+| Concession | Effect |
+| Seller credit toward buyer's closing costs | The buyer paid a higher nominal price in exchange for cash back. The recorded price overstates the market price. |
+| Rate buydown paid by the seller | Same mechanism, larger and less visible. A meaningful buydown can support a materially higher nominal price. |
+| Personal property included | Furnishings, equipment, or a vehicle bundled into the price. |
+| Repairs credited rather than performed | The price reflects a property that was never brought to the condition the price assumes. |
+| Seller-carried financing on favorable terms | The price and the financing are one bargain. A price achieved with seller financing at below-market terms is not a cash-equivalent price. |
+| Leaseback or delayed possession at no cost | Value transferred outside the price. |
 | Line | Notes |
 | Estimated sale price | The variable being tested |
 | Less: existing loan payoff(s) | Balance plus accrued interest to the payoff date, plus any other amounts under the note — not the balance alone |
@@ -421,6 +479,13 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Registration | Everyone registers, with the same disclosure about future contact |
 | Qualifying questions | The same questions asked of everyone, in the same way |
 | Access to all areas | The same areas shown to everyone |
+| The source | What the licensee is responsible for |
+| Syndication to portals | Content reformatted by systems he does not control, where identification can be stripped and photographs re-cropped. He is responsible for what appears about his listing, which means checking what it looks like on the portals rather than only in the listing service. |
+| Aggregator profiles | Assembled from scraped data, sometimes with stale listings, wrong contact details, or claims he never made. The obligation to correct is his, and most platforms provide a claim-and-correct process. |
+| A colleague's post about his listing | Advertising of the property, subject to the same requirements. Where it is wrong, he raises it — with the colleague and, if needed, the broker. |
+| A seller's own posts | Not the licensee's advertisement, but a licensee who sees a seller advertising the property with a claim he knows is false has a problem he cannot ignore. |
+| A vendor's marketing naming him | A lender, warranty company, or photographer promoting "our partner agent." Value received and a representation made — both of which have appeared earlier in this course. |
+| Automated listing alerts and drip campaigns | Written once, sending for years, often containing claims and identification that have gone stale. |
 
 ### 7. Buyer representation and property selection
 
@@ -470,6 +535,14 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Prequalification | A lender's preliminary assessment, largely on stated information |
 | Preapproval | A lender's review of supporting information |
 | Loan commitment | A conditional or firm commitment after underwriting |
+| What the buyer does | Why it matters |
+| Opens a credit account — a store card at a furniture purchase, a financed appliance | New debt and a new inquiry, both visible to the lender, both potentially re-underwritten before closing |
+| Changes jobs, including to a better one | Employment history is part of the determination, and a change of structure — salaried to commission, employee to contractor — can be more consequential than the amount |
+| Moves money between accounts | Creates deposits the lender will ask about, and Lesson 14 of the mortgage course explains what the answer must and must not be |
+| Receives a gift | Documentable, and the documentation is easier before the funds move than after |
+| Pays off a debt using reserve funds | Improves one number and damages another |
+| Co-signs for someone | An obligation, whether or not the buyer thinks of it as his |
+| Has a rate lock expire | Changes the payment and therefore the qualifying amount, sometimes materially |
 | Form | Example |
 | Direct | Declining to show properties in an area to a buyer |
 | Redirection | "You'd be more comfortable over here" — showing a different area than the one asked about |
@@ -540,6 +613,14 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Default and remedies | What happens if a party fails to perform, including liquidated damages |
 | Dispute resolution | Mediation and arbitration provisions |
 | Agency confirmation | The relationships elected |
+| The parties assume | The agreement's actual position |
+| "The seller will fix everything on the inspection." | It says nothing of the kind unless a repair term was negotiated and written. An inspection contingency is a right to investigate and respond, not a promise of repair. |
+| "Obviously the appliances stay." | What conveys is what the agreement says conveys, plus what the law treats as part of the real property. A washer and dryer are personal property until an agreement makes them otherwise. |
+| "We agreed on the closing date in the email." | The operative date is the one in the agreement, amended in writing. Section 5.5 governs. |
+| "The seller said he'd leave the patio furniture." | An oral side agreement about personal property, unrecorded anywhere, discovered at walkthrough. |
+| "Possession is at closing." | Only if the agreement says so. Delayed possession and rent-back are terms, and each carries insurance, liability, and condition questions. |
+| "The warranty is included." | A negotiated term, and one that is frequently discussed and not written. |
+| "They're taking the solar with them." | Depends on ownership, lease, or financing arrangement — a question with a documentary answer that must be obtained rather than assumed. |
 | Conduct | Assessment |
 | Declining to disclose competing offer terms | Permissible. The seller decides. |
 | Saying "there are multiple offers" when there are | Permissible and accurate |
@@ -555,6 +636,13 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Sale of buyer's property | The buyer's dependence on another closing |
 | Review of documents | Time to review disclosures, reports, HOA documents |
 | Title review | The buyer's ability to evaluate title exceptions |
+| The move | What the buyer gives up |
+| Shortening the investigation period | Time to obtain the specialist evaluations a general inspection recommends. The evaluations do not get faster because the period got shorter. |
+| Waiving investigation entirely | The right to respond to what he finds — and Section 4.6 establishes that the property's condition is unchanged by the waiver. |
+| Waiving the appraisal contingency | The obligation to cover a shortfall in cash, in an amount he cannot know in advance. This is the waiver whose cost is most often misunderstood, because it is stated as a risk and experienced as a bill. |
+| Waiving the loan contingency | Exposure of the deposit — and potentially more — if financing fails for a reason outside his control. |
+| Shortening the closing period | A deadline his own lender may not be able to meet, converting his aggressiveness into his default. |
+| Increasing the deposit | More money at risk under every scenario above. |
 | Notice | Function |
 | Contingency removal | The buyer removes a specified contingency in writing |
 | Notice to buyer to perform | The seller requires the buyer to act within the contract's period |
@@ -599,6 +687,13 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | "Nobody asked." | Disclosure is not question-driven. |
 | "It's not a problem for me." | The standard is a reasonable buyer, not this seller. |
 | "It happened before I owned it." | If the seller knows it, the seller discloses it. |
+| The seller | The problem |
+| A trustee or personal representative | Has authority to convey and may have never entered the property |
+| A successor who inherited | Knows the house socially and not structurally, and may be confusing childhood memory with fact |
+| An institutional owner after foreclosure | Has no occupancy knowledge at all |
+| An investor who bought, held, and never occupied | Knows what he did to it and nothing about what preceded him |
+| An owner who has been away for years | Knows the property as it was, not as it is |
+| A seller in a dissolution | May have knowledge that is genuinely disputed between two people who each have to sign |
 | Included | Excluded |
 | Areas reasonably and normally accessible | Areas requiring moving belongings or furniture |
 | Visual observation | Opening walls, floors, or ceilings |
@@ -618,6 +713,14 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Characteristics of neighbors or residents | Do not characterize — this is steering territory |
 | Prior occupant's death or illness | Subject to specific legal limits; escalate |
 | Rumor, reputation, and speculation | Do not represent as fact |
+| The question | The correct handling |
+| "How are the schools?" | Direct the buyer to the district's own published information and to the district itself for attendance boundaries. Do not rate, rank, or compare. Attendance boundaries change, and a boundary stated from memory is also a reasonable-care problem. |
+| "Is it safe?" | Direct the buyer to law enforcement's published data and to his own investigation. Do not characterize. "Safe" and "bad area" are exactly the terms that carry composition. |
+| "What kind of people live here?" | Do not answer. Not carefully, not vaguely, not with a compliment. Explain that you do not describe the composition of neighborhoods and that public sources exist for demographic data. |
+| "Would you buy here?" | The buyer is inviting the characterization through a side door. The answer is about the property and his criteria, not about the area's desirability. |
+| "Are there a lot of families?" | Familial status. Do not answer, including favorably. |
+| "Is it quiet?" | An observable condition rather than a composition question, and it is answerable by direction to investigate — visit at different hours, check for a nearby flight path, arterial, rail line, or venue. |
+| "Any problems with the neighbors?" | Section 4.3 governs the licensee's own knowledge of material facts. A known material fact is disclosed; a characterization of people is not offered. |
 | Failure | Consequence |
 | Not disclosing a known material fact | The most serious. Concealment, and it survives closing as a claim |
 | Disclosing but not evidencing delivery | The file cannot show the buyer's rights were honored |
@@ -657,6 +760,14 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Prequalification | Largely stated information |
 | Preapproval | Lender review of supporting information |
 | Loan commitment | Underwriting complete |
+| The source | What it actually requires |
+| Funds on deposit | The simplest case. Proof of funds identifies the institution, the account holder, and a balance as of a date. |
+| Funds in securities | A liquidation that takes time and produces a different amount than the statement shows. |
+| Funds from a sale closing first | Not cash. It is a contingent transaction wearing a cash label, and the dependency belongs in the offer. |
+| A loan against other property or assets | Financing, secured elsewhere. It has its own approval and its own timeline. |
+| Funds from a retirement or self-directed account | Frequently subject to procedural requirements and custodial timelines that are slower than the closing period. |
+| Funds from another person | Raises who the buyer actually is, and whether the person on the contract is the person acquiring. |
+| Funds arriving from outside the country | Transfer timelines and institutional requirements that can exceed the closing period substantially. |
 | Structure | Characteristic |
 | Fixed rate | Rate and payment fixed for the term |
 | Adjustable rate | Rate changes per an index plus a margin, within caps |
@@ -736,6 +847,14 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Title | Escrow and title |
 | Escrow | Escrow |
 | Insurance | Buyer |
+| The failure | What it looks like |
+| The unowned task | Everyone assumed someone else ordered the association documents |
+| The silent dependency | The appraisal cannot be scheduled until access is arranged with a tenant nobody has contacted |
+| The stale assumption | Work continues on the belief that a condition cleared last week |
+| The one-way message | An email sent, no response, no follow-up, and the recipient never saw it |
+| The out-of-band change | Parties agree to something in a phone call and no document follows |
+| The vacation gap | A participant is out and their work stops without anyone knowing |
+| The last-week compression | Four items all land in the final three days |
 | Term | Why |
 | Duration and end date | The holdover risk is the whole problem |
 | Payment | What the seller pays, if anything |
@@ -744,6 +863,14 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Utilities and maintenance | Responsibility during the period |
 | Deposit or holdback | Security for damage or holdover |
 | Remedy for failure to vacate | The point at which this becomes expensive |
+| The call | The correct handling |
+| "The [system] doesn't work." | Sympathy, then process. What the contract provided, whether a warranty applies, and — where the buyer believes a condition was concealed — a matter for the broker rather than an argument between agents. The licensee does not diagnose and does not concede. |
+| "There's a bill I wasn't expecting." | Frequently a supplemental tax assessment or an association charge. Explain what it is; the amount and its calculation come from the assessing authority or the association. |
+| "The seller left things behind." | A cleanup and possession question. Where a post-closing occupancy agreement exists, it governs; where it does not, this is why Section 5.2 requires one. |
+| "The keys don't work for the side gate." | Section 5.4's transfer of control was incomplete. Fix it, and note for future files that "keys" means every point of access. |
+| "Nobody told me about [X]." | The most important call on this list. Determine what the file shows was delivered and when, before responding. Do not answer from memory — Section 5.2 of Lesson 09 exists for this moment. |
+| "Can you send me everything for my taxes?" | Provide copies of the transaction documents. The tax questions themselves go to the client's tax advisor, without exception and without a "generally speaking." |
+| "My neighbor says the property line isn't where I think." | A survey and legal question. Refer, and do not offer an opinion about the boundary. |
 
 ### 12. Property management and leasing practice
 
@@ -810,6 +937,15 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Maintenance activity, including requests and responses | Monthly |
 | Vacancy and leasing activity | Monthly |
 | Annual summary and tax reporting information | Annually |
+| The instruction | Why it cannot be followed |
+| "Don't rent to [category]." | Unlawful, whatever the phrasing, including where the owner offers a business reason. Lesson 03's obedience limit governs and the answer is refusal plus escalation. |
+| "Just change the locks, he hasn't paid in two months." | Section 5.4. Self-help is prohibited, and the manager who performs it has done the unlawful act himself. |
+| "Shut off the water until she pays." | The same category, and it compounds a habitability failure onto an unlawful eviction attempt. |
+| "Don't give the deposit back, he was a bad tenant." | The deposit is governed by a framework with a procedure and a timeline. "Bad tenant" is not a deduction category. |
+| "Use this month's rent from the other building to cover my repair." | One owner's funds for another's benefit. Section 3.7's plumber, in a more explicit form. |
+| "Skip the inspection this year." | Where an inspection is required, it is required. The manager does not certify or record that something happened when it did not. |
+| "Tell the tenant the landlord is a management company" when the owner wants to conceal his identity | Disclosure obligations about who the owner is exist for a reason, and misstating it is a misrepresentation. |
+| "Raise her rent, she keeps complaining." | Section 5.3. A rent increase following complaints has the appearance of retaliation regardless of the owner's actual reason, and the appearance is itself the problem. |
 
 ### 13. Ethics, risk management, and dispute prevention
 
@@ -848,6 +984,14 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | "Property in this area has appreciated in recent years; here is the data. Past performance doesn't predict the future." | Accurate, sourced, and appropriately qualified |
 | "The city will approve your second unit." | A prediction about a discretionary decision |
 | "Here is the planning department's process and contact; they can tell you what applies." | Correct |
+| The pressure | The statement it produces |
+| A transaction about to fail | "It'll appraise." "The loan is fine." "They'll approve it." |
+| A client who wants reassurance | "Don't worry, that's normal for a house this age." |
+| Not knowing the answer in front of a client | A confident guess, offered because "I'll find out" feels like weakness |
+| A number needed to make a deal work | A square footage, a tax figure, a fee "usually around" an amount |
+| A colleague or manager applying pressure | Participation in something the licensee would not initiate |
+| Money the licensee needs this month | Every item above, with the volume turned up |
+| An error already made | The second statement, covering the first — and this is the one that ends careers |
 | Situation | Response |
 | A manager tells you to conceal an error | Escalate to the responsible broker; the instruction does not protect you |
 | Office practice deviates from the written policy | Raise it; a policy nobody follows is not a defense for anyone |
@@ -862,6 +1006,11 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Requests to alter, backdate, or omit documents | Direct participation request |
 | A seller who cannot produce evidence of authority to convey | Title or authority fraud |
 | Instructions to send funds somewhere unexpected, or changed instructions | Wire fraud |
+| Do not write | Write instead |
+| "The buyer is committing occupancy fraud." | "The application states owner occupancy. The file contains a lease for the property signed by the buyer as landlord, dated eleven days before the application." |
+| "The seller is hiding something." | "The seller stated on [date] that the ceiling stain was from a repaired leak in 2019. The disclosure does not mention it. I recorded the statement in my note of that date." |
+| "This vendor seems shady." | "The invoice is for work at a different address. The vendor's phone number matches the one on the buyer's employer verification." |
+| "Something feels wrong." | The specific facts that produced the feeling, listed, with dates. |
 | Inadequate approach | Why it fails |
 | "The client is free to choose someone else" | The client cannot weigh a recommendation without knowing what the recommender receives |
 | "I'll disclose it if they ask" | The client does not know to ask |
@@ -912,6 +1061,17 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Explicit bias | A consciously held attitude the person is aware of |
 | Implicit bias | An association operating automatically, outside conscious awareness |
 | Systemic bias | Patterns built into practices, policies, and structures |
+| Stage | The decision |
+| Advertising | Where the advertisement is placed and who is targeted |
+| The first call | How much information is given, how warmly |
+| Qualification | Whether the caller is asked to prove readiness before being served |
+| Property selection | Which properties are shown |
+| Commentary while showing | What is said about neighborhoods, schools, and "fit" |
+| Advice on offers | How aggressive a strategy is recommended |
+| Advocacy in negotiation | How hard the licensee pushes |
+| Vendor referrals | Which inspector, lender, or contractor |
+| Responsiveness | How fast calls are returned |
+| Tenant or applicant screening | Which criteria, applied how |
 | Practice | What it constrains |
 | Written criteria applied uniformly | The decision itself, in screening and selection |
 | Uniform service scripts | Differential treatment at first contact |
@@ -942,6 +1102,12 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | "I will map the properties I showed each quarter and compare against the criteria on file." | Yes |
 | "I will not discriminate." | No |
 | "I will answer neighborhood-composition questions with the census and district scripts in my plan, and note the request in the file." | Yes |
+| Cadence | What happens |
+| Every transaction | The search is documented against the buyer's stated criteria; neighborhood questions are answered from the scripts in Section 3.4; every inquiry is logged |
+| Monthly | Automated marketing and drip content reviewed for stale or sorting language; audience parameters on any paid advertising re-checked |
+| Quarterly | The Section 3.6 measurements run; exceptions reviewed; the vendor referral distribution examined |
+| Annually | The conflicts and vendor inventory; the advertising archive spot-checked; the criteria and scripts reviewed against what California currently protects, because the list is added to |
+| On any incident | An instruction refused, a comment made by a client, a pattern noticed — recorded, escalated, and added to what the next review looks at |
 
 ### 15. Integrated California residential transaction
 
@@ -992,6 +1158,22 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Seller's agent | Before the listing agreement is signed |
 | Buyer's agent | As soon as practicable before the buyer signs an offer |
 | Agent presenting an offer to the seller | Before or at the time the offer is presented |
+| The complication | What it adds before marketing begins |
+| Multiple owners, or an owner acting for another | The authority question, answered from documents rather than description — Lesson 04, Section 1.6 |
+| A trust, estate, or dissolution | Authority, plus disclosure limits from a seller with little knowledge — Lesson 09, Section 1.6 |
+| Unpermitted or unrecorded improvements | Verification of what may be advertised, before a square footage or a room count is published — Lesson 06, Section 1.7 |
+| A tenant in possession | Access rules, notice requirements, and disclosures the tenancy generates — Lesson 12 |
+| A property in a common-interest development | Association documents ordered at the start, because the buyer's review period is what remains after delivery |
+| Insufficient equity | A different conversation entirely, with routing rather than pricing — Lesson 05, Section 4.6 |
+| A property with a hazard or insurance problem | Insurance availability established early, because a buyer discovers it late otherwise — Lesson 09, Section 3.7 |
+| A thin comparable set | A range with its reasoning rather than a number with false precision — Lesson 05, Section 1.6 |
+| The failure | Where it was prevented |
+| A credit agreed and never transmitted | Lesson 11, Section 1.6 |
+| A condition surfacing on day 33 | Lesson 10, Section 4.7 |
+| A payoff demand expiring before closing | Lesson 10, Section 5.6 |
+| A walkthrough finding with no time to respond | Lesson 11, Section 4.7 |
+| Wire instructions from a compromised thread | Lesson 11, Section 4.6 |
+| Possession by handshake | Lesson 11, Section 5.2 |
 
 ## Assessment design
 

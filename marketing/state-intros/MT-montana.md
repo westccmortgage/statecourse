@@ -19,7 +19,7 @@
 
 ### identification — ~8s
 
-> This is StateCourse, from state course LLC.
+> This is StateCourse, from StateCourse LLC.
 > A short introduction to real estate licensing in Montana.
 
 ### requirement — ~30s
@@ -49,7 +49,7 @@
 
 | When | Text |
 | --- | --- |
-| Open | StateCourse · state course LLC |
+| Open | StateCourse · StateCourse LLC |
 | Requirement | 70 hours pre-license education |
 | Status | Not approved — no credit available |
 | Close | https://boards.bsd.dli.mt.gov/realty-regulation/ |

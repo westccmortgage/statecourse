@@ -29,6 +29,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { PROVIDER } from "../config/california/submission-facts.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicRoot = path.join(root, "public/statecourse");
@@ -38,11 +39,12 @@ const registry = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/state-re
 const catalog = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/course-catalog.json"), "utf8"));
 const courses = catalog.categories.flatMap((category) => category.programs ?? []).flatMap((program) => program.courses ?? []);
 
-/* The legal entity name, which 3004(a) requires the advertisement to include. This is the
-   name registered with the Wyoming Secretary of State. If the entity registers in
-   California under an alternate name, or files a fictitious business name statement for
-   the "StateCourse" brand, update this and regenerate every script. */
-const LEGAL_ENTITY_NAME = "state course LLC";
+/* The legal entity name, which 3004(a) requires the advertisement to include.
+   Taken from config/california/submission-facts.mjs rather than restated here. It used to be
+   restated, as "state course LLC", which is not the name of anything: the entity is
+   StateCourse LLC. Every one of the 51 generated scripts carried it. A second copy of a legal
+   name is a second thing to get wrong, so there is now one. */
+const LEGAL_ENTITY_NAME = PROVIDER.legalName;
 const BRAND = "StateCourse";
 
 const slugify = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

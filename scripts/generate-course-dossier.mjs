@@ -15,6 +15,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as engine from "../config/california-course-engine.mjs";
+import { PROVIDER } from "../config/california/submission-facts.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "california/dre-sources/instructor-equivalence");
@@ -108,7 +109,12 @@ for (const courseId of engine.CALIFORNIA_COURSE_IDS) {
   const out = [];
   out.push(`# Course dossier — ${course.title}`);
   out.push("");
-  out.push(`**Provider:** state course LLC (registered name; California registration pending)`);
+  /* The legal name comes from the facts file. It used to be written here as "state course
+     LLC", the Wyoming-era spelling of a name that is StateCourse LLC, and it reached every
+     dossier sent to a prospective certifying instructor. */
+  out.push(
+    `**Provider:** ${PROVIDER.legalName} (${PROVIDER.entityType}, CA SoS file ${PROVIDER.secretaryOfStateFileNumber}, filed ${PROVIDER.secretaryOfStateFiledOn})`,
+  );
   out.push(`**Course:** ${course.title}`);
   out.push(`**Course identifier:** \`${courseId}\`, version ${course.version}`);
   out.push(`**Instruction hours:** ${course.requiredHours}`);

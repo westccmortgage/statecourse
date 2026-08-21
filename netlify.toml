@@ -167,6 +167,11 @@
   status = 200
 
 [[redirects]]
+  from = "/api/admin/refund-exceptions"
+  to = "/.netlify/functions/admin-refund-exceptions"
+  status = 200
+
+[[redirects]]
   from = "/api/admin/compliance/missouri-completion-times"
   to = "/.netlify/functions/admin-missouri-completion-report"
   status = 200

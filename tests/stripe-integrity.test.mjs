@@ -325,6 +325,67 @@ test("Stripe and the database are reconciled by intent, charge, amount and statu
   );
 });
 
+/*
+ * A refund made by hand in the Stripe Dashboard. It has already been paid by the time the
+ * webhook hears about it, so the system's job is to end up in the same financial state Stripe
+ * is in, mark the refund as one it did not decide, and put a refund the policy would not have
+ * allowed in front of a person.
+ */
+test("a Dashboard refund is recorded at Stripe's amount and never mistaken for a platform decision", () => {
+  const webhook = fs.readFileSync(path.join(root, "netlify/functions/stripe-webhook.mjs"), "utf8");
+  const migration = fs.readFileSync(path.join(root, "database/010_external_refunds.sql"), "utf8");
+  assert.match(webhook, /classifyRefundOrigin/, "the webhook does not classify a refund's origin");
+  assert.match(migration, /origin text not null default 'platform'/);
+  assert.match(migration, /check \(origin in \('platform', 'external'\)\)/);
+  /* Our figure follows Stripe's here, which is the opposite of the platform path. */
+  assert.match(migration, /the ACTUAL amount Stripe reports, never a computed one/);
+  /* And a refund the engine decided is never reclassified as external. */
+  assert.match(migration, /A refund this system decided is never reclassified/);
+});
+
+/*
+ * The separation the webhook must keep. Payment never determines study time, examination
+ * eligibility, credit or a certificate — and the surest way to keep that true is for the
+ * payment path not to read those records at all. The entitlement assessment therefore lives
+ * outside the webhook, which also keeps a throwing calculation out of an endpoint Stripe
+ * retries.
+ */
+test("the webhook records what Stripe did and assesses nothing against course progress", () => {
+  const webhook = fs.readFileSync(path.join(root, "netlify/functions/stripe-webhook.mjs"), "utf8");
+  assert.equal(/certificate_issued|percent_complete|final_exam_attempted/.test(webhook), false,
+    "the webhook reads course progress");
+  assert.equal(/evaluateRefund/.test(webhook), false, "the webhook computes a refund entitlement");
+  /* It marks the entitlement unassessed rather than assuming it was fine. */
+  assert.match(webhook, /Entitlement not yet assessed/);
+  assert.match(webhook, /p_policy_amount: null/);
+
+  const migration = fs.readFileSync(path.join(root, "database/010_external_refunds.sql"), "utf8");
+  assert.match(migration, /external_entitlement_unassessed/);
+  assert.match(migration, /A null entitlement is "not yet assessed", never "nothing was owed"/);
+});
+
+test("an external refund is assessed separately, and an excess reaches an administrator", () => {
+  const assessor = fs.readFileSync(path.join(root, "netlify/functions/admin-refund-exceptions.mjs"), "utf8");
+  const migration = fs.readFileSync(path.join(root, "database/010_external_refunds.sql"), "utf8");
+  /* Assessed by the same engine the refund path uses, so the two numbers are comparable. */
+  assert.match(assessor, /evaluateRefund/);
+  assert.match(assessor, /assess_external_refund/);
+  /* An entitlement that cannot be computed stays uncomputed rather than being guessed. */
+  assert.match(assessor, /course_progress_incomplete/);
+  assert.match(assessor, /unassessable/);
+  /* The excess is recorded as an exception with its amount, and surfaced. */
+  assert.match(migration, /policy_exception_amount = case when v_exceeds then v_refund\.amount - p_policy_amount/);
+  assert.match(migration, /create or replace view refund_policy_exceptions_open/);
+  assert.match(migration, /create or replace function review_refund_exception/);
+  /* Nothing anywhere tries to take the money back. */
+  assert.equal(
+    /\b(reverse_refund|cancel_refund|void_refund|undo_refund)\b/.test(migration + assessor),
+    false,
+    "a code path attempts to reverse a refund that has already been paid",
+  );
+  assert.match(assessor, /is not altered by it/, "the assessor does not say plainly that it changes nothing");
+});
+
 test("checkout persists the allocation and sends the same facts to Stripe", () => {
   const checkout = fs.readFileSync(path.join(root, "netlify/functions/create-checkout.mjs"), "utf8");
   assert.match(checkout, /checkout_course_allocations/);
