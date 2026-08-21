@@ -159,7 +159,7 @@ const assignments = {
         rationale: "Attachment, adaptation, relationship, intention, and agreement are the recognized tests, with intention often treated as the most important and agreement able to settle the question outright."
       },
       {
-        prompt: "What is a trade fixture?",
+        prompt: "What is a trade fixture, and what right does a tenant ordinarily have over one at the end of the lease?",
         choices: [
           "An item a tenant attaches to leased premises for use in the tenant's business, which the tenant generally may remove before the lease ends.",
           "A fixture that was installed by a licensed tradesperson rather than the owner.",
@@ -693,7 +693,7 @@ const assignments = {
         rationale: "The general plan is the policy document and zoning is the implementing tool, which is why consistency between them matters. They are not alternatives and neither is limited by ownership type."
       },
       {
-        prompt: "What is a variance?",
+        prompt: "What is a variance, and what must be shown about the property before one is granted?",
         choices: [
           "Permission to deviate from a specific zoning requirement, granted because strict application would create a hardship peculiar to the property.",
           "A change in the zoning designation applicable to a parcel.",
@@ -1706,7 +1706,7 @@ const assignments = {
         rationale: "California's protections are broader, which is why a licensee who knows only the federal list will violate California law. State law adds to rather than replacing the federal floor."
       },
       {
-        prompt: "What is 'blockbusting'?",
+        prompt: "What is 'blockbusting', and must a property actually change hands for it to occur?",
         choices: [
           "Inducing owners to sell or rent by representations about the entry into the neighborhood of persons of a protected characteristic.",
           "Refusing to make loans in particular neighborhoods based on their composition.",

@@ -197,7 +197,7 @@ const modules = {
         rationale: "Absent language creating survivorship, Michigan treats concurrent ownership as a tenancy in common. Telling unmarried co-buyers the choice exists, and sending them to a lawyer to make it, is one of the most valuable things a licensee can do before closing."
       },
       {
-        prompt: "What is a land contract?",
+        prompt: "What is a land contract, and who holds legal title while the instalments are being paid?",
         choices: [
           "An instalment sale in which the seller keeps legal title until the price is paid while the buyer takes possession and equitable title.",
           "A listing agreement for vacant land.",
@@ -867,7 +867,7 @@ const modules = {
         rationale: "Answering the question as asked is steering however it is answered. Giving the buyer the means to answer it themselves is a service."
       },
       {
-        prompt: "What is blockbusting?",
+        prompt: "What is blockbusting, and must a property actually change hands for it to occur?",
         choices: [
           "Inducing sales or rentals by representations about the entry into a neighbourhood of persons of a protected class.",
           "Buying a block of properties to resell at a profit.",
@@ -1162,7 +1162,7 @@ const modules = {
         rationale: "Module 01's chain of authority in its most consequential form. A salesperson holding client funds over a weekend is a problem waiting for a complaint."
       },
       {
-        prompt: "What is commingling?",
+        prompt: "What is commingling, and does it require that any money be lost for the violation to be complete?",
         choices: [
           "Mixing trust funds with the broker's own money.",
           "Holding deposits for two transactions in one trust account.",

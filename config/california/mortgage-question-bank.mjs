@@ -1600,7 +1600,7 @@ const assignments = {
         rationale: "Nonjudicial foreclosure runs through recorded notices — default first, then sale — without court action. A lawsuit describes judicial foreclosure, and internal decisions are not recorded steps."
       },
       {
-        prompt: "What is loss mitigation?",
+        prompt: "What is loss mitigation, and what kinds of alternatives does the process evaluate?",
         choices: [
           "The servicer's process of evaluating alternatives to foreclosure, such as repayment plans, modifications, forbearance, short sales, or deeds in lieu.",
           "The lender's insurance against loss on the loan.",
@@ -1695,7 +1695,7 @@ const assignments = {
         rationale: "Risk-based pricing is lawful; pricing driven by prohibited characteristics is not. Fair lending law sets neither uniform prices nor rate ceilings."
       },
       {
-        prompt: "What is occupancy fraud?",
+        prompt: "What is occupancy fraud, and why does a misstatement about occupancy change the loan's pricing?",
         choices: [
           "Misrepresenting whether the borrower will occupy the property, typically to obtain the better pricing and terms available for owner-occupied loans.",
           "Occupying a property before the loan has funded.",

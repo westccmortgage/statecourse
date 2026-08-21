@@ -189,7 +189,7 @@ const modules = {
         rationale: "AS 34.08 is Alaska's Uniform Common Interest Ownership Act, and its defining feature is the obligation, arising from unit ownership, to pay for real estate other than the unit."
       },
       {
-        prompt: "What is a life estate?",
+        prompt: "What is a life estate, and what happens to the property when the measuring life ends?",
         choices: [
           "A freehold estate measured by the duration of a life, after which the property passes to a remainderman or reverts to the grantor.",
           "A leasehold for the tenant's lifetime.",
@@ -364,7 +364,7 @@ const modules = {
         rationale: "Visible occupation is the classic trigger for inquiry notice, and whether it has ripened into a right is a legal question. Recognise, disclose, route."
       },
       {
-        prompt: "What is an encroachment?",
+        prompt: "What is an encroachment, and does it matter whether the intrusion is onto the neighbour's land or into a setback?",
         choices: [
           "A physical intrusion of an improvement onto adjoining land or across a setback.",
           "A recorded restriction on the use of land.",
@@ -458,7 +458,7 @@ const modules = {
         rationale: "Delivery gives effect; recording gives notice. Recording an undelivered deed does not cure the delivery failure, and it warrants nothing about the grantor's title."
       },
       {
-        prompt: "What is inquiry notice?",
+        prompt: "What is inquiry notice, and can a buyer be charged with it without having actually investigated?",
         choices: [
           "Knowledge the law charges a person with because visible circumstances would have prompted a reasonable person to investigate.",
           "Knowledge charged because an instrument is recorded.",
