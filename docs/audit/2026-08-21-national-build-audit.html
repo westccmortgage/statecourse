@@ -462,7 +462,7 @@ html { scroll-behavior: smooth; }
           </div>
         </div>
 
-        <p>651 tests run; 650 pass. The single failure is <code>tests/rendered-html.test.mjs</code>, which imports <code>dist/server/index.js</code> — a Cloudflare worker artifact the site build does not produce. It predates this work and touches no course content.</p>
+        <p>652 tests run; 651 pass. The single failure is <code>tests/rendered-html.test.mjs</code>, which imports <code>dist/server/index.js</code> — a Cloudflare worker artifact the site build does not produce. It predates this work and touches no course content.</p>
       </section>
 
       <section id="s2">
@@ -489,7 +489,7 @@ html { scroll-behavior: smooth; }
 
       <section id="s3">
         <h2><b>03</b><span>Findings</span></h2>
-        <p class="lede">Eight findings. Six fixed, one verified against the regulator's own page, and one that this audit itself got wrong in the first pass — corrected below, along with the two real defects that surfaced while checking it.</p>
+        <p class="lede">Nine findings. Six fixed, one verified against the regulator's own page, one that this audit itself got wrong and corrected — and one, found last and left open, that is larger than any of them.</p>
 
         <article class="finding">
           <div class="finding-head">
@@ -564,7 +564,7 @@ html { scroll-behavior: smooth; }
             <span class="chip open">Corrected, then open</span>
           </div>
           <p><strong>This finding was reported wrongly in the first pass.</strong> The audit matched the literal phrase “not read”, and so missed Maine's heading — <em class="q">what has not been read from primary text</em> — and Virginia's — <em class="q">what is not yet read from primary text</em>. Both sections existed. Reported as “Maine and Virginia have neither”, which was false.</p>
-          <p>Twelve of the thirteen states state their boundary. Eight head it <em class="q">what was NOT read, and is therefore stated nowhere in this build</em>; Alaska and Michigan head it <em class="q">open questions that must be answered before filing</em>. <strong>California is the only state with no source register at all</strong> — it has the DRE source PDFs and a build audit, but nothing saying what of those sources was read and what was not. That is the open item, and it is the largest of its kind here, because California is the biggest build in the project at 386,565 instructional words.</p>
+          <p>Twelve of the thirteen states state their boundary. Eight head it <em class="q">what was NOT read, and is therefore stated nowhere in this build</em>; Alaska and Michigan head it <em class="q">open questions that must be answered before filing</em>. California was the only state with no source register at all. <strong>It now has one</strong>, and writing it produced finding 3.9 — which is larger than the missing register was.</p>
           <p><strong>Checking the two states this finding wrongly accused turned up two real defects instead.</strong></p>
           <p><strong>Virginia's boundary section contradicted itself.</strong> It listed §§ 54.1-2131 through 54.1-2135, Title 55.1 Chapters 7 and 12, and Title 36 Chapter 5.1 as <em>not yet read</em> — and the section immediately below it opened <em class="q">“The sections listed as ‘not yet read' above were read the same day.”</em> A reviewer working from that list would have been told the build was silent on material it teaches from primary text.</p>
           <p><strong>In both states the primary text was read but never recorded.</strong> Maine's §§ 13067-A, 13178, 13179, 13197, 13271, 13274, 13277, 13279 and 13280, and Virginia's §§ 54.1-2101.1, 54.1-2133, 54.1-2134, 54.1-2135, 54.1-2139 and 18VAC135-20-155, -240, -260 and -335, were all fetched during the build, and both curricula are written correctly from them — Virginia already taught <em class="q">ordinary care</em> rather than reasonable care, the 90-day property management default, and the ten-day board production rule. Only the reading files never caught up. Both are now recorded, and both boundary sections rewritten to the standard the other states meet.</p>
@@ -591,6 +591,42 @@ html { scroll-behavior: smooth; }
           <p>The trust-account hour routed the whole of § 13178 to the Commission's rules. The statute fixes five things itself — a federally insured account held for the sole purpose of client money; the account, the withdrawal orders and every cheque naming the agency and identified as a real estate trust account; freedom from trustee process except for the depositors themselves; and the fee rule:</p>
           <blockquote>… shall withdraw from the accounts all fees due within 30 days after but not until consummation or termination of the transaction when the designated broker makes or causes to be made a full accounting to the broker's principal.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">32 M.R.S. § 13178</span></blockquote>
           <p>What the statute genuinely delegates now stands separately, so the refusals that remain are the real ones: the trust-account cushion, the deposit timing, the record retention period, the relationship-form fields, and every sanction figure — all in Chapter 360 or in 10 M.R.S. § 8003, neither read.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.9</span>
+            <h3>California's 386,565 words carry no citation to California law</h3>
+            <span class="chip open">Open</span>
+          </div>
+          <p><strong>Writing California's source register produced the most significant finding of this audit.</strong> The build is three 45-hour courses — Principles, Practice, and Mortgage Loan Brokering and Lending — across 45 lesson assignments, the largest in the project by a wide margin. <strong>Not one of those 45 lessons cites a California statutory or regulatory section.</strong> A sweep of every four- and five-digit number in the whole California curriculum returns calendar years and arithmetic, and nothing else.</p>
+
+          <p><strong>On the approval side the build is fully traceable.</strong> Every structural constant rests on primary regulatory text obtained from the Department:</p>
+          <div class="band">
+            <div class="band-head"><h4>Structure, and the text it comes from</h4></div>
+            <div class="scroller">
+              <table>
+                <thead><tr><th>Requirement</th><th>Source</th></tr></thead>
+                <tbody>
+                  <tr><td>15 separate lesson assignments; 45 periods of not less than 50 minutes</td><td class="mono">Reg. § 3000(a)(1), via RE 307</td></tr>
+                  <tr><td>Final of not less than 100 questions; 60 percent to pass</td><td class="mono">RE 303</td></tr>
+                  <tr><td>One retake, on different questions; failure means retaking the course</td><td class="mono">RE 303</td></tr>
+                  <tr><td>Proctor designated by the school, unrelated to the candidate; exam never furnished to the student</td><td class="mono">Reg. § 3000(a)(2)(B); RE 303</td></tr>
+                  <tr><td>2½ weeks minimum, measured from access to passed final; two courses in five weeks, across schools; one year to complete</td><td class="mono">RE 303 pp. 3–4</td></tr>
+                  <tr><td>Certificate within 15 days, with the Department's listed fields</td><td class="mono">Reg. § 3000(a)(6); Handbook</td></tr>
+                  <tr><td>Instructor floor: bachelor's plus two years, or associate plus six</td><td class="mono">RE 336</td></tr>
+                  <tr><td>SB 1495 implicit bias and participatory fair housing — practice course only</td><td class="mono">Course Provider Handbook</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p><strong>On the substantive side it rests on nothing that was read.</strong> The instruction on agency, trust funds, disclosure, finance, fair housing and licence law is written without a citation to the California law it describes, because <strong>the Business and Professions Code was not read in its own text — none of it</strong> — and neither were the Commissioner's Regulations beyond §§ 3000, 3002 and 3003, the Civil Code, FEHA, the Unruh Act, or California's finance and lending statutes. That last omission is the sharpest: <strong>one of the three courses is Mortgage Loan Brokering and Lending.</strong></p>
+
+          <p><strong>Nothing has been manufactured.</strong> No California statutory figure appears anywhere. Where a retention period is discussed at all, a firm that <em class="q">“discards loan files three years after closing, on the shortest period it could find”</em> is presented as the error, not the rule. California states no retention period because the Department states none — its record rule is open-ended:</p>
+          <blockquote>… as long as the school is in business, the school must furnish a certificate to the student upon request.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">Course Provider Handbook, Rev. 01/2026</span></blockquote>
+
+          <p><strong>What it means for the review.</strong> Every other state can be checked citation by citation against a quoted provision. California cannot. The question to put to a California reviewer is therefore not <em>is the citation right</em> but <strong>is the statement of California law correct</strong> — and the register says so in those words. Closing the gap means reading the Business and Professions Code and the Commissioner's Regulations directly and citing them through the curriculum; until then no California module states a section number, and none may be added without the reading behind it.</p>
         </article>
       </section>
 
