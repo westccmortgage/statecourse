@@ -180,7 +180,7 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | — Copyright Date | 2026 |
 | — Pages | *(enter the final bound page count of the printed course text)* |
 | — Edition | 1.0 |
-| REFUND/CANCELLATION POLICY | *(enter at signing — must be the same policy version the enrollment flow presents and records. See the note below.)* |
+| REFUND/CANCELLATION POLICY | **Policy ${PRICING.refundPolicy.version}** — the text in the block below, entered verbatim |
 | FINAL EXAMINATION CRITERIA — Number of questions | **${FINAL_EXAM.questions}** |
 | — Types of questions | **${FINAL_EXAM.questionType}** |
 | — Time | **${FINAL_EXAM.minutes} minutes** |
@@ -210,11 +210,28 @@ RE 313's fee field asks for the total "**including any shipping and handling fee
 >
 > No shipping or handling fee. The course is delivered online; no printed material is shipped to the student.
 
-## The one field that must not be guessed
+## REFUND/CANCELLATION POLICY — text to enter
 
-**REFUND/CANCELLATION POLICY** is left for entry at signing rather than filled here, because no policy has been decided. It must match, exactly, the policy version the enrollment flow presents to the student and records against the enrollment. Writing a policy here that the platform does not implement would put a DRE-filed document at odds with what a student actually agrees to, and that is the kind of discrepancy that ends an approval.
+**Policy version ${PRICING.refundPolicy.version}**, adopted by ${PROVIDER.legalName} on 20 August 2026. This is the same version the enrollment flow presents before checkout, the same version the student acknowledges and the platform records against the enrollment, the same version published in the ${PROVIDER.legalName} Terms, and the same version the refund administration path calculates against. Enter it verbatim.
 
-**This is an outstanding item. RE 313 cannot be printed without it.**
+> ${PRICING.refundPolicy.policyText}
+
+The policy stated clause by clause, as it is implemented:
+
+| Clause | Text |
+|---|---|
+| Full refund | ${PRICING.refundPolicy.fullRefundWindow} |
+| Pro rata | ${PRICING.refundPolicy.proRataWindow} |
+| No refund after | ${PRICING.refundPolicy.noRefundAfter} |
+| Packages | ${PRICING.refundPolicy.packageAllocation} |
+| Processing | ${PRICING.refundPolicy.processing} |
+| How to request | ${PRICING.refundPolicy.requestMethod} |
+
+**How the percentages are measured.** Regulation 3000(a)(1) defines a correspondence course as a number of separate lesson assignments, so completion is counted in **assignments completed out of ${COURSE_DESIGN.lessonAssignments}**, not in elapsed time and not in pages opened. The 60% threshold is therefore reached after the ${Math.floor(COURSE_DESIGN.lessonAssignments * 0.6)}th assignment; a student at or below ${Math.floor(COURSE_DESIGN.lessonAssignments * 0.6)} completed assignments who has not attempted the final examination is inside the pro-rata window.
+
+**"Seven business days"** is counted Monday through Friday. The adopted policy names no holiday calendar and ${PROVIDER.legalName} has not adopted one, so none is applied; this is recorded rather than left implicit because a holiday convention would lengthen the window, and the shorter reading is the one currently implemented.
+
+**Where the platform enforces it.** The policy version is written into the checkout attempt and the Stripe session metadata before payment, and into a per-course allocation row that records how many cents of the purchase are this course's tuition. The refund path recomputes the entitlement from that allocation and from the student's own progress record; an administrator can refund less than the policy allows but cannot refund more without an explicit override, and the policy's own decision is stored alongside whatever was sent.
 
 ## Delivery to the student
 

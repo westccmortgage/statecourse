@@ -34,7 +34,7 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | — Copyright Date | 2026 |
 | — Pages | *(enter the final bound page count of the printed course text)* |
 | — Edition | 1.0 |
-| REFUND/CANCELLATION POLICY | *(enter at signing — must be the same policy version the enrollment flow presents and records. See the note below.)* |
+| REFUND/CANCELLATION POLICY | **Policy CA-2026-08-20-v1** — the text in the block below, entered verbatim |
 | FINAL EXAMINATION CRITERIA — Number of questions | **100** |
 | — Types of questions | **Multiple choice** |
 | — Time | **180 minutes** |
@@ -64,11 +64,28 @@ RE 313's fee field asks for the total "**including any shipping and handling fee
 >
 > No shipping or handling fee. The course is delivered online; no printed material is shipped to the student.
 
-## The one field that must not be guessed
+## REFUND/CANCELLATION POLICY — text to enter
 
-**REFUND/CANCELLATION POLICY** is left for entry at signing rather than filled here, because no policy has been decided. It must match, exactly, the policy version the enrollment flow presents to the student and records against the enrollment. Writing a policy here that the platform does not implement would put a DRE-filed document at odds with what a student actually agrees to, and that is the kind of discrepancy that ends an approval.
+**Policy version CA-2026-08-20-v1**, adopted by StateCourse LLC on 20 August 2026. This is the same version the enrollment flow presents before checkout, the same version the student acknowledges and the platform records against the enrollment, the same version published in the StateCourse LLC Terms, and the same version the refund administration path calculates against. Enter it verbatim.
 
-**This is an outstanding item. RE 313 cannot be printed without it.**
+> A student may cancel and receive a 100% refund of tuition paid through the later of seven business days after enrollment or completion of the first lesson assignment, provided the student has not attempted the final examination. After that period, a student who withdraws after completing 60% or less of the course is eligible for a pro rata refund of unearned tuition based on the percentage of the course not completed. No tuition refund is due after more than 60% of the course has been completed, after any final examination attempt, or after a course completion certificate has been issued, whichever occurs first. For multi-course packages, eligibility is calculated separately for each course using the package allocation recorded at checkout. Approved refunds are returned to the original payment method within 10 business days. Requests may be submitted through the student's StateCourse LLC account or in writing to info@statecourse.com.
+
+The policy stated clause by clause, as it is implemented:
+
+| Clause | Text |
+|---|---|
+| Full refund | A student may cancel and receive a 100% refund of tuition paid through the later of seven business days after enrollment or completion of the first lesson assignment, provided the student has not attempted the final examination. |
+| Pro rata | After the full-refund period, a student who withdraws after completing 60% or less of the course is eligible for a pro rata refund of the unearned tuition based on the percentage of the course not completed. |
+| No refund after | No tuition refund is due after the student has completed more than 60% of the course, attempted a final examination, or received a course completion certificate, whichever occurs first. |
+| Packages | For a multi-course package, refund eligibility and earned tuition are calculated separately for each course using the package allocation recorded at checkout; completed courses and courses beyond the refund threshold are non-refundable, and any remaining eligible course amount is refunded under this policy. |
+| Processing | Approved refunds are returned to the original payment method within 10 business days after StateCourse LLC approves the cancellation or withdrawal request. |
+| How to request | Cancellation or withdrawal requests must be submitted through the student's StateCourse LLC account or in writing to info@statecourse.com. The effective date is the date the request is received by StateCourse LLC. |
+
+**How the percentages are measured.** Regulation 3000(a)(1) defines a correspondence course as a number of separate lesson assignments, so completion is counted in **assignments completed out of 15**, not in elapsed time and not in pages opened. The 60% threshold is therefore reached after the 9th assignment; a student at or below 9 completed assignments who has not attempted the final examination is inside the pro-rata window.
+
+**"Seven business days"** is counted Monday through Friday. The adopted policy names no holiday calendar and StateCourse LLC has not adopted one, so none is applied; this is recorded rather than left implicit because a holiday convention would lengthen the window, and the shorter reading is the one currently implemented.
+
+**Where the platform enforces it.** The policy version is written into the checkout attempt and the Stripe session metadata before payment, and into a per-course allocation row that records how many cents of the purchase are this course's tuition. The refund path recomputes the entitlement from that allocation and from the student's own progress record; an administrator can refund less than the policy allows but cannot refund more without an explicit override, and the policy's own decision is stored alongside whatever was sent.
 
 ## Delivery to the student
 

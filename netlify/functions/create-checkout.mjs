@@ -46,6 +46,24 @@ export const handler = async (event) => {
       },
     });
 
+    /* CA-2026-08-20-v1 calculates a refund course by course, so every purchase records how
+       many cents belong to each course before the student is sent to Stripe. A single-course
+       purchase is one row for the whole amount; the row is written anyway, so the refund
+       path has one shape rather than two and the package case is not the only one exercised
+       by a code path nobody runs. */
+    await dbRequest("checkout_course_allocations", {
+      method: "POST",
+      prefer: "return=minimal",
+      body: {
+        checkout_attempt_id: attemptId,
+        course_id: course.id,
+        allocated_amount: amount,
+        list_amount: amount,
+        package_id: null,
+        policy_version: course.versions.refundPolicy,
+      },
+    });
+
     const origin = baseUrl();
     const session = await stripeRequest("/checkout/sessions", {
       method: "POST",
@@ -72,6 +90,7 @@ export const handler = async (event) => {
         "metadata[regulatory_acknowledgment_version]": course.versions.regulatoryAcknowledgment,
         "metadata[terms_version]": course.versions.terms,
         "metadata[refund_policy_version]": course.versions.refundPolicy,
+        "metadata[cancellation_policy_version]": course.versions.cancellationPolicy,
         "payment_intent_data[metadata][checkout_attempt_id]": attemptId,
         "payment_intent_data[metadata][course_id]": course.id,
       },

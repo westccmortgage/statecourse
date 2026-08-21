@@ -16,6 +16,7 @@ export const handler = async () => {
       checkoutBlockReason: eligibility.allowed ? null : eligibility.reason,
       qaOnly: Boolean(eligibility.qaOnly),
       versions: course.versions,
+      policyText: course.policyText,
     };
   });
   return response(200, {

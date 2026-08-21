@@ -34,9 +34,16 @@ test("every table written by a migration is created by a migration", () => {
     }
     columnsFor.set(table, columns);
   }
-  /* Later migrations widen earlier tables; those columns are real too. */
-  for (const match of strip(combined).matchAll(/alter\s+table\s+([a-z_][a-z0-9_]*)\s+add\s+column\s+(?:if\s+not\s+exists\s+)?([a-z_][a-z0-9_]*)/gi)) {
-    columnsFor.get(match[1].toLowerCase())?.add(match[2].toLowerCase());
+  /* Later migrations widen earlier tables; those columns are real too. One ALTER may add
+     several columns in a single statement, so the statement is captured whole and every
+     "add column" clause inside it is read — matching only the first would leave the rest
+     silently unchecked, which is the drift this test exists to catch. */
+  for (const statement of strip(combined).matchAll(/alter\s+table\s+([a-z_][a-z0-9_]*)\s+([\s\S]*?);/gi)) {
+    const columns = columnsFor.get(statement[1].toLowerCase());
+    if (!columns) continue;
+    for (const added of statement[2].matchAll(/add\s+column\s+(?:if\s+not\s+exists\s+)?([a-z_][a-z0-9_]*)/gi)) {
+      columns.add(added[1].toLowerCase());
+    }
   }
 
   for (const file of sql) {

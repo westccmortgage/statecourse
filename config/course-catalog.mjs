@@ -1,3 +1,6 @@
+import { REFUND_POLICY_TEXT, REFUND_POLICY_VERSION, allocatePackagePrice } from "../lib/refund-policy.mjs";
+import { PRICING } from "./california/submission-facts.mjs";
+
 const bool = (name, fallback = false) => {
   const value = process.env[name];
   if (value == null || value === "") return fallback;
@@ -35,6 +38,17 @@ function configuredCourse({ id, state, name, productType = "real_estate_prelicen
       refundPolicy: versions.refund,
       cancellationPolicy: versions.cancellation,
     },
+    /* The refund policy TEXT, not only its version, so the enrollment flow can display the
+       policy a student is being asked to accept. RE 313's own header requires the General
+       Information Page — which carries this policy — to be provided "prior to
+       registration/enrollment", and a checkbox that names a version without showing the
+       terms is not that. Only California has an adopted policy; the other states carry a
+       version string that is still a placeholder, and returning invented text for them
+       would be worse than returning none. */
+    policyText: {
+      refund: versions.refund === REFUND_POLICY_VERSION ? REFUND_POLICY_TEXT : null,
+      cancellation: versions.cancellation === REFUND_POLICY_VERSION ? REFUND_POLICY_TEXT : null,
+    },
   };
 }
 
@@ -65,17 +79,92 @@ const courses = Object.fromEntries([
   }),
   configuredCourse({
     id:"ca-real-estate-principles-45", state:"CA", name:"California Real Estate Principles — 45 Hours", env:"CA_PRINCIPLES_45",
-    versions:{ regulatory:"ca-real-estate-principles-45-regulatory-draft-v1", refund:"ca-real-estate-principles-45-refund-pending-review-v1", cancellation:"ca-real-estate-principles-45-cancellation-pending-review-v1" },
+    versions:{ regulatory:"ca-real-estate-principles-45-regulatory-draft-v1", refund:REFUND_POLICY_VERSION, cancellation:REFUND_POLICY_VERSION },
   }),
   configuredCourse({
     id:"ca-real-estate-practice-45", state:"CA", name:"California Real Estate Practice — 45 Hours", env:"CA_PRACTICE_45",
-    versions:{ regulatory:"ca-real-estate-practice-45-regulatory-draft-v1", refund:"ca-real-estate-practice-45-refund-pending-review-v1", cancellation:"ca-real-estate-practice-45-cancellation-pending-review-v1" },
+    versions:{ regulatory:"ca-real-estate-practice-45-regulatory-draft-v1", refund:REFUND_POLICY_VERSION, cancellation:REFUND_POLICY_VERSION },
   }),
   configuredCourse({
     id:"ca-mortgage-loan-brokering-lending-45", state:"CA", name:"California Mortgage Loan Brokering and Lending — 45 Hours", env:"CA_MORTGAGE_45",
-    versions:{ regulatory:"ca-mortgage-loan-brokering-lending-45-regulatory-draft-v1", refund:"ca-mortgage-loan-brokering-lending-45-refund-pending-review-v1", cancellation:"ca-mortgage-loan-brokering-lending-45-cancellation-pending-review-v1" },
+    versions:{ regulatory:"ca-mortgage-loan-brokering-lending-45-regulatory-draft-v1", refund:REFUND_POLICY_VERSION, cancellation:REFUND_POLICY_VERSION },
   }),
 ].map((course) => [course.id, course]));
+
+/*
+ * California package products, as they are disclosed on RE 313's fee field.
+ *
+ * A package is not a course. It has no DRE course approval of its own, and buying one buys
+ * the component courses. Refunds are calculated course by course under CA-2026-08-20-v1, so
+ * every package must carry an allocation that says how many cents of the package price are
+ * that course's tuition — otherwise a pro-rata refund on one course of three cannot be
+ * reproduced from the record.
+ *
+ * `statutoryTuitionCents` is the part of the price that buys DRE statutory pre-license
+ * education and is therefore the part a refund is calculated against. For the
+ * required-education package that is the whole price. For the complete path it is NOT,
+ * because that price also buys Exam Prep and the Licensing Navigator, which carry no DRE
+ * course credit — and no source in this project states how the price divides between them.
+ * That split is a business decision and is left null rather than guessed; `packageAllocation`
+ * refuses to allocate a package whose statutory tuition is undecided.
+ */
+const CALIFORNIA_STATUTORY_COURSE_IDS = Object.freeze([
+  "ca-real-estate-principles-45",
+  "ca-real-estate-practice-45",
+  "ca-mortgage-loan-brokering-lending-45",
+]);
+
+const packages = Object.freeze({
+  "ca-required-education-135": Object.freeze({
+    id: "ca-required-education-135",
+    state: "CA",
+    name: PRICING.requiredEducation.name,
+    priceCents: PRICING.requiredEducation.cents,
+    statutoryTuitionCents: PRICING.requiredEducation.cents,
+    componentCourseIds: CALIFORNIA_STATUTORY_COURSE_IDS,
+    purchasable: false,
+    notPurchasableReason:
+      "Package checkout creates one enrollment per component course, which is not built. Single-course checkout is unaffected.",
+  }),
+  "ca-complete-path": Object.freeze({
+    id: "ca-complete-path",
+    state: "CA",
+    name: PRICING.completePath.name,
+    priceCents: PRICING.completePath.cents,
+    statutoryTuitionCents: null,
+    componentCourseIds: CALIFORNIA_STATUTORY_COURSE_IDS,
+    purchasable: false,
+    notPurchasableReason:
+      "The division of this price between statutory tuition and the non-credit Exam Prep and Navigator products is undecided, so no refund allocation can be recorded.",
+  }),
+});
+
+export function getPackage(packageId) {
+  return packages[packageId] || null;
+}
+
+export function getPackageCatalog() {
+  return Object.values(packages);
+}
+
+/*
+ * The allocation a package purchase must persist at checkout. Component list prices come
+ * from the catalog itself, so the split is reproducible from the record rather than from a
+ * figure typed at the time of sale.
+ */
+export function packageAllocation(packageId) {
+  const bundle = packages[packageId];
+  if (!bundle) return { allocated: null, reason: "unknown_package" };
+  if (bundle.statutoryTuitionCents == null) {
+    return { allocated: null, reason: "statutory_tuition_share_undecided" };
+  }
+  const components = bundle.componentCourseIds.map((courseId) => {
+    const course = courses[courseId];
+    if (!course) throw new Error(`packageAllocation: ${packageId} names unknown course ${courseId}`);
+    return { courseId, listAmount: PRICING.singleCourse.cents };
+  });
+  return { allocated: allocatePackagePrice(bundle.statutoryTuitionCents, components), reason: null };
+}
 
 export function getCourse(courseId) {
   return courses[courseId] || null;

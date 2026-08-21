@@ -32,15 +32,22 @@ function renderChoices() {
 function renderDisclosure() {
   const course=selectedPublic(); const payment=selectedPayment();
   if(!course){disclosure.innerHTML="<p>Select a course to load its state-specific disclosure record.</p>";acknowledgments.innerHTML="";updateButton();return;}
-  disclosure.innerHTML=`<dl><div><dt>State regulator</dt><dd>${escapeHtml(course.regulator)}</dd></div><div><dt>Required hours</dt><dd>${course.hours}</dd></div><div><dt>Course status</dt><dd>${escapeHtml(payment?.approvalStatus||course.status)}</dd></div><div><dt>Enrollment status</dt><dd>${payment?.checkoutEnabled?(payment.qaOnly?"Sandbox QA only":"Available"):"Disabled"}</dd></div><div><dt>Regulatory credit</dt><dd>${payment?.qaOnly?"Not eligible — QA enrollment":"Not available until approval"}</dd></div><div><dt>Refund / cancellation</dt><dd>Course-specific policy version must be accepted before checkout</dd></div></dl>`;
+  disclosure.innerHTML=`<dl><div><dt>State regulator</dt><dd>${escapeHtml(course.regulator)}</dd></div><div><dt>Required hours</dt><dd>${course.hours}</dd></div><div><dt>Course status</dt><dd>${escapeHtml(payment?.approvalStatus||course.status)}</dd></div><div><dt>Enrollment status</dt><dd>${payment?.checkoutEnabled?(payment.qaOnly?"Sandbox QA only":"Available"):"Disabled"}</dd></div><div><dt>Regulatory credit</dt><dd>${payment?.qaOnly?"Not eligible — QA enrollment":"Not available until approval"}</dd></div><div><dt>Refund / cancellation</dt><dd>${payment?.policyText?.refund?`Policy ${escapeHtml(payment.versions.refundPolicy)} — shown in full below and must be accepted before checkout`:"Course-specific policy version must be accepted before checkout"}</dd></div></dl>`;
   const versions=payment?.versions;
   if(!versions){acknowledgments.innerHTML='<p class="field-note">Acknowledgment versions will load after the payment service and course policies are configured.</p>';updateButton();return;}
   acknowledgments.innerHTML=[
     ["regulatoryAcknowledgment",versions.regulatoryAcknowledgment,"I understand this course’s current regulatory status and that sandbox QA activity provides no licensing credit."],
     ["terms",versions.terms,"I accept the current StateCourse terms for this course."],
-    ["refundPolicy",versions.refundPolicy,"I reviewed and accept this state/course refund policy version."],
-    ["cancellationPolicy",versions.cancellationPolicy,"I reviewed and accept this state/course cancellation policy version."],
-  ].map(([key,version,label])=>`<label class="ack-row"><input type="checkbox" data-ack="${key}" value="${escapeHtml(version)}"/><span>${escapeHtml(label)}<small>Version ${escapeHtml(version)}</small></span></label>`).join("");
+    ["refundPolicy",versions.refundPolicy,"I have read the refund and cancellation policy below and accept it.",payment?.policyText?.refund||null],
+    ["cancellationPolicy",versions.cancellationPolicy,"I have read the cancellation terms below and accept them.",payment?.policyText?.cancellation||null],
+  ].map(([key,version,label,text])=>{
+    /* RE 313's header requires the General Information Page — which carries the refund and
+       cancellation policy — to be provided to the participant PRIOR TO
+       registration/enrollment. A checkbox naming a version number is not that. Where the
+       policy text is available it is displayed in full, above the box that accepts it. */
+    const policy=text?`<div class="ack-policy" role="group" aria-label="${escapeHtml(label)}"><p>${escapeHtml(text)}</p></div>`:"";
+    return `<div class="ack-item">${policy}<label class="ack-row"><input type="checkbox" data-ack="${key}" value="${escapeHtml(version)}"/><span>${escapeHtml(label)}<small>Version ${escapeHtml(version)}</small></span></label></div>`;
+  }).join("");
   updateButton();
 }
 
