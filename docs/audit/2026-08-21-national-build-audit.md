@@ -31,7 +31,7 @@ what the build does not know.
 | Wisconsin | 1 | 72 | 13 | 53,622 | 143 | yes | yes |
 | **Total** | **24** | — | **224** | **984,480** | **2,464** | 13 | 13 |
 
-636 tests run. 635 pass. The single failure is `tests/rendered-html.test.mjs`,
+651 tests run. 650 pass. The single failure is `tests/rendered-html.test.mjs`,
 which imports `dist/server/index.js` — a Cloudflare worker artifact
 `site/build.sh` does not produce. It predates this work and is unrelated to
 course content.
@@ -156,20 +156,60 @@ Rev. 2025-05 — is continuing-education-scoped by its own terms and is not the
 same document. Colorado's delivery entry now names the unobtained checklist and
 `asynchronous_online_allowed` moved to `null`.
 
-### 3.6 Two states do not state what they did not read — OPEN
+### 3.6 One state does not state what it did not read — CORRECTED, then OPEN for California
 
-Eight of the thirteen readings files carry an explicit section headed *what was
-NOT read, and is therefore stated nowhere in this build*. Alaska and Michigan
-carry the functional equivalent under *open questions that must be answered
-before filing*. California's equivalent is in `docs/california/phase-1-audit.md`
-rather than a `california/regulatory/` file.
+**This finding was reported wrongly in the first pass and is corrected here.** The audit matched the
+literal phrase "not read" and so missed Maine's heading — *what has not been read from primary text*
+— and Virginia's — *what is not yet read from primary text*. Both sections existed. Reported as
+"Maine and Virginia have neither", which was false.
 
-**Maine and Virginia have neither.** Both builds are sound on the sources they
-do cite, but neither states its own boundary, so a reviewer cannot tell what
-the build is silent about on purpose. This is not fixed here, because writing
-that section means re-deriving what each build actually read, which is the
-reviewer's question and should be answered from the record rather than
-reconstructed.
+Twelve of the thirteen states state their boundary. Eight head it *what was NOT read, and is
+therefore stated nowhere in this build*; **Alaska** and **Michigan** head it *open questions that
+must be answered before filing*. **California is the only state with no source register at all** —
+it has the DRE source PDFs under `california/dre-sources/` and a build audit under
+`docs/california/`, but nothing saying what of those sources was read and what was not. That is the
+open item, and it is the largest one of its kind in the project, because California is the biggest
+build here at 386,565 instructional words.
+
+**Two real defects surfaced while checking the two states this finding wrongly accused.**
+
+**Virginia's boundary section contradicted itself.** It listed §§ 54.1-2131 through 54.1-2135, Title
+55.1 Chapter 7, Title 55.1 Chapter 12 and Title 36 Chapter 5.1 as *not yet read* — and the section
+immediately below it opened *"The sections listed as 'not yet read' above were read the same day."* A
+reviewer working from the list would have been told the build was silent on material it in fact
+teaches from primary text.
+
+**In both states the primary text was read but never recorded.** Maine's §§ 13178, 13179, 13271,
+13274, 13277, 13279, 13280, 13067-A and 13197 and Virginia's §§ 54.1-2133, 54.1-2134, 54.1-2135,
+54.1-2139, 54.1-2101.1 and 18VAC135-20-155, -240, -260, -335 were all fetched during the build, and
+the curriculum in both states is written correctly from them — Virginia already taught *ordinary
+care* rather than reasonable care, the 90-day property management default, and the ten-day board
+production rule. The reading files simply never caught up. Both are now recorded verbatim or in
+substance, and both boundary sections are rewritten to the eleven-state standard: an explicit
+**obtained and read** list, then **NOT obtained. No rule, figure, deadline, form provision, fee or
+penalty in this build comes from any of these.**
+
+**Two content gaps closed in Virginia** while recording the text. Module 06 said §§ 54.1-2133 and
+54.1-2134 *"carry the same duty architecture into leasing"* — but **§ 54.1-2134 A 1 requires the
+brokerage agreement before showing property to a prospective tenant, and § 54.1-2133 imposes no such
+requirement on the landlord side.** That asymmetry decides what a licensee does first and is now
+taught. **§ 54.1-2133 B's lead-free pipe disclosure**, which carries a federal definition by
+citation — 42 U.S.C. § 300g-6 — and must be made in writing, had no coverage and now does.
+
+**Two stale passages closed in Maine.** The trust-account hour deferred the whole of § 13178 to the
+Commission's rules; the statute in fact fixes five things itself, including that the broker
+**withdraws fees within 30 days after — but not until — consummation or termination, and only on a
+full accounting to the principal.** And the module's *deliberately not stated* paragraph listed
+§§ 13178, 13179, 13277, 13280, 13067-A and 13197 as unread; it now separates what the statute
+states from what it delegates, so the refusals that remain are the real ones — the trust-account
+cushion, the deposit timing, the retention period, the relationship-form fields and every sanction
+figure, all of which sit in Chapter 360 or in 10 M.R.S. § 8003, neither read.
+
+**Guarded.** `tests/state-record-citations.test.mjs` now asserts every built state's regulatory
+record carries a boundary heading, matching all the spellings the states actually use rather than
+one guessed phrase, and records California's absence as the single known exception — failing once
+the California register exists so the list can be updated. Maine's and Virginia's test files pin the
+newly recorded facts to the reading record so the two cannot drift apart again.
 
 ---
 
@@ -256,3 +296,7 @@ Commits carrying this audit's fixes:
   the registry/catalog linkage checks.
 - `tests/question-bank-integrity.test.mjs` — one structural standard across all
   24 banks, and the fifteen rewritten prompts.
+- Maine and Virginia source registers rewritten to the eleven-state standard,
+  the primary text they were built from recorded, two Virginia content gaps and
+  two stale Maine passages closed, and the source-boundary guard added — with
+  finding 3.6 corrected, since the first pass reported it wrongly.

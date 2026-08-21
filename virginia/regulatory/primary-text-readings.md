@@ -210,17 +210,260 @@ all principals in a timely manner.
 **"Actually known" is the standard in subdivision 2.** It is not a duty to investigate. A course
 that teaches a Virginia licensee must discover defects is overstating the rule.
 
-## What is not yet read from primary text
+## The Article 3 duty sections for leasing and management, read 2026-08-21
 
-- **Title 55.1, Chapter 7** — Virginia Residential Property Disclosure Act. Cited in the
-  curriculum at a chapter level only until read.
-- **Title 55.1, Chapter 12** — Virginia Residential Landlord and Tenant Act. Same.
-- **Title 36, Chapter 5.1 (§ 36-96.1 et seq.)** — Virginia Fair Housing Law. The protected-class
-  list must be taken from § 36-96.3 directly before any hour states it as a list.
-- **§ 54.1-2130 through 54.1-2146 full text.** The section titles above are verified; the
-  operative duty language in §§ 54.1-2131 through 54.1-2135 has not yet been read line by line.
+The four sections below were listed in an earlier draft of this file as not yet read line by line.
+They were read on 2026-08-21 and are recorded here, so that this file states the build's actual
+source boundary rather than a stale one.
 
-Until each is read, the curriculum states the requirement at the level the source supports and
+### § 54.1-2133 — licensees engaged by landlords to lease property
+
+**Subsection A** carries the same seven-part architecture as § 54.1-2131: perform per the brokerage
+agreement; promote the landlord's interests by conducting marketing activities, **assisting the
+landlord in drafting and negotiating leases and letters of intent** and presenting all written
+leasing offers and counteroffers **pursuant to § 54.1-2101.1**, and providing reasonable assistance
+to finalize the lease; maintain confidentiality; **exercise ordinary care**; account in a timely
+manner; **disclose to the landlord material facts of which the licensee has ACTUAL KNOWLEDGE**; and
+comply with the article, fair housing law and all other applicable law.
+
+**Two clauses a Virginia course most often loses.**
+
+> **A 2 a.** *"... the licensee **shall not be obligated to seek additional offers to lease the
+> property while the property is subject to a lease or a letter of intent to lease under which the
+> tenant has not yet taken possession**, unless agreed as part of the brokerage agreement, or unless
+> the lease or the letter of intent to lease so provides"*
+
+> **B.** *"Licensees shall **treat all prospective tenants honestly and shall not knowingly give
+> them false information.** A licensee engaged by a landlord shall disclose to prospective tenants
+> **all material adverse facts pertaining to the physical condition of the property that are
+> actually known by the licensee.** **If a licensee has actual knowledge of the existence of any
+> pipe, pipe or plumbing fitting, fixture, solder, or flux that does not meet the federal Safe
+> Drinking Water Act definition of "lead free" pursuant to 42 U.S.C. § 300g-6 in a residential
+> property, the licensee shall disclose the same to the prospective tenant.** As used in this
+> section, the term "physical condition of the property" refers to the physical condition of the
+> land and any improvements thereon, and **does not refer to (i) matters outside the boundaries of
+> the land or relating to adjacent or other properties in proximity thereto, (ii) matters relating
+> to governmental land use regulations, and (iii) matters relating to highways or public streets.**
+> **Such disclosure shall be made in writing.** No cause of action shall arise against any licensee
+> for revealing information as required by this article or applicable law. **Nothing in this
+> subsection shall limit the right of a prospective tenant to inspect the physical condition of the
+> property.**"*
+
+**The lead-free pipe disclosure is a leasing-specific duty with a federal definition attached**, and
+it is one of the few places in Article 3 where the statute names a federal standard by citation.
+**Subsections C and D** carry the ministerial-acts safe harbour and confirm that showing
+alternative properties, or representing other landlords, breaches nothing.
+
+### § 54.1-2134 — licensees engaged by tenants
+
+The tenant section is **not** a mirror of the landlord section, and the difference is in **A 1**:
+
+> **A 1.** *"**Enter into a brokerage agreement with the prospective tenant PRIOR TO SHOWING
+> PROPERTY** to such prospective tenant"*
+
+**Virginia imposes the agreement-before-showing requirement on tenant representation exactly as
+§ 54.1-2132 A 1 imposes it on buyer representation, and imposes it on NEITHER § 54.1-2133 (landlord)
+NOR § 54.1-2135 (management).** A course that says §§ 2133 and 2134 carry the same architecture
+without naming A 1 has flattened the one asymmetry that changes what a licensee does first.
+
+The remaining duties parallel the landlord section — perform per the agreement; promote the tenant's
+interests, **not obligated to seek or show other properties while the tenant is a party to a lease
+or letter of intent under which the tenant has not taken possession**; assist in drafting and
+negotiating leases, letters of intent **and rental applications**, presenting offers **pursuant to
+§ 54.1-2101.1**; confidentiality; **ordinary care**; timely accounting; **disclosure of material
+facts of ACTUAL KNOWLEDGE**; and compliance with the article and fair housing law.
+
+**Subsection B** requires licensees to *"treat all prospective landlords honestly and shall not
+knowingly give them false information"*, and requires disclosure to the prospective tenant of
+**actual knowledge of defective drywall**, as defined in **§ 36-156.1**.
+
+### § 54.1-2135 — licensees engaged to manage real estate
+
+The management duty list is **shorter than every other duty section in Article 3** — six
+subdivisions, not seven or eight — and the omissions are the point.
+
+> **A.** Perform in accordance with the terms of the **property management agreement**; **exercise
+> ordinary care**; **disclose in a timely manner to the owner material facts of which the licensee
+> has ACTUAL KNOWLEDGE concerning the property**; maintain confidentiality; account in a timely
+> manner; and comply with the article, fair housing law and other applicable law.
+
+**There is no "promote the interests of the client" subdivision here.** The management relationship
+is defined by the management agreement, and **subsection C** provides that a licensee **may also**
+represent the owner as seller or landlord if the brokerage relationship so provides — in which case
+the relationship must be disclosed under the article.
+
+**Subsection E is the operative drafting rule, and it carries a figure:**
+
+> *"Property management agreements in residential real estate transactions **shall be in writing**
+> and shall: **1.** Have a **definite termination date or duration; however, if a property
+> management agreement does not specify a definite termination date or duration, the agreement shall
+> terminate 90 days after the date of the agreement**; **2.** State the **amount of the management
+> fees and how and when such fees are to be paid**; **3.** State the **services to be rendered by
+> the licensee**; and **4.** Include such other terms as have been agreed to by the owner and the
+> property manager."*
+
+**Subsection D** carries the defective drywall disclosure to the owner. **Subsection F** is the
+limit that a course must state: *"The provisions of this section **shall not apply to licensees
+engaged in commercial real estate transactions**."*
+
+### § 54.1-2139 — disclosed dual agency and dual representation, residential
+
+> **A.** *"A licensee **may not act as a dual agent or dual representative in a residential real
+> estate transaction unless he has first obtained the WRITTEN CONSENT of all parties** to the
+> transaction **given after written disclosure of the consequences** of such dual agency or dual
+> representation. **A dual AGENT has an agency relationship** under the brokerage agreements with
+> the clients. **A dual REPRESENTATIVE has an independent contractor relationship** under the
+> brokerage agreements with the clients. Such disclosure shall be **in writing and given to both
+> parties PRIOR TO THE COMMENCEMENT** of such dual agency or dual representation."*
+
+> **D.** *"Such disclosures **shall not be deemed to comply** with the requirements in this section
+> if **(i) not signed by the client** or **(ii) given in a purchase agreement, lease, or any other
+> document related to a transaction.** However, such written consent and disclosure ... **shall be
+> presumed to have been given as against any client who signs a disclosure as required in this
+> section.**"*
+
+> **E.** The obligation to make these disclosures **does not relieve** the licensee of
+> **§ 54.1-2137 C**, which requires all brokerage relationships to be set out in a **written
+> agreement**.
+
+> **F.** *"**No cause of action shall arise** against a dual agent or dual representative for making
+> disclosures of brokerage relationships as provided by this article. **A dual agent or dual
+> representative does not terminate any brokerage relationship by the making of any such allowed or
+> required disclosures.**"*
+
+> **G.** *"... a licensee **may withdraw, without liability, from representing a client who refuses
+> to consent** to a disclosed dual agency or dual representation, thereby terminating the brokerage
+> relationship with such client. **Such withdrawal shall not prejudice the ability of the licensee
+> to continue to represent the other client** in the transaction ..."*
+
+**Subsection D is the clause a course most often gets wrong.** A dual agency disclosure buried in
+the purchase agreement **does not count**, and an unsigned disclosure **does not count** — the
+statute says so in terms. **Virginia also distinguishes dual AGENT from dual REPRESENTATIVE by the
+underlying relationship**, agency versus independent contractor, and a course that treats the two
+words as synonyms has lost a statutory distinction.
+
+### 18VAC135-20-335 — what only a licensee may do, and what an unlicensed person may do
+
+**A — licensed activity only:** *"1. Showing property; 2. Holding an open house; 3. Answering
+questions on listings, title, financing, closing, contracts, brokerage agreements, and legal
+documents; 4. Discussing, explaining, interpreting, or negotiating a contract, listing, lease
+agreement, or property management agreement **with anyone outside the firm**; and 5. Negotiating or
+agreeing to **any commission, commission split, management fee, or referral fee**."*
+
+**B — permitted to an unlicensed individual or entity**, in the regulation's own order: general
+clerical duties including answering telephones, responding by electronic media, and **providing
+information shown on the listing**; submitting listings and changes to MLS; **following up on loan
+commitments after contracts have been ratified**; having keys made; computing commission checks;
+placing signs; acting as a courier; scheduling appointments; **recording and depositing escrow
+funds**; accepting security deposits, periodic rent and other contracted payments; **preparing
+contract forms for approval of the licensee and supervising broker**; **accepting and signing
+broker-approved rental agreements, state or federal required disclosures, and any documents required
+for fair housing compliance under Chapter 5.1 of Title 36** in a rental transaction; preparing
+promotional materials and advertisements **for approval of the licensee and supervising broker**;
+assembling closing documents; obtaining required public information from governmental entities;
+monitoring license and personnel files; ordering routine repairs as directed by a licensee; and any
+other activity in the regular course of business for which a licence is not required.
+
+**The line the regulation draws is between conveying and interpreting.** An unlicensed assistant may
+**provide information shown on the listing** and may **deposit escrow**; the moment the conversation
+becomes answering a question about title, financing or a contract term, or negotiating anything, it
+is licensed activity.
+
+### 18VAC135-20-155 and 18VAC135-20-260 — discipline and prohibited acts
+
+**-155 A** gives the Board power to **impose a monetary penalty and to suspend or revoke** a licence
+under **§ 54.1-201 A 7 and § 54.1-202** and the **Administrative Process Act**, where the licensee
+violated **or cooperated with others in violating** Chapters 1, 2, 3 or 21 of Title 54.1, **Chapter
+10 of Title 55.1**, or any Board regulation. **-155 B** makes clear a licensee may be charged
+**regardless of whether the acts were in the licensee's own transaction or another's.**
+
+**-260** lists the prohibited acts. Two carry a deadline the course states because the regulation
+states it: a licensee must **inform the board IN WRITING WITHIN 30 DAYS** of a conviction described
+in subdivision 4, and **within 30 days** of a disciplinary action described in subdivision 6. **No
+monetary penalty amount is stated anywhere in this course** — the amount is set under § 54.1-202 and
+the Administrative Process Act, **neither of which was read.**
+
+### § 54.1-2101.1 — preparation of contracts, and translation
+
+Cited by §§ 54.1-2131, 2132, 2133 and 2134 as the provision the presentation of offers runs under.
+
+> *"**Notwithstanding any rule of court to the contrary**, any person licensed under this chapter
+> **may prepare written contracts for the sale, purchase, option, exchange, or rental of real
+> estate**, provided that the preparation of such contracts is **incidental to a real estate
+> transaction in which the licensee (i) is involved and (ii) does not charge a separate fee for
+> preparing the contracts.**
+>
+> If a party ... requests **translation** of a contract or other real estate document from the
+> English language to another language, a licensee **may assist such party in obtaining a translator
+> or may refer such party to an electronic translation service. The licensee shall not charge a fee
+> for such assistance or referral.** In doing so, the licensee **shall not be deemed to have
+> breached any of his obligations under this chapter or otherwise become liable for any inaccuracies
+> in the translation.**"*
+
+**Both permissions are conditioned on charging no separate fee**, and both are express safe
+harbours — the first against the unauthorized practice of law, the second against liability for a
+translation the licensee did not make.
+
+### 18VAC135-20-240 — provision of information to the board
+
+> **A.** *"Unless otherwise specified by the board, or as set forth in **§ 54.1-2108** of the Code
+> of Virginia, a licensee of the board **must produce to the board or any of the board's agents
+> within 10 days of the request** evidence of signature cards or bank records, any document, book,
+> or record concerning any real estate transaction in which the licensee was involved, or for which
+> the licensee is required to maintain records for inspection and copying by the board or the
+> board's agents. **The board may extend such timeframe upon a showing of extenuating circumstances
+> prohibiting delivery within such 10-day period.**"*
+
+**Ten days, extendable only on a showing of extenuating circumstances.** **§ 54.1-2108 was not
+read**, so the exception it carries is named and not described.
+
+---
+
+## What was obtained and read, and what was not
+
+**Obtained and read**, from `law.lis.virginia.gov`: the **Code of Virginia, Title 54.1, Chapter 21**
+section list as published, and the operative text of **§§ 54.1-2101.1, 54.1-2110.1, 54.1-2131,
+54.1-2132, 54.1-2133, 54.1-2134, 54.1-2135, 54.1-2136, 54.1-2137, 54.1-2138, 54.1-2138.1,
+54.1-2139, 54.1-2139.1, 54.1-2140 and 54.1-2144**; the **18VAC135-20** section map as published, and
+the text of **18VAC135-20-155, -165, -181, -185, -190, -220, -240, -260, -270, -300, -330, -335 and
+-400**; **§ 36-96.3**,
+Virginia's protected classes; and **§ 55.1-703**, the Virginia Residential Property Disclosure Act's
+buyer-beware provision.
+
+**NOT obtained. No rule, figure, deadline, form provision, fee or penalty in this build comes from
+any of these:**
+
+- **The Real Estate Board's prescribed prelicense course content**, beyond **18VAC135-20-400**,
+  which lists the required subjects and is transcribed above. **No Board syllabus, hour allocation
+  or topic weighting was obtained**, and the 60-hour allocation across Course Days is a
+  **StateCourse structure built on § 54.1-2105.03 and 18VAC135-20-400**, not a Board allocation.
+- **Title 55.1, Chapter 7** — the Virginia Residential Property Disclosure Act — beyond
+  **§ 55.1-703**. The **Board's residential property disclosure statement form** was not obtained,
+  and **no field of it is described.**
+- **Title 55.1, Chapter 12** — the Virginia Residential Landlord and Tenant Act — in its own text.
+  Named where a curriculum hour reaches it; **no notice period, deposit limit or deadline is stated
+  from it.**
+- **Title 36, Chapter 5.1** beyond **§ 36-96.3** and **§ 36-96.2**. The **protected-class list is
+  taken from § 36-96.3 directly**, which was read; the **enforcement, exemption and remedy
+  provisions were not**, and **no penalty, filing deadline or exemption is stated.**
+- **§ 54.1-2108**, named by 18VAC135-20-240; **§ 54.1-2111.1**, the voluntary compliance program;
+  **§ 54.1-201, § 54.1-202 and § 54.1-204**, which carry the Board's penalty authority and the
+  conviction-review standard 18VAC135-20-155 and -260 operate under; the **Administrative Process
+  Act**; **Chapter 10 of Title 55.1**, named as a ground in 18VAC135-20-155 A; and the **remainder
+  of Chapter 21**, including the licensing, examination, fee and Transaction Recovery Fund
+  provisions. **No monetary penalty amount, fee, examination figure or Fund limit is stated.**
+- **§ 36-156.1**, the defective drywall definition. Named where §§ 54.1-2134 B and 54.1-2135 D
+  require the disclosure; **its content is not described.**
+- **The remainder of 18VAC135-20**, including the fee, examination, and Transaction Recovery Fund
+  sections. **No figure from any unread section appears anywhere.**
+- **Virginia's recording, foreclosure, common interest community, condominium and property owners'
+  association statutes** beyond **§§ 55.1-2308, 55.1-2309, 55.1-2312 and 55.1-2314**, which were
+  read for the association disclosure packet; and **Virginia's recordation and grantor tax
+  statutes** and any **rate**.
+- **Any Board or vendor examination content outline or candidate handbook**, and any figure for the
+  state licensing examination.
+
+Until each is read, the curriculum states the requirement **at the level the source supports** and
 says where the reader must go.
 
 ---

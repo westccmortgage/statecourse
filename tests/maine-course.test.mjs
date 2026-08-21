@@ -295,3 +295,74 @@ test("unknown identifiers return nothing rather than a default", () => {
   assert.equal(publicMaineAssessment(null), null);
   assert.equal(MAINE_COURSE_ID, "me-sales-agent-55-v1");
 });
+
+/*
+ * The statute sections below were fetched during the build but never recorded
+ * in maine/regulatory/primary-text-readings.md, so that file's boundary
+ * section listed them as read "by section title only" long after the
+ * curriculum had been written from their text. These tests pin the operative
+ * facts to the reading record, so the two cannot drift apart again.
+ */
+const prose = (text) =>
+  text
+    .replaceAll(/^>\s?/gm, "")
+    .replaceAll("**", "")
+    .replaceAll("*", "")
+    .replaceAll(/\s+/g, " ");
+
+const maineReadings = prose(fs.readFileSync(path.join(root, "maine/regulatory/primary-text-readings.md"), "utf8"));
+const maineCurriculum = prose(
+  fs
+    .readdirSync(path.join(root, "maine/curriculum"))
+    .filter((name) => /^module-\d+\.md$/.test(name))
+    .map((name) => fs.readFileSync(path.join(root, "maine/curriculum", name), "utf8"))
+    .join("\n"),
+);
+
+test("the reading record states what was obtained and what was not", () => {
+  assert.match(maineReadings, /What was obtained and read, and what was not/);
+  assert.match(maineReadings, /NOT obtained\. No rule, figure, deadline, form provision, fee or penalty/);
+  /* Chapter 360 is the largest open item and the record must say so. */
+  assert.match(maineReadings, /Chapter 360 of the Commission's rules/);
+  assert.match(maineReadings, /largest open item in the Maine build/);
+});
+
+test("§ 13178's fee-withdrawal rule is stated with both of its conditions", () => {
+  for (const text of [maineReadings, maineCurriculum]) {
+    assert.match(text, /within 30 days after/i);
+    /* "not until consummation or termination" is the half a course usually drops. */
+    assert.match(text, /not until.{0,40}consummation or termination/i);
+  }
+  /* And the accounting condition travels with it. */
+  assert.match(maineCurriculum, /full accounting/i);
+});
+
+test("§ 13178's delegated figures are refused, not guessed", () => {
+  assert.match(maineReadings, /no cushion figure is stated in this course/i);
+  assert.match(maineCurriculum, /amount the broker may leave in the account/i);
+  /* The statute's own words for the delegation. */
+  assert.match(maineReadings, /not to exceed an amount prescribed by commission rule/i);
+});
+
+test("§ 13271 records that the agent in Maine is the agency, not the individual", () => {
+  assert.match(maineReadings, /"buyer agent" as "a real estate brokerage agency"|Buyer agent — "a real estate brokerage agency"/i);
+  assert.match(maineReadings, /the agent is the AGENCY, not the individual/i);
+  /* A client requires a written brokerage agreement, or § 13282's default applies. */
+  assert.match(maineReadings, /client.{0,80}written.{0,40}brokerage agreement/i);
+});
+
+test("§ 13197's continuing education figures are the statute's, and the core is a ceiling", () => {
+  assert.match(maineReadings, /21 clock hours of continuing education within 2 years/i);
+  assert.match(maineCurriculum, /21 clock hours of continuing education within 2 years/i);
+  /* Six hours is the maximum the Commission MAY set, not a requirement in force. */
+  assert.match(maineCurriculum, /6 clock hour ceiling/i);
+  assert.match(maineReadings, /not more than 6 clock hours/i);
+});
+
+test("no retention period is stated anywhere in the Maine build", () => {
+  assert.match(maineReadings, /no retention period is stated/i);
+  assert.match(maineCurriculum, /any records retention period/i);
+  /* § 13184 delegates it; a stated figure would be invented. */
+  const retention = maineCurriculum.match(/\b\d+\s*(years?|months?)\b(?=[^.]{0,60}retention)/i);
+  assert.equal(retention, null, `a retention period appears in the Maine curriculum: ${retention?.[0]}`);
+});

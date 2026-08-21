@@ -348,9 +348,32 @@ require.** A sales agent who carries a cheque in a bag over a weekend has create
 **Disputed deposits are never resolved by the licensee choosing a side.** They go to the designated
 broker and, where necessary, to counsel.
 
-The specific requirements — where the account is held, what it is called, how quickly funds must be
-deposited, and how disbursement is authorised — are in § 13178 and in the Commission's rules, and
-must be read there.
+**What the statute itself requires.** § 13178 states five things directly, and a sales agent should
+know them as statute rather than as office practice:
+
+1. The account must be **federally insured**, in a financial institution or credit union authorized
+   to do business in Maine.
+2. It exists **for the sole purpose** of holding *"all earnest money deposits and all other money
+   held by it as an agency in which its clients or other persons with whom it is dealing have an
+   interest."*
+3. The account, the withdrawal orders and **every cheque drawn on it** must **name the agency** and
+   be **identified as a real estate trust account.** A cheque that does not say so is a defect on
+   its face.
+4. The account is **free from trustee process** — a creditor of the agency cannot reach it — *"except
+   by those persons for whom the brokerage agency has made the deposits and then only to the extent
+   of the interest."* This is why the money is safe even if the agency is not.
+5. The designated broker **shall withdraw all fees due within 30 days after — but NOT UNTIL —
+   consummation or termination of the transaction**, and only **when a full accounting is made to
+   the principal.** Both halves matter: the broker may not take the fee early, and the 30 days runs
+   from consummation or termination, not from the agreement.
+
+**What the statute delegates to the Commission's rules, and this course therefore does not state:**
+the **amount the broker may leave in the account** to keep it open (§ 13178 says only *"not to exceed
+an amount prescribed by commission rule"*), **how quickly funds must be deposited**, and **what
+supporting records must be kept and for how long.** Those are in the current rules and must be read
+there. The statute does add that the accounts and records are **open for inspection by the director**
+during business hours, and that **on the director's order the designated broker must authorize the
+director in writing to confirm the balance** of every agency trust account.
 
 ---
 
@@ -815,12 +838,20 @@ The Commission's rules, the published Sales Agent Course outline with its topic 
 Hour 1.2 says so — in contrast to Virginia and Michigan, where the passing standard in this
 project's courses is a StateCourse decision.
 
-**Deliberately not stated, for want of a primary reading:** any **records retention period** — § 13184
-delegates it to the Commission's rules and states none; any **fee, education hour count or renewal
-deadline** from §§ 13007, 13191–13197; any specific **ground, sanction or penalty** from
-**§ 13067-A**; and the operative requirements of **§ 13178 (trust accounts)**, **§ 13179
-(supervision)**, **§ 13277 (written policy)** and **§ 13280 (Commission rules on the relationship
-form)**, each of which is cited by title and whose content the hour routes to the current rules.
+**Read from the statute and stated in this course:** the operative requirements of **§ 13178 (trust
+accounts)**, **§ 13179 (supervision)**, **§ 13277 (written policy)** and **§ 13280 (the Commission's
+rulemaking mandate)**; the **grounds** in **§ 13067-A**; and the **21 clock hours of continuing
+education within 2 years prior to the date of application** required by **§ 13197 1**, together with
+that section's **6 clock hour ceiling** on any core requirement the Commission may set.
+
+**Deliberately not stated, for want of a primary reading:** any **records retention period** —
+§ 13184 delegates it to the Commission's rules and states none; the **trust account cushion**, the
+**deposit timing** and the **required supporting records**, all of which § 13178 delegates to those
+same rules; any **field of the relationship disclosure form**, which § 13279 delegates to the rules;
+any **fee** under § 13007 or **renewal deadline** from §§ 13191–13196; any **sanction, fine amount
+or procedural deadline**, which § 13067-A takes from **10 M.R.S. § 8003**, not read; and **whether a
+continuing education core requirement is currently in force and what it contains**, which § 13197 3
+leaves to the Commission.
 
 **Repealed sections are flagged in Hour 2.2 deliberately.** §§ 13063, 13064, 13066, 13067, 13177,
 13192, 13201, 13221–13239 and 13251 are repealed, and older Maine course material commonly still

@@ -284,3 +284,93 @@ test("the delivery rules and the course engine cannot drift apart", () => {
   assert.equal(VIRGINIA_COURSE_RULES.finalExamRequiresAllHours, true,
     "the monitored final is administered after the sixtieth hour");
 });
+
+/*
+ * virginia/regulatory/primary-text-readings.md carried a "what is not yet read"
+ * list that the section immediately below it contradicted — it said the same
+ * sections had been read the same day. The list is now an accurate boundary
+ * statement, and the Article 3 leasing and management sections it named are
+ * recorded. These tests hold the record to the build.
+ */
+const prose = (text) =>
+  text
+    .replaceAll(/^>\s?/gm, "")
+    .replaceAll("**", "")
+    .replaceAll("*", "")
+    .replaceAll(/\s+/g, " ");
+
+const virginiaReadings = prose(fs.readFileSync(path.join(root, "virginia/regulatory/primary-text-readings.md"), "utf8"));
+const virginiaCurriculum = prose(
+  fs
+    .readdirSync(curriculumDir)
+    .filter((name) => /^module-\d+\.md$/.test(name))
+    .map((name) => fs.readFileSync(path.join(curriculumDir, name), "utf8"))
+    .join("\n"),
+);
+
+test("the reading record states what was obtained and what was not, and does not contradict itself", () => {
+  assert.match(virginiaReadings, /What was obtained and read, and what was not/);
+  assert.match(virginiaReadings, /NOT obtained\. No rule, figure, deadline, form provision, fee or penalty/);
+  /* The stale heading must not come back: it listed sections the next section said were read. */
+  assert.equal(
+    /What is not yet read from primary text/.test(virginiaReadings),
+    false,
+    "the superseded 'not yet read' list is back, and the section below it contradicts it",
+  );
+});
+
+/*
+ * The one asymmetry in Article 3 that changes the order of a licensee's work.
+ * § 54.1-2132 A 1 and § 54.1-2134 A 1 both require the brokerage agreement
+ * before showing; §§ 54.1-2133 and 54.1-2135 impose no such requirement.
+ */
+test("the tenant-side agreement-before-showing rule is stated and attributed to § 54.1-2134 A 1", () => {
+  assert.match(virginiaCurriculum, /54\.1-2134 A 1/);
+  assert.match(virginiaCurriculum, /prior to showing property to such prospective tenant/i);
+  assert.match(virginiaCurriculum, /54\.1-2133 imposes no such\s?requirement/i);
+  assert.match(virginiaReadings, /Virginia imposes the agreement-before-showing requirement on tenant representation/i);
+});
+
+test("§ 54.1-2133 B's lead-free disclosure is stated with its federal citation and its writing requirement", () => {
+  for (const text of [virginiaReadings, virginiaCurriculum]) {
+    assert.match(text, /lead free/i);
+    assert.match(text, /42 U\.S\.C\. § 300g-6/);
+  }
+  assert.match(virginiaCurriculum, /disclosure must be in writing/i);
+});
+
+test("§ 54.1-2135's shape is recorded: no promote-the-interests duty, and residential only", () => {
+  assert.match(virginiaCurriculum, /no "promote the interests of the client" subdivision at all/i);
+  assert.match(virginiaCurriculum, /shall not apply to licensees engaged in commercial real estate transactions/i);
+  /* The 90-day default was already taught; it must stay attributed to § 54.1-2135 E. */
+  assert.match(virginiaReadings, /terminate 90 days after the date of the agreement/i);
+});
+
+test("§ 54.1-2139 D's two ways a dual agency disclosure fails are recorded", () => {
+  assert.match(virginiaReadings, /not signed by the client/i);
+  assert.match(virginiaReadings, /given in a purchase agreement, lease, or any other document related to a transaction/i);
+  /* Virginia separates dual AGENT from dual REPRESENTATIVE by the underlying relationship. */
+  assert.match(virginiaReadings, /dual AGENT has an agency relationship/i);
+  assert.match(virginiaReadings, /dual REPRESENTATIVE has an independent contractor relationship/i);
+});
+
+test("18VAC135-20-240's ten days is stated with its only exception", () => {
+  assert.match(virginiaReadings, /within 10 days of the request/i);
+  assert.match(virginiaReadings, /extenuating circumstances/i);
+  /* § 54.1-2108 carries the other exception and was not read, so it is named only. */
+  assert.match(virginiaReadings, /§ 54\.1-2108 was not\s?read/i);
+});
+
+test("no monetary penalty amount is stated anywhere in the Virginia build", () => {
+  assert.match(virginiaReadings, /No monetary penalty amount, fee, examination figure or Fund limit is stated/i);
+  /*
+   * Dollar figures are legitimate in the tax and proration hours — Module 04
+   * works a $340,000 assessment at $1.05 per $100. What must not appear is a
+   * dollar figure attached to a penalty, a fine, a fee or the Transaction
+   * Recovery Fund, since § 54.1-202 and the Fund provisions were not read.
+   */
+  const invented =
+    virginiaCurriculum.match(/\$\s?[\d,]+[^.]{0,60}\b(penalt|fine|Recovery Fund|licence fee|license fee)/i) ??
+    virginiaCurriculum.match(/\b(penalt|fine of|Recovery Fund|licence fee|license fee)[^.]{0,60}\$\s?[\d,]+/i);
+  assert.equal(invented, null, `a penalty or fee amount appears in the Virginia curriculum: ${invented?.[0]}`);
+});

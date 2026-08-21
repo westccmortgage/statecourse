@@ -154,3 +154,67 @@ test("the Arizona record states the rules a source states and none it invented",
     }
   }
 });
+
+/*
+ * Every built state must state its own source boundary — what was read, and
+ * what was not and is therefore stated nowhere in the build. It is the section
+ * a reviewer needs first, because it tells them what the build is silent about
+ * on purpose rather than by oversight.
+ *
+ * The states do not share one heading. Eight use "what was NOT read"; Alaska
+ * and Michigan use "open questions that must be answered before filing"; Maine
+ * used "what has not been read" and Virginia "what is not yet read" until both
+ * were rewritten. An audit pass that matched only one spelling reported Maine
+ * and Virginia as having no boundary section when both did — hence the
+ * alternatives below, and hence matching on the HEADING rather than on prose
+ * anywhere in the file.
+ */
+const BOUNDARY_HEADING = /^#{2,3} .*(what (was|is|has) not|not (yet |been )?read|NOT obtained|open questions)/im;
+
+const BUILT_STATE_DIRECTORIES = [
+  "alaska",
+  "arizona",
+  "colorado",
+  "maine",
+  "michigan",
+  "missouri",
+  "north-carolina",
+  "oklahoma",
+  "pennsylvania",
+  "virginia",
+  "washington",
+  "wisconsin",
+];
+
+test("every built state's regulatory record states its own source boundary", () => {
+  for (const state of BUILT_STATE_DIRECTORIES) {
+    const dir = path.join(root, state, "regulatory");
+    assert.ok(fs.existsSync(dir), `${state} has no regulatory directory`);
+    const carriers = fs
+      .readdirSync(dir)
+      .filter((file) => BOUNDARY_HEADING.test(fs.readFileSync(path.join(dir, file), "utf8")));
+    assert.ok(
+      carriers.length > 0,
+      `${state} states no source boundary — a reviewer cannot tell what the build is silent about on purpose`,
+    );
+  }
+});
+
+/*
+ * California is the exception, and it is a known open item rather than an
+ * oversight: it has the DRE source PDFs under california/dre-sources/ and a
+ * build audit under docs/california/, but no register saying what of those
+ * sources was read and what was not. This test records the gap rather than
+ * hiding it, and fails once the register exists so the list above can be
+ * updated to include California.
+ */
+test("California's missing source register is still the one recorded exception", () => {
+  const dir = path.join(root, "california/regulatory");
+  assert.equal(
+    fs.existsSync(dir),
+    false,
+    "california/regulatory now exists — add \"california\" to BUILT_STATE_DIRECTORIES and delete this test",
+  );
+  /* The sources themselves are present; it is the register that is missing. */
+  assert.ok(fs.existsSync(path.join(root, "california/dre-sources")), "the California DRE sources are gone");
+});

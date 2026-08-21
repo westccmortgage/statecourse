@@ -134,9 +134,36 @@ sellers as to other properties.
 
 ## 21.5 Landlord, tenant, and management
 
-**§ 54.1-2133** and **§ 54.1-2134** carry the same duty architecture into leasing. **§ 54.1-2135**
-covers licensees engaged to manage real estate, where the accounting duty does the heaviest work
-because the licensee handles other people's money continuously rather than once. Hours 33 and 55
+**§ 54.1-2133** and **§ 54.1-2134** carry the same duty architecture into leasing — perform per the
+agreement, promote the client's interests, confidentiality, **ordinary care**, timely accounting,
+disclosure of material facts of **actual knowledge**, compliance with the article and fair housing.
+**But they are not identical, and the difference decides what a licensee does first.**
+
+**§ 54.1-2134 A 1 requires a licensee engaged by a tenant to *enter into a brokerage agreement with
+the prospective tenant prior to showing property to such prospective tenant*.** That is the same
+requirement § 54.1-2132 A 1 imposes on buyer representation. **§ 54.1-2133 imposes no such
+requirement on a licensee engaged by a landlord**, and neither does § 54.1-2135 on a licensee engaged
+to manage. So the rule to carry out of this hour is: **on the tenant side and the buyer side the
+agreement comes before the showing; on the landlord side and the owner side it does not.**
+
+One further leasing duty has no counterpart in the sale sections. **§ 54.1-2133 B** requires a
+licensee engaged by a landlord to disclose to prospective tenants all material adverse facts about
+the physical condition of the property **that are actually known**, and adds a specific item: *"if a
+licensee has actual knowledge of the existence of **any pipe, pipe or plumbing fitting, fixture,
+solder, or flux that does not meet the federal Safe Drinking Water Act definition of 'lead free'
+pursuant to 42 U.S.C. § 300g-6** in a residential property, the licensee shall disclose the same to
+the prospective tenant."* **The disclosure must be in writing.** The same subsection carries the
+three exclusions from "physical condition of the property" that Hour 21 has already met on the sale
+side — matters outside the boundaries of the land or relating to adjacent properties, matters
+relating to governmental land use regulations, and matters relating to highways or public streets —
+and preserves the prospective tenant's own right to inspect.
+
+**§ 54.1-2135** covers licensees engaged to manage real estate, where the accounting duty does the
+heaviest work because the licensee handles other people's money continuously rather than once. Note
+that its duty list is the **shortest** of the four: it contains **no "promote the interests of the
+client" subdivision at all**, because the management relationship is defined by the management
+agreement. **§ 54.1-2135 F** limits the section to residential — *"the provisions of this section
+shall not apply to licensees engaged in commercial real estate transactions."* Hours 33 and 55
 develop management practice.
 
 ## 21.6 Reading the standards, not the vocabulary
