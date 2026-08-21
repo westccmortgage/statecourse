@@ -94,6 +94,12 @@ export const PRICING = Object.freeze({
 
 export const INSTRUCTOR = Object.freeze({
   name: "Anatoliy Kanevsky",
+  nameLastFirstMiddle: "Kanevsky, Anatoliy",
+  /* The title used on RE 306's primary-contact and owner/authorized-official blocks and on
+     every RE 336. One value, because two forms in one packet giving the same person two
+     titles is a deficiency, and because a title is not something to invent per document. It
+     matches california/dre-sources/re336-data.json, which the RE 336 filler reads. */
+  contactTitle: "Founder / CEO",
   nameLastFirst: "Kanevsky, Anatoliy",
   dreBrokerLicense: "01385024",
   /* The only accurate statement of status until DRE says otherwise. */

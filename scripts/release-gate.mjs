@@ -27,7 +27,7 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { PRICING } from "../config/california/submission-facts.mjs";
+import { INSTRUCTOR, PRICING, PROVIDER } from "../config/california/submission-facts.mjs";
 import {
   COMPLIMENTARY_DISCLOSURE,
   getCourse,
@@ -67,6 +67,10 @@ const words = (text) =>
     .replaceAll(/\s+/g, " ")
     .replaceAll(/\s+([.,;:])/g, "$1")
     .trim();
+
+const PROVIDER_LEGAL_NAME = PROVIDER.legalName;
+const PROVIDER_STREET = PROVIDER.principalOffice.street;
+const CONTACT_TITLE = INSTRUCTOR.contactTitle;
 
 const results = [];
 const check = (gate, id, title, fn) => {
@@ -284,9 +288,92 @@ check("print", 10, "the human-only items are recorded as outstanding, not assume
   return `${outstanding.length} human-only items still tracked as outstanding`;
 });
 
+check("print", 11, "RE 306 states each field the way the form and the regulation require", () => {
+  for (const packet of COURSE_PACKETS()) {
+    const relative = `california/submission/${packet}/01-re306-answer-sheet.md`;
+    const text = read(relative);
+    require_(text, `${relative} is missing`);
+
+    /* Item 1A: the printed S is DRE's, the digits are DRE's to assign. */
+    require_(/Leave the digits blank/.test(text), `${relative} item 1A does not say to leave the sponsor digits blank`);
+    require_(/prefix; that character is DRE's and stays/.test(text), `${relative} item 1A does not preserve the printed S prefix`);
+
+    /* Item 4: a principal office is an office, not a classroom. */
+    require_(
+      /N\/A — no classroom facility; correspondence\/internet course only/.test(text),
+      `${relative} item 4 does not state that there is no classroom facility`,
+    );
+    require_(
+      /principal office must not be entered here/i.test(text),
+      `${relative} item 4 does not forbid entering the principal office as a classroom`,
+    );
+    const item4 = text.split("\n").find((line) => line.startsWith("| 4 |")) ?? "";
+    require_(
+      !new RegExp(PROVIDER_STREET.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).test(item4.split("must not be entered")[0]),
+      `${relative} item 4 enters the principal office address as the classroom facility`,
+    );
+
+    /* Item 8: the exemption that can be proved on the day of filing. */
+    require_(/94874\(f\)/.test(text), `${relative} item 8 does not cite the exemption relied on`);
+    require_(
+      !/94874\(d\)\(2\)\(A\)/.test(text),
+      `${relative} item 8 still relies on the withdrawn licence-examination-preparation exemption`,
+    );
+
+    /* Page 3: two blocks, two signatures, one title. */
+    require_(/owner \/ authorized school official/i.test(text), `${relative} does not require the owner/official block`);
+    require_(/Digital or rubber-stamp signatures are not accepted/i.test(text), `${relative} does not state the signature rule`);
+    require_(text.includes(CONTACT_TITLE), `${relative} does not carry the contact title from the facts file`);
+  }
+  return `${COURSE_PACKETS().length} RE 306 sheets`;
+});
+
+check("print", 12, "the BPPE exemption is one the Bureau's own rule lets us evidence today", () => {
+  const sheet = read("california/submission/00_administrative/A4-bppe-exemption-statement.md");
+  require_(sheet, "the BPPE exemption statement is missing");
+  require_(/94874\(f\)/.test(sheet), "the exemption statement does not cite Education Code 94874(f)");
+  /* The Bureau asks a 94874(d)(2) claimant for a letter from the approving agency — an
+     approval this application is applying for and does not have. */
+  require_(/71395\(b\)\(7\)/.test(sheet), "the statement does not address the Bureau's evidentiary rule for 94874(d)(2)");
+  require_(/71395\(b\)\(9\)/.test(sheet), "the statement does not address the Bureau's evidentiary rule for 94874(f)");
+  require_(/withdrawn/i.test(sheet), "the statement does not record that the earlier basis was withdrawn");
+  /* And the figure the exemption turns on must be the real one. */
+  require_(
+    sheet.includes(`$${PRICING.completePath.usd}`),
+    `the statement does not state the highest program charge as $${PRICING.completePath.usd}`,
+  );
+  require_(PRICING.completePath.cents <= 250000, "the highest program charge now exceeds the 94874(f) threshold of $2,500");
+  return `94874(f), highest charge $${PRICING.completePath.usd} against a $2,500 threshold`;
+});
+
+check("print", 13, "RE 336 is the Department's own form, one per course, correctly named", () => {
+  const generated = path.join(root, "california/dre-sources/generated");
+  require_(fs.existsSync(generated), "no RE 336 forms have been generated");
+  const forms = fs.readdirSync(generated).filter((name) => /^RE336-.*\.pdf$/.test(name));
+  require_(forms.length === 3, `expected three course-specific RE 336 forms, found ${forms.length}`);
+  /* Filled from the official form rather than retyped: the certification is made under
+     penalty of perjury and must carry the Department's exact words. */
+  require_(fs.existsSync(path.join(root, "california/dre-sources/RE336.pdf")), "the official RE 336 is not held");
+  const filler = read("scripts/fill-re336.mjs");
+  require_(/RE336\.pdf/.test(filler), "the filler does not start from the official form");
+  require_(/Signature and date fields are deliberately left empty/.test(filler), "the filler may be signing the form");
+
+  const data = JSON.parse(read("california/dre-sources/re336-data.json"));
+  require_(data.provider.legalName === PROVIDER_LEGAL_NAME, `RE 336 names the provider "${data.provider.legalName}"`);
+  require_(data.provider.sponsorId === "", "RE 336 carries a sponsor id DRE has not assigned");
+  require_(data.primaryContact.title === CONTACT_TITLE, "RE 336 and the facts file give the contact different titles");
+  require_(data.courses.length === 3, "RE 336 is not produced for all three courses");
+  /* No blank duplicate: every generated form names its course. */
+  const slugs = data.courses.map((title) => title.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""));
+  for (const slug of slugs) {
+    require_(forms.includes(`RE336-${slug}.pdf`), `no RE 336 generated for ${slug}`);
+  }
+  return `3 forms, provider ${PROVIDER_LEGAL_NAME}, sponsor id blank`;
+});
+
 /* ═══════════════════════════════ PRODUCTION_READY ═══════════════════════════════════════ */
 
-check("production", 11, "Stripe carries the same facts the database does", () => {
+check("production", 14, "Stripe carries the same facts the database does", () => {
   const checkout = read("netlify/functions/create-checkout.mjs");
   const contract = read("lib/stripe-contract.mjs");
   require_(/asStripeParams\(metadata\)/.test(checkout), "the Checkout Session does not carry the metadata");
@@ -298,7 +385,7 @@ check("production", 11, "Stripe carries the same facts the database does", () =>
   return "session and intent both carry policy, package, allocation and amount";
 });
 
-check("production", 12, "every Stripe event the system depends on is handled", () => {
+check("production", 15, "every Stripe event the system depends on is handled", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   require_(webhook, "the webhook is missing");
   for (const eventName of HANDLED_STRIPE_EVENTS) {
@@ -308,7 +395,7 @@ check("production", 12, "every Stripe event the system depends on is handled", (
   return `${HANDLED_STRIPE_EVENTS.length} events handled`;
 });
 
-check("production", 13, "a repeated webhook cannot create a second enrollment or a second refund", () => {
+check("production", 16, "a repeated webhook cannot create a second enrollment or a second refund", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/001_payments_enrollment.sql");
   require_(/claim_stripe_event/.test(webhook), "events are not claimed");
@@ -319,7 +406,7 @@ check("production", 13, "a repeated webhook cannot create a second enrollment or
   return "idempotent at the event, the enrollment and the refund";
 });
 
-check("production", 14, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
+check("production", 17, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/009_stripe_integrity.sql");
   require_(migration, "the Stripe integrity migration is missing");
@@ -331,7 +418,7 @@ check("production", 14, "Stripe and the database are reconciled, and a disagreem
   return "intent, charge, currency, amount and status compared";
 });
 
-check("production", 15, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
+check("production", 18, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/010_external_refunds.sql");
   require_(migration, "external refunds are not handled");
@@ -356,7 +443,7 @@ check("production", 15, "a refund made in the Stripe Dashboard is recorded, clas
   return "recorded at Stripe's amount, assessed separately, surfaced when it exceeds the entitlement";
 });
 
-check("production", 16, "package fan-out creates one enrollment per component", () => {
+check("production", 19, "package fan-out creates one enrollment per component", () => {
   const migration = read("database/011_package_enrollments.sql");
   require_(migration, "package fan-out is not implemented: a package purchase would create one enrollment, not one per component");
   require_(/create or replace function finalize_paid_package/.test(migration), "there is no package finalisation path");
@@ -366,7 +453,7 @@ check("production", 16, "package fan-out creates one enrollment per component", 
   return "one purchase, one allocation row per component, one enrollment per component";
 });
 
-check("production", 17, "the whole test suite passes", () => {
+check("production", 20, "the whole test suite passes", () => {
   const output = execFileSync("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((name) => name.endsWith(".test.mjs")).map((name) => `tests/${name}`)], {
     cwd: root,
     encoding: "utf8",
