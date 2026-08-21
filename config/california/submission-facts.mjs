@@ -69,10 +69,27 @@ export const PRICING = Object.freeze({
     cents: 29900,
     includes: "All 135 hours, plus California Exam Prep and the Licensing/Application Navigator."
   }),
-  /* Required by RE 313 and not yet decided. It must be the same policy version the
-     enrollment flow presents and records; inventing one here would put a DRE-filed document
-     at odds with what a student actually agrees to. */
-  refundPolicy: null
+  /* Adopted 2026-08-20 for California. This policy is intentionally at least as consumer-
+     protective as the California private-postsecondary baseline while StateCourse's BPPE
+     classification is being finalized. The exact same version must appear in RE 313,
+     enrollment acknowledgments, checkout disclosures, Terms, and refund administration. */
+  refundPolicy: Object.freeze({
+    version: "CA-2026-08-20-v1",
+    fullRefundWindow:
+      "A student may cancel and receive a 100% refund of tuition paid through the later of seven business days after enrollment or completion of the first lesson assignment, provided the student has not attempted the final examination.",
+    proRataWindow:
+      "After the full-refund period, a student who withdraws after completing 60% or less of the course is eligible for a pro rata refund of the unearned tuition based on the percentage of the course not completed.",
+    noRefundAfter:
+      "No tuition refund is due after the student has completed more than 60% of the course, attempted a final examination, or received a course completion certificate, whichever occurs first.",
+    packageAllocation:
+      "For a multi-course package, refund eligibility and earned tuition are calculated separately for each course using the package allocation recorded at checkout; completed courses and courses beyond the refund threshold are non-refundable, and any remaining eligible course amount is refunded under this policy.",
+    processing:
+      "Approved refunds are returned to the original payment method within 10 business days after StateCourse LLC approves the cancellation or withdrawal request.",
+    requestMethod:
+      "Cancellation or withdrawal requests must be submitted through the student's StateCourse LLC account or in writing to info@statecourse.com. The effective date is the date the request is received by StateCourse LLC.",
+    policyText:
+      "A student may cancel and receive a 100% refund of tuition paid through the later of seven business days after enrollment or completion of the first lesson assignment, provided the student has not attempted the final examination. After that period, a student who withdraws after completing 60% or less of the course is eligible for a pro rata refund of unearned tuition based on the percentage of the course not completed. No tuition refund is due after more than 60% of the course has been completed, after any final examination attempt, or after a course completion certificate has been issued, whichever occurs first. For multi-course packages, eligibility is calculated separately for each course using the package allocation recorded at checkout. Approved refunds are returned to the original payment method within 10 business days. Requests may be submitted through the student's StateCourse LLC account or in writing to info@statecourse.com."
+  })
 });
 
 export const INSTRUCTOR = Object.freeze({
