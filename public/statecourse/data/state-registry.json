@@ -73,7 +73,10 @@
       "certificate_rules": "The certificate of completion must show the student name, the city where the course was held, the course title AND course approval number, the delivery date, the contact hours awarded, the signature of the instructor or sponsor, and the instructor's name (12 AAC 64.410(a)(9)). It issues only after the student completes a course and instructor evaluation.",
       "notes": "40 hours of commission-approved prelicensing education. Course certification applications must be submitted 45 days before the first course; a course is approved if the commission or its designee does not disapprove within 45 days of a complete application. Instructors are separately approved and must have adult teaching or training experience plus a qualifying degree or five years of licensed practice in the topic area (12 AAC 64.440). Read in the Alaska Real Estate Commission Statutes and Regulations (September 2024) and the Initial Course Application Instructions on 2026-08-19. A correspondence course additionally requires the complete course materials and the lesson instructions to be submitted (12 AAC 64.430(a)) and an unanswered examination or project activity turned in to the instructor for grading, filed with the commission for prior approval (12 AAC 64.430(b)). The commission may audit a certified course at any time (12 AAC 64.470(c)). Article 7 read in full on 2026-08-19.",
       "public_status": "In Development",
-      "daily_credit_limit": "12 AAC 64.410(c) caps credit at 10 hours of instruction per day for the continuing education requirements of AS 08.88.091 and 12 AAC 64.500, and 8 hours per day for the education requirements of AS 08.88.095 and 12 AAC 64.064. Neither paragraph names the AS 08.88.091(b) 40-hour prelicense requirement, so the rule as written does not appear to cap prelicense hours per day. StateCourse applies the 8-hour figure to the prelicense course anyway as a provider standard and will confirm the point with commission staff rather than rely on the silence. No StateCourse document may describe the 8-hour figure as an Alaska prelicense requirement."
+      "daily_credit_limit": "12 AAC 64.410(c) caps credit at 10 hours of instruction per day for the continuing education requirements of AS 08.88.091 and 12 AAC 64.500, and 8 hours per day for the education requirements of AS 08.88.095 and 12 AAC 64.064. Neither paragraph names the AS 08.88.091(b) 40-hour prelicense requirement, so the rule as written does not appear to cap prelicense hours per day. StateCourse applies the 8-hour figure to the prelicense course anyway as a provider standard and will confirm the point with commission staff rather than rely on the silence. No StateCourse document may describe the 8-hour figure as an Alaska prelicense requirement.",
+      "course_ids": [
+        "ak-salesperson-prelicense-40-v1"
+      ]
     },
     {
       "state_name": "Arizona",
@@ -591,7 +594,10 @@
       "proctoring_rules": "No Maine-specific mandatory technology or method located; proposed controls require Commission acceptance.",
       "certificate_rules": "Course title, student, numerical grade, beginning/completion dates, and authorized provider signature.",
       "notes": "55-hour Sales Agent Course; 3 quizzes with at least 60 questions total; at least 2 case studies; no enrollment for credit before written approval.",
-      "public_status": "In Development"
+      "public_status": "In Development",
+      "course_ids": [
+        "me-sales-agent-v1"
+      ]
     },
     {
       "state_name": "Maryland",
@@ -678,7 +684,10 @@
       "proctoring_rules": "Not prescribed. Michigan requires photo identification before the certificate of completion issues, and for distance learning requires the school to ensure the student whose attendance is reported is the student who completed the course (R 339.22154(5)). There is no supervised-examination requirement in MCL 339.2504 or R 339.22141 to R 339.22158.",
       "certificate_rules": "The certificate of completion must show the completion date, identification of the course including its name as approved by the department, the name AND approval number of the school, the student's name, and the number of clock hours completed (R 339.22141(1)(f)). It issues only after the student presents photo identification (R 339.22154(5)).",
       "notes": "40 clock hours of approved prelicensure education in principles of real estate, including at least 4 clock hours of civil rights law and equal opportunity in housing, completed within the 36 months before application (MCL 339.2504). A student must attend 100 percent of the course, and distance-learning credit requires hours attended to equal hours approved (R 339.22152). Distance courses need prior approval and six elements: modules, a learning objective for each, a structured learning method, assessment during each module, and remediation repeating the module until the content is understood (R 339.22157(2)). ARELLO certification is accepted, and approval is suspended if it lapses; an equivalent delivery system may be approved instead (R 339.22157(3)-(4)). An asynchronous course must supply a student-signed attestation of clock hours, and the enrollment application must disclose the previous calendar year's completion percentage, refreshed by 1 February (R 339.22141(1)(h), (j)). Licensing examination administered by PSI. The rules were renumbered and largely rescinded effective 4 June 2025; the operative education rules are R 339.22141 to R 339.22158. Read on 2026-08-19.",
-      "public_status": "In Development"
+      "public_status": "In Development",
+      "course_ids": [
+        "mi-salesperson-prelicensure-40-v1"
+      ]
     },
     {
       "state_name": "Minnesota",
@@ -1397,7 +1406,10 @@
       "proctoring_rules": "Prelicense courses require a monitored, final written assessment (18VAC135-20-362 A). The regulation does not prescribe the monitoring mechanism; Form A490-0214PRE Attachment #5 requires the applicant to describe how the written, monitored final exam will be administered, and the form separately requires correspondence and online courses to use testing procedures verifying completion plus a notarized affidavit certifying the student met the course requirements. The form notes that only courses offered at proctored locations may satisfy Board-ordered education.",
       "certificate_rules": "Certificate of completion must carry the student name, school name, course name, course approval number, course completion date, hours of credit completed, and the statement that the course is \"Approved by the Real Estate Board\" (18VAC135-20-362 E). Form A490-0214PRE Attachment #6 additionally requires the approval statement to cite Code of Virginia § 54.1-2105 and to carry the school director's name and signature. No approval number may appear before the Board issues one.",
       "notes": "StateCourse must not enroll for credit or claim approval before written Board authorization. Course approval expires three years from the last day of the month in which it was granted (18VAC135-20-362 C). Online and other distance courses must submit evidence of a course timer (Form A490-0214PRE Attachment #7), and every course must include a mechanism reasonably ensuring active engagement for each class hour (18VAC135-20-362 A).",
-      "public_status": "In Development"
+      "public_status": "In Development",
+      "course_ids": [
+        "va-principles-practices-v1"
+      ]
     },
     {
       "state_name": "Washington",
