@@ -16,7 +16,11 @@ async function processEvent(event, mode) {
       const promotionRef = object.discounts?.[0]?.promotion_code
         || object.total_details?.breakdown?.discounts?.[0]?.discount?.promotion_code;
       const promotionCode = typeof promotionRef === "string" ? promotionRef : promotionRef?.code || promotionRef?.id;
-      await rpc("finalize_paid_checkout", {
+      /* A package session carries its package id in metadata, written at checkout. Which
+         finalizer runs is decided by that rather than by counting allocation rows, so a
+         single-course purchase can never take the package path by accident. */
+      const packageId = object.metadata?.package_id || null;
+      await rpc(packageId ? "finalize_paid_package" : "finalize_paid_checkout", {
         p_event_id: event.id,
         p_mode: mode,
         p_checkout_session_id: object.id,
@@ -30,6 +34,7 @@ async function processEvent(event, mode) {
         p_payment_date: new Date(event.created * 1000).toISOString(),
         p_customer_email: object.customer_details?.email || object.customer_email || null,
         p_coupon_code: promotionCode || null,
+        ...(packageId ? { p_package_id: packageId } : {}),
       });
       }
       break;

@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { getCourse, evaluateCheckoutEligibility } from "../../config/course-catalog.mjs";
+import { evaluateCheckoutEligibility, getCourse, getPackage, packageAllocation } from "../../config/course-catalog.mjs";
 import { baseUrl, stripeEnvironment } from "./_lib/env.mjs";
 import { dbRequest } from "./_lib/db.mjs";
 import { stripeRequest } from "./_lib/stripe.mjs";
@@ -52,7 +52,19 @@ export const handler = async (event) => {
        purchase is one row for the whole amount; the row is written anyway, so the refund
        path has one shape rather than two and the package case is not the only one exercised
        by a code path nobody runs. */
-    const allocation = [{ courseId: course.id, allocatedAmount: amount }];
+    /* A package purchase allocates across its components; a single course allocates to
+       itself. Both write the same rows, so the refund path and the finalizer have one shape
+       rather than two, and the package case is not the only one exercised by code nobody
+       runs. */
+    const bundle = input.packageId ? getPackage(input.packageId) : null;
+    if (input.packageId && !bundle) throw Object.assign(new Error("unknown_package"), { statusCode: 400 });
+    if (bundle && !bundle.purchasable) {
+      throw Object.assign(new Error("package_not_purchasable"), { statusCode: 409 });
+    }
+    const allocation = bundle
+      ? (packageAllocation(bundle.id).allocated ?? [])
+      : [{ courseId: course.id, allocatedAmount: amount }];
+    if (allocation.length === 0) throw Object.assign(new Error("package_allocation_unavailable"), { statusCode: 409 });
     await dbRequest("checkout_course_allocations", {
       method: "POST",
       prefer: "return=minimal",
@@ -61,7 +73,7 @@ export const handler = async (event) => {
         course_id: entry.courseId,
         allocated_amount: entry.allocatedAmount,
         list_amount: amount,
-        package_id: null,
+        package_id: bundle?.id ?? null,
         policy_version: course.versions.refundPolicy,
       })),
     });
@@ -76,7 +88,7 @@ export const handler = async (event) => {
       course,
       amount,
       allocation,
-      packageId: null,
+      packageId: bundle?.id ?? null,
       qaOnly,
     });
 

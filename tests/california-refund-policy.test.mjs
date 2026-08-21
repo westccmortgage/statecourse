@@ -366,12 +366,11 @@ test("the complimentary components are disclosed rather than silently priced at 
   assert.match(COMPLIMENTARY_DISCLOSURE, /no separately allocated tuition/i);
 });
 
-test("neither California package is purchasable yet, and each says why", () => {
+test("both California packages are purchasable, and both allocate", () => {
   for (const packageId of ["ca-required-education-135", "ca-complete-path"]) {
     const bundle = getPackage(packageId);
-    assert.equal(bundle.purchasable, false, `${packageId} must not be purchasable before package enrollment fan-out exists`);
-    assert.match(bundle.notPurchasableReason, /one enrollment per component course/i, `${packageId} does not say why`);
-    /* The blocker is the fan-out, not an undecided price: both allocate. */
+    assert.equal(bundle.purchasable, true, `${packageId} is not purchasable`);
+    assert.equal(bundle.notPurchasableReason, null, `${packageId} still carries a blocking reason`);
     assert.ok(packageAllocation(packageId).allocated, `${packageId} must allocate`);
   }
 });

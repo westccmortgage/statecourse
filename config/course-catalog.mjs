@@ -141,9 +141,11 @@ const californiaPackage = ({ id, pricing, complimentary }) =>
     statutoryTuitionCents: pricing.cents,
     componentCourseIds: CALIFORNIA_STATUTORY_COURSE_IDS,
     complimentaryComponents: complimentary,
-    purchasable: false,
-    notPurchasableReason:
-      "Package checkout must create one enrollment per component course, and the paid-webhook path creates exactly one. Single-course checkout is unaffected.",
+    /* Fan-out exists: database/011_package_enrollments.sql creates one enrollment per
+       component from the allocation written at checkout, and returns the same set on a
+       repeated webhook rather than a second set. */
+    purchasable: true,
+    notPurchasableReason: null,
   });
 
 const packages = Object.freeze({

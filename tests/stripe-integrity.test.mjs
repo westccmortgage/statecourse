@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { getCourse, packageAllocation } from "../config/course-catalog.mjs";
+import { getCourse, getPackage, packageAllocation } from "../config/course-catalog.mjs";
 import { REFUND_POLICY_VERSION, evaluateRefund } from "../lib/refund-policy.mjs";
 import {
   HANDLED_STRIPE_EVENTS,
@@ -407,4 +407,94 @@ test("checkout persists the allocation and sends the same facts to Stripe", () =
     refund.indexOf('stripeRequest("/refunds"') < refund.indexOf("record_refund_policy_decision"),
     "the policy decision must be recorded against the refund Stripe returned",
   );
+});
+
+/* ─────────────────────────────────────────────────── package fan-out ─────────────────── */
+
+/*
+ * One Stripe purchase of the Complete Licensing Path must produce one payment, five
+ * allocation rows and five enrollments: the three DRE-credit courses at $99.67, $99.67 and
+ * $99.66, and Exam Prep and the Navigator at $0.00. A repeated webhook must return the same
+ * five, because Stripe redelivers as a matter of course and a second delivery that enrolled
+ * the student again would double the record of what they bought.
+ */
+test("a package purchase allocates to five components and the DRE-credit ones carry the whole price", () => {
+  const bundle = getPackage("ca-complete-path");
+  const { allocated } = packageAllocation("ca-complete-path");
+  assert.equal(allocated.length, 5, "the package does not have five components");
+
+  const credited = allocated.filter((entry) => !entry.complimentary);
+  const complimentary = allocated.filter((entry) => entry.complimentary);
+  assert.equal(credited.length, 3);
+  assert.equal(complimentary.length, 2);
+  assert.deepEqual(credited.map((entry) => entry.allocatedAmount), [9967, 9967, 9966]);
+  assert.deepEqual(complimentary.map((entry) => entry.allocatedAmount), [0, 0]);
+  assert.equal(allocated.reduce((sum, entry) => sum + entry.allocatedAmount, 0), bundle.priceCents);
+
+  /* And the whole allocation reaches Stripe, complimentary components included, so a student
+     holding only the Stripe receipt can see everything the purchase covered. */
+  const metadata = checkoutMetadata({
+    attemptId: "44444444-4444-4444-8444-444444444444",
+    studentId: "55555555-5555-4555-8555-555555555555",
+    course,
+    amount: bundle.priceCents,
+    allocation: allocated,
+    packageId: bundle.id,
+  });
+  assert.equal(metadata.package_id, "ca-complete-path");
+  assert.equal(decodeAllocation(metadata.course_allocation).length, 5);
+});
+
+test("the fan-out creates one enrollment per component and is idempotent", () => {
+  const migration = fs.readFileSync(path.join(root, "database/011_package_enrollments.sql"), "utf8");
+
+  /* The complimentary products must exist as courses, because enrollments.course_id
+     references courses(id) — a student cannot be enrolled in something unknown to it. */
+  assert.match(migration, /'ca-exam-prep', 'CA'/);
+  assert.match(migration, /'ca-licensing-navigator', 'CA'/);
+  assert.match(migration, /'not_regulated'/, "the complimentary products claim a regulatory status");
+
+  assert.match(migration, /create or replace function finalize_paid_package/);
+  assert.match(migration, /create table if not exists payment_enrollments/);
+  /* One row per component, and one payment per enrollment — the unique constraint is what
+     stops a repeated webhook attaching a second payment to an enrollment that has one. */
+  assert.match(migration, /primary key \(payment_id, course_id\)/);
+  assert.match(migration, /unique \(enrollment_id\)/);
+
+  /* Idempotency, the same shape finalize_paid_checkout uses: an already-finalized session
+     returns its primary enrollment instead of creating a second set. */
+  assert.match(migration, /if v_primary_enrollment_id is not null then return v_primary_enrollment_id; end if;/);
+  /* And the same reconciliation of the charged amount against the attempt. */
+  assert.match(migration, /raise exception 'checkout payment mismatch'/);
+
+  /* The allocation is read, never recomputed: a price change between purchase and webhook
+     must not alter what the student is recorded as having paid for each course. */
+  assert.match(migration, /from checkout_course_allocations/);
+  assert.match(migration, /raise exception 'no course allocation recorded for this checkout'/);
+  assert.match(migration, /raise exception 'allocation totals % but the charge is %'/);
+
+  /* A complimentary component is never marked as carrying regulatory credit. */
+  assert.match(migration, /not v_attempt\.qa_only and v_allocation\.allocated_amount > 0/);
+  /* One notification for the purchase, not five. */
+  assert.match(migration, /One notification for the purchase, not one per component/);
+});
+
+test("checkout refuses a package it cannot allocate or is not allowed to sell", () => {
+  const checkout = fs.readFileSync(path.join(root, "netlify/functions/create-checkout.mjs"), "utf8");
+  assert.match(checkout, /unknown_package/);
+  assert.match(checkout, /package_not_purchasable/);
+  assert.match(checkout, /package_allocation_unavailable/);
+  assert.match(checkout, /packageAllocation\(bundle\.id\)/);
+
+  const webhook = fs.readFileSync(path.join(root, "netlify/functions/stripe-webhook.mjs"), "utf8");
+  /* Which finalizer runs is decided by the package id in metadata, not by counting rows, so
+     a single-course purchase cannot take the package path by accident. */
+  assert.match(webhook, /object\.metadata\?\.package_id/);
+  assert.match(webhook, /packageId \? "finalize_paid_package" : "finalize_paid_checkout"/);
+});
+
+test("a payment taken before packages existed is backfilled rather than left looking empty", () => {
+  const migration = fs.readFileSync(path.join(root, "database/011_package_enrollments.sql"), "utf8");
+  assert.match(migration, /insert into payment_enrollments[\s\S]{0,400}from payments p\s*\n\s*where not exists/);
+  assert.match(migration, /create or replace view payment_components/);
 });
