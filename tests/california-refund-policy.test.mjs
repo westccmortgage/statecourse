@@ -383,9 +383,14 @@ test("refund administration decides from the policy and records what it decided"
   assert.match(endpoint, /evaluateRefund/, "the endpoint does not call the policy");
   assert.match(endpoint, /california_refund_basis/, "the endpoint does not read the refund basis");
   assert.match(endpoint, /record_refund_policy_decision/, "the endpoint does not record the policy decision");
-  assert.match(endpoint, /exceeds_policy_entitlement/, "the endpoint does not refuse to exceed the entitlement");
-  assert.match(endpoint, /no_refund_due_under_policy/, "the endpoint does not refuse a refund the policy denies");
   assert.match(endpoint, /refund_progress_unknown_for_/, "the endpoint does not stop on unknown progress");
+  /* The refusals live in lib/stripe-contract.mjs, which the endpoint delegates to, so that
+     what may be sent to Stripe is decided in one place rather than in each caller. */
+  assert.match(endpoint, /refundInstruction\(/, "the endpoint does not build its Stripe instruction from the contract");
+  const contract = fs.readFileSync(path.join(root, "lib/stripe-contract.mjs"), "utf8");
+  assert.match(contract, /exceeds_policy_entitlement/, "nothing refuses to exceed the entitlement");
+  assert.match(contract, /no_refund_due_under_policy/, "nothing refuses a refund the policy denies");
+  assert.match(contract, /payment_fully_refunded/, "nothing refuses a refund against a fully refunded payment");
 
   /* The superseded gate: policyReviewApproved alone must no longer authorise an amount. */
   assert.equal(
@@ -394,7 +399,13 @@ test("refund administration decides from the policy and records what it decided"
     "the endpoint still authorises refunds on the old policyReviewApproved boolean alone",
   );
   /* And the refund must reach the original payment method, so no destination is passed. */
-  assert.equal(/"destination"|refund_destination/.test(endpoint), false, "the endpoint sends a refund somewhere other than the original method");
+  for (const [name, text] of [["the endpoint", endpoint], ["the Stripe contract", contract]]) {
+    assert.equal(
+      /"destination"|refund_destination/.test(text),
+      false,
+      `${name} sends a refund somewhere other than the original payment method`,
+    );
+  }
 });
 
 test("the migration records the allocation and the policy decision, and computes no amount", () => {

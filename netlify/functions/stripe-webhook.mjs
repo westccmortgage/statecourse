@@ -1,7 +1,10 @@
 import { stripeEnvironment } from "./_lib/env.mjs";
-import { rpc } from "./_lib/db.mjs";
+import { dbRequest, rpc } from "./_lib/db.mjs";
 import { rawBody, verifyStripeSignature } from "./_lib/stripe.mjs";
 import { handleError, method, response } from "./_lib/http.mjs";
+import { HANDLED_STRIPE_EVENTS, reconcile } from "../../lib/stripe-contract.mjs";
+
+const idOf = (value) => (typeof value === "string" ? value : value?.id ?? null);
 
 async function processEvent(event, mode) {
   const object = event.data.object;
@@ -37,6 +40,38 @@ async function processEvent(event, mode) {
         p_status: event.type === "checkout.session.expired" ? "expired" : "payment_failed",
       });
       break;
+    /* The PaymentIntent carries the charge, and the charge is how a refund is reconciled.
+       Recording it here means a later refund event can be matched on either identifier rather
+       than only on the payment intent. Neither event creates an enrollment: the paid Checkout
+       Session is the only thing that does, so a PaymentIntent arriving first or twice changes
+       nothing. */
+    case "payment_intent.succeeded":
+      await rpc("record_payment_charge", {
+        p_payment_intent_id: object.id,
+        p_charge_id: idOf(object.latest_charge),
+        p_amount_received: object.amount_received ?? object.amount ?? null,
+        p_status: object.status || "succeeded",
+      });
+      break;
+    case "payment_intent.payment_failed":
+      await rpc("record_payment_charge", {
+        p_payment_intent_id: object.id,
+        p_charge_id: idOf(object.latest_charge),
+        p_amount_received: 0,
+        p_status: object.status || "payment_failed",
+      });
+      break;
+    case "charge.refunded":
+      /* Stripe sends this alongside the refund events. It carries the charge and the running
+         refunded total, which is what makes an independent check of our own arithmetic
+         possible; the refund rows themselves are written by the refund.* events. */
+      await rpc("record_charge_refund_total", {
+        p_charge_id: object.id,
+        p_payment_intent_id: idOf(object.payment_intent),
+        p_amount_refunded: object.amount_refunded ?? 0,
+        p_fully_refunded: object.refunded === true,
+      });
+      break;
     case "refund.created":
     case "refund.updated":
     case "refund.failed":
@@ -52,6 +87,32 @@ async function processEvent(event, mode) {
     default:
       break;
   }
+}
+
+/*
+ * Compare Stripe's version of a payment against ours and record any disagreement.
+ *
+ * A mismatch is recorded and NOT thrown. Throwing would fail the event, Stripe would retry it
+ * on a schedule of hours and days, and every retry would find the same disagreement — the
+ * database would never converge and the alert would arrive as an outage rather than as a
+ * discrepancy. It is written to the audit log instead, where it can be looked at.
+ */
+async function reconcileAgainstRecord(event, object) {
+  const intentId = idOf(object.payment_intent) ?? (event.type.startsWith("payment_intent.") ? object.id : null);
+  if (!intentId) return;
+  const rows = await dbRequest(
+    `payments?stripe_payment_intent_id=eq.${encodeURIComponent(intentId)}&select=id,amount,refund_amount,currency,stripe_payment_intent_id,stripe_charge_id&limit=1`,
+  );
+  const record = rows?.[0];
+  if (!record) return;
+  const mismatches = reconcile({ record, stripeObject: object });
+  if (mismatches.length === 0) return;
+  await rpc("record_stripe_reconciliation", {
+    p_payment_id: record.id,
+    p_event_id: event.id,
+    p_event_type: event.type,
+    p_mismatches: mismatches,
+  });
 }
 
 export const handler = async (event) => {
@@ -77,6 +138,7 @@ export const handler = async (event) => {
 
     try {
       await processEvent(stripeEvent, mode);
+      await reconcileAgainstRecord(stripeEvent, stripeEvent.data?.object ?? {});
       await rpc("complete_stripe_event", { p_event_id: stripeEvent.id });
       return response(200, { received: true });
     } catch (error) {
@@ -87,3 +149,8 @@ export const handler = async (event) => {
     return handleError(error);
   }
 };
+
+/* Exported so the integrity test and the webhook cannot disagree about which events are
+   handled: an event missing from the switch leaves the database believing something Stripe
+   has already moved on from. */
+export const WEBHOOK_HANDLED_EVENTS = HANDLED_STRIPE_EVENTS;

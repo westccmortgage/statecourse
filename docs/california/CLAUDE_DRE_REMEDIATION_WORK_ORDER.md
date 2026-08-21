@@ -27,6 +27,49 @@ Required implementation:
 
 Do not silently alter the adopted policy. If implementation exposes a genuine legal or technical conflict, stop and report the exact conflict.
 
+## 1a. Stripe integrity — IMPLEMENT NOW
+
+Stripe is part of this architecture, not an integration added after the fact.
+
+1. On creating a Stripe Checkout Session, store in Stripe metadata: `policy_version`,
+   `package_id`, the full `course_allocation`, the purchase amount, and the
+   enrollment/order identifier. Repeat the same metadata on the PaymentIntent.
+2. A refund may never send an arbitrary amount to Stripe. The refund engine calculates the
+   permitted amount from the same policy version and the same allocation, records the
+   decision in the database, and only then creates the Stripe Refund.
+3. Handle the Stripe webhooks: `checkout.session.completed`, successful and unsuccessful
+   payment, and refund events.
+4. Stripe and the StateCourse database must reconcile on `payment_intent`, `charge`,
+   `refund_id`, amount and status.
+5. A repeated webhook must not create a second enrollment or a second refund. Idempotency is
+   required, not assumed.
+
+§12 carries a mandatory **Stripe Integrity** block proving the chain
+`Catalog -> Checkout -> Stripe metadata -> DB allocation -> Refund calculation ->
+Stripe refund -> DB refund record`, including a partial refund, a full refund, a repeated
+webhook, and an attempt to refund more than the permitted amount.
+
+Neither `PRINT_READY` nor `PRODUCTION_READY` may pass while this chain is not green.
+
+## 1b. Policy decisions taken 2026-08-21
+
+Both were open questions and both are now closed. They are recorded here so they are not
+reopened by anyone reading only the sections above.
+
+**Business days are holiday-aware.** A business day is Monday through Friday, excluding the
+holidays in Government Code section 6700 with section 6701's observance rules applied. The
+earlier convention, which counted holidays as ordinary days, is superseded. 5 CCR section
+70000(d) effective 1 July 2026 gives the cancellation period its shape but does not define
+"business day"; the convention is StateCourse LLC's own. **No document may state that DRE or
+the Bureau requires this count.**
+
+**ca-complete-path is sellable.** California Exam Prep and the Licensing/Application
+Navigator are complimentary package features at no additional charge, carrying no DRE credit
+and no separately allocated tuition. The entire $299.00 is allocated to the three DRE-credit
+courses by `package price x standalone price / sum of standalone prices`, the first n-1
+courses taking the rounded share and the last taking the remainder: $99.67, $99.67, $99.66.
+Checkout must show the complimentary components explicitly.
+
 ## 2. RE 306 corrections
 
 - Preserve the official DRE printed `S` prefix in item 1A; leave the sponsor-number digits blank until DRE assigns them.

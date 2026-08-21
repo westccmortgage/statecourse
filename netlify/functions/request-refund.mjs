@@ -5,6 +5,7 @@ import { stripeRequest } from "./_lib/stripe.mjs";
 import { stripeEnvironment } from "./_lib/env.mjs";
 import { handleError, method, parseJson, response } from "./_lib/http.mjs";
 import { REFUND_POLICY_VERSION, evaluateRefund } from "../../lib/refund-policy.mjs";
+import { refundInstruction } from "../../lib/stripe-contract.mjs";
 
 /*
  * Refunds under California policy CA-2026-08-20-v1.
@@ -78,32 +79,17 @@ export const handler = async (event) => {
       }),
     );
 
-    const requested = input.amount == null ? decision.amount : Number(input.amount);
-    if (!Number.isSafeInteger(requested) || requested <= 0) {
-      throw Object.assign(new Error("invalid_refund_amount"), { statusCode: 400 });
-    }
-    if (requested > remaining) throw Object.assign(new Error("invalid_refund_amount"), { statusCode: 400 });
-
-    const overridden = requested > decision.amount;
-    if (overridden && input.policyOverrideApproved !== true) {
-      throw Object.assign(
-        Object.assign(new Error("exceeds_policy_entitlement"), {
-          policyVersion: decision.policyVersion,
-          policyAmount: decision.amount,
-          courses: decision.courses,
-        }),
-        { statusCode: 409 },
-      );
-    }
-    if (decision.amount === 0 && !overridden) {
-      throw Object.assign(
-        Object.assign(new Error("no_refund_due_under_policy"), {
-          policyVersion: decision.policyVersion,
-          courses: decision.courses,
-        }),
-        { statusCode: 409 },
-      );
-    }
+    /* What may be sent to Stripe is decided here, from the policy's entitlement and what
+       remains on the payment. No destination is passed and none may be: the policy requires
+       the original payment method, which is what Stripe does when none is given. */
+    const instruction = refundInstruction({
+      payment,
+      decision,
+      requestedAmount: input.amount == null ? null : Number(input.amount),
+      overrideApproved: input.policyOverrideApproved === true,
+    });
+    const requested = instruction.amount;
+    const overridden = instruction.overridden;
 
     const requestId = randomUUID();
     /* Stripe returns a refund to the original payment method by default; the policy requires
@@ -111,14 +97,7 @@ export const handler = async (event) => {
     const refund = await stripeRequest("/refunds", {
       method: "POST",
       idempotencyKey: `refund-${requestId}`,
-      params: {
-        payment_intent: payment.stripe_payment_intent_id,
-        amount: requested,
-        "metadata[statecourse_payment_id]": payment.id,
-        "metadata[refund_policy_version]": decision.policyVersion,
-        "metadata[policy_amount]": String(decision.amount),
-        "metadata[policy_overridden]": overridden ? "true" : "false",
-      },
+      params: instruction.params,
     });
     await rpc("record_refund_request", {
       p_request_id: requestId,

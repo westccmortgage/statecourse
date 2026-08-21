@@ -5,6 +5,7 @@ import { dbRequest } from "./_lib/db.mjs";
 import { stripeRequest } from "./_lib/stripe.mjs";
 import { handleError, method, parseJson, requireSameOrigin, response } from "./_lib/http.mjs";
 import { resolveCheckoutStudent } from "./_lib/student-auth.mjs";
+import { asStripeParams, checkoutMetadata } from "../../lib/stripe-contract.mjs";
 
 export const handler = async (event) => {
   try {
@@ -51,17 +52,32 @@ export const handler = async (event) => {
        purchase is one row for the whole amount; the row is written anyway, so the refund
        path has one shape rather than two and the package case is not the only one exercised
        by a code path nobody runs. */
+    const allocation = [{ courseId: course.id, allocatedAmount: amount }];
     await dbRequest("checkout_course_allocations", {
       method: "POST",
       prefer: "return=minimal",
-      body: {
+      body: allocation.map((entry) => ({
         checkout_attempt_id: attemptId,
-        course_id: course.id,
-        allocated_amount: amount,
+        course_id: entry.courseId,
+        allocated_amount: entry.allocatedAmount,
         list_amount: amount,
         package_id: null,
         policy_version: course.versions.refundPolicy,
-      },
+      })),
+    });
+
+    /* The same facts go to Stripe, so the two records can be compared later by anyone holding
+       either one. checkoutMetadata asserts the allocation totals the charge before the money
+       moves — a divergence between what a student pays and what the refund engine will divide
+       is a defect worth catching here rather than at refund time. */
+    const metadata = checkoutMetadata({
+      attemptId,
+      studentId: student.id,
+      course,
+      amount,
+      allocation,
+      packageId: null,
+      qaOnly,
     });
 
     const origin = baseUrl();
@@ -82,17 +98,11 @@ export const handler = async (event) => {
         "line_items[0][price_data][product_data][name]": course.name,
         success_url: `${origin}/payment/success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${origin}/enroll?course=${encodeURIComponent(course.id)}&checkout=cancelled`,
-        "metadata[checkout_attempt_id]": attemptId,
-        "metadata[student_id]": student.id,
-        "metadata[course_id]": course.id,
-        "metadata[state]": course.state,
-        "metadata[qa_only]": qaOnly ? "true" : "false",
-        "metadata[regulatory_acknowledgment_version]": course.versions.regulatoryAcknowledgment,
-        "metadata[terms_version]": course.versions.terms,
-        "metadata[refund_policy_version]": course.versions.refundPolicy,
-        "metadata[cancellation_policy_version]": course.versions.cancellationPolicy,
-        "payment_intent_data[metadata][checkout_attempt_id]": attemptId,
-        "payment_intent_data[metadata][course_id]": course.id,
+        ...asStripeParams(metadata),
+        /* Repeated on the PaymentIntent: a refund is reconciled by payment intent and charge,
+           and whoever is holding one of those must be able to see the same facts without
+           having to walk back to the Checkout Session. */
+        ...asStripeParams(metadata, "payment_intent_data[metadata]"),
       },
     });
 
