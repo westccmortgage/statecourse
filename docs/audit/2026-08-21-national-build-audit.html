@@ -462,7 +462,7 @@ html { scroll-behavior: smooth; }
           </div>
         </div>
 
-        <p>636 tests run; 635 pass. The single failure is <code>tests/rendered-html.test.mjs</code>, which imports <code>dist/server/index.js</code> — a Cloudflare worker artifact the site build does not produce. It predates this work and touches no course content.</p>
+        <p>651 tests run; 650 pass. The single failure is <code>tests/rendered-html.test.mjs</code>, which imports <code>dist/server/index.js</code> — a Cloudflare worker artifact the site build does not produce. It predates this work and touches no course content.</p>
       </section>
 
       <section id="s2">
@@ -489,7 +489,7 @@ html { scroll-behavior: smooth; }
 
       <section id="s3">
         <h2><b>03</b><span>Findings</span></h2>
-        <p class="lede">Six findings. Four fixed, one verified against the regulator's own page, one left open on purpose.</p>
+        <p class="lede">Eight findings. Six fixed, one verified against the regulator's own page, and one that this audit itself got wrong in the first pass — corrected below, along with the two real defects that surfaced while checking it.</p>
 
         <article class="finding">
           <div class="finding-head">
@@ -560,11 +560,37 @@ html { scroll-behavior: smooth; }
         <article class="finding">
           <div class="finding-head">
             <span class="id">3.6</span>
-            <h3>Two states do not state what they did not read</h3>
-            <span class="chip open">Open</span>
+            <h3>One state does not state what it did not read</h3>
+            <span class="chip open">Corrected, then open</span>
           </div>
-          <p>Eight of the thirteen readings files carry an explicit section headed <em class="q">what was NOT read, and is therefore stated nowhere in this build</em>. Alaska and Michigan carry the equivalent as open questions before filing. California's lives in its phase-one audit rather than a regulatory file.</p>
-          <p><strong>Maine and Virginia have neither.</strong> Both builds are sound on the sources they do cite, but neither states its own boundary, so a reviewer cannot tell what the build is silent about on purpose. This is left open rather than fixed, because writing that section means re-deriving what each build actually read — which is the reviewer's question, and should be answered from the record rather than reconstructed.</p>
+          <p><strong>This finding was reported wrongly in the first pass.</strong> The audit matched the literal phrase “not read”, and so missed Maine's heading — <em class="q">what has not been read from primary text</em> — and Virginia's — <em class="q">what is not yet read from primary text</em>. Both sections existed. Reported as “Maine and Virginia have neither”, which was false.</p>
+          <p>Twelve of the thirteen states state their boundary. Eight head it <em class="q">what was NOT read, and is therefore stated nowhere in this build</em>; Alaska and Michigan head it <em class="q">open questions that must be answered before filing</em>. <strong>California is the only state with no source register at all</strong> — it has the DRE source PDFs and a build audit, but nothing saying what of those sources was read and what was not. That is the open item, and it is the largest of its kind here, because California is the biggest build in the project at 386,565 instructional words.</p>
+          <p><strong>Checking the two states this finding wrongly accused turned up two real defects instead.</strong></p>
+          <p><strong>Virginia's boundary section contradicted itself.</strong> It listed §§ 54.1-2131 through 54.1-2135, Title 55.1 Chapters 7 and 12, and Title 36 Chapter 5.1 as <em>not yet read</em> — and the section immediately below it opened <em class="q">“The sections listed as ‘not yet read' above were read the same day.”</em> A reviewer working from that list would have been told the build was silent on material it teaches from primary text.</p>
+          <p><strong>In both states the primary text was read but never recorded.</strong> Maine's §§ 13067-A, 13178, 13179, 13197, 13271, 13274, 13277, 13279 and 13280, and Virginia's §§ 54.1-2101.1, 54.1-2133, 54.1-2134, 54.1-2135, 54.1-2139 and 18VAC135-20-155, -240, -260 and -335, were all fetched during the build, and both curricula are written correctly from them — Virginia already taught <em class="q">ordinary care</em> rather than reasonable care, the 90-day property management default, and the ten-day board production rule. Only the reading files never caught up. Both are now recorded, and both boundary sections rewritten to the standard the other states meet.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.7</span>
+            <h3>Virginia flattened the one asymmetry in Article 3</h3>
+            <span class="chip fixed">Fixed</span>
+          </div>
+          <p>Module 06 said §§ 54.1-2133 and 54.1-2134 <em class="q">“carry the same duty architecture into leasing.”</em> They do not, in the one respect that changes what a licensee does first:</p>
+          <blockquote>Enter into a brokerage agreement with the prospective tenant PRIOR TO SHOWING PROPERTY to such prospective tenant.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">§ 54.1-2134 A 1</span></blockquote>
+          <p>Virginia imposes that requirement on tenant representation exactly as § 54.1-2132 A 1 imposes it on buyer representation, and imposes it on <strong>neither</strong> § 54.1-2133 (landlord) <strong>nor</strong> § 54.1-2135 (management). On the tenant and buyer side the agreement comes before the showing; on the landlord and owner side it does not.</p>
+          <p>A second leasing duty had no coverage at all: <strong>§ 54.1-2133 B's lead-free pipe disclosure</strong>, which carries a federal definition by citation — 42 U.S.C. § 300g-6 — and must be made in writing.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.8</span>
+            <h3>Maine deferred a statute to rules that the statute itself decides</h3>
+            <span class="chip fixed">Fixed</span>
+          </div>
+          <p>The trust-account hour routed the whole of § 13178 to the Commission's rules. The statute fixes five things itself — a federally insured account held for the sole purpose of client money; the account, the withdrawal orders and every cheque naming the agency and identified as a real estate trust account; freedom from trustee process except for the depositors themselves; and the fee rule:</p>
+          <blockquote>… shall withdraw from the accounts all fees due within 30 days after but not until consummation or termination of the transaction when the designated broker makes or causes to be made a full accounting to the broker's principal.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">32 M.R.S. § 13178</span></blockquote>
+          <p>What the statute genuinely delegates now stands separately, so the refusals that remain are the real ones: the trust-account cushion, the deposit timing, the record retention period, the relationship-form fields, and every sanction figure — all in Chapter 360 or in 10 M.R.S. § 8003, neither read.</p>
         </article>
       </section>
 
