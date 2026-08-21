@@ -31,7 +31,7 @@ what the build does not know.
 | Wisconsin | 1 | 72 | 13 | 53,622 | 143 | yes | yes |
 | **Total** | **24** | — | **224** | **984,480** | **2,464** | 13 | 13 |
 
-651 tests run. 650 pass. The single failure is `tests/rendered-html.test.mjs`,
+652 tests run. 651 pass. The single failure is `tests/rendered-html.test.mjs`,
 which imports `dist/server/index.js` — a Cloudflare worker artifact
 `site/build.sh` does not produce. It predates this work and is unrelated to
 course content.
@@ -156,7 +156,7 @@ Rev. 2025-05 — is continuing-education-scoped by its own terms and is not the
 same document. Colorado's delivery entry now names the unobtained checklist and
 `asynchronous_online_allowed` moved to `null`.
 
-### 3.6 One state does not state what it did not read — CORRECTED, then OPEN for California
+### 3.6 One state does not state what it did not read — CORRECTED, and closed
 
 **This finding was reported wrongly in the first pass and is corrected here.** The audit matched the
 literal phrase "not read" and so missed Maine's heading — *what has not been read from primary text*
@@ -165,11 +165,9 @@ literal phrase "not read" and so missed Maine's heading — *what has not been r
 
 Twelve of the thirteen states state their boundary. Eight head it *what was NOT read, and is
 therefore stated nowhere in this build*; **Alaska** and **Michigan** head it *open questions that
-must be answered before filing*. **California is the only state with no source register at all** —
-it has the DRE source PDFs under `california/dre-sources/` and a build audit under
-`docs/california/`, but nothing saying what of those sources was read and what was not. That is the
-open item, and it is the largest one of its kind in the project, because California is the biggest
-build here at 386,565 instructional words.
+must be answered before filing*. California was the only state with no source register at all. **It now
+has one**, and writing it turned up the finding in 3.9 below — which is larger than the missing
+register was.
 
 **Two real defects surfaced while checking the two states this finding wrongly accused.**
 
@@ -211,6 +209,56 @@ one guessed phrase, and records California's absence as the single known excepti
 the California register exists so the list can be updated. Maine's and Virginia's test files pin the
 newly recorded facts to the reading record so the two cannot drift apart again.
 
+### 3.9 California's 386,565 words carry no citation to California law — OPEN
+
+**Writing California's source register produced the most significant finding of this audit.**
+
+The build is three 45-hour courses — Real Estate Principles, Real Estate Practice, and Mortgage Loan
+Brokering and Lending — totalling **386,565 instructional words across 45 lesson assignments**, the
+largest build in the project by a wide margin. **Not one of those 45 lessons cites a California
+statutory or regulatory section.** A sweep of every four- and five-digit number in the entire
+California curriculum returns calendar years and arithmetic, and nothing else.
+
+**This cuts two ways and both belong in the record.**
+
+**On the approval side the build is fully traceable.** Every structural constant rests on primary
+regulatory text obtained from the Department: **15 separate lesson assignments** and **45 periods of
+not less than 50 minutes** from **Commissioner's Regulation § 3000(a)(1)**; the **100-question
+minimum** and **60 percent** passing score, the **single retake on different questions**, and the
+rule that the exam is **never furnished directly to the student**, all from **RE 303**; the **2½-week
+minimum per course measured from access to passed final**, the **two-courses-in-five-weeks rule that
+applies across schools**, and the **one-year completion deadline**, from RE 303 p.3–4; the **15-day
+certificate** and its required fields from § 3000(a)(6); the **instructor floor** of a bachelor's
+degree with two years' experience or an associate degree with six, from **RE 336**. Section 7 of the
+register maps each to where the build carries it.
+
+**On the substantive side it rests on nothing that was read.** The instruction on agency, trust
+funds, disclosure, finance, fair housing and licence law is written without a citation to the
+California law it describes, because **the Business and Professions Code was not read in its own text
+— none of it** — and neither were the Commissioner's Regulations beyond §§ 3000, 3002 and 3003, the
+Civil Code, FEHA, the Unruh Act, or California's finance and lending statutes. That last omission is
+the sharpest: **one of the three courses is Mortgage Loan Brokering and Lending.**
+
+**The build has not manufactured anything.** No California statutory figure appears anywhere, and
+where a retention period is discussed at all, a firm that *"discards loan files three years after
+closing, on the shortest period it could find"* is presented as the error rather than the rule.
+California states **no retention period** because the Department states none — its record rule is
+open-ended: *"as long as the school is in business, the school must furnish a certificate to the
+student upon request."*
+
+**What it means for the review.** Every other state can be reviewed citation by citation against a
+quoted provision. California cannot. **The question to put to a California reviewer is therefore not
+"is the citation right" but "is the statement of California law correct"** — and the register says so
+in those words. Closing the gap means reading the Business and Professions Code and the
+Commissioner's Regulations directly and citing them through the curriculum; until then no California
+module states a section number, and none may be added without the reading behind it.
+
+**Guarded.** A test asserts the register's account stays true to the curriculum: if a section
+citation is ever added to a California lesson, it fails and names the file, so the register is
+rewritten alongside the build rather than drifting from it. It also pins the two figures that are
+**StateCourse decisions and not the Department's** — the **180-minute final examination limit**, which
+no document read states, and the in-course assessment thresholds — as labelled such.
+
 ---
 
 ## 4. The largest open item, which no amount of internal work closes
@@ -228,6 +276,7 @@ were not obtainable.
 | Colorado | **Obtained.** The Commission publishes its own qualifying-education outlines, and the six courses are built on them. The Online Course Approval Checklist and the Current Legal Issues provider material remain unobtained. |
 | North Carolina | **Obtained.** The Commission's Prelicensing Syllabus, extracted in full. |
 | Oklahoma | **Read but deliberately not reproduced**, per 605:10-3-1(a)(2). |
+| California | **A different gap, and a wider one.** The Department prescribes no content outline; it sets the shape — 15 lesson assignments, 45 periods of not less than 50 minutes, a 100-question proctored final at 60 percent — and that shape was obtained from Commissioner's Regulation § 3000 and RE 303 and is met. What was not obtained is **the substantive law itself**: the Business and Professions Code in its own text, none of it, and the Commissioner's Regulations beyond §§ 3000, 3002 and 3003. See finding 3.9. |
 
 Every state's readings file lists the rest of what it did not read — disclosure
 forms, trust-account statutes, disciplinary provisions, landlord-tenant acts,

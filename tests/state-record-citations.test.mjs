@@ -174,6 +174,7 @@ const BOUNDARY_HEADING = /^#{2,3} .*(what (was|is|has) not|not (yet |been )?read
 const BUILT_STATE_DIRECTORIES = [
   "alaska",
   "arizona",
+  "california",
   "colorado",
   "maine",
   "michigan",
@@ -201,20 +202,50 @@ test("every built state's regulatory record states its own source boundary", () 
 });
 
 /*
- * California is the exception, and it is a known open item rather than an
- * oversight: it has the DRE source PDFs under california/dre-sources/ and a
- * build audit under docs/california/, but no register saying what of those
- * sources was read and what was not. This test records the gap rather than
- * hiding it, and fails once the register exists so the list above can be
- * updated to include California.
+ * California's register was the last one written, and it is unlike the other
+ * twelve. The build carries no statutory or regulatory section citations at
+ * all — the only four- and five-digit numbers in its 45 lesson assignments are
+ * calendar years and arithmetic — so the register has to say so rather than
+ * imply a traceability the curriculum does not have. This test holds that
+ * statement to the curriculum: if a section citation is ever added, the
+ * register's account of the build stops being true and must be rewritten
+ * alongside it.
  */
-test("California's missing source register is still the one recorded exception", () => {
-  const dir = path.join(root, "california/regulatory");
-  assert.equal(
-    fs.existsSync(dir),
-    false,
-    "california/regulatory now exists — add \"california\" to BUILT_STATE_DIRECTORIES and delete this test",
-  );
-  /* The sources themselves are present; it is the register that is missing. */
-  assert.ok(fs.existsSync(path.join(root, "california/dre-sources")), "the California DRE sources are gone");
+test("California's register states the absence of citations, and the curriculum still has none", () => {
+  const register = fs.readFileSync(path.join(root, "california/regulatory/primary-text-readings.md"), "utf8");
+  assert.match(register, /not one of its 45\s+lesson assignments cites a California statutory or regulatory section/i);
+  assert.match(register, /is the statement of California law\s+correct/i);
+
+  const lessons = fs
+    .readdirSync(path.join(root, "california"), { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && fs.existsSync(path.join(root, "california", entry.name, "curriculum")))
+    .flatMap((entry) => {
+      const dir = path.join(root, "california", entry.name, "curriculum");
+      return fs
+        .readdirSync(dir)
+        .filter((file) => /^lesson-\d+\.md$/.test(file))
+        .map((file) => ({ file: `${entry.name}/${file}`, text: fs.readFileSync(path.join(dir, file), "utf8") }));
+    });
+  assert.equal(lessons.length, 45, `expected 45 California lessons, found ${lessons.length}`);
+
+  for (const lesson of lessons) {
+    const citation = lesson.text.match(/(§|Section|Bus\. & Prof\.|B&P)\s?\d{3,5}(\.\d+)?/);
+    assert.equal(
+      citation,
+      null,
+      `${lesson.file} now cites ${citation?.[0]} — rewrite california/regulatory/primary-text-readings.md section 8, which states the build carries no section citations`,
+    );
+  }
+});
+
+/*
+ * The register is the one place a California figure that is NOT the
+ * Department's must be labelled. Two are: the 180-minute final examination
+ * limit, which no document read states, and the in-course thresholds.
+ */
+test("California's two StateCourse figures are labelled as such and not as the Department's", () => {
+  const register = fs.readFileSync(path.join(root, "california/regulatory/primary-text-readings.md"), "utf8");
+  assert.match(register, /180-minute\s+final examination time limit/i);
+  assert.match(register, /no document read here states any time limit for the final\s+examination/i);
+  assert.match(register, /Neither may be\s+described anywhere as a California requirement/i);
 });
