@@ -10,7 +10,7 @@ This is one of three applications. **Assemble in this order**; it is the RE 303 
 
 | # | Item | Where |
 |---|---|---|
-| 1 | Completed RE 306 | `01-re306-answer-sheet.md` → transcribe onto the official RE 306 |
+| 1 | Completed RE 306 | `RE306-real-estate-principles.pdf` — the Department's own form, filled. `01-re306-answer-sheet.md` is the reasoning behind each answer, and is not filed |
 | 2 | Application fee | `02-fee-reference.md` — $500 for this course |
 | 3 | Sponsor/entity documentation | Administrative section A2 — one set serves all three applications; cross-referenced, not duplicated |
 | 4 | Instructional material required for submission | `04-instructional-material-manifest.md` — 15 lesson assignments, printed in full |

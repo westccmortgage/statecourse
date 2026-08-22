@@ -6,8 +6,9 @@
 **Status:** Submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California pre-license credit is available for it.
 
 
-**Transcribe these answers onto the official RE 306 (Rev. 1/26). Do not recreate the form.**
-Where an answer will not fit in the official field, the field gets a short entry plus "see continuation sheet", and the continuation sheet is attached behind the form.
+**The official RE 306 (Rev. 1/26) is already filled from these answers** — `scripts/fill-re306.mjs` writes them into the Department's own AcroForm, and the filled copy for this course is at `california/dre-sources/generated/RE306-real-estate-practice.pdf` and in the print set. **Nothing here is transcribed by hand any more**, because a form typed from a sheet is a form that can disagree with the sheet.
+
+**This sheet is the reasoning behind each answer**, and the instruction for the parts a person still does: the signatures, the dates, and the fields that stay blank until the Department fills them. Where an answer will not fit in the official field, the field carries a short entry and the continuation sheet goes behind the form.
 
 ## Sponsor/school information — items 1 to 11
 

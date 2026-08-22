@@ -27,6 +27,9 @@ import {
 } from "../config/california/submission-facts.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+/* The filled forms are named after the course, matching scripts/fill-re306.mjs and fill-re336.mjs. */
+const slug = (title) => title.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const base = path.join(root, "california/submission");
 const addr = (a) => `${a.street}, ${a.city}, ${a.state} ${a.zip}`;
 const written = [];
@@ -70,8 +73,9 @@ Assignment 14 is a dedicated **implicit bias and fair housing participatory prac
 **23B.** Left blank.`;
 
   return HEADER(course, "RE 306 — Statutory/Pre-License Course Approval Application: answer sheet") + `
-**Transcribe these answers onto the official RE 306 (Rev. 1/26). Do not recreate the form.**
-Where an answer will not fit in the official field, the field gets a short entry plus "see continuation sheet", and the continuation sheet is attached behind the form.
+**The official RE 306 (Rev. 1/26) is already filled from these answers** — \`scripts/fill-re306.mjs\` writes them into the Department's own AcroForm, and the filled copy for this course is at \`california/dre-sources/generated/RE306-${slug(course.title)}.pdf\` and in the print set. **Nothing here is transcribed by hand any more**, because a form typed from a sheet is a form that can disagree with the sheet.
+
+**This sheet is the reasoning behind each answer**, and the instruction for the parts a person still does: the signatures, the dates, and the fields that stay blank until the Department fills them. Where an answer will not fit in the official field, the field carries a short entry and the continuation sheet goes behind the form.
 
 ## Sponsor/school information — items 1 to 11
 
@@ -303,7 +307,7 @@ The same gate covers the DRE STATUTORY/PRE-LICENSE SCHOOL ID # on RE 313 and ite
 /* ------------------------------------------------------------------- per-course index */
 function packageIndex(course) {
   const rows = [
-    ["1", "Completed RE 306", `\`01-re306-answer-sheet.md\` → transcribe onto the official RE 306`],
+    ["1", "Completed RE 306", `\`RE306-${slug(course.title)}.pdf\` — the Department's own form, filled. \`01-re306-answer-sheet.md\` is the reasoning behind each answer, and is not filed`],
     ["2", "Application fee", `\`02-fee-reference.md\` — $${FEES.perCourse} for this course`],
     ["3", "Sponsor/entity documentation", "Administrative section A2 — one set serves all three applications; cross-referenced, not duplicated"],
     ["4", "Instructional material required for submission", `\`04-instructional-material-manifest.md\` — ${COURSE_DESIGN.lessonAssignments} lesson assignments, printed in full`],
