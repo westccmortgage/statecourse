@@ -560,7 +560,26 @@ check("submission", 18, "SB 1495 is enforced by the platform, not described by t
   return `${elements} elements traced, ${SB1495.roles.length} roles enforced, ${SB1495.enforcement.length} platform properties`;
 });
 
-check("submission", 19, "nothing anywhere offers these courses as approved qualifying education", () => {
+check("submission", 19, "a reviewer can walk from the sign-in page to the role-play panel", () => {
+  /* Not "do the accounts exist" — that is the ledger's question. This is the journey a regulator
+     will actually take, in both accounts, with the two differences between them exercised
+     rather than described. */
+  let report = null;
+  try {
+    report = JSON.parse(execFileSync("node", ["scripts/reviewer-walkthrough.mjs", "--json"], { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }));
+  } catch (error) {
+    try {
+      report = JSON.parse(error.stdout);
+    } catch {
+      require_(false, error.message.split("\n")[0]);
+    }
+  }
+  const failed = report.steps.filter((entry) => entry.status === "fail");
+  require_(failed.length === 0, failed.map((entry) => `${entry.id}: ${entry.detail}`).join("; "));
+  return `${report.steps.length} steps, ${report.exercised} exercised against the served code — REVIEWER_WALKTHROUGH ${report.REVIEWER_WALKTHROUGH}`;
+});
+
+check("submission", 20, "nothing anywhere offers these courses as approved qualifying education", () => {
   /*
    * The Commissioner approves a private-school course before it may be offered as qualifying
    * education. Until then the site may describe, price and test the courses, and may not
@@ -642,7 +661,7 @@ check("submission", 19, "nothing anywhere offers these courses as approved quali
 
 /* ═══════════════════════════ CA_PLATFORM_PRODUCTION_READY ═════════════════════════════ */
 
-check("platform", 20, "Stripe carries the same facts the database does", () => {
+check("platform", 21, "Stripe carries the same facts the database does", () => {
   const checkout = read("netlify/functions/create-checkout.mjs");
   const contract = read("lib/stripe-contract.mjs");
   require_(/asStripeParams\(metadata\)/.test(checkout), "the Checkout Session does not carry the metadata");
@@ -654,7 +673,7 @@ check("platform", 20, "Stripe carries the same facts the database does", () => {
   return "session and intent both carry policy, package, allocation and amount";
 });
 
-check("platform", 21, "every Stripe event the system depends on is handled", () => {
+check("platform", 22, "every Stripe event the system depends on is handled", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   require_(webhook, "the webhook is missing");
   for (const eventName of HANDLED_STRIPE_EVENTS) {
@@ -664,7 +683,7 @@ check("platform", 21, "every Stripe event the system depends on is handled", () 
   return `${HANDLED_STRIPE_EVENTS.length} events handled`;
 });
 
-check("platform", 22, "a repeated webhook cannot create a second enrollment or a second refund", () => {
+check("platform", 23, "a repeated webhook cannot create a second enrollment or a second refund", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/001_payments_enrollment.sql");
   require_(/claim_stripe_event/.test(webhook), "events are not claimed");
@@ -675,7 +694,7 @@ check("platform", 22, "a repeated webhook cannot create a second enrollment or a
   return "idempotent at the event, the enrollment and the refund";
 });
 
-check("platform", 23, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
+check("platform", 24, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/009_stripe_integrity.sql");
   require_(migration, "the Stripe integrity migration is missing");
@@ -687,7 +706,7 @@ check("platform", 23, "Stripe and the database are reconciled, and a disagreemen
   return "intent, charge, currency, amount and status compared";
 });
 
-check("platform", 24, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
+check("platform", 25, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/010_external_refunds.sql");
   require_(migration, "external refunds are not handled");
@@ -712,7 +731,7 @@ check("platform", 24, "a refund made in the Stripe Dashboard is recorded, classi
   return "recorded at Stripe's amount, assessed separately, surfaced when it exceeds the entitlement";
 });
 
-check("platform", 25, "package fan-out creates one enrollment per component", () => {
+check("platform", 26, "package fan-out creates one enrollment per component", () => {
   const migration = read("database/011_package_enrollments.sql");
   require_(migration, "package fan-out is not implemented: a package purchase would create one enrollment, not one per component");
   require_(/create or replace function finalize_paid_package/.test(migration), "there is no package finalisation path");
@@ -722,7 +741,7 @@ check("platform", 25, "package fan-out creates one enrollment per component", ()
   return "one purchase, one allocation row per component, one enrollment per component";
 });
 
-check("platform", 26, "the whole test suite passes", () => {
+check("platform", 27, "the whole test suite passes", () => {
   const output = execFileSync("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((name) => name.endsWith(".test.mjs")).map((name) => `tests/${name}`)], {
     cwd: root,
     encoding: "utf8",
@@ -786,6 +805,41 @@ const summary = Object.fromEntries(
 );
 const aggregateGranted = Object.values(summary).every((gate) => gate.granted);
 
+/*
+ * ══════════════════════════════════════════════════════════════════════════════════════════
+ *  SOFTWARE_BUILD_COMPLETE and DRE_SUBMISSION_ADMIN_CLOSEOUT
+ * ══════════════════════════════════════════════════════════════════════════════════════════
+ *
+ * CA_DRE_SUBMISSION_READY answers whether the envelope can be sealed. It stays BLOCKED for a
+ * long time after there is nothing left to write, because a professor's signature and a
+ * Secretary of State certificate are not things code produces — and it should stay blocked,
+ * because the envelope genuinely is not ready.
+ *
+ * But a gate that reads BLOCKED month after month invites the wrong response, which is to go
+ * looking for more software to build. There is always more software to build. These two lines
+ * exist to close that door: they say, separately, whether the writing is finished and whether
+ * the paperwork is.
+ *
+ *   SOFTWARE_BUILD_COMPLETE: YES means every deliverable this repository can produce exists
+ *   and passes, and both gates' checks are green. It is the signal to STOP BUILDING. Not to
+ *   improve the architecture, not to add a check, not to generalise California for the other
+ *   fifty states — to stop, and start the closeout.
+ *
+ *   DRE_SUBMISSION_ADMIN_CLOSEOUT tracks what is left, which by then is signatures, letters,
+ *   certificates and an envelope.
+ *
+ * The one thing that reopens the build is a defect. A deliverable that regresses, a check that
+ * starts failing, a source that drifts — those are software again and SOFTWARE_BUILD_COMPLETE
+ * says NO until they are fixed. Nothing else reopens it.
+ */
+const buildDeliverables = summary.submission.deliverables.filter((entry) => entry.owner === "build");
+const humanDeliverables = summary.submission.deliverables.filter((entry) => entry.owner === "human");
+const buildOutstanding = buildDeliverables.filter((entry) => !entry.satisfied);
+const humanOutstanding = humanDeliverables.filter((entry) => !entry.satisfied);
+const checksGreen = results.every((check) => check.status === "pass");
+const SOFTWARE_BUILD_COMPLETE = buildOutstanding.length === 0 && checksGreen;
+const ADMIN_CLOSEOUT = humanOutstanding.length === 0 ? "COMPLETE" : SOFTWARE_BUILD_COMPLETE ? "IN PROGRESS" : "NOT STARTED";
+
 const shown =
   GATE === "all" ? Object.keys(summary) : Object.keys(summary).filter((name) => name === GATE);
 if (shown.length === 0) {
@@ -809,6 +863,13 @@ if (AS_JSON) {
     JSON.stringify(
       {
         aggregate: { key: "STATECOURSE_CA_READY", granted: aggregateGranted },
+        SOFTWARE_BUILD_COMPLETE: SOFTWARE_BUILD_COMPLETE ? "YES" : "NO",
+        DRE_SUBMISSION_ADMIN_CLOSEOUT: ADMIN_CLOSEOUT,
+        /* One deliverable outstanding across three courses is one piece of work, not three. */
+        closeout: {
+          build: { total: buildDeliverables.length, outstanding: [...new Set(buildOutstanding.map((entry) => `${entry.section} ${entry.label}`))] },
+          human: { total: humanDeliverables.length, outstanding: [...new Set(humanOutstanding.map((entry) => `${entry.section} ${entry.label}`))] },
+        },
         firstFiling: FIRST_FILING.title,
         gates: Object.fromEntries(
           shown.map((name) => [
@@ -880,6 +941,18 @@ if (AS_JSON) {
         ? "  STATECOURSE_CA_READY: GRANTED — both gates pass.\n"
         : "  STATECOURSE_CA_READY: BLOCKED — the aggregate requires both gates.\n",
     );
+    console.log(`  SOFTWARE_BUILD_COMPLETE: ${SOFTWARE_BUILD_COMPLETE ? "YES" : "NO"}`);
+    console.log(`  DRE_SUBMISSION_ADMIN_CLOSEOUT: ${ADMIN_CLOSEOUT}\n`);
+    if (SOFTWARE_BUILD_COMPLETE) {
+      console.log("  Every deliverable this repository can produce exists and passes, and every check is");
+      console.log("  green. STOP BUILDING. What remains is signatures, letters, a certificate of status and");
+      console.log("  an envelope — none of which more architecture brings closer. Work the closeout queue:");
+      console.log("      node scripts/closeout-queue.mjs\n");
+      console.log("  The build reopens for a defect and for nothing else: a deliverable that regresses, a");
+      console.log("  check that starts failing, or a source that drifts.\n");
+    } else {
+      console.log(`  ${buildOutstanding.length} software deliverable(s) outstanding and ${results.filter((check) => check.status === "block").length} check(s) failing.\n`);
+    }
     console.log(`  First filing: ${FIRST_FILING.title} only. DRE advises a first-time applicant to`);
     console.log("  submit one course, so that a deficiency is found once rather than three times.\n");
     /* Neither gate authorises selling a course. The Commissioner does. */

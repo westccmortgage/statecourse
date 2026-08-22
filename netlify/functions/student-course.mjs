@@ -110,7 +110,10 @@ async function statesFor(ctx) {
   return dbRequest(`lms_assignment_state?enrollment_id=eq.${encodeURIComponent(ctx.enrollment.id)}&order=assignment_id.asc`);
 }
 
-function statusMap(course,states,mode) {
+/* Exported so that the reviewer walkthrough can exercise the gating rule rather than read it.
+   The difference between the two review accounts IS this function's `mode` argument, and a
+   difference asserted by reading source is a difference nobody has actually observed. */
+export function statusMap(course,states,mode) {
   const byId = new Map(states.map((item) => [item.assignment_id,item]));
   let priorComplete = true;
   return course.assignments.map((assignment) => {

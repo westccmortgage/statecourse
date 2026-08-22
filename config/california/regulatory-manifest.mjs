@@ -823,18 +823,53 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
    * internet course to inspect it; the other is who is qualified to teach it. They were filed
    * under one section number and a reader could reasonably have taken either for the other.
    */
+  /*
+   * Two deliverables, because they fail in different ways and one cannot close the other.
+   *
+   * The first is software: two accounts that differ in the right way, a walkthrough that proves
+   * the journey works in both, and a database that refuses a completion or a certificate for
+   * either. All of that can be finished here.
+   *
+   * The second is a run against the live database, which this repository cannot do and must not
+   * pretend to have done. A gate that granted on the strength of a provisioning script would be
+   * making exactly the claim the deliverable ledger exists to stop: that the thing exists
+   * because the means of producing it does.
+   */
   deliverable({
     id: "reviewer-access",
-    nextAction: "Write scripts/provision-california-review-accounts.mjs, provision one student and one regulator account against the live database, verify both reach the course and the examination, and write the credentials to a private filing sheet outside the repository.",
-    label: "working student and regulator log-ins for the online course",
+    nextAction: "None. The two accounts, the walkthrough and the database refusals are built and green.",
+    label: "student and regulator review access, built and walked end to end",
     handbookItem: "Student AND Regulator log-in and password for courses/final exams offered online/mobile app.",
     section: "§7B",
     owner: "build",
+    scope: "once",
     evidence: [
-      "california/submission/{packet}/14-login-instructions.md",
-      "scripts/provision-california-review-accounts.mjs",
+      { path: "scripts/provision-california-review-accounts.mjs", mustContain: ["student_reviewer", "regulator_reviewer"] },
+      { path: "scripts/reviewer-walkthrough.mjs", mustContain: ["no-completion", "gating-applies"] },
+      { path: "database/013_review_accounts.sql", mustContain: ["review_enrollment_completion_guard", "certificate_refused_no_dre_approval_number"] },
     ],
-    note: "The accounts must exist and work. The credentials themselves are never committed; the provisioning script writes a private filing sheet outside the repository for insertion before mailing.",
+  }),
+  deliverable({
+    id: "reviewer-access-instructions",
+    nextAction: "None. Regenerate if the accounts or their capabilities change.",
+    label: "log-in instructions for the Department, one per course packet",
+    handbookItem: null,
+    section: "§7B",
+    owner: "build",
+    evidence: [
+      { path: "california/submission/{packet}/14-login-instructions.md", mustContain: ["student review", "regulator"] },
+    ],
+  }),
+  deliverable({
+    id: "reviewer-accounts-provisioned",
+    nextAction: "Run `SUPABASE_URL=... SUPABASE_SERVICE_ROLE_KEY=... node scripts/provision-california-review-accounts.mjs --apply` against the live database, sign in as each account and walk the twelve steps by hand, then print the private filing sheet for the envelope.",
+    label: "the two accounts actually provisioned and signed into",
+    handbookItem: null,
+    section: "§7B",
+    owner: "human",
+    scope: "once",
+    evidence: ["california/submission/00_administrative/A8-review-accounts-provisioned.md"],
+    note: "A script is not an account. The receipt is written by the provisioning run itself and carries no credential — only which accounts exist, their enrollment ids and the date. The passwords go to a private sheet outside this repository and are never committed.",
   }),
   deliverable({
     id: "re311",

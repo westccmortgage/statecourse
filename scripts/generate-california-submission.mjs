@@ -412,12 +412,31 @@ function loginInstructions(course) {
 
 **Credentials are issued on the production system at filing time and written onto the printed copy of this sheet by hand. They are not stored in this repository and are not committed to source control.**
 
-| Account | Purpose | Where the credential is written |
-|---|---|---|
-| **DRE regulator account** | Full review access to this course: every lesson assignment, every assessment, and both final examination forms, without study-time gating | Handwritten on the printed sheet at filing |
-| **Sample student account** | The course exactly as a student experiences it, including sequential control | Handwritten on the printed sheet at filing |
+**Two accounts are supplied, and they are deliberately not the same account with a switch.** One shows the Department the course as a student takes it; the other shows the Department all of it at once. Those are opposite properties, and an account that did both would demonstrate neither.
 
-Sign-in address: **${PROVIDER.website}**
+| Account | Address | Purpose | Where the credential is written |
+|---|---|---|---|
+| **DRE student review** | \`dre-student-review@${PROVIDER.website.replace(/^https?:\/\//, "").replace(/\/$/, "")}\` | The course exactly as an enrolled student takes it. **Every gate applies:** sequential progression, study time, and — in Real Estate Practice — the SB 1495 practicum, which does not close until both role-play responses are submitted. Nothing is bypassed. | Handwritten on the private insert at filing |
+| **DRE regulator review** | \`dre-regulator-review@${PROVIDER.website.replace(/^https?:\/\//, "").replace(/\/$/, "")}\` | Full review access: every lesson assignment, every assessment, both final examination forms and both answer keys, without study-time or sequencing gating. Records nothing against any student. | Handwritten on the private insert at filing |
+
+Sign-in address: **${PROVIDER.website}/student/sign-in/** — both accounts sign in at the student sign-in page. Credentials to a side door would not be credentials to the thing being reviewed.
+
+**Neither account can produce a course completion record or a course completion certificate.** Both carry a review role on their enrollments, and the database refuses a completion event or a certificate for any such enrollment in a trigger rather than in application code. Separately, no certificate may issue for any enrollment while the course carries no DRE approval number — and none does, because none has been assigned.
+
+## What the Department can do with each account
+
+| Step | Student review | Regulator review |
+|---|---|---|
+| Sign in | ✓ | ✓ |
+| See all three California courses | ✓ | ✓ |
+| Open a course and see its ${COURSE_DESIGN.lessonAssignments} lesson assignments in sequence | ✓ | ✓ |
+| Open a lesson and read the instructional text as served | ✓ | ✓ |
+| See the applied exercise and the engagement check | ✓ | ✓ |
+| See the SB 1495 practicum, one panel per role, and which remain outstanding | ✓ (and must complete both) | ✓ (submits nothing) |
+| See what remains before the final examination opens, named requirement by requirement | ✓ | — the reviewer has no student clock |
+| See the final examination structure — ${FINAL_EXAM.questions} items, ${FINAL_EXAM.passingPercent}% to pass, two forms, proctored | ✓ | ✓ |
+| Reach a later assignment without finishing the one before it | **No — locked** | ✓ |
+| Produce a completion record or a certificate | **No** | **No** |
 
 ## What the regulator account does that a student account does not
 
