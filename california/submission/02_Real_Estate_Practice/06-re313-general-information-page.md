@@ -22,8 +22,8 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | PHONE NUMBER | **(310) 686-5053** |
 | EMAIL ADDRESS | **info@statecourse.com** |
 | ADDRESS (STREET, CITY, STATE, ZIP CODE) | **407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277** |
-| COURSE NAME | **Real Estate Practice** |
-| BRIEF COURSE DESCRIPTION | A 45-hour statutory pre-license course covering the day-to-day practice of real estate in California: prospecting, listing, advertising, showing, offers and negotiation, escrow and closing, trust fund handling, property management, risk management, and fair housing — delivered with a required interactive participatory component in every lesson assignment. |
+| COURSE NAME | **Real Estate Practice** — **Compliant with SB 1495** |
+| BRIEF COURSE DESCRIPTION | A 45-hour statutory pre-license course covering the day-to-day practice of real estate in California: prospecting, listing, advertising, showing, offers and negotiation, escrow and closing, trust fund handling, property management, risk management, and fair housing — delivered with a required interactive participatory component in every lesson assignment. **Compliant with SB 1495:** the course contains a component on implicit bias and a component on federal and state fair housing law, the latter including an interactive participatory component in which the student role plays as both a consumer and a real estate professional. |
 | METHOD OF COURSE PRESENTATION | **Correspondence/Independent Study, Internet** |
 | COURSE HOURS | **45** |
 | METHOD OF FINAL EXAM PRESENTATION | **IN PERSON PROCTORED and INTERNET** — the examination is delivered over the internet and supervised in person by a school-designated proctor |

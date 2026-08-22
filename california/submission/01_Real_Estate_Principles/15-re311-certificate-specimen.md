@@ -22,6 +22,7 @@
 | STUDENT MAILING ADDRESS (STREET) | Enrollment record | *per student* |
 | CITY / STATE / ZIP CODE | Enrollment record | *per student* |
 | NAME OF OFFERING AS APPROVED BY THE DEPARTMENT | Certification record | **Real Estate Principles** *(as approved — exact wording follows DRE's approval)* |
+
 | COURSE TYPE | Fixed for this offering | ☐ Live course ☐ Correspondence course **☒ CORRESPONDENCE/INTERNET** ☐ Correspondence/mobile device app |
 | **DRE APPROVAL NUMBER** | Certification record | **BLANK until DRE assigns it.** See the hard gate below. |
 | NUMBER OF CREDIT HOURS | Course design | **45** |

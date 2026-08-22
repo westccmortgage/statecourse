@@ -1,6 +1,7 @@
 import { dbRequest, rpc } from "./_lib/db.mjs";
 import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
+import { SB1495 } from "../../config/california/regulatory-manifest.mjs";
 import { getCaliforniaAssessment, getCaliforniaCourse, publicAssessment, scoreCaliforniaAssessment } from "../../config/california-course-engine.mjs";
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -149,8 +150,26 @@ async function coursePayload(ctx,requestedAssignment) {
     : [];
   const completed = assignments.filter((item) => item.status === "completed").length;
   const eligibility = eligibilityRows?.[0] || null;
+  /* SB 1495. Sent whenever the selected assignment is the practicum, so the page can render
+     the two role-play prompts and show which of them the student has actually submitted. The
+     response text is not sent back: it is evidence, not a draft to be re-edited in place. */
+  const participation = ctx.course.courseId === SB1495.courseId && selected.id === SB1495.assignmentId
+    ? await sb1495Participation(ctx)
+    : null;
   return {
     mode:ctx.mode,
+    participatory:participation ? {
+      assignmentId:SB1495.assignmentId,
+      statement:SB1495.statement,
+      minimumCharacters:SB1495_MINIMUM_RESPONSE,
+      roles:SB1495.roles.map((role) => ({
+        id:role.id,
+        label:role.label,
+        section:role.topic,
+        submitted:Boolean(participation[`${role.id}_role_submitted`])
+      })),
+      complete:Boolean(participation.both_roles_submitted)
+    } : null,
     /* Sent on every load. The student cannot dismiss it away permanently, because the
        obligation is to notify the student, not to have notified them once. */
     regulatoryNotices:CALIFORNIA_NOTICES,
@@ -240,15 +259,34 @@ async function maybeSupportFlag(ctx,assignmentId,attempts) {
   });
 }
 
+/* The minimum a submission must be to be a submission. A participatory component evidenced by
+   an empty box is a participatory component nobody can review, and the same figure is written
+   into the database's own check constraint so the two cannot disagree. */
+const SB1495_MINIMUM_RESPONSE = 200;
+
+async function sb1495Participation(ctx) {
+  if (ctx.course.courseId !== SB1495.courseId) return null;
+  return rpc("sb1495_participation",{p_enrollment_id:ctx.enrollment.id});
+}
+
 async function finishIfReady(ctx,assignmentId) {
   const row = await assignmentRow(ctx,assignmentId);
   const assignment = ctx.course.assignments.find((item) => item.id === assignmentId);
   const viewed = Array.isArray(row.viewed_sections) ? row.viewed_sections : [];
   const remediationSatisfied = row.remediation_status === "not_required" || row.remediation_status === "satisfied";
+  /* SB 1495: the practicum assignment needs both roles taken as well. Reading the answer from
+     the submissions rather than from a flag on the assignment row is the whole point — a flag
+     is something a code path can set, and a submission is something a student wrote. */
+  let participatory = true;
+  if (ctx.course.courseId === SB1495.courseId && assignmentId === SB1495.assignmentId) {
+    const participation = await sb1495Participation(ctx);
+    participatory = Boolean(participation?.both_roles_submitted);
+  }
   const ready = viewed.length >= assignment.sectionCount
     && row.applied_exercise_complete
     && row.engagement_check_complete
-    && remediationSatisfied;
+    && remediationSatisfied
+    && participatory;
   if (ready && row.status !== "completed") {
     const completedAt=isoNow();
     await patchAssignment(ctx,assignmentId,{status:"completed",completed_at:completedAt});
@@ -261,7 +299,12 @@ async function finishIfReady(ctx,assignmentId) {
       method:"PATCH",prefer:"return=minimal",
       body:{last_lesson_id:next?.id || assignmentId,resume_path:"/student-course.html?enrollment_id="+ctx.enrollment.id+(next ? "&assignment="+next.id : ""),last_activity_at:completedAt,updated_at:completedAt}
     });
-    await audit(ctx,assignmentId,"assignment_completed",{automatic:true,requirements:["sections","applied_exercise","engagement_check","remediation"]});
+    await audit(ctx,assignmentId,"assignment_completed",{
+      automatic:true,
+      requirements:["sections","applied_exercise","engagement_check","remediation"].concat(
+        ctx.course.courseId===SB1495.courseId && assignmentId===SB1495.assignmentId ? ["sb1495_both_roles"] : []
+      )
+    });
   }
   await rpc("refresh_california_eligibility",{p_enrollment_id:ctx.enrollment.id});
   return ready;
@@ -318,6 +361,31 @@ async function handleStudentEvent(ctx,input) {
     await dbRequest("lms_remediation_events",{method:"POST",prefer:"return=minimal",body:{enrollment_id:ctx.enrollment.id,student_id:ctx.studentId,course_id:ctx.course.courseId,course_version:ctx.enrollment.course_version,assignment_id:assignmentId,event_type:"content_viewed",attempt_number:Math.max(1,row.remediation_attempts)}});
     await audit(ctx,assignmentId,"remediation_content_viewed");
     return {ok:true};
+  }
+
+  if (eventType === "sb1495_role_submitted") {
+    /* The interactive participatory component. DRE's SB 1495 FAQ requires the applicant to
+       "role play as both a consumer and real estate professional" — so a response is written
+       and stored per role, and the assignment does not complete until both exist. The database
+       enforces the same rule in a trigger, because this endpoint is one caller of it. */
+    if (assignmentId !== SB1495.assignmentId) fail("sb1495_wrong_assignment",409);
+    const role=String(input.participantRole || "");
+    if (!SB1495.roles.some((entry) => entry.id === role)) fail("sb1495_unknown_role");
+    const response=String(input.response || "").trim();
+    if (response.length < SB1495_MINIMUM_RESPONSE) fail("sb1495_response_too_short");
+    const viewedCount=Array.isArray(row.viewed_sections)?row.viewed_sections.length:0;
+    /* The scenario is in the lesson. A response written without reading it is a response to
+       nothing, so the sections come first — the same ordering the applied exercise uses. */
+    if (viewedCount<6) fail("complete_instructional_sections_first",409);
+    const result=await rpc("record_sb1495_submission",{
+      p_enrollment_id:ctx.enrollment.id,
+      p_participant_role:role,
+      p_response:response.slice(0,20000),
+      p_prompts_answered:Math.max(0,Math.min(20,Number(input.promptsAnswered || 0)))
+    });
+    await audit(ctx,assignmentId,"sb1495_role_submitted",{participant_role:role,characters:response.length});
+    const completed=await finishIfReady(ctx,assignmentId);
+    return {ok:true,completed,participation:result?.participation ?? null,revision:result?.revision ?? null};
   }
 
   if (eventType === "help_requested") {

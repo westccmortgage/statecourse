@@ -92,7 +92,11 @@ Every one of the 15 lesson assignments carries a **required applied scenario exe
 
 Assignment 14 is a dedicated **implicit bias and fair housing participatory practicum**.
 
-The component is neither optional nor skippable. The platform's method of control refuses to open the next segment until the scenario response has been submitted, and each submission is recorded against the student, scored against the instructor rubric, and remediated until responsive. See continuation sheet 23B.
+**The fair housing interactive participatory component is Assignment 14 sections 4 and 5.** SB 1495 requires the applicant to "role play as both a consumer and real estate professional". The student writes a response from the consumer's position and a response from the real estate professional's position; each is stored as written with its date; the licensee-role response is revised after structured feedback and the revision is stored alongside the original rather than replacing it.
+
+**Neither role is skippable.** The practicum assignment cannot be recorded as complete with either response missing — enforced by a database trigger rather than by the study path alone — and final examination eligibility reports the interactive requirement from the submissions themselves, naming the outstanding role when one is missing. The two components are delivered as part of this course and cannot be taken apart from it.
+
+**See continuation sheet 23B — `07-sb1495-traceability.md`**, which traces every element of the requirement to the lesson section that teaches it, the page of the printed volume, and the examination items that test it.
 
 ## School certification, page 3
 

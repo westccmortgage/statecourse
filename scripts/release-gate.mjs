@@ -59,6 +59,7 @@ import {
   FORBIDDEN_CLAIMS,
   FIRST_FILING,
   MANIFEST_VERSION,
+  SB1495,
   PROGRAMS,
   SCHOOL,
   staleAuthorities,
@@ -524,7 +525,42 @@ check("submission", 17, "the examinations are sourced, distinct, traceable and c
   return `${report.counts.items} items, ${report.counts.forms} forms, ${report.counts.topics} topics — all ${Object.keys(report.gates).length} gates pass`;
 });
 
-check("submission", 18, "nothing anywhere offers these courses as approved qualifying education", () => {
+check("submission", 18, "SB 1495 is enforced by the platform, not described by the course", () => {
+  /* The defect: `interactive_requirements_complete` was `v_completed = 15` — a count of finished
+     assignments. It reported the interactive participatory requirement satisfied for a student
+     who had never written a word in either role. */
+  const migration = read("database/012_sb1495_participatory_component.sql");
+  require_(migration, "migration 012 does not exist");
+  require_(/create table if not exists sb1495_participatory_submissions/.test(migration), "no table stores a role-play response");
+  require_(/create trigger sb1495_assignment_completion_guard/.test(migration), "the completion guard is not a trigger, so a second caller could route around it");
+  require_(
+    /v_interactive := \(v_participation->>'both_roles_submitted'\)::boolean/.test(migration),
+    "eligibility does not read the interactive requirement from the submissions",
+  );
+  require_(!/interactive_requirements_complete[^\n]*v_completed=15/.test(migration), "eligibility still counts assignments for the interactive requirement");
+  require_(/sb1495_not_applicable_to_this_course/.test(migration), "the components could be submitted against a course that does not carry the requirement");
+
+  const matrix = read(`california/submission/${SB1495.packageDir}/07-sb1495-traceability.md`);
+  require_(matrix, "the traceability matrix does not exist");
+  for (const banned of ["NOT FOUND", "NOT EXAMINED", "not located in the volume", "volume not read"]) {
+    require_(!matrix.includes(banned), `the traceability matrix carries "${banned}"`);
+  }
+  const unproved = [...matrix.matchAll(/^\| (.+?) \| (.+?) \| \*\*(YES|NO)\*\* \|$/gm)].filter((row) => row[3] === "NO");
+  require_(unproved.length === 0, `the matrix records ${unproved.length} participatory propert(ies) as not proved`);
+
+  /* And the statement itself, on the two documents that carry it — and on no other course. */
+  const practice = PROGRAMS.find((program) => program.sb1495);
+  for (const file of ["06-re313-general-information-page.md", "15-re311-certificate-specimen.md"]) {
+    require_(read(`california/submission/${practice.packageDir}/${file}`)?.includes(SB1495.statement), `${file} does not state "${SB1495.statement}"`);
+    for (const other of PROGRAMS.filter((program) => !program.sb1495)) {
+      require_(!read(`california/submission/${other.packageDir}/${file}`)?.includes(SB1495.statement), `${other.title} ${file} claims SB 1495 compliance`);
+    }
+  }
+  const elements = SB1495.implicitBias.length + SB1495.fairHousing.length;
+  return `${elements} elements traced, ${SB1495.roles.length} roles enforced, ${SB1495.enforcement.length} platform properties`;
+});
+
+check("submission", 19, "nothing anywhere offers these courses as approved qualifying education", () => {
   /*
    * The Commissioner approves a private-school course before it may be offered as qualifying
    * education. Until then the site may describe, price and test the courses, and may not
@@ -606,7 +642,7 @@ check("submission", 18, "nothing anywhere offers these courses as approved quali
 
 /* ═══════════════════════════ CA_PLATFORM_PRODUCTION_READY ═════════════════════════════ */
 
-check("platform", 19, "Stripe carries the same facts the database does", () => {
+check("platform", 20, "Stripe carries the same facts the database does", () => {
   const checkout = read("netlify/functions/create-checkout.mjs");
   const contract = read("lib/stripe-contract.mjs");
   require_(/asStripeParams\(metadata\)/.test(checkout), "the Checkout Session does not carry the metadata");
@@ -618,7 +654,7 @@ check("platform", 19, "Stripe carries the same facts the database does", () => {
   return "session and intent both carry policy, package, allocation and amount";
 });
 
-check("platform", 20, "every Stripe event the system depends on is handled", () => {
+check("platform", 21, "every Stripe event the system depends on is handled", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   require_(webhook, "the webhook is missing");
   for (const eventName of HANDLED_STRIPE_EVENTS) {
@@ -628,7 +664,7 @@ check("platform", 20, "every Stripe event the system depends on is handled", () 
   return `${HANDLED_STRIPE_EVENTS.length} events handled`;
 });
 
-check("platform", 21, "a repeated webhook cannot create a second enrollment or a second refund", () => {
+check("platform", 22, "a repeated webhook cannot create a second enrollment or a second refund", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/001_payments_enrollment.sql");
   require_(/claim_stripe_event/.test(webhook), "events are not claimed");
@@ -639,7 +675,7 @@ check("platform", 21, "a repeated webhook cannot create a second enrollment or a
   return "idempotent at the event, the enrollment and the refund";
 });
 
-check("platform", 22, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
+check("platform", 23, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/009_stripe_integrity.sql");
   require_(migration, "the Stripe integrity migration is missing");
@@ -651,7 +687,7 @@ check("platform", 22, "Stripe and the database are reconciled, and a disagreemen
   return "intent, charge, currency, amount and status compared";
 });
 
-check("platform", 23, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
+check("platform", 24, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/010_external_refunds.sql");
   require_(migration, "external refunds are not handled");
@@ -676,7 +712,7 @@ check("platform", 23, "a refund made in the Stripe Dashboard is recorded, classi
   return "recorded at Stripe's amount, assessed separately, surfaced when it exceeds the entitlement";
 });
 
-check("platform", 24, "package fan-out creates one enrollment per component", () => {
+check("platform", 25, "package fan-out creates one enrollment per component", () => {
   const migration = read("database/011_package_enrollments.sql");
   require_(migration, "package fan-out is not implemented: a package purchase would create one enrollment, not one per component");
   require_(/create or replace function finalize_paid_package/.test(migration), "there is no package finalisation path");
@@ -686,7 +722,7 @@ check("platform", 24, "package fan-out creates one enrollment per component", ()
   return "one purchase, one allocation row per component, one enrollment per component";
 });
 
-check("platform", 25, "the whole test suite passes", () => {
+check("platform", 26, "the whole test suite passes", () => {
   const output = execFileSync("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((name) => name.endsWith(".test.mjs")).map((name) => `tests/${name}`)], {
     cwd: root,
     encoding: "utf8",

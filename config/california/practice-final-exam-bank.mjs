@@ -832,17 +832,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Implicit bias operates fastest under time pressure and load, which is a working licensee's ordinary day. Uniform scripts, documented searches, and outcome review do not depend on attention." },
-  { source: { assignment: "assignment-14", section: "1.5" },
-    prompt: "At which stage of a transaction is unequal treatment least visible and therefore most dangerous?",
+  /* Assignment 14 section 2.7 — California fair housing law. SB 1495 requires the practice course to cover federal AND state fair housing law; the state component is examined here. */
+  { source: { assignment: "assignment-14", section: "2.7" },
+    prompt: "A property manager tells an applicant, \"we don't take vouchers.\" The applicant is otherwise qualified. Under California law, what is the problem?",
     choices: [
-      "The first inquiry, where different callers receive different amounts of information, encouragement, and follow-up.",
-      "The offer stage, where terms are documented.",
-      "The closing, where every figure is recorded.",
-      "The listing appointment, where the agreement is signed."
+      "Source of income is a characteristic protected by Government Code \u00a7 12955, and where there is a government rent subsidy the financial standard must be based on the portion of rent the tenant actually pays.",
+      "There is no problem, because source of income is not among the federally protected characteristics and federal law governs housing discrimination.",
+      "There is no problem, provided the manager applies the same rule to every applicant without exception.",
+      "The problem is one of documentation only: the refusal must be given in writing and state the reason."
     ],
     correctChoice: 0,
-    rationale: "Differential information at the inquiry stage leaves almost no trace, which is why an inquiry log is the control. The later stages generate documents by default." },
-  /* Assignment 14 topic 4 — the SB 1495 participatory practicum, consumer role. Added by the coverage gate; the practicum is examined on what it establishes, not by asking a student to role play in a multiple choice item. */
+    rationale: "This is the case for knowing the state list and not only the federal one. Source of income has no federal counterpart, and \u00a7 12955(n) and (o) go further \u2014 the income standard must account for the aggregate income of persons proposing to reside together, and where a subsidy exists it must be assessed against the tenant's own portion of the rent. Applying an unlawful rule uniformly does not cure it." },
   { source: { assignment: "assignment-14", section: "4.4" },
     prompt: "A buyer asks to see two specific homes on Alder Street. The licensee, friendly and evidently trying to help throughout, shows three homes in a different area instead and remarks that the schools there are \"a better fit for a family like yours.\" Taking the consumer's position in this scenario is designed to establish what?",
     choices: [
@@ -863,17 +863,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Documentation does not transfer responsibility, informal compliance achieves the same exclusion, and quiet withdrawal leaves the client free to repeat it with the next licensee." },
-  { source: { assignment: "assignment-14", section: "2.4" },
-    prompt: "Does the history of exclusion in housing justify steering a buyer toward a particular area to correct it?",
+  /* Assignment 14 section 2.3 — the social impacts of the biases, which SB 1495 names as its own element and which the traceability generator found taught and unexamined. */
+  { source: { assignment: "assignment-14", section: "2.3" },
+    prompt: "Why does equal treatment beginning today not by itself produce equal outcomes in housing?",
     choices: [
-      "No — steering on a protected basis is prohibited regardless of intent, including a corrective intent.",
-      "Yes, where the licensee documents the corrective purpose.",
-      "Yes, where the buyer consents in writing.",
-      "Yes, where the area was historically excluded from lending."
+      "Housing is the principal vehicle of wealth accumulation, that wealth is inherited and becomes the next generation's down payment, so exclusion compounds after the excluding practice has stopped.",
+      "Because the statutes prohibiting the earlier practices were not made retroactive, so the conduct remains lawful until a court says otherwise.",
+      "It does produce equal outcomes, provided every licensee in the market applies uniform practices at the same time.",
+      "Because a licensee is obliged to correct the imbalance by directing buyers toward areas from which their group was historically excluded."
     ],
     correctChoice: 0,
-    rationale: "History explains why the present distribution exists; it does not license unequal treatment in either direction. What it licenses is skepticism about processes producing unequal results." },
-  /* Assignment 15 — Integrated California residential transaction */
+    rationale: "The mechanism is compounding, not continuation: a family excluded from ownership for a generation arrives at today's market without the asset today's market assumes. The last choice describes steering, which is prohibited regardless of a corrective intent, and it is the answer a well-meaning licensee is most likely to reach for." },
   { source: { assignment: "assignment-15", section: "1.1" },
     prompt: "What form does almost every serious defect in a transaction file take?",
     choices: [
@@ -1861,16 +1861,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "This is why the professional answer is structure rather than sincerity: the mechanisms operate whether or not anyone is thinking about them." },
-  { source: { assignment: "assignment-14", section: "1.3" },
-    prompt: "Where does implicit bias most often operate in a licensee's day?",
+  /* Assignment 14 section 2.6 — the federal statutory hook for steering. */
+  { source: { assignment: "assignment-14", section: "2.6" },
+    prompt: "A buyer asks to see two particular homes. The licensee never refuses; he simply shows three others and does not raise the two again. Which words of the federal Fair Housing Act reach that conduct?",
     choices: [
-      "In the distribution of information, effort, follow-up, and attention — decisions made quickly and never recorded as decisions.",
-      "In the decision to accept or reject a written offer.",
-      "In the preparation of the closing statement.",
-      "In the selection of the escrow holder."
+      "\"Otherwise make unavailable or deny\" in \u00a7 3604(a) \u2014 nothing in the subdivision requires a refusal, and the homes the buyer asked about were made unavailable to him as effectively as by a locked door.",
+      "None of them. \u00a7 3604 reaches refusals to sell or rent, and no refusal occurred.",
+      "The advertising prohibition in \u00a7 3604(c), because the licensee's description of the alternatives was a statement about the properties.",
+      "The reasonable accommodation provisions of \u00a7 3604(f), which govern how a licensee must respond to a buyer's stated preferences."
     ],
     correctChoice: 0,
-    rationale: "Only a small share of what produces unequal service is a refusal. The rest is distribution, which is why 'I never refused anyone' answers a question nobody asked." },
+    rationale: "The phrase is what carries steering into the statute. The conduct is not a refusal and does not need to be: the buyer received no information about the properties he asked to see and cannot evaluate them. \u00a7 3604(c) governs advertising and \u00a7 3604(f) governs disability, neither of which is what happened here." },
   { source: { assignment: "assignment-14", section: "3.2" },
     prompt: "Which is an interruption practice rather than an intention?",
     choices: [
@@ -1881,17 +1882,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "A practice happens whether or not the licensee is thinking about it. Commitment, review, and alertness all depend on attention on the day it is needed." },
-  { source: { assignment: "assignment-14", section: "3.4" },
-    prompt: "A client makes a remark about the composition of a neighborhood during a showing. What is the professional response?",
+  /* Assignment 14 section 2.8 — where fair housing reaches the licence itself, B&P § 10177(l). */
+  { source: { assignment: "assignment-14", section: "2.8" },
+    prompt: "A licensee canvasses a neighborhood suggesting owners list now, because \u2014 he sincerely believes \u2014 values will fall and the schools will decline as the composition of the neighborhood changes. No one lists. What is his exposure under Business and Professions Code \u00a7 10177(l)?",
     choices: [
-      "Say plainly that you do not characterize neighborhoods and point to the public sources, in the moment rather than afterward.",
-      "Change the subject to avoid an uncomfortable exchange.",
-      "Agree noncommittally and move on, since the client is not the licensee.",
-      "Report the client to the broker without saying anything to him."
+      "The solicitation is itself the conduct the subdivision names; no sale need result, no consumer need be harmed, and his sincerity is irrelevant.",
+      "None, because no listing was obtained and the section requires a completed transaction.",
+      "None, because he genuinely believed what he said and the section requires knowledge that the representation was false.",
+      "Exposure arises only if a consumer files a complaint with the Department describing actual harm."
     ],
     correctChoice: 0,
-    rationale: "The scripts exist because the gap between knowing what to say and having said it is the entire distance. Silence reads as agreement." },
-  /* Assignment 14 topic 5 — the SB 1495 participatory practicum, licensee role. Added by the coverage gate. */
+    rationale: "\u00a7 10177(l)(1) reaches a licensee who \"solicited or induced\" a sale or listing on the grounds of loss of value, increase in crime, or decline in the quality of the schools due to the entry of persons having a characteristic listed in Government Code \u00a7 12955. The verb is the offence. Belief, outcome, and complaint are all beside the point, which is why it is a ground on which the Commissioner may discipline a licence." },
   { source: { assignment: "assignment-14", section: "5.2" },
     prompt: "During a showing a client asks, sincerely and in person, what the neighbors are like and which schools would be right for their children, adding that they trust the licensee's judgment more than a website. What does the licensee position in the practicum require of the answer?",
     choices: [

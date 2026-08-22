@@ -21,6 +21,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { BUSINESS_DAY_CONVENTION } from "../config/california/business-day-calendar.mjs";
 import { COMPLIMENTARY_DISCLOSURE } from "../config/course-catalog.mjs";
+import { SB1495 } from "../config/california/regulatory-manifest.mjs";
 import {
   COURSES, COURSE_DESIGN, DRE, ENROLLMENT_RULES, FEES, FINAL_EXAM, INSTRUCTOR, PRICING, PROVIDER, STATUS_LINE
 } from "../config/california/submission-facts.mjs";
@@ -59,7 +60,11 @@ Every one of the ${COURSE_DESIGN.lessonAssignments} lesson assignments carries a
 
 Assignment 14 is a dedicated **implicit bias and fair housing participatory practicum**.
 
-The component is neither optional nor skippable. The platform's method of control refuses to open the next segment until the scenario response has been submitted, and each submission is recorded against the student, scored against the instructor rubric, and remediated until responsive. See continuation sheet 23B.`
+**The fair housing interactive participatory component is Assignment 14 sections 4 and 5.** SB 1495 requires the applicant to "role play as both a consumer and real estate professional". The student writes a response from the consumer's position and a response from the real estate professional's position; each is stored as written with its date; the licensee-role response is revised after structured feedback and the revision is stored alongside the original rather than replacing it.
+
+**Neither role is skippable.** The practicum assignment cannot be recorded as complete with either response missing — enforced by a database trigger rather than by the study path alone — and final examination eligibility reports the interactive requirement from the submissions themselves, naming the outstanding role when one is missing. The two components are delivered as part of this course and cannot be taken apart from it.
+
+**See continuation sheet 23B — \`07-sb1495-traceability.md\`**, which traces every element of the requirement to the lesson section that teaches it, the page of the printed volume, and the examination items that test it.`
     : `**23A. ☐ YES  ☒ NO** — not applicable. This is not a Real Estate Practice course.
 
 **23B.** Left blank.`;
@@ -171,8 +176,8 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | PHONE NUMBER | **${PROVIDER.phone}** |
 | EMAIL ADDRESS | **${PROVIDER.publicEmail}** |
 | ADDRESS (STREET, CITY, STATE, ZIP CODE) | **${addr(PROVIDER.mailingAddress)}** |
-| COURSE NAME | **${course.title}** |
-| BRIEF COURSE DESCRIPTION | ${course.description} |
+| COURSE NAME | **${course.title}**${course.interactiveParticipatory ? ` — **${SB1495.statement}**` : ""} |
+| BRIEF COURSE DESCRIPTION | ${course.description}${course.interactiveParticipatory ? ` **${SB1495.statement}:** the course contains a component on implicit bias and a component on federal and state fair housing law, the latter including an interactive participatory component in which the student role plays as both a consumer and a real estate professional.` : ""} |
 | METHOD OF COURSE PRESENTATION | **${COURSE_DESIGN.methodOfPresentation}** |
 | COURSE HOURS | **${COURSE_DESIGN.hours}** |
 | METHOD OF FINAL EXAM PRESENTATION | **${COURSE_DESIGN.re306_15B.join(" and ")}** — the examination is delivered over the internet and supervised in person by a school-designated proctor |
@@ -263,6 +268,7 @@ function re311(course) {
 | STUDENT MAILING ADDRESS (STREET) | Enrollment record | *per student* |
 | CITY / STATE / ZIP CODE | Enrollment record | *per student* |
 | NAME OF OFFERING AS APPROVED BY THE DEPARTMENT | Certification record | **${course.title}** *(as approved — exact wording follows DRE's approval)* |
+${course.interactiveParticipatory ? `| **SB 1495 statement** | Completion record | **${SB1495.statement}** — printed on the certificate. SB 1495 requires an applicant to show evidence of having completed a compliant practice course, and a certificate that recorded only "completed" would leave the school to reconstruct later, from memory, whether both roles were taken. The completion record carries the dated evidence for each role. |` : ""}
 | COURSE TYPE | Fixed for this offering | ☐ Live course ☐ Correspondence course **☒ ${COURSE_DESIGN.re311CourseType}** ☐ Correspondence/mobile device app |
 | **DRE APPROVAL NUMBER** | Certification record | **BLANK until DRE assigns it.** See the hard gate below. |
 | NUMBER OF CREDIT HOURS | Course design | **${COURSE_DESIGN.hours}** |

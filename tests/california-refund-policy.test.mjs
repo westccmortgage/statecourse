@@ -451,7 +451,10 @@ test("every Department form is recorded with its revision and its content hash",
   for (const form of manifest.DRE_FORMS) {
     const full = path.join(root, form.file);
     assert.ok(fs.existsSync(full), `${form.id}: ${form.file} is missing`);
-    assert.match(form.revision, /Rev\.? ?\d{1,2}\/\d{2,4}/, `${form.id} has no printed revision`);
+    /* "Rev. 1/26" on the forms, "New 05/2023" on a document the Department has not yet revised.
+       Both are what is printed on the face; requiring the first would have meant recording a
+       revision the FAQ does not carry. */
+    assert.match(form.revision, /(Rev\.? ?|New )\d{1,2}\/\d{2,4}/, `${form.id} has no printed revision`);
     /* The hash is what makes a silent re-issue detectable. A revision string alone would not:
        the Department can re-post a form without changing what is printed on its face. */
     const digest = crypto.createHash("sha256").update(fs.readFileSync(full)).digest("hex").slice(0, 16);

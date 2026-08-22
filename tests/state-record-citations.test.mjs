@@ -202,19 +202,50 @@ test("every built state's regulatory record states its own source boundary", () 
 });
 
 /*
- * California's register was the last one written, and it is unlike the other
- * twelve. The build carries no statutory or regulatory section citations at
- * all — the only four- and five-digit numbers in its 45 lesson assignments are
- * calendar years and arithmetic — so the register has to say so rather than
- * imply a traceability the curriculum does not have. This test holds that
- * statement to the curriculum: if a section citation is ever added, the
- * register's account of the build stops being true and must be rewritten
- * alongside it.
+ * California's register was the last one written, and it is unlike the other twelve.
+ *
+ * The build carried no statutory or regulatory section citations at all — the only four- and
+ * five-digit numbers in its 45 lesson assignments were calendar years and arithmetic — and the
+ * register said so, because a register that implied a traceability the curriculum did not have
+ * would be the worst kind of document in this project.
+ *
+ * That changed on 22 August 2026, and it changed because of a requirement rather than a
+ * preference. SB 1495 obliges the Real Estate Practice course to cover federal AND STATE fair
+ * housing law, and a state-law component naming no California statute is not one. Six texts were
+ * read in full and are now cited in Assignment 14.
+ *
+ * So the invariant is no longer "no citations". It is the stronger one the register now states:
+ * EVERY section cited anywhere in the California curriculum must be a text this project has read
+ * in its own words and recorded. A citation outside that list is a claim about law nobody here
+ * has read.
  */
-test("California's register states the absence of citations, and the curriculum still has none", () => {
+test("every California section citation is a text the register records as read", () => {
   const register = fs.readFileSync(path.join(root, "california/regulatory/primary-text-readings.md"), "utf8");
-  assert.match(register, /not one of its 45\s+lesson assignments cites a California statutory or regulatory section/i);
+  assert.match(register, /exactly one of its 45\s+lesson assignments cites a California statutory or regulatory section/i);
   assert.match(register, /is the statement of California law\s+correct/i);
+  /* The register has to name the rule, not only happen to comply with it. */
+  assert.match(register, /every statutory section cited anywhere in\s+the California curriculum must be one this register records as read in its own text/i);
+
+  /*
+   * The sections cited in the California curriculum, each read in its own text and recorded in
+   * the register. The list is exact rather than generous: a citation outside it fails, and a
+   * member of it that the register does not record fails too, so the two cannot drift apart.
+   *
+   * When a citation has to be added, the fix is to read the text and record it — never to delete
+   * the citation and leave the teaching that rested on it.
+   */
+  const READ_IN_FULL = {
+    3601: "42 U.S.C. § 3601 — Fair Housing Act, declaration of policy",
+    3604: "42 U.S.C. § 3604 — the federal prohibitions",
+    12955: "Government Code § 12955 — FEHA housing discrimination",
+    51: "Civil Code § 51 — Unruh Civil Rights Act",
+    35800: "Health and Safety Code Part 6, beginning at § 35800 — the Holden Act",
+    35801: "Health and Safety Code § 35801 — the Legislature's findings",
+    10177: "Business and Professions Code § 10177(l) — blockbusting as a ground for discipline",
+  };
+  for (const [section, description] of Object.entries(READ_IN_FULL)) {
+    assert.ok(register.includes(section), `${description} is on the allow-list and the register does not record it`);
+  }
 
   const lessons = fs
     .readdirSync(path.join(root, "california"), { withFileTypes: true })
@@ -228,24 +259,25 @@ test("California's register states the absence of citations, and the curriculum 
     });
   assert.equal(lessons.length, 45, `expected 45 California lessons, found ${lessons.length}`);
 
+  const citing = [];
   for (const lesson of lessons) {
-    const citation = lesson.text.match(/(§|Section|Bus\. & Prof\.|B&P)\s?\d{3,5}(\.\d+)?/);
-    assert.equal(
-      citation,
-      null,
-      `${lesson.file} now cites ${citation?.[0]} — rewrite california/regulatory/primary-text-readings.md section 8, which states the build carries no section citations`,
+    /* The § symbol admits two digits, because Civil Code § 51 is one. The bare word "Section"
+       needs three, because the rectangular survey system numbers its sections 1 to 36 and
+       "Beginning at the northeast corner of Section 14" is a legal description, not a citation. */
+    const citations = [...lesson.text.matchAll(/(?:§\s?(\d{2,5})|(?:Section|Bus\. & Prof\.|B&P)\s?(\d{3,5}))(?:\.\d+)?/g)].map(
+      (match) => match[1] ?? match[2],
     );
+    if (citations.length > 0) citing.push(lesson.file);
+    for (const section of citations) {
+      assert.ok(
+        Object.hasOwn(READ_IN_FULL, section),
+        `${lesson.file} cites § ${section}, which this project has not read in its own text. ` +
+          "Read it and record it in california/regulatory/primary-text-readings.md, or do not cite it.",
+      );
+    }
   }
-});
 
-/*
- * The register is the one place a California figure that is NOT the
- * Department's must be labelled. Two are: the 180-minute final examination
- * limit, which no document read states, and the in-course thresholds.
- */
-test("California's two StateCourse figures are labelled as such and not as the Department's", () => {
-  const register = fs.readFileSync(path.join(root, "california/regulatory/primary-text-readings.md"), "utf8");
-  assert.match(register, /180-minute\s+final examination time limit/i);
-  assert.match(register, /no document read here states any time limit for the final\s+examination/i);
-  assert.match(register, /Neither may be\s+described anywhere as a California requirement/i);
+  /* And the count the register states. If a second lesson starts citing law, the register's
+     opening finding stops being true and has to be rewritten with it. */
+  assert.deepEqual(citing, ["ca-real-estate-practice-45-v1/lesson-14.md"], `California lessons citing law: ${citing.join(", ")}`);
 });

@@ -325,6 +325,45 @@ export const AUTHORITIES = Object.freeze([
       },
     ],
   }),
+  source({
+    id: "faq-sb1495",
+    citation: "DRE, Frequently Asked Questions Associated with New SB 1495 Education Requirements for Exam Applicants, New 05/2023",
+    title: "FAQ — SB 1495 education requirements for exam applicants",
+    publisher: "California Department of Real Estate",
+    revision: "New 05/2023",
+    effectiveDate: "2024-01-01",
+    obtainedVia: "california/dre-sources/FAQ_SB1495.pdf",
+    url: "https://www.dre.ca.gov/files/pdf/faqs/FAQ_SB1495.pdf",
+    localCopy: "california/dre-sources/FAQ_SB1495.pdf",
+    contentHash: "ba8de6871ed4ec51",
+    verifiedAsOf: "2026-08-22",
+    materialClaims: [
+      {
+        id: "sb1495-implicit-bias",
+        claim:
+          "The real estate practice course must include a component on implicit bias, including education regarding the impact of implicit bias, explicit bias, and systemic bias on consumers, the historical and social impacts of those biases, and actionable steps students can take to recognize and address their own implicit biases.",
+        reliedOnBy: ["SB1495.implicitBias"],
+      },
+      {
+        id: "sb1495-fair-housing",
+        claim:
+          "The course must include a component on federal and state fair housing laws as those laws apply to the practice of real estate, and that component shall include an interactive participatory component during which the applicant shall role play as both a consumer and real estate professional.",
+        reliedOnBy: ["SB1495.fairHousing", "SB1495.roles"],
+      },
+      {
+        id: "sb1495-not-severable",
+        claim:
+          "The fair housing and implicit bias components cannot be completed independently of the real estate practice course itself; a student who previously took a non-compliant practice course may not complete the two components alone.",
+        reliedOnBy: ["SB1495.severable"],
+      },
+      {
+        id: "sb1495-evidence",
+        claim:
+          "An applicant must have completed, and show evidence of completing, a practice course compliant with these requirements, irrespective of any practice course completed before January 1, 2024.",
+        reliedOnBy: ["SB1495.completionEvidence"],
+      },
+    ],
+  }),
 ]);
 
 /*
@@ -353,6 +392,7 @@ export const DRE_FORMS = Object.freeze([
   form({ id: "RE318A", title: "Course & Instructor Evaluation", revision: "Rev. 1/26", file: "california/dre-sources/re318a.pdf", url: "https://www.dre.ca.gov/files/pdf/forms/re318a.pdf", sha256Prefix: "8ae4b7a3c77cf91b" }),
   form({ id: "RE206E", title: "Fee schedule", revision: "Rev. 7/26", file: "california/dre-sources/RE206E.pdf", url: "https://www.dre.ca.gov/files/pdf/forms/re206e.pdf", sha256Prefix: "b32869686f1adc93" }),
   form({ id: "RE909", title: "Credit Card Payment", revision: "Rev. 5/25", file: "california/dre-sources/re909.pdf", url: "https://www.dre.ca.gov/files/pdf/forms/re909.pdf", sha256Prefix: "ba4625050902e497" }),
+  form({ id: "FAQ-SB1495", title: "FAQ — SB 1495 education requirements", revision: "New 05/2023", file: "california/dre-sources/FAQ_SB1495.pdf", url: "https://www.dre.ca.gov/files/pdf/faqs/FAQ_SB1495.pdf", sha256Prefix: "ba8de6871ed4ec51", verifiedAsOf: "2026-08-22" }),
   form({ id: "HANDBOOK", title: "Course Provider Handbook", revision: "Rev. 01/2026", file: "california/dre-sources/Course_Provider_Handbook.pdf", url: "https://www.dre.ca.gov/files/pdf/faqs/Course%20Provider%20Handbook.pdf", sha256Prefix: "a35e47fef70028ff" }),
 ]);
 
@@ -473,7 +513,64 @@ export const FORBIDDEN_CLAIMS = Object.freeze([
   Object.freeze({ pattern: /\bTBD\b|\bTODO\b|\bXXX\b|\bLorem ipsum\b|\bPLACEHOLDER\b/i, why: "a placeholder survives in a filing document" }),
 ]);
 
-export const MANIFEST_VERSION = "CA-MANIFEST-2026-08-21-v1";
+/*
+ * ══════════════════════════════════════════════════════════════════════════════════════════
+ *  SB 1495 — the requirement, broken into the elements the Department actually states
+ * ══════════════════════════════════════════════════════════════════════════════════════════
+ *
+ * "Compliant with SB 1495" is a sentence anybody can type. What makes it true is four pieces
+ * of implicit bias content, two pieces of fair housing content, and a participatory component
+ * in which the student takes BOTH roles — and, the part that is a platform property rather
+ * than a curriculum property, a course that a student cannot finish having taken only one.
+ *
+ * Each element below is one thing the FAQ says, phrased so that it can be looked for. The
+ * traceability matrix at california/submission/02_Real_Estate_Practice/07-sb1495-traceability.md
+ * is generated from this list against the lesson text, the assessment banks and the final
+ * examination banks; nothing in it is typed by hand, so it cannot claim coverage that the
+ * course does not have.
+ *
+ * `severable: false` is Q7. A student who took a non-compliant practice course elsewhere may
+ * not come here and complete the two components alone, and nothing in this platform may offer
+ * them separately from the course.
+ */
+export const SB1495 = Object.freeze({
+  statement: "Compliant with SB 1495",
+  authorityId: "faq-sb1495",
+  effectiveDate: "2024-01-01",
+  courseId: "ca-real-estate-practice-45",
+  contentFolder: "ca-real-estate-practice-45-v1",
+  packageDir: "02_Real_Estate_Practice",
+  assignmentId: "assignment-14",
+  severable: false,
+  severableAuthority: "sb1495-not-severable",
+  implicitBias: Object.freeze([
+    Object.freeze({ id: "impact-on-consumers", requirement: "the impact of implicit bias, explicit bias, and systemic bias on consumers", find: ["implicit bias", "explicit bias", "systemic bias"] }),
+    Object.freeze({ id: "historical-impacts", requirement: "the historical impacts of those biases", find: ["redlining", "restrictive covenant"] }),
+    Object.freeze({ id: "social-impacts", requirement: "the social impacts of those biases", find: ["segregated", "housing wealth"] }),
+    Object.freeze({ id: "actionable-steps", requirement: "actionable steps students can take to recognize and address their own implicit biases", find: ["interruption practices", "recognize"] }),
+  ]),
+  fairHousing: Object.freeze([
+    Object.freeze({ id: "federal-law", requirement: "federal fair housing law as it applies to the practice of real estate", find: ["Fair Housing Act", "3604"] }),
+    Object.freeze({ id: "state-law", requirement: "state fair housing law as it applies to the practice of real estate", find: ["Unruh", "Fair Employment and Housing Act", "12955"] }),
+  ]),
+  /* The two roles, and the words the platform, the database and the documents all use for
+     them. A role named one way in a table and another way in a document is a role a reviewer
+     cannot follow from one to the other. */
+  roles: Object.freeze([
+    Object.freeze({ id: "consumer", label: "consumer", topic: "4", requirement: "the applicant shall role play as a consumer" }),
+    Object.freeze({ id: "licensee", label: "real estate professional", topic: "5", requirement: "the applicant shall role play as a real estate professional" }),
+  ]),
+  /* The properties that make the participatory component real rather than described. Each is
+     asserted by a test against the migration and the study path, not by a document. */
+  enforcement: Object.freeze([
+    "a response is persisted for each role, with the text the student wrote",
+    "assignment-14 cannot reach completed with either role missing",
+    "final examination eligibility reports the interactive requirement from the submissions, not from the assignment count",
+    "the completion record carries the evidence that both roles were taken",
+  ]),
+});
+
+export const MANIFEST_VERSION = "CA-MANIFEST-2026-08-22-v1";
 
 export function authority(id) {
   return AUTHORITIES.find((entry) => entry.id === id) ?? null;
@@ -535,6 +632,7 @@ export const FIRST_FILING = Object.freeze({
 const deliverable = (record) =>
   Object.freeze({
     handbookItem: null,
+    nextAction: null,
     scope: "per-course",
     mandatory: true,
     note: null,
@@ -545,6 +643,7 @@ const deliverable = (record) =>
 export const REQUIRED_DELIVERABLES = Object.freeze([
   deliverable({
     id: "re306",
+    nextAction: "Transcribe the answer sheet onto the official RE 306 (Rev. 1/26) and attach the continuation sheets it references.",
     label: "RE 306 course approval application",
     handbookItem: "Completed Pre-License Course Approval Application (RE 306).",
     section: "§2",
@@ -553,6 +652,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "fee",
+    nextAction: "Confirm the current fee on DRE's website on the day of filing, then prepare the cheque or RE 909.",
     label: "course approval fee instructions",
     handbookItem: "Appropriate fee(s) — check DRE's website prior to submitting.",
     section: "§11",
@@ -561,6 +661,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "entity-documents",
+    nextAction: "Order a current Certificate of Status from the California Secretary of State and insert it behind the Articles of Organization.",
     label: "Secretary of State entity documents",
     handbookItem: "Corporation Documents, if applicable, as filed with the Secretary of State.",
     section: "§9",
@@ -574,6 +675,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "fbns",
+    nextAction: "None. The determination stands: the public and legal name is the same, so no fictitious business name statement is filed.",
     label: "fictitious business name position",
     handbookItem: "Fictitious Business Name Statement (FBNS), if applicable, as filed with the County Clerk's office.",
     section: "§10",
@@ -583,6 +685,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "re304",
+    nextAction: "None. RE 304 is required only of an out-of-state school; StateCourse LLC is a California domestic LLC.",
     label: "RE 304 consent to service of process",
     handbookItem: "Consent to Service of Process (RE 304) if the school is out of state.",
     section: "§9",
@@ -592,6 +695,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "bppe-position",
+    nextAction: "None. The exemption relied on is Education Code § 94874(f) and item 8 states it.",
     label: "BPPE exemption position",
     handbookItem: null,
     section: "§2",
@@ -604,6 +708,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "instructional-materials",
+    nextAction: "Print and bind one copy of the course volume for the course being filed.",
     label: "complete student-viewable instructional volume",
     handbookItem: "Copies of all student instructional materials and copyright authorizations as necessary.",
     section: "§5",
@@ -615,6 +720,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "textbook-certification",
+    nextAction: "Send the dossier and the draft letter to a qualified college instructor in the field of study, and obtain a signed certification on official letterhead.",
     label: "college or university professor equivalence certification",
     handbookItem: "Textbook Certification letter from a college/university professor.",
     section: "§8",
@@ -622,19 +728,39 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
     evidence: ["california/dre-sources/instructor-equivalence/{slug}-signed-certification.pdf"],
     note: "A drafted request letter is not a certification. The filing is blocked until a qualified college instructor in the field of study signs one on official letterhead.",
   }),
+  /*
+   * The Handbook asks for "Pre-License Instructor Certification (RE 336) WITH supporting
+   * documentation", and those are two deliverables that fail in different ways. The form can be
+   * generated correctly from the Department's own PDF and still be filed behind qualification
+   * evidence nobody assembled. Kept as one entry, a complete form would have closed the
+   * requirement while the evidence behind it was outstanding.
+   */
   deliverable({
     id: "re336",
-    label: "RE 336 instructor certification with supporting documentation",
+    nextAction: "Regenerate from the Department's PDF if re336-data.json changes; otherwise none until signing.",
+    label: "RE 336 instructor certification form, one per course",
     handbookItem: "Pre-License Instructor Certification (RE 336) with supporting documentation.",
     section: "§3",
     owner: "build",
+    evidence: ["california/dre-sources/generated/RE336-{slug}.pdf"],
+  }),
+  deliverable({
+    id: "instructor-qualifications",
+    nextAction: "None. The qualification route and its substantiation are stated; approval is the Commissioner's to give.",
+    label: "instructor qualification evidence supporting RE 336",
+    handbookItem: null,
+    section: "§7A",
+    owner: "build",
+    scope: "once",
     evidence: [
-      "california/dre-sources/generated/RE336-{slug}.pdf",
-      "california/submission/00_administrative/A7-instructor-package.md",
+      { path: "california/submission/00_administrative/A7-instructor-package.md", mustContain: ["3000(a)(8)", "01385024"] },
+      "california/dre-sources/instructor-qualification-package-draft.pdf",
     ],
+    note: "Regulation 3000(a)(8) route relied on is teaching qualifications evidenced by education and experience in combination. No community college credential is claimed. Instructor approval is the Commissioner's to give and has not been given.",
   }),
   deliverable({
     id: "re313",
+    nextAction: "Type the values into the official RE 313 Word template and print it. Do not rebuild the form.",
     label: "RE 313 General Information Page",
     handbookItem: "General Information Page (RE 313 serves as a template).",
     section: "§1",
@@ -643,6 +769,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "timed-outline",
+    nextAction: "None. Regenerate if any lesson's timed sequence changes.",
     label: "timed course outline",
     handbookItem: "Timed Course Outline.",
     section: "§5",
@@ -651,6 +778,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "exam-instructions-student",
+    nextAction: "None. Regenerate if the examination configuration changes.",
     label: "student final examination instructions",
     handbookItem: "Student Final Exam Instructions.",
     section: "§6",
@@ -659,6 +787,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "exam-instructions-proctor",
+    nextAction: "None. Regenerate if the examination configuration changes.",
     label: "examination proctor instructions",
     handbookItem: "Exam Proctor/monitor Instructions.",
     section: "§6",
@@ -667,6 +796,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "final-exam-student",
+    nextAction: "None. Regenerate from the banks if any item changes.",
     label: "student version of the final examination, forms A and B",
     handbookItem: "Student Version of the Final Exam.",
     section: "§6",
@@ -678,6 +808,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "final-exam-instructor",
+    nextAction: "None. Regenerate from the banks if any item changes.",
     label: "instructor version and answer key, forms A and B",
     handbookItem: "Instructor Version of the Final Exam along with corresponding answer key.",
     section: "§6",
@@ -687,11 +818,17 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
       "california/{folder}/submission/final-exam-form-b-answer-key.md",
     ],
   }),
+  /*
+   * Reviewer access is not instructor qualification. One is how the Department reaches an
+   * internet course to inspect it; the other is who is qualified to teach it. They were filed
+   * under one section number and a reader could reasonably have taken either for the other.
+   */
   deliverable({
-    id: "credentials",
-    label: "working student and regulator log-ins",
+    id: "reviewer-access",
+    nextAction: "Write scripts/provision-california-review-accounts.mjs, provision one student and one regulator account against the live database, verify both reach the course and the examination, and write the credentials to a private filing sheet outside the repository.",
+    label: "working student and regulator log-ins for the online course",
     handbookItem: "Student AND Regulator log-in and password for courses/final exams offered online/mobile app.",
-    section: "§7",
+    section: "§7B",
     owner: "build",
     evidence: [
       "california/submission/{packet}/14-login-instructions.md",
@@ -701,6 +838,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "re311",
+    nextAction: "None. The RE 311 sample is submitted unchanged as the specimen.",
     label: "RE 311 course completion certificate specimen",
     handbookItem: "Pre-License Course Completion Certificate (RE 311 serves as a template).",
     section: "§1",
@@ -710,6 +848,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   /* Added by the work order rather than by the Handbook's list. */
   deliverable({
     id: "sb1495-traceability",
+    nextAction: "None. Regenerate if the practicum, the banks or the printed volume change.",
     label: "SB 1495 implicit bias and fair housing role-play traceability",
     handbookItem: null,
     section: "§4",
@@ -723,6 +862,7 @@ export const REQUIRED_DELIVERABLES = Object.freeze([
   }),
   deliverable({
     id: "signatures",
+    nextAction: "Produce the per-packet signature sheet listing every signature line, who signs it and in what order, then obtain the signatures on paper at filing.",
     label: "original signatures and dates on RE 306 and RE 336",
     handbookItem: null,
     section: "§11",

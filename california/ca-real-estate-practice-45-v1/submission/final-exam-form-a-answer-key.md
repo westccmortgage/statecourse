@@ -918,16 +918,16 @@ D. Effort addresses explicit bias only, which is rare.
 >
 > **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 3.1
 
-### 81. At which stage of a transaction is unequal treatment least visible and therefore most dangerous?
+### 81. A property manager tells an applicant, "we don't take vouchers." The applicant is otherwise qualified. Under California law, what is the problem?
 
-A. The offer stage, where terms are documented.
-B. The listing appointment, where the agreement is signed.
-C. The closing, where every figure is recorded.
-**D. The first inquiry, where different callers receive different amounts of information, encouragement, and follow-up.**
+A. There is no problem, because source of income is not among the federally protected characteristics and federal law governs housing discrimination.
+B. The problem is one of documentation only: the refusal must be given in writing and state the reason.
+C. There is no problem, provided the manager applies the same rule to every applicant without exception.
+**D. Source of income is a characteristic protected by Government Code § 12955, and where there is a government rent subsidy the financial standard must be based on the portion of rent the tenant actually pays.**
 
-> **Correct answer: D.** Differential information at the inquiry stage leaves almost no trace, which is why an inquiry log is the control. The later stages generate documents by default.
+> **Correct answer: D.** This is the case for knowing the state list and not only the federal one. Source of income has no federal counterpart, and § 12955(n) and (o) go further — the income standard must account for the aggregate income of persons proposing to reside together, and where a subsidy exists it must be assessed against the tenant's own portion of the rent. Applying an unlawful rule uniformly does not cure it.
 >
-> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 1.5
+> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 2.7
 
 ### 82. A buyer asks to see two specific homes on Alder Street. The licensee, friendly and evidently trying to help throughout, shows three homes in a different area instead and remarks that the schools there are "a better fit for a family like yours." Taking the consumer's position in this scenario is designed to establish what?
 
@@ -951,16 +951,16 @@ D. Schedule around those buyers without stating a reason.
 >
 > **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 6.4
 
-### 84. Does the history of exclusion in housing justify steering a buyer toward a particular area to correct it?
+### 84. Why does equal treatment beginning today not by itself produce equal outcomes in housing?
 
-A. Yes, where the buyer consents in writing.
-B. Yes, where the licensee documents the corrective purpose.
-**C. No — steering on a protected basis is prohibited regardless of intent, including a corrective intent.**
-D. Yes, where the area was historically excluded from lending.
+A. It does produce equal outcomes, provided every licensee in the market applies uniform practices at the same time.
+B. Because the statutes prohibiting the earlier practices were not made retroactive, so the conduct remains lawful until a court says otherwise.
+**C. Housing is the principal vehicle of wealth accumulation, that wealth is inherited and becomes the next generation's down payment, so exclusion compounds after the excluding practice has stopped.**
+D. Because a licensee is obliged to correct the imbalance by directing buyers toward areas from which their group was historically excluded.
 
-> **Correct answer: C.** History explains why the present distribution exists; it does not license unequal treatment in either direction. What it licenses is skepticism about processes producing unequal results.
+> **Correct answer: C.** The mechanism is compounding, not continuation: a family excluded from ownership for a generation arrives at today's market without the asset today's market assumes. The last choice describes steering, which is prohibited regardless of a corrective intent, and it is the answer a well-meaning licensee is most likely to reach for.
 >
-> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 2.4
+> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 2.3
 
 ### 85. What form does almost every serious defect in a transaction file take?
 

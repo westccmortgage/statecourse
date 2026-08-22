@@ -573,12 +573,12 @@ B. Structures — inherited networks, lead sources, referral composition, encode
 C. Because individual bias is always conscious and therefore correctable.
 D. Because systemic bias affects only institutions that make lending decisions.
 
-**81.** Where does implicit bias most often operate in a licensee's day?
+**81.** A buyer asks to see two particular homes. The licensee never refuses; he simply shows three others and does not raise the two again. Which words of the federal Fair Housing Act reach that conduct?
 
-A. In the distribution of information, effort, follow-up, and attention — decisions made quickly and never recorded as decisions.
-B. In the selection of the escrow holder.
-C. In the preparation of the closing statement.
-D. In the decision to accept or reject a written offer.
+A. "Otherwise make unavailable or deny" in § 3604(a) — nothing in the subdivision requires a refusal, and the homes the buyer asked about were made unavailable to him as effectively as by a locked door.
+B. The reasonable accommodation provisions of § 3604(f), which govern how a licensee must respond to a buyer's stated preferences.
+C. The advertising prohibition in § 3604(c), because the licensee's description of the alternatives was a statement about the properties.
+D. None of them. § 3604 reaches refusals to sell or rent, and no refusal occurred.
 
 **82.** Which is an interruption practice rather than an intention?
 
@@ -587,12 +587,12 @@ B. Being alert to one's own assumptions during showings.
 C. Committing to treat every client equally.
 D. Using the same information script for every inquiry and logging every one.
 
-**83.** A client makes a remark about the composition of a neighborhood during a showing. What is the professional response?
+**83.** A licensee canvasses a neighborhood suggesting owners list now, because — he sincerely believes — values will fall and the schools will decline as the composition of the neighborhood changes. No one lists. What is his exposure under Business and Professions Code § 10177(l)?
 
-A. Say plainly that you do not characterize neighborhoods and point to the public sources, in the moment rather than afterward.
-B. Agree noncommittally and move on, since the client is not the licensee.
-C. Change the subject to avoid an uncomfortable exchange.
-D. Report the client to the broker without saying anything to him.
+A. The solicitation is itself the conduct the subdivision names; no sale need result, no consumer need be harmed, and his sincerity is irrelevant.
+B. None, because he genuinely believed what he said and the section requires knowledge that the representation was false.
+C. None, because no listing was obtained and the section requires a completed transaction.
+D. Exposure arises only if a consumer files a complaint with the Department describing actual harm.
 
 **84.** During a showing a client asks, sincerely and in person, what the neighbors are like and which schools would be right for their children, adding that they trust the licensee's judgment more than a website. What does the licensee position in the practicum require of the answer?
 

@@ -127,11 +127,56 @@ function renderAssessment(target,assessment,kind,complete,enabled,blockedMessage
     }catch(error){result.hidden=false;result.textContent="We could not record these answers. Please try again.";button.disabled=false;}
   });
 }
+/* The SB 1495 interactive participatory component.
+   DRE's FAQ requires the applicant to "role play as both a consumer and real estate
+   professional". The panel renders one box per role, shows which have been submitted, and
+   never renders a submitted response back into an editable box — the submission is evidence
+   of what the student wrote at the time, not a draft. */
+function renderParticipatory(){
+  const panel=$("#participatorySection"),data=page.data.participatory;
+  if(!panel)return;
+  if(!data||page.data.selectedAssignment.id!==data.assignmentId){panel.hidden=true;return;}
+  panel.hidden=false;
+  const review=page.data.mode!=="student";
+  const selected=page.data.selectedAssignment;
+  const ready=selected.viewedSections.length>=selected.sectionCount;
+  $("#participatoryRoles").innerHTML=data.roles.map((role)=>{
+    if(role.submitted)return`<div class="participatory-role complete"><h4>Role: ${escapeHtml(role.label)}</h4><p class="participatory-state complete">✓ Submitted and recorded</p></div>`;
+    if(review)return`<div class="participatory-role"><h4>Role: ${escapeHtml(role.label)}</h4><p class="participatory-state">Review mode — reviewer submissions are not recorded against a student record.</p></div>`;
+    if(!ready)return`<div class="participatory-role"><h4>Role: ${escapeHtml(role.label)}</h4><p class="participatory-state pending">Read the lesson, including section ${escapeHtml(role.section)}, to unlock this submission.</p></div>`;
+    return`<div class="participatory-role"><h4>Role: ${escapeHtml(role.label)}</h4>
+      <p class="participatory-state pending">Section ${escapeHtml(role.section)} sets out the scenario and the questions to address.</p>
+      <textarea id="participatory-${escapeHtml(role.id)}" rows="10" aria-label="Your response in the ${escapeHtml(role.label)} role" placeholder="Write from inside this position, addressing each question in the lesson section."></textarea>
+      <p class="participatory-minimum">At least ${data.minimumCharacters} characters.</p>
+      <button type="button" data-role="${escapeHtml(role.id)}" class="participatory-submit">Submit ${escapeHtml(role.label)} response</button>
+      <p class="participatory-result" data-result="${escapeHtml(role.id)}" hidden></p></div>`;
+  }).join("");
+  for(const button of document.querySelectorAll(".participatory-submit")){
+    button.addEventListener("click",async()=>{
+      const role=button.dataset.role;
+      const box=$("#participatory-"+role),result=document.querySelector(`[data-result="${role}"]`);
+      const response=String(box.value||"").trim();
+      result.hidden=false;
+      if(response.length<data.minimumCharacters){result.textContent=`Please write at least ${data.minimumCharacters} characters. You have ${response.length}.`;return;}
+      button.disabled=true;result.textContent="Recording your response…";
+      try{
+        await post("sb1495_role_submitted",{participantRole:role,response});
+        await loadCourse(page.data.selectedAssignment.id);
+      }catch(error){
+        button.disabled=false;
+        result.textContent=error.message==="sb1495_response_too_short"
+          ?"That response is too short to be recorded."
+          :"We could not record your response. Please try again.";
+      }
+    });
+  }
+}
 function renderAssessments(){
   const selected=page.data.selectedAssignment,review=page.data.mode!=="student",contentReady=selected.viewedSections.length>=selected.sectionCount;
   const viewed=selected.viewedSections.length,sections=selected.sectionCount,remainingSections=Math.max(0,sections-viewed);
   const appliedBlocked=`Read the lesson to unlock this exercise. You have viewed ${viewed} of ${sections} sections — ${remainingSections} remaining.`;
   const engagementBlocked="Submit the applied exercise above to unlock the scored check.";
+  renderParticipatory();
   renderAssessment($("#appliedAssessment"),page.data.assessments.applied,"applied",selected.appliedComplete,review||contentReady,appliedBlocked);renderAssessment($("#engagementAssessment"),page.data.assessments.engagement,"engagement",selected.engagementComplete,review||selected.appliedComplete,engagementBlocked);
   const needs=selected.remediationStatus==="required"||selected.remediationStatus==="content_viewed";$("#remediationSection").hidden=!needs;$("#remediationViewed").disabled=selected.remediationStatus==="content_viewed";renderAssessment($("#remediationAssessment"),page.data.assessments.remediation,"remediation",selected.remediationStatus==="satisfied",review||selected.remediationStatus==="content_viewed","Review the remediation content above and mark it viewed to unlock the alternate questions.");
 }

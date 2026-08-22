@@ -918,16 +918,16 @@ D. Because systemic bias affects only institutions that make lending decisions.
 >
 > **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 1.4
 
-### 81. Where does implicit bias most often operate in a licensee's day?
+### 81. A buyer asks to see two particular homes. The licensee never refuses; he simply shows three others and does not raise the two again. Which words of the federal Fair Housing Act reach that conduct?
 
-**A. In the distribution of information, effort, follow-up, and attention — decisions made quickly and never recorded as decisions.**
-B. In the selection of the escrow holder.
-C. In the preparation of the closing statement.
-D. In the decision to accept or reject a written offer.
+**A. "Otherwise make unavailable or deny" in § 3604(a) — nothing in the subdivision requires a refusal, and the homes the buyer asked about were made unavailable to him as effectively as by a locked door.**
+B. The reasonable accommodation provisions of § 3604(f), which govern how a licensee must respond to a buyer's stated preferences.
+C. The advertising prohibition in § 3604(c), because the licensee's description of the alternatives was a statement about the properties.
+D. None of them. § 3604 reaches refusals to sell or rent, and no refusal occurred.
 
-> **Correct answer: A.** Only a small share of what produces unequal service is a refusal. The rest is distribution, which is why 'I never refused anyone' answers a question nobody asked.
+> **Correct answer: A.** The phrase is what carries steering into the statute. The conduct is not a refusal and does not need to be: the buyer received no information about the properties he asked to see and cannot evaluate them. § 3604(c) governs advertising and § 3604(f) governs disability, neither of which is what happened here.
 >
-> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 1.3
+> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 2.6
 
 ### 82. Which is an interruption practice rather than an intention?
 
@@ -940,16 +940,16 @@ C. Committing to treat every client equally.
 >
 > **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 3.2
 
-### 83. A client makes a remark about the composition of a neighborhood during a showing. What is the professional response?
+### 83. A licensee canvasses a neighborhood suggesting owners list now, because — he sincerely believes — values will fall and the schools will decline as the composition of the neighborhood changes. No one lists. What is his exposure under Business and Professions Code § 10177(l)?
 
-**A. Say plainly that you do not characterize neighborhoods and point to the public sources, in the moment rather than afterward.**
-B. Agree noncommittally and move on, since the client is not the licensee.
-C. Change the subject to avoid an uncomfortable exchange.
-D. Report the client to the broker without saying anything to him.
+**A. The solicitation is itself the conduct the subdivision names; no sale need result, no consumer need be harmed, and his sincerity is irrelevant.**
+B. None, because he genuinely believed what he said and the section requires knowledge that the representation was false.
+C. None, because no listing was obtained and the section requires a completed transaction.
+D. Exposure arises only if a consumer files a complaint with the Department describing actual harm.
 
-> **Correct answer: A.** The scripts exist because the gap between knowing what to say and having said it is the entire distance. Silence reads as agreement.
+> **Correct answer: A.** § 10177(l)(1) reaches a licensee who "solicited or induced" a sale or listing on the grounds of loss of value, increase in crime, or decline in the quality of the schools due to the entry of persons having a characteristic listed in Government Code § 12955. The verb is the offence. Belief, outcome, and complaint are all beside the point, which is why it is a ground on which the Commissioner may discipline a licence.
 >
-> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 3.4
+> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 2.8
 
 ### 84. During a showing a client asks, sincerely and in person, what the neighbors are like and which schools would be right for their children, adding that they trust the licensee's judgment more than a website. What does the licensee position in the practicum require of the answer?
 

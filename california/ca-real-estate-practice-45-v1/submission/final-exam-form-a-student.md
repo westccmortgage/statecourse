@@ -573,12 +573,12 @@ B. Effort is legally irrelevant because fair housing liability is strict.
 C. Structure is required by statute in place of training.
 D. Effort addresses explicit bias only, which is rare.
 
-**81.** At which stage of a transaction is unequal treatment least visible and therefore most dangerous?
+**81.** A property manager tells an applicant, "we don't take vouchers." The applicant is otherwise qualified. Under California law, what is the problem?
 
-A. The offer stage, where terms are documented.
-B. The listing appointment, where the agreement is signed.
-C. The closing, where every figure is recorded.
-D. The first inquiry, where different callers receive different amounts of information, encouragement, and follow-up.
+A. There is no problem, because source of income is not among the federally protected characteristics and federal law governs housing discrimination.
+B. The problem is one of documentation only: the refusal must be given in writing and state the reason.
+C. There is no problem, provided the manager applies the same rule to every applicant without exception.
+D. Source of income is a characteristic protected by Government Code § 12955, and where there is a government rent subsidy the financial standard must be based on the portion of rent the tenant actually pays.
 
 **82.** A buyer asks to see two specific homes on Alder Street. The licensee, friendly and evidently trying to help throughout, shows three homes in a different area instead and remarks that the schools there are "a better fit for a family like yours." Taking the consumer's position in this scenario is designed to establish what?
 
@@ -594,12 +594,12 @@ B. Withdraw quietly without explaining.
 C. Refuse, state why, escalate to the broker, and address whether the engagement can continue.
 D. Schedule around those buyers without stating a reason.
 
-**84.** Does the history of exclusion in housing justify steering a buyer toward a particular area to correct it?
+**84.** Why does equal treatment beginning today not by itself produce equal outcomes in housing?
 
-A. Yes, where the buyer consents in writing.
-B. Yes, where the licensee documents the corrective purpose.
-C. No — steering on a protected basis is prohibited regardless of intent, including a corrective intent.
-D. Yes, where the area was historically excluded from lending.
+A. It does produce equal outcomes, provided every licensee in the market applies uniform practices at the same time.
+B. Because the statutes prohibiting the earlier practices were not made retroactive, so the conduct remains lawful until a court says otherwise.
+C. Housing is the principal vehicle of wealth accumulation, that wealth is inherited and becomes the next generation's down payment, so exclusion compounds after the excluding practice has stopped.
+D. Because a licensee is obliged to correct the imbalance by directing buyers toward areas from which their group was historically excluded.
 
 **85.** What form does almost every serious defect in a transaction file take?
 

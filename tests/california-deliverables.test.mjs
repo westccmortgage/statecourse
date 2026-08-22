@@ -59,7 +59,10 @@ test("no deliverable is optional, and each names an owner and a work order secti
   for (const entry of REQUIRED_DELIVERABLES) {
     assert.equal(entry.mandatory, true, `${entry.id} is not mandatory`);
     assert.ok(["build", "human"].includes(entry.owner), `${entry.id} has owner "${entry.owner}"`);
-    assert.match(entry.section, /^§\d+[a-z]?$/, `${entry.id} does not name a work order section`);
+    /* §7A and §7B: instructor qualification and reviewer access were one section, and a reader
+       could reasonably have taken either for the other. A letter suffix is how two deliverables
+       stay attached to the same work order section without either closing the other. */
+    assert.match(entry.section, /^§\d+[A-Za-z]?$/, `${entry.id} does not name a work order section`);
     assert.ok(entry.evidence.length > 0, `${entry.id} names no evidence`);
   }
 });
@@ -213,7 +216,7 @@ test("outstanding work is grouped by section and split by owner", () => {
     assert.ok(group.reasons.length > 0, `${group.label} is outstanding for no stated reason`);
   }
   /* Sorted by section so a reader works down the list in the order the work order sets it. */
-  const sections = groups.map((group) => Number(group.section.replace("§", "")));
+  const sections = groups.map((group) => Number(group.section.replace(/[^\d]/g, "")));
   assert.deepEqual(sections, [...sections].sort((a, b) => a - b));
 });
 

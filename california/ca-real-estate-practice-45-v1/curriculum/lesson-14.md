@@ -12,6 +12,7 @@
 - Describe how historical housing policy produced patterns that persist without any present-day individual acting with bias.
 - Complete the consumer role-play and articulate, from that position, how the licensee's conduct affected your access.
 - Complete the licensee role-play, receive structured feedback, and revise your response.
+- State the federal and California fair housing law that applies to the practice of real estate, and identify the California characteristics that have no federal counterpart.
 - Identify the specific practices that constrain the discretion in which bias operates.
 - Produce a personal fair housing action plan composed of checkable practices rather than commitments.
 
@@ -19,10 +20,11 @@
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: bias types, history, and interruption strategies | 55 | Sections 1-3 viewed and notes saved |
+| Guided reading: bias types, history, and interruption strategies | 55 | Sections 1, 2.1-2.5 and 3 viewed and notes saved |
+| Guided reading: federal and state fair housing law in practice | 10 | Sections 2.6-2.8 viewed |
 | **Participatory practicum: consumer role** | 30 | Role-play response and reflection submitted |
 | **Participatory practicum: licensee role and revision** | 35 | Response, instructor feedback reviewed, revision submitted |
-| Guided reading: action plan design | 30 | Sections 6 viewed |
+| Guided reading: action plan design | 20 | Section 6 viewed |
 | Applied scenario and written action plan | 20 | Action plan submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
@@ -98,7 +100,7 @@ Section 1.3 identifies where bias operates. This section walks a single transact
 
 > **The exercise worth doing once:** take your last ten clients and, for each row above, ask whether you can show — from the file rather than from memory — that you did the same thing. **The rows where the answer is "I know I did" and not "here it is" are the rows to build a control for.**
 
-## 2. Historical and social impacts
+## 2. Historical and social impacts, and the law that answered them
 
 ### 2.1 Why history is in a practice course
 
@@ -156,6 +158,57 @@ Section 2.4 states what history does and does not imply for a licensee. This sec
 **And it means the structural controls in Section 3.1 are the actual work.** Widening a referral network, publishing criteria, using uniform information scripts, and measuring outcomes are corrections to mechanisms. **Each of them operates whether or not the licensee is thinking about bias on a given day**, which is the only property that matters, because the day he is not thinking about it is the day it operates.
 
 > **The professional framing that avoids both errors:** history explains why the present distribution exists. **It does not license unequal treatment in either direction.** What it licenses is skepticism about processes that produce unequal results while everyone involved is acting in good faith.
+
+### 2.6 The federal law the history produced
+
+The mechanisms in Section 2.2 are the reason the statute exists, and the statute is the reason a licensee's obligations are not a matter of personal judgment.
+
+**The federal Fair Housing Act, 42 U.S.C. § 3601 and following**, makes it unlawful, among other things:
+
+> **§ 3604(a)** — "To refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, color, religion, sex, familial status, or national origin."
+>
+> **§ 3604(b)** — "To discriminate against any person in the terms, conditions, or privileges of sale or rental of a dwelling, or in the provision of services or facilities in connection therewith," on the same grounds.
+>
+> **§ 3604(c)** — To make, print, or publish any notice, statement, or advertisement with respect to the sale or rental of a dwelling that indicates a preference, limitation, or discrimination on those grounds, or an intention to make one.
+
+**Two points a practising licensee should take from the wording rather than from a summary.**
+
+**"Otherwise make unavailable or deny" is the phrase that reaches steering.** Nothing in § 3604(a) requires a refusal. A buyer who is shown three houses instead of the two he asked about has been denied nothing he was told about, and the properties he asked about have been made unavailable to him as effectively as if the door had been locked. **That is the statutory hook for the conduct in the consumer role-play in Section 4**, and it is why the exercise turns on what the consumer received rather than on what the licensee meant.
+
+**Disability is protected by § 3604(f) rather than by subdivisions (a) to (c)**, and it carries its own obligations — reasonable accommodations and reasonable modifications — which is why the assistance animal material in Lesson 06 sits under a different rule from the advertising material next to it.
+
+### 2.7 California's own law, which is broader
+
+**SB 1495 requires this course to cover federal *and state* fair housing law.** They are not the same law and the difference is operational: **a licensee who knows only the federal list will act lawfully under federal law and unlawfully in California.**
+
+**The Fair Employment and Housing Act, Government Code § 12955**, makes it unlawful for the owner of any housing accommodation to discriminate against or harass any person because of:
+
+> "race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, **source of income**, disability, **veteran or military status**, or genetic information"
+
+The characteristics in bold have no federal counterpart. **Source of income is the one that most often catches a licensee out**: § 12955(n) and (o) add that a financial or income standard must account for the aggregate income of persons proposing to reside together on the same basis as married persons, and that where there is a government rent subsidy the standard must be based on the portion of rent the tenant actually pays. "We don't take vouchers" is a sentence with a statute attached to it.
+
+**§ 12955 reaches the licensee directly and not only the owner.** Subdivision (i) makes it unlawful for "any person or other organization or entity whose business involves real estate-related transactions" to discriminate in making a transaction available or in its terms and conditions; subdivision (j) reaches denial of access to a multiple listing service or a real estate brokerage organization; subdivision (g) reaches anyone who aids, abets, incites, compels, or coerces any of it; and subdivision (h) reaches inducing a sale by representations about who is entering the neighborhood.
+
+**§ 12955(l)** is where Section 2.2's history appears in the statute itself: discrimination through land use practices "includes, but is not limited to, **restrictive covenants**, zoning laws, denials of use permits," and — the sentence that matters when a covenant surfaces in a title chain — "**the existence of a restrictive covenant, regardless of whether accompanied by a statement that the restrictive covenant is repealed or void.**"
+
+**The Unruh Civil Rights Act, Civil Code § 51**, is not a housing statute but reaches housing through business establishments:
+
+> "All persons within the jurisdiction of this state are free and equal, and no matter what their sex, race, color, religion, ancestry, national origin, disability, medical condition, genetic information, marital status, sexual orientation, citizenship, primary language, or immigration status are entitled to the full and equal accommodations, advantages, facilities, privileges, or services in all business establishments of every kind whatsoever."
+
+**A real estate brokerage is a business establishment.** § 51(e)(7) extends every listed characteristic to a *perception* that a person has it, to any combination of them, and to a perception that the person is associated with someone who has one — so the question is never whether the licensee was right about the characteristic.
+
+**The Housing Financial Discrimination Act of 1977, Health and Safety Code § 35800 and following — the Holden Act** — is the state's answer to redlining. The Legislature's own findings at § 35801(e) record that "with respect to certain geographic areas, financial institutions have sometimes denied financial assistance or approved assistance on terms less favorable than are usually offered in other geographic areas, regardless of the creditworthiness of the applicant or the condition of the real-property security offered." **The practice described in Section 2.2 is the practice the statute names.**
+
+### 2.8 Where this reaches the licence itself
+
+Fair housing is not only exposure to a civil claim. **Business and Professions Code § 10177(l)** makes it a ground on which the Commissioner may discipline a licence:
+
+> "(1) Solicited or induced the sale, lease, or listing for sale or lease of residential property on the grounds, wholly or in part, of loss of value, increase in crime, or decline of the quality of the schools due to the present or prospective entry into the neighborhood of a person or persons having a characteristic listed in subdivision (a) or (d) of Section 12955 of the Government Code…"
+
+That is blockbusting, described in the terms in which it is actually attempted — **value, crime, and schools**. Note what the subdivision does *not* require: no sale need result, no consumer need be harmed, and the licensee's own belief in what he said is irrelevant. Soliciting on those grounds is the conduct.
+
+**Read § 10177(l) beside the licensee role-play in Section 5.** The client there asks what the neighbours are like and which schools would be right for their children. The question is sincere and the client is not asking the licensee to break any law. But the answer the client is inviting — a characterisation of a neighbourhood's people and its schools, offered as professional judgment — is drawn from the same well as the conduct the statute names, and the licensee has no way to give it that is both responsive and safe. **That is why the exercise asks for the actual words rather than for the rule.**
+
 
 ## 3. Recognition and interruption strategies
 

@@ -9,11 +9,23 @@ what was read, what it says, and — the part that matters most for a reviewer �
 and is therefore stated nowhere in this build.**
 
 **One finding governs everything below and should be read before anything else.** The California
-build is **386,565 instructional words across three 45-hour courses**, and **not one of its 45
-lesson assignments cites a California statutory or regulatory section.** The only four- and
-five-digit numbers in the entire curriculum are calendar years and arithmetic. That is not an
+build is **386,565 instructional words across three 45-hour courses**, and **exactly one of its 45
+lesson assignments cites a California statutory or regulatory section.** Everywhere else in the
+curriculum, the only four- and five-digit numbers are calendar years and arithmetic. That is not an
 oversight to be tidied away; it is the shape of the build, and section 8 explains what follows from
 it.
+
+**The exception is Real Estate Practice, Assignment 14** — the SB 1495 implicit bias and fair
+housing practicum. SB 1495 requires that course to cover **federal and state** fair housing law, and
+a state-law component that named no California statute would not be one. So six texts were read in
+full on 22 August 2026 and are cited there: **42 U.S.C. § 3604**, **Government Code § 12955**,
+**Civil Code § 51**, **Health and Safety Code § 35801**, **Business and Professions Code
+§ 10177(l)**, and the Department's own **SB 1495 FAQ**. Section 8 lists them with what was taken
+from each.
+
+**The rule this establishes, and which a test enforces:** every statutory section cited anywhere in
+the California curriculum must be one this register records as read in its own text. A citation
+that is not on that list is a claim about law nobody here has read, and the build has none.
 
 ---
 
@@ -307,28 +319,58 @@ the **Course Provider Handbook, Rev. 01/2026**; **RE 303**, the pre-license cour
 **RE 306** and its field list; **RE 336**; **RE 311**; **RE 313**; **RE 318A**; **RE 304**;
 **RE 206E**; and **RE 909**.
 
+**Added 22 August 2026, in their own text, for the SB 1495 fair housing component:**
+
+| Source | Read from | What was taken from it |
+|---|---|---|
+| **DRE, FAQ — SB 1495 education requirements for exam applicants, New 05/2023** | dre.ca.gov | The two components in the Department's words, the both-roles requirement, and Q7's rule that the components cannot be completed apart from the practice course |
+| **42 U.S.C. § 3601** | uscode.house.gov | The declaration of policy, read so that the Act may be cited by the section it opens at rather than by a range nobody opened |
+| **42 U.S.C. § 3604(a)–(c)** | uscode.house.gov | The federal prohibitions, and the phrase *"otherwise make unavailable or deny"* that reaches steering |
+| **Government Code § 12955** (Fair Employment and Housing Act, housing discrimination) | leginfo.legislature.ca.gov | The California characteristics, subdivisions (g) to (l) reaching the licensee rather than only the owner, and (n) and (o) on income standards and rent subsidies |
+| **Civil Code § 51** (Unruh Civil Rights Act) | leginfo.legislature.ca.gov | The full-and-equal-accommodations rule and § 51(e)(7) on perception and association |
+| **Health and Safety Code § 35801**, in Part 6 beginning at **§ 35800** (Housing Financial Discrimination Act of 1977 — the Holden Act) | leginfo.legislature.ca.gov | The Legislature's own findings at subdivision (e), quoted, as the state's answer to redlining. **The Part's heading and range were read from the page § 35801 sits on; the operative prohibitions at § 35810 and following were not.** |
+| **Business and Professions Code § 10177(l)** | leginfo.legislature.ca.gov | Blockbusting as a ground for discipline, in the terms the subdivision uses — value, crime, and schools |
+
+**These are the first primary California statutory texts in this build.** Everything below that
+says a body of law was not read remains true of the rest of it.
+
+**Sections named inside a quotation are not sections this project has read.** The quoted text of
+**Government Code § 12955(l)** refers to the **Planning and Zoning Law (§ 65000 and following)**,
+and the quoted text of **Civil Code § 51** and **§ 12955** refer to **Government Code § 12926** for
+definitions. **Neither was opened.** They appear in this build only inside quotation marks, as part
+of what the sections that were read actually say, and **no rule in this build rests on either.**
+
 **NOT obtained. No rule, figure, deadline, form provision, fee or penalty in this build comes from
 any of these:**
 
-- **The Business and Professions Code, in its own text — ANY of it.** Not **§§ 10153.2, 10153.3,
-  10153.4 and 10153.5**, which name the courses and create the equivalence power that Article 24
-  implements; not **§ 10209**, the fee section § 3002(c) points to; not **§§ 10176 and 10177**, the
-  discipline sections; not **§ 10145** or the trust fund provisions; not the definition of a real
-  estate broker or salesperson. **This is the largest gap in the California build.**
+- **The Business and Professions Code, in its own text, apart from § 10177(l).** Not
+  **§§ 10153.2, 10153.3, 10153.4 and 10153.5**, which name the courses and create the equivalence
+  power that Article 24 implements; not **§ 10209**, the fee section § 3002(c) points to; not
+  **§ 10176**, and not the rest of **§ 10177** beyond subdivision (l); not **§ 10145** or the trust
+  fund provisions; not the definition of a real estate broker or salesperson. **This remains the
+  largest gap in the California build**, and § 10177(l) was read for the fair housing component
+  rather than as a start on the Code.
 - **The Commissioner's Regulations beyond §§ 3000, 3002 and 3003.** Not **§ 3001**, not **§ 3004** —
   both named on the face of RE 336, which certifies compliance with *"Regulations 3000 through
   3004"* — and none of the substantive regulations, including the **trust account regulations
   (§ 2830 et seq.)**, the **advertising regulations**, or the **agency disclosure regulations**.
 - **Senate Bill 1495 itself**, and the code section it enacted. The requirement is recorded as the
-  Department states it in the Handbook, and **no figure, effective date beyond the Handbook's
-  1 January 2024, or definition is taken from the bill.**
+  Department states it — in the Handbook and in the Department's own SB 1495 FAQ, both read — and
+  **no figure, effective date beyond 1 January 2024 as both documents state it, or definition is
+  taken from the bill.** The course's compliance is stated against what the Department says the
+  requirement is; a reading of the enacted text could only narrow that, not widen it.
 - **The California Civil Code** — the agency articles, the **transfer disclosure statement** and its
   statutory form, the **statute of frauds**, the **easement, deed and recording provisions**, and the
   **Davis-Stirling Common Interest Development Act.**
-- **The Fair Employment and Housing Act, the Unruh Civil Rights Act, the Rumford Act and the Holden
-  Act**, in their own text, and any California **protected-class list**. Fair housing is taught in
-  this build from the **federal statutes** and from the Department's own SB 1495 statement — **not
-  from a California protected-class list this project has read.**
+- **The Fair Employment and Housing Act beyond § 12955**, **the Unruh Civil Rights Act beyond
+  § 51**, **the Holden Act beyond § 35801**, and **the Rumford Act** in its own text. The three
+  sections named were read in full on 22 August 2026 and the California protected-class list in
+  this build is taken from **§ 12955 itself**. Not read: the FEHA enforcement articles
+  (**§§ 12956 to 12957** and the complaint procedure), **§ 51.2 and the senior housing provisions**,
+  the **remedies and damages provisions** of either Act, and the **Holden Act's operative
+  prohibitions at §§ 35810 and following** — the findings section was read, the duties were not.
+  **No remedy, penalty, damages figure, filing deadline or enforcement procedure in this build
+  comes from any of them, because none is stated anywhere in it.**
 - **California's finance and lending statutes** — the **Real Estate Law's mortgage loan broker
   provisions**, the **California Financing Law**, the **Homeowner Bill of Rights** and the
   **anti-deficiency statutes** — despite one of the three courses being **Mortgage Loan Brokering and
