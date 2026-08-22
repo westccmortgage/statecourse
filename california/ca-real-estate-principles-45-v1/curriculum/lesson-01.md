@@ -171,7 +171,65 @@ Section 2.4 lists what triggers discipline. Licensees rarely learn what the proc
 
 > **The most useful thing to know about this process in advance** is that it is largely documentary. **The licensee's recollection, sincerity, and explanation carry very little weight against a record that says something else, and they carry almost none against a record that says nothing at all.**
 
-### 2.7 Checkpoint
+### 2.8 The statute itself: what makes activity licensed
+
+Section 2.3 described licensed activity in functional terms — what the person did, and whether it was for compensation. That description is accurate, but a licensee who has only the description will eventually meet a situation the description does not settle. The statute settles it, and it is short enough to read.
+
+**Business and Professions Code § 10130** creates the prohibition:
+
+> *"It is unlawful for any person to engage in the business of, act in the capacity of, advertise as, or assume to act as a real estate broker or a real estate salesperson within this state without first obtaining a real estate license from the department, or to engage in the business of, act in the capacity of, advertise as, or assume to act as a mortgage loan originator within this state without having obtained a license endorsement."*
+
+**Four verbs, and the fourth is the one to notice.** It is unlawful to *engage in the business of*, to *act in the capacity of*, to **advertise as**, and to *assume to act as*. Advertising is listed separately from acting. A person who advertises real estate brokerage services and never takes a single call has violated § 10130 on the face of the section, because the advertising is itself a prohibited act rather than evidence of one.
+
+The section closes by making enforcement somebody's job rather than nobody's: the Commissioner *"may prefer a complaint for violation of this section before any court of competent jurisdiction,"* and *"it is the duty of the district attorney of each county in this state to prosecute all violations of this section in their respective counties."* Unlicensed practice is not merely a licensing matter to be sorted out administratively. It is a crime that a district attorney has a duty to prosecute.
+
+### 2.9 The five categories, in the statute's own words
+
+**Business and Professions Code § 10131** defines the broker by describing the acts:
+
+> *"A real estate broker within the meaning of this part is a person who, **for a compensation or in expectation of a compensation, regardless of the form or time of payment**, does or negotiates to do one or more of the following acts for another or others:"*
+
+**Read the qualifying clause before the list.** Three conditions are packed into it, and each is doing work:
+
+- **"For a compensation or in expectation of a compensation."** The expectation is enough. A person who performs a listed act hoping to be paid, and is never paid, has still performed it for compensation within the meaning of the section.
+- **"Regardless of the form or time of payment."** A referral fee, a reduced rent, a share of a business, a favour returned later — the Legislature closed the form question deliberately. A person who says "I wasn't paid a commission" has answered a question the statute does not ask.
+- **"For another or others."** This is the boundary that keeps an owner selling their own property outside the section, and it is why the owner exemption is structural rather than a carve-out: an owner acting for themselves is not acting for another.
+
+The five categories then follow:
+
+> **(a)** *"Sells or offers to sell, buys or offers to buy, solicits prospective sellers or buyers of, solicits or obtains listings of, or negotiates the purchase, sale, or exchange of real property or a business opportunity."*
+>
+> **(b)** *"Leases or rents or offers to lease or rent, or places for rent, or solicits listings of places for rent, or solicits for prospective tenants, or negotiates the sale, purchase, or exchanges of leases on real property, or on a business opportunity, or **collects rents** from real property, or improvements thereon, or from business opportunities."*
+>
+> **(c)** *"Assists or offers to assist in filing an application for the purchase or lease of, or in locating or entering upon, lands owned by the state or federal government."*
+>
+> **(d)** *"Solicits borrowers or lenders for or negotiates loans or collects payments or performs services for borrowers or lenders or note owners in connection with loans secured directly or collaterally by liens on real property or on a business opportunity."*
+>
+> **(e)** *"Sells or offers to sell, buys or offers to buy, or exchanges or offers to exchange a real property sales contract, or a promissory note secured directly or collaterally by a lien on real property or on a business opportunity, and performs services for the holders thereof."*
+
+**Three things in that list surprise people who learned the subject from a summary.**
+
+**Subdivision (b) reaches rent collection.** Collecting rents for an owner, for compensation, is licensed activity in its own right. It appears in the same subdivision as leasing because the Legislature treated the management of tenancies as brokerage, and it is the reason Assignment 15's treatment of property management is a treatment of licensed activity rather than of a related trade.
+
+**Subdivision (d) reaches loan activity, and reaches it broadly.** Soliciting borrowers *or* lenders; negotiating loans; collecting payments; performing services for note owners. This is the statutory foundation of the Mortgage Loan Brokering and Lending course, and it is why a licensee who "just refers people to a lender" for a fee should read (d) before deciding the arrangement is outside the section.
+
+**"Offers to" appears in every operative clause.** Offers to sell, offers to buy, offers to lease, offers to assist, offers to exchange. The offer is the act. A transaction that never happens does not retroactively unlicense the conduct that preceded it.
+
+**Section 10131 also settles the licence question in the direction people least expect.** Because the section defines the *broker*, and because a salesperson may only act through an employing broker, the answer to "does this activity need a licence" is always found by asking whether it is one of these acts, done for another, for compensation or the expectation of it. The person's title, their business card, their intentions and the outcome of the deal are all outside the test.
+
+### 2.10 A worked application of § 10131
+
+> A software developer builds a website that matches apartment seekers with landlords. Landlords pay a monthly fee to list. The developer never speaks to a tenant, never shows a unit, never signs anything, and never handles money other than the listing fees.
+>
+> A second person, working from the same website, telephones prospective tenants on behalf of listed landlords, describes the units, arranges viewings, and receives $200 from the landlord for each tenancy that results.
+
+**The first is the harder question, and the answer turns on what "places for rent" and "solicits listings of places for rent" mean in subdivision (b).** A platform that accepts a landlord's listing for a fee is, on the words, soliciting listings of places for rent for compensation. Whether a given website falls inside § 10131 is a question that has been litigated and legislated around, and it is exactly the sort of question a licensee must route to counsel rather than resolve from a course. **What the course can say with confidence is that the question is a real one and that "we are only a website" is not an answer to it.**
+
+**The second is not a hard question at all.** Soliciting for prospective tenants, negotiating a tenancy, and being paid per result is squarely within subdivision (b), performed for another, for compensation. The $200 is a compensation regardless of its form. The person needs a licence and must act under an employing broker. The website's business model does not change what the second person is doing.
+
+**The professional habit this builds:** when an arrangement feels novel, read § 10131 and ask whether the conduct is on the list, rather than asking whether the arrangement resembles brokerage. The section is a list of acts. Novel business models are made of the same acts.
+
+### 2.11 Checkpoint
 
 You should be able to state the purpose of the license law and use it to explain why a particular rule takes the form it does.
 
@@ -372,7 +430,47 @@ Section 5.3 establishes that forms and publications are not law. The practical c
 
 > **Why this belongs in a principles course at all.** Not so that licensees will practice law, but so that they can tell the difference between a rule and a habit. **A great deal of what circulates in this business as "the rule" is a brokerage practice, a form's convention, or something someone said in a class**, and the only way to know which is to look.
 
-### 5.6 Checkpoint
+### 5.7 The statute that requires this course
+
+Section 5.1 placed statute above regulation and regulation above everything else. It is worth seeing that hierarchy operating on the course a student is presently taking, because the example is close at hand and the reasoning transfers.
+
+**Business and Professions Code § 10153.2** is the section that requires the courses. On the broker examination:
+
+> *"(a) An applicant to take the examination for an original real estate broker license shall also submit evidence, satisfactory to the commissioner, of successful completion, at an accredited institution, of:*
+>
+> *(1) A three-unit semester course, or the quarter equivalent thereof, in each of the following: (A) **Real estate practice** … (B) **Legal aspects of real estate**. (C) **Real estate appraisal**. (D) **Real estate financing**. (E) **Real estate economics or accounting**.*
+>
+> *(2) A three-unit semester course, or the quarter equivalent thereof, in **three of the following**: (A) Advanced legal aspects of real estate. (B) Advanced real estate finance. (C) Advanced real estate appraisal. (D) Business law. (E) Escrows. (F) **Real estate principles**. (G) Property management. (H) Real estate office administration. (I) **Mortgage loan brokering and lending**. (J) Computer applications in real estate. (K) … California law that relates to common interest developments…"*
+
+**Three observations a licensee should carry out of that text.**
+
+**The course titles are statutory.** *Real Estate Principles*, *Real Estate Practice* and *Mortgage Loan Brokering and Lending* are not names a school chose. They appear in § 10153.2, and a private vocational school offering an equivalent course offers it under the statutory title or it is not the course the statute names.
+
+**"At an accredited institution" is the phrase that makes this school's approval necessary.** A private vocational school is not an accredited college. It reaches the same place by a different route — the Commissioner's power to find a course *equivalent in quality* to college and university offerings — which is why the equivalence certification from a college instructor exists at all, and why Regulation 3000 sets out the criteria the Commissioner considers.
+
+**The SB 1495 components are in the statute, not only in a Department instruction.** § 10153.2(a)(1)(A) requires that the real estate practice course include:
+
+> *"(i) A component on implicit bias, including education regarding the impact of implicit bias, explicit bias, and systemic bias on consumers, the historical and social impacts of those biases, and actionable steps students can take to recognize and address their own implicit biases.*
+>
+> *(ii) A component on federal and state fair housing laws as those laws apply to the practice of real estate. **The fair housing component shall include an interactive participatory component, during which the applicant shall roleplay as both a consumer and real estate professional.**"*
+
+**This is the hierarchy in Section 5.1 doing visible work.** A student who knew the requirement only from the Department's frequently asked questions would have the content right and the authority wrong. The FAQ is the Department explaining a statute; the statute is what a court would read. When the two agree — as here, almost word for word — the point is not that the FAQ was wrong. The point is that a licensee who can name the statute can answer a question the FAQ does not address, and a licensee who cannot, cannot.
+
+### 5.8 Reading a section: a method
+
+Statutory reading is a skill, and most licensees are never taught it. Four habits do most of the work.
+
+**Read the whole sentence before the list.** § 10131's operative test — *for compensation or in expectation of compensation, regardless of the form or time of payment, for another or others* — sits in the sentence that introduces the five subdivisions. A reader who skips to the list gets the acts and loses the conditions.
+
+**Notice which conjunction joins the elements.** "And" requires every element; "or" requires one. Whether a statute says *"sells or offers to sell"* or *"sells and offers to sell"* is the difference between a completed transaction and an attempt, and it is a single letter.
+
+**Notice what is defined elsewhere.** § 1102(b) — the residential disclosure article — says *"the definitions contained in Chapter 1 (commencing with Section 10000) of Part 1 of Division 4 of the Business and Professions Code shall apply."* A term in one code can be defined in another, and reading the first without the second produces a confident wrong answer.
+
+**Read the effective-date line at the end.** Every section on the Legislature's website closes with its amendment history — *"(Amended by Stats. 2018, Ch. 285, Sec. 27. (AB 2884) Effective January 1, 2019.)"* That line tells a reader whether they are looking at current law and when it last changed. A printed summary carries no such line, which is precisely why Section 5.4 warns about currency.
+
+**What this does not make a licensee.** Reading a section is not construing it. The difference between what a section says and what it means in a disputed case is the practice of law, and Section 4.2's test applies with full force: state what the document provides, and route the question of a client's rights to counsel. **The purpose of statutory literacy for a licensee is to know which questions are real, not to answer them.**
+
+### 5.9 Checkpoint
 
 You should be able to take a question and say which source category would control it, and where the answer would be found.
 
@@ -470,7 +568,55 @@ This lesson has described a regulatory structure, a supervision relationship, a 
 
 > **What this course is preparing you for is not the examination.** It is a first year in which you will encounter facts no lesson covered. **The regulatory structure, the scope boundary, the sources of law, and the file are the four things that will answer them** — and the file is the one that will still be answering them in five years, when nobody remembers anything else.
 
-### 6.7 Checkpoint
+### 6.8 The first ninety days, as a checklist rather than advice
+
+Section 6.6 describes what a new licensee should do in the first month. This section is the operational version — the things that, once set up, keep working without being thought about, which is the only kind of discipline that survives a busy month.
+
+**Week one — the relationship that governs everything else.**
+
+**Read the employing broker's written policies**, and if there are none in writing, ask for them. The broker's supervision duty (Assignment 01 Section 3.3) is discharged partly through policies, and a salesperson who does not know them cannot follow them.
+
+**Establish who reviews what, and when.** Which documents go to the broker, at what stage, and how a question is escalated. **Agree the escalation route before there is anything to escalate**, because the first time it is needed will be the worst time to be inventing it.
+
+**Set up a file structure, one per transaction**, with the same folders every time: agency, agreement and addenda, disclosures with delivery evidence, inspection reports, title, financing, correspondence, closing.
+
+**Weeks two to four — the habits.**
+
+**Date every document at the moment it is signed or delivered.** Not later.
+
+**Send every material communication in writing, even after a phone call.** *"Confirming our conversation: you asked me to…"* One sentence, sent the same hour.
+
+**Keep a transaction log** — date, what happened, who was told. Ninety seconds a day; the only reliable memory anyone has of a transaction two years later.
+
+**Months two and three — the substance.**
+
+**Read one complete transaction file from beginning to end**, from the brokerage's closed files, with the broker's permission. **Nothing in a course teaches sequence the way a real file does.**
+
+**Read a preliminary report on a property you are not selling**, and look up every exception in it.
+
+**Attend an inspection and ask the inspector to explain what they are doing.** A licensee who has watched three inspections reads a report differently.
+
+**Meet the escrow officer and the title officer** the brokerage uses. Both will answer questions from a new licensee generously, and both are the people who will catch the mistakes.
+
+### 6.9 The five failures that end new careers, and what prevents each
+
+These are not the exotic risks. They are the ordinary ones, and each has a one-line prevention.
+
+**Practising outside the licence.** Answering a legal or tax question because a client asked and the answer seemed obvious. **Prevention: the Section 4.2 test — say what the document provides, route what it means.**
+
+**Undisclosed dual agency.** Almost always structural rather than deliberate — the brokerage on both sides, nobody having noticed. **Prevention: when the offer comes from inside the office, prepare the consent with the offer.**
+
+**Trust fund mishandling.** For a salesperson usually a deposit held or routed wrongly. **Prevention: never take a deposit into your own hands. It goes to escrow or to the broker's trust account, immediately, per § 10145.**
+
+**A disclosure not delivered, or delivered too late.** Not concealment — sequencing. **Prevention: order everything on day one and evidence delivery, not just signature.**
+
+**Silence about a known problem.** The licensee who sees something, says nothing, and hopes. **Prevention: escalate in writing to the broker. It costs one email and it moves the problem to the person whose job it is.**
+
+**What the five have in common.** None requires bad intent, and every one of them is prevented by a habit rather than by knowledge. **The licensee who fails is rarely the one who did not know the rule.** It is the one who knew the rule, was busy, and let a date slide.
+
+**And the professional framing worth carrying out of this assignment.** The obligations set out here — supervision, disclosure, trust funds, the boundary against unauthorised practice — are not restrictions on a business. **They are the description of what the licence is for.** A consumer entering the largest transaction of their life deals with someone whose competence they cannot verify, and the licensing scheme is the state's answer to that asymmetry. **A licensee who understands the scheme that way finds compliance easier**, because the rules stop being arbitrary and start being the shape of the job.
+
+### 6.10 Checkpoint
 
 You should be able to take a transaction task and name who owns it, by what date, and what evidence shows it was done.
 

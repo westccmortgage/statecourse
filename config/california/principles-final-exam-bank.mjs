@@ -94,16 +94,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Attachment and objectively evidenced intent decide most cases. Cost, duration, insurance, and a party's private sentiment do not control." },
-  { source: { assignment: "assignment-02", section: "2.5" },
-    prompt: "Custom window coverings were cut to fit each window of a particular house. Which test most directly supports treating them as fixtures?",
+  /* Assignment 02 section 2.9 - Civil Code 660, the affixation modes. */
+  { source: { assignment: "assignment-02", section: "2.9" },
+    prompt: "Civil Code \u00a7 660 lists the ways a thing is deemed affixed to land, naming \"cement, plaster, nails, bolts, or screws\" as means of permanent attachment. A television rests in a bracket that is screwed to a wall. What is the analysis?",
     choices: [
-      "Adaptability, because they were fitted to this property specifically and have little use elsewhere.",
-      "Relationship of the parties, because the seller installed them personally.",
-      "Method of attachment, because fabric is affixed to the structure with permanent fasteners.",
-      "Trade fixture doctrine, because the coverings serve the use of the premises."
+      "The bracket is affixed because screws are among the named fasteners; the television rests in it and is not affixed.",
+      "Both are affixed, because the television is attached to a fixture which is itself attached to the realty.",
+      "Neither is affixed, because a television is personal property and its mount takes its character.",
+      "The bracket is affixed only if removing it would damage the wall."
     ],
     correctChoice: 0,
-    rationale: "Adaptation to the specific property is the controlling factor for items custom-fitted to it. The trade fixture doctrine concerns items a tenant installs for a business." },
+    rationale: "The statute names the fasteners, and screws are on the list. The television is held by gravity in a bracket, which is none of the named means. Damage on removal is one of the judicial tests, not the statutory definition." },
   { source: { assignment: "assignment-02", section: "3.2" },
     prompt: "A commercial tenant installs display shelving and refrigeration units to operate a grocery. Under the trade fixture rule, what is the general position at lease end?",
     choices: [
@@ -358,16 +359,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Lawful use predating the change becomes nonconforming, and the ordinance itself sets what may continue, expand, or lapse. It is neither automatically illegal nor a variance." },
-  { source: { assignment: "assignment-06", section: "2.3" },
-    prompt: "A buyer says he will 'just get a variance' if the ordinance does not permit his intended use. Why is that a dangerous assumption for a licensee to encourage?",
+  /* Assignment 06 section 3.7 - the two subdivision statutes. */
+  { source: { assignment: "assignment-06", section: "3.7" },
+    prompt: "An owner divides a parcel into two lots for sale. Which statutory scheme applies?",
     choices: [
-      "Relief mechanisms are discretionary processes with standards, timelines, and no guaranteed outcome.",
-      "Variances are prohibited in California residential zones.",
-      "A variance can only be sought by the owner of record after closing.",
-      "A variance would convert the property to a nonconforming use."
+      "The Subdivision Map Act, administered locally; the Subdivided Lands Act does not, because it reaches divisions into five or more parcels.",
+      "Both, because any division of land for sale triggers a public report from the Department of Real Estate.",
+      "Neither, because a two-lot division is a lot line adjustment rather than a subdivision.",
+      "The Subdivided Lands Act only, because the Department administers all divisions made for the purpose of sale."
     ],
     correctChoice: 0,
-    rationale: "A variance or conditional use permit is a process with standards and a hearing, not an entitlement. Encouraging reliance on it is how buyers remove contingencies on a plan that later fails." },
+    rationale: "Government Code \u00a7 66424 defines subdivision broadly for map purposes and reaches a two-lot division. Business and Professions Code \u00a7 11000 defines subdivided lands as a division into five or more lots or parcels, so no public report is involved." },
   { source: { assignment: "assignment-06", section: "3.3" },
     prompt: "A seller discloses that a bedroom addition was built without permits. What is the licensee's correct handling of the marketing?",
     choices: [
@@ -470,16 +472,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "A change of terms is a counteroffer, which terminates the original offer. Both remaining options treat a counteroffer as an acceptance, which it is not." },
-  { source: { assignment: "assignment-08", section: "2.1" },
-    prompt: "An offeree signs an acceptance but it is never transmitted to the offeror before the offer expires. What is the position?",
+  /* Assignment 08 section 4.7 - Civil Code 1624, subscribed by the party to be charged. */
+  { source: { assignment: "assignment-08", section: "4.7" },
+    prompt: "Civil Code \u00a7 1624 makes certain contracts invalid unless there is a writing \"subscribed by the party to be charged or by the party's agent.\" What does that phrase establish?",
     choices: [
-      "No contract formed, because formation turns on communication of acceptance rather than on the signature alone.",
-      "A contract formed at the moment of signature, and transmission is a formality.",
-      "A contract formed, because the offeror's own expiration term cannot defeat an acceptance actually made.",
-      "A contract formed only if the offeree can prove he intended to send it."
+      "Only the party being sued need have signed, so a writing signed by the seller alone may be enforced against the seller.",
+      "Both parties must sign before either can enforce the agreement.",
+      "The party who drafted the writing must sign it before it takes effect.",
+      "A signature is required only where the contract exceeds a stated value."
     ],
     correctChoice: 0,
-    rationale: "Communication is the operative event. A signed acceptance sitting in an outbox has not been communicated, which is why transmission and confirmation are operational disciplines rather than formalities." },
+    rationale: "The requirement is asymmetric by design. The writing binds the party who subscribed it, which is why a seller's signed memorandum can be enforced against the seller even where the buyer signed nothing." },
   { source: { assignment: "assignment-08", section: "3.4" },
     prompt: "Which best describes a voidable contract?",
     choices: [
@@ -950,17 +953,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Materiality is not extinguished by repair — the adequacy of the repair is what the buyer wants to evaluate. The obedience limit governs the instruction, and the licensee's own disclosure duty runs in parallel rather than as a substitute." },
-  { source: { assignment: "assignment-03", section: "6.2" },
-    crossReferences: [{ assignment: "assignment-09", section: "1.2" }],
-    prompt: "A seller says the property is held in his late mother's trust and that he is 'the beneficiary, so it's mine.' What must be established before the listing proceeds?",
+  /* Assignment 03 section 3.9 - Civil Code 683, express declaration. */
+  { source: { assignment: "assignment-03", section: "3.9" },
+    prompt: "Two sisters buy a house together in equal shares, intending that the survivor should take the whole. The deed names them both and says nothing more. Under Civil Code \u00a7 683, what have they created?",
     choices: [
-      "Who currently holds the office of trustee, established from the trust instrument, because the trustee conveys and a competent grantor is a deed requirement.",
-      "Whether the beneficiary has recorded a notice of his interest.",
-      "Whether the trust was funded with other assets besides the property.",
-      "Nothing, since a sole beneficiary may convey trust property directly."
+      "A tenancy in common, because \u00a7 683 requires a joint tenancy to be expressly declared in the transfer.",
+      "A joint tenancy, because they took in equal shares by a single transfer at the same time.",
+      "A joint tenancy, because their intention was clear and the unities are satisfied.",
+      "Community property with right of survivorship, which is the default for co-owners taking equal shares."
     ],
     correctChoice: 0,
-    rationale: "Title is held by the trustee in that capacity, and after a death the office may have passed to a successor. A deed from a person without authority to convey fails at the grantor requirement." },
+    rationale: "\u00a7 683 says \"when expressly declared in the transfer to be a joint tenancy.\" Equal shares, a single transfer and a clear intention are not substitutes for the words, and community property vesting is available only to spouses and partners." },
   { source: { assignment: "assignment-05", section: "5.3" },
     crossReferences: [{ assignment: "assignment-09", section: "4.4" }],
     prompt: "A deed is delivered on Monday but not recorded. On Wednesday a judgment creditor records an abstract against the record owner. On Friday the deed is recorded. What issue does this sequence raise?",
@@ -972,17 +975,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "The deed can be effective between the parties while giving no constructive notice to the world. That gap is exactly what the recording system resolves, and the outcome turns on priority rather than on which document is older." },
-  { source: { assignment: "assignment-10", section: "2.5" },
-    crossReferences: [{ assignment: "assignment-08", section: "5.3" }],
-    prompt: "The parties sign an amendment extending the closing date, and it is never sent to escrow. What is the position?",
+  /* Assignment 10 section 3.8 - B&P 10145, the three lawful destinations. */
+  { source: { assignment: "assignment-10", section: "3.8" },
+    prompt: "Business and Professions Code \u00a7 10145 requires a broker who accepts funds belonging to others to place them in one of a limited set of destinations. Which is NOT among them?",
     choices: [
-      "The amendment binds the parties, but escrow will act on the instructions it holds, so the extension must be transmitted for the closing to reflect it.",
-      "The amendment is ineffective because escrow did not receive it.",
-      "Escrow is required to detect the amendment and adjust the closing accordingly.",
-      "The original closing date is unenforceable once any amendment exists."
+      "The broker's general business account, pending transfer once the transaction is further along.",
+      "A neutral escrow depository, immediately.",
+      "The hands of the broker's principal, immediately.",
+      "A trust fund account maintained by the broker in a bank or recognised depository in this state."
     ],
     correctChoice: 0,
-    rationale: "The purchase agreement governs what the parties owe each other; the escrow instructions govern what the neutral third party does. Keeping them aligned is the licensee's task on every file." },
+    rationale: "The section names three destinations and no more. A general business account is where commingling happens, and the offence does not require a loss, a shortage, or any intent." },
   { source: { assignment: "assignment-12", section: "6.4" },
     crossReferences: [{ assignment: "assignment-14", section: "5.5" }],
     prompt: "A manager tells a licensee to send the appraiser three comparables selected because they support the contract price, and to use an appraiser 'whose numbers come in.' How should both instructions be assessed?",
@@ -994,17 +997,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Information may be supplied; a target may not. A set assembled by working backward from a figure is a target in another form, and selecting by history builds the pressure into the ordering pattern." },
-  { source: { assignment: "assignment-01", section: "4.2" },
-    crossReferences: [{ assignment: "assignment-08", section: "6.9" }],
-    prompt: "A client asks whether he can cancel and recover his deposit. Which response is within the licensee's scope?",
+  /* Assignment 01 section 2.9 - B&P Code 10131, the acts that require a licence, added with the statutory expansion. */
+  { source: { assignment: "assignment-01", section: "2.9" },
+    prompt: "Business and Professions Code \u00a7 10131 defines a real estate broker as a person who acts \"for a compensation or in expectation of a compensation, regardless of the form or time of payment.\" A person performs a listed act hoping to be paid, and is never paid. What follows?",
     choices: [
-      "State what the agreement provides procedurally and by when, and refer the question of his rights and the deposit's disposition to counsel.",
-      "Tell him the liquidated damages clause caps the seller's recovery at the deposit amount.",
-      "Tell him he may cancel because his contingency period has not expired.",
-      "Tell him the deposit is returned automatically whenever a buyer cancels in writing."
+      "The expectation of compensation satisfies the section; the act was performed for compensation within its meaning.",
+      "No licence was required, because the section reaches only acts for which compensation was actually received.",
+      "No licence was required unless the person had a written fee agreement.",
+      "The section applies only if the compensation would have been a commission rather than a flat fee."
     ],
     correctChoice: 0,
-    rationale: "Explaining the document's procedure is within scope; stating the legal effect on his rights is not. The three rejected answers are all legal conclusions delivered under pressure." },
+    rationale: "The Legislature wrote \"or in expectation of a compensation\" precisely so that non-payment would not defeat the section, and \"regardless of the form or time of payment\" so that the shape of the fee would not either." },
   { source: { assignment: "assignment-06", section: "6.2" },
     crossReferences: [{ assignment: "assignment-05", section: "4.2" }],
     prompt: "A buyer intends to add a second unit to a property. What does defensible due diligence require before he removes his contingencies?",
@@ -1038,17 +1041,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "The discrepancy affects what the buyer is acquiring and is material. Locating the boundary and evaluating the arrangement are both outside the licensee's competence, and disclosure is not conditioned on being asked." },
-  { source: { assignment: "assignment-15", section: "6.6" },
-    crossReferences: [{ assignment: "assignment-07", section: "2.7" }],
-    prompt: "A licensee meets a situation no rule in the course addresses. Which sequence of questions is most likely to produce the correct action and the correct record?",
+  /* Assignment 15 section 4.10 - B&P 10176(f), the exclusive agreement with no termination date. */
+  { source: { assignment: "assignment-15", section: "4.10" },
+    prompt: "Business and Professions Code \u00a7 10176(f) makes it a ground for discipline to claim, demand or receive a fee under an exclusive agreement that lacks something. What?",
     choices: [
-      "Whose decision is this, whose duty is engaged, does the decision have the information it requires, and what will the file show.",
-      "What is customary in the market, what will the client accept, what will close fastest, and what will the broker approve.",
-      "What does the form provide, what did the last transaction do, what does the other agent expect, and what is defensible later.",
-      "What is the licensee's opinion, what is the client's preference, what is the least disruptive course, and what can be corrected afterward."
+      "A definite, specified date of final and complete termination.",
+      "A statement of the commission rate expressed as a percentage.",
+      "The signature of the employing broker as well as the salesperson.",
+      "A recital that the agreement is governed by California law."
     ],
     correctChoice: 0,
-    rationale: "Identifying the decision-maker, the duty engaged, whether the decision is informed, and what the record will show resolves situations no rule anticipated. The rejected sets substitute custom, convenience, or the licensee's own judgment for the analysis." },
+    rationale: "The subdivision requires a definite, specified termination date. \"Until sold\" and \"90 days from acceptance\" are not dates, and the offence is claiming a fee under such an agreement rather than signing one." },
 ];
 
 /* Form B is the retake form RE 303 p.4 requires: a second full examination on the same
@@ -1116,17 +1119,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "The process is largely documentary. Preservation is immediate and total, and an improvised personal response is how licensees say what they did not need to say." },
-  { source: { assignment: "assignment-01", section: "6.5" },
-    prompt: "Which task in a residential transaction has no assigned owner outside the brokerage?",
+  /* Assignment 01 section 5.7 - B&P 10153.2, the statute that names the courses. */
+  { source: { assignment: "assignment-01", section: "5.7" },
+    prompt: "Where do the titles \"Real Estate Practice\" and \"Real Estate Principles\" come from?",
     choices: [
-      "Building and watching the deadline calendar the contract creates.",
-      "Searching title and issuing the preliminary report.",
-      "Underwriting the buyer's loan.",
-      "Performing the appraisal."
+      "Business and Professions Code \u00a7 10153.2, which names the courses an applicant must complete to qualify for examination.",
+      "The Commissioner's Regulations, which prescribe course titles for private vocational schools.",
+      "Convention among California schools, which have used consistent titles for decades.",
+      "The Department's course provider handbook, which lists approved titles."
     ],
     correctChoice: 0,
-    rationale: "Title, underwriting, and valuation each have a named owner outside the brokerage. Deadlines belong to no participant by default, which is why they are the most failure-prone element." },
-  /* Assignment 02 — Real property, personal property, and fixtures */
+    rationale: "\u00a7 10153.2 lists the statutory courses by name. A school offering an equivalent course offers it under the statutory title, and the regulations and the handbook implement the section rather than supply the names." },
   { source: { assignment: "assignment-02", section: "1.2" },
     prompt: "Standing timber is cut and stacked for sale. What has happened to its classification?",
     choices: [
@@ -1320,16 +1323,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "Property tax liens are specific to the parcel and generally hold priority ahead of recorded liens, which is what makes them different from the ordinary priority rule." },
-  { source: { assignment: "assignment-05", section: "2.3" },
-    prompt: "What distinguishes a mechanic's lien from most other involuntary liens?",
+  /* Assignment 05 section 2.8 - CCP 704.730, the homestead exemption amount. */
+  { source: { assignment: "assignment-05", section: "2.8" },
+    prompt: "Code of Civil Procedure \u00a7 704.730 sets the homestead exemption as the greater of the prior year's countywide median sale price for a single-family home, capped, or a stated floor, with both figures adjusting annually for inflation. What does this mean for a licensee asked the amount?",
     choices: [
-      "Its priority may relate back to a point earlier than its recording, tied to the commencement of the work or improvement.",
-      "It may be recorded by anyone who believes he is owed money by the owner.",
-      "It attaches to the contractor's property rather than the owner's.",
-      "It requires a court judgment before it can be recorded."
+      "The answer is county-specific and changes annually, so it comes from the current statute rather than from a remembered figure.",
+      "The answer is a single statewide amount that has been fixed since the section was last amended.",
+      "The answer depends on the debtor's age and household composition, as it did under the former scheme.",
+      "The answer is whatever equity the debtor has, since the exemption protects the whole homestead."
     ],
     correctChoice: 0,
-    rationale: "The relation-back feature is what makes mechanic's liens dangerous to a lender and a buyer: a lien recorded later can outrank an intervening instrument." },
+    rationale: "The section sets a floor and a cap with the actual figure driven by the county median, and provides for annual CPI adjustment. Age and household tiering belonged to the repealed scheme." },
   { source: { assignment: "assignment-05", section: "3.3" },
     prompt: "Which of the following is a recognized way an easement may be created?",
     choices: [
@@ -1442,16 +1446,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "Obedience is limited to lawful instructions. Documenting an improper instruction records that the agent knew; it does not transfer responsibility for the act." },
-  { source: { assignment: "assignment-07", section: "2.6" },
-    prompt: "What does a licensee owe to a party who is not his client?",
+  /* Assignment 07 section 4.9 - Civil Code 2079.16, the duty owed to the party not represented. */
+  { source: { assignment: "assignment-07", section: "4.9" },
+    prompt: "Civil Code \u00a7 2079.16 divides a seller's agent's obligations into duties owed to the seller and duties owed \"to the Buyer and the Seller.\" Which is in the second group?",
     choices: [
-      "Honesty, fair dealing, and disclosure of material facts.",
-      "Nothing, because duties run only to the principal.",
-      "The same fiduciary duties owed to the principal.",
-      "Only the duty to present offers promptly."
+      "The duty to disclose all facts known to the agent materially affecting the value or desirability of the property.",
+      "The fiduciary duty of utmost care, integrity, honesty and loyalty.",
+      "The duty to obey the client's lawful instructions.",
+      "The duty to keep the client's bargaining position confidential."
     ],
     correctChoice: 0,
-    rationale: "Fiduciary duties run to the principal; honesty, fair dealing, and disclosure of material facts run to everyone, and that duty is not reduced by the other party having representation." },
+    rationale: "The disclosure duty runs to both parties even though the fiduciary duty runs only to the client. Loyalty, obedience and confidentiality are owed to the principal." },
   { source: { assignment: "assignment-07", section: "3.3" },
     prompt: "What may a dual agent NOT do?",
     choices: [
@@ -1574,16 +1579,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "A quitclaim passes whatever the grantor holds without warranty. It can transfer a full interest if the grantor has one; it simply promises nothing." },
-  { source: { assignment: "assignment-09", section: "2.5" },
-    prompt: "What does a deed of reconveyance accomplish?",
+  /* Assignment 09 section 4.8 - Civil Code 1214, the four conditions. */
+  { source: { assignment: "assignment-09", section: "4.8" },
+    prompt: "A buyer takes a deed and does not record it. Later the same owner gifts the property to a nephew, who records immediately and knows nothing of the first deed. Under Civil Code \u00a7 1214, who prevails?",
     choices: [
-      "It reconveys title held by the trustee back to the trustor once the secured obligation is satisfied.",
-      "It transfers the property from the borrower to the lender after default.",
-      "It corrects an error in a previously recorded deed.",
-      "It conveys a partial interest to a junior lienholder."
+      "The first buyer, because the nephew did not take for a valuable consideration.",
+      "The nephew, because he recorded first and took in good faith.",
+      "The nephew, because an unrecorded conveyance is void against anyone.",
+      "The first buyer, because a gift deed conveys nothing until the donee pays value."
     ],
     correctChoice: 0,
-    rationale: "Reconveyance is the release step under a deed of trust when the debt is paid. Transfer to the lender after default and correction of a prior deed are different instruments." },
+    rationale: "\u00a7 1214 protects a subsequent purchaser or mortgagee who is in good faith, for a valuable consideration, and first to record. A donee fails the consideration element, so the earlier unrecorded deed stands against him." },
   { source: { assignment: "assignment-09", section: "4.2" },
     prompt: "Which describes constructive notice?",
     choices: [
@@ -1676,16 +1682,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "Acceleration makes the whole balance due on default. Prepayment, rate adjustment, and assumption are governed by separate clauses." },
-  { source: { assignment: "assignment-11", section: "1.5" },
-    prompt: "What distinguishes a straight note from an amortized note?",
+  /* Assignment 11 section 6.11 - CCP 580d, the trustee's sale bar. */
+  { source: { assignment: "assignment-11", section: "6.11" },
+    prompt: "A lender forecloses non-judicially under the power of sale in a deed of trust. The sale leaves a shortfall. What does Code of Civil Procedure \u00a7 580d provide?",
     choices: [
-      "A straight note provides for interest-only payments with the principal due at maturity; an amortized note's payments retire principal over the term.",
-      "A straight note carries a fixed rate and an amortized note an adjustable one.",
-      "A straight note is unsecured and an amortized note is secured.",
-      "A straight note is used for commercial property and an amortized note for residential."
+      "No deficiency may be owed or collected from the borrower, whatever the loan was for.",
+      "A deficiency may be collected only if the loan was not purchase money.",
+      "A deficiency may be collected after a statutory redemption period expires.",
+      "A deficiency may be collected up to the difference between the sale price and the fair value of the property."
     ],
     correctChoice: 0,
-    rationale: "The distinction is how principal is repaid. Rate structure, security, and property type are separate variables." },
+    rationale: "\u00a7 580d bars the deficiency outright where the property has been sold under the power of sale. The purchase-money character matters under \u00a7 580b, and fair-value limits belong to judicial foreclosure." },
   { source: { assignment: "assignment-11", section: "4.3" },
     prompt: "A borrower pays 2 points on a loan of $425,000. What is the dollar cost?",
     choices: [
@@ -2004,17 +2011,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "A negligence claim is decided by what the file shows about the work. A fast sale proves nothing by itself, and a re-run query today cannot reproduce the analysis and may contradict it." },
-  { source: { assignment: "assignment-14", section: "6.8" },
-    crossReferences: [{ assignment: "assignment-15", section: "2.5" }],
-    prompt: "A property manager applies the same written income and credit criteria to every applicant but keeps no record of what was said to telephone inquiries. What is the exposure?",
+  /* Assignment 14 section 2.8 - Government Code 12955, the California characteristics. */
+  { source: { assignment: "assignment-14", section: "2.8" },
+    prompt: "Which characteristic is protected in housing by Government Code \u00a7 12955 but has no counterpart in the federal Fair Housing Act's list?",
     choices: [
-      "Uniform criteria do not answer a claim that different callers received different information, and only an inquiry log can.",
-      "None, because written criteria applied uniformly are a complete defense.",
-      "None, because telephone inquiries are not applications.",
-      "The exposure is limited to the applicants who were denied."
+      "Source of income.",
+      "Familial status.",
+      "National origin.",
+      "Religion."
     ],
     correctChoice: 0,
-    rationale: "Differential information given at the inquiry stage leaves almost no trace and is the least visible violation in leasing. The screening criteria address a different stage." },
+    rationale: "Familial status, national origin and religion are federally protected. Source of income is one of the California additions, along with gender identity and expression, sexual orientation, marital status, ancestry, veteran or military status, and genetic information." },
   { source: { assignment: "assignment-09", section: "5.7" },
     crossReferences: [{ assignment: "assignment-06", section: "6.2" }],
     prompt: "Why does the timing of delivery of the preliminary report and the association documents matter so much to a buyer?",

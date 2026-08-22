@@ -44,14 +44,18 @@ five-item remediation set covering the same concepts a second way for students w
 | --- | --- |
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
-| Words of instructional text | 134,207 |
-| Estimated typeset pages | ~450 |
+| Words of instructional text | 135,445 |
+| Printed volume | **383 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
 RE 303 states that *"approximately 450 pages of text/instructional material is equivalent to
 textbooks offered by a California college or university"* for a 45-hour course.
 
-This course is at approximately 450 pages, meeting the benchmark.
+**This course is at 383 pages (measured), against that ~450-page benchmark.**
+The material is written instruction rather than placeholder text, but it is not yet at the depth
+the benchmark implies, and it is presented here as work in progress. A reviewing instructor is
+being asked to evaluate the approach, the coverage, and the quality of what exists — and their
+comments are wanted while the remaining depth is being written, not afterwards.
 
 ## Timed course outline
 
@@ -70,9 +74,9 @@ This course is at approximately 450 pages, meeting the benchmark.
 | 11 | Escrow, title, closing, and possession | 180 | ~29.6 | Written |
 | 12 | Property management and leasing practice | 180 | ~30.1 | Written |
 | 13 | Ethics, risk management, and dispute prevention | 180 | ~31.2 | Written |
-| 14 | Implicit bias and fair housing participatory practicum | 180 | ~30.2 | Written |
+| 14 | Implicit bias and fair housing participatory practicum | 180 | ~33.6 | Written |
 | 15 | Integrated California residential transaction | 180 | ~30.8 | Written |
-| | **Total** | **2700 minutes = 45 hours** | **~450** | |
+| | **Total** | **2700 minutes = 45 hours** | **~383** | |
 
 ## Lesson detail
 
@@ -1033,7 +1037,7 @@ This course is at approximately 450 pages, meeting the benchmark.
 **Topics covered:**
 
 1. Implicit, explicit, and systemic bias
-2. Historical and social impacts
+2. Historical and social impacts, and the law that answered them
 3. Recognition and interruption strategies
 4. Participatory practicum: the consumer role
 5. Participatory practicum: the licensee role
@@ -1045,6 +1049,7 @@ This course is at approximately 450 pages, meeting the benchmark.
 - Describe how historical housing policy produced patterns that persist without any present-day individual acting with bias.
 - Complete the consumer role-play and articulate, from that position, how the licensee's conduct affected your access.
 - Complete the licensee role-play, receive structured feedback, and revise your response.
+- State the federal and California fair housing law that applies to the practice of real estate, and identify the California characteristics that have no federal counterpart.
 - Identify the specific practices that constrain the discretion in which bias operates.
 - Produce a personal fair housing action plan composed of checkable practices rather than commitments.
 
@@ -1053,9 +1058,10 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Activity | Minutes |
 | --- | ---: |
 | Guided reading: bias types, history, and interruption strategies | 55 |
+| Guided reading: federal and state fair housing law in practice | 10 |
 | Participatory practicum: consumer role | 30 |
 | Participatory practicum: licensee role and revision | 35 |
-| Guided reading: action plan design | 30 |
+| Guided reading: action plan design | 20 |
 | Applied scenario and written action plan | 20 |
 | Lesson assessment | 10 |
 | Explicit bias | A consciously held attitude the person is aware of |

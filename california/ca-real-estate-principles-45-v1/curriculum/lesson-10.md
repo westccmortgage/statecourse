@@ -196,7 +196,63 @@ The highest-risk moment in the transaction is when funds move, and it belongs in
 
 Sent early, the warning costs nothing and prevents the largest single loss a residential client can suffer. Sent the day funds move, it arrives after the attacker has established the thread.
 
-### 3.7 Checkpoint
+### 3.8 The trust fund statute, in the broker's own words
+
+Section 3.1 described the handling of a deposit. The rule behind it is **Business and Professions Code § 10145**, and it is the section most often cited in Department discipline, so it is worth having exactly.
+
+> *"(a)(1) A real estate broker who accepts funds belonging to others in connection with a transaction subject to this part shall deposit all those funds that are **not immediately placed into a neutral escrow depository** or **into the hands of the broker's principal**, into a **trust fund account maintained by the broker in a bank or recognized depository in this state**. All funds deposited by the broker in a trust fund account **shall be maintained there until disbursed by the broker in accordance with instructions from the person entitled to the funds**."*
+
+**Read it as a decision tree, because that is how it operates.** A broker receiving funds belonging to another has exactly three lawful destinations:
+
+1. **A neutral escrow depository**, immediately; or
+2. **The hands of the broker's principal**, immediately; or
+3. **The broker's trust fund account**, in a bank or recognised depository **in this state**.
+
+**There is no fourth.** A general business account is not on the list. A personal account is not on the list. A desk drawer is not on the list. **The absence of a fourth option is the whole of trust fund law**, and every commingling case is a broker who invented one.
+
+**"Until disbursed … in accordance with instructions from the person entitled to the funds."** Once in the trust account, the money leaves on the instruction of the person entitled to it — not on the broker's judgment about who ought to have it, and not because a transaction has fallen apart and the broker has formed a view about who is at fault. **A dispute over a deposit is a dispute the broker holds the money through**, and this sentence is why.
+
+### 3.9 Who may sign, and the condition attached to the last one
+
+Section 10145 then addresses withdrawals, and the structure is unusually specific:
+
+> *"(a)(2) Withdrawals may be made from a trust fund account of an individual broker **only upon the signature of that broker**, or in the case of a corporate broker, only upon the signature of an officer through whom the corporation is licensed …, **or one, or more, of the following persons if specifically authorized in writing by the individual broker or officer**: (A) A **real estate salesperson licensed to the broker**. (B) **Another broker** acting pursuant to a written agreement with the individual broker … (C) **An unlicensed employee of the individual broker, if the broker has fidelity bond or insurance coverage** equal to at least the maximum amount …"*
+
+**Three points, and the third is the one people miss.**
+
+**The default is the broker's own signature.** Anyone else signing needs specific written authorisation from the broker or, for a corporate broker, from the licensed officer. Verbal authorisation is not on the list.
+
+**A salesperson may be authorised.** Being licensed to the broker is what qualifies them; the written authorisation is what empowers them.
+
+**An unlicensed employee may also be authorised — but only with a bond.** Subdivision (C) attaches a condition the other two do not carry: **fidelity bond or insurance coverage** at least equal to the maximum amount of trust funds the employee has access to. The Legislature was willing to let an unlicensed person sign on a trust account, and unwilling to let it happen uninsured. **A brokerage that authorises a bookkeeper without the bond has satisfied the form of subdivision (C) and not its condition**, which in an audit is indistinguishable from not having complied at all.
+
+### 3.10 What auditors actually find
+
+The failures are few in number and they repeat. A licensee who knows the five will recognise them in a brokerage before an auditor does.
+
+| Finding | What it looks like | Why it is serious |
+|---|---|---|
+| **Commingling** | Trust funds in the operating account, even briefly, even by accident | § 10145 lists three destinations and this is not one of them. Intent is not an element |
+| **Trust account shortage** | The account balance is less than the sum of what is owed to beneficiaries | Money belonging to one beneficiary is being used for another. This is the finding that ends careers |
+| **No beneficiary ledger** | A bank balance with no per-person record behind it | Without ledgers, no one can show whose money is whose — the account cannot be proved correct even if it is |
+| **Unauthorised signatory** | A person signing who has no specific written authorisation, or an unlicensed employee with no bond | § 10145(a)(2), read literally |
+| **Disbursement against a dispute** | The broker releases a deposit to one side of an argument | *"in accordance with instructions from the person entitled to the funds"* — a contested deposit has no such instruction yet |
+
+**The reconciliation habit that prevents four of the five.** Monthly, three figures must agree: the **bank statement balance**, the **book balance**, and the **sum of all beneficiary ledgers**. Reconciling bank against book alone will balance a trust account that is missing a beneficiary's money entirely. **The third leg is what makes the reconciliation mean something**, and it is the one most often skipped.
+
+### 3.11 A worked shortage
+
+> A brokerage holds deposits for four transactions: $15,000, $22,000, $8,500 and $40,000 — $85,500 in total. The bank statement shows $79,300. The broker explains that $6,200 was drawn last month to cover a payroll shortfall and will be replaced when a commission funds next week.
+
+**This is a trust fund shortage of $6,200, and it is not cured by the intention to replace it.**
+
+Notice what has actually happened. The four beneficiaries are owed $85,500 and the account holds $79,300. **Every one of them is now partially secured by a promise rather than by money**, and none of them was asked. If two of them demanded their funds tomorrow, the broker could pay them — using the third and fourth beneficiaries' money. **That is the mechanism by which a small shortage becomes a large one**, and it is why the finding is treated as it is.
+
+**Three separate violations are visible in one sentence of explanation.** Funds were not maintained in the trust account until disbursed on the instruction of the person entitled to them (§ 10145(a)(1)); funds belonging to others were used for the broker's own purpose; and the disbursement went to a payee no beneficiary instructed.
+
+**What a salesperson who learns this should do.** Not investigate, and not confront. **Escalate in writing to the broker, and if the broker is the problem, to counsel.** A salesperson who says nothing has knowledge of a trust fund shortage, and knowledge is a difficult thing to explain later.
+
+### 3.12 Checkpoint
 
 You should be able to explain what happens to a disputed deposit, why a payoff exceeds the principal balance, and what the wire fraud warning must say and when it must be sent.
 
@@ -281,7 +337,50 @@ The structure:
 
 **A discrepancy found the day before closing is a problem; the same discrepancy found after disbursement is a dispute.**
 
-### 4.7 Checkpoint
+### 4.8 Reading a closing statement line by line
+
+Section 4.2 explained debits and credits. This section reads a real one, because a licensee who cannot check a closing statement is relying on somebody else's arithmetic in a document their client signs.
+
+**The rule that resolves every entry:** a **debit** is a charge to that party; a **credit** is money in their favour. Every item appears once on each side of the transaction, or once on one side only where it belongs to one party alone.
+
+> Sale price **$725,000**. Closing **12 October**. Buyer's new loan **$580,000**. Deposit already in escrow **$21,750**. Annual property taxes **$8,700**, paid by the seller through **31 December**. Seller's loan payoff **$412,300**. Commission **5%**. Seller's escrow fee **$1,450**; buyer's **$1,450**. Title policy (seller) **$2,180**. Recording (buyer) **$185**. Prorate on a 360-day year, 30-day months, day of closing to the buyer.
+
+**Tax proration.** The seller paid through 31 December and owned through 11 October.
+Buyer's period: 12 October to 31 December = 19 + 30 + 30 = **79 days**.
+Daily: $8,700 ÷ 360 = **$24.1667**.
+Buyer owes the seller: 79 × $24.1667 = **$1,909.17**.
+
+| | Buyer debit | Buyer credit | Seller debit | Seller credit |
+|---|---:|---:|---:|---:|
+| Purchase price | 725,000.00 | | | 725,000.00 |
+| Deposit | | 21,750.00 | | |
+| New loan | | 580,000.00 | | |
+| Tax proration | 1,909.17 | | | 1,909.17 |
+| Seller's loan payoff | | | 412,300.00 | |
+| Commission 5% | | | 36,250.00 | |
+| Escrow fee | 1,450.00 | | 1,450.00 | |
+| Title policy | | | 2,180.00 | |
+| Recording | 185.00 | | | |
+| **Totals** | **728,544.17** | **601,750.00** | **452,180.00** | **726,909.17** |
+
+**Buyer brings:** 728,544.17 − 601,750.00 = **$126,794.17**.
+**Seller receives:** 726,909.17 − 452,180.00 = **$274,729.17**.
+
+**Check it.** Buyer's cash in ($126,794.17) plus the loan ($580,000) plus the deposit ($21,750) = $728,544.17, which equals the buyer's debits. The statement balances.
+
+### 4.9 The four errors a licensee should be able to catch
+
+**A proration on the wrong side.** The commonest error, and it doubles: an $1,909 proration credited to the wrong party is a $3,818 swing. **The test is one question — who paid, and for what period.** The party who paid beyond their ownership is owed; the party who owned without paying owes.
+
+**A payoff quoted to the wrong date.** Loan payoffs carry per diem interest and are quoted good through a specific date. **A payoff good through 5 October used at a 12 October closing is short by seven days' interest**, and the shortage surfaces after closing when the lender does not release the lien.
+
+**A commission computed on the wrong base.** Five per cent of $725,000 is $36,250. Five per cent of a price that changed in a counteroffer nobody carried through to escrow is a different number.
+
+**A charge that belongs to the other side.** Who pays the owner's title policy, the transfer tax and the escrow fee is **negotiable and regional**, and it is settled by the purchase agreement. **The closing statement should be checked against the contract, not against habit.**
+
+**And the professional framing.** The escrow holder prepares the statement and is far less likely to be wrong than the licensee checking it. **That is not a reason to skip the check.** The licensee is the only person in the transaction who has read both the contract and the statement, and an error caught the day before closing is a correction; the same error caught afterwards is a demand letter.
+
+### 4.10 Checkpoint
 
 You should be able to compute a proration in both directions, state which party is credited in each, and describe what a licensee checks on a closing statement.
 
@@ -474,7 +573,49 @@ Section 6.7 addresses what prevents disputes. This section states the structural
 
 > **The one habit that covers most of the table:** at every point where something is agreed, ask two questions — **who has to receive this, and how will the file show they did?** Both answers are usually the licensee, and both take a minute.
 
-### 6.10 Checkpoint
+### 6.11 What the records must be able to produce
+
+Section 6.2 listed the documents a file holds. The standard for keeping them is set by what they must be able to do later, and Regulation 3000(a)(4) states one of those purposes exactly: the school shall maintain records for each student **sufficient to allow preparation of a duplicate certificate on request**.
+
+**The same logic runs through every record a brokerage keeps.** The question is never "how long do we keep this" in the abstract. It is: **what will somebody need to reconstruct, and from what?**
+
+| What must be reconstructable | From | Why it is asked for |
+|---|---|---|
+| Who represented whom, and from when | Agency disclosure, election, confirmation, all dated | The first question in any agency dispute |
+| What the parties agreed | The executed agreement and every counteroffer and addendum, in sequence | Disputes are about terms nobody can locate |
+| What was disclosed and when it was delivered | Disclosures with **evidence of delivery**, not merely signature | Signature proves execution; delivery proves receipt |
+| Where every dollar went | Trust account records, beneficiary ledgers, reconciliations | § 10145 and an audit |
+| What the licensee was paid, by whom | Compensation records and disclosures | § 10176(g) — the full amount, revealed |
+| That advertising complied | Copies of advertisements as published | A fair housing or advertising allegation |
+
+**Two habits that make a file reconstructable, and they cost nothing at the time.**
+
+**Date everything at the moment it happens.** Assignment 07's worked audit turns entirely on dates running out of order. A date written later, from memory, is the beginning of a much worse problem.
+
+**Evidence delivery, not just signature.** A disclosure signed by a buyer proves the buyer signed something. A transmittal with a date, or an email, or a delivery receipt proves *when the buyer got it* — which is the fact in dispute in nearly every disclosure claim.
+
+### 6.12 Corrections, and the rule that never bends
+
+Records get things wrong. How the correction is made is the difference between a diligent file and a falsified one.
+
+**The rule: append, never overwrite.** A correction is a new dated entry that states what was wrong, what is right, and when the correction was made. **The original entry stays.**
+
+**Why, in one sentence:** a record that can be silently changed proves nothing about anything, including the parts that were always right.
+
+**What this looks like in practice.**
+
+| Situation | Wrong | Right |
+|---|---|---|
+| A date was mistyped on a disclosure | Cross it out and write the correct date | A dated memorandum in the file recording the error and the correct date, initialled by whoever knows it |
+| A completion record shows the wrong course version | Edit the record | Issue a superseding record referencing the one it replaces |
+| An addendum was signed but not scanned | Backdate the scan | Scan it now, with today's date, noting the execution date |
+| A commission disclosure omitted a referral fee | Replace the disclosure | Deliver a corrected disclosure now, keep both, and tell the broker |
+
+**The last row is worth its own line.** A licensee who discovers an omitted compensation disclosure has discovered a § 10176(g) problem. **Correcting it forward, promptly, with both versions retained, is the response that is defensible.** Replacing the document is the response that converts a disclosure lapse into a falsification.
+
+**And the same principle governs the platform's own records** — the completion evidence, the study time, the assessment attempts, the examination result. **A record that documents what happened is worth having precisely because nobody can quietly change it**, and that property is only worth anything if it holds when the record is inconvenient.
+
+### 6.13 Checkpoint
 
 You should be able to run the post-closing audit, state what may legitimately be obtained after closing and what may never be created, and explain why failed transactions are retained.
 

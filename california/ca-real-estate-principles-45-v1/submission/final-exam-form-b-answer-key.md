@@ -104,16 +104,16 @@ C. Answer immediately in his own words to demonstrate cooperation.
 >
 > **Found in the course material at:** Assignment 01 (The real estate profession and California regulatory structure), section 2.6
 
-### 7. Which task in a residential transaction has no assigned owner outside the brokerage?
+### 7. Where do the titles "Real Estate Practice" and "Real Estate Principles" come from?
 
-**A. Building and watching the deadline calendar the contract creates.**
-B. Underwriting the buyer's loan.
-C. Searching title and issuing the preliminary report.
-D. Performing the appraisal.
+**A. Business and Professions Code § 10153.2, which names the courses an applicant must complete to qualify for examination.**
+B. Convention among California schools, which have used consistent titles for decades.
+C. The Commissioner's Regulations, which prescribe course titles for private vocational schools.
+D. The Department's course provider handbook, which lists approved titles.
 
-> **Correct answer: A.** Title, underwriting, and valuation each have a named owner outside the brokerage. Deadlines belong to no participant by default, which is why they are the most failure-prone element.
+> **Correct answer: A.** § 10153.2 lists the statutory courses by name. A school offering an equivalent course offers it under the statutory title, and the regulations and the handbook implement the section rather than supply the names.
 >
-> **Found in the course material at:** Assignment 01 (The real estate profession and California regulatory structure), section 6.5
+> **Found in the course material at:** Assignment 01 (The real estate profession and California regulatory structure), section 5.7
 
 ### 8. Standing timber is cut and stacked for sale. What has happened to its classification?
 
@@ -324,16 +324,16 @@ D. It attaches to all of the owner's property rather than to the taxed parcel.
 >
 > **Found in the course material at:** Assignment 05 (Encumbrances, liens, easements, and restrictions), section 2.2
 
-### 27. What distinguishes a mechanic's lien from most other involuntary liens?
+### 27. Code of Civil Procedure § 704.730 sets the homestead exemption as the greater of the prior year's countywide median sale price for a single-family home, capped, or a stated floor, with both figures adjusting annually for inflation. What does this mean for a licensee asked the amount?
 
-**A. Its priority may relate back to a point earlier than its recording, tied to the commencement of the work or improvement.**
-B. It attaches to the contractor's property rather than the owner's.
-C. It requires a court judgment before it can be recorded.
-D. It may be recorded by anyone who believes he is owed money by the owner.
+**A. The answer is county-specific and changes annually, so it comes from the current statute rather than from a remembered figure.**
+B. The answer depends on the debtor's age and household composition, as it did under the former scheme.
+C. The answer is whatever equity the debtor has, since the exemption protects the whole homestead.
+D. The answer is a single statewide amount that has been fixed since the section was last amended.
 
-> **Correct answer: A.** The relation-back feature is what makes mechanic's liens dangerous to a lender and a buyer: a lien recorded later can outrank an intervening instrument.
+> **Correct answer: A.** The section sets a floor and a cap with the actual figure driven by the county median, and provides for annual CPI adjustment. Age and household tiering belonged to the repealed scheme.
 >
-> **Found in the course material at:** Assignment 05 (Encumbrances, liens, easements, and restrictions), section 2.3
+> **Found in the course material at:** Assignment 05 (Encumbrances, liens, easements, and restrictions), section 2.8
 
 ### 28. Which of the following is a recognized way an easement may be created?
 
@@ -456,16 +456,16 @@ D. The agent must comply, because obedience is owed to the principal without qua
 >
 > **Found in the course material at:** Assignment 07 (Agency and brokerage relationships), section 2.2
 
-### 39. What does a licensee owe to a party who is not his client?
+### 39. Civil Code § 2079.16 divides a seller's agent's obligations into duties owed to the seller and duties owed "to the Buyer and the Seller." Which is in the second group?
 
-A. Only the duty to present offers promptly.
-**B. Honesty, fair dealing, and disclosure of material facts.**
-C. Nothing, because duties run only to the principal.
-D. The same fiduciary duties owed to the principal.
+A. The duty to keep the client's bargaining position confidential.
+**B. The duty to disclose all facts known to the agent materially affecting the value or desirability of the property.**
+C. The fiduciary duty of utmost care, integrity, honesty and loyalty.
+D. The duty to obey the client's lawful instructions.
 
-> **Correct answer: B.** Fiduciary duties run to the principal; honesty, fair dealing, and disclosure of material facts run to everyone, and that duty is not reduced by the other party having representation.
+> **Correct answer: B.** The disclosure duty runs to both parties even though the fiduciary duty runs only to the client. Loyalty, obedience and confidentiality are owed to the principal.
 >
-> **Found in the course material at:** Assignment 07 (Agency and brokerage relationships), section 2.6
+> **Found in the course material at:** Assignment 07 (Agency and brokerage relationships), section 4.9
 
 ### 40. What may a dual agent NOT do?
 
@@ -599,16 +599,16 @@ C. Fee simple absolute, warranted against all claims.
 >
 > **Found in the course material at:** Assignment 09 (Transfer, deeds, title, and recording), section 2.3
 
-### 52. What does a deed of reconveyance accomplish?
+### 52. A buyer takes a deed and does not record it. Later the same owner gifts the property to a nephew, who records immediately and knows nothing of the first deed. Under Civil Code § 1214, who prevails?
 
-**A. It reconveys title held by the trustee back to the trustor once the secured obligation is satisfied.**
-B. It corrects an error in a previously recorded deed.
-C. It conveys a partial interest to a junior lienholder.
-D. It transfers the property from the borrower to the lender after default.
+**A. The first buyer, because the nephew did not take for a valuable consideration.**
+B. The nephew, because an unrecorded conveyance is void against anyone.
+C. The first buyer, because a gift deed conveys nothing until the donee pays value.
+D. The nephew, because he recorded first and took in good faith.
 
-> **Correct answer: A.** Reconveyance is the release step under a deed of trust when the debt is paid. Transfer to the lender after default and correction of a prior deed are different instruments.
+> **Correct answer: A.** § 1214 protects a subsequent purchaser or mortgagee who is in good faith, for a valuable consideration, and first to record. A donee fails the consideration element, so the earlier unrecorded deed stands against him.
 >
-> **Found in the course material at:** Assignment 09 (Transfer, deeds, title, and recording), section 2.5
+> **Found in the course material at:** Assignment 09 (Transfer, deeds, title, and recording), section 4.8
 
 ### 53. Which describes constructive notice?
 
@@ -709,16 +709,16 @@ D. The loan to be assumed by a subsequent purchaser.
 >
 > **Found in the course material at:** Assignment 11 (Real estate finance foundations), section 1.4
 
-### 62. What distinguishes a straight note from an amortized note?
+### 62. A lender forecloses non-judicially under the power of sale in a deed of trust. The sale leaves a shortfall. What does Code of Civil Procedure § 580d provide?
 
-A. A straight note carries a fixed rate and an amortized note an adjustable one.
-**B. A straight note provides for interest-only payments with the principal due at maturity; an amortized note's payments retire principal over the term.**
-C. A straight note is used for commercial property and an amortized note for residential.
-D. A straight note is unsecured and an amortized note is secured.
+A. A deficiency may be collected only if the loan was not purchase money.
+**B. No deficiency may be owed or collected from the borrower, whatever the loan was for.**
+C. A deficiency may be collected up to the difference between the sale price and the fair value of the property.
+D. A deficiency may be collected after a statutory redemption period expires.
 
-> **Correct answer: B.** The distinction is how principal is repaid. Rate structure, security, and property type are separate variables.
+> **Correct answer: B.** § 580d bars the deficiency outright where the property has been sold under the power of sale. The purchase-money character matters under § 580b, and fair-value limits belong to judicial foreclosure.
 >
-> **Found in the course material at:** Assignment 11 (Real estate finance foundations), section 1.5
+> **Found in the course material at:** Assignment 11 (Real estate finance foundations), section 6.11
 
 ### 63. A borrower pays 2 points on a loan of $425,000. What is the dollar cost?
 
@@ -1064,17 +1064,16 @@ D. Whether the licensee can reproduce the analysis today from current data.
 > **Found in the course material at:** Assignment 12 (Valuation and appraisal foundations), section 6.7
 > **Also drawn from:** Assignment 13 (Taxation, investment, and real estate mathematics), section 6.5
 
-### 94. A property manager applies the same written income and credit criteria to every applicant but keeps no record of what was said to telephone inquiries. What is the exposure?
+### 94. Which characteristic is protected in housing by Government Code § 12955 but has no counterpart in the federal Fair Housing Act's list?
 
-**A. Uniform criteria do not answer a claim that different callers received different information, and only an inquiry log can.**
-B. None, because telephone inquiries are not applications.
-C. None, because written criteria applied uniformly are a complete defense.
-D. The exposure is limited to the applicants who were denied.
+**A. Source of income.**
+B. National origin.
+C. Familial status.
+D. Religion.
 
-> **Correct answer: A.** Differential information given at the inquiry stage leaves almost no trace and is the least visible violation in leasing. The screening criteria address a different stage.
+> **Correct answer: A.** Familial status, national origin and religion are federally protected. Source of income is one of the California additions, along with gender identity and expression, sexual orientation, marital status, ancestry, veteran or military status, and genetic information.
 >
-> **Found in the course material at:** Assignment 14 (Fair housing, civil rights, and consumer protection), section 6.8
-> **Also drawn from:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 2.5
+> **Found in the course material at:** Assignment 14 (Fair housing, civil rights, and consumer protection), section 2.8
 
 ### 95. Why does the timing of delivery of the preliminary report and the association documents matter so much to a buyer?
 

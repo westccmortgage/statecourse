@@ -464,13 +464,14 @@ Progression is sequential: each segment of each assignment must be completed bef
 - Describe how historical housing policy produced patterns that persist without any present-day individual acting with bias.
 - Complete the consumer role-play and articulate, from that position, how the licensee's conduct affected your access.
 - Complete the licensee role-play, receive structured feedback, and revise your response.
+- State the federal and California fair housing law that applies to the practice of real estate, and identify the California characteristics that have no federal counterpart.
 - Identify the specific practices that constrain the discretion in which bias operates.
 - Produce a personal fair housing action plan composed of checkable practices rather than commitments.
 
 **Instructional sections**
 
 1. Implicit, explicit, and systemic bias
-2. Historical and social impacts
+2. Historical and social impacts, and the law that answered them
 3. Recognition and interruption strategies
 4. Participatory practicum: the consumer role
 5. Participatory practicum: the licensee role
@@ -480,10 +481,11 @@ Progression is sequential: each segment of each assignment must be completed bef
 
 | Activity | Minutes | Completion evidence |
 |---|---:|---|
-| Guided reading: bias types, history, and interruption strategies | 55 | Sections 1-3 viewed and notes saved |
+| Guided reading: bias types, history, and interruption strategies | 55 | Sections 1, 2.1-2.5 and 3 viewed and notes saved |
+| Guided reading: federal and state fair housing law in practice | 10 | Sections 2.6-2.8 viewed |
 | **Participatory practicum: consumer role** | 30 | Role-play response and reflection submitted |
 | **Participatory practicum: licensee role and revision** | 35 | Response, instructor feedback reviewed, revision submitted |
-| Guided reading: action plan design | 30 | Sections 6 viewed |
+| Guided reading: action plan design | 20 | Section 6 viewed |
 | Applied scenario and written action plan | 20 | Action plan submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | One of 15 separate lesson assignments |

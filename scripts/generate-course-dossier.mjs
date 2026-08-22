@@ -23,6 +23,25 @@ const outDir = path.join(root, "california/dre-sources/instructor-equivalence");
 const WORDS_PER_LINE = 12;
 const LINES_PER_PAGE = 40;
 
+/*
+ * The page count the reviewing instructor is told must be the page count they receive.
+ *
+ * This file used to state an estimate, and the estimate was wrong by about a hundred pages
+ * against the volume the print builder actually renders — it told a professor the Principles
+ * text was 559 pages when the bound volume is 456. An estimate that overstates by that much is
+ * worse than no figure at all, because the reviewer sizes their commitment by it.
+ *
+ * So where the built PDF exists, its real page count is read from the file. The estimate below
+ * survives only as a fallback for a course whose volume has not been built, and it says which
+ * it is giving.
+ */
+function renderedPages(folder) {
+  const pdf = path.join(root, "california/print", `${folder}-course-text.pdf`);
+  if (!fs.existsSync(pdf)) return null;
+  const counts = [...fs.readFileSync(pdf).toString("latin1").matchAll(/\/Type\s*\/Page[^s]/g)];
+  return counts.length || null;
+}
+
 function estimatePages(markdown) {
   let lines = 0;
   for (const raw of markdown.split("\n")) {
@@ -66,11 +85,12 @@ function parseLesson(markdown) {
   return { subject, objectives, timed, topics };
 }
 
-function courseTotals(lessons) {
+function courseTotals(lessons, folder) {
   const words = lessons.reduce((sum, lesson) => sum + lesson.words, 0);
-  const pages = lessons.reduce((sum, lesson) => sum + lesson.pages, 0);
+  const measured = renderedPages(folder);
+  const pages = measured ?? lessons.reduce((sum, lesson) => sum + lesson.pages, 0);
   const rebuilt = lessons.filter((lesson) => lesson.distinct).length;
-  return { words, pages, rebuilt };
+  return { words, pages, rebuilt, measured: measured !== null };
 }
 
 /* A lesson still generated from the original template repeats the same sentence stems
@@ -99,7 +119,7 @@ for (const courseId of engine.CALIFORNIA_COURSE_IDS) {
     };
   });
 
-  const totals = courseTotals(lessons);
+  const totals = courseTotals(lessons, folder);
   const assessmentItems = course.assignments.reduce((sum, assignment) => {
     return sum + ["applied", "engagement", "remediation"].reduce((inner, kind) => {
       return inner + (engine.getCaliforniaAssessment(courseId, assignment.id, kind)?.items.length ?? 0);
@@ -162,20 +182,24 @@ for (const courseId of engine.CALIFORNIA_COURSE_IDS) {
   out.push(`| Lesson assignments | ${lessons.length} |`);
   out.push(`| Lessons written as distinct instruction | ${totals.rebuilt} of ${lessons.length} |`);
   out.push(`| Words of instructional text | ${totals.words.toLocaleString("en-US")} |`);
-  out.push(`| Estimated typeset pages | ~${Math.round(totals.pages)} |`);
+  out.push(
+    totals.measured
+      ? `| Printed volume | **${totals.pages} pages**, measured from the bound PDF submitted with this application |`
+      : `| Estimated typeset pages | ~${Math.round(totals.pages)} (estimate — the volume has not been built) |`,
+  );
   out.push(`| Scored assessment items | ${assessmentItems} |`);
   out.push("");
   out.push("RE 303 states that *\"approximately 450 pages of text/instructional material is equivalent to");
   out.push("textbooks offered by a California college or university\"* for a 45-hour course.");
   out.push("");
   if (Math.round(totals.pages) < 450) {
-    out.push(`**This course is currently at approximately ${Math.round(totals.pages)} pages, against that ~450-page benchmark.**`);
+    out.push(`**This course is at ${totals.pages} pages${totals.measured ? " (measured)" : " (estimated)"}, against that ~450-page benchmark.**`);
     out.push("The material is written instruction rather than placeholder text, but it is not yet at the depth");
     out.push("the benchmark implies, and it is presented here as work in progress. A reviewing instructor is");
     out.push("being asked to evaluate the approach, the coverage, and the quality of what exists — and their");
     out.push("comments are wanted while the remaining depth is being written, not afterwards.");
   } else {
-    out.push(`This course is at approximately ${Math.round(totals.pages)} pages, meeting the benchmark.`);
+    out.push(`This course is at **${totals.pages} pages${totals.measured ? ", measured from the bound volume" : " (estimated)"}**, meeting the benchmark. The volume contains the complete student-viewable instructional text together with the applied exercise, engagement check and remediation set for every assignment — all of the material RE 303 item 6 asks for.`);
   }
   out.push("");
   if (totals.rebuilt < lessons.length) {

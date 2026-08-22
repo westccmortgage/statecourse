@@ -134,7 +134,65 @@ California provides a homestead exemption protecting a portion of a homeowner's 
 
 The licensee's role is to recognize the term when a client raises it and to route it to counsel rather than explaining its effect on a particular creditor.
 
-### 2.7 Checkpoint
+### 2.8 The homestead exemption, and the figure that changed
+
+Section 2.3 listed the involuntary liens a judgment creditor can reach. The homestead exemption is what a judgment debtor keeps out of that reach, and California's is unusually large — large enough that a licensee who learned an older figure will be wrong by a factor of several.
+
+**Code of Civil Procedure § 704.730** sets it:
+
+> *"(a) The amount of the homestead exemption is **the greater of** the following:*
+>
+> *(1) The **countywide median sale price for a single-family home** in the calendar year prior to the calendar year in which the judgment debtor claims the exemption, **not to exceed six hundred thousand dollars ($600,000)**.*
+>
+> *(2) **Three hundred thousand dollars ($300,000)**.*
+>
+> *(b) The amounts specified in this section shall **adjust annually for inflation**, beginning on January 1, 2022, based on the change in the annual California Consumer Price Index for All Urban Consumers … with each adjusted amount rounded to the nearest twenty-five dollars ($25)."*
+
+**Four features of that section a licensee should hold onto.**
+
+**It is a floor and a ceiling, not a single number.** The exemption is *at least* $300,000 and *at most* $600,000, with the actual figure set by the prior year's countywide median sale price. In a county whose median is $480,000, the exemption is $480,000. In a county whose median is $1.4 million, it is capped at $600,000. In a county whose median is $210,000, the floor lifts it to $300,000.
+
+**It is county-specific.** The same debtor with the same equity is protected differently in Kern and in Marin. **This is one of the few places in California real property law where the answer depends on which county the property is in**, and it is worth remembering because most rules do not work that way.
+
+**Both figures index annually.** The $300,000 and $600,000 in the printed section are the amounts as enacted; they adjust each January by the California CPI, rounded to the nearest $25. **A figure quoted from a course, a website, or a memory is therefore stale by construction.** The current amount comes from the current statute and nowhere else.
+
+**These figures are dramatically larger than the historical ones.** California's homestead exemption was for many years a set of fixed amounts in the tens of thousands of dollars, tiered by the debtor's age and household. **A licensee who learned those figures learned a repealed scheme.** This is Assignment 01 Section 5.4 in concrete form: currency is not a detail of legal research, it is the difference between a right answer and a confidently wrong one.
+
+### 2.9 What the exemption does, and what it does not do
+
+**What it does.** It protects a dollar amount of equity in a debtor's principal dwelling from a forced sale to satisfy a money judgment. If a creditor forces a sale, the exempt amount comes to the debtor before the judgment creditor is paid, and where the equity does not exceed the exemption, a forced sale generally cannot proceed at all because it would produce nothing for the creditor.
+
+**What it does not do.**
+
+**It does not defeat a consensual lien.** A deed of trust the owner signed is not affected. A homeowner cannot claim a homestead exemption against their own mortgage lender.
+
+**It does not defeat a tax lien or a mechanics lien.** The exemption operates against enforcement of money judgments. Liens with their own statutory foundation — property taxes, federal tax liens, mechanics liens under the Civil Code's works-of-improvement provisions — are outside it.
+
+**It does not prevent the judgment lien from attaching.** An abstract of judgment recorded against a debtor still attaches to the property and still appears on a title search. **The exemption is a shield at the sale, not a bar at the recording**, which is why a homestead-exempt owner who sells voluntarily still deals with the judgment lien in escrow.
+
+**It is not a substitute for advice.** Whether a particular debtor may claim it, on which property, and against which creditor, is a question with procedural steps and deadlines attached. A licensee's job is to recognise the issue on a title report and route it, not to reassure a seller that they are protected.
+
+### 2.10 A worked title problem
+
+> A seller's preliminary report shows: a first deed of trust with a payoff of $610,000; an abstract of judgment recorded in 2023 for $92,000; and a property tax lien of $6,400. The property is in escrow at $915,000. The county median sale price for the prior calendar year was $655,000.
+
+**The exemption figure.** The greater of the countywide median ($655,000) capped at $600,000, or $300,000 — so **$600,000**, before the annual CPI adjustment which would raise it further.
+
+**What that means here — and it is not what a seller hopes.** The property is being sold **voluntarily**, in escrow, at a price sufficient to pay everything. The homestead exemption governs what a judgment creditor may force; it does not entitle a seller to convey clear title while leaving a recorded judgment lien on the property. **Escrow will require the abstract of judgment to be paid or released**, because the buyer's lender and the title insurer will not accept it.
+
+Order of payment from the $915,000, in the ordinary case:
+
+| Item | Amount | Why |
+|---|---:|---|
+| Property tax lien | $6,400 | Property taxes take priority over everything |
+| First deed of trust | $610,000 | Consensual, recorded first |
+| Abstract of judgment | $92,000 | Recorded later, but must be cleared to convey insurable title |
+| Costs and commission | — | Per the contract |
+| **To seller** | balance | — |
+
+**The instructive part is what the seller believed.** Told that California's homestead exemption is $600,000 and that their equity is under it, a seller may conclude the judgment "doesn't count." It counts in escrow. **The exemption answers a question about forced sale that this transaction never asked**, and a licensee who does not know the difference will pass the seller's misunderstanding along.
+
+### 2.11 Checkpoint
 
 You should be able to explain why a mechanic's lien defeats the first-recorded intuition, and what clears a paid deed of trust from title.
 
@@ -234,7 +292,51 @@ Easements can end by express release, by merger of the dominant and servient par
 >
 > **The professional summary.** **The buyer is buying a lot on which he cannot do two of the things he intends without answering questions first.** He is entitled to know that before he removes his contingencies, and the licensee's contribution is that he learns it on day three rather than after closing.
 
-### 3.8 Checkpoint
+### 3.9 How easements are created, and how they end
+
+Section 3.2 defined the easement. Its creation and termination are where the practical questions sit, because an easement nobody granted in writing is the one that surprises a buyer.
+
+**Creation.**
+
+| Method | How it arises | What a licensee sees |
+|---|---|---|
+| **Express grant or reservation** | The owner grants it, or reserves it when conveying | A recorded instrument; a Schedule B exception |
+| **Implication** | A prior use, apparent and continuous, reasonably necessary, existing when a parcel was divided | Nothing recorded — a driveway or a sewer line crossing a neighbour |
+| **Necessity** | A parcel is landlocked by a division of formerly common ownership | A parcel with no frontage on any road |
+| **Prescription** | Open, notorious, hostile, continuous use for the statutory period | A neighbour who has used the driveway for twenty years |
+| **Dedication** | An owner offers land for public use and it is accepted | Streets and public ways on a subdivision map |
+
+**The last three create rights nobody recorded**, which is why the standard title policy excepts *"any facts an accurate survey would disclose"* and why Assignment 09 Section 4.9 insists that possession is notice.
+
+**Termination.**
+
+**Express release.** The dominant owner releases it, in writing, recorded.
+
+**Merger.** The dominant and servient tenements come into the same ownership. An easement over one's own land is not an easement — and note the consequence: **if the parcels are later separated again, the easement does not automatically revive.**
+
+**Abandonment.** Non-use alone is generally not enough; there must be conduct showing intent to abandon.
+
+**Expiration.** Where the instrument sets a term or a condition that has occurred.
+
+**End of necessity.** An easement by necessity ends when the necessity does — when the landlocked parcel gains other access.
+
+### 3.10 A worked easement problem
+
+> A buyer is purchasing a rural parcel. The preliminary report shows a recorded 20-foot access easement from the county road across a neighbouring parcel. On inspection, the actual driveway runs about 60 feet to the north of where the recorded easement is described, and has evidently done so for many years — there is mature landscaping along it and a culvert under it.
+
+**The buyer has two different access questions and only one of them is answered by the recorded easement.**
+
+**The recorded easement is real** and gives a legal right of access — over ground that has no road on it. Building a driveway within the recorded easement would mean grading a new route, and the neighbour's landscaping and outbuildings may be in the way.
+
+**The driveway in use is not within the recorded easement.** Its legal basis, if any, would be prescription, implication, or an unrecorded agreement — none of which appears in the report and none of which a licensee can determine.
+
+**Three actions, in order.** Obtain the recorded easement instrument and read its description. Have a surveyor locate both the recorded easement and the existing driveway on the ground. **Then send the result to counsel**, because whether the buyer may keep using the existing driveway is a legal question with a factual foundation that only the survey supplies.
+
+**What makes this urgent rather than interesting.** If the buyer's use of the actual driveway rests on prescription against the neighbour, **the purchase itself may affect it**, and a neighbour who has tolerated one family's use for twenty years may take a different view of a new owner. **The time to find out is during the contingency period.**
+
+**The failure mode to avoid** is the reassuring summary: *"there's a recorded easement, you have access."* That sentence is true, is what the report says, and completely misses what is actually happening on the ground.
+
+### 3.11 Checkpoint
 
 You should be able to identify the dominant and servient parcels, distinguish an easement from a license, and state the correct handling of an easement shown in a preliminary report.
 
@@ -344,7 +446,59 @@ Escrow obtains payoff demands and clears what must be cleared; title determines 
 
 A licensee's contribution is to surface issues early — the recent construction, the similar-name judgment, the unreleased deed of trust — so there is time to resolve them, and to route the questions rather than answering them.
 
-### 5.6 Checkpoint
+### 5.7 Priority worked as a payment waterfall
+
+Section 5.3 stated the priority rule — first in time, first in right, subject to statutory exceptions. This section runs it as arithmetic, because that is how it is experienced.
+
+**The two exceptions that outrank recording order.**
+
+**Property tax liens.** Ad valorem property taxes and most assessments take priority regardless of when anything else was recorded. A first deed of trust recorded in 2004 is junior to a 2026 property tax lien.
+
+**Mechanics liens relate back.** A mechanics lien for a work of improvement generally takes priority from the **commencement of the work**, not from the date the lien was recorded. **A lender who funded after a bulldozer arrived may find itself junior to a lien recorded months later.** This is why construction lenders inspect the site before recording and why title companies ask about recent work.
+
+> **The waterfall.** A property sells at a forced sale for **$742,000**, with five liens recorded against it.
+
+| Recorded | Lien | Amount |
+|---|---|---:|
+| 2019 | First deed of trust | $520,000 |
+| 2022 | Second deed of trust (HELOC, full line) | $150,000 |
+| 2024 | Abstract of judgment | $88,000 |
+| 2025 | Mechanics lien (work commenced 2023) | $61,000 |
+| 2026 | Property taxes | $9,300 |
+
+**Order of payment, and why:**
+
+| Order | Lien | Paid | Running balance |
+|---|---|---:|---:|
+| 1 | Property taxes 2026 | $9,300 | $732,700 |
+| 2 | Mechanics lien — **relates back to 2023** | $61,000 | $671,700 |
+| 3 | First deed of trust 2019 | $520,000 | $151,700 |
+| 4 | Second deed of trust 2022 | $150,000 | $1,700 |
+| 5 | Abstract of judgment 2024 | **$1,700 of $88,000** | $0 |
+
+**Two results worth sitting with.**
+
+**The mechanics lien jumped ahead of a deed of trust recorded four years earlier**, because the work commenced in 2023 and relation-back is measured from commencement. The 2019 first still outranks it — the work began after 2019 — but a 2024 lender would have been leapfrogged.
+
+**The judgment creditor recovers $1,700 of $88,000 and the lien is extinguished by the sale.** Junior liens are wiped by a senior foreclosure; the debt survives as a personal obligation where the anti-deficiency statutes do not bar it, but the security is gone.
+
+### 5.8 What a licensee does with a preliminary report
+
+The waterfall above is invisible until someone reads Schedule B, and reading it is a licensee's job in the sense that **noticing** is the licensee's job.
+
+**Four things to look for, in order.**
+
+**Anything the seller did not mention.** A second deed of trust, an abstract of judgment, a mechanics lien, a lis pendens, a bankruptcy. Sellers routinely forget encumbrances that were resolved informally and never released of record.
+
+**Anything with a date close to the present.** A recent recording is a live situation. A mechanics lien recorded last month means a contractor is unpaid **now**, and there may be more coming from other trades on the same job.
+
+**Anything naming a person who is not the seller.** A judgment against a former owner with the same surname; a lien against a business the seller once operated. Some of these are genuine and some are name-match errors, and **the difference is resolved by a title officer, not by the licensee's judgment about which it looks like.**
+
+**Anything about boundaries, access or easements.** These do not get paid off at closing. They travel with the land, and they change what the buyer is buying.
+
+**And one habit that costs nothing.** **Send the preliminary report to the buyer with the items numbered and a sentence asking which they want explained.** It converts a document that is routinely unread into a document with a record of delivery — and if the buyer later says nobody told them about the easement, the email is the answer.
+
+### 5.9 Checkpoint
 
 You should be able to explain constructive and inquiry notice, state the priority rule and its principal exceptions, and describe the correct handling of an encroachment.
 

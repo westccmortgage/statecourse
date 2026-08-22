@@ -45,13 +45,17 @@ five-item remediation set covering the same concepts a second way for students w
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
 | Words of instructional text | 125,295 |
-| Estimated typeset pages | ~450 |
+| Printed volume | **380 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
 RE 303 states that *"approximately 450 pages of text/instructional material is equivalent to
 textbooks offered by a California college or university"* for a 45-hour course.
 
-This course is at approximately 450 pages, meeting the benchmark.
+**This course is at 380 pages (measured), against that ~450-page benchmark.**
+The material is written instruction rather than placeholder text, but it is not yet at the depth
+the benchmark implies, and it is presented here as work in progress. A reviewing instructor is
+being asked to evaluate the approach, the coverage, and the quality of what exists — and their
+comments are wanted while the remaining depth is being written, not afterwards.
 
 ## Timed course outline
 
@@ -72,7 +76,7 @@ This course is at approximately 450 pages, meeting the benchmark.
 | 13 | Servicing, payoff, default, and foreclosure | 180 | ~28.6 | Written |
 | 14 | Fair lending, fraud prevention, and ethical mortgage practice | 180 | ~32.6 | Written |
 | 15 | Integrated California mortgage brokerage file | 180 | ~38.3 | Written |
-| | **Total** | **2700 minutes = 45 hours** | **~450** | |
+| | **Total** | **2700 minutes = 45 hours** | **~380** | |
 
 ## Lesson detail
 

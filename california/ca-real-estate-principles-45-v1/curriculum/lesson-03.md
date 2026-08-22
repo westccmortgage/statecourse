@@ -218,7 +218,41 @@ Vesting has ownership, survivorship, tax, and estate consequences, and **advisin
 >
 > **What the week produced.** Six appointments, six documents requested, two matters routed to counsel before listing. **None of the six sellers described their situation inaccurately on purpose.** Each described it the way people describe ownership in conversation, which is by relationship rather than by interest — and Section 1.5's point is that those are not the same thing.
 
-### 3.8 Checkpoint
+### 3.9 The joint tenancy statute, and the words that create it
+
+Section 3.1 gave the four unities. Section 3.3 explained survivorship. **Civil Code § 683** is where both come from, and its most important instruction is about drafting rather than about theory:
+
+> *"(a) A joint interest is one owned by two or more persons in equal shares, by a title created by a single will or transfer, **when expressly declared in the will or transfer to be a joint tenancy**, or by transfer from a sole owner to himself and others, or from tenants in common or joint tenants to themselves or some of them, or to themselves or any of them and others, or from spouses, when holding title as community property or otherwise to themselves or to themselves and others or to one of them and to another or others, **when expressly declared in the transfer to be a joint tenancy**, or when granted or devised to executors or trustees as joint tenants."*
+
+**"Expressly declared" appears twice, and it is the operative phrase.** A joint tenancy is not inferred from equal shares, from a shared purchase, from a marriage, or from the parties' evident intention. **It exists because the instrument says the words.** A deed to "Ana Ruiz and Beatriz Ruiz" creates a tenancy in common no matter what the two of them meant; a deed to "Ana Ruiz and Beatriz Ruiz, as joint tenants" creates a joint tenancy.
+
+**This is the single most consequential drafting point in the whole of concurrent ownership**, because the difference between the two is whether the property passes automatically to the survivor or through the decedent's estate — and by the time anyone consults the deed, one of the owners has usually died and cannot say what was intended.
+
+**Two structural points the section also settles.**
+
+**"In equal shares."** Joint tenants hold equally by definition. Two joint tenants hold halves; four hold quarters. Unequal shares are not a variant of joint tenancy — they are inconsistent with it, and an instrument purporting to create a joint tenancy in unequal shares creates something else.
+
+**A sole owner may create one directly.** The section expressly allows a transfer *"from a sole owner to himself and others"* and from spouses *"to themselves or to themselves and others."* This abolished a common-law trap: at common law the unities of time and title meant a sole owner could not simply deed themselves into a joint tenancy and had to convey through a third party — the "straw man." § 683 removed the need. **A licensee who encounters a straw-man conveyance in an old chain of title is looking at the fossil of a rule that no longer applies.**
+
+**And one boundary the section draws for itself.** § 683(b): *"Provisions of this section do not apply to a joint account in a financial institution if Part 2 (commencing with Section 5100) of Division 5 of the Probate Code applies to such account."* Bank accounts held jointly are governed by a different statute, and reasoning from real property survivorship to a bank account is reasoning from the wrong code.
+
+### 3.10 What the licensee does and does not do with this
+
+**Do not advise on the form of title.** How co-buyers should take title is a decision with tax, estate, creditor and marital consequences that vary by family, and it is a question for a lawyer, an accountant, or both. Recommending joint tenancy because it "avoids probate" is legal advice, is often wrong, and is squarely inside the boundary Assignment 01 Section 4.2 draws.
+
+**Do make sure the question is asked, in time.** Escrow will require vesting instructions. A licensee who lets the question arrive for the first time three days before closing has created a situation in which buyers make an estate-planning decision under deadline pressure with nobody qualified in the room. **Raise it at the point of writing the offer**, and route it out.
+
+**Do read the vesting on the preliminary report and notice when it does not match what the client told you.** A seller who says "my sister and I own it together, it passes to me if anything happens" and a preliminary report showing a tenancy in common are describing different things, and the difference matters before the property is listed, not after.
+
+**A worked situation.**
+
+> Two siblings inherit a duplex from their mother, taking title as tenants in common. Some years later they refinance, and the new deed of trust is signed by both. One sibling dies. Her will leaves everything to her husband.
+
+**The surviving sibling does not take the whole property.** A tenancy in common carries no survivorship, so the deceased sibling's undivided one-half passes under her will to her husband, who becomes a co-tenant with his sister-in-law. **The refinance did not change the vesting** — a deed of trust encumbers the title, it does not re-grant it — and nothing in the transaction converted a tenancy in common into a joint tenancy, because nothing expressly declared it.
+
+**What the licensee should have done years earlier:** noticed the vesting when the property was inherited, told the siblings that how they held title was a question with consequences, and sent them to counsel. That is a fifteen-second conversation that would have been worth having.
+
+### 3.11 Checkpoint
 
 You should be able to state the operative differences between the two forms, explain what severance does to a three-party joint tenancy, and say what you would do when a client asks which to choose.
 
@@ -263,7 +297,50 @@ What the licensee must not do is advise either spouse on their rights, character
 
 Questions about marital status at intake exist to establish authority to convey. They are asked of every client in the same way, recorded, and used for that purpose. A licensee who asks selectively, or who uses the answer for anything other than the authority analysis, has created a fair housing problem alongside the compliance one.
 
-### 4.6 Checkpoint
+### 4.7 Community property, and the presumption that does the work
+
+California is a community property state, and the consequences reach every residential transaction where a married person or registered domestic partner is on title.
+
+**The organising presumption.** Property acquired by a married person during marriage, while domiciled in California, is presumed to be **community property**. Property acquired before marriage, or during marriage by gift, bequest, devise or descent, is **separate property**. So are the rents, issues and profits of separate property.
+
+**Both halves of that sentence matter to a licensee.** The presumption means a house bought during a marriage is community property **even if only one spouse is named on the deed**, unless something rebuts the presumption. And a house owned before the marriage does not become community property merely because the couple lived in it for thirty years.
+
+| | Community property | Separate property |
+|---|---|---|
+| **Typical origin** | Earnings during marriage; anything bought with them | Owned before marriage; gift; inheritance |
+| **Management** | Either spouse may manage, **with limits on real property** | The owning spouse |
+| **On death** | Decedent's half passes by will or intestacy; **community property with right of survivorship passes to the survivor** | By will or intestacy |
+| **Conveying or encumbering real property** | **Both spouses must join** | The owning spouse alone |
+
+**The rule in that last row is the one that stops transactions**, and it is worth stating flatly: **a conveyance or encumbrance of community real property requires the joinder of both spouses.** A listing signed by one spouse, a deed signed by one spouse, a deed of trust signed by one spouse — each is a problem discovered in escrow if not before.
+
+**"Community property with right of survivorship"** is a distinct vesting available to spouses, combining community property character with automatic survivorship. Like joint tenancy under Civil Code § 683, **it must be expressly declared in the instrument.**
+
+### 4.8 What a licensee does about marital status, and what they must not
+
+**Do ask how title is held and whether the owner is married**, as a transactional question at listing. It is not idle: it determines who must sign.
+
+**Do not treat marital status as a screening criterion.** Marital status is a protected characteristic under Government Code § 12955 and Civil Code § 51. Asking a **seller** who must sign the deed is transactional necessity; treating a **buyer or tenant** differently because of their marital status is unlawful. **The question is proper in one direction and prohibited in the other**, and the difference is what the information is used for.
+
+**Do read the vesting on the preliminary report and ask about anything that does not match.** A single person on title who is now married; a married person holding "as his sole and separate property"; an interspousal transfer deed in the chain. **Each is a real question with a real answer**, and each is answered by a title officer or counsel rather than by the licensee.
+
+**Do not advise on characterisation.** Whether a particular asset is community or separate — where separate funds bought a house during marriage, where community earnings paid the mortgage on a separate property, where a spouse signed a deed they now dispute — is a question with a substantial body of law behind it and no reliable shortcut.
+
+**A worked situation.**
+
+> A seller lists a house. Title reads: *"Marcos Delgado, a married man, as his sole and separate property."* His wife signed an interspousal transfer deed at purchase eight years ago. The couple has since separated but is not divorced. The listing agreement is signed by Marcos alone. An offer arrives.
+
+**Three separate questions, none of which the licensee resolves.**
+
+**Does the vesting settle it?** The deed says separate property and the wife executed an interspousal transfer. That is substantial, and it is not conclusive — characterisation can be affected by what happened afterwards, including how the mortgage was paid.
+
+**Does the pending separation change who must sign?** A marital dissolution proceeding commonly carries restraining provisions affecting the disposition of property. **A sale during a pending dissolution is a situation where escrow, the title insurer and counsel all have a view**, and none of them is the listing agent.
+
+**Will the title company insure it?** In practical terms this is the question that decides whether the transaction closes, and it is answered by asking them — early, before the property is marketed, not after an offer is accepted.
+
+**What the licensee should have done at listing:** noticed the interspousal transfer deed in the preliminary report, noticed that the seller described himself as separated, and raised both with the broker and with escrow **before spending the seller's money on marketing.** The cost of asking on day one is a phone call. The cost of asking after an accepted offer is a failed escrow and a buyer who has paid for an inspection.
+
+### 4.9 Checkpoint
 
 You should be able to state the general rule about joining in a conveyance, and describe what you do when the record and the client's description of title do not match.
 
@@ -359,7 +436,45 @@ Section 5.3 explains why this belongs in a principles course. This section makes
 
 > **Section 5.5's limit governs all of it.** The licensee delivers the documents, recommends they be reviewed with counsel, and **does not interpret the restrictions.** Whether a provision permits a particular use is a legal question about a recorded instrument, and it is asked of licensees constantly.
 
-### 5.7 Checkpoint
+### 5.8 What a common interest development actually is, statutorily
+
+Section 5.1 described condominiums functionally. The statutory frame matters because it determines which documents a buyer is entitled to, and when.
+
+The **Davis-Stirling Common Interest Development Act**, Civil Code Part 5 of Division 4 beginning at **§ 4000**, governs residential common interest developments in California. Its existence is confirmed by a section this course has already read for another purpose: **Business and Professions Code § 10153.2(a)(2)(K)** lists, among the courses that qualify an applicant for the broker examination, *"California law that relates to common interest developments, including, but not limited to, topics addressed in the **Davis-Stirling Common Interest Development Act** (Part 5 (commencing with Section 4000) of Division 4 of the Civil Code) and in the **Commercial and Industrial Common Interest Development Act** (Part 5.3 (commencing with Section 6500) of Division 4 of the Civil Code)."*
+
+**Two things follow from that citation, and both are useful to a Principles student.**
+
+**There are two acts, not one.** Residential common interest developments are governed by Davis-Stirling; commercial and industrial ones by a separate act beginning at § 6500. A licensee working a commercial condominium is not working under the residential statute, and the disclosure obligations differ.
+
+**The Legislature treats this as its own subject.** It appears in § 10153.2 as a standalone course option alongside escrows, property management and appraisal. **A licensee who treats a condominium as "a house with a homeowners association" is treating a distinct body of law as a detail**, and the transactions that go wrong are the ones handled that way.
+
+**This course does not teach Davis-Stirling.** It is not read here in its own text, and no rule, deadline, fee cap, election procedure, or enforcement mechanism in this assignment comes from it. What a Principles student should carry forward is the shape of the thing: a residential common interest development is a creature of a specific statute; that statute gives buyers rights to specific documents on specific timelines; and the person who knows which documents those are is the escrow holder, the association's manager, or counsel — not the licensee working from memory.
+
+### 5.9 The documents, and the diligence period problem
+
+**What a buyer in a common interest development is buying** is three things at once: a unit, an undivided interest in common area, and **membership in a corporation with the power to assess them**. The third is the one that produces surprises, and the surprises live in documents.
+
+| Document | What it answers | Why it is read early |
+|---|---|---|
+| **Declaration (CC&Rs)** | What the owner may and may not do; what is common area; how assessments are levied | It is recorded and it binds. Restrictions on rentals, pets, vehicles and alterations live here |
+| **Bylaws and articles** | How the association is governed; who votes; how directors are elected | A dysfunctional board is a real risk to a buyer's use and resale |
+| **Operating rules** | Day-to-day rules the board may adopt without amending the declaration | These change more often than the CC&Rs and are frequently the ones a buyer breaches |
+| **Budget and reserve study** | What the association spends and whether it has saved for what is coming | **The single best predictor of a future special assessment** |
+| **Assessment and delinquency statement** | What is owed on this unit, and what the association is owed generally | An association with heavy delinquencies is an association that will assess |
+| **Minutes** | What the board is actually worried about | Litigation, construction defects and insurance problems appear here before they appear anywhere else |
+| **Insurance summary** | What the association's policy covers and what the owner must insure | Determines what a buyer's own policy has to do |
+
+**The structural problem is timing.** These documents come from the association, the association is often managed by a third party, and production takes days that the contract's diligence period does not always allow. **A buyer who receives a reserve study on the last afternoon of the contingency period has not had a diligence period.**
+
+**What a licensee does about it, concretely:** order the documents the day the offer is accepted rather than the day the contingency clock starts; tell the buyer in writing when they were ordered; and when they arrive late, **advise the buyer in writing that an extension of the contingency is available and that proceeding without reading them is the buyer's decision.** The licensee does not interpret the documents — reserve adequacy and litigation exposure are questions for an accountant and a lawyer — but the licensee is responsible for the documents arriving in time to be read by whoever should read them.
+
+**A worked failure.**
+
+> A buyer closes on a condominium in a 96-unit development. Four months later the association levies a $14,200 special assessment per unit to replace failed plumbing risers. The minutes for the preceding two years discuss the risers at eleven separate meetings, and the reserve study describes the component as "past useful life, unfunded."
+
+**Nothing was concealed.** Every fact was in documents the buyer was entitled to and did receive — three days before closing, in a 340-page bundle, unread. **The failure was not disclosure. It was sequencing**, and sequencing is inside a licensee's control in a way that a board's spending decisions are not.
+
+### 5.10 Checkpoint
 
 You should be able to name what a buyer must review, explain why the documents must be ordered early, and answer a reserves question correctly.
 

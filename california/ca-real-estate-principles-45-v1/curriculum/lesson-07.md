@@ -170,7 +170,47 @@ Section 2.1 through 2.6 state the duties. **The skill a principles course is try
 
 > **The diagnostic question that resolves most cases:** whose interest was subordinated, and to what? **If the answer is "the principal's, to the licensee's," it is loyalty. If it is "the principal's, to nobody's — it was just done badly," it is care.** If it is "a non-client's, to the principal's," it is the honesty duty in Section 2.6, and that duty does not bend to fiduciary loyalty.
 
-### 2.8 Checkpoint
+### 2.9 The fiduciary duties, one at a time
+
+Section 2.1 named the duties. They are worth taking individually, because each fails in its own characteristic way and the failures look nothing alike.
+
+**Loyalty.** The client's interests come before the agent's. **The characteristic failure is not betrayal; it is a conflict nobody disclosed** — the agent who wants the deal to close because of the commission, and lets that shape the advice about whether to accept.
+
+**Obedience.** Follow the client's lawful instructions. **The limits are in the word "lawful."** An instruction to conceal a material defect, to exclude a protected class, or to alter a date is not an instruction to be followed, and Government Code § 12955(g) reaches the licensee who carries out the second of those.
+
+**Disclosure.** Tell the client everything relevant to the transaction. **The failure is almost always omission under pressure** — the agent who does not pass on a weak second offer because they think the first is better.
+
+**Confidentiality.** Do not reveal the client's financial position, motivation or bargaining position. **The failure is conversational**, at an open house or between agents, and it usually happens without anyone noticing.
+
+**Accounting.** Account for all funds and documents. **The failure is administrative** and it is what § 10145 exists to prevent.
+
+**Reasonable care and diligence.** Competent work, or referral to someone competent. **The failure is the licensee working outside their knowledge rather than saying so.**
+
+**Notice what the list does not contain.** It does not contain a duty to get the best price, to guarantee an outcome, or to have an opinion about matters requiring another profession. **A licensee who believes their duty is to deliver a result rather than to perform competently and loyally will eventually breach one of the six trying to deliver it.**
+
+### 2.10 Where the duties collide, and how to think about it
+
+The duties are stated as though they are independent. In practice two pairs pull against each other, and being able to name the tension is most of the answer.
+
+**Confidentiality against disclosure to the other party.** The seller's agent learns from the seller that the foundation was repaired after a slide. Confidentiality protects the client; the § 2079.16 duty to disclose material facts to the buyer does not stop at the client's edge.
+
+**The resolution is one-directional and it is not close.** The duty to disclose facts materially affecting the value or desirability of the property runs to both parties. **A material defect learned in confidence is still a material defect**, and confidentiality protects the client's *bargaining position*, not the property's condition.
+
+**Obedience against loyalty.** A client instructs the agent to do something legal that the agent believes is against the client's interest — refusing a strong offer over a small repair, for instance.
+
+**The resolution here is the opposite: the client decides.** Loyalty does not mean substituting the agent's judgment. **It means giving the client the information and the recommendation, in writing, and then following the instruction.**
+
+**A worked collision.**
+
+> A seller tells their agent, in confidence, that they are three months behind on the mortgage and must close quickly. An offer arrives $30,000 below list with a 21-day close. A second offer arrives at full price with a 45-day close and a loan contingency.
+
+**What is confidential:** the arrears, the urgency, the motivation. **None of it goes to any buyer or buyer's agent**, and mentioning "my seller needs a fast close" is a disclosure of bargaining position that costs the client money.
+
+**What is owed to the client:** both offers, promptly, with an analysis — the $30,000 difference against the risk that the 45-day offer does not fund, and what the seller's own timeline can absorb.
+
+**What the agent must not do:** decide. **The seller's financial situation is exactly why the seller, not the agent, must weigh the trade-off**, and an agent who presents only the fast offer because they know about the arrears has substituted their judgment on the client's most consequential decision.
+
+### 2.11 Checkpoint
 
 You should be able to name the six duties, state the confidentiality-disclosure boundary, and explain why a careless licensee can breach a fiduciary duty without any dishonesty.
 
@@ -295,7 +335,59 @@ The three steps in Section 4.1 exist as a sequence, and **their dates are what a
 
 > **The one habit that closes all three defects:** date everything at the moment it happens, evidence delivery rather than relying on signature, and **read the chain forward as a sequence** rather than checking off documents as a set. If the dates do not run in order, something happened out of order — and that is worth knowing while the transaction can still respond to it.
 
-### 4.7 Checkpoint
+### 4.8 The disclosure form is a statute, printed
+
+Section 4.1 called the agency disclosure a required form. It is more particular than that: **Civil Code § 2079.16 sets out the words**, and the form a licensee hands a client is that section reproduced. Reading it is reading the law.
+
+> *"The disclosure form required by Section 2079.14 shall have Sections 2079.13 to 2079.24, inclusive, excluding this section, **printed on the back**, and on the front of the disclosure form the following shall appear:*
+>
+> ***DISCLOSURE REGARDING REAL ESTATE AGENCY RELATIONSHIP** (As required by the Civil Code)*
+>
+> *When you enter into a discussion with a real estate agent regarding a real estate transaction, you should from the outset understand what type of agency relationship or representation you wish to have with the agent in the transaction."*
+
+**The structure tells you what the Legislature was worried about.** The front of the form is plain-language explanation for a consumer. The back is the statute itself — §§ 2079.13 through 2079.24 — printed in full so that the consumer holds the law rather than a summary of it. **A licensee who prints only the front has produced a form the statute does not describe.**
+
+### 4.9 The three relationships, in the statute's words
+
+**The seller's agent.** *"A Seller's agent under a listing agreement with the Seller acts as the agent for the Seller only."* The obligations then split into two groups, and the split is the heart of California agency:
+
+> **To the Seller:** *"A fiduciary duty of utmost care, integrity, honesty, and loyalty in dealings with the Seller."*
+>
+> **To the Buyer and the Seller:** *"(a) Diligent exercise of reasonable skill and care in performance of the agent's duties. (b) A duty of honest and fair dealing and good faith. (c) A duty to disclose all facts known to the agent materially affecting the value or desirability of the property that are not known to, or within the diligent attention and observation of, the parties."*
+
+**Subdivision (c) is the one that surprises new licensees.** A seller's agent owes a duty of disclosure **to the buyer** — a party they do not represent. The fiduciary duty runs one way; the disclosure duty runs both. **A seller's agent who conceals a known material defect from a buyer has breached a duty owed to that buyer**, and the fact that the buyer was not their client is not a defence.
+
+**The buyer's agent** carries the mirror image: fiduciary duty to the buyer, and the same three both-party duties. The section adds a point about payment that resolves a persistent confusion: *"the agent is not the Seller's agent, even if by agreement the agent may receive compensation for services rendered, either in full or in part from the Seller."* **Who pays does not determine whom the agent represents.**
+
+**And the confidentiality boundary is stated in both:** *"An agent is not obligated to reveal to either party any confidential information obtained from the other party that does not involve the affirmative duties set forth above."* Confidentiality yields to the disclosure duty, not the other way round. A material defect learned in confidence is still a material defect.
+
+### 4.10 Dual agency, and the list the statute makes
+
+> *"A real estate agent, either acting directly or through one or more salespersons and broker associates, **can legally be the agent of both the Seller and the Buyer in a transaction, but only with the knowledge and consent of both**."*
+
+**Two features of that sentence do a great deal of work.**
+
+**"Acting directly or through one or more salespersons."** Dual agency is a *brokerage* status, not a personal one. Where one salesperson lists and a different salesperson in the same brokerage represents the buyer, **the brokerage is a dual agent** even though no individual is on both sides. This is the single most commonly missed instance of dual agency, and it happens in ordinary offices every week.
+
+**"Only with the knowledge and consent of both."** Knowledge and consent, from both, before acting. Undisclosed dual agency is not a paperwork failure — it is acting without the authority the statute requires.
+
+**What a dual agent may not disclose.** The statute enumerates it rather than leaving it to judgment:
+
+> *"a dual agent may not, without the express permission of the respective party, disclose to the other party confidential information, including, but not limited to, facts relating to either the Buyer's or Seller's **financial position, motivations, bargaining position, or other personal information that may impact price**, including the **Seller's willingness to accept a price less than the listing price** or the **Buyer's willingness to pay a price greater than the price offered**."*
+
+**Those last two examples are the whole difficulty of dual agency in one clause.** The dual agent knows the seller would take less and the buyer would pay more, owes each of them utmost loyalty, and may tell neither. The duties do not conflict on paper — the statute resolves the conflict by prohibiting the disclosure — but **the agent is left holding information that would help each client and cannot be used for either.**
+
+### 4.11 A worked confirmation problem
+
+> A brokerage lists a property. A salesperson at the same brokerage brings a buyer. The listing agent gives the seller a disclosure form at listing; the buyer's salesperson gives the buyer one at first showing. The purchase agreement's confirmation section names the listing salesperson as "Seller's Agent" and the buyer's salesperson as "Buyer's Agent." No dual agency consent is signed by anyone.
+
+**The disclosures were given and the confirmation is wrong.** § 2079.16 says an agent *"acting directly or through one or more salespersons"* can be the agent of both. Here one brokerage is on both sides. **The brokerage is a dual agent**, and the confirmation must say so for the brokerage even while identifying each salesperson's role.
+
+**What the file will look like to a reviewer later:** two properly delivered disclosure forms, a confirmation that describes a single agency on each side, and a brokerage that in fact acted for both parties without the knowledge and consent the statute requires. **The documents make it look correct, which is worse than an obvious gap**, and it is precisely the pattern Assignment 07 Section 6.3 warns about — the file that reads well and does not describe what happened.
+
+**The fix is procedural and takes a minute:** when the offer comes from inside the house, the dual agency consent is prepared at the same time as the offer, not looked for afterwards.
+
+### 4.12 Checkpoint
 
 You should be able to state when each disclosure is due, explain why a signature after the decision does not cure lateness, and identify what an audit finding of a contradictory confirmation means.
 
@@ -497,7 +589,56 @@ This lesson has drawn several boundaries. Collecting them makes the working rule
 
 **And the one question that appears in all three lists at once**, which is why it is the hardest: *"Whose side are you on?"* **The explanation is the licensee's, the legal characterization is counsel's, and if the honest answer is uncomfortable, that discomfort is information the broker needs before the transaction goes further.**
 
-### 6.11 Checkpoint
+### 6.12 Compensation does not determine agency, and three consequences
+
+Section 6.1 explained how compensation is negotiated. The point that matters legally is the one **Civil Code § 2079.16** makes in passing, in the buyer's agent paragraph: an agent acting for a buyer *"is not the Seller's agent, **even if by agreement the agent may receive compensation for services rendered, either in full or in part from the Seller**."*
+
+**Three consequences follow, and each answers a question clients actually ask.**
+
+**"If the seller pays you, don't you work for the seller?"** No. Agency arises from the agreement to represent, not from the source of payment. This is worth being able to answer cleanly, because a buyer who suspects divided loyalty and is given a vague answer will keep suspecting it.
+
+**A commission dispute is not an agency dispute.** A broker who is not paid has a contract claim. That claim does not retroactively change whom they represented or what duties they owed, and a broker who begins arguing that they "really represented" someone else in order to reach a fee has created a far larger problem than the fee.
+
+**Compensation must be disclosed in full — the statute makes it a discipline ground.** **Business and Professions Code § 10176(g)** reaches *"the claiming or taking by a licensee of any secret or undisclosed amount of compensation, commission, or profit or **the failure of a licensee to reveal to the buyer or seller** contracting with the licensee **the full amount** of the licensee's compensation."* **A referral fee from a lender, a home warranty company or a service provider is compensation**, and the obligation is to reveal the full amount before or at the time the client commits.
+
+### 6.13 Termination, and the date that must be on the form
+
+Agency ends. How it ends determines what survives it.
+
+| How it ends | What happens | What survives |
+|---|---|---|
+| **Expiration** | The stated term runs out | Confidentiality; any protection period the agreement provides |
+| **Completion** | The purpose is accomplished | Confidentiality; obligations under the closed transaction |
+| **Mutual agreement** | Both parties release | Whatever the release says — get it in writing |
+| **Revocation by the principal** | The client withdraws the authority | The agent may have a claim for compensation; the authority is gone either way |
+| **Renunciation by the agent** | The agent withdraws | Potential liability for abandoning a client mid-transaction |
+| **Operation of law** | Death, incapacity, destruction of the property, bankruptcy | Immediate |
+
+**Two duties outlive the agency and are regularly forgotten.**
+
+**Confidentiality does not expire with the listing.** Information about a former client's finances, motivations or circumstances remains confidential. A licensee who mentions at an open house that the previous seller "had to move fast because of the divorce" has breached a duty to a person who is no longer a client.
+
+**Accounting survives.** Funds held, documents held, and records of the transaction remain the licensee's obligation after the relationship ends.
+
+**And the termination date is a statutory requirement, not a form convention.** **§ 10176(f)** makes it a ground for discipline to claim or receive a fee *"under any exclusive agreement authorizing a licensee to perform any acts set forth in Section 10131 for compensation … **where the agreement does not contain a definite, specified date of final and complete termination**."*
+
+**Read that carefully, because the offence is not signing the open-ended agreement — it is claiming a fee under one.** A broker holding an exclusive listing with no termination date has an instrument they cannot safely be paid on. **"Definite, specified date of final and complete termination"** admits no substitutes: not "90 days from acceptance", not "until sold", not "until cancelled". A date.
+
+### 6.14 A worked termination problem
+
+> A broker takes a 90-day exclusive right to sell. On day 62 the seller says by telephone, "I've changed my mind, take it off the market." The broker withdraws the listing from the multiple listing service. On day 81 the seller sells privately to a buyer the broker introduced on day 40, at a price the broker had negotiated to within $5,000.
+
+**Three separate questions sit inside those facts, and a licensee should be able to see all three without answering any of them.**
+
+**Did the agency terminate?** A principal generally has the *power* to revoke, which is not the same as the *right* to revoke without consequence. Whether an oral instruction revoked this agreement, and with what effect, is a contract question.
+
+**Does the agreement have a protection period?** Most exclusive listings provide that a sale within a stated period after termination, to a buyer the broker procured and identified in writing, still earns a commission. **Whether the broker identified this buyer in writing, and when, is likely to decide the whole matter** — and it is a purely clerical act that either was or was not done on day 40.
+
+**Was the termination date definite?** If the agreement said "90 days" without a date, § 10176(f) is in play against the broker's own claim.
+
+**What the licensee should have done on day 62**, in order: confirm the cancellation in writing; **deliver the written list of protected buyers immediately**; and consult the broker about the fee position before doing anything else. **All three take under an hour on day 62 and are unavailable on day 81.**
+
+### 6.15 Checkpoint
 
 You should be able to state the negotiability sentence correctly, explain why the referral fee prohibition is not cured by disclosure, and say what survives the end of an agency.
 

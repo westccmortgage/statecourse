@@ -257,7 +257,55 @@ An extension of the closing date, a change to what conveys, an agreed repair, a 
 
 Not everything must be written. Many agreements are enforceable orally, including agreements outside the statute's categories and short leases. The professional practice of writing everything down is a **risk practice**, not a legal requirement in every case — and it is worth doing precisely because the boundary is not obvious in the moment.
 
-### 4.6 Checkpoint
+### 4.7 The statute of frauds, and the sentence that matters
+
+Section 4.1 said that contracts for the sale of real property must be in writing. **Civil Code § 1624** is where that comes from, and the operative subdivision is worth reading exactly because its structure is unusual: it is a list of contracts that are *invalid* unless written.
+
+> *"(a) The following contracts are invalid, unless they, or some note or memorandum thereof, are in writing and subscribed by the party to be charged or by the party's agent:"*
+
+**Three phrases carry the whole doctrine.**
+
+**"Or some note or memorandum thereof."** The statute does not require a contract; it requires a writing sufficient to evidence one. A signed memorandum recording the essential terms can satisfy it even where no formal agreement was ever drawn.
+
+**"Subscribed by the party to be charged."** Only the party being sued needs to have signed. A writing signed by the seller and not the buyer can be enforced *against the seller*. **This asymmetry is the most frequently misremembered feature of the statute** — licensees commonly believe both signatures are required for any enforceability, and the section says otherwise.
+
+**"Or by the party's agent."** An agent may subscribe — which raises the immediate question of the agent's own authority, and the statute answers it in the same breath for real property: an agent's authority to sign a contract for the sale of real property must itself be in writing. **A licensee has no authority to sign a purchase agreement for a client from an oral instruction**, however clear that instruction was.
+
+**Among the contracts listed** are agreements that by their terms cannot be performed within a year; agreements for the sale of real property, or of an interest in it; leases for longer than a year; and — the one that pays licensees' wages — an agreement **authorising or employing an agent or broker to purchase or sell real estate for compensation or a commission**.
+
+**That last one deserves its own sentence.** A listing agreement is inside the statute of frauds. **An oral listing is not an enforceable listing**, and a broker who works on a handshake and then sues for a commission is suing on a contract the Civil Code declares invalid.
+
+### 4.8 What "invalid" means, and what it does not
+
+**It does not mean nothing happened.** A contract inside the statute and not in writing is generally unenforceable rather than void in every sense; performance already rendered, restitution, and doctrines that operate outside the statute may still matter. **This is exactly where a licensee stops and counsel starts.**
+
+**It does mean the writing is the thing to produce.** In any dispute about whether there is a deal, the first question is what writing exists and who signed it. A licensee's practical contribution is to make sure that a writing exists and is signed at the moment agreement is reached, rather than to reason about doctrine afterwards.
+
+**Electronic signatures are writings.** California's Uniform Electronic Transactions Act treats a record or signature in electronic form as satisfying a writing requirement where the parties have agreed to transact electronically. **This course does not read that act in its own text**, and no rule about its scope, its exclusions, or its consent requirements is taken from it here. What matters at Principles level is that "in writing" has not meant "on paper" for a long time, and that the licensee's obligation is to obtain and preserve the record either way.
+
+### 4.9 Three worked problems
+
+> **One.** A seller and buyer agree terms by telephone. The buyer's agent emails the seller's agent a summary of the terms; the seller's agent replies "Confirmed, my seller agrees." Two days later the seller accepts a higher offer.
+
+**The question is whether a note or memorandum subscribed by the party to be charged exists.** The party to be charged is the seller. The writing is an email from the seller's *agent*, and an agent's authority to bind a seller to a sale of real property must itself be in writing. **A buyer in this position has a genuine dispute and not an obvious win**, and the resolution is a lawyer's, not a licensee's. What the licensee should take from it: **the reply email is not the contract, and treating it as one leads a client into a fight.**
+
+> **Two.** A broker takes a listing orally, markets the property for six weeks, produces the buyer, and the property sells. The seller declines to pay a commission.
+
+**The agreement employing a broker to sell real estate for a commission is inside § 1624.** An oral listing is not an enforceable listing. The broker has done the work and has no written contract. **This is the least sympathetic and most avoidable loss in the business**, and it is prevented by a signature at the beginning rather than an argument at the end.
+
+> **Three.** A tenant and landlord orally agree to a three-year lease at a fixed rent. The tenant moves in and pays for four months. The landlord then demands a higher rent.
+
+**A lease for longer than a year is inside the statute.** An oral three-year lease is not enforceable as a three-year lease. What the tenancy *is* instead — and what the four months of accepted rent established — is a question with a real answer that is outside this course. **The licensee's role is to have papered the lease**, and, having failed to, to route the parties to counsel rather than to advise either of them about what they now have.
+
+### 4.10 The practical rule this reduces to
+
+**Get it in writing at the moment of agreement, signed by everyone, and keep the record.**
+
+That single sentence disposes of § 1624 in practice. Every worked problem above is a problem only because somebody deferred a signature — by a phone call, by an email, by a handshake — and the deferral is always for the same reason, which is that asking for a signature feels like doubting the other person's word.
+
+**It is not doubting their word. It is the statute's requirement**, and a licensee who explains it that way — *"the Civil Code requires this in writing; it protects both of you"* — will almost never meet resistance.
+
+### 4.11 Checkpoint
 
 You should be able to state which real estate agreements must be written, explain why an oral agreement is unenforceable rather than void, and state what actually amends a contract.
 
@@ -328,7 +376,46 @@ A party may waive a contract right — a contingency, a condition, a requirement
 
 **The licensee's obligation is to put that in writing before the buyer decides, then follow the decision.** Both failure modes are wrong: refusing to write what the client instructs overstates the licensee's role; writing it without comment abandons the advisory duty.
 
-### 5.7 Checkpoint
+### 5.8 Contingencies as a sequence, not a list
+
+Section 5.2 named the common contingencies. What makes them work — or fail — is that they run on a clock, in an order, and each one's removal forecloses a route out.
+
+| Contingency | What it protects | What must happen inside it |
+|---|---|---|
+| **Inspection / investigation** | The buyer's ability to discover condition | Inspections ordered, performed, read; specialists engaged; a request for repairs if any |
+| **Appraisal** | The buyer against paying above the lender's supported value | Appraisal ordered by the lender, performed, delivered |
+| **Loan** | The buyer against being obliged to buy without financing | Application complete, underwriting cleared, conditions satisfied |
+| **Title** | The buyer against unacceptable exceptions | Preliminary report read, exception documents obtained and reviewed |
+| **Sale of buyer's property** | The buyer whose funds are in another house | That property in contract and progressing |
+| **Common interest documents** | The buyer buying into an association | Documents received and read, budget and minutes included |
+
+**The dependency that trips people.** The appraisal usually cannot be ordered until the loan application is in and the lender orders it; the loan cannot clear until the appraisal is back; **and the appraisal contingency and the loan contingency often expire on the same day.** A buyer who applies late has compressed two dependent processes into the tail of one period.
+
+**The sequencing rule that prevents most of it:** **order everything on day one.** Inspections, the association documents, the insurance quote, the title exception instruments. Nothing about a contingency period requires waiting to see whether the inspection goes well before ordering the documents.
+
+### 5.9 Removing a contingency, and what it costs
+
+**Removal is a decision, not an expiry.** In the California residential form the buyer removes contingencies actively, in writing; a passive lapse is not the same thing and the seller's remedy for a buyer who has not removed is to serve notice.
+
+**What removal costs the buyer:** the deposit. Once contingencies are removed, a buyer who does not close is exposed to the liquidated damages clause Assignment 08 Section 6.13 describes. **Removing the loan contingency before the loan is actually approved is putting the deposit behind an underwriter's decision the buyer does not control.**
+
+**Three removals that are commonly made too early, and the question each one should be asked with.**
+
+**The inspection contingency, before specialists have reported.** A general inspector who recommends a roofer, a structural engineer and a sewer camera has not completed the investigation — they have identified who must. **Removing before those reports arrive removes the contingency on the basis of the report that said more information was needed.**
+
+**The loan contingency, on a pre-approval.** A pre-approval is an underwriting opinion on stated facts. **A loan is approved when the lender says the loan is approved**, in writing, with conditions cleared.
+
+**The appraisal contingency, before the appraisal is read.** A verbal "it came in at value" is a statement about a document nobody has seen.
+
+**A worked timeline.**
+
+> 17-day inspection contingency, 21-day loan and appraisal. Day 1 acceptance. The buyer schedules the general inspection for day 9, because that is when the inspector is available.
+
+**Day 9 has already lost the transaction its margin.** A general inspection on day 9 produces a report on day 10 or 11; specialist referrals are scheduled for days 13 to 16; their reports arrive on day 17 or later. **The contingency expires with the specialist reports unread.**
+
+**What day 1 should have looked like:** general inspection booked for day 2 or 3 with two inspectors called; association documents ordered; insurance quote requested; title exception instruments requested; loan application submitted the same day. **The buyer's options at day 17 are entirely determined by what was ordered on day 1**, and the licensee is the only person in the transaction whose job that is.
+
+### 5.10 Checkpoint
 
 You should be able to explain what a contingency does inside a formed contract, state how removal works under the standard form, and distinguish assignment from novation.
 
@@ -492,7 +579,40 @@ This lesson is the longest legal treatment in the course, and its practical yiel
 
 > **The test of whether this lesson worked.** Not whether a student can recite the elements — **but whether, handed a real situation, he can say which parts are his to handle, which parts are counsel's, and what the file needs to show either way.** Those three judgments are what the lesson was for, and they are what a first year in practice will ask for repeatedly.
 
-### 6.12 Checkpoint
+### 6.13 Damages, specific performance, and liquidated damages compared
+
+Section 6.4 named the remedies. This section sets them against each other, because a client's real question is always "what do I actually get."
+
+| Remedy | What it gives | When it is realistic |
+|---|---|---|
+| **Compensatory damages** | Money to put the injured party where performance would have | Whenever loss can be proved. The usual remedy |
+| **Specific performance** | A court order to convey the property | **Real property only, in practice** — because each parcel is treated as unique, money is presumed inadequate |
+| **Liquidated damages** | The agreed sum, without proving actual loss | Where the clause was properly formed and initialled |
+| **Rescission and restitution** | Unwinding; each party returns what they received | Fraud, mutual mistake, failure of consideration |
+
+**Specific performance is the remedy that distinguishes real property.** A buyer of a car who is refused delivery buys another car and sues for the difference. A buyer of a particular house cannot, because there is no other identical house. **The uniqueness of land is not sentiment; it is the doctrinal reason the remedy exists.**
+
+**Liquidated damages solve a problem that money damages create.** A seller whose buyer defaults must otherwise prove what the breach cost — carrying costs, a lower resale price, time on market — which is expensive and uncertain. A liquidated damages clause fixes the number in advance. In California residential purchase agreements the clause is separately initialled, and **that separate initialling is not a formality**: it is the parties' evidence that they agreed to the substitution rather than absorbing it in the boilerplate.
+
+**What a licensee must not do with any of this.** Tell a client what they will recover. **Every row in that table is a legal conclusion**, and each depends on facts a licensee has not verified and doctrines a licensee has not studied.
+
+### 6.14 A worked breach, four ways
+
+> A buyer and seller sign a purchase agreement at $880,000 with a $26,400 deposit and an initialled liquidated damages clause. The buyer removes all contingencies. Two weeks before closing, the buyer's circumstances change and the buyer refuses to close. The seller relists and sells four months later for $845,000, having carried the property at $4,200 a month.
+
+**If the seller pursues actual damages.** The measurable loss is roughly $35,000 in price plus about $16,800 in carrying costs — call it **$51,800** — less anything the seller saved. The seller must **prove** each element, and the buyer will contest the resale price, the marketing, and whether the carrying costs were avoidable.
+
+**If the seller relies on liquidated damages.** The seller takes the **$26,400** deposit and proves nothing. That is roughly half the arguable loss, and it is available immediately and without litigation.
+
+**Which is better is not obvious**, and it is exactly the sort of judgment that belongs to the seller with counsel's advice. The licensee's contribution is to make sure the seller understands there is a choice, and to say nothing about which way it should go.
+
+**If the buyer sues for return of the deposit**, arguing the clause is unenforceable — the analysis turns on how the clause was formed and on statutory limits applicable to residential purchases. **A licensee has no view on this.**
+
+**If the seller had wanted the buyer to complete**, specific performance would in principle be available to a seller as well as to a buyer, though it is far less commonly pursued: a seller usually wants money and another buyer, not a decree compelling a reluctant purchaser to take a house.
+
+**The single most useful thing a licensee can do in this scenario happens before any of it** — making sure the liquidated damages clause was properly initialled at signing. A clause not initialled is a remedy the seller does not have, and discovering that at the moment of breach is discovering it too late.
+
+### 6.15 Checkpoint
 
 You should be able to name the remedies, explain why specific performance is available for real property, and give the correct answer to a client asking about a deposit.
 

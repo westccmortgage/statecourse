@@ -44,35 +44,35 @@ five-item remediation set covering the same concepts a second way for students w
 | --- | --- |
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
-| Words of instructional text | 127,018 |
-| Estimated typeset pages | ~450 |
+| Words of instructional text | 164,905 |
+| Printed volume | **456 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
 RE 303 states that *"approximately 450 pages of text/instructional material is equivalent to
 textbooks offered by a California college or university"* for a 45-hour course.
 
-This course is at approximately 450 pages, meeting the benchmark.
+This course is at **456 pages, measured from the bound volume**, meeting the benchmark. The volume contains the complete student-viewable instructional text together with the applied exercise, engagement check and remediation set for every assignment — all of the material RE 303 item 6 asks for.
 
 ## Timed course outline
 
 | # | Lesson assignment | Minutes | Est. pages | Status |
 | ---: | --- | ---: | ---: | --- |
-| 1 | The real estate profession and California regulatory structure | 180 | ~29.9 | Written |
-| 2 | Real property, personal property, and fixtures | 180 | ~29.6 | Written |
-| 3 | Estates, ownership, and common interests | 180 | ~29.7 | Written |
-| 4 | Land description, measurement, and boundaries | 180 | ~29.3 | Written |
-| 5 | Encumbrances, liens, easements, and restrictions | 180 | ~29.5 | Written |
-| 6 | Government powers, land use, and environmental controls | 180 | ~30.2 | Written |
-| 7 | Agency and brokerage relationships | 180 | ~30.0 | Written |
-| 8 | Contracts and transaction formation | 180 | ~29.8 | Written |
-| 9 | Transfer, deeds, title, and recording | 180 | ~30.0 | Written |
-| 10 | Escrow, settlement, and transaction chronology | 180 | ~29.9 | Written |
-| 11 | Real estate finance foundations | 180 | ~29.6 | Written |
-| 12 | Valuation and appraisal foundations | 180 | ~29.9 | Written |
-| 13 | Taxation, investment, and real estate mathematics | 180 | ~30.6 | Written |
-| 14 | Fair housing, civil rights, and consumer protection | 180 | ~29.6 | Written |
-| 15 | Leasing, property management, license law, and integrated transaction | 180 | ~32.0 | Written |
-| | **Total** | **2700 minutes = 45 hours** | **~450** | |
+| 1 | The real estate profession and California regulatory structure | 180 | ~38.5 | Written |
+| 2 | Real property, personal property, and fixtures | 180 | ~36.3 | Written |
+| 3 | Estates, ownership, and common interests | 180 | ~36.5 | Written |
+| 4 | Land description, measurement, and boundaries | 180 | ~36.4 | Written |
+| 5 | Encumbrances, liens, easements, and restrictions | 180 | ~36.4 | Written |
+| 6 | Government powers, land use, and environmental controls | 180 | ~37.4 | Written |
+| 7 | Agency and brokerage relationships | 180 | ~37.7 | Written |
+| 8 | Contracts and transaction formation | 180 | ~36.2 | Written |
+| 9 | Transfer, deeds, title, and recording | 180 | ~37.8 | Written |
+| 10 | Escrow, settlement, and transaction chronology | 180 | ~36.3 | Written |
+| 11 | Real estate finance foundations | 180 | ~37.0 | Written |
+| 12 | Valuation and appraisal foundations | 180 | ~37.5 | Written |
+| 13 | Taxation, investment, and real estate mathematics | 180 | ~37.7 | Written |
+| 14 | Fair housing, civil rights, and consumer protection | 180 | ~37.0 | Written |
+| 15 | Leasing, property management, license law, and integrated transaction | 180 | ~40.0 | Written |
+| | **Total** | **2700 minutes = 45 hours** | **~456** | |
 
 ## Lesson detail
 
@@ -224,6 +224,11 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Storage shed | Sits on the ground under its own weight |
 | Window coverings | Rods mounted; panels slide off |
 | Security cameras and smart devices | Mounted, often tied to an account |
+| Item | § 660 analysis |
+| Almond trees | Attached by roots |
+| Strawberries | Annual cultivated crop; emblements if severance is agreed in the contract of sale |
+| Packing shed | Bolted to a slab that is itself imbedded |
+| Irrigation pump | On skids, quick-release coupling — none of the named fasteners |
 | Item in a leased restaurant | Analysis |
 | Walk-in refrigeration installed by the tenant | Trade fixture |
 | Commercial hood and exhaust installed by the tenant | Trade fixture, though removal damage can be substantial |
@@ -236,6 +241,20 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Appropriative rights | Rights arising from the diversion of water to beneficial use, under a system of priority |
 | Groundwater | Water beneath the surface, subject to its own body of law and increasingly to management regimes |
 | Percolating and surface water | Distinguished from a defined watercourse, with different treatment |
+| Right | Attaches to |
+| Riparian | Land bordering a natural watercourse |
+| Appropriative | A person, by taking and using water |
+| Overlying (groundwater) | Land above an aquifer |
+| Prescriptive | Use adverse to another's right for the statutory period |
+| Pueblo | Certain cities of Spanish or Mexican origin |
+| Location | Items that generate disputes |
+| Exterior | Satellite dish, mounted address plaque, playground equipment, potted trees, fountain |
+| Entry and halls | Mirrors, coat hooks, security keypad, doorbell camera |
+| Kitchen | Range, refrigerator, dishwasher, microwave, wine cooler, pot rack |
+| Living areas | Wall-mounted television and its bracket, speakers, shelving, curtains, rods, blinds |
+| Bedrooms | Closet organizers, ceiling fans, wall safes |
+| Garage and utility | Cabinets, workbench, water softener, generator, EV charger, shelving |
+| Systems | Solar array, propane tank, alarm panel, irrigation controller |
 
 ### 3. Estates, ownership, and common interests
 
@@ -291,6 +310,10 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Transferable during life | Yes, freely |
 | Creation | The default where two or more take without specifying |
 | Number of owners | Any number |
+| Typical origin | Earnings during marriage; anything bought with them |
+| Management | Either spouse may manage, with limits on real property |
+| On death | Decedent's half passes by will or intestacy; community property with right of survivorship passes to the survivor |
+| Conveying or encumbering real property | Both spouses must join |
 | Form | What the owner owns |
 | Condominium | An individual unit — often defined by interior surfaces — plus an undivided interest in the common areas |
 | Planned development | A separate lot, plus membership in an association owning or managing common areas |
@@ -304,6 +327,14 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Minutes | What the board has been discussing, which is frequently where a future special assessment first appears |
 | Insurance information | What the association covers and, more importantly, what it does not |
 | Litigation disclosures | Pending matters, which can affect both value and financing availability |
+| Document | What it answers |
+| Declaration (CC&Rs) | What the owner may and may not do; what is common area; how assessments are levied |
+| Bylaws and articles | How the association is governed; who votes; how directors are elected |
+| Operating rules | Day-to-day rules the board may adopt without amending the declaration |
+| Budget and reserve study | What the association spends and whether it has saved for what is coming |
+| Assessment and delinquency statement | What is owed on this unit, and what the association is owed generally |
+| Minutes | What the board is actually worried about |
+| Insurance summary | What the association's policy covers and what the owner must insure |
 | Party | Role |
 | Trustor / settlor | Created the trust and transferred property into it |
 | Trustee | Holds legal title and administers the trust; signs |
@@ -383,6 +414,13 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Gaps | A strip described in neither adjoining parcel |
 | Fence-line discrepancy | The fence is not on the record line, sometimes by decades of custom |
 | Ambiguous or defective description | A description that does not close, or whose calls conflict |
+| Rank | Evidence |
+| 1 | Natural monuments — a river, a rock outcrop, a ridge |
+| 2 | Artificial monuments — a survey pin, a monumented corner, a wall built as a boundary |
+| 3 | Adjoining boundaries — the calls of neighbouring parcels |
+| 4 | Courses (bearings) |
+| 5 | Distances |
+| 6 | Area |
 | Constant | Value |
 | Acre | 43,560 square feet |
 | Mile | 5,280 feet |
@@ -402,6 +440,17 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Acreage | On rural parcels, frequently the price basis itself. A five percent error is five percent of the purchase price. |
 | Room dimensions | Whether furniture fits, which sounds trivial and is the complaint that arrives in week one. |
 | Ceiling height and volume | Where a use, a conversion, or a code requirement depends on it. |
+| Conversion | Figure |
+| 1 acre | 43,560 square feet |
+| 1 square mile (section) | 640 acres |
+| 1 township | 36 sections, 6 miles square |
+| 1 linear mile | 5,280 feet |
+| 1 front foot | one foot of frontage on the street, whatever the depth |
+| Source | What it usually measures |
+| Assessor | The size on record for taxation, often from a permit file decades old |
+| Appraiser | Gross living area, measured from exterior dimensions to a published standard, excluding garages and usually excluding below-grade space |
+| Listing service | Whatever the input agent entered, from whatever source |
+| Seller | Recollection, a floor plan, or a builder's brochure |
 
 ### 5. Encumbrances, liens, easements, and restrictions
 
@@ -442,6 +491,12 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Judgment lien | Involuntary |
 | Federal tax lien | Involuntary |
 | Special assessment | Involuntary |
+| Item | Amount |
+| Property tax lien | $6,400 |
+| First deed of trust | $610,000 |
+| Abstract of judgment | $92,000 |
+| Costs and commission | — |
+| To seller | balance |
 | Benefits | A parcel — the dominant tenement |
 | Burdens | Another parcel — the servient tenement |
 | On transfer | Passes with the dominant parcel automatically |
@@ -458,6 +513,12 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Revocable | Generally not |
 | Runs with the land | Yes |
 | Requires writing | Generally yes |
+| Method | How it arises |
+| Express grant or reservation | The owner grants it, or reserves it when conveying |
+| Implication | A prior use, apparent and continuous, reasonably necessary, existing when a parcel was divided |
+| Necessity | A parcel is landlocked by a division of formerly common ownership |
+| Prescription | Open, notorious, hostile, continuous use for the statutory period |
+| Dedication | An owner offers land for public use and it is accepted |
 | Source | Private agreement, recorded |
 | Enforced by | Owners, or the association |
 | Changed by | The procedure in the instrument, often requiring owner approval |
@@ -471,6 +532,18 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Mechanic's liens | Priority may relate back to when work commenced, ahead of instruments recorded earlier than the lien |
 | Subordination agreement | A lienholder agrees to take a lower position than it would otherwise hold |
 | Purchase-money priority | Certain purchase-money security interests receive favored treatment |
+| Recorded | Lien |
+| 2019 | First deed of trust |
+| 2022 | Second deed of trust (HELOC, full line) |
+| 2024 | Abstract of judgment |
+| 2025 | Mechanics lien (work commenced 2023) |
+| 2026 | Property taxes |
+| Order | Lien |
+| 1 | Property taxes 2026 |
+| 2 | Mechanics lien — relates back to 2023 |
+| 3 | First deed of trust 2019 |
+| 4 | Second deed of trust 2022 |
+| 5 | Abstract of judgment 2024 |
 | Item | Correct handling |
 | Utility easement along the rear line | Obtain the document; width, location, permitted use. Can prevent structures the buyer intends |
 | Recorded CC&Rs | Obtain and review; bind the buyer regardless of zoning |
@@ -528,11 +601,23 @@ This course is at approximately 450 pages, meeting the benchmark.
 | That inspections were performed, where finaled | That the work was done well |
 | The scope as permitted | That subsequent work was permitted |
 | A date | That current condition matches the permit |
+| Code | Gov. Code § 66410 et seq. |
+| Administered by | Cities and counties |
+| Purpose | How land may be divided; maps, conditions, dedications |
+| Trigger | Division of land into parcels, including two |
+| Output | Tentative and final maps; parcel maps |
 | The obligation is | The obligation is not |
 | Disclose known lead-based paint and hazards | Test the property |
 | Provide available records and reports | Create records that do not exist |
 | Provide the required pamphlet | Certify the property is free of lead |
 | Give the buyer an opportunity to conduct an assessment | Remediate before transfer |
+| Zone | What it means |
+| Special flood hazard area | Mapped by FEMA as subject to inundation in a base flood |
+| Area of potential flooding | Downstream of a dam, subject to inundation if the dam failed |
+| Very high fire hazard severity zone | Mapped by the state or a local agency |
+| Wildland area / state responsibility area | Fire protection is the state's rather than a local district's |
+| Earthquake fault zone | Alquist-Priolo mapped surface fault trace |
+| Seismic hazard zone | Mapped liquefaction or landslide susceptibility |
 | Public | Private |
 | General plan and zoning | Recorded CC&Rs and restrictions |
 | Permits and building code | Association rules and architectural approval |
@@ -638,6 +723,13 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Revocation | The principal ends it |
 | Renunciation | The agent ends it |
 | Operation of law | Death or incapacity of a party, destruction of the property, or similar events |
+| How it ends | What happens |
+| Expiration | The stated term runs out |
+| Completion | The purpose is accomplished |
+| Mutual agreement | Both parties release |
+| Revocation by the principal | The client withdraws the authority |
+| Renunciation by the agent | The agent withdraws |
+| Operation of law | Death, incapacity, destruction of the property, bankruptcy |
 
 ### 8. Contracts and transaction formation
 
@@ -704,6 +796,13 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Impossibility | Performance becomes objectively impossible |
 | Operation of law | Including the running of limitations periods |
 | Breach by the other party | Which may excuse further performance |
+| Contingency | What it protects |
+| Inspection / investigation | The buyer's ability to discover condition |
+| Appraisal | The buyer against paying above the lender's supported value |
+| Loan | The buyer against being obliged to buy without financing |
+| Title | The buyer against unacceptable exceptions |
+| Sale of buyer's property | The buyer whose funds are in another house |
+| Common interest documents | The buyer buying into an association |
 | Remedy | What it is |
 | Damages | Money compensating the injured party |
 | Specific performance | A court order requiring the actual performance promised |
@@ -732,6 +831,11 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Delivery to the wrong person | Sent to a party rather than through the agreed channel, or to an address never consented to |
 | Signature by someone without authority | A co-owner, a trustee, an entity signatory, or an attorney-in-fact whose authority was assumed |
 | A margin note | An annotation on a signed page that may or may not be a change of terms |
+| Remedy | What it gives |
+| Compensatory damages | Money to put the injured party where performance would have |
+| Specific performance | A court order to convey the property |
+| Liquidated damages | The agreed sum, without proving actual loss |
+| Rescission and restitution | Unwinding; each party returns what they received |
 
 ### 9. Transfer, deeds, title, and recording
 
@@ -793,6 +897,11 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Mechanic's liens | Priority may relate back to when work commenced |
 | Subordination agreement | A lienholder agrees to take a lower position |
 | Purchase-money priority | Certain purchase-money security interests receive favored treatment |
+| Condition | The words |
+| Subsequent | *"any subsequent purchaser or mortgagee"* |
+| In good faith | *"in good faith"* |
+| For value | *"for a valuable consideration"* |
+| First recorded | *"whose conveyance is first duly recorded"* |
 | Category | What it is |
 | Exception | An item the policy will not insure against. The buyer bears that risk unless it is otherwise addressed |
 | Exclusion | A category the policy form does not cover at all — governmental regulation such as zoning, eminent domain, matters created or agreed to by the insured |
@@ -805,6 +914,16 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Judgment against a similarly named person | Route to title; do not assume it is or is not the seller |
 | Lis pendens | A serious cloud; route to counsel |
 | A requirement for a corporate resolution or trustee evidence | The authority verification from Lesson 03, with a deadline |
+| Insured | The buyer |
+| Amount | The purchase price |
+| Duration | As long as the insured holds an interest, and beyond for warranties of title |
+| Behaviour over time | Stays at the purchase price |
+| On a claim | Pays the owner |
+| Route | What happens |
+| Foreclosure | The security instrument's power is exercised; the property is sold |
+| Eminent domain | A public agency takes for public use, paying just compensation |
+| Adverse possession | Long, open, hostile, exclusive possession under the statutory conditions, including payment of taxes |
+| Escheat | An owner dies with no heirs and no will |
 
 ### 10. Escrow, settlement, and transaction chronology
 
@@ -841,6 +960,12 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Prepare and circulate documents per the instructions | Decide a dispute between the parties |
 | Record and disburse when conditions are met | Release funds because one party says they are entitled |
 | Report status to both parties | Take a position on who is right |
+| Finding | What it looks like |
+| Commingling | Trust funds in the operating account, even briefly, even by accident |
+| Trust account shortage | The account balance is less than the sum of what is owed to beneficiaries |
+| No beneficiary ledger | A bank balance with no per-person record behind it |
+| Unauthorised signatory | A person signing who has no specific written authorisation, or an unlicensed employee with no bond |
+| Disbursement against a dispute | The broker releases a deposit to one side of an argument |
 | Situation | Effect |
 | Seller prepaid beyond the boundary | Seller is credited; buyer is debited — the buyer reimburses the seller |
 | Charge is owed for the seller's period | Seller is debited; buyer is credited — the buyer will pay it |
@@ -849,6 +974,16 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Seller's credits | Sale price, prorated items prepaid |
 | Buyer's debits | Purchase price, buyer-paid closing costs, prorated items reimbursed |
 | Buyer's credits | Deposit, loan proceeds, seller credits, prorated items owed by seller |
+| Purchase price | 725,000.00 |
+| Deposit |  |
+| New loan |  |
+| Tax proration | 1,909.17 |
+| Seller's loan payoff |  |
+| Commission 5% |  |
+| Escrow fee | 1,450.00 |
+| Title policy |  |
+| Recording | 185.00 |
+| Totals | 728,544.17 |
 | # | Event |
 | 1 | Signing |
 | 2 | Funding |
@@ -862,6 +997,18 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Someone notices that the payoff demand expires before closing | Nobody |
 | Someone confirms delivery of the documents rights run from | Nobody |
 | Someone tells the client what he is about to sign | Nobody |
+| What must be reconstructable | From |
+| Who represented whom, and from when | Agency disclosure, election, confirmation, all dated |
+| What the parties agreed | The executed agreement and every counteroffer and addendum, in sequence |
+| What was disclosed and when it was delivered | Disclosures with evidence of delivery, not merely signature |
+| Where every dollar went | Trust account records, beneficiary ledgers, reconciliations |
+| What the licensee was paid, by whom | Compensation records and disclosures |
+| That advertising complied | Copies of advertisements as published |
+| Situation | Wrong |
+| A date was mistyped on a disclosure | Cross it out and write the correct date |
+| A completion record shows the wrong course version | Edit the record |
+| An addendum was signed but not scanned | Backdate the scan |
+| A commission disclosure omitted a referral fee | Replace the disclosure |
 
 ### 11. Real estate finance foundations
 
@@ -906,6 +1053,12 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Trustor | The borrower, who conveys title in trust as security |
 | Beneficiary | The lender, for whose benefit the security is held |
 | Trustee | A neutral third party holding the power of sale |
+| Parties | Three — trustor, trustee, beneficiary |
+| Ordinary California foreclosure | Non-judicial, under the power of sale |
+| Speed | Months, no court |
+| Right of redemption after sale | None after a trustee's sale |
+| Deficiency | Barred by CCP § 580d after a trustee's sale |
+| Release | Reconveyance |
 | Source | Character |
 | Depository institutions | Banks and credit unions lending from deposits and other funds |
 | Mortgage bankers | Originate and fund loans, frequently selling them into the secondary market |
@@ -987,6 +1140,10 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Change | Value is a snapshot; markets and neighborhoods move |
 | Balance | Value is maximized where the factors of production are in equilibrium |
 | Externalities | Factors outside the property affect its value |
+| Term | What it is |
+| Value | An opinion of worth under stated conditions, at a stated date |
+| Price | What was actually paid in a particular transaction |
+| Cost | What it took to create the improvement |
 | Test | Question |
 | Legally permissible | Is the use allowed — zoning, private restrictions, entitlements? |
 | Physically possible | Can the site support it — size, shape, soils, access, utilities? |
@@ -1039,11 +1196,42 @@ This course is at approximately 450 pages, meeting the benchmark.
 | New construction | Cost, supported by sales comparison |
 | Apartment or commercial | Income capitalization |
 | Special-purpose with no sales | Cost |
+| Line | Example |
+| Potential gross income (all units at market rent, full occupancy) | $186,000 |
+| Less vacancy and collection loss at 6% | (11,160) |
+| Plus other income (laundry, parking, storage) | 7,400 |
+| Effective gross income | 182,240 |
+| Less operating expenses | (69,250) |
+| Net operating income | $112,990 |
+| Rate | Indicated value |
+| 5.25% | $2,152,190 |
+| 5.75% | $1,964,957 |
+| 6.25% | $1,807,840 |
+| Comparable | Price |
+| A | $712,000 |
+| B | $684,000 |
+| C | $735,000 |
+| Property type | Approach that usually leads |
+| Single-family residence | Sales comparison |
+| Small income property | Income, supported by sales comparison |
+| New construction | Cost, supported by sales comparison |
+| Special-purpose (church, school) | Cost |
 | Prepared by | A real estate licensee |
 | Purpose | To advise a client on pricing or offer strategy |
 | Standards | Professional practice; not appraisal standards |
 | Independence | Advises a client the licensee represents |
 | May be called an appraisal | No |
+| Prepared by | A licensee |
+| For | A seller deciding a list price; a buyer deciding an offer |
+| Governed by | The licensee's duties of care and honesty |
+| Says | What comparable properties did, and what that suggests about market position |
+| May be used for lending | No |
+| Independence requirements | The licensee is an interested party and the client knows it |
+| Providing information (proper) | Applying pressure (improper) |
+| A list of recent comparable sales with addresses and dates | "We need $845,000 to make this work" |
+| Documented improvements with dates, costs and permit numbers | "The last appraiser had no trouble with this" |
+| The property's own sale and listing history | "The seller will be very upset if it comes in low" |
+| Access, and time to inspect properly | Following the appraiser through the house narrating |
 
 ### 13. Taxation, investment, and real estate mathematics
 
@@ -1115,6 +1303,17 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Management risk | Performance depends on operations |
 | Physical risk | Casualty, deferred maintenance, hazard exposure |
 | Refinance risk | A balloon or maturity arriving in an unfavorable market |
+| Cash invested | $1,000,000 |
+| NOI | $58,000 |
+| Debt service | — |
+| Cash flow before tax | $58,000 |
+| Cash-on-cash return | 5.80% |
+| Equity gain | $100,000 |
+| On cash invested | $1,000,000 |
+| Return on the gain | 10.0% |
+| Equity loss | ($100,000) |
+| Equity remaining | $900,000 |
+| Proportion of invested cash lost | 10% |
 | Constant | Value |
 | Acre | 43,560 sq ft |
 | Mile | 5,280 ft |
@@ -1164,6 +1363,16 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Guided reading: fair lending, appraisal bias, and complaint response | 45 |
 | Applied scenario and decision memorandum | 20 |
 | Lesson assessment | 10 |
+| Characteristic | Federal |
+| Race, color, religion, sex, national origin, familial status | ✓ |
+| Disability | ✓ (§ 3604(f)) |
+| Gender identity, gender expression | — |
+| Sexual orientation | — |
+| Marital status | — |
+| Ancestry | — |
+| Source of income | — |
+| Veteran or military status | — |
+| Genetic information | — |
 | Practice | What it is |
 | Refusal to sell or rent | Declining to deal on a protected basis |
 | Different terms or conditions | Different price, deposit, terms, or services |
@@ -1207,6 +1416,11 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Documented evaluations | Makes the basis reviewable, which itself changes behavior |
 | Slowing decisions under time pressure | Bias operates most strongly when fast |
 | Reviewing outcomes, not intentions | Detects patterns no individual decision reveals |
+| Route | Filed with |
+| State civil rights agency | California's civil rights department |
+| Federal | HUD, or a substantially equivalent state agency |
+| Court | Directly, by the complainant |
+| The Department of Real Estate | Against the licence |
 
 ### 15. Leasing, property management, license law, and integrated transaction
 
@@ -1252,6 +1466,15 @@ This course is at approximately 450 pages, meeting the benchmark.
 | What transfers | The entire remaining interest |
 | Relationship created | The assignee deals with the landlord |
 | Original tenant's liability | Generally remains liable unless released |
+| Estate | How it is created |
+| Estate for years | A lease with a fixed term and a definite ending date |
+| Periodic tenancy | A tenancy from period to period — month to month, week to week |
+| Estate at will | Possession with the owner's consent, no fixed term, no rent reserved as a period |
+| Estate at sufferance | A tenant who holds over after a lawful tenancy ends |
+| What transfers | The entire remaining interest |
+| Original tenant's position | Out of possession, generally still liable to the landlord on the lease |
+| Who the landlord looks to | Original tenant, and the assignee |
+| Who the subtenant pays | — |
 | Term | What it governs |
 | Parties | The owner and the brokerage |
 | Property | Exactly which units are managed |
@@ -1281,6 +1504,9 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Secret profit or undisclosed conflict | Taking a benefit the principal did not know about |
 | Dishonest dealing | Conduct demonstrating unfitness, including outside a transaction |
 | Falsification | Backdating, altering, or creating records |
+| Reaches | Conduct in performing or attempting to perform licensed acts |
+| Typical grounds | Misrepresentation, false promises, undisclosed dual agency, commingling, open-ended exclusives, secret profit |
+| Who it most often catches | The salesperson in the deal |
 | Source | Examples |
 | Physical condition | Defects, repairs, systems, hazards |
 | Legal condition | Liens, boundary disputes, litigation, permit status, unpermitted work |
@@ -1288,6 +1514,11 @@ This course is at approximately 450 pages, meeting the benchmark.
 | Location | Mapped hazard zones, environmental conditions, proximity |
 | Transaction facts | Pending government action, an assessment, association litigation |
 | The licensee's own knowledge | From any source, including a prior transaction |
+| Category | Examples |
+| Physical condition | Leaks, foundation movement, past flooding, failed systems, prior repairs |
+| Legal and title | Boundary disputes, easements in use, unpermitted work, litigation, association assessments |
+| Neighbourhood and off-site | Planned development, a nuisance use nearby, chronic noise |
+| Personal circumstances of an occupant | Illness, death, criminal history of a neighbour, protected characteristics |
 | # | Step |
 | 1 | Agency disclosure |
 | 2 | Listing or representation agreement |

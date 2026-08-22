@@ -9,19 +9,34 @@ what was read, what it says, and — the part that matters most for a reviewer �
 and is therefore stated nowhere in this build.**
 
 **One finding governs everything below and should be read before anything else.** The California
-build is **386,565 instructional words across three 45-hour courses**, and **exactly one of its 45
-lesson assignments cites a California statutory or regulatory section.** Everywhere else in the
-curriculum, the only four- and five-digit numbers are calendar years and arithmetic. That is not an
-oversight to be tidied away; it is the shape of the build, and section 8 explains what follows from
-it.
+build was, until 22 August 2026, **386,565 instructional words across three 45-hour courses in which
+not one lesson assignment cited a California statutory or regulatory section.** That was the shape
+of the build, and this register was written to say so rather than to imply a traceability the
+curriculum did not have.
 
-**The exception is Real Estate Practice, Assignment 14** — the SB 1495 implicit bias and fair
-housing practicum. SB 1495 requires that course to cover **federal and state** fair housing law, and
-a state-law component that named no California statute would not be one. So six texts were read in
-full on 22 August 2026 and are cited there: **42 U.S.C. § 3604**, **Government Code § 12955**,
-**Civil Code § 51**, **Health and Safety Code § 35801**, **Business and Professions Code
-§ 10177(l)**, and the Department's own **SB 1495 FAQ**. Section 8 lists them with what was taken
-from each.
+**That has now changed for two courses, and only where a requirement made it necessary.**
+
+**Real Estate Practice, Assignment 14** — the SB 1495 implicit bias and fair housing practicum.
+SB 1495 requires that course to cover **federal and state** fair housing law, and a state-law
+component naming no California statute would not be one. Six texts were read in full and are cited
+there: **42 U.S.C. §§ 3601 and 3604**, **Government Code § 12955**, **Civil Code § 51**, **Health
+and Safety Code § 35801**, and **Business and Professions Code § 10177(l)**, together with the
+Department's own **SB 1495 FAQ**.
+
+**Real Estate Principles, thirteen of fifteen assignments.** RE 303 states that *"approximately 450
+pages of text/instructional material is equivalent to textbooks offered by a California college or
+university"* for a 45-hour course, and the Principles volume was well short of that benchmark. **The
+material used to close the gap is the primary statutory text this register had recorded as the
+largest omission in the build** — the Business and Professions Code above all. Twenty-three sections
+were read in full from the publishers' own sites and are listed in section 8 with what was taken
+from each. The Principles volume now stands at **456 printed pages**, and it carries the complete
+student-viewable instructional text together with every assignment's applied exercise, engagement
+check and remediation set.
+
+**Real Estate Practice's other fourteen assignments, and the whole of Mortgage Loan Brokering and
+Lending, still cite nothing.** Everything section 8 says about what was not read remains true of
+them, and the Mortgage course in particular teaches a subject whose California statutes this project
+has not opened.
 
 **The rule this establishes, and which a test enforces:** every statutory section cited anywhere in
 the California curriculum must be one this register records as read in its own text. A citation
@@ -334,22 +349,60 @@ the **Course Provider Handbook, Rev. 01/2026**; **RE 303**, the pre-license cour
 **These are the first primary California statutory texts in this build.** Everything below that
 says a body of law was not read remains true of the rest of it.
 
-**Sections named inside a quotation are not sections this project has read.** The quoted text of
-**Government Code § 12955(l)** refers to the **Planning and Zoning Law (§ 65000 and following)**,
-and the quoted text of **Civil Code § 51** and **§ 12955** refer to **Government Code § 12926** for
-definitions. **Neither was opened.** They appear in this build only inside quotation marks, as part
-of what the sections that were read actually say, and **no rule in this build rests on either.**
+**Added 22 August 2026, in their own text, for the Real Estate Principles instructional volume.**
+All read in full from leginfo.legislature.ca.gov:
+
+| Source | Where it is taught | What was taken from it |
+|---|---|---|
+| **B&P § 10130** | Principles 01 § 2.8 | The prohibition; that *advertising as* a broker is itself a prohibited act; the district attorney's duty to prosecute |
+| **B&P § 10131** | Principles 01 §§ 2.9-2.10 | The five categories of acts; the compensation clause; *"for another or others"* |
+| **B&P § 10153.2** | Principles 01 § 5.7; 03 § 5.8 | The statutory course titles; *"at an accredited institution"*; **the SB 1495 components in the statute rather than only in the Department's FAQ**; the two common-interest-development acts named as course subjects |
+| **B&P § 10145** | Principles 10 §§ 3.8-3.11 | The three lawful destinations for others' funds; who may sign a withdrawal, and the fidelity bond condition on an unlicensed employee |
+| **B&P § 10176** | Principles 15 § 4.10; 07 § 6.12 | The duty to investigate on a verified complaint; subdivisions (a)-(g) — undisclosed dual agency, commingling, the exclusive with no definite termination date, secret compensation |
+| **B&P § 10177** | Principles 15 § 4.11 | Grounds reaching conduct outside a licensed transaction, including failure to supervise; § 10177(l), also read for Practice 14 |
+| **B&P § 11000** | Principles 06 §§ 3.7-3.8 | "Subdivided lands" as five or more parcels; the 160-acre carve-out and its oil-and-gas exception; the leasing exclusions |
+| **Civil Code § 51** | Principles 14 § 2.10 | Full and equal accommodations; § 51(e)(7) on perception and association |
+| **Civil Code § 660** | Principles 02 §§ 2.9-2.10 | The four modes of affixation and the named fasteners; the emblements carve-out |
+| **Civil Code § 683** | Principles 03 §§ 3.9-3.10 | *"Expressly declared"*; equal shares; a sole owner's direct creation; the Probate Code carve-out |
+| **Civil Code § 1102** | Principles 09 § 4.11 | The transactions the disclosure article reaches; the borrowing of B&P definitions; **waiver void as against public policy** |
+| **Civil Code § 1214** | Principles 09 §§ 4.8-4.10 | The four conditions a later purchaser must satisfy; *"void as against"*; the one-year lease carve-out |
+| **Civil Code § 1624** | Principles 08 §§ 4.7-4.10 | *"Note or memorandum"*; *"subscribed by the party to be charged"*; the listing agreement inside the statute |
+| **Civil Code § 1950.5** | Principles 15 § 4.12 | "Security" reaching any payment, fee, deposit or charge; wear and tear; the level-of-cleanliness standard |
+| **Civil Code § 2079.16** | Principles 07 §§ 4.8-4.11 | The disclosure form's statutory text; the duty owed to both parties; dual agency *"through one or more salespersons"*; the enumerated confidential matters |
+| **Civil Code § 2924** | Principles 11 § 6.10 | A security transfer deemed a mortgage except in trust; the power of sale exercisable after breach |
+| **CCP § 580b** | Principles 11 §§ 6.11-6.12 | The purchase-money bar; the "new advance" on a refinance; payments applied to the protected balance first; the guarantor carve-out |
+| **CCP § 580d** | Principles 11 §§ 6.11-6.12 | No deficiency after a sale under the power of sale; the guarantor carve-out |
+| **CCP § 704.730** | Principles 05 §§ 2.8-2.10 | The homestead exemption as the greater of a capped county median or a floor, both CPI-adjusted |
+| **R&T § 11911** | Principles 13 §§ 5.9-5.10 | The city rate and the $500-or-fractional-part unit; the base exclusive of a lien remaining at sale; the city-against-county credit |
+| **Gov. Code § 12955** | Principles 14 §§ 2.8-2.9 | The California characteristics; (g) and (i) reaching the licensee; (n) and (o) on aggregate income and rent subsidies; (m) on perception |
+| **Gov. Code § 66410** | Principles 06 § 3.7 | The Subdivision Map Act's citation name |
+| **Gov. Code § 66424** | Principles 06 § 3.7 | "Subdivision" for map purposes; contiguity across roads; condominium projects and stock cooperative conversions included |
+
+**Sections named inside a quotation are not sections this project has read.** Several appear only
+because a section that WAS read refers to them, and each appears in this build inside quotation
+marks as part of what that section says. **None was opened, and no rule in this build rests on any
+of them:**
+
+**Gov. Code § 65000** (Planning and Zoning Law) and **§ 12926** (definitions), from § 12955 and
+Civil Code § 51. **Civil Code § 1102.2** and **§ 2985**, from § 1102. **Civil Code § 2079.13** and
+**§ 2079.14**, from § 2079.16. **Civil Code § 4000** (Davis-Stirling) and **§ 6500** (the Commercial
+and Industrial CID Act), from B&P § 10153.2. **Probate Code § 5100**, from Civil Code § 683.
+**B&P § 10000**, from Civil Code § 1102(b). **B&P § 11302**, from Gov. Code § 12955(i)(2).
+
+**Where the curriculum discusses one of these — Davis-Stirling in Principles 03 § 5.8, for
+instance — it says in terms that the act was not read and that no rule is taken from it.**
 
 **NOT obtained. No rule, figure, deadline, form provision, fee or penalty in this build comes from
 any of these:**
 
-- **The Business and Professions Code, in its own text, apart from § 10177(l).** Not
-  **§§ 10153.2, 10153.3, 10153.4 and 10153.5**, which name the courses and create the equivalence
-  power that Article 24 implements; not **§ 10209**, the fee section § 3002(c) points to; not
-  **§ 10176**, and not the rest of **§ 10177** beyond subdivision (l); not **§ 10145** or the trust
-  fund provisions; not the definition of a real estate broker or salesperson. **This remains the
-  largest gap in the California build**, and § 10177(l) was read for the fair housing component
-  rather than as a start on the Code.
+- **The Business and Professions Code beyond the eight sections now read.** Read in full:
+  **§§ 10130, 10131, 10145, 10153.2, 10176, 10177 and 11000**. **Not read:** **§§ 10153.3, 10153.4
+  and 10153.5**, which carry the salesperson requirements and the equivalence power Article 24
+  implements; **§ 10209**, the fee section § 3002(c) points to; **§ 10159.2** and the
+  broker-responsibility provisions; the remainder of the trust fund article beyond § 10145;
+  **§§ 11300 and following**, the appraiser provisions; and the rest of the Subdivided Lands Act
+  beyond § 11000's definitions. **This is no longer the largest gap in the build, and it remains a
+  gap** — every section not named above is one from which nothing in this build is taken.
 - **The Commissioner's Regulations beyond §§ 3000, 3002 and 3003.** Not **§ 3001**, not **§ 3004** —
   both named on the face of RE 336, which certifies compliance with *"Regulations 3000 through
   3004"* — and none of the substantive regulations, including the **trust account regulations
@@ -359,9 +412,13 @@ any of these:**
   **no figure, effective date beyond 1 January 2024 as both documents state it, or definition is
   taken from the bill.** The course's compliance is stated against what the Department says the
   requirement is; a reading of the enacted text could only narrow that, not widen it.
-- **The California Civil Code** — the agency articles, the **transfer disclosure statement** and its
-  statutory form, the **statute of frauds**, the **easement, deed and recording provisions**, and the
-  **Davis-Stirling Common Interest Development Act.**
+- **The California Civil Code beyond §§ 51, 660, 683, 1102, 1214, 1624, 1950.5, 2079.16 and 2924.**
+  Not read: the rest of the agency article at **§§ 2079 to 2079.25** apart from § 2079.16; the
+  **transfer disclosure statement's own statutory form at § 1102.6**; the remainder of the recording
+  chapter beyond § 1214; the **works of improvement and mechanics lien provisions at § 8000 and
+  following**; the landlord-tenant provisions beyond § 1950.5; and the **Davis-Stirling Common
+  Interest Development Act at § 4000 and following**, which Principles 03 § 5.8 discusses expressly
+  as a body of law this course does not teach.
 - **The Fair Employment and Housing Act beyond § 12955**, **the Unruh Civil Rights Act beyond
   § 51**, **the Holden Act beyond § 35801**, and **the Rumford Act** in its own text. The three
   sections named were read in full on 22 August 2026 and the California protected-class list in

@@ -92,7 +92,51 @@ The reasoning is that a physical or recorded reference is less likely to be mist
 
 **For a licensee this is recognition, not application.** A conflict between a call and a monument is a boundary question for a surveyor and, if it is contested, for counsel.
 
-### 1.7 Checkpoint
+### 1.8 Reading a metes and bounds description aloud
+
+Section 1.2 gave the elements. This section is the drill: taking a real description apart, clause by clause, until the shape is visible.
+
+> *"Beginning at the northeast corner of Section 14, Township 3 North, Range 2 West, San Bernardino Base and Meridian; thence South 00°14'30" East along the east line of said Section 14 a distance of 660.00 feet to the TRUE POINT OF BEGINNING; thence South 89°45'30" West a distance of 330.00 feet; thence South 00°14'30" East a distance of 264.00 feet; thence North 89°45'30" East a distance of 330.00 feet to the east line of said Section 14; thence North 00°14'30" West along said east line 264.00 feet to the TRUE POINT OF BEGINNING."*
+
+**Take it in five moves.**
+
+**The commencement point is not the point of beginning.** The description starts at a monument that can be found — the northeast corner of a surveyed section — and then *travels* to the parcel. **"Beginning at" is the reference monument; "TRUE POINT OF BEGINNING" is the parcel's corner.** Confusing the two shifts the entire parcel 660 feet north, and this is the most common misreading of a metes and bounds description.
+
+**Each call has three parts: a bearing, a distance, and often a monument.** *"South 00°14'30" East … 660.00 feet to the TRUE POINT OF BEGINNING."* Bearing, distance, destination.
+
+**Bearings are read from north or south, never from east or west.** *South 89°45'30" West* means: face south, rotate 89°45'30" toward the west. Because that is almost 90°, the line runs very nearly due west. **A bearing beginning with E or W is not a bearing** — it is a misreading.
+
+**Convert the minutes and seconds when comparing bearings.** 60 seconds to a minute, 60 minutes to a degree. S 00°14'30" E is 14.5 minutes east of due south — 0.242°, essentially a north-south line.
+
+**A description that returns to its point of beginning closes.** Walk it: south 660 to the true point; west 330; south 264; east 330 back to the section line; north 264 to the start. **It closes**, and the shape is a rectangle 330 feet east-west by 264 feet north-south.
+
+Area: 330 × 264 = **87,120 sq ft** = 87,120 ÷ 43,560 = **exactly 2.00 acres**.
+
+### 1.9 What to do when the description does not close
+
+A description that does not return to its point of beginning has an error, and errors of closure are common in older deeds.
+
+**Where they come from.** Transcription errors when a deed was retyped; a call omitted entirely; a bearing reversed (East written for West); a distance misread from a surveyor's field notes; and — in genuinely old descriptions — reference to monuments that no longer exist, such as *"thence along the fence line"* or *"to the oak tree."*
+
+**The order of priority when calls conflict** is a rule of construction a licensee should know exists, even though applying it is a surveyor's and a lawyer's work. In general terms, **natural monuments** outrank **artificial monuments**, which outrank **courses and distances**, which outrank **area**. The reason is evidentiary: a river is harder to move than a number is to mistype.
+
+**What this means at a practical level:** a description that says *"330.00 feet to the east line of said Section 14"* and a measurement that finds the section line at 331.4 feet is resolved in favour of **the section line**, not the 330.00. The monument controls the distance.
+
+**What a licensee does.**
+
+**Do not attempt to resolve it.** A boundary discrepancy is a surveyor's measurement question and a lawyer's title question, and a licensee's opinion about which call controls is worth nothing and may be relied on.
+
+**Do notice it and route it.** A description that will not close, a fence that does not match a plat, a neighbour's structure that appears to cross a line, a preliminary report exception referring to a boundary agreement — each is a signal, and each is visible without any technical skill.
+
+**Do recommend a survey where the answer matters.** Vacant land, an intended addition, a fence dispute, an unusual lot shape, a rural parcel described by metes and bounds rather than by lot and block. **A survey costs a fraction of a boundary lawsuit**, and the recommendation should be made in writing so that the buyer's decision either way is recorded.
+
+**A worked signal.**
+
+> A rural five-acre parcel is described by metes and bounds. The preliminary report notes: *"The legal description contained herein may not describe a legal parcel."* The listing has been on the market twice before and cancelled both times.
+
+**That exception is the title company saying, in its own careful language, that the parcel may never have been lawfully created.** Assignment 06 Section 3.9 explains how that happens — a division that did not follow the Subdivision Map Act. **The two cancelled listings are the market's evidence that other buyers' lenders reached the same conclusion.** A licensee who reads the preliminary report knows on day one what two previous agents apparently discovered in escrow.
+
+### 1.10 Checkpoint
 
 You should be able to read a bearing correctly, identify the elements of a metes and bounds description, and say what closure means.
 
@@ -345,7 +389,48 @@ The recurring triggers:
 
 That last one deserves emphasis. Where a buyer is paying by the acre, the acreage in the listing is a factual claim requiring a source — and the source is a survey or a recorded map, not the assessor and not the prior listing.
 
-### 5.7 Checkpoint
+### 5.8 The evidence a boundary rests on, ranked
+
+Section 5.3 introduced surveys. When boundary evidence conflicts — and in older parcels it usually does — courts and surveyors work through it in a settled order, and knowing the order tells a licensee how seriously to take a discrepancy.
+
+| Rank | Evidence | Why it ranks there |
+|---|---|---|
+| 1 | **Natural monuments** — a river, a rock outcrop, a ridge | Hardest to move, hardest to mistake |
+| 2 | **Artificial monuments** — a survey pin, a monumented corner, a wall built as a boundary | Placed deliberately to mark the line |
+| 3 | **Adjoining boundaries** — the calls of neighbouring parcels | The surrounding fabric must fit together |
+| 4 | **Courses (bearings)** | Recorded numbers, subject to transcription error |
+| 5 | **Distances** | The same, and more often mistyped |
+| 6 | **Area** | A computed result, not a measurement |
+
+**The practical consequence:** a description reading *"330.00 feet to the east line of said Section 14"* where the section line is actually at 331.4 feet is resolved in favour of **the section line**. The monument controls the distance, and the parcel is 331.4 feet deep.
+
+**And area ranks last for a reason worth stating.** A deed reciting "containing 2.00 acres, more or less" does not make the parcel two acres. **The area is what the boundaries produce**, not a boundary in itself, and "more or less" is the drafter saying so.
+
+### 5.9 Fences, and the thing everyone assumes
+
+**A fence is not a boundary.** It is an artificial monument only if it was placed as a boundary monument, and most fences were placed where it was convenient to place them.
+
+**The three situations a licensee meets.**
+
+**The fence is inside the line.** The owner has been using less than they own. Usually harmless, occasionally not — if the neighbour has used the strip openly for long enough, an adverse possession or prescriptive easement question exists. Assignment 09 Section 6.10 notes that California's adverse possession doctrine additionally requires the claimant to have **paid the taxes**, which is why most such claims fail on land that is separately assessed.
+
+**The fence is outside the line.** The owner has been using the neighbour's land. **This is the one that becomes a problem at sale**, when a survey reveals that the pool, the shed, or the driveway apron sits on the neighbour.
+
+**Both owners have relied on the fence for decades.** There may be an agreed-boundary situation, which is a doctrine with elements and a body of law behind it. **It is not something a licensee reasons about.**
+
+**What a licensee does in all three cases.** Notice; disclose what is known; **recommend a survey in writing**; and route the legal question. What a licensee must never say is *"the fence is the line"* — the sentence is wrong as a general matter and it is the sentence buyers most often report having been told.
+
+**A worked signal.**
+
+> A buyer walks a property with the listing agent. A detached garage sits within about two feet of what appears to be the side property line, and the neighbour's newer fence runs behind it. The preliminary report contains the standard exception for matters an accurate survey would disclose.
+
+**Three ordinary possibilities and one expensive one.** The garage may be inside the line; it may encroach; the fence may be inside the neighbour's line; or the garage may encroach and have done so long enough that a doctrine applies.
+
+**The buyer's exposure is not theoretical.** A garage encroaching on a neighbour is a title problem, an insurance problem and potentially a demolition problem, and **the standard policy's survey exception means the title insurer has expressly declined to cover it.**
+
+**The action is a survey, ordered in the first days of the contingency period**, and the recommendation goes in writing so that a buyer who declines it has declined it knowingly.
+
+### 5.10 Checkpoint
 
 You should be able to explain the difference between record and occupied boundaries, state what a title policy does not cover, and list the triggers for recommending a survey.
 
@@ -469,7 +554,78 @@ A principles course teaches area formulas and section arithmetic, and students r
 
 > **The failure this prevents is not an arithmetic failure.** It is a licensee who repeated a number, was believed, and turned out to be the only person who had ever asserted it. **Section 5.5's prohibition and this section's arithmetic are the same subject:** the licensee's job is to convey what is known, from where it is known, and to be visibly absent from the parts he is not qualified to determine.
 
-### 6.9 Checkpoint
+### 6.10 Area problems a licensee actually meets
+
+Section 6.1 gave the conversions. This section works the problems that arise in practice, where the shape is irregular and the figures come from three documents that disagree.
+
+**The five conversions, and the two that get reversed.**
+
+| Conversion | Figure |
+|---|---|
+| 1 acre | **43,560 square feet** |
+| 1 square mile (section) | 640 acres |
+| 1 township | 36 sections, 6 miles square |
+| 1 linear mile | 5,280 feet |
+| 1 front foot | one foot of frontage on the street, whatever the depth |
+
+**The two that get reversed** are square feet to acres and acres to square feet. To go from square feet **to** acres, **divide** by 43,560. To go from acres **to** square feet, **multiply**. A candidate who multiplies when they should divide produces an answer roughly 1,900,000,000 times too large and does not notice, because the number has no intuitive size.
+
+**Worked problem — the irregular lot.**
+
+> A corner lot is a rectangle 120 feet deep and 90 feet wide, with a triangular corner cut off for a street radius. The cut removes a right triangle with legs of 18 feet and 18 feet. What is the lot area in square feet, and in acres?
+
+Rectangle: 120 × 90 = **10,800 sq ft**.
+Triangle removed: ½ × 18 × 18 = **162 sq ft**.
+Net: 10,800 − 162 = **10,638 sq ft**.
+In acres: 10,638 ÷ 43,560 = **0.2442 acres**.
+
+**Worked problem — the split parcel.**
+
+> An owner holds the SE¼ of the NW¼ of Section 22, and the N½ of the SW¼ of the NE¼ of the same section. How many acres?
+
+Work each from the section's 640 acres, dividing by four for each quarter and by two for each half, right to left:
+
+- SE¼ of NW¼ → 640 ÷ 4 ÷ 4 = **40 acres**
+- N½ of SW¼ of NE¼ → 640 ÷ 4 ÷ 4 ÷ 2 = **20 acres**
+
+Total **60 acres**. **The reading direction is the whole trick**: the description narrows from right to left, so the arithmetic runs the same way.
+
+**Worked problem — front feet and price.**
+
+> A commercial strip sells for $2,400 per front foot. A parcel has 145 feet of frontage and a depth of 210 feet. What is the price, and what is the price per square foot?
+
+Price: 145 × $2,400 = **$348,000**.
+Area: 145 × 210 = 30,450 sq ft.
+Per square foot: $348,000 ÷ 30,450 = **$11.43**.
+
+**Note what front-foot pricing ignores.** Depth. Two parcels with identical frontage and depths of 100 and 300 feet cost the same under front-foot pricing and are not the same property. **Front-foot pricing is a convention of a particular market**, and a licensee who quotes it should know that it is a convention rather than a measure of the land.
+
+### 6.11 When three documents give three different sizes
+
+This is the ordinary case, not the exception, and it is worth knowing before a client asks.
+
+> A single-family property's size appears as: **1,842 square feet** on the county assessor's record; **1,914 square feet** in the multiple listing service; **1,780 square feet** on the appraisal; and **1,900+ square feet** in the seller's own description.
+
+**They are measuring different things, and none of them is necessarily wrong.**
+
+| Source | What it usually measures | Why it differs |
+|---|---|---|
+| **Assessor** | The size on record for taxation, often from a permit file decades old | Permitted additions may never have been re-recorded; unpermitted ones certainly were not |
+| **Appraiser** | Gross living area, measured from exterior dimensions to a published standard, excluding garages and usually excluding below-grade space | The **standard** is what makes this figure comparable to other appraisals |
+| **Listing service** | Whatever the input agent entered, from whatever source | The least controlled figure of the four |
+| **Seller** | Recollection, a floor plan, or a builder's brochure | Frequently includes converted space |
+
+**What a licensee must and must not do.**
+
+**Do not state a square footage as fact.** A licensee who says "it's 1,900 square feet" has made a representation about a measurement they did not take, and the difference between 1,780 and 1,914 is 7 per cent of the property.
+
+**Do state the source with the figure.** *"The assessor's record shows 1,842 square feet; the appraisal measured 1,780."* Attribution converts a representation into a report, and it lets the buyer decide which source to rely on.
+
+**Do tell a buyer who cares to have it measured.** For a buyer whose decision turns on size — a price-per-square-foot analysis, a room that must fit a particular use — the answer is an independent measurement, not a better citation.
+
+**Do notice when the gap points at something else.** A 130-square-foot discrepancy is usually a measurement standard. A 400-square-foot discrepancy is usually a converted garage, an enclosed patio, or an addition, and **each of those raises a permit question that is larger than the square footage question.** Assignment 06 Section 3.4 explains why an unpermitted addition is a problem that survives the sale.
+
+### 6.12 Checkpoint
 
 You should be able to compute acreage and value from lot dimensions, convert between units correctly, apply a reasonableness check, and state a square footage figure the way a professional states it.
 

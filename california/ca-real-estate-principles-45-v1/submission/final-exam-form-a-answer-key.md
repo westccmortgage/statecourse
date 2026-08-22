@@ -115,16 +115,16 @@ D. Whether the item is listed in the purchase agreement and whether it is insure
 >
 > **Found in the course material at:** Assignment 02 (Real property, personal property, and fixtures), section 2.3
 
-### 8. Custom window coverings were cut to fit each window of a particular house. Which test most directly supports treating them as fixtures?
+### 8. Civil Code § 660 lists the ways a thing is deemed affixed to land, naming "cement, plaster, nails, bolts, or screws" as means of permanent attachment. A television rests in a bracket that is screwed to a wall. What is the analysis?
 
-**A. Adaptability, because they were fitted to this property specifically and have little use elsewhere.**
-B. Relationship of the parties, because the seller installed them personally.
-C. Method of attachment, because fabric is affixed to the structure with permanent fasteners.
-D. Trade fixture doctrine, because the coverings serve the use of the premises.
+**A. The bracket is affixed because screws are among the named fasteners; the television rests in it and is not affixed.**
+B. Both are affixed, because the television is attached to a fixture which is itself attached to the realty.
+C. Neither is affixed, because a television is personal property and its mount takes its character.
+D. The bracket is affixed only if removing it would damage the wall.
 
-> **Correct answer: A.** Adaptation to the specific property is the controlling factor for items custom-fitted to it. The trade fixture doctrine concerns items a tenant installs for a business.
+> **Correct answer: A.** The statute names the fasteners, and screws are on the list. The television is held by gravity in a bracket, which is none of the named means. Damage on removal is one of the judicial tests, not the statutory definition.
 >
-> **Found in the course material at:** Assignment 02 (Real property, personal property, and fixtures), section 2.5
+> **Found in the course material at:** Assignment 02 (Real property, personal property, and fixtures), section 2.9
 
 ### 9. A commercial tenant installs display shelving and refrigeration units to operate a grocery. Under the trade fixture rule, what is the general position at lease end?
 
@@ -401,16 +401,16 @@ D. An illegal use requiring immediate removal.
 >
 > **Found in the course material at:** Assignment 06 (Government powers, land use, and environmental controls), section 2.4
 
-### 34. A buyer says he will 'just get a variance' if the ordinance does not permit his intended use. Why is that a dangerous assumption for a licensee to encourage?
+### 34. An owner divides a parcel into two lots for sale. Which statutory scheme applies?
 
-A. Variances are prohibited in California residential zones.
-B. A variance can only be sought by the owner of record after closing.
-C. A variance would convert the property to a nonconforming use.
-**D. Relief mechanisms are discretionary processes with standards, timelines, and no guaranteed outcome.**
+A. Both, because any division of land for sale triggers a public report from the Department of Real Estate.
+B. Neither, because a two-lot division is a lot line adjustment rather than a subdivision.
+C. The Subdivided Lands Act only, because the Department administers all divisions made for the purpose of sale.
+**D. The Subdivision Map Act, administered locally; the Subdivided Lands Act does not, because it reaches divisions into five or more parcels.**
 
-> **Correct answer: D.** A variance or conditional use permit is a process with standards and a hearing, not an entitlement. Encouraging reliance on it is how buyers remove contingencies on a plan that later fails.
+> **Correct answer: D.** Government Code § 66424 defines subdivision broadly for map purposes and reaches a two-lot division. Business and Professions Code § 11000 defines subdivided lands as a division into five or more lots or parcels, so no public report is involved.
 >
-> **Found in the course material at:** Assignment 06 (Government powers, land use, and environmental controls), section 2.3
+> **Found in the course material at:** Assignment 06 (Government powers, land use, and environmental controls), section 3.7
 
 ### 35. A seller discloses that a bedroom addition was built without permits. What is the licensee's correct handling of the marketing?
 
@@ -522,16 +522,16 @@ D. A contract is formed at the changed price, because returning the document is 
 >
 > **Found in the course material at:** Assignment 08 (Contracts and transaction formation), section 2.3
 
-### 45. An offeree signs an acceptance but it is never transmitted to the offeror before the offer expires. What is the position?
+### 45. Civil Code § 1624 makes certain contracts invalid unless there is a writing "subscribed by the party to be charged or by the party's agent." What does that phrase establish?
 
-A. A contract formed at the moment of signature, and transmission is a formality.
-B. A contract formed, because the offeror's own expiration term cannot defeat an acceptance actually made.
-C. A contract formed only if the offeree can prove he intended to send it.
-**D. No contract formed, because formation turns on communication of acceptance rather than on the signature alone.**
+A. Both parties must sign before either can enforce the agreement.
+B. The party who drafted the writing must sign it before it takes effect.
+C. A signature is required only where the contract exceeds a stated value.
+**D. Only the party being sued need have signed, so a writing signed by the seller alone may be enforced against the seller.**
 
-> **Correct answer: D.** Communication is the operative event. A signed acceptance sitting in an outbox has not been communicated, which is why transmission and confirmation are operational disciplines rather than formalities.
+> **Correct answer: D.** The requirement is asymmetric by design. The writing binds the party who subscribed it, which is why a seller's signed memorandum can be enforced against the seller even where the buyer signed nothing.
 >
-> **Found in the course material at:** Assignment 08 (Contracts and transaction formation), section 2.1
+> **Found in the course material at:** Assignment 08 (Contracts and transaction formation), section 4.7
 
 ### 46. Which best describes a voidable contract?
 
@@ -1040,17 +1040,16 @@ D. The condition need not be disclosed because the repair resolved it.
 > **Found in the course material at:** Assignment 07 (Agency and brokerage relationships), section 2.4
 > **Also drawn from:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 5.2
 
-### 92. A seller says the property is held in his late mother's trust and that he is 'the beneficiary, so it's mine.' What must be established before the listing proceeds?
+### 92. Two sisters buy a house together in equal shares, intending that the survivor should take the whole. The deed names them both and says nothing more. Under Civil Code § 683, what have they created?
 
-A. Whether the beneficiary has recorded a notice of his interest.
-B. Nothing, since a sole beneficiary may convey trust property directly.
-C. Whether the trust was funded with other assets besides the property.
-**D. Who currently holds the office of trustee, established from the trust instrument, because the trustee conveys and a competent grantor is a deed requirement.**
+A. A joint tenancy, because they took in equal shares by a single transfer at the same time.
+B. Community property with right of survivorship, which is the default for co-owners taking equal shares.
+C. A joint tenancy, because their intention was clear and the unities are satisfied.
+**D. A tenancy in common, because § 683 requires a joint tenancy to be expressly declared in the transfer.**
 
-> **Correct answer: D.** Title is held by the trustee in that capacity, and after a death the office may have passed to a successor. A deed from a person without authority to convey fails at the grantor requirement.
+> **Correct answer: D.** § 683 says "when expressly declared in the transfer to be a joint tenancy." Equal shares, a single transfer and a clear intention are not substitutes for the words, and community property vesting is available only to spouses and partners.
 >
-> **Found in the course material at:** Assignment 03 (Estates, ownership, and common interests), section 6.2
-> **Also drawn from:** Assignment 09 (Transfer, deeds, title, and recording), section 1.2
+> **Found in the course material at:** Assignment 03 (Estates, ownership, and common interests), section 3.9
 
 ### 93. A deed is delivered on Monday but not recorded. On Wednesday a judgment creditor records an abstract against the record owner. On Friday the deed is recorded. What issue does this sequence raise?
 
@@ -1064,17 +1063,16 @@ D. Whether the creditor must release the lien because the deed predates it.
 > **Found in the course material at:** Assignment 05 (Encumbrances, liens, easements, and restrictions), section 5.3
 > **Also drawn from:** Assignment 09 (Transfer, deeds, title, and recording), section 4.4
 
-### 94. The parties sign an amendment extending the closing date, and it is never sent to escrow. What is the position?
+### 94. Business and Professions Code § 10145 requires a broker who accepts funds belonging to others to place them in one of a limited set of destinations. Which is NOT among them?
 
-A. The original closing date is unenforceable once any amendment exists.
-**B. The amendment binds the parties, but escrow will act on the instructions it holds, so the extension must be transmitted for the closing to reflect it.**
-C. The amendment is ineffective because escrow did not receive it.
-D. Escrow is required to detect the amendment and adjust the closing accordingly.
+A. A trust fund account maintained by the broker in a bank or recognised depository in this state.
+**B. The broker's general business account, pending transfer once the transaction is further along.**
+C. A neutral escrow depository, immediately.
+D. The hands of the broker's principal, immediately.
 
-> **Correct answer: B.** The purchase agreement governs what the parties owe each other; the escrow instructions govern what the neutral third party does. Keeping them aligned is the licensee's task on every file.
+> **Correct answer: B.** The section names three destinations and no more. A general business account is where commingling happens, and the offence does not require a loss, a shortage, or any intent.
 >
-> **Found in the course material at:** Assignment 10 (Escrow, settlement, and transaction chronology), section 2.5
-> **Also drawn from:** Assignment 08 (Contracts and transaction formation), section 5.3
+> **Found in the course material at:** Assignment 10 (Escrow, settlement, and transaction chronology), section 3.8
 
 ### 95. A manager tells a licensee to send the appraiser three comparables selected because they support the contract price, and to use an appraiser 'whose numbers come in.' How should both instructions be assessed?
 
@@ -1088,17 +1086,16 @@ D. Supplying comparables is always permissible; only the appraiser-selection ins
 > **Found in the course material at:** Assignment 12 (Valuation and appraisal foundations), section 6.4
 > **Also drawn from:** Assignment 14 (Fair housing, civil rights, and consumer protection), section 5.5
 
-### 96. A client asks whether he can cancel and recover his deposit. Which response is within the licensee's scope?
+### 96. Business and Professions Code § 10131 defines a real estate broker as a person who acts "for a compensation or in expectation of a compensation, regardless of the form or time of payment." A person performs a listed act hoping to be paid, and is never paid. What follows?
 
-A. Tell him the liquidated damages clause caps the seller's recovery at the deposit amount.
-B. Tell him he may cancel because his contingency period has not expired.
-C. Tell him the deposit is returned automatically whenever a buyer cancels in writing.
-**D. State what the agreement provides procedurally and by when, and refer the question of his rights and the deposit's disposition to counsel.**
+A. No licence was required, because the section reaches only acts for which compensation was actually received.
+B. No licence was required unless the person had a written fee agreement.
+C. The section applies only if the compensation would have been a commission rather than a flat fee.
+**D. The expectation of compensation satisfies the section; the act was performed for compensation within its meaning.**
 
-> **Correct answer: D.** Explaining the document's procedure is within scope; stating the legal effect on his rights is not. The three rejected answers are all legal conclusions delivered under pressure.
+> **Correct answer: D.** The Legislature wrote "or in expectation of a compensation" precisely so that non-payment would not defeat the section, and "regardless of the form or time of payment" so that the shape of the fee would not either.
 >
-> **Found in the course material at:** Assignment 01 (The real estate profession and California regulatory structure), section 4.2
-> **Also drawn from:** Assignment 08 (Contracts and transaction formation), section 6.9
+> **Found in the course material at:** Assignment 01 (The real estate profession and California regulatory structure), section 2.9
 
 ### 97. A buyer intends to add a second unit to a property. What does defensible due diligence require before he removes his contingencies?
 
@@ -1136,14 +1133,13 @@ D. It need not be disclosed because the arrangement is between neighbors and doe
 > **Found in the course material at:** Assignment 04 (Land description, measurement, and boundaries), section 5.6
 > **Also drawn from:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 5.4
 
-### 100. A licensee meets a situation no rule in the course addresses. Which sequence of questions is most likely to produce the correct action and the correct record?
+### 100. Business and Professions Code § 10176(f) makes it a ground for discipline to claim, demand or receive a fee under an exclusive agreement that lacks something. What?
 
-A. What is customary in the market, what will the client accept, what will close fastest, and what will the broker approve.
-B. What is the licensee's opinion, what is the client's preference, what is the least disruptive course, and what can be corrected afterward.
-C. What does the form provide, what did the last transaction do, what does the other agent expect, and what is defensible later.
-**D. Whose decision is this, whose duty is engaged, does the decision have the information it requires, and what will the file show.**
+A. A statement of the commission rate expressed as a percentage.
+B. A recital that the agreement is governed by California law.
+C. The signature of the employing broker as well as the salesperson.
+**D. A definite, specified date of final and complete termination.**
 
-> **Correct answer: D.** Identifying the decision-maker, the duty engaged, whether the decision is informed, and what the record will show resolves situations no rule anticipated. The rejected sets substitute custom, convenience, or the licensee's own judgment for the analysis.
+> **Correct answer: D.** The subdivision requires a definite, specified termination date. "Until sold" and "90 days from acceptance" are not dates, and the offence is claiming a fee under such an agreement rather than signing one.
 >
-> **Found in the course material at:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 6.6
-> **Also drawn from:** Assignment 07 (Agency and brokerage relationships), section 2.7
+> **Found in the course material at:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 4.10

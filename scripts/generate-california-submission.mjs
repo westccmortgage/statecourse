@@ -28,6 +28,16 @@ import {
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
+/* RE 313 asks for the page count of the text. It was a note telling somebody to count the
+   bound volume by hand, which is a number that would have been wrong the first time the
+   curriculum changed. It is read from the built PDF instead. */
+function printedPages(course) {
+  const pdf = path.join(root, "california/print", `${course.courseId}-course-text.pdf`);
+  if (!fs.existsSync(pdf)) return null;
+  const counts = [...fs.readFileSync(pdf).toString("latin1").matchAll(/\/Type\s*\/Page[^s]/g)];
+  return counts.length || null;
+}
+
 /* The filled forms are named after the course, matching scripts/fill-re306.mjs and fill-re336.mjs. */
 const slug = (title) => title.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const base = path.join(root, "california/submission");
@@ -212,7 +222,7 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | TEXTBOOK / WORKBOOK / OUTLINE — Title | *${course.title} — ${PROVIDER.legalName} California Course Text* |
 | — Author(s) | ${PROVIDER.legalName} |
 | — Copyright Date | 2026 |
-| — Pages | *(enter the final bound page count of the printed course text)* |
+| — Pages | **${printedPages(course) ?? "*(build the volume with scripts/build-california-print-volume.mjs, then this field carries its page count)*"}** |
 | — Edition | 1.0 |
 | REFUND/CANCELLATION POLICY | **Policy ${PRICING.refundPolicy.version}** — the text in the block below, entered verbatim |
 | FINAL EXAMINATION CRITERIA — Number of questions | **${FINAL_EXAM.questions}** |

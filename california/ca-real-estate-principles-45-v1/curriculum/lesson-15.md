@@ -104,7 +104,53 @@ The elements that must be right: the **type** of notice, its **content**, the **
 
 The buyer of a leased property takes **subject to the lease on its terms.** "The tenants will be out by closing" is a representation to verify against the leases, not to accept — along with the deposits held and their amounts, notices already given, and any written agreement to vacate.
 
-### 1.9 Checkpoint
+### 1.10 The four leasehold estates, and which one a tenancy actually is
+
+Section 1.2 introduced the lease. Classifying the tenancy correctly is the step that determines notice, termination and the parties' expectations, and it is done wrongly often enough to be worth setting out plainly.
+
+| Estate | How it is created | How it ends | Notice |
+|---|---|---|---|
+| **Estate for years** | A lease with a fixed term and a definite ending date | **Automatically, on the stated date** | None required by the term itself |
+| **Periodic tenancy** | A tenancy from period to period — month to month, week to week | On notice by either party | Statutory notice, by period and circumstance |
+| **Estate at will** | Possession with the owner's consent, no fixed term, no rent reserved as a period | On notice or by act of either party | Statutory notice |
+| **Estate at sufferance** | A tenant who **holds over** after a lawful tenancy ends | On the landlord's action | The tenant is not a trespasser but has no estate |
+
+**The name misleads on the first one.** An "estate for years" need not be for years. A six-month lease and a ninety-nine-year ground lease are both estates for years, because what defines the class is a **definite ending date**, not a duration.
+
+**And the automatic termination is the practical point.** An estate for years ends on its stated date without anyone giving notice. A landlord who believes they must serve notice to end a fixed-term lease is mistaken; a landlord who accepts rent after the date has usually created something else.
+
+**The holdover tenant is the one that generates litigation.** A tenant remaining after a fixed term has expired holds an estate at sufferance: they entered lawfully, so they are not a trespasser, and they have no continuing estate. **What happens next depends on the landlord's conduct**, and accepting a rent payment is conduct — it commonly converts the sufferance into a periodic tenancy on the old terms.
+
+**None of the notice periods appears in this course.** Residential notice requirements in California vary with the length of occupancy, the reason for termination, the type of property, and local ordinance, and they have changed repeatedly. **This course does not read those statutes in their own text**, and any figure a licensee needs comes from the current statute or from counsel — never from a memory of a table.
+
+### 1.11 Assignment, sublease, and the difference that decides liability
+
+Two words clients use interchangeably describe arrangements with different consequences.
+
+**An assignment transfers the tenant's entire remaining interest** to the assignee. The assignee steps into the tenancy for its whole remaining term.
+
+**A sublease transfers less than the whole** — some of the term, or some of the space — and the original tenant retains a reversion.
+
+| | Assignment | Sublease |
+|---|---|---|
+| What transfers | The entire remaining interest | Less than the whole |
+| Original tenant's position | Out of possession, **generally still liable to the landlord on the lease** | Remains the tenant; becomes a sublandlord |
+| Who the landlord looks to | Original tenant, and the assignee | **The original tenant** |
+| Who the subtenant pays | — | The original tenant |
+
+**The point that surprises tenants:** in both cases the **original tenant generally remains liable to the landlord** unless the landlord expressly releases them. A tenant who assigns a lease and moves to another state has not escaped the obligation; they have added someone to it.
+
+**Most leases require the landlord's consent to either**, and the consent clause is the term to read: whether consent may be withheld at all, and if so on what basis.
+
+**A worked situation.**
+
+> A tenant on a three-year commercial lease at $6,800 a month, with 20 months remaining, arranges for another business to take the space. The landlord signs a one-page "Consent to Assignment." Eight months later the new occupant stops paying. The landlord demands the arrears from the original tenant.
+
+**The original tenant's position depends on one document and one word in it.** If the consent released the original tenant, they are out. If it consented to the assignment without releasing them — which a one-page consent very often does — **they remain liable for the remaining term.**
+
+**What the licensee should have done** is not to advise on the release; that is counsel's. It is to have said, at the time, in writing: *"Consent to an assignment is not the same as a release from liability. Ask your attorney whether this document releases you."* **One sentence, at the moment the document appeared, and the tenant's decision is theirs with the question visible.**
+
+### 1.12 Checkpoint
 
 You should be able to distinguish assignment from subletting, state the entry requirements, and explain why a defective notice defeats a good reason.
 
@@ -327,7 +373,71 @@ Any error affecting a client's decision or a transaction's terms; any client dis
 
 **The bias should be toward reporting.** A report that turns out unnecessary costs a conversation. An unreported matter that becomes a claim costs the coverage and the credibility.
 
-### 4.9 Checkpoint
+### 4.10 The two discipline sections, and why there are two
+
+Section 4.3 listed grounds for discipline. There are two statutes, and the division between them is not arbitrary — it is the difference between misconduct **in a licensed transaction** and misconduct that shows a person unfit to hold the licence at all.
+
+**Business and Professions Code § 10176** reaches conduct within the licensed activity. It opens by describing the Commissioner's duty:
+
+> *"The commissioner **may, upon his or her own motion, and shall, upon the verified complaint in writing of any person**, investigate the actions of any person engaged in the business or acting in the capacity of a real estate licensee within this state, and he or she may temporarily suspend or permanently revoke a real estate license at any time where the licensee, **while a real estate licensee, in performing or attempting to perform any of the acts within the scope of this chapter**, has been guilty of any of the following:"*
+
+**"May upon his own motion, and shall upon the verified complaint."** The Commissioner has discretion to open an investigation unprompted and **a duty to investigate on a written verified complaint**. A consumer who files properly is not asking for a favour.
+
+**"While a real estate licensee, in performing or attempting to perform any of the acts within the scope of this chapter."** § 10176 is confined to licensed activity — the § 10131 acts, done while licensed. That confinement is what makes a second section necessary.
+
+**The grounds themselves**, in the statute's words:
+
+> **(a)** *"Making any **substantial misrepresentation**."*
+> **(b)** *"Making any **false promises** of a character likely to influence, persuade, or induce."*
+> **(c)** *"A **continued and flagrant course** of misrepresentation or making of false promises through licensees."*
+> **(d)** *"**Acting for more than one party in a transaction without the knowledge or consent of all parties** thereto."*
+> **(e)** *"**Commingling** with his or her own money or property the money or other property of others which is received and held by him or her."*
+> **(f)** *"Claiming, demanding, or receiving a fee … under any **exclusive agreement** … where the agreement **does not contain a definite, specified date of final and complete termination**."*
+> **(g)** *"The claiming or taking by a licensee of any **secret or undisclosed amount of compensation**, commission, or profit or the failure of a licensee to reveal to the buyer or seller … **the full amount** of the licensee's compensation …"*
+
+**Four of those seven are things this course has already taught, and now they have a citation.**
+
+**(d) is undisclosed dual agency**, and it is the statutory consequence of the Civil Code § 2079.16 requirement in Assignment 07 Section 4.10. The Civil Code says consent is required; § 10176(d) is what happens when it was not obtained.
+
+**(e) is commingling**, the § 10145 rule from Assignment 10 Section 3.8, stated as a ground for revocation. **Note that (e) requires no loss, no shortage and no complaint** — the commingling is the offence.
+
+**(f) is the exclusive listing with no termination date.** An exclusive agreement that runs indefinitely is not merely bad practice; **claiming a fee under one is a ground for discipline.** This is the reason every exclusive listing form has a date on it.
+
+**(g) is the secret profit rule**, and it reaches further than most licensees expect: not only taking an undisclosed profit, but **the failure to reveal the full amount** of compensation. A referral fee not disclosed is inside (g).
+
+### 4.11 Section 10177, and the conduct that is not in a transaction
+
+**Business and Professions Code § 10177** covers what § 10176 cannot: grounds that do not require misconduct inside a licensed act. It reaches licence applications obtained by misrepresentation, convictions of crimes substantially related to the qualifications of a licensee, discipline of other licences held, negligence or incompetence, failure to supervise, and — as Assignment 14 has already read — **§ 10177(l)**, soliciting or inducing a sale or listing on the grounds of loss of value, increase in crime, or decline in school quality due to the entry into the neighbourhood of persons having a characteristic listed in Government Code § 12955.
+
+**The practical division to remember:**
+
+| | § 10176 | § 10177 |
+|---|---|---|
+| **Reaches** | Conduct **in performing or attempting to perform** licensed acts | Conduct including outside a transaction |
+| **Typical grounds** | Misrepresentation, false promises, undisclosed dual agency, commingling, open-ended exclusives, secret profit | Fraudulent application, disqualifying convictions, discipline elsewhere, negligence, **failure to supervise**, blockbusting |
+| **Who it most often catches** | The salesperson in the deal | The broker who did not supervise, and the applicant who did not disclose |
+
+**Failure to supervise is the one a broker should read twice.** Assignment 01 Section 3.3 called supervision an affirmative duty. § 10177 is why: a broker whose salesperson commits a § 10176 violation may face their own proceeding for having failed to supervise, and **"I delegated it" is the fact that establishes the ground rather than a defence to it.**
+
+### 4.12 Security deposits, and the definition that closes the loopholes
+
+Property management is licensed activity under § 10131(b), so a licensee who manages will handle deposits. **Civil Code § 1950.5** governs them, and its definition is drafted to defeat renaming:
+
+> *"(b) As used in this section, **'security' means any payment, fee, deposit, or charge**, including, but not limited to, any payment, fee, deposit, or charge … that is imposed at the beginning of the tenancy to be used to reimburse the landlord for costs associated with processing a new tenant or that is imposed as an **advance payment of rent**, used or to be used for **any purpose**, including, but not limited to, any of the following:*
+>
+> *(1) The compensation of a landlord for a tenant's **default in the payment of rent**.*
+> *(2) The **repair of damages** to the premises, **exclusive of ordinary wear and tear**, caused by the tenant or by a guest or licensee of the tenant.*
+> *(3) The **cleaning** of the premises upon termination of the tenancy necessary to return the unit to **the same level of cleanliness it was in at the inception of the tenancy**."*
+
+**"Any payment, fee, deposit, or charge."** A "move-in fee", a "cleaning fee", a "pet deposit", a "key deposit", last month's rent taken in advance — **all of it is security** under § 1950.5(b) and all of it is subject to the section's limits and its accounting obligations. Calling money something else does not remove it from the statute.
+
+**Paragraph (2) fixes the standard for damage: "exclusive of ordinary wear and tear."** A landlord may charge for damage, not for the ordinary consequences of living somewhere. Carpet worn along a hallway after four years is wear; a burn in it is damage.
+
+**Paragraph (3) fixes the standard for cleaning with unusual precision: "the same level of cleanliness it was in at the inception of the tenancy."** Not professionally cleaned; not spotless; **the condition it was in when the tenant moved in.**
+
+**Which makes the move-in condition record the single most valuable document in property management.** Dated photographs and a signed condition report at move-in convert every later deposit dispute from an argument into a comparison. Assignment 15 Section 2.6 recommends the practice; § 1950.5(b)(3) is why it decides cases.
+
+### 4.13 Checkpoint
 
 You should be able to name the discipline categories, state what E&O does and does not do, and describe what the recovery account is and is not.
 
@@ -411,7 +521,60 @@ When unsure what to do about something:
 
 **"Disclose everything" is not the rule.** The rule is: **disclose what is material and known, attribute what is unverified, decline what the law limits, and evaluate nothing.**
 
-### 5.10 Checkpoint
+### 5.11 Material fact, and the test that actually decides
+
+Section 5.2 defined the disclosure duty. The recurring difficulty is not the duty but the threshold: what makes a fact material.
+
+**The working test.** A fact is material if it would **affect the value or desirability of the property** in the eyes of a reasonable buyer. Civil Code § 2079.16's own statement of the agent's duty uses that language: the duty to disclose *"all facts known to the agent materially affecting the value or desirability of the property that are not known to, or within the diligent attention and observation of, the parties."*
+
+**Read the qualifier at the end**, because it does real work in both directions. The duty covers facts **not known to** the buyer and **not within their diligent attention and observation**. A licensee need not disclose the obvious — the house is on a busy street, the roof is visibly old. **But "they could have seen it" is a weak defence for anything that requires knowing where to look.**
+
+**Four categories, and how they behave differently.**
+
+| Category | Examples | How it behaves |
+|---|---|---|
+| **Physical condition** | Leaks, foundation movement, past flooding, failed systems, prior repairs | Disclose. The seller's knowledge, and the licensee's own observations |
+| **Legal and title** | Boundary disputes, easements in use, unpermitted work, litigation, association assessments | Disclose. These do not resolve at closing |
+| **Neighbourhood and off-site** | Planned development, a nuisance use nearby, chronic noise | Disclose what is known. Do not investigate the neighbours |
+| **Personal circumstances of an occupant** | Illness, death, criminal history of a neighbour, protected characteristics | **Handle with care — several of these must not be disclosed** |
+
+**The fourth category is where licensees get into trouble by being helpful.** Some facts about people are protected, and disclosing them is itself unlawful. Assignment 14 Section 2.10 explains that treating a person differently on a protected basis does not require intent; **volunteering information about occupants' protected characteristics is a way of inviting exactly that.**
+
+**And the rule that resolves the hardest of them:** where a licensee is unsure whether a fact must be disclosed, must not be disclosed, or may be disclosed only in a particular form, **the question goes to the broker and then to counsel — before the answer is given, not after.**
+
+### 5.12 Unpermitted work, and why it is the most common serious defect
+
+**It is common because it is invisible.** A converted garage, an enclosed patio, an added bathroom, a second unit. The work is often competent and the space is often useful. **The problem is not the quality of the construction; it is the absence of a permit.**
+
+**What it does to a transaction.**
+
+**The square footage is wrong.** Assignment 04 Section 6.11 describes three documents giving three sizes. A 400-square-foot discrepancy is usually unpermitted space, and the assessor's record excludes it because it was never permitted.
+
+**The lender may exclude it.** An appraiser may decline to give value to unpermitted area, which changes the appraised value and can change the loan.
+
+**The insurer may exclude it.** A claim arising in unpermitted space can be contested.
+
+**The buyer inherits the enforcement risk.** A city that learns of unpermitted work may require permits to be obtained retroactively, work to be opened for inspection, or the space to be restored. **That obligation runs with the property, to the new owner.**
+
+**What a licensee does.**
+
+**Ask the seller directly and in writing** whether any work has been done, when, and whether permits were obtained.
+
+**Compare what is in front of you against the assessor's record.** A three-bedroom record and a four-bedroom house is a question.
+
+**Do not characterise it.** Not "it's fine, everybody does it"; not "the city will never know"; not "it's grandfathered." **Grandfathering is a legal conclusion about a specific structure under a specific ordinance**, and a licensee has no basis for it.
+
+**Do disclose what is known and route the rest.** The city's building department answers permit questions, and it answers them to anyone who asks.
+
+**A worked failure.**
+
+> A property is marketed as a four-bedroom, three-bath residence at 2,310 square feet. The assessor shows three bedrooms, two baths, 1,890 square feet. The fourth bedroom and third bath are in a converted garage, done by a previous owner in 2011 with no permit. Nobody asks; the seller's disclosure says "no additions or alterations known."
+
+**The listing itself is the first problem.** Marketing space as living area when the public record shows otherwise is a representation the licensee made, and 420 square feet at that market's prices is well over $200,000 of stated value.
+
+**The seller's disclosure may be true.** A seller who bought the house in 2016 may genuinely not know. **That does not help the buyer**, and it does not answer the licensee's own duty under § 2079.16 to disclose facts materially affecting value that are known to the agent — including the discrepancy the agent could see in the assessor's record before the property was ever listed.
+
+### 5.13 Checkpoint
 
 You should be able to apply the three-part test, distinguish observation from inference, and explain why late delivery is not cured by delivery before closing.
 

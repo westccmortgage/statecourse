@@ -221,7 +221,9 @@ test("every built state's regulatory record states its own source boundary", () 
  */
 test("every California section citation is a text the register records as read", () => {
   const register = fs.readFileSync(path.join(root, "california/regulatory/primary-text-readings.md"), "utf8");
-  assert.match(register, /exactly one of its 45\s+lesson assignments cites a California statutory or regulatory section/i);
+  /* The register's opening finding, which now describes an expansion rather than an absence. */
+  assert.match(register, /not one lesson assignment cited a California statutory or regulatory section/i);
+  assert.match(register, /Real Estate Principles, thirteen of fifteen assignments/i);
   assert.match(register, /is the statement of California law\s+correct/i);
   /* The register has to name the rule, not only happen to comply with it. */
   assert.match(register, /every statutory section cited anywhere in\s+the California curriculum must be one this register records as read in its own text/i);
@@ -234,18 +236,84 @@ test("every California section citation is a text the register records as read",
    * When a citation has to be added, the fix is to read the text and record it — never to delete
    * the citation and leave the teaching that rested on it.
    */
+  /*
+   * The sections cited in the California curriculum, each read in its own text and recorded in
+   * the register. The list is exact rather than generous: a citation outside it fails, and a
+   * member of it the register does not record fails too, so the two cannot drift apart.
+   *
+   * It grew on 22 August 2026, when the Principles instructional volume was expanded to meet
+   * RE 303's ~450-page equivalence benchmark. The material used to close that gap was the
+   * primary statutory text this register had recorded as the build's largest omission, which is
+   * why the list is now mostly Business and Professions Code and Civil Code rather than nothing.
+   *
+   * When a citation has to be added, the fix is to read the text and record it — never to delete
+   * the citation and leave the teaching that rested on it.
+   */
+  /*
+   * Keyed by the INTEGER part of the citation, because that is what the scan captures: "§ 10153.2"
+   * yields 10153 and "§ 704.730" yields 704. Subdivision numbers are not part of the key, so a
+   * section and its subdivisions share one entry — which is correct here, since reading § 1102
+   * is what licenses citing § 1102 at all.
+   */
   const READ_IN_FULL = {
+    // Federal, for the SB 1495 fair housing component
     3601: "42 U.S.C. § 3601 — Fair Housing Act, declaration of policy",
     3604: "42 U.S.C. § 3604 — the federal prohibitions",
-    12955: "Government Code § 12955 — FEHA housing discrimination",
+    // Business and Professions Code
+    10130: "B&P § 10130 — unlawful to act without a licence",
+    10131: "B&P § 10131 — the acts that require a licence",
+    10145: "B&P § 10145 — trust funds",
+    10153: "B&P § 10153.2 — the statutory courses",
+    10176: "B&P § 10176 — discipline within licensed activity",
+    10177: "B&P § 10177 — discipline including outside a transaction",
+    11000: "B&P § 11000 — subdivided lands",
+    // Civil Code
     51: "Civil Code § 51 — Unruh Civil Rights Act",
-    35800: "Health and Safety Code Part 6, beginning at § 35800 — the Holden Act",
+    660: "Civil Code § 660 — affixation",
+    683: "Civil Code § 683 — joint tenancy",
+    1102: "Civil Code § 1102 — residential transfer disclosure article",
+    1214: "Civil Code § 1214 — effect of recording",
+    1624: "Civil Code § 1624 — statute of frauds",
+    1950: "Civil Code § 1950.5 — security deposits",
+    2079: "Civil Code § 2079.16 — the agency disclosure form",
+    2924: "Civil Code § 2924 — power of sale",
+    // Code of Civil Procedure
+    580: "CCP §§ 580b and 580d — anti-deficiency",
+    704: "CCP § 704.730 — homestead exemption",
+    // Government Code, Health and Safety Code, Revenue and Taxation Code
+    11911: "R&T § 11911 — documentary transfer tax",
+    12955: "Government Code § 12955 — FEHA housing discrimination",
+    35800: "Health and Safety Code Part 6 from § 35800 — the Holden Act",
     35801: "Health and Safety Code § 35801 — the Legislature's findings",
-    10177: "Business and Professions Code § 10177(l) — blockbusting as a ground for discipline",
+    66410: "Government Code § 66410 — the Subdivision Map Act",
+    66424: "Government Code § 66424 — 'subdivision' for map purposes",
   };
   for (const [section, description] of Object.entries(READ_IN_FULL)) {
     assert.ok(register.includes(section), `${description} is on the allow-list and the register does not record it`);
   }
+
+  /*
+   * Sections that appear ONLY inside the quoted text of a section that was read. The register
+   * names each and says none was opened. They are allowed in the curriculum for that reason and
+   * for no other, and nothing in the build rests on any of them.
+   */
+  const QUOTED_ONLY = {
+    // § 1102.2 and § 2079.13/.14 share their integer part with sections that were read.
+    2985: "Civil Code § 2985, inside § 1102",
+
+
+    4000: "Civil Code § 4000 (Davis-Stirling), inside B&P § 10153.2",
+    6500: "Civil Code § 6500, inside B&P § 10153.2",
+    5100: "Probate Code § 5100, inside Civil Code § 683",
+    10000: "B&P § 10000, inside Civil Code § 1102(b)",
+    11302: "B&P § 11302, inside Government Code § 12955(i)(2)",
+    65000: "Government Code § 65000, inside § 12955(l)",
+    12926: "Government Code § 12926, inside § 12955 and Civil Code § 51",
+  };
+  for (const [section, description] of Object.entries(QUOTED_ONLY)) {
+    assert.ok(register.includes(section), `${description} is quoted in the curriculum and the register does not name it`);
+  }
+  assert.match(register, /Sections named inside a quotation are not sections this project has read/);
 
   const lessons = fs
     .readdirSync(path.join(root, "california"), { withFileTypes: true })
@@ -270,14 +338,22 @@ test("every California section citation is a text the register records as read",
     if (citations.length > 0) citing.push(lesson.file);
     for (const section of citations) {
       assert.ok(
-        Object.hasOwn(READ_IN_FULL, section),
-        `${lesson.file} cites § ${section}, which this project has not read in its own text. ` +
-          "Read it and record it in california/regulatory/primary-text-readings.md, or do not cite it.",
+        Object.hasOwn(READ_IN_FULL, section) || Object.hasOwn(QUOTED_ONLY, section),
+        `${lesson.file} cites § ${section}, which this project has neither read in its own text nor ` +
+          "recorded as quoted from a section it did read. Read it and record it in " +
+          "california/regulatory/primary-text-readings.md, or do not cite it.",
       );
     }
   }
 
   /* And the count the register states. If a second lesson starts citing law, the register's
      opening finding stops being true and has to be rewritten with it. */
-  assert.deepEqual(citing, ["ca-real-estate-practice-45-v1/lesson-14.md"], `California lessons citing law: ${citing.join(", ")}`);
+  /* Thirteen Principles assignments and one Practice assignment. Mortgage cites nothing, and
+     Practice's other fourteen cite nothing — which is what the register says. */
+  assert.equal(citing.filter((file) => file.startsWith("ca-real-estate-principles")).length, 13, `Principles lessons citing law: ${citing.join(", ")}`);
+  assert.deepEqual(
+    citing.filter((file) => !file.startsWith("ca-real-estate-principles")),
+    ["ca-real-estate-practice-45-v1/lesson-14.md"],
+    `non-Principles lessons citing law: ${citing.join(", ")}`,
+  );
 });

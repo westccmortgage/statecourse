@@ -269,7 +269,74 @@ The exceptions from Lesson 05, restated because they belong to the recording mat
 
 **That gap is what inquiry notice covers**, and it is why physical inspection of the property is a separate obligation from reading the title report.
 
-### 4.7 Checkpoint
+### 4.8 The recording statute, and what "void as against" means
+
+Section 4.1 said that recording gives constructive notice and protects a purchaser. **Civil Code § 1214** is the section that does it, and its wording repays close reading because it is a race-notice rule expressed as a rule of voidness:
+
+> *"Every conveyance of real property or an estate for years therein, **other than a lease for a term not exceeding one year**, is **void as against any subsequent purchaser or mortgagee** of the same property, or any part thereof, **in good faith and for a valuable consideration, whose conveyance is first duly recorded**, and as against any judgment affecting the title, unless the conveyance shall have been duly recorded prior to the record of notice of action."*
+
+**Unpack it as four conditions a later buyer must satisfy to defeat an earlier unrecorded conveyance.**
+
+| Condition | The words | What it excludes |
+|---|---|---|
+| **Subsequent** | *"any subsequent purchaser or mortgagee"* | Someone who took first cannot use the section |
+| **In good faith** | *"in good faith"* | A buyer with actual notice of the earlier deed |
+| **For value** | *"for a valuable consideration"* | A donee; an heir; a gift |
+| **First recorded** | *"whose conveyance is first duly recorded"* | A later buyer who also failed to record |
+
+**All four, together.** This is California's race-notice system in a sentence: the later purchaser must be *both* without notice *and* first to record. Neither alone is enough.
+
+**"Void as against" is narrower than "void."** The unrecorded deed is perfectly good between the grantor and the grantee. It fails only against a person the section describes. **A grantee who never records still owns the property against the whole world except a subsequent good-faith purchaser for value who records first** — which is exactly the person most likely to appear.
+
+**The lease carve-out is a practical one.** A lease for a term not exceeding one year is outside the section. Short residential tenancies are not recorded and were never expected to be, and a buyer of occupied property takes subject to what possession discloses regardless.
+
+**And the tail reaches judgments:** *"and as against any judgment affecting the title, unless the conveyance shall have been duly recorded prior to the record of notice of action."* An unrecorded deed can lose to a judgment in litigation the grantee knew nothing about.
+
+### 4.9 Why possession still matters after recording
+
+§ 1214 protects a purchaser *"in good faith."* Good faith is defeated by notice, and **notice is not only what the records show.**
+
+**Constructive notice comes from two places.** The recorded chain of title, and **the fact of possession**. A person in open, visible, exclusive possession of property puts a prospective purchaser on inquiry: the purchaser is charged with knowing what a reasonable inquiry of that occupant would have revealed.
+
+**This is why a walk-through is a title procedure and not only a condition procedure.** An occupant who is not the seller is a question. A tenant with a five-year unrecorded lease, a relative with an unrecorded life estate, a buyer under an unrecorded contract of sale — **none appears in the records and each appears at the property.**
+
+**The practical instruction for a licensee is one sentence long:** if anyone other than the seller is in possession, find out in writing who they are and on what basis, and give the answer to escrow and to the title company before closing.
+
+### 4.10 A worked priority problem
+
+> **1 March.** Owner deeds the property to Buyer A for $700,000. A takes the deed home and does not record it.
+> **14 March.** Owner deeds the same property to Buyer B for $720,000. B has never heard of A, searches title and finds nothing, and records on 15 March.
+> **20 March.** A records.
+
+**B prevails.** B is a subsequent purchaser, in good faith (no actual or constructive notice — nothing was recorded and, on these facts, nobody was in possession), for valuable consideration, whose conveyance was first duly recorded. A's earlier deed is *"void as against"* B under § 1214.
+
+**Change one fact.** Suppose A had moved in on 2 March and was living there when B inspected.
+
+**Now B loses**, and not because of the recording dates. A's open possession is inquiry notice; B is charged with what an inquiry of the occupant would have revealed, which is A's deed. **B is no longer a purchaser "in good faith,"** and the first condition of § 1214 fails. The recording race is irrelevant because B cannot get past the good-faith requirement.
+
+**Change a different fact.** Suppose the 14 March transfer was a gift to Owner's nephew, who recorded immediately.
+
+**A prevails.** The nephew is subsequent and first to record and may well be in good faith, but he did not take *"for a valuable consideration."* § 1214 does not protect him.
+
+**The lesson a licensee should carry from all three:** recording is decisive only when the other three conditions are met, and the two that fail most often in real life are **good faith, defeated by someone living in the house**, and **value, defeated by a family transfer.** Both are visible before closing to anyone who looks.
+
+### 4.11 The disclosure article, and the waiver that is void
+
+One more section belongs in a chapter about what passes with the transfer. **Civil Code § 1102** opens the residential transfer disclosure article:
+
+> *"(a) Except as provided in Section 1102.2, this article applies to any transfer by sale, exchange, real property sales contract as defined in Section 2985, **lease with an option to purchase**, any other **option to purchase**, or **ground lease coupled with improvements** of any single-family residential property.*
+>
+> *(b) For purposes of this article, the definitions contained in Chapter 1 (commencing with Section 10000) of Part 1 of Division 4 of the Business and Professions Code shall apply.*
+>
+> *(c) **Any waiver of the requirements of this article is void as against public policy.**"*
+
+**Subdivision (a) is broader than "sale."** A lease with an option, a bare option, and a ground lease coupled with improvements are all inside the article. A transaction structured to avoid a sale does not thereby avoid the disclosure obligation.
+
+**Subdivision (b) is the cross-reference from Assignment 01 Section 5.8** — the Civil Code borrowing the Business and Professions Code's definitions. A reader of the disclosure article who does not know that is reading with a piece missing.
+
+**Subdivision (c) is one short sentence and it settles a great deal.** *"Any waiver of the requirements of this article is void as against public policy."* A seller cannot contract out of it. A buyer cannot agree to give it up, however sophisticated they are and however much they are paid for the concession. **A licensee presented with an "as-is, no disclosures" arrangement should know that the words do not do what the parties think they do.**
+
+### 4.12 Checkpoint
 
 You should be able to explain what recording does and does not accomplish, define the three kinds of notice, and state the elements of a bona fide purchaser.
 
@@ -350,7 +417,49 @@ The preliminary report and the underlying documents belong at the **front** of t
 
 An exception discovered late — an easement across the building site, an unreleased lien requiring a document from a lender that no longer exists — takes time to resolve. A buyer who receives the report on day three has options; one who receives it on day twelve of a fourteen-day review has a formality.
 
-### 5.8 Checkpoint
+### 5.9 What the two policies cover, side by side
+
+Section 5.4 named owner's and lender's policies. The difference is not a matter of degree, and a buyer who declines an owner's policy on the ground that "the lender has one" has misunderstood what they were declining.
+
+| | Owner's policy | Lender's policy |
+|---|---|---|
+| **Insured** | The buyer | The lender |
+| **Amount** | The purchase price | The loan amount |
+| **Duration** | As long as the insured holds an interest, and beyond for warranties of title | Until the loan is paid |
+| **Behaviour over time** | Stays at the purchase price | **Declines as the loan amortises** |
+| **On a claim** | Pays the owner | Pays the lender; the owner recovers nothing |
+
+**The lender's policy does not protect the buyer at all.** If a title defect surfaces and there is no owner's policy, the lender is made whole and **the buyer bears the entire loss of their equity** — the down payment, every principal payment made, and the property.
+
+**And an owner's policy is the cheapest insurance in the transaction on a per-dollar basis**, because it is issued once for a single premium and never renewed.
+
+### 5.10 Reading Schedule B, and the four exception types
+
+A preliminary report is not a policy. It is an **offer** to issue a policy on stated terms, and the terms are the exceptions in Schedule B. Four types appear, and they call for different responses.
+
+**Monetary liens.** Deeds of trust, judgments, tax liens, mechanics liens. **These are cleared at closing** — paid from proceeds and released. Their presence is a payoff question, not a title question.
+
+**Easements and rights of way.** Utility easements, access easements, drainage. **These do not clear.** They travel with the land, and the question is whether they affect the buyer's intended use. A utility easement across the back of a lot is ordinary; the same easement across the only buildable area is a different property from the one the buyer thinks they are buying.
+
+**Covenants, conditions and restrictions.** Recorded restrictions on use, and in a common interest development the declaration. These do not clear either, and they are frequently the most consequential document in the file.
+
+**Survey and boundary exceptions.** *"Any facts an accurate survey would disclose."* **This exception is the title company declining to insure the boundaries**, and it is standard on the basic policy. A buyer who wants the boundaries insured is buying extended coverage and, usually, providing a survey.
+
+**The habit that catches problems:** read Schedule B against the buyer's stated plans. A buyer who intends to build a workshop, park a boat, run a home business, add a second unit, or fence the perimeter is a buyer for whom a specific exception may matter, and **the licensee is the only person who knows both the plan and the report.**
+
+### 5.11 A worked exception
+
+> A buyer intends to build a detached garage on the north side of the lot. Schedule B, item 7: *"An easement for ingress, egress and public utilities over the northerly 12 feet of said land, as granted to Southern California Edison Company by instrument recorded [date], in Book [x], Page [y] of Official Records."*
+
+**Nothing about this clears at closing**, and no amount of money paid at escrow makes it go away.
+
+**Three actions, in order.** Obtain the recorded instrument itself — the report gives its book and page, and **the report's one-line description is a summary, not the grant.** Compare its width and location against a plot plan or survey. Then determine whether the intended garage sits inside the twelve feet.
+
+**If it does**, the buyer's plan is not feasible as conceived, and the options — relocating the structure, seeking a quitclaim or partial release from the utility, or withdrawing — are questions for the utility, the city and counsel respectively.
+
+**The licensee's whole job here is timing.** Every step above is available in the first week of escrow and impossible in the last. **The failure mode is not missing the exception; it is reading it, understanding it, and forwarding it without connecting it to what the buyer said they wanted to do.**
+
+### 5.12 Checkpoint
 
 You should be able to explain what an exception means, distinguish it from an exclusion and a requirement, and state what title insurance does not cover.
 
@@ -453,7 +562,57 @@ A licensee who can place a problem into one of those three, and route it accordi
 >
 > **Why this lesson puts it here.** Sections 1 through 5 supply every concept required to see the issues — deed requirements, delivery, recording, notice, priority, and what a preliminary report is. **What they do not supply is the answer**, and knowing the difference is the professional skill.
 
-### 6.9 Checkpoint
+### 6.10 Involuntary transfer, and the four routes a title can move without a signature
+
+Section 6.3 introduced involuntary transfer. The routes are worth having distinctly, because each leaves a different mark in a title chain and a licensee will meet all four.
+
+| Route | What happens | What appears in the chain |
+|---|---|---|
+| **Foreclosure** | The security instrument's power is exercised; the property is sold | A trustee's deed upon sale, or a sheriff's deed after judicial sale |
+| **Eminent domain** | A public agency takes for public use, paying just compensation | A final order of condemnation, or a deed in lieu |
+| **Adverse possession** | Long, open, hostile, exclusive possession under the statutory conditions, **including payment of taxes** | Nothing — until a quiet title judgment records it |
+| **Escheat** | An owner dies with no heirs and no will | A state proceeding and its judgment |
+
+**And two more that move title without a conveyance from the owner:**
+
+**Death.** By will, or by intestate succession, or — where the vesting so provides — automatically to a surviving joint tenant under Civil Code § 683.
+
+**Court order.** A dissolution judgment, a partition, a judgment of specific performance, a bankruptcy trustee's sale.
+
+**The one worth pausing on is adverse possession**, because California adds a requirement that surprises people who learned the doctrine elsewhere: **the claimant must have paid the property taxes** for the statutory period. That requirement is why successful adverse possession claims against a well-run owner are rare — the taxes go to the record owner's address and get paid — and why the claims that do succeed tend to involve strips of land nobody was separately assessing.
+
+### 6.11 Reading a chain of title for the things that matter
+
+A licensee does not examine title. A licensee does read preliminary reports and does look at chains, and there are four patterns worth recognising.
+
+**A conveyance for nominal consideration.** A deed reciting $10 or "love and affection" is usually a family transfer, and family transfers raise the questions Assignment 03 Section 4.8 describes: was it interspousal, was it a gift with reassessment consequences, and did everyone who needed to sign, sign.
+
+**A quitclaim deed in the recent chain.** A quitclaim conveys whatever interest the grantor has, **with no warranty that they have any.** One appearing in a chain is not a defect; it is a question — what was it clearing up, and did it work?
+
+**A deed out of a trust, or into one.** Trust transfers are ordinary. What matters is whether the person who signed had authority under the trust instrument, which is a title officer's question and a real one.
+
+**A gap.** A conveyance from a grantor who does not appear to have acquired title in the chain. Usually an unrecorded intermediate deed, sometimes a name change, occasionally something worse. **This is exactly what Civil Code § 1214 is about**, and it is why the recording system exists.
+
+**A worked chain.**
+
+> 1998: Grant deed to **Robert and Elaine Chen, husband and wife as joint tenants.**
+> 2014: **Quitclaim deed** from Elaine Chen to Robert Chen.
+> 2019: Grant deed from **Robert Chen, a single man**, to the **Chen Family Trust**.
+> 2026: The trustee lists the property. The trustee is Robert Chen's daughter.
+
+**Four questions, each answerable and none by the licensee.**
+
+**Did the 2014 quitclaim sever the joint tenancy and convey Elaine's interest?** A conveyance by one joint tenant generally severs, and a quitclaim conveys what the grantor had. The instrument presumably did both — **and whether it was part of a dissolution, and whether any dissolution order affected it, is not visible in a chain.**
+
+**"A single man" in 2019 is a change of status that should be consistent** with the 2014 transfer. If Robert Chen had remarried before 2019, the community property questions in Assignment 03 Section 4.7 arise.
+
+**Does the trust instrument authorise this trustee to sell?** The daughter's authority comes from the trust, and the title company will want to see it — a certification of trust at minimum.
+
+**Is Robert Chen alive?** A successor trustee acting suggests a death or an incapacity, and if a death, whether the trust was funded correctly with this property matters.
+
+**What the licensee does with all of that:** send the preliminary report and the chain to escrow and the title officer **at listing**, with the specific question *"can you confirm the trustee has authority to convey and that no further signatures are required?"* — and get the answer in writing before the property goes on the market. **Four weeks of marketing on a property that cannot convey is four weeks nobody gets back.**
+
+### 6.12 Checkpoint
 
 You should be able to distinguish voluntary from involuntary transfer, state the adverse possession elements including California's tax requirement, and place a title problem into one of the three questions.
 

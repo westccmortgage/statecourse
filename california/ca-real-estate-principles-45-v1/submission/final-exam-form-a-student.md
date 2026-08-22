@@ -62,12 +62,12 @@ B. The method of attachment and the intent of the parties as objectively evidenc
 C. The cost of the item and the length of time it has been in place.
 D. Whether the item is listed in the purchase agreement and whether it is insured.
 
-**8.** Custom window coverings were cut to fit each window of a particular house. Which test most directly supports treating them as fixtures?
+**8.** Civil Code § 660 lists the ways a thing is deemed affixed to land, naming "cement, plaster, nails, bolts, or screws" as means of permanent attachment. A television rests in a bracket that is screwed to a wall. What is the analysis?
 
-A. Adaptability, because they were fitted to this property specifically and have little use elsewhere.
-B. Relationship of the parties, because the seller installed them personally.
-C. Method of attachment, because fabric is affixed to the structure with permanent fasteners.
-D. Trade fixture doctrine, because the coverings serve the use of the premises.
+A. The bracket is affixed because screws are among the named fasteners; the television rests in it and is not affixed.
+B. Both are affixed, because the television is attached to a fixture which is itself attached to the realty.
+C. Neither is affixed, because a television is personal property and its mount takes its character.
+D. The bracket is affixed only if removing it would damage the wall.
 
 **9.** A commercial tenant installs display shelving and refrigeration units to operate a grocery. Under the trade fixture rule, what is the general position at lease end?
 
@@ -244,12 +244,12 @@ B. A variance, granted automatically by operation of the ordinance change.
 C. A conforming use, because zoning changes apply only to new construction in every case.
 D. An illegal use requiring immediate removal.
 
-**34.** A buyer says he will 'just get a variance' if the ordinance does not permit his intended use. Why is that a dangerous assumption for a licensee to encourage?
+**34.** An owner divides a parcel into two lots for sale. Which statutory scheme applies?
 
-A. Variances are prohibited in California residential zones.
-B. A variance can only be sought by the owner of record after closing.
-C. A variance would convert the property to a nonconforming use.
-D. Relief mechanisms are discretionary processes with standards, timelines, and no guaranteed outcome.
+A. Both, because any division of land for sale triggers a public report from the Department of Real Estate.
+B. Neither, because a two-lot division is a lot line adjustment rather than a subdivision.
+C. The Subdivided Lands Act only, because the Department administers all divisions made for the purpose of sale.
+D. The Subdivision Map Act, administered locally; the Subdivided Lands Act does not, because it reaches divisions into five or more parcels.
 
 **35.** A seller discloses that a bedroom addition was built without permits. What is the licensee's correct handling of the marketing?
 
@@ -321,12 +321,12 @@ B. The original offer remains open and a second offer now exists alongside it.
 C. A contract is formed at the original price, with the change treated as a request.
 D. A contract is formed at the changed price, because returning the document is acceptance.
 
-**45.** An offeree signs an acceptance but it is never transmitted to the offeror before the offer expires. What is the position?
+**45.** Civil Code § 1624 makes certain contracts invalid unless there is a writing "subscribed by the party to be charged or by the party's agent." What does that phrase establish?
 
-A. A contract formed at the moment of signature, and transmission is a formality.
-B. A contract formed, because the offeror's own expiration term cannot defeat an acceptance actually made.
-C. A contract formed only if the offeree can prove he intended to send it.
-D. No contract formed, because formation turns on communication of acceptance rather than on the signature alone.
+A. Both parties must sign before either can enforce the agreement.
+B. The party who drafted the writing must sign it before it takes effect.
+C. A signature is required only where the contract exceeds a stated value.
+D. Only the party being sued need have signed, so a writing signed by the seller alone may be enforced against the seller.
 
 **46.** Which best describes a voidable contract?
 
@@ -650,12 +650,12 @@ B. The agent may omit it from the seller's disclosure and note it in his own ins
 C. A repaired condition is still a known material fact and is disclosed; the instruction to omit it is not one the agent may follow, and his own inspection disclosure is a separate obligation besides.
 D. The condition need not be disclosed because the repair resolved it.
 
-**92.** A seller says the property is held in his late mother's trust and that he is 'the beneficiary, so it's mine.' What must be established before the listing proceeds?
+**92.** Two sisters buy a house together in equal shares, intending that the survivor should take the whole. The deed names them both and says nothing more. Under Civil Code § 683, what have they created?
 
-A. Whether the beneficiary has recorded a notice of his interest.
-B. Nothing, since a sole beneficiary may convey trust property directly.
-C. Whether the trust was funded with other assets besides the property.
-D. Who currently holds the office of trustee, established from the trust instrument, because the trustee conveys and a competent grantor is a deed requirement.
+A. A joint tenancy, because they took in equal shares by a single transfer at the same time.
+B. Community property with right of survivorship, which is the default for co-owners taking equal shares.
+C. A joint tenancy, because their intention was clear and the unities are satisfied.
+D. A tenancy in common, because § 683 requires a joint tenancy to be expressly declared in the transfer.
 
 **93.** A deed is delivered on Monday but not recorded. On Wednesday a judgment creditor records an abstract against the record owner. On Friday the deed is recorded. What issue does this sequence raise?
 
@@ -664,12 +664,12 @@ B. Whether the deed is void, since an unrecorded deed transfers nothing.
 C. Whether the grantee may re-record the deed with Monday's date.
 D. Whether the creditor must release the lien because the deed predates it.
 
-**94.** The parties sign an amendment extending the closing date, and it is never sent to escrow. What is the position?
+**94.** Business and Professions Code § 10145 requires a broker who accepts funds belonging to others to place them in one of a limited set of destinations. Which is NOT among them?
 
-A. The original closing date is unenforceable once any amendment exists.
-B. The amendment binds the parties, but escrow will act on the instructions it holds, so the extension must be transmitted for the closing to reflect it.
-C. The amendment is ineffective because escrow did not receive it.
-D. Escrow is required to detect the amendment and adjust the closing accordingly.
+A. A trust fund account maintained by the broker in a bank or recognised depository in this state.
+B. The broker's general business account, pending transfer once the transaction is further along.
+C. A neutral escrow depository, immediately.
+D. The hands of the broker's principal, immediately.
 
 **95.** A manager tells a licensee to send the appraiser three comparables selected because they support the contract price, and to use an appraiser 'whose numbers come in.' How should both instructions be assessed?
 
@@ -678,12 +678,12 @@ B. Both are permissible because the appraiser remains free to reject the data.
 C. Only the comparables instruction is improper, since appraiser selection is a business decision.
 D. Supplying comparables is always permissible; only the appraiser-selection instruction is improper.
 
-**96.** A client asks whether he can cancel and recover his deposit. Which response is within the licensee's scope?
+**96.** Business and Professions Code § 10131 defines a real estate broker as a person who acts "for a compensation or in expectation of a compensation, regardless of the form or time of payment." A person performs a listed act hoping to be paid, and is never paid. What follows?
 
-A. Tell him the liquidated damages clause caps the seller's recovery at the deposit amount.
-B. Tell him he may cancel because his contingency period has not expired.
-C. Tell him the deposit is returned automatically whenever a buyer cancels in writing.
-D. State what the agreement provides procedurally and by when, and refer the question of his rights and the deposit's disposition to counsel.
+A. No licence was required, because the section reaches only acts for which compensation was actually received.
+B. No licence was required unless the person had a written fee agreement.
+C. The section applies only if the compensation would have been a commission rather than a flat fee.
+D. The expectation of compensation satisfies the section; the act was performed for compensation within its meaning.
 
 **97.** A buyer intends to add a second unit to a property. What does defensible due diligence require before he removes his contingencies?
 
@@ -706,12 +706,12 @@ B. It is disclosed only if the buyer asks about boundaries.
 C. The licensee should determine from the assessor's map where the line actually runs and advise accordingly.
 D. It need not be disclosed because the arrangement is between neighbors and does not affect title.
 
-**100.** A licensee meets a situation no rule in the course addresses. Which sequence of questions is most likely to produce the correct action and the correct record?
+**100.** Business and Professions Code § 10176(f) makes it a ground for discipline to claim, demand or receive a fee under an exclusive agreement that lacks something. What?
 
-A. What is customary in the market, what will the client accept, what will close fastest, and what will the broker approve.
-B. What is the licensee's opinion, what is the client's preference, what is the least disruptive course, and what can be corrected afterward.
-C. What does the form provide, what did the last transaction do, what does the other agent expect, and what is defensible later.
-D. Whose decision is this, whose duty is engaged, does the decision have the information it requires, and what will the file show.
+A. A statement of the commission rate expressed as a percentage.
+B. A recital that the agreement is governed by California law.
+C. The signature of the employing broker as well as the salesperson.
+D. A definite, specified date of final and complete termination.
 
 ---
 

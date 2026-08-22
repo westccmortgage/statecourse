@@ -23,17 +23,17 @@ The requirement, in the Department's own words:
 
 | Element the FAQ requires | Taught at | Printed volume | Examined by |
 |---|---|---|---|
-| the impact of implicit bias, explicit bias, and systemic bias on consumers | Assignment 14 §1.1, §1.2, §1.3, §1.4, §3.1, §5.6, §6.7, §6.8 | p. 288 | A-79 (§1.1), A-80 (§3.1), B-80 (§1.4) |
-| the historical impacts of those biases | Assignment 14 §2.2, §2.7, §6.8 | p. 291 | A-81 (§2.7) |
-| the social impacts of those biases | Assignment 14 §2.3, §2.5, §6.8 | p. 292 | A-84 (§2.3) |
-| actionable steps students can take to recognize and address their own implicit biases | Assignment 14 §2.4, §2.5, §3.2, §6.8 | p. 292 | B-82 (§3.2) |
+| the impact of implicit bias, explicit bias, and systemic bias on consumers | Assignment 14 §1.1, §1.2, §1.3, §1.4, §3.1, §5.6, §6.7, §6.8 | p. 332 | A-79 (§1.1), A-80 (§3.1), B-80 (§1.4) |
+| the historical impacts of those biases | Assignment 14 §2.2, §2.7, §6.8 | p. 335 | A-81 (§2.7) |
+| the social impacts of those biases | Assignment 14 §2.3, §2.5, §6.8 | p. 336 | A-84 (§2.3) |
+| actionable steps students can take to recognize and address their own implicit biases | Assignment 14 §2.4, §2.5, §3.2, §6.8 | p. 336 | B-82 (§3.2) |
 
 ## 2. The fair housing component — federal **and** state
 
 | Element the FAQ requires | Taught at | Printed volume | Examined by |
 |---|---|---|---|
-| federal fair housing law as it applies to the practice of real estate | Assignment 14 §2.6, §5.7, §6.6, §6.8 | p. 293 | B-81 (§2.6) |
-| state fair housing law as it applies to the practice of real estate | Assignment 14 §2.7, §2.8 | p. 293 | A-81 (§2.7), B-83 (§2.8) |
+| federal fair housing law as it applies to the practice of real estate | Assignment 14 §2.6, §5.7, §6.6, §6.8 | p. 337 | B-81 (§2.6) |
+| state fair housing law as it applies to the practice of real estate | Assignment 14 §2.7, §2.8 | p. 337 | A-81 (§2.7), B-83 (§2.8) |
 
 **The state component is not a formality.** The federal Fair Housing Act protects race, color,
 religion, sex, familial status and national origin; Government Code § 12955 adds gender identity,
@@ -50,8 +50,8 @@ teaches the two together and examines the difference.
 
 | Role the FAQ names | Course section | First subsection | Printed volume | Recorded in the database as |
 |---|---|---|---|---|
-| the applicant shall role play as a **consumer** | §4 — Participatory practicum: the consumer role | 4.1 | p. 297 | `sb1495_participatory_submissions.participant_role = 'consumer'` |
-| the applicant shall role play as a **real estate professional** | §5 — Participatory practicum: the licensee role | 5.1 | p. 298 | `sb1495_participatory_submissions.participant_role = 'licensee'` |
+| the applicant shall role play as a **consumer** | §4 — Participatory practicum: the consumer role | 4.1 | p. 341 | `sb1495_participatory_submissions.participant_role = 'consumer'` |
+| the applicant shall role play as a **real estate professional** | §5 — Participatory practicum: the licensee role | 5.1 | p. 342 | `sb1495_participatory_submissions.participant_role = 'licensee'` |
 
 ### 3.2 What the student does, in order
 

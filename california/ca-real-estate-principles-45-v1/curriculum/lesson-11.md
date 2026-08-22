@@ -146,7 +146,46 @@ A **purchase money loan** is one used to acquire the property. California treats
 
 **Home equity line** — a revolving credit facility secured by the property.
 
-### 2.8 Checkpoint
+### 2.9 The security instrument's clauses, and what each one does to a borrower
+
+Section 2.3 described the deed of trust. Five clauses inside it change the borrower's position materially, and a licensee should be able to say what each does — while sending the client to counsel to say what it means for them.
+
+**Acceleration.** On default, the lender may declare the entire balance immediately due. **Without it, a lender could only sue for missed payments** and would have to sue again next month. Acceleration is what makes foreclosure of the whole debt possible, and it is the clause every other remedy depends on.
+
+**Due-on-sale (alienation).** The lender may accelerate if the property is sold or transferred without consent. **This is why a buyer generally cannot simply take over a seller's loan**, and it is the reason assumption is a lender's decision rather than the parties'.
+
+**Prepayment.** Whether, and on what terms, the borrower may pay early. **Its absence is as significant as its presence**: a loan with no prepayment penalty may be refinanced freely.
+
+**Subordination.** An agreement that this lien will take a position junior to a future one. **A borrower who signs a subordination clause in a seller-carried note may find their security behind a large construction loan.**
+
+**Power of sale.** The clause Civil Code § 2924 addresses, conferring on the trustee the authority to sell on default without a court.
+
+**And one term that is not a clause but behaves like one: the release.** A mortgage is released by a satisfaction; a deed of trust by a **reconveyance**. **A full reconveyance not recorded leaves a paid-off loan showing as a lien**, which surfaces years later when the owner sells and is a genuine nuisance to clear.
+
+### 2.10 Deed of trust and mortgage, compared where it matters
+
+| | Deed of trust | Mortgage |
+|---|---|---|
+| Parties | **Three** — trustor, trustee, beneficiary | **Two** — mortgagor, mortgagee |
+| Ordinary California foreclosure | **Non-judicial**, under the power of sale | Judicial, unless a power of sale is present |
+| Speed | Months, no court | Longer, court-supervised |
+| Right of redemption after sale | **None** after a trustee's sale | Statutory redemption period after a judicial sale |
+| Deficiency | **Barred** by CCP § 580d after a trustee's sale | Available, subject to § 580b and fair-value limits |
+| Release | Reconveyance | Satisfaction |
+
+**The row that decides which instrument lenders use is the last three read together.** Non-judicial foreclosure is fast and cheap; the price is the deficiency. **A lender that expects the collateral to cover the debt takes the speed**, which is why the deed of trust is effectively universal in California residential lending.
+
+**And the row that matters most to a distressed seller is redemption.** After a trustee's sale there is **no** redemption period — the sale is final. A seller who believes they have months to recover the property after the sale has confused the two instruments, and by the time they discover it, the property is gone.
+
+**A worked situation.**
+
+> A seller carries back a $180,000 second deed of trust to help a buyer purchase. Two years later the buyer asks the seller to sign a subordination agreement so that a $600,000 construction loan can be recorded ahead of the seller's note. The buyer explains that the improvements will increase the value and therefore the seller's security.
+
+**The explanation is plausible and the risk is real.** If the seller subordinates, their $180,000 sits behind $600,000 rather than behind the original first. **If the construction stalls, the improvements are unfinished and the property is worth less than the senior loan**, the seller's position is extinguished by the construction lender's foreclosure.
+
+**What the licensee should say:** that subordination changes lien priority; that this is a decision with a specific downside; and that **the seller must not sign without counsel.** What the licensee must not do is characterise the risk as small because the argument sounds sensible — **the argument always sounds sensible, which is why the clause exists.**
+
+### 2.11 Checkpoint
 
 You should be able to name the three parties to a deed of trust, explain what the power of sale produces, and distinguish assumption from taking subject to.
 
@@ -278,7 +317,61 @@ Many loans require an **impound** or escrow account, into which the borrower pay
 
 Two practical consequences: the monthly obligation is larger than principal and interest alone, and an **impound shortage** after a tax or insurance increase produces a payment increase on a loan the borrower believed was fixed. Explaining that in advance prevents an angry call the licensee will otherwise receive.
 
-### 4.7 Checkpoint
+### 4.8 Amortisation, points, and the arithmetic clients ask about
+
+Section 4.3 introduced amortisation. This section works the numbers a licensee is asked for at a kitchen table, where the client wants an answer and a wrong one is worse than "let me get you the lender's figure."
+
+**The first month of an amortised loan, from first principles.**
+
+> A $580,000 loan at 6.25% over 30 years, payment $3,571.72.
+
+Monthly interest rate: 6.25% ÷ 12 = **0.5208%**.
+First month's interest: $580,000 × 0.005208 = **$3,020.83**.
+First month's principal: $3,571.72 − $3,020.83 = **$550.89**.
+Balance after one payment: **$579,449.11**.
+
+**Two observations that clients find genuinely surprising and that are worth being able to state.**
+
+**Eighty-five per cent of the first payment is interest.** $3,020.83 of $3,571.72. This is not a feature of a bad loan; it is what amortisation is.
+
+**The crossover — where principal first exceeds interest — comes late.** On this loan it arrives around year 19 of 30. **A borrower who expects to sell in seven years should understand that they will have retired roughly $60,000 of a $580,000 balance.**
+
+**Points, and the break-even.**
+
+> The same loan offered at 6.25% with no points, or at **5.875% with 1.5 points**.
+
+Cost of points: $580,000 × 0.015 = **$8,700**.
+Payment at 5.875%: **$3,430.99**.
+Monthly saving: $3,571.72 − $3,430.99 = **$140.73**.
+Break-even: $8,700 ÷ $140.73 = **61.8 months**, call it **five years two months**.
+
+**The break-even is the whole analysis, and the input that decides it is not financial.** It is how long the borrower will keep the loan. A borrower certain of staying fifteen years should buy the points; a borrower who may transfer in three should not. **A licensee can do this arithmetic and should — while being clear that the loan decision, the tax treatment of the points, and the lender's actual quote are not theirs.**
+
+### 4.9 Qualifying ratios, and what they do and do not predict
+
+**The two ratios.**
+
+> **Front-end (housing) ratio = PITI ÷ gross monthly income**
+> **Back-end (total debt) ratio = (PITI + all other monthly debt) ÷ gross monthly income**
+
+**PITI** is principal, interest, taxes and insurance — plus, where they apply, mortgage insurance and homeowners association dues.
+
+> **Worked.** Gross income $11,400 a month. Proposed PITI: principal and interest $3,571.72; taxes $755; insurance $190; HOA $310 — **$4,826.72**. Other monthly debt: car $612, student loan $340, minimum card payments $185 — **$1,137**.
+
+Front-end: $4,826.72 ÷ $11,400 = **42.3%**.
+Back-end: ($4,826.72 + $1,137) ÷ $11,400 = $5,963.72 ÷ $11,400 = **52.3%**.
+
+**Both are high**, and the back-end is the one that will decide the application. Programme limits vary, and a licensee should never quote one as a rule.
+
+**What the ratios do.** They give a lender a comparable, mechanical screen.
+
+**What they do not do.** They say nothing about **childcare, medical costs, income volatility, or the cost of the commute the buyer just took on.** A household at 38 per cent with three children in daycare may be far more stretched than one at 45 per cent without.
+
+**Which is why the third number in Assignment 11 Section 5.7 exists** — what the borrower is *willing* to pay monthly, as distinct from what the lender will allow. **These are different numbers, the second is usually larger, and the gap between them is where buyer's remorse is manufactured.**
+
+**A licensee's professional contribution is to ask the second question**, early, in those words: *not* "what can you qualify for" but "what payment are you comfortable making every month." A buyer who is shown houses at their qualifying limit has been shown the lender's answer to a question they did not ask.
+
+### 4.10 Checkpoint
 
 You should be able to compute a month's interest and the principal split, compute points and a break-even, and explain what determines an adjustable rate at adjustment.
 
@@ -459,7 +552,66 @@ Distressed transactions concentrate every risk in this course, and three practic
 >
 > **What he does not do.** Recommend either loan, characterize one as cheaper, tell the borrower "you can always refinance," or opine that rates will move in a direction. **The first three are the lender's work and the fourth is a prediction stated as a plan** — which is, across this entire course, the single most damaging sentence available in a financing conversation.
 
-### 6.9 Checkpoint
+### 6.10 The power of sale, and where it comes from
+
+Section 6.2 described the trustee's sale as the ordinary California foreclosure. **Civil Code § 2924** is the section that permits it, and its opening sentence explains something students often find odd — why California uses deeds of trust at all.
+
+> *"(a) Every transfer of an interest in property, other than in trust, made only as a security for the performance of another act, is to be **deemed a mortgage**, except when in the case of personal property it is accompanied by actual change of possession, in which case it is to be deemed a pledge."*
+
+**A security transfer is a mortgage, whatever it is called** — unless it is made *in trust*. That exception is the doorway, and the deed of trust walks through it. The section then addresses what a power of sale in such an instrument may do:
+
+> *"If, by a mortgage created after July 27, 1917, of any estate in real property … or in **any transfer in trust** made after July 27, 1917, of a like estate to secure the performance of an obligation, **a power of sale is conferred** upon the mortgagee, trustee, or any other person, to be exercised after a breach of the obligation for which that mortgage or transfer is a security, the power shall not be exercised except where …"*
+
+— and there follows the statutory procedure: the notice of default, the period that must run, the notice of sale, and the sale itself.
+
+**Three consequences for a licensee.**
+
+**The deed of trust's three parties are structural, not stylistic.** Trustor (borrower), beneficiary (lender), trustee (neutral holder of the power of sale). The power belongs to the trustee because § 2924 speaks of a transfer *in trust*, and the trustee's neutrality is what makes a non-judicial sale acceptable.
+
+**The procedure is statutory and its steps are not negotiable.** A licensee working with a seller in default cannot improvise timelines, and the dates that govern a short sale, a reinstatement or a payoff come from the recorded notices rather than from the lender's collections department.
+
+**"After a breach of the obligation."** The power is exercisable only on default. This is obvious until a client asks whether a lender can call a loan for something else, at which point the answer lives in the loan documents and belongs to counsel.
+
+### 6.11 The two anti-deficiency statutes, and the choice they create
+
+California limits what a lender may collect after the collateral is gone. Two sections do most of the work and they operate on different triggers, which is why a borrower's exposure can turn on which foreclosure route the lender chooses.
+
+**Code of Civil Procedure § 580d — the trustee's sale bar:**
+
+> *"(a) Except as provided in subdivision (b), **no deficiency shall be owed or collected**, and no deficiency judgment shall be rendered for a deficiency on a note secured by a deed of trust or mortgage on real property … **in any case in which the real property … has been sold by the mortgagee or trustee under power of sale** contained in the mortgage or deed of trust."*
+
+**The trigger is the method.** If the lender forecloses non-judicially — the fast, cheap, ordinary route — **no deficiency may be collected at all**, whatever the loan was for. The lender trades the deficiency for the speed.
+
+**Code of Civil Procedure § 580b — the purchase-money bar.** § 580b protects a borrower on a **purchase money loan** regardless of how the lender forecloses. It also addresses refinancing, and the drafting is careful:
+
+> *"…a **'new advance'** that is not applied to an obligation owed or to be owed under the purchase money loan, or to fees, costs, or related expenses of the credit transaction. **A new credit transaction shall be deemed to be a purchase money loan except as to the principal amount of a new advance.** For purposes of this section, any payment of principal shall be deemed to be applied first to the principal balance of the purchase money loan, and then to the principal balance of a new advance…"*
+
+**Refinancing does not destroy purchase-money protection — it splits the loan.** The refinanced balance keeps its character; only the **new advance** — the cash taken out beyond the old balance and costs — falls outside. And payments are applied to the protected portion first, which preserves the protection for as long as possible.
+
+**Both sections carve out guarantors.** § 580b(c) and § 580d(b) each say the bar *"does not affect the liability that a guarantor, pledgor, or other surety might otherwise have."* **A relative who guaranteed the loan is not protected by a statute that protects the borrower.**
+
+### 6.12 A worked default
+
+> A borrower bought a home for $800,000 with a $640,000 purchase-money first. Four years later they refinanced into a $700,000 loan: $625,000 paid off the old balance, $15,000 covered costs, and **$60,000 came out in cash** for a business. They later default. The lender forecloses non-judicially and the property sells at the trustee's sale for $560,000, leaving a shortfall of about $128,000.
+
+**No deficiency is collectible from the borrower — and the reason is § 580d, not § 580b.**
+
+The lender sold **under the power of sale**. § 580d bars the deficiency outright, whatever the loan's character. The analysis stops there.
+
+**Now change one fact: the lender forecloses judicially instead.** Now § 580d does not apply and § 580b must be worked:
+
+- $625,000 of the new loan paid off the purchase-money balance — **deemed purchase money**.
+- $15,000 covered costs of the credit transaction — **deemed purchase money**.
+- **$60,000 was a new advance** — outside the protection.
+- Payments of principal since the refinance apply **first to the purchase-money portion**.
+
+**So the borrower is protected as to the $640,000 of purchase-money character and exposed as to the $60,000 new advance**, subject to the fair-value rules that govern judicial foreclosure and that this course does not read.
+
+**And the guarantor.** If the borrower's father guaranteed the refinance, neither section protects him. The lender's route to the shortfall may run through the guarantor even where it is closed against the borrower.
+
+**What a licensee takes from this.** Not the ability to advise — every sentence above is a lawyer's conclusion on facts a lawyer must verify. **The ability to recognise that the questions exist**: whether the loan is purchase money, whether cash was taken out on a refinance, whether anyone guaranteed it, and which foreclosure route the lender has chosen. A seller in distress who is told "you'll owe the difference" or "you won't" by their agent has been given legal advice by someone who cannot give it, and the answer above shows how badly a confident guess can go.
+
+### 6.13 Checkpoint
 
 You should be able to compare the two foreclosure paths on speed and deficiency, explain the reinstatement window, and state what a licensee says to a distressed client asking about a deficiency.
 

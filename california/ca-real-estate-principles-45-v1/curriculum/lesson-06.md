@@ -242,7 +242,63 @@ Depending on the jurisdiction and the property type, a transfer may trigger loca
 
 Certain multifamily housing is subject to accessible design and construction requirements, and California standards can exceed the federal baseline. A licensee marketing new construction should not represent that a property meets accessibility requirements without confirming it, and should direct specific questions to the developer, the architect, or the jurisdiction.
 
-### 3.6 Checkpoint
+### 3.7 Two subdivision statutes, and why California has both
+
+Section 3.1 described subdivision approval as a local process. It is that, and it is also a state one, and the two run on different definitions. A licensee who knows only "five or more parcels" has half of it.
+
+**The Subdivision Map Act — Government Code § 66410 and following.** The Act names itself in a single sentence: *"This division may be cited as the Subdivision Map Act."* It is the **local land-division statute**: it governs how land is divided, what maps are filed, and what conditions a city or county may impose.
+
+Its definition, at **Government Code § 66424**, is deliberately broad:
+
+> *"…any unimproved land, or any portion thereof, shown on the latest equalized county assessment roll as a unit or as contiguous units, for the purpose of sale, lease, or financing, whether immediate or future. **Property shall be considered as contiguous units, even if it is separated by roads, streets, utility easement, or railroad rights-of-way.** 'Subdivision' includes a **condominium project** …, a **community apartment project** …, or the **conversion of five or more existing dwelling units to a stock cooperative**…"*
+
+**The Subdivided Lands Act — Business and Professions Code § 11000 and following.** This is the **consumer-protection statute**, administered by the Department of Real Estate, and it is why a public report exists. Its definition is narrower and counts differently:
+
+> *"'Subdivided lands' and 'subdivision' refer to improved or unimproved land or lands, wherever situated within California, divided or proposed to be divided for the purpose of sale or lease or financing, whether immediate or future, into **five or more lots or parcels**."*
+
+**The two acts do not overlap neatly, and that is the point.**
+
+| | Subdivision Map Act | Subdivided Lands Act |
+|---|---|---|
+| **Code** | Gov. Code § 66410 et seq. | B&P Code § 11000 et seq. |
+| **Administered by** | Cities and counties | The Department of Real Estate |
+| **Purpose** | How land may be divided; maps, conditions, dedications | Whether the offering may be sold to the public; disclosure |
+| **Trigger** | Division of land into parcels, including two | **Five or more** lots or parcels |
+| **Output** | Tentative and final maps; parcel maps | **Public report** |
+
+**Three consequences worth carrying.**
+
+**A two-lot split is a subdivision for map purposes and not for public-report purposes.** The owner deals with the county and files a parcel map; no DRE public report is involved. **A licensee who tells such an owner they need a public report is wrong, and one who tells a five-lot subdivider they do not is wrong more expensively.**
+
+**"Contiguous even if separated by roads" closes an obvious avoidance route.** An owner cannot escape the Map Act by pointing at the street between their two holdings.
+
+**A condominium project is a subdivision.** § 66424 says so expressly. Converting an apartment building to condominiums is a land division in the eyes of the Map Act even though no soil is moved, and converting five or more units to a stock cooperative is too. **The most common "subdivision" a residential licensee will ever touch involves no vacant land at all.**
+
+### 3.8 The 160-acre carve-out and the exclusions
+
+§ 11000 carries exclusions that show what the Legislature was aiming at.
+
+**The 160-acre parcels.** Land *"sold by lots or parcels of not less than 160 acres which are designated by lot or parcel description by government surveys and appear as such on the current assessment roll"* is not subdivided land — **unless** it is divided for sale for oil and gas purposes, in which case it is. The consumer-protection concern was never large agricultural parcels described by government survey; it was the sale of small parcels to buyers who cannot inspect what they are buying. **But oil and gas is carved back in**, because that is a pattern the Legislature had specific reason to reach.
+
+**Ordinary leasing is out.** The chapter *"does not apply to the leasing of apartments, offices, stores, or similar space within an apartment building, industrial building, commercial building, or mobilehome park."* Renting an office suite is not subdividing.
+
+**With two exceptions that are back in.** Mobile home park leases *"for a term in excess of five years … as a mandatory requirement and prerequisite to tenancy"* are subject to the chapter. And leasing apartments in a **community apartment project** is subject to it. Both are situations where a "lease" is functionally the sale of a long-term interest to a consumer.
+
+**And the two acts are told not to disturb each other.** § 11000(b): *"Nothing in this section shall in any way modify or affect any of the provisions of Section 66424 of the Government Code."* The Legislature knew the definitions differ and said so.
+
+### 3.9 What this means for a residential licensee, concretely
+
+Most licensees will never subdivide anything. They will, regularly, meet the consequences.
+
+**A buyer purchasing in a new development is entitled to a public report.** Where the Subdivided Lands Act applies, the subdivider may not sell or lease before the Department has issued one, and the buyer receives and acknowledges it. **A licensee representing a buyer in a new tract who has not seen the public report has not seen the central disclosure document of the transaction.**
+
+**A seller who "split off the back lot" years ago may have created a problem.** A division that did not follow the Map Act may have produced a parcel that is not legally separate, which surfaces when a buyer's lender asks for a legal description and a title insurer declines to insure. **The question to ask is not "is it a separate parcel" but "what map created it, and when."**
+
+**A condominium conversion is a subdivision.** A client proposing to convert a four-plex is proposing a land division under § 66424 and should be sent to counsel and to the city before, not after, they market units.
+
+**None of these is a question a licensee answers.** Each is a question a licensee must be able to *recognise*, early enough that the person who does answer it can be brought in while the answer still matters.
+
+### 3.10 Checkpoint
 
 You should be able to state what a permit record establishes, handle unpermitted work correctly, and explain why local transfer requirements need to be checked jurisdiction by jurisdiction.
 
@@ -297,7 +353,50 @@ For commercial and some other transactions, environmental due diligence is condu
 
 A licensee should know the terms, know that these are specialist reports, and know that they take time — which puts them at the front of the due diligence queue rather than the back.
 
-### 4.6 Checkpoint
+### 4.7 The natural hazard zones, and what disclosure of them means
+
+Section 4.3 listed the hazard disclosures. This section is the working knowledge: which zones exist, what each says about the property, and what it obliges a buyer to do.
+
+| Zone | What it means | Practical consequence for a buyer |
+|---|---|---|
+| **Special flood hazard area** | Mapped by FEMA as subject to inundation in a base flood | A federally regulated lender **will require flood insurance**. Premiums vary by an order of magnitude between zones |
+| **Area of potential flooding** | Downstream of a dam, subject to inundation if the dam failed | Rarely insurable as such; a disclosure item rather than a lending condition |
+| **Very high fire hazard severity zone** | Mapped by the state or a local agency | **Insurance availability, not price, is the issue.** Carriers have withdrawn from these areas |
+| **Wildland area / state responsibility area** | Fire protection is the state's rather than a local district's | Defensible-space obligations; a fire prevention fee history |
+| **Earthquake fault zone** | Alquist-Priolo mapped surface fault trace | Restricts construction across the trace; affects the feasibility of an addition |
+| **Seismic hazard zone** | Mapped liquefaction or landslide susceptibility | May require a geotechnical report before permits issue |
+
+**This course does not read the mapping statutes in their own text.** No deadline, exemption, form requirement, or fee in this assignment is taken from them. What a Principles student needs is the shape: **six zones, each mapped by a public agency, each disclosed on a natural hazard disclosure statement, and each meaning something different to a buyer.**
+
+**The distinction that decides transactions is insurance.** A flood zone is a **price** problem — coverage exists and costs money. A very high fire hazard severity zone is increasingly an **availability** problem, and a buyer who cannot obtain a policy cannot obtain a loan. **A licensee should tell a buyer to get an insurance quote in the first days of the contingency period**, not the last, because in some markets the quote takes longer than the contingency.
+
+### 4.8 Disclosure is not investigation, and the line between them
+
+**What the disclosure does.** It reports what the public maps show. The maps are the source; the report is a transcription.
+
+**What it does not do.** It does not say whether *this house* will flood, burn or shift. It does not survey the site. A property just outside a mapped zone may face nearly the same physical risk as one just inside, because the line on the map is a regulatory boundary and not a change in the ground.
+
+**Three failures that follow from confusing the two.**
+
+**Treating "not in a zone" as "no risk."** The most common. A buyer who reads *"not in a special flood hazard area"* and concludes the property does not flood has read a statement about a map.
+
+**Treating "in a zone" as a defect to be argued about.** A property in a mapped zone is not defective; it is located where it is located. The transaction question is insurability and cost, and both are answerable with a phone call.
+
+**Treating the report as the end of diligence.** The natural hazard report is one input. The others — an inspection, an insurance quote, a geotechnical opinion where the seismic map warrants one, and the seller's own knowledge of past flooding or fire — are separate, and no one of them substitutes for another.
+
+**A worked situation.**
+
+> A buyer is in contract on a hillside property. The natural hazard disclosure reports: not in a flood zone; **in a very high fire hazard severity zone**; **in a seismic hazard zone (landslide)**; not in an earthquake fault zone. The buyer's agent forwards the report on day 4 of a 17-day contingency period with the note "standard disclosures attached."
+
+**Two items on that report should have generated action rather than a forward.**
+
+**The fire zone means the buyer must confirm insurance is available before removing contingencies**, and in some California markets that has meant weeks and a surplus-lines policy at several times the expected premium. A buyer who removes contingencies without a bound quote has removed the only exit.
+
+**The landslide designation means a geotechnical question exists**, and if the buyer intends any addition or grading, the designation will meet them again at the permit counter. That is a question for a geotechnical engineer inside the contingency period.
+
+**What "standard disclosures attached" communicated instead** was that the report was routine and required no thought. **The licensee's obligation was not to interpret the hazards** — they are not qualified to — **but to say which items have consequences and which professionals answer them**, in writing, on day 4.
+
+### 4.9 Checkpoint
 
 You should be able to state the lead-based paint obligations correctly in both directions, and give the correct response to a buyer asking whether visible mold is serious.
 
@@ -367,7 +466,45 @@ For rural, agricultural, or unimproved property, at the listing appointment:
 
 That last question closes the loop with Lesson 05: a rural parcel reached by a road nobody has a recorded right to use has an access problem the buyer will discover after closing.
 
-### 5.7 Checkpoint
+### 5.8 Due diligence on land use, in the order it should be done
+
+Sections 5.1 to 5.4 covered the controls. This section is the sequence a licensee should be able to run for any buyer whose plans depend on what the land may be used for.
+
+**Step one — the zoning designation and the general plan designation, which are two different things.** Zoning is the current regulation; the general plan is the long-range policy the zoning is supposed to implement. **They can disagree**, and where they do, a property's future is contested rather than settled. Both come from the planning department and both are usually online.
+
+**Step two — the permitted uses in that zone, read rather than assumed.** A zone's name conveys almost nothing. What matters is the schedule of uses: permitted by right, permitted with a conditional use permit, and prohibited. **A buyer who wants to run a business from a house is asking a question this schedule answers.**
+
+**Step three — the development standards.** Setbacks, height, lot coverage, floor-area ratio, parking. **These decide whether the addition a buyer intends is possible**, and they are the reason a large lot does not necessarily mean a large house.
+
+**Step four — the overlays.** Historic districts, hillside ordinances, coastal zones, airport influence areas, specific plans. **An overlay sits on top of the base zoning and frequently governs.** A property can be in a permissive base zone and a restrictive overlay.
+
+**Step five — the permit history.** What has been permitted on this parcel, and what has been finalled. Assignment 15 Section 5.12 explains why unpermitted work matters; the permit history is where it becomes visible.
+
+**Step six — anything pending nearby.** A proposed project on an adjacent parcel is a matter of public record and can change the property a buyer is buying.
+
+**All six are free or nearly free, and all six are answered by the planning and building departments to anyone who asks.** The obstacle is not access. It is that nobody asks until a problem has already arrived.
+
+### 5.9 The three answers a licensee must never give
+
+**"You can build that."** Whether a proposed structure may be built is a determination made by a jurisdiction on an application, against standards, overlays and a permit history the licensee has not read in full. **A licensee who says it can be built has given a client a reason not to check.**
+
+**"That's grandfathered."** Legal non-conforming status is a specific legal condition — a use lawfully established before a regulation changed, continued without the interruptions or expansions that forfeit it. **It is not a synonym for "old."** Whether a use qualifies, and what would end it, is a question for the jurisdiction and for counsel.
+
+**"You can get a variance."** A variance is discretionary relief granted on findings a body must make. It is not obtainable on request, and a buyer who purchases in reliance on obtaining one has bought a property on a condition nobody promised.
+
+**What to say instead, in each case:** *"That's a question for the planning department, and it's worth getting the answer in writing before your contingency period ends. I can give you their number, and here is what I would ask them."*
+
+**A worked situation.**
+
+> A buyer is purchasing a corner lot with an older house, intending to add a 900-square-foot second unit for a parent. The listing describes the property as "great ADU potential — huge lot!" The buyer's agent forwards a zoning printout showing the base zone permits two units.
+
+**The printout answers one of six questions.** It does not address the corner-lot setbacks, which on corner parcels are frequently more restrictive on the street side; the lot coverage and floor-area ratio, which decide whether 900 square feet fits after the existing house; any overlay; the permit history of the existing structure; or whether the parcel's utilities and sewer capacity support a second unit.
+
+**And "great ADU potential" in the listing is a representation** somebody made about a use nobody had confirmed. **The licensee who repeats it to a buyer has adopted it.**
+
+**What the buyer's agent should have done on day one:** telephoned the planning department, described the parcel and the intended addition, asked what would be required, and **sent the buyer the answer in writing** — including the parts that were "you'd need to apply and find out."
+
+### 5.10 Checkpoint
 
 You should be able to explain why hazard disclosure applies on mapping rather than history, and list the rural intake questions.
 

@@ -140,7 +140,67 @@ Fair housing obligations are not limited to the consumer in front of the license
 
 The client relationship is one surface among several, and the harm to a person who never learned the property existed is exactly the harm the law addresses.
 
-### 2.7 Checkpoint
+### 2.8 California's protected characteristics, in the statute
+
+Section 2.1 said that California protects more characteristics than federal law. **Government Code § 12955** — the housing article of the Fair Employment and Housing Act — is where the list lives, and reading it is the only way to hold it accurately.
+
+> *"It shall be unlawful:*
+>
+> *(a) For the owner of any housing accommodation to discriminate against or harass any person because of the **race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information** of that person."*
+
+**Set that against the federal list.** The federal Fair Housing Act, 42 U.S.C. § 3604, prohibits discrimination because of *race, color, religion, sex, familial status, or national origin*, with disability addressed separately at § 3604(f).
+
+| Characteristic | Federal | California |
+|---|---|---|
+| Race, color, religion, sex, national origin, familial status | ✓ | ✓ |
+| Disability | ✓ (§ 3604(f)) | ✓ |
+| **Gender identity, gender expression** | — | ✓ |
+| **Sexual orientation** | — | ✓ |
+| **Marital status** | — | ✓ |
+| **Ancestry** | — | ✓ |
+| **Source of income** | — | ✓ |
+| **Veteran or military status** | — | ✓ |
+| **Genetic information** | — | ✓ |
+
+**A licensee who knows only the federal list will act lawfully under federal law and unlawfully in California.** That is not a rhetorical flourish; it is the ordinary consequence of a longer list.
+
+**And the section reaches the licensee, not only the owner.** Subdivision (i) makes it unlawful *"for any person or other organization or entity whose business involves **real estate-related transactions** to discriminate against any person in making available a transaction, or in the terms and conditions of a transaction"* on the listed grounds. Subdivision (g) reaches anyone who *"aid[s], abet[s], incite[s], compel[s], or coerce[s]"* any of it. **A licensee following an owner's unlawful instruction is inside subdivision (g).**
+
+### 2.9 Source of income, and the two subdivisions that give it teeth
+
+Of the California-only characteristics, **source of income** is the one that most often catches a licensee out, because the discriminatory sentence sounds like a business policy: *"we don't take vouchers."*
+
+§ 12955 does not leave the point to inference. It addresses the mechanics of income screening directly:
+
+> *"(n) To use a financial or income standard in the rental of housing that **fails to account for the aggregate income of persons residing together** or proposing to reside together on the same basis as the aggregate income of married persons residing together or proposing to reside together.*
+>
+> *(o)(1) In instances in which there is a **government rent subsidy**, to do either of the following: (A) Use a financial or income standard in assessing eligibility for the rental of housing **that is not based on the portion of the rent to be paid by the tenant**. (B)(i) Use a person's credit history … **without offering the applicant the option, at the applicant's discretion, of providing lawful, verifiable alternative evidence** of the applicant's reasonable ability to pay the portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements."*
+
+**Three operational rules come out of that.**
+
+**Roommates' incomes aggregate the same way spouses' do.** A "three times the rent, per person" standard applied to unmarried co-applicants but not to married ones is inside subdivision (n).
+
+**Where a subsidy exists, the income test runs against the tenant's own share of the rent.** A tenant paying $400 of a $2,400 rent is assessed against $400. Applying a three-times-rent rule to the full $2,400 is precisely what subdivision (o)(1)(A) prohibits.
+
+**Credit history cannot be the only door.** Subdivision (o)(1)(B) requires that a subsidised applicant be **offered the option** of supplying alternative evidence of ability to pay. Not asked for it if they complain — offered it.
+
+**And applying an unlawful standard uniformly does not cure it.** Consistency is a defence to a claim of disparate treatment; it is not a defence to a standard the statute prohibits outright.
+
+### 2.10 Perception, association, and why intent is not the test
+
+Two more features of the California scheme close the gaps that a well-meaning licensee might otherwise fall into.
+
+**§ 12955(m)** provides that the listed characteristics include *"a **perception** that the person has any of those characteristics or that the person is **associated with a person** who has, or is perceived to have, any of those characteristics."*
+
+**The Unruh Civil Rights Act, Civil Code § 51**, does the same for business establishments — and a real estate brokerage is one. **§ 51(e)(7)** extends every listed characteristic to *"(B) A **perception** that the person has any particular characteristic … (C) A **perception that the person is associated with a person** who has, or is perceived to have, any particular characteristic…"*
+
+**What this means in practice is that being wrong is not a defence.** A licensee who treats an applicant differently because of an assumption about their religion has discriminated on the basis of religion whether or not the assumption was correct. A licensee who treats a tenant differently because of their partner's disability has discriminated on the basis of disability.
+
+**And nothing in either statute requires a discriminatory motive.** The question is what the licensee did and on what basis, not what they intended by it. **This is the same point Assignment 14 of the Real Estate Practice course makes about implicit bias**, arriving from the other direction: the law does not ask whether the licensee meant well, because the consumer's access to housing is unaffected by what the licensee meant.
+
+**The professional response, in one line:** apply written criteria uniformly, record what was applied, and route every instruction that would require you to do otherwise to the broker in writing — because § 12955(g) reaches the person who carries the instruction out.
+
+### 2.11 Checkpoint
 
 You should be able to name California's principal fair housing statutes, explain why the federal list is insufficient, and state the practice that does not depend on the list.
 
@@ -363,7 +423,45 @@ Discrimination in the provision of property insurance by area or by protected ch
 
 A licensee's role is the familiar one: ensure the buyer investigates **early in the contingency period**, provide the same information and referrals to every consumer, and escalate anything that looks like a pattern rather than a pricing decision.
 
-### 5.8 Checkpoint
+### 5.9 Appraisal bias, and why it reaches the licensee
+
+Section 5.4 introduced fair lending. Appraisal is the part of it that a residential licensee is closest to, because the licensee is often the person who meets the appraiser at the property.
+
+**§ 12955(i)(2)** puts appraisal inside the statute expressly. It is unlawful:
+
+> *"For any person or other entity whose business includes **performing appraisals**, as defined in subdivision (b) of Section 11302 of the Business and Professions Code, **of residential real property to discriminate against any person in making available those services, or in the performance of those services**, because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin."*
+
+**"Or in the performance of those services" is the operative phrase.** The prohibition is not only about refusing to appraise for someone; it reaches **how the appraisal is performed** — which comparables were selected, which neighbourhood boundaries were drawn, what adjustments were made.
+
+**Why this is a mechanism rather than only a motive.** Assignment 14 of the Real Estate Practice course explains that comparable-sales analysis measures the accumulated effect of past exclusion accurately and thereby carries it forward. An appraiser selecting comparables "across the boulevard" rather than within a subject's own neighbourhood, or the reverse, is making a judgment about which market the property belongs to — **and where those boundaries were originally drawn by exclusion, an accurate measurement reproduces it.**
+
+**What a licensee should and should not do at an appraisal.**
+
+**Do provide factual information.** Recent comparable sales the appraiser may not have, a list of improvements with dates and permits, the property's own history. Providing data is proper and useful.
+
+**Do not attempt to influence the conclusion.** Suggesting a value, mentioning what the deal needs, or characterising the neighbourhood is improper, and appraiser independence rules exist precisely to prevent it.
+
+**Do not remove or add anything to the property to signal something about its occupants.** Advice of that kind — to depersonalise a home so the appraiser cannot tell who lives there — is sometimes given informally and is a symptom of the problem rather than a remedy for it. **A licensee who believes an appraisal was influenced by who lives in the house should escalate it, not manage around it.**
+
+**Do know that a reconsideration process exists.** A borrower who believes an appraisal is inaccurate may request reconsideration through the lender, supported by specific comparable sales. **That is a factual process with a defined route**, and it is the answer to "the appraisal came in low" whatever the reason.
+
+### 5.10 The documentation that answers a fair housing question
+
+The recurring professional problem in fair housing is not knowing the rule. It is being able to show, months or years later, what was actually done.
+
+**Four records, each cheap and each decisive.**
+
+**Written selection criteria, applied uniformly.** For a rental: income standard, credit standard, references, occupancy. Written down before any applicant appears, applied to every applicant, with the evaluation recorded. **A criterion invented for one applicant is indefensible even if it is reasonable.**
+
+**A property-showing log.** Which properties were shown, to whom, and on whose criteria they were selected. **The steering allegation is answered by a record showing the client's stated criteria and the properties matching them** — and it is unanswerable without one.
+
+**Advertising copy and where it ran.** Every advertisement, retained, with its publication. § 12955(c) reaches notices, statements and advertisements indicating a preference, and the defence to an allegation is the copy itself.
+
+**The written record of any instruction refused.** An owner who instructs a licensee to exclude a protected class has put the licensee inside § 12955(g) if the licensee complies. **The record of the refusal — the instruction, the refusal, the date, in writing to the broker — is what separates a licensee who declined from one who quietly went along.**
+
+**And the framing that makes this a professional habit rather than defensive paperwork.** Every one of these four records also makes the work better: uniform criteria produce better tenants, a showing log produces better client service, retained copy produces better advertising. **They are not written for the complaint. They are the reason the complaint does not happen.**
+
+### 5.11 Checkpoint
 
 You should be able to name the fair lending statutes, explain why exclusion compounds, and state what a licensee does when an appraisal appears to reflect bias.
 
@@ -465,7 +563,52 @@ For a fair housing question, the record is the defense:
 
 **A list of properties shown, without the criteria that produced it, shows what happened without showing why.** The criteria are what make it defensible.
 
-### 6.9 Checkpoint
+### 6.10 What happens when a complaint is filed, and what the licensee does
+
+Section 6.4 described the complaint routes. Knowing the shape of a proceeding matters because the licensee's conduct in the first week after an allegation frequently determines the outcome.
+
+**The routes, and they are not exclusive.**
+
+| Route | Filed with | What it produces |
+|---|---|---|
+| **State civil rights agency** | California's civil rights department | Investigation, conciliation, and a determination; a right-to-sue |
+| **Federal** | HUD, or a substantially equivalent state agency | Investigation and conciliation; referral for enforcement |
+| **Court** | Directly, by the complainant | Damages, injunction, fees |
+| **The Department of Real Estate** | Against the licence | Discipline under B&P §§ 10176 and 10177 |
+
+**A single course of conduct can produce all four.** A licensee who assumes that resolving one disposes of the others has assumed something untrue, and the licence proceeding is frequently the last to arrive and the longest to resolve.
+
+**What the licensee does in the first week.**
+
+**Preserve everything, immediately.** Every record touching the transaction, including drafts, texts and voicemail. **The instinct to tidy is the single most damaging instinct available**, and a file that was altered after notice of a complaint is a different and far worse case.
+
+**Notify the broker, in writing, the same day.** The broker has supervision obligations and errors-and-omissions coverage with notice requirements that can be forfeited by delay.
+
+**Do not contact the complainant.** Not to explain, not to apologise, not to clarify. Every one of those is a communication that will be recounted.
+
+**Do not draft a narrative from memory before reading the file.** Write from documents. A recollection contradicted by a dated record is worse than no recollection.
+
+**Cooperate with the investigation through counsel.** An investigator's questions are proper and the answers matter; **the licensee who answers them alone, informally, and in a hurry is the one who creates the quotable sentence.**
+
+### 6.11 Fair housing as a system rather than a rule
+
+The examinable content of fair housing is a list of protected characteristics and prohibited acts. **The professional content is that neither is where failures happen.** Almost nobody in this business decides to discriminate. The failures come from discretion exercised in good faith and unevenly, and the remedy is structural.
+
+**Four structures, each of which operates whether or not anyone is thinking about fair housing on a given day.**
+
+**Written criteria, published and applied uniformly.** A standard written before the applicant appears cannot be adjusted to them.
+
+**A uniform information script.** The same facts, in the same order, to every enquirer. **Steering is a difference in the information different consumers receive**, and a script removes the mechanism.
+
+**Objective property selection.** Properties selected against the client's stated written criteria, with the criteria on file. Assignment 14 Section 6.9 explains why the showing log answers the allegation; the criteria are what the log is measured against.
+
+**Outcome review.** Periodically, look at who was served and how — not to reach a conclusion, but because **a practice that has never looked at its outcomes has no idea what they are.**
+
+**Why this belongs in a Principles course rather than only in Practice.** The Real Estate Practice course carries the SB 1495 components and the participatory practicum, and it goes further into implicit bias than this course does. **What a Principles student should leave with is the structural insight**: that a licensee's exposure under Government Code § 12955, the Unruh Civil Rights Act and B&P § 10177(l) does not depend on what they intended, and that the only reliable protection is a practice designed so that discretion has less room to operate.
+
+**The closing thought, and it is the honest one.** A licensee who reads this assignment and concludes "I would never do that" has taken exactly the wrong lesson. **The licensees who generate fair housing complaints are, in the overwhelming majority, people who would say the same thing and mean it.** The question worth carrying is not whether you would discriminate. It is whether, if your practice were producing unequal outcomes, **you would have any way of knowing.**
+
+### 6.12 Checkpoint
 
 You should be able to produce the declining scripts, write the unlawful instruction response, state the complaint sequence, and describe what outcome review examines.
 

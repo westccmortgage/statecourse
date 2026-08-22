@@ -112,7 +112,49 @@ A $150,000 recording studio built into a garage in a neighborhood of family home
 
 **The complement is also true:** some modest improvements contribute more than they cost, because they remove a specific buyer objection.
 
-### 1.7 Checkpoint
+### 1.8 Value, price and cost, kept apart
+
+Section 1.1 distinguished the three. They are worth separating carefully because clients use them interchangeably and a licensee who follows them into that habit will say something indefensible.
+
+| Term | What it is | Who determines it |
+|---|---|---|
+| **Value** | An opinion of worth under stated conditions, at a stated date | An appraiser, on evidence |
+| **Price** | What was actually paid in a particular transaction | The parties to that transaction |
+| **Cost** | What it took to create the improvement | The market for labour and materials |
+
+**They diverge routinely, and each divergence has an ordinary cause.**
+
+**Price above value.** A buyer with a particular motive — an adjoining owner assembling a parcel, a relative, a buyer under time pressure. **A single high sale is a data point about that transaction, not about the market**, which is why appraisers examine the conditions of sale before using a comparable.
+
+**Price below value.** A distressed seller, a family transfer, a probate sale with limited exposure. **The same reasoning applies in the other direction**, and this is why a foreclosure sale is a poor comparable for an ordinary transaction.
+
+**Cost above value.** The most common divergence in real life. **Over-improvement** — the $180,000 kitchen in a $600,000 neighbourhood — recovers a fraction of its cost, because the market's ceiling is set by the neighbourhood rather than by the owner's spending.
+
+**Cost below value.** Scarcity. In a supply-constrained market a property may be worth substantially more than it would cost to replicate, if replicating it were possible.
+
+**The four value characteristics** — the ones that must all be present — remain the underlying frame:
+
+**Demand** (someone wants it), **utility** (it can satisfy the want), **scarcity** (it is limited), and **transferability** (it can be conveyed). **Remove any one and value collapses**, which is why a landlocked parcel with no access and no easement — untransferable in any practical sense — can be worth almost nothing while its neighbour is valuable.
+
+### 1.9 The conversation a licensee actually has
+
+The distinctions above are not academic. They appear as three sentences clients say, and each needs a different answer.
+
+**"I put $95,000 into this kitchen, so the house is worth $95,000 more."**
+
+This is cost confused with value. **The answer is evidence, not argument:** show what comparable properties with updated kitchens have sold for, against comparable properties without. Often the answer is that the improvement recovers half its cost, and occasionally that it recovers most of it. **What the answer is never is the amount spent.**
+
+**"My neighbour got $940,000, so that's what mine is worth."**
+
+This is price confused with value. **The answer is to look at that sale.** How does the property differ; when did it close; what were the conditions of sale? A neighbour's sale is one comparable, and a comparable is adjusted rather than copied.
+
+**"Zillow says $880,000."**
+
+An automated valuation model is a statistical estimate from public data. It has never been inside the house, does not know about the foundation work or the addition, and does not know the condition of the interior. **It is not a bad starting point and it is not a valuation**, and the way to say so without dismissing the client is to show the three or four ways the subject differs from what the model can see.
+
+**The professional posture underneath all three answers.** A licensee's role is to supply the evidence and its limits, and let the client form the view. Assignment 12 Section 6.14 makes the same point about a CMA: **the list price is the seller's decision, and the licensee's obligation is that it is an informed one.**
+
+### 1.10 Checkpoint
 
 You should be able to distinguish value, price, and cost; name the elements of value; and explain contribution to a seller without giving offense.
 
@@ -430,7 +472,100 @@ An appraiser applies the approaches that fit the property and **reconciles** the
 
 Reconciliation is judgment, stated with its reasoning — the same discipline as reconciling comparables within the sales comparison approach.
 
-### 5.8 Checkpoint
+### 5.9 Capitalization worked in both directions
+
+Section 5.3 introduced the capitalization formula. It is one relationship read three ways, and a licensee who can move between them will not be confused by the way a client states a question.
+
+> **Value = Net Operating Income ÷ Capitalization Rate**
+> **Cap Rate = NOI ÷ Value**
+> **NOI = Value × Cap Rate**
+
+**Building the NOI is where the errors are**, not in the division. The order is fixed:
+
+| Line | Example |
+|---|---:|
+| Potential gross income (all units at market rent, full occupancy) | $186,000 |
+| **Less** vacancy and collection loss at 6% | (11,160) |
+| **Plus** other income (laundry, parking, storage) | 7,400 |
+| **Effective gross income** | **182,240** |
+| **Less** operating expenses | (69,250) |
+| **Net operating income** | **$112,990** |
+
+**Four things never appear in operating expenses**, and each is excluded for a reason a licensee should be able to state:
+
+- **Debt service.** NOI describes the property, not the buyer's financing. Two buyers with different loans buy the same NOI.
+- **Depreciation.** A tax entry, not a cash expense.
+- **Capital improvements.** A new roof is an investment in the asset, not a cost of operating it this year.
+- **Income taxes.** They depend on the owner, not the building.
+
+**Reserves for replacement are the contested line.** Some analysts deduct them and some do not, and the difference moves NOI and therefore value. **A comparison between two properties where one deducted reserves and the other did not is not a comparison** — it is the first failure in Assignment 13 Section 6.1's list.
+
+> **Problem one — value from NOI.** The NOI above is $112,990. Comparable sales in the submarket support a 5.75% capitalization rate. What value is indicated?
+
+$112,990 ÷ 0.0575 = **$1,964,957**, say **$1,965,000**.
+
+> **Problem two — the rate from a sale.** A comparable sold for $2,410,000 with an NOI of $131,000. What rate did the market pay?
+
+$131,000 ÷ $2,410,000 = **5.44%**.
+
+> **Problem three — sensitivity, which is the one that matters.** Take the same $112,990 NOI at 5.25%, 5.75% and 6.25%.
+
+| Rate | Indicated value |
+|---:|---:|
+| 5.25% | $2,152,190 |
+| 5.75% | $1,964,957 |
+| 6.25% | $1,807,840 |
+
+**A one-point swing in the rate moves the value by $344,350 — about 17.5 per cent.** This is the single most important fact about capitalization for a licensee to understand and to convey: **the rate is not a technicality, and a value stated to the nearest thousand dollars conceals a range far wider than the precision suggests.**
+
+### 5.10 The cost approach and the gross rent multiplier, worked
+
+**The cost approach** answers a different question: what would it cost to replace this improvement today, less what it has lost, plus the land.
+
+> **Value = Replacement Cost New − Accrued Depreciation + Land Value**
+
+> **Problem.** A 2,400 sq ft residence. Replacement cost new is $265 per square foot. The improvement is 12 years into a 50-year economic life and has suffered no unusual deterioration. Site value from land sales is $410,000.
+
+Replacement cost new: 2,400 × $265 = **$636,000**.
+Straight-line depreciation: 12 ÷ 50 = 24%.
+Accrued depreciation: $636,000 × 0.24 = **$152,640**.
+Depreciated improvement: $636,000 − $152,640 = **$483,360**.
+Plus land: $483,360 + $410,000 = **$893,360**.
+
+**Straight-line age-life is a teaching device**, and its weakness is worth naming: it assumes the improvement loses value evenly, which buildings do not do. Real appraisals separate **physical deterioration** (curable and incurable), **functional obsolescence** (a three-bedroom house with one bathroom), and **external obsolescence** (a freeway built alongside). **Only the first is captured by an age-life fraction**, and the other two are frequently larger.
+
+**The gross rent multiplier** is the fastest and crudest of the three.
+
+> **GRM = Sale Price ÷ Gross Rent** (monthly for residential, annual for commercial — say which)
+
+> **Problem.** Three comparable duplexes sold at $712,000 with $4,150 monthly rent; $684,000 with $3,980; and $735,000 with $4,300. The subject rents for $4,240 a month. What does the GRM indicate?
+
+| Comparable | Price | Monthly rent | GRM |
+|---|---:|---:|---:|
+| A | $712,000 | $4,150 | 171.6 |
+| B | $684,000 | $3,980 | 171.9 |
+| C | $735,000 | $4,300 | 170.9 |
+
+Indicated GRM ≈ **171.5**. Subject: $4,240 × 171.5 = **$727,160**.
+
+**Why the GRM is a screen and not a valuation.** It uses **gross** rent, so it is blind to every difference in operating expense between the properties. A subject with a master-metered utility system, an old roof and a $9,000 insurance premium produces the same GRM answer as an identical building with none of those. **The GRM says whether a property is worth analysing. The income approach says what it is worth.**
+
+### 5.11 Reconciliation, and the number a licensee must not produce
+
+Three approaches produce three numbers. Reconciliation is the judgment about which deserves weight, and it is not an average.
+
+| Property type | Approach that usually leads | Why |
+|---|---|---|
+| Single-family residence | **Sales comparison** | Buyers behave comparatively; ample data |
+| Small income property | **Income**, supported by sales comparison | Bought for the income stream |
+| New construction | **Cost**, supported by sales comparison | Depreciation is minimal and cost data is current |
+| Special-purpose (church, school) | **Cost** | Few or no comparable sales exist |
+
+**Averaging the three is the error that marks an untrained analysis.** If the sales comparison approach is reliable and the cost approach rests on a guessed depreciation figure, averaging them imports the guess into the answer at 33 per cent weight.
+
+**And the boundary a licensee must not cross.** A **comparative market analysis** is not an appraisal, and a licensee preparing one is not appraising. The CMA supports a listing or offering decision; it does not state value for a lender, and it must not be presented as though it did. Assignment 12 Section 6.2 states the rule; the arithmetic above is what makes the temptation real, because **the arithmetic is easy and the judgment is not.**
+
+### 5.12 Checkpoint
 
 You should be able to build an income statement excluding debt service and depreciation, solve IRV in all three directions, and explain what a multiplier ignores.
 
@@ -545,7 +680,57 @@ Section 6.4 states the independence requirement and Section 6.6 addresses bias. 
 
 > **And where the appraisal comes in low**, Section 6.5 governs: it is a fact, not a problem to solve. It may support a reconsideration through the prescribed channel with additional data, and the appraiser remains free to reject it. **What it does not support is pressure, and "my manager told me to" does not transfer responsibility for making the call.**
 
-### 6.11 Checkpoint
+### 6.12 The CMA and the appraisal are different documents with different jobs
+
+Section 6.2 drew the boundary. This section makes it operational, because the pressure to blur it is real and it comes from clients who do not know they are asking for something improper.
+
+| | Comparative market analysis | Appraisal |
+|---|---|---|
+| **Prepared by** | A licensee | A licensed or certified appraiser |
+| **For** | A seller deciding a list price; a buyer deciding an offer | A lender, a court, a tax authority, a party needing an opinion of value |
+| **Governed by** | The licensee's duties of care and honesty | Appraisal standards and the appraiser's own licensing law |
+| **Says** | What comparable properties did, and what that suggests about market position | **An opinion of value**, defined, dated and supported |
+| **May be used for lending** | **No** | Yes |
+| **Independence requirements** | The licensee is an interested party and the client knows it | The appraiser must be independent of the transaction |
+
+**The distinction is not one of quality.** A careful CMA may use the same sales, apply better local knowledge, and reach a closer number than a hurried appraisal. **It is a distinction of function and of who stands behind it.** The appraiser is independent and accountable under a licensing scheme built for that purpose; the licensee is a party to the transaction with a commission that moves with the price.
+
+**Which is why the language matters.** A CMA that says *"the value of the property is $845,000"* has stated an opinion of value. One that says *"comparable sales in the last six months ranged from $812,000 to $868,000; the closest three suggest a competitive list price between $835,000 and $855,000"* has done the licensee's job and stayed inside it.
+
+**Three sentences a licensee should never write in a CMA:** *"the value is"*; *"this property appraises at"*; *"this supports a loan of."*
+
+### 6.13 Appraiser independence, in practice
+
+**What the rules protect against** is exactly what a transaction under pressure invites: somebody telling the appraiser what number is needed.
+
+**Prohibited, and not subtly:** telling the appraiser the contract price is "what we need to hit"; selecting the appraiser because they are known to be accommodating; refusing to pay or threatening future work over a value; asking for a specific value before or during the assignment.
+
+**Permitted and encouraged:** providing factual data. **The distinction is between information and instruction.**
+
+| Providing information (proper) | Applying pressure (improper) |
+|---|---|
+| A list of recent comparable sales with addresses and dates | "We need $845,000 to make this work" |
+| Documented improvements with dates, costs and permit numbers | "The last appraiser had no trouble with this" |
+| The property's own sale and listing history | "The seller will be very upset if it comes in low" |
+| Access, and time to inspect properly | Following the appraiser through the house narrating |
+
+**When the value comes in below the contract price.** This is a transaction problem with four ordinary outcomes — the buyer brings more cash, the seller reduces, the parties split, or the contract is cancelled on the appraisal contingency — plus one process option: **a reconsideration of value, requested through the lender, supported by specific comparable sales the appraiser may not have considered.**
+
+**The reconsideration is a factual submission, not an argument.** Sales, dates, addresses, distances, and why each is comparable. A request that says the value is wrong without offering data is not a reconsideration; it is pressure with a form attached.
+
+### 6.14 A worked CMA problem
+
+> A seller wants to list at $920,000. The licensee's analysis: three closed sales in the past four months at $846,000 (0.3 miles, similar), $861,000 (0.5 miles, 180 sq ft larger, updated kitchen), and $878,000 (0.2 miles, 400 sq ft larger, pool). Two active listings at $915,000 and $929,000 have been on market 74 and 91 days. One expired at $935,000.
+
+**What the data says.** The closed sales — the only transactions where a buyer actually paid — cluster between $846,000 and $878,000, and the two larger ones carry features the subject lacks. **The actives at $915,000 and $929,000 have not sold in two and three months**, and the expired at $935,000 did not sell at all. **Actives and expireds are not evidence of value; they are evidence of what has been asked and refused.**
+
+**What the licensee should present.** The three closed sales with their differences stated; the two actives identified as the competition rather than as comparables; the expired identified as a market test that failed at $935,000; and a competitive list range supported by the closed sales.
+
+**What the licensee should not do.** Take the listing at $920,000 without saying any of that, on the reasoning that the seller will reduce later. **The 74 and 91 days on the actives are the forecast for what happens next**, and a listing taken at a price the data does not support costs the seller the first four weeks of exposure, which is the period when the most buyers see it.
+
+**And the honest framing of the conversation:** the list price is the seller's decision. **The licensee's obligation is that the seller makes it knowing what the closed sales show**, in writing, so that a decision to test a higher price is an informed decision rather than an uninformed one.
+
+### 6.15 Checkpoint
 
 You should be able to state the appraisal-CMA boundary, distinguish supplying information from supplying a target, and list what makes an opinion reconstructable.
 

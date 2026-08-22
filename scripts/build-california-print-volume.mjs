@@ -24,6 +24,26 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { COURSES, COURSE_DESIGN, INSTRUCTOR, PROVIDER, STATUS_LINE } from "../config/california/submission-facts.mjs";
 
+/*
+ * The assessment banks, printed with the lessons.
+ *
+ * RE 303 item 6 asks for "Printed copies of all instructional materials, student materials,
+ * textbooks, case studies, sample forms, etc." The applied exercise, the engagement check and
+ * the remediation set are student materials — the student is served them inside the assignment
+ * — and a volume that printed only the reading was a volume that omitted a fifth of what a
+ * student is given.
+ *
+ * The FINAL EXAMINATION banks are not here and must never be. They are secure documents; the
+ * student and instructor versions are submitted separately as RE 303 items 13 and 14, and
+ * site/build.sh refuses to publish any file matching /final-exam-bank|answer-key/.
+ */
+const ASSESSMENT_BANKS = {
+  "ca-real-estate-principles-45-v1": "config/california/principles-question-bank.mjs",
+  "ca-real-estate-practice-45-v1": "config/california/practice-question-bank.mjs",
+  "ca-mortgage-loan-brokering-lending-45-v1": "config/california/mortgage-question-bank.mjs",
+};
+const LETTERS = ["A", "B", "C", "D", "E", "F"];
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "california/print");
 const CHROME = ["/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
@@ -141,6 +161,17 @@ code { font-family: "Courier New", monospace; font-size: 9.5pt; }
 .toc ol { list-style: none; margin-left: 0; }
 .toc li { margin-bottom: 5pt; font-size: 10.5pt; }
 .toc .n { font-family: Helvetica, Arial, sans-serif; font-weight: 700; display: inline-block; min-width: 24mm; }
+
+.assessments{page-break-before:auto;margin-top:26pt;border-top:2pt solid #222;padding-top:12pt}
+.assessments h2{font-size:13pt;margin:0 0 8pt}
+.assessments h3{font-size:11pt;margin:14pt 0 6pt;border-bottom:0.5pt solid #999;padding-bottom:2pt}
+.assessment-note{font-size:9pt;line-height:1.35;margin:0 0 12pt;padding:6pt 8pt;background:#f2f2f2}
+.item{margin:0 0 10pt;page-break-inside:avoid}
+.item .prompt{margin:0 0 4pt}
+.choices{list-style:none;margin:0 0 4pt;padding-left:14pt}
+.choices li{margin:0 0 1pt}
+.choices li.key{font-weight:700}
+.rationale{margin:0 0 0 14pt;font-size:9.5pt;color:#333}
 `;
 
 function frontMatter(course, lessonTitles) {
@@ -179,6 +210,46 @@ function frontMatter(course, lessonTitles) {
 `;
 }
 
+/*
+ * The assessments as the student meets them, printed after the assignment they belong to.
+ *
+ * The correct answer and its explanation ARE printed here, and that is a deliberate difference
+ * from what the browser serves: the portal withholds the explanation until the student answers,
+ * because a check the student can read the answer to is not a check. A printed volume cannot
+ * withhold anything, so rather than pretend, it prints the whole item and says plainly what the
+ * student is served instead. A reviewer needs to see the item, the key and the reasoning; a
+ * student working from paper has already answered.
+ */
+function renderAssessments(bank, assignmentId) {
+  const lesson = bank?.assignments?.[assignmentId];
+  if (!lesson) throw new Error(`${assignmentId}: no assessment bank entry`);
+
+  const item = (entry, number) => {
+    const choices = entry.choices
+      .map((choice, index) => `<li${index === entry.correctChoice ? ' class="key"' : ""}>${inline(`${LETTERS[index]}. ${choice}`)}</li>`)
+      .join("");
+    return `<div class="item"><p class="prompt"><strong>${number}.</strong> ${inline(entry.prompt)}</p>
+      <ol class="choices">${choices}</ol>
+      <p class="rationale"><strong>Answer: ${LETTERS[entry.correctChoice]}.</strong> ${inline(entry.rationale)}</p></div>`;
+  };
+
+  const applied = Array.isArray(lesson.applied) ? lesson.applied : [lesson.applied];
+  return `<section class="assessments">
+  <h2>Assessment materials for this assignment</h2>
+  <p class="assessment-note">These are the assessment items the student is served inside this assignment.
+  <strong>In the course itself the student sees only the question and the answer choices</strong> — the correct
+  answer and the explanation are withheld until the item has been answered, and the explanation for a failed
+  engagement check is withheld while the student works the remediation set. They are printed here in full because
+  this volume is submitted for review, and a reviewer is entitled to the item, the key and the reasoning.</p>
+  <h3>Applied exercise — 100% required to complete the assignment</h3>
+  ${applied.map((entry, index) => item(entry, index + 1)).join("")}
+  <h3>Engagement check — ${lesson.engagement.length} items, ${"80"}% required</h3>
+  ${lesson.engagement.map((entry, index) => item(entry, index + 1)).join("")}
+  <h3>Remediation set — served only after a failed engagement check</h3>
+  ${lesson.remediation.map((entry, index) => item(entry, index + 1)).join("")}
+</section>`;
+}
+
 fs.mkdirSync(outDir, { recursive: true });
 const summary = [];
 
@@ -190,14 +261,17 @@ for (const course of COURSES) {
     throw new Error(`${course.title}: found ${files.length} lessons, expected ${COURSE_DESIGN.lessonAssignments}`);
   }
 
+  const bank = (await import(path.join(root, ASSESSMENT_BANKS[course.courseId]))).default;
+
   const titles = [];
   const bodies = [];
-  for (const file of files) {
+  for (const [index, file] of files.entries()) {
     const md = fs.readFileSync(path.join(curriculumDir, file), "utf8");
     /* The "## ..." immediately after the "# ..." line is the assignment's subject. */
     const subject = md.match(/^#\s+.*\n+##\s+(.+)$/m);
     titles.push(subject ? subject[1].trim() : file);
     bodies.push(renderMarkdown(md));
+    bodies.push(renderAssessments(bank, `assignment-${String(index + 1).padStart(2, "0")}`));
   }
 
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8">

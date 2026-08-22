@@ -195,7 +195,52 @@ This is why "is it a fixture?" is an incomplete question. **A fixture as between
 >
 > **What the licensee should have done six weeks earlier:** named (a), (c), (d), (e), and (f) in the agreement, and asked at intake whether the seller intended to take anything. **Five of the seven disputes would not exist.**
 
-### 2.8 Checkpoint
+### 2.9 The affixation statute, in its own words
+
+Section 2.2 gave the fixture tests as the courts apply them. Underneath those tests is a statutory definition, and it is worth reading because it explains why the tests take the shape they do.
+
+**Civil Code § 660** defines affixation:
+
+> *"A thing is deemed to be affixed to land when it is attached to it **by roots**, as in the case of trees, vines, or shrubs; or **imbedded in it**, as in the case of walls; or **permanently resting upon it**, as in the case of buildings; or **permanently attached to what is thus permanent**, as by means of cement, plaster, nails, bolts, or screws; except that for the purposes of sale, emblements, industrial growing crops and things attached to or forming part of the land, which are agreed to be severed before sale or under the contract of sale, shall be treated as goods and be governed by the provisions of the title of this code regulating the sales of goods."*
+
+**Four modes of attachment, and they are not equivalent.**
+
+**By roots.** Trees, vines and shrubs are affixed because they are rooted. Nothing about intention or adaptation enters. A mature avocado tree is part of the land in the same way a foundation is.
+
+**Imbedded in it.** Walls, footings, buried tanks, in-ground pools. The thing is *in* the land rather than *on* it.
+
+**Permanently resting upon it.** Buildings. Note the word doing the work: *permanently*. A structure that rests on the land by its own weight and is meant to stay is affixed; a shipping container parked on a lot for a season is not, and neither is a mobile home that remains registered as a vehicle.
+
+**Permanently attached to what is thus permanent** — *"as by means of cement, plaster, nails, bolts, or screws."* This is the fourth and by far the most litigated mode, and it is the statutory root of the "method of attachment" test in Section 2.2. The Legislature named the fasteners: **cement, plaster, nails, bolts, screws.** A thing bolted to a building that is itself affixed becomes affixed by that bolting.
+
+**The list of fasteners also tells a licensee what is *not* in it.** A hook, a bracket that slides out, a plug in a socket, a hose on a bibb — none is cement, plaster, a nail, a bolt or a screw. This is why a chandelier hard-wired into a ceiling box is usually a fixture and a floor lamp is not, and why the answer to "is the television a fixture" depends on whether the mount is screwed to the wall and whether the television comes off it.
+
+### 2.10 The emblements carve-out, and why it matters at closing
+
+The tail of § 660 is a genuine exception rather than an elaboration, and it is easy to read past:
+
+> *"except that **for the purposes of sale**, emblements, industrial growing crops and things attached to or forming part of the land, **which are agreed to be severed before sale or under the contract of sale**, shall be treated as goods…"*
+
+**Three conditions, all required.** The exception operates *for the purposes of sale*; it covers *emblements and industrial growing crops* and things forming part of the land; and it applies only where severance *is agreed* before the sale or in the contract of sale.
+
+**Emblements** are annual crops produced by cultivation — the harvest a tenant farmer plants and expects to reap. **Industrial growing crops** covers the commercial equivalent. The Legislature's judgment is that a growing crop which the parties have agreed will be cut and taken is economically a good, not land, and should be governed by the law of sales.
+
+**What this means in practice, for a licensee who will mostly sell houses.** The carve-out is narrow and it is agreement-driven. It does not make crops personal property in general; it makes them personal property *when the parties have agreed to sever them in connection with the sale.* A seller who wants to take the roses cannot rely on § 660's tail, because roses are not emblements and nothing was agreed. **The instrument that solves the rose problem is the purchase agreement, not the Civil Code**, which is the same conclusion Section 6.1 reaches by a different road.
+
+**A worked application.**
+
+> A ten-acre parcel sells in June. Standing on it: an almond orchard in its eighth year; forty rows of strawberries the seller planted in March and intends to harvest in July; a steel-frame packing shed bolted to a concrete slab; and a portable irrigation pump on skids, connected by a quick-release coupling.
+
+| Item | § 660 analysis | Result |
+|---|---|---|
+| Almond trees | Attached **by roots** | Real property. Not emblements — a perennial orchard is not an annual crop. |
+| Strawberries | Annual cultivated crop; **emblements** if severance is agreed in the contract of sale | Personal property **only if the contract says so**. Silence leaves them with the land. |
+| Packing shed | **Bolted** to a slab that is itself imbedded | Real property under the fourth mode. |
+| Irrigation pump | On skids, quick-release coupling — none of the named fasteners | Personal property. |
+
+**The professional lesson is the same one Section 2.8 draws:** the analysis is quick and the dispute is expensive, so the item goes in the contract. § 660 tells you who wins an argument nobody should be having.
+
+### 2.11 Checkpoint
 
 You should be able to apply the tests to an item, say which test is doing the work, and explain how the relationship of the parties changes the outcome.
 
@@ -384,7 +429,55 @@ Section 5.3 supplies the intake questions and Section 5.6 supplies what the lice
 
 > **The recurring theme of this lesson.** These are technical subjects the licensee does not practice in. **What he is responsible for is noticing that the transaction has walked into one**, and the noticing is done with a checklist of questions rather than with knowledge.
 
-### 5.8 Checkpoint
+### 5.9 Water rights, in the categories California actually uses
+
+Section 5.2 introduced water as an appurtenance. California's water law is a hybrid — it recognises two systems that developed separately and then had to live together — and a licensee should know the categories well enough to recognise which one a client's question falls into.
+
+| Right | Attaches to | In outline |
+|---|---|---|
+| **Riparian** | Land **bordering** a natural watercourse | A right, correlative with other riparian owners, to reasonable use on the riparian land. Not lost by non-use |
+| **Appropriative** | A person, by taking and using water | Priority runs by seniority — first in time, first in right. May be lost by non-use |
+| **Overlying (groundwater)** | Land **above** an aquifer | Analogous to riparian: reasonable use on the overlying land, correlative with other overlying owners |
+| **Prescriptive** | Use adverse to another's right for the statutory period | Contested, fact-specific, and litigated |
+| **Pueblo** | Certain cities of Spanish or Mexican origin | Municipal; not a private landowner's concern |
+
+**Two organising ideas make the table intelligible.**
+
+**Riparian and overlying rights come with the land; appropriative rights come with the taking.** A riparian owner has a right because of where the land is. An appropriator has a right because of what they did and when they started.
+
+**Everything in California is subject to reasonable and beneficial use.** No right in the table is a right to waste water, and the scope of every one of them is measured by what use is reasonable — which is why California water rights are less like a quantity and more like a share of a variable resource.
+
+**This course does not read the water statutes or the constitutional provision in their own text.** No quantity, priority date, permitting requirement, adjudication procedure or reporting obligation in this assignment comes from them. **Groundwater in particular is now governed by a substantial statutory scheme of basin management that is outside this course entirely.**
+
+### 5.10 What a licensee must recognise about water and minerals
+
+**The questions that mean "stop and route this."**
+
+**"Does the property have water?"** For a rural parcel this is the most consequential question in the transaction, and it has three separate parts: is there a **legal right** to the water; is there a **physical source** — a well, a district connection; and is the water **potable and adequate**, which is a testing question. A property can have any one without the others.
+
+**"Is the well permitted, and what does it produce?"** A well permit, a well completion report, and a pump test are documents. A seller's recollection is not.
+
+**"Is there a water district, and what does it require?"** A will-serve letter, connection fees, and availability are district questions with district answers.
+
+**"Who owns the minerals?"** Mineral rights are frequently severed in California, often long ago, and a severance appears in the title chain rather than on the land. **A severed mineral estate may carry a right of surface access**, which is a materially different thing to own next to a house than a mere royalty interest.
+
+**"What is that pipeline easement?"** Oil, gas and water conveyance easements are common in parts of the state, and their terms — width, access, the right to enter and maintain — are in the recorded instrument, not in the one-line title exception.
+
+**A worked situation.**
+
+> A buyer is purchasing 12 acres with a house and an old orchard. The seller says the property has "riparian rights on the creek and a good well." The preliminary report shows a mineral reservation from 1948 in favour of an oil company, and an exception for "water rights, as reserved in the deed recorded [date]."
+
+**Three problems, and the seller has described none of them.**
+
+**Water rights may have been reserved away.** The exception in the report says a prior deed reserved water rights. **If they were reserved, the buyer is not acquiring them**, and "riparian rights on the creek" describes what the land would have if nobody had reserved them.
+
+**The 1948 mineral reservation is live until it is examined.** The question is not whether oil will be drilled; it is **whether the mineral owner has a right of surface entry**, which is answered by reading the 1948 instrument.
+
+**The well is a separate question from the water right.** A well can be lawful and productive on land whose surface water rights were reserved, or unlawful and unpermitted on land with excellent rights.
+
+**What the licensee does:** obtain both recorded instruments, give them to the buyer, and say in writing that water and mineral rights are legal questions for counsel and that well adequacy is a testing question for a qualified professional. **What the licensee does not do is repeat the seller's summary**, which is how a licensee ends up having represented that a buyer was acquiring rights they were not.
+
+### 5.11 Checkpoint
 
 You should be able to list the water questions you would ask on a rural listing and explain what a severed mineral interest means for a buyer.
 
@@ -462,7 +555,45 @@ Fixture disputes are among the most preventable problems in a transaction, and t
 
 **And the limit, restated.** Section 6.6 applies to all of it. **When a dispute arises anyway, the licensee identifies the issue and declines to declare who is right.** The classification of a contested item is a legal question, and a licensee who announces the answer at the walkthrough has given legal advice under pressure to a party who will rely on it.
 
-### 6.8 Checkpoint
+### 6.9 A fixture schedule, and how to build one
+
+Sections 6.1 to 6.4 explained why fixture disputes happen and how the contract prevents them. This section is the working method: how a licensee actually walks a property and produces a schedule that survives a closing.
+
+**Walk the property with the list in hand, not from memory.** The recurring items, in the order a walk-through encounters them:
+
+| Location | Items that generate disputes | Usual § 660 answer | What to do |
+|---|---|---|---|
+| Exterior | Satellite dish, mounted address plaque, playground equipment, potted trees, fountain | Bolted or footed items are affixed; pots are not | List anything the seller wants, by name |
+| Entry and halls | Mirrors, coat hooks, security keypad, doorbell camera | Screwed items affixed; adhesive items argued | Name the doorbell camera specifically — it is the most common single dispute |
+| Kitchen | Range, refrigerator, dishwasher, microwave, wine cooler, pot rack | Built-in affixed; freestanding not | Say which appliances convey, by appliance |
+| Living areas | Wall-mounted television and its bracket, speakers, shelving, curtains, rods, blinds | Brackets and rods affixed; the television and the curtains are personal | **Bracket and television are usually separated** — name both |
+| Bedrooms | Closet organizers, ceiling fans, wall safes | Screwed and wired items affixed | Wall safes: name the safe and whether it is emptied |
+| Garage and utility | Cabinets, workbench, water softener, generator, EV charger, shelving | Bolted items affixed; leased equipment is neither party's to convey | **Ask whether any of it is leased** |
+| Systems | Solar array, propane tank, alarm panel, irrigation controller | Usually affixed, but ownership is the question | Leased or financed equipment needs its own line |
+
+**The three questions that resolve most items before the fixture tests are needed.**
+
+1. **Is it attached by cement, plaster, nails, bolts, or screws?** If yes, it is presumptively real property and the seller must ask for it in writing to take it.
+2. **Is it leased, financed, or subject to a service contract?** A leased solar array or propane tank is not the seller's to convey, and the transfer of the agreement is a separate transaction that will not happen by itself.
+3. **Does the seller want it?** If so, it comes out of the schedule now and not in a phone call the week of closing.
+
+### 6.10 Two worked disputes, and what each cost
+
+> **Dispute one — the mounted television.** The listing photographs show a large television on a living-room wall. The purchase agreement is silent. At final walk-through the television is gone and so is the bracket, leaving four anchor holes and torn drywall.
+
+**The television is personal property.** It rests in a bracket and is not attached by any means § 660 names. **The bracket is a fixture**: it is screwed to the wall, which is imbedded and therefore permanent, and screws are on the statutory list. Removing the bracket removed a fixture, and doing it badly caused damage.
+
+**What the parties will argue about is not the law.** They will argue about the photographs, because the buyer will say the television was shown and therefore included. **The photograph is not the contract**, and a buyer relying on a listing image has relied on marketing rather than on an agreement — which is precisely the failure Assignment 01 Section 6.2 describes. The cost of the dispute exceeded the value of the bracket within the first hour.
+
+> **Dispute two — the leased solar array.** A seller's disclosure describes "solar panels — owned." Escrow closes. Two months later the buyer receives an invoice from a solar finance company and discovers a twenty-year lease with an escalating payment and a UCC filing against the property.
+
+**This is a different order of problem, and it is not a fixture dispute at all.** The panels are affixed and would pass with the land if the seller owned them. The seller did not own them. **A licensee cannot verify ownership of a solar array by looking at it**, and the two documents that would have surfaced the lease — the preliminary report, which would show the financing statement, and a direct question in writing to the seller — both existed and were available.
+
+**The habit that prevents it:** treat every solar array, propane tank, water-treatment system, security system and EV charger as **presumptively encumbered until a document says otherwise**, and put the question in writing. A seller who answers "owned" in writing has made a representation; a seller who was never asked has not.
+
+**Both disputes share a shape.** Neither turned on a difficult legal question — § 660 answers both in a sentence. Both turned on a question nobody asked in time. **The fixture law is easy and the fixture schedule is the work.**
+
+### 6.11 Checkpoint
 
 You should be able to run the intake conversation, produce the naming list for a specific property, and state the correct sequence when an item is missing at the walkthrough.
 

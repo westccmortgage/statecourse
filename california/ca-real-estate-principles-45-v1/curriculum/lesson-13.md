@@ -85,7 +85,50 @@ Two features from Lesson 05, restated: the tax lien is **involuntary and specifi
 
 Continued nonpayment leads ultimately to sale of the property under the applicable process.
 
-### 1.8 Checkpoint
+### 1.9 Proposition 13 in operation, and the reassessment question
+
+Section 1.2 described the assessed value system. The feature that makes California distinctive — and that generates the questions licensees are actually asked — is that assessment is anchored to acquisition rather than to the market.
+
+**The mechanics, in outline.** A property's assessed value is set at its value when acquired, and thereafter may rise by no more than a small annual inflation factor. The base tax rate is one per cent of assessed value, plus voter-approved indebtedness and direct assessments. **A change in ownership re-anchors the assessment to current market value.**
+
+**This course does not read the change-in-ownership statutes in their own text**, and no exclusion, deadline, claim form or filing period below is taken from them. What follows is the shape of the question and the direction to send it.
+
+**Two consequences a licensee meets constantly.**
+
+**Neighbouring properties pay wildly different taxes.** Two identical houses on the same street may carry annual bills differing by a factor of five, because one has been in a family since 1978 and the other sold last year. **The seller's tax bill therefore tells a buyer almost nothing about their own.**
+
+**The buyer's tax will be based on the purchase price, not the seller's assessment.** This is the single most common closing surprise in California residential practice, and it is entirely preventable.
+
+> **Worked.** A property sells for $1,150,000. The seller's current assessed value is $214,000 and their annual tax bill is $2,690. What should the buyer expect?
+
+New base year value ≈ **$1,150,000**.
+At approximately 1.1% (base rate plus typical local indebtedness and assessments): **≈ $12,650 a year** — roughly **$1,054 a month**, against the seller's $224.
+
+**The difference is $9,960 a year, and it belongs in the buyer's qualifying conversation** long before it appears on a supplemental tax bill.
+
+### 1.10 Supplemental bills, and the exclusions to route
+
+**The supplemental assessment** is the mechanism that reconciles the two. When ownership changes, the assessor issues a **supplemental bill** for the difference between the old assessment and the new, prorated from the date of change to the end of the fiscal year. **It arrives separately from the regular bill, months after closing, and is not part of any escrow proration.**
+
+**Two failures follow from not explaining it.**
+
+**A buyer with an impound account assumes taxes are handled.** The impound was set from the seller's figure; the supplemental bill is not in it; the buyer receives a demand for several thousand dollars they had no reason to expect.
+
+**A buyer treats it as an error.** It looks like a duplicate bill for a property already taxed, and buyers routinely set it aside.
+
+**The one-sentence disclosure that prevents both:** *"Your property tax will be recalculated from your purchase price, and you will receive a separate supplemental bill some months after closing for the difference — it is not included in your escrow or your impound account."* **In writing, at contract, not at closing.**
+
+**And the exclusions.** California law provides exclusions from reassessment for certain transfers — among them some transfers between parents and children, some transfers between spouses, and, for eligible homeowners meeting age or disability criteria, the transfer of a base year value to a replacement home. **Each has conditions, value limits and filing deadlines, and each has been substantially amended in recent years.**
+
+**A licensee's obligations here are precisely three, and none of them is to explain the rules.**
+
+**Know the exclusions exist**, so that a seller mentioning "I'm buying a smaller place, I'm over 55" is recognised as raising a real question rather than making conversation.
+
+**Say so, and say who answers it** — the county assessor's office and a tax professional.
+
+**Never estimate an exclusion's availability**, because the conditions are specific, the deadlines are unforgiving, and a buyer who relied on a licensee's optimism and missed a filing period has lost a benefit that cannot be recovered.
+
+### 1.11 Checkpoint
 
 You should be able to explain why two neighbors pay different taxes, state what a licensee may say about a buyer's future tax bill, and describe what a supplemental assessment is.
 
@@ -309,7 +352,71 @@ A **pro forma** is a projected operating statement. It is built from assumptions
 
 A seller's pro forma showing full occupancy at above-market rents is not evidence of income. It is a set of assumptions, and it should be presented as one.
 
-### 4.9 Checkpoint
+### 4.10 Leverage worked in both directions
+
+Section 4.2 introduced leverage. It is the most misunderstood idea in real estate investment because it is taught with the upside example and met in the downside one.
+
+> **The property.** Purchase $1,000,000. NOI $58,000. Cash purchase versus a $700,000 loan at 6% interest-only ($42,000 a year).
+
+| | All cash | 70% leveraged |
+|---|---:|---:|
+| Cash invested | $1,000,000 | $300,000 |
+| NOI | $58,000 | $58,000 |
+| Debt service | — | (42,000) |
+| Cash flow before tax | $58,000 | $16,000 |
+| **Cash-on-cash return** | **5.80%** | **5.33%** |
+
+**Leverage made the return worse here**, because the borrowing rate (6%) exceeds the unleveraged return (5.8%). **That is the whole rule: leverage is positive when the cost of debt is below the property's unleveraged return, and negative when it is above.**
+
+**Now add appreciation, which is where leverage earns its reputation.** Suppose the property is worth $1,100,000 after two years.
+
+| | All cash | 70% leveraged |
+|---|---:|---:|
+| Equity gain | $100,000 | $100,000 |
+| On cash invested | $1,000,000 | $300,000 |
+| **Return on the gain** | **10.0%** | **33.3%** |
+
+**The same $100,000 of appreciation is three times the return** because it sits on a third of the cash.
+
+**And now the direction nobody models.** Suppose the property is worth $900,000 instead.
+
+| | All cash | 70% leveraged |
+|---|---:|---:|
+| Equity loss | ($100,000) | ($100,000) |
+| Equity remaining | $900,000 | **$200,000** |
+| **Proportion of invested cash lost** | **10%** | **33.3%** |
+
+**Leverage is symmetrical and nobody's spreadsheet shows the second table.** A 10 per cent decline takes a third of the leveraged investor's capital. A 30 per cent decline takes all of it.
+
+### 4.11 Debt coverage, break-even, and the two numbers a lender watches
+
+**Debt coverage ratio.**
+
+> **DCR = NOI ÷ annual debt service**
+
+At $58,000 over $42,000: **1.38**. Lenders commonly want 1.20 or better on income property, and the reason is not arithmetic elegance — **it is the margin between the income and the payment when a tenant leaves.**
+
+**Break-even occupancy.**
+
+> **Break-even = (operating expenses + debt service) ÷ potential gross income**
+
+> Potential gross income $96,000; operating expenses $38,000; debt service $42,000.
+
+($38,000 + $42,000) ÷ $96,000 = **83.3%**.
+
+**The property must stay 83.3 per cent occupied to cover its costs.** In a submarket whose historical occupancy is 88 per cent, that is a five-point margin. In one whose occupancy has ranged from 79 to 94 per cent, **the property has spent time below break-even and will again.**
+
+**This is the single most useful number a licensee can compute for an investor client**, because it converts an abstract worry about vacancy into a specific figure that can be compared with the submarket's actual history.
+
+**A worked comparison, and the question it should raise.**
+
+> Two properties, both priced at a 5.5% capitalization rate. Property A: break-even occupancy 76%, submarket historical range 85–95%. Property B: break-even occupancy 89%, submarket historical range 82–96%.
+
+**The cap rates are identical and the properties are not comparable.** Property B has been below its break-even within living memory of the submarket; Property A has nine points of margin at its worst. **Nothing in the cap rate says this**, and an investor comparing on cap rate alone is comparing two numbers that happen to match.
+
+**What the licensee supplies** — per Assignment 13 Section 6.3 — is the analysis, the sources and the risks. **The decision is the client's, and the tax treatment of any of it is a question for their accountant.**
+
+### 4.12 Checkpoint
 
 You should be able to demonstrate positive and negative leverage numerically, explain how leverage amplifies loss, and state what a pro forma must be labeled.
 
@@ -405,7 +512,62 @@ From Lesson 10, with the direction rule restated because it is what students rev
 
 > **The reasonableness check catches nearly all of them.** A residential lot of 0.55 acres is plausible; 550 acres is not. A commission of $42,000 on an $840,000 sale is plausible; $420,000 is not. **Before reporting a number, ask whether it is the right order of magnitude.**
 
-### 5.8 Checkpoint
+### 5.9 The documentary transfer tax, and how it is actually computed
+
+Section 5.6 listed the closing costs a seller meets. The documentary transfer tax is the one with a statutory rate, and a licensee who can compute it will be asked to.
+
+**Revenue and Taxation Code § 11911** authorises it. The county rate is set by subdivision (a), and subdivision (b) lets a city within such a county impose its own:
+
+> *"(b) The legislative body of any city which is within a county which has imposed a tax pursuant to subdivision (a) may, by an ordinance adopted pursuant to this part, impose, on each deed, instrument, or writing by which any lands, tenements, or other realty sold within the city shall be granted, assigned, transferred, or otherwise conveyed to, or vested in, the purchaser or purchasers … when the **consideration or value of the interest or property conveyed (exclusive of the value of any lien or encumbrance remaining thereon at the time of sale) exceeds one hundred dollars ($100)**, a tax at the rate of **one-half the amount specified in subdivision (a)** for each **five hundred dollars ($500) or fractional part thereof**."*
+
+And subdivision (c) resolves the overlap:
+
+> *"A **credit shall be allowed** against the tax imposed by a county ordinance … for the amount of any tax due to any city by reason of an ordinance adopted pursuant to subdivision (b). **No credit shall be allowed** against any county tax for a city tax which is not in conformity with this part."*
+
+**Four mechanics to hold onto.**
+
+**The base is consideration or value, less any lien or encumbrance remaining at the time of sale.** The parenthetical matters: where a buyer takes title *subject to* an existing loan that stays on the property, the balance of that loan comes out of the base. In an ordinary sale where the seller's loan is paid off, nothing remains and the base is the full price.
+
+**The unit is $500 or any fractional part.** The tax is not proportional — it rounds **up** to the next whole $500. A price of $500,001 is taxed on 1,001 units, not 1,000.2.
+
+**A city tax reduces the county tax rather than adding to it**, by the § 11911(c) credit — provided the city ordinance conforms. Some California cities impose substantial transfer taxes under separate charter authority, and those are not always creditable in the same way. **A licensee should never quote a city transfer tax from memory**; the escrow holder has the current schedule.
+
+**The $100 threshold means nominal transfers are outside it.** A deed for consideration of $100 or less is not taxed under this subdivision, which is why many intra-family and correcting deeds recite a nominal figure.
+
+### 5.10 Worked transfer tax and proration problems
+
+> **Problem one.** A property in an unincorporated area of a county sells for $837,400. The county rate under § 11911(a) is $0.55 per $500 or fractional part. What is the documentary transfer tax?
+
+Units: $837,400 ÷ 500 = 1,674.8 → **round up to 1,675** units.
+Tax: 1,675 × $0.55 = **$921.25**.
+
+**The rounding is the whole problem.** A candidate who computes 1,674.8 × $0.55 = $921.14 has missed the *"or fractional part thereof"* and produced an answer that is wrong by eleven cents and, more importantly, wrong in method.
+
+> **Problem two.** Same county. A buyer purchases for $600,000 and **takes title subject to** an existing first deed of trust with a balance of $355,000 that remains on the property. What is the tax?
+
+Base: $600,000 − $355,000 = **$245,000** — the encumbrance remaining at the time of sale comes out.
+Units: 245,000 ÷ 500 = **490** exactly.
+Tax: 490 × $0.55 = **$269.50**.
+
+**Compare the two.** The same $600,000 property, sold in the ordinary way with the loan paid off, would be taxed on the full $600,000: 1,200 units × $0.55 = **$660**. **The structure of the deal changed the tax by $390.50**, which is why the parenthetical in § 11911 is not decorative.
+
+> **Problem three — proration.** Escrow closes on **17 September**. Annual property taxes of $9,240 are paid by the seller for the full tax year beginning **1 July**. Using a 360-day year with 30-day months, and charging the day of closing to the buyer, what is the proration?
+
+Seller's period: 1 July to 16 September = July (30) + August (30) + 16 = **76 days**.
+Daily rate: $9,240 ÷ 360 = **$25.6667**.
+Seller's share: 76 × $25.6667 = **$1,950.67**.
+Buyer's share (the reimbursement to the seller): $9,240 − $1,950.67 = **$7,289.33**.
+
+**Credit the seller $7,289.33 and debit the buyer the same.** The seller paid the whole year and is being reimbursed for the part they will not own.
+
+**Two conventions that must be stated before any proration is computed**, because different escrow holders use different ones and the answer changes:
+
+- **360-day banker's year with 30-day months**, or a **365-day year with actual days**. The two differ by roughly 1.4 per cent on a full year.
+- **Who is charged the day of closing.** Charging it to the buyer, as above, is common; charging it to the seller shifts one day's worth.
+
+**A licensee's obligation is not to compute the escrow holder's numbers** — escrow does that, and the closing statement governs. **It is to be able to read the statement and notice when a figure is wrong by a month**, which happens, and which nobody catches if the licensee treats the closing statement as arithmetic performed by someone else.
+
+### 5.11 Checkpoint
 
 You should be able to work a commission problem backward, compute net to seller correctly, prorate in both directions, and apply a reasonableness check.
 
