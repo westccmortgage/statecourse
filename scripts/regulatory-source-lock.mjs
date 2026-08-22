@@ -51,10 +51,33 @@ const args = process.argv.slice(2);
 const OFFLINE = args.includes("--offline");
 const AS_JSON = args.includes("--json");
 
+/*
+ * TWO QUESTIONS, NOT ONE
+ *
+ * An earlier version of this file answered "LOCKED" or "BROKEN" and folded two different
+ * questions into that one word.
+ *
+ *   THE LOCK asks whether the sources are still there and whether anything we say goes further
+ *   than what they say. A source that has moved, a reading that has gone stale, a filing
+ *   document that claims an approval nobody issued — each of those is a defect, and the lock
+ *   FAILS.
+ *
+ *   DRIFT asks whether a document we hold has changed since we recorded it. A new hash on a
+ *   Department PDF is not by itself a change in the law. The Department reissues forms for
+ *   reasons that have nothing to do with what they require: a corrected address, a new
+ *   accessibility tag, a re-export. Calling that a broken lock trains a reader to dismiss the
+ *   word, and the next time it means something they will dismiss it too.
+ *
+ * So drift is reported separately and says what it actually is: this document is not the one
+ * we read, and these are the claims taken from it that must be read again. It blocks a filing
+ * — nothing goes out on an unreviewed revision — but it is not the lock failing.
+ */
 const findings = [];
+const drift = [];
 const fail = (id, message) => findings.push({ id, status: "fail", message });
 const pass = (id, message) => findings.push({ id, status: "pass", message });
 const skip = (id, message) => findings.push({ id, status: "skip", message });
+const drifted = (record) => drift.push(record);
 
 /* ── 1. the sources are still where we read them ──────────────────────────────────────── */
 
@@ -94,26 +117,72 @@ if (OFFLINE) {
   else pass("source-urls", `${AUTHORITIES.length} authority URLs reachable`);
 }
 
-/* ── 2. the forms on disk are the forms recorded ──────────────────────────────────────── */
+/* ── 2. the documents on disk are the documents recorded ──────────────────────────────── */
 
 {
-  const drifted = [];
+  /*
+   * A missing form is a lock failure: we cannot file on a document we do not have, and we
+   * cannot know what it says. A CHANGED form is drift: we have a document, it is not the one
+   * whose claims are recorded, and the answer is to read it rather than to update a hash.
+   */
+  const absent = [];
   for (const form of DRE_FORMS) {
     const full = path.join(root, form.file);
     if (!fs.existsSync(full)) {
-      drifted.push(`${form.id}: ${form.file} is missing`);
+      absent.push(`${form.id}: ${form.file} is missing`);
       continue;
     }
     const digest = crypto.createHash("sha256").update(fs.readFileSync(full)).digest("hex").slice(0, 16);
     if (digest !== form.sha256Prefix) {
-      drifted.push(
-        `${form.id} (${form.revision}) has changed on disk: recorded ${form.sha256Prefix}, found ${digest}. ` +
-          "Re-read the form, confirm its printed revision, and update the manifest — do not update the hash alone.",
-      );
+      drifted({
+        sourceId: form.id,
+        kind: "form",
+        title: form.title,
+        revision: form.revision,
+        canonicalUrl: form.url,
+        recordedHash: form.sha256Prefix,
+        foundHash: digest,
+        claimsToReRead: [],
+        action:
+          "Read the document again and confirm the revision printed on its face. If what it requires is unchanged, record the new hash with the date it was re-read. Never update the hash alone.",
+      });
     }
   }
-  if (drifted.length > 0) fail("form-revisions", `Department forms have drifted:\n    ${drifted.join("\n    ")}`);
-  else pass("form-revisions", `${DRE_FORMS.length} forms match their recorded revision and content`);
+  if (absent.length > 0) fail("form-presence", `Department forms are missing:\n    ${absent.join("\n    ")}`);
+  else pass("form-presence", `${DRE_FORMS.length} Department forms are held`);
+}
+
+{
+  /* The same question for the authorities that have a local copy. An authority served as
+     generated HTML has none, and says so rather than being assumed unchanged. */
+  const hashed = AUTHORITIES.filter((entry) => entry.localCopy && entry.contentHash);
+  for (const entry of hashed) {
+    const full = path.join(root, entry.localCopy);
+    if (!fs.existsSync(full)) {
+      fail("authority-copy", `${entry.id}: the copy at ${entry.localCopy} is missing`);
+      continue;
+    }
+    const digest = crypto.createHash("sha256").update(fs.readFileSync(full)).digest("hex").slice(0, 16);
+    if (digest !== entry.contentHash) {
+      drifted({
+        sourceId: entry.id,
+        kind: "authority",
+        title: entry.title,
+        revision: entry.revision,
+        canonicalUrl: entry.url,
+        recordedHash: entry.contentHash,
+        foundHash: digest,
+        claimsToReRead: entry.materialClaims.map((claim) => ({ id: claim.id, claim: claim.claim, reliedOnBy: claim.reliedOnBy })),
+        action:
+          "Read the passage again. If the claim below still stands word for word, record the new hash and the date. If it does not, everything listed under reliedOnBy is wrong until it is corrected.",
+      });
+    }
+  }
+  const unhashed = AUTHORITIES.filter((entry) => !entry.contentHash);
+  pass(
+    "authority-copies",
+    `${hashed.length} authorities hashed against a local copy; ${unhashed.length} have none and are checked by re-reading`,
+  );
 }
 
 /* ── 3. nothing has gone stale ─────────────────────────────────────────────────────────── */
@@ -218,9 +287,23 @@ const submissionFiles = () => {
 
 const failed = findings.filter((finding) => finding.status === "fail");
 const skipped = findings.filter((finding) => finding.status === "skip");
+const LOCK = failed.length === 0 ? "PASS" : "FAIL";
+const DRIFT = drift.length === 0 ? "NONE" : drift.map((entry) => entry.sourceId).join(", ");
 
 if (AS_JSON) {
-  console.log(JSON.stringify({ status: "REGULATORY_SOURCE_LOCK", manifest: MANIFEST_VERSION, locked: failed.length === 0, findings }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        manifest: MANIFEST_VERSION,
+        REGULATORY_SOURCE_LOCK: LOCK,
+        REGULATORY_SOURCE_DRIFT: DRIFT,
+        findings,
+        drift,
+      },
+      null,
+      2,
+    ),
+  );
 } else {
   console.log(`\n  REGULATORY_SOURCE_LOCK — manifest ${MANIFEST_VERSION}\n`);
   for (const finding of findings) {
@@ -229,8 +312,30 @@ if (AS_JSON) {
     for (const line of finding.message.split("\n").slice(1)) console.log(`        ${line}`);
   }
   console.log("");
-  console.log(failed.length === 0 ? "  REGULATORY_SOURCE_LOCK: LOCKED\n" : `  REGULATORY_SOURCE_LOCK: BROKEN by ${failed.length} finding(s)\n`);
+  console.log(`  REGULATORY_SOURCE_LOCK: ${LOCK}`);
+  if (LOCK === "FAIL") {
+    for (const finding of failed) console.log(`    ${finding.id}: ${finding.message.split("\n")[0]}`);
+  }
+  console.log(`  REGULATORY_SOURCE_DRIFT: ${DRIFT}`);
+  for (const entry of drift) {
+    console.log("");
+    console.log(`    ${entry.sourceId} — ${entry.title}${entry.revision ? ` (${entry.revision})` : ""}`);
+    console.log(`      recorded ${entry.recordedHash}, found ${entry.foundHash}`);
+    if (entry.canonicalUrl) console.log(`      ${entry.canonicalUrl}`);
+    console.log(`      ${entry.action}`);
+    for (const claim of entry.claimsToReRead) {
+      console.log(`      claim ${claim.id}: ${claim.claim}`);
+      console.log(`        relied on by: ${claim.reliedOnBy.join(", ")}`);
+    }
+  }
+  console.log("");
   if (skipped.length > 0) console.log(`  ${skipped.length} check(s) skipped and NOT counted as passing.\n`);
+  if (DRIFT !== "NONE") {
+    console.log("  Drift is not the lock failing. It means a document we hold is not the one whose claims");
+    console.log("  are recorded, and nothing is filed on it until it has been read again.\n");
+  }
 }
 
-process.exit(failed.length === 0 ? 0 : 1);
+/* Either one blocks a filing. They are reported apart because they mean different things and
+   call for different work, not because one of them is advisory. */
+process.exit(failed.length === 0 && drift.length === 0 ? 0 : 1);

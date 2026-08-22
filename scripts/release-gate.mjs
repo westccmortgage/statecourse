@@ -48,6 +48,7 @@ import {
   packageAllocation,
 } from "../config/course-catalog.mjs";
 import { REFUND_POLICY_CLAUSES, REFUND_POLICY_TEXT, REFUND_POLICY_VERSION } from "../lib/refund-policy.mjs";
+import { outstanding, submissionStatus } from "../lib/deliverable-status.mjs";
 import { CALENDAR_COVERED_YEARS, unresolvedHolidaysFor } from "../config/california/business-day-calendar.mjs";
 import { HANDLED_STRIPE_EVENTS } from "../lib/stripe-contract.mjs";
 import {
@@ -56,6 +57,7 @@ import {
   BPPE_EXEMPTION,
   DRE_FORMS,
   FORBIDDEN_CLAIMS,
+  FIRST_FILING,
   MANIFEST_VERSION,
   PROGRAMS,
   SCHOOL,
@@ -394,29 +396,41 @@ check("submission", 13, "RE 336 is the Department's own form, one per course, co
   return `3 forms, provider ${PROVIDER_LEGAL_NAME}, sponsor id blank`;
 });
 
-check("submission", 14, "the regulatory source lock is locked", () => {
+check("submission", 14, "the sources are where we read them and unchanged since", () => {
   /* Run offline here: the gate must be runnable without egress, and the lock reports a skipped
      network check as skipped rather than as a pass. The online run is a separate command and
      is what must be green before a packet is printed. */
+  let report = null;
   try {
-    execFileSync("node", ["scripts/regulatory-source-lock.mjs", "--offline", "--json"], {
+    const stdout = execFileSync("node", ["scripts/regulatory-source-lock.mjs", "--offline", "--json"], {
       cwd: root,
       encoding: "utf8",
       stdio: ["ignore", "pipe", "pipe"],
     });
+    report = JSON.parse(stdout);
   } catch (error) {
-    const report = (() => {
-      try {
-        return JSON.parse(error.stdout);
-      } catch {
-        return null;
-      }
-    })();
-    const failures = report?.findings?.filter((finding) => finding.status === "fail") ?? [];
-    require_(false, failures.map((finding) => `${finding.id}: ${finding.message.split("\n")[0]}`).join("; ") || error.message);
+    try {
+      report = JSON.parse(error.stdout);
+    } catch {
+      require_(false, error.message.split("\n")[0]);
+    }
   }
+  /* The lock and the drift report are two answers, and this check needs both. A source that
+     moved and a source that changed are different problems; either one stops a filing. */
+  require_(
+    report.REGULATORY_SOURCE_LOCK === "PASS",
+    `REGULATORY_SOURCE_LOCK: FAIL — ${report.findings
+      .filter((finding) => finding.status === "fail")
+      .map((finding) => `${finding.id}: ${finding.message.split("\n")[0]}`)
+      .join("; ")}`,
+  );
+  require_(
+    report.REGULATORY_SOURCE_DRIFT === "NONE",
+    `REGULATORY_SOURCE_DRIFT: ${report.REGULATORY_SOURCE_DRIFT} — a held document is not the one whose ` +
+      "claims are recorded. Read it again; do not update the hash alone.",
+  );
   require_(staleAuthorities().length === 0, `authorities need re-reading: ${staleAuthorities().join(", ")}`);
-  return `manifest ${MANIFEST_VERSION}, ${AUTHORITIES.length} authorities, ${DRE_FORMS.length} forms`;
+  return `LOCK PASS, DRIFT NONE — ${AUTHORITIES.length} authorities, ${DRE_FORMS.length} forms, manifest ${MANIFEST_VERSION}`;
 });
 
 check("submission", 15, "every regulated fact has one home and the manifest is it", () => {
@@ -662,18 +676,53 @@ check("platform", 24, "the whole test suite passes", () => {
 
 /* ═════════════════════════════════════ report ══════════════════════════════════════════ */
 
+/*
+ * WHAT "GRANTED" MEANS, AND WHAT IT USED TO MEAN
+ *
+ * It used to mean that every check passed. That is a weaker statement than it reads as, and
+ * this gate printed GRANTED on it while the SB 1495 traceability, the review credentials and
+ * the signature sheets did not exist at all. Every check passed. None of them was about the
+ * things that were missing, because a deliverable nobody wrote a check for cannot fail one.
+ *
+ * So the deliverable ledger comes first. A gate is GRANTED only when every mandatory
+ * deliverable it is responsible for EXISTS, and every check over what exists PASSES. Checks
+ * verify; they do not enumerate. The manifest enumerates.
+ *
+ * Only the submission gate carries deliverables. The platform gate is about behaviour rather
+ * than about an envelope, and behaviour is exactly what a check is good at.
+ */
 const GATES = {
-  submission: { key: "CA_DRE_SUBMISSION_READY", of: (result) => result.gate === "submission" },
-  platform: { key: "CA_PLATFORM_PRODUCTION_READY", of: (result) => result.gate === "platform" },
+  submission: {
+    key: "CA_DRE_SUBMISSION_READY",
+    of: (result) => result.gate === "submission",
+    deliverables: () => submissionStatus(),
+  },
+  platform: {
+    key: "CA_PLATFORM_PRODUCTION_READY",
+    of: (result) => result.gate === "platform",
+    deliverables: () => [],
+  },
 };
 
 const summary = Object.fromEntries(
   Object.entries(GATES).map(([name, gate]) => {
     const checks = results.filter(gate.of);
-    return [name, { key: gate.key, checks, blocked: checks.filter((check) => check.status === "block") }];
+    const deliverables = gate.deliverables();
+    const missing = outstanding(deliverables);
+    return [
+      name,
+      {
+        key: gate.key,
+        checks,
+        blocked: checks.filter((check) => check.status === "block"),
+        deliverables,
+        missing,
+        granted: checks.every((check) => check.status === "pass") && missing.length === 0,
+      },
+    ];
   }),
 );
-const aggregateGranted = Object.values(summary).every((gate) => gate.blocked.length === 0);
+const aggregateGranted = Object.values(summary).every((gate) => gate.granted);
 
 const shown =
   GATE === "all" ? Object.keys(summary) : Object.keys(summary).filter((name) => name === GATE);
@@ -681,17 +730,36 @@ if (shown.length === 0) {
   console.error(`unknown gate "${GATE}" — expected submission, platform or all`);
   process.exit(2);
 }
-const blockedShown = shown.flatMap((name) => summary[name].blocked);
+const shownGranted = shown.every((name) => summary[name].granted);
+
+const PROGRAM_COUNT = PROGRAMS.length;
+const owned = (missing, owner) => missing.filter((group) => group.owner === owner);
+/* Naming three courses when all three are outstanding says less than saying so. */
+const scopeOf = (group) =>
+  group.programs.length === 0
+    ? "filed once"
+    : group.programs.length === PROGRAM_COUNT
+      ? `all ${PROGRAM_COUNT} courses`
+      : group.programs.join(", ");
 
 if (AS_JSON) {
   console.log(
     JSON.stringify(
       {
         aggregate: { key: "STATECOURSE_CA_READY", granted: aggregateGranted },
+        firstFiling: FIRST_FILING.title,
         gates: Object.fromEntries(
           shown.map((name) => [
             summary[name].key,
-            { granted: summary[name].blocked.length === 0, checks: summary[name].checks },
+            {
+              granted: summary[name].granted,
+              checks: summary[name].checks,
+              deliverables: {
+                required: summary[name].deliverables.length,
+                satisfied: summary[name].deliverables.filter((entry) => entry.satisfied).length,
+                outstanding: summary[name].missing,
+              },
+            },
           ]),
         ),
       },
@@ -703,17 +771,44 @@ if (AS_JSON) {
   for (const name of shown) {
     const gate = summary[name];
     const width = Math.max(...gate.checks.map((check) => check.title.length));
-    console.log(`\n  ${gate.key} — ${gate.checks.length} checks\n`);
+    const ledger =
+      gate.deliverables.length > 0
+        ? ` over ${gate.deliverables.filter((entry) => entry.satisfied).length}/${gate.deliverables.length} deliverables`
+        : "";
+    console.log(`\n  ${gate.key} — ${gate.checks.length} checks${ledger}\n`);
     for (const check of gate.checks) {
       const mark = check.status === "pass" ? "PASS " : "BLOCK";
       console.log(`  ${mark}  ${String(check.id).padStart(2)}. ${check.title.padEnd(width)}  ${check.detail ?? ""}`);
     }
     console.log("");
-    if (gate.blocked.length === 0) {
+    if (gate.granted) {
       console.log(`  ${gate.key}: GRANTED`);
     } else {
-      console.log(`  ${gate.key}: BLOCKED by ${gate.blocked.length} check(s)`);
-      for (const check of gate.blocked) console.log(`    ${check.id}. ${check.title}\n       ${check.detail}`);
+      console.log(`  ${gate.key}: BLOCKED`);
+      if (gate.blocked.length > 0) {
+        console.log(`\n    ${gate.blocked.length} check(s) failed:`);
+        for (const check of gate.blocked) console.log(`      ${check.id}. ${check.title}\n         ${check.detail}`);
+      }
+      if (gate.missing.length > 0) {
+        const shortfall = gate.deliverables.filter((entry) => !entry.satisfied).length;
+        console.log(`\n    ${shortfall} of ${gate.deliverables.length} mandatory deliverables do not exist:`);
+        const build = owned(gate.missing, "build");
+        const human = owned(gate.missing, "human");
+        if (build.length > 0) {
+          console.log("\n      to be built:");
+          for (const group of build) {
+            console.log(`        ${group.section.padEnd(4)} ${group.label} — ${scopeOf(group)}`);
+            for (const reason of group.reasons.slice(0, 3)) console.log(`             ${reason}`);
+            if (group.reasons.length > 3) console.log(`             ... and ${group.reasons.length - 3} more`);
+          }
+        }
+        if (human.length > 0) {
+          console.log("\n      awaiting a signature, a letter, or an envelope — no amount of code finishes these:");
+          for (const group of human) {
+            console.log(`        ${group.section.padEnd(4)} ${group.label} — ${scopeOf(group)}`);
+          }
+        }
+      }
     }
   }
   if (GATE === "all") {
@@ -723,6 +818,8 @@ if (AS_JSON) {
         ? "  STATECOURSE_CA_READY: GRANTED — both gates pass.\n"
         : "  STATECOURSE_CA_READY: BLOCKED — the aggregate requires both gates.\n",
     );
+    console.log(`  First filing: ${FIRST_FILING.title} only. DRE advises a first-time applicant to`);
+    console.log("  submit one course, so that a deficiency is found once rather than three times.\n");
     /* Neither gate authorises selling a course. The Commissioner does. */
     console.log(
       "  Neither gate authorises offering these courses as qualifying education. Commissioner\n" +
@@ -733,4 +830,4 @@ if (AS_JSON) {
   }
 }
 
-process.exit(blockedShown.length === 0 ? 0 : 1);
+process.exit(shownGranted ? 0 : 1);
