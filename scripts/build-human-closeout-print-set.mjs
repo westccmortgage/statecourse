@@ -227,8 +227,23 @@ for (const program of PROGRAMS) {
   const name = slug(program.title);
 
   for (const [form, label, pen] of [
-    ["RE306", "RE 306 course approval application", "Sign and date both page 3 blocks — primary contact and owner/authorized school official."],
-    ["RE336", "RE 336 instructor certification", "Sign both signature blocks; write the city, day, month and year of signing."],
+    /*
+     * RE 306 takes THREE signatures, not two. Item 11 on page 1 has its own signature field, and
+     * the Course Provider Handbook says of it: "Enter the Primary and Secondary contact
+     * information for those who are responsible for the sponsor/school. Contact(s) original
+     * signature is required." An earlier version of this index named only the two on page 3 and
+     * would have sent an application out one signature short.
+     */
+    [
+      "RE306",
+      "RE 306 course approval application",
+      "THREE signatures. Page 1 item 11, the primary contact's own line. Then page 3, both blocks — primary contact AND owner/authorized school official — each signed and dated.",
+    ],
+    [
+      "RE336",
+      "RE 336 instructor certification",
+      "Two signatures. As primary contact: sign, date, and write the city and state you are actually signing in. As instructor: sign, date, answer the licence question at the very bottom and write the licence number.",
+    ],
   ]) {
     const source = path.join(generated, `${form}-${name}.pdf`);
     if (!fs.existsSync(source)) {
@@ -275,6 +290,11 @@ need a pen and the letters that need somebody else's letterhead. **Nothing in th
 signed, dated, or certified**, and every signature field on every form is deliberately empty: the
 Course Provider Handbook states that digital and rubber-stamp signatures are not accepted.
 
+**Count the signatures before you start.** For the first filing alone that is **five**: three on
+RE 306 — page 1 item 11, and both blocks on page 3 — and two on RE 336. An earlier version of this
+sheet named only the two on page 3 of RE 306 and would have sent the application out one signature
+short.
+
 **File ${FIRST_FILING.title} first.** DRE advises a first-time applicant to submit one course rather
 than three, so that a deficiency is found once instead of repeated across every course filed at
 once. The other two sets are here so the work can be done in one sitting, not so they can be mailed
@@ -292,12 +312,19 @@ ${byProgram
 
 ## In order
 
-### 1. The two certifications on RE 306, page 3
+### 1. RE 306 — three signatures, not two
 
-Both blocks are filled with the printed name and title and **both must be signed**. They are two
-separate certifications — one names who the Department corresponds with, the other is the person
-certifying the application on behalf of the applicant. Leaving the second blank because the same
-person signed the first is a deficiency.
+**Page 1, item 11.** The primary contact's row carries its own signature field. The Course Provider
+Handbook, on item 11: *"Enter the Primary and Secondary contact information for those who are
+responsible for the sponsor/school. **Contact(s) original signature is required.**"* The two
+secondary rows stay blank — there is one contact, and a second line would read as a second person.
+
+**Page 3, both blocks.** The primary contact block and the owner/authorized school official block
+are two separate certifications: one names who the Department corresponds with, the other is the
+person certifying the application on behalf of the applicant. Both are filled with the printed name
+and title and **both must be signed and dated**. The Handbook is explicit that all sections of page
+3 are completed *"even if the Primary Contact and the Owner/Authorized School Official are the same
+individual"*.
 
 The **title is \`${INSTRUCTOR.contactTitle}\` in both**, and it is the same title RE 336 carries.
 Two forms in one packet giving the same person two titles is a deficiency of its own.
@@ -305,10 +332,25 @@ Two forms in one packet giving the same person two titles is a deficiency of its
 **Item 1A, the sponsor number, is blank and stays blank.** The form prints a fixed \`S\`; the digits
 after it are the Department's to assign on approval. Do not write in that field.
 
-### 2. RE 336, one per course
+### 2. RE 336 — and the three things on it that are not the applicant's to fill
 
-Sign both signature blocks and complete the city, day, month and year of signing. The **four-digit
-sponsor ID field stays empty** for the same reason as item 1A.
+Sign both blocks and date both.
+
+**Write the city and state where you are actually signing.** The declaration reads *"I, ___, declare
+under penalty of perjury that the foregoing is true and correct. Signed in the City of ___, State of
+___, this ___ day of ___, 20___."* The place and the date are one clause about one act. An earlier
+version of this form arrived with \`Redondo Beach\` and \`California\` already printed and the date
+blank — half a fact about an event that had not happened, and false on its face if the form were
+signed anywhere else, under penalty of perjury. They are blank now.
+
+**Answer the licence question at the very bottom yourself, as the instructor.** The form addresses
+it to the instructor in its own words, and the Handbook says the primary contact completes
+everything on RE 336 *"except for the instructor's signature and the real estate license status
+question on the very bottom of the form"*. Tick **YES** and write **\`${INSTRUCTOR.dreBrokerLicense}\`**.
+Holding both roles does not transfer one role's answer to the other: the question is put to the
+instructor, and the instructor answers it.
+
+**The four-digit sponsor ID stays empty** for the same reason as item 1A.
 
 The primary contact name reads **\`${INSTRUCTOR.nameLastFirst}\`** on RE 336 and
 **\`${INSTRUCTOR.name}\`** on RE 306. That is not an inconsistency: RE 336 prints

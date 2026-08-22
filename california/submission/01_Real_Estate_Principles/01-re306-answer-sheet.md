@@ -61,6 +61,28 @@
 
 **Both boxes are checked, and the reason is on the form's own terms.** The examination is delivered through the https://statecourse.com platform — non-printable, non-downloadable, and timing out at 180 minutes, as RE 303 requires of an internet examination — **and** it is administered and supervised in person by a school-designated proctor, as **Regulation Regulation 3000(a)(2)(B)** requires of a correspondence course. Checking only one would misdescribe the arrangement. See continuation sheet 15B.
 
+### Items 15A and 15B, reconciled against what a student actually does
+
+**This reconciliation was done against the platform rather than against the intention.** The question worth asking is whether an internet-delivered course should be answering 15A as anything other than `INTERNET`, and whether an internet-delivered examination should be answering 15B as anything other than `INTERNET`. Both answers survive, and here is why.
+
+**15A. The Course Provider Handbook settles the taxonomy in one sentence.** On item 15A it says: *"Select if the course will be Live or Correspondence. It cannot be both. … (**All courses which are not presented live are considered correspondence course including online and mobile device app courses.**)"*
+
+So an internet course **is** a correspondence course to the Department. This is not a formality: **RE 303 uses the compound term throughout** — *"Final examinations for a **correspondence/internet course** may be administered by a proctor designated by the Sponsor…"* and *"A participant shall present one of the following forms of photo identification immediately before the administration of the final examination for a **correspondence/internet offering**."* The proctor rule and the photo-identification rule this packet relies on attach to that compound. `CORRESPONDENCE AND INTERNET` is the row that names the arrangement the regulation names. Answering `INTERNET` alone would claim something narrower than the course is and would sit oddly beside a proctor requirement whose authority is the correspondence rule.
+
+The course is also correspondence in structure, not only by classification: **15 separate lesson assignments**, which is what Regulation 3000(a)(1) requires of a correspondence course.
+
+**15B. The examination is offered both ways, and both are facts about the platform.**
+
+| What the form asks | What the student experiences | Where that is evidenced |
+|---|---|---|
+| **In person proctored** | The proctor examines the student's photo identification immediately before the examination begins, confirms the environment, **remains present and supervising for the entire examination period**, does not leave the student unattended, records every interruption, and signs a certification afterwards | `final-exam-proctor-instructions.md`, and the `final_exam_authorizations` record that must reach `authorized` before the examination opens |
+| **Internet** | The examination runs in the browser on https://statecourse.com. It cannot be printed or downloaded, is delivered one item at a time so no form exists as a file on the student side, and times out at 180 minutes | RE 303, *Internet Courses & Final Examinations* |
+| ☐ Mobile device app | Not offered | — |
+
+**There is no remote or webcam proctoring anywhere in this platform.** The proctor is a person in the room. A reviewer signing in to the student review account will find the examination gated behind an identity-and-proctor authorization that no student action can satisfy.
+
+**The Handbook phrases 15B as "in person **or** via the internet/mobile device app", and the form says "CHECK APPROPRIATE" rather than "check one".** The two describe different things — one the supervision, the other the medium — and this examination genuinely has both. Answering `INTERNET` alone would leave the form silent on in-person proctoring while the proctor instructions, the General Information Page and the student examination instructions in the same packet all state it, and a reviewer comparing the form against the packet would find the mismatch. Answering `IN PERSON PROCTORED` alone would be false: nothing is handed to the student on paper. Continuation sheet 15B states the arrangement in full.
+
 ### Item 16 — publications to be used in the course
 
 | Publication title | Author | Date of publication | Edition |

@@ -11,6 +11,18 @@
  * Signature and date fields are deliberately left empty. Both the primary contact and the
  * instructor sign by hand after review; nothing here signs or certifies anything.
  *
+ * So are three other things, each for its own reason:
+ *
+ *   The city and state of execution, because they are established at the moment of signing in
+ *   the same clause as the date. A pre-printed city is a false declaration the moment the form
+ *   is signed anywhere else, and it is made under penalty of perjury.
+ *
+ *   The real estate license status question at the very bottom, because the Course Provider
+ *   Handbook reserves it — with the instructor's signature — to the instructor. The form asks
+ *   the instructor directly; the primary contact does not answer for them.
+ *
+ *   The four-digit sponsor ID, because DRE assigns it.
+ *
  * Output: california/dre-sources/generated/RE336-<course-slug>.pdf
  * Run: node scripts/fill-re336.mjs
  */
@@ -54,10 +66,19 @@ const slug = (title) => title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(
 
 for (const course of data.courses) {
   const values = {
-    /* Perjury declaration block */
+    /*
+     * The perjury declaration reads: "I, ___, declare under penalty of perjury that the foregoing
+     * is true and correct. Signed in the City of ___, State of ___, this ___ day of ___, 20___."
+     *
+     * The declarant's name is a fact known now. The CITY AND STATE ARE NOT — they are established
+     * at the moment of signing, in the same clause and by the same act as the date. Pre-printing
+     * "Redondo Beach" while leaving the date blank asserted half a fact about an event that had
+     * not happened, and if the form were signed in Burbank the declaration would be false on its
+     * face, under penalty of perjury. All five go in together, by hand.
+     */
     "Name": data.primaryContact.declarantName,
-    "City a": data.primaryContact.city,
-    "State a": data.primaryContact.state,
+    "City a": "",
+    "State a": "",
     /* Primary contact block */
     "PRINTED OR TYPED NAME OF PRIMARY CONTACT": data.primaryContact.name,
     "TITLE OF PRIMARY CONTACT": data.primaryContact.title,
@@ -69,12 +90,23 @@ for (const course of data.courses) {
     "State": data.provider.state,
     "Zip Code": data.provider.zip,
     "Course title": course,
-    /* Instructor block */
+    /*
+     * Instructor block. The printed name is the primary contact's to enter.
+     *
+     * The line below it is not. The form addresses it to the instructor in its own words —
+     * "INSTRUCTOR: DO YOU NOW OR HAVE YOU EVER HELD A CALIFORNIA REAL ESTATE LICENSE? NO / YES.
+     * IF YES, LICENSE # ___" — and the Course Provider Handbook (Rev. 01/2026) says the primary
+     * contact completes all of the information on RE 336 "except for the instructor's signature
+     * and the real estate license status question on the very bottom of the form".
+     *
+     * So the answer and the licence number are left blank for the instructor to give. That the
+     * same person happens to hold both roles here does not transfer one role's answer to the
+     * other: the question is put to the instructor, and the instructor answers it.
+     */
     "INSTRUCTOR NAME": data.instructor.name,
-    "CalBRE LICENSE NUMBER": data.instructor.licenseNumber,
-    /* Checkbox on-states are name objects, so they must carry the leading slash. */
-    "insturctor licensced? yes": data.instructor.heldCaliforniaLicense ? "/Yes" : "/Off",
-    "insturctor licensced? No": data.instructor.heldCaliforniaLicense ? "/Off" : "/Yes"
+    "CalBRE LICENSE NUMBER": "",
+    "insturctor licensced? yes": "/Off",
+    "insturctor licensced? No": "/Off"
     /* day / Month / Year / DATE / DATE 2 / Signature1 / Signature2 stay empty on purpose. */
   };
   const out = path.join(outDir, `RE336-${slug(course)}.pdf`);
@@ -82,4 +114,9 @@ for (const course of data.courses) {
   console.log(`wrote ${path.relative(root, out)}  (${course})`);
 }
 
-console.log("\nSignature, date, city-of-signing day/month/year fields are blank by design - sign by hand.");
+console.log("\nLeft blank by design, to be completed by hand at signing:");
+console.log("  - both signatures and both dates");
+console.log("  - the city and state of execution, which the perjury declaration ties to the act of signing");
+console.log("  - the instructor's real estate license question and licence number at the very bottom,");
+console.log("    which the Course Provider Handbook reserves to the instructor");
+console.log("  - the four-digit DRE sponsor ID, which the Department assigns");
