@@ -2,7 +2,7 @@
 
 **Course:** Real Estate Principles (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 **SECURE DOCUMENT — INSTRUCTOR AND REGULATOR USE ONLY. NOT FOR DISTRIBUTION TO STUDENTS.**
@@ -885,16 +885,16 @@ D. $17,125
 >
 > **Found in the course material at:** Assignment 13 (Taxation, investment, and real estate mathematics), section 5.2
 
-### 78. A seller wants $400,000 net after paying a 6% commission and $6,000 in other costs. What sale price is required, to the nearest dollar?
+### 78. A seller's pro forma for an apartment building carries the property tax line straight from the seller's current tax bill. Why does that single line matter more than its size suggests?
 
-A. $424,000
-B. $406,000
-C. $430,000
-**D. $431,915**
+A. The buyer inherits the seller's assessment, so the figure is correct until the county revalues the property on its own schedule.
+B. The line is small relative to the other operating expenses, so an error in it is immaterial to the analysis.
+C. Property taxes are excluded from net operating income, so the error changes cash flow but leaves the valuation untouched.
+**D. The property is reassessed on transfer, so the buyer's actual tax expense is understated, and the understatement flows through net operating income directly into value.**
 
-> **Correct answer: D.** Price = ($400,000 + $6,000) ÷ (1 − 0.06) = $406,000 ÷ 0.94 = $431,915. Adding 6% to the net rather than dividing by the complement is the error the distractors represent.
+> **Correct answer: D.** Reassessment on transfer is the point. A tax figure taken from the seller understates the buyer's expense, sometimes by a large multiple, and because the expense reduces net operating income the error does not stay in the expense column — it capitalizes into the value conclusion.
 >
-> **Found in the course material at:** Assignment 13 (Taxation, investment, and real estate mathematics), section 5.3
+> **Found in the course material at:** Assignment 13 (Taxation, investment, and real estate mathematics), section 6.4
 
 ### 79. Which practice most directly engages the protection for familial status?
 
@@ -995,16 +995,16 @@ D. Conversion, which is the same offense as commingling.
 >
 > **Found in the course material at:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 3.3
 
-### 88. A trust account reconciliation reveals a shortage. What is the correct response?
+### 88. An audit of a management practice finds two owners whose management agreements were never signed. How should that finding be characterized?
 
-**A. The broker corrects it immediately from broker funds and documents the correction.**
-B. The shortage is carried until the responsible party makes it good.
-C. The shortage is offset against other beneficiaries' balances in the same account.
-D. The account is closed and the remaining funds distributed pro rata.
+**A. As a structural defect of the same order as commingling: the scope of authority is undefined, the compensation is unenforceable, and the handling of funds is not authorized in writing.**
+B. As a filing oversight, cured by obtaining signatures now and dating them to the start of management.
+C. As immaterial, because the owners accepted monthly statements and thereby ratified the arrangement.
+D. As a defect only if and when an owner disputes an action the manager has taken.
 
-> **Correct answer: A.** A shortage is corrected immediately by the broker and documented. Carrying it or covering it from other beneficiaries' balances uses one person's money for another's benefit.
+> **Correct answer: A.** A manager acting without a signed agreement is acting without established authority. That is not a paperwork gap: every decision is arguable, the compensation cannot be enforced, and the handling of the owner's funds rests on nothing written. Dating a signature to a time before it was made would convert a documented gap into a falsified document.
 >
-> **Found in the course material at:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 3.5
+> **Found in the course material at:** Assignment 15 (Leasing, property management, license law, and integrated transaction), section 2.3
 
 ### 89. In a residential sale, which describes the relationship between the seller's disclosure and the licensee's own inspection disclosure?
 

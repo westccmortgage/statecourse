@@ -2,7 +2,7 @@
 
 **Course:** Mortgage Loan Brokering and Lending (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 **SECURE DOCUMENT — INSTRUCTOR AND REGULATOR USE ONLY. NOT FOR DISTRIBUTION TO STUDENTS.**
@@ -115,16 +115,16 @@ D. $25,750.00
 >
 > **Found in the course material at:** Assignment 02 (Money, interest, notes, and loan mathematics), section 1.2
 
-### 8. A payoff of $412,000 at 6.25% is computed on a 365-day basis. What is the per diem interest?
+### 8. A $920,000 purchase is planned with an 80 percent loan. The appraisal comes in at $900,000. What follows?
 
-**A. $70.55**
-B. $2,145.83
-C. $71.53
-D. $25,750.00
+**A. The lender lends against $900,000, so 80 percent is $720,000 — $16,000 less than planned — and the borrower brings the difference, renegotiates, or cancels if a contingency permits.**
+B. The loan is denied, because an appraisal below the contract price does not support the transaction.
+C. The purchase price adjusts to the appraised value, because the loan program requires the two to agree.
+D. The borrower is entitled to a second appraisal, which the lender must order on request.
 
-> **Correct answer: A.** $412,000 × 0.0625 ÷ 365 = $70.55. A 360-day basis produces the second figure, which is why a payoff demand states its basis and its good-through date.
+> **Correct answer: A.** Lenders lend against the lower of appraised value and purchase price. Eighty percent of $900,000 is $720,000 rather than the $736,000 planned. Nothing adjusts automatically: the price does not move by operation of any program, the loan is not denied, and no one is entitled to a second appraisal as of right.
 >
-> **Found in the course material at:** Assignment 02 (Money, interest, notes, and loan mathematics), section 1.4
+> **Found in the course material at:** Assignment 02 (Money, interest, notes, and loan mathematics), section 5.2
 
 ### 9. How does an amortized payment split early in the loan term?
 
@@ -280,16 +280,16 @@ D. Term, amortization schedule, and payment factor.
 >
 > **Found in the course material at:** Assignment 04 (Mortgage markets, sources, and loan products), section 4.2
 
-### 23. What may a licensee never do with rates?
+### 23. A file carries a business-purpose certification signed by the borrower, while the occupancy line and a lease dated before the application both point the other way. What has the certification established?
 
-A. Tell a borrower the rate is not locked until the lock is confirmed in writing.
-B. Direct a borrower to the lender for a current quote.
-C. Explain what an index and a margin are.
-**D. Predict where rates are going, or tell a borrower he can simply refinance later if the payment rises.**
+A. The business purpose unless the lender objects to the classification before closing.
+B. That the consumer protections are waived, the borrower having elected the classification himself.
+C. The business purpose conclusively, because the borrower signed the certification.
+**D. Nothing about the fact. It records the borrower's statement; the purpose is determined by the actual use and the surrounding facts.**
 
-> **Correct answer: D.** A prediction stated as a plan is the single most damaging sentence available in a financing conversation. The other three are accurate and within scope.
+> **Correct answer: D.** A signature records a statement rather than establishing a fact. A file assembled around a certification that its own contents contradict is visible to any examiner who reads the occupancy line and the lease date. Treating a consumer loan as business purpose on the strength of a certification is the more common error and the more serious one, because it strips protections the borrower was entitled to.
 >
-> **Found in the course material at:** Assignment 04 (Mortgage markets, sources, and loan products), section 4.4
+> **Found in the course material at:** Assignment 04 (Mortgage markets, sources, and loan products), section 5.5
 
 ### 24. What does presenting products on a common basis require?
 

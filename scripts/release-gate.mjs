@@ -498,7 +498,33 @@ check("submission", 16, "the academic controls are the regulation's numbers, enf
   return `45h / 15 assignments / 420h elapsed / 2 per 35 days / 365 days, enforced in the database`;
 });
 
-check("submission", 17, "nothing anywhere offers these courses as approved qualifying education", () => {
+check("submission", 17, "the examinations are sourced, distinct, traceable and complete", () => {
+  /* The four gates RE 303's four sentences imply, run in full. scripts/exam-integrity.mjs is
+     where each is defined; this is the gate refusing to grant while any of them is broken.
+     Both defects it found on its first run were real: eighteen examination documents named a
+     provider that is not the entity, and eight topics were taught in the lessons and examined
+     on neither form. */
+  let report = null;
+  try {
+    report = JSON.parse(
+      execFileSync("node", ["scripts/exam-integrity.mjs", "--json"], { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }),
+    );
+  } catch (error) {
+    try {
+      report = JSON.parse(error.stdout);
+    } catch {
+      require_(false, error.message.split("\n")[0]);
+    }
+  }
+  const broken = Object.entries(report.gates).filter(([, gate]) => !gate.pass);
+  require_(
+    broken.length === 0,
+    broken.map(([name, gate]) => `${name}: ${gate.failures[0]}${gate.failures.length > 1 ? ` (and ${gate.failures.length - 1} more)` : ""}`).join("; "),
+  );
+  return `${report.counts.items} items, ${report.counts.forms} forms, ${report.counts.topics} topics — all ${Object.keys(report.gates).length} gates pass`;
+});
+
+check("submission", 18, "nothing anywhere offers these courses as approved qualifying education", () => {
   /*
    * The Commissioner approves a private-school course before it may be offered as qualifying
    * education. Until then the site may describe, price and test the courses, and may not
@@ -580,7 +606,7 @@ check("submission", 17, "nothing anywhere offers these courses as approved quali
 
 /* ═══════════════════════════ CA_PLATFORM_PRODUCTION_READY ═════════════════════════════ */
 
-check("platform", 18, "Stripe carries the same facts the database does", () => {
+check("platform", 19, "Stripe carries the same facts the database does", () => {
   const checkout = read("netlify/functions/create-checkout.mjs");
   const contract = read("lib/stripe-contract.mjs");
   require_(/asStripeParams\(metadata\)/.test(checkout), "the Checkout Session does not carry the metadata");
@@ -592,7 +618,7 @@ check("platform", 18, "Stripe carries the same facts the database does", () => {
   return "session and intent both carry policy, package, allocation and amount";
 });
 
-check("platform", 19, "every Stripe event the system depends on is handled", () => {
+check("platform", 20, "every Stripe event the system depends on is handled", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   require_(webhook, "the webhook is missing");
   for (const eventName of HANDLED_STRIPE_EVENTS) {
@@ -602,7 +628,7 @@ check("platform", 19, "every Stripe event the system depends on is handled", () 
   return `${HANDLED_STRIPE_EVENTS.length} events handled`;
 });
 
-check("platform", 20, "a repeated webhook cannot create a second enrollment or a second refund", () => {
+check("platform", 21, "a repeated webhook cannot create a second enrollment or a second refund", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/001_payments_enrollment.sql");
   require_(/claim_stripe_event/.test(webhook), "events are not claimed");
@@ -613,7 +639,7 @@ check("platform", 20, "a repeated webhook cannot create a second enrollment or a
   return "idempotent at the event, the enrollment and the refund";
 });
 
-check("platform", 21, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
+check("platform", 22, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/009_stripe_integrity.sql");
   require_(migration, "the Stripe integrity migration is missing");
@@ -625,7 +651,7 @@ check("platform", 21, "Stripe and the database are reconciled, and a disagreemen
   return "intent, charge, currency, amount and status compared";
 });
 
-check("platform", 22, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
+check("platform", 23, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/010_external_refunds.sql");
   require_(migration, "external refunds are not handled");
@@ -650,7 +676,7 @@ check("platform", 22, "a refund made in the Stripe Dashboard is recorded, classi
   return "recorded at Stripe's amount, assessed separately, surfaced when it exceeds the entitlement";
 });
 
-check("platform", 23, "package fan-out creates one enrollment per component", () => {
+check("platform", 24, "package fan-out creates one enrollment per component", () => {
   const migration = read("database/011_package_enrollments.sql");
   require_(migration, "package fan-out is not implemented: a package purchase would create one enrollment, not one per component");
   require_(/create or replace function finalize_paid_package/.test(migration), "there is no package finalisation path");
@@ -660,7 +686,7 @@ check("platform", 23, "package fan-out creates one enrollment per component", ()
   return "one purchase, one allocation row per component, one enrollment per component";
 });
 
-check("platform", 24, "the whole test suite passes", () => {
+check("platform", 25, "the whole test suite passes", () => {
   const output = execFileSync("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((name) => name.endsWith(".test.mjs")).map((name) => `tests/${name}`)], {
     cwd: root,
     encoding: "utf8",

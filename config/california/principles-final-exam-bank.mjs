@@ -805,17 +805,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "$685,000 × 0.05 = $34,250 total; ÷ 2 = $17,125 to the listing brokerage; × 0.60 = $10,275. The distractors stop at the brokerage share, take 60% of the full commission, and take 1% of the price." },
-  { source: { assignment: "assignment-13", section: "5.3" },
-    prompt: "A seller wants $400,000 net after paying a 6% commission and $6,000 in other costs. What sale price is required, to the nearest dollar?",
+  /* Assignment 13 topic 6 — investment comparison and documentation. Added when the coverage gate found the topic taught and examined on neither form. */
+  { source: { assignment: "assignment-13", section: "6.4" },
+    prompt: "A seller's pro forma for an apartment building carries the property tax line straight from the seller's current tax bill. Why does that single line matter more than its size suggests?",
     choices: [
-      "$431,915",
-      "$430,000",
-      "$424,000",
-      "$406,000"
+      "The property is reassessed on transfer, so the buyer's actual tax expense is understated, and the understatement flows through net operating income directly into value.",
+      "Property taxes are excluded from net operating income, so the error changes cash flow but leaves the valuation untouched.",
+      "The buyer inherits the seller's assessment, so the figure is correct until the county revalues the property on its own schedule.",
+      "The line is small relative to the other operating expenses, so an error in it is immaterial to the analysis."
     ],
     correctChoice: 0,
-    rationale: "Price = ($400,000 + $6,000) ÷ (1 − 0.06) = $406,000 ÷ 0.94 = $431,915. Adding 6% to the net rather than dividing by the complement is the error the distractors represent." },
-  /* Assignment 14 — Fair housing, civil rights, and consumer protection */
+    rationale: "Reassessment on transfer is the point. A tax figure taken from the seller understates the buyer's expense, sometimes by a large multiple, and because the expense reduces net operating income the error does not stay in the expense column \u2014 it capitalizes into the value conclusion." },
   { source: { assignment: "assignment-14", section: "1.3" },
     prompt: "Which practice most directly engages the protection for familial status?",
     choices: [
@@ -907,16 +907,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Placing trust funds in an operating account is commingling regardless of internal records. Conversion is using the funds for the broker's own purposes, which is a further and distinct wrong." },
-  { source: { assignment: "assignment-15", section: "3.5" },
-    prompt: "A trust account reconciliation reveals a shortage. What is the correct response?",
+  /* Assignment 15 topic 2 — property management agreements. Added by the coverage gate. */
+  { source: { assignment: "assignment-15", section: "2.3" },
+    prompt: "An audit of a management practice finds two owners whose management agreements were never signed. How should that finding be characterized?",
     choices: [
-      "The broker corrects it immediately from broker funds and documents the correction.",
-      "The shortage is carried until the responsible party makes it good.",
-      "The shortage is offset against other beneficiaries' balances in the same account.",
-      "The account is closed and the remaining funds distributed pro rata."
+      "As a structural defect of the same order as commingling: the scope of authority is undefined, the compensation is unenforceable, and the handling of funds is not authorized in writing.",
+      "As a filing oversight, cured by obtaining signatures now and dating them to the start of management.",
+      "As immaterial, because the owners accepted monthly statements and thereby ratified the arrangement.",
+      "As a defect only if and when an owner disputes an action the manager has taken."
     ],
     correctChoice: 0,
-    rationale: "A shortage is corrected immediately by the broker and documented. Carrying it or covering it from other beneficiaries' balances uses one person's money for another's benefit." },
+    rationale: "A manager acting without a signed agreement is acting without established authority. That is not a paperwork gap: every decision is arguable, the compensation cannot be enforced, and the handling of the owner's funds rests on nothing written. Dating a signature to a time before it was made would convert a documented gap into a falsified document." },
   { source: { assignment: "assignment-15", section: "5.2" },
     prompt: "In a residential sale, which describes the relationship between the seller's disclosure and the licensee's own inspection disclosure?",
     choices: [

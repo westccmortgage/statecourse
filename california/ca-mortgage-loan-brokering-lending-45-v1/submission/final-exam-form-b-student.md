@@ -2,7 +2,7 @@
 
 **Course:** Mortgage Loan Brokering and Lending (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 This is the examination exactly as the student is served it: the same 100 items in the same order, with the same answer choices in the same order. It is generated from the examination engine rather than transcribed.

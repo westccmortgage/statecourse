@@ -2,7 +2,7 @@
 
 **Course:** Real Estate Principles (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 This is the examination exactly as the student is served it: the same 100 items in the same order, with the same answer choices in the same order. It is generated from the examination engine rather than transcribed.
@@ -552,12 +552,12 @@ B. $6,850
 C. $10,275
 D. $17,125
 
-**78.** A seller wants $400,000 net after paying a 6% commission and $6,000 in other costs. What sale price is required, to the nearest dollar?
+**78.** A seller's pro forma for an apartment building carries the property tax line straight from the seller's current tax bill. Why does that single line matter more than its size suggests?
 
-A. $424,000
-B. $406,000
-C. $430,000
-D. $431,915
+A. The buyer inherits the seller's assessment, so the figure is correct until the county revalues the property on its own schedule.
+B. The line is small relative to the other operating expenses, so an error in it is immaterial to the analysis.
+C. Property taxes are excluded from net operating income, so the error changes cash flow but leaves the valuation untouched.
+D. The property is reassessed on transfer, so the buyer's actual tax expense is understated, and the understatement flows through net operating income directly into value.
 
 **79.** Which practice most directly engages the protection for familial status?
 
@@ -622,12 +622,12 @@ B. Commingling, and the internal ledger does not cure it.
 C. A permissible practice, because deposits are the broker's to hold as he sees fit.
 D. Conversion, which is the same offense as commingling.
 
-**88.** A trust account reconciliation reveals a shortage. What is the correct response?
+**88.** An audit of a management practice finds two owners whose management agreements were never signed. How should that finding be characterized?
 
-A. The broker corrects it immediately from broker funds and documents the correction.
-B. The shortage is carried until the responsible party makes it good.
-C. The shortage is offset against other beneficiaries' balances in the same account.
-D. The account is closed and the remaining funds distributed pro rata.
+A. As a structural defect of the same order as commingling: the scope of authority is undefined, the compensation is unenforceable, and the handling of funds is not authorized in writing.
+B. As a filing oversight, cured by obtaining signatures now and dating them to the start of management.
+C. As immaterial, because the owners accepted monthly statements and thereby ratified the arrangement.
+D. As a defect only if and when an owner disputes an action the manager has taken.
 
 **89.** In a residential sale, which describes the relationship between the seller's disclosure and the licensee's own inspection disclosure?
 

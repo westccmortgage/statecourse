@@ -2,7 +2,7 @@
 
 **Course:** Mortgage Loan Brokering and Lending (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 This is the examination exactly as the student is served it: the same 100 items in the same order, with the same answer choices in the same order. It is generated from the examination engine rather than transcribed.
@@ -62,12 +62,12 @@ B. $1,716.67
 C. $2,145.83
 D. $25,750.00
 
-**8.** A payoff of $412,000 at 6.25% is computed on a 365-day basis. What is the per diem interest?
+**8.** A $920,000 purchase is planned with an 80 percent loan. The appraisal comes in at $900,000. What follows?
 
-A. $70.55
-B. $2,145.83
-C. $71.53
-D. $25,750.00
+A. The lender lends against $900,000, so 80 percent is $720,000 — $16,000 less than planned — and the borrower brings the difference, renegotiates, or cancels if a contingency permits.
+B. The loan is denied, because an appraisal below the contract price does not support the transaction.
+C. The purchase price adjusts to the appraised value, because the loan program requires the two to agree.
+D. The borrower is entitled to a second appraisal, which the lender must order on request.
 
 **9.** How does an amortized payment split early in the loan term?
 
@@ -167,12 +167,12 @@ B. Loan-to-value, debt-to-income, and reserves.
 C. Note rate, annual percentage rate, and discount points.
 D. Term, amortization schedule, and payment factor.
 
-**23.** What may a licensee never do with rates?
+**23.** A file carries a business-purpose certification signed by the borrower, while the occupancy line and a lease dated before the application both point the other way. What has the certification established?
 
-A. Tell a borrower the rate is not locked until the lock is confirmed in writing.
-B. Direct a borrower to the lender for a current quote.
-C. Explain what an index and a margin are.
-D. Predict where rates are going, or tell a borrower he can simply refinance later if the payment rises.
+A. The business purpose unless the lender objects to the classification before closing.
+B. That the consumer protections are waived, the borrower having elected the classification himself.
+C. The business purpose conclusively, because the borrower signed the certification.
+D. Nothing about the fact. It records the borrower's statement; the purpose is determined by the actual use and the surrounding facts.
 
 **24.** What does presenting products on a common basis require?
 

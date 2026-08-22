@@ -25,6 +25,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as engine from "../config/california-course-engine.mjs";
+import { PROVIDER } from "../config/california/submission-facts.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
@@ -45,7 +46,10 @@ function header(course, title) {
     "",
     `**Course:** ${course.title} (${course.requiredHours} hours, ${course.assignmentCount} lesson assignments)`,
     `**Course version:** ${course.version}`,
-    `**Provider:** StateCourse`,
+    /* The legal name, read rather than typed. These documents said "StateCourse" for a
+       fortnight after RE 336 was corrected for the same defect: a provider name that is not the
+       entity's name, in a document filed with the Department. */
+    `**Provider:** ${PROVIDER.legalName}`,
     NOT_APPROVED,
     ""
   ].join("\n");

@@ -89,16 +89,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "$412,000 × 0.0625 = $25,750 per year; ÷ 12 = $2,145.83. The distractors use a wrong divisor, the annual figure, and a 5% rate." },
-  { source: { assignment: "assignment-02", section: "1.4" },
-    prompt: "A payoff of $412,000 at 6.25% is computed on a 365-day basis. What is the per diem interest?",
+  /* Assignment 02 topic 5 — loan to value and combined loan to value. Added by the coverage gate. */
+  { source: { assignment: "assignment-02", section: "5.2" },
+    prompt: "A $920,000 purchase is planned with an 80 percent loan. The appraisal comes in at $900,000. What follows?",
     choices: [
-      "$70.55",
-      "$71.53",
-      "$2,145.83",
-      "$25,750.00"
+      "The lender lends against $900,000, so 80 percent is $720,000 \u2014 $16,000 less than planned \u2014 and the borrower brings the difference, renegotiates, or cancels if a contingency permits.",
+      "The purchase price adjusts to the appraised value, because the loan program requires the two to agree.",
+      "The loan is denied, because an appraisal below the contract price does not support the transaction.",
+      "The borrower is entitled to a second appraisal, which the lender must order on request."
     ],
     correctChoice: 0,
-    rationale: "$412,000 × 0.0625 ÷ 365 = $70.55. A 360-day basis produces the second figure, which is why a payoff demand states its basis and its good-through date." },
+    rationale: "Lenders lend against the lower of appraised value and purchase price. Eighty percent of $900,000 is $720,000 rather than the $736,000 planned. Nothing adjusts automatically: the price does not move by operation of any program, the loan is not denied, and no one is entitled to a second appraisal as of right." },
   { source: { assignment: "assignment-02", section: "2.2" },
     prompt: "How does an amortized payment split early in the loan term?",
     choices: [
@@ -239,16 +240,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "The index plus the margin sets the rate at each adjustment, and the caps bound how far it can move — which is what produces the worst-case payment." },
-  { source: { assignment: "assignment-04", section: "4.4" },
-    prompt: "What may a licensee never do with rates?",
+  /* Assignment 04 topic 5 — owner occupied and business purpose distinctions. Added by the coverage gate. */
+  { source: { assignment: "assignment-04", section: "5.5" },
+    prompt: "A file carries a business-purpose certification signed by the borrower, while the occupancy line and a lease dated before the application both point the other way. What has the certification established?",
     choices: [
-      "Predict where rates are going, or tell a borrower he can simply refinance later if the payment rises.",
-      "Explain what an index and a margin are.",
-      "Tell a borrower the rate is not locked until the lock is confirmed in writing.",
-      "Direct a borrower to the lender for a current quote."
+      "Nothing about the fact. It records the borrower's statement; the purpose is determined by the actual use and the surrounding facts.",
+      "The business purpose conclusively, because the borrower signed the certification.",
+      "The business purpose unless the lender objects to the classification before closing.",
+      "That the consumer protections are waived, the borrower having elected the classification himself."
     ],
     correctChoice: 0,
-    rationale: "A prediction stated as a plan is the single most damaging sentence available in a financing conversation. The other three are accurate and within scope." },
+    rationale: "A signature records a statement rather than establishing a fact. A file assembled around a certification that its own contents contradict is visible to any examiner who reads the occupancy line and the lease date. Treating a consumer loan as business purpose on the strength of a certification is the more common error and the more serious one, because it strips protections the borrower was entitled to." },
   { source: { assignment: "assignment-04", section: "6.2" },
     prompt: "What does presenting products on a common basis require?",
     choices: [

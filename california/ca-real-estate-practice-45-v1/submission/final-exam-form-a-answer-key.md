@@ -2,7 +2,7 @@
 
 **Course:** Real Estate Practice (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 **SECURE DOCUMENT — INSTRUCTOR AND REGULATOR USE ONLY. NOT FOR DISTRIBUTION TO STUDENTS.**
@@ -225,16 +225,16 @@ D. An amendment converting the buyer's agent to a subagent of the seller.
 >
 > **Found in the course material at:** Assignment 03 (Agency disclosure and fiduciary performance), section 5.1
 
-### 18. Which approach satisfies the obligation to disclose a conflict?
+### 18. A closed file shows an agency disclosure signed three days after the listing agreement, a purchase agreement confirming the brokerage as the buyer's agent while the listing file shows it as the seller's agent, and no dual agency consent from either party. Which finding is the most serious, and why?
 
-A. Assuring the client that the interest will not influence the advice.
-**B. Disclosure delivered while the client can still act on it, in a form he can evaluate.**
-C. Telling the client he is free to choose a different provider.
-D. Disclosing the conflict if the client asks about it.
+A. None of them, because the transaction closed and no party has complained.
+**B. The contradiction, because it describes an undisclosed dual agency — duties actually owed to both parties were breached, rather than a documentation step being missed.**
+C. The late disclosure, because a disclosure signed after the listing agreement is void and takes the listing agreement with it.
+D. All three equally, because each is a dated document appearing out of sequence in the file.
 
-> **Correct answer: B.** Information arriving after the decision has no value, the client does not know to ask, and a private intention is not something the client can evaluate.
+> **Correct answer: B.** The disclosure signed after the listing means the seller committed before being informed, which is a real defect. But the contradiction is different in kind: the file shows the brokerage acting on both sides with consent from neither, which is undisclosed dual agency. The absence of a complaint establishes nothing, and no finding may be corrected by adjusting a date after the fact.
 >
-> **Found in the course material at:** Assignment 03 (Agency disclosure and fiduciary performance), section 5.3
+> **Found in the course material at:** Assignment 03 (Agency disclosure and fiduciary performance), section 6.2
 
 ### 19. Why must a listing agreement's term be definite?
 
@@ -819,16 +819,16 @@ D. Applying the security deposit as the lease and statute permit at the end of t
 >
 > **Found in the course material at:** Assignment 12 (Property management and leasing practice), section 5.4
 
-### 72. An owner instructs the manager to raise a tenant's rent because the tenant keeps complaining about repairs. What is the problem?
+### 72. A property manager has sent one owner no report for four months. What has actually happened during those four months?
 
-A. The instruction is improper only if the tenant has filed with a public agency.
-**B. A rent increase following complaints has the appearance of retaliation, and the appearance is itself the problem.**
-C. Nothing, provided the increase is within any applicable limit.
-D. Nothing, provided proper notice of the increase is served.
+A. A defect that becomes real only if an error is later found in the trust records.
+**B. The owner has been unable to verify the handling of their own funds for a third of a year, and the trust records have gone that long without any outside scrutiny.**
+C. Nothing of consequence, provided the annual summary is complete and delivered at year end.
+D. A scheduling problem only, since reporting frequency is a term the parties set in the management agreement rather than an obligation.
 
-> **Correct answer: B.** Retaliation analysis turns on the sequence and the apparent reason. Proper notice and a lawful amount do not answer why the increase was imposed.
+> **Correct answer: B.** Reporting is how the accounting duty is discharged, so a gap in reporting is a gap in the accounting itself. The significance does not wait on an error being found: nobody was in a position to find one. A finding of this kind sits alongside commingling and unsigned agreements rather than in a filing backlog.
 >
-> **Found in the course material at:** Assignment 12 (Property management and leasing practice), section 5.3
+> **Found in the course material at:** Assignment 12 (Property management and leasing practice), section 6.3
 
 ### 73. A licensee knows of a material defect, says nothing, and makes no false statement. How is that treated?
 
@@ -929,16 +929,16 @@ C. The closing, where every figure is recorded.
 >
 > **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 1.5
 
-### 82. What does outcome review examine?
+### 82. A buyer asks to see two specific homes on Alder Street. The licensee, friendly and evidently trying to help throughout, shows three homes in a different area instead and remarks that the schools there are "a better fit for a family like yours." Taking the consumer's position in this scenario is designed to establish what?
 
-A. Whether the licensee can explain each individual decision.
-B. Whether the brokerage's advertising includes the equal housing statement.
-**C. Patterns across clients — response times, properties shown, exceptions granted, reach — rather than the intentions behind individual decisions.**
-D. Whether any client has complained about unequal treatment.
+A. That the consumer carries the responsibility to object at the time, since a licensee cannot act on a preference the consumer does not restate.
+B. That the remark about schools is the only defect, the substitution of properties being a matter of professional judgment.
+**C. That the effect is independent of the intent: the consumer still did not see the homes he asked about and still cannot evaluate them, however well meant the substitution was.**
+D. That the conduct is permissible where the licensee sincerely believes the alternatives are better suited to the buyer's circumstances.
 
-> **Correct answer: C.** A set of individually explainable decisions can still produce a distribution that is not explainable, and complaints are only one route — data is another and requires no dissatisfaction.
+> **Correct answer: C.** The licensee in the scenario is warm and well meaning, and the consumer is left without the information he asked for. Experiencing that gap from the consumer's side is the point of the exercise. Most consumers in the position cannot name what happened — which is why the obligation sits on the licensee rather than on the consumer to object.
 >
-> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 3.3
+> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 4.4
 
 ### 83. A client instructs a licensee not to show the property to a category of buyers. What is the correct response?
 

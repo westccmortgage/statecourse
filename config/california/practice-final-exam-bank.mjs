@@ -193,16 +193,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "A file showing seller-side compensation and confirmed buyer agency is consistent, not contradictory. What must still happen is disclosure of the arrangement, since the client cannot evaluate advice without knowing the adviser's economics." },
-  { source: { assignment: "assignment-03", section: "5.3" },
-    prompt: "Which approach satisfies the obligation to disclose a conflict?",
+  /* Assignment 03 topic 6 — the agency documentation case. Added by the coverage gate. */
+  { source: { assignment: "assignment-03", section: "6.2" },
+    prompt: "A closed file shows an agency disclosure signed three days after the listing agreement, a purchase agreement confirming the brokerage as the buyer's agent while the listing file shows it as the seller's agent, and no dual agency consent from either party. Which finding is the most serious, and why?",
     choices: [
-      "Disclosure delivered while the client can still act on it, in a form he can evaluate.",
-      "Telling the client he is free to choose a different provider.",
-      "Disclosing the conflict if the client asks about it.",
-      "Assuring the client that the interest will not influence the advice."
+      "The contradiction, because it describes an undisclosed dual agency \u2014 duties actually owed to both parties were breached, rather than a documentation step being missed.",
+      "The late disclosure, because a disclosure signed after the listing agreement is void and takes the listing agreement with it.",
+      "All three equally, because each is a dated document appearing out of sequence in the file.",
+      "None of them, because the transaction closed and no party has complained."
     ],
     correctChoice: 0,
-    rationale: "Information arriving after the decision has no value, the client does not know to ask, and a private intention is not something the client can evaluate." },
+    rationale: "The disclosure signed after the listing means the seller committed before being informed, which is a real defect. But the contradiction is different in kind: the file shows the brokerage acting on both sides with consent from neither, which is undisclosed dual agency. The absence of a complaint establishes nothing, and no finding may be corrected by adjusting a date after the fact." },
   { source: { assignment: "assignment-04", section: "2.3" },
     prompt: "Why must a listing agreement's term be definite?",
     choices: [
@@ -739,17 +740,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Self-help eviction is prohibited regardless of how far behind the tenant is, and a manager who performs it has done the unlawful act himself." },
-  { source: { assignment: "assignment-12", section: "5.3" },
-    prompt: "An owner instructs the manager to raise a tenant's rent because the tenant keeps complaining about repairs. What is the problem?",
+  /* Assignment 12 topic 6 — owner reporting and risk controls. Added by the coverage gate. */
+  { source: { assignment: "assignment-12", section: "6.3" },
+    prompt: "A property manager has sent one owner no report for four months. What has actually happened during those four months?",
     choices: [
-      "A rent increase following complaints has the appearance of retaliation, and the appearance is itself the problem.",
-      "Nothing, provided the increase is within any applicable limit.",
-      "Nothing, provided proper notice of the increase is served.",
-      "The instruction is improper only if the tenant has filed with a public agency."
+      "The owner has been unable to verify the handling of their own funds for a third of a year, and the trust records have gone that long without any outside scrutiny.",
+      "Nothing of consequence, provided the annual summary is complete and delivered at year end.",
+      "A scheduling problem only, since reporting frequency is a term the parties set in the management agreement rather than an obligation.",
+      "A defect that becomes real only if an error is later found in the trust records."
     ],
     correctChoice: 0,
-    rationale: "Retaliation analysis turns on the sequence and the apparent reason. Proper notice and a lawful amount do not answer why the increase was imposed." },
-  /* Assignment 13 — Ethics, risk management, and dispute prevention */
+    rationale: "Reporting is how the accounting duty is discharged, so a gap in reporting is a gap in the accounting itself. The significance does not wait on an error being found: nobody was in a position to find one. A finding of this kind sits alongside commingling and unsigned agreements rather than in a filing backlog." },
   { source: { assignment: "assignment-13", section: "1.4" },
     prompt: "A licensee knows of a material defect, says nothing, and makes no false statement. How is that treated?",
     choices: [
@@ -841,16 +842,17 @@ const formA = [
     ],
     correctChoice: 0,
     rationale: "Differential information at the inquiry stage leaves almost no trace, which is why an inquiry log is the control. The later stages generate documents by default." },
-  { source: { assignment: "assignment-14", section: "3.3" },
-    prompt: "What does outcome review examine?",
+  /* Assignment 14 topic 4 — the SB 1495 participatory practicum, consumer role. Added by the coverage gate; the practicum is examined on what it establishes, not by asking a student to role play in a multiple choice item. */
+  { source: { assignment: "assignment-14", section: "4.4" },
+    prompt: "A buyer asks to see two specific homes on Alder Street. The licensee, friendly and evidently trying to help throughout, shows three homes in a different area instead and remarks that the schools there are \"a better fit for a family like yours.\" Taking the consumer's position in this scenario is designed to establish what?",
     choices: [
-      "Patterns across clients — response times, properties shown, exceptions granted, reach — rather than the intentions behind individual decisions.",
-      "Whether any client has complained about unequal treatment.",
-      "Whether the licensee can explain each individual decision.",
-      "Whether the brokerage's advertising includes the equal housing statement."
+      "That the effect is independent of the intent: the consumer still did not see the homes he asked about and still cannot evaluate them, however well meant the substitution was.",
+      "That the conduct is permissible where the licensee sincerely believes the alternatives are better suited to the buyer's circumstances.",
+      "That the consumer carries the responsibility to object at the time, since a licensee cannot act on a preference the consumer does not restate.",
+      "That the remark about schools is the only defect, the substitution of properties being a matter of professional judgment."
     ],
     correctChoice: 0,
-    rationale: "A set of individually explainable decisions can still produce a distribution that is not explainable, and complaints are only one route — data is another and requires no dissatisfaction." },
+    rationale: "The licensee in the scenario is warm and well meaning, and the consumer is left without the information he asked for. Experiencing that gap from the consumer's side is the point of the exercise. Most consumers in the position cannot name what happened \u2014 which is why the obligation sits on the licensee rather than on the consumer to object." },
   { source: { assignment: "assignment-14", section: "6.4" },
     prompt: "A client instructs a licensee not to show the property to a category of buyers. What is the correct response?",
     choices: [
@@ -1889,16 +1891,17 @@ const formB = [
     ],
     correctChoice: 0,
     rationale: "The scripts exist because the gap between knowing what to say and having said it is the entire distance. Silence reads as agreement." },
-  { source: { assignment: "assignment-14", section: "3.6" },
-    prompt: "Which measurement is most revealing when reviewing a licensee's own practice for unequal service?",
+  /* Assignment 14 topic 5 — the SB 1495 participatory practicum, licensee role. Added by the coverage gate. */
+  { source: { assignment: "assignment-14", section: "5.2" },
+    prompt: "During a showing a client asks, sincerely and in person, what the neighbors are like and which schools would be right for their children, adding that they trust the licensee's judgment more than a website. What does the licensee position in the practicum require of the answer?",
     choices: [
-      "Response time to first contact by lead source, because it is generated automatically and is unaffected by intention.",
-      "The number of transactions closed in the period.",
-      "The licensee's average commission per transaction.",
-      "The percentage of listings that sold above asking price."
+      "Declining the parts that cannot be answered, offering the sources the client can consult for themselves, and doing so in words that are neither evasive nor unhelpful.",
+      "Answering fully, because the client asked directly and a refusal would breach the duty of loyalty owed to a client.",
+      "Ending the showing and referring the client elsewhere, since the subject has now been raised in the licensee's presence.",
+      "Answering off the record if the client presses, so long as nothing about the exchange is written into the file."
     ],
     correctChoice: 0,
-    rationale: "It is produced by the system rather than by recollection, and it varies. The others measure production rather than distribution." },
+    rationale: "The exercise asks for the actual words, because the difficulty is not knowing the rule but declining without appearing unhelpful to a client who is sincere and trusting. What the licensee offers instead of the answer is the substance of the response; \"off the record\" is not available, and neither refusing to engage nor answering fully is the professional course." },
   { source: { assignment: "assignment-14", section: "6.2" },
     prompt: "What makes a fair housing action plan real rather than a document?",
     choices: [

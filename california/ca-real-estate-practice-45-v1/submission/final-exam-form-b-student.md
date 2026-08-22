@@ -2,7 +2,7 @@
 
 **Course:** Real Estate Practice (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 This is the examination exactly as the student is served it: the same 100 items in the same order, with the same answer choices in the same order. It is generated from the examination engine rather than transcribed.
@@ -594,12 +594,12 @@ B. Agree noncommittally and move on, since the client is not the licensee.
 C. Change the subject to avoid an uncomfortable exchange.
 D. Report the client to the broker without saying anything to him.
 
-**84.** Which measurement is most revealing when reviewing a licensee's own practice for unequal service?
+**84.** During a showing a client asks, sincerely and in person, what the neighbors are like and which schools would be right for their children, adding that they trust the licensee's judgment more than a website. What does the licensee position in the practicum require of the answer?
 
-A. The number of transactions closed in the period.
-B. The percentage of listings that sold above asking price.
-C. Response time to first contact by lead source, because it is generated automatically and is unaffected by intention.
-D. The licensee's average commission per transaction.
+A. Answering fully, because the client asked directly and a refusal would breach the duty of loyalty owed to a client.
+B. Answering off the record if the client presses, so long as nothing about the exchange is written into the file.
+C. Declining the parts that cannot be answered, offering the sources the client can consult for themselves, and doing so in words that are neither evasive nor unhelpful.
+D. Ending the showing and referring the client elsewhere, since the subject has now been raised in the licensee's presence.
 
 **85.** What makes a fair housing action plan real rather than a document?
 

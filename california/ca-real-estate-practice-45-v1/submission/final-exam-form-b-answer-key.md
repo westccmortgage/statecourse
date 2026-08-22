@@ -2,7 +2,7 @@
 
 **Course:** Real Estate Practice (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 **SECURE DOCUMENT — INSTRUCTOR AND REGULATOR USE ONLY. NOT FOR DISTRIBUTION TO STUDENTS.**
@@ -951,16 +951,16 @@ D. Report the client to the broker without saying anything to him.
 >
 > **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 3.4
 
-### 84. Which measurement is most revealing when reviewing a licensee's own practice for unequal service?
+### 84. During a showing a client asks, sincerely and in person, what the neighbors are like and which schools would be right for their children, adding that they trust the licensee's judgment more than a website. What does the licensee position in the practicum require of the answer?
 
-A. The number of transactions closed in the period.
-B. The percentage of listings that sold above asking price.
-**C. Response time to first contact by lead source, because it is generated automatically and is unaffected by intention.**
-D. The licensee's average commission per transaction.
+A. Answering fully, because the client asked directly and a refusal would breach the duty of loyalty owed to a client.
+B. Answering off the record if the client presses, so long as nothing about the exchange is written into the file.
+**C. Declining the parts that cannot be answered, offering the sources the client can consult for themselves, and doing so in words that are neither evasive nor unhelpful.**
+D. Ending the showing and referring the client elsewhere, since the subject has now been raised in the licensee's presence.
 
-> **Correct answer: C.** It is produced by the system rather than by recollection, and it varies. The others measure production rather than distribution.
+> **Correct answer: C.** The exercise asks for the actual words, because the difficulty is not knowing the rule but declining without appearing unhelpful to a client who is sincere and trusting. What the licensee offers instead of the answer is the substance of the response; "off the record" is not available, and neither refusing to engage nor answering fully is the professional course.
 >
-> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 3.6
+> **Found in the course material at:** Assignment 14 (Implicit bias and fair housing participatory practicum), section 5.2
 
 ### 85. What makes a fair housing action plan real rather than a document?
 

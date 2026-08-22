@@ -2,7 +2,7 @@
 
 **Course:** Real Estate Practice (45 hours, 15 lesson assignments)
 **Course version:** 1.0
-**Provider:** StateCourse
+**Provider:** StateCourse LLC
 **Regulatory status:** submission draft. This course is not approved by the California Department of Real Estate, no course approval number has been issued, and no California continuing education or pre-license credit is available for it.
 
 This is the examination exactly as the student is served it: the same 100 items in the same order, with the same answer choices in the same order. It is generated from the examination engine rather than transcribed.
@@ -132,12 +132,12 @@ B. A dual agency consent signed by both parties.
 C. A confirmation of buyer agency together with disclosure of the compensation arrangement — payment does not determine representation.
 D. An amendment converting the buyer's agent to a subagent of the seller.
 
-**18.** Which approach satisfies the obligation to disclose a conflict?
+**18.** A closed file shows an agency disclosure signed three days after the listing agreement, a purchase agreement confirming the brokerage as the buyer's agent while the listing file shows it as the seller's agent, and no dual agency consent from either party. Which finding is the most serious, and why?
 
-A. Assuring the client that the interest will not influence the advice.
-B. Disclosure delivered while the client can still act on it, in a form he can evaluate.
-C. Telling the client he is free to choose a different provider.
-D. Disclosing the conflict if the client asks about it.
+A. None of them, because the transaction closed and no party has complained.
+B. The contradiction, because it describes an undisclosed dual agency — duties actually owed to both parties were breached, rather than a documentation step being missed.
+C. The late disclosure, because a disclosure signed after the listing agreement is void and takes the listing agreement with it.
+D. All three equally, because each is a dated document appearing out of sequence in the file.
 
 **19.** Why must a listing agreement's term be definite?
 
@@ -510,12 +510,12 @@ B. Serving the notice the statute requires for nonpayment.
 C. Filing an unlawful detainer after the notice period expires.
 D. Applying the security deposit as the lease and statute permit at the end of the tenancy.
 
-**72.** An owner instructs the manager to raise a tenant's rent because the tenant keeps complaining about repairs. What is the problem?
+**72.** A property manager has sent one owner no report for four months. What has actually happened during those four months?
 
-A. The instruction is improper only if the tenant has filed with a public agency.
-B. A rent increase following complaints has the appearance of retaliation, and the appearance is itself the problem.
-C. Nothing, provided the increase is within any applicable limit.
-D. Nothing, provided proper notice of the increase is served.
+A. A defect that becomes real only if an error is later found in the trust records.
+B. The owner has been unable to verify the handling of their own funds for a third of a year, and the trust records have gone that long without any outside scrutiny.
+C. Nothing of consequence, provided the annual summary is complete and delivered at year end.
+D. A scheduling problem only, since reporting frequency is a term the parties set in the management agreement rather than an obligation.
 
 **73.** A licensee knows of a material defect, says nothing, and makes no false statement. How is that treated?
 
@@ -580,12 +580,12 @@ B. The listing appointment, where the agreement is signed.
 C. The closing, where every figure is recorded.
 D. The first inquiry, where different callers receive different amounts of information, encouragement, and follow-up.
 
-**82.** What does outcome review examine?
+**82.** A buyer asks to see two specific homes on Alder Street. The licensee, friendly and evidently trying to help throughout, shows three homes in a different area instead and remarks that the schools there are "a better fit for a family like yours." Taking the consumer's position in this scenario is designed to establish what?
 
-A. Whether the licensee can explain each individual decision.
-B. Whether the brokerage's advertising includes the equal housing statement.
-C. Patterns across clients — response times, properties shown, exceptions granted, reach — rather than the intentions behind individual decisions.
-D. Whether any client has complained about unequal treatment.
+A. That the consumer carries the responsibility to object at the time, since a licensee cannot act on a preference the consumer does not restate.
+B. That the remark about schools is the only defect, the substitution of properties being a matter of professional judgment.
+C. That the effect is independent of the intent: the consumer still did not see the homes he asked about and still cannot evaluate them, however well meant the substitution was.
+D. That the conduct is permissible where the licensee sincerely believes the alternatives are better suited to the buyer's circumstances.
 
 **83.** A client instructs a licensee not to show the property to a category of buyers. What is the correct response?
 
