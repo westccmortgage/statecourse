@@ -1,26 +1,38 @@
 #!/usr/bin/env node
 /*
- * The release gate.
+ * The release gates.
  *
- * Nothing may be called PRINT_READY or PRODUCTION_READY except by this script returning zero.
- * It is not a checklist a person ticks and not a test that reports "almost": every check below
- * either passes or blocks, and a blocked gate names the file and the reason.
+ * THREE STATUSES, AND WHY THEY ARE NOT ONE
  *
- * TWO GATES, AND WHY THEY ARE SEPARATE
+ *   CA_DRE_SUBMISSION_READY     — the filing. RE 306, instructional material, RE 336 with its
+ *                                 supporting documents, the General Information Page, the timed
+ *                                 outline, the student and instructor final examinations, and
+ *                                 the examination and proctor instructions. This is what goes
+ *                                 in an envelope to the Department of Real Estate.
  *
- *   PRINT_READY      — the filing. Documents, policy, RE forms, Terms, disclosure, signatures
- *                      and approval gates. This is what goes in an envelope to the Department
- *                      of Real Estate.
+ *   CA_PLATFORM_PRODUCTION_READY — everything that moves money or records a student: Stripe
+ *                                 checkout, package fan-out, webhooks, refund reconciliation,
+ *                                 idempotency, the academic timing controls, and a fully green
+ *                                 test suite.
  *
- *   PRODUCTION_READY — PRINT_READY, plus everything that moves money: Stripe checkout, package
- *                      fan-out, webhooks, refund reconciliation, idempotency, and a fully green
- *                      test suite.
+ *   STATECOURSE_CA_READY        — both of the above, and only then.
  *
- * They are separate because they fail for different reasons and are fixed by different work. A
- * filing can be complete while payments are not live; payments must never be live while the
- * filing is incomplete. PRODUCTION_READY therefore includes PRINT_READY and never the reverse.
+ * The first two are INDEPENDENT. An earlier version made the filing depend on the payment
+ * chain, which was wrong in a way worth stating: the Department is not asking about Stripe. A
+ * submission package is complete or it is not, and whether a webhook test passes has no
+ * bearing on whether the Department has what it needs. Coupling them would have meant a
+ * payment defect blocking a filing it has nothing to do with, and — worse — a filing being
+ * held while a payment problem was fixed, for no reason a regulator would recognise.
  *
- * Usage:  node scripts/release-gate.mjs [--gate print|production] [--course <id>] [--json]
+ * The coupling that IS real runs the other way and lives in the aggregate: courses must not be
+ * sold as qualifying education before the Commissioner approves them, so STATECOURSE_CA_READY
+ * requires both, and neither gate alone authorises anything.
+ *
+ * Usage:
+ *   node scripts/release-gate.mjs --gate submission
+ *   node scripts/release-gate.mjs --gate platform
+ *   node scripts/release-gate.mjs --gate all        (the aggregate; the default)
+ *   ... --json
  */
 
 import { execFileSync } from "node:child_process";
@@ -38,6 +50,17 @@ import {
 import { REFUND_POLICY_CLAUSES, REFUND_POLICY_TEXT, REFUND_POLICY_VERSION } from "../lib/refund-policy.mjs";
 import { CALENDAR_COVERED_YEARS, unresolvedHolidaysFor } from "../config/california/business-day-calendar.mjs";
 import { HANDLED_STRIPE_EVENTS } from "../lib/stripe-contract.mjs";
+import {
+  ACADEMIC_CONTROLS,
+  AUTHORITIES,
+  BPPE_EXEMPTION,
+  DRE_FORMS,
+  FORBIDDEN_CLAIMS,
+  MANIFEST_VERSION,
+  PROGRAMS,
+  SCHOOL,
+  staleAuthorities,
+} from "../config/california/regulatory-manifest.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
@@ -45,7 +68,7 @@ const flag = (name, fallback = null) => {
   const index = args.indexOf(`--${name}`);
   return index >= 0 && args[index + 1] && !args[index + 1].startsWith("--") ? args[index + 1] : fallback;
 };
-const GATE = flag("gate", "production");
+const GATE = flag("gate", "all");
 const AS_JSON = args.includes("--json");
 
 const read = (relative) => {
@@ -105,9 +128,9 @@ const COURSE_PACKETS = () =>
     fs.existsSync(path.join(root, "california/submission", name, "06-re313-general-information-page.md")),
   );
 
-/* ═════════════════════════════════════ PRINT_READY ═════════════════════════════════════ */
+/* ══════════════════════════════ CA_DRE_SUBMISSION_READY ═══════════════════════════════ */
 
-check("print", 1, "policy_version is one value everywhere it appears", () => {
+check("submission", 1, "policy_version is one value everywhere it appears", () => {
   require_(REFUND_POLICY_VERSION === PRICING.refundPolicy.version, "the engine and the facts file disagree on the version");
   const californiaCourses = ["ca-real-estate-principles-45", "ca-real-estate-practice-45", "ca-mortgage-loan-brokering-lending-45"];
   for (const id of californiaCourses) {
@@ -119,7 +142,7 @@ check("print", 1, "policy_version is one value everywhere it appears", () => {
   return `version ${REFUND_POLICY_VERSION} on ${californiaCourses.length} courses`;
 });
 
-check("print", 2, "the canonical policy text is identical in every rendering", () => {
+check("submission", 2, "the canonical policy text is identical in every rendering", () => {
   const canonical = words(REFUND_POLICY_TEXT);
   require_(canonical.length > 200, "the canonical policy text is suspiciously short");
   for (const id of ["ca-real-estate-principles-45", "ca-real-estate-practice-45", "ca-mortgage-loan-brokering-lending-45"]) {
@@ -132,7 +155,7 @@ check("print", 2, "the canonical policy text is identical in every rendering", (
   return `${Object.keys(REFUND_POLICY_CLAUSES).length} clauses, ${canonical.length} characters`;
 });
 
-check("print", 3, "RE 313 carries the policy, its version, and no undecided field", () => {
+check("submission", 3, "RE 313 carries the policy, its version, and no undecided field", () => {
   const packets = COURSE_PACKETS();
   require_(packets.length > 0, "no course packets have been generated");
   const canonical = words(REFUND_POLICY_TEXT);
@@ -148,7 +171,7 @@ check("print", 3, "RE 313 carries the policy, its version, and no undecided fiel
   return `${packets.length} RE 313 sheets`;
 });
 
-check("print", 4, "the published Terms carry every clause verbatim", () => {
+check("submission", 4, "the published Terms carry every clause verbatim", () => {
   const terms = read("public/statecourse/terms/index.html");
   require_(terms, "the Terms page is missing");
   const normalised = words(terms);
@@ -159,7 +182,7 @@ check("print", 4, "the published Terms carry every clause verbatim", () => {
   return "all clauses present";
 });
 
-check("print", 5, "the policy is disclosed before checkout, not merely named", () => {
+check("submission", 5, "the policy is disclosed before checkout, not merely named", () => {
   const enrollment = read("public/statecourse/enrollment.js");
   const config = read("netlify/functions/payment-config.mjs");
   require_(enrollment && config, "the enrollment flow or the config endpoint is missing");
@@ -172,7 +195,7 @@ check("print", 5, "the policy is disclosed before checkout, not merely named", (
   return "policy text rendered above its acknowledgment";
 });
 
-check("print", 6, "checkout persists a per-course allocation and refuses a stale acknowledgment", () => {
+check("submission", 6, "checkout persists a per-course allocation and refuses a stale acknowledgment", () => {
   const checkout = read("netlify/functions/create-checkout.mjs");
   require_(checkout, "create-checkout.mjs is missing");
   require_(/checkout_course_allocations/.test(checkout), "checkout does not persist an allocation");
@@ -183,7 +206,7 @@ check("print", 6, "checkout persists a per-course allocation and refuses a stale
   return "allocation written before the student reaches Stripe";
 });
 
-check("print", 7, "the refund calculation is the policy's, and refuses rather than guesses", () => {
+check("submission", 7, "the refund calculation is the policy's, and refuses rather than guesses", () => {
   const endpoint = read("netlify/functions/request-refund.mjs");
   const contract = read("lib/stripe-contract.mjs");
   require_(endpoint && contract, "the refund path is missing");
@@ -204,7 +227,7 @@ check("print", 7, "the refund calculation is the policy's, and refuses rather th
   return `calendar covers ${CALENDAR_COVERED_YEARS.join(", ")}`;
 });
 
-check("print", 8, "every package composition allocates to the cent and discloses what is free", () => {
+check("submission", 8, "every package composition allocates to the cent and discloses what is free", () => {
   const packages = getPackageCatalog();
   require_(packages.length > 0, "no packages are defined");
   for (const bundle of packages) {
@@ -226,7 +249,7 @@ check("print", 8, "every package composition allocates to the cent and discloses
   return `${packages.length} packages allocate exactly`;
 });
 
-check("print", 9, "no generated document carries a forbidden claim or a placeholder", () => {
+check("submission", 9, "no generated document carries a forbidden claim or a placeholder", () => {
   const forbidden = [
     [/state\s+course\s+LLC/i, "the provider name is misspelled as two words"],
     [/\bDRE[- ]approved\b/i, "a document claims DRE approval"],
@@ -260,7 +283,7 @@ check("print", 9, "no generated document carries a forbidden claim or a placehol
   return `${SUBMISSION_DIRECTORIES().length} directories clean`;
 });
 
-check("print", 10, "the human-only items are recorded as outstanding, not assumed done", () => {
+check("submission", 10, "the human-only items are recorded as outstanding, not assumed done", () => {
   /*
    * These cannot be satisfied by code and must never be silently treated as satisfied. The
    * gate's job is to make sure the filing checklist still says they are outstanding, so that a
@@ -288,7 +311,7 @@ check("print", 10, "the human-only items are recorded as outstanding, not assume
   return `${outstanding.length} human-only items still tracked as outstanding`;
 });
 
-check("print", 11, "RE 306 states each field the way the form and the regulation require", () => {
+check("submission", 11, "RE 306 states each field the way the form and the regulation require", () => {
   for (const packet of COURSE_PACKETS()) {
     const relative = `california/submission/${packet}/01-re306-answer-sheet.md`;
     const text = read(relative);
@@ -328,7 +351,7 @@ check("print", 11, "RE 306 states each field the way the form and the regulation
   return `${COURSE_PACKETS().length} RE 306 sheets`;
 });
 
-check("print", 12, "the BPPE exemption is one the Bureau's own rule lets us evidence today", () => {
+check("submission", 12, "the BPPE exemption is one the Bureau's own rule lets us evidence today", () => {
   const sheet = read("california/submission/00_administrative/A4-bppe-exemption-statement.md");
   require_(sheet, "the BPPE exemption statement is missing");
   require_(/94874\(f\)/.test(sheet), "the exemption statement does not cite Education Code 94874(f)");
@@ -346,7 +369,7 @@ check("print", 12, "the BPPE exemption is one the Bureau's own rule lets us evid
   return `94874(f), highest charge $${PRICING.completePath.usd} against a $2,500 threshold`;
 });
 
-check("print", 13, "RE 336 is the Department's own form, one per course, correctly named", () => {
+check("submission", 13, "RE 336 is the Department's own form, one per course, correctly named", () => {
   const generated = path.join(root, "california/dre-sources/generated");
   require_(fs.existsSync(generated), "no RE 336 forms have been generated");
   const forms = fs.readdirSync(generated).filter((name) => /^RE336-.*\.pdf$/.test(name));
@@ -371,9 +394,179 @@ check("print", 13, "RE 336 is the Department's own form, one per course, correct
   return `3 forms, provider ${PROVIDER_LEGAL_NAME}, sponsor id blank`;
 });
 
-/* ═══════════════════════════════ PRODUCTION_READY ═══════════════════════════════════════ */
+check("submission", 14, "the regulatory source lock is locked", () => {
+  /* Run offline here: the gate must be runnable without egress, and the lock reports a skipped
+     network check as skipped rather than as a pass. The online run is a separate command and
+     is what must be green before a packet is printed. */
+  try {
+    execFileSync("node", ["scripts/regulatory-source-lock.mjs", "--offline", "--json"], {
+      cwd: root,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+  } catch (error) {
+    const report = (() => {
+      try {
+        return JSON.parse(error.stdout);
+      } catch {
+        return null;
+      }
+    })();
+    const failures = report?.findings?.filter((finding) => finding.status === "fail") ?? [];
+    require_(false, failures.map((finding) => `${finding.id}: ${finding.message.split("\n")[0]}`).join("; ") || error.message);
+  }
+  require_(staleAuthorities().length === 0, `authorities need re-reading: ${staleAuthorities().join(", ")}`);
+  return `manifest ${MANIFEST_VERSION}, ${AUTHORITIES.length} authorities, ${DRE_FORMS.length} forms`;
+});
 
-check("production", 14, "Stripe carries the same facts the database does", () => {
+check("submission", 15, "every regulated fact has one home and the manifest is it", () => {
+  /* The two defects this manifest was built for: a BPPE basis that could not be evidenced, and
+     a contact title nothing stated. Both are now facts with a single source. */
+  require_(SCHOOL.legalName === PROVIDER.legalName, "the manifest and the facts file disagree on the legal name");
+  require_(SCHOOL.contactTitle === INSTRUCTOR.contactTitle, "the manifest and the facts file disagree on the contact title");
+  require_(SCHOOL.sponsorId === null, "the manifest carries a sponsor id DRE has not assigned");
+  require_(BPPE_EXEMPTION.basis.includes("94874(f)"), "the manifest does not rely on the exemption that can be evidenced");
+  require_(
+    BPPE_EXEMPTION.highestProgramChargeUsd === PRICING.completePath.usd,
+    "the manifest's highest program charge does not match the price list",
+  );
+  require_(
+    BPPE_EXEMPTION.highestProgramChargeUsd <= BPPE_EXEMPTION.thresholdUsd,
+    `the highest charge of $${BPPE_EXEMPTION.highestProgramChargeUsd} exceeds the $${BPPE_EXEMPTION.thresholdUsd} exemption threshold`,
+  );
+  for (const program of PROGRAMS) {
+    require_(program.approvalNumber === null, `${program.title} carries an approval number`);
+    require_(program.hours === ACADEMIC_CONTROLS.minimumHoursPerCourse, `${program.title} is ${program.hours} hours`);
+  }
+  /* Exactly one course carries the SB 1495 obligation, and it is the practice course. */
+  const sb1495 = PROGRAMS.filter((program) => program.sb1495);
+  require_(sb1495.length === 1 && /practice/i.test(sb1495[0].title), "SB 1495 is not attached to the practice course alone");
+  return `${PROGRAMS.length} programs, ${AUTHORITIES.length} authorities, no approval claimed`;
+});
+
+check("submission", 16, "the academic controls are the regulation's numbers, enforced not described", () => {
+  const controls = ACADEMIC_CONTROLS;
+  /* Regulation 3000(a)(1). */
+  require_(controls.minimumHoursPerCourse === 45, `minimum hours is ${controls.minimumHoursPerCourse}`);
+  require_(controls.minimumLessonAssignments === 15, `minimum assignments is ${controls.minimumLessonAssignments}`);
+  require_(controls.minutesPerClassroomPeriod === 50, `a period is ${controls.minutesPerClassroomPeriod} minutes`);
+  /* RE 303 p.3: two and a half weeks is 420 hours, and the window is five weeks. */
+  require_(controls.minimumElapsedHoursPerCourse === 420, `minimum elapsed is ${controls.minimumElapsedHoursPerCourse} hours`);
+  require_(controls.maximumCoursesPerWindow === 2 && controls.windowDays === 35, "the two-course five-week window is wrong");
+  require_(controls.crossSchoolRule === true, "the window is not applied across schools, and RE 303 says it must be");
+  require_(controls.maximumCompletionDays === 365, `completion deadline is ${controls.maximumCompletionDays} days`);
+  /* RE 303 final examination. */
+  require_(controls.finalExamMinimumQuestions === 100, "the question minimum is wrong");
+  require_(controls.finalExamPassingPercent === 60, "the passing score is wrong");
+  require_(controls.finalExamMaximumAttempts === 2 && controls.finalExamRetakeMustDiffer, "the retake rule is wrong");
+  require_(controls.finalExamNeverFurnishedToStudent === true, "the examination may be furnished to a student");
+  require_(controls.certificateDeliveryDays === 15, "the certificate deadline is wrong");
+
+  /* Described is not enough: the database must carry the same numbers. */
+  const migration = read("database/004_california_prelicense.sql");
+  require_(migration, "the California enrollment migration is missing");
+  require_(
+    new RegExp(`"minimum_elapsed_hours":${controls.minimumElapsedHoursPerCourse}`).test(migration),
+    "the database does not enforce the minimum elapsed time",
+  );
+  require_(
+    new RegExp(`"maximum_completion_days":${controls.maximumCompletionDays}`).test(migration),
+    "the database does not enforce the completion deadline",
+  );
+  require_(
+    new RegExp(`"window_days":${controls.windowDays}`).test(migration),
+    "the database does not enforce the five-week window",
+  );
+  require_(
+    new RegExp(`"lesson_assignments":${controls.minimumLessonAssignments}`).test(migration),
+    "the database does not record the assignment count",
+  );
+  return `45h / 15 assignments / 420h elapsed / 2 per 35 days / 365 days, enforced in the database`;
+});
+
+check("submission", 17, "nothing anywhere offers these courses as approved qualifying education", () => {
+  /*
+   * The Commissioner approves a private-school course before it may be offered as qualifying
+   * education. Until then the site may describe, price and test the courses, and may not
+   * present them as approved. This is the one coupling between the two gates and it runs in
+   * only one direction.
+   */
+  require_(/Approval sought/i.test(SCHOOL.approvalStatus), "the manifest's approval status no longer says approval is sought");
+
+  /*
+   * Scoped to California's own records rather than to any occurrence of the words.
+   *
+   * The registry and the catalog describe fifty-one jurisdictions, and describing another
+   * state's rule is not a claim about ours: South Dakota's SDCL 36-21A-30.1 allows education
+   * in "a commission-approved course given by commission-approved instructors", and Alaska's
+   * 12 AAC 64.430(b) speaks of an examination turned in to "the approved instructor". Those
+   * are those states' words about those states. What must never appear is an approval claim
+   * attached to a StateCourse California course.
+   */
+  const californiaRecords = [];
+  const registry = JSON.parse(read("public/statecourse/data/state-registry.json"));
+  const california = (registry.states ?? registry).find((state) => state.state_code === "CA");
+  require_(california, "California is missing from the state registry");
+  californiaRecords.push({ where: "state-registry.json CA entry", value: california });
+
+  const catalog = JSON.parse(read("public/statecourse/data/course-catalog.json"));
+  const walk = (node, out = []) => {
+    if (Array.isArray(node)) node.forEach((item) => walk(item, out));
+    else if (node && typeof node === "object") {
+      if (node.state_id === "CA") out.push(node);
+      else Object.values(node).forEach((item) => walk(item, out));
+    }
+    return out;
+  };
+  for (const course of walk(catalog)) {
+    californiaRecords.push({ where: `course-catalog.json ${course.course_id}`, value: course });
+  }
+  require_(californiaRecords.length >= 4, `expected the CA registry entry and three courses, found ${californiaRecords.length}`);
+
+  const strings = (value, out = []) => {
+    if (typeof value === "string") out.push(value);
+    else if (Array.isArray(value)) value.forEach((item) => strings(item, out));
+    else if (value && typeof value === "object") Object.values(value).forEach((item) => strings(item, out));
+    return out;
+  };
+  for (const record of californiaRecords) {
+    /* Structurally, first: an approval number or an open enrollment is a claim no wording can
+       soften. */
+    if (record.value.approval_number != null) require_(false, `${record.where} carries an approval number`);
+    if (record.value.enrollment_enabled === true) require_(false, `${record.where} has enrollment enabled before approval`);
+    if (record.value.approval_status && /^approved$/i.test(record.value.approval_status)) {
+      require_(false, `${record.where} states approval_status "approved"`);
+    }
+    for (const text of strings(record.value)) {
+      for (const claim of FORBIDDEN_CLAIMS) {
+        const hit = text.match(claim.pattern);
+        if (!hit) continue;
+        const context = text.slice(Math.max(0, hit.index - 150), hit.index + 110);
+        if (/\bnot\b|\bno\b|\buntil\b|never|pending|sought|proposed/i.test(context)) continue;
+        require_(false, `${record.where} claims "${hit[0]}" — ${claim.why}`);
+      }
+    }
+  }
+
+  /* The Terms, which are one document about StateCourse and not a survey of states. */
+  const terms = read("public/statecourse/terms/index.html");
+  for (const claim of FORBIDDEN_CLAIMS) {
+    const hit = terms?.match(claim.pattern);
+    if (!hit) continue;
+    const context = terms.slice(Math.max(0, hit.index - 150), hit.index + 110);
+    if (/\bnot\b|\bno\b|\buntil\b|never|pending|sought/i.test(context)) continue;
+    require_(false, `the Terms claim "${hit[0]}" — ${claim.why}`);
+  }
+
+  /* And enrollment stays shut until an approval record exists. */
+  const catalogSource = read("config/course-catalog.mjs");
+  require_(/course\.approvalStatus !== "approved"/.test(catalogSource), "checkout no longer requires an approval status");
+  return `${californiaRecords.length} California records and the Terms carry no approval claim`;
+});
+
+/* ═══════════════════════════ CA_PLATFORM_PRODUCTION_READY ═════════════════════════════ */
+
+check("platform", 18, "Stripe carries the same facts the database does", () => {
   const checkout = read("netlify/functions/create-checkout.mjs");
   const contract = read("lib/stripe-contract.mjs");
   require_(/asStripeParams\(metadata\)/.test(checkout), "the Checkout Session does not carry the metadata");
@@ -385,7 +578,7 @@ check("production", 14, "Stripe carries the same facts the database does", () =>
   return "session and intent both carry policy, package, allocation and amount";
 });
 
-check("production", 15, "every Stripe event the system depends on is handled", () => {
+check("platform", 19, "every Stripe event the system depends on is handled", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   require_(webhook, "the webhook is missing");
   for (const eventName of HANDLED_STRIPE_EVENTS) {
@@ -395,7 +588,7 @@ check("production", 15, "every Stripe event the system depends on is handled", (
   return `${HANDLED_STRIPE_EVENTS.length} events handled`;
 });
 
-check("production", 16, "a repeated webhook cannot create a second enrollment or a second refund", () => {
+check("platform", 20, "a repeated webhook cannot create a second enrollment or a second refund", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/001_payments_enrollment.sql");
   require_(/claim_stripe_event/.test(webhook), "events are not claimed");
@@ -406,7 +599,7 @@ check("production", 16, "a repeated webhook cannot create a second enrollment or
   return "idempotent at the event, the enrollment and the refund";
 });
 
-check("production", 17, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
+check("platform", 21, "Stripe and the database are reconciled, and a disagreement is recorded not raised", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/009_stripe_integrity.sql");
   require_(migration, "the Stripe integrity migration is missing");
@@ -418,7 +611,7 @@ check("production", 17, "Stripe and the database are reconciled, and a disagreem
   return "intent, charge, currency, amount and status compared";
 });
 
-check("production", 18, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
+check("platform", 22, "a refund made in the Stripe Dashboard is recorded, classified and surfaced", () => {
   const webhook = read("netlify/functions/stripe-webhook.mjs");
   const migration = read("database/010_external_refunds.sql");
   require_(migration, "external refunds are not handled");
@@ -443,7 +636,7 @@ check("production", 18, "a refund made in the Stripe Dashboard is recorded, clas
   return "recorded at Stripe's amount, assessed separately, surfaced when it exceeds the entitlement";
 });
 
-check("production", 19, "package fan-out creates one enrollment per component", () => {
+check("platform", 23, "package fan-out creates one enrollment per component", () => {
   const migration = read("database/011_package_enrollments.sql");
   require_(migration, "package fan-out is not implemented: a package purchase would create one enrollment, not one per component");
   require_(/create or replace function finalize_paid_package/.test(migration), "there is no package finalisation path");
@@ -453,7 +646,7 @@ check("production", 19, "package fan-out creates one enrollment per component", 
   return "one purchase, one allocation row per component, one enrollment per component";
 });
 
-check("production", 20, "the whole test suite passes", () => {
+check("platform", 24, "the whole test suite passes", () => {
   const output = execFileSync("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((name) => name.endsWith(".test.mjs")).map((name) => `tests/${name}`)], {
     cwd: root,
     encoding: "utf8",
@@ -469,27 +662,75 @@ check("production", 20, "the whole test suite passes", () => {
 
 /* ═════════════════════════════════════ report ══════════════════════════════════════════ */
 
-const forGate = GATE === "print" ? results.filter((result) => result.gate === "print") : results;
-const blocked = forGate.filter((result) => result.status === "block");
-const label = GATE === "print" ? "PRINT_READY" : "PRODUCTION_READY";
+const GATES = {
+  submission: { key: "CA_DRE_SUBMISSION_READY", of: (result) => result.gate === "submission" },
+  platform: { key: "CA_PLATFORM_PRODUCTION_READY", of: (result) => result.gate === "platform" },
+};
+
+const summary = Object.fromEntries(
+  Object.entries(GATES).map(([name, gate]) => {
+    const checks = results.filter(gate.of);
+    return [name, { key: gate.key, checks, blocked: checks.filter((check) => check.status === "block") }];
+  }),
+);
+const aggregateGranted = Object.values(summary).every((gate) => gate.blocked.length === 0);
+
+const shown =
+  GATE === "all" ? Object.keys(summary) : Object.keys(summary).filter((name) => name === GATE);
+if (shown.length === 0) {
+  console.error(`unknown gate "${GATE}" — expected submission, platform or all`);
+  process.exit(2);
+}
+const blockedShown = shown.flatMap((name) => summary[name].blocked);
 
 if (AS_JSON) {
-  console.log(JSON.stringify({ gate: label, granted: blocked.length === 0, checks: forGate }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        aggregate: { key: "STATECOURSE_CA_READY", granted: aggregateGranted },
+        gates: Object.fromEntries(
+          shown.map((name) => [
+            summary[name].key,
+            { granted: summary[name].blocked.length === 0, checks: summary[name].checks },
+          ]),
+        ),
+      },
+      null,
+      2,
+    ),
+  );
 } else {
-  const width = Math.max(...forGate.map((result) => result.title.length));
-  console.log(`\n  ${label} gate — ${forGate.length} checks\n`);
-  for (const result of forGate) {
-    const mark = result.status === "pass" ? "PASS " : "BLOCK";
-    console.log(`  ${mark}  ${String(result.id).padStart(2)}. ${result.title.padEnd(width)}  ${result.detail ?? ""}`);
+  for (const name of shown) {
+    const gate = summary[name];
+    const width = Math.max(...gate.checks.map((check) => check.title.length));
+    console.log(`\n  ${gate.key} — ${gate.checks.length} checks\n`);
+    for (const check of gate.checks) {
+      const mark = check.status === "pass" ? "PASS " : "BLOCK";
+      console.log(`  ${mark}  ${String(check.id).padStart(2)}. ${check.title.padEnd(width)}  ${check.detail ?? ""}`);
+    }
+    console.log("");
+    if (gate.blocked.length === 0) {
+      console.log(`  ${gate.key}: GRANTED`);
+    } else {
+      console.log(`  ${gate.key}: BLOCKED by ${gate.blocked.length} check(s)`);
+      for (const check of gate.blocked) console.log(`    ${check.id}. ${check.title}\n       ${check.detail}`);
+    }
   }
-  console.log("");
-  if (blocked.length === 0) {
-    console.log(`  ${label}: GRANTED\n`);
+  if (GATE === "all") {
+    console.log("");
+    console.log(
+      aggregateGranted
+        ? "  STATECOURSE_CA_READY: GRANTED — both gates pass.\n"
+        : "  STATECOURSE_CA_READY: BLOCKED — the aggregate requires both gates.\n",
+    );
+    /* Neither gate authorises selling a course. The Commissioner does. */
+    console.log(
+      "  Neither gate authorises offering these courses as qualifying education. Commissioner\n" +
+        "  approval does, and none has been issued.\n",
+    );
   } else {
-    console.log(`  ${label}: BLOCKED by ${blocked.length} check(s)\n`);
-    for (const result of blocked) console.log(`    ${result.id}. ${result.title}\n       ${result.detail}`);
     console.log("");
   }
 }
 
-process.exit(blocked.length === 0 ? 0 : 1);
+process.exit(blockedShown.length === 0 ? 0 : 1);

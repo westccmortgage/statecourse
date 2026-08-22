@@ -420,3 +420,99 @@ test("the migration records the allocation and the policy decision, and computes
   assert.match(migration, /'in_progress','submitted','expired'/);
   assert.equal(/'voided'/.test(migration.match(/final_exam_sessions[\s\S]{0,400}/)?.[0] ?? ""), false);
 });
+
+/* ──────────────────────────── the regulatory manifest ───────────────────────────────── */
+
+/*
+ * The manifest exists because two defects were the same defect: a BPPE basis the Bureau's own
+ * rule made unprovable, and a contact title no source states. Both are a document saying
+ * something its source does not. These tests hold the manifest to the rule that made it
+ * necessary — one home per regulated fact, and a source behind each.
+ */
+test("the manifest carries a source and a reading date for every authority", async () => {
+  const manifest = await import("../config/california/regulatory-manifest.mjs");
+  assert.ok(manifest.AUTHORITIES.length >= 8, "the manifest names too few authorities");
+  for (const authority of manifest.AUTHORITIES) {
+    assert.match(authority.id, /^[a-z0-9-]+$/, `${authority.id} is not a usable id`);
+    assert.ok(authority.citation.length > 10, `${authority.id} has no citation`);
+    assert.match(authority.url, /^https:\/\//, `${authority.id} has no source URL`);
+    assert.match(authority.verifiedAsOf, /^\d{4}-\d{2}-\d{2}$/, `${authority.id} has no reading date`);
+    /* "states" is what the source actually says, and it is what a claim is compared against.
+       An empty one would make the comparison vacuous. */
+    assert.ok(authority.states.length > 80, `${authority.id} does not record what its source says`);
+  }
+  assert.deepEqual(manifest.staleAuthorities(), [], "an authority has not been re-read inside the window");
+});
+
+test("every Department form is recorded with its revision and its content hash", async () => {
+  const manifest = await import("../config/california/regulatory-manifest.mjs");
+  const crypto = await import("node:crypto");
+  assert.ok(manifest.DRE_FORMS.length >= 10, "too few Department forms are recorded");
+  for (const form of manifest.DRE_FORMS) {
+    const full = path.join(root, form.file);
+    assert.ok(fs.existsSync(full), `${form.id}: ${form.file} is missing`);
+    assert.match(form.revision, /Rev\.? ?\d{1,2}\/\d{2,4}/, `${form.id} has no printed revision`);
+    /* The hash is what makes a silent re-issue detectable. A revision string alone would not:
+       the Department can re-post a form without changing what is printed on its face. */
+    const digest = crypto.createHash("sha256").update(fs.readFileSync(full)).digest("hex").slice(0, 16);
+    assert.equal(digest, form.sha256Prefix, `${form.id} on disk does not match the recorded content`);
+  }
+});
+
+test("the academic controls are the regulation's numbers and the database enforces them", async () => {
+  const { ACADEMIC_CONTROLS } = await import("../config/california/regulatory-manifest.mjs");
+  /* Regulation 3000(a)(1). */
+  assert.equal(ACADEMIC_CONTROLS.minimumHoursPerCourse, 45);
+  assert.equal(ACADEMIC_CONTROLS.minimumLessonAssignments, 15);
+  assert.equal(ACADEMIC_CONTROLS.minutesPerClassroomPeriod, 50);
+  /* RE 303 pp. 3-4. Two and a half weeks is 420 hours; the window is five weeks. */
+  assert.equal(ACADEMIC_CONTROLS.minimumElapsedHoursPerCourse, 420);
+  assert.equal(ACADEMIC_CONTROLS.maximumCoursesPerWindow, 2);
+  assert.equal(ACADEMIC_CONTROLS.windowDays, 35);
+  assert.equal(ACADEMIC_CONTROLS.crossSchoolRule, true, "RE 303 applies the window across schools");
+  assert.equal(ACADEMIC_CONTROLS.maximumCompletionDays, 365);
+  assert.equal(ACADEMIC_CONTROLS.finalExamMinimumQuestions, 100);
+  assert.equal(ACADEMIC_CONTROLS.finalExamPassingPercent, 60);
+  assert.equal(ACADEMIC_CONTROLS.finalExamNeverFurnishedToStudent, true);
+  assert.equal(ACADEMIC_CONTROLS.certificateDeliveryDays, 15);
+
+  /* The numbers are worth nothing described. The database must carry the same ones. */
+  const migration = fs.readFileSync(path.join(root, "database/004_california_prelicense.sql"), "utf8");
+  for (const [key, value] of [
+    ["minimum_elapsed_hours", ACADEMIC_CONTROLS.minimumElapsedHoursPerCourse],
+    ["maximum_completion_days", ACADEMIC_CONTROLS.maximumCompletionDays],
+    ["window_days", ACADEMIC_CONTROLS.windowDays],
+    ["lesson_assignments", ACADEMIC_CONTROLS.minimumLessonAssignments],
+    ["passing_percent", ACADEMIC_CONTROLS.finalExamPassingPercent],
+    ["questions_per_form", ACADEMIC_CONTROLS.finalExamMinimumQuestions],
+  ]) {
+    assert.match(migration, new RegExp(`"${key}":${value}`), `the database does not enforce ${key} = ${value}`);
+  }
+});
+
+test("the manifest claims no approval and names the figures that are ours, not the regulator's", async () => {
+  const manifest = await import("../config/california/regulatory-manifest.mjs");
+  assert.equal(manifest.SCHOOL.sponsorId, null);
+  assert.match(manifest.SCHOOL.approvalStatus, /Approval sought/i);
+  for (const program of manifest.PROGRAMS) {
+    assert.equal(program.approvalNumber, null, `${program.title} carries an approval number`);
+  }
+  /* The provider's own decisions are labelled as such, so no document can present one as a
+     regulatory requirement. */
+  assert.match(manifest.PROVIDER_DECISIONS.finalExamMinutesBasis, /No document read states any time limit/i);
+  assert.match(manifest.PROVIDER_DECISIONS.businessDayConvention, /StateCourse LLC's own/);
+});
+
+test("the withdrawn BPPE basis stays withdrawn, with the reason recorded", async () => {
+  const { BPPE_EXEMPTION } = await import("../config/california/regulatory-manifest.mjs");
+  assert.match(BPPE_EXEMPTION.basis, /94874\(f\)/);
+  assert.match(BPPE_EXEMPTION.withdrawnBasis, /94874\(d\)\(2\)\(A\)/);
+  /* Both halves of why: it does not describe these courses, and the Bureau asks for a letter
+     that cannot exist before the approval this application seeks. */
+  assert.match(BPPE_EXEMPTION.withdrawnReason, /not licence examination preparation|not license examination preparation/i);
+  assert.match(BPPE_EXEMPTION.withdrawnReason, /71395\(b\)\(7\)/);
+  assert.ok(
+    BPPE_EXEMPTION.highestProgramChargeUsd <= BPPE_EXEMPTION.thresholdUsd,
+    "the highest program charge now exceeds the exemption threshold",
+  );
+});
