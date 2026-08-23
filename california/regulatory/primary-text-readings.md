@@ -478,28 +478,47 @@ any of these:**
 
 ### What follows from this, stated plainly for the reviewer
 
-**Every other state in this project cites its statute section by section, and the reviewer can trace
-any sentence to a quoted provision.** California cannot be reviewed that way, because **the build
-carries no section citations at all.**
+**What this section said until 22 August 2026, and why it no longer describes the build.** It closed
+by recording that California carried no section citations at all, that a sweep of all 45 lessons
+found no California statutory or regulatory figure of any kind, and that the whole of the
+instruction was written without a single citation to the law it describes. **That was an accurate
+finding on 21 August 2026.** The source-expansion work of 22 August and the defect correction of
+23 August changed it. **The paragraphs below describe the build as it stands on 23 August 2026, and
+the historical finding is kept above because a register that quietly replaced it would be hiding the
+thing it exists to record.**
 
-**This cuts two ways, and both should be said.** The build has **not manufactured a citation, a
-figure, or a section number** — a sweep of all 45 lessons finds **no California statutory or
-regulatory figure of any kind**, and where a period appears it is arithmetic or a teaching scenario.
-The one place a retention period is discussed, a firm that *"discards loan files three years after
-closing, on the shortest period it could find"* is presented as the **error**, not the rule. **On the
-approval side — hours, lesson count, examination, timing, certificate, instructor, fee — the build
-rests on primary regulatory text and is traceable line by line, as section 7 shows.**
+**What is true now.** **Thirty-two California statutory and regulatory sections have been read in
+full and are recorded in the tables above**, each with where it is taught and what was taken from
+it. **Thirteen Real Estate Principles lesson assignments and one Real Estate Practice lesson
+assignment carry citations.** The other thirty-one assignments — the whole of Mortgage Loan
+Brokering and Lending, fourteen of the fifteen Practice assignments and two of the fifteen
+Principles assignments — carry none. **A reviewer can trace a cited sentence in those fourteen
+assignments to a provision recorded here, and cannot do that anywhere else in the build.** That
+boundary, and not a claim of completeness, is what this register is for.
 
-**But on the substantive side it rests on none.** The 386,565 words of instruction on agency, trust
-funds, disclosure, finance, fair housing and licence law are written **without a single citation to
-the California law they describe.** A reviewer therefore cannot check California's substantive
-content against a source the way they can check the other twelve states, and **the correct question
-to ask of this build is not "is the citation right" but "is the statement of California law
-correct."**
+**What has not changed, and is the reason the register exists.** **No citation, figure or section
+number in this build was manufactured.** A citation may be added only where the primary text behind
+it has actually been read and recorded in this file, and that is enforced rather than promised:
+`tests/state-record-citations.test.mjs` holds the list of sections read, fails on any citation in
+any lesson that the list does not name, and fails equally on a section the list names that this
+register does not record — so the curriculum and this register cannot drift apart in either
+direction. **Where a section has not been read, no lesson states its number, and none may be added
+without the reading behind it.** The one place a retention period is discussed, a firm that
+*"discards loan files three years after closing, on the shortest period it could find"* is still
+presented as the **error**, not the rule.
 
-**Closing this means reading the Business and Professions Code and the Commissioner's Regulations
-directly and citing them through the curriculum.** Until that is done, **no California module states
-a section number, and none may be added without the reading behind it.**
+**The instructional volume, counted on 23 August 2026: 427,153 words** — Real Estate Principles
+**166,323**, Real Estate Practice **135,445**, Mortgage Loan Brokering and Lending **125,385**. The
+figure of **386,565 words** used in section 1 is the count as it stood before the 22 August
+expansion, and is stated there in that historical sense.
+
+**For the thirty-one assignments that cite nothing, the question to ask is unchanged.** It is not
+*"is the citation right"* but **"is the statement of California law correct"** — because none of
+them rests on a section number, since none is stated.
+
+**On the approval side — hours, lesson count, examination, timing, certificate, instructor, fee — the
+build rests on primary regulatory text and is traceable line by line, as section 7 shows.** That was
+true on 21 August and it is true now.
 
 ---
 

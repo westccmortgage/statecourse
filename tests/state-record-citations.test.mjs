@@ -363,3 +363,86 @@ test("every California section citation is a text the register records as read",
     `non-Principles lessons citing law: ${citing.join(", ")}`,
   );
 });
+
+test("California's register describes the build it currently has, not the one it used to have", () => {
+  /*
+   * The stale-state defect, and the only kind of defect this file is exposed to.
+   *
+   * The register's closing section was written on 21 August 2026 and was accurate that day: it said
+   * California carried no section citations at all, that no California statutory or regulatory
+   * figure appeared anywhere, and that the curriculum ran to 386,565 words. The expansion of 22
+   * August and the correction of 23 August falsified all three, and rewrote the OPENING finding
+   * into the past tense while leaving the closing one in the present. For a day the register's last
+   * word on California traceability was a paragraph denying the traceability recorded in the tables
+   * immediately above it.
+   *
+   * Nothing could have caught that. No generator writes this file, no gate reads it, and the source
+   * lock scans california/submission only. So the counts it states are checked here against the
+   * curriculum they describe, and the sentences that went stale are named so they cannot come back.
+   */
+  const root = path.resolve(import.meta.dirname, "..");
+  const register = fs.readFileSync(path.join(root, "california/regulatory/primary-text-readings.md"), "utf8");
+
+  /* Each of these was true on 21 August and false afterwards. A register may quote them as history
+     — the current section does — but not assert them, so each is checked as a sentence rather than
+     as a phrase: the historical paragraph reports them indirectly and does not reproduce them. */
+  for (const stale of [
+    /the build\s+carries no section citations at all/,
+    /a sweep of all 45 lessons finds \*\*no California statutory or\s+regulatory figure of any kind\*\*/,
+    /are written \*\*without a single citation to\s+the California law they describe/,
+    /\*\*no California module states\s+a section number/,
+  ]) {
+    assert.doesNotMatch(register, stale, `the register asserts, in the present tense, something that stopped being true on 22 August 2026: ${stale}`);
+  }
+
+  /* The word counts, against the lessons themselves. This is what goes stale first and shows last. */
+  const courses = {
+    "Real Estate Principles": "ca-real-estate-principles-45-v1",
+    "Real Estate Practice": "ca-real-estate-practice-45-v1",
+    "Mortgage Loan Brokering and Lending": "ca-mortgage-loan-brokering-lending-45-v1",
+  };
+  let total = 0;
+  for (const [title, courseId] of Object.entries(courses)) {
+    const dir = path.join(root, "california", courseId, "curriculum");
+    const words = fs
+      .readdirSync(dir)
+      .filter((file) => /^lesson-\d+\.md$/.test(file))
+      .reduce((sum, file) => sum + fs.readFileSync(path.join(dir, file), "utf8").split(/\s+/).filter(Boolean).length, 0);
+    total += words;
+    assert.ok(
+      register.includes(words.toLocaleString("en-US")),
+      `${title} is ${words.toLocaleString("en-US")} words and the register does not state that figure`,
+    );
+  }
+  assert.ok(
+    register.includes(total.toLocaleString("en-US")),
+    `the California curriculum is ${total.toLocaleString("en-US")} words and the register does not state that total`,
+  );
+
+  /* And the counts of what cites law, spelled as the section spells them. */
+  const spell = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven",
+    "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
+  const named = (value) => (value <= 20 ? spell[value] : value === 31 ? "thirty-one" : String(value));
+  const citing = { "ca-real-estate-principles-45-v1": 0, "ca-real-estate-practice-45-v1": 0, "ca-mortgage-loan-brokering-lending-45-v1": 0 };
+  let lessons = 0;
+  for (const courseId of Object.keys(citing)) {
+    const dir = path.join(root, "california", courseId, "curriculum");
+    for (const file of fs.readdirSync(dir).filter((name) => /^lesson-\d+\.md$/.test(name))) {
+      lessons += 1;
+      const text = fs.readFileSync(path.join(dir, file), "utf8");
+      if (/(?:§\s?\d{2,5}|(?:Section|Bus\. & Prof\.|B&P)\s?\d{3,5})/.test(text)) citing[courseId] += 1;
+    }
+  }
+  const cited = Object.values(citing).reduce((sum, value) => sum + value, 0);
+  const expectations = [
+    [named(citing["ca-real-estate-principles-45-v1"]), "Real Estate Principles lesson assignments that cite law"],
+    [named(lessons - cited), "lesson assignments that cite nothing"],
+  ];
+  for (const [word, what] of expectations) {
+    assert.match(
+      register.toLowerCase(),
+      new RegExp(word.toLowerCase()),
+      `the register does not state "${word}" — the number of ${what}`,
+    );
+  }
+});
