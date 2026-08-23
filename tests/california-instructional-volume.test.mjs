@@ -117,3 +117,23 @@ test("RE 313 carries the volume's real page count, not an instruction to count i
     assert.match(sheet, new RegExp(`\\| — Pages \\| \\*\\*${pages}\\*\\* \\|`), `${program.title}: RE 313 does not carry ${pages}`);
   }
 });
+
+test("the printing instructions state the page count of the volume that will be printed", () => {
+  /* The defect this exists for. The volume grew from 332 to 456 pages and the instructions for
+     the person taking the PDFs to a printer still named 332 / 330 / 334 — three numbers that
+     described a book nobody would receive. Every other page figure is generated; this file is
+     written by hand, which is exactly why it drifted and why it needs a check of its own. */
+  const instructions = fs.readFileSync(path.join(ROOT, "california/submission/PRINT_AND_MAIL_INSTRUCTIONS_FOR_ANATOLIY.md"), "utf8");
+  const counts = PROGRAMS.map((program) => pageCount(volume(program)));
+  for (const [index, program] of PROGRAMS.entries()) {
+    assert.match(
+      instructions,
+      new RegExp(`\`${program.courseId}-course-text\\.pdf\` \\| \\*\\*${counts[index]}\\*\\*`),
+      `${program.title}: the printing instructions do not state its ${counts[index]} pages`,
+    );
+  }
+  assert.ok(
+    instructions.includes(`**${counts.join(" / ")}**`),
+    `the packet checklist does not state ${counts.join(" / ")} for the three volumes`,
+  );
+});
