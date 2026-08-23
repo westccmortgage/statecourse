@@ -209,7 +209,7 @@ These are what a mortgage licensee actually needs, because each can put a lender
 | Exception | Effect |
 |---|---|
 | **Property tax liens** | Generally take priority **regardless of when they attached** |
-| **Mechanic's liens** | Priority **may relate back** to when work commenced — so a lien recorded after a deed of trust may outrank it |
+| **Mechanic's liens** | Priority **may relate back** to when work commenced — so a lien recorded after a deed of trust may outrank it **where that deed of trust attached after the work commenced**, and not where it was already attached and of record |
 | **Subordination agreement** | A lienholder voluntarily takes a lower position |
 | **Purchase-money priority** | Certain purchase-money security interests receive favored treatment |
 | **Special assessment liens** | May carry their own priority treatment |
@@ -444,7 +444,7 @@ You should be able to compare the foreclosure paths, explain the reinstatement w
 | **Bona fide encumbrancer** | A lender taking for value, in good faith, and without notice. |
 | **First in time, first in right** | The general priority rule, measured by recording. |
 | **Property tax lien priority** | Generally takes priority **regardless of when it attached.** |
-| **Mechanic's lien relation-back** | Priority may run from **when work commenced**, so a lien recorded later can outrank a deed of trust — and rights arise from work rather than from a contract with the owner. |
+| **Mechanic's lien relation-back** | Priority may run from **when work commenced**, so a lien recorded later can outrank a deed of trust **that attached after the work began** — not one already attached and of record. Rights arise from work rather than from a contract with the owner. |
 | **Exception versus requirement** | An item the policy will not insure against; versus something the insurer needs before issuing. **Requirements carry deadlines.** |
 | **Subordination agreement** | A lienholder's agreement to take a lower position. **A significant decision for that party with counsel** — never "standard." |
 | **Subordination clause** | A provision obligating a holder to subordinate to future financing meeting stated conditions. |
@@ -549,7 +549,10 @@ the final payment. Two subcontractors he never met have been calling.
 >
 > **Two features make this the exception a mortgage licensee must recognize.** Priority **may relate
 > back to when work commenced** — a date months before any lien is recorded — so **a lien recorded next
-> month can outrank a deed of trust recorded before it.** And **lien rights arise from the work rather
+> month can outrank a deed of trust recorded before the lien, where that deed of trust attached after
+> the work commenced.** The refinance being arranged here is exactly such a deed of trust: the work
+> began four months ago and the new loan has not recorded yet. **What relation-back does not do is
+> displace an encumbrance already attached and of record when the work began.** And **lien rights arise from the work rather
 > than from a contract with the owner**, which is why subcontractors and suppliers the borrower never
 > dealt with can have them.
 >

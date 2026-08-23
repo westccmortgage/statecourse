@@ -10,8 +10,8 @@ re-rendered or edited to make the copy.
 | File | `Real_Estate_Principles_45_Hour_Final_458pp.pdf` |
 | Course | Real Estate Principles, 45 hours (`ca-real-estate-principles-45-v1`) |
 | Pages | **458** |
-| SHA-256 | `5b8610a93e0b5f296ce418ef3b9204de2679c3f352370937763712ea9f319c33` |
-| Bytes | 6,439,467 |
+| SHA-256 | `f9968a7d2fad6bec8e4d233541912bcbca24c7cdcabddaa6997f7bbab8eab4ef` |
+| Bytes | 6,441,134 |
 
 **Why the hash is written down.** The builder renders through headless Chromium, so a rebuild of
 identical content can produce a file with a different hash. The hash above identifies *this* file —
@@ -26,6 +26,11 @@ unadjusted figure printed in Code of Civil Procedure § 704.730 as if it were th
 were corrected against the primary text, which is what added the two pages. The superseded
 `…_456pp.pdf` was deleted rather than kept, so that no file in this directory carries a page count
 that is not the page count of the book inside it.
+
+**A second pass the same day narrowed six summary sentences** that still said a mechanics lien
+"can outrank a deed of trust recorded before it" without naming the condition under which it does.
+The page count did not move; the bytes and the hash did, which is the reason a hash is recorded
+here at all. The hash above is the current one.
 
 **`california/print/*.pdf` is gitignored; this file is not.** The build outputs are regenerated
 and not tracked. This one is tracked on purpose, because it is a submitted deliverable rather than

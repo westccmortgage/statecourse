@@ -246,3 +246,51 @@ test("no adjusted homestead figure is stated anywhere in the California build", 
     }
   }
 });
+
+test("no lesson claims a mechanics lien outranks a recorded instrument without saying when", () => {
+  /*
+   * The residual half of the priority defect, and the reason it survived the first correction.
+   *
+   * The waterfall was fixed and the § 8450 quotation added, while four summary sentences elsewhere
+   * still read "a lien recorded later can outrank a deed of trust recorded before it" with no
+   * condition attached. Each is defensible on its own — a deed of trust CAN be recorded before the
+   * lien and still lose, if it attached after the work commenced — but read alone each one teaches
+   * the thing § 8450 does not say, which is that relation-back beats whatever came first.
+   *
+   * So the rule enforced here is about what a sentence must carry, not about what it must avoid: a
+   * sentence that claims a mechanics lien outranks something has to name the condition under which
+   * it does. That is checkable, it does not dictate wording, and it covers courses that cite no
+   * section as well as the one that does.
+   */
+  const OUTRANKS = /\b(outrank|takes? priority over|nonetheless take priority)/i;
+  /* Any sentence making a priority claim ABOUT a mechanics lien, however it refers to one — by name,
+     by the relation-back label, or by the commencement date the doctrine turns on. */
+  const LIEN = /mechanic|relation.back|relates? back|commencement of the work|work commenced|work of improvement/i;
+  /* And the conditions that make such a claim true. "The new deed of trust" earns its place: in a
+     refinance the new deed of trust is recorded now, after work already begun, so it is inside
+     § 8450(a)(1) by the facts of the scenario rather than by a stated condition. */
+  const QUALIFIED = /after (?:the )?(?:work |improvement )?commenc|attached after|attaches after|recorded in between|the new deed of trust|already attached|8450/i;
+
+  const offenders = [];
+  for (const course of fs.readdirSync(path.join(ROOT, "california"), { withFileTypes: true })) {
+    const dir = path.join(ROOT, "california", course.name, "curriculum");
+    if (!course.isDirectory() || !fs.existsSync(dir)) continue;
+    for (const file of fs.readdirSync(dir).filter((name) => /^lesson-\d+\.md$/.test(name))) {
+      const text = fs.readFileSync(path.join(dir, file), "utf8");
+      /* Newlines are joined first — a markdown sentence wraps, and splitting on the wrap would
+         separate the claim from the lien it is about, which is how the first version of this test
+         passed over the very sentences it was written for. Table cells then split on the pipe. */
+      const flat = text.replace(/\n[>\s]*/g, " ");
+      for (const sentence of flat.split(/(?<=[.!?])\s+|\|/)) {
+        if (!OUTRANKS.test(sentence) || !LIEN.test(sentence)) continue;
+        if (QUALIFIED.test(sentence)) continue;
+        offenders.push(`${course.name}/${file}: ${sentence.trim().slice(0, 150)}`);
+      }
+    }
+  }
+  assert.deepEqual(
+    offenders,
+    [],
+    "these sentences say a mechanics lien outranks something without saying when it does:\n  " + offenders.join("\n  "),
+  );
+});

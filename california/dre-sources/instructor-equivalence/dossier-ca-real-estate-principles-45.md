@@ -44,7 +44,7 @@ five-item remediation set covering the same concepts a second way for students w
 | --- | --- |
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
-| Words of instructional text | 166,228 |
+| Words of instructional text | 166,323 |
 | Printed volume | **458 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
@@ -61,7 +61,7 @@ This course is at **458 pages, measured from the bound volume**, meeting the ben
 | 2 | Real property, personal property, and fixtures | 180 | ~36.3 | Written |
 | 3 | Estates, ownership, and common interests | 180 | ~36.5 | Written |
 | 4 | Land description, measurement, and boundaries | 180 | ~36.4 | Written |
-| 5 | Encumbrances, liens, easements, and restrictions | 180 | ~39.3 | Written |
+| 5 | Encumbrances, liens, easements, and restrictions | 180 | ~39.6 | Written |
 | 6 | Government powers, land use, and environmental controls | 180 | ~37.4 | Written |
 | 7 | Agency and brokerage relationships | 180 | ~37.7 | Written |
 | 8 | Contracts and transaction formation | 180 | ~36.2 | Written |

@@ -44,7 +44,7 @@ five-item remediation set covering the same concepts a second way for students w
 | --- | --- |
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
-| Words of instructional text | 125,295 |
+| Words of instructional text | 125,385 |
 | Printed volume | **380 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
@@ -63,7 +63,7 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | ---: | --- | ---: | ---: | --- |
 | 1 | California mortgage brokerage and regulatory structure | 180 | ~27.0 | Written |
 | 2 | Money, interest, notes, and loan mathematics | 180 | ~27.3 | Written |
-| 3 | Security instruments and lien priority | 180 | ~28.4 | Written |
+| 3 | Security instruments and lien priority | 180 | ~28.6 | Written |
 | 4 | Mortgage markets, sources, and loan products | 180 | ~29.4 | Written |
 | 5 | Application, borrower information, and qualification | 180 | ~29.0 | Written |
 | 6 | Underwriting, collateral, and approval conditions | 180 | ~29.4 | Written |
@@ -321,7 +321,7 @@ comments are wanted while the remaining depth is being written, not afterwards.
 | Inquiry notice | Facts that would prompt a reasonable person to investigate |
 | Exception | Effect |
 | Property tax liens | Generally take priority regardless of when they attached |
-| Mechanic's liens | Priority may relate back to when work commenced — so a lien recorded after a deed of trust may outrank it |
+| Mechanic's liens | Priority may relate back to when work commenced — so a lien recorded after a deed of trust may outrank it where that deed of trust attached after the work commenced, and not where it was already attached and of record |
 | Subordination agreement | A lienholder voluntarily takes a lower position |
 | Purchase-money priority | Certain purchase-money security interests receive favored treatment |
 | Special assessment liens | May carry their own priority treatment |

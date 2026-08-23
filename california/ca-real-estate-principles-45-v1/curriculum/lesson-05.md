@@ -102,7 +102,7 @@ Property taxes become a lien on the property. Two features make them exceptional
 
 A **mechanic's lien** secures payment for labor or materials furnished for the improvement of real property. It is the lien licensees most often mishandle, for two reasons.
 
-**Priority may relate back.** A mechanic's lien's priority may relate back to a time earlier than its recording — commonly tied to when work commenced or the improvement began — which means a lien recorded after a lender's deed of trust may nonetheless take priority over it. This defeats the ordinary "first recorded, first in right" intuition.
+**Priority is measured from commencement of the work, not from recording.** **A mechanics lien recorded later can outrank an encumbrance recorded before the lien if that encumbrance attached after commencement of the work**, or otherwise falls within Civil Code § 8450(a). **It does not outrank an encumbrance already attached and of record when the work commenced, merely because of relation-back.** So the lien defeats the ordinary "first recorded, first in right" intuition without displacing the lender who was already there. Section 5.7 sets out the section's own words and works the order as arithmetic.
 
 **It arises from work, not from a contract with the owner.** A subcontractor or supplier the owner never dealt with, and may never have heard of, can have lien rights arising from work on the property.
 
@@ -694,8 +694,10 @@ trust; (b) a property tax lien; (c) a judgment lien; (d) a mechanic's lien.
 > outstanding judgment discovers it attaching to the property he is buying, and why a judgment against
 > a similarly named person must be resolved through title rather than assumed away.
 >
-> (d) **Involuntary and specific.** Consequence: its priority **may relate back** to when work
-> commenced, so it can outrank instruments recorded before it.
+> (d) **Involuntary and specific.** Consequence: its priority is **measured from commencement of the
+> work**, so it can outrank an instrument recorded before the lien **if that instrument attached after
+> the work commenced** — and not one already attached and of record when the work began (Civil Code
+> § 8450(a)).
 
 ### Problem 2
 
@@ -708,9 +710,10 @@ calling. The preliminary report is clean.
 > **Solution.** **A clean report is a snapshot, not a forecast.** Mechanic's lien exposure is exactly
 > what a current report can fail to show.
 >
-> **Two features make this dangerous.** Priority **may relate back** to when work commenced, so a lien
-> recorded next month can outrank a deed of trust recorded before it — which is why lenders care about
-> recent construction. And lien rights arise **from work, not from a contract with the owner**: the
+> **Two features make this dangerous.** Priority is **measured from commencement of the work**, so a lien
+> recorded next month can outrank a deed of trust recorded before the lien **if that deed of trust
+> attached after last spring's work commenced** — though not one already attached and of record before
+> the work began (Civil Code § 8450(a)). That is why lenders care about recent construction. And lien rights arise **from work, not from a contract with the owner**: the
 > subcontractors and suppliers the seller never dealt with can have rights of their own.
 >
 > **What the licensee does:** ask the intake question — *has any work been done recently, by whom, and
