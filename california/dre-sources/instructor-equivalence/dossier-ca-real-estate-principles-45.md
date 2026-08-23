@@ -44,14 +44,14 @@ five-item remediation set covering the same concepts a second way for students w
 | --- | --- |
 | Lesson assignments | 15 |
 | Lessons written as distinct instruction | 15 of 15 |
-| Words of instructional text | 164,905 |
-| Printed volume | **456 pages**, measured from the bound PDF submitted with this application |
+| Words of instructional text | 166,228 |
+| Printed volume | **458 pages**, measured from the bound PDF submitted with this application |
 | Scored assessment items | 165 |
 
 RE 303 states that *"approximately 450 pages of text/instructional material is equivalent to
 textbooks offered by a California college or university"* for a 45-hour course.
 
-This course is at **456 pages, measured from the bound volume**, meeting the benchmark. The volume contains the complete student-viewable instructional text together with the applied exercise, engagement check and remediation set for every assignment — all of the material RE 303 item 6 asks for.
+This course is at **458 pages, measured from the bound volume**, meeting the benchmark. The volume contains the complete student-viewable instructional text together with the applied exercise, engagement check and remediation set for every assignment — all of the material RE 303 item 6 asks for.
 
 ## Timed course outline
 
@@ -61,7 +61,7 @@ This course is at **456 pages, measured from the bound volume**, meeting the ben
 | 2 | Real property, personal property, and fixtures | 180 | ~36.3 | Written |
 | 3 | Estates, ownership, and common interests | 180 | ~36.5 | Written |
 | 4 | Land description, measurement, and boundaries | 180 | ~36.4 | Written |
-| 5 | Encumbrances, liens, easements, and restrictions | 180 | ~36.4 | Written |
+| 5 | Encumbrances, liens, easements, and restrictions | 180 | ~39.3 | Written |
 | 6 | Government powers, land use, and environmental controls | 180 | ~37.4 | Written |
 | 7 | Agency and brokerage relationships | 180 | ~37.7 | Written |
 | 8 | Contracts and transaction formation | 180 | ~36.2 | Written |
@@ -72,7 +72,7 @@ This course is at **456 pages, measured from the bound volume**, meeting the ben
 | 13 | Taxation, investment, and real estate mathematics | 180 | ~37.7 | Written |
 | 14 | Fair housing, civil rights, and consumer protection | 180 | ~37.0 | Written |
 | 15 | Leasing, property management, license law, and integrated transaction | 180 | ~40.0 | Written |
-| | **Total** | **2700 minutes = 45 hours** | **~456** | |
+| | **Total** | **2700 minutes = 45 hours** | **~458** | |
 
 ## Lesson detail
 
@@ -491,6 +491,14 @@ This course is at **456 pages, measured from the bound volume**, meeting the ben
 | Judgment lien | Involuntary |
 | Federal tax lien | Involuntary |
 | Special assessment | Involuntary |
+| Component | Where it comes from |
+| Statutory base ceiling — $600,000 | § 704.730(a)(1), on the face of the code |
+| Statutory base floor — $300,000 | § 704.730(a)(2), on the face of the code |
+| The annual inflation adjustment | § 704.730(b) — the California CPI for All Urban Consumers published by the Department of Industrial Relations, for the one-year period ending 31 December, rounded to the nearest $25 |
+| The adjusted ceiling | The base ceiling as adjusted each January since 2022. Not printed in the section |
+| The adjusted floor | The base floor as adjusted each January since 2022. Not printed in the section |
+| The countywide median | The prior calendar year's countywide median sale price for a single-family home in the county. The section names no source for it |
+| The exemption | The greater of (the county median, capped at the adjusted ceiling) and the adjusted floor |
 | Item | Amount |
 | Property tax lien | $6,400 |
 | First deed of trust | $610,000 |
@@ -529,7 +537,7 @@ This course is at **456 pages, measured from the bound volume**, meeting the ben
 | Inquiry notice | Facts that would prompt a reasonable person to investigate — such as someone visibly in possession who is not the record owner |
 | Exception | Effect |
 | Property tax liens | Generally take priority regardless of when they attached |
-| Mechanic's liens | Priority may relate back to when work commenced, ahead of instruments recorded earlier than the lien |
+| Mechanics liens | Priority is measured from commencement of the work rather than from the lien's own recording date — ahead of what attached after the work began, behind what was already attached (Civil Code § 8450) |
 | Subordination agreement | A lienholder agrees to take a lower position than it would otherwise hold |
 | Purchase-money priority | Certain purchase-money security interests receive favored treatment |
 | Recorded | Lien |
@@ -540,9 +548,9 @@ This course is at **456 pages, measured from the bound volume**, meeting the ben
 | 2026 | Property taxes |
 | Order | Lien |
 | 1 | Property taxes 2026 |
-| 2 | Mechanics lien — relates back to 2023 |
-| 3 | First deed of trust 2019 |
-| 4 | Second deed of trust 2022 |
+| 2 | First deed of trust 2019 |
+| 3 | Second deed of trust 2022 |
+| 4 | Mechanics lien — measured from 2023 |
 | 5 | Abstract of judgment 2024 |
 | Item | Correct handling |
 | Utility easement along the rear line | Obtain the document; width, location, permitted use. Can prevent structures the buyer intends |

@@ -32,7 +32,7 @@ RE 313 carries DRE's own fixed boilerplate below the fill-in fields — the DRE 
 | TEXTBOOK / WORKBOOK / OUTLINE — Title | *Real Estate Principles — StateCourse LLC California Course Text* |
 | — Author(s) | StateCourse LLC |
 | — Copyright Date | 2026 |
-| — Pages | **456** |
+| — Pages | **458** |
 | — Edition | 1.0 |
 | REFUND/CANCELLATION POLICY | **Policy CA-2026-08-20-v1** — the text in the block below, entered verbatim |
 | FINAL EXAMINATION CRITERIA — Number of questions | **100** |

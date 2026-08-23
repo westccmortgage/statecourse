@@ -29,7 +29,11 @@ university"* for a 45-hour course, and the Principles volume was well short of t
 material used to close the gap is the primary statutory text this register had recorded as the
 largest omission in the build** — the Business and Professions Code above all. Twenty-three sections
 were read in full from the publishers' own sites and are listed in section 8 with what was taken
-from each. The Principles volume now stands at **456 printed pages**, and it carries the complete
+from each. **On 23 August 2026 a defect-correction pass added eight more** — Civil Code §§ 8402 and
+8450 to 8458, Revenue and Taxation Code §§ 2187 and 2192.1, and Code of Civil Procedure § 703.150 —
+read because two worked examples in Principles Assignment 05 stated a priority rule and an exemption
+figure that the sections behind them do not support. **Both were corrected against the sections
+themselves, and section 8 records what each says.** The Principles volume now stands at **458 printed pages**, and it carries the complete
 student-viewable instructional text together with every assignment's applied exercise, engagement
 check and remediation set.
 
@@ -372,11 +376,41 @@ All read in full from leginfo.legislature.ca.gov:
 | **Civil Code § 2924** | Principles 11 § 6.10 | A security transfer deemed a mortgage except in trust; the power of sale exercisable after breach |
 | **CCP § 580b** | Principles 11 §§ 6.11-6.12 | The purchase-money bar; the "new advance" on a refinance; payments applied to the protected balance first; the guarantor carve-out |
 | **CCP § 580d** | Principles 11 §§ 6.11-6.12 | No deficiency after a sale under the power of sale; the guarantor carve-out |
-| **CCP § 704.730** | Principles 05 §§ 2.8-2.10 | The homestead exemption as the greater of a capped county median or a floor, both CPI-adjusted |
+| **CCP § 704.730** | Principles 05 §§ 2.8-2.10 | The homestead exemption as the greater of a capped county median or a floor; that the **$300,000 and $600,000 printed in subdivision (a) are base amounts**, adjusted every January since 2022 by the California CPI published by the Department of Industrial Relations, rounded to the nearest $25; and that **the section prints no adjusted figure and names no publisher of one** |
 | **R&T § 11911** | Principles 13 §§ 5.9-5.10 | The city rate and the $500-or-fractional-part unit; the base exclusive of a lien remaining at sale; the city-against-county credit |
 | **Gov. Code § 12955** | Principles 14 §§ 2.8-2.9 | The California characteristics; (g) and (i) reaching the licensee; (n) and (o) on aggregate income and rent subsidies; (m) on perception |
 | **Gov. Code § 66410** | Principles 06 § 3.7 | The Subdivision Map Act's citation name |
 | **Gov. Code § 66424** | Principles 06 § 3.7 | "Subdivision" for map purposes; contiguity across roads; condominium projects and stock cooperative conversions included |
+
+**Added 23 August 2026, in their own text, for the Assignment 05 defect correction.** All read in
+full from leginfo.legislature.ca.gov on 23 August 2026, each page carrying the amendment history
+quoted below, which is how the reading was confirmed to be the operative text:
+
+| Source | Operative text as read | Where it is taught | What was taken from it |
+|---|---|---|---|
+| **Civil Code § 8450** | *"Added by Stats. 2010, Ch. 697, Sec. 20. (SB 189) Effective January 1, 2011. Operative July 1, 2012"* | Principles 05 §§ 5.3, 5.7 | That a mechanics lien has priority over an encumbrance that **attaches after commencement of the work of improvement**, or that was unrecorded at commencement and of which the claimant had no notice — **and over nothing else**; that subdivision (a) excepts a § 8402 lien; that subdivision (b) is subject to § 8452 |
+| **Civil Code § 8402** | Same enactment | Principles 05 § 5.7 | That the lien § 8450(a) excepts is that of a person providing work for a **site improvement** |
+| **Civil Code § 8452** | Same enactment | Principles 05 § 5.7 | The payment-bond exception: a bond referring to the mortgage or deed of trust, in an amount not less than **75 percent** of its principal |
+| **Civil Code § 8458** | Same enactment | Principles 05 § 5.7 | That site-improvement lien priority is set separately, and is therefore not what § 8450 governs |
+| **Civil Code §§ 8454, 8456** | Same enactment | — | **Read and taken from in nothing.** Recorded here because the article was read whole rather than section by section |
+| **R&T § 2192.1** | *"Amended by Stats. 1993, Ch. 853, Sec. 1. Effective October 6, 1993."* | Principles 05 § 5.7 | That every tax, and every public improvement assessment, declared a lien on real property has priority over all other liens *"regardless of the time of their creation"* — quoted, as the authority for putting property taxes first in the waterfall |
+| **R&T § 2187** | *"Amended by Stats. 2002, Ch. 206, Sec. 1."* | — | **Read and taken from in nothing.** It establishes that the tax is a lien; § 2192.1 is what gives it priority |
+| **CCP § 703.150** | *"Amended by Stats. 2024, Ch. 80, Sec. 23. (SB 1525) Effective January 1, 2025."* | Principles 05 § 2.8 | That the Judicial Council's publication duty in subdivision (e) runs to § 703.140(b) and to the article beginning at **§ 704.010** — **and not to the homestead article** |
+| **CCP § 704.730**, re-read | *"Amended by Stats. 2024, Ch. 80, Sec. 24. (SB 1525) Effective January 1, 2025."* | Principles 05 §§ 2.8, 2.10 | Subdivision (b) in full, including the clause the course had elided: the index is the **California Consumer Price Index for All Urban Consumers published by the Department of Industrial Relations**, for the one-year period ending 31 December preceding the adjustment |
+
+**One non-statutory source was read with them, and it is the reason a number is absent rather than
+present.** **Judicial Council of California form EJ-156, *Current Dollar Amounts of Exemptions From
+Enforcement of Judgments*, revision of 20 July 2026**, read from courts.ca.gov on 23 August 2026.
+The form lists the current amounts for § 703.140(b) and for the article beginning at § 704.010.
+**It carries no homestead figure at all** — which, with § 703.150(e)'s scope, is the whole basis for
+the course teaching the § 704.730 calculation and its inputs while stating no adjusted dollar amount.
+**No adjusted figure was computed here, and none appears anywhere in this build.**
+
+**The inflation-adjusted homestead amounts are therefore an input this project does not hold.** The
+California Consumer Price Index the section runs on is published by the **Department of Industrial
+Relations**; the countywide median sale price the section runs on has **no publisher named in the
+section**. Both are named in Principles 05 § 2.8 as things a licensee must obtain elsewhere, and
+neither is stated as a figure anywhere in this build.
 
 **Sections named inside a quotation are not sections this project has read.** Several appear only
 because a section that WAS read refers to them, and each appears in this build inside quotation
@@ -412,11 +446,13 @@ any of these:**
   **no figure, effective date beyond 1 January 2024 as both documents state it, or definition is
   taken from the bill.** The course's compliance is stated against what the Department says the
   requirement is; a reading of the enacted text could only narrow that, not widen it.
-- **The California Civil Code beyond §§ 51, 660, 683, 1102, 1214, 1624, 1950.5, 2079.16 and 2924.**
-  Not read: the rest of the agency article at **§§ 2079 to 2079.25** apart from § 2079.16; the
-  **transfer disclosure statement's own statutory form at § 1102.6**; the remainder of the recording
-  chapter beyond § 1214; the **works of improvement and mechanics lien provisions at § 8000 and
-  following**; the landlord-tenant provisions beyond § 1950.5; and the **Davis-Stirling Common
+- **The California Civil Code beyond §§ 51, 660, 683, 1102, 1214, 1624, 1950.5, 2079.16, 2924, 8402 and
+  8450 to 8458.** Not read: the rest of the agency article at **§§ 2079 to 2079.25** apart from
+  § 2079.16; the **transfer disclosure statement's own statutory form at § 1102.6**; the remainder of
+  the recording chapter beyond § 1214; **the works of improvement provisions at § 8000 and following
+  apart from the mechanics lien priorities article** — the notice, claim, timing and enforcement
+  provisions were not opened, and no deadline, notice requirement or enforcement step in this build
+  comes from them; the landlord-tenant provisions beyond § 1950.5; and the **Davis-Stirling Common
   Interest Development Act at § 4000 and following**, which Principles 03 § 5.8 discusses expressly
   as a body of law this course does not teach.
 - **The Fair Employment and Housing Act beyond § 12955**, **the Unruh Civil Rights Act beyond
@@ -433,8 +469,10 @@ any of these:**
   **anti-deficiency statutes** — despite one of the three courses being **Mortgage Loan Brokering and
   Lending**.
 - **California's landlord-tenant statutes**, **escrow law**, **subdivision and public report law**,
-  **documentary transfer tax** and any **rate**, and **property tax law including Proposition 13** in
-  its own text.
+  **documentary transfer tax** beyond § 11911, and **property tax law including Proposition 13** in its
+  own text beyond **R&T §§ 2187 and 2192.1** — the lien and its priority were read on 23 August 2026;
+  the assessment, levy, collection, penalty and redemption provisions were not, and no rate, deadline
+  or penalty in this build comes from any of them.
 - **Any Department examination content outline or candidate handbook**, and any figure for the state
   licensing examination.
 

@@ -608,7 +608,7 @@ const assignments = {
           "It has no priority until the contractor obtains a judgment."
         ],
         correctChoice: 0,
-        rationale: "The relation-back feature is what makes mechanic's liens a hazard for lenders and buyers: a lien recorded later can outrank an intervening interest. It is neither automatically first nor dependent on a judgment."
+        rationale: "The relation-back feature is what makes mechanic's liens a hazard for lenders and buyers: a lien recorded later can outrank an interest that attached after the work began. It measures the lien from commencement rather than promoting it to first position, so it does not reach an encumbrance already attached and of record when work started. It is neither automatically first nor dependent on a judgment."
       },
       {
         prompt: "A buyer's preliminary report lists a utility easement running along the rear property line. What should the licensee advise?",

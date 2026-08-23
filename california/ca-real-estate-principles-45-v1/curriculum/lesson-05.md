@@ -146,15 +146,29 @@ Section 2.3 listed the involuntary liens a judgment creditor can reach. The home
 >
 > *(2) **Three hundred thousand dollars ($300,000)**.*
 >
-> *(b) The amounts specified in this section shall **adjust annually for inflation**, beginning on January 1, 2022, based on the change in the annual California Consumer Price Index for All Urban Consumers … with each adjusted amount rounded to the nearest twenty-five dollars ($25)."*
+> *(b) The amounts specified in this section shall **adjust annually for inflation**, beginning on January 1, 2022, based on the change in the annual California Consumer Price Index for All Urban Consumers, **published by the Department of Industrial Relations**, for the most recent one-year period ending on December 31 preceding the adjustment, with each adjusted amount rounded to the nearest twenty-five dollars ($25)."*
 
-**Four features of that section a licensee should hold onto.**
+**Four features of that section a licensee should hold onto, and one thing the section does not contain.**
 
-**It is a floor and a ceiling, not a single number.** The exemption is *at least* $300,000 and *at most* $600,000, with the actual figure set by the prior year's countywide median sale price. In a county whose median is $480,000, the exemption is $480,000. In a county whose median is $1.4 million, it is capped at $600,000. In a county whose median is $210,000, the floor lifts it to $300,000.
+**It is a floor and a ceiling, not a single number — and the two figures printed in subdivision (a) are base figures.** The structure is: the prior year's countywide median sale price for a single-family home, **capped** at the ceiling, or the **floor**, whichever is greater. A county median far below the floor is lifted to the floor; a median far above the ceiling is cut to the ceiling; a median between them is the answer. **What subdivision (a) prints as $300,000 and $600,000 are the amounts as enacted**, and subdivision (b) then adjusts both of them every January.
 
 **It is county-specific.** The same debtor with the same equity is protected differently in Kern and in Marin. **This is one of the few places in California real property law where the answer depends on which county the property is in**, and it is worth remembering because most rules do not work that way.
 
-**Both figures index annually.** The $300,000 and $600,000 in the printed section are the amounts as enacted; they adjust each January by the California CPI, rounded to the nearest $25. **A figure quoted from a course, a website, or a memory is therefore stale by construction.** The current amount comes from the current statute and nowhere else.
+**Both figures index annually, and the section does not print the adjusted result.** Subdivision (b) adjusts them each January, beginning 1 January 2022, by the change in the annual California Consumer Price Index for All Urban Consumers published by the Department of Industrial Relations, rounded to the nearest $25. **The code gives the base figures and the method; it does not give the answer.** A figure quoted from a course, a website, or a memory is stale by construction — and so, on its own, is the number printed in the section.
+
+**Where each part of the answer has to come from.** This is the point at which most descriptions of the exemption go wrong, so it is worth setting out as a list rather than a sentence.
+
+| Component | Where it comes from |
+|---|---|
+| Statutory base ceiling — $600,000 | § 704.730(a)(1), on the face of the code |
+| Statutory base floor — $300,000 | § 704.730(a)(2), on the face of the code |
+| The annual inflation adjustment | § 704.730(b) — the California CPI for All Urban Consumers published by the **Department of Industrial Relations**, for the one-year period ending 31 December, rounded to the nearest $25 |
+| The **adjusted ceiling** | The base ceiling as adjusted each January since 2022. **Not printed in the section** |
+| The **adjusted floor** | The base floor as adjusted each January since 2022. **Not printed in the section** |
+| The countywide median | The **prior calendar year's** countywide median sale price for a single-family home in the county. **The section names no source for it** |
+| **The exemption** | The greater of (the county median, capped at the adjusted ceiling) and the adjusted floor |
+
+**Why this course prints no current dollar amount.** The Judicial Council publishes a list of current exemption amounts on form **EJ-156**, and Code of Civil Procedure **§ 703.150** is what requires it — but that duty runs to the exemptions in **§ 703.140(b)** and to the article beginning at **§ 704.010**, and the homestead exemption sits in the following article. **EJ-156, revision of 20 July 2026, carries no homestead figure**, and § 704.730 names no agency to publish one. A course that printed an adjusted amount would be printing a number it had computed rather than one an authority had published. **So this course teaches the calculation and names the inputs, and a licensee who needs the operative figure gets it from counsel or from the current published index — not from this page.**
 
 **These figures are dramatically larger than the historical ones.** California's homestead exemption was for many years a set of fixed amounts in the tens of thousands of dollars, tiered by the debtor's age and household. **A licensee who learned those figures learned a repealed scheme.** This is Assignment 01 Section 5.4 in concrete form: currency is not a detail of legal research, it is the difference between a right answer and a confidently wrong one.
 
@@ -176,7 +190,16 @@ Section 2.3 listed the involuntary liens a judgment creditor can reach. The home
 
 > A seller's preliminary report shows: a first deed of trust with a payoff of $610,000; an abstract of judgment recorded in 2023 for $92,000; and a property tax lien of $6,400. The property is in escrow at $915,000. The county median sale price for the prior calendar year was $655,000.
 
-**The exemption figure.** The greater of the countywide median ($655,000) capped at $600,000, or $300,000 — so **$600,000**, before the annual CPI adjustment which would raise it further.
+**The exemption figure, worked in the order § 704.730 sets it out.**
+
+1. **The statutory base figures.** A $600,000 ceiling and a $300,000 floor, on the face of subdivision (a).
+2. **The annual inflation adjustment.** Subdivision (b) adjusts both every January since 2022 by the California CPI, rounded to the nearest $25. Call the results the **adjusted ceiling** and the **adjusted floor**. Neither is printed in the code.
+3. **The countywide median component.** The prior calendar year's countywide median sale price for a single-family home — **$655,000** on these facts.
+4. **Cap the median.** The median counts only up to the adjusted ceiling.
+5. **Compare with the floor.** The exemption is the greater of that capped figure and the adjusted floor. Here the capped figure is far above any adjusted $300,000, so the floor does not govern.
+6. **The result.** The exemption in this county is **the adjusted ceiling**, unless the adjustments since 2022 have carried that ceiling above $655,000, in which case it is **$655,000**.
+
+**What the licensee could not do with the code alone.** Every step but one is on the page. **Step 2 is not** — and step 2 is what turns the printed figures into the operative ones. The answer here is $600,000 only if every annual adjustment since 2022 happened to be zero. **A licensee who reads § 704.730 and answers "$600,000" has read the statute and still given a wrong number**, which is Assignment 01 Section 5.4's warning about currency in the place it is easiest to trip over.
 
 **What that means here — and it is not what a seller hopes.** The property is being sold **voluntarily**, in escrow, at a price sufficient to pay everything. The homestead exemption governs what a judgment creditor may force; it does not entitle a seller to convey clear title while leaving a recorded judgment lien on the property. **Escrow will require the abstract of judgment to be paid or released**, because the buyer's lender and the title insurer will not accept it.
 
@@ -190,7 +213,7 @@ Order of payment from the $915,000, in the ordinary case:
 | Costs and commission | — | Per the contract |
 | **To seller** | balance | — |
 
-**The instructive part is what the seller believed.** Told that California's homestead exemption is $600,000 and that their equity is under it, a seller may conclude the judgment "doesn't count." It counts in escrow. **The exemption answers a question about forced sale that this transaction never asked**, and a licensee who does not know the difference will pass the seller's misunderstanding along.
+**The instructive part is what the seller believed.** Told that California's homestead exemption runs to several hundred thousand dollars and that their equity is under it, a seller may conclude the judgment "doesn't count." It counts in escrow. **The exemption answers a question about forced sale that this transaction never asked**, and a licensee who does not know the difference will pass the seller's misunderstanding along.
 
 ### 2.11 Checkpoint
 
@@ -428,7 +451,7 @@ The exceptions are what matter in practice:
 | Exception | Effect |
 |---|---|
 | **Property tax liens** | Generally take priority regardless of when they attached |
-| **Mechanic's liens** | Priority may relate back to when work commenced, ahead of instruments recorded earlier than the lien |
+| **Mechanics liens** | Priority is measured from **commencement of the work** rather than from the lien's own recording date — ahead of what attached after the work began, behind what was already attached (Civil Code § 8450) |
 | **Subordination agreement** | A lienholder agrees to take a lower position than it would otherwise hold |
 | **Purchase-money priority** | Certain purchase-money security interests receive favored treatment |
 
@@ -452,9 +475,21 @@ Section 5.3 stated the priority rule — first in time, first in right, subject 
 
 **The two exceptions that outrank recording order.**
 
-**Property tax liens.** Ad valorem property taxes and most assessments take priority regardless of when anything else was recorded. A first deed of trust recorded in 2004 is junior to a 2026 property tax lien.
+**Property tax liens.** **Revenue and Taxation Code § 2192.1** puts it without qualification: every tax declared a lien on real property, and every public improvement assessment declared by law to be a lien, *"have priority over all other liens on the property, regardless of the time of their creation"* — over *"any recognizance, deed, judgment, debt, obligation, or responsibility"* the property may become charged with. A first deed of trust recorded in 2004 is junior to a 2026 property tax lien, and no recording date changes that.
 
-**Mechanics liens relate back.** A mechanics lien for a work of improvement generally takes priority from the **commencement of the work**, not from the date the lien was recorded. **A lender who funded after a bulldozer arrived may find itself junior to a lien recorded months later.** This is why construction lenders inspect the site before recording and why title companies ask about recent work.
+**Mechanics liens are measured from commencement of the work.** **Civil Code § 8450** states the rule and its limit in one sentence:
+
+> *"(a) A lien under this chapter, other than a lien provided for in Section 8402, has priority over a lien, mortgage, deed of trust, or other encumbrance on the work of improvement or the real property on which the work of improvement is situated, that (1) attaches **after commencement of the work of improvement** or (2) was unrecorded at the commencement of the work of improvement and of which the claimant had no notice.*
+>
+> *(b) Subdivision (a) is subject to the exception provided for in Section 8452."*
+
+**Read what the section gives the lien priority over, because it is a closed list.** An encumbrance that **attached after commencement of the work**; or one that was **unrecorded when the work commenced** and of which the claimant had no notice. That is all of it. **An encumbrance already attached and of record when the first bulldozer arrived is on neither branch, and the mechanics lien does not reach it.**
+
+**So relation-back is a measuring point, not a promotion to first position.** The lien's priority is taken from the day work commenced instead of the day the claim of lien was recorded. It moves the lien back in time; it does not move it to the front of the line. A lien whose work commenced in 2023 competes as a 2023 interest — ahead of everything that attached in 2024 and after, and behind everything already attached in 2019 and 2022.
+
+**This is why a construction lender inspects the site before recording.** **A lender who records after work has begun has attached after commencement, is inside § 8450(a)(1), and may find itself junior to a lien not recorded for months.** A lender who records before anyone breaks ground is outside the subdivision entirely. It is also why title companies ask about recent work: the question is not whether a lien is on record, it is whether one can still arrive with an earlier date than the buyer's lender.
+
+**Two limits the section names, and a licensee who quotes subdivision (a) alone has quoted half a rule.** § 8450(a) excepts *"a lien provided for in Section 8402"* — the lien of a person who provides work for a **site improvement** — whose priority is set separately by **§ 8458**. And § 8450(b) makes the whole rule subject to **§ 8452**, under which a mortgage or deed of trust that would otherwise be subordinate takes priority over a lien for work provided after the recording of a payment bond that refers to it and is in an amount not less than 75 percent of its principal. Neither operates in the ordinary example below.
 
 > **The waterfall.** A property sells at a forced sale for **$742,000**, with five liens recorded against it.
 
@@ -468,17 +503,19 @@ Section 5.3 stated the priority rule — first in time, first in right, subject 
 
 **Order of payment, and why:**
 
-| Order | Lien | Paid | Running balance |
-|---|---|---:|---:|
-| 1 | Property taxes 2026 | $9,300 | $732,700 |
-| 2 | Mechanics lien — **relates back to 2023** | $61,000 | $671,700 |
-| 3 | First deed of trust 2019 | $520,000 | $151,700 |
-| 4 | Second deed of trust 2022 | $150,000 | $1,700 |
-| 5 | Abstract of judgment 2024 | **$1,700 of $88,000** | $0 |
+| Order | Lien | Why it sits here | Paid | Running balance |
+|---|---|---|---:|---:|
+| 1 | Property taxes 2026 | Priority over all other liens regardless of the time of their creation — R&T § 2192.1 | $9,300 | $732,700 |
+| 2 | First deed of trust 2019 | Attached four years before the work commenced — on neither branch of § 8450(a) | $520,000 | $212,700 |
+| 3 | Second deed of trust 2022 | Attached a year before the work commenced — on neither branch of § 8450(a) | $150,000 | $62,700 |
+| 4 | Mechanics lien — measured from **2023** | Ahead of what attached after commencement | $61,000 | $1,700 |
+| 5 | Abstract of judgment 2024 | Attached after the 2023 commencement — § 8450(a)(1) | **$1,700 of $88,000** | $0 |
 
-**Two results worth sitting with.**
+**Three results worth sitting with.**
 
-**The mechanics lien jumped ahead of a deed of trust recorded four years earlier**, because the work commenced in 2023 and relation-back is measured from commencement. The 2019 first still outranks it — the work began after 2019 — but a 2024 lender would have been leapfrogged.
+**Relation-back did not move the mechanics lien to the front, and nothing in § 8450 would have let it.** The lien was recorded last of the five and is paid fourth. The 2019 first deed of trust and the 2022 HELOC were both attached and of record in 2023 when the work commenced, so neither *"attaches after commencement"* nor was *"unrecorded at the commencement,"* and the section reaches neither. **A licensee who remembers relation-back as "the mechanics lien comes first" will get this backwards, and the mistake is expensive in exactly the case where it matters.**
+
+**What relation-back actually did is visible in one line.** The mechanics lien was recorded in 2025 and the abstract of judgment in 2024, so on recording order alone the judgment would be paid first. It is not. The lien is measured from 2023, the judgment attached after that, and § 8450(a)(1) puts the lien ahead of it. **Change one fact — commencement in 2025 rather than 2023 — and the judgment creditor is paid in full and the contractor takes the $1,700.**
 
 **The judgment creditor recovers $1,700 of $88,000 and the lien is extinguished by the sale.** Junior liens are wiped by a senior foreclosure; the debt survives as a personal obligation where the anti-deficiency statutes do not bar it, but the security is gone.
 

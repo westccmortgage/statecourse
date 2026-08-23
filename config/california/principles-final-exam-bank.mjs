@@ -1327,13 +1327,13 @@ const formB = [
   { source: { assignment: "assignment-05", section: "2.8" },
     prompt: "Code of Civil Procedure \u00a7 704.730 sets the homestead exemption as the greater of the prior year's countywide median sale price for a single-family home, capped, or a stated floor, with both figures adjusting annually for inflation. What does this mean for a licensee asked the amount?",
     choices: [
-      "The answer is county-specific and changes annually, so it comes from the current statute rather than from a remembered figure.",
+      "The answer is county-specific and changes annually, and because the section prints base figures rather than the adjusted ones, it cannot be given from the code alone.",
       "The answer is a single statewide amount that has been fixed since the section was last amended.",
       "The answer depends on the debtor's age and household composition, as it did under the former scheme.",
       "The answer is whatever equity the debtor has, since the exemption protects the whole homestead."
     ],
     correctChoice: 0,
-    rationale: "The section sets a floor and a cap with the actual figure driven by the county median, and provides for annual CPI adjustment. Age and household tiering belonged to the repealed scheme." },
+    rationale: "The section sets a base floor and a base cap with the actual figure driven by the prior year's county median, and subdivision (b) then adjusts both amounts every January. The adjusted amounts are not printed in the section, so reading the code alone does not produce the current number. Age and household tiering belonged to the repealed scheme." },
   { source: { assignment: "assignment-05", section: "3.3" },
     prompt: "Which of the following is a recognized way an easement may be created?",
     choices: [

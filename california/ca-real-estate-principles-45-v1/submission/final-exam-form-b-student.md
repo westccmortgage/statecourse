@@ -197,7 +197,7 @@ D. It attaches to all of the owner's property rather than to the taxed parcel.
 
 **27.** Code of Civil Procedure § 704.730 sets the homestead exemption as the greater of the prior year's countywide median sale price for a single-family home, capped, or a stated floor, with both figures adjusting annually for inflation. What does this mean for a licensee asked the amount?
 
-A. The answer is county-specific and changes annually, so it comes from the current statute rather than from a remembered figure.
+A. The answer is county-specific and changes annually, and because the section prints base figures rather than the adjusted ones, it cannot be given from the code alone.
 B. The answer depends on the debtor's age and household composition, as it did under the former scheme.
 C. The answer is whatever equity the debtor has, since the exemption protects the whole homestead.
 D. The answer is a single statewide amount that has been fixed since the section was last amended.

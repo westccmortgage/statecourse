@@ -50,13 +50,13 @@ If you decide to mail without them, that is a legitimate risk to take knowingly.
 | 13 | Instructor/Answer Key **Form B** | ~28 | Double-sided OK |
 | 14 | Login instructions | 2 | **Single-sided** — you write credentials on it by hand |
 | 15 | **RE 311** official sample + the specimen field map | ~4 | Single-sided |
-| **4** | **The full printed course text** — already built as a PDF | **456 / 383 / 380** | **Double-sided, bound separately** |
+| **4** | **The full printed course text** — already built as a PDF | **458 / 383 / 380** | **Double-sided, bound separately** |
 
 **The course texts are already built** as print-ready PDFs at `california/print/` — cover, publication page, table of contents, all fifteen assignments in order, and the applied exercise, engagement check and remediation set that go with each one. Send these to the printer as they are.
 
 | Course | File | Pages |
 |---|---|---:|
-| Real Estate Principles | `ca-real-estate-principles-45-v1-course-text.pdf` | **456** |
+| Real Estate Principles | `ca-real-estate-principles-45-v1-course-text.pdf` | **458** |
 | Real Estate Practice | `ca-real-estate-practice-45-v1-course-text.pdf` | **383** |
 | Mortgage Loan Brokering and Lending | `ca-mortgage-loan-brokering-lending-45-v1-course-text.pdf` | **380** |
 
