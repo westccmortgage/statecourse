@@ -52,7 +52,11 @@ const JURISDICTION_CITATIONS = {
   PA: [/Pa\. Code\b/, /\b63 P\.S\./, /Pennsylvania Real Estate Commission/i],
   VA: [/\b54\.1-2\d/, /\b18 VAC 135/, /\bDPOR\b/],
   WA: [/\bRCW 18\.85/, /\bWAC 308-124/, /Washington State Department of Licensing/i],
-  WI: [/Wis\. Stat\./, /\bREEB\b/, /\bSPS \d/, /Department of Safety and Professional Services/i],
+  /* "SPS \d" was a Wisconsin marker here until 24 August 2026 and is the reason this file once
+     helped delete a true Arizona rule: Wisconsin numbers administrative chapters "ch. SPS 5" and
+     ARIZONA numbers its Substantive Policy Statements "S.P.S. 2025.01". The initials belong to both
+     and identify neither, so they are not a marker. Wisconsin keeps three that are unambiguous. */
+  WI: [/Wis\. Stat\./, /\bREEB\b/, /Department of Safety and Professional Services/i],
 };
 
 /* Every string anywhere inside a record, however deeply nested. */
@@ -112,47 +116,76 @@ test("every course a registry entry claims exists in the catalog", () => {
 });
 
 /*
- * The Arizona entry that carried the defect, pinned by its corrected content.
- * The figures here are the ones a source states: 75 percent is A.A.C.
- * R4-28-401(A)(1), the in-person proctoring requirement is A.R.S. § 32-2124(B),
- * and the five-year record is R4-28-404(D). The two manufactured claims — an
- * item-bank ratio and a student-device restriction — must not return.
+ * The Arizona entry, and the correction that replaced this test's original premise.
+ *
+ * This test used to assert that two claims in Arizona's record were absent: a 2:1 question-bank
+ * ratio and a rule that the examination is not taken on a device the student supplies. The audit
+ * of 21 August 2026 had called them manufactured and deleted them, and this test pinned the
+ * deletion.
+ *
+ * Both are real. They are in ADRE Substantive Policy Statement 2025.01, Distance Learning
+ * Education Course Guidelines, revised 6 March 2025, which that audit never opened — it reasoned
+ * from the initials that "SPS" was Wisconsin's. ADRE's own Course Application Form (Rev. 09/2025)
+ * makes the school administrator attest to following it. So the test asserted the absence of two
+ * requirements the Department imposes, and would have kept them out indefinitely.
+ *
+ * The guard that was worth keeping is the one underneath: a rule of this kind must not appear
+ * WITHOUT a source. That is now what is checked, in every state, and it is a better rule than a
+ * word ban — it fails an invented requirement and passes a cited one, which is the actual
+ * distinction the audit was reaching for and got backwards.
  */
-test("the Arizona record states the rules a source states and none it invented", () => {
+test("the Arizona record states the rules its sources state, each with its source", () => {
   const arizona = registry.states.find((state) => state.state_code === "AZ");
   assert.ok(arizona, "Arizona is missing from the registry");
 
+  /* What A.A.C. R4-28-401(A)(1), A.R.S. § 32-2124(B) and R4-28-404(D) state. */
   assert.match(arizona.final_exam_rules, /75 percent/, "the passing score R4-28-401(A)(1) states is missing");
   assert.match(arizona.final_exam_rules, /R4-28-401\(A\)\(1\)/, "the passing score is stated without its rule");
   assert.match(arizona.proctoring_rules, /32-2124\(B\)/, "the proctoring statute is missing");
-  assert.match(arizona.proctoring_rules, /IN PERSON/, "the statute's in-person proctoring requirement is missing");
+  assert.match(arizona.proctoring_rules, /in person/i, "the statute's in-person proctoring requirement is missing");
   assert.match(arizona.record_retention_period, /R4-28-404\(D\)/, "the five-year record rule is missing");
 
-  /*
-   * Patterns that can only be an assertion. "no item-bank ratio is stated and
-   * none is claimed" is the corrected text and must survive, so the ratio
-   * pattern matches the figure rather than the words around it.
-   */
-  const invented = [
+  /* What S.P.S. 2025.01 states, restored 24 August 2026. Each must carry the policy statement. */
+  assert.match(arizona.final_exam_rules, /2:1/, "the question-bank ratio S.P.S. 2025.01 requires is missing again");
+  assert.match(arizona.final_exam_rules, /2025\.01/, "the ratio is stated without the policy statement that requires it");
+  assert.match(arizona.proctoring_rules, /device provided by the student|student-supplied device/i, "the device rule S.P.S. 2025.01 states is missing again");
+  assert.match(arizona.proctoring_rules, /2025\.01/, "the device rule is stated without the policy statement that states it");
+  assert.match(arizona.proctoring_rules, /lock-?down browser/i, "the lock-down browser requirement is missing");
+
+  /* A.R.S. § 32-2101(25) defines distance learning as possibly asynchronous. */
+  assert.equal(arizona.asynchronous_online_allowed, true, "Arizona's asynchronous delivery is permitted by § 32-2101(25)");
+  assert.ok(
+    arizona.allowed_delivery_methods.some((method) => /32-2101\(25\)/.test(method)),
+    "asynchronous delivery is asserted without the definition that permits it",
+  );
+});
+
+/*
+ * The guard the Arizona defect actually needed: a requirement of this shape may be stated, and
+ * may not be stated without naming what states it. An invented rule has no citation to give.
+ */
+test("no state's record states a bank ratio or a device rule without its source", () => {
+  const requiresSource = [
     /\b\d+\s*:\s*\d+\b[^.]{0,40}\b(bank|ratio|item pool)\b/i,
     /\b(bank|item pool)\b[^.]{0,40}\b\d+\s*:\s*\d+\b/i,
-    /student-supplied device/i,
-    /\bSPS \d/,
+    /student-supplied device|device provided by the student/i,
   ];
-  for (const state of registry.states) {
-    for (const text of collectStrings(state)) {
-      for (const pattern of invented) {
-        assert.equal(pattern.test(text), false, `${state.state_name} carries a manufactured rule matching ${pattern}: ${text.slice(0, 200)}`);
+  /* A statute, a rule, or a numbered policy statement — enough to be checked against a publisher. */
+  const SOURCE = /A\.R\.S\.|A\.A\.C\.|R4-28-|S\.P\.S\.|Substantive Policy Statement|§|Stat\.|Admin\. Code|\bCCR\b|\bVAC\b|\bWAC\b|\bCSR\b|\bNCAC\b|\bOAC\b|M\.R\.S\.|C\.R\.S\.|RCW|RSMo/;
+  const audit = (label, record) => {
+    for (const text of collectStrings(record)) {
+      for (const pattern of requiresSource) {
+        if (!pattern.test(text)) continue;
+        assert.match(
+          text,
+          SOURCE,
+          `${label} states a rule matching ${pattern} and names no source for it: ${text.slice(0, 200)}`,
+        );
       }
     }
-  }
-  for (const course of catalogCourses) {
-    for (const text of collectStrings(course)) {
-      for (const pattern of invented) {
-        assert.equal(pattern.test(text), false, `${course.course_id} carries a manufactured rule matching ${pattern}: ${text.slice(0, 200)}`);
-      }
-    }
-  }
+  };
+  for (const state of registry.states) audit(state.state_name, state);
+  for (const course of catalogCourses) audit(course.course_id, course);
 });
 
 /*

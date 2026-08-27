@@ -423,22 +423,53 @@ conducting a lottery contest, drawing, or game of chance.**
 pages carrying **A.R.S. Title 32, Chapter 20** and **A.A.C. R4-28**, from which **R4-28-401, -403, -404,
 -502, -503, -701, -802, -803, -804, -1101, -1102 and -1103** are transcribed above.
 
+**Added 24 August 2026, from the Department's own site:**
+
+- **A.R.S. § 32-2101(25)**, the definition of *distance learning*, read at azleg.gov: an online,
+  planned learning experience with a geographic separation that **"may be synchronous or
+  asynchronous"** and **"does not require real-time interaction between a student and an
+  instructor."** This is what supports `asynchronous_online_allowed` for Arizona.
+- **ADRE Substantive Policy Statement No. 2025.01, *Distance Learning Education Course Guidelines***
+  — established 3 January 2019, revised 28 September 2022, 3 October 2024 and **6 March 2025** "for
+  clarification on requirements specific to pre-licensing distance learning." Read in full at
+  `azre.gov/sites/default/files/2025-07/S.P.S.%202025.01.pdf`. It is the source of the **2:1**
+  question-bank ratio, the **lock-down browser** requirement, the rule that the exam **"shall not be
+  taken on any device provided by the student"**, the **15-minute inactivity logout** with return to
+  the start of the unit and re-verification of identity, the **75 percent to proceed** rule, the
+  **12.5-to-50-minute module**, the **IP-address and timestamp** reporting, the **two ADRE reviewer
+  logins**, and the eleven fields of the completion certificate.
+- **ADRE Course Application Form – Pre-Licensing, Rev. 09/2025**, which requires the school
+  administrator to attest to **"following S.P.S. 2025.01 for any distance learning courses."**
+- **Arizona State Specific Salesperson Pre-Licensing Curriculum Outline, © December 2025**, 43 pages.
+  **Located, and not yet mapped against the curriculum** — see
+  `docs/audit/2026-08-24-four-state-regulatory-preflight.md` § 3.
+
+**A correction belongs here, because this register is where it would otherwise be invisible.** The
+national audit of 21 August 2026 recorded three claims in Arizona's public regulatory record as
+**manufactured** and removed them: that S.P.S. 2025.01 controls, the 2:1 question-bank ratio, and the
+rule that the examination is not delivered on a device the student supplies. **All three are real, and
+all three are in S.P.S. 2025.01**, which that audit never opened — it reasoned from the initials that
+"SPS" belonged to Wisconsin. The same audit moved `asynchronous_online_allowed` to `null`, which
+§ 32-2101(25) contradicts. The record was restored on 24 August 2026. **Deleting a true requirement is
+worse than carrying an unverified one, because the unverified one is still visible to be checked.**
+
 **NOT obtained. No rule, figure, deadline, form provision, fee or penalty in this build comes from any of
 these:**
 
-- **The Department's prescribed prelicensure course content**, which **R4-28-401(D)** says the Department
-  will provide on request and which **A.R.S. § 32-2124(B)** requires a course to follow. **Submission
-  gate.**
-- **Any Department outline for the 27-hour Arizona-specific course.** The statute and the rule both name it
-  and **neither states its content.** **Submission gate.**
-- **Any Department content outline or candidate handbook for the state licensing examination**, and any
-  figure for the examination's **item count, passing score or time limit.**
+- **A prescribed content outline for the 63 hours of the 90-hour salesperson course that are not the
+  Arizona-specific portion.** **R4-28-401(D)** says the Department will provide its prescribed content
+  on request and **A.R.S. § 32-2124(B)** requires a course to follow it. The Arizona-specific outline
+  is published; whether a further one exists for the remainder is **the single open question for the
+  ADRE Education Division.** **Submission gate.**
+- **Any figure for the state licensing examination's item count, passing score or time limit.** The
+  December 2025 outline is a curriculum and learning-objective document and states none of them.
 - **A.R.S. § 32-2151 and § 32-2151.01** — Arizona's **trust account** and **record retention** provisions —
   in their own text, and **§ 32-2174**. They are cited by R4-28-802(C), which was read; **the sections
   themselves were not.**
 - **A.R.S. § 32-2153** — grounds for denial, suspension and revocation — in its own text.
 - **The remainder of A.R.S. Title 32, Chapter 20**, including the **subdivision and public report**
-  provisions, the **time-share** provisions, and **§ 32-2101**'s definitions.
+  provisions, the **time-share** provisions, and **§ 32-2101**'s definitions **apart from
+  subsection (25)**.
 - **A.R.S. Title 33** — Arizona's property, landlord-tenant, condominium, planned community, deed of trust
   and lien statutes — including the **Arizona Residential Landlord and Tenant Act.**
 - **Arizona's Residential Seller Disclosure practice and any standard disclosure form**, and **the Arizona

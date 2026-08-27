@@ -208,8 +208,8 @@
               "course_title": "Arizona Salesperson Pre-License",
               "regulator": "Arizona Department of Real Estate",
               "required_hours": 90,
-              "delivery_method": "Distance learning course under A.R.S. \u00a7 32-2124(B); Certificate of Course Approval under A.A.C. R4-28-404 not yet obtained",
-              "final_exam_rules": "At least 75 percent to pass \u2014 A.A.C. R4-28-401(A)(1). Examination time is excluded from credit hours where the examination is used for overall evaluation \u2014 R4-28-404. Proctored IN PERSON \u2014 A.R.S. \u00a7 32-2124(B). ADRE states no item-bank ratio and no student-device rule; none is claimed.",
+              "delivery_method": "Distance learning course under A.R.S. § 32-2124(B); Certificate of Course Approval under A.A.C. R4-28-404 not yet obtained",
+              "final_exam_rules": "At least 75 percent to pass — A.A.C. R4-28-401(A)(1). Examination time is excluded from credit hours where the examination is used for overall evaluation — R4-28-404. Proctored in person — A.R.S. § 32-2124(B). ADRE S.P.S. 2025.01 requires a question bank at a ratio of at least 2:1, delivery on a lock-down browser, and that the exam not be taken on any device provided by the student.",
               "certificate_template": "az-salesperson-90-draft",
               "reporting_rules": "ADRE identity/timing/IP/unit/assessment reviewer audit",
               "route": "/real-estate/arizona/pre-license/salesperson/"
