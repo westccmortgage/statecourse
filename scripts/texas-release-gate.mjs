@@ -20,6 +20,7 @@ import { fileURLToPath } from "node:url";
 import MANIFEST from "../config/texas/regulatory-manifest.mjs";
 import LEDGER from "../config/texas/provider-ledger.mjs";
 import PRINS1 from "../config/texas/prins1-course-form.mjs";
+import STATUTES from "../config/texas/statute-sources.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (relative) => {
@@ -80,10 +81,12 @@ const require_ = (condition, message) => {
 
 /* ════════════════════════════ provider ════════════════════════════ */
 
-check("provider", 1, "the source lock is computed and reported, not assumed", () => {
-  const lock = MANIFEST.sourceLock();
-  require_(["PASS", "FAIL"].includes(lock.status), "the source lock returned neither PASS nor FAIL");
-  return `TX_REGULATORY_SOURCE_LOCK: ${lock.status}${lock.unreachable.length ? ` — ${lock.unreachable.length} authority(ies) unreachable` : ""}`;
+const COVERAGE = STATUTES.unitCoverage(PRINS1.ALL_UNITS.map((unit) => unit.code));
+
+check("provider", 1, "the provider-rule source lock is computed and reported, not assumed", () => {
+  const lock = MANIFEST.providerRuleSourceLock();
+  require_(["PASS", "FAIL"].includes(lock.status), "the provider-rule lock returned neither PASS nor FAIL");
+  return `TX_PROVIDER_RULE_SOURCE_LOCK: ${lock.status}${lock.unreachable.length ? ` — ${lock.unreachable.map((u) => u.id).join(", ")}` : ""}`;
 });
 
 check("provider", 2, "every held source copy still hashes to what was recorded", () => {
@@ -120,6 +123,16 @@ check("provider", 5, "the financial calculator can never report readiness", () =
 
 /* ════════════════════════════ Principles I ════════════════════════════ */
 
+check("content", 9, "every PRINS1-1 unit has a primary source held for it, or is named as needing none", () => {
+  const lock = MANIFEST.principlesISourceLock(COVERAGE);
+  require_(
+    lock.unitsUncovered.length === 0,
+    `${lock.unitsUncovered.length} unit(s) have no source and no recorded reason: ${lock.unitsUncovered.join(", ")}`,
+  );
+  require_(lock.status === "PASS", "the Principles I source lock is failing");
+  return `TX_PRINCIPLES_I_SOURCE_LOCK: PASS — ${lock.unitsHeld} unit(s) sourced, ${lock.unitsExcused} needing none, across ${STATUTES.ALL_SOURCES.length} held documents`;
+});
+
 check("content", 10, "the course form's structure is transcribed and internally consistent", () => {
   require_(PRINS1.TOPICS.length === 9, `PRINS1-1 has 9 topics, the transcription has ${PRINS1.TOPICS.length}`);
   require_(PRINS1.ALL_UNITS.length === 46, `PRINS1-1 has 46 units, the transcription has ${PRINS1.ALL_UNITS.length}`);
@@ -142,10 +155,27 @@ check("exam", 20, "the Principles I examination bank exists and meets the form c
   return "bank present";
 });
 
-check("delivery", 30, "the distance-delivery controls are specified", () => {
+check("delivery", 30, "the distance-delivery controls are sourced, not merely written down", () => {
+  /* This check granted the gate on 2026-08-27 because a file existed. A specification that says
+     seventeen times that its requirement is UNREAD is not a delivery design; it is a list of things
+     nobody has looked up. So the gate now counts them. */
   const spec = "texas/submission/distance-delivery-controls.md";
-  require_(exists(spec), `${spec} does not exist`);
-  return "specified";
+  const body = read(spec);
+  require_(body, `${spec} does not exist`);
+  const unread = (body.match(/UNREAD/g) ?? []).length;
+  require_(unread === 0, `${unread} distance-delivery control(s) still name an unread requirement — 22 TAC § 535.65 has not been read in its codified text`);
+  return "every control names a source that has been read";
+});
+
+check("delivery", 31, "the controls the Commission itself names are represented", () => {
+  /* § 535.65(a)(1) as proposed, from the Secretary of State's Texas Register. Held, so it can be
+     required here even while the codified text is not. */
+  const body = read("texas/submission/distance-delivery-controls.md");
+  require_(body, "the distance-delivery specification does not exist");
+  for (const duty of ["identity", "attendance", "examination", "completion record"]) {
+    require_(new RegExp(duty, "i").test(body), `the specification does not address ${duty}`);
+  }
+  return "identity, attendance, examination administration and completion records are all addressed";
 });
 
 /* ════════════════════════════ platform ════════════════════════════ */
@@ -222,11 +252,13 @@ results.STATECOURSE_TX_READY = {
 
 /* ════════════════════════════ report ════════════════════════════ */
 
-const lock = MANIFEST.sourceLock();
+const lock = MANIFEST.sourceLock(COVERAGE);
 console.log(`\n  Texas — StateCourse qualifying education   (${MANIFEST.MANIFEST_VERSION})\n`);
-console.log(`  TX_REGULATORY_SOURCE_LOCK: ${lock.status}`);
-for (const entry of lock.unreachable) console.log(`      unreachable  ${entry.id} — ${entry.reachability}`);
-console.log(`  TX_REGULATORY_SOURCE_DRIFT: run scripts/texas-source-lock.mjs\n`);
+console.log(`  TX_PROVIDER_RULE_SOURCE_LOCK: ${lock.provider.status}`);
+for (const entry of lock.provider.unreachable) console.log(`      unreachable  ${entry.id} — ${entry.reachability}`);
+console.log(`  TX_PRINCIPLES_I_SOURCE_LOCK:  ${lock.principles.status} — ${lock.principles.unitsHeld} sourced, ${lock.principles.unitsExcused} needing none, ${lock.principles.unitsUncovered.length} uncovered`);
+console.log(`  TX_REGULATORY_SOURCE_LOCK:    ${lock.status}`);
+console.log(`  TX_REGULATORY_SOURCE_DRIFT:   run scripts/texas-source-lock.mjs\n`);
 
 for (const [name, gate] of Object.entries(results)) {
   if (gate.composedOf) {

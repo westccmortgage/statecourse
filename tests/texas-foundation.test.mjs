@@ -99,16 +99,20 @@ test("the payment contract refuses a checkout for each of its own reasons", () =
 /* ── sources ─────────────────────────────────────────────────────────────────────────────── */
 
 test("the source lock fails while an authority cannot be opened, and says which", () => {
-  const lock = MANIFEST.sourceLock();
-  assert.equal(lock.status, "FAIL", "the lock passes while 22 TAC and the Occupations Code are unreachable");
-  const ids = lock.unreachable.map((entry) => entry.id);
+  /* Updated by TX-0.1. The Occupations Code WAS recorded here as unreachable; it is now held from
+     the Legislative Council's static layer, and asserting the old state would pin the mistake. */
+  const provider = MANIFEST.providerRuleSourceLock();
+  assert.equal(provider.status, "FAIL", "the provider lock passes while the codified TAC is unread");
+  const ids = provider.unreachable.map((entry) => entry.id);
   assert.ok(ids.includes("sos-tac-22-535"), "the Administrative Code is not recorded as unreachable");
-  assert.ok(ids.includes("tx-occupations-code-1101"), "the Occupations Code is not recorded as unreachable");
+  const occ = MANIFEST.SOURCES.find((s) => s.id === "tx-occupations-code-1101");
+  assert.equal(occ.reachability, REACHABILITY.READ, "the Occupations Code is still recorded as unreachable");
+  assert.ok(occ.localCopy && occ.sha256, "the Occupations Code is recorded as read with no held copy");
 });
 
 test("every held source copy is on disk and hashes to what the manifest recorded", () => {
   const held = MANIFEST.held();
-  assert.equal(held.length, 6, `${held.length} copies held; the six course approval forms are expected`);
+  assert.ok(held.length >= 6, `${held.length} copies held; at least the six course approval forms are expected`);
   for (const entry of held) {
     const file = path.join(ROOT, entry.localCopy);
     assert.ok(fs.existsSync(file), `${entry.id}: ${entry.localCopy} is recorded and missing`);
@@ -183,7 +187,9 @@ test("provider and course approval terms are tracked, and the unread ones say so
   assert.ok(MANIFEST.PROVIDER_TERM.providerApprovalYearsSource, "the four-year term is asserted with no source");
   assert.equal(MANIFEST.PROVIDER_TERM.courseApprovalYears, null, "a course approval term is claimed and 22 TAC was not read");
   assert.match(MANIFEST.PROVIDER_TERM.courseApprovalYearsStatus, /UNVERIFIED/);
-  assert.match(MANIFEST.PROVIDER_TERM.bondAmountStatus, /UNVERIFIED/);
+  /* The bond is now sourced — as PROPOSED text, which the status has to say. The reserve is not. */
+  assert.match(MANIFEST.PROVIDER_TERM.bondAmountStatus, /as proposed/i, "the bond amount claims more than the source gives");
+  assert.doesNotMatch(MANIFEST.PROVIDER_TERM.bondAmountStatus, /^VERIFIED\.?$/, "the bond amount is stated as fully verified");
   assert.match(MANIFEST.PROVIDER_TERM.reserveAmountStatus, /UNVERIFIED/);
 });
 
@@ -318,4 +324,147 @@ test("the Arizona correction is intact", () => {
   assert.match(arizona.final_exam_rules, /2:1/);
   assert.match(arizona.proctoring_rules, /device provided by the student/i);
   assert.match(arizona.proctoring_rules, /2025\.01/);
+});
+
+/* ══════════════════════════════════════════════════════════════════════════════════════════
+ * TX-0.1 — the source repair, and the two conclusions it corrects.
+ *
+ * The TX-0 report drew two conclusions that were wrong in the same way: it tested one endpoint and
+ * generalised from it to a statement about Texas. `statutes.capitol.texas.gov/Docs/…` returns an
+ * application shell, so "Texas statutes are unavailable"; the Texas Register issues through 21
+ * August carried no § 535.62 or § 535.65 adoption, so "no adopted amendment appears".
+ *
+ * Both failed the same way, and the tests below are shaped by that. They do not merely assert the
+ * corrected facts — they assert the DISCIPLINE: that a failing path is recorded as evidence about
+ * that path, that a rule adopted but not yet in force is neither current nor missing, and that the
+ * agency's own courtesy copy cannot stand in for the Secretary of State's text.
+ * ══════════════════════════════════════════════════════════════════════════════════════════ */
+
+import STATUTES from "../config/texas/statute-sources.mjs";
+
+test("Texas statutes come from the official static Legislative Council layer", () => {
+  assert.ok(STATUTES.STATUTE_CHAPTERS.length >= 25, `${STATUTES.STATUTE_CHAPTERS.length} chapters held`);
+  for (const entry of STATUTES.STATUTE_CHAPTERS) {
+    assert.match(entry.url, /^https:\/\/tcss\.legis\.texas\.gov\/resources\//, `${entry.id} does not use the static layer`);
+    assert.doesNotMatch(entry.url, /statutes\.capitol\.texas\.gov/, `${entry.id} still uses the obsolete path`);
+    assert.ok(fs.existsSync(path.join(ROOT, entry.localCopy)), `${entry.id}: ${entry.localCopy} is missing`);
+    assert.equal(
+      createHash("sha256").update(fs.readFileSync(path.join(ROOT, entry.localCopy))).digest("hex"),
+      entry.sha256,
+      `${entry.id} has changed since it was recorded`,
+    );
+  }
+});
+
+test("the obsolete path is recorded as evidence about itself, not about Texas", () => {
+  assert.match(STATUTES.OBSOLETE_PATH.pattern, /statutes\.capitol\.texas\.gov/);
+  assert.match(STATUTES.OBSOLETE_PATH.conclusion, /NOT evidence that Texas statutes are unavailable/i);
+  const register = read("texas/regulatory/primary-text-readings.md");
+  assert.match(register, /tcss\.legis\.texas\.gov/, "the register does not name the source layer that works");
+  assert.doesNotMatch(
+    register,
+    /no Texas statutory text and no Texas rule text is quoted, paraphrased, relied on or\s*\n?stated anywhere in this build/i,
+    "the register still carries the TX-0 conclusion that no Texas source could be read",
+  );
+});
+
+test("holding a chapter is not reading it, and every read section is named", () => {
+  assert.ok(STATUTES.SECTIONS_READ.length > 0, "no section is recorded as read");
+  for (const entry of STATUTES.SECTIONS_READ) {
+    assert.ok(entry.section, "a read record has no section number");
+    assert.ok(entry.note && entry.note.length > 30, `${entry.section} is recorded as read with no note on what was taken from it`);
+    assert.ok(entry.citation, `${entry.section} has no citation`);
+  }
+  /* Documents held with nothing read yet are expected and must not be counted as read. */
+  const held = STATUTES.ALL_SOURCES.length;
+  assert.ok(STATUTES.SECTIONS_READ.length < held * 5, "sections recorded as read outnumber what was plausibly opened");
+});
+
+test("every PRINS1-1 unit has a source held or a recorded reason for needing none", () => {
+  const coverage = STATUTES.unitCoverage(PRINS1.ALL_UNITS.map((unit) => unit.code));
+  assert.deepEqual(coverage.uncovered, [], "PRINS1-1 units with neither a source nor a reason");
+  assert.equal(coverage.held.length + coverage.excused.length, 46);
+  for (const entry of STATUTES.NO_STATUTE_REQUIRED) {
+    assert.ok(entry.reason && entry.reason.length > 40, `${entry.unit} is excused with no real reason`);
+  }
+});
+
+test("§§ 535.62 and 535.65 are adopted 10 August 2026 and effective 31 August 2026", () => {
+  for (const id of ["trec-rule-535-62", "trec-rule-535-65"]) {
+    const entry = MANIFEST.SOURCES.find((s) => s.id === id);
+    assert.ok(entry, `${id} is not recorded`);
+    assert.equal(entry.adoptedDate, "2026-08-10", `${id} adopted date`);
+    assert.equal(entry.effectiveDate, "2026-08-31", `${id} effective date`);
+    assert.equal(entry.proposedDate, "2026-05-04", `${id} proposed date`);
+    assert.ok(entry.sosRecordId, `${id} carries no Secretary of State record id`);
+  }
+  /* And the register no longer says they do not exist. */
+  const register = read("texas/regulatory/primary-text-readings.md");
+  assert.doesNotMatch(register, /No adopted amendment to\s*\n?§ 535\.62 or § 535\.65 appears/i);
+  assert.match(register, /10 August 2026/);
+});
+
+test("an adopted rule that is not yet in force is neither current nor missing", () => {
+  /* The whole point of the status. Before 31 August 2026 these are adopted_pending_effective; a
+     record calling them "current" would overstate, and one omitting them would understate. */
+  for (const id of ["trec-rule-535-62", "trec-rule-535-65"]) {
+    const entry = MANIFEST.SOURCES.find((s) => s.id === id);
+    assert.equal(entry.status, "adopted_pending_effective", `${id} status`);
+    assert.notEqual(entry.status, "current", `${id} is described as current before its effective date`);
+  }
+  const asOf = new Date("2026-08-27T00:00:00Z");
+  const effective = new Date("2026-08-31T00:00:00Z");
+  assert.ok(asOf < effective, "the fixture date is no longer before the effective date — revisit this test");
+});
+
+test("the TREC courtesy mirror cannot satisfy the official rule lock on its own", () => {
+  const mirror = MANIFEST.SOURCES.find((s) => s.id === "trec-consolidated-rules-page");
+  assert.equal(mirror.reachability, REACHABILITY.READ_NOT_AUTHORITY);
+  assert.equal(mirror.materialClaims.length, 0);
+  /* The codified rules are still recorded as unread, and the provider lock still fails. */
+  const tac = MANIFEST.SOURCES.find((s) => s.id === "sos-tac-22-535");
+  assert.equal(tac.reachability, REACHABILITY.UNREACHABLE_JS_ONLY);
+  assert.equal(MANIFEST.providerRuleSourceLock().status, "FAIL", "the provider lock passes while the codified TAC is unread");
+});
+
+test("the two locks are independent, and the aggregate needs both", () => {
+  const coverage = STATUTES.unitCoverage(PRINS1.ALL_UNITS.map((unit) => unit.code));
+  const provider = MANIFEST.providerRuleSourceLock();
+  const principles = MANIFEST.principlesISourceLock(coverage);
+  const aggregate = MANIFEST.sourceLock(coverage);
+
+  assert.equal(principles.status, "PASS", "the Principles I source lock is failing though every unit is sourced");
+  assert.equal(provider.status, "FAIL", "the provider-rule lock passes though the codified TAC is unread");
+  assert.equal(aggregate.status, "FAIL", "the aggregate passes while one component fails");
+
+  /* Independence in the other direction: an empty coverage must fail Principles I and leave the
+     provider lock exactly where it was. */
+  const starved = MANIFEST.principlesISourceLock({ held: [], excused: [], uncovered: ["T01U1"] });
+  assert.equal(starved.status, "FAIL");
+  assert.equal(MANIFEST.providerRuleSourceLock().status, provider.status, "the provider lock moved when Principles I coverage changed");
+});
+
+test("the human export list asks for the unresolved rules and nothing more", () => {
+  const list = read("texas/submission/human-export-list.md");
+  for (const rule of ["535.55", "535.60", "535.61", "535.63", "535.64", "535.66", "535.67", "535.101"]) {
+    assert.match(list, new RegExp(rule.replace(".", "\\.")), `the export list omits § ${rule}`);
+  }
+  assert.match(list, /not a\s*\n?request to export Texas law by hand/i, "the list does not say what it is not");
+  assert.match(list, /535\.62.*535\.65|535\.65.*535\.62/s);
+  /* It must not ask for the statutes, which are held. */
+  assert.doesNotMatch(list, /export .{0,40}(Property Code|Occupations Code|Estates Code)/i, "the export list asks for statutes that are already held");
+});
+
+test("federal sources for Principles I are held and mapped", () => {
+  assert.ok(STATUTES.FEDERAL_SOURCES.length >= 4);
+  const units = new Set(STATUTES.FEDERAL_SOURCES.flatMap((entry) => entry.reliedOnByUnits));
+  for (const unit of ["T09U3", "T08U3"]) assert.ok(units.has(unit), `no federal source is mapped to ${unit}`);
+  for (const entry of STATUTES.FEDERAL_SOURCES) {
+    assert.ok(fs.existsSync(path.join(ROOT, entry.localCopy)), `${entry.id}: ${entry.localCopy} is missing`);
+  }
+});
+
+test("no TX-1 curriculum was written in this pass", () => {
+  assert.equal(curriculumExists(), false, "Principles I curriculum exists — TX-0.1 was a source repair, not a content pass");
+  assert.equal(fs.existsSync(path.join(ROOT, "config/texas/principles-i-final-exam-bank.mjs")), false, "an examination bank exists");
 });

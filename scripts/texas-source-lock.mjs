@@ -20,6 +20,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import MANIFEST, { REACHABILITY, VERIFICATION_MAX_AGE_DAYS } from "../config/texas/regulatory-manifest.mjs";
+import STATUTES from "../config/texas/statute-sources.mjs";
+import PRINS1 from "../config/texas/prins1-course-form.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sha256 = (buffer) => createHash("sha256").update(buffer).digest("hex");
@@ -45,12 +47,27 @@ for (const entry of MANIFEST.SOURCES) {
   }
 }
 
+/* ── 1b. every statute and federal snapshot is present and unchanged ── */
+for (const entry of STATUTES.ALL_SOURCES) {
+  const file = path.join(root, entry.localCopy);
+  if (!fs.existsSync(file)) {
+    failures.push(`${entry.id}: ${entry.localCopy} is recorded and not on disk`);
+    continue;
+  }
+  const actual = sha256(fs.readFileSync(file));
+  if (actual !== entry.sha256) drift.push(`${entry.id}: ${entry.localCopy} hashes to ${actual.slice(0, 16)}…, recorded ${entry.sha256.slice(0, 16)}…`);
+}
+
 /* ── 2. an authority that could not be opened fails the lock ── */
 for (const entry of MANIFEST.SOURCES) {
   if (entry.reachability === REACHABILITY.UNREACHABLE_JS_ONLY || entry.reachability === REACHABILITY.UNREACHABLE_LOGIN_REQUIRED) {
     failures.push(`${entry.id}: ${entry.title} could not be opened (${entry.reachability})`);
   }
 }
+
+/* ── 2b. a section may be cited only where it was actually read ── */
+const heldButUnread = STATUTES.ALL_SOURCES.filter((entry) => entry.sectionsRead.length === 0).length;
+notes.push(`${STATUTES.ALL_SOURCES.length} source document(s) held; ${STATUTES.SECTIONS_READ.length} section(s) recorded as read; ${heldButUnread} document(s) held with no section read yet — held is not read`);
 
 /* ── 3. staleness ── */
 const cutoff = new Date(Date.now() - VERIFICATION_MAX_AGE_DAYS * 86_400_000);
@@ -85,10 +102,17 @@ if (failures.length === 0) console.log("  PASS   every authority reachable and e
 console.log();
 for (const line of drift) console.log(`  DRIFT  ${line}`);
 console.log();
-console.log(`  TX_REGULATORY_SOURCE_LOCK: ${failures.length === 0 ? "PASS" : "FAIL"}`);
-console.log(`  TX_REGULATORY_SOURCE_DRIFT: ${drift.length === 0 ? "NONE" : drift.length + " change(s) — re-read and review; a changed document is not by itself a changed law"}`);
+const coverage = STATUTES.unitCoverage(PRINS1.ALL_UNITS.map((unit) => unit.code));
+const providerLock = MANIFEST.providerRuleSourceLock();
+const principlesLock = MANIFEST.principlesISourceLock(coverage);
+const aggregate = MANIFEST.sourceLock(coverage);
+console.log(`  TX_PROVIDER_RULE_SOURCE_LOCK: ${providerLock.status}${providerLock.unreachable.length ? ` — ${providerLock.unreachable.map((u) => u.id).join(", ")}` : ""}`);
+console.log(`  TX_PRINCIPLES_I_SOURCE_LOCK:  ${principlesLock.status} — ${principlesLock.unitsHeld} unit(s) with a source held, ${principlesLock.unitsExcused} needing none, ${principlesLock.unitsUncovered.length} uncovered`);
+console.log(`  TX_REGULATORY_SOURCE_LOCK:    ${aggregate.status} — the aggregate passes only when both do`);
+console.log(`  TX_REGULATORY_SOURCE_DRIFT:   ${drift.length === 0 ? "NONE" : drift.length + " change(s) — re-read and review; a changed document is not by itself a changed law"}`);
 console.log();
 for (const line of notes) console.log(`  conflict recorded: ${line}`);
 console.log();
 
-process.exit(failures.length === 0 && drift.length === 0 ? 0 : 1);
+/* Exit non-zero while the aggregate fails, so CI cannot mistake a split lock for a green one. */
+process.exit(aggregate.status === "PASS" && drift.length === 0 ? 0 : 1);

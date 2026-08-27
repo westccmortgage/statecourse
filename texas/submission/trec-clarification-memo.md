@@ -9,18 +9,24 @@ question is not here.
 
 ---
 
-## 0. A retrieval problem that precedes the rest
+## 0. What has since been resolved, and what has not
 
-**The adopted text of 22 TAC Chapter 535 could not be obtained.** The Secretary of State's legacy
-rule reader at `texreg.sos.state.tx.us` returns a "This Site Has Moved" page for every section, and
-the replacement portal at `texas-sos.appianportalsgov.com` serves only a JavaScript shell to a
-non-browser client. `statutes.capitol.texas.gov` behaves the same way for the Occupations Code.
+**Most of this memo's original premise is gone.** When it was first written on 2026-08-24 it opened
+by saying that no Texas rule or statute could be obtained. That was too broad and has been corrected:
 
-This is recorded because it shapes everything below: **the questions in this memo are questions that
-remain after reading what could be read, and there may be others that the rule text itself would
-have answered.** Retrieval by a person with a browser is the first item on the provider checklist.
+- **Texas statutes are held.** Twenty-five chapters and four federal sources, retrieved from the
+  Texas Legislative Council's static layer and the federal publishers.
+- **§§ 535.62 and 535.65 are held as proposed text**, from the Secretary of State's Texas Register of
+  22 May 2026. Both were adopted 10 August 2026 and take effect 31 August 2026.
+- **§ 535.65(a)(4) answers most of question 4 below**, and the answer is recorded there.
 
----
+**What remains genuinely unobtainable here** is the codified current text of eight administrative
+rules — §§ 535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 and 535.101 — because the
+Secretary of State's portal serves only a JavaScript application and no browser can reach it from
+the build environment. That is an export task, not a question for the Commission, and it is listed
+at `texas/submission/human-export-list.md`.
+
+**The questions below are what is still genuinely open.**
 
 ## 1. Delivery of the original surety bond when the application is filed online
 
@@ -64,20 +70,24 @@ acceptable where an account number would otherwise be disclosed?
 
 ---
 
-## 4. Attorney-in-fact and records custodian, for a provider with no Texas office
+## 4. May a commercial service be the designated Texas resident?
 
-StateCourse intends to be **distance education only** and will not operate a Texas classroom.
+**Partly answered by the rule, and the answer narrows the question.** § 535.65(a)(4), as proposed in
+the Texas Register of 22 May 2026:
 
-**Question.** May a commercial Texas registered-agent or compliance service serve as **both**
+> *"If a provider approved by the Commission does not maintain a fixed office in Texas for the
+> duration of the provider's approval to offer courses, the provider shall designate a resident of
+> this state as attorney-in-fact to accept service of process and act as custodian of any records in
+> Texas that the provider is required to maintain by this section. A power-of-attorney designating
+> the resident must be filed with the Commission in a form acceptable to the Commission."*
 
-- the attorney-in-fact who accepts service of process, **and**
-- the Texas records custodian?
+So the rule already contemplates **one designated resident holding both roles**, which was the part
+this memo previously did not assume. StateCourse intends to be **distance education only** and will
+not operate a Texas classroom.
 
-**Why it is not inferred.** A registered agent's statutory function is service of process. Custody of
-education records is a different function with different duties, and this project does not assume
-one service satisfies both roles merely because a vendor offers both.
-
----
+**What is still open.** May that "resident of this state" be a **commercial registered-agent or
+compliance service** rather than a natural person, and what **form of power-of-attorney** does the
+Commission accept? The rule says "in a form acceptable to the Commission" and does not publish one.
 
 ## 5. What "records maintained in Texas" means when the records are electronic
 

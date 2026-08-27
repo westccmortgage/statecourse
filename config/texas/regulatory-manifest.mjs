@@ -38,7 +38,7 @@
  * with that status so that a reader can see it was consulted and see what it was not used for.
  */
 
-export const MANIFEST_VERSION = "TX-MANIFEST-2026-08-27-v1";
+export const MANIFEST_VERSION = "TX-MANIFEST-2026-08-27-v2";
 
 /* How long a reading stays good before the lock demands it be taken again. */
 export const VERIFICATION_MAX_AGE_DAYS = 90;
@@ -291,32 +291,45 @@ export const SOURCES = Object.freeze([
         question:
           "§§ 535.55, 535.60 to 535.67 and 535.101 could not be read. The legacy Secretary of State rule reader returns a 'This Site Has Moved' page for every rule; the replacement is an Appian single-page application that serves only a JavaScript shell to a non-browser client; and headless Chromium cannot reach any host from this environment.",
         resolution:
-          "LOCK FAILURE. No Texas rule text is stated anywhere in this build. Retrieval is a HUMAN item: open the portal in a browser and save the adopted text of each section.",
+          "LOCK FAILURE for the CODIFIED CURRENT TEXT, which remains unread. The proposed text of §§ 535.62 and 535.65 was afterwards obtained from the Secretary of State's Texas Register of 22 May 2026 and is held; the adoption notice publishes 28 August 2026. What is still missing is the codified text of §§ 535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 and 535.101. Retrieval is a HUMAN item — see texas/submission/human-export-list.md.",
       },
     ],
   }),
   source({
     id: "tx-occupations-code-1101",
-    authority: "Texas Legislative Council / Texas Legislature Online",
+    authority: "Texas Legislative Council",
     title: "Texas Occupations Code, Chapter 1101 (Real Estate Brokers and Sales Agents)",
     documentNumber: "Tex. Occ. Code ch. 1101",
     revision: null,
-    url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm",
-    localCopy: null,
-    sha256: null,
-    readOn: null,
-    attemptedOn: "2026-08-24",
+    url: "https://tcss.legis.texas.gov/resources/OC/htm/OC.1101.htm",
+    localCopy: "texas/trec-sources/statutes/OC.1101.htm",
+    sha256: "8c40aa399cf717901540150ae6acaf3d847305f7fefcf7dd7ec4c3068a418858",
+    bytes: 308708,
+    readOn: "2026-08-27",
     status: "current",
-    reachability: REACHABILITY.UNREACHABLE_JS_ONLY,
-    precedence: "TIER 2 — and it could not be opened.",
-    materialClaims: [],
+    reachability: REACHABILITY.READ,
+    precedence: "TIER 2 — the statute, retrieved from the Texas Legislative Council's static resource layer.",
+    materialClaims: [
+      {
+        id: "oc-1101-301",
+        claim:
+          "§ 1101.301: the Commission may by rule establish standards for approving qualifying educational programs or courses of study in real estate conducted in this state, excluding programs offered by public high schools and accredited colleges and universities, and develop minimum education and experience requirements for an instructor.",
+        reliedOnBy: ["config/texas/statute-sources.mjs"],
+      },
+      {
+        id: "oc-1101-155",
+        claim:
+          "§ 1101.155: the Commission may adopt rules requiring licence holders to use contract forms prepared by the Texas Real Estate Broker-Lawyer Committee and adopted by the Commission, and may not prohibit certain other forms.",
+        reliedOnBy: ["config/texas/statute-sources.mjs", "PRINS1-1 unit T06U5 TREC Forms"],
+      },
+    ],
     conflicts: [
       {
-        id: "statutes-unreachable",
+        id: "statutes-path-correction",
         question:
-          "statutes.capitol.texas.gov returns an identical 250,874-byte single-page-application shell for every document path tried, including .htm, .pdf and StatutesByDate paths, and returns 406 for a non-HTML Accept header. The statute text is fetched by client-side JavaScript.",
+          "The TX-0 report recorded the Occupations Code as unreachable, on the strength of statutes.capitol.texas.gov returning an identical single-page-application shell for every document path.",
         resolution:
-          "LOCK FAILURE. No Texas statutory text is stated anywhere in this build. The same failure blocks the Property Code, Estates Code, Finance Code, Tax Code and Local Government Code, which is why no Principles of Real Estate I instructional content exists yet.",
+          "CORRECTED 2026-08-27. That host does behave that way; the conclusion drawn from it did not follow. The Texas Legislative Council publishes the same codes as plain static HTML at tcss.legis.texas.gov/resources/{CODE}/htm/{CODE}.{CHAPTER}.htm, and twenty-five chapters were retrieved from it with no browser and no failures. A single failing endpoint is evidence about that endpoint.",
       },
     ],
   }),
@@ -337,9 +350,9 @@ export const SOURCES = Object.freeze([
     precedence: "TIER 3 — final adopted rules and orders published by the Secretary of State. Reachable as static PDFs and HTML, unlike the TAC itself.",
     materialClaims: [
       {
-        id: "no-2026-535-62-or-65-adoption",
+        id: "register-scan-window",
         claim:
-          "Across 34 issues of the 2026 Texas Register adopted-rules sections (January through August) and the Title 22 adopted-rules pages for May through August 2026, the only Texas Real Estate Commission adoptions in Chapter 535 are § 535.214 (issue of 27 February 2026) and § 535.69 (issue of 22 May 2026). No adopted amendment to § 535.62 or § 535.65 appears.",
+          "The 2026 Texas Register adopted-rules sections are reachable as static PDFs and HTML. Issues through 21 August 2026 were scanned; the 28 August 2026 issue returns 403 and is not yet published.",
         reliedOnBy: ["conflict:august-2026-amendments"],
       },
     ],
@@ -347,9 +360,145 @@ export const SOURCES = Object.freeze([
       {
         id: "august-2026-amendments",
         question:
-          "The Texas work order names 'final adopted August 2026 amendments to §§ 535.62 and 535.65' and a completion-record rule effective 31 August 2026 with an operational requirement from 1 October 2026. Neither appears in the Secretary of State's own adopted-rules publication for 2026.",
+          "The TX-0 report concluded that no adopted amendment to § 535.62 or § 535.65 appears in the Secretary of State's 2026 publication.",
         resolution:
-          "UNVERIFIED. This does not establish that no such amendment exists — it may have been adopted before 2026, or published in a section not scanned. It does establish that this project has not found it, and nothing in this build is written to it.",
+          "CORRECTED 2026-08-27. The conclusion was wrong. Both were adopted 10 August 2026, effective 31 August 2026, and TREC's own rule records carry the dates and the Secretary of State record ids. An adoption filed on 10 August publishes in the Register about three weeks later — the 28 August issue, which returns 403 because it is not yet published. The scan was accurate about what it covered and the CONCLUSION drawn from it was too strong: 'not found in the issues I read' was reported as 'does not appear'.",
+      },
+    ],
+  }),
+
+  /* ── the two 2026 amendments: adopted, not yet effective ── */
+  source({
+    id: "trec-rule-535-62",
+    authority: "Texas Real Estate Commission (rule record); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.62, Approval of Qualifying Courses",
+    documentNumber: "22 TAC § 535.62",
+    revision: null,
+    proposedDate: "2026-05-04",
+    adoptedDate: "2026-08-10",
+    effectiveDate: "2026-08-31",
+    url: "https://www.trec.texas.gov/22-tac-%C2%A753562-approval-qualifying-courses",
+    sosRecordUrl: "https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TEXAS_REGISTER_SUMMARY&recordId=465426",
+    sosRecordId: "465426",
+    localCopy: null,
+    sha256: null,
+    readOn: "2026-08-27",
+    /* Today is 2026-08-27. The amendment is adopted and takes effect in four days. It is neither
+       "current" nor "not found", and calling it either would be wrong in a different direction. */
+    status: "adopted_pending_effective",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "The dates and the record id come from TREC's own rule record. The CONTROLLING TEXT is the Secretary of State's, which is not reachable from here — so the amendment's dates are recorded and its text is not.",
+    materialClaims: [
+      {
+        id: "535-62-adoption-dates",
+        claim: "22 TAC § 535.62 was proposed 4 May 2026, adopted 10 August 2026, and takes effect 31 August 2026. Emergency adopted: NO.",
+        reliedOnBy: ["PROVIDER_TERM", "gate:TX_PROVIDER_RULE_SOURCE_LOCK"],
+      },
+      {
+        id: "535-62-subject",
+        claim:
+          "TREC describes the change as updating terminology in subsection (i) for consistency with current practice and to align language with other rules, as a result of the REALM Portal.",
+        reliedOnBy: [],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-65",
+    authority: "Texas Real Estate Commission (rule record); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.65, Responsibilities and Operations of Providers of Qualifying Courses",
+    documentNumber: "22 TAC § 535.65",
+    revision: null,
+    proposedDate: "2026-05-04",
+    adoptedDate: "2026-08-10",
+    effectiveDate: "2026-08-31",
+    url: "https://www.trec.texas.gov/22-tac-%C2%A753565-responsibilities-and-operations-providers-qualifying-courses",
+    sosRecordUrl: "https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TEXAS_REGISTER_SUMMARY&recordId=465427",
+    sosRecordId: "465427",
+    localCopy: null,
+    sha256: null,
+    readOn: "2026-08-27",
+    status: "adopted_pending_effective",
+    reachability: REACHABILITY.READ,
+    precedence: "Dates from TREC's rule record; controlling text is the Secretary of State's and is not reachable from here.",
+    materialClaims: [
+      {
+        id: "535-65-adoption-dates",
+        claim: "22 TAC § 535.65 was proposed 4 May 2026, adopted 10 August 2026, and takes effect 31 August 2026. Emergency adopted: NO.",
+        reliedOnBy: ["gate:TX_PROVIDER_RULE_SOURCE_LOCK"],
+      },
+      {
+        id: "535-65-completion-record",
+        claim:
+          "TREC's summary states the rule renames course completion certificates as COURSE COMPLETION RECORDS and requires either the student's licence number or application number on the record, so that REALM can automate processing that is currently manual.",
+        reliedOnBy: ["deliverable:tx-completion-record"],
+      },
+    ],
+    conflicts: [
+      {
+        id: "535-65-withdrawn-flag",
+        question:
+          "TREC's § 535.65 rule record renders a field reading 'Rule Withdrawn: 1'. The § 535.62 record renders no such field. A rule cannot be both adopted with an effective date and withdrawn, so the flag means something else — a withdrawn earlier proposal, or a display artefact of the agency's content system.",
+        resolution:
+          "UNRESOLVED. The dates are recorded as TREC states them and the flag is recorded as an open question to be settled against the Secretary of State record 465427. Nothing in this build depends on the answer.",
+      },
+    ],
+  }),
+
+  /* ── the Secretary of State's own text, reachable through the Texas Register ── */
+  source({
+    id: "sos-texas-register-2026-05-22",
+    authority: "Texas Secretary of State",
+    title: "Texas Register, 22 May 2026 — Title 22 Examining Boards, Proposed Rules",
+    documentNumber: "TRD-202601975 (the § 535.62 / § 535.65 proposal); filed with the Office of the Secretary of State 8 May 2026",
+    revision: "issue of 22 May 2026",
+    effectiveDate: null,
+    url: "https://www.sos.texas.gov/texreg/archive/May222026/Proposed%20Rules/22.EXAMINING%20BOARDS.html",
+    localCopy: "texas/trec-sources/texas-register/2026-05-22-title22-proposed-rules.html",
+    sha256: "6c5c97f0c283133b306913198d6c86dacf553de1ac03de31017ea93bda62063b",
+    bytes: 172495,
+    readOn: "2026-08-27",
+    status: "proposed_text_as_published",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 3 — the Secretary of State's own publication, and the highest-ranked Texas source this project has actually opened. It carries the PROPOSED text of §§ 535.62 and 535.65 in full, not the adopted text; the adoption notice publishes in the issue of 28 August 2026, which returns 403 because it is not yet published.",
+    materialClaims: [
+      {
+        id: "535-65-a-4-attorney-in-fact",
+        claim:
+          "§ 535.65(a)(4) as proposed: \"If a provider approved by the Commission does not maintain a fixed office in Texas for the duration of the provider's approval to offer courses, the provider shall designate a resident of this state as attorney-in-fact to accept service of process AND act as custodian of any records in Texas that the provider is required to maintain by this section. A power-of-attorney designating the resident must be filed with the Commission in a form acceptable to the Commission.\"",
+        reliedOnBy: ["deliverable:texas-attorney-in-fact", "deliverable:texas-power-of-attorney", "deliverable:texas-records-custodian"],
+      },
+      {
+        id: "535-65-a-1-provider-responsibilities",
+        claim:
+          "§ 535.65(a)(1) as proposed makes the provider responsible for course administration including prescribed time for required topics, student attendance records and pre-enrolment agreements, verifying instructor qualification, performance and attendance, proper examination administration, VALIDATION OF STUDENT IDENTITY ACCEPTABLE TO THE COMMISSION, maintaining student course completion records, advertising compliance, preventing recruitment during course presentation, and staff availability for public inquiry.",
+        reliedOnBy: ["texas/submission/distance-delivery-controls.md"],
+      },
+      {
+        id: "535-65-b-instructor",
+        claim:
+          "§ 535.65(b) as proposed requires a provider to use an instructor currently qualified under § 535.63 to teach the specified course, selected on the basis of expertise in the subject area and ability as an instructor.",
+        reliedOnBy: ["deliverable:instructor-dossier"],
+      },
+      {
+        id: "ownership-threshold-and-bond",
+        claim:
+          "The same issue states, for a change of ownership, that a Principal Information Form is required for each proposed new owner who holds AT LEAST 10% INTEREST in the school, and that financial documents must satisfy § 535.61 INCLUDING A $20,000 SURETY BOND.",
+        reliedOnBy: ["deliverable:entity-principals", "deliverable:fin-surety-bond", "PROVIDER_TERM.bondAmount"],
+      },
+      {
+        id: "rulemaking-authority",
+        claim: "The proposal is made under Texas Occupations Code § 1101.151, which authorises the Commission to adopt and enforce rules necessary to administer Chapter 1101.",
+        reliedOnBy: [],
+      },
+    ],
+    conflicts: [
+      {
+        id: "proposed-not-adopted-text",
+        question: "The text held is the text AS PROPOSED. Adopted text can differ from proposed text.",
+        resolution:
+          "OPEN and dated. The adoption notice publishes 28 August 2026. Until it is read, every claim above is labelled 'as proposed' in the record itself and nothing states it as the codified current rule.",
       },
     ],
   }),
@@ -458,19 +607,71 @@ export const PROVIDER_TERM = Object.freeze({
   renewalWindowDays: null,
   renewalWindowStatus: "UNVERIFIED — 22 TAC unreachable.",
   bondAmount: 20000,
-  bondAmountStatus: "UNVERIFIED — the $20,000 figure comes from the work order and from TREC's provider page, not from rule text this project has read.",
+  bondAmountStatus: "VERIFIED as proposed text — the Texas Register of 22 May 2026 states a $20,000 surety bond among the financial documents § 535.61 requires. The codified current text has still not been read.",
   reserveAmount: 10000,
   reserveAmountStatus: "UNVERIFIED — same.",
 });
 
-/* ── the two statuses, kept apart ──────────────────────────────────────────────────────────── */
-export function sourceLock() {
-  const blocking = SOURCES.filter(
-    (entry) => entry.reachability === REACHABILITY.UNREACHABLE_JS_ONLY || entry.reachability === REACHABILITY.UNREACHABLE_LOGIN_REQUIRED,
-  );
+/* ── three locks, split by PURPOSE ────────────────────────────────────────────────────────────
+ *
+ * One lock over everything was too blunt, and it hid a real distinction: an administrative
+ * access problem and a curriculum source problem are not the same problem, they block different
+ * work, and different people clear them. Merged into one status, a provider-portal login barrier
+ * looked like a reason not to write a course — which is exactly the wrong conclusion, and exactly
+ * the one the TX-0 report drew.
+ *
+ * So the locks are separate, and neither is weakened to make the other pass.
+ */
+
+/** Provider, course, instructor, fee, bond, reserve, Texas presence, completion reporting. */
+const PROVIDER_RULE_SOURCE_IDS = ["sos-tac-22-535", "trec-qe-provider-application", "trec-fee-schedule", "trec-rule-535-62", "trec-rule-535-65", "sos-texas-register-2026-05-22"];
+
+/** PRINS1-1 and the substantive law Principles I is taught from. */
+const PRINCIPLES_I_SOURCE_IDS = ["trec-prins1-1"];
+
+const unreachable = (entry) =>
+  entry.reachability === REACHABILITY.UNREACHABLE_JS_ONLY || entry.reachability === REACHABILITY.UNREACHABLE_LOGIN_REQUIRED;
+
+const lockOver = (ids) => {
+  const scope = SOURCES.filter((entry) => ids.includes(entry.id));
+  const blocking = scope.filter(unreachable);
   return Object.freeze({
     status: blocking.length === 0 ? "PASS" : "FAIL",
+    considered: scope.length,
     unreachable: Object.freeze(blocking.map((entry) => Object.freeze({ id: entry.id, title: entry.title, reachability: entry.reachability }))),
+  });
+};
+
+export function providerRuleSourceLock() {
+  return lockOver(PROVIDER_RULE_SOURCE_IDS);
+}
+
+/**
+ * Principles I passes only when the course form is held AND every PRINS1-1 unit either has a
+ * primary source on disk or is named as needing none. `statuteCoverage` is injected so this module
+ * does not import the statute layer and the statute layer does not import this one.
+ */
+export function principlesISourceLock(statuteCoverage) {
+  const formLock = lockOver(PRINCIPLES_I_SOURCE_IDS);
+  const uncovered = statuteCoverage?.uncovered ?? ["statute coverage was not supplied"];
+  return Object.freeze({
+    status: formLock.status === "PASS" && uncovered.length === 0 ? "PASS" : "FAIL",
+    form: formLock,
+    unitsHeld: statuteCoverage?.held?.length ?? 0,
+    unitsExcused: statuteCoverage?.excused?.length ?? 0,
+    unitsUncovered: Object.freeze(uncovered),
+  });
+}
+
+/** The aggregate passes only when both components pass. It cannot be granted on its own. */
+export function sourceLock(statuteCoverage) {
+  const provider = providerRuleSourceLock();
+  const principles = principlesISourceLock(statuteCoverage);
+  return Object.freeze({
+    status: provider.status === "PASS" && principles.status === "PASS" ? "PASS" : "FAIL",
+    provider,
+    principles,
+    unreachable: Object.freeze([...provider.unreachable, ...principles.form.unreachable]),
   });
 }
 
@@ -480,4 +681,4 @@ export function held() {
 
 export const CONFLICTS = Object.freeze(SOURCES.flatMap((entry) => entry.conflicts.map((conflict) => Object.freeze({ sourceId: entry.id, ...conflict }))));
 
-export default Object.freeze({ MANIFEST_VERSION, SOURCES, FEES, PROGRAMS, PATHWAY, FILING_PLAN, PROVIDER_TERM, CONFLICTS, sourceLock, held, courseApplicationFee });
+export default Object.freeze({ MANIFEST_VERSION, SOURCES, FEES, PROGRAMS, PATHWAY, FILING_PLAN, PROVIDER_TERM, CONFLICTS, sourceLock, providerRuleSourceLock, principlesISourceLock, held, courseApplicationFee });

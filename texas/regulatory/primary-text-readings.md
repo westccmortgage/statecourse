@@ -5,38 +5,89 @@ Recorded 2026-08-27.
 This file says what was read, what it says, and — the part that matters most for a reviewer — **what
 could not be read, and is therefore stated nowhere in this build.**
 
-## One finding governs everything below and should be read before anything else
+## A correction, dated, before anything else
 
-**Texas moved its two highest authorities behind JavaScript applications, and neither could be
-opened from this build environment.**
+**Two conclusions in the TX-0 report of 2026-08-24 were wrong, and both were wrong in the same
+way — a single failing endpoint was generalised into a statement about Texas.**
 
-- The **official Texas Administrative Code** is now served only from the Secretary of State's Appian
-  portal at `texas-sos.appianportalsgov.com`. The legacy reader at
-  `texreg.sos.state.tx.us/public/readtac$ext.TacPage` returns a **"This Site Has Moved"** page for
-  every section requested — §§ 535.55, 535.60 through 535.67 and 535.101 were each tried. The
-  replacement returns a 2,506-byte application shell to any non-browser client.
-- **`statutes.capitol.texas.gov`**, which formerly served the Occupations Code as static documents,
-  now returns **the identical 250,874-byte application shell for every document path** — `.htm`,
-  `.pdf` and `StatutesByDate` alike — and returns **406** for a non-HTML `Accept` header. The
-  statute text is fetched by client-side JavaScript.
-- **There is no browser fallback here.** Headless Chromium is installed, and it cannot reach *any*
-  host from this environment; it fails with `ERR_CONNECTION_RESET` even against `trec.texas.gov`,
-  which `curl` retrieves without difficulty.
+### Correction 1 — Texas statutes are available, and were retrieved
 
-**Consequently: no Texas statutory text and no Texas rule text is quoted, paraphrased, relied on or
-stated anywhere in this build.** `TX_REGULATORY_SOURCE_LOCK` is **FAIL**, and it is failing for the
-correct reason rather than passing on a substitute.
+TX-0 recorded the Occupations Code as unreachable because
+`statutes.capitol.texas.gov/Docs/…` returns an identical 250,874-byte single-page-application shell
+for every document path. **That host does behave that way. The conclusion drawn from it did not
+follow.** The **Texas Legislative Council** publishes the same codes as plain static HTML:
 
-**What this blocks, stated plainly.** Principles of Real Estate I is a course about Texas property
-interests, homestead, legal descriptions, ownership forms, contracts, deeds, title, mortgages and
-closing. Writing it requires the Texas Property Code, Estates Code, Finance Code, Tax Code, Local
-Government Code and Occupations Code. **None could be opened, so none of it was written.** Writing it
-from memory would have produced exactly the defect this project spent August correcting in Arizona —
-a confident regulatory statement with nothing behind it.
+```
+https://tcss.legis.texas.gov/resources/{CODE}/htm/{CODE}.{CHAPTER}.htm
+```
+
+**Twenty-five Texas chapters and four federal sources were retrieved from it on 2026-08-27, with no
+browser, no login, and no failures.** All are held under `texas/trec-sources/`, hashed, and mapped
+unit by unit to PRINS1-1. **`TX_PRINCIPLES_I_SOURCE_LOCK` now passes**, and Principles of Real
+Estate I is no longer blocked at the source.
+
+### Correction 2 — the August 2026 amendments exist
+
+TX-0 reported that no adopted amendment to **§ 535.62** or **§ 535.65** appears in the Secretary of
+State's 2026 publication. **They exist.** TREC's own rule records state, for both:
+
+| | § 535.62 | § 535.65 |
+|---|---|---|
+| Proposed | 4 May 2026 | 4 May 2026 |
+| **Adopted** | **10 August 2026** | **10 August 2026** |
+| **Effective** | **31 August 2026** | **31 August 2026** |
+| Emergency adopted | NO | NO |
+| SoS record | `recordId=465426` | `recordId=465427` |
+
+**Why the scan missed them, stated plainly.** An adoption filed on 10 August publishes in the Texas
+Register about three weeks later — the issue of **28 August 2026**, which returns 403 because it is
+not yet published. The scan covered issues through 21 August and was accurate about what it covered.
+**The error was in the sentence, not the search: "not found in the issues I read" was reported as
+"does not appear."**
+
+Both are recorded as **`adopted_pending_effective`**. Today is 27 August 2026; they are not current
+law for four more days, and nothing here describes them as effective.
+
+### What that leaves genuinely unreachable
+
+**The codified current text of eight administrative rules** — §§ 535.55, 535.60, 535.61, 535.63,
+535.64, 535.66, 535.67 and 535.101. The Secretary of State's Appian portal serves a 2,506-byte
+JavaScript shell to a non-browser client, the legacy reader returns "This Site Has Moved", and
+headless Chromium cannot reach any host from this environment. That is a real barrier and it is
+**eight rules wide**, not the whole of Texas law. The list is at
+`texas/submission/human-export-list.md`.
+
+**And the provider application itself**, which is behind a REALM/Accela login.
 
 ---
 
 ## 1. What was obtained and read
+
+### Texas statutes and federal sources — 29 documents held
+
+Retrieved 2026-08-27 from `tcss.legis.texas.gov` (Texas Legislative Council), `uscode.house.gov`
+and the eCFR API. Held under `texas/trec-sources/statutes/` and `texas/trec-sources/federal/`,
+each hashed and recorded in `config/texas/statute-sources.mjs` with the PRINS1-1 units it serves.
+
+**Twenty-five Texas chapters:** Occupations Code 1101 · Property Code 5, 11, 12, 13, 21, 41, 51, 53,
+111 · Estates Code 101, 201, 251 · Business and Commerce Code 9, 26 · Civil Practice and Remedies
+Code 16 · Tax Code 32 · Insurance Code 2501 · Water Code 11 · Business Organizations Code 200 ·
+Government Code 4001, 4005 · Local Government Code 232 · Natural Resources Code 21 · Finance Code 343.
+
+**Four federal sources:** 12 U.S.C. § 2601 et seq. (RESPA) · 12 C.F.R. part 1024 (Regulation X, eCFR
+as of 2026-08-01) · 26 U.S.C. § 1445 (FIRPTA) · 26 U.S.C. § 860A et seq. (REMICs).
+
+**HELD IS NOT READ, and the difference is enforced.** Downloading a chapter does not make its
+sections known. **Ten sections have actually been opened and read**, each recorded with what was
+taken from it: Occ. Code §§ 1101.155 and 1101.301; Prop. Code §§ 5.008, 12.001, 41.001, 41.002,
+51.002; Bus. & Com. Code § 26.01; 12 U.S.C. § 2601; 26 U.S.C. § 1445. Everything else in those
+chapters is unread by construction, and the curriculum guard refuses a citation to a section that is
+not on the read list.
+
+**Coverage of the 46 PRINS1-1 units:** 42 have a primary source held; 4 are named as needing none,
+with the reason recorded — Historical Background, Investing in Real Estate, The Investment and The
+Benefits are taught as history and economics, and any tax benefit stated in the last of them must
+cite the Internal Revenue Code, which is not held for it. **No unit is uncovered.**
 
 ### The six qualifying course approval forms — TREC, adopted by rule
 
@@ -89,22 +140,30 @@ provider fee is **$206**. Whether a distance-only course also incurs the classro
 is not stated on the schedule and is question 8 of the clarification memo. **REALM's own calculation
 controls, and a difference will be reported rather than reconciled silently.**
 
-### The Texas Register — Secretary of State, 2026
+### The Texas Register — Secretary of State
 
 Reachable as static PDFs and HTML at `sos.texas.gov/texreg/`, unlike the Administrative Code itself.
-**34 issues** of the 2026 adopted-rules sections were scanned (January through August), together with
-the Title 22 adopted-rules pages for May through August 2026.
 
-**Finding.** The only Texas Real Estate Commission adoptions in Chapter 535 in 2026 are **§ 535.214**
-(issue of 27 February 2026) and **§ 535.69** (issue of 22 May 2026). **No adopted amendment to
-§ 535.62 or § 535.65 appears anywhere in the 2026 adopted-rules publication.**
+**The issue of 22 May 2026, Title 22 Examining Boards, Proposed Rules** is held at
+`texas/trec-sources/texas-register/2026-05-22-title22-proposed-rules.html`
+(SHA-256 `6c5c97f0c283133b…`, 172,495 bytes). It carries **the full text of §§ 535.62 and 535.65 as
+proposed**, filed with the Office of the Secretary of State on 8 May 2026 under **TRD-202601975**,
+made under **Texas Occupations Code § 1101.151**.
 
-**What that does and does not establish.** It does not establish that no such amendment exists — it
-may have been adopted before 2026, or published in a part not scanned. It establishes that **this
-project searched the Secretary of State's own publication and did not find it**, and that nothing in
-this build is written to it. The completion-record rule said to take effect 31 August 2026, with an
-operational requirement from 1 October 2026, is **UNVERIFIED** for the same reason, and no completion
-record has been built to it.
+**This is the highest-ranked Texas source this project has actually opened**, and three things were
+taken from it:
+
+- **§ 535.65(a)(4)** — where a provider keeps no fixed Texas office, it must designate a Texas
+  resident as attorney-in-fact **to accept service of process AND act as custodian of records in
+  Texas**, with a power-of-attorney filed with the Commission in an acceptable form. The same person
+  holds both roles.
+- **§ 535.65(a)(1)** — the nine provider responsibilities, including *"validation of student
+  identity acceptable to the Commission"* and *"maintaining student course completion records"*.
+- A **10% ownership threshold** for a Principal Information Form, and a **$20,000 surety bond**
+  among the financial documents § 535.61 requires.
+
+**It is proposed text, and every claim taken from it says so.** Adopted text can differ. The
+adoption notice publishes 28 August 2026 — a static file this build can fetch itself.
 
 ### The provider application — located, not readable
 
@@ -135,39 +194,39 @@ claim is ever attached to it.
 
 ## 3. NOT obtained. Nothing in this build comes from any of these
 
-- **22 TAC §§ 535.55, 535.60 through 535.67, and 535.101**, in their adopted text. This includes
-  everything the build would otherwise say about provider approval, course approval, instructor
-  qualification, examination administration, identity assurance, record retention, the four-year
-  course term, the renewal window, the bond, the reserve, and the financial ratios.
-- **Texas Occupations Code chapter 1101** in its own text.
-- **The Texas Property Code, Estates Code, Finance Code, Tax Code and Local Government Code** — every
-  chapter Principles of Real Estate I would need.
+- **The codified current text of 22 TAC §§ 535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67
+  and 535.101.** Eight rules, listed for export at `texas/submission/human-export-list.md`. Until
+  they are read this build states no provider approval standard, no instructor qualification route,
+  no course content requirement, no fee rule and no retention period as a Texas requirement.
+  **§ 535.61 and § 535.63 are the two that matter most** — the financial standards and the
+  instructor routes.
+- **The adopted text of §§ 535.62 and 535.65.** The proposed text is held; the adoption notice
+  publishes 28 August 2026.
 - **The Qualifying Education Provider Application's own field list, attachment list and fee
-  calculation**, which sit behind the REALM login.
+  calculation**, which sit behind the REALM/Accela login.
 - **The current REALM distance qualifying-course application**, and any inactivity timeout,
   proctoring requirement or examination-administration requirement it may impose.
-- **Any adopted amendment to § 535.62 or § 535.65**, which was searched for in the Secretary of
-  State's 2026 publication and not found.
+- **Every section of the twenty-nine held documents other than the ten recorded as read.** Holding a
+  chapter is not reading it, and the guard enforces the difference.
+- **The Internal Revenue Code**, beyond §§ 1445 and 860A. No tax benefit, rate, holding period or
+  depreciation rule may be stated in PRINS1-1 unit T05U7 without it.
 - **The Instructor Manual Guidelines** for qualifying real estate courses, and the **Course and
   Instructor Evaluation Form** — both published by TREC and neither yet retrieved.
 
-**Consequently this build states no Texas rule, no Texas statute, no passing score, no proctoring
-requirement, no retention period, no timeout value, no instructor qualification and no financial
-ratio as a Texas requirement.** Where the work order supplied such a figure, it is carried with
-`verified: false` and labelled as coming from the work order rather than from a source.
-
----
-
 ## 4. What follows from this, stated plainly for the reviewer
 
-**The Texas foundation in this repository is real and the Texas curriculum does not exist.** The six
-courses are enumerated, disabled and separately approvable; the fee arithmetic is computed from the
-published schedule; the PRINS1-1 structure is transcribed exactly and guarded by invariants; the
-gates refuse to grant; and the payment contract refuses to open a checkout.
+**The Texas source layer is now in two halves and they are locked separately, because they block
+different work and different people clear them.**
 
-**What is missing is the law.** Until a person opens the Secretary of State's portal and the
-Legislature's statute site in a browser and saves the adopted text, no Texas course content can be
-written here without inventing it — and this project does not invent it.
+- **`TX_PRINCIPLES_I_SOURCE_LOCK: PASS`** — the course form is held, and all 46 of its units have a
+  primary source on disk or a recorded reason for needing none. Principles of Real Estate I can be
+  written against sources rather than recall. **It has not been written.**
+- **`TX_PROVIDER_RULE_SOURCE_LOCK: FAIL`** — eight codified rules and the provider application
+  remain unread. The provider submission cannot be prepared against them.
+- **`TX_REGULATORY_SOURCE_LOCK: FAIL`** — the aggregate, which passes only when both do.
+
+**Splitting them is the point.** Merged into one status, a provider-portal login barrier read as a
+reason not to write a course. It never was one.
 
 ---
 

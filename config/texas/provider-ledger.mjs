@@ -32,7 +32,7 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "entity-ein", section: "Entity", owner: OWNER.HUMAN, title: "IRS EIN confirmation letter", note: "Private. The number itself is never committed to this repository." }),
   item({ id: "entity-assumed-name", section: "Entity", owner: OWNER.HUMAN, title: "Assumed-name certificate, if the provider trades under a name other than its legal name" }),
   item({ id: "entity-texas-registration", section: "Entity", owner: OWNER.HUMAN, title: "Texas foreign-entity registration or Certificate of Fact, if required", note: "Whether it is required is a REGULATOR question for a distance-only provider with no Texas office." }),
-  item({ id: "entity-principals", section: "Entity", owner: OWNER.HUMAN, title: "All owners and principals at the ownership threshold the current application sets", note: "The threshold itself is unread — the application is behind a login." }),
+  item({ id: "entity-principals", section: "Entity", owner: OWNER.HUMAN, title: "All owners and principals at the ownership threshold, with a Principal Information Form for each owner holding at least 10% interest", note: "The 10% threshold and the $20,000 bond are stated in the Texas Register of 22 May 2026, as proposed text." }),
   item({ id: "entity-principal-forms", section: "Entity", owner: OWNER.HUMAN, title: "Principal Information Form for each principal" }),
   item({ id: "entity-background-forms", section: "Entity", owner: OWNER.HUMAN, title: "Background History Form for each person the application requires one from" }),
   item({ id: "entity-officers", section: "Entity", owner: OWNER.HUMAN, title: "Board, managers and officers as filed" }),
@@ -41,7 +41,7 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "entity-records-manager", section: "Entity", owner: OWNER.HUMAN, title: "Records Manager designated" }),
 
   /* ── Texas presence, for a provider that will have no Texas classroom ── */
-  item({ id: "texas-attorney-in-fact", section: "Texas presence", owner: OWNER.HUMAN, title: "Texas-resident attorney-in-fact who accepts service of process", note: "A named natural person or an entity TREC accepts. Not assumed to be satisfiable by a commercial registered-agent service — that is a REGULATOR question." }),
+  item({ id: "texas-attorney-in-fact", section: "Texas presence", owner: OWNER.HUMAN, title: "Texas-resident attorney-in-fact who accepts service of process AND acts as custodian of Texas records", note: "§ 535.65(a)(4) as proposed puts both duties on the SAME designated resident where the provider keeps no fixed Texas office, and requires a power-of-attorney filed with the Commission in an acceptable form. Whether a commercial service may be that resident is still a REGULATOR question." }),
   item({ id: "texas-power-of-attorney", section: "Texas presence", owner: OWNER.HUMAN, title: "Power of Attorney executed in a form acceptable to TREC" }),
   item({ id: "texas-records-custodian", section: "Texas presence", owner: OWNER.HUMAN, title: "Texas records custodian identified and consenting" }),
   item({ id: "texas-records-location", section: "Texas presence", owner: OWNER.REGULATOR, title: "Which provider records must be maintained in Texas when the LMS and the records are electronic", note: "TREC clarification question 5." }),
@@ -71,9 +71,32 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "instructor-determination", section: "Instructor", owner: OWNER.HUMAN, title: "The provider's own written qualification determination for the specified course" }),
 
   /* ── regulatory sources, which are a deliverable in their own right ── */
-  item({ id: "source-tac-535", section: "Sources", owner: OWNER.HUMAN, title: "Adopted text of 22 TAC §§ 535.55, 535.60-535.67 and 535.101 retrieved from the Secretary of State", note: "Unreachable from the build environment. Until this exists no Texas rule may be stated and no course content may be written." }),
-  item({ id: "source-occupations-code", section: "Sources", owner: OWNER.HUMAN, title: "Texas Occupations Code chapter 1101 retrieved from the Legislature", note: "Same." }),
-  item({ id: "source-substantive-codes", section: "Sources", owner: OWNER.HUMAN, title: "Texas Property, Estates, Finance, Tax and Local Government Code chapters the Principles I units require", note: "Same. This is the blocker on TX-1 content." }),
+  item({
+    id: "source-tac-535", section: "Sources", owner: OWNER.HUMAN,
+    title: "Codified text of 22 TAC §§ 535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 and 535.101 exported from the Secretary of State portal",
+    note: "Eight rules, not ten: §§ 535.62 and 535.65 are held as proposed text from the Texas Register and their adoption notice publishes 28 August 2026. See texas/submission/human-export-list.md.",
+    evidence: [{ path: "texas/submission/human-export-list.md", mustContain: ["535.61", "535.63"] }],
+  }),
+  item({
+    id: "source-occupations-code", section: "Sources", owner: OWNER.BUILD,
+    title: "Texas Occupations Code chapter 1101 held and hashed",
+    evidence: [{ path: "texas/trec-sources/statutes/OC.1101.htm" }, { path: "config/texas/statute-sources.mjs", mustContain: ["OC.1101.htm"] }],
+  }),
+  item({
+    id: "source-substantive-codes", section: "Sources", owner: OWNER.BUILD,
+    title: "Every Texas and federal chapter the 46 PRINS1-1 units need, held and mapped unit by unit",
+    evidence: [{ path: "config/texas/statute-sources.mjs", mustContain: ["reliedOnByUnits", "NO_STATUTE_REQUIRED"] }],
+  }),
+  item({
+    id: "source-texas-register-proposal", section: "Sources", owner: OWNER.BUILD,
+    title: "Secretary of State Texas Register of 22 May 2026 carrying §§ 535.62 and 535.65 as proposed",
+    evidence: [{ path: "texas/trec-sources/texas-register/2026-05-22-title22-proposed-rules.html" }],
+  }),
+  item({
+    id: "source-535-adoption-notice", section: "Sources", owner: OWNER.BUILD,
+    title: "Texas Register adoption notice for §§ 535.62 and 535.65, publishing 28 August 2026",
+    note: "A static file this build can fetch itself the day it appears. Not a human item.",
+  }),
 
   /* ── what this repository has already produced ── */
   item({ id: "course-forms-held", section: "Sources", owner: OWNER.BUILD, title: "The six current TREC course approval forms downloaded, hashed and held", evidence: [{ path: "texas/trec-sources/PRINS1-1.pdf" }, { path: "config/texas/regulatory-manifest.mjs", mustContain: ["1ec0a549dac17854"] }] }),
