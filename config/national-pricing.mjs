@@ -194,11 +194,12 @@ export const STATE_PRICING = Object.freeze([
     note: "Six separate courses; the bundle grants all six. § 12-10-203(4)(b) waives all but CONTRACTS and CLOSINGS for a broker licensed elsewhere, and (4)(c) waives all but CONTRACTS and the 72-hour group for a salesperson licensed elsewhere — so the Colorado contracts course is the one every applicant completes. Kaplan is $799 for 168 hours plus exam prep, $1,299 for its career package",
     marketNote: "The Commission publishes its own qualifying education outline for each of the six, with hours allocated per topic in five of them"
   }),
-  state("TX", "Texas", 180, 499, 649, BUILD_STATUS.UNRESEARCHED, {
-    hoursSource: "market research only; Texas rules have not been read from primary sources",
+  state("TX", "Texas", 180, 499, 649, BUILD_STATUS.RESEARCHED, {
+    hoursSource:
+      "the six TREC qualifying course approval forms — PRINS1-1, PRINS2-1, LOA-1 (rev. 09/11/2024), LOC-0, PCF-0, REF-0 (rev. 06/20/2016) — each a 30-hour course, downloaded and hashed 2026-08-24. The Texas Administrative Code and Occupations Code could NOT be read; no Texas rule is stated anywhere in this build",
     marketRange: "$498–$1,000",
-    composition: "six 30-hour courses",
-    note: "A single 30-hour course would price around $99–$119, matching the market; not decided"
+    composition: "six separately approved 30-hour courses; never one 180-hour course",
+    note: "A single 30-hour course would price around $99–$119, matching the market; not decided. TREC review fees compute to $950 per distance course and $6,112 to file, from the fee schedule effective 2025-12-15"
   })
 ]);
 
