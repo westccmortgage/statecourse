@@ -73,7 +73,7 @@ function footer(prefix) {
 }
 
 function document({ title, description, prefix = "../", active = "", body, scripts = "" }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260828-audit"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
 }
 
 function pageHero(overline, title, lede, state = false) {
