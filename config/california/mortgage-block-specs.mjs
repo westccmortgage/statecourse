@@ -233,4 +233,22 @@ export const MORTGAGE_BLOCK_SPECS = {
        one-product presentation teaches §6. Every section owns a problem. */
     problemMap: { 1: [1], 2: [2, 3], 3: [4], 4: [6], 5: [5, 7], 6: [8] },
   },
+  15: {
+    objectives: [
+      "Place a file's events on the nine-step chronology, settle capacity, authority, scope, and compensation in the first conversation, hold the fact-estimate-assurance line at intake, and record the dated intake note.",
+      "Apply the six-item application trigger without exception, run everything that starts at that moment, code dispositions as the substantive statements they are, and keep the originator's hands off document creation.",
+      "Run the federal and California disclosure systems with delivery evidence, present every option on a common basis with its worst case, record the suitability facts, and support every revision with a contemporaneous reason.",
+      "Assemble a file that proves the ability-to-repay determination without the originator present, clear conditions with source evidence only, treat an unmeetable condition as information, and keep targets away from the appraisal.",
+      "Reconcile the closing line by line, cure tolerance variances, make disclosed, received, and payer agree exactly on compensation, handle trust funds and advance fees, and treat acknowledgment as delivery only.",
+      "Audit a file against the reconstructability standard, rank defects by seriousness rather than order of discovery, distinguish an honest document created today from a manufactured one, and carry the course's four questions.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the Tuesday-email application and P3 the processor-authored deposit letter both teach
+       §2; P2 the vanished oral comparison teaches §3; P4 the manager's appraisal instructions
+       and P6 the denial coded as a withdrawal both teach §4 (adverse action at 4.5, valuation at
+       4.4); P5 the closing-stage ranking and P7 the acknowledgment file both teach §5; P8 the
+       broker's twenty-file audit teaches §6. §1 (inquiry and scope) has no mapped problem — the
+       documented gap; its retrieval check is its active learning. */
+    problemMap: { 2: [1, 3], 3: [2], 4: [4, 6], 5: [5, 7], 6: [8] },
+  },
 };
