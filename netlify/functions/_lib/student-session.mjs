@@ -85,8 +85,12 @@ export async function registerStudent(input = {}) {
       }
     }
   });
-  if (!result.user?.id) throw Object.assign(new Error("registration_unavailable"), { statusCode: 503 });
-  const student = await syncStudent(result.user,{ signedIn:Boolean(result.access_token) });
+  /* Signup response shape differs by confirmation mode: with autoconfirm the user arrives
+     inside a session ({ access_token, user }); with email confirmation enabled GoTrue returns
+     the user object itself at the top level and no session. Accept both. */
+  const user = result.user?.id ? result.user : (result.id ? result : null);
+  if (!user?.id) throw Object.assign(new Error("registration_unavailable"), { statusCode: 503 });
+  const student = await syncStudent(user,{ signedIn:Boolean(result.access_token) });
   return {
     student,
     session:result.access_token ? result : null,
