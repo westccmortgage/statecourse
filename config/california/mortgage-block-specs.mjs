@@ -63,4 +63,37 @@ export const MORTGAGE_BLOCK_SPECS = {
        teach §5; P8 the one-product presentation teaches §6. Every section owns a problem. */
     problemMap: { 1: [1], 2: [2], 3: [3, 4], 4: [5, 6], 5: [7], 6: [8] },
   },
+  5: {
+    objectives: [
+      "Distinguish prequalification, preapproval, and loan commitment, state what constitutes an application and what taking one triggers, and explain why structuring to avoid the trigger is a compliance problem.",
+      "Collect and verify income, assets, and liabilities, explain why a large deposit requires sourcing, and state what a licensee must never suggest about deposits.",
+      "State what a credit report contains and its limits, apply permissible purpose and authorization, hold the line on what a licensee may not say about credit, and surface adverse credit early.",
+      "Explain why occupancy is a material fact whose misstatement is loan fraud, recognize the contradiction patterns, respond correctly to the owner-occupancy request, and distinguish a change of intent from a misrepresentation.",
+      "Compute the front-end and back-end ratios, name the errors that produce wrong ones, never state a threshold as a rule, and warn the borrower in writing about the actions that change a ratio after application.",
+      "Keep the application accurate: refuse alterations and omissions, handle adverse information and corrections properly, and build a file that passes the reconstructability test.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the six-items trigger and structuring, and P2 the preapproval misdescription, both teach
+       §1; P3 self-employment income and deposit sourcing teaches §2; P4 the four credit questions
+       teaches §3; P5 the owner-occupancy request teaches §4; P6 the ratio computation and P7 the
+       post-application actions both teach §5; P8 the manager's instruction teaches §6. Every
+       section owns a problem. */
+    problemMap: { 1: [1, 2], 2: [3], 3: [4], 4: [5], 5: [6, 7], 6: [8] },
+  },
+  6: {
+    objectives: [
+      "State what the ability-to-repay determination requires, name the factors files most often miss, explain why a discounted start rate does not qualify a borrower, and outline qualified mortgages and the exclusions.",
+      "State what an automated finding is and is not, explain why 'the system approved it' fails, and state who decides whether a compensating factor or an exception applies.",
+      "Apply the lower-of-value-or-price rule, distinguish supplying information from supplying a target, describe a correct reconsideration of value, and walk a borrower through a low appraisal honestly.",
+      "Distinguish title insurance from hazard insurance and exceptions from exclusions and requirements, name what the title work must resolve, and treat insurance availability as a first-week item.",
+      "Name the condition types and categories, explain why a prior-to-funding condition is not a formality, manage conditions against the lock, and state what must never be done to satisfy one.",
+      "Name the dispositions, state what adverse action notice requires and why a generic reason fails, communicate a denial honestly, and describe the fair-lending disciplines that constrain underwriting discretion.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the three qualification errors teach §1; P2 the optimistic automated finding, §2; P3 the
+       target communication and P4 the low-appraisal conversation both teach §3; P5 the title-work
+       stack and P6 the mapped-hazard insurance plan both teach §4; P7 the three remaining
+       conditions, §5; P8 the four-failure denial, §6. Every section owns a problem. */
+    problemMap: { 1: [1], 2: [2], 3: [3, 4], 4: [5, 6], 5: [7], 6: [8] },
+  },
 };
