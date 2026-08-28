@@ -24,7 +24,6 @@ import {
   publicBlockQuestion, scoreBlockQuestion, sectionsEvidenced,
 } from "../../config/california-block-engine.mjs";
 
-const PRACTICE_MINIMUM_CHARACTERS = 80;
 
 function fail(message, statusCode = 400) {
   throw Object.assign(new Error(message), { statusCode });
@@ -252,7 +251,6 @@ async function handleEvent(ctx, input) {
     const block = findBlock(delivery, String(input.blockId || ""));
     const screen = findScreen(block, String(input.screenId || ""));
     if (screen.type === "retrieval") fail("retrieval_screens_complete_by_evidence", 409);
-    if (screen.type === "practice") fail("practice_screens_complete_by_commitment", 409);
     assertReachable(delivery, derived, block, screen);
     const completed = new Set(derived.completedByBlock.get(block.id));
     if (!completed.has(screen.id)) {
@@ -273,8 +271,12 @@ async function handleEvent(ctx, input) {
     const screen = findScreen(block, String(input.screenId || ""));
     if (screen.type !== "practice") fail("not_a_practice_screen", 409);
     assertReachable(delivery, derived, block, screen);
+    /* Writing an analysis is OPTIONAL (owner decision 2026-08-28). This event exists for the
+       student who chooses to save one: the only refusal is an empty save, because there is
+       nothing to record — revealing the solution without writing goes through screen_completed
+       and is never blocked. No minimum length applies. */
     const response = String(input.response || "").trim();
-    if (response.length < PRACTICE_MINIMUM_CHARACTERS) fail("practice_response_too_short");
+    if (!response.length) fail("practice_response_empty");
     const priorCommits = (derived.attemptsByBlock.get(block.id) || []).filter((attempt) => attempt.kind === "practice" && attempt.screen_id === screen.id);
     await recordAttempt(ctx, assignmentId, block.id, {
       screen_id: screen.id, kind: "practice", attempt_number: priorCommits.length + 1,

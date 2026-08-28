@@ -33,7 +33,7 @@
  *     seventh DRE segment, and B7's mastery is DERIVED from the existing regulatory record.
  *   - The eight existing practice problems are REDISTRIBUTED to the block teaching their concept
  *     (P1→B2, P2·P3→B3, P4·P5→B4, P6·P7→B5, P8→B6), each as an active practice screen: the
- *     student commits a written analysis before the printed solution unlocks. Their text renders
+ *     student may write an OPTIONAL analysis before revealing the printed solution. Saved text renders
  *     from the frozen lesson file. B1 has no mapped problem — an inventoried gap, noted below.
  *
  * ASSESSMENT INVENTORY AND THE GAP IT FOUND. Existing Assignment 1 items: 1 applied scenario,
@@ -51,7 +51,7 @@
 const RANGE = (from, to) => Object.freeze({ from, to });
 
 /* Screen types the player understands. `instruction` and `review` render a lesson range;
-   `practice` renders a range and requires a committed written analysis before the solution
+   `practice` renders a range with an optional written analysis; the student reveals the solution
    region unlocks; `retrieval` presents a question and NO lesson content — the answer-bearing
    instruction is always at least one screen behind it; `applied`, `mastery` and `completion`
    render their lesson range and host the EXISTING regulatory instruments. */

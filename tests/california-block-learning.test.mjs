@@ -486,11 +486,44 @@ test("mutation: dropping a screen range breaks the coverage invariant loudly", (
   assert.throws(() => assertCoverage(mutated, LESSON), /gap|start|stops/);
 });
 
-test("mutation: a practice screen with no committed analysis blocks mastery", () => {
+/* ── the optional-practice decision (owner, 2026-08-28) ──────────────────────────────────
+   Ordinary written-analysis practice is optional: no minimum length, no solution lock, no
+   progression dependency. The SB 1495 participatory practicum is NOT one of these — its own
+   suite (california-sb1495.test.mjs) proves both roles stay required. */
+
+test("optional practice: a block masters without any written analysis", () => {
   const block = DELIVERY.blocks[1]; /* a1-b2 has a practice screen */
   const evidence = masteredEvidence(block);
-  const mutated = { ...evidence, attempts: evidence.attempts.filter((attempt) => attempt.kind !== "practice") };
-  assert.notEqual(deriveBlockStatus(block, mutated).status, "MASTERED");
+  const withoutPractice = { ...evidence, attempts: evidence.attempts.filter((attempt) => attempt.kind !== "practice") };
+  assert.equal(deriveBlockStatus(block, withoutPractice).status, "MASTERED");
+});
+
+test("optional practice: a voluntarily saved analysis still counts as recorded evidence, and old rows still read", () => {
+  const block = DELIVERY.blocks[1];
+  /* masteredEvidence includes historical practice rows exactly as students recorded them under
+     the mandatory model — they must remain valid inputs and never regress a status. */
+  assert.equal(deriveBlockStatus(block, masteredEvidence(block)).status, "MASTERED");
+  assert.match(MIGRATION, /'retrieval','replacement','practice','remediation_review','spaced'/);
+  assert.doesNotMatch(MIGRATION, /delete\s+from\s+lms_block_assessment_attempts/i);
+});
+
+test("optional practice: the endpoint reveals without text and saves without a minimum", () => {
+  /* Revealing goes through screen_completed, which no longer refuses practice screens. */
+  assert.doesNotMatch(BLOCKS_FN, /practice_screens_complete_by_commitment/);
+  /* No character threshold anywhere in the endpoint. */
+  assert.doesNotMatch(BLOCKS_FN, /PRACTICE_MINIMUM_CHARACTERS|practice_response_too_short/);
+  /* The save path still records the attempt when the student chooses to write. */
+  assert.match(BLOCKS_FN, /kind: "practice"/);
+  assert.match(BLOCKS_FN, /practice_response_empty/);
+});
+
+test("optional practice: the player offers Reveal solution and Save my analysis with no counter", () => {
+  const player = read("public/statecourse/student/course/blocks/block-player.js");
+  assert.match(player, /Try it yourself/);
+  assert.match(player, /\(optional\)/);
+  assert.match(player, /Reveal solution/);
+  assert.match(player, /Save my analysis/);
+  assert.doesNotMatch(player, /at least 80 characters|Commit my analysis|more characters of analysis/);
 });
 
 test("mutation: incomplete instruction screens withhold the regulatory section evidence", () => {

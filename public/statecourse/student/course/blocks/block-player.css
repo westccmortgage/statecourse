@@ -113,6 +113,11 @@ button.action-primary, .nav-primary {
 }
 button.action-primary:hover, .nav-primary:hover { background: #a67a24; border-color: #a67a24; }
 button.action-primary:disabled, .nav-primary:disabled { background: var(--sc-cream-deep); border-color: var(--sc-rule); color: var(--sc-ink-soft); cursor: not-allowed; }
+button.action-secondary { padding: 10px 18px; background: transparent; border: 1px solid var(--sc-rule); border-radius: 4px; color: var(--sc-ink); font: inherit; font-weight: 600; cursor: pointer; }
+button.action-secondary:hover { border-color: var(--sc-gold); color: var(--sc-navy); }
+button.action-secondary:disabled { color: var(--sc-ink-soft); cursor: not-allowed; }
+.activity-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.optional-tag { color: var(--sc-ink-soft); font-size: .8em; font-weight: 400; }
 button.action-secondary, .nav-secondary {
   padding: 12px 22px; border: 1px solid var(--sc-navy-700); background: transparent; color: var(--sc-navy-700);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer;

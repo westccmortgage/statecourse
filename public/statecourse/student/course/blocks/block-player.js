@@ -166,7 +166,7 @@ function screenSatisfied(block, screen) {
   return block.status === "MASTERED";
 }
 
-/* ── practice screens: commit before the printed solution ────────────────────────────────── */
+/* ── practice screens: optional written analysis, solution on request ────────────────────── */
 function renderPractice(activity, block, screen, solutionHtml) {
   if (screen.completed) {
     activity.innerHTML = `<div class="activity-panel"><h3>Worked solution</h3>${solutionHtml}</div>`;
@@ -174,24 +174,38 @@ function renderPractice(activity, block, screen, solutionHtml) {
   }
   activity.innerHTML = `
     <div class="activity-panel">
-      <h3>Work the problem first</h3>
-      <p class="activity-note">Write your analysis before the printed solution unlocks — at least 80 characters. Your response is recorded with this block's evidence.</p>
-      <textarea id="practiceResponse" aria-label="Your analysis"></textarea>
-      <p><button type="button" class="action-primary" id="practiceCommit">Commit my analysis</button></p>
+      <h3>Try it yourself <span class="optional-tag">(optional)</span></h3>
+      <p class="activity-note">Write your analysis, or reveal the solution when you are ready. Anything you save is kept with this block's record.</p>
+      <textarea id="practiceResponse" aria-label="Your analysis (optional)"></textarea>
+      <p class="activity-actions">
+        <button type="button" class="action-primary" id="practiceReveal">Reveal solution</button>
+        <button type="button" class="action-secondary" id="practiceSave">Save my analysis</button>
+      </p>
       <p class="activity-note" id="practiceStatus" role="status"></p>
     </div>`;
-  $("#practiceCommit").addEventListener("click", async () => {
-    const response = $("#practiceResponse").value.trim();
-    const status = $("#practiceStatus");
-    if (response.length < 80) { status.textContent = `Keep going — ${80 - response.length} more characters of analysis before the solution unlocks.`; return; }
-    $("#practiceCommit").disabled = true;
+  const status = $("#practiceStatus");
+  const disable = (value) => { $("#practiceReveal").disabled = value; $("#practiceSave").disabled = value; };
+  /* Saving also reveals: the student wrote something, so the worked solution follows. An
+     unsaved draft is not lost silently — Reveal saves it too when text is present. */
+  const complete = async (response) => {
+    disable(true);
     try {
-      await postBlocks({ eventType: "practice_committed", blockId: block.id, screenId: screen.id, response });
+      if (response) {
+        await postBlocks({ eventType: "practice_committed", blockId: block.id, screenId: screen.id, response });
+      } else {
+        await postBlocks({ eventType: "screen_completed", blockId: block.id, screenId: screen.id });
+      }
       await refresh({ keepView: true });
     } catch (error) {
-      status.textContent = "We could not record your analysis. Please try again.";
-      $("#practiceCommit").disabled = false;
+      status.textContent = "We could not record that. Please try again.";
+      disable(false);
     }
+  };
+  $("#practiceReveal").addEventListener("click", () => complete($("#practiceResponse").value.trim()));
+  $("#practiceSave").addEventListener("click", () => {
+    const response = $("#practiceResponse").value.trim();
+    if (!response) { status.textContent = "Write something first, or use Reveal solution."; return; }
+    complete(response);
   });
 }
 

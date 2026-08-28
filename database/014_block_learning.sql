@@ -49,10 +49,11 @@ create table if not exists lms_block_assessment_attempts (
   question_id text,
   concept_id text,
   -- retrieval: the block's primary question; replacement: the different question on the same
-  -- concept served after remediation; practice: a committed written analysis on a practice
-  -- screen (correct is null — practice is required, not graded); remediation_review: the
-  -- recorded return to the instruction screen; spaced: reserved for the spaced-retrieval
-  -- capability, built now and not yet activated.
+  -- concept served after remediation; practice: an OPTIONAL saved written analysis on a
+  -- practice screen (correct is null — practice is never graded, and per the owner decision of
+  -- 2026-08-28 never required); remediation_review: the recorded return to the instruction
+  -- screen; spaced: reserved for the spaced-retrieval capability, built now and not yet
+  -- activated.
   kind text not null check (kind in ('retrieval','replacement','practice','remediation_review','spaced')),
   attempt_number integer not null default 1 check (attempt_number >= 1),
   response jsonb,

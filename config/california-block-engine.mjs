@@ -166,8 +166,11 @@ export function deriveBlockStatus(block, { completedScreens = [], attempts = [],
   const retrievalScreens = block.screens.filter((screen) => screen.type === "retrieval");
 
   const contentDone = contentScreens.every((screen) => done.has(screen.id));
-  const practiceDone = practiceScreens.every((screen) =>
-    attempts.some((attempt) => attempt.kind === "practice" && attempt.screen_id === screen.id));
+  /* Practice screens complete like any content screen. Writing an analysis is OPTIONAL
+     (owner decision 2026-08-28): a saved analysis is still recorded as evidence when the
+     student chooses to write one, but its absence never blocks the block. practiceScreens
+     is kept for structural checks; it no longer gates progression. */
+  void practiceScreens;
 
   /* Retrieval evidence per retrieval screen: a correct primary answer, or — after an incorrect
      primary — a recorded remediation review followed by a correct answer on the DIFFERENT
@@ -212,13 +215,13 @@ export function deriveBlockStatus(block, { completedScreens = [], attempts = [],
 
   if (!done.size && !attempts.length) return { status: "NOT_STARTED", activeRemediation: null };
   if (retrievalState === "remediation") return { status: "REMEDIATION_REQUIRED", activeRemediation };
-  if (contentDone && practiceDone && retrievalState === "required") return { status: "RETRIEVAL_REQUIRED", activeRemediation: null };
-  if (contentDone && practiceDone && retrievalState === "satisfied" && retrievalScreens.length > 0) {
+  if (contentDone && retrievalState === "required") return { status: "RETRIEVAL_REQUIRED", activeRemediation: null };
+  if (contentDone && retrievalState === "satisfied" && retrievalScreens.length > 0) {
     return { status: "MASTERED", activeRemediation: null };
   }
   /* A block with no retrieval screen would master on content alone; the structural test
      asserts every substantive block HAS one, so this branch exists only for completeness. */
-  if (contentDone && practiceDone && retrievalScreens.length === 0) return { status: "MASTERED", activeRemediation: null };
+  if (contentDone && retrievalScreens.length === 0) return { status: "MASTERED", activeRemediation: null };
   return { status: "IN_PROGRESS", activeRemediation: null };
 }
 
