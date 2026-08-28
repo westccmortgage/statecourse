@@ -18,6 +18,8 @@ export const handler = async (event) => {
          see. Diagnoses the "configured in the UI but absent at runtime" class of failure. */
       const visible = Object.keys(process.env).filter((key) => key.toUpperCase().includes("SUPA")).join(", ") || "(none)";
       console.error("Student registration endpoint error", error?.message, "| SUPA* env vars visible to runtime:", visible);
+      /* TEMPORARY diagnostic (names only, never values) — remove after the env var mismatch is found. */
+      return sessionResponse(status,{ error:"student_registration_unavailable", diagnostic:`SUPA* env vars visible: ${visible}` });
     }
     return sessionResponse(status,{ error:status >= 500 ? "student_registration_unavailable" : error.message });
   }
