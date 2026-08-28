@@ -93,8 +93,8 @@ Commission accept? The rule says "in a form acceptable to the Commission" and do
 
 **Question.** Which provider records must be physically or legally maintained in Texas when the
 learning management system, the student records, the examinations and the completion records are
-electronic and hosted outside Texas? Does a Texas-resident custodian with access satisfy the
-requirement, or must a copy reside on media in Texas?
+electronic and hosted outside Texas? Does a Texas-resident records custodian with access satisfy
+the requirement, or must a copy reside on media in Texas?
 
 ---
 

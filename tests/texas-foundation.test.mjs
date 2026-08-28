@@ -168,7 +168,7 @@ test("PRINS1-1 is transcribed exactly, and the transcription checks itself", () 
 
 test("the 50-minute credit hour is labelled as the form's arithmetic, not as a rule", () => {
   assert.equal(PRINS1.FORM.minutesPerCreditHour, 50);
-  assert.equal(PRINS1.FORM.minutesPerCreditHourStatus, "FORM_DERIVED_UNVERIFIED_AGAINST_RULE");
+  assert.equal(PRINS1.FORM.minutesPerCreditHourStatus, "FORM_DERIVED_PENDING_TAC_CONFIRMATION");
 });
 
 /* ── fees and terms ──────────────────────────────────────────────────────────────────────── */
@@ -268,18 +268,13 @@ test("if Principles I content exists, every PRINS1-1 topic and unit is taught", 
   assert.deepEqual(missingUnits.map((u) => u.code), [], "PRINS1-1 units taught nowhere");
 });
 
-test("if Principles I content exists, it cites no Texas section this project has not read", { skip: !curriculumExists() && "no Principles I curriculum exists yet" }, () => {
-  const body = curriculum();
-  const readSections = new Set(
-    MANIFEST.SOURCES.filter((s) => s.reachability === REACHABILITY.READ).flatMap((s) => s.materialClaims.map((c) => c.id)),
-  );
-  const cited = [...body.matchAll(/§+\s?(\d+\.\d+)/g)].map((m) => m[1]);
-  assert.deepEqual(
-    [...new Set(cited)],
-    [],
-    "the curriculum cites Texas sections, and no Texas statute or rule has been read — record the reading first",
-  );
-  assert.equal(readSections.size >= 0, true);
+test("the curriculum cites no section this project has not read (documented cross-references aside)", { skip: !curriculumExists() && "no Principles I curriculum exists yet" }, async () => {
+  const { claimTraceability, EXPLAINED_CROSS_REFERENCES } = await import(path.join(ROOT, "lib/texas-claim-traceability.mjs"));
+  const trace = claimTraceability(ROOT);
+  assert.equal(trace.status, "PASS", trace.failures.join("\n"));
+  /* The exceptions themselves stay small and justified. */
+  assert.deepEqual(Object.keys(EXPLAINED_CROSS_REFERENCES).sort(), ["50", "53.254"]);
+  for (const reason of Object.values(EXPLAINED_CROSS_REFERENCES)) assert.ok(reason.length > 40, "an undocumented cross-reference exception");
 });
 
 test("if a Principles I examination bank exists, it meets the form counts", { skip: !fs.existsSync(path.join(ROOT, "config/texas/principles-i-final-exam-bank.mjs")) && "no examination bank exists yet" }, async () => {
@@ -464,7 +459,7 @@ test("federal sources for Principles I are held and mapped", () => {
   }
 });
 
-test("no TX-1 curriculum was written in this pass", () => {
-  assert.equal(curriculumExists(), false, "Principles I curriculum exists — TX-0.1 was a source repair, not a content pass");
-  assert.equal(fs.existsSync(path.join(ROOT, "config/texas/principles-i-final-exam-bank.mjs")), false, "an examination bank exists");
+test("TX-1A wrote the curriculum; TX-1B's examination still does not exist", () => {
+  assert.equal(curriculumExists(), true, "the Principles I curriculum is missing — TX-1A built it");
+  assert.equal(fs.existsSync(path.join(ROOT, "config/texas/principles-i-final-exam-bank.mjs")), false, "a final examination bank exists — TX-1B is not authorized");
 });

@@ -1,6 +1,6 @@
 # Texas — primary text read directly
 
-Recorded 2026-08-27.
+Recorded 2026-08-27. Updated 2026-08-28 at the close of TX-1A: the reads that authorised the Principles I content build are recorded in the amended section 1 below.
 
 This file says what was read, what it says, and — the part that matters most for a reviewer — **what
 could not be read, and is therefore stated nowhere in this build.**
@@ -63,26 +63,32 @@ headless Chromium cannot reach any host from this environment. That is a real ba
 
 ## 1. What was obtained and read
 
-### Texas statutes and federal sources — 29 documents held
+### Texas statutes and federal sources — 35 documents held
 
 Retrieved 2026-08-27 from `tcss.legis.texas.gov` (Texas Legislative Council), `uscode.house.gov`
 and the eCFR API. Held under `texas/trec-sources/statutes/` and `texas/trec-sources/federal/`,
 each hashed and recorded in `config/texas/statute-sources.mjs` with the PRINS1-1 units it serves.
 
-**Twenty-five Texas chapters:** Occupations Code 1101 · Property Code 5, 11, 12, 13, 21, 41, 51, 53,
-111 · Estates Code 101, 201, 251 · Business and Commerce Code 9, 26 · Civil Practice and Remedies
-Code 16 · Tax Code 32 · Insurance Code 2501 · Water Code 11 · Business Organizations Code 200 ·
-Government Code 4001, 4005 · Local Government Code 232 · Natural Resources Code 21 · Finance Code 343.
+**Twenty-nine Texas chapters:** Occupations Code 1101 · Property Code 5, 11, 12, 13, 21, 41, 51, 53,
+111 · Estates Code 101, 111, 112, 201, 251 · Family Code 3 · Business and Commerce Code 9, 26 ·
+Civil Practice and Remedies Code 16 · Tax Code 11, 32 · Insurance Code 2501 · Water Code 11 ·
+Business Organizations Code 200 · Government Code 4001, 4005 · Local Government Code 232 · Natural
+Resources Code 21 · Finance Code 343. (Estates Code 111 and 112, Family Code 3, Tax Code 11 were
+retrieved 2026-08-28 for the TX-1A build.)
 
-**Four federal sources:** 12 U.S.C. § 2601 et seq. (RESPA) · 12 C.F.R. part 1024 (Regulation X, eCFR
-as of 2026-08-01) · 26 U.S.C. § 1445 (FIRPTA) · 26 U.S.C. § 860A et seq. (REMICs).
+**Six federal sources:** 12 U.S.C. §§ 2601, 2603 and 2607 (RESPA, retrieved individually) ·
+12 C.F.R. part 1024 (Regulation X, eCFR as of 2026-08-01) · 26 U.S.C. § 1445 (FIRPTA) ·
+26 U.S.C. § 860A (REMICs).
 
 **HELD IS NOT READ, and the difference is enforced.** Downloading a chapter does not make its
-sections known. **Ten sections have actually been opened and read**, each recorded with what was
-taken from it: Occ. Code §§ 1101.155 and 1101.301; Prop. Code §§ 5.008, 12.001, 41.001, 41.002,
-51.002; Bus. & Com. Code § 26.01; 12 U.S.C. § 2601; 26 U.S.C. § 1445. Everything else in those
-chapters is unread by construction, and the curriculum guard refuses a citation to a section that is
-not on the read list.
+sections known. At the TX-0.1 close, ten sections had been read. **The TX-1A read-before-write
+protocol raised that to 76 sections opened and read** — each recorded in
+`config/texas/statute-sources.mjs` with a substantive note stating the proposition taken from it,
+per unit, before the unit was written. Everything else in the held chapters is unread by
+construction, and the claim-traceability gate (`lib/texas-claim-traceability.mjs`) resolves every
+§-citation in the nine modules against the read list, refusing any section not on it. Two
+cross-references survive by documented exception: § 53.254 and Tex. Const. art. XVI § 50, each
+cited only as the read text of § 41.001 itself cites them, and each taught in module-03 as unread.
 
 **Coverage of the 46 PRINS1-1 units:** 42 have a primary source held; 4 are named as needing none,
 with the reason recorded — Historical Background, Investing in Real Estate, The Investment and The
@@ -179,6 +185,32 @@ answered by inference.
 
 ---
 
+## 1a. The TX-1A build record — 2026-08-28
+
+The Principles of Real Estate I content build followed the read-before-write protocol: for each
+PRINS1-1 unit, the needed legal claims were identified, the exact sections were extracted from the
+held snapshots and read, the read was recorded in `config/texas/statute-sources.mjs`, and only then
+was the unit written. The verifiable artifacts:
+
+- **Nine modules** under `texas/tx-principles-real-estate-i-30-v1/curriculum/` — 50,603 words, all
+  46 units present under their exact PRINS1-1 titles, with statute reading exercises, applied
+  exercises and module recaps.
+- **76 sections read** across 29 Texas chapters and 6 federal sources, each with a substantive note.
+  Four units are recorded as needing no statute (history and investment arithmetic), with reasons.
+  T05U7 ("The Benefits") is taught **without any federal tax proposition** — option B of the TX-1A
+  order — and a vocabulary guard enforces the absence.
+- **Formative assessments** in `config/texas/principles-i-question-bank.mjs`: 32 primary quiz items
+  (≥3 per topic) with rationale, remediation anchor and replacement question; 3 scenario exercises.
+  **No final examination exists**; TX-1B is not authorized, and its input manifest is at
+  `texas/submission/tx1b-exam-build-input-manifest.md`.
+- **Time evidence** generated from the files by `scripts/texas-principles-i-time-study.mjs`:
+  `timed-course-outline.md` and `time-reconciliation.md` under the course's `submission/` directory.
+  Every module's supported minutes meet its prescribed subtotal and the total meets 1,500, under the
+  provider's documented methodology (labelled PROVIDER_METHODOLOGY, not a regulator figure).
+- **The claim-traceability gate** — `TX_PRINCIPLES_I_CLAIM_TRACEABILITY`, separate from the source
+  lock by design: the lock says the documents are what was read; the gate says the curriculum cites
+  only what was read. Status at build close: PASS.
+
 ## 2. What was consulted and is NOT authority
 
 **The TREC consolidated rules page** at `trec.texas.gov/agency-information/rules-and-laws/trec-rules`
@@ -206,7 +238,7 @@ claim is ever attached to it.
   calculation**, which sit behind the REALM/Accela login.
 - **The current REALM distance qualifying-course application**, and any inactivity timeout,
   proctoring requirement or examination-administration requirement it may impose.
-- **Every section of the twenty-nine held documents other than the ten recorded as read.** Holding a
+- **Every section of the thirty-five held documents other than the 76 recorded as read.** Holding a
   chapter is not reading it, and the guard enforces the difference.
 - **The Internal Revenue Code**, beyond §§ 1445 and 860A. No tax benefit, rate, holding period or
   depreciation rule may be stated in PRINS1-1 unit T05U7 without it.
@@ -220,7 +252,8 @@ different work and different people clear them.**
 
 - **`TX_PRINCIPLES_I_SOURCE_LOCK: PASS`** — the course form is held, and all 46 of its units have a
   primary source on disk or a recorded reason for needing none. Principles of Real Estate I can be
-  written against sources rather than recall. **It has not been written.**
+  written against sources rather than recall. **It has now been written — TX-1A, 2026-08-28 — under
+  the read-before-write protocol, with its own separate claim-traceability gate.**
 - **`TX_PROVIDER_RULE_SOURCE_LOCK: FAIL`** — eight codified rules and the provider application
   remain unread. The provider submission cannot be prepared against them.
 - **`TX_REGULATORY_SOURCE_LOCK: FAIL`** — the aggregate, which passes only when both do.

@@ -21,6 +21,9 @@ import MANIFEST from "../config/texas/regulatory-manifest.mjs";
 import LEDGER from "../config/texas/provider-ledger.mjs";
 import PRINS1 from "../config/texas/prins1-course-form.mjs";
 import STATUTES from "../config/texas/statute-sources.mjs";
+import { claimTraceability } from "../lib/texas-claim-traceability.mjs";
+import { studyCourse } from "../lib/texas-principles-i-time-study.mjs";
+import { TOPIC_QUIZZES, SCENARIOS } from "../config/texas/principles-i-question-bank.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (relative) => {
@@ -147,6 +150,41 @@ check("content", 11, "the curriculum, if it exists, teaches every topic and ever
   const missing = PRINS1.ALL_UNITS.filter((unit) => !body.includes(unit.unit));
   require_(missing.length === 0, `${missing.length} PRINS1-1 unit(s) are taught nowhere, beginning with ${missing[0]?.unit}`);
   return `all ${PRINS1.ALL_UNITS.length} units covered`;
+});
+
+check("content", 12, "every curriculum citation resolves to a section actually read — TX_PRINCIPLES_I_CLAIM_TRACEABILITY", () => {
+  const trace = claimTraceability(root);
+  require_(trace.status === "PASS", `claim traceability FAILS:\n            ${trace.failures.join("\n            ")}`);
+  return `TX_PRINCIPLES_I_CLAIM_TRACEABILITY: PASS — ${trace.readSections} read sections; explained cross-references: ${trace.explainedCrossReferences.join(", ") || "none"}`;
+});
+
+check("content", 13, "the 1,500-minute reconciliation holds, module by module, computed from the files", () => {
+  const study = studyCourse(root);
+  const short = study.modules.filter((m) => !m.supports);
+  require_(short.length === 0, `module(s) short of prescription: ${short.map((m) => `${m.module} by ${m.shortfallMinutes} min`).join(", ")}`);
+  require_(study.reconciles, "the course total does not reconcile to 1,500 prescribed minutes");
+  return `${study.totals.words} words; supported ${study.totals.supportedMinutes} min ≥ prescribed ${study.prescribedTotal} (PROVIDER_METHODOLOGY)`;
+});
+
+check("content", 14, "each topic carries at least three quiz items with remediation, and three scenarios exist", () => {
+  for (const topic of PRINS1.TOPICS) {
+    const items = TOPIC_QUIZZES[topic.code] ?? [];
+    require_(items.length >= 3, `${topic.code} has ${items.length} quiz item(s), minimum 3`);
+    for (const item of items) require_(item.rationale && item.remediation && item.replacement, `${item.id} lacks rationale, remediation or replacement`);
+  }
+  require_(SCENARIOS.length >= 3, `${SCENARIOS.length} scenario(s), minimum 3`);
+  const total = Object.values(TOPIC_QUIZZES).reduce((n, items) => n + items.length, 0);
+  return `${total} primary quiz items across 9 topics, ${SCENARIOS.length} scenarios — formative only; no final exam exists`;
+});
+
+check("content", 15, "the time-evidence documents exist and were generated from the live study", () => {
+  const outline = read("texas/tx-principles-real-estate-i-30-v1/submission/timed-course-outline.md");
+  const reconciliation = read("texas/tx-principles-real-estate-i-30-v1/submission/time-reconciliation.md");
+  require_(outline && outline.includes("FORM_DERIVED_PENDING_TAC_CONFIRMATION"), "the timed outline is missing or omits the credit-hour status label");
+  require_(reconciliation && reconciliation.includes("RECONCILES") && reconciliation.includes("PROVIDER_METHODOLOGY"), "the reconciliation document is missing or unlabelled");
+  const study = studyCourse(root);
+  require_(reconciliation.includes(`**${study.totals.words}**`), "the reconciliation document's word total no longer matches the files — regenerate with --write");
+  return "timed-course-outline.md and time-reconciliation.md present and current";
 });
 
 check("exam", 20, "the Principles I examination bank exists and meets the form counts", () => {

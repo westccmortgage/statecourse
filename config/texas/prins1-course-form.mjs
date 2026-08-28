@@ -16,8 +16,9 @@
  * THE MINUTE CONVENTION, AND WHAT IT IMPLIES. The form's own TOTAL MINUTES is 1500 for a course it
  * labels "30 hours". 1500 / 30 = 50, so the form is computing a 50-minute credit hour. That
  * arithmetic is on the face of the form and is recorded here as such. WHAT IS NOT RECORDED HERE is
- * a rule citation for the 50-minute hour: 22 TAC is not reachable from this environment (see the
- * manifest), so the convention is carried as FORM-DERIVED and marked UNVERIFIED against the rule.
+ * a rule citation for the 50-minute hour: the codified 22 TAC provider rules await human export
+ * (see the manifest), so the convention is carried as FORM-DERIVED, PENDING confirmation against
+ * the codified rule text once §535.65 is read.
  *
  * NOTHING HERE IS COURSE CONTENT. This file states what must be taught and for how long. It does
  * not state what Texas law says about any of it, because the Texas Occupations Code, Property Code,
@@ -39,7 +40,7 @@ export const FORM = Object.freeze({
   totalMinutes: 1500,
   /* 1500 / 30. Stated by the form's own arithmetic, not by a rule this project has read. */
   minutesPerCreditHour: 50,
-  minutesPerCreditHourStatus: "FORM_DERIVED_UNVERIFIED_AGAINST_RULE",
+  minutesPerCreditHourStatus: "FORM_DERIVED_PENDING_TAC_CONFIRMATION",
 });
 
 /* Topic scope notes are the Commission's wording, printed under each topic heading on the form. */
