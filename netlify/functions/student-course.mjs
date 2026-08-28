@@ -3,6 +3,7 @@ import { parseJson, requireSameOrigin } from "./_lib/http.mjs";
 import { requireStudentSession, sessionCookies, sessionResponse } from "./_lib/student-session.mjs";
 import { SB1495 } from "../../config/california/regulatory-manifest.mjs";
 import { getCaliforniaAssessment, getCaliforniaCourse, publicAssessment, scoreCaliforniaAssessment } from "../../config/california-course-engine.mjs";
+import { hasBlockDelivery } from "../../config/california-block-engine.mjs";
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const ASSIGNMENT = /^assignment-(0[1-9]|1[0-5])$/;
@@ -33,7 +34,7 @@ function fail(message,statusCode=400) {
 
 function isoNow() { return new Date().toISOString(); }
 
-async function contextFor(studentId,enrollmentId) {
+export async function contextFor(studentId,enrollmentId) {
   if (!UUID.test(enrollmentId || "")) fail("invalid_enrollment",400);
   const rows = await dbRequest(`enrollments?id=eq.${encodeURIComponent(enrollmentId)}&select=*&limit=1`);
   const enrollment = rows?.[0];
@@ -98,7 +99,7 @@ async function ensureAssignmentState(ctx) {
   });
 }
 
-async function statesFor(ctx) {
+export async function statesFor(ctx) {
   if (ctx.mode !== "student") {
     return ctx.course.assignments.map((item) => ({
       assignment_id:item.id,status:"review_available",viewed_sections:[],
@@ -216,7 +217,14 @@ async function coursePayload(ctx,requestedAssignment) {
       eligibility
     },
     assignments,
-    selectedAssignment:selected,
+    /* CA-BLOCK-1: when the selected assignment is delivered as learning blocks, the page hands
+       off to the block player. The flag is delivery routing only — the assignment stays one
+       regulatory assignment and every completion gate above is unchanged. */
+    selectedAssignment:{...selected,
+      blockDelivery:hasBlockDelivery(ctx.course.courseId,selected.id),
+      blockPlayerHref:hasBlockDelivery(ctx.course.courseId,selected.id)
+        ? `/student/course/blocks/?enrollment_id=${encodeURIComponent(ctx.enrollment.id)}&assignment=${encodeURIComponent(selected.id)}`
+        : null},
     assessments:{
       applied:publicAssessment(getCaliforniaAssessment(ctx.course.courseId,selected.id,"applied")),
       engagement:publicAssessment(getCaliforniaAssessment(ctx.course.courseId,selected.id,"engagement")),
@@ -227,7 +235,7 @@ async function coursePayload(ctx,requestedAssignment) {
   };
 }
 
-async function audit(ctx,assignmentId,eventType,detail={},sessionId=null) {
+export async function audit(ctx,assignmentId,eventType,detail={},sessionId=null) {
   await dbRequest("lms_regulatory_audit",{
     method:"POST",prefer:"return=minimal",
     body:{
@@ -272,7 +280,7 @@ async function sb1495Participation(ctx) {
   return rpc("sb1495_participation",{p_enrollment_id:ctx.enrollment.id});
 }
 
-async function finishIfReady(ctx,assignmentId) {
+export async function finishIfReady(ctx,assignmentId) {
   const row = await assignmentRow(ctx,assignmentId);
   const assignment = ctx.course.assignments.find((item) => item.id === assignmentId);
   const viewed = Array.isArray(row.viewed_sections) ? row.viewed_sections : [];
@@ -327,7 +335,12 @@ async function handleStudentEvent(ctx,input) {
     const result=await rpc("record_california_heartbeat",{
       p_session_id:String(input.sessionId),p_enrollment_id:ctx.enrollment.id,p_actor_id:ctx.actorId,
       p_assignment_id:assignmentId,p_mode:ctx.mode,p_active:active,
-      p_metadata:{visible:Boolean(input.visible),focused:Boolean(input.focused),idle_seconds:Math.max(0,Math.min(3600,Number(input.idleSeconds || 0))),user_agent:String(input.userAgent || "").slice(0,300)}
+      p_metadata:{visible:Boolean(input.visible),focused:Boolean(input.focused),idle_seconds:Math.max(0,Math.min(3600,Number(input.idleSeconds || 0))),user_agent:String(input.userAgent || "").slice(0,300),
+        /* Block delivery context, when the block player is the page sending the heartbeat. Purely
+           additive detail for screen → block → assignment roll-up; the crediting rule and the RPC
+           are unchanged, and a legacy page simply omits the fields. */
+        ...(typeof input.blockId === "string" && input.blockId.length <= 40 ? {block_id:input.blockId} : {}),
+        ...(typeof input.screenId === "string" && input.screenId.length <= 60 ? {screen_id:input.screenId} : {})}
     });
     return {ok:true,creditedSeconds:Number(result || 0),noStudentCredit:ctx.mode!=="student"};
   }

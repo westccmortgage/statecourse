@@ -1,0 +1,31 @@
+/* StateCourse academic design tokens — CA-BLOCK-1.
+   Shared foundation for the authenticated student experience. The block player consumes these
+   now; the dashboard and other student surfaces inherit them in a later phase.
+   Direction: deep navy primary, warm cream reading ground, charcoal/navy text, gold used VERY
+   sparingly (current progress, selected state, primary continuation action, small academic
+   accents, mastery signal) — never as decoration, never as a border wash, no black-heavy UI. */
+:root {
+  /* color system */
+  --sc-navy-900: #0f2237;      /* primary dark — headers, footers, primary text on cream */
+  --sc-navy-700: #1c3550;      /* hover / secondary navy */
+  --sc-cream: #faf6ee;         /* reading background */
+  --sc-cream-deep: #f3ecdf;    /* panels on cream */
+  --sc-charcoal: #26303a;      /* body text */
+  --sc-ink-soft: #46525e;      /* secondary text */
+  --sc-rule: #ddd3c2;          /* hairlines on cream */
+  --sc-gold: #b98a2e;          /* sparing: progress, selection, primary action, mastery */
+  --sc-gold-soft: #e9d9b6;     /* thin accent fills where gold marks state */
+  --sc-white: #ffffff;
+  --sc-success: #2e6b4f;
+  --sc-error: #8c3a31;
+
+  /* typography */
+  --sc-serif: Georgia, "Times New Roman", "Playfair Display", serif;
+  --sc-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* reading measure and rhythm */
+  --sc-measure: 760px;         /* main readable width, inside the 700–820px band */
+  --sc-body-size: 20px;        /* desktop instructional body 19–21px */
+  --sc-body-size-mobile: 18px; /* mobile instructional body 18–19px */
+  --sc-line-height: 1.72;      /* 1.65–1.8 */
+}

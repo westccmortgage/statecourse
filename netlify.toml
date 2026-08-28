@@ -137,6 +137,11 @@
   status = 200
 
 [[redirects]]
+  from = "/api/student/blocks"
+  to = "/.netlify/functions/student-blocks"
+  status = 200
+
+[[redirects]]
   from = "/api/payments/config"
   to = "/.netlify/functions/payment-config"
   status = 200

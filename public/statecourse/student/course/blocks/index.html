@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Course | StateCourse</title>
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/student/design-tokens.css">
+<link rel="stylesheet" href="/student/course/blocks/block-player.css">
+</head>
+<body>
+<a class="skip-link" href="#screenContent">Skip to the current screen</a>
+
+<header class="player-top" aria-label="Site">
+  <a class="wordmark" href="/">StateCourse</a>
+  <nav class="top-links">
+    <a href="/student/">My Courses</a>
+    <button id="signOut" type="button">Sign Out</button>
+  </nav>
+</header>
+
+<p id="playerMessage" class="player-message" role="status">Opening your course…</p>
+<p id="reviewBanner" class="review-banner" hidden></p>
+
+<div id="playerShell" hidden>
+  <header class="course-header" aria-label="Course position">
+    <h1 id="courseTitle" class="course-title"></h1>
+    <p id="positionLine" class="position-line">
+      <span id="assignmentPosition"></span>
+      <span aria-hidden="true">·</span>
+      <span id="blockPosition"></span>
+      <span aria-hidden="true">·</span>
+      <span id="screenPosition"></span>
+    </p>
+    <dl class="header-stats">
+      <div><dt>Course Progress</dt><dd id="courseProgress"></dd></div>
+      <div><dt>Current Assignment</dt><dd id="blockProgress"></dd></div>
+      <div><dt>Study Time</dt><dd id="studyTime"></dd></div>
+    </dl>
+    <details class="outline-control">
+      <summary>Assignment outline</summary>
+      <ol id="blockOutline" class="block-outline"></ol>
+    </details>
+  </header>
+
+  <main class="screen-stage" aria-live="polite">
+    <article id="screenCard" class="screen-card">
+      <p id="blockKicker" class="block-kicker"></p>
+      <h2 id="screenTitle" class="screen-title"></h2>
+      <div id="screenContent" class="screen-content" tabindex="-1"></div>
+      <div id="screenActivity" class="screen-activity"></div>
+    </article>
+  </main>
+
+  <footer class="screen-nav" aria-label="Screen navigation">
+    <button id="previousScreen" type="button" class="nav-secondary">Previous</button>
+    <p id="timerState" class="timer-state">Active study is being recorded.</p>
+    <button id="continueScreen" type="button" class="nav-primary">Continue</button>
+  </footer>
+</div>
+
+<script type="module" src="/student/course/blocks/block-player.js"></script>
+</body>
+</html>

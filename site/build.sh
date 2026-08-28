@@ -48,6 +48,13 @@ test -f dist/student/register/student-register.js
 test -f dist/student/student-portal.js
 test -f dist/student/course/index.html
 test -f dist/student/course/student-course.js
+test -f dist/student/course/blocks/index.html
+test -f dist/student/course/blocks/block-player.js
+test -f dist/student/course/blocks/block-player.css
+test -f dist/student/course/blocks/lesson-markdown.mjs
+test -f dist/student/course/blocks/course-video.mjs
+test -f dist/student/course/blocks/document-lab.mjs
+test -f dist/student/design-tokens.css
 test -f dist/student-course.html
 test -f dist/get-licensed/index.html
 test -f dist/state-requirements/index.html
