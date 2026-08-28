@@ -13,7 +13,12 @@ export const handler = async (event) => {
     );
   } catch (error) {
     const status = Number(error?.statusCode) || 500;
-    if (status >= 500) console.error("Student registration endpoint error",error?.message);
+    if (status >= 500) {
+      /* Names only, never values: which Supabase-related variables this runtime can actually
+         see. Diagnoses the "configured in the UI but absent at runtime" class of failure. */
+      const visible = Object.keys(process.env).filter((key) => key.toUpperCase().includes("SUPA")).join(", ") || "(none)";
+      console.error("Student registration endpoint error", error?.message, "| SUPA* env vars visible to runtime:", visible);
+    }
     return sessionResponse(status,{ error:status >= 500 ? "student_registration_unavailable" : error.message });
   }
 };
