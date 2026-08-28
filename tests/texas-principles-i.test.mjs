@@ -127,16 +127,19 @@ test("three scenario exercises exist, each with facts, tasks, model analysis, pa
   }
 });
 
-test("the formative bank never presents itself as the final examination, and no final exam artifacts exist", () => {
+test("the formative bank never presents itself as the final examination, and the TX-1B artifacts exist where they must", () => {
   const bankSource = read("config/texas/principles-i-question-bank.mjs");
   assert.match(bankSource.replace(/\s+\*\s+/g, " ").replace(/\s+/g, " "), /NOT the final examination/i);
-  for (const forbidden of [
+  /* TX-1B was owner-authorized 2026-08-28: the bank, forms and engine exist — in config/ and
+     lib/, outside every student-served tree — and the input manifest records the authorization. */
+  for (const required of [
     "config/texas/principles-i-final-exam-bank.mjs",
     "config/texas/principles-i-final-exam-forms.mjs",
-    "config/texas/principles-i-answer-keys.mjs",
+    "lib/texas-principles-i-exam-engine.mjs",
   ]) {
-    assert.equal(fs.existsSync(path.join(ROOT, forbidden)), false, `${forbidden} exists — TX-1B is not authorized`);
+    assert.ok(fs.existsSync(path.join(ROOT, required)), `${required} missing — TX-1B was built`);
   }
+  assert.equal(fs.existsSync(path.join(ROOT, "public/statecourse/config/texas/principles-i-final-exam-bank.mjs")), false);
   assert.ok(fs.existsSync(path.join(ROOT, "texas/submission/tx1b-exam-build-input-manifest.md")));
 });
 
@@ -175,9 +178,13 @@ test("the statutory pacing limits are taught from their read sections: 12-hour d
 
 test("nothing downstream of content is enabled on the course record", () => {
   const course = COURSE_CFG.COURSE;
-  for (const flag of ["enrollmentEnabled", "paymentEnabled", "creditReportingEnabled", "certificateIssuanceEnabled", "finalExaminationExists"]) {
+  for (const flag of ["enrollmentEnabled", "paymentEnabled", "creditReportingEnabled", "certificateIssuanceEnabled", "finalExaminationAdministrable"]) {
     assert.equal(course[flag], false, flag);
   }
+  /* TX-1B built the examination, so it exists — but it is not administrable until the codified
+     22 TAC provider rules are read and the administration parameters confirmed. */
+  assert.equal(course.finalExaminationExists, true);
+  assert.equal(course.finalExaminationStatus, "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES");
   assert.equal(course.trecApprovalStatus, "NOT_SUBMITTED_NOT_APPROVED");
 });
 
@@ -202,9 +209,10 @@ test("the timed course outline traces every unit: objective and sources or state
   assert.match(outline, /NOT submitted to or approved by/);
 });
 
-test("the TX-1B input manifest authorizes nothing and inherits the blockers", () => {
+test("the TX-1B manifest records the authorization and keeps the administration blockers", () => {
   const manifest = read("texas/submission/tx1b-exam-build-input-manifest.md");
-  assert.match(manifest, /TX-1B IS NOT AUTHORIZED/);
+  assert.match(manifest, /TX-1B AUTHORIZED 2026-08-28 by owner instruction/);
+  assert.match(manifest, /administration\s+BLOCKED/i);
   assert.match(manifest, /TX_PROVIDER_RULE_SOURCE_LOCK/);
   assert.match(manifest, /may NOT be promoted/i);
 });

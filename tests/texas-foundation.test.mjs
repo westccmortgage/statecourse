@@ -459,7 +459,7 @@ test("federal sources for Principles I are held and mapped", () => {
   }
 });
 
-test("TX-1A wrote the curriculum; TX-1B's examination still does not exist", () => {
+test("TX-1A wrote the curriculum; TX-1B (owner-authorized 2026-08-28) built the examination bank", () => {
   assert.equal(curriculumExists(), true, "the Principles I curriculum is missing — TX-1A built it");
-  assert.equal(fs.existsSync(path.join(ROOT, "config/texas/principles-i-final-exam-bank.mjs")), false, "a final examination bank exists — TX-1B is not authorized");
+  assert.equal(fs.existsSync(path.join(ROOT, "config/texas/principles-i-final-exam-bank.mjs")), true, "the final examination bank is missing — TX-1B was built");
 });

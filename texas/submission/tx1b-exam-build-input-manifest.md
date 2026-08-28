@@ -1,9 +1,16 @@
 # TX-1B Exam Build Input Manifest — Principles of Real Estate I
 
-**Status: TX-1B IS NOT AUTHORIZED.** This document is an input manifest only. It was produced at
-the close of TX-1A (2026-08-28) so that the final-examination build, when and if authorized, starts
-from a complete, honest inventory instead of re-deriving one. Nothing below is an exam, an exam
-item, or an answer key, and nothing in the course may describe a final examination as existing.
+**Status: TX-1B AUTHORIZED 2026-08-28 by owner instruction; bank and forms BUILT; administration
+BLOCKED.** This document was produced at the close of TX-1A (2026-08-28), when it carried the
+status "TX-1B IS NOT AUTHORIZED" as an input manifest only. Later the same day the owner
+authorized TX-1B, and the build it specifies now exists: the 120-question bank
+(`config/texas/principles-i-final-exam-bank.mjs`), the four forms with controlled pairwise overlap
+(`config/texas/principles-i-final-exam-forms.mjs`), and the delivery engine
+(`lib/texas-principles-i-exam-engine.mjs`). Exam ADMINISTRATION remains blocked: the engine refuses
+to serve any attempt while `TX_PROVIDER_RULE_SOURCE_LOCK` is FAIL, every administration parameter is
+a provider proposal pending confirmation against the codified 22 TAC rules, and no student surface
+serves the examination. Nothing below or in the built artifacts claims TREC approval of provider,
+course, or examination.
 
 ## What TX-1A delivered that TX-1B will consume
 
@@ -22,7 +29,7 @@ item, or an answer key, and nothing in the course may describe a final examinati
    § 1101.003(e) (elapsed time > 2× credit hours before completion may be reported): the exam
    scheduler must sit behind both.
 
-## What TX-1B must build (and TX-1A deliberately did not)
+## What TX-1B was specified to build (delivered 2026-08-28, administration still blocked)
 
 - A 120-question final examination bank, every item traced to a taught unit and a read section.
 - Four final exam forms with controlled pairwise overlap, assembled from that bank.

@@ -27,12 +27,18 @@ export const COURSE = Object.freeze({
   totalMinutes: FORM.totalMinutes,
   approvalForm: FORM.formNumber,
   curriculumDir: "texas/tx-principles-real-estate-i-30-v1/curriculum",
-  /* TX-1A scope: content build only. Nothing downstream of content is enabled. */
+  /* TX-1A scope: content build only. Nothing downstream of content is enabled. TX-1B
+     (owner-authorized 2026-08-28) built the final examination bank, forms and engine, so the
+     examination EXISTS as an artifact — but it is NOT administrable: the engine refuses every
+     attempt while the codified 22 TAC provider rules remain unread, and no student surface
+     serves it. */
   enrollmentEnabled: false,
   paymentEnabled: false,
   creditReportingEnabled: false,
   certificateIssuanceEnabled: false,
-  finalExaminationExists: false,
+  finalExaminationExists: true,
+  finalExaminationAdministrable: false,
+  finalExaminationStatus: "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES",
   trecApprovalStatus: "NOT_SUBMITTED_NOT_APPROVED",
 });
 

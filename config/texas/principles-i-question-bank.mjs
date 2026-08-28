@@ -4,8 +4,9 @@
  * WHAT THIS BANK IS AND IS NOT. These are the course's FORMATIVE instruments: topic quizzes the
  * student must clear to progress, and the scenario exercises the course design requires. They are
  * instructional artifacts — every item teaches through its rationale. This file is NOT the final
- * examination: TX-1B is not authorized, no final bank exists, and nothing here may be promoted into
- * one without the TX-1B build.
+ * examination: the TX-1B final bank lives in principles-i-final-exam-bank.mjs (owner-authorized
+ * 2026-08-28), and per the TX-1B manifest no item here may be promoted into it verbatim — the
+ * formative bank defines the difficulty register and style only.
  *
  * THE PROGRESSION CONTRACT. A student must answer each topic's required questions correctly before
  * the next topic opens. An incorrect answer shows the RATIONALE, sends the student to the
