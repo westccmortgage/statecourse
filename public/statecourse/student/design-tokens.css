@@ -20,7 +20,7 @@
   --sc-error: #8c3a31;
 
   /* typography */
-  --sc-serif: Georgia, "Times New Roman", "Playfair Display", serif;
+  --sc-serif: "Playfair Display", Georgia, "Times New Roman", serif;
   --sc-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   /* reading measure and rhythm */

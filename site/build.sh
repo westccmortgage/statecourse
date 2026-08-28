@@ -55,6 +55,9 @@ test -f dist/student/course/blocks/lesson-markdown.mjs
 test -f dist/student/course/blocks/course-video.mjs
 test -f dist/student/course/blocks/document-lab.mjs
 test -f dist/student/design-tokens.css
+test -f dist/fonts/fonts.css
+test -f dist/fonts/Inter-var-latin.woff2
+test -f dist/fonts/PlayfairDisplay-var-latin.woff2
 test -f dist/student-course.html
 test -f dist/get-licensed/index.html
 test -f dist/state-requirements/index.html
