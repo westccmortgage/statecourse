@@ -165,4 +165,38 @@ export const MORTGAGE_BLOCK_SPECS = {
        proposal teach §6. Every section owns a problem. */
     problemMap: { 1: [1, 2], 2: [3], 3: [4, 5], 4: [6], 5: [7], 6: [8] },
   },
+  11: {
+    objectives: [
+      "State the information-versus-target distinction and the ordering channel that enforces it, recognize the softer forms of coercion, evidence the borrower's copy, and respond correctly to suspected appraisal bias.",
+      "Read an appraisal for factual accuracy and internal consistency, state the adjustment-direction rule, explain what a low value produces on a purchase and a refinance, and make a correct reconsideration request.",
+      "Distinguish exceptions, exclusions, and requirements on a preliminary report, route the recurring title items, ask the mechanic's lien intake question, and state what title insurance does not cover.",
+      "State what makes an arrangement an escrow and what neutrality forbids, resolve instruction-agreement conflicts through the parties, perform the reconciliation nobody else performs, and hold the wire fraud protocol.",
+      "Place settlement statement entries on the correct side, compute prorations in both directions, reconcile the originator's lines against the disclosures, and explain the statement to a borrower.",
+      "Sequence signing, funding, recording, and disbursement, explain recording order and rescindable closings, distinguish constructive from inquiry notice, and confirm closing to the borrower completely.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the target email and P2 the ordering-desk coercion both teach §1; P3 the low-value
+       cash-out conversation teaches §2; P4 the title routing stack and P5 the fence-and-policies
+       set both teach §3; P6 the one-party holdback teaches §4; P7 the statement reconciliation
+       teaches §5; P8 the clear-to-close rescission conversation teaches §6. Every section owns a
+       problem. */
+    problemMap: { 1: [1, 2], 2: [3], 3: [4, 5], 4: [6], 5: [7], 6: [8] },
+  },
+  12: {
+    objectives: [
+      "State why private money exists and how the broker's position differs, name the duties owed an investor and the collateral facts an investor must be told, and recognize what multi-lender and threshold activity trigger.",
+      "Determine loan purpose on the actual facts, state what a certification does and does not establish, name both directions of classification error, and route genuinely close cases before the file is built.",
+      "Name what a seller carryback must document, state the seller's and buyer's risks and the subordination clause's significance, address the California disclosure obligations, and keep the documentation with counsel.",
+      "State what the file must show about hard-money product fit, examine an exit rigorously, explain why hard money does not escape the consumer framework, and recognize the patterns that stop a file.",
+      "Document both sides of a broker-arranged loan, handle investor funds as trust funds with three-way reconciliation, disclose every conflict before reliance, and keep projections out of investor presentations.",
+      "Recognize usury risk in private money, state what the broker-arranged exemption actually requires, know what counts toward the rate, and route every usury, structure, and securities question to counsel.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the six-failure investor presentation teaches §1; P2 the duplex classification
+       instruction, §2; P3 the form-assembled carryback, §3; P4 the medical-debt hard-money file
+       and P5 the builder bridge both teach §4; P6 the diverted investor funds and P7 the
+       "is it safe" conversation both teach §5; P8 the exemption-by-designation request teaches
+       §6. Every section owns a problem. */
+    problemMap: { 1: [1], 2: [2], 3: [3], 4: [4, 5], 5: [6, 7], 6: [8] },
+  },
 };
