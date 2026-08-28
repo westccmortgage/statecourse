@@ -92,12 +92,11 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   place-items: center;
   width: 37px;
   height: 37px;
-  border: 1px solid var(--navy);
-  background: var(--navy);
-  color: var(--surface);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 19px;
+  border: 1px solid #08102b;
+  background: #08102b;
+  color: #c7a259;
 }
+.brand-seal svg { width: 22px; height: 24px; }
 .primary-nav {
   display: flex;
   gap: 28px;

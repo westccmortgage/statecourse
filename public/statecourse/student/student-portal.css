@@ -1,33 +1,37 @@
-:root { --paper:#f5f1e8; --surface:#fffdf8; --navy:#172b3d; --navy-dark:#0d1d2b; --ink:#25292c; --muted:#62686c; --burgundy:#8f3c32; --gold:#b38a46; --rule:#d8d0c3; --max:1180px; }
+@import url("../fonts/fonts.css");
+/* The approved StateCourse design language: deep navy, cream reading surfaces, gold as signal.
+   The legacy burgundy variable now carries the deep gold so every accent retinted at once. */
+:root { --paper:#f6f4ef; --surface:#fffdf8; --navy:#08102b; --navy-dark:#08102b; --ink:#33424f; --muted:#5d6a75; --burgundy:#8f6e2f; --gold:#c7a259; --rule:#e7e4de; --max:1180px; }
 * { box-sizing:border-box; }
-body { min-width:320px; margin:0; background:var(--paper); color:var(--ink); font-family:Arial,"Helvetica Neue",sans-serif; line-height:1.5; }
+body { min-width:320px; margin:0; background:var(--paper); color:var(--ink); font-family:Inter,Arial,"Helvetica Neue",sans-serif; line-height:1.5; }
 a { color:inherit; text-decoration:none; }
 button { font:inherit; }
 .skip-link { position:fixed; top:10px; left:10px; transform:translateY(-160%); padding:9px 13px; background:#fff; z-index:10; }
 .skip-link:focus { transform:translateY(0); }
 .portal-header { display:flex; align-items:center; justify-content:space-between; min-height:76px; padding:0 max(28px,calc((100vw - var(--max))/2 + 28px)); border-top:5px solid var(--navy); border-bottom:1px solid var(--rule); background:var(--surface); }
 .brand { display:flex; align-items:center; gap:12px; }
-.brand > span { display:grid; width:40px; height:40px; place-items:center; background:var(--burgundy); color:#fff; font-size:11px; font-weight:800; }
+.brand > span { display:grid; width:40px; height:40px; place-items:center; background:var(--navy); color:var(--gold); }
+.brand > span svg { width:22px; height:24px; }
 .brand strong { color:var(--navy); font-size:21px; }
 .brand small { padding-left:12px; border-left:1px solid var(--rule); color:var(--muted); font-size:9px; letter-spacing:.12em; text-transform:uppercase; }
 .portal-header nav { display:flex; align-items:center; gap:18px; color:var(--navy); font-size:11px; font-weight:700; }
-.student-account-name { padding-left:18px; border-left:1px solid var(--rule); color:var(--burgundy); font-family:Georgia,"Times New Roman",serif; font-size:14px; font-weight:600; }
+.student-account-name { padding-left:18px; border-left:1px solid var(--rule); color:var(--burgundy); font-family:"Playfair Display",Georgia,"Times New Roman",serif; font-size:14px; font-weight:600; }
 .portal-header button { padding:8px 12px; border:1px solid var(--burgundy); background:transparent; color:var(--burgundy); cursor:pointer; }
 main { width:min(100%,var(--max)); min-height:calc(100vh - 144px); margin:0 auto; padding:42px 28px 70px; }
 .portal-intro { display:grid; grid-template-columns:1fr auto; gap:50px; align-items:end; padding-bottom:31px; border-bottom:4px solid var(--navy); }
 .eyebrow,.section-heading span { margin:0 0 8px; color:var(--burgundy); font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
-.portal-intro h1 { margin:0; color:var(--navy); font-family:Georgia,serif; font-size:42px; font-weight:500; line-height:1.08; }
+.portal-intro h1 { margin:0; color:var(--navy); font-family:"Playfair Display",Georgia,serif; font-size:42px; font-weight:500; line-height:1.08; }
 .portal-intro > div > p:last-child { max-width:640px; margin:12px 0 0; color:var(--muted); font-size:13px; }
 .portal-summary { display:grid; grid-template-columns:repeat(3,92px); margin:0; border:1px solid var(--rule); background:#fff; }
 .portal-summary div { padding:13px; border-right:1px solid var(--rule); text-align:center; }
 .portal-summary div:last-child { border-right:0; }
 .portal-summary dt { color:var(--muted); font-size:8px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
-.portal-summary dd { margin:3px 0 0; color:var(--navy); font-family:Georgia,serif; font-size:24px; }
+.portal-summary dd { margin:3px 0 0; color:var(--navy); font-family:"Playfair Display",Georgia,serif; font-size:24px; }
 .portal-message { margin:24px 0 0; padding:12px 15px; border-left:3px solid var(--gold); background:#eee9de; color:var(--muted); font-size:12px; }
 .portal-message.error { border-color:var(--burgundy); color:#762e27; }
 .profile-completion { display:grid; grid-template-columns:minmax(0,1fr) minmax(420px,.9fr); gap:42px; align-items:center; margin:28px 0 0; padding:26px 30px; border:1px solid var(--rule); border-left:4px solid var(--gold); background:#eee8dc; }
 .profile-completion[hidden] { display:none; }
-.profile-completion h2 { margin:0; color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:24px; font-weight:600; }
+.profile-completion h2 { margin:0; color:var(--navy); font-family:"Playfair Display",Georgia,"Times New Roman",serif; font-size:24px; font-weight:600; }
 .profile-completion > div > p:last-child { max-width:560px; margin:9px 0 0; color:#50575b; font-size:13px; }
 .profile-completion form { display:grid; grid-template-columns:1fr 1fr auto; gap:7px 12px; align-items:end; }
 .profile-completion label { color:var(--navy); font-size:11px; font-weight:800; }
@@ -41,11 +45,11 @@ main { width:min(100%,var(--max)); min-height:calc(100vh - 144px); margin:0 auto
 .course-group { margin-top:44px; }
 .section-heading { display:flex; align-items:end; justify-content:space-between; gap:30px; margin-bottom:15px; }
 .section-heading span { margin:0; }
-.section-heading h2,.empty-state h2 { margin:0; color:var(--navy); font-family:Georgia,serif; font-size:27px; font-weight:500; }
+.section-heading h2,.empty-state h2 { margin:0; color:var(--navy); font-family:"Playfair Display",Georgia,serif; font-size:27px; font-weight:500; }
 .course-list { border-top:1px solid #9da5aa; }
 .course-card { display:grid; grid-template-columns:86px minmax(0,1fr) 250px; gap:25px; align-items:center; padding:24px 0; border-bottom:1px solid var(--rule); }
 .course-state { align-self:stretch; display:grid; align-content:space-between; padding-right:20px; border-right:1px solid var(--rule); }
-.course-state strong { color:var(--burgundy); font-family:Georgia,serif; font-size:31px; font-weight:500; }
+.course-state strong { color:var(--burgundy); font-family:"Playfair Display",Georgia,serif; font-size:31px; font-weight:500; }
 .course-state small { color:var(--muted); font-size:8px; text-transform:uppercase; }
 .course-main .status { margin:0 0 6px; color:var(--burgundy); font-size:9px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
 .course-main h3 { margin:0; color:var(--navy); font-size:20px; line-height:1.2; }
@@ -72,7 +76,7 @@ footer { display:flex; justify-content:space-between; gap:20px; min-height:68px;
 .registration-shell { width:min(100%,720px); margin:0 auto; }
 .registration-intro { margin:0 auto 30px; text-align:center; }
 .registration-intro .eyebrow { margin-bottom:12px; }
-.registration-intro h1 { margin:0; color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:clamp(36px,5vw,52px); font-weight:500; line-height:1.08; letter-spacing:-.025em; }
+.registration-intro h1 { margin:0; color:var(--navy); font-family:"Playfair Display",Georgia,"Times New Roman",serif; font-size:clamp(36px,5vw,52px); font-weight:500; line-height:1.08; letter-spacing:-.025em; }
 .registration-intro > p:last-child { max-width:610px; margin:17px auto 0; color:#50585e; font-size:17px; line-height:1.65; }
 .registration-card { padding:38px 42px 34px; border:1px solid #cec5b7; border-top:5px solid var(--navy); background:var(--surface); box-shadow:0 16px 45px rgba(33,38,41,.06); }
 #studentRegister { display:grid; gap:22px; }
@@ -109,7 +113,7 @@ footer { display:flex; justify-content:space-between; gap:20px; min-height:68px;
 .existing-account { margin:25px 0 0; text-align:center; color:var(--muted); font-size:14px; }
 .existing-account a { color:var(--burgundy); font-weight:800; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
 .enrollment-callout { margin-top:24px; padding:24px 28px 23px; border:1px solid var(--rule); border-left:4px solid var(--gold); background:#eee8dc; }
-.enrollment-callout h2 { margin:0 0 10px; color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:20px; font-weight:600; line-height:1.3; }
+.enrollment-callout h2 { margin:0 0 10px; color:var(--navy); font-family:"Playfair Display",Georgia,"Times New Roman",serif; font-size:20px; font-weight:600; line-height:1.3; }
 .enrollment-callout p { margin:8px 0; color:#4e5559; font-size:13px; line-height:1.6; }
 .enrollment-callout ol { margin:8px 0 10px 20px; padding:0; color:#3f464a; font-size:13px; line-height:1.7; }
 .registration-footer { align-items:center; min-height:76px; }
@@ -124,12 +128,12 @@ footer { display:flex; justify-content:space-between; gap:20px; min-height:68px;
 .signin-button { margin-top:3px; }
 .new-account-section { margin-top:28px; padding-top:25px; border-top:1px solid var(--rule); text-align:center; }
 .new-account-section p { margin:0; color:var(--muted); font-size:13px; line-height:1.55; }
-.new-account-section p strong { color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:19px; font-weight:600; }
+.new-account-section p strong { color:var(--navy); font-family:"Playfair Display",Georgia,"Times New Roman",serif; font-size:19px; font-weight:600; }
 .new-account-section p + p { margin-top:7px; }
 .secondary-account-link { display:block; width:100%; min-height:50px; margin-top:18px; padding:13px 18px; border:1px solid var(--burgundy); color:var(--burgundy); font-size:13px; font-weight:800; text-align:center; }
 .secondary-account-link:hover { background:#f4ebe7; }
 .signin-assurance { display:grid; grid-template-columns:minmax(180px,.75fr) 1.25fr; gap:22px; margin-top:24px; padding:22px 25px; border:1px solid var(--rule); border-left:4px solid var(--gold); background:#eee8dc; }
-.signin-assurance strong { color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:17px; line-height:1.35; }
+.signin-assurance strong { color:var(--navy); font-family:"Playfair Display",Georgia,"Times New Roman",serif; font-size:17px; line-height:1.35; }
 .signin-assurance span { color:#4e5559; font-size:12px; line-height:1.6; }
 
 @media(max-width:760px){

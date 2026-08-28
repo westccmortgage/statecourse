@@ -8,7 +8,7 @@ body.exam-body{margin:0;background:var(--paper);color:var(--charcoal);font-famil
 
 .exam-header{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:74px;padding:10px max(20px,calc((100vw - 1180px)/2));border-top:4px solid var(--navy);border-bottom:1px solid var(--rule);background:var(--surface)}
 .portal-brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
-.portal-brand span{display:grid;place-items:center;width:38px;height:38px;background:var(--brick);color:#fff;font-size:12px;font-weight:800}
+.portal-brand span{display:grid;place-items:center;width:38px;height:38px;background:#08102b;color:#c7a259}.portal-brand span svg{width:20px;height:22px}
 .portal-brand strong{font-size:20px}
 .portal-brand small{padding-left:12px;border-left:1px solid var(--rule);text-transform:uppercase;letter-spacing:.13em;font-size:9px;color:var(--muted)}
 

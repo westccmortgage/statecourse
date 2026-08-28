@@ -69,10 +69,8 @@ body:not(.institution-home) .brand-seal {
   width: 43px;
   height: 43px;
   border: 0;
-  background: var(--sc-red);
-  color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  background: #08102b;
+  color: #c7a259;
   font-weight: 800;
   letter-spacing: .03em;
 }
@@ -401,7 +399,8 @@ body:not(.institution-home) .header-action:hover {
 .standards-section > a { color: var(--sc-red-dark); font-size: 12px; font-weight: 800; white-space: nowrap; }
 
 .institutional-footer { align-items: start; padding-top: 55px; padding-bottom: 55px; background: var(--sc-navy-dark); }
-.institutional-footer .brand-seal { width: 40px; height: 40px; border: 1px solid #b8c1c8; background: transparent; font-family: Arial, sans-serif; font-size: 10px; }
+.institutional-footer .brand-seal { width: 40px; height: 40px; border: 1px solid rgba(199, 162, 89, .55); background: transparent; color: #c7a259; }
+.brand-seal svg { width: 22px; height: 24px; }
 .institutional-footer .brand strong { font-family: Arial, sans-serif; font-size: 21px; }
 .footer-links { display: grid; grid-template-columns: repeat(3, auto); gap: 11px 28px; text-align: right; }
 .footer-links a { color: #fff; font-size: 11px; }
