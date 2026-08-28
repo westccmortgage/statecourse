@@ -131,4 +131,38 @@ export const MORTGAGE_BLOCK_SPECS = {
        its retrieval check is its active learning. */
     problemMap: { 2: [1, 2], 3: [3, 4], 4: [5], 5: [6], 6: [7, 8] },
   },
+  9: {
+    objectives: [
+      "State the Loan Estimate's and Closing Disclosure's purposes and timing, name the changes that restart the waiting period, evidence delivery, and keep the California mortgage loan disclosure statement separate.",
+      "Apply the prohibition on term-based compensation and its proxies, the dual compensation restriction, and the steering rules, and reconcile compensation disclosed against compensation received on every file.",
+      "State the referral prohibition and why disclosure does not cure it, apply the services-actually-performed test to marketing agreements and other structures, state the affiliated business conditions, and decline and escalate offers.",
+      "Name the three fee tolerance categories and how a consumer's shopping choice moves a charge, distinguish a changed circumstance from a discovered error, and state what a cure is.",
+      "Present prepayment penalties, balloons, adjustable-rate terms, interest-only and negative amortization, and buydowns in plain terms with their numbers — the fully indexed rate above all.",
+      "Present products on a common basis, name the comparisons that mislead, explain why acknowledgment is not understanding, keep the prohibited statements out, and build the file that passes reconstructability.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the disclosure-clock scenario teaches §1; P2 the four-violation compensation plan, §2;
+       P3 the four referral offers and P4 the affiliated title company both teach §3; P5 the
+       three-category tolerance analysis, §4; P6 the five-feature hybrid presentation, §5; P7 the
+       misleading two-option comparison and P8 the acknowledgment complaint both teach §6. Every
+       section owns a problem. */
+    problemMap: { 1: [1], 2: [2], 3: [3, 4], 4: [5], 5: [6], 6: [7, 8] },
+  },
+  10: {
+    objectives: [
+      "Run the intake questions and record the answers, hold the line on what may be said at inquiry, distinguish the three assessment levels, write an honest prequalification letter, and recognize when an inquiry becomes an application.",
+      "Take a complete application, run the disclosure clock with delivery evidence and the separate California statement, and send the two written warnings — the do-not-change-anything warning and the wire fraud warning.",
+      "Order document collection by lead time, verify and source honestly, distinguish a gap from a contradiction that must be escalated, and handle documents with security and integrity.",
+      "Submit complete files, manage conditions with owners and dates against the lock and disclosure calendars, state what must never be done to satisfy a condition, and explain the re-verification exposure.",
+      "Sequence signing, funding, recording, and disbursement, explain the Closing Disclosure waiting period and rescindable closings, apply the wire fraud protocol at settlement, and confirm closing to the borrower accurately.",
+      "Describe what post-closing quality control examines and why defects are systemic, handle findings by correcting the instance and the process, hold the falsification line, and apply the reconstructability test.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the rate-call intake and P2 the overstated prequalification letter both teach §1; P3 the
+       missing written warnings and the wire email teach §2; P4 the lead-time reordering and P5
+       the gap-versus-contradiction set both teach §3; P6 the three remaining conditions teach §4;
+       P7 the clear-to-close conversation teaches §5; P8 the quarterly review and the backdating
+       proposal teach §6. Every section owns a problem. */
+    problemMap: { 1: [1, 2], 2: [3], 3: [4, 5], 4: [6], 5: [7], 6: [8] },
+  },
 };
