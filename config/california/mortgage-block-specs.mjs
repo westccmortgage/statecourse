@@ -199,4 +199,38 @@ export const MORTGAGE_BLOCK_SPECS = {
        §6. Every section owns a problem. */
     problemMap: { 1: [1], 2: [2], 3: [3], 4: [4, 5], 5: [6, 7], 6: [8] },
   },
+  13: {
+    objectives: [
+      "Distinguish the owner, servicer, and originator, explain partial payment and extra-principal handling, keep servicing records as trust records where a broker services, and state what a transfer does and does not change.",
+      "Explain why a fixed-rate payment changes, describe the California reassessment problem and the supplemental tax bill, read an escrow analysis, and deliver the four origination explanations in writing.",
+      "Explain why a payoff exceeds the statement balance, compute a per diem extension past the good-through date, state what clears a satisfied lien, and distinguish payoff from assumption and subordination.",
+      "Name the loss mitigation options and what each carries, state the California servicer protections in outline, hold the distressed-borrower boundaries, and recognize foreclosure rescue fraud patterns.",
+      "Compare the foreclosure paths and outline the nonjudicial sequence, distinguish reinstatement from redemption, describe the trustee's sale and its aftermath for juniors and occupants, and escalate a bankruptcy filing immediately.",
+      "Route borrowers to the defined error and information procedures, communicate with distressed borrowers without predictions, handle complaints and regulator contact correctly, and trace servicing complaints to their origination failures.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the four-question former-borrower call teaches §1; P2 the reassessment shortage, §2;
+       P3 the payoff arithmetic and the 2016 lien, §3; P4 the distressed borrower's questions and
+       P5 the rescue scheme both teach §4; P6 the trustee's-sale questions teach §5; P7 the
+       defeated error procedure and P8 the complaint-log review both teach §6. Every section owns
+       a problem. */
+    problemMap: { 1: [1], 2: [2], 3: [3], 4: [4, 5], 5: [6], 6: [7, 8] },
+  },
+  14: {
+    objectives: [
+      "Name both federal prohibited-basis lists and what is distinctive to each, explain why California's broader list makes consistent documented criteria the only reliable practice, and state what 'any aspect' and the monitoring paradox require.",
+      "Describe redlining's history, compounding, and modern forms, identify where pricing discretion and exceptions create exposure, recognize discouragement, and run the structural controls including outcome review.",
+      "Define mortgage fraud and its two categories, recognize occupancy and income fraud patterns and the file that contradicts itself, identify straw-buyer and appraisal-fraud signals and transaction schemes, and hold the licensee's nevers.",
+      "Describe the wire fraud pattern and the defenses in order of value, state what does not work, name the identity red flags and seller-impersonation signals, and keep information security with breach timelines.",
+      "Explain why fraud presents as a pattern, separate signals from what is not suspicious, escalate with facts rather than conclusions, and refuse improper instructions from inside the firm.",
+      "Sort statements into verified fact, unverified report, and opinion; keep the complaint-producing sentences out; present products on a common basis with plain-language features; and hold the falsification line.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the four application-stage violations teach §1; P2 the two-ZIP-code firm and P3 the
+       gut-feel exceptions with the discouragement instruction both teach §2; P4 the
+       self-contradicting occupancy file teaches §3; P6 the one-character wire email teaches §4;
+       P5 the straw-buyer/elder pattern and P7 the inverted-scrutiny set both teach §5; P8 the
+       one-product presentation teaches §6. Every section owns a problem. */
+    problemMap: { 1: [1], 2: [2, 3], 3: [4], 4: [6], 5: [5, 7], 6: [8] },
+  },
 };

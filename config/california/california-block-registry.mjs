@@ -23,6 +23,8 @@ import { A9_BLOCKS } from "./mortgage-a9-blocks.mjs";
 import { A10_BLOCKS } from "./mortgage-a10-blocks.mjs";
 import { A11_BLOCKS } from "./mortgage-a11-blocks.mjs";
 import { A12_BLOCKS } from "./mortgage-a12-blocks.mjs";
+import { A13_BLOCKS } from "./mortgage-a13-blocks.mjs";
+import { A14_BLOCKS } from "./mortgage-a14-blocks.mjs";
 import { MORTGAGE_RETRIEVAL_BANKS } from "./mortgage-retrieval-banks.mjs";
 
 export const BLOCK_DELIVERIES = Object.freeze([
@@ -38,6 +40,8 @@ export const BLOCK_DELIVERIES = Object.freeze([
   A10_BLOCKS,
   A11_BLOCKS,
   A12_BLOCKS,
+  A13_BLOCKS,
+  A14_BLOCKS,
 ]);
 
 export const RETRIEVAL_BANKS = Object.freeze({ ...A1_RETRIEVAL_BANK, ...MORTGAGE_RETRIEVAL_BANKS });
