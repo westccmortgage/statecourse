@@ -1,6 +1,8 @@
 function credentials() {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  /* trim() guards against invisible whitespace (a trailing newline from a copy-paste into the
+     Netlify UI makes the value an invalid HTTP header and fetch throws before any request). */
+  const url = String(process.env.SUPABASE_URL || "").trim();
+  const key = String(process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
   if (!url || !key) throw Object.assign(new Error("database_not_configured"), { statusCode: 503 });
   return { url: url.replace(/\/$/, ""), key };
 }

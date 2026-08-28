@@ -5,8 +5,10 @@ const REFRESH_COOKIE = "__Host-sc_refresh";
 const EMAIL = /^\S+@\S+\.\S+$/;
 
 function authConfig() {
-  const url = process.env.SUPABASE_URL?.replace(/\/$/, "");
-  const anonKey = process.env.SUPABASE_ANON_KEY;
+  /* trim() for the same reason as db.mjs: pasted values with trailing whitespace make invalid
+     HTTP headers and fetch throws before any request is sent. */
+  const url = String(process.env.SUPABASE_URL || "").trim().replace(/\/$/, "");
+  const anonKey = String(process.env.SUPABASE_ANON_KEY || "").trim();
   if (!url || !anonKey) throw Object.assign(new Error("student_auth_not_configured"), { statusCode: 503 });
   return { url, anonKey };
 }
