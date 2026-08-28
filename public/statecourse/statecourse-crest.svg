@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">StateCourse Academy crest</title>
+  <desc id="desc">A classical column inside a shield with restrained laurel accents.</desc>
+  <g fill="none" stroke="#C7A259" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 8 74 18v23c0 18-10 33-26 44C32 74 22 59 22 41V18L48 8Z"/>
+    <path d="M34 34h28M37 30h22M40 26h16M38 60h20M35 65h26"/>
+    <path d="M39 34v26M46 34v26M53 34v26M60 34v26"/>
+    <path d="M32 69c-6-4-10-9-13-16M28 73c-8-4-14-10-18-18M64 69c6-4 10-9 13-16M68 73c8-4 14-10 18-18"/>
+    <path d="M18 55l-6-2m9 7-7 1m11 4-6 3M78 55l6-2m-9 7 7 1m-11 4 6 3"/>
+  </g>
+</svg>
