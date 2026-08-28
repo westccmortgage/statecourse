@@ -96,4 +96,39 @@ export const MORTGAGE_BLOCK_SPECS = {
        conditions, §5; P8 the four-failure denial, §6. Every section owns a problem. */
     problemMap: { 1: [1], 2: [2], 3: [3, 4], 4: [5, 6], 5: [7], 6: [8] },
   },
+  7: {
+    objectives: [
+      "State what Truth in Lending does and covers, explain what the APR is for and does not capture, describe the two integrated disclosures and their timing consequences, and state what the rescission right is and is not.",
+      "State RESPA's two purposes, apply the referral prohibition and the services-actually-performed test, explain why disclosure does not cure a referral payment, and state an affiliated business arrangement's conditions.",
+      "Name ECOA's prohibited bases including the two distinctive ones, apply the ask and do-not-ask rules, explain the government monitoring paradox, and state what an adverse action notice must contain.",
+      "State what HMDA does and its purposes, explain why the data matters even where nobody has complained, and identify the coding errors — above all a denial coded as a withdrawal — that distort it.",
+      "Apply FCRA permissible purpose, name the additional adverse-action content a consumer report requires, describe risk-based pricing, hold the credit-advice boundaries, and safeguard consumer information.",
+      "Distinguish state-licensed from federally registered originators, state what triggers the MLO requirement, explain the unique identifier and the endorsement's separate renewal cycle, and route questions to the right framework.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the APR conversation and P2 the rescission closing both teach §1; P3 the three referral
+       offers and P4 the affiliated escrow company both teach §2; P5 the four application-stage
+       violations teach §3; P6 the deficient notice and the withdrawn-coding teach §4 (with §3 and
+       §5 threads the blocks cross-reference); P7 the casual report pulls teach §5; P8 the lapsed
+       endorsement teaches §6. Every section owns a problem. */
+    problemMap: { 1: [1, 2], 2: [3, 4], 3: [5], 4: [6], 5: [7], 6: [8] },
+  },
+  8: {
+    objectives: [
+      "State what the California broker license authorizes in mortgage practice, distinguish the broker's two roles, and explain the mortgage loan disclosure statement's separate California footing.",
+      "Define an advance fee and why the framework exists, apply it past the labels, handle third-party pass-throughs honestly, and state where a salesperson's compensation may come from.",
+      "Identify trust funds in mortgage practice, distinguish commingling from conversion, explain why a ledger does not cure commingling, reconcile three ways, and respond correctly to shortages and overages.",
+      "List what a mortgage file must contain, apply the longest-period retention rule and the complaint extension, keep electronic records with version history, and state what must never happen to a record.",
+      "Identify the dual identification mortgage advertising requires, the practices that make an advertisement misleading, the consent obligations of solicitation, and a working approval-and-archive process.",
+      "Describe what a DRE examination reviews, name the recurring process findings and the one category that is different, respond correctly to regulator contact, and apply the reconstructability test.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 the labeled advance fee and P2 the marked-up pass-through with the salesperson's direct
+       payment both teach §2; P3 the two-way reconciliation and P4 the diverted investor funds
+       both teach §3; P5 the retention failures teach §4; P6 the Instagram story and text
+       campaign, §5; P7 the findings-and-response set and P8 the pre-examination falsification
+       both teach §6. §1 (broker roles and the MLDS) has no mapped problem — the documented gap;
+       its retrieval check is its active learning. */
+    problemMap: { 2: [1, 2], 3: [3, 4], 4: [5], 5: [6], 6: [7, 8] },
+  },
 };
