@@ -152,13 +152,15 @@ export const MORTGAGE_BLOCK_SPECS = {
        Loan Estimate contains". Optional viewing — it gates nothing and alters no lesson text. */
     screenMedia: {
       "a9-b1-s2": {
-        video: {
-          src: "/media/document-overview-loan-estimate-page-1.mp4",
-          poster: "/media/document-overview-loan-estimate-page-1-poster.webp",
-          captions: "/media/document-overview-loan-estimate-page-1.vtt",
-          label: "Video: Loan Estimate — Page 1 (document overview)",
-          duration: "1:59",
-        },
+        videos: [
+          {
+            src: "/media/document-overview-loan-estimate-page-1.mp4",
+            poster: "/media/document-overview-loan-estimate-page-1-poster.webp",
+            captions: "/media/document-overview-loan-estimate-page-1.vtt",
+            label: "Video: Loan Estimate — Page 1 (document overview)",
+            duration: "1:59",
+          },
+        ],
       },
     },
   },

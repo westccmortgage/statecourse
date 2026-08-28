@@ -130,9 +130,9 @@ function generate(assignment) {
       return `        { id: ${q(id)}, sequence: ${index + 1}, type: "retrieval", title: ${q(screen.title)}, questionId: ${q(screen.questionId)} },`;
     }
     const practice = screen.practiceProblem ? `, practiceProblem: ${screen.practiceProblem}` : "";
-    const media = screenMedia[id]?.video
-      ? `, video: ${JSON.stringify(screenMedia[id].video)}`
-      : "";
+    const mediaEntry = screenMedia[id];
+    const videos = mediaEntry?.videos || (mediaEntry?.video ? [mediaEntry.video] : null);
+    const media = videos ? `, videos: ${JSON.stringify(videos)}` : "";
     return `        { id: ${q(id)}, sequence: ${index + 1}, type: ${q(screen.type)}, title: ${q(screen.title)}, content: RANGE(${q(screen.from)}, ${q(screen.to)})${practice}${media} },`;
   };
 

@@ -163,7 +163,11 @@ function renderNav() {
 /* Supplementary video attached to an instruction screen. Optional viewing: it gates nothing —
    navigation and evidence work exactly as on any other screen. */
 function screenVideoHtml(screen) {
-  const video = screen.video;
+  const videos = Array.isArray(screen.videos) ? screen.videos : (screen.video ? [screen.video] : []);
+  return videos.map((video) => singleVideoHtml(video)).join("");
+}
+
+function singleVideoHtml(video) {
   if (!video || !video.src) return "";
   const track = video.captions
     ? `<track kind="captions" src="${escapeHtml(video.captions)}" srclang="en" label="English captions" default />`

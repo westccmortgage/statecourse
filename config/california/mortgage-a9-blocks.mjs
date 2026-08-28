@@ -23,7 +23,7 @@ export const A9_BLOCKS = Object.freeze({
       sourceSections: [1],
       screens: [
         { id: "a9-b1-s1", sequence: 1, type: "instruction", title: "What the forms do", content: RANGE("^", "### 1.3 What the Loan Estimate contains") },
-        { id: "a9-b1-s2", sequence: 2, type: "instruction", title: "What the Loan Estimate contains", content: RANGE("### 1.3 What the Loan Estimate contains", "### 1.5 What this means operationally"), video: {"src":"/media/document-overview-loan-estimate-page-1.mp4","poster":"/media/document-overview-loan-estimate-page-1-poster.webp","captions":"/media/document-overview-loan-estimate-page-1.vtt","label":"Video: Loan Estimate — Page 1 (document overview)","duration":"1:59"} },
+        { id: "a9-b1-s2", sequence: 2, type: "instruction", title: "What the Loan Estimate contains", content: RANGE("### 1.3 What the Loan Estimate contains", "### 1.5 What this means operationally"), videos: [{"src":"/media/document-overview-loan-estimate-page-1.mp4","poster":"/media/document-overview-loan-estimate-page-1-poster.webp","captions":"/media/document-overview-loan-estimate-page-1.vtt","label":"Video: Loan Estimate — Page 1 (document overview)","duration":"1:59"}] },
         { id: "a9-b1-s3", sequence: 3, type: "instruction", title: "What this means operationally", content: RANGE("### 1.5 What this means operationally", "### 1.7 The California layer") },
         { id: "a9-b1-s4", sequence: 4, type: "instruction", title: "The California layer", content: RANGE("### 1.7 The California layer", "## 2. Broker compensation disclosure") },
         { id: "a9-b1-s5", sequence: 5, type: "practice", title: "Practice: problem 1", content: RANGE("### Problem 1", "### Problem 2"), practiceProblem: 1 },
