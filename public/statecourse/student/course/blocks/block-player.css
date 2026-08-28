@@ -140,6 +140,11 @@ course-video { display: block; margin: 22px 0; }
 .course-video-controls button, .course-video-controls select { padding: 6px 12px; border: 1px solid var(--sc-rule); background: var(--sc-white); color: var(--sc-navy-900); font: inherit; font-size: 13px; cursor: pointer; }
 .course-video-transcript { margin-top: 10px; padding: 14px; border: 1px solid var(--sc-rule); background: var(--sc-white); font-size: 15px; max-height: 300px; overflow-y: auto; }
 
+/* supplementary screen video (optional viewing; gates nothing) */
+.screen-video { margin: 0 0 22px; border: 1px solid var(--sc-rule); background: var(--sc-white); }
+.screen-video figcaption { padding: 10px 14px; border-bottom: 1px solid var(--sc-rule); font-size: 14px; color: var(--sc-ink-soft); }
+.screen-video video { display: block; width: 100%; max-width: 100%; background: #000; }
+
 /* document lab component */
 .doc-lab { margin: 22px 0; border: 1px solid var(--sc-rule); background: var(--sc-white); }
 .doc-lab-header { padding: 12px 16px; border-bottom: 1px solid var(--sc-rule); font-size: 14px; color: var(--sc-ink-soft); }

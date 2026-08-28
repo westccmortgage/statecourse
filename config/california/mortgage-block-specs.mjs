@@ -147,6 +147,19 @@ export const MORTGAGE_BLOCK_SPECS = {
        misleading two-option comparison and P8 the acknowledgment complaint both teach §6. Every
        section owns a problem. */
     problemMap: { 1: [1], 2: [2], 3: [3, 4], 4: [5], 5: [6], 6: [7, 8] },
+    /* Supplementary delivery-layer video, owner-produced: a two-minute walkthrough of Loan
+       Estimate page 1 (the CFPB model form), attached to the screen that carries §1.3 "What the
+       Loan Estimate contains". Optional viewing — it gates nothing and alters no lesson text. */
+    screenMedia: {
+      "a9-b1-s2": {
+        video: {
+          src: "/media/document-overview-loan-estimate-page-1.mp4",
+          poster: "/media/document-overview-loan-estimate-page-1-poster.webp",
+          label: "Video: Loan Estimate — Page 1 (document overview)",
+          duration: "1:59",
+        },
+      },
+    },
   },
   10: {
     objectives: [

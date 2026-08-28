@@ -58,6 +58,7 @@ async function load(){
     $("#previewAssignmentTitle").textContent=titleCaseHeading(module.title);
     $("#previewAssignmentLabel").textContent=`Assignment ${String(assignment).padStart(2,"0")}`;
     $("#previewLessonBody").innerHTML=renderMarkdown(await contentResponse.text());
+    $("#previewSampleVideo").hidden=courseId!=="ca-mortgage-loan-brokering-lending-45-v1";
     $("#previewAssignmentList").innerHTML=framework.modules.map((item,index)=>`<li><button class="assignment-link" type="button" data-assignment="${index+1}" aria-current="${index+1===assignment}"><span class="number">${String(index+1).padStart(2,"0")}</span><span><strong>${escapeHtml(titleCaseHeading(item.title))}</strong><small>Available for course review</small></span></button></li>`).join("");
     $("#previewPrevious").disabled=assignment===1;
     $("#previewNext").disabled=assignment===15;

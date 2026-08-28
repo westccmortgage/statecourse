@@ -136,7 +136,7 @@ function renderScreen() {
     content.innerHTML = renderLessonMarkdown(sliceRange(screen.content));
     renderCompletionStatus(activity);
   } else {
-    content.innerHTML = renderLessonMarkdown(sliceRange(screen.content));
+    content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown(sliceRange(screen.content));
   }
   renderNav();
   content.focus({ preventScroll: true });
@@ -158,6 +158,17 @@ function renderNav() {
   next.disabled = needsAction;
   const last = state.view.blockIndex === blocks().length - 1 && state.view.screenIndex === block.screens.length - 1;
   next.textContent = last ? "Finish" : "Continue";
+}
+
+/* Supplementary video attached to an instruction screen. Optional viewing: it gates nothing —
+   navigation and evidence work exactly as on any other screen. */
+function screenVideoHtml(screen) {
+  const video = screen.video;
+  if (!video || !video.src) return "";
+  return `<figure class="screen-video">
+    <figcaption><span class="optional-tag">Optional</span> ${escapeHtml(video.label || "Video overview")}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions on screen</figcaption>
+    <video controls preload="none" playsinline${video.poster ? ` poster="${escapeHtml(video.poster)}"` : ""} src="${escapeHtml(video.src)}"></video>
+  </figure>`;
 }
 
 function screenSatisfied(block, screen) {

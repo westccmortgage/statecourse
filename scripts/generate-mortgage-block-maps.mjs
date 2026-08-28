@@ -116,13 +116,24 @@ function generate(assignment) {
   };
   blocks.push(b7);
 
+  /* Hand-authored supplementary media (spec.screenMedia) attaches to generated screens by id;
+     an entry naming a screen that does not exist refuses to generate. */
+  const screenMedia = spec.screenMedia || {};
+  const emittedIds = new Set(blocks.flatMap((block) => block.screens.map((_, index) => `${block.id}-s${index + 1}`)));
+  for (const id of Object.keys(screenMedia)) {
+    if (!emittedIds.has(id)) throw new Error(`assignment ${assignment}: screenMedia names unknown screen ${id}`);
+  }
+
   const renderScreen = (blockId, screen, index) => {
     const id = `${blockId}-s${index + 1}`;
     if (screen.type === "retrieval") {
       return `        { id: ${q(id)}, sequence: ${index + 1}, type: "retrieval", title: ${q(screen.title)}, questionId: ${q(screen.questionId)} },`;
     }
     const practice = screen.practiceProblem ? `, practiceProblem: ${screen.practiceProblem}` : "";
-    return `        { id: ${q(id)}, sequence: ${index + 1}, type: ${q(screen.type)}, title: ${q(screen.title)}, content: RANGE(${q(screen.from)}, ${q(screen.to)})${practice} },`;
+    const media = screenMedia[id]?.video
+      ? `, video: ${JSON.stringify(screenMedia[id].video)}`
+      : "";
+    return `        { id: ${q(id)}, sequence: ${index + 1}, type: ${q(screen.type)}, title: ${q(screen.title)}, content: RANGE(${q(screen.from)}, ${q(screen.to)})${practice}${media} },`;
   };
 
   const rendered = blocks.map((block) => `    {
