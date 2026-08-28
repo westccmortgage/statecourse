@@ -366,12 +366,18 @@ test("25. mobile has no horizontal scrolling by construction", () => {
   assert.ok(measure && Number(measure[1]) >= 700 && Number(measure[1]) <= 820, "readable measure outside the 700–820px band");
 });
 
-/* ── the pilot boundary: no rollout beyond Assignment 1 ──────────────────────────────────── */
+/* ── the rollout boundary: exactly the registered assignments, Mortgage only ─────────────── */
 
-test("block delivery exists for the pilot assignment only — nothing else converted", () => {
-  assert.equal(hasBlockDelivery(COURSE_ID, "assignment-01"), true);
-  for (let index = 2; index <= 15; index += 1) {
-    assert.equal(hasBlockDelivery(COURSE_ID, "assignment-" + String(index).padStart(2, "0")), false);
+test("block delivery exists for exactly the registered mortgage assignments — no other course converted", async () => {
+  const { BLOCK_DELIVERIES } = await import("../config/california/california-block-registry.mjs");
+  const registered = new Set(BLOCK_DELIVERIES.map((delivery) => `${delivery.courseId}:${delivery.assignmentId}`));
+  assert.ok(registered.has(`${COURSE_ID}:assignment-01`), "the pilot assignment must stay registered");
+  for (let index = 1; index <= 15; index += 1) {
+    const assignmentId = "assignment-" + String(index).padStart(2, "0");
+    assert.equal(hasBlockDelivery(COURSE_ID, assignmentId), registered.has(`${COURSE_ID}:${assignmentId}`));
+  }
+  for (const delivery of BLOCK_DELIVERIES) {
+    assert.equal(delivery.courseId, COURSE_ID, "rollout is authorized for the Mortgage course only");
   }
   for (const other of ["ca-real-estate-principles-45", "ca-real-estate-practice-45"]) {
     for (let index = 1; index <= 15; index += 1) {

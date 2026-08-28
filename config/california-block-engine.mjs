@@ -19,15 +19,15 @@
  * change nothing.
  */
 
-import { A1_BLOCKS, A1_RETRIEVAL_BANK, A1_SPACED_RETRIEVAL } from "./california/mortgage-a1-blocks.mjs";
+import { BLOCK_DELIVERIES, RETRIEVAL_BANKS, SPACED_RETRIEVAL } from "./california/california-block-registry.mjs";
 
-/* ── pilot registry ─────────────────────────────────────────────────────────────────────────
-   Block delivery exists for exactly the pilot assignment. Assignments 2–15 and every other
-   course keep the existing delivery until the owner reviews the pilot — the registry is the
-   rollout switch, and it is deliberately one entry long. */
-const BLOCK_DELIVERY = new Map([
-  [`${A1_BLOCKS.courseId}:${A1_BLOCKS.assignmentId}`, A1_BLOCKS],
-]);
+/* ── delivery registry ──────────────────────────────────────────────────────────────────────
+   The owner approved the pilot and the rollout on 2026-08-28. Assignments gain block delivery
+   by registration in california-block-registry.mjs, whose load-time invariants refuse any
+   half-built entry; unregistered assignments keep the existing delivery unchanged. */
+const BLOCK_DELIVERY = new Map(
+  BLOCK_DELIVERIES.map((delivery) => [`${delivery.courseId}:${delivery.assignmentId}`, delivery]),
+);
 
 export function getBlockDelivery(courseId, assignmentId) {
   return BLOCK_DELIVERY.get(`${courseId}:${assignmentId}`) || null;
@@ -113,7 +113,7 @@ function permuteChoices(choices, correctChoice, key) {
 }
 
 export function getBlockQuestion(courseId, questionId) {
-  const item = A1_RETRIEVAL_BANK[questionId];
+  const item = RETRIEVAL_BANKS[questionId];
   if (!item) return null;
   const presented = permuteChoices(item.choices, item.correctChoice, `${courseId}:${questionId}`);
   return {
@@ -179,7 +179,7 @@ export function deriveBlockStatus(block, { completedScreens = [], attempts = [],
   let activeRemediation = null;
   for (const screen of retrievalScreens) {
     const primaryId = screen.questionId;
-    const item = A1_RETRIEVAL_BANK[primaryId];
+    const item = RETRIEVAL_BANKS[primaryId];
     const primaryAttempts = attempts.filter((attempt) => attempt.question_id === primaryId && attempt.kind === "retrieval");
     const primaryCorrect = primaryAttempts.some((attempt) => attempt.correct === true);
     if (primaryCorrect) continue;
@@ -290,7 +290,7 @@ export function validateVisualPlaceholder(placeholder) {
 }
 
 export function spacedRetrievalSchedule() {
-  return A1_SPACED_RETRIEVAL;
+  return SPACED_RETRIEVAL;
 }
 
 export default Object.freeze({
