@@ -87,7 +87,7 @@ test("every generated state page matches the catalog it was generated from", () 
       ? derived.approvedCourses.map((entry) => `${entry.courseTitle}: ${entry.approvalNumber}`).join("<br/>")
       : JURISDICTION_APPROVAL_LABELS[derived.approvalState];
     assert.equal(recordValue(html, "Course approval"), expectedApproval, `${stateName} course approval line`);
-    assert.equal(recordValue(html, "Enrollment"), derived.enrollmentLine, `${stateName} enrollment line`);
+    assert.equal(recordValue(html, "Course availability"), derived.enrollmentLine, `${stateName} enrollment line`);
     checked += 1;
   }
   assert.ok(checked >= 50, `expected to check every jurisdiction page, checked ${checked}`);
@@ -122,6 +122,6 @@ test("no jurisdiction claims an open enrollment while nothing is approved", () =
     const file = path.join(publicRoot, "real-estate", dir.name, "index.html");
     if (!fs.existsSync(file)) continue;
     const html = fs.readFileSync(file, "utf8");
-    assert.equal(recordValue(html, "Enrollment"), "Closed until approval", `${dir.name} enrollment line`);
+    assert.equal(recordValue(html, "Course availability"), "Closed until approval", `${dir.name} enrollment line`);
   }
 });

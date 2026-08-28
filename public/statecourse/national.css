@@ -131,8 +131,14 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 
 /* ── the four pillars ────────────────────────────────────────────────────────────────────── */
 .credibility-band { display: grid; grid-template-columns: repeat(4,1fr); max-width: var(--max); margin: 0 auto; padding: 0 28px; background: var(--surface); border: 1px solid var(--rule); border-top: 0; border-radius: 0 0 var(--radius) var(--radius); }
-.credibility-band div { display: grid; gap: 4px; align-content: start; padding: 26px 20px; border-right: 1px solid var(--rule); }
-.credibility-band div:last-child { border-right: 0; }
+/* Three tiles are real destinations and show their action; the instructor tile is
+   informational — same layout, no action line, no hover, so nothing pretends to be a control. */
+.credibility-band .pillar-tile { display: grid; gap: 4px; align-content: start; padding: 26px 20px; border-right: 1px solid var(--rule); }
+.credibility-band .pillar-tile:last-child { border-right: 0; }
+.credibility-band a.pillar-tile .tile-action { margin-top: 10px; color: var(--gold-deep); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.credibility-band a.pillar-tile:hover { background: #faf8f2; }
+.credibility-band a.pillar-tile:hover .tile-action { color: var(--navy); }
+.credibility-band a.pillar-tile:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: -2px; }
 .credibility-band .pillar-icon { margin-bottom: 8px; color: var(--navy-2); }
 .credibility-band .pillar-icon svg { width: 30px; height: 30px; display: block; }
 .credibility-band strong { color: var(--navy); font-family: var(--serif); font-size: 16px; font-weight: 600; }
@@ -153,6 +159,9 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .pathway-steps .step-icon svg { width: 34px; height: 34px; display: block; }
 .pathway-steps h3 { margin: 20px 0 12px; color: var(--navy); font: 600 21px/1.22 var(--serif); }
 .pathway-steps p { margin: 0; color: var(--muted); font-size: 13px; }
+.pathway-steps .step-link { display: inline-block; margin-top: 14px; padding-bottom: 3px; border-bottom: 1px solid var(--gold); color: var(--gold-deep); font-size: 12px; font-weight: 700; }
+.pathway-steps .step-link:hover { color: var(--navy); border-color: var(--navy); }
+.pathway-steps .step-link:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 3px; }
 
 /* ── development priorities: regulatory record cards on deep navy ────────────────────────── */
 .priority-programs { background: var(--navy); color: #fff; padding: 88px max(28px,calc((100% - var(--max))/2 + 28px)); }
