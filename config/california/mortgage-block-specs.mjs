@@ -155,6 +155,7 @@ export const MORTGAGE_BLOCK_SPECS = {
         video: {
           src: "/media/document-overview-loan-estimate-page-1.mp4",
           poster: "/media/document-overview-loan-estimate-page-1-poster.webp",
+          captions: "/media/document-overview-loan-estimate-page-1.vtt",
           label: "Video: Loan Estimate — Page 1 (document overview)",
           duration: "1:59",
         },

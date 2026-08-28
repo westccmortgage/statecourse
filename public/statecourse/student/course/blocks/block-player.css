@@ -144,6 +144,10 @@ course-video { display: block; margin: 22px 0; }
 .screen-video { margin: 0 0 22px; border: 1px solid var(--sc-rule); background: var(--sc-white); }
 .screen-video figcaption { padding: 10px 14px; border-bottom: 1px solid var(--sc-rule); font-size: 14px; color: var(--sc-ink-soft); }
 .screen-video video { display: block; width: 100%; max-width: 100%; background: #000; }
+.video-transcript { border-top: 1px solid var(--sc-rule); font-size: 14px; }
+.video-transcript summary { padding: 8px 14px; cursor: pointer; color: var(--sc-ink-soft); }
+.video-transcript-body { padding: 4px 14px 12px; max-height: 260px; overflow-y: auto; }
+.video-transcript-body p { margin: 0 0 8px; }
 
 /* document lab component */
 .doc-lab { margin: 22px 0; border: 1px solid var(--sc-rule); background: var(--sc-white); }

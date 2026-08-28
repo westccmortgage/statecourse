@@ -165,11 +165,33 @@ function renderNav() {
 function screenVideoHtml(screen) {
   const video = screen.video;
   if (!video || !video.src) return "";
+  const track = video.captions
+    ? `<track kind="captions" src="${escapeHtml(video.captions)}" srclang="en" label="English captions" default />`
+    : "";
+  const transcript = video.captions
+    ? `<details class="video-transcript" data-vtt="${escapeHtml(video.captions)}"><summary>Transcript</summary><div class="video-transcript-body">Loading…</div></details>`
+    : "";
   return `<figure class="screen-video">
-    <figcaption><span class="optional-tag">Optional</span> ${escapeHtml(video.label || "Video overview")}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions on screen</figcaption>
-    <video controls preload="none" playsinline${video.poster ? ` poster="${escapeHtml(video.poster)}"` : ""} src="${escapeHtml(video.src)}"></video>
+    <figcaption><span class="optional-tag">Optional</span> ${escapeHtml(video.label || "Video overview")}${video.duration ? ` · ${escapeHtml(video.duration)}` : ""} · Captions available</figcaption>
+    <video controls preload="none" playsinline${video.poster ? ` poster="${escapeHtml(video.poster)}"` : ""} src="${escapeHtml(video.src)}">${track}</video>
+    ${transcript}
   </figure>`;
 }
+
+/* Flatten the caption file into a readable transcript on first open. */
+document.addEventListener("toggle", async (event) => {
+  const details = event.target;
+  if (!details.matches?.(".video-transcript") || !details.open || details.dataset.loaded) return;
+  details.dataset.loaded = "1";
+  const body = details.querySelector(".video-transcript-body");
+  try {
+    const text = await (await fetch(details.dataset.vtt)).text();
+    const lines = text.replace(/\r/g, "").split("\n").filter((line) =>
+      line.trim() && line !== "WEBVTT" && !line.startsWith("NOTE") && !line.includes("-->") &&
+      !/^\d+$/.test(line.trim()) && !line.startsWith("Document Overview") && !line.startsWith("final cut"));
+    body.innerHTML = lines.map((line) => `<p>${escapeHtml(line)}</p>`).join("");
+  } catch { body.textContent = "Transcript unavailable."; }
+}, true);
 
 function screenSatisfied(block, screen) {
   if (screen.type !== "retrieval") return screen.completed;
