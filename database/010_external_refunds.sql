@@ -34,7 +34,7 @@ comment on column refunds.origin is
   'platform: decided by the refund engine under the adopted policy, then sent to Stripe. external: issued outside this system, typically by hand in the Stripe Dashboard, and recorded after the fact at the amount Stripe reports.';
 
 create index if not exists refunds_exception_idx
-  on refunds(created_at) where policy_exception = true and exception_reviewed = false;
+  on refunds(requested_at) where policy_exception = true and exception_reviewed = false;
 
 /*
  * Record a refund this system did not initiate.
@@ -132,7 +132,8 @@ end $$;
 
 /* External refunds recorded but not yet compared against the entitlement. */
 create or replace view external_refunds_unassessed with (security_invoker=true) as
-select r.id, r.stripe_refund_id, r.payment_id, r.amount as actual_amount, r.created_at,
+select r.id, r.stripe_refund_id, r.payment_id, r.amount as actual_amount,
+       r.requested_at as created_at,
        p.course_id, p.state, p.stripe_mode
   from refunds r
   left join payments p on p.id = r.payment_id
@@ -148,7 +149,7 @@ select r.id, r.stripe_refund_id, r.payment_id, r.amount as actual_amount, r.crea
 create or replace view refund_policy_exceptions_open with (security_invoker=true) as
 select r.id, r.stripe_refund_id, r.payment_id, r.amount as actual_amount,
        r.policy_amount as entitlement, r.policy_exception_amount as excess,
-       r.policy_exception_note, r.origin, r.created_at,
+       r.policy_exception_note, r.origin, r.requested_at as created_at,
        p.course_id, p.state, p.student_id, p.amount as payment_amount, p.stripe_mode
   from refunds r
   left join payments p on p.id = r.payment_id

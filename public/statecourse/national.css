@@ -57,13 +57,13 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .mobile-menu { display: none; }
 
 /* ── hero: deep navy with a faint classical-column motif (drawn, not photographic) ───────── */
-.national-hero { position: relative; background: var(--navy); color: #fff; overflow: hidden; }
+.national-hero { position: relative; background: var(--navy) url("media/hero-columns.webp") center/cover no-repeat; color: #fff; overflow: hidden; }
+/* Navy scrim over the columns photograph: heavier at the edges and foot so the headline and
+   the finder card keep contrast wherever the image crops. */
 .national-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 3px, transparent 3px 34px, rgba(255,255,255,.03) 34px 37px, transparent 37px 92px),
-    radial-gradient(120% 90% at 18% 8%, rgba(19,46,74,.9), transparent 60%),
-    linear-gradient(180deg, rgba(8,16,43,0) 30%, rgba(8,16,43,.85));
-  opacity: .8; }
+    linear-gradient(90deg, rgba(8,16,43,.62) 0%, rgba(8,16,43,.28) 48%, rgba(8,16,43,.55) 100%),
+    linear-gradient(180deg, rgba(8,16,43,.2) 0%, rgba(8,16,43,.82) 100%); }
 .hero-shell { position: relative; display: grid; grid-template-columns: minmax(0,.92fr) minmax(520px,1.08fr); gap: 68px; align-items: center; max-width: var(--max); min-height: 455px; margin: auto; padding: 56px 28px; }
 .overline { margin: 0 0 12px; color: var(--gold-deep); font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .hero-intro .overline, .light .overline { color: var(--gold); }

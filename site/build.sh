@@ -56,6 +56,7 @@ test -f dist/student/course/blocks/course-video.mjs
 test -f dist/student/course/blocks/document-lab.mjs
 test -f dist/student/design-tokens.css
 test -f dist/fonts/fonts.css
+test -f dist/media/hero-columns.webp
 test -f dist/fonts/Inter-var-latin.woff2
 test -f dist/fonts/PlayfairDisplay-var-latin.woff2
 test -f dist/student-course.html
