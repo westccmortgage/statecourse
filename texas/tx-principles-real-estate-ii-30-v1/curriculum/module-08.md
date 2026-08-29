@@ -3,8 +3,8 @@
 ## TREC Topic: Fair Housing Laws
 
 **Prescribed time: 170 minutes.** This module carries the five units the Commission's PRINS2-1 course
-approval form places under *Fair Housing Laws*, whose scope note is *"Federal, state & local fair
-housing laws."*
+approval form places under *Fair Housing Laws*, a topic whose scope reaches federal, state and local
+fair housing laws.
 
 **Learning objectives.** After completing this module you will be able to: state the protected classes
 listed in each subsection of 42 U.S.C. § 3604 and distinguish a reasonable accommodation from a
@@ -63,16 +63,17 @@ the same Act.
 
 **Where the Act came from, and when each class arrived.** The dates explain why the statute's own
 lists are ragged. The source credit under § 3601 is Pub. L. 90–284, title VIII, § 801, Apr. 11, 1968,
-and the statutory notes record that Pub. L. 90–284 "may be cited as the 'Civil Rights Act of 1968,'"
+and the statutory notes record that Pub. L. 90–284 "may be cited as the 'Civil Rights Act of 1968'"
 and that its title VIII "may be cited as the 'Fair Housing Act.'" You will still hear practitioners
 call fair housing matters "title VIII" cases. As enacted, § 3604 did not protect sex: the amendments
 note under § 3604 records that in 1974 Pub. L. 93–383 "inserted ', sex' after 'religion' wherever
 appearing in cls. (a) to (e)." The Fair Housing Amendments Act of 1988, Pub. L. 100–430, then did
-three separate things, each recorded in that note — in subsections (a) and (b) it "inserted 'familial
-status,' after 'sex,'"; in subsections (c) through (e) it "inserted 'handicap, familial status,' after
-'sex,'"; and § 6(a) "added subsec. (f)," the entire disability regime, effective "on the 180th day
-beginning after" September 13, 1988. The § 3601 notes also record that Pub. L. 104–76 (1995) "may be
-cited as the 'Housing for Older Persons Act of 1995'" and amended § 3607.
+three separate things, each recorded in that same note under § 3604 — in § 3604(a) and (b) it
+"inserted 'familial status,' after 'sex,'"; in § 3604(c) through (e) it
+"inserted 'handicap, familial status,' after 'sex,'"; and § 6(a) "added subsec. (f)," the entire
+disability regime, effective "on the 180th day beginning after" September 13, 1988. The § 3601 notes
+also record that Pub. L. 104–76 (1995) "may be cited as the 'Housing for Older Persons Act of 1995'"
+and amended § 3607.
 
 So **race, color, religion and national origin** are original 1968 classes, **sex** was added in 1974,
 and **familial status** and **handicap** were added in 1988 by insertion rather than by rewriting the
@@ -140,14 +141,16 @@ exemptions section, is not among the sections whose violation is a discriminator
 because § 3607 creates no prohibition to violate. Familial status, § 3602(k), is treated later in this
 unit alongside § 3607.
 
-**Read the opening clause first, then read § 3603.** Section 3604 begins: "As made applicable by
-section 3603 of this title and except as exempted by sections 3603(b) and 3607 of this title, it shall
-be unlawful—". Both cross-referenced sections were read for this course, so we can follow the chain
+**Read the opening clause first, then read 42 U.S.C. § 3603.** Section 3604 opens by subjecting
+everything that follows to two cross-references: its prohibitions operate "[a]s made applicable by
+section 3603 of this title and except as exempted by sections 3603(b) and 3607 of this title". Both
+cross-referenced sections were read for this course, so we can follow the chain
 rather than stopping at it. Section 3603(a) sets the reach. "Subject to the provisions of subsection
-(b) and section 3607 of this title," the § 3604 prohibitions applied on enactment to four categories of
-federally connected housing — dwellings "owned or operated by the Federal Government"; dwellings aided
-by federal "loans, advances, grants, or contributions" under agreements entered into after November 20,
-1962; dwellings "provided in whole or in part by loans insured, guaranteed, or otherwise secured by the
+(b) and section 3607 of this title", the § 3604 prohibitions applied on enactment to four categories of
+federally connected housing (§ 3603(a)(1)) — dwellings "owned or operated by the Federal Government";
+dwellings aided by federal "loans, advances, grants, or contributions" under agreements entered into
+after November 20, 1962; dwellings under § 3603(a)(1)(C) "provided in whole or in part by loans
+insured, guaranteed, or otherwise secured by the
 credit of the Federal Government" under such agreements; and dwellings provided by development or
 redevelopment of property obtained from a public agency receiving federal slum-clearance or urban
 renewal assistance. Then § 3603(a)(2): "After December 31, 1968, to all dwellings covered by paragraph
@@ -185,8 +188,8 @@ the verbs (*make, print, publish,* or *cause to be*), which capture the agent wh
 publisher who runs it; the objects ("any notice, statement, or advertisement," so a spoken remark at a
 showing counts); and the test — the item must *indicate* a preference, limitation or discrimination,
 or an intention to make one, and nobody need have been turned away. *Illustration:* a San Antonio
-duplex advertised as "quiet building, perfect for a mature professional couple, not suited to
-children" indicates a familial-status limitation on the face of the words.
+duplex advertised as *quiet building, perfect for a mature professional couple, not suited to
+children* indicates a familial-status limitation on the face of the words.
 
 **§ 3604(d) — false unavailability.** It is unlawful "[t]o represent to any person because of race,
 color, religion, sex, handicap, familial status, or national origin that any dwelling is not available
@@ -203,8 +206,9 @@ so a prediction counts. Unit 3 works this practice in detail.
 
 **§ 3604(f) — handicap.** Paragraph (f)(1) makes it unlawful "[t]o discriminate in the sale or rental,
 or to otherwise make unavailable or deny, a dwelling to any buyer or renter because of a handicap
-of— (A) that buyer or renter, (B) a person residing in or intending to reside in that dwelling after
-it is so sold, rented, or made available; or (C) any person associated with that buyer or renter."
+of— (A) that buyer or renter," and it then reaches two further people: "(B) a person residing in or
+intending to reside in that dwelling after it is so sold, rented, or made available; or (C) any person
+associated with that buyer or renter."
 Paragraph (f)(2) does the same for "the terms, conditions, or privileges of sale or rental" and "the
 provision of services or facilities," with the same three-part reach. So (f)(1) and (f)(2) are the
 disability analogues of (a) and (b) — which is precisely why handicap is absent from those lists.
@@ -302,8 +306,9 @@ Section 3607(b)(2) defines **housing for older persons** as housing in any of th
   § 3602(a). Note that qualification here runs through a determination by the Secretary, not through
   the operator's own view of its program.
 - **(B) 62-and-over** — housing "intended for, and solely occupied by, persons 62 years of age or
-  older."
-- **(C) 55-and-over** — housing "intended and operated for occupancy by persons 55 years of age or
+  older" (§ 3607(b)(2)(B)).
+- **(C) 55-and-over** — housing, under § 3607(b)(2)(C), "intended and operated for occupancy by
+  persons 55 years of age or
   older," *and* meeting three further requirements: "(i) at least 80 percent of the occupied units are
   occupied by at least one person who is 55 years of age or older"; "(ii) the housing facility or
   community publishes and adheres to policies and procedures that demonstrate the intent required
@@ -323,12 +328,14 @@ occupancy-verification rules. A community that calls itself "55+" in its marketi
 an age policy and cannot document its 80 percent is not, on this text, housing for older persons — and
 every familial-status exclusion it has made is unprotected.
 
-Two savings provisions follow, and both are practical. Under § 3607(b)(3), housing "shall not fail to
+Two savings provisions follow, both practical, and each carries a proviso that is part of the
+rule rather than a footnote to it. Under § 3607(b)(3), housing "shall not fail to
 meet the requirements for housing for older persons" by reason of persons who were residing there as of
-September 13, 1988 and do not meet the (B) or (C) ages, "Provided, That new occupants of such housing
-meet the age requirements," or by reason of "unoccupied units: Provided, That such units are reserved
-for occupancy by persons who meet the age requirements." So legacy residents and vacant units do not
-break the exemption.
+September 13, 1988 and do not meet the (B) or (C) ages, provided that "new occupants of such housing
+meet the age requirements" of (B) or (C); or by reason of unoccupied units, provided that such units
+are "reserved for occupancy by persons who meet the age requirements" of (B) or (C). So legacy
+residents and vacant units do not break the exemption — so long as the community holds the line going
+forward.
 
 Under § 3607(b)(5)(A), "[a] person shall not be held personally liable for monetary damages for a
 violation of this subchapter if such person reasonably relied, in good faith, on the application of the
@@ -370,15 +377,15 @@ without violating § 3604(a) — and may **not** make, print or publish a notice
 advertisement indicating a preference, limitation or discrimination, or an intention to make one.
 **There is no exemption from federal fair housing advertising law.** That is the single most useful
 sentence in § 3603, it comes from the section's own first line, and it is the answer to the client who
-says "I'm exempt, so I can put whatever I want in the ad."
+says *I'm exempt, so I can put whatever I want in the ad.*
 
 Two transactions are exempted.
 
 **(1) A single-family house sold or rented by its owner** — § 3603(b)(1) exempts "any single-family
 house sold or rented by an owner," subject to four provisos, each of which narrows it:
 
-- **The three-house ceiling.** The exemption applies "Provided, That such private individual owner does
-  not own more than three such single-family houses at any one time."
+- **The three-house ceiling.** The exemption applies only where, in the statute's proviso, "such
+  private individual owner does not own more than three such single-family houses at any one time".
 - **The anti-evasion ceiling.** It applies further only if "such bona fide private individual owner does
   not own any interest in, nor is there owned or reserved on his behalf, under any express or voluntary
   agreement, title to or any right to all or a portion of the proceeds from the sale or rental of, more
@@ -425,7 +432,8 @@ if "(1) he has, within the preceding twelve months, participated as principal in
 transactions involving the sale or rental of any dwelling or any interest therein"; or "(2) he has,
 within the preceding twelve months, participated as agent, other than in the sale of his own personal
 residence in providing sales or rental facilities or sales or rental services in two or more
-transactions involving the sale or rental of any dwelling or any interest therein"; or "(3) he is the
+transactions involving the sale or rental of any dwelling or any interest therein"; or, under
+§ 3603(c)(3), "(3) he is the
 owner of any dwelling designed or intended for occupancy by, or occupied by, five or more families."
 Three transactions as principal, two as agent, or a five-family building — thresholds low enough that
 almost anyone working in this field clears them.
@@ -487,7 +495,8 @@ the text quoted in this unit:
 
 Then follow the two cross-references in the opening clause and answer from §§ 3602, 3603 and 3607:
 
-5. Section 3603(b) begins "Nothing in section 3604 of this title (other than subsection (c))." Which
+5. Section 3603(b) begins "Nothing in section 3604 of this title (other than subsection (c)) shall
+   apply to". Which
    prohibition does that parenthesis preserve, and what does it mean for an exempt owner's newspaper
    advertisement? Then find the *second* place in § 3603(b)(1) where the same point is made as a
    condition on the exemption, and state what happens to the exemption when that condition fails.
@@ -507,8 +516,8 @@ She uses a wheelchair. She makes two written requests. First, she asks permissio
 build a wooden ramp over the two steps at her private entrance and widen the bathroom doorway, and
 offers to pay for the work. Second, she asks the complex to assign her the unreserved parking space
 nearest the entrance, currently allocated first-come under a written policy. The manager refuses both,
-saying the building "isn't required to be accessible" and that changing the parking policy "wouldn't
-be fair to the other residents."
+saying the building *isn't required to be accessible* and that changing the parking policy *wouldn't
+be fair to the other residents*.
 
 1. Which request is a **reasonable modification** under § 3604(f)(3)(A) and which is a **reasonable
    accommodation** under § 3604(f)(3)(B)? Point to the words in each subparagraph that decide it.
@@ -591,9 +600,10 @@ obtaining legal custody" of such an individual. Pregnancy is expressly inside th
 § 301.003(8) defines **dwelling** to include "vacant land that is offered for sale or lease for the
 construction or location of" a residence, so residential lots are inside the Act.
 
-**Prohibited practices.** Subchapter B tracks § 3604. Section 301.021(a) prohibits refusing to sell or
-rent after a bona fide offer, refusing to negotiate, or "in any other manner mak[ing] unavailable or
-deny[ing] a dwelling"; § 301.021(b) covers terms, conditions, privileges, services and facilities; and
+**Prohibited practices.** Subchapter B tracks § 3604. Under § 301.021(a) a person "may not refuse to
+sell or rent, after the making of a bona fide offer, refuse to negotiate for the sale or rental of, or
+in any other manner make unavailable or deny a dwelling to another" on a protected
+basis; § 301.021(b) covers terms, conditions, privileges, services and facilities; and
 § 301.021(c) provides that the section "does not prohibit discrimination against a person because the
 person has been convicted under federal law or the law of any state of the illegal manufacture or
 distribution of a controlled substance." That one does have a federal counterpart, though Texas puts it
@@ -606,8 +616,11 @@ manufacture or distribution, by conviction, of a controlled substance — and ne
 licence to screen on criminal history. Section 301.022 is the advertising prohibition, § 301.023 the false-unavailability
 prohibition, § 301.024 the blockbusting prohibition, and § 301.025 the disability section — including
 at § 301.025(c) the same three-part definition of discrimination: refusing to permit a reasonable
-modification "at the expense of the person having a disability," refusing to make a reasonable
-accommodation "in rules, policies, practices, or services," and failing to meet the design and
+modification "at the expense of the person having a disability" where, in § 301.025(c)(1)'s words,
+"the modification may be necessary to afford the person full enjoyment of the premises"; refusing to
+make a reasonable accommodation, under § 301.025(c)(2),
+"in rules, policies, practices, or services if the accommodation may be necessary to afford the person
+equal opportunity to use and enjoy a dwelling"; and failing to meet the design and
 construction requirements, which by § 301.025(e) do "not apply to a building the first occupancy of
 which occurred on or before March 13, 1991."
 
@@ -851,7 +864,7 @@ distance, and no adjectives about who would fit in.
 **Steering.** Steering is channelling a prospect toward or away from particular areas, buildings or
 neighborhoods on the basis of a protected class, whether or not any property is ever refused. Two
 points about where it lives in the law. First, the federal Act does not use the word: steering is
-unlawful under § 3604(a) because it "otherwise make[s] unavailable or den[ies]" a dwelling, and under
+unlawful under § 3604(a) because it is a way to "otherwise make unavailable or deny" a dwelling, and under
 § 3604(b) and (d) when it takes the form of differential service or a false statement of availability;
 in Texas it violates § 301.021 the same way. Second — and this belongs on the wall of every Texas
 brokerage — **Texas licence law names it expressly.** Occupations Code § 1101.652(b)(32) authorizes
@@ -924,10 +937,11 @@ multiple-listing service, a real estate brokers' organization, or "other service
 facility relating to the business of selling or renting dwellings." The closing phrase is not
 decoration — it is a functional test, and it is what carries the section past the two named examples
 to whatever else is organized around the business of selling or renting dwellings. **The prohibited
-conduct is two-stage,** exactly as in § 3604(a) and (b): denying "access to or membership or
-participation in," and discriminating "in the terms or conditions of such access, membership, or
-participation." So conditioning participation, pricing it differently, or curtailing it after
-admission is inside the section without any denial at all. **The bases are seven**, the full
+conduct is two-stage,** exactly as in § 3604(a) and (b): § 3606 reaches denying "access to or
+membership or participation in" a covered body, and discriminating "in the terms or conditions of such
+access, membership, or participation." So conditioning participation, pricing it differently, or
+curtailing it after admission is inside the section without any denial at all. **The bases are
+seven**, the full
 § 3604(c) list, handicap and familial status included; § 3606 does not split disability off into a
 subsection of its own the way § 3604 does. And **the exemptions you learned in unit 1 do not answer a
 § 3606 problem.** Section 3603(b) by its own opening words exempts qualifying transactions from
@@ -1008,7 +1022,8 @@ suspend or revoke.
 
 *Layer three — the bridge.* Property Code § 301.114 requires the Texas Workforce Commission, within 30
 days of issuing an order about a discriminatory housing practice occurring in a licensed business, to
-send the findings and order to the licensing agency and "recommend… appropriate disciplinary action."
+send copies of the findings and the order to the governmental agency that licenses or regulates that
+business and to "recommend to the governmental agency appropriate disciplinary action."
 For a Texas license holder, that agency is TREC. Occupations Code § 1101.801 closes the loop from the
 other side: "Disciplinary action taken against a person under Section 1101.652 does not relieve the
 person from civil or criminal liability." The layers stack; they do not substitute.
@@ -1017,8 +1032,8 @@ person from civil or criminal liability." The layers stack; they do not substitu
 good area for people like me?" or "What kind of people live here?" The question is usually innocent.
 The answer is where careers end. The rule is short: **do not characterize a neighborhood by the
 demographic characteristics of the people in it — not favourably, not unfavourably, not vaguely, not
-on direct request, and not because the client volunteered their own group first.** "You'll fit in
-here" or "you might be happier in the northwest part of town" is steering under § 3604(a) and
+on direct request, and not because the client volunteered their own group first.** *You'll fit in
+here* or *you might be happier in the northwest part of town* is steering under § 3604(a) and
 § 301.021 and sits squarely inside § 1101.652(b)(32) if it directs a prospect "interested in equivalent
 properties to a different area." Neither the Fair Housing Act nor ch. 301 contains a consent
 exception, so the client's request does not cure it.
@@ -1041,8 +1056,8 @@ Devin is a Texas sales agent. A buyer couple gives him their criteria: three bed
 within a twenty-minute commute of downtown, in a named school district. His MLS search returns eleven
 properties meeting every criterion — six in the Eastside neighborhood and five elsewhere. During
 intake the buyers mention their national origin. Devin shows them the five outside Eastside, never
-mentions the six, and later tells his broker, "They'd have been more comfortable on the west side — I
-was doing them a favour." No property was refused and they bought one of the five.
+mentions the six, and later tells his broker: *They'd have been more comfortable on the west side — I
+was doing them a favour.* No property was refused and they bought one of the five.
 
 1. Identify the fair housing violation. Which subsection of § 3604 and which section of ch. 301 reach
    conduct that never refuses anyone a dwelling? Quote the operative phrase.
@@ -1229,11 +1244,13 @@ application unless the creditor makes a counteroffer (to grant credit in a diffe
 terms) and the applicant uses or expressly accepts the credit offered"; (ii) "[a] termination of an
 account or an unfavorable change in the terms of an account that does not affect all or substantially
 all of a class of the creditor's accounts"; or (iii) "[a] refusal to increase the amount of credit
-available to an applicant who has made an application for an increase." Paragraph (c)(2) then excludes
+available to an applicant who has made an application for an increase." Section 1002.2(c)(2) then
+excludes
 five things, including "[a] change in the terms of an account expressly agreed to by an applicant";
 action taken "in connection with inactivity, default, or delinquency as to that account"; "[a] refusal
 to extend credit because applicable law prohibits the creditor from extending the credit requested";
-and "[a] refusal to extend credit because the creditor does not offer the type of credit or credit plan
+and, at § 1002.2(c)(2)(v),
+"[a] refusal to extend credit because the creditor does not offer the type of credit or credit plan
 requested." Paragraph (c)(3) supplies the tie-breaker: an action within both lists "is governed by
 paragraph (c)(2)," so the exclusions win.
 
@@ -1246,8 +1263,9 @@ position from the client who was offered $240,000 and walked away. Section 1002.
 definition the § 1691(d)(1) clock depends on: a **"completed application"** is one "in connection with
 which a creditor has received all the information that the creditor regularly obtains and considers in
 evaluating applications for the amount and type of credit requested," including credit reports,
-additional information requested from the applicant, and any necessary approvals or reports — and
-"[t]he creditor shall exercise reasonable diligence in obtaining such information," so a creditor may
+additional information requested from the applicant, and any necessary approvals or reports. Section
+1002.2(f) then closes with the sentence that keeps that clock honest:
+"[t]he creditor shall exercise reasonable diligence in obtaining such information." A creditor may
 not stall the clock by declining to gather what it needs.
 
 **§ 1002.4 — the general rules.** Two sentences carry the section. Paragraph (a), **Discrimination:**
@@ -1256,8 +1274,9 @@ credit transaction." Paragraph (b), **Discouragement:** "A creditor shall not ma
 statement, in advertising or otherwise, directed at applicants or prospective applicants that the
 creditor knows or should know would cause a reasonable person to believe that the creditor would deny,
 or would grant on less favorable terms, a credit application by the applicant or prospective applicant
-because of the applicant or prospective applicant's prohibited basis characteristic(s)," and for that
-paragraph "oral or written statements are spoken or written words, or visual images such as symbols,
+because of the applicant or prospective applicant's prohibited basis characteristic(s)." Section
+1002.4(b) then adds that for purposes of that paragraph,
+"oral or written statements are spoken or written words, or visual images such as symbols,
 photographs, or videos."
 
 Paragraph (b) has no counterpart in § 1691 and it is the paragraph closest to a license holder's daily
@@ -1287,8 +1306,9 @@ exceptions: "A creditor shall not inquire about the race, color, religion, natio
 an applicant or any other person in connection with a credit transaction, except as provided in
 paragraphs (b)(1) and (b)(2)." The first exception is a **self-test** meeting § 1002.15's requirements,
 and a creditor making such an inquiry must disclose, orally or in writing and at the time of the
-request, that the applicant need not provide the information, that the creditor is requesting it "to
-monitor its compliance with the Federal Equal Credit Opportunity Act," that federal law prohibits
+request, that the applicant need not provide the information, that under § 1002.5(b)(1)(ii) the
+creditor is requesting it "to
+monitor its compliance with the Federal Equal Credit Opportunity Act", that federal law prohibits
 discriminating on the basis of that information "or on the basis of an applicant's decision not to
 furnish the information," and, if applicable, that some information will be collected by visual
 observation or surname. The second is narrow and formal: an applicant "may be requested to designate a
@@ -1358,9 +1378,10 @@ statement of the provisions of section 701(a) of the Act; the name and address o
 that administers compliance with respect to the creditor — this is where § 1691c's list of agencies
 surfaces on the page your client is holding — and **either** "(i) [a] statement of specific reasons for
 the action taken" **or** "(ii) [a] disclosure of the applicant's right to a statement of specific
-reasons within 30 days, if the statement is requested within 60 days of the creditor's notification,"
-including "the name, address, and telephone number of the person or office from which the statement of
-reasons can be obtained." Those are § 1691(d)(2)'s two routes and its 60-day and 30-day clocks, in the
+reasons within 30 days, if the statement is requested within 60 days of the creditor's notification"
+(§ 1002.9(a)(2)(ii)). That disclosure, the same subparagraph says,
+"shall include the name, address, and telephone number of the person or office from which the statement
+of reasons can be obtained." Those are § 1691(d)(2)'s two routes and its 60-day and 30-day clocks, in the
 same shape; the regulation adds that if the creditor gives the reasons orally it must also disclose the
 applicant's right to have them confirmed in writing within 30 days of a written request for
 confirmation.
@@ -1389,7 +1410,8 @@ status, a creditor that approves it may treat it as withdrawn if the applicant h
 go to one applicant "but must be given to the primary applicant where one is readily apparent"; and
 where an application is made to more than one creditor and the applicant accepts or uses one
 creditor's offer, the others need not notify — otherwise each creditor taking adverse action must
-comply "directly or through a third party," and a third-party notice "shall disclose the identity of
+comply "directly or through a third party," and under § 1002.9(g) a notice given by a third party
+"shall disclose the identity of
 each creditor on whose behalf the notice is given." That last rule is the one that explains a client
 receiving several denial letters from lenders they never contacted.
 
@@ -1401,8 +1423,9 @@ includes engaging in residential real estate-related transactions to discriminat
 making available such a transaction, or in the terms or conditions of such a transaction, because of
 race, color, religion, sex, handicap, familial status, or national origin."
 
-Four things to take from that sentence. **Who is covered:** "any person or other entity **whose business
-includes** engaging in residential real estate-related transactions." Not "banks," not "lenders" — the
+Four things to take from that sentence. **Who is covered:** § 3605(a) reaches "any person or other
+entity **whose business
+includes** engaging in residential real estate-related transactions". Not "banks," not "lenders" — the
 test is what your business *includes*, and § 3602(d) defines "person" to include individuals. That
 wording is deliberate. Until 1988 this section reached only "any bank, building and loan association,
 insurance company or other corporation, association, firm or enterprise whose business consists in whole
@@ -1569,9 +1592,10 @@ the Federal Reserve System, bank holding companies, and savings and loan holding
 Federal Reserve members and whose deposits the Corporation insures, and State savings associations
 whose deposits are FDIC-insured (§ 2902(1)(A)–(C)). Three agencies, no more, and none of them is HUD,
 the Bureau or TREC. Second — and this is the definition that settles who owes a CRA obligation at all
-— "the term **'regulated financial institution'** means an insured depository institution (as defined
-in section 1813 of this title)" (§ 2902(2)). Note how narrow that is. A mortgage broker is not one; a
-mortgage banker is not one; a credit union is not one; a real estate brokerage is emphatically not one.
+— § 2902(2) provides that "the term **'regulated financial institution'** means an insured depository
+institution", as that term is defined in section 1813 of title 12. Note how narrow that is. A mortgage
+broker is not one;
+a mortgage banker is not one; a credit union is not one; a real estate brokerage is emphatically not one.
 The CRA reaches **insured depository institutions**, which is to say banks and savings institutions
 whose deposits carry federal insurance. Third, an **"application for a deposit facility"** is defined
 in § 2902(3) as an application to the appropriate agency, otherwise required by federal law, for a
@@ -1586,7 +1610,8 @@ a defined geographic area may define its 'entire community' to include its entir
 without regard to geographic proximity," which in a state with as many military installations as Texas
 is worth knowing exists.
 
-**The assessment — § 2903.** This is the section that converts § 2901's purpose into a duty. Section
+**The assessment — 12 U.S.C. § 2903.** This is the section that converts § 2901's purpose into a duty.
+Section
 2903(a): "In connection with its examination of a financial institution, the appropriate Federal
 financial supervisory agency shall— (1) assess the institution's record of meeting the credit needs of
 its entire community, including low- and moderate-income neighborhoods, consistent with the safe and
@@ -1614,9 +1639,10 @@ record of meeting community credit needs', or better, at the most recent examina
 institution," subject to a limited 12-month exclusion for newly acquired institutions covered by an
 accepted remediation plan.
 
-**Reporting and rulemaking — §§ 2904 and 2905.** Section 2904 is one sentence: "Each appropriate
+**Reporting and rulemaking — §§ 2904 and 2905.** 12 U.S.C. § 2904 is one sentence: "Each appropriate
 Federal financial supervisory agency shall include in its annual report to the Congress a section
-outlining the actions it has taken to carry out its responsibilities under this chapter." Section 2905
+outlining the actions it has taken to carry out its responsibilities under this chapter." 12 U.S.C.
+§ 2905
 provides that regulations to carry out the chapter's purposes "shall be published by each appropriate
 Federal financial supervisory agency," except that the Comptroller of the Currency prescribes those
 applicable to savings associations and the Board of Governors those applicable to insured State member
@@ -1628,10 +1654,13 @@ was held for this course.** This module therefore states what §§ 2902–2906 s
 any agency's assessment-area rules, performance tests or examination procedures, which live in those
 regulations.
 
-**The written evaluation and the four ratings — § 2906.** Section 2906 is the section that makes a CRA
-record public, and it is the one most often misremembered, so read the words. Section 2906(a)(1): "Upon
+**The written evaluation and the four ratings — 12 U.S.C. § 2906.** Section 2906 is the section that
+makes a CRA
+record public, and it is the one most often misremembered, so read the words. Section 2906(a)(1)
+applies "[u]pon
 the conclusion of each examination of an insured depository institution under section 2903 of this
-title, the appropriate Federal financial supervisory agency shall prepare a written evaluation of the
+title", and it then requires that "the appropriate Federal financial supervisory agency shall prepare a
+written evaluation of the
 institution's record of meeting the credit needs of its entire community, including low- and
 moderate-income neighborhoods." Section 2906(a)(2): "Each written evaluation required under paragraph
 (1) shall have a **public section and a confidential section**."
@@ -1692,8 +1721,8 @@ and evaluation sections rather than through the findings. The statutory notes pr
 carry it further still, and those notes were read. The note reproducing § 715 of
 Pub. L. 106–102 (1999) directed the Secretary of the Treasury, with the Federal banking agencies, to
 study "the extent to which adequate services are being provided as intended by the Community
-Reinvestment Act of 1977, including **services in low- and moderate-income neighborhoods and for
-persons of modest means**." The note reproducing § 910 of Pub. L. 102–550 (1992) directed the Federal
+Reinvestment Act of 1977", including **"services in low- and moderate-income neighborhoods and for
+persons of modest means"**. The note reproducing § 910 of Pub. L. 102–550 (1992) directed the Federal
 Reserve Board to report to Congress "comparing residential, small business, and commercial lending by
 insured depository institutions in **low-income, minority, and distressed neighborhoods** to such
 lending in other neighborhoods." Be precise about which text says which: the findings in § 2901 do not
@@ -1737,7 +1766,7 @@ duty, and cites nothing. You will not be examined under the CRA and you owe no C
 Act gives you is context: it is one reason lenders operating in Texas fund community development
 programs, participate in first-time-buyer and down-payment-assistance products, and open branches in
 neighborhoods a purely transactional analysis might skip. When a buyer in a modest Texas neighborhood
-is told by one lender that "nobody lends on houses in that part of town," the useful response is not a
+is told by one lender that *nobody lends on houses in that part of town*, the useful response is not a
 lecture on § 2901 but the fact that other regulated institutions serve that community and the loan is
 worth shopping. One thing the newly read sections let you say accurately: under § 2906(a)(2) and
 (b)(1) an insured depository institution's CRA evaluation has a **public section** containing its
@@ -1838,10 +1867,10 @@ depository institutions supervised by the Comptroller, the Federal Reserve Board
 requires the agency to assess the institution's record of meeting the credit needs of "its entire
 community, including low- and moderate-income neighborhoods" and to take that record into account on an
 application for a deposit facility; and § 2906 requires a written evaluation with a public and a
-confidential section, the public section carrying a rating that must be one of four — "Outstanding
-record of meeting community credit needs," "Satisfactory record of meeting community credit needs,"
-"Needs to improve record of meeting community credit needs," or "Substantial noncompliance in meeting
-community credit needs."
+confidential section, the public section carrying a rating that must be one of four: "Outstanding
+record of meeting community credit needs"; "Satisfactory record of meeting community credit needs";
+"Needs to improve record of meeting community credit needs"; or "Substantial noncompliance in meeting
+community credit needs".
 
 You should now be able to state each § 3604 prohibition and its class list, apply the § 3602 definitions
 that decide coverage, work the § 3603(b) exemptions with their conditions and say why neither touches
