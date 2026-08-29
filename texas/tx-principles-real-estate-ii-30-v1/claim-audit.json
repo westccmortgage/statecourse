@@ -19,9 +19,9 @@
       "MECHANICAL_PASS": 1252,
       "IDENTIFIED_NOT_TAUGHT": 3
     },
-    "quotesChecked": 1135,
-    "quotesFailed": 523,
-    "quotesUnattributable": 296
+    "quotesChecked": 1019,
+    "quotesFailed": 400,
+    "quotesUnattributable": 412
   },
   "quoteFailures": [
     {
@@ -83,16 +83,6 @@
       "matchedPrefixChars": 99,
       "sourceContinuesWith": "which meets standards prescribed in regulations by the bureau; if such refusal is require",
       "quote": "special purpose credit program offered by a profit-making organization to meet special social needs,"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "1691"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "the term 'adverse action' means a denial or revocation of credit, a change in the terms of an existing credit arrangement, or a refusal to grant credit in substantially the amount or on substantially "
     },
     {
       "module": "module-02",
@@ -179,22 +169,10 @@
     {
       "module": "module-02",
       "candidateSections": [
-        "2607",
-        "2601",
-        "5.062"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " among the officials the Bureau consults. Texas also has a Veterans' Land Board, named in Property Code § 5.062(b)(2)(A), which excludes from the executory-contract subchapter "
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
         "50",
         "5.062"
       ],
-      "classification": "NO_MATCH",
+      "classification": "ELLIPSIS_ALL_SEGMENTS_PRESENT",
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "a sale of land by . . . the Veterans' Land Board"
@@ -224,16 +202,6 @@
       "candidateSections": [
         "50"
       ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " For *repair or renovation of existing* improvements, four conditions attach, and they are the reason a Texas home-improvement lien is a formal transaction rather than a handshake: (A) the work and ma"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "50"
-      ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 447,
       "sourceContinuesWith": "; (f) is not a form of open-end account that may be debited from time to time or under whi",
@@ -246,7 +214,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 283,
-      "sourceContinuesWith": ": \"notice concerning extensions of credit defined by section 50(a)(6), article xvi, texas",
+      "sourceContinuesWith": ": 'notice concerning extensions of credit defined by section 50(a)(6), article xvi, texas",
       "quote": "An extension of credit described by Subsection (a)(6) of this section may be secured by a valid lien against homestead property if the extension of credit is not closed before the 12th day after the l"
     },
     {
@@ -256,7 +224,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 99,
-      "sourceContinuesWith": ": \"section 50(a)(6), article xvi, of the texas constitution allows certain loans to be sec",
+      "sourceContinuesWith": ": 'section 50(a)(6), article xvi, of the texas constitution allows certain loans to be sec",
       "quote": "NOTICE CONCERNING EXTENSIONS OF CREDIT DEFINED BY SECTION 50(a)(6), ARTICLE XVI, TEXAS CONSTITUTION,"
     },
     {
@@ -276,7 +244,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 71,
-      "sourceContinuesWith": "; \"(9) provide that you and the lender acknowledge the fair market value of your home on t",
+      "sourceContinuesWith": "; '(9) provide that you and the lender acknowledge the fair market value of your home on t",
       "quote": "WITHIN 3 DAYS AFTER CLOSING, RESCIND THE LOAN WITHOUT PENALTY OR CHARGE."
     },
     {
@@ -288,16 +256,6 @@
       "matchedPrefixChars": 413,
       "sourceContinuesWith": "by: (a) paying to the owner an amount equal to any overcharge paid by the owner under or",
       "quote": "the lender or any holder of the note for the extension of credit shall forfeit all principal and interest of the extension of credit if the lender or holder fails to comply with the lender's or holder"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "50"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " an excepted debt, and subsection (k) defines the term and conditions it. A reverse mortgage under the Texas Constitution is an extension of credit "
     },
     {
       "module": "module-02",
@@ -316,7 +274,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 81,
-      "sourceContinuesWith": ": \"important notice to borrowers related to your reverse mortgage \"under the texas tax cod",
+      "sourceContinuesWith": ": 'important notice to borrowers related to your reverse mortgage 'under the texas tax cod",
       "quote": "the lender or originator and the borrower must sign for the notice to take effect,"
     },
     {
@@ -378,7 +336,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 107,
-      "sourceContinuesWith": ". (2) \"home loan\" means a loan that is: (a) made to one or more individuals for personal,",
+      "sourceContinuesWith": ". (2) 'home loan' means a loan that is: (a) made to one or more individuals for personal,",
       "quote": "temporary or short-term financing requiring payment of only interest until the entire unpaid balance is due,"
     },
     {
@@ -393,17 +351,6 @@
       "matchedPrefixChars": 81,
       "sourceContinuesWith": ". added by acts 2001, 77th leg., ch. 622, sec. 1, eff. sept. 1, 2001. amended by: acts 20",
       "quote": "(1) a reverse mortgage; or (2) an open-end account, as defined by Section 301.002."
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "343.101",
-        "343.102"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Read the note against the text it annotates: the expiry it describes is one "
     },
     {
       "module": "module-02",
@@ -502,16 +449,6 @@
     {
       "module": "module-02",
       "candidateSections": [
-        "5.016"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 5.016(b)). Section 5.016(c) lists eleven exempt transfers, including transfers under a court order or foreclosure sale, transfers by a trustee in bankruptcy, transfers between co-owners or spouses"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
         "5.016",
         "5.085"
       ],
@@ -595,29 +532,6 @@
       "matchedPrefixChars": 163,
       "sourceContinuesWith": "; and (2) reasonable attorney's fees. (e) the requirements of this section continue to app",
       "quote": "$250 a day for each day after January 31 that the seller fails to provide the purchaser with the statement, but not to exceed the fair market value of the property,"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "50",
-        "5.077",
-        "5.061"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " means the failure to make a timely payment or to comply with a term of the contract (§ 5.061). Before enforcing rescission or forfeiture and acceleration, the seller must give written notice by regis"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "5.066",
-        "5.064"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 5.064). Section 5.065 gives the purchaser the cure right: "
     },
     {
       "module": "module-02",
@@ -739,18 +653,6 @@
       "candidateSections": [
         "1026.32",
         "1026",
-        "1026.35"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " any one of three tests is met (§ 1026.32(a)(1)). The first is a rate test: the annual percentage rate "
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "1026.32",
-        "1026",
         "50"
       ],
       "classification": "TRUNCATED_REVIEW",
@@ -800,7 +702,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 60,
-      "sourceContinuesWith": "; (b) a loan with maturity of 12 months or less, if the purpose of the loan is a \"bridge\"",
+      "sourceContinuesWith": "; (b) a loan with maturity of 12 months or less, if the purpose of the loan is a 'bridge'",
       "quote": "adjusted to the seasonal or irregular income of the consumer,"
     },
     {
@@ -810,21 +712,10 @@
         "1026",
         "1026.43"
       ],
-      "classification": "PARTIAL",
-      "matchedPrefixChars": 75,
-      "sourceContinuesWith": null,
+      "classification": "TRUNCATED_REVIEW",
+      "matchedPrefixChars": 202,
+      "sourceContinuesWith": "; or (c) a loan that meets the criteria set forth in §§ 1026.43(f)(1)(i) through (vi) and",
       "quote": "a loan with maturity of 12 months or less, if the purpose of the loan is a 'bridge' loan connected with the acquisition or construction of a dwelling intended to become the consumer's principal dwelli"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "1026.32",
-        "1026"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 1026.32(d)(6)); and a demand feature permitting acceleration and termination in advance of maturity, except for consumer fraud or material misrepresentation, failure to meet the repayment terms, o"
     },
     {
       "module": "module-02",
@@ -835,37 +726,6 @@
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "more than two times a regular periodic payment,"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "50"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 50(k)(2)). The federal rule states no counseling requirement; Texas requires written attestation of counseling "
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "50"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " closing (§ 50(k)(8)). Conversely, the federal rule prescribes a disclosure the Texas provision does not: a statement "
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "1026.33",
-        "1026"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 45,
-      "sourceContinuesWith": null,
-      "quote": " a good-faith projection of the total cost of credit "
     },
     {
       "module": "module-02",
@@ -910,26 +770,6 @@
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "No fee shall be imposed or charge made upon any other person, as a part of settlement costs or otherwise, by a lender . . . or by a servicer . . . for or on account of the preparation and distribution"
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "1024.14"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " should dispel any idea that only cash is covered. It "
-    },
-    {
-      "module": "module-02",
-      "candidateSections": [
-        "1024.14"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 47,
-      "sourceContinuesWith": null,
-      "quote": "synonymous with the giving or receiving of any 'thing of value' and does not require transfer of money"
     },
     {
       "module": "module-02",
@@ -1028,7 +868,7 @@
       "candidateSections": [
         "1103.204"
       ],
-      "classification": "NO_MATCH",
+      "classification": "ELLIPSIS_SEGMENT_MISSING",
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "shall give an applicant … credit toward fulfilling the requirements of Section 1103.202(2) for classroom hours taken in the course of becoming licensed as a real estate broker or sales agent or for pr"
@@ -1052,51 +892,6 @@
       "matchedPrefixChars": 56,
       "sourceContinuesWith": "performing an appraisal under the direction of the supervisory appraiser. the supervisory",
       "quote": "shall sign each report prepared by the appraiser trainee,"
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.5545",
-        "1103.554",
-        "1103.401"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " without the corresponding credential. Section 1103.401 broadens that to any "
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.402",
-        "1103.154"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " as USPAP. Section 1103.154 authorizes the Board to adopt rules incorporating USPAP and requiring compliance with its competency, conduct and ethics standards. Two further practice rules matter to you"
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.402",
-        "1103.404"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " with subsection (b) defining substantial production as contributing "
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.402",
-        "1103.404"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "; and § 1103.404 requires retention of all business records relating to each appraisal "
     },
     {
       "module": "module-03",
@@ -1150,29 +945,6 @@
       "matchedPrefixChars": 516,
       "sourceContinuesWith": "; (3) an appraiser certified by a jurisdiction other than this state who performs an appra",
       "quote": "(2) a real estate broker licensed under Chapter 1101 or a sales agent acting under the authority of a sponsoring broker who provides to another person a written analysis, opinion, or conclusion relati"
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.401",
-        "1103.201"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 1103.201(b) separately forbids using the titles "
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.554",
-        "1103.401",
-        "1103.201"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " without the credential; § 1103.401 extends that to any "
     },
     {
       "module": "module-03",
@@ -1234,29 +1006,6 @@
       "matchedPrefixChars": 119,
       "sourceContinuesWith": "; (7) fails to notify the commission, not later than the 30th day after the date of a fina",
       "quote": "fails to consider market conditions for the specific geographic area in which the license holder is providing a service."
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.003"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " charges a flat fee, and has no listing or    buyer relationship with anyone in the transaction. Which of the three conditions is most doubtful,    and which section of Chapter 1103 would you look to "
-    },
-    {
-      "module": "module-03",
-      "candidateSections": [
-        "1103.003",
-        "1103.5545",
-        "1103.554",
-        "1103.5535"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " as an opinion of value or the process of developing one,    "
     },
     {
       "module": "module-04",
@@ -1336,7 +1085,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 149,
-      "sourceContinuesWith": ". (6) \"tenant\" means a person who is authorized by a lease to occupy a dwelling to the exc",
+      "sourceContinuesWith": ". (6) 'tenant' means a person who is authorized by a lease to occupy a dwelling to the exc",
       "quote": "any area or facility the lease authorizes the tenant to use, and the appurtenances, grounds, and facilities held out for the use of tenants generally,"
     },
     {
@@ -1671,56 +1420,12 @@
     {
       "module": "module-05",
       "candidateSections": [
-        "211.019"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " means in Texas: continuation as of right, not immunity forever. If the municipality does require the use to stop, § 211.019(d) gives the owner or lessee a choice between a payment from the municipali"
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "211.006",
-        "211.015"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " — permissive language, not a command. Section 211.015 lets the voters of a home-rule municipality repeal the municipality's zoning regulations in their entirety by charter election or, on initial ado"
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
         "212.010"
       ],
       "classification": "TRUNCATED_MID_CLAUSE",
       "matchedPrefixChars": 82,
       "sourceContinuesWith": "and in accordance with section 212.0091 . (b) if an ordinance requires that a plat be app",
       "quote": "is approved by the municipal authority unless it is disapproved within that period."
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "212.010"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 212.010(e) gives an owner whose conforming plat is refused an action for a writ of mandamus with reasonable attorney's fees. Section 212.012(a) then forbids listed utility providers to "
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "212.0115",
-        "212.014",
-        "212.011",
-        "212.010"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " unless presented with or otherwise holding the approval certificate issued under § 212.0115. And a replat may be recorded without vacating the preceding plat under § 212.014 only if it "
     },
     {
       "module": "module-05",
@@ -1751,7 +1456,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 93,
-      "sourceContinuesWith": ". (b) in this subsection, \"family home\" is a residential home that meets the definition of",
+      "sourceContinuesWith": ". (b) in this subsection, 'family home' is a residential home that meets the definition of",
       "quote": "a restrictive covenant shall be liberally construed to give effect to its purposes and intent,"
     },
     {
@@ -1808,17 +1513,6 @@
       "matchedPrefixChars": 320,
       "sourceContinuesWith": ". (b) the disapproval of a plat is considered a refusal by the municipality of the offered",
       "quote": "the approval of a plat is not considered an acceptance of any proposed dedication and does not impose on the municipality any duty regarding the maintenance or improvement of any dedicated parts until"
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "212.153",
-        "212.010"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " an adopted capital improvement plan of the municipality, or a similar plan of the county or the state. And once a public corridor exists, private instruments cannot narrow it: Local Government Code §"
     },
     {
       "module": "module-05",
@@ -1886,16 +1580,6 @@
     {
       "module": "module-05",
       "candidateSections": [
-        "5.008"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "; subparagraph (C) gives the 10-day risk-assessment-or-inspection period to "
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
         "4852d"
       ],
       "classification": "TRUNCATED_REVIEW",
@@ -1930,18 +1614,8 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 75,
-      "sourceContinuesWith": ": \"every purchaser of any interest in residential real property on which a residential dwe",
+      "sourceContinuesWith": ": 'every purchaser of any interest in residential real property on which a residential dwe",
       "quote": "printed in large type on a separate sheet of paper attached to the contract."
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "4852d"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " from memory. The section likewise does not define "
     },
     {
       "module": "module-05",
@@ -1968,39 +1642,9 @@
       "candidateSections": [
         "9601"
       ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "** Section 9601(20)(A) provides that the term means, "
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "9601"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " with a parallel rule for vessels, and clause (iii) reaching back to "
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "9601"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " — the secured-creditor exclusion, elaborated in § 9601(20)(F) for lenders that are not participants in management. Subparagraph (D) excludes a unit of State or local government that acquired ownershi"
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "9601"
-      ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 392,
-      "sourceContinuesWith": "; but does not include any consumer product in consumer use or any vessel. (10) the term \"",
+      "sourceContinuesWith": "; but does not include any consumer product in consumer use or any vessel. (10) the term '",
       "quote": "(A) any building, structure, installation, equipment, pipe or pipeline (including any pipe into a sewer or publicly owned treatment works), well, pit, pond, lagoon, impoundment, ditch, landfill, stora"
     },
     {
@@ -2028,8 +1672,8 @@
       "candidateSections": [
         "9601"
       ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 32,
+      "classification": "PARTIAL",
+      "matchedPrefixChars": 161,
       "sourceContinuesWith": null,
       "quote": "including the document known as 'Standard E1527–97', entitled 'Standard Practice for Environmental Site Assessment: Phase 1 Environmental Site Assessment Process.'"
     },
@@ -2040,7 +1684,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 171,
-      "sourceContinuesWith": ". (b) exclusions .-the term \"brownfield site\" does not include- (i) a facility that is the",
+      "sourceContinuesWith": ". (b) exclusions .-the term 'brownfield site' does not include- (i) a facility that is the",
       "quote": "real property, the expansion, redevelopment, or reuse of which may be complicated by the presence or potential presence of a hazardous substance, pollutant, or contaminant,"
     },
     {
@@ -2106,17 +1750,6 @@
     {
       "module": "module-05",
       "candidateSections": [
-        "4852d",
-        "5.008"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " as one item among many in item 4; it is satisfied by the seller's honest "
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
         "5.013",
         "361.003"
       ],
@@ -2124,17 +1757,6 @@
       "matchedPrefixChars": 222,
       "sourceContinuesWith": ". (b) the notice must state the information to the best of the seller's belief and knowled",
       "quote": "the location of a transportation pipeline, including a pipeline for the transportation of natural gas, natural gas liquids, synthetic gas, liquefied petroleum gas, petroleum or a petroleum product, or"
-    },
-    {
-      "module": "module-05",
-      "candidateSections": [
-        "5.013",
-        "361.003"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " taking the meaning assigned by Health and Safety Code § 361.003 as § 5.013(e) provides. Under § 5.013(c), if the notice is not delivered on or before the effective date of a binding executory contrac"
     },
     {
       "module": "module-05",
@@ -2169,28 +1791,6 @@
       "quote": "fails to disclose to a potential buyer a defect described by Subdivision (3) that is known to the license holder."
     },
     {
-      "module": "module-05",
-      "candidateSections": [
-        "1101.652",
-        "1101.805"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Occupations Code § 1101.805(e) sets the boundary from the other side: a license holder "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.155",
-        "1101.204"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " requiring license holders to use standardized contract forms. Section 1101.204(h) requires the Commission to ensure that it "
-    },
-    {
       "module": "module-06",
       "candidateSections": [
         "1101.002"
@@ -2219,26 +1819,6 @@
       "matchedPrefixChars": 92,
       "sourceContinuesWith": ". the term does not include an owner who offers to locate a unit in the owner's complex. (",
       "quote": "for consideration to locate a unit in an apartment complex for lease to a prospective tenant,"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.003"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": ": agency law; contract law; principles of real estate; property management; real estate appraisal; real estate brokerage; real estate finance; real estate investment; real estate law; real estate mark"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.003"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 1101.003(e) provides that no applicant, license holder or education provider may report completion of an alternative delivery or correspondence qualifying course "
     },
     {
       "module": "module-06",
@@ -2301,17 +1881,6 @@
       "matchedPrefixChars": 92,
       "sourceContinuesWith": "as follows: (1) six members who have been engaged in the brokerage business as licensed b",
       "quote": "consists of nine members appointed by the governor with the advice and consent of the senate,"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.056",
-        "1101.055"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 1101.055(a) sets staggered six-year terms, "
     },
     {
       "module": "module-06",
@@ -2478,18 +2047,6 @@
     {
       "module": "module-06",
       "candidateSections": [
-        "1101.657",
-        "1101.365",
-        "1101.367"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 1101.367(a) handles the sales agent side: when the sponsorship relationship terminates, "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
         "1101.403",
         "1101.404",
         "1101.405"
@@ -2502,48 +2059,12 @@
     {
       "module": "module-06",
       "candidateSections": [
-        "1101.451"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Subsection (e) states the late-renewal structure in multiples rather than dollars: expired "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
         "1101.455"
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 41,
       "sourceContinuesWith": ". the commission may not increase the number of required classroom hours by more than thre",
       "quote": "which must be at least 15 classroom hours,"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.458",
-        "1101.455",
-        "1101.452",
-        "1101.4521"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 1101.455(e)). Section 1101.458 requires a broker — and a sales agent "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.458",
-        "1101.455",
-        "1101.501",
-        "1101.452"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " — to attend a Commission-approved **broker responsibility course**, which "
     },
     {
       "module": "module-06",
@@ -2578,7 +2099,7 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 144,
-      "sourceContinuesWith": ". (2) \"party\" means a prospective buyer, seller, landlord, or tenant or an authorized repr",
+      "sourceContinuesWith": ". (2) 'party' means a prospective buyer, seller, landlord, or tenant or an authorized repr",
       "quote": "a broker who is employed to negotiate a transaction between the parties to a transaction and for that purpose may act as an agent of the parties,"
     },
     {
@@ -2596,7 +2117,7 @@
       "candidateSections": [
         "1101.558"
       ],
-      "classification": "NO_MATCH",
+      "classification": "ELLIPSIS_ALL_SEGMENTS_PRESENT",
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "orally or in writing … at the time of the license holder's first contact with"
@@ -2612,38 +2133,6 @@
       "matchedPrefixChars": 103,
       "sourceContinuesWith": null,
       "quote": "specifies in conspicuous bold or underlined print the conduct that is prohibited under Section 1101.651(d)"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.559",
-        "1101.560",
-        "1101.651"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 1101.559(c)). Under § 1101.560 the broker may appoint one associated license holder to each party, but only if the written consent authorizes appointments and the broker gives written notice to al"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.560"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 1101.561(a) provides that intermediary duties "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.562"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " only if the broker has not agreed to represent the party, is not otherwise acting as the party's agent, "
     },
     {
       "module": "module-06",
@@ -2702,16 +2191,6 @@
     {
       "module": "module-06",
       "candidateSections": [
-        "1101.652"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "; fails to honor a payment issued to the Commission; fails within a reasonable time to provide information the Commission requested about a complaint; fails "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
         "1101.155"
       ],
       "classification": "TRUNCATED_REVIEW",
@@ -2751,26 +2230,6 @@
       "matchedPrefixChars": 66,
       "sourceContinuesWith": ". (b) repealed by acts 2007, 80th leg., r.s., ch. 1411, sec. 59(3), eff. september 1, 2007",
       "quote": "a hearing conducted by the State Office of Administrative Hearings,"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.658"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 1101.662 permits a three-member disciplinary panel to suspend a license temporarily, without notice or hearing, on determining that continued practice "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "1101.701"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 1101.663 bars a person whose license was revoked or surrendered, or whose application was denied after a hearing, from reapplying "
     },
     {
       "module": "module-06",
@@ -2953,17 +2412,6 @@
     {
       "module": "module-06",
       "candidateSections": [
-        "1101.056",
-        "1101.055"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 38,
-      "sourceContinuesWith": null,
-      "quote": " Members serve staggered six-year terms (§ 1101.055(a)) and are led by a presiding officer whom the governor designates from among the members who are licensed brokers (§ 1101.056(a)). Day-to-day oper"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
         "535.55",
         "1101.151"
       ],
@@ -3021,17 +2469,6 @@
     {
       "module": "module-06",
       "candidateSections": [
-        "1101.003",
-        "1101.454"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 1101.003(d)). And completion of an alternative delivery or correspondence qualifying course may not be reported "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
         "1101.657",
         "1101.365",
         "1101.353",
@@ -3068,32 +2505,6 @@
     {
       "module": "module-06",
       "candidateSections": [
-        "535.55",
-        "1101.451",
-        "1101.455",
-        "1101.454"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " A first renewal requires the additional qualifying hours of § 1101.454(a) and § 535.55(b). Later renewals require continuing education under § 1101.455 — at least 15 classroom hours prescribed by rul"
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
-        "535.55",
-        "1101.451",
-        "1101.455",
-        "1101.454"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " must cover the legal topics listed in subsection (e). Renewal also requires the felony disclosure (§ 1101.452(b)) and compliance with the fingerprint and criminal history requirements (§ 1101.4521). "
-    },
-    {
-      "module": "module-06",
-      "candidateSections": [
         "1101.458",
         "1101.451",
         "1101.356"
@@ -3114,26 +2525,6 @@
       "matchedPrefixChars": 61,
       "sourceContinuesWith": "; and (3) has attended the broker responsibility course approved by the commission under s",
       "quote": "not to exceed 60 semester hours or equivalent classroom hours,"
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "1101.652"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " which enumerated practice is implicated, and what the "
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "1101.551"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "'Party' means a prospective buyer, seller, landlord, or tenant or an authorized representative of a buyer, seller, landlord, or tenant, including a trustee, guardian, executor, administrator, receiver"
     },
     {
       "module": "module-07",
@@ -3164,18 +2555,6 @@
       "matchedPrefixChars": 171,
       "sourceContinuesWith": "; (2) an inquiry to a person described by section 1101.005 (6) about contract terms or for",
       "quote": "a license holder who has the authority to bind a party to a lease or sale under a power of attorney or a property management agreement is also a party to the lease or sale."
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "1101.557",
-        "1101.551",
-        "1101.351"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " for purposes of    Subchapter L? Which sentence of the definition settles it? 3. Under § 1101.557(c)(1), what changes when a license holder holds authority to bind a party under a    property managem"
     },
     {
       "module": "module-07",
@@ -3211,16 +2590,6 @@
     {
       "module": "module-07",
       "candidateSections": [
-        "1101.563"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " as a single-family house; a duplex, triplex or quadraplex; or a unit in a multiunit residential structure in which title to an individual unit is transferred to the unit owner under a condominium or "
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
         "1101.652",
         "1101.562",
         "1101.563",
@@ -3250,17 +2619,6 @@
       "matchedPrefixChars": 129,
       "sourceContinuesWith": "to the transaction; (9) fails within a reasonable time to properly account for or remit m",
       "quote": "receives compensation from more than one party to a real estate transaction without the full knowledge and consent of all parties."
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "1101.351",
-        "1101.355"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 27,
-      "sourceContinuesWith": null,
-      "quote": " as a broker or sales agent licensed under Chapter 1101. A broker may be an individual or a business entity, and § 1101.351(a-1) provides that unless a business entity holds a licence, the entity may "
     },
     {
       "module": "module-07",
@@ -3439,47 +2797,6 @@
     {
       "module": "module-07",
       "candidateSections": [
-        "17.42",
-        "17.45"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "** This is the threshold question and the one students skip. Section 17.45(4): "
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "17.45"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "'Goods' means tangible chattels or real property purchased or leased for use."
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "17.45"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "'Services' means work, labor, or service purchased or leased for use, including services furnished in connection with the sale or repair of goods."
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "17.45"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " — one seeking goods or services for commercial or business use — the category the $25 million ceiling operates on, and § 17.45(12) defines "
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
         "17.45",
         "17.46"
       ],
@@ -3526,16 +2843,6 @@
       "candidateSections": [
         "17.46"
       ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Each is a representation about a characteristic, use or benefit. - **§ 17.46(b)(7)** — "
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "17.46"
-      ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 149,
       "sourceContinuesWith": "; (13) knowingly making false or misleading statements of fact concerning the need for par",
@@ -3568,28 +2875,17 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 289,
-      "sourceContinuesWith": "; (25) using the term \"corporation,\" \"incorporated,\" or an abbreviation of either of those",
+      "sourceContinuesWith": "; (25) using the term 'corporation,' 'incorporated,' or an abbreviation of either of those",
       "quote": "failing to disclose information concerning goods or services which was known at the time of the   transaction if such failure to disclose such information was intended to induce the consumer into a tr"
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "17.45",
-        "17.50"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " do to them.** Section 17.50(b)(1) is worth knowing verbatim. A prevailing consumer may obtain "
     },
     {
       "module": "module-07",
       "candidateSections": [
         "17.45"
       ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
+      "classification": "TRUNCATED_REVIEW",
+      "matchedPrefixChars": 107,
+      "sourceContinuesWith": ". the term does not include exemplary damages or damages for physical pain and mental angu",
       "quote": "'Economic damages' means compensatory damages for pecuniary loss, including costs of repair and replacement,"
     },
     {
@@ -3597,7 +2893,7 @@
       "candidateSections": [
         "17.45"
       ],
-      "classification": "ELLIPSIS_SEGMENT_MISSING",
+      "classification": "ELLIPSIS_ALL_SEGMENTS_PRESENT",
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "'Knowingly' means actual awareness, at the time of the act or practice complained of, of the falsity, deception, or unfairness of the act or practice giving rise to the consumer's claim... but actual "
@@ -3619,7 +2915,7 @@
       ],
       "classification": "TRUNCATED_MID_CLAUSE",
       "matchedPrefixChars": 104,
-      "sourceContinuesWith": "to the extent that the defendant should be treated as having acted intentionally. (14) \"v",
+      "sourceContinuesWith": "to the extent that the defendant should be treated as having acted intentionally. (14) 'v",
       "quote": "from facts showing that a defendant acted with flagrant disregard of prudent and fair business practices."
     },
     {
@@ -3668,32 +2964,6 @@
     {
       "module": "module-07",
       "candidateSections": [
-        "1101.652",
-        "17.46",
-        "17.50",
-        "17.505"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " instead of answering from memory. Disclose what you know about the property, especially anything meeting the "
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
-        "17.45",
-        "17.46",
-        "17.50",
-        "17.49"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " when the unit is nine years old. Which subdivision of    § 17.46(b) fits most directly, and which alternative could also be argued? 3. Under § 17.46(b)(24), what two elements beyond mere silence must"
-    },
-    {
-      "module": "module-07",
-      "candidateSections": [
         "17.50",
         "17.49"
       ],
@@ -3736,28 +3006,6 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "3604",
-        "3601"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " You will still hear practitioners call fair housing matters "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "3601"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " cases. As enacted, § 3604 did not protect sex: the amendments note under § 3604 records that in 1974 Pub. L. 93–383 "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "3601",
         "3607"
       ],
@@ -3769,45 +3017,13 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "3601",
-        "3607"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " September 13, 1988. The § 3601 notes also record that Pub. L. 104–76 (1995) "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " as one uniform list will misread the statute. The seven bases § 3604 names somewhere in its text are race, color, religion, sex, familial status, national origin and handicap. The federal statute say"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3602",
-        "301.003"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " matching Property Code § 301.003(9). So a statute written in terms of "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "3604",
         "3602",
         "301.003"
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 136,
-      "sourceContinuesWith": ". (f) \"discriminatory housing practice\" means an act that is unlawful under section 3604,",
+      "sourceContinuesWith": ". (f) 'discriminatory housing practice' means an act that is unlawful under section 3604,",
       "quote": "includes to lease, to sublease, to let and otherwise to grant for a consideration the right to occupy premises not owned by the occupant,"
     },
     {
@@ -3817,33 +3033,8 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 89,
-      "sourceContinuesWith": "(as defined in section 802 of title 21 ). (i) \"aggrieved person\" includes any person who-",
+      "sourceContinuesWith": "(as defined in section 802 of title 21 ). (i) 'aggrieved person' includes any person who-",
       "quote": "such term does not include current, illegal use of or addiction to a controlled substance."
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "3605",
-        "3606"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " on the same footing as § 3604. **Section 3606** forbids denying a person access to or membership or participation in "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "3605",
-        "3606",
-        "3617"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " — the section that reaches your own trade organizations and your own MLS. **Section 3617** makes it unlawful "
     },
     {
       "module": "module-08",
@@ -4032,26 +3223,6 @@
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
-      "quote": " A closing   clause preserves ordinary closing help: "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "; it says the sale is excepted *only if* it is made without the use "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
       "quote": "rooms or units in dwellings containing living quarters occupied or intended to be occupied by no more than four families living independently of each other, if the owner actually maintains and occupie"
     },
     {
@@ -4067,76 +3238,6 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "301.041",
-        "301.021",
-        "301.022",
-        "301.025"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "), Texas makes it by listing the sections the exemption reaches and leaving the advertising section off the list. Both then repeat the point as a condition: § 301.041(a)(1)(B)(ii) requires the house t"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "301.041",
-        "301.022"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " just as § 3603(b)(1)(B) requires it to be sold without an advertisement "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "301.041",
-        "301.022"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Texas likewise removes the exemption where the owner uses "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "301.041",
-        "301.022"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 301.041(a)(1)(B)(i)) — the state version of the federal no-broker condition, pinned to a Texas licence. Texas caps ownership at "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "301.042"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " among the bases, and which do not? Why does the omission not mean    handicap discrimination in a rental refusal is lawful? 2. Section 3604(e) reaches conduct "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " alone would not? 3. Under § 3604(f)(3)(A) and (B), who bears the expense of a reasonable modification, and what does the    statute say about the expense of a reasonable accommodation? 4. Section 360"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "3604",
         "3602",
         "3607"
@@ -4145,17 +3246,6 @@
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "Nothing in section 3604 of this title (other than subsection (c))."
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3602",
-        "3607"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "? Quote the    clause. Under § 3602(d), is an individual sales agent a "
     },
     {
       "module": "module-08",
@@ -4176,19 +3266,8 @@
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 49,
-      "sourceContinuesWith": ". a reference in this chapter to the \"commission\" means the texas workforce commission. ad",
+      "sourceContinuesWith": ". a reference in this chapter to the 'commission' means the texas workforce commission. ad",
       "quote": "are transferred to the Texas Workforce Commission,"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "301.001",
-        "301.0015"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 35,
-      "sourceContinuesWith": null,
-      "quote": "a reference in this chapter to the 'commission' means the Texas Workforce Commission."
     },
     {
       "module": "module-08",
@@ -4199,17 +3278,6 @@
       "matchedPrefixChars": 162,
       "sourceContinuesWith": ". the term does not include current illegal use or addiction to any drug or illegal or fed",
       "quote": "a mental or physical impairment that substantially limits at least one major life activity, a record of the impairment, or being regarded as having the impairment,"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "301.004",
-        "301.0045"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "'protective hairstyle' includes braids, locks, and twists."
     },
     {
       "module": "module-08",
@@ -4265,19 +3333,6 @@
       "matchedPrefixChars": 66,
       "sourceContinuesWith": "in such an organization, service, or facility because of race, color, religion, sex, disa",
       "quote": "in the terms or conditions of access, membership, or participation."
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3606",
-        "301.041",
-        "301.021",
-        "301.025"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " where § 3606 opens with the spent 1968 commencement date; and Texas omits the federal pronoun "
     },
     {
       "module": "module-08",
@@ -4362,30 +3417,6 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "301.090",
-        "301.093",
-        "301.111",
-        "301.112"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " service of the charge. **If no timely election is made**, § 301.111 provides an administrative hearing governed by Government Code ch. 2001, where the commission may order "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "301.111",
-        "301.112"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " capped at $10,000 where the respondent has been found by commission or court order "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "301.112",
         "301.131"
       ],
@@ -4412,8 +3443,8 @@
         "301.132",
         "301.151"
       ],
-      "classification": "PARTIAL",
-      "matchedPrefixChars": 170,
+      "classification": "ELLIPSIS_ALL_SEGMENTS_PRESENT",
+      "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "not later than the second year after the date of the occurrence or the termination of an alleged discriminatory housing practice or the breach of a conciliation agreement… whichever occurs last,"
     },
@@ -4479,51 +3510,6 @@
       "matchedPrefixChars": 57,
       "sourceContinuesWith": "; the secretary shall refer such complaint to that certified agency before taking any acti",
       "quote": "has been certified by the Secretary under this subsection,"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3610"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " unless the agency fails to commence proceedings "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3610",
-        "301.002"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 3610(f)(3)(A)), taking into account the agency's "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3610",
-        "301.083",
-        "301.002"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "; and the Secretary must revisit each certification "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3610",
-        "301.083",
-        "301.002"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " (§ 3610(f)(5)). Now read Property Code § 301.002(3) again — "
     },
     {
       "module": "module-08",
@@ -4616,30 +3602,6 @@
       "module": "module-08",
       "candidateSections": [
         "3604",
-        "3606",
-        "3607"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " so they are subchapter-wide in form — but read what each of them is *about*: limiting "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "3606",
-        "3607"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " a religious organization or private club owns or operates (§ 3607(a)), and the familial-status provisions "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
         "3602",
         "3605",
         "3617"
@@ -4661,18 +3623,6 @@
       "matchedPrefixChars": 72,
       "sourceContinuesWith": "; (3) makes a material misrepresentation to a potential buyer concerning a significant def",
       "quote": "that is dishonest or in bad faith or that demonstrates untrustworthiness,"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1101.652",
-        "1101.701",
-        "1101.702"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Under Occupations Code § 1101.701 TREC may impose an administrative penalty on a person who violates the chapter; § 1101.702(a) caps it at "
     },
     {
       "module": "module-08",
@@ -4723,26 +3673,6 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "1691"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Its origin was narrower than its present text. The 1974 congressional findings printed in the notes to § 1691 say Congress found a need to make credit available "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1691"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Two years later the list grew: the amendments note records that in 1976 Pub. L. 94–239 "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "1691",
         "301.004",
         "301.026"
@@ -4789,36 +3719,12 @@
       "module": "module-08",
       "candidateSections": [
         "1691",
-        "1691a",
-        "1002"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "** — and the Bureau's regulations under ECOA are Regulation B, 12 C.F.R. part 1002, four sections of which were held and are taught below. Section 1691(c) adds that refusing credit offered under a leg"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1691",
         "1691a"
       ],
       "classification": "TRUNCATED_REVIEW",
       "matchedPrefixChars": 46,
-      "sourceContinuesWith": ". (b) the term \"applicant\" means any person who applies to a creditor directly for an exte",
+      "sourceContinuesWith": ". (b) the term 'applicant' means any person who applies to a creditor directly for an exte",
       "quote": "applicable for the purposes of this subchapter,"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3602",
-        "1691",
-        "1691a"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " credit is a creditor**, which is a wider net than "
     },
     {
       "module": "module-08",
@@ -4856,50 +3762,12 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "1691",
-        "1002.2",
-        "1002",
-        "1002.4"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " means in practice, itemized. Section 1002.2(o) defines **"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1691",
-        "1002.2",
-        "1002",
-        "1002.4"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " for two purposes: for §§ 1002.4(a) and (b), the term "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "1691"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "a refusal to extend credit because the creditor does not offer the type of credit or credit plan requested."
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1691",
-        "1002.2",
-        "1002"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " it, the original refusal is not adverse action. The client who applied for $310,000, was offered $240,000, and *took it* is in a different position from the client who was offered $240,000 and walked"
     },
     {
       "module": "module-08",
@@ -4944,53 +3812,6 @@
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "oral or written statements are spoken or written words, or visual images such as symbols, photographs, or videos."
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1691"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " so the violation can be complete before anyone applies. **The standard is objective and constructive:** what the creditor "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1002.2",
-        "1002",
-        "1002.4"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " be denied or granted on less favourable terms. And the coverage extends to **images**, so marketing photography is inside the rule. Set that beside § 1002.2(l)'s extension of "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1002.2",
-        "1002",
-        "1002.4"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " for the purposes of § 1002.4(a) and (b) to a person who regularly refers applicants to creditors, and the practical instruction writes itself: telling a prospective buyer some version of "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1002",
-        "1002.4",
-        "1002.5",
-        "1002.13"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "; § 1002.4(d)(1) requires written disclosures to be "
     },
     {
       "module": "module-08",
@@ -5118,97 +3939,12 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "3602"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " — the test is what your business *includes*, and § 3602(d) defines "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3602",
-        "3605"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "; the amendments note under § 3605 records that Pub. L. 100–430 "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604",
-        "3605"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " — the same two-stage structure as § 3604(a) and (b), access and terms. **The bases:** seven, "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3604"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " which is the full § 3604(c) list. Unlike § 3604(a), this section does **not** drop handicap and familial status; there is no separate disability subsection here, so the seven sit together. **The verb"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3605"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 34,
-      "sourceContinuesWith": null,
-      "quote": "As used in this section, the term 'residential real estate-related transaction' means any of the following: (1) The making or purchasing of loans or providing other financial assistance— (A) for purch"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3605",
-        "301.026"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "** Brokering is named. A Texas license holder's own services are a residential real estate-related transaction under the federal Act, not merely under Texas law, and § 3605 binds you directly and by n"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1002",
-        "1002.9",
-        "1002.5"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "? 10. Your client's denial letter says only, "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "2902"
       ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
+      "classification": "PARTIAL",
+      "matchedPrefixChars": 124,
       "sourceContinuesWith": null,
       "quote": "the term **'regulated financial institution'** means an insured depository institution (as defined in section 1813 of this title)"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "2902"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "** is defined in § 2902(3) as an application to the appropriate agency, otherwise required by federal law, for a national bank or Federal savings and loan association charter; deposit insurance for a "
     },
     {
       "module": "module-08",
@@ -5217,9 +3953,9 @@
         "1828",
         "1842"
       ],
-      "classification": "PARTIAL",
-      "matchedPrefixChars": 134,
-      "sourceContinuesWith": null,
+      "classification": "TRUNCATED_REVIEW",
+      "matchedPrefixChars": 235,
+      "sourceContinuesWith": ". ( pub. l. 95-128, title viii, §803, oct. 12, 1977, 91 stat. 1147 ; pub. l. 95-630, title",
       "quote": "predominately consists of serving the needs of military personnel who are not located within a defined geographic area may define its 'entire community' to include its entire deposit customer base wit"
     },
     {
@@ -5231,36 +3967,6 @@
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "In connection with its examination of a financial institution, the appropriate Federal financial supervisory agency shall— (1) assess the institution's record of meeting the credit needs of its entire"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "2902"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "** Paragraph (2) is the **consequence**: the agency must "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "2902"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " when it evaluates an application for a deposit facility — the § 2902(3) list of charters, deposit insurance, new branches, relocations, mergers and acquisitions. That is the whole enforcement design "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1843"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Section 2903(c) attaches a CRA condition to a corporate election: a bank holding company's election to become a financial holding company under 12 U.S.C. § 1843 is not effective if the Board finds th"
     },
     {
       "module": "module-08",
@@ -5305,48 +4011,6 @@
     {
       "module": "module-08",
       "candidateSections": [
-        "3604",
-        "3602"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " having an impairment; and **familial status** turns on domicile with someone under 18, extended by the closing sentence to a pregnant person and to one securing legal custody. Section 3603(a)(2) sets"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3607"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "), and rooms or units in a dwelling for no more than four families where the owner "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "3607"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " so no exemption ever reaches discriminatory advertising.** Section 3607(a) exempts religious organizations and genuine private clubs on stated conditions, and § 3607(b) takes housing for older person"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "301.004",
-        "301.0045"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 26,
-      "sourceContinuesWith": null,
-      "quote": " discrimination because of hair texture or a protective hairstyle "
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
         "3605",
         "1691",
         "301.026"
@@ -5355,19 +4019,6 @@
       "matchedPrefixChars": 66,
       "sourceContinuesWith": ". (c) appraisal exemption nothing in this subchapter prohibits a person engaged in the bus",
       "quote": "the selling, brokering, or appraising of residential real property,"
-    },
-    {
-      "module": "module-08",
-      "candidateSections": [
-        "1691",
-        "1002.2",
-        "1002",
-        "1002.4"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " § 1002.2(c) defines adverse action with its counteroffer carve-out, § 1002.4(a) and (b) forbid discrimination and **discouragement** — reaching prospective applicants, images as well as words, and, t"
     },
     {
       "module": "module-08",
@@ -5643,18 +4294,6 @@
       "matchedPrefixChars": 61,
       "sourceContinuesWith": ". (f) the remaining hours may be devoted to other real estate-related topics and courses a",
       "quote": "the ethical requirements of engaging in real estate brokerage,"
-    },
-    {
-      "module": "module-09",
-      "candidateSections": [
-        "92.052",
-        "92.056",
-        "92.0561"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": " Identify the provision that answers this and the tenant's remedy. 3. A third tenant complained to the city code office about a stairwell railing three weeks ago. The    owner now wants that tenant's "
     }
   ],
   "claims": [

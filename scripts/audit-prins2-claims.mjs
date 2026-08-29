@@ -116,8 +116,12 @@ function decodeEntities(s) {
 function normalizeForQuote(s) {
   return s
     .replace(/\*\*|\*|_/g, "")
-    .replace(/[“”„]/g, '"')
-    .replace(/[‘’‚]/g, "'")
+    /* Quote MARKS are folded to one character. A course quoting a statutory definition must
+       switch the inner marks: the statute prints `the term "adverse action" means`, and the
+       course has to render it `the term 'adverse action' means` because it is already inside a
+       quotation. That is a typographic necessity, not a change to the words, and must not read
+       as a non-verbatim quotation. */
+    .replace(/[“”„‘’‚'"]/g, "'")
     .replace(/[—–-]/g, "-")
     .replace(/ /g, " ")
     .replace(/\s+/g, " ")
@@ -374,9 +378,12 @@ for (const file of moduleFiles) {
          in between;
        - a candidate that starts mid-sentence with a lowercase connective ("and", "are", "is")
          is the same artefact. */
-    if (/\n/.test(m[1]) || /^[\s]*(?:and|are|is|was|were|but|or|to|of|the)\b/i.test(m[1]) && /^\s/.test(m[1])) {
-      quotesUnattributable += 1; continue;
-    }
+    /* A real quotation never begins or ends with whitespace. When it appears to, the regex has
+       paired the CLOSING mark of one quotation with the OPENING mark of the next and captured the
+       connective prose between them — the dominant source of phantom misses. Reject those outright
+       rather than trying to guess from the first word. */
+    if (/^\s|\s$/.test(m[1])) { quotesUnattributable += 1; continue; }
+    if (/\n/.test(m[1])) { quotesUnattributable += 1; continue; }
     const near = citeOffsets.filter((c) => Math.abs(c.at - m.index) <= CITE_NEAR);
     if (!near.length) { quotesUnattributable += 1; continue; }
     const needle = normalizeForQuote(quote);
@@ -399,7 +406,11 @@ for (const file of moduleFiles) {
          - NO_MATCH: not found at all. */
       const sources = [...new Set(near.map((c) => c.row.sourceFile))].map((f) => loadSource(f.replace("texas/trec-sources/", ""))).filter(Boolean);
       let cls = "NO_MATCH", longest = 0, tail = null;
-      const segments = needle.split(/\s*(?:\.\s*\.\s*\.|…)\s*/).filter((s) => s.length >= 25);
+      /* An elided quotation is checked segment by segment. The threshold is low because a real
+         elision often leaves a short but distinctive fragment — "a sale of land by . . . the
+         Veterans' Land Board" — and discarding those made a correctly-marked elision look like a
+         fabrication. */
+      const segments = needle.split(/\s*(?:\.\s*\.\s*\.|…|\[\.\.\.\])\s*/).map((x) => x.trim()).filter((x) => x.length >= 12);
       if (segments.length > 1) {
         const allSegs = segments.every((seg) => sources.some((s) => s.norm.includes(seg)));
         cls = allSegs ? "ELLIPSIS_ALL_SEGMENTS_PRESENT" : "ELLIPSIS_SEGMENT_MISSING";
