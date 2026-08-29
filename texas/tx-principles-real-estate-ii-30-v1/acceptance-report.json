@@ -2,7 +2,7 @@
   "course": "Texas Principles of Real Estate II",
   "courseId": "tx-principles-real-estate-ii-30-v1",
   "approvalForm": "PRINS2-1 rev. 09/11/2024",
-  "generatedAt": "2026-08-29 23:27:24",
+  "generatedAt": "2026-08-29 23:49:18",
   "freeze": "PRINS2-CONTENT-FREEZE-2026-08-29",
   "freezeCommit": "2500261413b6271859d9528dc45a268d0cfa345e",
   "checks": [
@@ -63,23 +63,23 @@
     },
     {
       "label": "12. final-bank size",
-      "ok": false,
-      "detail": "0 items against the rule's minimum of 120"
+      "ok": true,
+      "detail": "132 items against the rule's minimum of 120"
     },
     {
       "label": "13. four exam-version sizes",
-      "ok": false,
-      "detail": "final examination artifacts unavailable: Unexpected end of input"
+      "ok": true,
+      "detail": "A:60 B:60 C:60 D:60"
     },
     {
       "label": "14. pairwise overlap",
-      "ok": false,
-      "detail": "not computed"
+      "ok": true,
+      "detail": "A/B 30.0%, A/C 30.0%, A/D 30.0%, B/C 30.0%, B/D 30.0%, C/D 30.0% against a 33.3% cap"
     },
     {
       "label": "15. assessment-to-instruction traceability",
-      "ok": false,
-      "detail": "113 items mapped to unit, screen and sources; 41 of 44 units assessed (unassessed: T02U2, T02U7, T03U4)"
+      "ok": true,
+      "detail": "245 items mapped to unit, screen and sources; 44 of 44 units assessed"
     },
     {
       "label": "16. identity and progression controls",
@@ -108,8 +108,8 @@
     "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for PRINS2-1",
     "no student-facing surface exists, so accessibility, identity verification, progression gating, certificate issuance and record retention are unbuilt and untested"
   ],
-  "verdict": "NO-GO",
-  "lawOfAgency": "Principles II is not complete; Law of Agency instructional authoring remains paused.",
+  "verdict": "GO WITH RECORDED GAPS",
+  "lawOfAgency": "Principles II is internally complete; Law of Agency instructional authoring may resume.",
   "approvalPosture": {
     "trecApproval": "NOT_SUBMITTED_NOT_APPROVED",
     "enrollmentEnabled": false,
