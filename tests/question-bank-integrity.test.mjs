@@ -58,7 +58,7 @@ const banks = await Promise.all(
 );
 
 test("every question bank in the project is found and carries items", () => {
-  assert.equal(bankFiles.length, 25, `expected 25 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
+  assert.equal(bankFiles.length, 26, `expected 26 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
   for (const bank of banks) {
     assert.ok(bank.items.length > 0, `${bank.file} yielded no items — its shape changed and this walk no longer reaches them`);
   }
@@ -171,6 +171,8 @@ test("no authored item claims the course or the school is approved", () => {
 test("the project's authored item count is what the state builds add up to", () => {
   const total = banks.reduce((sum, bank) => sum + bank.items.length, 0);
   /* 2026-08-28: 2464 + 32 — TX-1A added the Texas Principles I formative bank (32 primary items;
-     its 32 replacement questions live inside the items and are deliberately outside this walk). */
-  assert.equal(total, 2496, `the banks now hold ${total} items, not 2496; update this figure deliberately when a bank changes`);
+     its 32 replacement questions live inside the items and are deliberately outside this walk).
+     2026-08-29: 2496 + 44 — Principles II's formative bank, on the same convention: 44 primary
+     items, with their 44 replacements nested inside and outside this walk. */
+  assert.equal(total, 2540, `the banks now hold ${total} items, not 2540; update this figure deliberately when a bank changes`);
 });

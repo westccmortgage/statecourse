@@ -750,6 +750,20 @@ for (const [topic, items] of Object.entries(TOPIC_QUIZZES)) {
 
 export const PRIMARY_COUNT = Object.values(TOPIC_QUIZZES).reduce((n, items) => n + items.length, 0);
 export const REPLACEMENT_COUNT = PRIMARY_COUNT;
-export const ALL_ITEMS = Object.freeze(Object.entries(TOPIC_QUIZZES).flatMap(([topic, items]) => items.map((i) => Object.freeze({ ...i, topic }))));
 
-export default Object.freeze({ TOPIC_QUIZZES, ALL_ITEMS, PRIMARY_COUNT, REPLACEMENT_COUNT });
+/**
+ * The flat view returns the SAME frozen item objects the topic map holds, not copies.
+ *
+ * This matters beyond tidiness. The project-wide bank walk in tests/question-bank-integrity.test.mjs
+ * enumerates every export of every bank and de-duplicates by object identity, so a derived array of
+ * spread copies is counted as a second set of items — it made this bank read as 176 items rather
+ * than 44 and tripped the repeated-prompt check, because every prompt genuinely did appear twice
+ * among the objects walked. A function returning the originals keeps one item one object, and the
+ * topic is recoverable from the unit code the item already carries.
+ */
+export const allItems = () => Object.values(TOPIC_QUIZZES).flat();
+export const topicOf = (item) => String(item.tests).slice(0, 3);
+
+/* No default export: the project-wide bank walk in tests/question-bank-integrity.test.mjs imports
+   every module value, and a default that repeats the named exports would double-count every item.
+   Principles I carries the same note for the same reason. */
