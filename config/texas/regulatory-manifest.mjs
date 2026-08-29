@@ -599,6 +599,41 @@ export const SOURCES = Object.freeze([
     ],
   }),
 
+  /* ── PCF-0 prep: the current contract-forms inventory ── */
+  source({
+    id: "trec-contracts-page-2026-08-29",
+    authority: "Texas Real Estate Commission",
+    title: "Contracts (current TREC contract and addendum forms listing)",
+    documentNumber: null,
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/contracts",
+    localCopy: "texas/trec-sources/articles/trec-contracts-page-2026-08-29.html",
+    sha256: "8d07003825e46a4e0b617363641ac3aa75bd44ff61135aa18c7e0210bfa16d71",
+    readOn: "2026-08-29",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence: "Tier-4 current forms listing, published by the agency that promulgates the forms. Parsed into config/texas/pcf-current-forms-inventory.mjs; captured before any Promulgated Contract Forms content is authored, per the work order's own requirement.",
+    materialClaims: [
+      {
+        id: "form-20-19-current",
+        claim: "As listed on this page, the One to Four Family Residential Contract (Resale) is Form 20-19, effective 07/01/2026 — matching the figure the work order asked to be verified directly.",
+        reliedOnBy: ["config/texas/pcf-current-forms-inventory.mjs"],
+      },
+      {
+        id: "42-forms-captured",
+        claim: "42 forms are listed on this page as of the read date, spanning contracts, addenda, notices and disclosures, several bearing a 2026-07-01 or 2026-05-28 effective date not reflected in the PCF-0 outline (dated 06/20/2016).",
+        reliedOnBy: ["config/texas/pcf-current-forms-inventory.mjs"],
+      },
+    ],
+    conflicts: [
+      {
+        id: "pcf-outline-not-yet-crosswalked",
+        question: "PCF-0's own outline units have not yet been mapped against this current inventory — some outline terminology may name a form by a superseded number or title.",
+        resolution: "OPEN. That crosswalk is Phase 3 work and has not started; nothing in the build currently relies on the PCF-0 outline's own form references.",
+      },
+    ],
+  }),
+
   /* ── consulted, explicitly not authority ── */
   source({
     id: "trec-consolidated-rules-page",
