@@ -186,6 +186,13 @@ export const MORTGAGE_BLOCK_SPECS = {
             label: "Video: Loan Estimate — Page 1 (document overview)",
             duration: "1:59",
           },
+          {
+            src: "/media/document-overview-loan-estimate-page-2.mp4",
+            poster: "/media/document-overview-loan-estimate-page-2-poster.webp",
+            captions: "/media/document-overview-loan-estimate-page-2.vtt",
+            label: "Video: Loan Estimate — Page 2 (closing cost details)",
+            duration: "2:49",
+          },
         ],
         documents: [
           {
