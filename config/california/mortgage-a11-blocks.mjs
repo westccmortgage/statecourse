@@ -1,11 +1,10 @@
 /**
  * GENERATED FILE — Mortgage Assignment 11 learning-block map (CA-BLOCK rollout).
- * Derived from the frozen lesson's own headings by scripts/generate-mortgage-block-maps.mjs;
- * learning objectives and the practice-problem mapping come from the hand-authored spec in
- * mortgage-block-specs.mjs, and the retrieval bank lives in mortgage-retrieval-banks.mjs.
- * Do not edit by hand — regenerate. The delivery layer only: the regulatory layer (sections,
- * applied exercise, knowledge check, remediation, timing, final exam) is untouched, and B7's
- * mastery derives from the existing assignment record exactly as in the Assignment 1 pilot.
+ * Derived from the frozen lesson's own headings by scripts/generate-mortgage-block-maps.mjs; learning
+ * objectives and the practice-problem mapping come from the hand-authored spec, and the retrieval
+ * bank lives in the course's own retrieval-banks module. Do not edit by hand — regenerate. The
+ * delivery layer only: the regulatory layer (sections, applied exercise, knowledge check,
+ * remediation, timing, final exam) is untouched.
  */
 
 const RANGE = (from, to) => Object.freeze({ from, to });
