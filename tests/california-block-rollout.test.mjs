@@ -19,17 +19,18 @@ import { assertCoverage, sliceLessonRange } from "../config/california-block-eng
 import { BLOCK_DELIVERIES, RETRIEVAL_BANKS } from "../config/california/california-block-registry.mjs";
 import { MORTGAGE_BLOCK_SPECS } from "../config/california/mortgage-block-specs.mjs";
 import { PRINCIPLES_BLOCK_SPECS } from "../config/california/principles-block-specs.mjs";
+import { PRACTICE_BLOCK_SPECS } from "../config/california/practice-block-specs.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const COURSE_ID = "ca-mortgage-loan-brokering-lending-45";
 
 /* Every California course this rollout can reach, keyed by its own hand-authored spec module —
    generalized so this suite proves each registered course against the same invariants, exactly
-   like it already does across assignments within one course. Practice joins this map once its own
-   *-block-specs.mjs exists (task: author Practice's block specs and retrieval banks). */
+   like it already does across assignments within one course. */
 const SPECS_BY_COURSE = {
   [COURSE_ID]: MORTGAGE_BLOCK_SPECS,
   "ca-real-estate-principles-45": PRINCIPLES_BLOCK_SPECS,
+  "ca-real-estate-practice-45": PRACTICE_BLOCK_SPECS,
 };
 
 const lessonFor = (delivery) => {

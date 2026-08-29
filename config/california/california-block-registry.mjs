@@ -43,6 +43,13 @@ import { A13_BLOCKS as PRINCIPLES_A13_BLOCKS } from "./principles-a13-blocks.mjs
 import { A14_BLOCKS as PRINCIPLES_A14_BLOCKS } from "./principles-a14-blocks.mjs";
 import { A15_BLOCKS as PRINCIPLES_A15_BLOCKS } from "./principles-a15-blocks.mjs";
 import { PRINCIPLES_RETRIEVAL_BANKS } from "./principles-retrieval-banks.mjs";
+import { A1_BLOCKS as PRACTICE_A1_BLOCKS } from "./practice-a1-blocks.mjs";
+import { A2_BLOCKS as PRACTICE_A2_BLOCKS } from "./practice-a2-blocks.mjs";
+import { A3_BLOCKS as PRACTICE_A3_BLOCKS } from "./practice-a3-blocks.mjs";
+import { A4_BLOCKS as PRACTICE_A4_BLOCKS } from "./practice-a4-blocks.mjs";
+import { A5_BLOCKS as PRACTICE_A5_BLOCKS } from "./practice-a5-blocks.mjs";
+import { A6_BLOCKS as PRACTICE_A6_BLOCKS } from "./practice-a6-blocks.mjs";
+import { PRACTICE_RETRIEVAL_BANKS } from "./practice-retrieval-banks.mjs";
 
 /* Principles and Practice are registered incrementally, exactly like the Mortgage rollout: an
    assignment joins BLOCK_DELIVERIES only once its retrieval bank is authored and this file is
@@ -78,9 +85,15 @@ export const BLOCK_DELIVERIES = Object.freeze([
   PRINCIPLES_A13_BLOCKS,
   PRINCIPLES_A14_BLOCKS,
   PRINCIPLES_A15_BLOCKS,
+  PRACTICE_A1_BLOCKS,
+  PRACTICE_A2_BLOCKS,
+  PRACTICE_A3_BLOCKS,
+  PRACTICE_A4_BLOCKS,
+  PRACTICE_A5_BLOCKS,
+  PRACTICE_A6_BLOCKS,
 ]);
 
-export const RETRIEVAL_BANKS = Object.freeze({ ...A1_RETRIEVAL_BANK, ...MORTGAGE_RETRIEVAL_BANKS, ...PRINCIPLES_RETRIEVAL_BANKS });
+export const RETRIEVAL_BANKS = Object.freeze({ ...A1_RETRIEVAL_BANK, ...MORTGAGE_RETRIEVAL_BANKS, ...PRINCIPLES_RETRIEVAL_BANKS, ...PRACTICE_RETRIEVAL_BANKS });
 
 /* Spaced retrieval stays a built capability with an empty schedule, exactly as in the pilot. */
 export const SPACED_RETRIEVAL = Object.freeze([...A1_SPACED_RETRIEVAL]);
