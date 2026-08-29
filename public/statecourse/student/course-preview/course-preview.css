@@ -8,3 +8,5 @@
 .preview-sample-video figcaption{padding:14px 16px;border-bottom:1px solid #d8d2c4;display:grid;gap:4px}
 .preview-sample-video figcaption span{font-size:14px;color:#5a5648}
 .preview-sample-video video{display:block;width:100%;max-width:100%;background:#000}
+.section-pager{margin-top:0;margin-bottom:28px;padding-top:0;border-top:0;border-bottom:1px solid #d8d2c4;padding-bottom:20px;align-items:center}
+.section-pager-label{font-size:13px;font-weight:700;color:#5a5648;letter-spacing:.02em;text-transform:uppercase}

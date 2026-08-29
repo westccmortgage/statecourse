@@ -1,6 +1,8 @@
 const params=new URLSearchParams(location.search);
 const courseId=params.get("course_id")||"ca-real-estate-principles-45-v1";
 let assignment=Math.min(15,Math.max(1,Number(params.get("assignment")||1)));
+let sections=[];
+let sectionIndex=Math.max(0,Number(params.get("section")||1)-1);
 const validCourses=new Set(["ca-real-estate-principles-45-v1","ca-real-estate-practice-45-v1","ca-mortgage-loan-brokering-lending-45-v1"]);
 const $=(selector)=>document.querySelector(selector);
 const escapeHtml=(value="")=>String(value).replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -41,6 +43,39 @@ function renderMarkdown(markdown){
   flush();return output.join("");
 }
 
+/* The lesson file is one long correspondence-course manuscript — 800+ lines for a typical
+   Mortgage assignment, headings and all, dumped as a single scroll. Split it into its own
+   top-level "## " sections (the same boundary the enrolled course's block screens are built
+   from) so a visitor pages through one section at a time instead of scrolling the whole thing.
+   The very first "## " is the lesson's own title, already shown in the folio heading above —
+   drop it rather than render it twice. */
+function splitSections(markdown){
+  const lines=String(markdown||"").replace(/\r/g,"").split("\n");
+  const marks=[];
+  lines.forEach((line,index)=>{if(/^##\s+\S/.test(line))marks.push(index);});
+  const sections=[];
+  for(let i=1;i<marks.length;i++){
+    const start=marks[i]+1,end=i+1<marks.length?marks[i+1]:lines.length;
+    sections.push({title:lines[marks[i]].replace(/^##\s+/,"").trim(),body:lines.slice(start,end).join("\n")});
+  }
+  return sections.length?sections:[{title:"",body:markdown}];
+}
+
+function renderSection(){
+  if(!sections.length)return;
+  sectionIndex=Math.min(sections.length-1,Math.max(0,sectionIndex));
+  const section=sections[sectionIndex];
+  $("#previewLessonBody").innerHTML=`<h2>${escapeHtml(titleCaseHeading(section.title))}</h2>`+renderMarkdown(section.body);
+  $("#previewSectionLabel").textContent=`Section ${sectionIndex+1} of ${sections.length}`;
+  $("#previewSectionPrevious").disabled=sectionIndex===0;
+  $("#previewSectionNext").disabled=sectionIndex===sections.length-1;
+  const url=new URL(location.href);
+  url.searchParams.set("section",sectionIndex+1);
+  history.replaceState({},"",url);
+  $("#previewLessonBody").scrollIntoView({block:"start",behavior:"instant" in window?"instant":"auto"});
+}
+function goSection(next){sectionIndex=next;renderSection();}
+
 async function load(){
   if(!validCourses.has(courseId)){location.replace("/real-estate/california/pre-license/");return;}
   const message=$("#previewMessage"),shell=$("#previewShell");
@@ -57,8 +92,10 @@ async function load(){
     $("#previewAssignmentNumber").textContent=`Lesson assignment ${String(assignment).padStart(2,"0")} of 15`;
     $("#previewAssignmentTitle").textContent=titleCaseHeading(module.title);
     $("#previewAssignmentLabel").textContent=`Assignment ${String(assignment).padStart(2,"0")}`;
-    $("#previewLessonBody").innerHTML=renderMarkdown(await contentResponse.text());
-    $("#previewSampleVideo").hidden=courseId!=="ca-mortgage-loan-brokering-lending-45-v1";
+    sections=splitSections(await contentResponse.text());
+    if(sectionIndex<0||sectionIndex>=sections.length)sectionIndex=0;
+    renderSection();
+    $("#previewSampleVideo").hidden=!(courseId==="ca-mortgage-loan-brokering-lending-45-v1"&&assignment===9);
     $("#previewAssignmentList").innerHTML=framework.modules.map((item,index)=>`<li><button class="assignment-link" type="button" data-assignment="${index+1}" aria-current="${index+1===assignment}"><span class="number">${String(index+1).padStart(2,"0")}</span><span><strong>${escapeHtml(titleCaseHeading(item.title))}</strong><small>Available for course review</small></span></button></li>`).join("");
     $("#previewPrevious").disabled=assignment===1;
     $("#previewNext").disabled=assignment===15;
@@ -68,13 +105,15 @@ async function load(){
 }
 function closeAssignmentDrawer(restoreFocus=true){$("#previewAssignmentRail").hidden=true;$("#previewDrawerScrim").hidden=true;$("#previewAssignmentToggle").setAttribute("aria-expanded","false");document.body.classList.remove("drawer-open");if(restoreFocus)$("#previewAssignmentToggle").focus();}
 function openAssignmentDrawer(){$("#previewAssignmentRail").hidden=false;$("#previewDrawerScrim").hidden=false;$("#previewAssignmentToggle").setAttribute("aria-expanded","true");document.body.classList.add("drawer-open");$("#previewAssignmentClose").focus();}
-function go(next){closeAssignmentDrawer(false);assignment=Math.min(15,Math.max(1,next));const url=new URL(location.href);url.searchParams.set("course_id",courseId);url.searchParams.set("assignment",assignment);history.pushState({},"",url);window.scrollTo({top:0,behavior:"smooth"});load();}
+function go(next){closeAssignmentDrawer(false);assignment=Math.min(15,Math.max(1,next));sectionIndex=0;const url=new URL(location.href);url.searchParams.set("course_id",courseId);url.searchParams.set("assignment",assignment);url.searchParams.delete("section");history.pushState({},"",url);window.scrollTo({top:0,behavior:"smooth"});load();}
 $("#previewAssignmentToggle").addEventListener("click",openAssignmentDrawer);
 $("#previewAssignmentClose").addEventListener("click",()=>closeAssignmentDrawer());
 $("#previewDrawerScrim").addEventListener("click",()=>closeAssignmentDrawer());
 $("#previewAssignmentList").addEventListener("click",(event)=>{const target=event.target.closest("[data-assignment]");if(target)go(Number(target.dataset.assignment));});
 $("#previewPrevious").addEventListener("click",()=>go(assignment-1));
 $("#previewNext").addEventListener("click",()=>go(assignment+1));
-addEventListener("popstate",()=>{assignment=Math.min(15,Math.max(1,Number(new URLSearchParams(location.search).get("assignment")||1)));load();});
+$("#previewSectionPrevious").addEventListener("click",()=>goSection(sectionIndex-1));
+$("#previewSectionNext").addEventListener("click",()=>goSection(sectionIndex+1));
+addEventListener("popstate",()=>{const query=new URLSearchParams(location.search);const nextAssignment=Math.min(15,Math.max(1,Number(query.get("assignment")||1)));const sameAssignment=nextAssignment===assignment;assignment=nextAssignment;sectionIndex=Math.max(0,Number(query.get("section")||1)-1);if(sameAssignment&&sections.length){renderSection();}else{load();}});
 addEventListener("keydown",(event)=>{if(event.key==="Escape"&&!$("#previewDrawerScrim").hidden)closeAssignmentDrawer();});
 load();
