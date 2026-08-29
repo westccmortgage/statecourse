@@ -187,7 +187,7 @@ the broker." Two requirements, both mandatory, neither satisfiable orally. Secti
 that consent normally lives: a written listing agreement or a written buyer or tenant representation
 agreement "that authorizes a broker to act as an intermediary in a real estate transaction is sufficient to
 establish written consent of the party to the transaction if the written agreement specifies in conspicuous
-bold or underlined print the conduct that is prohibited under Section 1101.651(d)." That is why Texas
+bold or underlined print the conduct that is prohibited under" § 1101.651(d). That is why Texas
 listing and representation agreements carry a conspicuous intermediary paragraph — the consent is captured
 at the front end, before anyone knows whether an in-house match will happen.
 
@@ -316,7 +316,7 @@ whether it arises in an unusual arrangement is a question for the broker and cou
 **Two provisions police all of this.** Section 1101.652(b)(7) reaches a license holder who "fails to make clear
 to all parties to a real estate transaction the party for whom the license holder is acting," and § 1101.652(b)(8)
 one who "receives compensation from more than one party to a real estate transaction without the full knowledge
-and consent of all parties." Whom you serve and who pays you must both be on the table before the money moves.
+and consent of all parties to the transaction." Whom you serve and who pays you must both be on the table before the money moves.
 
 ### Statute reading exercise: intermediary consent and appointment mechanics
 
@@ -528,11 +528,11 @@ agency. Three provisions enforce it. Section 1101.652(b)(13) reaches accepting, 
 commission, rebate, or direct profit on an expenditure made for a principal" — the repair invoice with a quiet markup,
 the vendor kickback. Section 1101.652(b)(16) reaches acting "in a dual capacity as broker and undisclosed principal in
 a real estate transaction" — buying the client's listing, directly or through a controlled entity, without saying the
-buyer is you. Section 1101.652(b)(8) reaches "compensation from more than one party to a real estate transaction
-without the full knowledge and consent of all parties," which is also why § 1101.559(a)(2) requires intermediary
-consent to state the source of expected compensation. Notice what each condemns: not the profit, not the second
-cheque, not the purchase — the *undisclosed* profit, the *unconsented* second cheque, the *undisclosed* self-dealing.
-Disclosure converts a breach into a permissible arrangement.
+buyer is you. Section 1101.652(b)(8) reaches receipt of "compensation from more than one party to a real estate
+transaction without the full knowledge and consent of all parties to the transaction", which is also why
+§ 1101.559(a)(2) requires intermediary consent to state the source of expected compensation. Notice what
+each condemns: not the profit, not the second cheque, not the purchase — the *undisclosed* profit, the
+*unconsented* second cheque, the *undisclosed* self-dealing. Disclosure converts a breach into a permissible arrangement.
 
 **Obedience to lawful instructions.** The agent follows the client's instructions within the scope of the agency —
 lawful ones only. Sections 1101.652(b)(19) and (20) supply the enforcement: it is a ground for discipline to offer to
@@ -630,7 +630,9 @@ is precisely why it reaches so far into this business.
 
 **How it is read.** Section 17.44(a) instructs that the subchapter "shall be liberally construed and applied to promote
 its underlying purposes, which are to protect consumers against false, misleading, and deceptive business practices,
-unconscionable actions, and breaches of warranty," and § 17.44(b) provides that Chapter 27, Property Code, prevails over
+unconscionable actions, and breaches of warranty and to provide efficient and economical procedures to secure such
+protection." Read the whole sentence: the liberal-construction command is tied to both halves of the purpose — consumer
+protection *and* efficient, economical procedure. Section 17.44(b) provides that Chapter 27, Property Code, prevails over
 the subchapter to the extent of any conflict. Section 17.43 makes the remedies cumulative rather than exclusive, while
 cautioning that a violation of another law is not by itself a DTPA violation.
 
@@ -661,11 +663,14 @@ triplex, quadruplex, or condominium or cooperative unit occupied or to be occupi
 definition that matters for the exemptions below.
 
 **What is unlawful.** Section 17.46(a) declares that "False, misleading, or deceptive acts or practices in the conduct of
-any trade or commerce are hereby declared unlawful," subject to action by the consumer protection division of the attorney
-general's office. Section 17.46(b) then supplies the **laundry list**, introduced by "includes, but is not limited to, the
-following acts." That open-ended phrase governs enforcement by the attorney general; for a *private consumer suit* the list
-is closed, because § 17.46(d) provides that for the relief authorized in § 17.50(a)(1) the term "is limited to the acts
-enumerated in specific subdivisions of Subsection (b)." A private plaintiff must point at a numbered item.
+any trade or commerce are hereby declared unlawful and are subject to action by the consumer protection division" under the
+enforcement sections it names. Note how the subsection is built: the declaration of unlawfulness and public enforcement by
+the consumer protection division of the attorney general's office arrive in the same breath, and a private consumer's route
+to relief is § 17.50, not § 17.46(a). Section 17.46(b) then supplies the **laundry list**, introduced by
+"includes, but is not limited to, the following acts." That open-ended phrase governs enforcement by the
+attorney general; for a *private consumer suit* the list is closed, because § 17.46(d) provides that for
+the relief authorized in § 17.50(a)(1) the term "is limited to the acts enumerated in specific
+subdivisions of Subsection (b)." A private plaintiff must point at a numbered item.
 
 The items a license holder is most likely to meet, in the statute's words:
 
@@ -713,9 +718,13 @@ The mental states are the practical heart of DTPA risk management. Section 17.45
 time of the act or practice complained of, of the falsity, deception, or unfairness of the act or practice giving rise to the
 consumer's claim... but actual awareness may be inferred where objective manifestations indicate that a person acted with actual
 awareness." Section 17.45(13): "'Intentionally' means actual awareness of the falsity, deception, or unfairness of the act or
-practice... coupled with the specific intent that the consumer act in detrimental reliance on the falsity or deception or in
-detrimental ignorance of the unfairness," and intention may be inferred from objective manifestations or "from facts showing that
-a defendant acted with flagrant disregard of prudent and fair business practices." Neither state requires a confession.
+practice, or the condition, defect, or failure constituting a breach of warranty giving rise to the consumer's claim, coupled
+with the specific intent that the consumer act in detrimental reliance on the falsity or deception or in detrimental ignorance
+of the unfairness." Intention may be inferred from objective manifestations or "from facts showing that a defendant acted with
+flagrant disregard of prudent and fair business practices to the extent that the defendant should be treated as having acted
+intentionally." That closing measure matters: flagrant disregard is not itself intent, it is evidence from which intent may be
+inferred, and only where it rises to the level at which the defendant should be treated as having acted intentionally. Neither
+state requires a confession.
 
 Section 17.50(b) also authorizes injunctive relief, orders restoring money or property acquired in violation of the subchapter,
 and other relief the court deems proper. Section 17.50(d) provides that "Each consumer who prevails shall be awarded court costs
@@ -759,11 +768,11 @@ opinion; a failure to disclose in violation of § 17.46(b)(24); and an unconscio
 characterized.
 
 Subsection (i) is written for this profession, and every Texas license holder should be able to recite its shape: "Nothing in this
-subchapter shall apply to a claim against a person licensed as a broker or salesperson under Chapter 1101, Occupations Code,
-arising from an act or omission by the person while acting as a broker or salesperson. This exemption does not apply to: (1) an
-express misrepresentation of a material fact that cannot be characterized as advice, judgment, or opinion; (2) a failure to
-disclose information in violation of Section 17.46(b)(24); or (3) an unconscionable action or course of action that cannot be
-characterized as advice, judgment, or opinion."
+subchapter shall apply to a claim against a person licensed as a broker or salesperson under Chapter 1101" of the Occupations Code
+"arising from an act or omission by the person while acting as a broker or salesperson." The subsection then withdraws that
+protection in three cases: "(1) an express misrepresentation of a material fact that cannot be characterized as advice, judgment,
+or opinion"; (2) a failure to disclose information in violation of § 17.46(b)(24); or "(3) an unconscionable action or course of
+action that cannot be characterized as advice, judgment, or opinion."
 
 Understand what that gives you and what it does not. It protects the *advisory* part of the job — the market opinion, the pricing
 judgment, the strategic counsel. It gives you nothing for a flat factual assertion. "I think this will appraise" is advice. "It

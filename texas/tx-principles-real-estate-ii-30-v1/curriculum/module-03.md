@@ -74,8 +74,8 @@ entirely by the regulated is a regulator with a conflict, and the statute answer
 half-public board and explicit anti-overrepresentation instructions.
 
 **The credential categories.** Here is where the federal architecture shows. Section 1103.152 does not
-list the credentials. It says the Board "may … establish certificate and license categories that are
-consistent with the categories recognized by the Appraiser Qualifications Board" and "prescribe
+list the credentials. It says the Board may "establish certificate and license categories that are
+consistent with the categories recognized by the Appraiser Qualifications Board" and may "prescribe
 qualifications for each category that are consistent with the qualifications established for that
 category by the Appraiser Qualifications Board." The **Appraiser Qualifications Board**, defined at
 § 1103.003(4), is the Appraiser Qualifications Board of the Appraisal Foundation — a national private
@@ -107,9 +107,10 @@ for a certificate or license under the chapter, an applicant must:
 
 Notice what subdivisions (2) and (3) do *not* say. They do not say "150 hours" or "1,000 hours" or "two
 years." They say "the number and type of classroom hours … required by the Appraiser Qualifications
-Board" and "the minimum number of hours of experience … over the specified number of calendar years as
-required by the Appraiser Qualifications Board." **Chapter 1103 does not state the hour counts.** Any
-course that tells you Texas statute requires a specific number of qualifying education hours or
+Board" and "the minimum number of hours of experience in performing appraisals over the specified
+number of calendar years as required by the Appraiser Qualifications Board." **Chapter 1103 does not
+state the hour counts.** Any course that tells you Texas statute requires a specific number of
+qualifying education hours or
 experience hours for an appraiser credential is telling you something the statute does not contain.
 The numbers exist, they change, and they live in the Appraiser Qualifications Board's criteria as
 adopted by TALCB rule — which is exactly why the Legislature wrote the statute this way. If you need
@@ -119,12 +120,12 @@ holds neither of those documents, and so this course does not state the numbers.
 The statute does say useful structural things about each leg. On **education**, § 1103.204(b) provides
 that the chapter "does not limit the amount of time in which an applicant … is required to satisfy the
 education requirements" — there is no statutory expiration on qualifying coursework. Subsection (c) is
-directly relevant to you: the Board "shall give an applicant … credit toward fulfilling the requirements
-of Section 1103.202(2) for classroom hours taken in the course of becoming licensed as a real estate
-broker or sales agent or for professional development or continuing education courses taken," provided
-those hours "satisfy the requirements established by the guidelines recognized by the Appraiser
-Qualifications Board." A sales agent who later pursues an appraiser credential does not automatically
-start from zero.
+directly relevant to you: the Board "shall give an applicant for a certificate or license credit"
+toward the § 1103.202(2) education requirement "for classroom hours taken in the course of becoming
+licensed as a real estate broker or sales agent or for professional development or continuing education
+courses taken," provided those hours "satisfy the requirements established by the guidelines recognized
+by the Appraiser Qualifications Board." A sales agent who later pursues an appraiser credential does
+not automatically start from zero.
 
 On **experience**, § 1103.205(a) likewise imposes no time limit for satisfying the requirement.
 Subsection (c) provides that acceptable appraisal experience "includes any one or any combination of
@@ -217,8 +218,8 @@ Open Occupations Code §§ 1103.152, 1103.202, 1103.205 and 1103.255 and read th
 quoted text above.
 
 1. Section 1103.202(2) and (3) each end with the same phrase. What is it, and what does that phrase do
-   to a claim that "Texas law requires X hours of qualifying education for a certified residential
-   appraiser"?
+   to a claim that Texas law requires some specific number of qualifying education hours for a
+   certified residential appraiser?
 2. Section 1103.255 fixes the order of two requirements. Which comes first, and why would a federal
    design that cares about appraisal quality sequence them that way rather than the other way around?
 3. Section 1103.205(d) defines an hour of experience. Give two things a candidate might want to count
@@ -913,10 +914,14 @@ to enter into an agreement when the license holder is unable or does not intend 
 A price assurance made to win a listing agreement the license holder does not believe and does not
 intend to honor is squarely within that description. Section 1101.652(b)(1) reaches a license holder who
 "acts negligently or incompetently," and (b)(2) one who "engages in conduct that is dishonest or in bad
-faith or that demonstrates untrustworthiness." Section 1101.652(b)(6) reaches "a continued and flagrant
-course of misrepresentation." And § 1101.652(a)(6) is aimed directly at the sloppy end of the same
-problem: the Commission may discipline a license holder who "fails to consider market conditions for the
-specific geographic area in which the license holder is providing a service." That subdivision is a
+faith or that demonstrates untrustworthiness." Section 1101.652(b)(6) reaches a license holder who
+"pursues a continued and flagrant course of misrepresentation or makes false promises through an agent
+or sales agent, through advertising, or otherwise." Read the whole subdivision: it takes a *course* of
+conduct rather than a single misstatement, and it catches false promises made indirectly — through a
+sales agent or through advertising — as readily as ones made face to face. And § 1101.652(a)(6) is
+aimed directly at the sloppy end of the same problem: the Commission may discipline a license holder
+who "fails to consider market conditions for the specific geographic area in which the license holder
+is providing a service." That subdivision is a
 statutory instruction to do the analysis — the specific geographic area, not the metro, not the county.
 
 The professional answer is to bring the data and let it speak. Show the grid. Show the bracketing. Show

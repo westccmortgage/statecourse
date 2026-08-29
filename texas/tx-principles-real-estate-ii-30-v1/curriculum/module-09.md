@@ -3,8 +3,9 @@
 ## TREC Topic: Property Management
 
 **Prescribed time: 120 minutes.** This module carries the three units the Commission's PRINS2-1 course
-approval form places under *Property Management*, whose scope note is *"Licensing as a broker or
-salesperson; Ethics of practice as a license holder."*
+approval form places under *Property Management*. The scope note the form prints for that topic, in the
+form's own words rather than any statute's, is *Licensing as a broker or salesperson; Ethics of practice
+as a license holder.*
 
 **Learning objectives.** After completing this module you will be able to: identify the functions a
 Texas property manager performs, state from Occupations Code § 1101.002(1) which management acts are
@@ -430,9 +431,9 @@ dwelling, or of anyone associated with the applicant — and § 301.025(c) provi
 includes refusing a reasonable modification at the disabled person's expense where necessary for full
 enjoyment, and refusing "to make a reasonable accommodation in rules, policies, practices, or services
 if the accommodation may be necessary to afford the person equal opportunity to use and enjoy a
-dwelling." Section 301.003(11) defines "to rent" to include "to lease, sublease, or let, or to grant
-in any other manner, for a consideration, the right to occupy premises not owned by the occupant" —
-the chapter is aimed at what a property manager does all day.
+dwelling." The chapter's definition of **"to rent"** at § 301.003(11) includes "to lease, sublease, or
+let, or to grant in any other manner, for a consideration, the right to occupy premises not owned by
+the occupant" — the chapter is aimed at what a property manager does all day.
 
 The federal provisions are parallel. Under 42 U.S.C. § 3604(a) it is unlawful "to refuse to sell or
 rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or

@@ -124,6 +124,15 @@ function normalizeForQuote(s) {
     .replace(/[“”„‘’‚'"]/g, "'")
     .replace(/[—–-]/g, "-")
     .replace(/ /g, " ")
+    /* Stripping markup injects whitespace where a tag sat. Texas and eCFR sources wrap every
+       cross-reference and fraction in markup, so the stripped text reads "Section 347.002 ," and
+       "one-sixth ( 1/6 )" — spacing that no correct quotation can reproduce. Normalising the space
+       around punctuation on BOTH sides compares the words rather than the markup. */
+    .replace(/\s+([,.;:)\]])/g, "$1")
+    .replace(/([([])\s+/g, "$1")
+    /* Same cause, other side of the bracket: the sources print "Section 1101.651 (d)" because the
+       subdivision sits in its own tag. Collapsing the space applies to both texts alike. */
+    .replace(/\s+\(/g, "(")
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase();
