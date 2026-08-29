@@ -114,7 +114,7 @@ async function main() {
   }
   notes.push(`topic quizzes: ${formative.PRIMARY_COUNT} primaries + ${formative.REPLACEMENT_COUNT} replacements across ${Object.keys(formative.TOPIC_QUIZZES).length} topics`);
   const formativePrompts = [];
-  for (const item of formative.ALL_ITEMS) {
+  for (const item of formative.allItems()) {
     formativePrompts.push({ id: item.id, tok: tokens(item.prompt) });
     formativePrompts.push({ id: `${item.id}R`, tok: tokens(item.replacement.prompt) });
   }
