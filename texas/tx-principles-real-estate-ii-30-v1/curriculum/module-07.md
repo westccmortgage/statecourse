@@ -194,19 +194,17 @@ at the front end, before anyone knows whether an in-house match will happen.
 *How the intermediary must behave.* Section 1101.559(c) states the standard in five words — "An intermediary
 shall act fairly and impartially" — and then answers the question students ask next: appointing an associated
 license holder under § 1101.560 "to communicate with, carry out the instructions of, and provide opinions and
-advice to the parties to whom that associated license holder is appointed is a fair and impartial act." The
-statute pre-approves the arrangement.
+advice to the parties to whom that associated license holder is appointed is a fair and impartial act."
 
 *Appointments.* Section 1101.560(a) provides that a broker who complies with § 1101.559's written consent
 requirements "may appoint: (1) a license holder associated with the broker to communicate with and carry out
 instructions of one party to a real estate transaction; and (2) another license holder associated with the
 broker to communicate with and carry out instructions of any other party to the transaction." Section
-1101.560(b) sets two conditions: the parties' written consent must authorize the broker to make the
-appointment, and "the broker provides written notice of the appointment to all parties involved in the real
-estate transaction." Then the payoff, in § 1101.560(c): "A license holder appointed under this section may
-provide opinions and advice during negotiations to the party to whom the license holder is appointed."
-Without appointments the brokerage is limited to fair and impartial facilitation; with them, each side gets
-someone who may actually counsel them.
+1101.560(b) sets two conditions: the parties' written consent must authorize the appointment, and "the broker
+provides written notice of the appointment to all parties involved in the real estate transaction." Then the
+payoff, in § 1101.560(c): "A license holder appointed under this section may provide opinions and advice
+during negotiations to the party to whom the license holder is appointed." Without appointments the brokerage
+is limited to fair and impartial facilitation; with them, each side gets someone who may actually counsel them.
 
 *What an intermediary may never do.* Section 1101.651(d) binds the broker and any broker or sales agent
 appointed under § 1101.560. Such a person may not:
@@ -226,14 +224,13 @@ appointed under § 1101.560. Such a person may not:
 Notice the shape. Permission to disclose price flexibility runs only from the party whose flexibility it is,
 and only in a *separate writing* — a clause buried in the listing will not do. And one carve-out runs the
 other way: confidentiality never covers information that "materially relates to the condition of the
-property." A buyer's confidence about how high they will go is protected. A seller's confidence about a
+property." A buyer's confidence about how high they will go is protected; a seller's confidence about a
 foundation problem is not.
 
 *The intermediary is not optional once you hold both sides.* Section 1101.561(b): "A broker must agree to act
 as an intermediary under this subchapter if the broker agrees to represent in a transaction: (1) a buyer or
-tenant; and (2) a seller or landlord." And § 1101.561(a) resolves the conflict-of-laws problem: "The duties
-of a license holder acting as an intermediary under this subchapter supersede the duties of a license holder
-established under any other law, including common law."
+tenant; and (2) a seller or landlord." And § 1101.561(a) resolves the conflict-of-laws problem: intermediary
+duties "supersede the duties of a license holder established under any other law, including common law."
 
 **Position four: showing property without representing anyone.** Effective January 1, 2026, § 1101.562(a)
 permits a broker to "show real property available for sale or lease to a party without representing the party
@@ -262,17 +259,17 @@ party to a real estate transaction that the broker represents; (3) describes the
 has to a party to a real estate transaction that the broker does not represent; and (4) provides the name,
 license number, and contact information for the license holder and the license holder's supervisor and broker,
 if applicable." Under subsection (b-2) the Commission by rule prescribes the text required by (b-1)(1) and (2)
-and establishes the delivery methods, so exact wording and delivery are matters of Commission rule rather than
-of the statute. TREC's article on the 2026 changes states that the changes effective January 1, 2026 to the
-IABS reflect the new notice requirements.
+and the delivery methods, so exact wording and delivery are matters of Commission rule rather than of the
+statute; TREC's article states that the changes effective January 1, 2026 to the IABS reflect the new notice
+requirements.
 
 Section 1101.558(c) excuses the (b-1) notice in three situations: "(1) the proposed transaction is for a
 residential lease for less than one year and a sale is not being considered; (2) the license holder meets with
 a party who the license holder knows is represented by another license holder; or (3) the communication occurs
 at a property that is held open for any prospective buyer or tenant and the communication concerns that
 property." The third is the open-house exception, and it is narrower than its reputation: it excuses the
-*notice*, at that property, about that property. It excuses nothing else — and after January 1, 2026 something
-else is required.
+*notice*, at that property, about that property, and nothing else — and after January 1, 2026 something else is
+required.
 
 **The § 1101.563 written agreement, effective January 1, 2026.** Section 1101.563(a) defines "residential real
 property" as a single-family house; a duplex, triplex or quadraplex; or a unit in a multiunit residential
@@ -299,30 +296,27 @@ that a license holder "fails to enter into a written agreement with a prospectiv
 
 **The open house, worked through.** TREC's article on the 2026 changes gives two scenarios showing how
 § 1101.558(c)(3), § 1101.562 and § 1101.563 interact. Where the agent hosting the open house is a member of the
-listing broker's office, the article states the agent does not need to provide the IABS or enter into a written
-agreement with prospective buyers, but must disclose that he or she represents the owner, orally or in writing,
-as § 1101.558(b) requires. Where the hosting agent is not a member of the listing broker's office and does not
+listing broker's office, the article states the agent need not provide the IABS or enter into a written agreement
+with prospective buyers, but must disclose that he or she represents the owner, orally or in writing, as
+§ 1101.558(b) requires. Where the hosting agent is not a member of the listing broker's office and does not
 represent the seller — a showing agent, for instance — the article states the agent must provide the IABS and
-enter into a written agreement as described by § 1101.563(c) with prospective buyers, and that this is so even
-when a prospective buyer already has a written representation agreement with another broker. The article adds
-that by law both must happen before the showing, so ideally the agreement is signed before the buyer enters the
-property, and states the uncomfortable consequence: if a buyer refuses to sign, the agent cannot show the
-property, and license holders can face disciplinary action for failing to enter into the agreement. Whether a
-broker permits its agents to host open houses for another brokerage is, the article notes, a matter of brokerage
-policy rather than a statutory rule.
+enter into a written agreement as described by § 1101.563(c) with prospective buyers, even when a prospective
+buyer already has a written representation agreement with another broker. Both must happen before the showing,
+so ideally the agreement is signed before the buyer enters the property. The article states the uncomfortable
+consequence plainly: if a buyer refuses to sign, the agent cannot show the property, and license holders can face
+disciplinary action for failing to enter into the agreement.
 
 **Subagency, handled accurately.** TREC's article states that two references to subagency were removed from
 TRELA, so the circumstances in which subagency could arise in practice are limited; it also states that subagency
 has not been eliminated generally as a legal concept, and advises a license holder who thinks subagency may be
 involved to contact the broker or an attorney. Both halves matter. Do not tell a Texas consumer that subagency
-"no longer exists." Say that TRELA no longer references it, that its practical field has narrowed, and that
+"no longer exists" — say that TRELA no longer references it, that its practical field has narrowed, and that
 whether it arises in an unusual arrangement is a question for the broker and counsel.
 
 **Two provisions police all of this.** Section 1101.652(b)(7) reaches a license holder who "fails to make clear
 to all parties to a real estate transaction the party for whom the license holder is acting," and § 1101.652(b)(8)
 one who "receives compensation from more than one party to a real estate transaction without the full knowledge
-and consent of all parties." Read with § 1101.559(a)(2), they express a single Texas instinct: whom you serve and
-who pays you must both be on the table before the money moves.
+and consent of all parties." Whom you serve and who pays you must both be on the table before the money moves.
 
 ### Statute reading exercise: intermediary consent and appointment mechanics
 
@@ -366,15 +360,14 @@ what the law regulates. This unit describes the legal architecture and the way t
 labels which is which.
 
 **The broker is the licensed enterprise.** Section 1101.002(4) defines "license holder" as a broker or sales
-agent licensed under Chapter 1101. A broker may be an individual or a business entity. Section 1101.351(a-1)
+agent licensed under Chapter 1101. A broker may be an individual or a business entity, and § 1101.351(a-1)
 provides that unless a business entity holds a licence, the entity may not act as a broker. Section 1101.355(a)
 adds two eligibility requirements for an entity: it must "designate one of its managing officers as its broker
 for purposes of this chapter," and it must "provide proof that the entity maintains errors and omissions
 insurance with a minimum annual limit of $1 million for each occurrence if the designated broker owns less than
 10 percent of the business entity." Subsection (b) bars an entity from acting as a broker unless its designated
 broker is a licensed individual broker in active status and good standing according to Commission records, and
-subsection (b-1) lets the Commission weigh, in judging good standing, the disciplinary history of the broker or
-of entities the broker serves or served as designated broker, and amounts owed to the Commission.
+(b-1) lets the Commission weigh disciplinary history and amounts owed in judging good standing.
 
 Section 1101.355(c) requires a business entity that receives compensation on behalf of a license holder to be
 licensed as a broker, but § 1101.355(d) and (e) create a narrow registration alternative for a wholly
@@ -440,16 +433,15 @@ Texas real estate is signed, the license holder advise each buyer in writing to 
 attorney of the buyer's choosing or be provided with or obtain a title insurance policy — a failure independently
 disciplinable under § 1101.652(b)(29).
 
-**Compensation: how it flows, and what you must say about it.** Three rules control the flow. Section 1101.651(a):
-a licensed broker may not pay a commission to or otherwise compensate a person directly or indirectly for
-performing an act of a broker unless the person is a license holder, or a broker licensed in another state who
-conducts none of the negotiations in Texas. Section 1101.651(b): a sales agent may not accept compensation for a
-real estate transaction from anyone other than the sponsoring broker, or the broker who was sponsoring the agent
-when the compensation was earned. Section 1101.651(c): a sales agent may not pay a commission to a person except
-through the sponsoring broker. Section 1101.652(b)(11) makes paying or dividing a fee with someone who is not a
-license holder or a broker or sales agent licensed in another state a ground for discipline. The effect is a closed
-loop: brokerage money moves broker-to-broker and broker-to-sponsored-agent, and a grateful buyer cannot hand a
-cheque directly to the sales agent who found the house.
+**Compensation: how it flows, and what you must say about it.** Three rules control the flow. Under § 1101.651(a) a
+licensed broker may not pay a commission to or otherwise compensate a person directly or indirectly for performing
+an act of a broker unless the person is a license holder, or a broker licensed in another state who conducts none of
+the negotiations in Texas. Under § 1101.651(b) a sales agent may not accept compensation for a real estate
+transaction from anyone other than the sponsoring broker, or the broker who was sponsoring the agent when the
+compensation was earned; under (c) a sales agent may not pay a commission to anyone except through the sponsoring
+broker. Section 1101.652(b)(11) makes paying or dividing a fee with someone who is not a license holder or a broker
+or sales agent licensed in another state a ground for discipline. The effect is a closed loop: a grateful buyer
+cannot hand a cheque directly to the sales agent who found the house.
 
 Now the sentence that must be said out loud. **Broker compensation is not set by law and is fully negotiable.**
 That is a statutory disclosure, not a slogan: § 1101.563(c)(2) requires the written agreement with a prospective
@@ -670,11 +662,10 @@ definition that matters for the exemptions below.
 
 **What is unlawful.** Section 17.46(a) declares that "False, misleading, or deceptive acts or practices in the conduct of
 any trade or commerce are hereby declared unlawful," subject to action by the consumer protection division of the attorney
-general's office under §§ 17.47, 17.58, 17.60 and 17.61. Section 17.46(b) then supplies the **laundry list**, introduced by
-the words "includes, but is not limited to, the following acts." That open-ended phrase governs enforcement by the attorney
-general. For a *private consumer suit* the list is closed: § 17.46(d) provides that for the relief authorized in
-§ 17.50(a)(1), the term "is limited to the acts enumerated in specific subdivisions of Subsection (b)." A private plaintiff
-must point at a numbered item.
+general's office. Section 17.46(b) then supplies the **laundry list**, introduced by "includes, but is not limited to, the
+following acts." That open-ended phrase governs enforcement by the attorney general; for a *private consumer suit* the list
+is closed, because § 17.46(d) provides that for the relief authorized in § 17.50(a)(1) the term "is limited to the acts
+enumerated in specific subdivisions of Subsection (b)." A private plaintiff must point at a numbered item.
 
 The items a license holder is most likely to meet, in the statute's words:
 
@@ -789,18 +780,18 @@ concerned.
 
 **The practical lesson.** Your Texas buyer or seller is almost certainly a "consumer" under § 17.45(4), because a house is "goods"
 under § 17.45(1) and brokerage is "services" under § 17.45(2). The sentence that hurts you is the confident factual one: it lands
-in § 17.46(b)(5) or (7), it falls outside the § 17.49(i) exemption because it cannot be characterized as advice or opinion, and
-under § 17.50(a)(1) it need only be a producing cause of economic damages and have been relied on. If the trier of fact concludes
-you had actual awareness of its falsity — inferable under § 17.45(9) from objective manifestations — mental anguish damages and up
-to treble economic damages come into play under § 17.50(b)(1), along with the consumer's mandatory attorneys' fees under
-§ 17.50(d). And § 1101.801 reminds you that none of this is instead of a Commission proceeding.
+in § 17.46(b)(5) or (7), falls outside the § 17.49(i) exemption because it cannot be characterized as advice or opinion, and under
+§ 17.50(a)(1) need only be a producing cause of economic damages and have been relied on. If the trier of fact concludes you had
+actual awareness of its falsity — inferable under § 17.45(9) from objective manifestations — mental anguish damages and up to
+treble economic damages come into play under § 17.50(b)(1), along with mandatory attorneys' fees under § 17.50(d). And § 1101.801
+reminds you that none of this is instead of a Commission proceeding.
 
 The defensive habits follow from the statute rather than from folklore. Attribute every fact to its source — the survey, the
-appraisal district record, the inspection report, the seller's disclosure — and say the source out loud, in writing, which is also
-the posture § 17.506(a) rewards. Say "I don't know; let's verify" instead of answering from memory. Disclose what you know about
-the property, particularly anything meeting the "known at the time" element of § 17.46(b)(24), remembering that Chapter 1101
-independently requires disclosure of known significant defects under § 1101.652(b)(3) and (4). And when a demand letter arrives,
-read § 17.505 and § 17.5052 before responding: the 60-day window is the cheapest moment the dispute will ever have.
+appraisal district record, the inspection report, the seller's disclosure — in writing, which is also the posture § 17.506(a)
+rewards. Say "I don't know; let's verify" instead of answering from memory. Disclose what you know about the property, especially
+anything meeting the "known at the time" element of § 17.46(b)(24), remembering that § 1101.652(b)(3) and (4) independently
+require disclosure of known significant defects. And when a demand letter arrives, read § 17.505 before responding: the 60-day
+window is the cheapest moment the dispute will ever have.
 
 ### Statute reading exercise: working the § 17.46(b) laundry list
 
