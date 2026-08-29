@@ -180,20 +180,17 @@ not for an outside firm engaged to manage. A management company retained under a
 percentage of collections, is not the owner's employee in any ordinary sense; it is a separate person
 performing listed acts for another person for compensation.
 
-The remaining subdivisions matter less often but you should know they exist: (1) an attorney licensed
-in this state; (2) an attorney-in-fact authorized under a power of attorney to conduct not more than
-three real estate transactions annually; (3) a public official engaged in official duties; (4) a
-licensed auctioneer conducting a real estate auction who performs no other act of a broker; (5) a
-person conducting a real estate transaction under a court order or the authority of a will or written
-trust instrument; (6) a person employed by an owner in the sale of structures the owner erected in the
-course of the owner's business; (9), which excludes transactions in minerals, mining, quarries,
-standing timber, other energy sources, cemetery lots, "the lease or management of a hotel or motel,"
-and sales under a power of sale in a deed of trust; (10) and (11), which cover general partners,
-managers, managing members and certain employees leasing or transferring real estate of a limited
-partnership or limited liability company; and (12), a person conducting a real estate transaction on
-behalf of a commercial signage entity. Note (9)(C) in particular: hotel and motel management is
-outside the chapter, which is why hospitality operations are staffed and regulated on a wholly
-different footing from apartments.
+The remaining subdivisions matter less often but you should know they exist: (1) a Texas-licensed
+attorney; (2) an attorney-in-fact authorized under a power of attorney to conduct not more than three
+real estate transactions annually; (3) a public official engaged in official duties; (4) a licensed
+auctioneer who performs no other act of a broker; (5) a person acting under a court order or the
+authority of a will or written trust instrument; (6) a person employed by an owner in the sale of
+structures the owner erected in the course of the owner's business; (9), which excludes minerals,
+mining, quarries, standing timber, other energy sources, cemetery lots, "the lease or management of a
+hotel or motel," and sales under a power of sale in a deed of trust; (10) and (11), covering general
+partners, managers, managing members and certain employees acting for a limited partnership or limited
+liability company; and (12), a person acting on behalf of a commercial signage entity. Note (9)(C) in
+particular: hotel and motel management is outside the chapter altogether.
 
 Put the pieces together and the Texas rule is workable. Managing another person's property for
 compensation is generally brokerage activity requiring a license, because leasing, negotiating leases,
@@ -241,14 +238,13 @@ Subdivision (31) says do not pay it out early. Subdivision (9) says account for 
 person it belongs to within a reasonable time.
 
 The practical failures are mundane. A manager who deposits owner rent into the firm's operating
-account "temporarily" because the trust account signature card has not been updated has commingled. A
-manager who leaves a cushion of the firm's own money in the trust account to prevent overdrafts has
-commingled from the other direction. A manager who quietly funds this month's payroll out of security
-deposits held for tenants has both commingled and disbursed early. A manager who is four months behind
-in owner statements and remittances because the bookkeeper left has failed to account or remit within
-a reasonable time. None of these requires bad intent. Read the four provisions again and notice that
-only some of them are about dishonesty at all; the rest are about *administration*, and administration
-is where careless managers lose licenses.
+account "temporarily" because the trust account signature card has not been updated has commingled. So
+has a manager who leaves a cushion of the firm's own money in the trust account to prevent overdrafts.
+A manager who funds this month's payroll out of security deposits has both commingled and disbursed
+early. A manager four months behind in owner statements because the bookkeeper left has failed to
+account or remit within a reasonable time. None of these requires bad intent: only some of these
+provisions are about dishonesty at all, and the rest are about *administration*, which is where
+careless managers lose licenses.
 
 Two neighboring provisions belong in the same discussion. Section 1101.652(b)(13) reaches a license
 holder who "accepts, receives, or charges an undisclosed commission, rebate, or direct profit on an
@@ -320,35 +316,33 @@ management agreement is treated as a party to that lease.
 termination date that is not subject to prior notice in a contract, **other than a contract to perform
 property management services**, in which the license holder agrees to perform services for which a
 license is required under this chapter." A listing agreement must state a definite termination date
-that is not subject to prior notice. A property management contract is expressly carved out of that
+that is not subject to prior notice; a property management contract is expressly carved out of that
 requirement. The reason is structural: management is an open-ended operating relationship, not a
-finite assignment to produce one transaction, and the parties typically want it to continue until
-someone gives notice. The carve-out permits a management agreement with an evergreen term ending on
-notice. It does not require one, and it does not relieve the agreement of the need to say clearly how
-it ends, who may end it, what notice is required, and what happens to funds, files, keys and pending
-leases on termination. A common error is to read the carve-out as saying that management agreements
-need no termination provision at all. It says only that the *statutory definite-date requirement* does
-not apply to them.
+finite assignment to produce one transaction. The carve-out therefore permits an evergreen term ending
+on notice. It does not require one, and it does not relieve the agreement of the need to say how it
+ends, who may end it, what notice is required, and what happens to funds, files, keys and pending
+leases on termination. A common error is to read the carve-out as saying management agreements need no
+termination provision at all. It says only that the *statutory definite-date requirement* does not
+apply to them.
 
-**Compensation.** How the manager is paid — commonly a percentage of collected income, or a fixed
-monthly amount, or a combination, together with separate leasing or renewal fees. Whether the fee is
-earned on rent *billed* or rent *collected* is not a small distinction; on collected income the
-manager shares the pain of a delinquency. State whether the manager may retain late fees, application
-fees or vendor discounts. Section 1101.652(b)(13) makes an undisclosed direct profit on an expenditure
-made for a principal a ground for discipline, so anything of that kind must be in the agreement and
-visible.
+**Compensation.** How the manager is paid — commonly a percentage of collected income, a fixed monthly
+amount, or a combination, plus separate leasing or renewal fees. Whether the fee is earned on rent
+*billed* or rent *collected* is not a small distinction; on collected income the manager shares the
+pain of a delinquency. State whether the manager may retain late fees, application fees or vendor
+discounts, because § 1101.652(b)(13) makes an undisclosed direct profit on an expenditure made for a
+principal a ground for discipline.
 
-**Owner obligations.** Funding an operating reserve, paying taxes and insurance premiums when the
-manager does not, responding to approval requests within a stated time, and disclosing known
-conditions of the property. A manager who cannot get the owner to fund a repair still faces the ch. 92
-repair duty running against the owner through the manager's office, which is why funding mechanics
-belong in the contract.
+**Owner obligations.** Funding an operating reserve, paying taxes and insurance premiums the manager
+does not, responding to approval requests within a stated time, and disclosing known conditions of the
+property. A manager who cannot get the owner to fund a repair still faces the ch. 92 repair duty
+running against the owner through the manager's office, which is why funding mechanics belong in the
+contract.
 
 **Indemnification and insurance.** The manager acting within authority ordinarily expects to be
 indemnified by the owner for claims arising from the property, with a carve-out for the manager's own
 negligence or misconduct; the owner ordinarily expects to be named on the property's liability policy
-and to see evidence of the manager's own coverage. What the parties agree here is contract, not
-statute, and this course states no required allocation.
+and to see evidence of the manager's coverage. What the parties agree here is contract, not statute,
+and this course states no required allocation.
 
 **Accounting and funds.** Which accounts will exist, who signs on them, when statements are rendered,
 when funds are remitted, and how security deposits are held. Write these terms so that compliance with
@@ -364,21 +358,15 @@ The manager's financial reporting rests on one arithmetic chain, and every serio
 a rental property uses it.
 
 **Gross potential rent (GPR)** is what the property would produce if every unit were leased at market
-for the entire period, with nothing vacant and nothing uncollected. It is a deliberately
-counterfactual number; its job is to be a ceiling.
-
-**Vacancy and collection loss** is what GPR never becomes: rent lost to empty units, to the days
-between one tenant leaving and the next arriving, to concessions, and to amounts billed but never
-paid.
-
-**Effective gross income (EGI)** is gross potential rent minus vacancy and collection loss — the money
-the property actually brings in.
-
-**Operating expenses** are the recurring costs of running the property: property taxes, insurance,
-common-area utilities, repairs and maintenance, landscaping and pest control, on-site payroll,
-make-ready and turnover costs, administrative and marketing costs, and the management fee itself.
-
-**Net operating income (NOI)** is effective gross income minus operating expenses.
+for the entire period, with nothing vacant and nothing uncollected — a deliberately counterfactual
+ceiling. **Vacancy and collection loss** is what GPR never becomes: rent lost to empty units, to the
+days between one tenant leaving and the next arriving, to concessions, and to amounts billed but never
+paid. **Effective gross income (EGI)** is gross potential rent minus vacancy and collection loss — the
+money the property actually brings in. **Operating expenses** are the recurring costs of running the
+property: property taxes, insurance, common-area utilities, repairs and maintenance, landscaping and
+pest control, on-site payroll, make-ready and turnover costs, administrative and marketing costs, and
+the management fee itself. **Net operating income (NOI)** is effective gross income minus operating
+expenses.
 
 Two exclusions define NOI and are the most common source of error. Operating expenses **exclude debt
 service** — mortgage principal and interest — because NOI measures what the property earns, not how a
@@ -386,7 +374,7 @@ particular owner financed it. Two identical buildings, one owned free and clear 
 mortgaged, have the same NOI. Operating expenses also **exclude capital expenditures**: a new roof, a
 repaved parking lot, a full HVAC replacement. Those are capital items funded from reserves, not
 operating costs of the period. Depreciation, an accounting allocation rather than a cash cost, is
-likewise not an operating expense for this purpose.
+likewise not an operating expense here.
 
 **A worked example — illustration only.** A 24-unit apartment property in a Texas suburb. Market rent
 is $1,250 per unit per month. Vacancy and collection loss is estimated at 7 percent. The management
@@ -613,46 +601,41 @@ point into the industry.
 individually negotiated, and the rent structures are more complex: base rent plus a share of operating
 costs, sometimes plus a percentage of the tenant's sales in retail. Commercial management demands
 lease abstraction and reconciliation skills that residential management does not, and it operates
-outside Property Code ch. 92 entirely, since that chapter governs residential tenancies. Property Code
-ch. 91 supplies some rules applicable to landlords and tenants generally, including § 91.001 on
-notice terminating a month-to-month tenancy, § 91.005's rule that "during the term of a lease, the
-tenant may not rent the leasehold to any other person without the prior consent of the landlord,"
-§ 91.004's provision that a landlord who fails to comply with the lease is liable to a
-non-defaulting tenant for resulting damages and that the tenant has a lien on the landlord's nonexempt
-property in the tenant's possession and on rent due, and § 91.006's non-waivable duty of a landlord to
-mitigate damages when a tenant abandons the premises in violation of the lease.
+outside Property Code ch. 92, which governs residential tenancies. Property Code ch. 91 supplies rules
+applicable to landlords and tenants generally: § 91.001 on notice terminating a month-to-month
+tenancy; § 91.005, under which "during the term of a lease, the tenant may not rent the leasehold to
+any other person without the prior consent of the landlord"; § 91.004, making a landlord who fails to
+comply with the lease liable to a non-defaulting tenant for resulting damages and giving that tenant a
+lien on the landlord's nonexempt property in the tenant's possession and on rent due; and § 91.006's
+non-waivable duty to mitigate damages when a tenant abandons the premises in violation of the lease.
 
-**Community associations.** Managing the common property and enforcing the governing documents of a
-homeowners association or condominium regime. The manager's client is a volunteer board, the
-"customers" are owner-members rather than tenants, and the political dimension is unavoidable.
+**Community associations.** Managing common property and enforcing the governing documents of a
+homeowners association or condominium regime. The client is a volunteer board, the "customers" are
+owner-members rather than tenants, and the political dimension is unavoidable.
 
-**Institutional and asset management.** Above the property manager sits the asset manager, who is
-concerned less with operations than with the investment: hold or sell, refinance or not, reposition or
-maintain. Property management is the usual path into that role, because you cannot manage an asset you
-do not understand operationally.
+**Institutional and asset management.** Above the property manager sits the asset manager, concerned
+less with operations than with the investment: hold or sell, refinance or not, reposition or maintain.
+Property management is the usual path into that role.
 
 **Designations and trade organizations — practice, not law**
 
-The management industry supports national trade associations and professional institutes serving
-apartment management, commercial and industrial management, single-family residential management and
-community association management, and these bodies confer designations earned through coursework,
-documented experience and examination. Employers sometimes prefer or require them, and clients
-sometimes ask about them.
+The industry supports national trade associations and professional institutes serving apartment,
+commercial and industrial, single-family residential and community association management, and these
+bodies confer designations earned through coursework, documented experience and examination. Employers
+sometimes prefer them; clients sometimes ask about them.
 
 State the legal position exactly, because students misremember it constantly. **No Texas statute read
 for this course requires a property manager to hold any professional designation or to belong to any
 trade organization.** Occupations Code § 1101.351 requires a *license* — a broker or sales agent
-license — for a person performing the acts of a broker, and § 1101.002(4) defines a license holder as
-a broker or sales agent licensed under the chapter. That is the legal credential. Designations are
-private, voluntary and contractual: they are conferred by private organizations under their own rules,
-they can be revoked by those organizations under those rules, and they confer no authority to do
-anything a license holder could not otherwise do and no exemption from anything a license holder must
-otherwise do. This module cites nothing for the existence or value of any designation, because that is
-a matter of professional practice and not of Texas law, and it names no particular organization.
-
-The practical point stands on its own footing. Structured education and peer contact make managers
-better at a job where the failures are expensive and often invisible until they are catastrophic. That
-is a good reason to pursue a designation. "It is required" is not.
+license — of a person performing the acts of a broker, and § 1101.002(4) defines a license holder as a
+broker or sales agent licensed under the chapter. That is the legal credential. Designations are
+private, voluntary and contractual: conferred by private organizations under their own rules,
+revocable under those same rules, and conferring no authority a license holder does not already have
+and no exemption from anything a license holder must do. This module cites nothing for the existence
+or value of any designation, because that is professional practice and not Texas law, and it names no
+particular organization. Structured education and peer contact do make managers better at a job whose
+failures are expensive and often invisible until they are catastrophic. That is a good reason to
+pursue a designation. "It is required" is not.
 
 **Ethics: standing between the owner and the tenant**
 
