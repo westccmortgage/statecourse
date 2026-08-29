@@ -366,22 +366,30 @@ test("25. mobile has no horizontal scrolling by construction", () => {
   assert.ok(measure && Number(measure[1]) >= 700 && Number(measure[1]) <= 820, "readable measure outside the 700–820px band");
 });
 
-/* ── the rollout boundary: exactly the registered assignments, Mortgage only ─────────────── */
+/* ── the rollout boundary: exactly the registered assignments, no course registered twice ── */
 
-test("block delivery exists for exactly the registered mortgage assignments — no other course converted", async () => {
+/* Extending block delivery beyond Mortgage was owner-authorized (the request to finish every
+   California course on the block model, video insertion deferred to a later pass) — this test no
+   longer asserts Mortgage exclusivity, but it still proves the registry contains no more and no
+   less than what was actually registered, per course, and that an unregistered assignment always
+   reports hasBlockDelivery() === false regardless of course. */
+test("block delivery exists for exactly the registered assignments of each course — nothing silently unregistered or duplicated", async () => {
   const { BLOCK_DELIVERIES } = await import("../config/california/california-block-registry.mjs");
   const registered = new Set(BLOCK_DELIVERIES.map((delivery) => `${delivery.courseId}:${delivery.assignmentId}`));
-  assert.ok(registered.has(`${COURSE_ID}:assignment-01`), "the pilot assignment must stay registered");
-  for (let index = 1; index <= 15; index += 1) {
-    const assignmentId = "assignment-" + String(index).padStart(2, "0");
-    assert.equal(hasBlockDelivery(COURSE_ID, assignmentId), registered.has(`${COURSE_ID}:${assignmentId}`));
-  }
+  assert.equal(registered.size, BLOCK_DELIVERIES.length, "no assignment registered twice");
+  assert.ok(registered.has(`${COURSE_ID}:assignment-01`), "the Mortgage pilot assignment must stay registered");
+  const knownCourseIds = new Set([
+    COURSE_ID,
+    "ca-real-estate-principles-45",
+    "ca-real-estate-practice-45",
+  ]);
   for (const delivery of BLOCK_DELIVERIES) {
-    assert.equal(delivery.courseId, COURSE_ID, "rollout is authorized for the Mortgage course only");
+    assert.ok(knownCourseIds.has(delivery.courseId), `${delivery.courseId} is not a recognized California course id`);
   }
-  for (const other of ["ca-real-estate-principles-45", "ca-real-estate-practice-45"]) {
+  for (const courseId of knownCourseIds) {
     for (let index = 1; index <= 15; index += 1) {
-      assert.equal(hasBlockDelivery(other, "assignment-" + String(index).padStart(2, "0")), false);
+      const assignmentId = "assignment-" + String(index).padStart(2, "0");
+      assert.equal(hasBlockDelivery(courseId, assignmentId), registered.has(`${courseId}:${assignmentId}`));
     }
   }
 });
