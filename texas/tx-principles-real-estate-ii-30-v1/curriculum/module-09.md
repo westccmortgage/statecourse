@@ -673,45 +673,40 @@ dollars, three times the portion wrongfully withheld, and the tenant's reasonabl
 written description and itemization on or before the thirtieth day after surrender — but they fall
 because of what the manager did.
 
-Several ch. 92 provisions exist precisely because managers under pressure have been tempted to shorten
+Three ch. 92 provisions exist precisely because managers under pressure have been tempted to shorten
 the process. Section 92.008(a) and (b) prohibit a landlord or a landlord's agent from interrupting
 utility service, whether paid directly to the utility by the tenant or furnished by the landlord as an
 incident of the tenancy, "unless the interruption results from bona fide repairs, construction, or an
-emergency," with the narrow, heavily conditioned exception in § 92.008(h) for submetered or allocated
-electricity; § 92.008(f) gives the tenant recovery of possession or termination plus actual damages,
-one month's rent plus $1,000, attorney's fees and costs; and § 92.008(g) makes any lease provision
-purporting to waive the section void. Section 92.0081(b) prohibits a landlord from intentionally
-preventing a tenant from entering the leased premises except by judicial process, subject to stated
-exceptions including a lock change for a tenant delinquent in rent, and then only under the notice
-requirements of § 92.0081(c) and (d); § 92.0081(f) requires that the tenant be given a key "without
-regard to whether the tenant pays the delinquent rent"; and § 92.0081(h) provides a civil penalty of
-one month's rent plus $1,000 together with actual damages, costs and fees. Section 92.331 prohibits
-retaliation — filing an eviction, depriving the tenant of the premises, decreasing services, raising
-rent, terminating the lease, or engaging in bad faith in a course of conduct materially interfering
-with the tenant's rights — within six months after the tenant exercises a right, gives a repair notice,
-complains in good faith to a code authority, utility or civic agency, or participates in a tenant
-organization; § 92.332 preserves ordinary grounds such as delinquency and material breach; and
-§ 92.333 gives the tenant a civil penalty of one month's rent plus $500 plus actual damages, costs and
-fees. Note the pattern: these are the moments when a frustrated owner tells a manager to "just change
-the locks" or "shut the water off," and each one is a statute the manager is expected to know and to
-refuse.
+emergency," subject to the narrow and heavily conditioned exception in § 92.008(h) for submetered or
+allocated electricity; § 92.008(f) gives the tenant possession or termination plus actual damages, one
+month's rent plus $1,000, fees and costs, and § 92.008(g) voids any waiver. Section 92.0081(b)
+prohibits intentionally preventing a tenant from entering the premises except by judicial process,
+subject to stated exceptions including a lock change for a delinquent tenant, and then only under the
+notice requirements of § 92.0081(c) and (d); § 92.0081(f) requires that the tenant be given a key
+"without regard to whether the tenant pays the delinquent rent," and § 92.0081(h) provides a civil
+penalty of one month's rent plus $1,000 with actual damages, costs and fees. Section 92.331 prohibits
+retaliation — eviction, deprivation of the premises, decreased services, a rent increase, lease
+termination, or a bad-faith course of conduct materially interfering with the tenant's rights — within
+six months after the tenant exercises a right, gives a repair notice, complains in good faith to a
+code authority, utility or civic agency, or participates in a tenant organization; § 92.332 preserves
+ordinary grounds such as delinquency and material breach; and § 92.333 gives a civil penalty of one
+month's rent plus $500 with actual damages, costs and fees. These are the moments when a frustrated
+owner tells a manager to "just change the locks" or "shut the water off."
 
-So how does a competent manager honor both sets of obligations? By recognizing that they do not
-actually conflict as often as they appear to. The manager's loyalty to the owner is a duty to advance
-the owner's *lawful* interests, and an owner's interests are rarely served by exposure to the
-penalties above. When an owner asks for something the law forbids, the loyal answer and the lawful
-answer are the same answer: explain the provision, explain the exposure, and decline. Section
-1101.652(b)(2)'s reference to untrustworthiness and (b)(1)'s reference to incompetence both cut
-against a manager who follows an unlawful instruction, and § 1101.803 places the broker on the hook
-for it.
+So how does a competent manager honor both sets of obligations? By recognizing that they conflict less
+often than they appear to. The manager's loyalty to the owner is a duty to advance the owner's
+*lawful* interests, and an owner's interests are never served by exposure to the penalties above. When
+an owner asks for something the law forbids, the loyal answer and the lawful answer are the same:
+explain the provision, explain the exposure, and decline. Section 1101.652(b)(2)'s reference to
+untrustworthiness and (b)(1)'s reference to incompetence both cut against a manager who follows an
+unlawful instruction, and § 1101.803 places the broker on the hook for it.
 
-Where genuine tension remains, it is usually about candor rather than legality — what to tell a
-prospective tenant about a building problem, whether to disclose to an owner a tenant's confidence.
-The workable discipline is to be honest with everyone and confidential with no one about facts the
-other party is entitled to know. Section 1101.652(b)(7)'s requirement to make clear the party for whom
-the license holder is acting is the starting point: a tenant who knows the manager works for the owner
-is not misled by the manager advancing the owner's interests. What misleads is a manager who lets the
-tenant believe otherwise.
+Where genuine tension remains, it is usually about candor rather than legality. The workable
+discipline is to be honest with everyone and to keep no confidence about facts the other party is
+entitled to know. Section 1101.652(b)(7)'s requirement to make clear the party for whom the license
+holder is acting is the starting point: a tenant who knows the manager works for the owner is not
+misled by the manager advancing the owner's interests. What misleads is a manager who lets the tenant
+believe otherwise.
 
 **Continuing competence**
 
@@ -722,19 +717,18 @@ number of classroom hours the Commission prescribes by rule, "which must be at l
 hours." Section 1101.455(e) requires at least eight of those hours to provide current information on
 listed legal topics, and the list reads like a property manager's job description: commission rules;
 **fair housing laws**; **Property Code issues, including landlord-tenant law**; agency law; antitrust
-laws; the DTPA subchapter; disclosures to buyers, landlords, tenants and sellers; promulgated contract
-and addendum forms; unauthorized practice of law; case studies involving violations; FHA and VA
-regulations; tax laws; property tax consulting laws; other approved legal topics; and "the ethical
-requirements of engaging in real estate brokerage." Section 1101.455(f) allows the remaining hours to
-be devoted to other approved real estate-related topics.
+laws; the DTPA subchapter; disclosures to buyers, landlords, tenants and sellers; unauthorized
+practice of law; case studies involving violations; and "the ethical requirements of engaging in real
+estate brokerage," among others. Section 1101.455(f) allows the remaining hours to be devoted to other
+approved real estate-related topics.
 
-Beyond the statutory minimum, competence in this field decays quickly for a specific reason: the
-Property Code chapters a manager lives inside are amended regularly, and the amendments are usually
-procedural — a notice period, a fee cap, a required disclosure. Those are exactly the details a
-manager operates on autopilot. As a matter of practice and not of legal requirement, managers who stay
-out of trouble tend to re-read the operative chapters periodically, keep lease forms and notice
-templates under review rather than treating them as settled, and treat every complaint as information
-about a system rather than about a person.
+Beyond the statutory minimum, competence here decays quickly for a specific reason: the Property Code
+chapters a manager lives inside are amended regularly, and the amendments are usually procedural — a
+notice period, a fee cap, a required disclosure. Those are exactly the details a manager operates on
+autopilot. As a matter of practice and not of legal requirement, managers who stay out of trouble
+re-read the operative chapters periodically, keep lease forms and notice templates under review rather
+than treating them as settled, and treat every complaint as information about a system rather than
+about a person.
 
 ### Applied exercise: The instruction you should refuse
 
