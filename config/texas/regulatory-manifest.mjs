@@ -38,7 +38,7 @@
  * with that status so that a reader can see it was consulted and see what it was not used for.
  */
 
-export const MANIFEST_VERSION = "TX-MANIFEST-2026-08-27-v2";
+export const MANIFEST_VERSION = "TX-MANIFEST-2026-08-29-v3";
 
 /* How long a reading stays good before the lock demands it be taken again. */
 export const VERIFICATION_MAX_AGE_DAYS = 90;
@@ -330,6 +330,102 @@ export const SOURCES = Object.freeze([
           "The TX-0 report recorded the Occupations Code as unreachable, on the strength of statutes.capitol.texas.gov returning an identical single-page-application shell for every document path.",
         resolution:
           "CORRECTED 2026-08-27. That host does behave that way; the conclusion drawn from it did not follow. The Texas Legislative Council publishes the same codes as plain static HTML at tcss.legis.texas.gov/resources/{CODE}/htm/{CODE}.{CHAPTER}.htm, and twenty-five chapters were retrieved from it with no browser and no failures. A single failing endpoint is evidence about that endpoint.",
+      },
+    ],
+    /* Re-verified 2026-08-29 against the same local copy for the Law of Agency build: the held HTML
+       already carries the sections added/amended by the 89th Legislature for buyer representation,
+       effective 2026-01-01, so no re-fetch was needed. */
+  }),
+  source({
+    id: "oc-1101-buyer-representation-2026",
+    authority: "Texas Legislative Council",
+    title: "Texas Occupations Code §§ 1101.558, 1101.562, 1101.563 (buyer/tenant representation, as amended/added by the 89th Legislature, effective 2026-01-01)",
+    documentNumber: "Tex. Occ. Code §§ 1101.558, 1101.562, 1101.563",
+    revision: null,
+    effectiveDate: "2026-01-01",
+    url: "https://tcss.legis.texas.gov/resources/OC/htm/OC.1101.htm",
+    localCopy: "texas/trec-sources/statutes/OC.1101.htm",
+    sha256: "8c40aa399cf717901540150ae6acaf3d847305f7fefcf7dd7ec4c3068a418858",
+    readOn: "2026-08-29",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence: "TIER 2 — the statute itself, same held copy as oc-1101 above; this record isolates the specific sections the Law of Agency build depends on and their confirmed presence in the held text.",
+    materialClaims: [
+      {
+        id: "1101-558-representation-disclosure",
+        claim: "§ 1101.558(b)/(b-1): a license holder who represents a party must disclose that representation, orally or in writing, at first contact with another party or their license holder; at first substantive communication about specific property, the license holder must give a written notice (the IABS) meeting the content requirements of (b-1)(1)-(4), with commission-prescribed text and delivery method under (b-2). Subsection (c) lists three exceptions, including communication at an open house concerning that property.",
+        reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T02U5", "config/texas/law-of-agency-course-form.mjs T08U1"],
+      },
+      {
+        id: "1101-562-showings-without-representation",
+        claim: "§ 1101.562: a broker may show real property to a party without representing them if the broker has not agreed to represent the party (orally or in writing), is not otherwise acting as their agent, gives no opinions or advice on the property or transactions generally, and performs no other brokerage act for the party; before showing, the broker must give the § 1101.558(b) disclosure or the § 1101.558(b-1) written notice, as applicable; and may still confirm size, price and terms of the property under (c).",
+        reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T04U5", "config/texas/law-of-agency-course-form.mjs T08U1"],
+      },
+      {
+        id: "1101-563-written-agreement-required",
+        claim: "§ 1101.563: a license holder performing any act of real estate brokerage for a prospective buyer of residential real property (single-family house; duplex/triplex/quadraplex; or a condominium/cooperative unit) must enter a written agreement with the prospective buyer before showing residential property or, if none will be shown, before presenting an offer on the buyer's behalf. The agreement must state the services to be provided, its termination date, whether it is exclusive or non-exclusive, whether the license holder represents the buyer or (for a showing-only agreement under § 1101.562) does not, and the amount/rate of compensation and how it is determined, and must disclose in conspicuous language that broker compensation is not set by law and is fully negotiable. A showing-only agreement under § 1101.562 may not be exclusive and may not run more than fourteen days; a separate agreement is required if further brokerage acts follow the showing. § 1101.652(a-1)(3)/(34)(added) makes failure to use a required contract form, and failure to enter into the § 1101.563 written agreement, grounds for suspension or revocation.",
+        reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T04U5", "config/texas/law-of-agency-course-form.mjs T05U1"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-buyer-rep-2026-article",
+    authority: "Texas Real Estate Commission",
+    title: "What Changes in 2026 About Buyer/Tenant Representation in Texas",
+    documentNumber: null,
+    revision: null,
+    effectiveDate: "2026-01-01",
+    url: "https://www.trec.texas.gov/article/what-changes-2026-about-buyertenant-representation-texas",
+    localCopy: "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
+    sha256: "dd987ceb2d972d8e54a245cdf30fe3344369e7666dfa1059f817da28db6fd3ae",
+    readOn: "2026-08-29",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence: "Tier-4 TREC explanatory guidance on the tier-2 statute above (§§ 1101.562-.563), published by the regulator, dated 01-07-2026, byline Summer Mandell. Used for the open-house and 'refuses to sign' operating detail the bare statute text does not spell out; every claim below cross-checks against the held statute text and nothing here overrides it.",
+    materialClaims: [
+      {
+        id: "open-house-listing-agent-exception",
+        claim: "An agent hosting an open house who is a member of the listing broker's office need not provide the IABS or enter a written agreement with visitors, but must disclose (orally or in writing, per § 1101.558(b)) that they represent the owner.",
+        reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T08U1"],
+      },
+      {
+        id: "open-house-outside-agent-requirement",
+        claim: "An agent hosting an open house who is NOT a member of the listing broker's office and does not represent the seller must provide the IABS and enter into a § 1101.563(c) written agreement with a prospective buyer before the buyer views the property, even if that buyer already has a written representation agreement with another broker; if the buyer refuses to sign, the agent cannot show the property.",
+        reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T08U1"],
+      },
+      {
+        id: "subagency-removed-not-eliminated",
+        claim: "Two references to subagency were removed from TRELA, narrowing the circumstances in which it could arise, but the article states subagency 'has not been eliminated generally as a legal concept.'",
+        reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T04U4"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-iabs-1-2",
+    authority: "Texas Real Estate Commission",
+    title: "Information About Brokerage Services (IABS) Form",
+    documentNumber: "IABS 1-2",
+    revision: null,
+    effectiveDate: "2026-01-01",
+    url: "https://www.trec.texas.gov/forms/information-about-brokerage-services",
+    localCopy: null,
+    sha256: null,
+    readOn: "2026-08-29",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence: "Current TREC form (tier 4), superseding IABS 1-0 effective 2026-01-01 to reflect the § 1101.558(b-1)/§ 1101.562 notice requirements.",
+    materialClaims: [
+      {
+        id: "iabs-current-version",
+        claim: "The current Information About Brokerage Services form is IABS 1-2, effective 01/01/2026, per TREC's own forms listing.",
+        reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T02U5"],
+      },
+    ],
+    conflicts: [
+      {
+        id: "iabs-pdf-not-downloaded",
+        question: "The IABS 1-2 PDF itself has not yet been downloaded and hashed to texas/trec-sources/ — only the forms-listing page naming it was read.",
+        resolution: "OPEN. Download and hash before the Law of Agency course content ships; the form-number and effective-date claim above does not depend on it.",
       },
     ],
   }),
@@ -663,6 +759,26 @@ export function principlesISourceLock(statuteCoverage) {
   });
 }
 
+/** LOA-1 and the buyer/tenant-representation statute sections the 2026 update depends on. */
+const LAW_OF_AGENCY_SOURCE_IDS = ["trec-loa-1", "oc-1101-buyer-representation-2026", "trec-buyer-rep-2026-article", "trec-iabs-1-2"];
+
+/**
+ * Law of Agency passes only when its form and its substantive-law sources are all reachable AND
+ * every LOA-1 unit either has a primary source on disk or is named as needing none — the same
+ * shape as principlesISourceLock, with statuteCoverage injected for the same layering reason.
+ */
+export function lawOfAgencySourceLock(statuteCoverage) {
+  const formLock = lockOver(LAW_OF_AGENCY_SOURCE_IDS);
+  const uncovered = statuteCoverage?.uncovered ?? ["statute coverage was not supplied"];
+  return Object.freeze({
+    status: formLock.status === "PASS" && uncovered.length === 0 ? "PASS" : "FAIL",
+    form: formLock,
+    unitsHeld: statuteCoverage?.held?.length ?? 0,
+    unitsExcused: statuteCoverage?.excused?.length ?? 0,
+    unitsUncovered: Object.freeze(uncovered),
+  });
+}
+
 /** The aggregate passes only when both components pass. It cannot be granted on its own. */
 export function sourceLock(statuteCoverage) {
   const provider = providerRuleSourceLock();
@@ -681,4 +797,4 @@ export function held() {
 
 export const CONFLICTS = Object.freeze(SOURCES.flatMap((entry) => entry.conflicts.map((conflict) => Object.freeze({ sourceId: entry.id, ...conflict }))));
 
-export default Object.freeze({ MANIFEST_VERSION, SOURCES, FEES, PROGRAMS, PATHWAY, FILING_PLAN, PROVIDER_TERM, CONFLICTS, sourceLock, providerRuleSourceLock, principlesISourceLock, held, courseApplicationFee });
+export default Object.freeze({ MANIFEST_VERSION, SOURCES, FEES, PROGRAMS, PATHWAY, FILING_PLAN, PROVIDER_TERM, CONFLICTS, sourceLock, providerRuleSourceLock, principlesISourceLock, lawOfAgencySourceLock, held, courseApplicationFee });
