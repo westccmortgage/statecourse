@@ -285,6 +285,22 @@ function renderQuestion(activity, question, { blockId, replacement = false }) {
     activity.innerHTML = `<p class="mastery-note">✓ Block mastered. This check is complete and recorded.</p>`;
     return;
   }
+  /* Leaving the remediation view (e.g. Previous) lands back on this same retrieval screen with
+     state.view.remediation cleared, but the server still holds the block at REMEDIATION_REQUIRED
+     — the original question can no longer be answered there. Route back into remediation instead
+     of showing a form whose submission is guaranteed to fail. */
+  if (!replacement && block.status === "REMEDIATION_REQUIRED") {
+    activity.innerHTML = `
+      <div class="activity-panel">
+        <p class="activity-note">You answered this one incorrectly. Review the instruction, then answer a different question on the same concept to master this block.</p>
+        <p><button type="button" class="action-primary" id="resumeRemediation">Continue to review</button></p>
+      </div>`;
+    $("#resumeRemediation").addEventListener("click", () => {
+      state.view = { ...state.view, remediation: activeRemediationFor(block) };
+      renderScreen();
+    });
+    return;
+  }
   if (!question) { activity.innerHTML = `<p class="activity-note">This check is not open yet.</p>`; return; }
   activity.innerHTML = questionForm(question, replacement ? "Submit answer to the new question" : "Submit answer");
   for (const label of activity.querySelectorAll(".choice")) {
