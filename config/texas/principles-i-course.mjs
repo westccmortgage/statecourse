@@ -167,10 +167,10 @@ export const UNIT_OBJECTIVES = Object.freeze({
     "Distinguish the ways title is acquired and transferred, voluntary and involuntary.",
   ]),
   T07U6: Object.freeze([
-    "Explain how community and separate property pass at death under Texas intestacy.",
+    "Describe the Texas probate process — executor and administrator authority under independent administration, and the will-execution formalities of §§ 251.001, 251.051 and 251.052 — and the probate documents a licence holder reads in a chain of title.",
   ]),
   T07U7: Object.freeze([
-    "Describe testate and intestate succession, the will execution formalities, and the descent of a decedent's real property.",
+    "Explain how community and separate property descend under the intestacy statutes of §§ 201.001-201.003 when a decedent leaves no valid will.",
   ]),
   T07U8: Object.freeze([
     "Explain voluntary alienation by deed and by will, including delivery and acceptance.",
