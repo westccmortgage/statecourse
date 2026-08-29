@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "1 - In 5 Years = $521,989 total paid / $64,007 principal paid off",
+    "start": 29.0, "end": 46.0,
+    "box": {"x": 618, "y": 273, "w": 690, "h": 49},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["1 — In 5 Years"], "x": 1395, "y": 273}
+  },
+  {
+    "comment": "2 - Annual Percentage Rate (APR) = 7.640%",
+    "start": 46.0, "end": 59.0,
+    "box": {"x": 618, "y": 313, "w": 682, "h": 31},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["2 — Annual Percentage", "Rate (APR)"], "x": 1395, "y": 313}
+  },
+  {
+    "comment": "3 - Total Interest Percentage (TIP) = 151.72%",
+    "start": 59.0, "end": 69.0,
+    "box": {"x": 618, "y": 335, "w": 629, "h": 43},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["3 — Total Interest", "Percentage (TIP)"], "x": 1395, "y": 335}
+  },
+  {
+    "comment": "4a - Other Considerations, whole section",
+    "start": 69.0, "end": 73.5,
+    "box": {"x": 617, "y": 378, "w": 686, "h": 278},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["4 — Other", "Considerations"], "x": 1395, "y": 378}
+  },
+  {
+    "comment": "4b - Late Payment line called out specifically",
+    "start": 73.5, "end": 75.5,
+    "box": {"x": 618, "y": 532, "w": 608, "h": 40},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["4 — Late Payment"], "x": 1395, "y": 532}
+  },
+  {
+    "comment": "4c - Servicing line called out specifically",
+    "start": 75.5, "end": 79.5,
+    "box": {"x": 618, "y": 598, "w": 500, "h": 55},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["4 — Servicing"], "x": 1395, "y": 598}
+  },
+  {
+    "comment": "5 - Confirm Receipt paragraph and signature line",
+    "start": 79.5, "end": 93.5,
+    "box": {"x": 617, "y": 650, "w": 686, "h": 100},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["5 — Confirm Receipt"], "x": 1395, "y": 650}
+  }
+]
