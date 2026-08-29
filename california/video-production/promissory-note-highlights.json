@@ -1,0 +1,32 @@
+[
+  {
+    "comment": "1 - Section 1, Borrower's Promise to Pay: $1,189,150.00 principal to ResiCentral, LLC",
+    "start": 48.5, "end": 60.0,
+    "box": {"x": 664, "y": 243, "w": 496, "h": 84},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["1 — Borrower's", "Promise to Pay"], "x": 1395, "y": 260}
+  },
+  {
+    "comment": "2 - Section 2, Interest: 7.500% fixed yearly rate",
+    "start": 60.0, "end": 75.0,
+    "box": {"x": 664, "y": 344, "w": 455, "h": 55},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["2 — Interest"], "x": 1395, "y": 355}
+  },
+  {
+    "comment": "3 - Section 3, Payments: $8,314.71 monthly, Sept 1 2026 start, Aug 1 2056 maturity",
+    "start": 75.0, "end": 91.0,
+    "box": {"x": 664, "y": 385, "w": 534, "h": 132},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["3 — Payments"], "x": 1395, "y": 440}
+  },
+  {
+    "comment": "4 - Section 5, Late Charge for Overdue Payments: 5.000% after 15 days",
+    "start": 91.0, "end": 105.0,
+    "box": {"x": 664, "y": 605, "w": 497, "h": 79},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["5 — Late Charge for", "Overdue Payments"], "x": 1395, "y": 630}
+  },
+  {
+    "comment": "5 - Page 2, Section 9, Secured Note: link to the deed of trust",
+    "start": 108.5, "end": 124.5,
+    "box": {"x": 664, "y": 132, "w": 514, "h": 71},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["9 — Secured Note"], "x": 1395, "y": 145}
+  }
+]

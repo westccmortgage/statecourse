@@ -32,6 +32,15 @@ export const MORTGAGE_BLOCK_SPECS = {
        transaction (the DiStefano purchase), on §3's "Two documents, two jobs" screen. */
     screenMedia: {
       "a2-b3-s1": {
+        videos: [
+          {
+            src: "/media/promissory-note-overview.mp4",
+            poster: "/media/promissory-note-overview-poster.webp",
+            captions: "/media/promissory-note-overview.vtt",
+            label: "Video: The Promissory Note (document overview)",
+            duration: "2:27",
+          },
+        ],
         documents: [
           {
             src: "/media/specimens/specimen-promissory-note.pdf",
