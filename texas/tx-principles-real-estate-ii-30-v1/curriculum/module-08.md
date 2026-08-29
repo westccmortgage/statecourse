@@ -539,7 +539,8 @@ reference in this chapter to the 'commission' means the Texas Workforce Commissi
 "commission" in ch. 301 is the **Texas Workforce Commission** — not TREC, whose fair housing role is
 licence discipline under Occupations Code ch. 1101, taken up in unit 3.
 
-**The classes Texas lists.** Reading the prohibition sections, the bases are **race, color, religion,
+**The classes ch. 301 lists.** Reading the prohibition sections of this chapter — and of this chapter
+only — the bases are **race, color, religion,
 sex, disability, familial status and national origin**. Texas says **disability** where the federal Act
 says handicap, and § 301.003(6) defines it as "a mental or physical impairment that substantially
 limits at least one major life activity, a record of the impairment, or being regarded as having the
@@ -928,11 +929,15 @@ participation in," and discriminating "in the terms or conditions of such access
 participation." So conditioning participation, pricing it differently, or curtailing it after
 admission is inside the section without any denial at all. **The bases are seven**, the full
 § 3604(c) list, handicap and familial status included; § 3606 does not split disability off into a
-subsection of its own the way § 3604 does. And **there is no exemption.** Section 3603(b) exempts
-qualifying transactions from § 3604 only — reread its opening words, "Nothing in section 3604 of this
-title (other than subsection (c))" — and § 3607 speaks to the subchapter's application to religious
-organizations, private clubs and housing for older persons, not to who may join an MLS. Nothing in
-either section reaches § 3606.
+subsection of its own the way § 3604 does. And **the exemptions you learned in unit 1 do not answer a
+§ 3606 problem.** Section 3603(b) by its own opening words exempts qualifying transactions from
+"section 3604 of this title (other than subsection (c))" and from nothing else, so it cannot reach
+§ 3606 at all. Section 3607's exemptions are phrased "[n]othing in this subchapter," so they are
+subchapter-wide in form — but read what each of them is *about*: limiting "the sale, rental or
+occupancy of dwellings" a religious organization or private club owns or operates (§ 3607(a)), and the
+familial-status provisions "with respect to housing for older persons" (§ 3607(b)(1)). None of that
+describes who may join a multiple-listing service or a brokers' organization. Do not answer a
+brokerage-access question with a housing exemption.
 
 Why this belongs in a licensing course rather than in a footnote: § 3606 is the fair housing section
 whose subject matter is a license holder's own working life. Access to the MLS, to a local board or
@@ -940,9 +945,9 @@ association, to a referral network, to a lockbox system, to a co-op arrangement,
 floor-time rotation — each is at least arguably a "service, organization, or facility relating to the
 business of selling or renting dwellings," and a discriminatory condition on any of them is a
 discriminatory housing practice under § 3602(f), not merely an internal governance dispute.
-*Illustration:* a Texas board of REALTORS® admits applicants on stated criteria but routes one
-applicant's file through an additional interview and a sponsorship requirement nobody else is asked
-for, and the record shows national origin is why. No consumer was refused a dwelling and no listing
+*Illustration:* a Texas real estate brokers' association admits applicants on stated criteria but
+routes one applicant's file through an additional interview and a sponsorship requirement nobody else
+is asked for, and the record shows national origin is why. No consumer was refused a dwelling and no listing
 was affected; § 3606 and § 301.027 are violated on their own terms. The mirror-image point matters
 too, and it is the one to carry into practice: **a broker or association that excludes on a protected
 basis is not protected by the fact that the exclusion is aimed at a competitor rather than a
@@ -1294,9 +1299,12 @@ That prohibition has an important counterweight in the same section, and it expl
 clients will meet. Section 1002.5(a)(2) provides that **notwithstanding** paragraphs (b) through (d),
 "a creditor shall request information for monitoring purposes as required by § 1002.13 for credit
 secured by the applicant's dwelling," and may obtain information required by a regulation, order or
-agreement of a court or enforcement agency to monitor or enforce compliance. So on a dwelling-secured
-loan the demographic questions are not merely permitted, they are **required** for monitoring — which
-is why a mortgage application asks what a car loan application may not. Section 1002.5(a)(3) allows
+agreement of a court or enforcement agency to monitor or enforce compliance. So for credit secured by the applicant's
+dwelling the demographic questions are not merely permitted, they are **required** for monitoring —
+which is why a mortgage application asks what a car loan application may not. Section 1002.13, which
+fixes exactly which credit that monitoring requirement covers and how the information is to be
+collected, was **not** held for this course, so this module states the cross-reference and does not
+describe its contents. Section 1002.5(a)(3) allows
 otherwise-restricted information to be obtained to determine eligibility for a special purpose credit
 program under § 1002.8, the regulatory partner of § 1691(c)(3), and § 1002.5(a)(4) sets out a detailed
 list of further permitted collections tied to HMDA reporting under 12 C.F.R. part 1003 and to the
@@ -1549,29 +1557,145 @@ brings to any market. Fourth, § 2901 is addressed to **regulated financial inst
 supervisors**, not to real estate brokerages; no provision of it imposes a duty on a Texas license
 holder.
 
-**Examination and rating — what this course can and cannot tell you.** The mechanics — how an
-assessment area is drawn, what lending, investment and service activity is measured, what a written
-public evaluation contains, and what performance ratings are assigned — are in later sections of
-chapter 30 of title 12, at 12 U.S.C. §§ 2902 through 2906. **Those sections were not held for this
-course, and this module does not state their contents.** What § 2901 alone supports is the concept: the
-supervisory agency assesses an institution's record of helping meet local credit needs as part of
-examining it, and that assessment is meant to influence the institution's conduct. If you need the
-rating categories, the assessment-area rules, or when a CRA record is considered in a merger or branch
-application, read §§ 2902–2906 yourself. Do not accept a summary — including a confident one — from
-anyone who has not.
+**Who the Act is about — § 2902's definitions.** Section 2901 states findings and a purpose; § 2902
+supplies the nouns those sentences run on, and all three matter. First, the **"appropriate Federal
+financial supervisory agency"** is defined institution by institution: the **Comptroller of the
+Currency** as to national banks and Federal savings associations whose deposits are FDIC-insured; the
+**Board of Governors of the Federal Reserve System** as to State chartered banks that are members of
+the Federal Reserve System, bank holding companies, and savings and loan holding companies; and the
+**Federal Deposit Insurance Corporation** as to State chartered banks and savings banks that are not
+Federal Reserve members and whose deposits the Corporation insures, and State savings associations
+whose deposits are FDIC-insured (§ 2902(1)(A)–(C)). Three agencies, no more, and none of them is HUD,
+the Bureau or TREC. Second — and this is the definition that settles who owes a CRA obligation at all
+— "the term **'regulated financial institution'** means an insured depository institution (as defined
+in section 1813 of this title)" (§ 2902(2)). Note how narrow that is. A mortgage broker is not one; a
+mortgage banker is not one; a credit union is not one; a real estate brokerage is emphatically not one.
+The CRA reaches **insured depository institutions**, which is to say banks and savings institutions
+whose deposits carry federal insurance. Third, an **"application for a deposit facility"** is defined
+in § 2902(3) as an application to the appropriate agency, otherwise required by federal law, for a
+national bank or Federal savings and loan association charter; deposit insurance for a newly chartered
+institution; "the establishment of a domestic branch or other facility with the ability to accept
+deposits"; "the relocation of the home office or a branch office"; a merger, consolidation, asset
+acquisition or liability assumption requiring approval under 12 U.S.C. § 1828(c); or the acquisition of
+shares or assets requiring approval under 12 U.S.C. § 1842. Hold that list — it is the list of moments
+at which a CRA record has consequences. Section 2902(4) adds a special rule: an institution whose
+business "predominately consists of serving the needs of military personnel who are not located within
+a defined geographic area may define its 'entire community' to include its entire deposit customer base
+without regard to geographic proximity," which in a state with as many military installations as Texas
+is worth knowing exists.
 
-**Low- and moderate-income communities.** The phrase you will hear attached to the CRA does not appear
-in § 2901's findings, which speak of "the local communities in which they are chartered." It appears in
-the statutory notes printed under § 2901, and those notes were read. The note reproducing § 715 of
+**The assessment — § 2903.** This is the section that converts § 2901's purpose into a duty. Section
+2903(a): "In connection with its examination of a financial institution, the appropriate Federal
+financial supervisory agency shall— (1) assess the institution's record of meeting the credit needs of
+its entire community, including low- and moderate-income neighborhoods, consistent with the safe and
+sound operation of such institution; and (2) take such record into account in its evaluation of an
+application for a deposit facility by such institution."
+
+Read the two paragraphs as a pair, because neither works alone. Paragraph (1) is the **assessment**:
+mandatory ("shall"), performed "[i]n connection with its examination," and measured against the
+institution's **"entire community, including low- and moderate-income neighborhoods."** Paragraph (2)
+is the **consequence**: the agency must "take such record into account" when it evaluates an
+application for a deposit facility — the § 2902(3) list of charters, deposit insurance, new branches,
+relocations, mergers and acquisitions. That is the whole enforcement design of the CRA, and it explains
+why the Act has force despite creating no prohibition and no private claim: the record is assessed on
+examination and cashed at the moment the institution wants to do something that needs federal approval.
+Two further subsections add factors. Section 2903(b) permits an agency, in assessing a nonminority-owned
+and nonwomen-owned institution, to "consider as a factor capital investment, loan participation, and
+other ventures undertaken by the institution in cooperation with minority- and women-owned financial
+institutions and low-income credit unions," provided those activities help meet local credit needs; and
+§ 2903(d) requires the agency to consider, as a factor, "low-cost education loans provided by the
+financial institution to low-income borrowers." Section 2903(c) attaches a CRA condition to a corporate
+election: a bank holding company's election to become a financial holding company under 12 U.S.C.
+§ 1843 is not effective if the Board finds that, as of the filing date, "not all of the subsidiary
+insured depository institutions of the bank holding company had achieved a rating of 'satisfactory
+record of meeting community credit needs', or better, at the most recent examination of each such
+institution," subject to a limited 12-month exclusion for newly acquired institutions covered by an
+accepted remediation plan.
+
+**Reporting and rulemaking — §§ 2904 and 2905.** Section 2904 is one sentence: "Each appropriate
+Federal financial supervisory agency shall include in its annual report to the Congress a section
+outlining the actions it has taken to carry out its responsibilities under this chapter." Section 2905
+provides that regulations to carry out the chapter's purposes "shall be published by each appropriate
+Federal financial supervisory agency," except that the Comptroller of the Currency prescribes those
+applicable to savings associations and the Board of Governors those applicable to insured State member
+banks, bank holding companies and savings and loan holding companies, and that they "shall take effect
+no later than 390 days after October 12, 1977." Two things follow. **The CRA is agency-by-agency, not
+one uniform code** — each supervisor writes its own regulations under § 2905, which is why the assessment
+factors § 2906 refers to are found in regulations rather than in the statute. And **no CRA regulation
+was held for this course.** This module therefore states what §§ 2902–2906 say and does not describe
+any agency's assessment-area rules, performance tests or examination procedures, which live in those
+regulations.
+
+**The written evaluation and the four ratings — § 2906.** Section 2906 is the section that makes a CRA
+record public, and it is the one most often misremembered, so read the words. Section 2906(a)(1): "Upon
+the conclusion of each examination of an insured depository institution under section 2903 of this
+title, the appropriate Federal financial supervisory agency shall prepare a written evaluation of the
+institution's record of meeting the credit needs of its entire community, including low- and
+moderate-income neighborhoods." Section 2906(a)(2): "Each written evaluation required under paragraph
+(1) shall have a **public section and a confidential section**."
+
+*The public section* (§ 2906(b)(1)(A)) must "(i) state the appropriate Federal financial supervisory
+agency's conclusions for each assessment factor identified in the regulations prescribed by the Federal
+financial supervisory agencies to implement this chapter; (ii) discuss the facts and data supporting
+such conclusions; and (iii) contain the institution's rating and a statement describing the basis for
+the rating." Under § 2906(b)(1)(B) the information required by clauses (i) and (ii) "shall be presented
+separately for each metropolitan area in which a regulated depository institution maintains one or more
+domestic branch offices."
+
+*The rating.* Section 2906(b)(2) provides that the institution's rating "shall be 1 of the following,"
+and these are the statute's own words, in the statute's own order:
+
+- **"Outstanding record of meeting community credit needs"** (§ 2906(b)(2)(A));
+- **"Satisfactory record of meeting community credit needs"** (§ 2906(b)(2)(B));
+- **"Needs to improve record of meeting community credit needs"** (§ 2906(b)(2)(C));
+- **"Substantial noncompliance in meeting community credit needs"** (§ 2906(b)(2)(D)).
+
+The paragraph closes: "Such ratings shall be disclosed to the public on and after July 1, 1990." Four
+levels, no more; and note that the fourth is worded as *substantial noncompliance*, not "unsatisfactory"
+or "failing." Use the statutory phrases. When § 2903(c) conditions a financial holding company election
+on a rating of "satisfactory record of meeting community credit needs, or better," it is pointing at
+subparagraph (B) of this list, so "or better" means (B) or (A).
+
+*The confidential section* (§ 2906(c)) "shall contain all references that identify any customer of the
+institution, any employee or officer of the institution, or any person or organization that has
+provided information in confidence to a Federal or State financial supervisory agency," and "any
+statements obtained or made by the appropriate Federal financial supervisory agency in the course of an
+examination which, in the judgment of the agency, are too sensitive or speculative in nature to disclose
+to the institution or the public." It may be disclosed to the institution in whole or part where the
+agency determines that doing so "will promote the objectives of this chapter," but never in a way that
+identifies a confidential informant.
+
+*Multi-state institutions.* Section 2906(d) requires, for an institution with domestic branches in two
+or more States, both a written evaluation of the entire institution and "for each State in which the
+institution maintains 1 or more domestic branches, a separate written evaluation" of its performance
+within that State; a separate evaluation is likewise required for each multistate metropolitan area in
+which it branches. A state-level evaluation must present the (b)(1)(A) and (B) information separately
+for each metropolitan area in which the institution has branch offices and separately for the remainder
+of the State's nonmetropolitan area, and must "describe how the Federal financial supervisory agency has
+performed the examination of the institution, including a list of the individual branches examined."
+Section 2906(e) defines a **"domestic branch"** as "any branch office or other facility of a regulated
+financial institution that accepts deposits, located in any State," and a **"metropolitan area"** as a
+primary, ordinary or consolidated metropolitan statistical area as defined by the Director of the Office
+of Management and Budget "with a population of 250,000 or more," plus any other area the agency
+designates. For a large bank operating in Texas and elsewhere, this is why a Texas-specific CRA
+evaluation exists at all, and why it breaks out by metropolitan area.
+
+**Low- and moderate-income communities — where the phrase actually sits.** The phrase you will hear
+attached to the CRA does not appear in § 2901's findings, which speak of "the local communities in
+which they are chartered." It appears twice in the operative text you have just read: § 2903(a)(1)
+requires the agency to assess the institution's record of meeting the credit needs of "its entire
+community, **including low- and moderate-income neighborhoods**," and § 2906(a)(1) uses the identical
+phrase for the written evaluation. So the framing is statutory, and it enters through the assessment
+and evaluation sections rather than through the findings. The statutory notes printed under § 2901
+carry it further still, and those notes were read. The note reproducing § 715 of
 Pub. L. 106–102 (1999) directed the Secretary of the Treasury, with the Federal banking agencies, to
 study "the extent to which adequate services are being provided as intended by the Community
 Reinvestment Act of 1977, including **services in low- and moderate-income neighborhoods and for
 persons of modest means**." The note reproducing § 910 of Pub. L. 102–550 (1992) directed the Federal
 Reserve Board to report to Congress "comparing residential, small business, and commercial lending by
 insured depository institutions in **low-income, minority, and distressed neighborhoods** to such
-lending in other neighborhoods." So the low- and moderate-income framing is genuinely part of this
-scheme — and this is where the held text puts it: in Congress's own directions to study and report on
-how the Act is working, rather than in the § 2901 findings themselves. Be precise about that.
+lending in other neighborhoods." Be precise about which text says which: the findings in § 2901 do not
+use the phrase, §§ 2903 and 2906 do, and the notes extend it to studies and reports.
 
 **How the CRA relates to, and differs from, the anti-discrimination statutes.** Put § 2901 beside
 § 3604, § 301.021 and § 1691(a) and the contrast is structural. The anti-discrimination statutes are
@@ -1580,11 +1704,14 @@ because of a protected characteristic, each identifies protected classes, and ea
 an injured person — § 301.153 lets a court award actual and punitive damages, § 301.081 lets an
 aggrieved person file a complaint, § 1691(d) entitles an applicant to specific reasons.
 
-The CRA is an **affirmative obligation running to communities**, supervised by examination. Section
-2901 names no protected class. It does not say a person may not do a thing. Nothing in the section held
-for this course gives an individual borrower a claim against a bank for failing to lend to them, and
-nothing in it identifies an injured person at all; its subject is "the local communities in which they
-are chartered." A common and consequential error is to describe the CRA as an anti-redlining
+The CRA is an **affirmative obligation running to communities**, supervised by examination. Sections
+2901 through 2906 name no protected class between them. None of them says a person may not do a thing.
+Nothing in the six sections held for this course gives an individual borrower a claim against a bank
+for failing to lend to them, and nothing in them identifies an injured person at all; the subject
+throughout is the institution's "entire community." Where the anti-discrimination statutes give the
+injured person a complaint and a suit, the CRA gives the **agency** an assessment (§ 2903(a)(1)), a
+public written evaluation with a rating (§ 2906), and a moment to use them — the § 2903(a)(2)
+evaluation of an application for a deposit facility. A common and consequential error is to describe the CRA as an anti-redlining
 *prohibition*. Redlining as an unlawful practice is reached by the fair housing and credit statutes —
 federally by 42 U.S.C. § 3605, which makes it unlawful for a person "whose business includes engaging in
 residential real estate-related transactions" to discriminate in making such a transaction available or
@@ -1609,9 +1736,15 @@ programs, participate in first-time-buyer and down-payment-assistance products, 
 neighborhoods a purely transactional analysis might skip. When a buyer in a modest Texas neighborhood
 is told by one lender that "nobody lends on houses in that part of town," the useful response is not a
 lecture on § 2901 but the fact that other regulated institutions serve that community and the loan is
-worth shopping. Keep the boundary clean: you may say that community lending programs exist and that
-lenders differ; you may not characterize a given institution's CRA record, and you may not steer a
-client to or from a neighborhood on any basis this module has spent five units warning you about.
+worth shopping. One thing the newly read sections let you say accurately: under § 2906(a)(2) and
+(b)(1) an insured depository institution's CRA evaluation has a **public section** containing its
+rating and the basis for it, and § 2906(b)(2) provides that those ratings "shall be disclosed to the
+public on and after July 1, 1990." So a rating is a published fact a client can look up. Keep the
+boundary clean: you may say that community lending programs exist, that lenders differ, and that CRA
+evaluations are public documents; you may not characterize a given institution's CRA record yourself
+from anything other than the published evaluation, you may not present a rating as a recommendation,
+and you may not steer a client to or from a neighborhood on any basis this module has spent five units
+warning you about.
 
 ### Module recap
 
@@ -1643,12 +1776,27 @@ occupancy, with a good-faith defence available under § 3607(b)(5) only to someo
 community's written statement of compliance.
 
 Texas legislated in parallel. Property Code ch. 301 protects the same seven bases, is administered by
-the Texas Workforce Commission, and by § 301.002(3) provides rights and remedies "substantially
-equivalent to those granted under federal law." It adds no new class, and § 301.005 forbids expanding
-its remedies beyond their express terms — but § 301.0045 folds hair texture and protective hairstyles
-into race. Its enforcement path is datable: a sworn complaint within one year, a 100-day investigation
+the **Texas Workforce Commission** under § 301.0015 and not by TREC, and by § 301.002(3) provides
+rights and remedies "substantially equivalent to those granted under federal law." State its class
+list precisely: **the prohibition sections of the current statewide Texas Fair Housing Act, ch. 301, as
+read for this course, name those seven bases and name no eighth, and § 301.005 forbids expanding the
+chapter's remedies beyond their express terms.** That is a statement about ch. 301 only. It is not a
+statement that Texans have no further protection: a municipality or county may adopt its own fair
+housing ordinance, § 301.044(b) preserves nondiscrimination requirements in other state and federal
+law, and **no local ordinance was held for this course, so this module surveys none** — read the
+ordinance where you work. Inside ch. 301, § 301.0045 broadens a class rather than adding one: it
+provides that a provision of the chapter (other than one in Subchapter I, the criminal penalty
+subchapter) referring to discrimination because of race "includes" discrimination because of hair
+texture or a protective hairstyle "commonly or historically associated with race," so a locs case is a
+race case. Its enforcement path is datable: a sworn complaint within one year, a 100-day investigation
 and reasonable-cause determination, conciliation, a charge, a 20-day election between an
-administrative hearing and an attorney general suit, and a private action within two years.
+administrative hearing and an attorney general suit, and a private action within two years. The
+federal administrative route in 42 U.S.C. § 3610 runs alongside it and was read here too: a sworn
+complaint to the Secretary within one year, 10-day service and answer, a 100-day investigation and
+100-day cause determination, conciliation from filing to charge or dismissal, and mandatory referral
+under § 3610(f) to a state or local agency the Secretary has certified as "substantially equivalent" —
+the standard ch. 301 was written to meet. The federal election of forum itself is in § 3612, which was
+not held, so no federal election deadline appears in this module.
 
 The practices carry personal consequences. Steering is named expressly in Occupations Code
 § 1101.652(b)(32) — which adds ancestry and turns on directing a prospect "interested in equivalent
@@ -1661,15 +1809,44 @@ to discriminate in making one available or in its terms on the seven fair housin
 your own services are inside it — Property Code § 301.026 says the same in Texas — while ECOA's
 § 1691(a) adds marital status, age and public-assistance income to the bases and names neither familial
 status nor handicap, and § 1691(d) gives your client notice within thirty days of a completed
-application and a statement of *specific* reasons for any adverse action. And 12 U.S.C. § 2901 stands
-apart: an affirmative,
+application and a statement of *specific* reasons for any adverse action. Regulation B supplies the
+working detail behind that statute: § 1002.2(z) gathers the bases as a "prohibited basis," § 1002.2(c)
+defines adverse action with its counteroffer carve-out, § 1002.4(a) and (b) forbid discrimination and
+**discouragement** — reaching prospective applicants, images as well as words, and, through
+§ 1002.2(l), a person who regularly refers applicants to creditors — § 1002.5 sets out what may and may
+not be asked, including the community-property clause that makes a Texas spousal inquiry lawful and the
+flat bar on childbearing questions, and § 1002.9 fixes the notice clocks and content and declares an
+"internal standards" explanation insufficient.
+
+Two sections of the Fair Housing Act speak to your own side of the business. Section 3606 makes it
+unlawful to deny anyone access to or membership or participation in "any multiple-listing service, real
+estate brokers' organization or other service, organization, or facility relating to the business of
+selling or renting dwellings," or to discriminate in the terms of that access, on the seven bases —
+Property Code § 301.027 in nearly identical words — and no § 3603(b) or § 3607 exemption reaches it.
+Section 3617 makes it unlawful to "coerce, intimidate, threaten, or interfere with" a person exercising
+or enjoying a right under §§ 3603, 3604, 3605 or 3606, or on account of having exercised it, **or on
+account of having aided or encouraged any other person** in exercising it — which is why it protects
+the license holder who backs a client's request, and not only the client.
+
+And the Community Reinvestment Act stands apart: 12 U.S.C. § 2901 declares an affirmative,
 continuing obligation on regulated institutions to help meet their communities' credit needs, enforced
-by examination and bounded by safe and sound operation.
+by examination and bounded by safe and sound operation; § 2902 confines that obligation to insured
+depository institutions supervised by the Comptroller, the Federal Reserve Board or the FDIC; § 2903(a)
+requires the agency to assess the institution's record of meeting the credit needs of "its entire
+community, including low- and moderate-income neighborhoods" and to take that record into account on an
+application for a deposit facility; and § 2906 requires a written evaluation with a public and a
+confidential section, the public section carrying a rating that must be one of four — "Outstanding
+record of meeting community credit needs," "Satisfactory record of meeting community credit needs,"
+"Needs to improve record of meeting community credit needs," or "Substantial noncompliance in meeting
+community credit needs."
 
 You should now be able to state each § 3604 prohibition and its class list, apply the § 3602 definitions
 that decide coverage, work the § 3603(b) exemptions with their conditions and say why neither touches
 § 3604(c), distinguish the 62-and-over and 55-and-over structures in § 3607(b), distinguish
-accommodation from modification, walk a Texas complainant through ch. 301's forum choice, name the
+accommodation from modification, walk a Texas complainant through ch. 301's forum choice and set it
+beside the § 3610 federal route, state the brokerage-services rule in § 3606 and § 301.027 and the
+interference rule in § 3617, name the
 statutes a steering complaint violates, identify a residential real estate-related transaction under
-§ 3605(b) and Property Code § 301.026, and explain why the CRA is an obligation to a community rather
-than a claim for an individual.
+§ 3605(b) and Property Code § 301.026, apply the Regulation B rules on discouragement, permitted
+inquiries and adverse-action notice, name the CRA's four statutory ratings, and explain why the CRA is
+an obligation to a community rather than a claim for an individual.
