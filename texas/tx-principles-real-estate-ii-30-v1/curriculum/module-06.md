@@ -126,33 +126,30 @@ course cannot be reported as finished the same week you enrolled: for a 30-hour 
 hours of elapsed time must pass between registration and the report of completion.
 
 **Who the Act does not reach.** Section 1101.005 lists the persons and transactions to which the
-chapter does not apply, and a new license holder should be able to recognize the main ones. Among
-them: an attorney licensed in this state; an attorney-in-fact under a power of attorney conducting
-"not more than three real estate transactions annually"; a public official engaged in official
-duties; an auctioneer licensed under chapter 1802 conducting a real estate auction, "if the
-auctioneer does not perform another act of a broker"; a person conducting a transaction under a court
-order or the authority of a will or written trust instrument; a person employed by an owner in the
-sale of structures the owner erected in the course of the owner's business; an on-site manager of an
-apartment complex; and "an owner or the owner's employee who leases the owner's improved or
-unimproved real estate." The section also excludes certain subject matter entirely — transactions in
-minerals, mining or a quarry, standing timber, or other energy sources; cemetery lots; the lease or
-management of a hotel or motel; and a sale of real property "under a power of sale conferred by a
-deed of trust or other contract lien" — along with certain transactions conducted by general
-partners, managers and employees for limited partnerships and limited liability companies.
+chapter does not apply, and a new license holder should recognize the main ones: an attorney licensed
+in this state; an attorney-in-fact under a power of attorney conducting "not more than three real
+estate transactions annually"; a public official engaged in official duties; an auctioneer licensed
+under chapter 1802 conducting a real estate auction, "if the auctioneer does not perform another act
+of a broker"; a person conducting a transaction under a court order or the authority of a will or
+written trust instrument; a person employed by an owner in the sale of structures the owner erected in
+the course of the owner's business; an on-site manager of an apartment complex; and "an owner or the
+owner's employee who leases the owner's improved or unimproved real estate." The section also excludes
+certain subject matter entirely — minerals, mining or a quarry, standing timber, or other energy
+sources; cemetery lots; the lease or management of a hotel or motel; and a sale "under a power of sale
+conferred by a deed of trust or other contract lien."
 
 Section 1101.004 approaches the same boundary from the other side. Subsection (a) states that a
 person is engaged in real estate brokerage if the person, expecting valuable consideration, performs
 or offers, attempts or agrees to perform any act described by § 1101.002(1) "as a part of a
-transaction or as an entire transaction." Subsection (b) then confirms that certain activities do not
-by themselves make a person a broker, regardless of licensure: constructing, remodeling or repairing
-a building; sponsoring, promoting or managing an investment in real estate, or participating in one
-as principal, partner or financial manager; and entering into an obligation to pay another person
-secured by an interest in real property. A closely related provision, § 1101.0045, permits a person
-to acquire an option or an interest in a contract to purchase real property and then sell or assign
-it without a license, but only if the person does not use the option or contract "to engage in real
-estate brokerage" and "discloses in writing the nature of the equitable interest to any seller or
-potential buyer." Fail the disclosure, and § 1101.0045(b) says the person *is* engaging in real
-estate brokerage.
+transaction or as an entire transaction." Subsection (b) then confirms that three activities do not
+by themselves make a person a broker: constructing, remodeling or repairing a building; sponsoring,
+promoting or managing an investment in real estate, or participating in one as principal, partner or
+financial manager; and entering into an obligation to pay another person secured by an interest in
+real property. A closely related provision, § 1101.0045, permits a person to acquire an option or an
+interest in a contract to purchase real property and then sell or assign it without a license, but
+only if the person does not use it "to engage in real estate brokerage" and "discloses in writing the
+nature of the equitable interest to any seller or potential buyer." Fail the disclosure, and
+§ 1101.0045(b) says the person *is* engaging in real estate brokerage.
 
 **The shape of the chapter.** Chapter 1101 is organized into seventeen subchapters, lettered A
 through Q, and the organization is not arbitrary — it tracks the life of the regulatory relationship.
@@ -168,9 +165,9 @@ penalties. Subchapter Q closes with liability rules. The next unit walks that st
 One final structural provision belongs here. Section 1101.006 subjects the Commission to the Texas
 Sunset Act, chapter 325 of the Government Code, and provides that unless continued in existence, "the
 commission is abolished and this chapter and Chapter 1102 of this code and Chapter 221, Property
-Code, expire September 1, 2033." The Act is not permanent furniture. It is periodically re-examined
-by the Legislature, which is one reason the section-by-section detail you learn now is best learned
-as a structure you can re-read, not as a list you memorize once.
+Code, expire September 1, 2033." The Act is not permanent furniture; the Legislature re-examines it
+periodically, which is why what you learn now is best learned as a structure you can re-read rather
+than a list you memorize once.
 
 ### Statute reading exercise: The twelve acts of a broker
 
@@ -193,519 +190,386 @@ subparagraph (B) clauses (i) and (ii), which are set out and discussed above. Re
 
 ## Unit: Subchapter A - General Provisions
 
-The PRINS2-1 form places the whole of chapter 1101 under this unit: it assigns the 120-minute figure
-to "Subchapter A - General Provisions" and then lists subchapters B through Q beneath it without
-separate minutes. The evident intent is a guided tour of the entire Act, and that is what this unit
-is. Work through it once for orientation, then use it as a map. The skill this unit builds is not
-recall of section numbers. It is the ability to hear a problem and know which subchapter answers it.
+The PRINS2-1 form assigns the 120-minute figure to "Subchapter A - General Provisions" and then lists
+subchapters B through Q beneath it without separate minutes. The evident intent is a guided tour of
+the entire Act, and that is what this unit is. Work through it once for orientation, then use it as a
+map. The skill it builds is not recall of section numbers; it is the ability to hear a problem and
+know which subchapter answers it.
 
-**Subchapter A — General Provisions (§§ 1101.001–1101.006).** This is the definitional and boundary
-subchapter, covered in detail in the previous unit. It supplies the Act's short title (§ 1101.001),
-its definitions (§ 1101.002), the list of qualifying real estate courses and the delivery rules that
-police them (§ 1101.003), the functional statement of what real estate brokerage is (§ 1101.004), the
-equitable-interest rule for options and contract assignments (§ 1101.0045), the exemptions
-(§ 1101.005), and the Sunset provision (§ 1101.006). For a new license holder, the two propositions
-to carry away are these: the definition of "broker" in § 1101.002(1) is a list of *acts*, so
-licensure follows conduct rather than job title; and a **sales agent** under § 1101.002(7) is by
-definition a person sponsored by a licensed broker, so sponsorship is not an administrative add-on
-but part of what the credential is. A common error is to treat subchapter A as throat-clearing before
-the real statute begins. It is the opposite: nearly every later subchapter is unintelligible without
-§ 1101.002, because the later sections use those defined terms as terms of art.
+**Subchapter A — General Provisions (§§ 1101.001–1101.006).** The definitional and boundary
+subchapter, covered in detail in the previous unit. It supplies the short title (§ 1101.001), the
+definitions (§ 1101.002), the qualifying course list and the delivery rules that police it
+(§ 1101.003), the functional statement of what brokerage is (§ 1101.004), the equitable-interest rule
+for options and contract assignments (§ 1101.0045), the exemptions (§ 1101.005), and the Sunset
+provision (§ 1101.006). Two propositions carry forward: the definition of "broker" in § 1101.002(1)
+is a list of *acts*, so licensure follows conduct rather than job title; and a **sales agent** under
+§ 1101.002(7) is by definition sponsored by a licensed broker, so sponsorship is part of what the
+credential is rather than an administrative add-on. A common error is to treat subchapter A as
+throat-clearing before the real statute begins. It is the opposite — nearly every later subchapter is
+unintelligible without § 1101.002, because the later sections use those defined terms as terms of art.
 
 **Subchapter B — Texas Real Estate Commission (§§ 1101.051–1101.061).** This subchapter builds the
 regulator. Section 1101.051(a) provides that the Commission "consists of nine members appointed by
 the governor with the advice and consent of the senate," made up of "six members who have been
 engaged in the brokerage business as licensed brokers as their major occupation for the five years
-preceding appointment" and "three members who represent the public." Section 1101.051(b) requires
-each member to be a qualified voter, and subsection (c) requires that appointments be made without
-regard to the race, color, disability, sex, religion, age or national origin of the appointee.
-Section 1101.055(a) sets staggered six-year terms, "with the terms of three members expiring January
-31 of each odd-numbered year." Section 1101.056(a) provides that the governor designates a commission
-member who is a licensed broker as presiding officer, serving at the governor's pleasure, and
-subsection (b) has the Commission elect an assistant presiding officer and secretary each February;
-those three constitute the executive committee.
+preceding appointment" and "three members who represent the public." Section 1101.055(a) sets
+staggered six-year terms, "with the terms of three members expiring January 31 of each odd-numbered
+year," and § 1101.056(a) has the governor designate a member who is a licensed broker as presiding
+officer.
 
-The subchapter spends considerable effort keeping the regulator at arm's length from the industry it
-regulates. Section 1101.052 makes a person ineligible to serve as a *public* member if the person or
-the person's spouse is licensed by an occupational regulatory agency in the real estate industry, is
-employed by or helps manage a business regulated by the Commission, owns more than a 10 percent
-interest in such a business, or receives a substantial amount of goods, services or funds from the
-Commission. Section 1101.053 bars any commission member or executive-level employee whose own or
-whose spouse's role makes them "an officer, employee, or paid consultant of a Texas trade association
-in the real estate industry," and bars from membership or the general counsel role any person
-required to register as a lobbyist under chapter 305 of the Government Code because of compensated
-activity on behalf of a profession related to the Commission's operation. Note the vocabulary
-carefully — § 1101.053(a) defines a **Texas trade association** as "a cooperative and voluntarily
-joined statewide association of business or professional competitors." The statute itself treats
-trade associations as voluntary private bodies distinct from the regulator, a distinction the
-Professional Organizations unit returns to.
+The subchapter works hard to keep the regulator at arm's length from the industry it regulates.
+Section 1101.052 makes a person ineligible as a *public* member if the person or the person's spouse
+is licensed by an occupational regulatory agency in the real estate industry, helps manage a business
+the Commission regulates, or owns more than a 10 percent interest in one. Section 1101.053 bars any
+member or executive-level employee who is — or whose spouse is — "an officer, employee, or paid
+consultant of a Texas trade association in the real estate industry." Note the vocabulary:
+§ 1101.053(a) defines a **Texas trade association** as "a cooperative and voluntarily joined statewide
+association of business or professional competitors." The statute itself treats trade associations as
+voluntary private bodies distinct from the regulator, a point the Professional Organizations unit
+returns to. Section 1101.059 rounds this out by forbidding a new member from voting or deliberating
+until completing training that covers, among other things, "the scope of and limitations on the
+rulemaking authority of the commission" and the Commission actions that "may implicate federal
+antitrust law by limiting competition or impacting prices."
 
-Section 1101.057 lists grounds for removal, including failing to maintain the required qualifications
-and being "absent from more than half of the regularly scheduled commission meetings that the member
-is eligible to attend during each calendar year," unless excused by majority vote. Section 1101.059
-prohibits a newly appointed member from voting, deliberating or being counted in attendance until the
-member completes a training program covering, among other subjects, "the scope of and limitations on
-the rulemaking authority of the commission" and the types of Commission actions "that may implicate
-federal antitrust law by limiting competition or impacting prices." Section 1101.058(a) entitles a
-member to $75 for each day of official duties plus reimbursement of actual and necessary expenses.
-Section 1101.060 gives members quasi-judicial immunity from suit for actions taken as a member in
-compliance with the law.
-
-**Subchapter C — Executive Director and Other Commission Personnel (§§ 1101.101–1101.106).** A
-short administrative subchapter, but it explains why the agency you deal with day to day is staff
-rather than commissioners. Section 1101.101(a) requires the Commission to appoint an **executive
-director**; subsection (c) lets it employ "other subordinate officers and employees necessary to
-administer and enforce this chapter and Chapter 1102, including a general counsel, attorneys,
-investigators, and support staff." Section 1101.102 requires the Commission to "develop and implement
-policies that clearly separate the policymaking responsibilities of the commission and the management
-responsibilities of the executive director and the staff." Section 1101.103 subjects every member,
-officer, employee and agent of the Commission to the code of ethics and standards of conduct in
-chapter 572 of the Government Code. The practical point for a license holder is that the person who
-signs a notice of violation is ordinarily the executive director acting under delegated authority —
-a structure subchapter O then makes explicit.
+**Subchapter C — Executive Director and Other Commission Personnel (§§ 1101.101–1101.106).** A short
+administrative subchapter that explains why the agency you deal with day to day is staff rather than
+commissioners. Section 1101.101 requires the Commission to appoint an **executive director** and
+permits it to employ subordinate officers and employees "including a general counsel, attorneys,
+investigators, and support staff." Section 1101.102 requires policies that "clearly separate the
+policymaking responsibilities of the commission and the management responsibilities of the executive
+director and the staff." Section 1101.103 subjects every member, officer, employee and agent to the
+code of ethics in chapter 572 of the Government Code. The practical consequence: the person who signs
+a notice of violation is ordinarily the executive director, a structure subchapter O makes explicit.
 
 **Subchapter D — Commission Powers and Duties (§§ 1101.151–1101.161).** This is where the
-Commission's authority comes from, and it is the subchapter you cite when someone asks why a TREC
-*rule* binds you as firmly as the statute does. Section 1101.151(a) provides that the Commission
-"shall" administer chapters 1101 and 1102, adopt rules and standards for permissible advertising by a
-license holder acting as a residential rental locator, maintain a registry of certificate holders,
-and design and adopt a seal. Section 1101.151(b) provides that the Commission "may" adopt and enforce
-rules necessary to administer those chapters and "establish standards of conduct and ethics for
-persons licensed under this chapter and Chapter 1102." That grant is the legal foundation of Title 22
-of the Texas Administrative Code, chapter 535 — the TREC rules.
+Commission's authority comes from, and it is what you cite when someone asks why a TREC *rule* binds
+you as firmly as the statute. Section 1101.151(a) requires the Commission to administer chapters 1101
+and 1102, adopt rules on advertising by residential rental locators, maintain a registry of
+certificate holders, and adopt a seal. Section 1101.151(b) permits it to "adopt and enforce rules
+necessary to administer this chapter and Chapter 1102" and to "establish standards of conduct and
+ethics for persons licensed under this chapter and Chapter 1102." That grant is the legal foundation
+of Title 22 of the Texas Administrative Code, chapter 535 — the TREC rules.
 
 Section 1101.152 requires the Commission to adopt rules charging fees "in amounts reasonable and
 necessary to cover the costs of administering this chapter and the real estate recovery trust
-account," and then lists fifteen categories of fee: original broker application, broker renewal,
-original sales agent application, sales agent renewal, easement or right-of-way agent registration,
-license examination application, changes of place of business, name, active status or sponsoring
-broker, replacement of a lost license, education program approval under subchapter G, annual
-operation of an education program, transcript evaluation, license or registration history, a request
-for a determination of fitness, a criminal history check, and business entity registration under
-§ 1101.355(d). Notice what § 1101.152 does *not* do: it does not state any dollar amount. The amounts
-live in Commission rules, and you should look them up rather than repeat a figure from memory.
-Section 1101.154 is the exception that proves the rule — it fixes in the statute an additional fee
-"for each year of the term for which the license is issued or renewed" of $70 for a broker license
-and $20 for a sales agent license or certificate of registration, transmitted at least quarterly to
-Texas A&M University for the Texas Real Estate Research Center.
+account," across fifteen listed categories — original applications and renewals, examinations,
+changes of sponsoring broker or place of business, education program approval, fitness determinations
+and criminal history checks among them. Notice what the section does *not* do: it states no dollar
+amount. Those live in Commission rules, and you should look them up rather than repeat a figure from
+memory. Section 1101.154 is the exception that proves the rule, fixing in statute an additional annual
+fee of $70 for a broker license and $20 for a sales agent license, transmitted to Texas A&M University
+for the Texas Real Estate Research Center.
 
-Section 1101.155 governs contract forms and deserves close attention because it is the source of
-authority for the promulgated forms you will use constantly. Subsection (a) permits the Commission to
-adopt rules "in the public's best interest that require license holders to use contract forms
-prepared by the Texas Real Estate Broker-Lawyer Committee and adopted by the commission." Subsection
-(b) sets the limit: the Commission "may not prohibit a license holder from using for the sale,
-exchange, option, or lease of an interest in real property a contract form that is (1) prepared by
-the property owner; or (2) prepared by an attorney and required by the property owner." Subsection
-(c) requires that a Commission-adopted listing form include a provision informing the parties "that
-real estate commissions are negotiable" and a provision explaining the availability of Texas coastal
-natural hazards information where appropriate.
+Section 1101.155 governs contract forms and is the source of authority for the promulgated forms you
+will use constantly. Subsection (a) permits the Commission to adopt rules "in the public's best
+interest that require license holders to use contract forms prepared by the Texas Real Estate
+Broker-Lawyer Committee and adopted by the commission." Subsection (b) sets the limit: the Commission
+"may not prohibit a license holder from using … a contract form that is (1) prepared by the property
+owner; or (2) prepared by an attorney and required by the property owner." Subsection (c) requires a
+Commission-adopted listing form to include a provision informing the parties "that real estate
+commissions are negotiable," and one explaining the availability of Texas coastal natural hazards
+information where appropriate.
 
 Section 1101.156 restricts the Commission's own rulemaking over advertising: it may not restrict
 advertising or competitive bidding "except to prohibit a false, misleading, or deceptive practice,"
-and even then may not adopt a rule restricting the use of any advertising medium, restricting the
-license holder's personal appearance or voice in an advertisement, relating to the size or duration
-of an advertisement, restricting advertisement under a registered assumed or trade name, or requiring
-that the words "broker" or "agent," a reference to the Commission, or a license number appear in the
-advertisement. Section 1101.157 gives the Commission subpoena power to compel attendance of witnesses
-under oath and production of records relevant to an investigation, enforceable through the attorney
-general in district court. Section 1101.158 permits the Commission to appoint **advisory committees**,
-whose non-commissioner members serve at the will of the Commission, may not be compensated for
-service (though they may be reimbursed for actual and necessary expenses under Government Code
-§ 2110.004), may meet by telephone or video conference, and whose meetings are subject to the Texas
-Open Meetings Act, chapter 551 of the Government Code. Sections 1101.159 through 1101.161 round the
-subchapter out with a technology policy requiring that the public be able to interact with the
-Commission over the internet, a negotiated-rulemaking and alternative-dispute-resolution policy, and
-authority to accept gifts, grants and donations.
+and even then may not restrict any advertising medium, the license holder's appearance or voice, an
+advertisement's size or duration, or use of a registered trade name. Section 1101.157 supplies
+subpoena power to compel testimony under oath and production of records, enforceable through the
+attorney general. Section 1101.158 permits the Commission to appoint **advisory committees**, whose
+non-commissioner members serve at its will, may not be compensated for service, and whose meetings are
+subject to the Texas Open Meetings Act, chapter 551 of the Government Code.
 
 **Subchapter E — Public Interest Information and Complaint Procedures (§§ 1101.201–1101.206).** This
 subchapter tells a consumer how to complain and tells you what happens next. Section 1101.202(a)
-requires the Commission by rule to prescribe a notice containing the Commission's name, mailing
-address and telephone number "for the purpose of directing a complaint to the commission," and to
-establish methods by which regulated persons provide that notice to consumers. Section 1101.203
-requires a complaint-tracking system and a file on each complaint containing the parties, the subject
-matter, a summary of the investigation, and the disposition, with periodic status notice to the
-parties. Section 1101.204 is the operative investigation section. Subsection (b) requires the
-Commission to investigate a license holder's actions and records where "a person submits a signed,
-written complaint" and the complaint and evidence "provide reasonable cause for an investigation."
-Subsection (c) imposes a limitations period: the Commission "may not conduct an investigation … in
-connection with a complaint submitted later than the fourth anniversary of the date of the incident
-that is the subject of the complaint." Subsection (f) provides that an investigation "may not be
-initiated on the basis of an anonymous complaint" — an important protection, and a frequently
-misunderstood one. Subsection (h) requires consumer complaints to be given priority and investigated
-using a risk-based approach weighing potential harm, severity, the number of license holders
-involved, prior complaint history, and the number of potential violations. Subsection (i) requires
-dismissal of a complaint the Commission determines is "inappropriate or without merit."
+requires the Commission by rule to prescribe a notice containing its name, mailing address and
+telephone number "for the purpose of directing a complaint to the commission," and to establish how
+regulated persons deliver that notice. Section 1101.203 requires a complaint file for each matter and
+periodic status notice to the parties. Section 1101.204 is the operative investigation section:
+subsection (b) requires investigation where "a person submits a signed, written complaint" providing
+"reasonable cause"; subsection (c) bars investigation of "a complaint submitted later than the fourth
+anniversary of the date of the incident"; subsection (f) provides that an investigation "may not be
+initiated on the basis of an anonymous complaint"; subsection (h) requires consumer complaints to be
+given priority using a risk-based approach weighing potential harm, severity, the number of license
+holders involved and prior complaint history; and subsection (i) requires dismissal of a complaint
+found "inappropriate or without merit."
 
-Section 1101.2051 makes investigation material confidential and not subject to disclosure under the
-Public Information Act while the matter is live, with enumerated exceptions permitting disclosure to
-the respondent, to a person who is the subject of an audit, to experts and witnesses preparing a
-disciplinary proceeding, to licensing authorities in other jurisdictions, to law enforcement, and to
-the State Office of Administrative Hearings. Subsection (d-1) requires the Commission to "protect the
-identity of a complainant to the extent possible by excluding the complainant's identifying
-information from a complaint notice sent to a respondent." Subsection (e) then flips the default:
-"on the dismissal or final resolution of a complaint, investigation, or audit," the material becomes
-subject to disclosure. The lesson for a license holder is unglamorous but real — a resolved
-disciplinary matter is public.
+Section 1101.2051 makes investigation material confidential while a matter is live, with exceptions
+for the respondent, expert witnesses, other licensing jurisdictions, law enforcement and the State
+Office of Administrative Hearings, and subsection (d-1) requires the Commission to "protect the
+identity of a complainant to the extent possible." Subsection (e) then flips the default: "on the
+dismissal or final resolution of a complaint, investigation, or audit," the material becomes subject
+to disclosure. The lesson is unglamorous but real — a resolved disciplinary matter is public.
 
 **Subchapter F — Texas Real Estate Broker-Lawyer Committee (§§ 1101.251–1101.254).** Every Texas
-license holder uses forms this committee drafted, so it is worth knowing who they are. Section
-1101.252(a) provides that the **Texas Real Estate Broker-Lawyer Committee** consists of 13 members:
-"six members appointed by the commission; six members of the State Bar of Texas appointed by the
-president of the state bar; and one public member appointed by the governor." Section 1101.253 sets
-staggered six-year terms, with two commission appointees and two State Bar appointees rotating every
-two years and the public member's term expiring every six years. Section 1101.254 states the
-committee's mandate: it "shall draft and revise contract forms that are capable of being standardized
-to expedite real estate transactions and minimize controversy," and those forms "must contain
-safeguards adequate to protect the principals in the transaction."
+license holder uses forms this committee drafted. Section 1101.252(a) provides that the **Texas Real
+Estate Broker-Lawyer Committee** consists of 13 members: "six members appointed by the commission; six
+members of the State Bar of Texas appointed by the president of the state bar; and one public member
+appointed by the governor," serving staggered six-year terms under § 1101.253. Section 1101.254
+states the mandate: the committee "shall draft and revise contract forms that are capable of being
+standardized to expedite real estate transactions and minimize controversy," and those forms "must
+contain safeguards adequate to protect the principals in the transaction."
 
 Hold three provisions in view together and the Texas forms system snaps into focus. The committee
-drafts the forms (§ 1101.254). The Commission may adopt rules requiring license holders to use them
-(§ 1101.155(a)) but may not forbid an owner's own form or an attorney-prepared form the owner
-requires (§ 1101.155(b)). And a license holder who fills out an adopted form incidental to acting as
-a broker "is not engaged in the unauthorized or illegal practice of law" (§ 1101.654(b)). The
-committee's half-lawyer composition is what makes that last protection defensible: the drafting was
-done by attorneys, so completing the blanks is clerical rather than the practice of law.
+drafts the forms (§ 1101.254). The Commission may require their use (§ 1101.155(a)) but may not
+forbid an owner's own form or an attorney-prepared form the owner requires (§ 1101.155(b)). And a
+license holder who fills out an adopted form incidental to acting as a broker "is not engaged in the
+unauthorized or illegal practice of law" (§ 1101.654(b)). The committee's half-lawyer composition is
+what makes that last protection defensible: attorneys did the drafting, so completing the blanks is
+clerical rather than the practice of law.
 
 **Subchapter G — Approval of Real Estate Educational Programs and Courses of Study
 (§§ 1101.301–1101.305).** This subchapter regulates the schools. Section 1101.301(a) permits the
-Commission by rule to establish standards for approving qualifying educational programs and courses
-of study in real estate and real estate inspection conducted in Texas — "excluding programs and
-courses offered by public high schools and accredited colleges and universities" — and to develop
-minimum education and experience requirements for instructors. Subsection (b) makes the Commission
-the judge of whether a course satisfies chapter 1101 or 1102. Subsection (c) requires the Commission
-to adopt rules setting an **examination passage rate benchmark** for each license category, "based on
-the average percentage of examinees that pass the licensing exam on the first attempt," which a
-program must meet or exceed before its approval is renewed; subsection (e) permits probationary
-renewal where the Commission finds the program capable of meeting the benchmark within a reasonable
-time. Section 1101.304 requires rules for collecting and publishing passage-rate data on the
-Commission's website, aggregated by program and license group. Section 1101.305 permits appointment
-of a review committee to evaluate an underperforming program and report recommendations, while
-providing that such a committee "may not revoke the approval of an educational program."
+Commission by rule to set standards for approving qualifying educational programs and courses of
+study in Texas — "excluding programs and courses offered by public high schools and accredited
+colleges and universities" — and to develop minimum education and experience requirements for
+instructors. Subsection (c) requires rules setting an **examination passage rate benchmark** for each
+license category, "based on the average percentage of examinees that pass the licensing exam on the
+first attempt," which a program must meet or exceed before renewal, with probationary renewal
+available under subsection (e). Section 1101.304 requires passage-rate data to be published on the
+Commission's website by program and license group. Section 1101.302 requires an educational
+institution other than an accredited college or university to maintain "a corporate surety bond or
+other security acceptable to the commission" of $20,000 for the benefit of a party damaged by the
+institution's failure.
 
 The Commission has exercised the § 1101.301 authority. Rule 22 TAC § 535.64 sets content requirements
-for qualifying courses and does so by adoption by reference: "Principles of Real Estate II shall
-contain the topics and units outlined in the PRINS 2-1, Qualifying Real Estate Course Approval Form,
-Principles of Real Estate II, hereby adopted by reference." The same rule adopts by reference the
-approval forms for Principles of Real Estate I, Law of Agency, Law of Contracts, Promulgated Contract
-Forms, Real Estate Finance and Real Estate Brokerage as mandatory qualifying courses, and a list of
-elective qualifying courses including Residential Property Management, Real Estate Marketing, Real
-Estate Math, Real Estate Appraisal, Real Estate Investment, Real Estate Law and Residential
-Inspection for Real Estate Agents. Section 535.64 also states that the adopted forms "are available
-from the Texas Real Estate Commission at www.trec.texas.gov." That is the mechanism by which the very
-outline you are studying became binding content law. Two further provisions round out the subchapter:
-§ 1101.302 requires an educational institution other than an accredited college or university to
-maintain "a corporate surety bond or other security acceptable to the commission" in the amount of
-$20,000, payable to the Commission and for the benefit of a party damaged by the institution's
-failure to fulfill its obligations; and § 1101.303 governs approval of continuing education providers
-and courses for two-year periods.
+for qualifying courses by adoption by reference: "Principles of Real Estate II shall contain the
+topics and units outlined in the PRINS 2-1, Qualifying Real Estate Course Approval Form, Principles of
+Real Estate II, hereby adopted by reference." The same rule adopts by reference the approval forms for
+Principles of Real Estate I, Law of Agency, Law of Contracts, Promulgated Contract Forms, Real Estate
+Finance and Real Estate Brokerage as mandatory qualifying courses, plus a list of electives, and
+states that the forms "are available from the Texas Real Estate Commission at www.trec.texas.gov."
+That is the mechanism by which the very outline you are studying became binding content law.
 
-**Subchapter H — License Requirements (§§ 1101.351–1101.367).** This is the subchapter that answers
-"do I need a license, and how do I get one." It opens with the central prohibition. Section
-1101.351(a): "Unless a person holds a license issued under this chapter, the person may not (1) act
-as or represent that the person is a broker or sales agent; or (2) act as a residential rental
-locator." Subsection (a-1) extends the rule to entities: "Unless a business entity holds a license
-issued under this chapter, the business entity may not act as a broker." Subsection (b) forecloses
-jumping the gun: an applicant "may not act as a broker or sales agent until the person receives the
-license evidencing that authority." And subsection (c) states the sponsorship rule in its operative
-form: "A licensed sales agent may not engage or attempt to engage in real estate brokerage unless the
-sales agent is sponsored by a licensed broker and is acting for that broker."
+**Subchapter H — License Requirements (§§ 1101.351–1101.367).** This subchapter answers "do I need a
+license, and how do I get one." It opens with the central prohibition. Section 1101.351(a): "Unless a
+person holds a license issued under this chapter, the person may not (1) act as or represent that the
+person is a broker or sales agent; or (2) act as a residential rental locator." Subsection (a-1)
+extends the rule to entities. Subsection (b) forecloses jumping the gun: an applicant "may not act as
+a broker or sales agent until the person receives the license." And subsection (c) states the
+sponsorship rule in operative form: "A licensed sales agent may not engage or attempt to engage in
+real estate brokerage unless the sales agent is sponsored by a licensed broker and is acting for that
+broker."
 
-Section 1101.352 requires an application on a Commission-prescribed form and requires the applicant
-to disclose whether the applicant has entered a plea of guilty or nolo contendere to a felony or been
-convicted of a felony where the time for appeal has elapsed or the conviction was affirmed — a
-disclosure that must be made "even if an order has granted community supervision suspending the
-imposition of the sentence." Section 1101.3521 requires a complete and legible set of fingerprints
-for the purpose of obtaining criminal history record information from the Texas Department of Public
-Safety and the FBI, and directs the Commission to refuse to issue or renew an active license for a
-person who does not comply. Section 1101.353 offers a useful early step: a person may, *before*
-applying, request a **determination of fitness** and pay the required fee, and the Commission must
-make the determination and notify the person within 30 days. A prospective student with a criminal
-history should know this section exists before paying for 180 hours of coursework.
+Section 1101.352 requires an application on a Commission form and disclosure of a guilty or nolo
+contendere plea to a felony or a felony conviction where the appeal time has elapsed — a disclosure
+required "even if an order has granted community supervision suspending the imposition of the
+sentence." Section 1101.3521 requires a complete and legible set of fingerprints for criminal history
+record information from the Texas Department of Public Safety and the FBI, and directs the Commission
+to refuse to issue or renew an active license for a person who does not comply. Section 1101.353
+offers a useful early step: a person may, *before* applying, request a **determination of fitness**
+and pay the required fee, and the Commission must determine and notify within 30 days.
 
-Section 1101.354 sets the general eligibility requirements. To receive a license a person must, at
-the time of application, "be at least 18 years of age" and "be a citizen of the United States or a
-lawfully admitted alien"; must "satisfy the commission as to the applicant's honesty,
-trustworthiness, and integrity"; must "demonstrate competence based on an examination under
-Subchapter I"; and must "complete the required courses of study, including any required qualifying
-real estate courses prescribed under this chapter." Those four requirements — age and status,
-character, examination, education — are the skeleton of Texas licensure.
+Section 1101.354 sets the general eligibility requirements. A person must, at the time of
+application, "be at least 18 years of age" and "be a citizen of the United States or a lawfully
+admitted alien"; must "satisfy the commission as to the applicant's honesty, trustworthiness, and
+integrity"; must "demonstrate competence based on an examination under Subchapter I"; and must
+"complete the required courses of study, including any required qualifying real estate courses
+prescribed under this chapter." Age and status, character, examination, education — that is the
+skeleton of Texas licensure.
 
-Section 1101.355 adds requirements for business entities. To be licensed, an entity must designate
-one of its managing officers as its broker, and must "provide proof that the entity maintains errors
-and omissions insurance with a minimum annual limit of $1 million for each occurrence if the
-designated broker owns less than 10 percent of the business entity." An entity may not act as a
-broker "unless the entity's designated broker is a licensed individual broker in active status and
-good standing." Subsection (c) provides that an entity receiving compensation on behalf of a license
-holder must itself be licensed as a broker, and subsection (d) carves out a narrow exception for a
-limited liability company or S corporation that receives compensation on behalf of the license holder
-who owns at least 51 percent of it, performs no other acts of a broker, and is registered with the
-Commission.
+Section 1101.355 adds requirements for business entities: designation of a managing officer as the
+entity's broker, and proof of "errors and omissions insurance with a minimum annual limit of $1
+million for each occurrence if the designated broker owns less than 10 percent of the business
+entity." An entity may not act as a broker "unless the entity's designated broker is a licensed
+individual broker in active status and good standing."
 
-Section 1101.356 sets broker qualifications and shows how far above a sales agent license a broker
-license sits: an applicant must have "at least four years of active experience as a license holder
-during the 60 months preceding the date the application is filed," must have completed the hours of
-qualifying and related courses required by Commission rule "not to exceed 60 semester hours or
-equivalent classroom hours," and must have attended the broker responsibility course approved under
-§ 1101.458. Section 1101.358(a) sets the sales agent education requirement at "at least 12 semester
-hours, or equivalent classroom hours, of qualifying real estate courses required by commission rule,"
-with a waiver in subsection (b) if the applicant held a Texas broker or sales agent license within
-the preceding six months.
+Section 1101.356 shows how far above a sales agent license a broker license sits: an applicant must
+have "at least four years of active experience as a license holder during the 60 months preceding the
+date the application is filed," the qualifying and related course hours required by rule "not to
+exceed 60 semester hours or equivalent classroom hours," and attendance at the broker responsibility
+course approved under § 1101.458. Section 1101.358(a) sets the sales agent education requirement at
+"at least 12 semester hours, or equivalent classroom hours, of qualifying real estate courses
+required by commission rule."
 
-The remainder of the subchapter deals with what happens to a license after it issues. Section
-1101.363(a) requires the Commission to issue the appropriate license to a qualifying applicant, and
-subsection (b) provides for an **inactive sales agent license**: the Commission may issue one to a
-person who satisfies all requirements, but "[t]he person may not act as a sales agent unless the
-person is sponsored by a licensed broker who has notified the commission." Section 1101.364 requires
-immediate written notice of a denial and entitles the applicant to a hearing under § 1101.657.
-Section 1101.365 permits a probationary license on reasonable terms adopted by rule. Section 1101.366
-lets a broker who is not acting as a broker and not sponsoring a sales agent apply for inactive
-status; a broker on inactive status "may not perform any activity regulated under this chapter" but
-"must pay renewal fees," and must have terminated each sponsorship by written notice given before the
-30th day preceding the application. Section 1101.367(a) handles the sales agent side: when the
-relationship between a sales agent and the sponsoring broker terminates, "the terminating party shall
-immediately notify in writing both the other party and the commission," and on receiving that notice
-the Commission "shall place the sales agent license on inactive status." Subsection (b) restores
-active status when a licensed broker files a request assuming sponsorship, with the appropriate fee.
+The rest of the subchapter deals with the license after it issues. Section 1101.363(b) provides for
+an **inactive sales agent license**: the Commission may issue one to a person who satisfies all
+requirements, but "[t]he person may not act as a sales agent unless the person is sponsored by a
+licensed broker who has notified the commission." Section 1101.364 requires immediate written notice
+of a denial and a hearing right under § 1101.657; § 1101.365 permits a probationary license.
+Section 1101.366 lets a broker who is not acting as a broker and not sponsoring anyone go inactive; a
+broker on inactive status "may not perform any activity regulated under this chapter" but "must pay
+renewal fees." Section 1101.367(a) handles the sales agent side: when the sponsorship relationship
+terminates, "the terminating party shall immediately notify in writing both the other party and the
+commission," and the Commission "shall place the sales agent license on inactive status." Subsection
+(b) restores active status when a licensed broker files a request assuming sponsorship with the
+appropriate fee.
 
 **Subchapter I — Examinations (§§ 1101.401–1101.405).** Section 1101.401(a) ties the examination to
-the competency requirement of § 1101.354(3), and requires that it be "prepared or contracted for by
-the commission." Subsection (c) requires it to be "of sufficient scope in the judgment of the
-commission to determine whether a person is competent to act as a broker or sales agent in a manner
-that will protect the public." Subsection (d) states a rule students often find reassuring: "The
-examination for a sales agent license must be less exacting and less stringent than the broker
-examination." Subsection (e) requires the Commission to provide each applicant with study material
-and references on which the examination is based, and subsection (f) sets a deadline — an applicant
-"must satisfy the examination requirement not later than one year after the date the license
-application is filed."
+the competency requirement of § 1101.354(3). Subsection (c) requires it to be "of sufficient scope in
+the judgment of the commission to determine whether a person is competent to act as a broker or sales
+agent in a manner that will protect the public." Subsection (d) states a rule students find
+reassuring: "The examination for a sales agent license must be less exacting and less stringent than
+the broker examination." Subsection (f) sets a deadline — an applicant "must satisfy the examination
+requirement not later than one year after the date the license application is filed." Section
+1101.403 permits the Commission to contract with a testing service so long as it "retains the
+authority to establish the scope and type of the examination." Section 1101.404 requires notice of
+results by the 10th day after the examination, provides that "[t]he results of an examination are
+confidential," and entitles a person who fails to request a written analysis of their performance.
+Section 1101.405(b) provides that an applicant who "fails the examination three consecutive times may
+not apply for reexamination or submit a new license application" without evidence of additional
+education prescribed by the Commission. Note what this subchapter does *not* contain: a passing score.
+Do not repeat a pass-percentage figure you have heard secondhand.
 
-Section 1101.402 requires the Commission to waive the examination for an applicant previously
-licensed in Texas as a broker or sales agent if the application "is filed before the second
-anniversary of the expiration date of the equivalent license." Section 1101.403 permits the
-Commission to contract with a testing service, provided the Commission "retains the authority to
-establish the scope and type of the examination," and permits the service to correspond with
-applicants and collect examination fees directly. Section 1101.404 requires notice of results not
-later than the 10th day after the examination, requires notice of the reason for any longer delay
-before that 10th day, entitles a person who fails to request a written analysis of the person's
-performance, and provides that "[t]he results of an examination are confidential." Section 1101.405
-governs retaking: an applicant who fails may apply for reexamination with the proper fee, but "[a]n
-applicant who fails the examination three consecutive times may not apply for reexamination or submit
-a new license application unless the applicant submits evidence satisfactory to the commission that
-the applicant has completed additional education, as prescribed by the commission, since the date of
-the applicant's last examination." Note what this subchapter does *not* contain: a passing score. The
-statute leaves the scope and standard to the Commission and its testing service, so do not repeat a
-pass-percentage figure you have heard secondhand.
+**Subchapter J — License Renewal (§§ 1101.451–1101.459).** Section 1101.451(a) permits issuance or
+renewal "for a period of 24 months." Subsection (e) states the late-renewal structure in multiples
+rather than dollars: expired "for 90 days or less," a fee "equal to 1-1/2 times the required renewal
+fee"; "more than 90 days but less than six months," two times. Subsection (f) is the cliff: "If a
+person's license has been expired for six months or longer, the person may not renew the license. The
+person may obtain a new license by complying with the requirements and procedures for obtaining an
+original license."
 
-**Subchapter J — License Renewal (§§ 1101.451–1101.459).** Section 1101.451(a) permits the Commission
-to issue or renew a license "for a period of 24 months." Subsection (e) sets the late-renewal
-structure in multiples rather than dollars: a person whose license "has been expired for 90 days or
-less may renew the license by paying to the commission a fee equal to 1-1/2 times the required
-renewal fee," and if the license "has been expired for more than 90 days but less than six months,"
-the multiplier is two times. Subsection (f) is the cliff: "If a person's license has been expired for
-six months or longer, the person may not renew the license. The person may obtain a new license by
-complying with the requirements and procedures for obtaining an original license." Six months of
-inattention converts a renewal into a fresh application.
-
-Section 1101.452 requires proof of continuing education compliance for an active renewal not subject
-to § 1101.454, and repeats the felony-disclosure obligation. Section 1101.4521 applies the fingerprint
-and criminal history requirements of § 1101.3521 to renewals. Section 1101.454(a) governs the first
-renewal of a sales agent license, requiring "satisfactory evidence of completion of at least 18
+Section 1101.454(a) governs the first renewal of a sales agent license, requiring "at least 18
 semester hours, or equivalent classroom hours, of qualifying real estate courses," and subsection (d)
 forecloses relief: "The commission may not waive the requirements for renewal under this section."
-Section 1101.455 sets continuing education for everyone else. Subsection (b) requires the Commission
-by rule to prescribe the number of classroom hours, "which must be at least 15 classroom hours," and
-provides that the Commission "may not increase the number of required classroom hours by more than
-three over the term of a license." Subsection (e) requires that "at least eight of the continuing
-education hours" provide current information on enumerated legal topics — Commission rules, fair
-housing laws, Property Code issues including landlord-tenant law, agency law, antitrust laws,
-subchapter E of chapter 17 of the Business & Commerce Code, disclosures to buyers, landlords, tenants
-and sellers, promulgated contract and addendum forms, unauthorized practice of law, case studies
-involving violations, FHA and VA regulations, tax laws, property tax consulting laws and legal
-issues, other approved legal topics, or "the ethical requirements of engaging in real estate
-brokerage." Subsection (j) provides that daily classroom course segments "must be at least one hour
-and not more than 10 hours," and subsection (l) applies an elapsed-time rule to continuing education
-correspondence courses: completion may not be reported until elapsed time "is equal to or greater
-than the number of hours for which credit is claimed." Section 1101.458 requires a broker — and a
-sales agent "who supervises another license holder" — to attend a Commission-approved **broker
-responsibility course** during the term of the current license, a course the Commission prescribes by
-rule and which "may not exceed six classroom hours." Section 1101.457 permits the Commission to adopt
-procedures deferring continuing education, with a fee "not to exceed $200" in addition to any late
-renewal fee and completion required "not later than the 60th day after the date the license is
-issued, renewed, or returned to active status."
+Section 1101.455 sets continuing education for everyone else: the Commission prescribes the classroom
+hours by rule, "which must be at least 15 classroom hours," and "at least eight" of them must provide
+current information on enumerated legal topics including Commission rules, fair housing laws,
+Property Code issues, agency law, antitrust laws, promulgated contract and addendum forms,
+unauthorized practice of law, and "the ethical requirements of engaging in real estate brokerage"
+(§ 1101.455(e)). Section 1101.458 requires a broker — and a sales agent "who supervises another
+license holder" — to attend a Commission-approved **broker responsibility course**, which "may not
+exceed six classroom hours." Sections 1101.452 and 1101.4521 add the felony disclosure and the
+criminal history check to every renewal.
 
 **Subchapter K — Certificate Requirements (§§ 1101.501–1101.509).** This subchapter governs a
-credential that is not a real estate license at all. Section 1101.002(3-a) defines an **easement or
+credential that is not a real estate license. Section 1101.002(3-a) defines an **easement or
 right-of-way agent** as a person who "sells, buys, leases, or transfers an easement or right-of-way
-for another, for compensation or with the expectation of receiving compensation, for use in
-connection with telecommunication, utility, railroad, or pipeline service." Section 1101.501 provides
-that a person may not act as such an agent unless the person either holds a chapter 1101 license or
-holds a **certificate of registration** issued under this subchapter. Section 1101.502 sets
-eligibility — at least 18, a citizen or lawfully admitted alien, and completion of the required
-coursework — and § 1101.509(b) specifies that an original applicant must complete "at least 16
-classroom hours" of approved coursework in "the law of eminent domain, including the rights of
-property owners," "appropriate standards of professionalism in contacting and conducting negotiations
-with property owners," and "ethical considerations in the performance of right-of-way acquisition
-services," with a comparable 16-hour requirement for renewal under subsection (c). Section 1101.507
-requires a certificate holder to "prominently display at all times the holder's certificate of
-registration in the holder's place of business," and § 1101.506 requires notice to the Commission and
-a new certificate within 10 days of moving the place of business. For most license holders the
-practical takeaway is a boundary: if your work is acquiring pipeline or utility right-of-way for
-compensation, subchapter K is your subchapter, and a real estate license is one of two ways to be
-lawfully in that business.
+for another, for compensation," for use in telecommunication, utility, railroad or pipeline service.
+Section 1101.501 provides that such a person must hold either a chapter 1101 license or a
+**certificate of registration**. Section 1101.509(b) requires an original applicant to complete "at
+least 16 classroom hours" of approved coursework in "the law of eminent domain, including the rights
+of property owners," professionalism in negotiating with property owners, and "ethical considerations
+in the performance of right-of-way acquisition services.
 
 **Subchapter L — Practice by License Holder (§§ 1101.551–1101.563).** This is the subchapter about
-what you actually do, and it is the one you will consult most often in your first year. Section
-1101.551 supplies two definitions used throughout: an **intermediary** is "a broker who is employed
-to negotiate a transaction between the parties to a transaction and for that purpose may act as an
-agent of the parties," and a **party** is "a prospective buyer, seller, landlord, or tenant or an
-authorized representative," a term that expressly "does not include a license holder who represents a
-party."
+what you actually do, and the one you will consult most often in your first year. Section 1101.551
+supplies two definitions: an **intermediary** is "a broker who is employed to negotiate a transaction
+between the parties to a transaction and for that purpose may act as an agent of the parties," and a
+**party** is a prospective buyer, seller, landlord or tenant or an authorized representative — a term
+that expressly "does not include a license holder who represents a party."
 
 Section 1101.552(a) requires a resident broker to "maintain a fixed office in this state," designated
-on the broker's license, with an application for a corrected license due within 10 days of moving;
-subsection (d) exempts a nonresident licensed broker from maintaining a Texas place of business.
-Subsection (e) requires every license holder to keep the Commission supplied with a current mailing
-address, business address, business telephone number and business e-mail address, and, for an
-associated broker, the name of the broker with whom the license holder is associated; subsection (f)
-requires notice of any change.
+on the broker's license, with a corrected license due within 10 days of moving; subsection (d)
+exempts a nonresident broker. Subsection (e) requires every license holder to keep the Commission
+supplied with a current mailing address, business address, business telephone number and business
+e-mail address.
 
 Section 1101.555 states a duty every buyer's agent must build into a routine: "When an offer to
 purchase real estate in this state is signed, a license holder shall advise each buyer, in writing,
-that the buyer should (1) have the abstract covering the real estate that is the subject of the
-contract examined by an attorney chosen by the buyer; or (2) be provided with or obtain a title
-insurance policy." The consequence of skipping it is severe and appears twice in the Act: it is a
-ground for discipline under § 1101.652(b)(29), and under § 1101.806(d) a license holder who fails to
-give that advice "may not receive payment of or recover any commission agreed to be paid on the
-sale." Section 1101.556 runs the other direction, relieving a license holder of any requirement to
-inquire about, disclose or release information about whether a previous or current occupant had or
-may have had AIDS, an HIV-related illness or an HIV infection, or whether "a death occurred on a
-property by natural causes, suicide, or accident unrelated to the condition of the property."
+that the buyer should (1) have the abstract … examined by an attorney chosen by the buyer; or (2) be
+provided with or obtain a title insurance policy." The consequence of skipping it appears twice: it is
+a disciplinary ground under § 1101.652(b)(29), and under § 1101.806(d) a license holder who fails to
+give that advice "may not receive payment of or recover any commission agreed to be paid on the sale."
+Section 1101.556 runs the other way, relieving a license holder of any duty to inquire about or
+disclose whether an occupant had or may have had AIDS, an HIV-related illness or an HIV infection, or
+whether "a death occurred on a property by natural causes, suicide, or accident unrelated to the
+condition of the property."
 
 Section 1101.557(a) states the agency baseline: "A broker who represents a party in a real estate
-transaction or who lists real estate for sale under an exclusive agreement for a party is that
-party's agent." Subsection (b) requires such a broker to inform the party of material information
-received, "including the receipt of an offer by the broker," and to "at a minimum, answer the party's
-questions and present any offer to or from the party."
+transaction or who lists real estate for sale under an exclusive agreement for a party is that party's
+agent." Subsection (b) requires such a broker to inform the party of material information received,
+"including the receipt of an offer," and to "at a minimum, answer the party's questions and present
+any offer to or from the party."
 
 Section 1101.558 governs disclosure of representation. Subsection (b) requires a license holder who
-represents a party "to disclose, orally or in writing, that representation at the time of the license
-holder's first contact with (1) another party to the transaction; or (2) another license holder who
-represents another party." Subsection (b-1) requires more at the next stage: "At the time of a
-license holder's first substantive communication with a party relating to a proposed transaction
-regarding specific real property," the license holder must provide written notice in at least a
-10-point font describing the ways a broker can represent a party "including as an intermediary," the
-basic duties a broker owes a party it represents, the basic obligations a broker has to a party it
-does not represent, and "the name, license number, and contact information for the license holder and
-the license holder's supervisor and broker, if applicable." Subsection (b-2) directs the Commission
-to prescribe by rule the text of the first two items and the methods of delivery. Subsection (c)
-excuses the written notice in three situations: a residential lease "for less than one year" where a
-sale is not being considered; a meeting with a party the license holder knows is represented by
-another license holder; and a communication "at a property that is held open for any prospective
-buyer or tenant" concerning that property.
+represents a party to disclose that representation "orally or in writing … at the time of the license
+holder's first contact with" another party or another party's license holder. Subsection (b-1)
+requires more at the next stage: "At the time of a license holder's first substantive communication
+with a party relating to a proposed transaction regarding specific real property," the license holder
+must give written notice in at least a 10-point font describing the ways a broker can represent a
+party "including as an intermediary," the duties owed to a represented party, the obligations owed to
+an unrepresented one, and "the name, license number, and contact information for the license holder
+and the license holder's supervisor and broker." Subsection (c) excuses that written notice for a
+residential lease "for less than one year" where a sale is not contemplated, for a meeting with a
+party the license holder knows is represented, and for a communication at an open house about that
+property.
 
 Sections 1101.559 through 1101.561 handle the intermediary. A broker may act as intermediary if the
-broker "obtains written consent from each party" and "the written consent of the parties states the
-source of any expected compensation to the broker" (§ 1101.559(a)). A written listing or buyer
-representation agreement authorizing intermediary status suffices as written consent if it "specifies
-in conspicuous bold or underlined print the conduct that is prohibited under Section 1101.651(d)"
-(§ 1101.559(b)). An intermediary "shall act fairly and impartially" (§ 1101.559(c)). Under
-§ 1101.560, the broker may appoint one associated license holder to communicate with and carry out
-the instructions of one party and another to do so for the other party, but only if the written
-consent authorizes appointments and the broker gives written notice of the appointment to all
+broker "obtains written consent from each party" and the consent "states the source of any expected
+compensation to the broker" (§ 1101.559(a)); a listing or buyer representation agreement suffices as
+consent if it "specifies in conspicuous bold or underlined print the conduct that is prohibited under
+Section 1101.651(d)" (§ 1101.559(b)); and an intermediary "shall act fairly and impartially"
+(§ 1101.559(c)). Under § 1101.560 the broker may appoint one associated license holder to each party,
+but only if the written consent authorizes appointments and the broker gives written notice to all
 parties; an appointed license holder "may provide opinions and advice during negotiations to the
 party to whom the license holder is appointed." Section 1101.561(a) provides that intermediary duties
 "supersede the duties of a license holder established under any other law, including common law," and
 subsection (b) provides that a broker "must agree to act as an intermediary" if the broker agrees to
-represent both a buyer or tenant and a seller or landlord in the same transaction.
+represent both sides.
 
 Two sections added by the 89th Legislature and effective January 1, 2026 changed how a Texas license
 holder starts work with a buyer, and they are now in force. Section 1101.562 permits a broker to show
-property "without representing the party" only if the broker has not agreed orally or in writing to
-represent the party, is not otherwise acting as the party's agent, "does not provide to the party
-opinions or advice regarding the real property or real estate transactions in general," and "does not
-perform any other act of real estate brokerage for the party." Before showing under that section, the
-broker must either disclose representation of the owner under § 1101.558(b) or provide the written
-notice described in § 1101.558(b-1). Subsection (c) preserves a narrow allowance: the broker "may
-confirm information to a party regarding the size, price, and terms of the real property available
-for sale or lease."
+property "without representing the party" only if the broker has not agreed to represent the party,
+is not otherwise acting as the party's agent, "does not provide to the party opinions or advice
+regarding the real property or real estate transactions in general," and "does not perform any other
+act of real estate brokerage for the party." Before showing, the broker must either disclose
+representation of the owner under § 1101.558(b) or give the written notice described in
+§ 1101.558(b-1). Subsection (c) preserves a narrow allowance: the broker "may confirm information to a
+party regarding the size, price, and terms of the real property available for sale or lease."
 
 Section 1101.563 then requires a written agreement. Subsection (a) defines **residential real
-property** as a single-family house; a duplex, triplex or quadraplex; or a unit in a multiunit
-residential structure held under a condominium or cooperative system. Subsection (b) is the operative
-command: "A license holder who performs any act of real estate brokerage for a prospective buyer of
-residential real property must enter into a written agreement with the prospective buyer before (1)
-showing any residential real property to the prospective buyer; or (2) if no residential real
-property will be shown, presenting an offer to purchase residential real property on behalf of the
-prospective buyer." Subsection (c) prescribes the contents: the services to be provided; the
-termination date; whether the agreement is exclusive or non-exclusive; whether the license holder
-represents the buyer as the buyer's agent or does not, where the only brokerage act is showing
-property under § 1101.562; "the amount or rate of compensation the broker will receive and how this
-amount will be determined"; and a disclosure "in conspicuous language that broker compensation is not
-set by law and is fully negotiable." Subsection (d) requires a separate agreement if brokerage acts
-beyond showing will follow, and subsection (e) constrains a showing-only agreement: it "may not (1)
-be an exclusive agreement with the license holder; or (2) state a termination date more than fourteen
-days from the date the agreement is entered into." Failing to enter the required agreement is its own
-ground for discipline under § 1101.652(b)(34).
+property** as a single-family house; a duplex, triplex or quadraplex; or a unit held under a
+condominium or cooperative system. Subsection (b) is the operative command: "A license holder who
+performs any act of real estate brokerage for a prospective buyer of residential real property must
+enter into a written agreement with the prospective buyer before (1) showing any residential real
+property to the prospective buyer; or (2) if no residential real property will be shown, presenting an
+offer to purchase residential real property on behalf of the prospective buyer." Subsection (c)
+prescribes the contents: the services to be provided; the termination date; whether the agreement is
+exclusive or non-exclusive; whether the license holder represents the buyer as agent or does not,
+where the only act is showing under § 1101.562; "the amount or rate of compensation the broker will
+receive and how this amount will be determined"; and a disclosure "in conspicuous language that broker
+compensation is not set by law and is fully negotiable." Subsection (e) constrains a showing-only
+agreement: it "may not (1) be an exclusive agreement with the license holder; or (2) state a
+termination date more than fourteen days from the date the agreement is entered into." Failing to
+enter the required agreement is its own disciplinary ground under § 1101.652(b)(34).
 
 **Subchapter M — Real Estate Recovery Trust Account (§§ 1101.601–1101.615).** Ask a consumer what
 protects them if a license holder steals their earnest money and disappears, and this is the answer.
 Section 1101.601(a) requires the Commission to maintain a **real estate recovery trust account** "to
 reimburse aggrieved persons who suffer actual damages" caused by an act described by § 1101.602
 committed by a license holder, a certificate holder, or "a person who does not hold a license or
-certificate and who is an employee or agent of a license or certificate holder," provided under
-subsection (b) that the license or certificate holder "held the license or certificate at the time
-the act was committed."
+certificate and who is an employee or agent of a license or certificate holder," provided the license
+holder held the license "at the time the act was committed."
 
-Section 1101.602 defines the covered conduct by cross-reference: an aggrieved person is entitled to
-reimbursement if the person engaged in conduct requiring a license and described by § 1101.652(a-1)(1)
-or (b) for a license holder, or § 1101.653(1)–(4) for a certificate holder. In plain terms, the fund
-covers the misrepresentation, dishonesty, commingling, failure-to-account and similar misconduct
-catalogued in the disciplinary section — not every disappointment a consumer may have with a
-transaction.
+Section 1101.602 defines the covered conduct by cross-reference to § 1101.652(a-1)(1) or (b) for
+license holders. In plain terms, the fund covers the misrepresentation, dishonesty, commingling and
+failure-to-account misconduct catalogued in the disciplinary section — not every disappointment a
+consumer may have with a transaction.
 
-The path to payment is deliberately demanding, and a license holder should understand that it is not
-an insurance claim. Section 1101.605(a) requires that an action for a judgment that may result in an
-order for payment "may not be brought after the second anniversary of the date the cause of action
-accrues." Section 1101.606(a) requires the aggrieved person first to obtain a court judgment against
-the license or certificate holder, then to have "final judgment … entered, execution returned nulla
-bona, and a judgment lien perfected" before filing a verified claim in the court that entered the
-judgment. Section 1101.607 requires the claimant to show at the hearing that the judgment rests on
-facts allowing recovery; that the claimant is not the judgment debtor's spouse or the spouse's
-personal representative, not a license or certificate holder "seeking to recover compensation,
-including a commission, in the real estate transaction that is the subject of the application," and
-not related to the judgment debtor within the first degree by consanguinity; that the debtor lacks
-sufficient attachable assets; and the amounts realizable and still owing. Section 1101.608 permits
-the Commission to settle, or to appear and defend "to protect the trust account from spurious or
-unjust claims," and even to relitigate material issues decided in the underlying action. Section
-1101.609 requires the court to order payment when satisfied that each requirement is met.
+The path to payment is deliberately demanding, and it is not an insurance claim. Section 1101.605(a)
+requires that the underlying action be brought within two years of when the cause of action accrues.
+Section 1101.606(a) requires the aggrieved person first to obtain a court judgment, then to have
+"final judgment … entered, execution returned nulla bona, and a judgment lien perfected" before filing
+a verified claim in the court that entered the judgment. Section 1101.607 requires the claimant to
+show that the judgment rests on facts allowing recovery; that the claimant is not the judgment
+debtor's spouse, not a license holder "seeking to recover compensation, including a commission, in the
+real estate transaction that is the subject of the application," and not related to the debtor within
+the first degree by consanguinity; and that the debtor lacks sufficient attachable assets. Section
+1101.608 permits the Commission to appear and defend "to protect the trust account from spurious or
+unjust claims," and even to relitigate material issues decided in the underlying case.
 
 Section 1101.610 caps the exposure. Payments "arising out of a single transaction may not exceed a
 total of $125,000, regardless of the number of claimants," and payments "based on judgments against a
-single license or certificate holder may not exceed a total of $250,000 until the license or
-certificate holder has reimbursed the trust account for all amounts paid." Where claims exceed the
-limits, "the court shall proportionately reduce the amount payable on each claim." Section 1101.612
-subrogates the Commission to the judgment creditor's rights to the extent paid, with priority for
-repayment from any later recovery. And the consequence for the license holder is not merely a debt.
-Section 1101.655(a) requires the Commission to **revoke** the license if a payment is made from the
-trust account on the license holder's behalf and the license holder does not repay the account in
-full "before the 31st day after the date the commission provides notice"; subsection (c) bars
-eligibility for any license "until the person has repaid in full the amount paid from the account for
-the person, plus interest at the legal rate." Section 1101.603(c) tells you where some of the money
-comes from — the Commission "shall deposit to the credit of the trust account an administrative
-penalty collected under Subchapter O" — and § 1101.615 requires the Commission to prescribe by rule a
-notice about the availability of trust account payments and establish how license holders deliver it
-to consumers.
+single license or certificate holder may not exceed a total of $250,000" until the license holder has
+reimbursed the account; where claims exceed the limits, "the court shall proportionately reduce the
+amount payable on each claim." Section 1101.612 subrogates the Commission to the judgment creditor's
+rights. And the consequence for the license holder is not merely a debt: § 1101.655(a) requires the
+Commission to **revoke** the license if the license holder does not repay the account in full "before
+the 31st day after the date the commission provides notice," and subsection (c) bars eligibility for
+any license "until the person has repaid in full the amount paid from the account for the person, plus
+interest at the legal rate." Section 1101.603(c) tells you where some of the money comes from — the
+Commission "shall deposit to the credit of the trust account an administrative penalty collected under
+Subchapter O."
 
 **Subchapter N — Prohibited Practices and Disciplinary Proceedings (§§ 1101.651–1101.664).** This is
-the longest and most consequential subchapter for a practicing license holder, and it repays repeated
-reading. Section 1101.651 begins with compensation rules. Subsection (a) provides that a licensed
-broker "may not pay a commission to or otherwise compensate a person directly or indirectly for
-performing an act of a broker" unless the person is a license holder or "a real estate broker
-licensed in another state who does not conduct in this state any of the negotiations for which the
-commission or other compensation is paid." Subsection (b) provides that a sales agent "may not accept
-compensation for a real estate transaction from a person other than the broker that is sponsoring the
-sales agent or was sponsoring the sales agent when the sales agent earned the compensation," and
-subsection (c) that a sales agent "may not pay a commission to a person except through the broker
-that is sponsoring the sales agent at that time." Every dollar you earn moves through your broker.
+the longest and most consequential subchapter for a practicing license holder. Section 1101.651
+begins with compensation. Subsection (a) provides that a broker "may not pay a commission to or
+otherwise compensate a person directly or indirectly for performing an act of a broker" unless the
+person is a license holder or "a real estate broker licensed in another state who does not conduct in
+this state any of the negotiations" for which the compensation is paid. Subsection (b) provides that a
+sales agent "may not accept compensation for a real estate transaction from a person other than the
+broker that is sponsoring the sales agent," and subsection (c) that a sales agent "may not pay a
+commission to a person except through the broker." Every dollar you earn moves through your broker.
 Subsection (d) lists the intermediary prohibitions that § 1101.559(b) requires be set out in
 conspicuous bold or underlined print: not disclosing that the seller will take less than asking price
 or that the buyer will pay more than offered, absent separate written instruction; not disclosing
@@ -713,69 +577,64 @@ confidential information or information a party instructed in writing not to dis
 stated exceptions including where "the information materially relates to the condition of the
 property"; not treating a party dishonestly; and not violating the chapter.
 
-Section 1101.652 is the disciplinary heart of the Act. Subsection (a) permits suspension, revocation
-or other disciplinary action where the license holder pleads guilty or nolo contendere to or is
-convicted of "a felony or a criminal offense involving fraud"; procures a license "by fraud,
-misrepresentation, or deceit or by making a material misstatement of fact"; fails to honor a payment
-issued to the Commission after a certified-mail request; fails within a reasonable time to provide
-information the Commission requested relating to a complaint; fails "to surrender to the owner,
-without just cause, a document or instrument that is requested by the owner"; fails "to consider
-market conditions for the specific geographic area in which the license holder is providing a
-service"; fails to notify the Commission within 30 days of a felony or fraud conviction or plea; or
-"disregards or violates this chapter or Chapter 1102." Subsection (a-1) adds three more grounds:
-misrepresentation, dishonesty or fraud in the license holder's own transactions or those of a spouse
-or a person related within the first degree by consanguinity; refusal to produce on request records
-in the license holder's possession relating to a real estate transaction; and failure "to use a
-contract form required by the commission under Section 1101.155."
+Section 1101.652 is the disciplinary heart of the Act. Subsection (a) reaches a license holder who
+pleads guilty or nolo contendere to or is convicted of "a felony or a criminal offense involving
+fraud"; procures a license "by fraud, misrepresentation, or deceit"; fails to honor a payment issued
+to the Commission; fails within a reasonable time to provide information the Commission requested
+about a complaint; fails "to surrender to the owner, without just cause, a document or instrument
+that is requested by the owner"; fails "to consider market conditions for the specific geographic area
+in which the license holder is providing a service"; fails to notify the Commission within 30 days of
+a felony or fraud conviction; or "disregards or violates this chapter or Chapter 1102." Subsection
+(a-1) adds misrepresentation or fraud in the license holder's own transactions or those of a spouse or
+close relative; refusal to produce transaction records on request; and failure "to use a contract form
+required by the commission under Section 1101.155."
 
 Subsection (b) is the long list, applying "while engaged in real estate brokerage," and a new license
-holder should be able to recognize its contents on sight. It covers acting "negligently or
-incompetently" (1) and conduct "that is dishonest or in bad faith or that demonstrates
-untrustworthiness" (2). It covers making a material misrepresentation to a potential buyer about a
-known significant defect, "including a latent structural defect … that would be a significant factor
-to a reasonable and prudent buyer" (3), and failing to disclose such a known defect (4). It covers
-false promises likely to influence a person to contract when the license holder cannot or does not
-intend to keep them (5), and a "continued and flagrant course of misrepresentation" (6). It covers
-failing "to make clear to all parties to a real estate transaction the party for whom the license
-holder is acting" (7), and receiving compensation from more than one party "without the full
-knowledge and consent of all parties" (8).
+holder should recognize its contents on sight. It covers acting "negligently or incompetently" (1) and
+conduct "that is dishonest or in bad faith or that demonstrates untrustworthiness" (2). It covers
+making a material misrepresentation to a potential buyer about a known significant defect, "including
+a latent structural defect … that would be a significant factor to a reasonable and prudent buyer"
+(3), and failing to disclose such a known defect (4). It covers false promises likely to influence a
+person to contract when the license holder cannot or does not intend to keep them (5), and a
+"continued and flagrant course of misrepresentation" (6). It covers failing "to make clear to all
+parties to a real estate transaction the party for whom the license holder is acting" (7), and
+receiving compensation from more than one party "without the full knowledge and consent of all
+parties" (8).
 
 Then come the trust-fund provisions, which end more careers than any other group. Subsection (b)(9)
 covers failing "within a reasonable time to properly account for or remit money that is received by
-the license holder and that belongs to another person." Subsection (b)(10) covers commingling — mixing
-"money that belongs to another person with the license holder's own money." Subsection (b)(30)
+the license holder and that belongs to another person." Subsection (b)(10) covers commingling —
+mixing "money that belongs to another person with the license holder's own money." Subsection (b)(30)
 requires depositing escrow or trust money within a reasonable time either "in trust with a title
 company authorized to do business in this state" or "in a custodial, trust, or escrow account
 maintained for that purpose in a banking institution authorized to do business in this state," and
-subsection (b)(31) forbids disbursing that money "before the completion or termination of the real
-estate transaction." Read those four together and the rule is simple: other people's money is kept
-separate, deposited promptly, and not released early.
+(b)(31) forbids disbursing it "before the completion or termination of the real estate transaction."
+Read those four together and the rule is simple: other people's money is kept separate, deposited
+promptly, and not released early.
 
 The list continues with paying or dividing a commission with an unlicensed person (11); failing to
 specify "a definite termination date that is not subject to prior notice" in a service contract other
 than one for property management (12); accepting "an undisclosed commission, rebate, or direct profit
-on an expenditure made for a principal" (13); selling real property "by means of a lottery" (14) or
-"by means of a deceptive practice" (15); acting "in a dual capacity as broker and undisclosed
-principal" (16); guaranteeing "that future profits will result from a resale of real property" (17);
-placing a for-sale or for-lease sign without the owner's written consent (18); offering property for
-sale or lease without the owner's knowledge and consent (19) or on unauthorized terms (20); inducing
-a party to break a contract "for the purpose of substituting a new contract" (21); and negotiating
-with a person the license holder knows is under "an outstanding written contract that grants
-exclusive agency to another broker" (22).
+on an expenditure made for a principal" (13); selling property "by means of a lottery" (14) or "by
+means of a deceptive practice" (15); acting "in a dual capacity as broker and undisclosed principal"
+(16); guaranteeing "that future profits will result from a resale of real property" (17); placing a
+sign without the owner's written consent (18); offering property without the owner's knowledge and
+consent (19) or on unauthorized terms (20); inducing a party to break a contract "for the purpose of
+substituting a new contract" (21); and negotiating with a person known to be under "an outstanding
+written contract that grants exclusive agency to another broker" (22).
 
-Advertising and record conduct follow: publishing an advertisement that misleads or is likely to
-deceive the public, tends to create a misleading impression, implies that a sales agent is
-responsible for operating the brokerage, or "fails to include the name of the broker for whom the
-license holder acts" (23); making a statement of account or invoice materially inaccurate (24);
-publishing "an unjustified or unwarranted threat of a legal proceeding" (25); associating with a
-person who is expected or required to act as a license holder but is not one (26); aiding or abetting
-"another person to circumvent this chapter" (27); refusing on request to give a copy of a signed
-document to the person who signed it (28); and failing to give the abstract-or-title-policy advice
-required by § 1101.555 (29). Subsection (b)(32) makes it a disciplinary ground to discriminate
-"against an owner, potential buyer, landlord, or potential tenant on the basis of race, color,
-religion, sex, disability, familial status, national origin, or ancestry, including directing a
-prospective buyer or tenant interested in equivalent properties to a different area" on those bases.
-Subsection (b)(33) makes any violation of the chapter itself a ground, and subsection (b)(34), added
+Advertising and records follow: publishing an advertisement that misleads or is likely to deceive the
+public, tends to create a misleading impression, implies that a sales agent runs the brokerage, or
+"fails to include the name of the broker for whom the license holder acts" (23); rendering a statement
+of account or invoice materially inaccurate (24); publishing "an unjustified or unwarranted threat of
+a legal proceeding" (25); associating with a person who is expected or required to act as a license
+holder but is not one (26); aiding or abetting "another person to circumvent this chapter" (27);
+refusing on request to give a signer a copy of what they signed (28); and failing to give the
+abstract-or-title-policy advice required by § 1101.555 (29). Subsection (b)(32) makes it a
+disciplinary ground to discriminate "against an owner, potential buyer, landlord, or potential tenant
+on the basis of race, color, religion, sex, disability, familial status, national origin, or ancestry,
+including directing a prospective buyer or tenant interested in equivalent properties to a different
+area" on those bases. Subsection (b)(33) makes any violation of the chapter a ground, and (b)(34),
 effective January 1, 2026, makes it a ground to fail "to enter into a written agreement with a
 prospective buyer as required by Section 1101.563."
 
@@ -785,103 +644,70 @@ who, for consideration or in connection with the license holder's agency or fidu
 "drafts an instrument, other than a form described by Section 1101.155, that transfers or otherwise
 affects an interest in real property" or "advises a person regarding the validity or legal sufficiency
 of an instrument or the validity of title to real property." Subsection (b) supplies the safe harbor
-already described: completing an adopted, attorney-prepared or owner-required contract form
-incidental to acting as a broker is not the unauthorized practice of law.
+already described.
 
-The rest of the subchapter is procedure. Section 1101.656 permits suspension, revocation, probation
-or reprimand for violating the chapter or a Commission rule, and permits probated discipline with
-conditions such as regular reporting or limiting practice to a prescribed area. Section 1101.657
-entitles a person facing denial, suspension or revocation to "a hearing conducted by the State Office
-of Administrative Hearings," governed by the contested case procedures of chapter 2001 of the
-Government Code, and § 1101.658 provides an appeal to district court "in the county in which the
-administrative hearing was held." Section 1101.659 permits the Commission to order a refund to a
-consumer, capped at "the amount the consumer paid to the person for a service or accommodation
-regulated by this commission," and expressly forbids requiring "payment of other damages" or
-estimating harm. Section 1101.660 requires rules for informal disposition that give the complainant
-and the license holder an opportunity to be heard and require the presence of a public member of the
-Commission in consumer complaint cases. Section 1101.662 permits a three-member disciplinary panel to
-temporarily suspend a license, without notice or hearing, on determining that the license holder's
-continued practice "would … constitute a continuing threat to the public welfare," provided a
-contested case is initiated simultaneously. Section 1101.663 provides that a person whose license was
-revoked, who surrendered a license, or whose application was denied after a § 1101.657 hearing "may
-not apply to the commission for a license or registration before the second anniversary" of that
-event.
+The rest of the subchapter is procedure. Section 1101.656 permits suspension, revocation, probation or
+reprimand for violating the chapter or a Commission rule. Section 1101.657 entitles a person facing
+denial, suspension or revocation to "a hearing conducted by the State Office of Administrative
+Hearings," and § 1101.658 provides an appeal to district court "in the county in which the
+administrative hearing was held." Section 1101.659 permits a consumer refund order capped at "the
+amount the consumer paid." Section 1101.662 permits a three-member disciplinary panel to suspend a
+license temporarily, without notice or hearing, on determining that continued practice "would …
+constitute a continuing threat to the public welfare." Section 1101.663 bars a person whose license
+was revoked or surrendered, or whose application was denied after a hearing, from reapplying "before
+the second anniversary" of that event.
 
 **Subchapter O — Administrative Penalty (§§ 1101.701–1101.710).** Discipline and money are separate
-tools, and this subchapter supplies the money. Section 1101.701(a) permits the Commission to impose an
-administrative penalty "on a person who violates this chapter or a rule adopted or order issued by the
-commission," and subsection (c) permits combining a penalty proceeding with a suspension or
-revocation proceeding. Section 1101.702(a) caps the penalty: "The amount of an administrative penalty
-may not exceed $5,000 for each violation. Each day a violation continues or occurs may be considered
-a separate violation." Subsection (b) directs the executive director to weigh the seriousness of the
-violation, the history of previous violations, "the amount necessary to deter a future violation,"
-efforts to correct the violation, and "any other matter that justice may require," and subsection (c)
-requires the Commission to adopt a penalty schedule by rule.
-
-Sections 1101.703 through 1101.707 set the process. The executive director may issue a notice of
-violation summarizing the allegation, recommending a penalty or sanction, and stating the right to a
-hearing. Within 20 days the person may accept the determination or request a hearing in writing;
-failing to respond timely lets the Commission approve the determination by order. A requested hearing
-goes to an administrative law judge at the State Office of Administrative Hearings, who issues
-findings and a proposal for decision, on which the Commission determines by order whether a violation
-occurred. Within 30 days after the order becomes final, the person must pay or file a petition for
-judicial review, and may stay enforcement by paying the penalty into a court escrow account, giving a
-supersedeas bond, or filing an affidavit of financial inability that the executive director may
-contest. Section 1101.708 permits referral to the attorney general for collection.
+tools, and this subchapter supplies the money. Section 1101.701(a) permits an administrative penalty
+"on a person who violates this chapter or a rule adopted or order issued by the commission," and
+subsection (c) permits combining it with a suspension or revocation proceeding. Section 1101.702(a)
+caps it: "The amount of an administrative penalty may not exceed $5,000 for each violation. Each day a
+violation continues or occurs may be considered a separate violation." Subsection (b) directs the
+executive director to weigh the seriousness of the violation, prior violations, "the amount necessary
+to deter a future violation," efforts to correct it, and "any other matter that justice may require."
+Sections 1101.703 through 1101.707 set the process: a notice of violation from the executive director;
+20 days to accept it or request a hearing; a hearing before an administrative law judge at the State
+Office of Administrative Hearings; a Commission order; then 30 days to pay or seek judicial review.
 
 **Subchapter P — Other Penalties and Enforcement Provisions (§§ 1101.751–1101.759).** This subchapter
-supplies the remedies that reach people the license system cannot discipline, because they never had
-a license. Sections 1101.751 and 1101.752 give the Commission injunctive authority, in its own name
-and through the attorney general, without having to allege or prove that no adequate remedy at law
-exists or that irreparable damage would result. Section 1101.753(a) creates a civil penalty payable
-to the state: a person who receives a commission or other consideration "as a result of acting as a
-broker or sales agent without holding a license or certificate of registration under this chapter is
-liable to the state for a civil penalty of not less than the amount of money received or more than
-three times the amount of money received." Section 1101.754 gives the same measure to the private
-victim: the unlicensed person "is liable to an aggrieved person for a penalty of not less than the
-amount of money received or more than three times the amount of money received," recoverable by suit.
-
-The subchapter also makes unlicensed practice criminal. Section 1101.756 provides that a person
-commits an offense by wilfully violating or failing to comply with the chapter or a Commission order,
-"a Class A misdemeanor." Section 1101.757 makes it a Class A misdemeanor to engage in business as a
-residential rental locator without a license, and § 1101.758 makes it a Class A misdemeanor to act as
-a broker or sales agent without a license, or to engage in certificate-required activity without a
-certificate. Section 1101.759 permits the Commission, after notice and opportunity for hearing, to
-issue a **cease and desist order**, violation of which is itself grounds for an administrative penalty
-under subchapter O.
+supplies the remedies that reach people the license system cannot discipline, because they never had a
+license. Sections 1101.751 and 1101.752 give injunctive authority without having to allege or prove
+that no adequate remedy at law exists. Section 1101.753(a) creates a civil penalty payable to the
+state: a person who receives compensation "as a result of acting as a broker or sales agent without
+holding a license … is liable to the state for a civil penalty of not less than the amount of money
+received or more than three times the amount of money received." Section 1101.754 gives the same
+measure to the private victim. Unlicensed practice is also criminal: § 1101.756 makes a wilful
+violation of the chapter or a Commission order a Class A misdemeanor, § 1101.757 does the same for
+unlicensed residential rental locating, and § 1101.758 for acting as a broker or sales agent without a
+license. Section 1101.759 permits a **cease and desist order** after notice and hearing, violation of
+which is itself grounds for an administrative penalty.
 
 **Subchapter Q — General Provisions Relating to Liability Issues (§§ 1101.801–1101.806).** The Act
-closes by allocating civil liability, and the allocations are worth memorizing because they are
-counterintuitive in both directions. Section 1101.801 states the baseline: "Disciplinary action taken
-against a person under Section 1101.652 does not relieve the person from civil or criminal
-liability." A TREC sanction is not a settlement of a client's lawsuit. Section 1101.802 provides that
-a person is not civilly or criminally liable for failing to inquire about, disclose or release
-information about a current or previous occupant's AIDS, HIV-related illness or HIV infection —
-pairing with § 1101.556.
+closes by allocating civil liability. Section 1101.801 states the baseline: "Disciplinary action taken
+against a person under Section 1101.652 does not relieve the person from civil or criminal liability."
+A TREC sanction is not a settlement of a client's lawsuit. Section 1101.802 provides that a person is
+not civilly or criminally liable for failing to inquire about or disclose an occupant's AIDS,
+HIV-related illness or HIV infection, pairing with § 1101.556.
 
-Section 1101.803 is the provision that explains the entire sponsorship structure: "A licensed broker
-is liable to the commission, the public, and the broker's clients for any conduct engaged in under
-this chapter by the broker or by a sales agent associated with or acting for the broker." That single
-sentence is why brokers supervise, why brokerage policy manuals exist, and why a sponsoring broker
-will care intensely about how you word an advertisement. Section 1101.804 protects information
-sharing: a license holder "or nonprofit real estate board or association" that provides information
-about sales prices or terms "for the purpose of facilitating the listing, selling, leasing,
-financing, or appraisal of real property is not liable to another person for providing that
-information unless the disclosure of that information is specifically prohibited by statute."
+Section 1101.803 explains the entire sponsorship structure: "A licensed broker is liable to the
+commission, the public, and the broker's clients for any conduct engaged in under this chapter by the
+broker or by a sales agent associated with or acting for the broker." That sentence is why brokers
+supervise and why a sponsoring broker will care intensely about how you word an advertisement.
+Section 1101.804 protects information sharing: a license holder "or nonprofit real estate board or
+association" that provides sales price or terms information "for the purpose of facilitating the
+listing, selling, leasing, financing, or appraisal of real property is not liable … unless the
+disclosure of that information is specifically prohibited by statute."
 
 Section 1101.805 allocates liability for misrepresentation in both directions. A party "is not liable
-for a misrepresentation or a concealment of a material fact made by a license holder" unless the
-party knew of the falsity and failed to disclose that knowledge; and a license holder "is not liable
-for a misrepresentation or a concealment of a material fact made by a party" unless the license
-holder knew of the falsity and failed to disclose it. Subsection (b) provides that the section
-"prevails over any other law, including common law," and subsection (c) preserves the broker's
-responsibility under § 1101.803 for a sponsored sales agent. Finally, § 1101.806(b) provides that a
-person may not maintain an action to collect compensation for an act as a broker or sales agent
-performed in Texas "unless the person alleges and proves that the person was (1) a license holder at
-the time the act was commenced; or (2) an attorney licensed in any state," and subsection (c) adds a
-writing requirement: no action to recover a commission for the sale or purchase of real estate may be
-maintained "unless the promise or agreement on which the action is based, or a memorandum, is in
-writing and signed by the party against whom the action is brought."
+for a misrepresentation or a concealment of a material fact made by a license holder" unless the party
+knew of the falsity and failed to disclose that knowledge; and a license holder "is not liable for a
+misrepresentation or a concealment of a material fact made by a party" unless the license holder knew
+and failed to disclose. Subsection (b) provides that the section "prevails over any other law,
+including common law," and subsection (c) preserves the broker's § 1101.803 responsibility. Finally,
+§ 1101.806(b) bars an action to collect compensation for a brokerage act performed in Texas "unless
+the person alleges and proves that the person was (1) a license holder at the time the act was
+commenced; or (2) an attorney licensed in any state," and subsection (c) requires that any action to
+recover a commission rest on a written, signed promise or memorandum.
 
 ### Statute reading exercise: Reading § 1101.652 for the conduct it names
 
@@ -1095,16 +921,14 @@ $400,000 price are illustrations only; none is a required, standard or customary
 
 **Why the business is lumpy, and what that implies.** Because transactions are infrequent and large,
 a license holder's income arrives in irregular blocks separated by months of unpaid work. That is a
-structural feature of the business, not a sign of failure, and it has three practical consequences
-that experienced practitioners will tell you and that no statute addresses. Work performed today is
-usually paid for months from now, so cash reserves matter more than in salaried work. The pipeline of
-prospective transactions, not the current month's closings, is the real measure of the business.
-And because compensation depends on transactions closing, the temptation to push a marginal
-transaction over the line is built into the incentive structure — which is precisely why the Act
-attaches discipline to false promises likely to influence a person to contract (§ 1101.652(b)(5)),
-guarantees of future resale profit (§ 1101.652(b)(17)), and inducing a party to break an existing
-contract to substitute a new one (§ 1101.652(b)(21)). The prohibitions are not arbitrary; they are
-aimed exactly where the money pressure points.
+structural feature, not a sign of failure, and no statute addresses it: work performed today is paid
+for months from now, so cash reserves matter more than in salaried work, and the pipeline rather than
+the current month's closings is the real measure of the business. It also means the temptation to push
+a marginal transaction over the line is built into the incentive structure — which is precisely why
+the Act attaches discipline to false promises likely to influence a person to contract
+(§ 1101.652(b)(5)), guarantees of future resale profit (§ 1101.652(b)(17)), and inducing a party to
+break an existing contract to substitute a new one (§ 1101.652(b)(21)). The prohibitions are aimed
+exactly where the money pressure points.
 
 **The service business inside the asset business.** Finally, notice that a license holder sells two
 different things at once. To the client, the license holder sells a *service*: representation,
@@ -1214,27 +1038,27 @@ not licensed to perform. Do not use the word. Do not let a client's phrasing pul
 lender, a court or a party needs an appraisal, they need an appraiser.
 
 **Boundary three: the § 1101.652 prohibitions.** The disciplinary list surveyed in unit 2 is also a
-list of things a license holder may not do, and it is worth restating a selection here in the "may
-not" voice, because that is how it will present itself in practice. You may not act negligently or
-incompetently (§ 1101.652(b)(1)); may not misrepresent a known significant defect to a potential
-buyer, or fail to disclose one ((b)(3), (b)(4)); may not make a false promise likely to influence a
-person to contract when you cannot or do not intend to keep it ((b)(5)); may not leave any party
-unclear about whom you represent ((b)(7)); may not take compensation from more than one party without
-everyone's full knowledge and consent ((b)(8)); may not fail to account for or promptly remit other
-people's money ((b)(9)) or commingle it with your own ((b)(10)); may not omit a definite termination
-date from a service agreement other than a property management agreement ((b)(12)); may not take an
-undisclosed rebate or profit on an expenditure made for a principal ((b)(13)); may not sell property
-by lottery ((b)(14)) or by a deceptive practice ((b)(15)); may not act as broker and undisclosed
-principal at once ((b)(16)); may not guarantee future resale profits ((b)(17)); may not put a sign on
-a property without the owner's written consent ((b)(18)); may not offer property without the owner's
-knowledge and consent ((b)(19)) or on unauthorized terms ((b)(20)); may not induce a party to break a
-contract to substitute a new one ((b)(21)); may not negotiate with a party you know is under another
-broker's exclusive written agreement ((b)(22)); may not publish a misleading advertisement or one
-omitting your broker's name ((b)(23)); may not refuse a signer a copy of what they signed ((b)(28));
-must give the abstract-or-title-policy advice ((b)(29)); must deposit escrow funds properly ((b)(30))
-and not disburse them early ((b)(31)); and may not discriminate on the basis of race, color, religion,
-sex, disability, familial status, national origin or ancestry, "including directing a prospective
-buyer or tenant interested in equivalent properties to a different area" on those bases ((b)(32)).
+list of things a license holder may not do, and it helps to group the selection by the interest each
+item protects. *Competence and candor*: you may not act negligently or incompetently ((b)(1)),
+misrepresent a known significant defect or fail to disclose one ((b)(3), (b)(4)), make a false promise
+likely to influence a person to contract when you cannot or do not intend to keep it ((b)(5)), or
+publish a misleading advertisement or one omitting your broker's name ((b)(23)). *Clarity about whose
+side you are on*: you may not leave any party unclear about whom you represent ((b)(7)), take
+compensation from more than one party without everyone's full knowledge and consent ((b)(8)), act as
+broker and undisclosed principal at once ((b)(16)), or take an undisclosed rebate or profit on an
+expenditure made for a principal ((b)(13)). *Other people's money*: you must account for and promptly
+remit it ((b)(9)), must not commingle it with your own ((b)(10)), must deposit escrow funds with a
+title company or in a proper trust account ((b)(30)), and must not disburse them before the
+transaction completes or terminates ((b)(31)). *The owner's control of the owner's property*: you may
+not put up a sign without written consent ((b)(18)), offer property without the owner's knowledge and
+consent ((b)(19)) or on unauthorized terms ((b)(20)), guarantee future resale profits ((b)(17)), or
+sell by lottery ((b)(14)) or deceptive practice ((b)(15)). *Other brokers' contracts*: you may not
+induce a party to break a contract to substitute a new one ((b)(21)) or negotiate with a party you
+know is under another broker's exclusive written agreement ((b)(22)). And you may not discriminate
+against an owner, potential buyer, landlord or potential tenant "on the basis of race, color,
+religion, sex, disability, familial status, national origin, or ancestry, including directing a
+prospective buyer or tenant interested in equivalent properties to a different area" on those bases
+((b)(32)).
 
 **What happens if you act without a license.** The consequences stack. Acting as a broker or sales
 agent without a license is a Class A misdemeanor (§ 1101.758). The unlicensed person is liable to the
@@ -1286,15 +1110,11 @@ Texas Real Estate Commission," and it is built by subchapter B. Section 1101.051
 "consists of nine members appointed by the governor with the advice and consent of the senate,"
 comprising "six members who have been engaged in the brokerage business as licensed brokers as their
 major occupation for the five years preceding appointment" and "three members who represent the
-public." Members must be qualified voters (§ 1101.051(b)), serve staggered six-year terms with three
-terms expiring January 31 of each odd-numbered year (§ 1101.055(a)), and are led by a presiding
-officer whom the governor designates from among the members who are licensed brokers
-(§ 1101.056(a)). Public members are screened for independence by § 1101.052, and no member or
-executive-level employee may be an officer, employee or paid consultant of a Texas real estate trade
-association (§ 1101.053(b)). Day-to-day operations belong to an executive director the Commission
-appoints, together with staff including a general counsel, attorneys and investigators
-(§ 1101.101), under a policy that "clearly separate[s]" policymaking from management
-(§ 1101.102).
+public." Members serve staggered six-year terms (§ 1101.055(a)) and are led by a presiding officer
+whom the governor designates from among the members who are licensed brokers (§ 1101.056(a)).
+Day-to-day operations belong to an executive director the Commission appoints, together with staff
+including a general counsel, attorneys and investigators (§ 1101.101), under a policy that "clearly
+separate[s]" policymaking from management (§ 1101.102).
 
 **What the Commission can do.** Section 1101.151(a) requires the Commission to administer chapters
 1101 and 1102, adopt rules on advertising by residential rental locators, maintain a registry of
@@ -1401,13 +1221,13 @@ times for up to 90 days and two times for more than 90 days but less than six mo
 months or more and § 1101.451(f) forecloses renewal entirely — "[t]he person may obtain a new license
 by complying with the requirements and procedures for obtaining an original license."
 
-**And the step after that.** For completeness: a broker license under § 1101.356(a) requires "at least
-four years of active experience as a license holder during the 60 months preceding the date the
-application is filed," completion of the qualifying and related course hours required by rule "not to
-exceed 60 semester hours or equivalent classroom hours," and attendance at the broker responsibility
-course approved under § 1101.458. The broker credential is not a longer version of the sales agent
-credential; it is a supervisory office, which is why § 1101.803 makes the broker liable for the
-conduct of every sales agent acting for the broker.
+**And the step after that.** A broker license under § 1101.356(a) requires "at least four years of
+active experience as a license holder during the 60 months preceding the date the application is
+filed," the qualifying and related course hours required by rule "not to exceed 60 semester hours or
+equivalent classroom hours," and attendance at the broker responsibility course approved under
+§ 1101.458. The broker credential is not a longer version of the sales agent credential; it is a
+supervisory office, which is why § 1101.803 makes the broker liable for the conduct of every sales
+agent acting for the broker.
 
 ### Applied exercise: Mapping a path to a sales agent license
 

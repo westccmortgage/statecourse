@@ -41,18 +41,16 @@ where the largest sums are set: a lease signed at forty dollars a month under ma
 four hundred and eighty dollars a year for every year the tenant renews at that base.
 
 **Rent collection.** The manager sets the collection calendar, receives payment, posts it, pursues
-delinquency, and applies late charges where the lease permits them. Texas regulates late charges
+delinquency, and applies late charges where the lease permits them. Texas regulates those charges
 directly. Under Property Code § 92.019(a) a landlord may not collect a late fee unless notice of the
 fee is in a written lease, the fee is reasonable, and "any portion of the tenant's rent has remained
-unpaid two full days after the date the rent was originally due." Section 92.019(a-1) then supplies a
-safe harbor: a late fee is considered reasonable if it is not more than twelve percent of the rent for
-the rental period for a dwelling in a structure containing not more than four dwelling units, or ten
-percent for a dwelling in a structure containing more than four units. A larger fee is permitted only
-up to the landlord's uncertain damages related to the late payment. A landlord who violates the
-section is liable under § 92.019(c) for one hundred dollars, three times the late fee collected, and
-the tenant's reasonable attorney's fees. A manager who lets a legacy lease form charge a flat fee on
-the first day, with no two-day grace, has created that liability for the owner across the whole
-portfolio at once.
+unpaid two full days after the date the rent was originally due." Section 92.019(a-1) treats a fee as
+reasonable if it is not more than twelve percent of the rent for the rental period for a dwelling in a
+structure of not more than four units, or ten percent for a structure of more than four; a larger fee
+is permitted only up to the landlord's uncertain damages from the late payment. Section 92.019(c)
+makes a violating landlord liable for one hundred dollars, three times the fee collected, and the
+tenant's reasonable attorney's fees. A legacy lease form that charges a flat fee on day one creates
+that liability across the whole portfolio at once.
 
 **Maintenance.** The manager receives service requests, dispatches vendors, inspects the work and pays
 the invoice. The legal spine of this function is Property Code § 92.052(a), which requires a landlord
@@ -93,16 +91,13 @@ Section 92.201(a) reinforces the point from the other direction. A landlord must
 or to a government official acting in an official capacity, the name and a street or post office box
 address of the holder of record title according to the county deed records, and, "if an entity located
 off-site from the dwelling is primarily responsible for managing the dwelling, the name and street
-address of the management company." Section 92.201(b) gives three ways to make the disclosure to a
-tenant: in writing within seven days of the tenant's request, by continuously posting the information
-conspicuously in the dwelling or at the on-site manager's office within that same period, or by
-including it in the lease or in written rules given to the tenant before any request. Section 92.006(a)
-makes the disclosure duty one that "may not be waived." The remedies in § 92.205(a) include a court
-order compelling disclosure, a judgment for the tenant's actual costs of discovering the information,
-a judgment for one month's rent plus one hundred dollars, court costs and attorney's fees, and
-unilateral termination of the lease without a court proceeding. Texas has decided that a tenant is
-entitled to know who owns the building and who runs it. Off-site fee management is the ordinary
-trigger.
+address of the management company." Section 92.201(b) permits the disclosure to a tenant in writing
+within seven days of request, by continuous conspicuous posting within that period, or in the lease or
+written rules given before any request; § 92.006(a) makes the duty non-waivable. The remedies in
+§ 92.205(a) run from a court order compelling disclosure to a judgment for one month's rent plus one
+hundred dollars, costs and fees, and unilateral termination of the lease without a court proceeding.
+Texas has decided a tenant is entitled to know who owns the building and who runs it, and off-site fee
+management is the ordinary trigger.
 
 **The license question in Texas**
 
@@ -129,31 +124,29 @@ the Act. It is inside the definition of a broker, by name, four times over.
 Three elements must all be present before an act is broker activity: it must be **for another
 person**, it must be one of the **listed acts**, and it must be done **for compensation or with the
 expectation of compensation**. Strip out any one and the definition is not met. An owner leasing the
-owner's own duplex is not acting for another person. A friend who shows a vacant house as a favor,
-expecting nothing, is missing the consideration element — though "other valuable consideration" is
-broad, and a reduction in that friend's own rent is consideration.
+owner's own duplex is not acting for another person; a friend who shows a vacant house expecting
+nothing is missing consideration — though "other valuable consideration" is broad, and a reduction in
+that friend's own rent is consideration.
 
 Clause (x) deserves separate attention because students routinely miss it. It does not say "manages"
 and it does not say "leases." It says *controls the acceptance or deposit of rent* from a resident of
 a single-family residential real property unit. A person who never shows the house, never negotiates a
-term, and never signs anything — but who has the tenant's rent checks mailed to them, or has the
-tenant's electronic rent payments routed into an account that person controls, and does that for
-another owner for compensation — has performed an act of a broker. The Legislature aimed this clause
-at exactly the arrangement people assume is safely informal: collecting rent on a rent house for an
+term and never signs anything — but who has the tenant's rent routed into an account that person
+controls, for another owner, for compensation — has performed an act of a broker. The clause reaches
+exactly the arrangement people assume is safely informal: collecting rent on a rent house for an
 absentee owner.
 
 Section 1101.351(a) supplies the prohibition: "Unless a person holds a license issued under this
 chapter, the person may not (1) act as or represent that the person is a broker or sales agent; or
 (2) act as a residential rental locator." Section 1101.351(a-1) applies the same rule to business
-entities acting as brokers, and § 1101.351(c) provides that a licensed sales agent "may not engage or
-attempt to engage in real estate brokerage unless the sales agent is sponsored by a licensed broker
-and is acting for that broker." A **residential rental locator** is defined in § 1101.002(6) as "a
-person who offers for consideration to locate a unit in an apartment complex for lease to a
-prospective tenant," excluding "an owner who offers to locate a unit in the owner's complex."
-Note also § 1101.002(4): a "license holder" is a broker or a sales agent licensed under the chapter.
-Chapter 1101 as read for this course creates no separate property manager license. There is no such
-credential to obtain; there is a broker license and a sales agent license, and management activity
-falls under them.
+entities, and § 1101.351(c) provides that a licensed sales agent "may not engage or attempt to engage
+in real estate brokerage unless the sales agent is sponsored by a licensed broker and is acting for
+that broker." A **residential rental locator** is defined in § 1101.002(6) as "a person who offers for
+consideration to locate a unit in an apartment complex for lease to a prospective tenant," excluding
+"an owner who offers to locate a unit in the owner's complex." Note finally § 1101.002(4): a "license
+holder" is a broker or a sales agent licensed under the chapter. Chapter 1101 as read for this course
+creates no separate property manager license — management activity falls under the broker and sales
+agent licenses.
 
 There is also a hard commercial consequence for getting this wrong. Section 1101.806(b) provides that
 a person "may not maintain an action to collect compensation for an act as a broker or sales agent
@@ -229,13 +222,11 @@ the license or take other authorized disciplinary action if the license holder:
 - **(31)** "disburses money deposited in a custodial, trust, or escrow account, as provided in
   Subdivision (30), before the completion or termination of the real estate transaction."
 
-Read them as a sequence describing the life of a dollar. It arrives. Subdivision (30) says get it into
-the right account promptly — a trust, escrow or custodial account maintained for that purpose at a
-Texas-authorized banking institution, or in trust with a Texas-authorized title company. Subdivision
-(10) says while it sits there, keep it apart from your own money; the violation is *commingling*, and
-it is complete when the funds are mixed, without any need to show that a dollar was stolen.
-Subdivision (31) says do not pay it out early. Subdivision (9) says account for it and remit it to the
-person it belongs to within a reasonable time.
+Read them as a sequence describing the life of a dollar. Subdivision (30) says get it into the right
+account promptly. Subdivision (10) says keep it apart from your own money while it sits there; the
+violation is *commingling*, complete when the funds are mixed, with no need to show that a dollar was
+stolen. Subdivision (31) says do not pay it out early. Subdivision (9) says account for it and remit
+it to its owner within a reasonable time.
 
 The practical failures are mundane. A manager who deposits owner rent into the firm's operating
 account "temporarily" because the trust account signature card has not been updated has commingled. So
@@ -304,12 +295,11 @@ agreement, and it deserves to be read line by line before it is signed.
 A workable Texas management agreement settles at least seven things.
 
 **Identification and scope of authority.** Which property, described precisely, and which acts the
-manager may perform without further approval. Sign leases? At what rent, for what term, with what
-concessions? Approve repairs? Up to what dollar amount per occurrence before the owner must be
-consulted? Sign checks on the operating account? Serve notices and file eviction suits, or only refer
-them to the owner's counsel? Authority left vague becomes authority litigated later. Remember
-§ 1101.557(c)(1): a license holder with authority to bind the owner to a lease under a property
-management agreement is treated as a party to that lease.
+manager may perform without further approval. Sign leases, at what rent and term and with what
+concessions? Approve repairs up to what amount per occurrence? Sign checks on the operating account?
+Serve notices and file eviction suits, or refer them to the owner's counsel? Authority left vague
+becomes authority litigated later. Remember § 1101.557(c)(1): a license holder with authority to bind
+the owner to a lease under a property management agreement is treated as a party to that lease.
 
 **Term and termination.** Here Texas law contains a detail worth noticing. Occupations Code
 § 1101.652(b)(12) makes it a ground for discipline if a license holder "fails to specify a definite
@@ -349,8 +339,8 @@ when funds are remitted, and how security deposits are held. Write these terms s
 § 1101.652(b)(9), (10), (30) and (31) is the automatic result of following the contract.
 
 **Fair housing and legal compliance.** A clause obligating both parties to comply with fair housing
-law, and obligating the owner not to instruct the manager to do otherwise. This clause is worth
-having precisely because the instruction it forbids is the one a manager is most likely to receive.
+law, and the owner not to instruct the manager otherwise — worth having precisely because the
+instruction it forbids is the one a manager is most likely to receive.
 
 **Budgeting and the operating statement**
 
@@ -406,75 +396,65 @@ Net operating income: $334,800 − $190,184 = **$144,616**.
 
 Operating expense ratio: $190,184 ÷ $334,800 = 0.568, or **56.8 percent**.
 
-Notice what the ratio tells you and what it does not. It says that fifty-seven cents of every dollar
-collected is consumed by operations. It says nothing about whether the owner's loan payment can be
-made from the remaining $144,616, because debt service was never in the statement. A manager
-presenting this statement to an owner who is thinking about a refinance should say so out loud.
-
-Notice also how the management fee behaves. Because it is computed on effective gross income, a
-vacancy costs the manager as well as the owner: a rise in vacancy from 7 percent to 12 percent would
-cut EGI by $18,000 and the fee by $1,440. That alignment is one of the reasons percentage-of-collections
-compensation is common. It is a business arrangement, not a legal requirement, and this course
-prescribes no rate.
+Notice what the ratio does not tell you. It says nothing about whether the owner's loan payment can be
+made from the remaining $144,616, because debt service was never in the statement. Notice also how the
+management fee behaves: computed on effective gross income, it makes vacancy cost the manager as well
+as the owner, since a rise from 7 percent to 12 percent would cut EGI by $18,000 and the fee by
+$1,440. That alignment is one reason percentage-of-collections compensation is common. It is a
+business arrangement, not a legal requirement, and this course prescribes no rate.
 
 **Setting rent from market data**
 
 Rent is set by comparison, not by the owner's needs. The manager collects current asking and, where
 available, effective rents from genuinely comparable properties — comparable in submarket, age,
-condition, unit size and mix, amenity set, and utility structure — and adjusts for differences. A
-concession must be converted before comparison: one month free on a twelve-month lease at $1,300 is an
-effective rent of $1,300 × 11 ÷ 12 = $1,191.67 per month, not $1,300. Comparing an advertised rate
-against an effective rate is the single most common analytical error in leasing.
+condition, unit size and mix, amenities and utility structure — and adjusts for differences. Convert
+concessions before comparing: one month free on a twelve-month lease at $1,300 is an effective rent of
+$1,300 × 11 ÷ 12 = $1,191.67, not $1,300. Comparing an advertised rate against an effective rate is
+the most common analytical error in leasing.
 
-The market signal to watch is the relationship between price and time on market. A unit that leases in
-three days at the asking rent was probably priced below market; a unit that sits for six weeks is
-priced above it. Vacancy is the more expensive error: a unit vacant for one month at $1,250 costs
-$1,250 that is never recovered, while a unit leased $25 below market costs $300 over a twelve-month
-term. That comparison, not the owner's mortgage payment, is what should drive a pricing decision.
+Watch the relationship between price and time on market. A unit that leases in three days was probably
+priced below market; one that sits for six weeks is priced above it. Vacancy is the more expensive
+error: a unit vacant one month at $1,250 costs $1,250 that is never recovered, while a unit leased $25
+below market costs $300 over a twelve-month term.
 
 **The maintenance program**
 
-Property Code § 92.052 and § 92.056 do not merely impose a duty; they set the tempo of the maintenance
+Property Code §§ 92.052 and 92.056 do not merely impose a duty; they set the tempo of the maintenance
 operation. Under § 92.056(b) a landlord becomes liable to a tenant when the tenant has given notice at
 the place rent is normally paid, the condition materially affects the physical health or safety of an
-ordinary tenant, the tenant has given a subsequent written notice after a reasonable time (or sent the
-first notice by certified mail, registered mail, or another tracked delivery method), the landlord has
-had a reasonable time to repair after those notices, the landlord has not made a diligent effort, and
-the tenant was not delinquent in rent when the notices were given. Section 92.056(d) then supplies the
-number that drives everything: "there is a rebuttable presumption that seven days is a reasonable
-time," rebuttable by considering the date of receipt, the severity and nature of the condition, and
-the reasonable availability of materials, labor and utilities. Section 92.056(c) provides that the
-landlord is considered to have received notice when the landlord or the landlord's agent or employee
-actually receives it, or when the postal service has attempted delivery.
+ordinary tenant, a subsequent written notice has followed a reasonable time (or the first notice went
+by certified or registered mail or another tracked method), the landlord has had a reasonable time to
+repair and has not made a diligent effort, and the tenant was not delinquent in rent when the notices
+were given. Section 92.056(d) then supplies the number that drives everything: "there is a rebuttable
+presumption that seven days is a reasonable time," rebuttable by considering the date of receipt, the
+severity and nature of the condition, and the availability of materials, labor and utilities. Under
+§ 92.056(c) the landlord is considered to have received notice when the landlord or the landlord's
+agent or employee actually receives it, or when the postal service has attempted delivery.
 
-Seven days is a presumption, not a deadline, and severity moves it in both directions. But a
-maintenance program that cannot reliably close a health-and-safety work order inside a week is a
-program operating against the presumption. That is why competent managers timestamp every service
-request at intake, route health-and-safety items to a separate queue, and document the dispatch and
-completion of each one. The documentation is what rebuts the presumption when materials genuinely were
-not available.
+Seven days is a presumption, not a deadline, and severity moves it both ways. But a maintenance
+program that cannot reliably close a health-and-safety work order inside a week is operating against
+the presumption. That is why competent managers timestamp every service request at intake, route
+health-and-safety items to a separate queue, and document dispatch and completion — documentation is
+what rebuts the presumption when materials genuinely were not available.
 
-Section 92.0561 shows the consequence of failing. If the landlord is liable under § 92.056(b), and the
-further conditions of § 92.0561(d) are met, the tenant may have the condition repaired and deduct the
-cost from a subsequent rent payment, limited by § 92.0561(b) to "the amount of one month's rent under
-the lease or $500, whichever is greater," with the repair performed by an independent company,
-contractor or repairman under § 92.0561(f). Section 92.056(e) gives the tenant, in the alternative,
-the right to terminate the lease, or to pursue judicial remedies under § 92.0563. Section 92.056(g)
-requires the lease to inform the tenant of these remedies "in underlined or bold print."
+Section 92.0561 shows the cost of failing. If the landlord is liable under § 92.056(b) and the further
+conditions of § 92.0561(d) are met, the tenant may have the condition repaired and deduct the cost
+from a subsequent rent payment, limited by § 92.0561(b) to "the amount of one month's rent under the
+lease or $500, whichever is greater," with the work done by an independent contractor under
+§ 92.0561(f). Section 92.056(e) alternatively lets the tenant terminate the lease or pursue judicial
+remedies under § 92.0563, and § 92.056(g) requires the lease to state these remedies "in underlined or
+bold print."
 
-Against that legal backdrop, structure the work in four categories. **Routine** maintenance is the
-scheduled, recurring work that keeps the property presentable and functional — grounds, common areas,
-filters, lighting. **Preventive** maintenance is work performed on a schedule to stop failures before
-they happen: servicing HVAC before summer, flushing water heaters, sealing and inspecting roofs.
-Preventive work is the category owners cut first and regret most, because it converts predictable
-small costs into unpredictable large ones. **Corrective** maintenance is repair of something that has
-already failed — the ordinary work order, and the category where the § 92.056 clock runs. **Emergency**
-maintenance is the subset that cannot wait: sewage backing up inside the dwelling, flooding from
-broken pipes, a total loss of potable water, a gas odor, a fire, a security breach. Section
-92.0561(d)(3) and (e) treat sewage and flooding, cessation of potable water, and inadequate heating or
-cooling as their own accelerated categories, with the tenant's repair right arising immediately for
-sewage and flooding and after three days for water or for heating and cooling. A property with no
-after-hours emergency number is not running a maintenance program.
+Against that backdrop, structure the work in four categories. **Routine** maintenance is scheduled,
+recurring work that keeps the property functional — grounds, common areas, filters, lighting.
+**Preventive** maintenance stops failures before they happen: servicing HVAC before summer, flushing
+water heaters, inspecting roofs. Owners cut it first and regret it most, because it converts
+predictable small costs into unpredictable large ones. **Corrective** maintenance repairs what has
+already failed — the ordinary work order, where the § 92.056 clock runs. **Emergency** maintenance is
+the subset that cannot wait. Section 92.0561(d)(3) and (e) single out sewage and flooding inside the
+dwelling, cessation of potable water, and inadequate heating or cooling, with the tenant's repair
+right arising immediately for sewage and flooding and after three days for water or for heat and
+cooling. A property with no after-hours emergency number is not running a maintenance program.
 
 Security devices belong in the same plan. Section 92.153(a) requires, without any request from the
 tenant and subject to the exceptions in subsections (b) and (e) through (h), that a dwelling be
@@ -496,28 +476,27 @@ procedural: **written criteria, applied the same way to every applicant, documen
 Texas Property Code § 301.021(a) provides that a person "may not refuse to sell or rent, after the
 making of a bona fide offer, refuse to negotiate for the sale or rental of, or in any other manner
 make unavailable or deny a dwelling to another because of race, color, religion, sex, familial status,
-or national origin," and § 301.021(b) extends the prohibition to the "terms, conditions, or privileges
-of sale or rental" and to services and facilities provided in connection with a rental. Section
-301.025(a) and (b) apply the same prohibitions on the basis of disability — of the applicant, of a
-person who will reside in the dwelling, or of anyone associated with the applicant — and § 301.025(c)
-provides that discrimination includes refusing to permit a reasonable modification of the premises at
-the disabled person's expense where necessary for full enjoyment, and refusing "to make a reasonable
-accommodation in rules, policies, practices, or services if the accommodation may be necessary to
-afford the person equal opportunity to use and enjoy a dwelling." Section 301.003(11) defines "to
-rent" to include "to lease, sublease, or let, or to grant in any other manner, for a consideration,
-the right to occupy premises not owned by the occupant" — which is to say, the chapter is aimed
-squarely at what a property manager does all day.
+or national origin," and § 301.021(b) extends that to the terms, conditions and privileges of a rental
+and to services and facilities provided with it. Section 301.025(a) and (b) apply the same
+prohibitions on the basis of disability — of the applicant, of a person who will reside in the
+dwelling, or of anyone associated with the applicant — and § 301.025(c) provides that discrimination
+includes refusing a reasonable modification of the premises at the disabled person's expense where
+necessary for full enjoyment, and refusing "to make a reasonable accommodation in rules, policies,
+practices, or services if the accommodation may be necessary to afford the person equal opportunity to
+use and enjoy a dwelling." Section 301.003(11) defines "to rent" to include "to lease, sublease, or
+let, or to grant in any other manner, for a consideration, the right to occupy premises not owned by
+the occupant" — the chapter is aimed squarely at what a property manager does all day.
 
 The federal provisions are parallel. Under 42 U.S.C. § 3604(a) it is unlawful "to refuse to sell or
 rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or
 otherwise make unavailable or deny, a dwelling to any person because of race, color, religion, sex,
 familial status, or national origin"; § 3604(b) covers terms, conditions and privileges; § 3604(d)
-prohibits representing that a dwelling is unavailable for inspection or rental when it is in fact
-available; and § 3604(f)(1) through (3) address handicap, including the reasonable-modification and
-reasonable-accommodation duties. Under § 3604(f)(9), nothing in that subsection requires a dwelling to
-be made available to an individual whose tenancy "would constitute a direct threat to the health or
-safety of other individuals or whose tenancy would result in substantial physical damage to the
-property of others"; Property Code § 301.025(f) is to the same effect.
+prohibits representing that a dwelling is unavailable when it is in fact available; and § 3604(f)(1)
+through (3) address handicap, including the reasonable-modification and reasonable-accommodation
+duties. Under § 3604(f)(9) nothing in that subsection requires a dwelling to be made available to a
+person whose tenancy "would constitute a direct threat to the health or safety of other individuals or
+whose tenancy would result in substantial physical damage to the property of others"; Property Code
+§ 301.025(f) is to the same effect.
 
 Advertising is regulated separately and strictly. Property Code § 301.022 prohibits making, printing
 or publishing "a notice, statement, or advertisement that is about the sale or rental of a dwelling and
@@ -525,32 +504,31 @@ that indicates any preference, limitation, or discrimination or the intention to
 limitation, or discrimination because of race, color, religion, sex, disability, familial status, or
 national origin," and 42 U.S.C. § 3604(c) is the federal counterpart. Property Code § 301.024 and
 42 U.S.C. § 3604(e) prohibit inducing a sale or rental for profit by representations about the entry
-or prospective entry into a neighborhood of persons of a particular protected characteristic.
-Advertise the *property*, never the desired tenant.
+or prospective entry into a neighborhood of persons of a protected characteristic. Advertise the
+*property*, never the desired tenant.
 
-Occupations Code § 1101.652(b)(32) adds a licensing consequence on top of the housing statutes: the
-Commission may discipline a license holder who "discriminates against an owner, potential buyer,
-landlord, or potential tenant on the basis of race, color, religion, sex, disability, familial status,
-national origin, or ancestry, including directing a prospective buyer or tenant interested in
-equivalent properties to a different area based on" those characteristics. Note that the TRELA list
-adds *ancestry*.
+Occupations Code § 1101.652(b)(32) adds a licensing consequence on top: the Commission may discipline
+a license holder who "discriminates against an owner, potential buyer, landlord, or potential tenant
+on the basis of race, color, religion, sex, disability, familial status, national origin, or ancestry,
+including directing a prospective buyer or tenant interested in equivalent properties to a different
+area based on" those characteristics. Note that the TRELA list adds *ancestry*.
 
-Within those constraints, a manager may screen on legitimate, consistently applied criteria — income
-relative to rent, verified rental history, and creditworthiness among them. Two disciplines matter.
-Write the standards down before the first application is taken, and never take an owner's instruction
-to deviate from them; § 1101.652(b)(32) makes the license holder responsible for the license holder's
-own act regardless of who suggested it.
+Within those constraints a manager may screen on legitimate, consistently applied criteria — income
+relative to rent, verified rental history, creditworthiness. Write the standards down before the first
+application is taken, and never take an owner's instruction to deviate from them; § 1101.652(b)(32)
+makes the license holder responsible for the license holder's own act regardless of who suggested
+it.
 
 **Reporting to the owner**
 
-Owner reporting closes the loop and, done well, prevents most disputes. A monthly package that shows
-income received, expenses paid with supporting invoices, the current cash position of the operating
-account, security deposits held and for whom, occupancy and delinquency, and completed and open work
-orders leaves very little to argue about. Section 1101.652(b)(9) requires proper accounting and
-remittance within a reasonable time and § 1101.652(b)(24) forbids materially inaccurate statements of
-account, so accuracy and timeliness in this package are not merely good service. A manager who
-discovers an error in a prior statement should correct it in writing in the next one; concealment is
-what converts a bookkeeping mistake into a disciplinary matter.
+Owner reporting closes the loop and, done well, prevents most disputes. A monthly package showing
+income received, expenses paid with supporting invoices, the operating account's cash position,
+security deposits held and for whom, occupancy and delinquency, and open and completed work orders
+leaves little to argue about. Section 1101.652(b)(9) requires proper accounting and remittance within
+a reasonable time and § 1101.652(b)(24) forbids materially inaccurate statements of account, so
+accuracy and timeliness here are not merely good service. Correct an error in a prior statement in
+writing in the next one; concealment is what converts a bookkeeping mistake into a disciplinary
+matter.
 
 ### Applied exercise: Build the operating statement
 
@@ -571,31 +549,29 @@ turnover $7,600; administrative and marketing $3,100. All figures are illustrati
 
 ## Unit: The Management Profession
 
-Property management is a career, not a task, and it looks different from brokerage in ways that suit
-some people very well. Sales brokerage is transactional: the work is episodic, the income is lumpy,
-and the relationship with a client typically ends at closing. Management is operational: the income is
-recurring, the relationships last years, and the measure of good work is that nothing dramatic
-happened. Managers tend to be people who like systems, tolerate interruption, and take satisfaction
-from a well-run building rather than from a signed contract.
+Property management is a career, not a task, and it differs from brokerage in ways that suit some
+people very well. Sales brokerage is transactional: episodic work, lumpy income, a client relationship
+that ends at closing. Management is operational: recurring income, relationships that last years, and
+a measure of good work that is simply that nothing dramatic happened. Managers tend to be people who
+like systems, tolerate interruption, and take satisfaction from a well-run building rather than from a
+signed contract.
 
 **The range of asset types**
 
 The word "property manager" covers several distinct occupations that happen to share a name.
 
-**Single-family and small residential.** Managing detached houses, duplexes and small multiplexes for
-individual owners, often owners who moved and kept the house. The properties are scattered, the
-economics turn on efficiency per door, and the owner is frequently unsophisticated and emotionally
-attached to the property. This is also the segment where the Texas licensing question bites hardest,
+**Single-family and small residential.** Detached houses, duplexes and small multiplexes for
+individual owners, often owners who moved and kept the house. The properties are scattered and the
+economics turn on efficiency per door. This is also where the Texas licensing question bites hardest,
 because Occupations Code § 1101.002(1)(A)(x) reaches control of the acceptance or deposit of rent from
 a resident of a single-family residential real property unit, and because the on-site apartment
 manager exemption in § 1101.005(7) does not describe this work.
 
-**Multifamily.** Apartment communities, from garden properties to high-rise. The work is concentrated
-at one address, staffed on site, and measured relentlessly: occupancy, traffic, closing ratio,
-delinquency, turnover cost, expense per unit. Careers here run from leasing consultant to assistant
-manager to community manager to portfolio or regional manager. Section 1101.005(7) makes the on-site
-manager position available to a person without a license, which is why multifamily is a common entry
-point into the industry.
+**Multifamily.** Apartment communities, from garden properties to high-rise: concentrated at one
+address, staffed on site, and measured relentlessly on occupancy, traffic, delinquency, turnover cost
+and expense per unit. Careers run from leasing consultant to community manager to portfolio or
+regional manager. Section 1101.005(7) makes the on-site manager position available without a license,
+which is why multifamily is a common entry point into the industry.
 
 **Commercial — office, retail and industrial.** The tenants are businesses, the leases are longer and
 individually negotiated, and the rent structures are more complex: base rent plus a share of operating
@@ -644,34 +620,33 @@ two parties whose interests diverge daily, and owes each of them something diffe
 
 **To the owner, the manager owes the duties of an agent.** Occupations Code § 1101.557(a) provides
 that a broker who represents a party in a real estate transaction, or who lists real estate for sale
-under an exclusive agreement for a party, is that party's agent, and § 1101.557(b) requires such a
+under an exclusive agreement for a party, is that party's agent, and § 1101.557(b) requires that
 broker to inform the party of material information related to a transaction to list, buy, sell or
 lease the party's real estate, including the receipt of an offer, and at a minimum to answer the
-party's questions and present any offer to or from the party. Chapter 1101 reinforces the point with
-its disciplinary grounds. Section 1101.652(b)(1) reaches a license holder who "acts negligently or
-incompetently"; (b)(2) reaches conduct "that is dishonest or in bad faith or that demonstrates
-untrustworthiness"; (b)(7) reaches a failure "to make clear to all parties to a real estate
-transaction the party for whom the license holder is acting"; (b)(8) reaches receiving "compensation
-from more than one party to a real estate transaction without the full knowledge and consent of all
-parties"; (b)(13) reaches undisclosed profit on an expenditure made for a principal; and (b)(9) and
-(10) reach the failures of accounting and commingling examined in Unit 1. Read together, these
-provisions describe loyalty, disclosure, competence and honest accounting — the ordinary content of a
-fiduciary relationship — enforced by license discipline rather than only by contract.
+party's questions and present any offer to or from the party. Chapter 1101's disciplinary grounds
+reinforce the point: § 1101.652(b)(1) reaches a license holder who "acts negligently or
+incompetently"; (b)(2) conduct "that is dishonest or in bad faith or that demonstrates
+untrustworthiness"; (b)(7) a failure "to make clear to all parties to a real estate transaction the
+party for whom the license holder is acting"; (b)(8) receiving "compensation from more than one party
+to a real estate transaction without the full knowledge and consent of all parties"; (b)(13)
+undisclosed profit on an expenditure made for a principal; and (b)(9) and (10) the accounting and
+commingling failures examined in Unit 1. Together they describe loyalty, disclosure, competence and
+honest accounting — the ordinary content of a fiduciary relationship — enforced by license discipline
+rather than only by contract.
 
-**To the tenant, the manager owes what the statute owes.** The duties in Property Code ch. 92 run
-against the landlord, and § 92.001(2) tells us the manager is not the landlord unless the manager
-purports to be the owner, lessor or sublessor in a lease. But the manager is the person through whom
-those duties are performed or breached: the manager receives the repair notice under § 92.052(a) at
-the place rent is paid, the manager runs the clock under § 92.056, the manager holds and refunds the
-security deposit under § 92.103(a) "on or before the 30th day after the date the tenant surrenders the
-premises," the manager prepares the "written description and itemized list of all deductions" required
-by § 92.104(c), and the manager is the person who does or does not honor § 92.104(b)'s rule that no
-portion of a deposit may be retained "to cover normal wear and tear." The penalties fall on the
-landlord — § 92.109(a) makes a landlord who in bad faith retains a deposit liable for one hundred
-dollars, three times the portion wrongfully withheld, and the tenant's reasonable attorney's fees, and
-§ 92.109(d) presumes bad faith where the landlord fails either to return the deposit or to provide the
-written description and itemization on or before the thirtieth day after surrender — but they fall
-because of what the manager did.
+**To the tenant, the manager owes what the statute owes.** The ch. 92 duties run against the landlord,
+and § 92.001(2) tells us the manager is not the landlord unless the manager purports to be the owner,
+lessor or sublessor in a lease. But the manager is the person through whom those duties are performed
+or breached: the manager receives the repair notice under § 92.052(a) at the place rent is paid, runs
+the clock under § 92.056, holds and refunds the security deposit under § 92.103(a) "on or before the
+30th day after the date the tenant surrenders the premises," prepares the "written description and
+itemized list of all deductions" required by § 92.104(c), and honors or ignores § 92.104(b)'s rule
+that no portion of a deposit may be retained "to cover normal wear and tear." The penalties fall on
+the landlord — § 92.109(a) makes a landlord who in bad faith retains a deposit liable for one hundred
+dollars, three times the portion wrongfully withheld, and reasonable attorney's fees, and § 92.109(d)
+presumes bad faith where the landlord fails either to return the deposit or to provide the written
+itemization on or before the thirtieth day after surrender — but they fall because of what the manager
+did.
 
 Three ch. 92 provisions exist precisely because managers under pressure have been tempted to shorten
 the process. Section 92.008(a) and (b) prohibit a landlord or a landlord's agent from interrupting
