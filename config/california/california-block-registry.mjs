@@ -49,6 +49,15 @@ import { A3_BLOCKS as PRACTICE_A3_BLOCKS } from "./practice-a3-blocks.mjs";
 import { A4_BLOCKS as PRACTICE_A4_BLOCKS } from "./practice-a4-blocks.mjs";
 import { A5_BLOCKS as PRACTICE_A5_BLOCKS } from "./practice-a5-blocks.mjs";
 import { A6_BLOCKS as PRACTICE_A6_BLOCKS } from "./practice-a6-blocks.mjs";
+import { A7_BLOCKS as PRACTICE_A7_BLOCKS } from "./practice-a7-blocks.mjs";
+import { A8_BLOCKS as PRACTICE_A8_BLOCKS } from "./practice-a8-blocks.mjs";
+import { A9_BLOCKS as PRACTICE_A9_BLOCKS } from "./practice-a9-blocks.mjs";
+import { A10_BLOCKS as PRACTICE_A10_BLOCKS } from "./practice-a10-blocks.mjs";
+import { A11_BLOCKS as PRACTICE_A11_BLOCKS } from "./practice-a11-blocks.mjs";
+import { A12_BLOCKS as PRACTICE_A12_BLOCKS } from "./practice-a12-blocks.mjs";
+import { A13_BLOCKS as PRACTICE_A13_BLOCKS } from "./practice-a13-blocks.mjs";
+import { A14_BLOCKS as PRACTICE_A14_BLOCKS } from "./practice-a14-blocks.mjs";
+import { A15_BLOCKS as PRACTICE_A15_BLOCKS } from "./practice-a15-blocks.mjs";
 import { PRACTICE_RETRIEVAL_BANKS } from "./practice-retrieval-banks.mjs";
 
 /* Principles and Practice are registered incrementally, exactly like the Mortgage rollout: an
@@ -91,6 +100,15 @@ export const BLOCK_DELIVERIES = Object.freeze([
   PRACTICE_A4_BLOCKS,
   PRACTICE_A5_BLOCKS,
   PRACTICE_A6_BLOCKS,
+  PRACTICE_A7_BLOCKS,
+  PRACTICE_A8_BLOCKS,
+  PRACTICE_A9_BLOCKS,
+  PRACTICE_A10_BLOCKS,
+  PRACTICE_A11_BLOCKS,
+  PRACTICE_A12_BLOCKS,
+  PRACTICE_A13_BLOCKS,
+  PRACTICE_A14_BLOCKS,
+  PRACTICE_A15_BLOCKS,
 ]);
 
 export const RETRIEVAL_BANKS = Object.freeze({ ...A1_RETRIEVAL_BANK, ...MORTGAGE_RETRIEVAL_BANKS, ...PRINCIPLES_RETRIEVAL_BANKS, ...PRACTICE_RETRIEVAL_BANKS });
