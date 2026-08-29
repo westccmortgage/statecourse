@@ -1,0 +1,113 @@
+{
+  "freezeLabel": "PRINS2-CONTENT-FREEZE-2026-08-29",
+  "frozenAt": "2026-08-29",
+  "note": "Content freeze for Texas Principles of Real Estate II. Every downstream artifact — block maps, claim audit, source register, assessments — is generated or validated against exactly these module hashes. A curriculum edit after this point invalidates the freeze and every artifact must be regenerated.",
+  "curriculum": {
+    "modules": [
+      {
+        "file": "module-01.md",
+        "units": 2,
+        "words": 2416,
+        "sha256": "435f7a38d346d9cf36785ba105b2c02175b7f075004a4e67d3bcb7fbb00cd8e2"
+      },
+      {
+        "file": "module-02.md",
+        "units": 9,
+        "words": 31627,
+        "sha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786"
+      },
+      {
+        "file": "module-03.md",
+        "units": 6,
+        "words": 12488,
+        "sha256": "241930c63f4df13611766c4931e7269a8e665ab3955398bcfe15f53f7e51e4d7"
+      },
+      {
+        "file": "module-04.md",
+        "units": 5,
+        "words": 9440,
+        "sha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115"
+      },
+      {
+        "file": "module-05.md",
+        "units": 3,
+        "words": 12349,
+        "sha256": "ad18b5be028089e445461b1e033abf8cef21d146d7a58ea1a5a25ea00598c2b0"
+      },
+      {
+        "file": "module-06.md",
+        "units": 6,
+        "words": 17037,
+        "sha256": "2009d6a10e2c7fcec11cacc370349ec7d349e47b6beb9d31e9d7825fc3237cef"
+      },
+      {
+        "file": "module-07.md",
+        "units": 5,
+        "words": 12398,
+        "sha256": "c7cb3cdb20b904a37d7902e77bd4e7dec8af6b8ed3e993a59fceaac063972797"
+      },
+      {
+        "file": "module-08.md",
+        "units": 5,
+        "words": 25372,
+        "sha256": "6c3a15c9f2ff3f9d23a377a51b9cbb24ffe148fb24714e01aa778f299df735de"
+      },
+      {
+        "file": "module-09.md",
+        "units": 3,
+        "words": 8025,
+        "sha256": "916cafb3da268dd0e712dc9cdd14146a317714e2959384feb53e0160939a2a26"
+      }
+    ],
+    "totalWords": 131152,
+    "totalUnits": 44
+  },
+  "outline": {
+    "form": "PRINS2-1",
+    "revision": "09/11/2024",
+    "topics": 9,
+    "units": 44,
+    "totalMinutes": 1500,
+    "minutesReconcile": true
+  },
+  "sourceRegister": {
+    "registeredSources": 55,
+    "byTier": {
+      "controlling": 52,
+      "guidance": 1,
+      "contextual": 2
+    },
+    "controllingGaps": 0,
+    "guidanceGaps": 1,
+    "hashesVerified": 55,
+    "hashMismatches": 0,
+    "unitsHeld": 40,
+    "unitsExcused": 4,
+    "unitsUncovered": 0
+  },
+  "sourceInventory": {
+    "files": 110,
+    "totalBytes": 19876349
+  },
+  "claimAudit": {
+    "citations": 1284,
+    "byStatus": {
+      "MECHANICAL_PASS": 1281,
+      "IDENTIFIED_NOT_TAUGHT": 3
+    },
+    "quotesChecked": 1048,
+    "quotesFailed": 291
+  },
+  "reproduce": [
+    "node scripts/texas-source-inventory.mjs",
+    "node scripts/audit-prins2-claims.mjs",
+    "node scripts/generate-tx-principles-ii-block-maps.mjs",
+    "node --test tests/*.test.mjs"
+  ],
+  "status": {
+    "trecApproval": false,
+    "enrollmentEnabled": false,
+    "texasCreditAvailable": false,
+    "principlesIIAcceptance": "NO-GO — assessments, engine and acceptance report outstanding"
+  }
+}
