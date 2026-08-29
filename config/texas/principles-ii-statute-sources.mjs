@@ -924,7 +924,7 @@ const US12_2901 = federal({
   tier: "controlling",
   reliedOnByUnits: ["T08U5"],
   sectionsRead: [
-    Object.freeze({ section: "2901", note: "(a)(1)-(3) The three findings, quoted in full, including the 'continuing and affirmative obligation to help meet the credit needs of the local communities in which they are chartered'. (b) The purpose, quoted in full; the basis for every statement about the examination mechanism, the word 'encourage', and the 'consistent with the safe and sound operation' limit. Notes read: the Short Title note (Pub. L. 95-128, § 801, the Community Reinvestment Act of 1977); the note reproducing Pub. L. 106-102 § 715 (1999), the source of the phrase 'services in low- and moderate-income neighborhoods and for persons of modest means', which the module attributes to this note rather than to § 2901's findings; and the note reproducing Pub. L. 102-550 § 910 (1992) on the report comparing lending in 'low-income, minority, and distressed neighborhoods' to other neighborhoods. The module says plainly that nothing in § 2901 creates an individual borrower's claim, which is a statement about what the held text contains." }),
+    Object.freeze({ section: "2901", note: "(a)(1)-(3) The three findings, quoted in full, including the 'continuing and affirmative obligation to help meet the credit needs of the local communities in which they are chartered'. (b) The purpose, quoted in full; the basis for every statement about the examination mechanism, the word 'encourage', and the 'consistent with the safe and sound operation' limit. Notes read: the Short Title note (Pub. L. 95-128, § 801, the Community Reinvestment Act of 1977); the note reproducing Pub. L. 106-102 § 715 (1999), the source of the phrase 'services in low- and moderate-income neighborhoods and for persons of modest means', which the module attributes to this note rather than to § 2901's findings; and the note reproducing Pub. L. 102-550 § 910 (1992) on the report comparing lending in 'low-income, minority, and distressed neighborhoods' to other neighborhoods. The module says plainly that nothing in § 2901 creates an individual borrower's claim, which is a statement about what the held text contains. CORRECTION recorded in the rewritten T08 record: T08U5 formerly said the 'low- and moderate-income' framing sits ONLY in the statutory notes under § 2901. Sections 2903(a)(1) and 2906(a)(1), now held and registered below, both use the phrase 'including low- and moderate-income neighborhoods', so the module now says the framing enters through the assessment and evaluation sections and keeps the notes as a further extension of it." }),
   ],
 });
 
@@ -1361,7 +1361,7 @@ const trecRule = (record) => {
   }
   return Object.freeze({
     ...record,
-    id: `tac-${locked.section.replace(/[^0-9.]/g, "").replace(/\./g, "-")}`,
+    id: `tac-535-${locked.section.split(".").pop()}`,
     citation: locked.section,
     title: locked.heading,
     authority: "Texas Real Estate Commission",
@@ -1782,6 +1782,11 @@ export function sourceValidation(unitCodes = PRINS2_UNITS) {
   });
 }
 
+/**
+ * ASSESSMENT_REQUIREMENTS appears in the default export as a convenience for a consumer that already
+ * has this register in hand. It is a RE-EXPORT: config/texas/trec-rules-source-lock.mjs derives it
+ * from 22 TAC § 535.62(b)(7) and § 535.65 and remains the authority for every number in it.
+ */
 export default Object.freeze({
   SOURCE_TIERS,
   GAP_TIERS,
