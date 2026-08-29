@@ -8,25 +8,34 @@ housing laws."*
 
 **Learning objectives.** After completing this module you will be able to: state the protected classes
 listed in each subsection of 42 U.S.C. § 3604 and distinguish a reasonable accommodation from a
-reasonable modification under § 3604(f)(3); identify the protected classes, prohibited practices,
-exemptions and enforcement path of the Texas Fair Housing Act, Property Code ch. 301, and name the
-agency that administers it; define steering, blockbusting and discriminatory advertising and identify
-the provision each violates, including the licence-discipline ground in Occupations Code
-§ 1101.652(b)(32); state the prohibited bases and permitted inquiries under the Equal Credit
-Opportunity Act, 15 U.S.C. § 1691(a) and (b), and explain the adverse-action notification owed under
-§ 1691(d); and explain the congressional findings and purpose of the Community Reinvestment Act,
+reasonable modification under § 3604(f)(3); apply the Fair Housing Act's own definitions of
+"dwelling," "person," "handicap" and "familial status" in 42 U.S.C. § 3602; state the two exemptions
+in § 3603(b), the conditions and limits on each, and explain why neither ever reaches § 3604(c);
+identify housing for older persons under § 3607(b) and distinguish its 62-and-over structure from its
+55-and-over structure; identify the protected classes, prohibited practices, exemptions and
+enforcement path of the Texas Fair Housing Act, Property Code ch. 301, and name the agency that
+administers it; define steering, blockbusting and discriminatory advertising and identify the
+provision each violates, including the licence-discipline ground in Occupations Code
+§ 1101.652(b)(32); state what a "residential real estate-related transaction" is under 42 U.S.C.
+§ 3605(b) and who § 3605(a) covers; state the prohibited bases and permitted inquiries under the Equal
+Credit Opportunity Act, 15 U.S.C. § 1691(a) and (b), and explain the adverse-action notification owed
+under § 1691(d); and explain the congressional findings and purpose of the Community Reinvestment Act,
 12 U.S.C. § 2901, and distinguish that affirmative community-credit obligation from an individual
 anti-discrimination claim.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where a
-statement is practice rather than law, the module says so and cites nothing for it. Several federal
-provisions this topic ordinarily touches were **not** among the sources held: the Fair Housing Act's
-definitions (42 U.S.C. § 3602), its exemptions (§§ 3603(b) and 3607), its residential real
-estate-related transactions section (§ 3605) and its brokerage section (§ 3606); the Community
-Reinvestment Act's examination and rating sections (12 U.S.C. §§ 2902–2906); and the Equal Credit
-Opportunity Act's definitions and remedies sections (15 U.S.C. §§ 1691a–1691f). Where the module
-reaches those subjects it says so plainly, teaches the parallel Texas provision that *was* read, and
-tells you to read the federal text yourself rather than paraphrasing text nobody opened. Every name,
+statement is practice rather than law, the module says so and cites nothing for it. On the federal
+fair housing side the sources held and read are 42 U.S.C. §§ 3601, 3602, 3603, 3604, 3605 and 3607,
+and this module teaches each of them from its own text. Some provisions this topic can touch were
+**not** among the sources held: the Fair Housing Act's brokerage-services section (42 U.S.C. § 3606)
+and its interference section (§ 3617); its administrative and judicial enforcement sections
+(§§ 3610–3614); the Community Reinvestment Act's examination and rating sections (12 U.S.C.
+§§ 2902–2906); and the Equal Credit Opportunity Act's definitions and remedies sections (15 U.S.C.
+§§ 1691a–1691f). Where the module reaches those subjects it says so plainly, teaches the parallel
+Texas provision that *was* read, and tells you to read the federal text yourself rather than
+paraphrasing text nobody opened. Texas Property Code ch. 301 is taught throughout alongside the
+federal Act, not as a substitute for it: a Texas license holder is governed by both, and the places
+where the two texts align and the places where they do not are worth knowing precisely. Every name,
 address and dollar figure in the illustrations is invented to make a rule visible.
 
 ## Unit: Equal Opportunity in Housing
@@ -61,12 +70,72 @@ names somewhere in its text are race, color, religion, sex, familial status, nat
 handicap. The federal statute says **handicap**, not "disability"; Texas says disability. Use each
 statute's own word when you cite it.
 
-**Read the opening clause first.** Section 3604 begins: "As made applicable by section 3603 of this
-title and except as exempted by sections 3603(b) and 3607 of this title, it shall be unlawful—". The
-reach of § 3604 is therefore set by § 3603, and two exemption provisions sit outside the section. The
-texts of §§ 3603 and 3607 were not held for this course, so this module does not tell you what they
-say — only that § 3604's own words make them controlling, and that you must read them before relying
-on any federal exemption. Texas's parallel exemptions were read and appear below and in unit 2.
+**The words the Act defines for itself.** Section 3602 supplies the definitions used throughout the
+subchapter, and several of them decide cases before any prohibition is reached.
+
+**"Dwelling"** (§ 3602(b)) means "any building, structure, or portion thereof which is occupied as, or
+designed or intended for occupancy as, a residence by one or more families, and any vacant land which
+is offered for sale or lease for the construction or location thereon of any such building, structure,
+or portion thereof." Two consequences. A *portion* of a building is a dwelling, so a single rented room
+counts. And **vacant land offered for sale or lease for residential construction is a dwelling** — a
+raw lot listed for a house is inside the Act, which matters in a state with as much lot inventory as
+Texas. Property Code § 301.003(8) defines dwelling to the same effect, land included.
+
+**"Family"** (§ 3602(c)) "includes a single individual," matching Property Code § 301.003(9). So a
+statute written in terms of "families" is not a statute about households with children; do not confuse
+this definition with familial status.
+
+**"Person"** (§ 3602(d)) "includes one or more individuals, corporations, partnerships, associations,
+labor organizations, legal representatives, mutual companies, joint-stock companies, trusts,
+unincorporated organizations, trustees, trustees in cases under title 11, receivers, and fiduciaries."
+The list opens with *individuals*. That single word is why a sales agent is personally a "person" who
+may not do what § 3604 forbids — the brokerage's liability is not a shield, and Property Code
+§ 301.003(12) makes the identical point on the Texas side.
+
+**"To rent"** (§ 3602(e)) "includes to lease, to sublease, to let and otherwise to grant for a
+consideration the right to occupy premises not owned by the occupant," so a sublease is inside the Act.
+
+**"Handicap"** (§ 3602(h)) means, "with respect to a person— (1) a physical or mental impairment which
+substantially limits one or more of such person's major life activities, (2) a record of having such an
+impairment, or (3) being regarded as having such an impairment," and "such term does not include
+current, illegal use of or addiction to a controlled substance." Learn all three prongs. The third —
+**regarded as** — means a landlord who acts on an impairment he wrongly believes the applicant has is
+inside the definition, so being wrong about the facts is no defence. Texas Property Code § 301.003(6)
+tracks the same three prongs and the same drug exclusion, then adds two exclusions the federal
+definition does not contain, for sexual orientation and for a person who is a transvestite. On the
+federal side the transvestism point is not in § 3602 at all; it appears in a statutory note printed
+under the section, § 6(b)(3) of Pub. L. 100–430, which provides that "neither the term 'individual with
+handicaps' nor the term 'handicap' shall apply to an individual solely because that individual is a
+transvestite." Different placement, and worth noting when you are comparing the two texts.
+
+**"Aggrieved person"** (§ 3602(i)) "includes any person who— (1) claims to have been injured by a
+discriminatory housing practice; or (2) believes that such person will be injured by a discriminatory
+housing practice that is about to occur." The second clause reaches an anticipated injury.
+
+Finally, § 3602(f) defines a **"discriminatory housing practice"** as "an act that is unlawful under
+section 3604, 3605, 3606, or 3617 of this title" — the phrase that carries the substantive prohibitions
+into the enforcement machinery. Two of those four sections, §§ 3606 and 3617, were not held for this
+course; this module names them only because § 3602(f) does, and does not state what they contain.
+Familial status, § 3602(k), is treated later in this unit alongside § 3607.
+
+**Read the opening clause first, then read § 3603.** Section 3604 begins: "As made applicable by
+section 3603 of this title and except as exempted by sections 3603(b) and 3607 of this title, it shall
+be unlawful—". Both cross-referenced sections were read for this course, so we can follow the chain
+rather than stopping at it. Section 3603(a) sets the reach. "Subject to the provisions of subsection
+(b) and section 3607 of this title," the § 3604 prohibitions applied on enactment to four categories of
+federally connected housing — dwellings "owned or operated by the Federal Government"; dwellings aided
+by federal "loans, advances, grants, or contributions" under agreements entered into after November 20,
+1962; dwellings "provided in whole or in part by loans insured, guaranteed, or otherwise secured by the
+credit of the Federal Government" under such agreements; and dwellings provided by development or
+redevelopment of property obtained from a public agency receiving federal slum-clearance or urban
+renewal assistance. Then § 3603(a)(2): "After December 31, 1968, to all dwellings covered by paragraph
+(1) and to all other dwellings except as exempted by subsection (b)."
+
+That staged 1968–69 phase-in is spent history, and the only operative sentence today is the second one.
+State it in the form you will use: **§ 3604 applies to all dwellings, except those § 3603(b) or § 3607
+excepts.** The federally connected categories in § 3603(a)(1) are not a limit on the modern statute;
+they are a record of which housing was covered first. The two exemptions are set out at the end of this
+unit, and they are narrower than most people assume.
 
 **§ 3604(a) — refusal to deal.** It is unlawful "[t]o refuse to sell or rent after the making of a
 bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or
@@ -170,28 +239,215 @@ a direct threat to the health or safety of other individuals or whose tenancy wo
 substantial physical damage to the property of others" — a narrow, evidence-based provision about
 *this* individual's tenancy, not a licence to act on assumptions about a category of people.
 
-**Familial status and housing for older persons.** The Act's definitions of "dwelling" and "familial
-status" are in § 3602 and its housing-for-older-persons provisions are in § 3607; neither was held, so
-this module does not state their contents. What was read supports only this: § 3604's opening clause
-makes § 3607 an express exception to the whole section, and the § 3601 notes show Congress revisited
-§ 3607 in 1995. The Texas parallels were read in full — § 301.004 defines familial status and
-§ 301.043 exempts certain elderly housing from the familial-status provisions — and because § 301.062
-requires Texas's substantive rules to be "the same as are provided in federal fair housing
-regulations," they are a sound place to learn the concepts. For a federal filing, read §§ 3602 and
-3607 directly.
+**Familial status, defined.** Section 3602(k) defines **familial status** as "one or more individuals
+(who have not attained the age of 18 years) being domiciled with— (1) a parent or another person having
+legal custody of such individual or individuals; or (2) the designee of such parent or other person
+having such custody, with the written permission of such parent or other person." A closing sentence
+extends it: "The protections afforded against discrimination on the basis of familial status shall
+apply to any person who is pregnant or is in the process of securing legal custody of any individual
+who has not attained the age of 18 years."
 
-**Exemptions, and the one that never covers advertising.** Section 3604 points to §§ 3603(b) and 3607.
-The Texas analogue, Property Code § 301.041, was read and shows the structure clearly: it exempts
-certain owner sales and rentals from **§§ 301.021, 301.023, 301.024 and 301.025** — and conspicuously
-*not* from § 301.022, the advertising prohibition. Texas makes the point twice, because
-§ 301.041(a)(1)(B)(ii) conditions the single-family owner exemption on the house being sold or rented
-without "the publication, posting, or mailing of a notice, statement, or advertisement prohibited by
-Section 301.022." The practical rule, from Texas text: **an exempt owner still may not advertise a
-discriminatory preference, and advertising one can cost the exemption itself.** And
-§ 301.041(a)(1)(B)(i) removes the exemption if the owner uses "the sales or rental facilities or
-services of a broker, agent, or salesperson licensed under Chapter 1101, Occupations Code" — which is
-why exemptions are of limited interest to a license holder. The moment you are engaged, the owner is
-not exempt, and you were never exempt.
+Read that carefully, because the class is narrower and stranger than the phrase "families with
+children" suggests. The trigger is **domicile with a person under 18** — not marriage, not household
+size, not being a parent in the abstract. A grandmother raising a ten-year-old is protected; so is a
+designee caring for a child with the custodial parent's *written* permission. And the closing sentence
+protects two people who are not yet domiciled with any minor at all: a pregnant applicant, and a person
+"in the process of securing legal custody." Property Code § 301.004 states the same three routes —
+pregnant, domiciled with an individual younger than 18 as parent or legal custodian or with that
+person's written permission, or in the process of obtaining legal custody. Federal and Texas familial
+status are the same class described in the same terms.
+
+**Housing for older persons — § 3607(b).** This is where the familial-status class stops, and it is
+the exemption a Texas license holder is most likely to meet in practice, because active-adult
+communities are everywhere in this state. Section 3607(b)(1) does two things in two sentences: nothing
+in the subchapter "limits the applicability of any reasonable local, State, or Federal restrictions
+regarding the maximum number of occupants permitted to occupy a dwelling," and "[n]or does any
+provision in this subchapter regarding familial status apply with respect to housing for older
+persons."
+
+Note the width of that second sentence, and then note its limit. It removes **the familial-status
+provisions and nothing else**. Race, color, religion, sex, national origin and handicap all continue to
+apply in full inside a seniors community. A 55-and-over community that qualifies under § 3607(b) may
+lawfully decline to rent to a household with a twelve-year-old; it may not decline to rent to a
+62-year-old applicant on the basis of national origin, and it owes the same § 3604(f)(3) accommodations
+and modifications as any other housing provider. "It's senior housing" answers exactly one question.
+
+Section 3607(b)(2) defines **housing for older persons** as housing in any of three alternatives:
+
+- **(A) Program housing** — housing "provided under any State or Federal program that the Secretary
+  determines is specifically designed and operated to assist elderly persons (as defined in the State
+  or Federal program)." The Secretary is the Secretary of Housing and Urban Development, per
+  § 3602(a). Note that qualification here runs through a determination by the Secretary, not through
+  the operator's own view of its program.
+- **(B) 62-and-over** — housing "intended for, and solely occupied by, persons 62 years of age or
+  older."
+- **(C) 55-and-over** — housing "intended and operated for occupancy by persons 55 years of age or
+  older," *and* meeting three further requirements: "(i) at least 80 percent of the occupied units are
+  occupied by at least one person who is 55 years of age or older"; "(ii) the housing facility or
+  community publishes and adheres to policies and procedures that demonstrate the intent required
+  under this subparagraph"; and "(iii) the housing facility or community complies with rules issued by
+  the Secretary for verification of occupancy," which rules must "provide for verification by reliable
+  surveys and affidavits" and "include examples of the types of policies and procedures relevant to a
+  determination of compliance," with those surveys and affidavits "admissible in administrative and
+  judicial proceedings for the purposes of such verification."
+
+**Contrast (B) and (C) precisely; the difference is the whole point.** Sixty-two-and-over is a
+*solely occupied* standard — every occupant meets the age, and the statute adds no conditions beyond
+intent and sole occupancy. Fifty-five-and-over is a *threshold* standard with paperwork: only one
+person aged 55 or older is needed in each qualifying unit, only 80 percent of the **occupied** units
+must qualify (unoccupied units are excluded from the denominator by the word "occupied"), and the
+community must additionally publish and adhere to age policies and comply with the Secretary's
+occupancy-verification rules. A community that calls itself "55+" in its marketing, has never published
+an age policy and cannot document its 80 percent is not, on this text, housing for older persons — and
+every familial-status exclusion it has made is unprotected.
+
+Two savings provisions follow, and both are practical. Under § 3607(b)(3), housing "shall not fail to
+meet the requirements for housing for older persons" by reason of persons who were residing there as of
+September 13, 1988 and do not meet the (B) or (C) ages, "Provided, That new occupants of such housing
+meet the age requirements," or by reason of "unoccupied units: Provided, That such units are reserved
+for occupancy by persons who meet the age requirements." So legacy residents and vacant units do not
+break the exemption.
+
+Under § 3607(b)(5)(A), "[a] person shall not be held personally liable for monetary damages for a
+violation of this subchapter if such person reasonably relied, in good faith, on the application of the
+exemption under this subsection relating to housing for older persons." Subparagraph (B) then says how
+that reliance may be shown — and the word to underline is *only*: "a person may only show good faith
+reliance… by showing that— (i) such person has no actual knowledge that the facility or community is
+not, or will not be, eligible for such exemption; and (ii) the facility or community has stated
+formally, in writing, that the facility or community complies with the requirements for such
+exemption." Both elements, and the second is documentary. This provision is aimed squarely at the
+agent, manager or advertiser who takes a community's word for its status: **get the written statement
+of compliance, or the good-faith defence is unavailable on the statute's own terms.** That is a
+statutory point, not a practice tip.
+
+Section 3607(b)(4) rounds out the section: "Nothing in this subchapter prohibits conduct against a
+person because such person has been convicted by any court of competent jurisdiction of the illegal
+manufacture or distribution of a controlled substance as defined in section 802 of title 21." Note how
+narrow it is — *manufacture or distribution*, convictions only, and only of a controlled substance. It
+is not a general permission to screen on criminal history.
+
+**Where Texas lands.** Property Code § 301.043 exempts from the Texas familial-status provisions the
+same three categories: housing "intended for, and solely occupied by, individuals 62 years of age or
+older"; housing "intended and operated for occupancy by at least one individual 55 years of age or
+older for each unit as determined by commission rules"; and housing the commission determines is
+designed and operated to assist elderly individuals under a federal or state program. The structures
+match, with one drafting difference worth knowing: **Texas routes the 55-and-over detail through
+commission rules, while the federal 80 percent figure sits in the statute itself** at
+§ 3607(b)(2)(C)(i). No Texas Workforce Commission rule was held for this course, so this module states
+the federal percentage from § 3607 and does not state what the Texas rules require. Property Code
+§ 301.062 requires the commission's substantive rules to impose obligations "the same as are provided
+in federal fair housing regulations," which tells you the direction Texas points, but a rule you have
+not read is not a rule you can quote to a client.
+
+**The § 3603(b) exemptions, and the one thing they never cover.** Start with the opening words of
+§ 3603(b), because everything turns on a five-word parenthesis: "**Nothing in section 3604 of this
+title (other than subsection (c)) shall apply to**—". Read it twice. Section 3603(b) exempts qualifying
+transactions from all of § 3604 *except subsection (c)*, and subsection (c) is the advertising and
+statements prohibition. So a fully exempt owner may still refuse to sell for a discriminatory reason
+without violating § 3604(a) — and may **not** make, print or publish a notice, statement or
+advertisement indicating a preference, limitation or discrimination, or an intention to make one.
+**There is no exemption from federal fair housing advertising law.** That is the single most useful
+sentence in § 3603, it comes from the section's own first line, and it is the answer to the client who
+says "I'm exempt, so I can put whatever I want in the ad."
+
+Two transactions are exempted.
+
+**(1) A single-family house sold or rented by its owner** — § 3603(b)(1) exempts "any single-family
+house sold or rented by an owner," subject to four provisos, each of which narrows it:
+
+- **The three-house ceiling.** The exemption applies "Provided, That such private individual owner does
+  not own more than three such single-family houses at any one time."
+- **The anti-evasion ceiling.** It applies further only if "such bona fide private individual owner does
+  not own any interest in, nor is there owned or reserved on his behalf, under any express or voluntary
+  agreement, title to or any right to all or a portion of the proceeds from the sale or rental of, more
+  than three such single-family houses at any one time." This closes the obvious dodge of holding the
+  fourth and fifth houses through an entity or a proceeds arrangement.
+- **The one-sale-in-24-months limit for an absent owner.** "[I]n the case of the sale of any such
+  single-family house by a private individual owner not residing in such house at the time of such sale
+  or who was not the most recent resident of such house prior to such sale, the exemption granted by
+  this subsection shall apply only with respect to one such sale within any twenty-four month period."
+  Note who this catches: the owner who did not live in the house. An owner selling the home she has
+  been living in is outside this limit.
+- **The no-broker, no-advertisement condition.** "[A]fter December 31, 1969, the sale or rental of any
+  such single-family house shall be excepted from the application of this subchapter only if such house
+  is sold or rented (A) without the use in any manner of the sales or rental facilities or the sales or
+  rental services of any real estate broker, agent, or salesman, or of such facilities or services of
+  any person in the business of selling or renting dwellings, or of any employee or agent of any such
+  broker, agent, salesman, or person and (B) without the publication, posting or mailing, after notice,
+  of any advertisement or written notice in violation of section 3604(c) of this title." A closing
+  clause preserves ordinary closing help: "nothing in this proviso shall prohibit the use of attorneys,
+  escrow agents, abstractors, title companies, and other such professional assistance as necessary to
+  perfect or transfer the title."
+
+Clause (A) is the one that matters to you, and it is why this whole exemption is of limited practical
+interest to a license holder. **The moment the owner uses your services, the exemption is gone.** The
+statute does not say "unless the broker discriminates"; it says the sale is excepted *only if* it is
+made without the use "in any manner" of a broker's, agent's or salesman's facilities or services. And
+clause (B) makes the advertising point a second time, from the other direction: a § 3604(c) violation
+does not merely go unexcused, it destroys the exemption for the transaction as a whole.
+
+**(2) Rooms or units in an owner-occupied dwelling** — § 3603(b)(2) exempts "rooms or units in
+dwellings containing living quarters occupied or intended to be occupied by no more than four families
+living independently of each other, if the owner actually maintains and occupies one of such living
+quarters as his residence." Four elements: living quarters for **no more than four** families; the
+families living **independently of each other**; the **owner** occupying one of them; and occupying it
+as the owner's **residence**, which the statute reinforces with "actually maintains and occupies." An
+owner living in one unit of a fourplex and renting the other three is inside it. An owner who lives
+elsewhere and rents all four is not. You will hear this called the "Mrs. Murphy" exemption in the
+industry; the statute does not use that name and this module cites nothing for it.
+
+**Who is "in the business of selling or renting dwellings."** Section 3603(b)(1)(A) denies the
+exemption to an owner who uses the facilities or services of "any person in the business of selling or
+renting dwellings," and § 3603(c) defines that phrase for the subsection. A person is in the business
+if "(1) he has, within the preceding twelve months, participated as principal in three or more
+transactions involving the sale or rental of any dwelling or any interest therein"; or "(2) he has,
+within the preceding twelve months, participated as agent, other than in the sale of his own personal
+residence in providing sales or rental facilities or sales or rental services in two or more
+transactions involving the sale or rental of any dwelling or any interest therein"; or "(3) he is the
+owner of any dwelling designed or intended for occupancy by, or occupied by, five or more families."
+Three transactions as principal, two as agent, or a five-family building — thresholds low enough that
+almost anyone working in this field clears them.
+
+**How Texas does the same job.** Property Code § 301.041 was read in full and is built on the same
+plan, which is worth seeing side by side. Texas exempts qualifying owner sales and rentals from
+**§§ 301.021, 301.023, 301.024 and 301.025** — and conspicuously *not* from § 301.022, the advertising
+prohibition. Where the federal Act makes that point with a parenthesis ("other than subsection (c)"),
+Texas makes it by listing the sections the exemption reaches and leaving the advertising section off
+the list. Both then repeat the point as a condition: § 301.041(a)(1)(B)(ii) requires the house to be
+sold or rented without "the publication, posting, or mailing of a notice, statement, or advertisement
+prohibited by Section 301.022," just as § 3603(b)(1)(B) requires it to be sold without an advertisement
+"in violation of section 3604(c)." Texas likewise removes the exemption where the owner uses "the sales
+or rental facilities or services of a broker, agent, or salesperson licensed under Chapter 1101,
+Occupations Code" (§ 301.041(a)(1)(B)(i)) — the state version of the federal no-broker condition,
+pinned to a Texas licence. Texas caps ownership at "more than three single-family houses at any one
+time," and § 301.041(b) limits the exemption to "one sale in a 24-month period if the owner was not the
+most recent resident of the house at the time of the sale." The Texas owner-occupied exemption uses the
+same "not more than four families living independently of each other" formula and requires that "the
+owner maintains and occupies one of the living quarters as the owner's residence."
+
+So on both texts the rule for a license holder is identical, and it has two halves. **An exempt owner
+still may not advertise a discriminatory preference, and advertising one costs the exemption itself.
+And the moment you are engaged, the owner is not exempt — and you were never exempt.** Neither § 3603(b)
+nor § 301.041 exempts brokers, agents or salespersons at all; they exempt certain owners, on conditions
+that your involvement defeats.
+
+**The other federal exemption: § 3607(a).** Alongside housing for older persons, § 3607(a) exempts two
+kinds of provider. First, nothing in the subchapter prohibits "a religious organization, association,
+or society, or any nonprofit institution or organization operated, supervised or controlled by or in
+conjunction with a religious organization, association, or society, from limiting the sale, rental or
+occupancy of dwellings which it owns or operates for other than a commercial purpose to persons of the
+same religion, or from giving preference to such persons, unless membership in such religion is
+restricted on account of race, color, or national origin." Three limits are built in: the dwellings must
+be **owned or operated by** the organization, operated "**for other than a commercial purpose**," and
+the preference collapses if religious membership is itself "restricted on account of race, color, or
+national origin" — a proviso that stops the exemption being used as a proxy for a racial one. Second,
+nothing prohibits "a private club not in fact open to the public, which as an incident to its primary
+purpose or purposes provides lodgings which it owns or operates for other than a commercial purpose,
+from limiting the rental or occupancy of such lodgings to its members or from giving preference to its
+members." Read "not **in fact** open to the public" and "as an **incident** to its primary purpose" as
+the working limits: a club whose primary business is lodging, or whose exclusivity is nominal, is not
+described. Property Code § 301.042 mirrors both exemptions in nearly the same words, subject to a 2025
+carve-back at § 301.042(a-1); unit 2 takes up the Texas version.
 
 ### Statute reading exercise: the six subsections of § 3604
 
@@ -206,6 +462,21 @@ the text quoted in this unit:
    statute say about the expense of a reasonable accommodation?
 4. Section 3604(f)(1)(C) reaches the handicap of "any person associated with that buyer or renter."
    Name a Texas fact pattern that falls under (C) but not under (A).
+
+Then follow the two cross-references in the opening clause and answer from §§ 3602, 3603 and 3607:
+
+5. Section 3603(b) begins "Nothing in section 3604 of this title (other than subsection (c))." Which
+   prohibition does that parenthesis preserve, and what does it mean for an exempt owner's newspaper
+   advertisement? Then find the *second* place in § 3603(b)(1) where the same point is made as a
+   condition on the exemption, and state what happens to the exemption when that condition fails.
+6. A Dallas owner lives in one unit of a fourplex and rents the other three. A second owner lives
+   elsewhere and rents all four units of an identical building. Which owner, if either, is described by
+   § 3603(b)(2)? Quote the words that decide it.
+7. Under § 3602(b), is a vacant lot listed for the construction of a house a "dwelling"? Quote the
+   clause. Under § 3602(d), is an individual sales agent a "person"? Quote the clause.
+8. State the difference between § 3607(b)(2)(B) and § 3607(b)(2)(C) in one sentence each. Under (C),
+   is the 80 percent measured against all units or only occupied units, and what two requirements does
+   the community carry beyond the age threshold?
 
 ### Applied exercise: the ramp and the parking space
 
@@ -278,10 +549,16 @@ construction or location of" a residence, so residential lots are inside the Act
 **Prohibited practices.** Subchapter B tracks § 3604. Section 301.021(a) prohibits refusing to sell or
 rent after a bona fide offer, refusing to negotiate, or "in any other manner mak[ing] unavailable or
 deny[ing] a dwelling"; § 301.021(b) covers terms, conditions, privileges, services and facilities; and
-§ 301.021(c) adds a sentence with no analogue in the federal text read here, providing that the
-section "does not prohibit discrimination against a person because the person has been convicted under
-federal law or the law of any state of the illegal manufacture or distribution of a controlled
-substance." Section 301.022 is the advertising prohibition, § 301.023 the false-unavailability
+§ 301.021(c) provides that the section "does not prohibit discrimination against a person because the
+person has been convicted under federal law or the law of any state of the illegal manufacture or
+distribution of a controlled substance." That one does have a federal counterpart, though Texas puts it
+in a different place: the same rule appears federally at 42 U.S.C. § 3607(b)(4), which provides that
+"[n]othing in this subchapter prohibits conduct against a person because such person has been convicted
+by any court of competent jurisdiction of the illegal manufacture or distribution of a controlled
+substance." Texas locates it inside the sale-and-rental prohibition; Congress locates it in the
+exemptions section, where it reaches the whole subchapter. Both are equally narrow in substance —
+manufacture or distribution, by conviction, of a controlled substance — and neither is a general
+licence to screen on criminal history. Section 301.022 is the advertising prohibition, § 301.023 the false-unavailability
 prohibition, § 301.024 the blockbusting prohibition, and § 301.025 the disability section — including
 at § 301.025(c) the same three-part definition of discrimination: refusing to permit a reasonable
 modification "at the expense of the person having a disability," refusing to make a reasonable
@@ -294,10 +571,15 @@ transaction**, defined to include "the making or purchasing of loans or the prov
 financial assistance… to purchase, construct, improve, repair, or maintain a dwelling" or "to secure
 residential real estate," and "the selling, brokering, or appraising of residential real property."
 Read that twice: **brokering and appraising are named in it**, so a license holder's own services are
-a residential real estate related transaction. Section 301.027 covers **brokerage services** — no one
-may deny another access to or participation in "a multiple-listing service, real estate brokers'
-organization, or other service, organization, or facility relating to the business of selling or
-renting dwellings," or discriminate in the terms of that access, on the seven bases.
+a residential real estate related transaction. This is one of the closest alignments in the two
+statutes: the federal counterpart, 42 U.S.C. § 3605, defines "residential real estate-related
+transaction" in materially the same terms and is taken up in unit 4. Section 301.027 covers **brokerage
+services** — no one may deny another access to or participation in "a multiple-listing service, real
+estate brokers' organization, or other service, organization, or facility relating to the business of
+selling or renting dwellings," or discriminate in the terms of that access, on the seven bases. The
+federal Act has a brokerage-services section of its own at 42 U.S.C. § 3606, but that section was not
+held for this course; this module names it and stops there, and where brokerage-access discrimination is
+taught in this module it is taught from § 301.027, which was read.
 
 **Exemptions.** Section 301.041(a) exempts from §§ 301.021, 301.023, 301.024 and 301.025 the sale or
 rental of a single-family house by an owner who does not own or hold an interest in "more than three
@@ -431,14 +713,34 @@ and has attempted to induce sales. That is the whole offence: no one has to list
 values need not fall.
 
 **Redlining.** Redlining is refusing or disfavouring loans, insurance, appraisal or other
-housing-related services in a geographic area, historically drawn on race. The Fair Housing Act's
-financing provision is 42 U.S.C. § 3605, which was not held for this course and is therefore not
-paraphrased here. What was read, and what governs in Texas, is Property Code § 301.026, which forbids
-a person "whose business includes engaging in residential real estate related transactions" to
-discriminate on the seven bases "in making a real estate related transaction available or in the terms
-or conditions of" one — those transactions including dwelling lending and "the selling, brokering, or
-appraising of residential real property." Unit 4 takes up credit discrimination directly; unit 5 takes
-up the Community Reinvestment Act, the affirmative side of the same geography.
+housing-related services in a geographic area, historically drawn on race. Two statutes reach it
+directly, one federal and one Texas, and they are close enough that you should learn them as a pair.
+
+Federally, it is 42 U.S.C. § 3605(a): "It shall be unlawful for any person or other entity whose
+business includes engaging in residential real estate-related transactions to discriminate against any
+person in making available such a transaction, or in the terms or conditions of such a transaction,
+because of race, color, religion, sex, handicap, familial status, or national origin." Section 3605(b)
+then defines a **residential real estate-related transaction** to mean "(1) [t]he making or purchasing
+of loans or providing other financial assistance— (A) for purchasing, constructing, improving,
+repairing, or maintaining a dwelling; or (B) secured by residential real estate," and "(2) [t]he
+selling, brokering, or appraising of residential real property."
+
+In Texas, Property Code § 301.026 forbids a person "whose business includes engaging in residential
+real estate related transactions" to discriminate on the seven Texas bases "in making a real estate
+related transaction available or in the terms or conditions of" one, and defines those transactions to
+include dwelling lending and "the selling, brokering, or appraising of residential real property." The
+two texts are near-identical in structure and nearly so in wording — Texas says "disability" where the
+federal Act says "handicap," and drops the hyphen — which is exactly what Property Code § 301.002(3)
+promised when it set out to provide rights "substantially equivalent to those granted under federal
+law."
+
+Take one point out of both. **Selling, brokering and appraising are named in the definition**, so a
+license holder's own services are a residential real estate-related transaction under § 3605(b)(2) and
+§ 301.026 alike. Redlining is not only a lender's offence. An agent who will not take listings in a
+neighborhood, or who tells a seller there that the office "doesn't work over there," is disfavouring a
+geographic area in the *brokering* of residential real property — inside the definition on its face.
+Unit 4 takes up credit discrimination directly and works § 3605 in detail; unit 5 takes up the Community
+Reinvestment Act, the affirmative side of the same geography.
 
 **Your personal exposure, in three layers.** Fair housing is not something only the broker or the
 seller worries about.
@@ -602,14 +904,69 @@ must be "at no additional cost," and the creditor must give written notice of th
 application. Subsection (e)(6) defines "valuation" broadly, reaching values from "an automated
 valuation model, a broker price opinion, or other methodology or mechanism."
 
-**The fair housing side.** The Act's own financing provision, 42 U.S.C. § 3605, was not held and is not
-paraphrased here. The Texas parallel was read: Property Code § 301.026 prohibits a person whose
-business includes residential real estate related transactions from discriminating "in making a real
-estate related transaction available or in the terms or conditions of a real estate related
-transaction" on the seven Texas bases, and defines those transactions to include dwelling lending and
-"the selling, brokering, or appraising of residential real property." So a Texas mortgage denial can
-implicate three regimes at once: ECOA on the § 1691(a) bases; § 301.026 on the fair housing bases; and,
-where a license holder's conduct contributed, § 1101.652(b)(32).
+**The fair housing side — 42 U.S.C. § 3605.** ECOA is not the only statute at the lending desk. The
+Fair Housing Act has its own financing provision, and it is short enough to learn whole.
+
+**§ 3605(a) — the prohibition.** "It shall be unlawful for any person or other entity whose business
+includes engaging in residential real estate-related transactions to discriminate against any person in
+making available such a transaction, or in the terms or conditions of such a transaction, because of
+race, color, religion, sex, handicap, familial status, or national origin."
+
+Four things to take from that sentence. **Who is covered:** "any person or other entity **whose business
+includes** engaging in residential real estate-related transactions." Not "banks," not "lenders" — the
+test is what your business *includes*, and § 3602(d) defines "person" to include individuals. That
+wording is deliberate. Until 1988 this section reached only "any bank, building and loan association,
+insurance company or other corporation, association, firm or enterprise whose business consists in whole
+or in part in the making of commercial real estate loans"; the amendments note under § 3605 records that
+Pub. L. 100–430 "amended section generally" and prints the narrower predecessor, so you can see the
+widening for yourself. **What is prohibited:** discrimination "in making available such a transaction,
+or in the terms or conditions of such a transaction" — the same two-stage structure as § 3604(a) and
+(b), access and terms. **The bases:** seven, "race, color, religion, sex, handicap, familial status, or
+national origin," which is the full § 3604(c) list. Unlike § 3604(a), this section does **not** drop
+handicap and familial status; there is no separate disability subsection here, so the seven sit
+together. **The verb:** "shall be unlawful," with no intent word, no "knowingly," and no requirement
+that a loan actually be denied — worse terms are enough.
+
+**§ 3605(b) — what a "residential real estate-related transaction" is.** "As used in this section, the
+term 'residential real estate-related transaction' means any of the following: (1) The making or
+purchasing of loans or providing other financial assistance— (A) for purchasing, constructing,
+improving, repairing, or maintaining a dwelling; or (B) secured by residential real estate. (2) The
+selling, brokering, or appraising of residential real property."
+
+Work through the reach. Paragraph (1) covers not only *making* a loan but **purchasing** one, so the
+secondary market is inside the section, and "other financial assistance" reaches beyond loans. The
+purposes in (1)(A) run past acquisition to construction, improvement, repair and maintenance, so a home
+improvement or repair loan is covered; and (1)(B) supplies an independent route — any financial
+assistance "secured by residential real estate," whatever it was borrowed for. Then paragraph (2) is the
+one to underline in your own copy: **"[t]he selling, brokering, or appraising of residential real
+property."** Brokering is named. A Texas license holder's own services are a residential real
+estate-related transaction under the federal Act, not merely under Texas law, and § 3605 binds you
+directly and by name. Property Code § 301.026 defines the Texas term in materially the same way,
+including the same "selling, brokering, or appraising" clause, so on this point the two statutes travel
+together.
+
+**§ 3605(c) — the appraisal provision.** "Nothing in this subchapter prohibits a person engaged in the
+business of furnishing appraisals of real property to take into consideration factors other than race,
+color, religion, national origin, sex, handicap, or familial status." Read what this does and does not
+say. It is permissive and it is bounded: an appraiser may consider **factors other than** the protected
+characteristics. It is not an exemption for appraisers, and it does not remove appraising from
+§ 3605(b)(2). Its whole work is to confirm that valuing property on legitimate factors — condition,
+size, comparable sales, location as a market rather than a demographic fact — is not made unlawful by
+this subchapter. An appraisal that discounts a property because of the race of the owner or of the
+neighborhood is not "factors other than," and is squarely inside § 3605(a). Texas carries the identical
+provision at Property Code § 301.042(c): the chapter "does not prohibit a person engaged in the business
+of furnishing appraisals of real property from considering in those appraisals factors other than race,
+color, religion, sex, disability, familial status, or national origin." Same permission, same bounds,
+"disability" for "handicap."
+
+So a Texas mortgage denial can implicate several regimes at once, and they do not have the same
+protected classes: ECOA on the § 1691(a) bases, including marital status, age and public-assistance
+income; 42 U.S.C. § 3605 on the seven federal fair housing bases; Property Code § 301.026 on the seven
+Texas bases; and, where a license holder's conduct contributed, Occupations Code § 1101.652(b)(32) as a
+licence matter. Run a fact pattern against each list rather than against a general sense of fairness.
+The applicant declined because she is pregnant is outside § 1691(a) and inside familial status under
+§ 3602(k) and § 301.004, and so inside § 3605(a) and § 301.026; the applicant declined because part of
+her income is a public assistance payment is inside § 1691(a)(2) and outside every fair housing list.
 
 **What to do when a client is denied.** This paragraph is practice, not law, and cites nothing. **Do**
 make sure the client reads the notice, and point out that § 1691(d)(2) entitles them to a statement of
@@ -628,8 +985,10 @@ conduct out of the fact pattern.
 Open 15 U.S.C. § 1691 and read subsections (a) and (b) together. Then answer from the text quoted in
 this unit:
 
-1. List the bases in § 1691(a). Which are **not** protected classes under 42 U.S.C. § 3604 or Property
-   Code ch. 301? Which classes protected by those statutes are **not** in § 1691(a)?
+1. List the bases in § 1691(a). Which are **not** protected classes under 42 U.S.C. § 3604, 42 U.S.C.
+   § 3605 or Property Code ch. 301? Which classes protected by those statutes are **not** in
+   § 1691(a)? Then say which of the four statutes reaches a lender who is not a creditor's employee but
+   an appraiser.
 2. Section 1691(b)(1) permits an inquiry about marital status for one purpose and forbids it for
    another. State both, in the statute's words.
 3. Under § 1691(b)(3), an age-based scoring system may be used on what conditions, and subject to what
@@ -720,8 +1079,13 @@ for this course gives an individual borrower a claim against a bank for failing 
 nothing in it identifies an injured person at all; its subject is "the local communities in which they
 are chartered." A common and consequential error is to describe the CRA as an anti-redlining
 *prohibition*. Redlining as an unlawful practice is reached by the fair housing and credit statutes —
-in Texas by Property Code § 301.026, and federally by 42 U.S.C. § 3605, which was not held here and so
-is not summarized. The CRA comes at the same geography from the opposite direction: instead of
+federally by 42 U.S.C. § 3605, which makes it unlawful for a person "whose business includes engaging in
+residential real estate-related transactions" to discriminate in making such a transaction available or
+in its terms on the seven fair housing bases, and in Texas by Property Code § 301.026 in nearly the same
+words. Notice the difference in address. Sections 3605 and 301.026 speak to a *person whose business
+includes* those transactions and forbid that person to discriminate; § 2901 speaks to *regulated
+financial institutions and their federal supervisors* and creates no prohibition at all. The CRA comes at
+the same geography from the opposite direction: instead of
 forbidding an institution to disfavour a neighborhood, it obliges the institution to affirmatively help
 meet that neighborhood's credit needs, and charges a federal supervisor with checking whether it did.
 
@@ -753,6 +1117,24 @@ most often merge stays separate: a **reasonable modification** changes the premi
 expense, and in a rental may be conditioned on restoring the interior; a **reasonable accommodation**
 changes rules, policies, practices or services, with no expense and no restoration clause attached.
 
+The sections around § 3604 do the defining and the limiting. Section 3602 supplies the vocabulary:
+a **dwelling** includes a portion of a building and vacant land offered for residential construction; a
+**person** includes an individual, which is how the Act reaches you personally; **handicap** has three
+prongs, the third being "regarded as" having an impairment; and **familial status** turns on domicile
+with someone under 18, extended by the closing sentence to a pregnant person and to one securing legal
+custody. Section 3603(a)(2) sets the reach — after December 31, 1968, all dwellings except as exempted
+by § 3603(b). Section 3603(b) then exempts two transactions, a single-family house sold or rented by an
+owner who does not hold more than three (limited to one sale in twenty-four months where the owner was
+not the resident, and lost entirely if a broker's services are used "in any manner"), and rooms or units
+in a dwelling for no more than four families where the owner "actually maintains and occupies" one as a
+residence — both **"other than subsection (c)," so no exemption ever reaches discriminatory
+advertising.** Section 3607(a) exempts religious organizations and genuine private clubs on stated
+conditions, and § 3607(b) takes housing for older persons out of the familial-status provisions only:
+62-and-over must be "intended for, and solely occupied by," while 55-and-over needs one qualifying
+person in at least 80 percent of *occupied* units plus published policies and Secretary-verified
+occupancy, with a good-faith defence available under § 3607(b)(5) only to someone holding the
+community's written statement of compliance.
+
 Texas legislated in parallel. Property Code ch. 301 protects the same seven bases, is administered by
 the Texas Workforce Commission, and by § 301.002(3) provides rights and remedies "substantially
 equivalent to those granted under federal law." It adds no new class, and § 301.005 forbids expanding
@@ -765,13 +1147,22 @@ The practices carry personal consequences. Steering is named expressly in Occupa
 § 1101.652(b)(32) — which adds ancestry and turns on directing a prospect "interested in equivalent
 properties to a different area"; § 301.114 sends a state fair housing order to TREC within 30 days
 with a recommendation of discipline; and § 1101.801 confirms TREC discipline does not relieve you of
-civil or criminal liability. At the lending desk, ECOA's § 1691(a) adds marital status, age and
-public-assistance income to the bases, and § 1691(d) gives your client notice within thirty days of a
-completed application and a statement of *specific* reasons for any adverse action. And 12 U.S.C. § 2901 stands apart: an affirmative,
+civil or criminal liability. At the lending desk two regimes overlap without matching: 42 U.S.C.
+§ 3605 forbids anyone "whose business includes engaging in residential real estate-related transactions"
+to discriminate in making one available or in its terms on the seven fair housing bases, and its
+§ 3605(b) definition names "[t]he selling, brokering, or appraising of residential real property," so
+your own services are inside it — Property Code § 301.026 says the same in Texas — while ECOA's
+§ 1691(a) adds marital status, age and public-assistance income to the bases and names neither familial
+status nor handicap, and § 1691(d) gives your client notice within thirty days of a completed
+application and a statement of *specific* reasons for any adverse action. And 12 U.S.C. § 2901 stands
+apart: an affirmative,
 continuing obligation on regulated institutions to help meet their communities' credit needs, enforced
 by examination and bounded by safe and sound operation.
 
-You should now be able to state each § 3604 prohibition and its class list, distinguish accommodation
-from modification, walk a Texas complainant through ch. 301's forum choice, name the statutes a
-steering complaint violates, and explain why the CRA is an obligation to a community rather than a
-claim for an individual.
+You should now be able to state each § 3604 prohibition and its class list, apply the § 3602 definitions
+that decide coverage, work the § 3603(b) exemptions with their conditions and say why neither touches
+§ 3604(c), distinguish the 62-and-over and 55-and-over structures in § 3607(b), distinguish
+accommodation from modification, walk a Texas complainant through ch. 301's forum choice, name the
+statutes a steering complaint violates, identify a residential real estate-related transaction under
+§ 3605(b) and Property Code § 301.026, and explain why the CRA is an obligation to a community rather
+than a claim for an individual.
