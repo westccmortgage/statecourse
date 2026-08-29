@@ -763,11 +763,10 @@ practices." Note both inference clauses: neither state requires a confession.
 
 Section 17.50(b) also authorizes injunctive relief, orders restoring money or property acquired in violation of the subchapter,
 and other relief the court deems proper. Section 17.50(d) provides that "Each consumer who prevails shall be awarded court costs
-and reasonable and necessary attorneys' fees" — mandatory, and often the largest number in a small case. Section 17.50(c)
-balances it: on a finding that the action was groundless in fact or law, brought in bad faith, or brought for harassment, the
-court "shall award to the defendant reasonable and necessary attorneys' fees and court costs." Section 17.50(e) excludes
-attorneys' fees, costs and prejudgment interest from the computation of additional damages, and § 17.50(g) provides that Chapter
-41, Civil Practice and Remedies Code, does not apply to a DTPA action.
+and reasonable and necessary attorneys' fees" — mandatory, and often the largest number in a small case; § 17.50(c) balances it
+by requiring an award of fees and costs to the defendant on a finding that the action was groundless in fact or law, brought in
+bad faith, or brought for harassment. Section 17.50(e) excludes attorneys' fees, costs and prejudgment interest from the
+computation of additional damages, and § 17.50(g) provides that Chapter 41, Civil Practice and Remedies Code, does not apply.
 
 **Pre-suit notice and the settlement window.** Section 17.505(a) makes notice a prerequisite: "As a prerequisite to filing a suit
 seeking damages under Subdivision (1) of Subsection (b) of Section 17.50 of this subchapter against any person, a consumer shall
@@ -780,29 +779,28 @@ answer; under (d) the court shall abate after a hearing, and the suit abates aut
 uncontroverted plea; under (e) the abatement continues until the 60th day after notice is properly served.
 
 That period is an opportunity, not a formality. Section 17.5052(a) permits a person who receives § 17.505 notice to tender an
-offer of settlement during the 60 days after receipt. Section 17.5052(d) requires the offer to state separately an amount
-settling the damages claim and an amount compensating the consumer for reasonable and necessary attorneys' fees incurred as of
-the date of the offer; under (e) the offer is rejected unless both parts are accepted within 30 days. Subsections (g) and (h)
-supply the incentive: if the court finds the damages amount tendered was the same as, substantially the same as, or more than the
-damages found by the trier of fact, the consumer may not recover damages exceeding the lesser of the amount tendered or the
-amount found, and attorneys' fees may be capped at the amount tendered on the same test. Subsection (k) provides that an offer is
-not an admission of liability. Section 17.5051 separately allows a party to move to compel mediation within 90 days after service
-of a pleading seeking DTPA relief.
+offer of settlement during the 60 days after receipt. Under § 17.5052(d) the offer must state separately an amount settling the
+damages claim and an amount for the consumer's reasonable and necessary attorneys' fees incurred as of the offer date, and under
+(e) it is rejected unless both parts are accepted within 30 days. Subsections (g) and (h) supply the incentive: if the court finds
+the damages amount tendered was the same as, substantially the same as, or more than the damages found by the trier of fact, the
+consumer may not recover damages exceeding the lesser of the amount tendered or the amount found, and fees may be capped at the
+amount tendered on the same test. Subsection (k) provides that an offer is not an admission of liability. Section 17.5051 allows a
+party to move to compel mediation within 90 days after service of a pleading seeking DTPA relief.
 
 **Defenses.** Section 17.506(a) gives a defense to any damages or attorneys' fees on proof that "before consummation of the
 transaction he gave reasonable and timely written notice to the plaintiff of the defendant's reliance on" written information
-about the particular goods or service obtained from official government records, or from another source, or written information
-concerning a test required or prescribed by a government agency — in each case where the information was false or inaccurate and
-"the defendant did not know and could not reasonably have known of the falsity or inaccuracy." Section 17.506(b) requires the
-defendant to prove the written information was a producing cause of the damage, and provides that one producing cause does not
-bar recovery if other conduct of the defendant was also a producing cause. Section 17.506(c) permits suit against the third party
-who supplied the information, without privity, where that party knew or should reasonably have foreseen it would reach a consumer.
-Section 17.506(d) supplies a second, complete defense: a defendant who proves he received the consumer's notice and, "within 30
-days after the day on which the defendant received the notice," tendered the economic and mental anguish damages claimed plus the
-consumer's reasonably incurred expenses including attorneys' fees, has a defense to the cause of action. Section 17.565 supplies
-the limitations period — two years after the act or practice occurred, or two years after the consumer discovered or in the
-exercise of reasonable diligence should have discovered it, extendable by 180 days where the plaintiff proves the delay was caused
-by the defendant knowingly engaging in conduct solely calculated to induce postponement of suit.
+about the particular goods or service obtained from official government records or another source, or written information about a
+test required or prescribed by a government agency — in each case where the information was false or inaccurate and "the defendant
+did not know and could not reasonably have known of the falsity or inaccuracy." Section 17.506(b) requires the defendant to prove
+that information was a producing cause of the damage, and provides that one producing cause does not bar recovery if other conduct
+of the defendant was also a producing cause; § 17.506(c) permits suit against the third party who supplied it, without privity,
+where that party knew or should reasonably have foreseen it would reach a consumer. Section 17.506(d) supplies a second, complete
+defense: a defendant who proves he received the consumer's notice and, "within 30 days after the day on which the defendant
+received the notice," tendered the economic and mental anguish damages claimed plus the consumer's reasonably incurred expenses
+including attorneys' fees, has a defense to the cause of action. Section 17.565 sets the limitations period — two years after the
+act or practice occurred, or two years after the consumer discovered or should reasonably have discovered it, extendable by 180
+days where the plaintiff proves the delay was caused by the defendant knowingly engaging in conduct solely calculated to induce
+postponement of suit.
 
 **The exemptions — including one written for license holders.** Section 17.49(c) is the **professional services exemption**:
 "Nothing in this subchapter shall apply to a claim for damages based on the rendering of a professional service, the essence of

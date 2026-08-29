@@ -315,23 +315,22 @@ agent or salesperson and without advertising prohibited by § 301.022; and the s
 or units in a dwelling for "not more than four families living independently of each other, if the
 owner maintains and occupies one of the living quarters as the owner's residence." Subsection (b)
 limits the single-family exemption to "one sale in a 24-month period if the owner was not the most
-recent resident of the house at the time of the sale," subsection (c) preserves the use of attorneys,
-escrow agents, title companies and similar professionals necessary to transfer title, and subsection
-(d) defines being "in the business of selling or renting a dwelling" by transaction counts — three or
-more as seller or landlord in the preceding year, two or more as an agent, or ownership of a dwelling
-for five or more families. Section 301.042 exempts religious organizations and affiliated nonprofits
-limiting or preferring persons of the same religion in dwellings they own or operate "for other than a
-commercial purpose," "unless membership in the religion is restricted because of race, color, or
-national origin," with a 2025 carve-back at § 301.042(a-1) for one- to four-unit dwellings "located on
-a subdivided lot in a parcel of land 25 acres or greater"; it also exempts a private club not open to
+recent resident of the house at the time of the sale"; (c) preserves the use of attorneys, escrow
+agents, title companies and similar professionals necessary to transfer title; and (d) defines being
+"in the business of selling or renting a dwelling" by transaction counts — three or more as seller or
+landlord in the preceding year, two or more as an agent, or ownership of a dwelling for five or more
+families. Section 301.042 exempts religious organizations and affiliated nonprofits limiting or
+preferring persons of the same religion in dwellings they own or operate "for other than a commercial
+purpose," "unless membership in the religion is restricted because of race, color, or national
+origin," with a 2025 carve-back at § 301.042(a-1) for one- to four-unit dwellings "located on a
+subdivided lot in a parcel of land 25 acres or greater"; it also exempts a private club not open to
 the public providing lodging incident to its primary purpose, and provides that appraisers may consider
 "factors other than" the seven bases. Section 301.043 exempts from the familial-status provisions
 housing the commission determines "is specifically designed and operated to assist elderly individuals
 under a federal or state program," housing "intended for, and solely occupied by, individuals 62 years
 of age or older," and housing "intended and operated for occupancy by at least one individual 55 years
 of age or older for each unit as determined by commission rules." Section 301.044 preserves reasonable
-occupancy limits and health and safety standards and provides the chapter "does not affect a
-requirement of nondiscrimination in any other state or federal law."
+occupancy limits and health and safety standards.
 
 **Local law.** The topic's scope note names local fair housing laws, and ch. 301 acknowledges them
 without cataloguing them. Section 301.068 lets the commission "defer proceedings under this chapter
@@ -350,17 +349,14 @@ terminates, whichever is later"; an aggrieved person may file, and so may the co
 commission serves each respondent with notice and a copy within 20 days; the respondent may answer,
 in writing and under oath, within 10 days (§ 301.082). Section 301.083(b) requires the investigation
 to be completed "not later than the 100th day after the date the complaint is filed" or, failing that,
-all related administrative proceedings disposed of within one year, with written notice of the reasons
-for delay. Throughout, § 301.085 requires the commission "to the extent feasible" to engage in
-**conciliation**, and conciliation statements may not be made public or used as evidence without
-written consent.
-
-Section 301.088 requires a **reasonable cause determination**, also targeted at 100 days. If cause is
-found, the commission "shall… immediately issue a charge on behalf of the aggrieved person"; if it is
-not, the commission "shall promptly dismiss the complaint" and disclose the dismissal publicly
-(§ 301.091). Section 301.090 carves out land use: where the matter involves the legality of a zoning or
-other land use law, the commission may not issue a charge and must refer the matter to the attorney
-general.
+all related administrative proceedings disposed of within one year. Throughout, § 301.085 requires the
+commission "to the extent feasible" to engage in **conciliation**, and conciliation statements may not
+be made public or used as evidence without written consent. Section 301.088 requires a **reasonable
+cause determination**, also targeted at 100 days: if cause is found the commission "shall… immediately
+issue a charge on behalf of the aggrieved person," and if it is not the commission "shall promptly
+dismiss the complaint" and disclose the dismissal publicly (§ 301.091). Under § 301.090, where the
+matter involves the legality of a zoning or other land use law the commission may not issue a charge
+and must refer it to the attorney general.
 
 Then comes the fork. Under § 301.093 a complainant, a respondent, or an aggrieved person "may elect to
 have the claims asserted in the charge decided in a civil action," and must elect "not later than the
@@ -383,25 +379,25 @@ violation" and "$100,000 for a second or subsequent violation." Section 301.151 
 civil action** in district court "not later than the second year after the date of the occurrence or
 the termination of an alleged discriminatory housing practice or the breach of a conciliation
 agreement… whichever occurs last," available "whether a complaint has been filed under Section
-301.081 and without regard to the status of any complaint filed under that section" — subject to two
-limits: § 301.151(d) bars a private action where the commission obtained a conciliation agreement with
-the aggrieved person's consent, except to enforce it, and § 301.151(e) bars one once the commission has
-begun a hearing on the record. Section 301.153 allows a court to award "actual and punitive damages,"
-attorney fees, costs and injunctive relief, and § 301.156 allows attorney fees to the prevailing party
-in either forum. Finally, § 301.171 makes it a **Class A misdemeanor** to intimidate or interfere with
-a person by force or threat of force because of a protected class and because that person is buying,
-selling, renting, financing or occupying a dwelling, or aiding others in doing so.
+301.081 and without regard to the status of any complaint filed under that section" — though
+§ 301.151(d) bars it where the commission obtained a conciliation agreement with the aggrieved
+person's consent, except to enforce it, and § 301.151(e) bars it once the commission has begun a
+hearing on the record. Section 301.153 allows a court to award "actual and punitive damages," attorney
+fees, costs and injunctive relief, and § 301.156 allows attorney fees to the prevailing party in either
+forum. Finally, § 301.171 makes it a **Class A misdemeanor** to intimidate or interfere with a person
+by force or threat of force because of a protected class and because that person is buying, selling,
+renting, financing or occupying a dwelling, or aiding others in doing so.
 
 **How the Texas and federal options relate.** From what was read, ch. 301 is substantially equivalent,
-not exclusive. Section 301.044(b) preserves nondiscrimination requirements in other law; § 301.083(a)
-contemplates the federal government referring a complaint to the commission or deferring jurisdiction;
-§ 301.068 contemplates referral down to a HUD-certified municipal agency; and §§ 301.092 and
-301.111(c) both stop the state administrative track once a civil action on the same practice, "under
-federal or state law," reaches trial. The picture is parallel forums coordinated to avoid duplication,
-with the complainant holding a real choice at the § 301.093 election. What this module cannot tell you,
-because the federal enforcement sections were not held, is the federal filing deadline or the federal
-election procedure. A client choosing between forums needs a lawyer working from the current federal
-text, not a license holder's recollection.
+not exclusive. Section 301.044(b) provides that the chapter "does not affect a requirement of
+nondiscrimination in any other state or federal law"; § 301.083(a) contemplates the federal government
+referring a complaint to the commission or deferring jurisdiction to it; § 301.068 contemplates
+referral down to a HUD-certified municipal agency; and §§ 301.092 and 301.111(c) both stop the state
+administrative track once a civil action on the same practice, "under federal or state law," reaches
+trial. The picture is parallel forums coordinated to avoid duplication, with the complainant holding a
+real choice at the § 301.093 election. What this module cannot tell you, because the federal
+enforcement sections were not held, is the federal filing deadline or the federal election procedure.
+A client choosing between forums needs a lawyer working from the current federal text.
 
 ## Unit: Housing Discrimination
 
@@ -585,12 +581,12 @@ applicable to the particular extension of credit and not to discriminate in a de
 credit-worthiness"; "(2) to make an inquiry of the applicant's age or of whether the applicant's income
 derives from any public assistance program if such inquiry is for the purpose of determining the amount
 and probable continuance of income levels, credit history, or other pertinent element of
-credit-worthiness as provided in regulations of the Bureau"; "(3) to use any empirically derived credit
-system which considers age if such system is demonstrably and statistically sound in accordance with
-regulations of the Bureau, except that in the operation of such system the age of an elderly applicant
-may not be assigned a negative factor or value"; "(4) to make an inquiry or to consider the age of an
-elderly applicant when the age of such applicant is to be used by the creditor in the extension of
-credit in favor of such applicant"; or "(5) to make an inquiry under section 1691c–2 of this title."
+credit-worthiness as provided in regulations of the Bureau"; or "(3) to use any empirically derived
+credit system which considers age if such system is demonstrably and statistically sound in accordance
+with regulations of the Bureau, except that in the operation of such system the age of an elderly
+applicant may not be assigned a negative factor or value." Paragraph (4) likewise permits considering
+an elderly applicant's age where it "is to be used by the creditor in the extension of credit in favor
+of such applicant," and (5) permits an inquiry under 15 U.S.C. § 1691c–2.
 
 The through-line in (b)(1) and (b)(2) is **purpose**. Marital status may be asked about to determine
 the creditor's rights and remedies — in Texas, community property and spousal-joinder questions make

@@ -552,101 +552,84 @@ turnover $7,600; administrative and marketing $3,100. All figures are illustrati
 Property management is a career, not a task, and it differs from brokerage in ways that suit some
 people very well. Sales brokerage is transactional: episodic work, lumpy income, a client relationship
 that ends at closing. Management is operational: recurring income, relationships that last years, and
-a measure of good work that is simply that nothing dramatic happened. Managers tend to be people who
-like systems, tolerate interruption, and take satisfaction from a well-run building rather than from a
-signed contract.
+a measure of good work that is simply that nothing dramatic happened.
 
-**The range of asset types**
+**The range of asset types.** The words "property manager" cover several occupations that share a
+name. **Single-family and small residential** management handles detached houses, duplexes and small
+multiplexes for individual owners, often owners who moved and kept the house; the properties are
+scattered and the economics turn on efficiency per door. This is where the Texas licensing question
+bites hardest, because Occupations Code § 1101.002(1)(A)(x) reaches control of the acceptance or
+deposit of rent from a resident of a single-family residential real property unit, and because the
+on-site apartment manager exemption in § 1101.005(7) does not describe this work. **Multifamily**
+management runs apartment communities from one address, staffed on site and measured relentlessly on
+occupancy, delinquency, turnover cost and expense per unit; careers run from leasing consultant to
+community manager to regional manager, and § 1101.005(7) makes the on-site position available without
+a license, which is why multifamily is a common entry point into the industry.
 
-The word "property manager" covers several distinct occupations that happen to share a name.
+**Commercial** management — office, retail and industrial — deals with business tenants, longer and
+individually negotiated leases, and rent structures built from base rent plus a share of operating
+costs, sometimes plus a percentage of retail sales. It demands lease abstraction and reconciliation
+skills that residential management does not, and it operates outside Property Code ch. 92, which
+governs residential tenancies. Property Code ch. 91 supplies rules applicable to landlords and tenants
+generally: § 91.001 on notice terminating a month-to-month tenancy; § 91.005, under which "during the
+term of a lease, the tenant may not rent the leasehold to any other person without the prior consent
+of the landlord"; § 91.004, making a landlord who fails to comply with the lease liable to a
+non-defaulting tenant for resulting damages and giving that tenant a lien on the landlord's nonexempt
+property in the tenant's possession and on rent due; and § 91.006's non-waivable duty to mitigate
+damages when a tenant abandons the premises in violation of the lease. **Community association**
+management handles common property and the governing documents of a homeowners association or
+condominium regime, where the client is a volunteer board and the "customers" are owner-members rather
+than tenants. Above all of these sits **asset management**, concerned less with operations than with
+the investment — hold or sell, refinance or reposition — and property management is the usual path
+into it.
 
-**Single-family and small residential.** Detached houses, duplexes and small multiplexes for
-individual owners, often owners who moved and kept the house. The properties are scattered and the
-economics turn on efficiency per door. This is also where the Texas licensing question bites hardest,
-because Occupations Code § 1101.002(1)(A)(x) reaches control of the acceptance or deposit of rent from
-a resident of a single-family residential real property unit, and because the on-site apartment
-manager exemption in § 1101.005(7) does not describe this work.
-
-**Multifamily.** Apartment communities, from garden properties to high-rise: concentrated at one
-address, staffed on site, and measured relentlessly on occupancy, traffic, delinquency, turnover cost
-and expense per unit. Careers run from leasing consultant to community manager to portfolio or
-regional manager. Section 1101.005(7) makes the on-site manager position available without a license,
-which is why multifamily is a common entry point into the industry.
-
-**Commercial — office, retail and industrial.** The tenants are businesses, the leases are longer and
-individually negotiated, and the rent structures are more complex: base rent plus a share of operating
-costs, sometimes plus a percentage of the tenant's sales in retail. Commercial management demands
-lease abstraction and reconciliation skills that residential management does not, and it operates
-outside Property Code ch. 92, which governs residential tenancies. Property Code ch. 91 supplies rules
-applicable to landlords and tenants generally: § 91.001 on notice terminating a month-to-month
-tenancy; § 91.005, under which "during the term of a lease, the tenant may not rent the leasehold to
-any other person without the prior consent of the landlord"; § 91.004, making a landlord who fails to
-comply with the lease liable to a non-defaulting tenant for resulting damages and giving that tenant a
-lien on the landlord's nonexempt property in the tenant's possession and on rent due; and § 91.006's
-non-waivable duty to mitigate damages when a tenant abandons the premises in violation of the lease.
-
-**Community associations.** Managing common property and enforcing the governing documents of a
-homeowners association or condominium regime. The client is a volunteer board, the "customers" are
-owner-members rather than tenants, and the political dimension is unavoidable.
-
-**Institutional and asset management.** Above the property manager sits the asset manager, concerned
-less with operations than with the investment: hold or sell, refinance or not, reposition or maintain.
-Property management is the usual path into that role.
-
-**Designations and trade organizations — practice, not law**
-
-The industry supports national trade associations and professional institutes serving apartment,
-commercial and industrial, single-family residential and community association management, and these
-bodies confer designations earned through coursework, documented experience and examination. Employers
-sometimes prefer them; clients sometimes ask about them.
-
-State the legal position exactly, because students misremember it constantly. **No Texas statute read
-for this course requires a property manager to hold any professional designation or to belong to any
-trade organization.** Occupations Code § 1101.351 requires a *license* — a broker or sales agent
-license — of a person performing the acts of a broker, and § 1101.002(4) defines a license holder as a
-broker or sales agent licensed under the chapter. That is the legal credential. Designations are
-private, voluntary and contractual: conferred by private organizations under their own rules,
-revocable under those same rules, and conferring no authority a license holder does not already have
-and no exemption from anything a license holder must do. This module cites nothing for the existence
-or value of any designation, because that is professional practice and not Texas law, and it names no
-particular organization. Structured education and peer contact do make managers better at a job whose
+**Designations and trade organizations — practice, not law.** The industry supports national trade
+associations and professional institutes serving apartment, commercial, single-family residential and
+community association management, and these bodies confer designations earned through coursework,
+documented experience and examination. State the legal position exactly, because students misremember
+it constantly. **No Texas statute read for this course requires a property manager to hold any
+professional designation or to belong to any trade organization.** Occupations Code § 1101.351
+requires a *license* — a broker or sales agent license — of a person performing the acts of a broker,
+and § 1101.002(4) defines a license holder as a broker or sales agent licensed under the chapter. That
+is the legal credential. Designations are private and voluntary: conferred by private organizations
+under their own rules, revocable under those same rules, and conferring no authority a license holder
+does not already have and no exemption from anything a license holder must do. This module cites
+nothing for the value of any designation, because that is professional practice and not Texas law, and
+it names no particular organization. Structured education does make managers better at a job whose
 failures are expensive and often invisible until they are catastrophic. That is a good reason to
 pursue a designation. "It is required" is not.
 
-**Ethics: standing between the owner and the tenant**
+**Ethics: standing between the owner and the tenant.** The defining ethical feature of this work is
+that the manager sits between two parties whose interests diverge daily and owes each of them
+something different.
 
-The defining ethical feature of property management is that the manager occupies a position between
-two parties whose interests diverge daily, and owes each of them something different.
+To the owner, the manager owes the duties of an agent. Occupations Code § 1101.557(a) provides that a
+broker who represents a party in a real estate transaction, or who lists real estate for sale under an
+exclusive agreement for a party, is that party's agent, and § 1101.557(b) requires that broker to
+inform the party of material information related to a transaction to list, buy, sell or lease the
+party's real estate, including the receipt of an offer. Chapter 1101's disciplinary grounds reinforce
+the point: § 1101.652(b)(1) reaches a license holder who "acts negligently or incompetently"; (b)(2)
+conduct "that is dishonest or in bad faith or that demonstrates untrustworthiness"; (b)(7) a failure
+"to make clear to all parties to a real estate transaction the party for whom the license holder is
+acting"; (b)(8) receiving "compensation from more than one party to a real estate transaction without
+the full knowledge and consent of all parties"; and (b)(9) and (10) the accounting and commingling
+failures examined in Unit 1. Together they describe loyalty, disclosure, competence and honest
+accounting — the ordinary content of a fiduciary relationship — enforced by license discipline rather
+than only by contract.
 
-**To the owner, the manager owes the duties of an agent.** Occupations Code § 1101.557(a) provides
-that a broker who represents a party in a real estate transaction, or who lists real estate for sale
-under an exclusive agreement for a party, is that party's agent, and § 1101.557(b) requires that
-broker to inform the party of material information related to a transaction to list, buy, sell or
-lease the party's real estate, including the receipt of an offer, and at a minimum to answer the
-party's questions and present any offer to or from the party. Chapter 1101's disciplinary grounds
-reinforce the point: § 1101.652(b)(1) reaches a license holder who "acts negligently or
-incompetently"; (b)(2) conduct "that is dishonest or in bad faith or that demonstrates
-untrustworthiness"; (b)(7) a failure "to make clear to all parties to a real estate transaction the
-party for whom the license holder is acting"; (b)(8) receiving "compensation from more than one party
-to a real estate transaction without the full knowledge and consent of all parties"; (b)(13)
-undisclosed profit on an expenditure made for a principal; and (b)(9) and (10) the accounting and
-commingling failures examined in Unit 1. Together they describe loyalty, disclosure, competence and
-honest accounting — the ordinary content of a fiduciary relationship — enforced by license discipline
-rather than only by contract.
-
-**To the tenant, the manager owes what the statute owes.** The ch. 92 duties run against the landlord,
-and § 92.001(2) tells us the manager is not the landlord unless the manager purports to be the owner,
+To the tenant, the manager owes what the statute owes. The ch. 92 duties run against the landlord, and
+§ 92.001(2) tells us the manager is not the landlord unless the manager purports to be the owner,
 lessor or sublessor in a lease. But the manager is the person through whom those duties are performed
 or breached: the manager receives the repair notice under § 92.052(a) at the place rent is paid, runs
 the clock under § 92.056, holds and refunds the security deposit under § 92.103(a) "on or before the
 30th day after the date the tenant surrenders the premises," prepares the "written description and
 itemized list of all deductions" required by § 92.104(c), and honors or ignores § 92.104(b)'s rule
-that no portion of a deposit may be retained "to cover normal wear and tear." The penalties fall on
-the landlord — § 92.109(a) makes a landlord who in bad faith retains a deposit liable for one hundred
-dollars, three times the portion wrongfully withheld, and reasonable attorney's fees, and § 92.109(d)
-presumes bad faith where the landlord fails either to return the deposit or to provide the written
-itemization on or before the thirtieth day after surrender — but they fall because of what the manager
-did.
+that no portion of a deposit may be retained "to cover normal wear and tear." Section 92.109(a) makes
+a landlord who in bad faith retains a deposit liable for one hundred dollars, three times the portion
+wrongfully withheld, and reasonable attorney's fees, and § 92.109(d) presumes bad faith where the
+landlord fails either to return the deposit or to provide the written itemization on or before the
+thirtieth day after surrender. The penalties fall on the landlord, but they fall because of what the
+manager did.
 
 Three ch. 92 provisions exist precisely because managers under pressure have been tempted to shorten
 the process. Section 92.008(a) and (b) prohibit a landlord or a landlord's agent from interrupting
@@ -654,56 +637,44 @@ utility service, whether paid directly to the utility by the tenant or furnished
 incident of the tenancy, "unless the interruption results from bona fide repairs, construction, or an
 emergency," subject to the narrow and heavily conditioned exception in § 92.008(h) for submetered or
 allocated electricity; § 92.008(f) gives the tenant possession or termination plus actual damages, one
-month's rent plus $1,000, fees and costs, and § 92.008(g) voids any waiver. Section 92.0081(b)
-prohibits intentionally preventing a tenant from entering the premises except by judicial process,
-subject to stated exceptions including a lock change for a delinquent tenant, and then only under the
-notice requirements of § 92.0081(c) and (d); § 92.0081(f) requires that the tenant be given a key
-"without regard to whether the tenant pays the delinquent rent," and § 92.0081(h) provides a civil
-penalty of one month's rent plus $1,000 with actual damages, costs and fees. Section 92.331 prohibits
-retaliation — eviction, deprivation of the premises, decreased services, a rent increase, lease
-termination, or a bad-faith course of conduct materially interfering with the tenant's rights — within
-six months after the tenant exercises a right, gives a repair notice, complains in good faith to a
-code authority, utility or civic agency, or participates in a tenant organization; § 92.332 preserves
-ordinary grounds such as delinquency and material breach; and § 92.333 gives a civil penalty of one
-month's rent plus $500 with actual damages, costs and fees. These are the moments when a frustrated
-owner tells a manager to "just change the locks" or "shut the water off."
+month's rent plus $1,000, fees and costs. Section 92.0081(b) prohibits intentionally preventing a
+tenant from entering the premises except by judicial process, subject to stated exceptions including a
+lock change for a delinquent tenant under the notice requirements of § 92.0081(c) and (d); § 92.0081(f)
+requires that the tenant be given a key "without regard to whether the tenant pays the delinquent
+rent," and § 92.0081(h) provides a civil penalty of one month's rent plus $1,000 with damages, costs
+and fees. Section 92.331 prohibits retaliation — eviction, deprivation of the premises, decreased
+services, a rent increase, lease termination, or a bad-faith course of conduct materially interfering
+with the tenant's rights — within six months after the tenant exercises a right, gives a repair
+notice, complains in good faith to a code authority, utility or civic agency, or participates in a
+tenant organization; § 92.332 preserves ordinary grounds such as delinquency and material breach, and
+§ 92.333 gives a civil penalty of one month's rent plus $500 with damages, costs and fees.
 
 So how does a competent manager honor both sets of obligations? By recognizing that they conflict less
 often than they appear to. The manager's loyalty to the owner is a duty to advance the owner's
-*lawful* interests, and an owner's interests are never served by exposure to the penalties above. When
-an owner asks for something the law forbids, the loyal answer and the lawful answer are the same:
-explain the provision, explain the exposure, and decline. Section 1101.652(b)(2)'s reference to
-untrustworthiness and (b)(1)'s reference to incompetence both cut against a manager who follows an
-unlawful instruction, and § 1101.803 places the broker on the hook for it.
-
-Where genuine tension remains, it is usually about candor rather than legality. The workable
+*lawful* interests, and an owner's interests are never served by exposure to those penalties. When an
+owner asks for something the law forbids, the loyal answer and the lawful answer are the same: explain
+the provision, explain the exposure, and decline. Sections 1101.652(b)(1) and (2) both cut against a
+manager who follows an unlawful instruction, and § 1101.803 places the broker on the hook for it.
+Where genuine tension remains it is usually about candor rather than legality, and the workable
 discipline is to be honest with everyone and to keep no confidence about facts the other party is
-entitled to know. Section 1101.652(b)(7)'s requirement to make clear the party for whom the license
-holder is acting is the starting point: a tenant who knows the manager works for the owner is not
-misled by the manager advancing the owner's interests. What misleads is a manager who lets the tenant
-believe otherwise.
+entitled to know. Section 1101.652(b)(7) is the starting point: a tenant who knows the manager works
+for the owner is not misled by the manager advancing the owner's interests.
 
-**Continuing competence**
-
-The last professional obligation is to stay current, and here Texas law does speak. Occupations Code
-§ 1101.455(b) requires a license holder not subject to the § 1101.454 education requirements to attend
-continuing education courses approved by the Commission during the term of the current license, in a
-number of classroom hours the Commission prescribes by rule, "which must be at least 15 classroom
-hours." Section 1101.455(e) requires at least eight of those hours to provide current information on
-listed legal topics, and the list reads like a property manager's job description: commission rules;
-**fair housing laws**; **Property Code issues, including landlord-tenant law**; agency law; antitrust
-laws; the DTPA subchapter; disclosures to buyers, landlords, tenants and sellers; unauthorized
-practice of law; case studies involving violations; and "the ethical requirements of engaging in real
-estate brokerage," among others. Section 1101.455(f) allows the remaining hours to be devoted to other
-approved real estate-related topics.
-
-Beyond the statutory minimum, competence here decays quickly for a specific reason: the Property Code
-chapters a manager lives inside are amended regularly, and the amendments are usually procedural — a
-notice period, a fee cap, a required disclosure. Those are exactly the details a manager operates on
-autopilot. As a matter of practice and not of legal requirement, managers who stay out of trouble
-re-read the operative chapters periodically, keep lease forms and notice templates under review rather
-than treating them as settled, and treat every complaint as information about a system rather than
-about a person.
+**Continuing competence.** Texas law speaks here too. Occupations Code § 1101.455(b) requires a
+license holder not subject to the § 1101.454 education requirements to attend continuing education
+courses approved by the Commission during the term of the current license, in a number of classroom
+hours the Commission prescribes by rule, "which must be at least 15 classroom hours." Section
+1101.455(e) requires at least eight of those hours to provide current information on listed legal
+topics, and the list reads like a property manager's job description: commission rules; **fair housing
+laws**; **Property Code issues, including landlord-tenant law**; agency law; disclosures to buyers,
+landlords, tenants and sellers; unauthorized practice of law; case studies involving violations; and
+"the ethical requirements of engaging in real estate brokerage," among others. Beyond that minimum,
+competence here decays quickly for a specific reason: the Property Code chapters a manager lives
+inside are amended regularly, and the amendments are usually procedural — a notice period, a fee cap,
+a required disclosure — which are exactly the details a manager operates on autopilot. As a matter of
+practice and not of legal requirement, managers who stay out of trouble re-read the operative chapters
+periodically and keep lease forms and notice templates under review rather than treating them as
+settled.
 
 ### Applied exercise: The instruction you should refuse
 
@@ -728,38 +699,32 @@ maintenance, accounting, reporting, tenant relations and compliance — and show
 is what triggers Texas regulation. Because a manager performs listed acts for another person for
 compensation, Occupations Code § 1101.002(1)(A) makes leasing, negotiating leases, listing property
 for lease and controlling the acceptance or deposit of single-family rent acts of a broker, and
-§ 1101.351 forbids performing them without a license. Section 1101.005 then supplies the exemptions
-that decide most real cases: the on-site manager of an apartment complex under subdivision (7), and
-the owner or the owner's employee leasing the owner's own real estate under subdivision (8). Because
-a manager holds other people's money, § 1101.652(b)(9), (10), (30) and (31) convert sloppy trust
+§ 1101.351 forbids performing them without a license. Section 1101.005 supplies the exemptions that
+decide most real cases: the on-site manager of an apartment complex under subdivision (7), and the
+owner or the owner's employee leasing the owner's own real estate under subdivision (8). Because a
+manager holds other people's money, § 1101.652(b)(9), (10), (30) and (31) convert sloppy trust
 accounting into license discipline: deposit promptly in a proper account, never commingle, never
 disburse early, always account and remit within a reasonable time.
 
 The second unit took that licensed manager into the operating relationship. The management agreement
-sets the scope of authority, the term — noting that § 1101.652(b)(12) expressly carves property
-management contracts out of the definite-termination-date requirement that governs listing
-agreements — the compensation, the owner's obligations, indemnification, and the accounting mechanics
-that make compliance automatic. The operating statement gave the arithmetic that every owner
-conversation uses: gross potential rent less vacancy and collection loss yields effective gross
-income, less operating expenses yields net operating income, with debt service and capital
-expenditures excluded from operating expenses by definition. Rent is set from market data with
-concessions converted to effective rent. The maintenance program is organized into routine,
-preventive, corrective and emergency work because Property Code § 92.056(d)'s rebuttable presumption
-that seven days is a reasonable time sets the tempo. Tenant selection is written, consistent and
-documented because Property Code §§ 301.021, 301.022, 301.024 and 301.025, 42 U.S.C. § 3604, and
-Occupations Code § 1101.652(b)(32) all reach the same conduct from different directions.
+sets scope of authority, term — with § 1101.652(b)(12) expressly carving property management contracts
+out of the definite-termination-date requirement that governs listing agreements — compensation, owner
+obligations, indemnification and accounting mechanics. The operating statement supplied the arithmetic
+every owner conversation uses: gross potential rent less vacancy and collection loss yields effective
+gross income, less operating expenses yields net operating income, with debt service and capital
+expenditures excluded by definition. The maintenance program is organized into routine, preventive,
+corrective and emergency work because Property Code § 92.056(d)'s rebuttable presumption that seven
+days is a reasonable time sets the tempo, and tenant selection is written, consistent and documented
+because Property Code §§ 301.021, 301.022, 301.024 and 301.025, 42 U.S.C. § 3604 and Occupations Code
+§ 1101.652(b)(32) all reach the same conduct from different directions.
 
 The third unit placed the manager in a profession and in an ethical position. Designations and trade
 memberships are voluntary practice, required by no statute read for this course; the license is the
 legal credential. The manager's agency duties run to the owner under § 1101.557 and the § 1101.652(b)
-disciplinary grounds, while the ch. 92 duties — repair, deposits, security devices, disclosure of
-ownership and management, the utility-interruption and lockout prohibitions, and the retaliation
-rules — protect the tenant and are performed or breached through the manager's hands. Honoring both is
-usually a matter of recognizing that an owner's lawful interest and a tenant's statutory right point
-the same way, and of refusing, clearly and on the record, the instruction that does not.
-
-You should now be able to decide whether a given person needs a Texas license to manage a given
-property, state the trust-money rules that govern the money that passes through a manager's hands,
-build and read an operating statement through to net operating income, connect the ch. 92 repair and
-deposit obligations to the systems that satisfy them, and distinguish what Texas law requires of a
-property manager from what the profession merely expects.
+disciplinary grounds, while the ch. 92 duties protect the tenant and are performed or breached through
+the manager's hands. Honoring both is usually a matter of recognizing that an owner's lawful interest
+and a tenant's statutory right point the same way, and of refusing, on the record, the instruction
+that does not. You should now be able to decide whether a given person needs a Texas license to manage
+a given property, state the trust-money rules, build and read an operating statement through to net
+operating income, and distinguish what Texas law requires of a property manager from what the
+profession merely expects.
