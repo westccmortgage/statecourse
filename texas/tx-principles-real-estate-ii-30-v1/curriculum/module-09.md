@@ -125,7 +125,7 @@ exactly the arrangement people assume is safely informal: collecting rent on a r
 absentee owner.
 
 Section 1101.351(a) supplies the prohibition: "Unless a person holds a license issued under this
-chapter, the person may not (1) act as or represent that the person is a broker or sales agent; or
+chapter, the person may not: (1) act as or represent that the person is a broker or sales agent; or
 (2) act as a residential rental locator." Section 1101.351(a-1) applies the same rule to business
 entities, and § 1101.351(c) provides that a licensed sales agent "may not engage or attempt to engage
 in real estate brokerage unless the sales agent is sponsored by a licensed broker and is acting for

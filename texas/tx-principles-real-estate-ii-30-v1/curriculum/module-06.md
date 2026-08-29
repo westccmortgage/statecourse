@@ -46,15 +46,16 @@ them together tells you plainly what the Legislature was worried about. Section 
 that the licensing examination "be of sufficient scope in the judgment of the commission to determine
 whether a person is competent to act as a broker or sales agent **in a manner that will protect the
 public**." Section 1101.155(a) authorizes the Commission to adopt rules "in the public's best
-interest" requiring license holders to use standardized contract forms. Section 1101.204(h) directs
-the Commission to "give priority to the investigation of a complaint filed by a consumer," and to
-assign priorities using a risk-based approach that weighs "the degree of potential harm to a
-consumer" and "the potential for immediate harm to a consumer." Section 1101.601 maintains a trust
-account "to reimburse aggrieved persons who suffer actual damages" caused by license holder
-misconduct. Every one of those provisions points the same direction. The Act exists because ordinary
-Texans buy and sell real estate rarely, at high stakes, using intermediaries who know far more about
-the transaction than they do — and the Legislature decided that the intermediary should be tested,
-licensed, supervised, disciplinable, and backed by a fund.
+interest" requiring license holders to use standardized contract forms. Section 1101.204(h) requires
+the Commission to ensure that it "gives priority to the investigation of a complaint filed by a
+consumer and an enforcement case resulting from the consumer complaint," and to "assign priorities
+and investigate complaints using a risk-based approach" whose first two listed factors are the degree
+of potential harm to a consumer and the potential for immediate harm to a consumer. Section 1101.601
+maintains a trust account "to reimburse aggrieved persons who suffer actual damages" caused by
+license holder misconduct. Every one of those provisions points the same direction. The Act exists
+because ordinary Texans buy and sell real estate rarely, at high stakes, using intermediaries who
+know far more about the transaction than they do — and the Legislature decided that the intermediary
+should be tested, licensed, supervised, disciplinable, and backed by a fund.
 
 **What the Act covers, and what it does not.** TRELA is a licensing and conduct statute. It says who
 must hold a license, how a license is obtained and kept, what a license holder may and may not do,
@@ -338,7 +339,7 @@ outline you are studying became binding content law.
 
 **Subchapter H — License Requirements (§§ 1101.351–1101.367).** This subchapter answers "do I need a
 license, and how do I get one." It opens with the central prohibition. Section 1101.351(a): "Unless a
-person holds a license issued under this chapter, the person may not (1) act as or represent that the
+person holds a license issued under this chapter, the person may not: (1) act as or represent that the
 person is a broker or sales agent; or (2) act as a residential rental locator." Subsection (a-1)
 extends the rule to entities. Subsection (b) forecloses jumping the gun: an applicant "may not act as
 a broker or sales agent until the person receives the license." And subsection (c) states the
@@ -435,7 +436,7 @@ Section 1101.501 provides that such a person must hold either a chapter 1101 lic
 **certificate of registration**. Section 1101.509(b) requires an original applicant to complete "at
 least 16 classroom hours" of approved coursework in "the law of eminent domain, including the rights
 of property owners," professionalism in negotiating with property owners, and "ethical considerations
-in the performance of right-of-way acquisition services.
+in the performance of right-of-way acquisition services."
 
 **Subchapter L — Practice by License Holder (§§ 1101.551–1101.563).** This is the subchapter about
 what you actually do, and the one you will consult most often in your first year. Section 1101.551
