@@ -77,16 +77,13 @@ point § 1101.351(c) then makes explicit.
 **The broker definition is a list of acts, not a job description.** Section 1101.002(1)(A) defines a
 broker functionally: a person who, "in exchange for a commission or other valuable consideration or
 with the expectation of receiving a commission or other valuable consideration, performs for another
-person" one of twelve listed acts. The twelve acts run from the obvious to the surprising. They
-include selling, exchanging, purchasing or leasing real estate; *offering* to do any of those things;
-negotiating or attempting to negotiate a listing, sale, exchange, purchase or lease; listing or
-offering, attempting or agreeing to list real estate; auctioning real estate; dealing in options on
-real estate, "including a lease to purchase or buying, selling, or offering to buy or sell options on
-real estate"; aiding or offering or attempting to aid in locating or obtaining real estate for
-purchase or lease; procuring or assisting in procuring a prospect to effect a sale, exchange or
-lease; procuring or assisting in procuring property to effect a sale, exchange or lease; controlling
-"the acceptance or deposit of rent from a resident of a single-family residential real property
-unit"; providing a written price opinion under the conditions the subparagraph specifies; and
+person" one of twelve listed acts. Those acts run from the obvious to the surprising — selling,
+exchanging, purchasing or leasing real estate, and *offering* to do so; negotiating or attempting to
+negotiate a listing, sale, exchange, purchase or lease; listing real estate or agreeing to list it;
+auctioning it; dealing in options, "including a lease to purchase"; aiding a person in locating or
+obtaining real estate; procuring a prospect, or procuring property, to effect a sale, exchange or
+lease; controlling "the acceptance or deposit of rent from a resident of a single-family residential
+real property unit"; providing a written price opinion on the conditions the clause specifies; and
 advising an owner "concerning the negotiation or completion of a short sale."
 
 Three features of that list matter immediately. First, attempts and offers count. You do not have to
@@ -334,11 +331,10 @@ institution's failure.
 The Commission has exercised the § 1101.301 authority. Rule 22 TAC § 535.64 sets content requirements
 for qualifying courses by adoption by reference: "Principles of Real Estate II shall contain the
 topics and units outlined in the PRINS 2-1, Qualifying Real Estate Course Approval Form, Principles of
-Real Estate II, hereby adopted by reference." The same rule adopts by reference the approval forms for
+Real Estate II, hereby adopted by reference." The same rule adopts by reference the approval forms for the other mandatory qualifying courses —
 Principles of Real Estate I, Law of Agency, Law of Contracts, Promulgated Contract Forms, Real Estate
-Finance and Real Estate Brokerage as mandatory qualifying courses, plus a list of electives, and
-states that the forms "are available from the Texas Real Estate Commission at www.trec.texas.gov."
-That is the mechanism by which the very outline you are studying became binding content law.
+Finance and Real Estate Brokerage — plus a list of electives. That is the mechanism by which the very
+outline you are studying became binding content law.
 
 **Subchapter H — License Requirements (§§ 1101.351–1101.367).** This subchapter answers "do I need a
 license, and how do I get one." It opens with the central prohibition. Section 1101.351(a): "Unless a
@@ -449,10 +445,9 @@ between the parties to a transaction and for that purpose may act as an agent of
 that expressly "does not include a license holder who represents a party."
 
 Section 1101.552(a) requires a resident broker to "maintain a fixed office in this state," designated
-on the broker's license, with a corrected license due within 10 days of moving; subsection (d)
-exempts a nonresident broker. Subsection (e) requires every license holder to keep the Commission
-supplied with a current mailing address, business address, business telephone number and business
-e-mail address.
+on the broker's license, with a corrected license due within 10 days of moving; subsection (d) exempts
+a nonresident broker. Subsection (e) requires every license holder to keep current contact
+information on file with the Commission.
 
 Section 1101.555 states a duty every buyer's agent must build into a routine: "When an offer to
 purchase real estate in this state is signed, a license holder shall advise each buyer, in writing,
@@ -476,13 +471,12 @@ represents a party to disclose that representation "orally or in writing … at 
 holder's first contact with" another party or another party's license holder. Subsection (b-1)
 requires more at the next stage: "At the time of a license holder's first substantive communication
 with a party relating to a proposed transaction regarding specific real property," the license holder
-must give written notice in at least a 10-point font describing the ways a broker can represent a
-party "including as an intermediary," the duties owed to a represented party, the obligations owed to
-an unrepresented one, and "the name, license number, and contact information for the license holder
-and the license holder's supervisor and broker." Subsection (c) excuses that written notice for a
-residential lease "for less than one year" where a sale is not contemplated, for a meeting with a
-party the license holder knows is represented, and for a communication at an open house about that
-property.
+must give written notice in at least a 10-point font describing how a broker can represent a party
+"including as an intermediary," the duties owed to a represented party, the obligations owed to an
+unrepresented one, and the license holder's and broker's identifying and contact information.
+Subsection (c) excuses that notice for a residential lease "for less than one year" where a sale is
+not contemplated, for a meeting with a party known to be represented, and for a communication at an
+open house about that property.
 
 Sections 1101.559 through 1101.561 handle the intermediary. A broker may act as intermediary if the
 broker "obtains written consent from each party" and the consent "states the source of any expected
@@ -541,12 +535,12 @@ requires that the underlying action be brought within two years of when the caus
 Section 1101.606(a) requires the aggrieved person first to obtain a court judgment, then to have
 "final judgment … entered, execution returned nulla bona, and a judgment lien perfected" before filing
 a verified claim in the court that entered the judgment. Section 1101.607 requires the claimant to
-show that the judgment rests on facts allowing recovery; that the claimant is not the judgment
-debtor's spouse, not a license holder "seeking to recover compensation, including a commission, in the
-real estate transaction that is the subject of the application," and not related to the debtor within
-the first degree by consanguinity; and that the debtor lacks sufficient attachable assets. Section
-1101.608 permits the Commission to appear and defend "to protect the trust account from spurious or
-unjust claims," and even to relitigate material issues decided in the underlying case.
+show that the judgment rests on facts allowing recovery; that the claimant is not the debtor's spouse,
+not a license holder "seeking to recover compensation, including a commission, in the real estate
+transaction that is the subject of the application," and not related to the debtor within the first
+degree by consanguinity; and that the debtor lacks sufficient attachable assets. Section 1101.608
+permits the Commission to appear and defend "to protect the trust account from spurious or unjust
+claims."
 
 Section 1101.610 caps the exposure. Payments "arising out of a single transaction may not exceed a
 total of $125,000, regardless of the number of claimants," and payments "based on judgments against a
@@ -808,20 +802,18 @@ association membership as voluntary, and the statute's operative use of the defi
 wall between the private association and the public regulator. That is the cleanest possible textual
 demonstration of the distinction this unit is teaching.
 
-**What membership actually buys, stated as practice.** The following is a description of common
-industry practice, not a statement of law, and nothing is cited for it because no held source
-supports it. Association membership commonly provides access to an MLS and its data; access to
-association-drafted forms and addenda that supplement the Commission's promulgated forms; group
-purchasing of errors-and-omissions coverage and other services; continuing education offerings;
-legislative advocacy at the state and federal level; arbitration and mediation procedures for
-commission disputes between member brokers; and a private code of ethics with its own enforcement
-machinery. That last item causes the most confusion, so state it plainly to yourself now: an
-association's ethics complaint procedure is a private disciplinary process operating under the
-association's own rules. It is not a TREC proceeding, it cannot suspend or revoke a state license,
-and its outcome does not bind the Commission. Conversely, a TREC disciplinary order does not resolve
-an association ethics complaint. A license holder who is also a member can face both, separately, for
-the same conduct — and can also face a private lawsuit, because § 1101.801 provides that discipline
-"does not relieve the person from civil or criminal liability."
+**What membership actually buys, stated as practice.** The following describes common industry
+practice, not law, and nothing is cited for it because no held source supports it. Association
+membership commonly provides access to an MLS and its data; association-drafted forms and addenda that
+supplement the Commission's promulgated forms; group purchasing of errors-and-omissions coverage;
+continuing education offerings; legislative advocacy; arbitration of commission disputes between
+member brokers; and a private code of ethics with its own enforcement machinery. That last item causes
+the most confusion, so state it plainly to yourself now: an association's ethics complaint procedure
+is a private disciplinary process under the association's own rules. It is not a TREC proceeding, it
+cannot suspend or revoke a state license, and its outcome does not bind the Commission. Conversely, a
+TREC order does not resolve an association ethics complaint. A member can face both, separately, for
+the same conduct — and a private lawsuit besides, because § 1101.801 provides that discipline "does
+not relieve the person from civil or criminal liability."
 
 **Where to put your loyalty when the two systems disagree.** They usually do not, because association
 codes generally aim higher than the statutory floor rather than in a different direction. But when a
@@ -838,16 +830,15 @@ appear it is cited; everything else is a description of how markets and business
 that way. Its purpose is to give you a working theory of what you are actually paid for, because a
 license holder who cannot articulate that will not survive the first slow quarter.
 
-Start with the asset. Real estate is unusual among the things people buy. It is immobile, so its
-value is bound to a location that cannot be changed. It is durable, so a decision made today
-constrains uses for decades. It is heterogeneous — no two parcels are identical, if only because they
-occupy different ground — so there is no single quoted price the way there is for a share of stock or
-a bushel of wheat. It is expensive relative to household income, so nearly every residential purchase
-involves borrowed money and a lender's independent judgment about value. It transacts infrequently,
-so most participants are amateurs doing something they have done perhaps three times in their lives.
-And information about it is unevenly distributed: the seller knows the roof's history, the buyer does
-not, and neither knows what the house two streets over actually closed for. Every one of those
-characteristics is a reason the market needs intermediaries, and together they explain why the
+Start with the asset. Real estate is unusual among the things people buy. It is immobile, so its value
+is bound to a location that cannot be changed. It is durable, so today's decision constrains uses for
+decades. It is heterogeneous — no two parcels are identical, if only because they occupy different
+ground — so there is no single quoted price the way there is for a share of stock. It is expensive
+relative to household income, so nearly every residential purchase involves borrowed money and a
+lender's independent judgment about value. It transacts infrequently, so most participants are
+amateurs. And information about it is unevenly distributed: the seller knows the roof's history, the
+buyer does not, and neither knows what the house two streets over actually closed for. Every one of
+those characteristics is a reason the market needs intermediaries, and together they explain why the
 brokerage business exists at all.
 
 The Act's own definition tracks the breadth of the asset. Section 1101.002(5) defines **real estate**
@@ -949,18 +940,15 @@ Texas real estate license authorizes, then the boundaries that mark where the au
 another profession's or another statute's territory begins.
 
 **The affirmative scope.** A license authorizes you to perform, for another person and for
-compensation or with the expectation of compensation, the acts listed in § 1101.002(1). Restated as
-things you may do: you may **sell, exchange, purchase or lease real estate** for another, and you may
-**offer** to do so; you may **negotiate or attempt to negotiate** a listing, sale, exchange, purchase
-or lease; you may **list** real estate, or offer, attempt or agree to list it; you may **auction**
-real estate; you may **deal in options** on real estate, including lease-purchase arrangements and
-buying, selling or offering to buy or sell options; you may **aid a person in locating or obtaining**
-real estate for purchase or lease; you may **procure a prospect** to effect a sale, exchange or lease,
-or procure property for that purpose; you may **control the acceptance or deposit of rent** from a
-resident of a single-family residential unit; you may provide a **written price opinion** meeting the
-three conditions of clause (xi); and you may **advise an owner about a short sale**. That is the
-positive content of the license, and it is broader than most new license holders assume — it covers
-leasing and property-management-adjacent rent handling, not only sales.
+compensation or with the expectation of compensation, the acts listed in § 1101.002(1): to **sell,
+exchange, purchase or lease** real estate for another and to **offer** to do so; to **negotiate** a
+listing, sale, exchange, purchase or lease; to **list** real estate; to **auction** it; to **deal in
+options**, including lease-purchase arrangements; to **aid a person in locating or obtaining** real
+estate; to **procure a prospect** or **procure property** to effect a sale, exchange or lease; to
+**control the acceptance or deposit of rent** from a resident of a single-family residential unit; to
+provide a **written price opinion** meeting the three conditions of clause (xi); and to **advise an
+owner about a short sale**. That is the positive content of the license, and it is broader than most
+new license holders assume — it covers leasing and rent handling, not only sales.
 
 **The core requirement.** Section 1101.351(a) provides that unless a person holds a license, the
 person may not "act as or represent that the person is a broker or sales agent" or "act as a

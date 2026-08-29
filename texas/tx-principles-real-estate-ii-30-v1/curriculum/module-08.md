@@ -35,8 +35,8 @@ Federal fair housing law begins with one sentence. 42 U.S.C. § 3601 says: "It i
 United States to provide, within constitutional limitations, for fair housing throughout the United
 States." That is the whole section — an objective, with no prohibition, no penalty and no protected
 class. Everything operative comes later, and a license holder who wants to know what is actually
-forbidden must read § 3604. Still, the sentence tells you what kind of statute this is. It reaches
-what private owners, landlords, brokers and lenders do with housing, and it does so nationally: a
+forbidden must read § 3604. Still, the sentence tells you what kind of statute this is: it reaches
+what private owners, landlords, brokers and lenders do with housing, and it does so nationally. A
 rural Texas landlord with four units and a Houston management company with four thousand answer to
 the same Act.
 
@@ -90,12 +90,12 @@ be made, printed, or published any notice, statement, or advertisement, with res
 rental of a dwelling that indicates any preference, limitation, or discrimination based on race,
 color, religion, sex, handicap, familial status, or national origin, or an intention to make any such
 preference, limitation, or discrimination." Here the list is seven bases — handicap is present. Note
-the verbs (*make, print, publish,* or *cause to be*), which capture both the agent who drafts copy and
-the publisher who runs it; the objects ("any notice, statement, or advertisement," so a spoken remark
-at a showing counts); and the test — the item must *indicate* a preference, limitation or
-discrimination, or an intention to make one. Nobody has to have been turned away. *Illustration:* a
-San Antonio duplex advertised as "quiet building, perfect for a mature professional couple, not suited
-to children" indicates a familial-status limitation on the face of the words.
+the verbs (*make, print, publish,* or *cause to be*), which capture the agent who drafts copy and the
+publisher who runs it; the objects ("any notice, statement, or advertisement," so a spoken remark at a
+showing counts); and the test — the item must *indicate* a preference, limitation or discrimination,
+or an intention to make one, and nobody need have been turned away. *Illustration:* a San Antonio
+duplex advertised as "quiet building, perfect for a mature professional couple, not suited to
+children" indicates a familial-status limitation on the face of the words.
 
 **§ 3604(d) — false unavailability.** It is unlawful "[t]o represent to any person because of race,
 color, religion, sex, handicap, familial status, or national origin that any dwelling is not available
@@ -106,10 +106,9 @@ delivered.
 **§ 3604(e) — blockbusting.** It is unlawful "[f]or profit, to induce or attempt to induce any person
 to sell or rent any dwelling by representations regarding the entry or prospective entry into the
 neighborhood of a person or persons of a particular race, color, religion, sex, handicap, familial
-status, or national origin." Three elements: **for profit**, which is nearly automatic for an agent
-soliciting listings; **induce or attempt to induce**, so the attempt alone completes the violation;
-and **representations regarding entry or prospective entry**, so a prediction counts. Unit 3 works
-this practice in detail.
+status, or national origin." Three elements: **for profit**; **induce or attempt to induce**, so the
+attempt alone completes the violation; and **representations regarding entry or prospective entry**,
+so a prediction counts. Unit 3 works this practice in detail.
 
 **§ 3604(f) — handicap.** Paragraph (f)(1) makes it unlawful "[t]o discriminate in the sale or rental,
 or to otherwise make unavailable or deny, a dwelling to any buyer or renter because of a handicap
@@ -117,10 +116,10 @@ of— (A) that buyer or renter, (B) a person residing in or intending to reside 
 it is so sold, rented, or made available; or (C) any person associated with that buyer or renter."
 Paragraph (f)(2) does the same for "the terms, conditions, or privileges of sale or rental" and "the
 provision of services or facilities," with the same three-part reach. So (f)(1) and (f)(2) are the
-disability analogues of (a) and (b) — which is precisely why handicap is absent from the lists in (a)
-and (b). Notice how far the protection runs: a Plano seller who rejects an offer because the buyer's
-adult son who will live in the home uses a wheelchair, or because the buyer's caregiver has a
-disability, is inside (f)(1) even though the applicant is not the person with the handicap.
+disability analogues of (a) and (b) — which is precisely why handicap is absent from those lists.
+Notice how far the protection runs: a Plano seller who rejects an offer because the buyer's adult son
+who will live in the home uses a wheelchair, or because the buyer's caregiver has a disability, is
+inside (f)(1) even though the applicant is not the person with the handicap.
 
 Paragraph (f)(3) says "discrimination includes" three things. Two of them are the pair students
 confuse constantly, so learn them as a contrast.
@@ -163,9 +162,9 @@ design" — an accessible route through the dwelling, environmental controls in 
 bathrooms an individual in a wheelchair "can maneuver about." Paragraph (f)(7) defines **covered
 multifamily dwellings** as "(A) buildings consisting of 4 or more units if such buildings have one or
 more elevators; and (B) ground floor units in other buildings consisting of 4 or more units" — so a
-walk-up fourplex is covered as to its ground-floor units. Paragraph (f)(4) makes compliance with
-"ANSI A117.1" sufficient for the adaptive-design features, and (f)(8) preserves any state or local law
-requiring "greater access than is required by this subchapter." Finally, (f)(9): "Nothing in this
+walk-up fourplex is covered as to its ground-floor units. Compliance with "ANSI A117.1" satisfies the
+adaptive-design features (f)(4), and (f)(8) preserves state or local law requiring "greater access
+than is required by this subchapter." Finally, (f)(9): "Nothing in this
 subsection requires that a dwelling be made available to an individual whose tenancy would constitute
 a direct threat to the health or safety of other individuals or whose tenancy would result in
 substantial physical damage to the property of others" — a narrow, evidence-based provision about
@@ -187,12 +186,12 @@ certain owner sales and rentals from **§§ 301.021, 301.023, 301.024 and 301.02
 *not* from § 301.022, the advertising prohibition. Texas makes the point twice, because
 § 301.041(a)(1)(B)(ii) conditions the single-family owner exemption on the house being sold or rented
 without "the publication, posting, or mailing of a notice, statement, or advertisement prohibited by
-Section 301.022." The practical rule, stated for Texas from Texas text: **an exempt owner still may
-not advertise a discriminatory preference, and advertising one can cost the exemption itself.** And
+Section 301.022." The practical rule, from Texas text: **an exempt owner still may not advertise a
+discriminatory preference, and advertising one can cost the exemption itself.** And
 § 301.041(a)(1)(B)(i) removes the exemption if the owner uses "the sales or rental facilities or
-services of a broker, agent, or salesperson licensed under Chapter 1101, Occupations Code." That is
-why exemptions are of limited interest to a license holder: the moment you are engaged, the owner is
-not exempt — and you were never exempt.
+services of a broker, agent, or salesperson licensed under Chapter 1101, Occupations Code" — which is
+why exemptions are of limited interest to a license holder. The moment you are engaged, the owner is
+not exempt, and you were never exempt.
 
 ### Statute reading exercise: the six subsections of § 3604
 
@@ -238,16 +237,15 @@ cited as the Texas Fair Housing Act."
 **Purpose and design.** Section 301.002 states three purposes: "(1) provide for fair housing practices
 in this state; (2) create a procedure for investigating and settling complaints of discriminatory
 housing practices; and (3) provide rights and remedies substantially equivalent to those granted under
-federal law." The third is the key to the chapter. Texas did not set out to build a different code; it
-built a state forum mirroring the federal one. Section 301.062 carries that into rulemaking: the
-commission may adopt implementing rules, "but substantive rules adopted by the commission shall impose
-obligations, rights, and remedies that are the same as are provided in federal fair housing
-regulations."
+federal law." The third is the key to the chapter: Texas did not build a different code, it built a
+state forum mirroring the federal one. Section 301.062 carries that into rulemaking — substantive
+rules "shall impose obligations, rights, and remedies that are the same as are provided in federal
+fair housing regulations."
 
 **Who administers it.** Section 301.0015: "The powers and duties exercised by the Commission on Human
 Rights under this chapter are transferred to the Texas Workforce Commission. A reference in this
 chapter to the 'commission' means the Texas Workforce Commission." Every "commission" in ch. 301 is
-the **Texas Workforce Commission** — not TREC. TREC's fair housing role is licence discipline under
+the **Texas Workforce Commission** — not TREC, whose fair housing role is licence discipline under
 Occupations Code ch. 1101, taken up in unit 3.
 
 **The classes Texas lists.** Reading the prohibition sections, the bases are **race, color, religion,
@@ -256,7 +254,7 @@ says handicap, and § 301.003(6) defines it as "a mental or physical impairment 
 limits at least one major life activity, a record of the impairment, or being regarded as having the
 impairment," expressly excluding "current illegal use or addiction to any drug or illegal or federally
 controlled substance" and providing that the term "does not apply to an individual because of an
-individual's sexual orientation or because that individual is a transvestite." As in the federal Act,
+individual's sexual orientation or because that individual is a transvestite." As in the federal Act
 the classes are distributed across sections: § 301.021, on sale and rental, omits disability because
 § 301.025 is the disability section. Do not read that omission as permission.
 
@@ -278,25 +276,25 @@ Section 301.004 defines **familial status**: an act is committed because of fami
 committed because the person is "(1) pregnant; (2) domiciled with an individual younger than 18 years
 of age" as parent or legal custodian or with that person's written permission, "or (3) in the process
 of obtaining legal custody of an individual younger than 18 years of age." Pregnancy is expressly
-inside the class, and so is the adoptive or custodial parent mid-process. Section 301.003(9) adds that
-"'Family' includes a single individual," and § 301.003(8) defines **dwelling** to include not only a
-structure occupied or intended for occupancy as a residence "by one or more families" but also "vacant
-land that is offered for sale or lease for the construction or location of" such a structure —
-residential lots are inside the Act.
+inside the class, and so is the adoptive or custodial parent mid-process. Section 301.003(8) defines
+**dwelling** to include not only a structure occupied or intended for occupancy as a residence "by one
+or more families" but also "vacant land that is offered for sale or lease for the construction or
+location of" such a structure — residential lots are inside the Act — and § 301.003(9) adds that
+"'Family' includes a single individual."
 
 **Prohibited practices.** Subchapter B tracks § 3604. Section 301.021(a) prohibits refusing to sell or
 rent after a bona fide offer, refusing to negotiate, or "in any other manner mak[ing] unavailable or
-deny[ing] a dwelling"; § 301.021(b) covers terms, conditions, privileges, services and facilities.
-Section 301.021(c) adds a Texas sentence with no analogue in the federal text read here: the section
-"does not prohibit discrimination against a person because the person has been convicted under federal
-law or the law of any state of the illegal manufacture or distribution of a controlled substance."
-Section 301.022 is the advertising prohibition, § 301.023 the false-unavailability prohibition,
-§ 301.024 the blockbusting prohibition, and § 301.025 the disability section — including at
-§ 301.025(c) the same three-part definition: refusal to permit a reasonable modification "at the
+deny[ing] a dwelling"; § 301.021(b) covers terms, conditions, privileges, services and facilities;
+§ 301.021(c) adds a Texas sentence with no analogue in the federal text read here, providing that the
+section "does not prohibit discrimination against a person because the person has been convicted under
+federal law or the law of any state of the illegal manufacture or distribution of a controlled
+substance." Section 301.022 is the advertising prohibition, § 301.023 the false-unavailability
+prohibition, § 301.024 the blockbusting prohibition, and § 301.025 the disability section — including
+at § 301.025(c) the same three-part definition: refusal to permit a reasonable modification "at the
 expense of the person having a disability," refusal to make a reasonable accommodation "in rules,
-policies, practices, or services," and failure to meet the design and construction requirements. Texas
-fixes the construction cut-off by date rather than by formula: § 301.025(e) provides the requirement
-"does not apply to a building the first occupancy of which occurred on or before March 13, 1991."
+policies, practices, or services," and failure to meet the design and construction requirements, which
+by § 301.025(e) do "not apply to a building the first occupancy of which occurred on or before
+March 13, 1991."
 
 Two sections reach past sale and rental. Section 301.026 covers the **residential real estate related
 transaction**, defined in (b) as "(1) the making or purchasing of loans or the provision of other
@@ -310,53 +308,45 @@ selling or renting dwellings," or discriminate in the terms of that access, on t
 
 **Exemptions.** Section 301.041(a) exempts from §§ 301.021, 301.023, 301.024 and 301.025 the sale or
 rental of a single-family house by an owner who does not own or hold an interest in "more than three
-single-family houses at any one time," provided the house is sold or rented without a licensed broker,
-agent or salesperson and without advertising prohibited by § 301.022; and the sale or rental of rooms
-or units in a dwelling for "not more than four families living independently of each other, if the
-owner maintains and occupies one of the living quarters as the owner's residence." Subsection (b)
-limits the single-family exemption to "one sale in a 24-month period if the owner was not the most
-recent resident of the house at the time of the sale"; (c) preserves the use of attorneys, escrow
-agents, title companies and similar professionals necessary to transfer title; and (d) defines being
-"in the business of selling or renting a dwelling" by transaction counts — three or more as seller or
-landlord in the preceding year, two or more as an agent, or ownership of a dwelling for five or more
-families. Section 301.042 exempts religious organizations and affiliated nonprofits limiting or
-preferring persons of the same religion in dwellings they own or operate "for other than a commercial
-purpose," "unless membership in the religion is restricted because of race, color, or national
-origin," with a 2025 carve-back at § 301.042(a-1) for one- to four-unit dwellings "located on a
-subdivided lot in a parcel of land 25 acres or greater"; it also exempts a private club not open to
-the public providing lodging incident to its primary purpose, and provides that appraisers may consider
-"factors other than" the seven bases. Section 301.043 exempts from the familial-status provisions
-housing the commission determines "is specifically designed and operated to assist elderly individuals
-under a federal or state program," housing "intended for, and solely occupied by, individuals 62 years
-of age or older," and housing "intended and operated for occupancy by at least one individual 55 years
-of age or older for each unit as determined by commission rules." Section 301.044 preserves reasonable
-occupancy limits and health and safety standards.
+single-family houses at any one time," provided it is sold or rented without a licensed broker, agent
+or salesperson and without advertising prohibited by § 301.022; and the sale or rental of rooms or
+units in a dwelling for "not more than four families living independently of each other, if the owner
+maintains and occupies one of the living quarters as the owner's residence." Subsection (b) limits the
+single-family exemption to "one sale in a 24-month period if the owner was not the most recent
+resident of the house at the time of the sale." Section 301.042 exempts religious organizations and
+affiliated nonprofits preferring persons of the same religion in dwellings they own or operate "for
+other than a commercial purpose," "unless membership in the religion is restricted because of race,
+color, or national origin," subject to a 2025 carve-back at § 301.042(a-1); it also exempts a private
+club not open to the public providing lodging incident to its primary purpose. Section 301.043 exempts
+from the familial-status provisions housing the commission determines "is specifically designed and
+operated to assist elderly individuals under a federal or state program," housing "intended for, and
+solely occupied by, individuals 62 years of age or older," and housing "intended and operated for
+occupancy by at least one individual 55 years of age or older for each unit as determined by
+commission rules."
 
 **Local law.** The topic's scope note names local fair housing laws, and ch. 301 acknowledges them
-without cataloguing them. Section 301.068 lets the commission "defer proceedings under this chapter
-and refer a complaint to a municipality that has been certified by the federal Department of Housing
-and Urban Development as a substantially equivalent fair housing agency," so Texas contemplates
-certified municipal agencies handling complaints; § 301.044(b) preserves other law. Whether a
-particular Texas city's ordinance adds bases beyond ch. 301's seven is a question of that ordinance.
-No municipal ordinance was held for this course, so this module names none and states none. Before you
-advertise or screen in a specific Texas city, read that city's ordinance.
+without cataloguing them: § 301.068 lets the commission "defer proceedings under this chapter and
+refer a complaint to a municipality that has been certified by the federal Department of Housing and
+Urban Development as a substantially equivalent fair housing agency," and § 301.044(b) preserves
+nondiscrimination requirements in other law. Whether a particular Texas city's ordinance adds bases
+beyond ch. 301's seven is a question of that ordinance. No municipal ordinance was held for this
+course, so this module names none. Before you advertise or screen in a specific Texas city, read that
+city's ordinance.
 
-**The Texas enforcement path.** Section 301.063 makes the commission the body that "shall receive,
-investigate, seek to conciliate, and act on complaints." Under § 301.081 a complaint must be "in
-writing," "under oath," and "in the form prescribed by the commission," and must be filed "on or
-before the first anniversary of the date the alleged discriminatory housing practice occurs or
-terminates, whichever is later"; an aggrieved person may file, and so may the commission. The
-commission serves each respondent with notice and a copy within 20 days; the respondent may answer,
-in writing and under oath, within 10 days (§ 301.082). Section 301.083(b) requires the investigation
-to be completed "not later than the 100th day after the date the complaint is filed" or, failing that,
-all related administrative proceedings disposed of within one year. Throughout, § 301.085 requires the
-commission "to the extent feasible" to engage in **conciliation**, and conciliation statements may not
-be made public or used as evidence without written consent. Section 301.088 requires a **reasonable
-cause determination**, also targeted at 100 days: if cause is found the commission "shall… immediately
-issue a charge on behalf of the aggrieved person," and if it is not the commission "shall promptly
-dismiss the complaint" and disclose the dismissal publicly (§ 301.091). Under § 301.090, where the
-matter involves the legality of a zoning or other land use law the commission may not issue a charge
-and must refer it to the attorney general.
+**The Texas enforcement path.** Under § 301.081 a complaint must be "in writing," "under oath," and
+"in the form prescribed by the commission," and must be filed "on or before the first anniversary of
+the date the alleged discriminatory housing practice occurs or terminates, whichever is later"; an
+aggrieved person may file, and so may the commission. The commission serves each respondent with
+notice and a copy within 20 days; the respondent may answer, in writing and under oath, within 10 days
+(§ 301.082). Section 301.083(b) requires the investigation to be completed "not later than the 100th
+day after the date the complaint is filed" or, failing that, all related administrative proceedings
+disposed of within one year. Throughout, § 301.085 requires the commission "to the extent feasible" to
+engage in **conciliation**, and conciliation statements may not be made public or used as evidence
+without written consent. Section 301.088 requires a **reasonable cause determination**, also targeted
+at 100 days: if cause is found the commission "shall… immediately issue a charge on behalf of the
+aggrieved person"; if not, it "shall promptly dismiss the complaint" (§ 301.091). Under § 301.090,
+where the matter involves the legality of a zoning or other land use law the commission may not issue
+a charge and must refer it to the attorney general.
 
 Then comes the fork. Under § 301.093 a complainant, a respondent, or an aggrieved person "may elect to
 have the claims asserted in the charge decided in a civil action," and must elect "not later than the
@@ -378,26 +368,25 @@ bring a **pattern or practice** action with civil penalties not exceeding "$50,0
 violation" and "$100,000 for a second or subsequent violation." Section 301.151 preserves a **private
 civil action** in district court "not later than the second year after the date of the occurrence or
 the termination of an alleged discriminatory housing practice or the breach of a conciliation
-agreement… whichever occurs last," available "whether a complaint has been filed under Section
-301.081 and without regard to the status of any complaint filed under that section" — though
-§ 301.151(d) bars it where the commission obtained a conciliation agreement with the aggrieved
-person's consent, except to enforce it, and § 301.151(e) bars it once the commission has begun a
-hearing on the record. Section 301.153 allows a court to award "actual and punitive damages," attorney
-fees, costs and injunctive relief, and § 301.156 allows attorney fees to the prevailing party in either
-forum. Finally, § 301.171 makes it a **Class A misdemeanor** to intimidate or interfere with a person
-by force or threat of force because of a protected class and because that person is buying, selling,
-renting, financing or occupying a dwelling, or aiding others in doing so.
+agreement… whichever occurs last," available regardless of whether a complaint was filed with the
+commission — though § 301.151(d) bars it where the commission obtained a conciliation agreement with
+the aggrieved person's consent, and § 301.151(e) bars it once the commission has begun a hearing on
+the record. Section 301.153 allows a court to award "actual and punitive damages," attorney fees,
+costs and injunctive relief, and § 301.156 allows attorney fees to the prevailing party in either
+forum. Section 301.171 makes it a **Class A misdemeanor** to intimidate or interfere with a person by
+force or threat of force because of a protected class and because that person is buying, selling,
+renting, financing or occupying a dwelling.
 
-**How the Texas and federal options relate.** From what was read, ch. 301 is substantially equivalent,
-not exclusive. Section 301.044(b) provides that the chapter "does not affect a requirement of
-nondiscrimination in any other state or federal law"; § 301.083(a) contemplates the federal government
-referring a complaint to the commission or deferring jurisdiction to it; § 301.068 contemplates
-referral down to a HUD-certified municipal agency; and §§ 301.092 and 301.111(c) both stop the state
-administrative track once a civil action on the same practice, "under federal or state law," reaches
-trial. The picture is parallel forums coordinated to avoid duplication, with the complainant holding a
-real choice at the § 301.093 election. What this module cannot tell you, because the federal
-enforcement sections were not held, is the federal filing deadline or the federal election procedure.
-A client choosing between forums needs a lawyer working from the current federal text.
+**How the Texas and federal options relate.** Chapter 301 is substantially equivalent, not exclusive.
+Section 301.044(b) provides that it "does not affect a requirement of nondiscrimination in any other
+state or federal law"; § 301.083(a) contemplates the federal government referring a complaint to the
+commission or deferring jurisdiction to it; § 301.068 contemplates referral to a HUD-certified
+municipal agency; and §§ 301.092 and 301.111(c) both stop the state administrative track once a civil
+action on the same practice, "under federal or state law," reaches trial. These are parallel forums
+coordinated to avoid duplication, with the complainant holding a real choice at the § 301.093
+election. What this module cannot tell you, because the federal enforcement sections were not held, is
+the federal filing deadline or election procedure; a client choosing between forums needs a lawyer
+working from the current federal text.
 
 ## Unit: Housing Discrimination
 
@@ -599,9 +588,9 @@ sound," but an elderly applicant's age "may not be assigned a negative factor or
 Protection Act and its implementing regulation is not a held source, so this module states only what
 § 1691 itself says. Section 1691(c) adds that refusing credit offered under a legally authorized
 assistance program for an economically disadvantaged class, a nonprofit program, or a **special purpose
-credit program** "offered by a profit-making organization to meet special social needs" meeting the
-Bureau's standards is not a violation "if such refusal is required by or made pursuant to such
-program" — the provision that lets targeted assistance programs restrict eligibility.
+credit program** "offered by a profit-making organization to meet special social needs" is not a
+violation "if such refusal is required by or made pursuant to such program" — the provision that lets
+targeted assistance programs restrict eligibility.
 
 **§ 1691(d) — adverse action notification.** This produces the letter your client brings to you.
 Paragraph (1): "Within thirty days (or such longer reasonable time as specified in regulations of the
@@ -616,13 +605,12 @@ may be obtained." Under that second route there are two clocks: the applicant ha
 notification to request reasons; the creditor then has **thirty days** from the request to supply them.
 Paragraph (3): a statement of reasons complies "only if it contains the **specific reasons** for the
 adverse action taken" — "you did not meet our credit standards" is not a statement of reasons.
-Paragraph (5) permits verbal notification by a creditor "who did not act on more than one hundred and
-fifty applications during the calendar year preceding." Paragraph (6) defines the term: "'adverse
-action' means a denial or revocation of credit, a change in the terms of an existing credit
-arrangement, or a refusal to grant credit in substantially the amount or on substantially the terms
-requested," excluding refusals of additional credit where the applicant is delinquent or in default or
-where the credit would exceed an established limit. A common error is to think adverse action means
-only a flat denial; it also covers approval for materially less, or on materially different terms.
+Paragraph (6) defines the term: "'adverse action' means a denial or revocation of credit, a change in
+the terms of an existing credit arrangement, or a refusal to grant credit in substantially the amount
+or on substantially the terms requested," excluding refusals of additional credit where the applicant
+is delinquent or in default or where the credit would exceed an established limit. A common error is to
+think adverse action means only a flat denial; it also covers approval for materially less, or on
+materially different terms.
 
 **§ 1691(e) — the appraisal copy.** Each creditor must furnish the applicant "a copy of any and all
 written appraisals and valuations developed in connection with the applicant's application for a loan
@@ -631,19 +619,17 @@ in no case later than 3 days prior to the closing of the loan, whether the credi
 the applicant's request for credit or the application is incomplete or withdrawn." The applicant may
 waive the three-day timing and may be charged a reasonable fee for the appraisal itself, but the copy
 must be provided "at no additional cost," and the creditor must notify the applicant in writing of the
-right at the time of application. Subsection (e)(6) defines "valuation" broadly, including values
-"developed pursuant to a policy of a government sponsored enterprise or by an automated valuation
-model, a broker price opinion, or other methodology or mechanism."
+right at the time of application. Subsection (e)(6) defines "valuation" broadly, reaching values from
+"an automated valuation model, a broker price opinion, or other methodology or mechanism."
 
 **The fair housing side.** The Act's own financing provision, 42 U.S.C. § 3605, was not held and is not
 paraphrased here. The Texas parallel was read: Property Code § 301.026 prohibits a person whose
 business includes residential real estate related transactions from discriminating "in making a real
 estate related transaction available or in the terms or conditions of a real estate related
-transaction" on the seven Texas bases, and defines those transactions to include dwelling lending,
-other financial assistance to purchase, construct, improve, repair or maintain a dwelling or to secure
-residential real estate, and "the selling, brokering, or appraising of residential real property." So a
-Texas mortgage denial can implicate three regimes at once: ECOA on the § 1691(a) bases; § 301.026 on
-the fair housing bases; and, where a license holder's conduct contributed, § 1101.652(b)(32).
+transaction" on the seven Texas bases, and defines those transactions to include dwelling lending and
+"the selling, brokering, or appraising of residential real property." So a Texas mortgage denial can
+implicate three regimes at once: ECOA on the § 1691(a) bases; § 301.026 on the fair housing bases; and,
+where a license holder's conduct contributed, § 1101.652(b)(32).
 
 **What to do when a client is denied.** This paragraph is practice, not law, and cites nothing. **Do**
 make sure the client actually reads the notice, and point out that § 1691(d)(2) entitles them to a
@@ -781,15 +767,15 @@ module has spent five units warning you about.
 
 This module traced fair housing from a one-sentence federal policy to the licence you hold.
 
-42 U.S.C. § 3601 declares the policy; § 3604 supplies the prohibitions. Its subsections each forbid a
-different thing — refusal to deal, discriminatory terms, discriminatory advertising and statements,
-false representations of unavailability, blockbusting, and the disability regime in (f) — and their
-class lists differ because Congress added sex in 1974 and handicap and familial status in 1988 by
-insertion rather than by rewriting. Inside § 3604(f)(3), the pair students most often merge stays
-separate if you hold the texts side by side: a **reasonable modification** changes the premises, at the
-expense of the person with the handicap, and in a rental may be conditioned on restoring the interior;
-a **reasonable accommodation** changes rules, policies, practices or services, and the statute attaches
-no expense and no restoration to it.
+42 U.S.C. § 3601 declares the policy; § 3604 supplies the prohibitions — refusal to deal,
+discriminatory terms, discriminatory advertising and statements, false representations of
+unavailability, blockbusting, and the disability regime in (f). Their class lists differ because
+Congress added sex in 1974 and handicap and familial status in 1988 by insertion rather than by
+rewriting. Inside § 3604(f)(3), the pair students most often merge stays separate if you hold the texts
+side by side: a **reasonable modification** changes the premises, at the expense of the person with the
+handicap, and in a rental may be conditioned on restoring the interior; a **reasonable accommodation**
+changes rules, policies, practices or services, and the statute attaches no expense and no restoration
+to it.
 
 Texas legislated in parallel. Property Code ch. 301 protects race, color, religion, sex, disability,
 familial status and national origin, is administered by the Texas Workforce Commission, and by
@@ -805,14 +791,13 @@ Those statutes name practices, and the practices carry personal consequences. St
 expressly in Occupations Code § 1101.652(b)(32) — which adds ancestry and turns on directing a prospect
 "interested in equivalent properties to a different area"; Property Code § 301.114 sends a state fair
 housing order to TREC with a recommendation of discipline within 30 days; and § 1101.801 confirms that
-TREC discipline does not relieve you of civil or criminal liability.
-
-At the lending desk, ECOA's § 1691(a) adds marital status, age and public-assistance income to the
-bases, § 1691(b) permits purpose-limited inquiries, and § 1691(d) gives your client notice within
-thirty days of a completed application and a statement of *specific* reasons for any adverse action.
-And 12 U.S.C. § 2901 stands apart: a continuing and affirmative obligation on regulated institutions to
-help meet their communities' credit needs, enforced by supervisory examination and bounded by safe and
-sound operation — a complement to the anti-discrimination statutes, not another one of them.
+TREC discipline does not relieve you of civil or criminal liability. At the lending desk, ECOA's
+§ 1691(a) adds marital status, age and public-assistance income to the bases, § 1691(b) permits
+purpose-limited inquiries, and § 1691(d) gives your client notice within thirty days of a completed
+application and a statement of *specific* reasons for any adverse action. And 12 U.S.C. § 2901 stands
+apart: a continuing and affirmative obligation on regulated institutions to help meet their
+communities' credit needs, enforced by supervisory examination and bounded by safe and sound operation
+— a complement to the anti-discrimination statutes, not another one of them.
 
 You should now be able to state each § 3604 prohibition and its class list, distinguish accommodation
 from modification, walk a Texas complainant through ch. 301's forum choice, name the statutes a
