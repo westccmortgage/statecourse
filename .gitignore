@@ -42,6 +42,9 @@ next-env.d.ts
 /outputs/
 /work/
 
+# scratch drafts from parallel content-authoring agents (merged into config/ then deleted)
+/california/video-production/.ca-block-drafts/
+
 # Generated at build time by scripts/generate-national-platform.mjs, which writes the
 # 51 jurisdiction hubs, the California course routes, and the core service routes into
 # public/statecourse/ before site/build.sh copies public/ into dist/. They are build
