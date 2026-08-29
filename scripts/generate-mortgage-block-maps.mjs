@@ -132,7 +132,15 @@ function generate(assignment) {
     const practice = screen.practiceProblem ? `, practiceProblem: ${screen.practiceProblem}` : "";
     const mediaEntry = screenMedia[id];
     const videos = mediaEntry?.videos || (mediaEntry?.video ? [mediaEntry.video] : null);
-    const media = videos ? `, videos: ${JSON.stringify(videos)}` : "";
+    const documents = mediaEntry?.documents || null;
+    if (documents) {
+      for (const doc of documents) {
+        if (!doc?.src?.startsWith("/media/") || !doc.label) {
+          throw new Error(`assignment ${assignment}: screen ${id} document needs a /media/ src and a label`);
+        }
+      }
+    }
+    const media = `${videos ? `, videos: ${JSON.stringify(videos)}` : ""}${documents ? `, documents: ${JSON.stringify(documents)}` : ""}`;
     return `        { id: ${q(id)}, sequence: ${index + 1}, type: ${q(screen.type)}, title: ${q(screen.title)}, content: RANGE(${q(screen.from)}, ${q(screen.to)})${practice}${media} },`;
   };
 

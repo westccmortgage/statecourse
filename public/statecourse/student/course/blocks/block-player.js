@@ -136,7 +136,7 @@ function renderScreen() {
     content.innerHTML = renderLessonMarkdown(sliceRange(screen.content));
     renderCompletionStatus(activity);
   } else {
-    content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown(sliceRange(screen.content));
+    content.innerHTML = screenVideoHtml(screen) + renderLessonMarkdown(sliceRange(screen.content)) + screenDocumentsHtml(screen);
   }
   renderNav();
   content.focus({ preventScroll: true });
@@ -180,6 +180,24 @@ function singleVideoHtml(video) {
     <video controls preload="none" playsinline${video.poster ? ` poster="${escapeHtml(video.poster)}"` : ""} src="${escapeHtml(video.src)}">${track}</video>
     ${transcript}
   </figure>`;
+}
+
+/* Specimen reference documents attached to an instruction screen. Optional reading, same
+   contract as screen videos: they gate nothing, and every file is a fictional-transaction
+   specimen served from /media/ — never a regulatory instrument. */
+function screenDocumentsHtml(screen) {
+  const documents = Array.isArray(screen.documents) ? screen.documents : [];
+  if (!documents.length) return "";
+  const items = documents.filter((doc) => doc && doc.src).map((doc) => `<li>
+      <a href="${escapeHtml(doc.src)}" target="_blank" rel="noopener">${escapeHtml(doc.label || "Reference document")} (PDF)</a>
+      ${doc.note ? `<span class="screen-document-note">${escapeHtml(doc.note)}</span>` : ""}
+    </li>`).join("");
+  if (!items) return "";
+  return `<aside class="screen-documents">
+    <p class="screen-documents-heading"><span class="optional-tag">Optional</span> Reference document${documents.length > 1 ? "s" : ""} — specimen for study</p>
+    <ul>${items}</ul>
+    <p class="screen-documents-disclaimer">Specimen documents describe one fictional transaction used throughout this course. They are not genuine records and carry no regulatory effect.</p>
+  </aside>`;
 }
 
 /* Flatten the caption file into a readable transcript on first open. */

@@ -28,6 +28,19 @@ export const MORTGAGE_BLOCK_SPECS = {
        prices all teach §6. §2 (amortization) has no mapped problem — the documented gap; its
        retrieval check is its active learning. */
     problemMap: { 1: [1, 2], 3: [3], 4: [4], 5: [5], 6: [6, 7, 8] },
+    /* Specimen reading, delivery layer only: the promissory note from the course's one fictional
+       transaction (the DiStefano purchase), on §3's "Two documents, two jobs" screen. */
+    screenMedia: {
+      "a2-b3-s1": {
+        documents: [
+          {
+            src: "/media/specimens/specimen-promissory-note.pdf",
+            label: "Specimen promissory note — DiStefano transaction",
+            note: "The $1,189,150 fixed-rate note behind this course's running example. Locate the principal, rate, payment, and late-charge provisions as you read.",
+          },
+        ],
+      },
+    },
   },
   3: {
     objectives: [
@@ -45,6 +58,19 @@ export const MORTGAGE_BLOCK_SPECS = {
        reinstatement window and P8 the security-risk sweep both teach §6. Every section owns a
        problem — no inventory gap in this assignment. */
     problemMap: { 1: [1], 2: [2], 3: [3], 4: [4], 5: [5, 6], 6: [7, 8] },
+    /* Specimen reading: the deed of trust securing the same fictional note A2 shows, on §1's
+       "What the instrument contains" screen. */
+    screenMedia: {
+      "a3-b1-s2": {
+        documents: [
+          {
+            src: "/media/specimens/specimen-deed-of-trust.pdf",
+            label: "Specimen deed of trust — DiStefano transaction",
+            note: "The security instrument for the note in Assignment 2. Find the trustor, beneficiary, trustee, legal description, and power-of-sale language.",
+          },
+        ],
+      },
+    },
   },
   4: {
     objectives: [
@@ -161,6 +187,13 @@ export const MORTGAGE_BLOCK_SPECS = {
             duration: "1:59",
           },
         ],
+        documents: [
+          {
+            src: "/media/specimens/specimen-loan-estimate-page-3.pdf",
+            label: "Specimen Loan Estimate, page 3 — DiStefano transaction",
+            note: "The comparison page of the Loan Estimate the video walks through: In 5 Years, APR, TIP, Other Considerations, and the Confirm Receipt line.",
+          },
+        ],
       },
     },
   },
@@ -197,6 +230,19 @@ export const MORTGAGE_BLOCK_SPECS = {
        teaches §5; P8 the clear-to-close rescission conversation teaches §6. Every section owns a
        problem. */
     problemMap: { 1: [1, 2], 2: [3], 3: [4, 5], 4: [6], 5: [7], 6: [8] },
+    /* Specimen reading: the preliminary report for the same fictional purchase, on §3's
+       "What the preliminary report is" screen. */
+    screenMedia: {
+      "a11-b3-s1": {
+        documents: [
+          {
+            src: "/media/specimens/specimen-preliminary-report.pdf",
+            label: "Specimen preliminary report — DiStefano transaction",
+            note: "Read the exceptions the way §3 teaches: find the sellers' existing deed of trust that escrow must clear before the new lender records in first position.",
+          },
+        ],
+      },
+    },
   },
   12: {
     objectives: [
@@ -231,6 +277,19 @@ export const MORTGAGE_BLOCK_SPECS = {
        defeated error procedure and P8 the complaint-log review both teach §6. Every section owns
        a problem. */
     problemMap: { 1: [1], 2: [2], 3: [3], 4: [4, 5], 5: [6], 6: [7, 8] },
+    /* Specimen reading: the payoff demand that clears the prelim's exception, on §3's
+       "What a payoff demand is" screen. */
+    screenMedia: {
+      "a13-b3-s1": {
+        documents: [
+          {
+            src: "/media/specimens/specimen-payoff-demand.pdf",
+            label: "Specimen payoff demand — DiStefano transaction",
+            note: "Check the arithmetic yourself: principal, per-diem interest to the good-through date, and fees. This demand pays off the lien shown on the preliminary report in Assignment 11.",
+          },
+        ],
+      },
+    },
   },
   14: {
     objectives: [

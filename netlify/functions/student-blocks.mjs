@@ -107,6 +107,7 @@ function publicBlocks(ctx, delivery, derived) {
         content: screen.content || null,
         practiceProblem: screen.practiceProblem || null,
         videos: screen.videos || null,
+        documents: screen.documents || null,
         completed: completed.has(screen.id),
         ...(screen.type === "retrieval" ? {
           question: publicBlockQuestion(getBlockQuestion(ctx.course.courseId, screen.questionId)),

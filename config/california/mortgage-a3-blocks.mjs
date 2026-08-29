@@ -23,7 +23,7 @@ export const A3_BLOCKS = Object.freeze({
       sourceSections: [1],
       screens: [
         { id: "a3-b1-s1", sequence: 1, type: "instruction", title: "What a security instrument does", content: RANGE("^", "### 1.3 What the instrument contains") },
-        { id: "a3-b1-s2", sequence: 2, type: "instruction", title: "What the instrument contains", content: RANGE("### 1.3 What the instrument contains", "### 1.5 What the borrower retains") },
+        { id: "a3-b1-s2", sequence: 2, type: "instruction", title: "What the instrument contains", content: RANGE("### 1.3 What the instrument contains", "### 1.5 What the borrower retains"), documents: [{"src":"/media/specimens/specimen-deed-of-trust.pdf","label":"Specimen deed of trust — DiStefano transaction","note":"The security instrument for the note in Assignment 2. Find the trustor, beneficiary, trustee, legal description, and power-of-sale language."}] },
         { id: "a3-b1-s3", sequence: 3, type: "instruction", title: "What the borrower retains", content: RANGE("### 1.5 What the borrower retains", "## 2. Mortgage comparison") },
         { id: "a3-b1-s4", sequence: 4, type: "practice", title: "Practice: problem 1", content: RANGE("### Problem 1", "### Problem 2"), practiceProblem: 1 },
         { id: "a3-b1-s5", sequence: 5, type: "retrieval", title: "Retrieval check", questionId: "a3-b1-q1" },

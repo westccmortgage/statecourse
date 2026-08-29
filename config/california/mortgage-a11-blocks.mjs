@@ -51,7 +51,7 @@ export const A11_BLOCKS = Object.freeze({
       learningObjective: "Distinguish exceptions, exclusions, and requirements on a preliminary report, route the recurring title items, ask the mechanic's lien intake question, and state what title insurance does not cover.",
       sourceSections: [3],
       screens: [
-        { id: "a11-b3-s1", sequence: 1, type: "instruction", title: "What the preliminary report is", content: RANGE("## 3. Title exceptions and liens", "### 3.3 What the lender needs answered") },
+        { id: "a11-b3-s1", sequence: 1, type: "instruction", title: "What the preliminary report is", content: RANGE("## 3. Title exceptions and liens", "### 3.3 What the lender needs answered"), documents: [{"src":"/media/specimens/specimen-preliminary-report.pdf","label":"Specimen preliminary report — DiStefano transaction","note":"Read the exceptions the way §3 teaches: find the sellers' existing deed of trust that escrow must clear before the new lender records in first position."}] },
         { id: "a11-b3-s2", sequence: 2, type: "instruction", title: "What the lender needs answered", content: RANGE("### 3.3 What the lender needs answered", "### 3.5 The mechanic's lien question at intake") },
         { id: "a11-b3-s3", sequence: 3, type: "instruction", title: "The mechanic's lien question at intake", content: RANGE("### 3.5 The mechanic's lien question at intake", "### 3.7 What title insurance does not cover") },
         { id: "a11-b3-s4", sequence: 4, type: "instruction", title: "What title insurance does not cover", content: RANGE("### 3.7 What title insurance does not cover", "## 4. Escrow instructions and funds") },

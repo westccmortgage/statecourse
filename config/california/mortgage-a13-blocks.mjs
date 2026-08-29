@@ -48,7 +48,7 @@ export const A13_BLOCKS = Object.freeze({
       learningObjective: "Explain why a payoff exceeds the statement balance, compute a per diem extension past the good-through date, state what clears a satisfied lien, and distinguish payoff from assumption and subordination.",
       sourceSections: [3],
       screens: [
-        { id: "a13-b3-s1", sequence: 1, type: "instruction", title: "What a payoff demand is", content: RANGE("## 3. Payoff demand and reconveyance", "### 3.3 The per diem and the good-through date") },
+        { id: "a13-b3-s1", sequence: 1, type: "instruction", title: "What a payoff demand is", content: RANGE("## 3. Payoff demand and reconveyance", "### 3.3 The per diem and the good-through date"), documents: [{"src":"/media/specimens/specimen-payoff-demand.pdf","label":"Specimen payoff demand — DiStefano transaction","note":"Check the arithmetic yourself: principal, per-diem interest to the good-through date, and fees. This demand pays off the lien shown on the preliminary report in Assignment 11."}] },
         { id: "a13-b3-s2", sequence: 2, type: "instruction", title: "The per diem and the good-through date", content: RANGE("### 3.3 The per diem and the good-through date", "### 3.5 Partial reconveyance") },
         { id: "a13-b3-s3", sequence: 3, type: "instruction", title: "Partial reconveyance", content: RANGE("### 3.5 Partial reconveyance", "## 4. Delinquency and loss mitigation") },
         { id: "a13-b3-s4", sequence: 4, type: "practice", title: "Practice: problem 3", content: RANGE("### Problem 3", "### Problem 4"), practiceProblem: 3 },
