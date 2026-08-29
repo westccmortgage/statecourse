@@ -748,38 +748,36 @@ This module traced fair housing from a one-sentence federal policy to the licenc
 
 42 U.S.C. § 3601 declares the policy; § 3604 supplies the prohibitions — refusal to deal,
 discriminatory terms, discriminatory advertising and statements, false representations of
-unavailability, blockbusting, and the disability regime in (f). Their class lists differ because
+unavailability, blockbusting, and the disability regime in (f), whose class lists differ because
 Congress added sex in 1974 and handicap and familial status in 1988 by insertion rather than by
-rewriting. Inside § 3604(f)(3), the pair students most often merge stays separate if you hold the texts
-side by side: a **reasonable modification** changes the premises, at the expense of the person with the
-handicap, and in a rental may be conditioned on restoring the interior; a **reasonable accommodation**
-changes rules, policies, practices or services, and the statute attaches no expense and no restoration
-to it.
+rewriting. Inside § 3604(f)(3) the pair students most often merge stays separate: a **reasonable
+modification** changes the premises, at the expense of the person with the handicap, and in a rental
+may be conditioned on restoring the interior; a **reasonable accommodation** changes rules, policies,
+practices or services, with no expense and no restoration clause attached.
 
 Texas legislated in parallel. Property Code ch. 301 protects race, color, religion, sex, disability,
 familial status and national origin, is administered by the Texas Workforce Commission, and by
-§ 301.002(3) is built to provide rights and remedies "substantially equivalent to those granted under
-federal law." It adds no new class, and § 301.005 forbids expanding its remedies beyond their express
-terms — but § 301.0045 folds hair texture and protective hairstyles into race. Its enforcement path is
-concrete and datable: a sworn written complaint within one year, a 20-day notice, a 10-day answer, a
-100-day investigation and reasonable-cause determination, conciliation throughout, a charge, a 20-day
-election between an administrative hearing and a district court action prosecuted by the attorney
-general, and a private suit available within two years regardless.
+§ 301.002(3) provides rights and remedies "substantially equivalent to those granted under federal
+law." It adds no new class, and § 301.005 forbids expanding its remedies beyond their express terms —
+but § 301.0045 folds hair texture and protective hairstyles into race. Its enforcement path is
+datable: a sworn complaint within one year, a 20-day notice, a 10-day answer, a 100-day investigation
+and reasonable-cause determination, conciliation throughout, a charge, a 20-day election between an
+administrative hearing and an attorney general suit, and a private action within two years regardless.
 
-Those statutes name practices, and the practices carry personal consequences. Steering is named
-expressly in Occupations Code § 1101.652(b)(32) — which adds ancestry and turns on directing a prospect
-"interested in equivalent properties to a different area"; Property Code § 301.114 sends a state fair
-housing order to TREC with a recommendation of discipline within 30 days; and § 1101.801 confirms that
-TREC discipline does not relieve you of civil or criminal liability. At the lending desk, ECOA's
-§ 1691(a) adds marital status, age and public-assistance income to the bases, § 1691(b) permits
-purpose-limited inquiries, and § 1691(d) gives your client notice within thirty days of a completed
-application and a statement of *specific* reasons for any adverse action. And 12 U.S.C. § 2901 stands
-apart: a continuing and affirmative obligation on regulated institutions to help meet their
-communities' credit needs, enforced by supervisory examination and bounded by safe and sound operation
-— a complement to the anti-discrimination statutes, not another one of them.
+The practices carry personal consequences. Steering is named expressly in Occupations Code
+§ 1101.652(b)(32) — which adds ancestry and turns on directing a prospect "interested in equivalent
+properties to a different area"; Property Code § 301.114 sends a state fair housing order to TREC with
+a recommendation of discipline within 30 days; and § 1101.801 confirms that TREC discipline does not
+relieve you of civil or criminal liability. At the lending desk, ECOA's § 1691(a) adds marital status,
+age and public-assistance income to the bases, § 1691(b) permits purpose-limited inquiries, and
+§ 1691(d) gives your client notice within thirty days of a completed application and a statement of
+*specific* reasons for any adverse action. And 12 U.S.C. § 2901 stands apart: a continuing and
+affirmative obligation on regulated institutions to help meet their communities' credit needs,
+enforced by supervisory examination and bounded by safe and sound operation — a complement to the
+anti-discrimination statutes, not another one of them.
 
 You should now be able to state each § 3604 prohibition and its class list, distinguish accommodation
 from modification, walk a Texas complainant through ch. 301's forum choice, name the statutes a
-steering complaint violates in both the fair housing and licensing codes, read an adverse-action notice
-against § 1691(d), and explain why the CRA is an obligation to a community rather than a claim for an
-individual.
+steering complaint violates in both the fair housing and licensing codes, read an adverse-action
+notice against § 1691(d), and explain why the CRA is an obligation to a community rather than a claim
+for an individual.

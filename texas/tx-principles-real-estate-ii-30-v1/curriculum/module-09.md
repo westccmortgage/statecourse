@@ -72,22 +72,20 @@ Before the licensing question, settle a definitional one that trips people const
 § 92.001(2) defines "landlord" as "the owner, lessor, or sublessor of a dwelling, but does not include
 a manager or agent of the landlord unless the manager or agent purports to be the owner, lessor, or
 sublessor in an oral or written lease." The manager is ordinarily *not* the landlord for purposes of
-ch. 92. The duties in that chapter run to the landlord. But a manager who signs a lease as though the
-manager were the lessor, rather than as agent for a disclosed owner, has pulled those duties onto
-itself. A common error is to treat the signature block as clerical. It is not; it decides who the
-statute is talking about.
+ch. 92, whose duties run to the landlord. But a manager who signs a lease as though the manager were
+the lessor, rather than as agent for a disclosed owner, has pulled those duties onto itself. A common
+error is to treat the signature block as clerical. It decides who the statute is talking about.
 
 Section 92.201(a) reinforces the point from the other direction. A landlord must disclose to a tenant,
 or to a government official acting in an official capacity, the name and a street or post office box
 address of the holder of record title according to the county deed records, and, "if an entity located
 off-site from the dwelling is primarily responsible for managing the dwelling, the name and street
-address of the management company." Section 92.201(b) permits the disclosure to a tenant in writing
-within seven days of request, by continuous conspicuous posting within that period, or in the lease or
-written rules given before any request; § 92.006(a) makes the duty non-waivable. The remedies in
+address of the management company." Section 92.201(b) permits the disclosure in writing within seven
+days of request, by continuous conspicuous posting within that period, or in the lease or written
+rules given before any request; § 92.006(a) makes the duty non-waivable, and the remedies in
 § 92.205(a) run from a court order compelling disclosure to a judgment for one month's rent plus one
 hundred dollars, costs and fees, and unilateral termination of the lease without a court proceeding.
-Texas has decided a tenant is entitled to know who owns the building and who runs it, and off-site fee
-management is the ordinary trigger.
+Off-site fee management is the ordinary trigger.
 
 **The license question in Texas**
 
@@ -179,15 +177,13 @@ the owner's own employee are the two stated exemptions carrying most everyday ex
 is neither, performing a listed act for another for compensation, needs a license and must be either a
 broker or a sponsored sales agent.
 
-One further provision links management to agency. Section 1101.557(a) states that "a broker who
-represents a party in a real estate transaction or who lists real estate for sale under an exclusive
-agreement for a party is that party's agent," and § 1101.557(c)(1) provides that "a license holder who
-has the authority to bind a party to a lease or sale under a power of attorney or a **property
-management agreement** is also a party to the lease or sale." A manager with signing authority is not
-a bystander to the lease. Section 1101.803 adds the supervisory dimension: "A licensed broker is
-liable to the commission, the public, and the broker's clients for any conduct engaged in under this
-chapter by the broker or by a sales agent associated with or acting for the broker." The broker owns
-the property management department's mistakes.
+One further provision links management to agency. Section 1101.557(c)(1) provides that "a license
+holder who has the authority to bind a party to a lease or sale under a power of attorney or a
+**property management agreement** is also a party to the lease or sale." A manager with signing
+authority is not a bystander to the lease. Section 1101.803 adds the supervisory dimension: "A
+licensed broker is liable to the commission, the public, and the broker's clients for any conduct
+engaged in under this chapter by the broker or by a sales agent associated with or acting for the
+broker." The broker owns the property management department's mistakes.
 
 **Trust money**
 
@@ -215,13 +211,12 @@ stolen. Subdivision (31) says do not pay it out early. Subdivision (9) says acco
 it to its owner within a reasonable time.
 
 The practical failures are mundane. A manager who deposits owner rent into the firm's operating
-account "temporarily" because the trust account signature card has not been updated has commingled. So
-has a manager who leaves a cushion of the firm's own money in the trust account to prevent overdrafts.
-A manager who funds this month's payroll out of security deposits has both commingled and disbursed
-early. A manager four months behind in owner statements because the bookkeeper left has failed to
-account or remit within a reasonable time. None of these requires bad intent: only some of these
-provisions are about dishonesty at all, and the rest are about *administration*, which is where
-careless managers lose licenses.
+account "temporarily" has commingled; so has one who leaves a cushion of the firm's own money in the
+trust account to prevent overdrafts. A manager who funds payroll out of security deposits has both
+commingled and disbursed early. A manager four months behind in owner statements because the
+bookkeeper left has failed to account or remit within a reasonable time. None of these requires bad
+intent: only some of these provisions are about dishonesty at all, and the rest are about
+*administration*, which is where careless managers lose licenses.
 
 Two neighboring provisions belong here. Section 1101.652(b)(13) reaches a license holder who "accepts,
 receives, or charges an undisclosed commission, rebate, or direct profit on an expenditure made for a
@@ -279,10 +274,10 @@ agreement, and it deserves to be read line by line before it is signed.
 
 **Identification and scope of authority.** Which property, and which acts the manager may perform
 without further approval: sign leases, at what rent and term and with what concessions; approve
-repairs up to what amount; sign checks on the operating account; serve notices and file eviction
-suits, or refer them to counsel. Authority left vague becomes authority litigated later. Remember
-§ 1101.557(c)(1): a license holder with authority to bind the owner to a lease under a property
-management agreement is treated as a party to that lease.
+repairs up to what amount; sign checks; serve notices and file eviction suits, or refer them to
+counsel. Authority left vague becomes authority litigated later, and § 1101.557(c)(1) treats a license
+holder with authority to bind the owner to a lease under a management agreement as a party to that
+lease.
 
 **Term and termination.** Here Texas law contains a detail worth noticing. Occupations Code
 § 1101.652(b)(12) makes it a ground for discipline if a license holder "fails to specify a definite
@@ -292,10 +287,10 @@ license is required under this chapter." A listing agreement must state a defini
 not subject to prior notice; a property management contract is expressly carved out. The reason is
 structural: management is an open-ended operating relationship, not a finite assignment to produce one
 transaction, so the carve-out permits an evergreen term ending on notice. It does not require one, and
-it does not relieve the agreement of the need to say how it ends, who may end it, what notice is
-required, and what happens to funds, files, keys and pending leases on termination. A common error is
-to read the carve-out as saying management agreements need no termination provision at all. It says
-only that the *statutory definite-date requirement* does not apply to them.
+it does not relieve the agreement of saying how it ends, who may end it, what notice is required, and
+what happens to funds, files, keys and pending leases. A common error is to read the carve-out as
+saying management agreements need no termination provision at all. It says only that the *statutory
+definite-date requirement* does not apply to them.
 
 **Compensation.** Commonly a percentage of collected income, a fixed monthly amount, or a combination,
 plus separate leasing or renewal fees. Whether the fee is earned on rent *billed* or rent *collected*
@@ -399,12 +394,12 @@ Seven days is a presumption, not a deadline, and severity moves it both ways. Bu
 program that cannot reliably close a health-and-safety work order inside a week is operating against
 the presumption. That is why competent managers timestamp every service request at intake, route
 health-and-safety items to a separate queue, and document dispatch and completion. Section 92.0561
-shows the cost of failing: where the landlord is liable under § 92.056(b) and the further conditions
-of § 92.0561(d) are met, the tenant may have the condition repaired and deduct the cost from a
-subsequent rent payment, limited by § 92.0561(b) to "the amount of one month's rent under the lease or
-$500, whichever is greater," with the work done by an independent contractor under § 92.0561(f).
-Section 92.056(e) alternatively lets the tenant terminate the lease or pursue judicial remedies under
-§ 92.0563, and § 92.056(g) requires the lease to state these remedies "in underlined or bold print."
+shows the cost of failing: where the landlord is liable under § 92.056(b) and § 92.0561(d)'s further
+conditions are met, the tenant may have the condition repaired and deduct the cost from a subsequent
+rent payment, limited by § 92.0561(b) to "the amount of one month's rent under the lease or $500,
+whichever is greater." Section 92.056(e) alternatively lets the tenant terminate the lease or pursue
+judicial remedies under § 92.0563, and § 92.056(g) requires the lease to state these remedies "in
+underlined or bold print."
 
 Against that backdrop, structure the work in four categories. **Routine** maintenance is scheduled,
 recurring work that keeps the property functional — grounds, common areas, filters, lighting.
@@ -449,8 +444,7 @@ terms, conditions and privileges; § 3604(d) prohibits representing that a dwell
 it is in fact available; and § 3604(f)(1) through (3) address handicap, including the
 reasonable-modification and reasonable-accommodation duties. Under § 3604(f)(9) nothing in that
 subsection requires a dwelling to be made available to a person whose tenancy "would constitute a
-direct threat to the health or safety of other individuals or whose tenancy would result in
-substantial physical damage to the property of others"; Property Code § 301.025(f) is to the same
+direct threat to the health or safety of other individuals"; Property Code § 301.025(f) is to the same
 effect.
 
 Advertising is regulated separately and strictly. Property Code § 301.022 prohibits publishing "a
@@ -506,15 +500,15 @@ a measure of good work that is simply that nothing dramatic happened.
 
 **The range of asset types.** The words "property manager" cover several occupations that share a
 name. **Single-family and small residential** management handles detached houses, duplexes and small
-multiplexes for individual owners, often owners who moved and kept the house; the properties are
-scattered and the economics turn on efficiency per door. This is where the Texas licensing question
-bites hardest, because Occupations Code § 1101.002(1)(A)(x) reaches control of the acceptance or
-deposit of rent from a resident of a single-family residential real property unit, and because the
-on-site apartment manager exemption in § 1101.005(7) does not describe this work. **Multifamily**
-management runs apartment communities from one address, staffed on site and measured relentlessly on
-occupancy, delinquency, turnover cost and expense per unit; careers run from leasing consultant to
-community manager to regional manager, and § 1101.005(7) makes the on-site position available without
-a license, which is why multifamily is a common entry point into the industry.
+multiplexes for individual owners; the properties are scattered and the economics turn on efficiency
+per door. This is where the Texas licensing question bites hardest, because Occupations Code
+§ 1101.002(1)(A)(x) reaches control of the acceptance or deposit of rent from a resident of a
+single-family residential real property unit, and because the on-site apartment manager exemption in
+§ 1101.005(7) does not describe this work. **Multifamily** management runs apartment communities from
+one address, staffed on site and measured on occupancy, delinquency, turnover cost and expense per
+unit; careers run from leasing consultant to community manager to regional manager, and § 1101.005(7)
+makes the on-site position available without a license, which is why multifamily is a common entry
+point into the industry.
 
 **Commercial** management — office, retail and industrial — deals with business tenants, longer and
 individually negotiated leases, and rent built from a base plus a share of operating costs, sometimes
@@ -541,11 +535,11 @@ professional designation or to belong to any trade organization.** Occupations C
 requires a *license* — a broker or sales agent license — of a person performing the acts of a broker,
 and § 1101.002(4) defines a license holder as a broker or sales agent licensed under the chapter. That
 is the legal credential. Designations are private and voluntary: conferred by private organizations
-under their own rules, revocable under those same rules, and conferring no authority a license holder
-does not already have. This module cites nothing for the value of any designation, because that is
-professional practice and not Texas law, and it names no particular organization. Structured education
-does make managers better at a job whose failures are expensive and often invisible until they are
-catastrophic. That is a good reason to pursue a designation. "It is required" is not.
+under their own rules and conferring no authority a license holder does not already have. This module
+cites nothing for the value of any designation, because that is professional practice and not Texas
+law, and it names no particular organization. Structured education does make managers better at a job
+whose failures are expensive and often invisible until they are catastrophic. That is a good reason to
+pursue a designation. "It is required" is not.
 
 **Ethics: standing between the owner and the tenant.** The defining ethical feature of this work is
 that the manager sits between two parties whose interests diverge daily and owes each of them
@@ -659,10 +653,9 @@ obligations, indemnification and accounting mechanics. The operating statement s
 every owner conversation uses: gross potential rent less vacancy and collection loss yields effective
 gross income, less operating expenses yields net operating income, with debt service and capital
 expenditures excluded by definition. The maintenance program is organized into routine, preventive,
-corrective and emergency work because Property Code § 92.056(d)'s rebuttable presumption that seven
-days is a reasonable time sets the tempo, and tenant selection is written, consistent and documented
-because Property Code §§ 301.021, 301.022, 301.024 and 301.025, 42 U.S.C. § 3604 and Occupations Code
-§ 1101.652(b)(32) all reach the same conduct from different directions.
+corrective and emergency work because § 92.056(d)'s rebuttable presumption that seven days is a
+reasonable time sets the tempo, and tenant selection is written and consistent because Property Code
+ch. 301, 42 U.S.C. § 3604 and Occupations Code § 1101.652(b)(32) all reach the same conduct.
 
 The third unit placed the manager in a profession and in an ethical position. Designations and trade
 memberships are voluntary practice, required by no statute read for this course; the license is the

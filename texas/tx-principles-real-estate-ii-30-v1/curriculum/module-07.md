@@ -563,13 +563,12 @@ disclose such a known defect to a potential buyer. That duty runs to a *potentia
 Representing the seller does not license you to conceal a known significant defect from the person across the table.
 
 Two boundaries deserve equal emphasis. Section 1101.556 provides that notwithstanding other law, a license holder is not
-required to inquire about, disclose or release information relating to whether a previous or current occupant had, may
-have had, has or may have AIDS, an HIV-related illness or an HIV infection as defined by the Centers for Disease Control
-and Prevention, or whether "a death occurred on a property by natural causes, suicide, or accident unrelated to the
-condition of the property"; § 1101.802 adds that a person is not civilly or criminally liable for failing to inquire
-about or disclose the HIV/AIDS matters described. Running the other way, § 1101.555 imposes the affirmative written
-advisory about an abstract examination or title policy, with discipline under § 1101.652(b)(29) and loss of commission
-under § 1101.806(d) if it is skipped.
+required to inquire about, disclose or release information relating to whether an occupant had or may have had AIDS, an
+HIV-related illness or an HIV infection as defined by the Centers for Disease Control and Prevention, or whether "a death
+occurred on a property by natural causes, suicide, or accident unrelated to the condition of the property"; § 1101.802
+adds that a person is not civilly or criminally liable for failing to disclose the HIV/AIDS matters described. Running
+the other way, § 1101.555 imposes the affirmative written advisory about an abstract examination or title policy, with
+discipline under § 1101.652(b)(29) and loss of commission under § 1101.806(d) if it is skipped.
 
 **Confidentiality.** The agent does not disclose the client's confidences, above all those that weaken the client's
 bargaining position. In the intermediary setting the duty is statutory: § 1101.651(d)(1) and (2) forbid disclosing that
@@ -583,23 +582,22 @@ carve-out in (d)(3) shows how Texas resolves the tension whenever it arises: neg
 defects in the house are not.
 
 **Reasonable care and diligence.** Section 1101.652(b)(1) reaches a license holder who "acts negligently or
-incompetently." Section 1101.652(a)(6) reaches one who "fails to consider market conditions for the specific geographic
-area in which the license holder is providing a service." Section 1101.652(b)(2) reaches conduct "that is dishonest or
-in bad faith or that demonstrates untrustworthiness," and (b)(5) reaches "a false promise that is likely to influence a
-person to enter into an agreement when the license holder is unable or does not intend to keep the promise." Section
-1101.652(b)(28) requires providing, on request, a copy of a transaction document to a person who signed it, and
-§ 1101.652(a)(5) reaches failing to surrender to the owner, without just cause, a requested document in the license
-holder's possession. Care is also where competence has an edge: § 1101.654 draws the line at practising law, and the
-diligent answer to a legal question is a referral, not a guess.
+incompetently," and § 1101.652(a)(6) one who "fails to consider market conditions for the specific geographic area in
+which the license holder is providing a service." Section 1101.652(b)(2) reaches conduct "that is dishonest or in bad
+faith or that demonstrates untrustworthiness," and (b)(5) "a false promise that is likely to influence a person to enter
+into an agreement when the license holder is unable or does not intend to keep the promise." Section 1101.652(b)(28)
+requires providing, on request, a copy of a transaction document to a person who signed it, and § 1101.652(a)(5) reaches
+failing to surrender a requested document to its owner without just cause. Care is also where competence has an edge:
+§ 1101.654 draws the line at practising law, and the diligent answer to a legal question is a referral, not a guess.
 
 **Accounting.** Section 1101.652(b)(9) reaches failing "within a reasonable time to properly account for or remit money
-that is received by the license holder and that belongs to another person." Section 1101.652(b)(10) reaches commingling
-another person's money with the license holder's own. Section 1101.652(b)(30) requires depositing escrow or trust funds
-within a reasonable time, either in trust with a title company authorized to do business in Texas or in a custodial,
-trust or escrow account maintained for that purpose in a Texas-authorized banking institution. Section 1101.652(b)(31)
-forbids disbursing from such an account "before the completion or termination of the real estate transaction." Section
-1101.652(b)(24) adds the paperwork: withholding from or inserting into a statement of account or invoice a statement the
-license holder knows makes it materially inaccurate.
+that is received by the license holder and that belongs to another person," and (b)(10) reaches commingling another
+person's money with the license holder's own. Section 1101.652(b)(30) requires depositing escrow or trust funds within a
+reasonable time, either in trust with a title company authorized to do business in Texas or in a custodial, trust or
+escrow account maintained for that purpose in a Texas-authorized banking institution, and (b)(31) forbids disbursing
+from such an account "before the completion or termination of the real estate transaction." Section 1101.652(b)(24) adds
+the paperwork: withholding from or inserting into a statement of account or invoice a statement the license holder knows
+makes it materially inaccurate.
 
 **Which duties survive termination.** The classical teaching is that the forward-looking duties end with the agency —
 loyalty in future dealings, obedience, the duty to keep working — while two continue: **confidentiality**, because the
@@ -783,12 +781,11 @@ along the line between opinion and fact, and it is on the fact side that license
 
 Two further exemptions turn on transaction size. Section 17.49(f) exempts a claim arising out of a written contract where the
 transaction or set of related transactions involves total consideration by the consumer of more than $100,000, the consumer was
-represented in negotiating it by legal counsel not identified, suggested or selected by the defendant or the defendant's agent,
-and "the contract does not involve the consumer's residence." Section 17.49(g) exempts a cause of action arising from a
-transaction or set of related transactions involving total consideration by the consumer of more than $500,000, "other than a
-cause of action involving a consumer's residence." Note the residence carve-out in both: the statute is most protective exactly
-where an individual's home is concerned. Section 17.49(e) provides that except as specifically provided by § 17.50(b) and (h),
-nothing in the subchapter applies to a cause of action for bodily injury or death or for the infliction of mental anguish.
+represented in negotiating it by legal counsel not identified, suggested or selected by the defendant, and "the contract does not
+involve the consumer's residence." Section 17.49(g) exempts a cause of action arising from a transaction or set of related
+transactions involving total consideration by the consumer of more than $500,000, "other than a cause of action involving a
+consumer's residence." Note the residence carve-out in both: the statute is most protective exactly where an individual's home is
+concerned.
 
 **The practical lesson.** Your Texas buyer or seller is almost certainly a "consumer" under § 17.45(4), because a house is "goods"
 under § 17.45(1) and brokerage is "services" under § 17.45(2). The sentence that hurts you is the confident factual one: it lands
