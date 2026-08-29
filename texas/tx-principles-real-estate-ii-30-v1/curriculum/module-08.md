@@ -1117,7 +1117,8 @@ The question is lawful; using the answer as a proxy for creditworthiness is not.
 throughout to "regulations of the Bureau," and both halves of that phrase were held and read for this
 course: **15 U.S.C. § 1691a(c) supplies the definition — "[t]he term 'Bureau' means the Bureau of
 Consumer Financial Protection"** — and the Bureau's regulations under ECOA are Regulation B, 12 C.F.R.
-part 1002, four sections of which were held and are taught below. Section 1691(c) adds that refusing credit offered under a legally authorized
+part 1002, four sections of which were held and are taught below. Section 1691(c) adds that
+refusing credit offered under a legally authorized
 assistance program for an economically disadvantaged class, a nonprofit program, or a **special purpose
 credit program** "offered by a profit-making organization to meet special social needs" is not a
 violation "if such refusal is required by or made pursuant to such program" — the provision that lets
@@ -1299,7 +1300,8 @@ That prohibition has an important counterweight in the same section, and it expl
 clients will meet. Section 1002.5(a)(2) provides that **notwithstanding** paragraphs (b) through (d),
 "a creditor shall request information for monitoring purposes as required by § 1002.13 for credit
 secured by the applicant's dwelling," and may obtain information required by a regulation, order or
-agreement of a court or enforcement agency to monitor or enforce compliance. So for credit secured by the applicant's
+agreement of a court or enforcement agency to monitor or enforce compliance. So for credit
+secured by the applicant's
 dwelling the demographic questions are not merely permitted, they are **required** for monitoring —
 which is why a mortgage application asks what a car loan application may not. Section 1002.13, which
 fixes exactly which credit that monitoring requirement covers and how the information is to be
@@ -1711,7 +1713,8 @@ for failing to lend to them, and nothing in them identifies an injured person at
 throughout is the institution's "entire community." Where the anti-discrimination statutes give the
 injured person a complaint and a suit, the CRA gives the **agency** an assessment (§ 2903(a)(1)), a
 public written evaluation with a rating (§ 2906), and a moment to use them — the § 2903(a)(2)
-evaluation of an application for a deposit facility. A common and consequential error is to describe the CRA as an anti-redlining
+evaluation of an application for a deposit facility. A common and consequential error is to
+describe the CRA as an anti-redlining
 *prohibition*. Redlining as an unlawful practice is reached by the fair housing and credit statutes —
 federally by 42 U.S.C. § 3605, which makes it unlawful for a person "whose business includes engaging in
 residential real estate-related transactions" to discriminate in making such a transaction available or
