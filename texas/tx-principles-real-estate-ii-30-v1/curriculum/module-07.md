@@ -74,8 +74,7 @@ person* with the *expectation of compensation*. Section 1101.004(b) draws the bo
 side: constructing or repairing a building, participating as a principal in a real estate investment, or
 entering into an obligation secured by an interest in real property is not, standing alone, brokerage.
 Section 1101.005 lists persons to whom the chapter does not apply at all, including a Texas-licensed
-attorney, an attorney-in-fact authorized to conduct not more than three real estate transactions
-annually, an on-site manager of an apartment complex, and an owner or an owner's employee leasing the
+attorney, an on-site manager of an apartment complex, and an owner or an owner's employee leasing the
 owner's real estate.
 
 **How an agency is created.** Agency law generally recognizes four routes, and it is worth being candid
@@ -115,11 +114,9 @@ On **liability for the agent's words**: at common law a principal can be exposed
 misrepresentations, and Texas has narrowed that by statute. Section 1101.805(b) provides that the section
 "prevails over any other law, including common law." Under § 1101.805(d), a party is not liable for a
 license holder's misrepresentation or concealment of a material fact unless the party "knew of the falsity"
-and "failed to disclose the party's knowledge of the falsity." Subsection (e) runs the protection the other
-way for the license holder as to a party's misrepresentation, and subsection (c) preserves the broker's
-responsibility for a sponsored sales agent's acts and omissions. The seller does not automatically own the
-agent's careless sentence, and the agent does not automatically own the seller's lie — but knowledge plus
-silence destroys the protection either way.
+and "failed to disclose the party's knowledge of the falsity"; subsection (e) runs the same protection the
+other way for the license holder, and subsection (c) preserves the broker's responsibility for a sponsored
+sales agent. Knowledge plus silence destroys the protection either way.
 
 On the **outer limit of authority**: no agency authorizes practising law. Section 1101.654(a) requires the
 Commission to suspend or revoke the licence of a non-attorney license holder who, for consideration, drafts
@@ -379,31 +376,26 @@ broker is a licensed individual broker in active status and good standing accord
 subsection (b-1) lets the Commission weigh, in judging good standing, the disciplinary history of the broker or
 of entities the broker serves or served as designated broker, and amounts owed to the Commission.
 
-There is a narrow registration alternative for the entity through which many individual license holders take
-their pay. Section 1101.355(c) requires a business entity that receives compensation on behalf of a license
-holder to be licensed as a broker, but § 1101.355(d) excuses licensure where the entity receives compensation
-earned by a licensed broker or sales agent while engaged in brokerage, performs no other acts of a broker, is a
-limited liability company under § 101.001 of the Business Organizations Code or an S corporation under 26 U.S.C.
-§ 1361, is registered with the Commission, and is at least 51 percent owned by that license holder. Subsection
-(e) directs the Commission to adopt registration rules.
+Section 1101.355(c) requires a business entity that receives compensation on behalf of a license holder to be
+licensed as a broker, but § 1101.355(d) and (e) create a narrow registration alternative for a wholly
+compensation-receiving limited liability company or S corporation that performs no other acts of a broker,
+registers with the Commission, and is at least 51 percent owned by the license holder whose pay it receives.
 
 **Becoming a broker.** Section 1101.356(a) requires an applicant for a broker licence to show at least four years
 of active experience as a license holder during the 60 months preceding the application, the qualifying and
 related coursework required by Commission rule (not to exceed 60 semester hours or equivalent classroom hours),
-and attendance at the broker responsibility course approved under § 1101.458, which may count toward the
-related-course hours. Subsection (b) exempts an applicant already licensed as a broker in a state with comparable
-requirements; subsection (b-1) leaves "active experience" to Commission rule. That four-year requirement is why a
-Texas brokerage is not a flat organization of equals: the person carrying the licence has, by statutory design,
-done the work longer.
+and attendance at the broker responsibility course approved under § 1101.458. Subsection (b) exempts an applicant
+already licensed as a broker in a state with comparable requirements; (b-1) leaves "active experience" to
+Commission rule. That four-year requirement is why a Texas brokerage is not a flat organization of equals: the
+person carrying the licence has, by statutory design, done the work longer.
 
 **Where the brokerage sits.** Section 1101.552(a) requires a resident broker to maintain a fixed office in Texas,
-with the address designated on the licence, and subsection (b) requires an application designating a new location
-not later than the tenth day after moving; subsection (d) excuses a nonresident licensed broker from maintaining a
-Texas place of business. Subsections (e) and (f) require every license holder to give the Commission a current
-mailing address, business address, business telephone number and business e-mail address — plus the name of the
-associated broker, if any — and to report changes. Subsection (g) defines "associated broker" as "a broker who
-associates with and is paid through another broker under a relationship that is intended to be a continuous
-relationship, including as an employee or an ongoing independent contractor."
+with the address designated on the licence, and (b) requires an application designating a new location not later
+than the tenth day after moving; (d) excuses a nonresident licensed broker from maintaining a Texas place of
+business; (e) and (f) require every license holder to keep current contact information on file with the
+Commission. Subsection (g) defines "associated broker" as "a broker who associates with and is paid through
+another broker under a relationship that is intended to be a continuous relationship, including as an employee or
+an ongoing independent contractor."
 
 **Sponsorship: the spine of the organization.** Everything a sales agent does is done for the broker. Section
 1101.351(c) forbids a sales agent from engaging or attempting to engage in brokerage unless sponsored by a
@@ -421,11 +413,11 @@ Chapter 1101 insists on is that whatever the internal economics, the *authority*
 
 **Supervision.** Section 1101.458(a) provides that during the term of the current licence, a broker responsibility
 course approved by the Commission must be attended by a licensed broker and by a sales agent "who supervises
-another license holder." Subsection (b) has the Commission prescribe the course's title, content and duration by
-rule and caps it at six classroom hours; subsection (c) lets those hours count toward the hours described by
-§ 1101.455(f); subsection (d) exempts a broker exempt from continuing education under § 1101.456. Read with
-§ 1101.803, the design is plain: the statute assigns the liability to the broker and then requires the broker —
-and any supervising sales agent — to be trained in carrying it.
+another license holder." Subsection (b) has the Commission prescribe the course by rule and caps it at six
+classroom hours; (c) lets those hours count toward the hours described by § 1101.455(f); (d) exempts a broker
+exempt from continuing education under § 1101.456. Read with § 1101.803, the design is plain: the statute assigns
+the liability to the broker and then requires the broker — and any supervising sales agent — to be trained in
+carrying it.
 
 **Listing and buyer representation agreements.** The business often calls these **employment contracts**: the
 client engages the brokerage to perform services and agrees what it will be paid if it performs. That is a
@@ -475,19 +467,17 @@ to the cooperating side. Total fee: $400,000 × 0.055 = $22,000. Cooperating sid
 Listing side: $22,000 − $10,000 = $12,000. If the listing brokerage's internal split with its sponsored sales agent
 is 70/30 in the agent's favour, the agent's gross share is $12,000 × 0.70 = $8,400 and the brokerage retains $3,600
 — and under § 1101.651(b) that $8,400 must reach the agent through the sponsoring broker, not from the title company
-or the seller. Every number here is invented for the arithmetic. None is standard, customary or required, and none
-should be repeated to a consumer as though it were.
+or the seller. Every number here is invented for the arithmetic; none is standard, customary or required.
 
 **Advertising, names and teams.** Section 1101.652(b)(23) makes it a ground for discipline to publish or cause to be
 published an advertisement that "(A) misleads or is likely to deceive the public; (B) tends to create a misleading
 impression; (C) implies that a sales agent is responsible for the operation of the broker's real estate brokerage
 business; or (D) fails to include the name of the broker for whom the license holder acts, which name may be the
 licensed name, assumed name, or trade name of the broker as authorized by a law of this state and registered with
-the commission." Subparagraphs (C) and (D) together are the statutory basis for how Texas treats **team names**: a
-team may market under a name, but the advertising must carry the broker's name and must not imply that the team or
-the sales agent runs the brokerage. The detailed requirements for registering assumed names, alternate names and
-team names are matters of Commission rule; those rules are not among the sources read for this module, so nothing
-further about them is stated here.
+the commission." Subparagraphs (C) and (D) are the statutory basis for how Texas treats **team names**: a team may
+market under a name, but the advertising must carry the broker's name and must not imply that the team or the sales
+agent runs the brokerage. The registration requirements for assumed, alternate and team names are matters of
+Commission rule; those rules are not among the sources read for this module, so nothing further is stated here.
 
 Section 1101.652(b)(18) forbids placing a sign offering property for sale or lease without the owner's or authorized
 agent's written consent; (b)(19) and (b)(20) forbid offering to sell or lease property without the owner's knowledge
@@ -500,10 +490,9 @@ information unless the disclosure of that information is specifically prohibited
 negotiate a sale, exchange or lease with an owner, landlord, buyer or tenant "with knowledge that that person is a
 party to an outstanding written contract that grants exclusive agency to another broker in connection with the
 transaction," and (b)(21) reaches inducing a party to break a contract to substitute a new one. Section
-1101.557(b)(1) forbids a representing broker from instructing another broker to violate (b)(22). But § 1101.557(c)(3)
-creates a careful safe harbour: sole delivery of an offer to a party does not violate (b)(22) if the party's broker
-consents, a copy is sent to the party's broker unless a sealed-bid governmental process forbids it, and the person
-delivering engages in no other conduct violating (b)(22).
+1101.557(b)(1) forbids instructing another broker to violate (b)(22). But § 1101.557(c)(3) creates a safe harbour:
+sole delivery of an offer to a party does not violate (b)(22) if the party's broker consents, a copy is sent to that
+broker unless a sealed-bid governmental process forbids it, and nothing else violating (b)(22) is done.
 
 **Two structural cautions.** Section 1101.652(b)(16) makes it a ground for discipline to act "in a dual capacity as
 broker and undisclosed principal in a real estate transaction," and § 1101.652(a-1)(1) reaches misrepresentation,
@@ -697,7 +686,6 @@ The items a license holder is most likely to meet, in the statute's words:
   "That's a new roof." Each is a representation about a characteristic, use or benefit.
 - **§ 17.46(b)(7)** — "representing that goods or services are of a particular standard, quality, or grade, or that goods
   are of a particular style or model, if they are of another."
-- **§ 17.46(b)(9)** — "advertising goods or services with intent not to sell them as advertised."
 - **§ 17.46(b)(12)** — "representing that an agreement confers or involves rights, remedies, or obligations which it does
   not have or involve, or which are prohibited by law."
 - **§ 17.46(b)(14)** — "misrepresenting the authority of a salesman, representative or agent to negotiate the final terms of
@@ -709,10 +697,6 @@ The items a license holder is most likely to meet, in the statute's words:
   the consumer would not have entered had the information been disclosed." Read every element: the information must have been
   *known*, at the time, and the failure must have been *intended to induce*. Silence alone is not (b)(24); silence deployed to
   get the deal signed is.
-
-Section 17.46(c)(1) adds that in construing subsection (a) in suits under § 17.47, courts are to be guided so far as possible
-by subsection (b) and by the interpretations the Federal Trade Commission and the federal courts have given section 5(a)(1)
-of the Federal Trade Commission Act.
 
 **The consumer's causes of action.** Section 17.50(a): "A consumer may maintain an action where any of the following
 constitute a producing cause of economic damages or damages for mental anguish": (1) use of a false, misleading or deceptive
@@ -751,15 +735,14 @@ by requiring an award of fees and costs to the defendant on a finding that the a
 bad faith, or brought for harassment. Section 17.50(e) excludes attorneys' fees, costs and prejudgment interest from the
 computation of additional damages, and § 17.50(g) provides that Chapter 41, Civil Practice and Remedies Code, does not apply.
 
-**Pre-suit notice and the settlement window.** Section 17.505(a) makes notice a prerequisite: "As a prerequisite to filing a suit
-seeking damages under Subdivision (1) of Subsection (b) of Section 17.50 of this subchapter against any person, a consumer shall
-give written notice to the person at least 60 days before filing the suit advising the person in reasonable detail of the
-consumer's specific complaint and the amount of economic damages, damages for mental anguish, and expenses, including attorneys'
-fees, if any, reasonably incurred by the consumer in asserting the claim." Section 17.505(b) excuses notice where 60 days is
-impracticable because suit must be filed to prevent limitations from running, or where the claim is a counterclaim. Section
-17.505(c) lets a defendant who received no notice file a plea in abatement not later than the 30th day after filing an original
-answer; under (d) the court shall abate after a hearing, and the suit abates automatically on the 11th day after a verified,
-uncontroverted plea; under (e) the abatement continues until the 60th day after notice is properly served.
+**Pre-suit notice and the settlement window.** Section 17.505(a) makes notice a prerequisite: a consumer "shall give written
+notice to the person at least 60 days before filing the suit advising the person in reasonable detail of the consumer's specific
+complaint and the amount of economic damages, damages for mental anguish, and expenses, including attorneys' fees, if any,
+reasonably incurred by the consumer in asserting the claim." Section 17.505(b) excuses notice where 60 days is impracticable
+because suit must be filed to prevent limitations from running, or where the claim is a counterclaim. Under § 17.505(c)–(e) a
+defendant who received no notice may file a plea in abatement not later than the 30th day after its original answer, the suit
+abates automatically on the 11th day after a verified, uncontroverted plea, and the abatement runs until the 60th day after
+notice is properly served.
 
 That period is an opportunity, not a formality. Section 17.5052(a) permits a person who receives § 17.505 notice to tender an
 offer of settlement during the 60 days after receipt; under (d) the offer must separately state an amount settling the damages
@@ -769,23 +752,22 @@ and fees is capped accordingly. A well-judged early tender therefore limits the 
 
 **Defenses.** Section 17.506(a) gives a defense to any damages or attorneys' fees on proof that "before consummation of the
 transaction he gave reasonable and timely written notice to the plaintiff of the defendant's reliance on" written information
-about the particular goods or service obtained from official government records or another source, or written information about a
-test required or prescribed by a government agency — in each case where the information was false or inaccurate and "the defendant
-did not know and could not reasonably have known of the falsity or inaccuracy." Section 17.506(b) requires the defendant to prove
-that information was a producing cause of the damage, and provides that one producing cause does not bar recovery if other conduct
-of the defendant was also a producing cause; § 17.506(c) permits suit against the third party who supplied it, without privity.
-Section 17.506(d) supplies a second, complete defense: a defendant who proves he received the consumer's notice and, "within 30
-days after the day on which the defendant received the notice," tendered the economic and mental anguish damages claimed plus the
-consumer's reasonably incurred expenses including attorneys' fees, has a defense to the cause of action. Section 17.565 sets the
-limitations period — two years after the act or practice occurred, or two years after the consumer discovered or should reasonably
-have discovered it, extendable by 180 days where the delay was caused by the defendant knowingly acting to induce postponement.
+about the particular goods or service obtained from official government records or another source, or about a test required by a
+government agency — in each case where the information was false or inaccurate and "the defendant did not know and could not
+reasonably have known of the falsity or inaccuracy." Section 17.506(b) requires proof that the information was a producing cause
+of the damage, and § 17.506(c) permits suit against the third party who supplied it, without privity. Section 17.506(d) supplies
+a second, complete defense: a defendant who received the consumer's notice and, "within 30 days after the day on which the
+defendant received the notice," tendered the damages claimed plus the consumer's reasonably incurred expenses including
+attorneys' fees, has a defense to the cause of action. Section 17.565 sets the limitations period at two years after the act or
+practice occurred, or two years after the consumer discovered or should reasonably have discovered it, extendable by 180 days
+where the delay was caused by the defendant knowingly acting to induce postponement.
 
 **The exemptions — including one written for license holders.** Section 17.49(c) is the **professional services exemption**:
 "Nothing in this subchapter shall apply to a claim for damages based on the rendering of a professional service, the essence of
 which is the providing of advice, judgment, opinion, or similar professional skill." It then removes five things from that
-protection: an express misrepresentation of a material fact that cannot be characterized as advice, judgment or opinion; a failure
-to disclose in violation of § 17.46(b)(24); an unconscionable action or course of action that cannot be so characterized; breach of
-an express warranty that cannot be so characterized; and a violation of § 17.46(b)(26).
+protection, among them an express misrepresentation of a material fact that cannot be characterized as advice, judgment or
+opinion; a failure to disclose in violation of § 17.46(b)(24); and an unconscionable action or course of action that cannot be so
+characterized.
 
 Subsection (i) is written for this profession, and every Texas license holder should be able to recite its shape: "Nothing in this
 subchapter shall apply to a claim against a person licensed as a broker or salesperson under Chapter 1101, Occupations Code,

@@ -58,18 +58,13 @@ managed property, the management office. The manager is the statutory intake poi
 duty, which is why intake discipline matters.
 
 **Accounting.** The manager collects money that belongs to the owner, pays bills that belong to the
-owner, holds deposits that belong to the tenant, and reconciles all of it. This is the function that
-produces the most license discipline, and it gets its own treatment below.
-
-**Reporting.** The manager renders periodic statements to the owner — what came in, what went out,
-what is vacant, what is delinquent, what is broken.
-
-**Tenant relations.** The manager answers the phone, enforces the rules evenhandedly, and handles the
-complaints that never appear in any budget line.
-
-**Compliance.** The manager keeps the property and the file inside the law: fair housing in tenant
-selection and advertising, the ch. 92 duties in operations, and the Occupations Code in the manager's
-own conduct.
+owner, holds deposits that belong to the tenant, and reconciles all of it. This function produces the
+most license discipline, and it gets its own treatment below. **Reporting** renders periodic
+statements to the owner — what came in, what went out, what is vacant, delinquent or broken.
+**Tenant relations** means answering the phone, enforcing rules evenhandedly, and handling the
+complaints that never appear in a budget line. **Compliance** keeps the property and the file inside
+the law: fair housing in tenant selection and advertising, the ch. 92 duties in operations, and the
+Occupations Code in the manager's own conduct.
 
 **Whose property is it, and who is the landlord?**
 
@@ -196,12 +191,12 @@ the property management department's mistakes.
 
 **Trust money**
 
-A property manager handles other people's money continuously and in volume: rent that belongs to the
-owner from the moment it is received, security deposits that belong to the tenant subject to the
-landlord's right to deduct, application deposits, and reserves the owner has funded for repairs. Four
-grounds for discipline in Occupations Code § 1101.652(b) govern that handling. The subsection applies
-to a license holder "while engaged in real estate brokerage," and the Commission may suspend or revoke
-the license or take other authorized disciplinary action if the license holder:
+A property manager handles other people's money continuously: rent belonging to the owner from the
+moment it is received, security deposits belonging to the tenant subject to the landlord's right to
+deduct, application deposits, and owner-funded repair reserves. Four grounds for discipline in
+Occupations Code § 1101.652(b) govern that handling. The subsection applies to a license holder "while
+engaged in real estate brokerage," and the Commission may suspend or revoke the license or take other
+authorized disciplinary action if the license holder:
 
 - **(9)** "fails within a reasonable time to properly account for or remit money that is received by
   the license holder and that belongs to another person";
@@ -302,42 +297,40 @@ required, and what happens to funds, files, keys and pending leases on terminati
 to read the carve-out as saying management agreements need no termination provision at all. It says
 only that the *statutory definite-date requirement* does not apply to them.
 
-**Compensation.** How the manager is paid — commonly a percentage of collected income, a fixed monthly
-amount, or a combination, plus separate leasing or renewal fees. Whether the fee is earned on rent
-*billed* or rent *collected* is not a small distinction; on collected income the manager shares the
-pain of a delinquency. State whether the manager may retain late fees, application fees or vendor
-discounts, because § 1101.652(b)(13) makes an undisclosed direct profit on an expenditure made for a
-principal a ground for discipline.
+**Compensation.** Commonly a percentage of collected income, a fixed monthly amount, or a combination,
+plus separate leasing or renewal fees. Whether the fee is earned on rent *billed* or rent *collected*
+is not a small distinction; on collected income the manager shares the pain of a delinquency. State
+whether the manager may retain late fees, application fees or vendor discounts, because
+§ 1101.652(b)(13) makes an undisclosed direct profit on an expenditure made for a principal a ground
+for discipline.
 
-**Owner obligations.** Funding an operating reserve, paying taxes and insurance premiums the manager
-does not, responding to approval requests within a stated time, and disclosing known conditions. A
-manager who cannot get the owner to fund a repair still faces the ch. 92 repair duty running against
-the owner through the manager's office, which is why funding mechanics belong in the contract.
+**Owner obligations.** Funding an operating reserve, paying taxes and premiums the manager does not,
+responding to approval requests within a stated time, and disclosing known conditions. A manager who
+cannot get the owner to fund a repair still faces the ch. 92 repair duty running against the owner
+through the manager's office.
 
 **Indemnification and insurance.** The manager acting within authority ordinarily expects to be
 indemnified by the owner for claims arising from the property, carved out for the manager's own
 negligence; the owner ordinarily expects to be named on the liability policy and to see evidence of
-the manager's coverage. What the parties agree here is contract, not statute, and this course states
-no required allocation.
+the manager's coverage. This is contract, not statute, and the course states no required allocation.
 
 **Accounting and funds.** Which accounts exist, who signs on them, when statements are rendered, when
-funds are remitted, and how security deposits are held. Write these terms so that compliance with
+funds are remitted, and how security deposits are held — written so that compliance with
 § 1101.652(b)(9), (10), (30) and (31) is the automatic result of following the contract.
 
 **Fair housing and legal compliance.** A clause obligating both parties to comply with fair housing
-law, and the owner not to instruct the manager otherwise — worth having precisely because the
-instruction it forbids is the one a manager is most likely to receive.
+law, and the owner not to instruct the manager otherwise — worth having because the instruction it
+forbids is the one a manager is most likely to receive.
 
-**Budgeting and the operating statement.** The manager's financial reporting rests on one arithmetic
-chain. **Gross potential rent (GPR)** is what the property would produce if every unit were leased at
-market for the entire period, with nothing vacant and nothing uncollected — a deliberately
-counterfactual ceiling. **Vacancy and collection loss** is what GPR never becomes: rent lost to empty
-units, to the days between one tenant and the next, to concessions, and to amounts billed but never
-paid. **Effective gross income (EGI)** is gross potential rent minus vacancy and collection loss — the
-money the property actually brings in. **Operating expenses** are the recurring costs of running the
-property: taxes, insurance, common-area utilities, repairs and maintenance, landscaping and pest
-control, on-site payroll, make-ready and turnover, administrative and marketing costs, and the
-management fee. **Net operating income (NOI)** is effective gross income minus operating expenses.
+**Budgeting and the operating statement.** Financial reporting rests on one arithmetic chain.
+**Gross potential rent (GPR)** is what the property would produce with every unit leased at market for
+the whole period — a deliberately counterfactual ceiling. **Vacancy and collection loss** is what GPR
+never becomes: rent lost to empty units, to days between tenants, to concessions, and to amounts
+billed but never paid. **Effective gross income (EGI)** is GPR minus vacancy and collection loss.
+**Operating expenses** are the recurring costs of running the property: taxes, insurance, common-area
+utilities, repairs and maintenance, landscaping, on-site payroll, make-ready, administrative and
+marketing costs, and the management fee. **Net operating income (NOI)** is EGI minus operating
+expenses.
 
 Two exclusions define NOI and are the most common source of error. Operating expenses **exclude debt
 service** — mortgage principal and interest — because NOI measures what the property earns, not how a
@@ -418,21 +411,19 @@ recurring work that keeps the property functional — grounds, common areas, fil
 **Preventive** maintenance stops failures before they happen: servicing HVAC before summer, flushing
 water heaters, inspecting roofs. Owners cut it first and regret it most, because it converts
 predictable small costs into unpredictable large ones. **Corrective** maintenance repairs what has
-already failed — the ordinary work order, where the § 92.056 clock runs. **Emergency** maintenance is
-the subset that cannot wait; § 92.0561(d)(3) and (e) single out sewage and flooding inside the
-dwelling, cessation of potable water, and inadequate heating or cooling, with the tenant's repair
-right arising immediately for sewage and flooding and after three days for water or for heat and
-cooling. A property with no after-hours emergency number is not running a maintenance program.
+already failed — the ordinary work order, where the § 92.056 clock runs. **Emergency** maintenance
+cannot wait; § 92.0561(d)(3) and (e) single out sewage and flooding inside the dwelling, cessation of
+potable water, and inadequate heating or cooling, with the tenant's repair right arising immediately
+for sewage and flooding and after three days for water, heat or cooling.
 
 Security devices belong in the same plan. Section 92.153(a) requires, without any request from the
 tenant and subject to stated exceptions, a window latch on each exterior window, a doorknob lock or
 keyed dead bolt on each exterior door, sliding-door pin locks and handle latches or security bars, and
 a keyless bolting device and door viewer on each exterior door — installed "at the landlord's expense"
-under § 92.153(c) and operable throughout the tenant's possession under § 92.153(h). Section 92.152(b)
-reaches single-family houses, duplexes, mobile homes and units in apartment, condominium and townhome
-projects, while § 92.152(a) excludes hotel, motel and similar transient housing; § 92.006(a) makes
-these duties non-waivable. A make-ready checklist that does not verify every § 92.153 device before
-possession is not finished.
+under § 92.153(c) and operable throughout the tenant's possession under § 92.153(h). Section 92.006(a)
+makes these duties non-waivable, and § 92.152(b) reaches single-family houses, duplexes and units in
+apartment, condominium and townhome projects. A make-ready checklist that does not verify every
+§ 92.153 device before possession is not finished.
 
 **Tenant selection.** This is where fair housing exposure is created or avoided, and the protection is
 procedural: written criteria, applied the same way to every applicant, documented every time.
@@ -466,20 +457,20 @@ Advertising is regulated separately and strictly. Property Code § 301.022 prohi
 notice, statement, or advertisement that is about the sale or rental of a dwelling and that indicates
 any preference, limitation, or discrimination or the intention to make a preference, limitation, or
 discrimination because of race, color, religion, sex, disability, familial status, or national
-origin," and 42 U.S.C. § 3604(c) is the federal counterpart. Property Code § 301.024 and 42 U.S.C.
-§ 3604(e) prohibit inducing a sale or rental for profit by representations about the entry or
-prospective entry into a neighborhood of persons of a protected characteristic. Advertise the
-*property*, never the desired tenant. Occupations Code § 1101.652(b)(32) adds a licensing consequence
-on top: the Commission may discipline a license holder who "discriminates against an owner, potential
-buyer, landlord, or potential tenant on the basis of race, color, religion, sex, disability, familial
-status, national origin, or ancestry, including directing a prospective buyer or tenant interested in
-equivalent properties to a different area based on" those characteristics. Note that the TRELA list
-adds *ancestry*.
+origin," and 42 U.S.C. § 3604(c) is the federal counterpart; Property Code § 301.024 and 42 U.S.C.
+§ 3604(e) prohibit inducing a sale or rental for profit by representations about the entry of persons
+of a protected characteristic into a neighborhood. Advertise the *property*, never the desired tenant.
+Occupations Code § 1101.652(b)(32) adds a licensing consequence: the Commission may discipline a
+license holder who "discriminates against an owner, potential buyer, landlord, or potential tenant on
+the basis of race, color, religion, sex, disability, familial status, national origin, or ancestry,
+including directing a prospective buyer or tenant interested in equivalent properties to a different
+area based on" those characteristics. Note that the TRELA list adds *ancestry*.
 
 Within those constraints a manager may screen on legitimate, consistently applied criteria — income
 relative to rent, verified rental history, creditworthiness. Write the standards down before the first
 application is taken, and never take an owner's instruction to deviate from them; § 1101.652(b)(32)
-makes the license holder responsible for the license holder's own act regardless of who suggested it.
+makes the license holder responsible for the license holder's own act regardless of who suggested
+it.
 
 **Reporting to the owner.** Owner reporting closes the loop and prevents most disputes. A monthly
 package showing income received, expenses paid with supporting invoices, the operating account's cash
