@@ -3,8 +3,8 @@
   "reproduceWith": "node scripts/texas-source-inventory.mjs",
   "regenerateWith": "node scripts/texas-source-inventory.mjs --write",
   "note": "Every file held under texas/trec-sources, walked recursively. Hashes are recomputed from disk; nothing here is transcribed by hand or carried over from another register.",
-  "fileCount": 88,
-  "totalBytes": 17220501,
+  "fileCount": 110,
+  "totalBytes": 19876349,
   "files": [
     {
       "path": "texas/trec-sources/articles/trec-contracts-page-2026-08-29.html",
@@ -15,6 +15,16 @@
       "path": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
       "sha256": "dd987ceb2d972d8e54a245cdf30fe3344369e7666dfa1059f817da28db6fd3ae",
       "bytes": 67348
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1002.13.xml",
+      "sha256": "fea2de33dd19128644db7c22cf168a826e51abfadbad5733b49d641aeb85c80b",
+      "bytes": 3519
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1002.15.xml",
+      "sha256": "117c35e16fb0df150cb5bdc07f75af5522a88858a07ad5464f4bf8c030d46483",
+      "bytes": 5789
     },
     {
       "path": "texas/trec-sources/federal/ecfr-12cfr1002.2.xml",
@@ -32,9 +42,24 @@
       "bytes": 12448
     },
     {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1002.8.xml",
+      "sha256": "6e98fc04ed80f4a1373ee9da024b43b3f85c4e007e9f9dc898b389855cf3bcda",
+      "bytes": 5310
+    },
+    {
       "path": "texas/trec-sources/federal/ecfr-12cfr1002.9.xml",
       "sha256": "34cbda7be6c3f3479a6b020be68b823f7a340fb47cc30be800ce78e96d40a5c0",
       "bytes": 8274
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1003.2.xml",
+      "sha256": "5a7075ee315c342fb397e5fd849515b8c2a2ec0def83d2d8fb44827b1dd18860",
+      "bytes": 8293
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1003.4.xml",
+      "sha256": "17af917158adb9327720cca949f8c040acfad73cf515977e23d6ab341a332f4d",
+      "bytes": 16872
     },
     {
       "path": "texas/trec-sources/federal/ecfr-12cfr1024.xml",
@@ -42,9 +67,24 @@
       "bytes": 90113
     },
     {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1026.15.xml",
+      "sha256": "fe54921954452c67e81142a925bdf3619a2f9d37dfbb90d341256aa087a8c020",
+      "bytes": 6555
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1026.19.xml",
+      "sha256": "1ea2722bfcf9006857f8e7ae37121b1f8215064cc634f8be37f9b500b1dcf081",
+      "bytes": 34118
+    },
+    {
       "path": "texas/trec-sources/federal/ecfr-12cfr1026.2.xml",
       "sha256": "1c945d2eb7e2d7a9306a39a3aee99e639714d0be3ae91ac22090988ea0581b7e",
       "bytes": 13983
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1026.23.xml",
+      "sha256": "c085482d2901b18499ed5a58af1e0c3b6d0a20e747847298afe465a9ef254eb6",
+      "bytes": 10470
     },
     {
       "path": "texas/trec-sources/federal/ecfr-12cfr1026.32.xml",
@@ -55,6 +95,41 @@
       "path": "texas/trec-sources/federal/ecfr-12cfr1026.33.xml",
       "sha256": "58f4cc1f439e7650caff252aad8fc240261a76f246ee7b4a4fe3f65c937c63bf",
       "bytes": 3957
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1026.34.xml",
+      "sha256": "961671fd4b9d74a3f3625631b2f1ac838d742f248fd5c4216d95370f6f8df583",
+      "bytes": 15592
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1026.35.xml",
+      "sha256": "aff13c044dacce6294921ab4c80d1383a3a7471ebde23d55086ce7856e88b0f2",
+      "bytes": 27108
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1026.36.xml",
+      "sha256": "4aa8aa1fb7fbd5fe08c2e39a2014cd0dac0681ff49056d85f492d1642a107187",
+      "bytes": 32945
+    },
+    {
+      "path": "texas/trec-sources/federal/ecfr-12cfr1026.43.xml",
+      "sha256": "7b8401ab646f79d63be8387975d4964e5c6a5b4a1cb2150e5b2b20032614ffb0",
+      "bytes": 59114
+    },
+    {
+      "path": "texas/trec-sources/federal/us12-1828.html",
+      "sha256": "9239222ef861f942e2c822ca272fe22ae84f10736470368b296abb2249892fc0",
+      "bytes": 373667
+    },
+    {
+      "path": "texas/trec-sources/federal/us12-1842.html",
+      "sha256": "3dcb143e43c91758de83968949775dc550a93a2b0fd84ea85cdb09136dee80fc",
+      "bytes": 199453
+    },
+    {
+      "path": "texas/trec-sources/federal/us12-1843.html",
+      "sha256": "d4bab11c67db4c946523d7979395253d7a628ed5a97d27ea2a0bbd6a0c6442b0",
+      "bytes": 328228
     },
     {
       "path": "texas/trec-sources/federal/us12-2601.html",
@@ -102,6 +177,11 @@
       "bytes": 153185
     },
     {
+      "path": "texas/trec-sources/federal/us12-3331.html",
+      "sha256": "ad5723312508248f662adda7d82ce5c564f10cbc62a3fc86e059cfd4c230b479",
+      "bytes": 141347
+    },
+    {
       "path": "texas/trec-sources/federal/us15-1601.html",
       "sha256": "8447beacf59dc009b55be5f4b58f24c95836eb76df0b9aa94d68d7825a616df1",
       "bytes": 203390
@@ -117,9 +197,19 @@
       "bytes": 145636
     },
     {
+      "path": "texas/trec-sources/federal/us15-1691b.html",
+      "sha256": "c7565b39b839fc9c4992eabb1faab60df3af2e7d3643a4536315f928c800d323",
+      "bytes": 152630
+    },
+    {
       "path": "texas/trec-sources/federal/us15-1691c.html",
       "sha256": "82fea5a01f227afe05f23b34dea0c5594dc7d98f5439576fb3b4590d46974656",
       "bytes": 174799
+    },
+    {
+      "path": "texas/trec-sources/federal/us15-1691e.html",
+      "sha256": "87dc537fc5f595d3d479ca0625e7383cc357cc7b1caeb1a994cec60871e1384a",
+      "bytes": 163888
     },
     {
       "path": "texas/trec-sources/federal/us16-1531.html",
@@ -175,6 +265,11 @@
       "path": "texas/trec-sources/federal/us42-3610.html",
       "sha256": "cacc95560af8cc751413ae5fe240984c17f44fba2c5f34dc691c80e289238a08",
       "bytes": 162026
+    },
+    {
+      "path": "texas/trec-sources/federal/us42-3611.html",
+      "sha256": "0201f5e09eb17e47e6dad6d4c1ad28985ef988ce396dedf44d1c1a4d24f78a3a",
+      "bytes": 145824
     },
     {
       "path": "texas/trec-sources/federal/us42-3617.html",
@@ -277,6 +372,11 @@
       "bytes": 39074
     },
     {
+      "path": "texas/trec-sources/statutes/ES.203.htm",
+      "sha256": "479824af39d44c00c57f6e5509d73065dcee71fc098e53ee7f32459b82b720fe",
+      "bytes": 9741
+    },
+    {
       "path": "texas/trec-sources/statutes/ES.251.htm",
       "sha256": "4fd0a0a39400b485e8944ecc0847fab749958a408803e611cf6ad1ad3d77ecfe",
       "bytes": 23639
@@ -300,6 +400,11 @@
       "path": "texas/trec-sources/statutes/GV.4005.htm",
       "sha256": "6af4b08eaf2d105b7b07de9e0d44beef6ad1b34b7e9ffe5c3263db25214fd17a",
       "bytes": 61362
+    },
+    {
+      "path": "texas/trec-sources/statutes/HS.361.htm",
+      "sha256": "78c7d22eba6a2362139f0187ec88a3d96ae442a7d6aa4220f2fec554903f8da3",
+      "bytes": 768932
     },
     {
       "path": "texas/trec-sources/statutes/IN.2501.htm",
@@ -335,6 +440,11 @@
       "path": "texas/trec-sources/statutes/OC.1103.htm",
       "sha256": "33753eb747d1f61333ee1e67f5879e1d341eef3381150667bac1a05f4dd3d9c7",
       "bytes": 192684
+    },
+    {
+      "path": "texas/trec-sources/statutes/PE.32.htm",
+      "sha256": "6255dc525bea48ddf1e73fa8ee58f9948a6985492adde51ba6605bc7802dbd3c",
+      "bytes": 146453
     },
     {
       "path": "texas/trec-sources/statutes/PR.11.htm",

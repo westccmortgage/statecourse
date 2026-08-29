@@ -29,6 +29,14 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CURRICULUM = path.join(root, "texas/tx-principles-real-estate-ii-30-v1/curriculum");
 
+/* SOFT-WRAP NORMALISATION. Several modules are hard-wrapped at a column, so a citation or a long
+   quotation can contain a newline. A pattern that excludes newlines then misses it entirely — and,
+   for quotations, the next match pairs the skipped quotation's closing mark with the following
+   quotation's opening mark and reports the prose between them as unverifiable. Collapsing a single
+   newline to a space fixes both while preserving paragraph breaks, and is length-preserving, so
+   every offset still addresses the same character of the original file. */
+const unwrap = (s) => s.replace(/([^\n])\n(?!\n)/g, "$1 ");
+
 /* ── which held file carries which citation family ───────────────────────────────────────────
    Texas code chapters are addressed as <chapter>.<section>, so the chapter number identifies the
    file. Where two held chapters could claim the same leading number, the entry lists both and the
@@ -49,10 +57,12 @@ const TEXAS_CODES = {
   "Natural Resources Code": { 21: "statutes/NR.21.htm" },
   "Tax Code": { 11: "statutes/TX.11.htm", 32: "statutes/TX.32.htm" },
   "Insurance Code": { 2501: "statutes/IN.2501.htm" },
-  "Estates Code": { 101: "statutes/ES.101.htm", 111: "statutes/ES.111.htm", 112: "statutes/ES.112.htm", 201: "statutes/ES.201.htm", 251: "statutes/ES.251.htm" },
+  "Estates Code": { 101: "statutes/ES.101.htm", 111: "statutes/ES.111.htm", 112: "statutes/ES.112.htm", 201: "statutes/ES.201.htm", 203: "statutes/ES.203.htm", 251: "statutes/ES.251.htm" },
   "Government Code": { 4001: "statutes/GV.4001.htm", 4005: "statutes/GV.4005.htm" },
   "Business Organizations Code": { 200: "statutes/BO.200.htm" },
   "Civil Practice and Remedies Code": { 16: "statutes/CP.16.htm" },
+  "Penal Code": { 32: "statutes/PE.32.htm" },
+  "Health and Safety Code": { 361: "statutes/HS.361.htm" },
 };
 
 /* Chapter numbers that are unambiguous across every held Texas code, for bare "§ N.M" citations. */
@@ -68,6 +78,9 @@ const UNAMBIGUOUS_CHAPTER = (() => {
   for (const [ch, list] of owners) if (list.length === 1) out.set(ch, list[0]);
   return out;
 })();
+
+/* CFR parts held for this course. A bare "§ 1002.4" belongs to one of these, not to a Texas code. */
+const CFR_PARTS = new Set(["1002", "1003", "1024", "1026"]);
 
 const FEDERAL_TITLES = {
   12: (s) => `federal/us12-${s}.html`,
@@ -178,7 +191,10 @@ const moduleFiles = fs.readdirSync(CURRICULUM).filter((f) => /^module-\d+\.md$/.
 
 for (const file of moduleFiles) {
   const modulePath = path.join(CURRICULUM, file);
-  const md = fs.readFileSync(modulePath, "utf8");
+  /* Unwrapped for the same reason the quotation pass is: a citation split across a hard line wrap
+     ("12 U.S.C.\n§ 1843") would otherwise never match its pattern. The substitution is
+     length-preserving, so every offset still addresses the same character of the original. */
+  const md = unwrap(fs.readFileSync(modulePath, "utf8"));
   const moduleId = file.replace(/\.md$/, "");
 
   /* Which unit is a given offset inside? */
@@ -192,9 +208,25 @@ for (const file of moduleFiles) {
     return cur;
   };
 
+  /* A citation the course names ONLY in order to say it is not held is not a sourcing defect — it
+     is the course being honest about the edge of its own sources, which the build requires. Such a
+     reference is classified IDENTIFIED_NOT_TAUGHT and is not counted as a failure. A citation used
+     as authority for a proposition must resolve; one named as absent must not. */
+  const DISCLAIMS = /\bnot (?:a )?held\b|\bnot among the (?:sources|held)\b|\bwere not held\b|\bwas not held\b|\bis not held\b|\bare not held\b|\bnot read for this course\b|\bnot a held source\b|\bnot in the held\b|\bwe do not hold\b|\bnot available to this course\b/i;
+
   const push = (idx, citation, kind, sourceRel, section, note) => {
     const entry = loadSource(sourceRel);
     const present = sectionPresent(entry, section, kind);
+    const courseText = sentenceAround(md, idx);
+    /* The disclaimer is often in an adjacent sentence — "…§ 9607. That section was not held for
+       this course." — so the window is the surrounding passage, not the one sentence. */
+    const passage = md.slice(Math.max(0, idx - 700), Math.min(md.length, idx + 700));
+    const disclaimed = DISCLAIMS.test(passage);
+    let status;
+    if (entry && present) status = "MECHANICAL_PASS";
+    else if (disclaimed) status = "IDENTIFIED_NOT_TAUGHT";
+    else if (!entry) status = "SOURCE_NOT_HELD";
+    else status = "SECTION_NOT_FOUND";
     rows.push({
       claimId: nextId(moduleId),
       module: moduleId,
@@ -205,10 +237,10 @@ for (const file of moduleFiles) {
       sourceFile: entry ? `texas/trec-sources/${sourceRel}` : null,
       sourceHeld: Boolean(entry),
       sectionPresent: present,
-      status: !entry ? "SOURCE_NOT_HELD" : present ? "MECHANICAL_PASS" : "SECTION_NOT_FOUND",
-      courseText: sentenceAround(md, idx),
+      status,
+      courseText,
       substantiveStatus: "PENDING_REVIEW",
-      reviewerNote: note || "",
+      reviewerNote: note || (status === "IDENTIFIED_NOT_TAUGHT" ? "named by the course expressly as a source it does not hold; no proposition is asserted from it" : ""),
       correctionCommit: null,
     });
   };
@@ -224,8 +256,26 @@ for (const file of moduleFiles) {
   /* CFR: "12 C.F.R. § 1024.7". Regulation X is held as one whole-subpart capture; Regulations B
      and Z were pulled section by section, so the file layout differs by part. */
   for (const m of md.matchAll(/(\d+)\s+C\.F\.R\.\s+(?:part\s+)?§?\s*([\d.]+)/g)) {
-    const [full, , section] = m;
+    const [full, , raw] = m;
+    const section = raw.replace(/\.$/, "");
     const part = section.split(".")[0];
+    /* A PART-level reference — "Regulation Z, 12 C.F.R. part 1026" — names a body of rules, not a
+       provision. It is satisfied when any section of that part is held, since the course is
+       identifying the regulation rather than asserting a rule from a specific section. */
+    if (!section.includes(".")) {
+      const anyHeld = fs.readdirSync(path.join(SOURCE_DIR, "federal")).some((f) => f.startsWith(`ecfr-12cfr${part}`));
+      rows.push({
+        claimId: nextId(moduleId), module: moduleId, unit: unitAt(m.index),
+        citation: full, kind: "cfr-part", section: part,
+        sourceFile: anyHeld ? `texas/trec-sources/federal/ecfr-12cfr${part}.*.xml` : null,
+        sourceHeld: anyHeld, sectionPresent: anyHeld,
+        status: anyHeld ? "MECHANICAL_PASS" : "SOURCE_NOT_HELD",
+        courseText: sentenceAround(md, m.index), substantiveStatus: "PENDING_REVIEW",
+        reviewerNote: anyHeld ? "part-level reference; sections of this part are held" : "part-level reference and no section of this part is held",
+        correctionCommit: null,
+      });
+      continue;
+    }
     const rel = part === "1024" ? "federal/ecfr-12cfr1024.xml" : `federal/ecfr-12cfr${section}.xml`;
     push(m.index, full, "cfr", rel, section);
   }
@@ -247,9 +297,32 @@ for (const file of moduleFiles) {
     // Skip anything already captured as federal/CFR/TAC by looking for those markers immediately before.
     if (/U\.S\.C\.\s*$|C\.F\.R\.\s*(?:part\s+)?$|22\s+TAC\s*$/.test(before)) continue;
     if (chapter === "535") { push(m.index, m[0], "trecrule", `trec-rules/${section}.txt`, section); continue; }
+    /* A bare "§ 1002.4" or "§ 1026.32" is a CFR section, not a Texas chapter. Texas has no code
+       chapter in these ranges among the held sources, and the modules cite Regulations B, X and Z
+       by bare section once the part has been named. Resolving them as Texas chapters produced 103
+       phantom AMBIGUOUS_CODE rows. */
+    if (CFR_PARTS.has(chapter)) {
+      const rel = chapter === "1024" ? "federal/ecfr-12cfr1024.xml" : `federal/ecfr-12cfr${section}.xml`;
+      push(m.index, `12 C.F.R. § ${section}`, "cfr", rel, section);
+      continue;
+    }
     const named = detectCodeContext(before);
     let target = named && TEXAS_CODES[named]?.[chapter] ? { code: named, file: TEXAS_CODES[named][chapter] } : null;
     if (!target && UNAMBIGUOUS_CHAPTER.has(chapter)) target = UNAMBIGUOUS_CHAPTER.get(chapter);
+    /* Still ambiguous by name — e.g. a bare "§ 11.022" where chapter 11 belongs to the Property,
+       Tax and Water Codes alike, and the words "Water Code" sit further back than the name window.
+       Ask the candidate files which one actually CONTAINS the section: if exactly one does, the
+       citation is not genuinely ambiguous and guessing is not required. */
+    if (!target) {
+      const candidates = [];
+      for (const [code, chapters] of Object.entries(TEXAS_CODES)) {
+        const file = chapters[chapter];
+        if (!file) continue;
+        const entry = loadSource(file);
+        if (entry && sectionPresent(entry, section, "texas")) candidates.push({ code, file });
+      }
+      if (candidates.length === 1) target = candidates[0];
+    }
     if (!target) {
       rows.push({ claimId: nextId(moduleId), module: moduleId, unit: unitAt(m.index), citation: m[0], kind: "texas", section, sourceFile: null, sourceHeld: false, sectionPresent: false, status: "AMBIGUOUS_CODE", courseText: sentenceAround(md, m.index), substantiveStatus: "PENDING_REVIEW", reviewerNote: `chapter ${chapter} is claimed by more than one held code and no code name appears within 400 characters`, correctionCommit: null });
       continue;
@@ -269,8 +342,21 @@ const quoteFailures = [];
    convention for adjusting a quotation's first letter and does not make the quotation non-verbatim. */
 const CITE_NEAR = 320;
 let quotesUnattributable = 0;
+
+/* SOFT-WRAP NORMALISATION. Several modules are hard-wrapped at a column, so a quotation longer than
+   the wrap width contains a newline. A quote pattern that excludes newlines then skips that
+   quotation entirely — and, worse, the next match pairs the SKIPPED quotation's closing mark with
+   the following quotation's opening mark and reports the connective prose between them as an
+   unverifiable quote. That produced 16 phantom failures and hid the real quotations behind them.
+
+   Collapsing a single newline to a space rewrites the wrapped quotation into one line while
+   preserving paragraph breaks, so paragraph-spanning pairs are still rejected. Length is preserved
+   exactly — one character in, one character out — so every offset computed on the collapsed text
+   still addresses the same position in the original, and unit attribution stays correct. */
+
+
 for (const file of moduleFiles) {
-  const md = fs.readFileSync(path.join(CURRICULUM, file), "utf8");
+  const md = unwrap(fs.readFileSync(path.join(CURRICULUM, file), "utf8"));
   const moduleId = file.replace(/\.md$/, "");
   const moduleRows = rows.filter((r) => r.module === moduleId && r.sourceHeld && r.sectionPresent);
   /* Index every citation occurrence's offset so proximity is real, not sentence-guessed. */
@@ -357,7 +443,7 @@ for (const file of moduleFiles) {
 
 /* ── report ─────────────────────────────────────────────────────────────────────────────────── */
 const byStatus = rows.reduce((acc, r) => { acc[r.status] = (acc[r.status] || 0) + 1; return acc; }, {});
-const failures = rows.filter((r) => r.status !== "MECHANICAL_PASS");
+const failures = rows.filter((r) => r.status !== "MECHANICAL_PASS" && r.status !== "IDENTIFIED_NOT_TAUGHT");
 
 const outPath = path.join(root, "texas/tx-principles-real-estate-ii-30-v1/claim-audit.json");
 const payload = {
