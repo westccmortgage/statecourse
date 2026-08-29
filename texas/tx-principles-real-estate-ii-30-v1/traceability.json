@@ -1,0 +1,1970 @@
+{
+  "generatedBy": "scripts/report-prins2-traceability.mjs",
+  "note": "Every assessment item mapped to its PRINS2-1 unit, the instructional screen a student is sent to, and the controlling sources recorded as read for that unit. Computed from the generated block maps, not maintained by hand.",
+  "totals": {
+    "items": 113,
+    "byKind": {
+      "quiz": 44,
+      "replacement": 44,
+      "scenario-task": 25
+    },
+    "itemsByTopic": {
+      "T01": 8,
+      "T02": 17,
+      "T03": 12,
+      "T04": 14,
+      "T05": 10,
+      "T06": 13,
+      "T07": 15,
+      "T08": 13,
+      "T09": 11
+    },
+    "unitsAssessed": 41,
+    "unitsTotal": 44,
+    "unitsUnassessed": [
+      "T02U2",
+      "T02U7",
+      "T03U4"
+    ],
+    "finalExamBankIncluded": false
+  },
+  "rows": [
+    {
+      "kind": "quiz",
+      "id": "T01Q1",
+      "topic": "T01",
+      "unit": "T01U1",
+      "unitTitle": "Calculators",
+      "module": "module-01.md",
+      "blockId": "t01u1",
+      "screenId": "t01u1-s1",
+      "remediationAnchor": "module-01.md#unit-calculators",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "replacement",
+      "id": "T01Q1R",
+      "topic": "T01",
+      "unit": "T01U1",
+      "unitTitle": "Calculators",
+      "module": "module-01.md",
+      "blockId": "t01u1",
+      "screenId": "t01u1-s1",
+      "remediationAnchor": "module-01.md#unit-calculators",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "quiz",
+      "id": "T01Q2",
+      "topic": "T01",
+      "unit": "T01U1",
+      "unitTitle": "Calculators",
+      "module": "module-01.md",
+      "blockId": "t01u1",
+      "screenId": "t01u1-s1",
+      "remediationAnchor": "module-01.md#unit-calculators",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "replacement",
+      "id": "T01Q2R",
+      "topic": "T01",
+      "unit": "T01U1",
+      "unitTitle": "Calculators",
+      "module": "module-01.md",
+      "blockId": "t01u1",
+      "screenId": "t01u1-s1",
+      "remediationAnchor": "module-01.md#unit-calculators",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "quiz",
+      "id": "T01Q3",
+      "topic": "T01",
+      "unit": "T01U2",
+      "unitTitle": "Fractions and Percentages",
+      "module": "module-01.md",
+      "blockId": "t01u2",
+      "screenId": "t01u2-s1",
+      "remediationAnchor": "module-01.md#unit-fractions-and-percentages",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "replacement",
+      "id": "T01Q3R",
+      "topic": "T01",
+      "unit": "T01U2",
+      "unitTitle": "Fractions and Percentages",
+      "module": "module-01.md",
+      "blockId": "t01u2",
+      "screenId": "t01u2-s1",
+      "remediationAnchor": "module-01.md#unit-fractions-and-percentages",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "quiz",
+      "id": "T01Q4",
+      "topic": "T01",
+      "unit": "T01U2",
+      "unitTitle": "Fractions and Percentages",
+      "module": "module-01.md",
+      "blockId": "t01u2",
+      "screenId": "t01u2-s1",
+      "remediationAnchor": "module-01.md#unit-fractions-and-percentages",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "replacement",
+      "id": "T01Q4R",
+      "topic": "T01",
+      "unit": "T01U2",
+      "unitTitle": "Fractions and Percentages",
+      "module": "module-01.md",
+      "blockId": "t01u2",
+      "screenId": "t01u2-s1",
+      "remediationAnchor": "module-01.md#unit-fractions-and-percentages",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "quiz",
+      "id": "T02Q1",
+      "topic": "T02",
+      "unit": "T02U1",
+      "unitTitle": "Sources of Real Estate Financing",
+      "module": "module-02.md",
+      "blockId": "t02u1",
+      "screenId": "t02u1-s1",
+      "remediationAnchor": "module-02.md#unit-sources-of-real-estate-financing",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Finance Code ch. 343",
+        "12 U.S.C. § 2607",
+        "12 C.F.R. part 1024 (Regulation X)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T02Q1R",
+      "topic": "T02",
+      "unit": "T02U1",
+      "unitTitle": "Sources of Real Estate Financing",
+      "module": "module-02.md",
+      "blockId": "t02u1",
+      "screenId": "t02u1-s1",
+      "remediationAnchor": "module-02.md#unit-sources-of-real-estate-financing",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Finance Code ch. 343",
+        "12 U.S.C. § 2607",
+        "12 C.F.R. part 1024 (Regulation X)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T02Q2",
+      "topic": "T02",
+      "unit": "T02U3",
+      "unitTitle": "Application for Credit",
+      "module": "module-02.md",
+      "blockId": "t02u3",
+      "screenId": "t02u3-s1",
+      "remediationAnchor": "module-02.md#unit-application-for-credit",
+      "controllingSources": [
+        "Tex. Finance Code ch. 343",
+        "15 U.S.C. § 1691",
+        "12 C.F.R. part 1024 (Regulation X)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T02Q2R",
+      "topic": "T02",
+      "unit": "T02U3",
+      "unitTitle": "Application for Credit",
+      "module": "module-02.md",
+      "blockId": "t02u3",
+      "screenId": "t02u3-s1",
+      "remediationAnchor": "module-02.md#unit-application-for-credit",
+      "controllingSources": [
+        "Tex. Finance Code ch. 343",
+        "15 U.S.C. § 1691",
+        "12 C.F.R. part 1024 (Regulation X)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T02Q3",
+      "topic": "T02",
+      "unit": "T02U4",
+      "unitTitle": "Payment Plans",
+      "module": "module-02.md",
+      "blockId": "t02u4",
+      "screenId": "t02u4-s1",
+      "remediationAnchor": "module-02.md#unit-payment-plans",
+      "controllingSources": [
+        "Tex. Finance Code ch. 343"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T02Q3R",
+      "topic": "T02",
+      "unit": "T02U4",
+      "unitTitle": "Payment Plans",
+      "module": "module-02.md",
+      "blockId": "t02u4",
+      "screenId": "t02u4-s1",
+      "remediationAnchor": "module-02.md#unit-payment-plans",
+      "controllingSources": [
+        "Tex. Finance Code ch. 343"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T02Q4",
+      "topic": "T02",
+      "unit": "T02U5",
+      "unitTitle": "Conventional, FHA & VA Loans",
+      "module": "module-02.md",
+      "blockId": "t02u5",
+      "screenId": "t02u5-s1",
+      "remediationAnchor": "module-02.md#unit-conventional-fha--va-loans",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Finance Code ch. 343",
+        "12 U.S.C. § 2601",
+        "12 U.S.C. § 2607"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T02Q4R",
+      "topic": "T02",
+      "unit": "T02U5",
+      "unitTitle": "Conventional, FHA & VA Loans",
+      "module": "module-02.md",
+      "blockId": "t02u5",
+      "screenId": "t02u5-s1",
+      "remediationAnchor": "module-02.md#unit-conventional-fha--va-loans",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Finance Code ch. 343",
+        "12 U.S.C. § 2601",
+        "12 U.S.C. § 2607"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T02Q5",
+      "topic": "T02",
+      "unit": "T02U8",
+      "unitTitle": "Other Financing Techniques",
+      "module": "module-02.md",
+      "blockId": "t02u8",
+      "screenId": "t02u8-s1",
+      "remediationAnchor": "module-02.md#unit-other-financing-techniques",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 5"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T02Q5R",
+      "topic": "T02",
+      "unit": "T02U8",
+      "unitTitle": "Other Financing Techniques",
+      "module": "module-02.md",
+      "blockId": "t02u8",
+      "screenId": "t02u8-s1",
+      "remediationAnchor": "module-02.md#unit-other-financing-techniques",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 5"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T02Q6",
+      "topic": "T02",
+      "unit": "T02U9",
+      "unitTitle": "Financing Legislation",
+      "module": "module-02.md",
+      "blockId": "t02u9",
+      "screenId": "t02u9-s1",
+      "remediationAnchor": "module-02.md#unit-financing-legislation",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Const. art. XVI",
+        "15 U.S.C. § 1601",
+        "15 U.S.C. § 1691",
+        "12 U.S.C. § 2601",
+        "12 U.S.C. § 2603",
+        "12 U.S.C. § 2607",
+        "12 C.F.R. part 1024 (Regulation X)",
+        "12 C.F.R. § 1026.2 (Regulation Z)",
+        "12 C.F.R. § 1026.32 (Regulation Z)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T02Q6R",
+      "topic": "T02",
+      "unit": "T02U9",
+      "unitTitle": "Financing Legislation",
+      "module": "module-02.md",
+      "blockId": "t02u9",
+      "screenId": "t02u9-s1",
+      "remediationAnchor": "module-02.md#unit-financing-legislation",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Const. art. XVI",
+        "15 U.S.C. § 1601",
+        "15 U.S.C. § 1691",
+        "12 U.S.C. § 2601",
+        "12 U.S.C. § 2603",
+        "12 U.S.C. § 2607",
+        "12 C.F.R. part 1024 (Regulation X)",
+        "12 C.F.R. § 1026.2 (Regulation Z)",
+        "12 C.F.R. § 1026.32 (Regulation Z)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T03Q1",
+      "topic": "T03",
+      "unit": "T03U1",
+      "unitTitle": "Requirements to Become an Appraiser",
+      "module": "module-03.md",
+      "blockId": "t03u1",
+      "screenId": "t03u1-s1",
+      "remediationAnchor": "module-03.md#unit-requirements-to-become-an-appraiser",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T03Q1R",
+      "topic": "T03",
+      "unit": "T03U1",
+      "unitTitle": "Requirements to Become an Appraiser",
+      "module": "module-03.md",
+      "blockId": "t03u1",
+      "screenId": "t03u1-s1",
+      "remediationAnchor": "module-03.md#unit-requirements-to-become-an-appraiser",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T03Q2",
+      "topic": "T03",
+      "unit": "T03U2",
+      "unitTitle": "Key Appraisal Terms",
+      "module": "module-03.md",
+      "blockId": "t03u2",
+      "screenId": "t03u2-s1",
+      "remediationAnchor": "module-03.md#unit-key-appraisal-terms",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T03Q2R",
+      "topic": "T03",
+      "unit": "T03U2",
+      "unitTitle": "Key Appraisal Terms",
+      "module": "module-03.md",
+      "blockId": "t03u2",
+      "screenId": "t03u2-s1",
+      "remediationAnchor": "module-03.md#unit-key-appraisal-terms",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T03Q3",
+      "topic": "T03",
+      "unit": "T03U3",
+      "unitTitle": "Appraising & The Appraisal Process",
+      "module": "module-03.md",
+      "blockId": "t03u3",
+      "screenId": "t03u3-s1",
+      "remediationAnchor": "module-03.md#unit-appraising--the-appraisal-process",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T03Q3R",
+      "topic": "T03",
+      "unit": "T03U3",
+      "unitTitle": "Appraising & The Appraisal Process",
+      "module": "module-03.md",
+      "blockId": "t03u3",
+      "screenId": "t03u3-s1",
+      "remediationAnchor": "module-03.md#unit-appraising--the-appraisal-process",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T03Q4",
+      "topic": "T03",
+      "unit": "T03U5",
+      "unitTitle": "Three Approaches to Value",
+      "module": "module-03.md",
+      "blockId": "t03u5",
+      "screenId": "t03u5-s1",
+      "remediationAnchor": "module-03.md#unit-three-approaches-to-value",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "replacement",
+      "id": "T03Q4R",
+      "topic": "T03",
+      "unit": "T03U5",
+      "unitTitle": "Three Approaches to Value",
+      "module": "module-03.md",
+      "blockId": "t03u5",
+      "screenId": "t03u5-s1",
+      "remediationAnchor": "module-03.md#unit-three-approaches-to-value",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "quiz",
+      "id": "T03Q5",
+      "topic": "T03",
+      "unit": "T03U6",
+      "unitTitle": "Pricing a Property",
+      "module": "module-03.md",
+      "blockId": "t03u6",
+      "screenId": "t03u6-s1",
+      "remediationAnchor": "module-03.md#unit-pricing-a-property",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T03Q5R",
+      "topic": "T03",
+      "unit": "T03U6",
+      "unitTitle": "Pricing a Property",
+      "module": "module-03.md",
+      "blockId": "t03u6",
+      "screenId": "t03u6-s1",
+      "remediationAnchor": "module-03.md#unit-pricing-a-property",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T04Q1",
+      "topic": "T04",
+      "unit": "T04U1",
+      "unitTitle": "Leasehold Estates",
+      "module": "module-04.md",
+      "blockId": "t04u1",
+      "screenId": "t04u1-s1",
+      "remediationAnchor": "module-04.md#unit-leasehold-estates",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92",
+        "Tex. Business and Commerce Code ch. 26"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T04Q1R",
+      "topic": "T04",
+      "unit": "T04U1",
+      "unitTitle": "Leasehold Estates",
+      "module": "module-04.md",
+      "blockId": "t04u1",
+      "screenId": "t04u1-s1",
+      "remediationAnchor": "module-04.md#unit-leasehold-estates",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92",
+        "Tex. Business and Commerce Code ch. 26"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T04Q2",
+      "topic": "T04",
+      "unit": "T04U2",
+      "unitTitle": "Leasing Real Estate",
+      "module": "module-04.md",
+      "blockId": "t04u2",
+      "screenId": "t04u2-s1",
+      "remediationAnchor": "module-04.md#unit-leasing-real-estate",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T04Q2R",
+      "topic": "T04",
+      "unit": "T04U2",
+      "unitTitle": "Leasing Real Estate",
+      "module": "module-04.md",
+      "blockId": "t04u2",
+      "screenId": "t04u2-s1",
+      "remediationAnchor": "module-04.md#unit-leasing-real-estate",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T04Q3",
+      "topic": "T04",
+      "unit": "T04U3",
+      "unitTitle": "Common Lease Provisions",
+      "module": "module-04.md",
+      "blockId": "t04u3",
+      "screenId": "t04u3-s1",
+      "remediationAnchor": "module-04.md#unit-common-lease-provisions",
+      "controllingSources": [
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92",
+        "Tex. Business and Commerce Code ch. 26"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T04Q3R",
+      "topic": "T04",
+      "unit": "T04U3",
+      "unitTitle": "Common Lease Provisions",
+      "module": "module-04.md",
+      "blockId": "t04u3",
+      "screenId": "t04u3-s1",
+      "remediationAnchor": "module-04.md#unit-common-lease-provisions",
+      "controllingSources": [
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92",
+        "Tex. Business and Commerce Code ch. 26"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T04Q4",
+      "topic": "T04",
+      "unit": "T04U4",
+      "unitTitle": "Texas Landlord & Tenant Statutes",
+      "module": "module-04.md",
+      "blockId": "t04u4",
+      "screenId": "t04u4-s1",
+      "remediationAnchor": "module-04.md#unit-texas-landlord--tenant-statutes",
+      "controllingSources": [
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T04Q4R",
+      "topic": "T04",
+      "unit": "T04U4",
+      "unitTitle": "Texas Landlord & Tenant Statutes",
+      "module": "module-04.md",
+      "blockId": "t04u4",
+      "screenId": "t04u4-s1",
+      "remediationAnchor": "module-04.md#unit-texas-landlord--tenant-statutes",
+      "controllingSources": [
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T04Q5",
+      "topic": "T04",
+      "unit": "T04U5",
+      "unitTitle": "Types of Leases",
+      "module": "module-04.md",
+      "blockId": "t04u5",
+      "screenId": "t04u5-s1",
+      "remediationAnchor": "module-04.md#unit-types-of-leases",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T04Q5R",
+      "topic": "T04",
+      "unit": "T04U5",
+      "unitTitle": "Types of Leases",
+      "module": "module-04.md",
+      "blockId": "t04u5",
+      "screenId": "t04u5-s1",
+      "remediationAnchor": "module-04.md#unit-types-of-leases",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T05Q1",
+      "topic": "T05",
+      "unit": "T05U1",
+      "unitTitle": "Land-Use Controls",
+      "module": "module-05.md",
+      "blockId": "t05u1",
+      "screenId": "t05u1-s1",
+      "remediationAnchor": "module-05.md#unit-land-use-controls",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Property Code ch. 202",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T05Q1R",
+      "topic": "T05",
+      "unit": "T05U1",
+      "unitTitle": "Land-Use Controls",
+      "module": "module-05.md",
+      "blockId": "t05u1",
+      "screenId": "t05u1-s1",
+      "remediationAnchor": "module-05.md#unit-land-use-controls",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Property Code ch. 202",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T05Q2",
+      "topic": "T05",
+      "unit": "T05U1",
+      "unitTitle": "Land-Use Controls",
+      "module": "module-05.md",
+      "blockId": "t05u1",
+      "screenId": "t05u1-s1",
+      "remediationAnchor": "module-05.md#unit-land-use-controls",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Property Code ch. 202",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T05Q2R",
+      "topic": "T05",
+      "unit": "T05U1",
+      "unitTitle": "Land-Use Controls",
+      "module": "module-05.md",
+      "blockId": "t05u1",
+      "screenId": "t05u1-s1",
+      "remediationAnchor": "module-05.md#unit-land-use-controls",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Property Code ch. 202",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T05Q3",
+      "topic": "T05",
+      "unit": "T05U2",
+      "unitTitle": "Public Ownership",
+      "module": "module-05.md",
+      "blockId": "t05u2",
+      "screenId": "t05u2-s1",
+      "remediationAnchor": "module-05.md#unit-public-ownership",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212",
+        "Tex. Natural Resources Code ch. 21",
+        "Tex. Water Code ch. 11"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T05Q3R",
+      "topic": "T05",
+      "unit": "T05U2",
+      "unitTitle": "Public Ownership",
+      "module": "module-05.md",
+      "blockId": "t05u2",
+      "screenId": "t05u2-s1",
+      "remediationAnchor": "module-05.md#unit-public-ownership",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212",
+        "Tex. Natural Resources Code ch. 21",
+        "Tex. Water Code ch. 11"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T05Q4",
+      "topic": "T05",
+      "unit": "T05U3",
+      "unitTitle": "Environmental Protection Legislation",
+      "module": "module-05.md",
+      "blockId": "t05u3",
+      "screenId": "t05u3-s1",
+      "remediationAnchor": "module-05.md#unit-environmental-protection-legislation",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 5",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Water Code ch. 11",
+        "42 U.S.C. § 4852d",
+        "42 U.S.C. § 9601",
+        "42 U.S.C. § 4321",
+        "16 U.S.C. § 1531"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T05Q4R",
+      "topic": "T05",
+      "unit": "T05U3",
+      "unitTitle": "Environmental Protection Legislation",
+      "module": "module-05.md",
+      "blockId": "t05u3",
+      "screenId": "t05u3-s1",
+      "remediationAnchor": "module-05.md#unit-environmental-protection-legislation",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 5",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Water Code ch. 11",
+        "42 U.S.C. § 4852d",
+        "42 U.S.C. § 9601",
+        "42 U.S.C. § 4321",
+        "16 U.S.C. § 1531"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T06Q1",
+      "topic": "T06",
+      "unit": "T06U1",
+      "unitTitle": "Basic Provisions of the Texas Real Estate License Act",
+      "module": "module-06.md",
+      "blockId": "t06u1",
+      "screenId": "t06u1-s1",
+      "remediationAnchor": "module-06.md#unit-basic-provisions-of-the-texas-real-estate-license-act",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T06Q1R",
+      "topic": "T06",
+      "unit": "T06U1",
+      "unitTitle": "Basic Provisions of the Texas Real Estate License Act",
+      "module": "module-06.md",
+      "blockId": "t06u1",
+      "screenId": "t06u1-s1",
+      "remediationAnchor": "module-06.md#unit-basic-provisions-of-the-texas-real-estate-license-act",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T06Q2",
+      "topic": "T06",
+      "unit": "T06U2",
+      "unitTitle": "Subchapter A - General Provisions",
+      "module": "module-06.md",
+      "blockId": "t06u2",
+      "screenId": "t06u2-s1",
+      "remediationAnchor": "module-06.md#unit-subchapter-a---general-provisions",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "22 TAC §535.55",
+        "22 TAC §535.64"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T06Q2R",
+      "topic": "T06",
+      "unit": "T06U2",
+      "unitTitle": "Subchapter A - General Provisions",
+      "module": "module-06.md",
+      "blockId": "t06u2",
+      "screenId": "t06u2-s1",
+      "remediationAnchor": "module-06.md#unit-subchapter-a---general-provisions",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "22 TAC §535.55",
+        "22 TAC §535.64"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T06Q3",
+      "topic": "T06",
+      "unit": "T06U3",
+      "unitTitle": "Professional Organizations",
+      "module": "module-06.md",
+      "blockId": "t06u3",
+      "screenId": "t06u3-s1",
+      "remediationAnchor": "module-06.md#unit-professional-organizations",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T06Q3R",
+      "topic": "T06",
+      "unit": "T06U3",
+      "unitTitle": "Professional Organizations",
+      "module": "module-06.md",
+      "blockId": "t06u3",
+      "screenId": "t06u3-s1",
+      "remediationAnchor": "module-06.md#unit-professional-organizations",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T06Q4",
+      "topic": "T06",
+      "unit": "T06U4",
+      "unitTitle": "Real Estate - The Business of Value",
+      "module": "module-06.md",
+      "blockId": "t06u4",
+      "screenId": "t06u4-s1",
+      "remediationAnchor": "module-06.md#unit-real-estate---the-business-of-value",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T06Q4R",
+      "topic": "T06",
+      "unit": "T06U4",
+      "unitTitle": "Real Estate - The Business of Value",
+      "module": "module-06.md",
+      "blockId": "t06u4",
+      "screenId": "t06u4-s1",
+      "remediationAnchor": "module-06.md#unit-real-estate---the-business-of-value",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T06Q5",
+      "topic": "T06",
+      "unit": "T06U5",
+      "unitTitle": "The Purpose of Licensing Laws - What a License Holder Can and Cannot Do",
+      "module": "module-06.md",
+      "blockId": "t06u5",
+      "screenId": "t06u5-s1",
+      "remediationAnchor": "module-06.md#unit-the-purpose-of-licensing-laws---what-a-license-holder-can-and-cannot-do",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103",
+        "22 TAC §535.55"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T06Q5R",
+      "topic": "T06",
+      "unit": "T06U5",
+      "unitTitle": "The Purpose of Licensing Laws - What a License Holder Can and Cannot Do",
+      "module": "module-06.md",
+      "blockId": "t06u5",
+      "screenId": "t06u5-s1",
+      "remediationAnchor": "module-06.md#unit-the-purpose-of-licensing-laws---what-a-license-holder-can-and-cannot-do",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103",
+        "22 TAC §535.55"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T06Q6",
+      "topic": "T06",
+      "unit": "T06U6",
+      "unitTitle": "The Texas Real Estate Commission & Licensing Requirements",
+      "module": "module-06.md",
+      "blockId": "t06u6",
+      "screenId": "t06u6-s1",
+      "remediationAnchor": "module-06.md#unit-the-texas-real-estate-commission--licensing-requirements",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "22 TAC §535.55"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T06Q6R",
+      "topic": "T06",
+      "unit": "T06U6",
+      "unitTitle": "The Texas Real Estate Commission & Licensing Requirements",
+      "module": "module-06.md",
+      "blockId": "t06u6",
+      "screenId": "t06u6-s1",
+      "remediationAnchor": "module-06.md#unit-the-texas-real-estate-commission--licensing-requirements",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "22 TAC §535.55"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T07Q1",
+      "topic": "T07",
+      "unit": "T07U1",
+      "unitTitle": "The Law of Agency",
+      "module": "module-07.md",
+      "blockId": "t07u1",
+      "screenId": "t07u1-s1",
+      "remediationAnchor": "module-07.md#unit-the-law-of-agency",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T07Q1R",
+      "topic": "T07",
+      "unit": "T07U1",
+      "unitTitle": "The Law of Agency",
+      "module": "module-07.md",
+      "blockId": "t07u1",
+      "screenId": "t07u1-s1",
+      "remediationAnchor": "module-07.md#unit-the-law-of-agency",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T07Q2",
+      "topic": "T07",
+      "unit": "T07U2",
+      "unitTitle": "Agency Positions and Disclosure",
+      "module": "module-07.md",
+      "blockId": "t07u2",
+      "screenId": "t07u2-s1",
+      "remediationAnchor": "module-07.md#unit-agency-positions-and-disclosure",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "TREC, \"What Changes in 2026 About Buyer/Tenant Representation in Texas\""
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T07Q2R",
+      "topic": "T07",
+      "unit": "T07U2",
+      "unitTitle": "Agency Positions and Disclosure",
+      "module": "module-07.md",
+      "blockId": "t07u2",
+      "screenId": "t07u2-s1",
+      "remediationAnchor": "module-07.md#unit-agency-positions-and-disclosure",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "TREC, \"What Changes in 2026 About Buyer/Tenant Representation in Texas\""
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T07Q3",
+      "topic": "T07",
+      "unit": "T07U3",
+      "unitTitle": "Brokerage & Nature of the Brokerage Business",
+      "module": "module-07.md",
+      "blockId": "t07u3",
+      "screenId": "t07u3-s1",
+      "remediationAnchor": "module-07.md#unit-brokerage--nature-of-the-brokerage-business",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "TREC, \"What Changes in 2026 About Buyer/Tenant Representation in Texas\""
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T07Q3R",
+      "topic": "T07",
+      "unit": "T07U3",
+      "unitTitle": "Brokerage & Nature of the Brokerage Business",
+      "module": "module-07.md",
+      "blockId": "t07u3",
+      "screenId": "t07u3-s1",
+      "remediationAnchor": "module-07.md#unit-brokerage--nature-of-the-brokerage-business",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "TREC, \"What Changes in 2026 About Buyer/Tenant Representation in Texas\""
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T07Q4",
+      "topic": "T07",
+      "unit": "T07U4",
+      "unitTitle": "Fiduciary Duties",
+      "module": "module-07.md",
+      "blockId": "t07u4",
+      "screenId": "t07u4-s1",
+      "remediationAnchor": "module-07.md#unit-fiduciary-duties",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T07Q4R",
+      "topic": "T07",
+      "unit": "T07U4",
+      "unitTitle": "Fiduciary Duties",
+      "module": "module-07.md",
+      "blockId": "t07u4",
+      "screenId": "t07u4-s1",
+      "remediationAnchor": "module-07.md#unit-fiduciary-duties",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T07Q5",
+      "topic": "T07",
+      "unit": "T07U5",
+      "unitTitle": "Texas Deceptive Trade Practices - Consumer Protection Act",
+      "module": "module-07.md",
+      "blockId": "t07u5",
+      "screenId": "t07u5-s1",
+      "remediationAnchor": "module-07.md#unit-texas-deceptive-trade-practices---consumer-protection-act",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Business and Commerce Code ch. 17"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T07Q5R",
+      "topic": "T07",
+      "unit": "T07U5",
+      "unitTitle": "Texas Deceptive Trade Practices - Consumer Protection Act",
+      "module": "module-07.md",
+      "blockId": "t07u5",
+      "screenId": "t07u5-s1",
+      "remediationAnchor": "module-07.md#unit-texas-deceptive-trade-practices---consumer-protection-act",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Business and Commerce Code ch. 17"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T08Q1",
+      "topic": "T08",
+      "unit": "T08U1",
+      "unitTitle": "Equal Opportunity in Housing",
+      "module": "module-08.md",
+      "blockId": "t08u1",
+      "screenId": "t08u1-s1",
+      "remediationAnchor": "module-08.md#unit-equal-opportunity-in-housing",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3601",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3603",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3607",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T08Q1R",
+      "topic": "T08",
+      "unit": "T08U1",
+      "unitTitle": "Equal Opportunity in Housing",
+      "module": "module-08.md",
+      "blockId": "t08u1",
+      "screenId": "t08u1-s1",
+      "remediationAnchor": "module-08.md#unit-equal-opportunity-in-housing",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3601",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3603",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3607",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T08Q2",
+      "topic": "T08",
+      "unit": "T08U2",
+      "unitTitle": "Texas Fair Housing Laws",
+      "module": "module-08.md",
+      "blockId": "t08u2",
+      "screenId": "t08u2-s1",
+      "remediationAnchor": "module-08.md#unit-texas-fair-housing-laws",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3603",
+        "42 U.S.C. § 3605",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3607",
+        "42 U.S.C. § 3610",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T08Q2R",
+      "topic": "T08",
+      "unit": "T08U2",
+      "unitTitle": "Texas Fair Housing Laws",
+      "module": "module-08.md",
+      "blockId": "t08u2",
+      "screenId": "t08u2-s1",
+      "remediationAnchor": "module-08.md#unit-texas-fair-housing-laws",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3603",
+        "42 U.S.C. § 3605",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3607",
+        "42 U.S.C. § 3610",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T08Q3",
+      "topic": "T08",
+      "unit": "T08U3",
+      "unitTitle": "Housing Discrimination",
+      "module": "module-08.md",
+      "blockId": "t08u3",
+      "screenId": "t08u3-s1",
+      "remediationAnchor": "module-08.md#unit-housing-discrimination",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3605",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T08Q3R",
+      "topic": "T08",
+      "unit": "T08U3",
+      "unitTitle": "Housing Discrimination",
+      "module": "module-08.md",
+      "blockId": "t08u3",
+      "screenId": "t08u3-s1",
+      "remediationAnchor": "module-08.md#unit-housing-discrimination",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3605",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T08Q4",
+      "topic": "T08",
+      "unit": "T08U4",
+      "unitTitle": "Housing Credit Discrimination",
+      "module": "module-08.md",
+      "blockId": "t08u4",
+      "screenId": "t08u4-s1",
+      "remediationAnchor": "module-08.md#unit-housing-credit-discrimination",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 301",
+        "15 U.S.C. § 1691",
+        "15 U.S.C. § 1691a",
+        "15 U.S.C. § 1691c",
+        "12 C.F.R. § 1002.2 (Regulation B)",
+        "12 C.F.R. § 1002.4 (Regulation B)",
+        "12 C.F.R. § 1002.5 (Regulation B)",
+        "12 C.F.R. § 1002.9 (Regulation B)",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3605"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T08Q4R",
+      "topic": "T08",
+      "unit": "T08U4",
+      "unitTitle": "Housing Credit Discrimination",
+      "module": "module-08.md",
+      "blockId": "t08u4",
+      "screenId": "t08u4-s1",
+      "remediationAnchor": "module-08.md#unit-housing-credit-discrimination",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 301",
+        "15 U.S.C. § 1691",
+        "15 U.S.C. § 1691a",
+        "15 U.S.C. § 1691c",
+        "12 C.F.R. § 1002.2 (Regulation B)",
+        "12 C.F.R. § 1002.4 (Regulation B)",
+        "12 C.F.R. § 1002.5 (Regulation B)",
+        "12 C.F.R. § 1002.9 (Regulation B)",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3605"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T08Q5",
+      "topic": "T08",
+      "unit": "T08U5",
+      "unitTitle": "Community Reinvestment",
+      "module": "module-08.md",
+      "blockId": "t08u5",
+      "screenId": "t08u5-s1",
+      "remediationAnchor": "module-08.md#unit-community-reinvestment",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "12 U.S.C. § 2901",
+        "12 U.S.C. § 2902",
+        "12 U.S.C. § 2903",
+        "12 U.S.C. § 2904",
+        "12 U.S.C. § 2905",
+        "12 U.S.C. § 2906",
+        "42 U.S.C. § 3605"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T08Q5R",
+      "topic": "T08",
+      "unit": "T08U5",
+      "unitTitle": "Community Reinvestment",
+      "module": "module-08.md",
+      "blockId": "t08u5",
+      "screenId": "t08u5-s1",
+      "remediationAnchor": "module-08.md#unit-community-reinvestment",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "12 U.S.C. § 2901",
+        "12 U.S.C. § 2902",
+        "12 U.S.C. § 2903",
+        "12 U.S.C. § 2904",
+        "12 U.S.C. § 2905",
+        "12 U.S.C. § 2906",
+        "42 U.S.C. § 3605"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T09Q1",
+      "topic": "T09",
+      "unit": "T09U1",
+      "unitTitle": "Property Management",
+      "module": "module-09.md",
+      "blockId": "t09u1",
+      "screenId": "t09u1-s1",
+      "remediationAnchor": "module-09.md#unit-property-management",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T09Q1R",
+      "topic": "T09",
+      "unit": "T09U1",
+      "unitTitle": "Property Management",
+      "module": "module-09.md",
+      "blockId": "t09u1",
+      "screenId": "t09u1-s1",
+      "remediationAnchor": "module-09.md#unit-property-management",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T09Q2",
+      "topic": "T09",
+      "unit": "T09U1",
+      "unitTitle": "Property Management",
+      "module": "module-09.md",
+      "blockId": "t09u1",
+      "screenId": "t09u1-s1",
+      "remediationAnchor": "module-09.md#unit-property-management",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T09Q2R",
+      "topic": "T09",
+      "unit": "T09U1",
+      "unitTitle": "Property Management",
+      "module": "module-09.md",
+      "blockId": "t09u1",
+      "screenId": "t09u1-s1",
+      "remediationAnchor": "module-09.md#unit-property-management",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T09Q3",
+      "topic": "T09",
+      "unit": "T09U2",
+      "unitTitle": "Management Considerations",
+      "module": "module-09.md",
+      "blockId": "t09u2",
+      "screenId": "t09u2-s1",
+      "remediationAnchor": "module-09.md#unit-management-considerations",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92",
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3604"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T09Q3R",
+      "topic": "T09",
+      "unit": "T09U2",
+      "unitTitle": "Management Considerations",
+      "module": "module-09.md",
+      "blockId": "t09u2",
+      "screenId": "t09u2-s1",
+      "remediationAnchor": "module-09.md#unit-management-considerations",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92",
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3604"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "quiz",
+      "id": "T09Q4",
+      "topic": "T09",
+      "unit": "T09U3",
+      "unitTitle": "The Management Profession",
+      "module": "module-09.md",
+      "blockId": "t09u3",
+      "screenId": "t09u3-s1",
+      "remediationAnchor": "module-09.md#unit-the-management-profession",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "replacement",
+      "id": "T09Q4R",
+      "topic": "T09",
+      "unit": "T09U3",
+      "unitTitle": "The Management Profession",
+      "module": "module-09.md",
+      "blockId": "t09u3",
+      "screenId": "t09u3-s1",
+      "remediationAnchor": "module-09.md#unit-the-management-profession",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC1-T1",
+      "topic": "T03",
+      "unit": "T03U5",
+      "unitTitle": "Three Approaches to Value",
+      "module": "module-03.md",
+      "blockId": "t03u5",
+      "screenId": "t03u5-s1",
+      "remediationAnchor": "module-03.md#unit-three-approaches-to-value",
+      "controllingSources": [],
+      "excused": true
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC1-T2",
+      "topic": "T03",
+      "unit": "T03U6",
+      "unitTitle": "Pricing a Property",
+      "module": "module-03.md",
+      "blockId": "t03u6",
+      "screenId": "t03u6-s1",
+      "remediationAnchor": "module-03.md#unit-pricing-a-property",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC1-T3",
+      "topic": "T02",
+      "unit": "T02U6",
+      "unitTitle": "Texas Loan Programs",
+      "module": "module-02.md",
+      "blockId": "t02u6",
+      "screenId": "t02u6-s1",
+      "remediationAnchor": "module-02.md#unit-texas-loan-programs",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Finance Code ch. 343",
+        "Tex. Const. art. XVI",
+        "12 C.F.R. § 1026.2 (Regulation Z)",
+        "12 C.F.R. § 1026.32 (Regulation Z)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC1-T4",
+      "topic": "T02",
+      "unit": "T02U6",
+      "unitTitle": "Texas Loan Programs",
+      "module": "module-02.md",
+      "blockId": "t02u6",
+      "screenId": "t02u6-s1",
+      "remediationAnchor": "module-02.md#unit-texas-loan-programs",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Finance Code ch. 343",
+        "Tex. Const. art. XVI",
+        "12 C.F.R. § 1026.2 (Regulation Z)",
+        "12 C.F.R. § 1026.32 (Regulation Z)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC1-T5",
+      "topic": "T02",
+      "unit": "T02U6",
+      "unitTitle": "Texas Loan Programs",
+      "module": "module-02.md",
+      "blockId": "t02u6",
+      "screenId": "t02u6-s1",
+      "remediationAnchor": "module-02.md#unit-texas-loan-programs",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Finance Code ch. 343",
+        "Tex. Const. art. XVI",
+        "12 C.F.R. § 1026.2 (Regulation Z)",
+        "12 C.F.R. § 1026.32 (Regulation Z)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC1-T6",
+      "topic": "T02",
+      "unit": "T02U4",
+      "unitTitle": "Payment Plans",
+      "module": "module-02.md",
+      "blockId": "t02u4",
+      "screenId": "t02u4-s1",
+      "remediationAnchor": "module-02.md#unit-payment-plans",
+      "controllingSources": [
+        "Tex. Finance Code ch. 343"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC1-T7",
+      "topic": "T02",
+      "unit": "T02U6",
+      "unitTitle": "Texas Loan Programs",
+      "module": "module-02.md",
+      "blockId": "t02u6",
+      "screenId": "t02u6-s1",
+      "remediationAnchor": "module-02.md#unit-texas-loan-programs",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Finance Code ch. 343",
+        "Tex. Const. art. XVI",
+        "12 C.F.R. § 1026.2 (Regulation Z)",
+        "12 C.F.R. § 1026.32 (Regulation Z)",
+        "12 C.F.R. § 1026.33 (Regulation Z)"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC2-T1",
+      "topic": "T04",
+      "unit": "T04U4",
+      "unitTitle": "Texas Landlord & Tenant Statutes",
+      "module": "module-04.md",
+      "blockId": "t04u4",
+      "screenId": "t04u4-s1",
+      "remediationAnchor": "module-04.md#unit-texas-landlord--tenant-statutes",
+      "controllingSources": [
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC2-T2",
+      "topic": "T04",
+      "unit": "T04U4",
+      "unitTitle": "Texas Landlord & Tenant Statutes",
+      "module": "module-04.md",
+      "blockId": "t04u4",
+      "screenId": "t04u4-s1",
+      "remediationAnchor": "module-04.md#unit-texas-landlord--tenant-statutes",
+      "controllingSources": [
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC2-T3",
+      "topic": "T04",
+      "unit": "T04U3",
+      "unitTitle": "Common Lease Provisions",
+      "module": "module-04.md",
+      "blockId": "t04u3",
+      "screenId": "t04u3-s1",
+      "remediationAnchor": "module-04.md#unit-common-lease-provisions",
+      "controllingSources": [
+        "Tex. Property Code ch. 91",
+        "Tex. Property Code ch. 92",
+        "Tex. Business and Commerce Code ch. 26"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC2-T4",
+      "topic": "T04",
+      "unit": "T04U5",
+      "unitTitle": "Types of Leases",
+      "module": "module-04.md",
+      "blockId": "t04u5",
+      "screenId": "t04u5-s1",
+      "remediationAnchor": "module-04.md#unit-types-of-leases",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC2-T5",
+      "topic": "T05",
+      "unit": "T05U1",
+      "unitTitle": "Land-Use Controls",
+      "module": "module-05.md",
+      "blockId": "t05u1",
+      "screenId": "t05u1-s1",
+      "remediationAnchor": "module-05.md#unit-land-use-controls",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Property Code ch. 202",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC2-T6",
+      "topic": "T05",
+      "unit": "T05U1",
+      "unitTitle": "Land-Use Controls",
+      "module": "module-05.md",
+      "blockId": "t05u1",
+      "screenId": "t05u1-s1",
+      "remediationAnchor": "module-05.md#unit-land-use-controls",
+      "controllingSources": [
+        "Tex. Property Code ch. 5",
+        "Tex. Property Code ch. 202",
+        "Tex. Local Government Code ch. 211",
+        "Tex. Local Government Code ch. 212"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC3-T1",
+      "topic": "T07",
+      "unit": "T07U2",
+      "unitTitle": "Agency Positions and Disclosure",
+      "module": "module-07.md",
+      "blockId": "t07u2",
+      "screenId": "t07u2-s1",
+      "remediationAnchor": "module-07.md#unit-agency-positions-and-disclosure",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "TREC, \"What Changes in 2026 About Buyer/Tenant Representation in Texas\""
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC3-T2",
+      "topic": "T07",
+      "unit": "T07U2",
+      "unitTitle": "Agency Positions and Disclosure",
+      "module": "module-07.md",
+      "blockId": "t07u2",
+      "screenId": "t07u2-s1",
+      "remediationAnchor": "module-07.md#unit-agency-positions-and-disclosure",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "TREC, \"What Changes in 2026 About Buyer/Tenant Representation in Texas\""
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC3-T3",
+      "topic": "T07",
+      "unit": "T07U5",
+      "unitTitle": "Texas Deceptive Trade Practices - Consumer Protection Act",
+      "module": "module-07.md",
+      "blockId": "t07u5",
+      "screenId": "t07u5-s1",
+      "remediationAnchor": "module-07.md#unit-texas-deceptive-trade-practices---consumer-protection-act",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Business and Commerce Code ch. 17"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC3-T4",
+      "topic": "T07",
+      "unit": "T07U5",
+      "unitTitle": "Texas Deceptive Trade Practices - Consumer Protection Act",
+      "module": "module-07.md",
+      "blockId": "t07u5",
+      "screenId": "t07u5-s1",
+      "remediationAnchor": "module-07.md#unit-texas-deceptive-trade-practices---consumer-protection-act",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Business and Commerce Code ch. 17"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC3-T5",
+      "topic": "T07",
+      "unit": "T07U5",
+      "unitTitle": "Texas Deceptive Trade Practices - Consumer Protection Act",
+      "module": "module-07.md",
+      "blockId": "t07u5",
+      "screenId": "t07u5-s1",
+      "remediationAnchor": "module-07.md#unit-texas-deceptive-trade-practices---consumer-protection-act",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Business and Commerce Code ch. 17"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC3-T6",
+      "topic": "T06",
+      "unit": "T06U5",
+      "unitTitle": "The Purpose of Licensing Laws - What a License Holder Can and Cannot Do",
+      "module": "module-06.md",
+      "blockId": "t06u5",
+      "screenId": "t06u5-s1",
+      "remediationAnchor": "module-06.md#unit-the-purpose-of-licensing-laws---what-a-license-holder-can-and-cannot-do",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Occupations Code ch. 1103",
+        "22 TAC §535.55"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC4-T1",
+      "topic": "T08",
+      "unit": "T08U1",
+      "unitTitle": "Equal Opportunity in Housing",
+      "module": "module-08.md",
+      "blockId": "t08u1",
+      "screenId": "t08u1-s1",
+      "remediationAnchor": "module-08.md#unit-equal-opportunity-in-housing",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3601",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3603",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3607",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC4-T2",
+      "topic": "T08",
+      "unit": "T08U1",
+      "unitTitle": "Equal Opportunity in Housing",
+      "module": "module-08.md",
+      "blockId": "t08u1",
+      "screenId": "t08u1-s1",
+      "remediationAnchor": "module-08.md#unit-equal-opportunity-in-housing",
+      "controllingSources": [
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3601",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3603",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3607",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC4-T3",
+      "topic": "T08",
+      "unit": "T08U3",
+      "unitTitle": "Housing Discrimination",
+      "module": "module-08.md",
+      "blockId": "t08u3",
+      "screenId": "t08u3-s1",
+      "remediationAnchor": "module-08.md#unit-housing-discrimination",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3602",
+        "42 U.S.C. § 3604",
+        "42 U.S.C. § 3605",
+        "42 U.S.C. § 3606",
+        "42 U.S.C. § 3617"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC4-T4",
+      "topic": "T09",
+      "unit": "T09U2",
+      "unitTitle": "Management Considerations",
+      "module": "module-09.md",
+      "blockId": "t09u2",
+      "screenId": "t09u2-s1",
+      "remediationAnchor": "module-09.md#unit-management-considerations",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92",
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3604"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC4-T5",
+      "topic": "T09",
+      "unit": "T09U1",
+      "unitTitle": "Property Management",
+      "module": "module-09.md",
+      "blockId": "t09u1",
+      "screenId": "t09u1-s1",
+      "remediationAnchor": "module-09.md#unit-property-management",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92"
+      ],
+      "excused": false
+    },
+    {
+      "kind": "scenario-task",
+      "id": "SC4-T6",
+      "topic": "T09",
+      "unit": "T09U2",
+      "unitTitle": "Management Considerations",
+      "module": "module-09.md",
+      "blockId": "t09u2",
+      "screenId": "t09u2-s1",
+      "remediationAnchor": "module-09.md#unit-management-considerations",
+      "controllingSources": [
+        "Tex. Occupations Code ch. 1101",
+        "Tex. Property Code ch. 92",
+        "Tex. Property Code ch. 301",
+        "42 U.S.C. § 3604"
+      ],
+      "excused": false
+    }
+  ]
+}
