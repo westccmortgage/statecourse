@@ -238,4 +238,99 @@ export const PRINCIPLES_BLOCK_SPECS = {
        retrieval check is its active learning. */
     problemMap: { 1: [2], 2: [1], 4: [3, 4], 5: [5, 6, 7], 6: [8] },
   },
+  12: {
+    objectives: [
+      "Distinguish value, price, and cost as an opinion versus two historical facts, state the conditions built into the market value definition and the DUST elements a property must satisfy to have value, and explain contribution — including over-improvement — to a seller without giving offense.",
+      "Explain highest and best use as the reasonably probable use producing the highest value, apply its four tests in the required order — including that 'legally permissible' means both zoning and recorded private restrictions — and explain interim use and when an improvement has negative contribution.",
+      "Apply the sales comparison approach by adjusting each comparable — never the subject — in the correct direction using the CBS rule, reconcile multiple adjusted indications into a supported range by weighting for adjustment size, recency, and similarity rather than averaging, and state what closed sales, pending sales, and active listings each do and do not prove.",
+      "Apply the cost approach formula of land value plus replacement cost new less accrued depreciation, distinguish reproduction from replacement cost, compute straight-line depreciation using effective rather than actual age, and classify a loss as physical deterioration, functional obsolescence, or external obsolescence while explaining why external obsolescence is generally incurable.",
+      "Build an income statement from potential gross income through net operating income, correctly excluding debt service, depreciation, capital improvements, and income taxes while including reserves for replacement, solve the IRV relationship for value, rate, or income in either direction, and explain why a gross rent or gross income multiplier is a screening tool rather than a valuation because it ignores expenses entirely.",
+      "State the boundary between a comparative market analysis and an appraisal — who prepares each, under what standards, and for what purpose — distinguish supplying an appraiser information from supplying a target, describe the practical outcomes when an appraisal comes in below the contract price, and identify what a valuation file must contain for the opinion to be reconstructable as of its date.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 (the recording-studio-cost misconception) teaches §1's value/price/cost distinction and
+       contribution; P2 (zoning versus recorded CC&Rs on a transitioning parcel) teaches §2's four-test
+       order, interim use, and negative contribution; P3 (the CBS direction-of-adjustment drill) and P4
+       (the reconciliation-versus-averaging correction, including what active listings prove) both teach
+       §3; P5 (the full cost approach computation across all three depreciation types) teaches §4; P6
+       (the NOI computation and the accountant's debt-service/depreciation error) and P7 (the IRV
+       rate-sensitivity spread and the GRM's blindness to expenses) both teach §5; P8 (the CMA-revision,
+       misrepresentation, and appraiser-pressure scenario) teaches §6. Every section owns at least one
+       problem — no inventory gap in this assignment. */
+    problemMap: { 1: [1], 2: [2], 3: [3, 4], 4: [5], 5: [6, 7], 6: [8] },
+  },
+  13: {
+    objectives: [
+      "Explain California's base-year-value property tax system and why reassessment on a change in ownership — never on ordinary maintenance — means a buyer's property tax will not be the seller's, identify what a supplemental assessment captures and why it surprises unwarned buyers, and describe how special assessments, Mello-Roos, and the property tax lien's priority affect a buyer's total carrying cost.",
+      "Recognize the transfer and income tax vocabulary a licensee must use accurately — including basis, capital gain, the principal residence exclusion, the like-kind exchange, and the two unrelated concepts sharing the word 'depreciation' — route each to a tax professional rather than advise, and explain why the like-kind exchange referral must happen before closing.",
+      "Build a cash flow statement from potential gross income down to before-tax cash flow, compute the capitalization rate, cash-on-cash return, gross rent multiplier, operating expense ratio, debt coverage ratio, and break-even occupancy, and state each measure's limitation together with the four sources of real estate return.",
+      "Demonstrate positive and negative leverage numerically by comparing an all-cash purchase against leveraged financing at different borrowing costs, explain why the same leverage that multiplies gains on appreciation multiplies losses on decline in exactly the same proportion, name the risks an investor carries, and state the disciplines a pro forma must follow before it can be shown to a client.",
+      "Apply the part/whole/rate relationship to work a commission calculation backward and to compute net to seller by applying the rate to the price rather than to the net, prorate a charge in both directions using the stated day-count convention and closing-day rule, perform area, volume, and documentary transfer tax computations — including Revenue and Taxation Code Section 11911's round-up-to-$500 rule — and apply a reasonableness check to catch the three errors that produce most wrong answers.",
+      "Normalize two investment properties onto a common basis before comparing their return measures, verify every figure in an investment analysis against its proper source rather than a seller's characterization, and document the analysis's data, assumptions, risks, and referrals so the recommendation is reconstructable rather than a table presented as a decision.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1's three-error diagnosis (reassessment on transfer, the remodel/new-construction line, and the
+       Mello-Roos and supplemental-assessment omissions) is built entirely from §1 and teaches it alone.
+       P2's principal-residence-exclusion, like-kind-exchange, and two-depreciations corrections teach §2.
+       P3 builds the full PGI-through-return-measures analysis using §3's own worked numbers, teaching §3.
+       P4's all-cash-versus-leveraged comparison worked in both directions, plus the downside amplification
+       question, teaches §4. P5 and P6 both teach §5: P5 the commission-backward and net-to-seller
+       calculations, P6 the two-direction prorations and the area/volume/unit-error computations. P7 and P8
+       both teach §6: P7 is the same two-property comparison worked in §6.2 and its premature-recommendation
+       lesson, and P8's pro-forma-presented-as-operating-statement defects trace to §6.4's verification
+       sources and §6.6's recurring failure. Every section owns at least one problem — no inventory gap in
+       this assignment. */
+    problemMap: { 1: [1], 2: [2], 3: [3], 4: [4], 5: [5, 6], 6: [7, 8] },
+  },
+  14: {
+    objectives: [
+      "Identify the seven federal protected classes and the four statutes that establish and enforce them, and explain why the exemptions in fair housing law are rarely available in a transaction that involves a real estate licensee.",
+      "Identify California's fair housing statutes and its expanded list of protected characteristics beyond the federal seven — particularly source of income — and explain why a licensee who works from the federal list alone will act lawfully under federal law and unlawfully in California.",
+      "Name the prohibited fair housing practices in both their obvious and subtle forms, apply the \"describe the property, not the people\" rule to rewrite discriminatory advertising copy while still including accessibility information, and explain why audience targeting, imagery, and an equal housing statement are each part of the advertisement rather than separate from it.",
+      "Distinguish a reasonable accommodation (a change to a rule, policy, practice, or service) from a reasonable modification (a change to the physical premises), apply the rule that an assistance animal is not a pet and may not be charged a pet deposit or required to be certified, and state what a provider may and may not ask when verifying a disability-related need, including why delay functions as denial.",
+      "Explain the fair lending statutes and how redlining persists in modern algorithmic and marketing forms, describe why housing-wealth exclusion compounds across generations without licensing corrective steering as a remedy, and state what a licensee may and may not do with a lender or an appraiser — supplying information but never a target, and escalating rather than confronting a suspected biased appraisal.",
+      "Explain why structure rather than individual effort is what reduces discriminatory outcomes, produce the scripts for declining a characterization and for responding to an unlawful instruction, and state the correct sequence for responding to a discrimination complaint — including preserving records, notifying the broker, and conducting periodic outcome review — so that the licensee's own file is the defense.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1's three-reasons rejection of the seller's exemption claim and its familial-status
+       classification teach §1's own exemption checkpoint; its secondary source-of-income and
+       federal-list-insufficiency material reinforces §2 without being the problem's primary weight.
+       P2 (steering's subtle forms — redirection, differential effort and enthusiasm, assumed
+       suitability), P3 (rewriting discriminatory copy), and P4 (targeting, imagery, and the
+       equal-housing-logo defense) all teach §3. P5 (classifying the assistance-animal and grab-bar
+       requests, the certification and pet-deposit errors, and the interactive-process/delay rule)
+       teaches §4. P6 (lender discouragement, marketing-pattern redlining, and appraisal-bias
+       escalation) teaches §5. P7 (the unlawful-instruction response) and P8 (the complaint-response
+       sequence and the other-brokerage report) both teach §6. §2 (California's added protections) has
+       no problem of its own — the documented gap; its retrieval check is its active learning. */
+    problemMap: { 1: [1], 3: [2, 3, 4], 4: [5], 5: [6], 6: [7, 8] },
+  },
+  15: {
+    objectives: [
+      "Identify the elements of a lease and distinguish assignment from subletting and their effect on the original tenant's liability, classify a tenancy by which of the four leasehold estates it actually is, explain why habitability cannot be waived and runs continuously, state what lawful entry requires and what does not substitute for notice, explain why a defective notice defeats a good reason and self-help is prohibited without exception, and explain why a lease survives a sale and must be verified rather than accepted on assurance.",
+      "Explain what a management agreement must establish and why unsigned authority is a structural defect rather than a paperwork gap, describe the role of spending and emergency authority, state the defensible tenant-selection practice and how maintenance requests are triaged by category, and explain why owner reporting must be regular and itemized to discharge the accounting duty.",
+      "Apply the three trust fund obligations of separation, records, and timeliness, distinguish commingling from conversion and explain why an internal ledger does not cure commingling, state the correct response to a shortage versus an overage, explain what a three-way reconciliation must compare and why bank-to-book agreement alone can conceal a misapplied deposit, and state what wins a security deposit dispute.",
+      "Describe California's license structure and why the brokerage rather than the salesperson is the party to a listing or lease, describe reasonable supervision as a system and why independent contractor status does not reduce it, distinguish licensed from unlicensed activity by what is done rather than by title, distinguish Business and Professions Code sections 10176 and 10177 by what each reaches, and describe the Real Estate Recovery Account and errors and omissions coverage, including what each does not do.",
+      "Apply the material fact standard and the three-part test for what must be disclosed, distinguish the seller's disclosure duty from the licensee's independent visual-inspection duty, distinguish an observation from an inference and explain why only the former belongs in a disclosure, identify what must never be represented as fact, and explain why late delivery of a disclosure is not cured by delivery before closing.",
+      "Audit an integrated California transaction for reconstructability by checking its chronology against the disclose-before-decide test, rank a closed file's defects by kind rather than count using the lesson's worked audit as the model, distinguish a documented gap a brokerage can survive from a manufactured document that constitutes falsification, and apply the four questions to a situation the course did not specifically cover.",
+      "Integrate the assignment's concepts: review the key terms and summary, complete the applied memorandum, and pass the assignment knowledge check.",
+    ],
+    /* P1 (assignment-versus-sublease liability, plus the Statute of Frauds writing requirement) and
+       P2 (an emergency habitability failure, unlawful entry, a defective notice, and a retaliation
+       appearance) both teach §1. P3's audited management practice is centered on §2's own checkpoint
+       content — unsigned authority as a structural defect and the regular, itemized reporting owner
+       reporting requires — even though it also names a commingled deposit and a salesperson
+       contracting in her own name in passing, so it is assigned to §2 rather than split. P4
+       (commingling complete on deposit, why a ledger does not cure it, and the three-way
+       reconciliation that catches a misapplied beneficiary) and P5 (move-in documentation deciding a
+       deposit dispute, and file ownership on a licensee's departure) both teach §3. P6 (seller's-
+       disclosure handling, observation versus inference, and laundering an unverified figure into
+       fact) and P7 (the death/illness disclosure limits, what must never be represented as fact, and
+       why late delivery is not cured) both teach §5. P8 (ranking a closed file's defects and the
+       documented-gap-versus-falsification line) teaches §6. §4 — California licensing and discipline,
+       including the Business and Professions Code §§ 10176/10177 distinction, the recovery account,
+       and E&O coverage — has no mapped problem in this lesson's problem set; its retrieval check is
+       its active learning, the same documented pattern as Assignment 11's §3. */
+    problemMap: { 1: [1, 2], 2: [3], 3: [4, 5], 5: [6, 7], 6: [8] },
+  },
 };

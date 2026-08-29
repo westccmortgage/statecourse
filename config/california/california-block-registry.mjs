@@ -38,6 +38,10 @@ import { A8_BLOCKS as PRINCIPLES_A8_BLOCKS } from "./principles-a8-blocks.mjs";
 import { A9_BLOCKS as PRINCIPLES_A9_BLOCKS } from "./principles-a9-blocks.mjs";
 import { A10_BLOCKS as PRINCIPLES_A10_BLOCKS } from "./principles-a10-blocks.mjs";
 import { A11_BLOCKS as PRINCIPLES_A11_BLOCKS } from "./principles-a11-blocks.mjs";
+import { A12_BLOCKS as PRINCIPLES_A12_BLOCKS } from "./principles-a12-blocks.mjs";
+import { A13_BLOCKS as PRINCIPLES_A13_BLOCKS } from "./principles-a13-blocks.mjs";
+import { A14_BLOCKS as PRINCIPLES_A14_BLOCKS } from "./principles-a14-blocks.mjs";
+import { A15_BLOCKS as PRINCIPLES_A15_BLOCKS } from "./principles-a15-blocks.mjs";
 import { PRINCIPLES_RETRIEVAL_BANKS } from "./principles-retrieval-banks.mjs";
 
 /* Principles and Practice are registered incrementally, exactly like the Mortgage rollout: an
@@ -70,6 +74,10 @@ export const BLOCK_DELIVERIES = Object.freeze([
   PRINCIPLES_A9_BLOCKS,
   PRINCIPLES_A10_BLOCKS,
   PRINCIPLES_A11_BLOCKS,
+  PRINCIPLES_A12_BLOCKS,
+  PRINCIPLES_A13_BLOCKS,
+  PRINCIPLES_A14_BLOCKS,
+  PRINCIPLES_A15_BLOCKS,
 ]);
 
 export const RETRIEVAL_BANKS = Object.freeze({ ...A1_RETRIEVAL_BANK, ...MORTGAGE_RETRIEVAL_BANKS, ...PRINCIPLES_RETRIEVAL_BANKS });
