@@ -17,22 +17,34 @@ enforcement path of the Texas Fair Housing Act, Property Code ch. 301, and name 
 administers it; define steering, blockbusting and discriminatory advertising and identify the
 provision each violates, including the licence-discipline ground in Occupations Code
 § 1101.652(b)(32); state what a "residential real estate-related transaction" is under 42 U.S.C.
-§ 3605(b) and who § 3605(a) covers; state the prohibited bases and permitted inquiries under the Equal
-Credit Opportunity Act, 15 U.S.C. § 1691(a) and (b), and explain the adverse-action notification owed
-under § 1691(d); and explain the congressional findings and purpose of the Community Reinvestment Act,
-12 U.S.C. § 2901, and distinguish that affirmative community-credit obligation from an individual
-anti-discrimination claim.
+§ 3605(b) and who § 3605(a) covers; state what 42 U.S.C. § 3606 reaches in the provision of brokerage
+services and compare it with Property Code § 301.027; state what 42 U.S.C. § 3617 forbids and who it
+protects; describe the administrative complaint route in 42 U.S.C. § 3610 — who may file, with whom,
+within what period, and how conciliation and referral to a certified state or local agency work — and
+set it beside the Texas Workforce Commission route in Property Code ch. 301; state the prohibited
+bases and permitted inquiries under the Equal Credit Opportunity Act, 15 U.S.C. § 1691(a) and (b), and
+explain the adverse-action notification owed under § 1691(d); apply the Regulation B rules that
+implement ECOA — the definitions in 12 C.F.R. § 1002.2, the general prohibition in § 1002.4, the
+limits on requests for information in § 1002.5, and the notification requirements and timing in
+§ 1002.9; and explain the congressional findings and purpose of the Community Reinvestment Act,
+12 U.S.C. § 2901, describe the assessment and written-evaluation framework in 12 U.S.C. §§ 2902, 2903
+and 2906 including the four statutory rating levels, and distinguish that affirmative community-credit
+obligation from an individual anti-discrimination claim.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where a
 statement is practice rather than law, the module says so and cites nothing for it. On the federal
-fair housing side the sources held and read are 42 U.S.C. §§ 3601, 3602, 3603, 3604, 3605 and 3607,
-and this module teaches each of them from its own text. Some provisions this topic can touch were
-**not** among the sources held: the Fair Housing Act's brokerage-services section (42 U.S.C. § 3606)
-and its interference section (§ 3617); its administrative and judicial enforcement sections
-(§§ 3610–3614); the Community Reinvestment Act's examination and rating sections (12 U.S.C.
-§§ 2902–2906); and the Equal Credit Opportunity Act's definitions and remedies sections (15 U.S.C.
-§§ 1691a–1691f). Where the module reaches those subjects it says so plainly, teaches the parallel
-Texas provision that *was* read, and tells you to read the federal text yourself rather than
+fair housing side the sources held and read are 42 U.S.C. §§ 3601, 3602, 3603, 3604, 3605, 3606, 3607,
+3610 and 3617, and this module teaches each of them from its own text. On the credit side the sources
+held and read are 15 U.S.C. §§ 1691, 1691a and 1691c together with four sections of Regulation B, the
+Bureau's implementing regulation — 12 C.F.R. §§ 1002.2, 1002.4, 1002.5 and 1002.9. On the community
+reinvestment side the sources held and read are 12 U.S.C. §§ 2901, 2902, 2903, 2904, 2905 and 2906.
+A few provisions this topic can touch are still **not** among the sources held: the Fair Housing Act's
+remaining enforcement sections (42 U.S.C. §§ 3611–3614, which carry the federal election of forum, the
+administrative hearing, judicial relief and the Attorney General's pattern-or-practice action); ECOA's
+rulemaking, state-law and civil-liability sections (15 U.S.C. §§ 1691b, 1691d, 1691e and 1691f); the
+remaining sections of Regulation B; and any HUD rule, Texas Workforce Commission rule or Texas
+municipal ordinance. Where the module reaches those subjects it says so plainly, teaches the parallel
+provision that *was* read, and tells you to read the text yourself rather than
 paraphrasing text nobody opened. Texas Property Code ch. 301 is taught throughout alongside the
 federal Act, not as a substitute for it: a Texas license holder is governed by both, and the places
 where the two texts align and the places where they do not are worth knowing precisely. Every name,
@@ -114,9 +126,19 @@ housing practice that is about to occur." The second clause reaches an anticipat
 
 Finally, § 3602(f) defines a **"discriminatory housing practice"** as "an act that is unlawful under
 section 3604, 3605, 3606, or 3617 of this title" — the phrase that carries the substantive prohibitions
-into the enforcement machinery. Two of those four sections, §§ 3606 and 3617, were not held for this
-course; this module names them only because § 3602(f) does, and does not state what they contain.
-Familial status, § 3602(k), is treated later in this unit alongside § 3607.
+into the enforcement machinery. All four of those sections were held and read for this course.
+Sections 3604 and 3605 are taught in this unit and in unit 4. The other two are taught in unit 3, and
+it is worth knowing now what they are, because the definition you just read makes each of them a
+"discriminatory housing practice" on the same footing as § 3604. **Section 3606** forbids denying a
+person access to or membership or participation in "any multiple-listing service, real estate brokers'
+organization or other service, organization, or facility relating to the business of selling or
+renting dwellings" — the section that reaches your own trade organizations and your own MLS.
+**Section 3617** makes it unlawful "to coerce, intimidate, threaten, or interfere with any person" in
+the exercise of, or on account of having exercised or having aided another in exercising, rights
+granted or protected by §§ 3603, 3604, 3605 or 3606. Note what § 3602(f) does *not* list: § 3607, the
+exemptions section, is not among the sections whose violation is a discriminatory housing practice,
+because § 3607 creates no prohibition to violate. Familial status, § 3602(k), is treated later in this
+unit alongside § 3607.
 
 **Read the opening clause first, then read § 3603.** Section 3604 begins: "As made applicable by
 section 3603 of this title and except as exempted by sections 3603(b) and 3607 of this title, it shall
@@ -527,19 +549,41 @@ individual's sexual orientation or because that individual is a transvestite." A
 the classes are distributed across sections: § 301.021, on sale and rental, omits disability because
 § 301.025 is the disability section. Do not read that omission as permission.
 
-**Does Texas add classes?** On the face of ch. 301, no. It lists the same seven bases, using
-"disability" for "handicap." It does not list sexual orientation, gender identity, marital status,
-age, source of income, or military or veteran status, and § 301.005 forecloses reading them in: "The
-statutory civil remedies or theories of recovery created by this chapter may not be expanded beyond
-their express statutory terms." Do not tell a client the Texas Act protects a class it does not name.
+**Does the statewide Act add classes?** Say this one precisely, because the loose version of it is
+wrong in a way that can cost a client. **The prohibition sections of the current statewide Texas Fair
+Housing Act, Property Code ch. 301, as read for this course, name the same seven bases the federal Act
+names — race, color, religion, sex, disability, familial status and national origin — and name no
+eighth.** Chapter 301 does not list sexual orientation, gender identity, marital status, age, source
+of income, or military or veteran status, and § 301.005 forecloses reading them into the chapter's own
+remedies: "The statutory civil remedies or theories of recovery created by this chapter may not be
+expanded beyond their express statutory terms." So do not tell a client that **ch. 301** protects a
+class ch. 301 does not name.
 
-Texas has, however, **broadened one class by definition**. Section 301.0045, added in 2023, provides
-that "protective hairstyle" includes braids, locks, and twists, and that any provision of the chapter
-"referring to discrimination because of race or on the basis of race includes discrimination because
-of or on the basis of a person's hair texture or protective hairstyle commonly or historically
-associated with race." A Dallas landlord who turns an applicant away over locs is discriminating on
-the basis of race under Texas law. That is coverage added inside an existing class — the accurate way
-to describe it. Section 301.004 likewise fills out **familial status**: the act must be committed
+That statement is about one statute and nothing else. It is **not** a statement that a Texas renter,
+buyer or applicant enjoys no protection beyond those seven. A Texas municipality or county may adopt a
+fair housing or nondiscrimination ordinance of its own, and some do; other state and federal law may
+also apply to the same conduct, and § 301.044(b) says so expressly — the chapter "does not affect a
+requirement of nondiscrimination in any other state or federal law." **No Texas municipal or county
+ordinance was held for this course, so this module surveys none, names none, and takes no position on
+what any of them cover.** The absence of an ordinance from these pages is a gap in this course's
+sources, not a finding that the ordinance does not exist or does not reach further than ch. 301. The
+only safe practice is the one unit 2 states again below: read the ordinance of the city and county you
+actually work in before you advertise, screen or advise.
+
+Inside ch. 301 itself, one class is **broadened by definition**, and the difference between broadening
+a class and adding one is the whole point. Section 301.0045, added in 2023, is captioned "RACIAL
+DISCRIMINATION BASED ON HAIR TEXTURE OR PROTECTIVE HAIRSTYLE." Subsection (a) provides that in that
+section "'protective hairstyle' includes braids, locks, and twists." Subsection (b) then provides that
+"[a] provision in this chapter, other than a provision in Subchapter I, referring to discrimination
+because of race or on the basis of race includes discrimination because of or on the basis of a
+person's hair texture or protective hairstyle commonly or historically associated with race." Read the
+operative verb: the section says race **includes** these things. It does not create a new protected
+category, it does not amend the list in § 301.021 or § 301.022, and it is not an eighth statewide
+protected class — it tells you what the existing category of race already reaches. So a Dallas
+landlord who turns an applicant away over locs has discriminated **because of race** under ch. 301,
+and the claim is a race claim. Note the carve-out too: § 301.0045(b) reaches every provision of the
+chapter *other than* a provision in Subchapter I, which is the criminal penalty subchapter containing
+§ 301.171. Section 301.004 likewise fills out **familial status**: the act must be committed
 because the person is "(1) pregnant; (2) domiciled with an individual younger than 18 years of age" as
 parent or legal custodian or with that person's written permission, "or (3) in the process of
 obtaining legal custody" of such an individual. Pregnancy is expressly inside the class. And
@@ -577,9 +621,19 @@ transaction" in materially the same terms and is taken up in unit 4. Section 301
 services** — no one may deny another access to or participation in "a multiple-listing service, real
 estate brokers' organization, or other service, organization, or facility relating to the business of
 selling or renting dwellings," or discriminate in the terms of that access, on the seven bases. The
-federal Act has a brokerage-services section of its own at 42 U.S.C. § 3606, but that section was not
-held for this course; this module names it and stops there, and where brokerage-access discrimination is
-taught in this module it is taught from § 301.027, which was read.
+federal Act has a brokerage-services section of its own at 42 U.S.C. § 3606, and it was held and read
+for this course; the two texts are close enough to set side by side. Section 3606 provides: "After
+December 31, 1968, it shall be unlawful to deny any person access to or membership or participation in
+any multiple-listing service, real estate brokers' organization or other service, organization, or
+facility relating to the business of selling or renting dwellings, or to discriminate against him in
+the terms or conditions of such access, membership, or participation, on account of race, color,
+religion, sex, handicap, familial status, or national origin." Section 301.027 uses the same list of
+covered bodies — "a multiple-listing service, real estate brokers' organization, or other service,
+organization, or facility relating to the business of selling or renting dwellings" — and the same
+two-stage prohibition of denying access and of discriminating "in the terms or conditions of access,
+membership, or participation." Three differences and no more: Texas says **disability** where § 3606
+says handicap; Texas opens with "A person may not," where § 3606 opens with the spent 1968 commencement
+date; and Texas omits the federal pronoun "him." Unit 3 works § 3606 as a practice.
 
 **Exemptions.** Section 301.041(a) exempts from §§ 301.021, 301.023, 301.024 and 301.025 the sale or
 rental of a single-family house by an owner who does not own or hold an interest in "more than three
@@ -603,9 +657,17 @@ without cataloguing them: § 301.068 lets the commission "defer proceedings unde
 refer a complaint to a municipality that has been certified by the federal Department of Housing and
 Urban Development as a substantially equivalent fair housing agency," and § 301.044(b) provides that
 the chapter "does not affect a requirement of nondiscrimination in any other state or federal law."
-Whether a particular Texas city's ordinance adds bases beyond ch. 301's seven is a question of that
-ordinance. No municipal ordinance was held for this course, so this module names none. Before you
-advertise or screen in a specific Texas city, read that city's ordinance.
+The federal Act builds in the same referral structure from the other end: 42 U.S.C. § 3610(f), read
+below, requires the Secretary to refer a complaint to a state or local agency certified under that
+subsection before taking any action on it, and certification requires the Secretary to find that the
+agency's substantive rights, procedures, remedies and judicial review are "substantially equivalent to
+those created by and under this subchapter." Whether a particular Texas city or county ordinance adds
+bases beyond the seven that ch. 301 names is a question of that ordinance, and it is a live question:
+a local ordinance may protect people ch. 301 does not, and nothing in this module should be read to
+suggest otherwise. **No municipal or county ordinance was held for this course, so this module names
+none and describes none.** Before you advertise, screen or advise in a specific Texas city, read that
+city's ordinance and your county's — and do not answer the question from this module, which does not
+contain the answer.
 
 **The Texas enforcement path.** Under § 301.081 a complaint must be "in writing," "under oath," and
 "in the form prescribed by the commission," and filed "on or before the first anniversary of the date
@@ -651,9 +713,112 @@ complaint to the commission or deferring jurisdiction to it; § 301.068 contempl
 HUD-certified municipal agency; and §§ 301.092 and 301.111(c) both stop the state administrative track
 once a civil action on the same practice, "under federal or state law," reaches trial. These are
 parallel forums coordinated to avoid duplication, with the complainant holding a real choice at the
-§ 301.093 election. What this module cannot tell you, because the federal enforcement sections were
-not held, is the federal filing deadline or election procedure; a client choosing between forums needs
-a lawyer working from the current federal text.
+§ 301.093 election.
+
+**The federal administrative route — 42 U.S.C. § 3610.** The federal counterpart to the ch. 301
+complaint path was held and read for this course, so the comparison can be made from both texts rather
+than from one. Section 3610 is titled "Administrative enforcement; preliminary matters," and it is the
+front half of the federal machinery: it takes a complaint from filing through investigation and
+conciliation to a reasonable cause determination and a charge.
+
+*Who may file, with whom, and when.* Section 3610(a)(1)(A)(i): "An aggrieved person may, not later
+than one year after an alleged discriminatory housing practice has occurred or terminated, file a
+complaint with the Secretary alleging such discriminatory housing practice. The Secretary, on the
+Secretary's own initiative, may also file such a complaint." The Secretary is the Secretary of Housing
+and Urban Development (§ 3602(a)); "aggrieved person" is the § 3602(i) definition you read in unit 1,
+which reaches a person who believes an injury "is about to occur." Clause (iii) adds that the
+Secretary "may also investigate housing practices to determine whether a complaint should be brought."
+Complaints "shall be in writing and shall contain such information and be in such form as the
+Secretary requires" (clause (ii)), and under § 3610(a)(1)(D) both "[c]omplaints and answers shall be
+under oath or affirmation, and may be reasonably and fairly amended at any time." **One year, in
+writing, sworn** — put that beside § 301.081's one-year, written, sworn complaint to the Texas
+Workforce Commission and the two front doors look almost identical, which is what "substantially
+equivalent" in § 301.002(3) was built to produce.
+
+*What happens next, and how fast.* Under § 3610(a)(1)(B) the Secretary must serve notice on the
+aggrieved person "acknowledging such filing and advising the aggrieved person of the time limits and
+choice of forums provided under this subchapter"; must serve the respondent "not later than 10 days
+after such filing" with a notice identifying the alleged practice, advising of the respondent's
+procedural rights and obligations, and enclosing a copy of the complaint; each respondent "may file,
+not later than 10 days after receipt of notice," an answer; and the Secretary must investigate and
+"complete such investigation within 100 days after the filing of the complaint… unless it is
+impracticable to do so," with written notice of the reasons to both parties if that deadline is missed
+(§ 3610(a)(1)(C)). Under § 3610(a)(2) a person not named in the complaint but identified during the
+investigation may be joined as an additional or substitute respondent on written notice explaining the
+basis for the joinder. Compare ch. 301: service on respondents within 20 days and a 10-day answer
+(§ 301.082), and the same 100-day investigation target (§ 301.083(b)).
+
+*Conciliation.* Section 3610(b)(1): "During the period beginning with the filing of such complaint and
+ending with the filing of a charge or a dismissal by the Secretary, the Secretary shall, to the extent
+feasible, engage in conciliation with respect to such complaint." Learn the structure, because it is
+not quite the Texas one. A conciliation agreement "shall be an agreement between the respondent and
+the complainant, and shall be subject to approval by the Secretary" (b)(2); it "may provide for binding
+arbitration of the dispute," and such arbitration "may award appropriate relief, including monetary
+relief" (b)(3); and — the point where federal and Texas practice diverge — "[e]ach conciliation
+agreement shall be made public unless the complainant and respondent otherwise agree and the Secretary
+determines that disclosure is not required to further the purposes of this subchapter" (b)(4). The
+*agreement* is presumptively public. The *negotiation* is not: § 3610(d)(1) provides that "[n]othing
+said or done in the course of conciliation under this subchapter may be made public or used as
+evidence in a subsequent proceeding under this subchapter without the written consent of the persons
+concerned," which is § 301.085's rule in almost the same words. Section 3610(b)(5) requires a final
+investigative report at the end of each investigation, listing the five contents the paragraph names,
+and § 3610(d)(2) makes that report and the information derived from the investigation available to
+both the aggrieved person and the respondent on request once the investigation is complete. If the
+Secretary has reasonable cause to believe a respondent has breached a conciliation agreement,
+§ 3610(c) requires referral to the Attorney General with a recommendation that a civil action be filed
+under § 3614 to enforce it.
+
+*Referral to a certified state or local agency — where the Texas Workforce Commission comes in.* This
+is the subsection that makes the two systems one system. Under § 3610(f)(1), whenever a complaint
+alleges a practice "within the jurisdiction of a State or local public agency" that "has been certified
+by the Secretary under this subsection," the Secretary "shall refer such complaint to that certified
+agency before taking any action with respect to such complaint." After referral, and except with the
+certified agency's consent, the Secretary "shall take no further action" unless the agency fails to
+commence proceedings "before the end of the 30th day after the date of such referral," fails to carry
+proceedings forward "with reasonable promptness," or no longer qualifies for certification
+(§ 3610(f)(2)). Certification itself is available only where the Secretary determines that the agency's
+substantive rights, its procedures, its remedies and the availability of judicial review of its action
+"are substantially equivalent to those created by and under this subchapter" (§ 3610(f)(3)(A)), taking
+into account the agency's "current practices and past performance"; and the Secretary must revisit each
+certification "[n]ot less frequently than every 5 years" (§ 3610(f)(5)). Now read Property Code
+§ 301.002(3) again — "rights and remedies substantially equivalent to those granted under federal law"
+— and § 301.083(a), which contemplates the federal government referring a complaint to the commission
+or deferring jurisdiction to it. The Texas statute is written to the federal certification standard,
+and § 3610(f) is the reason it is.
+
+*Cause, charge, and the end of § 3610.* Section 3610(g)(1) requires the Secretary, "within 100 days
+after the filing of the complaint," to determine "whether reasonable cause exists to believe that a
+discriminatory housing practice has occurred or is about to occur," unless that is impracticable or a
+conciliation agreement has been approved, again with written notice of the reasons for any delay. On a
+finding of cause the Secretary "shall… immediately issue a charge on behalf of the aggrieved person"
+(g)(2)(A); the charge is a "short and plain statement of the facts," must be "based on the final
+investigative report," and "need not be limited to the facts or grounds alleged in the complaint"
+(g)(2)(B). Where the matter "involves the legality of any State or local zoning or other land use law
+or ordinance," the Secretary refers it to the Attorney General instead of charging (g)(2)(C). On a
+finding of no cause the Secretary "shall promptly dismiss the complaint" and "shall make public
+disclosure of each such dismissal" (g)(3). And § 3610(g)(4) bars a charge "after the beginning of the
+trial of a civil action commenced by the aggrieved party under an Act of Congress or a State law,
+seeking relief with respect to that discriminatory housing practice." Every one of those five moves has
+a ch. 301 twin: § 301.088 (cause and immediate charge), § 301.090 (land use referred to the attorney
+general), § 301.091 (prompt dismissal, publicly disclosed) and § 301.092 (no charge after trial has
+begun). Finally, § 3610(h) requires the Secretary, after issuing a charge, to serve a copy on each
+respondent and each aggrieved person "together with information as to how to make an election under
+section 3612(a) of this title and the effect of such an election," with a notice of opportunity for a
+hearing unless the election is made.
+
+**What is still not held, and what that means for the exercise below.** Section 3610 ends at the
+charge. The federal election of forum itself lives in § 3612, and the federal administrative hearing,
+the private civil action and the Attorney General's pattern-or-practice suit live in §§ 3612–3614.
+**None of those sections was held for this course, and this module states no federal election deadline,
+no federal damages or penalty figure, and no federal limitations period for a civil action.** What
+§ 3610 alone establishes is real and usable: the one-year sworn complaint to the Secretary, the 10-day
+service and answer, the 100-day investigation and 100-day cause determination, conciliation running
+from filing to charge or dismissal, mandatory referral to a certified substantially equivalent state or
+local agency, and the fact that an election of forum exists and must be explained to the parties both
+at filing (§ 3610(a)(1)(B)(i), "the time limits and choice of forums") and at the charge (§ 3610(h)).
+A client weighing the federal election against the § 301.093 election still needs a lawyer working from
+§ 3612 and the current federal text; this course can put the front half of the federal route beside the
+Texas route accurately, and stops where its sources stop.
 
 ## Unit: Housing Discrimination
 
@@ -741,6 +906,84 @@ neighborhood, or who tells a seller there that the office "doesn't work over the
 geographic area in the *brokering* of residential real property — inside the definition on its face.
 Unit 4 takes up credit discrimination directly and works § 3605 in detail; unit 5 takes up the Community
 Reinvestment Act, the affirmative side of the same geography.
+
+**Denial of brokerage services — 42 U.S.C. § 3606 and Property Code § 301.027.** Every practice so far
+in this unit is something done to a consumer. This one is done to *you*, or by your organization to a
+colleague, and it is the fair housing provision that speaks most directly to the machinery of the
+brokerage business. Section 3606 reads in full: "After December 31, 1968, it shall be unlawful to deny
+any person access to or membership or participation in any multiple-listing service, real estate
+brokers' organization or other service, organization, or facility relating to the business of selling
+or renting dwellings, or to discriminate against him in the terms or conditions of such access,
+membership, or participation, on account of race, color, religion, sex, handicap, familial status, or
+national origin." Property Code § 301.027 says the same thing on the seven Texas bases, "disability"
+for handicap.
+
+Four features of that sentence do the work. **The covered bodies** are named and then opened out: a
+multiple-listing service, a real estate brokers' organization, or "other service, organization, or
+facility relating to the business of selling or renting dwellings." The closing phrase is not
+decoration — it is a functional test, and it is what carries the section past the two named examples
+to whatever else is organized around the business of selling or renting dwellings. **The prohibited
+conduct is two-stage,** exactly as in § 3604(a) and (b): denying "access to or membership or
+participation in," and discriminating "in the terms or conditions of such access, membership, or
+participation." So conditioning participation, pricing it differently, or curtailing it after
+admission is inside the section without any denial at all. **The bases are seven**, the full
+§ 3604(c) list, handicap and familial status included; § 3606 does not split disability off into a
+subsection of its own the way § 3604 does. And **there is no exemption.** Section 3603(b) exempts
+qualifying transactions from § 3604 only — reread its opening words, "Nothing in section 3604 of this
+title (other than subsection (c))" — and § 3607 speaks to the subchapter's application to religious
+organizations, private clubs and housing for older persons, not to who may join an MLS. Nothing in
+either section reaches § 3606.
+
+Why this belongs in a licensing course rather than in a footnote: § 3606 is the fair housing section
+whose subject matter is a license holder's own working life. Access to the MLS, to a local board or
+association, to a referral network, to a lockbox system, to a co-op arrangement, to an office's
+floor-time rotation — each is at least arguably a "service, organization, or facility relating to the
+business of selling or renting dwellings," and a discriminatory condition on any of them is a
+discriminatory housing practice under § 3602(f), not merely an internal governance dispute.
+*Illustration:* a Texas board of REALTORS® admits applicants on stated criteria but routes one
+applicant's file through an additional interview and a sponsorship requirement nobody else is asked
+for, and the record shows national origin is why. No consumer was refused a dwelling and no listing
+was affected; § 3606 and § 301.027 are violated on their own terms. The mirror-image point matters
+too, and it is the one to carry into practice: **a broker or association that excludes on a protected
+basis is not protected by the fact that the exclusion is aimed at a competitor rather than a
+consumer.**
+
+**Interference, coercion or intimidation — 42 U.S.C. § 3617.** The last of the four sections
+§ 3602(f) names is the one that protects the people who assert fair housing rights and the people who
+help them. It is one sentence: "It shall be unlawful to coerce, intimidate, threaten, or interfere
+with any person in the exercise or enjoyment of, or on account of his having exercised or enjoyed, or
+on account of his having aided or encouraged any other person in the exercise or enjoyment of, any
+right granted or protected by section 3603, 3604, 3605, or 3606 of this title."
+
+Take it in three pieces. **Four verbs** — coerce, intimidate, threaten, *interfere with* — and the
+fourth is the widest and the one most often overlooked; interference needs no threat and no force.
+**Three timings**, which is the structural point: the section reaches conduct against a person *in the
+exercise or enjoyment* of a right (during), *on account of having exercised or enjoyed* it (after), and
+*on account of having aided or encouraged any other person* in exercising or enjoying it. **A closed
+list of underlying rights** — those granted or protected by § 3603, § 3604, § 3605 or § 3606. Note who
+is missing from that list: § 3607, again, because it grants no right, and § 3617 itself.
+
+The third timing is the one to write down, because **it protects you.** A license holder who documents
+a client's reasonable-accommodation request, who tells a seller the instruction to exclude a group
+cannot be followed, who refuses to run copy that indicates a familial-status preference, or who
+testifies in a complaint, is a person who has "aided or encouraged any other person in the exercise or
+enjoyment of" a § 3604 right. Retaliation against that license holder — a terminated listing agreement
+is not it, but threats, a campaign to have them removed from a board or an MLS, or intimidation aimed
+at making them stop — is reached by § 3617 in its own right, and reached whether or not the client's
+underlying claim ever succeeds, because the section turns on the aiding and not on the outcome. It
+runs the other way as well: an agent, manager or owner who pressures a tenant to drop a fair housing
+complaint, or who makes life harder for a neighbour who supported one, has interfered on account of
+the exercise of a § 3604 right. Both directions are discriminatory housing practices under § 3602(f).
+
+Texas has no section numbered as § 3617's counterpart in ch. 301's prohibition subchapter, and this
+module does not manufacture one. What Texas does have, in a different register, is Property Code
+§ 301.171, the Class A misdemeanor treated in unit 2, which reaches intimidating or interfering with a
+person **by force or threat of force** because of a protected class and because that person is buying,
+selling, renting, financing or occupying a dwelling. Set the two beside each other and the difference
+is the whole lesson: § 301.171 is a criminal provision requiring force or the threat of force, while
+§ 3617 is a civil prohibition whose widest verb is "interfere with" and which requires no force at all.
+A course of conduct far short of the Texas criminal threshold can still be a federal discriminatory
+housing practice.
 
 **Your personal exposure, in three layers.** Fair housing is not something only the broker or the
 seller worries about.
@@ -865,10 +1108,11 @@ The through-line in (b)(1) and (b)(2) is **purpose**. Marital status may be aske
 the creditor's rights and remedies — in Texas, community property and spousal-joinder questions make
 that a real need — but "not to discriminate in a determination of credit-worthiness." Age and public
 assistance income may be asked about to assess "the amount and probable continuance of income levels."
-The question is lawful; using the answer as a proxy for creditworthiness is not. Note that
-§ 1691(b) refers to "regulations of the Bureau"; the Bureau is defined elsewhere in the Consumer Credit
-Protection Act and its implementing regulation is not a held source, so this module states only what
-§ 1691 itself says. Section 1691(c) adds that refusing credit offered under a legally authorized
+The question is lawful; using the answer as a proxy for creditworthiness is not. Section 1691(b) refers
+throughout to "regulations of the Bureau," and both halves of that phrase were held and read for this
+course: **15 U.S.C. § 1691a(c) supplies the definition — "[t]he term 'Bureau' means the Bureau of
+Consumer Financial Protection"** — and the Bureau's regulations under ECOA are Regulation B, 12 C.F.R.
+part 1002, four sections of which were held and are taught below. Section 1691(c) adds that refusing credit offered under a legally authorized
 assistance program for an economically disadvantaged class, a nonprofit program, or a **special purpose
 credit program** "offered by a profit-making organization to meet special social needs" is not a
 violation "if such refusal is required by or made pursuant to such program" — the provision that lets
@@ -903,6 +1147,241 @@ waive the three-day timing and may be charged a reasonable fee for the appraisal
 must be "at no additional cost," and the creditor must give written notice of the right at
 application. Subsection (e)(6) defines "valuation" broadly, reaching values from "an automated
 valuation model, a broker price opinion, or other methodology or mechanism."
+
+**§ 1691a — the words ECOA defines for itself.** Section 1691a supplies the definitions and rules of
+construction "applicable for the purposes of this subchapter," and four of them decide who the statute
+reaches. An **"applicant"** is "any person who applies to a creditor directly for an extension,
+renewal, or continuation of credit, or applies to a creditor indirectly by use of an existing credit
+plan for an amount exceeding a previously established credit limit" (§ 1691a(b)). A **"creditor"** is
+"any person who regularly extends, renews, or continues credit; any person who regularly arranges for
+the extension, renewal, or continuation of credit; or any assignee of an original creditor who
+participates in the decision to extend, renew, or continue credit" (§ 1691a(e)). Read the middle
+clause slowly: **"any person who regularly arranges for" credit is a creditor**, which is a wider net
+than "lender," and § 1691a(f) defines "person" to mean "a natural person, a corporation, government or
+governmental subdivision or agency, trust, estate, partnership, cooperative, or association" — so an
+individual is a person here, as under 42 U.S.C. § 3602(d). **"Credit"** is "the right granted by a
+creditor to a debtor to defer payment of debt or to incur debts and defer its payment or to purchase
+property or services and defer payment therefor" (§ 1691a(d)). And § 1691a(g) is the hinge into
+Regulation B: "[a]ny reference to any requirement imposed under this subchapter or any provision
+thereof includes reference to the regulations of the Bureau under this subchapter or the provision
+thereof in question." That sentence is why the regulation below is not a gloss on the statute but part
+of what the statute requires.
+
+**§ 1691c — who enforces ECOA.** Section 1691c is titled "Administrative enforcement," and it answers
+the question a client will ask when the letter arrives: who does this go to? Its structure is a list
+of enforcing agencies, each paired with the institutions it supervises. Under § 1691c(a)(1) the
+requirements are enforced under section 8 of the Federal Deposit Insurance Act "by the appropriate
+Federal banking agency" as to national banks, Federal savings associations and Federal branches and
+agencies of foreign banks; member banks of the Federal Reserve System; and banks and State savings
+associations insured by the FDIC. Paragraph (a)(2) assigns Federal credit unions to the National
+Credit Union Administration; (a)(6) assigns Farm Credit System institutions to the Farm Credit
+Administration; (a)(7) assigns brokers and dealers to the Securities and Exchange Commission; (a)(8)
+assigns small business investment companies to the Small Business Administration; and (a)(9) assigns,
+under subtitle E of the Consumer Financial Protection Act of 2010, "any person subject to this
+subchapter" to the Bureau. Section 1691c(c) then supplies the residual: except where enforcement "is
+specifically committed to some other Government agency" under paragraphs (1) through (8), "the Federal
+Trade Commission shall be authorized to enforce such requirements," with all its Federal Trade
+Commission Act powers available "irrespective of whether that person is engaged in commerce or meets
+any other jurisdictional tests." Section 1691c(b) makes a violation of an ECOA requirement "a
+violation of a requirement imposed under" whichever Act the supervising agency enforces, which is how
+a fair lending failure becomes an ordinary supervisory violation. Two practical takeaways. First,
+**there is an agency for every creditor** — the list plus the FTC residual leaves no gap, which is why
+Regulation B requires the adverse-action notice to name one. Second, § 1691c is about *administrative*
+enforcement; ECOA's civil liability section, 15 U.S.C. § 1691e, was **not** held for this course, so
+this module states no ECOA damages figure, no statutory penalty and no limitations period.
+
+**Regulation B — 12 C.F.R. part 1002.** Regulation B is the Bureau's regulation implementing ECOA, and
+by § 1691a(g) its requirements are ECOA's requirements. Four sections were held and read, and together
+they are the operational form of everything in § 1691.
+
+**§ 1002.2 — definitions, and the one that changes your reading of § 1691(d).** Section 1002.2(z)
+gathers the statutory bases into a single defined term: **"Prohibited basis** means race, color,
+religion, national origin, sex, marital status, or age (provided that the applicant has the capacity to
+enter into a binding contract); the fact that all or part of the applicant's income derives from any
+public assistance program; or the fact that the applicant has in good faith exercised any right under
+the Consumer Credit Protection Act or any state law upon which an exemption has been granted by the
+Bureau." That is § 1691(a)'s list, restated as a noun the rest of the regulation can use.
+Section 1002.2(n) defines the verb to match: **"Discriminate against an applicant** means to treat an
+applicant less favorably than other applicants" — no intent word, and the comparison is with other
+applicants. Section 1002.2(m) defines a **"credit transaction"** as "every aspect of an applicant's
+dealings with a creditor regarding an application for credit or an existing extension of credit,"
+naming information requirements, investigation procedures, standards of creditworthiness, terms of
+credit, furnishing of credit information, revocation, alteration or termination of credit, and
+collection procedures — which is what § 1691(a)'s "any aspect of a credit transaction" means in
+practice, itemized. Section 1002.2(o) defines **"Elderly"** as "age 62 or older," the age § 1691(b)(3)
+leaves unquantified. Section 1002.2(l) widens "creditor" for two purposes: for §§ 1002.4(a) and (b),
+the term "also includes a person who, in the ordinary course of business, regularly refers applicants
+or prospective applicants to creditors, or selects or offers to select creditors to whom requests for
+credit may be made." **Read that one twice.** A license holder who, in the ordinary course of
+business, regularly refers buyers to lenders is inside that clause for the purposes of the
+anti-discrimination and anti-discouragement rules in § 1002.4 — the single most important sentence in
+this unit for your own conduct.
+
+Now the definition the exercise turns on. Section 1002.2(c)(1) defines **adverse action** as (i) "[a]
+refusal to grant credit in substantially the amount or on substantially the terms requested in an
+application unless the creditor makes a counteroffer (to grant credit in a different amount or on other
+terms) and the applicant uses or expressly accepts the credit offered"; (ii) "[a] termination of an
+account or an unfavorable change in the terms of an account that does not affect all or substantially
+all of a class of the creditor's accounts"; or (iii) "[a] refusal to increase the amount of credit
+available to an applicant who has made an application for an increase." Paragraph (c)(2) then excludes
+five things, including "[a] change in the terms of an account expressly agreed to by an applicant";
+action taken "in connection with inactivity, default, or delinquency as to that account"; "[a] refusal
+to extend credit because applicable law prohibits the creditor from extending the credit requested";
+and "[a] refusal to extend credit because the creditor does not offer the type of credit or credit plan
+requested." Paragraph (c)(3) supplies the tie-breaker: an action within both lists "is governed by
+paragraph (c)(2)," so the exclusions win.
+
+Compare that with § 1691(d)(6), which you read above. The statute and the regulation agree on the
+core — an approval for substantially less than was requested is adverse action — but the regulation
+adds the **counteroffer carve-out** the statute does not spell out: where the creditor makes a
+counteroffer and the applicant "uses or expressly accepts" it, the original refusal is not adverse
+action. The client who applied for $310,000, was offered $240,000, and *took it* is in a different
+position from the client who was offered $240,000 and walked away. Section 1002.2(f) also supplies the
+definition the § 1691(d)(1) clock depends on: a **"completed application"** is one "in connection with
+which a creditor has received all the information that the creditor regularly obtains and considers in
+evaluating applications for the amount and type of credit requested," including credit reports,
+additional information requested from the applicant, and any necessary approvals or reports — and
+"[t]he creditor shall exercise reasonable diligence in obtaining such information," so a creditor may
+not stall the clock by declining to gather what it needs.
+
+**§ 1002.4 — the general rules.** Two sentences carry the section. Paragraph (a), **Discrimination:**
+"A creditor shall not discriminate against an applicant on a prohibited basis regarding any aspect of a
+credit transaction." Paragraph (b), **Discouragement:** "A creditor shall not make any oral or written
+statement, in advertising or otherwise, directed at applicants or prospective applicants that the
+creditor knows or should know would cause a reasonable person to believe that the creditor would deny,
+or would grant on less favorable terms, a credit application by the applicant or prospective applicant
+because of the applicant or prospective applicant's prohibited basis characteristic(s)," and for that
+paragraph "oral or written statements are spoken or written words, or visual images such as symbols,
+photographs, or videos."
+
+Paragraph (b) has no counterpart in § 1691 and it is the paragraph closest to a license holder's daily
+speech. Notice its features. **No application is required** — it protects "prospective applicants," so
+the violation can be complete before anyone applies. **The standard is objective and constructive:**
+what the creditor "knows or should know" would cause "a reasonable person" to believe, not what the
+speaker intended. **The belief that matters is a discouraging one** — that credit "would" be denied or
+granted on less favourable terms. And the coverage extends to **images**, so marketing photography is
+inside the rule. Set that beside § 1002.2(l)'s extension of "creditor" for the purposes of § 1002.4(a)
+and (b) to a person who regularly refers applicants to creditors, and the practical instruction writes
+itself: telling a prospective buyer some version of "people in your situation don't usually get
+approved here" is exactly the statement § 1002.4(b) describes. The rest of the section is mechanical
+but worth knowing: § 1002.4(c) requires written applications "for the dwelling-related types of credit
+covered by § 1002.13(a)"; § 1002.4(d)(1) requires written disclosures to be "clear and conspicuous" and
+generally in a retainable form; § 1002.4(d)(2) permits electronic delivery subject to the E-Sign Act;
+and § 1002.4(e) permits disclosures in other languages "provided they are available in English upon
+request."
+
+**§ 1002.5 — what a creditor may and may not ask.** This is the section that turns § 1691(b)'s general
+permission into workable rules, and it is the answer to a client who asks why a lender wanted to know
+something. The default is permissive: under § 1002.5(a)(1), "[e]xcept as provided in paragraphs (b)
+through (d) of this section, a creditor may request any information in connection with a credit
+transaction." The exceptions are where the content is.
+
+*Race, color, religion, national origin, sex.* Section 1002.5(b) is a flat prohibition with two
+exceptions: "A creditor shall not inquire about the race, color, religion, national origin, or sex of
+an applicant or any other person in connection with a credit transaction, except as provided in
+paragraphs (b)(1) and (b)(2)." The first exception is a **self-test** meeting § 1002.15's requirements,
+and a creditor making such an inquiry must disclose, orally or in writing and at the time of the
+request, that the applicant need not provide the information, that the creditor is requesting it "to
+monitor its compliance with the Federal Equal Credit Opportunity Act," that federal law prohibits
+discriminating on the basis of that information "or on the basis of an applicant's decision not to
+furnish the information," and, if applicable, that some information will be collected by visual
+observation or surname. The second is narrow and formal: an applicant "may be requested to designate a
+title on an application form (such as Ms., Miss, Mr., or Mrs.) if the form discloses that the
+designation of a title is optional," and the form "shall otherwise use only terms that are neutral as
+to sex."
+
+That prohibition has an important counterweight in the same section, and it explains a form your
+clients will meet. Section 1002.5(a)(2) provides that **notwithstanding** paragraphs (b) through (d),
+"a creditor shall request information for monitoring purposes as required by § 1002.13 for credit
+secured by the applicant's dwelling," and may obtain information required by a regulation, order or
+agreement of a court or enforcement agency to monitor or enforce compliance. So on a dwelling-secured
+loan the demographic questions are not merely permitted, they are **required** for monitoring — which
+is why a mortgage application asks what a car loan application may not. Section 1002.5(a)(3) allows
+otherwise-restricted information to be obtained to determine eligibility for a special purpose credit
+program under § 1002.8, the regulatory partner of § 1691(c)(3), and § 1002.5(a)(4) sets out a detailed
+list of further permitted collections tied to HMDA reporting under 12 C.F.R. part 1003 and to the
+small-business lending data in subpart B of part 1002.
+
+*Spouses and marital status.* Section 1002.5(c)(1): "[e]xcept as permitted in this paragraph, a
+creditor may not request any information concerning the spouse or former spouse of an applicant."
+Paragraph (c)(2) then lists five permissible situations — the spouse will be permitted to use the
+account; will be contractually liable on it; the applicant is relying on the spouse's income for
+repayment; **"[t]he applicant resides in a community property state or is relying on property located
+in such a state as a basis for repayment of the credit requested"**; or the applicant is relying on
+alimony, child support or separate maintenance from a spouse or former spouse. The fourth is the Texas
+one, and it is the concrete form of the point unit 4 already makes about § 1691(b)(1): Texas is a
+community property state, so the spousal inquiry a Texas lender makes is the inquiry § 1002.5(c)(2)(iv)
+expressly permits, and it is permitted for that reason and not because lenders may ask what they like.
+Section 1002.5(d)(1) completes the rule: on an application for **individual unsecured credit** a
+creditor "shall not inquire about the applicant's marital status unless the applicant resides in a
+community property state or is relying on property located in such a state as a basis for repayment,"
+and on any other application the creditor may inquire "but shall use only the terms married,
+unmarried, and separated," with an optional explanation that "unmarried" includes single, divorced and
+widowed persons. Section 1002.2(u) defines marital status to the same three states.
+
+*Alimony and children.* Section 1002.5(d)(2) forbids asking whether stated income derives from
+alimony, child support or separate maintenance "unless the creditor discloses to the applicant that
+such income need not be revealed if the applicant does not want the creditor to consider it." And
+§ 1002.5(d)(3), **Childbearing, childrearing**, is the one to remember: "A creditor shall not inquire
+about birth control practices, intentions concerning the bearing or rearing of children, or capability
+to bear children. A creditor may inquire about the number and ages of an applicant's dependents or
+about dependent-related financial obligations or expenditures, provided such information is requested
+without regard to sex, marital status, or any other prohibited basis." Dependants as a budget line,
+yes; family plans, never. Section 1002.5(e) provides that a creditor "may inquire about the permanent
+residency and immigration status of an applicant or any other person in connection with a credit
+transaction."
+
+**§ 1002.9 — the notification requirement, which is § 1691(d) with the details filled in.** Start with
+timing. Section 1002.9(a)(1) requires a creditor to notify an applicant of action taken within: "(i) 30
+days after receiving a completed application concerning the creditor's approval of, counteroffer to, or
+adverse action on the application"; "(ii) 30 days after taking adverse action on an incomplete
+application," unless notice of incompleteness is given under paragraph (c); "(iii) 30 days after taking
+adverse action on an existing account"; or "(iv) 90 days after notifying the applicant of a counteroffer
+if the applicant does not expressly accept or use the credit offered." Four clocks, not one. The
+statute's thirty days runs from a *completed* application; the regulation adds thirty days for adverse
+action on an *incomplete* application and on an *existing account*, and ninety days for an unaccepted
+counteroffer.
+
+Then content. Section 1002.9(a)(2): a notification given when adverse action is taken "shall be in
+writing" and shall contain a statement of the action taken; the name and address of the creditor; a
+statement of the provisions of section 701(a) of the Act; the name and address of the Federal agency
+that administers compliance with respect to the creditor — this is where § 1691c's list of agencies
+surfaces on the page your client is holding — and **either** "(i) [a] statement of specific reasons for
+the action taken" **or** "(ii) [a] disclosure of the applicant's right to a statement of specific
+reasons within 30 days, if the statement is requested within 60 days of the creditor's notification,"
+including "the name, address, and telephone number of the person or office from which the statement of
+reasons can be obtained." Those are § 1691(d)(2)'s two routes and its 60-day and 30-day clocks, in the
+same shape; the regulation adds that if the creditor gives the reasons orally it must also disclose the
+applicant's right to have them confirmed in writing within 30 days of a written request for
+confirmation.
+
+Section 1002.9(b)(1) prints the **ECOA notice** the creditor must provide "substantially similar" to
+the regulation's text, reciting the prohibited bases and directing the applicant to "[t]he Federal
+agency that administers compliance with this law concerning this creditor." And § 1002.9(b)(2) puts
+teeth on § 1691(d)(3)'s "specific reasons": the statement "must be specific and indicate the principal
+reason(s) for the adverse action," and — the sentence to quote to a client holding a vague letter —
+"[s]tatements that the adverse action was based on the creditor's internal standards or policies or
+that the applicant, joint applicant, or similar party failed to achieve a qualifying score on the
+creditor's credit scoring system are insufficient."
+
+Four more paragraphs matter to a real file. **Incomplete applications** (§ 1002.9(c)): within 30 days
+of receiving an application incomplete "regarding matters that an applicant can complete," the creditor
+must either notify of action taken or send a written notice of incompleteness "specifying the
+information needed, designating a reasonable period of time for the applicant to provide the
+information, and informing the applicant that failure to provide the information requested will result
+in no further consideration being given to the application"; if the applicant supplies it in time the
+creditor must act and notify under paragraph (a). **Small-volume creditors** (§ 1002.9(d)): a creditor
+that "did not receive more than 150 applications during the preceding calendar year" may satisfy the
+section, statements of specific reasons included, by oral notification. **Withdrawal**
+(§ 1002.9(e)): where the parties contemplate that the applicant will inquire about the application's
+status, a creditor that approves it may treat it as withdrawn if the applicant has not inquired within
+30 days of applying. **Multiple applicants and third parties** (§ 1002.9(f) and (g)): notice need only
+go to one applicant "but must be given to the primary applicant where one is readily apparent"; and
+where an application is made to more than one creditor and the applicant accepts or uses one
+creditor's offer, the others need not notify — otherwise each creditor taking adverse action must
+comply "directly or through a third party," and a third-party notice "shall disclose the identity of
+each creditor on whose behalf the notice is given." That last rule is the one that explains a client
+receiving several denial letters from lenders they never contacted.
 
 **The fair housing side — 42 U.S.C. § 3605.** ECOA is not the only statute at the lending desk. The
 Fair Housing Act has its own financing provision, and it is short enough to learn whole.
@@ -969,9 +1448,14 @@ The applicant declined because she is pregnant is outside § 1691(a) and inside 
 her income is a public assistance payment is inside § 1691(a)(2) and outside every fair housing list.
 
 **What to do when a client is denied.** This paragraph is practice, not law, and cites nothing. **Do**
-make sure the client reads the notice, and point out that § 1691(d)(2) entitles them to a statement of
-specific reasons and that the notice must say how to request one and from whom. **Do** note the timing
-— sixty days to request, thirty days to receive — and tell them to calendar it. **Do** remind them of
+make sure the client reads the notice, and point out that § 1691(d)(2) and 12 C.F.R. § 1002.9(a)(2)
+entitle them to a statement of specific reasons and that the notice must say how to request one and
+from whom. **Do** note the timing
+— sixty days to request, thirty days to receive — and tell them to calendar it. **Do** point out that
+the notice must name "the Federal agency that administers compliance with respect to the creditor"
+(§ 1002.9(a)(2)), which is the agency § 1691c assigns, and that under § 1002.9(b)(2) a letter saying
+only that they missed the creditor's internal standards or failed to make a qualifying score is
+"insufficient" on the regulation's own word. **Do** remind them of
 the § 1691(e) appraisal-copy right, since a valuation problem is a common reason for adverse action on
 different terms. **Do** encourage them to speak with the creditor, another creditor, or a lawyer.
 **Do not** offer your own theory of the denial, tell the client whether they have a claim, steer them
@@ -996,6 +1480,29 @@ this unit:
 4. A Houston lender approves an applicant for $240,000 when she applied for $310,000 on the same terms.
    Is that "adverse action" under § 1691(d)(6)? Quote the clause that decides it, and state what the
    lender must do within thirty days under § 1691(d)(1).
+
+Now open Regulation B, 12 C.F.R. §§ 1002.2, 1002.4, 1002.5 and 1002.9, and answer from the text quoted
+in this unit:
+
+5. Take question 4 again under 12 C.F.R. § 1002.2(c)(1)(i). The lender's $240,000 approval was a
+   counteroffer and the applicant expressly accepted it. Is it still adverse action? Quote the words
+   that decide it, and say what § 1002.9(a)(1)(iv) requires instead if she neither accepts nor uses
+   the credit offered.
+6. Section 1002.2(l) extends "creditor" for the purposes of §§ 1002.4(a) and (b) to one further group
+   of people. Quote the clause and say whether a Texas sales agent who regularly refers buyers to two
+   preferred lenders is inside it.
+7. Under § 1002.4(b), does a violation require an application, an intent to discourage, or a spoken
+   word? Answer each from the paragraph's own language, and name the category of material other than
+   words that the paragraph's closing sentence brings inside the rule.
+8. A Texas lender asks a married applicant for her husband's income and account information on an
+   application for a mortgage on a Houston home. Which clause of § 1002.5(c)(2) permits the inquiry,
+   and what would § 1002.5(d)(1) say if the same applicant applied instead for individual **unsecured**
+   credit while relying on no Texas property?
+9. Under § 1002.5(b), a creditor may not ask an applicant's race — yet a mortgage application does ask.
+   Which paragraph of § 1002.5(a) resolves that, and what does it say about the word "shall"?
+10. Your client's denial letter says only, "Your application did not meet our internal credit
+    standards." Quote the sentence of § 1002.9(b)(2) that addresses that letter, and list the four
+    items besides a reason that § 1002.9(a)(2) requires the notification to contain.
 
 ## Unit: Community Reinvestment
 
