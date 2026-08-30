@@ -15,8 +15,7 @@ does not require, and precisely which duties the intermediary's duties supersede
 to decide what an intermediary and an appointed license holder may and may not disclose, including the
 three exceptions written into subdivision (3); carry out an appointment under § 1101.560 — identify who
 may appoint, who may be appointed, the two conditions the statute imposes, the written notice the
-broker owes the parties, and what an appointed license holder may do that the intermediary may not; and
-and distinguish an intermediary arrangement entered into deliberately from unintended dual
+broker owes the parties, and what an appointed license holder may do that the intermediary may not; and distinguish an intermediary arrangement entered into deliberately from unintended dual
 representation, naming the specific behaviours that produce the latter and the disciplinary exposure it
 carries.
 

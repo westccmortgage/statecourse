@@ -3,8 +3,8 @@
   "reproduceWith": "node scripts/texas-source-inventory.mjs",
   "regenerateWith": "node scripts/texas-source-inventory.mjs --write",
   "note": "Every file held under texas/trec-sources, walked recursively. Hashes are recomputed from disk; nothing here is transcribed by hand or carried over from another register.",
-  "fileCount": 145,
-  "totalBytes": 21818476,
+  "fileCount": 146,
+  "totalBytes": 21820299,
   "files": [
     {
       "path": "texas/trec-sources/articles/trec-contracts-page-2026-08-29.html",
@@ -690,6 +690,11 @@
       "path": "texas/trec-sources/trec-rules/535.3.txt",
       "sha256": "e92a0cd37b738bc11a4cf7bf87d8f682dfa292a4eb36c405b66401ea6fd809c6",
       "bytes": 502
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.35.txt",
+      "sha256": "32641992fb1a9b905f159e9084f78285fc954db95f8d041dbabb5f43632f2249",
+      "bytes": 1823
     },
     {
       "path": "texas/trec-sources/trec-rules/535.4.txt",

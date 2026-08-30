@@ -569,13 +569,14 @@ compensation."
 
 **Compensation across a change of sponsorship survives too, and Texas says so expressly.** Module 09
 teaches the compensation rules; the survival clause inside them is this module's business. Section
-1101.651(b) bars a sales agent from accepting compensation "from a person other than the broker that
-is sponsoring the sales agent *or was sponsoring the sales agent when the sales agent earned the
-compensation*" — that final clause is a survival rule written into a prohibition, and 22 TAC § 535.3
-says the same in terms of the written consent of the sponsoring broker or of "the broker who
-sponsored the sales agent when the sales agent became entitled to the commission." So a fee earned at
-your old brokerage may still reach you, through that brokerage and through no one else — not from the
-client, not from the title company as a direct payee, and not from the other side's broker.
+1101.651(b) provides that "[a] sales agent may not accept compensation for a real estate transaction
+from a person other than the broker that is sponsoring the sales agent or was sponsoring the sales
+agent when the sales agent earned the compensation." That final clause is a survival rule written
+into a prohibition. 22 TAC § 535.3 says the same in terms of consent, requiring "the written consent
+of the sales agent's sponsoring broker or the broker who sponsored the sales agent when the sales
+agent became entitled to the commission or other valuable consideration." So a fee earned at your old
+brokerage may still reach you, through that brokerage and through no one else — not from the client,
+not from the title company as a direct payee, and not from the other side's broker.
 
 ### Records — and the documents that belong to the client
 

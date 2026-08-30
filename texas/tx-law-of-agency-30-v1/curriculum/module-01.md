@@ -936,6 +936,6 @@ requires sponsorship and conduct for that broker, § 1101.803 puts your conduct 
 licence, and § 1101.367(a) puts your licence on inactive status the moment the sponsorship ends.
 Carry the three questions — who does my broker represent, has that been made clear to everyone, and
 what have I put in writing with an ending date — into every file. Module 02 takes up the fiduciary
-duties and the IABS notice, Module 09 takes up broker responsibility, and Module
-10 takes up § 1101.652; the rest of this course will make sense once this module's vocabulary is
+duties and the IABS notice, Module 09 takes up broker responsibility, and Module 10 takes up
+§ 1101.652; the rest of this course will make sense once this module's vocabulary is
 secure.
