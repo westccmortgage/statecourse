@@ -51,11 +51,21 @@ const jaccard = (a, b) => {
 
 /* "dual agency" is legitimate in this course only where it is being distinguished from the Texas
    intermediary. A sentence that uses it as a label for what a Texas broker does is the defect. */
-const DUAL_OK = /\bnot\b|\bnever\b|\babolish|\breplac|\bunlike\b|\bother state|\bdiffer|\binstead\b|\bno longer\b|\bcannot\b|\bmay not\b|\bwhy\b|\bconfus|\bmistake|\berror\b|\bterms? (?:are|is)\b|\bhistor/i;
+const DUAL_OK = /\bnot\b|\bnever\b|\babolish|\breplac|\bsubstitut|\bunlike\b|\bother state|\bdiffer|\binstead\b|\bno longer\b|\bcannot\b|\bmay not\b|\bwhy\b|\bconfus|\bmistake|\berror\b|\bterms? (?:are|is)\b|\bhistor|\bwas,? as a concept|\banswer\b|\blabel\b/i;
 /* Employment authorities carry their own scope words. A sentence that generalises one of them past
    its subtitle or title is the defect the work order names. */
-const EMPLOYMENT_OVERREACH =
-  /\u00a7\s*201\.072[^.]{0,200}?\b(?:controls?|controlling|governs?|determines?|decides?)\b[^.]{0,120}?\b(?:classification|status|employee|independent contractor)\b(?![^.]{0,80}\bunemployment\b)|26\s+U\.S\.C\.[^.]{0,60}3508[^.]{0,200}?\b(?:Texas|state law|workers'? compensation|wage|discrimination)\b/gi;
+/* An employment authority is overreached when a sentence gives it work outside its own subtitle or
+   title. The first version of this check matched any sentence pairing 26 U.S.C. 3508 with "Texas"
+   and flagged four sentences in module 09 — every one of which was doing the opposite, bounding the
+   statute ("confined by its own words to Title 26, decides nothing under Texas law"). A detector
+   that fires on the correct sentences is worse than none, so bounding language now clears a
+   sentence, exactly as contrast language clears a "dual agency" mention. */
+const EMPLOYMENT_SENTENCE = /[^.\n]*(?:§\s*201\.072|26\s+U\.S\.C\.[^.\n]{0,40}3508)[^.\n]*\./gi;
+const EMPLOYMENT_BOUNDED =
+  /\bin this subtitle\b|\bfor purposes of this title\b|\bconfined\b|\bbounded\b|\blimited to\b|\bonly\b|\bdoes not\b|\bdecides nothing\b|\bnot\b|\bunemployment\b|\bTitle 26\b|\bfederal tax\b|\bwas not held\b|\bdefines\b|\bneither\b|\bnor\b/i;
+/* Even a bounded sentence overreaches if it hands the statute one of these subjects as its own. */
+const EMPLOYMENT_OVERREACH_SUBJECT =
+  /\b(?:controls?|controlling|governs?|determines?|decides?|settles?)\b[^.\n]{0,80}\b(?:wage|hour|workers'? compensation|discrimination|vicarious|common[- ]law (?:employment|status)|tort)\b/i;
 
 const rows = [];
 for (const [index, topic] of TOPICS.entries()) {
@@ -101,7 +111,12 @@ for (const [index, topic] of TOPICS.entries()) {
   for (const m of prose.matchAll(/[^.\n]*\bdual agen(?:cy|t)\b[^.\n]*\./gi)) {
     if (!DUAL_OK.test(m[0])) dualMisuse.push(m[0].trim().slice(0, 200));
   }
-  const employmentOverreach = [...prose.matchAll(EMPLOYMENT_OVERREACH)].map((m) => m[0].slice(0, 200));
+  const employmentOverreach = [];
+  for (const m of prose.matchAll(EMPLOYMENT_SENTENCE)) {
+    const sentence = m[0].replace(/\s+/g, " ").trim();
+    if (EMPLOYMENT_OVERREACH_SUBJECT.test(sentence)) { employmentOverreach.push(sentence.slice(0, 220)); continue; }
+    if (!EMPLOYMENT_BOUNDED.test(sentence)) employmentOverreach.push(sentence.slice(0, 220));
+  }
 
   /* Pre-2026 statements presented as current: the repealed subagency definition, or a claim that no
      written buyer agreement is needed, without the 2026 framing. */
