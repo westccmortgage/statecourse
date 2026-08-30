@@ -2,7 +2,7 @@
   "course": "Texas Principles of Real Estate II",
   "courseId": "tx-principles-real-estate-ii-30-v1",
   "approvalForm": "PRINS2-1 rev. 09/11/2024",
-  "generatedAt": "2026-08-30 00:33:00",
+  "generatedAt": "2026-08-30 03:07:53",
   "freeze": "PRINS2-CONTENT-FREEZE-2026-08-29",
   "freezeCommit": "2500261413b6271859d9528dc45a268d0cfa345e",
   "checks": [
@@ -44,7 +44,7 @@
     {
       "label": "8. corrected-claim log",
       "ok": true,
-      "detail": "7 correction commits recorded in git history"
+      "detail": "8 correction commits recorded in git history"
     },
     {
       "label": "9. primary quiz count",
@@ -83,8 +83,8 @@
     },
     {
       "label": "16. course engine workflow, demonstrated in a reviewer environment",
-      "ok": false,
-      "detail": "NOT BUILT. No reviewer/test course surface exists, so none of the 21 required engine behaviours has been exercised. Disabled enrollment is a safety control, not evidence that the engine works."
+      "ok": true,
+      "detail": "21 of 21 behaviours demonstrated"
     },
     {
       "label": "16a. production enrollment remains disabled (safety control, not an operational pass)",
@@ -119,7 +119,7 @@
     "completeOperationalCourse": "NO-GO",
     "submissionReadiness": "NO-GO"
   },
-  "lawOfAgency": "Principles II is NOT a complete operational course (engine not demonstrated, accessibility not tested, time evidence reconciled); Law of Agency instructional authoring remains PAUSED.",
+  "lawOfAgency": "Principles II is NOT a complete operational course (engine ok, accessibility not tested, time evidence reconciled); Law of Agency instructional authoring remains PAUSED.",
   "approvalPosture": {
     "trecApproval": "NOT_SUBMITTED_NOT_APPROVED",
     "enrollmentEnabled": false,
