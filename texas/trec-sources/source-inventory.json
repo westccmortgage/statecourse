@@ -3,8 +3,8 @@
   "reproduceWith": "node scripts/texas-source-inventory.mjs",
   "regenerateWith": "node scripts/texas-source-inventory.mjs --write",
   "note": "Every file held under texas/trec-sources, walked recursively. Hashes are recomputed from disk; nothing here is transcribed by hand or carried over from another register.",
-  "fileCount": 110,
-  "totalBytes": 19876349,
+  "fileCount": 144,
+  "totalBytes": 20327219,
   "files": [
     {
       "path": "texas/trec-sources/articles/trec-contracts-page-2026-08-29.html",
@@ -222,6 +222,11 @@
       "bytes": 191303
     },
     {
+      "path": "texas/trec-sources/federal/us26-3508.html",
+      "sha256": "77a251dca1cb6510851bdc79089b664711607a6afb6d7b9a16590c7d702bef27",
+      "bytes": 150546
+    },
+    {
       "path": "texas/trec-sources/federal/us26-860A.html",
       "sha256": "756f0bf650877616c78cc65d81977be4fbf2406df8db9c71f5cd86fae0773499",
       "bytes": 149816
@@ -412,6 +417,16 @@
       "bytes": 18106
     },
     {
+      "path": "texas/trec-sources/statutes/LA.201.htm",
+      "sha256": "f8a816c3ca477541417c65b34fd99ad4037ac223e02dc260dfe2b2ec88d96f3b",
+      "bytes": 77445
+    },
+    {
+      "path": "texas/trec-sources/statutes/LA.21.htm",
+      "sha256": "c92d7ed636c5d88f55f4448134fd04da1f9f969ee20babb38d01c548ea5f15fc",
+      "bytes": 157702
+    },
+    {
       "path": "texas/trec-sources/statutes/LG.211.htm",
       "sha256": "0f3f17ce5e7776a800074fe061214488c0661d33498caae9d560669e76e77902",
       "bytes": 109897
@@ -532,6 +547,156 @@
       "bytes": 172495
     },
     {
+      "path": "texas/trec-sources/trec-rules/531.1.txt",
+      "sha256": "e526560dbe9fdc688bd22c422977f18a052ed95ed26e90045907801dbfa48658",
+      "bytes": 322
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/531.18.txt",
+      "sha256": "be1e80c58218eb2a23dce64db8cc5eba56c8aa88a783acefbe9d01eb15881598",
+      "bytes": 1227
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/531.19.txt",
+      "sha256": "97daf1e28de570d597706a55d3cb3053dd1395b4504f92c8d62b9437d1634e10",
+      "bytes": 648
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/531.2.txt",
+      "sha256": "e9e3e0e277df8b6ec627bf5aaacdcfff5fcc1b74093337c57341b975c14a0044",
+      "bytes": 778
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/531.20.txt",
+      "sha256": "ae123f1c3d83e1467fe4a7c75a54346546f69afd541a39f9a36173819d3d6757",
+      "bytes": 2101
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/531.3.txt",
+      "sha256": "e0426e6158f3cd3b6c26ddff7fd90cde9a7b851d2d67408d9553d786e8f3d43c",
+      "bytes": 281
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/531.4.txt",
+      "sha256": "43b112793ee2e6d947e0011df1910e2c923613c4bb55933851ee46eae67868b3",
+      "bytes": 601
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.1.txt",
+      "sha256": "6ed8623c50818a454a4f4d9cb2ae3169bfb6ebdef73fbb949095142ecc10e99b",
+      "bytes": 1850
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.131.txt",
+      "sha256": "0c35d9c86fe0b8f3fccc3b68fe6f79b5b7d8d51e85086382daadc273151f4ac5",
+      "bytes": 584
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.141.txt",
+      "sha256": "7dde456f63f828d3b2be9ba2048bc8096e1336aeca1f9485fab34e93c26b41c7",
+      "bytes": 6498
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.144.txt",
+      "sha256": "0b8529b7fbd7a3bab2df030b2156159bf133f1ee9dcf2441a7d7b8ad8abf75ce",
+      "bytes": 1134
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.145.txt",
+      "sha256": "45c6e20c061cd5747222f4401fe6b20fd9d808148377dbdcc67430ddcdf3de9a",
+      "bytes": 734
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.146.txt",
+      "sha256": "afa8ef1f244fafd04893891ad681e266a4de57f013af32b6513b7df0b8b27719",
+      "bytes": 5084
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.147.txt",
+      "sha256": "f6861f6f78ab4feb600464bc4733a21da895e067c59eb9d3e755d2b0877a4f04",
+      "bytes": 1733
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.148.txt",
+      "sha256": "639ca0bd4d50e77313952587412ed57c35005e0d47e26b8e78be99744bbf4e1d",
+      "bytes": 3973
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.149.txt",
+      "sha256": "ebc17478542f03e1171b3d1412f842ffa736d76372ee7b8b625bbfb0655ff614",
+      "bytes": 672
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.153.txt",
+      "sha256": "8859b2661f0b768cdf9d5307e2feeaabdb7ea2a8d37ad038c4ec028cfa2bc5ab",
+      "bytes": 446
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.154.txt",
+      "sha256": "d03acc8c470b9148411c463fe31ffa3a9b6344a761b5c43b88aea680c87e3bc8",
+      "bytes": 3332
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.155.txt",
+      "sha256": "d810281b23fdbe923d0ac712213c8c99f173f6a07265a91b53bc91db6cf982b1",
+      "bytes": 5859
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.156.txt",
+      "sha256": "b432afcf0351fd1391a13ae231cef1db2cac3b47f47b2114c2dabf66ad2a2ecb",
+      "bytes": 1240
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.157.txt",
+      "sha256": "958c5d966bb1aa369d6bd80447a1ab1ed1835479929dd06962d6f5c98cbe87bb",
+      "bytes": 277
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.16.txt",
+      "sha256": "dba92618f0200c824091b2d5f94fec70d47faf3814c04ad7baea8353cf97a2fd",
+      "bytes": 1196
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.17.txt",
+      "sha256": "a67f0514277a956b4740738d23d949693075110d3236d0d2a996cb87e52f3662",
+      "bytes": 1388
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.191.txt",
+      "sha256": "e74c8d64a22aea761d36fe7e2ab31078ac04d32ca97dcf218247798e4b29a327",
+      "bytes": 2573
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.2.txt",
+      "sha256": "c776c91cb6432a735e1d69f079f9606b1f990fbefcea506adcb372f01d4f094b",
+      "bytes": 5902
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.20.txt",
+      "sha256": "cba8a67aca7d8452cce4a7366e3a8e66b67ab0c3b11a22838b2ef3de0eff6189",
+      "bytes": 1212
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.21.txt",
+      "sha256": "fd0b790e01ccf6a73c05568760ca1df75a9ef21683cbed5a717f60609e31c1e7",
+      "bytes": 1173
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.3.txt",
+      "sha256": "e92a0cd37b738bc11a4cf7bf87d8f682dfa292a4eb36c405b66401ea6fd809c6",
+      "bytes": 502
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.4.txt",
+      "sha256": "156c19eb775a2e33eb76d38188f0bf8ffc0d779017f3cde68b3b4c8d43014405",
+      "bytes": 4582
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/535.5.txt",
+      "sha256": "16e8c0988d1a23fd80f369aa078ab3f4d04511014a99495772796a194c9eee9e",
+      "bytes": 2381
+    },
+    {
       "path": "texas/trec-sources/trec-rules/535.55.txt",
       "sha256": "d5a8a6b9a97051109563e919f4cdf8d5b1615100e0c9a5dae44b96b30ce11204",
       "bytes": 1205
@@ -555,6 +720,11 @@
       "path": "texas/trec-sources/trec-rules/535.65.txt",
       "sha256": "fbaeedb3904d6bac666948d58a523a3762ac639617d44df7db2cbbf79b2c65e7",
       "bytes": 16135
+    },
+    {
+      "path": "texas/trec-sources/trec-rules/537.11.txt",
+      "sha256": "7a063a037d136c3241e60905831b98a1fa7c3ebbb96bba8b8d44439471bc8224",
+      "bytes": 4894
     }
   ]
 }
