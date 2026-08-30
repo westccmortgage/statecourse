@@ -845,3 +845,243 @@ const SC1 = scenario("LOA-SC1", {
       "Task SC1-T6 is graded against a rubric of identified provisions and a required referral, and 22 TAC § 535.65(g)(2)(D) makes a qualified instructor responsible for providing the answers and the rationale for the grading of course work. Because a student can reach the point total while still proposing to advise the executor on the estate's exposure, the instructor confirms both critical elements before the scenario is recorded as passed.",
   },
 });
+
+/* ══════════════════════════════════════════════════════════════════════════════════════════════
+   SCENARIO 2 — placed after T06 (Representing More Than One Party: Intermediary Brokerage)
+
+   THE 2026 SEQUENCE, AGAINST A CLOCK. Sections 1101.558, 1101.562 and 1101.563 are the most
+   consequential change in this course and the first thing a licence holder trained before 1 January
+   2026 will get wrong, because the old habits are fast and the new sequence is not. This scenario
+   runs one Saturday in real order: a phone call, a sentence said in a driveway, two prospects with
+   different postures, a showing, an offer on Monday, and an in-house listing that makes the
+   intermediary machinery compulsory rather than optional.
+
+   The discriminator is deliberately NOT "must something be signed before a showing" — that judgement
+   belongs to misconception check MC-T05 and is not re-tested here. What is tested is what a licence
+   holder does when the two postures are not interchangeable: an oral promise has already destroyed
+   the § 1101.562 posture for one prospect and not for the other, the showing-only instrument carries
+   two hard limits and cannot grow quietly into representation, only three items may be confirmed in
+   the kitchen, and the brokerage's own listing converts the second signature into an intermediary
+   problem the broker — not the sales agent — must solve.
+   ══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+const SC2 = scenario("LOA-SC2", {
+  title: "One Saturday in Georgetown: two prospects, one in-house listing",
+  placement: {
+    afterTopic: "T06",
+    attributedToTopic: "T06",
+    timeAttribution: "TOPIC",
+    unlockRequires: ["T04", "T05", "T06"],
+  },
+  assessesTopics: ["T05", "T06"],
+  assessesUnits: ["T05U1", "T05U3", "T05U5", "T06U2", "T06U3"],
+  context:
+    "You are a Texas sales agent sponsored by Alicia Ferrer, the broker of San Gabriel Realty in Georgetown, Williamson County. The firm has nine sponsored sales agents.\n\n" +
+    "San Gabriel Realty holds the listing on 1907 Serenada Drive, a single-family house. Your colleague Renae Coulter is the listing agent. The listing agreement authorises Alicia to act as an intermediary and to make appointments, and sets out the § 1101.651(d) prohibitions in conspicuous bold print.\n\n" +
+    "Today is Saturday 7 March. Two people want to see the house, you have made a different kind of start with each of them, and one of them wants to write an offer on Monday. Every dollar figure below is illustrative and invented so the arithmetic is visible; compensation is not set by law and is fully negotiable, and no Texas statute or Commission rule fixes any rate or figure used here.",
+  facts: [
+    "THE LISTING: 1907 Serenada Drive, a single-family house, listed at $362,500. At the listing appointment the seller, Marguerite Bowen, told Renae she would take $338,000 to be gone by the end of the school year. Nothing about that figure is in any writing signed by Marguerite.",
+    "PROSPECT ONE — TEODORO SALAS. He called you at 8:52 a.m. about the sign. He is not represented and has signed nothing with anybody. In the call you said: \"Come on out at eleven, and don't worry — I'll look after you on this one.\" You then answered three questions about the neighbourhood and told him the sellers \"have been on the market a while.\"",
+    "TEODORO'S POSITION: he says he will not sign anything that ties him up, because he may instead buy a lot in Liberty Hill from a builder and does not want to owe two brokers.",
+    "PROSPECT TWO — RENATA VILLALOBOS. She emailed at 10:15 a.m. asking to see the house at two o'clock. You have exchanged three emails with her about times and directions and nothing else: no promise about representing her, no opinion about the house, no advice of any kind. She is represented by no one and says she wants to look at several houses before deciding whether to engage anybody.",
+    "WHAT RENATA SIGNS: at 2:00 p.m. on Saturday 7 March, before entering the house, Renata signs your broker's written showing agreement for the sole purpose of showing real property under § 1101.562. Alicia's form leaves the termination date blank for the agent to complete.",
+    "RENATA'S QUESTIONS IN THE KITCHEN: \"How big is this house?\" — \"Is $362,500 a fair number for this street?\" — \"Should I do the inspection before I spend money on an appraisal?\"",
+    "MONDAY: Teodoro calls and asks you to write an offer on Serenada Drive. He is ready to sign whatever your broker needs. He tells you he would go to $356,000 but wants to start at $344,000.",
+    "MONDAY, WHAT GETS SIGNED: Teodoro signs San Gabriel Realty's buyer representation agreement. It authorises Alicia to act as an intermediary and to appoint associated licence holders, and states the source of the compensation the broker expects. Marguerite's listing agreement does the same.",
+    "THE COMPENSATION TERMS, all illustrative: the listing agreement provides for total compensation to San Gabriel Realty of 5.5 percent of the sales price, of which the listing earmarks 2.5 percent of the sales price for the work done on the buyer's side. Teodoro's buyer representation agreement provides that the broker will receive 3 percent of the sales price, and that the buyer pays the broker the amount, if any, by which that 3 percent exceeds what the broker receives from the seller's side for the buyer's representation.",
+    "THE CLOSING: the parties settle and the sale closes at $349,000. San Gabriel Realty receives nothing from any source other than as described above.",
+  ],
+  tasks: [
+    {
+      id: "SC2-T1",
+      type: "selection",
+      prompt:
+        "At 10:50 a.m. you are working out what paper each prospect needs before eleven o'clock and two o'clock. Teodoro will not sign a representation agreement, and you consider putting him on the same showing-only form Renata will sign. Which statement is correct about the two prospects?",
+      choices: [
+        "Renata may be shown the house under a showing agreement for the sole purpose of a § 1101.562 showing, because nothing you have said to her has agreed to represent her and you have given her no opinion or advice. Teodoro may not: § 1101.562(a)(1) requires that the broker has \"not agreed with the party, either orally or in writing, to represent the party,\" and \"I'll look after you on this one\" is an oral agreement to represent, which the subsection counts. For him the honest instrument is a representation agreement under § 1101.563, and signing him to a showing-only form would misstate his status in the box § 1101.563(c)(1)(D) requires.",
+        "Both may be shown under the same showing-only form. Section 1101.563 requires a writing and Teodoro has signed nothing, so nothing you said on the telephone has any legal effect on which form he may sign now.",
+        "Neither may be shown under a showing-only form, because § 1101.562 is available only where the broker does not hold the listing on the property being shown, and San Gabriel Realty holds this listing.",
+        "Both may be shown under the showing-only form, and Teodoro's telephone conversation is cured by having him initial a line acknowledging that you have not agreed to represent him.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student can tell two prospects apart on the § 1101.562(a) conditions — recognising that an oral promise destroys the non-representation posture even though an oral promise could never establish representation under § 1101.563 — rather than treating the showing-only form as the default instrument for anyone who will not sign a representation agreement.",
+      unitCodes: ["T05U3", "T05U1"],
+      teaches: ["t05u3-s1", "t05u3-s2", "t05u1-s1"],
+      sources: [
+        "Occupations Code § 1101.562(a)(1)",
+        "Occupations Code § 1101.562(a)(2)",
+        "Occupations Code § 1101.563(b)",
+        "Occupations Code § 1101.563(c)(1)(D)",
+      ],
+      differsFromMisconception:
+        "MC-T05 tests whether a student knows that something written must be in place before a residential showing at all. This task assumes that and tests the next judgement: which of the two instruments each prospect is eligible for, given that an oral promise to look after a buyer satisfies § 1101.562(a)(1) and takes the non-representation posture away.",
+      feedbackCorrect:
+        "That is the trap the subsection was drafted to catch. Read condition (1) again: the broker must have \"not agreed with the party, either orally or in writing, to represent the party.\" The statute counts oral agreements for the purpose of taking the non-representation posture away from you, while requiring a writing for the purpose of establishing representation. Those two rules point the same direction — say nothing to a prospect about representing them that you are not prepared to reduce to writing. Note also what you did after the sentence: you answered questions about the neighbourhood and volunteered that the sellers had been on the market a while, which is an opinion bearing on their position, so condition (3) is in difficulty as well.",
+      feedbackIncorrect:
+        "Two errors account for most wrong answers. The first is reading § 1101.562(a)(1) as though it required a written agreement to represent; it says \"either orally or in writing,\" and the whole point of that phrase is that a driveway promise counts. The second is treating an acknowledgement line as a cure: the condition is about what you agreed, not about what a form later says you agreed, and papering over the fact would compound it. On the third option, nothing in § 1101.562 turns on who holds the listing — that is the intermediary question, which arrives later and separately. Review module-05.md, Unit: The Creation of Buyer Agency.",
+      remediation: "module-05.md#unit-the-creation-of-buyer-agency",
+    },
+    {
+      id: "SC2-T2",
+      type: "computation",
+      prompt:
+        "Renata signs the showing agreement on Saturday 7 March and asks you to fill in the termination date. Applying the limit in Occupations Code § 1101.563(e)(2), what is the latest date the agreement may state? Answer with the day of the month as a number.",
+      expected: 21,
+      tolerance: 0,
+      unit: "day of the month",
+      points: 3,
+      judgement:
+        "Whether the student reads the fourteen days as an outer limit measured from the date the agreement is entered into, rather than as a default term or as a period measured from some other event.",
+      unitCodes: ["T05U1"],
+      teaches: ["t05u1-s1", "t05u1-s2"],
+      sources: ["Occupations Code § 1101.563(e)(1)", "Occupations Code § 1101.563(e)(2)", "Occupations Code § 1101.563(d)"],
+      feedbackCorrect:
+        "The 21st. Subsection (e)(2) forbids an agreement entered into for the sole purpose of showing property under § 1101.562 to \"state a termination date more than fourteen days from the date the agreement is entered into,\" and the agreement was entered into on the 7th. Two things to keep with that number. It is a ceiling and not a default: for one Saturday of showings, a term of a day or three days is lawful and cleaner. And subsection (e)(1) forbids the same agreement to be exclusive, so a prospect who signs one is free to walk into another brokerage that afternoon.",
+      feedbackIncorrect:
+        "Count from the date in the statute. The period runs \"from the date the agreement is entered into\" — not from the first showing, not from the date of first contact, and not from the start of the following week. Add the fourteen days the subsection allows to 7 March. Then notice what the subsection does not do: it sets no minimum term, and it is a maximum rather than a term you must use. Review module-05.md, Unit: Buyer Representation Agreement, on subsections (d) and (e).",
+      remediation: "module-05.md#unit-buyer-representation-agreement",
+    },
+    {
+      id: "SC2-T3",
+      type: "selection",
+      prompt:
+        "You are in the kitchen at 1907 Serenada Drive with Renata, showing the house under her § 1101.562 showing agreement. She asks how big the house is, whether $362,500 is a fair number for this street, and whether she should do the inspection before paying for an appraisal. Which response keeps you inside the section?",
+      choices: [
+        "Confirm the size, and confirm the list price and the seller's stated terms if she asks about those. Decline the other two: § 1101.562(a)(3) forbids you to provide opinions or advice regarding the real property or regarding real estate transactions in general, whether the price is fair is an opinion about the property, and the order in which she should spend money on inspections and appraisals is advice about real estate transactions in general. Say that you cannot give her an opinion while you are showing without representing her, and that advice is available if she wants to discuss a representation agreement with your broker.",
+        "Answer all three. Subsection (c) permits a broker showing property under the section to confirm information about the size, price and terms of the property, and a question about what to inspect and when is a question about terms.",
+        "Answer the first two and decline the third. Size and price are both expressly permitted by subsection (c), so confirming that the price is a fair one for the street is inside the permission, while inspection sequencing is professional advice that is not.",
+        "Decline all three and say nothing at all about the property, because a broker showing property under § 1101.562 may not communicate information about the property to a person the broker does not represent.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student applies the verb in § 1101.562(c) — confirm, not evaluate — and recognises that the second phrase in subsection (a)(3), advice about real estate transactions in general, reaches ordinary practical guidance a helpful agent gives without thinking.",
+      unitCodes: ["T05U3"],
+      teaches: ["t05u3-s1", "t05u3-s2"],
+      sources: ["Occupations Code § 1101.562(a)(3)", "Occupations Code § 1101.562(a)(4)", "Occupations Code § 1101.562(c)"],
+      differsFromMisconception:
+        "MC-T05 tests what must exist before a showing happens. This task tests what may be said once the showing is under way, which is the § 1101.562(c) permission and the § 1101.562(a)(3) prohibition rather than the § 1101.563(b) trigger.",
+      feedbackCorrect:
+        "Subsection (c) is a short list and a precise verb: \"may confirm information to a party regarding the size, price, and terms of the real property available for sale or lease.\" Confirming that the price is $362,500 is permitted. Saying the price is fair is an evaluation, and evaluation is what agents do for clients. The most common way licence holders lose the non-representation posture is by answering one friendly question in the hallway, which is why the sentence you use to decline should be decided before the appointment rather than improvised in the kitchen.",
+      feedbackIncorrect:
+        "Take the two provisions in order. Subsection (a)(3) forbids opinions or advice \"regarding the real property or real estate transactions in general\" — that second phrase is broader than students expect and covers inspection sequencing, market timing and negotiating suggestions. Subsection (c) then carves out three items, and only three: size, price and terms. Whether a price is fair is not one of them; the price is. And the last option overcorrects: the section plainly contemplates that you are in the house answering questions about size, price and terms, so refusing to say anything is neither required nor good practice. Review module-05.md, Unit: The Creation of Buyer Agency.",
+      remediation: "module-05.md#unit-the-creation-of-buyer-agency",
+    },
+    {
+      id: "SC2-T4",
+      type: "selection",
+      prompt:
+        "On Monday Teodoro signs San Gabriel Realty's buyer representation agreement and the brokerage now represents both sides of the Serenada Drive transaction. You tell Alicia you will handle Teodoro and Renae will handle Marguerite, and ask her to appoint you both. Which statement correctly describes what the statute requires and permits here?",
+      choices: [
+        "Alicia must act as intermediary, because § 1101.561(b) makes the posture compulsory once the broker agrees to represent both the buyer and the seller in the transaction, and she may do so because both written consents comply with § 1101.559(a) — consent from each party for the broker to act as intermediary, and the source of the broker's expected compensation stated in the consent. She may then appoint you to Teodoro and Renae to Marguerite, because both consents authorise appointment; but the appointments take effect only when Alicia herself provides written notice of them to all parties, and it is Alicia who appoints, not you and Renae by agreeing between yourselves.",
+        "You and Renae may proceed as each other's counterparts without any appointment, because you are working for different clients within the same firm and the appointment mechanism exists only for brokerages too small to separate the two sides.",
+        "Alicia may appoint you to both Teodoro and Marguerite to keep the file simple, because § 1101.560(c) permits an appointed licence holder to advise the party to whom the licence holder is appointed and Teodoro and Marguerite have both consented in writing.",
+        "Appointments must be made before the written consents are obtained, so that each party knows who will be advising them when they decide whether to consent; a consent obtained after the appointment is ineffective under § 1101.560(b)(1).",
+      ],
+      correctChoice: 0,
+      points: 5,
+      judgement:
+        "Whether the student can run the intermediary machinery in the right order and attribute each act to the right actor — the broker consents, the broker appoints, the broker notifies — instead of treating appointment as something two sales agents arrange between themselves.",
+      unitCodes: ["T06U2", "T06U3"],
+      teaches: ["t06u2-s1", "t06u2-s2", "t06u3-s1", "t06u3-s2"],
+      sources: [
+        "Occupations Code § 1101.561(b)",
+        "Occupations Code § 1101.559(a)(1)",
+        "Occupations Code § 1101.559(a)(2)",
+        "Occupations Code § 1101.560(a)",
+        "Occupations Code § 1101.560(b)(1)",
+        "Occupations Code § 1101.560(b)(2)",
+        "Occupations Code § 1101.560(c)",
+      ],
+      feedbackCorrect:
+        "Four acts, all the broker's. Section 1101.561(b) makes intermediary status follow from the fact of representing both parties rather than from anyone's preference. Section 1101.559(a) states the two conditions and joins them with \"and\" — written consent from each party, and the source of any expected compensation stated in the consent. Section 1101.560(a) puts the appointment in the broker's hands and describes one licence holder for one party and \"another license holder\" for any other. And § 1101.560(b) makes both conditions gates, using the word \"only if\": the consent must authorise the appointment, and the broker must provide written notice of the appointment to all parties involved in the transaction — the broker, in writing, to everyone.",
+      feedbackIncorrect:
+        "Sort the acts by who performs them. A sales agent never acts as intermediary and never appoints; both are the broker's, because the clients are the broker's clients and § 1101.351(c) confines you to acting for your broker. Two agents agreeing to \"each work our own client\" is not an appointment and produces none of its effects. On the ordering, § 1101.560(a) opens with \"A broker who complies with the written consent requirements of Section 1101.559 may appoint\" — consent first, appointment second, and there is no lawful sequence in the other direction. And one appointee cannot serve both parties: subsection (c) lets an appointee advise the party to whom they are appointed, which is impossible to perform for two parties at once. Review module-06.md, Unit: Intermediary Brokerage, and Unit: Representation of More Than One Party in a Transaction.",
+      remediation: "module-06.md#unit-representation-of-more-than-one-party-in-a-transaction",
+    },
+    {
+      id: "SC2-T5",
+      type: "computation",
+      prompt:
+        "The sale closes at $349,000. Under the listing agreement San Gabriel Realty receives total compensation of 5.5 percent of the sales price, of which the listing earmarks 2.5 percent of the sales price for the work done on the buyer's side. Teodoro's buyer representation agreement provides that the broker will receive 3 percent of the sales price and that Teodoro pays the amount, if any, by which that 3 percent exceeds what the broker receives from the seller's side for his representation. How many dollars does Teodoro owe the broker at closing?",
+      expected: 1745,
+      tolerance: 0.01,
+      unit: "dollars",
+      points: 4,
+      judgement:
+        "Whether the student can apply a buyer-side compensation term of the kind § 1101.563(c)(1)(E) requires to be stated — the amount or rate AND how it will be determined — to figures that only reconcile if each percentage is taken on the sales price and the seller-side contribution is netted against the buyer's obligation.",
+      unitCodes: ["T05U5", "T05U1"],
+      teaches: ["t05u5-s1", "t05u5-s2", "t05u1-s1"],
+      sources: [
+        "Occupations Code § 1101.563(c)(1)(E)",
+        "Occupations Code § 1101.563(c)(2)",
+        "Occupations Code § 1101.651(b)",
+        "22 TAC § 535.3",
+      ],
+      feedbackCorrect:
+        "$1,745. Three percent of $349,000 is $10,470 — what the broker is to receive for representing Teodoro. From the seller's side the listing earmarks 2.5 percent of $349,000, which is $8,725. Teodoro owes the excess: $10,470 - $8,725 = $1,745. Check the whole against the listing: 5.5 percent of $349,000 is $19,195 to San Gabriel Realty from the seller's side, of which $8,725 is the buyer-side earmark. And note why the agreement had to say all this in the first place: § 1101.563(c)(1)(E) requires the amount or rate AND how it will be determined, so \"to be determined\" is not compliance, and § 1101.563(c)(2) requires the conspicuous statement that compensation is not set by law and is fully negotiable.",
+      feedbackIncorrect:
+        "Take each percentage on the sales price, one at a time, before you subtract anything. The buyer's agreement fixes what the broker is to receive for representing him: 3 percent of the sales price. The listing fixes what comes from the seller's side for that work: 2.5 percent of the sales price. What the buyer owes is the gap between them, and it is zero if the seller's side covers the whole obligation. The commonest errors are taking a percentage of the wrong base — the list price rather than the sales price, or the total commission rather than the sales price — and forgetting to net the seller-side contribution at all. Review module-05.md, Unit: Written Notification of Compensation to Broker.",
+      remediation: "module-05.md#unit-written-notification-of-compensation-to-broker",
+    },
+    {
+      id: "SC2-T6",
+      type: "short-answer",
+      prompt:
+        "Before he signs on Monday, Teodoro asks you to strike the compensation clause from the broker's form and to add a sentence saying he owes nothing if he buys a lot from a builder in Liberty Hill. He also asks whether the showing agreement he nearly signed on Saturday would have \"locked him in.\" Set out what you tell him and what you do.",
+      rubric: [
+        "States that the licence holder does not strike or add contract language, and identifies 22 TAC § 537.11(b) as forbidding a licence holder to draft or recommend language defining or affecting the rights, obligations or remedies of the principals to a real estate transaction.",
+        "Refers the requested change to the broker's form and to Teodoro's own attorney, rather than negotiating the wording with him or telling him what the change would mean legally.",
+        "Answers the showing-agreement question accurately from § 1101.563(e): such an agreement may not be exclusive and may not state a termination date more than fourteen days out, so it could not have tied him to the brokerage.",
+        "Identifies that a compensation term must state the amount or rate and how it will be determined under § 1101.563(c)(1)(E), and that the agreement must disclose in conspicuous language that broker compensation is not set by law and is fully negotiable under § 1101.563(c)(2).",
+        "Identifies that a written agreement entered into for the sole purpose of showing does not upgrade itself, and that § 1101.563(d) requires a separate agreement before further acts of real estate brokerage are performed for the buyer.",
+        "Takes the request to the sponsoring broker rather than deciding alone whether the firm's form can be varied.",
+      ],
+      points: 5,
+      judgement:
+        "Whether the student can answer the questions a licence holder may answer — what the statute requires an agreement to contain and what it forbids a showing-only agreement to do — while refusing the one thing the request actually asks for, which is drafting.",
+      unitCodes: ["T05U1", "T05U5"],
+      teaches: ["t05u1-s1", "t05u1-s2", "t05u5-s1"],
+      sources: [
+        "22 TAC § 537.11(b)",
+        "Occupations Code § 1101.563(c)(1)(E)",
+        "Occupations Code § 1101.563(c)(2)",
+        "Occupations Code § 1101.563(d)",
+        "Occupations Code § 1101.563(e)",
+      ],
+      referral: true,
+      referralNote:
+        "Striking a clause and adding a carve-out is drafting contract language that affects the parties' rights. It goes to the broker, whose form it is, and to the buyer's own attorney; a licence holder who redlines it has practised law contrary to 22 TAC § 537.11(b).",
+      feedbackCorrect:
+        "The line here is clean and worth rehearsing. You may tell a buyer what the statute requires the agreement to contain and what it forbids it to do — those are facts about the law that the Legislature put in the agreement for the buyer's benefit. You may not write the clause he wants, recommend wording, or tell him what a variation would do to his rights. The Commission does not promulgate a buyer representation form, so the form is your broker's, drawn by an attorney or a trade association; a buyer who wants it changed needs a lawyer, and saying so is the professional answer rather than an evasion.",
+      feedbackIncorrect:
+        "Separate the two halves of what he asked. The showing-agreement question is answerable: § 1101.563(e) makes such an agreement non-exclusive and caps its term, so it could not have locked him in, and § 1101.563(d) is why it could not have grown into representation without a separate agreement. The drafting request is not answerable by you at all: 22 TAC § 537.11(b) forbids a licence holder to draft or recommend contract language defining or affecting the rights, obligations or remedies of the principals. Route it to your broker and to his attorney, and do not explain what the change would mean — that explanation is the advice the rule forbids. Review module-05.md, Unit: Buyer Representation Agreement.",
+      remediation: "module-05.md#unit-buyer-representation-agreement",
+    },
+  ],
+  passingScore: 0.7,
+  criticalCriteria: [
+    "States that the licence holder does not strike or add contract language, and identifies 22 TAC § 537.11(b) as forbidding a licence holder to draft or recommend language defining or affecting the rights, obligations or remedies of the principals to a real estate transaction.",
+    "Refers the requested change to the broker's form and to Teodoro's own attorney, rather than negotiating the wording with him or telling him what the change would mean legally.",
+  ],
+  remediation: {
+    onFailure:
+      "A student who does not reach the points to pass, or who misses either critical element, is returned to the screens below with the instructor's written rationale for each task answered wrongly, and works the scenario again. The buyer-side sequence is the part of this course a licence holder will meet first in practice, so the remediation is the whole sequence rather than the single task missed.",
+    revisit: ["t05u1-s1", "t05u3-s1", "t05u3-s2", "t05u5-s1", "t06u2-s1", "t06u3-s1"],
+    reattemptPermitted: true,
+  },
+  optionalReflection: {
+    prompt:
+      "Optional and never graded: write the sentence you will actually say in a kitchen when someone asks whether a price is fair and you are showing without representing them. Then write the sentence you will say at 8:52 a.m. instead of \"I'll look after you.\" Nothing here is scored and nothing is unlocked by it.",
+    required: false,
+    graded: false,
+    affectsScore: false,
+  },
+  instructorReview: {
+    required: true,
+    reason:
+      "Task SC2-T6 is graded against a rubric that includes a required refusal to draft, and 22 TAC § 535.65(g)(2)(D) makes a qualified instructor responsible for providing the answers and the rationale for the grading of course work. Because a student may reach a passing point total while still offering to redline the broker's form, the instructor confirms both critical elements before the scenario is recorded as passed. The instructor also reviews any computation answered within tolerance by visibly wrong method.",
+  },
+});
