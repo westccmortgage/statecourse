@@ -10,16 +10,15 @@ is *"Deceptive trade practices."*
 fraud from negligent misrepresentation and from innocent misrepresentation by reference to the
 states of mind the Texas statutes actually define, and explain why the Deceptive Trade
 Practices-Consumer Protection Act displaces both in practice; identify who qualifies as a "consumer"
-under Business & Commerce Code § 17.45(4), apply the § 17.46(b) laundry-list subdivisions that
-realistically expose a Texas license holder, and recognise an unconscionable action under
-§ 17.45(5); compute a DTPA damages award under § 17.50(b), including the additional-damages
-multiplier for conduct committed knowingly and for conduct committed intentionally and the mandatory
-award of attorneys' fees under § 17.50(d); assert and evaluate the defenses the subchapter provides,
-including the § 17.506(a) written-reliance defense, the § 17.506(d) tender defense, the § 17.49
-exemptions with their exact dollar thresholds, the § 17.505 notice prerequisite and the § 17.565
-limitations period; and connect civil DTPA exposure to the parallel disciplinary grounds in
-Occupations Code § 1101.652 and to the Real Estate Recovery Trust Account, stating its statutory
-payment caps exactly.
+under Business & Commerce Code § 17.45(4), apply the § 17.46(b) subdivisions that realistically
+expose a Texas license holder, and recognise an unconscionable action under § 17.45(5); compute a
+DTPA damages award under § 17.50(b), including the additional-damages multiplier for conduct
+committed knowingly and for conduct committed intentionally and the mandatory attorneys' fees under
+§ 17.50(d); assert and evaluate the defenses the subchapter provides, including § 17.506(a),
+§ 17.506(d), the § 17.49 exemptions with their exact dollar thresholds, the § 17.505 notice
+prerequisite and the § 17.565 limitations period; and connect civil DTPA exposure to the parallel
+disciplinary grounds in Occupations Code § 1101.652 and to the Real Estate Recovery Trust Account,
+stating its statutory payment caps exactly.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where a
 statement is practice rather than law, the module says so and cites nothing for it.
@@ -28,13 +27,13 @@ statement is practice rather than law, the module says so and cites nothing for 
 
 A buyer stands in the driveway of a house in Pflugerville and asks a question you cannot answer.
 "Has this ever flooded?" "The seller said the roof is four years old — is that right?" What you say
-next is the entire case, and its legal character — a lie, a guess, a careless repetition, or an
-honest mistake — decides which body of law the buyer's lawyer reaches for and how much it costs you.
+next is the entire case, and its legal character decides which body of law the buyer's lawyer
+reaches for and how much it costs you.
 
 Most students arrive with three words jumbled together: fraud, misrepresentation, and deception.
-They are not synonyms. They describe three different levels of culpability, and Texas law treats
-them very differently in who must prove what, what damages are available, and how long the claimant
-has to sue.
+They are not synonyms. They describe three levels of culpability, and Texas law treats them very
+differently in who must prove what, what damages are available, and how long the claimant has to
+sue.
 
 **Start with what this course holds and what it does not.** The elements of common-law fraud in
 Texas are stated in judicial opinions, not in a statute. No case reporter and no judicial opinion
@@ -108,62 +107,58 @@ bridge that carries recklessness across into intent. Quote the definition withou
 and you will teach yourself the opposite of the law.
 
 **Where the Occupations Code draws its own lines.** TRELA grades fault along the same ladder and
-Module 10 teaches those grounds in full. Name them and move on: § 1101.652(b)(3), a material
-misrepresentation to a potential buyer concerning a significant defect known to the license holder;
-(b)(4), a failure to disclose such a defect; (b)(5), a false promise made when the license holder "is
-unable or does not intend to keep the promise"; (b)(6), a continued and flagrant course of
-misrepresentation; and § 1101.652(a-1)(1), misrepresentation, dishonesty or fraud when the license
-holder is buying or selling in the license holder's own name or a close relative's.
+Module 10 teaches those grounds in full: § 1101.652(b)(3), a material misrepresentation to a
+potential buyer concerning a significant defect known to the license holder; (b)(4), a failure to
+disclose such a defect; (b)(5), a false promise made when the license holder "is unable or does not
+intend to keep the promise"; (b)(6), a continued and flagrant course of misrepresentation; and
+§ 1101.652(a-1)(1), misrepresentation, dishonesty or fraud when the license holder is buying or
+selling in the license holder's own name or a close relative's.
 
-What this module does teach in full is the Commission rule that gives § 1101.652(b)(5) its reach.
-Rule 22 TAC § 535.145 provides that for purposes of that subdivision the term false promise "includes
-both oral and written promises." It continues: "The fact that a written agreement between the parties
-to a real estate transaction does not recite a promise made by a real estate license holder to one of
-the parties or that a person did not detrimentally rely on the false promise will not prevent the
+What this module teaches in full is the Commission rule that gives § 1101.652(b)(5) its reach. Rule
+22 TAC § 535.145 provides that for purposes of that subdivision the term false promise "includes both
+oral and written promises." It continues: "The fact that a written agreement between the parties to a
+real estate transaction does not recite a promise made by a real estate license holder to one of the
+parties or that a person did not detrimentally rely on the false promise will not prevent the
 Commission from determining that a false promise was made." And it closes the last escape hatch: "In
 determining whether this section has been violated, neither a written contractual provision
 disclaiming oral representations nor the Texas Rules of Evidence Rule 1004, the parol evidence rule,
 shall prevent the Commission from considering oral promises made by a license holder." What you said
 in the car on the way to the property is evidence.
 
-**Who bears a misrepresentation, § 1101.805.** Module 03 teaches this section, which allocates
-responsibility for a misrepresentation or concealment between a party and a license holder. The half
-that operates here is subsection (e): a license holder "is not liable for a misrepresentation or a
-concealment of a material fact made by a party to a real estate transaction unless the license
-holder: (1) knew of the falsity of the misrepresentation or concealment; and (2) failed to disclose
-the license holder's knowledge of the falsity of the misrepresentation or concealment." Both
-conditions must be met before you are exposed, and the second is in your hands: the moment you learn
-the seller's answer is wrong, disclose it and you are outside the exception.
+**Who bears a misrepresentation, § 1101.805.** Module 03 teaches this section. The half that operates
+here is subsection (e): a license holder "is not liable for a misrepresentation or a concealment of a
+material fact made by a party to a real estate transaction unless the license holder: (1) knew of the
+falsity of the misrepresentation or concealment; and (2) failed to disclose the license holder's
+knowledge of the falsity of the misrepresentation or concealment." Both conditions must be met, and
+the second is in your hands: the moment you learn the seller's answer is wrong, disclose it.
 
-**Why the DTPA swallows all of this in practice.** In the abstract those are three different
-lawsuits with three different burdens. In a Texas residential transaction they collapse into one, and
-it is the DTPA, for four reasons.
+**Why the DTPA swallows all of this in practice.** In the abstract those are three different lawsuits
+with three different burdens. In a Texas residential transaction they collapse into one, and it is
+the DTPA, for four reasons.
 
 First, liability does not turn on your state of mind. The laundry-list subdivisions are mostly
 written without scienter, and § 17.50(a)(1) makes a consumer's action available where the defendant
 used "a false, misleading, or deceptive act or practice" that is "specifically enumerated in a
 subdivision of Subsection (b) of Section 17.46 of this subchapter" and "relied on by a consumer to
 the consumer's detriment," provided that act was "a producing cause of economic damages or damages
-for mental anguish." Producing cause, not proximate cause; enumerated act, not proven lie. Your
-innocence goes to the size of the award, not to whether you lost.
+for mental anguish." Producing cause, not proximate cause; enumerated act, not proven lie.
 
 Second, the DTPA pays the plaintiff's lawyer. Section 17.50(d) is a single unconditional sentence:
 "Each consumer who prevails shall be awarded court costs and reasonable and necessary attorneys'
 fees." Not *may*. That one sentence is why a $9,000 repair dispute becomes a filed lawsuit.
 
 Third, § 17.50(b)(1) multiplies the award where the conduct was knowing or intentional, which the
-Damages unit works through. And fourth, § 17.44(a) directs that the subchapter "shall be liberally
-construed and applied to promote its underlying purposes" — set out in full in the next unit.
+Damages unit works through. Fourth, § 17.44(a) directs that the subchapter "shall be liberally
+construed and applied to promote its underlying purposes."
 
 **One place where the older causes of action still matter: time.** Civil Practice & Remedies Code
 § 16.004(a) provides that "[a] person must bring suit on the following actions not later than four
 years after the day the cause of action accrues," and subdivision (4) of that list is "fraud."
-Subdivision (5) is "breach of fiduciary duty." The DTPA carries its own two-year period at § 17.565,
-which you will meet in the Defenses unit. So a claimant who sat on a claim for three years has lost
-the DTPA route and may still have a fraud route. Chapter 16 does not name negligent misrepresentation
-anywhere in the sections read for this course, and **which limitations period governs a negligent
-misrepresentation claim was not held.** Do not guess at it, and do not advise a client about it; that
-is a question for their lawyer.
+Subdivision (5) is "breach of fiduciary duty." The DTPA carries its own two-year period at § 17.565.
+So a claimant who sat on a claim for three years has lost the DTPA route and may still have a fraud
+route. Chapter 16 does not name negligent misrepresentation anywhere in the sections read for this
+course, and **which limitations period governs a negligent misrepresentation claim was not held.** Do
+not guess at it, and do not advise a client about it; that is a question for their lawyer.
 
 ### Statute reading exercise: The two states of mind in § 17.45
 
@@ -198,14 +193,13 @@ It occupies Subchapter E of Chapter 17, running from § 17.41 through § 17.63.
 directs that the subchapter "shall be liberally construed and applied to promote its underlying
 purposes, which are to protect consumers against false, misleading, and deceptive business
 practices, unconscionable actions, and breaches of warranty and to provide efficient and economical
-procedures to secure such protection." When a court has to choose between two readings of a DTPA
-provision, the statute itself tells the court which way to lean. Subsection (b) adds a single
-cross-reference: "Chapter 27, Property Code, prevails over this subchapter to the extent of any
-conflict." Chapter 27 of the Property Code is the residential construction liability chapter.
-**Property Code Chapter 27 was not held for this course**, and so this module does not tell you what
-it says; it tells you only that § 17.44(b) gives Chapter 27 priority, so a claim involving
-construction defects in a residence is a matter on which a lawyer must be consulted rather than a
-matter you should reason about from the DTPA alone.
+procedures to secure such protection." When a court must choose between two readings, the statute
+itself says which way to lean. Subsection (b) adds one cross-reference: "Chapter 27, Property Code,
+prevails over this subchapter to the extent of any conflict." Chapter 27 is the residential
+construction liability chapter. **Property Code Chapter 27 was not held for this course**, so this
+module does not tell you what it says; it tells you only that § 17.44(b) gives Chapter 27 priority,
+which makes a claim involving construction defects in a residence a matter for a lawyer rather than
+one you should reason about from the DTPA alone.
 
 **Who is a "consumer," and why you can be sued by someone who never paid you a dime.** Standing
 under the DTPA runs through one definition. Section 17.45(4): "Consumer" means "an individual,
@@ -215,27 +209,26 @@ consumer that has assets of $25 million or more, or that is owned or controlled 
 entity with assets of $25 million or more."
 
 Every clause does work. *"Seeks or acquires"* — the person need not complete a purchase, so a buyer
-who walks away from the deal because of what you said is still a consumer, and a failed transaction
-is not a safe harbour. *"By purchase or lease"* — your leasing and property-management practice sits
-squarely inside the Act. *"Any goods or services"* — § 17.45(1) defines "Goods" as "tangible chattels
-or real property purchased or leased for use," so real property is expressly a good, and § 17.45(2)
-defines "Services" as "work, labor, or service purchased or leased for use, including services
-furnished in connection with the sale or repair of goods," so brokerage is a service. *The $25
-million exclusion* — a "business consumer," defined at § 17.45(10) as "an individual, partnership, or
-corporation who seeks or acquires by purchase or lease, any goods or services for commercial or
-business use," loses consumer status once its assets reach $25 million or once it is "owned or
-controlled by a corporation or entity with assets of $25 million or more." That number is $25 million
-exactly; it is an asset test, not a revenue test, and it is the only size-based limit inside the
-definition of consumer itself.
+who walks away because of what you said is still a consumer and a failed transaction is not a safe
+harbour. *"By purchase or lease"* — your leasing and property-management practice sits inside the
+Act. *"Any goods or services"* — § 17.45(1) defines "Goods" as "tangible chattels or real property
+purchased or leased for use," so real property is expressly a good, and § 17.45(2) defines "Services"
+as "work, labor, or service purchased or leased for use, including services furnished in connection
+with the sale or repair of goods," so brokerage is a service. *The $25 million exclusion* — a
+"business consumer," defined at § 17.45(10) as "an individual, partnership, or corporation who seeks
+or acquires by purchase or lease, any goods or services for commercial or business use," loses
+consumer status once its assets reach $25 million or once it is "owned or controlled by a corporation
+or entity with assets of $25 million or more." That number is $25 million exactly, and it is an asset
+test, not a revenue test.
 
 Now the point students most often miss. **Read the definition again and find the word "privity." It
 is not there.** Section 17.45(4) asks who sought or acquired goods or services. It does not ask from
-whom. It does not require that the consumer bought anything from the defendant, or paid the
-defendant, or had a contract with the defendant. This is why a buyer who was represented by a
-completely different brokerage, who never signed anything with you, who never met you until the
-option period, can sue *you*, the listing agent, under the DTPA. The buyer sought to acquire real
-property; you engaged in a practice enumerated in § 17.46(b) that was a producing cause of the
-buyer's economic damages; the statute asks nothing further about the relationship between you.
+whom, and it does not require that the consumer bought anything from the defendant, paid the
+defendant, or had a contract with the defendant. This is why a buyer represented by a completely
+different brokerage, who never signed anything with you and never met you until the option period,
+can sue *you*, the listing agent. The buyer sought to acquire real property; you engaged in a
+practice enumerated in § 17.46(b) that was a producing cause of the buyer's economic damages; the
+statute asks nothing further about the relationship between you.
 
 **The four doors into a DTPA action.** Section 17.50(a) provides that "[a] consumer may maintain an
 action where any of the following constitute a producing cause of economic damages or damages for
@@ -253,35 +246,35 @@ individual, partnership, corporation, association, or other group, however organ
 17.46(d) locks the exclusivity down from the other direction: for the purposes of the relief
 authorized in Subdivision (1) of Subsection (a) of Section 17.50, the term false, misleading, or
 deceptive acts or practices "is limited to the acts enumerated in specific subdivisions of Subsection
-(b) of this section." So for a private consumer suit the laundry list is a closed list, and to know
-your civil exposure under subdivision (1) you need to know a finite list.
+(b) of this section." For a private consumer suit the laundry list is a closed list, so your civil
+exposure under subdivision (1) is a finite list.
 
 **The laundry list, applied to real estate.** Section 17.46(b) opens by providing that, "Except as
 provided in Subsection (d) of this section," the term false, misleading, or deceptive acts or
 practices "includes, but is not limited to, the following acts". Thirty-four subdivisions follow.
-Most of them — odometer tampering, kosher labelling, pyramid schemes — will never touch your
-practice. These will.
+Most — odometer tampering, kosher labelling, pyramid schemes — will never touch your practice. These
+will.
 
 *§ 17.46(b)(5) — "representing that goods or services have sponsorship, approval, characteristics,
 ingredients, uses, benefits, or quantities which they do not have or that a person has a
-sponsorship, approval, status, affiliation, or connection which the person does not."* This is the
-workhorse subdivision in Texas real estate litigation and the one to memorise. "Characteristics" and
-"quantities" are the operative words. A listing in Katy states "2,860 sq. ft." when the measurement
-says 2,455; a listing in Bastrop County says "not in a flood zone" when the tract sits partly in a
-mapped floodplain. It does not matter that you copied the square footage from the seller's old
-appraisal. The representation is either accurate or it is not.
+sponsorship, approval, status, affiliation, or connection which the person does not."* The workhorse
+subdivision in Texas real estate litigation, and the one to memorise. "Characteristics" and
+"quantities" are the operative words: a listing that states "2,860 sq. ft." when the measurement says
+2,455, or "not in a flood zone" when the tract sits partly in a mapped floodplain. It does not matter
+that you copied the figure from the seller's old appraisal. The representation is either accurate or
+it is not.
 
 *§ 17.46(b)(7) — "representing that goods or services are of a particular standard, quality, or
 grade, or that goods are of a particular style or model, if they are of another."* The listing that
 advertises "new HVAC system" when the compressor was replaced but the air handler and ductwork are
-twenty-two years old. Standard, quality and grade claims are checkable.
+twenty-two years old. Quality claims are checkable.
 
 *§ 17.46(b)(12) — "representing that an agreement confers or involves rights, remedies, or
-obligations which it does not have or involve, or which are prohibited by law."* You are handing
-consumers contracts constantly. Tell a buyer that the option period "lets you get out any time
-before closing," or tell a seller that a listing agreement "can be cancelled by either side on a
-week's notice" when it cannot, and you have represented that an agreement confers rights it does not
-involve. This is where careless explanations of contract forms become a DTPA claim.
+obligations which it does not have or involve, or which are prohibited by law."* Tell a buyer that
+the option period "lets you get out any time before closing," or a seller that a listing agreement
+"can be cancelled by either side on a week's notice" when it cannot, and you have represented that an
+agreement confers rights it does not involve. This is where careless explanations of contract forms
+become a DTPA claim.
 
 *§ 17.46(b)(13) — "knowingly making false or misleading statements of fact concerning the need for
 parts, replacement, or repair service."* Note the "knowingly." A license holder who steers a seller
@@ -290,14 +283,14 @@ the need for the work are false, is inside this subdivision.
 
 *§ 17.46(b)(14) — "misrepresenting the authority of a salesman, representative or agent to negotiate
 the final terms of a consumer transaction."* Telling a buyer "I can accept that counter for the
-seller right now" when you have no such authority is a subdivision (14) violation. This is a
-distinctively agency-law deceptive practice and it belongs in a Law of Agency course.
+seller right now" when you have no such authority is a subdivision (14) violation — a distinctively
+agency-law deceptive practice.
 
 *§ 17.46(b)(20) — "representing that a guaranty or warranty confers or involves rights or remedies
 which it does not have or involve, provided, however, that nothing in this subchapter shall be
 construed to expand the implied warranty of merchantability as defined in Sections 2.314 through
 2.318 and Sections 2A.212 through 2A.216 to involve obligations in excess of those which are
-appropriate to the goods."* Residential service contracts are sold in a very large share of Texas
+appropriate to the goods."* Residential service contracts are sold in a large share of Texas
 transactions. "The warranty covers the whole HVAC system, so you don't need to worry about the age"
 is a representation about what a warranty confers; if the contract excludes pre-existing conditions
 or caps the payout, subdivision (20) is engaged.
@@ -306,22 +299,20 @@ or caps the payout, subdivision (20) is engaged.
 the time of the transaction if such failure to disclose such information was intended to induce the
 consumer into a transaction into which the consumer would not have entered had the information been
 disclosed."* This is the silence subdivision, and the one to think about hardest. It is the only
-laundry-list entry that makes *not speaking* actionable, and real estate is a business of things left
+entry on the list that makes *not speaking* actionable, and real estate is a business of things left
 unsaid. It has two express conditions and both must be met: the information must have been "known at
 the time of the transaction," and the failure to disclose must have been "intended to induce the
 consumer into a transaction into which the consumer would not have entered had the information been
 disclosed." A genuinely forgotten fact is not within it; a fact you did not know is not within it.
 And subdivision (24) is carved out of *both* statutory exemptions that would otherwise protect you.
 
-Consider a Texas fact pattern. You list a house in Friendswood. In the file, from a prior listing you
-handled on the same house two years earlier, sits an inspection report noting active seepage at the
-north foundation wall. The seller's disclosure notice this time says no known water penetration; that
-notice states the seller's own knowledge and belief, so the seller's answer may be perfectly proper
-as to the seller. That does not answer the question about you. You knew, at the time of the
-transaction, of information concerning the property. If a fact-finder concludes you kept quiet in
-order to get the deal closed, subdivision (24) is satisfied — and § 1101.652(b)(4) independently
-makes that silence a disciplinary ground, so one omission has produced both civil and administrative
-liability.
+Consider a fact pattern. You list a house in Friendswood, and in the file from a prior listing sits
+an inspection report noting active seepage at the north foundation wall. The seller's disclosure
+notice says no known water penetration; that notice states the seller's own knowledge and belief, so
+the seller's answer may be proper as to the seller. It does not answer the question about you. You
+knew, at the time of the transaction, of information concerning the property. If a fact-finder
+concludes you kept quiet to get the deal closed, subdivision (24) is satisfied — and § 1101.652(b)(4)
+independently makes that silence a disciplinary ground.
 
 **Unconscionable action or course of action.** The second major door, § 17.50(a)(3), does not depend
 on the laundry list at all. It reaches "any unconscionable action or course of action by any
@@ -330,35 +321,34 @@ practice which, to a consumer's detriment, takes advantage of the lack of knowle
 experience, or capacity of the consumer to a grossly unfair degree."
 
 Every word is doing work. There must be harm — the conduct must be "to a consumer's detriment." It
-must "take advantage of" one of four specific vulnerabilities: lack of knowledge, ability, experience
-or capacity. And it must do so "to a grossly unfair degree," a deliberately high bar that ordinary
-sharp dealing does not clear. But notice what the definition does *not* require: no false statement,
-no state of mind, no reliance. A course of conduct — the phrase "course of action" is right there —
-can be unconscionable even where no individual statement in it was false. The Texas fact patterns
-that fit involve an information gap the license holder exploits: the recently bereaved widow
-persuaded to list her homestead well under market so that the license holder's investor client can
-buy it, with no comparative market analysis and no explanation of what a listing price means.
+must "take advantage of" one of four vulnerabilities: lack of knowledge, ability, experience or
+capacity. And it must do so "to a grossly unfair degree," a deliberately high bar that ordinary sharp
+dealing does not clear. But notice what the definition does *not* require: no false statement, no
+state of mind, no reliance. A course of conduct can be unconscionable even where no individual
+statement in it was false — the recently bereaved widow persuaded to list her homestead well under
+market so the license holder's investor client can buy it, with no comparative market analysis and no
+explanation of what a listing price means.
 
-**Waivers are void, with three narrow exceptions.** Section 17.42(a) answers the question new license
-holders ask about waiver clauses: "Any waiver by a consumer of the provisions of this subchapter is
-contrary to public policy and is unenforceable and void; provided, however, that a waiver is valid
-and enforceable if: (1) the waiver is in writing and is signed by the consumer; (2) the consumer is
-not in a significantly disparate bargaining position; and (3) the consumer is represented by legal
-counsel in seeking or acquiring the goods or services." All three conditions must be met, and
-subsection (b) adds that a waiver "is not effective if the consumer's legal counsel was directly or
-indirectly identified, suggested, or selected by a defendant or an agent of the defendant." A typical
-residential transaction, where the buyer has no lawyer, cannot produce a valid waiver.
+**Waivers are void, with three narrow exceptions.** Section 17.42(a): "Any waiver by a consumer of
+the provisions of this subchapter is contrary to public policy and is unenforceable and void;
+provided, however, that a waiver is valid and enforceable if: (1) the waiver is in writing and is
+signed by the consumer; (2) the consumer is not in a significantly disparate bargaining position;
+and (3) the consumer is represented by legal counsel in seeking or acquiring the goods or services."
+All three conditions must be met, and subsection (b) adds that a waiver "is not effective if the
+consumer's legal counsel was directly or indirectly identified, suggested, or selected by a defendant
+or an agent of the defendant." A typical residential transaction, where the buyer has no lawyer,
+cannot produce a valid waiver.
 
 **The DTPA does not replace other law; it stacks on it.** Section 17.43 provides that "[t]he
 provisions of this subchapter are not exclusive" and that its remedies "are in addition to any other
 procedures or remedies provided for in any other law," with one limit: "no recovery shall be
 permitted under both this subchapter and another law of both damages and penalties for the same act
-or practice." It then draws a line students routinely blur: "A violation of a provision of law other
-than this subchapter is not in and of itself a violation of this subchapter." Breaking a TREC rule is
-not automatically a DTPA violation. But an act that violates another law "may be made the basis of an
+or practice." It then draws a line students blur: "A violation of a provision of law other than this
+subchapter is not in and of itself a violation of this subchapter." Breaking a TREC rule is not
+automatically a DTPA violation. But an act that violates another law "may be made the basis of an
 action under this subchapter if the act or practice is proscribed by a provision of this subchapter
-or is declared by such other law to be actionable under this subchapter." So the same conduct can
-violate TRELA and the DTPA at once, and usually does — but by two independent routes.
+or is declared by such other law to be actionable under this subchapter." The same conduct can
+violate TRELA and the DTPA at once, and usually does — by two independent routes.
 
 **The notice letter, and what you do the day it arrives.** Section 17.505(a) sets a condition
 precedent: "As a prerequisite to filing a suit seeking damages under Subdivision (1) of Subsection
@@ -370,16 +360,14 @@ claim against the defendant. During the 60-day period a written request to inspe
 manner and at a reasonable time and place, the goods that are the subject of the consumer's action
 or claim may be presented to the consumer."
 
-Sixty days, written, in reasonable detail, itemised as to economic damages, mental anguish and
-expenses including attorneys' fees. That letter starts the two clocks that matter most, both running
-from receipt: the sixty-day period in § 17.505(a) and the thirty-day tender window in § 17.506(d).
+Sixty days, written, itemised as to economic damages, mental anguish and expenses including fees.
+That letter starts the two clocks that matter, both running from receipt: the sixty days in
+§ 17.505(a) and the thirty-day tender window in § 17.506(d).
 
-What a competent license holder does on the day it lands is practice, not law, and this course states
-no authority for it. Note the date of receipt on the letter. Do not telephone the consumer, do not
-answer the allegations in any form, and do not apologise; everything you say now is evidence. Notify
-your sponsoring broker the same day and your errors and omissions carrier, because late notice can
-forfeit coverage. Preserve the whole file — the listing agreement, every version of the disclosure
-notice, the MLS edit history, texts and e-mails, showing feedback, inspection reports, the CMA — and
+What you do the day it lands is practice, not law, and this course states no authority for it. Note
+the date of receipt on the letter. Do not telephone the consumer, answer the allegations in any form,
+or apologise; everything you say now is evidence. Notify your sponsoring broker and your errors and
+omissions carrier the same day, because late notice can forfeit coverage. Preserve the whole file and
 alter nothing. Then get the letter to counsel within days, because the statutory windows are short.
 
 Two situations excuse the sixty-day notice. Section 17.505(b): "If the giving of 60 days' written
@@ -387,9 +375,8 @@ notice is rendered impracticable by reason of the necessity of filing suit in or
 expiration of the statute of limitations or if the consumer's claim is asserted by way of
 counterclaim, the notice provided for in Subsection (a) of this section is not required, but the
 tender provided for by Subsection (d), Section 17.506 of this subchapter may be made within 60 days
-after service of the suit or counterclaim." A consumer racing the limitations period, or one
-asserting a counterclaim, may skip the letter — and in exchange you get sixty days from service to
-make the tender.
+after service of the suit or counterclaim." So a consumer racing limitations, or one asserting a
+counterclaim, may skip the letter — and you get sixty days from service to make the tender.
 
 ### Applied exercise: The square footage in Round Rock
 
@@ -417,17 +404,16 @@ to your broker.
 
 ## Unit: Damages
 
-A great deal of what makes the DTPA frightening is arithmetic. Work through the numbers slowly: the
-difference between an ordinary finding, a "knowingly" finding and an "intentionally" finding is the
-difference between a claim your carrier absorbs and a claim that ends a career.
+Much of what makes the DTPA frightening is arithmetic. The difference between an ordinary finding, a
+"knowingly" finding and an "intentionally" finding is the difference between a claim your carrier
+absorbs and a claim that ends a career.
 
 **Start with the base: economic damages.** Section 17.45(11) defines economic damages as
 "compensatory damages for pecuniary loss, including costs of repair and replacement. The term does
 not include exemplary damages or damages for physical pain and mental anguish, loss of consortium,
-disfigurement, physical impairment, or loss of companionship and society." Two halves. The inclusive
-half is broad. The exclusive half is a list of things that are *not* economic damages, and the item
-to notice is mental anguish: it is a separate category, and § 17.50(b)(1) makes it available only in
-a specific circumstance.
+disfigurement, physical impairment, or loss of companionship and society." The item to notice in the
+exclusive half is mental anguish: it is a separate category, and § 17.50(b)(1) makes it available
+only in a specific circumstance.
 
 **Section 17.50(b)(1) is the damages engine.** It provides that in a suit filed under the section,
 "each consumer who prevails may obtain: (1) the amount of economic damages found by the trier of
@@ -444,12 +430,12 @@ Break that one sentence into its three tiers.
 the trier of fact." No mental anguish. No multiplier. Economic damages, full stop — plus the costs
 and fees that § 17.50(d) makes mandatory.
 
-*Tier two — conduct committed knowingly*, as § 17.45(9) defines "knowingly." Two things unlock.
-First, "the consumer may also recover damages for mental anguish, as found by the trier of fact."
-Second, "the trier of fact may award not more than three times the amount of economic damages." Read
-the multiplier carefully: at this tier its base is *economic damages only*. Mental anguish is
-recoverable but is not part of the base that gets multiplied. And the words are "may award not more
-than" — a ceiling on the fact-finder's discretion, not an automatic tripling.
+*Tier two — conduct committed knowingly*, as § 17.45(9) defines "knowingly." Two things unlock:
+"the consumer may also recover damages for mental anguish, as found by the trier of fact," and "the
+trier of fact may award not more than three times the amount of economic damages." Read the
+multiplier carefully — at this tier its base is *economic damages only*, so mental anguish is
+recoverable but is not multiplied. And "may award not more than" is a ceiling on the fact-finder's
+discretion, not an automatic tripling.
 
 *Tier three — conduct committed intentionally*, as § 17.45(13) defines "intentionally." Mental
 anguish is again recoverable, and now the multiplier's base expands: "the trier of fact may award
@@ -458,9 +444,8 @@ anguish joins the base. That is the entire difference between tier two and tier 
 with substantial mental anguish findings it is an enormous difference.
 
 **Worked example one: the Round Rock square footage claim.** The buyers paid $505,000 for a house
-advertised at 2,900 square feet that measures 2,640. Assume the trier of fact finds economic damages
-of $22,000, that the buyers' reasonable and necessary attorneys' fees are found to be $48,000, and
-that court costs are $3,200.
+advertised at 2,900 square feet that measures 2,640. Assume economic damages of $22,000, reasonable
+and necessary attorneys' fees of $48,000 and court costs of $3,200.
 
 At tier one, with no culpability finding, the judgment is economic damages of $22,000, plus $48,000
 in fees and $3,200 in costs, for a total of **$73,200**. The fee award is nearly twice the damages.
@@ -505,24 +490,23 @@ acquired in violation of this subchapter" — the provision under which a commis
 be ordered returned. Section 17.50(b)(4) permits "any other relief which the court deems proper,
 including the appointment of a receiver or the revocation of a license or certificate authorizing a
 person to engage in business in this state if the judgment has not been satisfied within three
-months of the date of the final judgment." Read the limitation that immediately follows, because it
-protects you specifically: "The court may not revoke or suspend a license to do business in this
-state or appoint a receiver to take over the affairs of a person who has failed to satisfy a judgment
-if the person is a licensee of or regulated by a state agency which has statutory authority to revoke
-or suspend a license or to appoint a receiver or trustee." You are regulated by TREC, which holds
-revocation authority, so the civil court will not revoke your real estate license under
-§ 17.50(b)(4). TREC may still do so under its own statute.
+months of the date of the final judgment." Read the limitation that immediately follows: "The court
+may not revoke or suspend a license to do business in this state or appoint a receiver to take over
+the affairs of a person who has failed to satisfy a judgment if the person is a licensee of or
+regulated by a state agency which has statutory authority to revoke or suspend a license or to
+appoint a receiver or trustee." You are regulated by TREC, which holds revocation authority, so the
+civil court will not revoke your real estate license under § 17.50(b)(4). TREC may still do so.
 
 **Chapter 41 does not apply.** Section 17.50(g) states flatly: "Chapter 41, Civil Practice and
 Remedies Code, does not apply to a cause of action brought under this subchapter." The general Texas
-exemplary damages caps are not available to a DTPA defendant. The only ceiling on additional damages
+exemplary damages caps are not available to a DTPA defendant; the only ceiling on additional damages
 is the one inside § 17.50(b)(1) itself.
 
 **A limit on mental anguish that students miss.** Section 17.49(e) provides: "Except as specifically
 provided by Subsections (b) and (h), Section 17.50, nothing in this subchapter shall apply to a
 cause of action for bodily injury or death or for the infliction of mental anguish." The DTPA is not
-a vehicle for a stand-alone emotional distress claim; mental anguish enters a DTPA case only through
-the door § 17.50(b) opens.
+a vehicle for a stand-alone emotional distress claim; mental anguish enters only through the door
+§ 17.50(b) opens.
 
 ### Applied exercise: Computing the exposure in Mansfield
 
@@ -551,8 +535,8 @@ attorneys' fees of $62,000 and court costs of $4,100.
 ## Unit: Defenses
 
 A statute that construes itself in the consumer's favour, dispenses with privity and pays the
-consumer's lawyer nonetheless contains a real set of defenses. Take them in the order a case
-unfolds: exemption, procedural prerequisite, limitations, then the substantive defenses.
+consumer's lawyer nonetheless contains real defenses. Take them in the order a case unfolds:
+exemption, procedural prerequisite, limitations, then the substantive defenses.
 
 **The exemptions in § 17.49, beginning with the one written for you.** Section 17.49(i) provides:
 "Nothing in this subchapter shall apply to a claim against a person licensed as a broker or
@@ -563,39 +547,36 @@ opinion; (2) a failure to disclose information in violation of Section 17.46(b)(
 unconscionable action or course of action that cannot be characterized as advice, judgment, or
 opinion."
 
-Read the exemption and its three carve-outs together and you see the shape of your real exposure.
-The general rule genuinely does exempt you. Note the statute's own wording: it says "broker or
-salesperson," the older term TRELA itself has replaced with "sales agent," and it ties the exemption
-to an act done "while acting as" one. An act outside your brokerage capacity — flipping a house in
-your own name, running an unlicensed side business — is not within the exemption at all. The
-carve-outs are where every real case lives.
+The general rule genuinely does exempt you. Note the statute's wording: it says "broker or
+salesperson," the older term TRELA has replaced with "sales agent," and it ties the exemption to an
+act done "while acting as" one. An act outside your brokerage capacity — flipping a house in your own
+name, running an unlicensed side business — is not within the exemption at all. The carve-outs are
+where every real case lives.
 
 *Carve-out (1): "an express misrepresentation of a material fact that cannot be characterized as
-advice, judgment, or opinion."* Four conditions in a single clause. It must be *express*, so a claim
-built on implication is outside it. It must be a *misrepresentation*, so a true statement is outside
-it. It must concern a *material fact*. And it must be a statement that *cannot be characterized as
-advice, judgment, or opinion*. That last condition is why experienced Texas license holders speak as
-they do: "In my opinion this neighbourhood has held its value well" is opinion, and "This house is
-2,900 square feet" is a fact. A court reads the substance, so dressing a hard factual claim in the
-words "I think" will not convert it into an opinion.
+advice, judgment, or opinion."* Four conditions in one clause. It must be *express*, so a claim built
+on implication is outside it. It must be a *misrepresentation*, so a true statement is outside it. It
+must concern a *material fact*. And it must be a statement that *cannot be characterized as advice,
+judgment, or opinion* — which is why experienced license holders speak as they do: "In my opinion
+this neighbourhood has held its value well" is opinion, and "This house is 2,900 square feet" is a
+fact. A court reads the substance, so dressing a hard factual claim in the words "I think" will not
+convert it into an opinion.
 
 *Carve-out (2): "a failure to disclose information in violation of Section 17.46(b)(24)."* Silence.
-This is why subdivision (24) was singled out in Unit 2. Every other laundry-list subdivision must
-fight its way through carve-out (1) or (3); subdivision (24) is named by number and walks straight
-through the exemption. If a consumer's lawyer can plead a knowing failure to disclose intended to
-induce the transaction, the broker exemption is gone.
+Every other laundry-list subdivision must fight its way through carve-out (1) or (3); subdivision
+(24) is named by number and walks straight through the exemption. If a consumer's lawyer can plead a
+knowing failure to disclose intended to induce the transaction, the broker exemption is gone.
 
 *Carve-out (3): "an unconscionable action or course of action that cannot be characterized as
-advice, judgment, or opinion."* This is why § 17.45(5) matters so much to license holders.
-Unconscionability requires no false statement at all, and it survives the exemption whenever the
-course of conduct cannot be recharacterised as advice or opinion.
+advice, judgment, or opinion."* This is why § 17.45(5) matters so much. Unconscionability requires no
+false statement at all, and it survives the exemption whenever the course of conduct cannot be
+recharacterised as advice or opinion.
 
 **The professional services exemption, § 17.49(c).** Alongside the broker-specific exemption sits a
 broader one for a claim based on the rendering of a professional service "the essence of which is
 the providing of advice, judgment, opinion, or similar professional skill." Its first three
 carve-outs match § 17.49(i) word for word; it adds two more, for breach of an express warranty that
-cannot be characterised as advice, judgment or opinion and for a violation of § 17.46(b)(26). You
-will compare the two lists yourself in the exercise at the end of this unit.
+cannot be characterised as advice, judgment or opinion, and for a violation of § 17.46(b)(26).
 
 **The two transaction-size exemptions, with their exact thresholds.** Section 17.49(f): "Nothing in
 the subchapter shall apply to a claim arising out of a written contract if: (1) the contract relates
@@ -605,34 +586,30 @@ represented by legal counsel who is not directly or indirectly identified, sugge
 the defendant or an agent of the defendant; and (3) the contract does not involve the consumer's
 residence."
 
-All three conditions, joined by "and." More than $100,000 — not $100,000 or more. Counsel not
-identified, suggested or selected by the defendant. And a contract that "does not involve the
-consumer's residence." Section 17.45(12) defines "Residence" as a building "(A) that is a
-single-family house, duplex, triplex, or quadruplex or a unit in a multiunit residential structure in
-which title to the individual units is transferred to the owners under a condominium or cooperative
-system; and (B) that is occupied or to be occupied as the consumer's residence." Both elements: the
-building type *and* actual or intended occupancy. A $640,000 house bought by a family who will live
-in it is a transaction over $100,000, but it involves the consumer's residence, so condition (3)
-fails; most residential buyers also have no lawyer, so condition (2) fails too. **The § 17.49(f)
-exemption almost never protects a residential license holder.**
+All three conditions, joined by "and." More than $100,000 — not $100,000 or more. Section 17.45(12)
+defines "Residence" as a building "(A) that is a single-family house, duplex, triplex, or quadruplex
+or a unit in a multiunit residential structure in which title to the individual units is transferred
+to the owners under a condominium or cooperative system; and (B) that is occupied or to be occupied
+as the consumer's residence" — both the building type *and* actual or intended occupancy. A $640,000
+house bought by a family who will live in it is over $100,000 but involves the consumer's residence,
+so condition (3) fails; most residential buyers have no lawyer, so condition (2) fails too. **The
+§ 17.49(f) exemption almost never protects a residential license holder.**
 
 Section 17.49(g) is larger and simpler: "Nothing in this subchapter shall apply to a cause of action
 arising from a transaction, a project, or a set of transactions relating to the same project,
 involving total consideration by the consumer of more than $500,000, other than a cause of action
 involving a consumer's residence." More than $500,000, with no written-contract or counsel
 requirement — but again with the residence exception. A $2.4 million industrial building sale is
-outside the DTPA under § 17.49(g); a $2.4 million house the buyer will occupy is not. Commit both
-numbers exactly: **$100,000** with the three conditions at § 17.49(f), **$500,000** with the single
-condition and the residence exception at § 17.49(g).
+outside the DTPA; a $2.4 million house the buyer will occupy is not. Commit both numbers exactly:
+**$100,000** at § 17.49(f), **$500,000** at § 17.49(g).
 
-**The notice prerequisite as a defensive tool, § 17.505.** You already know the consumer must give
-sixty days' written notice under § 17.505(a). What if the consumer does not? Section 17.505(c): "A
-person against whom a suit is pending who does not receive written notice, as required by Subsection
-(a), may file a plea in abatement not later than the 30th day after the date the person files an
-original answer in the court in which the suit is pending. This subsection does not apply if
-Subsection (b) applies." Thirty days from your original answer — miss that window and the tool is
-gone. Abatement is not dismissal; the consumer cures it by sending the letter and waiting sixty
-days. But it is real leverage and real delay.
+**The notice prerequisite as a defensive tool, § 17.505.** What if the consumer gives no notice?
+Section 17.505(c): "A person against whom a suit is pending who does not receive written notice, as
+required by Subsection (a), may file a plea in abatement not later than the 30th day after the date
+the person files an original answer in the court in which the suit is pending. This subsection does
+not apply if Subsection (b) applies." Thirty days from your original answer — miss that window and
+the tool is gone. Abatement is not dismissal; the consumer cures it by sending the letter and
+waiting sixty days. But it is real leverage and real delay.
 
 **The § 17.506(a) reliance-on-written-information defense.** This is the defense aimed most directly
 at what a license holder does all day: repeating information gathered from records and from other
@@ -650,23 +627,21 @@ agency if the information from the test was false or inaccurate and the defendan
 could not reasonably have known of the falsity or inaccuracy of the information."
 
 Count the conditions, because students remember this as "I can rely on public records" and that is
-not what it says. The information must have been **written**, so an oral statement from the seller or
-a contractor's verbal assurance will not support it. You must have given **reasonable and timely
-written notice to the plaintiff of your reliance**, and given it **before consummation of the
-transaction** — the condition that defeats almost every license holder who invokes § 17.506(a) after
-the fact, because the defense is not available to someone who quietly relied on a document and
-produced it at trial. The information must in fact have been **false or inaccurate**. And you must
-prove you "did not know and could not reasonably have known" of the falsity, both a subjective and an
-objective test, and the objective half is where a defendant with a contrary document in the same file
-loses.
+not what it says. The information must have been **written**, so an oral assurance will not support
+it. You must have given **written notice of your reliance before consummation of the transaction** —
+the condition that defeats almost every license holder who invokes § 17.506(a) after the fact,
+because the defense is not available to someone who quietly relied on a document and produced it at
+trial. The information must in fact have been **false or inaccurate**. And you must prove you "did
+not know and could not reasonably have known" of the falsity, an objective test as well as a
+subjective one.
 
 Section 17.506(b) adds a causation requirement and a limitation on its effect: "In asserting a
 defense under Subdivision (1), (2), or (3) of Subsection (a) of Section 17.506 above, the defendant
 shall prove the written information was a producing cause of the alleged damage. A finding of one
 producing cause does not bar recovery if other conduct of the defendant not the subject of a
 defensive finding under Subdivision (1), (2), or (3) of Subsection (a) of Section 17.506 above was a
-producing cause of damages of the plaintiff." The defense is claim-specific, not case-wide:
-successfully defending the square footage representation does not immunise you on the roof.
+producing cause of damages of the plaintiff." The defense is claim-specific: defending the square
+footage representation does not immunise you on the roof.
 
 Section 17.506(c) then opens the door to the real defendant: "In a suit where a defense is asserted
 under Subdivision (2) of Subsection (a) of Section 17.506 above, suit may be asserted against the
@@ -685,11 +660,10 @@ defendant received the notice the defendant tendered to the consumer: (1) the am
 damages and damages for mental anguish claimed; and (2) the expenses, including attorneys' fees, if
 any, reasonably incurred by the consumer in asserting the claim against the defendant."
 
-Thirty days from receipt. Tender of the full amount claimed in both categories — the damages and the
-fees. Do that and you have a defense to the cause of action itself: no mental anguish, no multiplier,
-no growing fee award. Compare the Round Rock arithmetic — a $22,000 demand tendered inside thirty
-days against a potential $199,200 judgment — and you see why the thirty-day clock is the one you
-write on your calendar first.
+Thirty days from receipt, and tender of the full amount claimed in both categories. Do that and you
+have a defense to the cause of action itself: no mental anguish, no multiplier, no growing fee award.
+Compare the Round Rock arithmetic — a $22,000 demand tendered inside thirty days against a potential
+$199,200 judgment.
 
 **Limitations, § 17.565.** The section reads in full: "All actions brought under this subchapter
 must be commenced within two years after the date on which the false, misleading, or deceptive act
@@ -700,22 +674,21 @@ act or practice. The period of limitation provided in this section may be extend
 defendant's knowingly engaging in conduct solely calculated to induce the plaintiff to refrain from
 or postpone the commencement of the action."
 
-Three components. The period is **two years**. It runs from the later of two triggers: the date the
+Three components. The period is **two years**, running from the later of two triggers: the date the
 act or practice occurred, or the date the consumer "discovered or in the exercise of reasonable
-diligence should have discovered" the occurrence — a discovery rule written into the statute itself,
-with a constructive-discovery half that prevents a consumer from simply not looking. And there is a
-**180-day** extension, available only where the plaintiff proves the late filing "was caused by the
-defendant's knowingly engaging in conduct solely calculated to induce the plaintiff to refrain from
-or postpone the commencement of the action." Note the word "solely": conduct with a mixed purpose
-does not earn the extension. Because § 16.004(a)(4) gives a fraud claim four years, a claimant out of
-time under § 17.565 may still have a fraud claim alive, so a demand letter about a transaction from
-three years ago does not mean you are safe.
+diligence should have discovered" the occurrence — a discovery rule with a constructive-discovery
+half that prevents a consumer from simply not looking. And there is a **180-day** extension,
+available only where the plaintiff proves the late filing "was caused by the defendant's knowingly
+engaging in conduct solely calculated to induce the plaintiff to refrain from or postpone the
+commencement of the action." Note "solely": mixed-purpose conduct does not earn it. Because
+§ 16.004(a)(4) gives fraud four years, a claimant out of time under § 17.565 may still have a fraud
+claim alive, so a demand letter about a transaction from three years ago does not mean you are safe.
 
 **And one defense that comes from TRELA, not the DTPA.** Occupations Code § 1101.805(e), quoted in
-Unit 1, protects a license holder from a party's misrepresentation or concealment unless the license
-holder both knew of the falsity and failed to disclose that knowledge. Read alongside § 17.506(a) it
-yields one defensive posture — document in writing, before consummation, the source of every fact
-you pass along, and the moment you learn a fact you passed along is false, say so.
+Unit 1, protects a license holder from a party's misrepresentation unless the license holder both
+knew of the falsity and failed to disclose that knowledge. Read alongside § 17.506(a) it yields one
+posture: document in writing, before consummation, the source of every fact you pass along, and the
+moment you learn one is false, say so.
 
 ### Statute reading exercise: The exemptions in § 17.49
 
@@ -741,71 +714,67 @@ Open Business & Commerce Code § 17.49 and read subsections (c), (f), (g) and (i
 ## Unit: Ethical and Legal Concerns
 
 The first four units concerned money moving from you to a consumer through a courthouse. This unit
-concerns the two tracks that run alongside it: the administrative track, where TREC can take the
-license itself, and the fund the Legislature created so that a consumer who wins a judgment against a
-broke license holder is not left with a worthless piece of paper.
+concerns the two tracks alongside it: the administrative track, where TREC can take the license
+itself, and the fund the Legislature created so that a consumer who wins a judgment against a broke
+license holder is not left with a worthless piece of paper.
 
 **Two proceedings, two standards, one set of facts.** A DTPA judgment does not revoke your license:
 § 17.50(b)(4), under Damages above, bars a civil court from revoking the license of a judgment debtor
 regulated by a state agency that holds revocation authority, and TREC holds it. The civil court takes
 money and TREC takes licenses, each on its own record. A license holder who settles a DTPA claim
-quietly for $18,000 has resolved nothing with the Commission; a license holder whom TREC declines to
-discipline is not thereby cleared in a civil suit.
+quietly for $18,000 has resolved nothing with the Commission; one whom TREC declines to discipline is
+not thereby cleared in a civil suit.
 
 **The disciplinary grounds that track DTPA exposure.** Occupations Code § 1101.652 is taught in
-Module 10. What belongs here is the overlap: the grounds already named in Unit 1 — (b)(1) negligence
-or incompetence, (b)(3) and (b)(4) on known material defects spoken and unspoken, (b)(5) the false
+Module 10. What belongs here is the overlap: the grounds named in Unit 1 — (b)(1) negligence or
+incompetence, (b)(3) and (b)(4) on known material defects spoken and unspoken, (b)(5) the false
 promise, (b)(6) a continued and flagrant course of misrepresentation — reach the same conduct the
-DTPA reaches, on an administrative record and with no consumer, no reliance and no dollar of loss
-required. Section 1101.652(b)(23) goes further still, reaching an advertisement that "tends to create
-a misleading impression" — a markedly lower bar than any civil claim.
+DTPA reaches, on an administrative record, with no consumer, no reliance and no dollar of loss
+required. Section 1101.652(b)(23) goes further, reaching an advertisement that "tends to create a
+misleading impression."
 
 One ground adopts the DTPA outright. Section 1101.652(b)(15) reaches a license holder who "solicits,
 sells, or offers for sale real property by means of a deceptive practice," and the last sentence of
-the Commission's rule at 22 TAC § 535.149 supplies its content: deceptive practices "include, but are
-not limited to the acts described in the Texas Business and Commerce Code §17.46, done in a manner
-defined in that section." The Commission has adopted the DTPA's own list of deceptive acts as the
-content of a disciplinary ground. So a § 17.46(b)(5) misrepresentation about square footage is not
-only a civil claim; it is, by rule, a "deceptive practice" for purposes of § 1101.652(b)(15), and the
-Commission may suspend or revoke on that basis. The two tracks are not merely parallel — they share
-their definitions.
+22 TAC § 535.149 supplies its content: deceptive practices "include, but are not limited to the acts
+described in the Texas Business and Commerce Code §17.46, done in a manner defined in that section."
+The Commission has adopted the DTPA's own list of deceptive acts as the content of a disciplinary
+ground. So a § 17.46(b)(5) misrepresentation about square footage is not only a civil claim; it is,
+by rule, a "deceptive practice" for purposes of § 1101.652(b)(15), and the Commission may suspend or
+revoke on that basis. The two tracks are not merely parallel — they share their definitions.
 
 **The rule that states the ethical duty directly.** Rule 22 TAC § 535.156, which Module 02 teaches,
 resolves most DTPA questions before they become questions: "A license holder has a duty to convey
 accurate information to members of the public with whom the license holder deals." Not to clients. To
-members of the public. The buyer across the table from you, represented by another brokerage, owing
-you nothing and owed by you no fiduciary duty, is still owed accurate information. That rule and
-§ 17.45(4)'s privity-free definition of consumer are the same idea in two regulatory languages.
+members of the public. The buyer across the table from you, represented by another brokerage and owed
+by you no fiduciary duty, is still owed accurate information. That rule and § 17.45(4)'s
+privity-free definition of consumer are the same idea in two regulatory languages.
 
 **The Real Estate Recovery Trust Account: the consumer's backstop.** Suppose a consumer wins and the
-license holder has no assets, no insurance and no intention of paying. Subchapter M of Chapter 1101
-answers that problem. Section 1101.601(a) provides that "[t]he commission shall maintain a real
-estate recovery trust account to reimburse aggrieved persons who suffer actual damages caused by an
-act described by Section 1101.602 committed by: (1) a license holder; (2) a certificate holder; or
-(3) a person who does not hold a license or certificate and who is an employee or agent of a license
-or certificate holder." Subsection (b) adds the timing requirement: "The license or certificate
-holder must have held the license or certificate at the time the act was committed."
+license holder has no assets, no insurance and no intention of paying. Section 1101.601(a) provides
+that "[t]he commission shall maintain a real estate recovery trust account to reimburse aggrieved
+persons who suffer actual damages caused by an act described by Section 1101.602 committed by: (1) a
+license holder; (2) a certificate holder; or (3) a person who does not hold a license or certificate
+and who is an employee or agent of a license or certificate holder." Subsection (b) adds the timing
+requirement: "The license or certificate holder must have held the license or certificate at the time
+the act was committed."
 
 Section 1101.602 defines the qualifying conduct: "An aggrieved person is entitled to reimbursement
 from the trust account if a person described by Section 1101.601 engages in conduct that requires a
 license or certificate of registration under this chapter and is described by Section
 1101.652(a-1)(1) or (b), if the person is a license holder, or Section 1101.653(1), (2), (3), or
-(4), if the person is a certificate holder." For a license holder that means § 1101.652(a-1)(1) —
-misrepresentation, dishonesty or fraud in a transaction in the license holder's own name or a
-spouse's or close relative's — or *any* of the grounds in § 1101.652(b), including negligence and
-incompetence at (b)(1).
+(4), if the person is a certificate holder." For a license holder that means § 1101.652(a-1)(1) — a
+transaction in the license holder's own name or a close relative's — or *any* of the grounds in
+§ 1101.652(b), including negligence and incompetence at (b)(1).
 
 **The deadline, and the order of events.** Section 1101.605(a): "An action for a judgment that may
 result in an order for payment from the trust account may not be brought after the second anniversary
-of the date the cause of action accrues." Two years from accrual, the same period as the DTPA's
-§ 17.565 but measured by its own accrual rule and without § 17.565's express discovery language. The
-account is also not a first resort: § 1101.606(a) requires the aggrieved person to obtain a court
-judgment first and then, "after final judgment is entered, execution returned nulla bona, and a
-judgment lien perfected, file a verified claim in the court that entered the judgment." *Nulla bona*
-is the sheriff's return meaning no property was found to seize; the consumer must have actually tried
-to collect and failed. And § 1101.607(2)(B) bars a license or certificate holder seeking to recover
-compensation, including a commission, in the transaction the application concerns. The fund is a
-consumer remedy, not a fee-collection device.
+of the date the cause of action accrues." Two years from accrual. The account is also not a first
+resort: § 1101.606(a) requires a court judgment first and then, "after final judgment is entered,
+execution returned nulla bona, and a judgment lien perfected, file a verified claim in the court that
+entered the judgment." *Nulla bona* is the sheriff's return meaning no property was found to seize;
+the consumer must have tried to collect and failed. And § 1101.607(2)(B) bars a license or
+certificate holder seeking to recover compensation, including a commission, in the transaction the
+application concerns. The fund is a consumer remedy, not a fee-collection device.
 
 **The caps — state them exactly.** Section 1101.610(a): "Payments from the trust account for claims,
 including attorney's fees, interest, and court costs, arising out of a single transaction may not
@@ -815,13 +784,13 @@ may not exceed a total of $250,000 until the license or certificate holder has r
 account for all amounts paid."
 
 **$125,000 per transaction, regardless of the number of claimants. $250,000 per license holder**,
-and the per-license-holder ceiling lifts only when the license holder has reimbursed the account in
-full. Both figures are inclusive of attorney's fees, interest and court costs — the $125,000 is not
-damages plus fees, it is everything. Section 1101.610(c) handles oversubscription: "If the court
-finds that the total amount of claims against a license or certificate holder exceeds the limitations
-in this section, the court shall proportionately reduce the amount payable on each claim." And
-§ 1101.610(e): "For purposes of this section, a business entity and the broker who is the business
-entity's designated broker are considered a single license holder."
+and the per-license-holder ceiling lifts only on full reimbursement. Both figures are inclusive of
+attorney's fees, interest and court costs — the $125,000 is not damages plus fees, it is everything.
+Section 1101.610(c): "If the court finds that the total amount of claims against a license or
+certificate holder exceeds the limitations in this section, the court shall proportionately reduce
+the amount payable on each claim." And § 1101.610(e): "For purposes of this section, a business
+entity and the broker who is the business entity's designated broker are considered a single license
+holder."
 
 Return to the Round Rock arithmetic. A maximum tier-three judgment there came to $199,200. If that
 judgment arose out of a single transaction and the license holder were judgment-proof, the trust
@@ -849,8 +818,7 @@ of all amounts owed to the trust account does not affect another disciplinary pr
 under this chapter." Paying the fund back does not buy your way out of discipline. And § 1101.615(a)
 requires the Commission by rule to "prescribe a notice regarding the availability of payment from the
 trust account for aggrieved persons and establish methods by which each license and certificate
-holder shall provide the notice to consumers and service recipients" — the consumer's backstop is one
-you are required to help the Commission tell them about.
+holder shall provide the notice to consumers and service recipients."
 
 **The ethical proposition, stated plainly.** Neither track requires dishonesty before it bites. So
 the practical ethic is not "do not lie." It is narrower and harder: **say only what you know, say
@@ -978,8 +946,8 @@ that the module, its exercises or its assessments depend on.
 The exercise below is additional practice on the Real Estate Recovery Trust Account taught in Unit 5.
 It uses a fact pattern the two required exercises do not — an insolvent judgment debtor, a second
 competing claimant, the statutory caps applied to an actual judgment, and the subrogation and
-revocation that follow a payment — and it is here for a student who wants that arithmetic worked
-through once by hand. Every provision it relies on is taught in the required prose of Unit 5.
+revocation that follow a payment. Every provision it relies on is taught in the required prose of
+Unit 5.
 
 ### Applied exercise: The unpaid judgment in Waco
 

@@ -6,18 +6,16 @@
 approval form places under *Employment Issues*, whose scope note is *"Employment law."*
 
 **Learning objectives.** After completing this module you will be able to: state the four
-conditions in Labor Code § 201.072 and the three conditions in 26 U.S.C. § 3508(b)(1) that decide
-whether a licensed Texas agent's service is excluded from "employment," and identify the clauses a
-written independent contractor agreement must carry to satisfy them; describe what Labor Code
-chapter 21 prohibits, who counts as an "employer" and an "employee" under § 21.002, and where
-chapter 21 stops at the edge of a genuine independent contractor relationship; explain why the
-broker — not the sales agent — is the person the client employs under § 1101.557(a); determine,
-from 22 TAC §§ 535.4, 535.5, 535.20 and 535.147, which tasks an unlicensed personal assistant may
-perform and who may lawfully pay the assistant; apply every subsection of 22 TAC § 535.2 to a
-working brokerage, including the written scope notice, the delegation and Commission-notice
-mechanics, the four-year records list and the written policies and procedures; and route every
-dollar of compensation correctly under 22 TAC § 535.3, § 1101.651(b), § 535.147 and § 535.148,
-including compensation earned before a change of sponsorship.
+conditions in Labor Code § 201.072 and the three in 26 U.S.C. § 3508(b)(1) that decide whether a
+licensed Texas agent's service is excluded from "employment," and identify the clauses a written
+independent contractor agreement must carry to satisfy them; describe what Labor Code chapter 21
+prohibits, who counts as an "employer" and an "employee" under § 21.002, and where the chapter
+stops at the edge of a genuine independent contractor relationship; explain why the broker, not
+the sales agent, is the person the client employs under § 1101.557(a); determine from 22 TAC §§
+535.4, 535.5, 535.20 and 535.147 which tasks an unlicensed personal assistant may perform and who
+may lawfully pay the assistant; apply every subsection of 22 TAC § 535.2 to a working brokerage;
+and route every dollar of compensation correctly under 22 TAC § 535.3, § 1101.651(b), § 535.147
+and § 535.148, including compensation earned before a change of sponsorship.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where
 a statement is practice rather than law, the module says so and cites nothing for it.
@@ -69,22 +67,20 @@ unit.
 
 Condition (A) ties the exclusion to the *work*: activity described by the definition of "broker"
 in Occupations Code § 1101.002. It covers licensed brokerage activity, not everything a person
-might do for a brokerage — a sales agent who also runs the office's bookkeeping for an hourly wage
-is not, in doing the bookkeeping, performing activity described by that definition. Condition (B)
-requires a Texas Real Estate Commission licence; chapter 201 says "salesperson," the word the
-Legislature used in 1993, while TRELA and the Commission's rules now say "sales agent," and they
-mean the same licence. An unlicensed or lapsed worker cannot use § 201.072, because condition (B)
-fails on its face.
+might do for a brokerage — a sales agent who also keeps the office books for an hourly wage is
+not, in doing that, performing activity described by the definition. Condition (B) requires a
+Texas Real Estate Commission licence; chapter 201 says "salesperson," the word the Legislature
+used in 1993, and TRELA and the Commission's rules now say "sales agent," meaning the same
+licence. An unlicensed or lapsed worker cannot use § 201.072, because condition (B) fails on its
+face.
 
 Condition (C) is the pay condition, and the one brokerages most often break by accident:
 "[S]ubstantially all remuneration for the service, whether in cash or other form of payment, is
 directly related to sales or other output, including the performance of the service, and not to
-the number of hours worked." Commission on closings, a referral bonus tied to a transaction and a
-per-transaction fee credit are output-based; anything measured by time is not — an hourly rate for
-floor duty, a guaranteed monthly salary, a stipend for attending sales meetings. A Sugar Land
-brokerage paying new agents $15 an hour for front-desk rotation plus commission has a
-mixed-remuneration problem, and the honest answer is that neither § 201.072 nor 26 U.S.C. § 3508
-defines "substantially all," and no Treasury regulation, Internal Revenue Service ruling, or Texas
+the number of hours worked." Commission on closings is output-based pay; an hourly rate for floor
+duty or a guaranteed monthly salary is not, and a brokerage paying both has a mixed-remuneration
+problem. The honest answer to it is that neither § 201.072 nor 26 U.S.C. § 3508 defines
+"substantially all," and no Treasury regulation, Internal Revenue Service ruling, or Texas
 Workforce Commission rule construing the phrase was held for this course. The threshold is not
 taught here.
 
@@ -93,25 +89,23 @@ contract between the individual and the person for whom the service is performed
 sentence people leave out — "the contract provides that the individual is not treated as an
 employee with respect to the service for federal tax purposes." An agreement that calls the agent
 an independent contractor, sets a split and allocates expenses but says nothing about federal tax
-treatment does not satisfy condition (D): the statute does not ask what the parties intended, it
-asks whether the contract *provides* it. Find that clause before you sign.
+treatment does not satisfy condition (D): the statute asks not what the parties intended but
+whether the contract *provides* it.
 
-Paragraph (2) excludes service by "an individual as an instructor of a person licensed or seeking
-a license as a real estate broker or salesperson" on two conditions: the individual "instructs in
-an educational program or course approved by the Texas Real Estate Commission," and the service is
-performed under a written contract containing the same federal-tax-purposes provision. It carries
-no output-based pay condition, so an instructor may be paid by the classroom hour and still fall
-outside "employment."
+Paragraph (2) does the same for an instructor of a person licensed or seeking a licence as a
+broker or salesperson, on two conditions: the individual "instructs in an educational program or
+course approved by the Texas Real Estate Commission," and the written contract carries the same
+federal-tax-purposes provision. It has no output-based pay condition, so an instructor may be paid
+by the classroom hour and still fall outside "employment.""
 
 **What § 201.072 conspicuously does not require.** Nothing in the four conditions requires that
-the agent be free from the broker's control, set their own hours, supply a vehicle, pay their own
-expenses, or accept or reject assignments freely. That absence is not an oversight: § 201.070
-conditions the product demonstrator exclusion on control factors including that the individual
-"determines the method of performing the service," and § 201.073 conditions the delivery service
-exclusion on a nearly identical list, including that the individual "may accept or reject a job
-from the delivery service." The Legislature knew how to make freedom from control a condition of
-an exclusion; in § 201.072 it chose not to. That resolves the tension you meet in Unit 5: a broker
-may supervise as closely as the Commission's rules require without endangering the exclusion.
+the agent be free from the broker's control, set their own hours, or be free to accept or reject
+assignments. That absence is not an oversight: neighbouring exclusions in the same subchapter do
+turn on control — § 201.070 requires that the individual "determines the method of performing the
+service," § 201.073 that the individual "may accept or reject a job from the delivery service."
+The Legislature knew how to make freedom from control a condition of an exclusion; in § 201.072 it
+chose not to. That resolves the tension you meet in Unit 5: a broker may supervise as closely as
+the Commission's rules require without endangering the exclusion.
 
 **The federal side.** For federal tax purposes the governing provision is 26 U.S.C. § 3508,
 "Treatment of real estate agents and direct sellers." Subsection (a) states the general rule: "For
@@ -119,10 +113,10 @@ purposes of this title, in the case of services performed as a qualified real es
 direct seller-" then "(1) the individual performing such services shall not be treated as an
 employee, and (2) the person for whom such services are performed shall not be treated as an
 employer." It cuts both ways, removing employer status from the brokerage and with it the federal
-employment tax withholding and matching obligations. Its opening words are a limit: "For purposes
-of this title" confines the section to Title 26. Section 3508 decides federal tax treatment and
-nothing else — not your broker's supervision duty, not your status under Labor Code chapter 21,
-not anyone's liability to anyone.
+employment tax withholding and matching obligations. And its opening words are a limit: "For
+purposes of this title" confines the section to Title 26, so § 3508 decides federal tax treatment
+and nothing else — not your broker's supervision duty, not your status under Labor Code chapter
+21, not anyone's liability to anyone.
 
 Subsection (b)(1) supplies the definition the general rule turns on. "The term "qualified real
 estate agent" means any individual who is a sales person if-" and then three conditions: "(A) such
@@ -134,12 +128,12 @@ pursuant to a written contract between such individual and the person for whom t
 performed and such contract provides that the individual will not be treated as an employee with
 respect to such services for Federal tax purposes."
 
-The two statutes are one drafting pattern, not two regimes to satisfy separately, so one
-well-drafted agreement satisfies both. Its statutory core is short: the parties by name; a
-statement that the individual holds a Texas licence and will perform activity described by
-Occupations Code § 1101.002; compensation measured by production rather than hours; and an express
-provision that the individual will not be treated as an employee with respect to the services for
-federal tax purposes.
+One well-drafted agreement satisfies both statutes, because they are one drafting pattern rather
+than two regimes. Its statutory core is short: the parties by name; a statement that the
+individual holds a Texas licence and will perform activity described by Occupations Code §
+1101.002; compensation measured by production rather than hours; and an express provision that the
+individual will not be treated as an employee with respect to the services for federal tax
+purposes.
 
 **The non-interaction you must not get wrong.** Your status as an independent contractor for
 unemployment compensation purposes under § 201.072, and for federal tax purposes under § 3508, has
@@ -147,12 +141,13 @@ unemployment compensation purposes under § 201.072, and for federal tax purpose
 serve a different purpose — brokerage supervision and licensing responsibility — and are not
 conditioned on employment. Rule 22 TAC § 535.2 says so in its closing sentence: "This section is
 not meant to create or require an employer/employee relationship between a broker and a sponsored
-sales agent." Read that in the direction it points: it does not make the broker's obligations
-lighter for a contractor, it says they exist independently of employment status. Alongside it sits Occupations Code § 1101.803: "A licensed broker is liable to the
-commission, the public, and the broker's clients for any conduct engaged in under this chapter by
-the broker or by a sales agent associated with or acting for the broker." The Legislature attached
-that liability to association, not to employment, so a clause in your contractor agreement stating
-that the broker is not responsible for your acts is worth nothing against § 1101.803.
+sales agent." It does not make the broker's obligations lighter for a contractor; it says they
+exist independently of employment status. Alongside it sits Occupations Code § 1101.803: "A
+licensed broker is liable to the commission, the public, and the broker's clients for any conduct
+engaged in under this chapter by the broker or by a sales agent associated with or acting for the
+broker." The Legislature attached that liability to association, not to employment, so a clause in
+your contractor agreement stating that the broker is not responsible for your acts is worth
+nothing against § 1101.803.
 
 **Stated plainly: what was not held.** The Internal Revenue Service's administrative guidance and
 the Treasury regulations under 26 U.S.C. § 3508, the Texas Workforce Commission's own rules and
@@ -164,15 +159,14 @@ compensation on its agents, this module states no position.
 
 ## Unit: Employment Law
 
-Unit 1 established that a licensed Texas sales agent working under a proper written agreement is,
-for unemployment-tax and federal-tax purposes, not an employee. It does not follow that employment
-law is irrelevant to a brokerage. Brokerages hire receptionists, transaction coordinators,
-marketing staff, bookkeepers, unpaid interns and property management staff, and the state's
-principal employment discrimination statute contains one subchapter whose coverage threshold is a
-single employee. Note the change of subject: § 201.072 serves unemployment compensation and
-§ 3508 serves federal tax, while the statute in this unit serves **discrimination law** and
-carries its own definitions of "employer" and "employee". Neither of the tests you learned in
-Unit 1 is imported into it.
+Unit 1 established that a licensed Texas sales agent under a proper written agreement is, for
+unemployment-tax and federal-tax purposes, not an employee. It does not follow that employment law
+is irrelevant to a brokerage: brokerages hire receptionists, coordinators, bookkeepers, interns
+and property management staff, and one subchapter of the state's employment discrimination statute
+has a coverage threshold of a single employee. Note the change of subject. Section 201.072 serves
+unemployment compensation and § 3508 federal tax; the statute in this unit serves **discrimination
+law** and carries its own definitions of "employer" and "employee", and neither test from Unit 1
+is imported into it.
 
 **The statute.** Texas Labor Code chapter 21 is the Texas Commission on Human Rights Act. Section
 21.001 states its purposes, the first being to "provide for the execution of the policies of Title
@@ -181,20 +175,14 @@ seq.)": the chapter is Texas's state-law counterpart to the federal employment d
 scheme, built to track it. The texts of Title VII and the ADA themselves were **not held** for
 this course, so this module teaches the Texas chapter and does not state what the federal statutes
 say. Section 21.0015 provides that "The powers and duties exercised by the Commission on Human
-Rights under this chapter are transferred to the Texas Workforce Commission." Section 21.051 is
-the operative prohibition:
-
-> Sec. 21.051. DISCRIMINATION BY EMPLOYER. An employer commits an unlawful employment practice if
-> because of race, color, disability, religion, sex, national origin, or age the employer: (1)
-> fails or refuses to hire an individual, discharges an individual, or discriminates in any other
-> manner against an individual in connection with compensation or the terms, conditions, or
-> privileges of employment; or (2) limits, segregates, or classifies an employee or applicant for
-> employment in a manner that would deprive or tend to deprive an individual of any employment
-> opportunity or adversely affect in any other manner the status of an employee.
-
-Seven protected characteristics — race, color, disability, religion, sex, national origin, age —
-and two prohibited modes: adverse treatment in hiring, discharge, compensation or terms and
-conditions, and limiting, segregating or classifying so as to deprive someone of opportunity.
+Rights under this chapter are transferred to the Texas Workforce Commission." Section 21.051
+carries the core prohibition: an employer commits an unlawful employment practice if, because of
+race, color, disability, religion, sex, national origin or age, it refuses to hire, discharges or
+otherwise discriminates against an individual in compensation or the terms, conditions or
+privileges of employment, or limits, segregates or classifies an employee or applicant so as to
+deprive that person of an employment opportunity. Seven protected characteristics, two prohibited
+modes. The chapter's remaining unlawful-practice provisions, its administrative process and its
+damages caps are not taught in this course.
 
 **Who is an "employer," and who is an "employee."** Section 21.002(8) defines the term to include
 "(A) a person who is engaged in an industry affecting commerce and who has 15 or more employees
@@ -202,10 +190,10 @@ for each working day in each of 20 or more calendar weeks in the current or prec
 year" and "(B) an agent of a person described by Paragraph (A)." Most Texas brokerages never reach
 that threshold in *employees*: a Waco firm with eighty sponsored sales agents and three salaried
 staff has three employees for this purpose, not eighty-three, provided the agents are genuine
-independent contractors. Paragraph (B) matters too, because a supervising individual who makes
-personnel decisions for a covered firm is an employer in their own right. Section 21.002(7)
-defines "Employee" as "an individual employed by an employer," which is circular on purpose:
-chapter 21 supplies no test for distinguishing an employee from an independent contractor.
+independent contractors. Paragraph (B) also makes a supervisor who takes personnel decisions for a
+covered firm an employer in their own right. Section 21.002(7) defines "Employee" as "an
+individual employed by an employer" — circular on purpose, because chapter 21 supplies no test for
+distinguishing an employee from an independent contractor.
 
 **The honest answer about sales agents.** A sales agent whose service is genuinely excluded from
 "employment" under § 201.072 — output-based pay, written contract, the federal-tax clause — and
@@ -214,17 +202,16 @@ of these definitions, an employee of the broker, and 22 TAC § 535.2 closes with
 the section "is not meant to create or require an employer/employee relationship between a broker
 and a sponsored sales agent." Notice the limits of what that establishes. Section 201.072 excludes
 real estate service from "employment" **"In this subtitle"** — for unemployment compensation
-purposes only. It decides nothing under chapter 21, which sits in a different subtitle and defines
-its own terms; and § 3508, confined to Title 26, decides nothing under Texas law at all. Do not
-import either test into a chapter 21 question. Whether a Texas court applying chapter 21 would
-treat a particular sales agent as an employee turns on judicial decisions applying that chapter's
-definitions to real facts, and **no case law was held** for this course. This module therefore
-does not tell you that a sales agent can never bring a chapter 21 claim against a broker, and it
-does not tell you that one always can. A broker who assumes the answer is "never" is betting on an
-unread authority.
+purposes only — so it decides nothing under chapter 21, which sits in a different subtitle and
+defines its own terms; and § 3508, confined to Title 26, decides nothing under Texas law at all.
+Do not import either test into a chapter 21 question. Whether a Texas court applying chapter 21
+would treat a particular sales agent as an employee turns on judicial decisions applying that
+chapter's definitions to real facts, and **no case law was held** for this course. This module
+therefore does not tell you that a sales agent can never bring a chapter 21 claim against a
+broker, and it does not tell you that one always can.
 
-**The one-employee subchapter.** Subchapter C-1, added in 2021, governs sexual harassment, and
-§ 21.141 gives it its own definition: "'Employer' means a person who: (A) employs one or more
+**The one-employee subchapter.** Subchapter C-1, added in 2021, governs sexual harassment, and §
+21.141 gives it its own definition: "'Employer' means a person who: (A) employs one or more
 employees; or (B) acts directly in the interests of an employer in relation to an employee." One
 employee. Section 21.142 makes an employer liable where sexual harassment of an employee occurs
 and the employer or the employer's agents or supervisors "know or should have known that the
@@ -236,76 +223,72 @@ assistant.
 a disciplinary ground for a license holder engaged in real estate brokerage to discriminate
 against an owner, potential buyer, landlord or potential tenant on the basis of race, color,
 religion, sex, disability, familial status, national origin or ancestry, including steering a
-prospect interested in equivalent properties to a different area on those bases. Section 1101.652
-and fair housing law proper are taught in Module 10; the point here is that this ground attaches
-to the licence whether you are an employee or a contractor.
+prospect interested in equivalent properties to a different area on those bases. That ground
+attaches to the licence whether you are an employee or a contractor; § 1101.652 and fair housing
+law are taught in Module 10.
 
 ## Unit: Employment Relationships between Brokers and Principals
 
 This unit exists because of a word. Real estate law uses "employ" in a sense that predates labour
 law: a principal *employs* an agent when the principal engages the agent to act on the principal's
-behalf. That is what a listing agreement and a buyer representation agreement do. The seller
+behalf, which is what a listing agreement and a buyer representation agreement do. The seller
 employs the broker. It is an engagement, and it has nothing to do with payroll, withholding,
-unemployment tax or Labor Code chapter 21. Carry one sentence out of this unit: the broker is
-employed by the client, and the sales agent is not employed by anybody.
+unemployment tax or Labor Code chapter 21. The broker is employed by the client, and the sales
+agent is not employed by anybody.
 
-TRELA uses the word in both senses a few pages apart. Occupations Code § 1101.002(1)(B)(i)
-provides that "Broker" includes a person who "is employed by or for an owner of real estate to
-sell any portion of the real estate" — the engagement sense. The Commission's rules use the
-labour-law sense where it matters: 22 TAC § 535.5(c) provides that a real estate license is not
-required "for an employee employed by a business entity for the purpose of buying, selling, or
-leasing real property for the entity," and § 535.5(d)(2) defines the term for that purpose: "An
-employee of a business entity means a person employed and directly compensated by the business
-entity. An independent contractor is not an employee." Tell the two senses apart from context.
+The Commission's rules use the labour-law sense where it matters: 22 TAC § 535.5(c) provides that
+a real estate license is not required "for an employee employed by a business entity for the
+purpose of buying, selling, or leasing real property for the entity," and § 535.5(d)(2) defines
+that term: "An employee of a business entity means a person employed and directly compensated by
+the business entity. An independent contractor is not an employee." Occupations Code §
+1101.002(1)(B)(i), by contrast, uses the engagement sense, providing that "Broker" includes a
+person who "is employed by or for an owner of real estate to sell any portion of the real estate."
+Tell the senses apart from context.
 
 **Who the client's agent is.** Occupations Code § 1101.557(a) settles it: a broker who represents
 a party in a real estate transaction, or who lists real estate for sale under an exclusive
 agreement for a party, "is that party's agent." Not the sales agent. The broker. Section 1101.557
-is taught in full in Module 02; what matters here is the identity it fixes. Rule 22 TAC § 535.2
-provides that "Listings and other agreements for real estate brokerage services must be solicited
-and accepted in a broker's name," and Occupations Code § 1101.351(c) puts the agent in position:
-"A licensed sales agent may not engage or attempt to engage in real estate brokerage unless the
-sales agent is sponsored by a licensed broker and is acting for that broker." Between them those
-provisions define the architecture of Texas brokerage: the client contracts with the broker, the
-sales agent performs the work as the person acting for the broker, and § 1101.803 supplies the
-answerability. The consequence catches new agents by surprise — you take a listing in Frisco and
-move brokerages, and the listing does not go with you, because it was never yours. What you are
-owed on transactions worked before you left is a separate question, governed by § 1101.651(b) in
-Unit 6.
+is taught in full in Module 02. Rule 22 TAC § 535.2 then provides that "Listings and other
+agreements for real estate brokerage services must be solicited and accepted in a broker's name,"
+and Occupations Code § 1101.351(c) puts the agent in position: "A licensed sales agent may not
+engage or attempt to engage in real estate brokerage unless the sales agent is sponsored by a
+licensed broker and is acting for that broker." Between them those provisions define the
+architecture of Texas brokerage: the client contracts with the broker, the sales agent performs
+the work as the person acting for the broker, and § 1101.803 supplies the answerability. A listing
+therefore belongs to the broker and does not travel with you to a new firm, and what you are owed
+on transactions worked before you left is governed by § 1101.651(b) in Unit 6.
 
 **The trap at the boundary.** Section 1101.652(b)(26), taught in Module 10, makes it a
 disciplinary ground to establish an association "by employment or otherwise" with a person other
 than a license holder if that person is expected or required to act as a license holder. Those
 four words are why the label does not matter: employee, contractor, partner or assistant, if the
 person is expected to act as a license holder and is not one, the association itself is the
-violation. The reverse trap is assuming that because a broker is "employed" by the seller, the
-broker owes a servant's obedience. Rule 535.2 makes the duty the "highest fiduciary obligation" to
-the principal and pairs it with a limit — "unless prohibited by other law." A seller who instructs
-a broker to conceal a known material defect is instructing the broker to do what other law
-prohibits, and the engagement does not authorise it.
+violation. The reverse trap is assuming that a broker "employed" by the seller owes a servant's
+obedience. Rule 535.2 makes the duty the "highest fiduciary obligation" to the principal and pairs
+it with a limit — "unless prohibited by other law" — so a seller's instruction to conceal a known
+material defect is not authorised by the engagement.
 
 ## Unit: Employment and Compensation of Personal Assistants
 
 An assistant is the first hire most producing agents make, and it is where more licence trouble
 starts than in any other staffing decision. What an unlicensed assistant may do is not a matter of
 degree or of intention: 22 TAC § 535.4 lists the acts for which a licence is required and § 535.5
-lists what does not require one — both taught in Module 01 — and the assistant may do everything
-else and none of those.
+what does not, both taught in Module 01, and the assistant may do everything else and none of
+those.
 
 **Showing.** Section 535.4(c) provides that "[u]nless otherwise exempted by the Act, a person must
 be licensed as a broker or sales agent to show a property," and the operative half is the
 definition: "[f]or purposes of this section, to 'show' a property includes causing or permitting
 the property to be viewed by a prospective buyer or tenant, unlocking or providing access onto or
 into a property for a prospective buyer or tenant, and hosting an open house at the property."
-That is broader than the word sounds. An unlicensed assistant cannot meet a buyer at a
-Pflugerville listing to let them in "just to look around," and cannot sit an open house even under
-instructions to answer no questions: the rule reaches the act of providing access, not the quality
-of the conversation that follows.
+That is broader than the word sounds: an unlicensed assistant cannot unlock a listing for a buyer,
+and cannot sit an open house even under instructions to answer no questions. The rule reaches the
+act of providing access, not the conversation that follows.
 
 **Soliciting and negotiating.** Section 535.4(f) provides that "[a] real estate license is
 required for a person to solicit listings or to negotiate in Texas for listings." The assistant
 may do clerical work on a mailing campaign the broker designs and sends in the broker's name, but
-may not call expired listings or for-sale-by-owner sellers to solicit the listing.
+may not call expired listings or for-sale-by-owner sellers to solicit.
 
 **Supervising.** Section 535.4(e) provides that "[t]he employees, agents, or associates of a
 licensed broker must be licensed as brokers or sales agents if they direct or supervise other
@@ -319,13 +302,10 @@ required to be licensed under the Act." Every element is load-bearing: the perso
 *identified to callers* as such, the information must be *confirmation* of size, price and terms,
 and the property must have been *advertised*. Confirming to such a caller that the Katy listing is
 2,410 square feet at $389,000 with a 30-day close sits inside the rule; telling the caller the
-seller will probably take $370,000 does not, because that is negotiating. Beyond § 535.5(g) the
-safe territory is defined by subtraction — anything that is not an act described in § 535.4 or in
-the § 1101.002 definition of broker: scheduling and file management, assembling and delivering
-documents at the license holder's direction, ordering signs and photography, data entry,
-bookkeeping, greeting people at the office. That list is practice rather than a citation, because
-no held rule enumerates permitted assistant tasks, and that absence is why the analysis has to run
-the other way.
+seller will probably take $370,000 is negotiating and does not. Beyond § 535.5(g) the safe
+territory is defined by subtraction: no held rule enumerates the tasks an assistant may perform,
+so you start from § 535.4 and the § 1101.002 definition of broker and ask whether the task is on
+the licensed side.
 
 **Referrals: the trap with a dollar figure in it.** Rule 22 TAC § 535.20 provides that
 "[r]eferring a prospective buyer, seller, landlord, or tenant to another person in connection with
@@ -333,16 +313,16 @@ a proposed real estate transaction is an act requiring the person making the ref
 licensed if the referral is made with the expectation of receiving valuable consideration," and
 then defines the term: "For the purposes of this section, the term 'valuable consideration'
 includes but is not limited to: money; gifts of merchandise having a retail value greater than
-$50; rent bonuses; and discounts." A $75 gift card to the neighbour who sent you a buyer is
-valuable consideration under this rule. Section 535.20(b) sets out a narrow exemption, and all
-four of its conditions must be met: the person "is engaged in the business of selling goods or
-services to the public"; the person "sells goods or services to a real estate license holder who
-intends to offer the goods or services as an inducement to potential buyers, sellers, landlords or
-tenants"; "[a]fter selling the goods or services to the real estate license holder, the person
-refers the person's customers to the real estate license holder"; and "[t]he payment to the person
-for the goods or services is not contingent upon the consummation of a real estate transaction by
-the person's customers." That last condition is the heart of it: the moment the vendor's payment
-depends on whether the referred customer closes, the exemption is gone.
+$50; rent bonuses; and discounts." A $75 gift card to the neighbour who sent you a buyer is inside
+that definition. Section 535.20(b) sets out a narrow exemption, and all four of its conditions
+must be met: the person "is engaged in the business of selling goods or services to the public";
+the person "sells goods or services to a real estate license holder who intends to offer the goods
+or services as an inducement to potential buyers, sellers, landlords or tenants"; "[a]fter selling
+the goods or services to the real estate license holder, the person refers the person's customers
+to the real estate license holder"; and "[t]he payment to the person for the goods or services is
+not contingent upon the consummation of a real estate transaction by the person's customers." The
+moment the vendor's payment depends on whether the referred customer closes, the exemption is
+gone.
 
 **Who may pay the assistant.** Three provisions govern the money. Occupations Code § 1101.651(a)
 constrains the broker: "A licensed broker may not pay a commission to or otherwise compensate a
@@ -350,38 +330,30 @@ person directly or indirectly for performing an act of a broker unless the perso
 license holder; or (2) a real estate broker licensed in another state who does not conduct in this
 state any of the negotiations for which the commission or other compensation is paid." Note "or
 otherwise compensate" and "directly or indirectly": the prohibition is not limited to commissions
-and is not defeated by routing the payment through someone else.
+and is not defeated by routing payment through someone else.
 
 Rule 22 TAC § 535.147(a) restates it at rule level with its qualifier intact: "Except as otherwise
 provided by the Act or Commission rules, a broker or sales agent may not share a commission or
 fees with any person who engages in acts for which a license is required and is not actively
 licensed as a broker or sales agent." Read the conjunction: the prohibited payee both engages in
 acts for which a licence is required **and** is not actively licensed, which is why an assistant
-doing only clerical work is not caught by it. Section 535.147(b) confirms the same logic from the
-other side: "An unlicensed person may share in the income earned by a business entity licensed as
-a broker or exempted from the licensing requirements under the Act if the person engages in no
-acts for which a license is required and does not lead the public to believe that the person is in
-the real estate brokerage business."
+doing only clerical work is not caught. Section 535.147(b) confirms it from the other side: "An
+unlicensed person may share in the income earned by a business entity licensed as a broker or
+exempted from the licensing requirements under the Act if the person engages in no acts for which
+a license is required and does not lead the public to believe that the person is in the real
+estate brokerage business.""
 
 Rule 22 TAC § 535.3 constrains the sales agent, and this is the provision agents forget when they
 hire their own assistant. Its second sentence: "A sales agent may not pay a commission or other
 valuable consideration to another person except with the written consent of the sales agent's
 sponsoring broker." Note the breadth — "a commission or other valuable consideration," not merely
-a commission. Occupations Code § 1101.651(c) is narrower in its terms: "A sales agent may not pay
-a commission to a person except through the broker that is sponsoring the sales agent at that
-time." Whether an hourly wage paid by a sales agent to a purely clerical personal assistant is
-"other valuable consideration" within § 535.3 was not resolved in any source held for this course,
-and this module asserts no answer. The safe course, a consequence of the rule's breadth rather
-than a legal conclusion, is to obtain your sponsoring broker's written consent before you pay
-anyone anything out of your own pocket in connection with your brokerage practice.
-
-**Three lawful structures.** The assistant may be the broker's employee, paid by the brokerage and
-doing only unlicensed tasks, so that § 535.147(a) is never engaged; or the sales agent's own
-employee or contractor, paid by the agent, in which case § 535.3's second sentence puts the
-sponsoring broker's written consent in the path; or licensed, in which case the assistant is not a
-hybrid but a sales agent — sponsored under § 1101.351(c), compensated only as § 535.3 and
-§ 1101.651(b) permit, and carrying the full weight of § 535.2 supervision on the sponsoring
-broker.
+a commission. Occupations Code § 1101.651(c) is narrower: "A sales agent may not pay a commission
+to a person except through the broker that is sponsoring the sales agent at that time." Whether an
+hourly wage paid by a sales agent to a purely clerical assistant is "other valuable consideration"
+within § 535.3 was not resolved in any source held for this course, and this module asserts no
+answer. The safe course, a consequence of the rule's breadth rather than a legal conclusion, is to
+obtain your broker's written consent before you pay anyone out of your own pocket in connection
+with your practice.
 
 ### Applied exercise: Staffing a team in Round Rock
 
@@ -414,18 +386,16 @@ him.
 
 ## Unit: Broker Responsibility (Relationships between Brokers and Agents, §535.2)
 
-Rule 22 TAC § 535.2 is the operational statement of what a Texas broker must do about the people
-the broker sponsors, and it is the source of the apparent contradiction this module opened with:
-how can a broker be legally responsible for a sales agent who is not the broker's employee? The
-answer, established in Unit 1, is that Texas law never made the broker's responsibility depend on
-employment. **A sales agent's independent contractor status for federal tax or unemployment
-compensation purposes does not reduce the broker's supervision duty by one line, and does not
-reduce the broker's responsibility for the agent's authorized acts.** Section 1101.803 attaches
-liability to a sales agent "associated with or acting for the broker"; § 201.072's exclusion
-carries no control condition, so nothing the broker does by way of supervision endangers it; and
-§ 535.2 closes with the sentence "This section is not meant to create or require an
-employer/employee relationship between a broker and a sponsored sales agent." Work through the
-rule subsection by subsection.
+Rule 22 TAC § 535.2 states what a Texas broker must do about the people the broker sponsors, and
+it is the source of the apparent contradiction this module opened with: how can a broker be
+responsible for a sales agent who is not the broker's employee? **A sales agent's independent
+contractor status for federal tax or unemployment compensation purposes does not reduce the
+broker's supervision duty by one line, and does not reduce the broker's responsibility for the
+agent's authorized acts.** Section 1101.803 attaches liability to a sales agent "associated with
+or acting for the broker"; § 201.072's exclusion carries no control condition, so supervision
+cannot endanger it; and § 535.2 closes with the sentence "This section is not meant to create or
+require an employer/employee relationship between a broker and a sponsored sales agent." Work
+through the rule subsection by subsection.
 
 **(a) The written scope notice.** "A broker is required to notify a sponsored sales agent in
 writing of the scope of the sales agent's authorized activities under the Act. Unless such scope
@@ -435,31 +405,29 @@ permits a sponsored sales agent to conduct activities beyond the scope explicitl
 the broker, those are acts for which the broker is responsible."
 
 Three sentences, three rules. The notice must be *in writing* and must state the *scope*. The
-broker is responsible for authorized acts unless scope is limited or revoked in writing, and the
-rule expressly says the broker "is not required to supervise the sales agents directly." And the
-trap is in the third sentence: a broker who writes a narrow scope — residential resale only, no
-property management — and then knowingly lets an agent manage four rent houses is responsible for
-those acts anyway. A written scope protects the broker only for as long as the broker enforces it.
+broker is responsible for authorized acts unless scope is limited or revoked in writing, though
+the broker "is not required to supervise the sales agents directly." And the trap is the third
+sentence: a broker who writes a narrow scope and then knowingly lets an agent work outside it is
+responsible for those acts anyway, so a written scope protects the broker only for as long as the
+broker enforces it.
 
 **(b) The fiduciary standard.** "A broker owes the highest fiduciary obligation to the principal
 and is obliged to convey to the principal all information known to the agent which may affect the
-principal's decision unless prohibited by other law." The standard is the *highest* fiduciary
-obligation; the trigger is information that "may affect the principal's decision," not information
-the broker judges important; and the qualifier "unless prohibited by other law" is part of the
-rule and must be quoted with it. Note also that the duty is the broker's but the knowledge is the
+principal's decision unless prohibited by other law." The trigger is information that "may affect
+the principal's decision," not information the broker judges important, and the qualifier "unless
+prohibited by other law" is part of the rule. The duty is the broker's but the knowledge is the
 agent's, which is the whole reason this unit exists.
 
 **(c) Trust funds.** "A broker is responsible for the proper handling of trust funds placed with
 the broker and must comply with §535.146 of this chapter (relating to Maintaining Trust Money)."
-Rule 535.146 is taught in Module 07; the two sentences of it that bear on this relationship are
-"A sales agent shall not maintain a trust account. Any trust money received by a sales agent must
-be immediately delivered to the sales agent's sponsoring broker." If a buyer hands you an earnest
-money cheque in Amarillo, you do not hold it, deposit it, or decide when it goes to title.
+Rule 535.146 is taught in Module 07; the two sentences of it that bear on this relationship are "A
+sales agent shall not maintain a trust account. Any trust money received by a sales agent must be
+immediately delivered to the sales agent's sponsoring broker.""
 
 **(d) Property management.** "A broker is responsible for any property management activity by the
 broker's sponsored sales agent that requires a real estate license." Property management is where
-sponsored agents most often operate semi-independently — collecting rent, signing leases, handling
-deposits — and this subsection removes any doubt about who owns the consequences.
+sponsored agents most often operate semi-independently, and this subsection settles who owns the
+consequences.
 
 **(e) Delegation.** "A broker may delegate to another license holder the responsibility to assist
 in administering compliance with the Act and Rules, but the broker may not relinquish overall
@@ -475,12 +443,10 @@ the delegation ends."
 
 Extract the operative facts. Delegation is only of the responsibility "to assist in administering
 compliance"; overall responsibility can never be relinquished. Any license holder who "leads,
-supervises, directs, or manages a team" must be delegated as a supervisor, so team leadership is a
-documented delegation and not an informal marketing arrangement. Every delegation must be in
-writing. The Commission must be told the supervisor's name within **30 days** of a delegation that
-"has lasted or is anticipated to last more than three consecutive months" — note both limbs — and
-within **30 days** after it ends, though a delegated supervisor who is or becomes a broker may
-give the ending notice instead.
+supervises, directs, or manages a team" must be delegated as a supervisor, in writing. The
+Commission must be told the supervisor's name within **30 days** of a delegation that "has lasted
+or is anticipated to last more than three consecutive months" — note both limbs — and within **30
+days** after it ends.
 
 **(f) Listings in the broker's name.** "Listings and other agreements for real estate brokerage
 services must be solicited and accepted in a broker's name." It is a broker responsibility, not
@@ -490,8 +456,8 @@ the Commission looks to.
 **(g) Advertising.** "A broker is responsible to ensure that a sponsored sales agent's advertising
 complies with §535.154 of this chapter (relating to Registration and Use of Alternate, Team and
 Assumed Business Names Used in Advertisements) and §535.155 of this chapter (relating to
-Advertisements)." Those two rules are taught in Module 12; what (g) adds is that a sponsored
-agent's advertising is the broker's compliance problem.
+Advertisements)." Those rules are taught in Module 12; what (g) adds is that a sponsored agent's
+advertising is the broker's compliance problem.
 
 **(h) Records: four years, eight categories.** "Except for records destroyed by an 'Act of God'
 such as a natural disaster or fire not intentionally caused by the broker, the broker must, at a
@@ -507,10 +473,9 @@ market analyses"; and "sponsorship agreements between the broker and sponsored s
 Three details students lose. The four years run from the triggers the rule names as they apply —
 closing, termination of the contract, or end of the transaction — not from the date the file was
 opened, so a listing that expires unsold in September 2026 starts its four years then.
-"Substantive communications with parties to the transaction" includes texts and emails; the medium
-is irrelevant. And the last category means your sponsorship and independent contractor paperwork
-is itself a required broker record: the written agreement § 201.072(1)(D) demands is a document
-the broker must be able to produce to the Commission for four years.
+"Substantive communications with parties to the transaction" includes texts and emails. And the
+last category means the written agreement § 201.072(1)(D) demands is itself a record the broker
+must keep for four years.
 
 **(i) Written policies and procedures.** "A broker who sponsors sales agents or is a designated
 broker for a business entity shall maintain, on a current basis, written policies and procedures
@@ -532,31 +497,26 @@ not limited to property management trust accounts, and other funds received from
 maintained by the broker with appropriate controls in compliance with §535.146"; and that
 "[r]ecords are properly maintained pursuant to subsection (h) of this section."
 
-Two of those deserve a second look. Geographic competence is written into the rule, so a broker's
-policy cannot be indifferent to an agent sponsored in San Antonio taking a listing in Marfa. And
-the first-three-times requirement is the most concrete supervision obligation in the rule: not
-"encourage," not "make available," but "the broker must require" coaching, for each *type* of
-activity, for the first three times — first three listings, first three buyer representations,
-first three leases, each counted separately.
+Two of those deserve a second look. Competence "in the geographic market area where the sales
+agent represents clients" is written into the rule. And the first-three-times requirement is the
+most concrete supervision obligation in it: not "encourage," not "make available," but "the broker
+must require" coaching, for each *type* of activity — first three listings, first three buyer
+representations, first three leases, counted separately.
 
 **(j) and (k) The response clocks.** "In addition to the requirements of §535.157 of this chapter
 (relating to Obligation to Respond Timely), a broker or supervisor delegated under subsection (e)
 of this section must respond to sponsored sales agents within two calendar days." And: "A
 sponsoring broker or supervisor delegated under subsection (e) of this section shall deliver mail
 and other correspondence from the Commission to their sponsored sales agents within three calendar
-days after receipt." Three clocks, all in calendar days: two for a license holder to respond to a
-principal, the other side's license holder or an unrepresented party (§ 535.157, Module 12); two
-for the broker or delegated supervisor to respond to a sponsored agent; three for the broker or
-delegated supervisor to pass on Commission correspondence. Subsection (k) exists because under
-22 TAC § 535.21(b), taught in Module 12, the Commission sends notices to an active sales agent at
-the address of that agent's *sponsoring broker*, which is why an agent who never receives a
-Commission notice has a problem that starts in the broker's inbox.
+days after receipt." Calendar days, not business days. Subsection (k) exists because under 22 TAC
+§ 535.21(b), taught in Module 12, the Commission sends notices to an active sales agent at the
+address of that agent's *sponsoring broker*.
 
 **(l) and (m) Entities, and the closing sentence.** "When the broker is a business entity, the
 designated broker is the person responsible for the broker responsibilities under this section."
-The corporate form does not diffuse the responsibility; § 535.2(l) puts it on the named human
-being that Occupations Code § 1101.355(a) requires a business entity to designate. And then the
-final subsection, which this unit began with: "This section is not meant to create or require an
+The corporate form does not diffuse the responsibility; it rests on the human being Occupations
+Code § 1101.355(a) requires a business entity to designate. And then the final subsection, which
+this unit began with: "This section is not meant to create or require an
 employer/employee relationship between a broker and a sponsored sales agent."
 
 ### Statute reading exercise: Auditing a brokerage against § 535.2
@@ -582,9 +542,9 @@ Open 22 TAC § 535.2 and read every subsection.
 
 ## Unit: Compensation Issues
 
-Everything in this module converges here. There is one organising idea: **compensation for acts
-subject to the Act flows through the broker.** Every rule below is a variation on that theme, and
-every violation in this area is a variation on someone trying to route money around it.
+Everything in this module converges here, on one idea: **compensation for acts subject to the Act
+flows through the broker.** Every violation in this area is a variation on someone trying to route
+money around it.
 
 **The core rule.** Rule 22 TAC § 535.3, "Compensation to or Paid by a Sales Agent," is two
 sentences long and you should be able to recite both:
@@ -596,10 +556,8 @@ sentences long and you should be able to recite both:
 > with the written consent of the sales agent's sponsoring broker.
 
 Both directions are covered, receiving and paying, and both require *written* consent. The
-receiving sentence contemplates two possible consenting brokers — the current sponsoring broker,
-or "the broker who sponsored the sales agent when the sales agent became entitled to the
-commission or other valuable consideration" — because the rule anticipates that you may change
-brokers between earning and being paid.
+receiving sentence contemplates two possible consenting brokers, because the rule anticipates that
+you may change brokers between earning and being paid.
 
 **The statute behind it.** Occupations Code § 1101.651(b) is the provision to quote whole, because
 the clause people drop is the one that solves the change-of-sponsorship problem:
@@ -616,18 +574,10 @@ indirectly, anyone who is not a license holder or an out-of-state broker who con
 Texas negotiations, and § 1101.651(c) provides that "A sales agent may not pay a commission to a
 person except through the broker that is sponsoring the sales agent at that time."
 
-So work the change-of-sponsorship problem in outline. You put a buyer client under contract while
-sponsored by Broker A, move to Broker B, and the transaction closes after the move. The
-co-operating fee is paid to a broker, not to you. Section 1101.651(b) permits you to accept your
-share from the broker that "was sponsoring the sales agent when the sales agent earned the
-compensation" — Broker A. It does not permit you to take it from the title company, and it does
-not permit Broker B to collect it and pass it through, because Broker B was not sponsoring you
-when you earned it. Rule 535.3's first sentence requires written consent, and the consenting
-broker here is Broker A. One supervision link belongs alongside that: § 535.2(i) requires the
-broker's written policies to ensure that each agent "maintains their license in active status at
-all times while they are engaging in activities subject to the Act," which is why a gap between
-brokerages is not merely administrative. The mechanics of terminating a sponsorship under
-§ 1101.367 are taught in Module 07.
+One supervision link belongs alongside those provisions: § 535.2(i) requires the broker's written
+policies to ensure that each agent "maintains their license in active status at all times while
+they are engaging in activities subject to the Act," which is why a gap between brokerages is not
+merely administrative. Terminating a sponsorship under § 1101.367 is taught in Module 07.
 
 **Receiving compensation through your own entity.** Occupations Code § 1101.355(c) states the
 default: "A business entity that receives compensation on behalf of a license holder must be
@@ -639,10 +589,10 @@ defined by Section 101.001, Business Organizations Code" or "an S corporation as
 U.S.C. Section 1361"; it "is registered with the commission"; and it "is at least 51 percent owned
 by the license holder on whose behalf the entity receives compensation." Rule 22 TAC § 535.5(h)
 states the same five conditions and points to § 535.35 for the registration process, and
-§ 535.147(c) closes the loop by barring a license holder from sharing a commission or fees with an
-unlicensed entity created to collect on the license holder's behalf unless it is exempt under
-§ 535.5 and § 1101.355(d). A general partnership will not do. A C corporation will not do. A 50/50
-LLC with your spouse will not do. And it must be registered.
+§ 535.147(c) bars a license holder from sharing a commission or fees with an unlicensed entity
+created to collect on the license holder's behalf unless it is exempt under § 535.5 and
+§ 1101.355(d). So a general partnership will not do, a C corporation will not do, and a 50/50 LLC
+with your spouse will not do.
 
 **Rebates to a party.** Rule 22 TAC § 535.147(d) permits a license holder to "rebate or pay a
 portion of the license holder's fee or commission to a party in the transaction when the sales
@@ -652,17 +602,16 @@ sponsoring broker and the represented party; that the payment not be made "in a 
 misleads a broker, lender, title company, or governmental agency regarding the real estate
 transaction or the financial resources or obligations of the buyer"; and, where the rebate goes to
 a party the license holder does not represent, the prior written consent of the party the license
-holder does represent. The second is the one that ends careers: a rebate paid outside closing and
-left off the settlement statement, on a loan whose cash-to-close was calculated without it, is
-paid in a manner that misleads a lender about the buyer's financial resources or obligations.
+holder does represent. The second ends careers: a rebate paid outside closing and left off the
+settlement statement, on a loan whose cash-to-close was calculated without it, misleads a lender
+about the buyer's financial resources or obligations.
 
 **Undisclosed compensation.** Rule 22 TAC § 535.148 is taught in full in Module 05. Two
 subsections bear on the flow of money here: (a) bars a license holder from receiving a commission,
 rebate or fee from anyone other than the person the license holder represents without first
 disclosing the intention to receive it and obtaining the client's consent — disclose first, then
 consent; and (f) requires TREC No. RSC-4 for any payment received for services provided for or on
-behalf of a residential service contract provider or administrator licensed under Occupations Code
-chapter 1304. If a home warranty company pays you for anything, RSC-4 is not optional.
+behalf of a residential service contract provider or administrator.
 
 **Co-operation across state lines.** Section 1101.651(a)(2) permits a Texas broker to compensate
 "a real estate broker licensed in another state who does not conduct in this state any of the
@@ -672,8 +621,7 @@ commissions with a foreign broker"; "Only Texas license holders may handle negot
 conducted within Texas"; and a resident of a foreign country or territory that does not license
 brokers "is considered to be licensed as a foreign broker for the purposes of §1101.651 of the
 Act, if the person practices as a real estate broker in compliance with the law of the foreign
-country or territory." So an Oklahoma broker may be paid a referral fee on a Sherman transaction,
-provided the Oklahoma broker conducted none of the Texas negotiations.
+country or territory.""
 
 ### Applied exercise: Following the money on a Denton closing
 

@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 110726,
+    "proseWords": 108587,
     "statuteReadingExercises": 21,
     "appliedExercises": 31,
     "moduleRecaps": 12,
     "exerciseWords": 14575,
     "recapWords": 13299,
-    "totalWords": 141577
+    "totalWords": 139424
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,8 +28,8 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "110,726 words at 140 wpm",
-      "minutes": 791,
+      "basis": "108,587 words at 140 wpm",
+      "minutes": 776,
       "measured": true
     },
     {
@@ -63,8 +63,8 @@
       "measured": false
     }
   ],
-  "requiredMinutes": 1609,
-  "varianceMinutes": 109,
+  "requiredMinutes": 1594,
+  "varianceMinutes": 94,
   "meetsPrescribed": true,
   "conditional": [
     {
@@ -87,14 +87,14 @@
     },
     {
       "segment": "optional reference material",
-      "basis": "2,977 words moved out of required prose, at 140 wpm",
+      "basis": "2,963 words moved out of required prose, at 140 wpm",
       "minutes": 21,
       "reason": "sourced depth beyond what the topic's units require; in the course, not required to complete it"
     },
     {
       "segment": "mastery review",
-      "basis": "110,726 words at 60 wpm",
-      "minutes": 1845,
+      "basis": "108,587 words at 60 wpm",
+      "minutes": 1810,
       "reason": "an upper bound on diligent study, never required time"
     },
     {
@@ -152,20 +152,20 @@
       "topic": "Duties and Disclosures to Third Parties",
       "units": 6,
       "prescribedMinutes": 125,
-      "sha256": "92ddd9ba10d5d985bd6092868bf7620011a0b00afb2c2d125da0e2943817439c",
-      "totalWords": 12216,
-      "proseWords": 8572,
+      "sha256": "5449072c6177f09e7904a469942ef5965f6ddd6525a6d84cb3fa4b833b4d585c",
+      "totalWords": 11540,
+      "proseWords": 7893,
       "statuteReadingExercise": 1,
       "appliedExercise": 2,
       "moduleRecap": 1,
       "optionalReference": 1,
       "exerciseWords": 940,
       "recapWords": 1187,
-      "optionalReferenceWords": 1517,
-      "readingMinutes": 61,
+      "optionalReferenceWords": 1520,
+      "readingMinutes": 56,
       "activityMinutes": 69,
-      "requiredMinutes": 130,
-      "varianceMinutes": 5
+      "requiredMinutes": 125,
+      "varianceMinutes": 0
     },
     {
       "file": "module-04.md",
@@ -278,9 +278,9 @@
       "topic": "Employment Issues",
       "units": 6,
       "prescribedMinutes": 120,
-      "sha256": "bf12714c153bbc87c61a1dfe07974a832a4ae51ca9ed2b3d718abc0f132a7db7",
-      "totalWords": 10665,
-      "proseWords": 8080,
+      "sha256": "5b4d169bda86ba7150dde173cb8a3214eb2542b27e053a6bb8cc0adfb41736dd",
+      "totalWords": 9800,
+      "proseWords": 7215,
       "statuteReadingExercise": 1,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -288,10 +288,10 @@
       "exerciseWords": 905,
       "recapWords": 1367,
       "optionalReferenceWords": 313,
-      "readingMinutes": 58,
+      "readingMinutes": 52,
       "activityMinutes": 69,
-      "requiredMinutes": 127,
-      "varianceMinutes": 7
+      "requiredMinutes": 121,
+      "varianceMinutes": 1
     },
     {
       "file": "module-10.md",
@@ -320,20 +320,20 @@
       "topic": "Deceptive Trade Practices and Consumer Protection Act",
       "units": 5,
       "prescribedMinutes": 140,
-      "sha256": "115a95e267ab53cff75c679e496bed9ce90b9be2e3223c2a64b5de82a37b0393",
-      "totalWords": 13069,
-      "proseWords": 9991,
+      "sha256": "d2ee97c6e15f15394e4c27f9898a935c3e34baa78218b79e272e293cb0117c16",
+      "totalWords": 12457,
+      "proseWords": 9396,
       "statuteReadingExercise": 2,
       "appliedExercise": 3,
       "moduleRecap": 1,
       "optionalReference": 1,
       "exerciseWords": 1423,
       "recapWords": 1497,
-      "optionalReferenceWords": 158,
-      "readingMinutes": 71,
+      "optionalReferenceWords": 141,
+      "readingMinutes": 67,
       "activityMinutes": 89,
-      "requiredMinutes": 160,
-      "varianceMinutes": 20
+      "requiredMinutes": 156,
+      "varianceMinutes": 16
     },
     {
       "file": "module-12.md",

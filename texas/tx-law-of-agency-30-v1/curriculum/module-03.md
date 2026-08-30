@@ -7,17 +7,15 @@ approval form places under *Duties and Disclosures to Third Parties*, whose scop
 *"Fiduciary & other duties of an agent."*
 
 **Learning objectives.** After completing this module you will be able to: separate the fiduciary
-duties a license holder owes a client from the non-fiduciary duties Texas law imposes toward
-everyone else, and name the statute or rule behind each of the second set; explain why fairness to
-the other side is not neutrality; apply the definition of "party" in Occupations Code § 1101.551(2);
-compute the two-calendar-day response deadline in 22 TAC § 535.157; distinguish a duty to disclose
-from a duty to investigate; apply Occupations Code § 1101.805 with both of its conditions intact and
-in both of the directions the section runs; state what § 1101.804 protects you for saying and the
-qualifier it attaches; operate Property Code § 5.008 — who delivers the notice, the deadline in
-subsection (f), what the subsection (e) exemptions do, the knowledge qualifier in subsection (d),
-and the purchaser's remedy for late delivery; and state exactly what Occupations Code § 1101.556
-relieves a license holder of doing about a stigmatized property and, just as precisely, what it
-leaves untouched.
+duties owed to a client from the non-fiduciary duties Texas law imposes toward everyone else, and
+name the source of each; explain why fairness to the other side is not neutrality; apply the
+definition of "party" in Occupations Code § 1101.551(2); compute the two-calendar-day response
+deadline in 22 TAC § 535.157; distinguish a duty to disclose from a duty to investigate; apply
+Occupations Code § 1101.805 with both conditions intact and in both directions; state what
+§ 1101.804 protects and the qualifier it attaches; operate Property Code § 5.008 — who delivers the
+notice, the subsection (f) deadline and remedy, what the subsection (e) exemptions do, and the
+subsection (d) knowledge qualifier; and state exactly what Occupations Code § 1101.556 relieves you
+of and what it leaves untouched.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where a
 statement is practice rather than law, the module says so and cites nothing for it.
@@ -27,30 +25,28 @@ statement is practice rather than law, the module says so and cites nothing for 
 Fiduciary duty — loyalty, confidentiality, obedience, accounting, disclosure of material information
 — runs to the client, and Module 02 teaches it. Now look at the other people in the room: the buyer
 on the other side of your listing, the seller across from your buyer, the unrepresented person who
-walked into your open house in Round Rock and started asking about the foundation. You represent
-none of them and owe none of them loyalty. Texas law is nonetheless not indifferent to how you treat
-them, and this module is about the second, smaller set of obligations it imposes.
+walked into your open house in Round Rock asking about the foundation. You represent none of them
+and owe none of them loyalty. Texas law is nonetheless not indifferent to how you treat them.
 
 The label the Commission's course form uses is **non-fiduciary duties**, and the word does precise
 work. A fiduciary duty arises out of a relationship of trust and confidence; a non-fiduciary duty
 arises out of statute, out of Commission rule, out of the general law that forbids anyone in
-commerce from lying to the people they deal with. It does not depend on trust and does not require a
-contract: it attaches because you hold a Texas real estate licence and are dealing with a member of
-the public.
+commerce from lying to the people they deal with. It attaches because you hold a Texas licence and
+are dealing with a member of the public.
 
-**Texas states both duties in a single rule.** 22 TAC § 531.2 (Fidelity), one of the Canons taught
-in Module 02 and read as an ethical whole in Module 10, states the primary duty and then attaches a
-proviso that reaches everyone else: "that the primary duty of the license holder is to represent the
-interests of the client, and the license holder's position, in this respect, should be clear to all
-parties concerned in a real estate transaction; that, however, the license holder, in performing
-duties to the client, shall treat other parties to a transaction fairly." Texas did not put fairness
-to the other side in a footnote; it put it inside the definition of fidelity.
+**Texas states both duties in a single rule.** 22 TAC § 531.2 (Fidelity), taught in Module 02 and
+read as an ethical whole in Module 10, states the primary duty and then attaches a proviso that
+reaches everyone else: "that the primary duty of the license holder is to represent the interests of
+the client, and the license holder's position, in this respect, should be clear to all parties
+concerned in a real estate transaction; that, however, the license holder, in performing duties to
+the client, shall treat other parties to a transaction fairly." Fairness to the other side sits
+inside the definition of fidelity.
 
 **The catalogue.** Here, in one place, is every non-fiduciary duty a Texas source actually imposes —
-students routinely believe the list is either much shorter than it is (nothing but "don't lie") or
-much longer (a general duty to look after the other side, which no held source creates). Most of
-these authorities are taught in full elsewhere in the course; this module states the rule, cites it,
-names its home, and spends its words on how it operates toward someone who is not your client.
+students believe the list is either much shorter than it is (nothing but "don't lie") or much longer
+(a general duty to look after the other side, which no held source creates). Most of these
+authorities are taught in full elsewhere; this module states the rule, cites it, names its home, and
+shows how it operates toward someone who is not your client.
 
 *Fair treatment and accurate information.* 22 TAC § 535.156 requires honest and fair dealing with
 all parties and imposes a duty "to convey accurate information to members of the public with whom
@@ -71,17 +67,15 @@ table.
 of your representation, orally or in writing, at first contact with another party or with that
 party's license holder; § 1101.558(b-1) requires a written notice at first substantive
 communication, and 22 TAC § 531.20 supplies its text by adopting the Information About Brokerage
-Services Notice, TREC No. IABS 1-2. Module 02 owns the IABS and dissects both provisions, including
-the three exceptions in § 1101.558(c), which run to the written notice only and never to the §
-1101.558(b) representation disclosure. The reason the notice belongs in a module about third parties
-is one line of its required content: it must describe "the basic obligations a broker has to a party
-to a real estate transaction that the broker does not represent." *Before showing property to
-someone you do not represent.* Occupations Code § 1101.562(b) requires either the representation
-disclosure or the written notice, as applicable, and § 1101.563(b) requires a written agreement with
-a prospective buyer of residential real property before showing any such property, with §
-1101.563(e) forbidding exclusivity and capping a showing-only agreement at fourteen days. Module 05
-teaches both sections and the 2026 changes that produced them; § 1101.652(b)(34) makes failure to
-enter into the required agreement a ground for discipline.
+Services Notice, TREC No. IABS 1-2. Module 02 owns the IABS, including the three exceptions in
+§ 1101.558(c), which run to the written notice only and never to the § 1101.558(b) representation
+disclosure. The notice belongs here because of one line of its required content: it must describe
+"the basic obligations a broker has to a party to a real estate transaction that the broker does not
+represent." *Before showing property to someone you do not represent.* Occupations Code
+§ 1101.562(b) requires either the representation disclosure or the written notice, as applicable, and
+§ 1101.563(b) requires a written agreement with a prospective buyer of residential real property
+before showing any such property. Module 05 teaches both sections and the 2026 changes that produced
+them.
 
 *Timely response.* 22 TAC § 535.157 reaches "an unrepresented party to a real estate transaction."
 Unit 3 below is that duty.
@@ -103,25 +97,23 @@ facilitate inquiries about, or disclose information about an owner, previous or 
 potential purchaser, lessor or potential lessee that indicates or is intended to indicate a
 preference, limitation or discrimination on the bases the rule lists, and § 1101.652(b)(32) makes
 discrimination against an owner, potential buyer, landlord or potential tenant a ground for
-suspension or revocation. Both run to people who are not your clients; Module 10 teaches both,
-alongside the federal fair housing law.
+suspension or revocation. Both run to people who are not your clients; Module 10 teaches both.
 
 *Disclosure when you are the principal.* 22 TAC § 535.144 obliges a license holder dealing on his or
 her own behalf — or for a spouse, parent or child, a business entity in which the license holder is
 more than a 10% owner, or a trust in the circumstances the rule describes — to disclose that
 licensure in writing, and provides that such a license holder "shall not use the license holder's
 expertise to the disadvantage of a person with whom the license holder deals." Again: *a person with
-whom the license holder deals*, not a client. Module 12 teaches § 535.144, and the companion
-obligation to furnish a broker price opinion or comparative market analysis when you negotiate a
-listing or offer to purchase for your own account, 22 TAC § 535.16, is taught in Module 04.
+whom the license holder deals*, not a client. The companion obligation to furnish a broker price
+opinion or comparative market analysis when you buy or list for your own account, 22 TAC § 535.16,
+is taught in Module 04; Module 12 teaches § 535.144.
 
 **What you do not owe.** The absences matter as much as the list. You do not owe a third party
 loyalty, and you do not owe a third party confidentiality — that obligation runs the other way, to
-your client. You do not owe a third party advocacy, negotiating help, or advice about whether the
-deal is good for them, and you do not owe them a duty to find problems with the property that you do
-not know about. **You owe the other side truthfulness, fairness, accuracy, responsiveness, and the
-specific statutory disclosures — and nothing that would require you to work against your own
-client.**
+your client. You do not owe a third party advocacy, negotiating help, advice about whether the deal
+is good for them, or a duty to find problems you do not know about. **You owe the other side
+truthfulness, fairness, accuracy, responsiveness, and the specific statutory disclosures — and
+nothing that would require you to work against your own client.**
 
 Texas now has a statutory category that makes this concrete. Occupations Code § 1101.562, effective
 January 1, 2026 and taught in Module 05, permits a broker, on the four conjunctive conditions Module
@@ -136,8 +128,8 @@ with the buyer, is answering questions about size, price and terms, is bound to 
 **Do not read "non-fiduciary" as "no consequences."** Occupations Code § 1101.803, taught in Module
 09, makes a licensed broker "liable to the commission, the public, and the broker's clients for any
 conduct engaged in under this chapter by the broker or by a sales agent associated with or acting
-for the broker" — the public is listed before the clients. And § 1101.801: "[d]isciplinary action
-taken against a person under Section 1101.652 does not relieve the person from civil or criminal
+for the broker" — the public before the clients. And § 1101.801: "[d]isciplinary action taken
+against a person under Section 1101.652 does not relieve the person from civil or criminal
 liability."
 
 ## Unit: General Duties of Honesty & Fairness
@@ -147,62 +139,49 @@ rule Module 02 teaches in full: "A license holder must deal honestly and fairly 
 however, the license holder represents only the principal and owes a duty of fidelity to such
 principal."
 
-That sentence has two halves joined by a "however," and Texas practice lives in the tension between
-them. Over-read the first half and you become a mediator who forgets who is paying for the advocacy;
-over-read the second and you become the kind of agent who thinks representing a seller licenses you
-to mislead a buyer. TREC disciplines the second one.
+That sentence has two halves joined by a "however." Over-read the first and you become a mediator
+who forgets who is paying for the advocacy; over-read the second and you become the kind of agent
+who thinks representing a seller licenses you to mislead a buyer.
 
 **Fairness is not neutrality.** This is the single most important conceptual point in the unit.
 Being fair to the buyer does not mean giving the buyer the same service you give the seller, telling
 the buyer the seller will take less, or warning the buyer that they are overpaying. Occupations Code
-§ 1101.651(d), the intermediary conduct rule taught in Module 06, forbids even an intermediary to
-disclose that the seller or landlord will accept less than the asking price, or that the buyer or
-tenant will pay more than the price in a written offer, unless separately instructed in writing by
-that party. If disclosing the client's negotiating position is prohibited in the most balanced
-relationship Texas recognises, it is certainly not required in an ordinary single-agency listing.
+§ 1101.651(d), taught in Module 06, forbids even an intermediary to disclose that the seller or
+landlord will accept less than the asking price, or that the buyer or tenant will pay more than the
+price in a written offer, unless separately instructed in writing by that party. If that is
+prohibited in the most balanced relationship Texas recognises, it is certainly not required in an
+ordinary single-agency listing.
 
 So what does fairness require? That the other side be able to rely on the accuracy of what you tell
 them and on the regularity of the process you run. You may negotiate hard on price; you may not
 misstate the terms of a competing offer. You may decline to volunteer your client's motivation; you
-may not invent a deadline that does not exist. You may advocate relentlessly for your seller's
-repair position; you may not tell the buyer's agent that the roof was replaced in 2021 when your
-seller told you it was patched in 2013.
+may not invent a deadline that does not exist. You may advocate for your seller's repair position;
+you may not tell the buyer's agent the roof was replaced in 2021 when your seller told you it was
+patched in 2013.
 
-**The honesty standard in the Commission's own words.** Two Commission rules and two statutory
-grounds set it out. 22 TAC § 531.3 is the broadest, requiring "prudence and caution so as to avoid
-misrepresentation, in any way, by acts of commission or omission" — "prudence and caution" imports a
-standard of care rather than a mere prohibition on deliberate lying, so carelessness with facts is a
-violation, and "commission or omission" makes the rule reach silence as well as speech. 22 TAC §
-535.156 imposes the duty to convey accurate information to members of the public. Occupations Code §
-1101.652(b)(2) reaches conduct that is dishonest or in bad faith or that demonstrates
-untrustworthiness, none of which requires proof that anyone lost money, and § 1101.652(b)(1) reaches
-negligence and incompetence, which require no bad motive at all. Every one of those grounds is
-available to a complainant you never represented.
+**The honesty standard in the Commission's own words.** 22 TAC § 531.3 is the broadest, requiring
+"prudence and caution so as to avoid misrepresentation, in any way, by acts of commission or
+omission" — "prudence and caution" imports a standard of care rather than a mere prohibition on
+deliberate lying, so carelessness with facts is a violation, and "commission or omission" makes the
+rule reach silence as well as speech. 22 TAC § 535.156 imposes the duty to convey accurate
+information to members of the public. Occupations Code § 1101.652(b)(2) reaches conduct that is
+dishonest or in bad faith or that demonstrates untrustworthiness, none of which requires proof that
+anyone lost money, and § 1101.652(b)(1) reaches negligence and incompetence. Every one of those
+grounds is available to a complainant you never represented.
 
 Two intermediary provisions bear on the same point and are taught in Module 06. Section
-1101.651(d)(4) forbids an intermediary to treat a party to a transaction dishonestly, and §
-1101.651(d)(3)'s bar on disclosing confidential information yields, among other exceptions, where
+1101.651(d)(4) forbids an intermediary to treat a party to a transaction dishonestly, and
+§ 1101.651(d)(3)'s bar on disclosing confidential information yields, among other exceptions, where
 "the information materially relates to the condition of the property." Even the strictest
 confidentiality obligation TRELA writes down yields to property condition: a client cannot gag you
 about a defect.
 
 **Where honesty problems actually arise.** Most Texas honesty complaints do not come from an agent
-inventing a fact out of nothing. The pattern that produces the most of them — repeating what a
-seller told you as though you had verified it — is Unit 4's subject. The other worth naming here is
-**speaking outside your competence**: § 1101.652(b)(1) reaches incompetence, and telling an
-unrepresented buyer in Bastrop County that the property "is not in a flood zone" because you looked
-at a map on your phone generates both a complaint and a claim. Name the source of authoritative
-information rather than becoming the source.
-
-**Fairness has an anti-exploitation edge.** The two own-account rules catalogued in Unit 1 — 22 TAC
-§ 535.144 and 22 TAC § 535.16 — exist for the benefit of someone who is emphatically not your
-client, because the Commission recognises that your training is an advantage and that using it
-against an unsophisticated stranger is unfair.
-
-**One boundary worth naming.** Fairness and honesty do not require you to volunteer everything you
-know. They require you to be accurate about what you say and to disclose what a specific rule or
-statute makes disclosable. That is the difference between the duty you owe a third party and the
-duty you owe a client.
+inventing a fact. The pattern that produces the most of them — repeating what a seller told you as
+though you had verified it — is Unit 4's subject. The other is speaking outside your competence:
+§ 1101.652(b)(1) reaches incompetence, and telling an unrepresented buyer in Bastrop County that the
+property "is not in a flood zone" because you looked at a map on your phone generates both a
+complaint and a claim.
 
 ## Unit: Define Third Party/Obligations to Third Party/Duty to Respond
 
@@ -213,42 +192,39 @@ defines, in Occupations Code § 1101.551(2), is *party*:
 > a buyer, seller, landlord, or tenant, including a trustee, guardian, executor, administrator,
 > receiver, or attorney-in-fact. The term does not include a license holder who represents a party.
 
-That definition governs Subchapter L, the subchapter on brokerage relationships, and 22 TAC §
-535.155 adopts a near-identical definition for the advertising rule. Two features are load-bearing.
-It includes **prospective** buyers, sellers, landlords and tenants — someone who has not signed
-anything and may never buy is still a party. And its last sentence excludes a license holder who
-represents a party: your counterpart across the table is not a "party"; the counterpart's client is.
+That definition governs Subchapter L, and 22 TAC § 535.155 adopts a near-identical definition for
+the advertising rule. Two features are load-bearing. It includes **prospective** buyers, sellers,
+landlords and tenants — someone who has not signed anything and may never buy is still a party. And
+its last sentence excludes a license holder who represents a party: your counterpart across the
+table is not a "party"; the counterpart's client is.
 
 So build the working definition from the statutory one. **In a Texas transaction, a third party is
 any party to the transaction other than your own client, together with the people who serve the
 transaction without being parties to it.** The first group is defined by § 1101.551(2): the buyer
 when you list, the seller when you represent a buyer, the tenant, the landlord, the executor selling
-the estate's house in Tyler, the attorney-in-fact signing under a power of attorney. The second
-group — inspectors, lenders, title company escrow officers, appraisers, surveyors, HOA managers,
-contractors, the other brokerage's sales agent — are not "parties" under § 1101.551(2), but they are
-"members of the public with whom the license holder deals" under 22 TAC § 535.156, and the duty to
-convey accurate information reaches them.
+the estate's house in Tyler, the attorney-in-fact signing under a power of attorney. The second —
+inspectors, lenders, escrow officers, appraisers, surveyors, HOA managers, contractors, the other
+brokerage's sales agent — are not "parties" under § 1101.551(2), but they are "members of the public
+with whom the license holder deals" under 22 TAC § 535.156, and the duty to convey accurate
+information reaches them.
 
-That difference is not academic. Suppose you tell the appraiser that the seller's addition was
-permitted when you know the seller told you it was not. Nobody hurt is a "party" to whom you owed a
-disclosure under § 1101.652(b)(4), because an appraiser is not a potential buyer. But you have
-failed the § 535.156 duty to convey accurate information to a member of the public, you have
-violated § 531.3, and you are exposed under § 1101.652(b)(2) for conduct that is dishonest or
-demonstrates untrustworthiness. The vocabulary changes; the exposure does not.
+That difference is not academic. Tell the appraiser that the seller's addition was permitted when
+you know the seller told you it was not, and nobody hurt is a "party" to whom you owed a disclosure
+under § 1101.652(b)(4), because an appraiser is not a potential buyer. But you have failed the
+§ 535.156 duty to convey accurate information to a member of the public, violated § 531.3, and exposed
+yourself under § 1101.652(b)(2). The vocabulary changes; the exposure does not.
 
 **A word about the license holder on the other side.** The cooperating sales agent is not your
-client and is not a "party." They are, however, expressly named in the two provisions that matter
-most in daily practice: § 1101.558(b)(2), which requires you to disclose your representation at
-first contact with "another license holder who represents another party to the transaction," and 22
-TAC § 535.157, the response rule.
+client and is not a "party," but is named in the two provisions that matter most in daily practice:
+§ 1101.558(b)(2), the representation disclosure at first contact with "another license holder who
+represents another party to the transaction," and 22 TAC § 535.157, the response rule.
 
 **Obligations to a third party.** Unit 1 catalogued them by source and they are not restated here:
-disclosure of your representation at first contact and the IABS Notice at first substantive
-communication, the disclosure and the written agreement required before showing property to a person
-you do not represent, disclosure of a known significant defect to a potential buyer, the written
-abstract-or-title-policy advice when an offer is signed, and — throughout — accuracy, integrity,
-fairness, non-discrimination and honest advertising. What this unit adds is the one obligation with
-a clock on it.
+the representation disclosure at first contact and the IABS Notice at first substantive
+communication, what is required before showing property to a person you do not represent, disclosure
+of a known significant defect to a potential buyer, the written abstract-or-title-policy advice when
+an offer is signed, and — throughout — accuracy, integrity, fairness, non-discrimination and honest
+advertising. What this unit adds is the one obligation with a clock on it.
 
 **The duty to respond.** Now to the provision that gives this unit its title. 22 TAC § 535.157
 reads, in its entirety:
@@ -261,14 +237,14 @@ Module 02 dissects that rule. Two things about it belong to this unit. The first
 category — "an unrepresented party to a real estate transaction." A for-sale-by-owner in Killeen who
 emails your listing brokerage about a buyer's offer is an unrepresented party; so is the
 unrepresented buyer who toured your listing on Saturday and emailed a question about the survey on
-Sunday. You owe each of them a response inside two calendar days although you represent neither.
+Sunday. You owe each a response inside two calendar days although you represent neither.
 
 The second is the unit of measure. The rule says **calendar** days and says nothing about business
 days or holidays, so an unrepresented seller's 4:00 p.m. email on Friday, July 3 is answerable by
 the end of Sunday, July 5. This is the most commonly misremembered number in the Commission's rules,
 and the error always runs the same way: students convert it to business days and answer late.
 Responding is also not resolving — an acknowledgement saying where the question has gone and when an
-answer is expected satisfies a rule that requires a response, not an answer on the merits.
+answer is expected satisfies it.
 
 22 TAC § 535.2, taught in Module 09, adds two broker-side clocks that sit alongside § 535.157 rather
 than replacing it: a sponsoring broker or delegated supervisor must respond to sponsored sales
@@ -277,11 +253,9 @@ agents within two calendar days, and must deliver Commission correspondence to t
 **What responding does not turn you into.** Answering an unrepresented buyer's questions promptly
 and accurately does not make you their agent. Under Occupations Code § 1101.557(a), taught in Module
 02, agency arises from representing a party or from listing under an exclusive agreement — not from
-courtesy — and § 1101.562 confirms the point by permitting showings expressly "without representing
-the party." But watch the boundary that section draws: the broker "does not provide to the party
-opinions or advice regarding the real property or real estate transactions in general," softened
-only by subsection (c)'s permission to "confirm information to a party regarding the size, price,
-and terms of the real property available for sale or lease." Facts, yes. Advice, no.
+courtesy — and § 1101.562, set out in Unit 1, permits a broker to show property without representing
+the party while forbidding opinions or advice about the property or about real estate transactions
+in general. Facts, yes. Advice, no.
 
 ### Applied exercise: Two calendar days in Kyle
 
@@ -314,28 +288,27 @@ to all three on Monday afternoon.
 
 ## Unit: Avoiding Disclosure and Misrepresentation Problems
 
-This is the longest unit in the module because it is where licences are actually lost. Almost every
-disclosure complaint against a Texas license holder is a variation on one of four fact patterns: you
-said something untrue; you stayed silent about something you knew; you repeated what someone else
-told you; or you gave an opinion the listener heard as a fact. Texas law treats those four
-differently.
+This is the longest unit in the module because it is where licences are lost. Almost every
+disclosure complaint is a variation on one of four fact patterns: you said something untrue; you
+stayed silent about something you knew; you repeated what someone else told you; or you gave an
+opinion the listener heard as a fact.
 
 **First: disclose versus investigate.** Occupations Code § 1101.652(b)(3) and (b)(4), taught in
 Module 10, make it a ground for discipline to make a material misrepresentation to a potential buyer
 about, or to fail to disclose to a potential buyer, a "significant defect, including a latent
 structural defect, known to the license holder that would be a significant factor to a reasonable
-and prudent buyer in making a decision to purchase real property." Three qualifiers carry the whole
-rule and none may be dropped. The defect must be **significant**. It must be one that **would be a
-significant factor to a reasonable and prudent buyer** in deciding to purchase. And it must be
-**known to the license holder**. Strip out any of the three and you have misstated the rule.
+and prudent buyer in making a decision to purchase real property." Three qualifiers carry the rule
+and none may be dropped. The defect must be **significant**; it must be one that **would be a
+significant factor to a reasonable and prudent buyer** in deciding to purchase; and it must be
+**known to the license holder**.
 
 The third qualifier is where Texas draws the line between disclosure and investigation. The duty
 attaches to what you know. **No source held for this course imposes on a Texas license holder an
 affirmative duty to inspect the property, to test systems, to open the attic, or to research the
-property's history in order to discover defects.** The statute keys the duty to knowledge, and the
-Commission's own disclosure architecture — the seller's notice under Property Code § 5.008 and the
-buyer's right to obtain inspections — assumes the physical investigation is done by the seller's
-disclosure and by a licensed inspector, not by you.
+property's history in order to discover defects.** The Commission's disclosure architecture — the
+seller's notice under Property Code § 5.008 and the buyer's right to obtain inspections — assumes
+the physical investigation is done by the seller's disclosure and by a licensed inspector, not by
+you.
 
 Do not overcorrect. Three things narrow the comfort that offers.
 
@@ -343,9 +316,9 @@ The first is 22 TAC § 531.3's "prudence and caution." A license holder who deli
 to learn something — who tells a seller "don't tell me about the foundation, I'd have to disclose
 it" — is not exercising prudence and caution to avoid misrepresentation by omission. Held Texas
 sources do not use the phrase "wilful blindness," and this course does not attribute that doctrine
-to Texas law; what the sources do say is that a license holder must be prudent and cautious to avoid
+to Texas law; what the sources say is that a license holder must be prudent and cautious to avoid
 misrepresentation by act of omission, and an arrangement designed to preserve ignorance is difficult
-to square with that sentence.
+to square with that.
 
 The second is § 1101.652(b)(1), negligence and incompetence: not knowing something a competent agent
 in that market would have known is itself a ground for discipline, independent of any disclosure
@@ -373,24 +346,21 @@ opinion."
 
 That is your puffing rule, in statutory language. **A statement that can honestly be characterised
 as advice, judgment or opinion sits inside the exemption. An express misrepresentation of a material
-fact does not.** "This is a wonderful family home in a great school district" is characterisable as
-opinion; "This home is zoned for Bowie Elementary" is a fact, and if it is wrong the exemption does
-not protect you. "You'll love the light in the mornings" is opinion; "The square footage is 2,410"
-is a fact.
+fact does not.** "This is a wonderful family home in a great school district" is opinion; "This home
+is zoned for Bowie Elementary" is a fact, and if it is wrong the exemption does not protect you.
+"You'll love the light in the mornings" is opinion; "The square footage is 2,410" is a fact.
 
 Two warnings about the line. First, the exemption is from the DTPA. It is not an exemption from
 TRELA discipline or from common-law claims; § 1101.652(b)(2) reaches dishonest conduct whether or
 not the DTPA applies. Second, an opinion stated with the trappings of expertise starts to sound like
-a fact, which is why 22 TAC § 535.17 requires a broker price opinion or comparative market analysis
-to carry a disclaimer stating that the figure "is not the same as the opinion of value in an
-appraisal developed by a licensed appraiser under the Uniform Standards of Professional Appraisal
-Practice." Label opinions as yours; attribute facts to their source.
+a fact, which is why 22 TAC § 535.17, taught in Module 12, requires a broker price opinion or
+comparative market analysis to carry a disclaimer separating it from an appraisal.
 
 **Third: silence versus concealment.** Silence and concealment are not the same thing, and Texas
 separates them.
 
 Silence is the absence of a statement. Where no rule requires disclosure, silence is generally
-permissible — that is the whole premise of § 1101.556, which we reach in Unit 6. Concealment is
+permissible — that is the premise of § 1101.556, which we reach in Unit 6. Concealment is
 affirmative conduct or a strategic omission that makes a false impression, and Texas reaches it in
 several places at once. Section 531.3 forbids misrepresentation "by acts of commission or omission."
 Section 1101.805 speaks of "a misrepresentation or a concealment of a material fact." And DTPA
@@ -399,26 +369,25 @@ concerning goods or services which was known at the time of the transaction if s
 disclose such information was intended to induce the consumer into a transaction into which the
 consumer would not have entered had the information been disclosed."
 
-That subdivision is the DTPA provision most likely to be pleaded against a license holder, and §
-17.49(i)(2) expressly preserves it against the broker exemption. Its elements are cumulative —
+That subdivision is the DTPA provision most likely to be pleaded against a license holder, and
+§ 17.49(i)(2) expressly preserves it against the broker exemption. Its elements are cumulative —
 information concerning goods or services, known at the time of the transaction, a failure to
 disclose, and an intent to induce the consumer into a transaction they would not otherwise have
-entered — and that intent element is what separates ordinary silence from actionable concealment.
-Module 11 works the subdivision through in full.
+entered — and that intent element separates ordinary silence from actionable concealment.
 
-So the practical line is this. If you know a material fact about the property's condition and you
-keep quiet because disclosing it would cost your seller the deal, you are on the wrong side of §
-17.46(b)(24) and § 1101.652(b)(4). If you simply have not volunteered your opinion of the
+So the practical line is this. If you know a material fact about the property's condition and keep
+quiet because disclosing it would cost your seller the deal, you are on the wrong side of
+§ 17.46(b)(24) and § 1101.652(b)(4). If you have simply not volunteered your opinion of the
 neighbourhood, you are fine.
 
 **Fourth: passing on the seller's word.** This is the fact pattern that produces the most confusion,
-and it is governed by a section students routinely misstate, so read it slowly.
+and the section that governs it is the one students most often misstate.
 
 Occupations Code § 1101.805 is titled "LIABILITY FOR MISREPRESENTATION OR CONCEALMENT." Subsection
 (a) adopts the § 1101.551 definition of "party"; subsection (b) provides that "[t]his section
 prevails over any other law, including common law"; and subsection (c) provides that the section
 "does not diminish a broker's responsibility for the acts or omissions of a sales agent associated
-with or acting for the broker." Then come the two operative rules, which are mirror images.
+with or acting for the broker." Then come the two operative rules, mirror images of each other.
 
 Subsection (d), protecting the *party* from the *license holder's* conduct:
 
@@ -463,8 +432,8 @@ There is also a housekeeping point. Subsection (f) of § 1101.805 was repealed b
 Leg., R.S., Ch. 1172 (S.B. 1968), Sec. 13(2), effective January 1, 2026. TREC's own article on the
 2026 changes, held for this course as guidance rather than as law, explains that two references to
 subagency were removed from TRELA and states that "subagency has not been eliminated generally as a
-legal concept." Treat the removal as a change to the statute's text, not to the underlying common
-law, which was not held for this course.
+legal concept." That is a change to the statute's text, not to the underlying common law, which was
+not held for this course.
 
 **Fifth: what you are affirmatively protected for saying.** Section 1101.804 is short and useful: "A
 license holder or nonprofit real estate board or association that provides information about real
@@ -472,33 +441,28 @@ property sales prices or the terms of a sale for the purpose of facilitating the
 leasing, financing, or appraisal of real property is not liable to another person for providing that
 information unless the disclosure of that information is specifically prohibited by statute."
 Sharing comparable sales data for a legitimate transactional purpose is protected — subject to that
-closing qualifier about statutory prohibitions, which you must not truncate.
+closing qualifier, which you must not truncate.
 
-**The practical protocol.** Five habits follow. *Attribute*: when the information came from the
+**The practical protocol.** Four habits follow. *Attribute*: when the information came from the
 seller, the appraisal district, an HOA or an inspection report, say so — attribution converts your
-assertion into a report of someone else's, which is where § 1101.805(e) actually operates. *Write it
-down*: substantive communications with parties are among the records a broker must keep for at least
-four years under 22 TAC § 535.2, taught in Module 09. *Refer out*: flood risk to the flood map and
-the insurer, zoning to the city, structural questions to an engineer, and value to a licensed
-appraiser under Chapter 1103, because 22 TAC § 535.17 forbids you to supply an opinion of value
-without that credential. *Deliver the statutory notices* on time and keep proof: § 1101.558(b) and
-(b-1), § 1101.555, and, for the seller side, the § 5.008 notice. *Correct the record*: if you learn
-that something you said or forwarded was wrong, say so promptly and in writing to everyone who
-received it, because correction is the act that satisfies the second condition of § 1101.805(e) and
-most reliably defuses a § 1101.652(b)(2) complaint.
+assertion into a report of someone else's, which is where § 1101.805(e) operates. *Refer out*: flood
+risk to the flood map and the insurer, zoning to the city, structural questions to an engineer,
+value to a licensed appraiser under Chapter 1103, because 22 TAC § 535.17 forbids you to supply an
+opinion of value without that credential. *Deliver the statutory notices* on time and keep proof:
+§ 1101.558(b) and (b-1), § 1101.555, and, for the seller side, the § 5.008 notice. *Correct the
+record*: correction is the act that satisfies the second condition of § 1101.805(e) and most
+reliably defuses a § 1101.652(b)(2) complaint.
 
 **The DTPA, and where to find the rest.** Module 11 covers the Deceptive Trade Practices Act in
 depth, including the § 17.46(b) laundry list; this module touches it only to frame your exposure to
-a non-client, and the exercise below turns on several of its provisions. Section 17.50(b)(1) permits
+a non-client, and the exercise below turns on three of its provisions. Section 17.50(b)(1) permits
 recovery of economic damages, and if the trier of fact finds the conduct was committed
 **knowingly**, mental anguish damages plus up to **three times** economic damages, and if committed
 **intentionally**, mental anguish damages plus up to three times the sum of mental anguish and
 economic damages. Section 17.45(9) defines "knowingly" as "actual awareness, at the time of the act
-or practice complained of, of the falsity, deception, or unfairness of the act or practice," adding
-that "actual awareness may be inferred where objective manifestations indicate that a person acted
-with actual awareness." And § 17.565 requires suit within two years of the act or of discovery in
-the exercise of reasonable diligence, extendable by 180 days in the circumstances that section
-describes.
+or practice complained of, of the falsity, deception, or unfairness of the act or practice." And
+§ 17.565 requires suit within two years of the act or of discovery in the exercise of reasonable
+diligence, extendable by 180 days in the circumstances that section describes.
 
 ### Applied exercise: The roof in Lubbock
 
@@ -557,9 +521,8 @@ at a minimum, read substantially similar to the following," and then sets out th
 is the part a buyer's agent should be able to paraphrase from memory: "THIS NOTICE IS A DISCLOSURE
 OF SELLER'S KNOWLEDGE OF THE CONDITION OF THE PROPERTY AS OF THE DATE SIGNED BY SELLER AND IS NOT A
 SUBSTITUTE FOR ANY INSPECTIONS OR WARRANTIES THE PURCHASER MAY WISH TO OBTAIN. IT IS NOT A WARRANTY
-OF ANY KIND BY SELLER OR SELLER'S AGENTS." Three propositions are packed into it: the notice reports
-knowledge, not condition; it is dated to the day of signature; and it is not a warranty, not by the
-seller and not by you.
+OF ANY KIND BY SELLER OR SELLER'S AGENTS." The notice reports knowledge, not condition; it is dated
+to the day of signature; and it is not a warranty, not by the seller and not by you.
 
 The body runs to eleven numbered items, and the optional reference at the end of this module walks
 them one by one.
@@ -576,7 +539,7 @@ Two consequences follow. First, the notice is a **knowledge document**: a seller
 not know the age of the roof and writes "Unknown" has complied with § 5.008 — the statute says so in
 terms. Second, the safe harbour operates only where the information genuinely *is* unknown.
 "Unknown" written to avoid an answer the seller in fact has is a false statement on the notice, and
-it is the kind of statement that supports a fraud or DTPA claim later.
+the kind that supports a fraud or DTPA claim later.
 
 Do not tell a buyer that the § 5.008 notice is a warranty, and do not let a buyer treat it as an
 inspection. The form's own caption forecloses both readings.
@@ -589,14 +552,13 @@ The exemptions cover transfers where the transferor has no meaningful personal k
 property — a court order or foreclosure sale, a trustee in bankruptcy, a mortgagee or deed-of-trust
 beneficiary that took the property at foreclosure or by deed in lieu, a fiduciary administering a
 decedent's estate, guardianship, conservatorship or trust, and a governmental entity — together with
-transfers within a family or between co-owners, brand-new construction that has never been occupied,
-and land where the improvements are trivial relative to the whole, which is subdivision (11)'s five
-percent test. Two come up constantly. Subdivision (10) is why a builder selling a house nobody has
-lived in delivers no seller's disclosure notice, and subdivision (5) is why the executor selling
-grandmother's house in Nacogdoches delivers none either. In both cases, note what does *not* change:
-the exemption is from § 5.008, not from § 1101.652(b)(4). If you are the listing agent on that
-estate sale and you know the slab has moved, you still owe the disclosure to a potential buyer under
-TRELA, because your duty never came from § 5.008.
+transfers within a family or between co-owners, brand-new construction never occupied, and land
+where the improvements are trivial relative to the whole, which is subdivision (11)'s five percent
+test. Two come up constantly: subdivision (10) is why a builder selling a house nobody has lived in
+delivers no notice, and subdivision (5) is why the executor selling grandmother's house in
+Nacogdoches delivers none either. Note what does *not* change: the exemption is from § 5.008, not
+from § 1101.652(b)(4). If you list that estate sale and you know the slab has moved, you still owe
+the disclosure to a potential buyer under TRELA.
 
 **The timing and the remedy — subsection (f).** The whole subsection:
 
@@ -607,8 +569,8 @@ TRELA, because your duty never came from § 5.008.
 
 Take the deadline first. Delivery is due **on or before the effective date** of the binding contract
 — not at closing, and not within some number of days after the offer. In practice the notice is
-delivered during marketing and acknowledged by the buyer before or with the offer, which is why a
-listing agent's file should hold the executed notice long before an offer arrives.
+delivered during marketing and acknowledged by the buyer before or with the offer, which is why the
+file should hold the executed notice long before an offer arrives.
 
 Now the remedy, and read it exactly. If the contract is entered without the notice, "the purchaser
 may terminate the contract for any reason within seven days after receiving the notice." Three
@@ -627,22 +589,20 @@ and simply changes their mind about the neighbourhood may terminate within those
 making that right exclusive. Compare Property Code § 5.012, the property owners' association notice,
 which adds in subsection (e): "The purchaser's right to terminate the executory contract under
 Subsection (d) is the purchaser's exclusive remedy for the seller's failure to provide the notice
-required by this section." Section 5.008 contains no such sentence. The other notice statutes in the
-same subchapter anchor their counts and set their remedies differently again, which is why you must
-read each one rather than assume they run alike.
+required by this section." Section 5.008 contains no such sentence, and the other notice statutes in
+the same subchapter anchor their counts differently again — read each one rather than assume they
+run alike.
 
 **Your role, precisely stated.** Section 5.008 imposes no duty on a license holder, but four things
 are true about your position. You should get the notice completed and delivered on time, because a
 seller who misses the subsection (f) deadline hands the buyer a free termination right — a practice
 standard, not a statutory one, and this course cites no rule for it. You must not complete the
-notice for the seller: it is a statement of the seller's knowledge, signed by the seller and dated
-as of the seller's signature under subsection (d). You must keep it, because under 22 TAC § 535.2,
-taught in Module 09, a broker must maintain "disclosures" among the records preserved "for at least
-four years from the date of closing, termination of the contract, or end of a real estate
-transaction." And your own TRELA duty stands independent of the seller's: if the notice says "No" to
-a question and you know the answer is "Yes," § 1101.652(b)(4) requires you to disclose the defect to
-a potential buyer, and § 1101.805(e) will not shield you once you know of the falsity and fail to
-disclose your knowledge of it.
+notice for the seller: it states the seller's knowledge and is dated as of the seller's signature
+under subsection (d). You must keep it, because under 22 TAC § 535.2, taught in Module 09, a broker
+must maintain "disclosures" among the records preserved "for at least four years from the date of
+closing, termination of the contract, or end of a real estate transaction." And your own TRELA duty
+stands independent of the seller's: if the notice says "No" to a question and you know the answer is
+"Yes," § 1101.652(b)(4) requires you to disclose the defect to a potential buyer.
 
 ### Statute reading exercise: Working through § 5.008 subsection by subsection
 
@@ -693,8 +653,8 @@ illnesses, or HIV infection."
 **What § 1101.556 gives you.** Three verbs: you are not required to **inquire about**, to
 **disclose**, or to **release** the listed information. The relief from the duty to *inquire*
 matters as much as the relief from the duty to disclose, because you are not obliged to interrogate
-a seller about how a prior owner died in order to market the house. And the section opens with
-"Notwithstanding other law," which tells you the relief survives contrary rules found elsewhere.
+a seller about how a prior owner died. And the section opens with "Notwithstanding other law," so
+the relief survives contrary rules found elsewhere.
 
 **Now the qualifiers, which are where students go wrong.**
 
@@ -704,14 +664,14 @@ that gave way in a Corpus Christi condominium, carbon monoxide from a cracked he
 electrocution from faulty wiring — the death is not "unrelated to the condition of the property,"
 and § 1101.556(2) does not relieve you of anything. Worse, the condition that caused it is very
 likely a "significant defect … that would be a significant factor to a reasonable and prudent buyer"
-under § 1101.652(b)(3), so if you know about it § 1101.652(b)(4) affirmatively requires you to
-disclose it to a potential buyer. The statute students remember as "you never have to disclose a
-death" turns, in exactly the case where the death matters most, into a duty to speak.
+under § 1101.652(b)(3), so if you know about it § 1101.652(b)(4) requires you to disclose it to a
+potential buyer. The statute students remember as "you never have to disclose a death" turns, in the
+case where the death matters most, into a duty to speak.
 
 **Qualifier two: the enumeration.** Subdivision (2) lists three manners of death: **natural
 causes**, **suicide**, and **accident** unrelated to the property's condition. It does not list
-homicide. A murder on the property is outside the words the Legislature chose. What Texas common law
-requires or does not require about disclosing a homicide was not held for this course and is not
+homicide, so a murder on the property is outside the words the Legislature chose. What Texas common
+law requires or does not require about disclosing a homicide was not held for this course and is not
 taught here; what can be said from the held text is that § 1101.556 does not supply relief for it,
 and neither does § 5.008(c), whose list is identical.
 
@@ -727,14 +687,13 @@ across the whole field of stigma.
 
 **Qualifier four — the most important one: relief from a duty to disclose is not permission to
 lie.** Section 1101.556 says a license holder "is not required to … disclose." It does not say a
-license holder may misstate. If an unrepresented buyer in Denton asks you point blank, "Did anyone
-die in this house?", you may decline to answer and explain that Texas law does not require you to
+license holder may misstate. If an unrepresented buyer in Denton asks point blank, "Did anyone die
+in this house?", you may decline to answer and explain that Texas law does not require you to
 inquire about or disclose that information, or you may, with your seller's authorisation, answer
-truthfully. What you may not do is say "No" when you know the answer is yes. A false answer is a
-misrepresentation: § 1101.652(b)(2) reaches conduct that is dishonest, 22 TAC § 535.156 requires you
-to convey accurate information to members of the public with whom you deal, and § 531.3 forbids
-misrepresentation by acts of commission. The statute removes a duty; it does not create a privilege
-to deceive.
+truthfully. What you may not do is say "No" when you know the answer is yes: § 1101.652(b)(2)
+reaches conduct that is dishonest, 22 TAC § 535.156 requires accurate information to members of the
+public with whom you deal, and § 531.3 forbids misrepresentation by acts of commission. The statute
+removes a duty; it does not create a privilege to deceive.
 
 **The AIDS and HIV provisions, and why they are drafted differently.** Two further sections work
 with § 1101.556 on the health-status side, and the difference between them is real.
@@ -744,10 +703,9 @@ criminally liable because the person failed to inquire about, make a disclosure 
 release information relating to whether a previous or current occupant of real property had, may
 have had, has, or may have AIDS, an HIV-related illness, or HIV infection as defined by the Centers
 for Disease Control and Prevention of the United States Public Health Service." Notice the
-asymmetry. Section 1101.556 relieves the *duty* for both categories, health status and qualifying
-deaths; § 1101.802 supplies an immunity from civil and criminal *liability*, and only for the
-AIDS/HIV category. There is no parallel liability-immunity section addressed to deaths, so do not
-tell a client that Texas law immunises silence about a death.
+asymmetry: § 1101.556 relieves the *duty* for both categories, health status and qualifying deaths,
+while § 1101.802 supplies an immunity from civil and criminal *liability* and only for the AIDS/HIV
+category. No parallel liability-immunity section addresses deaths.
 
 And on the health-status side there is a duty pointing in the opposite direction. 22 TAC § 531.19,
 taught in Module 10, forbids a license holder to inquire about, respond to or facilitate inquiries
@@ -756,24 +714,22 @@ lessor or potential lessee that indicates or is intended to indicate a preferenc
 discrimination on the bases the rule lists — and the rule adds: "For the purpose of this section,
 disability includes AIDS, HIV-related illnesses, or HIV infection as defined by the Centers for
 Disease Control of the United States Public Health Service." So for the AIDS/HIV category the two
-rules stack and produce a bright line: § 1101.556 says you need not inquire or disclose, and §
-531.19 makes inquiring, responding to inquiries, facilitating inquiries, or disclosing in a way that
-indicates a preference or limitation based on disability independently prohibited. The answer to a
-buyer's question on that subject is always some version of "that is not information I inquire about
-or disclose."
+rules stack into a bright line: § 1101.556 says you need not inquire or disclose, and § 531.19
+independently prohibits inquiring, responding to inquiries, facilitating inquiries, or disclosing in
+a way that indicates a preference or limitation based on disability.
 
-**Handling the conversation.** Two practical positions, offered as practice rather than as law.
-Decide the policy before the question arrives, with your broker and your seller: § 1101.556 removes
-a requirement, not an authorisation, so a seller who wants a known suicide disclosed may instruct
-you to disclose it. And answer the same way every time — answering some buyers and not others
-invites both a fair housing complaint and a claim that your silence with one buyer was strategic
-concealment under DTPA § 17.46(b)(24).
+**Handling the conversation.** Two positions, offered as practice rather than as law. Decide the
+policy before the question arrives, with your broker and your seller: § 1101.556 removes a
+requirement, not an authorisation, so a seller who wants a known suicide disclosed may instruct you
+to disclose it. And answer the same way every time — answering some buyers and not others invites a
+fair housing complaint and a claim that your silence with one buyer was strategic concealment under
+DTPA § 17.46(b)(24).
 
 Separate the stigma from the condition. If a fire, a flood, a methamphetamine laboratory or a
 structural failure produced the event, the *event* may be outside your disclosure duty while the
 *damage* is squarely inside it; § 1101.652(b)(4) and, on the seller's side, items 3, 4 and 9 of the
-§ 5.008 notice all reach the physical consequence. A student who leaves this unit remembering only
-"you never have to disclose a death in Texas" has learned the wrong sentence. The right sentence is:
+§ 5.008 notice reach the physical consequence. A student who leaves this unit remembering only "you
+never have to disclose a death in Texas" has learned the wrong sentence. The right sentence is:
 *Texas relieves a license holder of the duty to inquire about or disclose a prior occupant's AIDS or
 HIV status and a death by natural causes, suicide, or accident unrelated to the condition of the
 property — and relieves nothing else.*
@@ -922,7 +878,7 @@ property seaward of the Gulf Intracoastal Waterway or within 1,000 feet of the m
 bordering the Gulf of Mexico. Item 11 is the military installation noise notice. The form closes
 with the seller's dated signature and the purchaser's dated acknowledgement of receipt.
 
-Subsection (g) supplies two definitions for the section: a "[b]lockable main drain" is "a main drain
+Subsection (g) of § 5.008 supplies two definitions for the section: a "[b]lockable main drain" is "a main drain
 of any size and shape that a human body can sufficiently block to create a suction entrapment
 hazard," and a "[m]ain drain" is "a submerged suction outlet typically located at the bottom of a
 swimming pool or spa to conduct water to a recirculating pump."
