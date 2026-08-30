@@ -1315,7 +1315,7 @@
       "course_approval_required": true,
       "reporting_requirements": "Not stated — the REALM provider application is behind a login and could not be read.",
       "record_retention_period": "Not stated — 22 TAC unreachable from the build environment.",
-      "refund_policy_rules": "Draft only. texas/submission/pre-enrollment-agreement.md, version TX-ENROLLMENT-DRAFT-2026-08-27-v0. No price and no refund formula is set; both are business decisions.",
+      "refund_policy_rules": "Draft only. texas/submission/pre-enrollment-agreement.md, version TX-ENROLLMENT-DRAFT-2026-08-30-v1. No price and no refund formula is set; both are business decisions.",
       "enrollment_period": "Not applicable — enrollment is disabled and no course is approved.",
       "final_exam_rules": "Not stated. The examination rules for a Texas qualifying course are in 22 TAC § 535.65, which could not be opened — see texas/regulatory/primary-text-readings.md. No passing score, proctoring requirement, retake rule or version rule is claimed.",
       "proctoring_rules": "Not stated. Historical TREC guidance required proctored closed-book qualifying examinations and later rulemaking is understood to have removed the blanket requirement; the current rule text could not be read, so neither position is asserted. Any proctoring StateCourse adopts will be labelled provider policy unless a current authority requires it.",

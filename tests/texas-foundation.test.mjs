@@ -463,3 +463,42 @@ test("TX-1A wrote the curriculum; TX-1B (owner-authorized 2026-08-28) built the 
   assert.equal(curriculumExists(), true, "the Principles I curriculum is missing — TX-1A built it");
   assert.equal(fs.existsSync(path.join(ROOT, "config/texas/principles-i-final-exam-bank.mjs")), true, "the final examination bank is missing — TX-1B was built");
 });
+
+test("the pre-enrollment agreement's version string is the same everywhere it is read", () => {
+  /* The document's own claim is that the enrollment UI, the Terms, the acceptance record, the
+     Stripe metadata, the refund record and the submission specimen all read one version string. A
+     bump made in the markdown and not in the code would leave a policy disclosed from one source
+     and computed from another, which is the failure that document exists to prevent — and it nearly
+     happened when the file moved to v1. */
+  const doc = fs.readFileSync(path.join(ROOT, "texas/submission/pre-enrollment-agreement.md"), "utf8");
+  const declared = doc.match(/^\*\*Version:\*\*\s*`([^`]+)`/m)?.[1];
+  assert.ok(declared, "the agreement must declare a version on its own face");
+  assert.equal(PAYMENT.POLICY_SOURCE.version, declared,
+    `payment-contract.mjs says ${PAYMENT.POLICY_SOURCE.version} and the agreement says ${declared}`);
+  assert.equal(PAYMENT.POLICY_SOURCE.path, "texas/submission/pre-enrollment-agreement.md");
+
+  const registryPath = path.join(ROOT, "public/statecourse/data/state-registry.json");
+  if (fs.existsSync(registryPath)) {
+    const registry = fs.readFileSync(registryPath, "utf8");
+    const stale = registry.match(/TX-ENROLLMENT-DRAFT-[0-9-]+-v\d+/g)?.filter((v) => v !== declared) ?? [];
+    assert.deepEqual([...new Set(stale)], [], `the state registry still names ${[...new Set(stale)].join(", ")}`);
+  }
+});
+
+test("the pre-enrollment agreement does not say a rule was unread when the rule is held on disk", () => {
+  /* Three items in that document carried "§ 535.65 was not read" long after the section was read
+     and hashed. A caveat that has become false understates what is known and weakens a claim that
+     is in fact sourced, which is its own kind of inaccuracy. */
+  const doc = fs.readFileSync(path.join(ROOT, "texas/submission/pre-enrollment-agreement.md"), "utf8");
+  const held = fs.readdirSync(path.join(ROOT, "texas/trec-sources/trec-rules"))
+    .filter((f) => f.endsWith(".txt"))
+    .map((f) => f.replace(/\.txt$/, ""));
+  const offenders = [];
+  for (const section of held) {
+    /* "§ 535.65 was not read" and its near variants, allowing a few words in between. */
+    const claim = new RegExp(`§\\s*${section.replace(".", "\\.")}[^.\\n]{0,60}?\\bnot read\\b`, "i");
+    if (claim.test(doc)) offenders.push(section);
+  }
+  assert.deepEqual(offenders, [],
+    `the agreement says these rules were not read, but each is held at texas/trec-sources/trec-rules/: ${offenders.join(", ")}`);
+});

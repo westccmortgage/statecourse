@@ -62,7 +62,7 @@ export function mayOpenCheckout(context) {
  */
 export const POLICY_SOURCE = Object.freeze({
   path: "texas/submission/pre-enrollment-agreement.md",
-  version: "TX-ENROLLMENT-DRAFT-2026-08-27-v0",
+  version: "TX-ENROLLMENT-DRAFT-2026-08-30-v1",
   status: "DRAFT — no commercial price and no refund formula is set. Both are business decisions and neither is invented here.",
 });
 

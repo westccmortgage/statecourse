@@ -4,7 +4,7 @@
   "approvalForm": "LOA-1 rev. 09/11/2024",
   "contentFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v5",
   "generatedBy": "scripts/loa-acceptance-report.mjs",
-  "generatedAt": "2026-08-30T23:34:25.232Z",
+  "generatedAt": "2026-08-30T23:38:15.352Z",
   "confidentiality": "Counts, hashes, percentages and behaviour outcomes only. No item text, choice, key or rationale from the secure bank appears in this report.",
   "verdicts": {
     "contentAndAssessment": "GO",
@@ -141,7 +141,7 @@
     {
       "label": "23. full regression suite",
       "ok": true,
-      "detail": "1023 passing, 0 failing"
+      "detail": "1032 passing, 0 failing"
     },
     {
       "label": "24. submission-readiness blockers recorded",
