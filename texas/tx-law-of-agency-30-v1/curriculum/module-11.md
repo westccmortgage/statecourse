@@ -960,13 +960,13 @@ time under § 17.565 may still have a fraud claim alive. When you receive a dema
 transaction from three years ago, do not conclude that you are safe.
 
 **The waiver defense, and why you will rarely have it.** The three § 17.42(a) conditions, the
-§ 17.42(b) counsel restriction and the § 17.42(c) form were set out under Deceptive Trade Practices
-above. Add only § 17.42(d), which permits a partial waiver: "The waiver required by Subsection (c)
-may be modified to waive only specified rights under this subchapter." In the ordinary residential
-transaction none of this is available, and a license holder who inserts a homemade DTPA waiver into
-a contract has accomplished nothing except to create an exhibit. The defense-side fee award under
-§ 17.50(c) for a groundless, bad-faith or harassing suit, computed under Damages above, belongs on
-the same list.
+§ 17.42(b) counsel restriction and the § 17.42(c) form were set out in the Deceptive Trade Practices
+and Consumer Protection unit above. Add only § 17.42(d), which permits a partial waiver: "The waiver
+required by Subsection (c) may be modified to waive only specified rights under this subchapter." In
+the ordinary residential transaction none of this is available, and a license holder who inserts a
+homemade DTPA waiver into a contract has accomplished nothing except to create an exhibit. The
+defense-side fee award under § 17.50(c) for a groundless, bad-faith or harassing suit, set out in the
+Damages unit above, belongs on the same list.
 
 **And one defense that comes from TRELA, not the DTPA.** Occupations Code § 1101.805(e), quoted in
 Unit 1 and taught in Module 03, protects a license holder from a party's misrepresentation or

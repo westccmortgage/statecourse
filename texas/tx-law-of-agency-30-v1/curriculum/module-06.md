@@ -16,21 +16,19 @@ to decide what an intermediary and an appointed license holder may and may not d
 three exceptions written into subdivision (3); carry out an appointment under § 1101.560 — identify who
 may appoint, who may be appointed, the two conditions the statute imposes, the written notice the
 broker owes the parties, and what an appointed license holder may do that the intermediary may not; and
-distinguish an intermediary arrangement entered into deliberately from unintended dual representation,
-name the specific behaviours that produce the latter, and state the disciplinary exposure under
-§ 1101.652 and 22 TAC § 535.191 when it happens.
+and distinguish an intermediary arrangement entered into deliberately from unintended dual
+representation, naming the specific behaviours that produce the latter and the disciplinary exposure it
+carries.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where a
 statement is practice rather than law, the module says so and cites nothing for it.
 
 ## Unit: The Path from Dual Agency to Intermediary Brokerage
 
-You are about to learn the single most Texas-specific idea in this course. Almost every other subject
-in agency law travels: fiduciary duty, disclosure, the difference between a client and a customer.
-Those ideas look broadly similar in Oklahoma, in Colorado, in Florida. What Texas does when one
-brokerage firm ends up standing between a buyer and a seller who are both its clients does not look
-like what most other states do, and the vocabulary Texas uses for it is statutory, narrow, and
-unforgiving of approximation. If you learn one thing from this module, learn to stop saying the words
+What Texas does when one brokerage firm ends up standing between a buyer and a seller who are both its
+clients does not look like what most other states do, and the vocabulary Texas uses for it is statutory,
+narrow, and unforgiving of approximation. If you learn one thing from this module, learn to stop saying
+the words
 *dual agent* about a Texas transaction. There is a correct word. It is *intermediary*, and it means
 something specific.
 
@@ -56,25 +54,21 @@ keep. His interest outranks yours and outranks the other side's. You are not neu
 house on Chisholm Trail in Round Rock at $415,000. The seller, over coffee at the listing appointment,
 tells you the truth every listing agent hears eventually: she has already closed on a house in
 Georgetown, she is carrying two notes, and she will take $392,000 rather than carry a third month. That
-number — $392,000 — is now yours to protect. Rule 535.156 says you must put her interest above your
-own and owe her a duty of fidelity. If you leak $392,000, you have cost her twenty-three thousand
+number — $392,000 — is now yours to protect. If you leak it, you have cost her twenty-three thousand
 dollars and you have breached the most basic thing a client buys when she signs a listing.
 
 Three weeks later a buyer walks into your open house. He likes the property. He is pre-approved to
 $430,000 and he tells you, because he trusts you, that he would go to $421,000 for this house before he
 would lose it. Suppose you now purport to represent him too, in the full sense — as *his* agent, with
-the same duties Rule 531.2 and Rule 535.156 describe. His interest is that you tell him the seller will
-take $392,000. Her interest is that you never say it. His interest is that you keep his $421,000
-ceiling secret. Her interest is that you disclose it. Rule 535.156 obliges you to convey to the
-principal all known information which would affect the principal's decision on whether or not to make,
-accept or reject offers — and you now have two principals, each of whom is entitled under that rule to
-information you are simultaneously obliged to withhold from the other.
+the same duties. His interest is that you tell him the seller will take $392,000. Her interest is that
+you never say it. His interest is that you keep his $421,000 ceiling secret. Her interest is that you
+disclose it. You now have two principals, each entitled to information you are simultaneously obliged to
+withhold from the other.
 
 This is not a hard case. It is an *impossible* case, and the impossibility is structural rather than
-ethical. A scrupulous, honest, hard-working license holder cannot solve it by trying harder. There is
-no version of "advise the buyer to offer $395,000" that is loyal to the seller, and no version of
-"advise the seller to hold at $415,000" that is loyal to the buyer. Whatever you do next, you breach a
-duty to somebody. The only question is which one.
+ethical: no version of "advise the buyer to offer $395,000" is loyal to the seller, and no version of
+"advise the seller to hold at $415,000" is loyal to the buyer. Whatever you do next, you breach a duty
+to somebody. The only question is which one.
 
 **What *dual agency* was, as a concept.** The concept the unit title names — one licensee, two
 principals, full agency duties to each, made lawful by consent — is the arrangement some states permit
@@ -144,18 +138,12 @@ that the framework you are about to study has been settled Texas law in its codi
 2003, with the mandatory-intermediary sentence in § 1101.561(b) reaching its current form by
 September 1, 2005.
 
-**One more piece of vocabulary that just disappeared.** If you have read an older Texas text, or talked
-to a licensee who has been in the business twenty years, you may have heard about *subagency* — the
-arrangement in which a cooperating broker worked for the seller through the listing broker rather than
-for the buyer. Look at the definitions section of the current statute: § 1101.002(8) now reads only
-"Repealed by Acts 2025, 89th Leg., R.S., Ch. 1172 (S.B. 1968), Sec. 13(1), eff. January 1, 2026." TREC's
-own explanatory article on the 2026 changes — which is guidance, not law, and which this course uses
-only to describe what changed — states that "Two references to subagency were removed from TRELA" and
-adds that "subagency has not been eliminated generally as a legal concept," advising a license holder
-who thinks subagency may be involved to contact the broker or an attorney. The word *subagent* and the
-word *subagency* appear nowhere in the current statutory text held for this course, and nowhere in the
-Commission rules held for it either. Which is to say: the menu of relationships you can lawfully name in
-a Texas transaction has gotten shorter, not longer, and the intermediary occupies the middle of it.
+**One more piece of vocabulary that just disappeared.** You may have heard an experienced licensee
+speak of *subagency*. The definition at § 1101.002(8) now reads only "Repealed by Acts 2025, 89th Leg.,
+R.S., Ch. 1172 (S.B. 1968), Sec. 13(1), eff. January 1, 2026," and the words *subagent* and *subagency*
+appear nowhere in the statutory text or the Commission rules held for this course. Module 01 owns
+§ 1101.002. The point for this module is that the menu of relationships you can lawfully name in a Texas
+transaction has gotten shorter, not longer, and the intermediary occupies the middle of it.
 
 **Why the Legislature's answer is better than consent-cured dual agency.** Consider what the
 intermediary framework does that a diluted double agency does not. First, it moves the role up to the
@@ -166,16 +154,11 @@ tells the intermediary exactly which four things may not be said and exactly wha
 each of them. Third, it permits the brokerage to restore genuine advice to each party through
 appointments under § 1101.560, without pretending that any one human being is advocating for both.
 Fourth, it makes the arrangement consensual in advance and in writing, with the compensation source
-disclosed, under § 1101.559(a). And fifth, § 1101.561(a) removes the trap that would otherwise
-destroy the whole scheme — the argument that a broker who complied perfectly with Subchapter L
-nevertheless breached some common-law duty of undivided loyalty by not leaking the seller's floor to
-the buyer.
-
-That fifth point deserves a sentence of its own, because it is what makes the framework coherent
-instead of merely well-intentioned. Section 1101.561(a): "The duties of a license holder acting as an
-intermediary under this subchapter supersede the duties of a license holder established under any other
-law, including common law." Without that sentence, a Texas broker acting as an intermediary would be
-obeying a statute and breaching a fiduciary standard at the same moment. With it, the statute governs.
+disclosed, under § 1101.559(a). And fifth, § 1101.561(a) removes the trap that would otherwise destroy
+the whole scheme: "The duties of a license holder acting as an intermediary under this subchapter
+supersede the duties of a license holder established under any other law, including common law."
+Without that sentence, a Texas broker acting as an intermediary would be obeying a statute and breaching
+a fiduciary standard at the same moment. With it, the statute governs.
 
 ### Statute reading exercise: Reading Subchapter L for what it does not contain
 
@@ -205,13 +188,11 @@ forbids, what it permits, and how far the supersession in § 1101.561(a) actuall
 
 **The intermediary is the broker. Not you.** Section 1101.551(1) is explicit: an intermediary is
 "a broker who is employed to negotiate a transaction between the parties to a transaction." Chapter 1101
-defines the two license types separately and does not let them trade places. Section 1101.002(4)
-provides that a license holder means "a broker or sales agent licensed under this chapter," and
-§ 1101.002(7) provides that a sales agent means "a person who is sponsored by a licensed broker for the
-purpose of performing an act described by Subdivision (1)" — that is, an act of brokerage. Section
-1101.351(c) closes the loop: "A licensed sales agent may not engage or attempt to
-engage in real estate brokerage unless the sales agent is sponsored by a licensed broker and is acting
-for that broker." Everything you do as a sales agent, you do for and through your broker.
+defines the two license types separately at § 1101.002(4) and (7) — Module 01 teaches those definitions
+— and does not let them trade places. Section 1101.351(c) closes the loop: "A licensed sales agent may
+not engage or attempt to engage in real estate brokerage unless the sales agent is sponsored by a
+licensed broker and is acting for that broker." Everything you do as a sales agent, you do for and
+through your broker.
 
 Two further sources make the point unmistakable. Rule 535.2, the broker responsibility rule taught in
 Module 09, requires that "Listings and other agreements for real estate brokerage services must be
@@ -237,24 +218,20 @@ obtains written consent from each party for the broker to act as an intermediary
 and (2) the written consent of the parties states the source of any expected compensation to the
 broker."
 
-Take the conditions one at a time.
-
 *Written.* Not oral. Not implied from conduct. Not inferred from the fact that both parties knew the
-brokerage was on both sides. The Act uses "orally or in writing" when it means to allow either — look
-at § 1101.558(b), which requires a license holder who represents a party to disclose that
-representation "orally or in writing" at first contact with the other party. Section 1101.559(a)(1)
-does not offer that choice. It says "written consent," and it says the broker must obtain it before
-acting: the section is phrased as a permission conditioned on the consent — a broker "may act as an
-intermediary between parties to a real estate transaction if" the two listed conditions are met — so the
-consent is a precondition to the conduct, not a paper to be collected afterward.
+brokerage was on both sides. The Act says "orally or in writing" when it means to allow either — the
+representation disclosure in § 1101.558(b) does, and Module 02 teaches it. Section 1101.559(a)(1) does
+not offer that choice. It says "written consent," and the section is phrased as a permission conditioned
+on the consent — a broker "may act as an intermediary between parties to a real estate transaction if"
+the two listed conditions are met — so the consent is a precondition to the conduct, not a paper to be
+collected afterward.
 
 *From each party.* Both of them. A consent from the seller and a shrug from the buyer is not
-compliance. If one party will not consent, the broker cannot act as intermediary in that transaction,
-and since § 1101.561(b) forbids the alternative of representing both sides in any other posture,
-something has to give — the broker declines the second client, or the second party goes to another
-brokerage, or the arrangement does not happen. That is a real business consequence and it is why the
-consent is normally captured months earlier, in the listing agreement and in the buyer representation
-agreement, before anybody knows whether the two clients will ever collide.
+compliance. If one party will not consent, the broker cannot act as intermediary, and since § 1101.561(b)
+forbids the alternative of representing both sides in any other posture, something has to give — the
+broker declines the second client, or the second party goes to another brokerage. That is why the
+consent is normally captured months earlier, in the listing and buyer representation agreements, before
+anybody knows whether the two clients will ever collide.
 
 *Consent to the broker acting as an intermediary in the transaction.* The consent is to a named
 capacity, not to a vague willingness to be flexible. A clause saying "Client agrees Broker may work with
@@ -262,12 +239,11 @@ other clients" is not consent under this section.
 
 *Stating the source of any expected compensation to the broker.* This is the second condition and it is
 the one most often skipped. The parties must be told, in the same written consent, where the broker's
-money is expected to come from. Notice why the Legislature put it there rather than somewhere else.
-Section 1101.652(b)(8) makes it grounds for discipline to receive "compensation from more than one party
-to a real estate transaction without the full knowledge and consent of all parties to the transaction."
-An intermediary transaction is precisely the situation in which a broker is most likely to be paid from
-both sides, or from one side on account of both. Section 1101.559(a)(2) forces the disclosure into the
-consent instrument so that the knowledge is documented before the conflict matures.
+money is expected to come from. Notice why the Legislature put it there: § 1101.652(b)(8) makes it
+grounds for discipline to receive compensation from more than one party without the full knowledge and
+consent of all parties, and an intermediary transaction is precisely where a broker is most likely to be
+paid from both sides. Section 1101.559(a)(2) forces the disclosure into the consent instrument so that
+the knowledge is documented before the conflict matures.
 
 **The safe harbour in § 1101.559(b), and the typography question.** Students always want to know
 whether Texas requires a particular type size on the intermediary consent. Read the subsection:
@@ -280,8 +256,8 @@ whether Texas requires a particular type size on the intermediary consent. Read 
 
 Three things follow. First, the ordinary listing agreement and the ordinary buyer or tenant
 representation agreement are the intended vehicles. Texas does not contemplate a separate mid-
-transaction consent ceremony as the normal case; it contemplates the authorization being obtained at the
-front end, when the client is calm and not yet in love with a particular house.
+transaction consent ceremony as the normal case; the authorization is obtained at the front end, when
+the client is calm and not yet in love with a particular house.
 
 Second, the safe harbour is conditional, and the condition is substantive. The agreement is "sufficient
 to establish written consent" only "if the written agreement specifies in conspicuous bold or underlined
@@ -324,7 +300,7 @@ Section 1101.560 who acts as an intermediary under Subchapter L may not:"
 
 > "(5) violate this chapter."
 
-Work through what each one actually does.
+Work through what each one does.
 
 Subdivision (1) is the seller's floor. On the Chisholm Trail facts, the $392,000 is locked. You may not
 tell the buyer that the seller will accept less than the $415,000 asking price — not the number, and not
@@ -405,15 +381,14 @@ law, including common law."
 
 What it displaces: duties established under *other law* — the fiduciary duties a court would otherwise
 imply, the common-law obligation of undivided loyalty, the argument that a broker's failure to disclose
-the seller's floor to a buyer-client is a breach of trust. Those yield to Subchapter L. That is the
-whole purpose of the section, and it is why an intermediary who complies with § 1101.651(d) is not
-thereby breaching a duty of loyalty: the statutory duty has taken the place of the common-law one.
+the seller's floor to a buyer-client is a breach of trust. Those yield to Subchapter L, which is why an
+intermediary who complies with § 1101.651(d) is not thereby breaching a duty of loyalty.
 
 What it does not displace, on the face of the text:
 
 Duties imposed by *this* subchapter. The supersession runs against "any other law." Sections 1101.559,
-1101.560 and 1101.561 are the source of the intermediary's duties, not their casualty. Section
-1101.559(c) still requires fair and impartial action.
+1101.560 and 1101.561 are the source of the intermediary's duties, not their casualty; § 1101.559(c)
+still requires fair and impartial action.
 
 Duties imposed elsewhere in Chapter 1101. Section 1101.651(d) is drafted expressly to govern brokers and
 appointees "who acts as an intermediary under Subchapter L," so it plainly survives — indeed it would be
@@ -437,18 +412,16 @@ here.** The safe professional reading — and the one the rest of this module te
 § 1101.561(a) resolves the conflict between Subchapter L and the common law in Subchapter L's favour,
 and does nothing else. It is not a general amnesty.
 
-**A practical sequence.** Putting the unit together, an intermediary transaction in a Texas brokerage
-runs like this, and the order is not decorative. The broker obtains written intermediary authorization
-in the listing agreement, with the § 1101.651(d) prohibitions set out in conspicuous bold or underlined
-print, and the source of expected compensation stated (§ 1101.559(a)(2), (b)). The broker obtains the
-same authorization in the buyer or tenant representation agreement. The § 1101.558(b-1) notice has
-already gone to each party at first substantive communication. The two clients collide on a property.
-Because the broker has agreed to represent both a buyer and a seller in the transaction, § 1101.561(b)
-requires the broker to act as intermediary. If the consents authorize appointments, the broker makes
-them and gives written notice to all parties under § 1101.560(b)(2). From that point the broker acts
-fairly and impartially, and everyone — broker and appointees alike — lives inside § 1101.651(d). If any
-piece of that chain is missing, the brokerage is not in a lawful intermediary posture, and it is in a
-posture Texas law does not recognise at all.
+**A practical sequence.** The order is not decorative. The broker obtains written intermediary
+authorization in the listing agreement and again in the buyer or tenant representation agreement, with
+the § 1101.651(d) prohibitions in conspicuous bold or underlined print and the source of expected
+compensation stated (§ 1101.559(a)(2), (b)). The § 1101.558(b-1) notice has already gone to each party.
+The two clients collide on a property; because the broker has agreed to represent both a buyer and a
+seller, § 1101.561(b) requires the intermediary posture. If the consents authorize appointments, the
+broker makes them and gives written notice to all parties under § 1101.560(b)(2). From that point the
+broker acts fairly and impartially, and everyone — broker and appointees alike — lives inside
+§ 1101.651(d). If any piece of that chain is missing, the brokerage is in a posture Texas law does not
+recognise at all.
 
 ### Applied exercise: The Chisholm Trail collision
 
@@ -482,11 +455,10 @@ offer of $398,000.
 
 ## Unit: Representation of More Than One Party in a Transaction
 
-The previous unit ended with the broker standing between two clients, bound to fairness and silence.
-That is a lawful place to stand, and for some transactions it is where the brokerage stays. But it has
-an obvious cost: neither party has anybody advising them. Section 1101.560 is the Legislature's answer
-to that cost, and this unit is about how it works, who it binds, and what the parties actually get
-under each of the two available configurations.
+A broker standing between two clients, bound to fairness and silence, is in a lawful place, and for some
+transactions it is where the brokerage stays. But it has an obvious cost: neither party has anybody
+advising them. Section 1101.560 is the Legislature's answer to that cost — how it works, who it binds,
+and what the parties get under each of the two available configurations.
 
 **The text, clause by clause.** Section 1101.560 is titled "ASSOCIATED LICENSE HOLDER ACTING AS
 INTERMEDIARY," which is itself a slightly misleading heading — as you will see, the associated license
@@ -512,10 +484,9 @@ Subsection (c):
 Only the broker appoints, and only a broker who has already satisfied § 1101.559 — both parties' written
 consent, with the compensation source stated. A sales agent cannot appoint herself, cannot appoint a
 colleague, and cannot appoint anybody by agreeing with the other side's agent that they will "each just
-work our own client." That agreement, without the broker's act, is nothing.
-
-Note the ordering the statute imposes. Compliance with § 1101.559 comes first; appointment second.
-There is no lawful sequence in which appointments precede consent.
+work our own client." That agreement, without the broker's act, is nothing. Note the ordering the
+statute imposes: compliance with § 1101.559 first, appointment second. There is no lawful sequence in
+which appointments precede consent.
 
 **Who may be appointed.** "[A] license holder associated with the broker." Two constraints live in
 those five words. The appointee must be a *license holder* — a broker or sales agent licensed under
@@ -531,14 +502,13 @@ it did — the entire point of the mechanism is to give each party a person who 
 them, which is impossible if that person is the same human being holding both sets of instructions.
 
 **The two conditions in subsection (b), and the word "only."** "A license holder may be appointed under
-this section **only if**" both conditions are met. This is a closed gate, not a list of good practices.
+this section **only if**" both conditions are met — a closed gate, not a list of good practices.
 
 The first condition: "the written consent of the parties under Section 1101.559 authorizes the broker to
-make the appointment." So the consent must do two distinct jobs — authorize intermediary status, and
+make the appointment." The consent must do two distinct jobs — authorize intermediary status, and
 authorize appointments. A consent that does the first but is silent on the second permits an
-intermediary without appointments and nothing more. This is why brokerage listing and representation
-agreements ask the client to authorize appointments explicitly; the authorization is not implied by the
-intermediary authorization.
+intermediary without appointments and nothing more; the second authorization is not implied by the
+first.
 
 The second condition: "the broker provides written notice of the appointment to all parties involved in
 the real estate transaction." Four features of that clause repay attention. It is the *broker* who must
@@ -573,29 +543,24 @@ other side has its own appointee, has almost certainly also crossed § 1101.651(
 And be equally precise about what the appointment does not buy. It does not lift § 1101.651(d). Reread
 the opening words of that subsection: it binds "A broker and any broker or sales agent appointed under
 Section 1101.560 who acts as an intermediary under Subchapter L." The appointee may advise her party
-about strategy, about the condition of the property, about whether the price is supportable — but she
-may not tell her buyer that the seller will take less than list, may not tell her seller that the buyer
-would pay more than the written offer, may not disclose confidential information or information a party
-has instructed in writing not to be disclosed except under exceptions (A), (B) and (C), may not treat
-either party dishonestly, and may not violate the chapter. An appointed agent is an advisor operating
-inside a confidentiality cage. If you remember nothing else from this unit, remember that.
+about strategy, about the condition of the property, about whether the price is supportable — but every
+one of the five prohibitions, with its qualifiers and its three lettered exceptions, applies to her
+exactly as it applies to the broker. An appointed agent is an advisor operating inside a confidentiality
+cage. If you remember nothing else from this unit, remember that.
 
 **Configuration one: intermediary without appointments.** Either the consent did not authorize
 appointments, or the broker chose not to make them, or the brokerage is too small to make them — a
 situation the next unit takes up. The broker is intermediary; nobody is appointed.
 
 What the parties get: a broker who acts fairly and impartially under § 1101.559(c); who informs each
-party of material information related to the transaction, including the receipt of an offer, under
-§ 1101.557(b)(2); who at a minimum answers each party's questions and presents any offer to or from
-each party under § 1101.557(b)(3); who responds within two calendar days under Rule 535.157; and who
-conveys accurate information to the public under Rule 535.156. What they do not get is advice. Nobody in
-the brokerage will tell the buyer whether $398,000 is a good number, or tell the seller whether to
-counter at $409,000 or take it. The parties supply their own judgment, or they retain their own counsel
-or advisors outside the brokerage.
-
-That is not a failure of the system; it is the honest price of the situation. But it is a price the
-parties should understand at the front end rather than discovering it on the night an offer arrives, and
-explaining it clearly is one of the things a competent Texas licensee does at the listing appointment.
+party of material information related to the transaction, including the receipt of an offer, and at a
+minimum answers each party's questions and presents any offer to or from each party, under
+§ 1101.557(b)(2) and (3); and who responds within two calendar days under Rule 535.157. What they do not
+get is advice. Nobody in the brokerage will tell the buyer whether $398,000 is a good number, or tell
+the seller whether to counter at $409,000 or take it. The parties supply their own judgment, or they
+retain their own counsel or advisors outside the brokerage. That is the honest price of the situation,
+and it is a price the parties should understand at the front end rather than on the night an offer
+arrives.
 
 **Configuration two: intermediary with appointments.** The broker is intermediary and remains fair and
 impartial. Agent A is appointed to the seller; Agent B to the buyer. Written notice of both appointments
@@ -611,20 +576,17 @@ identical, because § 1101.651(d) governs both — but about *advice*. Without a
 negotiate unadvised through an impartial broker. With appointments, each party negotiates with a
 licensee permitted to be useful to them, inside the same silence.
 
-**Two more constraints that survive the intermediary posture.** First, broker responsibility. Rule
-535.2 — taught in full in Module 09 — makes the broker responsible for the authorized acts of sponsored
-sales agents and for acts beyond the authorized scope that the broker permits, and does not let a
-delegation of supervisory duties relinquish the broker's overall responsibility. In an intermediary
-transaction that exposure is doubled, because § 1101.803 makes the broker liable "to the commission, the
-public, and the broker's clients" for conduct engaged in by the broker or by a sales agent associated
-with or acting for the broker — and there are now clients on both sides.
-
-Second, records. Rule 535.2 requires the broker to keep, for at least four years from the date of
-closing, termination of the contract, or end of the transaction, the transaction's disclosures, the
-commission agreements relied upon to claim compensation, the substantive communications with parties,
-and the offers, contracts and related addenda. Every document this module has described — the consents,
-the appointment notices, the separate writings that release a confidence — falls inside that list, and
-four years is the floor.
+**Two more constraints that survive the intermediary posture.** Rule 535.2, taught in full in Module 09,
+supplies both. First, broker responsibility: the broker answers for the authorized acts of sponsored
+sales agents and for acts beyond that scope the broker permits, and cannot delegate away overall
+responsibility. In an intermediary transaction that exposure is doubled, because § 1101.803 makes the
+broker liable "to the commission, the public, and the broker's clients" for conduct engaged in by the
+broker or by a sales agent acting for the broker — and there are now clients on both sides. Second,
+records: the broker must keep the transaction's disclosures, commission agreements, substantive
+communications with parties, and offers, contracts and addenda for at least four years from closing,
+termination of the contract, or the end of the transaction. Every document this module has described —
+the consents, the appointment notices, the separate writings that release a confidence — falls inside
+that list.
 
 ### Statute reading exercise: The mechanics of appointment
 
@@ -666,27 +628,22 @@ party. Priya has no associated license holders. She cannot appoint herself; the 
 terms of a broker appointing someone else, and appointing herself to both parties would produce exactly
 the undivided-loyalty impossibility that Unit 1 showed cannot be performed. So Priya's only lawful
 configuration is intermediary without appointments: fair and impartial under § 1101.559(c), silent under
-§ 1101.651(d), still bound by § 1101.557(b) to inform each party of material information including the
-receipt of an offer and at a minimum to answer each party's questions and present offers, still bound to
-respond within two calendar days under Rule 535.157.
+§ 1101.651(d), still bound by § 1101.557(b) and Rule 535.157.
 
-What that means for her clients is concrete and she should say it out loud before the offer, not after:
-"From this point I will not advise either of you on price or strategy. I will carry information
-accurately, present every offer, answer questions about the property and the process, and keep each of
-your negotiating positions confidential. If you want advice on what to offer, you need to get it
-somewhere other than from me." Saying that plainly is practice, not law — no held source prescribes the
-script — but the substance of every sentence in it comes from § 1101.559(c), § 1101.651(d) and
-§ 1101.557(b).
+She should say what that means out loud before the offer, not after: "From this point I will not advise
+either of you on price or strategy. I will carry information accurately, present every offer, answer
+questions about the property and the process, and keep each of your negotiating positions confidential."
+Saying that plainly is practice, not law — no held source prescribes the script — but its substance
+comes from § 1101.559(c), § 1101.651(d) and § 1101.557(b).
 
 **The listing agent whose own buyer client wants the listing.** This is the most common version of the
-problem in a large brokerage, and it is the one people get wrong. Marisol is a sales agent at a Plano
-firm. She lists a house on Legacy Drive for the Nguyens. She also has a buyer representation agreement
-with the Halls. The Halls want the Legacy Drive house.
+problem in a large brokerage. Marisol is a sales agent at a Plano firm. She lists a house on Legacy
+Drive for the Nguyens. She also has a buyer representation agreement with the Halls, and the Halls want
+the Legacy Drive house.
 
-First, the broker — not Marisol — decides the posture, because the clients are the broker's clients
-(Rule 535.2: listings and other agreements for real estate brokerage services must be solicited and
-accepted in a broker's name) and § 1101.561(b) speaks to the broker. Assuming both written consents
-comply with § 1101.559(a), the broker acts as intermediary.
+First, the broker — not Marisol — decides the posture, because the clients are the broker's clients and
+§ 1101.561(b) speaks to the broker. Assuming both written consents comply with § 1101.559(a), the broker
+acts as intermediary.
 
 Second, can Marisol be appointed to both the Nguyens and the Halls? Read § 1101.560(a) again: one
 license holder for one party, "another license holder" for any other party. The statute describes two
@@ -701,19 +658,15 @@ to the other, with written notice of both appointments to all parties under § 1
 There is a business consequence students should see coming. If the broker appoints another agent to the
 Halls, Marisol is no longer the Halls' advisor for this house, and the split of whatever compensation
 the firm earns is a matter for the brokerage's own policies and the sponsorship agreement. Rule 535.3
-provides that "A sales agent may not receive a commission or other valuable consideration except with
-the written consent of the sales agent's sponsoring broker or the broker who sponsored the sales agent
-when the sales agent became entitled to the commission or other valuable consideration," and
-§ 1101.651(b) provides that "A sales agent may not accept compensation for a real estate transaction
-from a person other than the broker that is sponsoring the sales agent or was sponsoring the sales agent
-when the sales agent earned the compensation." How the firm divides the money is the firm's policy; that
-it flows through the broker is law.
+(Module 05) and § 1101.651(b) (Module 09) bar a sales agent from accepting compensation for a real
+estate transaction from anyone other than her sponsoring broker. How the firm divides the money is the
+firm's policy; that it flows through the broker is law.
 
 **Commercial transactions.** Nothing in Subchapter L limits the intermediary provisions to houses.
-Section 1101.551(2) defines "Party" to mean "a prospective buyer, seller, landlord, or tenant or an
-authorized representative of a buyer, seller, landlord, or tenant, including a trustee, guardian,
-executor, administrator, receiver, or attorney-in-fact," and adds that "The term does not include a
-license holder who represents a party." A broker representing both the seller and the buyer of a
+Section 1101.551(2) defines "Party" to include "a prospective buyer, seller, landlord, or tenant or an
+authorized representative" of one, "including a trustee, guardian, executor, administrator, receiver, or
+attorney-in-fact," and excludes "a license holder who represents a party." A broker representing both
+the seller and the buyer of a
 warehouse on Highway 290 in Brenham is in exactly the same statutory position as a residential broker:
 § 1101.561(b) requires the intermediary posture, § 1101.559 supplies the consent requirements, and
 § 1101.651(d) supplies the silence.
@@ -727,9 +680,9 @@ Brenham warehouse buyer, while the intermediary requirements of § 1101.559 thro
 fully. Two different rules, two different scopes; do not merge them.
 
 **Lease transactions.** The statute is written in paired terms throughout — "seller or landlord" and
-"buyer or tenant" in § 1101.651(d)(1) and (2), "a buyer or tenant" and "a seller or landlord" in
-§ 1101.561(b). A broker who represents both the landlord and the tenant of a retail suite in San Marcos
-is squarely inside Subchapter L. The confidentiality rules translate directly: the intermediary may not
+"buyer or tenant" in § 1101.651(d)(1) and (2) and in § 1101.561(b) — so a broker who represents both the
+landlord and the tenant of a retail suite in San Marcos is squarely inside Subchapter L. The
+confidentiality rules translate directly: the intermediary may not
 tell the tenant that the landlord will accept a rent less than the asking rate, absent a separate writing
 from the landlord, and may not tell the landlord that the tenant will pay more than the rent stated in
 the tenant's written offer, absent a separate writing from the tenant.
@@ -743,12 +696,10 @@ represents both landlord and tenant still requires written intermediary consent 
 § 1101.559 contains no lease exception at all.
 
 **When the license holder is on one side as a principal.** Sometimes the two-parties problem is not
-two clients but one client and yourself. Section 1101.557(c)(1) provides that for purposes of that
-section, "a license holder who has the authority to bind a party to a lease or sale under a power of
-attorney or a property management agreement is also a party to the lease or sale." If you hold that
-authority, you are not merely the agent; you are on the other side of the table.
-
-Rule 535.144 governs the related situation and is taught in Module 12: a license holder dealing on her
+two clients but one client and yourself. Section 1101.557(c)(1) provides that "a license holder who has
+the authority to bind a party to a lease or sale under a power of attorney or a property management
+agreement is also a party to the lease or sale." If you hold that authority, you are not merely the
+agent; you are on the other side of the table. Rule 535.144 governs the related situation and is taught in Module 12: a license holder dealing on her
 own account, or for a spouse, parent or child, a business entity she owns more than ten percent of, or a
 trust she serves as trustee or benefits from, "is obligated to disclose in writing that he or she is a
 licensed real estate broker or sales agent acting on his or her own behalf" in the contract of sale or
@@ -761,11 +712,11 @@ disclosure obligation of a different kind. Do not paper a self-dealing transacti
 consent and think you have solved it.
 
 **Two teams inside one large firm.** A Houston brokerage with three hundred agents will routinely have
-both sides of a transaction in house without anyone noticing until the offer arrives. Nothing about size
-changes the analysis: the clients are the broker's clients, § 1101.561(b) is triggered by the broker's
-agreement to represent both, and the consents must already be in the two representation agreements. Many
-firms maintain internal information barriers so that appointed agents on opposite sides do not share
-files, sit in on the same pipeline meetings, or use a shared transaction folder. The detailed content of
+both sides of a transaction in house without anyone noticing until the offer arrives. Size changes
+nothing: the clients are the broker's clients, § 1101.561(b) is triggered by the broker's agreement to
+represent both, and the consents must already be in the two representation agreements. Many firms
+maintain internal information barriers so that appointed agents on opposite sides do not share files or
+use a shared transaction folder. The detailed content of
 any particular firm's information barrier is practice, not law, and no held source prescribes one; what
 is law is that Rule 535.2 (Module 09) requires the broker to maintain current written policies and
 procedures, and that under § 1101.803 the broker answers for what the agents do.
@@ -798,31 +749,29 @@ your desk. Answer each using the sections cited in this module.
 
 ## Unit: Intentional versus Unintended Dual Representation
 
-Everything in this module so far has described a brokerage that *decided* to represent two parties and
-built the paperwork to do it lawfully. That is intentional. It is planned at the listing appointment,
-consented to in writing under § 1101.559(a), documented with appointment notices under § 1101.560(b)(2),
-and governed by § 1101.651(d) from the moment the two clients collide.
+Everything in this module so far has described a brokerage that *decided* to represent two parties:
+planned at the listing appointment, consented to in writing under § 1101.559(a), documented with
+appointment notices under § 1101.560(b)(2), and governed by § 1101.651(d) from the moment the two
+clients collide. That is intentional.
 
 The far more dangerous case is the one nobody decided. A licensee who intends to represent one party
 slides, conversation by conversation, into behaving like the agent of the other, until a Commission
-investigator or a plaintiff's lawyer asks the question § 1101.652(b)(7) asks: did the license holder fail
-"to make clear to all parties to a real estate transaction the party for whom the license holder is
-acting"? This unit is about that slide — how it happens, what it costs, and how to stop it.
+investigator or a plaintiff's lawyer asks what § 1101.652(b)(7) asks: did the license holder fail "to
+make clear to all parties to a real estate transaction the party for whom the license holder is acting"?
+This unit is about that slide — how it happens, what it costs, and how to stop it.
 
 **Where the line is drawn in the first place.** Section 1101.558(b) requires that "A license holder who
 represents a party in a proposed real estate transaction shall disclose, orally or in writing, that
 representation at the time of the license holder's first contact with: (1) another party to the
 transaction; or (2) another license holder who represents another party to the transaction." First
-contact. Not first offer, not first showing — first contact.
+contact. Not first offer, not first showing — first contact. Section 1101.558(b-1) then requires the
+written notice, in at least a 10-point font, at first substantive communication about specific real
+property, and 22 TAC § 531.20 adopts the Information About Brokerage Services Notice, TREC No. IABS 1-2,
+and prescribes how it is delivered. Module 02 owns the IABS. The published text of TREC No. IABS 1-2
+itself was not held for this course, so this module describes what the statute and the rule require of
+the notice and does not quote the form.
 
-Section 1101.558(b-1) then requires the written notice — in at least a 10-point font, at first
-substantive communication about specific real property — and 22 TAC § 531.20 adopts by reference the
-Information About Brokerage Services Notice, TREC No. IABS 1-2, and prescribes how it must be delivered.
-Module 02 owns the IABS and teaches both the statute's contents list and the rule's delivery mechanics.
-The published text of TREC No. IABS 1-2 itself was not held for this course, so this module describes
-what the statute and the rule require of the notice and does not quote the form.
-
-What matters for a two-sided transaction is the gate, and two features of it. First, § 1101.558(b-1)(1)
+Two features of that gate belong here. First, § 1101.558(b-1)(1)
 requires the notice to describe "the ways in which a broker can represent a party to a real estate
 transaction, **including as an intermediary**." The intermediary posture is not a surprise sprung on a
 consumer at contract time; the statute puts it in front of every Texas buyer, seller, landlord and
@@ -838,12 +787,12 @@ to represent the party or otherwise be acting as the party's agent, must give no
 must perform no other act of brokerage for the party, with the § 1101.558 disclosure or notice given
 first. Module 05 teaches § 1101.562. Two of its clauses do the work in this module.
 
-Read (a)(3) as the trap it is. "[D]oes not provide to the party opinions or advice regarding the real
-property **or real estate transactions in general**." Not just opinions about this house — opinions about
-transactions generally. "You should really get an inspection." "Around here people usually offer about
-two percent under list." "I'd ask for a survey." Each of those is advice regarding real estate
-transactions in general, and each of them, given to a party you are not representing, takes you outside
-§ 1101.562. Subsection (c) tells you what you *may* do notwithstanding (a)(3) and (4): "confirm
+Read (a)(3) as the trap it is: the broker "does not provide to the party opinions or advice regarding
+the real property **or real estate transactions in general**." Not just opinions about this house —
+opinions about transactions generally. "You should really get an inspection." "Around here people
+usually offer about two percent under list." "I'd ask for a survey." Each of those is advice regarding
+real estate transactions in general, and each, given to a party you are not representing, takes you
+outside § 1101.562. Subsection (c) tells you what you *may* do notwithstanding (a)(3) and (4): "confirm
 information to a party regarding the size, price, and terms of the real property available for sale or
 lease." That is a short list, and it is the whole list.
 
@@ -856,10 +805,9 @@ separate agreement is required once additional brokerage acts are to be provided
 Failure to enter into the required written agreement is itself a disciplinary ground —
 § 1101.652(b)(34), added by the same 2025 act.
 
-Why does a module on intermediary brokerage care about all this? Because the showing-only lane is the
-single most common place where a licensee drifts into representing someone she never meant to represent.
-The agreement says "does not represent." Then she answers three questions in the kitchen and the conduct
-says otherwise.
+The showing-only lane matters to this module because it is the single most common place where a licensee
+drifts into representing someone she never meant to represent. The agreement says "does not represent."
+Then she answers three questions in the kitchen and the conduct says otherwise.
 
 **The behaviours that cause unintended dual representation.** Here they are, named, so that you can hear
 yourself doing them.
@@ -876,25 +824,20 @@ would forbid outright.
 suggesting a closing date that suits him, telling him what to ask for in repairs. Each of those is an act
 of brokerage performed for him. Under § 1101.562(a)(4) it puts you outside the non-representation lane.
 Under § 1101.563(b) it triggers the written-agreement requirement if the property is residential. And
-under Rule 531.2 it is flatly inconsistent with the rule's first demand, that "the primary duty of the
-license holder is to represent the interests of the client, and the license holder's position, in this
-respect, should be clear to all parties concerned in a real estate transaction."
+it is flatly inconsistent with Rule 531.2's demand that the license holder's primary duty be to the
+client's interests and that the license holder's position be clear to all parties.
 
 *Disclosing your client's motivation.* "They've already moved to Georgetown." "They need to close by the
 fifteenth." "They've had it on the market a while." Each sentence hands the other side leverage. If you
 are your seller's agent, Rule 535.156 requires you to put her interest above your own and owe her a duty
-of fidelity, and you have done the opposite. If you are an intermediary or an appointed agent, § 1101.
-651(d)(1) forbids disclosing that the seller will accept less than the asking price and § 1101.651(d)(3)
-forbids disclosing confidential information or information the party has instructed you in writing not
-to disclose — with the only exits being a separate writing from that party, a legal requirement or court
-order, or information that materially relates to the condition of the property. A moving date is none of
-those.
+of fidelity, and you have done the opposite. If you are an intermediary or an appointed agent, § 1101.651(d)(1) and (3) forbid it — and the only exits are a
+separate writing from that party, a legal requirement or court order, or information that materially
+relates to the condition of the property. A moving date is none of those.
 
 *Answering "what will they take?"* This is the same violation in interrogative form, and the correct
 answer is a sentence you should have ready: "I'm not able to share that. If you'd like to make an offer,
-I'll present it promptly." Section 1101.557(b)(3) obliges a broker who represents a party to at a
-minimum answer the party's questions and present any offer to or from the party — that is your duty to
-your own client. It is not a duty to answer the other side's questions about your client's position.
+I'll present it promptly." The § 1101.557(b)(3) duty to answer questions and present offers runs to your
+own client. It is not a duty to answer the other side's questions about your client's position.
 
 *Letting the relationship drift over weeks.* You show a buyer eleven houses on a showing-only agreement
 that, under § 1101.563(e)(2), cannot state a termination date more than fourteen days out and, under
@@ -903,31 +846,24 @@ and negotiating on his behalf. The paper says one thing; the conduct says anothe
 required a separate agreement the moment additional brokerage acts were to be provided.
 
 *Talking directly to the other side's client.* Section 1101.652(b)(22) makes it grounds for discipline
-to negotiate or attempt to negotiate the sale, exchange, or lease of real property "with an owner,
-landlord, buyer, or tenant with knowledge that that person is a party to an outstanding written contract
-that grants exclusive agency to another broker in connection with the transaction." Section 1101.557(b)(1)
-forbids a broker who represents a party from instructing another broker to violate that subdivision
-directly or indirectly. Section 1101.557(c)(3) supplies a narrow carve-out for delivery alone: the sole
-delivery of an offer to a party does not violate § 1101.652(b)(22) if the party's broker consents to the
-delivery, a copy of the offer is sent to the party's broker unless a governmental agency using a sealed
-bid process does not allow it, and the person delivering the offer does not engage in another activity
-that directly or indirectly violates § 1101.652(b)(22). Note how tightly drawn that is: consent, a copy
-to the broker, and nothing else.
+to negotiate the sale, exchange or lease of real property with a party known to be under an outstanding
+written contract granting exclusive agency to another broker, and § 1101.557(b)(1) forbids a broker who
+represents a party from instructing another broker to violate that subdivision. Section 1101.557(c)(3)
+supplies a narrow carve-out for delivery alone: the sole delivery of an offer does not violate (b)(22)
+if the party's broker consents to the delivery, a copy goes to that broker unless a governmental sealed
+bid process forbids it, and the deliverer does nothing else that violates (b)(22). Note how tightly
+drawn that is: consent, a copy to the broker, and nothing else.
 
 **The disciplinary exposure, quantified.** Unintended dual representation is not a soft error. The two
 grounds it triggers directly are § 1101.652(b)(7), failing "to make clear to all parties to a real estate
 transaction the party for whom the license holder is acting," and § 1101.652(b)(8), receiving
-"compensation from more than one party to a real estate transaction without the full knowledge and
-consent of all parties to the transaction." Under 22 TAC § 535.191 both sit in the $500 to $3,000 per
-violation per day band — one band *below* the intermediary provisions themselves, since § 1101.558,
-§ 1101.559(a) and (c), § 1101.560, § 1101.561(b) and § 1101.651 each draw $1,000 to $5,000 per violation
-per day. Failing to get the § 1101.563 written agreement, § 1101.652(b)(34), sits at $100 to $1,500.
-Module 10 owns § 1101.652 and the whole of the § 535.191 schedule — including the enhancement for a
-history of previous violations, the § 1101.702 cap and its factors, and the Commission's power to suspend
-or revoke instead of or in addition to a penalty. What you should carry out of this module is that each
-day a violation continues may be counted as a separate violation, so a transaction that ran forty days
-from first substantive communication to closing without the required written consent is not one
-violation.
+compensation from more than one party without the full knowledge and consent of all parties. Under
+22 TAC § 535.191 both sit in the $500 to $3,000 per violation per day band — one band *below* the
+intermediary provisions themselves, since § 1101.558, § 1101.559(a) and (c), § 1101.560, § 1101.561(b)
+and § 1101.651 each draw $1,000 to $5,000 per violation per day. Module 10 owns § 1101.652 and the whole
+of the § 535.191 schedule, together with the § 1101.702 cap and the factors that set an amount. Carry
+this much out of it: each day a violation continues may be counted as a separate violation, so a
+transaction that ran forty days without the required written consent is not one violation.
 
 Two more exposures complete the picture. Section 1101.803: "A licensed broker is liable to the
 commission, the public, and the broker's clients for any conduct engaged in under this chapter by the
@@ -938,28 +874,24 @@ relieve the person from civil or criminal liability." The Commission's penalty i
 **Telling the two situations apart in practice.** The intentional case has documents: an intermediary
 authorization in each representation agreement with the § 1101.651(d) prohibitions in conspicuous bold or
 underlined print, the source of expected compensation stated, appointment notices in writing to all
-parties, and a file that Rule 535.2 requires the broker to keep for at least four years from closing,
-termination of the contract, or the end of the transaction. The unintended case has none of that, because
+parties, and the retained file Rule 535.2 requires. The unintended case has none of that, because
 nobody decided anything — there are only text messages in which a licensee gave advice to somebody she
 had never agreed to represent.
 
 **What to do when you realise you have drifted.** The following is professional practice, not a statutory
-procedure, and no held source prescribes it. Stop the conversation. Tell your broker the same day —
-Rule 535.2 makes the broker responsible for your authorized acts and for acts beyond the scope she
-authorized if she permitted them. Then let the broker decide the posture: either the
+procedure, and no held source prescribes it. Stop the conversation and tell your broker the same day;
+Rule 535.2 makes the broker responsible for your acts. Then let the broker decide the posture: either the
 brokerage obtains the written consents § 1101.559(a) requires and proceeds as intermediary — with
-appointments if the consents authorize them and written notice under § 1101.560(b)(2) — or the brokerage
-withdraws from one side. What you may not do is keep going and hope. Section 1101.651(d)(5) makes any
-violation of the chapter a violation of the intermediary prohibition, and § 1101.652(b)(2) reaches
-conduct that merely "demonstrates untrustworthiness."
+appointments if the consents authorize them and written notice under § 1101.560(b)(2) — or it withdraws
+from one side. What you may not do is keep going and hope. Section 1101.651(d)(5) makes any violation of
+the chapter a violation of the intermediary prohibition.
 
 **The sentence to keep in your mouth.** When a stranger at your listing asks you a question that only
 their own agent should answer, the safe reply names your side and offers the service you are permitted to
 give: "I represent the seller here, so I'm not able to advise you on what to offer. I can confirm the
-size, the price and the terms, and I'll present any offer you make promptly." Every clause of that
-sentence is doing statutory work — the first from § 1101.558(b), the second from § 1101.562(a)(3), the
-third from § 1101.562(c), the fourth from § 1101.557(b)(3). Practise it until it is automatic, because
-the moment you need it is never a moment you saw coming.
+size, the price and the terms, and I'll present any offer you make promptly." Every clause is doing
+statutory work — the first from § 1101.558(b), the second from § 1101.562(a)(3), the third from
+§ 1101.562(c), the fourth from § 1101.557(b)(3).
 
 ### Applied exercise: The open house on Guadalupe Street
 
