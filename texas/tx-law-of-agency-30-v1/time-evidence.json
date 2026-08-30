@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 105536,
+    "proseWords": 105723,
     "statuteReadingExercises": 20,
     "appliedExercises": 24,
     "moduleRecaps": 12,
     "exerciseWords": 12199,
     "recapWords": 13299,
-    "totalWords": 135224
+    "totalWords": 135411
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,10 +28,10 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "105,536 words at 140 wpm",
-      "seconds": 45229.71428571428,
+      "basis": "105,723 words at 140 wpm",
+      "seconds": 45309.857142857145,
       "measured": true,
-      "minutes": 753.8
+      "minutes": 755.2
     },
     {
       "segment": "required document review (statute reading exercises)",
@@ -83,14 +83,14 @@
       "minutes": 20
     }
   ],
-  "requiredMinutes": 1530.8,
+  "requiredMinutes": 1532.2,
   "layers": {
     "topicInstruction": {
-      "seconds": 90650,
-      "minutes": 1510.8,
+      "seconds": 90730,
+      "minutes": 1512.2,
       "prescribedSeconds": 90000,
       "prescribedMinutes": 1500,
-      "varianceMinutes": 10.8,
+      "varianceMinutes": 12.2,
       "note": "Official LOA-1 topic time, T01-T12. Each topic allocation is a topic-specific minimum; no topic's surplus may cure another's shortfall."
     },
     "courseLevelCapstone": {
@@ -99,13 +99,13 @@
       "note": "Required, but attributed to no topic. Not used to satisfy any topic's allocation."
     },
     "grandRequired": {
-      "seconds": 91850,
-      "minutes": 1530.8,
+      "seconds": 91930,
+      "minutes": 1532.2,
       "note": "Layer 1 plus layer 2. The segment table equals this figure, not the topic total."
     }
   },
   "topicsBelowAllocation": [],
-  "varianceMinutes": 30.8,
+  "varianceMinutes": 32.2,
   "meetsPrescribed": true,
   "everyTopicMeetsItsAllocation": true,
   "conditional": [
@@ -135,8 +135,8 @@
     },
     {
       "segment": "mastery review",
-      "basis": "105,536 words at 60 wpm",
-      "minutes": 1759,
+      "basis": "105,723 words at 60 wpm",
+      "minutes": 1762,
       "reason": "an upper bound on diligent study, never required time"
     },
     {
@@ -206,9 +206,9 @@
       "topic": "Duties and Disclosures to Third Parties",
       "units": 6,
       "prescribedMinutes": 125,
-      "sha256": "5449072c6177f09e7904a469942ef5965f6ddd6525a6d84cb3fa4b833b4d585c",
-      "totalWords": 11540,
-      "proseWords": 7893,
+      "sha256": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec",
+      "totalWords": 11558,
+      "proseWords": 7911,
       "statuteReadingExercise": 1,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -218,13 +218,13 @@
       "optionalReferenceWords": 1520,
       "quizItems": 6,
       "scenarios": 1,
-      "readingSeconds": 3382.714285714286,
+      "readingSeconds": 3390.4285714285716,
       "activitySeconds": 4140,
-      "requiredSeconds": 7522.714285714286,
-      "readingMinutes": 56.4,
+      "requiredSeconds": 7530.428571428572,
+      "readingMinutes": 56.5,
       "activityMinutes": 69,
-      "requiredMinutes": 125.4,
-      "varianceMinutes": 0.4,
+      "requiredMinutes": 125.5,
+      "varianceMinutes": 0.5,
       "meetsAllocation": true
     },
     {
@@ -368,7 +368,7 @@
       "topic": "Employment Issues",
       "units": 6,
       "prescribedMinutes": 120,
-      "sha256": "be2c3bebc1f3cf307c84e073bc5939f2f1d05fa11dce45a3721e86f3adbffc77",
+      "sha256": "453538cccfff62f1bee20d0da8cabb46decd3e5961351eff25b4fbf65b4effef",
       "totalWords": 9790,
       "proseWords": 7205,
       "statuteReadingExercise": 1,
@@ -395,9 +395,9 @@
       "topic": "Agency, Ethics and the Law",
       "units": 5,
       "prescribedMinutes": 155,
-      "sha256": "544bf9a4dfdf980a3176267fdb5e8d0ebb558d0e56c88ceb8270958f16560e52",
-      "totalWords": 16248,
-      "proseWords": 13059,
+      "sha256": "8ab97a3ce61210b7225260bedd88be7890964e83e9abde944031b58feb485eae",
+      "totalWords": 16254,
+      "proseWords": 13065,
       "statuteReadingExercise": 2,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -407,9 +407,9 @@
       "optionalReferenceWords": 638,
       "quizItems": 5,
       "scenarios": 0,
-      "readingSeconds": 5596.714285714285,
+      "readingSeconds": 5599.285714285714,
       "activitySeconds": 3720,
-      "requiredSeconds": 9316.714285714286,
+      "requiredSeconds": 9319.285714285714,
       "readingMinutes": 93.3,
       "activityMinutes": 62,
       "requiredMinutes": 155.3,
@@ -422,9 +422,9 @@
       "topic": "Deceptive Trade Practices and Consumer Protection Act",
       "units": 5,
       "prescribedMinutes": 140,
-      "sha256": "f9b8656f276fcfd8c7be5e1904f81c480a04e831b7bd17419bc9e7178a7818ed",
-      "totalWords": 11677,
-      "proseWords": 8608,
+      "sha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+      "totalWords": 11840,
+      "proseWords": 8771,
       "statuteReadingExercise": 2,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -434,13 +434,13 @@
       "optionalReferenceWords": 476,
       "quizItems": 5,
       "scenarios": 1,
-      "readingSeconds": 3689.1428571428573,
+      "readingSeconds": 3759,
       "activitySeconds": 4740,
-      "requiredSeconds": 8429.142857142857,
-      "readingMinutes": 61.5,
+      "requiredSeconds": 8499,
+      "readingMinutes": 62.6,
       "activityMinutes": 79,
-      "requiredMinutes": 140.5,
-      "varianceMinutes": 0.5,
+      "requiredMinutes": 141.7,
+      "varianceMinutes": 1.6,
       "meetsAllocation": true
     },
     {

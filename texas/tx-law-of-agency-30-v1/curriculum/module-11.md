@@ -701,6 +701,17 @@ So a § 17.46(b)(5) misrepresentation about square footage is also, by rule, a "
 the Commission may suspend or revoke for. The two tracks are not merely parallel — they share their
 definitions.
 
+The same rule carries a second ground that catches licence holders through their marketing. Section
+1101.652(b)(14) reaches a licence holder who conducts a lottery, and the first paragraph of 22 TAC
+§ 535.149 supplies the elements: "the award or distribution of a prize or prizes by chance and the
+payment of consideration for the opportunity to win the prize." Both elements are required, which is
+why the rule's second paragraph can say that "[t]he giving of gifts as an inducement for prospective
+clients does not violate this section or §1101.652(b)(14) of the Act" — a gift asks no consideration,
+so there is nothing to win. The proviso that follows is the part to remember: licence holders "when
+procuring prospects must otherwise comply with the provisions of §535.20 of this title," the referral
+rule Module 09 teaches. A drawing that asks entrants to pay anything, or to buy anything, supplies the
+consideration the definition wants and turns a marketing idea into a disciplinary ground.
+
 **The rule that states the ethical duty directly.** Rule 22 TAC § 535.156, which Module 02 teaches,
 resolves most DTPA questions before they become questions: "A license holder has a duty to convey
 accurate information to members of the public with whom the license holder deals." Not to clients. To
