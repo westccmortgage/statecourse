@@ -196,12 +196,18 @@ check("exam", 20, "the Principles I examination bank exists and meets the form c
 check("delivery", 30, "the distance-delivery controls are sourced, not merely written down", () => {
   /* This check granted the gate on 2026-08-27 because a file existed. A specification that says
      seventeen times that its requirement is UNREAD is not a delivery design; it is a list of things
-     nobody has looked up. So the gate now counts them. */
+     nobody has looked up. So the gate now counts them.
+
+     2026-08-30: TREC's published copies of §§ 535.62 and 535.65 are now held and hashed, and the
+     controls that were unread because 22 TAC was unreachable have been re-cited to them. What
+     remains is the REALM distance-course application, which nobody has opened. The message no
+     longer blames the codified text for that. This check does NOT clear on held-but-not-codified
+     text either way: TX_PROVIDER_RULE_SOURCE_LOCK is the gate for that and still FAILS. */
   const spec = "texas/submission/distance-delivery-controls.md";
   const body = read(spec);
   require_(body, `${spec} does not exist`);
   const unread = (body.match(/UNREAD/g) ?? []).length;
-  require_(unread === 0, `${unread} distance-delivery control(s) still name an unread requirement — 22 TAC § 535.65 has not been read in its codified text`);
+  require_(unread === 0, `${unread} distance-delivery control(s) still name a source nobody has opened — see the row(s) marked UNREAD in ${spec}`);
   return "every control names a source that has been read";
 });
 

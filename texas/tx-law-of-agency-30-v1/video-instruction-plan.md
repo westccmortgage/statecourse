@@ -4,8 +4,29 @@
 **Course approval form:** LOA-1, revision 09/11/2024 — 12 topics, 57 units, 1,500 prescribed minutes.
 Transcribed at `config/texas/law-of-agency-course-form.mjs`; held at `texas/trec-sources/LOA-1.pdf`.
 **Plan date:** 2026-08-30
-**Overall status:** three videos selected, one rejected. All three are **scripted, prompted, placed —
-and not rendered, and therefore not displayed anywhere.** See §6.
+**Plan revision:** **v2 — 2026-08-30.** This revision supersedes plan v1, which is the byte-state
+sha256 `7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403` (29,239 bytes).
+**Plan v1 is SUPERSEDED.** It was correct when written and is wrong in four particulars now — three
+durations, the availability of the block maps, and the existence of the caption files on disk. Those
+particulars are corrected throughout this file and every one of them is itemised in §11. A renderer
+must work from this file. v1's hash is preserved in `video-plan-freeze.json` under
+`supersedes`, so anyone holding the old artifact can identify what they hold.
+
+**Freeze:** this plan and everything a render depends on are hashed by
+**`LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,
+written by `scripts/freeze-loa-video-plan.mjs`). The curriculum freeze hashes *that artifact*, not
+this file — so correcting a video no longer requires breaking a curriculum freeze. See §12.
+
+**Overall status — four layers, and no layer borrows another's status:**
+
+| Layer | Status |
+|---|---|
+| Editorial and legal package (script, prompt, storyboard, transcript, captions, coordinates, poster spec) | **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` |
+| Rendered MP4 / shipping VTT / poster assets | **PENDING** — nothing is rendered |
+| `screenMedia` integration support in the Texas generator | **PENDING** — the hook does not exist |
+| Course placement activation | **NOT ACTIVE** — no block map references any video |
+
+"Production-ready" is not a status this plan uses. See §6.
 
 ---
 
@@ -57,7 +78,8 @@ definition of "client" that the Act itself never supplies; the several licence-n
 explain why a completed notice carries more than one; and the sentence at the foot stating that the
 notice "does not create an obligation for you to use the broker's services."
 
-**Placement:** Module 02, T02U5, instruction screen `t02u5-s1`. **Duration:** ≈ 3:01.
+**Placement:** Module 02, T02U5, instruction screen `t02u5-s1` — confirmed against the live block
+map (§5). **Duration:** ≈ 3:30, derived from the caption timeline (§3).
 **Production file:** `video-production/iabs-1-2-document-overview.md`.
 
 ---
@@ -93,7 +115,8 @@ AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS` and `A LICENSE HOLDER CAN SHOW PR
 REPRESENTING …` — and nothing else from the form. No block of the document is taught twice. This is
 the same discipline the Loan Estimate series used across three pages of one document.
 
-**Placement:** Module 05, T05U3, instruction screen `t05u3-s1`. **Duration:** ≈ 2:53.
+**Placement:** Module 05, T05U3, instruction screen `t05u3-s1` — confirmed against the live block
+map (§5). **Duration:** ≈ 3:03, derived from the caption timeline (§3).
 **Production file:** `video-production/representation-or-showing-only-2026.md`.
 
 ---
@@ -129,7 +152,8 @@ which is that the notice is a *summary* — the statute carries qualifiers the f
 including that confidentiality never covers information materially relating to the condition of the
 property.
 
-**Placement:** Module 06, T06U3, instruction screen `t06u3-s1`. **Duration:** ≈ 3:10.
+**Placement:** Module 06, T06U3, instruction screen `t06u3-s1` — confirmed against the live block
+map (§5). **Duration:** ≈ 3:20, derived from the caption timeline (§3).
 **Production file:** `video-production/intermediary-brokerage.md`.
 
 ---
@@ -183,15 +207,37 @@ accessible, searchable, printable — not a video.
 
 | # | Video | Topic · Unit | Module · screen | Duration | What it does that text cannot |
 |---|---|---|---|---|---|
-| 1 | **IABS 1-2 Document Overview** | T02 · T02U5 | Module 02, instruction screen `t02u5-s1` | ≈ 3:01 | Shows the held official form. § 531.20's verbatim/spacing/borders reproduction rule is a rule about a visual artefact, and Module 02 states it while expressly declining to reproduce the form's language. The student cannot apply the rule without seeing what it protects. |
-| 2 | **Representation or Showing Only: the 2026 decision** | T05 · T05U3 | Module 05, instruction screen `t05u3-s1` | ≈ 2:53 | Puts a branching decision into its real order of operations — choose posture, paper it, make the right disclosure, then show — and delivers the hallway sentence as an act of professional judgment rather than as italicised prose. |
-| 3 | **Texas Intermediary Brokerage** | T06 · T06U3 | Module 06, instruction screen `t06u3-s1` | ≈ 3:10 | Holds both configurations in one frame so the constant (confidentiality) and the variable (advice) are visible together, and corrects "dual agency" spoken, up front, where prior knowledge is actively wrong. |
+| 1 | **IABS 1-2 Document Overview** | T02 · T02U5 | Module 02, instruction screen `t02u5-s1` | ≈ 3:30 | Shows the held official form. § 531.20's verbatim/spacing/borders reproduction rule is a rule about a visual artefact, and Module 02 states it while expressly declining to reproduce the form's language. The student cannot apply the rule without seeing what it protects. |
+| 2 | **Representation or Showing Only: the 2026 decision** | T05 · T05U3 | Module 05, instruction screen `t05u3-s1` | ≈ 3:03 | Puts a branching decision into its real order of operations — choose posture, paper it, make the right disclosure, then show — and delivers the hallway sentence as an act of professional judgment rather than as italicised prose. |
+| 3 | **Texas Intermediary Brokerage** | T06 · T06U3 | Module 06, instruction screen `t06u3-s1` | ≈ 3:20 | Holds both configurations in one frame so the constant (confidentiality) and the variable (advice) are visible together, and corrects "dual agency" spoken, up front, where prior knowledge is actively wrong. |
 
-**Total optional video time across the whole 30-hour course: ≈ 9 minutes 04 seconds.**
+**Total optional video time across the whole 30-hour course: ≈ 9 minutes 53 seconds.**
 
-Durations are estimates computed from word count at 150 words per minute, the delivery rate of the
-existing series. They are replaced by measured durations after each render arrives, and no
-student-facing surface states a duration until it has been measured.
+**Where these numbers come from, and why they are not asserted twice.** Every duration in this plan
+and in the three production files is **derived from that video's caption file** — the cue timeline in
+`video-production/captions/tx-*.provisional.vtt`. A scene's duration is the end of its last cue minus
+the start of its first, and a video's duration is the end of its last cue. The scene is matched to its
+cues by comparing the scene's narration against the cue text, so the two cannot drift apart without
+the match failing. `scripts/validate-loa-video-packages.mjs` check 3 recomputes all of it from the
+caption files and fails on any disagreement.
+
+The cue timings themselves are provisional — computed at 150 words per minute, the delivery rate of
+the existing series, with a 1.4-second readability floor on very short cues — so every duration
+resting on them is provisional too. **None is a measurement.** They are replaced by measured durations
+after each render arrives, and no student-facing or reviewer-facing surface states a duration until it
+has been measured.
+
+**These figures moved in plan v2, and here is why.** v1 gave ≈ 3:01 / 2:53 / 3:10, total ≈ 9:04. Two
+things were wrong with that. The nine narration repairs recorded in each production file's §14
+restored the form's and the statute's full printed wording where earlier drafts had compressed it, and
+full wording takes longer to say. And v1's own figures were internally inconsistent: Video 1's scene
+table totalled 3:01 while Video 1's own caption block ran to 3:17. Deriving every figure from one
+source removed the possibility of that inconsistency rather than correcting one instance of it.
+
+**No time budget changed.** The ≈ 9 minutes 53 seconds sit entirely outside LOA-1's prescribed 1,500
+minutes — see the closing subsection of §7. T02U5 keeps its 20 prescribed minutes, T05U3 its 30 and
+T06U3 its 30. No figure in `config/texas/law-of-agency-time-budget.mjs` was read as changeable, none
+was changed, and none was reduced to make room for a video.
 
 ### One document, divided three ways
 
