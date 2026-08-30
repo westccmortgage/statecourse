@@ -531,7 +531,7 @@ who leads, supervises, directs or manages a team to be delegated as a supervisor
 delegation to be in writing, and requires the broker to name each delegated supervisor to the
 Commission "within 30 days of any such delegation that has lasted or is anticipated to last more
 than three consecutive months." If you join a team in Houston, somebody on that team is a delegated supervisor, and that
-delegation is a written, reportable act. Module 09 teaches 22 TAC § 535.2; Module 12 teaches
+delegation is a written, reportable act. Module 09 teaches the supervision rule; Module 12 teaches
 § 1101.552.
 
 **The customer.** A customer, in the working vocabulary of Texas practice, is a person you deal with
@@ -728,7 +728,7 @@ than a contract to perform property management services, in which the license ho
 perform services for which a licence is required. Read the qualifier: the termination date must be
 definite *and* not subject to prior notice, so a clause that runs the listing until one side gives
 thirty days' notice does not satisfy it. Module 07 teaches creation and termination; Module 10
-teaches § 1101.652.
+teaches the disciplinary grounds.
 
 The common-law rules on how an agency terminates by operation of law — death, incapacity,
 destruction of the subject matter, expiration of a reasonable time — were not held for this course
@@ -750,10 +750,10 @@ informed is affirmative; and the license holder must deal honestly and fairly wi
 broker "owes the highest fiduciary obligation to the principal," and then qualifies it "unless
 prohibited by other law" — fair housing law and the confidentiality obligations elsewhere in this
 chapter can prohibit a disclosure the fiduciary duty would otherwise compel. Module 02 teaches 22
-TAC §§ 531.2 and 535.156; Module 09 teaches 22 TAC § 535.2.
+TAC §§ 531.2 and 535.156; Module 09 teaches the broker's rule.
 
 What this unit needs from those rules is their shape. The standard attaches to the relationship, not
-to the paperwork: § 531.2 imposes it on a license holder "while acting as an agent for another." You
+to the paperwork: the rule imposes it on a license holder "while acting as an agent for another." You
 do not become a fiduciary when the agreement is signed. You become one when you start acting for
 somebody.
 
@@ -818,7 +818,7 @@ coaching from an experienced license holder the first three times a sales agent 
 brokerage activity, a two-calendar-day duty to respond to sponsored sales agents, and four-year
 retention of the disclosures, commission agreements, substantive communications and sponsorship
 agreements a transaction generates. Every agency document you produce becomes a record in your
-broker's file. Module 09 teaches § 535.2 in full.
+broker's file. Module 09 teaches that rule in full.
 
 And when the relationship ends, it ends formally. Section 1101.367(a) provides: "When the
 relationship of a sales agent with the sales agent's sponsoring broker terminates, the terminating
@@ -936,6 +936,6 @@ requires sponsorship and conduct for that broker, § 1101.803 puts your conduct 
 licence, and § 1101.367(a) puts your licence on inactive status the moment the sponsorship ends.
 Carry the three questions — who does my broker represent, has that been made clear to everyone, and
 what have I put in writing with an ending date — into every file. Module 02 takes up the fiduciary
-duties and the IABS notice, Module 09 takes up 22 TAC § 535.2 and broker responsibility, and Module
+duties and the IABS notice, Module 09 takes up broker responsibility, and Module
 10 takes up § 1101.652; the rest of this course will make sense once this module's vocabulary is
 secure.

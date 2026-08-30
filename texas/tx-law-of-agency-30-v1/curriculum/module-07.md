@@ -589,14 +589,13 @@ forms, so that a departing sales agent who wipes a phone has destroyed the broke
 *sponsorship agreements between the broker and sponsored sales agents*, so that the paperwork of the
 relationship you just ended is itself a four-year record.
 
-Keeping records is not the same as keeping the client's property. Section 1101.652(a)(5) reaches a
-license holder who "fails to surrender to the owner, without just cause, a document or instrument that
-is requested by the owner and that is in the license holder's possession," and § 1101.652(b)(28) one
-who "fails or refuses to provide, on request, a copy of a document relating to a real estate
-transaction to a person who signed the document." Both survive termination on their face: neither is
-limited to a live agency. Refusing to hand back an owner's document because you are in a dispute about
-a fee is precisely the conduct § 1101.652(a)(5) describes, and being owed money is unlikely to be the
-"just cause" the statute contemplates.
+Keeping records is not the same as keeping the client's property. Two grounds in § 1101.652, taught
+in Module 10, survive termination on their face because neither is limited to a live agency:
+subsection (a)(5) reaches a failure to surrender to the owner, "without just cause," a document the
+owner requests and the license holder holds, and (b)(28) reaches a refusal to give a person who
+signed a transaction document a copy of it on request. Refusing to hand back a former seller's survey
+because you are in a fee dispute is precisely the conduct (a)(5) describes, and being owed money is
+unlikely to be the "just cause" the statute contemplates.
 
 ### Statute reading exercise: What § 1101.651(d) does and does not say
 

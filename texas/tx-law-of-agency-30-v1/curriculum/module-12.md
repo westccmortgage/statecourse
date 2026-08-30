@@ -863,14 +863,14 @@ cause for an investigation"; it may not initiate an investigation on an anonymou
 not investigate a complaint submitted later than the fourth anniversary of the incident; and it must
 promptly give written notice to the license holder under investigation unless after deliberation it
 decides against notification. Complaints are then triaged into three levels by 22 TAC § 535.141,
-with a 10,000 dollar line between Level 1 and Level 2 fraud and with unlicensed activity always at
-Level 1 regardless of amount.
+taught in Module 10, with a 10,000 dollar line between Level 1 and Level 2 fraud and with unlicensed
+activity always at Level 1 regardless of amount.
 
 Two consequences to absorb now. A complaint that names a sales agent but not the sponsoring broker
 is, under 22 TAC § 535.141, also a complaint against that broker for the limited purpose of
 determining the broker's involvement and whether the broker met the broker's professional
-responsibilities — and § 1101.803 makes the broker liable to the Commission, the public and clients
-for your conduct. Your mistake is your broker's problem by operation of statute, which is why
+responsibilities — and § 1101.803, taught in Module 09, makes the broker liable to the Commission,
+the public and clients for your conduct. Your mistake is your broker's problem by operation of statute, which is why
 brokers write policies and why you follow them. Second, § 1101.652(a)(4) makes it an independent
 ground for discipline to fail to provide, within a reasonable time, information the Commission
 requests in connection with a complaint. A licence is more often lost for ignoring the letter than
@@ -898,9 +898,10 @@ second working day after receipt, and provable from a bank statement.
 *Authority and interference* — § 1101.652(b)(18) through (b)(22): a sign without written consent,
 offering property without the owner's knowledge and consent, offering on unauthorised terms,
 inducing a party to break a contract in order to substitute a new one, and negotiating with a party
-you know is under an exclusive agency with another broker. On that last one, 22 TAC § 535.153 draws
-the line precisely: soliciting a listing from an owner whose property is subject to another broker's
-exclusive listing is permitted; negotiating the present transaction is not.
+you know is under an exclusive agency with another broker. On that last one, 22 TAC § 535.153,
+taught in Module 04, draws the line precisely: soliciting a listing from an owner whose property is
+subject to another broker's exclusive listing is permitted; negotiating the present transaction is
+not.
 
 *Paperwork that was supposed to exist* — § 1101.652(a-1)(3), (b)(12), (b)(28), (b)(29) and (b)(34):
 the wrong form, no termination date, no copy provided on request, no written title advisory, no
@@ -937,9 +938,9 @@ nulla bona and a perfected judgment lien, and only up to 125,000 dollars for all
 a single transaction and 250,000 dollars against a single license holder "until the license or
 certificate holder has reimbursed the trust account for all amounts paid." The fund pays the
 consumer and then looks to you. The DTPA, Business & Commerce Code ch. 17 and Module 11, lets a
-consumer recover economic damages, adds mental anguish and up to treble damages where the conduct
-was knowing or intentional, and awards court costs and reasonable and necessary attorney's fees to
-a prevailing consumer. And § 1101.805, taught in Module 03, allocates responsibility for
+consumer recover economic damages under § 17.50(b)(1), adds mental anguish and up to treble damages
+where the conduct was knowing or intentional, and awards court costs and reasonable and necessary
+attorney's fees to a prevailing consumer under § 17.50(d). And § 1101.805, taught in Module 03, allocates responsibility for
 misrepresentation between you and your client on two elements — knowledge of the falsity and failure
 to disclose that knowledge. The practical reading: you are not an insurer of your seller's
 statements, but the moment you know a statement is false, staying quiet makes it yours. Suit for
