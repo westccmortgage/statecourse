@@ -54,9 +54,14 @@ export const COURSE = Object.freeze({
   paymentEnabled: false,
   creditReportingEnabled: false,
   certificateIssuanceEnabled: false,
-  finalExaminationExists: false,
+  /* The examination now EXISTS — config/texas/law-of-agency-final-exam-bank.mjs carries 132 secure
+     items and config/texas/law-of-agency-final-exam-forms.mjs assembles four versions of 60. It is
+     still not ADMINISTRABLE: the codified 22 TAC provider rules remain unread,
+     TX_PROVIDER_RULE_SOURCE_LOCK still FAILS, and no student may be served an attempt. Those are two
+     separate facts and this record keeps them separate rather than collapsing them into one flag. */
+  finalExaminationExists: true,
   finalExaminationAdministrable: false,
-  finalExaminationStatus: "NOT_BUILT_PENDING_TAC_RULES",
+  finalExaminationStatus: "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES",
   trecApprovalStatus: "NOT_SUBMITTED_NOT_APPROVED",
 });
 
@@ -216,6 +221,9 @@ if (COURSE.enrollmentEnabled || COURSE.paymentEnabled || COURSE.creditReportingE
 }
 if (COURSE.finalExaminationAdministrable) {
   throw new Error("law-of-agency-course: no examination is administrable while the codified 22 TAC provider rules remain unread");
+}
+if (COURSE.finalExaminationExists && COURSE.finalExaminationStatus !== "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES") {
+  throw new Error("law-of-agency-course: an examination that exists but cannot be administered must say so in its status");
 }
 
 export default Object.freeze({ COURSE, MODULES, UNIT_OBJECTIVES, UNIT_TRACE });

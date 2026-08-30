@@ -214,8 +214,12 @@ test("Law of Agency claims no approval and enables nothing downstream of content
   assert.equal(COURSE.paymentEnabled, false);
   assert.equal(COURSE.creditReportingEnabled, false);
   assert.equal(COURSE.certificateIssuanceEnabled, false);
-  assert.equal(COURSE.finalExaminationExists, false);
+  /* The examination exists and is still not administrable. Asserting both keeps the two facts
+     apart: a build that quietly flipped `administrable` alongside `exists` would pass a test that
+     checked only one of them. */
+  assert.equal(COURSE.finalExaminationExists, true);
   assert.equal(COURSE.finalExaminationAdministrable, false);
+  assert.equal(COURSE.finalExaminationStatus, "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES");
   assert.match(FREEZE.notApproved, /holds no TREC approval/i);
 });
 

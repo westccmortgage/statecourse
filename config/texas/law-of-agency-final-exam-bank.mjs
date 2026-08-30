@@ -159,6 +159,151 @@ export const UNIT_ANCHORS = Object.freeze({
    minutes) is held up by the floor. */
 export const MIN_ITEMS_PER_TOPIC = 6;
 
+/* ── What each item asks the candidate to DECIDE. ──────────────────────────────────────────────
+   Authored as one block rather than scattered across 132 item literals, because a reviewer asking
+   "what judgment does this instrument actually test?" wants to read the answer as a list, and
+   because a completeness invariant over a map is checkable at a glance in a way 132 optional
+   fields are not. `item()` attaches the entry to the item it builds and throws if one is missing,
+   so the map cannot drift out of step with the bank.
+
+   These lines are NOT answer-bearing. They name the judgment, not the answer, which is why
+   scripts/report-loa-traceability.mjs may write them into a reviewer artifact while the prompt,
+   the choices, the key and the rationale stay in this file. */
+const TESTED_JUDGMENTS = Object.freeze({
+  "LOA-F001": "Whether described conduct is inside § 1101.002(1) when it is performed for the actor's own account, and which element of the definition decides it.",
+  "LOA-F002": "Whether the three lettered conditions of § 1101.002(1)(A)(xi) are cumulative, and whether a purpose the subparagraph names reaches a refinancing decision.",
+  "LOA-F003": "Which of 22 TAC § 535.4's two independent bases of application reaches each of two cross-border transactions.",
+  "LOA-F004": "Where the line runs between an act requiring a licence under 22 TAC § 535.4 and the narrow clerical permission in § 535.5.",
+  "LOA-F005": "Whether a Commission order resolves the civil and criminal tracks, and which sentence of the Act settles it.",
+  "LOA-F006": "What the ordering of § 1101.003(a)'s list of qualifying courses does and does not prove.",
+  "LOA-F007": "Where in Texas law the terms 'client' and 'customer' are defined, and what follows from the fact that they are not.",
+  "LOA-F008": "Who is a 'party' under § 1101.551(2) in a transaction involving a property manager with binding authority.",
+  "LOA-F009": "What the 2026 repeal of the two TRELA subagency references does and does not establish on the held sources.",
+  "LOA-F010": "Whether both conditions in 22 TAC § 535.16(b) are satisfied by an owner who asks the broker what the property is worth.",
+  "LOA-F011": "What a sales agent may do with files in progress once sponsorship terminates and the licence goes inactive.",
+  "LOA-F012": "Whether representation can arise without a writing, and what the structure of § 1101.562 shows about it.",
+  "LOA-F013": "Whether the source of a broker's compensation determines whom the broker represents.",
+  "LOA-F014": "What express authority to negotiate carries with it as to earnest money, and where implied authority stops.",
+  "LOA-F015": "Which authority-limit grounds in § 1101.652(b) a licence holder acting beyond written instructions reaches.",
+  "LOA-F016": "Whether the intermediary posture is an election or an obligation when a broker represents both sides.",
+  "LOA-F017": "Whether the classical agency taxonomy is Texas text, and which held provision fixes the scope of a residential listing.",
+  "LOA-F018": "Whether a spoken instruction, recorded in the licence holder's own file note, switches off the duty to submit offers.",
+  "LOA-F019": "Which Texas text imposes the care duty, and what status the six-duty teaching frame has.",
+  "LOA-F020": "Which subsection of § 1101.652 carries the market-conditions ground, and why it is commonly misfiled.",
+  "LOA-F021": "How far the open-house exception in § 1101.558(c)(3) reaches, and which duty it never touches.",
+  "LOA-F022": "Which alterations to a reproduced IABS notice 22 TAC § 531.20 permits.",
+  "LOA-F023": "To whom the § 1101.555 written advice runs, and what failure costs.",
+  "LOA-F024": "What a licence holder does and does not owe a person on the other side of a transaction.",
+  "LOA-F025": "Which negotiating tactic is consistent with the duty of honest and fair dealing, and why the others are not.",
+  "LOA-F026": "Who is a 'party' and who is a member of the public, and whether the distinction changes the accuracy duty.",
+  "LOA-F027": "How the two-calendar-day response period in 22 TAC § 535.157 counts across a holiday weekend.",
+  "LOA-F028": "Whether § 1101.805(e) reaches a licence holder's own silence, and what DTPA § 17.46(b)(24) requires.",
+  "LOA-F029": "Whether suspicion satisfies § 1101.805(e)'s knowledge condition, and what the shield leaves unresolved.",
+  "LOA-F030": "The scope of the § 1101.804 protection for sharing sale price and terms information, with its closing qualifier.",
+  "LOA-F031": "Which transfers § 5.008 reaches, and which subdivision of subsection (e) exempts each of three familiar ones.",
+  "LOA-F032": "From what event the § 5.008(f) termination right runs, and how § 5.008 differs from § 5.012(e).",
+  "LOA-F033": "What § 1101.556 permits when a buyer asks directly about a death on the property.",
+  "LOA-F034": "Which statute supplies the writing requirement for an ordinary residential commission promise.",
+  "LOA-F035": "Whether § 1101.806(d) can defeat a listing broker's fee where the broker never dealt with the buyer.",
+  "LOA-F036": "Commission arithmetic across a cooperating-broker split, and the permitted payment channel to a sales agent.",
+  "LOA-F037": "Whether soliciting a future listing from an owner under an outstanding exclusive listing is permitted.",
+  "LOA-F038": "Which element of § 1101.652(b)(22) is missing when the competing listing has expired.",
+  "LOA-F039": "What representation buys a seller, stated as sourced entitlements with their honest limits.",
+  "LOA-F040": "What the structural concept of subagency is, and which Texas text now governs the outcomes it produced.",
+  "LOA-F041": "Which held provisions show that compensation does not answer the representation question.",
+  "LOA-F042": "Whether an emailed IABS notice discharges the duty to make representation status clear to all parties.",
+  "LOA-F043": "Which subdivision of § 1101.652(b) reaches each of three money-disclosure failures.",
+  "LOA-F044": "Which property types fall inside the § 1101.563(a) definition of residential real property.",
+  "LOA-F045": "Whether an agreement drawn around one address covers a second showing, on the wording of § 1101.563(b).",
+  "LOA-F046": "The two hard limits § 1101.563(e) places on a showing-only agreement, and what § 1101.563(d) then requires.",
+  "LOA-F047": "What the competence provisions require of a licence holder offered work outside her market and product type.",
+  "LOA-F048": "What a broker must tell a buyer, at engagement, about the consequence of wanting an in-house listing.",
+  "LOA-F049": "What a showing agent from outside the listing brokerage must do before an open-house visitor views the property.",
+  "LOA-F050": "Which statement to a visitor falls inside § 1101.562(c)'s permission to confirm size, price and terms.",
+  "LOA-F051": "What a represented buyer learns that an unrepresented one does not, and what is owed either way.",
+  "LOA-F052": "Whether § 1101.652(b)(22) protects a buyer under a non-exclusive representation agreement.",
+  "LOA-F053": "What § 1101.563(c)(1)(E) requires of a compensation clause, and what § 1101.806(c) requires to sue on it.",
+  "LOA-F054": "Buyer-side compensation arithmetic against a listing broker's contribution, and the permitted payment route.",
+  "LOA-F055": "Which arrangements 22 TAC § 535.148(h) leaves outside the rule's prohibitions.",
+  "LOA-F056": "Whether a 40 percent entity interest is inside 22 TAC § 535.144, and how the rule's scope compares with the statute's.",
+  "LOA-F057": "Whether consent can create a dual agency in Texas, and what the Legislature supplied instead.",
+  "LOA-F058": "What § 1101.551(1)'s definition of intermediary establishes about the role and who may hold it.",
+  "LOA-F059": "What the enactment notes establish about when the intermediary framework became settled codified law.",
+  "LOA-F060": "Whether a general 'may work with other clients' clause satisfies § 1101.559(a).",
+  "LOA-F061": "Whether Texas prescribes a point size for the intermediary consent, and what the comparison with other provisions shows.",
+  "LOA-F062": "What form an instruction must take before § 1101.651(d)(1)'s prohibition may be released.",
+  "LOA-F063": "Which price is the benchmark § 1101.651(d)(2) uses, and what may therefore be disclosed.",
+  "LOA-F064": "What § 1101.561(a)'s supersession clause displaces and what it leaves standing.",
+  "LOA-F065": "What § 1101.560(b)(2) requires of an appointment notice, and which assumptions the section does not support.",
+  "LOA-F066": "Whether consent to intermediary status carries consent to appointments, and what each configuration gives the parties.",
+  "LOA-F067": "What differs and what is identical between intermediary with appointments and without.",
+  "LOA-F068": "Which configurations are lawfully available to a sole-practitioner broker holding both sides.",
+  "LOA-F069": "Whether the § 1101.558(c)(1) short-lease exception reaches the intermediary consent requirement.",
+  "LOA-F070": "How the § 535.191 penalty bands rank the intermediary provisions against the two dual-representation grounds.",
+  "LOA-F071": "Which of three Texas writing rules answers which question, and what each failure costs.",
+  "LOA-F072": "What status the common-law routes to agency have in this course, and why they are hazards rather than strategies.",
+  "LOA-F073": "Whether an oral promise and a contractual disclaimer affect what the Commission may consider under 22 TAC § 535.145.",
+  "LOA-F074": "What the Estates Code establishes about a listing when the owner who signed it dies.",
+  "LOA-F075": "Which terminating-event propositions the held sources support and which were not held.",
+  "LOA-F076": "What § 1101.366 requires of a broker applying for inactive status, and what the broker may then do.",
+  "LOA-F077": "What 22 TAC § 535.146(d) requires after a written demand, and what is available where entitlement is unclear.",
+  "LOA-F078": "Which of a licence holder's online presences is a 'business website' under 22 TAC § 531.18.",
+  "LOA-F079": "Which notice comes from which statutory parent, and how each is provided.",
+  "LOA-F080": "What the held law settles about a first contact arriving by text, and what a brokerage policy must settle.",
+  "LOA-F081": "Which two facts about a policy manual are established by 22 TAC § 535.2 rather than by firm preference.",
+  "LOA-F082": "Which omissions from a policy manual are compliance failures and which are business decisions.",
+  "LOA-F083": "Whether an IABS link in an email signature block satisfies 22 TAC § 531.20.",
+  "LOA-F084": "What Labor Code § 201.072's opening words settle, and what its silence on control shows.",
+  "LOA-F085": "Which § 201.072(1) condition a guaranteed monthly draw puts in question, and what this course states about the threshold.",
+  "LOA-F086": "Which Labor Code chapter 21 coverage threshold a brokerage's first employee crosses.",
+  "LOA-F087": "What chapter 21's purpose and administering agency are, and the limit of what this course states about sales-agent status.",
+  "LOA-F088": "Which of two provisions uses 'employ' in the engagement sense and which in the labour-law sense.",
+  "LOA-F089": "Which disciplinary ground an association with an unlicensed person expected to act as a licence holder reaches.",
+  "LOA-F090": "Which statement by an unlicensed administrative employee is inside the 22 TAC § 535.5(g) permission.",
+  "LOA-F091": "Which four conditions the 22 TAC § 535.20(b) referral exemption requires, and which most often fails.",
+  "LOA-F092": "What 22 TAC § 535.2(a) produces where a broker knowingly permits work beyond a written scope.",
+  "LOA-F093": "Which § 535.2 requirement is a numerical floor on new activities, and how it is counted.",
+  "LOA-F094": "Which five conditions § 1101.355(d) requires of a compensation entity, and what a missing one produces.",
+  "LOA-F095": "How one Property Code chapter 301 prohibition reaches criminal, civil and administrative enforcement at once.",
+  "LOA-F096": "What § 1101.659(b) permits a refund order to do, and where a consumer seeking damages must go.",
+  "LOA-F097": "Which characteristics 42 U.S.C. § 3604(a) names, and where the federal disability prohibition sits.",
+  "LOA-F098": "Which request is a modification and which an accommodation, and what standard and cost rule attaches to each.",
+  "LOA-F099": "What happens to the owner-seller fair housing exemptions once a licence holder is engaged.",
+  "LOA-F100": "Which acts violate 22 TAC § 531.19's verbs without any refusal to sell.",
+  "LOA-F101": "What gates § 1101.652(b), and why subsection (a-1) exists separately.",
+  "LOA-F102": "Which complaints § 1101.204 permits the Commission to investigate.",
+  "LOA-F103": "What § 1101.704 produces when a licence holder lets the twenty days pass without responding.",
+  "LOA-F104": "How a trade association is defined, and what § 1101.053(b) does about the regulator-association relationship.",
+  "LOA-F105": "What an association's expulsion, or its refusal to act, establishes about a Texas licence.",
+  "LOA-F106": "How 22 TAC § 535.191 sorts familiar violations across its three penalty bands.",
+  "LOA-F107": "What follows from ignoring a Commission request for information about a complaint believed meritless.",
+  "LOA-F108": "What this course holds on fraud and misrepresentation, and where the operative distinctions live.",
+  "LOA-F109": "What the final clause of DTPA § 17.45(13) does to the meaning of 'intentionally'.",
+  "LOA-F110": "Which feature of the DTPA consumer definition lets a buyer sue a licence holder she never dealt with.",
+  "LOA-F111": "Which laundry-list subdivision a careless explanation of a contract term engages, and which carry a scienter word.",
+  "LOA-F112": "What §§ 17.43 and 17.44(b) settle about the DTPA's relationship to other Texas law.",
+  "LOA-F113": "DTPA damages arithmetic across the knowing and intentional tiers, and what is excluded from the multiplier base.",
+  "LOA-F114": "How the two mandatory fee provisions run, and what other relief § 17.50 authorises and forbids.",
+  "LOA-F115": "Which conditions the § 17.506(a) reliance defense requires, and what § 17.506(b) adds.",
+  "LOA-F116": "How the § 17.49(f) and § 17.49(g) thresholds treat a commercial sale and an owner-occupied house.",
+  "LOA-F117": "The DTPA's notice, abatement, tender and limitations periods, and the word that narrows the extension.",
+  "LOA-F118": "How 22 TAC § 535.149 connects DTPA definitions to TREC discipline, and the two lottery elements.",
+  "LOA-F119": "What must precede a trust-account payment, what it caps, and what follows for the licence holder.",
+  "LOA-F120": "What 22 TAC § 535.17 requires of a CMA's prescribed statement, its format and the name it goes out in.",
+  "LOA-F121": "The two ten-day advertising timing rules that follow an expired listing and a closed transaction.",
+  "LOA-F122": "What the 22 TAC § 535.155(a) size ratio requires, and how broadly 'contact information' is defined.",
+  "LOA-F123": "When § 1101.555 is triggered, to whom it runs, and its two separate consequences.",
+  "LOA-F124": "Which use of a non-mandatory form falls inside one of 22 TAC § 537.11(a)'s four exceptions.",
+  "LOA-F125": "The correct order of the first three buyer-side obligations on a call about a specific residential listing.",
+  "LOA-F126": "Which act 22 TAC § 537.11 permits and which of three familiar helpful acts it forbids.",
+  "LOA-F127": "When the four-year record clock starts on a dead deal, and what 'substantive communications' reaches.",
+  "LOA-F128": "Which record grounds fall on the licence holder personally rather than on the sponsoring broker.",
+  "LOA-F129": "Which names may be advertised without registration, and which team name is compliant.",
+  "LOA-F130": "What § 1101.552 and 22 TAC § 535.21 require of a relocating broker and of a sales agent, and the effect on service.",
+  "LOA-F131": "What the held sources support as a response to a late § 5.008 delivery, and which act is forbidden.",
+  "LOA-F132": "At what moment on the calendar each recurring disciplinary fact pattern is created.",
+});
+
 const item = (id, spec) =>
   Object.freeze({
     id,
@@ -168,6 +313,9 @@ const item = (id, spec) =>
        read; `unit` is the field name the Principles II tooling reads. Same value, both names, so
        neither toolchain needs a special case. */
     tests: spec.unit,
+    /* What the candidate is asked to decide. Authored in TESTED_JUDGMENTS above and attached here
+       so that the field exists on every item and cannot be omitted for one. */
+    judgement: TESTED_JUDGMENTS[id],
     prompt: spec.prompt,
     choices: Object.freeze(spec.choices),
     correctChoice: spec.correctChoice ?? 0,
@@ -2129,6 +2277,9 @@ for (const entry of FINAL_EXAM_BANK) {
   if (!entry.source || entry.source.trim().length < 8) {
     throw new Error(`final exam bank: ${entry.id} lacks a controlling source`);
   }
+  if (!entry.judgement || entry.judgement.trim().length < 20) {
+    throw new Error(`final exam bank: ${entry.id} has no entry in TESTED_JUDGMENTS`);
+  }
 
   if (!entry.teaches) throw new Error(`final exam bank: ${entry.id} lacks a teaches anchor`);
   if (!anchorShape.test(entry.teaches)) {
@@ -2182,6 +2333,12 @@ for (const code of Object.keys(UNIT_ANCHORS)) {
 }
 for (const unit of ALL_UNITS) {
   if (!UNIT_ANCHORS[unit.code]) throw new Error(`final exam bank: UNIT_ANCHORS is missing unit ${unit.code}`);
+}
+for (const id of Object.keys(TESTED_JUDGMENTS)) {
+  if (!seenIds.has(id)) throw new Error(`final exam bank: TESTED_JUDGMENTS names ${id}, which is not an item`);
+}
+if (Object.keys(TESTED_JUDGMENTS).length !== BANK_SIZE) {
+  throw new Error(`final exam bank: ${Object.keys(TESTED_JUDGMENTS).length} tested judgments against ${BANK_SIZE} items`);
 }
 
 /* Every LOA-1 unit is examined. 132 items across 57 units leaves room for this, and a summative
