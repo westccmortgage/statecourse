@@ -136,6 +136,14 @@ export function runClaimAudit(course) {
   function normalizeForQuote(s) {
     return s
       .replace(/\*\*|\*|_/g, "")
+      /* MARKDOWN BLOCKQUOTE MARKERS. A quotation set as a multi-line blockquote carries "> " at the
+         start of every continuation line. The soft-wrap collapse above rewrites those line breaks as
+         spaces, which leaves an isolated ">" stranded inside the quotation — "...authorizes a broker
+         to act as an > intermediary..." — and no source can ever match that. Six of module 06's
+         quotations of §§ 1101.559-.560 were reported missing for this reason alone. Stripping the
+         marker is safe on both sides of the comparison: it is applied to source text too, so a source
+         that genuinely printed an angle bracket still matches a quotation of it. */
+      .replace(/(^|\s)>+(?=\s)/g, "$1")
       /* Quote MARKS are folded to one character. A course quoting a statutory definition must
          switch the inner marks: the statute prints `the term "adverse action" means`, and the
          course has to render it `the term 'adverse action' means` because it is already inside a
@@ -168,6 +176,120 @@ export function runClaimAudit(course) {
     const entry = { raw, text, norm: normalizeForQuote(text) };
     fileCache.set(rel, entry);
     return entry;
+  }
+
+  /* ── SECTION SPANS, WHOLE FILES, AND THE WHOLE CORPUS ────────────────────────────────────────
+     The quotation check used to search only the files cited within 320 characters of the quotation,
+     and to search each of them WHOLE. That conflated three very different outcomes under the single
+     headline "not found in cited source":
+
+       (a) the quotation is in the cited source, in the cited section — a pass;
+       (b) the quotation is in the cited source but outside the cited section — worth knowing,
+           because it says the section span, not the quotation, is what is wrong;
+       (c) the quotation is verbatim in a DIFFERENT held source — a real finding about attribution,
+           since the nearest citation points elsewhere, but emphatically not a fabricated quotation;
+       (d) the quotation is nowhere in the held corpus — the only genuine failure.
+
+     These four are now separated. A miss at a narrower tier always falls through to a wider one, so
+     an imperfect span extractor can downgrade a pass to a weaker pass but can never manufacture a
+     failure. */
+
+  /** The normalised text of one section of a held file, or null when the span cannot be located.
+      Texas Legislative Council HTML anchors every section (<a name="1101.002">) and the eCFR XML
+      labels every one (N="1024.7"), so the span is read from the file's own structure rather than
+      guessed from prose. TREC rules are held one section per file, so the file IS the span. */
+  const spanCache = new Map();
+  function sectionSpan(rel, section, kind) {
+    const key = `${rel}::${section}`;
+    if (spanCache.has(key)) return spanCache.get(key);
+    const entry = loadSource(rel);
+    let out = null;
+    if (entry) {
+      if (kind === "trecrule") out = entry.norm;
+      else {
+        /* The section anchor is NOT simply the next anchor along. Texas Legislative Council emits a
+           SECOND, internal anchor immediately after each section anchor —
+           <a name="1101.652"></a><a name="57308.157139"></a> — so slicing to the next `name="` gave a
+           span about thirty characters long and pushed essentially every quotation down to the
+           whole-file tier. The section anchors for a file all share the chapter prefix ("1101."),
+           and the internal ones never do, so the span runs to the next anchor WITH THAT PREFIX. */
+        const label = kind === "constitution" ? `16.${section}` : section;
+        const prefix = `${label.split(".")[0]}.`;
+        const attr = kind === "cfr" ? "N" : "name";
+        const anchors = [];
+        const re = new RegExp(`${attr}="([^"]+)"`, "g");
+        let a;
+        while ((a = re.exec(entry.raw))) if (a[1].startsWith(prefix)) anchors.push({ at: a.index, name: a[1] });
+        const i = anchors.findIndex((x) => x.name === label);
+        if (i >= 0) {
+          const slice = entry.raw.slice(anchors[i].at, i + 1 < anchors.length ? anchors[i + 1].at : entry.raw.length);
+          out = normalizeForQuote(decodeEntities(slice.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " "));
+        }
+      }
+    }
+    spanCache.set(key, out);
+    return out;
+  }
+
+  /** Every held source under texas/trec-sources/, for the corpus-wide tier. Built once, on first
+      use, so a course whose quotations all resolve against their cited sources never pays for it. */
+  let corpusIndex = null;
+  function corpus() {
+    if (corpusIndex) return corpusIndex;
+    corpusIndex = [];
+    const walk = (dir) => {
+      for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, e.name);
+        if (e.isDirectory()) walk(full);
+        else if (/\.(html?|htm|txt|xml)$/i.test(e.name)) {
+          const rel = path.relative(SOURCE_DIR, full).split(path.sep).join("/");
+          const entry = loadSource(rel);
+          if (entry) corpusIndex.push({ rel, norm: entry.norm });
+        }
+      }
+    };
+    walk(SOURCE_DIR);
+    return corpusIndex;
+  }
+
+  /* TERMINAL PUNCTUATION. A quotation embedded in the course's own sentence must carry that
+     sentence's punctuation inside the closing mark — the ordinary American convention — so a course
+     writes "…may not exceed $5,000 for each violation," where § 1101.702 prints "…for each
+     violation." The WORDS are verbatim right to the end of the source's own clause; only the
+     terminal mark differs, and that mark belongs to the course's sentence, not to the quotation.
+     Comparing with the mark attached was the single largest cause of false misses — 187 of Law of
+     Agency's 352 — so the comparison drops a trailing mark from the quotation before concluding it
+     is absent. Whether the source then RUNS ON into a qualifier is a separate question about
+     truncation, answered below and reported separately rather than as an absence. */
+  const stripTerminal = (s) => s.replace(/[.,;:]+$/, "").trim();
+
+  const ELLIPSIS = /\s*(?:\.\s*\.\s*\.|…|\[\.\.\.\])\s*/;
+
+  /** Is `needle` present in the normalised haystack? Returns how it matched, or null.
+      An elided quotation is satisfied when its segments appear IN ORDER in this one haystack —
+      order matters, because segments found in scattered places are not a quotation of a passage. */
+  function findIn(hay, needle) {
+    if (!hay) return null;
+    if (hay.includes(needle)) return { how: "exact" };
+    const segments = needle.split(ELLIPSIS).map((x) => x.trim()).filter((x) => x.length >= 12);
+    if (segments.length > 1) {
+      let from = 0;
+      for (const seg of segments) {
+        let at = hay.indexOf(seg, from);
+        if (at < 0 && seg === segments[segments.length - 1]) at = hay.indexOf(stripTerminal(seg), from);
+        if (at < 0) return null;
+        from = at + seg.length;
+      }
+      return { how: "ellipsis-segments-in-order" };
+    }
+    const bare = stripTerminal(needle);
+    if (bare.length < 30 || bare === needle) return null;
+    const at = hay.indexOf(bare);
+    if (at < 0) return null;
+    /* The words matched; record what the source does next so a reviewer can see whether closing the
+       quotation there dropped an operative clause. That is the module 02 defect class and it stays
+       visible — as a truncation finding, not as a missing quotation. */
+    return { how: "terminal-punctuation", tail: hay.slice(at + bare.length, at + bare.length + 90).trim() };
   }
 
   /** Does the held source actually contain this section as a section, not merely as a cross-reference? */
@@ -355,9 +477,29 @@ export function runClaimAudit(course) {
           if (entry && sectionPresent(entry, section, "texas")) candidates.push({ code, file });
         }
         if (candidates.length === 1) target = candidates[0];
+        /* MORE THAN ONE HELD CODE CONTAINS THE SECTION. "§ 21.002" is a real section of both the
+           Labor Code and the Property Code, and module 09 cites chapter 21 twenty-seven times while
+           teaching employment discrimination.
+
+           Proximity must NOT decide this. The nearest code name to five of those citations is
+           "Property Code" — and it is nearest only because the passage mentions "Property Code
+           chapter 301" in an aside about where fair housing is taught. Widening detectCodeContext's
+           window would therefore resolve them CONFIDENTLY AND WRONGLY.
+
+           Ask instead which candidate code the module ever names in the same breath as THIS chapter:
+           the module writes "Labor Code chapter 21" and "Labor Code § 21.202" seven times, and never
+           pairs any other held code with chapter 21. That pairing is the document's own answer, not
+           the resolver's guess. If no candidate is paired with the chapter, or more than one is, the
+           citation stays AMBIGUOUS_CODE — which is the correct answer, not a failure of nerve. */
+        if (!target && candidates.length > 1) {
+          const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          const paired = candidates.filter(({ code }) =>
+            new RegExp(`${esc(code)}\\s*(?:,\\s*)?(?:chapter\\s*|ch\\.\\s*|§+\\s*)${chapter}\\b`, "i").test(md));
+          if (paired.length === 1) target = paired[0];
+        }
       }
       if (!target) {
-        rows.push({ claimId: nextId(moduleId), module: moduleId, unit: unitAt(m.index), citation: m[0], kind: "texas", section, sourceFile: null, sourceHeld: false, sectionPresent: false, status: "AMBIGUOUS_CODE", courseText: sentenceAround(md, m.index), substantiveStatus: "PENDING_REVIEW", reviewerNote: `chapter ${chapter} is claimed by more than one held code and no code name appears within 400 characters`, correctionCommit: null });
+        rows.push({ claimId: nextId(moduleId), module: moduleId, unit: unitAt(m.index), citation: m[0], kind: "texas", section, sourceFile: null, sourceHeld: false, sectionPresent: false, status: "AMBIGUOUS_CODE", courseText: sentenceAround(md, m.index), substantiveStatus: "PENDING_REVIEW", reviewerNote: `chapter ${chapter} is claimed by more than one held code; no code name appears within 400 characters, more than one held file contains the section, and the module never names a single code together with chapter ${chapter}`, correctionCommit: null });
         continue;
       }
       push(m.index, `${target.code} ${m[0]}`, "texas", target.file, section);
@@ -366,7 +508,12 @@ export function runClaimAudit(course) {
 
   /* ── quotation check: every "…" attributed near a citation must appear in the cited source ──── */
   let quotesChecked = 0, quotesFailed = 0;
-  const quoteFailures = [];
+  /* quotesFailed now means what it says: the quotation is nowhere in the held corpus. The weaker
+     outcomes are counted and listed separately so the headline number is not inflated by them. */
+  let quotesPassed = 0, quotesPassedOutsideSection = 0, quotesAttributionReview = 0, quotesTruncationReview = 0;
+  const quoteFailures = [];   // genuinely absent from every held source — the only real failures
+  const quoteFindings = [];   // found, but not where the nearest citation pointed
+  const quoteTruncations = [];// found verbatim, but closed before the source's sentence ended
   /* A quotation is checked only when it is attributable: it must sit within 320 characters of a
      citation whose source is held, and it must look like statutory language rather than the course's
      own voice. An unattributable quoted phrase is not a sourcing failure — it is the module quoting
@@ -418,12 +565,80 @@ export function runClaimAudit(course) {
       const needle = normalizeForQuote(quote);
       if (needle.length < 30) { quotesUnattributable += 1; continue; }
       quotesChecked += 1;
-      /* Verbatim against ANY nearby cited source counts as verified — a sentence often cites two. */
-      const hit = near.some((c) => {
-        const entry = loadSource(c.row.sourceFile.replace("texas/trec-sources/", ""));
-        return entry && entry.norm.includes(needle);
-      });
-      if (!hit) {
+      /* ── the four tiers ─────────────────────────────────────────────────────────────────────
+         Cited section, then cited file, then the whole held corpus, then genuinely absent. A
+         sentence often cites two sources, so every nearby cited source is tried at each tier
+         before widening. */
+      const nearSources = [...new Set(near.map((c) => `${c.row.sourceFile}::${c.row.section}::${c.row.kind}`))]
+        .map((k) => { const [f, section, kind] = k.split("::"); return { rel: f.replace("texas/trec-sources/", ""), section, kind }; });
+
+      let resolved = null;
+      for (const s of nearSources) {                              // tier 1 — the cited section
+        const hit = findIn(sectionSpan(s.rel, s.section, s.kind), needle);
+        if (hit) { resolved = { tier: "MECHANICAL_PASS", rel: s.rel, section: s.section, hit }; break; }
+      }
+      if (!resolved) for (const s of nearSources) {               // tier 2 — the whole cited file
+        const entry = loadSource(s.rel);
+        const hit = entry && findIn(entry.norm, needle);
+        if (hit) {
+          resolved = {
+            tier: "MECHANICAL_PASS_OUTSIDE_SECTION", rel: s.rel, section: s.section, hit,
+            note: `verbatim in the cited source but outside the span this script computed for § ${s.section}; the section-boundary extraction is imperfect for this file, not the quotation`,
+          };
+          break;
+        }
+      }
+      if (!resolved) {                                            // tier 3 — the whole held corpus
+        const nearRels = new Set(nearSources.map((s) => s.rel));
+        for (const c of corpus()) {
+          if (nearRels.has(c.rel)) continue;
+          const hit = findIn(c.norm, needle);
+          if (hit) {
+            resolved = {
+              tier: "ATTRIBUTION_REVIEW", rel: c.rel, section: null, hit,
+              note: "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+            };
+            break;
+          }
+        }
+      }
+
+      if (resolved) {
+        /* Found. Record the two things a reviewer still needs: where it actually lives, and whether
+           closing the quotation early left the source's own sentence running on into a qualifier —
+           the module 02 defect class, kept visible as a truncation finding rather than an absence. */
+        const tail = resolved.hit.how === "terminal-punctuation" ? resolved.hit.tail : null;
+        const runsOn = tail && !(tail === "" || /^[.,;:]/.test(tail) || /^\(\s*[a-z0-9]+\s*\)/.test(tail)
+          || /^(?:sec\.|added by|amended by|acts\s+\d{4})/.test(tail));
+        if (resolved.tier === "MECHANICAL_PASS") quotesPassed += 1;
+        else if (resolved.tier === "MECHANICAL_PASS_OUTSIDE_SECTION") quotesPassedOutsideSection += 1;
+        else quotesAttributionReview += 1;
+        if (resolved.tier !== "MECHANICAL_PASS") {
+          quoteFindings.push({
+            module: moduleId,
+            status: resolved.tier,
+            candidateSections: [...new Set(near.map((c) => c.row.section))].slice(0, 4),
+            attributedTo: `texas/trec-sources/${resolved.rel}`,
+            matchedAs: resolved.hit.how,
+            note: resolved.note,
+            quote: quote.slice(0, 200),
+          });
+        }
+        if (runsOn) {
+          quotesTruncationReview += 1;
+          quoteTruncations.push({
+            module: moduleId,
+            status: "TRUNCATION_REVIEW",
+            classification: /^(?:to|for|unless|except|if|provided|in order|so that|and\b|or\b|but\b)/.test(tail)
+              ? "TRUNCATED_MID_CLAUSE" : "TRUNCATED_REVIEW",
+            candidateSections: [...new Set(near.map((c) => c.row.section))].slice(0, 4),
+            attributedTo: `texas/trec-sources/${resolved.rel}`,
+            sourceContinuesWith: tail,
+            note: "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+            quote: quote.slice(0, 200),
+          });
+        }
+      } else {
         quotesFailed += 1;
         /* Classify the failure so a reviewer can triage instead of re-deriving it:
            - ELLIPSIS: the course marked an omission, so a single contiguous match is not expected;
@@ -471,6 +686,8 @@ export function runClaimAudit(course) {
         }
         quoteFailures.push({
           module: moduleId,
+          status: "QUOTE_NOT_IN_CORPUS",
+          note: "not found in any source held under texas/trec-sources/, at section, file or corpus level",
           candidateSections: [...new Set(near.map((c) => c.row.section))].slice(0, 4),
           classification: cls,
           matchedPrefixChars: longest,
@@ -491,24 +708,39 @@ export function runClaimAudit(course) {
     generatedFor,
     note: "Mechanical layer only. substantiveStatus is set by review, not by this script.",
     curriculumHashes: Object.fromEntries(moduleFiles.map((f) => [f, crypto.createHash("sha256").update(fs.readFileSync(path.join(CURRICULUM, f))).digest("hex")])),
-    totals: { citations: rows.length, byStatus, quotesChecked, quotesFailed, quotesUnattributable },
+    totals: {
+      citations: rows.length, byStatus, quotesChecked, quotesFailed, quotesUnattributable,
+      quotesPassed, quotesPassedOutsideSection, quotesAttributionReview, quotesTruncationReview,
+    },
     quoteFailures,
+    quoteFindings,
+    quoteTruncations,
     claims: rows,
   };
   fs.writeFileSync(outPath, `${JSON.stringify(payload, null, 2)}\n`);
 
   console.log("citations found:", rows.length);
   for (const [k, v] of Object.entries(byStatus).sort()) console.log(`  ${k}: ${v}`);
-  console.log("verbatim quotations checked:", quotesChecked, "| not found in cited source:", quotesFailed, "| unattributable (not near a citation, not counted):", quotesUnattributable);
+  console.log("verbatim quotations checked:", quotesChecked);
+  console.log(`  in the cited section: ${quotesPassed}`);
+  console.log(`  in the cited source but outside the computed section span: ${quotesPassedOutsideSection}`);
+  console.log(`  ATTRIBUTION_REVIEW (verbatim in a held source the nearest citation does not name): ${quotesAttributionReview}`);
+  console.log(`  NOT FOUND anywhere in the held corpus: ${quotesFailed}`);
+  console.log(`  (of those found, ${quotesTruncationReview} close before the source's sentence ends — truncation review)`);
+  console.log("unattributable (not near a citation, not counted):", quotesUnattributable);
   if (quoteFailures.length) {
-    console.log("\nquotation misses (first 20):");
-    for (const q of quoteFailures.slice(0, 20)) console.log(`  ${q.module} [near ${q.candidateSections.join(", ")}]: "${q.quote}…"`);
+    console.log("\nquotations absent from the held corpus (first 20):");
+    for (const q of quoteFailures.slice(0, 20)) console.log(`  ${q.module} [${q.classification}; near ${q.candidateSections.join(", ")}]: "${q.quote}…"`);
+  }
+  if (quoteFindings.length) {
+    console.log("\nattribution findings (first 20):");
+    for (const q of quoteFindings.slice(0, 20)) console.log(`  ${q.module} [${q.status}; near ${q.candidateSections.join(", ")}] -> ${q.attributedTo}`);
   }
   if (failures.length) {
     console.log("\nmechanical failures (first 40):");
     for (const f of failures.slice(0, 40)) console.log(`  ${f.claimId} ${f.module} [${f.status}] ${f.citation} -> ${f.sourceFile || "(unmapped)"}`);
   }
   console.log("\nledger written:", path.relative(root, outPath));
-  return { rows, failures, payload, byStatus, quotesChecked, quotesFailed, quotesUnattributable, quoteFailures };
+  return { rows, failures, payload, byStatus, quotesChecked, quotesFailed, quotesUnattributable, quoteFailures, quoteFindings, quoteTruncations };
 
 }

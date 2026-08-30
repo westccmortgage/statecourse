@@ -164,8 +164,9 @@ none of that can be assembled after a buyer client asks to see the firm's own li
 manual must already say whether this firm appoints at all, who signs the written notice of
 appointment, and what the firm does when the sponsoring broker is personally the listing agent.
 Record retention is governed by § 535.2 and taught in Module 09; what the manual must add is that
-your IABS delivery email is both a "disclosure" and a "substantive communication with parties to the
-transaction," and therefore where it goes, who moves it there, and whether the broker can retrieve
+your IABS delivery email is a disclosure that also falls inside the record category § 535.2 calls
+"substantive communications with parties to the transaction" — and therefore where it goes, who
+moves it there, and whether the broker can retrieve
 it without you. If the answer is "it is in my sent folder on my personal phone," the brokerage
 cannot produce it when you leave.
 
