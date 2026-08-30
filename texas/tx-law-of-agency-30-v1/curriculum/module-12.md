@@ -235,28 +235,6 @@ itself must contain. Does the rule say a net listing is prohibited? 5. Neither s
 required format, comparable count or adjustment method for a CMA. What follows for a licence holder
 who wants to know how many comparables to use?
 
-### Applied exercise: The Pflugerville listing
-
-You list 1408 Wilbarger Court in Pflugerville on 3 March at 385,000 dollars under a written listing
-agreement with a definite termination date of 3 September. The agreed commission is 5.5 percent of
-the sales price, of which your brokerage will offer 2.5 percent to a cooperating broker. Your seller
-completes the § 5.008 notice on 3 March and answers "Unknown" to the age of the roof. On 14 April a
-buyer's agent emails an offer of 372,000 dollars. On 15 April, before your seller responds, a second
-buyer's agent calls to say a written offer of 380,000 dollars is coming "later today." Your seller
-has told you on the phone, but not in writing, "don't bring me anything under 380."
-
-1. Under 22 TAC § 535.156, may you decline to present the 372,000 dollar offer because of the
-seller's phone instruction? Identify the only exception the rule states and say why it does not
-apply on these facts. 2. Under 22 TAC § 535.157, by when must you respond to the second buyer's
-agent's call? State the period the rule gives and how it is counted. 3. The seller accepts the
-380,000 dollar offer. Compute the total commission at 5.5 percent, the amount going to the
-cooperating broker at 2.5 percent, and the amount retained by your brokerage. 4. The § 5.008 notice
-was delivered on 3 March, well before the contract. Suppose instead it had been delivered on 20
-April, after the contract's effective date. State the buyer's right under § 5.008(f), including its
-length and the reasons required to exercise it. 5. The listing expires on 3 September without a
-sale, and your boosted Facebook post advertising the property is still live on 20 September.
-Identify the provision of 22 TAC § 535.155 you have violated and the deadline you missed.
-
 ## Unit: The Broker Working for/with the Buyer
 
 The buyer side of Texas practice changed on 1 January 2026, and it changed in a way that moves
@@ -473,24 +451,6 @@ created by the broker." The Act makes the same failures disciplinary grounds —
 failing to account for or remit money belonging to another, (b)(10) for commingling, (b)(30) for
 failing to deposit within a reasonable time, and (b)(31) for disbursing before the transaction is
 completed or terminated — and Module 10 teaches them.
-
-### Applied exercise: A Saturday in Cedar Park
-
-At 9:40 on a Saturday morning a stranger calls your cell. She saw your sign at 2203 Silverstone
-Drive in Cedar Park, a single-family house you have listed for the seller at 419,000 dollars. She
-asks to see it at 11:00. She is not represented. At 11:00 she asks you three questions: how big is
-the house, is 419,000 a fair price, and would the seller take 400,000.
-
-1. Before you open the door, what must you deliver and what must you sign? Cite § 1101.558(b), §
-1101.563(b) and, if you were not the listing agent, § 1101.558(b-1) and 22 TAC § 531.20, and say
-which apply on these facts and which do not. 2. She does not want a representation agreement. May
-you show the house under a showing-only agreement? State the two limits § 1101.563(e) places on such
-an agreement. 3. Answer each of her three questions consistently with § 1101.562(c) and §
-1101.562(a)(3). Which may you answer, which may you not, and what exactly does subsection (c) permit
-you to do? 4. She decides to write an offer. You are the listing agent and your broker also intends
-to represent her. State what § 1101.561(b) requires of the broker and what § 1101.559(a) requires
-the written consent to contain. 5. She signs the offer at 4:15 that afternoon. State the written
-advisory § 1101.555 requires, and state the consequence under § 1101.806(d) if you never give it.
 
 ## Unit: A Practical Guide to Everyday Practice
 
@@ -1043,3 +1003,30 @@ verbatim; 22 TAC §§ 535.154 and 535.155 for how you may present yourself and y
 with § 1101.806(d) for the title advisory and the fee you forfeit without it; and § 1101.552 with 22
 TAC § 535.21 for the office and the addresses at which the Commission will find you. For everything
 else, retain the sequence and the module that holds the rule.
+
+## Optional reference: A buyer-side sequence drill
+
+This section is **optional**. Nothing in it is required to complete this topic, and no quiz,
+scenario or examination item is drawn from it. You may skip it entirely; it is not required for
+completion, and no later instruction depends on it. It is here because the 2026 buyer-side sequence
+is the newest law in this course and the one most often got wrong in the first hour of a Saturday,
+and a second run at it — on facts no required exercise in this module uses — is worth having if you
+want the practice.
+
+#### Optional practice: A Saturday in Cedar Park
+
+At 9:40 on a Saturday morning a stranger calls your cell. She saw your sign at 2203 Silverstone
+Drive in Cedar Park, a single-family house you have listed for the seller at 419,000 dollars. She
+asks to see it at 11:00. She is not represented. At 11:00 she asks you three questions: how big is
+the house, is 419,000 a fair price, and would the seller take 400,000.
+
+1. Before you open the door, what must you deliver and what must you sign? Cite § 1101.558(b), §
+1101.563(b) and, if you were not the listing agent, § 1101.558(b-1) and 22 TAC § 531.20, and say
+which apply on these facts and which do not. 2. She does not want a representation agreement. May
+you show the house under a showing-only agreement? State the two limits § 1101.563(e) places on such
+an agreement. 3. Answer each of her three questions consistently with § 1101.562(c) and §
+1101.562(a)(3). Which may you answer, which may you not, and what exactly does subsection (c) permit
+you to do? 4. She decides to write an offer. You are the listing agent and your broker also intends
+to represent her. State what § 1101.561(b) requires of the broker and what § 1101.559(a) requires
+the written consent to contain. 5. She signs the offer at 4:15 that afternoon. State the written
+advisory § 1101.555 requires, and state the consequence under § 1101.806(d) if you never give it.
