@@ -1,239 +1,200 @@
 # FREC Course I — submission plan
 
-What Florida requires before StateCourse can offer a Course I, in the order it has to happen, with
-an honest account of what is not yet knowable.
+**Phase 0 v2.** This plan replaces the v1 version, which was wrong about the most important thing in
+it. v1 reported that a Florida broker's licence was mandatory for the school permitholder and that
+no StateCourse individual could sign an application. That is not what the law says, and it is not
+what DBPR's own forms do. See §1.
 
-This is a **plan**, not a filing. Nothing has been submitted, no application has been started, and
-no Florida credential is held. `config/florida/school-permit-ledger.mjs` carries the machine-checked
-version of everything below; `florida/regulatory/primary-text-readings.md` carries the readings the
-requirements come from.
-
----
-
-## The shape of the problem
-
-Most provider approvals are a paperwork problem. Florida's is a **person** problem first, and the
-paperwork only becomes reachable after that is solved.
-
-Rule 61J2-17.011(2), F.A.C. says the school permit holder "must be a holder of a Florida Broker's
-license." StateCourse's principal holds California broker licence 01385024 and no Florida licence.
-So today there is no individual who can be named as school permit holder on a Florida application.
-No amount of build work moves that, and no other step is worth sequencing ahead of it.
-
-The second gate is close behind. Section 475.451(6), Fla. Stat. requires a Commission-prescribed
-pre-licence course delivered by distance learning to be taught by a **currently permitted
-instructor** of the school, and Rule 61J2-3.008(5)(b) requires the course to publish that
-instructor's address, e-mail address and telephone number along with the times they are available to
-assist students. An asynchronous Florida course therefore cannot be delivered — and cannot even
-render the contact block the rule requires — until a permitted instructor is registered.
-
-Both gates are recorded in `BLOCKING_GATES` with the routes out of each. Neither is resolved.
+Nothing has been submitted, no application has been started, and no Florida credential is held.
+`config/florida/school-permit-ledger.mjs` carries the machine-checked version;
+`config/florida/dbpr-application-package.mjs` carries the forms;
+`florida/regulatory/primary-text-readings.md` carries the readings.
 
 ---
 
-## Stage 0 — resolve the person gates
+## 1. The eligibility question, corrected
 
-**Owner: human. Nothing downstream can start.**
+**There is a lawful route, and it does not require anyone to hold a Florida broker's licence.**
 
-1. **School permit holder.** One of:
-   - the principal obtains a Florida broker's licence in their own right;
-   - a Florida-licensed broker is engaged and named as school permit holder; or
-   - FREC confirms in writing that s. 475.451(2)(a)'s statutory alternative — passing a
-     Commission-approved instructor's examination — remains open to a school permit holder despite
-     the narrower wording of Rule 61J2-17.011(2).
+Section 475.451(2)(a), Fla. Stat.:
 
-   The third route is worth asking about rather than assuming closed, because the rule that appears
-   to close it contains a citation that does not resolve. It sends the reader to "Section
-   475.25(2)(a), F.S." for qualifications for practice; s. 475.25(2) is the provision allowing a
-   licence to be revoked for the commission's own mistake, and has no such paragraph.
+> A school permitholder must be the holder of a license as a broker, either active or voluntarily
+> inactive, **or must have passed an instructor's examination approved by the commission.**
 
-2. **Permitted instructor.** A person qualifying under one of the three routes in
-   s. 475.451(2)(b)1 — business-related bachelor's degree plus a Florida broker's licence; bachelor's
-   degree plus extensive real estate experience plus a Florida broker's licence; or a
-   Commission-approved instructor's examination. Rule 61J2-17.011(1) makes "extensive" concrete:
-   three years full-time as a broker, including participation in closing at least five transactions
-   within the **12 months immediately preceding** the application. That last clause means the route
-   can lapse for someone who once qualified, so timing matters.
+Section 475.451(2)(b)1.c. gives the same alternative for the instructor permit: "Pass an instructor's
+examination approved by the commission."
 
-The instructor's examination route is the only one of the three that does not require a Florida
-broker's licence. If it is available for the permit holder as well, it collapses both gates into one
-examination.
+v1 let Rule 61J2-17.011(2), F.A.C. override that. It does not, for two independent reasons. The
+rule's operative sentence is **scoped** — a licensee must hold a Florida broker's licence *in order
+to satisfy the Broker license requirement*, which answers "which broker's licence counts", not "must
+there be one". And a rule cannot repeal a statute in any event: s. 120.52(8)(c), Fla. Stat. makes a
+rule that enlarges, modifies or contravenes its enabling law an invalid exercise of delegated
+authority. The rule's cited authority is the *instructor* experience provision, which would not
+support narrowing the permitholder alternatives. Its cross-reference to "s. 475.25(2)(a)" does not
+resolve at all — that section is about revoking a licence issued by mistake.
 
----
+**And DBPR administers it as two routes.** Three of the Department's own instruments say so:
 
-## Stage 1 — the written questions to FREC
+- **DBPR RE 5, Section I — METHOD OF QUALIFICATION:** "Holding a license as a Florida Broker, either
+  active or voluntarily inactive" **or** "Holder of a Florida Instructor's License".
+- **DBPR RE 6, Change of School Permit Holder:** "Holding a license as a broker ... or; **Passing
+  the Instructors Exam**".
+- **DBPR RE 3, Section I:** "**Real Estate Instructor Exam [1010]**" alongside the two degree-plus-
+  broker bases.
 
-**Owner: human, but the questions are drafted here.**
+**What this plan does not say.** It does not say Anatoliy is eligible, or approved. It says a
+statutory examination route appears available, subject to satisfying the general qualifications in
+s. 475.17(1), passing the Commission-approved instructor examination, filing the application, and
+the Department issuing the permit. Every one of those is outstanding. Eligibility is a determination
+the Department makes.
 
-Five things Florida's own rules do not settle. Each is carried in
-`config/florida/course-i-requirements.mjs` as an open question with what is planned pending an
-answer, so that no downstream consumer can treat a working assumption as a decided fact.
-
-1. **Examination item count.** Rule 61J2-3.008(4)(d) requires "at least 100 items, or 2 items per
-   instruction hour." Is the floor 100, or 120 (two per instruction hour over 60), or 126 (two per
-   hour over 63)? The 1.8-minute-per-item limit does not settle it — it is a ceiling on time, and
-   150 minutes is under the ceiling for all three counts. *Planned pending an answer: 126 items,
-   the highest floor, since "at least" permits exceeding any of them.*
-
-2. **School permit holder qualification.** The Rule 61J2-17.011(2) cross-reference to s. 475.25(2)(a)
-   and whether the statutory instructor's-examination alternative survives.
-
-3. **Absence in a distance course.** Section 475.17(2)(a)1 bars a completion notice where the student
-   has absences exceeding 8 classroom hours, and Rule 61J2-3.008(4)(a) makes the same ceiling a
-   condition of administering the examination. In an asynchronous course there is no class to be
-   absent from. How does the Commission measure it? *Planned pending an answer: track delivered
-   instructional time per student and treat undelivered time as the analogue.*
-
-4. **Pre-licence hardship.** Rule 61J2-3.008(4)(b)3.3 allows a correspondence route "by reason of a
-   hardship as defined by rule" and s. 475.17(2)(a)3 requires the route to exist, but Rule
-   61J2-3.013 defines hardship only for post-licensing and reactivation education. *Planned pending
-   an answer: no hardship route is built or advertised.*
-
-5. **Posting and reading in a school with no classroom.** Rule 61J2-17.015(2) requires the
-   anti-recruiting statement to be posted "in every classroom and administrative area" and read at
-   the beginning of each course; Rule 61J2-3.008(4)(b)3.g requires instructor availability to be
-   "posted in a prominent location." What satisfies both for an online school? *Planned pending an
-   answer: surface both at course start and in a persistent, reachable place inside the course
-   itself — not a footer.*
-
-A sixth, administrative: **which DBPR form** applies for the school permit and the instructor
-permit, and what each requires. See "What could not be obtained" below.
+**And there is a second route.** Nothing ties the permitholder to ownership. Section 475.451(2)(a)
+defines the permitholder functionally as "the individual who is responsible for directing the
+overall operation", RE 5 collects the permitholder and the company separately, and RE 6 exists to
+transfer a permit from one person to another. StateCourse may instead engage a qualified individual
+— a Florida broker, or an existing instructor permitholder — as school permitholder. That is a real
+role with real duties, not a name on a form.
 
 ---
 
-## Stage 2 — the school permit
+## 2. The forms, verified
 
-**Owner: regulator, on a human's application. Cannot start before Stage 0.**
+Every DBPR RE form is adopted by **Rule 61-35.027, F.A.C., "Real Estate Forms"**, and each form's
+header states that incorporation. Held under `florida/frec-sources/dbpr/forms/` and
+`.../dbpr/education/`, hashed in the source inventory.
 
-From s. 475.451, Fla. Stat. and Rule 61J2-17:
+| Form | Title on the form | Effective | Fee | Role here |
+|---|---|---|---|---|
+| **DBPR RE 3** | Application for Real Estate Instructor Permit | Nov 2015 | $62.75 | Stage 4 |
+| **DBPR RE 5** | Application for School Permit | May 2019 | $109.00 | Stage 5 |
+| **DBPR RE 6** | School Change of Status Transactions | — | — | Stage 6 — registers the instructor to the school |
+| **DBPR RE 9** | Application for Additional School Location | Jun 2015 | $50.00 | probably N/A — open question |
+| **DBPR RE 18** | Education Course Approval Application | — | **$0 for schools** | Stage 7 |
+| **DBPR RE 19** | FREC Continuing Education Provider Approval Application | — | — | open question |
+| **DBPR RE 20** | FREC Request for Instructor Evaluation | — | — | "approved providers only" per DBPR |
 
-- A permit from the Department, obtained **before** offering or conducting the course. Offering
-  without one is a second-degree misdemeanour under s. 475.451(4).
-- A named school permit holder who directs the overall operation and holds a Florida broker's
-  licence, and who also meets the school instructor requirements if actively teaching.
-- The permit holder meets the s. 475.17(1) qualifications for practice: at least 18, high school
-  diploma or equivalent, honest, truthful, trustworthy, of good character, and of good reputation
-  for fair dealing.
-- Character investigation, including fingerprints processed through the FBI if the Department
-  requires them. The Department "may" require them and "shall" investigate as it deems necessary —
-  not optional on the applicant's say-so.
-- **One permit per address or location** (Rule 61J2-17.013). What that means for a school with no
-  Florida classroom — whether the permit attaches to the out-of-state address of record — is an open
-  question for FREC.
-
----
-
-## Stage 3 — the instructor permit
-
-**Owner: regulator, on a human's application.**
-
-One of the three routes above, plus, on an ongoing basis (s. 475.451(2)(b)3; Rules 61J2-17.016 and
-61J2-3.011):
-
-- biennial renewal on the Rule 61-6.001 schedule;
-- at least **7 classroom or distance learning hours** in real estate subjects or instructional
-  techniques since the last issuance or renewal;
-- an unrenewed permit reverts to involuntarily inactive and expires after 2 years of inactivity.
+All applications go to: Department of Business and Professional Regulation, 2601 Blair Stone Road,
+Tallahassee, FL 32399-0783. RE 18 goes to the same street address, zip **32399-0750**.
 
 ---
 
-## Stage 4 — the course submission
+## 3. The one genuine gap on the eligibility path
 
-**Owner: build, mostly. This is the part this repository can actually produce — and the part that
-must not be started as curriculum until authoring is authorised.**
+**The instructor examination itself.** DBPR RE 3 offers "Real Estate Instructor Exam [1010]" as a
+qualification basis without saying where the examination is administered, what it covers, what it
+costs, or whether a candidate information booklet exists. Neither the forms-and-publications page
+nor the education page carries instructor-examination candidate materials.
 
-Rule 61J2-3.008(4)(b) requires the school to submit:
+This is a telephone call to the Division of Real Estate (Customer Contact Center, 850.487.1395), not
+a research task, and it is the **first** thing to do because everything else waits on it.
 
-- the **course materials**;
-- the **end-of-course examinations** — at least two forms, satisfying every constraint in (4)(d);
-- **a copy of the course, and access to the course, in the format in which it will be offered to the
-  student.**
+---
 
-That third item deserves emphasis because it is easy to under-read. It is not a PDF of the course.
-It is a working reviewer account against the real delivery. It is a build deliverable and a real
-one, and it is the same shape as the reviewer surfaces this project already produces for other
-jurisdictions.
+## 4. Written questions to DBPR/FREC
 
-Alongside those, the distance-education criteria in (4)(b)3 each need an artifact:
+Six, drafted in full in `config/florida/assessment-architecture.mjs` as `DRAFT_QUESTION_TO_DBPR` and
+`OPEN_DBPR_QUESTIONS`. In short:
 
-| Requirement | Cite | Artifact |
+1. **Item count** — "at least 100 items, or 2 items per instruction hour": 100, 120 or 126?
+2. **"Instruction hour"** — the 60 instruction hours, or all 63?
+3. **Form count** — the rule and the checklist say two; RE 18 says five. Which?
+4. **RE 19** — must a permitted school filing Course I also file it?
+5. **Absence in a distance course** — how is the 8-classroom-hour ceiling measured with no class?
+6. **Instructor examination logistics** — as above.
+
+Plus, not on the drafted letter but worth asking: whether a distance-only school with no Florida
+classroom has any "additional location" to declare under Rule 61J2-17.013's one-permit-per-location
+construction.
+
+---
+
+## 5. The stages, in order
+
+### Stage 1 — identify the instructor examination
+Owner: **human**. Everything waits on this. See §3.
+
+### Stage 2 — put the written questions
+Owner: **human**, letter drafted. Can run in parallel with Stage 1.
+
+### Stage 3 — pass the instructor examination
+Owner: **human**.
+
+### Stage 4 — instructor permit
+File **DBPR RE 3** under basis **[1010]**, with electronic fingerprints and $62.75. The other two
+bases require a Florida broker's licence and are closed on current facts. Owner: human, then
+**regulator**.
+
+### Stage 5 — school permit
+File **DBPR RE 5**, checking "Holder of a Florida Instructor's License" and giving the permit number
+from Stage 4, with $109.00. Note the form's own rider: if the permitholder also teaches, they must
+meet the school-instructor requirements — which, on this route, they already do, because the
+instructor permit *is* that requirement. Owner: human, then **regulator**.
+
+The Department may require fingerprints processed through the FBI and "shall make such investigation
+... as it may deem necessary" (s. 475.451(2)). Not optional on the applicant's say-so.
+
+### Stage 6 — register the instructor to the school
+**DBPR RE 6**, "Add/Terminate – Instructor". This is what makes the instructor "registered with such
+school" for Rule 61J2-3.008(5)(b), which is what lets the course publish the contact block the rule
+requires. Owner: human.
+
+### Stage 7 — course approval
+File **DBPR RE 18**: Section III "Sales Associate Pre-Licensure" + "Distance", Section IV "NEW",
+$0 for a permitted school.
+
+Section V attachments for an initial approval:
+
+| # | Attachment | Owner |
 |---|---|---|
-| Detailed course timeline, published before enrolment | 3.d | timeline document + a pre-enrolment surface |
-| Objective study that stated hours are actual hours | 3.e | time study |
-| Objective method giving only the allotted examination time | 3.f | described control + evidence it works |
-| Identity verified at enrolment, during participation, at completion | 3.c | policy + technical description |
-| Continuity plan for primary system failure | 3.b | operational plan |
-| Instructor and technical availability, posted prominently | 3.g | a real surface in the course |
-| Conformance to and order of the syllabus, objectives per session | 3.h | the curriculum itself |
-| Method of periodic assessment described | 3.h | assessment design document |
-| No hint, back or retry; duplication prevented | 3.i | examination engine behaviour + evidence |
-| No examination without all sessions completed | 3.i | progression gate |
-| Student certification statement | 3.j | a real control before the examination opens |
+| 1 | Course timed outline — subjects, major topics, subtopics | build |
+| 2 | **Learning objectives, three per hour** (3 × 60 = 180) | build |
+| 3 | Course materials with an explanation of delivery method | build |
+| 4 | DBPR RE 19 — *see open question 4* | — |
+| 5 | DBPR RE 20 per instructor + resume — *"Providers Only"* | — |
+| 6 | **Five** end-of-course examinations, distance only — *see open question 3* | build |
+| 7 | An answer key per form, referencing the page numbers each question and answer rest on | build |
 
-**The ordering constraint that shapes everything.** Rule 61J2-3.008(4)(d) requires each answer key to
-"reference the page number(s) containing the information upon which each question and correct answer
-is based." An item cannot cite a page that does not exist yet, so **the examination cannot be built
-before the curriculum is written and paginated.** Any plan that runs curriculum and examination
-authoring in parallel will produce an answer key that cannot be completed.
+Plus, from Rule 61J2-3.008(4)(b): **a copy of the course, and access to the course, in the format in
+which it will be offered to the student.** Not a PDF — a working reviewer account against the real
+delivery.
+
+And the distance-education criteria each need an artifact: the detailed timeline published before
+enrolment; the objective time study; the described examination-time control; identity verification
+at enrolment, participation and completion; the continuity plan; the posted instructor availability.
+
+**The ordering constraint.** Answer keys must cite page numbers, so **the examination cannot be
+authored before the curriculum is written and paginated.** Any plan running the two in parallel
+produces an answer key that cannot be completed.
 
 ---
 
-## Stage 5 — after approval, which is not the end
+## 6. After approval
 
-Rule 61J2-3.008(4)(c) makes a Florida course a maintained thing rather than a delivered one:
+Rule 61J2-3.008(4)(c) makes a Florida course a maintained thing:
 
 - approval runs **24 months**;
-- renewal is applied for **no more than 120 days** before expiry, and must include the course
-  materials, the end-of-course examinations, and a summary of what was updated;
-- a school may grade an examination within **15 days** after expiry if it received the materials on
-  or before the expiry date;
-- **students must be told the course number and the course expiration date upon enrolment** — a real
-  surface, not a footnote;
-- any **significant change** to an approved course needs Commission approval **at least 60 days**
-  before it is implemented;
-- as a **primary school** — one that develops its own material, which is what StateCourse would be —
-  courses are resubmitted for evaluation **every new edition**, and in no event more than **four
-  years** after original approval.
+- renewal no more than **120 days** before expiry, with course materials, the end-of-course
+  examinations, a summary of updates, and the original approval letter;
+- **15 days** grace to grade an examination after expiry;
+- students told the **course number and expiration date upon enrolment**;
+- **60 days** notice for any significant change;
+- as a **primary school**, resubmission every new edition and in no event more than **four years**
+  after original approval.
 
-And two record-retention obligations that begin at the first enrolment and are **different from each
-other**:
-
-- **5 years** — a copy of each course completion certificate (Rule 61J2-3.015(6)(f)); may be kept in
-  any readily retrievable electronic or digital format.
-- **3 years** — registration records, course rosters, attendance records, a file copy of each
-  examination and progress test, and all student answer sheets (s. 475.451(8), Fla. Stat.),
-  available to the Department for inspection and copying.
+Retention, two clocks over two record sets: **3 years** for registration records, rosters,
+attendance, examination copies and answer sheets (s. 475.451(8)); **5 years** for the school's copy
+of each completion certificate (Rule 61J2-3.015(6)(f)), in any readily retrievable electronic form.
 
 ---
 
-## What could not be obtained, and why nothing was invented in its place
+## 7. What StateCourse may say about Florida meanwhile
 
-**The application forms.** The DBPR real estate schools page was fetched and is held at
-`florida/frec-sources/dbpr/dbpr-real-estate-schools.html`. It turned out to be a navigation shell
-whose content is assembled client-side; it carries no application, no form number, and no fee
-schedule. The Department's public licensee search timed out on every attempt.
+Nothing asserting a credential it does not hold. Not house style — s. 475.4511(2), Fla. Stat.
+requires a school's publicity to be "based upon relevant facts and supported by evidence
+establishing their truth", and s. 475.451(3) makes several specific representations unlawful, with
+s. 475.451(4) making a breach of the permit provisions a second-degree misdemeanour.
 
-So **no DBPR form number appears anywhere in this Florida build**, and the permit ledger reports
-itself as unverified against the application. It is a floor built from the statute and the rules, not
-a transcription of the paperwork. A plausible-looking form number would be worse than none: it is
-exactly the kind of confident detail that survives review because it looks as though somebody
-checked it.
-
-Obtaining the forms — by telephone to the Division of Real Estate, or from the Commission's office
-at 400 W. Robinson Street, #N801, Orlando, Florida 32801, the address Rule 61J2-3.008(4)(b) itself
-gives for obtaining the syllabi — is a Stage 1 human task.
-
----
-
-## What StateCourse may say about Florida in the meantime
-
-Nothing that asserts a credential it does not hold. That is not house style here; it is
-s. 475.4511(2), Fla. Stat., which requires a school's publicity to be "based upon relevant facts and
-supported by evidence establishing their truth," and s. 475.451(3), which makes several specific
-representations unlawful outright.
-
-`FORBIDDEN_CLAIMS` in `config/florida/regulatory-manifest.mjs` encodes the prohibitions, and
-`scripts/florida-source-lock.mjs` fails the build if one appears in an artifact StateCourse
-publishes in its own voice. The public state registry record for Florida reads "Coming Soon" with no
-approval number, and `tests/florida-foundation.test.mjs` fails if that changes while no credential is
-held.
+`FORBIDDEN_CLAIMS` encodes the prohibitions and `scripts/florida-source-lock.mjs` fails the build if
+one appears in anything StateCourse publishes in its own voice. The public registry record reads
+"Coming Soon" with no approval number, and `tests/florida-foundation.test.mjs` fails if that changes
+while no credential is held.

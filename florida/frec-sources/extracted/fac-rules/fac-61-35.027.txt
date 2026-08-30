@@ -1,0 +1,77 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=19533295&type=1&file=61-35.027.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61-35.027 F.A.C.
+CHAPTER: 
+EFFECTIVE: 10/30/2017
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61-35.027.doc
+SHA256: 1f98fc782917df37df12fef32d224518afd8553e3509ee6abc2eafb6a0515972
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61-35.027 Real Estate Forms.
+The following forms can be obtained at www.myfloridalicense.com/dbpr/ or by contacting the Department of Business and Professional Regulation, 2601 Blair Stone Road, Tallahassee, FL 32399-0790, (850)487-1395:
+(1) Persons applying for a Sales Associate license shall use Form DBPR RE 1, Application for Sales Associate License, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08575" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08575
+(2) Persons applying for a Broker license shall use Form DBPR RE 2, Application for Broker License, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08576" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08576
+(3) Persons applying for Real Estate Instructor permit shall use Form DBPR RE 3, Application for Real Estate Instructor Permit, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08577" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08577
+(4) Persons applying for a school permit shall use Form DBPR RE 5, Application for School Permit, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08578" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08578
+(5) Persons applying to change the status of their real estate school license shall use Form DBPR RE 6, Real Estate School Change of Status Transactions, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08579" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08579
+(6) Persons applying for a real estate company license shall use Form DBPR RE 7, Application for Real Estate Company, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08580" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08580
+(7) Persons applying to open or close a license for a branch office shall use Form DBPR RE 8, Application for Branch Office, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08581" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08581
+(8) Persons applying to open or close a license for an additional school location shall use Form DBPR RE 9, Application for Additional School Location, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08582" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08582
+(9) Persons requesting a demographic change for real estate individuals shall use Form DBPR RE 10, Demographic Changes for Real Estate Individuals, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08583" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08583
+(10) Persons applying for change of status for Sales and Broker Sales Associates shall use Form DBPR RE 11, Change of Status for Sales Associates and Broker Sales Associates, effective April 2012, adopted and incorporated by reference, and available at 
+ HYPERLINK "http://www.flrules.org/Gateway/reference.asp?No=Ref-02006" 
+http://www.flrules.org/Gateway/reference.asp?No=Ref-02006
+(11) Persons requesting real estate company/sole proprietor transactions shall use Form DBPR RE 12, Real Estate Company/Sole Proprietor Transactions, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08584" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08584
+(12) Persons requesting broker transactions shall use Form DBPR RE 13, Broker (BK) Transactions, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08585" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08585
+(13) Persons requesting multiple permits for an instructor shall use Form DBPR RE 14, Multiple Permit Request for Instructor, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08586" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08586
+(14) Persons applying to downgrade a Broker license to a Sales Associate license shall use Form DBPR RE 15, Revert Broker License to Sales Associate License, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08587" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08587
+(15) Persons requesting Sales Associate or Broker Sales Associate transactions shall use Form DBPR RE 16, Sales Associate/Broker Sales Associate (SL/BL) Miscellaneous Transactions, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08588" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08588
+(16) Persons requesting to register a broker on a temporary, emergency basis shall use Form DBPR RE 17, Registration for Temporary Qualifying Broker, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08589" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08589
+(17) Any person or organization requesting continuing education course approval shall use Form DBPR RE 18, Continuing Education Course Approval Application, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08590" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08590
+(18) Any person or organization applying to provide continuing education shall use Form DBPR RE 19, Continuing Education Provider Approval Application, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08591" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08591
+(19) Persons requesting to instruct continuing education courses shall use Form DBPR RE 20, Request for Instructor Evaluation, effective September 2017, adopted and incorporated by reference, and available at 
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-08592" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-08592
+Rulemaking Authority 20.165(8), 455.203, 455.213, 455.2179, 475.15 FS Law Implemented 455.271, 455.2179, 475.15, 475.161, 475.17, 475.175, 475.180, 475.181, 475.182, 475.183, 475.215, 475.23, 475.24, 475.451, 559.79 FS. History
+New 12-23-12, Amended 10-30-17.
+urn:schemas-microsoft-com:office:smarttags
+urn:schemas-microsoft-com:office:smarttags	
+PlaceType
+urn:schemas-microsoft-com:office:smarttags	
+PlaceName
+Normal

@@ -2,32 +2,32 @@
  * Florida — the foundation, and the rule that no Florida content may exist without its authority.
  *
  * WHAT THESE TESTS ARE ABOUT. Florida is the first state in this repository whose authorities could
- * ALL be read. Texas's could not — the Secretary of State moved the Administrative Code behind a
- * JavaScript portal — so the Texas foundation tests are largely about proving that no content can
- * appear while the law behind it cannot be opened. Florida's problem is the opposite and needs a
- * different kind of test. When you can read everything, the failures that survive review are not
- * missing sources. They are numbers that were each correct and did not add up together, and
- * readings that were plausible and were never checked against the other rule that contradicts them.
+ * all be read, so the failures worth guarding against are not missing sources. They are numbers that
+ * were each correct and did not add up together, transcriptions that drifted, and — the one that
+ * actually happened — a conclusion that survived review because it was stated confidently.
  *
- * So the arithmetic is asserted here rather than trusted. A course can carry a correct 63, a
- * correct 60, a correct 3 and a correct 100 and still be non-compliant, and re-reading the
- * citations will never reveal it — only doing the addition does.
+ * PHASE 0 v1 GOT THE ELIGIBILITY LAW WRONG, AND THAT SHAPES THIS FILE. It reported that Rule
+ * 61J2-17.011(2), F.A.C. made a Florida broker's licence mandatory for the school permitholder and
+ * that no StateCourse individual could sign an application. Section 475.451(2)(a), Fla. Stat. says
+ * in terms that a permitholder "must be the holder of a license as a broker ... or must have passed
+ * an instructor's examination approved by the commission", and DBPR's own RE 5, RE 6 and RE 3 all
+ * carry that alternative on their face. An administrative rule with a cross-reference that does not
+ * even resolve had been allowed to override a statute. Several tests below exist specifically so
+ * that the corrected reading cannot quietly revert.
  *
- * THREE KINDS OF TEST BELOW, AND THE THIRD MATTERS MOST.
+ * FOUR KINDS OF TEST, AND THE LAST TWO MATTER MOST.
  *
- *   FIXED tests assert what is true now: one 63-hour course, nothing approved, nothing enrolling,
- *   no credential number anywhere, the syllabus locked at nineteen sections in the Commission's
- *   order, the hour split reconciling to the minute.
+ *   FIXED — what is true now: one 63-hour course, 19 sections, 180 objectives, nothing approved,
+ *   nothing enrolling, no credential number anywhere.
  *
- *   HONESTY tests assert that what this build does NOT know is still recorded as not known — that
- *   the OCR'd learning objectives are still flagged unverified, that the examination item floor is
- *   still recorded as unsettled, that the open conflicts are still open. These fail if somebody
- *   quietly upgrades a guess to a fact, which is the failure mode a well-written config invites.
+ *   ARITHMETIC — the totals, computed rather than trusted. A course can carry a correct 63, a
+ *   correct 60, a correct 3 and a correct 100 and still be non-compliant.
  *
- *   CONDITIONAL tests are vacuous today and become binding the moment a Florida curriculum file
- *   appears. They are written now, before the content, so that the content is written to them
- *   rather than the other way round. A conditional test written after the thing it guards is a test
- *   that has already failed to catch anything.
+ *   HONESTY — that what is not known is still recorded as not known, and that what is StateCourse's
+ *   choice is still labelled a choice rather than a rule. These fail when somebody upgrades a
+ *   judgement to a fact, which is the likeliest way this work gets undone.
+ *
+ *   CONDITIONAL — vacuous today, binding the moment a Florida curriculum file appears.
  */
 
 import assert from "node:assert/strict";
@@ -35,10 +35,14 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 
-import MANIFEST, { FORBIDDEN_CLAIMS, SCHOOL, SOURCES, REACHABILITY } from "../config/florida/regulatory-manifest.mjs";
+import MANIFEST, { AUTHORITY_CLASS, FORBIDDEN_CLAIMS, SCHOOL, SOURCES, REACHABILITY } from "../config/florida/regulatory-manifest.mjs";
 import SYLLABUS, { SECTIONS, SYLLABUS_REFERENCE } from "../config/florida/frec-course-i-syllabus.mjs";
 import REQUIREMENTS, { ASSESSMENT, COMPLETION, DISTANCE_DELIVERY, PERIODIC_ASSESSMENT, TIME } from "../config/florida/course-i-requirements.mjs";
-import LEDGER, { BLOCKING_GATES, floridaReadiness } from "../config/florida/school-permit-ledger.mjs";
+import ARCH, { OPEN_DBPR_QUESTIONS, PROCTORING, REGULATORY_MINIMUM_CONFIRMED, STATECOURSE_CONSERVATIVE_POLICY, TIER } from "../config/florida/assessment-architecture.mjs";
+import LEDGER, { ELIGIBILITY_MATRIX, INSTRUCTOR_PERMIT_ROUTES, floridaReadiness } from "../config/florida/school-permit-ledger.mjs";
+import PACKAGE, { EXAMINATION_FORM_COUNT_CONFLICT, FORMS } from "../config/florida/dbpr-application-package.mjs";
+import MATRIX, { DELIVERY_MATRIX } from "../config/florida/distance-delivery-matrix.mjs";
+import VIDEO, { CANDIDATES, REJECTED } from "../config/florida/video-instruction-plan.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const read = (rel) => fs.readFileSync(path.join(ROOT, rel), "utf8");
@@ -53,149 +57,31 @@ const curriculum = () => curriculumFiles().map((f) => read(`${CURRICULUM_DIR}/${
 
 /* ── the programme shape ─────────────────────────────────────────────────────────────────────── */
 
-test("Florida is ONE 63-hour course to sales associate licensure, not a stack of them", () => {
-  assert.equal(MANIFEST.PROGRAMS.length, 1, "Florida should model exactly one pre-license course");
+test("Florida is ONE 63-hour course to sales associate licensure", () => {
+  assert.equal(MANIFEST.PROGRAMS.length, 1);
   const course = MANIFEST.PROGRAMS[0];
-  assert.equal(course.totalHours, 63, "s. 475.17(2)(a)1, Fla. Stat. and Rule 61J2-3.008(1), F.A.C.");
+  assert.equal(course.totalHours, 63, "s. 475.17(2)(a)1, Fla. Stat.; Rule 61J2-3.008(1), F.A.C.");
   assert.equal(course.hourIsMinutes, 50, "Florida hours are 50 minutes, not 60");
-  assert.equal(course.hoursIncludeExamination, true, "the 63 hours are inclusive of examination");
-  assert.equal(MANIFEST.PATHWAY.totalPreLicenseHours, 63);
-  assert.equal(MANIFEST.PATHWAY.courseIds.length, 1);
+  assert.equal(course.hoursIncludeExamination, true);
+  assert.equal(MANIFEST.PATHWAY.courseAloneConfersLicence, false, "Rule 61J2-3.008(3)(a)");
 });
 
-test("completing the course is never the same thing as holding the licence", () => {
-  /* Rule 61J2-3.008(3)(a): satisfactory completion does not entitle anyone to a licence until they
-     have met all other requirements of law and passed the state examination DBPR administers. */
-  assert.equal(MANIFEST.PATHWAY.courseAloneConfersLicence, false);
-});
-
-/* ── the arithmetic, which is the whole point ────────────────────────────────────────────────── */
+/* ── arithmetic ──────────────────────────────────────────────────────────────────────────────── */
 
 test("the hour split reconciles to the minute, and only under the 50-minute reading", () => {
-  assert.equal(TIME.totalMinutes, 3150, "63 hours x 50 minutes");
-  assert.equal(TIME.instructionMinutes, 3000, "60 instruction hours x 50 minutes");
-  assert.equal(TIME.examinationMinutes, 150, "3 examination hours x 50 minutes");
-  assert.equal(TIME.instructionMinutes + TIME.examinationMinutes, TIME.totalMinutes,
-    "the syllabus's 60 + 3 must exhaust the rule's 63 exactly, with nothing left over");
+  assert.equal(TIME.totalMinutes, 3150);
+  assert.equal(TIME.instructionMinutes, 3000);
+  assert.equal(TIME.examinationMinutes, 150);
+  assert.equal(TIME.instructionMinutes + TIME.examinationMinutes, TIME.totalMinutes);
   assert.equal(TIME.splitReconciles, true);
 
-  /* The reading that does NOT work, asserted so that nobody re-introduces it: three CLOCK hours of
-     examination would make the course 3,180 minutes, which is 63.6 fifty-minute hours and breaches
-     the statutory ceiling that says the course "shall not exceed" 63. */
   const clockHourReading = TIME.instructionMinutes + TIME.examinationHours * 60;
   assert.ok(clockHourReading > TIME.totalMinutes,
     "a clock-hour examination would exceed the s. 475.17(2)(a)1 ceiling — this is why the 50-minute reading is the only coherent one");
 });
 
 test("online delivery buys no discount on time", () => {
-  /* Rule 61J2-3.008(4)(b)3.1 and 3.2: hour per classroom hour, and a 50-minute distance hour is the
-     equivalent of a 50-minute classroom hour. */
-  assert.equal(TIME.distanceHourEqualsClassroomHour, true);
-});
-
-test("the planned examination sits inside the 1.8 minute per item ceiling", () => {
-  assert.equal(ASSESSMENT.allottedMinutes, 150, "the examination's own three 50-minute hours");
-  assert.ok(ASSESSMENT.withinTimeCeiling,
-    `${ASSESSMENT.plannedItemCount} items in ${ASSESSMENT.allottedMinutes} minutes must not exceed ${ASSESSMENT.maximumMinutesPerItem} minutes per item`);
-  assert.ok(ASSESSMENT.minutesPerItemAsPlanned <= ASSESSMENT.maximumMinutesPerItem);
-});
-
-test("the examination is built to the highest item floor any reading of the rule produces", () => {
-  /* Rule 61J2-3.008(4)(d) says "at least 100 items, or 2 items per instruction hour", which is not
-     one number. Planning to the largest satisfies every reading, and "at least" permits it. */
-  const floors = ASSESSMENT.itemFloorCandidates.map((c) => c.items);
-  assert.deepEqual(floors, [100, 120, 126], "the three readings of the floor");
-  assert.equal(ASSESSMENT.plannedItemCount, Math.max(...floors));
-  for (const floor of floors) {
-    assert.ok(ASSESSMENT.plannedItemCount >= floor, `the plan must satisfy the floor of ${floor}`);
-  }
-});
-
-/* ── Florida-specific requirements that must not drift toward another state's ─────────────────── */
-
-test("the pass mark is 70% on the end-of-course examination", () => {
-  assert.equal(ASSESSMENT.passingScorePercent, 70, "Rule 61J2-3.008(4)(a), F.A.C.");
-});
-
-test("Florida does not require the pre-license examination to be proctored or centralized", () => {
-  /* s. 475.17(2)(a)2, Fla. Stat.: "Such examination shall not be required to be monitored or given
-     at a centralized location." This is a Florida fact and differs from several other states. */
-  assert.equal(ASSESSMENT.proctoringRequired, false);
-  assert.equal(ASSESSMENT.centralizedLocationRequired, false);
-  assert.equal(ASSESSMENT.examinationMustBeTimed, true, "unproctored does not mean untimed");
-
-  /* The authority matters as much as the answer. s. 455.2123 says a similar thing about CONTINUING
-     education and must never be cited for this. */
-  assert.match(ASSESSMENT.proctoringAuthority, /475\.17\(2\)\(a\)2/);
-  assert.doesNotMatch(ASSESSMENT.proctoringAuthority, /455\.2123/);
-});
-
-test("the examination constraints that shape the build are all present", () => {
-  assert.equal(ASSESSMENT.minimumFormCount, 2, "Rule 61J2-3.008(4)(d): at least two forms");
-  assert.equal(ASSESSMENT.maximumCrossFormDuplicationPercent, 15);
-  assert.equal(ASSESSMENT.minimumApplicationLevelPercent, 70);
-  assert.equal(ASSESSMENT.maximumKnowledgeLevelPercent, 10);
-  assert.equal(ASSESSMENT.answerChoicesPerItem, 4);
-  assert.equal(ASSESSMENT.answerKeyCitesSourcePages, true, "each answer key must cite the page numbers the item rests on");
-  assert.equal(ASSESSMENT.examinationOrderMustNotFollowCourseOrder, true);
-  assert.equal(ASSESSMENT.itemsMayNotReferToCourseMaterial, true);
-  assert.deepEqual([...ASSESSMENT.examinationAidsProhibited], ["hint", "back", "retry"]);
-  assert.equal(ASSESSMENT.allSyllabusSessionsRequiredBeforeExamination, true);
-  assert.equal(ASSESSMENT.retakeWaitDays, 30);
-  assert.equal(ASSESSMENT.retakesPermittedWithinOneYear, 1);
-  assert.equal(ASSESSMENT.differentFormOnRetakeOrRepeat, true);
-});
-
-test("Florida's two record retention periods are kept apart", () => {
-  /* Rule 61J2-3.015(6)(f) sets five years for the completion certificate; s. 475.451(8), Fla. Stat.
-     sets three for rosters, attendance, examination copies and answer sheets. Applying one to both
-     would be wrong in one direction or the other. */
-  assert.equal(COMPLETION.certificateRetentionYears, 5);
-  assert.equal(COMPLETION.schoolRecordsRetentionYears, 3);
-  assert.notEqual(COMPLETION.certificateRetentionYears, COMPLETION.schoolRecordsRetentionYears);
-});
-
-test("the completion certificate carries every field the Commission prescribes", () => {
-  /* Rule 61J2-3.015(6)(a). The two StateCourse cannot fill are exactly the two it does not hold. */
-  assert.equal(COMPLETION.certificateFields.length, 11);
-  for (const field of ["School License Number", "Course Number", "Course Title: Course I", "Exam Date"]) {
-    assert.ok(COMPLETION.certificateFields.includes(field), `certificate must carry "${field}"`);
-  }
-  assert.equal(SCHOOL.schoolLicenceNumber, null, "and StateCourse holds no school licence number to put in it");
-  assert.equal(SCHOOL.courseNumber, null, "nor a course number");
-});
-
-test("the prescribed statements are quoted exactly, not paraphrased", () => {
-  assert.equal(
-    REQUIREMENTS.CERTIFICATION_STATEMENT,
-    "I certify that I personally completed all assignments and have not duplicated any portion of the end-of-course examination prior to the taking of the final examination.");
-  assert.match(REQUIREMENTS.ANTI_RECRUITING_STATEMENT, /^Recruiting for employment opportunities for any real estate brokerage firm must be accomplished outside the prescribed instructional time\./);
-  assert.match(REQUIREMENTS.COMPLETION_CERTIFICATE_STATEMENT, /in accordance with the requirements of the Florida Real Estate Commission/);
-});
-
-test("every distance-delivery obligation is enumerated and none is yet held", () => {
-  assert.ok(DISTANCE_DELIVERY.length >= 21, "Rule 61J2-3.008(4)(b)3 carries a long list and all of it binds");
-  assert.equal(DISTANCE_DELIVERY.filter((o) => o.held).length, 0, "no Florida course exists, so nothing can be held");
-  for (const o of DISTANCE_DELIVERY) {
-    assert.ok(o.cite && o.requirement, `${o.id} must carry a citation and a requirement`);
-  }
-  /* The three that are easiest to under-build, named so a change has to be deliberate. */
-  const ids = DISTANCE_DELIVERY.map((o) => o.id);
-  for (const id of ["identity-verification", "objective-time-study", "gate-examination-on-completion"]) {
-    assert.ok(ids.includes(id), `${id} must be on the obligation list`);
-  }
-});
-
-test("Florida requires periodic assessment and does not require written reflection", () => {
-  /* Rule 61J2-3.008(4)(b)3.h requires the METHOD of periodic assessment to exist and be described.
-     It prescribes no form. So the product rule stands: reflection stays optional and no artificial
-     length minimum is imposed. This test exists so that "assessment" is not later read as importing
-     a requirement Florida never made. */
-  assert.equal(PERIODIC_ASSESSMENT.required, true);
-  assert.equal(PERIODIC_ASSESSMENT.mustBeDescribedInSubmission, true);
-  assert.equal(PERIODIC_ASSESSMENT.formPrescribedByFlorida, false);
-  assert.equal(PERIODIC_ASSESSMENT.writtenReflectionRequiredByAuthority, false);
-  assert.equal(PERIODIC_ASSESSMENT.minimumCharacterCountRequiredByAuthority, false);
+  assert.equal(TIME.distanceHourEqualsClassroomHour, true, "Rule 61J2-3.008(4)(b)3.1 and 3.2");
 });
 
 /* ── the syllabus lock ───────────────────────────────────────────────────────────────────────── */
@@ -203,72 +89,379 @@ test("Florida requires periodic assessment and does not require written reflecti
 test("the syllabus is nineteen sections in the Commission's own order", () => {
   assert.equal(SECTIONS.length, 19);
   assert.deepEqual(SYLLABUS.prescribedOrder(), Array.from({ length: 19 }, (_, i) => i + 1),
-    "Rule 61J2-3.008(4)(b)3.h makes the ORDER a compliance property, not an editorial preference");
+    "Rule 61J2-3.008(4)(b)3.h makes the ORDER a compliance property");
   assert.equal(SECTIONS[0].title, "Course Overview: The Real Estate Business");
-  assert.equal(SECTIONS[18].number, 19);
 });
 
-test("the syllabus lock points at the revision the rule actually incorporates", () => {
-  assert.equal(SYLLABUS_REFERENCE.id, "Ref-14599");
-  assert.equal(SYLLABUS_REFERENCE.revision, "January 1, 2023");
-  assert.match(SYLLABUS_REFERENCE.incorporatedBy, /61J2-3\.008\(4\)\(b\)/);
-  assert.ok(fs.existsSync(path.join(ROOT, SYLLABUS_REFERENCE.localCopy)), "the incorporated syllabus must be held on disk");
+test("the syllabus carries 180 verified objectives and the sum matches the total", () => {
+  /* 180, not the 181 or 182 that two OCR passes produced. And 180 is corroborated rather than
+     merely counted: DBPR RE 18 requires learning objectives at three per hour, and 3 x 60 = 180. */
+  assert.equal(SYLLABUS.TOTAL_LEARNING_OBJECTIVES, 180);
+  const summed = SECTIONS.reduce((n, s) => n + s.learningObjectives.length, 0);
+  assert.equal(summed, SYLLABUS.TOTAL_LEARNING_OBJECTIVES, "declared total must equal the sum of the section counts");
+  assert.deepEqual(SECTIONS.map((s) => s.learningObjectiveCount),
+    [7, 11, 7, 10, 9, 9, 10, 8, 9, 10, 11, 9, 10, 10, 6, 16, 8, 9, 11]);
+});
+
+test("the syllabus lock's own verify() passes on all four failure conditions", () => {
+  /* total != sum of sections; an objective without a page reference; an objective left OCR-only;
+     section order departing from the incorporated syllabus. */
+  assert.deepEqual(SYLLABUS.verify(), []);
+});
+
+test("every learning objective carries the printed page it appears on", () => {
+  for (const s of SECTIONS) {
+    for (const o of s.learningObjectives) {
+      assert.ok(Number.isInteger(o.page) && o.page >= 1 && o.page <= 59,
+        `section ${s.number} objective ${o.n} must carry a usable page reference`);
+      assert.ok(o.text && o.text.trim().length > 3, `section ${s.number} objective ${o.n} must carry text`);
+    }
+  }
+});
+
+test("no objective rests on OCR alone", () => {
+  assert.equal(SYLLABUS_REFERENCE.objectivesVerifiedAgainstSource, true);
+  assert.equal(SYLLABUS_REFERENCE.transcribedCopy.hasTextLayer, true,
+    "the transcription source must be the copy with a real text layer, not the scan");
+  assert.equal(SYLLABUS_REFERENCE.citedCopy.hasTextLayer, false,
+    "the copy the rule cites is the scan — recorded so the difference is never lost");
+  assert.ok(fs.existsSync(path.join(ROOT, SYLLABUS_REFERENCE.citedCopy.localCopy)));
+  assert.ok(fs.existsSync(path.join(ROOT, SYLLABUS_REFERENCE.transcribedCopy.localCopy)));
+});
+
+test("the OCR reconciliation record survives and resolves every disagreement", () => {
+  const rec = JSON.parse(read("florida/frec-sources/extracted/syllabus-reconciliation.json"));
+  assert.equal(rec.verifiedTotal, 180);
+  assert.equal(rec.ocrTotal, 181, "the OCR cross-check total, kept so the discrepancy is visible");
+  assert.equal(rec.sections.length, 19);
+  const disagreed = rec.sections.filter((s) => s.discrepancy);
+  assert.deepEqual(disagreed.map((s) => s.number), [1, 3, 6, 7, 15]);
+  for (const s of disagreed) {
+    assert.ok(s.resolution && s.resolution.length > 40, `section ${s.number} discrepancy must carry a written resolution`);
+  }
+  for (const s of rec.sections) {
+    assert.equal(s.objectives.length, s.verifiedObjectiveCount);
+    for (const o of s.objectives) assert.ok(o.page, "every reconciled objective carries a page");
+  }
 });
 
 test("Florida prescribes no per-section hours, so none is invented", () => {
   assert.equal(TIME.perSectionHoursPrescribedByFlorida, false);
-  for (const section of SECTIONS) {
-    assert.equal(section.hours, undefined,
-      `section ${section.number} must not carry an hour allocation — the syllabus allocates none and Rule 61J2-3.008(4)(b)3.e makes any allocation something StateCourse must prove by objective study`);
+  for (const s of SECTIONS) {
+    assert.equal(s.hours, undefined,
+      `section ${s.number} must not carry an hour allocation — Rule 61J2-3.008(4)(b)3.e makes any allocation something StateCourse must prove by objective study`);
   }
 });
 
-/* ── honesty: what is not known stays recorded as not known ──────────────────────────────────── */
+/* ── eligibility: the correction ─────────────────────────────────────────────────────────────── */
 
-test("the OCR'd learning objectives are still flagged as unverified against the source", () => {
-  /* The Commission publishes Ref-14599 as a scan with no text layer. Until a person reads the
-     objectives against the PDF, they are a working index and not a certification. Flipping this
-     flag without doing the reading is the exact failure this test exists to catch, which is why the
-     count is held alongside it. */
-  assert.equal(SYLLABUS_REFERENCE.hasTextLayer, false);
-  assert.equal(SYLLABUS_REFERENCE.objectivesVerifiedAgainstSource, false,
-    "if this is now true, the objectives must have been read against the PDF and the count below re-checked");
-  assert.equal(SYLLABUS.TOTAL_LEARNING_OBJECTIVES, 181,
-    "the objective count as recovered by OCR — a change here means the transcription changed and must be re-reviewed");
-  for (const section of SECTIONS) {
-    assert.equal(section.learningObjectives.length, section.learningObjectiveCount,
-      `section ${section.number} objective count must match the objectives actually carried`);
+test("the statute's examination alternative is recorded, and no rule is allowed to erase it", () => {
+  const statute = LEDGER.CONTROLLING_TEXTS.find((t) => t.cite === "s. 475.451(2)(a), Fla. Stat.");
+  assert.ok(statute, "the controlling statutory text must be quoted in full");
+  assert.match(statute.quote, /or must have passed an instructor’s examination approved by the commission/);
+  assert.equal(statute.authorityClass, LEDGER.AUTHORITY_CLASS.STATUTE);
+
+  const rule = LEDGER.CONTROLLING_TEXTS.find((t) => t.cite === "Rule 61J2-17.011(2), F.A.C.");
+  assert.ok(rule.defect, "the non-resolving cross-reference must stay recorded");
+  assert.match(rule.defect, /475\.25\(2\)/);
+  assert.match(rule.interactionWithStatute, /Scoped, not exclusive/,
+    "the rule conditions the broker branch; it does not close the examination branch");
+});
+
+test("there is no blocking gate, and nobody is asserted eligible", () => {
+  assert.equal(SCHOOL.blockingGate, null, "the v1 blocking gate rested on a misreading and must not return");
+  assert.equal(SCHOOL.lawfulRouteToSchoolPermitExists, true);
+  assert.equal(SCHOOL.lawfulRouteToInstructorPermitExists, true);
+  assert.equal(SCHOOL.routeTaken, false);
+  assert.equal(SCHOOL.anyPersonAssertedEligible, false, "eligibility is the Department's determination, not this repository's");
+  assert.equal(LEDGER.APPLICANT.eligibilityAsserted, false);
+  assert.equal(LEDGER.APPLICANT.approvalAsserted, false);
+});
+
+test("the eligibility matrix carries all seven rows with honest statuses", () => {
+  assert.equal(ELIGIBILITY_MATRIX.length, 7);
+  assert.deepEqual(ELIGIBILITY_MATRIX.map((r) => r.row), [1, 2, 3, 4, 5, 6, 7]);
+  const byRow = Object.fromEntries(ELIGIBILITY_MATRIX.map((r) => [r.row, r]));
+  assert.match(byRow[1].status, /^NOT MET/, "the broker route is genuinely closed on these facts");
+  assert.match(byRow[2].status, /^AVAILABLE/, "the examination route to the school permit is open");
+  assert.match(byRow[3].status, /^AVAILABLE/, "the examination route to the instructor permit is open");
+  assert.match(byRow[4].status, /^NOT HELD/);
+  assert.match(byRow[5].status, /^CONDITIONAL/, "the teaching permitholder requirement applies only in a stated case");
+  for (const r of ELIGIBILITY_MATRIX) {
+    assert.ok(r.subject && r.status && r.stateCoursePosition, `row ${r.row} must be complete`);
   }
 });
 
-test("the examination item floor is still recorded as unsettled by the rule", () => {
-  assert.equal(ASSESSMENT.itemFloorSettledByRule, false,
-    "Rule 61J2-3.008(4)(d) gives three readings; planning to the safest is not the same as knowing the answer");
+test("the instructor examination route requires no broker licence and is open", () => {
+  const exam = INSTRUCTOR_PERMIT_ROUTES.find((r) => r.id === "instructor-examination");
+  assert.equal(exam.requiresFloridaBrokerLicence, false);
+  assert.equal(exam.openToStateCourse, true);
+  assert.equal(exam.formCode, "1010", "DBPR RE 3 Section I basis code");
+  const closed = INSTRUCTOR_PERMIT_ROUTES.filter((r) => r.requiresFloridaBrokerLicence);
+  assert.equal(closed.length, 2);
+  for (const r of closed) assert.equal(r.openToStateCourse, false);
 });
 
-test("the open conflicts between the authorities are still open", () => {
-  const conflicts = MANIFEST.openConflicts();
-  assert.ok(conflicts.length >= 6, "conflicts found in Phase 0 must not quietly disappear");
-  const ids = conflicts.map((c) => c.sourceId);
-  assert.ok(ids.includes("FAC-61J2-17.011"), "the unresolvable s. 475.25(2)(a) cross-reference must stay recorded");
-  assert.ok(ids.includes("FAC-61J2-3.008"), "the examination item-floor ambiguity must stay recorded");
-  assert.ok(ids.includes("FAC-61J2-3.013"), "the missing pre-license hardship definition must stay recorded");
+test("the school may designate someone other than its principal as permitholder", () => {
+  assert.match(LEDGER.DESIGNATION_ANALYSIS.answer, /^Yes/);
+  assert.ok(LEDGER.DESIGNATION_ANALYSIS.reasoning.includes("475.451(2)(a)"));
+  assert.ok(LEDGER.DESIGNATION_ANALYSIS.constraint, "the role carries real duties and that must be said");
 });
 
-test("the questions Florida's rules do not answer are carried, not closed", () => {
-  assert.ok(REQUIREMENTS.OPEN_QUESTIONS.length >= 5);
-  for (const q of REQUIREMENTS.OPEN_QUESTIONS) {
-    assert.ok(q.question && q.cite && q.plannedPending, `${q.id} must carry a question, a citation, and what is planned pending an answer`);
+test("readiness reports NOT READY for accurate reasons", () => {
+  const r = floridaReadiness();
+  assert.equal(r.status, "NOT READY");
+  assert.equal(r.lawfulRouteToSchoolPermitExists, true);
+  assert.equal(r.anyPersonAssertedEligible, false);
+  assert.equal(r.anyApprovalAsserted, false);
+  assert.equal(r.heldCount, 0);
+  assert.doesNotMatch(r.reason, /blocked/i, "the reason must not describe a blocker that does not exist");
+});
+
+/* ── the DBPR application package ────────────────────────────────────────────────────────────── */
+
+test("the current DBPR forms are held, with verified numbers and titles", () => {
+  const byId = Object.fromEntries(FORMS.map((f) => [f.id, f]));
+  assert.equal(byId["RE-3"].titleOnForm, "Application for Real Estate Instructor Permit");
+  assert.equal(byId["RE-5"].titleOnForm, "Application for School Permit");
+  assert.equal(byId["RE-9"].titleOnForm, "Application for Additional School Location");
+  assert.equal(byId["RE-18"].titleOnForm, "Education Course Approval Application");
+  for (const f of FORMS) {
+    assert.ok(f.number.startsWith("DBPR RE "), `${f.id} must carry its DBPR number`);
+    assert.ok(fs.existsSync(path.join(ROOT, f.localCopy)), `${f.id} must be held on disk`);
+    assert.ok(f.url.startsWith("https://www2.myfloridalicense.com/"), `${f.id} must record where it came from`);
+  }
+  assert.equal(PACKAGE.FORMS_ADOPTED_BY.rule, "Rule 61-35.027, F.A.C.",
+    "form numbers must be traceable to the rule that adopts them, not to recollection");
+});
+
+test("DBPR's own forms carry the examination route on their face", () => {
+  const re5 = PACKAGE.formById("RE-5");
+  assert.equal(re5.qualificationRoutesOnForm.length, 2);
+  assert.ok(re5.qualificationRoutesOnForm.some((r) => r.requiresFloridaBrokerLicence === false),
+    "RE 5 must offer a route that does not require a broker licence");
+  assert.match(re5.noteOnForm, /must meet requirements of school instructor/);
+
+  const re3 = PACKAGE.formById("RE-3");
+  assert.equal(re3.qualificationRoutesOnForm[0].code, "1010");
+  assert.equal(re3.qualificationRoutesOnForm[0].requiresFloridaBrokerLicence, false);
+
+  const re6 = PACKAGE.formById("RE-6");
+  assert.ok(re6.qualificationRoutesOnForm.some((r) => /Instructors Exam/i.test(r.label)));
+});
+
+test("RE 18 governs Course I despite its misleading running header", () => {
+  const re18 = PACKAGE.formById("RE-18");
+  assert.equal(re18.headerTitleIsMisleading, true);
+  assert.ok(re18.courseTypesOnForm.includes("Sales Associate Pre-Licensure"));
+  assert.ok(re18.deliveryMechanismsOnForm.includes("Distance"));
+  assert.ok(re18.initialApprovalAttachments.some((a) => /[Tt]hree per hour/.test(a)),
+    "the three-objectives-per-hour requirement must be recorded");
+});
+
+test("the two-versus-five examination conflict is recorded, not averaged away", () => {
+  const c = EXAMINATION_FORM_COUNT_CONFLICT;
+  assert.equal(c.ruleMinimum, 2);
+  assert.equal(c.checklistSays, 2);
+  assert.equal(c.applicationSays, 5);
+  assert.equal(c.openQuestion, true);
+  assert.match(c.stateCourseposture, /provider policy/i);
+});
+
+/* ── assessment: three tiers, never mixed ────────────────────────────────────────────────────── */
+
+test("every confirmed assessment value carries the CONFIRMED tier and a citation", () => {
+  for (const [key, entry] of Object.entries(REGULATORY_MINIMUM_CONFIRMED)) {
+    assert.equal(entry.tier, TIER.CONFIRMED, `${key} must be in the confirmed tier`);
+    assert.ok(entry.cite, `${key} must carry a citation`);
+    assert.ok(entry.quote, `${key} must carry the quoted authority`);
   }
 });
 
-test("no form number is recorded anywhere, because none could be identified", () => {
-  /* The DBPR schools page served a navigation shell. A plausible-looking form number is worse than
-     none, so the ledger carries none and reports itself unverified against the application. */
-  const ledgerText = read("config/florida/school-permit-ledger.mjs");
-  assert.doesNotMatch(ledgerText, /\bDBPR\s+RE\s*\d+\b/, "no DBPR form number may be guessed into the ledger");
-  assert.equal(floridaReadiness().ledgerVerifiedAgainstApplication, false);
-  assert.equal(floridaReadiness().ledgerIsAFloorNotAList, true);
+test("100 items is the confirmed regulatory minimum and 126 is provider policy", () => {
+  assert.equal(REGULATORY_MINIMUM_CONFIRMED.minimumItems.value, 100);
+  assert.equal(REGULATORY_MINIMUM_CONFIRMED.minimumItems.tier, TIER.CONFIRMED);
+
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.value, 126);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.tier, TIER.POLICY);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.isNotARegulatoryMinimum, true,
+    "126 must never be presented as something Florida requires");
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.regulatoryMinimumIs, 100);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.configurable, true,
+    "the engine must stay configurable until DBPR answers");
+  assert.ok(STATECOURSE_CONSERVATIVE_POLICY.itemCount.costOfThisChoice,
+    "a conservative choice with a cost must state the cost");
+
+  assert.equal(ASSESSMENT.plannedItemCountIsProviderPolicy, true);
+  assert.equal(ASSESSMENT.regulatoryMinimumItems, 100);
+});
+
+test("five examination forms is provider policy over a rule floor of two", () => {
+  assert.equal(REGULATORY_MINIMUM_CONFIRMED.minimumFormCount.value, 2);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.value, 5);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.isNotARegulatoryMinimum, true);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.configurable, true);
+});
+
+test("the examination fits its time ceiling at both the planned count and the minimum", () => {
+  const C = ARCH.COMPUTED;
+  assert.equal(C.allottedMinutes, 150);
+  assert.ok(C.withinTimeCeilingAsPlanned, `${C.plannedItems} items in 150 minutes must sit under 1.8 min/item`);
+  assert.ok(C.withinTimeCeilingAtMinimum);
+  assert.ok(C.minutesPerItemAsPlanned < C.minutesPerItemAtRegulatoryMinimum,
+    "the conservative choice is measurably tighter on students, and the numbers must show it");
+});
+
+test("proctoring is NOT REQUIRED and NOT PROHIBITED — the difference is load-bearing", () => {
+  assert.equal(PROCTORING.required, false);
+  assert.equal(PROCTORING.prohibited, false, "the statute removes an obligation; it does not impose a ban");
+  assert.match(PROCTORING.cite, /475\.17\(2\)\(a\)2/);
+  assert.match(PROCTORING.doNotCite, /455\.2123/, "the wrong authority must stay named as wrong");
+  assert.equal(ASSESSMENT.proctoringRequired, false);
+  assert.equal(ASSESSMENT.proctoringProhibited, false);
+});
+
+test("the confidentiality requirement is derived from rules rather than asserted as preference", () => {
+  assert.ok(ARCH.CONFIDENTIALITY.derivedFrom.length >= 4);
+  for (const d of ARCH.CONFIDENTIALITY.derivedFrom) assert.match(d, /61J2-3\.008/);
+  assert.ok(ARCH.CONFIDENTIALITY.retentionInteraction, "confidential is not the same as undocumented");
+});
+
+test("the open DBPR questions are carried with readings and a drafted letter", () => {
+  assert.ok(OPEN_DBPR_QUESTIONS.length >= 6);
+  for (const q of OPEN_DBPR_QUESTIONS) {
+    assert.equal(q.tier, TIER.OPEN);
+    assert.ok(q.question && q.pendingBehaviour, `${q.id} must state the question and what is done pending an answer`);
+  }
+  const ids = OPEN_DBPR_QUESTIONS.map((q) => q.id);
+  for (const id of ["itemCountBasis", "formCount", "instructionHourDefinition", "re19ForSchools"]) {
+    assert.ok(ids.includes(id), `${id} must stay open`);
+  }
+  assert.ok(ARCH.DRAFT_QUESTION_TO_DBPR.length > 800, "the letter must be drafted, not described");
+  assert.match(ARCH.DRAFT_QUESTION_TO_DBPR, /at least 100 items, or 2 items per instruction hour/);
+  assert.match(ARCH.DRAFT_QUESTION_TO_DBPR, /not currently permitted/, "the letter must not imply a status StateCourse lacks");
+});
+
+test("the confirmed Florida-specific assessment values are what Florida says", () => {
+  assert.equal(ASSESSMENT.passingScorePercent, 70);
+  assert.equal(ASSESSMENT.maximumCrossFormDuplicationPercent, 15);
+  assert.equal(ASSESSMENT.minimumApplicationLevelPercent, 70);
+  assert.equal(ASSESSMENT.maximumKnowledgeLevelPercent, 10);
+  assert.equal(ASSESSMENT.answerChoicesPerItem, 4);
+  assert.equal(ASSESSMENT.answerKeyCitesSourcePages, true);
+  assert.equal(ASSESSMENT.examinationOrderMustNotFollowCourseOrder, true);
+  assert.deepEqual([...ASSESSMENT.examinationAidsProhibited], ["hint", "back", "retry"]);
+  assert.equal(ASSESSMENT.allSyllabusSessionsRequiredBeforeExamination, true);
+  assert.equal(ASSESSMENT.retakeWaitDays, 30);
+  assert.equal(ASSESSMENT.retakesPermittedWithinOneYear, 1);
+  assert.equal(ASSESSMENT.differentFormOnRetakeOrRepeat, true);
+});
+
+/* ── distance delivery ───────────────────────────────────────────────────────────────────────── */
+
+test("the delivery matrix covers every dimension and separates law from policy", () => {
+  assert.ok(DELIVERY_MATRIX.length >= 18);
+  for (const r of DELIVERY_MATRIX) {
+    assert.ok(r.dimension, "every row names its dimension");
+    assert.ok(r.required !== null || r.policy !== null, `${r.id} must state either a requirement or a policy`);
+    if (r.required !== null) assert.ok(r.requiredCite, `${r.id} states a requirement and must cite it`);
+    assert.ok(r.engine, `${r.id} must say what the engine has to do`);
+  }
+  assert.ok(MATRIX.expresslyRequired().length >= 15);
+  assert.ok(MATRIX.policyOnly().length >= 3);
+});
+
+test("seat time alone does not satisfy Florida", () => {
+  const row = DELIVERY_MATRIX.find((r) => r.id === "seat-time-not-sufficient");
+  assert.ok(row, "the question must be answered explicitly");
+  assert.match(row.required, /^No\./);
+  assert.match(row.engine, /may not be completable by elapsed time alone/);
+});
+
+test("identity is verified at three moments, not one", () => {
+  const row = DELIVERY_MATRIX.find((r) => r.id === "student-identity");
+  assert.match(row.required, /enrollment, course participation and course completion/);
+  assert.match(row.engine, /Three distinct verifications/);
+});
+
+test("accessibility and captions are recorded as StateCourse policy, not Florida law", () => {
+  for (const id of ["accessibility", "captions-transcripts"]) {
+    const row = DELIVERY_MATRIX.find((r) => r.id === id);
+    assert.equal(row.required, null, `${id} must not claim a Florida requirement that does not exist`);
+    assert.ok(row.policy, `${id} must still carry a StateCourse standard`);
+    assert.match(row.requiredCite, /Nothing found|REPEALED|repealed/);
+  }
+});
+
+test("Florida requires periodic assessment and does not require written reflection", () => {
+  assert.equal(PERIODIC_ASSESSMENT.required, true);
+  assert.equal(PERIODIC_ASSESSMENT.formPrescribedByFlorida, false);
+  assert.equal(PERIODIC_ASSESSMENT.writtenReflectionRequiredByAuthority, false);
+  assert.equal(PERIODIC_ASSESSMENT.minimumCharacterCountRequiredByAuthority, false);
+});
+
+test("every distance-delivery obligation is enumerated and none is yet held", () => {
+  assert.ok(DISTANCE_DELIVERY.length >= 21);
+  assert.equal(DISTANCE_DELIVERY.filter((o) => o.held).length, 0);
+});
+
+test("Florida's two record retention periods are kept apart", () => {
+  assert.equal(COMPLETION.certificateRetentionYears, 5, "Rule 61J2-3.015(6)(f)");
+  assert.equal(COMPLETION.schoolRecordsRetentionYears, 3, "s. 475.451(8), Fla. Stat.");
+  assert.notEqual(COMPLETION.certificateRetentionYears, COMPLETION.schoolRecordsRetentionYears);
+});
+
+test("the completion certificate carries every prescribed field", () => {
+  assert.equal(COMPLETION.certificateFields.length, 11);
+  for (const f of ["School License Number", "Course Number", "Course Title: Course I", "Exam Date"]) {
+    assert.ok(COMPLETION.certificateFields.includes(f));
+  }
+  assert.equal(SCHOOL.schoolLicenceNumber, null);
+  assert.equal(SCHOOL.courseNumber, null);
+});
+
+test("the prescribed statements are quoted exactly", () => {
+  assert.equal(REQUIREMENTS.CERTIFICATION_STATEMENT,
+    "I certify that I personally completed all assignments and have not duplicated any portion of the end-of-course examination prior to the taking of the final examination.");
+  assert.match(REQUIREMENTS.ANTI_RECRUITING_STATEMENT, /^Recruiting for employment opportunities/);
+  assert.match(REQUIREMENTS.COMPLETION_CERTIFICATE_STATEMENT, /Florida Real Estate Commission/);
+});
+
+/* ── video ───────────────────────────────────────────────────────────────────────────────────── */
+
+test("video is planned selectively, with rejected candidates recorded", () => {
+  assert.ok(CANDIDATES.length >= 5 && CANDIDATES.length <= 12, "selective, not continuous coverage");
+  assert.ok(REJECTED.length >= 6, "a plan listing only what was chosen hides what was considered");
+  for (const r of REJECTED) assert.ok(r.reason && r.betterInstrument, "each rejection names a reason and a better instrument");
+  for (const v of CANDIDATES) {
+    assert.ok(v.syllabusSection && v.objectives.length > 0, `${v.id} must tie to syllabus objectives`);
+    assert.ok(v.placement && v.whyVideoBeatsText && v.estimatedMinutes, `${v.id} must be fully specified`);
+    assert.ok(v.presenterDocumentBalance && v.postVideoActivity, `${v.id} must state balance and follow-on activity`);
+    assert.equal(typeof v.sourceHeld, "boolean", `${v.id} must say whether its source is held`);
+    if (v.sourceHeld === false) assert.ok(v.sourceAcquisitionNote, `${v.id} must say what is missing`);
+  }
+});
+
+test("no video is active, and none counts toward required instructional time", () => {
+  assert.equal(VIDEO.anyActive(), false);
+  assert.equal(VIDEO.TOTALS.active, 0);
+  assert.equal(VIDEO.FLORIDA_VIDEO_AUTHORITY.videoCountsTowardInstructionalHours, false);
+  assert.equal(VIDEO.PRODUCTION_RULES.countsTowardRequiredInstructionalTime, false);
+  assert.equal(VIDEO.PRODUCTION_RULES.neverBlocksProgression, true);
+  assert.equal(VIDEO.PRODUCTION_RULES.quizAnswerAtEndOfVideo, false);
+  assert.equal(VIDEO.PRODUCTION_RULES.masteryCheckOnNextScreen, true);
+  assert.equal(VIDEO.PRODUCTION_RULES.aiRecreatedGovernmentForms, false);
+  assert.equal(VIDEO.PRODUCTION_RULES.automaticZooms, false);
+  for (const v of CANDIDATES) {
+    assert.equal(v.status, VIDEO.STATUS.PENDING);
+    assert.ok(VIDEO.activationFailures(v).length > 0, `${v.id} must not be activatable while unproduced`);
+  }
+});
+
+test("Florida's video rules are recorded as repealed", () => {
+  assert.equal(VIDEO.FLORIDA_VIDEO_AUTHORITY.survivingMediaStandard, null);
+  assert.equal(VIDEO.FLORIDA_VIDEO_AUTHORITY.repealedRules.length, 2);
+  for (const r of VIDEO.FLORIDA_VIDEO_AUTHORITY.repealedRules) assert.match(r.repealed, /^2008-/);
 });
 
 /* ── nothing is approved, nothing enrols ─────────────────────────────────────────────────────── */
@@ -280,74 +473,74 @@ test("StateCourse holds no Florida credential and says so", () => {
   assert.equal(SCHOOL.applicationFiled, false);
   assert.equal(SCHOOL.enrolmentEnabled, false);
   for (const n of [SCHOOL.schoolPermitNumber, SCHOOL.schoolLicenceNumber, SCHOOL.instructorPermitNumber, SCHOOL.courseNumber]) {
-    assert.equal(n, null, "no credential number may be recorded while no credential is held");
-  }
-});
-
-test("readiness cannot report READY, and names the person-shaped gate that stops it", () => {
-  const readiness = floridaReadiness();
-  assert.equal(readiness.status, "NOT READY");
-  assert.ok(readiness.blockingGates.includes("school-permitholder-florida-broker-licence"),
-    "Rule 61J2-17.011(2), F.A.C. requires the school permit holder to hold a FLORIDA broker's licence");
-  assert.equal(LEDGER.APPLICANT.principalHoldsFloridaBrokerLicence, false);
-  for (const gate of BLOCKING_GATES) {
-    assert.equal(gate.resolved, false);
-    assert.ok(gate.routesOut.length > 0, `${gate.id} must name at least one way out, or it is a complaint rather than a gate`);
+    assert.equal(n, null);
   }
 });
 
 test("the public Florida record promises nothing StateCourse does not hold", () => {
-  assert.ok(florida, "the public state registry must carry an FL record");
+  assert.ok(florida);
   assert.equal(florida.provider_approval_number, null);
   assert.doesNotMatch(String(florida.provider_status), /approved/i);
   assert.doesNotMatch(String(florida.public_status), /^(available|open|enrolling)$/i);
 });
 
-test("Florida law itself supplies the forbidden-claim list, not house style", () => {
-  /* s. 475.451(3) and s. 475.4511 make several of these unlawful rather than merely unwise, and
-     s. 475.451(4) makes a breach of the permit provisions a second-degree misdemeanour. */
+test("Florida law itself supplies the forbidden-claim list", () => {
   const ids = FORBIDDEN_CLAIMS.map((c) => c.id);
   for (const id of ["pass-guarantee", "pass-or-refund", "permit-as-endorsement", "employment-promise", "unheld-frec-approval"]) {
-    assert.ok(ids.includes(id), `${id} must be a forbidden claim`);
+    assert.ok(ids.includes(id));
   }
-  for (const claim of FORBIDDEN_CLAIMS) {
-    assert.match(claim.why, /475\.|61J2-/, `${claim.id} must cite the Florida authority that forbids it`);
-  }
+  for (const claim of FORBIDDEN_CLAIMS) assert.match(claim.why, /475\.|61J2-/);
 });
 
 /* ── the sources ─────────────────────────────────────────────────────────────────────────────── */
 
-test("every authority was read, and every held copy is on disk", () => {
+test("every source is classified by the kind of authority it is", () => {
+  const valid = new Set(Object.values(AUTHORITY_CLASS));
   for (const s of SOURCES) {
-    assert.ok(s.citation && s.publisher && s.url && s.readOn, `${s.id} must carry citation, publisher, url and read date`);
+    assert.ok(valid.has(s.authorityClass), `${s.id} must carry an authority class`);
+    assert.ok(s.citation && s.publisher && s.url && s.readOn);
     if (s.localCopy) assert.ok(fs.existsSync(path.join(ROOT, s.localCopy)), `${s.id}: ${s.localCopy} must be on disk`);
   }
+  assert.ok(SOURCES.some((s) => s.authorityClass === AUTHORITY_CLASS.STATUTE));
+  assert.ok(SOURCES.some((s) => s.authorityClass === AUTHORITY_CLASS.FORM));
+});
+
+test("nothing rests on a source held only for navigation", () => {
+  for (const s of SOURCES.filter((x) => x.authorityClass === AUTHORITY_CLASS.NAVIGATION)) {
+    assert.equal(s.materialClaims.length, 0, `${s.id} is navigation and must carry no material claim`);
+  }
+});
+
+test("every authority was read, and every material claim names what relies on it", () => {
   const unread = SOURCES.filter((s) => s.reachability !== REACHABILITY.READ && s.reachability !== REACHABILITY.READ_NOT_AUTHORITY);
-  assert.equal(unread.length, 0, "Florida's authorities were all reachable; if one is not, nothing may rest on it");
-});
-
-test("nothing rests on an authority marked as not an authority", () => {
-  for (const s of SOURCES.filter((x) => x.reachability === REACHABILITY.READ_NOT_AUTHORITY)) {
-    assert.equal(s.materialClaims.length, 0, `${s.id} is recorded as not an authority and must carry no material claim`);
-  }
-});
-
-test("every material claim names what relies on it", () => {
+  assert.equal(unread.length, 0);
   const claims = MANIFEST.allMaterialClaims();
-  assert.ok(claims.length >= 50, "the regulated facts this build rests on must all be written down");
-  for (const c of claims) {
-    assert.ok(c.reliedOnBy.length > 0, `a claim with no dependant is a claim nobody checks: "${c.claim.slice(0, 60)}"`);
+  assert.ok(claims.length >= 70);
+  for (const c of claims) assert.ok(c.reliedOnBy.length > 0, `a claim with no dependant is a claim nobody checks`);
+});
+
+test("the open conflicts between the authorities are still open", () => {
+  const conflicts = MANIFEST.openConflicts();
+  assert.ok(conflicts.length >= 10);
+  const ids = conflicts.map((c) => c.sourceId);
+  for (const id of ["FAC-61J2-3.008", "FAC-61J2-17.011", "FAC-61J2-3.013", "DBPR-RE-18"]) {
+    assert.ok(ids.includes(id), `${id} conflict must stay recorded`);
   }
 });
 
-test("the held source inventory is present and covers the controlling sources", () => {
+test("the held source inventory covers the controlling sources", () => {
   const inventory = JSON.parse(read("florida/frec-sources/source-inventory.json"));
   const paths = new Set(inventory.files.map((f) => f.path));
-  assert.ok(inventory.fileCount > 0);
-  assert.ok(paths.has("florida/frec-sources/fac/ref-14599-frec-course-1-eff-010123.pdf"),
-    "the incorporated syllabus is the one source the whole syllabus lock indexes");
-  assert.ok(paths.has("florida/frec-sources/fac/fac-61J2-3.008.doc"));
-  assert.ok(paths.has("florida/frec-sources/statutes/fs-chapter-475.html"));
+  for (const p of [
+    "florida/frec-sources/fac/ref-14599-frec-course-1-eff-010123.pdf",
+    "florida/frec-sources/dbpr/education/FREC1SyllabusCleanFinal01012023.pdf",
+    "florida/frec-sources/dbpr/forms/DBPR_RE_5_School_Permit.pdf",
+    "florida/frec-sources/dbpr/forms/DBPR_RE_3_Instructor_Permit.pdf",
+    "florida/frec-sources/dbpr/education/frec_distance_ed_chk_list.pdf",
+    "florida/frec-sources/extracted/syllabus-reconciliation.json",
+  ]) {
+    assert.ok(paths.has(p), `${p} must be in the held inventory`);
+  }
 });
 
 /* ── conditional: vacuous today, binding the moment curriculum appears ───────────────────────── */
@@ -355,42 +548,36 @@ test("the held source inventory is present and covers the controlling sources", 
 test("CONDITIONAL — Florida curriculum, if it exists, follows the syllabus order", () => {
   if (!curriculumExists()) return;
   const files = curriculumFiles().sort();
-  assert.equal(files.length, 19,
-    "Rule 61J2-3.008(4)(b)3.h requires the course to conform to and follow the order of the syllabus's nineteen sections");
+  assert.equal(files.length, 19, "Rule 61J2-3.008(4)(b)3.h requires the course to follow the syllabus's nineteen sections");
   files.forEach((file, index) => {
-    const expected = String(index + 1).padStart(2, "0");
-    assert.ok(file.startsWith(expected),
-      `curriculum file ${file} is out of syllabus order — expected section ${index + 1} at this position`);
+    assert.ok(file.startsWith(String(index + 1).padStart(2, "0")),
+      `curriculum file ${file} is out of syllabus order`);
   });
 });
 
-test("CONDITIONAL — Florida curriculum, if it exists, carries learning objectives for each session", () => {
+test("CONDITIONAL — Florida curriculum, if it exists, carries its section's learning objectives", () => {
   if (!curriculumExists()) return;
   for (const file of curriculumFiles()) {
     const text = read(`${CURRICULUM_DIR}/${file}`);
-    assert.match(text, /learning objectives/i,
-      `${file} must carry learning objectives — Rule 61J2-3.008(4)(b)3.h requires them for each session of the syllabus`);
+    assert.match(text, /learning objectives/i, `${file} must carry learning objectives`);
   }
 });
 
 test("CONDITIONAL — Florida curriculum, if it exists, leaks no examination content", () => {
   if (!curriculumExists()) return;
   const text = curriculum();
-  assert.doesNotMatch(text, /\banswer key\b/i, "no answer key may appear in student-facing curriculum");
+  assert.doesNotMatch(text, /\banswer key\b/i);
   assert.doesNotMatch(text, /end-of-course examination question/i);
 });
 
 test("CONDITIONAL — Florida curriculum, if it exists, makes no claim the state forbids", () => {
   if (!curriculumExists()) return;
   const text = curriculum();
-  for (const claim of FORBIDDEN_CLAIMS) {
-    assert.doesNotMatch(text, claim.pattern, `${claim.id} — ${claim.why}`);
-  }
+  for (const claim of FORBIDDEN_CLAIMS) assert.doesNotMatch(text, claim.pattern, `${claim.id} — ${claim.why}`);
 });
 
 test("CONDITIONAL — a Florida course may not enrol before the approvals exist", () => {
   if (!curriculumExists()) return;
-  assert.equal(SCHOOL.enrolmentEnabled, false,
-    "curriculum may be built before approval; enrolment may not. Approval status, build status and enrolment status are three separate facts.");
+  assert.equal(SCHOOL.enrolmentEnabled, false);
   assert.equal(florida.public_status, "Coming Soon");
 });

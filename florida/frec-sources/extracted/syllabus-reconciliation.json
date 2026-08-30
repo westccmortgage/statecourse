@@ -1,0 +1,1356 @@
+{
+  "generatedBy": "transcribed from the Department's own text-layer PDF, cross-checked against the OCR of the flrules.org scan",
+  "verifiedSource": "florida/frec-sources/dbpr/education/FREC1SyllabusCleanFinal01012023.pdf",
+  "ocrSource": "florida/frec-sources/fac/ref-14599-frec-course-1-eff-010123.pdf (scan, no text layer)",
+  "verifiedTotal": 180,
+  "ocrTotal": 181,
+  "sections": [
+    {
+      "number": 1,
+      "tocTitle": "Course Overview: The Real Estate Business",
+      "printedSectionHeading": "COURSE OVERVIEW: THE REAL ESTATE BUSINESS",
+      "startPage": 3,
+      "verifiedObjectiveCount": 7,
+      "ocrObjectiveCount": 6,
+      "discrepancy": "OCR 6 vs verified 7",
+      "resolution": "OCR merged the two-line objective 'Describe activities that require appraiser services and distinguish among CMA, BPO, and appraisal' with its wrapped continuation and dropped one bullet. Verified text layer carries 7.",
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe the various activities of real estate brokerage",
+          "page": 3
+        },
+        {
+          "n": 2,
+          "text": "Distinguish among the five major sales specialties",
+          "page": 3
+        },
+        {
+          "n": 3,
+          "text": "Identify the role of property managers",
+          "page": 3
+        },
+        {
+          "n": 4,
+          "text": "Describe activities that require appraiser services and distinguish among CMA, BPO, and appraisal",
+          "page": 3
+        },
+        {
+          "n": 5,
+          "text": "Understand the mortgage process and the role of mortgage loan originator",
+          "page": 3
+        },
+        {
+          "n": 6,
+          "text": "Explain the three phases of development and construction",
+          "page": 3
+        },
+        {
+          "n": 7,
+          "text": "Distinguish among the three categories of residential construction",
+          "page": 3
+        }
+      ],
+      "ocrObjectives": [
+        "Describe the various activities of real estate brokerage",
+        "Distinguish among the five major sales specialties",
+        "Identify the role of property managers",
+        "Describe activities that require appraiser services and distinguish among CMA, BPO, and appraisal",
+        "Understand the mortgage process and the role of mortgage loan originator Explain the three phases of development and construction",
+        "Distinguish among the three categories of residential construction"
+      ]
+    },
+    {
+      "number": 2,
+      "tocTitle": "Real Estate License Law And Qualifications For Licensure",
+      "printedSectionHeading": "REAL ESTATE LICENSE LAW AND QUALIFICATIONS FOR LICENSURE",
+      "startPage": 6,
+      "verifiedObjectiveCount": 11,
+      "ocrObjectiveCount": 11,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Identify the qualifications for a sales associate's license",
+          "page": 6
+        },
+        {
+          "n": 2,
+          "text": "Describe the application requirements for licensure including nonresident application requirements",
+          "page": 6
+        },
+        {
+          "n": 3,
+          "text": "Explain the importance of responding accurately and completely to the background information questions on the licensure application",
+          "page": 6
+        },
+        {
+          "n": 4,
+          "text": "Illustrate the background check procedure conducted by the DBPR",
+          "page": 6
+        },
+        {
+          "n": 5,
+          "text": "Describe the education requirement for pre- and post-license education and continuing education",
+          "page": 6
+        },
+        {
+          "n": 6,
+          "text": "Distinguish among the various license categories",
+          "page": 6
+        },
+        {
+          "n": 7,
+          "text": "Identify services of real estate where licensure is required",
+          "page": 6
+        },
+        {
+          "n": 8,
+          "text": "Recognize actions that constitute unlicensed activity",
+          "page": 6
+        },
+        {
+          "n": 9,
+          "text": "Recognize exemptions from real estate licensure",
+          "page": 6
+        },
+        {
+          "n": 10,
+          "text": "Distinguish between registration and licensure",
+          "page": 6
+        },
+        {
+          "n": 11,
+          "text": "Explain mutual recognition agreements",
+          "page": 6
+        }
+      ],
+      "ocrObjectives": [
+        "Identify the qualifications for a sales associate's license",
+        "Describe the application requirements for licensure including nonresident application requirements",
+        "Explain the importance of responding accurately and completely to the background information questions on the licensure application",
+        "Illustrate the background check procedure conducted by the DBPR",
+        "Describe the education requirement for pre- and post-license education and continuing ducation",
+        "Distinguish among the various license categories",
+        "Identify services of real estate where licensure is required",
+        "Recognize actions that constitute unlicensed activity",
+        "Recognize exemptions from real estate licensure",
+        "Distinguish between registration and licensure",
+        "Explain mutual recognition agreements"
+      ]
+    },
+    {
+      "number": 3,
+      "tocTitle": "Real Estate License Law And Commission Rules",
+      "printedSectionHeading": "REAL ESTATE LICENSE LAW AND COMMISSION RULES",
+      "startPage": 9,
+      "verifiedObjectiveCount": 7,
+      "ocrObjectiveCount": 8,
+      "discrepancy": "OCR 8 vs verified 7",
+      "resolution": "OCR split 'Describe the composition, appointment and member qualifications of the Florida Real Estate Commission' across two bullets at the line wrap, inventing an eighth. Verified text layer carries 7.",
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe the composition, appointment and member qualifications of the Florida Real Estate Commission",
+          "page": 9
+        },
+        {
+          "n": 2,
+          "text": "Define the powers and duties of the Commission",
+          "page": 9
+        },
+        {
+          "n": 3,
+          "text": "Describe the scope and function of the DBPR and the DRE",
+          "page": 9
+        },
+        {
+          "n": 4,
+          "text": "Explain the different licensure statuses",
+          "page": 9
+        },
+        {
+          "n": 5,
+          "text": "Distinguish between active and inactive license status",
+          "page": 9
+        },
+        {
+          "n": 6,
+          "text": "Describe the regulations regarding involuntarily inactive status",
+          "page": 9
+        },
+        {
+          "n": 7,
+          "text": "Distinguish between multiple and group licenses",
+          "page": 9
+        }
+      ],
+      "ocrObjectives": [
+        "Describe the composition, appointment and member qualifications of the Florida Real",
+        "Estate Commission",
+        "Define the powers and duties of the Commission",
+        "Describe the scope and function of the DBPR and the DRE",
+        "Explain the different licensure statuses",
+        "Distinguish between active and inactive license status",
+        "Describe the regulations regarding involuntarily inactive status",
+        "Distinguish between multiple and group licenses"
+      ]
+    },
+    {
+      "number": 4,
+      "tocTitle": "Authorized Relationships, Duties And Disclosure",
+      "printedSectionHeading": "AUTHORIZED RELATIONSHIPS, DUTIES AND DISCLOSURE",
+      "startPage": 11,
+      "verifiedObjectiveCount": 10,
+      "ocrObjectiveCount": 10,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe which provisions of the Brokerage Relationship Disclosure Act apply only to residential real estate sales and list types of real estate activities that are exempt from the disclosure requirements",
+          "page": 11
+        },
+        {
+          "n": 2,
+          "text": "Define residential transaction",
+          "page": 11
+        },
+        {
+          "n": 3,
+          "text": "Distinguish among nonrepresentation, single agent and transaction broker",
+          "page": 11
+        },
+        {
+          "n": 4,
+          "text": "List and describe the duties owed in the various authorized relationships",
+          "page": 11
+        },
+        {
+          "n": 5,
+          "text": "Compare and contrast the fiduciary duties owed in a single agent relationship and the duties owed in a transaction broker relationship",
+          "page": 11
+        },
+        {
+          "n": 6,
+          "text": "Describe the disclosure procedures for the various authorized relationships",
+          "page": 11
+        },
+        {
+          "n": 7,
+          "text": "Describe the required content and format of the various disclosure forms",
+          "page": 11
+        },
+        {
+          "n": 8,
+          "text": "Explain the procedure for transition from a single agent to a transaction broker",
+          "page": 11
+        },
+        {
+          "n": 9,
+          "text": "Describe the disclosure requirements for non-residential transactions where the buyer and seller have assets of $1 million or more",
+          "page": 11
+        },
+        {
+          "n": 10,
+          "text": "List the events that will cause an authorized relationship to be terminated",
+          "page": 11
+        }
+      ],
+      "ocrObjectives": [
+        "Describe which provisions of the Brokerage Relationship Disclosure Act apply only to residential real estate sales and list types of real estate activities that are exempt from the disclosure requirements",
+        "Define residential transaction",
+        "Distinguish among nonrepresentation, single agent and transaction broker",
+        "List and describe the duties owed in the various authorized relationships",
+        "Compare and contrast the fiduciary duties owed in a single agent relationship and the duties owed in a transaction broker relationship",
+        "Describe the disclosure procedures for the various authorized relationships",
+        "Describe the required content and format of the various disclosure forms",
+        "Explain the procedure for transition from a single agent to a transaction broker",
+        "Describe the disclosure requirements for non-residential transactions where the buyer and seller have assets of $1 million or more",
+        "List the events that will cause an authorized relationship to be terminated"
+      ]
+    },
+    {
+      "number": 5,
+      "tocTitle": "Real Estate Brokerage Activities And Procedures",
+      "printedSectionHeading": "REAL ESTATE BROKERAGE ACTIVITIES AND PROCEDURES",
+      "startPage": 14,
+      "verifiedObjectiveCount": 9,
+      "ocrObjectiveCount": 9,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Identify the requirements for real estate brokerage office(s) and the types of business entities that may register",
+          "page": 14
+        },
+        {
+          "n": 2,
+          "text": "Explain what determines whether a temporary shelter must be registered as a branch office",
+          "page": 14
+        },
+        {
+          "n": 3,
+          "text": "List the requirements related to sign regulation",
+          "page": 14
+        },
+        {
+          "n": 4,
+          "text": "List the requirements related to the regulation of advertising by real estate brokers",
+          "page": 14
+        },
+        {
+          "n": 5,
+          "text": "Explain the term immediately as it applies to earnest money deposits",
+          "page": 14
+        },
+        {
+          "n": 6,
+          "text": "Describe the four settlement procedures available to a broker who has received conflicting demands or who has a good-faith doubt as to who is entitled to disputed funds",
+          "page": 14
+        },
+        {
+          "n": 7,
+          "text": "Describe the obligations placed on a sales associate who changes employers and/or address",
+          "page": 14
+        },
+        {
+          "n": 8,
+          "text": "Describe the regulations regarding lien rights for unpaid sales commission",
+          "page": 14
+        },
+        {
+          "n": 9,
+          "text": "Contrast the features and requirements of the various types of business organizations",
+          "page": 14
+        }
+      ],
+      "ocrObjectives": [
+        "Identify the requirements for real estate brokerage office(s) and the types of business ntities that may register",
+        "Explain what determines whether a temporary shelter must be registered as a branch office",
+        "List the requirements related to sign regulation",
+        "List the requirements related to the regulation of advertising by real estate brokers",
+        "Explain the term immediately as it applies to earnest money deposits",
+        "Describe the four settlement procedures available to a broker who has received conflicting demands or who has a good-faith doubt as to who is entitled to disputed funds",
+        "Describe the obligations placed on a sales associate who changes employers and/or address",
+        "Describe the regulations regarding lien rights for unpaid sales commission",
+        "Contrast the features and requirements of the various types of business organizations"
+      ]
+    },
+    {
+      "number": 6,
+      "tocTitle": "Violations Of License Law, Penalties And Procedures",
+      "printedSectionHeading": "VIOLATIONS OF LICENSE LAW, PENALTIES AND PROCEDURES",
+      "startPage": 18,
+      "verifiedObjectiveCount": 9,
+      "ocrObjectiveCount": 10,
+      "discrepancy": "OCR 10 vs verified 9",
+      "resolution": "OCR split one wrapped objective into two. Verified text layer carries 9.",
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Explain the procedures involved in the reporting of violations, the investigation of complaints and the conduct of hearings",
+          "page": 18
+        },
+        {
+          "n": 2,
+          "text": "Define the elements of a valid complaint",
+          "page": 18
+        },
+        {
+          "n": 3,
+          "text": "Discuss the composition of the probable-cause panel",
+          "page": 18
+        },
+        {
+          "n": 4,
+          "text": "Recognize events that would cause a license application to be denied",
+          "page": 18
+        },
+        {
+          "n": 5,
+          "text": "Distinguish actions that would cause a license to be subject to suspension or revocation",
+          "page": 18
+        },
+        {
+          "n": 6,
+          "text": "Identify individuals who would be eligible and the procedure to seek reimbursement from the Real Estate Recovery Fund",
+          "page": 18
+        },
+        {
+          "n": 7,
+          "text": "Identify individuals who are not qualified to make a claim from the Real Estate Recovery Fund",
+          "page": 18
+        },
+        {
+          "n": 8,
+          "text": "Describe the monetary limits imposed by law on the Real Estate Recovery Fund",
+          "page": 18
+        },
+        {
+          "n": 9,
+          "text": "Distinguish among the various penalties that may be issued by a court of law",
+          "page": 18
+        }
+      ],
+      "ocrObjectives": [
+        "Explain the procedures involved in the reporting of violations, the investigation of complaints and the conduct of hearings",
+        "Define the elements of a valid complaint",
+        "Discuss the composition of the probable-cause panel",
+        "Recognize events that would cause a license application to be denied",
+        "Distinguish actions that would cause a license to be subject to suspension or revocation",
+        "Identify individuals who would be eligible and the procedure to seek reimbursement from the Real Estate Recovery Fund",
+        "Identify individuals who are not qualified to make a claim from the Real Estate",
+        "Recovery Fund",
+        "Describe the monetary limits imposed by law on the Real Estate Recovery Fund",
+        "Distinguish among the various penalties that may be issued by a court of law"
+      ]
+    },
+    {
+      "number": 7,
+      "tocTitle": "Federal And State Laws Pertaining To Real Estate",
+      "printedSectionHeading": "FEDERAL AND STATE LAWS PERTAINING TO REAL ESTATE",
+      "startPage": 21,
+      "verifiedObjectiveCount": 10,
+      "ocrObjectiveCount": 11,
+      "discrepancy": "OCR 11 vs verified 10",
+      "resolution": "OCR split one wrapped objective into two. Verified text layer carries 10.",
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Explain the significance of the Jones vs. Mayer court case",
+          "page": 21
+        },
+        {
+          "n": 2,
+          "text": "List the real estate included under the different fair housing acts",
+          "page": 21
+        },
+        {
+          "n": 3,
+          "text": "Recognize the groups protected under the 1968 Fair Housing Act",
+          "page": 21
+        },
+        {
+          "n": 4,
+          "text": "List the property exempt from the 1968 Fair Housing Act and the protected classes",
+          "page": 21
+        },
+        {
+          "n": 5,
+          "text": "List the two protected classed added to the 1988 Fair Housing Amendment",
+          "page": 21
+        },
+        {
+          "n": 6,
+          "text": "Describe the types of discriminatory acts that are prohibited under the 1968 Fair Housing Act",
+          "page": 21
+        },
+        {
+          "n": 7,
+          "text": "Describe the HUD process for handling a complaint under the 1968 Fair Housing Act",
+          "page": 21
+        },
+        {
+          "n": 8,
+          "text": "Describe the objectives and major provisions of the Americans with Disabilities Act",
+          "page": 21
+        },
+        {
+          "n": 9,
+          "text": "Describe the major provisions of the Florida Residential Landlord and Tenant Act",
+          "page": 21
+        },
+        {
+          "n": 10,
+          "text": "Describe the major provisions of the Interstate Land Sales Disclosure Act",
+          "page": 21
+        }
+      ],
+      "ocrObjectives": [
+        "Explain the significance of the Jones vs. Mayer court case",
+        "List the real estate included under the different fair housing acts",
+        "Recognize the groups protected under the 1968 Fair Housing Act",
+        "List the property exempt from the 1968 Fair Housing Act and the protected classes",
+        "List the two protected classed added to the 1988 Fair Housing Amendment",
+        "Describe the types of discriminatory acts that are prohibited under the 1968 Fair",
+        "Housing Act",
+        "\u00ae Describe the HUD process for handling a complaint under the 1968 Fair Housing Act",
+        "Describe the objectives and major provisions of the Americans with Disabilities Act",
+        "Describe the major provisions of the Florida Residential Landlord and Tenant Act",
+        "Describe the major provisions of the Interstate Land Sales Disclosure Act"
+      ]
+    },
+    {
+      "number": 8,
+      "tocTitle": "Property Rights: Estates And Tenancies; Condominiums, Cooperatives, Community Development Districts, Homeowner Associations, And Time-Sharing",
+      "printedSectionHeading": "PROPERTY RIGHTS: ESTATES AND TENANCIES; CONDOMINIUMS, COOPERATIVES, COMMUNITY DEVELOPMENT DISTRICTS, HOMEOWNER ASSOCIATIONS AND TIME-SHARING",
+      "startPage": 23,
+      "verifiedObjectiveCount": 8,
+      "ocrObjectiveCount": 8,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Define real property based on the definition in Chapter 475, F.S.",
+          "page": 23
+        },
+        {
+          "n": 2,
+          "text": "List and explain the physical components of real property",
+          "page": 23
+        },
+        {
+          "n": 3,
+          "text": "Explain the four tests courts use to determine if an item is a fixture",
+          "page": 23
+        },
+        {
+          "n": 4,
+          "text": "Distinguish between real and personal property",
+          "page": 23
+        },
+        {
+          "n": 5,
+          "text": "Describe the bundle of rights associated with real property ownership",
+          "page": 23
+        },
+        {
+          "n": 6,
+          "text": "List the principal types of estates (tenancies) and describe their characteristics",
+          "page": 23
+        },
+        {
+          "n": 7,
+          "text": "Describe the features associated with the Florida homestead law",
+          "page": 23
+        },
+        {
+          "n": 8,
+          "text": "Distinguish between cooperatives, condominiums and time-shares and describe the four main documents associated with condominiums",
+          "page": 23
+        }
+      ],
+      "ocrObjectives": [
+        "Define real property based on the definition in Chapter 475, F.S.",
+        "List and explain the physical components of real property",
+        "Explain the four tests courts use to determine if an item is a fixture",
+        "Distinguish between real and personal property",
+        "Describe the bundle of rights associated with real property ownership",
+        "List the principal types of estates (tenancies) and describe their characteristics",
+        "Describe the features associated with the Florida homestead law",
+        "Distinguish between cooperatives, condominiums and time-shares and describe the four main documents associated with condominiums"
+      ]
+    },
+    {
+      "number": 9,
+      "tocTitle": "Title, Deeds And Ownership Restrictions",
+      "printedSectionHeading": "TITLE, DEEDS AND OWNERSHIP RESTRICTIONS",
+      "startPage": 27,
+      "verifiedObjectiveCount": 9,
+      "ocrObjectiveCount": 9,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Differentiate between voluntary and involuntary alienation",
+          "page": 27
+        },
+        {
+          "n": 2,
+          "text": "Explain the various methods of acquiring title to real property and describe the conditions necessary to acquire real property by adverse possession",
+          "page": 27
+        },
+        {
+          "n": 3,
+          "text": "Distinguish between actual notice and constructive notice",
+          "page": 27
+        },
+        {
+          "n": 4,
+          "text": "Distinguish between an abstract of title and a chain of title",
+          "page": 27
+        },
+        {
+          "n": 5,
+          "text": "Explain the different types of title insurance",
+          "page": 27
+        },
+        {
+          "n": 6,
+          "text": "Describe the parts of a deed and the requirements of a valid deed",
+          "page": 27
+        },
+        {
+          "n": 7,
+          "text": "List and describe the four types of statutory deeds and the legal requirements for deeds",
+          "page": 27
+        },
+        {
+          "n": 8,
+          "text": "List and describe the various types of governmental and private restrictions on ownership of real property",
+          "page": 27
+        },
+        {
+          "n": 9,
+          "text": "Distinguish among the various types of leases and liens",
+          "page": 27
+        }
+      ],
+      "ocrObjectives": [
+        "Differentiate between voluntary and involuntary alienation",
+        "Explain the various methods of acquiring title to real property and describe the conditions necessary to acquire real property by adverse possession",
+        "Distinguish between actual notice and constructive notice",
+        "Distinguish between an abstract of title and a chain of title",
+        "Explain the different types of title insurance",
+        "Describe the parts of a deed and the requirements of a valid deed",
+        "List and describe the four types of statutory deeds and the legal requirements for deeds",
+        "List and describe the various types of governmental and private restrictions on ownership of real property",
+        "Distinguish among the various types of leases and liens"
+      ]
+    },
+    {
+      "number": 10,
+      "tocTitle": "Legal Descriptions",
+      "printedSectionHeading": "LEGAL DESCRIPTIONS",
+      "startPage": 31,
+      "verifiedObjectiveCount": 10,
+      "ocrObjectiveCount": 10,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe the purpose for legal descriptions",
+          "page": 31
+        },
+        {
+          "n": 2,
+          "text": "Understand the licensee\u2019s role and responsibilities as it pertains to legal descriptions",
+          "page": 31
+        },
+        {
+          "n": 3,
+          "text": "Explain and distinguish among the three types of legal descriptions",
+          "page": 31
+        },
+        {
+          "n": 4,
+          "text": "Describe the process of creating a legal description using the metes-and-bounds method",
+          "page": 31
+        },
+        {
+          "n": 5,
+          "text": "Locate a township by township line and range",
+          "page": 31
+        },
+        {
+          "n": 6,
+          "text": "Locate a particular section within a township",
+          "page": 31
+        },
+        {
+          "n": 7,
+          "text": "Understand how to subdivide a section",
+          "page": 31
+        },
+        {
+          "n": 8,
+          "text": "Calculate the number of acres in a parcel based on the legal description, and convert to square feet",
+          "page": 31
+        },
+        {
+          "n": 9,
+          "text": "Explain the use of assessor's parcel numbers",
+          "page": 31
+        },
+        {
+          "n": 10,
+          "text": "Apply the measurements associated with checks, townships and sections",
+          "page": 31
+        }
+      ],
+      "ocrObjectives": [
+        "Describe the purpose for legal descriptions",
+        "Understand the licensee\u2019s role and responsibilities as it pertains to legal descriptions",
+        "Explain and distinguish among the three types of legal descriptions",
+        "Describe the process of creating a legal description using the metes-and-bounds method",
+        "Locate a township by township line and range",
+        "Locate a particular section within a township",
+        "Understand how to subdivide a section",
+        "Calculate the number of acres in a parcel based on the legal description, and convert to square feet",
+        "Explain the use of assessor's parcel numbers",
+        "Apply the measurements associated with checks, townships and sections"
+      ]
+    },
+    {
+      "number": 11,
+      "tocTitle": "Real Estate Contracts",
+      "printedSectionHeading": "REAL ESTATE CONTRACTS",
+      "startPage": 33,
+      "verifiedObjectiveCount": 11,
+      "ocrObjectiveCount": 11,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "List and describe the essentials of a contract",
+          "page": 33
+        },
+        {
+          "n": 2,
+          "text": "Distinguish among formal, parol, bilateral, unilateral, implied, express, executory and executed contracts",
+          "page": 33
+        },
+        {
+          "n": 3,
+          "text": "Describe the various ways in which an offer is terminated",
+          "page": 33
+        },
+        {
+          "n": 4,
+          "text": "Describe the various methods of terminating a contract",
+          "page": 33
+        },
+        {
+          "n": 5,
+          "text": "Explain the remedies for breach of a contract",
+          "page": 33
+        },
+        {
+          "n": 6,
+          "text": "Describe the effect of the Statute of Frauds and the Statute of Limitations",
+          "page": 33
+        },
+        {
+          "n": 7,
+          "text": "Describe the elements of an option",
+          "page": 33
+        },
+        {
+          "n": 8,
+          "text": "Differentiate among the various types of listings",
+          "page": 33
+        },
+        {
+          "n": 9,
+          "text": "Explain and describe the various disclosures required in a real estate contract",
+          "page": 33
+        },
+        {
+          "n": 10,
+          "text": "Recognize what constitutes fraud",
+          "page": 33
+        },
+        {
+          "n": 11,
+          "text": "Recognize what constitutes culpable negligence",
+          "page": 33
+        }
+      ],
+      "ocrObjectives": [
+        "List and describe the essentials of a contract",
+        "Distinguish among formal, parol, bilateral, unilateral, implied, express, executory and xecuted contracts",
+        "Describe the various ways in which an offer is terminated",
+        "Describe the various methods of terminating a contract",
+        "Explain the remedies for breach of a contract",
+        "Describe the effect of the Statute of Frauds and the Statute of Limitations",
+        "Describe the elements of an option",
+        "Differentiate among the various types of listings",
+        "Explain and describe the various disclosures required in a real estate contract",
+        "Recognize what constitutes fraud",
+        "Recognize what constitutes culpable negligence"
+      ]
+    },
+    {
+      "number": 12,
+      "tocTitle": "Residential Mortgages",
+      "printedSectionHeading": "RESIDENTIAL MORTGAGES",
+      "startPage": 36,
+      "verifiedObjectiveCount": 9,
+      "ocrObjectiveCount": 9,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Distinguish between title theory and lien theory",
+          "page": 36
+        },
+        {
+          "n": 2,
+          "text": "Describe the essential elements of the mortgage instrument and the note",
+          "page": 36
+        },
+        {
+          "n": 3,
+          "text": "Describe the various features of a mortgage including down payment, loan-to-value ratio, equity, interest, loan servicing, escrow account, PITI, discount points and loan origination fee",
+          "page": 36
+        },
+        {
+          "n": 4,
+          "text": "Explain assignment of a mortgage and the purpose of an estoppel certificate",
+          "page": 36
+        },
+        {
+          "n": 5,
+          "text": "Explain the foreclosure process and distinguish between judicial and nonjudicial foreclosure",
+          "page": 36
+        },
+        {
+          "n": 6,
+          "text": "Describe the mortgagor\u2019s and mortgagee\u2019s rights in a foreclosure",
+          "page": 36
+        },
+        {
+          "n": 7,
+          "text": "Calculate loan-to-value ratio",
+          "page": 36
+        },
+        {
+          "n": 8,
+          "text": "Explain the use of discount points and calculate approximate yield on a loan",
+          "page": 36
+        },
+        {
+          "n": 9,
+          "text": "Distinguish among the various methods of purchasing mortgaged property",
+          "page": 36
+        }
+      ],
+      "ocrObjectives": [
+        "Distinguish between title theory and lien theory",
+        "Describe the essential elements of the mortgage instrument and the note",
+        "Describe the various features of a mortgage including down payment, loan-to-value ratio, equity, interest, loan servicing, escrow account, PITI, discount points and loan origination fee",
+        "Explain assignment of a mortgage and the purpose of an estoppel certificate",
+        "Explain the foreclosure process and distinguish between judicial and nonjudicial foreclosure",
+        "Describe the mortgagor's and mortgagee\u2019s rights in a foreclosure",
+        "Calculate loan-to-value ratio",
+        "Explain the use of discount points and calculate approximate yield on a loan",
+        "Distinguish among the various methods of purchasing mortgaged property"
+      ]
+    },
+    {
+      "number": 13,
+      "tocTitle": "Types Of Mortgages And Sources Of Financing",
+      "printedSectionHeading": "TYPES OF MORTGAGES AND SOURCES OF FINANCING",
+      "startPage": 39,
+      "verifiedObjectiveCount": 10,
+      "ocrObjectiveCount": 10,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe the mechanics of an adjustable rate mortgage and the components of an ARM",
+          "page": 39
+        },
+        {
+          "n": 2,
+          "text": "Describe the features of an amortized mortgage and amortize a level-payment plan mortgage when given the principal amount, the interest rate and the monthly payment amount",
+          "page": 39
+        },
+        {
+          "n": 3,
+          "text": "Distinguish among the various types of mortgages",
+          "page": 39
+        },
+        {
+          "n": 4,
+          "text": "Describe the characteristics of FHA mortgages and common FHA loan programs",
+          "page": 39
+        },
+        {
+          "n": 5,
+          "text": "Identify the guarantee feature of VA mortgage loans and the characteristics of VA loan programs",
+          "page": 39
+        },
+        {
+          "n": 6,
+          "text": "Explain the process of qualifying for a loan and how to calculate qualifying ratios",
+          "page": 39
+        },
+        {
+          "n": 7,
+          "text": "Distinguish among the primary sources of home financing",
+          "page": 39
+        },
+        {
+          "n": 8,
+          "text": "Describe the role of the secondary mortgage market and know the features of the major agencies active in the secondary market",
+          "page": 39
+        },
+        {
+          "n": 9,
+          "text": "Describe the major provisions of the federal laws regarding fair credit and lending procedures",
+          "page": 39
+        },
+        {
+          "n": 10,
+          "text": "Recognize and avoid mortgage fraud",
+          "page": 39
+        }
+      ],
+      "ocrObjectives": [
+        "Describe the mechanics of an adjustable rate mortgage and the components of an ARM",
+        "Describe the features of an amortized mortgage and amortize a level-payment plan mortgage when given the principal amount, the interest rate and the monthly payment amount",
+        "Distinguish among the various types of mortgages",
+        "Describe the characteristics of FHA mortgages and common FHA loan programs",
+        "Identify the guarantee feature of VA mortgage loans and the characteristics of VA loan programs",
+        "Explain the process of qualifying for a loan and how to calculate qualifying ratios",
+        "Distinguish among the primary sources of home financing",
+        "Describe the role of the secondary mortgage market and know the features of the major agencies active in the secondary market",
+        "Describe the major provisions of the federal laws regarding fair credit and lending procedures",
+        "Recognize and avoid mortgage fraud"
+      ]
+    },
+    {
+      "number": 14,
+      "tocTitle": "Real Estate Related Computations And Closing Of Transactions",
+      "printedSectionHeading": "REAL ESTATE RELATED COMPUTATIONS AND CLOSING OF TRANSACTIONS",
+      "startPage": 44,
+      "verifiedObjectiveCount": 10,
+      "ocrObjectiveCount": 10,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Compute the sales commission",
+          "page": 44
+        },
+        {
+          "n": 2,
+          "text": "Calculate the percent of profit or loss, given the original cost of the investment, the sale price and the dollar amount of profit or loss",
+          "page": 44
+        },
+        {
+          "n": 3,
+          "text": "Define settlement and title closing",
+          "page": 44
+        },
+        {
+          "n": 4,
+          "text": "List the preliminary steps to a closing",
+          "page": 44
+        },
+        {
+          "n": 5,
+          "text": "Prorate the buyer's and seller's expenses",
+          "page": 44
+        },
+        {
+          "n": 6,
+          "text": "Calculate the dollar amount of transfer taxes on deeds, mortgages and notes",
+          "page": 44
+        },
+        {
+          "n": 7,
+          "text": "Allocate taxes and fees to the proper parties and compute individual costs",
+          "page": 44
+        },
+        {
+          "n": 8,
+          "text": "Explain the rules of thumb for Closing Disclosure entries",
+          "page": 44
+        },
+        {
+          "n": 9,
+          "text": "Explain the major sections of the Closing Disclosure",
+          "page": 44
+        },
+        {
+          "n": 10,
+          "text": "Demonstrate ability to read and check the Closing Disclosure for errors",
+          "page": 44
+        }
+      ],
+      "ocrObjectives": [
+        "Compute the sales commission",
+        "Calculate the percent of profit or loss, given the original cost of the investment, the sale price and the dollar amount of profit or loss",
+        "Define settlement and title closing",
+        "List the preliminary steps to a closing",
+        "Prorate the buyer's and seller's expenses",
+        "Calculate the dollar amount of transfer taxes on deeds, mortgages and notes",
+        "Allocate taxes and fees to the proper parties and compute individual costs",
+        "Explain the rules of thumb for Closing Disclosure entries",
+        "Explain the major sections of the Closing Disclosure",
+        "Demonstrate ability to read and check the Closing Disclosure for errors"
+      ]
+    },
+    {
+      "number": 15,
+      "tocTitle": "The Real Estate Markets And Analysis",
+      "printedSectionHeading": "THE REAL ESTATE MARKETS AND ANALYSIS",
+      "startPage": 46,
+      "verifiedObjectiveCount": 6,
+      "ocrObjectiveCount": 5,
+      "discrepancy": "OCR 5 vs verified 6",
+      "resolution": "OCR merged 'Identify the factors that influence demand' and 'Identify the factors that influence supply' into a single line. Visually confirmed on printed page 46: six distinct bullets. Verified text layer carries 6.",
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe the physical characteristics of real estate",
+          "page": 46
+        },
+        {
+          "n": 2,
+          "text": "Describe the economic characteristics of real estate",
+          "page": 46
+        },
+        {
+          "n": 3,
+          "text": "Identify the factors that influence demand",
+          "page": 46
+        },
+        {
+          "n": 4,
+          "text": "Identify the factors that influence supply",
+          "page": 46
+        },
+        {
+          "n": 5,
+          "text": "Distinguish among different ways of interpreting market conditions",
+          "page": 46
+        },
+        {
+          "n": 6,
+          "text": "Demonstrate understanding of the different market indicators",
+          "page": 46
+        }
+      ],
+      "ocrObjectives": [
+        "Describe the physical characteristics of real estate",
+        "Describe the economic characteristics of real estate",
+        "Identify the factors that influence demand Identify the factors that influence supply",
+        "Distinguish among different ways of interpreting market conditions",
+        "Demonstrate understanding of the different market indicators"
+      ]
+    },
+    {
+      "number": 16,
+      "tocTitle": "Real Estate Appraisal",
+      "printedSectionHeading": "REAL ESTATE APPRAISAL",
+      "startPage": 48,
+      "verifiedObjectiveCount": 16,
+      "ocrObjectiveCount": 16,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe federal and state regulations pertaining to appraising",
+          "page": 48
+        },
+        {
+          "n": 2,
+          "text": "Identify the appraisers fiduciary relationship",
+          "page": 48
+        },
+        {
+          "n": 3,
+          "text": "Identify the economic and physical characteristics of real estate that affect market value",
+          "page": 48
+        },
+        {
+          "n": 4,
+          "text": "Explain what the Uniform Standards of Professional Appraisal Practice (USPAP) is and how it affects the appraisal process of real property",
+          "page": 48
+        },
+        {
+          "n": 5,
+          "text": "Distinguish among the various types of value",
+          "page": 48
+        },
+        {
+          "n": 6,
+          "text": "Define market value and describe its underlying assumptions",
+          "page": 48
+        },
+        {
+          "n": 7,
+          "text": "Distinguish among value, price and cost",
+          "page": 48
+        },
+        {
+          "n": 8,
+          "text": "Describe the four characteristics of value",
+          "page": 48
+        },
+        {
+          "n": 9,
+          "text": "Distinguish among the principles of value",
+          "page": 48
+        },
+        {
+          "n": 10,
+          "text": "Differentiate among the three approaches to estimating the value of real property",
+          "page": 48
+        },
+        {
+          "n": 11,
+          "text": "Estimate value of subject property using Comparable Sales Approach",
+          "page": 48
+        },
+        {
+          "n": 12,
+          "text": "Estimate value of subject property using Cost Approach",
+          "page": 48
+        },
+        {
+          "n": 13,
+          "text": "Estimate value of subject property using Income Approach",
+          "page": 48
+        },
+        {
+          "n": 14,
+          "text": "Reconcile three approaches to establish final value estimate",
+          "page": 48
+        },
+        {
+          "n": 15,
+          "text": "Calculate value using gross multiplier analysis",
+          "page": 48
+        },
+        {
+          "n": 16,
+          "text": "Explain how to prepare a Comparative Market Analysis (CMA), comparing and contrasting with sales comparison approach",
+          "page": 48
+        }
+      ],
+      "ocrObjectives": [
+        "Describe federal and state regulations pertaining to appraising",
+        "Identify the appraisers fiduciary relationship",
+        "Identify the economic and physical characteristics of real estate that affect market value",
+        "Explain what the Uniform Standards of Professional Appraisal Practice (USPAP) is and how it affects the appraisal process of real property",
+        "Distinguish among the various types of value",
+        "Define market value and describe its underlying assumptions",
+        "Distinguish among value, price and cost",
+        "Describe the four characteristics of value",
+        "Distinguish among the principles of value",
+        "Differentiate among the three approaches to estimating the value of real property",
+        "Estimate value of subject property using Comparable Sales Approach",
+        "Estimate value of subject property using Cost Approach",
+        "Estimate value of subject property using Income Approach",
+        "Reconcile three approaches to establish final value estimate",
+        "Calculate value using gross multiplier analysis",
+        "Explain how to prepare a Comparative Market Analysis (CMA), comparing and contrasting with sales comparison approach"
+      ]
+    },
+    {
+      "number": 17,
+      "tocTitle": "Real Estate Investments And Business Opportunity Brokerage",
+      "printedSectionHeading": "REAL ESTATE INVESTMENTS AND BUSINESS OPPORTUNITY BROKERAGE",
+      "startPage": 51,
+      "verifiedObjectiveCount": 8,
+      "ocrObjectiveCount": 8,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Distinguish among the different types of real estate investments",
+          "page": 51
+        },
+        {
+          "n": 2,
+          "text": "Identify the advantages and disadvantages of investing in real estate",
+          "page": 51
+        },
+        {
+          "n": 3,
+          "text": "Distinguish among the various types of risk",
+          "page": 51
+        },
+        {
+          "n": 4,
+          "text": "Explain the importance of investment analysis",
+          "page": 51
+        },
+        {
+          "n": 5,
+          "text": "Describe the similarities and differences between real estate brokerage and business brokerage",
+          "page": 51
+        },
+        {
+          "n": 6,
+          "text": "Describe the types of expertise required in business brokerage",
+          "page": 51
+        },
+        {
+          "n": 7,
+          "text": "Distinguish among the methods of appraising businesses",
+          "page": 51
+        },
+        {
+          "n": 8,
+          "text": "Describe the steps in the sale of a business",
+          "page": 51
+        }
+      ],
+      "ocrObjectives": [
+        "Distinguish among the different types of real estate investments",
+        "Identify the advantages and disadvantages of investing in real estate",
+        "Distinguish among the various types of risk",
+        "Explain the importance of investment analysis",
+        "Describe the similarities and differences between real estate brokerage and business brokerage",
+        "Describe the types of expertise required in business brokerage",
+        "Distinguish among the methods of appraising businesses",
+        "Describe the steps in the sale of a business"
+      ]
+    },
+    {
+      "number": 18,
+      "tocTitle": "Taxes Affecting Real Estate",
+      "printedSectionHeading": "TAXES AFFECTING REAL ESTATE",
+      "startPage": 53,
+      "verifiedObjectiveCount": 9,
+      "ocrObjectiveCount": 9,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Distinguish among immune, exempt and partially exempt property",
+          "page": 53
+        },
+        {
+          "n": 2,
+          "text": "Describe the various personal exemptions available to qualified owners of homestead property",
+          "page": 53
+        },
+        {
+          "n": 3,
+          "text": "Compute the property tax on a specific parcel, given the current tax rate, assessed value, eligible exemptions and transfer of assessment limitation difference (save our homes portability) if applicable",
+          "page": 53
+        },
+        {
+          "n": 4,
+          "text": "List the steps involved in the tax appeal procedure",
+          "page": 53
+        },
+        {
+          "n": 5,
+          "text": "Describe the purpose of Florida\u2019s Green Belt Law",
+          "page": 53
+        },
+        {
+          "n": 6,
+          "text": "Calculate the cost of a special assessment, given the conditions and amounts involved",
+          "page": 53
+        },
+        {
+          "n": 7,
+          "text": "Describe the tax advantages of home ownership",
+          "page": 53
+        },
+        {
+          "n": 8,
+          "text": "Explain how to determine taxable income of investment real estate",
+          "page": 53
+        },
+        {
+          "n": 9,
+          "text": "Distinguish between installment sales and like-kind exchange",
+          "page": 53
+        }
+      ],
+      "ocrObjectives": [
+        "Distinguish among immune, exempt and partially exempt property",
+        "Describe the various personal exemptions available to qualified owners of homestead property",
+        "Compute the property tax on a specific parcel, given the current tax rate, assessed value, eligible exemptions and transfer of assessment limitation difference (save our homes portability) if applicable",
+        "List the steps involved in the tax appeal procedure",
+        "Describe the purpose of Florida\u2019s Green Belt Law",
+        "Calculate the cost of a special assessment, given the conditions and amounts involved",
+        "Describe the tax advantages of home ownership",
+        "Explain how to determine taxable income of investment real estate",
+        "Distinguish between installment sales and like-kind exchange"
+      ]
+    },
+    {
+      "number": 19,
+      "tocTitle": "Planning, And Zoning",
+      "printedSectionHeading": "PLANNING, ZONING AND ENVIRONMENTAL HAZARDS",
+      "startPage": 56,
+      "verifiedObjectiveCount": 11,
+      "ocrObjectiveCount": 11,
+      "discrepancy": null,
+      "resolution": null,
+      "objectives": [
+        {
+          "n": 1,
+          "text": "Describe the composition and authority of the local planning agency",
+          "page": 56
+        },
+        {
+          "n": 2,
+          "text": "Explain the purpose of land-use controls and the role of zoning ordinances",
+          "page": 56
+        },
+        {
+          "n": 3,
+          "text": "Identify the provisions of Florida\u2019s comprehensive plan and the Growth Management Act",
+          "page": 56
+        },
+        {
+          "n": 4,
+          "text": "Distinguish among the five general zoning classifications",
+          "page": 56
+        },
+        {
+          "n": 5,
+          "text": "Distinguish among zoning ordinances, building codes and health ordinances",
+          "page": 56
+        },
+        {
+          "n": 6,
+          "text": "Explain the purpose of a variance, special exception and a nonconforming use",
+          "page": 56
+        },
+        {
+          "n": 7,
+          "text": "Calculate the number of lots available for development, given the total number of acres contained in a parcel, the percentage of land reserved for streets and other facilities and the minimum number of square feet per lot",
+          "page": 56
+        },
+        {
+          "n": 8,
+          "text": "Describe the characteristics of a planned unit development",
+          "page": 56
+        },
+        {
+          "n": 9,
+          "text": "Understand the basic provisions of the national flood insurance program",
+          "page": 56
+        },
+        {
+          "n": 10,
+          "text": "Describe the impact Comprehensive Environmental Response Compensation and Liability Act (CERCLA)",
+          "page": 56
+        },
+        {
+          "n": 11,
+          "text": "Explain the various environmental hazards associated with real estate",
+          "page": 56
+        }
+      ],
+      "ocrObjectives": [
+        "Describe the composition and authority of the local planning agency",
+        "Explain the purpose of land-use controls and the role of zoning ordinances",
+        "Identify the provisions of Florida\u2019s comprehensive plan and the Growth Management",
+        "Distinguish among the five general zoning classifications",
+        "Distinguish among zoning ordinances, building codes and health ordinances",
+        "Explain the purpose of a variance, special exception and a nonconforming use",
+        "Calculate the number of lots available for development, given the total number of acres contained in a parcel, the percentage of land reserved for streets and other facilities and the minimum number of square feet per lot",
+        "Describe the characteristics of a planned unit development",
+        "Understand the basic provisions of the national flood insurance program",
+        "Describe the impact Comprehensive Environmental Response Compensation and Liability Act (CERCLA)",
+        "Explain the various environmental hazards associated with real estate"
+      ]
+    }
+  ]
+}

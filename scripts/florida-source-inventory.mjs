@@ -23,14 +23,17 @@
  *   - It reads nothing from any scratch location, so it passes or fails identically on a clean
  *     checkout.
  *
- * A NOTE ON WHAT IS HELD HERE THAT IS NOT AN AUTHORITY. Two kinds of file live under
+ * A NOTE ON WHAT IS HELD HERE THAT IS NOT AN AUTHORITY. Three kinds of file live under
  * florida/frec-sources without being law. The `extracted/` tree holds readable text recovered from
  * the authorities — statute sections split out of the chapter, rule bodies recovered from Word 97
- * streams, OCR of a scanned syllabus — and it exists so that a person can read what was relied on.
- * It is derived, and the file it derives from is held beside it. And dbpr-real-estate-schools.html
- * is held precisely because it turned out to carry nothing: recording a fetch that came back empty
- * is how the next reader learns the school permit application was looked for and not found, rather
- * than assuming nobody looked.
+ * streams, PDF text and OCR — so that a person can read what was relied on; it is derived, and the
+ * file it derives from is held beside it. The `dbpr/` tree holds DBPR applications and checklists,
+ * which are administrative instruments rather than law and are classified as such in the manifest.
+ * And dbpr-real-estate-schools.html is held as a record of a wrong turn: Phase 0 v1 fetched it,
+ * received HTTP 200, and concluded the Department published no forms. It is a soft-404 that serves
+ * the Elevator Safety page. The real forms are at /real-estate-commission/forms-and-publications/
+ * and /real-estate-commission/education/, and both of those are held too. Keeping the wrong page is
+ * how the next reader learns that a 200 is not evidence the page you asked for exists.
  *
  * REPRODUCE THE VALIDATION (clean checkout, no scratch directory required):
  *
@@ -98,11 +101,25 @@ const CONTROLLING = [
   { path: "florida/frec-sources/fac/ref-14599-frec-course-1-eff-010123.pdf", why: "the Course I syllabus itself, incorporated by reference into Rule 61J2-3.008(4)(b) — the entire syllabus lock indexes this file" },
   { path: "florida/frec-sources/fac/fac-61J2-3.008.doc", why: "the rule that fixes the 63 hours, the 70% pass mark, every distance-delivery obligation and every examination constraint" },
   { path: "florida/frec-sources/fac/fac-61J2-3.015.doc", why: "the completion certificate fields and the five-year certificate retention" },
-  { path: "florida/frec-sources/fac/fac-61J2-17.011.doc", why: "the Florida broker's licence requirement for the school permit holder — the blocking gate" },
+  { path: "florida/frec-sources/fac/fac-61J2-17.011.doc", why: "the rule whose scoped second sentence conditions the broker branch of s. 475.451(2)(a) on a FLORIDA licence, and whose cross-reference to s. 475.25(2)(a) does not resolve" },
   { path: "florida/frec-sources/fac/fac-61J2-17.013.doc", why: "construes the pass-guarantee prohibition to reach pass-or-refund, and the one-permit-per-location rule" },
   { path: "florida/frec-sources/fac/fac-61J2-17.015.doc", why: "the anti-recruiting statement the course must post and read" },
   { path: "florida/frec-sources/statutes/fs-chapter-475.html", why: "Chapter 475 — the 63-hour cap, the school permit, the instructor permit, the unproctored distance examination, the advertising rules and the three-year record retention" },
   { path: "florida/frec-sources/statutes/fs-chapter-455.html", why: "Chapter 455 — held so that s. 455.2123 can be cited for what it is NOT: it governs continuing education, and nothing here may rest it on pre-licence examination siting" },
+
+  /* Added in Phase 0 v2. The first four are controlling in the strongest sense available to this
+     project: the syllabus lock is a transcription of the text-layer PDF and would be unverifiable
+     without it, and the eligibility matrix rests on the Department's own applications showing the
+     examination route on their face. Losing any of these would leave a conclusion in this build
+     with nothing behind it. */
+  { path: "florida/frec-sources/dbpr/education/FREC1SyllabusCleanFinal01012023.pdf", why: "the syllabus copy every one of the 180 transcribed learning objectives was read from — the OCR of the scan is a cross-check, not a source" },
+  { path: "florida/frec-sources/dbpr/forms/DBPR_RE_5_School_Permit.pdf", why: "the school permit application, whose METHOD OF QUALIFICATION section shows the Department administering both statutory routes" },
+  { path: "florida/frec-sources/dbpr/forms/DBPR_RE_3_Instructor_Permit.pdf", why: "the instructor permit application, whose Section I offers the Real Estate Instructor Exam as basis [1010]" },
+  { path: "florida/frec-sources/dbpr/forms/DBPR_RE_18_FRECEduCourseAppr.pdf", why: "the course approval application — the source of the three-objectives-per-hour and five-examination requirements, and of the conflict with the rule floor of two" },
+  { path: "florida/frec-sources/dbpr/education/frec_distance_ed_chk_list.pdf", why: "what a DBPR reviewer actually checks for a distance course, and the second half of the two-versus-five examination conflict" },
+  { path: "florida/frec-sources/dbpr/forms/DBPR_RE_6_School_Change_of_Status_Transactions.pdf", why: "third corroboration of the statutory alternative, and the instrument that registers an instructor to a school" },
+  { path: "florida/frec-sources/fac/fac-61-35.027.doc", why: "the rule that adopts every DBPR RE form by reference, making the form numbers traceable rather than remembered" },
+  { path: "florida/frec-sources/extracted/syllabus-reconciliation.json", why: "the record of what OCR said, what the text layer says, and how the five disagreements resolved — without it the 180 is an assertion" },
 ];
 
 /** The Florida registers whose named sources must all resolve. Loaded defensively: a register that
@@ -118,9 +135,12 @@ const REGISTERS = [
   {
     id: "frec-course-i-syllabus",
     module: "../config/florida/frec-course-i-syllabus.mjs",
-    pick: (m) => (m.SYLLABUS_REFERENCE?.localCopy
-      ? [{ label: m.SYLLABUS_REFERENCE.id, localCopy: m.SYLLABUS_REFERENCE.localCopy, sha256: null, bytes: null }]
-      : []),
+    /* The syllabus is held twice — the copy the rule cites (a scan) and the copy that was actually
+       transcribed (with a text layer). Both must resolve; losing either would leave the
+       transcription unverifiable against the document the rule incorporates. */
+    pick: (m) => [m.SYLLABUS_REFERENCE?.citedCopy, m.SYLLABUS_REFERENCE?.transcribedCopy]
+      .filter((c) => c?.localCopy)
+      .map((c) => ({ label: `${m.SYLLABUS_REFERENCE.id} (${c.hasTextLayer ? "text layer" : "scan"})`, localCopy: c.localCopy, sha256: null, bytes: null })),
   },
 ];
 

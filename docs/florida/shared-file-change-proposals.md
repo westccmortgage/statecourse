@@ -1,5 +1,9 @@
 # Florida — proposed changes to shared files
 
+> **Phase 0 v2.** Two changes: §1's registry table has been corrected (v1 recorded
+> `live_online_allowed` as already `true`; it is `null`), and §6 is new — the documented build is
+> broken on `main`.
+
 **Nothing in this document has been applied.** Every change below touches a file that Texas,
 California or another jurisdiction also depends on, and the Texas workstream is active in a separate
 session. Editing a shared registry or a shared engine while another state is mid-build is how two
@@ -178,7 +182,36 @@ No change is proposed to `tests/regulatory-source-lock.test.mjs`, which tests th
 
 ---
 
-## 6. `package.json` — no change needed
+## 6. `scripts/build-verified.sh` — the documented build is broken on `main`
+
+Found while establishing the Florida regression baseline. Not a Florida issue, recorded because
+Florida discovered it and because it blocks any honest claim that the platform is green.
+
+Line 23 of `scripts/build-verified.sh` runs:
+
+```bash
+node "${script_dir}/sync-california-pdf-downloads.mjs"
+```
+
+**That file does not exist and never has.** `git log --all -- scripts/sync-california-pdf-downloads.mjs`
+returns nothing, and `git cat-file -e origin/main:scripts/sync-california-pdf-downloads.mjs` fails.
+So `npm run build` aborts with `MODULE_NOT_FOUND` on `main`, after `generate-national-platform.mjs`
+has run and before `vinext build`. Nineteen tests fail on both `main` and this branch as a direct
+consequence — see `docs/florida/regression-baseline.md`.
+
+**Proposed, and explicitly NOT applied:** either restore the missing script, or remove the line if
+the California PDF sync is no longer part of the build. Which of those is right depends on
+California's intent, and the file sits between California and Texas in a way Florida should not
+adjudicate. Repairing a shared build script while the Texas workstream is actively pushing to `main`
+is exactly what Florida's isolation rules exclude.
+
+Note the precedent immediately above it in the same file: the `export-california-source-temp.mjs`
+line was **removed** on 2026-08-20 with a comment explaining why, rather than being restored. That
+may be the intended treatment here too.
+
+---
+
+## 7. `package.json` — no change needed
 
 The `test` script runs `node --test tests/*.test.mjs`, so `tests/florida-foundation.test.mjs` is
 picked up by the existing glob. Noted here so nobody adds a Florida entry that was never required.
@@ -194,6 +227,8 @@ picked up by the existing glob. Noted here so nobody adds a Florida entry that w
 4. **§2, the verification entry** — independent of the others; can land any time.
 5. **§3, the catalog record** — Phase 2 at the earliest, and only once a course exists.
 6. **§5** — deferred, and not while Texas is active.
+7. **§6, the broken build script** — needs a decision from whoever owns the California build, not
+   from Florida.
 
 Steps 1, 2 and 4 are the only ones that make sense during Phase 0, and all three touch files Texas
 also depends on. They should be applied in a single reviewed change once the Texas workstream is at

@@ -5,22 +5,31 @@ turned out to say. Read dates are the dates the document was fetched and hashed;
 `florida/frec-sources/source-inventory.json` and the claims taken from each source are in
 `config/florida/regulatory-manifest.mjs`.
 
+> **Phase 0 v2.** This document was revised after the first Phase 0 report was rejected. Two things
+> changed materially: the school-permitholder eligibility conclusion was **wrong** and has been
+> corrected (see "The permitholder question, corrected" below), and the DBPR application package —
+> reported in v1 as unobtainable — was located, downloaded and read. The syllabus transcription was
+> also rebuilt from the Department's text-layer copy rather than OCR.
+
 **All of it was readable.** That is worth stating at the top because it is the single biggest
 difference between Florida and Texas in this repository. Texas's two highest authorities could not
 be opened at all — the Secretary of State moved the Administrative Code into a JavaScript portal and
 `statutes.capitol.texas.gov` serves an application shell for every document path — and the Texas
 manifest exists largely to record what could not be read. Florida's Legislature serves Chapter 475
 as static HTML, and the Department of State serves every 61J2 rule and every document those rules
-incorporate by reference. Thirteen sources, thirteen read.
+incorporate by reference, and the Division of Real Estate serves every application form and
+checklist. **Thirty-one sources, thirty-one read.**
 
-Which means the interesting findings here are not silences. They are disagreements.
+Which means the interesting findings here are not silences. They are disagreements — including two
+places where the Department's own documents disagree with each other.
 
 ---
 
-## The three disagreements
+## The disagreements
 
-These are recorded rather than resolved. Each is a written question for FREC before anything is
-submitted, and nothing downstream may treat any of them as settled.
+Recorded rather than resolved. Each is a written question for DBPR/FREC before anything is
+submitted, and nothing downstream may treat any of them as settled. The drafted letter is in
+`config/florida/assessment-architecture.mjs` as `DRAFT_QUESTION_TO_DBPR`.
 
 ### 1. How many items must the end-of-course examination contain?
 
@@ -39,28 +48,59 @@ not. It is a **ceiling on time allowed** — "must not exceed the equivalent of 
 the ceiling for all three counts (100 items allows 180, 120 allows 216, 126 allows 226.8). Every
 reading passes, so the ceiling disambiguates nothing.
 
-**Planned pending an answer:** build to 126 items, the highest floor any reading produces. An
-examination satisfying the largest floor satisfies all of them, and "at least" permits exceeding
-any. That gives 1.19 minutes per item, within the ceiling.
+**What the broker sentence tells us — missed in v1.** Two sentences earlier the same paragraph says
+the *broker* examination "shall contain at least 95 items ... or 2 items per instruction hour." The
+Broker course is 72 hours, so the per-hour figure is at least 144 against a stated floor of 95. In
+both sentences the flat number sits well below the per-hour number. If the multiplier governed, both
+flat numbers would be dead letters. The natural reading is that "or" offers the school an
+**alternative basis**, and a school meeting either has met the requirement.
 
-### 2. Who may hold the school permit?
+**So 100 is the confirmed regulatory minimum**, and it is labelled that way in
+`config/florida/assessment-architecture.mjs` under `REGULATORY_MINIMUM_CONFIRMED`.
 
-Section 475.451(2)(a), Fla. Stat. says the school permitholder "must be the holder of a license as a
-broker, either active or voluntarily inactive, or must have passed an instructor's examination
-approved by the commission" — two alternatives.
+**126 is StateCourse provider policy, not law.** v1 wrote 126 into a config as though Florida
+required it. It is now `STATECOURSE_CONSERVATIVE_POLICY`, configurable, and carries its own cost:
+150 minutes across 126 items is 1.19 minutes per item against 1.50 at the 100-item minimum. Both sit
+under the ceiling; the conservative choice is measurably tighter on students. If DBPR confirms 100,
+the engine should drop to 100.
 
-Rule 61J2-17.011(2), F.A.C. says the permit holder must meet "the qualifications for practice set
-forth in Section 475.25(2)(a), F.S." and that "[t]he licensee must be a holder of a Florida Broker's
-license in order to satisfy the Broker license requirement."
+### 2. A rule cross-reference that does not resolve — *corrected in v2*
 
-Two problems. **The cross-reference does not resolve**: s. 475.25(2) is the provision allowing a
-licence to be revoked if it was issued through the mistake or inadvertence of the commission, and it
-has no paragraph (a) stating any qualification for practice. The provision the rule is plainly
-reaching for is s. 475.451(2)(a). And **the rule appears to narrow the statute**: it requires a
-Florida broker's licence, where the statute offered the instructor's examination as an alternative.
+**Phase 0 v1 got this wrong, and the correction matters more than the defect.**
 
-This is the gate that decides whether StateCourse can file at all. See
-`config/florida/school-permit-ledger.mjs`.
+Section 475.451(2)(a), Fla. Stat., in full:
+
+> "School permitholder" means the individual who is responsible for directing the overall operation
+> of a proprietary real estate school. A school permitholder must be the holder of a license as a
+> broker, either active or voluntarily inactive, **or must have passed an instructor's examination
+> approved by the commission.** A school permitholder must also meet the requirements of a school
+> instructor if actively engaged in teaching.
+
+Rule 61J2-17.011(2), F.A.C., in full:
+
+> (2) A person shall qualify to be a school permit holder by meeting the qualifications for practice
+> set forth in Section 475.25(2)(a), F.S. The licensee must be a holder of a Florida Broker's
+> license in order to satisfy the Broker license requirement in Section 475.25(2)(a), F.S.
+
+**The defect stands.** Section 475.25(2) is the provision permitting revocation of a licence issued
+through the commission's own mistake. It has no paragraph (a), and states no qualification for
+practice. The provision the rule reaches for is s. 475.451(2)(a). The rule's cited rulemaking
+authority — "475.05, 475.451(2)(b)1.b. FS." — is the *instructor* experience provision that
+subsection (1) implements, and would not support narrowing the permitholder alternatives.
+
+**But v1's conclusion from it was wrong.** v1 read the rule's second sentence as requiring a Florida
+broker's licence of every permitholder, and reported that no StateCourse individual could sign an
+application. Read again, the sentence is conditional and scoped: a licensee must hold a Florida
+broker's licence *in order to satisfy the Broker license requirement*. It answers "which broker's
+licence counts" — a Florida one, not an out-of-state one. It says nothing about an applicant who is
+not satisfying the broker-licence requirement at all because they qualified by examination.
+
+A rule cannot repeal a statute, and a non-resolving citation certainly cannot do it by accident.
+Section 120.52(8)(c), Fla. Stat. makes a rule that enlarges, modifies or contravenes its enabling
+law an invalid exercise of delegated legislative authority.
+
+**And DBPR agrees.** This is the Department's own practice, not a clever reading against it —
+see "The Department's own applications" below.
 
 ### 3. What is a pre-licence hardship?
 
@@ -312,16 +352,121 @@ expire after 2 years.
 
 ---
 
+### 4. Two end-of-course examinations, or five?
+
+The Department's own documents disagree, by three complete examination forms.
+
+| Document | Says |
+|---|---|
+| Rule 61J2-3.008(4)(d), F.A.C. | "The school shall develop **at least 2 forms**" |
+| FREC Distance Education Checklist (rev. 06/2018) | "**Two** end of course examinations (multiple choice) and answer keys" |
+| DBPR RE 18, Section V (current) | "**Five** end of course examinations (for distance education courses only)" |
+
+StateCourse plans to five, which satisfies all three at once — recorded as provider policy driven by
+an administrative requirement, not as a regulatory minimum.
+
+### 5. Must a permitted school also file DBPR RE 19?
+
+RE 18 Section V lists "Education Provider Approval Application form DBPR-RE-19" among the attachments
+for *all* initial course approvals, while the very next line is marked "for Providers Only", and the
+Distance Education Checklist states elsewhere that RE 20 and the course fee are "a requirement for
+approved providers only, licensed real estate schools do not need to fulfill this requirement". An
+approved CE provider is not the same status as a permitted real estate school. Unresolved.
+
+---
+
+## The Department's own applications
+
+Obtained in v2 from `https://www2.myfloridalicense.com/real-estate-commission/forms-and-publications/`
+and `.../education/`. Every DBPR RE form is adopted by **Rule 61-35.027, F.A.C., "Real Estate
+Forms"**, and each form's header states that incorporation, so the numbers below are traceable to a
+rule rather than to memory.
+
+| Form | Title on the form | Effective | Fee |
+|---|---|---|---|
+| DBPR RE 3 | Application for Real Estate Instructor Permit | Nov 2015 | $62.75 |
+| DBPR RE 5 | Application for School Permit | May 2019 | $109.00 |
+| DBPR RE 6 | School Change of Status Transactions | — | — |
+| DBPR RE 9 | Application for Additional School Location | Jun 2015 | $50.00 to open |
+| DBPR RE 18 | Education Course Approval Application | — | $0 for schools |
+| DBPR RE 19 | FREC Continuing Education Provider Approval Application | — | — |
+| DBPR RE 20 | FREC Request for Instructor Evaluation | — | — |
+
+### The permitholder question, corrected
+
+Three of the Department's instruments carry the statutory alternative on their face. This is what
+settles disagreement 2 above.
+
+**DBPR RE 5, Section I — "METHOD OF QUALIFICATION":**
+
+> Qualified to hold school permit through:
+> ☐ Holding a license as a Florida Broker, either active or voluntarily inactive
+>   — Florida Broker License Number ______
+> **or**
+> ☐ Holder of a Florida Instructor's License
+>   — Instructor Permit Number ______
+>
+> Note: If permit holder is also teaching, the applicant must meet requirements of school instructor.
+
+**DBPR RE 6, Change of School Permit Holder:**
+
+> Qualified to hold school permit through: ☐ Holding a license as a broker, either active or
+> voluntarily inactive, or; ☐ **Passing the Instructors Exam**
+
+**DBPR RE 3, Section I — "CHECK BASIS FOR INSTRUCTOR QUALIFICATION":**
+
+> ☐ **Real Estate Instructor Exam [1010]**
+> ☐ Specific Degree & Broker's License [1030]
+> ☐ Degree, Extensive Experience, & Broker's License [1040]
+
+Basis [1010] requires no broker licence at all. And DBPR's own *Real Estate School Instructor
+Requirements* sheet lists the same three routes, the third being "Pass an Instructor Examination
+approved by the FREC."
+
+**The consequence.** There is a lawful route for StateCourse and it does not require anyone to hold
+a Florida broker's licence: pass the Commission-approved instructor examination → DBPR RE 3 under
+basis [1010] → instructor permit → DBPR RE 5 naming that permit → school permit. Nothing along it
+has been done, and no person is asserted to be eligible — eligibility is the Department's
+determination on an application. The seven-row status matrix is in
+`config/florida/school-permit-ledger.mjs`.
+
+### What RE 18 requires for an initial Course I approval
+
+Section III carries **"Sales Associate Pre-Licensure"** and **"Distance"**, so RE 18 governs Course I
+despite the "Continuing Education" wording in its running header. Section V, initial approvals:
+
+1. Course timed outline — subjects, major topics, subtopics
+2. **Learning objectives — three per hour**
+3. Course materials including explanation of delivery method
+4. Education Provider Approval Application DBPR RE 19 *(see disagreement 5)*
+5. Instructor information on DBPR RE 20 with a resume *(Providers Only)*
+6. **Five end of course examinations** *(distance education only)* *(see disagreement 4)*
+7. Answer keys *(distance only)* referencing the page numbers each question and answer rest on
+
+The three-objectives-per-hour requirement is worth pausing on: 3 × 60 instruction hours = **180**,
+which is exactly the number of learning objectives the Commission's own syllabus carries. The
+syllabus and the application form agree, which is a stronger check on the transcription than either
+alone.
+
+---
+
 ## What could not be obtained
 
 Recorded because a gap nobody wrote down is a gap the next reader assumes was checked.
 
-**The school permit application and the instructor permit application.** The DBPR real estate schools
-page at `www2.myfloridalicense.com/real-estate/schools/` was fetched and held. It is a WordPress
-navigation shell whose content is assembled client-side, and it carries no application, no form
-number and no fee schedule. **No DBPR form number appears anywhere in this Florida build.** A
-plausible-looking form number is worse than none: it is the kind of confident detail that survives
-review because it looks as though it was checked.
+**~~The application forms.~~ Obtained in v2.** Recorded here because *how* v1 missed them is the
+lesson. v1 fetched `https://www2.myfloridalicense.com/real-estate/forms/`, received **HTTP 200**,
+and concluded the Department published no forms. That URL is a **soft-404** — it serves the
+**Elevator Safety** forms page. Several sibling URLs return 200 with byte-identical navigation
+shells. *A 200 is not evidence that the page you asked for exists.* Both the wrong page and the
+right ones are now held, so the next reader can see the trap.
+
+**The instructor examination itself.** DBPR RE 3 offers "Real Estate Instructor Exam [1010]" as a
+qualification basis without saying where the examination is taken, what it covers, what it costs, or
+whether a candidate information booklet exists. Neither the forms-and-publications page nor the
+education page carries instructor-examination candidate materials. This is the one genuine gap
+remaining on the eligibility path, and it is a telephone call to the Division of Real Estate rather
+than a research task.
 
 **A verification path through DBPR's own records.** The Department's public licensee search at
 `myfloridalicense.com/wl11.asp` timed out on every attempt from this environment. No numbered walk

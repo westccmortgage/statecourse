@@ -29,7 +29,11 @@
  *      the ceiling for every one of the three counts.
  *   2. Rule 61J2-17.011(2) sends the reader to "Section 475.25(2)(a), F.S." for the school
  *      permitholder's qualification. Section 475.25(2) is about revoking a licence issued by
- *      mistake and has no paragraph (a) of that kind. The cross-reference does not resolve.
+ *      mistake and has no paragraph (a) of that kind. The cross-reference does not resolve — and
+ *      Phase 0 v1 compounded that by reading the rule's next sentence as closing the statutory
+ *      examination route. It does not: it conditions the BROKER branch on the licence being a
+ *      Florida one, and says nothing about the alternative. A defective citation cannot repeal a
+ *      statute by accident. See config/florida/school-permit-ledger.mjs.
  *   3. Rule 61J2-3.008(4)(b)3.3 allows a pre-licence course by correspondence "by reason of a
  *      hardship as defined by rule", and s. 475.17(2)(a)3 requires that route to exist — but Rule
  *      61J2-3.013, the hardship rule, defines hardship for post-licence and reactivation education
@@ -80,6 +84,32 @@ export const REACHABILITY = Object.freeze({
   READ_NOT_AUTHORITY: "READ_NOT_AUTHORITY",
 });
 
+/* WHAT KIND OF THING EACH SOURCE IS. Added in Phase 0 v2, because the first version treated every
+   source as interchangeable and that is how an administrative rule came to be weighed above the
+   statute it implements. The ordering here is the ordering used to resolve any disagreement:
+
+     STATUTE       — controlling. Chapter 475 and Chapter 455, Fla. Stat.
+     RULE          — controlling so far as consistent with, and authorised by, the statute it
+                     implements. s. 120.52(8)(c), Fla. Stat. makes a rule that enlarges, modifies or
+                     contravenes its enabling law an invalid exercise of delegated authority.
+     INCORPORATED  — a document a rule adopts by reference, and therefore part of the rule.
+     FORM          — a DBPR application. Administrative guidance, and strong evidence of the
+                     Department's own reading of the law it administers. It cannot create a
+                     requirement the law does not support, and it cannot remove an alternative the
+                     statute expressly grants.
+     GUIDANCE      — a DBPR checklist or information sheet. Same weight as a form, and useful
+                     precisely because it says what a reviewer will look for.
+     NAVIGATION    — a Department web page held to show where a document came from. Nothing rests
+                     on it. */
+export const AUTHORITY_CLASS = Object.freeze({
+  STATUTE: "STATUTE",
+  RULE: "RULE",
+  INCORPORATED: "INCORPORATED",
+  FORM: "FORM",
+  GUIDANCE: "GUIDANCE",
+  NAVIGATION: "NAVIGATION",
+});
+
 const source = (record) =>
   Object.freeze({
     ...record,
@@ -90,6 +120,7 @@ const source = (record) =>
 export const SOURCES = Object.freeze([
   source({
     id: "FS-475",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
     citation: "Ch. 475, Part I, Fla. Stat.",
     title: "Real Estate Brokers, Sales Associates, Schools, and Appraisers",
     publisher: "Florida Legislature, Online Sunshine (leg.state.fl.us) — the Legislature's own publication of the Florida Statutes",
@@ -132,6 +163,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FS-455",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
     citation: "Ch. 455, Fla. Stat.",
     title: "Business and Professional Regulation: General Provisions",
     publisher: "Florida Legislature, Online Sunshine (leg.state.fl.us)",
@@ -150,6 +182,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-3.008",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-3.008, F.A.C.",
     title: "Pre-licensing Education for Broker and Sales Associate Applicants",
     publisher: "Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code",
@@ -214,6 +247,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FREC-COURSE-I-SYLLABUS",
+    authorityClass: AUTHORITY_CLASS.INCORPORATED,
     citation: "Ref-14599, incorporated by reference by Rule 61J2-3.008(4)(b), F.A.C.",
     title: "FREC Sales Associate Course Syllabus (FREC Course I), January 1, 2023 revision",
     publisher: "Florida Department of State, Division of Library and Information Services (flrules.org)",
@@ -239,6 +273,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-3.012",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-3.012, F.A.C.",
     title: "Equivalency for Prelicensing Education",
     publisher: "Florida Department of State (flrules.org)",
@@ -258,6 +293,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-3.013",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-3.013, F.A.C.",
     title: "Hardship Cases",
     publisher: "Florida Department of State (flrules.org)",
@@ -278,6 +314,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-3.015",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-3.015, F.A.C.",
     title: "Notices of Satisfactory Course Completion",
     publisher: "Florida Department of State (flrules.org)",
@@ -303,6 +340,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-17.011",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-17.011, F.A.C.",
     title: "School Instructor and Permit Holder Requirements and Qualifications",
     publisher: "Florida Department of State (flrules.org)",
@@ -325,6 +363,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-17.013",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-17.013, F.A.C.",
     title: "Interpretation of Particular Phrases",
     publisher: "Florida Department of State (flrules.org)",
@@ -346,6 +385,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-17.014",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-17.014, F.A.C.",
     title: "Guest Lecturers",
     publisher: "Florida Department of State (flrules.org)",
@@ -363,6 +403,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-17.015",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-17.015, F.A.C.",
     title: "Required Communication by School Permit Holders",
     publisher: "Florida Department of State (flrules.org)",
@@ -385,6 +426,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "FAC-61J2-17.016",
+    authorityClass: AUTHORITY_CLASS.RULE,
     citation: "Rule 61J2-17.016, F.A.C.",
     title: "Renewal of Instructor Permits",
     publisher: "Florida Department of State (flrules.org)",
@@ -404,6 +446,7 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "DBPR-SCHOOLS-PAGE",
+    authorityClass: AUTHORITY_CLASS.NAVIGATION,
     citation: "DBPR, Division of Real Estate — real estate schools landing page",
     title: "myfloridalicense.com real estate schools page (navigation only; NOT an authority)",
     publisher: "Florida Department of Business and Professional Regulation",
@@ -419,7 +462,369 @@ export const SOURCES = Object.freeze([
       "Fetched and held so that the attempt is on the record, and recorded as NOT an authority because of what it turned out to be: a WordPress navigation shell whose real content is assembled client-side. It carries no school permit application, no instructor permit application, no fee schedule and no form number. So the DBPR school-permit application form could NOT be identified from the Department's own site in this environment, and no form number appears anywhere in this Florida build. Section 475.451(1), Fla. Stat. requires a permit; which paper obtains it is an open Phase 0 item, not a guess.",
       "The Department's public licensee search at myfloridalicense.com/wl11.asp timed out on every attempt from this environment, so no verification path through DBPR's own screens has been written. An unverified lookup procedure would defeat the purpose of publishing one.",
     ]),
-  }),]);
+  }),
+  source({
+    id: "FAC-61-35.027",
+    citation: "Rule 61-35.027, F.A.C.",
+    title: "Real Estate Forms — the rule that incorporates every DBPR RE form by reference",
+    publisher: "Florida Department of State, Division of Library and Information Services (flrules.org)",
+    url: "https://www.flrules.org/gateway/ruleNo.asp?id=61-35.027",
+    effectiveDate: "2017-10-30",
+    authorityClass: AUTHORITY_CLASS.RULE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/fac/fac-61-35.027.doc",
+    sha256: "1f98fc782917df37df12fef32d224518afd8553e3509ee6abc2eafb6a0515972",
+    bytes: 32768,
+    materialClaims: Object.freeze([
+      { claim: "each DBPR RE application form is adopted by reference by this rule, so the form numbers and titles used in this build are traceable to a rule rather than to recollection",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-3",
+    citation: "DBPR RE 3, incorporated by Rule 61-35.027, F.A.C.",
+    title: "Application for Real Estate Instructor Permit (effective November 2015)",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_3_Instructor_Permit.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_3_Instructor_Permit.pdf",
+    sha256: "f000ade7979d6a6e7626bc90cc74461b15eb915efbbda4b77e0359966a12b42d",
+    bytes: 139339,
+    materialClaims: Object.freeze([
+      { claim: "Section I offers three bases for instructor qualification, the FIRST being 'Real Estate Instructor Exam [1010]', which requires no broker licence — the Department administering s. 475.451(2)(b)1.c. on its own form",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "tests/florida-foundation.test.mjs"]) },
+      { claim: "the instructor permit fee is $62.75 and electronic fingerprints are required of all applicants",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-5",
+    citation: "DBPR RE 5, incorporated by Rule 61-35.027, F.A.C.",
+    title: "Application for School Permit (effective May 2019)",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_5_School_Permit.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_5_School_Permit.pdf",
+    sha256: "524220645b89c1d40892d5c46c795bb3338bda52c321b9054c783b86d3cdd28e",
+    bytes: 30826,
+    materialClaims: Object.freeze([
+      { claim: "Section I 'METHOD OF QUALIFICATION' offers TWO routes joined by 'or': 'Holding a license as a Florida Broker, either active or voluntarily inactive' with a Florida Broker License Number field, or 'Holder of a Florida Instructor's License' with an Instructor Permit Number field — the Department administering s. 475.451(2)(a) exactly as written",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "tests/florida-foundation.test.mjs"]) },
+      { claim: "the form's own note: 'If permit holder is also teaching, the applicant must meet requirements of school instructor.'",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs"]) },
+      { claim: "the school permit fee is $109.00",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-6",
+    citation: "DBPR RE 6, incorporated by Rule 61-35.027, F.A.C.",
+    title: "School Change of Status Transactions",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_6_School_Change_of_Status_Transactions.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_6_School_Change_of_Status_Transactions.pdf",
+    sha256: "fbd5b4c918b00d496c31618bb05ee4a7c7b663173ccefc43bf458dd2fa2e1f82",
+    bytes: 54555,
+    materialClaims: Object.freeze([
+      { claim: "the Change of School Permit Holder section states the qualification alternatives as 'Holding a license as a broker, either active or voluntarily inactive, or; Passing the Instructors Exam', with separate Broker License Number and Instructor License Number fields — a third independent corroboration of the statutory alternative",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "tests/florida-foundation.test.mjs"]) },
+      { claim: "the Add/Terminate – Instructor transaction is how a permitted instructor is registered to a school, which is what Rule 61J2-3.008(5)(b) presupposes",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-9",
+    citation: "DBPR RE 9, incorporated by Rule 61-35.027, F.A.C.",
+    title: "Application for Additional School Location (effective June 2015)",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_9_Additional_School_Location.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_9_Additional_School_Location.pdf",
+    sha256: "06d11c7090a65e16927cd200c1fd98aeafe0743051a1fad3bc45a7d9af5e7e5f",
+    bytes: 43740,
+    materialClaims: Object.freeze([
+      { claim: "opening an additional school location costs $50.00; closing one carries no fee",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+      "Held so that the question can be asked against the actual instrument: whether a distance-only school with no Florida classroom has any 'additional location' to declare under Rule 61J2-17.013's one-permit-per-location construction is unresolved.",
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-18",
+    citation: "DBPR RE 18, incorporated by Rule 61-35.027, F.A.C.",
+    title: "Education Course Approval Application",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_18_FRECEduCourseAppr.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_18_FRECEduCourseAppr.pdf",
+    sha256: "efa5cf453ce7b445b20ff84c6384d794386d432b8db8f64a6dd9a6e542b65846",
+    bytes: 71667,
+    materialClaims: Object.freeze([
+      { claim: "Section III 'Type of Education' carries 'Sales Associate Pre-Licensure' as an explicit option, so this form governs FREC Course I approval notwithstanding the 'Continuing Education' wording in its running header",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs", "florida/submission/frec-course-i-submission-plan.md"]) },
+      { claim: "Section III delivery mechanisms are Classroom, Distance, Live stream, Correspondence (continuing education only), and Other; Section IV application types are NEW, RENEWAL and UPDATE",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+      { claim: "Section V requires of all initial course approvals: a course timed outline; learning objectives at THREE PER HOUR; course materials with an explanation of delivery method; form DBPR RE 19; instructor information on DBPR RE 20 with a resume (for Providers Only); FIVE end of course examinations for distance education courses only; and an answer key per form referencing the page numbers each question and correct answer rest on",
+        reliedOnBy: Object.freeze(["config/florida/assessment-architecture.mjs", "config/florida/dbpr-application-package.mjs", "config/florida/school-permit-ledger.mjs"]) },
+      { claim: "the course application fee is $80 per initial application and $80 per renewal for PROVIDERS, and $0 for schools",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+      "Section V requires FIVE end-of-course examinations for distance education courses. Rule 61J2-3.008(4)(d) requires 'at least 2 forms', and the FREC Distance Education Checklist (rev. 06/2018) likewise lists 'Two end of course examinations'. The Department's own documents disagree with each other by three complete examination forms. StateCourse plans to five, which satisfies all three, and records that as provider policy rather than as a regulatory minimum. Carried to DBPR as a written question.",
+      "Section V item 4 lists form DBPR RE 19 among the attachments for ALL initial course approvals, while item 5 immediately below is marked 'for Providers Only' and the Distance Education Checklist states elsewhere that licensed real estate schools need not fulfil the provider-only requirements. Whether a permitted school must file RE 19 is unresolved.",
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-19",
+    citation: "DBPR RE 19, incorporated by Rule 61-35.027, F.A.C.",
+    title: "FREC Continuing Education Provider Approval Application",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_19_FREC_Continuing_Education_Provider_Approval_Application.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/education/DBPR_RE_19_Provider_Approval.pdf",
+    sha256: "5bcc3ca7c552f2f74ade5f2e004ec1585486f0596a41b1f47f8d4fdbe23f5d55",
+    bytes: 26675,
+    materialClaims: Object.freeze([
+    ]),
+    conflicts: Object.freeze([
+      "Held because DBPR RE 18 names it. Approved CE provider is a different status from permitted real estate school, and whether a school filing Course I must also file this is an open question. Nothing in this build relies on it.",
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-20",
+    citation: "DBPR RE 20, incorporated by Rule 61-35.027, F.A.C.",
+    title: "FREC Request for Instructor Evaluation",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_20_FRECRequestInstructorEval.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_20_FRECRequestInstructorEval.pdf",
+    sha256: "f04adeaa4d5db873a1d61693d2ae2a3ae6f5e391f66974d90f1dd90df23b193d",
+    bytes: 251759,
+    materialClaims: Object.freeze([
+      { claim: "the FREC Distance Education Checklist states of RE 20 and the course fee that 'this is a requirement for approved providers only, licensed real estate schools do not need to fulfill this requirement'",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-14",
+    citation: "DBPR RE 14, incorporated by Rule 61-35.027, F.A.C.",
+    title: "Multiple Permit Request — Instructor",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_14_Multiple_Permit_Request_Instructor.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_14_Multiple_Permit_Request_Instructor.pdf",
+    sha256: "a04d1a7056407e900805c8d710a43db0b8ea562af0a38420186940e8dc076dc8",
+    bytes: 41994,
+    materialClaims: Object.freeze([
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "FREC-SYLLABUS-TEXT-LAYER",
+    citation: "FREC Sales Associate Course Syllabus (FREC Course I), January 1, 2023 — Department's text-layer copy",
+    title: "FREC1SyllabusCleanFinal01012023.pdf — the same syllabus Ref-14599 incorporates, published by DBPR with a real text layer",
+    publisher: "Florida Department of Business and Professional Regulation, Division of Real Estate",
+    url: "https://www2.myfloridalicense.com/re/documents/FREC1SyllabusCleanFinal01012023.pdf",
+    authorityClass: AUTHORITY_CLASS.INCORPORATED,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/education/FREC1SyllabusCleanFinal01012023.pdf",
+    sha256: "0a516a599d9eb2899dacfa4f35dff88b92c5f5dd4acc5dd8dc89a285d158e8bc",
+    bytes: 283223,
+    materialClaims: Object.freeze([
+      { claim: "nineteen sections carrying 180 learning objectives in total, transcribed from the Department's own text layer rather than OCR, each with the printed page it appears on",
+        reliedOnBy: Object.freeze(["config/florida/frec-course-i-syllabus.mjs", "tests/florida-foundation.test.mjs"]) },
+      { claim: "the per-section objective counts are 7, 11, 7, 10, 9, 9, 10, 8, 9, 10, 11, 9, 10, 10, 6, 16, 8, 9, 11, summing to 180",
+        reliedOnBy: Object.freeze(["config/florida/frec-course-i-syllabus.mjs", "tests/florida-foundation.test.mjs"]) },
+      { claim: "180 objectives is exactly three per instruction hour over 60 instruction hours, which is what DBPR RE 18 Section V independently requires",
+        reliedOnBy: Object.freeze(["config/florida/frec-course-i-syllabus.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+      "Section 19 is 'Planning, And Zoning' in the table of contents and 'PLANNING, ZONING AND ENVIRONMENTAL HAZARDS' on the section itself. Confirmed in the text layer, so the variance is in the Commission's document and not an artefact of transcription. Both are recorded.",
+    ]),
+  }),
+  source({
+    id: "FREC-DISTANCE-ED-CHECKLIST",
+    citation: "FREC Distance Education Checklist (rev. 06/2018)",
+    title: "What DBPR requires when applying to offer a FREC course by distance education",
+    publisher: "Florida Department of Business and Professional Regulation, Division of Real Estate",
+    url: "https://www2.myfloridalicense.com/re/documents/frec_distance_ed_chk_list.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/education/frec_distance_ed_chk_list.pdf",
+    sha256: "e1c01ff4ceefd9b83fee7bc67d2e1a93e5ae9192e0f9027b761169ee99c42e49",
+    bytes: 143857,
+    materialClaims: Object.freeze([
+      { claim: "Sales Associate Pre Licensure courses 'can only be offered by Real Estate Schools licensed pursuant to Chapter 475.451, Florida Statutes'",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs"]) },
+      { claim: "'Courses are approved for a maximum of 63 hours' and the timeline must justify the hours 'in 50 minute hours'",
+        reliedOnBy: Object.freeze(["config/florida/course-i-requirements.mjs", "config/florida/distance-delivery-matrix.mjs"]) },
+      { claim: "'Learning objectives (3-per hour)'",
+        reliedOnBy: Object.freeze(["config/florida/frec-course-i-syllabus.mjs", "config/florida/school-permit-ledger.mjs"]) },
+      { claim: "'Two end of course examinations (multiple choice) and answer keys reflecting the page number where the answers can be found'",
+        reliedOnBy: Object.freeze(["config/florida/assessment-architecture.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+      "Says TWO end-of-course examinations where the current DBPR RE 18 says FIVE. See the conflict recorded against DBPR-RE-18.",
+    ]),
+  }),
+  source({
+    id: "FREC-ED-REQUIREMENTS",
+    citation: "Real Estate (FREC) Educational Requirements (rev. 06/2018)",
+    title: "DBPR's summary of the pre-licence, post-licence and continuing education requirements",
+    publisher: "Florida Department of Business and Professional Regulation, Division of Real Estate",
+    url: "https://www2.myfloridalicense.com/re/documents/real_estate_ed_requirements.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/education/real_estate_ed_requirements.pdf",
+    sha256: "7e5a5c504023cae978c9636be970262f73da398ade5dea7ecdfe3c5f6a7eb031",
+    bytes: 18917,
+    materialClaims: Object.freeze([
+      { claim: "'63-hour course based on the FREC I syllabus Inclusive of Exam. These courses may be conducted in classroom and distance education environments.'",
+        reliedOnBy: Object.freeze(["config/florida/course-i-requirements.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "FREC-CLASSROOM-CHECKLIST",
+    citation: "FREC Classroom Checklist",
+    title: "Held for contrast — the checklist StateCourse's distance course is not filed under",
+    publisher: "Florida Department of Business and Professional Regulation, Division of Real Estate",
+    url: "https://www2.myfloridalicense.com/re/documents/frec_classroom_chk_list.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/education/frec_classroom_chk_list.pdf",
+    sha256: "3f0bc48275c426f5b525d3529f96404f3dec5d66d8e498d547545460b9e72696",
+    bytes: 169506,
+    materialClaims: Object.freeze([
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "FREC-LIVESTREAM-CHECKLIST",
+    citation: "Real Estate Livestream Checklist",
+    title: "Held because Rule 61J2-3.008(2)(c) requires platform and delivery-method detail for live-streaming approval",
+    publisher: "Florida Department of Business and Professional Regulation, Division of Real Estate",
+    url: "https://www2.myfloridalicense.com/re/documents/RealEstateLivestreamChecklist.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/education/RealEstateLivestreamChecklist.pdf",
+    sha256: "ca1e8cb039db73682eca1e19e322bf20540684efcb38b092955d8f484b732fca",
+    bytes: 102861,
+    materialClaims: Object.freeze([
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-INSTRUCTOR-REQUIREMENTS",
+    citation: "Real Estate School Instructor Requirements for licensure in the State of Florida",
+    title: "DBPR's own statement of the instructor qualification routes",
+    publisher: "Florida Department of Business and Professional Regulation, Division of Real Estate",
+    url: "https://www2.myfloridalicense.com/re/documents/REZHRequirements.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/forms/REZHRequirements.pdf",
+    sha256: "9e4709c907b9c8275703195cc65ece6075d248645da3f5fd1b47a79d74a41ebf",
+    bytes: 15113,
+    materialClaims: Object.freeze([
+      { claim: "lists the three instructor routes, the third being 'Pass an Instructor Examination approved by the FREC' — a fourth corroboration that the examination route is real and administered",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs"]) },
+      { claim: "registration of an instructor to a school is done on DBPR RE 6",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-PROVIDERS-COURSES-SHEET",
+    citation: "Providers and Courses Information Sheet",
+    title: "DBPR information sheet on providers and courses",
+    publisher: "Florida Department of Business and Professional Regulation, Division of Real Estate",
+    url: "https://www2.myfloridalicense.com/re/documents/providers_and_courses_information_sheet.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/education/providers_and_courses_information_sheet.pdf",
+    sha256: "778d5cf309fbd4b473b4f6642905cb473a83b801f814e4e4a2fb16261d2f3d26",
+    bytes: 192806,
+    materialClaims: Object.freeze([
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-FORMS-PAGE",
+    citation: "DBPR / FREC forms and publications page",
+    title: "The page from which every DBPR RE form in this build was obtained",
+    publisher: "Florida Department of Business and Professional Regulation",
+    url: "https://www2.myfloridalicense.com/real-estate-commission/forms-and-publications/",
+    authorityClass: AUTHORITY_CLASS.NAVIGATION,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/dbpr-frec-forms-and-publications.html",
+    sha256: "f1821291526fdde83aaff785e99544ffea077de49991041ea970f6fb9f5681ce",
+    bytes: 164583,
+    materialClaims: Object.freeze([
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "DBPR-EDUCATION-PAGE",
+    citation: "DBPR / FREC education page",
+    title: "The page from which the syllabus text-layer copy and every checklist was obtained",
+    publisher: "Florida Department of Business and Professional Regulation",
+    url: "https://www2.myfloridalicense.com/real-estate-commission/education/",
+    authorityClass: AUTHORITY_CLASS.NAVIGATION,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-08-30",
+    localCopy: "florida/frec-sources/dbpr/dbpr-frec-education.html",
+    sha256: "d246dc05be77ccccf152f5e898c1a834191f7b15c363013802ba0a537409040c",
+    bytes: 195252,
+    materialClaims: Object.freeze([
+    ]),
+    conflicts: Object.freeze([
+    ]),
+  }),
+]);
 
 /* ── the programme ────────────────────────────────────────────────────────────────────────────
    Florida is ONE course to first licensure as a sales associate, not a stack of them. That is a
@@ -472,14 +877,25 @@ export const SCHOOL = Object.freeze({
   enrolmentEnabled: false,
   statement:
     "StateCourse holds no Florida school permit, no Florida instructor permit and no FREC course approval, and has filed no application with the Department. No Florida course may be offered, advertised as approved, or enrolled in.",
-  /* The single hardest gate, found in Phase 0 and stated here rather than in a report nobody
-     re-reads. Rule 61J2-17.011(2), F.A.C. requires the school permit holder to hold a FLORIDA
-     broker's licence. StateCourse's principal holds California broker licence 01385024 and no
-     Florida licence. Section 475.451(2)(a), Fla. Stat. offers an alternative — passing a
-     Commission-approved instructor's examination — but the rule's own operative sentence appears to
-     close it for the permitholder. Until a Florida-licensed broker is the permitholder, or that
-     reading is corrected by FREC, a Florida school permit application cannot be completed. */
-  blockingGate: "school-permitholder-florida-broker-licence",
+  /* CORRECTED IN PHASE 0 v2. The first version of this record carried a `blockingGate` asserting
+     that Rule 61J2-17.011(2) requires a FLORIDA broker's licence of the school permitholder and
+     that no StateCourse individual could therefore sign an application. That was wrong on the law.
+     Section 475.451(2)(a), Fla. Stat. states two alternatives — a broker licence "or ... an
+     instructor's examination approved by the commission" — and the rule's scoped second sentence
+     conditions only the broker branch. DBPR RE 5, RE 6 and RE 3 all carry the examination route on
+     their face. There is no blocking gate. There is a route nobody has walked yet.
+
+     What is true is the plain fact below: nothing is held, nothing is filed, and no person is
+     asserted to be eligible. Eligibility is a determination the Department makes on an application.
+     The full analysis and the seven-row status matrix live in
+     config/florida/school-permit-ledger.mjs. */
+  blockingGate: null,
+  lawfulRouteToSchoolPermitExists: true,
+  lawfulRouteToInstructorPermitExists: true,
+  routeTaken: false,
+  anyPersonAssertedEligible: false,
+  routeSummary:
+    "Pass the Commission-approved instructor examination, file DBPR RE 3 under basis [1010], obtain the instructor permit, then file DBPR RE 5 naming that permit as the method of qualification. The Florida broker-licence route remains open to anyone who holds one.",
 });
 
 /* ── claims this build may never make ─────────────────────────────────────────────────────────

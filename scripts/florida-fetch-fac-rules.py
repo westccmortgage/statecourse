@@ -57,7 +57,7 @@ def rule_text(doc_path):
                        r"SummaryInformation|DocumentSummary|Default Paragraph|Table Normal|"
                        r"FLRules_Word|Word\.Document|MSWordDoc|Root Entry|CompObj|ObjectPool|_PID_HLINKS)")
     # The body starts at the rule number heading; everything before it is OLE directory noise.
-    start = next((i for i, l in enumerate(lines) if re.match(r"^61J2-\d+\.\d+\s", l)), 0)
+    start = next((i for i, l in enumerate(lines) if re.match(r"^61[A-Z0-9-]*-\d+\.\d+\s", l)), 0)
     return "\n".join(l for l in lines[start:] if l.strip() and not noise.match(l))
 
 

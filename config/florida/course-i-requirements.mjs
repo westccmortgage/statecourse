@@ -43,6 +43,7 @@
  */
 
 import MANIFEST from "./regulatory-manifest.mjs";
+import ASSESSMENT_ARCHITECTURE from "./assessment-architecture.mjs";
 
 const COURSE = MANIFEST.PROGRAMS[0];
 
@@ -99,96 +100,62 @@ export const TIME = Object.freeze({
 });
 
 /* ── assessment ───────────────────────────────────────────────────────────────────────────────
-   Rule 61J2-3.008(4)(a), (4)(b)3.i and (4)(d), and s. 475.17(2)(a)2. */
+   Moved out. The examination requirements now live in config/florida/assessment-architecture.mjs,
+   which separates what Florida CONFIRMS from what StateCourse CHOOSES from what remains an OPEN
+   question for DBPR. That separation is the whole point and could not survive in a flat object: the
+   first version of this file carried a single `plannedItemCount: 126` with no way for a later reader
+   to see that 126 was a judgement rather than a rule. ASSESSMENT below is a flattened convenience
+   view over the three tiers, and every value it exposes carries its tier alongside it.
 
-/* The item floor is ambiguous in the rule and the ambiguity is resolved upward, not silently.
-   "at least 100 items, or 2 items per instruction hour" yields three candidate floors depending on
-   which half governs and which hours are counted. An examination built to the largest of them
-   satisfies every reading, and "at least" permits exceeding any of them. */
-const ITEM_FLOOR_CANDIDATES = Object.freeze([
-  Object.freeze({ reading: "the stated minimum, taken literally", items: 100 }),
-  Object.freeze({ reading: "2 items per instruction hour, over the 60 instruction hours", items: 2 * INSTRUCTION_HOURS }),
-  Object.freeze({ reading: "2 items per hour, over the 63 hours the course is defined in", items: 2 * TOTAL_HOURS }),
-]);
+   Consumers that care about the difference — and the assessment engine will — should import
+   assessment-architecture.mjs directly rather than reading these flattened values. */
 
-const PLANNED_ITEMS = Math.max(...ITEM_FLOOR_CANDIDATES.map((c) => c.items)); // 126
+const CONFIRMED = ASSESSMENT_ARCHITECTURE.REGULATORY_MINIMUM_CONFIRMED;
+const POLICY = ASSESSMENT_ARCHITECTURE.STATECOURSE_CONSERVATIVE_POLICY;
 
 export const ASSESSMENT = Object.freeze({
-  /* Rule 61J2-3.008(4)(a). Not 75, not 70 weighted — 70% on the Commission-prescribed
-     end-of-course examination, and that alone is what constitutes satisfactory completion. */
-  passingScorePercent: 70,
-
-  itemFloorCandidates: ITEM_FLOOR_CANDIDATES,
-  plannedItemCount: PLANNED_ITEMS,
-  itemFloorSettledByRule: false,
-
-  /* Rule 61J2-3.008(4)(d): "The overall time to complete the end-of-course examination must not
-     exceed the equivalent of 1.8 minutes per item." A CEILING on time allowed, not an equality —
-     which is why it does not settle the item count, since 150 minutes is under the ceiling for
-     every candidate above. */
-  maximumMinutesPerItem: 1.8,
-  allottedMinutes: EXAMINATION_HOURS * MINUTES_PER_HOUR,       // 150
-  minutesPerItemAsPlanned: (EXAMINATION_HOURS * MINUTES_PER_HOUR) / PLANNED_ITEMS,
-  withinTimeCeiling:
-    (EXAMINATION_HOURS * MINUTES_PER_HOUR) <= 1.8 * PLANNED_ITEMS,
-
-  /* s. 475.17(2)(a)2, Fla. Stat.: satisfactory completion of a distance learning course requires a
-     TIMED examination. The clock is not optional and is not a product decision. */
-  examinationMustBeTimed: true,
-
-  /* The same sentence, and this is the one that decides Florida's delivery architecture:
-     "Such examination shall not be required to be monitored or given at a centralized location."
-     Florida does NOT require proctoring of the pre-license end-of-course examination and does not
-     require a test centre. Note the authority carefully: this comes from s. 475.17(2)(a)2, which is
-     about pre-license education. It does NOT come from s. 455.2123, which says a similar thing
-     about CONTINUING education and must not be cited for this. */
-  proctoringRequired: false,
-  centralizedLocationRequired: false,
-  proctoringAuthority: "s. 475.17(2)(a)2, Fla. Stat.",
-
-  /* Rule 61J2-3.008(4)(d). Every one of these is a build constraint, not a style note. */
-  minimumFormCount: 2,
-  maximumCrossFormDuplicationPercent: 15,
-  minimumApplicationLevelPercent: 70,
-  maximumKnowledgeLevelPercent: 10,
-  answerChoicesPerItem: 4,
-  allItemsMultipleChoice: true,
-  answerKeyUniquePerForm: true,
-  /* The requirement that quietly dictates how curriculum and exam are authored together: each
-     answer key "must reference the page number(s) containing the information upon which each
-     question and correct answer is based". An item cannot be written against a page that does not
-     exist yet, so the exam cannot be built before the curriculum is paginated. */
-  answerKeyCitesSourcePages: true,
-  /* "The order of the examination questions may not follow the sequence of the course content" —
-     the opposite of the syllabus rule for the course itself, which must follow order exactly. */
-  examinationOrderMustNotFollowCourseOrder: true,
-  /* "the item must not refer the student to the course material" */
+  /* confirmed by primary authority */
+  passingScorePercent: CONFIRMED.passingScorePercent.value,
+  regulatoryMinimumItems: CONFIRMED.minimumItems.value,
+  regulatoryMinimumFormCount: CONFIRMED.minimumFormCount.value,
+  maximumCrossFormDuplicationPercent: CONFIRMED.maximumCrossFormDuplicationPercent.value,
+  minimumApplicationLevelPercent: CONFIRMED.minimumApplicationLevelPercent.value,
+  maximumKnowledgeLevelPercent: CONFIRMED.maximumKnowledgeLevelPercent.value,
+  answerChoicesPerItem: CONFIRMED.answerChoicesPerItem.value,
+  maximumMinutesPerItem: CONFIRMED.maximumMinutesPerItem.value,
+  answerKeyUniquePerForm: CONFIRMED.answerKeyUniquePerForm.value,
+  answerKeyCitesSourcePages: CONFIRMED.answerKeyCitesSourcePages.value,
+  examinationOrderMustNotFollowCourseOrder: CONFIRMED.orderMustNotFollowCourseOrder.value,
+  sufficientBankRequired: CONFIRMED.sufficientBankRequired.value,
+  examinationAidsProhibited: CONFIRMED.aidsProhibited.value,
+  allSyllabusSessionsRequiredBeforeExamination: CONFIRMED.allSessionsBeforeExamination.value,
+  duplicationPreventionRequired: CONFIRMED.duplicationPreventionRequired.value,
+  examinationMustBeTimed: CONFIRMED.examinationMustBeTimed.value,
+  retakeWaitDays: CONFIRMED.retakeWaitDays.value,
+  retakesPermittedWithinOneYear: CONFIRMED.retakesWithinOneYear.value,
+  differentFormOnRetakeOrRepeat: CONFIRMED.differentFormOnRetakeOrRepeat.value,
   itemsMayNotReferToCourseMaterial: true,
-  sufficientBankRequired: true,
 
-  /* Rule 61J2-3.008(4)(b)3.i. These are prohibitions on the examination specifically, and they do
-     NOT reach the periodic assessment during instruction — a topic check may perfectly well tell a
-     student they were wrong and let them try again. Conflating the two would make the course worse
-     for no compliance gain. */
-  examinationAidsProhibited: Object.freeze(["hint", "back", "retry"]),
-  duplicationPreventionRequired: true,
+  /* proctoring: NOT REQUIRED and NOT PROHIBITED — the difference decides what may be built */
+  proctoringRequired: ASSESSMENT_ARCHITECTURE.PROCTORING.required,
+  proctoringProhibited: ASSESSMENT_ARCHITECTURE.PROCTORING.prohibited,
+  centralizedLocationRequired: false,
+  proctoringAuthority: ASSESSMENT_ARCHITECTURE.PROCTORING.cite,
 
-  /* Rule 61J2-3.008(4)(b)3.i, second half: "Students shall not take the end-of-course examination
-     without satisfactorily completing all sessions of the syllabus." Progression gating is a
-     Florida requirement, not a product choice. */
-  allSyllabusSessionsRequiredBeforeExamination: true,
+  /* StateCourse policy — NOT regulatory minima */
+  plannedItemCount: POLICY.itemCount.value,
+  plannedItemCountIsProviderPolicy: true,
+  plannedFormCount: POLICY.formCount.value,
+  plannedFormCountIsProviderPolicy: true,
+  allottedMinutes: POLICY.allottedMinutes.value,
 
-  /* Rule 61J2-3.008(6). Read precisely: the 30 days is a floor on when a retest may happen, and the
-     one retest is a cap within a year of the ORIGINAL examination. Exhausting it means repeating
-     the course, and either way the student must be given a DIFFERENT form. */
-  retakeWaitDays: 30,
-  retakesPermittedWithinOneYear: 1,
-  repeatCourseAfterRetakesExhausted: true,
-  differentFormOnRetakeOrRepeat: true,
+  /* computed */
+  minutesPerItemAsPlanned: ASSESSMENT_ARCHITECTURE.COMPUTED.minutesPerItemAsPlanned,
+  withinTimeCeiling: ASSESSMENT_ARCHITECTURE.COMPUTED.withinTimeCeilingAsPlanned,
 
-  /* Rule 61J2-3.008(7): make-up for student or family illness may not extend more than 30 days
-     beyond the scheduled class examination without Commission approval. */
-  makeUpMaximumDaysBeyondScheduledExamination: 30,
+  /* still unsettled */
+  itemFloorSettledByRule: false,
+  openQuestionIds: Object.freeze(ASSESSMENT_ARCHITECTURE.OPEN_DBPR_QUESTIONS.map((q) => q.id)),
 });
 
 /* ── periodic assessment during instruction ───────────────────────────────────────────────────
@@ -335,11 +302,14 @@ export const EXEMPTIONS = Object.freeze([
    Kept here, next to the requirements, rather than in a document that gets read once. Each is a
    written question for FREC and none may be treated as settled by any downstream consumer. */
 export const OPEN_QUESTIONS = Object.freeze([
+  /* The examination questions live in assessment-architecture.mjs as OPEN_DBPR_QUESTIONS, together
+     with the readings and the drafted letter. Referenced rather than restated so there is one
+     place to answer them. */
   Object.freeze({
-    id: "item-floor",
-    question: "Does the sales associate end-of-course examination require at least 100 items, or 2 items per instruction hour? If the latter, is the multiplier applied to the 60 instruction hours or the 63 total hours?",
-    cite: "Rule 61J2-3.008(4)(d), F.A.C.",
-    plannedPending: `build to ${PLANNED_ITEMS} items, the highest floor any reading produces`,
+    id: "see-assessment-architecture",
+    question: "Six examination and application questions are carried in config/florida/assessment-architecture.mjs — itemCountBasis, formCount, instructionHourDefinition, absenceInDistanceCourse, re19ForSchools, instructorExaminationLogistics.",
+    cite: "Rule 61J2-3.008(4)(d), F.A.C. and DBPR RE 18",
+    plannedPending: "see OPEN_DBPR_QUESTIONS and DRAFT_QUESTION_TO_DBPR",
   }),
   Object.freeze({
     id: "absence-in-a-distance-course",

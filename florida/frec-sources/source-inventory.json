@@ -3,18 +3,183 @@
   "reproduceWith": "node scripts/florida-source-inventory.mjs",
   "regenerateWith": "node scripts/florida-source-inventory.mjs --write",
   "note": "Every file held under florida/frec-sources, walked recursively. Hashes are recomputed from disk; nothing here is transcribed by hand or carried over from another state's register.",
-  "fileCount": 133,
-  "totalBytes": 12385466,
+  "fileCount": 168,
+  "totalBytes": 14630623,
   "files": [
+    {
+      "path": "florida/frec-sources/dbpr/dbpr-frec-education.html",
+      "sha256": "d246dc05be77ccccf152f5e898c1a834191f7b15c363013802ba0a537409040c",
+      "bytes": 195252
+    },
+    {
+      "path": "florida/frec-sources/dbpr/dbpr-frec-forms-and-publications.html",
+      "sha256": "f1821291526fdde83aaff785e99544ffea077de49991041ea970f6fb9f5681ce",
+      "bytes": 164583
+    },
     {
       "path": "florida/frec-sources/dbpr/dbpr-real-estate-schools.html",
       "sha256": "81ae412bbb6f321a78890d67bc4615b9a1ebe84be3f0884f68961af76ba06459",
       "bytes": 197524
     },
     {
+      "path": "florida/frec-sources/dbpr/education/DBPR_RE_19_Provider_Approval.pdf",
+      "sha256": "5bcc3ca7c552f2f74ade5f2e004ec1585486f0596a41b1f47f8d4fdbe23f5d55",
+      "bytes": 26675
+    },
+    {
+      "path": "florida/frec-sources/dbpr/education/frec_classroom_chk_list.pdf",
+      "sha256": "3f0bc48275c426f5b525d3529f96404f3dec5d66d8e498d547545460b9e72696",
+      "bytes": 169506
+    },
+    {
+      "path": "florida/frec-sources/dbpr/education/frec_distance_ed_chk_list.pdf",
+      "sha256": "e1c01ff4ceefd9b83fee7bc67d2e1a93e5ae9192e0f9027b761169ee99c42e49",
+      "bytes": 143857
+    },
+    {
+      "path": "florida/frec-sources/dbpr/education/FREC1SyllabusCleanFinal01012023.pdf",
+      "sha256": "0a516a599d9eb2899dacfa4f35dff88b92c5f5dd4acc5dd8dc89a285d158e8bc",
+      "bytes": 283223
+    },
+    {
+      "path": "florida/frec-sources/dbpr/education/providers_and_courses_information_sheet.pdf",
+      "sha256": "778d5cf309fbd4b473b4f6642905cb473a83b801f814e4e4a2fb16261d2f3d26",
+      "bytes": 192806
+    },
+    {
+      "path": "florida/frec-sources/dbpr/education/real_estate_ed_requirements.pdf",
+      "sha256": "7e5a5c504023cae978c9636be970262f73da398ade5dea7ecdfe3c5f6a7eb031",
+      "bytes": 18917
+    },
+    {
+      "path": "florida/frec-sources/dbpr/education/RealEstateLivestreamChecklist.pdf",
+      "sha256": "ca1e8cb039db73682eca1e19e322bf20540684efcb38b092955d8f484b732fca",
+      "bytes": 102861
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_14_Multiple_Permit_Request_Instructor.pdf",
+      "sha256": "a04d1a7056407e900805c8d710a43db0b8ea562af0a38420186940e8dc076dc8",
+      "bytes": 41994
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_18_FRECEduCourseAppr.pdf",
+      "sha256": "efa5cf453ce7b445b20ff84c6384d794386d432b8db8f64a6dd9a6e542b65846",
+      "bytes": 71667
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_20_FRECRequestInstructorEval.pdf",
+      "sha256": "f04adeaa4d5db873a1d61693d2ae2a3ae6f5e391f66974d90f1dd90df23b193d",
+      "bytes": 251759
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_3_Instructor_Permit.pdf",
+      "sha256": "f000ade7979d6a6e7626bc90cc74461b15eb915efbbda4b77e0359966a12b42d",
+      "bytes": 139339
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_5_School_Permit.pdf",
+      "sha256": "524220645b89c1d40892d5c46c795bb3338bda52c321b9054c783b86d3cdd28e",
+      "bytes": 30826
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_6_School_Change_of_Status_Transactions.pdf",
+      "sha256": "fbd5b4c918b00d496c31618bb05ee4a7c7b663173ccefc43bf458dd2fa2e1f82",
+      "bytes": 54555
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_9_Additional_School_Location.pdf",
+      "sha256": "06d11c7090a65e16927cd200c1fd98aeafe0743051a1fad3bc45a7d9af5e7e5f",
+      "bytes": 43740
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/REZHRequirements.pdf",
+      "sha256": "9e4709c907b9c8275703195cc65ece6075d248645da3f5fd1b47a79d74a41ebf",
+      "bytes": 15113
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-education/DBPR_RE_19_Provider_Approval.txt",
+      "sha256": "ae1531b3bfcf9e4ce8be07ec2b1ecc7d95be87aa6d59c9fda26203d3b7f96fcb",
+      "bytes": 7671
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-education/frec_classroom_chk_list.txt",
+      "sha256": "43ae22ccbabf1eb15b8ee1624662919c75cea16e62ab34a6743d6fcf6789bce2",
+      "bytes": 5540
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-education/frec_distance_ed_chk_list.txt",
+      "sha256": "317a4a07c22c5a315d505a1d5a01e98c7e93b53b8349ab854fd6a355ca507b72",
+      "bytes": 19455
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-education/FREC1SyllabusCleanFinal01012023.txt",
+      "sha256": "ada66bd3304652f1af801b5eda53cc8d3b5ed2dd09db73837b015336b8821a6e",
+      "bytes": 85988
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-education/providers_and_courses_information_sheet.txt",
+      "sha256": "ea6af986ecfb1efc606cb774c41fe20b11d6805722e3114d4000c49ae280b189",
+      "bytes": 4270
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-education/real_estate_ed_requirements.txt",
+      "sha256": "b815b5e89353bcd47be291d68edf801c01d094eb9c1d47392207729e546e4297",
+      "bytes": 4699
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-education/RealEstateLivestreamChecklist.txt",
+      "sha256": "2477326d202db74bb933ef89034531a34e032585dd4a2acf31e5730d5cbc9891",
+      "bytes": 5982
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_14_Multiple_Permit_Request_Instructor.txt",
+      "sha256": "15a406159dd4815fed8279495b6c497bf9d4548e691f3682f5f61ae869898ef4",
+      "bytes": 5967
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_18_FRECEduCourseAppr.txt",
+      "sha256": "70553f7fb27996f445f69d9894c5b40dcff8f9cf5fa2ac09bc73006f823a9cff",
+      "bytes": 11320
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_20_FRECRequestInstructorEval.txt",
+      "sha256": "c640eb49f8fa0c14b4c26c56a35cb0df54b5ca9c387ddf90ca4b03b9ee1ef15c",
+      "bytes": 3612
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_3_Instructor_Permit.txt",
+      "sha256": "604c918fcfca749a51dbb817d3cb007f652f6391757fbe30636963c3c4551246",
+      "bytes": 22226
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_5_School_Permit.txt",
+      "sha256": "d1a6aa36c48e909a6ab43cb852fbcb925d41fa9e694049ed227a2508ca95d933",
+      "bytes": 8906
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_6_School_Change_of_Status_Transactions.txt",
+      "sha256": "295aa3275166bc0e74139ca10fbc6ee7213673af5aa30abe326f7b8270d56563",
+      "bytes": 11360
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_9_Additional_School_Location.txt",
+      "sha256": "0e6c33af4311da221f22df57ede116fde67b9110cc15f171c43f2f071b82e210",
+      "bytes": 7911
+    },
+    {
+      "path": "florida/frec-sources/extracted/dbpr-forms/REZHRequirements.txt",
+      "sha256": "5131000467b79c28f6a39dc0606edb019ed520b0d2d433710c3d5e0ae13f2547",
+      "bytes": 1343
+    },
+    {
       "path": "florida/frec-sources/extracted/fac-61J2-3.008.txt",
       "sha256": "9fc2477cb309d7316f1bc71476b22cfc00db6a8ce8bb5a2306e41b23eb3ccead",
       "bytes": 14801
+    },
+    {
+      "path": "florida/frec-sources/extracted/fac-rules/fac-61-35.027.txt",
+      "sha256": "bf552dddc560f5aa4a689012c87dfb68f85d1742518d36d42d0a1ce24d5038d6",
+      "bytes": 7965
     },
     {
       "path": "florida/frec-sources/extracted/fac-rules/fac-61J2-17.011.txt",
@@ -585,6 +750,16 @@
       "path": "florida/frec-sources/extracted/fs-chapter-475.txt",
       "sha256": "f3cbcb7c5098066bb31aa355c54df0ecbda0597661deebae26ca3539498ccdf4",
       "bytes": 286803
+    },
+    {
+      "path": "florida/frec-sources/extracted/syllabus-reconciliation.json",
+      "sha256": "b4c939d1c8f438cac07b61456833dfecff35a92b1cb6d6f2f33f783220d58ee7",
+      "bytes": 51501
+    },
+    {
+      "path": "florida/frec-sources/fac/fac-61-35.027.doc",
+      "sha256": "1f98fc782917df37df12fef32d224518afd8553e3509ee6abc2eafb6a0515972",
+      "bytes": 32768
     },
     {
       "path": "florida/frec-sources/fac/fac-61J2-1-chapter-home.html",
