@@ -60,12 +60,17 @@ for (const [index, topic] of TOPICS.entries()) {
       blocks.push({ kind, start: m.index, end });
     }
   };
+  /* OPTIONAL REFERENCE. Depth that is real law but beyond what the topic's units require is moved
+     to an "## Optional reference:" section rather than deleted. It stays in the course, stays
+     sourced, and is not counted toward required time, because no student must read it to complete
+     the topic. Its words are excluded from the reading segment exactly as an exercise block is. */
+  take(/^## Optional reference: .+$/gm, "optionalReference");
   take(/^### Statute reading exercise: .+$/gm, "statuteReadingExercise");
   take(/^### Applied exercise: .+$/gm, "appliedExercise");
   if (recapAt >= 0) blocks.push({ kind: "moduleRecap", start: recapAt, end: md.length });
 
-  const counts = { statuteReadingExercise: 0, appliedExercise: 0, moduleRecap: 0 };
-  const wordsBy = { statuteReadingExercise: 0, appliedExercise: 0, moduleRecap: 0 };
+  const counts = { statuteReadingExercise: 0, appliedExercise: 0, moduleRecap: 0, optionalReference: 0 };
+  const wordsBy = { statuteReadingExercise: 0, appliedExercise: 0, moduleRecap: 0, optionalReference: 0 };
   for (const b of blocks) { counts[b.kind] += 1; wordsBy[b.kind] += words(md.slice(b.start, b.end)); }
 
   let prose = md;
@@ -76,7 +81,8 @@ for (const [index, topic] of TOPICS.entries()) {
      for every word exactly once, the whole model is unsound and the script must fail rather than
      report a plausible number. */
   const total = words(md);
-  const summed = proseWords + wordsBy.statuteReadingExercise + wordsBy.appliedExercise + wordsBy.moduleRecap;
+  const summed = proseWords + wordsBy.statuteReadingExercise + wordsBy.appliedExercise
+    + wordsBy.moduleRecap + wordsBy.optionalReference;
   if (summed !== total) {
     throw new Error(`time evidence: ${file} segments sum to ${summed} words but the file has ${total} — segments are not disjoint`);
   }
@@ -88,6 +94,7 @@ for (const [index, topic] of TOPICS.entries()) {
     totalWords: total, proseWords, ...counts,
     exerciseWords: wordsBy.statuteReadingExercise + wordsBy.appliedExercise,
     recapWords: wordsBy.moduleRecap,
+    optionalReferenceWords: wordsBy.optionalReference,
   });
 }
 
@@ -120,7 +127,7 @@ const CONDITIONAL = [
 ];
 const EXCLUDED = [
   { segment: "optional video instruction", basis: "every video is optional and non-blocking; equivalent written instruction exists in the module", minutes: 0, reason: "not counted toward the required 1,500 minutes" },
-  { segment: "optional reference material", basis: "held sources a student may open", minutes: 0, reason: "not required to complete the course" },
+  { segment: "optional reference material", basis: `${sum("optionalReferenceWords").toLocaleString()} words moved out of required prose, at ${RATES.firstPassWordsPerMinute} wpm`, minutes: Math.round(sum("optionalReferenceWords") / RATES.firstPassWordsPerMinute), reason: "sourced depth beyond what the topic's units require; in the course, not required to complete it" },
   { segment: "mastery review", basis: `${proseWords.toLocaleString()} words at ${RATES.masteryStudyWordsPerMinute} wpm`, minutes: Math.round(proseWords / RATES.masteryStudyWordsPerMinute), reason: "an upper bound on diligent study, never required time" },
   { segment: "final examination", minutes: null, reason: "EXCLUDED from the 1,500-minute course evidence. LOA-1 prescribes 1,500 minutes of INSTRUCTION across its twelve topics, and its topic subtotals sum to exactly that with no line for examination. The examination is a separate administered event under the provider rules, is not administrable at all while StateCourse holds no TREC approval, and counting it toward instructional time would inflate the instructional claim with assessment time the form does not allocate." },
 ];

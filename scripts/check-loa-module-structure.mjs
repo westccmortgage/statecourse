@@ -78,6 +78,21 @@ for (const [index, topic] of TOPICS.entries()) {
     fail(`${file}: ${applied.length} applied exercises, the time budget plans ${plan.appliedExercises}`);
   if (recapAt >= 0 && md.slice(recapAt).trim().split("\n").length < 8) fail(`${file}: recap is too short to walk the module`);
 
+  /* An optional reference section, when a module has one, must sit after the recap and say plainly
+     that it is optional — a student who skips it must be able to tell that skipping is allowed. */
+  const optional = [...md.matchAll(/^## Optional reference: .+$/gm)];
+  if (optional.length > 1) fail(`${file}: ${optional.length} optional reference sections, at most one is allowed`);
+  if (optional.length === 1) {
+    if (recapAt >= 0 && optional[0].index < recapAt) fail(`${file}: the optional reference section precedes the recap`);
+    const body = md.slice(optional[0].index);
+    if (!/\boptional\b/i.test(body.split("\n").slice(1, 6).join(" "))) {
+      fail(`${file}: the optional reference section does not tell the student it is optional`);
+    }
+    if (!/not required|no student|skip|need not/i.test(body)) {
+      fail(`${file}: the optional reference section does not state that it is not required for completion`);
+    }
+  }
+
   const lm = md.match(LENGTH_PHRASE);
   if (lm) fail(`${file}: states a length requirement — ${JSON.stringify(lm[0])}`);
 
@@ -89,7 +104,10 @@ for (const [index, topic] of TOPICS.entries()) {
 
   /* Teaching prose excludes exercise blocks and the recap; those are paid for by activity
      allowances in the time model and must not also be counted as reading. */
-  const cuts = [...statute, ...applied].map((m) => m.index).concat(recapAt >= 0 ? [recapAt] : []).sort((a, b) => a - b);
+  const cuts = [...statute, ...applied].map((m) => m.index)
+    .concat(recapAt >= 0 ? [recapAt] : [])
+    .concat(optional.map((m) => m.index))
+    .sort((a, b) => a - b);
   let prose = md, removed = 0;
   {
     const blocks = [];
@@ -100,7 +118,8 @@ for (const [index, topic] of TOPICS.entries()) {
     const marks = [...md.matchAll(/^#{2,3} .+$/gm)].map((m) => m.index);
     for (const start of cuts) {
       const next = marks.find((i) => i > start);
-      const end = start === recapAt ? md.length : (next ?? md.length);
+      const isTail = start === recapAt || optional.some((o) => o.index === start);
+      const end = isTail ? (next ?? md.length) : (next ?? md.length);
       blocks.push([start, end]);
     }
     blocks.sort((a, b) => b[0] - a[0]);
