@@ -28,14 +28,11 @@ statement is practice rather than law, the module says so and cites nothing for 
 
 ## Unit: Distinctions between Law, Ethics, and Morals
 
-Most courses treat this unit as a warm-up — three definitions, a nod at the idea that being good is
-better than being legal, and on to the next thing. That treatment is useless to you, because the
-distinction is not philosophical here. It is jurisdictional. Three different enforcement systems can
-reach your conduct in a Texas real estate transaction, each with its own decision-maker, its own
-procedure, its own sanction, and its own vocabulary. Whether a given complaint goes anywhere at all
-depends on which of the three systems it belongs to. If you cannot sort a complaint into the right
-box, you will either panic over something that carries no consequence or shrug at something that
-will cost you your license.
+The distinction this unit draws is not philosophical. It is jurisdictional. Three different
+enforcement systems can reach your conduct in a Texas real estate transaction, each with its own
+decision-maker, its own procedure, its own sanction, and its own vocabulary. If you cannot sort a
+complaint into the right box, you will either panic over something that carries no consequence or
+shrug at something that will cost you your license.
 
 **Law is the set of rules the state itself enforces.** A criminal statute is enforced by a
 prosecutor, in a court, against a defendant, with the state's coercive power at the end of it. A
@@ -49,11 +46,10 @@ aggrieved person file a civil action in district court; and § 301.112 lets a st
 civil penalties administratively. One underlying prohibition, three enforcement machines.
 
 **Ethics, in a licensed profession, is the set of rules a licensing body or a membership
-organization enforces against people who have accepted its authority.** This is where students go
-wrong, because the word "ethics" carries a soft connotation in ordinary speech — a matter of
-conscience, or of taste. In Texas real estate it is nothing of the kind. The Commission's Canons of
-Professional Ethics and Client Relations are administrative rules published at 22 TAC Chapter 531.
-They are enforceable. Occupations Code § 1101.656(a) provides that "In addition to any other
+organization enforces against people who have accepted its authority.** The word carries a soft
+connotation in ordinary speech — a matter of conscience, or of taste. In Texas real estate it is
+nothing of the kind. The Commission's Canons of Professional Ethics and Client Relations are
+administrative rules published at 22 TAC Chapter 531, and they are enforceable. Occupations Code § 1101.656(a) provides that "In addition to any other
 authority under this chapter, the commission may suspend or revoke a license, place on probation a
 person whose license has been suspended, or reprimand a license holder if the license holder
 violates this chapter or a commission rule." Section 1101.701(a) adds the money: "The commission may
@@ -64,12 +60,10 @@ an ethical canon into an enforceable obligation with a license and a bank balanc
 ethical breach in this field is not a matter of taste. It is a rule violation, and the state agency
 that issued your license is the enforcer.
 
-The second sort of ethics enforcement is private. A trade association may adopt a written code and
-discipline its own members for breaking it. That authority does not come from the Legislature; it
-comes from the member's agreement to be bound when the member joined and paid dues. Unit 4 of this
-module deals with that system in detail. For now, hold on to the structural difference: the
-Commission enforces against everyone who holds a license, whether they like it or not; an
-association enforces only against its own members, and only because they said it could.
+The second sort of ethics enforcement is private, and Unit 4 deals with it in detail. Hold on to the
+structural difference for now: the Commission enforces against everyone who holds a license, whether
+they like it or not; a trade association enforces only against its own members, and only because
+they agreed to be bound when they joined and paid dues.
 
 **Morals are the convictions a person holds about right conduct, enforced by nobody.** No procedure,
 no sanction, no forum. That is not a criticism of morals — a license holder's private sense of
@@ -77,11 +71,10 @@ decency is usually the thing that keeps the other two systems from ever having t
 it is a real limitation, and the limitation runs both directions. A moral conviction does not by
 itself create a legal duty. It also does not excuse you from one.
 
-Texas gives you a sharp example of morals running against law, and you should sit with it because it
-is uncomfortable by design. Suppose a buyer's agent in San Antonio learns that a previous occupant
-of a listed house died of an AIDS-related illness. Many people's moral intuition is that a buyer
-would want to know, and that concealing it is a species of lying. The law says otherwise, in two
-places, and both were written deliberately. Occupations Code § 1101.802 provides that
+Texas gives a sharp example of morals running against law. Suppose a buyer's agent in San Antonio
+learns that a previous occupant of a listed house died of an AIDS-related illness. Many people's
+moral intuition is that a buyer would want to know, and that concealing it is a species of lying.
+The law says otherwise, in two places, and both were written deliberately. Occupations Code § 1101.802 provides that
 "Notwithstanding Section 1101.801, a person is not civilly or criminally liable because the person
 failed to inquire about, make a disclosure relating to, or release information relating to whether a
 previous or current occupant of real property had, may have had, has, or may have AIDS, an
@@ -91,14 +84,12 @@ practices canon, closes with the sentence: "For the purpose of this section, dis
 AIDS, HIV-related illnesses, or HIV infection as defined by the Centers for Disease Control of the
 United States Public Health Service." Put those together and the agent who volunteers the
 information has not merely done something the law did not require. The agent has made a disclosure
-about a previous occupant's disability, which is exactly what § 531.19 forbids. Here the moral
-intuition, followed uncritically, walks you into a rule violation. The professional answer is that
-your personal sense of what a buyer *deserves to know* is not the standard; the standard is the one
-the Legislature and the Commission wrote.
+about a previous occupant's disability, which is exactly what § 531.19 forbids. The moral intuition,
+followed uncritically, walks you into a rule violation.
 
-**Why a license holder can be disciplined for conduct that breaks no criminal law.** Students often
-assume that discipline requires wrongdoing of the sort a jury would recognize — theft, fraud, a
-falsified document. It does not. Title 22 TAC § 535.157 requires a broker or sales agent to respond
+**Why a license holder can be disciplined for conduct that breaks no criminal law.** Discipline does
+not require wrongdoing of the sort a jury would recognize — theft, fraud, a falsified document.
+Title 22 TAC § 535.157 requires a broker or sales agent to respond
 to a principal, to a license holder representing another party, or to an unrepresented party within
 two calendar days; that rule is taught in Module 02. Failing to return a cooperating agent's call
 for four days is not a crime, and very likely not a tort — the cooperating agent has no contract
@@ -129,10 +120,8 @@ section is governed by the contested case procedures under Chapter 2001, Governm
 there, § 1101.658(a) gives "A person aggrieved by a ruling, order, or decision under this
 subchapter" the right "to appeal to a district court in the county in which the administrative
 hearing was held." So the ethics system does eventually touch the courts — but on review, and on an
-administrative record, not as a fresh lawsuit. Understanding that shape tells you something
-practical: the record the Commission builds during its investigation is the record you will be
-arguing from later. What you write in an email today is what an administrative law judge reads in
-two years.
+administrative record, not as a fresh lawsuit. The record the Commission builds during its
+investigation is the record you will argue from later.
 
 A last distinction that matters in daily practice. Law tends to be specific and bounded; ethics
 rules in this field are frequently open-textured, and that is intentional. Compare Occupations Code
@@ -143,10 +132,8 @@ maintained for that purpose in a banking institution authorized to do business i
 prudence and caution so as to avoid misrepresentation, in any way, by acts of commission or
 omission." The first is a rule you can comply with by following an instruction. The second is a
 standard you comply with by exercising judgment, and it is written broadly precisely so that it can
-reach conduct nobody anticipated. Students sometimes complain that a standard like that is unfair
-because it is not a checklist. It is not unfair; it is the price of regulating a field where the
-ways to harm a client are inexhaustible. Your protection against an open-textured standard is not to
-hunt for the loophole. It is to build habits that keep you well inside the line.
+reach conduct nobody anticipated. Your protection against an open-textured standard is not to hunt
+for the loophole. It is to build habits that keep you well inside the line.
 
 ### Applied exercise: Sorting three complaints in Lubbock
 
@@ -181,10 +168,10 @@ charge. She continues to represent him and says nothing to anyone.
 ## Unit: Federal and State Law Relating to Conduct
 
 Fair housing is the body of law most likely to end a Texas real estate career, and it is the body of
-law students most often learn wrong. They learn a memorized list of *protected classes* that does
-not match any statute, they assume the federal and state lists are identical, and they assume the
-Commission's rule says the same thing as the statutes. None of that is true, and the differences are
-the parts that matter. In this unit you will learn each list exactly as its own source states it.
+law students most often learn wrong: a memorized list of *protected classes* that matches no
+statute, held on the assumption that the federal Act, the Texas Act and the Commission's rule all
+say the same thing. They do not, and the differences are the parts that matter. In this unit you
+learn each list exactly as its own source states it.
 
 **The federal Fair Housing Act.** The operative prohibitions live at 42 U.S.C. § 3604. Its opening
 words matter: "As made applicable by section 3603 of this title and except as exempted by sections
@@ -206,11 +193,10 @@ limitation, or discrimination."
 
 Read those three lists again, slowly. Subsections (a) and (b) name six characteristics: race, color,
 religion, sex, familial status, national origin. Subsection (c) names seven: the same six plus
-handicap. This is not a drafting slip and it is not a trap for you to memorize as trivia. Disability
-protection was added to the federal Act later than the original 1968 list, and Congress put the
-substantive disability prohibitions in their own subsection, § 3604(f), rather than editing (a) and
-(b). So under federal law, refusing to rent because of a disability is unlawful — but the provision
-you cite is § 3604(f)(1), not § 3604(a). Subsections (d) and (e), which deal with falsely
+handicap. That is not a drafting slip. Disability protection was added to the federal Act later than
+the original 1968 list, and Congress put the substantive disability prohibitions in their own
+subsection, § 3604(f), rather than editing (a) and (b). So under federal law, refusing to rent
+because of a disability is unlawful — but the provision you cite is § 3604(f)(1), not § 3604(a). Subsections (d) and (e), which deal with falsely
 representing that a dwelling is unavailable for inspection, sale or rental and with inducing sales
 for profit by representations about who is moving into a neighborhood, both include handicap in
 their lists.
@@ -383,24 +369,12 @@ holder is engaged. The seller who says *it's my house, I can sell to whoever I w
 an exemption that your listing agreement destroys. A section numbered § 301.045 was not held for
 this course and is not taught here.
 
-**Who enforces Texas fair housing, and how fast.** The chapter's powers were transferred: § 301.0015
-provides that the powers and duties exercised by the Commission on Human Rights under the chapter
-are transferred to the Texas Workforce Commission, and that a reference in the chapter to the
-commission "means the Texas Workforce Commission." So the fair housing commission in Chapter 301 is
-not TREC. A complaint must be in writing, under oath, in the prescribed form, and "must be filed on
-or before the first anniversary of the date the alleged discriminatory housing practice occurs or
-terminates, whichever is later" (§ 301.081(d)). Investigation is to be completed "not later than the
-100th day after the date the complaint is filed" or, failing that, all related administrative
-proceedings disposed of within a year (§ 301.083(b)). A private civil action may be filed "not later
-than the second year after the date of the occurrence or the termination of an alleged
-discriminatory housing practice or the breach of a conciliation agreement entered under this
-chapter, whichever occurs last" (§ 301.151(a)). Administrative civil penalties under § 301.112(b)
-may not exceed $10,000, or $25,000 where the respondent has been found to have committed one other
-discriminatory housing practice during the five-year period ending on the date of filing of the
-charges, or $50,000 where two or more during the seven-year period ending on the date of filing of
-the charge. In an attorney general pattern-or-practice action under § 301.132(b)(3), the civil
-penalty may not exceed "$50,000 for a first violation" and "$100,000 for a second or subsequent
-violation."
+**Who enforces Texas fair housing.** The chapter's powers were transferred: § 301.0015 provides that
+the powers and duties exercised by the Commission on Human Rights under the chapter are transferred
+to the Texas Workforce Commission, and that a reference in the chapter to the commission "means the
+Texas Workforce Commission." So the fair housing commission in Chapter 301 is not TREC, and a
+discriminatory housing practice complaint is filed with that agency rather than with the Commission
+that issued your license.
 
 Now the provision that connects this unit to the rest of the module. Section 301.114 provides that
 if the commission issues an order about a discriminatory housing practice "that occurs in the course
@@ -462,9 +436,9 @@ Open Property Code § 301.025 and § 301.041 and read both in full before answer
 
 ## Unit: TRELA and Rules of the Commission (Ethics)
 
-Everything in the previous unit was law of general application: it binds landlords, sellers, lenders
-and license holders alike. This unit is about the code that binds *you specifically because you hold
-a Texas license*. It has two layers. The first is Chapter 1101 of the Occupations Code — the Texas
+The previous unit was law of general application, binding landlords, sellers and lenders as much as
+license holders. This unit is the code that binds *you specifically because you hold a Texas
+license*, and it has two layers. The first is Chapter 1101 of the Occupations Code — the Texas
 Real Estate License Act, which the Commission's own rules abbreviate as "the Act," since 22 TAC
 § 535.1 defines "Act–Chapter 1101, Texas Occupations Code." The second is the Commission's rules in
 Title 22 of the Texas Administrative Code, and in particular Chapter 531, titled Canons of
@@ -493,15 +467,13 @@ place no personal interest above that of the client."
 Take those apart. The first demand does two jobs in one sentence. It establishes the primacy of the
 client's interests, and it requires that your position be clear "to all parties concerned" — which
 is why representation disclosure is not a formality but a canon obligation. Then it turns, with
-"that, however," and requires fair treatment of the other side. Students want to collapse this into
-*be nice to everybody* or into *my client is all that matters*. It is neither. It is a hierarchy
-with a floor: loyalty is owed to one, fairness is owed to all. The second demand is the one that
-catches sloppiness rather than dishonesty — "scrupulous and meticulous" is a standard of care, and
-an agent who is honest but careless with deadlines and documents fails it. The third demand is the
-conflict-of-interest rule stated at its widest: not merely no self-dealing, but "no personal
-interest above that of the client." Your commission is a personal interest. Your desire to close
-before the end of the month is a personal interest. The canon does not forbid you from having them;
-it forbids you from placing them above the client's.
+"that, however," and requires fair treatment of the other side: a hierarchy with a floor, loyalty
+owed to one and fairness owed to all. The second demand catches sloppiness rather than dishonesty —
+"scrupulous and meticulous" is a standard of care, and an agent who is honest but careless with
+deadlines and documents fails it. The third is the conflict-of-interest rule at its widest: not
+merely no self-dealing, but "no personal interest above that of the client." Your commission and
+your desire to close before month end are personal interests; the canon does not forbid having them,
+it forbids placing them above the client's.
 
 **Integrity — 22 TAC § 531.3.** In a single sentence: "A license holder has a special obligation to
 exercise integrity in the discharge of the license holder's responsibilities, including employment
@@ -534,11 +506,9 @@ Protection Notice, TREC No. CN 1-5," and requires each license holder to provide
 it in a readily noticeable location in each place of business the broker maintains" and by
 "providing a link to it in a readily noticeable place on the homepage of each business website,"
 labeled either "Texas Real Estate Commission Consumer Protection Notice", in at least 10 point font;
-or "TREC Consumer Protection Notice", in at least 12 point font. The rule defines business website
-as a website that "is accessible to the public," "contains information about a license holder's real
-estate brokerage services," and whose content "is controlled by the license holder," and it
-addresses social media: the link may be located on "the account holder profile" or "a separate page
-or website through a direct link from the social media platform or account holder profile."
+or "TREC Consumer Protection Notice", in at least 12 point font. The rule defines the business
+websites this reaches, and where the link goes on a social media account; Module 08 teaches the
+notice as a document.
 
 **Information About Brokerage Services — 22 TAC § 531.20.** The Commission adopts the IABS Notice by
 reference and requires each license holder to link it on the homepage of each business website and
@@ -547,17 +517,9 @@ requires. The IABS rule and its statute are taught in full in Module 02; what be
 § 531.20 is a canon, that failing to comply with it is therefore a rule violation reachable under
 § 1101.656(a), and that 22 TAC § 535.191 prices it in the middle band.
 
-**Discriminatory Practices — 22 TAC § 531.19.** Covered in the previous unit. Read it again as a
-canon rather than as a fair housing rule, because that is what it is: the Commission's statement
-that participating in the traffic of discriminatory preference — even as a conduit, even by
-answering a question — is professional misconduct.
-
-**Reading the canons as a whole.** Take the seven sections together and you get a coherent
-instrument: who is bound (§ 531.1), loyalty and fairness (§ 531.2), honesty including honesty by
-omission (§ 531.3), competence (§ 531.4), telling consumers where to complain about you (§ 531.18),
-refusing to trade in discriminatory preference (§ 531.19), and telling every party in writing what
-your relationship to them actually is (§ 531.20). That is a complete professional code in about a
-page, and it is enforceable against you whether or not you have ever joined anything.
+**Discriminatory Practices — 22 TAC § 531.19.** Set out in full in the previous unit, and it sits
+here as well: it is the Commission's statement that trading in discriminatory preference, even as a
+conduit, is professional misconduct.
 
 **Two rules that operationalize fidelity.** Title 22 TAC § 535.156 is the Commission's expansion of
 what dishonesty, bad faith and untrustworthiness mean: "A license holder's relationship with the
@@ -586,10 +548,9 @@ paying a commission to or otherwise compensating a person for performing an act 
 the person is "a license holder" or "a real estate broker licensed in another state who does not
 conduct in this state any of the negotiations for which the commission or other compensation is
 paid." Subsection (c) provides that "A sales agent may not pay a commission to a person except
-through the broker that is sponsoring the sales agent at that time." Subsection (d) governs the
-intermediary and its appointed license holders, and its last two subdivisions are pure ethics: such
-a broker or appointee may not "treat a party to a transaction dishonestly" or "violate this
-chapter."
+through the broker that is sponsoring the sales agent at that time." Subsection (d), which governs the intermediary and its appointed license
+holders, ends with two subdivisions that are pure ethics: such a broker or appointee may not "treat
+a party to a transaction dishonestly" or "violate this chapter."
 
 **Section 1101.652 and its architecture.** This is the disciplinary heart of TRELA, and you must be
 precise about its internal structure, because the subsection you are in changes what the Commission
@@ -641,13 +602,12 @@ was made." The rule goes further: "neither a written contractual provision discl
 representations nor the Texas Rules of Evidence Rule 1004, the parol evidence rule, shall prevent
 the Commission from considering oral promises made by a license holder." Read that twice. The merger
 clause in your contract does not protect you in a Commission proceeding. What you said at the
-kitchen table is evidence. Section 535.149 does the same work for § 1101.652(b)(14) and (b)(15): the
-elements of a lottery are "the award or distribution of a prize or prizes by chance and the payment
-of consideration for the opportunity to win the prize"; "The giving of gifts as an inducement for
-prospective clients does not violate this section or §1101.652(b)(14) of the Act, but license
-holders when procuring prospects must otherwise comply with the provisions of §535.20 of this
-title"; and deceptive practices "include, but are not limited to the acts described in the Texas
-Business and Commerce Code §17.46, done in a manner defined in that section."
+kitchen table is evidence. Section 535.149 does the same work for § 1101.652(b)(14) and (b)(15): it defines the elements of a
+lottery, provides that "The giving of gifts as an inducement for prospective clients does not
+violate this section or §1101.652(b)(14) of the Act, but license holders when procuring prospects
+must otherwise comply with the provisions of §535.20 of this title," and ties deceptive practices to
+"the acts described in the Texas Business and Commerce Code §17.46, done in a manner defined in that
+section."
 
 **The unauthorized practice of law.** Section 1101.654(a) is one of the few places TRELA says the
 Commission "shall" — not "may" — act. It provides that the Commission "shall suspend or revoke the
@@ -664,10 +624,8 @@ commission for that type of transaction, prepared by a Texas-licensed attorney a
 attorney for that type of transaction, or "prepared by the property owner or by an attorney and
 required by the property owner."
 
-Rule 537.11 draws the same line in operational terms, forbidding legal advice, opinions on the legal
-effect of instruments, and drafting or recommending contract language, while preserving your duty to
-disclose pertinent facts and to explain informational items in a form; it is taught in Module 04.
-What belongs here is the price: 22 TAC § 535.191 puts a § 1101.654(a) violation in the middle band.
+Rule 537.11 draws the same line in operational terms and is taught in Module 04. What belongs here
+is the price: 22 TAC § 535.191 puts a § 1101.654(a) violation in the middle band.
 
 **How a complaint becomes an investigation.** Section 1101.204(b) is the trigger: the commission
 "shall investigate the actions and records of a license holder if" "a person submits a signed,
@@ -682,12 +640,9 @@ prompt written notice to the license holder under investigation "unless after de
 commission decides against notification," and subsection (e) forbids an undercover or covert
 investigation "unless the commission expressly authorizes the investigation after considering the
 circumstances and determining that the investigation is necessary to implement this chapter."
-Subsection (h) requires priority for consumer complaints and a risk-based approach based on the
-degree of potential harm, the potential for immediate harm, the overall severity of the allegations,
-the number of license holders potentially involved, the previous complaint history of the license
-holder, and the number of potential violations. Subsection (i) requires dismissal if the commission
-determines "at any time that an allegation made or formal complaint submitted by a person is
-inappropriate or without merit."
+Subsection (h) requires priority for consumer complaints and a risk-based approach to the rest, and
+subsection (i) requires dismissal if the commission determines "at any time that an allegation made
+or formal complaint submitted by a person is inappropriate or without merit."
 
 Rule 535.141 is where a sales agent's complaint becomes a broker's problem. Its first sentence: "A
 complaint which names a licensed real estate sales agent as the subject of the complaint but does
@@ -703,9 +658,8 @@ goes to the broker who sponsors the respondent if the respondent is a sales agen
 Rule 535.141 also publishes the Commission's triage. Using the criteria in § 1101.204, complaints
 are prioritized as Level 1 — "Fraud or misrepresentation that involves loss of $10,000 or more,"
 "Continuing threat to public welfare," "Unlicensed activity"; Level 2 — "Fraud or misrepresentation
-that involves loss of less than $10,000," "Negligence," and specified Chapter 1102 inspector
-violations and Standards of Practice violations; and Level 3 — "Technical violations," other Chapter
-1102 complaints, and "Allegations involving education providers." The rule adds that if information
+that involves loss of less than $10,000," "Negligence," and specified inspector violations; and
+Level 3 — "Technical violations" and the remaining categories. The rule adds that if information
 obtained during an investigation "reveals reasonable cause to believe the respondents to the
 complaint may have committed other violations of the Act or rules, no additional authorization shall
 be required to investigate and take action based upon the information." An investigation that starts
@@ -721,12 +675,10 @@ instructions of the principals." Rule 535.191 prices practising during suspensio
 listing "22 TAC §535.141(g)".
 
 Investigation files are confidential. Section 1101.2051(a) makes information or material "including
-an investigation file" confidential and not subject to disclosure "if the information or material is
-prepared or compiled by the commission in connection with a complaint, investigation, or audit of
-any person subject to the jurisdiction of the commission," with disclosure permitted to a list of
-recipients that includes the respondent, law enforcement, the State Office of Administrative
-Hearings, and licensing bodies in other jurisdictions. Subsection (d-1) requires the commission to
-"protect the identity of a complainant to the extent possible by excluding the complainant's
+an investigation file" confidential and not subject to disclosure where it is prepared or compiled
+by the commission in connection with a complaint, investigation or audit, with disclosure permitted
+to a listed set of recipients that includes the respondent. Subsection (d-1) requires the commission
+to "protect the identity of a complainant to the extent possible by excluding the complainant's
 identifying information from a complaint notice sent to a respondent," and subsection (e) opens the
 file to disclosure "on the dismissal or final resolution of a complaint, investigation, or audit."
 
@@ -752,25 +704,17 @@ or instead of imposing an administrative penalty."
 That schedule is 22 TAC § 535.191, and it opens by confirming the point: "The Commission may suspend
 or revoke a license or take other disciplinary action authorized by the Act in addition to or
 instead of assessing the administrative penalties set forth in this section." It then sets three
-bands. The lowest is "An administrative penalty range of $100 - $1,500 per violation per day," and
-it covers, among others, § 1101.652(a)(3), § 1101.652(a)(8), § 1101.652(b)(23), § 1101.652(b)(29),
-§ 1101.652(b)(33), § 1101.652(b)(34), 22 TAC § 535.21, 22 TAC § 535.154, 22 TAC § 535.155 and 22 TAC
-§ 535.157. The middle band is "An administrative penalty range of $500 - $3,000 per violation per
-day," covering among others §§ 1101.652(a)(4) - (7), § 1101.652(b)(1), §§ 1101.652(b)(7) - (8),
-§ 1101.652(b)(12), § 1101.652(b)(14), § 1101.652(b)(22), § 1101.654(a), 22 TAC § 531.18, 22 TAC
-§ 531.20, 22 TAC § 535.2, 22 TAC § 535.16 and 22 TAC § 535.17. The top band is "An administrative
-penalty range of $1,000 - $5,000 per violation per day," covering among others § 1101.651,
-§ 1101.652(a)(2), §§ 1101.652(b)(2) - (6), §§ 1101.652(b)(9) - (11), § 1101.652(b)(13),
-§§ 1101.652(b)(15) - (21), §§ 1101.652(b)(24) - (27), § 1101.652(b)(32), 22 TAC § 535.141(g), 22 TAC
-§§ 535.145 - 535.148 and 22 TAC § 535.156. And then the multiplier: "The Commission may assess an
-additional administrative penalty of up to two times that assessed under subsections (c), (d) and
-(e) of this section, subject to the maximum penalties authorized under §1101.702(a) of the Act, if a
-person has a history of previous violations."
+bands, each expressed per violation per day: $100 to $1,500, $500 to $3,000, and $1,000 to $5,000.
+The Commission may add up to twice the amount assessed under those bands where a person has a
+history of previous violations, subject to the § 1101.702(a) ceiling. The complete band-by-band
+table is reproduced in the optional reference section at the end of this module; the bands that
+matter for the violations this module teaches are given as each violation is taught.
 
 Study the bands and you learn the Commission's priorities better than from any lecture. Failing to
-maintain a current mailing address is in the bottom band. Failing to give the IABS notice — § 531.20
-— is in the middle band, alongside acting negligently or incompetently and failing to give a
-definite termination date. Discrimination, commingling, failing to account for another's money,
+maintain a current mailing address is in the bottom band, and so is failing to enter into the
+written buyer representation agreement § 1101.563 requires. Failing to give the IABS notice —
+§ 531.20 — is in the middle band, alongside acting negligently or incompetently and failing to give
+a definite termination date. Discrimination, commingling, failing to account for another's money,
 breaching the fiduciary rule of § 535.156, and practising during a suspension are all in the top
 band. The schedule tells you which mistakes the state treats as bookkeeping and which it treats as
 betrayal.
@@ -799,16 +743,11 @@ authorized activities, the coaching requirement, and the four-year record retent
 years for the complaint window under § 1101.204(c). Those two numbers are designed to line up, and a
 broker who purges at three years has destroyed the file the Commission is entitled to ask for.
 
-Finally, TRELA allocates misrepresentation liability between license holders and their principals.
-Section 1101.805(b) provides that "This section prevails over any other law, including common law,"
-and subsection (c) that it "does not diminish a broker's responsibility for the acts or omissions of
-a sales agent associated with or acting for the broker." Subsection (d) shields a party from
-liability for a license holder's misrepresentation or concealment of a material fact unless the
-party "knew of the falsity of the misrepresentation or concealment" and "failed to disclose the
-party's knowledge of the falsity"; subsection (e) shields a license holder from liability for a
-party's misrepresentation or concealment on the same two conditions. The structure is symmetrical
-and the lesson is simple: you are not liable for your client's lie unless you knew it was a lie and
-kept quiet.
+Finally, TRELA allocates misrepresentation liability between license holders and their principals in
+§ 1101.805, which Module 03 teaches with both of its conditions. What belongs here is its limit:
+subsection (c) provides that the section "does not diminish a broker's responsibility for the acts
+or omissions of a sales agent associated with or acting for the broker." Nothing in it moves the
+broker's exposure under § 1101.803.
 
 ### Statute reading exercise: Locating conduct inside § 1101.652
 
@@ -832,43 +771,14 @@ subsection (b).
    complainant would have to establish under each. Which one can be violated by saying nothing at
    all?
 
-### Applied exercise: Pricing a Galveston enforcement file
-
-An agent sponsored by a Galveston brokerage takes a listing on a beach house. Over the course of the
-file the Commission ultimately finds four things. (i) On eleven consecutive days, the agent failed
-to respond to the buyer's agent, in violation of 22 TAC § 535.157. (ii) The agent never provided the
-IABS notice to the unrepresented buyer at first substantive communication, in violation of 22 TAC
-§ 531.20. (iii) The agent deposited the buyer's $9,000 earnest money into her personal checking
-account for six days before moving it to the title company, implicating § 1101.652(b)(10). (iv) The
-agent told the buyer the seller would *definitely* replace the seawall before closing, when the
-seller had refused, implicating § 1101.652(b)(5). The agent has one prior Commission order against
-her from three years ago.
-
-1. Using 22 TAC § 535.191, state the penalty band that applies to each of the four findings, and
-   quote the band language for each.
-2. Compute the minimum and maximum administrative penalty for finding (i) alone, showing the
-   arithmetic and stating the per-violation-per-day rule you relied on.
-3. Compute the maximum administrative penalty for findings (ii), (iii) and (iv) treating each as a
-   single violation on a single day, then apply the history-of-previous-violations provision in
-   § 535.191 and recompute. State the ceiling that § 1101.702(a) places on your result and whether
-   your figure hits it.
-4. The agent's broker was never named in the complaint. Using 22 TAC § 535.141 and § 1101.803,
-   explain the broker's exposure and the two things the Commission will be examining about the
-   broker's conduct.
-5. The buyer wants his $9,000 back plus the $4,200 he spent on inspections and appraisal. Using
-   § 1101.659(b), state what the Commission may order and what it may not, and identify the other
-   forum the buyer must use for the remainder.
-
 ## Unit: Professional Codes of Ethics
 
-Up to this point every ethical obligation in this module has come from a statute or an
-administrative rule — from the state. This unit is about a different animal: the code of ethics
-adopted by a private trade association, which is the thing most people mean when they say *the Code
-of Ethics* in a real estate office. You need to understand what such a code is, what it can and
-cannot do to you, and how a complaint under it differs from a complaint to the Commission, because
-agents confuse the two constantly and the confusion is expensive in both directions — some agents
-ignore a Commission complaint because they assume it is an association matter, and others panic at
-an association grievance as though their license were at stake.
+Every ethical obligation in this module so far has come from the state — a statute or an
+administrative rule. This unit is about a different animal: the code of ethics adopted by a private
+trade association, which is what most people mean when they say *the Code of Ethics* in a real
+estate office. Agents confuse the two systems constantly, and the confusion is expensive in both
+directions: ignoring a Commission complaint in the belief that it is an association matter, or
+panicking at an association grievance as though the license were at stake.
 
 **Start with a caution about sources.** No trade association's code of ethics was held as a source
 for this course. This module therefore does not reproduce, quote, paraphrase, summarize article by
@@ -879,22 +789,19 @@ the version in force at the time. What this unit teaches instead is the structur
 the legal character of the obligation they create, and the Texas law that governs the associations
 themselves — all of which comes from sources that were held and read.
 
-**What Texas law says a trade association is.** The Commission defines the term in its own rules.
-Title 22 TAC § 535.1 provides: "Trade Association–A nonprofit voluntary member association or
+**What Texas law says a trade association is.** Title 22 TAC § 535.1 provides: "Trade Association–A nonprofit voluntary member association or
 organization: whose membership consists primarily of persons who are licensed as real estate license
 holders and pay membership dues to the association or organization; that is governed by a board of
 directors elected by the members; and that subscribes to a written code of professional conduct or
 ethics."
 
 Read the three elements and you have the whole legal character of these bodies. First, "nonprofit
-voluntary member association" whose members "pay membership dues." Voluntary and dues-paying: you
-are not conscripted, and you buy in. Second, "governed by a board of directors elected by the
-members" — self-governance by the regulated, which is exactly the opposite of the arrangement TRELA
-makes for the Commission. Third, and this is the element that concerns us here, a body is not a
-Trade Association in the Commission's sense unless it "subscribes to a written code of professional
-conduct or ethics." The Commission's own definition treats a written ethics code as *constitutive*
-of what a trade association is. An organization of license holders without a code is, for this
-purpose, something else.
+voluntary member association" whose members "pay membership dues" — you are not conscripted, you buy
+in. Second, "governed by a board of directors elected by the members," which is self-governance by
+the regulated, the opposite of the arrangement TRELA makes for the Commission. Third, a body is not
+a Trade Association in the Commission's sense unless it "subscribes to a written code of
+professional conduct or ethics." The definition treats a written ethics code as *constitutive* of
+what a trade association is.
 
 TRELA supplies the mirror image. Section 1101.053(a) defines a "Texas trade association" as "a
 cooperative and voluntarily joined statewide association of business or professional competitors in
@@ -918,15 +825,14 @@ provisions organized around duties to clients and customers, duties to the publi
 other members of the association; a mechanism for interpreting those provisions over time, usually
 through published case interpretations decided by a committee; and a disciplinary procedure with a
 hearing panel drawn from the membership. Many such codes also provide a separate arbitration
-procedure for money disputes between members — most commonly, disputes about who is entitled to a
-cooperating brokerage fee. That arbitration track is not disciplinary at all; it is a private
-substitute for suing each other, and it exists because associations would rather resolve commission
-fights internally than watch members litigate.
+procedure for money disputes between members — most commonly, who is entitled to a cooperating
+brokerage fee. That track is not disciplinary at all; it is a private substitute for suing each
+other.
 
 **The legal character of the obligation.** An association code binds by contract, not by statute.
-When you join and pay dues, you agree to abide by the association's governing documents, and those
-documents include the code and the enforcement machinery. That single sentence explains every
-practical difference that follows.
+When you join and pay dues you agree to abide by the association's governing documents, and those
+documents include the code and the enforcement machinery. Every practical difference follows from
+that.
 
 Because the obligation is contractual, the association can only reach members. It has no
 jurisdiction over a Texas license holder who never joined, no matter how badly that person behaved.
@@ -935,14 +841,12 @@ License Holder as "A real estate broker or sales agent licensed under Chapter 11
 Occupations Code," and the canons apply on that basis alone.
 
 Because the obligation is contractual, the sanctions are those a private body can impose on its own
-members: monetary fines payable to the association, required education, letters of reprimand,
-suspension of membership and of the privileges membership carries, and expulsion. In practice the
-privileges are what sting, because they typically include participation in a multiple listing
-service and access to the data and lockbox systems that come with it. But an association cannot
-suspend or revoke your Texas real estate license. Only the Commission can do that, under
-§ 1101.656(a) and § 1101.652, after a hearing conducted by the State Office of Administrative
-Hearings under § 1101.657 if you contest it. Conversely, the Commission cannot expel you from a
-private association or take away your MLS access. Two systems, two sets of tools.
+members: fines payable to the association, required education, letters of reprimand, suspension of
+membership and of the privileges it carries, and expulsion. The privileges are what sting, because
+they typically include participation in a multiple listing service and the data and lockbox systems
+that come with it. But an association cannot suspend or revoke your Texas license; only the
+Commission can, under § 1101.656(a) and § 1101.652. Conversely, the Commission cannot expel you from
+a private association or take away your MLS access. Two systems, two sets of tools.
 
 Because the obligation is contractual, the procedure is the association's own, not Chapter 2001 of
 the Government Code. There is no administrative law judge, no state agency record, and no appeal to
@@ -982,53 +886,31 @@ real estate is sold, are not required to be licensed under the Act" — so runni
 itself, brokerage. And Rule 537.11 — taught in Module 04 — permits a license holder, where the
 Commission has approved no mandatory form, to use a form "prepared by an attorney licensed by this
 state, or a trade association in consultation with an attorney licensed by this state," subject to
-the identifying and explanatory disclosures the rule lists. So a trade association may lawfully
-publish forms for its members, but only through a Texas attorney and only with those disclosures on
-the face of the form.
+the disclosures the rule lists. A trade association may publish forms for its members, but only
+through a Texas attorney and only with those disclosures on the form.
 
-**The practical difference between a private ethics complaint and a Commission complaint.** Sort
-them on six axes.
+**The practical difference between a private ethics complaint and a Commission complaint.** Most of
+it follows from the contractual character just described: the association applies its own code, by
+its own procedure, to its own members, on its own deadlines, and what is at stake is membership and
+MLS privileges rather than the license. Three things do not follow from it. First, who may start the
+matter. An association's grievance process runs on the terms its bylaws set, and those bylaws were
+not held for this course and are not described here; a Commission complaint must be signed and
+written under § 1101.204(b), may not be anonymous under § 1101.204(f), and may also be brought by
+"The commission or commission staff" on the Commission's own initiative under § 1101.204(a). Second,
+the Commission's clock is the four-year window of § 1101.204(c). Third, the Commission's
+investigation file is confidential under § 1101.2051 and rule 535.141 draws in your sponsoring
+broker, both on the terms set out in the previous unit.
 
-*Who may complain.* An association's grievance process is normally open to members and, in most
-associations, to members of the public; the details are set by the association's bylaws, which were
-not held for this course and are not described here. A Commission complaint must be signed and
-written under § 1101.204(b) and may not be anonymous under § 1101.204(f), and § 1101.204(a) also
-allows "The commission or commission staff" to file a complaint and investigate on its own
-initiative.
+The two proceedings are not alternatives, and neither is a prerequisite to the other. A consumer
+harmed by your conduct may file with the association, file with the Commission, and sue you, in any
+order or all at once; § 1101.801, quoted in Unit 1, is the basis for that, and nothing in TRELA
+makes an association's decision binding on the Commission or the reverse.
 
-*What law applies.* The association applies its own code. The Commission applies Chapter 1101 and
-its rules, including the canons.
-
-*What is at stake.* At the association: fines, education, suspension or loss of membership and of
-MLS privileges. At the Commission: the license itself, plus the administrative penalty capped by
-§ 1101.702(a) and priced within the § 535.191 bands set out in the previous unit.
-
-*Deadlines.* The association sets its own. The Commission's is the four-year window of
-§ 1101.204(c). Note this is different again from the fair housing deadlines in the previous unit —
-one year for a Property Code § 301.081 complaint, two years for a § 301.151 civil action. Three
-systems, three clocks. Do not mix them up.
-
-*Confidentiality.* An association's process is governed by its own rules. The Commission's is
-governed by § 1101.2051: the investigation file is confidential while the matter is live and opens
-"on the dismissal or final resolution of a complaint, investigation, or audit." Your final order is
-a public document.
-
-*Who else gets pulled in.* An association proceeds against the member. At the Commission, rule
-535.141 and § 1101.803 bring in your sponsoring broker on the terms set out in the previous unit.
-
-One more practical point that agents get wrong. The two proceedings are not alternatives, and
-neither is a prerequisite to the other. A consumer harmed by your conduct may file with the
-association, file with the Commission, and sue you, in any order or all at once; § 1101.801, quoted
-in Unit 1, is the statutory basis for that. Nothing in TRELA makes an association's decision binding
-on the Commission or the reverse.
-
-Finally, a word about how to think about a private code if you join one. The right attitude is
-neither reverence nor cynicism. A code of ethics adopted by an association of competitors is, by the
-definition in § 1101.053(a) itself, an instrument that serves "their common interest" as well as the
-public's; that is not a scandal, it is a description. Where the code raises the standard above the
-statutory floor, follow it — you agreed to. Where a question arises about what the *law* requires,
-the answer is never found in the code. It is found in Chapter 1101, in the Commission's rules, and
-in the fair housing statutes, and this module has shown you where each of them lives.
+A last word on how to hold a private code if you join one. A code adopted by an association of
+competitors is, by the definition in § 1101.053(a) itself, an instrument that serves "their common
+interest" as well as the public's. Where it raises the standard above the statutory floor, follow it
+— you agreed to. Where the question is what the *law* requires, the answer is never in the code. It
+is in Chapter 1101, in the Commission's rules, and in the fair housing statutes.
 
 ### Applied exercise: Two forums in Denton
 
@@ -1058,44 +940,37 @@ learned all of this, files a signed written complaint with the Commission.
 
 ## Unit: Minimum Ethical Standards
 
-The last four units have given you law, rules, canons, forums and penalty schedules. This unit
-answers the question a working license holder actually asks: what, concretely, is the minimum I must
-do? The honest answer is that the minimum is not a number of hours or a list of forms. It is a set
-of behaviours, each of which traces back to a canon or a rule you can now cite. Below is that set,
-with the source for each. If you can do all of it, every time, you will not be perfect, but you will
-be inside the line the State of Texas has drawn, and you will very rarely be the subject of a
-complaint that goes anywhere.
+The last four units gave you law, rules, canons, forums and penalty schedules. This unit answers the
+question a working license holder actually asks: what, concretely, is the minimum I must do? The
+minimum is not a number of hours or a list of forms. It is a set of behaviours, each tracing back to
+a canon or a rule you can now cite. Do all of it, every time, and you will be inside the line the
+State of Texas has drawn.
 
-**1. Make your position clear to everyone in the transaction.** Canon § 531.2 demands that "the
-primary duty of the license holder is to represent the interests of the client, and the license
-holder's position, in this respect, should be clear to all parties concerned in a real estate
-transaction." Section 1101.652(b)(7) makes it a ground for discipline to fail "to make clear to all
-parties to a real estate transaction the party for whom the license holder is acting." Section
-1101.558(b) requires disclosure of representation, "orally or in writing," at the time of first
-contact with another party or another party's license holder. The minimum standard is therefore not
-*hand over a form when you remember*. It is: at first contact, say who you represent; at first
-substantive communication about a specific property, deliver the IABS notice by one of the delivery
-methods 22 TAC § 531.20 allows, which Module 02 sets out in full.
+**1. Make your position clear to everyone in the transaction.** Canon § 531.2, quoted in Unit 3,
+requires the license holder's position to be clear to all parties concerned in the transaction.
+Section 1101.652(b)(7) makes it a ground for discipline to fail "to make clear to all parties to a
+real estate transaction the party for whom the license holder is acting." Section 1101.558(b)
+requires disclosure of representation, "orally or in writing," at the time of first contact with
+another party or another party's license holder. The minimum standard is therefore not *hand over a
+form when you remember*. It is: at first contact, say who you represent; at first substantive
+communication about a specific property, deliver the IABS notice by one of the delivery methods
+22 TAC § 531.20 allows, which Module 02 sets out in full.
 
-**2. Put the client first and say so in writing where the statute requires.** Canon § 531.2 requires
-"that the license holder place no personal interest above that of the client," and 22 TAC § 535.156
-states it again: "The license holder must put the interest of the license holder's principal above
-the license holder's own interest." Where you are on the other side of the table from a consumer,
-the statute now requires paper before you begin: § 1101.563 requires a written agreement with a
-prospective buyer of residential real property before you show property or present an offer, and
-prescribes the terms that agreement must contain. Module 05 teaches § 1101.563 and the rest of the
-2026 buyer-representation package. What is yours here is the consequence: failing to do it is
-§ 1101.652(b)(34), and 22 TAC § 535.191 places it in the $100 - $1,500 band. Note also
-§ 1101.652(b)(12): every
-agreement in which you agree to perform services requiring a license, other than a property
-management contract, must "specify a definite termination date that is not subject to prior notice."
+**2. Put the client first and say so in writing where the statute requires.** Canon § 531.2 and
+22 TAC § 535.156, both quoted in Unit 3, forbid placing a personal interest above the client's. With
+a buyer, the statute now requires paper before you begin: § 1101.563 requires a written agreement
+with a prospective buyer of residential real property before you show property or present an offer,
+and prescribes the terms it must contain; Module 05 teaches it. What is yours here is the
+consequence: failing to do it is § 1101.652(b)(34), in the $100 - $1,500 band of 22 TAC § 535.191.
+Note also § 1101.652(b)(12): every agreement in which you agree to perform services requiring a
+license, other than a property management contract, must "specify a definite termination date that
+is not subject to prior notice."
 
-**3. Tell the client everything that bears on the decision, promptly.** Rule 535.156 imposes two
-affirmative duties: to "convey to the principal all known information which would affect the
-principal's decision on whether or not to make, accept or reject offers" — subject only to the
-written post-contract opt-out the rule itself describes — and to "keep the principal informed at all
-times of significant information applicable to the transaction or transactions in which the license
-holder is acting as agent for the principal." Section 1101.557(b)(2) requires a broker who
+**3. Tell the client everything that bears on the decision, promptly.** Rule 535.156, quoted in
+Unit 3, imposes two affirmative duties: convey all known information that would affect the
+principal's decision on offers — subject only to the written post-contract opt-out the rule itself
+describes — and keep the principal informed at all times of significant information applicable to
+the transaction. Section 1101.557(b)(2) requires a broker who
 represents a party to "inform the party if the broker receives material information related to a
 transaction to list, buy, sell, or lease the party's real estate, including the receipt of an offer
 by the broker," and § 1101.557(b)(3) requires the broker to "at a minimum, answer the party's
@@ -1104,11 +979,9 @@ calendar days, to your principal, to a license holder representing another party
 unrepresented party.
 
 **4. Be accurate with everyone, including the people you do not represent.** Canon § 531.2 requires
-that "the license holder, in performing duties to the client, shall treat other parties to a
-transaction fairly." Rule 535.156 adds: "A license holder must deal honestly and fairly with all
-parties" and "A license holder has a duty to convey accurate information to members of the public
-with whom the license holder deals." Canon § 531.3 requires prudence and caution "so as to avoid
-misrepresentation, in any way, by acts of commission or omission." Section 1101.652(b)(3) and (b)(4)
+fair treatment of the other parties, rule 535.156 requires honest and fair dealing with all parties
+and accurate information to the public, and canon § 531.3 requires prudence and caution against
+misrepresentation by act or omission — all three quoted in Unit 3. Section 1101.652(b)(3) and (b)(4)
 make it a ground for discipline to misrepresent to a potential buyer, or to fail to disclose to a
 potential buyer, a significant defect known to the license holder — including "a latent structural
 defect" — "that would be a significant factor to a reasonable and prudent buyer in making a decision
@@ -1119,26 +992,24 @@ saying where it came from, and never conceal a defect you know about.
 is likely to influence a person to enter into an agreement when the license holder is unable or does
 not intend to keep the promise," and § 1101.652(b)(17) reaches guaranteeing, or authorizing or
 permitting a person to guarantee, "that future profits will result from a resale of real property."
-Rule 535.145 closes the escape routes: oral promises count, absence from the written agreement does
-not save you, non-reliance does not save you, and neither a merger clause nor the parol evidence
-rule keeps the Commission from considering what you said.
+Rule 535.145, set out in Unit 3, closes the escape routes: the oral promise counts, and neither the
+merger clause nor the parol evidence rule keeps the Commission from considering what you said.
 
 **6. Handle other people's money as though it were held in trust, because it is.** Section
 1101.652(b)(9) reaches failure "within a reasonable time to properly account for or remit money that
 is received by the license holder and that belongs to another person"; (b)(10) reaches commingling
 "money that belongs to another person with the license holder's own money"; (b)(30) requires deposit
-of escrow or trust funds, within a reasonable time, "in trust with a title company authorized to do
-business in this state" or in a custodial, trust or escrow account maintained for that purpose in a
-banking institution authorized to do business in this state; and (b)(31) forbids disbursing that
-money "before the completion or termination of the real estate transaction." Rule 535.2, taught in
-Module 09, makes trust-fund handling a named broker responsibility. Under 22 TAC § 535.191,
+of escrow or trust funds, within a reasonable time, with a title company or in a custodial, trust or
+escrow account, in the terms quoted in Unit 1; and (b)(31) forbids disbursing that money "before the
+completion or termination of the real estate transaction." Rule 535.2, taught in Module 09, makes
+trust-fund handling a named broker responsibility. Under 22 TAC § 535.191,
 subdivisions (b)(9) and (b)(10) sit in the top penalty band and (b)(30) and (b)(31) in the middle
 band.
 
 **7. Take only compensation you are entitled to, from the right person, with disclosure.** Section
-1101.651(b) confines a sales agent to compensation from the sponsoring broker or the broker who was
-sponsoring when the compensation was earned; § 1101.651(c) confines a sales agent's payment of a
-commission to a payment made through the sponsoring broker. Section 1101.652(b)(8) reaches receiving
+1101.651(b) and (c), quoted in Unit 3, confine a sales agent to compensation from the sponsoring
+broker and to paying a commission only through that broker. Section 1101.652(b)(8) reaches
+receiving
 compensation from more than one party "without the full knowledge and consent of all parties to the
 transaction"; (b)(13) reaches accepting, receiving or charging "an undisclosed commission, rebate,
 or direct profit on an expenditure made for a principal"; and (b)(11) reaches paying or dividing a
@@ -1148,71 +1019,55 @@ other than the person you represent on prior disclosure to and consent from your
 settlement-service referral fees (Module 05); 22 TAC § 535.147 governs sharing compensation with
 unlicensed persons and rebates to a party (Module 09).
 
-**8. Disclose when you are on the other side of the deal.** Rule 535.144, taught in Module 12,
-extends § 1101.652(a-1)(1) to a license holder acting for a spouse, parent or child, for a business
-entity in which the license holder is more than a 10% owner, or for a trust of which the license
-holder is trustee or of which the license holder or such a family member is a beneficiary, and
-requires written disclosure of license-holder status before any contract of sale or rental
-agreement. Section
-1101.652(b)(16) separately reaches acting "in a dual capacity as broker and undisclosed principal in
-a real estate transaction."
+**8. Disclose when you are on the other side of the deal.** Rule 535.144, taught clause by clause in
+Module 12, extends § 1101.652(a-1)(1) beyond your own name to deals done for close family, for
+entities you substantially own and for trusts you are tied to, and requires written disclosure of
+your license-holder status before any contract of sale or rental agreement. Section 1101.652(b)(16)
+separately reaches acting "in a dual capacity as broker and undisclosed principal in a real estate
+transaction."
 
-**9. Be competent for the market and the property type, and say no when you are not.** Canon § 531.4
-requires you to "be informed on local market issues and conditions affecting real estate in the
-geographic area where a license holder provides services to a client" and to "be educated in the
-characteristics involved in the specific type of real estate being brokered for others";
-§ 1101.652(a)(6) makes failure to consider market conditions for the specific geographic area a
-ground for discipline; § 1101.652(b)(1) reaches negligence and incompetence in brokerage; and 22 TAC
-§ 535.2, taught in Module 09, puts the same competence obligation on the sponsoring broker's written
-policies. The minimum standard here has a practical edge
+**9. Be competent for the market and the property type, and say no when you are not.** Canon
+§ 531.4, quoted in Unit 3, requires geographic and product-type competence; § 1101.652(a)(6) makes
+failure to consider market conditions for the specific geographic area a ground for discipline;
+§ 1101.652(b)(1) reaches negligence and incompetence in brokerage; and 22 TAC § 535.2, taught in
+Module 09, puts the same obligation on the sponsoring broker's written policies. The practical edge
 students resist: declining a listing you are not equipped to handle, or bringing in a competent
-co-broker, is not a failure of ambition. It is compliance.
+co-broker, is compliance, not a failure of ambition.
 
-**10. Stay out of the practice of law.** Section 1101.654(a) commands suspension or revocation for a
-non-attorney license holder who drafts an instrument affecting an interest in real property other
-than a form described by § 1101.155, or who advises a person "regarding the validity or legal
-sufficiency of an instrument or the validity of title to real property." Rule 537.11, taught in
-Module 04, states the operational line: no legal advice, no drafting or recommending contract
+**10. Stay out of the practice of law.** Section 1101.654(a), quoted in Unit 3, commands suspension
+or revocation for a non-attorney license holder who drafts an instrument affecting an interest in
+real property other than a form described by § 1101.155, or who advises on the validity or legal
+sufficiency of an instrument or the validity of title. Rule 537.11, taught in Module 04, states the operational line: no legal advice, no drafting or recommending contract
 language, no discouraging a principal from employing an attorney, and an affirmative duty to send
 principals to an attorney where a transaction involves unusual matters or an instrument that must be
 acknowledged and filed of record.
 
-**11. Never trade in preference or prejudice, in either direction.** Canon § 531.19 forbids
-inquiring about, responding to or facilitating inquiries about, or disclosing any of eight listed
-characteristics in a way that indicates or is intended to indicate a preference, limitation or
-discrimination, and defines disability for that purpose to include AIDS, HIV-related illnesses or
-HIV infection. Section 1101.652(b)(32) makes discrimination a ground for revocation and names
-steering expressly. The federal and Texas fair housing statutes covered in Unit 2 supply the rest.
+**11. Never trade in preference or prejudice, in either direction.** Canon § 531.19, set out in
+Unit 2, forbids inquiring about, responding to or facilitating inquiries about, or disclosing any of
+its eight listed characteristics in a way indicating a preference, limitation or discrimination.
+Section 1101.652(b)(32) makes discrimination a ground for revocation and names steering expressly.
 The minimum standard is behavioural, not attitudinal: you decline the question, you say why, and you
 never pass it along.
 
 **12. Give the required notices and keep the required records.** Rule 531.18 requires the Consumer
-Protection Notice displayed in each place of business the broker maintains and linked on the
-homepage of each business website with the specified label and font size. Rule 531.20 requires the
-IABS link and the completed notice at first substantive communication (Module 02). Rule 535.17
+Protection Notice displayed and linked as Unit 3 sets out. Rule 531.20 requires the IABS link and
+the completed notice at first substantive communication (Module 02). Rule 535.17
 requires a prescribed written statement with any broker price opinion, comparative market analysis
 or estimate of worth or sale price (Module 12). Rule 535.2 sets the broker's four-year record
-retention (Module 09). Line that four-year retention up against the four-year complaint window in
-§ 1101.204(c) and you can see why the file you close today is the file you may have to defend in
-2030.
+retention (Module 09), which is the same four years as the complaint window in § 1101.204(c).
 
 **13. Answer the Commission.** Section 1101.652(a)(4) makes it a ground for discipline to fail "to
 provide, within a reasonable time, information requested by the commission that relates to a formal
 or informal complaint to the commission that would indicate a violation of this chapter or Chapter
 1102," and § 1101.652(a-1)(2) reaches failure or refusal to produce, on request and within a
 reasonable time, a document, book or record in your possession relating to a transaction you
-conducted. Both sit in the middle or upper penalty bands. More importantly, they are self-inflicted:
-the underlying complaint may be meritless, and a failure to respond is a fresh, independent
-violation that will survive the dismissal of the original one.
+conducted. Both are self-inflicted: the underlying complaint may be meritless, and a failure to
+respond is a fresh, independent violation that survives the dismissal of the original one.
 
-**What this adds up to.** The minimum ethical standard in Texas is not a slogan. Reduced to a
-sentence, it is this: be loyal to your client and fair to everyone else; be accurate, in what you
-say and in what you leave unsaid; be competent for the work you accept and decline the work you are
-not; account for other people's money to the dollar and to the day; disclose your role, your
-interest and your compensation in writing; keep no one's business in your head that belongs in the
-file; refuse to participate in discrimination in any form, including as a conduit for someone else's
-question; and stay inside the boundary that separates brokerage from the practice of law. Every
-clause of that sentence has a citation behind it in this module.
+**What this adds up to.** Every one of the thirteen has a citation behind it in this module, and
+together they are the standard: loyal to the client, fair to everyone else, accurate in what you say
+and in what you leave unsaid, competent for the work you accept, exact with other people's money,
+and in writing about your role, your interest and your compensation.
 
 Here is the test to apply when you are unsure, and it is a practice test, not a legal one, so
 nothing is cited for it: assume that the entire file — every email, every text, every note of every
@@ -1227,9 +1082,8 @@ fix the underlying conduct rather than the message.
 This module began by insisting that law, ethics and morals are not three grades of seriousness but
 three enforcement systems. Law is enforced by the state through courts and, in fair housing, through
 administrative penalties as well: Property Code § 301.171 makes intimidation by force a Class A
-misdemeanor, § 301.151(a) gives an aggrieved person a two-year window for a civil action, and
-§ 301.112(b) authorizes civil penalties not exceeding $10,000, $25,000 or $50,000 depending on the
-respondent's history. Ethics, for a Texas license holder, is enforced by the Commission under
+misdemeanor, § 301.151(a) lets an aggrieved person file a civil action in district court, and
+§ 301.112 lets a state agency assess civil penalties administratively. Ethics, for a Texas license holder, is enforced by the Commission under
 § 1101.656(a), which authorizes suspension, revocation, probation or reprimand for violating "this
 chapter or a commission rule," and under § 1101.701(a), which authorizes an administrative penalty
 for violating the chapter, a rule or an order. Morals are enforced by nobody — and § 1101.802, which
@@ -1324,8 +1178,58 @@ beside it, and you should read those texts yourself. Second, the numbers in this
 that will be quoted back at you: $5,000 per violation per day under § 1101.702(a); the $100–$1,500,
 $500–$3,000 and $1,000–$5,000 bands of § 535.191; four years for records under § 535.2 and four
 years for complaints under § 1101.204(c); two calendar days under § 535.157; twenty days to accept
-or contest under § 1101.704(a) and thirty days to pay or appeal under § 1101.707(a); one year to
-file a Texas fair housing complaint under § 301.081(d) and two years to file a civil action under
-§ 301.151(a); and, in § 1101.652, eight grounds in subsection (a), three in (a-1), and thirty-four
+or contest under § 1101.704(a) and thirty days to pay or appeal under § 1101.707(a); and, in
+§ 1101.652, eight grounds in subsection (a), three in (a-1), and thirty-four
 in (b), with discrimination at (b)(32). Learn them as numbers attached to sections, not as numbers
 floating free, because a number without its section is a number you cannot defend.
+
+## Optional reference: The complete 22 TAC § 535.191 penalty schedule
+
+This section is **optional**. Nothing in it is required to complete this topic, and no quiz,
+scenario or examination item is drawn from it, and nothing later in the course depends on it. You
+may skip it entirely. It is here because the law it covers is real and a license holder may need it:
+the penalty schedule is the first thing anyone looks up when the Commission prices a file, and the
+bands that matter for the violations this module teaches are already in Unit 3, beside the
+violations themselves.
+
+**The bands, section by section.** That schedule is 22 TAC § 535.191, and it opens by confirming the
+point: "The Commission may suspend or revoke a license or take other disciplinary action authorized
+by the Act in addition to or instead of assessing the administrative penalties set forth in this
+section." It then sets three bands. The lowest is "An administrative penalty range of $100 - $1,500
+per violation per day," and it covers, among others, § 1101.652(a)(3), § 1101.652(a)(8),
+§ 1101.652(b)(23), § 1101.652(b)(29), § 1101.652(b)(33), § 1101.652(b)(34), 22 TAC § 535.21, 22 TAC
+§ 535.154, 22 TAC § 535.155 and 22 TAC § 535.157. The middle band is "An administrative penalty
+range of $500 - $3,000 per violation per day," covering among others §§ 1101.652(a)(4) - (7),
+§ 1101.652(b)(1), §§ 1101.652(b)(7) - (8), § 1101.652(b)(12), § 1101.652(b)(14), § 1101.652(b)(22),
+§ 1101.654(a), 22 TAC § 531.18, 22 TAC § 531.20, 22 TAC § 535.2, 22 TAC § 535.16 and 22 TAC
+§ 535.17. The top band is "An administrative penalty range of $1,000 - $5,000 per violation per
+day," covering among others § 1101.651, § 1101.652(a)(2), §§ 1101.652(b)(2) - (6),
+§§ 1101.652(b)(9) - (11), § 1101.652(b)(13), §§ 1101.652(b)(15) - (21), §§ 1101.652(b)(24) - (27),
+§ 1101.652(b)(32), 22 TAC § 535.141(g), 22 TAC §§ 535.145 - 535.148 and 22 TAC § 535.156. And then
+the multiplier: "The Commission may assess an additional administrative penalty of up to two times
+that assessed under subsections (c), (d) and (e) of this section, subject to the maximum penalties
+authorized under §1101.702(a) of the Act, if a person has a history of previous violations."
+
+#### Optional practice: Pricing a Galveston enforcement file
+
+Optional. This is arithmetic practice against the schedule above — no required exercise in this
+module asks you to compute an exposure — and no assessment is drawn from it.
+
+An agent sponsored by a Galveston brokerage takes a listing on a beach house. Over the course of the
+file the Commission ultimately finds four things. (i) On eleven consecutive days, the agent failed
+to respond to the buyer's agent, in violation of 22 TAC § 535.157. (ii) The agent never provided the
+IABS notice to the unrepresented buyer at first substantive communication, in violation of 22 TAC
+§ 531.20. (iii) The agent deposited the buyer's $9,000 earnest money into her personal checking
+account for six days before moving it to the title company, implicating § 1101.652(b)(10). (iv) The
+agent told the buyer the seller would *definitely* replace the seawall before closing, when the
+seller had refused, implicating § 1101.652(b)(5). The agent has one prior Commission order against
+her from three years ago.
+
+1. Using 22 TAC § 535.191, state the penalty band that applies to each of the four findings, and
+   quote the band language for each.
+2. Compute the minimum and maximum administrative penalty for finding (i) alone, showing the
+   arithmetic and stating the per-violation-per-day rule you relied on.
+3. Compute the maximum administrative penalty for findings (ii), (iii) and (iv) treating each as a
+   single violation on a single day, then apply the history-of-previous-violations provision in
+   § 535.191 and recompute. State the ceiling that § 1101.702(a) places on your result and whether
+   your figure hits it.

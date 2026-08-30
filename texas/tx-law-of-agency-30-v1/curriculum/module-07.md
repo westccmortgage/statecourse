@@ -149,9 +149,10 @@ worst of both worlds: full fiduciary exposure, no enforceable fee, and a discipl
 Module 02 teaches the disclosure steps that keep the record clean — the representation disclosure at
 first contact under § 1101.558(b) and the written notice at the first substantive communication under
 § 1101.558(b-1), in the form 22 TAC § 531.20 adopts as the Information About Brokerage Services
-Notice, TREC No. IABS 1-2. **The IABS form is held for this course, but its text is not taught here; Module 02
-teaches 22 TAC § 531.20, the rule that adopts it, and this module does not quote the form.** Two applications belong here rather than there. The exemption in
-§ 1101.558(c)(3) for a communication at a property "held open for any prospective buyer or tenant"
+Notice, TREC No. IABS 1-2. **The IABS form is held for this course, but its text is not taught here;
+Module 02 teaches 22 TAC § 531.20, the rule that adopts it, and this module does not quote the
+form.** Two applications belong here rather than there. The exemption in § 1101.558(c)(3) for a
+communication at a property "held open for any prospective buyer or tenant"
 excuses the *notice* at an open house; it does not excuse the § 1101.563 writing when the property is
 residential and the prospective buyer is unrepresented, nor § 1101.652(b)(7), which reaches a license
 holder who "fails to make clear to all parties to a real estate transaction the party for whom the

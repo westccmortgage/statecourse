@@ -103,7 +103,13 @@ export const BUDGET = Object.freeze(
     const exerciseMinutes =
       plan.statuteReadingExercises * a.statuteReadingExercise + plan.appliedExercises * a.appliedExercise;
     const scenarioMinutes = plan.scenarios * a.scenario;
-    const activityMinutes = quizMinutes + replacementMinutes + exerciseMinutes + scenarioMinutes + a.moduleRecap;
+    /* Replacement minutes are NOT part of the activity load that determines how much reading time a
+       topic has left. A replacement question is served only after a wrong answer, and the time
+       evidence reports it as conditional rather than required — so including it here made the
+       budget's prose floor disagree with the time script's zero-variance point by a couple of
+       hundred words per topic, and an author trying to hit the floor was aiming at the wrong
+       number. It is computed and reported, but it does not consume the topic's allocation. */
+    const activityMinutes = quizMinutes + exerciseMinutes + scenarioMinutes + a.moduleRecap;
     const readingMinutes = topic.subtotalMinutes - activityMinutes;
     return Object.freeze({
       topicCode: topic.code,

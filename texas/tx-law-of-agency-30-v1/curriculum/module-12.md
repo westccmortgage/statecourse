@@ -51,19 +51,15 @@ What is yours in this module is *when in the appointment the notice is delivered
 that it is delivered before the appointment. The statute does not define "first substantive
 communication", and this course holds no source that defines it, so the safe habit has to do the
 work the definition would: the Pflugerville email named a specific property and discussed a proposed
-transaction, so treat your reply as the trigger and attach the completed IABS to that reply.
-Delivering it at the kitchen table on Thursday is a bet that nobody will ever ask which
-communication came first. Two field habits lose that bet — carrying blank IABS forms in a listing
-folder and handing one over on arrival, and putting a permanent IABS link in an email signature
-block, a shortcut § 531.20 forecloses by name and which leaves the agent who relies on it having
-complied with nobody.
+transaction, so treat your reply as the trigger and attach the completed IABS to it. Two field
+habits lose that bet — handing over a blank form on arrival at the appointment, and relying on a
+permanent IABS link in an email signature block, a shortcut § 531.20 forecloses by name.
 
 The second thing you owe from the outset is the Consumer Protection Notice: 22 TAC § 531.18 requires
-it displayed in each place of business and linked in a labelled, readily noticeable place on the
-homepage of each business website, and § 531.20 imposes the parallel homepage-link duty for the
-IABS. Module 08 teaches the notice as a document. In the sequence, the point is that both links go
-up on the day your page goes live, not on the day someone asks: if you run a personal page under
-your broker's domain, they are your responsibility.
+it displayed in each place of business and linked on the homepage of each business website, and
+§ 531.20 imposes the parallel homepage-link duty for the IABS; Module 08 teaches both as documents.
+In the sequence, the point is that the links go up on the day your page goes live, not on the day
+someone asks.
 
 **Step two, at the appointment: the price opinion.** You will be asked what the house is worth.
 Answering that question is regulated, it is regulated in two directions at once, and 22 TAC § 535.17
@@ -121,35 +117,29 @@ consent in writing separately, at the same appointment. And a listing contract f
 Commission must under § 1101.155(c) inform the parties that commissions are negotiable and explain
 the availability of Texas coastal natural hazards information where that is appropriate.
 
-Net listings are constrained by 22 TAC § 535.16, taught in Module 04: not forbidden in Texas, but
-available only where the principal requires one and appears familiar with current market values, and
-only on an agreement that assures the principal of not less than the desired price and caps the
-broker at a specified maximum commission. In everyday residential practice the honest advice is to
-decline, and to say why — the arrangement pays you more the worse you do for your client.
+Net listings are constrained by 22 TAC § 535.16, taught in Module 04, and are available only on the
+conditions that rule sets. In everyday residential practice the honest advice is to decline, and to
+say why — the arrangement pays you more the worse you do for your client.
 
 Nothing about the writing is a formality. Section 1101.806(c) bars any action to recover a
 commission unless the agreement, or a memorandum of it, is in writing and signed by the party
-against whom the action is brought; § 1101.806(b) requires you to allege and prove you held a
-licence "at the time the act was commenced"; and Business & Commerce Code § 26.01 imposes the
-parallel writing requirement on the sale contract itself. Module 04 teaches all three. In the
-sequence, the consequence is blunt. A seller who shook your hand, watched you spend 4,000 dollars on
-photography and staging, and then closed with a neighbour owes you nothing you can sue for. And a
-licence that lapses in the middle of the listing period is a compensation catastrophe, not a renewal
-problem, because the test runs to your status when the act was commenced.
+against whom the action is brought, and § 1101.806(b) requires you to allege and prove you held a
+licence "at the time the act was commenced"; Module 04 teaches both, with the parallel requirement
+Business & Commerce Code § 26.01 puts on the sale contract. In the sequence, the consequence is
+blunt. A seller who shook your hand, watched you spend 4,000 dollars on staging and then closed with
+a neighbour owes you nothing you can sue for, and a licence that lapses mid-listing is a
+compensation catastrophe rather than a renewal problem.
 
 **Step four, the same evening: the seller's disclosure notice.** Property Code § 5.008 requires a
 seller of residential real property comprising not more than one dwelling unit to give the purchaser
 the prescribed written notice or one substantially similar to it. Module 03 teaches the notice, its
-content, its exemptions and the two things § 5.008(c) and Occ. Code § 1101.556 say a seller and a
-license holder need not disclose. What belongs here is that the notice is a step in the listing
-workflow, and which step.
+content and its exemptions. What belongs here is which step of the listing workflow it is.
 
 Get it completed before the photographs and before the sign. Section 5.008(f) requires delivery "on
 or before the effective date of an executory contract binding the purchaser to purchase the
 property," and provides that where a contract is entered without it, "the purchaser may terminate
-the contract for any reason within seven days after receiving the notice." Seven days, for any
-reason. A listing agent who leaves the notice until after an offer is accepted has handed the buyer
-a free option on the deal.
+the contract for any reason within seven days after receiving the notice." A listing agent who
+leaves the notice until after an offer is accepted has handed the buyer a free option on the deal.
 
 Two things you do at the kitchen table. It is the seller's notice: you obtain it, you deliver it,
 and you never fill it in for them. And when the seller stalls over a question — the age of the roof,
@@ -205,16 +195,15 @@ expires, you have ten days to take down the sign, the landing page, the boosted 
 syndicated feed. When it closes, your "Just sold!" post is fine for ten days, and after that it
 needs the current status included.
 
-**Step six: presenting offers.** 22 TAC § 535.156, taught in Module 02, makes the license holder a
-fiduciary who must convey to the principal all known information affecting the principal's decision
-whether to make, accept or reject offers, subject to one escape: a written agreement by the
-principal that offers are not to be submitted after the principal has entered into a contract.
+**Step six: presenting offers.** 22 TAC § 535.156, taught in Module 02, requires the license holder
+to convey to the principal all known information affecting the principal's decision whether to make,
+accept or reject offers, subject to one escape: a written agreement by the principal that offers are
+not to be submitted after the principal has entered into a contract.
 
-What that means for the working week is that the default is unconditional — every offer goes to the
-seller, on the day it arrives. There is no oral version of the exception, and no version that rests
-on the seller having told you in the car not to bother them with lowball offers. If your Pflugerville
-seller does not want back-up offers presented after they go under contract, that instruction is
-signed and in the file before the first offer arrives, not negotiated afterwards.
+For the working week the default is unconditional — every offer goes to the seller, on the day it
+arrives. There is no oral version of the exception. If your Pflugerville seller does not want back-up
+offers presented after going under contract, that instruction is signed and in the file before the
+first offer arrives, not negotiated afterwards.
 
 Two authority limits govern how you negotiate, both grounds for discipline under § 1101.652 and
 taught in Module 10: you may not offer to sell or lease the property without the owner's knowledge
@@ -442,15 +431,9 @@ acknowledged and filed of record, the license holder shall advise the license ho
 consult an attorney before executing the instrument." And: "A license holder shall advise the
 license holder's principals that the instrument they are about to execute is binding on them."
 
-Section 1101.654, taught in Module 10 with the rest of the Act's disciplinary sections, puts a
-licence-ending penalty behind the same line: the Commission "shall" — not may — suspend or revoke
-the licence of a non-attorney who, for consideration or in connection with the person's employment,
-agency or fiduciary relationship, drafts an instrument other than a § 1101.155 form that affects an
-interest in real property, or advises on the validity or legal sufficiency of an instrument or of
-title. Section 1101.654(b) supplies the protection that makes ordinary practice possible: completing
-a contract form incidental to acting as a broker is not the unauthorized practice of law where the
-form was adopted by the Commission for that type of transaction, or prepared and approved by a Texas
-attorney for it, or prepared by the property owner or by an attorney and required by the owner.
+Section 1101.654, taught in Module 10, puts a licence-ending penalty behind the same line — the
+Commission "shall", not may, suspend or revoke for drafting or advising on legal sufficiency — and
+its subsection (b) protects the ordinary act of completing an approved or attorney-prepared form.
 Filling in the right form is safe. Writing your own is not.
 
 **Earnest money: the handling, in order.** The buyer's earnest money is trust money, and 22 TAC
@@ -529,11 +512,10 @@ the other agent that you have their offer, that your seller is travelling, and t
 answer on Wednesday is a response; silence while you wait for something better to say is not, and
 because the penalty runs per day, a silence that lasts three weeks is not one violation.
 
-Two matching deadlines inside the brokerage come from 22 TAC § 535.2, Module 09: a broker or
-delegated supervisor must respond to sponsored sales agents within two calendar days, and must
-deliver Commission mail and correspondence to them within three calendar days of receipt. If you are
-a sales agent, the second is your protection — a complaint notice addressed to you arrives at your
-broker first.
+Two matching deadlines inside the brokerage come from 22 TAC § 535.2, Module 09: two calendar days
+for a broker or delegated supervisor to answer a sponsored sales agent, and three for delivering
+Commission mail to them. The second is your protection — a complaint notice addressed to you arrives
+at your broker first.
 
 **Habit two: put it in writing, and put it in writing at the time.** There is no general Texas rule
 that says "document everything," so the honest way to teach this is to show you how many separate
@@ -564,22 +546,17 @@ An integration clause in the contract does not protect you from the Commission. 
 car counts.
 
 **Habit three: keep the file for four years, in the shape the rule names.** 22 TAC § 535.2, taught
-in Module 09, requires the broker to maintain eight categories of records in a format readily
-available to the Commission for at least four years from the date of closing, termination of the
-contract, or end of the transaction: disclosures; commission agreements such as listing and buyer
-representation agreements; substantive communications with parties to the transaction; offers,
-contracts and related addenda; receipts and disbursements of compensation; property management
-contracts; appraisals, broker price opinions and comparative market analyses; and sponsorship
-agreements.
+in Module 09, requires the broker to keep eight categories of records available to the Commission
+for at least four years from closing, termination of the contract, or the end of the transaction.
 
-Three consequences for your own habits. Read the third category again — "substantive communications
-with parties to the transaction" covers your text messages with the buyer's agent about the repair
+Three consequences for your own habits. One of those categories is "substantive communications with
+parties to the transaction", which covers your text messages with the buyer's agent about the repair
 amendment, so a messaging app that deletes after thirty days is a decision not to keep records the
 broker is required to hold. The clock runs from the end of the transaction, so a deal that dies in
-option starts it that day rather than at some later tidy-up. And the four years is not an arbitrary
-number: it matches the outer limit of the Commission's investigative reach under § 1101.204(c) and
-the four-year limitations period Civil Practice and Remedies Code § 16.004(a) sets for fraud and
-breach of fiduciary duty.
+option starts it that day rather than at some later tidy-up. And the four years is not arbitrary: it
+matches the outer limit of the Commission's investigative reach under § 1101.204(c) and the
+four-year limitations period Civil Practice and Remedies Code § 16.004(a) sets for fraud and breach
+of fiduciary duty.
 
 Two record duties fall on you personally rather than on your broker, both grounds for discipline
 under § 1101.652 and taught in Module 10: (a-1)(2), failing or refusing to produce on request, within
@@ -599,23 +576,17 @@ brokerage's lawyer to get an answer for my client and relay it? Every one of tho
 § 537.11, the last one included; what you may do instead is employ and pay an attorney to represent
 only yourself, and you may reimburse a principal for attorney's fees incurred.
 
-The permitted side is genuinely useful, and you should be able to state it without hesitation. You
-may explain the meaning of informational items or choices in a contract form. You may add
-informational items to an authorised form. You may, on a principal's specific written instruction,
-add or strike language so long as the change is conspicuous. And you must still tell your principal
-every pertinent fact within your knowledge, including facts that might affect the status of or title
-to the real estate. Tell them the fact. Do not opine on its legal effect.
+The permitted side, set out in Unit 2, is the answer to each of them: explain informational items,
+add informational items, act on a principal's specific written instruction, and tell your principal
+every pertinent fact within your knowledge. Tell them the fact. Do not opine on its legal effect.
 
 **Habit five: stay inside your competence and your market.** 22 TAC § 531.4, taught in Module 02,
-obliges a license holder to be knowledgeable and competent: informed on local market issues and
-conditions where the license holder serves clients, informed on national, state and local
-developments in the industry, exercising judgment and skill in performing brokerage activities, and
-educated in the characteristics of the specific type of real estate being brokered for others. The
-Act turns incompetence into a disciplinary ground twice, at § 1101.652(b)(1) for acting negligently
-or incompetently and § 1101.652(a)(6) for failing to consider market conditions for the specific
-geographic area in which the license holder provides a service. A Dallas agent taking a ranch
-listing near Sonora, or an agent who has never handled a commercial lease taking one because a
-friend asked, is running straight at both.
+obliges a license holder to be knowledgeable and competent in the local market and in the specific
+type of real estate being brokered. The Act turns incompetence into a disciplinary ground twice, at
+§ 1101.652(b)(1) for acting negligently or incompetently and § 1101.652(a)(6) for failing to
+consider market conditions for the specific geographic area in which the license holder provides a
+service. A Dallas agent taking a ranch listing near Sonora, or an agent who has never handled a
+commercial lease taking one because a friend asked, is running straight at both.
 
 The other half of that is your training entitlement, and it is worth claiming. 22 TAC § 535.2
 requires the sponsoring broker's written policies to ensure each sponsored sales agent is advised of
@@ -626,14 +597,12 @@ must require that the sales agent receive coaching and assistance from an experi
 competent for that activity." First three times, coaching required, by rule. If your broker does not
 offer it, ask for it and put the request in writing.
 
-**Habit six: know the standard you are being judged against.** 22 TAC § 531.2 makes a license holder
-acting as an agent for another a fiduciary whose primary duty is to represent the client's
-interests, who treats other parties to the transaction fairly, who is "scrupulous and meticulous" in
-performing the license holder's functions, and who places no personal interest above the client's;
-22 TAC § 531.3 adds a special obligation to exercise integrity, "including employment of prudence
-and caution so as to avoid misrepresentation, in any way, by acts of commission or omission."
-Module 02 teaches the Canons as duties and Module 10 reads them as an ethical whole. The four words
-to carry into the working week are the last four: misrepresentation by omission is misrepresentation.
+**Habit six: know the standard you are being judged against.** 22 TAC § 531.2 makes you a fiduciary
+who is "scrupulous and meticulous" and places no personal interest above the client's, and 22 TAC
+§ 531.3 requires integrity, "including employment of prudence and caution so as to avoid
+misrepresentation, in any way, by acts of commission or omission." Module 02 teaches the Canons as
+duties and Module 10 reads them as an ethical whole. The four words to carry into the working week
+are the last four: misrepresentation by omission is misrepresentation.
 
 **A working checklist for the week.** None of what follows is itself a legal requirement — it is
 practice, and it is offered as practice — but every item exists because a rule cited in this module
@@ -717,22 +686,16 @@ a person related within the first degree; and (b)(16), acting in a dual capacity
 undisclosed principal.
 
 **Referral fees, rebates and who may be paid.** Section 1101.651, taught in Module 09, confines
-compensation: a broker may pay for an act of a broker only a license holder or an out-of-state
-broker who conducts none of the Texas negotiations, and a sales agent may neither accept
-compensation from anyone but the sponsoring broker nor pay a commission except through that broker.
-Rule 535.147 adds the two lines that matter in practice — an unlicensed person may share in the
-income of a licensed brokerage entity only if that person performs no act requiring a licence and
-does not lead the public to believe they are in the brokerage business, and a license holder may not
-share fees with an unlicensed entity created to collect them on the license holder's behalf.
+compensation: a sales agent may neither accept compensation from anyone but the sponsoring broker
+nor pay a commission except through that broker. Rule 535.147 adds the line that matters in
+practice — a license holder may not share fees with an unlicensed entity created to collect them on
+the license holder's behalf.
 
-Rebates to consumers are permitted with conditions, also under 22 TAC § 535.147: a license holder
-may rebate a portion of the fee or commission to a party in the transaction with the written consent
-of the sponsoring broker and of the party the license holder represents, may not pay it in a manner
-that misleads a broker, lender, title company or governmental agency about the transaction or the
-buyer's financial resources or obligations, and must have the represented party's written consent
-before rebating to a party the license holder does not represent. An undisclosed credit outside
-closing that changes what the lender thinks the buyer brought to the table is precisely what the
-second of those forbids.
+Rebates to consumers are permitted, also under 22 TAC § 535.147, on conditions: the written consent
+of the sponsoring broker and of the party you represent, and no payment made in a manner that
+misleads a broker, lender, title company or governmental agency about the transaction or the buyer's
+financial resources or obligations. An undisclosed credit outside closing that changes what the
+lender thinks the buyer brought to the table is precisely what the second of those forbids.
 
 If you advertise a rebate, 22 TAC § 535.155 — this module's rule — adds its own disclosure
 requirements. An advertisement violates the rule if it offers "to rebate a portion of a license
@@ -752,14 +715,9 @@ Payments from settlement service providers are governed by 22 TAC § 535.148, Mo
 to know at the moment such a payment is offered. You may not receive a commission, rebate or fee
 from anyone other than the person you represent without first disclosing the intention to your
 client and obtaining the client's consent — a failure the Act reaches twice, at § 1101.652(b)(8) and
-(b)(13). And the rule flatly prohibits paying or receiving a fee to or from another settlement
-service provider for referrals of inspectors, lenders, mortgage brokers or title companies, or for
-inclusion on a preferred-provider list. What survives is payment at market rates for goods actually
-furnished or services actually performed, promotional or educational activity not conditioned on
-referrals, and cooperative brokerage and referral arrangements between licensed agents and brokers.
-Broker-to-broker referral fees are lawful. A title company buying your marketing is not. Where you
-receive payments from a residential service contract provider in a transaction where you represent a
-party, the disclosure goes on TREC No. RSC-4.
+(b)(13). And the rule prohibits paying or receiving a fee to or from another settlement service
+provider for referrals or for inclusion on a preferred-provider list. Broker-to-broker referral fees
+are lawful. A title company buying your marketing is not.
 
 **Teams, assumed names and alternate names.** Rule 535.154 defines the three categories and imposes
 a registration duty on each. An "Alternate name" is "a name used by an individual license holder
@@ -857,24 +815,20 @@ of the law in this unit belongs to other modules — the disciplinary catalogue 
 to Module 10, the Recovery Trust Account and the DTPA to Module 11, the allocation of
 misrepresentation liability to Module 03. What is here is where each of them meets your file.
 
-**How a complaint reaches you.** Section 1101.204 sets the frame: the Commission investigates where
-a person submits a signed, written complaint and the complaint and its evidence "provide reasonable
-cause for an investigation"; it may not initiate an investigation on an anonymous complaint; it may
-not investigate a complaint submitted later than the fourth anniversary of the incident; and it must
-promptly give written notice to the license holder under investigation unless after deliberation it
-decides against notification. Complaints are then triaged into three levels by 22 TAC § 535.141,
-taught in Module 10, with a 10,000 dollar line between Level 1 and Level 2 fraud and with unlicensed
-activity always at Level 1 regardless of amount.
+**How a complaint reaches you.** Section 1101.204, taught in Module 10, sets the frame: a signed,
+written, non-anonymous complaint, submitted within four years of the incident, with reasonable cause
+for an investigation, and prompt written notice to the license holder under investigation. Rule
+535.141 then triages it.
 
 Two consequences to absorb now. A complaint that names a sales agent but not the sponsoring broker
 is, under 22 TAC § 535.141, also a complaint against that broker for the limited purpose of
 determining the broker's involvement and whether the broker met the broker's professional
 responsibilities — and § 1101.803, taught in Module 09, makes the broker liable to the Commission,
-the public and clients for your conduct. Your mistake is your broker's problem by operation of statute, which is why
-brokers write policies and why you follow them. Second, § 1101.652(a)(4) makes it an independent
-ground for discipline to fail to provide, within a reasonable time, information the Commission
-requests in connection with a complaint. A licence is more often lost for ignoring the letter than
-for the original conduct.
+the public and clients for your conduct. Your mistake is your broker's problem by operation of
+statute, which is why brokers write policies and why you follow them. Second, § 1101.652(a)(4) makes
+it an independent ground for discipline to fail to provide, within a reasonable time, information
+the Commission requests in connection with a complaint. A licence is more often lost for ignoring
+the letter than for the original conduct.
 
 **The recurring fact patterns, and where in the week each one is created.** Section 1101.652(b) is
 the catalogue, and Module 10 teaches it subdivision by subdivision. Read as a working list, the
@@ -912,16 +866,13 @@ Discrimination sits across all of them, at § 1101.652(b)(32) and 22 TAC § 531.
 10 alongside the federal fair housing provisions.
 
 **What it costs.** The Commission's remedies are cumulative, not alternative, and Module 10 teaches
-the scheme. Section 1101.652(a) permits suspension, revocation or other authorised disciplinary
-action. Section 1101.702(a) caps an administrative penalty at 5,000 dollars "for each violation" and
-provides that "Each day a violation continues or occurs may be considered a separate violation".
-Section 1101.702(b) lists the factors that set the amount, including "efforts to correct the
-violation". Rule 535.191 sorts the provisions into three published ranges — $100–$1,500, $500–$3,000
-and $1,000–$5,000 per violation per day — and permits an additional penalty of up to twice the
-assessed amount where there is a history of previous violations. Beyond penalties there are a cease
-and desist order under § 1101.759, an injunctive action under § 1101.751 in which the Commission
-need not allege or prove an inadequate remedy at law or irreparable damage, and, for a wilful
-violation of the chapter or a Commission order, a Class A misdemeanour under § 1101.756.
+the scheme: suspension or revocation, an administrative penalty capped by § 1101.702(a) at 5,000
+dollars "for each violation" with "Each day a violation continues or occurs" capable of being a
+separate violation, and the three published ranges of rule 535.191. Note § 1101.702(b), which puts
+"efforts to correct the violation" among the factors that set the amount — the reason the last
+section of this unit is worth more to you than any other. Beyond penalties there are a cease and
+desist order under § 1101.759, an injunctive action under § 1101.751, and, for a wilful violation of
+the chapter or a Commission order, a Class A misdemeanour under § 1101.756.
 
 One consequence lands on your calendar rather than in a tier table. Under 22 TAC § 535.141, a person
 whose licence is suspended "may not during the period of any suspension perform, attempt to perform,
@@ -931,21 +882,18 @@ broker; a broker to sponsored sales agents and to any entity for which the perso
 broker; and, where the person is contractually obliged to perform licensed services, to all other
 parties to that contract.
 
-**Beyond the Commission.** Three exposures run alongside discipline. The Real Estate Recovery Trust
-Account, §§ 1101.601–.610 and Module 11, reimburses an aggrieved person for actual damages caused by
-conduct described in § 1101.652(a-1)(1) or (b) — but only after a court judgment, execution returned
-nulla bona and a perfected judgment lien, and only up to 125,000 dollars for all claims arising from
-a single transaction and 250,000 dollars against a single license holder "until the license or
-certificate holder has reimbursed the trust account for all amounts paid." The fund pays the
-consumer and then looks to you. The DTPA, Business & Commerce Code ch. 17 and Module 11, lets a
-consumer recover economic damages under § 17.50(b)(1), adds mental anguish and up to treble damages
-where the conduct was knowing or intentional, and awards court costs and reasonable and necessary
-attorney's fees to a prevailing consumer under § 17.50(d). And § 1101.805, taught in Module 03, allocates responsibility for
-misrepresentation between you and your client on two elements — knowledge of the falsity and failure
-to disclose that knowledge. The practical reading: you are not an insurer of your seller's
-statements, but the moment you know a statement is false, staying quiet makes it yours. Suit for
-fraud or breach of fiduciary duty must be brought within four years, Civil Practice and Remedies
-Code § 16.004(a) — the same four years for which your file must survive.
+**Beyond the Commission.** Three exposures run alongside discipline, and all three are taught
+elsewhere. The Real Estate Recovery Trust Account, §§ 1101.601–.610 and Module 11, pays an aggrieved
+person's actual damages after a judgment goes unsatisfied, subject to the caps that module sets out,
+and then looks to you: it is your licence that answers for the reimbursement. The DTPA, Business &
+Commerce Code ch. 17 and Module 11, adds mental anguish and up to treble damages for knowing or
+intentional conduct, and the consumer's attorney's fees under § 17.50(d). And § 1101.805, taught in
+Module 03, allocates responsibility for misrepresentation between you and your client on two
+elements — knowledge of the falsity and failure to disclose that knowledge. The practical reading:
+you are not an insurer of your seller's statements, but the moment you know a statement is false,
+staying quiet makes it yours. Suit for fraud or breach of fiduciary duty must be brought within four
+years, Civil Practice and Remedies Code § 16.004(a) — the same four years for which your file must
+survive.
 
 **The day you realise you got it wrong.** This is the part of risk management that is almost never
 taught, and it is the part you will actually need. There is no held Texas source that prescribes a

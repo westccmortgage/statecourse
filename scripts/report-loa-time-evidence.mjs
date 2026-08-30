@@ -67,7 +67,15 @@ for (const [index, topic] of TOPICS.entries()) {
   take(/^## Optional reference: .+$/gm, "optionalReference");
   take(/^### Statute reading exercise: .+$/gm, "statuteReadingExercise");
   take(/^### Applied exercise: .+$/gm, "appliedExercise");
-  if (recapAt >= 0) blocks.push({ kind: "moduleRecap", start: recapAt, end: md.length });
+  /* The recap runs to the next heading, not to end of file. It used to run to end of file, which was
+     harmless until a module adopted the optional-reference mechanism: the structural checker requires
+     that section to sit AFTER the recap, so the optional block nested inside the recap block, its
+     words were counted twice, and the disjointness invariant threw for the whole corpus the moment
+     module 09 used it. The invariant did its job — it refused to report a plausible number — but the
+     bug was mine. */
+  if (recapAt >= 0) {
+    blocks.push({ kind: "moduleRecap", start: recapAt, end: headings.find((i) => i > recapAt) ?? md.length });
+  }
 
   const counts = { statuteReadingExercise: 0, appliedExercise: 0, moduleRecap: 0, optionalReference: 0 };
   const wordsBy = { statuteReadingExercise: 0, appliedExercise: 0, moduleRecap: 0, optionalReference: 0 };

@@ -7,110 +7,89 @@ approval form places under *Clarifying Agency Relationships*, whose scope note i
 agency."*
 
 **Learning objectives.** After completing this module you will be able to: say what a brokerage's
-written disclosure policy is and which decisions it must make that the statute and the rules leave
-open; state the two things 22 TAC § 531.18 requires of each license holder for the Consumer
-Protection Notice, with the correct label and font for the homepage link, the three elements of a
-"business website" and the social-media accommodation; distinguish the Consumer Protection Notice
-from the Information About Brokerage Services notice in source, audience and method of delivery,
-which is the confusion this topic exists to end; and read your own brokerage's policy manual well
-enough to answer the day-one questions at the close of the second unit, beginning with the written
-scope of your authorised activities that 22 TAC § 535.2 obliges your broker to give you.
+written disclosure policy is and which decisions the statute and the rules leave to it; state the
+two things 22 TAC § 531.18 requires of each license holder for the Consumer Protection Notice, and
+whose places of business and whose websites each duty attaches to; distinguish that notice from the
+Information About Brokerage Services notice in source, audience and method of delivery, which is the
+confusion this topic exists to end; and read your brokerage's policy manual well enough to answer
+the day-one questions at the close of the second unit, beginning with the written scope of your
+authorised activities under 22 TAC § 535.2.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where a
 statement is practice rather than law, the module says so and cites nothing for it.
 
 ## Unit: Disclosure Policy
 
-A student hearing the phrase "disclosure policy" for the first time usually pictures a form. That is
-the wrong picture. The Information About Brokerage Services notice — the IABS — is a form. A
-disclosure policy is the set of standing decisions a brokerage makes about *who* delivers that form,
-*when* they deliver it, *by which method*, *what they do when the first contact arrives in a channel
-the rule does not accommodate*, and *how the delivery is proved four years later when a complaint
-arrives*. The statute and the rule set a floor. They tell you what must happen. They do not tell you
-how a firm with forty sales agents working seven days a week will make it happen the same way every
-time. That is the policy's job, and the absence of one is the single most common reason a
-brokerage's IABS deliveries are inconsistent.
+A student hearing the phrase "disclosure policy" usually pictures a form. That is the wrong picture:
+the Information About Brokerage Services notice — the IABS — is a form. A disclosure policy is the
+set of standing decisions a brokerage makes about *who* delivers that form, *when*, *by which
+method*, *what they do when the first contact arrives in a channel the rule does not accommodate*,
+and *how the delivery is proved four years later when a complaint arrives*. The statute and the rule
+set a floor: they say what must happen, not how a firm makes it happen the same way every time. That
+is the policy's job, and the absence of one is the commonest reason a firm's IABS deliveries are
+inconsistent.
 
 The floor itself belongs to another module, and this one states it once. Occupations Code
 § 1101.558(b) requires a license holder who represents a party to disclose that representation
 orally or in writing at first contact with another party or with the other party's license holder;
 § 1101.558(b-1) requires a written notice, in at least a 10-point font, at the first substantive
-communication with a party about a proposed transaction regarding specific real property; and 22 TAC
-§ 531.20 adopts the IABS form, TREC No. IABS 1-2, and prescribes how a completed notice may be
-provided. Module 02 teaches § 1101.558 and § 531.20 in full, including the three exceptions in
-§ 1101.558(c), the enumerated delivery methods and the constraints on reproducing the form. TREC No.
-IABS 1-2 is held for this course, but its text is not taught; § 531.20, the rule that adopts it, is. Module 05 teaches the 2026 buyer-agreement
-sections that interlock with those exceptions, and Module 10 teaches the disciplinary grounds,
-including § 1101.652(b), which reaches a license holder who "fails to make clear to all parties to a
-real estate transaction the party for whom the license holder is acting." What belongs to *this*
-topic is everything those provisions leave to the brokerage to decide.
+communication with a party about specific real property; and 22 TAC § 531.20 adopts the IABS form,
+TREC No. IABS 1-2, and prescribes how a completed notice may be provided. Module 02 teaches all
+three in full. TREC No. IABS 1-2 is held for this course, but its text is not taught; § 531.20, the
+rule that adopts it, is. What belongs to *this* topic is everything those provisions leave to the
+brokerage to decide.
 
-**The channel problem.** A consumer sees a firm's sign in Katy and texts an agent's cell phone at
-9:40 on a Saturday night to ask whether the house is available and what the payment would be. That
-is a communication with a party about specific real property, and it is not a bare availability
-check. Text message is not among the delivery methods 22 TAC § 531.20 enumerates. The rule does not
-tell the agent what to do next; a policy must. The competent office rule is to move the conversation
-into a channel the rule recognises before going further — ask for an email address, send the
-completed notice by one of the permitted methods, and only then answer the payment question — and it
-should give the agent the exact words to use and name the place the sent copy is filed. The rule is
-equally silent on *who* delivers when two of the firm's agents are in contact with the same buyer.
-That, too, is a policy decision, not a legal one.
+**The channel problem.** A first contact often arrives in a channel the rule does not contemplate. A
+text message to an agent's cell phone on a Saturday night is a communication with a party about
+specific real property, and text is not among the delivery methods 22 TAC § 531.20 enumerates. The
+rule does not tell the agent what to do next; a policy must. The competent office rule is to move
+the conversation into a channel the rule recognises before going further — ask for an email address,
+send the completed notice by a permitted method, answer the substantive question only then, and file
+the sent copy where the broker can find it. The rule is equally silent on *who* delivers when two of
+the firm's agents are in contact with the same buyer. That, too, is a policy decision, not a legal
+one.
 
 You should also know the honest limit of what the law says here. The phrase "first substantive
 communication" is used by both § 1101.558(b-1) and 22 TAC § 531.20, and a definition of "substantive
-communication" was not held for this course; neither the statute nor the rule as held defines it. So
-this module will not invent a bright line. What it will tell you is the direction of prudence: the
-cost of delivering the notice earlier than strictly required is nothing, and the cost of delivering
-it later than required is disciplinary exposure. A disclosure policy that says "send it with the
-first reply that discusses anything beyond address and price" is not overcautious. It is cheap
-insurance.
+communication" was not held for this course; neither the statute nor the rule as held defines it, so
+this module will not invent a bright line. The direction of prudence is plain: delivering the notice
+early costs nothing, and delivering it late is disciplinary exposure.
 
-**The Consumer Protection Notice is a different animal.** Students conflate the IABS with the
-Consumer Protection Notice constantly, and the confusion is understandable because both are TREC
-forms adopted by rule and both must be linked from a homepage. They are otherwise unrelated, and
-keeping them apart is the single most useful thing this module teaches.
-
-The Consumer Protection Notice has a different statutory parent. Occupations Code § 1101.202(a)
-directs that the Commission by rule shall "prescribe a notice containing the name, mailing address,
-and telephone number of the commission for the purpose of directing a complaint to the commission"
-and shall "establish methods by which consumers and service recipients are provided the notice by a
-person regulated under this chapter or Chapter 1102." That is a complaint-routing provision sitting
-in the subchapter on commission complaints, not in Subchapter L on practice by license holders. Its
-purpose is to make sure a wronged consumer can find the regulator.
+**The Consumer Protection Notice is a different animal.** Students conflate it with the IABS
+constantly, because both are TREC forms adopted by rule and both must be linked from a homepage. It
+has a different statutory parent. Occupations Code § 1101.202(a) directs that the Commission by rule
+shall "prescribe a notice containing the name, mailing address, and telephone number of the
+commission for the purpose of directing a complaint to the commission", and shall establish the
+methods by which regulated persons provide it. That is complaint routing, and it sits in the
+subchapter on commission complaints rather than in Subchapter L on practice by license holders.
 
 The rule executing it is 22 TAC § 531.18, titled Consumer Information: "The Commission adopts by
 reference the Consumer Protection Notice, TREC No. CN 1-5." The text of TREC No. CN 1-5 was not held
 for this course, so this module teaches the rule that governs the notice rather than reciting the
-form. The rule then requires two things, and it requires them of **each license holder**, not merely
-of the broker. Each license holder shall provide the notice by "displaying it in a readily
-noticeable location in each place of business the broker maintains"; and by "providing a link to it
-in a readily noticeable place on the homepage of each business website, labeled:" either "Texas Real
-Estate Commission Consumer Protection Notice", "in at least 10 point font", or "TREC Consumer
-Protection Notice", "in at least 12 point font". The shorter label carries the larger font
-requirement, which is exactly the sort of detail an audit catches and an agent forgets. Note also
-where each duty bites: the display duty is measured by the places of business *the broker*
-maintains, while the link duty attaches to each business website of the license holder.
+form. It requires two things, and requires them of **each license holder**, not merely of the
+broker: providing the notice by "displaying it in a readily noticeable location in each place of
+business the broker maintains"; and by "providing a link to it in a readily noticeable place on the
+homepage of each business website, labeled:" either "Texas Real Estate Commission Consumer
+Protection Notice", "in at least 10 point font", or "TREC Consumer Protection Notice", "in at least
+12 point font". The shorter label carries the larger font requirement. Note where each duty bites:
+the display duty is measured by the places of business *the broker* maintains, while the link duty
+attaches to each business website of the license holder.
 
 *Business website* is defined in § 531.18 by three cumulative elements. The site must be "accessible
 to the public"; it must contain "information about a license holder's real estate brokerage
-services"; and "the content of the website is controlled by the license holder." All three. Control
-of content decides most close cases: a page you build and edit is yours; a listing display operated
-by somebody else is not obviously within your control, and the question is one of fact rather than
-of branding. Social media gets an express accommodation. For purposes of providing the required link
-on a social media platform, the rule says the link may be located on "the account holder profile" or
-on "a separate page or website through a direct link from the social media platform or account
-holder profile." That answers the perennial question about a business page with no homepage in the
-ordinary sense: you are not required to jam the notice into a caption.
+services"; and "the content of the website is controlled by the license holder." All three, and
+control of content decides most close cases. Social media gets an express accommodation: for
+purposes of providing the required link on a social media platform, the link may be located on "the
+account holder profile" or on "a separate page or website through a direct link from the social
+media platform or account holder profile."
 
 Now hold the two notices side by side. The IABS is *delivered to a party* at a specific moment in a
 specific relationship, and it explains agency. The Consumer Protection Notice is *displayed and
-linked* — posted in each place of business the broker maintains and linked from each business
-homepage — and it explains how to complain to TREC. Nothing in § 531.18 requires you to hand the
+linked*, and it explains how to complain to TREC. Nothing in § 531.18 requires you to hand the
 Consumer Protection Notice to a buyer at first substantive communication, and nothing in § 531.20
 requires you to hang the IABS on the office wall. An agent who thinks the framed notice by the
-reception desk discharges the IABS obligation has misunderstood both rules. A brokerage's written
-disclosure policy should say, in one sentence each, which notice is posted and which notice is
-delivered, and should not use the word "disclosure" loosely enough to blur them.
+reception desk discharges the IABS obligation has misunderstood both rules — which is why a written
+disclosure policy should say, in one sentence each, which notice is posted and which is delivered.
 
 ### Statute reading exercise: § 531.18 read against § 531.20
 
@@ -136,12 +115,9 @@ Open 22 TAC § 531.18 and read it in full. Have 22 TAC § 531.20 beside you for 
 
 ## Unit: Understanding a Brokerage Company's Policy
 
-You will sign with a brokerage. On the day you do, someone will hand you a policy manual — perhaps
-thirty pages, perhaps two hundred — and you will be tempted to skim it for the commission split and
-file the rest. A substantial part of that manual is not the firm's preference. It is the firm's
-discharge of duties the Act and the Commission's rules place on your broker, and several of those
-duties are owed *to you*. If the manual does not contain them, something is wrong, and you are the
-one who will find out the hard way.
+Someone will hand you a policy manual on the day you sign with a brokerage. Much of it is not the
+firm's preference: it is the firm's discharge of duties the Act and the Commission's rules place on
+your broker, and several are owed *to you*.
 
 Two facts about that manual belong to this topic. The first is that it must exist: 22 TAC § 535.2
 requires a broker who sponsors sales agents, or who is the designated broker for a business entity,
@@ -149,26 +125,14 @@ to "maintain, on a current basis, written policies and procedures" on the subjec
 Read the phrase "on a current basis" — a manual last revised in 2019 is not a current manual. The
 second is the rule's opening sentence, which is the one to know cold: "A broker is required to
 notify a sponsored sales agent in writing of the scope of the sales agent's authorized activities
-under the Act." That is a duty running from broker to agent, in writing, and it is the document you
-should ask for on day one if it is not handed to you. Everything else in § 535.2 — the extent of the
-broker's responsibility, delegation of supervision and the Commission notice it triggers, the eight
-subjects the written policies must cover, the response deadlines and the record-retention paragraph
-— is broker responsibility, and Module 09 teaches it in full.
+under the Act." That is a duty running from broker to agent, in writing; ask for that writing on day
+one if it is not handed to you. The rest of § 535.2 is broker responsibility, and Module 09 teaches
+it in full.
 
 So read your manual as a working document rather than as law. The law is taught in the modules that
 own it; what you are looking for in the manual is the answer to every question those rules leave
-open. Two examples show the pattern. Intermediary practice is governed by Occupations Code
-§§ 1101.559 through 1101.561, taught in Module 06, which require written consent from each party
-stating the source of any expected compensation and permit appointments only on stated conditions;
-none of that can be assembled after a buyer client asks to see the firm's own listing, so the
-manual must already say whether this firm appoints at all, who signs the written notice of
-appointment, and what the firm does when the sponsoring broker is personally the listing agent.
-Record retention is governed by § 535.2 and taught in Module 09; what the manual must add is that
-your IABS delivery email is a disclosure that also falls inside the record category § 535.2 calls
-"substantive communications with parties to the transaction" — and therefore where it goes, who
-moves it there, and whether the broker can retrieve
-it without you. If the answer is "it is in my sent folder on my personal phone," the brokerage
-cannot produce it when you leave.
+open — beginning with where your IABS delivery email is filed and whether the broker can retrieve it
+without you.
 
 **The day-one questions.** You should be able to answer each of the following from your own
 brokerage's written policy, and each is tied to an authority that makes it matter. What is the
@@ -189,13 +153,10 @@ writing to any compensation I receive — 22 TAC § 535.3. Who provides my coach
 times I perform a type of activity, as § 535.2 requires. Where do transaction records go, and for
 how long — § 535.2.
 
-A brokerage that cannot answer those questions from its manual has not written a policy; it has
-written a recruiting brochure. Finally, a caution about what is practice rather than law. The
-particular structure of a policy manual — its chapters, its acknowledgement page, its onboarding
-checklist, its rule that all offers route through a transaction coordinator — is a business decision,
-not a legal requirement, and no source read for this course prescribes one. What the law prescribes
-is the *content* pointed to above. Read your firm's manual for that content, and do not be reassured
-by length.
+A brokerage that cannot answer those questions from its manual has not written a policy. One caution
+about practice rather than law: the structure of a manual — its chapters, its acknowledgement page,
+its routing rules — is a business decision, and no source read for this course prescribes one. What
+the law prescribes is the *content* pointed to above.
 
 ### Applied exercise: the Saturday-night text in Katy
 
