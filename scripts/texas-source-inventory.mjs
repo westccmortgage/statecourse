@@ -105,10 +105,20 @@ const CONTROLLING = [
   { path: "texas/trec-sources/statutes/OC.1103.htm", why: "appraiser licensing — topic T03" },
   { path: "texas/trec-sources/statutes/PR.92.htm", why: "residential tenancies — topics T04 and T09" },
   { path: "texas/trec-sources/statutes/PR.301.htm", why: "Texas Fair Housing Act — topic T08" },
-  { path: "texas/trec-sources/statutes/BC.17.htm", why: "DTPA — topic T07" },
+  { path: "texas/trec-sources/statutes/BC.17.htm", why: "DTPA — Principles II topic T07, and the whole of Law of Agency topic T11" },
   { path: "texas/trec-sources/statutes/LG.211.htm", why: "municipal zoning — topic T05" },
   { path: "texas/trec-sources/statutes/CN.16.htm", why: "Texas Constitution art. XVI § 50, home equity lending — topic T02" },
   { path: "texas/trec-sources/federal/us42-3604.html", why: "Fair Housing Act prohibited practices — topic T08" },
+  /* Law of Agency (LOA-1). The form itself; the two rules the course cites most often after the
+     statute; the DTPA chapter that is a whole LOA-1 topic; and the two employment sources whose
+     scope the course is careful about. Each is relied on directly by
+     config/texas/law-of-agency-statute-sources.mjs, which recomputes every hash from disk. */
+  { path: "texas/trec-sources/LOA-1.pdf", why: "the Law of Agency course approval form itself, adopted by reference by 22 TAC § 535.64" },
+  { path: "texas/trec-sources/trec-rules/535.2.txt", why: "broker responsibility — the rule LOA-1 topic T09 owns and nine other modules cite" },
+  { path: "texas/trec-sources/trec-rules/531.20.txt", why: "adopts the IABS notice by reference — the controlling authority for LOA-1 unit T02U5, which the form itself is not" },
+  { path: "texas/trec-sources/forms/IABS-1-2.pdf", why: "the instrument 22 TAC § 531.20 adopts; held and identified, no taught proposition rests on it" },
+  { path: "texas/trec-sources/statutes/LA.201.htm", why: "Labor Code § 201.072 — unemployment compensation coverage only, LOA-1 topic T09" },
+  { path: "texas/trec-sources/federal/us26-3508.html", why: "26 U.S.C. § 3508 — federal tax treatment only, LOA-1 topic T09" },
 ];
 
 /** Registers whose named sources must all resolve into the inventory. Loaded defensively: a
@@ -118,6 +128,7 @@ const REGISTERS = [
   { id: "regulatory-manifest", module: "../config/texas/regulatory-manifest.mjs", pick: (m) => (m.SOURCES || []).filter((s) => s.localCopy && s.sha256).map((s) => ({ label: s.id, localCopy: s.localCopy, sha256: s.sha256, bytes: s.bytes })) },
   { id: "principles-ii-statute-sources", module: "../config/texas/principles-ii-statute-sources.mjs", pick: (m) => (m.ALL_SOURCES || []).filter((s) => s.localCopy && s.sha256).map((s) => ({ label: s.id || s.citation, localCopy: s.localCopy, sha256: s.sha256, bytes: s.bytes })) },
   { id: "principles-i-statute-sources", module: "../config/texas/statute-sources.mjs", pick: (m) => (m.ALL_SOURCES || []).filter((s) => s.localCopy && s.sha256).map((s) => ({ label: s.id || s.citation, localCopy: s.localCopy, sha256: s.sha256, bytes: s.bytes })) },
+  { id: "law-of-agency-statute-sources", module: "../config/texas/law-of-agency-statute-sources.mjs", pick: (m) => (m.ALL_SOURCES || []).filter((s) => s.localCopy && s.sha256).map((s) => ({ label: s.id || s.citation, localCopy: s.localCopy, sha256: s.sha256, bytes: s.bytes })) },
 ];
 
 async function validate() {

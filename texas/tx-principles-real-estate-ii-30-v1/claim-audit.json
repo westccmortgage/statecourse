@@ -141,6 +141,7 @@
   ],
   "quoteFindings": [
     {
+      "id": "6a7d856b291f",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -152,6 +153,7 @@
       "quote": "any estimate of the value of a dwelling developed in connection with a creditor's decision to provide credit, including those values developed pursuant to a policy of a government sponsored enterprise"
     },
     {
+      "id": "a59cef0208df",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -163,6 +165,7 @@
       "quote": "to use any empirically derived credit system which considers age if such system is demonstrably and statistically sound in accordance with regulations of the Bureau, except that in the operation of su"
     },
     {
+      "id": "ab15b0645f26",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -174,6 +177,7 @@
       "quote": "make an inquiry of marital status if such inquiry is for the purpose of ascertaining the creditor's rights and remedies applicable to the particular extension of credit and not to discriminate in a de"
     },
     {
+      "id": "d15c5b33075e",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -185,6 +189,7 @@
       "quote": "make an inquiry of the applicant's age or of whether the applicant's income derives from any public assistance program if such inquiry is for the purpose of determining the amount and probable continu"
     },
     {
+      "id": "95a84907122e",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -196,6 +201,7 @@
       "quote": "when the age of such applicant is to be used by the creditor in the extension of credit in favor of such applicant"
     },
     {
+      "id": "5137fd69f9d1",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -207,6 +213,7 @@
       "quote": "any credit assistance program expressly authorized by law for an economically disadvantaged class of persons,"
     },
     {
+      "id": "c1a6f2675d1f",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -218,6 +225,7 @@
       "quote": "special purpose credit program offered by a profit-making organization to meet special social needs,"
     },
     {
+      "id": "cafc7fc8d1b0",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -229,6 +237,7 @@
       "quote": "is required by or made pursuant to such program."
     },
     {
+      "id": "d0eef1ad5e69",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -240,6 +249,7 @@
       "quote": "within thirty days (or such longer reasonable time as specified in regulations of the Bureau for any class of credit transaction) after receipt of a completed application for credit, a creditor shall "
     },
     {
+      "id": "a44a48e0e46c",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -251,6 +261,7 @@
       "quote": "(i) the applicant's right to a statement of reasons within thirty days after receipt by the creditor of a request made within sixty days after such notification, and (ii) the identity of the person or"
     },
     {
+      "id": "125a5d80592b",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -262,6 +273,7 @@
       "quote": "A statement of reasons meets the requirements of this section only if it contains the specific reasons for the adverse action taken."
     },
     {
+      "id": "c76459819628",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -273,6 +285,7 @@
       "quote": "the term 'adverse action' means a denial or revocation of credit, a change in the terms of an existing credit arrangement, or a refusal to grant credit in substantially the amount or on substantially "
     },
     {
+      "id": "eb62bfc2eab4",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -284,6 +297,7 @@
       "quote": "shall furnish to an applicant a copy of any and all written appraisals and valuations developed in connection with the applicant's application for a loan that is secured or would have been secured by "
     },
     {
+      "id": "bf93821c10d3",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -295,6 +309,7 @@
       "quote": "the creditor shall provide a copy of each written appraisal or valuation at no additional cost to the applicant"
     },
     {
+      "id": "1d5c8e6f6e4b",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -306,6 +321,7 @@
       "quote": "the Secretary of Housing and Urban Development and the Administrator of Veterans' Affairs"
     },
     {
+      "id": "9f5d038f696d",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -319,6 +335,7 @@
       "quote": "deemed to refer to Secretary of Veterans Affairs"
     },
     {
+      "id": "424abeff1473",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -330,6 +347,7 @@
       "quote": "economic stabilization would be enhanced and the competition among the various financial institutions and other firms engaged in the extension of consumer credit would be strengthened by the informed "
     },
     {
+      "id": "9f943484aad1",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -342,6 +360,7 @@
       "quote": "those values developed pursuant to a policy of a government sponsored enterprise or by an automated valuation model"
     },
     {
+      "id": "fb7829f05a3c",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -353,6 +372,7 @@
       "quote": "more effective advance disclosure to home buyers and sellers of settlement costs,"
     },
     {
+      "id": "3a68b4b4d15b",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -364,6 +384,7 @@
       "quote": "the elimination of kickbacks or referral fees that tend to increase unnecessarily the costs of certain settlement services,"
     },
     {
+      "id": "1f32a7c4f072",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -375,6 +396,7 @@
       "quote": "a reduction in the amounts home buyers are required to place in escrow accounts established to insure the payment of real estate taxes and insurance,"
     },
     {
+      "id": "5925faa84a73",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -386,6 +408,7 @@
       "quote": "significant reform and modernization of local recordkeeping of land title information"
     },
     {
+      "id": "75a23d97c827",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -397,6 +420,7 @@
       "quote": "compare more readily the various credit terms available"
     },
     {
+      "id": "83fc622f7f6a",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -408,6 +432,7 @@
       "quote": "so as to enable the lessee to compare more readily the various lease terms available to him, limit balloon payments in consumer leasing, enable comparison of lease terms with credit terms where approp"
     },
     {
+      "id": "1757e00a9085",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -421,6 +446,7 @@
       "quote": "that significant reforms in the real estate settlement process are needed to insure that consumers throughout the Nation are provided with greater and more timely information on the nature and costs o"
     },
     {
+      "id": "2eac17c96e8b",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -432,6 +458,7 @@
       "quote": "a single, integrated disclosure for mortgage loan transactions (including real estate settlement cost statements)"
     },
     {
+      "id": "ad30499dcf85",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -443,6 +470,7 @@
       "quote": "that, taken together, may apply to a transaction that is subject to both or either provisions of law."
     },
     {
+      "id": "1ed23cc82802",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -454,6 +482,7 @@
       "quote": "shall be to facilitate compliance with the disclosure requirements of this chapter and the Truth in Lending Act, and to aid the borrower or lessee in understanding the transaction by utilizing readily"
     },
     {
+      "id": "00e3e30a8134",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -465,6 +494,7 @@
       "quote": "shall conspicuously and clearly itemize all charges imposed upon the borrower and all charges imposed upon the seller in connection with the settlement and shall indicate whether any title insurance p"
     },
     {
+      "id": "1892bb9a8b04",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -479,6 +509,7 @@
       "quote": "shall be completed and made available for inspection by the borrower at or before settlement by the person conducting the settlement,"
     },
     {
+      "id": "d447ab43af4b",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -490,6 +521,7 @@
       "quote": "upon the request of the borrower to inspect the forms . . . during the business day immediately preceding the day of settlement, the person who will conduct the settlement shall permit the borrower to"
     },
     {
+      "id": "4747f9f09833",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -502,6 +534,7 @@
       "quote": "(5) such other payments or classes of payments or other transfers as are specified in regulations prescribed by the Bureau."
     },
     {
+      "id": "2182bc313825",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -514,6 +547,7 @@
       "quote": "such person is not required to use any particular provider of settlement services"
     },
     {
+      "id": "95b50fd0eb2c",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -526,6 +560,7 @@
       "quote": "the only thing of value that is received from the arrangement, other than the payments permitted under this subsection, is a return on the ownership interest or franchise relationship"
     },
     {
+      "id": "599ecebcc5f0",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -539,6 +574,7 @@
       "quote": "Any person or persons who violate the provisions of this section shall be fined not more than $10,000 or imprisoned for not more than one year, or both"
     },
     {
+      "id": "5001570b8196",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -552,6 +588,7 @@
       "quote": "shall be jointly and severally liable to the person or persons charged for the settlement service involved in the violation in an amount equal to three times the amount of any charge paid for such set"
     },
     {
+      "id": "d17c62e449ae",
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -564,6 +601,7 @@
       "quote": "no provision of State law or regulation that imposes more stringent limitations on affiliated business arrangements shall be construed as being inconsistent with this section"
     },
     {
+      "id": "300793b75738",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -577,6 +615,7 @@
       "quote": "the executive secretary of the Veterans' Land Board or the executive secretary's designee"
     },
     {
+      "id": "aba711c58db9",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -589,6 +628,7 @@
       "quote": "eight members appointed by the governor with the advice and consent of the senate,"
     },
     {
+      "id": "5086d08310b6",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -601,6 +641,7 @@
       "quote": "certified or licensed appraisers actively engaged in the practice of appraising real property"
     },
     {
+      "id": "a3c75391a031",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -613,6 +654,7 @@
       "quote": "public members who qualify for appointment based on their recognized business ability."
     },
     {
+      "id": "3abc59e17308",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -624,6 +666,7 @@
       "quote": "the number and type of classroom hours … required by the Appraiser Qualifications Board"
     },
     {
+      "id": "a1f25812e0d3",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -635,6 +678,7 @@
       "quote": "the minimum number of hours of experience in performing appraisals over the specified number of calendar years as required by the Appraiser Qualifications Board."
     },
     {
+      "id": "3ff5de18ca15",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -646,6 +690,7 @@
       "quote": "must include the review of appraisal experience of all applicants for certification,"
     },
     {
+      "id": "c710666c2d34",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -658,6 +703,7 @@
       "quote": "An applicant for the examination must fulfill the applicable experience requirement for a certificate or license *before* taking the examination."
     },
     {
+      "id": "02ff7b0192fa",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -670,6 +716,7 @@
       "quote": "the minimum score required by the Appraiser Qualifications Board"
     },
     {
+      "id": "32c1581fccf7",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -682,6 +729,7 @@
       "quote": "all other qualifications established by the board."
     },
     {
+      "id": "e8a1d333cc1f",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -696,6 +744,7 @@
       "quote": "may obtain a new certificate or license by complying with the requirements and procedures for an original application."
     },
     {
+      "id": "d875aa0dcc34",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -710,6 +759,7 @@
       "quote": "may not perform any activity regulated under this chapter"
     },
     {
+      "id": "a30424cc933b",
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -721,6 +771,7 @@
       "quote": "in the ordinary course of the broker's business,"
     },
     {
+      "id": "106e3e4c465b",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -732,6 +783,7 @@
       "quote": "During the term of a lease, the tenant may not rent the leasehold to any other person without the prior consent of the landlord"
     },
     {
+      "id": "30d79a7707ac",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -743,6 +795,7 @@
       "quote": "fails to comply in any respect with the lease agreement"
     },
     {
+      "id": "e9bbbb08acd9",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -755,6 +808,7 @@
       "quote": "as a part of a transaction or as an entire transaction."
     },
     {
+      "id": "7d88847215bc",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -766,6 +820,7 @@
       "quote": "the tenant may not rent the leasehold to any other person without the prior consent of the landlord."
     },
     {
+      "id": "710ad418b79f",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -778,6 +833,7 @@
       "quote": "on or before the fifth day after receiving from the tenant a written demand for an explanation,"
     },
     {
+      "id": "4da50b9d8396",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -792,6 +848,7 @@
       "quote": "This subchapter applies to all residential leases."
     },
     {
+      "id": "5cd2a0611bd7",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -806,6 +863,7 @@
       "quote": "A security deposit is any advance of money, other than a rental application deposit or an advance payment of rent, that is intended primarily to secure performance under a lease of a dwelling that has"
     },
     {
+      "id": "3028c8ea0cb3",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -818,6 +876,7 @@
       "quote": "The tenant may not withhold payment of any portion of the last month's rent on grounds that the security deposit is security for unpaid rent"
     },
     {
+      "id": "c2f22610d0a9",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -829,6 +888,7 @@
       "quote": "three times the rent wrongfully withheld"
     },
     {
+      "id": "f9a1b5a9d501",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -840,6 +900,7 @@
       "quote": "the holder of record title, according to the deed records in the county clerk's office,"
     },
     {
+      "id": "620ffc985108",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -851,6 +912,7 @@
       "quote": "on or before the seventh day after the day the landlord receives the tenant's request for the information"
     },
     {
+      "id": "147f3ade76cd",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -863,6 +925,7 @@
       "quote": "granted to the tenant by lease, municipal ordinance, or federal or state statute"
     },
     {
+      "id": "d065d0392e38",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -874,6 +937,7 @@
       "quote": "establishes, attempts to establish, or participates in a tenant organization."
     },
     {
+      "id": "b727bf6658ee",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -885,6 +949,7 @@
       "quote": "**within six months after the date of the tenant's action**,"
     },
     {
+      "id": "4b4450c97bf9",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -896,6 +961,7 @@
       "quote": "depriving the tenant of the use of the premises, except for reasons authorized by law,"
     },
     {
+      "id": "892dcfd1094f",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -907,6 +973,7 @@
       "quote": "increasing the tenant's rent or terminating the tenant's lease,"
     },
     {
+      "id": "6ad95b8ce9ea",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -918,6 +985,7 @@
       "quote": "engaging, in bad faith, in a course of conduct that materially interferes with the tenant's rights under the tenant's lease."
     },
     {
+      "id": "19e655bfe9ca",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -932,6 +1000,7 @@
       "quote": "must approve a plat or replat that is required to be prepared under this subchapter and that satisfies the requirements of this subchapter."
     },
     {
+      "id": "ee4e2e9965c9",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -946,6 +1015,7 @@
       "quote": "within 30 days after the date the plat is filed,"
     },
     {
+      "id": "a9c6b6990210",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -960,6 +1030,7 @@
       "quote": "is approved by the municipal authority unless it is disapproved within that period and in accordance with Section 212.0091"
     },
     {
+      "id": "c4514702d1d6",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -971,6 +1042,7 @@
       "quote": "does not authorize the municipality to require municipal building permits or otherwise enforce the municipality's building code in its extraterritorial jurisdiction."
     },
     {
+      "id": "97b82b879ab6",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -982,6 +1054,7 @@
       "quote": "for the disclosure of lead-based paint hazards in target housing which is offered for sale or lease,"
     },
     {
+      "id": "ca2d915337e8",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -993,6 +1066,7 @@
       "quote": "disclose to the purchaser or lessee the presence of any known lead-based paint, or any known lead-based paint hazards, in such housing and provide to the purchaser or lessee any lead hazard evaluation"
     },
     {
+      "id": "5a9be204e8cb",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1004,6 +1078,7 @@
       "quote": "permit the purchaser a 10-day period (unless the parties mutually agree upon a different period of time) to conduct a risk assessment or inspection for the presence of lead-based paint hazards."
     },
     {
+      "id": "4ab559cb8d22",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1016,6 +1091,7 @@
       "quote": "provide to the purchaser or lessee any lead hazard evaluation report available to the seller or lessor"
     },
     {
+      "id": "15e1fdbfd918",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1028,6 +1104,7 @@
       "quote": "unless the parties mutually agree upon a different period of time,"
     },
     {
+      "id": "03dcf118d9fa",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1039,6 +1116,7 @@
       "quote": "shall provide that every contract for the purchase and sale of any interest in target housing shall contain a Lead Warning Statement and a statement signed by the purchaser"
     },
     {
+      "id": "d78cfba818f1",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1050,6 +1128,7 @@
       "quote": "read the Lead Warning Statement and understands its contents,"
     },
     {
+      "id": "97cf1d5b0a6f",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1061,6 +1140,7 @@
       "quote": "received a lead hazard information pamphlet,"
     },
     {
+      "id": "60554f38bd4b",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1072,6 +1152,7 @@
       "quote": "had a 10-day opportunity (unless the parties mutually agreed upon a different period of time) before becoming obligated under the contract to purchase the housing to conduct a risk assessment or inspe"
     },
     {
+      "id": "d79d6a6e5174",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1083,6 +1164,7 @@
       "quote": "printed in large type on a separate sheet of paper attached to the contract."
     },
     {
+      "id": "0b89bdbc79ba",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1094,6 +1176,7 @@
       "quote": "Every purchaser of any interest in residential real property on which a residential dwelling was built prior to 1978 is notified that such property may present exposure to lead from lead-based paint t"
     },
     {
+      "id": "4bc5a935c4be",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1105,6 +1188,7 @@
       "quote": "The seller of any interest in residential real property is required to provide the buyer with any information on lead-based paint hazards from risk assessments or inspections in the seller's possessio"
     },
     {
+      "id": "1fc826b191dc",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1116,6 +1200,7 @@
       "quote": "Whenever a seller or lessor has entered into a contract with an agent for the purpose of selling or leasing a unit of target housing, the regulations promulgated under this section shall require the a"
     },
     {
+      "id": "3072d570b043",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1127,6 +1212,7 @@
       "quote": "any person who knowingly violates any provision of this section"
     },
     {
+      "id": "f25bc7557c1c",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1138,6 +1224,7 @@
       "quote": "in accordance with the provisions of section 3545 of this title"
     },
     {
+      "id": "e6ca313475b3",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1149,6 +1236,7 @@
       "quote": "shall be jointly and severally liable to the purchaser or lessee in an amount equal to 3 times the amount of damages incurred by such individual,"
     },
     {
+      "id": "a25a187bcce1",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1160,6 +1248,7 @@
       "quote": "the penalty for each violation applicable under section 16 of that Act"
     },
     {
+      "id": "4592f9da6d4e",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1171,6 +1260,7 @@
       "quote": "(A) any building, structure, installation, equipment, pipe or pipeline (including any pipe into a sewer or publicly owned treatment works), well, pit, pond, lagoon, impoundment, ditch, landfill, stora"
     },
     {
+      "id": "a235e1e1223f",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1182,6 +1272,7 @@
       "quote": "any spilling, leaking, pumping, pouring, emitting, emptying, discharging, injecting, escaping, leaching, dumping, or disposing into the environment (including the abandonment or discarding of barrels,"
     },
     {
+      "id": "c71074bf4a2f",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1195,6 +1286,7 @@
       "quote": "does not include petroleum, including crude oil or any fraction thereof which is not otherwise specifically listed or designated as a hazardous substance under subparagraphs (A) through (F) of this pa"
     },
     {
+      "id": "0d1386a343c1",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1208,6 +1300,7 @@
       "quote": "otherwise specifically listed or designated as a hazardous substance under subparagraphs (A) through (F) of this paragraph"
     },
     {
+      "id": "fbb85e20ba2d",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1221,6 +1314,7 @@
       "quote": "for the purpose of section 9607(b)(3) of this title"
     },
     {
+      "id": "2982bb276fe2",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1232,6 +1326,7 @@
       "quote": "at the time the defendant acquired the facility the defendant did not know and had no reason to know that any hazardous substance which is the subject of the release or threatened release was disposed"
     },
     {
+      "id": "45d6a0144057",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1243,6 +1338,7 @@
       "quote": "on or before the date on which the defendant acquired the facility"
     },
     {
+      "id": "b5e5fceafcc0",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1254,6 +1350,7 @@
       "quote": "carried out all appropriate inquiries, as provided in clauses (ii) and (iv), into the previous ownership and uses of the facility in accordance with generally accepted good commercial and customary st"
     },
     {
+      "id": "bb235d3f0085",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1265,6 +1362,7 @@
       "quote": "such as chain of title documents, aerial photographs, building department records, and land use records"
     },
     {
+      "id": "11d4d8e455ad",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1276,6 +1374,7 @@
       "quote": "visual inspections of the facility and of adjoining properties"
     },
     {
+      "id": "62d8f5f99927",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1287,6 +1386,7 @@
       "quote": "the relationship of the purchase price to the value of the property, if the property was not contaminated"
     },
     {
+      "id": "fcfc1835926c",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1298,6 +1398,7 @@
       "quote": "including the document known as 'Standard E1527–97', entitled 'Standard Practice for Environmental Site Assessment: Phase 1 Environmental Site Assessment Process'"
     },
     {
+      "id": "dc1fff850bdf",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1309,6 +1410,7 @@
       "quote": "a facility inspection and title search that reveal no basis for further investigation"
     },
     {
+      "id": "a41f9229b0fc",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1320,6 +1422,7 @@
       "quote": "real property, the expansion, redevelopment, or reuse of which may be complicated by the presence or potential presence of a hazardous substance, pollutant, or contaminant,"
     },
     {
+      "id": "34d1df8bdc2d",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1331,6 +1434,7 @@
       "quote": "construed to be the standard of liability which obtains under section 311 of the Federal Water Pollution Control Act"
     },
     {
+      "id": "7e70b885aac6",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1342,6 +1446,7 @@
       "quote": "The purposes of this chapter are: To declare a national policy which will encourage productive and enjoyable harmony between man and his environment; to promote efforts which will prevent or eliminate"
     },
     {
+      "id": "61030fd9d5ef",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1353,6 +1458,7 @@
       "quote": "as a consequence of economic growth and development untempered by adequate concern and conservation,"
     },
     {
+      "id": "a1e36bdc87bb",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1364,6 +1470,7 @@
       "quote": "of esthetic, ecological, educational, historical, recreational, and scientific value to the Nation and its people,"
     },
     {
+      "id": "6914affa3a4c",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1375,6 +1482,7 @@
       "quote": "a key to meeting the Nation's international commitments and to better safeguarding, for the benefit of all citizens, the Nation's heritage in fish, wildlife, and plants."
     },
     {
+      "id": "bf37dbc48bb5",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1386,6 +1494,7 @@
       "quote": "to provide a means whereby the ecosystems upon which endangered species and threatened species depend may be conserved, to provide a program for the conservation of such endangered species and threate"
     },
     {
+      "id": "0f9b5566e189",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1397,6 +1506,7 @@
       "quote": "the policy of Congress that all Federal departments and agencies shall seek to conserve endangered species and threatened species and shall utilize their authorities in furtherance of the purposes of "
     },
     {
+      "id": "c8dabddf234e",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1408,6 +1518,7 @@
       "quote": "that Federal agencies shall cooperate with State and local agencies to resolve water resource issues in concert with conservation of endangered species."
     },
     {
+      "id": "5f36ab67c4d8",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1421,6 +1532,7 @@
       "quote": "to ensure compliance with the requirements of this section."
     },
     {
+      "id": "5f36ab67c4d8",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1435,6 +1547,7 @@
       "quote": "to ensure compliance with the requirements of this section."
     },
     {
+      "id": "7b104faa0711",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1446,6 +1559,7 @@
       "quote": "controls the acceptance or deposit of rent from a resident of a    single-family residential real property unit."
     },
     {
+      "id": "0ebe305c46de",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1457,6 +1571,7 @@
       "quote": "in exchange for a    commission or other valuable consideration or with the expectation of receiving a commission or    other valuable consideration."
     },
     {
+      "id": "1bfdc9cafdd5",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1469,6 +1584,7 @@
       "quote": "the scope of and limitations on the rulemaking authority of the commission"
     },
     {
+      "id": "94fe3221d021",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1481,6 +1597,7 @@
       "quote": "may implicate federal antitrust law by limiting competition or impacting prices."
     },
     {
+      "id": "0999e152b1dc",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1493,6 +1610,7 @@
       "quote": "for the purpose of directing a complaint to the commission,"
     },
     {
+      "id": "8a9080e5a1dd",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1505,6 +1623,7 @@
       "quote": "on the dismissal or final resolution of a complaint, investigation, or audit,"
     },
     {
+      "id": "ee83f629b86d",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1518,6 +1637,7 @@
       "quote": "(1) six members appointed by the commission; (2) six members of the State Bar of Texas appointed by the president of the state bar; and (3) one public member appointed by the governor."
     },
     {
+      "id": "8db294fd8081",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1530,6 +1650,7 @@
       "quote": "a corporate surety bond or other security acceptable to the commission"
     },
     {
+      "id": "581cf0331eac",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1541,6 +1662,7 @@
       "quote": "even if an order has granted community supervision suspending the imposition of the sentence."
     },
     {
+      "id": "c35cd9db29e9",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1552,6 +1674,7 @@
       "quote": "unless the entity's designated broker is a licensed individual broker in active status and good standing."
     },
     {
+      "id": "7e20912a81c0",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1565,6 +1688,7 @@
       "quote": "at least 12 semester hours, or equivalent classroom hours, of qualifying real estate courses required by commission rule."
     },
     {
+      "id": "c80ce5370f0c",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1579,6 +1703,7 @@
       "quote": "may not perform any activity regulated under this chapter"
     },
     {
+      "id": "339a4b11bbd0",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1593,6 +1718,7 @@
       "quote": "the law of eminent domain, including the rights of property owners,"
     },
     {
+      "id": "8396aa12d39a",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1607,6 +1733,7 @@
       "quote": "ethical considerations in the performance of right-of-way acquisition services."
     },
     {
+      "id": "fe7478f4fbfa",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1618,6 +1745,7 @@
       "quote": "arising out of a single transaction may not exceed a total of $125,000, regardless of the number of claimants,"
     },
     {
+      "id": "67cadf778279",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1629,6 +1757,7 @@
       "quote": "based on judgments against a single license or certificate holder may not exceed a total of $250,000"
     },
     {
+      "id": "17af5eb44fcb",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1640,6 +1769,7 @@
       "quote": "the court shall proportionately reduce the amount payable on each claim."
     },
     {
+      "id": "7c60294d9940",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1652,6 +1782,7 @@
       "quote": "shall deposit to the credit of the trust account an administrative penalty collected under Subchapter O."
     },
     {
+      "id": "76da8e22b63c",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1663,6 +1794,7 @@
       "quote": "that is dishonest or in bad faith or that demonstrates untrustworthiness"
     },
     {
+      "id": "7cec89bfa639",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1675,6 +1807,7 @@
       "quote": "fails to include the name of the broker for whom the license holder acts"
     },
     {
+      "id": "fb70d16c25bc",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1687,6 +1820,7 @@
       "quote": "an unjustified or unwarranted threat of a legal proceeding"
     },
     {
+      "id": "05633c1da29e",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1699,6 +1833,7 @@
       "quote": "another person to circumvent this chapter"
     },
     {
+      "id": "ebb30483d538",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1711,6 +1846,7 @@
       "quote": "against an owner, potential buyer, landlord, or potential tenant on the basis of race, color, religion, sex, disability, familial status, national origin, or ancestry, including directing a prospectiv"
     },
     {
+      "id": "d5cdc5a38a81",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1724,6 +1860,7 @@
       "quote": "to enter into a written agreement with a prospective buyer as required by Section 1101.563."
     },
     {
+      "id": "245adeda5e60",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1735,6 +1872,7 @@
       "quote": "The amount of an administrative penalty may not exceed $5,000 for each violation. Each day a violation continues or occurs may be considered a separate violation for purposes of imposing a penalty."
     },
     {
+      "id": "279c80d7667e",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1746,6 +1884,7 @@
       "quote": "the amount necessary to deter a future violation,"
     },
     {
+      "id": "8644324bef88",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1757,6 +1896,7 @@
       "quote": "any other matter that justice may require."
     },
     {
+      "id": "a20323adde1b",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1769,6 +1909,7 @@
       "quote": "is not liable for a misrepresentation or a concealment of a material fact made by a license holder"
     },
     {
+      "id": "114af12edccc",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1781,6 +1922,7 @@
       "quote": "is not liable for a misrepresentation or a concealment of a material fact made by a party"
     },
     {
+      "id": "0da172da3c3e",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1793,6 +1935,7 @@
       "quote": "prevails over any other law, including common law,"
     },
     {
+      "id": "82ed3408a063",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1804,6 +1947,7 @@
       "quote": "regardless of whether prepared for a federally related transaction,"
     },
     {
+      "id": "d7ec17d6edc9",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1815,6 +1959,7 @@
       "quote": "(A) an opinion of value; or (B) the act or process of developing an opinion of value."
     },
     {
+      "id": "55a6e5c5981c",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1826,6 +1971,7 @@
       "quote": "a person may not perform an appraisal of real estate unless the person is licensed or certified as an appraiser under this chapter, registered as a temporary out-of-state appraiser under this chapter,"
     },
     {
+      "id": "ef5d90c442f9",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1839,6 +1985,7 @@
       "quote": "at least 12 semester hours, or equivalent classroom hours, of qualifying real estate courses required by commission rule,"
     },
     {
+      "id": "581cf0331eac",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1853,6 +2000,7 @@
       "quote": "even if an order has granted community supervision suspending the imposition of the sentence."
     },
     {
+      "id": "e3a037b2c087",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1866,6 +2014,7 @@
       "quote": "a person who is sponsored by a licensed broker for the purpose of performing an act described by Subdivision (1)"
     },
     {
+      "id": "41c26806c9f5",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1877,6 +2026,7 @@
       "quote": "materially relates to the condition of the property."
     },
     {
+      "id": "8c358e28896e",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1888,6 +2038,7 @@
       "quote": "in conspicuous language that broker compensation is not set by law and is fully negotiable."
     },
     {
+      "id": "9af6dadb9fec",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1900,6 +2051,7 @@
       "quote": "may not: (1) be an exclusive agreement with the license holder; or (2) state a termination date more than fourteen days from the date the agreement is entered into."
     },
     {
+      "id": "d2b843551bfb",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1911,6 +2063,7 @@
       "quote": "a broker who associates with and is paid through another broker under a relationship that is intended to be a continuous relationship, including as an employee or an ongoing independent contractor."
     },
     {
+      "id": "9fc03e832366",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1922,6 +2075,7 @@
       "quote": "is not liable to another person for providing that information unless the disclosure of that information is specifically prohibited by statute."
     },
     {
+      "id": "3be17239da3d",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1936,6 +2090,7 @@
       "quote": "a death occurred on a property by natural causes, suicide, or accident unrelated to the condition of the property"
     },
     {
+      "id": "35b192f6e3ef",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1947,6 +2102,7 @@
       "quote": "Nothing in this subchapter shall apply to a claim against a person licensed as a broker or salesperson under Chapter 1101"
     },
     {
+      "id": "8f34533d57f9",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1958,6 +2114,7 @@
       "quote": "arising from an act or omission by the person while acting as a broker or salesperson."
     },
     {
+      "id": "a406b374154d",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1969,6 +2126,7 @@
       "quote": "(1) an express misrepresentation of a material fact that cannot be characterized as advice, judgment, or opinion"
     },
     {
+      "id": "0179f32be95e",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1980,6 +2138,7 @@
       "quote": "(3) an unconscionable action or course of action that cannot be characterized as advice, judgment, or opinion."
     },
     {
+      "id": "9c7a36be6446",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1994,6 +2153,7 @@
       "quote": "residential real estate-related transaction"
     },
     {
+      "id": "63621bc3b819",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2006,6 +2166,7 @@
       "quote": "It is the policy of the United States to provide, within constitutional limitations, for fair housing throughout the United States."
     },
     {
+      "id": "8d735f3e4ad9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2019,6 +2180,7 @@
       "quote": "may be cited as the 'Civil Rights Act of 1968'"
     },
     {
+      "id": "16b9559e6086",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2032,6 +2194,7 @@
       "quote": "inserted 'handicap, familial status,' after 'sex,'"
     },
     {
+      "id": "1b996109e456",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2044,6 +2207,7 @@
       "quote": "any building, structure, or portion thereof which is occupied as, or designed or intended for occupancy as, a residence by one or more families, and any vacant land which is offered for sale or lease "
     },
     {
+      "id": "3d375f7264b5",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2057,6 +2221,7 @@
       "quote": "includes one or more individuals, corporations, partnerships, associations, labor organizations, legal representatives, mutual companies, joint-stock companies, trusts, unincorporated organizations, t"
     },
     {
+      "id": "0a924c5b1687",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2070,6 +2235,7 @@
       "quote": "includes to lease, to sublease, to let and otherwise to grant for a consideration the right to occupy premises not owned by the occupant,"
     },
     {
+      "id": "de147b6700fa",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2082,6 +2248,7 @@
       "quote": "with respect to a person— (1) a physical or mental impairment which substantially limits one or more of such person's major life activities, (2) a record of having such an impairment, or (3) being reg"
     },
     {
+      "id": "2a0a823fee27",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2094,6 +2261,7 @@
       "quote": "such term does not include current, illegal use of or addiction to a controlled substance."
     },
     {
+      "id": "095364b545e0",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2106,6 +2274,7 @@
       "quote": "neither the term 'individual with handicaps' nor the term 'handicap' shall apply to an individual solely because that individual is a transvestite."
     },
     {
+      "id": "d68ec2164e2a",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2117,6 +2286,7 @@
       "quote": "includes any person who— (1) claims to have been injured by a discriminatory housing practice; or (2) believes that such person will be injured by a discriminatory housing practice that is about to oc"
     },
     {
+      "id": "cf4d504785c3",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2131,6 +2301,7 @@
       "quote": "an act that is unlawful under section 3604, 3605, 3606, or 3617 of this title"
     },
     {
+      "id": "e04530a13314",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2145,6 +2316,7 @@
       "quote": "as made applicable by section 3603 of this title and except as exempted by sections 3603(b) and 3607 of this title"
     },
     {
+      "id": "5ee87afec938",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2158,6 +2330,7 @@
       "quote": "Subject to the provisions of subsection (b) and section 3607 of this title"
     },
     {
+      "id": "7cdc813d3f77",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2171,6 +2344,7 @@
       "quote": "owned or operated by the Federal Government"
     },
     {
+      "id": "6bc46b3ad1f8",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2184,6 +2358,7 @@
       "quote": "loans, advances, grants, or contributions"
     },
     {
+      "id": "83be3bcabe0e",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2197,6 +2372,7 @@
       "quote": "provided in whole or in part by loans insured, guaranteed, or otherwise secured by the credit of the Federal Government"
     },
     {
+      "id": "d158795a1c5d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2210,6 +2386,7 @@
       "quote": "After December 31, 1968, to all dwellings covered by paragraph (1) and to all other dwellings except as exempted by subsection (b)."
     },
     {
+      "id": "b5f542fc68ad",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2223,6 +2400,7 @@
       "quote": "to refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, c"
     },
     {
+      "id": "f9a9119f165f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2234,6 +2412,7 @@
       "quote": "to discriminate against any person in the terms, conditions, or privileges of sale or rental of a dwelling, or in the provision of services or facilities in connection therewith,"
     },
     {
+      "id": "a90a77863bae",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2245,6 +2424,7 @@
       "quote": "to make, print, or publish, or cause to be made, printed, or published any notice, statement, or advertisement, with respect to the sale or rental of a dwelling that indicates any preference, limitati"
     },
     {
+      "id": "d7a44f31a1c6",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2256,6 +2436,7 @@
       "quote": "any notice, statement, or advertisement,"
     },
     {
+      "id": "31bc242e9f13",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2267,6 +2448,7 @@
       "quote": "to represent to any person because of race, color, religion, sex, handicap, familial status, or national origin that any dwelling is not available for inspection, sale, or rental when such dwelling is"
     },
     {
+      "id": "641dca83c7a0",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2278,6 +2460,7 @@
       "quote": "for profit, to induce or attempt to induce any person to sell or rent any dwelling by representations regarding the entry or prospective entry into the neighborhood of a person or persons of a particu"
     },
     {
+      "id": "ed744b57e234",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2289,6 +2472,7 @@
       "quote": "to discriminate in the sale or rental, or to otherwise make unavailable or deny, a dwelling to any buyer or renter because of a handicap of— (A) that buyer or renter,"
     },
     {
+      "id": "51fb1278f2b2",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2300,6 +2484,7 @@
       "quote": "(B) a person residing in or intending to reside in that dwelling after it is so sold, rented, or made available; or (C) any person associated with that buyer or renter."
     },
     {
+      "id": "ae43426b3334",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2311,6 +2496,7 @@
       "quote": "the terms, conditions, or privileges of sale or rental"
     },
     {
+      "id": "1d1b3d155ca7",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2322,6 +2508,7 @@
       "quote": "the provision of services or facilities,"
     },
     {
+      "id": "6cfc4eb2b860",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2333,6 +2520,7 @@
       "quote": "one or more individuals (who have not attained the age of 18 years) being domiciled with— (1) a parent or another person having legal custody of such individual or individuals; or (2) the designee of "
     },
     {
+      "id": "41ba01daccab",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2344,6 +2532,7 @@
       "quote": "The protections afforded against discrimination on the basis of familial status shall apply to any person who is pregnant or is in the process of securing legal custody of any individual who has not a"
     },
     {
+      "id": "8a4f44394939",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2355,6 +2544,7 @@
       "quote": "limits the applicability of any reasonable local, State, or Federal restrictions regarding the maximum number of occupants permitted to occupy a dwelling,"
     },
     {
+      "id": "dac134d2859d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2366,6 +2556,7 @@
       "quote": "nor does any provision in this subchapter regarding familial status apply with respect to housing for older persons."
     },
     {
+      "id": "7e1bdda428c9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2379,6 +2570,7 @@
       "quote": "provided under any State or Federal program that the Secretary   determines is specifically designed and operated to assist elderly persons (as defined in the State   or Federal program)."
     },
     {
+      "id": "d83e1de035c2",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2391,6 +2583,7 @@
       "quote": "intended for, and solely occupied by, persons 62 years of age or   older"
     },
     {
+      "id": "4cb910097697",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2403,6 +2596,7 @@
       "quote": "intended and operated for occupancy by   persons 55 years of age or   older,"
     },
     {
+      "id": "093165e81928",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2415,6 +2609,7 @@
       "quote": "(i) at least 80 percent of the occupied units are   occupied by at least one person who is 55 years of age or older"
     },
     {
+      "id": "f5aecbe08bb9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2427,6 +2622,7 @@
       "quote": "(ii) the housing facility or   community publishes and adheres to policies and procedures that demonstrate the intent required   under this subparagraph"
     },
     {
+      "id": "68b10bbd6c2f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2439,6 +2635,7 @@
       "quote": "(iii) the housing facility or community complies with rules issued by   the Secretary for verification of occupancy,"
     },
     {
+      "id": "58a95498f1d9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2451,6 +2648,7 @@
       "quote": "provide for verification by reliable   surveys and affidavits"
     },
     {
+      "id": "c6bee83572a6",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2463,6 +2661,7 @@
       "quote": "include examples of the types of policies and procedures relevant to a   determination of compliance,"
     },
     {
+      "id": "465af97d3a31",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2475,6 +2674,7 @@
       "quote": "admissible in administrative and   judicial proceedings for the purposes of such verification."
     },
     {
+      "id": "c84b190a419d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2486,6 +2686,7 @@
       "quote": "shall not fail to meet the requirements for housing for older persons"
     },
     {
+      "id": "0f25d01f6eec",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2497,6 +2698,7 @@
       "quote": "new occupants of such housing meet the age requirements"
     },
     {
+      "id": "f2ab8bd0ace2",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2508,6 +2710,7 @@
       "quote": "reserved for occupancy by persons who meet the age requirements"
     },
     {
+      "id": "20da863f36b6",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2519,6 +2722,7 @@
       "quote": "a person shall not be held personally liable for monetary damages for a violation of this subchapter if such person reasonably relied, in good faith, on the application of the exemption under this sub"
     },
     {
+      "id": "8267aab1ecce",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2530,6 +2734,7 @@
       "quote": "a person may only show good faith reliance… by showing that— (i) such person has no actual knowledge that the facility or community is not, or will not be, eligible for such exemption; and (ii) the fa"
     },
     {
+      "id": "a2d1f67bd69f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2541,6 +2746,7 @@
       "quote": "Nothing in this subchapter prohibits conduct against a person because such person has been convicted by any court of competent jurisdiction of the illegal manufacture or distribution of a controlled s"
     },
     {
+      "id": "dd53338e3169",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2553,6 +2759,7 @@
       "quote": "**Nothing in section 3604 of this title (other than subsection (c)) shall apply to**—"
     },
     {
+      "id": "25fce0d1e9dd",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2564,6 +2771,7 @@
       "quote": "any single-family house sold or rented by an owner,"
     },
     {
+      "id": "22960901dca6",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2576,6 +2784,7 @@
       "quote": "such   private individual owner does not own more than three such single-family houses at any one time"
     },
     {
+      "id": "73d88d864250",
       "module": "module-08",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2587,6 +2796,7 @@
       "quote": "such bona fide private individual owner does   not own any interest in, nor is there owned or reserved on his behalf, under any express or voluntary   agreement, title to or any right to all or a port"
     },
     {
+      "id": "e1ac7f76af26",
       "module": "module-08",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2598,6 +2808,7 @@
       "quote": "In the case of the sale of any such   single-family house by a private individual owner not residing in such house at the time of such sale   or who was not the most recent resident of such house prio"
     },
     {
+      "id": "a2630baf6fe9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2610,6 +2821,7 @@
       "quote": "rooms or units in dwellings containing living quarters occupied or intended to be occupied by no more than four families living independently of each other, if the owner actually maintains and occupie"
     },
     {
+      "id": "a6546d152534",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2621,6 +2833,7 @@
       "quote": "in the business of selling or renting dwellings."
     },
     {
+      "id": "ee92e47d8f00",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2632,6 +2845,7 @@
       "quote": "any person in the business of selling or renting dwellings,"
     },
     {
+      "id": "f5545f1925b4",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2643,6 +2857,7 @@
       "quote": "(1) he has, within the preceding twelve months, participated as principal in three or more transactions involving the sale or rental of any dwelling or any interest therein"
     },
     {
+      "id": "58ecb690a3e9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2654,6 +2869,7 @@
       "quote": "(2) he has, within the preceding twelve months, participated as agent, other than in the sale of his own personal residence in providing sales or rental facilities or sales or rental services in two o"
     },
     {
+      "id": "f928f151ea43",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2666,6 +2882,7 @@
       "quote": "(3) he is the owner of any dwelling designed or intended for occupancy by, or occupied by, five or more families."
     },
     {
+      "id": "e9db1cf023cc",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2680,6 +2897,7 @@
       "quote": "a religious organization, association, or society, or any nonprofit institution or organization operated, supervised or controlled by or in conjunction with a religious organization, association, or s"
     },
     {
+      "id": "d5adf3fd38b7",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2692,6 +2910,7 @@
       "quote": "restricted on account of race, color, or national origin"
     },
     {
+      "id": "e5a90f3b56c9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2704,6 +2923,7 @@
       "quote": "a private club not in fact open to the public, which as an incident to its primary purpose or purposes provides lodgings which it owns or operates for other than a commercial purpose, from limiting th"
     },
     {
+      "id": "a418d24e0617",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2718,6 +2938,7 @@
       "quote": "Nothing in section 3604 of this title (other than subsection (c)) shall    apply to"
     },
     {
+      "id": "6d4356ecf0a6",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2732,6 +2953,7 @@
       "quote": "nothing in this subchapter prohibits conduct against a person because such person has been convicted by any court of competent jurisdiction of the illegal manufacture or distribution of a controlled s"
     },
     {
+      "id": "9c7a36be6446",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2746,6 +2968,7 @@
       "quote": "residential real estate-related transaction"
     },
     {
+      "id": "20d9e9e2a7d8",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2760,6 +2983,7 @@
       "quote": "After December 31, 1968, it shall be unlawful to deny any person access to or membership or participation in any multiple-listing service, real estate brokers' organization or other service, organizat"
     },
     {
+      "id": "e23a64342216",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2773,6 +2997,7 @@
       "quote": "substantially equivalent to those created by and under this subchapter."
     },
     {
+      "id": "dd68b731e1c3",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2785,6 +3010,7 @@
       "quote": "Administrative enforcement; preliminary matters,"
     },
     {
+      "id": "75943c6e305f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2799,6 +3025,7 @@
       "quote": "An aggrieved person may, not later than one year after an alleged discriminatory housing practice has occurred or terminated, file a complaint with the Secretary alleging such discriminatory housing p"
     },
     {
+      "id": "836b7984e071",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2813,6 +3040,7 @@
       "quote": "may also investigate housing practices to determine whether a complaint should be brought."
     },
     {
+      "id": "5ebbc6e6403f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2827,6 +3055,7 @@
       "quote": "shall be in writing and shall contain such information and be in such form as the Secretary requires"
     },
     {
+      "id": "662bb98349e2",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2841,6 +3070,7 @@
       "quote": "complaints and answers shall be under oath or affirmation, and may be reasonably and fairly amended at any time."
     },
     {
+      "id": "9541043adaaa",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2855,6 +3085,7 @@
       "quote": "acknowledging such filing and advising the aggrieved person of the time limits and choice of forums provided under this subchapter"
     },
     {
+      "id": "290e04a3c5e3",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2869,6 +3100,7 @@
       "quote": "not later than 10 days after such filing"
     },
     {
+      "id": "f2344816cf5c",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2882,6 +3114,7 @@
       "quote": "may file, not later than 10 days after receipt of notice,"
     },
     {
+      "id": "8613dd0ad48c",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2895,6 +3128,7 @@
       "quote": "complete such investigation within 100 days after the filing of the complaint… unless it is impracticable to do so,"
     },
     {
+      "id": "b541a661e6b5",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2909,6 +3143,7 @@
       "quote": "During the period beginning with the filing of such complaint and ending with the filing of a charge or a dismissal by the Secretary, the Secretary shall, to the extent feasible, engage in conciliatio"
     },
     {
+      "id": "3988a38d0773",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2921,6 +3156,7 @@
       "quote": "shall be an agreement between the respondent and the complainant, and shall be subject to approval by the Secretary"
     },
     {
+      "id": "8c1d83df8c3f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2933,6 +3169,7 @@
       "quote": "may provide for binding arbitration of the dispute,"
     },
     {
+      "id": "8132e610c1a3",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2945,6 +3182,7 @@
       "quote": "may award appropriate relief, including monetary relief"
     },
     {
+      "id": "364777bce432",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2957,6 +3195,7 @@
       "quote": "each conciliation agreement shall be made public unless the complainant and respondent otherwise agree and the Secretary determines that disclosure is not required to further the purposes of this subc"
     },
     {
+      "id": "11cca21d3c07",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2969,6 +3208,7 @@
       "quote": "nothing said or done in the course of conciliation under this subchapter may be made public or used as evidence in a subsequent proceeding under this subchapter without the written consent of the pers"
     },
     {
+      "id": "208effbfb979",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2982,6 +3222,7 @@
       "quote": "within the jurisdiction of a State or local public agency"
     },
     {
+      "id": "e45094fb112f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2995,6 +3236,7 @@
       "quote": "has been certified by the Secretary under this subsection,"
     },
     {
+      "id": "095e72cdda3a",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3008,6 +3250,7 @@
       "quote": "shall refer such complaint to that certified agency before taking any action with respect to such complaint."
     },
     {
+      "id": "99fccd8f0f31",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3022,6 +3265,7 @@
       "quote": "within 100 days after the filing of the complaint,"
     },
     {
+      "id": "4a650c784c4d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3036,6 +3280,7 @@
       "quote": "based on the final investigative report,"
     },
     {
+      "id": "0486ee166353",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3050,6 +3295,7 @@
       "quote": "need not be limited to the facts or grounds alleged in the complaint"
     },
     {
+      "id": "ddb78e8996d4",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3064,6 +3310,7 @@
       "quote": "involves the legality of any State or local zoning or other land use law or ordinance,"
     },
     {
+      "id": "8d7d6f208912",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3078,6 +3325,7 @@
       "quote": "shall make public disclosure of each such dismissal"
     },
     {
+      "id": "b8fba96c2267",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3092,6 +3340,7 @@
       "quote": "after the beginning of the trial of a civil action commenced by the aggrieved party under an Act of Congress or a State law, seeking relief with respect to that discriminatory housing practice."
     },
     {
+      "id": "037c350fa18c",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3106,6 +3355,7 @@
       "quote": "together with information as to how to make an election under section 3612(a) of this title and the effect of such an election,"
     },
     {
+      "id": "289407c62f34",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3117,6 +3367,7 @@
       "quote": "It shall be unlawful for any person or other entity whose business includes engaging in residential real estate-related transactions to discriminate against any person in making available such a trans"
     },
     {
+      "id": "2f1a7f3e00b9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3129,6 +3380,7 @@
       "quote": "(1) the making or purchasing of loans or providing other financial assistance— (A) for purchasing, constructing, improving, repairing, or maintaining a dwelling; or (B) secured by residential real est"
     },
     {
+      "id": "20d9e9e2a7d8",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3141,6 +3393,7 @@
       "quote": "After December 31, 1968, it shall be unlawful to deny any person access to or membership or participation in any multiple-listing service, real estate brokers' organization or other service, organizat"
     },
     {
+      "id": "869f73c02933",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3155,6 +3408,7 @@
       "quote": "access to or membership or participation in"
     },
     {
+      "id": "798dc7eec5de",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3169,6 +3423,7 @@
       "quote": "in the terms or conditions of such access, membership, or participation."
     },
     {
+      "id": "8044730c8f02",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3183,6 +3438,7 @@
       "quote": "section 3604 of this title (other than subsection (c))"
     },
     {
+      "id": "5e0548c2b42a",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3197,6 +3453,7 @@
       "quote": "It shall be unlawful to coerce, intimidate, threaten, or interfere with any person in the exercise or enjoyment of, or on account of his having exercised or enjoyed, or on account of his having aided "
     },
     {
+      "id": "a7ab8732c89d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3210,6 +3467,7 @@
       "quote": "aided or encouraged any other person in the exercise or enjoyment of"
     },
     {
+      "id": "9c9892ebe3ad",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3221,6 +3479,7 @@
       "quote": "It shall be unlawful for any creditor to discriminate against any applicant, with respect to any aspect of a credit transaction— (1) on the basis of race, color, religion, national origin, sex or mari"
     },
     {
+      "id": "5e953039aca7",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3235,6 +3494,7 @@
       "quote": "(1) to make an inquiry of marital status if such inquiry is for the purpose of ascertaining the creditor's rights and remedies applicable to the particular extension of credit and not to discriminate "
     },
     {
+      "id": "a21d473082eb",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3247,6 +3507,7 @@
       "quote": "(2) to make an inquiry of the applicant's age or of whether the applicant's income derives from any public assistance program if such inquiry is for the purpose of determining the amount and probable "
     },
     {
+      "id": "5046c832d2c3",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3259,6 +3520,7 @@
       "quote": "(3) to use any empirically derived credit system which considers age if such system is demonstrably and statistically sound in accordance with regulations of the Bureau, except that in the operation o"
     },
     {
+      "id": "a1adbe11168a",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3271,6 +3533,7 @@
       "quote": "is to be used by the creditor in the extension of credit in favor of such applicant,"
     },
     {
+      "id": "fe42db84ef15",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3285,6 +3548,7 @@
       "quote": "not to discriminate in a determination of credit-worthiness."
     },
     {
+      "id": "7af4da7f92a2",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3298,6 +3562,7 @@
       "quote": "the amount and probable continuance of income levels."
     },
     {
+      "id": "d5e3045f4b09",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3311,6 +3576,7 @@
       "quote": "if such refusal is required by or made pursuant to such program"
     },
     {
+      "id": "60c1923e9373",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3322,6 +3588,7 @@
       "quote": "Within thirty days (or such longer reasonable time as specified in regulations of the Bureau for any class of credit transaction) after receipt of a **completed** application for credit, a creditor sh"
     },
     {
+      "id": "99f98b4fe468",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3333,6 +3600,7 @@
       "quote": "(i) the applicant's right to a statement of reasons within thirty days after receipt by the creditor of a request made within sixty days after such notification, and (ii) the identity of the person or"
     },
     {
+      "id": "210aa8d203ed",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3344,6 +3612,7 @@
       "quote": "only if it contains the **specific reasons** for the adverse action taken"
     },
     {
+      "id": "6014b9faa323",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3355,6 +3624,7 @@
       "quote": "a copy of any and all written appraisals and valuations developed in connection with the applicant's application for a loan that is secured or would have been secured by a first lien on a dwelling pro"
     },
     {
+      "id": "10a07937acc8",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3367,6 +3637,7 @@
       "quote": "an automated valuation model, a broker price opinion, or other methodology or mechanism."
     },
     {
+      "id": "016cbff2468e",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3380,6 +3651,7 @@
       "quote": "applicable for the purposes of this subchapter,"
     },
     {
+      "id": "d57447c90bc0",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3393,6 +3665,7 @@
       "quote": "any person who applies to a creditor directly for an extension, renewal, or continuation of credit, or applies to a creditor indirectly by use of an existing credit plan for an amount exceeding a prev"
     },
     {
+      "id": "15a3807a8ae5",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3406,6 +3679,7 @@
       "quote": "any person who regularly extends, renews, or continues credit; any person who regularly arranges for the extension, renewal, or continuation of credit; or any assignee of an original creditor who part"
     },
     {
+      "id": "8bffafe41dcb",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3419,6 +3693,7 @@
       "quote": "a natural person, a corporation, government or governmental subdivision or agency, trust, estate, partnership, cooperative, or association"
     },
     {
+      "id": "7cf9e7f29413",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3432,6 +3707,7 @@
       "quote": "the right granted by a creditor to a debtor to defer payment of debt or to incur debts and defer its payment or to purchase property or services and defer payment therefor"
     },
     {
+      "id": "46a1f7fb31f8",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3446,6 +3722,7 @@
       "quote": "any reference to any requirement imposed under this subchapter or any provision thereof includes reference to the regulations of the Bureau under this subchapter or the provision thereof in question."
     },
     {
+      "id": "d840faa1d126",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3459,6 +3736,7 @@
       "quote": "the Federal Trade Commission shall be authorized to enforce such requirements,"
     },
     {
+      "id": "f4dab556b0cf",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3472,6 +3750,7 @@
       "quote": "irrespective of whether that person is engaged in commerce or meets any other jurisdictional tests."
     },
     {
+      "id": "593719c6e3c1",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3485,6 +3764,7 @@
       "quote": "a violation of a requirement imposed under"
     },
     {
+      "id": "289407c62f34",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3496,6 +3776,7 @@
       "quote": "It shall be unlawful for any person or other entity whose business includes engaging in residential real estate-related transactions to discriminate against any person in making available such a trans"
     },
     {
+      "id": "54b5cf159bfb",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3509,6 +3790,7 @@
       "quote": "any person or other entity **whose business includes** engaging in residential real estate-related transactions"
     },
     {
+      "id": "9c7a36be6446",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3521,6 +3803,7 @@
       "quote": "residential real estate-related transaction"
     },
     {
+      "id": "670fa733bbc7",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3532,6 +3815,7 @@
       "quote": "As used in this section, the term 'residential real estate-related transaction' means any of the following: (1) The making or purchasing of loans or providing other financial assistance— (A) for purch"
     },
     {
+      "id": "4d6ef9daed94",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3545,6 +3829,7 @@
       "quote": "Nothing in this subchapter prohibits a person engaged in the business of furnishing appraisals of real property to take into consideration factors other than race, color, religion, national origin, se"
     },
     {
+      "id": "5b4abc4bbdce",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3556,6 +3841,7 @@
       "quote": "may be cited as the 'Community Reinvestment Act of 1977'"
     },
     {
+      "id": "0d8737ae2b0f",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3567,6 +3853,7 @@
       "quote": "(1) regulated financial institutions are required by law to demonstrate that their deposit facilities serve the convenience and needs of the communities in which they are chartered to do business; (2)"
     },
     {
+      "id": "4e5432758696",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3578,6 +3865,7 @@
       "quote": "It is the purpose of this chapter to require each appropriate Federal financial supervisory agency to use its authority when examining financial institutions, to encourage such institutions to help me"
     },
     {
+      "id": "e35f0e1b5909",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3589,6 +3877,7 @@
       "quote": "each appropriate Federal financial supervisory agency."
     },
     {
+      "id": "fae92d1bdcf9",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3600,6 +3889,7 @@
       "quote": "use its authority **when examining** financial institutions."
     },
     {
+      "id": "8c581689827b",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3614,6 +3904,7 @@
       "quote": "appropriate Federal financial supervisory agency"
     },
     {
+      "id": "c9ba9d841835",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3628,6 +3919,7 @@
       "quote": "the term **'regulated financial institution'** means an insured depository institution"
     },
     {
+      "id": "5d97304ed952",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3642,6 +3934,7 @@
       "quote": "the relocation of the home office or a branch office"
     },
     {
+      "id": "adbbc5a1fe3b",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3656,6 +3949,7 @@
       "quote": "predominately consists of serving the needs of military personnel who are not located within a defined geographic area may define its 'entire community' to include its entire deposit customer base wit"
     },
     {
+      "id": "837d63bad544",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3668,6 +3962,7 @@
       "quote": "In connection with its examination of a financial institution, the appropriate Federal financial supervisory agency shall— (1) assess the institution's record of meeting the credit needs of its entire"
     },
     {
+      "id": "87c1121392b4",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3682,6 +3977,7 @@
       "quote": "Each appropriate Federal financial supervisory agency shall include in its annual report to the Congress a section outlining the actions it has taken to carry out its responsibilities under this chapt"
     },
     {
+      "id": "6f6c9b161ec8",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3696,6 +3992,7 @@
       "quote": "shall be published by each appropriate Federal financial supervisory agency,"
     },
     {
+      "id": "5701ae33b734",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3710,6 +4007,7 @@
       "quote": "shall take effect no later than 390 days after October 12, 1977."
     },
     {
+      "id": "6c7a77043037",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3722,6 +4020,7 @@
       "quote": "upon the conclusion of each examination of an insured depository institution under section 2903 of this title"
     },
     {
+      "id": "6267386c4794",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3734,6 +4033,7 @@
       "quote": "the appropriate Federal financial supervisory agency shall prepare a written evaluation of the institution's record of meeting the credit needs of its entire community, including low- and moderate-inc"
     },
     {
+      "id": "5fec09649c3e",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3746,6 +4046,7 @@
       "quote": "Each written evaluation required under paragraph (1) shall have a **public section and a confidential section**."
     },
     {
+      "id": "c830ab9fe6ea",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3757,6 +4058,7 @@
       "quote": "(i) state the appropriate Federal financial supervisory agency's conclusions for each assessment factor identified in the regulations prescribed by the Federal financial supervisory agencies to implem"
     },
     {
+      "id": "2b6e9084fa20",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3768,6 +4070,7 @@
       "quote": "shall be presented separately for each metropolitan area in which a regulated depository institution maintains one or more domestic branch offices."
     },
     {
+      "id": "2d09f50cfa48",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3779,6 +4082,7 @@
       "quote": "Outstanding record of meeting community credit needs"
     },
     {
+      "id": "c78bdfbec717",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3790,6 +4094,7 @@
       "quote": "Satisfactory record of meeting community credit needs"
     },
     {
+      "id": "aee1f58d4d4e",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3801,6 +4106,7 @@
       "quote": "Needs to improve record of meeting community credit needs"
     },
     {
+      "id": "84cb25f1cdc4",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3812,6 +4118,7 @@
       "quote": "Substantial noncompliance in meeting community credit needs"
     },
     {
+      "id": "9d03e83ed303",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3824,6 +4131,7 @@
       "quote": "Such ratings shall be disclosed to the public on and after July 1, 1990."
     },
     {
+      "id": "21f550f79375",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3836,6 +4144,7 @@
       "quote": "shall contain all references that identify any customer of the institution, any employee or officer of the institution, or any person or organization that has provided information in confidence to a F"
     },
     {
+      "id": "1b2fa16a06c5",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3847,6 +4156,7 @@
       "quote": "any statements obtained or made by the appropriate Federal financial supervisory agency in the course of an examination which, in the judgment of the agency, are too sensitive or speculative in nature"
     },
     {
+      "id": "55184d8aab8b",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3858,6 +4168,7 @@
       "quote": "will promote the objectives of this chapter,"
     },
     {
+      "id": "2b39c5f3e113",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3869,6 +4180,7 @@
       "quote": "for each State in which the institution maintains 1 or more domestic branches, a separate written evaluation"
     },
     {
+      "id": "1bf6ac84e9f0",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3880,6 +4192,7 @@
       "quote": "describe how the Federal financial supervisory agency has performed the examination of the institution, including a list of the individual branches examined."
     },
     {
+      "id": "8015ea2fa457",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3891,6 +4204,7 @@
       "quote": "any branch office or other facility of a regulated financial institution that accepts deposits, located in any State,"
     },
     {
+      "id": "6b3b07270f59",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3904,6 +4218,7 @@
       "quote": "the local communities in which they are chartered."
     },
     {
+      "id": "f1594625734d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3917,6 +4232,7 @@
       "quote": "its entire community, **including low- and moderate-income neighborhoods**,"
     },
     {
+      "id": "01c281ec77b1",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3930,6 +4246,7 @@
       "quote": "the extent to which adequate services are being provided as intended by the Community Reinvestment Act of 1977"
     },
     {
+      "id": "a6bee7d50e66",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3943,6 +4260,7 @@
       "quote": "services in low- and moderate-income neighborhoods and for persons of modest means"
     },
     {
+      "id": "3138b9b95d1d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3956,6 +4274,7 @@
       "quote": "comparing residential, small business, and commercial lending by insured depository institutions in **low-income, minority, and distressed neighborhoods** to such lending in other neighborhoods."
     },
     {
+      "id": "844ada5c5d34",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3968,6 +4287,7 @@
       "quote": "shall be disclosed to the public on and after July 1, 1990."
     },
     {
+      "id": "02f03095a826",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3982,6 +4302,7 @@
       "quote": "whose business includes engaging in residential real estate-related transactions"
     },
     {
+      "id": "a9574413eb8e",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -3996,6 +4317,7 @@
       "quote": "any multiple-listing service, real estate brokers' organization or other service, organization, or facility relating to the business of selling or renting dwellings,"
     },
     {
+      "id": "030526e1e4a3",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4010,6 +4332,7 @@
       "quote": "coerce, intimidate, threaten, or interfere with"
     },
     {
+      "id": "241ae6f8208d",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4024,6 +4347,7 @@
       "quote": "its entire community, including low- and moderate-income neighborhoods"
     },
     {
+      "id": "2d09f50cfa48",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4038,6 +4362,7 @@
       "quote": "Outstanding record of meeting community credit needs"
     },
     {
+      "id": "c78bdfbec717",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4052,6 +4377,7 @@
       "quote": "Satisfactory record of meeting community credit needs"
     },
     {
+      "id": "aee1f58d4d4e",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4066,6 +4392,7 @@
       "quote": "Needs to improve record of meeting community credit needs"
     },
     {
+      "id": "84cb25f1cdc4",
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4080,6 +4407,7 @@
       "quote": "Substantial noncompliance in meeting community credit needs"
     },
     {
+      "id": "d6f246b57f6a",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4092,6 +4420,7 @@
       "quote": "if an entity located off-site from the dwelling is primarily responsible for managing the dwelling, the name and street address of the management company."
     },
     {
+      "id": "7c1279398272",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -4107,6 +4436,7 @@
   ],
   "quoteTruncations": [
     {
+      "id": "c1a6f2675d1f",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4119,6 +4449,7 @@
       "quote": "special purpose credit program offered by a profit-making organization to meet special social needs,"
     },
     {
+      "id": "8a4963cbd79e",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4131,6 +4462,7 @@
       "quote": "the advance of all the additional funds is for reasonable costs necessary to refinance such debt or for a purpose described by Subsection (a)(2), (a)(3), or (a)(5)."
     },
     {
+      "id": "a4b313dc893d",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4143,6 +4475,7 @@
       "quote": "the lender or any holder of the note for the extension of credit shall forfeit all principal and interest of the extension of credit if the lender or holder fails to comply with the lender's or holder"
     },
     {
+      "id": "beb7a3199b8f",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4155,6 +4488,7 @@
       "quote": "at least 30 days, or at least 20 days in the event of a default under Subdivision (6)(D)(iii),"
     },
     {
+      "id": "63558840a513",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4169,6 +4503,7 @@
       "quote": "not later than the 30th day after the date the seller receives the purchaser's final payment."
     },
     {
+      "id": "4ca771607606",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4182,6 +4517,7 @@
       "quote": "the actuarial life expectancy of the consumer to become obligated on the reverse mortgage transaction,"
     },
     {
+      "id": "aba711c58db9",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4195,6 +4531,7 @@
       "quote": "eight members appointed by the governor with the advice and consent of the senate,"
     },
     {
+      "id": "d2e1a673116e",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4208,6 +4545,7 @@
       "quote": "shall sign each report prepared by the appraiser trainee,"
     },
     {
+      "id": "33f342101e7a",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4223,6 +4561,7 @@
       "quote": "in a material and verifiable manner to the research or analysis that results in the final opinion of value."
     },
     {
+      "id": "5144055bc3fa",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4236,6 +4575,7 @@
       "quote": "unless the promise or agreement, or a memorandum of it, is (1) in writing; and (2) signed by the person to be charged,"
     },
     {
+      "id": "c3ec743ca1cd",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4248,6 +4588,7 @@
       "quote": "except as provided in Subsections (d), (e), and (f)."
     },
     {
+      "id": "1bcb5205bddd",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4263,6 +4604,7 @@
       "quote": "deterioration that results from negligence, carelessness, accident, or abuse."
     },
     {
+      "id": "38aaa6fee2da",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4278,6 +4620,7 @@
       "quote": "in proportion to the reduced rental value,"
     },
     {
+      "id": "de8e88aa1188",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4290,6 +4633,7 @@
       "quote": "a keyless bolting device and a door viewer on each exterior door."
     },
     {
+      "id": "8fab7afbc509",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4305,6 +4649,7 @@
       "quote": "not later than the seventh day after the date the request is received,"
     },
     {
+      "id": "ea60f7d092b8",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4319,6 +4664,7 @@
       "quote": "not later than the third calendar day before,"
     },
     {
+      "id": "b727bf6658ee",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4331,6 +4677,7 @@
       "quote": "**within six months after the date of the tenant's action**,"
     },
     {
+      "id": "9e42eb351dea",
       "module": "module-04",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4345,6 +4692,7 @@
       "quote": "a civil penalty of one month's rent plus $500, actual damages, court costs, and reasonable attorney's fees,"
     },
     {
+      "id": "5356a79fa9c3",
       "module": "module-05",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4359,6 +4707,7 @@
       "quote": "may not take action on the matter until it receives the final report."
     },
     {
+      "id": "c5949a62d912",
       "module": "module-05",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4372,6 +4721,7 @@
       "quote": "may continue to use the property in the same manner unless required by a municipality to stop the nonconforming use."
     },
     {
+      "id": "ccae6e608bbc",
       "module": "module-05",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4385,6 +4735,7 @@
       "quote": "streets, alleys, squares, parks, or other parts of the tract intended by the owner of the tract to be dedicated to public use,"
     },
     {
+      "id": "15e1fdbfd918",
       "module": "module-05",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4398,6 +4749,7 @@
       "quote": "unless the parties mutually agree upon a different period of time,"
     },
     {
+      "id": "c71074bf4a2f",
       "module": "module-05",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4412,6 +4764,7 @@
       "quote": "does not include petroleum, including crude oil or any fraction thereof which is not otherwise specifically listed or designated as a hazardous substance under subparagraphs (A) through (F) of this pa"
     },
     {
+      "id": "bf751db61577",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4427,6 +4780,7 @@
       "quote": "consists of nine members appointed by the governor with the advice and consent of the senate,"
     },
     {
+      "id": "f3b50d80a0d9",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4439,6 +4793,7 @@
       "quote": "a cooperative and voluntarily joined statewide association of business or professional competitors."
     },
     {
+      "id": "94fe3221d021",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4452,6 +4807,7 @@
       "quote": "may implicate federal antitrust law by limiting competition or impacting prices."
     },
     {
+      "id": "a39a0313b085",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4465,6 +4821,7 @@
       "quote": "clearly separate the policymaking responsibilities of the commission and the management responsibilities of the executive director and the staff."
     },
     {
+      "id": "fc47c13f85c6",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4477,6 +4834,7 @@
       "quote": "in amounts reasonable and necessary to cover the costs of administering this chapter and the real estate recovery trust account,"
     },
     {
+      "id": "24abf224264e",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4490,6 +4848,7 @@
       "quote": "may not act as a broker or sales agent until the person receives the license."
     },
     {
+      "id": "c35cd9db29e9",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4502,6 +4861,7 @@
       "quote": "unless the entity's designated broker is a licensed individual broker in active status and good standing."
     },
     {
+      "id": "4b32e609208f",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4517,6 +4877,7 @@
       "quote": "the person may not act as a sales agent unless the person is sponsored by a licensed broker who has notified the commission."
     },
     {
+      "id": "c648ed69341a",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -4530,6 +4891,7 @@
       "quote": "may not accept compensation for a real estate transaction from a person other than the broker that is sponsoring the sales agent,"
     },
     {
+      "id": "75453a2fb974",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4543,6 +4905,7 @@
       "quote": "may not pay a commission to a person except through the broker."
     },
     {
+      "id": "8fbd6a11bec2",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4555,6 +4918,7 @@
       "quote": "on a person who violates this chapter or a rule adopted or order issued by the commission,"
     },
     {
+      "id": "4b32e609208f",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4570,6 +4934,7 @@
       "quote": "the person may not act as a sales agent unless the person is sponsored by a licensed broker who has notified the commission."
     },
     {
+      "id": "fc47c13f85c6",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4585,6 +4950,7 @@
       "quote": "in amounts reasonable and necessary to cover the costs of administering this chapter and the real estate recovery trust account,"
     },
     {
+      "id": "b7052b894f40",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4599,6 +4965,7 @@
       "quote": "180 hours of qualifying real estate courses,"
     },
     {
+      "id": "de7a7f5eb7c0",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4613,6 +4980,7 @@
       "quote": "must successfully complete an additional 90 classroom hours in qualifying courses, including the 30 hour qualifying real estate brokerage course, by the expiration date of the sales agent's initial li"
     },
     {
+      "id": "977ace966741",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4625,6 +4993,7 @@
       "quote": "on terms other than those authorized by the owner."
     },
     {
+      "id": "d2ef85b759d9",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4638,6 +5007,7 @@
       "quote": "is limited to the acts enumerated in specific subdivisions of Subsection (b)."
     },
     {
+      "id": "1d9fff0ca5ed",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4651,6 +5021,7 @@
       "quote": "shall give written notice to the person at least 60 days before filing the suit advising the person in reasonable detail of the consumer's specific complaint and the amount of economic damages, damage"
     },
     {
+      "id": "f58fd8326095",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4664,6 +5035,7 @@
       "quote": "the defendant did not know and could not reasonably have known of the falsity or inaccuracy."
     },
     {
+      "id": "0680ddb35bfa",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4677,6 +5049,7 @@
       "quote": "within 30 days after the day on which the defendant received the notice,"
     },
     {
+      "id": "2a0a823fee27",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4690,6 +5063,7 @@
       "quote": "such term does not include current, illegal use of or addiction to a controlled substance."
     },
     {
+      "id": "1d1b3d155ca7",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4702,6 +5076,7 @@
       "quote": "the provision of services or facilities,"
     },
     {
+      "id": "c6bee83572a6",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4715,6 +5090,7 @@
       "quote": "include examples of the types of policies and procedures relevant to a   determination of compliance,"
     },
     {
+      "id": "8bb00d9489a6",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -4728,6 +5104,7 @@
       "quote": "**for other than a commercial purpose**,"
     },
     {
+      "id": "6d4356ecf0a6",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4743,6 +5120,7 @@
       "quote": "nothing in this subchapter prohibits conduct against a person because such person has been convicted by any court of competent jurisdiction of the illegal manufacture or distribution of a controlled s"
     },
     {
+      "id": "20599f5a2b42",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4758,6 +5136,7 @@
       "quote": "in the terms or conditions of access, membership, or participation."
     },
     {
+      "id": "ea224afdcaba",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4773,6 +5152,7 @@
       "quote": "may elect to have the claims asserted in the charge decided in a civil action,"
     },
     {
+      "id": "dd68b731e1c3",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4786,6 +5166,7 @@
       "quote": "Administrative enforcement; preliminary matters,"
     },
     {
+      "id": "836b7984e071",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4801,6 +5182,7 @@
       "quote": "may also investigate housing practices to determine whether a complaint should be brought."
     },
     {
+      "id": "f2344816cf5c",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4815,6 +5197,7 @@
       "quote": "may file, not later than 10 days after receipt of notice,"
     },
     {
+      "id": "8c1d83df8c3f",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4828,6 +5211,7 @@
       "quote": "may provide for binding arbitration of the dispute,"
     },
     {
+      "id": "99fccd8f0f31",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4843,6 +5227,7 @@
       "quote": "within 100 days after the filing of the complaint,"
     },
     {
+      "id": "f4dab556b0cf",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4857,6 +5242,7 @@
       "quote": "irrespective of whether that person is engaged in commerce or meets any other jurisdictional tests."
     },
     {
+      "id": "facb607f39f4",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4872,6 +5258,7 @@
       "quote": "every aspect of an applicant's dealings with a creditor regarding an application for credit or an existing extension of credit,"
     },
     {
+      "id": "f9c36941c2fc",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4886,6 +5273,7 @@
       "quote": "in connection with which a creditor has received all the information that the creditor regularly obtains and considers in evaluating applications for the amount and type of credit requested,"
     },
     {
+      "id": "d8b98e952109",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4900,6 +5288,7 @@
       "quote": "A creditor shall not inquire about the race, color, religion, national origin, or sex of an applicant or any other person in connection with a credit transaction, except as provided in paragraphs (b)("
     },
     {
+      "id": "aaac4bc5ea15",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4915,6 +5304,7 @@
       "quote": "shall not inquire about the applicant's marital status unless the applicant resides in a community property state or is relying on property located in such a state as a basis for repayment,"
     },
     {
+      "id": "b30c906b4e72",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -4929,6 +5319,7 @@
       "quote": "unless the creditor discloses to the applicant that such income need not be revealed if the applicant does not want the creditor to consider it."
     },
     {
+      "id": "e35f0e1b5909",
       "module": "module-08",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",

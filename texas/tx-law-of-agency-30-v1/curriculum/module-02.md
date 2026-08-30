@@ -990,12 +990,13 @@ duties by name. Loyalty lives in § 531.2 ("place no personal interest above tha
 § 535.156 ("must put the interest of the license holder's principal above the license holder's own
 interest"). Obedience lives in 22 TAC § 535.16(a) and stops at unlawful instructions. Disclosure
 lives in § 535.156, whose offer-submission duty is switched off only "if the principal has agreed in
-writing that offers are not to be submitted after the principal has entered into a contract," and in
-§ 1101.557(b)(2) and (3), which oblige the broker to inform the party of material information
-including the receipt of an offer and, at a minimum, to answer the party's questions and present any
-offer to or from the party. Confidentiality's sharpest held statement is § 1101.651(d)(3), Module
-06's. Reasonable care lives in the Commission's canons, 22 TAC §§ 531.3 and 531.4. The disciplinary
-consequences of breaching any of them sit in § 1101.652, which is Module 10's.
+writing that offers are not to be submitted after the principal has entered into a contract to buy,
+sell, rent, or lease a property," and in § 1101.557(b)(2) and (3), which oblige the broker to inform
+the party of material information including the receipt of an offer and, at a minimum, to answer the
+party's questions and present any offer to or from the party. Confidentiality's sharpest held
+statement is § 1101.651(d)(3), Module 06's. Reasonable care lives in the Commission's canons, 22 TAC
+§§ 531.3 and 531.4. The disciplinary consequences of breaching any of them sit in § 1101.652, which
+is Module 10's.
 
 Finally, the two disclosures, which are this module's to hold. Section 1101.558(b) is the
 representation disclosure: made only if you represent a party, orally or in writing, at first

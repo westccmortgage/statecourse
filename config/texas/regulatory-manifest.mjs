@@ -38,7 +38,7 @@
  * with that status so that a reader can see it was consulted and see what it was not used for.
  */
 
-export const MANIFEST_VERSION = "TX-MANIFEST-2026-08-29-v3";
+export const MANIFEST_VERSION = "TX-MANIFEST-2026-08-30-v4";
 
 /* How long a reading stays good before the lock demands it be taken again. */
 export const VERIFICATION_MAX_AGE_DAYS = 90;
@@ -405,27 +405,47 @@ export const SOURCES = Object.freeze([
     authority: "Texas Real Estate Commission",
     title: "Information About Brokerage Services (IABS) Form",
     documentNumber: "IABS 1-2",
-    revision: null,
+    /* The revision stamp printed on the form itself, top left, read off the held PDF — not the
+       effective date below, which comes from TREC's forms listing. */
+    revision: "11-03-2025",
+    pages: 1,
     effectiveDate: "2026-01-01",
-    url: "https://www.trec.texas.gov/forms/information-about-brokerage-services",
-    localCopy: null,
-    sha256: null,
-    readOn: "2026-08-29",
+    url: "https://www.trec.texas.gov/sites/default/files/pdf-forms/IABS%201-2.pdf",
+    listingUrl: "https://www.trec.texas.gov/forms/information-about-brokerage-services",
+    /* The instrument 22 TAC § 531.20(a) adopts by reference. The rule is the authority. */
+    adoptedBy: "22 TAC § 531.20(a)",
+    controllingAuthority: ["22 TAC § 531.20", "Tex. Occ. Code § 1101.558(b-1)"],
+    localCopy: "texas/trec-sources/forms/IABS-1-2.pdf",
+    sha256: "5056930b66d237a7a4376db0c43f833929600f0b6e5ce6e42a417da824ef6b20",
+    bytes: 1491257,
+    readOn: "2026-08-30",
     status: "current",
     reachability: REACHABILITY.READ,
-    precedence: "Current TREC form (tier 4), superseding IABS 1-0 effective 2026-01-01 to reflect the § 1101.558(b-1)/§ 1101.562 notice requirements.",
+    precedence:
+      "Current TREC form (tier 4), superseding IABS 1-0 effective 2026-01-01 to reflect the § 1101.558(b-1)/§ 1101.562 notice requirements. THE FORM IS THE INSTRUMENT, NOT THE AUTHORITY: 22 TAC § 531.20 adopts it by reference and, with Occupations Code § 1101.558(b-1), is the controlling authority for everything the Law of Agency course states about the notice. The form is registered in config/texas/law-of-agency-statute-sources.mjs at tier identified-not-taught for exactly that reason.",
     materialClaims: [
       {
         id: "iabs-current-version",
         claim: "The current Information About Brokerage Services form is IABS 1-2, effective 01/01/2026, per TREC's own forms listing.",
         reliedOnBy: ["config/texas/law-of-agency-course-form.mjs T02U5"],
       },
+      {
+        id: "iabs-pdf-held-and-verified",
+        claim: "The PDF held at texas/trec-sources/forms/IABS-1-2.pdf is a single page, carries the form number IABS 1-2 in its footer and the printed date 11-03-2025, and contains the 2026 material the rule and statute require — the broker's minimum duties, the written-agreement paragraph citing Occupations Code § 1101.563, the four representation postures including intermediary, the showing-without-representation conditions, and the 14-day non-exclusive limit on a showing-only agreement.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs trec-iabs-1-2-form"],
+      },
+      {
+        id: "iabs-adopted-by-rule",
+        claim: "22 TAC § 531.20(a) adopts this form by reference. No proposition in the Law of Agency curriculum is taken from the form's own text: the twelve modules were authored before the PDF was acquired and teach the notice through § 531.20 and Occupations Code § 1101.558(b-1).",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-20"],
+      },
     ],
     conflicts: [
       {
         id: "iabs-pdf-not-downloaded",
         question: "The IABS 1-2 PDF itself has not yet been downloaded and hashed to texas/trec-sources/ — only the forms-listing page naming it was read.",
-        resolution: "OPEN. Download and hash before the Law of Agency course content ships; the form-number and effective-date claim above does not depend on it.",
+        resolution:
+          "CLOSED 2026-08-30. The form was downloaded to texas/trec-sources/forms/IABS-1-2.pdf from https://www.trec.texas.gov/sites/default/files/pdf-forms/IABS%201-2.pdf, and this record was completed by RECOMPUTING the sha256 and byte count from that file on disk rather than copying a figure from anywhere — config/texas/law-of-agency-statute-sources.mjs recomputes both again on every import and would throw if they drifted. The file was then opened and read: one page, form number IABS 1-2 in the footer, printed revision stamp 11-03-2025, and the 2026 content recorded in the material claims above. The entry is kept rather than deleted so the record still shows that this was open between 2026-08-29 and 2026-08-30 and how it closed. Holding the form changes nothing about what the Law of Agency course teaches: § 531.20 and Occupations Code § 1101.558(b-1) remain the controlling authority, and the register carries the form at tier identified-not-taught rather than promoting it to a source of taught propositions.",
       },
     ],
   }),
@@ -634,6 +654,855 @@ export const SOURCES = Object.freeze([
     ],
   }),
 
+  /* ── substantive law acquired for the Law of Agency build ──────────────────────────────────
+     The Texas chapters and the federal section fetched for LOA-1's Employment Issues topic. Each
+     is recorded here with the scope its own text fixes, because the Law of Agency curriculum was
+     corrected once for stating an employment-status conclusion wider than the statute it cited,
+     and a manifest that repeated that error would re-import it. The other substantive chapters
+     this course reads — Property Code chs. 5 and 301, Business and Commerce Code chs. 17 and 26,
+     Civil Practice and Remedies Code ch. 16 and Estates Code ch. 101 — were acquired for earlier
+     Texas builds and are hashed, read-recorded and re-verified against disk in
+     config/texas/law-of-agency-statute-sources.mjs, which is the read register for this course. */
+  source({
+    id: "tx-labor-code-21",
+    authority: "Texas Legislative Council",
+    title: "Texas Labor Code, Chapter 21 (Employment Discrimination)",
+    documentNumber: "Tex. Lab. Code ch. 21",
+    revision: null,
+    url: "https://tcss.legis.texas.gov/resources/LA/htm/LA.21.htm",
+    localCopy: "texas/trec-sources/statutes/LA.21.htm",
+    sha256: "c92d7ed636c5d88f55f4448134fd04da1f9f969ee20babb38d01c548ea5f15fc",
+    bytes: 157702,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 2 — the statute, retrieved from the Texas Legislative Council's static resource layer. SCOPE: chapter 21 is an EMPLOYMENT statute. Nothing in it is relied on in this build as a fair-housing rule or as a rule of brokerage conduct; Texas fair housing is Property Code ch. 301 and 42 U.S.C. §§ 3602-3606.",
+    materialClaims: [
+      {
+        id: "labor-21-employment-discrimination",
+        claim:
+          "Chapter 21 is the Texas employment-discrimination statute. § 21.002 supplies its definitions and protected characteristics; § 21.101 limits its age provisions to individuals 40 years of age or older; §§ 21.141-21.142 define 'employer' for the sexual-harassment subchapter as a person who employs ONE OR MORE employees and make an employer liable where it knew or should have known of harassment and failed to take immediate and appropriate corrective action; § 21.1065 extends those protections to unpaid interns; §§ 21.202, 21.254 and 21.256 fix the administrative and civil deadlines; and § 21.2585 governs compensatory and punitive damages.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs la-21", "config/texas/law-of-agency-course-form.mjs T09U2"],
+      },
+      {
+        id: "labor-21-employee-status-not-decided",
+        claim:
+          "Whether a Texas real estate sales agent is an 'employee' for purposes of chapter 21 is NOT decided by any held source. The Law of Agency curriculum says so in T09U6 and states no conclusion; nothing in this build may assert one.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs GAPS common-law-employment-status-and-vicarious-liability-not-held"],
+      },
+    ],
+  }),
+  source({
+    id: "tx-labor-code-201",
+    authority: "Texas Legislative Council",
+    title: "Texas Labor Code, Chapter 201 (Texas Unemployment Compensation Act — definitions and exclusions)",
+    documentNumber: "Tex. Lab. Code ch. 201",
+    revision: null,
+    url: "https://tcss.legis.texas.gov/resources/LA/htm/LA.201.htm",
+    localCopy: "texas/trec-sources/statutes/LA.201.htm",
+    sha256: "f8a816c3ca477541417c65b34fd99ad4037ac223e02dc260dfe2b2ec88d96f3b",
+    bytes: 77445,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 2 — the statute, retrieved from the Texas Legislative Council's static resource layer. SCOPE, taken from § 201.072's own opening words 'In this subtitle': the subtitle is the Texas Unemployment Compensation Act, so this chapter is authority on UNEMPLOYMENT COMPENSATION COVERAGE and on nothing else.",
+    materialClaims: [
+      {
+        id: "labor-201-072-real-estate-exclusion",
+        claim:
+          "§ 201.072: in this subtitle, 'employment' does not include service performed by an individual as a real estate broker or salesperson if the individual engages in activities requiring a licence, substantially all of the remuneration for the services is directly related to sales or other output rather than to the number of hours worked, and the services are performed under a written contract providing that the individual will not be treated as an employee for state tax purposes. This decides UNEMPLOYMENT COMPENSATION COVERAGE ONLY — not common-law employment status, not vicarious liability, not wage-and-hour treatment, and not federal tax treatment.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs la-201", "config/texas/law-of-agency-course-form.mjs T09U1"],
+      },
+      {
+        id: "labor-201-substantially-all-undefined",
+        claim:
+          "Neither § 201.072 nor any held Texas Workforce Commission rule defines 'substantially all'. No percentage appears anywhere in this build, and the curriculum states the absence rather than supplying a figure.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs GAPS irs-and-twc-administrative-material-not-held"],
+      },
+    ],
+  }),
+  source({
+    id: "us-26-3508",
+    authority: "Office of the Law Revision Counsel, U.S. House of Representatives",
+    title: "26 U.S.C. § 3508 (Treatment of real estate agents and direct sellers)",
+    documentNumber: "26 U.S.C. § 3508",
+    revision: null,
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section3508&num=0&edition=prelim",
+    localCopy: "texas/trec-sources/federal/us26-3508.html",
+    sha256: "77a251dca1cb6510851bdc79089b664711607a6afb6d7b9a16590c7d702bef27",
+    bytes: 150546,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "Federal statute. SCOPE, taken from the section's own opening words 'For purposes of this title': that title is Title 26, the Internal Revenue Code, so this section is authority on FEDERAL TAX TREATMENT ONLY.",
+    materialClaims: [
+      {
+        id: "us-3508-qualified-real-estate-agent",
+        claim:
+          "§ 3508(a): for purposes of Title 26, an individual performing services as a qualified real estate agent is not treated as an employee and the person for whom the services are performed is not treated as an employer. § 3508(b)(1) fixes three cumulative conditions: the individual is a licensed real estate agent; substantially all of the remuneration for the services performed as a real estate agent is directly related to sales or other output rather than to the number of hours worked; and the services are performed under a written contract providing that the individual will not be treated as an employee with respect to those services for Federal tax purposes.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs 26-u-s-c-3508", "config/texas/law-of-agency-course-form.mjs T09U1"],
+      },
+      {
+        id: "us-3508-scope-limit",
+        claim:
+          "§ 3508 does not decide Texas unemployment compensation coverage, common-law employment status, vicarious liability, wage-and-hour treatment, or a broker's supervisory responsibility under 22 TAC § 535.2. No Treasury regulation or Internal Revenue Service guidance under it is held.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs GAPS irs-and-twc-administrative-material-not-held"],
+      },
+    ],
+  }),
+
+  /* ── 22 TAC sections acquired for the Law of Agency build, one file per section ──────────────
+     Thirty-two sections of the Commission's rules, downloaded on 2026-08-30 from TREC's own
+     consolidated Rules page and stored verbatim as text, one file per section. They carry the
+     same precedence caveat as the five sections already recorded in
+     config/texas/trec-rules-source-lock.mjs and the same classification this manifest has always
+     given that page: it is the REGULATED AGENCY'S OWN REPRODUCTION, not the Secretary of State's
+     adopted text, which remains UNREACHABLE_JS_ONLY under source id sos-tac-22-535. The provider
+     rule lock therefore still FAILS on that ground and is not weakened by these entries. What
+     these records add is that the rules the Law of Agency curriculum states as law are now held,
+     hashed and traceable rather than being cited from nothing. Read records — which unit relies
+     on which section and what it establishes — live in
+     config/texas/law-of-agency-statute-sources.mjs, which recomputes every hash below from disk. */
+  source({
+    id: "trec-rule-531-1",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 531.1, Definitions",
+    documentNumber: "22 TAC § 531.1",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/531.1.txt",
+    sha256: "e526560dbe9fdc688bd22c422977f18a052ed95ed26e90045907801dbfa48658",
+    bytes: 322,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "531.1-operative",
+        claim: "Defines 'Commission' and 'License Holder' for the whole of 22 TAC ch. 531, so the Canons that follow are read in the Act's own vocabulary.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-1"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-531-2",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 531.2, Fidelity",
+    documentNumber: "22 TAC § 531.2",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/531.2.txt",
+    sha256: "e9e3e0e277df8b6ec627bf5aaacdcfff5fcc1b74093337c57341b975c14a0044",
+    bytes: 778,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "531.2-operative",
+        claim: "The first Canon: a license holder acting as an agent for another is a fiduciary whose primary duty is to represent the client's interests, who must treat other parties fairly, who must be faithful and observant to the trust placed in the license holder, and who must place no personal interest above the client's.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-2"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-531-3",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 531.3, Integrity",
+    documentNumber: "22 TAC § 531.3",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/531.3.txt",
+    sha256: "e0426e6158f3cd3b6c26ddff7fd90cde9a7b851d2d67408d9553d786e8f3d43c",
+    bytes: 281,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "531.3-operative",
+        claim: "The second Canon: a special obligation to exercise integrity, including prudence and caution so as to avoid misrepresentation by acts of commission or omission — the held source for misrepresentation by silence.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-3"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-531-4",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 531.4, Competency",
+    documentNumber: "22 TAC § 531.4",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/531.4.txt",
+    sha256: "43b112793ee2e6d947e0011df1910e2c923613c4bb55933851ee46eae67868b3",
+    bytes: 601,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "531.4-operative",
+        claim: "The third Canon: the obligation to be knowledgeable and competent, with its four requirements covering local market conditions, industry developments, judgment and skill, and education in the specific type of real estate being brokered.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-4"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-531-18",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 531.18, Consumer Information",
+    documentNumber: "22 TAC § 531.18",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/531.18.txt",
+    sha256: "be1e80c58218eb2a23dce64db8cc5eba56c8aa88a783acefbe9d01eb15881598",
+    bytes: 1227,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "531.18-operative",
+        claim: "The Commission adopts the Consumer Protection Notice, TREC No. CN 1-5, by reference and requires EACH LICENSE HOLDER to display it at each place of business and to link to it on each business website with a prescribed label and minimum font size. The text of CN 1-5 itself is not held.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-18"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-531-19",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 531.19, Discriminatory Practices",
+    documentNumber: "22 TAC § 531.19",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/531.19.txt",
+    sha256: "97daf1e28de570d597706a55d3cb3053dd1395b4504f92c8d62b9437d1634e10",
+    bytes: 648,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "531.19-operative",
+        claim: "No license holder shall inquire about, respond to or facilitate inquiries about, or disclose information about an owner, occupant or prospective party that indicates or is intended to indicate a preference, limitation or discrimination on any of eight listed bases, with disability defined to include AIDS, HIV-related illnesses and HIV infection.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-19"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-531-20",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 531.20, Information About Brokerage Services",
+    documentNumber: "22 TAC § 531.20",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/531.20.txt",
+    sha256: "ae123f1c3d83e1467fe4a7c75a54346546f69afd541a39f9a36173819d3d6757",
+    bytes: 2101,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "531.20-operative",
+        claim: "The Commission adopts the Information About Brokerage Services Notice, TREC No. IABS 1-2, by reference, and prescribes the website link, its label and font size, the requirement to provide the completed notice at the first substantive communication under Occupations Code § 1101.558, the four permitted delivery methods, and the bar on placing the link in an email footnote or signature block. THIS RULE, NOT THE FORM, is the controlling authority for what the notice requires.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-531-20"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-1",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.1, Definitions",
+    documentNumber: "22 TAC § 535.1",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.1.txt",
+    sha256: "6ed8623c50818a454a4f4d9cb2ae3169bfb6ebdef73fbb949095142ecc10e99b",
+    bytes: 1850,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.1-operative",
+        claim: "The chapter 535 definitions, including 'compensation', 'place of business', 'associated broker' and 'trade association' — the last being a nonprofit voluntary member association subscribing to a written code of professional conduct or ethics, which is how a private code is distinguished from a Commission rule.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-1"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-2",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.2, Broker Responsibility",
+    documentNumber: "22 TAC § 535.2",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.2.txt",
+    sha256: "c776c91cb6432a735e1d69f079f9606b1f990fbefcea506adcb372f01d4f094b",
+    bytes: 5902,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.2-operative",
+        claim: "The broker-responsibility rule: written notice of a sales agent's authorized scope and the broker's responsibility for authorized acts and permitted acts beyond that scope; the highest fiduciary obligation to the principal; responsibility for trust funds and for a sponsored agent's property management and advertising; written delegation of supervision with 30-day notification to the Commission; the requirement that agreements be solicited and accepted in a broker's name; and the four-year record-retention list.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-2"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-3",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.3, Compensation to or Paid by a Sales Agent",
+    documentNumber: "22 TAC § 535.3",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.3.txt",
+    sha256: "e92a0cd37b738bc11a4cf7bf87d8f682dfa292a4eb36c405b66401ea6fd809c6",
+    bytes: 502,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.3-operative",
+        claim: "A sales agent may not receive or pay a commission or other valuable consideration except with the sponsoring broker's written consent.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-3"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-4",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.4, License Required",
+    documentNumber: "22 TAC § 535.4",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.4.txt",
+    sha256: "156c19eb775a2e33eb76d38188f0bf8ffc0d779017f3cde68b3b4c8d43014405",
+    bytes: 4582,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.4-operative",
+        claim: "What requires a licence, including that a person must be licensed to SHOW a property, with 'show' defined to include causing or permitting a property to be viewed, providing access, and HOSTING AN OPEN HOUSE; and the three conditions for unescorted access by a prospective tenant.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-4"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-5",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.5, License Not Required",
+    documentNumber: "22 TAC § 535.5",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.5.txt",
+    sha256: "16e8c0988d1a23fd80f369aa078ab3f4d04511014a99495772796a194c9eee9e",
+    bytes: 2381,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.5-operative",
+        claim: "The counterpart exclusions, including acting as a principal, an employee of a business entity (excluding an independent contractor), auctioneers who do not show or negotiate, clerical staff confirming size, price and terms, and (g) the compensation-receiving business entity that must be an LLC or S corporation at least 51 percent owned by the license holder and registered under § 535.35.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-5"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-16",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.16, Listings; Net Listings",
+    documentNumber: "22 TAC § 535.16",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.16.txt",
+    sha256: "dba92618f0200c824091b2d5f94fec70d47faf3814c04ad7baea8353cf97a2fd",
+    bytes: 1196,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.16-operative",
+        claim: "The obligation under a listing contract to negotiate the best possible transaction for the principal, the definition of a net listing and the conditions on taking one, and the obligation to provide a broker price opinion or comparative market analysis when negotiating a listing or offering to purchase for the license holder's own account.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-16"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-17",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.17, Broker Price Opinion, Comparative Market Analysis, or Sales Price Estimate",
+    documentNumber: "22 TAC § 535.17",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.17.txt",
+    sha256: "a67f0514277a956b4740738d23d949693075110d3236d0d2a996cb87e52f3662",
+    bytes: 1388,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.17-operative",
+        claim: "A license holder may not perform an appraisal or provide an opinion of value unless licensed under Occupations Code ch. 1103, and any broker price opinion, comparative market analysis or price estimate must carry the rule's verbatim disclaimer reproduced in at least 12-point font.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-17"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-20",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.20, Referrals from Unlicensed Persons",
+    documentNumber: "22 TAC § 535.20",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.20.txt",
+    sha256: "cba8a67aca7d8452cce4a7366e3a8e66b67ab0c3b11a22838b2ef3de0eff6189",
+    bytes: 1212,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.20-operative",
+        claim: "Referring a prospective party with the expectation of valuable consideration requires a licence, with 'valuable consideration' defined to include gifts of merchandise having a retail value greater than $50, rent bonuses and discounts.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-20"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-21",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.21, Mailing Address and Other Contact Information",
+    documentNumber: "22 TAC § 535.21",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.21.txt",
+    sha256: "fd0b790e01ccf6a73c05568760ca1df75a9ef21683cbed5a717f60609e31c1e7",
+    bytes: 1173,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.21-operative",
+        claim: "Each license holder must supply a mailing address, business address, business phone number and business email address to the Commission and report changes not later than the 10th day after a change.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-21"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-35",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.35, Registration of Certain Business Entities",
+    documentNumber: "22 TAC § 535.35",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.35.txt",
+    sha256: "32641992fb1a9b905f159e9084f78285fc954db95f8d041dbabb5f43632f2249",
+    bytes: 1823,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.35-operative",
+        claim: "The registration procedure, two-year term and certification requirement for an exempt business entity under § 535.5(g) and Occupations Code § 1101.355(d) before it may receive compensation on a license holder's behalf.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-35"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-131",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.131, Unlawful Conduct; Splitting Fees",
+    documentNumber: "22 TAC § 535.131",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.131.txt",
+    sha256: "0c35d9c86fe0b8f3fccc3b68fe6f79b5b7d8d51e85086382daadc273151f4ac5",
+    bytes: 584,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.131-operative",
+        claim: "A Texas broker may cooperate with and share earned commissions with a foreign broker, but only Texas license holders may handle negotiations physically conducted within Texas.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-131"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-141",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.141, Initiation of Investigation; Order Requirements",
+    documentNumber: "22 TAC § 535.141",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.141.txt",
+    sha256: "7dde456f63f828d3b2be9ba2048bc8096e1336aeca1f9485fab34e93c26b41c7",
+    bytes: 6498,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.141-operative",
+        claim: "A complaint naming a sales agent is a complaint against the sponsoring broker for the limited purpose of determining the broker's involvement and whether the broker fulfilled the broker's professional responsibilities, and the Commission prioritises complaints in three levels under the Occupations Code § 1101.204 criteria.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-141"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-144",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.144, When Acquiring or Disposing of Own Property or Property of Spouse, Parent or Child",
+    documentNumber: "22 TAC § 535.144",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.144.txt",
+    sha256: "0b8529b7fbd7a3bab2df030b2156159bf133f1ee9dcf2441a7d7b8ad8abf75ce",
+    bytes: 1134,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.144-operative",
+        claim: "For purposes of Occupations Code § 1101.652(a-1)(1), 'license holder' extends to acting for a spouse, parent or child, a business entity more than 10 percent owned by the license holder, or a trust with a close family connection, and written disclosure of licensed status is required before entering the contract.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-144"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-145",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.145, False Promise",
+    documentNumber: "22 TAC § 535.145",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.145.txt",
+    sha256: "45c6e20c061cd5747222f4401fe6b20fd9d808148377dbdcc67430ddcdf3de9a",
+    bytes: 734,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.145-operative",
+        claim: "'False promise' includes oral promises, and neither the absence of the promise from the written agreement, nor the absence of detrimental reliance, nor a contractual disclaimer or the parol evidence rule prevents the Commission from finding one.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-145"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-146",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.146, Maintaining Trust Money",
+    documentNumber: "22 TAC § 535.146",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.146.txt",
+    sha256: "afa8ef1f244fafd04893891ad681e266a4de57f013af32b6513b7df0b8b27719",
+    bytes: 5084,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.146-operative",
+        claim: "The trust-money regime: a sales agent may not maintain a trust account; trust money must be deposited or delivered to an authorised escrow agent not later than the close of business of the second working day after receipt unless the principals agree otherwise in writing; commingling is prohibited, with two forms of prima facie evidence; money the broker becomes entitled to must leave the account within 30 days; and documentary records and an accounting must be kept.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-146"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-147",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.147, Splitting Fee with Unlicensed Person",
+    documentNumber: "22 TAC § 535.147",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.147.txt",
+    sha256: "f6861f6f78ab4feb600464bc4733a21da895e067c59eb9d3e755d2b0877a4f04",
+    bytes: 1733,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.147-operative",
+        claim: "A broker or sales agent may not share a commission or fees with a person who performs acts requiring a licence and is not actively licensed, and the rebate rule requires written consents and forbids payment in a manner that misleads a broker, lender, title company or governmental agency.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-147"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-148",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.148, Receiving an Undisclosed Commission or Rebate",
+    documentNumber: "22 TAC § 535.148",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.148.txt",
+    sha256: "639ca0bd4d50e77313952587412ed57c35005e0d47e26b8e78be99744bbf4e1d",
+    bytes: 3973,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.148-operative",
+        claim: "A license holder may not receive a commission, rebate or fee from a person other than the client without prior disclosure to and consent of the client, may not enter exclusive-dealing agreements with a service provider while representing a party, and may not pay or receive referral fees among settlement service providers.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-148"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-149",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.149, Lottery or Deceptive Trade Practice",
+    documentNumber: "22 TAC § 535.149",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.149.txt",
+    sha256: "ebc17478542f03e1171b3d1412f842ffa736d76372ee7b8b625bbfb0655ff614",
+    bytes: 672,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.149-operative",
+        claim: "The elements of a 'lottery' for Occupations Code § 1101.652(b)(14), and the Commission's own statement that 'deceptive practices' include the acts described in Business and Commerce Code § 17.46 — the bridge between TREC discipline and the DTPA.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-149"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-153",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.153, Violating an Exclusive Agency",
+    documentNumber: "22 TAC § 535.153",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.153.txt",
+    sha256: "8859b2661f0b768cdf9d5307e2feeaabdb7ea2a8d37ad038c4ec028cfa2bc5ab",
+    bytes: 446,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.153-operative",
+        claim: "A license holder may not attempt to negotiate a transaction on property under exclusive listing with another broker, but the Act does not prohibit soliciting a listing from the owner while that listing is in force.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-153"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-154",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.154, Registration and Use of Alternate, Team and Assumed Business Names Used in Advertisements",
+    documentNumber: "22 TAC § 535.154",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.154.txt",
+    sha256: "d03acc8c470b9148411c463fe31ffa3a9b6344a761b5c43b88aea680c87e3bc8",
+    bytes: 3332,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.154-operative",
+        claim: "The definitions and registration requirements for alternate, team and assumed business names, including that a team name may not imply brokerage services independent of the sponsoring broker and must end with 'team' or 'group'.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-154"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-155",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.155, Advertisements",
+    documentNumber: "22 TAC § 535.155",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.155.txt",
+    sha256: "d810281b23fdbe923d0ac712213c8c99f173f6a07265a91b53bc91db6cf982b1",
+    bytes: 5859,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.155-operative",
+        claim: "Each advertisement must carry the name of the license holder or team and the broker's name in at least half the size of the largest contact information for any sales agent, associated broker or team name, with the rule's own definition of 'advertisement' and its list of what misleads for purposes of Occupations Code § 1101.652(b)(23).",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-155"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-156",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.156, Dishonesty; Bad Faith; Untrustworthiness",
+    documentNumber: "22 TAC § 535.156",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.156.txt",
+    sha256: "b432afcf0351fd1391a13ae231cef1db2cac3b47f47b2114c2dabf66ad2a2ecb",
+    bytes: 1240,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.156-operative",
+        claim: "The fiduciary relationship with the principal; the duty to convey all known information affecting the principal's decision on offers, with the written exception once an offer is accepted; the duty to put the principal's interest first while dealing honestly and fairly with all parties; the affirmative duty to keep the principal informed; and the duty to convey accurate information to the public.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-156"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-157",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.157, Obligation to Respond Timely",
+    documentNumber: "22 TAC § 535.157",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.157.txt",
+    sha256: "958c5d966bb1aa369d6bd80447a1ab1ed1835479929dd06962d6f5c98cbe87bb",
+    bytes: 277,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.157-operative",
+        claim: "A broker or sales agent must respond to the principal, to a license holder representing another party, or to an unrepresented party within two calendar days. The only held source for a response deadline.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-157"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-535-191",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 535.191, Schedule of Administrative Penalties",
+    documentNumber: "22 TAC § 535.191",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/535.191.txt",
+    sha256: "e74c8d64a22aea761d36fe7e2ab31078ac04d32ca97dcf218247798e4b29a327",
+    bytes: 2573,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "535.191-operative",
+        claim: "The three administrative-penalty bands — $100-$1,500, $500-$3,000 and $1,000-$5,000 per violation per day — each with its own enumerated list of Act and rule provisions, plus the doubling provision for a history of previous violations. A provision's band is read off the list it appears in and is not generalised across bands.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-535-191"],
+      },
+    ],
+  }),
+  source({
+    id: "trec-rule-537-11",
+    authority: "Texas Real Estate Commission (published reproduction); Texas Secretary of State (controlling text)",
+    title: "22 TAC § 537.11, Use of Standard Contract Forms; Unauthorized Practice of Law",
+    documentNumber: "22 TAC § 537.11",
+    revision: null,
+    url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+    localCopy: "texas/trec-sources/trec-rules/537.11.txt",
+    sha256: "7a063a037d136c3241e60905831b98a1fa7c3ebbb96bba8b8d44439471bc8224",
+    bytes: 4894,
+    readOn: "2026-08-30",
+    status: "current",
+    reachability: REACHABILITY.READ,
+    precedence:
+      "TIER 4 — the regulator's own published reproduction of an adopted rule. NOT the Secretary of State's codified text, which could not be opened from this environment; the codified text has not been compared against it.",
+    materialClaims: [
+      {
+        id: "537.11-operative",
+        claim: "A license holder must use only Commission forms approved for mandatory use, subject to four exceptions, and may not practise law, give legal advice, opine on the legal effect of contract forms or on title, draft contract language including escalation, appraisal or contingency clauses, or discourage a principal from employing an attorney.",
+        reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs tac-537-11"],
+      },
+    ],
+  }),
+
   /* ── consulted, explicitly not authority ── */
   source({
     id: "trec-consolidated-rules-page",
@@ -794,13 +1663,42 @@ export function principlesISourceLock(statuteCoverage) {
   });
 }
 
-/** LOA-1 and the buyer/tenant-representation statute sections the 2026 update depends on. */
-const LAW_OF_AGENCY_SOURCE_IDS = ["trec-loa-1", "oc-1101-buyer-representation-2026", "trec-buyer-rep-2026-article", "trec-iabs-1-2"];
+/**
+ * LOA-1, the substantive law the Law of Agency course is taught from, and the 22 TAC sections it
+ * states as law. Every id below is a record above with a localCopy and a hash, except the two that
+ * are deliberately reachability-only. If any of them ever becomes unreachable the lock fails, which
+ * is the point: this course cites all thirty-two of these rules to students.
+ */
+const LAW_OF_AGENCY_SOURCE_IDS = [
+  "trec-loa-1",
+  "tx-occupations-code-1101",
+  "oc-1101-buyer-representation-2026",
+  "trec-buyer-rep-2026-article",
+  "trec-iabs-1-2",
+  "tx-labor-code-21",
+  "tx-labor-code-201",
+  "us-26-3508",
+  "trec-rule-531-1", "trec-rule-531-2", "trec-rule-531-3", "trec-rule-531-4",
+  "trec-rule-531-18", "trec-rule-531-19", "trec-rule-531-20",
+  "trec-rule-535-1", "trec-rule-535-2", "trec-rule-535-3", "trec-rule-535-4", "trec-rule-535-5",
+  "trec-rule-535-16", "trec-rule-535-17", "trec-rule-535-20", "trec-rule-535-21", "trec-rule-535-35",
+  "trec-rule-535-131", "trec-rule-535-141", "trec-rule-535-144", "trec-rule-535-145", "trec-rule-535-146",
+  "trec-rule-535-147", "trec-rule-535-148", "trec-rule-535-149", "trec-rule-535-153", "trec-rule-535-154",
+  "trec-rule-535-155", "trec-rule-535-156", "trec-rule-535-157", "trec-rule-535-191",
+  "trec-rule-537-11",
+];
 
 /**
  * Law of Agency passes only when its form and its substantive-law sources are all reachable AND
  * every LOA-1 unit either has a primary source on disk or is named as needing none — the same
  * shape as principlesISourceLock, with statuteCoverage injected for the same layering reason.
+ *
+ * WHERE THE COVERAGE COMES FROM. config/texas/law-of-agency-statute-sources.mjs is the read register
+ * for this course; its unitCoverage() measures all 57 LOA-1 units against the sources it holds and
+ * recomputes every hash from disk. That register imports this manifest, so this function takes the
+ * coverage as an argument rather than importing the register back — and the register exports a
+ * zero-argument lawOfAgencySourceLock() that calls this one with unitCoverage() already supplied.
+ * Call that one unless you have a reason to inject different coverage.
  */
 export function lawOfAgencySourceLock(statuteCoverage) {
   const formLock = lockOver(LAW_OF_AGENCY_SOURCE_IDS);

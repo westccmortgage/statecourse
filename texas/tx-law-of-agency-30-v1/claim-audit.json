@@ -4,8 +4,8 @@
   "note": "Mechanical layer only. substantiveStatus is set by review, not by this script.",
   "curriculumHashes": {
     "module-01.md": "f4859df67518bf9d7f3909f4d75dde3b43cca1aaf18d289a5c3e5fbaead244a1",
-    "module-02.md": "9eb3ffaa6f578e97419b0aad03aa57863258f76a96a39bac7a151cd587a61a87",
-    "module-03.md": "882eed864bd4b564a83a44b695f00cadcc66c16f17f1c30880738af74e9ed955",
+    "module-02.md": "38fd0edc97035833bf46cb700d8de7b0a681481e419572e62d0ac0a9120d3266",
+    "module-03.md": "d2cc230964dab799cebdd1212b6e7704faa4ffb16176dbf87e3cbef65b840ceb",
     "module-04.md": "84c6a0974b702e4549c1a6eeb5f7a29ad7961e848e82e30546b4309f7ae64013",
     "module-05.md": "0f12def8e2f3c7177d7e23769e3c573788af3d693ede79d086b23c73802cf297",
     "module-06.md": "aa884d0d5920e9726135108e877f18a660c4e03c3632b00948b3248d02f04fff",
@@ -28,7 +28,7 @@
     "quotesPassed": 925,
     "quotesPassedOutsideSection": 71,
     "quotesAttributionReview": 79,
-    "quotesTruncationReview": 40
+    "quotesTruncationReview": 39
   },
   "quoteFailures": [
     {
@@ -2432,22 +2432,6 @@
       "sourceContinuesWith": "must enter into a written agreement with the prospective buyer before:(1) showing any res",
       "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
       "quote": "any act of real estate brokerage for a prospective buyer of residential real property,"
-    },
-    {
-      "id": "a46e03382c9b",
-      "module": "module-02",
-      "status": "TRUNCATION_REVIEW",
-      "classification": "TRUNCATED_MID_CLAUSE",
-      "candidateSections": [
-        "531.2",
-        "535.156",
-        "535.16",
-        "531.4"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.156.txt",
-      "sourceContinuesWith": "to buy, sell, rent, or lease a property, the license holder shall have no duty to submit",
-      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
-      "quote": "if the principal has agreed in writing that offers are not to be submitted after the principal has entered into a contract,"
     },
     {
       "id": "7bee67adbb27",
@@ -8912,7 +8896,7 @@
       "sourceHeld": true,
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
-      "courseText": "156, whose offer-submission duty is switched off only \"if the principal has agreed in writing that offers are not to be submitted after the principal has entered into a contract,\" and in § 1101.",
+      "courseText": "156, whose offer-submission duty is switched off only \"if the principal has agreed in writing that offers are not to be submitted after the principal has entered into a contract to buy, sell, rent, or lease a property,\" and in § 1101.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null

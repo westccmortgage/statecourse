@@ -126,14 +126,14 @@ the specific statutory disclosures — and nothing that would require you to wor
 client.**
 
 Texas now has a statutory category that makes this concrete. Occupations Code § 1101.562, effective
-January 1, 2026 and taught in Module 05, permits a broker to show real property "to a party without
-representing the party," forbids the broker while doing so to "provide to the party opinions or
-advice regarding the real property or real estate transactions in general," and permits the broker,
-in subsection (c), to "confirm information to a party regarding the size, price, and terms of the
-real property available for sale or lease." That is a legislative portrait of a non-fiduciary
-relationship. The license holder is in the house with the buyer, is answering questions about size,
-price and terms, is bound to be accurate and fair — and is expressly forbidden to give advice,
-because advice is what agents give clients.
+January 1, 2026 and taught in Module 05, permits a broker, on the four conjunctive conditions Module
+05 sets out, to show real property "to a party without representing the party," forbids the broker
+while doing so to "provide to the party opinions or advice regarding the real property or real
+estate transactions in general," and permits the broker, in subsection (c), to "confirm information
+to a party regarding the size, price, and terms of the real property available for sale or lease."
+That is a legislative portrait of a non-fiduciary relationship. The license holder is in the house
+with the buyer, is answering questions about size, price and terms, is bound to be accurate and fair
+— and is expressly forbidden to give advice, because advice is what agents give clients.
 
 **Do not read "non-fiduciary" as "no consequences."** Occupations Code § 1101.803, taught in Module
 09, makes a licensed broker "liable to the commission, the public, and the broker's clients for any
