@@ -1,0 +1,272 @@
+{
+  "generatedBy": "scripts/loa-salvage-audit.mjs",
+  "measuredAgainst": "config/texas/law-of-agency-time-budget.mjs — floors derived from LOA-1 prescribed minutes, not a word quota",
+  "duplicateThreshold": 0.55,
+  "note": "Excess over a floor is not by itself a defect. This script quantifies candidates; the salvage verdict per module is recorded by review.",
+  "totals": {
+    "modulesPresent": 11,
+    "floorWords": 79240,
+    "proseWords": 144562,
+    "nearDuplicatePairs": 2,
+    "dualAgencyMisuse": 5,
+    "employmentOverreach": 0,
+    "staleBuyerRepresentation": 0
+  },
+  "modules": [
+    {
+      "file": "module-01.md",
+      "topicCode": "T01",
+      "topic": "Agency Concepts",
+      "present": true,
+      "prescribedMinutes": 130,
+      "floorWords": 8400,
+      "proseWords": 13529,
+      "excessWords": 5129,
+      "excessRatio": 1.61,
+      "paragraphsExamined": 107,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-02.md",
+      "topicCode": "T02",
+      "topic": "Basic Agency Relationships, Disclosure and Duties to the Client",
+      "present": true,
+      "prescribedMinutes": 125,
+      "floorWords": 7420,
+      "proseWords": 13274,
+      "excessWords": 5854,
+      "excessRatio": 1.79,
+      "paragraphsExamined": 104,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [
+        "**Dual agency and the Texas answer: the intermediary."
+      ],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-03.md",
+      "topicCode": "T03",
+      "topic": "Duties and Disclosures to Third Parties",
+      "present": true,
+      "prescribedMinutes": 125,
+      "floorWords": 4200,
+      "proseWords": 11800,
+      "excessWords": 7600,
+      "excessRatio": 2.81,
+      "paragraphsExamined": 110,
+      "nearDuplicatePairs": 2,
+      "topDuplicates": [
+        {
+          "similarity": 1,
+          "a": "> A party is not liable for a misrepresentation or a concealment of a material fact made by a > license holder in a real estate transaction ",
+          "b": "> A license holder is not liable for a misrepresentation or a concealment of a material fact made by > a party to a real estate transaction "
+        },
+        {
+          "similarity": 0.581,
+          "a": "*Fair treatment.* 22 TAC § 531.2, quoted above. And 22 TAC § 535.156, which says: \"A license holder must deal honestly and fairly with all p",
+          "b": "If you memorise one sentence out of this entire module, make it this one, from 22 TAC § 535.156: \"A license holder must deal honestly and fa"
+        }
+      ],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-04.md",
+      "topicCode": "T04",
+      "topic": "Seller Agency",
+      "present": true,
+      "prescribedMinutes": 120,
+      "floorWords": 6720,
+      "proseWords": 12288,
+      "excessWords": 5568,
+      "excessRatio": 1.83,
+      "paragraphsExamined": 99,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-05.md",
+      "topicCode": "T05",
+      "topic": "Buyer Agency",
+      "present": true,
+      "prescribedMinutes": 150,
+      "floorWords": 10500,
+      "proseWords": 14146,
+      "excessWords": 3646,
+      "excessRatio": 1.35,
+      "paragraphsExamined": 100,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-06.md",
+      "topicCode": "T06",
+      "topic": "Representing More Than One Party in a Transaction: Intermediary Brokerage",
+      "present": true,
+      "prescribedMinutes": 165,
+      "floorWords": 10220,
+      "proseWords": 13285,
+      "excessWords": 3065,
+      "excessRatio": 1.3,
+      "paragraphsExamined": 112,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [
+        [
+          "rule 535.2 requires broker",
+          3
+        ]
+      ],
+      "dualAgencyMisuse": [
+        "*dual agent* about a Texas transaction.",
+        "**What *dual agency* was, as a concept.",
+        "and label *dual agency*.",
+        "*dual agent* or *dual agency* anywhere in it."
+      ],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-07.md",
+      "topicCode": "T07",
+      "topic": "Creation and Termination of Agency",
+      "present": true,
+      "prescribedMinutes": 85,
+      "floorWords": 2520,
+      "proseWords": 10331,
+      "excessWords": 7811,
+      "excessRatio": 4.1,
+      "paragraphsExamined": 72,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-08.md",
+      "topicCode": "T08",
+      "topic": "Clarifying Agency Relationships",
+      "present": true,
+      "prescribedMinutes": 45,
+      "floorWords": 1400,
+      "proseWords": 7138,
+      "excessWords": 5738,
+      "excessRatio": 5.1,
+      "paragraphsExamined": 53,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [
+        [
+          "policies ensure each sponsored",
+          3
+        ]
+      ],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-09.md",
+      "topicCode": "T09",
+      "present": false,
+      "budget": {
+        "topicCode": "T09",
+        "topic": "Employment Issues",
+        "units": 6,
+        "prescribedMinutes": 120,
+        "quizItems": 6,
+        "quizMinutes": 12,
+        "replacementMinutes": 4,
+        "statuteReadingExercises": 2,
+        "appliedExercises": 3,
+        "exerciseMinutes": 54,
+        "scenarios": 1,
+        "scenarioMinutes": 20,
+        "recapMinutes": 5,
+        "activityMinutes": 95,
+        "readingMinutes": 25,
+        "minimumProseWords": 3500,
+        "activityOverrunMinutes": 0
+      }
+    },
+    {
+      "file": "module-10.md",
+      "topicCode": "T10",
+      "topic": "Agency, Ethics and the Law",
+      "present": true,
+      "prescribedMinutes": 155,
+      "floorWords": 11620,
+      "proseWords": 15943,
+      "excessWords": 4323,
+      "excessRatio": 1.37,
+      "paragraphsExamined": 101,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-11.md",
+      "topicCode": "T11",
+      "topic": "Deceptive Trade Practices and Consumer Protection Act",
+      "present": true,
+      "prescribedMinutes": 140,
+      "floorWords": 6720,
+      "proseWords": 15557,
+      "excessWords": 8837,
+      "excessRatio": 2.32,
+      "paragraphsExamined": 125,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    },
+    {
+      "file": "module-12.md",
+      "topicCode": "T12",
+      "topic": "Implementation and Presentation",
+      "present": true,
+      "prescribedMinutes": 140,
+      "floorWords": 9520,
+      "proseWords": 17271,
+      "excessWords": 7751,
+      "excessRatio": 1.81,
+      "paragraphsExamined": 145,
+      "nearDuplicatePairs": 0,
+      "topDuplicates": [],
+      "repeatedOpenings": [
+        [
+          "rule 535.191 places tac",
+          4
+        ]
+      ],
+      "dualAgencyMisuse": [],
+      "employmentOverreach": [],
+      "staleBuyerRepresentation": []
+    }
+  ]
+}

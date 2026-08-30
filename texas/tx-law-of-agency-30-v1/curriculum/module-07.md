@@ -35,7 +35,8 @@ Start with the statutory sentence that does the most work. Occupations Code § 1
 "A broker who represents a party in a real estate transaction or who lists real estate for sale under
 an exclusive agreement for a party is that party's agent." Read that slowly. It contains two
 independent triggers joined by "or." The second trigger is the comfortable one — an exclusive listing
-agreement, signed, dated, sitting in the file. The first trigger is the dangerous one. It does not say that a broker
+agreement, signed, dated, sitting in the file. The first trigger is the dangerous one. It does not
+say that a broker
 becomes an agent only by signing a written representation agreement. It says a broker "who represents
 a party." Representation, in that first clause, is a description of what you are actually doing, not a
 description of the paperwork you have collected.
@@ -111,8 +112,10 @@ a contract, other than a contract to perform property management services, in wh
 agrees to perform services for which a license is required under this chapter." Read the qualifier,
 because students skip it every time. The date must be *definite*, and it must *not be subject to prior
 notice* — meaning a clause providing that the agreement continues until either party gives
-thirty days' notice does not satisfy the section. And the section carves out property management contracts, which
-may run open-ended. An agreement that expires on December 31, 2026 is definite. One that expires ninety days after either
+thirty days' notice does not satisfy the section. And the section carves out property management
+contracts, which
+may run open-ended. An agreement that expires on December 31, 2026 is definite. One that expires
+ninety days after either
 party notifies the other is not.
 
 **The showing-only agreement.** Section 1101.563 works alongside § 1101.562, added by the same 2025
@@ -227,7 +230,8 @@ agent at the time of showing the real property." That condition would be redunda
 only ever arise by agreement; the statute is guarding against agency arising from conduct.
 
 Now add the Commission's rules. 22 TAC § 531.2 states flatly: "A license holder, while acting as an
-agent for another, is a fiduciary." The trigger is "acting as an agent," not the act of signing. And 22 TAC § 535.145 removes the escape hatch a licensee usually reaches for. For purposes of
+agent for another, is a fiduciary." The trigger is "acting as an agent," not the act of signing.
+And 22 TAC § 535.145 removes the escape hatch a licensee usually reaches for. For purposes of
 § 1101.652(b)(5), the rule provides, "false promise" "includes both oral and written promises," and it
 continues: "The fact that a written agreement between the parties to a real estate transaction does
 not recite a promise made by a real estate license holder to one of the parties or that a person did
@@ -394,12 +398,14 @@ stated termination date of July 31, 2026, at a total compensation of six percent
 sell for $240,000, is an authority that runs 181 days and a fee of $14,400 if the sale closes within
 it. On August 1 the authority is gone and the $14,400 is gone with it — unless the agreement contains
 a protection or override clause, which is a contractual survival term this module takes up in the
-third unit. Notice how naturally students slide from the listing having expired to the commission having been
+third unit. Notice how naturally students slide from the listing having expired to the commission
+having been
 lost. Those are two separate questions governed by two separate instruments: the termination date governs
 authority; the signed writing governs the fee under § 1101.806(c).
 
 Be careful with an evergreen or notice-based expiry. A term providing that the agreement continues
-until either party gives thirty days' written notice is exactly what § 1101.652(b)(12) prohibits, because that
+until either party gives thirty days' written notice is exactly what § 1101.652(b)(12) prohibits,
+because that
 termination date is "subject to prior notice." The one exception the statute itself states is "a
 contract to perform property management services." A property management agreement may run without a
 definite termination date; a listing may not.
@@ -453,7 +459,9 @@ recite. When a Texas seller dies, the property does not sit in limbo waiting for
 devised by the will vests immediately in the devisees" and "all of the person's estate that is not
 devised by the will vests immediately in the person's heirs at law"; subsection (b) provides that "the
 estate of a person who dies intestate vests immediately in the person's heirs at law." Both are
-subject to § 101.051, which makes the estate liable for the decedent's debts.
+subject to § 101.051, under which the estate vests subject to the payment of "the debts of the
+decedent, except as exempted by law" and "any court-ordered child support payments that are delinquent
+on the date of the decedent's death."
 
 Follow the consequence for your listing. Your listing agreement was signed by a person who owned the
 property. At the instant of death, title vests in someone else — devisees or heirs. The person who
@@ -484,8 +492,9 @@ broker and for counsel, not for your judgment in the field.
 ### Destruction of the subject property
 
 If the four-plex in Beaumont that you listed burns to the foundation, there is nothing left to sell in
-the condition the agreement described. **No held Texas statute or Commission rule states a rule that
-destruction of the subject matter terminates an agency**, and this module does not manufacture one.
+the condition the agreement described. **A Texas statute or Commission rule stating
+that destruction of the subject matter terminates an agency was not held for this course**, and this
+module does not manufacture one.
 What the held sources do tell you is what your obligations look like the morning after the fire.
 Rule 22 TAC § 535.156(c) imposes "an affirmative duty to keep the principal informed at all times of
 significant information applicable to the transaction or transactions in which the license holder is
@@ -615,7 +624,8 @@ the cause of action accrues.
 Begin with the exact scope of what Texas law holds. The one held provision that squarely prohibits
 disclosure of a client's confidential information is Occupations Code § 1101.651(d), and it is
 addressed to a specific role. Subsection (d) provides that a broker, and any broker or sales agent
-appointed under § 1101.560 "who acts as an intermediary under Subchapter L," may not do five things. The first two are the price disclosures: such a person may not "disclose to the buyer or
+appointed under § 1101.560 "who acts as an intermediary under Subchapter L," may not do five
+things. The first two are the price disclosures: such a person may not "disclose to the buyer or
 tenant that the seller or landlord will accept a price less than the asking price, unless otherwise
 instructed in a separate writing by the seller or landlord," and may not "disclose to the seller or
 landlord that the buyer or tenant will pay a price greater than the price submitted in a written offer
@@ -674,7 +684,8 @@ liability shield on the HIV question. Those provisions do not expire with the li
 
 ### The accounting duty for trust money
 
-Money is where the claim that the deal is over gets tested, and 22 TAC § 535.146 is the rule that tests them.
+Money is where the claim that the deal is over gets tested, and 22 TAC § 535.146 is the rule that
+tests them.
 Start with its definition, which is broader than most licensees expect: "Trust money" means "client's
 money, earnest money, rent, unearned fees, security deposits, or any money held on behalf of another
 person." Unearned fees and security deposits are in that list. So is any money at all held on behalf
@@ -732,7 +743,7 @@ termination of the real estate transaction." Note that (b)(31) is phrased around
 completion or termination — the trust obligation is defined by the transaction's life, not the
 agency's.
 
-Finally, § 535.146(f): "A broker must maintain all documentation regarding a trust account for four
+Finally, § 535.146(e): "A broker must maintain all documentation regarding a trust account for four
 years from the date the document is received or created by the broker." Four years, per document,
 from receipt or creation — a different measuring point from the general records rule discussed below,
 and worth keeping separate in your head.
@@ -821,7 +832,8 @@ reaches one who "fails or refuses to provide, on request, a copy of a document r
 estate transaction to a person who signed the document." Both survive termination on their face:
 neither is limited to a live agency. When a former seller asks for the survey she gave you, you return
 it and keep a copy for the file. Refusing to hand back an owner's document because you are in a dispute
-about a fee is precisely the conduct § 1101.652(a)(5) describes, and being owed money is unlikely to be the
+about a fee is precisely the conduct § 1101.652(a)(5) describes, and being owed money is unlikely
+to be the
 "just cause" the statute contemplates.
 
 ### Statute reading exercise: What § 1101.651(d) does and does not say

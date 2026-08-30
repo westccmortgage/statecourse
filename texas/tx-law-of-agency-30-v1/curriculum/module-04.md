@@ -13,15 +13,15 @@ and state why § 1101.806(c) makes the writing existential rather than merely pr
 the exclusive right to sell, exclusive agency and open listing by their money consequence to seller
 and broker, and apply 22 TAC § 535.16 to decide when a broker may take a net listing and what two
 protections the rule then forces into the agreement; state what an exclusive listing does and does
-not prevent a competing license holder from doing, reading § 1101.652(b)(22) together with 22 TAC §
-535.153 and the offer-delivery safe harbor in § 1101.557(c)(3); describe the concrete, sourced
-benefits a seller obtains from representation under § 1101.557(b), 22 TAC § 535.2(b), 22 TAC §
-535.156 and 22 TAC § 535.157, and separate those from marketing claims; explain what subagency is,
+not prevent a competing license holder from doing, reading § 1101.652(b)(22) together with 22 TAC
+§ 535.153 and the offer-delivery safe harbor in § 1101.557(c)(3); describe the concrete, sourced
+benefits a seller obtains from representation under § 1101.557(b), 22 TAC § 535.2(b), 22 TAC
+§ 535.156 and 22 TAC § 535.157, and separate those from marketing claims; explain what subagency is,
 why the Texas statutes held for this course never use the word, where the listing broker's exposure
 actually comes from under § 1101.803, and what § 1101.805(d) does to a seller's vicarious liability;
 and execute the disclosure sequence a listing generates — the first-contact representation
-disclosure under § 1101.558(b), the written notice at first substantive communication under §
-1101.558(b-1) delivered by one of the methods 22 TAC § 531.20(c) allows, and the seller's disclosure
+disclosure under § 1101.558(b), the written notice at first substantive communication under
+§ 1101.558(b-1) delivered by one of the methods 22 TAC § 531.20(c) allows, and the seller's disclosure
 notice under Property Code § 5.008 — while naming the § 1101.652 grounds that punish getting
 representation status wrong.
 
@@ -63,8 +63,8 @@ work directly: subparagraph (iii), "negotiates or attempts to negotiate the list
 purchase, or lease of real estate"; subparagraph (iv), "lists or offers, attempts, or agrees to list
 real estate for sale, lease, or exchange"; and subparagraph (viii), "procures or assists in
 procuring a prospect to effect the sale, exchange, or lease of real estate". Soliciting the listing
-is brokerage. Agreeing to take it is brokerage. Working it is brokerage. Commission Rule 22 TAC §
-535.4(f) states the point without ornament: "A real estate license is required for a person to
+is brokerage. Agreeing to take it is brokerage. Working it is brokerage. Commission Rule 22 TAC
+§ 535.4(f) states the point without ornament: "A real estate license is required for a person to
 solicit listings or to negotiate in Texas for listings."
 
 And the listing does not belong to you. It belongs to your broker. 22 TAC § 535.2(g) provides:
@@ -98,8 +98,8 @@ for oil and gas leases, royalties, minerals and mineral interests. A student who
 authority, and if a mineral-heavy West Texas transaction ever puts the question in front of that
 student, the student will not know which statute is doing the work.
 
-The statute that does the work for ordinary real estate commissions is in TRELA. Occupations Code §
-1101.806 is titled LIABILITY FOR PAYMENT OF COMPENSATION OR COMMISSION, and it has four subsections
+The statute that does the work for ordinary real estate commissions is in TRELA. Occupations Code
+§ 1101.806 is titled LIABILITY FOR PAYMENT OF COMPENSATION OR COMMISSION, and it has four subsections
 that you should be able to recite in substance. Subsection (a) carves two things out of the
 section's reach: it "does not: (1) apply to an agreement to share compensation among license
 holders; or (2) limit a cause of action among brokers for interference with business relationships."
@@ -221,8 +221,8 @@ attorney licensed by this state" carrying the identifying content the rule then 
 words that subsection is aimed at the instrument that binds the sale, exchange, option or lease.
 Which listing agreement forms, if any, the Commission has approved for mandatory use is not
 something the sources held for this course state, and this module therefore does not tell you. What
-the held sources do tell you is what such a form must contain if the Commission adopts one (§
-1101.155(c)) and what the alternative-form pathway requires (§ 537.11(a)(4)). In ordinary Texas
+the held sources do tell you is what such a form must contain if the Commission adopts one (
+§ 1101.155(c)) and what the alternative-form pathway requires (§ 537.11(a)(4)). In ordinary Texas
 residential practice the listing form used is a trade-association form — that is a statement about
 practice, not about law, and nothing is cited for it.
 
@@ -291,16 +291,16 @@ You should be able to answer that question without evasion, and you should be ab
 brokerage will and will not do under each structure. What you must not do is take an exclusive right
 to sell while telling the seller it behaves like an exclusive agency. Section 1101.652(b)(5) reaches
 a license holder who "makes a false promise that is likely to influence a person to enter into an
-agreement when the license holder is unable or does not intend to keep the promise", and §
-1101.652(b)(2) reaches conduct "that is dishonest or in bad faith or that demonstrates
+agreement when the license holder is unable or does not intend to keep the promise", and
+§ 1101.652(b)(2) reaches conduct "that is dishonest or in bad faith or that demonstrates
 untrustworthiness".
 
 One more concept belongs here and cannot be sourced: the industry doctrine of **procuring cause**,
 used to decide which of two competing brokers earned a fee. The phrase "procuring cause" does not
 appear anywhere in the Occupations Code chapter or the Commission rules held for this course, and no
-source stating the doctrine's elements was held. It is therefore not taught here. What is held is §
-1101.806(a)(1) and (2), which put compensation-sharing agreements among license holders outside §
-1101.806 and preserve interference claims among brokers — which is to say that Texas leaves
+source stating the doctrine's elements was held. It is therefore not taught here. What is held is
+§ 1101.806(a)(1) and (2), which put compensation-sharing agreements among license holders outside
+§ 1101.806 and preserve interference claims among brokers — which is to say that Texas leaves
 broker-versus-broker fee disputes to the brokers' own agreements and to other law.
 
 **Net listings**
@@ -426,8 +426,8 @@ full before answering.
    the subsection require, and whose signature does it *not* require? What does that asymmetry mean
    for a broker whose listing agreement was signed by only one of two spouses who jointly own the
    property?
-2. Section 26.01(b) lists eight categories. Read subdivision (7) with its four subparagraphs. Does §
-   26.01(b) list a promise to pay a commission on the sale of an ordinary single-family residence?
+2. Section 26.01(b) lists eight categories. Read subdivision (7) with its four subparagraphs. Does
+§ 26.01(b) list a promise to pay a commission on the sale of an ordinary single-family residence?
    If it does not, which held statute supplies the writing requirement for that promise?
 3. Section 1101.806(b) requires the plaintiff to allege and prove something about status. What must
    be proved, and at what point in time does the statute measure it — when the compensation was
@@ -578,8 +578,8 @@ agreement — knocks on the Hallmans' door while Nguyen's sign is in the yard.
    elements are satisfied on these facts?
 3. Suppose instead Ellis telephones Nguyen, obtains Nguyen's consent to hand the written offer
    directly to the Hallmans because Nguyen is out of state, emails Nguyen a copy of the offer the
-   same hour, and delivers the offer to the Hallmans without discussing its terms. Apply §
-   1101.557(c)(3) condition by condition and state whether the safe harbor covers Ellis.
+   same hour, and delivers the offer to the Hallmans without discussing its terms. Apply
+§ 1101.557(c)(3) condition by condition and state whether the safe harbor covers Ellis.
 4. The house sells for $358,000 under the listing. Compute the total compensation at 5.5 percent.
    Then compute what the Hallmans would have owed had this been an exclusive agency listing and had
    the Hallmans themselves produced the buyer with no broker involvement, and state the dollar
@@ -613,8 +613,8 @@ to tell the client everything.
 **Information, including every offer.** Section 1101.557(b)(2) obligates the broker to "inform the
 party if the broker receives material information related to a transaction to list, buy, sell, or
 lease the party's real estate, including the receipt of an offer by the broker", and (b)(3) requires
-the broker to "answer the party's questions and present any offer to or from the party." 22 TAC §
-535.156(a) states the rule with its one exception, and the exception is the part to memorize: "A
+the broker to "answer the party's questions and present any offer to or from the party." 22 TAC
+§ 535.156(a) states the rule with its one exception, and the exception is the part to memorize: "A
 license holder shall convey to the principal all known information which would affect the
 principal's decision on whether or not to make, accept or reject offers; however, if the principal
 has agreed in writing that offers are not to be submitted after the principal has entered into a
@@ -642,8 +642,8 @@ principal." The words are "affirmative" and "at all times". The seller does not 
 to his or her principal, a broker or sales agent representing another party to a real estate
 transaction, or an unrepresented party to a real estate transaction within two calendar days." Two
 **calendar** days, not business days, and note that the duty runs to unrepresented parties and to
-the other side's license holder as well as to your own client. Inside the brokerage, 22 TAC §
-535.2(j) requires the broker or delegated supervisor to "respond to sponsored sales agents within
+the other side's license holder as well as to your own client. Inside the brokerage, 22 TAC
+§ 535.2(j) requires the broker or delegated supervisor to "respond to sponsored sales agents within
 two calendar days", and § 535.2(k) requires delivery of Commission correspondence to sponsored sales
 agents "within three calendar days after receipt."
 
@@ -799,8 +799,8 @@ sales agent associated with or acting for the broker." Section 1101.805 relieves
 vicarious liability for license holders. It does not relieve a *broker* of responsibility for the
 broker's own sales agents. Section 1101.803 states that responsibility affirmatively: the broker "is
 liable to the commission, the public, and the broker's clients for any conduct engaged in under this
-chapter by the broker or by a sales agent associated with or acting for the broker." And 22 TAC §
-535.2(a) sets the mechanics: "Unless such scope is limited or revoked in writing, a broker is
+chapter by the broker or by a sales agent associated with or acting for the broker." And 22 TAC
+§ 535.2(a) sets the mechanics: "Unless such scope is limited or revoked in writing, a broker is
 responsible for the authorized acts of the broker's sales agents, but the broker is not required to
 supervise the sales agents directly. If a broker permits a sponsored sales agent to conduct
 activities beyond the scope explicitly authorized by the broker, those are acts for which the broker
@@ -979,8 +979,8 @@ or trust", one "from one co-owner to one or more other co-owners", one "made to 
 person or persons in the lineal line of consanguinity of one or more of the transferors", one "to or
 from any governmental entity", and one "of a new residence of not more than one dwelling unit which
 has not previously been occupied for residential purposes". An estate sale you list for an executor
-may sit inside the fiduciary exception. That does not mean nothing must be disclosed — §
-1101.652(b)(4) still reaches a license holder who fails "to disclose to a potential buyer a defect
+may sit inside the fiduciary exception. That does not mean nothing must be disclosed —
+§ 1101.652(b)(4) still reaches a license holder who fails "to disclose to a potential buyer a defect
 described by Subdivision (3) that is known to the license holder", and that duty is yours,
 personally, and does not switch off because the seller's statutory notice duty does.
 
@@ -1063,7 +1063,7 @@ order.
    transaction on these facts, what he may lawfully write for items he does not know, and precisely
    what remedy the buyer acquires if a contract goes effective without the notice — including when
    the clock starts and what reasons the buyer must give.
-4. Tuesday. Your own sponsored colleague at Ridgeline brings a buyer. Identify the statutory consent
+4. Tuesday. Another sales agent sponsored by Ridgeline brings a buyer of her own. Identify the statutory consent
    already in place and the section that makes the listing sufficient to establish it; then state
    the section that requires the broker to agree to act as an intermediary once the brokerage
    represents both sides, and one specific thing § 1101.651(d) now forbids you to tell the buyer.
@@ -1084,13 +1084,13 @@ to that document and to a handful of sections that surround it.
 The document is the listing agreement, and it does two jobs at once. It is an employment contract,
 and it is the act that makes a broker an agent, because Occupations Code § 1101.557(a) provides that
 a broker who represents a party or "who lists real estate for sale under an exclusive agreement for
-a party is that party's agent." Soliciting and negotiating listings is licensed activity under §
-1101.002(1)(A)(iii), (iv) and (viii) and 22 TAC § 535.4(f), and under 22 TAC § 535.2(g) listings
+a party is that party's agent." Soliciting and negotiating listings is licensed activity under
+§ 1101.002(1)(A)(iii), (iv) and (viii) and 22 TAC § 535.4(f), and under 22 TAC § 535.2(g) listings
 "must be solicited and accepted in a broker's name." The writing is not prudence. Section
 1101.806(c) says a person "may not maintain an action in this state to recover a commission for the
 sale or purchase of real estate" unless the promise, agreement or a memorandum of it is in writing
-and signed by the party against whom the action is brought or that party's authorized signer, and §
-1101.806(b) adds that the claimant must allege and prove license-holder status at the time the act
+and signed by the party against whom the action is brought or that party's authorized signer, and
+§ 1101.806(b) adds that the claimant must allege and prove license-holder status at the time the act
 was commenced, or attorney status. Business & Commerce Code § 26.01(b) does not list an ordinary
 real estate commission promise — its commission subdivision, (b)(7), reaches oil and gas leases,
 royalties, minerals and mineral interests — so § 1101.806(c) is the provision doing the work.
@@ -1100,12 +1100,12 @@ where the license holder failed to give the written abstract-or-title-policy adv
 requires, which § 1101.652(b)(29) separately makes a disciplinary ground.
 
 TRELA contains no single list of required listing terms; you assemble it from the prohibitions. A
-definite termination date not subject to prior notice, with a property-management carve-out (§
-1101.652(b)(12)). Authorized price and terms (§ 1101.652(b)(19) and (20)). Written consent for the
+definite termination date not subject to prior notice, with a property-management carve-out (
+§ 1101.652(b)(12)). Authorized price and terms (§ 1101.652(b)(19) and (20)). Written consent for the
 sign (§ 1101.652(b)(18)). A negotiability statement, which § 1101.155(c)(1) requires in any listing
 contract form the Commission adopts, alongside coastal hazards information under (c)(2).
-Intermediary authorization, which § 1101.559(b) says a listing can supply if it specifies the §
-1101.651(d) prohibited conduct in conspicuous bold or underlined print. The file itself, retained
+Intermediary authorization, which § 1101.559(b) says a listing can supply if it specifies the
+§ 1101.651(d) prohibited conduct in conspicuous bold or underlined print. The file itself, retained
 under 22 TAC § 535.2(h) for at least four years from closing, termination or the end of the
 transaction. And the listing types — exclusive right to sell, exclusive agency, open — are practice
 vocabulary the held statutes do not define; the difference between the first two is exactly the fee
@@ -1135,26 +1135,26 @@ offer only when the party's broker consents, a copy goes to that broker, and the
 nothing else that would violate subdivision (22).
 
 The benefits of representation are specific and citable: fiduciary status under 22 TAC § 531.2 and
-the "highest fiduciary obligation" language of 22 TAC § 535.2(b); every offer conveyed under §
-1101.557(b)(2) and (3) and 22 TAC § 535.156(a), subject to that rule's single written post-contract
+the "highest fiduciary obligation" language of 22 TAC § 535.2(b); every offer conveyed under
+§ 1101.557(b)(2) and (3) and 22 TAC § 535.156(a), subject to that rule's single written post-contract
 exception; the client's interest above the license holder's under § 535.156(b); affirmative,
 continuous updating under § 535.156(c); a two-calendar-day response deadline under 22 TAC § 535.157;
 the duty to "negotiate the best possible transaction for the principal" in 22 TAC § 535.16; broker
 accountability under § 1101.803; and records that still exist four years later. Subagency, by
 contrast, appears nowhere in the held Texas sources — the words "subagent" and "multiple listing
 service" do not occur in Chapter 1101 or the held rules, and the common-law doctrine was not held —
-so what you carry forward is the structure and the statutes that actually allocate risk: §
-1101.805(b) prevails over other law including common law; § 1101.805(d) relieves a party of
+so what you carry forward is the structure and the statutes that actually allocate risk:
+§ 1101.805(b) prevails over other law including common law; § 1101.805(d) relieves a party of
 liability for a license holder's misrepresentation unless the party knew of the falsity and failed
 to disclose that knowledge; § 1101.805(e) mirrors it for license holders; and § 1101.805(c)
 preserves the broker's responsibility for the broker's own sales agents, which § 1101.803 and 22 TAC
 § 535.2(a) state directly.
 
 Finally the disclosure sequence, which you should be able to run from memory: representation
-disclosed orally or in writing at first contact with another party or that party's license holder (§
-1101.558(b)); the written IABS notice at first substantive communication about specific real
-property, in at least 10-point font (§ 1101.558(b-1)), subject to the three exceptions in §
-1101.558(c), delivered by one of the four methods in 22 TAC § 531.20(c) and never as a footnote or
+disclosed orally or in writing at first contact with another party or that party's license holder (
+§ 1101.558(b)); the written IABS notice at first substantive communication about specific real
+property, in at least 10-point font (§ 1101.558(b-1)), subject to the three exceptions in
+§ 1101.558(c), delivered by one of the four methods in 22 TAC § 531.20(c) and never as a footnote or
 signature-block link (§ 531.20(d)); the seller's disclosure notice delivered on or before the
 effective date under Property Code § 5.008(f), failing which the buyer may terminate "for any reason
 within seven days after receiving the notice"; and, throughout, § 1101.652(b)(7)'s command to make

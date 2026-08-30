@@ -71,7 +71,7 @@ forever, and has in fact never complied with § 1101.558(b-1) with any client. T
 that shortcut by name. If you send the IABS as a link in the body of an email, the body of the email
 must specifically refer to the IABS Notice.
 
-The timing trigger is "first substantive communication." The statute does not define the phrase, and
+The timing trigger is "first substantive communication". The statute does not define the phrase, and
 this course does not have a definition to give you, so teach yourself the safe habit instead: the
 Pflugerville email named a specific property and discussed a proposed transaction, so treat that
 reply as the trigger and attach the completed IABS to it. Section 1101.558(c) lists the three
@@ -103,7 +103,7 @@ prepare instead is described in the title of the rule and in the Act's definitio
 conclusion relating to the estimated price of real property if the analysis, opinion, or conclusion:
 (a) is not referred to as an appraisal; (b) is provided in the ordinary course of the person's
 business; and (c) is related to the actual or potential management, acquisition, disposition, or
-encumbrance of an interest in real property." A comparative market analysis is brokerage. An
+encumbrance of an interest in real property". A comparative market analysis is brokerage. An
 appraisal is not.
 
 Because the two products look alike to a consumer, § 535.17 requires you to say so in writing. If
@@ -165,7 +165,7 @@ Three further statutory constraints shape the listing paper itself. Section 1101
 a ground for discipline if a license holder "fails to specify a definite termination date that is
 not subject to prior notice in a contract, other than a contract to perform property management
 services, in which the license holder agrees to perform services for which a license is required
-under this chapter." An open-ended listing "until sold" is a disciplinary problem, not a marketing
+under this chapter". An open-ended listing "until sold" is a disciplinary problem, not a marketing
 preference. Section 1101.155(c) requires that a listing contract form adopted by the Commission
 "must include: (1) a provision informing the parties to the contract that real estate commissions
 are negotiable; and (2) a provision explaining the availability of Texas coastal natural hazards
@@ -195,9 +195,9 @@ renewal problem.
 The Business & Commerce Code reinforces the point from the other direction. Section 26.01(a)
 provides that a promise or agreement described in subsection (b) "is not enforceable unless the
 promise or agreement, or a memorandum of it, is (1) in writing; and (2) signed by the person to be
-charged with the promise or agreement or by someone lawfully authorized to sign for him," and §
+charged with the promise or agreement or by someone lawfully authorized to sign for him", and §
 26.01(b)(4) and (b)(5) apply that rule to "a contract for the sale of real estate" and "a lease of
-real estate for a term longer than one year." So the listing must be written to be enforceable as to
+real estate for a term longer than one year". So the listing must be written to be enforceable as to
 your fee under § 1101.806(c), and the sales contract you will later write must be written to be
 enforceable at all.
 
@@ -211,7 +211,7 @@ by this section."
 
 Four features of that sentence control your workflow. It is the **seller's** duty, not yours; your
 job is to obtain it, deliver it and never fill it in for them. It applies to residential property
-"comprising not more than one dwelling unit," so a duplex is outside it. It permits a substantially
+"comprising not more than one dwelling unit", so a duplex is outside it. It permits a substantially
 similar form so long as the form contains at a minimum all the items in the statutory notice. And
 the notice itself opens with a legend the statute prints in capitals: "THIS NOTICE IS A DISCLOSURE
 OF SELLER'S KNOWLEDGE OF THE CONDITION OF THE PROPERTY AS OF THE DATE SIGNED BY SELLER AND IS NOT A
@@ -234,17 +234,17 @@ notice until after an offer is accepted has handed the buyer a free option on th
 the listing appointment.
 
 Section 5.008(e) exempts eleven categories of transfer, including a transfer "pursuant to a court
-order or foreclosure sale," a transfer "by a trustee in bankruptcy," a transfer "by a fiduciary in
-the course of the administration of a decedent's estate, guardianship, conservatorship, or trust," a
-transfer "from one co-owner to one or more other co-owners," a transfer "made to a spouse or to a
-person or persons in the lineal line of consanguinity of one or more of the transferors," a transfer
+order or foreclosure sale", a transfer "by a trustee in bankruptcy," a transfer "by a fiduciary in
+the course of the administration of a decedent's estate, guardianship, conservatorship, or trust", a
+transfer "from one co-owner to one or more other co-owners", a transfer "made to a spouse or to a
+person or persons in the lineal line of consanguinity of one or more of the transferors", a transfer
 "to or from any governmental entity," and a transfer "of a new residence of not more than one
-dwelling unit which has not previously been occupied for residential purposes." Estate sales and new
+dwelling unit which has not previously been occupied for residential purposes". Estate sales and new
 construction are the two exemptions you will meet most often. An exemption from § 5.008 is not,
 however, permission to conceal: § 1101.652(b)(3) and (b)(4) make it a ground for discipline to make
 "a material misrepresentation to a potential buyer concerning a significant defect, including a
 latent structural defect, known to the license holder" or to fail "to disclose to a potential buyer
-a defect described by Subdivision (3) that is known to the license holder," and those duties do not
+a defect described by Subdivision (3) that is known to the license holder", and those duties do not
 depend on which form is used.
 
 Two things you are *not* required to disclose. Section 5.008(c) provides that "A seller or seller's
@@ -271,7 +271,7 @@ Internet, business stationery, business cards, displays, signs and billboards." 
 only two things: "a communication from a license holder to the license holder's current client; and
 a directional sign that may also contain only the broker's name or logo."
 
-Every advertisement must include, "in a readily noticeable location in the advertisement," two
+Every advertisement must include, "in a readily noticeable location in the advertisement", two
 items: "the name of the license holder or team placing the advertisement" and "the broker's name in
 at least half the size of the largest contact information for any sales agent, associated broker, or
 team name contained in the advertisement." That is a size ratio, not a mere presence requirement,
@@ -295,7 +295,7 @@ Commission"; if it "creates confusion regarding the permitted use of a property"
 the value of a property, unless it is based on an appraisal that is disclosed and readily available
 upon request by a party or it is given in compliance with §535.17"; or if it "implies the person
 making the advertisement was involved in a transaction regarding a property when the person had no
-such role."
+such role".
 
 Three of the listed items are pure timing rules, and they catch careful people. An advertisement
 violates the rule if it is "about a property that is subject to an exclusive listing agreement
@@ -303,7 +303,7 @@ without the permission of the listing broker and without disclosing the name of 
 unless the listing broker has expressly agreed in writing to waive disclosure"; if it is "offering a
 listed property that is not discontinued within 10 days after the listing agreement is no longer in
 effect"; or if it is "about a property 10 days or more after the closing of a transaction unless the
-current status of the property is included in the advertisement." So when your Pflugerville listing
+current status of the property is included in the advertisement". So when your Pflugerville listing
 expires, you have ten days to take down the sign, the landing page, the boosted post and the
 syndicated feed. When it closes, your "Just sold!" post is fine for ten days, and after that it
 needs the current status included.
@@ -320,9 +320,9 @@ Take the exception seriously, and take its limits seriously. The default is that
 the seller. The only escape the rule provides is a written agreement by the principal that offers
 are not to be submitted after the principal has entered into a contract, and even then the relief
 runs only to offers arriving after acceptance. There is no oral version of this exception, and there
-is no "the seller told me not to bother them with lowballs" version. If your Pflugerville seller
-does not want back-up offers presented after they go under contract, that instruction goes in
-writing, signed, in the file.
+is no version that rests on the seller having told you not to bother them with lowball offers. If
+your Pflugerville seller does not want back-up offers presented after they go under contract, that
+instruction goes in writing, signed, in the file.
 
 Rule 535.156 continues with three sentences that decide most complaints: "The license holder must
 put the interest of the license holder's principal above the license holder's own interest. A
@@ -332,7 +332,7 @@ an affirmative duty to keep the principal informed at all times of significant i
 applicable to the transaction or transactions in which the license holder is acting as agent for the
 principal." "A license holder has a duty to convey accurate information to members of the public
 with whom the license holder deals." The word "affirmative" is doing work: silence is a breach. Rule
-535.191 places 22 TAC § 535.156 in the top penalty tier, "$1,000 - $5,000 per violation per day."
+535.191 places 22 TAC § 535.156 in the top penalty tier, "$1,000 - $5,000 per violation per day".
 
 The Act says the same thing in § 1101.557(b). A broker who represents a party or lists real estate
 under an exclusive agreement "must inform the party if the broker receives material information
@@ -345,9 +345,9 @@ law."
 
 Two authority limits govern how you negotiate. Section 1101.652(b)(19) makes it a ground for
 discipline to offer "to sell or lease real property without the knowledge and consent of the owner
-of the real property or the owner's authorized agent," and § 1101.652(b)(20) to offer "to sell or
+of the real property or the owner's authorized agent", and § 1101.652(b)(20) to offer "to sell or
 lease real property on terms other than those authorized by the owner of the real property or the
-owner's authorized agent." You do not float a price your seller has not approved, and you do not
+owner's authorized agent". You do not float a price your seller has not approved, and you do not
 signal flexibility your seller has not authorised — a rule that also disposes of the common
 temptation to tell a buyer's agent that "they'd probably take 375."
 
@@ -356,7 +356,7 @@ money or other trust money that comes into the brokerage is governed by 22 TAC �
 works through it in full because the buyer's side usually delivers it. The second is compensation.
 Section 1101.651(a) permits a licensed broker to pay a commission only to a license holder or to "a
 real estate broker licensed in another state who does not conduct in this state any of the
-negotiations for which the commission or other compensation is paid," and § 1101.651(b) provides
+negotiations for which the commission or other compensation is paid", and § 1101.651(b) provides
 that "A sales agent may not accept compensation for a real estate transaction from a person other
 than the broker that is sponsoring the sales agent or was sponsoring the sales agent when the sales
 agent earned the compensation." Rule 535.3 states the sales agent's side of the same rule: a sales
@@ -370,18 +370,16 @@ Open 22 TAC § 535.17 and 22 TAC § 535.16 and answer from the text alone.
 
 1. Section 535.17 requires a specific sentence to accompany a broker price opinion or CMA. Copy the
 sentence exactly, then state the two formatting requirements the rule imposes on it and where in the
-document the rule says it must appear.
-2. Section 535.17 says a sales agent may prepare, sign and present a CMA. Whose name must it be
-submitted in, and who does the rule say is responsible for it? What does that tell you about why the
-answer is not "the person who did the work"?
-3. Section 535.16 creates an obligation to provide a BPO or CMA in two situations. Name both, and
-identify the words in the second situation that limit it — the rule does not say a license holder
-must produce a CMA before buying any property at all.
-4. Section 535.16 permits a net listing only in stated circumstances. List every condition the rule
-attaches, including the two terms the listing agreement itself must contain. Does the rule say a net
-listing is prohibited?
-5. Neither section states a required format, comparable count or adjustment method for a CMA. What
-follows for a licence holder who wants to know how many comparables to use?
+document the rule says it must appear. 2. Section 535.17 says a sales agent may prepare, sign and
+present a CMA. Whose name must it be submitted in, and who does the rule say is responsible for it?
+What does that tell you about why the answer is not "the person who did the work"? 3. Section 535.16
+creates an obligation to provide a BPO or CMA in two situations. Name both, and identify the words
+in the second situation that limit it — the rule does not say a license holder must produce a CMA
+before buying any property at all. 4. Section 535.16 permits a net listing only in stated
+circumstances. List every condition the rule attaches, including the two terms the listing agreement
+itself must contain. Does the rule say a net listing is prohibited? 5. Neither section states a
+required format, comparable count or adjustment method for a CMA. What follows for a licence holder
+who wants to know how many comparables to use?
 
 ### Applied exercise: The Pflugerville listing
 
@@ -395,17 +393,15 @@ has told you on the phone, but not in writing, "don't bring me anything under 38
 
 1. Under 22 TAC § 535.156, may you decline to present the 372,000 dollar offer because of the
 seller's phone instruction? Identify the only exception the rule states and say why it does not
-apply on these facts.
-2. Under 22 TAC § 535.157, by when must you respond to the second buyer's agent's call? State the
-period the rule gives and how it is counted.
-3. The seller accepts the 380,000 dollar offer. Compute the total commission at 5.5 percent, the
-amount going to the cooperating broker at 2.5 percent, and the amount retained by your brokerage.
-4. The § 5.008 notice was delivered on 3 March, well before the contract. Suppose instead it had
-been delivered on 20 April, after the contract's effective date. State the buyer's right under §
-5.008(f), including its length and the reasons required to exercise it.
-5. The listing expires on 3 September without a sale, and your boosted Facebook post advertising the
-property is still live on 20 September. Identify the provision of 22 TAC § 535.155 you have violated
-and the deadline you missed.
+apply on these facts. 2. Under 22 TAC § 535.157, by when must you respond to the second buyer's
+agent's call? State the period the rule gives and how it is counted. 3. The seller accepts the
+380,000 dollar offer. Compute the total commission at 5.5 percent, the amount going to the
+cooperating broker at 2.5 percent, and the amount retained by your brokerage. 4. The § 5.008 notice
+was delivered on 3 March, well before the contract. Suppose instead it had been delivered on 20
+April, after the contract's effective date. State the buyer's right under § 5.008(f), including its
+length and the reasons required to exercise it. 5. The listing expires on 3 September without a
+sale, and your boosted Facebook post advertising the property is still live on 20 September.
+Identify the provision of 22 TAC § 535.155 you have violated and the deadline you missed.
 
 ## Unit: The Broker Working for/with the Buyer
 
@@ -422,7 +418,7 @@ signed piece of paper first.
 triplex, or quadraplex; or (3) a unit in a multiunit residential structure in which title to an
 individual unit is transferred to the owner of the unit under a condominium or cooperative system."
 Note that this definition is broader than the § 5.008 seller's-disclosure definition, which reaches
-only property "comprising not more than one dwelling unit." A fourplex in Waco is residential real
+only property "comprising not more than one dwelling unit". A fourplex in Waco is residential real
 property for § 1101.563 and is outside § 5.008. Getting these two definitions confused is a genuine
 trap; they are different statutes doing different jobs.
 
@@ -447,7 +443,7 @@ is exclusive or non-exclusive; (D) as applicable, that the license holder: (i) r
 prospective buyer as the buyer's agent; or (ii) does not represent the prospective buyer as the
 buyer's agent if the only act of real estate brokerage being performed is showing real property
 under Section 1101.562; and (E) the amount or rate of compensation the broker will receive and how
-this amount will be determined." And it must "disclose in conspicuous language that broker
+this amount will be determined". And it must "disclose in conspicuous language that broker
 compensation is not set by law and is fully negotiable."
 
 Two structural rules follow. Section 1101.563(d): "A license holder who enters into a written
@@ -482,7 +478,7 @@ agent who represents nobody delivers the IABS.
 Subsection (c) is the narrow safe harbour: "Notwithstanding Subsections (a)(3) and (4), a broker
 showing real property under this section may confirm information to a party regarding the size,
 price, and terms of the real property available for sale or lease." Size, price, terms. Three items,
-and the verb is "confirm." You may confirm that the house is 2,140 square feet, that the list price
+and the verb is "confirm". You may confirm that the house is 2,140 square feet, that the list price
 is 419,000 dollars, and that the seller wants a 30-day close. You may not tell them what it is
 worth.
 
@@ -557,19 +553,19 @@ content the rule specifies, or a form "prepared by the Texas Real Estate Broker-
 approved by the Commission for voluntary use by license holders."
 
 Learn the exceptions precisely, because each has a limit built into it. The principal exception is
-available only when you are "functioning solely as a principal, not as an agent." The owner-form
+available only when you are "functioning solely as a principal, not as an agent". The owner-form
 exception requires that the form be "prepared by the property owner or prepared by an attorney and
 required by a property owner" — a builder's own contract qualifies; a form your buyer downloaded
 does not. And the attorney-or-trade-association form is available only where the Commission has
 approved *no* mandatory form for that type of transaction, and the form must contain the attorney's
 or association's name, the name of the broker or trade association it was prepared for, a statement
-of the transaction type approved, "any restrictions on the use of the form," and, if applicable, "an
+of the transaction type approved, "any restrictions on the use of the form", and, if applicable, "an
 explanation of how the form changes the rights, obligations, or remedies of a party under a contract
 form approved for mandatory use by the Commission and a statement that license holders may not
-practice law or give legal advice."
+practice law or give legal advice".
 
 The Act backs this with § 1101.652(a-1)(3), which makes it a ground for discipline that a license
-holder "fails to use a contract form required by the commission under Section 1101.155," and with §
+holder "fails to use a contract form required by the commission under Section 1101.155", and with §
 1101.155(b), which limits the Commission in the other direction: it "may not prohibit a license
 holder from using for the sale, exchange, option, or lease of an interest in real property a
 contract form that is: (1) prepared by the property owner; or (2) prepared by an attorney and
@@ -612,7 +608,7 @@ obligation to disclose to the license holder's principals all pertinent facts th
 knowledge of the license holder, including such facts which might affect the status of or title to
 real estate;" and it does not "prevent the license holder from explaining to the license holder's
 principals the meaning of informational items or choices in a contract form, as long as the license
-holder does not practice law or give legal advice." So explaining what a blank is for is permitted;
+holder does not practice law or give legal advice". So explaining what a blank is for is permitted;
 telling your buyer what the paragraph will do to their legal position is not.
 
 And it identifies two acts that are affirmatively not the practice of law: "add informational items
@@ -687,7 +683,7 @@ or parties entitled to the money within a reasonable time, which the Commission 
 not later than the 30th day after the date the demand is made." If all parties later agree in
 writing to a different disbursement, the same thirty-day outer limit runs from receipt of that
 subsequent written agreement. In both cases "The broker must immediately notify all parties in
-writing of any disbursement of trust money." And where the broker genuinely cannot tell who is
+writing of any disbursement of trust money". And where the broker genuinely cannot tell who is
 entitled, the rule provides the exit: "If the broker cannot reasonably determine to which party or
 parties the trust money should be paid, the broker may pay the trust money into the registry of a
 court and interplead the parties."
@@ -695,7 +691,7 @@ court and interplead the parties."
 Two more operational rules. If a trust-money check is dishonoured, "the broker shall immediately
 notify all parties to the transaction in writing." And the broker "must retain a documentary record
 of each deposit or withdrawal from the trust account and provide an accounting to each beneficiary
-of trust money at least monthly if there has been any activity in the account," with all
+of trust money at least monthly if there has been any activity in the account", with all
 trust-account documentation kept "for four years from the date the document is received or created
 by the broker."
 
@@ -706,7 +702,7 @@ deposit escrow or trust funds within a reasonable time either "in trust with a t
 authorized to do business in this state" or "in a custodial, trust, or escrow account maintained for
 that purpose in a banking institution authorized to do business in this state"; and §
 1101.652(b)(31) for disbursing such money "before the completion or termination of the real estate
-transaction."
+transaction".
 
 ### Applied exercise: A Saturday in Cedar Park
 
@@ -717,16 +713,14 @@ the house, is 419,000 a fair price, and would the seller take 400,000.
 
 1. Before you open the door, what must you deliver and what must you sign? Cite § 1101.558(b), §
 1101.563(b) and, if you were not the listing agent, § 1101.558(b-1) and 22 TAC § 531.20, and say
-which apply on these facts and which do not.
-2. She does not want a representation agreement. May you show the house under a showing-only
-agreement? State the two limits § 1101.563(e) places on such an agreement.
-3. Answer each of her three questions consistently with § 1101.562(c) and § 1101.562(a)(3). Which
-may you answer, which may you not, and what exactly does subsection (c) permit you to do?
-4. She decides to write an offer. You are the listing agent and your broker also intends to
-represent her. State what § 1101.561(b) requires of the broker and what § 1101.559(a) requires the
-written consent to contain.
-5. She signs the offer at 4:15 that afternoon. State the written advisory § 1101.555 requires, and
-state the consequence under § 1101.806(d) if you never give it.
+which apply on these facts and which do not. 2. She does not want a representation agreement. May
+you show the house under a showing-only agreement? State the two limits § 1101.563(e) places on such
+an agreement. 3. Answer each of her three questions consistently with § 1101.562(c) and §
+1101.562(a)(3). Which may you answer, which may you not, and what exactly does subsection (c) permit
+you to do? 4. She decides to write an offer. You are the listing agent and your broker also intends
+to represent her. State what § 1101.561(b) requires of the broker and what § 1101.559(a) requires
+the written consent to contain. 5. She signs the offer at 4:15 that afternoon. State the written
+advisory § 1101.555 requires, and state the consequence under § 1101.806(d) if you never give it.
 
 ## Unit: A Practical Guide to Everyday Practice
 
@@ -744,18 +738,18 @@ calendar days."
 Notice the breadth of the list. Your own client, yes — but also the license holder on the other side
 of the deal, and also an unrepresented party. The unrepresented buyer who emails you about your
 listing is owed a response within two calendar days by rule, not by courtesy. Notice also "calendar
-days," not business days. An email received Friday afternoon is answered by Sunday. Rule 535.191
+days", not business days. An email received Friday afternoon is answered by Sunday. Rule 535.191
 places 22 TAC § 535.157 in the "$100 - $1,500 per violation per day" tier, and the phrase "per day"
 should be read carefully: a silence that runs for three weeks is not one violation.
 
-The rule does not say you must resolve the matter within two days. It says respond. "I have your
-offer, my seller is travelling and I will have an answer to you Wednesday" is a response. Silence
-while you wait for something better to say is not.
+The rule does not say you must resolve the matter within two days. It says respond. Telling the
+other agent that you have their offer, that your seller is travelling, and that you will have an
+answer on Wednesday is a response. Silence while you wait for something better to say is not.
 
 Inside the brokerage there are two matching deadlines in 22 TAC § 535.2. A broker or a supervisor
 delegated under subsection (e) of that rule "must respond to sponsored sales agents within two
-calendar days," expressly "In addition to the requirements of §535.157 of this chapter (relating to
-Obligation to Respond Timely)." And a sponsoring broker or delegated supervisor "shall deliver mail
+calendar days", expressly "In addition to the requirements of §535.157 of this chapter (relating to
+Obligation to Respond Timely)". And a sponsoring broker or delegated supervisor "shall deliver mail
 and other correspondence from the Commission to their sponsored sales agents within three calendar
 days after receipt." If you are a sales agent, that second one is your protection: a complaint
 notice addressed to you goes to your broker, and your broker has three calendar days to get it to
@@ -805,13 +799,13 @@ disbursements of compensation for services subject to the Act; property manageme
 appraisals, broker price opinions, and comparative market analyses; and sponsorship agreements
 between the broker and sponsored sales agents."
 
-Read the third item again: "substantive communications with parties to the transaction." Your text
+Read the third item again: "substantive communications with parties to the transaction". Your text
 messages with the buyer's agent about the repair amendment are transaction records. If your
 negotiating happens on a messaging app that deletes after thirty days, you are choosing not to keep
 records the rule requires the broker to hold for four years.
 
 The four-year clock runs from "the date of closing, termination of the contract, or end of a real
-estate transaction," so a deal that dies in option ends the transaction and starts the clock.
+estate transaction", so a deal that dies in option ends the transaction and starts the clock.
 Trust-account documentation has its own parallel four-year rule in 22 TAC § 535.146: "A broker must
 maintain all documentation regarding a trust account for four years from the date the document is
 received or created by the broker."
@@ -827,9 +821,9 @@ Two more record duties fall directly on you. Section 1101.652(a-1)(2) makes it a
 discipline if a license holder "fails or refuses to produce on request, within a reasonable time,
 for inspection by the commission or a commission representative, a document, book, or record that is
 in the license holder's possession and relates to a real estate transaction conducted by the license
-holder." And § 1101.652(b)(28) reaches the consumer side: it is a ground for discipline to fail or
+holder". And § 1101.652(b)(28) reaches the consumer side: it is a ground for discipline to fail or
 refuse "to provide, on request, a copy of a document relating to a real estate transaction to a
-person who signed the document." A seller who asks for a copy of their own listing agreement two
+person who signed the document". A seller who asks for a copy of their own listing agreement two
 years later gets one.
 
 **Habit four: know the line you must not cross when you talk about documents.** The unauthorized
@@ -839,39 +833,39 @@ Unit 2 quoted it in full. Reduce it to four questions you ask yourself before yo
 
 Am I about to give an opinion about what a contract provision does to someone's legal rights? That
 is prohibited: you may not "give advice or opinions as to the legal effect of any contract forms or
-other such instruments which may affect the title to real estate."
+other such instruments which may affect the title to real estate".
 
 Am I about to say something about who owns this property or whether the title is good? Prohibited:
-you may not "give opinions concerning the status or validity of title to real estate."
+you may not "give opinions concerning the status or validity of title to real estate".
 
 Am I about to compose a sentence to go into the contract? Prohibited: you may not "draft or
 recommend language to be included in a contract form defining or affecting the rights, obligations,
 or remedies of the principals of a real estate transaction, including escalation, appraisal, or
-contingency clauses."
+contingency clauses".
 
 Am I about to tell a client that a lawyer is an unnecessary expense or a deal-killer? Prohibited:
 you may not "attempt to prevent or in any manner whatsoever discourage any principal to a real
-estate transaction from employing an attorney."
+estate transaction from employing an attorney".
 
 And there is a fifth, less obvious one. You may not "obtain legal advice from an attorney, directly
 or indirectly, for a principal in a real estate transaction in which the license holder is acting as
 an agent." Calling your brokerage's lawyer to get an answer for your client, then relaying it, is
 prohibited by the rule. What you may do is employ and pay an attorney "to represent only the license
-holder in a real estate transaction," and you may reimburse a principal for attorney's fees incurred
+holder in a real estate transaction", and you may reimburse a principal for attorney's fees incurred
 — the rule says so expressly in the same subsection.
 
 The permitted side of the line is genuinely useful, and you should be able to state it without
 hesitation. You may explain "the meaning of informational items or choices in a contract form, as
-long as the license holder does not practice law or give legal advice." You may add informational
+long as the license holder does not practice law or give legal advice". You may add informational
 items to an authorized form. You may, on a principal's specific written instruction, add or strike
 language so long as the change is conspicuous. And § 537.11 preserves the duty that survives all of
 it: nothing in the section limits "a license holder's fiduciary obligation to disclose to the
 license holder's principals all pertinent facts that are within the knowledge of the license holder,
-including such facts which might affect the status of or title to real estate." You must tell your
+including such facts which might affect the status of or title to real estate". You must tell your
 principal about the fact. You must not opine on its legal effect.
 
 **Habit five: stay inside your competence and your market.** Rule 531.4 obliges a license holder "to
-be knowledgeable and competent as a real estate brokerage practitioner," which the rule breaks into
+be knowledgeable and competent as a real estate brokerage practitioner", which the rule breaks into
 four requirements: "be informed on local market issues and conditions affecting real estate in the
 geographic area where a license holder provides services to a client"; "be informed on national,
 state, and local issues and developments in the real estate industry"; "exercise judgment and skill
@@ -890,14 +884,14 @@ training entitlement. Rule 535.2 requires a sponsoring broker to maintain curren
 and procedures ensuring, among other things, that each sponsored sales agent "is advised of the
 scope of the sales agent's authorized activities subject to the Act and is competent to conduct such
 activities, including having competence in the geographic market area where the sales agent
-represents clients," and that "when a sales agent performs a type of real estate brokerage activity
+represents clients", and that "when a sales agent performs a type of real estate brokerage activity
 for the first three times, the broker must require that the sales agent receive coaching and
 assistance from an experienced license holder competent for that activity." First three times,
 coaching required, by rule. If your broker does not offer it, ask for it and put the request in
 writing.
 
 **Habit six: know the standard you are being judged against.** Rule 531.2 is the fidelity rule, and
-it is short enough to internalise. A license holder acting as an agent for another "is a fiduciary,"
+it is short enough to internalise. A license holder acting as an agent for another "is a fiduciary",
 and the special obligations that creates "demand: that the primary duty of the license holder is to
 represent the interests of the client, and the license holder's position, in this respect, should be
 clear to all parties concerned in a real estate transaction; that, however, the license holder, in
@@ -929,20 +923,17 @@ close the file with the eight record categories 22 TAC § 535.2 lists, and keep 
 
 Open 22 TAC § 537.11 and answer only from its text.
 
-1. The rule requires use of Commission-approved mandatory forms "with the following exceptions."
+1. The rule requires use of Commission-approved mandatory forms "with the following exceptions".
 List all four exceptions in the rule's own terms, and for the fourth, state both alternative sources
-of a form the rule allows.
-2. The rule lists acts a license holder may not do. Identify the one that names three specific
-clause types, and state those three types. Why does naming them matter more than a general
-prohibition would?
-3. The rule states two things that are "not the practice of law" for a license holder. State the
-second one in full, including every condition attached to it. How many separate conditions did you
-count?
-4. Two affirmative advisory duties appear near the end of the section. State both, and state the two
-circumstances that trigger the first.
-5. The rule permits reproduction of approved forms. What must remain identical to the Commission's
-published version, and what two departures are expressly allowed? Does the rule permit a brokerage
-to re-typeset a form so it fits on fewer pages?
+of a form the rule allows. 2. The rule lists acts a license holder may not do. Identify the one that
+names three specific clause types, and state those three types. Why does naming them matter more
+than a general prohibition would? 3. The rule states two things that are "not the practice of law"
+for a license holder. State the second one in full, including every condition attached to it. How
+many separate conditions did you count? 4. Two affirmative advisory duties appear near the end of
+the section. State both, and state the two circumstances that trigger the first. 5. The rule permits
+reproduction of approved forms. What must remain identical to the Commission's published version,
+and what two departures are expressly allowed? Does the rule permit a brokerage to re-typeset a form
+so it fits on fewer pages?
 
 ## Unit: Other Considerations
 
@@ -978,7 +969,7 @@ it does not exempt transactions with other license holders. Note also what trigg
 the transaction, not advertising it. The safest practice, and it is practice rather than rule, is to
 disclose in the listing or advertisement as well, because 22 TAC § 535.155 independently prohibits
 an advertisement that "causes a member of the public to believe that a person not licensed to
-conduct real estate brokerage is engaged in real estate brokerage."
+conduct real estate brokerage is engaged in real estate brokerage".
 
 Then the substantive limit: "A license holder acting on his or her own behalf or in a capacity
 described by subsection (a) shall not use the license holder's expertise to the disadvantage of a
@@ -994,8 +985,8 @@ buy the property yourself, the CMA is mandatory and it goes to the owner. Sectio
 makes it a ground for discipline to engage "in misrepresentation, dishonesty, or fraud when selling,
 buying, trading, or leasing real property in the name of: (A) the license holder; (B) the license
 holder's spouse; or (C) a person related to the license holder within the first degree by
-consanguinity." And § 1101.652(b)(16) reaches the classic abuse: acting "in a dual capacity as
-broker and undisclosed principal in a real estate transaction." Rule 535.191 places 22 TAC § 535.144
+consanguinity". And § 1101.652(b)(16) reaches the classic abuse: acting "in a dual capacity as
+broker and undisclosed principal in a real estate transaction". Rule 535.191 places 22 TAC § 535.144
 in the "$500 - $3,000 per violation per day" tier and § 1101.652(a-1)(1) in the top tier.
 
 **Referral fees, rebates and who may be paid.** The governing statute is § 1101.651. Subsection (a):
@@ -1005,7 +996,7 @@ real estate broker licensed in another state who does not conduct in this state 
 negotiations for which the commission or other compensation is paid." Subsections (b) and (c) run
 the sales agent's side: a sales agent "may not accept compensation for a real estate transaction
 from a person other than the broker that is sponsoring the sales agent or was sponsoring the sales
-agent when the sales agent earned the compensation," and "may not pay a commission to a person
+agent when the sales agent earned the compensation", and "may not pay a commission to a person
 except through the broker that is sponsoring the sales agent at that time."
 
 Rule 535.147 restates the prohibition and then draws two useful lines. An unlicensed person "may
@@ -1024,7 +1015,7 @@ the sales agent has the written consent of the sales agent's sponsoring broker a
 represented by the license holder." Two limits follow immediately: "A commission or fee may not be
 paid to any party to the transaction in a manner that misleads a broker, lender, title company, or
 governmental agency regarding the real estate transaction or the financial resources or obligations
-of the buyer," and a license holder who intends to rebate to a party the license holder does not
+of the buyer", and a license holder who intends to rebate to a party the license holder does not
 represent "must obtain the written consent of the party represented by the license holder before
 making the payment." An undisclosed credit outside closing that changes what the lender thinks the
 buyer brought to the table is precisely what the first limit forbids.
@@ -1032,14 +1023,14 @@ buyer brought to the table is precisely what the first limit forbids.
 If you advertise a rebate, 22 TAC § 535.155 adds disclosure requirements. An advertisement violates
 the rule if it offers "to rebate a portion of a license holder's compensation to a party if the
 advertisement does not disclose that payment of the rebate is subject to the consent of the party
-the license holder represents in the transaction," or if it offers a rebate "contingent upon a
+the license holder represents in the transaction", or if it offers a rebate "contingent upon a
 party's use of a specified service provider, or subject to approval by a third party such as a
 lender, unless the advertisement also contains a disclosure that payment of the rebate is subject to
-restrictions."
+restrictions".
 
 Referrals *from* unlicensed people are governed by 22 TAC § 535.20. Making a referral "is an act
 requiring the person making the referral to be licensed if the referral is made with the expectation
-of receiving valuable consideration," and the rule defines valuable consideration to include "money;
+of receiving valuable consideration", and the rule defines valuable consideration to include "money;
 gifts of merchandise having a retail value greater than $50; rent bonuses; and discounts." Fifty
 dollars is the number: a 40-dollar gift card to a past client who sent you a friend is outside the
 definition; a 100-dollar one is not. The rule then carves out a narrow vendor case: a person is not
@@ -1057,7 +1048,7 @@ consent of the license holder's client." The Act makes the same conduct a discip
 over, at § 1101.652(b)(8) for receiving compensation "from more than one party to a real estate
 transaction without the full knowledge and consent of all parties to the transaction" and at §
 1101.652(b)(13) for accepting, receiving or charging "an undisclosed commission, rebate, or direct
-profit on an expenditure made for a principal."
+profit on an expenditure made for a principal".
 
 Rule 535.148 then imposes a flat prohibition that surprises people: a license holder "may not pay or
 receive a fee or other valuable consideration to or from any other settlement service provider for,
@@ -1066,7 +1057,7 @@ companies; inclusion on a list of inspectors, preferred settlement providers, or
 arrangements; or inclusion on lists of inspectors or other settlement providers contingent on other
 financial agreements." The rule's definition of settlement service provider is long and includes
 lenders, title service providers, attorneys, appraisers, inspectors, settlement agents, insurance
-and home-warranty providers, and "a real estate agent or broker." What the rule does *not* prohibit
+and home-warranty providers, and "a real estate agent or broker". What the rule does *not* prohibit
 is set out at the end: "normal promotional or educational activity that is not conditioned on the
 referral of business and that does not involve the defraying of expenses that otherwise would be
 incurred"; "a payment at market rates to any person for goods actually furnished or for services
@@ -1082,11 +1073,11 @@ the license holder represents one or both parties.
 **Teams, assumed names and alternate names.** Rule 535.154 defines the three categories and imposes
 a registration duty on each. An "Alternate name" is "a name used by an individual license holder
 other than the name shown on the license issued by the Commission, such as a middle name, maiden
-name, or nickname," and the rule expressly excludes "a common derivative of a name, such as Kim for
+name, or nickname", and the rule expressly excludes "a common derivative of a name, such as Kim for
 Kimberly or Bill for William, which is considered the same as the name shown on the license." So
 Bill for William needs nothing; a maiden name does. "Before a license holder starts using an
 alternate name in an advertisement, the license holder must register the name with the Commission
-using a process acceptable to the Commission," and the license holder must notify the Commission and
+using a process acceptable to the Commission", and the license holder must notify the Commission and
 their sponsoring broker "not later than the 10th day after the date the license holder stops using
 an alternate name."
 
@@ -1096,28 +1087,30 @@ than the broker's licensed name or assumed business name." Three rules govern it
 include any terms that could mislead the public to believe that the team is offering brokerage
 services independent from its sponsoring broker." It "must end with the word 'team' or 'group'." And
 "Before an associated broker or a sales agent sponsored by a broker starts using a team name in an
-advertisement, the broker must register the name with the Commission," with a ten-day notification
+advertisement, the broker must register the name with the Commission", with a ten-day notification
 when use stops. Rule 535.155 supplies the enforcement edge, treating as misleading any advertisement
 "that contains a team name with terms that imply that the team is offering brokerage services
 independent from its sponsoring broker, including, but not limited to, 'brokerage', 'company', and
-'associates'." "The Alvarez Group" is compliant. "Alvarez & Associates" is not.
+'associates'". "The Alvarez Group" is compliant. "Alvarez & Associates" is not.
 
 An "Assumed business name" is "any name used in business by a broker that meets the requirements of
 subsection (d) of this section, other than the name shown on the broker's license issued by the
 Commission, a team name, or an alternate name." Before it is used in an advertisement the broker
 must both "register the name with the Commission using a process acceptable to the Commission" and
 "provide written evidence of legal authority to use the assumed business name in Texas, such as
-registration of the name with the Secretary of State or county clerk's office," with the same
+registration of the name with the Secretary of State or county clerk's office", with the same
 ten-day notice when use ceases.
 
 Two responsibility rules complete the picture. Rule 535.2 makes the broker "responsible to ensure
-that a sponsored sales agent's advertising complies with §535.154 of this chapter … and §535.155 of
-this chapter." And the same rule provides that "Any license holder who leads, supervises, directs,
-or manages a team must be delegated as a supervisor," that "Any such delegation must be in writing,"
-and that the broker must give the Commission the name of each delegated supervisor "within 30 days
-of any such delegation that has lasted or is anticipated to last more than three consecutive
-months," with notice again "within 30 days after the delegation of a supervisor has ended." If you
-run a team, you are a delegated supervisor by rule, and the paperwork is the broker's to file.
+that a sponsored sales agent's advertising complies with §535.154 of this chapter (relating to
+Registration and Use of Alternate, Team and Assumed Business Names Used in Advertisements) and
+§535.155 of this chapter (relating to Advertisements)". And the same rule provides that "Any license
+holder who leads, supervises, directs, or manages a team must be delegated as a supervisor", that
+"Any such delegation must be in writing", and that the broker must give the Commission the name of
+each delegated supervisor "within 30 days of any such delegation that has lasted or is anticipated
+to last more than three consecutive months," with notice again "within 30 days after the delegation
+of a supervisor has ended." If you run a team, you are a delegated supervisor by rule, and the
+paperwork is the broker's to file.
 
 **The office and the addresses.** Section 1101.552(a) states the office rule: "A resident broker
 shall maintain a fixed office in this state. The address of the office shall be designated on the
@@ -1145,7 +1138,7 @@ broker*. A complaint notice sent to a stale address is still effective service a
 
 One geographic reminder closes the unit. Rule 535.4 provides that the Act "applies to any person
 acting as a real estate broker or sales agent while physically within Texas, regardless of the
-location of the real estate involved or the residence of the person's customers or clients," and
+location of the real estate involved or the residence of the person's customers or clients", and
 that a person "conducting brokerage business from another state by mail, telephone, the Internet,
 email, or other medium is acting within Texas if the real property concerned is located wholly or
 partly in Texas." You cannot step outside these rules by working remotely.
@@ -1160,15 +1153,14 @@ pay your cousin, who is not licensed, 1,500 dollars for having told you the owne
 selling.
 
 1. Does 22 TAC § 535.144 apply to a purchase through an LLC in which you hold 35 percent? Quote the
-words of the rule that answer it, and state the ownership threshold.
-2. State exactly what you must disclose, in what medium, and by what point in the transaction, under
-22 TAC § 535.144. Identify every place the rule says the disclosure may appear.
-3. Under 22 TAC § 535.16, are you obliged to provide a CMA or BPO to the owner? Identify the words
-in the rule that make the answer depend on how you met her.
-4. May you pay your cousin the 1,500 dollars? Cite § 1101.651(a), § 1101.651(c) and 22 TAC § 535.20,
-and state the dollar threshold the last of those uses for gifts of merchandise.
-5. The owner is unrepresented and tells you she has no idea what the duplex is worth. Which sentence
-of 22 TAC § 535.144 constrains how you may use what you know, and what does it forbid?
+words of the rule that answer it, and state the ownership threshold. 2. State exactly what you must
+disclose, in what medium, and by what point in the transaction, under 22 TAC § 535.144. Identify
+every place the rule says the disclosure may appear. 3. Under 22 TAC § 535.16, are you obliged to
+provide a CMA or BPO to the owner? Identify the words in the rule that make the answer depend on how
+you met her. 4. May you pay your cousin the 1,500 dollars? Cite § 1101.651(a), § 1101.651(c) and 22
+TAC § 535.20, and state the dollar threshold the last of those uses for gifts of merchandise. 5. The
+owner is unrepresented and tells you she has no idea what the duplex is worth. Which sentence of 22
+TAC § 535.144 constrains how you may use what you know, and what does it forbid?
 
 ## Unit: Risk Management
 
@@ -1188,10 +1180,10 @@ notice to a person licensed under this chapter or Chapter 1102 who is the subjec
 investigation unless after deliberation the commission decides against notification."
 
 Complaints are triaged. Rule 535.141 sets three levels using the criteria of § 1101.204. Level 1 is
-"Fraud or misrepresentation that involves loss of $10,000 or more," a "Continuing threat to public
-welfare," and "Unlicensed activity." Level 2 is "Fraud or misrepresentation that involves loss of
+"Fraud or misrepresentation that involves loss of $10,000 or more", a "Continuing threat to public
+welfare", and "Unlicensed activity." Level 2 is "Fraud or misrepresentation that involves loss of
 less than $10,000" and "Negligence," together with certain inspector violations. Level 3 is
-"Technical violations," other Chapter 1102 complaints, and "Allegations involving education
+"Technical violations", other Chapter 1102 complaints, and "Allegations involving education
 providers." The dollar line between Level 1 and Level 2 is 10,000 dollars, and the practical lesson
 is that unlicensed activity sits at the top tier regardless of amount.
 
@@ -1210,7 +1202,7 @@ follow them.
 Rule 535.141 also requires you to cooperate with the investigation, and § 1101.652(a)(4) makes it an
 independent disciplinary ground to fail "to provide, within a reasonable time, information requested
 by the commission that relates to a formal or informal complaint to the commission that would
-indicate a violation of this chapter or Chapter 1102." A licence is more often lost for ignoring the
+indicate a violation of this chapter or Chapter 1102". A licence is more often lost for ignoring the
 letter than for the original conduct.
 
 **The recurring fact patterns.** Section 1101.652(b) is, read practically, a catalogue of the ways
@@ -1220,7 +1212,7 @@ patterns.
 *Silence about a defect.* Subsections (b)(3) and (b)(4): making "a material misrepresentation to a
 potential buyer concerning a significant defect, including a latent structural defect, known to the
 license holder that would be a significant factor to a reasonable and prudent buyer in making a
-decision to purchase real property," and failing to disclose such a defect known to the license
+decision to purchase real property", and failing to disclose such a defect known to the license
 holder. Note the knowledge element in both. Note also 22 TAC § 531.3, under which misrepresentation
 can be "by acts of commission or omission."
 
@@ -1236,7 +1228,7 @@ Commingling is provable from a bank statement.
 
 *Authority and interference.* Subsections (b)(18) through (b)(22): signs without written consent,
 offering property without the owner's knowledge and consent, offering on unauthorised terms,
-inducing a party "to break the contract for the purpose of substituting a new contract," and
+inducing a party "to break the contract for the purpose of substituting a new contract", and
 negotiating with a party you know is under an exclusive agency with another broker. On that last
 one, 22 TAC § 535.153 draws the line precisely: although a license holder "may not attempt to
 negotiate a sale, exchange, lease, or rental of property under exclusive listing with another
@@ -1253,29 +1245,30 @@ discriminates "against an owner, potential buyer, landlord, or potential tenant 
 race, color, religion, sex, disability, familial status, national origin, or ancestry, including
 directing a prospective buyer or tenant interested in equivalent properties to a different area
 based on the race, color, religion, sex, disability, familial status, national origin, or ancestry
-of the potential owner or tenant." Rule 531.19 states the Commission's parallel prohibition on
+of the potential owner or tenant". Rule 531.19 states the Commission's parallel prohibition on
 inquiring about, responding to, facilitating inquiries about, or disclosing information about an
 owner, occupant, purchaser, lessor or lessee that indicates or is intended to indicate a preference,
 limitation or discrimination.
 
 **What happens to you.** The Commission's options are cumulative, not alternative. Section
 1101.652(a) allows it to "suspend or revoke a license issued under this chapter or Chapter 1102 or
-take other disciplinary action authorized by this chapter or Chapter 1102." Section 1101.702(a) sets
+take other disciplinary action authorized by this chapter or Chapter 1102". Section 1101.702(a) sets
 the administrative penalty ceiling: "The amount of an administrative penalty may not exceed $5,000
 for each violation. Each day a violation continues or occurs may be considered a separate violation
-for purposes of imposing a penalty." Section 1101.702(b) lists the factors: "the seriousness of the
-violation, including the nature, circumstances, extent, and gravity of the prohibited acts; the
-history of previous violations; the amount necessary to deter a future violation; efforts to correct
-the violation; and any other matter that justice may require."
+for purposes of imposing a penalty." Section 1101.702(b) lists the factors the executive director
+must consider: "(1) the seriousness of the violation, including the nature, circumstances, extent,
+and gravity of the prohibited acts; (2) the history of previous violations; (3) the amount necessary
+to deter a future violation; (4) efforts to correct the violation; and (5) any other matter that
+justice may require".
 
 Rule 535.191 turns those factors into three published ranges. The lowest, "$100 - $1,500 per
-violation per day," covers § 1101.552, § 1101.652(a)(3), § 1101.652(a)(8), § 1101.652(a-1)(3), §
+violation per day", covers § 1101.552, § 1101.652(a)(3), § 1101.652(a)(8), § 1101.652(a-1)(3), §
 1101.652(b)(23), § 1101.652(b)(29), § 1101.652(b)(33), § 1101.652(b)(34), 22 TAC § 535.21, 22 TAC §
 535.154, 22 TAC § 535.155 and 22 TAC § 535.157, among others. The middle range, "$500 - $3,000 per
-violation per day," covers § 1101.652(b)(1), § 1101.652(b)(7) and (8), § 1101.652(b)(12), §
+violation per day", covers § 1101.652(b)(1), § 1101.652(b)(7) and (8), § 1101.652(b)(12), §
 1101.652(b)(22), § 1101.652(b)(28), § 1101.652(b)(30) and (31), § 1101.654(a), 22 TAC § 531.18, 22
 TAC § 531.20, 22 TAC § 535.2, 22 TAC § 535.16 and 22 TAC § 535.17, among others. The highest,
-"$1,000 - $5,000 per violation per day," covers § 1101.351, § 1101.557(b), § 1101.558, § 1101.559(a)
+"$1,000 - $5,000 per violation per day", covers § 1101.351, § 1101.557(b), § 1101.558, § 1101.559(a)
 and (c), § 1101.560, § 1101.561(b), § 1101.651, § 1101.652(a-1)(1), § 1101.652(b)(2) through (6), §
 1101.652(b)(9) through (11), § 1101.652(b)(13), § 1101.652(b)(15) through (21), § 1101.652(b)(24)
 through (27), § 1101.652(b)(32), 22 TAC §§ 535.145 through 535.148, and 22 TAC § 535.156. Rule
@@ -1283,7 +1276,7 @@ through (27), § 1101.652(b)(32), 22 TAC §§ 535.145 through 535.148, and 22 TA
 times that assessed under subsections (c), (d) and (e) of this section, subject to the maximum
 penalties authorized under §1101.702(a) of the Act, if a person has a history of previous
 violations," and reminds you that it "may suspend or revoke a license or take other disciplinary
-action authorized by the Act in addition to or instead of assessing the administrative penalties."
+action authorized by the Act in addition to or instead of assessing the administrative penalties".
 
 There are three further tools. Section 1101.759(a) permits a cease and desist order "after notice
 and opportunity for a hearing," and violating one "constitutes grounds for imposing an
@@ -1292,11 +1285,11 @@ injunctive action in its own name, and subsection (b) removes the usual equitabl
 Commission "is not required to allege or prove that: (1) an adequate remedy at law does not exist;
 or (2) substantial or irreparable damage would result from the continued violation." And § 1101.756
 provides that "A person commits an offense if the person wilfully violates or fails to comply with
-this chapter or a commission order," an offence that "is a Class A misdemeanor."
+this chapter or a commission order", an offence that "is a Class A misdemeanor."
 
 A suspension has practical consequences the day it lands. Rule 535.141 provides that a person whose
 licence has been suspended "may not during the period of any suspension perform, attempt to perform,
-or advertise to perform any act for which a license is required," and requires written notice "not
+or advertise to perform any act for which a license is required", and requires written notice "not
 later than the third day before the date of the suspension" — a sales agent to the sponsoring
 broker; a broker to sponsored sales agents and any entity for which the person is designated broker;
 and, where the person has a contractual obligation to perform licensed services, to all other
@@ -1306,7 +1299,7 @@ parties to the contract.
 Section 1101.601(a) requires the Commission to maintain it "to reimburse aggrieved persons who
 suffer actual damages caused by an act described by Section 1101.602" committed by a license holder,
 a certificate holder, or "a person who does not hold a license or certificate and who is an employee
-or agent of a license or certificate holder," provided under subsection (b) that "The license or
+or agent of a license or certificate holder", provided under subsection (b) that "The license or
 certificate holder must have held the license or certificate at the time the act was committed."
 Section 1101.602 ties entitlement to conduct "described by Section 1101.652(a-1)(1) or (b)" for a
 license holder — that is, the same catalogue you just studied.
@@ -1330,16 +1323,16 @@ trust account": the fund pays the consumer and then looks to you.
 
 **Civil exposure.** The Commission is not the only forum. Business & Commerce Code § 17.50(a) allows
 a consumer to maintain an action where certain conduct is "a producing cause of economic damages or
-damages for mental anguish," including the use of a false, misleading or deceptive act specifically
+damages for mental anguish", including the use of a false, misleading or deceptive act specifically
 enumerated in § 17.46(b) and relied on by the consumer to the consumer's detriment, breach of an
-express or implied warranty, and "any unconscionable action or course of action by any person." The
+express or implied warranty, and "any unconscionable action or course of action by any person". The
 damages provision is § 17.50(b)(1): the consumer may obtain "the amount of economic damages found by
-the trier of fact," and "If the trier of fact finds that the conduct of the defendant was committed
+the trier of fact", and "If the trier of fact finds that the conduct of the defendant was committed
 knowingly, the consumer may also recover damages for mental anguish, as found by the trier of fact,
 and the trier of fact may award not more than three times the amount of economic damages; or if the
 trier of fact finds the conduct was committed intentionally, the consumer may recover damages for
 mental anguish, as found by the trier of fact, and the trier of fact may award not more than three
-times the amount of damages for mental anguish and economic damages." Section 17.50(d) adds that
+times the amount of damages for mental anguish and economic damages". Section 17.50(d) adds that
 "Each consumer who prevails shall be awarded court costs and reasonable and necessary attorneys'
 fees."
 
@@ -1347,17 +1340,17 @@ Section 1101.805 allocates responsibility for misstatements between you and your
 it "prevails over any other law, including common law." A party "is not liable for a
 misrepresentation or a concealment of a material fact made by a license holder in a real estate
 transaction unless the party: (1) knew of the falsity of the misrepresentation or concealment; and
-(2) failed to disclose the party's knowledge of the falsity." And symmetrically, a license holder
+(2) failed to disclose the party's knowledge of the falsity". And symmetrically, a license holder
 "is not liable for a misrepresentation or a concealment of a material fact made by a party to a real
 estate transaction unless the license holder: (1) knew of the falsity of the misrepresentation or
-concealment; and (2) failed to disclose the license holder's knowledge of the falsity." Subsection
+concealment; and (2) failed to disclose the license holder's knowledge of the falsity". Subsection
 (c) preserves broker responsibility for sales agents. The practical reading: you are not an insurer
 of your seller's statements, but the moment you know a statement is false, staying quiet makes it
 yours.
 
 Limitations set the outer horizon. Civil Practice and Remedies Code § 16.004(a) requires suit "not
 later than four years after the day the cause of action accrues" on actions including "specific
-performance of a contract for the conveyance of real property," "debt," "fraud," and "breach of
+performance of a contract for the conveyance of real property", "debt," "fraud," and "breach of
 fiduciary duty." Section 16.003(a) sets a two-year period for the listed actions including trespass
 for injury to property and personal injury. Four years for fraud and breach of fiduciary duty is the
 number that matters to you, and it is the number that explains the four-year retention rule in 22
@@ -1381,14 +1374,14 @@ fix is a corrected writing to the people who saw it, not a quiet edit.
 
 If money is involved, use the notice rules that already exist. Under 22 TAC § 535.146 a broker whose
 trust-money check is dishonoured "shall immediately notify all parties to the transaction in
-writing," must notify all parties in writing of any disbursement made on a written demand or a
+writing", must notify all parties in writing of any disbursement made on a written demand or a
 subsequent written agreement, and may interplead where entitlement genuinely cannot be determined.
 
 Do not touch the file except to add to it. Section 1101.652(a-1)(2) makes it a ground for discipline
 to fail or refuse to produce records for inspection; 22 TAC § 535.2 requires the broker to keep the
 eight listed record categories four years in a format readily available to the Commission; and the
 only excuse the rule recognises for missing records is destruction "by an 'Act of God' such as a
-natural disaster or fire not intentionally caused by the broker."
+natural disaster or fire not intentionally caused by the broker".
 
 Answer the Commission. Section 1101.652(a)(4) makes failure to provide requested information within
 a reasonable time its own ground for discipline, and § 1101.702(b) lists "efforts to correct the
@@ -1398,28 +1391,6 @@ is statutorily relevant to what you will pay.
 And do not offer legal conclusions about your own mistake to the person affected by it. That is
 exactly the advice 22 TAC § 537.11 forbids you to give, and it is the moment when the person harmed
 should be talking to a lawyer — whom you may not discourage them from employing.
-
-### Applied exercise: The commingled deposit
-
-You are the broker at a two-agent brokerage in Amarillo. On Monday 6 April your sales agent receives
-a 5,000 dollar earnest money check from a buyer and puts it in her desk drawer. She hands it to you
-on Thursday 9 April. On Friday 10 April, short on cash, you deposit it into the brokerage operating
-account, intending to move it Monday. On Monday 13 April the seller's broker asks in writing where
-the money is. On 20 April the buyer terminates and makes a written demand for the deposit.
-
-1. Identify the rule the sales agent broke on 6 April and quote the words that state what she was
-required to do with the check.
-2. State the deposit deadline 22 TAC § 535.146 imposes on you, how it is measured, and the only way
-the principals could have changed it.
-3. Placing the money in the operating account has a specific evidentiary consequence under 22 TAC §
-535.146. State it, and name the two subsections of § 1101.652(b) that make the same conduct a
-disciplinary ground.
-4. By what date must the trust money be paid to the party entitled to it after the 20 April written
-demand? Give the rule's period and the resulting date, and state what you must do immediately after
-disbursing.
-5. Using 22 TAC § 535.191 and § 1101.702(a), state the penalty range applicable to a violation of §
-1101.652(b)(30), the statutory ceiling per violation, and how the Act treats each day a violation
-continues.
 
 ### Module recap
 
