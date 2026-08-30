@@ -417,16 +417,14 @@ respondent that has more than 500 employees." Subsection (c) excludes back pay a
 back pay from those capped compensatory damages, so back pay is recoverable outside the cap.
 
 **What reaches you regardless of employment status.** Do not confuse chapter 21 with the law that
-governs how you treat the public. Discrimination in the practice of brokerage is independently a
-ground for discipline under TRELA. Occupations Code § 1101.652(b)(32) authorises the Commission to
-suspend or revoke a licence if a license holder, while engaged in real estate brokerage,
-"discriminates against an owner, potential buyer, landlord, or potential tenant on the basis of
-race, color, religion, sex, disability, familial status, national origin, or ancestry, including
-directing a prospective buyer or tenant interested in equivalent properties to a different area
-based on the race, color, religion, sex, disability, familial status, national origin, or ancestry
-of the potential owner or tenant." That provision does not care whether you are an employee or a
-contractor. It attaches to the licence. Fair housing law proper — the federal Fair Housing Act and
-Texas Property Code chapter 301 — is a separate body of law and is not taught in this module.
+governs how you treat the public. Occupations Code § 1101.652(b)(32) makes it a disciplinary
+ground for a license holder engaged in real estate brokerage to discriminate against an owner,
+potential buyer, landlord or potential tenant on the basis of race, color, religion, sex,
+disability, familial status, national origin or ancestry, including steering a prospect interested
+in equivalent properties to a different area on those bases. Section 1101.652 is taught in full in
+Module 10, and fair housing law proper — the federal Fair Housing Act and Texas Property Code
+chapter 301 — is taught there too. The point for this topic is only that the ground attaches to
+the licence and does not care whether you are an employee or a contractor.
 
 ### Applied exercise: A Corpus Christi brokerage's employment questions
 
@@ -483,13 +481,12 @@ directly compensated by the business entity. An independent contractor is not an
 same statute and rules use both senses, a few pages apart, and the reader is expected to tell them
 apart from context. Learn to do it.
 
-**Who the client's agent is.** Occupations Code § 1101.557(a) settles it in one sentence: "A
-broker who represents a party in a real estate transaction or who lists real estate for sale under
-an exclusive agreement for a party is that party's agent." Not the sales agent. The broker.
-Section 1101.557(b) then attaches obligations to that broker: the broker "must inform the party if
-the broker receives material information related to a transaction to list, buy, sell, or lease the
-party's real estate, including the receipt of an offer by the broker," and "shall, at a minimum,
-answer the party's questions and present any offer to or from the party."
+**Who the client's agent is.** Occupations Code § 1101.557(a) settles it: a broker who represents
+a party in a real estate transaction, or who lists real estate for sale under an exclusive
+agreement for a party, "is that party's agent." Not the sales agent. The broker. Section 1101.557,
+including the information and offer-presentation obligations subsection (b) attaches to that
+broker, is taught in full in Module 02. What matters here is only the identity it fixes: the
+person the client employs, in the agency sense, is the broker.
 
 The Commission's own rule states the fiduciary standard for that relationship. Under 22 TAC
 § 535.2, "A broker owes the highest fiduciary obligation to the principal and is obliged to convey
@@ -525,55 +522,36 @@ agent earned the compensation."
 the listing or representation agreement is a contract, TRELA regulates its form and content in
 several places, and you should know them as the boundaries of the broker–principal engagement.
 
-First, the writing requirement for suing on it. Section 1101.806(c) provides that "[a] person may
-not maintain an action in this state to recover a commission for the sale or purchase of real
-estate unless the promise or agreement on which the action is based, or a memorandum, is in
-writing and signed by the party against whom the action is brought or by a person authorized by
-that party to sign the document." Section 1101.806(b) adds a second gate: a person may not
-maintain an action to collect compensation for an act as a broker or sales agent performed in this
-state unless the person "alleges and proves" that the person was "a license holder at the time the
-act was commenced" or "an attorney licensed in any state." Note the phrase "at the time the act
-was commenced." A licence obtained after the work began does not cure the defect. Section
-1101.806(a) carves out two things: the section does not apply "to an agreement to share
-compensation among license holders," and it does not limit "a cause of action among brokers for
-interference with business relationships."
+First, the writing requirement for suing on it. Occupations Code § 1101.806 gates any action for a
+commission: subsection (c) requires the promise or agreement, or a memorandum, to be in writing and
+signed by the party against whom the action is brought, and subsection (b) requires the plaintiff
+to allege and prove licence status "at the time the act was commenced." Section 1101.806 is taught
+in full in Module 04.
 
-Second, the termination date. Section 1101.652(b)(12) makes it a ground for discipline if a
-license holder, while engaged in real estate brokerage, "fails to specify a definite termination
-date that is not subject to prior notice in a contract, other than a contract to perform property
-management services, in which the license holder agrees to perform services for which a license is
-required under this chapter." Read the qualifier: the termination date must be *definite* and must
-not be *subject to prior notice*, and the exception is for property management contracts only. An
-open-ended listing that continues until one side gives thirty days' notice violates this
-subdivision. So does a listing with a blank in the expiration field.
+Second, the termination date. Section 1101.652(b)(12) makes it a disciplinary ground to fail to
+specify a definite termination date not subject to prior notice in a contract, other than a
+property management contract, in which the license holder agrees to perform services requiring a
+licence. An open-ended listing that runs until one side gives thirty days' notice engages it, and
+so does a listing with a blank in the expiration field. The subdivision, and § 1101.652 generally,
+are taught in Module 10.
 
-Third, the shape of the compensation the client agrees to. Rule 22 TAC § 535.16 opens with the
-obligation: "A broker is obligated under a listing contract to negotiate the best possible
-transaction for the principal, the broker has agreed to represent." It then addresses net
-listings. A "net listing" is defined there as "a listing agreement in which the broker's
-commission is the difference ("net") between the sales proceeds and an amount desired by the owner
-of the real property." The rule provides that "[a] broker may not take net listings unless the
-principal requires a net listing and the principal appears to be familiar with current market
-values of real property," explains that the device "places an upper limit on the principal's
-expectancy and places the broker's interest above the principal's interest with reference to
-obtaining the best possible price," and requires that "[i]f a net listing is used, the listing
-agreement must assure the principal of not less than the principal's desired price and limit the
-broker to a specified maximum commission." That is a conditional prohibition with two conditions
-on entry and two on content, and quoting only the first half of it would misstate the rule.
+Third, the shape of the compensation the client agrees to. A net listing — an agreement in which
+the broker's commission is the difference between the sales proceeds and the amount the owner
+wants — is permitted only on the conditions 22 TAC § 535.16 imposes on both entry into it and its
+content. Rule 535.16 is taught in full in Module 04.
 
-Fourth, on the buyer side, § 1101.652(b)(34) makes it a ground for discipline if a license holder
-"fails to enter into a written agreement with a prospective buyer as required by Section
-1101.563." The text of § 1101.563 was not read in this module; what is stated here is only that
-§ 1101.652(b)(34) makes failure to comply a disciplinary ground.
+Fourth, on the buyer side, § 1101.652(b)(34) makes it a disciplinary ground to fail to enter into
+the written agreement with a prospective buyer that Occupations Code § 1101.563 requires.
+Section 1101.563 is taught in Module 05 and § 1101.652 in Module 10.
 
 **Two traps at the boundary of the two senses of "employment."** The first is § 1101.652(b)(26),
-which makes it a ground for discipline if a license holder "establishes an association by
-employment or otherwise with a person other than a license holder if the person is expected or
-required to act as a license holder." Notice how that subdivision is drafted: "by employment or
-otherwise." The Legislature deliberately refused to let the form of the relationship matter.
-Whether you call the person an employee, a contractor, a partner or an assistant, if the person is
-expected or required to act as a license holder and is not one, the association itself is the
-violation. That subdivision is the hinge between this unit and the next one.
+taught in Module 10, which makes it a disciplinary ground to establish an association "by
+employment or otherwise" with a person other than a license holder if that person is expected or
+required to act as a license holder. Those four words — "by employment or otherwise" — are why the
+label on the relationship does not matter. Whether you call the person an employee, a contractor,
+a partner or an assistant, if the person is expected or required to act as a license holder and is
+not one, the association itself is the violation. That is the hinge between this unit and the next
+one.
 
 The second trap is the reverse: assuming that because a broker is "employed" by the seller, the
 broker owes the seller the obedience of a servant. The broker's duty is fiduciary, not servile,
@@ -581,25 +559,6 @@ and the rule that defines it — § 535.2's highest-fiduciary-obligation sentenc
 with a limit, "unless prohibited by other law." A seller who instructs a broker to conceal a known
 material defect is instructing the broker to do something other law prohibits. The engagement does
 not authorise it.
-
-### Statute reading exercise: Two senses of one word
-
-Open Occupations Code § 1101.002(1)(B), § 1101.005(6) and (8), § 1101.557(a), and 22 TAC
-§ 535.5(c) and (d).
-
-1. In § 1101.002(1)(B)(i) the word "employed" appears. In § 1101.005(6) the word "employed"
-   appears again. Explain what each one means and why the two meanings are different.
-2. Rule 535.5(d)(2) contains a two-sentence definition. Write out what it says about independent
-   contractors, and explain why a Houston homebuilder's commissioned salesperson may or may not
-   fall inside the § 535.5(c) exemption depending on that sentence.
-3. Section 1101.557(a) names the party's agent. Read the sentence and state the two circumstances
-   that make a broker a party's agent under it. Does the subsection say anything at all about the
-   sponsored sales agent?
-4. Under 22 TAC § 535.2, in whose name must listings and other agreements for real estate
-   brokerage services be solicited and accepted? Now read § 1101.351(c). Explain how the two
-   provisions fit together.
-5. Section 1101.806(c) requires a writing signed by a particular person. Which person, and what
-   does the subsection accept in place of the promise or agreement itself?
 
 ## Unit: Employment and Compensation of Personal Assistants
 
@@ -717,8 +676,8 @@ unless the person is: (1) a license holder; or (2) a real estate broker licensed
 who does not conduct in this state any of the negotiations for which the commission or other
 compensation is paid." Note "or otherwise compensate" and "directly or indirectly." The
 prohibition is not limited to commissions and is not defeated by routing the payment through
-someone else. Section 1101.652(b)(11), set out in Unit 6, makes the same conduct a ground for
-discipline.
+someone else. Section 1101.652(b)(11) makes the same conduct a disciplinary ground; § 1101.652 is
+taught in Module 10.
 
 Rule 22 TAC § 535.147(a) restates the prohibition at rule level with its qualifier intact: "Except
 as otherwise provided by the Act or Commission rules, a broker or sales agent may not share a
@@ -762,9 +721,9 @@ One last point about titles. Nothing in the held rules regulates what you print 
 assistant's business card, but recall that § 535.147(b), quoted above, allows an unlicensed person
 to share a licensed entity's income only where the person engages in no acts requiring a licence
 and "does not lead the public to believe that the person is in the real estate brokerage
-business." Alongside it, § 1101.652(b)(23)(C) makes it a disciplinary ground to publish an
-advertisement that "implies that a sales agent is responsible for the operation of the broker's
-real estate brokerage business." An unlicensed assistant styled a buyer specialist on a team's
+business." Alongside it, § 1101.652(b)(23)(C) — Module 10 — makes it a disciplinary ground to
+publish an advertisement implying that a sales agent is responsible for the operation of the
+broker's brokerage business. An unlicensed assistant styled a buyer specialist on a team's
 marketing is a problem waiting to be found.
 
 ### Applied exercise: Staffing a team in Round Rock
@@ -857,7 +816,9 @@ bear directly on the broker–agent relationship: "A sales agent shall not maint
 Any trust money received by a sales agent must be immediately delivered to the sales agent's
 sponsoring broker." If a buyer hands you an earnest money cheque in Amarillo, you do not hold it,
 you do not deposit it, and you do not decide when it should go to title. You deliver it
-immediately to your broker.
+immediately to your broker. That is the handling rule, and it is taught here because § 535.2(c)
+makes it a broker responsibility. What happens to the § 535.146 accounting duty when the agency
+relationship itself ends — its survival past termination — is taught in Module 07.
 
 **(d) Property management.** "A broker is responsible for any property management activity by the
 broker's sponsored sales agent that requires a real estate license." Property management is where
@@ -909,14 +870,9 @@ tolerates listings taken in a team's name is the one the Commission looks to.
 **(g) Advertising.** "A broker is responsible to ensure that a sponsored sales agent's advertising
 complies with §535.154 of this chapter (relating to Registration and Use of Alternate, Team and
 Assumed Business Names Used in Advertisements) and §535.155 of this chapter (relating to
-Advertisements)." Rule 535.154 defines the vocabulary a broker must police: an "[a]lternate name"
-is "a name used by an individual license holder other than the name shown on the license issued by
-the Commission, such as a middle name, maiden name, or nickname," excluding common derivatives
-such as "Kim for Kimberly or Bill for William"; a "[t]eam name" is "a name used by a group of one
-or more license holders sponsored by or associated with the same broker that performs real estate
-activities under an exclusive collective name other than the broker's licensed name or assumed
-business name"; and an "[a]ssumed business name" is a name used in business by a broker meeting
-the rule's registration requirements. Subsection (g) makes the agent's advertising the broker's
+Advertisements)." Rules 535.154 and 535.155 — the alternate, team and assumed business name
+vocabulary and the advertising rules themselves — are taught in Module 12. What subsection (g)
+adds is the allocation of responsibility: the sponsored agent's advertising is the broker's
 compliance problem.
 
 **(h) Records: four years, eight categories.** The rule opens with an exception and then a floor:
@@ -976,10 +932,10 @@ management engagements each carry the requirement separately.
 of this section must respond to sponsored sales agents within two calendar days." And: "A
 sponsoring broker or supervisor delegated under subsection (e) of this section shall deliver mail
 and other correspondence from the Commission to their sponsored sales agents within three calendar
-days after receipt." Rule 535.157 itself sets the outward-facing clock: "A broker or sales agent
-must respond to his or her principal, a broker or sales agent representing another party to a real
-estate transaction, or an unrepresented party to a real estate transaction within two calendar
-days." So there are three clocks to keep straight: two calendar days for a license holder to
+days after receipt." Rule 535.157, taught in Module 12, sets the outward-facing clock: two
+calendar days for a broker or sales agent to respond to a principal, to a license holder
+representing another party, or to an unrepresented party. So there are three clocks to keep
+straight: two calendar days for a license holder to
 respond to a principal, the other side's license holder, or an unrepresented party (§ 535.157);
 two calendar days for the broker or delegated supervisor to respond to a sponsored sales agent
 (§ 535.2(j)); and three calendar days for the broker or delegated supervisor to pass on Commission
@@ -987,16 +943,10 @@ correspondence (§ 535.2(k)). Calendar days, not business days. A Friday email i
 time on the following Wednesday.
 
 Subsection (k) has a mechanical reason for existing, and it is in a different rule. Under 22 TAC
-§ 535.21(b), "The Commission shall send a notice or correspondence to an active broker or an
-inactive license holder to the mailing or email address of the broker or license holder as shown
-in the Commission's records. The Commission shall send a notice or correspondence to an active
-sales agent to the mailing or email address of the sales agent's sponsoring broker as shown in the
-Commission's records." The Commission does not write to an active sales agent directly. It writes
-to the broker. That is why the broker has three calendar days to forward it, and why an agent who
-never receives a Commission notice has a problem that starts in the broker's inbox. Rule 535.21(a)
-requires each license holder to keep a mailing address, business address, business phone number
-and business email address on file with the Commission and to report changes "not later than the
-10th day after the date of a change."
+§ 535.21(b) — taught in Module 12 — the Commission sends notices to an active sales agent at the
+address of that agent's *sponsoring broker*, not to the agent. That is why the broker has three
+calendar days to forward it under § 535.2(k), and why an agent who never receives a Commission
+notice has a problem that starts in the broker's inbox.
 
 **(l) and (m) Entities, and the closing sentence.** "When the broker is a business entity, the
 designated broker is the person responsible for the broker responsibilities under this section."
@@ -1092,17 +1042,13 @@ sales agent earned the compensation" — Broker A. It does not permit you to acc
 title company directly, and it does not permit Broker B to collect it and pass it through, because
 Broker B was not the sponsoring broker when you earned it. Rule 535.3's first sentence requires
 written consent, and the consenting broker here is Broker A. Note what has to have happened by 20
-April: under Occupations Code § 1101.367(a), "When the relationship of a sales agent with the
-sales agent's sponsoring broker terminates, the terminating party shall immediately notify in
-writing both the other party and the commission. On receiving the written notice, the commission
-shall place the sales agent license on inactive status." Your licence went inactive on the
-Commission's receipt of that notice and returned to active status when Broker B filed a request
-under § 1101.367(b) "advising the commission that the broker assumes sponsorship of the sales
-agent, accompanied by the appropriate fee." Section 1101.367(c) adds that an inactive sales agent
-whose licence is not subject to the § 1101.454 education requirements must, as a condition of
-returning to active status, provide proof of continuing education "as specified by Section
-1101.455 during the two years preceding the date the application to return to active status is
-filed." And § 535.2(i) requires the broker's written policies to ensure that each sponsored agent
+April: Occupations Code § 1101.367(a) requires the terminating party, on the end of a sponsorship
+relationship, to notify both the other party and the Commission immediately in writing, and the
+Commission then places the sales agent licence on inactive status; § 1101.367(b) returns it to
+active status on the new broker's request assuming sponsorship. Section 1101.367 and the mechanics
+of terminating a sponsorship are taught in Module 07. What belongs here is the compensation
+consequence, plus one supervision link: § 535.2(i) requires the broker's written policies to
+ensure that each sponsored agent
 "maintains their license in active status at all times while they are engaging in activities
 subject to the Act" — which is why a gap between brokerages is not merely administrative. If you
 show a property on 28 March while your licence sits inactive, you have a licensing problem that no
@@ -1149,71 +1095,28 @@ from the settlement statement, on a loan where the buyer's cash to close was cal
 it, is a rebate paid "in a manner that misleads a … lender … regarding … the financial resources
 or obligations of the buyer."
 
-**Undisclosed compensation.** Rule 22 TAC § 535.148 is titled "Receiving an Undisclosed Commission
-or Rebate," and subsection (a) is the general rule: "A license holder may not receive a
-commission, rebate, or fee in a transaction from a person other than the person the license holder
-represents without first disclosing to the license holder's client that the license holder intends
-to receive the commission, rebate, or fee, and obtaining the consent of the license holder's
-client." Two acts, in order: disclose *first*, then obtain consent. Subsection (b) adds a second
-consent where the payer is a service provider being paid by the other side: "If a party the
-license holder does not represent agrees to pay a service provider in the transaction, the license
-holder must also obtain the consent of that party to accept a fee, commission, or rebate from the
-service provider," and it defines the term for the section: "As used in this section, the term
-'service provider' does not include a person acting in the capacity of a real estate broker or
-sales agent."
+**Undisclosed compensation.** Rule 22 TAC § 535.148, "Receiving an Undisclosed Commission or
+Rebate," is taught in full in Module 05. Two of its subsections bear directly on the flow of money
+in this unit. Subsection (a) bars a license holder from receiving a commission, rebate or fee in a
+transaction from a person other than the person the license holder represents without first
+disclosing to the client the intention to receive it and obtaining the client's consent — disclose
+first, then consent, in that order. Subsection (f) requires TREC No. RSC-4, Disclosure of
+Relationship with Residential Service Contract Provider or Administrator, for any payment received
+for services provided for or on behalf of a residential service contract provider or administrator
+licensed under Occupations Code chapter 1304; if a home warranty company pays you for anything,
+RSC-4 is not optional. The section's further consent requirements, its bar on referral payments
+among settlement service providers, and the carve-outs in subsection (h) belong to Module 05.
 
-Subsection (c) prohibits a particular kind of exclusivity arrangement: a license holder may not
-enter into a contract or agreement with a service provider to a transaction in which the license
-holder represents one or both parties if, under the contract, "the license holder provides
-services for or on behalf of the service provider" **and** "the contract or agreement prohibits
-the license holder from offering similar services for or on behalf of a competing service
-provider." Both limbs are required.
-
-Subsection (d) is an outright prohibition on referral payments among settlement service providers:
-"A license holder may not pay or receive a fee or other valuable consideration to or from any
-other settlement service provider for, but not limited to, the following: the referral of
-inspections, lenders, mortgage brokers, or title companies; inclusion on a list of inspectors,
-preferred settlement providers, or similar arrangements; or inclusion on lists of inspectors or
-other settlement providers contingent on other financial agreements." Subsection (e) defines
-"settlement service" as "a service provided in connection with a prospective or actual settlement"
-and gives a long list of settlement service providers that expressly includes "an inspector," "a
-title service provider," "an attorney," "an appraiser," "a settlement agent," "a person who
-provides mortgage insurance services," "a person who provides services involving hazard, flood, or
-other casualty insurance, homeowner's warranties or residential service contracts," and "a real
-estate agent or broker."
-
-Subsections (f) and (g) require a form: "A license holder must use TREC No. RSC-4, Disclosure of
-Relationship with Residential Service Contract Provider or Administrator, to disclose to a party
-to a real estate transaction in which the license holder represents one or both of the parties any
-payments received for services provided for or on behalf of a residential service contract
-provider or administrator licensed under Texas Occupations Code Chapter 1304," and the Commission
-adopts that form by reference. If a home warranty company pays you for anything, RSC-4 is not
-optional.
-
-Finally, subsection (h) sets out what the section does *not* prohibit, and truncating this list
-would misstate the rule as badly as truncating the prohibition would: "normal promotional or
-educational activity that is not conditioned on the referral of business and that does not involve
-the defraying of expenses that otherwise would be incurred"; "a payment at market rates to any
-person for goods actually furnished or for services actually performed"; and "a payment pursuant
-to a cooperative brokerage or referral arrangement or agreement between active licensed real
-estate agents and real estate brokers." So a title company may lawfully teach a free class at your
-office that is not conditioned on referrals and does not pay expenses you would otherwise bear; an
-inspector may lawfully be paid market rates for an inspection actually performed; and a referral
-fee between licensed brokers under a co-operative or referral arrangement is permitted.
-
-**The statutory grounds that sit behind all of this.** Occupations Code § 1101.652(b) makes
-several compensation practices independent grounds for suspension or revocation. Subdivision (8):
-receiving "compensation from more than one party to a real estate transaction without the full
-knowledge and consent of all parties to the transaction." Subdivision (13): accepting, receiving
-or charging "an undisclosed commission, rebate, or direct profit on an expenditure made for a
-principal." Subdivision (11): where the license holder "pays a commission or a fee to or divides a
-commission or a fee with a person other than a license holder or a real estate broker or sales
-agent licensed in another state for compensation for services as a real estate agent." Subdivision
-(9): failing "within a reasonable time to properly account for or remit money that is received by
-the license holder and that belongs to another person." Subdivision (10): where the license holder
-"commingles money that belongs to another person with the license holder's own money." Notice how
-(9) and (10) sit alongside the trust-money duty in § 535.2(c) and § 535.146: money that is not
-yours is not yours even briefly.
+**The statutory grounds that sit behind all of this.** Occupations Code § 1101.652(b), taught in
+full in Module 10, makes several compensation practices independent grounds for suspension or
+revocation: subdivision (8), receiving compensation from more than one party to a transaction
+without the full knowledge and consent of all parties; (13), accepting an undisclosed commission,
+rebate or direct profit on an expenditure made for a principal; (11), paying or dividing a
+commission or fee with a person who is not a license holder or a broker or sales agent licensed in
+another state; (9), failing within a reasonable time to properly account for or remit money
+belonging to another person; and (10), commingling another person's money with the license
+holder's own. Notice how (9) and (10) sit alongside the trust-money duty in § 535.2(c) and
+§ 535.146: money that is not yours is not yours even briefly.
 
 **Co-operation across state lines.** Section 1101.651(a)(2) permits a Texas broker to compensate
 "a real estate broker licensed in another state who does not conduct in this state any of the
@@ -1233,15 +1136,12 @@ on a Sherman transaction, provided the Oklahoma broker conducted none of the Tex
 and a Texas licensee sitting in Dallas negotiating an Arkansas property is acting under the Act
 while physically within Texas.
 
-**Suing for a commission.** If a client refuses to pay, § 1101.806(b) requires the plaintiff to
-allege and prove licence status "at the time the act was commenced," and § 1101.806(c) requires a
-signed writing or memorandum from the party being sued. Section 1101.806(d) adds a specific
-forfeiture: "A license holder who fails to advise a buyer as provided by Section 1101.555 may not
-receive payment of or recover any commission agreed to be paid on the sale." The text of
-§ 1101.555 was not read in this module; what is stated here is only that § 1101.806(d) ties the
-forfeiture to it. And remember § 1101.806(a)(1): the section "does not … apply to an agreement to
-share compensation among license holders," so a co-broke dispute between two licensed brokers is
-not governed by these gates.
+**Suing for a commission.** Section 1101.806, taught in Module 04, sets the gates: subsection (b)
+requires the plaintiff to allege and prove licence status "at the time the act was commenced";
+subsection (c) requires a signed writing or memorandum from the party being sued; subsection (d)
+forfeits the commission where the license holder failed to advise a buyer as § 1101.555 requires;
+and subsection (a)(1) exempts an agreement to share compensation among license holders, so a
+co-broke dispute between two licensed brokers is not governed by these gates.
 
 ### Applied exercise: Following the money on a Denton closing
 
@@ -1310,18 +1210,19 @@ harassment where the employer or its agents or supervisors knew or should have k
 "to take immediate and appropriate corrective action." Deadlines: 180 days under § 21.202(a), 300
 days for sexual harassment under § 21.202(a-1), 60 days to sue after a right-to-sue notice under
 § 21.254, two years outside limit under § 21.256. Independently of employment status,
-§ 1101.652(b)(32) makes discrimination in brokerage a licence matter.
+§ 1101.652(b)(32) makes discrimination in brokerage a licence matter; § 1101.652 is Module 10's.
 
-The broker–principal relationship is the agency sense of employment. Section 1101.557(a) says a
-broker who represents a party or lists under an exclusive agreement "is that party's agent." Rule
-535.2 states that the broker "owes the highest fiduciary obligation to the principal" and must
-convey "all information known to the agent which may affect the principal's decision unless
-prohibited by other law," and that listings "must be solicited and accepted in a broker's name."
-Section 1101.351(c) puts the sales agent in position: sponsored, and "acting for that broker."
-Constraints on the engagement include a signed writing to sue under § 1101.806(c), licence "at the
-time the act was commenced" under § 1101.806(b), a definite termination date not subject to prior
-notice except for property management under § 1101.652(b)(12), and the conditional net listing
-rule in § 535.16.
+The broker–principal relationship is the agency sense of employment. Section 1101.557(a) — Module
+02 — says a broker who represents a party or lists under an exclusive agreement "is that party's
+agent." Rule 535.2 states that the broker "owes the highest fiduciary obligation to the principal"
+and must convey "all information known to the agent which may affect the principal's decision
+unless prohibited by other law," and that listings "must be solicited and accepted in a broker's
+name." Section 1101.351(c) puts the sales agent in position: sponsored, and "acting for that
+broker." Constraints on the engagement come from authorities taught elsewhere and are cited here
+only for their effect: the writing and licence-status gates on suing for a commission in
+§ 1101.806(b) and (c) and the net listing rule in § 535.16 (Module 04), the definite termination
+date required by § 1101.652(b)(12) and the written buyer agreement required by § 1101.652(b)(34)
+(Module 10, with § 1101.563 in Module 05).
 
 Personal assistants are a boundary problem with a clean method: start from 22 TAC § 535.4 and the
 § 1101.002 broker definition and ask whether the task is on the licensed side. Showing — which
@@ -1362,18 +1263,16 @@ percent ownership by the license holder and registration with the Commission. Re
 sponsoring broker's and the represented party's written consent and must not mislead a lender or
 title company about the buyer's financial resources or obligations, under § 535.147(d).
 Third-party compensation must be disclosed and consented to before receipt under § 535.148(a),
-with RSC-4 required under § 535.148(f), and the three carve-outs in § 535.148(h) available for
-market-rate payments for goods or services actually provided, unconditioned promotional or
-educational activity, and co-operative brokerage or referral arrangements between licensed
-brokers.
+with TREC No. RSC-4 required under § 535.148(f); the rest of § 535.148 is taught in Module 05.
 
 Finally, the honest inventory. The Internal Revenue Service's administrative guidance and the
 Treasury regulations under § 3508, the Texas Workforce Commission's rules and audit practice under
 chapter 201, the Fair Labor Standards Act, the Texas Payday Law, Texas workers' compensation law,
 Texas case law on common-law employment status and vicarious liability, Title VII and the
-Americans with Disabilities Act themselves, judicial decisions applying Labor Code chapter 21 to
-real estate sales agents, and the texts of Occupations Code §§ 1101.555 and 1101.563 **were not
-held** for this course. Where those sources would have settled a question, this module said so
-rather than guessing. That habit — knowing which of your beliefs rests on an authority you have
+Americans with Disabilities Act themselves, and judicial decisions applying Labor Code chapter 21
+to real estate sales agents **were not held** for this course. Where those sources would have
+settled a question, this module said so rather than guessing. Occupations Code §§ 1101.555 and
+1101.563 are a different matter: they were held, they are cited here only for the effect
+§ 1101.806(d) and § 1101.652(b)(34) give them, and they are taught in Modules 12 and 05. That habit — knowing which of your beliefs rests on an authority you have
 actually read — is the most valuable thing you can carry out of a law of agency course into a
 career where other people's money is in your hands.

@@ -98,16 +98,15 @@ the Legislature and the Commission wrote.
 
 **Why a license holder can be disciplined for conduct that breaks no criminal law.** Students often
 assume that discipline requires wrongdoing of the sort a jury would recognize — theft, fraud, a
-falsified document. It does not. Consider 22 TAC § 535.157, which reads in its entirety: "A broker
-or sales agent must respond to his or her principal, a broker or sales agent representing another
-party to a real estate transaction, or an unrepresented party to a real estate transaction within
-two calendar days." Failing to return a cooperating agent's call for four days is not a crime. It is
-very likely not a tort; the cooperating agent has no contract with you and probably no damages. But
-it is a violation of a Commission rule, § 1101.656(a) authorizes discipline for violating a
-commission rule, and 22 TAC § 535.191 places "22 TAC §535.157" in the band for which "An
-administrative penalty range of $100 - $1,500 per violation per day may be assessed." Two calendar
-days. Per violation. Per day. That is the whole distance between ethics as a feeling and ethics as
-an enforceable standard, and it is the reason this unit is not a warm-up.
+falsified document. It does not. Title 22 TAC § 535.157 requires a broker or sales agent to respond
+to a principal, to a license holder representing another party, or to an unrepresented party within
+two calendar days; that rule is taught in Module 02. Failing to return a cooperating agent's call
+for four days is not a crime, and very likely not a tort — the cooperating agent has no contract
+with you and probably no damages. But it is a violation of a Commission rule, § 1101.656(a)
+authorizes discipline for violating a commission rule, and 22 TAC § 535.191 places "22 TAC
+§535.157" in the band for which "An administrative penalty range of $100 - $1,500 per violation per
+day may be assessed." Per violation. Per day. That is the whole distance between ethics as a feeling
+and ethics as an enforceable standard.
 
 The three systems also run in parallel rather than in sequence, and TRELA says so expressly. Section
 1101.801 provides: "Disciplinary action taken against a person under Section 1101.652 does not
@@ -541,35 +540,12 @@ estate brokerage services," and whose content "is controlled by the license hold
 addresses social media: the link may be located on "the account holder profile" or "a separate page
 or website through a direct link from the social media platform or account holder profile."
 
-**Information About Brokerage Services — 22 TAC § 531.20.** The Commission adopts by reference the
-IABS Notice, TREC No. IABS 1-2, and requires each license holder to provide a homepage link labeled
-either "Texas Real Estate Commission Information About Brokerage Services", in at least 10 point
-font; or "TREC Information About Brokerage Services", in at least 12 point font, and to provide "the
-completed IABS Notice at the first substantive communication as required under §1101.558, Texas
-Occupations Code." Delivery may be "by personal delivery by the license holder," "by first class
-mail or overnight common carrier delivery service," "in the body of an email," or "as an attachment
-to an email, or a link within the body of an email, with a specific reference to the IABS Notice in
-the body of the email." Then the sentence that catches thousands of agents: "The link to a completed
-IABS Notice may not be in a footnote or signature block in an email." If your IABS link lives in
-your email signature and nowhere else, you are not complying with § 531.20 — you are doing the one
-thing it names as insufficient. The rule also permits reproduction of the notice "provided that the
-text of the IABS Notice is copied verbatim and the spacing, borders and placement of text on the
-page must appear to be identical to that in the published version of the IABS Notice, except that
-the Broker Contact Information section may be prefilled."
-
-The statutory anchor is § 1101.558(b): a license holder who represents a party "shall disclose,
-orally or in writing, that representation at the time of the license holder's first contact with"
-another party or another license holder representing another party. Subsection (b-1) requires the
-written notice "At the time of a license holder's first substantive communication with a party
-relating to a proposed transaction regarding specific real property," in at least a 10-point font,
-describing the ways a broker can represent a party including as an intermediary, the basic duties
-owed to a represented party, the basic obligations owed to a party the broker does not represent,
-and the license holder's and supervisor's and broker's names, license numbers and contact
-information. Subsection (c) lists three situations in which the notice is not required: a
-residential lease for less than one year where a sale is not being considered; a meeting with a
-party the license holder knows is represented by another license holder; and a communication at a
-property held open for any prospective buyer or tenant where the communication concerns that
-property.
+**Information About Brokerage Services — 22 TAC § 531.20.** The Commission adopts the IABS Notice by
+reference and requires each license holder to link it on the homepage of each business website and
+to deliver the completed notice at first substantive communication, as Occupations Code § 1101.558
+requires. The IABS rule and its statute are taught in full in Module 02; what belongs here is that
+§ 531.20 is a canon, that failing to comply with it is therefore a rule violation reachable under
+§ 1101.656(a), and that 22 TAC § 535.191 prices it in the middle band.
 
 **Discriminatory Practices — 22 TAC § 531.19.** Covered in the previous unit. Read it again as a
 canon rather than as a fair housing rule, because that is what it is: the Commission's statement
@@ -599,8 +575,7 @@ principal." Then two affirmative duties: "A license holder has an affirmative du
 principal informed at all times of significant information applicable to the transaction or
 transactions in which the license holder is acting as agent for the principal," and "A license
 holder has a duty to convey accurate information to members of the public with whom the license
-holder deals." Section 535.157 supplies the timing already quoted: a response to a principal, to a
-license holder representing another party, or to an unrepresented party "within two calendar days."
+holder deals."
 
 **The compensation rules.** Section 1101.651(b), quoted in full, provides: "A sales agent may not
 accept compensation for a real estate transaction from a person other than the broker that is
@@ -689,24 +664,10 @@ commission for that type of transaction, prepared by a Texas-licensed attorney a
 attorney for that type of transaction, or "prepared by the property owner or by an attorney and
 required by the property owner."
 
-Rule 537.11 draws the same line in operational terms. A license holder may not "practice law," may
-not "directly or indirectly offer, give or attempt to give legal advice," may not "give advice or
-opinions as to the legal effect of any contract forms or other such instruments which may affect the
-title to real estate," may not "draft or recommend language to be included in a contract form
-defining or affecting the rights, obligations, or remedies of the principals of a real estate
-transaction, including escalation, appraisal, or contingency clauses," and may not "attempt to
-prevent or in any manner whatsoever discourage any principal to a real estate transaction from
-employing an attorney." But the rule also protects your fiduciary role: it does not "limit a license
-holder's fiduciary obligation to disclose to the license holder's principals all pertinent facts
-that are within the knowledge of the license holder, including such facts which might affect the
-status of or title to real estate," and it does not "prevent the license holder from explaining to
-the license holder's principals the meaning of informational items or choices in a contract form, as
-long as the license holder does not practice law or give legal advice." And it is not the practice
-of law "if specifically instructed in writing by a principal" to "add language to or strike language
-from a contract form, as long as any change is made conspicuous, including underlining additions,
-striking through deletions, or employing some other method which clearly indicates the change being
-made." The distinction, then, is between drafting deal terms out of your own head — which is law
-practice — and executing your principal's written instruction while making the change visible.
+Rule 537.11 draws the same line in operational terms, forbidding legal advice, opinions on the legal
+effect of instruments, and drafting or recommending contract language, while preserving your duty to
+disclose pertinent facts and to explain informational items in a form; it is taught in Module 04.
+What belongs here is the price: 22 TAC § 535.191 puts a § 1101.654(a) violation in the middle band.
 
 **How a complaint becomes an investigation.** Section 1101.204(b) is the trigger: the commission
 "shall investigate the actions and records of a license holder if" "a person submits a signed,
@@ -831,20 +792,12 @@ or by an affidavit of financial inability that the executive director may contes
 
 **Who else is on the hook.** Section 1101.803 is short and severe: "A licensed broker is liable to
 the commission, the public, and the broker's clients for any conduct engaged in under this chapter
-by the broker or by a sales agent associated with or acting for the broker." Rule 535.2 builds the
-compliance program that follows from that liability, requiring a sponsoring broker to maintain
-current written policies and procedures, to notify each sponsored agent in writing of the scope of
-authorized activities, and to require that "when a sales agent performs a type of real estate
-brokerage activity for the first three times, the broker must require that the sales agent receive
-coaching and assistance from an experienced license holder competent for that activity." It also
-requires records — disclosures, commission agreements, "substantive communications with parties to
-the transaction," offers and contracts and addenda, receipts and disbursements, property management
-contracts, "appraisals, broker price opinions, and comparative market analyses," and sponsorship
-agreements — to be maintained "in a format that is readily available to the Commission for at least
-four years from the date of closing, termination of the contract, or end of a real estate
-transaction." Four years for records; four years for the complaint window under § 1101.204(c). Those
-two numbers are designed to line up, and a broker who purges at three years has destroyed the file
-the Commission is entitled to ask for.
+by the broker or by a sales agent associated with or acting for the broker." The compliance program
+that follows from that liability — the sponsoring broker's written policies, the notice of
+authorized activities, the coaching requirement, and the four-year record retention — is 22 TAC
+§ 535.2, taught in Module 09. Note only the number here: four years for records under § 535.2, four
+years for the complaint window under § 1101.204(c). Those two numbers are designed to line up, and a
+broker who purges at three years has destroyed the file the Commission is entitled to ask for.
 
 Finally, TRELA allocates misrepresentation liability between license holders and their principals.
 Section 1101.805(b) provides that "This section prevails over any other law, including common law,"
@@ -1026,23 +979,20 @@ where a statute specifically prohibits the disclosure.
 Third, licensure and forms. Rule 535.5 provides that "Trade associations or other organizations that
 provide an electronic listing service for their members, but do not receive compensation when the
 real estate is sold, are not required to be licensed under the Act" — so running an MLS is not, by
-itself, brokerage. And Rule 537.11 permits a license holder, in a transaction for which the
+itself, brokerage. And Rule 537.11 — taught in Module 04 — permits a license holder, where the
 Commission has approved no mandatory form, to use a form "prepared by an attorney licensed by this
-state, or a trade association in consultation with an attorney licensed by this state," provided the
-form contains the name of the attorney or trade association who prepared it, the name of the broker
-or trade association for whom it was prepared, a statement of the type of transaction for which use
-has been approved, any restrictions on use, and, if applicable, an explanation of how the form
-changes the parties' rights, obligations or remedies compared with a Commission-approved mandatory
-form together with "a statement that license holders may not practice law or give legal advice."
+state, or a trade association in consultation with an attorney licensed by this state," subject to
+the identifying and explanatory disclosures the rule lists. So a trade association may lawfully
+publish forms for its members, but only through a Texas attorney and only with those disclosures on
+the face of the form.
 
 **The practical difference between a private ethics complaint and a Commission complaint.** Sort
 them on six axes.
 
 *Who may complain.* An association's grievance process is normally open to members and, in most
 associations, to members of the public; the details are set by the association's bylaws, which were
-not held for this course and are not described here. A Commission complaint may be filed by anyone,
-but § 1101.204(b) requires that it be "signed" and "written," and § 1101.204(f) bars initiating an
-investigation or other action "on the basis of an anonymous complaint." Section 1101.204(a) also
+not held for this course and are not described here. A Commission complaint must be signed and
+written under § 1101.204(b) and may not be anonymous under § 1101.204(f), and § 1101.204(a) also
 allows "The commission or commission staff" to file a complaint and investigate on its own
 initiative.
 
@@ -1050,36 +1000,27 @@ initiative.
 its rules, including the canons.
 
 *What is at stake.* At the association: fines, education, suspension or loss of membership and of
-MLS privileges. At the Commission: the license itself, plus an administrative penalty that under
-§ 1101.702(a) "may not exceed $5,000 for each violation," with each day potentially a separate
-violation, priced within the bands of 22 TAC § 535.191 and subject to doubling for a history of
-previous violations.
+MLS privileges. At the Commission: the license itself, plus the administrative penalty capped by
+§ 1101.702(a) and priced within the § 535.191 bands set out in the previous unit.
 
-*Deadlines.* The association sets its own. The Commission's is statutory: no investigation on a
-complaint "submitted later than the fourth anniversary of the date of the incident that is the
-subject of the complaint" under § 1101.204(c). Note this is different again from the fair housing
-deadlines in the previous unit — one year for a Property Code § 301.081 complaint, two years for a
-§ 301.151 civil action. Three systems, three clocks. Do not mix them up.
+*Deadlines.* The association sets its own. The Commission's is the four-year window of
+§ 1101.204(c). Note this is different again from the fair housing deadlines in the previous unit —
+one year for a Property Code § 301.081 complaint, two years for a § 301.151 civil action. Three
+systems, three clocks. Do not mix them up.
 
 *Confidentiality.* An association's process is governed by its own rules. The Commission's is
-governed by § 1101.2051, which makes the investigation file confidential while the matter is live,
-lists the recipients to whom it may nonetheless be disclosed, requires the Commission to "protect
-the identity of a complainant to the extent possible," and then opens the file "on the dismissal or
-final resolution of a complaint, investigation, or audit." Your final order is a public document.
+governed by § 1101.2051: the investigation file is confidential while the matter is live and opens
+"on the dismissal or final resolution of a complaint, investigation, or audit." Your final order is
+a public document.
 
-*Who else gets pulled in.* An association proceeds against the member. The Commission's rule 535.141
-automatically brings in your sponsoring broker "for the limited purposes of determining the broker's
-involvement in any alleged violation and whether the broker fulfilled the broker's professional
-responsibilities," and § 1101.803 makes the broker "liable to the commission, the public, and the
-broker's clients for any conduct engaged in under this chapter by the broker or by a sales agent
-associated with or acting for the broker."
+*Who else gets pulled in.* An association proceeds against the member. At the Commission, rule
+535.141 and § 1101.803 bring in your sponsoring broker on the terms set out in the previous unit.
 
 One more practical point that agents get wrong. The two proceedings are not alternatives, and
 neither is a prerequisite to the other. A consumer harmed by your conduct may file with the
-association, file with the Commission, and sue you, in any order or all at once. Section 1101.801
-confirms the general principle: "Disciplinary action taken against a person under Section 1101.652
-does not relieve the person from civil or criminal liability." Nothing in TRELA makes an
-association's decision binding on the Commission or the reverse.
+association, file with the Commission, and sue you, in any order or all at once; § 1101.801, quoted
+in Unit 1, is the statutory basis for that. Nothing in TRELA makes an association's decision binding
+on the Commission or the reverse.
 
 Finally, a word about how to think about a private code if you join one. The right attitude is
 neither reverence nor cynicism. A code of ethics adopted by an association of competitors is, by the
@@ -1133,24 +1074,19 @@ parties to a real estate transaction the party for whom the license holder is ac
 1101.558(b) requires disclosure of representation, "orally or in writing," at the time of first
 contact with another party or another party's license holder. The minimum standard is therefore not
 *hand over a form when you remember*. It is: at first contact, say who you represent; at first
-substantive communication about a specific property, deliver the IABS notice in one of the four ways
-22 TAC § 531.20 permits; and never by email signature block alone, because the rule says the link
-"may not be in a footnote or signature block in an email."
+substantive communication about a specific property, deliver the IABS notice by one of the delivery
+methods 22 TAC § 531.20 allows, which Module 02 sets out in full.
 
 **2. Put the client first and say so in writing where the statute requires.** Canon § 531.2 requires
 "that the license holder place no personal interest above that of the client," and 22 TAC § 535.156
 states it again: "The license holder must put the interest of the license holder's principal above
 the license holder's own interest." Where you are on the other side of the table from a consumer,
-the statute now requires paper before you begin. Section 1101.563(b) provides that a license holder
-who performs any act of real estate brokerage for a prospective buyer of residential real property
-"must enter into a written agreement with the prospective buyer before" showing any residential real
-property to that buyer, or, if no property will be shown, before presenting an offer on the buyer's
-behalf. Section 1101.563(c) requires the agreement to state the services to be provided, the
-termination date, whether it is exclusive or non-exclusive, whether the license holder represents
-the buyer as the buyer's agent, and "the amount or rate of compensation the broker will receive and
-how this amount will be determined," and to "disclose in conspicuous language that broker
-compensation is not set by law and is fully negotiable." Failing to do this is § 1101.652(b)(34),
-and 22 TAC § 535.191 places it in the $100 - $1,500 band. Note also § 1101.652(b)(12): every
+the statute now requires paper before you begin: § 1101.563 requires a written agreement with a
+prospective buyer of residential real property before you show property or present an offer, and
+prescribes the terms that agreement must contain. Module 05 teaches § 1101.563 and the rest of the
+2026 buyer-representation package. What is yours here is the consequence: failing to do it is
+§ 1101.652(b)(34), and 22 TAC § 535.191 places it in the $100 - $1,500 band. Note also
+§ 1101.652(b)(12): every
 agreement in which you agree to perform services requiring a license, other than a property
 management contract, must "specify a definite termination date that is not subject to prior notice."
 
@@ -1194,9 +1130,10 @@ is received by the license holder and that belongs to another person"; (b)(10) r
 of escrow or trust funds, within a reasonable time, "in trust with a title company authorized to do
 business in this state" or in a custodial, trust or escrow account maintained for that purpose in a
 banking institution authorized to do business in this state; and (b)(31) forbids disbursing that
-money "before the completion or termination of the real estate transaction." Rule 535.2 makes
-trust-fund handling a named broker responsibility. All four of those subdivisions sit in the top
-penalty band of 22 TAC § 535.191.
+money "before the completion or termination of the real estate transaction." Rule 535.2, taught in
+Module 09, makes trust-fund handling a named broker responsibility. Under 22 TAC § 535.191,
+subdivisions (b)(9) and (b)(10) sit in the top penalty band and (b)(30) and (b)(31) in the middle
+band.
 
 **7. Take only compensation you are entitled to, from the right person, with disclosure.** Section
 1101.651(b) confines a sales agent to compensation from the sponsoring broker or the broker who was
@@ -1206,26 +1143,19 @@ compensation from more than one party "without the full knowledge and consent of
 transaction"; (b)(13) reaches accepting, receiving or charging "an undisclosed commission, rebate,
 or direct profit on an expenditure made for a principal"; and (b)(11) reaches paying or dividing a
 fee with a person who is not a license holder or a broker or sales agent licensed in another state.
-Rule 535.148 elaborates: you may not receive a commission, rebate or fee from someone other than the
-person you represent "without first disclosing to the license holder's client that the license
-holder intends to receive the commission, rebate, or fee, and obtaining the consent of the license
-holder's client," and you may not pay or receive a fee or other valuable consideration to or from
-another settlement service provider for referrals or for inclusion on preferred-provider lists. Rule
-535.147 governs sharing with unlicensed persons and permits a rebate to a party in the transaction
-where the sales agent has the written consent of the sponsoring broker and of the party the license
-holder represents, subject to the rule's own limits.
+Two rules fill in the detail and are taught elsewhere: 22 TAC § 535.148 conditions a fee from anyone
+other than the person you represent on prior disclosure to and consent from your client, and governs
+settlement-service referral fees (Module 05); 22 TAC § 535.147 governs sharing compensation with
+unlicensed persons and rebates to a party (Module 09).
 
-**8. Disclose when you are on the other side of the deal.** Rule 535.144 provides that for purposes
-of § 1101.652(a-1)(1), "license holder" includes a license holder acting on behalf of the license
-holder's spouse, parent or child, a business entity in which the license holder is more than a 10%
-owner, or a trust for which the license holder acts as trustee or of which the license holder or the
-license holder's spouse, parent or child is a beneficiary. Such a license holder "is obligated to
-disclose in writing that he or she is a licensed real estate broker or sales agent acting on his or
-her own behalf or in a capacity described by subsection (a) in any contract of sale or rental
-agreement or in any other writing given before entering into any contract of sale or rental
-agreement," and "shall not use the license holder's expertise to the disadvantage of a person with
-whom the license holder deals." Section 1101.652(b)(16) separately reaches acting "in a dual
-capacity as broker and undisclosed principal in a real estate transaction."
+**8. Disclose when you are on the other side of the deal.** Rule 535.144, taught in Module 12,
+extends § 1101.652(a-1)(1) to a license holder acting for a spouse, parent or child, for a business
+entity in which the license holder is more than a 10% owner, or for a trust of which the license
+holder is trustee or of which the license holder or such a family member is a beneficiary, and
+requires written disclosure of license-holder status before any contract of sale or rental
+agreement. Section
+1101.652(b)(16) separately reaches acting "in a dual capacity as broker and undisclosed principal in
+a real estate transaction."
 
 **9. Be competent for the market and the property type, and say no when you are not.** Canon § 531.4
 requires you to "be informed on local market issues and conditions affecting real estate in the
@@ -1233,25 +1163,19 @@ geographic area where a license holder provides services to a client" and to "be
 characteristics involved in the specific type of real estate being brokered for others";
 § 1101.652(a)(6) makes failure to consider market conditions for the specific geographic area a
 ground for discipline; § 1101.652(b)(1) reaches negligence and incompetence in brokerage; and 22 TAC
-§ 535.2 obliges a sponsoring broker to maintain written policies ensuring that each sponsored sales
-agent "is competent to conduct such activities, including having competence in the geographic market
-area where the sales agent represents clients." The minimum standard here has a practical edge
+§ 535.2, taught in Module 09, puts the same competence obligation on the sponsoring broker's written
+policies. The minimum standard here has a practical edge
 students resist: declining a listing you are not equipped to handle, or bringing in a competent
 co-broker, is not a failure of ambition. It is compliance.
 
 **10. Stay out of the practice of law.** Section 1101.654(a) commands suspension or revocation for a
 non-attorney license holder who drafts an instrument affecting an interest in real property other
 than a form described by § 1101.155, or who advises a person "regarding the validity or legal
-sufficiency of an instrument or the validity of title to real property." Rule 537.11 forbids
-drafting or recommending contract language "defining or affecting the rights, obligations, or
-remedies of the principals of a real estate transaction, including escalation, appraisal, or
-contingency clauses," and forbids attempting "to prevent or in any manner whatsoever discourage any
-principal to a real estate transaction from employing an attorney." The same rule requires you,
-"When a transaction involves unusual matters that should be reviewed by an attorney before an
-instrument is executed, or if the instrument must be acknowledged and filed of record," to "advise
-the license holder's principals to consult an attorney before executing the instrument," and to
-"advise the license holder's principals that the instrument they are about to execute is binding on
-them."
+sufficiency of an instrument or the validity of title to real property." Rule 537.11, taught in
+Module 04, states the operational line: no legal advice, no drafting or recommending contract
+language, no discouraging a principal from employing an attorney, and an affirmative duty to send
+principals to an attorney where a transaction involves unusual matters or an instrument that must be
+acknowledged and filed of record.
 
 **11. Never trade in preference or prejudice, in either direction.** Canon § 531.19 forbids
 inquiring about, responding to or facilitating inquiries about, or disclosing any of eight listed
@@ -1265,15 +1189,12 @@ never pass it along.
 **12. Give the required notices and keep the required records.** Rule 531.18 requires the Consumer
 Protection Notice displayed in each place of business the broker maintains and linked on the
 homepage of each business website with the specified label and font size. Rule 531.20 requires the
-IABS link and the completed notice at first substantive communication. Rule 535.17(b) requires a
-written statement accompanying any broker price opinion, comparative market analysis or estimate of
-worth or sale price, containing verbatim language the rule prescribes, "reproduced verbatim in at
-least 12-point font." Rule 535.2 requires the broker to maintain disclosures, commission agreements,
-substantive communications, offers and contracts, compensation records, property management
-contracts, price opinions and sponsorship agreements "for at least four years from the date of
-closing, termination of the contract, or end of a real estate transaction." Line that four-year
-retention up against the four-year complaint window in § 1101.204(c) and you can see why the file
-you close today is the file you may have to defend in 2030.
+IABS link and the completed notice at first substantive communication (Module 02). Rule 535.17
+requires a prescribed written statement with any broker price opinion, comparative market analysis
+or estimate of worth or sale price (Module 12). Rule 535.2 sets the broker's four-year record
+retention (Module 09). Line that four-year retention up against the four-year complaint window in
+§ 1101.204(c) and you can see why the file you close today is the file you may have to defend in
+2030.
 
 **13. Answer the Commission.** Section 1101.652(a)(4) makes it a ground for discipline to fail "to
 provide, within a reasonable time, information requested by the commission that relates to a formal
@@ -1342,9 +1263,9 @@ other parties nonetheless be treated fairly, that the license holder be "scrupul
 and that the license holder "place no personal interest above that of the client"; § 531.3 imposes
 integrity and reaches misrepresentation "by acts of commission or omission"; § 531.4 imposes
 competency in the local market, in industry developments, in judgment and skill, and in the specific
-property type; § 531.18 and § 531.20 impose the Consumer Protection Notice and the IABS Notice, with
-§ 531.20 stating flatly that the IABS link "may not be in a footnote or signature block in an
-email"; and § 531.19 forbids trading in preference. On the statutory side, § 1101.652 is organized
+property type; § 531.18 and § 531.20 impose the Consumer Protection Notice and the IABS Notice, the
+latter taught in Module 02; and § 531.19 forbids trading in preference. On the statutory side,
+§ 1101.652 is organized
 into subsection (a) with eight general grounds, subsection (a-1) with three grounds about the
 license holder's own transactions and records, and subsection (b) with thirty-four grounds that
 apply "while engaged in real estate brokerage," discrimination being (b)(32) and the § 1101.563
@@ -1387,8 +1308,8 @@ in consultation with a Texas attorney, with the disclosures the rule specifies.
 
 The fifth unit turned all of it into a standard you can carry into an appointment: disclose your
 role at first contact and deliver the IABS at first substantive communication; paper the buyer
-relationship before you show anything, with the compensation term and the "not set by law and is
-fully negotiable" disclosure § 1101.563(c) requires; answer within two calendar days under
+relationship before you show anything, on the terms § 1101.563 requires; answer within two calendar
+days under
 § 535.157; convey everything material under § 535.156 and § 1101.557(b); never conceal a known
 significant defect under § 1101.652(b)(3) and (b)(4); keep trust money out of your own account under
 (b)(9), (b)(10), (b)(30) and (b)(31); take compensation only as § 1101.651 and § 535.148 allow;

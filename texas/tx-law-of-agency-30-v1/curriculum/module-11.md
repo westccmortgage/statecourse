@@ -26,8 +26,7 @@ statement is practice rather than law, the module says so and cites nothing for 
 
 ## Unit: Fraud versus Misrepresentation
 
-There is a conversation you will have, probably in your first two years, that decides whether you
-spend the following eighteen months in a deposition. A buyer stands in the driveway of a house in
+A buyer stands in the driveway of a house in
 Pflugerville and asks you a question you do not know the answer to. "Has this ever flooded?" "Is
 that a foundation crack or just settling?" "The seller said the roof is four years old — is that
 right?" What you say next is the entire case. And the legal character of what you say next — whether
@@ -37,8 +36,7 @@ buyer's lawyer will reach for and how much it will cost you.
 Most students arrive at this material with three words jumbled together: fraud, misrepresentation,
 and deception. They are not synonyms. They describe three different levels of culpability, and Texas
 law treats them very differently in terms of who must prove what, what damages are available, and
-how long the claimant has to sue. Sorting them out is the whole work of this unit, and it is the
-foundation for everything that follows about the Deceptive Trade Practices-Consumer Protection Act.
+how long the claimant has to sue.
 
 **Start with what this course holds and what it does not.** The elements of common-law fraud in
 Texas are stated in judicial opinions, not in a statute. No case reporter and no judicial opinion
@@ -70,10 +68,9 @@ irrelevant to liability. That is the single most important sentence in this modu
 
 The next rung up is *negligence* — a statement made without the care a reasonable license holder
 would use. Texas has not, in any source held for this course, defined negligent misrepresentation by
-statute. But the Occupations Code does make carelessness a disciplinary offense on its own. Section
-1101.652(b)(1) authorises the Commission to suspend or revoke a license if the license holder, while
-engaged in real estate brokerage, "acts negligently or incompetently." You do not need to have lied.
-You need only to have been sloppy, and the Commission may act.
+statute. Carelessness is nonetheless a disciplinary offence in its own right: Occupations Code
+§ 1101.652(b)(1) reaches a license holder who "acts negligently or incompetently," a ground Module 10
+teaches. You need not have lied; you need only have been sloppy.
 
 The third rung is *actual awareness*. The DTPA defines it at § 17.45(9): "Knowingly" means "actual
 awareness, at the time of the act or practice complained of, of the falsity, deception, or
@@ -112,25 +109,19 @@ should be treated as having acted intentionally" are not a limitation that saves
 bridge that carries recklessness across into intent. Quote the definition without that final clause
 and you will teach yourself the opposite of the law.
 
-**Where the Occupations Code draws its own lines.** TRELA does not use the DTPA's vocabulary, but it
-tracks the same ladder. Section 1101.652(b)(3) reaches a license holder who "makes a material
-misrepresentation to a potential buyer concerning a significant defect, including a latent
-structural defect, known to the license holder that would be a significant factor to a reasonable
-and prudent buyer in making a decision to purchase real property." Note the two qualifiers: the
-defect must be "known to the license holder," and it must be one "that would be a significant factor
-to a reasonable and prudent buyer." Section 1101.652(b)(4) is the companion for silence rather than
-speech — it reaches a license holder who "fails to disclose to a potential buyer a defect described
-by Subdivision (3) that is known to the license holder." Together they establish the proposition you
-should carry into every showing: on known material defects, a Texas license holder has no right to
-stay quiet.
+**Where the Occupations Code draws its own lines.** TRELA grades fault along the same ladder, and
+Module 10 teaches those grounds in full. Name them and move on: § 1101.652(b)(3) reaches a material
+misrepresentation to a potential buyer concerning a significant defect known to the license holder;
+(b)(4) reaches a failure to disclose such a defect; (b)(5) reaches a false promise made when the
+license holder "is unable or does not intend to keep the promise"; (b)(6) reaches a continued and
+flagrant course of misrepresentation; and § 1101.652(a-1)(1) reaches misrepresentation, dishonesty,
+or fraud when the license holder is buying or selling in the license holder's own name or a close
+relative's. On known material defects a Texas license holder has no right to stay quiet, and buying
+a rent house in your own name does not put you outside TRELA.
 
-Section 1101.652(b)(5) covers the promise rather than the fact. It reaches a license holder who
-"makes a false promise that is likely to influence a person to enter into an agreement when the
-license holder is unable or does not intend to keep the promise." Read the disjunction carefully —
-*unable or does not intend*. You need not have been lying. If you promised something you could not
-deliver, the subdivision is satisfied. The Commission's rule at 22 TAC § 535.145 fills this in and
-is genuinely startling the first time you read it. The rule provides that for purposes of
-§ 1101.652(b)(5) the term false promise "includes both oral and written promises." The rule continues:
+What this module does teach in full is the Commission rule that gives § 1101.652(b)(5) its reach.
+Rule 22 TAC § 535.145 provides that for purposes of that subdivision the term false promise "includes
+both oral and written promises." The rule continues:
 "The fact that a written agreement between the parties to a real estate transaction does not recite
 a promise made by a real estate license holder to one of the parties or that a person did not
 detrimentally rely on the false promise will not prevent the Commission from determining that a
@@ -141,46 +132,22 @@ evidence rule, shall prevent the Commission from considering oral promises made 
 holder." The merger clause in the contract does not protect you in front of TREC. What you said in
 the car on the way to the property is evidence.
 
-Section 1101.652(b)(6) escalates from the single incident to the pattern: a license holder who
-"pursues a continued and flagrant course of misrepresentation or makes false promises through an
-agent or sales agent, through advertising, or otherwise." And § 1101.652(a-1)(1) reaches you in your
-personal capacity, when you are not acting for a client at all — a license holder who "engages in
-misrepresentation, dishonesty, or fraud when selling, buying, trading, or leasing real property in
-the name of" the license holder, the license holder's spouse, or "a person related to the license
-holder within the first degree by consanguinity." Buying a rent house in your own name does not put
-you outside TRELA.
+**Who bears a misrepresentation, § 1101.805.** Occupations Code § 1101.805 allocates responsibility
+for a misrepresentation or concealment between a party and a license holder; Module 03 teaches it.
+The half that operates here is subsection (e): a license holder "is not liable for a
+misrepresentation or a concealment of a material fact made by a party to a real estate transaction
+unless the license holder: (1) knew of the falsity of the misrepresentation or concealment; and (2)
+failed to disclose the license holder's knowledge of the falsity of the misrepresentation or
+concealment." Both conditions must be met before you are exposed, and the second is in your hands:
+the moment you learn the seller's answer is wrong, disclose it and you are outside the exception.
+Subsection (b) provides that the section "prevails over any other law, including common law." How
+that protection interacts with DTPA liability is taken up in the Defenses unit.
 
-**The allocation-of-blame statute.** Occupations Code § 1101.805 is short and easy to misread, so
-read it precisely. Subsection (b) says "This section prevails over any other law, including common
-law." Subsection (d) provides that a party — defined by § 1101.551(2) as "a prospective buyer,
-seller, landlord, or tenant or an authorized representative of a buyer, seller, landlord, or tenant"
-and expressly *not* including "a license holder who represents a party" — "is not liable for a
-misrepresentation or a concealment of a material fact made by a license holder in a real estate
-transaction unless the party: (1) knew of the falsity of the misrepresentation or concealment; and
-(2) failed to disclose the party's knowledge of the falsity of the misrepresentation or
-concealment." Subsection (e) is the mirror image and the one that matters to you: "A license holder
-is not liable for a misrepresentation or a concealment of a material fact made by a party to a real
-estate transaction unless the license holder: (1) knew of the falsity of the misrepresentation or
-concealment; and (2) failed to disclose the license holder's knowledge of the falsity of the
-misrepresentation or concealment."
-
-Section 1101.805(e) is a real protection and you should understand its exact shape. If a seller lies
-to you on the seller's disclosure notice, and you pass that answer along in good faith with no
-knowledge of its falsity, § 1101.805(e) says you are not liable for the seller's misrepresentation.
-But the protection has two conditions joined by "and," and both must fail before you are exposed:
-you must have known of the falsity *and* failed to disclose your knowledge of it. The moment you
-learn the seller's answer is wrong, the second condition is in your hands. Disclose, and you are
-outside the exception. Stay silent, and you are inside it. Note also what § 1101.805(c) preserves:
-"This section does not diminish a broker's responsibility for the acts or omissions of a sales agent
-associated with or acting for the broker." Your sponsoring broker's exposure does not vanish because
-you were the one who spoke.
-
-**Why the DTPA swallows all of this in practice.** You now have a coherent picture of the three
-concepts. Fraud, in the ordinary sense, involves a knowing falsehood told to get someone to act.
-Negligent misrepresentation involves carelessness in what you said or failed to check. Innocent
-misrepresentation involves a false statement honestly and reasonably believed. In the abstract those
-are three different lawsuits with three different burdens. In a Texas residential transaction they
-usually collapse into one, and it is the DTPA. Here is why.
+**Why the DTPA swallows all of this in practice.** Fraud, in the ordinary sense, involves a knowing
+falsehood told to get someone to act. Negligent misrepresentation involves carelessness in what you
+said or failed to check. Innocent misrepresentation involves a false statement honestly and
+reasonably believed. In the abstract those are three different lawsuits with three different
+burdens. In a Texas residential transaction they usually collapse into one, and it is the DTPA.
 
 First, the DTPA does not require the plaintiff to prove your state of mind to establish liability.
 As you saw, the laundry-list subdivisions are mostly written without scienter, and § 17.50(a)(1)
@@ -197,15 +164,12 @@ fees." Not *may*. A common-law fraud claim carries no such guarantee in any sour
 course. This single sentence is why a $9,000 repair dispute becomes a filed lawsuit: the fee award
 makes small cases economically rational to bring.
 
-Third, the DTPA multiplies. Section 17.50(b)(1) permits mental anguish damages and up to treble
-additional damages when conduct is knowing or intentional. Fourth, the DTPA cannot be waived except
-in the narrow circumstances of § 17.42, which you will study in the next unit. And fifth, the
-Legislature told the courts how to read it. Section 17.44(a): "This subchapter shall be liberally
-construed and applied to promote its underlying purposes, which are to protect consumers against
-false, misleading, and deceptive business practices, unconscionable actions, and breaches of
-warranty and to provide efficient and economical procedures to secure such protection." No Texas
-statute instructs courts to construe common-law fraud liberally in the plaintiff's favour. This one
-does.
+Third, the DTPA multiplies: § 17.50(b)(1) permits mental anguish damages and additional damages when
+conduct is knowing or intentional, which the Damages unit works through. Fourth, the DTPA cannot be
+waived except in the narrow circumstances of § 17.42. And fifth, § 17.44(a) directs that the
+subchapter "shall be liberally construed and applied to promote its underlying purposes" — set out
+in full in the next unit. No Texas statute instructs courts to construe common-law fraud liberally
+in the plaintiff's favour. This one does.
 
 **One place where the older causes of action still matter: time.** Civil Practice & Remedies Code
 § 16.004(a) provides that "[a] person must bring suit on the following actions not later than four
@@ -247,8 +211,7 @@ without skipping the final sentence of either.
 
 Business & Commerce Code § 17.41 states the short title: "This subchapter may be cited as the
 Deceptive Trade Practices-Consumer Protection Act." Everyone in Texas real estate calls it the DTPA.
-It occupies Subchapter E of Chapter 17, running from § 17.41 through § 17.63, and it is the most
-consequential consumer statute a Texas license holder will ever encounter. This unit takes it apart.
+It occupies Subchapter E of Chapter 17, running from § 17.41 through § 17.63.
 
 **The interpretive instruction comes first, because it colours everything else.** Section 17.44(a)
 directs that the subchapter "shall be liberally construed and applied to promote its underlying
@@ -432,16 +395,15 @@ you will see in a moment.
 Consider a Texas fact pattern. You list a house in Friendswood. In the file, from a prior listing
 you handled on the same house two years earlier, sits an inspection report noting active seepage at
 the north foundation wall. The seller's disclosure notice this time says no known water penetration.
-Property Code § 5.008(d) tells us the notice "shall be completed to the best of seller's belief and
-knowledge as of the date the notice is completed and signed by the seller," so the seller's answer
-may be perfectly proper as to the seller. That does not answer the question about you. You knew, at
+The notice is the seller's own statement of the seller's knowledge and belief — Property Code
+§ 5.008 is taught in Module 03 — so the seller's answer may be perfectly proper as to the seller.
+That does not answer the question about you. You knew, at
 the time of the transaction, of information concerning the property. If a fact-finder concludes you
 kept quiet in order to get the deal closed — that is, that the silence was "intended to induce the
 consumer into a transaction into which the consumer would not have entered had the information been
-disclosed" — subdivision (24) is satisfied. Add § 1101.652(b)(4), which independently makes it a
-disciplinary ground to fail "to disclose to a potential buyer a defect described by Subdivision (3)
-that is known to the license holder," and you have civil and administrative liability from the same
-silence.
+disclosed" — subdivision (24) is satisfied. Add § 1101.652(b)(4), which independently makes that
+silence a disciplinary ground, and one omission has produced both civil and administrative
+liability.
 
 **Unconscionable action or course of action.** The second major door, § 17.50(a)(3), does not depend
 on the laundry list at all. It reaches "any unconscionable action or course of action by any
@@ -566,7 +528,7 @@ to your broker.
 
 ## Unit: Damages
 
-A great deal of what makes the DTPA frightening is arithmetic. This unit does the arithmetic. Work
+A great deal of what makes the DTPA frightening is arithmetic. Work
 through the numbers slowly, because the difference between an ordinary finding and a "knowingly"
 finding, and between "knowingly" and "intentionally," is the difference between a claim your carrier
 absorbs and a claim that ends a career.
@@ -773,9 +735,8 @@ attorneys' fees of $62,000 and court costs of $4,100.
 A statute that liberally construes itself in the consumer's favour, dispenses with privity, and pays
 the consumer's lawyer nonetheless contains a real set of defenses. Some are complete; some only
 shift or cap the loss; one of them, added to the Act in 2011, was written specifically for people
-holding the license you are studying for. Learn them in the order a case actually unfolds: is the
-defendant exempt at all; was the procedural prerequisite met; is the claim time-barred; and if the
-case proceeds, does the defendant have a substantive defense to damages.
+holding the license you are studying for. They are taken in the order a case actually unfolds:
+exemption, procedural prerequisite, limitations, and then the substantive defenses to damages.
 
 **The exemptions in § 17.49, beginning with the one written for you.** Section 17.49(i) provides:
 "Nothing in this subchapter shall apply to a claim against a person licensed as a broker or
@@ -999,31 +960,22 @@ property." So the DTPA's two years is shorter than the fraud period, and a claim
 time under § 17.565 may still have a fraud claim alive. When you receive a demand letter about a
 transaction from three years ago, do not conclude that you are safe.
 
-**The waiver defense, and why you will rarely have it.** Section 17.42 makes consumer waivers
-"contrary to public policy and ... unenforceable and void" unless all three of the § 17.42(a)
-conditions are met — written and signed, no significantly disparate bargaining position, and the
-consumer represented by counsel in seeking or acquiring the goods or services — with § 17.42(b)
-voiding the waiver if the consumer's counsel "was directly or indirectly identified, suggested, or
-selected by a defendant or an agent of the defendant," and § 17.42(c) prescribing conspicuous
-bold-face type of at least 10 points, the heading "Waiver of Consumer Rights," and the statutory
-form. Section 17.42(d) permits a partial waiver: "The waiver required by Subsection (c) may be
-modified to waive only specified rights under this subchapter." In the ordinary residential
+**The waiver defense, and why you will rarely have it.** The three § 17.42(a) conditions, the
+§ 17.42(b) counsel restriction and the § 17.42(c) form were set out under Deceptive Trade Practices
+above. Add only § 17.42(d), which permits a partial waiver: "The waiver required by Subsection (c)
+may be modified to waive only specified rights under this subchapter." In the ordinary residential
 transaction none of this is available, and a license holder who inserts a homemade DTPA waiver into
-a contract has accomplished nothing except to create an exhibit.
+a contract has accomplished nothing except to create an exhibit. The defense-side fee award under
+§ 17.50(c) for a groundless, bad-faith or harassing suit, computed under Damages above, belongs on
+the same list.
 
-**Groundless suits, § 17.50(c).** Where a court finds the action "was groundless in fact or law or
-brought in bad faith, or brought for the purpose of harassment," the court "shall award to the
-defendant reasonable and necessary attorneys' fees and court costs." It is a real defense-side
-remedy, and it is also a caution: it exists because the Legislature understood that a fee-shifting
-consumer statute invites opportunistic claims.
-
-**And one defense that comes from TRELA, not the DTPA.** Occupations Code § 1101.805(e), studied in
-Unit 1, provides that a license holder is not liable for a party's misrepresentation or concealment
-unless the license holder "knew of the falsity" and "failed to disclose the license holder's
-knowledge of the falsity." Section 1101.805(b) says the section "prevails over any other law,
-including common law." Read § 1101.805(e) alongside § 17.506(a) and you can see the two halves of a
-coherent defensive posture: document in writing, before consummation, the source of every fact you
-pass along; and the moment you learn a fact you passed along is false, say so.
+**And one defense that comes from TRELA, not the DTPA.** Occupations Code § 1101.805(e), quoted in
+Unit 1 and taught in Module 03, protects a license holder from a party's misrepresentation or
+concealment unless the license holder both knew of the falsity and failed to disclose that
+knowledge. Its limits are what make it worth pairing with the DTPA: it does nothing about your own
+statements, and it fails the moment you sit on knowledge of a falsity. Read alongside § 17.506(a) it
+yields one defensive posture — document in writing, before consummation, the source of every fact
+you pass along, and the moment you learn a fact you passed along is false, say so.
 
 ### Statute reading exercise: The exemptions in § 17.49
 
@@ -1055,29 +1007,21 @@ wins a judgment against a broke license holder is not left with a worthless piec
 tracks operate independently of the civil suit, and understanding that independence is the ethical
 heart of this module.
 
-**Two proceedings, two standards, one set of facts.** A DTPA judgment does not revoke your license,
-and you saw why in the Damages unit: § 17.50(b)(4) expressly bars a civil court from revoking or
-suspending the license of a judgment debtor where "the person is a licensee of or regulated by a
-state agency which has statutory authority to revoke or suspend a license or to appoint a receiver
-or trustee." TREC has that authority. So the civil court takes money and TREC takes licenses, and
-each does its own work on its own record. A license holder who settles a DTPA claim quietly for
+**Two proceedings, two standards, one set of facts.** A DTPA judgment does not revoke your license:
+§ 17.50(b)(4), under Damages above, bars a civil court from revoking the license of a judgment debtor
+regulated by a state agency that holds revocation authority, and TREC holds it. So the civil court
+takes money and TREC takes licenses, and each does its own work on its own record. A license holder who settles a DTPA claim quietly for
 $18,000 has resolved nothing with the Commission. A license holder whom TREC declines to discipline
 is not thereby cleared in a civil suit. The two proceedings do not bind each other.
 
-**The disciplinary grounds that track DTPA exposure.** Occupations Code § 1101.652(b) opens with the
-words "if the license holder, while engaged in real estate brokerage" and then lists thirty-four
-grounds. Read the ones below as the administrative mirror of the laundry list you studied in Unit 2.
-
-Section 1101.652(b)(1): "acts negligently or incompetently." No falsehood required at all. Section
-1101.652(b)(2): "engages in conduct that is dishonest or in bad faith or that demonstrates
-untrustworthiness." Section 1101.652(b)(3) and (b)(4), the known-material-defect pair studied in
-Unit 1 — misrepresenting a significant defect known to the license holder, and failing to disclose
-one. Section 1101.652(b)(5), the false promise. Section 1101.652(b)(6): "pursues a continued and
-flagrant course of misrepresentation or makes false promises through an agent or sales agent,
-through advertising, or otherwise."
-
-Then two that are directly and explicitly about deception. Section 1101.652(b)(14) reaches a license
-holder who "solicits, sells, or offers for sale real property by means of a lottery," and
+**The disciplinary grounds that track DTPA exposure.** Occupations Code § 1101.652 is taught in
+Module 10, which walks the grounds and the disciplinary process. What belongs here is the overlap:
+the grounds already named in Unit 1 — (b)(1) negligence or incompetence, (b)(3) and (b)(4) on known
+material defects spoken and unspoken, (b)(5) the false promise, (b)(6) a continued and flagrant
+course of misrepresentation — reach the same conduct the DTPA reaches, on an administrative record
+and with no consumer, no reliance and no dollar of loss required. Two grounds go further and adopt
+the DTPA outright. Section 1101.652(b)(14) reaches a license holder who "solicits, sells, or offers
+for sale real property by means of a lottery," and
 § 1101.652(b)(15) reaches one who "solicits, sells, or offers for sale real property by means of a
 deceptive practice." The Commission's rule at 22 TAC § 535.149 defines both. On the lottery, the
 rule provides that "For the purposes of §1101.652(b)(14) of the Act, the elements of a" lottery "are
@@ -1096,44 +1040,21 @@ misrepresentation about square footage is not only a civil claim; it is, by rule
 practice" for purposes of § 1101.652(b)(15), and the Commission may suspend or revoke on that basis.
 The two tracks are not merely parallel — they share their definitions.
 
-Section 1101.652(b)(23) polices advertising, reaching a license holder who "publishes or causes to
-be published an advertisement that: (A) misleads or is likely to deceive the public; (B) tends to
-create a misleading impression; (C) implies that a sales agent is responsible for the operation of
-the broker's real estate brokerage business; or (D) fails to include the name of the broker for whom
-the license holder acts". Notice how much lower the bar is than in a civil case: an advertisement
-that merely "tends to create a misleading impression" is a ground. No consumer need have been
-deceived, none need have relied, and none need have lost a dollar. Section 1101.652(b)(24) reaches a
-license holder who "withholds from or inserts into a statement of account or invoice a statement
-that the license holder knows makes the statement of account or invoice inaccurate in a material
-way" — the closing statement version of the same idea. And § 1101.652(b)(25) reaches one who
-"publishes or circulates an unjustified or unwarranted threat of a legal proceeding or other
-action," which is worth remembering on the day you are angry about a demand letter.
+Three neighbouring subdivisions reach related conduct administratively and are taught in Module 10:
+§ 1101.652(b)(23) reaches an advertisement that "tends to create a misleading impression" — a
+markedly lower bar than any civil claim, since no consumer need have been deceived, relied, or lost
+a dollar; (b)(24) reaches a knowingly inaccurate statement of account or invoice, which is the
+closing-statement version of the same idea; and (b)(25) reaches an unjustified or unwarranted threat
+of legal proceedings, worth remembering on the day you are angry about a demand letter.
 
-Section 1101.652(a)(8) and (b)(33) are the catch-alls — "disregards or violates this chapter or
-Chapter 1102" and "disregards or violates this chapter" — and they mean that any TRELA violation is
-itself a ground.
-
-**The rules that state the ethical duty directly.** Two Commission rules put into ordinary language
-what the statutes express through prohibitions. Rule 22 TAC § 535.156 begins: "A license holder's
-relationship with the license holder's principal is that of a fiduciary. A license holder shall
-convey to the principal all known information which would affect the principal's decision on whether
-or not to make, accept or reject offers; however, if the principal has agreed in writing that offers
-are not to be submitted after the principal has entered into a contract to buy, sell, rent, or lease
-a property, the license holder shall have no duty to submit offers to the principal after the
-principal has accepted an offer." It continues: "The license holder must put the interest of the
-license holder's principal above the license holder's own interest. A license holder must deal
-honestly and fairly with all parties; however, the license holder represents only the principal and
-owes a duty of fidelity to such principal." It adds an affirmative duty: "A license holder has an
-affirmative duty to keep the principal informed at all times of significant information applicable
-to the transaction or transactions in which the license holder is acting as agent for the
-principal."
-
-And then the sentence that resolves most DTPA questions before they become questions: "A license
-holder has a duty to convey accurate information to members of the public with whom the license
-holder deals." Not to clients. To members of the public. The buyer across the table from you,
-represented by another brokerage, owing you nothing and owed by you no fiduciary duty, is still owed
-accurate information under § 535.156. That rule and § 17.45(4)'s privity-free definition of consumer
-are the same idea expressed in two regulatory languages.
+**The rule that states the ethical duty directly.** Rule 22 TAC § 535.156 sets out the license
+holder's fiduciary obligations to a principal, and Module 02 teaches it. One sentence of it resolves
+most DTPA questions before they become questions: "A license holder has a duty to convey accurate
+information to members of the public with whom the license holder deals." Not to clients. To members
+of the public. The buyer across the table from you, represented by another brokerage, owing you
+nothing and owed by you no fiduciary duty, is still owed accurate information under § 535.156. That
+rule and § 17.45(4)'s privity-free definition of consumer are the same idea expressed in two
+regulatory languages.
 
 Rule 22 TAC § 535.145, studied in Unit 1, does the same work for promises: oral promises count, the
 absence of the promise from the written agreement does not matter, detrimental reliance is not
@@ -1258,23 +1179,18 @@ which each license and certificate holder shall provide the notice to consumers 
 recipients." The consumer's backstop is one you are statutorily required to help the Commission tell
 them about.
 
-**The ethical proposition, stated plainly.** Notice what all of this machinery implies about the
-standard you are held to. The DTPA does not require you to be dishonest before you are liable;
-§ 17.46(b)(5) makes an accurate-sounding but wrong statement actionable. TRELA does not require you to
-be dishonest before your license is at risk; § 1101.652(b)(1) reaches negligence and incompetence.
-Rule § 535.156 does not limit your duty of accuracy to your own client; it extends to "members of
-the public with whom the license holder deals." And the trust account exists on the premise that
-some license holders will cause real damage and be unable to pay for it — funded, under
-§ 1101.603(c), in part by administrative penalties collected from license holders under Subchapter O,
-and under § 1101.603(f) potentially by fees or assessments the Commission may collect by rule from
-applicants and renewing license holders. The profession pays for its own failures.
+**The ethical proposition, stated plainly.** Neither track requires dishonesty before it bites, and
+the trust account exists on the premise that some license holders will cause real damage and be
+unable to pay for it — funded, under § 1101.603(c), in part by administrative penalties collected
+from license holders under Subchapter O, and under § 1101.603(f) potentially by fees or assessments
+the Commission may collect by rule from applicants and renewing license holders.
 
 So the practical ethic is not "do not lie." It is narrower and harder: **say only what you know, say
 where you learned it, and correct it in writing the moment you learn it is wrong.** Every defense in
-this module rewards that habit. Section 17.506(a) requires written notice of your reliance before
-consummation. Section 1101.805(e) protects you unless you knew of the falsity and failed to disclose
-your knowledge. Section 17.49(i)'s exemption survives for advice, judgment and opinion and dies on
-express misrepresentations of material fact. All three point at the same discipline.
+this module rewards that habit — the § 17.506(a) written notice of reliance before consummation, the
+§ 1101.805(e) protection that fails only when you knew of a falsity and stayed silent, and the
+§ 17.49(i) exemption that survives for advice, judgment and opinion and dies on express
+misrepresentations of material fact.
 
 ### Applied exercise: The unpaid judgment in Waco
 

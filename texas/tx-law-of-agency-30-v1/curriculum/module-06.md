@@ -38,29 +38,15 @@ something specific.
 rule that makes everything else in this module necessary: "A broker who represents a party in a real
 estate transaction or who lists real estate for sale under an exclusive agreement for a party is that
 party's agent." That is a status, not a courtesy. Once you are the party's agent, the Commission's
-rules attach obligations that run in one direction only. Rule 531.2 — the rule the Commission titles
-*Fidelity* — says that "A license holder, while acting as an agent for another, is a fiduciary," and
-then spells out what that fiduciary posture demands. The first demand is the one that matters here:
-"that the primary duty of the license holder is to represent the interests of the client, and the
-license holder's position, in this respect, should be clear to all parties concerned in a real estate
-transaction; that, however, the license holder, in performing duties to the client, shall treat other
-parties to a transaction fairly." The last demand in the rule is blunter still: "that the license
-holder place no personal interest above that of the client."
-
-Rule 535.156 says the same thing from a different angle and adds the information duty. "A license
-holder's relationship with the license holder's principal is that of a fiduciary. A license holder
-shall convey to the principal all known information which would affect the principal's decision on
-whether or not to make, accept or reject offers." Read the qualifier that follows in the same rule,
-because truncating it would leave you with a false absolute: "however, if the principal has agreed in
-writing that offers are not to be submitted after the principal has entered into a contract to buy,
-sell, rent, or lease a property, the license holder shall have no duty to submit offers to the
-principal after the principal has accepted an offer." The rule then states the loyalty rule and the
-fairness rule in one breath: "The license holder must put the interest of the license holder's
-principal above the license holder's own interest. A license holder must deal honestly and fairly with
-all parties; however, the license holder represents only the principal and owes a duty of fidelity to
-such principal." And it adds a continuing obligation: "A license holder has an affirmative duty to keep
-the principal informed at all times of significant information applicable to the transaction or
-transactions in which the license holder is acting as agent for the principal."
+rules attach obligations that run in one direction only. Rule 531.2 — the Canon the Commission titles
+*Fidelity* — makes the license holder a fiduciary whose "primary duty ... is to represent the interests
+of the client," whose position "should be clear to all parties concerned in a real estate transaction,"
+and who must "place no personal interest above that of the client." Rule 535.156 adds the information
+duty: the license holder must convey to the principal all known information which would affect the
+principal's decision on whether or not to make, accept or reject offers — subject to the written
+no-further-offers exception the rule itself states — and must put the principal's interest above the
+license holder's own. Module 02 teaches the fiduciary Canons and Rule 535.156 in full, with their
+qualifiers.
 
 Put those together and you have the promise a Texas agency relationship makes. Everything you learn
 about the other side, you tell your client. Everything your client tells you that would hurt him, you
@@ -131,25 +117,20 @@ for suspension or revocation if a license holder, while engaged in real estate b
 dual capacity as broker and undisclosed principal in a real estate transaction." That subdivision is
 about a licensee who is secretly a *party* to the deal — buying for herself through a nominee, taking a
 hidden interest in the property — not about a licensee representing two sides. The vice there is the
-concealed self-interest, which is why Rule 535.144 requires a license holder transacting on her own
-behalf, or on behalf of a spouse, parent or child, a business entity in which she is more than a ten
-percent owner, or a trust she serves as trustee or in which she or a close family member is a
-beneficiary, to "disclose in writing that he or she is a licensed real estate broker or sales agent
-acting on his or her own behalf" in the contract or in a writing given before the contract. Different
+concealed self-interest, which is why Rule 535.144 — taught in Module 12 — makes a license holder who
+deals on her own account, or for close family, a business entity she owns more than ten percent of, or
+a trust she serves or benefits from, disclose her licence status in writing. Different
 problem, different rule. Section 1101.652(b)(16) is not the Texas dual-agency prohibition, because
 Texas does not need one: the capacity was never created.
 
-**The two disciplinary hooks that predate everything.** Two subdivisions of § 1101.652(b) do the real
-work when a licensee muddles the sides, and they will reappear in every unit of this module. The
-Commission may suspend or revoke a license, or take other disciplinary action, if the license holder,
-while engaged in real estate brokerage, "fails to make clear to all parties to a real estate
-transaction the party for whom the license holder is acting" — § 1101.652(b)(7) — or "receives
-compensation from more than one party to a real estate transaction without the full knowledge and
-consent of all parties to the transaction" — § 1101.652(b)(8). Notice how general those are. They do
-not require proof that anybody was cheated out of money. Subdivision (7) is violated by ambiguity
-itself. If a buyer at your open house cannot tell whose agent you are, you have already supplied the
-element. Under 22 TAC § 535.191 those two subdivisions carry an administrative penalty range of $500 to
-$3,000 per violation per day.
+**The two disciplinary hooks that do the real work.** Two subdivisions of § 1101.652(b) reach a
+licensee who muddles the sides: (b)(7), failing to make clear to all parties the party for whom the
+license holder is acting, and (b)(8), receiving compensation from more than one party without the full
+knowledge and consent of all parties. Notice how general they are. Neither requires proof that anybody
+was cheated out of money; subdivision (7) is violated by ambiguity itself, so if a buyer at your open
+house cannot tell whose agent you are, you have already supplied the element. Section 1101.652 as a
+whole, and the penalty schedule in 22 TAC § 535.191, are taught in Module 10; the last unit of this
+module returns to these two subdivisions where the exposure is the point.
 
 **When the intermediary provisions entered Texas law.** The held text of Chapter 1101 records the
 enactment history at the foot of each section. Sections 1101.559, 1101.560 and 1101.561 were each
@@ -219,10 +200,8 @@ from the text alone.
 
 ## Unit: Intermediary Brokerage
 
-Now build the thing piece by piece. This unit is the operating manual: who the intermediary is, how the
-capacity is created, what it forbids, what it permits, and how far the supersession in § 1101.561(a)
-actually reaches. Read it slowly. Every sentence in the next several pages corresponds to something a
-Commission investigator can ask you to produce.
+This unit is the operating manual: who the intermediary is, how the capacity is created, what it
+forbids, what it permits, and how far the supersession in § 1101.561(a) actually reaches.
 
 **The intermediary is the broker. Not you.** Section 1101.551(1) is explicit: an intermediary is
 "a broker who is employed to negotiate a transaction between the parties to a transaction." Chapter 1101
@@ -234,12 +213,10 @@ purpose of performing an act described by Subdivision (1)" — that is, an act o
 engage in real estate brokerage unless the sales agent is sponsored by a licensed broker and is acting
 for that broker." Everything you do as a sales agent, you do for and through your broker.
 
-Two further sources make the point unmistakable. Rule 535.2, the broker responsibility rule, provides
-that "Listings and other agreements for real estate brokerage services must be solicited and accepted
-in a broker's name," and that a broker "owes the highest fiduciary obligation to the principal and is
-obliged to convey to the principal all information known to the agent which may affect the principal's
-decision unless prohibited by other law." And § 1101.803 states the liability rule in one sentence: "A
-licensed broker is liable to the commission, the public, and the broker's clients for any conduct
+Two further sources make the point unmistakable. Rule 535.2, the broker responsibility rule taught in
+Module 09, requires that "Listings and other agreements for real estate brokerage services must be
+solicited and accepted in a broker's name." And § 1101.803 states the liability rule in one sentence:
+"A licensed broker is liable to the commission, the public, and the broker's clients for any conduct
 engaged in under this chapter by the broker or by a sales agent associated with or acting for the
 broker." So when a Round Rock brokerage lists the Chisholm Trail house and a sales agent in the same
 office is working with a buyer who wants it, the client relationships on both sides belong to the
@@ -383,22 +360,16 @@ relates to the condition of the property."
 Sit with exception (C) for a moment. A seller cannot use the intermediary's confidentiality duty as a
 lid on a defect. If the seller tells you the foundation was underpinned twice and the second contractor
 walked off, that information materially relates to the condition of the property and subdivision (3)
-does not permit you to withhold it. Independently, § 1101.652(b)(3) makes it a disciplinary ground to
-make "a material misrepresentation to a potential buyer concerning a significant defect, including a
-latent structural defect, known to the license holder that would be a significant factor to a reasonable
-and prudent buyer in making a decision to purchase real property," and § 1101.652(b)(4) reaches the
-license holder who "fails to disclose to a potential buyer a defect described by Subdivision (3) that is
-known to the license holder." Confidentiality in Texas protects negotiating position. It has never
+does not permit you to withhold it. Independently, § 1101.652(b)(3) and (b)(4) reach a license holder
+who makes a material misrepresentation to a potential buyer about a known significant defect, or fails
+to disclose one; Module 10 teaches § 1101.652. Confidentiality in Texas protects negotiating position. It has never
 protected physical facts about the house.
 
 Subdivision (4) — "treat a party to a transaction dishonestly" — is short and total. There is no
 qualifier and no unless. Whatever else the intermediary framework permits, it never permits lying to
-either side. Rule 535.156 says the same thing about all license holders in all postures: "A license
-holder has a duty to convey accurate information to members of the public with whom the license holder
-deals." Rule 531.3 adds that "A license holder has a special obligation to exercise integrity in the
-discharge of the license holder's responsibilities, including employment of prudence and caution so as
-to avoid misrepresentation, in any way, by acts of commission or omission." Note "omission." A
-half-truth engineered by silence is a misrepresentation.
+either side. Rule 535.156 and the integrity Canon in Rule 531.3, both taught in Module 02, say the same
+of every license holder in every posture, and Rule 531.3 reaches misrepresentation "by acts of
+commission or omission." A half-truth engineered by silence is a misrepresentation.
 
 Subdivision (5) — "violate this chapter" — folds the whole Act into the intermediary prohibition. It
 means that an intermediary who breaks any other provision of Chapter 1101 has, by that fact, also
@@ -447,21 +418,17 @@ Duties imposed by *this* subchapter. The supersession runs against "any other la
 Duties imposed elsewhere in Chapter 1101. Section 1101.651(d) is drafted expressly to govern brokers and
 appointees "who acts as an intermediary under Subchapter L," so it plainly survives — indeed it would be
 absurd to read § 1101.561(a) as abolishing the very confidentiality rules that define the role. Section
-1101.652 continues to supply grounds for discipline; § 1101.652(b)(2) still reaches conduct "that is
-dishonest or in bad faith or that demonstrates untrustworthiness," and § 1101.652(b)(1) still reaches a
-license holder who "acts negligently or incompetently." Section 1101.555 still requires a license holder,
-when an offer to purchase Texas real estate is signed, to advise each buyer in writing to have the
-abstract examined by an attorney chosen by the buyer or to be provided with or obtain a title insurance
-policy. Section 1101.557(b) still requires a broker who represents a party to inform the party of
+1101.652 continues to supply grounds for discipline, including (b)(1) acting negligently or
+incompetently and (b)(2) conduct that is dishonest, in bad faith, or demonstrates untrustworthiness
+(Module 10). Section 1101.555 still requires the written attorney-or-title-policy advice when an offer
+to purchase Texas real estate is signed (Module 12). Section 1101.557(b) still requires a broker who
+represents a party to inform the party of
 material information related to the transaction, including the receipt of an offer, and to "at a
 minimum, answer the party's questions and present any offer to or from the party."
 
-Timeliness rules still apply too. Rule 535.157 provides that "A broker or sales agent must respond to
-his or her principal, a broker or sales agent representing another party to a real estate transaction,
-or an unrepresented party to a real estate transaction within two calendar days," and Rule 535.2 adds
-that a broker or a delegated supervisor "must respond to sponsored sales agents within two calendar
-days." An intermediary who goes quiet for a week has not become impartial; he has become
-non-responsive.
+Timeliness rules still apply too: Rule 535.157 (Module 02) gives a license holder two calendar days to
+respond to a principal, to a license holder representing another party, or to an unrepresented party.
+An intermediary who goes quiet for a week has not become impartial; he has become non-responsive.
 
 Where the boundary is genuinely uncertain, say so rather than guessing. The phrase "any other law,
 including common law" is broad, and the held sources do not contain a Texas court decision construing
@@ -591,10 +558,6 @@ Commission's promulgated forms are not held for this course, and this module the
 any particular form's contents. What is held is the statute, and the statute requires written notice of
 the appointment to everyone in the transaction.
 
-Under 22 TAC § 535.191 the whole of § 1101.560 sits in the Commission's top administrative-penalty
-band, $1,000 to $5,000 per violation per day — the same band as § 1101.559(a) and (c), § 1101.561(b),
-§ 1101.558 and § 1101.651.
-
 **What the appointment actually buys: subsection (c).** "A license holder appointed under this section
 may provide opinions and advice during negotiations to the party to whom the license holder is
 appointed." Compare that with § 1101.559(c)'s command that "An intermediary shall act fairly and
@@ -648,31 +611,20 @@ identical, because § 1101.651(d) governs both — but about *advice*. Without a
 negotiate unadvised through an impartial broker. With appointments, each party negotiates with a
 licensee permitted to be useful to them, inside the same silence.
 
-**Two more constraints that survive the intermediary posture.** First, broker responsibility. Rule 535.2
-requires a broker to notify a sponsored sales agent in writing of the scope of the sales agent's
-authorized activities, provides that "Unless such scope is limited or revoked in writing, a broker is
-responsible for the authorized acts of the broker's sales agents, but the broker is not required to
-supervise the sales agents directly," and warns that "If a broker permits a sponsored sales agent to
-conduct activities beyond the scope explicitly authorized by the broker, those are acts for which the
-broker is responsible." The same rule permits a broker to delegate to another license holder the
-responsibility to assist in administering compliance, but says the broker "may not relinquish overall
-responsibility for the supervision of license holders sponsored by the broker," requires any such
-delegation to be in writing, and requires the broker to give the Commission the name of each delegated
-supervisor within thirty days of a delegation that has lasted or is anticipated to last more than three
-consecutive months, and to notify the Commission within thirty days after a delegation ends. In an
-intermediary transaction the broker's exposure is doubled, because § 1101.803 makes the broker liable
-"to the commission, the public, and the broker's clients" for conduct engaged in by the broker or by a
-sales agent associated with or acting for the broker — and there are now clients on both sides.
+**Two more constraints that survive the intermediary posture.** First, broker responsibility. Rule
+535.2 — taught in full in Module 09 — makes the broker responsible for the authorized acts of sponsored
+sales agents and for acts beyond the authorized scope that the broker permits, and does not let a
+delegation of supervisory duties relinquish the broker's overall responsibility. In an intermediary
+transaction that exposure is doubled, because § 1101.803 makes the broker liable "to the commission, the
+public, and the broker's clients" for conduct engaged in by the broker or by a sales agent associated
+with or acting for the broker — and there are now clients on both sides.
 
-Second, records. Rule 535.2 requires the broker, except for records destroyed by an "Act of God" such as
-a natural disaster or fire not intentionally caused by the broker, to maintain in a format readily
-available to the Commission, for at least four years from the date of closing, termination of the
-contract, or end of a real estate transaction, a list that includes "disclosures," "commission
-agreements such as listing agreements, buyer representation agreements, or other written agreements
-relied upon to claim compensation," "substantive communications with parties to the transaction," and
-"offers, contracts, and related addenda." Every document this module has described — the consents, the
-appointment notices, the separate writings that release a confidence — falls inside that list, and four
-years is the floor.
+Second, records. Rule 535.2 requires the broker to keep, for at least four years from the date of
+closing, termination of the contract, or end of the transaction, the transaction's disclosures, the
+commission agreements relied upon to claim compensation, the substantive communications with parties,
+and the offers, contracts and related addenda. Every document this module has described — the consents,
+the appointment notices, the separate writings that release a confidence — falls inside that list, and
+four years is the floor.
 
 ### Statute reading exercise: The mechanics of appointment
 
@@ -696,9 +648,8 @@ Answer from the text.
 
 ## Unit: Specialized Intermediary Applications
 
-The framework is now built. This unit walks it into the awkward corners of real Texas practice, where
-students most often discover that the tidy two-agent example does not fit the office they actually work
-in.
+This unit walks the framework into the awkward corners of real Texas practice, where the tidy two-agent
+example does not fit the office you actually work in.
 
 **The one-agent brokerage.** Priya holds a broker licence and works alone in Fredericksburg. She has no
 sponsored sales agents. She lists a limestone cottage on Milam Street, and separately she has a signed
@@ -768,18 +719,12 @@ warehouse on Highway 290 in Brenham is in exactly the same statutory position as
 § 1101.651(d) supplies the silence.
 
 What differs is a neighbouring 2026 requirement, and you should be able to state its boundary. Section
-1101.563(b) requires a license holder who performs any act of real estate brokerage for a prospective
-buyer of *residential real property* to enter into a written agreement with that buyer before showing
-any residential real property, or, if none will be shown, before presenting an offer to purchase
-residential real property on the buyer's behalf. Section 1101.563(a) defines "residential real property"
-for that section as "(1) a single-family house; (2) a duplex, triplex, or quadraplex; or (3) a unit in a
-multiunit residential structure in which title to an individual unit is transferred to the owner of the
-unit under a condominium or cooperative system." A warehouse is none of those. TREC's own explanatory
-article on the 2026 changes — guidance, not law — puts the same boundary in a sentence: "The written
-agreement requirement does not apply to commercial purchasers or residential/commercial tenants." So the
-§ 1101.563 written-agreement mandate does not reach your Brenham warehouse buyer, while the intermediary
-requirements of § 1101.559 through § 1101.561 reach him fully. Two different rules, two different
-scopes; do not merge them.
+1101.563(b) requires a written agreement with a prospective buyer of *residential real property* before
+residential real property is shown; § 1101.563(a) defines that term for the section as a single-family
+house, a duplex, triplex or quadraplex, or a condominium or cooperative unit. Module 05 teaches
+§ 1101.563. A warehouse is none of those things, so the written-agreement mandate does not reach your
+Brenham warehouse buyer, while the intermediary requirements of § 1101.559 through § 1101.561 reach him
+fully. Two different rules, two different scopes; do not merge them.
 
 **Lease transactions.** The statute is written in paired terms throughout — "seller or landlord" and
 "buyer or tenant" in § 1101.651(d)(1) and (2), "a buyer or tenant" and "a seller or landlord" in
@@ -789,14 +734,11 @@ tell the tenant that the landlord will accept a rent less than the asking rate, 
 from the landlord, and may not tell the landlord that the tenant will pay more than the rent stated in
 the tenant's written offer, absent a separate writing from the tenant.
 
-One adjacent provision has a lease-specific exception that students misapply. Section 1101.558(b-1)
-requires the written representation notice at first substantive communication, but § 1101.558(c)(1)
-excuses it where "the proposed transaction is for a residential lease for less than one year and a sale
-is not being considered." Subsection (c) also excuses the notice where "the license holder meets with a
-party who the license holder knows is represented by another license holder" and where "the
-communication occurs at a property that is held open for any prospective buyer or tenant and the
-communication concerns that property." Those are exceptions to the *notice* requirement in
-§ 1101.558(b-1). They are not exceptions to § 1101.559. A short residential lease where the brokerage
+One adjacent provision has a lease-specific exception that students misapply. The § 1101.558(b-1)
+written notice, taught in Module 02, is excused by § 1101.558(c)(1) where "the proposed transaction is
+for a residential lease for less than one year and a sale is not being considered." That is an exception
+to the *notice* requirement. It is not an exception to § 1101.559. A short residential lease where the
+brokerage
 represents both landlord and tenant still requires written intermediary consent from each party, because
 § 1101.559 contains no lease exception at all.
 
@@ -806,21 +748,12 @@ section, "a license holder who has the authority to bind a party to a lease or s
 attorney or a property management agreement is also a party to the lease or sale." If you hold that
 authority, you are not merely the agent; you are on the other side of the table.
 
-Rule 535.144 governs the related situation. For purposes of § 1101.652(a-1)(1), "license holder"
-includes a license holder acting on behalf of "the license holder's spouse, parent or child," "a
-business entity in which the license holder is more than a 10% owner," or "a trust for which the license
-holder acts as trustee or of which the license holder or the license holder's spouse, parent or child is
-a beneficiary." Such a license holder "is obligated to disclose in writing that he or she is a licensed
-real estate broker or sales agent acting on his or her own behalf or in a capacity described by
-subsection (a) in any contract of sale or rental agreement or in any other writing given before entering
-into any contract of sale or rental agreement," and "shall not use the license holder's expertise to the
-disadvantage of a person with whom the license holder deals." Section 1101.652(a-1)(1) itself makes it
-grounds for discipline to engage "in misrepresentation, dishonesty, or fraud when selling, buying,
-trading, or leasing real property" in the name of the license holder, the license holder's spouse, or a
-person related within the first degree by consanguinity. Rule 535.16(c) adds an obligation people forget:
-a real estate license holder "is obligated to provide a broker price opinion or comparative market
-analysis on a property when negotiating a listing or offering to purchase the property for the license
-holder's own account as a result of contact made while acting as a real estate agent."
+Rule 535.144 governs the related situation and is taught in Module 12: a license holder dealing on her
+own account, or for a spouse, parent or child, a business entity she owns more than ten percent of, or a
+trust she serves as trustee or benefits from, "is obligated to disclose in writing that he or she is a
+licensed real estate broker or sales agent acting on his or her own behalf" in the contract of sale or
+rental agreement or in a writing given before it, and may not use her expertise to the disadvantage of
+the person she deals with. Section 1101.652(a-1)(1) supplies the disciplinary ground (Module 10).
 
 The teaching point is that this is not an intermediary situation at all. Intermediary status addresses a
 broker with two *clients*. A licensee buying for her own account has one client, or none, and a
@@ -832,13 +765,10 @@ both sides of a transaction in house without anyone noticing until the offer arr
 changes the analysis: the clients are the broker's clients, § 1101.561(b) is triggered by the broker's
 agreement to represent both, and the consents must already be in the two representation agreements. Many
 firms maintain internal information barriers so that appointed agents on opposite sides do not share
-files, sit in on the same pipeline meetings, or use a shared transaction folder. Rule 535.2 requires a
-broker who sponsors sales agents to "maintain, on a current basis, written policies and procedures" that
-ensure, among other things, that each sponsored sales agent "is advised of the scope of the sales
-agent's authorized activities subject to the Act and is competent to conduct such activities." The
-detailed content of any particular firm's information barrier is practice, not law, and no held source
-prescribes one; what is law is that the broker must have written policies and procedures covering the
-listed subjects, and that under § 1101.803 the broker answers for what the agents do.
+files, sit in on the same pipeline meetings, or use a shared transaction folder. The detailed content of
+any particular firm's information barrier is practice, not law, and no held source prescribes one; what
+is law is that Rule 535.2 (Module 09) requires the broker to maintain current written policies and
+procedures, and that under § 1101.803 the broker answers for what the agents do.
 
 ### Applied exercise: Three awkward corners in one week
 
@@ -885,84 +815,46 @@ representation at the time of the license holder's first contact with: (1) anoth
 transaction; or (2) another license holder who represents another party to the transaction." First
 contact. Not first offer, not first showing — first contact.
 
-Section 1101.558(b-1) then requires the written notice: "At the time of a license holder's first
-substantive communication with a party relating to a proposed transaction regarding specific real
-property, the license holder shall provide to the party written notice in at least a 10-point font
-that: (1) describes the ways in which a broker can represent a party to a real estate transaction,
-including as an intermediary; (2) describes the basic duties and obligations a broker has to a party to
-a real estate transaction that the broker represents; (3) describes the basic obligations a broker has
-to a party to a real estate transaction that the broker does not represent; and (4) provides the name,
-license number, and contact information for the license holder and the license holder's supervisor and
-broker, if applicable." Subsection (b-2) provides that "The commission by rule shall prescribe the text
-of the notice required under Subsections (b-1)(1) and (2) and establish the methods by which a license
-holder shall provide the notice."
+Section 1101.558(b-1) then requires the written notice — in at least a 10-point font, at first
+substantive communication about specific real property — and 22 TAC § 531.20 adopts by reference the
+Information About Brokerage Services Notice, TREC No. IABS 1-2, and prescribes how it must be delivered.
+Module 02 owns the IABS and teaches both the statute's contents list and the rule's delivery mechanics.
+The published text of TREC No. IABS 1-2 itself was not held for this course, so this module describes
+what the statute and the rule require of the notice and does not quote the form.
 
-The Commission has done so. Rule 531.20 "adopts by reference the Information About Brokerage Services
-Notice, TREC No. IABS 1-2 (IABS Notice)," requires each license holder to provide "a link to a completed
-IABS Notice in a readily noticeable place on the homepage of each business website," labelled either
-*Texas Real Estate Commission Information About Brokerage Services*, "in at least 10 point font," or
-*TREC Information About Brokerage Services*, "in at least 12 point font," and to provide "the completed
-IABS Notice at the first substantive communication as required under §1101.558, Texas Occupations Code." The
-rule lists the permitted delivery methods — "by personal delivery by the license holder," "by first
-class mail or overnight common carrier delivery service," "in the body of an email," or "as an
-attachment to an email, or a link within the body of an email, with a specific reference to the IABS
-Notice in the body of the email" — and then closes a favourite loophole: "The link to a completed IABS
-Notice may not be in a footnote or signature block in an email." The rule also requires that any
-reproduction of the notice copy the text verbatim, with "the spacing, borders and placement of text on
-the page" appearing "to be identical to that in the published version of the IABS Notice, except that
-the Broker Contact Information section may be prefilled." The published text of TREC No. IABS 1-2 itself
-was not held for this course, so this module describes what the statute and the rule require of the
-notice and does not quote the form.
+What matters for a two-sided transaction is the gate, and two features of it. First, § 1101.558(b-1)(1)
+requires the notice to describe "the ways in which a broker can represent a party to a real estate
+transaction, **including as an intermediary**." The intermediary posture is not a surprise sprung on a
+consumer at contract time; the statute puts it in front of every Texas buyer, seller, landlord and
+tenant at the first substantive conversation. Second, the three exceptions in § 1101.558(c) — a short
+residential lease with no sale contemplated, a party known to be represented by another license holder,
+and a communication at a property held open that concerns that property — run only to the *written
+notice*. They do not excuse the § 1101.558(b) first-contact disclosure of whom you represent, and they
+do not touch § 1101.559 at all.
 
-Notice what § 1101.558(b-1)(1) tells you about the Legislature's design. The notice must describe "the
-ways in which a broker can represent a party to a real estate transaction, **including as an
-intermediary**." The intermediary posture is not a surprise sprung on a consumer at contract time; the
-statute puts it in front of every Texas buyer, seller, landlord and tenant at the first substantive
-conversation. Three exceptions appear in § 1101.558(c): the notice is not required where "the proposed
-transaction is for a residential lease for less than one year and a sale is not being considered," where
-"the license holder meets with a party who the license holder knows is represented by another license
-holder," or where "the communication occurs at a property that is held open for any prospective buyer or
-tenant and the communication concerns that property."
-
-**The 2026 non-representation lane, and its hard edges.** Since January 1, 2026, Texas law has provided
-an explicit way to show property to someone you do not represent. Section 1101.562(a) provides that "A
-broker may show real property available for sale or lease to a party without representing the party if
-the broker: (1) has not agreed with the party, either orally or in writing, to represent the party; (2)
-is not otherwise acting as the party's agent at the time of showing the real property; (3) does not
-provide to the party opinions or advice regarding the real property or real estate transactions in
-general; and (4) does not perform any other act of real estate brokerage for the party." Subsection (b)
-requires that before such a showing the broker must, as applicable, "disclose to the party as required
-by Section 1101.558(b) if the broker represents the owner of the real property" or "provide to the party
-the written notice described by Section 1101.558(b-1) if the broker does not represent the owner of the
-real property." Subsection (c) supplies the narrow permission: "Notwithstanding Subsections (a)(3) and
-(4), a broker showing real property under this section may confirm information to a party regarding the
-size, price, and terms of the real property available for sale or lease."
+**The 2026 non-representation lane, and its hard edges.** Since January 1, 2026, § 1101.562 has given
+Texas an explicit way to show property to someone you do not represent: the broker must not have agreed
+to represent the party or otherwise be acting as the party's agent, must give no opinions or advice, and
+must perform no other act of brokerage for the party, with the § 1101.558 disclosure or notice given
+first. Module 05 teaches § 1101.562. Two of its clauses do the work in this module.
 
 Read (a)(3) as the trap it is. "[D]oes not provide to the party opinions or advice regarding the real
 property **or real estate transactions in general**." Not just opinions about this house — opinions about
 transactions generally. "You should really get an inspection." "Around here people usually offer about
 two percent under list." "I'd ask for a survey." Each of those is advice regarding real estate
 transactions in general, and each of them, given to a party you are not representing, takes you outside
-§ 1101.562. Subsection (c) tells you what you *may* do: confirm size, price and terms. That is a short
-list, and it is the whole list.
+§ 1101.562. Subsection (c) tells you what you *may* do notwithstanding (a)(3) and (4): "confirm
+information to a party regarding the size, price, and terms of the real property available for sale or
+lease." That is a short list, and it is the whole list.
 
-Section 1101.563 sits alongside it. For a prospective buyer of residential real property as defined in
-§ 1101.563(a), a license holder who performs any act of real estate brokerage must enter into a written
-agreement before showing residential real property or, if none will be shown, before presenting an offer
-on the buyer's behalf. The agreement must state "the services to be provided by the license holder,"
-"the termination date of the agreement," "whether the agreement is exclusive or non-exclusive," and, as
-applicable, that the license holder "represents the prospective buyer as the buyer's agent" or "does not
-represent the prospective buyer as the buyer's agent if the only act of real estate brokerage being
-performed is showing real property under Section 1101.562," together with "the amount or rate of
-compensation the broker will receive and how this amount will be determined"; and it must "disclose in
-conspicuous language that broker compensation is not set by law and is fully negotiable." Two
-constraints apply specifically to the showing-only agreement: under § 1101.563(e) it "may not: (1) be an
-exclusive agreement with the license holder; or (2) state a termination date more than fourteen days
-from the date the agreement is entered into." And under § 1101.563(d), a license holder who entered into
-a showing-only agreement "shall enter into a separate agreement with the prospective buyer if additional
-real estate brokerage acts are to be provided after showing the real property." Failure to enter into
-the required written agreement is itself a disciplinary ground — § 1101.652(b)(34), added by the same
-2025 act.
+Section 1101.563 sits alongside it and is taught in Module 05. For a prospective buyer of residential
+real property as defined in § 1101.563(a), a license holder who performs any act of real estate
+brokerage must enter into a written agreement before showing residential real property or, if none will
+be shown, before presenting an offer on the buyer's behalf. A showing-only agreement may not be
+exclusive and may not state a termination date more than fourteen days out (§ 1101.563(e)), and a
+separate agreement is required once additional brokerage acts are to be provided (§ 1101.563(d)).
+Failure to enter into the required written agreement is itself a disciplinary ground —
+§ 1101.652(b)(34), added by the same 2025 act.
 
 Why does a module on intermediary brokerage care about all this? Because the showing-only lane is the
 single most common place where a licensee drifts into representing someone she never meant to represent.
@@ -1020,38 +912,22 @@ delivery of an offer to a party does not violate § 1101.652(b)(22) if the party
 delivery, a copy of the offer is sent to the party's broker unless a governmental agency using a sealed
 bid process does not allow it, and the person delivering the offer does not engage in another activity
 that directly or indirectly violates § 1101.652(b)(22). Note how tightly drawn that is: consent, a copy
-to the broker, and nothing else. Rule 535.153 draws a related line worth remembering — a license holder
-"may not attempt to negotiate a sale, exchange, lease, or rental of property under exclusive listing with
-another broker," but "the Act does not prohibit a license holder from soliciting a listing from the
-owner while the owner's property is subject to an exclusive listing with another broker."
+to the broker, and nothing else.
 
-**The disciplinary exposure, quantified.** Unintended dual representation is not a soft error. Walk the
-grounds it triggers.
-
-Section 1101.652(b)(7): failing "to make clear to all parties to a real estate transaction the party for
-whom the license holder is acting." Section 1101.652(b)(8): receiving "compensation from more than one
-party to a real estate transaction without the full knowledge and consent of all parties to the
-transaction." Under 22 TAC § 535.191 both sit in the $500 to $3,000 per violation per day band. Section
-1101.652(b)(1) — acting "negligently or incompetently" — and § 1101.652(b)(2) — engaging "in conduct
-that is dishonest or in bad faith or that demonstrates untrustworthiness" — sit at $1,000 to $5,000 per
-violation per day, as do § 1101.558, § 1101.559(a) and (c), § 1101.560, § 1101.561(b), § 1101.651 and
-22 TAC § 535.156. Section 1101.652(b)(34) — failing to enter into a written agreement with a prospective
-buyer as required by § 1101.563 — sits at $100 to $1,500 per violation per day, as does 22 TAC
-§ 535.157. Rule 535.191 adds that the Commission "may assess an additional administrative penalty of up
-to two times that assessed under subsections (c), (d) and (e) of this section, subject to the maximum
-penalties authorized under §1101.702(a) of the Act, if a person has a history of previous violations,"
-and states at the outset that the Commission "may suspend or revoke a license or take other disciplinary
-action authorized by the Act in addition to or instead of assessing the administrative penalties set
-forth in this section."
-
-The statutory cap is in § 1101.702(a): "The amount of an administrative penalty may not exceed $5,000
-for each violation. Each day a violation continues or occurs may be considered a separate violation for
-purposes of imposing a penalty." Read the second sentence again and do the arithmetic on a transaction
-that ran forty days from first substantive communication to closing without the required written
-consent. In setting the amount, § 1101.702(b) directs the executive director to consider "the seriousness
-of the violation, including the nature, circumstances, extent, and gravity of the prohibited acts," "the
-history of previous violations," "the amount necessary to deter a future violation," "efforts to correct
-the violation," and "any other matter that justice may require."
+**The disciplinary exposure, quantified.** Unintended dual representation is not a soft error. The two
+grounds it triggers directly are § 1101.652(b)(7), failing "to make clear to all parties to a real estate
+transaction the party for whom the license holder is acting," and § 1101.652(b)(8), receiving
+"compensation from more than one party to a real estate transaction without the full knowledge and
+consent of all parties to the transaction." Under 22 TAC § 535.191 both sit in the $500 to $3,000 per
+violation per day band — one band *below* the intermediary provisions themselves, since § 1101.558,
+§ 1101.559(a) and (c), § 1101.560, § 1101.561(b) and § 1101.651 each draw $1,000 to $5,000 per violation
+per day. Failing to get the § 1101.563 written agreement, § 1101.652(b)(34), sits at $100 to $1,500.
+Module 10 owns § 1101.652 and the whole of the § 535.191 schedule — including the enhancement for a
+history of previous violations, the § 1101.702 cap and its factors, and the Commission's power to suspend
+or revoke instead of or in addition to a penalty. What you should carry out of this module is that each
+day a violation continues may be counted as a separate violation, so a transaction that ran forty days
+from first substantive communication to closing without the required written consent is not one
+violation.
 
 Two more exposures complete the picture. Section 1101.803: "A licensed broker is liable to the
 commission, the public, and the broker's clients for any conduct engaged in under this chapter by the
@@ -1070,8 +946,7 @@ had never agreed to represent.
 **What to do when you realise you have drifted.** The following is professional practice, not a statutory
 procedure, and no held source prescribes it. Stop the conversation. Tell your broker the same day —
 Rule 535.2 makes the broker responsible for your authorized acts and for acts beyond the scope she
-authorized if she permitted them, and Rule 535.157 and Rule 535.2 both put a two-calendar-day response
-obligation on the broker's side of that conversation. Then let the broker decide the posture: either the
+authorized if she permitted them. Then let the broker decide the posture: either the
 brokerage obtains the written consents § 1101.559(a) requires and proceeds as intermediary — with
 appointments if the consents authorize them and written notice under § 1101.560(b)(2) — or the brokerage
 withdraws from one side. What you may not do is keep going and hope. Section 1101.651(d)(5) makes any
@@ -1112,22 +987,19 @@ contract form. He signs nothing with you. He submits the offer; the sellers acce
    § 1101.652(b) does that trigger, and what administrative penalty range does 22 TAC § 535.191 assign
    to it?
 5. Assume the Commission finds that you failed to make clear the party for whom you were acting, and
-   that the violation continued over the 34 days from the open house to closing. Using § 1101.702(a),
-   state the maximum administrative penalty exposure on that theory alone, and identify the five
-   factors § 1101.702(b) directs the executive director to weigh in setting the actual amount. Then
-   state, from § 1101.803, who else is liable for your conduct.
+   that the violation continued over the 34 days from the open house to closing. Using the 22 TAC
+   § 535.191 band this module assigns to § 1101.652(b)(7), state the low and high daily exposure and
+   compute both over 34 days. Then state, from § 1101.803, who else is liable for your conduct. (For
+   the statutory cap and the factors that set the actual amount, see Module 10.)
 
 ### Module recap
 
 The through-line of this module is a single structural fact and the statutory machine Texas built around
-it. One person cannot deliver undivided loyalty to two people who want opposite things. Rule 531.2
-requires that a license holder's primary duty is to represent the interests of the client and that the
-license holder place no personal interest above that of the client; Rule 535.156 requires the license
-holder to convey to the principal all known information which would affect the principal's decision on
-whether or not to make, accept or reject offers, subject to the written no-further-offers exception the
-rule itself states, and to put the principal's interest above the license holder's own. Owed to two
-adverse parties at once, those obligations contradict each other. No amount of consent makes them
-performable.
+it. One person cannot deliver undivided loyalty to two people who want opposite things. The fiduciary
+obligations Module 02 teaches — Rule 531.2's primary duty to the client's interests, Rule 535.156's duty
+to convey all known information affecting the principal's decision on offers and to put the principal's
+interest first — contradict each other when they are owed to two adverse parties at once. No amount of
+consent makes them performable.
 
 Texas therefore did not create a diluted second form of agency. Search Chapter 1101 and you will find no
 *dual agent* and no *dual agency* — only § 1101.652(b)(16), which concerns a license holder acting in a
@@ -1190,11 +1062,10 @@ or real estate transactions in general, no other act of brokerage, with subsecti
 only to confirm size, price and terms — and § 1101.563 requires a written agreement with a residential
 buyer before you show anything, non-exclusive and no more than fourteen days if it is showing-only. When
 you step outside, § 1101.652(b)(7) and (b)(8) are waiting, at $500 to $3,000 per violation per day under
-22 TAC § 535.191, with § 1101.558, § 1101.559(a) and (c), § 1101.560, § 1101.561(b), § 1101.651 and
-22 TAC § 535.156 in the $1,000 to $5,000 band, a statutory ceiling of $5,000 per violation under
-§ 1101.702(a) with each day capable of being a separate violation, the broker liable alongside you under
-§ 1101.803, and § 1101.801 confirming that discipline "does not relieve the person from civil or criminal
-liability."
+22 TAC § 535.191, with the intermediary provisions themselves — § 1101.558, § 1101.559(a) and (c),
+§ 1101.560, § 1101.561(b) and § 1101.651 — in the $1,000 to $5,000 band, each day capable of being a
+separate violation, the broker liable alongside you under § 1101.803, and § 1101.801 confirming that discipline "does not relieve the person from civil or criminal
+liability." Module 10 teaches § 1101.652 and the whole of the 22 TAC § 535.191 schedule.
 
 Two things were looked for and not found, and you should know it. The published text of the Information
 About Brokerage Services notice, TREC No. IABS 1-2, was not held for this course; this module teaches
