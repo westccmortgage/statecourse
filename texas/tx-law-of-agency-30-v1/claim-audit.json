@@ -494,6 +494,7 @@
   ],
   "quoteFindings": [
     {
+      "id": "451f2b3c2bdd",
       "module": "module-01",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -505,6 +506,7 @@
       "quote": "acquire an option or an interest in a contract to purchase real property and then sell or offer to sell the option or assign or offer to assign the contract without holding a license issued under this"
     },
     {
+      "id": "defa4a1a936b",
       "module": "module-01",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -516,6 +518,7 @@
       "quote": "does not use the option or contract to purchase to engage in real estate brokerage"
     },
     {
+      "id": "5d8b430b2d4f",
       "module": "module-01",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -527,6 +530,7 @@
       "quote": "discloses in writing the nature of the equitable interest to any seller or potential buyer."
     },
     {
+      "id": "de901c83386c",
       "module": "module-01",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -538,6 +542,7 @@
       "quote": "A person selling or offering to sell an option or assigning or offering to assign an interest in a contract to purchase real property without disclosing the nature of that interest as provided by Subs"
     },
     {
+      "id": "f8a5c208f797",
       "module": "module-01",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -549,6 +554,7 @@
       "quote": "a person conducting a real estate transaction on behalf of a commercial signage entity."
     },
     {
+      "id": "0c03607c0da1",
       "module": "module-01",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -561,6 +567,7 @@
       "quote": "Two references to subagency were removed from TRELA,"
     },
     {
+      "id": "ba3479be7734",
       "module": "module-01",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -573,6 +580,7 @@
       "quote": "This means the circumstances in which subagency could arise in your real estate practice are limited,"
     },
     {
+      "id": "971bb3f903e4",
       "module": "module-01",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -585,6 +593,7 @@
       "quote": "However, subagency has not been eliminated generally as a legal concept."
     },
     {
+      "id": "c3d3b05ecc5c",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -596,6 +605,7 @@
       "quote": "a link to a completed IABS Notice in a readily noticeable place on the homepage of each business website, labeled:"
     },
     {
+      "id": "8dff58833704",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -607,6 +617,7 @@
       "quote": "Texas Real Estate Commission Information About Brokerage Services"
     },
     {
+      "id": "4cf31e798e85",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -618,6 +629,7 @@
       "quote": "TREC Information About Brokerage Services"
     },
     {
+      "id": "cdd221b63238",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -629,6 +641,7 @@
       "quote": "the completed IABS Notice at the first substantive communication as required under §1101.558, Texas Occupations Code."
     },
     {
+      "id": "1f01729fe68b",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -640,6 +653,7 @@
       "quote": "a website on the internet that: is accessible to the public; contains information about a license holder's real estate brokerage services; and the content of the website is controlled by the license h"
     },
     {
+      "id": "691784a081c4",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -651,6 +665,7 @@
       "quote": "For purposes of §1101.558, Texas Occupations Code, the completed IABS Notice can be provided: by personal delivery by the license holder; by first class mail or overnight common carrier delivery servi"
     },
     {
+      "id": "d59d00ea621b",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -663,6 +678,7 @@
       "quote": "is a member of a listing broker's office (e.g., a sales agent at the brokerage holding the listing), the agent does not need to provide the IABS or enter into a written agreement with prospective buye"
     },
     {
+      "id": "6bd18f300d68",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -675,6 +691,7 @@
       "quote": "will need to disclose he or she represents the owner either orally or in writing as required by 1101.558(b)."
     },
     {
+      "id": "0fdee43f0b64",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -687,6 +704,7 @@
       "quote": "is not a member of the listing broker's office and does not represent the seller (e.g., a showing agent),"
     },
     {
+      "id": "d8e7b908ad2b",
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -699,6 +717,7 @@
       "quote": "even when a prospective buyer has a written representation agreement with another broker."
     },
     {
+      "id": "14433475922f",
       "module": "module-03",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -711,6 +730,7 @@
       "quote": "subagency has not been eliminated generally as a legal concept."
     },
     {
+      "id": "c1e747220882",
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -723,6 +743,7 @@
       "quote": "A license holder who fails to advise a buyer as provided by Section 1101.555 may not receive payment of or recover any commission agreed to be paid on the sale."
     },
     {
+      "id": "63cacee8f6f6",
       "module": "module-04",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -734,6 +755,7 @@
       "quote": "The use of a net listing places an upper limit on the principal's expectancy and places the broker's interest above the principal's interest with reference to obtaining the best possible price."
     },
     {
+      "id": "b6d53a31616f",
       "module": "module-04",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -745,6 +767,7 @@
       "quote": "If a net listing is used, the listing agreement must assure the principal of not less than the principal's desired price and limit the broker to a specified maximum commission."
     },
     {
+      "id": "3f7bdd09c764",
       "module": "module-04",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -757,6 +780,7 @@
       "quote": "Two references to subagency were removed from TRELA,"
     },
     {
+      "id": "1423746af18d",
       "module": "module-04",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -769,6 +793,7 @@
       "quote": "the circumstances in which subagency could arise in your real estate practice are limited,"
     },
     {
+      "id": "5f8eddb81f30",
       "module": "module-04",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -781,6 +806,7 @@
       "quote": "subagency has not been eliminated generally as a legal concept."
     },
     {
+      "id": "3634f2922956",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -792,6 +818,7 @@
       "quote": "The written agreement requirement does not apply to commercial purchasers or residential/commercial tenants."
     },
     {
+      "id": "d9d15dc3e2e7",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -803,6 +830,7 @@
       "quote": "showing any residential real property to the prospective buyer."
     },
     {
+      "id": "c41fbc3ee91f",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -814,6 +842,7 @@
       "quote": "if no residential real property will be shown, presenting an offer to purchase residential real property on behalf of the prospective buyer."
     },
     {
+      "id": "d1699cc48bcd",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -825,6 +854,7 @@
       "quote": "the services to be provided by the license holder"
     },
     {
+      "id": "ff152f3cab9a",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -836,6 +866,7 @@
       "quote": "whether the agreement is exclusive or non-exclusive"
     },
     {
+      "id": "82a8fe801174",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -847,6 +878,7 @@
       "quote": "represents the prospective buyer as the buyer's   agent"
     },
     {
+      "id": "8363ae2dbfc5",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -858,6 +890,7 @@
       "quote": "does not represent the prospective buyer as the buyer's agent if the only act of real   estate brokerage being performed is showing real property under Section 1101.562"
     },
     {
+      "id": "c1f4fbf456db",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -869,6 +902,7 @@
       "quote": "the amount or rate of compensation the broker will receive and how this amount will be   determined."
     },
     {
+      "id": "d2ca6ca4460b",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -880,6 +914,7 @@
       "quote": "disclose in conspicuous language that broker compensation is not set by law and is fully negotiable."
     },
     {
+      "id": "b67bbafb93d4",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -891,6 +926,7 @@
       "quote": "the amount or rate of compensation the broker will receive and how this amount will be determined."
     },
     {
+      "id": "d2b8a728acaf",
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -902,6 +938,7 @@
       "quote": "A license holder who enters into a written agreement with a prospective buyer for the sole purpose of showing real property under Section 1101.562 shall enter into a separate agreement with the prospe"
     },
     {
+      "id": "880058b91123",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -914,6 +951,7 @@
       "quote": "TREC does not promulgate listing or buyer representation agreements, property management contracts, forms for commercial property, or residential leases (other than temporary residential leases used i"
     },
     {
+      "id": "7c0be2326ac6",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -927,6 +965,7 @@
       "quote": "will need to disclose he or she represents the owner either orally or in writing as required by 1101.558(b)."
     },
     {
+      "id": "e1654b2acbf4",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -940,6 +979,7 @@
       "quote": "is not a member of the listing broker's office and does not represent the seller (e.g., a showing agent),"
     },
     {
+      "id": "e168add498d2",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -953,6 +993,7 @@
       "quote": "Enter into a written agreement as described by 1101.563(c) with prospective buyers (e.g., visitors of the open house)."
     },
     {
+      "id": "0218aa687233",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -966,6 +1007,7 @@
       "quote": "This is true even when a prospective buyer has a written representation agreement with another broker."
     },
     {
+      "id": "182a49a7d1a0",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -978,6 +1020,7 @@
       "quote": "By law, the IABS must be provided and agreement entered into before the showing. In practical terms, what this means for an open house is that ideally, the agreement should be presented and entered in"
     },
     {
+      "id": "7393d4f6a2ff",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -990,6 +1033,7 @@
       "quote": "If a buyer refuses to sign the agreement, then the agent cannot show the property, meaning a consumer cannot view the open house. License holders can face disciplinary action if they fail to enter int"
     },
     {
+      "id": "3962ae76d599",
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1003,6 +1047,7 @@
       "quote": "go together and should be read together."
     },
     {
+      "id": "82c4d74e4e23",
       "module": "module-06",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1014,6 +1059,7 @@
       "quote": "primary duty ... is to represent the interests of the client,"
     },
     {
+      "id": "84763a8deff5",
       "module": "module-06",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1025,6 +1071,7 @@
       "quote": "should be clear to all parties concerned in a real estate transaction,"
     },
     {
+      "id": "53f369afcce0",
       "module": "module-06",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1036,6 +1083,7 @@
       "quote": "place no personal interest above that of the client."
     },
     {
+      "id": "0d85ca0f40f2",
       "module": "module-06",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1047,6 +1095,7 @@
       "quote": "Listings and other agreements for real estate brokerage services must be solicited and accepted in a broker's name."
     },
     {
+      "id": "556cc571d4be",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1058,6 +1107,7 @@
       "quote": "if the written agreement specifies in conspicuous bold or underlined print the conduct that is prohibited under Section 1101.651(d)."
     },
     {
+      "id": "80bf85a2a42c",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1069,6 +1119,7 @@
       "quote": "(2) disclose to the seller or landlord that the buyer or tenant will pay a price greater than the > price submitted in a written offer to the seller or landlord, unless otherwise instructed in a > sep"
     },
     {
+      "id": "eea9b21e9009",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1080,6 +1131,7 @@
       "quote": "treat a party to a transaction dishonestly"
     },
     {
+      "id": "5df7442b7304",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1091,6 +1143,7 @@
       "quote": "A license holder may be appointed under this section only if: (1) the written consent of the parties > under Section 1101.559 authorizes the broker to make the appointment; and (2) the broker provides"
     },
     {
+      "id": "f416533706b2",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1102,6 +1155,7 @@
       "quote": "A license holder appointed under this section may provide opinions and advice during negotiations to > the party to whom the license holder is appointed."
     },
     {
+      "id": "d645e171e492",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1113,6 +1167,7 @@
       "quote": "A broker who complies with the written consent requirements of Section 1101.559."
     },
     {
+      "id": "b006dad04f0c",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1126,6 +1181,7 @@
       "quote": "A license holder associated with the broker."
     },
     {
+      "id": "f2495b9ce25b",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1137,6 +1193,7 @@
       "quote": "another license holder associated with the broker"
     },
     {
+      "id": "465eea97113f",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1148,6 +1205,7 @@
       "quote": "A license holder may be appointed under this section **only if**"
     },
     {
+      "id": "51cae1eba0ce",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1159,6 +1217,7 @@
       "quote": "the written consent of the parties under Section 1101.559 authorizes the broker to make the appointment."
     },
     {
+      "id": "d3be0d8dec51",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1170,6 +1229,7 @@
       "quote": "the broker provides written notice of the appointment to all parties involved in the real estate transaction."
     },
     {
+      "id": "2d1a21906ea6",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1181,6 +1241,7 @@
       "quote": "A license holder appointed under this section may provide opinions and advice during negotiations to the party to whom the license holder is appointed."
     },
     {
+      "id": "24b2096997b2",
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1193,6 +1254,7 @@
       "quote": "to the party to whom the license holder is appointed."
     },
     {
+      "id": "dd9e134186fc",
       "module": "module-06",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1205,6 +1267,7 @@
       "quote": "is obligated to disclose in writing that he or she is a licensed real estate broker or sales agent acting on his or her own behalf"
     },
     {
+      "id": "7f9ced58e1b9",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1216,6 +1279,7 @@
       "quote": "a prospective buyer, seller, landlord, or tenant or an authorized representative of a buyer, seller, landlord, or tenant, including a trustee, guardian, executor, administrator, receiver, or attorney-"
     },
     {
+      "id": "2d4c87775e42",
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1227,6 +1291,7 @@
       "quote": "does not include a license holder who represents a party."
     },
     {
+      "id": "2973a4e569ec",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1239,6 +1304,7 @@
       "quote": "Treatment of real estate agents and direct sellers."
     },
     {
+      "id": "fbbab3b2f171",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1251,6 +1317,7 @@
       "quote": "For purposes of this title, in the case of services performed as a qualified real estate agent or as a direct seller-"
     },
     {
+      "id": "627060de533f",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1262,6 +1329,7 @@
       "quote": "(1) the individual performing such services shall not be treated as an employee, and (2) the person for whom such services are performed shall not be treated as an employer."
     },
     {
+      "id": "95264dc2f281",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1273,6 +1341,7 @@
       "quote": "testifies, assists, or participates in any manner in an investigation, proceeding, or hearing."
     },
     {
+      "id": "a9c0145fead1",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1284,6 +1353,7 @@
       "quote": "aids, abets, incites, or coerces a person to engage in a discriminatory practice."
     },
     {
+      "id": "5206d39fa1bd",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1298,6 +1368,7 @@
       "quote": "because of sex or on the basis of sex includes discrimination because of or on the basis of pregnancy, childbirth, or a related medical condition,"
     },
     {
+      "id": "e11b479a84e7",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1312,6 +1383,7 @@
       "quote": "be treated for all purposes related to employment, including receipt of a benefit under a fringe benefit program, in the same manner as another individual not affected but similar in the individual's "
     },
     {
+      "id": "4d4fc5a4565c",
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1326,6 +1398,7 @@
       "quote": "fail or refuse to make a reasonable workplace accommodation to a known physical or mental limitation of an otherwise qualified individual with a disability who is an employee or applicant for employme"
     },
     {
+      "id": "4f3d60267597",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1338,6 +1411,7 @@
       "quote": "A broker is responsible to ensure that a sponsored sales agent's advertising complies with §535.154 of this chapter (relating to Registration and Use of Alternate, Team and Assumed Business Names Used"
     },
     {
+      "id": "76818056dc45",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1349,6 +1423,7 @@
       "quote": "substantive communications with parties to the transaction"
     },
     {
+      "id": "0c51fb61a703",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1360,6 +1435,7 @@
       "quote": "sponsorship agreements between the broker and sponsored sales agents"
     },
     {
+      "id": "55987238e6c8",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1372,6 +1448,7 @@
       "quote": "A broker who sponsors sales agents or is a designated broker for a business entity shall maintain, on a current basis, written policies and procedures to ensure that"
     },
     {
+      "id": "0376851112b9",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1383,6 +1460,7 @@
       "quote": "is advised of the scope of the sales agent's authorized activities subject to the Act and is competent to conduct such activities, including having competence in the geographic market area where the s"
     },
     {
+      "id": "86978dbd396b",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1394,6 +1472,7 @@
       "quote": "maintains their license in active status at all times while they are engaging in activities subject to the Act"
     },
     {
+      "id": "c975c0f24b65",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1405,6 +1484,7 @@
       "quote": "any and all compensation paid to a sponsored sales agent for acts or services subject to the Act is paid by, through, or with the written consent of the sponsoring broker"
     },
     {
+      "id": "874119902221",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1416,6 +1496,7 @@
       "quote": "on a timely basis, before the effective date of the change, notice of any change to the Act, Commission rules, or Commission promulgated contract forms"
     },
     {
+      "id": "120969eebf91",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1427,6 +1508,7 @@
       "quote": "receives such additional educational instruction the broker may deem necessary"
     },
     {
+      "id": "77e393a07ca8",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1438,6 +1520,7 @@
       "quote": "when a sales agent performs a type of real estate brokerage activity for the first three times, the broker must require that the sales agent receive coaching and assistance from an experienced license"
     },
     {
+      "id": "23c369085df4",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1449,6 +1532,7 @@
       "quote": "complies with the Commission's advertising rules"
     },
     {
+      "id": "675465392452",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1460,6 +1544,7 @@
       "quote": "including but not limited to property management trust accounts, and other funds received from consumers are maintained by the broker with appropriate controls in compliance with §535.146"
     },
     {
+      "id": "63eace1dab73",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1471,6 +1556,7 @@
       "quote": "records are properly maintained pursuant to subsection (h) of this section."
     },
     {
+      "id": "12a5fc8b8d59",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1482,6 +1568,7 @@
       "quote": "in the geographic market area where the sales agent represents clients"
     },
     {
+      "id": "6440c6e4d6ab",
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1493,6 +1580,7 @@
       "quote": "the broker who sponsored the sales agent when the sales agent became entitled to the commission or other valuable consideration."
     },
     {
+      "id": "360398a44e2a",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1505,6 +1593,7 @@
       "quote": "As made applicable by section 3603 of this title and except as exempted by sections 3603(b) and 3607 of this title, it shall be unlawful—"
     },
     {
+      "id": "05d32d567603",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1516,6 +1605,7 @@
       "quote": "To refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, c"
     },
     {
+      "id": "8cd0ab07a47d",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1527,6 +1617,7 @@
       "quote": "To discriminate in the sale or rental, or to otherwise make unavailable or deny, a dwelling to any buyer or renter because of a handicap of—"
     },
     {
+      "id": "3d4449f3d2bd",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1538,6 +1629,7 @@
       "quote": "any person associated with that buyer or renter."
     },
     {
+      "id": "44391aea077b",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1549,6 +1641,7 @@
       "quote": "may be necessary to afford such person equal opportunity to use and enjoy a dwelling."
     },
     {
+      "id": "0dd72a207952",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1560,6 +1653,7 @@
       "quote": "Nothing in this subsection requires that a dwelling be made available to an individual whose tenancy would constitute a direct threat to the health or safety of other individuals or whose tenancy woul"
     },
     {
+      "id": "4e71377c123d",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1571,6 +1665,7 @@
       "quote": "a physical or mental impairment which substantially limits one or more of such person's major life activities,"
     },
     {
+      "id": "6a4490cf8dad",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1582,6 +1677,7 @@
       "quote": "a record of having such an impairment, or"
     },
     {
+      "id": "c520e340de3c",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1593,6 +1689,7 @@
       "quote": "being regarded as having such an impairment,"
     },
     {
+      "id": "d737cd319466",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1604,6 +1701,7 @@
       "quote": "does not include current, illegal use of or addiction to a controlled substance"
     },
     {
+      "id": "b7e1c712fcfd",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1615,6 +1713,7 @@
       "quote": "one or more individuals (who have not attained the age of 18 years) being domiciled with"
     },
     {
+      "id": "569f26b458d0",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1626,6 +1725,7 @@
       "quote": "The protections afforded against discrimination on the basis of familial status shall apply to any person who is pregnant or is in the process of securing legal custody of any individual who has not a"
     },
     {
+      "id": "15112e8b7bb9",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1639,6 +1739,7 @@
       "quote": "It shall be unlawful for any person or other entity whose business includes engaging in residential real estate-related transactions to discriminate against any person in making available such a trans"
     },
     {
+      "id": "342c95d68b31",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1652,6 +1753,7 @@
       "quote": "The selling, brokering, or appraising of residential real property."
     },
     {
+      "id": "644a6b6844f2",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1665,6 +1767,7 @@
       "quote": "to deny any person access to or membership or participation in any multiple-listing service, real estate brokers' organization or other service, organization, or facility relating to the business of s"
     },
     {
+      "id": "c30e3f470ace",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1678,6 +1781,7 @@
       "quote": "to coerce, intimidate, threaten, or interfere with any person in the exercise or enjoyment of, or on account of his having exercised or enjoyed, or on account of his having aided or encouraged any oth"
     },
     {
+      "id": "83ced58fe62a",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1690,6 +1794,7 @@
       "quote": "but substantive rules adopted by the commission shall impose obligations, rights, and remedies that are the same as are provided in federal fair housing regulations."
     },
     {
+      "id": "1085d974c634",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1703,6 +1808,7 @@
       "quote": "because of race, color, religion, sex, disability, familial status, or national origin that a dwelling is not available for inspection for sale or rental when the dwelling is available for inspection."
     },
     {
+      "id": "ba6bf2edf1d2",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1714,6 +1820,7 @@
       "quote": "in misrepresentation, dishonesty, or fraud when selling, buying, trading, or leasing real property in the name of"
     },
     {
+      "id": "4fbe5a34051f",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1725,6 +1832,7 @@
       "quote": "a person related to the license holder within the first degree by consanguinity"
     },
     {
+      "id": "ee964b067949",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1736,6 +1844,7 @@
       "quote": "to use a contract form required by the commission under Section 1101.155."
     },
     {
+      "id": "86885a30787e",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1748,6 +1857,7 @@
       "quote": "if the license holder, while engaged in real estate brokerage"
     },
     {
+      "id": "72d58a4d40c1",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1759,6 +1869,7 @@
       "quote": "to make clear to all parties to a real estate transaction the party for whom the license holder is acting"
     },
     {
+      "id": "516d318bd69d",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1773,6 +1884,7 @@
       "quote": "the award or distribution of a prize or prizes by chance and the payment of consideration for the opportunity to win the prize"
     },
     {
+      "id": "35e6ed9801ae",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1787,6 +1899,7 @@
       "quote": "The giving of gifts as an inducement for prospective clients does not violate this section or §1101.652(b)(14) of the Act, but license holders when procuring prospects must otherwise comply with the p"
     },
     {
+      "id": "e98d8ba4d8ed",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1801,6 +1914,7 @@
       "quote": "include, but are not limited to the acts described in the Texas Business and Commerce Code §17.46, done in a manner defined in that section."
     },
     {
+      "id": "08642cab58d1",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1814,6 +1928,7 @@
       "quote": "that the respondent has the right to a hearing to contest the alleged violation, the recommended penalty, or both."
     },
     {
+      "id": "5260df3acd47",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1825,6 +1940,7 @@
       "quote": "This section prevails over any other law, including common law,"
     },
     {
+      "id": "6c40a95e50da",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1837,6 +1953,7 @@
       "quote": "to deny any person access to or membership or participation in any multiple-listing service, real estate brokers' organization or other service, organization, or facility relating to the business of s"
     },
     {
+      "id": "8f98a281c852",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1851,6 +1968,7 @@
       "quote": "at the expense of the handicapped person"
     },
     {
+      "id": "3d75c2df5629",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1865,6 +1983,7 @@
       "quote": "may be necessary to afford such person full enjoyment of the premises"
     },
     {
+      "id": "35cc66583393",
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1879,6 +1998,7 @@
       "quote": "rules, policies, practices, or services, when such accommodations may be necessary to afford such person equal opportunity to use and enjoy a dwelling."
     },
     {
+      "id": "6c776af5df91",
       "module": "module-11",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1891,6 +2011,7 @@
       "quote": "intended to induce the consumer into a transaction into which the consumer would not have entered had the information been disclosed"
     },
     {
+      "id": "c1554e62c658",
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1902,6 +2023,7 @@
       "quote": "not more than three times the amount of damages for mental anguish and economic damages."
     },
     {
+      "id": "09e078583c6a",
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1913,6 +2035,7 @@
       "quote": "a failure to disclose information in violation of Section 17.46(b)(24)."
     },
     {
+      "id": "e553b7982648",
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1924,6 +2047,7 @@
       "quote": "an unconscionable action or course of action that cannot be characterized as advice, judgment, or opinion."
     },
     {
+      "id": "2c7a2761956d",
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1937,6 +2061,7 @@
       "quote": "For purposes of this subchapter, a claim against a business entity license holder is also a claim against the broker who is the business entity's designated broker."
     },
     {
+      "id": "bb0361365358",
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1949,6 +2074,7 @@
       "quote": "This subchapter does not limit the commission's authority to take disciplinary action against a license or certificate holder for a violation of this chapter or a commission rule,"
     },
     {
+      "id": "15826f4e6c96",
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -1960,6 +2086,7 @@
       "quote": "a license or certificate holder's repayment of all amounts owed to the trust account does not affect another disciplinary proceeding brought under this chapter."
     },
     {
+      "id": "281c3c30c6ef",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1971,6 +2098,7 @@
       "quote": "on a separate page or on the account user profile page of the license holder,"
     },
     {
+      "id": "8c090b8338a4",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1982,6 +2110,7 @@
       "quote": "readily accessible by a direct link from the social media or text"
     },
     {
+      "id": "b48d187f3cf6",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1993,6 +2122,7 @@
       "quote": "readily noticeable on the separate page or in the account user profile."
     },
     {
+      "id": "cd8cd3583ae5",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2005,6 +2135,7 @@
       "quote": "For purposes of this section and §1101.652(b)(23) of the Act,"
     },
     {
+      "id": "503c7e492990",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2017,6 +2148,7 @@
       "quote": "inaccurate in any material fact or representation"
     },
     {
+      "id": "f23c64f657c2",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2029,6 +2161,7 @@
       "quote": "uses a title, such as owner, president, CEO, COO, or other similar title, email or website address that implies a sales agent is responsible for the operations of a brokerage"
     },
     {
+      "id": "2b09cb557c55",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2041,6 +2174,7 @@
       "quote": "contains the name of a sales agent that is not the name as shown on the sales agent's license issued by the Commission or an alternate name registered with the Commission"
     },
     {
+      "id": "5195201646c0",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2053,6 +2187,7 @@
       "quote": "creates confusion regarding the permitted use of a property"
     },
     {
+      "id": "074b12c97750",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2065,6 +2200,7 @@
       "quote": "about the value of a property, unless it is based on an appraisal that is disclosed and readily available upon request by a party or it is given in compliance with §535.17"
     },
     {
+      "id": "60915187563d",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2077,6 +2213,7 @@
       "quote": "implies the person making the advertisement was involved in a transaction regarding a property when the person had no such role"
     },
     {
+      "id": "d8f41cf1a886",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2088,6 +2225,7 @@
       "quote": "about a property that is subject to an exclusive listing agreement without the permission of the listing broker and without disclosing the name of the listing broker unless the listing broker has expr"
     },
     {
+      "id": "218075552e3c",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2100,6 +2238,7 @@
       "quote": "has not been eliminated generally as a legal concept."
     },
     {
+      "id": "b3453ea1f461",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2111,6 +2250,7 @@
       "quote": "an explanation of how the form changes the rights, obligations, or remedies of a party under a contract form approved for mandatory use by the Commission and a statement that license holders may not p"
     },
     {
+      "id": "3b4d85f06861",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2122,6 +2262,7 @@
       "quote": "A license holder shall advise the license holder's principals that the instrument they are about to execute is binding on them."
     },
     {
+      "id": "6412b45c2c4d",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2133,6 +2274,7 @@
       "quote": "for four years from the date the document is received or created by the broker."
     },
     {
+      "id": "b3ed78fa412e",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2145,6 +2287,7 @@
       "quote": "substantive communications with parties to the transaction"
     },
     {
+      "id": "c1ca58720096",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2156,6 +2299,7 @@
       "quote": "A license holder acting on his or her own behalf or in a capacity described by subsection (a) shall not use the license holder's expertise to the disadvantage of a person with whom the license holder "
     },
     {
+      "id": "1b6989ff29c5",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2167,6 +2311,7 @@
       "quote": "a name used by a group of one or more license holders sponsored by or associated with the same broker that performs real estate activities under an exclusive collective name other than the broker's li"
     },
     {
+      "id": "2b749852721d",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2178,6 +2323,7 @@
       "quote": "may not include any terms that could mislead the public to believe that the team is offering brokerage services independent from its sponsoring broker."
     },
     {
+      "id": "be42e7988136",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2189,6 +2335,7 @@
       "quote": "must end with the word 'team' or 'group'."
     },
     {
+      "id": "da1f2e4e0397",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2200,6 +2347,7 @@
       "quote": "Before an associated broker or a sales agent sponsored by a broker starts using a team name in an advertisement, the broker must register the name with the Commission"
     },
     {
+      "id": "72c84d0cc3c8",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2211,6 +2359,7 @@
       "quote": "provide written evidence of legal authority to use the assumed business name in Texas, such as registration of the name with the Secretary of State or county clerk's office"
     },
     {
+      "id": "6e87f26e1d50",
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -2223,6 +2372,7 @@
       "quote": "shall provide the commission with: (1) the license holder's current: (A) mailing address; (B) business address; (C) business telephone number; and (D) business e-mail address; and (2) if the license h"
     },
     {
+      "id": "2987a3b5cabb",
       "module": "module-12",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
@@ -2239,6 +2389,7 @@
   ],
   "quoteTruncations": [
     {
+      "id": "6e8deb0c5100",
       "module": "module-01",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2253,6 +2404,7 @@
       "quote": "an attorney-in-fact authorized under a power of attorney."
     },
     {
+      "id": "492fb176e40d",
       "module": "module-01",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2268,6 +2420,7 @@
       "quote": "owes the highest fiduciary obligation to the principal,"
     },
     {
+      "id": "fe3d4e255729",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2281,6 +2434,7 @@
       "quote": "any act of real estate brokerage for a prospective buyer of residential real property,"
     },
     {
+      "id": "a46e03382c9b",
       "module": "module-02",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2296,6 +2450,7 @@
       "quote": "if the principal has agreed in writing that offers are not to be submitted after the principal has entered into a contract,"
     },
     {
+      "id": "7bee67adbb27",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2309,6 +2464,7 @@
       "quote": "an unrepresented party to a real estate transaction."
     },
     {
+      "id": "51592f113960",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2321,6 +2477,7 @@
       "quote": "to a party without representing the party,"
     },
     {
+      "id": "a64f87f24763",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2336,6 +2493,7 @@
       "quote": "a misrepresentation or a concealment of a material fact."
     },
     {
+      "id": "4f8b60c2917d",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2351,6 +2509,7 @@
       "quote": "actual awareness, at the time of the act or practice complained of, of the falsity, deception, or unfairness of the act or practice,"
     },
     {
+      "id": "0e5ccb1b456a",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2366,6 +2525,7 @@
       "quote": "within the earlier of: (1) seven days after the date the purchaser receives the notice; or (2) the date the transfer occurs."
     },
     {
+      "id": "167b46b80544",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2379,6 +2539,7 @@
       "quote": "death by    natural causes, suicide, or accident."
     },
     {
+      "id": "a1bc097e76ad",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2394,6 +2555,7 @@
       "quote": "a prospective buyer, seller, landlord, or tenant or an authorized representative,"
     },
     {
+      "id": "7bee67adbb27",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2409,6 +2571,7 @@
       "quote": "an unrepresented party to a real estate transaction."
     },
     {
+      "id": "0d67f15f6355",
       "module": "module-05",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2421,6 +2584,7 @@
       "quote": "a prospective buyer of residential real property,"
     },
     {
+      "id": "ef6f109871ba",
       "module": "module-05",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2435,6 +2599,7 @@
       "quote": "the notice required by Subsection (b-1)."
     },
     {
+      "id": "d3cb264cf2d8",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2450,6 +2615,7 @@
       "quote": "a broker who is employed to negotiate a transaction between the parties to a transaction."
     },
     {
+      "id": "d2ee82c7a0c3",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2464,6 +2630,7 @@
       "quote": "A broker and any broker or sales agent appointed under Section 1101.560 who acts as an intermediary under Subchapter L."
     },
     {
+      "id": "d0c3ea0d7348",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2479,6 +2646,7 @@
       "quote": "who acts as an intermediary under Subchapter L,"
     },
     {
+      "id": "d645e171e492",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2491,6 +2659,7 @@
       "quote": "A broker who complies with the written consent requirements of Section 1101.559."
     },
     {
+      "id": "b006dad04f0c",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2505,6 +2674,7 @@
       "quote": "A license holder associated with the broker."
     },
     {
+      "id": "d2ee82c7a0c3",
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2518,6 +2688,7 @@
       "quote": "A broker and any broker or sales agent appointed under Section 1101.560 who acts as an intermediary under Subchapter L."
     },
     {
+      "id": "76659e347a1b",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2530,6 +2701,7 @@
       "quote": "the party against whom the action is brought."
     },
     {
+      "id": "7da365b17585",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2543,6 +2715,7 @@
       "quote": "a definite termination date that is not subject to prior notice,"
     },
     {
+      "id": "98742fb98e70",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2555,6 +2728,7 @@
       "quote": "precluded by action of a bankruptcy court from executing a judgment or perfecting a judgment lien."
     },
     {
+      "id": "dd95c36b17cc",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2570,6 +2744,7 @@
       "quote": "who acts as an intermediary under Subchapter L."
     },
     {
+      "id": "76659e347a1b",
       "module": "module-07",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2585,6 +2760,7 @@
       "quote": "the party against whom the action is brought."
     },
     {
+      "id": "2973a4e569ec",
       "module": "module-09",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2598,6 +2774,7 @@
       "quote": "Treatment of real estate agents and direct sellers."
     },
     {
+      "id": "132aa53f313a",
       "module": "module-09",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2613,6 +2790,7 @@
       "quote": "shall be construed in favor of broad coverage of individuals,"
     },
     {
+      "id": "ada97ea62424",
       "module": "module-09",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2626,6 +2804,7 @@
       "quote": "a commission or other valuable consideration,"
     },
     {
+      "id": "339c39a67994",
       "module": "module-09",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2639,6 +2818,7 @@
       "quote": "may not act as a broker unless the entity's designated broker is a licensed individual broker in active status and good standing."
     },
     {
+      "id": "670bf074c12f",
       "module": "module-09",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2651,6 +2831,7 @@
       "quote": "Compensation to or Paid by a Sales Agent,"
     },
     {
+      "id": "f5919cb5bc07",
       "module": "module-09",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2663,6 +2844,7 @@
       "quote": "Receiving an Undisclosed Commission or Rebate,"
     },
     {
+      "id": "79e8d95a1974",
       "module": "module-10",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
@@ -2678,6 +2860,7 @@
       "quote": "An administrative penalty range of $100 - $1,500 per violation per day may be assessed."
     },
     {
+      "id": "c2e92ee879c2",
       "module": "module-10",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2693,6 +2876,7 @@
       "quote": "An administrative penalty range of $100 - $1,500 per violation per day,"
     },
     {
+      "id": "9013096b854c",
       "module": "module-10",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2708,6 +2892,7 @@
       "quote": "An administrative penalty range of $500 - $3,000 per violation per day,"
     },
     {
+      "id": "6e6aac3c64ab",
       "module": "module-10",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2723,6 +2908,7 @@
       "quote": "An administrative penalty range of $1,000 - $5,000 per violation per day,"
     },
     {
+      "id": "7ad7daf0a5c9",
       "module": "module-10",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2736,6 +2922,7 @@
       "quote": "prepared by an attorney licensed by this state, or a trade association in consultation with an attorney licensed by this state,"
     },
     {
+      "id": "8c119cde0bdc",
       "module": "module-10",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2751,6 +2938,7 @@
       "quote": "specify a definite termination date that is not subject to prior notice."
     },
     {
+      "id": "2f19eac08408",
       "module": "module-11",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2763,6 +2951,7 @@
       "quote": "false, misleading, or deceptive acts or practices,"
     },
     {
+      "id": "044bb4589eeb",
       "module": "module-11",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2776,6 +2965,7 @@
       "quote": "acts or practices authorized under specific rules or regulations promulgated by the Federal Trade Commission under Section 5(a)(1) of the Federal Trade Commission Act,"
     },
     {
+      "id": "58300e5d69dc",
       "module": "module-11",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",

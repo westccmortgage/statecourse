@@ -263,6 +263,14 @@ export function runClaimAudit(course) {
      truncation, answered below and reported separately rather than as an absence. */
   const stripTerminal = (s) => s.replace(/[.,;:]+$/, "").trim();
 
+  /* A stable id for a quotation row so a reviewer's disposition survives a re-run. Derived from the
+     module and the quotation text, not from position, so an edit elsewhere in the same file cannot
+     orphan a recorded disposition — and, conversely, editing the quotation itself changes the id and
+     forces the disposition to be reviewed again. Failures, attribution findings and truncations all
+     carry one, because all three need dispositioning and a reviewer should key them the same way. */
+  const quoteId = (moduleId, quote) =>
+    crypto.createHash("sha256").update(`${moduleId}|${quote}`).digest("hex").slice(0, 12);
+
   const ELLIPSIS = /\s*(?:\.\s*\.\s*\.|…|\[\.\.\.\])\s*/;
 
   /** Is `needle` present in the normalised haystack? Returns how it matched, or null.
@@ -630,6 +638,10 @@ export function runClaimAudit(course) {
         else quotesAttributionReview += 1;
         if (resolved.tier !== "MECHANICAL_PASS") {
           quoteFindings.push({
+            /* Same stable id as a failure row: sha256(module|quotation). A finding and a truncation
+               need a disposition key exactly as a failure does, and deriving it the same way means a
+               reviewer keys all three groups identically instead of re-deriving the hash by hand. */
+            id: quoteId(moduleId, quote),
             module: moduleId,
             status: resolved.tier,
             candidateSections: [...new Set(near.map((c) => c.row.section))].slice(0, 4),
@@ -642,6 +654,7 @@ export function runClaimAudit(course) {
         if (runsOn) {
           quotesTruncationReview += 1;
           quoteTruncations.push({
+            id: quoteId(moduleId, quote),
             module: moduleId,
             status: "TRUNCATION_REVIEW",
             classification: /^(?:to|for|unless|except|if|provided|in order|so that|and\b|or\b|but\b)/.test(tail)
@@ -700,10 +713,7 @@ export function runClaimAudit(course) {
           }
         }
         quoteFailures.push({
-          /* A stable id so a reviewer's disposition survives a re-run. Derived from the module and
-             the quotation text, not from position, so an edit elsewhere in the file cannot orphan
-             a recorded disposition. */
-          id: crypto.createHash("sha256").update(`${moduleId}|${quote}`).digest("hex").slice(0, 12),
+          id: quoteId(moduleId, quote),
           module: moduleId,
           status: "QUOTE_NOT_IN_CORPUS",
           note: "not found in any source held under texas/trec-sources/, at section, file or corpus level",
