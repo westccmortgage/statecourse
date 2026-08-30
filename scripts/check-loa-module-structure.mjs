@@ -17,6 +17,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { TOPICS } from "../config/texas/law-of-agency-course-form.mjs";
+import { BUDGET } from "../config/texas/law-of-agency-time-budget.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(root, "texas/tx-law-of-agency-30-v1/curriculum");
@@ -37,6 +38,7 @@ for (const [index, topic] of TOPICS.entries()) {
   const full = path.join(DIR, file);
   if (!fs.existsSync(full)) { rows.push({ file, topic: topic.code, status: "MISSING" }); continue; }
   const md = fs.readFileSync(full, "utf8");
+  const plan = BUDGET.find((b) => b.topicCode === topic.code);
   console.log(`\n${file}  ${topic.code} ${topic.topic}`);
 
   if (!md.startsWith(`# Texas Law of Agency — Module ${n}\n`)) fail(`${file}: first line is not "# Texas Law of Agency — Module ${n}"`);
@@ -62,8 +64,18 @@ for (const [index, topic] of TOPICS.entries()) {
     if (e.index < firstUnitAt) fail(`${file}: exercise precedes the first unit — ${e[0]}`);
     if (recapAt >= 0 && e.index > recapAt) fail(`${file}: exercise emitted after the recap — ${e[0]}`);
   }
-  if (statute.length < 1) fail(`${file}: no statute reading exercise`);
-  if (applied.length < 2) fail(`${file}: ${applied.length} applied exercises, at least 2 required`);
+  /* The exercise minimums come from the topic's own row in the time budget, not from a uniform
+     number. A flat "at least two applied exercises" is wrong for T08, which LOA-1 gives 45 minutes
+     across two units: two statute exercises and three applied ones plus a recap would spend 59 of
+     those 45 minutes before a word of instruction, so the budget plans one of each there. This
+     script asserted the flat minimum, the budget planned the reduction, and module 08 failed for
+     obeying the budget. Reading the plan from the budget is what stops the two drifting again. A
+     module may carry MORE exercises than planned — the time evidence counts what is actually
+     there — but not fewer. */
+  if (statute.length < plan.statuteReadingExercises)
+    fail(`${file}: ${statute.length} statute reading exercises, the time budget plans ${plan.statuteReadingExercises}`);
+  if (applied.length < plan.appliedExercises)
+    fail(`${file}: ${applied.length} applied exercises, the time budget plans ${plan.appliedExercises}`);
   if (recapAt >= 0 && md.slice(recapAt).trim().split("\n").length < 8) fail(`${file}: recap is too short to walk the module`);
 
   const lm = md.match(LENGTH_PHRASE);
@@ -97,7 +109,7 @@ for (const [index, topic] of TOPICS.entries()) {
   const words = (s) => (s.match(/\S+/g) || []).length;
   rows.push({ file, topic: topic.code, status: "OK", units: emitted.length, prose: words(prose), total: words(md),
     statuteExercises: statute.length, appliedExercises: applied.length });
-  console.log(`  units ${emitted.length}/${expected.length} · prose ${words(prose).toLocaleString()} w · total ${words(md).toLocaleString()} w · exercises ${statute.length} statute / ${applied.length} applied`);
+  console.log(`  units ${emitted.length}/${expected.length} · prose ${words(prose).toLocaleString()} w · total ${words(md).toLocaleString()} w · exercises ${statute.length}/${plan.statuteReadingExercises} statute · ${applied.length}/${plan.appliedExercises} applied`);
 }
 
 console.log("\n— summary —");
