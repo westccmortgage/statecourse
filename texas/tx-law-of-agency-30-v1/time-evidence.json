@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 108587,
+    "proseWords": 108571,
     "statuteReadingExercises": 21,
     "appliedExercises": 31,
     "moduleRecaps": 12,
     "exerciseWords": 14575,
     "recapWords": 13299,
-    "totalWords": 139424
+    "totalWords": 139408
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,7 +28,7 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "108,587 words at 140 wpm",
+      "basis": "108,571 words at 140 wpm",
       "minutes": 776,
       "measured": true
     },
@@ -93,7 +93,7 @@
     },
     {
       "segment": "mastery review",
-      "basis": "108,587 words at 60 wpm",
+      "basis": "108,571 words at 60 wpm",
       "minutes": 1810,
       "reason": "an upper bound on diligent study, never required time"
     },
@@ -278,9 +278,9 @@
       "topic": "Employment Issues",
       "units": 6,
       "prescribedMinutes": 120,
-      "sha256": "5b4d169bda86ba7150dde173cb8a3214eb2542b27e053a6bb8cc0adfb41736dd",
-      "totalWords": 9800,
-      "proseWords": 7215,
+      "sha256": "20f49cf2dee51c0d7d338801571e5ead88c5b8b0878a399703d6be528c9f1828",
+      "totalWords": 9784,
+      "proseWords": 7199,
       "statuteReadingExercise": 1,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -288,10 +288,10 @@
       "exerciseWords": 905,
       "recapWords": 1367,
       "optionalReferenceWords": 313,
-      "readingMinutes": 52,
+      "readingMinutes": 51,
       "activityMinutes": 69,
-      "requiredMinutes": 121,
-      "varianceMinutes": 1
+      "requiredMinutes": 120,
+      "varianceMinutes": 0
     },
     {
       "file": "module-10.md",

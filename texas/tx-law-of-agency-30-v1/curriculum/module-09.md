@@ -11,8 +11,8 @@ licensed Texas agent's service is excluded from "employment," and identify the c
 independent contractor agreement must carry to satisfy them; describe what Labor Code chapter 21
 prohibits, who counts as an "employer" and an "employee" under § 21.002, and where the chapter
 stops at the edge of a genuine independent contractor relationship; explain why the broker, not
-the sales agent, is the person the client employs under § 1101.557(a); determine from 22 TAC §§
-535.4, 535.5, 535.20 and 535.147 which tasks an unlicensed personal assistant may perform and who
+the sales agent, is the person the client employs under § 1101.557(a); determine from
+22 TAC §§ 535.4, 535.5, 535.20 and 535.147 which tasks an unlicensed personal assistant may perform and who
 may lawfully pay the assistant; apply every subsection of 22 TAC § 535.2 to a working brokerage;
 and route every dollar of compensation correctly under 22 TAC § 535.3, § 1101.651(b), § 535.147
 and § 535.148, including compensation earned before a change of sponsorship.
@@ -130,8 +130,8 @@ respect to such services for Federal tax purposes."
 
 One well-drafted agreement satisfies both statutes, because they are one drafting pattern rather
 than two regimes. Its statutory core is short: the parties by name; a statement that the
-individual holds a Texas licence and will perform activity described by Occupations Code §
-1101.002; compensation measured by production rather than hours; and an express provision that the
+individual holds a Texas licence and will perform activity described by Occupations Code
+§ 1101.002; compensation measured by production rather than hours; and an express provision that the
 individual will not be treated as an employee with respect to the services for federal tax
 purposes.
 
@@ -210,8 +210,8 @@ chapter's definitions to real facts, and **no case law was held** for this cours
 therefore does not tell you that a sales agent can never bring a chapter 21 claim against a
 broker, and it does not tell you that one always can.
 
-**The one-employee subchapter.** Subchapter C-1, added in 2021, governs sexual harassment, and §
-21.141 gives it its own definition: "'Employer' means a person who: (A) employs one or more
+**The one-employee subchapter.** Subchapter C-1, added in 2021, governs sexual harassment, and
+§ 21.141 gives it its own definition: "'Employer' means a person who: (A) employs one or more
 employees; or (B) acts directly in the interests of an employer in relation to an employee." One
 employee. Section 21.142 makes an employer liable where sexual harassment of an employee occurs
 and the employer or the employer's agents or supervisors "know or should have known that the
@@ -240,8 +240,8 @@ The Commission's rules use the labour-law sense where it matters: 22 TAC § 535.
 a real estate license is not required "for an employee employed by a business entity for the
 purpose of buying, selling, or leasing real property for the entity," and § 535.5(d)(2) defines
 that term: "An employee of a business entity means a person employed and directly compensated by
-the business entity. An independent contractor is not an employee." Occupations Code §
-1101.002(1)(B)(i), by contrast, uses the engagement sense, providing that "Broker" includes a
+the business entity. An independent contractor is not an employee." Occupations Code
+§ 1101.002(1)(B)(i), by contrast, uses the engagement sense, providing that "Broker" includes a
 person who "is employed by or for an owner of real estate to sell any portion of the real estate."
 Tell the senses apart from context.
 
