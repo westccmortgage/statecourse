@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 105723,
+    "proseWords": 105750,
     "statuteReadingExercises": 20,
     "appliedExercises": 24,
     "moduleRecaps": 12,
     "exerciseWords": 12199,
     "recapWords": 13299,
-    "totalWords": 135411
+    "totalWords": 135438
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,10 +28,10 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "105,723 words at 140 wpm",
-      "seconds": 45309.857142857145,
+      "basis": "105,750 words at 140 wpm",
+      "seconds": 45321.42857142857,
       "measured": true,
-      "minutes": 755.2
+      "minutes": 755.4
     },
     {
       "segment": "required document review (statute reading exercises)",
@@ -83,14 +83,14 @@
       "minutes": 20
     }
   ],
-  "requiredMinutes": 1532.2,
+  "requiredMinutes": 1532.4,
   "layers": {
     "topicInstruction": {
-      "seconds": 90730,
-      "minutes": 1512.2,
+      "seconds": 90741,
+      "minutes": 1512.4,
       "prescribedSeconds": 90000,
       "prescribedMinutes": 1500,
-      "varianceMinutes": 12.2,
+      "varianceMinutes": 12.4,
       "note": "Official LOA-1 topic time, T01-T12. Each topic allocation is a topic-specific minimum; no topic's surplus may cure another's shortfall."
     },
     "courseLevelCapstone": {
@@ -99,13 +99,13 @@
       "note": "Required, but attributed to no topic. Not used to satisfy any topic's allocation."
     },
     "grandRequired": {
-      "seconds": 91930,
-      "minutes": 1532.2,
+      "seconds": 91941,
+      "minutes": 1532.4,
       "note": "Layer 1 plus layer 2. The segment table equals this figure, not the topic total."
     }
   },
   "topicsBelowAllocation": [],
-  "varianceMinutes": 32.2,
+  "varianceMinutes": 32.4,
   "meetsPrescribed": true,
   "everyTopicMeetsItsAllocation": true,
   "conditional": [
@@ -135,8 +135,8 @@
     },
     {
       "segment": "mastery review",
-      "basis": "105,723 words at 60 wpm",
-      "minutes": 1762,
+      "basis": "105,750 words at 60 wpm",
+      "minutes": 1763,
       "reason": "an upper bound on diligent study, never required time"
     },
     {
@@ -233,7 +233,7 @@
       "topic": "Seller Agency",
       "units": 5,
       "prescribedMinutes": 120,
-      "sha256": "af0ce454d4c9174ccf0d771324ea583acc55ecb0aa0b0eb9fe93232e118a1b14",
+      "sha256": "422b6438d341984b9b707eb2af6c54d1f9e137b61c7f9a63d6109e89a2738b59",
       "totalWords": 10694,
       "proseWords": 8564,
       "statuteReadingExercise": 2,
@@ -395,9 +395,9 @@
       "topic": "Agency, Ethics and the Law",
       "units": 5,
       "prescribedMinutes": 155,
-      "sha256": "8ab97a3ce61210b7225260bedd88be7890964e83e9abde944031b58feb485eae",
-      "totalWords": 16254,
-      "proseWords": 13065,
+      "sha256": "7804116e88e22399e93f4593889970eb07d89245c2ad44b8050a019662ede802",
+      "totalWords": 16281,
+      "proseWords": 13092,
       "statuteReadingExercise": 2,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -407,13 +407,13 @@
       "optionalReferenceWords": 638,
       "quizItems": 5,
       "scenarios": 0,
-      "readingSeconds": 5599.285714285714,
+      "readingSeconds": 5610.857142857143,
       "activitySeconds": 3720,
-      "requiredSeconds": 9319.285714285714,
-      "readingMinutes": 93.3,
+      "requiredSeconds": 9330.857142857143,
+      "readingMinutes": 93.5,
       "activityMinutes": 62,
-      "requiredMinutes": 155.3,
-      "varianceMinutes": 0.3,
+      "requiredMinutes": 155.5,
+      "varianceMinutes": 0.5,
       "meetsAllocation": true
     },
     {

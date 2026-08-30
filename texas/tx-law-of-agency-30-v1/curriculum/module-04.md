@@ -44,7 +44,7 @@ agency in Texas is, in the ordinary case, listing agency.
 Two boundaries frame the document before you read a word of it. Taking a listing is licensed
 activity — § 1101.002(1)(A)(iii), (iv) and (viii) and 22 TAC § 535.4(f) put soliciting, negotiating
 and taking listings inside the definition of brokerage, taught in Module 01. And the listing is not
-yours; 22 TAC § 535.2(g) requires that listings "be solicited and accepted in a broker's name,"
+yours; 22 TAC § 535.2(f) requires that listings "be solicited and accepted in a broker's name,"
 taught in Module 09. A sales agent negotiates, signs and works listings, but the contracting party
 on the brokerage side is the sponsoring broker. That allocation decides who may sue for the
 commission, who must keep the file, and — as you will see below — who may lawfully pay you.
@@ -129,7 +129,7 @@ full. Read here only for what each one forces into the document.
   fine" is precisely the evidentiary problem the writing exists to avoid.
 - **Written consent for the sign** — § 1101.652(b)(18), whose operative word is *written*. A signed
   listing that authorizes signage supplies the consent; "sure, put a sign up" does not.
-- **The broker as the contracting party**, under 22 TAC § 535.2(g) (Module 09).
+- **The broker as the contracting party**, under 22 TAC § 535.2(f) (Module 09).
 
 **Compensation, and a statement that it is negotiable.** Occupations Code § 1101.155(c) tells you
 what the Commission must include if it adopts a listing contract form: "A listing contract form

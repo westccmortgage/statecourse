@@ -158,13 +158,13 @@ the render arrives.
 | # | Visual | Duration |
 |---|---|---|
 | 1 | Avatar, medium shot | ≈ 20 s |
-| 2 | `tx-intermediary-collision.png`, static hold | ≈ 29 s |
+| 2 | `tx-intermediary-collision.png`, static hold | ≈ 32 s |
 | 3 | `iabs-band-f.png`, static hold | ≈ 30 s |
-| 4 | `iabs-band-f.png`, same hold continues | ≈ 24 s |
+| 4 | `iabs-band-f.png`, same hold continues | ≈ 25 s |
 | 5 | `tx-intermediary-configs.png`, static hold | ≈ 25 s |
-| 6 | `iabs-band-f.png`, static hold (return) | ≈ 33 s |
+| 6 | `iabs-band-f.png`, static hold (return) | ≈ 38 s |
 | 7 | Avatar, medium shot | ≈ 29 s |
-| | **Total** | **≈ 3 min 10 s** |
+| | **Total** | **≈ 3 min 20 s** |
 
 ---
 
@@ -179,8 +179,8 @@ through, beneath the correct one — the correct word is always the visually dom
 
 **Narration.**
 > If you have studied real estate anywhere else, you have met the phrase dual agent. Put it down.
-> Search Chapter 1101 of the Occupations Code and the words dual agent and dual agency are not in it.
-> Texas built a different role, with a different name and different rules.
+> Search Chapter 1101 of the Occupations Code and the words dual agent and dual agency are not in
+> it. Texas built a different role, with a different name and different rules.
 
 ---
 
@@ -189,10 +189,11 @@ through, beneath the correct one — the correct word is always the visually dom
 **Visual.** Hard cut to `tx-intermediary-collision.png`. Static hold, no movement.
 
 **Narration.**
-> Here is the problem it solves. One brokerage lists a house and also represents the buyer who wants
-> it. The seller's floor is protected. The buyer's ceiling is protected. Full agency to both is not a
-> hard case; it is an impossible one. Section 1101.561(b) settles it: a broker must agree to act as an
-> intermediary if the broker agrees to represent both a buyer or tenant and a seller or landlord. Must.
+> Here is the problem it solves. One brokerage lists a house and also represents the buyer who
+> wants it. The seller's floor is protected. The buyer's ceiling is protected. Full agency to both
+> is not a hard case; it is an impossible one. Section 1101.561(b) settles it: a broker must agree
+> to act as an intermediary under this subchapter if the broker agrees to represent in a
+> transaction a buyer or tenant and a seller or landlord. Must.
 
 ---
 
@@ -202,22 +203,33 @@ through, beneath the correct one — the correct word is always the visually dom
 
 **Highlight (post-production).** One box on the heading-and-consent paragraph, from
 `AS AGENT FOR BOTH - INTERMEDIARY:` through
-`set forth the broker's obligations as an intermediary.` Target region in page points:
-x 26.4–582.5, y 372.4–403.2. The heading is inside the box, not cropped by it.
+`set forth the broker's obligations as an intermediary.`, from +2.4 s (caption cue 12) to the end of
+the scene. Target region in page points: **x 26.4–582.5, y 372.4–403.2** — the bounding box of the
+paragraph's three printed lines, exactly. The heading label is printed at the head of the first of
+them, so it is inside the box, never cropped by it.
 Margin label: header `THE PRECONDITION`, lines `Written agreement` / `of EACH party`.
 
-At ≈ +20 s a second, narrower box lands inside the first on the words
-`in conspicuous bold or underlined print` only (page points x ≈ 26.4–260, y 392.9–403.2), with margin
-label header `EMPHASIS STANDARD`, lines `Conspicuous —` / `no point size`. This is a refinement of the
-same provision, not a second new concept, so the two boxes may coexist; the outer box drops to a
-lighter weight when the inner one appears.
+From +11.2 s (caption cue 13) a second, narrower cue lands inside the first on the words
+`in conspicuous bold or underlined print` only. That phrase straddles a line break on the printed
+page, so it is drawn as **one cue in two rectangles** (two `scenes.json` entries sharing a start and
+end, the first carrying the label):
+
+- **x 487.7–582.5, y 382.9–392.8** — `in conspicuous bold or`, to the line's right edge
+- **x 26.4–95.1, y 393.2–403.2** — `underlined print,` at the start of the next line
+
+Both are word-exact; the earlier estimate of `x ≈ 26.4–260, y 392.9–403.2` marked only the phrase's
+second half and swept in five following words, and has been replaced. Margin label:
+header `EMPHASIS STANDARD`, lines `Conspicuous —` / `no point size`. This is a refinement of the same
+provision, not a second new concept, so the inner cue may coexist with the outer box; the outer box
+drops to a lighter weight when the inner one appears.
 
 **Narration.**
-> The consumer notice states the mechanics. To act as an intermediary between the parties the broker
-> must first obtain the written agreement of each party to the transaction. The written agreement must
-> state who will pay the broker and, in conspicuous bold or underlined print, set forth the broker's
-> obligations as an intermediary. Written, from each party, stating who pays, with the prohibitions
-> emphasised — conspicuous, and no point size, because the statute names none.
+> The consumer notice states the mechanics. To act as an intermediary between the parties the
+> broker must first obtain the written agreement of each party to the transaction. The written
+> agreement must state who will pay the broker and, in conspicuous bold or underlined print, set
+> forth the broker's obligations as an intermediary. Written, from each party, stating who pays,
+> with the prohibitions emphasised — conspicuous, and no point size, because the statute names
+> none.
 
 ---
 
@@ -226,19 +238,22 @@ lighter weight when the inner one appears.
 **Visual.** `iabs-band-f.png` continues. No cut, no movement.
 
 **Highlight.** Scene 3's boxes clear at the scene boundary. Two sequential cues, never both on screen:
-1. Box on bullet one, `Must treat all parties to the transaction impartially and fairly;`
-   Page points x 35.4–297.5, y 403.3–413.7. Margin label: header `THE BROKER'S STANDARD`,
-   lines `Impartially` / `and fairly`.
-2. From ≈ +9 s, that box clears; box on bullet two, `May, with the parties' written consent, appoint a
-   different license holder…` through `…carry out the instructions of each party to the transaction.`
-   Page points x 35.4–582.4, y 414.0–434.9. Margin label: header `THE SECOND CONSENT`,
-   lines `Consent to` / `appointments`.
+1. From +2.0 s to +6.0 s (caption cue 16), box on bullet one,
+   `Must treat all parties to the transaction impartially and fairly;`
+   Page points **x 35.4–297.5, y 403.3–413.7** — the printed bullet line, exactly.
+   Margin label: header `THE BROKER'S STANDARD`, lines `Impartially` / `and fairly`.
+2. From +6.0 s to +22.4 s (caption cue 17), that box clears; box on bullet two,
+   `May, with the parties' written consent, appoint a different license holder…` through
+   `…carry out the instructions of each party to the transaction.`
+   Page points **x 35.4–582.4, y 414.0–434.9** — the bounding box of the bullet's two printed lines,
+   exactly. Margin label: header `THE SECOND CONSENT`, lines `Consent to` / `appointments`.
 
 **Narration.**
-> Then what the broker does. Must treat all parties to the transaction impartially and fairly. And may,
-> with the parties' written consent, appoint a different license holder associated with the broker to
-> each party, owner and buyer, to communicate with, provide opinions and advice to, and carry out the
-> instructions of each party. Two consents doing two different jobs.
+> Then what the broker does. Must treat all parties to the transaction impartially and fairly. And
+> may, with the parties' written consent, appoint a different license holder associated with the
+> broker to each party, owner and buyer, to communicate with, provide opinions and advice to, and
+> carry out the instructions of each party to the transaction. Two consents doing two different
+> jobs.
 
 ---
 
@@ -249,10 +264,10 @@ whole video is built around; it is held motionless and given room.
 
 **Narration.**
 > So a Texas brokerage on both sides runs in one of two configurations. Without appointments: the
-> broker is intermediary, impartial, carrying information — and nobody in the brokerage advises either
-> party. With appointments: the broker stays impartial, and each party has a licensee who may give
-> opinions and advice during negotiations, to that party only. The difference is advice. It is not
-> confidentiality.
+> broker is intermediary, impartial, carrying information — and nobody in the brokerage advises
+> either party. With appointments: the broker stays impartial, and each party has a licensee who
+> may give opinions and advice during negotiations, to that party only. The difference is advice.
+> It is not confidentiality.
 
 ---
 
@@ -260,24 +275,28 @@ whole video is built around; it is held motionless and given room.
 
 **Visual.** Hard cut back to `iabs-band-f.png`. Static hold.
 
-**Highlight.** Four sequential cues, one at a time:
-1. Box on the third bullet's opening line,
-   `Must not, unless specifically authorized in writing to do so by the party, disclose:`
-   Page points x 35.4–375.7, y 435.1–445.5. Margin label: header `THE UNLOCK`,
-   lines `Only by specific` / `written authority`.
-2. From ≈ +9 s, box on sub-bullet one. Page points x 49.0–341.7, y 446.0–456.0.
-   Margin label: header `THE SELLER'S FLOOR`, lines `Will accept less` / `than asking`.
-3. From ≈ +17 s, box on sub-bullet two. Page points x 49.0–444.3, y 456.3–466.3.
-   Margin label: header `THE BUYER'S CEILING`, lines `Will pay more than` / `the written offer`.
-4. From ≈ +24 s, box on sub-bullet three. Page points x 49.0–564.6, y 466.8–487.1.
-   Margin label: header `CONFIDENTIAL INFO`, lines `And anything the party` / `puts in writing`.
+**Highlight.** Four sequential cues, one at a time. Every target is the bounding box of that
+provision's own printed line or lines, exactly.
+
+| Cue | Visible (provisional) | Target (page points) | Margin label |
+|---|---|---|---|
+| 1 — the bullet's opening line, `Must not, unless specifically authorized in writing to do so by the party, disclose:` | +2.4 → +8.8 s (cue 24) | x 35.4–375.7, y 435.1–445.5 | `THE UNLOCK` / `Only by specific` / `written authority` |
+| 2 — sub-bullet one | +8.8 → +14.0 s (cue 25) | x 49.0–341.7, y 446.0–456.0 | `THE SELLER'S FLOOR` / `Will accept less` / `than asking` |
+| 3 — sub-bullet two | +14.0 → +21.2 s (cue 26) | x 49.0–444.3, y 456.3–466.3 | `THE BUYER'S CEILING` / `Will pay more than` / `the written offer` |
+| 4 — sub-bullet three, **both** its printed lines | +21.2 → +32.0 s (cue 27) | x 49.0–564.6, y 466.8–487.1 | `CONFIDENTIAL INFO` / `Anything put in writing —` / `unless the law compels` |
+
+Cue 4's box deliberately includes the sub-bullet's second printed line,
+`disclose, unless required to do so by law.` (y 477.1–487.1). That clause is part of the same
+provision, the narration now reads it aloud, and boxing only the first line would have shown the
+student a confidentiality rule with its exception cropped away.
 
 **Narration.**
 > Because confidentiality is identical in both. The intermediary must not, unless specifically
-> authorized in writing to do so by the party, disclose that the owner will accept a price less than
-> the written asking price; that the buyer or tenant will pay a price greater than the price submitted
-> in a written offer; and any confidential information a party instructs the broker in writing not to
-> disclose. The seller's floor and the buyer's ceiling stay on their own sides of the wall.
+> authorized in writing to do so by the party, disclose: that the owner will accept a price less
+> than the written asking price; that the buyer or tenant will pay a price greater than the price
+> submitted in a written offer; and any confidential information or any other information that a
+> party specifically instructs the broker in writing not to disclose, unless required to do so by
+> law. The seller's floor and the buyer's ceiling stay on their own sides of the wall.
 
 ---
 
@@ -293,9 +312,9 @@ no "next" slide.
 **Narration.**
 > Two things to carry out of here. An appointment is not a release. Section 1101.651(d) binds the
 > broker and every license holder the broker appoints, so an appointed agent advises inside a
-> confidentiality cage. And the notice is a summary: the statute carries qualifiers the form does not
-> print, including that confidentiality never covers information materially relating to the condition
-> of the property. It protects negotiating position. It has never protected a defect.
+> confidentiality cage. And the notice is a summary: the statute carries qualifiers the form does
+> not print, including that confidentiality never covers information materially relating to the
+> condition of the property. It protects negotiating position. It has never protected a defect.
 
 ---
 
@@ -345,57 +364,59 @@ SCENE STRUCTURE
 Scene 1 — Avatar introduction. Medium shot, clean StateCourse branded background.
 On-screen title: "Texas term: INTERMEDIARY" with a smaller second line, in muted red and struck
 through, reading: not "dual agent".
-Script: "If you have studied real estate anywhere else, you have met the phrase dual agent. Put it
-down. Search Chapter 1101 of the Occupations Code and the words dual agent and dual agency are not in
+Script: "If you have studied real estate anywhere else, you have met the phrase dual agent. Put it down.
+Search Chapter 1101 of the Occupations Code and the words dual agent and dual agency are not in
 it. Texas built a different role, with a different name and different rules."
 Duration: 19-21 seconds.
 
 Scene 2 — Hard cut to image "tx-intermediary-collision". Static hold. Avatar off screen.
-Script: "Here is the problem it solves. One brokerage lists a house and also represents the buyer who
-wants it. The seller's floor is protected. The buyer's ceiling is protected. Full agency to both is
-not a hard case; it is an impossible one. Section 1101.561(b) settles it: a broker must agree to act
-as an intermediary if the broker agrees to represent both a buyer or tenant and a seller or landlord.
-Must."
-Duration: 28-30 seconds.
+Script: "Here is the problem it solves. One brokerage lists a house and also represents the buyer who wants
+it. The seller's floor is protected. The buyer's ceiling is protected. Full agency to both is not
+a hard case; it is an impossible one. Section 1101.561(b) settles it: a broker must agree to act
+as an intermediary under this subchapter if the broker agrees to represent in a transaction a
+buyer or tenant and a seller or landlord. Must."
+Duration: 31-33 seconds.
 
 Scene 3 — Hard cut to image "iabs-band-f". Static hold begins.
-Script: "The consumer notice states the mechanics. To act as an intermediary between the parties the
-broker must first obtain the written agreement of each party to the transaction. The written agreement
+Script: "The consumer notice states the mechanics. To act as an intermediary between the parties the broker
+must first obtain the written agreement of each party to the transaction. The written agreement
 must state who will pay the broker and, in conspicuous bold or underlined print, set forth the
 broker's obligations as an intermediary. Written, from each party, stating who pays, with the
 prohibitions emphasised — conspicuous, and no point size, because the statute names none."
 Duration: 29-31 seconds.
 
 Scene 4 — Image "iabs-band-f" continues. No cut, no movement.
-Script: "Then what the broker does. Must treat all parties to the transaction impartially and fairly.
-And may, with the parties' written consent, appoint a different license holder associated with the
-broker to each party, owner and buyer, to communicate with, provide opinions and advice to, and carry
-out the instructions of each party. Two consents doing two different jobs."
-Duration: 23-25 seconds.
+Script: "Then what the broker does. Must treat all parties to the transaction impartially and fairly. And
+may, with the parties' written consent, appoint a different license holder associated with the
+broker to each party, owner and buyer, to communicate with, provide opinions and advice to, and
+carry out the instructions of each party to the transaction. Two consents doing two different
+jobs."
+Duration: 24-26 seconds.
 
 Scene 5 — Hard cut to image "tx-intermediary-configs". Static hold. Give this frame room; it is the
 centre of the video.
-Script: "So a Texas brokerage on both sides runs in one of two configurations. Without appointments:
-the broker is intermediary, impartial, carrying information — and nobody in the brokerage advises
+Script: "So a Texas brokerage on both sides runs in one of two configurations. Without appointments: the
+broker is intermediary, impartial, carrying information — and nobody in the brokerage advises
 either party. With appointments: the broker stays impartial, and each party has a licensee who may
-give opinions and advice during negotiations, to that party only. The difference is advice. It is not
-confidentiality."
+give opinions and advice during negotiations, to that party only. The difference is advice. It is
+not confidentiality."
 Duration: 24-26 seconds.
 
 Scene 6 — Hard cut back to image "iabs-band-f". Static hold.
 Script: "Because confidentiality is identical in both. The intermediary must not, unless specifically
-authorized in writing to do so by the party, disclose that the owner will accept a price less than the
-written asking price; that the buyer or tenant will pay a price greater than the price submitted in a
-written offer; and any confidential information a party instructs the broker in writing not to
-disclose. The seller's floor and the buyer's ceiling stay on their own sides of the wall."
-Duration: 32-34 seconds.
+authorized in writing to do so by the party, disclose: that the owner will accept a price less
+than the written asking price; that the buyer or tenant will pay a price greater than the price
+submitted in a written offer; and any confidential information or any other information that a
+party specifically instructs the broker in writing not to disclose, unless required to do so by
+law. The seller's floor and the buyer's ceiling stay on their own sides of the wall."
+Duration: 37-39 seconds.
 
 Scene 7 — Return to avatar, medium shot.
-Script: "Two things to carry out of here. An appointment is not a release. Section 1101.651(d) binds
-the broker and every license holder the broker appoints, so an appointed agent advises inside a
-confidentiality cage. And the notice is a summary: the statute carries qualifiers the form does not
-print, including that confidentiality never covers information materially relating to the condition of
-the property. It protects negotiating position. It has never protected a defect."
+Script: "Two things to carry out of here. An appointment is not a release. Section 1101.651(d) binds the
+broker and every license holder the broker appoints, so an appointed agent advises inside a
+confidentiality cage. And the notice is a summary: the statute carries qualifiers the form does
+not print, including that confidentiality never covers information materially relating to the
+condition of the property. It protects negotiating position. It has never protected a defect."
 Duration: 28-30 seconds.
 
 END OF VIDEO.
@@ -434,126 +455,151 @@ the composition changes even once during any hold, reject and re-render.
 
 ## 8. Caption-ready transcript
 
-**Timings below are PROVISIONAL**, computed at 150 wpm. The shipped `tx-intermediary-brokerage.vtt`
-must be rebuilt from the delivered render's own audio.
+**On disk:** `texas/tx-law-of-agency-30-v1/video-production/captions/tx-intermediary-brokerage.provisional.vtt` — a
+real, well-formed WebVTT file, written and kept **outside** `public/statecourse/media/` on purpose,
+so that nothing can serve it by accident before a render exists. Its first block is a `NOTE` saying
+so in the file itself.
+
+**Cue text is final.** Every cue matches the recorded script word for word, and every fragment that
+reads the held form or the held statute has been checked against the source character by character
+(§14).
+
+**Cue TIMINGS are PROVISIONAL.** They are computed at 150 words per minute — the delivery rate of the
+existing series — with a 1.4-second readability floor on very short cues, and they are placeholders.
+No render exists, so no timing here was measured from audio. Before the file ships to
+`/media/tx-intermediary-brokerage.vtt` the timings must be rebuilt from the delivered render's own
+audio, by silence-gap detection cross-validated against word-count pacing, exactly as the sibling
+captions in `public/statecourse/media/` were built. The cue text does not change when that happens;
+only the timestamps do.
 
 ```vtt
 WEBVTT
 
-00:00:00.300 --> 00:00:06.100
-If you have studied real estate anywhere else,
-you have met the phrase dual agent.
+NOTE
+PROVISIONAL TIMINGS — see the header of the on-disk file. Cue text is final;
+cue timings are placeholders computed at 150 wpm and must be rebuilt from the render.
 
-00:00:06.100 --> 00:00:08.400
+00:00:00.300 --> 00:00:06.300
+If you have studied real estate anywhere else, you have met the phrase dual
+agent.
+
+00:00:06.300 --> 00:00:07.700
 Put it down.
 
-00:00:08.400 --> 00:00:15.900
-Search Chapter 1101 of the Occupations Code and the words
-dual agent and dual agency are not in it.
+00:00:07.700 --> 00:00:15.300
+Search Chapter 1101 of the Occupations Code and the words dual agent and dual
+agency are not in it.
 
-00:00:15.900 --> 00:00:20.400
+00:00:15.300 --> 00:00:20.100
 Texas built a different role, with a different name and different rules.
 
-00:00:20.400 --> 00:00:23.400
+00:00:20.100 --> 00:00:22.500
 Here is the problem it solves.
 
-00:00:23.400 --> 00:00:29.400
+00:00:22.500 --> 00:00:27.700
 One brokerage lists a house and also represents the buyer who wants it.
 
-00:00:29.400 --> 00:00:32.900
+00:00:27.700 --> 00:00:29.700
 The seller's floor is protected.
 
-00:00:32.900 --> 00:00:35.900
+00:00:29.700 --> 00:00:31.700
 The buyer's ceiling is protected.
 
-00:00:35.900 --> 00:00:41.400
+00:00:31.700 --> 00:00:37.300
 Full agency to both is not a hard case; it is an impossible one.
 
-00:00:41.400 --> 00:00:52.900
+00:00:37.300 --> 00:00:50.900
 Section 1101.561(b) settles it: a broker must agree to act as an intermediary
-if the broker agrees to represent both a buyer or tenant and a seller or landlord.
+under this subchapter if the broker agrees to represent in a transaction a
+buyer or tenant and a seller or landlord.
 
-00:00:52.900 --> 00:00:54.900
+00:00:50.900 --> 00:00:52.300
 Must.
 
-00:00:54.900 --> 00:00:58.400
+00:00:52.300 --> 00:00:54.700
 The consumer notice states the mechanics.
 
-00:00:58.400 --> 00:01:06.400
-To act as an intermediary between the parties the broker must first obtain
-the written agreement of each party to the transaction.
+00:00:54.700 --> 00:01:03.500
+To act as an intermediary between the parties the broker must first obtain the
+written agreement of each party to the transaction.
 
-00:01:06.400 --> 00:01:15.900
+00:01:03.500 --> 00:01:13.500
 The written agreement must state who will pay the broker and, in conspicuous
-bold or underlined print, set forth the broker's obligations as an intermediary.
+bold or underlined print, set forth the broker's obligations as an
+intermediary.
 
-00:01:15.900 --> 00:01:24.900
+00:01:13.500 --> 00:01:22.300
 Written, from each party, stating who pays, with the prohibitions emphasised —
 conspicuous, and no point size, because the statute names none.
 
-00:01:24.900 --> 00:01:27.400
+00:01:22.300 --> 00:01:24.300
 Then what the broker does.
 
-00:01:27.400 --> 00:01:32.400
+00:01:24.300 --> 00:01:28.300
 Must treat all parties to the transaction impartially and fairly.
 
-00:01:32.400 --> 00:01:45.400
+00:01:28.300 --> 00:01:44.700
 And may, with the parties' written consent, appoint a different license holder
-associated with the broker to each party, owner and buyer, to communicate with,
-provide opinions and advice to, and carry out the instructions of each party.
+associated with the broker to each party, owner and buyer, to communicate
+with, provide opinions and advice to, and carry out the instructions of each
+party to the transaction.
 
-00:01:45.400 --> 00:01:48.900
+00:01:44.700 --> 00:01:47.100
 Two consents doing two different jobs.
 
-00:01:48.900 --> 00:01:54.400
+00:01:47.100 --> 00:01:52.300
 So a Texas brokerage on both sides runs in one of two configurations.
 
-00:01:54.400 --> 00:02:03.400
-Without appointments: the broker is intermediary, impartial, carrying information —
-and nobody in the brokerage advises either party.
+00:01:52.300 --> 00:01:59.500
+Without appointments: the broker is intermediary, impartial, carrying
+information — and nobody in the brokerage advises either party.
 
-00:02:03.400 --> 00:02:12.900
+00:01:59.500 --> 00:02:09.100
 With appointments: the broker stays impartial, and each party has a licensee
 who may give opinions and advice during negotiations, to that party only.
 
-00:02:12.900 --> 00:02:18.400
+00:02:09.100 --> 00:02:12.300
 The difference is advice. It is not confidentiality.
 
-00:02:18.400 --> 00:02:21.900
+00:02:12.300 --> 00:02:14.700
 Because confidentiality is identical in both.
 
-00:02:21.900 --> 00:02:32.400
+00:02:14.700 --> 00:02:21.100
 The intermediary must not, unless specifically authorized in writing to do so
-by the party, disclose that the owner will accept a price less than
-the written asking price;
+by the party, disclose:
 
-00:02:32.400 --> 00:02:39.900
-that the buyer or tenant will pay a price greater than
-the price submitted in a written offer;
+00:02:21.100 --> 00:02:26.300
+that the owner will accept a price less than the written asking price;
 
-00:02:39.900 --> 00:02:46.900
-and any confidential information a party instructs the broker
-in writing not to disclose.
+00:02:26.300 --> 00:02:33.500
+that the buyer or tenant will pay a price greater than the price submitted in
+a written offer;
 
-00:02:46.900 --> 00:02:52.400
-The seller's floor and the buyer's ceiling stay on their own sides of the wall.
+00:02:33.500 --> 00:02:44.300
+and any confidential information or any other information that a party
+specifically instructs the broker in writing not to disclose, unless required
+to do so by law.
 
-00:02:52.400 --> 00:02:55.400
+00:02:44.300 --> 00:02:50.300
+The seller's floor and the buyer's ceiling stay on their own sides of the
+wall.
+
+00:02:50.300 --> 00:02:53.100
 Two things to carry out of here.
 
-00:02:55.400 --> 00:02:58.400
+00:02:53.100 --> 00:02:55.500
 An appointment is not a release.
 
-00:02:58.400 --> 00:03:07.400
-Section 1101.651(d) binds the broker and every license holder the broker appoints,
-so an appointed agent advises inside a confidentiality cage.
+00:02:55.500 --> 00:03:03.900
+Section 1101.651(d) binds the broker and every license holder the broker
+appoints, so an appointed agent advises inside a confidentiality cage.
 
-00:03:07.400 --> 00:03:17.900
-And the notice is a summary: the statute carries qualifiers the form does not print,
-including that confidentiality never covers information materially relating to
-the condition of the property.
+00:03:03.900 --> 00:03:15.500
+And the notice is a summary: the statute carries qualifiers the form does not
+print, including that confidentiality never covers information materially
+relating to the condition of the property.
 
-00:03:17.900 --> 00:03:21.900
+00:03:15.500 --> 00:03:19.500
 It protects negotiating position. It has never protected a defect.
 ```
 
@@ -562,42 +608,46 @@ It protects negotiating position. It has never protected a defect.
 ## 9. Clean transcript
 
 > If you have studied real estate anywhere else, you have met the phrase dual agent. Put it down.
-> Search Chapter 1101 of the Occupations Code and the words dual agent and dual agency are not in it.
-> Texas built a different role, with a different name and different rules.
+> Search Chapter 1101 of the Occupations Code and the words dual agent and dual agency are not in
+> it. Texas built a different role, with a different name and different rules.
 >
-> Here is the problem it solves. One brokerage lists a house and also represents the buyer who wants
-> it. The seller's floor is protected. The buyer's ceiling is protected. Full agency to both is not a
-> hard case; it is an impossible one. Section 1101.561(b) settles it: a broker must agree to act as an
-> intermediary if the broker agrees to represent both a buyer or tenant and a seller or landlord. Must.
+> Here is the problem it solves. One brokerage lists a house and also represents the buyer who
+> wants it. The seller's floor is protected. The buyer's ceiling is protected. Full agency to both
+> is not a hard case; it is an impossible one. Section 1101.561(b) settles it: a broker must agree
+> to act as an intermediary under this subchapter if the broker agrees to represent in a
+> transaction a buyer or tenant and a seller or landlord. Must.
 >
-> The consumer notice states the mechanics. To act as an intermediary between the parties the broker
-> must first obtain the written agreement of each party to the transaction. The written agreement must
-> state who will pay the broker and, in conspicuous bold or underlined print, set forth the broker's
-> obligations as an intermediary. Written, from each party, stating who pays, with the prohibitions
-> emphasised — conspicuous, and no point size, because the statute names none.
+> The consumer notice states the mechanics. To act as an intermediary between the parties the
+> broker must first obtain the written agreement of each party to the transaction. The written
+> agreement must state who will pay the broker and, in conspicuous bold or underlined print, set
+> forth the broker's obligations as an intermediary. Written, from each party, stating who pays,
+> with the prohibitions emphasised — conspicuous, and no point size, because the statute names
+> none.
 >
-> Then what the broker does. Must treat all parties to the transaction impartially and fairly. And may,
-> with the parties' written consent, appoint a different license holder associated with the broker to
-> each party, owner and buyer, to communicate with, provide opinions and advice to, and carry out the
-> instructions of each party. Two consents doing two different jobs.
+> Then what the broker does. Must treat all parties to the transaction impartially and fairly. And
+> may, with the parties' written consent, appoint a different license holder associated with the
+> broker to each party, owner and buyer, to communicate with, provide opinions and advice to, and
+> carry out the instructions of each party to the transaction. Two consents doing two different
+> jobs.
 >
 > So a Texas brokerage on both sides runs in one of two configurations. Without appointments: the
-> broker is intermediary, impartial, carrying information — and nobody in the brokerage advises either
-> party. With appointments: the broker stays impartial, and each party has a licensee who may give
-> opinions and advice during negotiations, to that party only. The difference is advice. It is not
-> confidentiality.
+> broker is intermediary, impartial, carrying information — and nobody in the brokerage advises
+> either party. With appointments: the broker stays impartial, and each party has a licensee who
+> may give opinions and advice during negotiations, to that party only. The difference is advice.
+> It is not confidentiality.
 >
 > Because confidentiality is identical in both. The intermediary must not, unless specifically
-> authorized in writing to do so by the party, disclose that the owner will accept a price less than
-> the written asking price; that the buyer or tenant will pay a price greater than the price submitted
-> in a written offer; and any confidential information a party instructs the broker in writing not to
-> disclose. The seller's floor and the buyer's ceiling stay on their own sides of the wall.
+> authorized in writing to do so by the party, disclose: that the owner will accept a price less
+> than the written asking price; that the buyer or tenant will pay a price greater than the price
+> submitted in a written offer; and any confidential information or any other information that a
+> party specifically instructs the broker in writing not to disclose, unless required to do so by
+> law. The seller's floor and the buyer's ceiling stay on their own sides of the wall.
 >
 > Two things to carry out of here. An appointment is not a release. Section 1101.651(d) binds the
 > broker and every license holder the broker appoints, so an appointed agent advises inside a
-> confidentiality cage. And the notice is a summary: the statute carries qualifiers the form does not
-> print, including that confidentiality never covers information materially relating to the condition
-> of the property. It protects negotiating position. It has never protected a defect.
+> confidentiality cage. And the notice is a summary: the statute carries qualifiers the form does
+> not print, including that confidentiality never covers information materially relating to the
+> condition of the property. It protects negotiating position. It has never protected a defect.
 
 ---
 
@@ -638,20 +688,54 @@ minutes are spent on reading and activity minutes under `config/texas/law-of-age
 This video's ≈ 3 minutes are additional and unbudgeted; adding it changes no figure in that file, and
 no figure was reduced to make room for it.
 
-**Config entry — DO NOT ADD UNTIL THE ASSET IS RENDERED AND VERIFIED.**
+**Registry entry — WRITTEN, AND COMMENTED *NOT ACTIVE*.** Recorded so the wiring is unambiguous
+when it happens, not so that it can happen now. Adding it before the MP4, the poster and the shipping
+`.vtt` all exist and have passed factual, visual and accessibility QC would put a dead player, a
+missing poster and a 404 caption track on a student-facing screen — worse than no video at all.
+
+**Where it goes, exactly.** `config/texas/law-of-agency-module-6-blocks.mjs` now exists, and screen
+`t06u3-s1` is in it, with the content range this production file predicted. But that file's own header
+reads *"GENERATED FILE … Do not edit by hand — regenerate"*: it is written by
+`scripts/generate-tx-law-of-agency-block-maps.mjs` from the frozen module's headings. So the entry
+below is **not** pasted into the generated file. It is attached the way California attaches its
+Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
+which the generator merges onto the screen it names and which refuses to generate if the screen id
+does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet. Adding it
+is a prerequisite of activation and is recorded in §10 of the plan as an open item. Nothing here
+edits either file.
 
 ```js
-// NOT ACTIVE. Add to the T06U3 instruction screen in the future
-// config/texas/law-of-agency-module-6-blocks.mjs ONLY after the three files below exist.
-videos: [{
-  src: "/media/tx-intermediary-brokerage.mp4",
-  poster: "/media/tx-intermediary-brokerage-poster.webp",
-  captions: "/media/tx-intermediary-brokerage.vtt",
-  label: "Optional video: Texas intermediary brokerage — consent, appointments, and what stays unsaid",
-  duration: "3:10",          // replace with the MEASURED duration of the delivered render
-  optional: true,
-}]
+// NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
+// Add ONLY when all four of these exist and have passed factual, visual and accessibility QC:
+//   public/statecourse/media/tx-intermediary-brokerage.mp4
+//   public/statecourse/media/tx-intermediary-brokerage-poster.webp
+//   public/statecourse/media/tx-intermediary-brokerage.vtt        (timings rebuilt from the render)
+//   the clean transcript of §9, published as text on screen t06u3-s1
+// Route: a hand-authored screenMedia spec consumed by
+// scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
+// config/texas/law-of-agency-module-6-blocks.mjs.
+//
+// screenMedia: {
+//   "t06u3-s1": {
+//     videos: [{
+//       src: "/media/tx-intermediary-brokerage.mp4",
+//       poster: "/media/tx-intermediary-brokerage-poster.webp",
+//       captions: "/media/tx-intermediary-brokerage.vtt",
+//       label: "Optional video: Texas intermediary brokerage — consent, appointments, and what stays unsaid",
+//       duration: "3:20",   // PROVISIONAL — replace with the MEASURED length of the delivered render
+//     }],
+//   },
+// }
 ```
+
+`duration` above is the provisional estimate from §6, computed at 150 wpm from the final script. It
+is not a measurement and must be replaced by one before the entry is ever added. The block player
+(`public/statecourse/student/course/blocks/block-player.js`) reads `src`, `poster`, `captions`,
+`label` and `duration`, tags every screen video "Optional" of its own accord, and builds the
+transcript disclosure from the caption track — so no `optional: true` flag is needed or read, and a
+missing `.vtt` would silently produce a video with no transcript. That is the second reason this
+entry stays commented out.
 
 ---
 
@@ -662,6 +746,7 @@ videos: [{
 | Selection decision | **Complete** — selected, see the plan's §2 |
 | Learning objective | **Complete** |
 | Placement | **Fixed** — Module 06, T06U3, instruction screen `t06u3-s1` (screen id reserved; the LOA block map is not yet authored) |
+| Form-string verification | **Complete** — see §14 |
 | Sources | **Held and verified** |
 | Script and narration | **Complete** |
 | Highlight targets | **Complete in page-point space**, measured from the held PDF |
@@ -669,8 +754,8 @@ videos: [{
 | HeyGen prompt | **Complete** |
 | Band image and diagram panels | **Not built** |
 | MP4 render | **Not rendered** |
-| VTT captions | **Not built** — provisional timings only |
-| Poster | **Not built** |
+| VTT captions | **Cue text final; timings provisional.** Written to `video-production/captions/tx-intermediary-brokerage.provisional.vtt`, deliberately not to `public/statecourse/media/`. Timings must be rebuilt from the render before the file ships |
+| Poster | **Not built** — it is a frame of a render that does not exist, and was not composed by hand |
 | Highlight pixel coordinates | **Not measurable** until the render exists |
 | Student-facing display | **Not displayed.** No config entry, no player, no poster, no badge, no "video available" marker on any student- or reviewer-facing surface |
 

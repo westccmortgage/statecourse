@@ -114,10 +114,13 @@ compose to 1920 × 1080 on warm ivory with margin for labels). This video consum
 | Asset | Band | y-top | y-bottom | Contains |
 |---|---|---|---|---|
 | `iabs-band-d.png` | D | 172 | 255 | `WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS:` and its whole paragraph |
-| `iabs-band-g.png` | G | 490 | 594 | `A LICENSE HOLDER CAN SHOW PROPERTY TO A BUYER/TENANT WITHOUT REPRESENTING THE BUYER/TENANT IF:`, its four bullets, and the closing 14-day paragraph |
+| `iabs-band-g.png` | G | 490 | 592 | `A LICENSE HOLDER CAN SHOW PROPERTY TO A BUYER/TENANT WITHOUT REPRESENTING THE BUYER/TENANT IF:`, its four bullets, and the closing 14-day paragraph |
 
-Both bands fit fully inside the 1920 × 1080 frame (241 px and 302 px tall at the composed scale), so
-no heading is ever cropped and no highlighted provision ever runs off frame.
+Both bands fit fully inside the 1920 × 1080 frame (241 px and 296 px tall at the composed scale), so
+no heading is ever cropped and no highlighted provision ever runs off frame. Band G's foot was
+corrected from 594 to **592** during the straddle check described in `iabs-1-2-document-overview.md`
+§5.1: 594 fell inside the printed line `LICENSE HOLDER CONTACT INFORMATION: This notice is being
+provided…`. Every other boundary was confirmed to land in interline whitespace.
 
 **Deliberate reuse across three videos.** Videos 1, 2 and 3 all draw on the same held one-page form,
 each taking a different block for a different job — exactly as the Loan Estimate series took three
@@ -155,11 +158,11 @@ Durations computed from word count at 150 wpm, the delivery rate of the existing
 | 1 | Avatar, medium shot | ≈ 16 s |
 | 2 | `tx-posture-fork.png`, static hold | ≈ 20 s |
 | 3 | `iabs-band-d.png`, static hold | ≈ 34 s |
-| 4 | `iabs-band-g.png`, static hold | ≈ 33 s |
-| 5 | `iabs-band-g.png`, same hold continues | ≈ 22 s |
+| 4 | `iabs-band-g.png`, static hold | ≈ 42 s |
+| 5 | `iabs-band-g.png`, same hold continues | ≈ 24 s |
 | 6 | `tx-disclosure-gate.png`, static hold | ≈ 20 s |
-| 7 | Avatar, medium shot | ≈ 28 s |
-| | **Total** | **≈ 2 min 53 s** |
+| 7 | Avatar, medium shot | ≈ 29 s |
+| | **Total** | **≈ 3 min 03 s** |
 
 ---
 
@@ -184,9 +187,10 @@ Durations computed from word count at 150 wpm, the delivery rate of the existing
 **On-screen text.** Carried by the panel itself; no additional overlay.
 
 **Narration.**
-> One prospect, two postures. Either your broker represents the buyer, under a written agreement that
-> says so. Or your broker shows property without representing the buyer, under section 1101.562. There
-> is no third position and no working it out later. The choice is made before the showing, in writing.
+> One prospect, two postures. Either your broker represents the buyer, under a written agreement
+> that says so. Or your broker shows property without representing the buyer, under section
+> 1101.562. There is no third position and no working it out later. The choice is made before the
+> showing, in writing.
 
 ---
 
@@ -195,24 +199,37 @@ Durations computed from word count at 150 wpm, the delivery rate of the existing
 **Visual.** Hard cut to `iabs-band-d.png`. Static hold for the whole scene.
 
 **Highlight (post-production).** Two sequential cues, never both on screen:
-1. From ≈ +3 s, a box on the operative sentence, from `A license holder who performs brokerage
-   activity` through `before presenting an offer on behalf of the buyer.` Target region in page
-   points: x 26.4–582.7, y 177.4–208.0. The block heading
-   `WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS:` is inside the frame throughout and is
-   never cropped. Margin label: header `THE TRIGGER`, lines `Before showing —` / `or before the offer`.
-2. From ≈ +26 s, that box clears and a second box lands on the sentence naming the statute,
-   `This written agreement must contain specific information required by Texas law. For more
-   information on these requirements, see section 1101.563 of the Texas Occupations Code.` Page
-   points: x 26.4–582.7, y 208.5–228.8. Margin label: header `WHERE THE DETAIL IS`,
-   lines `§ 1101.563`.
+
+1. From +4.0 s to +23.2 s (caption cues 8–9), a box on the operative sentence, from
+   `A license holder who performs brokerage activity` through
+   `before presenting an offer on behalf of the buyer.` Target region in page points:
+   **x 26.4–582.7, y 177.4–208.0** — the bounding box of the three printed lines that carry it.
+   The block heading `WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS:` is printed on the
+   **same line** as the sentence's opening words (it occupies x 26.4–≈176 of the line at y 177.4),
+   so it sits inside this box rather than above it. It is inside the frame throughout and is never
+   cropped. Margin label: header `THE TRIGGER`, lines `Before showing —` / `or before the offer`.
+2. From +25.2 s (caption cue 11) to the end of the scene, that box clears and a second cue lands on
+   the sentence naming the statute, `This written agreement must contain specific information
+   required by Texas law. For more information on these requirements, see section 1101.563 of the
+   Texas Occupations Code.` The sentence starts part-way along one printed line and ends after the
+   single word `Code.` on another, so it is drawn as **one cue in three rectangles** (three
+   `scenes.json` entries sharing a start and end, the first carrying the label):
+   - **x 427.2–582.7, y 198.0–208.0** — from the printed `This` to the line's right edge
+   - **x 26.4–582.5, y 208.5–218.4** — the whole intervening line
+   - **x 26.4–49.7, y 218.8–228.8** — the word `Code.` alone
+
+   All three are word-exact. Drawing the third rectangle around `Code.` alone, rather than around
+   its whole printed line, keeps the unrelated sentence that follows it on that line
+   (`Even if a written agreement is not required…`) outside the highlight.
+   Margin label: header `WHERE THE DETAIL IS`, lines `§ 1101.563`.
 
 **Narration.**
-> The notice states the rule in the consumer's own words. A license holder performing brokerage
-> activity for a prospective buyer of residential property must enter into a written agreement with
-> the buyer before showing any residential property to the buyer or if no residential property will be
-> shown, before presenting an offer on behalf of the buyer. Two moments, and only two. The form then
-> points you to section 1101.563 for what that agreement must contain, because the notice summarises
-> and the statute defines.
+> The notice states the rule in the consumer's own words. A license holder who performs brokerage
+> activity for a prospective buyer of residential property must enter into a written agreement
+> with the buyer before showing any residential property to the buyer or if no residential
+> property will be shown, before presenting an offer on behalf of the buyer. Two moments, and only
+> two. The form then points you to section 1101.563 for what that agreement must contain, because
+> the notice summarises and the statute defines.
 
 **Instructional note for the reviewer, not narrated.** The form's block says "residential property";
 § 1101.563(a) says "residential real property" and defines it. The narration follows the form while
@@ -230,23 +247,32 @@ margin label. The heading
 `A LICENSE HOLDER CAN SHOW PROPERTY TO A BUYER/TENANT WITHOUT REPRESENTING THE BUYER/TENANT IF:`
 stays inside the frame, uncropped, for the entire scene.
 
-| Cue | Target (page points) | Margin label |
-|---|---|---|
-| 1 — no agreement to represent | x 35.3–484.6, y 504.9–515.4 | `CONDITION 1` / `No agreement —` / `oral or written` |
-| 2 — not otherwise the agent | x 35.3–452.6, y 515.6–526.1 | `CONDITION 2` / `Not otherwise` / `their agent` |
-| 3 — no opinions or advice | x 35.3–564.5, y 526.2–547.1 | `CONDITION 3` / `No opinions,` / `no advice` |
-| 4 — no other act of brokerage | x 35.3–411.4, y 547.3–557.7 | `CONDITION 4` / `No other act of` / `brokerage` |
+| Cue | Visible (provisional) | Target (page points) | Margin label |
+|---|---|---|---|
+| 1 — no agreement to represent | +4.0 → +12.4 s | x 35.3–484.6, y 504.9–515.4 | `CONDITION 1` / `No agreement —` / `oral or written` |
+| 2 — not otherwise the agent | +12.4 → +20.0 s | x 35.3–452.6, y 515.6–526.1 | `CONDITION 2` / `Not otherwise` / `their agent` |
+| 3 — no opinions or advice | +20.0 → +28.0 s | x 35.3–564.5, y 526.2–536.6 | `CONDITION 3` / `No opinions,` / `no advice` |
+| 4 — no other act of brokerage | +28.0 → +35.2 s | x 35.3–411.4, y 547.3–557.7 | `CONDITION 4` / `No other act of` / `brokerage` |
 
-At the end of the scene all four boxes are shown together for ≈ 2 s with one label reading
-`ALL FOUR — joined by "and"`. This is a single concept (conjunction), not four new ones, and is the
-only moment in the video where more than one box is on screen.
+Each target is the bounding box of that condition's own printed bullet line, exactly. Condition 3's
+foot was corrected from 547.1 to **536.6**: the form prints the conjunction `and` on a line of its
+own (x 48.6–63.9, y 537.1–547.1) between conditions 3 and 4, and sweeping it into condition 3's box
+would have marked two things at once.
+
+At the end of the scene, from +35.2 s to +37.2 s (caption cue 17, "Four conditions, joined by and"),
+all four boxes are shown together with a fifth small box on that printed `and`
+(**x 48.6–63.9, y 537.1–547.1**) and one label reading `ALL FOUR — joined by "and"`. This is a single
+concept — the conjunction, which the form itself prints — not four new ones, and it is the only
+moment in the video where more than one box is on screen.
 
 **Narration.**
-> Now the other posture, and the form lists its conditions. The broker has not agreed with the buyer
-> or tenant, either orally or in writing, to represent them. Is not otherwise acting as their agent at
-> the time of showing. Does not provide opinions or advice regarding the property or real estate
-> transactions generally. And does not perform any other act of real estate brokerage for them. Four
-> conditions, joined by and. Satisfy three and you are not inside this section at all.
+> Now the other posture, and the form lists its conditions. The broker has not agreed with the
+> buyer or tenant, either orally or in writing, to represent the buyer or tenant. The broker is
+> not otherwise acting as the buyer or tenant's agent at the time of showing the property. The
+> broker does not provide the buyer or tenant opinions or advice regarding the property or real
+> estate transactions generally. And the broker does not perform any other act of real estate
+> brokerage for the buyer or tenant. Four conditions, joined by and. Satisfy three and you are not
+> inside this section at all.
 
 ---
 
@@ -256,14 +282,16 @@ only moment in the video where more than one box is on screen.
 
 **Highlight.** All Scene 4 boxes clear at the scene boundary. One new box on the closing paragraph,
 `Before showing a residential property to an unrepresented prospective buyer …` through
-`limited to no more than 14 days.` Page points: x 26.4–582.5, y 558.2–589.0. Margin label:
-header `THE SHOWING-ONLY PAPER`, lines `Not exclusive.` / `14 days maximum.`
+`limited to no more than 14 days.`, from +4.4 s (caption cue 20) to the end of the scene. Page
+points: **x 26.4–582.5, y 558.2–589.0** — the bounding box of the paragraph's three printed lines,
+exactly. Margin label: header `THE SHOWING-ONLY PAPER`, lines `Not exclusive.` / `14 days maximum.`
 
 **Narration.**
-> Read the paragraph underneath, because the non-representation posture is papered too. Before showing
-> a residential property to an unrepresented prospective buyer, a license holder must enter into a
-> written agreement that contains the information required by section 1101.563. The agreement may not
-> be exclusive and must be limited to no more than 14 days.
+> Read the paragraph underneath, because the non-representation posture is papered too. Before
+> showing a residential property to an unrepresented prospective buyer, a license holder must
+> enter into a written agreement that contains the information required by section 1101.563 of the
+> Texas Occupations Code. The agreement may not be exclusive and must be limited to no more than
+> 14 days.
 
 ---
 
@@ -272,10 +300,10 @@ header `THE SHOWING-ONLY PAPER`, lines `Not exclusive.` / `14 days maximum.`
 **Visual.** Hard cut to `tx-disclosure-gate.png`. Static hold.
 
 **Narration.**
-> One more gate stands before any showing without representation, and which side you are on decides
-> it. Represent the owner, and you make the representation disclosure — orally or in writing — under
-> section 1101.558(b). Represent nobody, and you deliver the written notice under section
-> 1101.558(b-1). That is the IABS.
+> One more gate stands before any showing without representation, and which side you are on
+> decides it. Represent the owner, and you make the representation disclosure — orally or in
+> writing — under section 1101.558(b). Represent nobody, and you deliver the written notice under
+> section 1101.558(b-1). That is the IABS.
 
 ---
 
@@ -289,10 +317,11 @@ avatar is doing work no still frame could do. No end card, no recap card, no "ne
 professional practice rather than as a rule to memorise.
 
 **Narration.**
-> Here is where this fails, and it is never at the paperwork. It fails in a hallway, when someone you
-> are not representing asks whether the price is fair. Section 1101.562(c) lets you confirm the size,
-> price and terms. Confirm — not evaluate. Have the sentence ready before you need it. I can't give you
-> an opinion on that, because I'm showing you this house without representing you. Then stop talking.
+> Here is where this fails, and it is never at the paperwork. It fails in a hallway, when someone
+> you are not representing asks whether the price is fair. Section 1101.562(c) lets you confirm
+> the size, price and terms. Confirm — not evaluate. Have the sentence ready before you need it. I
+> can't give you an opinion on that, because I'm showing you this house without representing you.
+> Then stop talking.
 
 ---
 
@@ -340,58 +369,60 @@ SCENE STRUCTURE
 Scene 1 — Avatar introduction. Medium shot, clean StateCourse branded background.
 On-screen title: "Representation or Showing Only" with a smaller second line "Texas, effective
 1 January 2026".
-Script: "Since January first, 2026, there are exactly two lawful ways to work with a residential buyer
-in Texas. You have to know which one you are in before the appointment starts — not afterwards, and
+Script: "Since January first, 2026, there are exactly two lawful ways to work with a residential buyer in
+Texas. You have to know which one you are in before the appointment starts — not afterwards, and
 not once somebody asks."
 Duration: 15-17 seconds.
 
 Scene 2 — Hard cut to image "tx-posture-fork". Static hold. Avatar off screen.
-Script: "One prospect, two postures. Either your broker represents the buyer, under a written
-agreement that says so. Or your broker shows property without representing the buyer, under section
+Script: "One prospect, two postures. Either your broker represents the buyer, under a written agreement
+that says so. Or your broker shows property without representing the buyer, under section
 1101.562. There is no third position and no working it out later. The choice is made before the
 showing, in writing."
 Duration: 19-21 seconds.
 
 Scene 3 — Hard cut to image "iabs-band-d". Static hold.
-Script: "The notice states the rule in the consumer's own words. A license holder performing brokerage
-activity for a prospective buyer of residential property must enter into a written agreement with the
-buyer before showing any residential property to the buyer or if no residential property will be
-shown, before presenting an offer on behalf of the buyer. Two moments, and only two. The form then
-points you to section 1101.563 for what that agreement must contain, because the notice summarises and
-the statute defines."
+Script: "The notice states the rule in the consumer's own words. A license holder who performs brokerage
+activity for a prospective buyer of residential property must enter into a written agreement with
+the buyer before showing any residential property to the buyer or if no residential property will
+be shown, before presenting an offer on behalf of the buyer. Two moments, and only two. The form
+then points you to section 1101.563 for what that agreement must contain, because the notice
+summarises and the statute defines."
 Duration: 33-35 seconds.
 
 Scene 4 — Hard cut to image "iabs-band-g". Static hold begins.
-Script: "Now the other posture, and the form lists its conditions. The broker has not agreed with the
-buyer or tenant, either orally or in writing, to represent them. Is not otherwise acting as their
-agent at the time of showing. Does not provide opinions or advice regarding the property or real
-estate transactions generally. And does not perform any other act of real estate brokerage for them.
-Four conditions, joined by and. Satisfy three and you are not inside this section at all."
-Duration: 32-34 seconds.
+Script: "Now the other posture, and the form lists its conditions. The broker has not agreed with the buyer
+or tenant, either orally or in writing, to represent the buyer or tenant. The broker is not
+otherwise acting as the buyer or tenant's agent at the time of showing the property. The broker
+does not provide the buyer or tenant opinions or advice regarding the property or real estate
+transactions generally. And the broker does not perform any other act of real estate brokerage for
+the buyer or tenant. Four conditions, joined by and. Satisfy three and you are not inside this
+section at all."
+Duration: 41-43 seconds.
 
 Scene 5 — Image "iabs-band-g" continues. No cut, no movement.
 Script: "Read the paragraph underneath, because the non-representation posture is papered too. Before
-showing a residential property to an unrepresented prospective buyer, a license holder must enter into
-a written agreement that contains the information required by section 1101.563. The agreement may not
-be exclusive and must be limited to no more than 14 days."
-Duration: 21-23 seconds.
+showing a residential property to an unrepresented prospective buyer, a license holder must enter
+into a written agreement that contains the information required by section 1101.563 of the Texas
+Occupations Code. The agreement may not be exclusive and must be limited to no more than 14 days."
+Duration: 23-25 seconds.
 
 Scene 6 — Hard cut to image "tx-disclosure-gate". Static hold.
-Script: "One more gate stands before any showing without representation, and which side you are on
-decides it. Represent the owner, and you make the representation disclosure — orally or in writing —
-under section 1101.558(b). Represent nobody, and you deliver the written notice under section
+Script: "One more gate stands before any showing without representation, and which side you are on decides
+it. Represent the owner, and you make the representation disclosure — orally or in writing — under
+section 1101.558(b). Represent nobody, and you deliver the written notice under section
 1101.558(b-1). That is the IABS."
 Duration: 19-21 seconds.
 
 Scene 7 — Return to avatar, medium shot.
 Deliver this one slightly more conversationally than the rest — it is a working professional
 explaining how they actually handle the moment. Still calm, still unhurried, no performance.
-Script: "Here is where this fails, and it is never at the paperwork. It fails in a hallway, when
-someone you are not representing asks whether the price is fair. Section 1101.562(c) lets you confirm
-the size, price and terms. Confirm — not evaluate. Have the sentence ready before you need it. I can't
-give you an opinion on that, because I'm showing you this house without representing you. Then stop
-talking."
-Duration: 27-29 seconds.
+Script: "Here is where this fails, and it is never at the paperwork. It fails in a hallway, when someone
+you are not representing asks whether the price is fair. Section 1101.562(c) lets you confirm the
+size, price and terms. Confirm — not evaluate. Have the sentence ready before you need it. I can't
+give you an opinion on that, because I'm showing you this house without representing you. Then
+stop talking."
+Duration: 28-30 seconds.
 
 END OF VIDEO.
 Do NOT add a recap scene after the avatar's closing line.
@@ -428,128 +459,148 @@ moves, zooms, drifts, or the composition changes even once during any hold, reje
 
 ## 8. Caption-ready transcript
 
-**Timings below are PROVISIONAL**, computed at 150 wpm. The shipped
-`tx-representation-or-showing-only-2026.vtt` must be rebuilt from the delivered render's own audio.
+**On disk:** `texas/tx-law-of-agency-30-v1/video-production/captions/tx-representation-or-showing-only-2026.provisional.vtt` — a
+real, well-formed WebVTT file, written and kept **outside** `public/statecourse/media/` on purpose,
+so that nothing can serve it by accident before a render exists. Its first block is a `NOTE` saying
+so in the file itself.
+
+**Cue text is final.** Every cue matches the recorded script word for word, and every fragment that
+reads the held form or the held statute has been checked against the source character by character
+(§14).
+
+**Cue TIMINGS are PROVISIONAL.** They are computed at 150 words per minute — the delivery rate of the
+existing series — with a 1.4-second readability floor on very short cues, and they are placeholders.
+No render exists, so no timing here was measured from audio. Before the file ships to
+`/media/tx-representation-or-showing-only-2026.vtt` the timings must be rebuilt from the delivered render's own
+audio, by silence-gap detection cross-validated against word-count pacing, exactly as the sibling
+captions in `public/statecourse/media/` were built. The cue text does not change when that happens;
+only the timestamps do.
 
 ```vtt
 WEBVTT
 
-00:00:00.300 --> 00:00:07.100
-Since January first, 2026, there are exactly two lawful ways
-to work with a residential buyer in Texas.
+NOTE
+PROVISIONAL TIMINGS — see the header of the on-disk file. Cue text is final;
+cue timings are placeholders computed at 150 wpm and must be rebuilt from the render.
 
-00:00:07.100 --> 00:00:15.900
-You have to know which one you are in before the appointment starts —
-not afterwards, and not once somebody asks.
+00:00:00.300 --> 00:00:07.500
+Since January first, 2026, there are exactly two lawful ways to work with a
+residential buyer in Texas.
 
-00:00:15.900 --> 00:00:18.900
+00:00:07.500 --> 00:00:15.900
+You have to know which one you are in before the appointment starts — not
+afterwards, and not once somebody asks.
+
+00:00:15.900 --> 00:00:17.500
 One prospect, two postures.
 
-00:00:18.900 --> 00:00:24.400
-Either your broker represents the buyer,
-under a written agreement that says so.
+00:00:17.500 --> 00:00:22.700
+Either your broker represents the buyer, under a written agreement that says
+so.
 
-00:00:24.400 --> 00:00:30.100
-Or your broker shows property without representing the buyer,
-under section 1101.562.
+00:00:22.700 --> 00:00:27.500
+Or your broker shows property without representing the buyer, under section
+1101.562.
 
-00:00:30.100 --> 00:00:34.400
+00:00:27.500 --> 00:00:31.900
 There is no third position and no working it out later.
 
-00:00:34.400 --> 00:00:38.900
+00:00:31.900 --> 00:00:35.500
 The choice is made before the showing, in writing.
 
-00:00:38.900 --> 00:00:43.400
+00:00:35.500 --> 00:00:39.500
 The notice states the rule in the consumer's own words.
 
-00:00:43.400 --> 00:00:58.900
-A license holder performing brokerage activity for a prospective buyer of
+00:00:39.500 --> 00:00:51.900
+A license holder who performs brokerage activity for a prospective buyer of
 residential property must enter into a written agreement with the buyer before
 showing any residential property to the buyer
 
-00:00:58.900 --> 00:01:04.400
-or if no residential property will be shown,
-before presenting an offer on behalf of the buyer.
+00:00:51.900 --> 00:00:58.700
+or if no residential property will be shown, before presenting an offer on
+behalf of the buyer.
 
-00:01:04.400 --> 00:01:07.900
+00:00:58.700 --> 00:01:00.700
 Two moments, and only two.
 
-00:01:07.900 --> 00:01:17.400
+00:01:00.700 --> 00:01:09.500
 The form then points you to section 1101.563 for what that agreement must
 contain, because the notice summarises and the statute defines.
 
-00:01:17.400 --> 00:01:22.400
+00:01:09.500 --> 00:01:13.500
 Now the other posture, and the form lists its conditions.
 
-00:01:22.400 --> 00:01:29.600
-The broker has not agreed with the buyer or tenant,
-either orally or in writing, to represent them.
+00:01:13.500 --> 00:01:21.900
+The broker has not agreed with the buyer or tenant, either orally or in
+writing, to represent the buyer or tenant.
 
-00:01:29.600 --> 00:01:34.900
-Is not otherwise acting as their agent at the time of showing.
+00:01:21.900 --> 00:01:29.500
+The broker is not otherwise acting as the buyer or tenant's agent at the time
+of showing the property.
 
-00:01:34.900 --> 00:01:42.400
-Does not provide opinions or advice regarding the property
-or real estate transactions generally.
+00:01:29.500 --> 00:01:37.500
+The broker does not provide the buyer or tenant opinions or advice regarding
+the property or real estate transactions generally.
 
-00:01:42.400 --> 00:01:48.100
-And does not perform any other act of real estate brokerage for them.
+00:01:37.500 --> 00:01:44.700
+And the broker does not perform any other act of real estate brokerage for the
+buyer or tenant.
 
-00:01:48.100 --> 00:01:51.600
+00:01:44.700 --> 00:01:46.700
 Four conditions, joined by and.
 
-00:01:51.600 --> 00:01:56.900
+00:01:46.700 --> 00:01:51.100
 Satisfy three and you are not inside this section at all.
 
-00:01:56.900 --> 00:02:03.100
-Read the paragraph underneath, because the non-representation posture
-is papered too.
+00:01:51.100 --> 00:01:55.500
+Read the paragraph underneath, because the non-representation posture is
+papered too.
 
-00:02:03.100 --> 00:02:14.400
-Before showing a residential property to an unrepresented prospective buyer,
-a license holder must enter into a written agreement that contains the
-information required by section 1101.563.
+00:01:55.500 --> 00:02:08.300
+Before showing a residential property to an unrepresented prospective buyer, a
+license holder must enter into a written agreement that contains the
+information required by section 1101.563 of the Texas Occupations Code.
 
-00:02:14.400 --> 00:02:19.400
-The agreement may not be exclusive and must be limited
-to no more than 14 days.
+00:02:08.300 --> 00:02:14.700
+The agreement may not be exclusive and must be limited to no more than 14
+days.
 
-00:02:19.400 --> 00:02:26.400
-One more gate stands before any showing without representation,
-and which side you are on decides it.
+00:02:14.700 --> 00:02:21.500
+One more gate stands before any showing without representation, and which side
+you are on decides it.
 
-00:02:26.400 --> 00:02:34.100
-Represent the owner, and you make the representation disclosure —
-orally or in writing — under section 1101.558(b).
+00:02:21.500 --> 00:02:28.700
+Represent the owner, and you make the representation disclosure — orally or in
+writing — under section 1101.558(b).
 
-00:02:34.100 --> 00:02:39.400
-Represent nobody, and you deliver the written notice
-under section 1101.558(b-1).
+00:02:28.700 --> 00:02:33.100
+Represent nobody, and you deliver the written notice under section
+1101.558(b-1).
 
-00:02:39.400 --> 00:02:41.900
+00:02:33.100 --> 00:02:34.700
 That is the IABS.
 
-00:02:41.900 --> 00:02:46.900
+00:02:34.700 --> 00:02:39.500
 Here is where this fails, and it is never at the paperwork.
 
-00:02:46.900 --> 00:02:53.400
-It fails in a hallway, when someone you are not representing
-asks whether the price is fair.
+00:02:39.500 --> 00:02:46.300
+It fails in a hallway, when someone you are not representing asks whether the
+price is fair.
 
-00:02:53.400 --> 00:02:58.900
+00:02:46.300 --> 00:02:50.300
 Section 1101.562(c) lets you confirm the size, price and terms.
 
-00:02:58.900 --> 00:03:01.400
+00:02:50.300 --> 00:02:51.900
 Confirm — not evaluate.
 
-00:03:01.400 --> 00:03:04.900
+00:02:51.900 --> 00:02:55.100
 Have the sentence ready before you need it.
 
-00:03:04.900 --> 00:03:11.400
+00:02:55.100 --> 00:03:01.900
 I can't give you an opinion on that, because I'm showing you this house
 without representing you.
 
-00:03:11.400 --> 00:03:13.900
+00:03:01.900 --> 00:03:03.300
 Then stop talking.
 ```
 
@@ -558,40 +609,45 @@ Then stop talking.
 ## 9. Clean transcript
 
 > Since January first, 2026, there are exactly two lawful ways to work with a residential buyer in
-> Texas. You have to know which one you are in before the appointment starts — not afterwards, and not
-> once somebody asks.
+> Texas. You have to know which one you are in before the appointment starts — not afterwards, and
+> not once somebody asks.
 >
-> One prospect, two postures. Either your broker represents the buyer, under a written agreement that
-> says so. Or your broker shows property without representing the buyer, under section 1101.562. There
-> is no third position and no working it out later. The choice is made before the showing, in writing.
+> One prospect, two postures. Either your broker represents the buyer, under a written agreement
+> that says so. Or your broker shows property without representing the buyer, under section
+> 1101.562. There is no third position and no working it out later. The choice is made before the
+> showing, in writing.
 >
-> The notice states the rule in the consumer's own words. A license holder performing brokerage
-> activity for a prospective buyer of residential property must enter into a written agreement with the
-> buyer before showing any residential property to the buyer or if no residential property will be
-> shown, before presenting an offer on behalf of the buyer. Two moments, and only two. The form then
-> points you to section 1101.563 for what that agreement must contain, because the notice summarises
-> and the statute defines.
+> The notice states the rule in the consumer's own words. A license holder who performs brokerage
+> activity for a prospective buyer of residential property must enter into a written agreement
+> with the buyer before showing any residential property to the buyer or if no residential
+> property will be shown, before presenting an offer on behalf of the buyer. Two moments, and only
+> two. The form then points you to section 1101.563 for what that agreement must contain, because
+> the notice summarises and the statute defines.
 >
-> Now the other posture, and the form lists its conditions. The broker has not agreed with the buyer or
-> tenant, either orally or in writing, to represent them. Is not otherwise acting as their agent at the
-> time of showing. Does not provide opinions or advice regarding the property or real estate
-> transactions generally. And does not perform any other act of real estate brokerage for them. Four
-> conditions, joined by and. Satisfy three and you are not inside this section at all.
+> Now the other posture, and the form lists its conditions. The broker has not agreed with the
+> buyer or tenant, either orally or in writing, to represent the buyer or tenant. The broker is
+> not otherwise acting as the buyer or tenant's agent at the time of showing the property. The
+> broker does not provide the buyer or tenant opinions or advice regarding the property or real
+> estate transactions generally. And the broker does not perform any other act of real estate
+> brokerage for the buyer or tenant. Four conditions, joined by and. Satisfy three and you are not
+> inside this section at all.
 >
-> Read the paragraph underneath, because the non-representation posture is papered too. Before showing
-> a residential property to an unrepresented prospective buyer, a license holder must enter into a
-> written agreement that contains the information required by section 1101.563. The agreement may not
-> be exclusive and must be limited to no more than 14 days.
+> Read the paragraph underneath, because the non-representation posture is papered too. Before
+> showing a residential property to an unrepresented prospective buyer, a license holder must
+> enter into a written agreement that contains the information required by section 1101.563 of the
+> Texas Occupations Code. The agreement may not be exclusive and must be limited to no more than
+> 14 days.
 >
-> One more gate stands before any showing without representation, and which side you are on decides it.
-> Represent the owner, and you make the representation disclosure — orally or in writing — under
-> section 1101.558(b). Represent nobody, and you deliver the written notice under section
-> 1101.558(b-1). That is the IABS.
+> One more gate stands before any showing without representation, and which side you are on
+> decides it. Represent the owner, and you make the representation disclosure — orally or in
+> writing — under section 1101.558(b). Represent nobody, and you deliver the written notice under
+> section 1101.558(b-1). That is the IABS.
 >
-> Here is where this fails, and it is never at the paperwork. It fails in a hallway, when someone you
-> are not representing asks whether the price is fair. Section 1101.562(c) lets you confirm the size,
-> price and terms. Confirm — not evaluate. Have the sentence ready before you need it. I can't give you
-> an opinion on that, because I'm showing you this house without representing you. Then stop talking.
+> Here is where this fails, and it is never at the paperwork. It fails in a hallway, when someone
+> you are not representing asks whether the price is fair. Section 1101.562(c) lets you confirm
+> the size, price and terms. Confirm — not evaluate. Have the sentence ready before you need it. I
+> can't give you an opinion on that, because I'm showing you this house without representing you.
+> Then stop talking.
 
 ---
 
@@ -630,20 +686,54 @@ minutes are spent on reading and activity minutes under `config/texas/law-of-age
 This video's ≈ 3 minutes are additional and unbudgeted; adding it changes no figure in that file, and
 no figure was reduced to make room for it.
 
-**Config entry — DO NOT ADD UNTIL THE ASSET IS RENDERED AND VERIFIED.**
+**Registry entry — WRITTEN, AND COMMENTED *NOT ACTIVE*.** Recorded so the wiring is unambiguous
+when it happens, not so that it can happen now. Adding it before the MP4, the poster and the shipping
+`.vtt` all exist and have passed factual, visual and accessibility QC would put a dead player, a
+missing poster and a 404 caption track on a student-facing screen — worse than no video at all.
+
+**Where it goes, exactly.** `config/texas/law-of-agency-module-5-blocks.mjs` now exists, and screen
+`t05u3-s1` is in it, with the content range this production file predicted. But that file's own header
+reads *"GENERATED FILE … Do not edit by hand — regenerate"*: it is written by
+`scripts/generate-tx-law-of-agency-block-maps.mjs` from the frozen module's headings. So the entry
+below is **not** pasted into the generated file. It is attached the way California attaches its
+Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
+which the generator merges onto the screen it names and which refuses to generate if the screen id
+does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet. Adding it
+is a prerequisite of activation and is recorded in §10 of the plan as an open item. Nothing here
+edits either file.
 
 ```js
-// NOT ACTIVE. Add to the T05U3 instruction screen in the future
-// config/texas/law-of-agency-module-5-blocks.mjs ONLY after the three files below exist.
-videos: [{
-  src: "/media/tx-representation-or-showing-only-2026.mp4",
-  poster: "/media/tx-representation-or-showing-only-2026-poster.webp",
-  captions: "/media/tx-representation-or-showing-only-2026.vtt",
-  label: "Optional video: Representation or showing only — the 2026 decision",
-  duration: "2:53",          // replace with the MEASURED duration of the delivered render
-  optional: true,
-}]
+// NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
+// Add ONLY when all four of these exist and have passed factual, visual and accessibility QC:
+//   public/statecourse/media/tx-representation-or-showing-only-2026.mp4
+//   public/statecourse/media/tx-representation-or-showing-only-2026-poster.webp
+//   public/statecourse/media/tx-representation-or-showing-only-2026.vtt        (timings rebuilt from the render)
+//   the clean transcript of §9, published as text on screen t05u3-s1
+// Route: a hand-authored screenMedia spec consumed by
+// scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
+// config/texas/law-of-agency-module-5-blocks.mjs.
+//
+// screenMedia: {
+//   "t05u3-s1": {
+//     videos: [{
+//       src: "/media/tx-representation-or-showing-only-2026.mp4",
+//       poster: "/media/tx-representation-or-showing-only-2026-poster.webp",
+//       captions: "/media/tx-representation-or-showing-only-2026.vtt",
+//       label: "Optional video: Representation or showing only — the 2026 decision",
+//       duration: "3:03",   // PROVISIONAL — replace with the MEASURED length of the delivered render
+//     }],
+//   },
+// }
 ```
+
+`duration` above is the provisional estimate from §6, computed at 150 wpm from the final script. It
+is not a measurement and must be replaced by one before the entry is ever added. The block player
+(`public/statecourse/student/course/blocks/block-player.js`) reads `src`, `poster`, `captions`,
+`label` and `duration`, tags every screen video "Optional" of its own accord, and builds the
+transcript disclosure from the caption track — so no `optional: true` flag is needed or read, and a
+missing `.vtt` would silently produce a video with no transcript. That is the second reason this
+entry stays commented out.
 
 ---
 
@@ -654,6 +744,7 @@ videos: [{
 | Selection decision | **Complete** — selected, see the plan's §2 |
 | Learning objective | **Complete** |
 | Placement | **Fixed** — Module 05, T05U3, instruction screen `t05u3-s1` (screen id reserved; the LOA block map is not yet authored) |
+| Form-string verification | **Complete** — see §14 |
 | Sources | **Held and verified** |
 | Script and narration | **Complete** |
 | Highlight targets | **Complete in page-point space**, measured from the held PDF |
@@ -661,8 +752,8 @@ videos: [{
 | HeyGen prompt | **Complete** |
 | Band images and diagram panels | **Not built** |
 | MP4 render | **Not rendered** |
-| VTT captions | **Not built** — provisional timings only |
-| Poster | **Not built** |
+| VTT captions | **Cue text final; timings provisional.** Written to `video-production/captions/tx-representation-or-showing-only-2026.provisional.vtt`, deliberately not to `public/statecourse/media/`. Timings must be rebuilt from the render before the file ships |
+| Poster | **Not built** — it is a frame of a render that does not exist, and was not composed by hand |
 | Highlight pixel coordinates | **Not measurable** until the render exists |
 | Student-facing display | **Not displayed.** No config entry, no player, no poster, no badge, no "video available" marker on any student- or reviewer-facing surface |
 

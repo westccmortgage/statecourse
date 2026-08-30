@@ -28,7 +28,33 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v2";
+
+/**
+ * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
+ * recorded here with what was changed and why, so the artifact carries its own provenance rather
+ * than requiring someone to reconstruct it from git.
+ */
+const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30",
+    on: "2026-08-30",
+    module: "module-04.md (T04 Seller Agency)",
+    change: "22 TAC § 535.2(g) -> § 535.2(f), two occurrences, for the rule that listings and other agreements for real estate brokerage services must be solicited and accepted in a broker's name.",
+    reason: "The subsection letter was wrong. The held rule file prints no subsection letters, so they are derived by ordinal position; that derivation is anchored by the rule's own internal cross-references to 'subsection (e)' for delegation and 'subsection (h)' for records, and it puts the listings rule at (f) and the sponsored agent's advertising compliance at (g). Modules 01, 02 and 09 all cite (f); module 04 was the outlier. A student looking up § 535.2(g) would have found the advertising rule.",
+    foundBy: "the block-map author, reading all twelve modules to write the 57 unit objectives",
+    whyTheMechanicalAuditMissedIt: "The claim auditor resolves '22 TAC § 535.2' to its held file and verifies the section is present. It does not verify a subsection letter, because the held file carries none. This is a known coverage limit of the tool, not a lapse in its operation, and it is why a human-scale read of the corpus still finds things enumeration cannot.",
+    classOfDefect: "citation-only — the quoted text is verbatim and the proposition is correct; only the subsection identifier was wrong. Nothing downstream mis-taught a rule.",
+    auditsReRun: Object.freeze([
+      "node scripts/check-loa-module-structure.mjs — 57/57 units, no structural failures",
+      "node scripts/audit-loa-claims.mjs — 1,974 of 1,975 MECHANICAL_PASS, the one identified-not-taught unchanged",
+      "node scripts/report-loa-time-evidence.mjs — layer 1 1512.4, layer 2 20.0, layer 3 1532.4, every topic at or above its allocation",
+      "node scripts/texas-source-inventory.mjs — every registered source resolves",
+      "quotation reconcile — 126 unmatched, 0 undispositioned, 0 defects, 0 orphaned, 0 resurfaced",
+      "node --test tests/*.test.mjs — assessment-dependency and block-coverage suites",
+    ]),
+  }),
+]);
 
 const sha = (p) => crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");
 const rel = (p) => path.relative(root, p);
@@ -123,6 +149,7 @@ const freeze = {
   courseId: COURSE_ID,
   approvalForm: `${FORM.formNumber} rev ${FORM.revision}`,
   frozenOn: "2026-08-30",
+  breakHistory: BREAK_HISTORY,
   generatedBy: "scripts/freeze-loa-curriculum.mjs",
   afterFreeze: "No curriculum wording may change silently. An instructional repair found during assessment authoring must break the freeze explicitly, name the module and the reason, re-run the time, source, quotation, structural and assessment-dependency audits, and create a new freeze version with new hashes.",
   evidence: {

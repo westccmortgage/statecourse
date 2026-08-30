@@ -135,12 +135,21 @@ Each crop takes the full text column, `x0 = 20`, `x1 = 592`.
 | `iabs-band-d.png` | D | 172 | 255 | WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS, whole paragraph |
 | `iabs-band-e.png` | E | 252 | 370 | A LICENSE HOLDER CAN REPRESENT A PARTY… + AS AGENT FOR OWNER + AS AGENT FOR BUYER/TENANT |
 | `iabs-band-f.png` | F | 368 | 492 | AS AGENT FOR BOTH - INTERMEDIARY, heading through the last sub-bullet |
-| `iabs-band-g.png` | G | 490 | 594 | A LICENSE HOLDER CAN SHOW PROPERTY… + four bullets + the 14-day paragraph |
-| `iabs-band-h.png` | H | 588 | 790 | LICENSE HOLDER CONTACT INFORMATION, the four contact rows, initials/date line, footer |
+| `iabs-band-g.png` | G | 490 | 592 | A LICENSE HOLDER CAN SHOW PROPERTY… + four bullets + the 14-day paragraph |
+| `iabs-band-h.png` | H | 592 | 791 | LICENSE HOLDER CONTACT INFORMATION, the four contact rows, initials/date line, footer |
+
+**Every cut lands in interline whitespace — verified, not assumed.** Each y boundary above was
+checked against `pdfplumber.extract_text_lines()` on the held page: no printed line straddles any
+band edge, so no heading and no sentence is ever cut in half. Two boundaries were corrected during
+that check and the corrected values are the ones in the table — band G's foot moved 594 → **592**
+(594 fell inside the printed line `LICENSE HOLDER CONTACT INFORMATION: This notice is being
+provided…`, which spans y 593.2–603.1) and band H's head moved 588 → **592** (588 fell inside
+`limited to no more than 14 days.`, which spans y 579.0–589.0). Anyone rebuilding these crops must
+re-run that straddle check rather than trusting the numbers.
 
 **Composition to 1920 × 1080.** Scale each band to 1660 px wide (factor 0.7255 from the 2288 px crop)
 and centre it on a warm-ivory 1920 × 1080 ground. Resulting band heights: A 180, B 119, C 183,
-D 241, E 342, F 360, G 302, H 586 px — every band therefore sits **fully inside the frame** with
+D 241, E 342, F 360, G 296, H 578 px — every band therefore sits **fully inside the frame** with
 ivory margin above, below and on both sides. That margin is where highlight labels go; no label ever
 crosses document text. Effective resolution on the delivered frame is ~209 dpi, so the form's
 10-point body text renders at roughly 29 px line height and is comfortably legible at 1080p.
@@ -166,16 +175,16 @@ caption file is rebuilt from the measured render, not from this table.
 | # | Visual | Duration |
 |---|---|---|
 | 1 | Avatar, medium shot | ≈ 20 s |
-| 2 | `iabs-full.png`, static hold | ≈ 19 s |
-| 3 | `iabs-band-b.png`, static hold | ≈ 18 s |
-| 4 | `iabs-band-c.png`, static hold | ≈ 29 s |
+| 2 | `iabs-full.png`, static hold | ≈ 22 s |
+| 3 | `iabs-band-b.png`, static hold | ≈ 21 s |
+| 4 | `iabs-band-c.png`, static hold | ≈ 37 s |
 | 5 | `iabs-band-c.png`, same hold continues | ≈ 14 s |
-| 6 | `iabs-band-e.png`, static hold | ≈ 14 s |
-| 7 | `iabs-band-e.png`, same hold continues | ≈ 12 s |
+| 6 | `iabs-band-e.png`, static hold | ≈ 18 s |
+| 7 | `iabs-band-e.png`, same hold continues | ≈ 17 s |
 | 8 | `iabs-band-f.png` → `iabs-band-g.png`, one hard cut | ≈ 16 s |
-| 9 | `iabs-band-h.png`, static hold | ≈ 22 s |
+| 9 | `iabs-band-h.png`, static hold | ≈ 26 s |
 | 10 | Avatar, medium shot | ≈ 17 s |
-| | **Total** | **≈ 3 min 01 s** |
+| | **Total** | **≈ 3 min 30 s** |
 
 ---
 
@@ -188,10 +197,10 @@ No document on screen.
 `Information About Brokerage Services` / second line, smaller: `TREC form IABS 1-2`
 
 **Narration.**
-> Texas law requires every real estate license holder to give a written notice about brokerage
-> services to prospective buyers, tenants, sellers and landlords. The Commission writes that notice.
-> You do not. This is the current version — Information About Brokerage Services, form number
-> IABS 1-2. Let's read it block by block.
+> Texas law requires all real estate license holders to give the following information about
+> brokerage services to prospective buyers, tenants, sellers and landlords. The Commission writes
+> that notice. You do not. This is the current version — Information About Brokerage Services,
+> form number IABS 1-2. Let's read it block by block.
 
 ---
 
@@ -202,15 +211,17 @@ of the scene. Avatar off screen.
 
 **On-screen text.** None. The page carries itself.
 
-**Highlight (post-production).** One box only, on the revision stamp at the top-right, from +4 s to
-+9 s. Margin label in the right ivory margin: header `REVISION STAMP`, line `11-03-2025`.
-Target region in page points: x 526.7–573.2, y 17.8–27.7.
+**Highlight (post-production).** One box only, on the revision stamp at the top-right, held while
+the stamp is narrated — provisionally +2.0 s to +11.5 s, tracking caption cue 5. Margin label in the
+right ivory margin: header `REVISION STAMP`, line `11-03-2025`.
+Target region in page points: **x 526.7–573.2, y 17.8–27.7** — the exact bounding box of the printed
+line `11-03-2025`, measured with `pdfplumber.extract_text_lines()`.
 
 **Narration.**
-> Here is the whole notice. One page, and the revision stamp in the corner reads 11-03-2025 — that is
-> how you check you are holding the current version. Notice what it is not. Not a contract, not a
-> listing, not a representation agreement. Every block on this page describes a relationship. None of
-> them creates one.
+> Here is the whole notice. One page, and the revision stamp in the corner reads 11-03-2025 — that
+> is how you check you are holding the current version. Notice what it is not. Not a contract, not
+> a listing, not a representation agreement. Every block on this page describes a relationship.
+> None of them creates one.
 
 ---
 
@@ -218,16 +229,18 @@ Target region in page points: x 526.7–573.2, y 17.8–27.7.
 
 **Visual.** Hard cut to `iabs-band-b.png`. Static hold.
 
-**Highlight.** One box around the two bullets beneath the heading, held for the scene. The heading
-`TYPES OF REAL ESTATE LICENSE HOLDERS:` is **inside the frame at all times and is never cropped**;
-the box sits below it. Margin label: header `BLOCK 1`, lines `Types of license` / `holders`.
-Target region in page points: x 35.4–530.7, y 88.1–109.2.
+**Highlight.** One box around the two bullets beneath the heading, from +2.0 s (caption cue 9) to
+the end of the scene. The heading `TYPES OF REAL ESTATE LICENSE HOLDERS:` (page points
+x 26.4–200.1, y 78.1–88.0) is **inside the frame at all times and is never cropped**; the box sits
+below it. Margin label: header `BLOCK 1`, lines `Types of license` / `holders`.
+Target region in page points: **x 35.4–530.7, y 88.1–109.2** — the bounding box of the two printed
+bullet lines, exactly.
 
 **Narration.**
-> The first block sets the vocabulary. A broker is responsible for all brokerage activities, including
-> acts performed by sales agents sponsored by the broker. A sales agent must be sponsored by a broker
-> and works with clients on behalf of the broker. The broker holds the relationship; you act for the
-> broker.
+> The first block sets the vocabulary. A broker is responsible for all brokerage activities,
+> including acts performed by sales agents sponsored by the broker. A sales agent must be
+> sponsored by a broker and works with clients on behalf of the broker. The broker holds the
+> relationship; you act for the broker.
 
 ---
 
@@ -236,19 +249,27 @@ Target region in page points: x 35.4–530.7, y 88.1–109.2.
 **Visual.** Hard cut to `iabs-band-c.png`. Static hold, continues through Scene 5.
 
 **Highlight.** Two cues, strictly sequential — never both on screen:
-1. From scene start, a box around the parenthetical in the heading only —
-   `(A client is the person or party that the broker represents)`. Page points x ≈ 300–481.8,
-   y 117.0–127.0. Margin label: header `DEFINITION`, lines `"Client" — defined` / `on the form`.
-   Cue ends at ≈ +11 s.
-2. From ≈ +12 s, a box around the **first three bullets only**. Page points x 35.4–467.2,
-   y 127.1–158.9. Margin label: header `OWED TO THE CLIENT`, lines `Bullets 1–3`.
+1. From +5.0 s to +15.2 s (caption cues 13–14), a box around the parenthetical in the heading only —
+   `(A client is the person or party that the broker represents):`. Page points
+   **x 237.7–481.8, y 117.0–127.0** — measured word-exactly, from the left edge of the printed `(A`
+   to the right edge of `represents):`. The box therefore starts after `LAW` and never encloses the
+   heading's opening words. Margin label: header `DEFINITION`, lines `"Client" — defined` /
+   `on the form`.
+2. From +19.6 s (caption cue 16) to the end of the scene, that box clears and a box lands around the
+   **first three bullets only**. Page points **x 35.4–467.2, y 127.1–158.9** — the bounding box of
+   the three printed bullet lines, exactly. Margin label: header `OWED TO THE CLIENT`,
+   lines `Bullets 1–3`.
+
+The heading line `A BROKER'S MINIMUM DUTIES REQUIRED BY LAW …` (y 117.0–127.0) is inside the frame,
+uncropped, for the whole scene.
 
 **Narration.**
 > Now the duties block — and read the heading including the words in parentheses. A client is the
-> person or party that the broker represents. That parenthesis does real work, because the Act itself
-> never defines the word. Three of the four bullets beneath it run to that client: interests above all
-> others, including the broker's own; material information about the property or transaction;
-> questions answered and any offer or counter-offer presented.
+> person or party that the broker represents. That parenthesis does real work, because the Act
+> itself never defines the word. Three of the four bullets beneath it run to that client. Put the
+> interests of the client above all others, including the broker's own interests; Inform the
+> client of any material information about the property or transaction received by the broker;
+> Answer the client's questions and present any offer to or counter-offer from the client.
 
 ---
 
@@ -257,8 +278,9 @@ Target region in page points: x 35.4–530.7, y 88.1–109.2.
 **Visual.** `iabs-band-c.png` continues. No cut. No camera movement.
 
 **Highlight.** The Scene 4 box clears at the scene boundary. A single new box around the fourth
-bullet only. Page points x 35.4–303.8, y 159.2–169.6. Margin label: header `OWED TO ALL PARTIES`,
-lines `Bullet 4`.
+bullet only, from +1.5 s (caption cue 20) to +11.2 s. Page points **x 35.4–303.8, y 159.2–169.6** —
+the bounding box of the printed fourth bullet line, exactly. Margin label:
+header `OWED TO ALL PARTIES`, lines `Bullet 4`.
 
 **On-screen text.** None. The contrast is carried by the two successive highlights, not by a caption
 laid over the page.
@@ -274,15 +296,18 @@ laid over the page.
 
 **Visual.** Hard cut to `iabs-band-e.png`. Static hold, continues through Scene 7.
 
-**Highlight.** One box around the `AS AGENT FOR OWNER (SELLER/LANDLORD):` paragraph. Page points
-x 26.4–582.4, y 274.9–316.0. The block heading
-`A LICENSE HOLDER CAN REPRESENT A PARTY IN A REAL ESTATE TRANSACTION:` remains visible and uncropped
-above it throughout. Margin label: header `CAPACITY 1`, lines `Agent for owner`.
+**Highlight.** One box around the `AS AGENT FOR OWNER (SELLER/LANDLORD):` paragraph, from +6.8 s
+(caption cue 24) to the end of the scene. Page points **x 26.4–582.5, y 274.9–316.0** — the bounding
+box of the paragraph's four printed lines, exactly; the heading label sits on the first of them, so
+it is inside the box rather than cut by it. The block heading
+`A LICENSE HOLDER CAN REPRESENT A PARTY IN A REAL ESTATE TRANSACTION:` (x 26.4–352.9,
+y 257.2–267.2) remains visible and uncropped above it throughout. Margin label: header `CAPACITY 1`,
+lines `Agent for owner`.
 
 **Narration.**
-> The next block is headed, a license holder can represent a party in a real estate transaction. As
-> agent for owner: the broker becomes the owner's agent through an agreement with the owner, usually
-> a written listing to sell or property management agreement.
+> The next block is headed, a license holder can represent a party in a real estate transaction.
+> As agent for owner: the broker becomes the property owner's agent through an agreement with the
+> owner, usually in a written listing to sell or property management agreement.
 
 ---
 
@@ -290,16 +315,27 @@ above it throughout. Margin label: header `CAPACITY 1`, lines `Agent for owner`.
 
 **Visual.** `iabs-band-e.png` continues. No cut.
 
-**Highlight.** Scene 6's box clears. One new box around the `AS AGENT FOR BUYER/TENANT:` paragraph.
-Page points x 26.4–582.5, y 323.7–364.8. Margin label: header `CAPACITY 2`, lines `Agent for buyer` /
-`or tenant`. At ≈ +8 s a second, thin underline cue appears on the closing clause of each paragraph
-("fees are not set by law and are fully negotiable") — this is the *same* concept appearing twice, not
-a second new concept, so the two underlines may be shown together.
+**Highlight.** Scene 6's box clears. One new box around the `AS AGENT FOR BUYER/TENANT:` paragraph,
+from scene start to +10.4 s. Page points **x 26.4–582.5, y 323.7–364.8** — the bounding box of the
+paragraph's four printed lines, exactly.
+Margin label: header `CAPACITY 2`, lines `Agent for buyer` / `or tenant`.
+
+From +10.4 s (caption cue 26) that box clears and two thin underline cues appear together, one on the
+closing clause of each capacity paragraph:
+
+| Underline | Printed clause | Page points |
+|---|---|---|
+| owner paragraph | `An owner's agent fees are not set by law and are fully negotiable.` | x 293.3–565.4, y 306.1–316.0 |
+| buyer paragraph | `A buyer/tenant's agent fees are not set by law and are fully negotiable.` | x 84.9–380.7, y 354.8–364.8 |
+
+Both are word-exact measurements. This is the *same* concept appearing twice on the page, not a
+second new concept, so the two underlines are shown together — one shared margin label,
+header `SAME CLOSING CLAUSE`, lines `Fees: not set by law,` / `fully negotiable`.
 
 **Narration.**
-> As agent for buyer or tenant: by agreeing to represent the buyer, usually through a written
-> representation agreement. Both paragraphs close the same way — those fees are not set by law and are
-> fully negotiable.
+> As agent for buyer or tenant: the broker becomes the buyer or tenant's agent by agreeing to
+> represent the buyer, usually through a written representation agreement. Both paragraphs close
+> the same way — fees are not set by law and are fully negotiable.
 
 ---
 
@@ -308,17 +344,20 @@ a second new concept, so the two underlines may be shown together.
 **Visual.** Hard cut to `iabs-band-f.png`, held ≈ 8 s; one hard cut to `iabs-band-g.png`, held ≈ 8 s.
 Two static holds, one cut. No zoom, no pan.
 
-**Highlight.** On band F, a single box around the heading line
-`AS AGENT FOR BOTH - INTERMEDIARY:` only — this scene locates the block, it does not teach it.
+**Highlight.** On band F, a single box on the heading label `AS AGENT FOR BOTH - INTERMEDIARY:`
+only — page points **x 26.4–199.3, y 372.4–382.4**, the label's own words at the head of the
+paragraph's first printed line. This scene locates the block; it does not teach it.
 Margin label: header `TAUGHT IN MODULE 06`, lines `Intermediary`.
-On band G, a single box around the heading line
-`A LICENSE HOLDER CAN SHOW PROPERTY TO A BUYER/TENANT WITHOUT REPRESENTING THE BUYER/TENANT IF:`
+
+On band G, a single box on the heading line
+`A LICENSE HOLDER CAN SHOW PROPERTY TO A BUYER/TENANT WITHOUT REPRESENTING THE BUYER/TENANT IF:` —
+page points **x 26.4–498.2, y 494.7–504.7**, the printed heading line exactly.
 Margin label: header `TAUGHT IN MODULE 05`, lines `Showing without` / `representation`.
 
 **Narration.**
 > Two more blocks finish the page. As agent for both — intermediary. And below it, when a license
-> holder can show property without representing the buyer or tenant. Later modules take both apart.
-> Today, know where they sit on the page.
+> holder can show property without representing the buyer or tenant. Later modules take both
+> apart. Today, know where they sit on the page.
 
 ---
 
@@ -327,18 +366,31 @@ Margin label: header `TAUGHT IN MODULE 05`, lines `Showing without` / `represent
 **Visual.** Hard cut to `iabs-band-h.png`. Static hold.
 
 **Highlight.** Three sequential cues, one at a time:
-1. Box on the sentence `This notice is being provided for information purposes. It does not create an
-   obligation for you to use the broker's services.` Page points x 27.1–576.0, y 593.2–613.4.
+
+1. From +3.2 s to +11.6 s (caption cue 32), the sentence `This notice is being provided for
+   information purposes. It does not create an obligation for you to use the broker's services.`
+   The sentence begins part-way along the first printed line, after the `LICENSE HOLDER CONTACT
+   INFORMATION:` label, and ends part-way along the second, before `Please acknowledge receipt…`.
+   It is therefore drawn as **one cue in two rectangles** (two `scenes.json` entries sharing a start
+   and end, the first carrying the label):
+   - **x 209.7–576.0, y 593.2–603.1** — from the printed `This` to the line's right edge
+   - **x 27.1–157.9, y 603.5–613.4** — from `you` to the full stop after `services.`
+
+   Both are word-exact. The box neither encloses the block label nor the receipt-acknowledgement
+   sentence, so only the narrated proposition is marked.
    Margin label: header `WHAT IT IS NOT`, lines `No obligation` / `created`.
-2. From ≈ +9 s, box on the four contact rows as a group. Page points x 30.5–548.8, y 629.5–743.2.
+2. From +11.6 s to +18.8 s (caption cue 33), box on the four contact rows as a group. Page points
+   **x 30.5–548.8, y 629.5–743.2** — the bounding box of the seven printed row lines, exactly.
    Margin label: header `FOUR ROWS`, lines `Broker, DB,` / `supervisor, agent`.
-3. From ≈ +17 s, box on the `Buyer/Tenant/Seller/Landlord Initials    Date` line. Page points
-   x 166.1–421.9, y 762.5–772.5. Margin label: header `ACKNOWLEDGEMENT`, lines `Receipt only`.
+3. From +18.8 s to the end of the scene (caption cues 34–35), box on the
+   `Buyer/Tenant/Seller/Landlord Initials    Date` line. Page points
+   **x 166.1–421.9, y 762.5–772.5** — the printed line exactly.
+   Margin label: header `ACKNOWLEDGEMENT`, lines `Receipt only`.
 
 **Narration.**
-> At the foot is the block students skip. This notice is being provided for information purposes. It
-> does not create an obligation for you to use the broker's services. Then four contact rows, each
-> with a licence number — which is why a completed notice carries several. And a line for the
+> At the foot is the block students skip. This notice is being provided for information purposes.
+> It does not create an obligation for you to use the broker's services. Then four contact rows,
+> each with a licence number — which is why a completed notice carries several. And a line for the
 > consumer's initials and a date. Initials acknowledge receipt. They are not consent to anything.
 
 ---
@@ -351,9 +403,9 @@ recap card. The video ends on the final sentence.
 **On-screen text.** None.
 
 **Narration.**
-> One page, three jobs. It names the license types, states the broker's minimum duties, and describes
-> every relationship a Texas broker may lawfully occupy. What it never does is create one. A
-> relationship comes from an agreement. This comes from a statute.
+> One page, three jobs. It names the license types, states the broker's minimum duties, and
+> describes every relationship a Texas broker may lawfully occupy. What it never does is create
+> one. A relationship comes from an agreement. This comes from a statute.
 
 ---
 
@@ -402,70 +454,71 @@ SCENE STRUCTURE
 Scene 1 — Avatar introduction. Medium shot, clean StateCourse branded background.
 On-screen title: "Information About Brokerage Services" with a smaller second line "TREC form
 IABS 1-2".
-Script: "Texas law requires every real estate license holder to give a written notice about brokerage
-services to prospective buyers, tenants, sellers and landlords. The Commission writes that notice.
-You do not. This is the current version — Information About Brokerage Services, form number IABS 1-2.
-Let's read it block by block."
+Script: "Texas law requires all real estate license holders to give the following information about
+brokerage services to prospective buyers, tenants, sellers and landlords. The Commission writes
+that notice. You do not. This is the current version — Information About Brokerage Services, form
+number IABS 1-2. Let's read it block by block."
 Duration: 19-21 seconds.
 
 Scene 2 — Image "iabs-full". Static hold begins. Avatar off screen.
-Script: "Here is the whole notice. One page, and the revision stamp in the corner reads 11-03-2025 —
-that is how you check you are holding the current version. Notice what it is not. Not a contract, not
-a listing, not a representation agreement. Every block on this page describes a relationship. None of
-them creates one."
-Duration: 18-20 seconds.
+Script: "Here is the whole notice. One page, and the revision stamp in the corner reads 11-03-2025 — that
+is how you check you are holding the current version. Notice what it is not. Not a contract, not a
+listing, not a representation agreement. Every block on this page describes a relationship. None
+of them creates one."
+Duration: 21-23 seconds.
 
 Scene 3 — Hard cut to image "iabs-band-b". Static hold.
 Script: "The first block sets the vocabulary. A broker is responsible for all brokerage activities,
-including acts performed by sales agents sponsored by the broker. A sales agent must be sponsored by
-a broker and works with clients on behalf of the broker. The broker holds the relationship; you act
-for the broker."
-Duration: 17-19 seconds.
+including acts performed by sales agents sponsored by the broker. A sales agent must be sponsored
+by a broker and works with clients on behalf of the broker. The broker holds the relationship; you
+act for the broker."
+Duration: 20-22 seconds.
 
 Scene 4 — Hard cut to image "iabs-band-c". Static hold.
-Script: "Now the duties block — and read the heading including the words in parentheses. A client is
-the person or party that the broker represents. That parenthesis does real work, because the Act
-itself never defines the word. Three of the four bullets beneath it run to that client: interests
-above all others, including the broker's own; material information about the property or transaction;
-questions answered and any offer or counter-offer presented."
-Duration: 28-30 seconds.
+Script: "Now the duties block — and read the heading including the words in parentheses. A client is the
+person or party that the broker represents. That parenthesis does real work, because the Act
+itself never defines the word. Three of the four bullets beneath it run to that client. Put the
+interests of the client above all others, including the broker's own interests; Inform the client
+of any material information about the property or transaction received by the broker; Answer the
+client's questions and present any offer to or counter-offer from the client."
+Duration: 36-38 seconds.
 
 Scene 5 — Image "iabs-band-c" continues. No cut, no movement.
-Script: "The fourth bullet does not. Treat all parties to a real estate transaction honestly and
-fairly. Three duties to the client. One owed to everybody in the transaction. Representation decides
+Script: "The fourth bullet does not. Treat all parties to a real estate transaction honestly and fairly.
+Three duties to the client. One owed to everybody in the transaction. Representation decides
 advocacy. It has never decided honesty."
 Duration: 13-15 seconds.
 
 Scene 6 — Hard cut to image "iabs-band-e". Static hold.
-Script: "The next block is headed, a license holder can represent a party in a real estate
-transaction. As agent for owner: the broker becomes the owner's agent through an agreement with the
-owner, usually a written listing to sell or property management agreement."
-Duration: 13-15 seconds.
+Script: "The next block is headed, a license holder can represent a party in a real estate transaction. As
+agent for owner: the broker becomes the property owner's agent through an agreement with the
+owner, usually in a written listing to sell or property management agreement."
+Duration: 17-19 seconds.
 
 Scene 7 — Image "iabs-band-e" continues. No cut, no movement.
-Script: "As agent for buyer or tenant: by agreeing to represent the buyer, usually through a written
-representation agreement. Both paragraphs close the same way — those fees are not set by law and are
-fully negotiable."
-Duration: 11-13 seconds.
+Script: "As agent for buyer or tenant: the broker becomes the buyer or tenant's agent by agreeing to
+represent the buyer, usually through a written representation agreement. Both paragraphs close the
+same way — fees are not set by law and are fully negotiable."
+Duration: 16-18 seconds.
 
 Scene 8 — Hard cut to image "iabs-band-f", hold about 8 seconds, then one hard cut to image
 "iabs-band-g", hold about 8 seconds.
-Script: "Two more blocks finish the page. As agent for both — intermediary. And below it, when a
-license holder can show property without representing the buyer or tenant. Later modules take both
-apart. Today, know where they sit on the page."
+Script: "Two more blocks finish the page. As agent for both — intermediary. And below it, when a license
+holder can show property without representing the buyer or tenant. Later modules take both apart.
+Today, know where they sit on the page."
 Duration: 15-17 seconds total across the two holds.
 
 Scene 9 — Hard cut to image "iabs-band-h". Static hold.
-Script: "At the foot is the block students skip. This notice is being provided for information
-purposes. It does not create an obligation for you to use the broker's services. Then four contact
-rows, each with a licence number — which is why a completed notice carries several. And a line for
-the consumer's initials and a date. Initials acknowledge receipt. They are not consent to anything."
-Duration: 21-23 seconds.
+Script: "At the foot is the block students skip. This notice is being provided for information purposes. It
+does not create an obligation for you to use the broker's services. Then four contact rows, each
+with a licence number — which is why a completed notice carries several. And a line for the
+consumer's initials and a date. Initials acknowledge receipt. They are not consent to anything."
+Duration: 25-27 seconds.
 
 Scene 10 — Return to avatar, medium shot.
 Script: "One page, three jobs. It names the license types, states the broker's minimum duties, and
-describes every relationship a Texas broker may lawfully occupy. What it never does is create one. A
-relationship comes from an agreement. This comes from a statute."
+describes every relationship a Texas broker may lawfully occupy. What it never does is create one.
+A relationship comes from an agreement. This comes from a statute."
 Duration: 16-18 seconds.
 
 END OF VIDEO.
@@ -505,143 +558,167 @@ re-render before delivering.
 
 ## 8. Caption-ready transcript
 
-WebVTT, cue-per-clause, matching the sibling files in `public/statecourse/media/*.vtt`.
-**Timings below are PROVISIONAL**, computed at 150 wpm. They are placeholders. The shipped
-`tx-iabs-1-2-document-overview.vtt` must be rebuilt from the delivered render's own audio, by
-silence-gap detection cross-validated against word-count pacing, exactly as the sibling captions were.
+**On disk:** `texas/tx-law-of-agency-30-v1/video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt` — a
+real, well-formed WebVTT file, written and kept **outside** `public/statecourse/media/` on purpose,
+so that nothing can serve it by accident before a render exists. Its first block is a `NOTE` saying
+so in the file itself.
+
+**Cue text is final.** Every cue matches the recorded script word for word, and every fragment that
+reads the held form or the held statute has been checked against the source character by character
+(§14).
+
+**Cue TIMINGS are PROVISIONAL.** They are computed at 150 words per minute — the delivery rate of the
+existing series — with a 1.4-second readability floor on very short cues, and they are placeholders.
+No render exists, so no timing here was measured from audio. Before the file ships to
+`/media/tx-iabs-1-2-document-overview.vtt` the timings must be rebuilt from the delivered render's own
+audio, by silence-gap detection cross-validated against word-count pacing, exactly as the sibling
+captions in `public/statecourse/media/` were built. The cue text does not change when that happens;
+only the timestamps do.
 
 ```vtt
 WEBVTT
 
-00:00:00.300 --> 00:00:07.200
-Texas law requires every real estate license holder to give a written
-notice about brokerage services to prospective buyers, tenants, sellers and landlords.
+NOTE
+PROVISIONAL TIMINGS — see the header of the on-disk file. Cue text is final;
+cue timings are placeholders computed at 150 wpm and must be rebuilt from the render.
 
-00:00:07.200 --> 00:00:10.600
+00:00:00.300 --> 00:00:09.500
+Texas law requires all real estate license holders to give the following
+information about brokerage services to prospective buyers, tenants, sellers
+and landlords.
+
+00:00:09.500 --> 00:00:12.700
 The Commission writes that notice. You do not.
 
-00:00:10.600 --> 00:00:16.400
-This is the current version — Information About Brokerage Services,
-form number IABS 1-2.
+00:00:12.700 --> 00:00:18.300
+This is the current version — Information About Brokerage Services, form
+number IABS 1-2.
 
-00:00:16.400 --> 00:00:19.800
+00:00:18.300 --> 00:00:20.700
 Let's read it block by block.
 
-00:00:19.800 --> 00:00:22.400
+00:00:20.700 --> 00:00:22.700
 Here is the whole notice.
 
-00:00:22.400 --> 00:00:30.100
-One page, and the revision stamp in the corner reads 11-03-2025 —
-that is how you check you are holding the current version.
+00:00:22.700 --> 00:00:31.900
+One page, and the revision stamp in the corner reads 11-03-2025 — that is how
+you check you are holding the current version.
 
-00:00:30.100 --> 00:00:36.900
-Notice what it is not. Not a contract, not a listing,
-not a representation agreement.
+00:00:31.900 --> 00:00:37.900
+Notice what it is not. Not a contract, not a listing, not a representation
+agreement.
 
-00:00:36.900 --> 00:00:42.600
+00:00:37.900 --> 00:00:43.100
 Every block on this page describes a relationship. None of them creates one.
 
-00:00:42.600 --> 00:00:45.400
+00:00:43.100 --> 00:00:45.500
 The first block sets the vocabulary.
 
-00:00:45.400 --> 00:00:52.100
-A broker is responsible for all brokerage activities,
-including acts performed by sales agents sponsored by the broker.
+00:00:45.500 --> 00:00:52.700
+A broker is responsible for all brokerage activities, including acts performed
+by sales agents sponsored by the broker.
 
-00:00:52.100 --> 00:00:57.600
-A sales agent must be sponsored by a broker
-and works with clients on behalf of the broker.
+00:00:52.700 --> 00:00:59.900
+A sales agent must be sponsored by a broker and works with clients on behalf
+of the broker.
 
-00:00:57.600 --> 00:01:01.400
+00:00:59.900 --> 00:01:03.900
 The broker holds the relationship; you act for the broker.
 
-00:01:01.400 --> 00:01:06.900
-Now the duties block — and read the heading including the words in parentheses.
+00:01:03.900 --> 00:01:09.500
+Now the duties block — and read the heading including the words in
+parentheses.
 
-00:01:06.900 --> 00:01:11.400
+00:01:09.500 --> 00:01:13.900
 A client is the person or party that the broker represents.
 
-00:01:11.400 --> 00:01:16.900
-That parenthesis does real work, because the Act itself never defines the word.
+00:01:13.900 --> 00:01:19.100
+That parenthesis does real work, because the Act itself never defines the
+word.
 
-00:01:16.900 --> 00:01:21.200
-Three of the four bullets beneath it run to that client:
+00:01:19.100 --> 00:01:23.500
+Three of the four bullets beneath it run to that client.
 
-00:01:21.200 --> 00:01:25.400
-interests above all others, including the broker's own;
+00:01:23.500 --> 00:01:29.100
+Put the interests of the client above all others, including the broker's own
+interests;
 
-00:01:25.400 --> 00:01:29.100
-material information about the property or transaction;
+00:01:29.100 --> 00:01:35.500
+Inform the client of any material information about the property or
+transaction received by the broker;
 
-00:01:29.100 --> 00:01:34.100
-questions answered and any offer or counter-offer presented.
+00:01:35.500 --> 00:01:41.100
+Answer the client's questions and present any offer to or counter-offer from
+the client.
 
-00:01:34.100 --> 00:01:36.400
+00:01:41.100 --> 00:01:43.100
 The fourth bullet does not.
 
-00:01:36.400 --> 00:01:41.100
+00:01:43.100 --> 00:01:47.500
 Treat all parties to a real estate transaction honestly and fairly.
 
-00:01:41.100 --> 00:01:46.100
+00:01:47.500 --> 00:01:52.300
 Three duties to the client. One owed to everybody in the transaction.
 
-00:01:46.100 --> 00:01:50.900
+00:01:52.300 --> 00:01:55.500
 Representation decides advocacy. It has never decided honesty.
 
-00:01:50.900 --> 00:01:56.400
-The next block is headed, a license holder can represent a party
-in a real estate transaction.
+00:01:55.500 --> 00:02:02.300
+The next block is headed, a license holder can represent a party in a real
+estate transaction.
 
-00:01:56.400 --> 00:02:04.700
-As agent for owner: the broker becomes the owner's agent through an agreement
-with the owner, usually a written listing to sell or property management agreement.
+00:02:02.300 --> 00:02:13.500
+As agent for owner: the broker becomes the property owner's agent through an
+agreement with the owner, usually in a written listing to sell or property
+management agreement.
 
-00:02:04.700 --> 00:02:11.400
-As agent for buyer or tenant: by agreeing to represent the buyer,
-usually through a written representation agreement.
+00:02:13.500 --> 00:02:23.900
+As agent for buyer or tenant: the broker becomes the buyer or tenant's agent
+by agreeing to represent the buyer, usually through a written representation
+agreement.
 
-00:02:11.400 --> 00:02:17.400
-Both paragraphs close the same way — those fees are not set by law
-and are fully negotiable.
+00:02:23.900 --> 00:02:30.700
+Both paragraphs close the same way — fees are not set by law and are fully
+negotiable.
 
-00:02:17.400 --> 00:02:20.400
+00:02:30.700 --> 00:02:33.100
 Two more blocks finish the page.
 
-00:02:20.400 --> 00:02:23.400
+00:02:33.100 --> 00:02:35.500
 As agent for both — intermediary.
 
-00:02:23.400 --> 00:02:29.100
-And below it, when a license holder can show property
-without representing the buyer or tenant.
+00:02:35.500 --> 00:02:41.900
+And below it, when a license holder can show property without representing the
+buyer or tenant.
 
-00:02:29.100 --> 00:02:34.400
+00:02:41.900 --> 00:02:47.100
 Later modules take both apart. Today, know where they sit on the page.
 
-00:02:34.400 --> 00:02:37.600
+00:02:47.100 --> 00:02:50.300
 At the foot is the block students skip.
 
-00:02:37.600 --> 00:02:45.400
-This notice is being provided for information purposes. It does not create
-an obligation for you to use the broker's services.
+00:02:50.300 --> 00:02:58.700
+This notice is being provided for information purposes. It does not create an
+obligation for you to use the broker's services.
 
-00:02:45.400 --> 00:02:52.600
-Then four contact rows, each with a licence number —
-which is why a completed notice carries several.
+00:02:58.700 --> 00:03:05.900
+Then four contact rows, each with a licence number — which is why a completed
+notice carries several.
 
-00:02:52.600 --> 00:02:56.900
+00:03:05.900 --> 00:03:09.900
 And a line for the consumer's initials and a date.
 
-00:02:56.900 --> 00:03:00.400
+00:03:09.900 --> 00:03:13.500
 Initials acknowledge receipt. They are not consent to anything.
 
-00:03:00.400 --> 00:03:08.600
+00:03:13.500 --> 00:03:23.100
 One page, three jobs. It names the license types, states the broker's minimum
 duties, and describes every relationship a Texas broker may lawfully occupy.
 
-00:03:08.600 --> 00:03:12.400
+00:03:23.100 --> 00:03:25.900
 What it never does is create one.
 
-00:03:12.400 --> 00:03:17.400
+00:03:25.900 --> 00:03:30.300
 A relationship comes from an agreement. This comes from a statute.
 ```
 
@@ -652,51 +729,52 @@ A relationship comes from an agreement. This comes from a statute.
 Published on the same screen as the video, as text, so a student who does not or cannot watch has the
 same instruction in reading form.
 
-> Texas law requires every real estate license holder to give a written notice about brokerage
-> services to prospective buyers, tenants, sellers and landlords. The Commission writes that notice.
-> You do not. This is the current version — Information About Brokerage Services, form number IABS
-> 1-2. Let's read it block by block.
+> Texas law requires all real estate license holders to give the following information about
+> brokerage services to prospective buyers, tenants, sellers and landlords. The Commission writes
+> that notice. You do not. This is the current version — Information About Brokerage Services,
+> form number IABS 1-2. Let's read it block by block.
 >
-> Here is the whole notice. One page, and the revision stamp in the corner reads 11-03-2025 — that is
-> how you check you are holding the current version. Notice what it is not. Not a contract, not a
-> listing, not a representation agreement. Every block on this page describes a relationship. None of
-> them creates one.
+> Here is the whole notice. One page, and the revision stamp in the corner reads 11-03-2025 — that
+> is how you check you are holding the current version. Notice what it is not. Not a contract, not
+> a listing, not a representation agreement. Every block on this page describes a relationship.
+> None of them creates one.
 >
-> The first block sets the vocabulary. A broker is responsible for all brokerage activities, including
-> acts performed by sales agents sponsored by the broker. A sales agent must be sponsored by a broker
-> and works with clients on behalf of the broker. The broker holds the relationship; you act for the
-> broker.
+> The first block sets the vocabulary. A broker is responsible for all brokerage activities,
+> including acts performed by sales agents sponsored by the broker. A sales agent must be
+> sponsored by a broker and works with clients on behalf of the broker. The broker holds the
+> relationship; you act for the broker.
 >
 > Now the duties block — and read the heading including the words in parentheses. A client is the
-> person or party that the broker represents. That parenthesis does real work, because the Act itself
-> never defines the word. Three of the four bullets beneath it run to that client: interests above all
-> others, including the broker's own; material information about the property or transaction;
-> questions answered and any offer or counter-offer presented.
+> person or party that the broker represents. That parenthesis does real work, because the Act
+> itself never defines the word. Three of the four bullets beneath it run to that client. Put the
+> interests of the client above all others, including the broker's own interests; Inform the
+> client of any material information about the property or transaction received by the broker;
+> Answer the client's questions and present any offer to or counter-offer from the client.
 >
 > The fourth bullet does not. Treat all parties to a real estate transaction honestly and fairly.
 > Three duties to the client. One owed to everybody in the transaction. Representation decides
 > advocacy. It has never decided honesty.
 >
-> The next block is headed, a license holder can represent a party in a real estate transaction. As
-> agent for owner: the broker becomes the owner's agent through an agreement with the owner, usually a
-> written listing to sell or property management agreement.
+> The next block is headed, a license holder can represent a party in a real estate transaction.
+> As agent for owner: the broker becomes the property owner's agent through an agreement with the
+> owner, usually in a written listing to sell or property management agreement.
 >
-> As agent for buyer or tenant: by agreeing to represent the buyer, usually through a written
-> representation agreement. Both paragraphs close the same way — those fees are not set by law and are
-> fully negotiable.
+> As agent for buyer or tenant: the broker becomes the buyer or tenant's agent by agreeing to
+> represent the buyer, usually through a written representation agreement. Both paragraphs close
+> the same way — fees are not set by law and are fully negotiable.
 >
 > Two more blocks finish the page. As agent for both — intermediary. And below it, when a license
-> holder can show property without representing the buyer or tenant. Later modules take both apart.
-> Today, know where they sit on the page.
+> holder can show property without representing the buyer or tenant. Later modules take both
+> apart. Today, know where they sit on the page.
 >
-> At the foot is the block students skip. This notice is being provided for information purposes. It
-> does not create an obligation for you to use the broker's services. Then four contact rows, each
-> with a licence number — which is why a completed notice carries several. And a line for the
+> At the foot is the block students skip. This notice is being provided for information purposes.
+> It does not create an obligation for you to use the broker's services. Then four contact rows,
+> each with a licence number — which is why a completed notice carries several. And a line for the
 > consumer's initials and a date. Initials acknowledge receipt. They are not consent to anything.
 >
-> One page, three jobs. It names the license types, states the broker's minimum duties, and describes
-> every relationship a Texas broker may lawfully occupy. What it never does is create one. A
-> relationship comes from an agreement. This comes from a statute.
+> One page, three jobs. It names the license types, states the broker's minimum duties, and
+> describes every relationship a Texas broker may lawfully occupy. What it never does is create
+> one. A relationship comes from an agreement. This comes from a statute.
 
 ---
 
@@ -729,22 +807,54 @@ minutes are spent entirely on reading and activity minutes under
 `config/texas/law-of-agency-time-budget.mjs`. This video's ≈ 3 minutes are additional and unbudgeted;
 adding it changes no figure in that file, and no figure in that file was reduced to make room for it.
 
-**Config entry — DO NOT ADD UNTIL THE ASSET IS RENDERED AND VERIFIED.** Recorded here so that the
-wiring is unambiguous when it happens, not so that it can happen now. Adding it before the files
-exist would produce a dead player, a broken poster and a 404 caption track on a student-facing screen.
+**Registry entry — WRITTEN, AND COMMENTED *NOT ACTIVE*.** Recorded so the wiring is unambiguous
+when it happens, not so that it can happen now. Adding it before the MP4, the poster and the shipping
+`.vtt` all exist and have passed factual, visual and accessibility QC would put a dead player, a
+missing poster and a 404 caption track on a student-facing screen — worse than no video at all.
+
+**Where it goes, exactly.** `config/texas/law-of-agency-module-2-blocks.mjs` now exists, and screen
+`t02u5-s1` is in it, with the content range this production file predicted. But that file's own header
+reads *"GENERATED FILE … Do not edit by hand — regenerate"*: it is written by
+`scripts/generate-tx-law-of-agency-block-maps.mjs` from the frozen module's headings. So the entry
+below is **not** pasted into the generated file. It is attached the way California attaches its
+Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
+which the generator merges onto the screen it names and which refuses to generate if the screen id
+does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet. Adding it
+is a prerequisite of activation and is recorded in §10 of the plan as an open item. Nothing here
+edits either file.
 
 ```js
-// NOT ACTIVE. Add to the T02U5 instruction screen in the future
-// config/texas/law-of-agency-module-2-blocks.mjs ONLY after the three files below exist.
-videos: [{
-  src: "/media/tx-iabs-1-2-document-overview.mp4",
-  poster: "/media/tx-iabs-1-2-document-overview-poster.webp",
-  captions: "/media/tx-iabs-1-2-document-overview.vtt",
-  label: "Optional video: Information About Brokerage Services — the IABS 1-2 form",
-  duration: "3:01",          // replace with the MEASURED duration of the delivered render
-  optional: true,
-}]
+// NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
+// Add ONLY when all four of these exist and have passed factual, visual and accessibility QC:
+//   public/statecourse/media/tx-iabs-1-2-document-overview.mp4
+//   public/statecourse/media/tx-iabs-1-2-document-overview-poster.webp
+//   public/statecourse/media/tx-iabs-1-2-document-overview.vtt        (timings rebuilt from the render)
+//   the clean transcript of §9, published as text on screen t02u5-s1
+// Route: a hand-authored screenMedia spec consumed by
+// scripts/generate-tx-law-of-agency-block-maps.mjs — never a hand edit to the generated
+// config/texas/law-of-agency-module-2-blocks.mjs.
+//
+// screenMedia: {
+//   "t02u5-s1": {
+//     videos: [{
+//       src: "/media/tx-iabs-1-2-document-overview.mp4",
+//       poster: "/media/tx-iabs-1-2-document-overview-poster.webp",
+//       captions: "/media/tx-iabs-1-2-document-overview.vtt",
+//       label: "Optional video: Information About Brokerage Services — the IABS 1-2 form",
+//       duration: "3:30",   // PROVISIONAL — replace with the MEASURED length of the delivered render
+//     }],
+//   },
+// }
 ```
+
+`duration` above is the provisional estimate from §6, computed at 150 wpm from the final script. It
+is not a measurement and must be replaced by one before the entry is ever added. The block player
+(`public/statecourse/student/course/blocks/block-player.js`) reads `src`, `poster`, `captions`,
+`label` and `duration`, tags every screen video "Optional" of its own accord, and builds the
+transcript disclosure from the caption track — so no `optional: true` flag is needed or read, and a
+missing `.vtt` would silently produce a video with no transcript. That is the second reason this
+entry stays commented out.
 
 `duration` above is the estimate from §6 and must be replaced with the measured length before the
 entry is ever added.
@@ -758,14 +868,15 @@ entry is ever added.
 | Selection decision | **Complete** — selected, see the plan's §2 |
 | Learning objective | **Complete** |
 | Placement | **Fixed** — Module 02, T02U5, instruction screen `t02u5-s1` (screen id reserved; the LOA block map is not yet authored) |
+| Form-string verification | **Complete** — see §14 |
 | Sources | **Held and verified** — IABS-1-2.pdf hash matches `source-inventory.json` |
 | Script and narration | **Complete** |
 | Highlight targets | **Complete in page-point space**, measured from the held PDF |
 | HeyGen prompt | **Complete** |
 | Band images (`iabs-*.png`) | **Not built** |
 | MP4 render | **Not rendered** |
-| VTT captions | **Not built** — provisional timings only |
-| Poster | **Not built** |
+| VTT captions | **Cue text final; timings provisional.** Written to `video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt`, deliberately not to `public/statecourse/media/`. Timings must be rebuilt from the render before the file ships |
+| Poster | **Not built** — it is a frame of a render that does not exist, and was not composed by hand |
 | Highlight pixel coordinates | **Not measurable** — they are measured on the delivered render's own frames |
 | Student-facing display | **Not displayed.** No config entry exists, no player, no poster, no badge, no "video available" marker anywhere on any student- or reviewer-facing surface |
 
