@@ -416,3 +416,183 @@ test("no video is rendered, served or referenced anywhere", () => {
   }
   assert.match(VIDEO_FREEZE.notApproved, /holds no TREC approval/i);
 });
+
+/* ── the confidential final examination ──────────────────────────────────────────────────────
+   These tests import the secure bank and the version file. They assert counts, ids, hashes and
+   invariants and they print no prompt, no choice, no correct answer and no rationale — a test that
+   echoes the secure bank into CI output has leaked it as surely as publishing it would.
+   tests/no-answer-key-published.test.mjs is the standing guard that neither file reaches public/ or
+   dist/; these tests are the guard that what does exist is compliant. */
+
+const examBank = await import("../config/texas/law-of-agency-final-exam-bank.mjs");
+const examForms = await import("../config/texas/law-of-agency-final-exam-forms.mjs");
+const { ASSESSMENT_REQUIREMENTS } = await import("../config/texas/trec-rules-source-lock.mjs");
+
+test("the secure bank meets the § 535.62(b)(7) floor and matches its own blueprint", () => {
+  assert.equal(examBank.BANK_SIZE, examBank.FINAL_EXAM_BANK.length);
+  assert.ok(
+    examBank.BANK_SIZE >= ASSESSMENT_REQUIREMENTS.minExamBankQuestions,
+    `${examBank.BANK_SIZE} items against a floor of ${ASSESSMENT_REQUIREMENTS.minExamBankQuestions}`,
+  );
+  const perTopic = {};
+  for (const entry of examBank.FINAL_EXAM_BANK) perTopic[entry.topic] = (perTopic[entry.topic] ?? 0) + 1;
+  assert.deepEqual(perTopic, { ...examBank.TOPIC_BLUEPRINT });
+  assert.equal(
+    Object.values(examBank.TOPIC_BLUEPRINT).reduce((sum, n) => sum + n, 0),
+    examBank.BANK_SIZE,
+  );
+});
+
+test("every LOA-1 unit is examined, and every teaches anchor resolves in the frozen curriculum", () => {
+  /* The anchors are re-derived from the frozen markdown rather than trusted: a unit heading that is
+     reworded without the bank being updated must fail here rather than produce a crosswalk that
+     points at nothing. */
+  const slug = (s) => s.toLowerCase().replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
+  const anchors = new Set();
+  for (const file of fs.readdirSync(CURRICULUM).filter((f) => f.endsWith(".md")).sort()) {
+    for (const m of moduleText(file).matchAll(/^## Unit: (.+)$/gm)) {
+      anchors.add(`${file}#unit-${slug(m[1])}`);
+    }
+  }
+  for (const unit of ALL_UNITS) {
+    const anchor = examBank.UNIT_ANCHORS[unit.code];
+    assert.ok(anchor, `unit ${unit.code} has no anchor`);
+    assert.ok(anchors.has(anchor), `unit ${unit.code} anchors at ${anchor}, which is not a heading in the frozen curriculum`);
+    assert.ok(examBank.UNITS_EXAMINED[unit.code] >= 1, `unit ${unit.code} carries no examination item`);
+  }
+  assert.equal(Object.keys(examBank.UNITS_EXAMINED).length, ALL_UNITS.length);
+});
+
+test("no examination item is true/false-shaped, and every item carries a key, a rationale and a source", () => {
+  for (const entry of examBank.FINAL_EXAM_BANK) {
+    assert.equal(entry.choices.length, 4, `${entry.id} does not offer four choices`);
+    assert.equal(entry.correctChoice, 0, `${entry.id} does not author the correct answer first`);
+    assert.equal(new Set(entry.choices).size, 4, `${entry.id} repeats a choice`);
+    assert.ok(entry.rationale && entry.rationale.trim().length >= 40, `${entry.id} lacks a rationale`);
+    assert.ok(entry.source && entry.source.trim().length >= 8, `${entry.id} lacks a controlling source`);
+    assert.equal(entry.tests, entry.unit, `${entry.id} disagrees with itself about what it examines`);
+    assert.ok(!/optional/i.test(entry.teaches), `${entry.id} is traced to optional-reference material`);
+  }
+  assert.equal(ASSESSMENT_REQUIREMENTS.trueFalsePermitted, false);
+});
+
+test("four versions of sixty, every topic on every version, and no pair above the one-third cap", () => {
+  assert.ok(
+    examForms.VERSIONS.length >= ASSESSMENT_REQUIREMENTS.minExamVersions,
+    `${examForms.VERSIONS.length} versions against a minimum of ${ASSESSMENT_REQUIREMENTS.minExamVersions}`,
+  );
+  const byId = new Map(examBank.FINAL_EXAM_BANK.map((entry) => [entry.id, entry]));
+  for (const version of examForms.VERSIONS) {
+    assert.ok(
+      version.itemCount >= ASSESSMENT_REQUIREMENTS.minQuestionsPerExamVersion,
+      `version ${version.id} carries ${version.itemCount} items`,
+    );
+    const covered = new Set(version.itemIds.map((id) => byId.get(id).topic));
+    assert.equal(covered.size, TOPICS.length, `version ${version.id} covers ${covered.size} of ${TOPICS.length} topics`);
+    /* FORMS is the shape scripts/validate-loa-assessments.mjs reads, and it must be the same data. */
+    assert.deepEqual(examForms.FORMS[version.id], version.itemIds);
+  }
+  assert.equal(examForms.PAIRWISE_OVERLAP.length, 6);
+  for (const row of examForms.PAIRWISE_OVERLAP) {
+    assert.ok(
+      row.sharedItems / row.shorterVersionItems <= ASSESSMENT_REQUIREMENTS.maxCrossVersionOverlapFraction,
+      `${row.pair} shares ${row.sharedItems} of ${row.shorterVersionItems}`,
+    );
+  }
+  assert.equal(examForms.ITEM_EXPOSURE.unused, 0, "a bank item appears on no version");
+});
+
+test("the 70% boundary is exact: 42 of 60 passes and 41 of 60 fails", () => {
+  /* § 535.65(h)(4) fixes an unweighted 70%. The failure mode this guards against is a percentage
+     rounded before the comparison, which would carry a near-miss over the line on some version
+     length. The scoring function compares raw counts, and both sides of the boundary are asserted
+     for every version rather than for a representative one. */
+  assert.equal(examForms.SCORING.passingScorePercent, 70);
+  assert.equal(examForms.SCORING.weighting, "unweighted");
+  for (const version of examForms.VERSIONS) {
+    const mark = examForms.SCORING.minimumCorrectByVersion[version.id];
+    assert.equal(mark, Math.ceil(0.7 * version.itemCount));
+    assert.equal(examForms.SCORING.passes(mark, version.itemCount), true, `${mark}/${version.itemCount} should pass`);
+    assert.equal(examForms.SCORING.passes(mark - 1, version.itemCount), false, `${mark - 1}/${version.itemCount} should fail`);
+    assert.equal(examForms.SCORING.passes(version.itemCount, version.itemCount), true);
+    assert.equal(examForms.SCORING.passes(0, version.itemCount), false);
+  }
+  assert.equal(examForms.SCORING.passes(42, 60), true);
+  assert.equal(examForms.SCORING.passes(41, 60), false);
+  assert.throws(() => examForms.SCORING.passes(61, 60), /not a scoreable attempt/);
+  assert.throws(() => examForms.SCORING.passes(-1, 60), /not a scoreable attempt/);
+});
+
+test("examination items are substantially different from every quiz, replacement, misconception check and scenario task", () => {
+  /* § 535.65(h)(2) requires final examination questions to be "significantly different from any
+     quiz questions and exercises used in the course". The threshold the validator enforces is 0.70
+     Jaccard on the prompt; this test holds the build to the tighter figure the bank was actually
+     authored to, so that drift toward the validator's ceiling fails here first. */
+  const STOP = new Set("a an and are as at be by for from has have if in is it its may must no not of on or shall should than that the their them then there these they this to under was were what when which who will with would you your".split(" "));
+  const tokens = (s) => (String(s).toLowerCase().match(/[a-z0-9§.()-]+/g) || []).filter((t) => t.length > 2 && !STOP.has(t));
+  const jaccard = (a, b) => {
+    const A = new Set(a); const B = new Set(b);
+    if (!A.size || !B.size) return 0;
+    let i = 0; for (const t of A) if (B.has(t)) i += 1;
+    return i / (A.size + B.size - i);
+  };
+  return Promise.all([
+    import("../config/texas/law-of-agency-question-bank.mjs"),
+    import("../config/texas/law-of-agency-misconception-checks.mjs"),
+    import("../config/texas/law-of-agency-scenarios.mjs"),
+  ]).then(([quiz, misconceptions, scenarios]) => {
+    const formative = [
+      ...quiz.allItems(),
+      ...quiz.allReplacements(),
+      ...(misconceptions.MISCONCEPTION_CHECKS || []),
+      ...(scenarios.SCENARIOS || []).flatMap((s) => s.tasks || []),
+    ].map((item) => ({ id: item.id, tokens: tokens(item.prompt || item.stem || item.task || item.text || "") }));
+    let worst = { similarity: 0, exam: null, formative: null };
+    for (const entry of examBank.FINAL_EXAM_BANK) {
+      const examTokens = tokens(entry.prompt);
+      for (const other of formative) {
+        const similarity = jaccard(examTokens, other.tokens);
+        if (similarity > worst.similarity) worst = { similarity, exam: entry.id, formative: other.id };
+      }
+    }
+    assert.ok(
+      worst.similarity < 0.5,
+      `${worst.exam} and formative item ${worst.formative} share ${worst.similarity.toFixed(3)} of their prompt tokens`,
+    );
+  });
+});
+
+test("assembling four versions is not authority to administer one", () => {
+  assert.equal(examForms.EXAM_READY.status, "BLOCKED");
+  assert.equal(examForms.EXAM_READY.blockedBy, "TX_PROVIDER_RULE_SOURCE_LOCK");
+  assert.equal(examForms.EXAM_READY.trecApprovalHeld, false);
+  assert.equal(examForms.EXAM_READY.texasCreditAvailable, false);
+  assert.equal(examForms.ADMINISTRATION.label, "PROVIDER_PROPOSED_PENDING_TAC_CONFIRMATION");
+  assert.equal(examForms.ROTATION.requirementStatus, "RULE_REQUIRED");
+  assert.equal(examForms.ROTATION.cadenceStatus, "PROVIDER_PROPOSED_PENDING_COMMISSION_ACCEPTANCE");
+  assert.equal(examForms.SUBSEQUENT_ATTEMPT.mustBeADifferentVersion, true);
+  assert.equal(examForms.SUBSEQUENT_ATTEMPT.deadlineDays, 90);
+  assert.equal(examForms.SUBSEQUENT_ATTEMPT.maxAttemptsBeforeRetakingTheCourse, 2);
+  assert.deepEqual([...examForms.ROTATION.order], ["A", "B", "C", "D"]);
+});
+
+test("no examination text reaches any served tree", () => {
+  /* The bank and the version file live in config/, outside every served tree. This asserts the
+     negative directly rather than relying on the general answer-key test: no file under public/ or
+     dist/ may import either module by name. */
+  const served = [path.join(root, "public"), path.join(root, "dist")].filter((dir) => fs.existsSync(dir));
+  const offenders = [];
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) { walk(full); continue; }
+      if (!/\.(m?js|html|json|css)$/i.test(entry.name)) continue;
+      const text = fs.readFileSync(full, "utf8");
+      if (text.includes("law-of-agency-final-exam-bank") || text.includes("law-of-agency-final-exam-forms")) {
+        offenders.push(path.relative(root, full));
+      }
+    }
+  };
+  for (const dir of served) walk(dir);
+  assert.deepEqual(offenders, [], `examination modules referenced from a served tree: ${offenders.join(", ")}`);
+});
