@@ -28,7 +28,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v3";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v4";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -36,6 +36,30 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v3";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v3",
+    on: "2026-08-30",
+    module: "NONE — no curriculum file changed and all twelve module hashes are byte-identical to the ones v3 carried. Nothing under texas/tx-law-of-agency-30-v1/curriculum/ was opened for writing.",
+    change:
+      "This freeze stopped hashing the video instruction plan directly and started hashing the video freeze artifact instead. The artifact entry 'video instruction plan' (texas/tx-law-of-agency-30-v1/video-instruction-plan.md) is replaced by 'video plan freeze' (texas/tx-law-of-agency-30-v1/video-plan-freeze.json), written by the new scripts/freeze-loa-video-plan.mjs under the id LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2. That video freeze hashes the plan, the three production files, the three caption .vtt files, the held IABS 1-2 form and OC.1101 statute, the source inventory, the three block maps the videos name, the new validator, and the block-map generator core. Two artifacts also gained content at the same moment: the video plan itself was corrected to plan v2 (nine narration repairs, one statutory repair, seven coordinate corrections and one duration inconsistency, all previously stranded in an unhashed addendum), and the addendum was marked SUPERSEDED review history.",
+    reason:
+      "The structural cause of a deadlock, removed. A video plan is not curriculum, and correcting a video should never require breaking a curriculum freeze — but while this freeze hashed the plan directly, it did. That is not hypothetical: an earlier pass found real defects in the three video packages (the worst dropped 'unless required to do so by law' from a confidentiality rule while the highlight box was showing the student that very exception), edited the plan to record them, saw this freeze report drift, correctly reversed the edit byte for byte, and parked the corrections in an unhashed addendum. The result was a hashed canonical plan carrying known defects and an unhashed file carrying the fixes — fine as review history, not acceptable as a production package, because a renderer consulting the canonical files would have reproduced the defects. Indirection fixes the cause: the curriculum freeze still pins the video state exactly, because any change to any video artifact changes the video freeze and therefore this hash, but it pins it through a stable pointer that the video freeze owns.",
+    whyTheFreezeIdIS_Bumped:
+      "Because the artifact changed. content-freeze.json's artifacts map loses one key and gains another, with a different path and a different hash. Re-taking under v3 would make an id denote two byte-states, and an id that denotes two byte-states is not an identifier — anyone verifying against v3 could not tell which of the two they held. That reasoning has already been applied once in this history, to the v2 -> v3 bump, and it applies here for the same reason and with less room for argument, since this time the artifacts map itself is structurally different.",
+    curriculumUnchanged:
+      "All twelve module sha256 values are identical to v3's. So are the LOA-1 outline, the source register, the quotation ledger, the claim audit, the time evidence, the misconception checks, the time budget, the structural generator and the salvage audit. The only difference between the v3 and v4 artifacts is the video entry and the freeze id.",
+    foundBy: "the consolidation pass, reading the addendum's own account of why it existed",
+    classOfDefect: "structural — the freeze boundary was drawn in the wrong place, so a correct edit to a video could not land",
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs — 8/8 checks pass; 5 are partial by nature and say so in their own output",
+      "node scripts/freeze-loa-video-plan.mjs --write — LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2, 16 artifacts",
+      "node scripts/texas-source-inventory.mjs — 55 registered sources resolve",
+      "node scripts/check-loa-module-structure.mjs — 57/57 units, no structural failures",
+      "node scripts/audit-loa-claims.mjs — unchanged, the twelve modules are byte-identical",
+      "node scripts/report-loa-time-evidence.mjs — unchanged for the same reason",
+      "node --test tests/*.test.mjs",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v2",
     on: "2026-08-30",
@@ -171,7 +195,16 @@ const artifacts = {
   "time budget": hashOf(path.join(root, "config/texas/law-of-agency-time-budget.mjs")),
   "structural evidence (generator)": hashOf(path.join(root, "scripts/check-loa-module-structure.mjs")),
   "salvage audit": hashOf(path.join(HOME, "salvage-audit.json")),
-  "video instruction plan": hashOf(path.join(HOME, "video-instruction-plan.md")),
+  /* THE POINTER, NOT THE PLAN. This freeze used to hash video-instruction-plan.md directly, which
+     made a video artifact a curriculum artifact: correcting a highlight rectangle that was cutting a
+     printed word in half reported drift here and needed a curriculum-freeze break to land. A video
+     plan is not curriculum. So this freeze now hashes the VIDEO FREEZE ARTIFACT, which
+     scripts/freeze-loa-video-plan.mjs owns and which itself hashes the plan, the three production
+     files, the three caption files, the held form and statute, the block maps the videos name, and
+     the validator. One level of indirection: the video state is still pinned exactly — any change to
+     any video artifact changes video-plan-freeze.json, which changes this hash — but a video
+     correction is now absorbed by a video freeze instead of forcing a curriculum-freeze break. */
+  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
 };
 
 if (failures.length) {

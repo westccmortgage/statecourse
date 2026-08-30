@@ -261,8 +261,8 @@
   "artifacts": {
     "video instruction plan (v2, canonical)": {
       "path": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
-      "sha256": "4371a920713e3dc215f22e5ce23dfb91411c723dc8dfd23015afb5353bdb8dd5",
-      "bytes": 52803
+      "sha256": "9ab965af55829b91b5633bbf16c81aa80f2fd203c370b9cf409c56372217cf9b",
+      "bytes": 53236
     },
     "production file — video 1 IABS 1-2 Document Overview": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/iabs-1-2-document-overview.md",
@@ -331,8 +331,8 @@
     },
     "block-map generator core (where the screenMedia hook will be built)": {
       "path": "scripts/lib/generate-tx-block-maps.mjs",
-      "sha256": "08a0d167f0dac156c23004638e7725f7087af872b140a0db51d421f0d3d055dc",
-      "bytes": 10033
+      "sha256": "fc81e0fb9051dfc8a3006bd6aa33a2ae183f0940b8a98439289a9aa13dfe0d96",
+      "bytes": 14634
     },
     "review addendum (SUPERSEDED — review history, not an operational dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-production/production-readiness-addendum.md",

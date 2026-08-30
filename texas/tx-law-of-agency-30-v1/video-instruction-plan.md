@@ -6,11 +6,16 @@ Transcribed at `config/texas/law-of-agency-course-form.mjs`; held at `texas/trec
 **Plan date:** 2026-08-30
 **Plan revision:** **v2 — 2026-08-30.** This revision supersedes plan v1, which is the byte-state
 sha256 `7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403` (29,239 bytes).
-**Plan v1 is SUPERSEDED.** It was correct when written and is wrong in four particulars now — three
-durations, the availability of the block maps, and the existence of the caption files on disk. Those
-particulars are corrected throughout this file and every one of them is itemised in §11. A renderer
-must work from this file. v1's hash is preserved in `video-plan-freeze.json` under
-`supersedes`, so anyone holding the old artifact can identify what they hold.
+**Plan v1 is SUPERSEDED.** It was correct when written and is wrong in three particulars now: its
+three durations (which its own caption blocks contradicted), its statement that the Law of Agency
+block maps did not exist, and its statement that the caption files existed only inside the production
+files. All three are corrected throughout this file. v2 additionally consolidates into this plan the
+corrections that had been made in the production files but recorded nowhere canonical — nine
+narration repairs, one statutory repair and seven coordinate corrections — so that the plan and the
+production files say the same thing. **Every one of them is itemised in §11.** A renderer works from
+this file and the three production files, and from nothing else. v1's hash is preserved in
+`video-plan-freeze.json` under `supersedes`, so anyone holding the old artifact can identify what
+they hold.
 
 **Freeze:** this plan and everything a render depends on are hashed by
 **`LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2`** (`texas/tx-law-of-agency-30-v1/video-plan-freeze.json`,

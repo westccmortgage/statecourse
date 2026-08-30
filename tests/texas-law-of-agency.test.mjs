@@ -263,3 +263,156 @@ test("the negation-aware scan would still catch a bare claim", () => {
   assert.equal(hits("This is a TREC-approved course."), 1);
   assert.equal(hits("Our curriculum was approved by TREC in 2026."), 1);
 });
+
+/* ── the video freeze, and the indirection that lets it exist ─────────────────────────────────
+   A video plan is not curriculum, and correcting a video must not require breaking a curriculum
+   freeze. These tests hold that boundary in place: the curriculum freeze hashes the VIDEO FREEZE
+   ARTIFACT, not the plan, and the video freeze hashes the plan and everything a render depends on.
+   If someone reverts to hashing the plan directly, the deadlock that stranded nine narration
+   repairs in an unhashed addendum comes back, so it fails here. */
+
+const VIDEO_FREEZE_PATH = path.join(HOME, "video-plan-freeze.json");
+const VIDEO_FREEZE = JSON.parse(fs.readFileSync(VIDEO_FREEZE_PATH, "utf8"));
+
+test("the curriculum freeze pins the video state through the video freeze, not through the plan", () => {
+  const names = Object.keys(FREEZE.artifacts);
+  const pointer = names.filter((n) => FREEZE.artifacts[n].path.endsWith("video-plan-freeze.json"));
+  assert.equal(pointer.length, 1, "the curriculum freeze must hash the video freeze artifact exactly once");
+  const direct = names.filter((n) => FREEZE.artifacts[n].path.endsWith("video-instruction-plan.md"));
+  assert.deepEqual(direct, [], "the curriculum freeze must NOT hash the video plan directly — that is the deadlock that stranded the video corrections in an unhashed addendum");
+
+  const buf = fs.readFileSync(VIDEO_FREEZE_PATH);
+  assert.equal(crypto.createHash("sha256").update(buf).digest("hex"), FREEZE.artifacts[pointer[0]].sha256, "the video freeze artifact changed since the curriculum freeze — re-run both freezes");
+});
+
+test("the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency", () => {
+  assert.match(VIDEO_FREEZE.freezeId, /^LOA-VIDEO-PLAN-FREEZE-\d{4}-\d{2}-\d{2}(-v\d+)?$/, "a re-freeze must bump its version rather than reusing an id");
+  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2");
+  assert.equal(VIDEO_FREEZE.courseId, "tx-law-of-agency-30-v1");
+
+  /* The superseded plan is identified by hash, not by adjective. */
+  assert.equal(VIDEO_FREEZE.supersedes.status, "SUPERSEDED");
+  assert.equal(VIDEO_FREEZE.supersedes.sha256, "7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403");
+  assert.equal(VIDEO_FREEZE.supersedes.artifact, "texas/tx-law-of-agency-30-v1/video-instruction-plan.md");
+
+  /* Everything a render consults must be hashed, or a change to it is silent. */
+  const paths = Object.values(VIDEO_FREEZE.artifacts).map((a) => a.path);
+  for (const required of [
+    "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
+    "texas/tx-law-of-agency-30-v1/video-production/iabs-1-2-document-overview.md",
+    "texas/tx-law-of-agency-30-v1/video-production/representation-or-showing-only-2026.md",
+    "texas/tx-law-of-agency-30-v1/video-production/intermediary-brokerage.md",
+    "texas/tx-law-of-agency-30-v1/video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt",
+    "texas/tx-law-of-agency-30-v1/video-production/captions/tx-representation-or-showing-only-2026.provisional.vtt",
+    "texas/tx-law-of-agency-30-v1/video-production/captions/tx-intermediary-brokerage.provisional.vtt",
+    "texas/trec-sources/forms/IABS-1-2.pdf",
+    "scripts/validate-loa-video-packages.mjs",
+  ]) assert.ok(paths.includes(required), `the video freeze does not hash ${required}`);
+
+  const drift = [];
+  for (const [name, a] of Object.entries(VIDEO_FREEZE.artifacts)) {
+    const buf = fs.readFileSync(path.join(root, a.path));
+    if (crypto.createHash("sha256").update(buf).digest("hex") !== a.sha256 || buf.length !== a.bytes) drift.push(name);
+  }
+  assert.deepEqual(drift, [], "a video artifact changed since the video freeze — re-run scripts/freeze-loa-video-plan.mjs and then scripts/freeze-loa-curriculum.mjs");
+});
+
+test("the video freeze records every check the validator ran, and passes none of them quietly", () => {
+  assert.equal(VIDEO_FREEZE.validation.checksPassing, "8/8");
+  assert.equal(VIDEO_FREEZE.validation.checks.length, 8);
+  for (const c of VIDEO_FREEZE.validation.checks) assert.equal(c.pass, true, `check ${c.n} did not pass`);
+  /* Checks that cannot be fully mechanised must say so in the artifact, not only on a terminal. */
+  const partial = VIDEO_FREEZE.validation.checks.filter((c) => c.notFullyMechanised);
+  assert.ok(partial.length >= 3, "the checks that cannot be fully mechanised must name their own limits");
+  for (const c of partial) assert.ok(c.notFullyMechanised.length > 60, `check ${c.n} says it is partial without saying what is missing`);
+});
+
+test("video status is reported in four layers and no layer borrows another's", () => {
+  const s = VIDEO_FREEZE.status;
+  assert.match(s.editorialAndLegalPackage, /^READY\b/);
+  assert.match(s.renderedAssets, /^PENDING\b/);
+  assert.match(s.screenMediaIntegrationSupport, /^PENDING\b/);
+  assert.match(s.coursePlacementActivation, /^NOT ACTIVE\b/);
+  assert.match(s.doNotSay, /production-ready/);
+
+  /* No canonical video file may call the package production-ready, and none may be wired. */
+  const files = [
+    path.join(HOME, "video-instruction-plan.md"),
+    path.join(HOME, "video-production/iabs-1-2-document-overview.md"),
+    path.join(HOME, "video-production/representation-or-showing-only-2026.md"),
+    path.join(HOME, "video-production/intermediary-brokerage.md"),
+  ];
+  for (const f of files) {
+    for (const m of fs.readFileSync(f, "utf8").matchAll(/[^\n]*production-ready[^\n]*(?:\n[^\n]*)?/gi)) {
+      assert.match(m[0], /not a status this plan uses|is not "production-ready"|phrase is not used of it/i, `${path.basename(f)} calls the package production-ready`);
+    }
+  }
+  for (const [n, map] of [[2, "law-of-agency-module-2-blocks.mjs"], [5, "law-of-agency-module-5-blocks.mjs"], [6, "law-of-agency-module-6-blocks.mjs"]]) {
+    const text = fs.readFileSync(path.join(root, "config/texas", map), "utf8");
+    assert.doesNotMatch(text, /videos:|screenMedia/, `module ${n} block map has media wired — nothing may be attached before the screenMedia hook exists`);
+  }
+});
+
+test("retrieval happens on a separate screen, with no video, no form and no answers on it", () => {
+  /* Derived from the generated block maps, not asserted: the screen the video attaches to and the
+     screen the student is assessed on are different screens, two apart, and the retrieval screen
+     carries a questionId and nothing else. */
+  for (const [unit, map] of [["t02u5", "law-of-agency-module-2-blocks.mjs"], ["t05u3", "law-of-agency-module-5-blocks.mjs"], ["t06u3", "law-of-agency-module-6-blocks.mjs"]]) {
+    const text = fs.readFileSync(path.join(root, "config/texas", map), "utf8");
+    const screen = (id) => (text.match(new RegExp(`\\{[^\\n]*id: "${id}"[^\\n]*\\}`)) || [])[0];
+    const s1 = screen(`${unit}-s1`);
+    const s2 = screen(`${unit}-s2`);
+    const s3 = screen(`${unit}-s3`);
+    assert.ok(s1 && s2 && s3, `${unit}: expected -s1, -s2 and -s3`);
+    assert.match(s1, /type: "instruction"/, `${unit}-s1 must be the instruction screen the video attaches to`);
+    assert.match(s3, /type: "retrieval"/, `${unit}-s3 must be the retrieval screen`);
+    assert.match(s3, /questionId: "/, `${unit}-s3 must name its retrieval item`);
+    assert.doesNotMatch(s3, /content: RANGE/, `${unit}-s3 must not carry the module text — the form language would still be on screen at retrieval`);
+    assert.doesNotMatch(s3, /videos:|screenMedia|documents:/, `${unit}-s3 must not carry media — the video would still be on screen at retrieval`);
+  }
+  assert.equal(VIDEO_FREEZE.assessmentSeparation.confirmed, true);
+  assert.deepEqual(
+    VIDEO_FREEZE.assessmentSeparation.placements.map((p) => p.instruction),
+    ["t02u5-s1", "t05u3-s1", "t06u3-s1"],
+  );
+});
+
+test("the review addendum has stopped being an operational dependency", () => {
+  const addendum = fs.readFileSync(path.join(HOME, "video-production/production-readiness-addendum.md"), "utf8");
+  assert.match(addendum, /SUPERSEDED — REVIEW HISTORY ONLY/);
+  assert.match(addendum, /NOT AN OPERATIONAL DEPENDENCY/);
+  /* It is still hashed — as history. Losing it would lose the record of how the defects were found. */
+  const paths = Object.values(VIDEO_FREEZE.artifacts).map((a) => a.path);
+  assert.ok(paths.includes("texas/tx-law-of-agency-30-v1/video-production/production-readiness-addendum.md"));
+});
+
+test("the screenMedia hook is unbuilt, and its test list is recorded where it will be built", () => {
+  const gen = fs.readFileSync(path.join(root, "scripts/lib/generate-tx-block-maps.mjs"), "utf8");
+  /* Look for the IMPLEMENTATION, not the prose describing it: the header names the hook in order
+     to specify it, so a text match on the name would find the specification and call it a build. */
+  assert.doesNotMatch(gen, /spec\.screenMedia\s*\|\||screenMedia\[|const screenMedia\s*=/, "the hook is recorded as unbuilt; if it has been built, move these assertions to its own tests");
+  assert.match(gen, /NOT BUILT: THE `screenMedia` HOOK/);
+  assert.match(gen, /DO NOT HAND-EDIT A GENERATED COURSE FILE/);
+  for (const requirement of [
+    /EXACT SCREEN PLACEMENT/,
+    /`required: false`/,
+    /NON-BLOCKING PROGRESSION/,
+    /MP4, VTT, TRANSCRIPT AND POSTER PRESENCE/,
+    /ACCESSIBLE PLAYER CONTROLS AND KEYBOARD ACCESS/,
+    /CAPTION AVAILABILITY/,
+    /NO OVERLAP WITH THE StateCourse LOGO/,
+    /NO SECURE ASSESSMENT CONTENT/,
+    /NO VIDEO ON THE RETRIEVAL SCREEN/,
+    /NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT/,
+  ]) assert.match(gen, requirement, `the screenMedia test list is missing ${requirement}`);
+});
+
+test("no video is rendered, served or referenced anywhere", () => {
+  const stems = ["tx-iabs-1-2-document-overview", "tx-representation-or-showing-only-2026", "tx-intermediary-brokerage"];
+  const media = path.join(root, "public/statecourse/media");
+  if (fs.existsSync(media)) {
+    const shipped = fs.readdirSync(media).filter((n) => stems.some((s) => n.startsWith(s)));
+    assert.deepEqual(shipped, [], "a video asset is sitting at its shipping path before a render exists");
+  }
+  assert.match(VIDEO_FREEZE.notApproved, /holds no TREC approval/i);
+});

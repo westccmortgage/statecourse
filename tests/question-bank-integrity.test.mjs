@@ -58,7 +58,7 @@ const banks = await Promise.all(
 );
 
 test("every question bank in the project is found and carries items", () => {
-  assert.equal(bankFiles.length, 26, `expected 26 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
+  assert.equal(bankFiles.length, 27, `expected 27 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
   for (const bank of banks) {
     assert.ok(bank.items.length > 0, `${bank.file} yielded no items — its shape changed and this walk no longer reaches them`);
   }
@@ -173,6 +173,13 @@ test("the project's authored item count is what the state builds add up to", () 
   /* 2026-08-28: 2464 + 32 — TX-1A added the Texas Principles I formative bank (32 primary items;
      its 32 replacement questions live inside the items and are deliberately outside this walk).
      2026-08-29: 2496 + 44 — Principles II's formative bank, on the same convention: 44 primary
-     items, with their 44 replacements nested inside and outside this walk. */
-  assert.equal(total, 2540, `the banks now hold ${total} items, not 2540; update this figure deliberately when a bank changes`);
+     items, with their 44 replacements nested inside and outside this walk.
+     2026-08-30: 2540 + 116 — the Texas Law of Agency formative bank. Both halves are counted this
+     time, and deliberately: 58 primary items in TOPIC_QUIZZES and 58 replacement items in a
+     separate top-level REPLACEMENTS export, because scripts/validate-loa-assessments.mjs reads the
+     replacements as their own map to check that every primary has the successor question 22 TAC
+     § 535.62(b)(7)(C)(ii) requires. They are 116 distinct objects with 116 distinct prompts, so the
+     walk is counting items rather than copies — which is the failure this file's flat-view note
+     warns about, and is why that bank exports its flat views as functions. */
+  assert.equal(total, 2656, `the banks now hold ${total} items, not 2656; update this figure deliberately when a bank changes`);
 });

@@ -74,7 +74,10 @@
  * UNIT_OBJECTIVES[item.tests] in config/texas/law-of-agency-course.mjs, and an invariant asserts the
  * key exists, so an objective can never drift out of step with a copy of itself.
  *
- * THE CURRICULUM IS FROZEN at LOA-CONTENT-FREEZE-2026-08-30-v3. Nothing under
+ * THE CURRICULUM IS FROZEN. The freeze version in force is the one
+ * config/texas/law-of-agency-course.mjs records as COURSE.contentFreeze — it was
+ * LOA-CONTENT-FREEZE-2026-08-30-v3 when these items were written and v4 when they were verified,
+ * and no item's answer moved between the two. Nothing under
  * texas/tx-law-of-agency-30-v1/ was edited to make an item answerable. Where a unit made a good item
  * hard to write, the item was written narrower rather than the prose written wider.
  *
@@ -408,7 +411,7 @@ export const TOPIC_QUIZZES = Object.freeze({
       id: "LOA-T05U2-Q", tests: "T05U2", module: "module-05", screen: "t05u2-s1",
       source: "22 TAC", section: "§ 531.2",
       judgement: "How the Canons bear on representing two buyers who may bid against each other, and when that decision has to be made.",
-      prompt: "Two buyers your brokerage represents want the same Sugar Land house in the same week. What do the held sources support?",
+      prompt: "Two buyers your brokerage represents, working with two different sales agents in the office, decide in the same week that they want the same Sugar Land house, and one asks you what the firm will do about it. What do the held sources support?",
       choices: [
         "Nothing in the held sources forbids representing both, but 22 TAC § 531.2 requires the license holder's position to be clear to all parties concerned and that no personal interest be placed above the client's — so the firm's policy on competing clients is decided and disclosed in advance rather than improvised on the night the offers arrive.",
         "Representing both is prohibited outright, because advancing one client's interest necessarily damages the other's and no consent can cure that.",
@@ -1097,7 +1100,7 @@ export const REPLACEMENTS = Object.freeze({
         "The duplex is outside the section because it is tenanted rather than owner-occupied, and “Unknown” is compliance only where the buyer accepts it in writing.",
         "The duplex is inside the section because the exemptions in subsection (e) are exhaustive and none covers a duplex, and “Unknown” is compliance in every case including where the seller does know.",
       ],
-      rationale: "Parse subsection (a) by its own words: residential real property, comprising not more than one dwelling unit, located in this state, with the notice going to “the purchaser.” A single-family house is inside; a duplex comprises two dwelling units and is not. Subsection (d) then makes the notice a knowledge document: it must be completed “to the best of seller's belief and knowledge as of the date the notice is completed and signed by the seller,” and “[i]f the information required by the notice is unknown to the seller, the seller shall indicate that fact on the notice, and by that act is in compliance with this section.” The safe harbour operates only where the information genuinely is unknown — “Unknown” written to avoid an answer the seller has is a false statement on the notice.",
+      rationale: "Parse Property Code § 5.008(a) by its own words: residential real property, comprising not more than one dwelling unit, located in this state, with the notice going to “the purchaser.” A single-family house is inside; a duplex comprises two dwelling units and is not. Section 5.008(d) then makes the notice a knowledge document: it must be completed “to the best of seller's belief and knowledge as of the date the notice is completed and signed by the seller,” and “[i]f the information required by the notice is unknown to the seller, the seller shall indicate that fact on the notice, and by that act is in compliance with this section.” The safe harbour operates only where the information genuinely is unknown — “Unknown” written to avoid an answer the seller has is a false statement on the notice.",
     }),
     repl({
       id: "LOA-T03U6-QR", replaces: "LOA-T03U6-Q", tests: "T03U6", module: "module-03", screen: "t03u6-s1",
@@ -1192,7 +1195,7 @@ export const REPLACEMENTS = Object.freeze({
         "It fails only on the fee clause; a negotiability sentence placed anywhere in the agreement satisfies subsection (c)(2).",
         "It fails only on the negotiability sentence; the fee clause complies because subsection (c)(1)(E) requires an amount or a rate and “as agreed” states a method.",
       ],
-      rationale: "Subsection (c)(1)(E) has two halves and both matter: the number or the rate, and the method by which the amount will be determined — percent of what, measured when, payable on what event. “To be determined” states neither. Subsection (c)(2) then requires the agreement to “disclose in conspicuous language that broker compensation is not set by law and is fully negotiable,” and conspicuous means it must stand out, so a sentence in the same type as the surrounding paragraph on page four is not conspicuous. The Commission has adopted no buyer representation form, and (c)(2) reaches the agreement whoever drafted it, so noticing when a form does not comply is the license holder's job.",
+      rationale: "Section 1101.563(c)(1)(E) has two halves and both matter: the number or the rate, and the method by which the amount will be determined — percent of what, measured when, payable on what event. “To be determined” states neither. Section 1101.563(c)(2) then requires the agreement to “disclose in conspicuous language that broker compensation is not set by law and is fully negotiable,” and conspicuous means it must stand out, so a sentence in the same type as the surrounding paragraph on page four is not conspicuous. The Commission has adopted no buyer representation form, and (c)(2) reaches the agreement whoever drafted it, so noticing when a form does not comply is the license holder's job.",
     }),
     repl({
       id: "LOA-T05U2-QR", replaces: "LOA-T05U2-Q", tests: "T05U2", module: "module-05", screen: "t05u2-s1",
@@ -1257,7 +1260,7 @@ export const REPLACEMENTS = Object.freeze({
         "All four are permitted, because subsection (h) preserves normal promotional and educational activity and payments for services actually performed.",
         "The first is barred and the other three are permitted, because a preferred-provider list is advertising rather than a referral.",
       ],
-      rationale: "Subsection (d) is a flat prohibition and its list of settlement service providers is long and expressly non-exhaustive, reaching mortgage originators and brokers, lenders, title service providers, attorneys, appraisers, inspectors, settlement agents, insurers, residential service contract providers and “a real estate agent or broker.” Subsection (h) is the counterweight and must be carried with it: the section does not prohibit normal promotional or educational activity that is not conditioned on the referral of business and does not defray expenses that would otherwise be incurred; a payment at market rates for goods actually furnished or services actually performed; or a payment under a cooperative brokerage or referral arrangement between active licensed agents and brokers. Payment contingent on where you send your buyer is what the rule is aimed at.",
+      rationale: "22 TAC § 535.148(d) is a flat prohibition and its list of settlement service providers is long and expressly non-exhaustive, reaching mortgage originators and brokers, lenders, title service providers, attorneys, appraisers, inspectors, settlement agents, insurers, residential service contract providers and “a real estate agent or broker.” Section 535.148(h) is the counterweight and must be carried with it: the section does not prohibit normal promotional or educational activity that is not conditioned on the referral of business and does not defray expenses that would otherwise be incurred; a payment at market rates for goods actually furnished or services actually performed; or a payment under a cooperative brokerage or referral arrangement between active licensed agents and brokers. Payment contingent on where you send your buyer is what the rule is aimed at.",
     }),
   ]),
   T06: Object.freeze([
@@ -1409,3 +1412,447 @@ export const REPLACEMENTS = Object.freeze({
       rationale: "A disclosure policy is not a form and it is not a promise. It is the firm's standing answer to the questions the rules leave open, and the text-message case is the clearest: a Saturday-night text about a specific property is a communication with a party, and text is not among the delivery methods 22 TAC § 531.20 enumerates, so the rule does not tell the agent what to do next and a policy must. The competent office rule is to move the conversation into a channel the rule recognises before going further, answer the substantive question only then, and file the sent copy where the broker can find it — which matters because 22 TAC § 535.2 makes the broker keep disclosures among the brokerage's records for at least four years.",
     }),
   ]),
+  T09: Object.freeze([
+    repl({
+      id: "LOA-T09U1-QR", replaces: "LOA-T09U1-Q", tests: "T09U1", module: "module-09", screen: "t09u1-s1",
+      source: "26 U.S.C.", section: "§ 3508",
+      judgement: "What the federal provision decides, whom it relieves, and the words that fix its boundary.",
+      prompt: "A brokerage's independent contractor agreement satisfies every condition in 26 U.S.C. § 3508(b)(1), and the office manager tells the agents this settles their status. What does the section actually establish, and about whom?",
+      choices: [
+        "It establishes federal tax treatment only. Subsection (a) provides that for services performed as a qualified real estate agent the individual “shall not be treated as an employee” and the person for whom the services are performed “shall not be treated as an employer,” and its opening words, “For purposes of this title,” confine it to Title 26.",
+        "It establishes that the agent is an independent contractor for every purpose, including the broker's supervision obligations under 22 TAC § 535.2.",
+        "It establishes the agent's status under Texas unemployment compensation law, because the Texas statute cross-references the federal test.",
+        "It establishes only the individual's status; the brokerage remains an employer for federal employment tax purposes and must still withhold.",
+      ],
+      rationale: "Section 3508(a) cuts both ways, removing employer status from the brokerage along with employee status from the agent, and with it the federal employment tax withholding and matching obligations. Its opening words are a limit: “For purposes of this title” confines it to Title 26, so it decides federal tax treatment and nothing else — not your broker's supervision duty, not your status under Labor Code chapter 21, not anyone's liability to anyone. Subsection (b)(1) states three conditions: a licensed real estate agent; substantially all remuneration directly related to sales or other output rather than to hours worked; and a written contract providing that the individual will not be treated as an employee for federal tax purposes. One well-drafted agreement satisfies both statutes because they are one drafting pattern rather than two regimes.",
+    }),
+    repl({
+      id: "LOA-T09U2-QR", replaces: "LOA-T09U2-Q", tests: "T09U2", module: "module-09", screen: "t09u2-s1",
+      source: "Texas Labor Code", section: "§ 21.051",
+      judgement: "What chapter 21 prohibits, and that the exclusions in other statutes are not imported into it.",
+      prompt: "A broker argues that because his sales agents fall outside “employment” under Labor Code § 201.072, chapter 21 can have nothing to say about how he treats them. What is the accurate answer?",
+      choices: [
+        "Section 201.072 excludes real estate service from “employment” only “[i]n this subtitle” — the unemployment compensation subtitle — and chapter 21 sits in a different subtitle and defines its own terms, so neither its test nor § 3508's is imported; whether a court applying chapter 21 would treat a particular agent as an employee turns on case law that was not held for this course.",
+        "He is right: § 201.072 settles employment status for all purposes of the Labor Code, chapter 21 included.",
+        "He is wrong, because chapter 21 expressly defines an employee to include a sponsored real estate sales agent.",
+        "He is wrong, because chapter 21 has no definition of employee at all and therefore reaches every worker.",
+      ],
+      rationale: "Each authority in this topic serves one limited purpose, and importing one test into another statute is the error the unit exists to prevent. Section 201.072 opens “In this subtitle,” so it decides whether service is employment for unemployment compensation and nothing else; 26 U.S.C. § 3508 is confined to Title 26. Chapter 21 is discrimination law with its own definitions: § 21.051 prohibits an employer from refusing to hire, discharging or otherwise discriminating because of race, color, disability, religion, sex, national origin or age, and § 21.002(7) defines an employee circularly as “an individual employed by an employer,” supplying no contractor test at all. What reaches a license holder regardless of employment status is § 1101.652(b)(32).",
+    }),
+    repl({
+      id: "LOA-T09U3-QR", replaces: "LOA-T09U3-Q", tests: "T09U3", module: "module-09", screen: "t09u3-s1",
+      source: "Texas Occupations Code", section: "§ 1101.652(b)(26)",
+      judgement: "That the label on a working relationship does not save an association with someone expected to act as a license holder.",
+      prompt: "A broker brings on an unlicensed person as a “marketing partner” who is expected to meet buyers at listings and talk them through the properties. The broker says the arrangement is a contractor relationship rather than employment, so the licensing rules do not bite. Evaluate.",
+      choices: [
+        "The label is irrelevant. Section 1101.652(b)(26) makes it a ground for discipline to establish an association “by employment or otherwise” with a person other than a license holder if that person is expected or required to act as a license holder — those four words are why employee, contractor, partner or assistant makes no difference.",
+        "The broker is right: the disciplinary grounds reach employment relationships, and a genuine contractor arrangement is outside them.",
+        "The broker is right provided the unlicensed person is paid a flat fee rather than a share of any commission.",
+        "The broker is wrong, but only because the person will be paid; an unpaid volunteer doing the same work is outside the subdivision.",
+      ],
+      rationale: "Section 1101.652(b)(26) reaches an association established “by employment or otherwise” with a person other than a license holder who is expected or required to act as a license holder, and the phrase “or otherwise” is what defeats the label. The work described is squarely licensed activity: 22 TAC § 535.4(c) defines showing to include causing or permitting the property to be viewed and providing access, and § 535.4(e) requires a licence of employees, agents or associates who direct or supervise persons performing acts requiring one. The money follows the same logic — § 1101.651(a) forbids a broker to pay a commission to or otherwise compensate, directly or indirectly, a person who is not a license holder for performing an act of a broker.",
+    }),
+    repl({
+      id: "LOA-T09U4-QR", replaces: "LOA-T09U4-Q", tests: "T09U4", module: "module-09", screen: "t09u4-s1",
+      source: "22 TAC", section: "§ 535.5(g)",
+      judgement: "Exactly how far the clerical-staff permission goes, and where it stops.",
+      prompt: "Your unlicensed assistant answers the business line. A caller asks about the advertised Georgetown listing. Which of these may she say, having first told the caller she is your administrative assistant?",
+      choices: [
+        "That the house is 2,410 square feet, listed at $389,000, with a 30-day close requested — confirmation of size, price and terms of advertised property, which is what 22 TAC § 535.5(g) permits; telling the caller the seller will probably take $370,000 is negotiating and is outside it.",
+        "Anything in the listing, including the seller's flexibility on price, because everything in an advertisement is public information.",
+        "Nothing at all, because a person who is not licensed may not discuss a listed property with a caller in any circumstances.",
+        "Everything she may confirm plus an invitation to view the property, because arranging a viewing is clerical rather than an act of showing.",
+      ],
+      rationale: "22 TAC § 535.5(g) is the clearest permission in the rules and every element is load-bearing: “An answering service or clerical or administrative employees identified to callers as such to confirm information concerning the size, price, and terms of property advertised are not required to be licensed under the Act.” The person must be identified to callers as such, the information must be confirmation of size, price and terms, and the property must have been advertised. Volunteering what the seller might accept is negotiating and does not fit. Nor is arranging access clerical: § 535.4(c) defines showing to include unlocking or providing access, and § 535.4(f) requires a licence to solicit listings or to negotiate for them.",
+    }),
+    repl({
+      id: "LOA-T09U5-QR", replaces: "LOA-T09U5-Q", tests: "T09U5", module: "module-09", screen: "t09u5-s1",
+      source: "22 TAC", section: "§ 535.2(i)",
+      judgement: "The one concrete supervision floor the written policies must contain, and how it is counted.",
+      prompt: "A brokerage's written policies say new agents are “encouraged to seek guidance from experienced colleagues.” Applying 22 TAC § 535.2(i), what does the rule actually require, and how is the requirement counted?",
+      choices: [
+        "That when a sales agent performs a type of real estate brokerage activity for the first three times, the broker must require the agent to receive coaching and assistance from an experienced license holder competent for that activity — required rather than encouraged, and counted per type of activity, so first three listings, first three buyer representations and first three leases are counted separately.",
+        "That the broker make experienced colleagues available for the agent's first three transactions of any kind, after which the obligation ends.",
+        "That the broker encourage additional education beyond the statutory continuing education minimum, which the quoted sentence satisfies.",
+        "That the broker supervise the agent's first three transactions personally, since supervision cannot be delegated.",
+      ],
+      rationale: "22 TAC § 535.2(i) requires a broker who sponsors sales agents to maintain, on a current basis, written policies and procedures ensuring eight things, and the coaching floor is the most concrete supervision obligation among them: not “encourage,” not “make available,” but “the broker must require that the sales agent receive coaching and assistance from an experienced license holder competent for that activity,” for each type of activity performed for the first three times. The same subsection writes competence “in the geographic market area where the sales agent represents clients” into the rule, and requires that all compensation for acts subject to the Act be paid by, through, or with the written consent of the sponsoring broker.",
+    }),
+    repl({
+      id: "LOA-T09U6-QR", replaces: "LOA-T09U6-Q", tests: "T09U6", module: "module-09", screen: "t09u6-s1",
+      source: "22 TAC", section: "§ 535.20",
+      judgement: "When a referral becomes an act requiring a licence, and the dollar figure that defines a gift as consideration.",
+      prompt: "A neighbour who holds no licence sends you a buyer, the purchase closes, and he expects the $75 gift card you mentioned when he offered to pass your name along. Apply 22 TAC § 535.20 to the arrangement.",
+      choices: [
+        "The gift card is valuable consideration — the rule's non-exhaustive definition includes money, gifts of merchandise having a retail value greater than $50, rent bonuses and discounts — so making the referral with the expectation of receiving it is an act requiring the neighbour to be licensed, and § 1101.652(b)(11) reaches paying or dividing a fee with a person who is not a license holder.",
+        "A gift card is not valuable consideration, because the rule reaches only money paid for a referral.",
+        "The payment is permitted under the vendor exemption in § 535.20(b), because the neighbour is a member of the public rather than a competitor.",
+        "The payment is permitted provided it is disclosed to the buyer in writing, because disclosure cures a referral fee to an unlicensed person.",
+      ],
+      rationale: "22 TAC § 535.20(a) provides that referring a prospective buyer, seller, landlord or tenant to another person in connection with a proposed real estate transaction “is an act requiring the person making the referral to be licensed if the referral is made with the expectation of receiving valuable consideration,” and then defines that term to include, but not be limited to, money, gifts of merchandise having a retail value greater than $50, rent bonuses and discounts. Seventy-five dollars is over the line. The exemption in § 535.20(b) is narrow and all four of its conditions must be met — it is built for a vendor selling goods or services to the public and to a license holder — and its last condition fails the moment payment turns on whether a referred customer closes.",
+    }),
+  ]),
+  T10: Object.freeze([
+    repl({
+      id: "LOA-T10U1-QR", replaces: "LOA-T10U1-Q", tests: "T10U1", module: "module-10", screen: "t10u1-s1",
+      source: "Texas Occupations Code", section: "§ 1101.659(b)",
+      judgement: "What the Commission can and cannot do for a consumer who has lost money.",
+      prompt: "A seller loses a sale because her agent misstated her position to a buyer. She files with the Commission and asks it to award her the difference between the failed contract and the later sale price. What can the Commission do?",
+      choices: [
+        "Not that. A refund the Commission orders “may not exceed the amount the consumer paid to the person for a service or accommodation regulated by this commission,” and “[t]he commission may not require payment of other damages or estimate harm in a refund order” — so the Commission may discipline and penalise, and the seller must sue to be made whole.",
+        "It may order the difference, because § 1101.701(a) authorises an administrative penalty measured by the consumer's loss.",
+        "It may order the difference only if the seller first obtains a judgment, which the Commission then enforces through the recovery trust account.",
+        "It may order the difference, because § 1101.656(a) permits any remedy the Commission considers appropriate in addition to suspension or revocation.",
+      ],
+      rationale: "The Commission is a regulator, not a small-claims court, and § 1101.659(b) says so twice over: the refund is capped at what the consumer paid the license holder for a regulated service, and the Commission may not require other damages or estimate harm. What it can do is take the licence under § 1101.656(a) and impose an administrative penalty under § 1101.701(a) and § 1101.702. The consumer's route to money is a civil suit, which § 1101.801 keeps open — “[d]isciplinary action taken against a person under Section 1101.652 does not relieve the person from civil or criminal liability” — and the recovery trust account under Subchapter M is a backstop that operates only after a judgment goes unsatisfied.",
+    }),
+    repl({
+      id: "LOA-T10U2-QR", replaces: "LOA-T10U2-Q", tests: "T10U2", module: "module-10", screen: "t10u2-s1",
+      source: "Texas Property Code", section: "§ 301.041(a)",
+      judgement: "That the owner-seller fair housing exemptions evaporate the moment a license holder is engaged.",
+      prompt: "A Waco owner of two rent houses says that because he owns fewer than three single-family houses he may sell to whomever he likes, and he asks you to take the listing. What happens to the exemption if you do?",
+      choices: [
+        "It is gone. Property Code § 301.041(a) exempts such a sale only if the house is sold or rented without the use of the sales or rental facilities or services of a broker, agent or salesperson licensed under Chapter 1101 and without prohibited advertising, and 42 U.S.C. § 3603(b) draws the same line federally — and the federal advertising prohibition in § 3604(c) never falls inside the exemption at all.",
+        "It survives, because the exemption attaches to the owner's holdings rather than to how the property is sold.",
+        "It survives as to the owner and is lost only as to you, so the owner may still instruct you on whom to exclude.",
+        "It is gone, but only under federal law; the Texas exemption in § 301.041 has no broker condition.",
+      ],
+      rationale: "Both Acts are built the same way and reach the same practical conclusion. Section 301.041(a) conditions the single-family exemption on the house being sold or rented without the use of the facilities or services of a broker, agent or salesperson licensed under Chapter 1101 and without prohibited advertising, and § 301.041(b) further limits it to one sale in a 24-month period where the owner was not the most recent resident. Federally, § 3603(b) exempts from § 3604 “other than subsection (c)” and only where the house is sold or rented “without the use in any manner of the sales or rental facilities or the sales or rental services of any real estate broker, agent, or salesman.” The seller who says it is his house and he can sell to whoever he wants is describing an exemption your listing agreement destroys.",
+    }),
+    repl({
+      id: "LOA-T10U3-QR", replaces: "LOA-T10U3-Q", tests: "T10U3", module: "module-10", screen: "t10u3-s1",
+      source: "Texas Occupations Code", section: "§ 1101.204(b), (c), (f)",
+      judgement: "The three conditions on a complaint the Commission may investigate.",
+      prompt: "Three complaints reach the Commission: an unsigned letter alleging a trust-account problem; a signed written complaint about an incident five years ago; and a signed written complaint about last year's transaction, with documents attached. Which may the Commission investigate?",
+      choices: [
+        "Only the third. Section 1101.204(b) requires a signed, written complaint supported by evidence providing reasonable cause; subsection (c) bars an investigation on a complaint submitted later than the fourth anniversary of the incident; and subsection (f) forbids initiating an investigation on the basis of an anonymous complaint.",
+        "All three, because the Commission may initiate an investigation on its own motion whatever the form of the complaint.",
+        "The first and third, because the four-year limit in subsection (c) runs from the date the complaint is filed rather than from the incident.",
+        "The second and third, because an anonymous complaint may be investigated where the allegation concerns trust money.",
+      ],
+      rationale: "Section 1101.204(b) makes the Commission investigate where a person submits a signed, written complaint and the complaint and its evidence provide reasonable cause. Two limits follow immediately: subsection (c) bars an investigation of a complaint “submitted later than the fourth anniversary of the date of the incident that is the subject of the complaint,” and subsection (f) provides that an investigation may not be initiated on the basis of an anonymous complaint. That four-year window is the same four years for which 22 TAC § 535.2(h) requires records to be kept, and a broker who purges at three years has destroyed the file the Commission is entitled to ask for. 22 TAC § 535.141 then makes a complaint naming a sales agent a complaint against the sponsoring broker for limited purposes.",
+    }),
+    repl({
+      id: "LOA-T10U4-QR", replaces: "LOA-T10U4-Q", tests: "T10U4", module: "module-10", screen: "t10u4-s1",
+      source: "22 TAC", section: "§ 535.1",
+      judgement: "What Texas law says a trade association is, and the wall the Act builds between such bodies and the Commission.",
+      prompt: "A colleague asserts that trade associations have no legal definition in Texas and that the Commission is staffed largely by their officers. Which statement matches the sources held for this course on what a trade association is and on who may serve the Commission?",
+      choices: [
+        "22 TAC § 535.1 defines a Trade Association as a nonprofit voluntary member association whose members are primarily license holders paying dues, governed by a board elected by the members, and “that subscribes to a written code of professional conduct or ethics”; and § 1101.053(b) bars an officer, employee or paid consultant of a Texas trade association in the real estate industry, and a spouse in specified roles, from serving on or working professionally for the Commission.",
+        "22 TAC § 535.1 defines a Trade Association as any organisation whose members hold real estate licences, and Chapter 1101 encourages Commission members to be drawn from such organisations.",
+        "Trade associations are defined by Chapter 1101 and their codes of ethics are adopted by reference into the Commission's rules.",
+        "No held Texas source defines a trade association, so the term has no legal content and an association's code has no effect on anyone.",
+      ],
+      rationale: "Read the three elements of the 22 TAC § 535.1 definition and you have the legal character of these bodies: voluntary and dues-paying, self-governed by a board the members elect, and — constitutively — subscribing to a written code of professional conduct or ethics. Section 1101.053(a) supplies the mirror image, defining a Texas trade association as “a cooperative and voluntarily joined statewide association of business or professional competitors in this state” promoting “their common interest,” and subsection (b) then builds a wall between such a body and the regulator. That wall is the clearest statement that these are two systems with two purposes: the association advances its members' common interest, and the Commission protects the public.",
+    }),
+    repl({
+      id: "LOA-T10U5-QR", replaces: "LOA-T10U5-Q", tests: "T10U5", module: "module-10", screen: "t10u5-s1",
+      source: "22 TAC", section: "§ 535.145",
+      judgement: "That an oral promise counts before the Commission and that a merger clause does not exclude it.",
+      prompt: "To win a listing, an agent says he has “a buyer ready at $395,000.” He has no such buyer. The listing agreement contains a clause disclaiming all oral representations. What does 22 TAC § 535.145 do with that defence?",
+      choices: [
+        "It fails. The rule provides that a false promise “includes both oral and written promises,” that the absence of the promise from the written agreement or the absence of detrimental reliance will not prevent the Commission from finding one, and that neither a contractual provision disclaiming oral representations nor the parol evidence rule prevents the Commission from considering oral promises.",
+        "It succeeds, because § 1101.652(b)(5) reaches a false promise in an agreement and the agreement contains none.",
+        "It succeeds unless the seller can prove she relied on the statement to her detriment.",
+        "It fails, but only because the statement was made before the agreement was signed; a merger clause would exclude anything said afterwards.",
+      ],
+      rationale: "Section 1101.652(b)(5) reaches a false promise likely to influence a person to enter into an agreement where the license holder is unable or does not intend to keep it, and 22 TAC § 535.145 closes every escape route around it. The rule says the term includes oral as well as written promises; that the fact the written agreement does not recite the promise, or that nobody detrimentally relied on it, “will not prevent the Commission from determining that a false promise was made”; and that neither a written contractual provision disclaiming oral representations nor the parol evidence rule will stop the Commission considering what a license holder said. The merger clause in your contract does not protect you in a Commission proceeding.",
+    }),
+  ]),
+  T11: Object.freeze([
+    repl({
+      id: "LOA-T11U1-QR", replaces: "LOA-T11U1-Q", tests: "T11U1", module: "module-11", screen: "t11u1-s1",
+      source: "Business & Commerce Code", section: "§ 17.45(13)",
+      judgement: "The final clause of the definition of “intentionally,” which carries recklessness across into intent.",
+      prompt: "A license holder formed no plan to deceive anybody but behaved so far outside ordinary professional care that a jury describes his conduct as flagrant. Can he be found to have acted intentionally under § 17.45(13)?",
+      choices: [
+        "Yes. After defining intention as actual awareness coupled with the specific intent that the consumer act in detrimental reliance, the subdivision adds that intention may be inferred from objective manifestations “or from facts showing that a defendant acted with flagrant disregard of prudent and fair business practices to the extent that the defendant should be treated as having acted intentionally.”",
+        "No. Intention requires the specific intent the first sentence describes, and the second sentence only permits inference from a defendant's own statements.",
+        "No, because flagrant disregard is negligence, which § 17.45(9) treats as knowing conduct rather than intentional conduct.",
+        "Yes, but only where the plaintiff also proves the defendant profited from the conduct.",
+      ],
+      rationale: "The last sentence of § 17.45(13) reverses the meaning of everything before it if you drop it. It does two separate things: it permits intention to be inferred from objective manifestations, the same evidentiary move § 17.45(9) allows for knowledge; and it permits intention to be inferred “from facts showing that a defendant acted with flagrant disregard of prudent and fair business practices to the extent that the defendant should be treated as having acted intentionally.” Those closing words are not a limitation that saves a defendant; they are the bridge that carries recklessness across into intent. Quote the definition without the final clause and you will teach yourself the opposite of the law.",
+    }),
+    repl({
+      id: "LOA-T11U2-QR", replaces: "LOA-T11U2-Q", tests: "T11U2", module: "module-11", screen: "t11u2-s1",
+      source: "Business & Commerce Code", section: "§ 17.46(b)(24)",
+      judgement: "The two express conditions that turn silence into an actionable failure to disclose.",
+      prompt: "A listing agent's file from a prior listing contains an inspection report noting active seepage at the north foundation wall. He says nothing, and a fact-finder concludes he kept quiet so the sale would close. Which subdivision does that engage, and on what conditions?",
+      choices: [
+        "Section 17.46(b)(24), on two express conditions: the information must have been “known at the time of the transaction,” and the failure to disclose must have been “intended to induce the consumer into a transaction into which the consumer would not have entered had the information been disclosed” — so a fact he forgot or never knew is outside it.",
+        "Section 17.46(b)(5), because failing to mention a defect is a representation that the property has characteristics it does not have.",
+        "Section 17.46(b)(24), which requires no state of mind at all, so any non-disclosure of a known fact is actionable.",
+        "No subdivision, because the seller's disclosure notice stated the seller's knowledge accurately and the agent made no statement of his own.",
+      ],
+      rationale: "Subdivision (24) is the only entry on the laundry list that makes not speaking actionable, and both of its conditions are express and cumulative. That intent element is what separates ordinary silence from actionable concealment. It is also the subdivision to think hardest about because it is carved out of both statutory exemptions that would otherwise protect a license holder: § 17.49(i)(2) names it by number, and so does the professional services exemption in § 17.49(c). And the seller's notice does not answer the question about you — it states the seller's knowledge and belief, while § 1101.652(b)(4) independently makes your silence about a known significant defect a disciplinary ground.",
+    }),
+    repl({
+      id: "LOA-T11U3-QR", replaces: "LOA-T11U3-Q", tests: "T11U3", module: "module-11", screen: "t11u3-s1",
+      source: "Business & Commerce Code", section: "§ 17.50(d), (e)",
+      judgement: "That fees are mandatory for a prevailing consumer and excluded from the multiplier base, and available to a defendant only on a court finding.",
+      prompt: "Opposing counsel argues that the multiplier should be applied to the whole judgment, including $62,000 in attorneys' fees. Your client also asks whether he can recover his own fees if the claim turns out to be groundless. Answer both from § 17.50.",
+      choices: [
+        "Section 17.50(e) provides that in computing additional damages under subsection (b) “attorneys' fees, costs, and prejudgment interest may not be considered,” so the fees stay out of the base; and § 17.50(c) awards the defendant reasonable and necessary attorneys' fees and court costs on a finding by the court that the action was groundless in fact or law, brought in bad faith, or brought for harassment.",
+        "Fees are part of the multiplier base because they are damages the consumer incurred, and a defendant may never recover fees under the subchapter.",
+        "Fees stay out of the base, and a defendant recovers fees automatically whenever the consumer loses.",
+        "Fees stay out of the base, and a defendant may recover fees only on a jury finding of bad faith rather than a finding by the court.",
+      ],
+      rationale: "Three provisions work together. Section 17.50(d) is unconditional for the consumer — “[e]ach consumer who prevails shall be awarded court costs and reasonable and necessary attorneys' fees” — which is why a modest repair dispute becomes a filed lawsuit. Section 17.50(e) keeps fees, costs and prejudgment interest out of the additional-damages base, so trebling the whole judgment misreads the statute. And § 17.50(c) points the other way, requiring the court to award a defendant reasonable and necessary fees and costs “[o]n a finding by the court” that the action was groundless in fact or law or brought in bad faith or for harassment — a court finding, not a jury one. Section 17.50(f) also keeps prejudgment interest off the multiplier.",
+    }),
+    repl({
+      id: "LOA-T11U4-QR", replaces: "LOA-T11U4-Q", tests: "T11U4", module: "module-11", screen: "t11u4-s1",
+      source: "Business & Commerce Code", section: "§§ 17.49(f), 17.49(g)",
+      judgement: "The two transaction-size exemptions, their exact thresholds, and why the residence carve-out defeats them in residential practice.",
+      prompt: "Two disputes arrive: a $2.4 million industrial building sale, and a $2.4 million house the buyer will live in. Apply § 17.49(g), and say why § 17.49(f) rarely helps a residential license holder.",
+      choices: [
+        "Section 17.49(g) removes the industrial sale, exempting a transaction involving total consideration of more than $500,000 “other than a cause of action involving a consumer's residence,” which leaves the house inside the Act; and § 17.49(f) requires all three of its conditions — more than $100,000, independently chosen counsel, and a contract not involving the consumer's residence — the last two of which residential transactions almost never satisfy.",
+        "Both are outside the DTPA, because § 17.49(g) exempts every transaction above $500,000 without qualification.",
+        "Both remain inside the DTPA, because the exemptions in § 17.49 apply only to written contracts and neither is one.",
+        "Section 17.49(f) removes both, because each exceeds $100,000 and a buyer at that price is presumed to be represented by counsel.",
+      ],
+      rationale: "Commit both numbers exactly and note the different structures. Section 17.49(f) exempts a claim arising out of a written contract only where all three conditions hold: total consideration by the consumer of more than $100,000 — not $100,000 or more; the consumer represented in negotiating the contract by counsel not identified, suggested or selected by the defendant or the defendant's agent; and a contract that “does not involve the consumer's residence,” as § 17.45(12) defines that term by both building type and occupancy. Section 17.49(g) is larger and simpler, with no written-contract or counsel requirement, exempting transactions of more than $500,000 “other than a cause of action involving a consumer's residence.” Both are commercial exemptions.",
+    }),
+    repl({
+      id: "LOA-T11U5-QR", replaces: "LOA-T11U5-Q", tests: "T11U5", module: "module-11", screen: "t11u5-s1",
+      source: "Texas Occupations Code", section: "§§ 1101.612, 1101.655",
+      judgement: "What follows for the license holder after the trust account pays a claim on their behalf.",
+      prompt: "The Commission pays a claim from the real estate recovery trust account on a license holder's behalf and notifies her. What happens next, under § 1101.612 and § 1101.655?",
+      choices: [
+        "The Commission is subrogated to the judgment creditor's rights to the extent paid, and the Commission “shall revoke” the licence if she does not repay the full amount before the 31st day after the date the Commission provides notice; she is not eligible for a licence again until she has repaid in full plus interest at the legal rate.",
+        "The debt is extinguished by the payment, and the only remaining consequence is the disciplinary case arising from the underlying conduct.",
+        "The Commission may revoke the licence at its discretion after a year, and repayment is voluntary.",
+        "Repayment in full ends the matter entirely, including any disciplinary proceeding arising from the same conduct.",
+      ],
+      rationale: "Section 1101.612(a) subrogates the Commission to all rights of the judgment creditor to the extent of the amount paid, so the debt does not disappear — it changes creditors, and the new creditor licenses you. Section 1101.655(a) then makes the consequence automatic: the Commission “shall revoke a license, approval, or registration” where it has made a payment from the account on a holder's behalf and the holder does not repay the full amount “before the 31st day after the date the commission provides notice.” Subsection (c) bars a new licence until the person has repaid in full “plus interest at the legal rate.” And § 1101.613 confirms that repayment “does not affect another disciplinary proceeding brought under this chapter.”",
+    }),
+  ]),
+  T12: Object.freeze([
+    repl({
+      id: "LOA-T12U1-QR", replaces: "LOA-T12U1-Q", tests: "T12U1", module: "module-12", screen: "t12u1-s1",
+      source: "22 TAC", section: "§ 535.155",
+      judgement: "The size ratio every advertisement must satisfy and the ten-day take-down rule.",
+      prompt: "A sales agent's social media tile carries her own handle in 60-point type. Her listing expired three weeks ago and the tile is still up. Apply 22 TAC § 535.155.",
+      choices: [
+        "Two failures. Every advertisement must carry, in a readily noticeable location, the name of the license holder or team placing it and “the broker's name in at least half the size of the largest contact information” — so at least 30-point here — and an advertisement offering a listed property must be discontinued within 10 days after the listing agreement is no longer in effect.",
+        "One failure only: the broker's name must appear but the rule states no size relationship, and there is no deadline for removing an expired listing.",
+        "One failure only: the expired listing must come down within 10 days, but a social media post is not an advertisement within the rule.",
+        "No failure, because the rule's definition of advertisement excludes electronic media and social media posts.",
+      ],
+      rationale: "22 TAC § 535.155 defines an advertisement enormously broadly — any form of communication by or on behalf of a license holder designed to attract the public to use real estate brokerage services, expressly including all electronic media, email, text messages, social media and the Internet — carving out only a communication to a current client and a directional sign carrying only the broker's name or logo. The required content is a size ratio rather than mere presence, measured against the largest “Contact Information,” which the rule defines to include a name, phone number, email address, website address, social media handle or scan code. Three of the rule's misleading-advertisement items are pure timing rules, including the 10 days after a listing is no longer in effect and 10 days after closing unless current status is included.",
+    }),
+    repl({
+      id: "LOA-T12U2-QR", replaces: "LOA-T12U2-Q", tests: "T12U2", module: "module-12", screen: "t12u2-s1",
+      source: "22 TAC", section: "§ 537.11",
+      judgement: "Which drafting acts the rule names outright, and the four conditions on the one change a license holder may make.",
+      prompt: "Your buyer wants an escalation clause, and separately texts you: “strike the survey paragraph.” What does 22 TAC § 537.11 permit?",
+      choices: [
+        "Not the escalation clause: the rule forbids drafting or recommending language defining or affecting the rights, obligations or remedies of the principals, “including escalation, appraisal, or contingency clauses.” The strike is permitted, because it is not the practice of law to add or strike language if specifically instructed in writing by a principal and the change is made conspicuous.",
+        "Both, because a license holder may make any change a principal requests so long as the client signs the completed form.",
+        "Neither, because a license holder may never alter an approved contract form in any respect.",
+        "The escalation clause, because drafting it is completing a form incidental to acting as a broker; not the strike, because deletions require an attorney.",
+      ],
+      rationale: "22 TAC § 537.11(b) names the three clause types explicitly, which is why the prohibition catches competent, well-meaning agents in a competitive market: drafting them is prohibited and so is recommending the language. The rule then identifies two acts that are affirmatively not the practice of law: adding informational items to a form authorised for use by the section, and, “if specifically instructed in writing by a principal, add language to or strike language from a contract form, as long as any change is made conspicuous, including underlining additions, striking through deletions, or employing some other method which clearly indicates the change being made.” Every element counts — a principal, specifically, in writing, and conspicuously. Section 1101.654(a) puts a licence-ending penalty behind the same line.",
+    }),
+    repl({
+      id: "LOA-T12U3-QR", replaces: "LOA-T12U3-Q", tests: "T12U3", module: "module-12", screen: "t12u3-s1",
+      source: "Texas Occupations Code", section: "§ 1101.652(a-1)(2), (b)(28)",
+      judgement: "The two record duties that fall on the license holder personally rather than on the broker.",
+      prompt: "A former seller asks for a copy of the listing agreement she signed two years ago, and the Commission separately asks you to produce a document from that file. You are in a fee dispute with the seller. What do the held grounds require?",
+      choices: [
+        "Produce both. Section 1101.652(a-1)(2) reaches failing or refusing to produce, on request and within a reasonable time, a document, book or record in your possession relating to a transaction you conducted, and (b)(28) reaches refusing to give a person who signed a transaction document a copy of it on request; § 1101.652(a)(5) separately reaches failing to surrender an owner's document “without just cause.”",
+        "Produce the Commission's request only; a former client's request lapses when the transaction ends.",
+        "Produce the seller's copy only; a request from the Commission may be answered at the hearing stage rather than on request.",
+        "Withhold both until the fee dispute is resolved, because a lien over documents is the just cause § 1101.652(a)(5) contemplates.",
+      ],
+      rationale: "Two grounds survive the end of a relationship on their face because neither is limited to a live agency. Section 1101.652(a-1)(2) reaches failing or refusing to produce on request, within a reasonable time, a document, book or record in the license holder's possession relating to a real estate transaction the license holder conducted; § 1101.652(b)(28) reaches a refusal to give a person who signed a transaction document a copy of it on request; and § 1101.652(a)(5) reaches failing to surrender to the owner, “without just cause,” a document the owner requests and the license holder holds. Being owed money is unlikely to be the just cause the statute contemplates, and § 1101.652(a)(4) makes failing to answer the Commission its own violation.",
+    }),
+    repl({
+      id: "LOA-T12U4-QR", replaces: "LOA-T12U4-Q", tests: "T12U4", module: "module-12", screen: "t12u4-s1",
+      source: "22 TAC", section: "§ 535.21",
+      judgement: "The consequence of not updating contact information, and where the Commission sends notices for an active sales agent.",
+      prompt: "A sales agent moved eight months ago and never updated her contact information. A complaint notice goes out. What do § 1101.552(e) and 22 TAC § 535.21 say about the effect?",
+      choices: [
+        "Each license holder must report changes not later than the 10th day after the change, and if the license holder fails to update the contact information “the last known contact information provided to the Commission is the license holder's contact information” — and for an active sales agent the Commission sends notices to the sponsoring broker in any event.",
+        "The notice is ineffective, because service on a stale address does not reach the license holder and the Commission must re-serve.",
+        "The agent has thirty days from the change to update her information, and until then the old information remains valid by rule.",
+        "The obligation falls on the sponsoring broker rather than the license holder, so the agent bears no consequence.",
+      ],
+      rationale: "Section 1101.552(e) requires every license holder to provide the Commission with a current mailing address, business address, business telephone number and business e-mail address, and the name of the associated broker where applicable, with subsection (f) requiring notice of a change. 22 TAC § 535.21 supplies the deadline — changes reported not later than the 10th day after the change — and the consequence, which is why this dull obligation belongs in a discussion of risk: the last known contact information is the license holder's contact information, so a complaint notice sent to a stale address is still effective. The rule also routes notices for an active sales agent to the sponsoring broker, which is what 22 TAC § 535.2(k)'s three-calendar-day forwarding duty exists to protect.",
+    }),
+    repl({
+      id: "LOA-T12U5-QR", replaces: "LOA-T12U5-Q", tests: "T12U5", module: "module-12", screen: "t12u5-s1",
+      source: "22 TAC", section: "§§ 535.2, 535.156",
+      judgement: "What the held sources actually require on the day a license holder realises the mistake is theirs.",
+      prompt: "You realise you published the wrong square footage in an advertisement three weeks ago. Which response is supported by the held sources?",
+      choices: [
+        "Tell your broker, who is answerable for your conduct under § 1101.803 and 22 TAC § 535.2; correct the record in writing to the people who relied on it, because 22 TAC § 535.156 requires accurate information to members of the public and an affirmative duty to keep the principal informed; add to the file and never subtract from it; and answer the Commission, since § 1101.652(a)(4) makes silence its own ground.",
+        "Quietly edit the advertisement, because the corrected figure is what matters and a correction notice invites a complaint.",
+        "Say nothing until a complaint arrives, because a self-report waives the right to contest the violation under § 1101.704.",
+        "Explain to the affected buyer why you think there is no legal liability, so the matter can be resolved without lawyers.",
+      ],
+      rationale: "There is no held Texas source prescribing a self-correction procedure, and none is invented here — what the held sources supply is a set of obligations that together describe the only defensible response. Concealing a problem from the person legally answerable for it converts a mistake into a betrayal. A quiet edit is not a correction, because 22 TAC § 535.156 imposes a duty to convey accurate information to members of the public with whom you deal. The file may be added to and not subtracted from: 22 TAC § 535.2(h) recognises only destruction by an Act of God. And § 1101.702(b) lists “efforts to correct the violation” among the factors that set a penalty, while 22 TAC § 537.11 forbids you to offer the injured person a legal conclusion about your own mistake.",
+    }),
+  ]),
+});
+
+/* ── load-time invariants: the bank refuses to load rather than serve a broken item ───────────── */
+
+const requireKey = (key) => {
+  if (!(key in ASSESSMENT_REQUIREMENTS)) {
+    throw new Error(`question bank: ASSESSMENT_REQUIREMENTS has no key ${JSON.stringify(key)} — the rule lock must state it; this bank will not assume a value`);
+  }
+  return ASSESSMENT_REQUIREMENTS[key];
+};
+const MIN_PER_TOPIC = requireKey("minQuestionsPerTopicQuiz");   /* 22 TAC 535.62(b)(7)(A) */
+const TRUE_FALSE_PERMITTED = requireKey("trueFalsePermitted");  /* 535.62(b)(8)(B), for the exam */
+
+/* Prompt-similarity measure, the same shape scripts/validate-loa-assessments.mjs uses, so a pair
+   that passes here cannot surprise the validator later. */
+const STOP = new Set("a an and are as at be by for from has have if in is it its may must no not of on or shall should than that the their them then there these they this to under was were what when which who will with would you your".split(" "));
+const tokens = (s) => (String(s).toLowerCase().match(/[a-z0-9§.()-]+/g) || []).filter((t) => t.length > 2 && !STOP.has(t));
+const jaccard = (a, b) => {
+  const A = new Set(a), B = new Set(b);
+  if (!A.size || !B.size) return 0;
+  let shared = 0; for (const t of A) if (B.has(t)) shared += 1;
+  return shared / (A.size + B.size - shared);
+};
+
+/* The validator fails a primary/replacement pair at 0.75. That is a floor, not a target: a pair
+   near it would be a reworded twin that happens to clear the check. The bank holds itself to 0.60. */
+const TWIN_CEILING = 0.60;
+/* And a quiz item that reads like one of the seven misconception checks would be counting the same
+   instruction twice, which the time evidence forbids. */
+const MISCONCEPTION_CEILING = 0.50;
+
+const unitOf = (code) => ALL_UNITS.find((u) => u.code === code);
+const screensOf = (moduleId) => {
+  const map = BLOCK_MAPS[moduleId];
+  if (!map) throw new Error(`question bank: ${moduleId} is not a Law of Agency module`);
+  const out = new Map();
+  for (const block of map.blocks) {
+    const usable = block.required !== false && block.noAssessmentMayDependOnThis !== true;
+    for (const screen of block.screens) out.set(screen.id, { usable, block: block.id });
+  }
+  return out;
+};
+const SCREENS = Object.freeze(Object.fromEntries(Object.keys(BLOCK_MAPS).map((m) => [m, screensOf(m)])));
+
+const checkItem = (item, topic) => {
+  if (!/^T(0[1-9]|1[0-2])$/.test(topic)) throw new Error(`question bank: ${topic} is not an LOA-1 topic code`);
+  if (!item.tests.startsWith(topic)) throw new Error(`question bank: ${item.id} tests ${item.tests}, which is not a unit of ${topic}`);
+  if (!unitOf(item.tests)) throw new Error(`question bank: ${item.id} tests ${item.tests}, which is not an LOA-1 unit`);
+  if (!(item.tests in UNIT_OBJECTIVES)) throw new Error(`question bank: ${item.id} traces to ${item.tests}, for which law-of-agency-course.mjs states no learning objective`);
+  /* No item may depend on optional-reference content: the screen must exist, and must sit in a
+     block that is required and not marked noAssessmentMayDependOnThis. */
+  const screens = SCREENS[item.module];
+  if (!screens) throw new Error(`question bank: ${item.id} names module ${item.module}, which has no block map`);
+  const screen = screens.get(item.screen);
+  if (!screen) throw new Error(`question bank: ${item.id} traces to screen ${item.screen}, which is not in ${item.module}'s block map`);
+  if (!screen.usable) throw new Error(`question bank: ${item.id} traces to ${item.screen} in optional block ${screen.block} — no required item may depend on optional-reference content`);
+  if (!item.source || !item.section) throw new Error(`question bank: ${item.id} names no controlling source and section`);
+  if (!item.judgement || item.judgement.length < 40) throw new Error(`question bank: ${item.id} does not state the judgement it tests`);
+  if (item.prompt.length < 120) throw new Error(`question bank: ${item.id} prompt is too thin to require reasoning`);
+  /* StateCourse policy, not a rule requirement: 22 TAC 535.62(b)(8)(B) bans true/false in the final
+     examination versions and says nothing about topic quizzes. Four options, always. */
+  if (TRUE_FALSE_PERMITTED !== false) throw new Error("question bank: the rule lock no longer records the true/false prohibition; re-read 535.62(b)(8)(B) before loading");
+  if (item.choices.length !== 4) throw new Error(`question bank: ${item.id} must offer four choices`);
+  if (new Set(item.choices.map((c) => c.trim())).size !== 4) throw new Error(`question bank: ${item.id} repeats a choice`);
+  for (const choice of item.choices) if (!choice.trim()) throw new Error(`question bank: ${item.id} has an empty choice`);
+  if (item.correctChoice !== 0) throw new Error(`question bank: ${item.id} must author the correct answer first`);
+  /* 22 TAC 535.62(b)(7)(C)(ii): the rationale is what an incorrect answer must produce, so it has
+     to teach and to name the provision that settles the item. */
+  if (!item.rationale || item.rationale.length < 200) throw new Error(`question bank: ${item.id} needs a teaching rationale`);
+  if (!/§|\bSection \d/.test(item.rationale)) throw new Error(`question bank: ${item.id} rationale names no provision`);
+  for (const check of MISCONCEPTION_CHECKS) {
+    if (jaccard(tokens(item.prompt), tokens(check.prompt)) >= MISCONCEPTION_CEILING) {
+      throw new Error(`question bank: ${item.id} reads like misconception check ${check.id}, which is instruction and is counted once`);
+    }
+  }
+};
+
+const seen = new Set();
+const topicCodes = new Set(TOPICS.map((t) => t.code));
+
+for (const [topic, items] of Object.entries(TOPIC_QUIZZES)) {
+  if (!topicCodes.has(topic)) throw new Error(`question bank: ${topic} is not on the LOA-1 form`);
+  if (items.length < MIN_PER_TOPIC) {
+    throw new Error(`question bank: ${topic} has ${items.length} primary questions; 22 TAC 535.62(b)(7)(A) requires at least ${MIN_PER_TOPIC} in each course topic`);
+  }
+  for (const item of items) {
+    if (seen.has(item.id)) throw new Error(`question bank: duplicate item id ${item.id}`);
+    seen.add(item.id);
+    if (item.kind !== "PRIMARY") throw new Error(`question bank: ${item.id} is in TOPIC_QUIZZES but is not a primary item`);
+    checkItem(item, topic);
+  }
+}
+
+/* 22 TAC 535.62(b)(7)(C)(ii) — every primary is followed, on an incorrect answer, by a related
+   successor question. Exactly one, matched by id, and never a reworded twin of its primary. */
+const replacementsById = new Map();
+for (const [topic, items] of Object.entries(REPLACEMENTS)) {
+  if (!topicCodes.has(topic)) throw new Error(`question bank: REPLACEMENTS carries ${topic}, which is not on the LOA-1 form`);
+  for (const item of items) {
+    if (seen.has(item.id)) throw new Error(`question bank: duplicate item id ${item.id}`);
+    seen.add(item.id);
+    if (item.kind !== "REPLACEMENT") throw new Error(`question bank: ${item.id} is in REPLACEMENTS but is not a replacement item`);
+    checkItem(item, topic);
+    if (replacementsById.has(item.replaces)) throw new Error(`question bank: ${item.replaces} has more than one replacement`);
+    replacementsById.set(item.replaces, item);
+  }
+}
+
+const primaries = Object.values(TOPIC_QUIZZES).flat();
+for (const primary of primaries) {
+  const replacement = replacementsById.get(primary.id);
+  if (!replacement) throw new Error(`question bank: ${primary.id} has no replacement item; 22 TAC 535.62(b)(7)(C)(ii) requires a subsequent related question`);
+  if (replacement.id !== `${primary.id}R`) throw new Error(`question bank: ${primary.id} needs a replacement with id ${primary.id}R`);
+  if (replacement.tests !== primary.tests) throw new Error(`question bank: ${replacement.id} must be related to its primary and test the same unit`);
+  if (replacement.prompt === primary.prompt) throw new Error(`question bank: ${replacement.id} repeats its primary's prompt`);
+  const similarity = jaccard(tokens(primary.prompt), tokens(replacement.prompt));
+  if (similarity >= TWIN_CEILING) {
+    throw new Error(`question bank: ${replacement.id} is a reworded twin of ${primary.id} (Jaccard ${similarity.toFixed(3)} >= ${TWIN_CEILING}); a successor question must test the rule, not the memory of which option was wrong`);
+  }
+  if (replacement.judgement === primary.judgement) {
+    throw new Error(`question bank: ${replacement.id} tests the same judgement as ${primary.id}`);
+  }
+}
+if (replacementsById.size !== primaries.length) {
+  throw new Error(`question bank: ${replacementsById.size} replacements for ${primaries.length} primaries`);
+}
+
+/* Every LOA-1 unit is assessed, and no prompt is asked twice anywhere in the bank. */
+const assessed = new Set(primaries.map((i) => i.tests));
+const unassessed = ALL_UNITS.filter((u) => !assessed.has(u.code)).map((u) => u.code);
+if (unassessed.length) throw new Error(`question bank: no primary item assesses ${unassessed.join(", ")}`);
+const prompts = new Set();
+for (const item of primaries.concat(Object.values(REPLACEMENTS).flat())) {
+  const key = item.prompt.trim().toLowerCase();
+  if (prompts.has(key)) throw new Error(`question bank: the prompt of ${item.id} is asked twice`);
+  prompts.add(key);
+}
+
+export const PRIMARY_COUNT = primaries.length;
+export const REPLACEMENT_COUNT = replacementsById.size;
+export const UNITS_ASSESSED = assessed.size;
+
+/**
+ * The flat views return the SAME frozen item objects the maps hold, and they are FUNCTIONS.
+ *
+ * This matters beyond tidiness, and it has cost this project once already. The project-wide bank
+ * walk in tests/question-bank-integrity.test.mjs enumerates every export of every bank and collects
+ * every object carrying a prompt and a choices array, wherever it sits. An exported array of spread
+ * copies is therefore counted as a second set of items — it made the Principles II bank read as 176
+ * items rather than 44 and tripped that file's repeated-prompt check, because every prompt genuinely
+ * did appear twice among the objects walked. A function is not walked, so returning the originals
+ * from a function keeps one item one object. The topic is recoverable from the unit code the item
+ * already carries, which is what topicOf does.
+ */
+export const allItems = () => Object.values(TOPIC_QUIZZES).flat();
+export const allReplacements = () => Object.values(REPLACEMENTS).flat();
+export const replacementFor = (id) => allReplacements().find((r) => r.replaces === id);
+export const topicOf = (item) => String(item.tests).slice(0, 3);
+export const objectiveFor = (item) => UNIT_OBJECTIVES[item.tests];
+
+/* No default export. The project-wide bank walk imports every module value, and a default that
+   repeated the named exports would double-count every item in the file. Principles I and
+   Principles II carry the same note for the same reason. */

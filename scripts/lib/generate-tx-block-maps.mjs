@@ -22,6 +22,59 @@
  * config/texas/principles-i-block-retrieval.mjs, itself adapted from the existing formative
  * question bank (config/texas/principles-i-question-bank.mjs) plus newly authored items for the
  * units that bank doesn't yet cover — see scripts/build-tx-retrieval-bank.mjs.
+ *
+ * ─────────────────────────────────────────────────────────────────────────────────────────────
+ * NOT BUILT: THE `screenMedia` HOOK. This is where it goes, and this is what it must ship with.
+ * ─────────────────────────────────────────────────────────────────────────────────────────────
+ *
+ * THE GAP. California attaches its videos through scripts/lib/generate-ca-block-maps.mjs's
+ * `spec.screenMedia` mechanism: a hand-authored media spec, keyed by generated screen id, merged
+ * onto the screen it names, which REFUSES TO GENERATE if the id is unknown. This generator has no
+ * equivalent. So there is today no supported route to attach a video to a Texas screen — and the
+ * only unsupported one, hand-editing a generated block map, is forbidden by those files' own
+ * headers and is erased by the next regeneration. DO NOT HAND-EDIT A GENERATED COURSE FILE.
+ *
+ * WHAT IS WAITING ON IT. The three Texas Law of Agency videos, whose editorial and legal package is
+ * complete and frozen at LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 but which are NOT RENDERED and NOT
+ * ACTIVE. Their intended placements are t02u5-s1, t05u3-s1 and t06u3-s1. Nothing is wired, and
+ * nothing may be wired before this hook exists AND the MP4, poster, shipping VTT and transcript all
+ * exist and have passed factual, visual and accessibility QC. See
+ * texas/tx-law-of-agency-30-v1/video-instruction-plan.md §10.3.
+ *
+ * THE SHAPE. Follow California: `spec.screenMedia` is an object keyed by generated screen id, whose
+ * values carry `videos` and/or `documents`; unknown ids throw at generation time rather than being
+ * silently dropped. It goes through the generator schema, not into a generated file.
+ *
+ * THE TESTS IT MUST SHIP WITH. Each of these is a test, not a note. A hook that lands without them
+ * can attach a video to the wrong screen, to a blocking screen, or to a screen the student is being
+ * assessed on, and nothing will say so.
+ *
+ *   1.  EXACT SCREEN PLACEMENT. A media entry attaches to the screen id it names and to no other.
+ *       An entry naming a screen the generator did not emit REFUSES TO GENERATE — it must not be
+ *       dropped, warned about, or attached to a near-miss id.
+ *   2.  `required: false`. Every attached media entry is optional. The generator refuses an entry
+ *       that omits it or sets it true.
+ *   3.  NON-BLOCKING PROGRESSION. The screen's completion, and the block's, do not depend on the
+ *       media. A student who never opens it progresses identically: no progress gate, no completion
+ *       requirement, no assessment dependency, no autoplay.
+ *   4.  MP4, VTT, TRANSCRIPT AND POSTER PRESENCE. All four assets resolve on disk at the paths the
+ *       entry names. A missing one is a generation failure, not a broken player at runtime.
+ *   5.  ACCESSIBLE PLAYER CONTROLS AND KEYBOARD ACCESS. The emitted entry carries the controls the
+ *       player needs and is reachable and operable by keyboard alone, in the screen's tab order.
+ *   6.  CAPTION AVAILABILITY. A caption track is present, is served, and is selectable — and it is
+ *       the SHIPPING .vtt, never a file whose name or NOTE block marks it provisional.
+ *   7.  NO OVERLAP WITH THE StateCourse LOGO. The player's rendered box does not intersect the
+ *       logo's region on any supported viewport.
+ *   8.  NO SECURE ASSESSMENT CONTENT. The media carries no quiz question, self-test, poll, answer or
+ *       answer recap, and no item drawn from a retrieval or final-exam bank.
+ *   9.  NO VIDEO ON THE RETRIEVAL SCREEN. A media entry keyed to a screen of type "retrieval"
+ *       REFUSES TO GENERATE. Retrieval happens on its own screen with the video, the document and
+ *       the visible answers no longer displayed; that separation must be enforced here, not
+ *       remembered by whoever authors the spec.
+ *   10. NO ACTIVATION WHEN ANY REQUIRED MEDIA ASSET IS ABSENT. If MP4, poster, shipping VTT or
+ *       transcript is missing, the screen generates with NO media at all rather than with a partial
+ *       player. There is no such thing as a half-attached video: a dead player, a nonfunctional
+ *       poster, a decorative badge or an unavailable transcript is worse than no video.
  */
 
 import fs from "node:fs";
