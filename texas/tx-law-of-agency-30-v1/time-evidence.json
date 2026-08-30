@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 107765,
+    "proseWords": 107785,
     "statuteReadingExercises": 21,
-    "appliedExercises": 31,
+    "appliedExercises": 30,
     "moduleRecaps": 12,
-    "exerciseWords": 14575,
+    "exerciseWords": 14248,
     "recapWords": 13299,
-    "totalWords": 138602
+    "totalWords": 138630
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,7 +28,7 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "107,765 words at 140 wpm",
+      "basis": "107,785 words at 140 wpm",
       "minutes": 770,
       "measured": true
     },
@@ -40,8 +40,8 @@
     },
     {
       "segment": "worked examples (applied exercises)",
-      "basis": "31 exercises x 10 min",
-      "minutes": 310,
+      "basis": "30 exercises x 10 min",
+      "minutes": 300,
       "measured": true
     },
     {
@@ -63,8 +63,8 @@
       "measured": false
     }
   ],
-  "requiredMinutes": 1588,
-  "varianceMinutes": 88,
+  "requiredMinutes": 1578,
+  "varianceMinutes": 78,
   "meetsPrescribed": true,
   "conditional": [
     {
@@ -87,13 +87,13 @@
     },
     {
       "segment": "optional reference material",
-      "basis": "2,963 words moved out of required prose, at 140 wpm",
-      "minutes": 21,
+      "basis": "3,298 words moved out of required prose, at 140 wpm",
+      "minutes": 24,
       "reason": "sourced depth beyond what the topic's units require; in the course, not required to complete it"
     },
     {
       "segment": "mastery review",
-      "basis": "107,765 words at 60 wpm",
+      "basis": "107,785 words at 60 wpm",
       "minutes": 1796,
       "reason": "an upper bound on diligent study, never required time"
     },
@@ -320,20 +320,20 @@
       "topic": "Deceptive Trade Practices and Consumer Protection Act",
       "units": 5,
       "prescribedMinutes": 140,
-      "sha256": "34f764415efc48181f5c9613f48a5074c989560c30f97c84f2d5f11007f1f588",
-      "totalWords": 11649,
-      "proseWords": 8588,
+      "sha256": "f9b8656f276fcfd8c7be5e1904f81c480a04e831b7bd17419bc9e7178a7818ed",
+      "totalWords": 11677,
+      "proseWords": 8608,
       "statuteReadingExercise": 2,
-      "appliedExercise": 3,
+      "appliedExercise": 2,
       "moduleRecap": 1,
       "optionalReference": 1,
-      "exerciseWords": 1423,
+      "exerciseWords": 1096,
       "recapWords": 1497,
-      "optionalReferenceWords": 141,
+      "optionalReferenceWords": 476,
       "readingMinutes": 61,
-      "activityMinutes": 89,
-      "requiredMinutes": 150,
-      "varianceMinutes": 10
+      "activityMinutes": 79,
+      "requiredMinutes": 140,
+      "varianceMinutes": 0
     },
     {
       "file": "module-12.md",

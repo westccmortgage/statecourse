@@ -13,7 +13,7 @@
     "module-08.md": "9bb132b7b79fb05862e3a87865a8ac292b2ad27e9ad9ccc5d43ebb01653bc8ef",
     "module-09.md": "be2c3bebc1f3cf307c84e073bc5939f2f1d05fa11dce45a3721e86f3adbffc77",
     "module-10.md": "544bf9a4dfdf980a3176267fdb5e8d0ebb558d0e56c88ceb8270958f16560e52",
-    "module-11.md": "34f764415efc48181f5c9613f48a5074c989560c30f97c84f2d5f11007f1f588",
+    "module-11.md": "f9b8656f276fcfd8c7be5e1904f81c480a04e831b7bd17419bc9e7178a7818ed",
     "module-12.md": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566"
   },
   "totals": {
@@ -22,11 +22,11 @@
       "MECHANICAL_PASS": 2037,
       "IDENTIFIED_NOT_TAUGHT": 1
     },
-    "quotesChecked": 957,
+    "quotesChecked": 959,
     "quotesFailed": 29,
     "quotesUnattributable": 326,
     "quotesPassed": 793,
-    "quotesPassedOutsideSection": 62,
+    "quotesPassedOutsideSection": 64,
     "quotesAttributionReview": 73,
     "quotesTruncationReview": 34
   },
@@ -1846,6 +1846,30 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 17.45; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "an unconscionable action or course of action that cannot be characterized as advice, judgment, or opinion."
+    },
+    {
+      "id": "bb0361365358",
+      "module": "module-11",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.655"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.655; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "This subchapter does not limit the commission's authority to take disciplinary action against a license or certificate holder for a violation of this chapter or a commission rule,"
+    },
+    {
+      "id": "15826f4e6c96",
+      "module": "module-11",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.615"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.615; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "a license or certificate holder's repayment of all amounts owed to the trust account does not affect another disciplinary proceeding brought under this chapter."
     },
     {
       "id": "4b499346092f",

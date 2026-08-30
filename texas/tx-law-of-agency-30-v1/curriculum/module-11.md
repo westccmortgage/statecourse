@@ -239,7 +239,7 @@ this section." For a private consumer suit the laundry list is a closed list.
 **The laundry list, applied to real estate.** Section 17.46(b) opens by providing that, "Except as
 provided in Subsection (d) of this section," the term false, misleading, or deceptive acts or
 practices "includes, but is not limited to, the following acts". Most of the thirty-four subdivisions
-that follow — odometer tampering, kosher labelling, pyramid schemes — will never touch your practice.
+that follow — odometer tampering, kosher labelling, pyramid schemes — never touch your practice.
 These will.
 
 *§ 17.46(b)(5) — "representing that goods or services have sponsorship, approval, characteristics,
@@ -340,9 +340,9 @@ receipt: the sixty days in § 17.505(a) and the thirty-day tender window in § 1
 
 What you do the day it lands is practice, not law, and this course states no authority for it. Note
 the date of receipt. Do not telephone the consumer, answer the allegations, or apologise; everything
-you say now is evidence. Notify your sponsoring broker and your errors and omissions carrier the same
-day, because late notice can forfeit coverage. Preserve the whole file, alter nothing, and get the
-letter to counsel within days.
+you say now is evidence. Notify your sponsoring broker and your E&O carrier the same day, because
+late notice can forfeit coverage. Preserve the whole file, alter nothing, and get the letter to
+counsel within days.
 
 Two situations excuse the notice. Section 17.505(b): "If the giving of 60 days' written notice is
 rendered impracticable by reason of the necessity of filing suit in order to prevent the expiration
@@ -388,7 +388,7 @@ not include exemplary damages or damages for physical pain and mental anguish, l
 disfigurement, physical impairment, or loss of companionship and society." The item to notice in the
 exclusive half is mental anguish: a separate category, available only as § 17.50(b)(1) allows.
 
-**Section 17.50(b)(1) is the damages engine.** It provides that in a suit filed under the section,
+**Section 17.50(b)(1) is the damages engine.** In a suit filed under the section,
 "each consumer who prevails may obtain: (1) the amount of economic damages found by the trier of
 fact. If the trier of fact finds that the conduct of the defendant was committed knowingly, the
 consumer may also recover damages for mental anguish, as found by the trier of fact, and the trier
@@ -397,7 +397,7 @@ finds the conduct was committed intentionally, the consumer may recover damages 
 as found by the trier of fact, and the trier of fact may award not more than three times the amount
 of damages for mental anguish and economic damages".
 
-Break that one sentence into its three tiers.
+Break that sentence into its three tiers.
 
 *Tier one — an ordinary violation.* The consumer recovers "the amount of economic damages found by
 the trier of fact." No mental anguish. No multiplier. Economic damages, full stop — plus the costs
@@ -416,8 +416,8 @@ anguish joins the base. That is the entire difference between tier two and tier 
 with substantial mental anguish findings it is an enormous difference.
 
 **Worked example one: the Round Rock square footage claim.** The buyers paid $505,000 for a house
-advertised at 2,900 square feet that measures 2,640. Assume economic damages of $22,000, reasonable
-and necessary attorneys' fees of $48,000 and court costs of $3,200.
+advertised at 2,900 square feet that measures 2,640. Assume economic damages of $22,000, attorneys'
+fees of $48,000 and court costs of $3,200.
 
 At tier one, with no culpability finding, the judgment is economic damages of $22,000, plus $48,000
 in fees and $3,200 in costs, for a total of **$73,200**. The fee award is nearly twice the damages.
@@ -442,12 +442,12 @@ infer that state of mind from objective manifestations.
 
 **Do not include fees in the multiplier base.** Section 17.50(e) is explicit: "In computing
 additional damages under Subsection (b), attorneys' fees, costs, and prejudgment interest may not be
-considered." In the tier three calculation above, that is why the base was $37,000 and not $37,000
-plus $51,200. A student who trebles the whole judgment has misread the statute.
+considered." That is why the tier three base was $37,000 and not $37,000 plus $51,200. A student who
+trebles the whole judgment has misread the statute.
 
-**Prejudgment interest.** Section 17.50(f) provides that a court "may not award prejudgment interest
-applicable to: (1) damages for future loss under this subchapter; or (2) additional damages under
-Subsection (b)." Interest does not run on the multiplier.
+**Prejudgment interest.** Section 17.50(f): a court "may not award prejudgment interest applicable
+to: (1) damages for future loss under this subchapter; or (2) additional damages under Subsection
+(b)." Interest does not run on the multiplier.
 
 **Attorneys' fees, in both directions.** Section 17.50(d) is unconditional for the consumer: "Each
 consumer who prevails shall be awarded court costs and reasonable and necessary attorneys' fees."
@@ -462,22 +462,22 @@ acquired in violation of this subchapter" — under which a commission you were 
 returned. Section 17.50(b)(4) permits "any other relief which the court deems proper,
 including the appointment of a receiver or the revocation of a license or certificate authorizing a
 person to engage in business in this state if the judgment has not been satisfied within three
-months of the date of the final judgment." Read the limitation that immediately follows: "The court
+months of the date of the final judgment." Then the limitation: "The court
 may not revoke or suspend a license to do business in this state or appoint a receiver to take over
 the affairs of a person who has failed to satisfy a judgment if the person is a licensee of or
 regulated by a state agency which has statutory authority to revoke or suspend a license or to
-appoint a receiver or trustee." You are regulated by TREC, which holds revocation authority, so the
-civil court will not revoke your real estate license. TREC may still do so.
+appoint a receiver or trustee." TREC holds revocation authority over you, so the civil court will not
+revoke your real estate license. TREC may still do so.
 
 **Chapter 41 does not apply.** Section 17.50(g) states flatly: "Chapter 41, Civil Practice and
 Remedies Code, does not apply to a cause of action brought under this subchapter." The general Texas
 exemplary damages caps are unavailable to a DTPA defendant; the only ceiling is the one inside
 § 17.50(b)(1) itself.
 
-**A limit on mental anguish that students miss.** Section 17.49(e) provides: "Except as specifically
-provided by Subsections (b) and (h), Section 17.50, nothing in this subchapter shall apply to a
-cause of action for bodily injury or death or for the infliction of mental anguish." The DTPA is not
-a vehicle for a stand-alone emotional distress claim.
+**A limit on mental anguish that students miss.** Section 17.49(e): "Except as specifically provided
+by Subsections (b) and (h), Section 17.50, nothing in this subchapter shall apply to a cause of
+action for bodily injury or death or for the infliction of mental anguish." The DTPA is not a vehicle
+for a stand-alone emotional distress claim.
 
 ### Applied exercise: Computing the exposure in Mansfield
 
@@ -506,9 +506,9 @@ attorneys' fees of $62,000 and court costs of $4,100.
 ## Unit: Defenses
 
 Take the defenses in the order a case unfolds: exemption, procedural prerequisite, limitations, then
-the substantive defenses to damages.
+the substantive defenses.
 
-**The exemptions in § 17.49, beginning with the one written for you.** Section 17.49(i) provides:
+**The exemptions in § 17.49, beginning with the one written for you.** Section 17.49(i):
 "Nothing in this subchapter shall apply to a claim against a person licensed as a broker or
 salesperson under Chapter 1101, Occupations Code, arising from an act or omission by the person
 while acting as a broker or salesperson." Then, immediately: "This exemption does not apply to: (1)
@@ -558,10 +558,10 @@ All three conditions, joined by "and." More than $100,000 — not $100,000 or mo
 defines "Residence" as a building "(A) that is a single-family house, duplex, triplex, or quadruplex
 or a unit in a multiunit residential structure in which title to the individual units is transferred
 to the owners under a condominium or cooperative system; and (B) that is occupied or to be occupied
-as the consumer's residence" — both the building type *and* the occupancy. A $640,000 house bought by
-a family who will live in it is over $100,000 but involves the consumer's residence, so condition (3)
-fails, and most residential buyers have no lawyer, so condition (2) fails too. **The § 17.49(f)
-exemption almost never protects a residential license holder.**
+as the consumer's residence" — both the building type *and* the occupancy. A $640,000 house a family
+will live in is over $100,000 but involves the consumer's residence, so condition (3) fails, and most
+residential buyers have no lawyer, so condition (2) fails too. **The § 17.49(f) exemption almost
+never protects a residential license holder.**
 
 Section 17.49(g) is larger and simpler: "Nothing in this subchapter shall apply to a cause of action
 arising from a transaction, a project, or a set of transactions relating to the same project,
@@ -578,9 +578,9 @@ the person files an original answer in the court in which the suit is pending. T
 not apply if Subsection (b) applies." Thirty days from your original answer — miss that window and
 the tool is gone. Abatement is not dismissal, but it is real leverage and delay.
 
-**The § 17.506(a) reliance-on-written-information defense.** This is the defense aimed most directly
-at what a license holder does all day: repeating information gathered from records and from other
-people. Section 17.506(a): "In an action brought under Section 17.50 of this subchapter, it is a
+**The § 17.506(a) reliance-on-written-information defense.** This defense is aimed at what a license
+holder does all day: repeating information gathered from records and other people. Section
+17.506(a): "In an action brought under Section 17.50 of this subchapter, it is a
 defense to the award of any damages or attorneys' fees if the defendant proves that before
 consummation of the transaction he gave reasonable and timely written notice to the plaintiff of the
 defendant's reliance on: (1) written information relating to the particular goods or service in
@@ -608,7 +608,7 @@ defensive finding under Subdivision (1), (2), or (3) of Subsection (a) of Sectio
 producing cause of damages of the plaintiff." The defense is claim-specific: defending the square
 footage does not immunise you on the roof.
 
-Section 17.506(c) then opens the door to the real defendant: "In a suit where a defense is asserted
+Section 17.506(c) opens the door to the real defendant: "In a suit where a defense is asserted
 under Subdivision (2) of Subsection (a) of Section 17.506 above, suit may be asserted against the
 third party supplying the written information without regard to privity where the third party knew
 or should have reasonably foreseen that the information would be provided to a consumer; provided no
@@ -627,7 +627,7 @@ any, reasonably incurred by the consumer in asserting the claim against the defe
 
 Thirty days from receipt, and tender of the full amount claimed in both categories. Do that and you
 have a defense to the cause of action itself: no mental anguish, no multiplier, no growing fee award
-— a $22,000 demand tendered inside thirty days against a potential $199,200 judgment.
+— a $22,000 demand tendered against a potential $199,200 judgment.
 
 **Limitations, § 17.565.** The section reads in full: "All actions brought under this subchapter
 must be commenced within two years after the date on which the false, misleading, or deceptive act
@@ -730,10 +730,10 @@ of the date the cause of action accrues." The account is not a first resort: § 
 court judgment first and then, "after final judgment is entered, execution returned nulla bona, and a
 judgment lien perfected, file a verified claim in the court that entered the judgment." *Nulla bona*
 is the sheriff's return meaning no property was found to seize. And § 1101.607(2)(B) bars a license
-holder seeking compensation, including a commission, in the transaction concerned: the fund is a
-consumer remedy, not a fee-collection device.
+holder seeking a commission in the transaction concerned: the fund is a consumer remedy, not a
+fee-collection device.
 
-**The caps — state them exactly.** Section 1101.610(a): "Payments from the trust account for claims,
+**The caps, exactly.** Section 1101.610(a): "Payments from the trust account for claims,
 including attorney's fees, interest, and court costs, arising out of a single transaction may not
 exceed a total of $125,000, regardless of the number of claimants." Section 1101.610(b): "Payments
 from the trust account for claims based on judgments against a single license or certificate holder
@@ -741,8 +741,8 @@ may not exceed a total of $250,000 until the license or certificate holder has r
 account for all amounts paid."
 
 **$125,000 per transaction, regardless of the number of claimants. $250,000 per license holder**,
-the second ceiling lifting only on full reimbursement. Both are inclusive of attorney's fees,
-interest and court costs — the $125,000 is not damages plus fees, it is everything. Section
+the second lifting only on full reimbursement. Both are inclusive of attorney's fees, interest and
+court costs — the $125,000 is not damages plus fees, it is everything. Section
 1101.610(c): "If the court finds that the total amount of claims against a license or certificate
 holder exceeds the limitations in this section, the court shall proportionately reduce the amount
 payable on each claim." And § 1101.610(e): "For purposes of this section, a business entity and the
@@ -766,6 +766,12 @@ registration holder." Thirty-one days. Section 1101.655(c): "A person is not eli
 or certificate until the person has repaid in full the amount paid from the account for the person,
 plus interest at the legal rate." Section 1101.655(d) applies the same machinery to "both the
 business entity and designated broker."
+
+Repaying the account does not settle the other track. Section 1101.613: "This subchapter does not
+limit the commission's authority to take disciplinary action against a license or certificate holder
+for a violation of this chapter or a commission rule," and "[a] license or certificate holder's
+repayment of all amounts owed to the trust account does not affect another disciplinary proceeding
+brought under this chapter."
 
 One duty falls on you directly: § 1101.615(a) requires the Commission by rule to "prescribe a notice
 regarding the availability of payment from the trust account for aggrieved persons and establish
@@ -894,13 +900,13 @@ scenario or examination item is drawn from it. It is here because a license hold
 the practice, not because the course requires you to read it. Skip it and you have missed nothing
 that the module, its exercises or its assessments depend on.
 
-The exercise below is additional practice on the Real Estate Recovery Trust Account taught in Unit 5.
-It uses a fact pattern the two required exercises do not — an insolvent judgment debtor, a second
-competing claimant, the statutory caps applied to an actual judgment, and the subrogation and
-revocation that follow a payment. Every provision it relies on is taught in the required prose of
-Unit 5.
+The practice below is optional and ungraded. It uses a fact pattern the two required exercises do not
+— an insolvent judgment debtor, a second competing claimant, the statutory caps applied to an actual
+judgment, and the subrogation and revocation that follow a payment. Every provision it relies on is
+taught in the required prose of Unit 5, so nothing here is new law; it is only a chance to work the
+trust-account arithmetic through by hand.
 
-### Applied exercise: The unpaid judgment in Waco
+**Optional practice: the unpaid judgment in Waco.**
 
 A buyer obtains a final judgment of $164,000 against a sales agent arising from a single transaction
 in Waco — $58,000 in economic damages, $26,000 in additional damages, $71,000 in attorney's fees and

@@ -54,8 +54,17 @@ for (const [index, topic] of TOPICS.entries()) {
   const recapAt = md.search(/^### Module recap\s*$/m);
 
   const blocks = [];
+  /* An exercise heading INSIDE the optional reference section is optional practice, and must not be
+     charged to every student. Without this filter the script billed all students for optional work
+     — module 11 reported +10 minutes of variance for an exercise its author had already moved to
+     the optional section — which forced two authors to label optional exercises as bold text rather
+     than headings just to get an honest number. The structural checker already had this filter; the
+     time script did not, and the convention should not depend on which script is looking. */
+  const optionalStart = md.search(/^## Optional reference: /m);
+  const inOptional = (i) => optionalStart >= 0 && i > optionalStart;
   const take = (re, kind) => {
     for (const m of md.matchAll(re)) {
+      if (kind !== "optionalReference" && inOptional(m.index)) continue;
       const end = headings.find((i) => i > m.index) ?? md.length;
       blocks.push({ kind, start: m.index, end });
     }

@@ -73,10 +73,10 @@ export const RATES = Object.freeze({
  * T08 still carry three. Scenarios sit on four topics spread through the course.
  */
 const PLAN = {
-  T01: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0 },
-  T02: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0 },
+  T01: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
+  T02: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
   T03: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1 },
-  T04: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0 },
+  T04: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
   T05: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
   /* The largest topic in the course and the one whose law is least compressible; it keeps the
      fullest exercise load. */
