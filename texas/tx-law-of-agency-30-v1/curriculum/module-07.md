@@ -160,46 +160,6 @@ license holder is acting." And do not create an agency on top of somebody else's
 reaches negotiating with a party you know is bound by an outstanding written exclusive agency to
 another broker, though 22 TAC § 535.153 confirms you may still solicit the *future* listing.
 
-### Statute reading exercise: The two 2026 sections, read side by side
-
-Open Occupations Code § 1101.562 and § 1101.563 and read both in full before answering.
-
-1. Section 1101.563(b) says a written agreement is required before "showing any residential real
-   property to the prospective buyer." Section 1101.562 permits showings without representation.
-   Reading them together, does § 1101.562 relieve a license holder of the § 1101.563 writing
-   requirement when the property is a single-family house? Point to the language that decides it.
-2. Section 1101.563(a) defines "residential real property" in three subdivisions. Name two property
-   types a Texas license holder commonly shows that fall *outside* that definition, and say what the
-   consequence is for the writing requirement.
-3. Section 1101.562(c) begins "Notwithstanding Subsections (a)(3) and (4)." Which two prohibitions
-   does that clause qualify, and what exactly does it let you say?
-4. Section 1101.563(e) limits showing-only agreements in two ways. State both, and explain why a
-   fourteen-day cap makes sense for an agreement that is required to be non-exclusive.
-5. What does § 1101.563 say about *tenants*? Answer from the text, not from what you expect it to say.
-
-### Applied exercise: The open house on Tuloso Road
-
-You are a sales agent sponsored by Vela Realty in Corpus Christi. Your brokerage does not have the
-listing on 4418 Tuloso Road, a single-family house listed at $312,000 by another firm, but the listing
-broker has asked Vela to staff the Saturday open house. A couple arrives at 1:15 p.m. They tell you
-they have been loosely working with an agent at a third brokerage but have signed nothing. They ask
-to walk through. Inside, the husband asks whether you think the seller would take $295,000.
-
-1. Before they step past the door, what does § 1101.563(b) require of you, and why does § 1101.558(c)(3)
-   not excuse it?
-2. If they sign a showing-only agreement under § 1101.562 at 1:15 p.m. on Saturday, March 7, what is
-   the latest termination date the agreement may state under § 1101.563(e)(2)? Give the date.
-3. Answer the husband's question the way § 1101.562(a)(3) and § 1101.562(c) require. Write out what you
-   may say and what you may not say, and identify which subsection governs each.
-4. Suppose you answer that you think the seller would take $295,000 and that you would offer it.
-   Identify the condition in
-   § 1101.562(a) you have just failed, and explain what your status with these buyers now is under
-   § 1101.557(a) and 22 TAC § 531.2.
-5. The couple later buys the house through their original agent, and you claim a fee from the seller
-   on the theory that you procured them. The seller never signed anything with you or with Vela. Under
-   § 1101.806(c), can Vela maintain an action for that commission? Identify the specific element that
-   fails.
-
 ## Unit: How Agency is Terminated
 
 An agency relationship is not a possession; it is a state of affairs that persists only while its
@@ -615,30 +575,6 @@ Open Occupations Code § 1101.651 and read subsections (a) through (d) in full.
 5. Subsection (b) contains two clauses about who may compensate a sales agent. Write out the second
    clause and explain what practical situation it exists to permit.
 
-### Applied exercise: The earnest money after the deal dies
-
-Bright Star Realty in Killeen holds $6,000 of earnest money in its designated trust account on a
-contract for 2209 Comanche Gap Road. The contract terminates unperformed on May 29. On June 12 the
-buyer delivers a written demand for return of the full $6,000. On June 18 the seller emails Bright
-Star's broker demanding the same $6,000 as liquidated damages. The listing agreement, signed
-January 15 with a termination date of July 15, provides for total compensation of 3 percent to the
-listing broker on a list price of $335,000.
-
-1. Under 22 TAC § 535.146(d)(2), what is the deadline for Bright Star to pay the trust money to the
-   party entitled to it, and from what date does it run? Give the date.
-2. The broker cannot tell who is entitled. What does § 535.146(d)(5) permit, and is it mandatory or
-   permissive? Quote the operative words.
-3. Suppose instead that on June 20 both parties sign a written agreement splitting the earnest money
-   $4,000 to the buyer and $2,000 to the seller, and Bright Star receives it that day. Under
-   § 535.146(d)(3), by what date must Bright Star pay, and what additional step does § 535.146(d)(4)
-   require?
-4. The property later sells within the listing term at $335,000 and Bright Star's 3 percent is paid at
-   closing into the trust account by mistake on September 4. Compute the amount, and state the deadline
-   under § 535.146(c)(5) for removing it from the trust account. Give the date.
-5. The transaction closes September 4, 2026. Under 22 TAC § 535.2, through what date must Bright Star
-   maintain the listing agreement and the substantive communications with the parties? Give the date,
-   and name two other categories on that rule's list that must be kept for the same period.
-
 ### Module recap
 
 Agency in Texas is a state of affairs with a beginning, an end, and a tail. The beginning is fixed by
@@ -710,3 +646,38 @@ those terms were not held.** Liability: Civil Practice & Remedies Code § 16.004
 from accrual for "debt" and for "breach of fiduciary duty," which is the real answer to a licensee who
 asks how long an old file can come back. The authority ends on a date; the obligations of the
 relationship keep running long after it.
+
+## Optional reference: Optional trust-money practice after a terminated contract
+
+This section is **optional**. Nothing in it is required to complete this topic, and no quiz,
+scenario or examination item is drawn from it. It is here because the law it covers is real and a
+license holder may need it, not because the course requires you to read it. You may skip it and go
+straight to the next module; no later instruction or assessment depends on it.
+
+**Optional practice — the earnest money after the deal dies.** This exercise is optional. The
+required work in this topic tests what survives termination as a matter of duty; this one is date
+arithmetic on the disbursement deadlines in 22 TAC § 535.146(d), which no required question in this
+course asks, and it puts you in the position of a broker holding money two people have demanded in
+writing.
+
+Bright Star Realty in Killeen holds $6,000 of earnest money in its designated trust account on a
+contract for 2209 Comanche Gap Road. The contract terminates unperformed on May 29. On June 12 the
+buyer delivers a written demand for return of the full $6,000. On June 18 the seller emails Bright
+Star's broker demanding the same $6,000 as liquidated damages. The listing agreement, signed
+January 15 with a termination date of July 15, provides for total compensation of 3 percent to the
+listing broker on a list price of $335,000.
+
+1. Under 22 TAC § 535.146(d)(2), what is the deadline for Bright Star to pay the trust money to the
+   party entitled to it, and from what date does it run? Give the date.
+2. The broker cannot tell who is entitled. What does § 535.146(d)(5) permit, and is it mandatory or
+   permissive? Quote the operative words.
+3. Suppose instead that on June 20 both parties sign a written agreement splitting the earnest money
+   $4,000 to the buyer and $2,000 to the seller, and Bright Star receives it that day. Under
+   § 535.146(d)(3), by what date must Bright Star pay, and what additional step does § 535.146(d)(4)
+   require?
+4. The property later sells within the listing term at $335,000 and Bright Star's 3 percent is paid at
+   closing into the trust account by mistake on September 4. Compute the amount, and state the deadline
+   under § 535.146(c)(5) for removing it from the trust account. Give the date.
+5. The transaction closes September 4, 2026. Under 22 TAC § 535.2, through what date must Bright Star
+   maintain the listing agreement and the substantive communications with the parties? Give the date,
+   and name two other categories on that rule's list that must be kept for the same period.

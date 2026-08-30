@@ -65,7 +65,14 @@ for (const [index, topic] of TOPICS.entries()) {
   const take = (re, kind) => {
     for (const m of md.matchAll(re)) {
       if (kind !== "optionalReference" && inOptional(m.index)) continue;
-      const end = headings.find((i) => i > m.index) ?? md.length;
+      /* The optional reference section runs to END OF FILE, not to the next heading. My previous
+         attempt at this ended it at the next heading while also skipping exercise headings inside
+         it — so an optional exercise given a proper "###" heading fell into NEITHER block and its
+         body was counted as required prose, which is the opposite of what moving it there means.
+         Two authors caught this and encoded their optional exercises as bold text instead, which
+         was the only honest encoding available to them. It is now handled properly and a normal
+         heading works. */
+      const end = kind === "optionalReference" ? md.length : (headings.find((i) => i > m.index) ?? md.length);
       blocks.push({ kind, start: m.index, end });
     }
   };

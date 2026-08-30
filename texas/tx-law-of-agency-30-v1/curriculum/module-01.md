@@ -838,30 +838,6 @@ agreement. *Has that been made clear to everyone in the room?* That is § 1101.5
 If you can answer those three questions at every stage of every file, you have done most of what
 this course exists to teach.
 
-### Applied exercise: The Beaumont net listing and the sponsoring broker
-
-Ana is a sales agent sponsored by Broker C. A Beaumont seller, Mr. Okafor, tells Ana he wants
-$240,000 *in his pocket* and says she can keep anything above that. Ana believes the house will sell
-for $275,000. Ana has prepared no written analysis of value. Broker C's written scope notice
-authorises Ana to take residential listings but says nothing about net listings. Ana signs the
-listing in her own name and lists the property with no stated termination date.
-
-1. Under 22 TAC § 535.16(b), is Ana's arrangement a net listing? Quote the definition and apply it.
-   State the two conditions the rule requires before a broker may take one, and the two protections
-   the listing agreement must contain if one is used.
-2. If the house sells for $275,000, compute Ana's compensation under the net arrangement and compare
-   it to a 6% commission on the same sale price. State the dollar difference and explain, using the
-   rule's own reasoning in § 535.16(b), why the difference is a loyalty problem rather than merely a
-   large fee.
-3. Ana signed the listing in her own name. Which subsection of 22 TAC § 535.2 does that violate, and
-   what does it say? Under § 1101.803, does Ana's error create exposure for Broker C? Quote the
-   sentence.
-4. The listing has no stated termination date. Identify the subdivision of § 1101.652(b) that this
-   violates, quote it, and state the two things the termination date must be.
-5. Broker C's scope notice is silent on net listings. Under 22 TAC § 535.2(a), what is Broker C's
-   position if Broker C permitted Ana to conduct activities beyond the scope explicitly authorised?
-   Quote the sentence that answers this.
-
 ### Module recap
 
 This module began with an idea and ended with a filing discipline, and the through-line between them

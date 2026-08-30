@@ -12,36 +12,36 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 107785,
-    "statuteReadingExercises": 21,
-    "appliedExercises": 30,
+    "proseWords": 105536,
+    "statuteReadingExercises": 20,
+    "appliedExercises": 24,
     "moduleRecaps": 12,
-    "exerciseWords": 14248,
+    "exerciseWords": 12199,
     "recapWords": 13299,
-    "totalWords": 138630
+    "totalWords": 135224
   },
   "plannedNotBuilt": {
     "quizItems": 58,
-    "scenarios": 4,
+    "scenarios": 5,
     "note": "Quizzes and scenarios are budgeted but not yet authored. Their minutes are a plan, not a measurement, and are marked measured:false."
   },
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "107,785 words at 140 wpm",
-      "minutes": 770,
+      "basis": "105,536 words at 140 wpm",
+      "minutes": 754,
       "measured": true
     },
     {
       "segment": "required document review (statute reading exercises)",
-      "basis": "21 exercises x 12 min",
-      "minutes": 252,
+      "basis": "20 exercises x 12 min",
+      "minutes": 240,
       "measured": true
     },
     {
       "segment": "worked examples (applied exercises)",
-      "basis": "30 exercises x 10 min",
-      "minutes": 300,
+      "basis": "24 exercises x 10 min",
+      "minutes": 240,
       "measured": true
     },
     {
@@ -58,13 +58,13 @@
     },
     {
       "segment": "required scenario exercises",
-      "basis": "4 scenarios x 20 min",
-      "minutes": 80,
+      "basis": "5 scenarios x 20 min",
+      "minutes": 100,
       "measured": false
     }
   ],
-  "requiredMinutes": 1578,
-  "varianceMinutes": 78,
+  "requiredMinutes": 1510,
+  "varianceMinutes": 10,
   "meetsPrescribed": true,
   "conditional": [
     {
@@ -87,14 +87,14 @@
     },
     {
       "segment": "optional reference material",
-      "basis": "3,298 words moved out of required prose, at 140 wpm",
-      "minutes": 24,
+      "basis": "4,190 words moved out of required prose, at 140 wpm",
+      "minutes": 30,
       "reason": "sourced depth beyond what the topic's units require; in the course, not required to complete it"
     },
     {
       "segment": "mastery review",
-      "basis": "107,785 words at 60 wpm",
-      "minutes": 1796,
+      "basis": "105,536 words at 60 wpm",
+      "minutes": 1759,
       "reason": "an upper bound on diligent study, never required time"
     },
     {
@@ -110,20 +110,20 @@
       "topic": "Agency Concepts",
       "units": 4,
       "prescribedMinutes": 130,
-      "sha256": "f4859df67518bf9d7f3909f4d75dde3b43cca1aaf18d289a5c3e5fbaead244a1",
-      "totalWords": 12401,
+      "sha256": "61d10c5dd2a2e7f09eb772c2e169658c62884836b70dcd2b6d5af75b6b0d6473",
+      "totalWords": 12107,
       "proseWords": 10180,
       "statuteReadingExercise": 2,
-      "appliedExercise": 3,
+      "appliedExercise": 2,
       "moduleRecap": 1,
       "optionalReference": 0,
-      "exerciseWords": 1138,
+      "exerciseWords": 844,
       "recapWords": 1083,
       "optionalReferenceWords": 0,
       "readingMinutes": 73,
-      "activityMinutes": 67,
-      "requiredMinutes": 140,
-      "varianceMinutes": 10
+      "activityMinutes": 57,
+      "requiredMinutes": 130,
+      "varianceMinutes": 0
     },
     {
       "file": "module-02.md",
@@ -131,20 +131,20 @@
       "topic": "Basic Agency Relationships, Disclosure and Duties to the Client",
       "units": 5,
       "prescribedMinutes": 125,
-      "sha256": "46b3b6d2752b7eca886fa4887d5127709740c5d565c56b01768701a3dd599118",
-      "totalWords": 13121,
-      "proseWords": 10535,
+      "sha256": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20",
+      "totalWords": 11684,
+      "proseWords": 9181,
       "statuteReadingExercise": 2,
-      "appliedExercise": 4,
+      "appliedExercise": 2,
       "moduleRecap": 1,
-      "optionalReference": 0,
-      "exerciseWords": 1606,
+      "optionalReference": 1,
+      "exerciseWords": 1076,
       "recapWords": 980,
-      "optionalReferenceWords": 0,
-      "readingMinutes": 75,
-      "activityMinutes": 79,
-      "requiredMinutes": 154,
-      "varianceMinutes": 29
+      "optionalReferenceWords": 447,
+      "readingMinutes": 66,
+      "activityMinutes": 59,
+      "requiredMinutes": 125,
+      "varianceMinutes": 0
     },
     {
       "file": "module-03.md",
@@ -173,20 +173,20 @@
       "topic": "Seller Agency",
       "units": 5,
       "prescribedMinutes": 120,
-      "sha256": "84c6a0974b702e4549c1a6eeb5f7a29ad7961e848e82e30546b4309f7ae64013",
-      "totalWords": 12037,
-      "proseWords": 9459,
+      "sha256": "af0ce454d4c9174ccf0d771324ea583acc55ecb0aa0b0eb9fe93232e118a1b14",
+      "totalWords": 10694,
+      "proseWords": 8564,
       "statuteReadingExercise": 2,
-      "appliedExercise": 3,
+      "appliedExercise": 2,
       "moduleRecap": 1,
       "optionalReference": 0,
-      "exerciseWords": 1605,
+      "exerciseWords": 1157,
       "recapWords": 973,
       "optionalReferenceWords": 0,
-      "readingMinutes": 68,
-      "activityMinutes": 69,
-      "requiredMinutes": 137,
-      "varianceMinutes": 17
+      "readingMinutes": 61,
+      "activityMinutes": 59,
+      "requiredMinutes": 120,
+      "varianceMinutes": 0
     },
     {
       "file": "module-05.md",
@@ -236,20 +236,20 @@
       "topic": "Creation and Termination of Agency",
       "units": 3,
       "prescribedMinutes": 85,
-      "sha256": "6c27cb47a50cc1a7fc63128375b86d98ee60ed2aed2692e04eb2c80c7f9a598f",
-      "totalWords": 9109,
+      "sha256": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25",
+      "totalWords": 8777,
       "proseWords": 6924,
-      "statuteReadingExercise": 2,
-      "appliedExercise": 3,
+      "statuteReadingExercise": 1,
+      "appliedExercise": 1,
       "moduleRecap": 1,
-      "optionalReference": 0,
-      "exerciseWords": 1242,
+      "optionalReference": 1,
+      "exerciseWords": 465,
       "recapWords": 943,
-      "optionalReferenceWords": 0,
+      "optionalReferenceWords": 445,
       "readingMinutes": 49,
-      "activityMinutes": 65,
-      "requiredMinutes": 114,
-      "varianceMinutes": 29
+      "activityMinutes": 33,
+      "requiredMinutes": 82,
+      "varianceMinutes": -3
     },
     {
       "file": "module-08.md",
@@ -352,9 +352,9 @@
       "recapWords": 1205,
       "optionalReferenceWords": 351,
       "readingMinutes": 78,
-      "activityMinutes": 59,
-      "requiredMinutes": 137,
-      "varianceMinutes": -3
+      "activityMinutes": 79,
+      "requiredMinutes": 157,
+      "varianceMinutes": 17
     }
   ]
 }

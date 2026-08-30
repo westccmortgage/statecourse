@@ -89,7 +89,16 @@ const PLAN = {
   T09: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1 },
   T10: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
   T11: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 1 },
-  T12: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
+  /* A FIFTH SCENARIO, placed on the capstone. After the reduction passes the course measured 1,490
+     required minutes against LOA-1's 1,500 — a ten-minute shortfall, which matters because 1,500 is
+     the MINIMUM instruction TREC requires for credit, not a target to approach from either side.
+     Padding prose to close it would be the very thing the reduction removed. A fifth scenario is
+     real required work a student must complete, the work order sets a floor of three rather than a
+     ceiling, and five across twelve topics is well distributed.
+     Its minutes attribute to T12 because that is how this budget attributes scenarios, but a
+     capstone scenario draws on the whole course rather than on T12's five units — so T12's +17
+     per-topic variance overstates what this topic alone asks of a student. */
+  T12: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 1 },
 };
 
 const a = RATES.activityMinutes;
