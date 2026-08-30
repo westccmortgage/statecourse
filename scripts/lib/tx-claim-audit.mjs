@@ -38,6 +38,30 @@ import crypto from "node:crypto";
  * @param {{root: string, curriculumDir: string, outPath: string, generatedBy: string,
  *          generatedFor: string, extraCodes?: Record<string, Record<number, string>>}} course
  */
+/**
+ * The set of quotations a claim audit leaves unmatched, composed the SAME way everywhere.
+ *
+ * The audit reports its unmatched quotations in three places — outright failures, findings marked
+ * ATTRIBUTION_REVIEW, and truncation reviews — and a caller that reads only one of them reconciles
+ * against a smaller set and then reports every disposition covering the other two as orphaned. That
+ * happened: the freeze composed all three and saw 0 orphaned while the acceptance report composed
+ * only quoteFailures and saw 100. Both were reading the same ledger correctly and disagreeing about
+ * what "unmatched" meant. Composing it once is what stops the two drifting again.
+ *
+ * It lives HERE, with the auditor that produces the three lists, rather than with the disposition
+ * ledger — the ledger is hashed by the content freezes, and a pure helper landing in it would break
+ * a freeze that nothing about the content had changed.
+ */
+export function unmatchedFrom(audit) {
+  const all = [
+    ...(audit?.quoteFailures || []),
+    ...((audit?.quoteFindings || []).filter((q) => q.status === "ATTRIBUTION_REVIEW")),
+    ...(audit?.quoteTruncations || []),
+  ];
+  const seen = new Set();
+  return all.filter((q) => q.id && !seen.has(q.id) && seen.add(q.id));
+}
+
 export function runClaimAudit(course) {
     const { root, curriculumDir: CURRICULUM, outPath, generatedBy, generatedFor, extraCodes = {} } = course;
 

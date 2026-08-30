@@ -23,6 +23,7 @@ import { BUDGET, COURSE_LEVEL } from "../config/texas/law-of-agency-time-budget.
 import { MISCONCEPTION_CHECKS } from "../config/texas/law-of-agency-misconception-checks.mjs";
 import { ALL_SOURCES, unitCoverage, sourceValidation } from "../config/texas/law-of-agency-statute-sources.mjs";
 import { reconcile } from "../config/texas/quotation-dispositions.mjs";
+import { unmatchedFrom } from "./lib/tx-claim-audit.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
@@ -148,11 +149,7 @@ const validation = sourceValidation();
    which is always undefined, so it could never fire; corrected 2026-08-30. */
 if (validation.hashMismatches.length !== 0) failures.push(`${validation.hashMismatches.length} source hash mismatches`);
 
-const unmatched = (() => {
-  const all = [...audit.quoteFailures, ...(audit.quoteFindings || []).filter((q) => q.status === "ATTRIBUTION_REVIEW"), ...(audit.quoteTruncations || [])];
-  const seen = new Set();
-  return all.filter((q) => q.id && !seen.has(q.id) && seen.add(q.id));
-})();
+const unmatched = unmatchedFrom(audit);
 const quotations = reconcile(COURSE_ID, unmatched);
 if (!quotations.clean) failures.push("quotation reconcile is not clean");
 if (quotations.undispositioned.length) failures.push(`${quotations.undispositioned.length} undispositioned quotations`);
