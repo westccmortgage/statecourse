@@ -28,7 +28,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v4";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v5";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -36,6 +36,21 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v4";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v4",
+    on: "2026-08-30",
+    module: "NONE — all twelve module hashes are byte-identical",
+    change: "The source register was re-derived against the current claim audit with corrected block attribution. 314 unit-level attributions moved across 127 sections, twelve sections were newly registered, 23 read-but-no-longer-cited sections were marked, and registered sources went 55 -> 58.",
+    reason: "The register's unit map had been derived from a 2,217-row claim audit while the audit on disk held 1,975 — it described a curriculum the reduction passes had already changed. Separately, the attribution rule assigned each citation to the nearest preceding unit heading, and both the module recap and the optional reference section sit AFTER the last unit heading, so every module's final unit was absorbing them: 449 recap and 117 optional-reference citations landing on units that do not teach them.",
+    foundBy: "the block-map objective review, which noticed 1101.804 attributed to a unit whose module contains zero occurrences of it",
+    classOfDefect: "evidence — no curriculum wording changed and no legal claim was mis-stated, but the register's account of which unit relies on which source was wrong",
+    auditsReRun: Object.freeze([
+      "node scripts/texas-source-inventory.mjs — 58/58 sources verified against disk",
+      "unit coverage — 57/57 held, 0 excused, 0 uncovered, every unit still carrying controlling and not merely guidance support",
+      "no unit sourced only through optional-reference material, and no section supported only by recap or only by optional citations",
+      "node --test tests/*.test.mjs",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v3",
     on: "2026-08-30",

@@ -9,7 +9,7 @@
  * establishes.
  *
  * A CHAPTER CAN SIT ON DISK FULLY HASHED AND CONTRIBUTE NOTHING. texas/trec-sources holds 146 files.
- * This register names 55 of them, and the other 91 are ABSENT from it entirely rather than listed
+ * This register names 58 of them, and the other 88 are ABSENT from it entirely rather than listed
  * for completeness: the other five course approval forms, the Texas Constitution file, Occupations
  * Code ch. 1103, Property Code chs. 11, 12, 13, 21, 41, 51, 53, 91, 92, 111 and 202, Estates Code
  * chs. 111, 112, 201, 203 and 251, Business and Commerce Code ch. 9, Business Organizations Code
@@ -18,8 +18,12 @@
  * Resources Code ch. 21, Penal Code ch. 32, Tax Code chs. 11 and 32, Water Code ch. 11, every
  * RESPA, TILA, ECOA, HMDA, CRA, bank-holding and environmental federal file,
  * 26 U.S.C. §§ 1445 and 860A, and the Fair Housing Act sections this course does not cite —
- * 42 U.S.C. §§ 3601, 3605, 3607, 3610, 3611 and 3617. They were read for other Texas courses, or for
- * none; they were not read for this one, so they are not registered for it.
+ * 42 U.S.C. §§ 3601, 3610 and 3611. Three of the sections that list used to contain were WRONG to be
+ * on it: T10U2 quotes 42 U.S.C. §§ 3605, 3607 and 3617 and teaches each as law, and all three are
+ * now registered below. They escaped because the module cites them as "Section 3605" and
+ * "§ 3617" rather than "42 U.S.C. § 3605", which the claim audit's citation pattern cannot see —
+ * the same blind spot that hid §§ 1101.0045, 21.051 and 21.0015. The rest were read for other
+ * Texas courses, or for none; they were not read for this one, so they are not registered for it.
  *
  * THE THREE RULES THIS REGISTER USED TO OMIT ARE NOW REGISTERED, AND THE REASON THEY WERE OMITTED
  * IS THE REASON THEY ARE HERE. Until 2026-08-30 this file held 22 TAC §§ 535.62, 535.63 and 535.65
@@ -40,16 +44,72 @@
  * the assessment or delivery requirements these rules impose.
  *
  * WHERE THE UNIT ATTRIBUTIONS COME FROM, AND WHY THEY WERE NOT GUESSED. `primaryUnits` and
- * `pointerUnits` in every read record below are DERIVED, not asserted. The derivation is
+ * `pointerUnits` in every read record below are DERIVED, not asserted, and on 2026-08-30 every one
+ * of them was re-derived from the CURRENT curriculum. The spine of the derivation is
  * texas/tx-law-of-agency-30-v1/claim-audit.json — regenerate it with `node scripts/audit-loa-claims.mjs`
  * — which carries one row per citation occurrence in the twelve curriculum modules, each row naming
- * the module, the section cited and the held file the section resolves to. Each citation is
- * attributed to the unit whose `## Unit:` heading precedes it in the module, and the module's topic
- * is the topic that module teaches. 2,217 citation rows resolved to 46 distinct held files, and
- * every one of those 46 is registered below.
- * A citation that falls before any unit heading belongs to the module's front matter and is recorded
- * as `citedInTopicFrontMatter` at source level rather than being pushed onto a unit that did not
- * make it.
+ * the module, the section cited and the held file the section resolves to. It carries 1,975 rows,
+ * recorded below as CLAIM_AUDIT.rows, and a load-time invariant reads the file and throws if the two
+ * numbers ever disagree. THAT INVARIANT EXISTS BECAUSE THE OLD DERIVATION WENT STALE SILENTLY: this
+ * header used to say 2,217 rows, a count from before the reduction passes, the two truncated-
+ * qualifier repairs and the § 535.2(g)→(f) correction, and the unit map underneath it described a
+ * curriculum that no longer existed.
+ *
+ * THE AUDIT IS THE SPINE AND NOT THE WHOLE SKELETON, AND SAYING SO IS THE POINT. The audit's
+ * citation pattern is anchored on the section symbol: it matches "§ 5.008", "22 TAC § 535.2" and
+ * "42 U.S.C. § 3604", and it CANNOT SEE the prose spellings the modules also use — "Section
+ * 1101.0045", "Rule 535.2", "Sec. 201.072", "Section 3617" — or the second and later members of a
+ * list ("§§ 1101.004, 1101.0045, 1101.005"). That is a coverage limit of the tool, not a defect in
+ * it, and it is why §§ 1101.0045, 21.001, 21.0015, 21.051, 1101.703, 301.023, 301.024, 301.042 and
+ * 301.062 and 42 U.S.C. §§ 3605, 3607 and 3617 were absent from this register while being taught in
+ * the modules. So the attribution pass runs the audit's rows AND a supplementary spelling pass over
+ * the same twelve frozen modules, which finds every occurrence of a registered section number
+ * carrying a citation cue and rejects one carrying the name of a different code (module 09's
+ * "Section 101.001, Business Organizations Code" is not Estates Code § 101.001). The two together
+ * give 2,595 citation occurrences across 179 read records and 49 distinct held files. The audit's
+ * own rows were replayed offset by offset against that pass and matched 1,975 for 1,975, module,
+ * section and kind alike, so the supplementary pass is a superset of the audit and not a rival to it.
+ *
+ * WHICH BLOCK OF A MODULE A CITATION SITS IN DECIDES WHAT IT CAN SUPPORT. A module is front matter,
+ * then units, then a `### Module recap`, then at most one `## Optional reference:` section. The old
+ * derivation attributed a citation to the unit whose `## Unit:` heading precedes it — and because
+ * the recap and the optional section come AFTER the last unit heading, the last unit of every module
+ * silently absorbed both. That inflated twelve units and starved the units that actually teach the
+ * material: § 1101.701 was tied to T10U5 alone when T10U1 teaches it, §§ 301.114 and 3603 likewise,
+ * §§ 1101.552 and 535.21 to T12U5 when T12U4 teaches them, and § 1101.804 to T04U3 — a unit whose
+ * module contains no occurrence of the section at all. Four blocks, four different records:
+ *   FRONT MATTER (before the first `## Unit:`) — `citedInTopicFrontMatter`, at source level, naming
+ *     the TOPIC. A module's opening map of what it will teach is not a unit teaching it.
+ *   A UNIT'S OWN BODY, INCLUDING ITS `### Statute reading exercise:` AND `### Applied exercise:` —
+ *     `primaryUnits` or `pointerUnits`. An exercise belongs to the unit that contains it.
+ *   THE `### Module recap` — `citedInModuleRecaps`, naming the TOPIC, never a unit. THE CHOICE MADE
+ *     HERE, AND WHY: of the three available answers — attribute the recap to the module, attribute it
+ *     to every unit the recap names, or drop it — this register attributes it to the MODULE and
+ *     records it at topic level. Attributing to named units was tried against the text and does not
+ *     survive it: the recaps name MODULES ("that is Module 06's", "those last three are Module 09's")
+ *     and never name a unit, so "every unit the recap names" is almost always the empty set and would
+ *     have amounted to dropping 449 citations. Dropping them outright would have thrown away real
+ *     evidence that the module teaches the section. Recording them at topic level keeps the evidence,
+ *     keeps it visible, and keeps it out of `reliedOnByUnits`, which is where it would do damage: a
+ *     recap sentence is a restatement of what a unit already taught, and it cannot be the thing that
+ *     makes a unit sourced.
+ *   A `## Optional reference:` SECTION (modules 02, 03, 07, 09, 10, 11 and 12 each have one) —
+ *     `citedInOptionalReference`, naming the TOPIC, never a unit, and marked as optional-only for a
+ *     reason that reaches the assessment layer: each of those sections opens by stating that nothing
+ *     in it is required and that no quiz, scenario or examination item is drawn from it. NO REQUIRED
+ *     ASSESSMENT MAY DEPEND ON OPTIONAL MATERIAL, so a unit whose only support for a section sat in
+ *     an optional section is NOT sourced for it. 117 citation occurrences sit in optional sections
+ *     and not one of them puts a unit in `reliedOnByUnits`; coverage is 57/57 without them, and no
+ *     unit is sourced only through optional-reference material.
+ *
+ * TWENTY-THREE SECTIONS WERE READ AND ARE NOW CITED BY NOTHING. The reduction passes that brought
+ * the modules down to their time allocation deleted every passage citing §§ 1101.603 and 1101.614,
+ * Property Code §§ 5.010, 5.011, 5.013, 5.019, 301.081, 301.083 and 301.132, Business & Commerce
+ * Code §§ 17.55, 17.555, 17.5051 and 17.5052, Civil Practice & Remedies Code § 16.051 and Labor Code
+ * §§ 21.0021, 21.0022, 21.101, 21.102, 21.202, 21.254, 21.256, 21.1065 and 21.2585. Each keeps its
+ * read record and carries `readNotCited`, with empty `primaryUnits` and `pointerUnits`: the reading
+ * happened, and no unit relies on it. A load-time invariant below holds the two halves of that
+ * statement together in both directions.
  *
  * PRIMARY RELIANCE VERSUS A POINTER. The LOA build ran a condensation pass under an ownership rule:
  * every authority has ONE home topic, which teaches it in full, and every other topic states the
@@ -135,6 +195,37 @@ export const GAP_TIERS = Object.freeze(["controlling", "guidance", "identified-n
 /** LOA-1's own unit codes, in the form's printed order. Imported, never transcribed. */
 export const LOA_UNITS = Object.freeze(ALL_UNITS.map((unit) => unit.code));
 const UNIT_ORDER = new Map(LOA_UNITS.map((code, index) => [code, index]));
+
+/**
+ * THE DERIVATION'S OWN PROVENANCE, RECORDED SO IT CANNOT GO STALE IN SILENCE AGAIN.
+ *
+ * `rows` is what texas/tx-law-of-agency-30-v1/claim-audit.json carried when every `primaryUnits` and
+ * `pointerUnits` below was derived from it. Invariant 2b reads that file at import and throws if the
+ * numbers disagree, because the previous version of this register recorded 2,217 rows against an
+ * audit that had long since been regenerated at 1,975 — and nothing in the repository noticed.
+ *
+ * `spellingPass` is the second half of the derivation, counted so a later reader can reproduce it:
+ * every occurrence in the twelve frozen modules of a section number this register names, carrying a
+ * citation cue, classified by the block of the module it sits in. Its 1,975-row overlap with the
+ * audit was verified offset by offset rather than assumed.
+ */
+export const CLAIM_AUDIT = Object.freeze({
+  path: "texas/tx-law-of-agency-30-v1/claim-audit.json",
+  regenerateWith: "node scripts/audit-loa-claims.mjs",
+  rows: 1975,
+  attributionsDerivedOn: "2026-08-30",
+  citationPatternLimit:
+    "The audit matches a citation only where a section symbol precedes the number. The modules also write 'Section 1101.0045', 'Rule 535.2', 'Sec. 201.072' and 'Section 3617', and list continuations such as '§§ 1101.004, 1101.0045, 1101.005'; none of those produces an audit row, which is why the supplementary spelling pass exists and why twelve sections were missing from this register.",
+  spellingPass: Object.freeze({
+    occurrences: 2595,
+    inUnitBodies: 1913,
+    inModuleRecaps: 449,
+    inOptionalReference: 117,
+    inTopicFrontMatter: 116,
+    readRecordsCovered: 179,
+    heldFilesCovered: 49,
+  }),
+});
 
 /**
  * The one sentence 23 read records need, written once. A section carrying it was opened and read
@@ -269,7 +360,7 @@ const OC_1101 = chapter({
     Object.freeze({ section: "1101.002", ownedByTopics: ["T01"], primaryUnits: ["T01U1", "T01U2", "T01U3"], pointerUnits: ["T02U1", "T02U3", "T04U1", "T04U4", "T05U1", "T05U3", "T06U1", "T06U2", "T06U3", "T07U1", "T09U1", "T09U3", "T09U4", "T12U1"], citedInModuleRecaps: ["T01", "T02", "T04", "T05", "T09"], note: "Definitions. (1)(A) the acts that make a person a broker when done for another for a commission or other valuable consideration or with the expectation of one, and (1)(B) the persons treated as brokers; (3) 'Commission' means TREC; (4) 'license holder' means a broker or sales agent; (5) 'real estate' means an interest in real property, including a leasehold, other than an interest given as security; (6) 'residential rental locator'; (7) 'sales agent' means a person sponsored by a licensed broker. The vocabulary the whole course runs on." }),
     Object.freeze({ section: "1101.003", ownedByTopics: ["T01"], primaryUnits: ["T01U2"], pointerUnits: [], citedInModuleRecaps: ["T01"], note: "Qualifying real estate courses - the statutory subject list that includes agency law, the Commission's power to prescribe content, and the elapsed-time rule for reporting completion. Read for the course's own front matter; no unit teaches a course-approval requirement." }),
     Object.freeze({ section: "1101.004", ownedByTopics: ["T01"], primaryUnits: ["T01U1"], pointerUnits: ["T05U1"], citedInModuleRecaps: ["T01"], note: "Real estate brokerage - a person is engaged in brokerage by performing a § 1101.002(1) act for another with the expectation of receiving valuable consideration, as part of or as an entire transaction; (b) construction, investment participation and secured obligations do not by themselves make a person a broker." }),
-    Object.freeze({ section: "1101.0045", ownedByTopics: ["T01"], primaryUnits: ["T01U1"], pointerUnits: [], citedInModuleRecaps: ["T01"], note: "Equitable interests in real property - the wholesaling section. (a) A person may acquire an option or an interest in a contract to purchase real property and then sell or offer to sell the option, or assign or offer to assign the contract, WITHOUT a licence if the person (1) does not use the option or contract to purchase to engage in real estate brokerage and (2) DISCLOSES IN WRITING the nature of the equitable interest to any seller or potential buyer; (b) doing the same thing without that disclosure IS engaging in real estate brokerage. Taught under its own heading in T01U1, 'The wholesaling section', because it is where the licence line runs through an activity a student will meet in practice: the identical conduct is exempt or is unlicensed brokerage depending on one written disclosure." }),
+    Object.freeze({ section: "1101.0045", ownedByTopics: ["T01"], primaryUnits: ["T01U1"], pointerUnits: [], citedInModuleRecaps: ["T01"], note: "Equitable interests in real property - the wholesaling section. (a) A person may acquire an option or an interest in a contract to purchase real property and then sell or offer to sell the option, or assign or offer to assign the contract, WITHOUT a licence if the person (1) does not use the option or contract to purchase to engage in real estate brokerage and (2) DISCLOSES IN WRITING the nature of the equitable interest to any seller or potential buyer; (b) doing the same thing without that disclosure IS engaging in real estate brokerage. Taught in T01U1 under its own bolded lead, 'The wholesaling section.', because it is where the licence line runs through an activity a student will meet in practice: the identical conduct is exempt or is unlicensed brokerage depending on one written disclosure." }),
     Object.freeze({ section: "1101.005", ownedByTopics: ["T01"], primaryUnits: ["T01U1"], pointerUnits: ["T02U3", "T07U2"], citedInModuleRecaps: ["T01"], note: "Applicability - the enumerated persons and transactions the chapter does not reach, including attorneys, attorneys-in-fact, public officials on official duty, licensed auctioneers calling the sale, court-ordered and will or trust transactions, on-site apartment managers, and an owner or the owner's employee leasing the owner's own real estate. Used to mark the outer edge of the licensing requirement, not to state an agency duty." }),
     Object.freeze({ section: "1101.053", ownedByTopics: null, primaryUnits: ["T10U4"], pointerUnits: [], citedInModuleRecaps: ["T10"], note: "Membership and employee restrictions - (a) defines a \"Texas trade association\" as a cooperative and voluntarily joined statewide association of business or professional competitors designed to assist its members and its industry in dealing with mutual problems and promoting their common interest; (b) a person may not be a commission member, or a commission employee in a bona fide executive, administrative or professional capacity, if the person is an officer, employee or paid consultant of a Texas trade association in the real estate industry, or if the person's spouse is an officer, manager or paid consultant of one; (c) the lobbyist disqualification. Read in T10U4 for the statute's own separation of a private professional association from the regulator - the reason a trade association's code of ethics is not the Commission's." }),
     Object.freeze({ section: "1101.151", ownedByTopics: null, primaryUnits: ["T01U1"], pointerUnits: [], citedInModuleRecaps: ["T01"], note: "General powers and duties - (a)(1) the Commission shall administer this chapter and ch. 1102; (b)(1) the Commission MAY ADOPT AND ENFORCE RULES NECESSARY TO ADMINISTER the chapters, which is the delegation every 22 TAC rule registered below rests on; and (b)(2) the power to establish standards of conduct and ethics for license holders." }),
@@ -328,7 +419,7 @@ const OC_1101 = chapter({
     Object.freeze({ section: "1101.801", ownedByTopics: null, primaryUnits: ["T01U2", "T02U4", "T03U1", "T03U6", "T06U5", "T10U1", "T10U4"], pointerUnits: [], citedInModuleRecaps: ["T01", "T03", "T06", "T10"], note: "Effect of disciplinary action on liability - disciplinary action under § 1101.652 does not relieve a person from civil or criminal liability. The provision that keeps the licensing track and the liability track separate, cited in T01, T02, T03, T06 and T10." }),
     Object.freeze({ section: "1101.802", ownedByTopics: ["T03"], primaryUnits: ["T03U6"], pointerUnits: ["T01U4", "T02U4", "T10U1"], citedInModuleRecaps: ["T03", "T10"], citedInOptionalReference: ["T03"], note: "Liability relating to HIV infection or AIDS - notwithstanding § 1101.801, a person is not civilly or criminally liable for failing to inquire about, make a disclosure of, or release information about whether an occupant had or may have had an HIV-related illness. Read with § 1101.556, which is the duty side of the same rule." }),
     Object.freeze({ section: "1101.803", ownedByTopics: ["T09"], primaryUnits: ["T09U1", "T09U3", "T09U5"], pointerUnits: ["T01U1", "T01U2", "T01U3", "T01U4", "T02U1", "T02U4", "T03U1", "T04U3", "T04U4", "T06U2", "T06U3", "T06U4", "T06U5", "T10U3", "T12U5"], citedInModuleRecaps: ["T01", "T03", "T06", "T09"], citedInOptionalReference: ["T02"], note: "General liability of broker - a licensed broker is liable to the Commission, the public and the broker's clients for any conduct engaged in under the chapter by the broker or by a sales agent ASSOCIATED WITH OR ACTING FOR the broker. The statute behind the broker-responsibility rule in 22 TAC § 535.2, taught in full in T09." }),
-    Object.freeze({ section: "1101.804", ownedByTopics: ["T03"], primaryUnits: ["T03U4"], pointerUnits: ["T10U4"], citedInModuleRecaps: ["T03", "T10"], note: "Liability for providing certain information - a license holder or a nonprofit real estate board or association that provides information about real property sales prices or the terms of a sale, for the purpose of facilitating the listing, selling, leasing, financing or appraisal of real property, is not liable to another person for providing that information UNLESS disclosure of that information is specifically prohibited by statute. TAUGHT UNDER ITS OWN HEADING IN T03U4, 'Fifth: what you are affirmatively protected for saying', and cited again in T10U4 for what a license holder may safely share about comparable sales. T04 does not cite it: module 04 contains no occurrence of this section, and the pointer to T04U3 this register used to carry was an artefact of the superseded derivation." }),
+    Object.freeze({ section: "1101.804", ownedByTopics: ["T03"], primaryUnits: ["T03U4"], pointerUnits: ["T10U4"], citedInModuleRecaps: ["T03", "T10"], note: "Liability for providing certain information - a license holder or a nonprofit real estate board or association that provides information about real property sales prices or the terms of a sale, for the purpose of facilitating the listing, selling, leasing, financing or appraisal of real property, is not liable to another person for providing that information UNLESS disclosure of that information is specifically prohibited by statute. TAUGHT IN T03U4 UNDER ITS OWN BOLDED LEAD, 'Fifth: what you are affirmatively protected for saying.', and cited again in T10U4 for what a license holder may safely share about comparable sales. T04 does not cite it: module 04 contains no occurrence of this section, and the pointer to T04U3 this register used to carry was an artefact of the superseded derivation." }),
     Object.freeze({ section: "1101.805", ownedByTopics: ["T03"], primaryUnits: ["T03U4"], pointerUnits: ["T01U2", "T01U3", "T01U4", "T02U3", "T04U4", "T10U3", "T11U1", "T11U4", "T11U5", "T12U5"], citedInModuleRecaps: ["T01", "T02", "T03", "T04", "T12"], note: "Liability for misrepresentation or concealment - (a) \"party\" has the § 1101.551 meaning; (b) THIS SECTION PREVAILS OVER ANY OTHER LAW, INCLUDING COMMON LAW; (c) it does not diminish a broker's responsibility for the acts or omissions of a sales agent associated with or acting for the broker; (d) a party is not liable for a license holder's misrepresentation or concealment of a material fact unless the party knew of the falsity and failed to disclose that knowledge; (e) the mirror rule - a license holder is not liable for a party's misrepresentation or concealment unless the license holder knew of the falsity and failed to disclose that knowledge; (f) repealed by Acts 2025, 89th Leg., R.S., Ch. 1172 (S.B. 1968), Sec. 13(2), effective January 1, 2026. The statutory answer to who bears a misrepresentation, relied on in T03, T04, T11 and T12; the repealed subsection is not preserved in the held text and nothing is stated from it." }),
     Object.freeze({ section: "1101.806", ownedByTopics: ["T04"], primaryUnits: ["T04U1"], pointerUnits: ["T01U2", "T01U4", "T05U5", "T05U6", "T07U1", "T07U2", "T07U3", "T12U1", "T12U2", "T12U3"], citedInModuleRecaps: ["T01", "T04", "T05", "T07", "T12"], citedInOptionalReference: ["T12"], note: "Liability for payment of compensation or commission - (a) the section does not apply to an agreement to share compensation among license holders and does not limit a cause of action among brokers for interference with business relationships; (b) a person may not maintain an action to collect compensation for an act as a broker or sales agent performed in this state unless the person alleges and proves licensure at the time the act was commenced, or that the person is an attorney licensed in any state; (c) a person may not maintain an action to recover a commission for the sale or purchase of real estate unless the promise or agreement on which the action is based, or a memorandum of it, is IN WRITING AND SIGNED by the party against whom the action is brought or by a person authorized by that party; (d) a license holder who fails to advise a buyer as § 1101.555 requires may not receive or recover any commission agreed to be paid on the sale. Taught in full in T04 and read with Business and Commerce Code § 26.01." }),
     Object.freeze({ section: "1101.2051", ownedByTopics: null, primaryUnits: ["T10U3", "T10U4"], pointerUnits: [], note: "Confidentiality of investigation material - an investigation file is confidential and not subject to disclosure, with the enumerated exceptions. Read in T10U4; nothing is taught about the exceptions." }),
@@ -1639,7 +1730,7 @@ const TREC_BUYER_REP_ARTICLE = guidance({
   sha256: "dd987ceb2d972d8e54a245cdf30fe3344369e7666dfa1059f817da28db6fd3ae", bytes: 67348, retrievedOn: "2026-08-29",
   effectiveDate: "2026-01-01",
   tierReason:
-    "Official explanatory material published by the regulator; not binding law. FIVE modules use it — 01, 03, 04, 05 and 12 — and every one of them labels it in the module text as guidance rather than controlling authority, in the words "guidance rather than law" or "guidance, not controlling authority". Module 02 does not mention it at all; the T02U3 and T02U5 pointers this register used to carry were an artefact of the superseded derivation and are gone. It is registered rather than ignored because it supplies operating detail the statute does not: the open-house application of §§ 1101.558, 1101.562 and 1101.563, the plain-words statement of what a representation agreement may limit, and the statement that subagency was narrowed rather than eliminated. It is registered as GUIDANCE, and the load-time invariant below refuses to let any unit rest on it alone.",
+    "Official explanatory material published by the regulator; not binding law. FIVE modules use it — 01, 03, 04, 05 and 12 — and every one of them labels it in the module text as guidance rather than controlling authority, in the words 'guidance rather than law' or 'guidance, not controlling authority'. Module 02 does not mention it at all; the T02U3 and T02U5 pointers this register used to carry were an artefact of the superseded derivation and are gone. It is registered rather than ignored because it supplies operating detail the statute does not: the open-house application of §§ 1101.558, 1101.562 and 1101.563, the plain-words statement of what a representation agreement may limit, and the statement that subagency was narrowed rather than eliminated. It is registered as GUIDANCE, and the load-time invariant below refuses to let any unit rest on it alone.",
   reliedOnByArtifacts: ["config/texas/regulatory-manifest.mjs SOURCES trec-buyer-rep-2026-article"],
   sectionsRead: [
     Object.freeze({
@@ -1714,8 +1805,10 @@ export const ALL_SOURCES = Object.freeze([
  * Units that need no legal source, and why.
  *
  * THIS ARRAY IS EMPTY, AND THAT IS A FINDING RATHER THAN AN OVERSIGHT. Every one of LOA-1's 57
- * units cites held authority: the claim audit resolves at least one citation inside every unit
- * heading in all twelve modules, which is what unitCoverage() measures. Law of Agency has no
+ * units cites held authority IN ITS OWN BODY - not in its module's recap, and not in an optional
+ * reference section. That was re-checked on 2026-08-30 under the corrected attribution rule, and it
+ * survives it: all 57 units are still held, and each of the 57 has at least one citation the claim
+ * audit itself resolves inside the unit's own text, which is what unitCoverage() measures. Law of Agency has no
  * arithmetic unit and no vocabulary-only unit of the kind Principles II had to excuse — LOA-1's
  * units are all about what the law requires of a license holder. The array exists, is exported, and
  * is checked by the same invariant as every other register, so that if a future unit ever does need
@@ -1943,6 +2036,52 @@ export function unitCoverage(allUnitCodes = LOA_UNITS) {
   const strayUnit = SECTIONS_READ.flatMap((section) => [...section.primaryUnits, ...section.pointerUnits]).find((code) => !UNIT_ORDER.has(code));
   if (strayUnit) throw new Error(`law-of-agency-statute-sources: read record names '${strayUnit}', which is not an LOA-1 unit code`);
 
+  /* 2b. THE DERIVATION'S BASIS, CHECKED AGAINST THE FILE IT CLAIMS TO BE DERIVED FROM. Every unit
+        attribution below rests on the claim audit; a register that records one row count while the
+        audit on disk carries another is describing a curriculum that may no longer exist. That is
+        not hypothetical - it is exactly what this register did until 2026-08-30. */
+  let auditRowsOnDisk = null;
+  try {
+    auditRowsOnDisk = JSON.parse(readFileSync(join(REPO_ROOT, CLAIM_AUDIT.path), "utf8"))?.totals?.citations ?? null;
+  } catch (error) {
+    throw new Error(`law-of-agency-statute-sources: the claim audit this register is derived from could not be read at ${CLAIM_AUDIT.path}: ${error.message}`);
+  }
+  if (auditRowsOnDisk !== CLAIM_AUDIT.rows) {
+    throw new Error(
+      `law-of-agency-statute-sources: the claim audit on disk carries ${auditRowsOnDisk} citation rows; this register records ${CLAIM_AUDIT.rows} and its unit attributions were derived from that number. ` +
+        `Re-derive every primaryUnits and pointerUnits against the current audit (${CLAIM_AUDIT.regenerateWith}) and update CLAIM_AUDIT.rows — do not simply change the number.`,
+    );
+  }
+
+  /* 2c. READ IS NOT CITED, AND THE TWO HALVES OF THAT MUST AGREE. A section the curriculum no longer
+        cites carries readNotCited AND no units; a derived read record with no units must say why. */
+  const isDerivedSection = (section) => /^\d{1,4}(?:\.\d{1,4}[A-Za-z]?)?$/.test(section);
+  const notCitedButAttributed = SECTIONS_READ.filter((s) => s.readNotCited && (s.primaryUnits.length || s.pointerUnits.length));
+  if (notCitedButAttributed.length) {
+    throw new Error(`law-of-agency-statute-sources: section(s) marked readNotCited that still name units: ${notCitedButAttributed.map((s) => s.section).join(", ")}`);
+  }
+  const silentlyUnattributed = SECTIONS_READ.filter(
+    (s) => isDerivedSection(s.section) && !s.readNotCited && !s.primaryUnits.length && !s.pointerUnits.length && !(s.controls ?? []).length,
+  );
+  if (silentlyUnattributed.length) {
+    throw new Error(
+      `law-of-agency-statute-sources: read record(s) with no unit, no controlled artefact and no readNotCited: ${silentlyUnattributed.map((s) => s.section).join(", ")}. ` +
+        "A section that nothing in the curriculum cites must say so on its own record.",
+    );
+  }
+
+  /* 2d. A RECAP OR OPTIONAL-REFERENCE CITATION IS A TOPIC, NEVER A UNIT. This is the invariant that
+        keeps the attribution bug from being reintroduced by hand: those two fields sit outside every
+        `## Unit:` heading, so a unit code in either of them would be a fabricated attribution. */
+  const TOPIC_CODES = new Set(TOPICS.map((topic) => topic.code));
+  const strayTopic = SECTIONS_READ.flatMap((s) => [...s.citedInModuleRecaps, ...s.citedInOptionalReference]).find((code) => !TOPIC_CODES.has(code));
+  if (strayTopic) {
+    throw new Error(
+      `law-of-agency-statute-sources: '${strayTopic}' appears in citedInModuleRecaps or citedInOptionalReference, which record TOPICS. ` +
+        "A module recap and an optional-reference section sit outside every unit heading; neither may name a unit.",
+    );
+  }
+
   /* 3. Every hash must be recomputable from disk, here and now — not only when someone runs the
         report. A register whose files have moved or changed is wrong the moment it is imported. */
   const unrecomputable = [];
@@ -2117,6 +2256,7 @@ export default Object.freeze({
   SOURCE_TIERS,
   GAP_TIERS,
   LOA_UNITS,
+  CLAIM_AUDIT,
   STATUTE_CHAPTERS,
   FEDERAL_SOURCES,
   TREC_RULE_SOURCES,
