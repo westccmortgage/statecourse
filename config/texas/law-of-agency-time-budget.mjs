@@ -41,6 +41,14 @@ export const RATES = Object.freeze({
     statuteReadingExercise: 12,
     appliedExercise: 10,
     quizItem: 2,
+    /* A short required item that names a common error in this topic and asks the student to say why
+       it is wrong, drawn from the topic's own units. Three minutes covers reading the misconception,
+       deciding, and reading the rationale. It exists because several topics fell a minute or two
+       below their LOA-1 allocation after the reduction, and LOA-1's topic subtotals are
+       topic-specific minima, not fungible course-wide time — a surplus in one topic may not cure a
+       shortfall in another. Restoring deleted repetition to close those gaps would have been
+       padding; a misconception check is work a student actually does. */
+    misconceptionCheck: 3,
     scenario: 20,
     moduleRecap: 5,
   }),
@@ -73,22 +81,22 @@ export const RATES = Object.freeze({
  * T08 still carry three. Scenarios sit on four topics spread through the course.
  */
 const PLAN = {
-  T01: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
-  T02: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
-  T03: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1 },
-  T04: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
-  T05: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
+  T01: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0, misconceptionChecks: 1 },
+  T02: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0, misconceptionChecks: 1 },
+  T03: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1, misconceptionChecks: 0 },
+  T04: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0, misconceptionChecks: 0 },
+  T05: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0, misconceptionChecks: 1 },
   /* The largest topic in the course and the one whose law is least compressible; it keeps the
      fullest exercise load. */
-  T06: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 1 },
+  T06: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 1, misconceptionChecks: 1 },
   /* 85 minutes across three units. Two statute exercises and three applied ones plus a recap would
      spend 59 of them before any instruction. */
-  T07: { statuteReadingExercises: 1, appliedExercises: 1, scenarios: 0 },
+  T07: { statuteReadingExercises: 1, appliedExercises: 1, scenarios: 0, misconceptionChecks: 1 },
   /* 45 minutes across two units — the smallest allocation in the course. */
-  T08: { statuteReadingExercises: 1, appliedExercises: 1, scenarios: 0 },
-  T09: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1 },
-  T10: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
-  T11: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 1 },
+  T08: { statuteReadingExercises: 1, appliedExercises: 1, scenarios: 0, misconceptionChecks: 0 },
+  T09: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1, misconceptionChecks: 0 },
+  T10: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0, misconceptionChecks: 1 },
+  T11: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 1, misconceptionChecks: 0 },
   /* A FIFTH SCENARIO, placed on the capstone. After the reduction passes the course measured 1,490
      required minutes against LOA-1's 1,500 — a ten-minute shortfall, which matters because 1,500 is
      the MINIMUM instruction TREC requires for credit, not a target to approach from either side.
@@ -98,7 +106,7 @@ const PLAN = {
      Its minutes attribute to T12 because that is how this budget attributes scenarios, but a
      capstone scenario draws on the whole course rather than on T12's five units — so T12's +17
      per-topic variance overstates what this topic alone asks of a student. */
-  T12: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 1 },
+  T12: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0, misconceptionChecks: 1 },
 };
 
 const a = RATES.activityMinutes;
@@ -118,7 +126,8 @@ export const BUDGET = Object.freeze(
        budget's prose floor disagree with the time script's zero-variance point by a couple of
        hundred words per topic, and an author trying to hit the floor was aiming at the wrong
        number. It is computed and reported, but it does not consume the topic's allocation. */
-    const activityMinutes = quizMinutes + exerciseMinutes + scenarioMinutes + a.moduleRecap;
+    const misconceptionMinutes = (plan.misconceptionChecks ?? 0) * a.misconceptionCheck;
+    const activityMinutes = quizMinutes + exerciseMinutes + scenarioMinutes + misconceptionMinutes + a.moduleRecap;
     const readingMinutes = topic.subtotalMinutes - activityMinutes;
     return Object.freeze({
       topicCode: topic.code,
@@ -133,6 +142,8 @@ export const BUDGET = Object.freeze(
       exerciseMinutes,
       scenarios: plan.scenarios,
       scenarioMinutes,
+      misconceptionChecks: plan.misconceptionChecks ?? 0,
+      misconceptionMinutes,
       recapMinutes: a.moduleRecap,
       activityMinutes,
       readingMinutes,
@@ -145,6 +156,22 @@ export const BUDGET = Object.freeze(
   }),
 );
 
+/**
+ * THE CAPSTONE SCENARIO IS COURSE-LEVEL TIME, NOT T12's.
+ *
+ * It was briefly budgeted to T12 because that is where the capstone module sits, which made T12 look
+ * seventeen minutes over its allocation while the work the scenario asks for draws on the whole
+ * course. Attributing a cross-topic exercise to whichever file happens to hold it is an accounting
+ * artefact, and it also let a surplus in one topic appear to cure shortfalls in others. It is
+ * reported here, outside the topic table, and every topic is required to meet its own LOA-1
+ * allocation without it.
+ */
+export const COURSE_LEVEL = Object.freeze({
+  capstoneScenarios: 1,
+  minutes: 1 * RATES.activityMinutes.scenario,
+  note: "An integrated scenario drawing on every topic. Counted once, at course level, and not attributed to any single topic's allocation.",
+});
+
 export const TOTALS = Object.freeze({
   prescribedMinutes: FORM.totalMinutes,
   budgetedMinutes: BUDGET.reduce((s, b) => s + b.prescribedMinutes, 0),
@@ -153,7 +180,9 @@ export const TOTALS = Object.freeze({
   quizItems: BUDGET.reduce((s, b) => s + b.quizItems, 0),
   statuteReadingExercises: BUDGET.reduce((s, b) => s + b.statuteReadingExercises, 0),
   appliedExercises: BUDGET.reduce((s, b) => s + b.appliedExercises, 0),
-  scenarios: BUDGET.reduce((s, b) => s + b.scenarios, 0),
+  scenarios: BUDGET.reduce((s, b) => s + b.scenarios, 0) + COURSE_LEVEL.capstoneScenarios,
+  topicScenarios: BUDGET.reduce((s, b) => s + b.scenarios, 0),
+  misconceptionChecks: BUDGET.reduce((s, b) => s + b.misconceptionChecks, 0),
   minimumProseWords: BUDGET.reduce((s, b) => s + b.minimumProseWords, 0),
   activityOverrunMinutes: BUDGET.reduce((s, b) => s + b.activityOverrunMinutes, 0),
 });

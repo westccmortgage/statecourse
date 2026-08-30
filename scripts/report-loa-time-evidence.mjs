@@ -30,7 +30,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { TOPICS, FORM } from "../config/texas/law-of-agency-course-form.mjs";
-import { RATES, BUDGET } from "../config/texas/law-of-agency-time-budget.mjs";
+import { RATES, BUDGET, COURSE_LEVEL } from "../config/texas/law-of-agency-time-budget.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(root, "texas/tx-law-of-agency-30-v1/curriculum");
@@ -131,19 +131,31 @@ const moduleRecaps = sum("moduleRecap");
 /* Assessment components are PLANNED, not built. Saying so is the difference between evidence and a
    forecast dressed as evidence. */
 const plannedQuizItems = BUDGET.reduce((s, b) => s + b.quizItems, 0);
-const plannedScenarios = BUDGET.reduce((s, b) => s + b.scenarios, 0);
+const plannedTopicScenarios = BUDGET.reduce((s, b) => s + b.scenarios, 0);
+const plannedScenarios = plannedTopicScenarios + COURSE_LEVEL.capstoneScenarios;
+const plannedMisconceptionChecks = BUDGET.reduce((s, b) => s + b.misconceptionChecks, 0);
 
-const readingMinutes = Math.round(proseWords / RATES.firstPassWordsPerMinute);
+/* EXACT SECONDS, NOT ROUNDED MINUTES. The first version of this report rounded reading time once
+   per topic and again over the whole corpus, so the topic table summed to +8 while the course total
+   said +10 — the sum of the rounds is not the round of the sum. Two numbers that disagree are two
+   numbers a reviewer cannot both believe, so every figure below is computed in seconds and rounded
+   only for display, and the course total is the SUM OF THE TOPIC ROWS by construction rather than a
+   second independent calculation. */
+const SEC = (minutes) => minutes * 60;
+const readingSeconds = (words) => (words / RATES.firstPassWordsPerMinute) * 60;
+const mm = (seconds) => Number((seconds / 60).toFixed(1));
 
 const REQUIRED = [
-  { segment: "required instructional prose", basis: `${proseWords.toLocaleString()} words at ${RATES.firstPassWordsPerMinute} wpm`, minutes: readingMinutes, measured: true },
-  { segment: "required document review (statute reading exercises)", basis: `${statuteReadingExercises} exercises x ${a.statuteReadingExercise} min`, minutes: statuteReadingExercises * a.statuteReadingExercise, measured: true },
-  { segment: "worked examples (applied exercises)", basis: `${appliedExercises} exercises x ${a.appliedExercise} min`, minutes: appliedExercises * a.appliedExercise, measured: true },
-  { segment: "module recaps", basis: `${moduleRecaps} recaps x ${a.moduleRecap} min`, minutes: moduleRecaps * a.moduleRecap, measured: true },
-  { segment: "required primary topic quizzes", basis: `${plannedQuizItems} primary items x ${a.quizItem} min`, minutes: plannedQuizItems * a.quizItem, measured: false },
-  { segment: "required scenario exercises", basis: `${plannedScenarios} scenarios x ${a.scenario} min`, minutes: plannedScenarios * a.scenario, measured: false },
-];
-const requiredMinutes = REQUIRED.reduce((s, r) => s + r.minutes, 0);
+  { segment: "required instructional prose", basis: `${proseWords.toLocaleString()} words at ${RATES.firstPassWordsPerMinute} wpm`, seconds: readingSeconds(proseWords), measured: true },
+  { segment: "required document review (statute reading exercises)", basis: `${statuteReadingExercises} exercises x ${a.statuteReadingExercise} min`, seconds: SEC(statuteReadingExercises * a.statuteReadingExercise), measured: true },
+  { segment: "worked examples (applied exercises)", basis: `${appliedExercises} exercises x ${a.appliedExercise} min`, seconds: SEC(appliedExercises * a.appliedExercise), measured: true },
+  { segment: "module recaps", basis: `${moduleRecaps} recaps x ${a.moduleRecap} min`, seconds: SEC(moduleRecaps * a.moduleRecap), measured: true },
+  { segment: "required primary topic quizzes", basis: `${plannedQuizItems} primary items x ${a.quizItem} min`, seconds: SEC(plannedQuizItems * a.quizItem), measured: false },
+  { segment: "required misconception checks", basis: `${plannedMisconceptionChecks} checks x ${a.misconceptionCheck} min`, seconds: SEC(plannedMisconceptionChecks * a.misconceptionCheck), measured: false },
+  { segment: "required topic scenario exercises", basis: `${plannedTopicScenarios} scenarios x ${a.scenario} min`, seconds: SEC(plannedTopicScenarios * a.scenario), measured: false },
+  { segment: "required capstone scenario (course level, not attributed to a topic)", basis: `${COURSE_LEVEL.capstoneScenarios} scenario x ${a.scenario} min`, seconds: SEC(COURSE_LEVEL.minutes), measured: false },
+].map((r) => ({ ...r, minutes: mm(r.seconds) }));
+const requiredSegmentSeconds = REQUIRED.reduce((s2, r) => s2 + r.seconds, 0);
 
 const CONDITIONAL = [
   { segment: "replacement questions after an incorrect answer", basis: `up to ${plannedQuizItems} replacements x ${a.quizItem} min, served only on a wrong answer`, minutes: plannedQuizItems * a.quizItem },
@@ -156,16 +168,36 @@ const EXCLUDED = [
   { segment: "final examination", minutes: null, reason: "EXCLUDED from the 1,500-minute course evidence. LOA-1 prescribes 1,500 minutes of INSTRUCTION across its twelve topics, and its topic subtotals sum to exactly that with no line for examination. The examination is a separate administered event under the provider rules, is not administrable at all while StateCourse holds no TREC approval, and counting it toward instructional time would inflate the instructional claim with assessment time the form does not allocate." },
 ];
 
-const variance = requiredMinutes - FORM.totalMinutes;
 const byTopic = modules.map((m) => {
   const b = BUDGET.find((x) => x.topicCode === m.topicCode);
-  const reading = Math.round(m.proseWords / RATES.firstPassWordsPerMinute);
-  const activity = m.statuteReadingExercise * a.statuteReadingExercise + m.appliedExercise * a.appliedExercise
-    + m.moduleRecap * a.moduleRecap + b.quizItems * a.quizItem + b.scenarios * a.scenario;
-  return { ...m, readingMinutes: reading, activityMinutes: activity, requiredMinutes: reading + activity,
-    varianceMinutes: reading + activity - m.prescribedMinutes };
+  const readSec = readingSeconds(m.proseWords);
+  const actSec = SEC(m.statuteReadingExercise * a.statuteReadingExercise + m.appliedExercise * a.appliedExercise
+    + m.moduleRecap * a.moduleRecap + b.quizItems * a.quizItem + b.scenarios * a.scenario
+    + b.misconceptionChecks * a.misconceptionCheck);
+  const reqSec = readSec + actSec;
+  return { ...m, quizItems: b.quizItems, scenarios: b.scenarios,
+    readingSeconds: readSec, activitySeconds: actSec, requiredSeconds: reqSec,
+    readingMinutes: mm(readSec), activityMinutes: mm(actSec), requiredMinutes: mm(reqSec),
+    varianceMinutes: mm(reqSec - SEC(m.prescribedMinutes)),
+    meetsAllocation: reqSec >= SEC(m.prescribedMinutes) };
 });
 
+/* The course total IS the sum of the topic rows. Nothing here recomputes it independently. */
+/* Topic rows first, then the course-level capstone added once. Every topic must clear its own LOA-1
+   allocation from its own row; the capstone may not be used to cover a topic-level shortfall. */
+const topicSecondsTotal = byTopic.reduce((s2, t) => s2 + t.requiredSeconds, 0);
+const courseLevelSeconds = COURSE_LEVEL.minutes * 60;
+const requiredSecondsTotal = topicSecondsTotal + courseLevelSeconds;
+const topicsBelowAllocation = byTopic.filter((t) => !t.meetsAllocation);
+
+/* One authoritative total, in seconds, equal to the sum of the topic rows. */
+const requiredMinutes = mm(requiredSecondsTotal);
+const variance = mm(requiredSecondsTotal - SEC(FORM.totalMinutes));
+/* The segment table must describe the same course as the topic table. If they disagree, one of them
+   is wrong and the script says so rather than printing both. */
+if (Math.abs(requiredSegmentSeconds - requiredSecondsTotal) > 1) {
+  throw new Error(`time evidence: segment total ${mm(requiredSegmentSeconds)} min does not equal the sum of the topic rows ${mm(requiredSecondsTotal)} min`);
+}
 const report = {
   generatedBy: "scripts/report-loa-time-evidence.mjs",
   generatedFor: "Texas Law of Agency",
@@ -184,8 +216,11 @@ const report = {
     note: "Quizzes and scenarios are budgeted but not yet authored. Their minutes are a plan, not a measurement, and are marked measured:false." },
   required: REQUIRED,
   requiredMinutes,
+  requiredSeconds: Math.round(requiredSecondsTotal),
+  topicsBelowAllocation: topicsBelowAllocation.map((t) => ({ topicCode: t.topicCode, prescribedMinutes: t.prescribedMinutes, requiredMinutes: t.requiredMinutes, shortfallMinutes: mm(SEC(t.prescribedMinutes) - t.requiredSeconds) })),
   varianceMinutes: variance,
-  meetsPrescribed: requiredMinutes >= FORM.totalMinutes,
+  meetsPrescribed: requiredSecondsTotal >= SEC(FORM.totalMinutes),
+  everyTopicMeetsItsAllocation: topicsBelowAllocation.length === 0,
   conditional: CONDITIONAL,
   excluded: EXCLUDED,
   byTopic,
@@ -208,6 +243,13 @@ else {
   console.log("\nBY TOPIC");
   console.log("  topic  prescribed  reading  activity  required  variance");
   for (const t of byTopic) console.log(`  ${t.topicCode}   ${p(t.prescribedMinutes, 8)}  ${p(t.readingMinutes, 7)}  ${p(t.activityMinutes, 8)}  ${p(t.requiredMinutes, 8)}  ${p(t.varianceMinutes >= 0 ? "+" + t.varianceMinutes : t.varianceMinutes, 8)}`);
+  console.log(`\n  segment total ${mm(requiredSegmentSeconds)} min = topic-row total ${mm(requiredSecondsTotal)} min`);
+  if (topicsBelowAllocation.length) {
+    console.log(`\n  TOPICS BELOW THEIR LOA-1 ALLOCATION (each allocation is a topic-specific minimum):`);
+    for (const t of topicsBelowAllocation) console.log(`    ${t.topicCode}  ${t.requiredMinutes} min against ${t.prescribedMinutes} prescribed — short ${mm(SEC(t.prescribedMinutes) - t.requiredSeconds)} min`);
+  } else {
+    console.log("\n  every topic meets or exceeds its own LOA-1 allocation");
+  }
   console.log(`\n  rate basis: ${report.rateBasis.status}`);
   console.log(`  ${report.rateBasis.statement}`);
   console.log(`\n  written: ${path.relative(root, OUT)}`);

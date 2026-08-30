@@ -29,43 +29,66 @@
     {
       "segment": "required instructional prose",
       "basis": "105,536 words at 140 wpm",
-      "minutes": 754,
-      "measured": true
+      "seconds": 45229.71428571428,
+      "measured": true,
+      "minutes": 753.8
     },
     {
       "segment": "required document review (statute reading exercises)",
       "basis": "20 exercises x 12 min",
-      "minutes": 240,
-      "measured": true
+      "seconds": 14400,
+      "measured": true,
+      "minutes": 240
     },
     {
       "segment": "worked examples (applied exercises)",
       "basis": "24 exercises x 10 min",
-      "minutes": 240,
-      "measured": true
+      "seconds": 14400,
+      "measured": true,
+      "minutes": 240
     },
     {
       "segment": "module recaps",
       "basis": "12 recaps x 5 min",
-      "minutes": 60,
-      "measured": true
+      "seconds": 3600,
+      "measured": true,
+      "minutes": 60
     },
     {
       "segment": "required primary topic quizzes",
       "basis": "58 primary items x 2 min",
-      "minutes": 116,
-      "measured": false
+      "seconds": 6960,
+      "measured": false,
+      "minutes": 116
     },
     {
-      "segment": "required scenario exercises",
-      "basis": "5 scenarios x 20 min",
-      "minutes": 100,
-      "measured": false
+      "segment": "required misconception checks",
+      "basis": "7 checks x 3 min",
+      "seconds": 1260,
+      "measured": false,
+      "minutes": 21
+    },
+    {
+      "segment": "required topic scenario exercises",
+      "basis": "4 scenarios x 20 min",
+      "seconds": 4800,
+      "measured": false,
+      "minutes": 80
+    },
+    {
+      "segment": "required capstone scenario (course level, not attributed to a topic)",
+      "basis": "1 scenario x 20 min",
+      "seconds": 1200,
+      "measured": false,
+      "minutes": 20
     }
   ],
-  "requiredMinutes": 1510,
-  "varianceMinutes": 10,
+  "requiredMinutes": 1530.8,
+  "requiredSeconds": 91850,
+  "topicsBelowAllocation": [],
+  "varianceMinutes": 30.8,
   "meetsPrescribed": true,
+  "everyTopicMeetsItsAllocation": true,
   "conditional": [
     {
       "segment": "replacement questions after an incorrect answer",
@@ -120,10 +143,16 @@
       "exerciseWords": 844,
       "recapWords": 1083,
       "optionalReferenceWords": 0,
-      "readingMinutes": 73,
-      "activityMinutes": 57,
-      "requiredMinutes": 130,
-      "varianceMinutes": 0
+      "quizItems": 4,
+      "scenarios": 0,
+      "readingSeconds": 4362.857142857142,
+      "activitySeconds": 3600,
+      "requiredSeconds": 7962.857142857142,
+      "readingMinutes": 72.7,
+      "activityMinutes": 60,
+      "requiredMinutes": 132.7,
+      "varianceMinutes": 2.7,
+      "meetsAllocation": true
     },
     {
       "file": "module-02.md",
@@ -141,10 +170,16 @@
       "exerciseWords": 1076,
       "recapWords": 980,
       "optionalReferenceWords": 447,
-      "readingMinutes": 66,
-      "activityMinutes": 59,
-      "requiredMinutes": 125,
-      "varianceMinutes": 0
+      "quizItems": 5,
+      "scenarios": 0,
+      "readingSeconds": 3934.7142857142853,
+      "activitySeconds": 3720,
+      "requiredSeconds": 7654.714285714285,
+      "readingMinutes": 65.6,
+      "activityMinutes": 62,
+      "requiredMinutes": 127.6,
+      "varianceMinutes": 2.6,
+      "meetsAllocation": true
     },
     {
       "file": "module-03.md",
@@ -162,10 +197,16 @@
       "exerciseWords": 940,
       "recapWords": 1187,
       "optionalReferenceWords": 1520,
-      "readingMinutes": 56,
+      "quizItems": 6,
+      "scenarios": 1,
+      "readingSeconds": 3382.714285714286,
+      "activitySeconds": 4140,
+      "requiredSeconds": 7522.714285714286,
+      "readingMinutes": 56.4,
       "activityMinutes": 69,
-      "requiredMinutes": 125,
-      "varianceMinutes": 0
+      "requiredMinutes": 125.4,
+      "varianceMinutes": 0.4,
+      "meetsAllocation": true
     },
     {
       "file": "module-04.md",
@@ -183,10 +224,16 @@
       "exerciseWords": 1157,
       "recapWords": 973,
       "optionalReferenceWords": 0,
-      "readingMinutes": 61,
+      "quizItems": 5,
+      "scenarios": 0,
+      "readingSeconds": 3670.285714285714,
+      "activitySeconds": 3540,
+      "requiredSeconds": 7210.285714285714,
+      "readingMinutes": 61.2,
       "activityMinutes": 59,
-      "requiredMinutes": 120,
-      "varianceMinutes": 0
+      "requiredMinutes": 120.2,
+      "varianceMinutes": 0.2,
+      "meetsAllocation": true
     },
     {
       "file": "module-05.md",
@@ -204,10 +251,16 @@
       "exerciseWords": 1305,
       "recapWords": 905,
       "optionalReferenceWords": 0,
-      "readingMinutes": 77,
-      "activityMinutes": 71,
-      "requiredMinutes": 148,
-      "varianceMinutes": -2
+      "quizItems": 6,
+      "scenarios": 0,
+      "readingSeconds": 4645.714285714286,
+      "activitySeconds": 4440,
+      "requiredSeconds": 9085.714285714286,
+      "readingMinutes": 77.4,
+      "activityMinutes": 74,
+      "requiredMinutes": 151.4,
+      "varianceMinutes": 1.4,
+      "meetsAllocation": true
     },
     {
       "file": "module-06.md",
@@ -225,10 +278,16 @@
       "exerciseWords": 1612,
       "recapWords": 1148,
       "optionalReferenceWords": 0,
-      "readingMinutes": 74,
-      "activityMinutes": 89,
-      "requiredMinutes": 163,
-      "varianceMinutes": -2
+      "quizItems": 5,
+      "scenarios": 1,
+      "readingSeconds": 4432.714285714286,
+      "activitySeconds": 5520,
+      "requiredSeconds": 9952.714285714286,
+      "readingMinutes": 73.9,
+      "activityMinutes": 92,
+      "requiredMinutes": 165.9,
+      "varianceMinutes": 0.9,
+      "meetsAllocation": true
     },
     {
       "file": "module-07.md",
@@ -246,10 +305,16 @@
       "exerciseWords": 465,
       "recapWords": 943,
       "optionalReferenceWords": 445,
-      "readingMinutes": 49,
-      "activityMinutes": 33,
-      "requiredMinutes": 82,
-      "varianceMinutes": -3
+      "quizItems": 3,
+      "scenarios": 0,
+      "readingSeconds": 2967.4285714285716,
+      "activitySeconds": 2160,
+      "requiredSeconds": 5127.428571428572,
+      "readingMinutes": 49.5,
+      "activityMinutes": 36,
+      "requiredMinutes": 85.5,
+      "varianceMinutes": 0.5,
+      "meetsAllocation": true
     },
     {
       "file": "module-08.md",
@@ -267,10 +332,16 @@
       "exerciseWords": 632,
       "recapWords": 572,
       "optionalReferenceWords": 0,
-      "readingMinutes": 13,
+      "quizItems": 3,
+      "scenarios": 0,
+      "readingSeconds": 773.5714285714286,
+      "activitySeconds": 1980,
+      "requiredSeconds": 2753.5714285714284,
+      "readingMinutes": 12.9,
       "activityMinutes": 33,
-      "requiredMinutes": 46,
-      "varianceMinutes": 1
+      "requiredMinutes": 45.9,
+      "varianceMinutes": 0.9,
+      "meetsAllocation": true
     },
     {
       "file": "module-09.md",
@@ -288,10 +359,16 @@
       "exerciseWords": 905,
       "recapWords": 1367,
       "optionalReferenceWords": 313,
-      "readingMinutes": 51,
+      "quizItems": 6,
+      "scenarios": 1,
+      "readingSeconds": 3087.857142857143,
+      "activitySeconds": 4140,
+      "requiredSeconds": 7227.857142857143,
+      "readingMinutes": 51.5,
       "activityMinutes": 69,
-      "requiredMinutes": 120,
-      "varianceMinutes": 0
+      "requiredMinutes": 120.5,
+      "varianceMinutes": 0.5,
+      "meetsAllocation": true
     },
     {
       "file": "module-10.md",
@@ -309,10 +386,16 @@
       "exerciseWords": 1112,
       "recapWords": 1439,
       "optionalReferenceWords": 638,
-      "readingMinutes": 93,
-      "activityMinutes": 59,
-      "requiredMinutes": 152,
-      "varianceMinutes": -3
+      "quizItems": 5,
+      "scenarios": 0,
+      "readingSeconds": 5596.714285714285,
+      "activitySeconds": 3720,
+      "requiredSeconds": 9316.714285714286,
+      "readingMinutes": 93.3,
+      "activityMinutes": 62,
+      "requiredMinutes": 155.3,
+      "varianceMinutes": 0.3,
+      "meetsAllocation": true
     },
     {
       "file": "module-11.md",
@@ -330,10 +413,16 @@
       "exerciseWords": 1096,
       "recapWords": 1497,
       "optionalReferenceWords": 476,
-      "readingMinutes": 61,
+      "quizItems": 5,
+      "scenarios": 1,
+      "readingSeconds": 3689.1428571428573,
+      "activitySeconds": 4740,
+      "requiredSeconds": 8429.142857142857,
+      "readingMinutes": 61.5,
       "activityMinutes": 79,
-      "requiredMinutes": 140,
-      "varianceMinutes": 0
+      "requiredMinutes": 140.5,
+      "varianceMinutes": 0.5,
+      "meetsAllocation": true
     },
     {
       "file": "module-12.md",
@@ -351,10 +440,16 @@
       "exerciseWords": 1055,
       "recapWords": 1205,
       "optionalReferenceWords": 351,
-      "readingMinutes": 78,
-      "activityMinutes": 79,
-      "requiredMinutes": 157,
-      "varianceMinutes": 17
+      "quizItems": 5,
+      "scenarios": 0,
+      "readingSeconds": 4686,
+      "activitySeconds": 3720,
+      "requiredSeconds": 8406,
+      "readingMinutes": 78.1,
+      "activityMinutes": 62,
+      "requiredMinutes": 140.1,
+      "varianceMinutes": 0.1,
+      "meetsAllocation": true
     }
   ]
 }
