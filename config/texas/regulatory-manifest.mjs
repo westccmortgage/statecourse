@@ -682,7 +682,7 @@ export const SOURCES = Object.freeze([
       {
         id: "labor-21-employment-discrimination",
         claim:
-          "Chapter 21 is the Texas employment-discrimination statute. § 21.002 supplies its definitions and protected characteristics; § 21.101 limits its age provisions to individuals 40 years of age or older; §§ 21.141-21.142 define 'employer' for the sexual-harassment subchapter as a person who employs ONE OR MORE employees and make an employer liable where it knew or should have known of harassment and failed to take immediate and appropriate corrective action; § 21.1065 extends those protections to unpaid interns; §§ 21.202, 21.254 and 21.256 fix the administrative and civil deadlines; and § 21.2585 governs compensatory and punitive damages.",
+          "Chapter 21 is the Texas employment-discrimination statute. § 21.002 supplies its definitions, including 'employer', 'employee' and 'disability'; § 21.101 limits its age provisions to individuals 40 years of age or older; §§ 21.141-21.142 define 'employer' for the sexual-harassment subchapter as a person who employs ONE OR MORE employees and make an employer liable where it knew or should have known of harassment and failed to take immediate and appropriate corrective action; § 21.1065 extends those protections to unpaid interns; §§ 21.202, 21.254 and 21.256 fix the administrative and civil deadlines; and § 21.2585 governs compensatory and punitive damages.",
         reliedOnBy: ["config/texas/law-of-agency-statute-sources.mjs la-21", "config/texas/law-of-agency-course-form.mjs T09U2"],
       },
       {
