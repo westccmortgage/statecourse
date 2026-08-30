@@ -2,7 +2,7 @@
   "course": "Texas Principles of Real Estate II",
   "courseId": "tx-principles-real-estate-ii-30-v1",
   "approvalForm": "PRINS2-1 rev. 09/11/2024",
-  "generatedAt": "2026-08-30 03:13:05",
+  "generatedAt": "2026-08-30 04:56:31",
   "freeze": "PRINS2-CONTENT-FREEZE-2026-08-29",
   "freezeCommit": "2500261413b6271859d9528dc45a268d0cfa345e",
   "checks": [
@@ -37,9 +37,9 @@
       "detail": "1284 citations — 1281 pass, 3 identified-not-taught, 0 unresolved"
     },
     {
-      "label": "7. unsupported-claim count is zero",
+      "label": "7. unsupported claims and unmatched quotations",
       "ok": true,
-      "detail": "0 unsupported citations; 2 actionable quotation findings (module-07, module-07)"
+      "detail": "0 unsupported citations; 8 unmatched quotations, all reviewed — 1 bracketed alteration, 2 form field label not contiguous, 1 punctuation deviation, 3 invented dialogue, 1 ellipsis elides cross reference"
     },
     {
       "label": "8. corrected-claim log",

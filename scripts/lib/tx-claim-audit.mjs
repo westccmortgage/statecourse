@@ -560,7 +560,22 @@ export function runClaimAudit(course) {
          rather than trying to guess from the first word. */
       if (/^\s|\s$/.test(m[1])) { quotesUnattributable += 1; continue; }
       if (/\n/.test(m[1])) { quotesUnattributable += 1; continue; }
-      const near = citeOffsets.filter((c) => Math.abs(c.at - m.index) <= CITE_NEAR);
+      /* ATTRIBUTION IS JUDGED AT PARAGRAPH SCOPE, not by a character window alone.
+         A ±320-character window asks "what citation is nearest?", but that is not how a reader
+         attributes a quotation. A passage that opens "Rule 22 TAC § 531.2 is titled 'Fidelity', and
+         it opens: ..." and then quotes four of the rule's clauses over the next several lines has
+         attributed every one of them to § 531.2 — yet the window sees only the § 535.156 citation
+         that follows the last clause, and reports the quotation as belonging to a source that does
+         not contain it. That produced 84 ATTRIBUTION_REVIEW rows on the first Law of Agency run,
+         and the ones examined by hand were all correctly attributed in their own paragraph.
+         Candidates are therefore every citation in the enclosing paragraph, plus the window, which
+         still catches a quotation whose section is named in the previous or next paragraph. */
+      const paraStart = md.lastIndexOf("\n\n", m.index) + 1;
+      const paraEndRaw = md.indexOf("\n\n", m.index);
+      const paraEnd = paraEndRaw === -1 ? md.length : paraEndRaw;
+      const near = citeOffsets.filter(
+        (c) => Math.abs(c.at - m.index) <= CITE_NEAR || (c.at >= paraStart && c.at <= paraEnd),
+      );
       if (!near.length) { quotesUnattributable += 1; continue; }
       const needle = normalizeForQuote(quote);
       if (needle.length < 30) { quotesUnattributable += 1; continue; }
@@ -685,6 +700,10 @@ export function runClaimAudit(course) {
           }
         }
         quoteFailures.push({
+          /* A stable id so a reviewer's disposition survives a re-run. Derived from the module and
+             the quotation text, not from position, so an edit elsewhere in the file cannot orphan
+             a recorded disposition. */
+          id: crypto.createHash("sha256").update(`${moduleId}|${quote}`).digest("hex").slice(0, 12),
           module: moduleId,
           status: "QUOTE_NOT_IN_CORPUS",
           note: "not found in any source held under texas/trec-sources/, at section, file or corpus level",

@@ -19,21 +19,75 @@
       "MECHANICAL_PASS": 1281,
       "IDENTIFIED_NOT_TAUGHT": 3
     },
-    "quotesChecked": 1048,
-    "quotesFailed": 2,
-    "quotesUnattributable": 385,
-    "quotesPassed": 738,
-    "quotesPassedOutsideSection": 308,
-    "quotesAttributionReview": 0,
-    "quotesTruncationReview": 54
+    "quotesChecked": 1162,
+    "quotesFailed": 8,
+    "quotesUnattributable": 271,
+    "quotesPassed": 825,
+    "quotesPassedOutsideSection": 327,
+    "quotesAttributionReview": 2,
+    "quotesTruncationReview": 62
   },
   "quoteFailures": [
     {
+      "id": "cb804a77811a",
+      "module": "module-02",
+      "status": "QUOTE_NOT_IN_CORPUS",
+      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
+      "candidateSections": [
+        "50"
+      ],
+      "classification": "NO_MATCH",
+      "matchedPrefixChars": 0,
+      "sourceContinuesWith": null,
+      "quote": "expressly provide[] that the owner may rescind the contract without penalty or charge within three days after the execution of the contract by all parties"
+    },
+    {
+      "id": "699067b9881a",
+      "module": "module-05",
+      "status": "QUOTE_NOT_IN_CORPUS",
+      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
+      "candidateSections": [
+        "5.008"
+      ],
+      "classification": "NO_MATCH",
+      "matchedPrefixChars": 25,
+      "sourceContinuesWith": null,
+      "quote": "Landfill, Settling, Soil Movement, Fault Lines,"
+    },
+    {
+      "id": "a11eb86c6dd4",
+      "module": "module-05",
+      "status": "QUOTE_NOT_IN_CORPUS",
+      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
+      "candidateSections": [
+        "5.008"
+      ],
+      "classification": "NO_MATCH",
+      "matchedPrefixChars": 25,
+      "sourceContinuesWith": null,
+      "quote": "Previous Use of Premises for Manufacture of Methamphetamine."
+    },
+    {
+      "id": "8fe65d19c4fe",
+      "module": "module-06",
+      "status": "QUOTE_NOT_IN_CORPUS",
+      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
+      "candidateSections": [
+        "1101.155"
+      ],
+      "classification": "ELLIPSIS_SEGMENT_MISSING",
+      "matchedPrefixChars": 0,
+      "sourceContinuesWith": null,
+      "quote": "may not prohibit a license holder from using … a contract form that is (1) prepared by the property owner; or (2) prepared by an attorney and required by the property owner."
+    },
+    {
+      "id": "a1de68d9ed84",
       "module": "module-07",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
         "17.50",
+        "17.46",
         "17.49"
       ],
       "classification": "NO_MATCH",
@@ -42,6 +96,7 @@
       "quote": "The seller replaced the sewer line in 2021"
     },
     {
+      "id": "7cab6ee1ec2a",
       "module": "module-07",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -52,20 +107,39 @@
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
       "quote": "No, this place has never had any water intrusion."
+    },
+    {
+      "id": "942e2915d797",
+      "module": "module-08",
+      "status": "QUOTE_NOT_IN_CORPUS",
+      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
+      "candidateSections": [
+        "3610",
+        "301.091",
+        "301.090",
+        "301.092"
+      ],
+      "classification": "NO_MATCH",
+      "matchedPrefixChars": 0,
+      "sourceContinuesWith": null,
+      "quote": "shall… immediately issue a charge on behalf of the aggrieved person"
+    },
+    {
+      "id": "f4cdc184652c",
+      "module": "module-08",
+      "status": "QUOTE_NOT_IN_CORPUS",
+      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
+      "candidateSections": [
+        "3604",
+        "301.024"
+      ],
+      "classification": "NO_MATCH",
+      "matchedPrefixChars": 0,
+      "sourceContinuesWith": null,
+      "quote": "the area is changing — list now before values drop,"
     }
   ],
   "quoteFindings": [
-    {
-      "module": "module-02",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1024.7"
-      ],
-      "attributedTo": "texas/trec-sources/federal/ecfr-12cfr1024.xml",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1024.7; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "A mortgage broker or dealer may provide the list of homeownership counseling organizations required under this section to any loan applicant from whom it receives or for whom it prepares an applicatio"
-    },
     {
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
@@ -224,40 +298,6 @@
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1691",
-        "1024.2"
-      ],
-      "attributedTo": "texas/trec-sources/federal/ecfr-12cfr1024.xml",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1024.2; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "by delivering it or placing it in the mail to the applicant not later than three business days (as that term is defined in § 1024.2) after the application is received or prepared."
-    },
-    {
-      "module": "module-02",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "343.105"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/FI.343.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 343.105; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "will be financed at the interest rate provided for in the mortgage loan,"
-    },
-    {
-      "module": "module-02",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "343.105"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/FI.343.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 343.105; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "YOU MUST CANCEL WITHIN 30 DAYS OF THE DATE OF THE LOAN TO RECEIVE A FULL REFUND OR CREDIT."
-    },
-    {
-      "module": "module-02",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
         "2601"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2601.html",
@@ -293,12 +333,35 @@
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1691"
+        "1691",
+        "343.201"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 1691; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "those values developed pursuant to a policy of a government sponsored enterprise or by an automated valuation model"
+    },
+    {
+      "module": "module-02",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "2601"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us12-2601.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 2601; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "more effective advance disclosure to home buyers and sellers of settlement costs,"
+    },
+    {
+      "module": "module-02",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "2601"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us12-2601.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 2601; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "the elimination of kickbacks or referral fees that tend to increase unnecessarily the costs of certain settlement services,"
     },
     {
       "module": "module-02",
@@ -321,17 +384,6 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 2601; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "significant reform and modernization of local recordkeeping of land title information"
-    },
-    {
-      "module": "module-02",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "5.074"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/PR.5.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 5.074; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "If the negotiations that precede the execution of an executory contract are conducted primarily in a language other than English, the seller shall provide a copy in that language of all written docume"
     },
     {
       "module": "module-02",
@@ -405,6 +457,17 @@
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2603"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us12-2603.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 2603; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "shall conspicuously and clearly itemize all charges imposed upon the borrower and all charges imposed upon the seller in connection with the settlement and shall indicate whether any title insurance p"
+    },
+    {
+      "module": "module-02",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
         "2603",
         "1026.2",
         "1026",
@@ -430,19 +493,20 @@
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1024.8",
-        "1024.10"
+        "2607",
+        "1024.14"
       ],
-      "attributedTo": "texas/trec-sources/federal/ecfr-12cfr1024.xml",
-      "matchedAs": "ellipsis-segments-in-order",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1024.8; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "No fee shall be imposed or charge made upon any other person, as a part of settlement costs or otherwise, by a lender . . . or by a servicer . . . for or on account of the preparation and distribution"
+      "attributedTo": "texas/trec-sources/federal/us12-2607.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 2607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "(5) such other payments or classes of payments or other transfers as are specified in regulations prescribed by the Bureau."
     },
     {
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "2607"
+        "2607",
+        "1024.15"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2607.html",
       "matchedAs": "exact",
@@ -466,19 +530,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "2607",
+        "1024.14",
         "1024.15"
-      ],
-      "attributedTo": "texas/trec-sources/federal/ecfr-12cfr1024.xml",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1024.15; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "When a person in a position to refer settlement service business, such as an attorney, mortgage lender, real estate broker or agent, or developer or builder, receives a payment for providing additiona"
-    },
-    {
-      "module": "module-02",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "2607",
-        "1024.14"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2607.html",
       "matchedAs": "exact",
@@ -490,7 +543,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "2607",
-        "1024.14"
+        "1024.14",
+        "1024.15"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2607.html",
       "matchedAs": "exact",
@@ -501,7 +555,8 @@
       "module": "module-02",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "2607"
+        "2607",
+        "1024.15"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2607.html",
       "matchedAs": "exact",
@@ -512,12 +567,50 @@
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1103.055",
+        "1103.053",
         "1103.003"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1103.003; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1103.055; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "the executive secretary of the Veterans' Land Board or the executive secretary's designee"
+    },
+    {
+      "module": "module-03",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1103.055",
+        "1103.053"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1103.055; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "eight members appointed by the governor with the advice and consent of the senate,"
+    },
+    {
+      "module": "module-03",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1103.055",
+        "1103.053"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1103.055; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "certified or licensed appraisers actively engaged in the practice of appraising real property"
+    },
+    {
+      "module": "module-03",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1103.055",
+        "1103.053"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1103.055; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "public members who qualify for appointment based on their recognized business ability."
     },
     {
       "module": "module-03",
@@ -545,35 +638,36 @@
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1103.202"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1103.202; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "for classroom hours taken in the course of becoming licensed as a real estate broker or sales agent or for professional development or continuing education courses taken,"
-    },
-    {
-      "module": "module-03",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1103.202",
         "1103.205"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1103.202; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "satisfy the requirements established by the guidelines recognized by the Appraiser Qualifications Board."
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1103.205; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "must include the review of appraisal experience of all applicants for certification,"
     },
     {
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1103.251"
+        "1103.251",
+        "1103.258"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 1103.251; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "An applicant for the examination must fulfill the applicable experience requirement for a certificate or license *before* taking the examination."
+    },
+    {
+      "module": "module-03",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1103.251",
+        "1103.258"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1103.251; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "the minimum score required by the Appraiser Qualifications Board"
     },
     {
       "module": "module-03",
@@ -591,8 +685,10 @@
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3331",
         "1103.203",
-        "1103.211"
+        "1103.211",
+        "1103.301"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
       "matchedAs": "exact",
@@ -603,12 +699,14 @@
       "module": "module-03",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1103.301",
-        "1103.303"
+        "3331",
+        "1103.203",
+        "1103.211",
+        "1103.301"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1103.301; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1103.203; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "may not perform any activity regulated under this chapter"
     },
     {
@@ -621,6 +719,17 @@
       "matchedAs": "terminal-punctuation",
       "note": "verbatim in the cited source but outside the span this script computed for § 1103.201; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "in the ordinary course of the broker's business,"
+    },
+    {
+      "module": "module-04",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "91.006"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/PR.91.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 91.006; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "During the term of a lease, the tenant may not rent the leasehold to any other person without the prior consent of the landlord"
     },
     {
       "module": "module-04",
@@ -649,17 +758,6 @@
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "92.001"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 92.001; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "does not increase the guarantor's potential financial obligation for rent that existed under the original lease."
-    },
-    {
-      "module": "module-04",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
         "91.006"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.91.htm",
@@ -683,23 +781,29 @@
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "92.058"
+        "92.103",
+        "92.058",
+        "92.107",
+        "92.1041"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 92.058; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 92.103; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "This subchapter applies to all residential leases."
     },
     {
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "92.109"
+        "92.103",
+        "92.107",
+        "92.1041",
+        "92.104"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 92.109; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "(1) the tenant owes rent when he surrenders possession of the premises; and (2) there is no controversy concerning the amount of rent owed."
+      "note": "verbatim in the cited source but outside the span this script computed for § 92.103; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "A security deposit is any advance of money, other than a rental application deposit or an advance payment of rent, that is intended primarily to secure performance under a lease of a dwelling that has"
     },
     {
       "module": "module-04",
@@ -728,11 +832,34 @@
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "92.205"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 92.205; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "the holder of record title, according to the deed records in the county clerk's office,"
+    },
+    {
+      "module": "module-04",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "92.205"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 92.205; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "on or before the seventh day after the day the landlord receives the tenant's request for the information"
+    },
+    {
+      "module": "module-04",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "92.332",
         "92.0091"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 92.0091; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 92.332; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "granted to the tenant by lease, municipal ordinance, or federal or state statute"
     },
     {
@@ -794,18 +921,24 @@
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "212.0091",
+        "212.0115",
+        "212.014",
         "212.004"
       ],
       "attributedTo": "texas/trec-sources/statutes/LG.212.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 212.004; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 212.0091; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "must approve a plat or replat that is required to be prepared under this subchapter and that satisfies the requirements of this subchapter."
     },
     {
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "212.0091"
+        "212.0091",
+        "212.0115",
+        "212.014",
+        "212.011"
       ],
       "attributedTo": "texas/trec-sources/statutes/LG.212.htm",
       "matchedAs": "terminal-punctuation",
@@ -816,12 +949,26 @@
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "212.0091"
+        "212.0091",
+        "212.0115",
+        "212.014",
+        "212.011"
       ],
       "attributedTo": "texas/trec-sources/statutes/LG.212.htm",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 212.0091; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "is approved by the municipal authority unless it is disapproved within that period and in accordance with Section 212.0091"
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "212.003"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/LG.212.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 212.003; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "does not authorize the municipality to require municipal building permits or otherwise enforce the municipality's building code in its extraterritorial jurisdiction."
     },
     {
       "module": "module-05",
@@ -833,6 +980,28 @@
       "matchedAs": "terminal-punctuation",
       "note": "verbatim in the cited source but outside the span this script computed for § 4852d; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "for the disclosure of lead-based paint hazards in target housing which is offered for sale or lease,"
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "4852d"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-4852d.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 4852d; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "disclose to the purchaser or lessee the presence of any known lead-based paint, or any known lead-based paint hazards, in such housing and provide to the purchaser or lessee any lead hazard evaluation"
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "4852d"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-4852d.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 4852d; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "permit the purchaser a 10-day period (unless the parties mutually agree upon a different period of time) to conduct a risk assessment or inspection for the presence of lead-based paint hazards."
     },
     {
       "module": "module-05",
@@ -850,7 +1019,8 @@
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "4852d"
+        "4852d",
+        "5.008"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-4852d.html",
       "matchedAs": "terminal-punctuation",
@@ -922,6 +1092,17 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 4852d; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "Every purchaser of any interest in residential real property on which a residential dwelling was built prior to 1978 is notified that such property may present exposure to lead from lead-based paint t"
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "4852d"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-4852d.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 4852d; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "The seller of any interest in residential real property is required to provide the buyer with any information on lead-based paint hazards from risk assessments or inspections in the seller's possessio"
     },
     {
       "module": "module-05",
@@ -1004,7 +1185,22 @@
       "module": "module-05",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "9601"
+        "9601",
+        "5.013",
+        "361.003"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-9601.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 9601; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "does not include petroleum, including crude oil or any fraction thereof which is not otherwise specifically listed or designated as a hazardous substance under subparagraphs (A) through (F) of this pa"
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "9601",
+        "5.013",
+        "361.003"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-9601.html",
       "matchedAs": "exact",
@@ -1067,6 +1263,17 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 9601; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "such as chain of title documents, aerial photographs, building department records, and land use records"
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "9601"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-9601.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 9601; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "visual inspections of the facility and of adjoining properties"
     },
     {
       "module": "module-05",
@@ -1218,23 +1425,14 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "4852d",
-        "9601"
+        "9601",
+        "4321",
+        "1531"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-4852d.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 4852d; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "to ensure compliance with the requirements of this section."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.004"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.004; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "under a power of sale conferred by a deed of trust or other contract lien."
     },
     {
       "module": "module-06",
@@ -1262,22 +1460,24 @@
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.053",
         "1101.101"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.101; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.053; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "the scope of and limitations on the rulemaking authority of the commission"
     },
     {
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.053",
         "1101.101"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.101; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.053; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "may implicate federal antitrust law by limiting competition or impacting prices."
     },
     {
@@ -1333,6 +1533,17 @@
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.353"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.353; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "even if an order has granted community supervision suspending the imposition of the sentence."
+    },
+    {
+      "module": "module-06",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
         "1101.356"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -1345,7 +1556,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1101.458",
-        "1101.363"
+        "1101.363",
+        "1101.356"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
@@ -1359,7 +1571,7 @@
         "1101.657",
         "1101.365",
         "1101.364",
-        "1101.367"
+        "1101.363"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
@@ -1370,119 +1582,51 @@
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.354",
-        "1101.403"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.354; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "The examination for a sales agent license must be less exacting and less stringent than the broker examination."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.403",
-        "1101.404"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.403; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "must satisfy the examination requirement not later than one year after the date the license application is filed."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.454"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.454; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "If a person's license has been expired for six months or longer, the person may not renew the license. The person may obtain a new license by complying with the requirements and procedures for obtaini"
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
+        "1101.002",
         "1101.501",
         "1101.551",
         "1101.563"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.501; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.002; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "the law of eminent domain, including the rights of property owners,"
     },
     {
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.002",
+        "1101.501",
         "1101.551",
         "1101.563"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.551; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.002; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "ethical considerations in the performance of right-of-way acquisition services."
     },
     {
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.558"
+        "1101.655"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.558; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "at a minimum, answer the party's questions and present any offer to or from the party."
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.655; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "arising out of a single transaction may not exceed a total of $125,000, regardless of the number of claimants,"
     },
     {
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.558",
-        "1101.563"
+        "1101.655"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.558; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "may confirm information to a party regarding the size, price, and terms of the real property available for sale or lease."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.562"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.562; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "the amount or rate of compensation the broker will receive and how this amount will be determined"
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.562"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.562; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "in conspicuous language that broker compensation is not set by law and is fully negotiable."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.652",
-        "1101.562",
-        "1101.601"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.652; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "may not: (1) be an exclusive agreement with the license holder; or (2) state a termination date more than fourteen days from the date the agreement is entered into."
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.655; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "based on judgments against a single license or certificate holder may not exceed a total of $250,000"
     },
     {
       "module": "module-06",
@@ -1499,56 +1643,13 @@
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.655",
         "1101.651"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.651; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.655; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "shall deposit to the credit of the trust account an administrative penalty collected under Subchapter O."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.559"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.559; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "may not pay a commission to a person except through the broker."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.652"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.652; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "the information materially relates to the condition of the property"
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.155"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "disregards or violates this chapter or Chapter 1102."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.155"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "to use a contract form required by the commission under Section 1101.155."
     },
     {
       "module": "module-06",
@@ -1565,7 +1666,32 @@
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.555"
+        "1101.555",
+        "1101.563"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.555; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "fails to include the name of the broker for whom the license holder acts"
+    },
+    {
+      "module": "module-06",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.555",
+        "1101.563"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.555; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "an unjustified or unwarranted threat of a legal proceeding"
+    },
+    {
+      "module": "module-06",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.555",
+        "1101.563"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
@@ -1576,7 +1702,8 @@
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.555"
+        "1101.555",
+        "1101.563"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
@@ -1588,24 +1715,13 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1101.654",
+        "1101.555",
         "1101.563"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 1101.654; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "to enter into a written agreement with a prospective buyer as required by Section 1101.563."
-    },
-    {
-      "module": "module-06",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.155",
-        "1101.656"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "advises a person regarding the validity or legal sufficiency of an instrument or the validity of title to real property."
     },
     {
       "module": "module-06",
@@ -1622,11 +1738,46 @@
       "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.701"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.701; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "the amount necessary to deter a future violation,"
+    },
+    {
+      "module": "module-06",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.701"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.701; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "any other matter that justice may require."
+    },
+    {
+      "module": "module-06",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.806",
         "1101.803"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.803; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.806; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "is not liable for a misrepresentation or a concealment of a material fact made by a license holder"
+    },
+    {
+      "module": "module-06",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.806",
+        "1101.803"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.806; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "is not liable for a misrepresentation or a concealment of a material fact made by a party"
     },
     {
@@ -1679,7 +1830,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "535.55",
-        "1101.003"
+        "1101.003",
+        "1101.454"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "terminal-punctuation",
@@ -1687,14 +1839,30 @@
       "quote": "at least 12 semester hours, or equivalent classroom hours, of qualifying real estate courses required by commission rule,"
     },
     {
-      "module": "module-07",
+      "module": "module-06",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.351"
+        "1101.657",
+        "1101.365",
+        "1101.353",
+        "1101.364"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.351; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.657; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "even if an order has granted community supervision suspending the imposition of the sentence."
+    },
+    {
+      "module": "module-07",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.803",
+        "1101.351",
+        "1101.554"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.803; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "a person who is sponsored by a licensed broker for the purpose of performing an act described by Subdivision (1)"
     },
     {
@@ -1723,7 +1891,8 @@
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.652"
+        "1101.652",
+        "1101.562"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
@@ -1745,17 +1914,6 @@
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.555"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.555; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "may not receive payment of or recover any commission agreed to be paid on the sale."
-    },
-    {
-      "module": "module-07",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -1767,12 +1925,14 @@
       "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.652",
+        "1101.806",
         "1101.555",
         "1101.802"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.555; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.652; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "a death occurred on a property by natural causes, suicide, or accident unrelated to the condition of the property"
     },
     {
@@ -1784,7 +1944,7 @@
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 17.46; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "any unconscionable action or course of action by any person"
+      "quote": "Nothing in this subchapter shall apply to a claim against a person licensed as a broker or salesperson under Chapter 1101"
     },
     {
       "module": "module-07",
@@ -1795,7 +1955,7 @@
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 17.46; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "Nothing in this subchapter shall apply to a claim against a person licensed as a broker or salesperson under Chapter 1101"
+      "quote": "arising from an act or omission by the person while acting as a broker or salesperson."
     },
     {
       "module": "module-07",
@@ -1823,10 +1983,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604",
+        "3602",
         "3605",
-        "3606",
-        "3617",
-        "1101.652"
+        "3606"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3605.html",
       "matchedAs": "exact",
@@ -1837,6 +1997,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604",
         "3601"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3601.html",
@@ -1849,7 +2010,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
-        "3601"
+        "3601",
+        "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3601.html",
       "matchedAs": "exact",
@@ -1873,7 +2035,8 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3602"
+        "3602",
+        "301.003"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3602.html",
       "matchedAs": "exact",
@@ -1884,6 +2047,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604",
         "3602",
         "301.003"
       ],
@@ -1921,7 +2085,8 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3602"
+        "3602",
+        "301.003"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3602.html",
       "matchedAs": "terminal-punctuation",
@@ -1932,7 +2097,8 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3602"
+        "3602",
+        "301.003"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3602.html",
       "matchedAs": "exact",
@@ -2021,7 +2187,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3603"
+        "3604",
+        "3603",
+        "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3603.html",
       "matchedAs": "exact",
@@ -2033,7 +2201,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
-        "3603"
+        "3603",
+        "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3603.html",
       "matchedAs": "exact",
@@ -2084,6 +2253,17 @@
       "attributedTo": "texas/trec-sources/federal/us42-3604.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 3604; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "any notice, statement, or advertisement,"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3604"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3604.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3604; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "to represent to any person because of race, color, religion, sex, handicap, familial status, or national origin that any dwelling is not available for inspection, sale, or rental when such dwelling is"
     },
     {
@@ -2123,12 +2303,45 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3604.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3604; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "the terms, conditions, or privileges of sale or rental"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3604"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3604.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3604; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "the provision of services or facilities,"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
         "3602"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3602.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 3602; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "one or more individuals (who have not attained the age of 18 years) being domiciled with— (1) a parent or another person having legal custody of such individual or individuals; or (2) the designee of "
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3602"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3602.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3602; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "The protections afforded against discrimination on the basis of familial status shall apply to any person who is pregnant or is in the process of securing legal custody of any individual who has not a"
     },
     {
       "module": "module-08",
@@ -2181,6 +2394,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3602",
         "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3607.html",
@@ -2192,6 +2406,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3602",
         "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3607.html",
@@ -2203,12 +2418,61 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3602",
         "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3607.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "(ii) the housing facility or   community publishes and adheres to policies and procedures that demonstrate the intent required   under this subparagraph"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3602",
+        "3607"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "(iii) the housing facility or community complies with rules issued by   the Secretary for verification of occupancy,"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3602",
+        "3607"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "provide for verification by reliable   surveys and affidavits"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3602",
+        "3607"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "include examples of the types of policies and procedures relevant to a   determination of compliance,"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3602",
+        "3607"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "admissible in administrative and   judicial proceedings for the purposes of such verification."
     },
     {
       "module": "module-08",
@@ -2261,6 +2525,17 @@
         "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "matchedAs": "ellipsis-segments-in-order",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "a person may only show good faith reliance… by showing that— (i) such person has no actual knowledge that the facility or community is not, or will not be, eligible for such exemption; and (ii) the fa"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3607"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "Nothing in this subchapter prohibits conduct against a person because such person has been convicted by any court of competent jurisdiction of the illegal manufacture or distribution of a controlled s"
@@ -2292,12 +2567,35 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604",
         "3603"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3603.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 3603; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "such   private individual owner does not own more than three such single-family houses at any one time"
+    },
+    {
+      "module": "module-08",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "3604"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3603.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "such bona fide private individual owner does   not own any interest in, nor is there owned or reserved on his behalf, under any express or voluntary   agreement, title to or any right to all or a port"
+    },
+    {
+      "module": "module-08",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "3604"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3603.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "In the case of the sale of any such   single-family house by a private individual owner not residing in such house at the time of such sale   or who was not the most recent resident of such house prio"
     },
     {
       "module": "module-08",
@@ -2373,12 +2671,37 @@
       "candidateSections": [
         "3603",
         "3607",
-        "301.041"
+        "301.041",
+        "301.042"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3607.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "a religious organization, association, or society, or any nonprofit institution or organization operated, supervised or controlled by or in conjunction with a religious organization, association, or s"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3607",
+        "301.042"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "restricted on account of race, color, or national origin"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3607",
+        "301.042"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3607; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "a private club not in fact open to the public, which as an incident to its primary purpose or purposes provides lodgings which it owns or operates for other than a commercial purpose, from limiting th"
     },
     {
       "module": "module-08",
@@ -2398,19 +2721,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604",
+        "3607",
         "301.021",
-        "301.025"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 301.021; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "does not apply to an individual because of an individual's sexual orientation or because that individual is a transvestite."
-    },
-    {
-      "module": "module-08",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "3607"
+        "301.022"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3607.html",
       "matchedAs": "terminal-punctuation",
@@ -2422,7 +2736,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3605",
-        "301.027"
+        "3606",
+        "301.027",
+        "301.026"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3605.html",
       "matchedAs": "exact",
@@ -2433,7 +2749,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3606"
+        "3605",
+        "3606",
+        "301.027",
+        "301.026"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3606.html",
       "matchedAs": "exact",
@@ -2444,47 +2763,14 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "301.022"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 301.022; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "not more than four families living independently of each other, if the owner maintains and occupies one of the living quarters as the owner's residence."
-    },
-    {
-      "module": "module-08",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "301.022",
-        "301.042"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 301.022; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "one sale in a 24-month period if the owner was not the most recent resident of the house at the time of the sale."
-    },
-    {
-      "module": "module-08",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "3610"
+        "3610",
+        "301.044",
+        "301.068"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 3610; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "substantially equivalent to those created by and under this subchapter."
-    },
-    {
-      "module": "module-08",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "301.131",
-        "301.132"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 301.131; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "during the seven-year period ending on the date of filing of the charge."
     },
     {
       "module": "module-08",
@@ -2502,7 +2788,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3602",
+        "3610",
+        "301.081",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2514,7 +2803,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3602",
-        "3610"
+        "3610",
+        "301.081",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "terminal-punctuation",
@@ -2527,7 +2818,8 @@
       "candidateSections": [
         "3602",
         "3610",
-        "301.081"
+        "301.081",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2538,8 +2830,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3602",
         "3610",
-        "301.081"
+        "301.081",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2552,7 +2846,8 @@
       "candidateSections": [
         "3610",
         "301.081",
-        "301.002"
+        "301.082",
+        "301.083"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2564,6 +2859,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3610",
+        "301.082",
+        "301.083",
         "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
@@ -2575,7 +2872,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.082",
+        "301.083"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "terminal-punctuation",
@@ -2586,7 +2885,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.082",
+        "301.083"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "ellipsis-segments-in-order",
@@ -2599,6 +2900,7 @@
       "candidateSections": [
         "3610",
         "301.082",
+        "301.085",
         "301.083"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
@@ -2610,7 +2912,44 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.085"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3610.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3610; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "shall be an agreement between the respondent and the complainant, and shall be subject to approval by the Secretary"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3610",
+        "301.085"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3610.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3610; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "may provide for binding arbitration of the dispute,"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3610",
+        "301.085"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3610.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3610; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "may award appropriate relief, including monetary relief"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3610",
+        "301.085"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2633,7 +2972,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.083",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2644,7 +2985,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.083",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "terminal-punctuation",
@@ -2655,7 +2998,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.083",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2667,6 +3012,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3610",
+        "301.091",
+        "301.090",
         "301.083"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
@@ -2678,18 +3025,38 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.091",
+        "301.090",
+        "301.092"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
-      "matchedAs": "exact",
+      "matchedAs": "terminal-punctuation",
       "note": "verbatim in the cited source but outside the span this script computed for § 3610; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "whether reasonable cause exists to believe that a discriminatory housing practice has occurred or is about to occur,"
+      "quote": "based on the final investigative report,"
     },
     {
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.091",
+        "301.090",
+        "301.092"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3610.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3610; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "need not be limited to the facts or grounds alleged in the complaint"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3610",
+        "301.091",
+        "301.090",
+        "301.092"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2700,7 +3067,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.091",
+        "301.090",
+        "301.092"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2712,8 +3082,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3610",
+        "301.091",
         "301.090",
-        "301.088"
+        "301.092"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "matchedAs": "exact",
@@ -2774,7 +3145,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
-        "3606"
+        "3606",
+        "3603",
+        "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3606.html",
       "matchedAs": "exact",
@@ -2786,7 +3159,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
-        "3606"
+        "3606",
+        "3603",
+        "3607"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3606.html",
       "matchedAs": "terminal-punctuation",
@@ -2811,22 +3186,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3602",
-        "3606"
-      ],
-      "attributedTo": "texas/trec-sources/federal/us42-3606.html",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 3606; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "service, organization, or facility relating to the business of selling or renting dwellings,"
-    },
-    {
-      "module": "module-08",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
         "3604",
         "3602",
         "3605",
-        "3617"
+        "3606"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3617.html",
       "matchedAs": "exact",
@@ -2838,6 +3201,7 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
+        "3602",
         "3617"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3617.html",
@@ -2861,6 +3225,7 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1691",
+        "1691c",
         "301.004",
         "301.026"
       ],
@@ -2868,6 +3233,30 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 1691; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "(1) to make an inquiry of marital status if such inquiry is for the purpose of ascertaining the creditor's rights and remedies applicable to the particular extension of credit and not to discriminate "
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1691",
+        "1691c"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us15-1691.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1691; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "(2) to make an inquiry of the applicant's age or of whether the applicant's income derives from any public assistance program if such inquiry is for the purpose of determining the amount and probable "
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1691",
+        "1691c"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us15-1691.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1691; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "(3) to use any empirically derived credit system which considers age if such system is demonstrably and statistically sound in accordance with regulations of the Bureau, except that in the operation o"
     },
     {
       "module": "module-08",
@@ -2886,7 +3275,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1691",
-        "1691c"
+        "1691c",
+        "1691a",
+        "1002"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691.html",
       "matchedAs": "terminal-punctuation",
@@ -2898,7 +3289,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1691",
-        "1691a"
+        "1691a",
+        "1002"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691.html",
       "matchedAs": "terminal-punctuation",
@@ -2909,7 +3301,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1691"
+        "1691",
+        "1691a",
+        "1002"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691.html",
       "matchedAs": "exact",
@@ -2926,6 +3320,28 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 1691; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "Within thirty days (or such longer reasonable time as specified in regulations of the Bureau for any class of credit transaction) after receipt of a **completed** application for credit, a creditor sh"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1691"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us15-1691.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1691; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "(i) the applicant's right to a statement of reasons within thirty days after receipt by the creditor of a request made within sixty days after such notification, and (ii) the identity of the person or"
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1691"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us15-1691.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1691; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "only if it contains the **specific reasons** for the adverse action taken"
     },
     {
       "module": "module-08",
@@ -2954,6 +3370,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3602",
         "1691",
         "1691a"
       ],
@@ -2966,6 +3383,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3602",
         "1691",
         "1691a"
       ],
@@ -2978,6 +3396,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3602",
         "1691",
         "1691a"
       ],
@@ -3031,7 +3450,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1691",
-        "1691c"
+        "1691c",
+        "1691e"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691c.html",
       "matchedAs": "terminal-punctuation",
@@ -3043,7 +3463,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1691",
-        "1691c"
+        "1691c",
+        "1691e"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691c.html",
       "matchedAs": "terminal-punctuation",
@@ -3055,7 +3476,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1691",
-        "1691c"
+        "1691c",
+        "1691e"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691c.html",
       "matchedAs": "exact",
@@ -3077,6 +3499,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604",
         "3602",
         "3605"
       ],
@@ -3113,6 +3536,7 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3605",
+        "301.042",
         "301.026"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3605.html",
@@ -3157,8 +3581,32 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2901"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us12-2901.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 2901; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "each appropriate Federal financial supervisory agency."
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "2901"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us12-2901.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 2901; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "use its authority **when examining** financial institutions."
+    },
+    {
+      "module": "module-08",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
         "2901",
-        "2902"
+        "2902",
+        "1828",
+        "1842"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2901.html",
       "matchedAs": "exact",
@@ -3169,7 +3617,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "2902"
+        "2901",
+        "2902",
+        "1828",
+        "1842"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2902.html",
       "matchedAs": "exact",
@@ -3180,6 +3631,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2901",
         "2902",
         "1828",
         "1842"
@@ -3193,6 +3645,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2901",
         "2902",
         "1828",
         "1842"
@@ -3218,8 +3671,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2902",
         "2904",
-        "2905"
+        "2905",
+        "2906"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2904.html",
       "matchedAs": "exact",
@@ -3230,8 +3685,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2902",
         "2904",
-        "2905"
+        "2905",
+        "2906"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2905.html",
       "matchedAs": "exact",
@@ -3242,6 +3699,8 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2902",
+        "2904",
         "2905",
         "2906"
       ],
@@ -3461,7 +3920,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "2901"
+        "2901",
+        "2903",
+        "2906"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2901.html",
       "matchedAs": "exact",
@@ -3472,7 +3933,9 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "2901"
+        "2901",
+        "2903",
+        "2906"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2901.html",
       "matchedAs": "exact",
@@ -3496,6 +3959,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2901",
         "2906"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2906.html",
@@ -3508,8 +3972,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3605",
-        "301.114",
-        "1101.801"
+        "1691",
+        "1002.2",
+        "1002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3605.html",
       "matchedAs": "exact",
@@ -3520,10 +3985,10 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "3604",
+        "3605",
         "3606",
-        "3603",
-        "3607",
-        "1002"
+        "3617"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3606.html",
       "matchedAs": "exact",
@@ -3548,6 +4013,7 @@
       "module": "module-08",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "2901",
         "2902",
         "2903",
         "2906"
@@ -3562,7 +4028,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
-        "2906"
+        "2901",
+        "2902",
+        "2903"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2906.html",
       "matchedAs": "exact",
@@ -3575,11 +4043,12 @@
       "candidateSections": [
         "3604",
         "3602",
-        "2906"
+        "2901",
+        "2902"
       ],
-      "attributedTo": "texas/trec-sources/federal/us12-2906.html",
+      "attributedTo": "texas/trec-sources/federal/us12-2903.html",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 2906; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 2903; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "Satisfactory record of meeting community credit needs"
     },
     {
@@ -3588,8 +4057,8 @@
       "candidateSections": [
         "3604",
         "3602",
-        "3603",
-        "2906"
+        "2901",
+        "2902"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2906.html",
       "matchedAs": "exact",
@@ -3602,8 +4071,8 @@
       "candidateSections": [
         "3604",
         "3602",
-        "3603",
-        "2906"
+        "2901",
+        "2902"
       ],
       "attributedTo": "texas/trec-sources/federal/us12-2906.html",
       "matchedAs": "exact",
@@ -3614,7 +4083,20 @@
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "92.006",
+        "92.205"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 92.006; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "if an entity located off-site from the dwelling is primarily responsible for managing the dwelling, the name and street address of the management company."
+    },
+    {
+      "module": "module-09",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
         "3604",
+        "301.025",
         "301.003"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3604.html",
@@ -3704,6 +4186,20 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "1103.055",
+        "1103.053"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
+      "sourceContinuesWith": "as follows:(a) four members who are certified or licensed appraisers actively engaged in",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "eight members appointed by the governor with the advice and consent of the senate,"
+    },
+    {
+      "module": "module-03",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_REVIEW",
+      "candidateSections": [
+        "1103.203",
         "1103.354"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1103.htm",
@@ -3717,6 +4213,7 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "1103.402",
+        "1103.404",
         "1103.154",
         "1103.354"
       ],
@@ -3730,6 +4227,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "92.001",
         "26.01"
       ],
       "attributedTo": "texas/trec-sources/statutes/BC.26.htm",
@@ -3755,6 +4253,7 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "92.001",
+        "92.060",
         "92.052",
         "92.056"
       ],
@@ -3795,6 +4294,8 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "92.156",
+        "92.151",
         "92.161",
         "92.164"
       ],
@@ -3809,7 +4310,8 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "92.008",
-        "92.0081"
+        "92.0081",
+        "92.0091"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.92.htm",
       "sourceContinuesWith": "the date on which the door locks are changed a written notice stating:(a) the earliest da",
@@ -3833,6 +4335,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "92.332",
         "92.333",
         "92.335"
       ],
@@ -3860,7 +4363,8 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
-        "211.019"
+        "211.019",
+        "211.013"
       ],
       "attributedTo": "texas/trec-sources/statutes/LG.211.htm",
       "sourceContinuesWith": "of the property.(c) a requirement imposed by a municipality to stop a nonconforming use o",
@@ -3885,12 +4389,27 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
-        "4852d"
+        "4852d",
+        "5.008"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-4852d.html",
       "sourceContinuesWith": ") to conduct a risk assessment or inspection for the presence of lead-based paint hazards.",
       "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
       "quote": "unless the parties mutually agree upon a different period of time,"
+    },
+    {
+      "module": "module-05",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_REVIEW",
+      "candidateSections": [
+        "9601",
+        "5.013",
+        "361.003"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-9601.html",
+      "sourceContinuesWith": "(or mixtures of natural gas and such synthetic gas).(15) the term 'navigable waters' or 'n",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "does not include petroleum, including crude oil or any fraction thereof which is not otherwise specifically listed or designated as a hazardous substance under subparagraphs (A) through (F) of this pa"
     },
     {
       "module": "module-06",
@@ -3899,6 +4418,7 @@
       "candidateSections": [
         "1101.002",
         "1101.051",
+        "1101.056",
         "1101.055"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -3923,6 +4443,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "1101.053",
         "1101.101"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -3960,7 +4481,8 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
-        "1101.351"
+        "1101.351",
+        "1101.367"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "sourceContinuesWith": "evidencing that authority.(c) a licensed sales agent may not engage or attempt to engage",
@@ -3997,9 +4519,23 @@
     {
       "module": "module-06",
       "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_MID_CLAUSE",
+      "candidateSections": [
+        "1101.559",
+        "1101.651"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "sourceContinuesWith": "or was sponsoring the sales agent when the sales agent earned the compensation.(c) a sale",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "may not accept compensation for a real estate transaction from a person other than the broker that is sponsoring the sales agent,"
+    },
+    {
+      "module": "module-06",
+      "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
-        "1101.559"
+        "1101.559",
+        "1101.651"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "sourceContinuesWith": "that is sponsoring the sales agent at that time.(d) a broker and any broker or sales agen",
@@ -4024,6 +4560,8 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "535.55",
+        "1101.351",
+        "1101.803",
         "1101.363"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -4052,7 +4590,8 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "535.55",
-        "1101.003"
+        "1101.003",
+        "1101.454"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.55.txt",
       "sourceContinuesWith": "as required under the act as follows: 60 hours of principles of real estate; 30 hours of",
@@ -4065,6 +4604,7 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "535.55",
+        "1101.003",
         "1101.454"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.55.txt",
@@ -4141,7 +4681,8 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
-        "3602"
+        "3602",
+        "301.003"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3602.html",
       "sourceContinuesWith": "(as defined in section 802 of title 21).(i) 'aggrieved person' includes any person who-(1)",
@@ -4153,7 +4694,48 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "3604"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3604.html",
+      "sourceContinuesWith": "in connection therewith, because of race, color, religion, sex, familial status, or natio",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "the provision of services or facilities,"
+    },
+    {
+      "module": "module-08",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_REVIEW",
+      "candidateSections": [
+        "3602",
         "3607"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3607.html",
+      "sourceContinuesWith": "with the requirement of clause(ii). such surveys and affidavits shall be admissible in ad",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "include examples of the types of policies and procedures relevant to a   determination of compliance,"
+    },
+    {
+      "module": "module-08",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_MID_CLAUSE",
+      "candidateSections": [
+        "3607",
+        "301.042"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
+      "sourceContinuesWith": "to persons of the same religion; or(2) giving preference to persons of the same religion,",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "**for other than a commercial purpose**,"
+    },
+    {
+      "module": "module-08",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_REVIEW",
+      "candidateSections": [
+        "3604",
+        "3607",
+        "301.021",
+        "301.022"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3607.html",
       "sourceContinuesWith": "as defined in section 802 of title 21.(5)(a) a person shall not be held personally liable",
@@ -4165,8 +4747,10 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "3605",
         "3606",
-        "301.027"
+        "301.027",
+        "301.026"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
       "sourceContinuesWith": "in such an organization, service, or facility because of race, color, religion, sex, disa",
@@ -4178,10 +4762,10 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "301.171",
         "301.091",
         "301.090",
-        "301.093",
-        "301.111"
+        "301.093"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
       "sourceContinuesWith": "as provided by section 301.131.(b) the election must be made not later than the 20th day",
@@ -4207,7 +4791,9 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "3602",
-        "3610"
+        "3610",
+        "301.081",
+        "301.002"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "sourceContinuesWith": "under this section.(b) upon the filing of such a complaint-(i) the secretary shall serve",
@@ -4219,7 +4805,9 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
-        "3610"
+        "3610",
+        "301.082",
+        "301.083"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
       "sourceContinuesWith": "from the secretary, an answer to such complaint; and(iv) the secretary shall make an inve",
@@ -4232,6 +4820,21 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "3610",
+        "301.085"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3610.html",
+      "sourceContinuesWith": "arising from the complaint. any such arbitration that results from a conciliation agreeme",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "may provide for binding arbitration of the dispute,"
+    },
+    {
+      "module": "module-08",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_REVIEW",
+      "candidateSections": [
+        "3610",
+        "301.091",
+        "301.090",
         "301.083"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3610.html",
@@ -4245,7 +4848,8 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "1691",
-        "1691c"
+        "1691c",
+        "1691e"
       ],
       "attributedTo": "texas/trec-sources/federal/us15-1691c.html",
       "sourceContinuesWith": "under the federal trade commission act, including the power to enforce any rule prescribe",
@@ -4257,8 +4861,10 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "1691",
         "1002.2",
-        "1002"
+        "1002",
+        "1002.4"
       ],
       "attributedTo": "texas/trec-sources/federal/ecfr-12cfr1002.2.xml",
       "sourceContinuesWith": "(including, but not limited to, information requirements; investigation procedures; standa",
@@ -4298,6 +4904,8 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "1691",
+        "1002.2",
         "1002",
         "1002.5"
       ],
@@ -4319,6 +4927,18 @@
       "sourceContinuesWith": "in determining the applicant's creditworthiness.(3) childbearing, childrearing. a credito",
       "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
       "quote": "unless the creditor discloses to the applicant that such income need not be revealed if the applicant does not want the creditor to consider it."
+    },
+    {
+      "module": "module-08",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_MID_CLAUSE",
+      "candidateSections": [
+        "2901"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us12-2901.html",
+      "sourceContinuesWith": "to use its authority when examining financial institutions, to encourage such institution",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "each appropriate Federal financial supervisory agency."
     }
   ],
   "claims": [

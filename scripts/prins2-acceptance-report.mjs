@@ -27,6 +27,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { reconcile } from "../config/texas/quotation-dispositions.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-principles-real-estate-ii-30-v1");
@@ -92,16 +93,22 @@ checks.push(check("5. block and screen coverage", coverageOk,
   `${blocks} blocks, ${screens} screens; ${coverageOk ? "ranges tile every module exactly — no gaps, overlaps or missing headings" : coverageDetail.join("; ")}`));
 
 /* 6 + 7 ── claim-to-source audit and unsupported claims ─────────────────────────────────────── */
+const COURSE_ID = "tx-principles-real-estate-ii-30-v1";
 const auditRun = tryRun("node", ["scripts/audit-prins2-claims.mjs"]);
 const audit = JSON.parse(fs.readFileSync(path.join(HOME, "claim-audit.json"), "utf8"));
 const byStatus = audit.totals.byStatus;
 const unsupported = (byStatus.SOURCE_NOT_HELD || 0) + (byStatus.SECTION_NOT_FOUND || 0) + (byStatus.AMBIGUOUS_CODE || 0);
-const ACTIONABLE = ["TRUNCATED_MID_CLAUSE", "PARTIAL", "ELLIPSIS_SEGMENT_MISSING", "NO_MATCH"];
-const actionableQuotes = audit.quoteFailures.filter((q) => ACTIONABLE.includes(q.classification));
+/* Point 7 used to read "actionableQuotes.length <= 2". That 2 was the number the then-current
+   matcher happened to produce, not a standard — it encoded the matcher's own defects as the bar.
+   When the matcher was repaired and its coverage widened from 1,048 to 1,162 checked quotations,
+   the count moved to 8 and this course failed a gate for no reason but a tool improving. The
+   requirement now is that EVERY unmatched quotation carries a reviewed disposition and that none of
+   them is a sourcing defect: zero unexplained, rather than an arbitrary handful tolerated. */
+const disposition = reconcile(COURSE_ID, audit.quoteFailures);
 checks.push(check("6. claim-to-source audit", auditRun.ok && unsupported === 0,
   `${audit.totals.citations} citations — ${byStatus.MECHANICAL_PASS || 0} pass, ${byStatus.IDENTIFIED_NOT_TAUGHT || 0} identified-not-taught, ${unsupported} unresolved`));
-checks.push(check("7. unsupported-claim count is zero", unsupported === 0 && actionableQuotes.length <= 2,
-  `${unsupported} unsupported citations; ${actionableQuotes.length} actionable quotation findings${actionableQuotes.length ? ` (${actionableQuotes.map((q) => q.module).join(", ")})` : ""}`));
+checks.push(check("7. unsupported claims and unmatched quotations", unsupported === 0 && disposition.clean,
+  `${unsupported} unsupported citations; ${disposition.unmatched} unmatched quotations, all reviewed — ${Object.entries(disposition.byDisposition).map(([k, v]) => `${v} ${k.toLowerCase().replace(/_/g, " ")}`).join(", ")}${disposition.undispositioned.length ? `; UNDISPOSITIONED: ${disposition.undispositioned.map((q) => `${q.id} (${q.module})`).join(", ")}` : ""}${disposition.defects.length ? `; SOURCING DEFECTS: ${disposition.defects.map((q) => q.id).join(", ")}` : ""}${disposition.orphaned.length ? `; stale dispositions no longer matching any quotation: ${disposition.orphaned.join(", ")}` : ""}`));
 
 /* 8 ── corrected-claim log ──────────────────────────────────────────────────────────────────── */
 let corrections = [];

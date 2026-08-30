@@ -22,16 +22,17 @@
       "MECHANICAL_PASS": 2216,
       "IDENTIFIED_NOT_TAUGHT": 1
     },
-    "quotesChecked": 979,
-    "quotesFailed": 32,
-    "quotesUnattributable": 501,
-    "quotesPassed": 784,
-    "quotesPassedOutsideSection": 79,
-    "quotesAttributionReview": 84,
-    "quotesTruncationReview": 39
+    "quotesChecked": 1108,
+    "quotesFailed": 33,
+    "quotesUnattributable": 372,
+    "quotesPassed": 925,
+    "quotesPassedOutsideSection": 71,
+    "quotesAttributionReview": 79,
+    "quotesTruncationReview": 40
   },
   "quoteFailures": [
     {
+      "id": "3e66f62e20b3",
       "module": "module-02",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -44,11 +45,13 @@
       "quote": "Relationship between principal & agent; authority of agent."
     },
     {
+      "id": "238242322df8",
       "module": "module-03",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
         "535.157",
+        "535.2",
         "1101.562",
         "1101.651"
       ],
@@ -58,6 +61,7 @@
       "quote": "Should I offer full price, or do you think they'd take less?"
     },
     {
+      "id": "e783920044f3",
       "module": "module-03",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -70,11 +74,15 @@
       "quote": "Section 1101.805 means an agent is never liable for repeating what a seller said."
     },
     {
+      "id": "4fa464b839f0",
       "module": "module-03",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
-        "1101.805"
+        "535.156",
+        "531.3",
+        "1101.805",
+        "1101.652"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -82,6 +90,7 @@
       "quote": "the protection is narrower and more conditional than it looks, and it does not touch your licence."
     },
     {
+      "id": "f2206b068b58",
       "module": "module-03",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -94,6 +103,7 @@
       "quote": "according to the 2023 inspection report."
     },
     {
+      "id": "2c97ec37c1e1",
       "module": "module-03",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -106,6 +116,7 @@
       "quote": "The roof's about eight years old, and we've never had a leak."
     },
     {
+      "id": "f52a5d786bc6",
       "module": "module-03",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -119,6 +130,7 @@
       "quote": "that is not information I inquire about or disclose."
     },
     {
+      "id": "154e93a268e7",
       "module": "module-03",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -132,6 +144,7 @@
       "quote": "you never have to disclose a death in Texas"
     },
     {
+      "id": "1f429a14fc02",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -145,6 +158,7 @@
       "quote": "Disclosure of agency; listing or buying representation procedures."
     },
     {
+      "id": "5dd14ca1d7cd",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -157,6 +171,7 @@
       "quote": "I want $260,000 in my pocket. Anything over that, you keep. Write it up that way."
     },
     {
+      "id": "96504f3077a5",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -169,11 +184,14 @@
       "quote": "just deal with the seller directly, it will be faster"
     },
     {
+      "id": "0de09504f0b1",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
-        "535.153"
+        "535.153",
+        "1101.557",
+        "1101.652"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -181,11 +199,13 @@
       "quote": "Your listing expires August 31. When it does, I would like the chance to present my    listing proposal."
     },
     {
+      "id": "378f82159d7b",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
         "535.153",
+        "1101.557",
         "1101.652"
       ],
       "classification": "NO_MATCH",
@@ -194,11 +214,14 @@
       "quote": "In the meantime, my buyer would pay $362,000 today if you'd take it, and I    think she'd go to $370,000 if you pushed."
     },
     {
+      "id": "4a1d8f5f7b6c",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
-        "1101.557"
+        "535.153",
+        "1101.557",
+        "1101.652"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -206,12 +229,14 @@
       "quote": "Next time just work the    seller directly and copy me after."
     },
     {
+      "id": "d4e51e96c027",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
         "1101.651",
-        "1101.558"
+        "1101.558",
+        "5.008"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -219,11 +244,14 @@
       "quote": "Are you the seller's agent or    can you help us?"
     },
     {
+      "id": "34c6a932d426",
       "module": "module-04",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
-        "1101.558"
+        "1101.651",
+        "1101.558",
+        "5.008"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -231,6 +259,7 @@
       "quote": "My buyers want to write on    your Katy listing."
     },
     {
+      "id": "a3da769ae44f",
       "module": "module-05",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -243,6 +272,7 @@
       "quote": "Disclosure of agency; listing or buying representation procedures."
     },
     {
+      "id": "9c9f75618af8",
       "module": "module-06",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -257,6 +287,7 @@
       "quote": "From this point I will not advise either of you on price or strategy. I will carry information accurately, present every offer, answer questions about the property and the process, and keep each of yo"
     },
     {
+      "id": "7a947cf52893",
       "module": "module-06",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -269,10 +300,13 @@
       "quote": "Around here people usually offer about two percent under list."
     },
     {
+      "id": "365f6421261f",
       "module": "module-06",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
+        "1101.651",
+        "1101.652",
         "1101.562"
       ],
       "classification": "NO_MATCH",
@@ -281,11 +315,13 @@
       "quote": "I'd start around $405,000 and you'll probably get it."
     },
     {
+      "id": "bad77b547ac3",
       "module": "module-06",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
         "1101.651",
+        "1101.557",
         "1101.558",
         "1101.562"
       ],
@@ -295,11 +331,13 @@
       "quote": "I represent the seller here, so I'm not able to advise you on what to offer. I can confirm the size, the price and the terms, and I'll present any offer you make promptly."
     },
     {
+      "id": "58f164482612",
       "module": "module-08",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
-        "535.2"
+        "535.2",
+        "1101.559"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -307,6 +345,7 @@
       "quote": "it is in my sent folder on my personal phone,"
     },
     {
+      "id": "3c65dbce8fd7",
       "module": "module-08",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -319,11 +358,14 @@
       "quote": "Yes! Still available. At 6.5% on $415,000 with 10% down your principal and interest would be about $2,361. Want to see it tomorrow?"
     },
     {
+      "id": "a0d60ed40e12",
       "module": "module-08",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
-        "531.18"
+        "531.18",
+        "531.20",
+        "1101.558"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -331,11 +373,14 @@
       "quote": "Bayou Bend Realty complies    with all TREC disclosure requirements."
     },
     {
+      "id": "b4c013f75219",
       "module": "module-09",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
       "candidateSections": [
-        "201.072"
+        "201.072",
+        "201.070",
+        "201.073"
       ],
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
@@ -343,6 +388,7 @@
       "quote": "We don't need a written agreement, everyone here knows you're a    contractor."
     },
     {
+      "id": "5bb5457ebc8d",
       "module": "module-09",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -355,6 +401,7 @@
       "quote": "residential resale only, no property management, no commercial"
     },
     {
+      "id": "da93d655bbbb",
       "module": "module-09",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -367,6 +414,20 @@
       "quote": "I don't have to watch my agents every    day."
     },
     {
+      "id": "abadc3fc8ae9",
+      "module": "module-11",
+      "status": "QUOTE_NOT_IN_CORPUS",
+      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
+      "candidateSections": [
+        "17.46"
+      ],
+      "classification": "NO_MATCH",
+      "matchedPrefixChars": 0,
+      "sourceContinuesWith": null,
+      "quote": "falsely representing with intent to deceive."
+    },
+    {
+      "id": "33db94725cd7",
       "module": "module-11",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -379,6 +440,7 @@
       "quote": "lets you get out any time before closing,"
     },
     {
+      "id": "828813bb7dd2",
       "module": "module-11",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -391,6 +453,7 @@
       "quote": "can be cancelled by either side on a week's notice"
     },
     {
+      "id": "5fdd520da92d",
       "module": "module-11",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -403,6 +466,7 @@
       "quote": "I can accept that counter for the seller right now"
     },
     {
+      "id": "8fbe362551c9",
       "module": "module-11",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -415,6 +479,7 @@
       "quote": "The warranty covers the whole HVAC system, so you don't need to worry about the age"
     },
     {
+      "id": "a2e1b8dcacfe",
       "module": "module-11",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -443,6 +508,39 @@
       "module": "module-01",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.004"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.004; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "does not use the option or contract to purchase to engage in real estate brokerage"
+    },
+    {
+      "module": "module-01",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.004"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.004; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "discloses in writing the nature of the equitable interest to any seller or potential buyer."
+    },
+    {
+      "module": "module-01",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.004"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.004; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "A person selling or offering to sell an option or assigning or offering to assign an interest in a contract to purchase real property without disclosing the nature of that interest as provided by Subs"
+    },
+    {
+      "module": "module-01",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
         "1101.351"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -452,43 +550,9 @@
     },
     {
       "module": "module-01",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.803",
-        "1101.805",
-        "1101.605"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.803; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "to reimburse aggrieved persons who suffer actual damages caused by an act described by Section 1101.602"
-    },
-    {
-      "module": "module-01",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "1101.552"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "within 30 days of any such delegation that has lasted or is anticipated to last more than three consecutive months."
-    },
-    {
-      "module": "module-01",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.563"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.563; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "the size, price, and terms of the real property available for sale or lease."
-    },
-    {
-      "module": "module-01",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
+        "1101.002",
         "1101.805"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
@@ -500,91 +564,47 @@
       "module": "module-01",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.156",
-        "535.1"
+        "1101.002",
+        "1101.805"
       ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.2.txt",
-      "matchedAs": "exact",
+      "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
+      "matchedAs": "terminal-punctuation",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "faithful and observant to trust placed in the license holder, and be scrupulous and meticulous in performing the license holder's functions"
+      "quote": "This means the circumstances in which subagency could arise in your real estate practice are limited,"
     },
     {
       "module": "module-01",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.156",
-        "535.1"
+        "1101.002",
+        "1101.805"
       ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.2.txt",
+      "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "place no personal interest above that of the client."
-    },
-    {
-      "module": "module-01",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "531.2"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.16.txt",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "places the broker's interest above the principal's interest with reference to obtaining the best possible price,"
+      "quote": "However, subagency has not been eliminated generally as a legal concept."
     },
     {
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.156"
+        "1101.558"
       ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.2.txt",
+      "attributedTo": "texas/trec-sources/trec-rules/531.20.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "that the license holder place no personal interest above that of the client."
+      "quote": "a link to a completed IABS Notice in a readily noticeable place on the homepage of each business website, labeled:"
     },
     {
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.156"
+        "1101.558"
       ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.2.txt",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "that, however, the license holder, in performing duties to the client, shall treat other parties to a transaction fairly."
-    },
-    {
-      "module": "module-02",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "531.3"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.4.txt",
+      "attributedTo": "texas/trec-sources/trec-rules/531.20.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "be informed on national, state, and local issues and developments in the real estate industry"
-    },
-    {
-      "module": "module-02",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "531.3"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.4.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "exercise judgment and skill in the performance of brokerage activities"
-    },
-    {
-      "module": "module-02",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "531.3"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.4.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "be educated in the characteristics involved in the specific type of real estate being brokered for others."
+      "quote": "Texas Real Estate Commission Information About Brokerage Services"
     },
     {
       "module": "module-02",
@@ -634,7 +654,8 @@
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "1101.558"
+        "1101.558",
+        "1101.563"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
       "matchedAs": "terminal-punctuation",
@@ -645,7 +666,8 @@
       "module": "module-02",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "1101.558"
+        "1101.558",
+        "1101.563"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
       "matchedAs": "exact",
@@ -680,63 +702,6 @@
       "module": "module-03",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.157",
-        "531.2",
-        "531.20"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "the basic obligations a broker has to a party to a real estate transaction that the broker does not represent."
-    },
-    {
-      "module": "module-03",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.155"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.17.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "is not the same as the opinion of value in an appraisal developed by a licensed appraiser under the Uniform Standards of Professional Appraisal Practice."
-    },
-    {
-      "module": "module-03",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "17.46"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 17.46; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "an express misrepresentation of a material fact that cannot be characterized as advice, judgment, or opinion"
-    },
-    {
-      "module": "module-03",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "17.46"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 17.46; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "a failure to disclose information in violation of Section 17.46(b)(24)"
-    },
-    {
-      "module": "module-03",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "17.46"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 17.46; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "an unconscionable action or course of action that cannot be characterized as advice, judgment, or opinion."
-    },
-    {
-      "module": "module-03",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
         "1101.805",
         "1101.804"
       ],
@@ -746,25 +711,15 @@
       "quote": "subagency has not been eliminated generally as a legal concept."
     },
     {
-      "module": "module-03",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "1101.556"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/531.19.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "For the purpose of this section, disability includes AIDS, HIV-related illnesses, or HIV infection as defined by the Centers for Disease Control of the United States Public Health Service."
-    },
-    {
       "module": "module-04",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.652",
         "1101.555"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.555; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.652; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "A license holder who fails to advise a buyer as provided by Section 1101.555 may not receive payment of or recover any commission agreed to be paid on the sale."
     },
     {
@@ -776,7 +731,54 @@
       "attributedTo": "texas/trec-sources/trec-rules/535.16.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "The use of a net listing places an upper limit on the principal's expectancy and places the broker's interest above the principal's interest with reference to obtaining the best possible price."
+    },
+    {
+      "module": "module-04",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "531.2"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.16.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
       "quote": "If a net listing is used, the listing agreement must assure the principal of not less than the principal's desired price and limit the broker to a specified maximum commission."
+    },
+    {
+      "module": "module-04",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "1101.002",
+        "1101.805"
+      ],
+      "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "Two references to subagency were removed from TRELA,"
+    },
+    {
+      "module": "module-04",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "1101.002",
+        "1101.805"
+      ],
+      "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "the circumstances in which subagency could arise in your real estate practice are limited,"
+    },
+    {
+      "module": "module-04",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "1101.002",
+        "1101.805"
+      ],
+      "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "subagency has not been eliminated generally as a legal concept."
     },
     {
       "module": "module-05",
@@ -810,6 +812,28 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 1101.002; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "if no residential real property will be shown, presenting an offer to purchase residential real property on behalf of the prospective buyer."
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.562"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.562; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "the services to be provided by the license holder"
+    },
+    {
+      "module": "module-05",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.562"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.562; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "whether the agreement is exclusive or non-exclusive"
     },
     {
       "module": "module-05",
@@ -881,6 +905,7 @@
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "537.11",
         "1101.563"
       ],
       "attributedTo": "texas/trec-sources/articles/trec-contracts-page-2026-08-29.html",
@@ -890,19 +915,10 @@
     },
     {
       "module": "module-05",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.563"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.563; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "perform any other act of real estate brokerage for the party."
-    },
-    {
-      "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "1101.563",
+        "1101.562",
         "1101.558"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
@@ -915,6 +931,7 @@
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
         "1101.563",
+        "1101.562",
         "1101.558"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
@@ -927,6 +944,7 @@
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
         "1101.563",
+        "1101.562",
         "1101.558"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
@@ -938,12 +956,26 @@
       "module": "module-05",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "1101.563"
+        "1101.563",
+        "1101.562",
+        "1101.558"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
       "quote": "This is true even when a prospective buyer has a written representation agreement with another broker."
+    },
+    {
+      "module": "module-05",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "1101.563",
+        "1101.652"
+      ],
+      "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "By law, the IABS must be provided and agreement entered into before the showing. In practical terms, what this means for an open house is that ideally, the agreement should be presented and entered in"
     },
     {
       "module": "module-05",
@@ -962,12 +994,46 @@
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
         "1101.563",
+        "1101.562",
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/articles/what-changes-2026-buyer-tenant-representation.html",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
       "quote": "go together and should be read together."
+    },
+    {
+      "module": "module-06",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "1101.557"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/531.2.txt",
+      "matchedAs": "ellipsis-segments-in-order",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "primary duty ... is to represent the interests of the client,"
+    },
+    {
+      "module": "module-06",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "1101.557"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/531.2.txt",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "should be clear to all parties concerned in a real estate transaction,"
+    },
+    {
+      "module": "module-06",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "1101.557"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/531.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "place no personal interest above that of the client."
     },
     {
       "module": "module-06",
@@ -1051,7 +1117,8 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1101.559",
-        "1101.002"
+        "1101.002",
+        "1101.351"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "terminal-punctuation",
@@ -1129,6 +1196,7 @@
       "module": "module-06",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "1101.557",
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.144.txt",
@@ -1137,16 +1205,15 @@
       "quote": "is obligated to disclose in writing that he or she is a licensed real estate broker or sales agent acting on his or her own behalf"
     },
     {
-      "module": "module-06",
+      "module": "module-07",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.559",
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.559; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "a license holder associated with the broker"
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.652; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "a prospective buyer, seller, landlord, or tenant or an authorized representative of a buyer, seller, landlord, or tenant, including a trustee, guardian, executor, administrator, receiver, or attorney-"
     },
     {
       "module": "module-07",
@@ -1220,18 +1287,24 @@
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "21.002",
+        "21.0021",
+        "21.102",
         "21.101"
       ],
       "attributedTo": "texas/trec-sources/statutes/LA.21.htm",
       "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 21.101; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 21.002; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "because of sex or on the basis of sex includes discrimination because of or on the basis of pregnancy, childbirth, or a related medical condition,"
     },
     {
       "module": "module-09",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "21.002"
+        "21.002",
+        "21.0021",
+        "21.102",
+        "21.101"
       ],
       "attributedTo": "texas/trec-sources/statutes/LA.21.htm",
       "matchedAs": "exact",
@@ -1243,56 +1316,14 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "21.002",
-        "21.0021"
+        "21.0021",
+        "21.102",
+        "21.101"
       ],
       "attributedTo": "texas/trec-sources/statutes/LA.21.htm",
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 21.002; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "fail or refuse to make a reasonable workplace accommodation to a known physical or mental limitation of an otherwise qualified individual with a disability who is an employee or applicant for employme"
-    },
-    {
-      "module": "module-09",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "21.142"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/LA.21.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 21.142; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "has the purpose or effect of unreasonably interfering with an individual's work performance"
-    },
-    {
-      "module": "module-09",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "21.142"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/LA.21.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 21.142; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "of creating an intimidating, hostile, or offensive working environment."
-    },
-    {
-      "module": "module-09",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "21.2585"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/LA.21.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 21.2585; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "has been found by a court of competent jurisdiction in this state to have exercised a type or degree of control over the franchisee or the franchisee's employees not customarily exercised by a franchi"
-    },
-    {
-      "module": "module-09",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.146"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "A broker is responsible for the proper handling of trust funds placed with the broker and must comply with §535.146 of this chapter (relating to Maintaining Trust Money)."
     },
     {
       "module": "module-09",
@@ -1315,7 +1346,7 @@
       "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "sponsorship agreements between the broker and sponsored sales agents"
+      "quote": "substantive communications with parties to the transaction"
     },
     {
       "module": "module-09",
@@ -1326,7 +1357,85 @@
       "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "sponsorship agreements between the broker and sponsored sales agents"
+    },
+    {
+      "module": "module-09",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "201.072",
+        "535.146"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
       "quote": "A broker who sponsors sales agents or is a designated broker for a business entity shall maintain, on a current basis, written policies and procedures to ensure that"
+    },
+    {
+      "module": "module-09",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.146"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "is advised of the scope of the sales agent's authorized activities subject to the Act and is competent to conduct such activities, including having competence in the geographic market area where the s"
+    },
+    {
+      "module": "module-09",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.146"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "maintains their license in active status at all times while they are engaging in activities subject to the Act"
+    },
+    {
+      "module": "module-09",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.146"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "any and all compensation paid to a sponsored sales agent for acts or services subject to the Act is paid by, through, or with the written consent of the sponsoring broker"
+    },
+    {
+      "module": "module-09",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.146"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "on a timely basis, before the effective date of the change, notice of any change to the Act, Commission rules, or Commission promulgated contract forms"
+    },
+    {
+      "module": "module-09",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.146"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "receives such additional educational instruction the broker may deem necessary"
+    },
+    {
+      "module": "module-09",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.146"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "when a sales agent performs a type of real estate brokerage activity for the first three times, the broker must require that the sales agent receive coaching and assistance from an experienced license"
     },
     {
       "module": "module-09",
@@ -1376,82 +1485,12 @@
       "module": "module-09",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.157"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "In addition to the requirements of §535.157 of this chapter (relating to Obligation to Respond Timely), a broker or supervisor delegated under subsection (e) of this section must respond to sponsored "
-    },
-    {
-      "module": "module-09",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.157"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "A sponsoring broker or supervisor delegated under subsection (e) of this section shall deliver mail and other correspondence from the Commission to their sponsored sales agents within three calendar d"
-    },
-    {
-      "module": "module-09",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
         "1101.651"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.3.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
       "quote": "the broker who sponsored the sales agent when the sales agent became entitled to the commission or other valuable consideration."
-    },
-    {
-      "module": "module-09",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.5"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "a limited liability company as defined by Section 101.001, Business Organizations Code"
-    },
-    {
-      "module": "module-09",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.4",
-        "535.3",
-        "535.5",
-        "535.35"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "is at least 51 percent owned by the license holder on whose behalf the entity receives compensation."
-    },
-    {
-      "module": "module-09",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.148"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.147.txt",
-      "matchedAs": "ellipsis-segments-in-order",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "in a manner that misleads a … lender … regarding … the financial resources or obligations of the buyer."
-    },
-    {
-      "module": "module-09",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.3",
-        "1101.651"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "is not meant to create or require an employer/employee relationship between a broker and a sponsored sales agent."
     },
     {
       "module": "module-10",
@@ -1566,9 +1605,46 @@
     },
     {
       "module": "module-10",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3602"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3602.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3602; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "one or more individuals (who have not attained the age of 18 years) being domiciled with"
+    },
+    {
+      "module": "module-10",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "3602"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3602.html",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 3602; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "The protections afforded against discrimination on the basis of familial status shall apply to any person who is pregnant or is in the process of securing legal custody of any individual who has not a"
+    },
+    {
+      "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "3606"
+        "3604",
+        "3606",
+        "3603"
+      ],
+      "attributedTo": "texas/trec-sources/federal/us42-3605.html",
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "It shall be unlawful for any person or other entity whose business includes engaging in residential real estate-related transactions to discriminate against any person in making available such a trans"
+    },
+    {
+      "module": "module-10",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "3604",
+        "3606",
+        "3603"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3605.html",
       "matchedAs": "exact",
@@ -1579,7 +1655,9 @@
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3606"
+        "3604",
+        "3606",
+        "3603"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3606.html",
       "matchedAs": "exact",
@@ -1603,46 +1681,48 @@
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3604",
+        "301.001",
+        "301.002"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 301.001; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "but substantive rules adopted by the commission shall impose obligations, rights, and remedies that are the same as are provided in federal fair housing regulations."
+    },
+    {
+      "module": "module-10",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "301.026",
+        "301.027",
         "301.022"
       ],
       "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 301.022; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "This section does not prohibit discrimination against a person because the person has been convicted under federal law or the law of any state of the illegal manufacture or distribution of a controlle"
+      "note": "verbatim in the cited source but outside the span this script computed for § 301.026; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "because of race, color, religion, sex, disability, familial status, or national origin that a dwelling is not available for inspection for sale or rental when the dwelling is available for inspection."
     },
     {
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "301.003"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/PR.301.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 301.003; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "This section does not require a dwelling to be made available to an individual whose tenancy would constitute a direct threat to the health or safety of other individuals or whose tenancy would result"
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "1101.651"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.156.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "A license holder has a duty to convey accurate information to members of the public with whom the license holder deals."
-    },
-    {
-      "module": "module-10",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.652"
+        "1101.155"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.652; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "treat a party to a transaction dishonestly"
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "in misrepresentation, dishonesty, or fraud when selling, buying, trading, or leasing real property in the name of"
+    },
+    {
+      "module": "module-10",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
+      "candidateSections": [
+        "1101.155"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "a person related to the license holder within the first degree by consanguinity"
     },
     {
       "module": "module-10",
@@ -1659,29 +1739,32 @@
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
+        "1101.563",
         "1101.155"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.563; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "if the license holder, while engaged in real estate brokerage"
     },
     {
       "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
+      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.652"
+        "1101.563"
       ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.145.txt",
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "neither a written contractual provision disclaiming oral representations nor the Texas Rules of Evidence Rule 1004, the parol evidence rule, shall prevent the Commission from considering oral promises"
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.563; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "to make clear to all parties to a real estate transaction the party for whom the license holder is acting"
     },
     {
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
         "535.1",
+        "535.2",
+        "535.145",
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.149.txt",
@@ -1695,8 +1778,8 @@
       "candidateSections": [
         "535.1",
         "535.2",
-        "1101.652",
-        "535.20"
+        "535.145",
+        "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.149.txt",
       "matchedAs": "exact",
@@ -1707,10 +1790,10 @@
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "535.1",
         "535.2",
-        "1101.652",
-        "535.20",
-        "17.46"
+        "535.145",
+        "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.149.txt",
       "matchedAs": "exact",
@@ -1721,144 +1804,13 @@
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.155"
+        "1101.705",
+        "1101.704",
+        "1101.707"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "drafts an instrument, other than a form described by Section 1101.155, that transfers or otherwise affects an interest in real property"
-    },
-    {
-      "module": "module-10",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.155"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.155; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "advises a person regarding the validity or legal sufficiency of an instrument or the validity of title to real property."
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "537.11"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "prepared by the property owner or by an attorney and required by the property owner."
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.141",
-        "535.1"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "at any time that an allegation made or formal complaint submitted by a person is inappropriate or without merit."
-    },
-    {
-      "module": "module-10",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.702"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.702; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "limit practice to an area prescribed by the commission,"
-    },
-    {
-      "module": "module-10",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.702"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.702; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "continue to renew professional education until the license holder attains a degree of skill satisfactory to the commission in the area that is the basis of the probation."
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.191",
-        "535.1"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "any other matter that justice may require."
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.191",
-        "535.1"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "must provide authority for the commission to suspend or revoke a license in addition to or instead of imposing an administrative penalty."
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "531.1",
-        "535.1",
-        "535.157",
-        "531.2"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.191.txt",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "An administrative penalty range of $500 - $3,000 per violation per day,"
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "531.1",
-        "535.141",
-        "535.1",
-        "531.2"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.191.txt",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "An administrative penalty range of $1,000 - $5,000 per violation per day,"
-    },
-    {
-      "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.141",
-        "535.1",
-        "535.156",
-        "535.145"
-      ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.191.txt",
-      "matchedAs": "exact",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "The Commission may assess an additional administrative penalty of up to two times that assessed under subsections (c), (d) and (e) of this section, subject to the maximum penalties authorized under §1"
-    },
-    {
-      "module": "module-10",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.704"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.704; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.705; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "that the respondent has the right to a hearing to contest the alleged violation, the recommended penalty, or both."
     },
     {
@@ -1876,7 +1828,8 @@
       "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3606"
+        "3606",
+        "301.027"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3606.html",
       "matchedAs": "terminal-punctuation",
@@ -1885,22 +1838,12 @@
     },
     {
       "module": "module-10",
-      "status": "ATTRIBUTION_REVIEW",
-      "candidateSections": [
-        "535.191",
-        "535.1",
-        "535.2"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "before the completion or termination of the real estate transaction."
-    },
-    {
-      "module": "module-10",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "3604"
+        "3604",
+        "3603",
+        "531.19",
+        "531.1"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3604.html",
       "matchedAs": "exact",
@@ -1912,7 +1855,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
-        "301.021"
+        "3603",
+        "531.19",
+        "531.1"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3604.html",
       "matchedAs": "exact",
@@ -1924,9 +1869,9 @@
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "3604",
-        "301.021",
-        "301.025",
-        "301.027"
+        "3603",
+        "531.19",
+        "531.1"
       ],
       "attributedTo": "texas/trec-sources/federal/us42-3604.html",
       "matchedAs": "terminal-punctuation",
@@ -1935,20 +1880,10 @@
     },
     {
       "module": "module-11",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "17.46"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 17.46; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "any unconscionable action or course of action by any person."
-    },
-    {
-      "module": "module-11",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "1101.652"
+        "1101.652",
+        "5.008"
       ],
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
       "matchedAs": "exact",
@@ -1959,14 +1894,12 @@
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "17.50",
-        "17.505",
-        "17.5051"
+        "17.45"
       ],
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 17.50; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "An offer of settlement is not an admission of engaging in an unlawful act or practice or liability under this subchapter."
+      "matchedAs": "terminal-punctuation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 17.45; the section-boundary extraction is imperfect for this file, not the quotation",
+      "quote": "not more than three times the amount of damages for mental anguish and economic damages."
     },
     {
       "module": "module-11",
@@ -2007,33 +1940,12 @@
       "module": "module-11",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
-        "1101.606"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.606; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "not later than the 30th day after the date of receiving the documents"
-    },
-    {
-      "module": "module-11",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "1101.607"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
-      "matchedAs": "exact",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.607; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "if the aggrieved person does not schedule a hearing before the first anniversary of the date the application was filed, recovery is waived."
-    },
-    {
-      "module": "module-11",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
+        "1101.614",
         "1101.655"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 1101.655; the section-boundary extraction is imperfect for this file, not the quotation",
+      "note": "verbatim in the cited source but outside the span this script computed for § 1101.614; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "This subchapter does not limit the commission's authority to take disciplinary action against a license or certificate holder for a violation of this chapter or a commission rule,"
     },
     {
@@ -2046,18 +1958,6 @@
       "matchedAs": "exact",
       "note": "verbatim in the cited source but outside the span this script computed for § 1101.614; the section-boundary extraction is imperfect for this file, not the quotation",
       "quote": "a license or certificate holder's repayment of all amounts owed to the trust account does not affect another disciplinary proceeding brought under this chapter."
-    },
-    {
-      "module": "module-11",
-      "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
-      "candidateSections": [
-        "17.45",
-        "17.50"
-      ],
-      "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
-      "matchedAs": "terminal-punctuation",
-      "note": "verbatim in the cited source but outside the span this script computed for § 17.45; the section-boundary extraction is imperfect for this file, not the quotation",
-      "quote": "was intended to induce the consumer into a transaction into which the consumer would not have entered had the information been disclosed."
     },
     {
       "module": "module-12",
@@ -2096,6 +1996,7 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "535.17",
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
@@ -2107,6 +2008,7 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "535.17",
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
@@ -2118,6 +2020,7 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "535.17",
         "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
@@ -2129,7 +2032,20 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.17"
+        "535.17",
+        "1101.652"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "contains the name of a sales agent that is not the name as shown on the sales agent's license issued by the Commission or an alternate name registered with the Commission"
+    },
+    {
+      "module": "module-12",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.17",
+        "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
       "matchedAs": "exact",
@@ -2140,7 +2056,8 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.17"
+        "535.17",
+        "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
       "matchedAs": "exact",
@@ -2151,7 +2068,8 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.17"
+        "535.17",
+        "1101.652"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
       "matchedAs": "exact",
@@ -2218,6 +2136,18 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
+        "1101.204",
+        "16.004"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.2.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "substantive communications with parties to the transaction"
+    },
+    {
+      "module": "module-12",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
         "535.155"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.144.txt",
@@ -2229,13 +2159,23 @@
       "module": "module-12",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
-        "535.2",
-        "535.20"
+        "535.155"
       ],
-      "attributedTo": "texas/trec-sources/trec-rules/535.155.txt",
+      "attributedTo": "texas/trec-sources/trec-rules/535.154.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "contingent upon a party's use of a specified service provider, or subject to approval by a third party such as a lender, unless the advertisement also contains a disclosure that payment of the rebate "
+      "quote": "a name used by a group of one or more license holders sponsored by or associated with the same broker that performs real estate activities under an exclusive collective name other than the broker's li"
+    },
+    {
+      "module": "module-12",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.155"
+      ],
+      "attributedTo": "texas/trec-sources/trec-rules/535.154.txt",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "may not include any terms that could mislead the public to believe that the team is offering brokerage services independent from its sponsoring broker."
     },
     {
       "module": "module-12",
@@ -2272,9 +2212,23 @@
     },
     {
       "module": "module-12",
+      "status": "ATTRIBUTION_REVIEW",
+      "candidateSections": [
+        "535.21",
+        "535.2"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
+      "matchedAs": "exact",
+      "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
+      "quote": "shall provide the commission with: (1) the license holder's current: (A) mailing address; (B) business address; (C) business telephone number; and (D) business e-mail address; and (2) if the license h"
+    },
+    {
+      "module": "module-12",
       "status": "MECHANICAL_PASS_OUTSIDE_SECTION",
       "candidateSections": [
         "1101.652",
+        "16.004",
+        "1101.601",
         "17.50"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -2289,6 +2243,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
       "candidateSections": [
+        "1101.002",
         "1101.004",
         "1101.005"
       ],
@@ -2317,6 +2272,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "1101.558",
         "1101.563"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
@@ -2329,9 +2285,10 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
       "candidateSections": [
+        "531.2",
         "535.156",
         "535.16",
-        "1101.557"
+        "531.4"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.156.txt",
       "sourceContinuesWith": "to buy, sell, rent, or lease a property, the license holder shall have no duty to submit",
@@ -2383,13 +2340,30 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "17.46",
         "17.565",
+        "16.004",
         "17.45"
       ],
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
       "sourceContinuesWith": "giving rise to the consumer's claim or, in an action brought under subdivision(2) of subs",
       "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
       "quote": "actual awareness, at the time of the act or practice complained of, of the falsity, deception, or unfairness of the act or practice,"
+    },
+    {
+      "module": "module-03",
+      "status": "TRUNCATION_REVIEW",
+      "classification": "TRUNCATED_REVIEW",
+      "candidateSections": [
+        "5.008",
+        "5.012",
+        "5.019",
+        "5.010"
+      ],
+      "attributedTo": "texas/trec-sources/statutes/PR.5.htm",
+      "sourceContinuesWith": "as provided by the executory contract.(e) the purchaser's right to terminate the executor",
+      "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
+      "quote": "within the earlier of: (1) seven days after the date the purchaser receives the notice; or (2) the date the transfer occurs."
     },
     {
       "module": "module-03",
@@ -2409,10 +2383,10 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "535.157",
+        "535.156",
         "535.144",
-        "535.16",
-        "1101.551",
-        "1101.803"
+        "535.16"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "sourceContinuesWith": "of a buyer, seller, landlord, or tenant, including a trustee, guardian, executor, adminis",
@@ -2426,6 +2400,7 @@
       "candidateSections": [
         "535.157",
         "535.156",
+        "1101.551",
         "1101.805"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.157.txt",
@@ -2450,6 +2425,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_MID_CLAUSE",
       "candidateSections": [
+        "1101.563",
         "1101.562",
         "1101.558"
       ],
@@ -2520,7 +2496,8 @@
       "classification": "TRUNCATED_MID_CLAUSE",
       "candidateSections": [
         "1101.559",
-        "1101.002"
+        "1101.002",
+        "1101.351"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "sourceContinuesWith": "to communicate with and carry out instructions of one party to a real estate transaction;",
@@ -2582,9 +2559,10 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "531.2",
+        "535.156",
         "1101.651",
-        "16.004",
-        "1101.560"
+        "16.004"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "sourceContinuesWith": "may not:(1) disclose to the buyer or tenant that the seller or landlord will accept a pri",
@@ -2599,7 +2577,7 @@
         "1101.563",
         "1101.806",
         "26.01",
-        "1101.652"
+        "1101.559"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "sourceContinuesWith": "or by a person authorized by that party to sign the document.(d) a license holder who fai",
@@ -2625,7 +2603,9 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "21.002",
-        "21.0021"
+        "21.0021",
+        "21.102",
+        "21.101"
       ],
       "attributedTo": "texas/trec-sources/statutes/LA.21.htm",
       "sourceContinuesWith": "under subchapters b and c, to the maximum extent allowed under those subchapters; and(2)",
@@ -2702,10 +2682,10 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "531.1",
+        "535.141",
         "535.191",
-        "535.1",
-        "535.157",
-        "535.21"
+        "535.1"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.191.txt",
       "sourceContinuesWith": "may be assessed for violations of the following sections of the act and rules: §1101.552;",
@@ -2718,9 +2698,9 @@
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
         "531.1",
-        "535.1",
-        "535.157",
-        "531.2"
+        "535.141",
+        "535.191",
+        "535.1"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.191.txt",
       "sourceContinuesWith": "may be assessed for violations of the following sections of the act and rules: §§1101.652",
@@ -2734,8 +2714,8 @@
       "candidateSections": [
         "531.1",
         "535.141",
-        "535.1",
-        "531.2"
+        "535.191",
+        "535.1"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/535.191.txt",
       "sourceContinuesWith": "may be assessed for violations of the following sections of the act and rules: §1101.351;",
@@ -2747,6 +2727,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "535.5",
         "537.11"
       ],
       "attributedTo": "texas/trec-sources/trec-rules/537.11.txt",
@@ -2761,8 +2742,8 @@
       "candidateSections": [
         "535.191",
         "535.1",
-        "535.156",
-        "1101.652"
+        "531.2",
+        "535.156"
       ],
       "attributedTo": "texas/trec-sources/statutes/OC.1101.htm",
       "sourceContinuesWith": "in a contract, other than a contract to perform property management services, in which th",
@@ -2786,6 +2767,7 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
+        "17.50",
         "17.49"
       ],
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
@@ -2798,7 +2780,9 @@
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
       "candidateSections": [
-        "17.45"
+        "535.145",
+        "17.45",
+        "1101.652"
       ],
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
       "sourceContinuesWith": "on the falsity or deception or in detrimental ignorance of the unfairness. intention may",
