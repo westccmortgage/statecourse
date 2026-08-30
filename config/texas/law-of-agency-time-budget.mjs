@@ -55,22 +55,41 @@ export const RATES = Object.freeze({
  * work order requires, so T08's two units still carry three questions. Scenarios are placed on four
  * topics spread through the course rather than gathered at the end.
  */
+/**
+ * Planned activity load per topic.
+ *
+ * THE FIRST VERSION OF THIS PLAN WAS UNIFORM AND THAT WAS THE MISTAKE. It gave almost every topic
+ * two statute reading exercises and three applied exercises regardless of how many minutes LOA-1
+ * allocates to the topic, which put 60 exercises and 696 minutes of activity into a 1,500-minute
+ * course — 39% of it — and made T07 spend 59 of its 85 prescribed minutes on exercises before a
+ * word of instruction. That, not the prose, was the largest single cause of the 292-minute excess
+ * the disjoint reconciliation found. The load is now proportional to the topic's own allocation.
+ *
+ * NOTHING IS DELETED TO ACHIEVE THIS. An exercise beyond a topic's budgeted count moves into the
+ * module's "## Optional reference:" section as optional practice: still in the course, still
+ * sourced, not charged to every student.
+ *
+ * Quiz items are one per unit, floored at the three per topic the work order requires, so T07 and
+ * T08 still carry three. Scenarios sit on four topics spread through the course.
+ */
 const PLAN = {
-  T01: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 0 },
-  T02: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 0 },
-  T03: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 1 },
-  T04: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 0 },
-  T05: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 0 },
+  T01: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0 },
+  T02: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0 },
+  T03: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1 },
+  T04: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0 },
+  T05: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
+  /* The largest topic in the course and the one whose law is least compressible; it keeps the
+     fullest exercise load. */
   T06: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 1 },
-  T07: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 0 },
-  /* Reduced load. Two statute exercises and three applied exercises plus a recap would spend 59 of
-     this topic's 45 prescribed minutes before any instruction. One of each keeps the topic inside
-     its allocation and still gives the student something to do with the two rules it teaches. */
+  /* 85 minutes across three units. Two statute exercises and three applied ones plus a recap would
+     spend 59 of them before any instruction. */
+  T07: { statuteReadingExercises: 1, appliedExercises: 1, scenarios: 0 },
+  /* 45 minutes across two units — the smallest allocation in the course. */
   T08: { statuteReadingExercises: 1, appliedExercises: 1, scenarios: 0 },
-  T09: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 1 },
-  T10: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 0 },
-  T11: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 1 },
-  T12: { statuteReadingExercises: 2, appliedExercises: 3, scenarios: 0 },
+  T09: { statuteReadingExercises: 1, appliedExercises: 2, scenarios: 1 },
+  T10: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
+  T11: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 1 },
+  T12: { statuteReadingExercises: 2, appliedExercises: 2, scenarios: 0 },
 };
 
 const a = RATES.activityMinutes;

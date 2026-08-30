@@ -58,8 +58,14 @@ for (const [index, topic] of TOPICS.entries()) {
   const firstUnitAt = md.search(/^## Unit: /m);
   const recapAt = md.search(/^### Module recap\s*$/m);
   if (recapAt < 0) fail(`${file}: no "### Module recap"`);
-  const statute = [...md.matchAll(/^### Statute reading exercise: .+$/gm)];
-  const applied = [...md.matchAll(/^### Applied exercise: .+$/gm)];
+  /* Exercises inside the optional reference section are OPTIONAL PRACTICE and are not required
+     work, so they must not count toward the topic's budgeted exercise load — otherwise moving a
+     surplus exercise into the optional section would look, to this checker, like nothing happened.
+     The optional section starts at the "## Optional reference:" heading and runs to end of file. */
+  const optionalAt = md.search(/^## Optional reference: /m);
+  const beforeOptional = (m) => optionalAt < 0 || m.index < optionalAt;
+  const statute = [...md.matchAll(/^### Statute reading exercise: .+$/gm)].filter(beforeOptional);
+  const applied = [...md.matchAll(/^### Applied exercise: .+$/gm)].filter(beforeOptional);
   for (const e of [...statute, ...applied]) {
     if (e.index < firstUnitAt) fail(`${file}: exercise precedes the first unit — ${e[0]}`);
     if (recapAt >= 0 && e.index > recapAt) fail(`${file}: exercise emitted after the recap — ${e[0]}`);
@@ -80,7 +86,7 @@ for (const [index, topic] of TOPICS.entries()) {
 
   /* An optional reference section, when a module has one, must sit after the recap and say plainly
      that it is optional — a student who skips it must be able to tell that skipping is allowed. */
-  const optional = [...md.matchAll(/^## Optional reference: .+$/gm)];
+  const optional = [...md.matchAll(/^## Optional reference: .+$/gm)];  /* full matches, for the checks below */
   if (optional.length > 1) fail(`${file}: ${optional.length} optional reference sections, at most one is allowed`);
   if (optional.length === 1) {
     if (recapAt >= 0 && optional[0].index < recapAt) fail(`${file}: the optional reference section precedes the recap`);
