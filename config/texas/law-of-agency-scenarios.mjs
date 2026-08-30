@@ -30,8 +30,8 @@
  *
  *   - The codified Secretary of State text of 22 TAC ch. 535 remains UNREAD. The rules above are
  *     taken from TREC's own published reproduction, classified TIER 4 in the rule lock, and
- *     TX_PROVIDER_RULE_SOURCE_LOCK still FAILS. Nothing here may be described as TREC-approved and no
- *     Texas qualifying credit may be offered.
+ *     TX_PROVIDER_RULE_SOURCE_LOCK still FAILS. This course is not TREC-approved, and no Texas
+ *     qualifying credit may be offered for it.
  *
  * THE CAPSTONE IS COURSE-LEVEL TIME. config/texas/law-of-agency-time-budget.mjs exports COURSE_LEVEL
  * and explains why: a capstone draws on the whole course, so attributing its minutes to whichever
@@ -136,7 +136,7 @@ export const REGULATORY_BASIS = Object.freeze({
   passingScoreNote:
     "§ 535.62(b)(7) requires a passing grade on the scenario exercises but states no figure. Each scenario sets 0.7, mirroring the unweighted 70% that § 535.65(h)(4) fixes for the final examination. The mirroring is this course's design choice, not a Commission-stated scenario threshold.",
   sourceTier:
-    "TREC-published reproduction of 22 TAC ch. 535 (TIER 4). The codified Secretary of State text is unread; TX_PROVIDER_RULE_SOURCE_LOCK still FAILS. Nothing here is TREC-approved and no Texas credit is offered.",
+    "TREC-published reproduction of 22 TAC ch. 535 (TIER 4). The codified Secretary of State text is unread; TX_PROVIDER_RULE_SOURCE_LOCK still FAILS. This course is not TREC-approved, and no Texas credit is offered for it.",
 });
 
 /* ── lookup tables built from LOA-1's own transcription, so a typo cannot survive load ─────────── */
@@ -215,8 +215,14 @@ const LENGTH_PHRASE =
 const REVEAL_GATE =
   /\b(?:type|write|enter|submit)\b[^.]{0,80}\b(?:to (?:reveal|unlock|view|see|continue|proceed))\b/i;
 
-/** Nothing authored here may describe this course as approved. The claim is checked, not trusted. */
-const APPROVAL_CLAIM = /\btrec[-\s]approved\b|\bapproved by (?:the )?trec\b|\bapproved by the commission\b|\btexas credit (?:is )?available\b/i;
+/**
+ * Nothing authored here may describe this course as approved. The scan is NEGATION-AWARE, in the
+ * same way tests/texas-law-of-agency.test.mjs's is and for the same reason: the required disclaimer
+ * is itself a sentence containing the phrase, so what matters is whether the phrase is asserted or
+ * denied. A match preceded by a negation inside the same clause is the disclaimer doing its job.
+ */
+const APPROVAL_CLAIM = /\btrec[-\s]approved\b|\bapproved by (?:the )?trec\b|\bapproved by the commission\b|\btexas credit is available\b|\bearn texas credit\b/gi;
+const NEGATED_BEFORE = /\b(?:not|no|never|cannot|is not|does not|without)\b[^.]{0,80}$/i;
 
 function walkStrings(value, visit, path = "") {
   if (typeof value === "string") { visit(value, path); return; }
@@ -242,8 +248,11 @@ function assertNoBannedText(where, object) {
     if (REVEAL_GATE.test(text)) {
       throw new Error(`${where}: ${path || "text"} gates a reveal on the student typing something; no answer in this course is unlocked by typing`);
     }
-    if (APPROVAL_CLAIM.test(text)) {
-      throw new Error(`${where}: ${path || "text"} claims an approval this course does not hold`);
+    for (const match of text.matchAll(APPROVAL_CLAIM)) {
+      const before = text.slice(Math.max(0, match.index - 90), match.index);
+      if (!NEGATED_BEFORE.test(before)) {
+        throw new Error(`${where}: ${path || "text"} claims an approval this course does not hold`);
+      }
     }
   });
 }
@@ -1084,4 +1093,999 @@ const SC2 = scenario("LOA-SC2", {
     reason:
       "Task SC2-T6 is graded against a rubric that includes a required refusal to draft, and 22 TAC § 535.65(g)(2)(D) makes a qualified instructor responsible for providing the answers and the rationale for the grading of course work. Because a student may reach a passing point total while still offering to redline the broker's form, the instructor confirms both critical elements before the scenario is recorded as passed. The instructor also reviews any computation answered within tolerance by visibly wrong method.",
   },
+});
+
+/* ══════════════════════════════════════════════════════════════════════════════════════════════
+   SCENARIO 3 — placed after T09 (Employment Issues)
+
+   This scenario puts the student in the broker's chair, because every provision in T09 is written to
+   the broker and a sales agent who has only ever read them from the other side misapplies them. The
+   week is ordinary: a team leader who has been leading a team for a month without a written
+   delegation, an unlicensed assistant doing three things of which one is lawful, an agent who has
+   earned compensation and then changed brokerages, a listing that expired unsold, and a question
+   about independent contractor status that is not a real estate question at all.
+   ══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+const SC3 = scenario("LOA-SC3", {
+  title: "A week at a Beaumont brokerage: supervision, assistants and where the money goes",
+  placement: {
+    afterTopic: "T09",
+    attributedToTopic: "T09",
+    timeAttribution: "TOPIC",
+    unlockRequires: ["T07", "T08", "T09"],
+  },
+  assessesTopics: ["T09"],
+  assessesUnits: ["T09U1", "T09U2", "T09U4", "T09U5", "T09U6"],
+  context:
+    "You are Marguerite Devereaux, the sponsoring broker of Neches Bend Realty, a fourteen-agent brokerage in Beaumont, Jefferson County. You are also the designated broker of the licensed business entity through which the firm operates.\n\n" +
+    "Five things have arrived in one week, and each of them is a question about somebody else's money or somebody else's authority. Every dollar figure below is illustrative and invented to make the arithmetic visible; compensation is not set by law and is fully negotiable, and no Texas statute or Commission rule fixes a commission rate, a split or a wage used here.",
+  facts: [
+    "THE DELEGATION: on 6 April you put your agent Corinne Adjei in charge of the firm's four-person Lakeside Team. She assigns their leads, reviews their contract work and answers their questions. You expect the arrangement to run through the end of the year. You told her so in a corridor conversation and nothing has been written down.",
+    "THE ASSISTANT: Trey Okafor is not licensed and is paid an hourly wage by the agent he works for, Yolanda Ferris, out of her own pocket. This week Yolanda asked him to do three things: drive to the firm's Calder Avenue listing and unlock it so a prospective buyer could walk through while she finished a closing; answer her business line and, after telling the caller he is her administrative assistant, confirm the advertised square footage, list price and the seller's requested closing date; and telephone eleven owners whose listings with other firms have expired to ask whether they would like to relist.",
+    "THE ASSISTANT'S PROPOSED BONUS: Yolanda wants to add $500 to Trey's pay for every transaction that closes from a lead he brings in. She has not asked you about any of it.",
+    "THE DEPARTING AGENT: Yolanda earned her compensation on a Calder Avenue-area purchase while sponsored by you. Two weeks before the closing she terminated her sponsorship with Neches Bend and moved to another Beaumont brokerage. The sale closed at $326,000. The listing broker's written offer of compensation to the buyer's broker is 2.75 percent of the sales price, and Yolanda's sponsorship agreement with Neches Bend gave her 60 percent of what the firm received on a transaction she originated.",
+    "WHAT YOLANDA HAS ASKED FOR: she has emailed the listing broker directly asking that her share be paid to her by cheque, since she no longer works for you.",
+    "THE EXPIRED LISTING: the firm's listing at 4402 Calder Avenue expired unsold on 14 November 2026. The seller did not relist. The file holds the listing agreement, the seller's disclosures, and eight weeks of text messages between the listing agent and the seller about price reductions and a roof estimate.",
+    "THE INDEPENDENT CONTRACTOR QUESTION: Corinne has read her written agreement with the firm, which describes her as an independent contractor, and has emailed you three questions — whether that means the firm owes her nothing at all beyond commissions, whether she can be treated as an employee for the purpose of the firm's health plan while remaining a contractor for tax, and whether your supervision of the Lakeside Team endangers her status.",
+    "THE FIRM'S POLICIES: Neches Bend maintains written policies and procedures, last revised in 2019. Two of the firm's agents took their first-ever listings this month and have had no coaching from anyone.",
+  ],
+  tasks: [
+    {
+      id: "SC3-T1",
+      type: "computation",
+      prompt:
+        "Apply 22 TAC § 535.2(e) to Corinne's delegation, which began on 6 April and is anticipated to last through the end of the year. Assuming the delegation is put in writing on the day it began, on what day of the month does the period for providing her name to the Commission end? Answer with the day of the month as a number.",
+      expected: 6,
+      tolerance: 0,
+      unit: "day of the month",
+      points: 3,
+      judgement:
+        "Whether the student applies the notification period to a delegation that is anticipated to last more than three consecutive months, rather than waiting to see whether it actually does, and knows the period runs from the delegation and not from the end of the three months.",
+      unitCodes: ["T09U5"],
+      teaches: ["t09u5-s1", "t09u5-s2"],
+      sources: ["22 TAC § 535.2(e)"],
+      feedbackCorrect:
+        "The 6th — of the following month, thirty days from 6 April. The subsection requires the broker to provide the name of each delegated supervisor to the Commission \"within 30 days of any such delegation that has lasted or is anticipated to last more than three consecutive months,\" and the two limbs matter: a delegation you expect to run through the year is inside the rule on the day it is made, so nothing waits for three months to elapse. The same thirty days runs again after the delegation ends. And note the sentence before it — any licence holder who leads, supervises, directs or manages a team must be delegated as a supervisor, and the delegation must be in writing, so a corridor conversation has not started this clock at all.",
+      feedbackIncorrect:
+        "Read the two limbs of the trigger: a delegation \"that has lasted or is anticipated to last more than three consecutive months.\" The second limb is satisfied the moment the delegation is made, on facts where the broker expects it to run through the year, so the thirty days does not begin at the end of a three-month waiting period. Count thirty days from the date of the delegation. Then note the separate defect in these facts: the delegation must be in writing, and it is not. Review module-09.md, Unit: Broker Responsibility (Relationships between Brokers and Agents, §535.2).",
+      remediation: "module-09.md#unit-broker-responsibility-relationships-between-brokers-and-agents-5352",
+    },
+    {
+      id: "SC3-T2",
+      type: "selection",
+      prompt:
+        "Take Trey Okafor's three tasks and his proposed bonus together. Which statement is correct?",
+      choices: [
+        "Unlocking the Calder Avenue listing for a prospective buyer is showing property under 22 TAC § 535.4(c), which defines showing to include unlocking or providing access for a prospective buyer, so it requires a licence. Telephoning owners of expired listings to ask about relisting is soliciting listings under § 535.4(f), which also requires a licence. Confirming the advertised size, price and terms to a caller, after identifying himself as an administrative assistant, sits inside § 535.5(g) and requires no licence. The proposed $500 per closing fails: 22 TAC § 535.147(a) reaches a payee who both engages in acts for which a licence is required and is not actively licensed, and § 1101.651(a) forbids a broker to pay or otherwise compensate, directly or indirectly, a person who is not a licence holder for performing an act of a broker.",
+        "All three tasks are lawful for an unlicensed assistant provided he gives no opinions and answers no questions beyond what he is told to say, because the licensing requirement attaches to negotiating rather than to physical acts. The bonus is lawful because it is paid by Yolanda personally rather than by the brokerage.",
+        "Only the telephone call to expired listings requires a licence. Unlocking a door is a ministerial act, and § 535.4(c) reaches hosting an open house rather than admitting a single buyer by appointment. The bonus is lawful because Trey brings in the lead but does not negotiate.",
+        "All three tasks require a licence, including the telephone confirmation, because § 535.5(g) applies only to a licensed answering service and not to an employee of a sales agent. The bonus is lawful once the brokerage, rather than the agent, pays it.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student sorts three concrete tasks against the definition of showing in § 535.4(c) and the narrow permission in § 535.5(g), and sees that a payment contingent on a closing is caught by two provisions no matter whose pocket it comes out of.",
+      unitCodes: ["T09U4"],
+      teaches: ["t09u4-s1", "t09u4-s2"],
+      sources: [
+        "22 TAC § 535.4(c)",
+        "22 TAC § 535.4(f)",
+        "22 TAC § 535.5(g)",
+        "22 TAC § 535.147(a)",
+        "22 TAC § 535.3",
+        "Occupations Code § 1101.651(a)",
+      ],
+      feedbackCorrect:
+        "The definition is the whole of the first answer: to \"show\" a property includes \"causing or permitting the property to be viewed by a prospective buyer or tenant, unlocking or providing access onto or into a property for a prospective buyer or tenant, and hosting an open house at the property.\" Unlocking is named. Section 535.5(g) is the clearest permission in the rules and every element of it is load-bearing — the person must be identified to callers as clerical or administrative, the information must be a confirmation of size, price and terms, and the property must have been advertised. On the money, note two things: § 1101.651(a) reaches compensation \"directly or indirectly,\" and 22 TAC § 535.3 independently requires your written consent before a sales agent pays valuable consideration to anyone.",
+      feedbackIncorrect:
+        "Start from the rule's own definition rather than from what the word \"show\" sounds like: § 535.4(c) names unlocking and providing access alongside hosting an open house, so admitting one buyer by appointment is inside it. Then read § 535.5(g) element by element and notice that it fits the telephone confirmation exactly — that is the one lawful task here. On the bonus, the source of the money does not save it: § 535.147(a) turns on what the payee does and whether the payee is licensed, and § 1101.651(a) reaches indirect compensation, so routing it through the agent or through the brokerage changes nothing. Review module-09.md, Unit: Employment and Compensation of Personal Assistants.",
+      remediation: "module-09.md#unit-employment-and-compensation-of-personal-assistants",
+    },
+    {
+      id: "SC3-T3",
+      type: "computation",
+      prompt:
+        "The purchase Yolanda originated closed at $326,000. The listing broker's written offer of compensation to the buyer's broker is 2.75 percent of the sales price, and Yolanda's sponsorship agreement gave her 60 percent of what the firm received on a transaction she originated. How many dollars is Yolanda's share?",
+      expected: 5379,
+      tolerance: 0.01,
+      unit: "dollars",
+      points: 3,
+      judgement:
+        "Whether the student takes the offered compensation on the sales price and then applies the split to what the FIRM received, rather than applying the split to the sales price or to some other base.",
+      unitCodes: ["T09U6"],
+      teaches: ["t09u6-s1", "t09u6-s2"],
+      sources: ["Occupations Code § 1101.651(b)", "22 TAC § 535.3"],
+      feedbackCorrect:
+        "$5,379. The compensation to the buyer's broker is 2.75 percent of $326,000, which is $8,965 — and note who receives it: the BROKER, not the agent. Yolanda's 60 percent is then taken on what the firm received, so 0.60 x $8,965 = $5,379, and the firm retains $3,586. The order matters because the split is a term of a sponsorship agreement between a broker and a sales agent, and it operates on the brokerage's compensation rather than on the sale.",
+      feedbackIncorrect:
+        "Work it in two steps and check the base of each. Step one: the offer of compensation is a percentage of the SALES PRICE and it is paid to the broker. Step two: the split is a percentage of what the BROKER received, not of the sales price — applying 60 percent to $326,000 produces a number larger than the whole commission, which is the check that catches this error. Review module-09.md, Unit: Compensation Issues.",
+      remediation: "module-09.md#unit-compensation-issues",
+    },
+    {
+      id: "SC3-T4",
+      type: "selection",
+      prompt:
+        "Yolanda has asked the listing broker to pay her share directly, because she is no longer sponsored by you. How is she lawfully paid, and what has to exist first?",
+      choices: [
+        "The listing broker may not pay her at all. Occupations Code § 1101.651(b) permits a sales agent to accept compensation for a real estate transaction only from the broker sponsoring the sales agent or the broker who was sponsoring the sales agent when the compensation was earned, so payment runs to Neches Bend and from Neches Bend to Yolanda; and 22 TAC § 535.3 requires the written consent of her sponsoring broker or of the broker who sponsored her when she became entitled to it, which on these facts is you.",
+        "The listing broker may pay her directly, because she earned the compensation personally and § 1101.651(b) restricts only the broker that is currently sponsoring her; her move to another firm ended your authority over the payment.",
+        "Her new sponsoring broker must be paid and must then pay her, because a sales agent may be paid only through the broker sponsoring her at the time payment is made, and Neches Bend has no remaining claim to a transaction that closed after she left.",
+        "She forfeits the compensation. A sales agent who terminates a sponsorship before closing has not completed the transaction, and § 1101.651(b) provides no route by which a former sponsoring broker may pay a departed agent.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student reads § 1101.651(b) to its second limb — the broker who WAS sponsoring the agent when the compensation was earned — instead of stopping at the first and producing a rule that would make a change of brokerage forfeit earned compensation.",
+      unitCodes: ["T09U6"],
+      teaches: ["t09u6-s1", "t09u6-s2"],
+      sources: [
+        "Occupations Code § 1101.651(a)",
+        "Occupations Code § 1101.651(b)",
+        "Occupations Code § 1101.651(c)",
+        "22 TAC § 535.3",
+        "22 TAC § 535.2(i)",
+      ],
+      feedbackCorrect:
+        "The clause students drop is the one that solves the problem: a sales agent may not accept compensation \"from a person other than the broker that is sponsoring the sales agent or was sponsoring the sales agent when the sales agent earned the compensation.\" Both brokers are permitted payers; the listing broker is neither. Section 535.3 then adds the paperwork, and it too anticipates the change of firms by naming two possible consenting brokers. Keep the neighbouring provisions in view: § 1101.651(a) bars a broker from compensating anyone who is not a licence holder, and § 1101.651(c) confines a sales agent's own payments to a person to the broker sponsoring her at that time.",
+      feedbackIncorrect:
+        "Any reading of § 1101.651(b) that stops after \"the broker that is sponsoring the sales agent\" states a different and wrong rule, because it would make it impossible for an agent who changes brokerages to be paid on a transaction earned at the old firm. Read the rest of the sentence. Then ask who is permitted to pay at all: the compensation moves broker to broker and broker to agent, and a listing broker paying a sales agent at another firm is outside the section however the cheque is described. Review module-09.md, Unit: Compensation Issues.",
+      remediation: "module-09.md#unit-compensation-issues",
+    },
+    {
+      id: "SC3-T5",
+      type: "selection",
+      prompt:
+        "The Calder Avenue listing expired unsold on 14 November 2026 and the seller did not relist. Your office manager asks whether the file can be closed out and the text messages deleted. Which answer is correct?",
+      choices: [
+        "No. 22 TAC § 535.2(h) requires the broker to maintain the listed record categories in a format readily available to the Commission for at least four years from the date of closing, termination of the contract, or end of the real estate transaction — here 14 November 2026, so until 14 November 2030. The listing agreement is a commission agreement, the seller's disclosures are disclosures, and the eight weeks of texts about price and a roof estimate are substantive communications with a party to the transaction; all three categories are named in the rule, and the only excuse it recognises for missing records is destruction by an Act of God not intentionally caused by the broker.",
+        "Yes, once the listing has expired. The four years run from the date a transaction closes, and a listing that produced no closing produced no transaction, so nothing in § 535.2(h) attaches to it.",
+        "The listing agreement and the disclosures must be kept until 14 November 2030, but the text messages may be deleted, because § 535.2(h) reaches formal documents and an informal exchange between an agent and a client is not a record of the transaction.",
+        "Everything must be kept until 14 November 2030, and the four years may be shortened only if the seller consents in writing to the destruction of the file.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student applies the retention rule to a listing that never closed, using the correct one of the three triggers the rule names, and recognises text messages as substantive communications rather than as informal correspondence outside the rule.",
+      unitCodes: ["T09U5"],
+      teaches: ["t09u5-s1", "t09u5-s2"],
+      sources: ["22 TAC § 535.2(h)"],
+      feedbackCorrect:
+        "Three triggers, and you use whichever one the facts supply: \"the date of closing, termination of the contract, or end of a real estate transaction.\" A listing that expires unsold ends on the day it expires, and the four years run from then. The eight categories are worth knowing as a list, because two of them catch people out: \"substantive communications with parties to the transaction\" reaches texts and emails, and \"commission agreements such as listing agreements, buyer representation agreements, or other written agreements relied upon to claim compensation\" reaches an agreement that produced no commission at all.",
+      feedbackIncorrect:
+        "The rule does not run only from closing. It names three events and uses whichever occurs — closing, termination of the contract, or end of the transaction — so an expired listing starts its own four years. And do not read the categories narrowly: substantive communications with parties are expressly listed, and the medium is irrelevant. Note also the single excuse the rule recognises for missing records, which is destruction by an Act of God not intentionally caused by the broker; a client's consent is not among them. Review module-09.md, Unit: Broker Responsibility (Relationships between Brokers and Agents, §535.2).",
+      remediation: "module-09.md#unit-broker-responsibility-relationships-between-brokers-and-agents-5352",
+    },
+    {
+      id: "SC3-T6",
+      type: "short-answer",
+      prompt:
+        "Answer Corinne's three questions — whether independent contractor status means the firm owes her nothing beyond commissions, whether she can be an employee for the health plan while remaining a contractor for tax, and whether your supervision of the Lakeside Team endangers her status. Say what you tell her, and what you do not answer.",
+      rubric: [
+        "States that a sales agent's independent contractor status for tax or unemployment compensation purposes does not reduce the broker's supervision duty or the broker's responsibility for the agent's authorised acts, citing 22 TAC § 535.2 and Occupations Code § 1101.803.",
+        "Identifies at least two obligations the firm owes Corinne regardless of the label — such as the written notice of the scope of her authorised activities, the response within two calendar days under § 535.2(j), delivery of Commission correspondence within three calendar days under § 535.2(k), or the coaching required the first three times an agent performs a type of activity under § 535.2(i).",
+        "States that each authority in this area serves one limited purpose, so a conclusion under one — unemployment compensation, federal tax treatment, or discrimination law — does not decide the others.",
+        "Refers the tax and employee-benefit characterisation to the firm's own legal or tax adviser rather than answering it, and says plainly that the broker is not giving tax or legal advice.",
+        "Answers the supervision question directly: supervision does not endanger the status, and the broker could not lawfully reduce supervision to protect it in any event.",
+        "Identifies the two defects in the firm's own house that this email exposes — the delegation that is not in writing and the policies last revised in 2019, which 22 TAC § 535.2(i) requires to be maintained on a current basis — and states what will be done about each.",
+      ],
+      points: 5,
+      judgement:
+        "Whether the student can answer the brokerage-law half of a mixed question, refuse the tax and employment-law half, and recognise that the question has exposed two compliance defects of the broker's own.",
+      unitCodes: ["T09U1", "T09U2"],
+      teaches: ["t09u1-s1", "t09u2-s1"],
+      sources: [
+        "22 TAC § 535.2",
+        "22 TAC § 535.2(i)",
+        "22 TAC § 535.2(j)",
+        "22 TAC § 535.2(k)",
+        "Occupations Code § 1101.803",
+        "Labor Code § 201.072",
+      ],
+      referral: true,
+      referralNote:
+        "Whether a person may be an employee for a benefit plan while remaining a contractor for tax is an employment and tax characterisation question. It goes to the firm's own legal or tax adviser; a broker who answers it is advising on a subject outside the licence.",
+      feedbackCorrect:
+        "The discipline here is keeping the word \"employment\" in its two senses apart. In the law of agency it means an engagement — the seller employs the broker. In Labor Code chapter 201 and in the federal tax provisions it carries consequences that have nothing to do with brokerage supervision, and § 535.2 closes by saying in terms that the section is not meant to create or require an employer/employee relationship between a broker and a sponsored sales agent. So supervision is safe, the obligations you owe her are real and enumerated, and the tax and benefits question is somebody else's to answer.",
+      feedbackIncorrect:
+        "Answer the question you are competent to answer and refer the rest. The brokerage-law half is settled: § 535.2 imposes the supervision duties whatever the label, § 1101.803 makes you liable for conduct by a sales agent associated with or acting for you, and several of the rule's requirements run TO the agent — the written scope notice, the two-calendar-day response, the three-calendar-day delivery of Commission correspondence, the coaching the first three times. The tax and benefits half is not yours; each authority in this area serves one limited purpose, and a conclusion under one does not travel to another. Review module-09.md, Unit: Independent Contract Agreements, and Unit: Employment Law.",
+      remediation: "module-09.md#unit-independent-contract-agreements",
+    },
+  ],
+  passingScore: 0.7,
+  criticalCriteria: [
+    "Refers the tax and employee-benefit characterisation to the firm's own legal or tax adviser rather than answering it, and says plainly that the broker is not giving tax or legal advice.",
+    "Answers the supervision question directly: supervision does not endanger the status, and the broker could not lawfully reduce supervision to protect it in any event.",
+  ],
+  remediation: {
+    onFailure:
+      "A student who does not reach the points to pass, or who misses either critical element, is returned to the screens below with the instructor's written rationale for each task answered wrongly, and works the scenario again. Where the failure is on SC3-T2 or SC3-T4 the instructor also assigns the two statute readings, because both errors are errors of reading a rule to its second clause rather than errors of judgement.",
+    revisit: ["t09u5-s1", "t09u5-s2", "t09u4-s1", "t09u6-s1", "t09u1-s1"],
+    reattemptPermitted: true,
+  },
+  optionalReflection: {
+    prompt:
+      "Optional and never graded: you have just found two defects in your own brokerage while answering somebody else's question. Which of the two would you fix first, and what would you have to stop doing this week to fix it? Nothing here is scored and nothing is unlocked by it.",
+    required: false,
+    graded: false,
+    affectsScore: false,
+  },
+  instructorReview: {
+    required: true,
+    reason:
+      "Task SC3-T6 is graded against a rubric that includes a required referral of a tax and employment-law question, and 22 TAC § 535.65(g)(2)(D) makes a qualified instructor responsible for providing the answers and the rationale for the grading of course work. Because a student may reach a passing point total while confidently answering the benefits question, the instructor confirms both critical elements before the scenario is recorded as passed.",
+  },
+});
+
+/* ══════════════════════════════════════════════════════════════════════════════════════════════
+   SCENARIO 4 — placed after T11 (Deceptive Trade Practices and Consumer Protection Act)
+
+   The DTPA is the topic where a licence holder's instincts are worth least. The exemption written
+   for brokers reads like immunity and is not; the buyer who never signed anything with you and never
+   paid you a dollar is nonetheless a consumer who can sue you; the multiplier's base changes with a
+   finding about your state of mind that a jury may infer from your own file; and the cheapest exit
+   in the statute closes thirty days after a letter arrives. This scenario walks one claim from the
+   sentence that caused it to the decision that has to be made in the first week.
+   ══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+const SC4 = scenario("LOA-SC4", {
+  title: "A Longview listing, a sentence in the remarks, and a demand letter",
+  placement: {
+    afterTopic: "T11",
+    attributedToTopic: "T11",
+    timeAttribution: "TOPIC",
+    unlockRequires: ["T10", "T11"],
+  },
+  assessesTopics: ["T11"],
+  assessesUnits: ["T11U1", "T11U2", "T11U3", "T11U4", "T11U5"],
+  context:
+    "You are a Texas sales agent sponsored by Pine Tree Realty in Longview, Gregg County. Eighteen months ago you listed and sold a house on Whaley Street.\n\n" +
+    "The buyer was represented by an agent at another brokerage. You never met her alone, she signed nothing with you, and she paid you nothing. A letter from her lawyer arrived this morning. Every dollar figure below is illustrative and invented so the arithmetic is visible; the statutory thresholds and multipliers identified as such are the statute's own.",
+  facts: [
+    "THE LISTING: a single-family house on Whaley Street, sold to Adaeze Nwosu for $268,000. She bought it to live in and has lived in it since closing.",
+    "WHAT THE SELLER TOLD YOU: at the listing appointment the seller said the house \"has never taken water.\"",
+    "WHAT YOU PUBLISHED: you wrote in the marketing remarks, in writing and without attribution, \"Never flooded. Not in a flood zone.\" You did not look at a flood map, did not ask for an elevation certificate, and gave nobody any written notice that you were relying on anything the seller had told you.",
+    "WHAT WAS IN YOUR FILE: a copy of the seller's flood insurance renewal notice, which you had collected with the utility bills at the listing appointment and never read.",
+    "WHAT HAPPENED: four months after closing the house took eleven inches of water in a storm. Ms. Nwosu was not represented by legal counsel when she negotiated the purchase, and no lawyer was involved on her side at any point before this letter.",
+    "THE DEMAND LETTER, received on 8 September: it advises you in reasonable detail of her specific complaint and states economic damages of $28,000, damages for mental anguish of $16,000, and attorneys' fees reasonably incurred to date in asserting the claim of $4,200.",
+    "IF THE CASE IS TRIED, ASSUME: the trier of fact finds economic damages of $28,000 and mental anguish of $16,000, and the court finds reasonable and necessary attorneys' fees of $54,000 and court costs of $3,600.",
+    "YOUR BROKER'S FIRST REACTION, by telephone this morning: \"We're exempt — she has a written contract, it was well over a hundred thousand dollars, and the statute exempts brokers anyway. Call her and tell her she has no claim, then we can all stop worrying.\"",
+  ],
+  tasks: [
+    {
+      id: "SC4-T1",
+      type: "selection",
+      prompt:
+        "Test your broker's two exemption arguments against Business & Commerce Code § 17.49. Which statement is correct?",
+      choices: [
+        "Neither argument works. The broker exemption in § 17.49(i) covers a claim against a licence holder arising from an act or omission while acting as one, but it does not apply to an express misrepresentation of a material fact that cannot be characterised as advice, judgment or opinion — and \"Never flooded. Not in a flood zone.\" is a factual assertion, not an opinion. The written-contract exemption in § 17.49(f) has three conditions joined by \"and\": the consideration exceeds $100,000 here, but Ms. Nwosu was not represented by legal counsel in negotiating the contract, and the contract involves her residence, so two of the three fail.",
+        "Both arguments work. Section 17.49(i) exempts claims against licence holders without qualification, and § 17.49(f) exempts any claim arising out of a written contract involving consideration of more than $100,000, which this transaction plainly was.",
+        "The § 17.49(i) exemption fails but § 17.49(f) succeeds, because the residence condition in § 17.49(f)(3) asks whether the property is a residence rather than whether it is the consumer's own, and a single-family house is a residence in either case.",
+        "Both arguments fail, but for a different reason: § 17.49(i) and § 17.49(f) apply only where the defendant is the party to the written contract, and a listing agent is not a party to the sale contract at all.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student can run a claim against the two exemptions a licence holder will reach for first, applying the carve-out in § 17.49(i) to a specific published sentence and the three conjunctive conditions of § 17.49(f) to the facts rather than to the dollar figure alone.",
+      unitCodes: ["T11U4"],
+      teaches: ["t11u4-s1", "t11u4-s2"],
+      sources: [
+        "Business & Commerce Code § 17.49(i)",
+        "Business & Commerce Code § 17.49(f)",
+        "Business & Commerce Code § 17.45(12)",
+        "Business & Commerce Code § 17.46(b)(24)",
+      ],
+      feedbackCorrect:
+        "The general rule in § 17.49(i) genuinely does exempt licence holders, and every real case lives in the carve-outs. Carve-out (1) has four conditions in one clause — express, a misrepresentation, of a material fact, and one that cannot be characterised as advice, judgment or opinion — and a flat statement that a house has never flooded satisfies all four; dressing it in \"I think\" would not have saved it, because a court reads the substance. On § 17.49(f), the definition of \"Residence\" in § 17.45(12) has two limbs, the building type AND occupancy as the consumer's residence, and both are satisfied here. Most residential buyers have no lawyer, so condition (2) usually fails too. That exemption almost never protects a residential licence holder.",
+      feedbackIncorrect:
+        "Read § 17.49(i) past its first sentence: the exemption \"does not apply to\" three things, and the first of them is an express misrepresentation of a material fact that cannot be characterised as advice, judgment or opinion. Then read § 17.49(f) as three conditions joined by \"and\" and test each separately — the dollar threshold, counsel of the consumer's own choosing, and a contract that does not involve the consumer's residence. Failing any one defeats the exemption, and here two fail. Commit both thresholds while you are there: more than $100,000 at § 17.49(f), more than $500,000 at § 17.49(g), and the residence exception in both. Review module-11.md, Unit: Defenses.",
+      remediation: "module-11.md#unit-defenses",
+    },
+    {
+      id: "SC4-T2",
+      type: "selection",
+      prompt:
+        "Ms. Nwosu never signed anything with you, was represented by another brokerage, and paid you nothing. Your broker says that means she cannot sue you under the DTPA. Which statement is correct?",
+      choices: [
+        "She can. Section 17.45(4) defines a consumer as one who seeks or acquires by purchase or lease, by gift or otherwise, goods or services — the definition turns on what she acquired, not on whether she dealt with you, engaged you or paid you, and she acquired the house. Under § 17.50(a)(1) she must then establish that she relied on the representation to her detriment and that it was a producing cause of her economic damages, and a listing remark she read before touring and buying is capable of both.",
+        "She cannot. A DTPA claim requires privity between the consumer and the defendant, and the absence of any agreement or payment between you defeats the claim before any question of misrepresentation arises.",
+        "She can, and nothing further is required of her: proving that a listed statement was false is by itself a violation for which § 17.50(b)(1) awards economic damages, without reliance or causation.",
+        "She can sue the seller and her own broker but not you, because your duty ran to your seller and a listing agent's marketing remarks are addressed to cooperating brokers rather than to buyers.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student applies the consumer definition to a buyer who never dealt with the licence holder contractually, and then holds on to the two things § 17.50(a)(1) still requires rather than treating a false statement as automatically actionable.",
+      unitCodes: ["T11U2"],
+      teaches: ["t11u2-s1", "t11u2-s2"],
+      sources: [
+        "Business & Commerce Code § 17.45(4)",
+        "Business & Commerce Code § 17.50(a)(1)",
+        "Business & Commerce Code § 17.46(b)",
+        "22 TAC § 535.156",
+      ],
+      feedbackCorrect:
+        "This is the feature of the DTPA that surprises licence holders most: standing comes from what the plaintiff acquired, not from any relationship with the defendant. She bought the house; she is a consumer; you published the sentence she read. What the statute still asks of her is real, though — reliance to her detriment and producing cause under § 17.50(a)(1) — and those are the elements a defence is actually built on. Note the parallel duty that never depended on the DTPA at all: 22 TAC § 535.156 requires you to convey accurate information to members of the public with whom you deal, and she was one.",
+      feedbackIncorrect:
+        "The definition does not mention privity, payment or an agreement, and a claim does not fail because the plaintiff was somebody else's client. Read § 17.45(4) for what it does require — that she sought or acquired goods or services — and then read § 17.50(a)(1) for what she must add: reliance to her detriment, and that the conduct was a producing cause of economic damages. Those two are the elements you argue about; standing is not. Review module-11.md, Unit: Deceptive Trade Practices and Consumer Protection.",
+      remediation: "module-11.md#unit-deceptive-trade-practices-and-consumer-protection",
+    },
+    {
+      id: "SC4-T3",
+      type: "computation",
+      prompt:
+        "Assume the case is tried, the trier of fact finds economic damages of $28,000 and mental anguish of $16,000, and finds that the conduct was committed knowingly. Applying Business & Commerce Code § 17.50(b)(1), what is the maximum in dollars the trier of fact may award in damages, excluding court costs and attorneys' fees?",
+      expected: 128000,
+      tolerance: 0.01,
+      unit: "dollars",
+      points: 4,
+      judgement:
+        "Whether the student uses the correct multiplier base at the knowing tier — economic damages alone — and adds the mental anguish without multiplying it, rather than trebling the whole award.",
+      unitCodes: ["T11U3"],
+      teaches: ["t11u3-s1", "t11u3-s2"],
+      sources: [
+        "Business & Commerce Code § 17.50(b)(1)",
+        "Business & Commerce Code § 17.50(e)",
+        "Business & Commerce Code § 17.45(11)",
+      ],
+      feedbackCorrect:
+        "$128,000. At the knowing tier two things unlock: mental anguish \"as found by the trier of fact,\" and additional damages of \"not more than three times the amount of economic damages.\" So economic damages $28,000, plus mental anguish $16,000, plus three times the economic damages, $84,000 — $128,000 in all. Two guards on the arithmetic. Mental anguish is recoverable but is NOT in the multiplier base at this tier; it joins the base only on a finding that the conduct was intentional, which would move the maximum to $28,000 + $16,000 + 3 x $44,000, or $176,000. And § 17.50(e) keeps attorneys' fees, costs and prejudgment interest out of the base entirely.",
+      feedbackIncorrect:
+        "Identify the tier first, then the base. On a knowing finding the statute permits \"not more than three times the amount of economic damages\" — economic damages only. Mental anguish is added once, not multiplied. The two errors that produce most wrong answers are putting mental anguish into the base at the knowing tier, which is the intentional tier's rule, and trebling the whole judgment including fees, which § 17.50(e) forbids in terms. Rebuild it as three lines: economic, mental anguish, multiplier. Review module-11.md, Unit: Damages.",
+      remediation: "module-11.md#unit-damages",
+    },
+    {
+      id: "SC4-T4",
+      type: "computation",
+      prompt:
+        "The demand letter received on 8 September states economic damages of $28,000, mental anguish of $16,000, and attorneys' fees reasonably incurred in asserting the claim of $4,200. If the decision is taken to use the tender defence in Business & Commerce Code § 17.506(d), how many dollars must be tendered?",
+      expected: 48200,
+      tolerance: 0.01,
+      unit: "dollars",
+      points: 4,
+      judgement:
+        "Whether the student reads the tender provision as requiring both categories of damages AND the expenses including fees, rather than tendering the economic damages alone and losing the defence.",
+      unitCodes: ["T11U4"],
+      teaches: ["t11u4-s1", "t11u4-s2"],
+      sources: ["Business & Commerce Code § 17.506(d)", "Business & Commerce Code § 17.505(a)"],
+      feedbackCorrect:
+        "$48,200 — $28,000 plus $16,000 plus $4,200. Subsection (d) requires the defendant to tender both \"the amount of economic damages and damages for mental anguish claimed\" and \"the expenses, including attorneys' fees, if any, reasonably incurred by the consumer in asserting the claim,\" and the window is thirty days after the day the notice was received, so 8 October on these facts. Set that against the alternative: a claim that could reach $128,000 in damages at the knowing tier, plus $54,000 in fees and $3,600 in costs at trial. It is the cheapest exit in the statute, which is exactly why the thirty days matters.",
+      feedbackIncorrect:
+        "Tender is all-or-nothing and the subsection lists two things, not one. Add the economic damages and the mental anguish claimed, then add the expenses including attorneys' fees reasonably incurred in asserting the claim. A tender that omits the fees is not a tender under the subsection and buys no defence. Note the two clocks the letter started, both running from receipt: the sixty days under § 17.505(a) before suit may be filed, and the thirty days under § 17.506(d) in which a tender must be made. Review module-11.md, Unit: Defenses.",
+      remediation: "module-11.md#unit-defenses",
+    },
+    {
+      id: "SC4-T5",
+      type: "selection",
+      prompt:
+        "Everything in the arithmetic turns on a finding about your state of mind. Which statement about that finding, and about the flood insurance renewal notice sitting unread in your file, is correct?",
+      choices: [
+        "Section 17.45(9) defines \"knowingly\" as actual awareness, at the time of the act or practice, of the falsity, deception or unfairness of the act or practice, and adds that actual awareness may be inferred where objective manifestations indicate that a person acted with actual awareness — so the renewal notice in your own file is the kind of objective manifestation from which a jury may infer the finding that trebles the exposure, even though you say you never read it.",
+        "Actual awareness must be proved directly, so a document you never read cannot support a knowing finding; the multiplier is available only where the defendant admits knowledge or a witness testifies to it.",
+        "The renewal notice makes the finding automatic. A defendant who possessed a document contradicting the statement is knowing as a matter of law under § 17.45(9), and the trier of fact has no discretion.",
+        "The renewal notice is irrelevant to state of mind, because the § 17.506(a) reliance defence protects a defendant who repeated written information obtained from another source, and the seller's statement was such information.",
+      ],
+      correctChoice: 0,
+      points: 3,
+      judgement:
+        "Whether the student understands that the culpability finding is inferable from objective manifestations rather than proved by confession, and does not mistake a defence with conditions for an automatic protection.",
+      unitCodes: ["T11U1"],
+      teaches: ["t11u1-s1", "t11u1-s2"],
+      sources: [
+        "Business & Commerce Code § 17.45(9)",
+        "Business & Commerce Code § 17.45(13)",
+        "Business & Commerce Code § 17.506(a)",
+        "Business & Commerce Code § 17.506(b)",
+      ],
+      feedbackCorrect:
+        "That sentence at the end of § 17.45(9) is the one to remember: actual awareness \"may be inferred where objective manifestations indicate that a person acted with actual awareness.\" The same inference is available for \"intentionally\" under § 17.45(13). A file containing a flood insurance renewal notice, collected by you and never read, is exactly the objective manifestation a plaintiff will put in front of a jury. And on the last option, note why the § 17.506(a) defence is unavailable here: it requires reasonable and timely WRITTEN notice to the plaintiff, given BEFORE consummation of the transaction, of your reliance on written information — you gave none, and the seller's statement was oral in any event.",
+      feedbackIncorrect:
+        "Two opposite errors are possible on this item and both are wrong. Actual awareness is not confined to what a defendant admits, because the statute expressly permits it to be inferred from objective manifestations; and it is not automatic from the existence of a document, because the inference is the trier of fact's to draw. On the § 17.506(a) option, count that defence's conditions: written information, written notice of your reliance given to the plaintiff before consummation, information that was in fact false, and proof you did not know and could not reasonably have known. Students remember it as \"I can rely on what I am told,\" which is not what it says. Review module-11.md, Unit: Fraud versus Misrepresentation, and Unit: Defenses.",
+      remediation: "module-11.md#unit-fraud-versus-misrepresentation",
+    },
+    {
+      id: "SC4-T6",
+      type: "short-answer",
+      prompt:
+        "Your broker wants you to telephone Ms. Nwosu today and tell her she has no claim. Set out what you do about the letter this week and what you tell your broker about that instruction.",
+      rubric: [
+        "Does not telephone the consumer to answer the allegations or to tell her she has no claim, and identifies that telling her what her legal position is would be giving legal advice contrary to 22 TAC § 537.11(b).",
+        "Notes the date of receipt and identifies the two periods it started — the sixty days under § 17.505(a) before suit may be filed, and the thirty days under § 17.506(d) within which a tender must be made.",
+        "Gets the letter to the brokerage's legal counsel and notifies the errors and omissions carrier, and states that the decision whether to tender under § 17.506(d) is counsel's and the carrier's rather than the licence holder's.",
+        "Preserves the entire file unaltered, including the flood insurance renewal notice, and states that nothing is removed, corrected in place or re-dated.",
+        "Identifies that this course states the day-one handling as practice rather than as law, and cites no Texas authority for it beyond the two statutory periods.",
+        "Identifies that the same conduct can be reached by TRELA independently of the DTPA — Business & Commerce Code § 17.43 provides that a violation of another law is not in and of itself a DTPA violation, and the reverse is equally true — so the Commission's interest in the matter is not answered by resolving the civil claim.",
+      ],
+      points: 5,
+      judgement:
+        "Whether the student can refuse a sponsoring broker's instruction that would harm both the consumer and the licence holder, and can separate what must be done on a clock from what must be decided by counsel.",
+      unitCodes: ["T11U5", "T11U4"],
+      teaches: ["t11u5-s1", "t11u4-s1"],
+      sources: [
+        "Business & Commerce Code § 17.505(a)",
+        "Business & Commerce Code § 17.506(d)",
+        "Business & Commerce Code § 17.43",
+        "22 TAC § 537.11(b)",
+        "Occupations Code § 1101.652(b)(2)",
+      ],
+      referral: true,
+      referralNote:
+        "Whether the claim is defensible, and whether to tender, are legal decisions. They go to the brokerage's counsel and to the errors and omissions carrier; a licence holder who telephones the consumer to tell her she has no claim has given legal advice and made a witness of himself.",
+      feedbackCorrect:
+        "Everything you say to her from this morning onward is evidence, and the one thing your broker has asked you to say is a legal conclusion you are not permitted to give. Note that the course is honest about the status of this advice: the day-one handling is practice, and no held Texas source prescribes it. What is law is the two periods running from receipt, the requirement that a tender include both categories of damages and the expenses, and the fact that resolving a civil claim does not answer to the Commission.",
+      feedbackIncorrect:
+        "Two things have to happen and one thing must not. Happen: note the date of receipt and the two periods it started, and get the letter to counsel and the carrier the same day. Not happen: any conversation with the consumer about the merits. Telling a person what her legal position is falls squarely inside what 22 TAC § 537.11(b) forbids, and it will be quoted back to you. Note also that a licence holder who follows an instruction like this one owns the consequence — a broker's instruction is not a defence to § 1101.652(b)(2). Review module-11.md, Unit: Ethical and Legal Concerns, and Unit: Defenses.",
+      remediation: "module-11.md#unit-ethical-and-legal-concerns",
+    },
+  ],
+  passingScore: 0.7,
+  criticalCriteria: [
+    "Does not telephone the consumer to answer the allegations or to tell her she has no claim, and identifies that telling her what her legal position is would be giving legal advice contrary to 22 TAC § 537.11(b).",
+    "Gets the letter to the brokerage's legal counsel and notifies the errors and omissions carrier, and states that the decision whether to tender under § 17.506(d) is counsel's and the carrier's rather than the licence holder's.",
+  ],
+  remediation: {
+    onFailure:
+      "A student who does not reach the points to pass, or who misses either critical element, is returned to the screens below with the instructor's written rationale for each task answered wrongly, and works the scenario again. Where the failure is on either computation the instructor works the three damage tiers with the student before the reattempt, because a student who has the tiers wrong will misjudge every settlement decision in practice.",
+    revisit: ["t11u4-s1", "t11u2-s1", "t11u3-s1", "t11u3-s2", "t11u1-s1", "t11u5-s1"],
+    reattemptPermitted: true,
+  },
+  optionalReflection: {
+    prompt:
+      "Optional and never graded: look back at the sentence in the marketing remarks. Write the version of it you would publish now, and note where the information in it would have come from. Nothing here is scored and nothing is unlocked by it.",
+    required: false,
+    graded: false,
+    affectsScore: false,
+  },
+  instructorReview: {
+    required: true,
+    reason:
+      "Task SC4-T6 is graded against a rubric that requires a licence holder to decline a sponsoring broker's instruction, and 22 TAC § 535.65(g)(2)(D) makes a qualified instructor responsible for providing the answers and the rationale for the grading of course work. Because a student may reach a passing point total while still proposing to telephone the consumer, the instructor confirms both critical elements before the scenario is recorded as passed.",
+  },
+});
+
+/* ══════════════════════════════════════════════════════════════════════════════════════════════
+   SCENARIO 5 — THE COURSE CAPSTONE. Course-level time, attributed to no topic.
+
+   WHY IT IS NOT A T12 EXERCISE. The work this scenario asks for is reconstruction: a closed file is
+   put in front of the student and the question is what happened, in what order, and which provision
+   each departure engages. Doing that draws on seven topics at once — the duty to respond from T03,
+   the buyer-side sequence from T05, the appointment machinery from T06, the brokerage's own
+   disclosure policy from T08, broker responsibility and records from T09, the disciplinary catalogue
+   from T10, and the title advisory and risk-management practice from T12. Attributing its twenty
+   minutes to T12 because the capstone module sits last would say that a student spent those minutes
+   on Implementation and Presentation, which is not what happened. The minutes are therefore
+   course-level, exactly as config/texas/law-of-agency-time-budget.mjs's COURSE_LEVEL records them,
+   and the invariants at the foot of this file check that no topic's budget is charged for them.
+
+   It is PLACED after the final topic because that is when a student has the whole course to draw on.
+   Placement and time attribution are different questions, and this file keeps them apart.
+   ══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+const SC5 = scenario("LOA-SC5", {
+  title: "Reconstructing a Wichita Falls file",
+  placement: {
+    afterTopic: "T12",
+    attributedToTopic: null,
+    timeAttribution: "COURSE_LEVEL",
+    unlockRequires: ["T01", "T02", "T03", "T04", "T05", "T06", "T07", "T08", "T09", "T10", "T11", "T12"],
+  },
+  assessesTopics: ["T03", "T05", "T06", "T08", "T09", "T10", "T12"],
+  assessesUnits: ["T03U3", "T05U6", "T06U3", "T08U2", "T09U5", "T10U3", "T12U2", "T12U3", "T12U5"],
+  context:
+    "You are a sales agent sponsored by Red River Brokerage in Wichita Falls, and your broker, Delia Marchetti, delegated you in writing three months ago to assist in administering compliance with the Act and the Commission's rules. The Commission has been notified of the delegation.\n\n" +
+    "A complaint has been filed naming Kip Larousse, one of the firm's sales agents. Delia has handed you the whole file on the Kemp Boulevard transaction and asked you to reconstruct it before she answers anything. This is not a question about whether Kip is a bad agent. It is the ordinary problem of a file in which each thing happened at nearly the right time, in nearly the right order, by nearly the right person.\n\n" +
+    "Every dollar figure below is illustrative and invented so the arithmetic is visible; compensation is not set by law and is fully negotiable, and no Texas statute or Commission rule fixes any rate used here.",
+  facts: [
+    "THE TRANSACTION: 3805 Kemp Boulevard, a single-family house listed by Red River Brokerage at $296,000 and sold to Hannah and Omar Sadiq for $289,500. Both sides of the transaction were the firm's: Renae Coulter held the listing, Kip worked with the buyers.",
+    "THE FILE'S DATED DOCUMENTS, in the order they are dated: a text message thread beginning 4 February in which Kip and the buyers discuss two specific houses; a first showing of Kemp Boulevard on 7 February; an Information About Brokerage Services notice emailed to the buyers on 8 February; a buyer representation agreement signed by the buyers on 17 February, the day the offer was written; the executed contract dated 17 February; and the closing statement dated 21 March.",
+    "WHAT IS NOT IN THE FILE: any written advice to the buyers about having an abstract examined by an attorney of their choosing or being provided with or obtaining a title insurance policy.",
+    "THE INTERMEDIARY PAPER: the sellers' listing agreement authorises Red River Brokerage to act as an intermediary and sets out the § 1101.651(d) prohibitions in conspicuous bold print. It says nothing about appointments. The buyers' representation agreement authorises both intermediary status and appointments.",
+    "THE APPOINTMENT NOTICE: a one-page notice in the file names Kip as appointed to the buyers and Renae as appointed to the sellers. It is signed by Kip. Delia did not sign it, did not send it, and says the first she saw of it was this morning.",
+    "THE UNANSWERED EMAILS: a second prospective buyer, Aurelio Bengochea, toured Kemp Boulevard unrepresented on 9 February and emailed Kip on 10 February and again on 14 February asking whether the sellers would consider a later closing. Kip replied on 19 February.",
+    "THE MISSING TEXTS: the file's text thread starts on 4 February, but Kip says he had been messaging the buyers about the property since late January. Those messages are on a handset he traded in and were not exported.",
+    "THE COMPENSATION: under the listing agreement Red River Brokerage receives 5 percent of the sales price, of which the listing earmarks 2.5 percent of the sales price for the work done on the buyers' side.",
+    "THE FIRM'S POLICY MANUAL: its page headed \"Agency\" reads, in full, \"Red River Brokerage complies with all TREC disclosure requirements.\"",
+    "WHAT THE BUYERS HAVE ASKED YOU, by email this morning: \"Now that we know none of this was done properly, can we get out of the purchase, and should we be suing somebody?\"",
+  ],
+  tasks: [
+    {
+      id: "SC5-T1",
+      type: "selection",
+      prompt:
+        "Reconstruct the buyer-side sequence from the file's own dates. Which statement identifies the departures correctly?",
+      choices: [
+        "Two triggers were missed. The buyers were shown a residential property on 7 February with no written agreement in place, and § 1101.563(b) requires the written agreement before showing any residential real property to a prospective buyer — the agreement is dated 17 February, and § 1101.652(b)(34) makes the failure a ground for discipline. Separately, the IABS was sent on 8 February although the text thread shows substantive communication about specific real property from 4 February, and § 1101.558(b-1) fixes the trigger at the first substantive communication rather than at the first showing or the first appointment.",
+        "Nothing was missed. The written agreement is required before an offer is presented, and it was signed on the day the offer was written; the IABS is required before a contract is executed, and it was sent more than a week earlier.",
+        "One trigger was missed. The IABS was late, but the written agreement was timely, because § 1101.563(b) applies only where the licence holder is representing the buyer and Kip was not yet representing anybody on 7 February.",
+        "One trigger was missed. The written agreement was late, but the IABS was timely, because the notice is due at the first showing and the first showing was 7 February.",
+        "Neither instrument was required at all, because Red River Brokerage held the listing and a licence holder showing the firm's own listing acts for the seller.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student can reconstruct two independent triggers from a file's dates — one keyed to a showing, one keyed to a communication — and resist the reading that a signature on the day of the offer cures a showing that happened ten days earlier.",
+      unitCodes: ["T05U6", "T12U2"],
+      teaches: ["t05u6-s1", "t05u6-s2", "t12u2-s1"],
+      sources: [
+        "Occupations Code § 1101.563(b)",
+        "Occupations Code § 1101.652(b)(34)",
+        "Occupations Code § 1101.558(b-1)",
+        "22 TAC § 531.20",
+      ],
+      feedbackCorrect:
+        "The two provisions have different triggers and a file is reconstructed against both. Section 1101.563(b) is keyed to the showing — before you show any residential real property to a prospective buyer, or, where none will be shown, before you present an offer — and there is no grace period and no papering it at the offer. Section 1101.558(b-1) is keyed to the first substantive communication about specific real property, which the text thread dates to 4 February. Note the third option's error, which is the seductive one: the § 1101.563(b) duty attaches to a licence holder performing any act of real estate brokerage for a prospective buyer, and helping a buyer find and view houses is that act — the absence of a signed agreement is the violation, not a defence to one.",
+      feedbackIncorrect:
+        "Take the two dates the statute cares about and find them in the file. The showing is 7 February and the agreement is 17 February, so the § 1101.563(b) trigger passed unmet; the second trigger in that subsection, presenting an offer, applies where no property will be shown, and property was shown. The first substantive communication about specific real property is 4 February on the text thread, so the notice sent on the 8th was late against § 1101.558(b-1) whatever it was in time for. Review module-05.md, Unit: Buyer's Broker Disclosures, and module-12.md, Unit: The Broker Working for/with the Buyer.",
+      remediation: "module-05.md#unit-buyers-broker-disclosures",
+    },
+    {
+      id: "SC5-T2",
+      type: "computation",
+      prompt:
+        "No written advice about an abstract or a title insurance policy is in the file. Under the listing agreement Red River Brokerage receives 5 percent of the sales price of $289,500, of which the listing earmarks 2.5 percent of the sales price for the work done on the buyers' side. Applying Occupations Code § 1101.806(d) to the buyers' side, how many dollars are at risk?",
+      expected: 7237.5,
+      tolerance: 0.01,
+      unit: "dollars",
+      points: 3,
+      judgement:
+        "Whether the student computes the buyer-side compensation from the correct base and understands that § 1101.806(d) forfeits the whole of it rather than reducing it or offsetting a penalty against it.",
+      unitCodes: ["T12U2"],
+      teaches: ["t12u2-s1"],
+      sources: [
+        "Occupations Code § 1101.555",
+        "Occupations Code § 1101.806(d)",
+        "Occupations Code § 1101.652(b)(29)",
+      ],
+      feedbackCorrect:
+        "$7,237.50 — 2.5 percent of $289,500. Check the whole against the listing: 5 percent of $289,500 is $14,475 to the firm, of which the buyer-side earmark is half. Now read the sanction exactly: \"A license holder who fails to advise a buyer as provided by Section 1101.555 may not receive payment of or recover any commission agreed to be paid on the sale.\" Not reduced, not offset, not subject to a hardship exception. Section 1101.555 is one sentence, triggered by the signature of the offer rather than by acceptance, owed to each buyer including an unrepresented one, and required to be in writing; § 1101.652(b)(29) states the same duty as a disciplinary ground phrased around closing. A one-sentence advisory in the file protects the entire fee.",
+      feedbackIncorrect:
+        "Two steps. First take the earmarked buyer-side percentage on the SALES PRICE, not on the list price and not on the firm's total compensation. Then read § 1101.806(d) for what it does to that number: the licence holder \"may not receive payment of or recover any commission agreed to be paid on the sale,\" which is forfeiture of the whole, not a penalty measured against it. Review module-12.md, Unit: The Broker Working for/with the Buyer.",
+      remediation: "module-12.md#unit-the-broker-working-forwith-the-buyer",
+    },
+    {
+      id: "SC5-T3",
+      type: "selection",
+      prompt:
+        "Both sides of this transaction were the firm's. Test the intermediary paper in the file against Occupations Code §§ 1101.559 and 1101.560. Which statement is correct?",
+      choices: [
+        "The appointments are bad twice over. Section 1101.560(b) permits an appointment \"only if\" the written consent of the parties authorises the broker to make it and the broker provides written notice of the appointment to all parties — and the sellers' listing agreement says nothing about appointments, so the first condition fails as to them. The notice is also signed by Kip: it is the broker who appoints and the broker who provides the notice, and a sales agent can do neither. The lawful configurations on this paper were intermediary without appointments, or curing the sellers' consent before any appointment was made.",
+        "The appointments are good. The buyers' agreement authorises appointments, the sellers' agreement authorises intermediary status, and between the two documents both conditions of § 1101.560(b) are met for the transaction as a whole.",
+        "The appointments are unnecessary. Where each party already has a different licence holder working with them, appointment adds nothing, and § 1101.560 applies only where the broker proposes to advise a party personally.",
+        "The appointments are bad, and the consequence is that the brokerage could not lawfully have proceeded at all: without valid appointments a broker may not represent both parties, and the firm should have withdrawn from one side.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student tests each party's own consent against the appointment conditions instead of aggregating two documents, and attributes the appointment and its notice to the broker rather than to the agent who signed the page.",
+      unitCodes: ["T06U3"],
+      teaches: ["t06u3-s1", "t06u3-s2"],
+      sources: [
+        "Occupations Code § 1101.559(a)",
+        "Occupations Code § 1101.559(b)",
+        "Occupations Code § 1101.560(a)",
+        "Occupations Code § 1101.560(b)(1)",
+        "Occupations Code § 1101.560(b)(2)",
+        "Occupations Code § 1101.561(b)",
+      ],
+      feedbackCorrect:
+        "The consent must do two distinct jobs — authorise intermediary status, and authorise appointments — and the second is not implied by the first. A consent that does the first alone permits an intermediary without appointments and nothing more, which is a perfectly lawful configuration in which nobody in the firm advises anybody about this transaction. On the signature, § 1101.560(b)(2) puts the notice on the broker, requires it in writing, and sends it to all parties involved in the transaction rather than only to the party whose appointee is named. Note why the last option is wrong: § 1101.561(b) makes the intermediary posture compulsory when the broker agrees to represent both, so withdrawal was never the required answer.",
+      feedbackIncorrect:
+        "Do not aggregate the two agreements. Each party's own written consent has to authorise what is being done to that party, and the sellers' consent authorises intermediary status only, so no appointment could be made on their side. Then ask who performed each act: § 1101.560(a) says the BROKER appoints, and (b)(2) says the BROKER provides written notice to all parties. A notice signed by an appointee is not the broker's notice. Review module-06.md, Unit: Representation of More Than One Party in a Transaction.",
+      remediation: "module-06.md#unit-representation-of-more-than-one-party-in-a-transaction",
+    },
+    {
+      id: "SC5-T4",
+      type: "selection",
+      prompt:
+        "Aurelio Bengochea, unrepresented, emailed Kip on 10 February and again on 14 February and was answered on 19 February. Delia says the duty did not run because Aurelio was never going to buy and was nobody's client. Which statement is correct?",
+      choices: [
+        "The duty ran and was missed twice. 22 TAC § 535.157 requires a broker or sales agent to respond within two calendar days to the licence holder's principal, to a broker or sales agent representing another party, or to an unrepresented party to a real estate transaction — and an unrepresented prospective buyer who has toured the property is within the third category, since Occupations Code § 1101.551(2) defines a party to include a prospective buyer. Two calendar days from 10 February and two from 14 February both expired before 19 February, and the rule does not require the response to resolve anything.",
+        "The duty did not run. Section 535.157's third category reaches an unrepresented party to a transaction, and a person who has made no offer is not a party to any transaction, so Kip owed him nothing until he wrote.",
+        "The duty ran once. The two calendar days run from the first message only, so the 14 February email did not restart the clock and a single late reply is a single failure.",
+        "The duty ran but was met, because Kip was inside the two calendar days on both emails once weekends and the intervening holiday are excluded from the count.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student applies the response rule to someone with no agreement, no offer and no client relationship, and resists both of the escapes a busy agent reaches for — that a prospect is not a party, and that the days are business days.",
+      unitCodes: ["T03U3", "T09U5"],
+      teaches: ["t03u3-s1", "t09u5-s1"],
+      sources: [
+        "22 TAC § 535.157",
+        "Occupations Code § 1101.551(2)",
+        "22 TAC § 535.2(j)",
+        "22 TAC § 535.2(k)",
+      ],
+      feedbackCorrect:
+        "Two features of the definition decide it. Section 1101.551(2) includes PROSPECTIVE buyers, sellers, landlords and tenants — someone who has signed nothing and may never buy is still a party — and it excludes only a licence holder who represents a party. And the rule says calendar days, with nothing about weekends, holidays or office hours; the Commission wrote \"working day\" in the trust-money rule and did not write it here. Each message starts its own obligation. Keep the broker-side clocks alongside: § 535.2(j) requires a broker or delegated supervisor to respond to sponsored sales agents within two calendar days, and § 535.2(k) requires Commission correspondence to be delivered to them within three.",
+      feedbackIncorrect:
+        "Test the two escapes separately. First, is he a party? Section 1101.551(2) says a party includes a prospective buyer, so the absence of an offer or an agreement does not remove him from the rule. Second, are the days business days? The rule says calendar days and excludes nothing. Then count each message on its own: nothing in § 535.157 makes a second unanswered message part of the first. Review module-03.md, Unit: Define Third Party/Obligations to Third Party/Duty to Respond, and module-09.md, Unit: Broker Responsibility (Relationships between Brokers and Agents, §535.2).",
+      remediation: "module-03.md#unit-define-third-partyobligations-to-third-partyduty-to-respond",
+    },
+    {
+      id: "SC5-T5",
+      type: "selection",
+      prompt:
+        "The early text messages are gone with the handset, and the complaint names Kip alone. Which statement about the records and about who is answerable is correct?",
+      choices: [
+        "The missing messages are a records problem of the broker's. 22 TAC § 535.2(h) requires the broker to maintain substantive communications with parties to the transaction, among eight categories, in a format readily available to the Commission for at least four years from closing, termination of the contract, or end of the transaction, and the only excuse the rule recognises is destruction by an Act of God not intentionally caused by the broker — a traded-in handset is not one. Under 22 TAC § 535.141 a complaint naming a sales agent is also a complaint against the sponsoring broker for the limited purpose of determining the broker's involvement and whether the broker met the broker's professional responsibilities, and Occupations Code § 1101.803 makes the broker liable to the Commission, the public and the broker's clients for the agent's conduct.",
+        "The missing messages are Kip's problem alone, because he sent them from his own handset and § 535.2(h) reaches the broker's own files rather than an agent's device. The complaint likewise reaches only the person it names.",
+        "The messages need not have been kept at all. Section 535.2(h) lists formal documents — agreements, offers, disclosures and statements of account — and informal messaging is not among the eight categories.",
+        "The records duty ended at closing. The four years run to the closing date rather than from it, so a transaction that closed on 21 March is outside the retention period by the time any complaint is filed.",
+      ],
+      correctChoice: 0,
+      points: 4,
+      judgement:
+        "Whether the student locates the records duty on the broker rather than on the agent's device, recognises text messages as a named category, and knows that a complaint against an agent reaches the sponsoring broker by rule rather than by inference.",
+      unitCodes: ["T09U5", "T10U3"],
+      teaches: ["t09u5-s1", "t09u5-s2", "t10u3-s1", "t10u3-s2"],
+      sources: [
+        "22 TAC § 535.2(h)",
+        "22 TAC § 535.141",
+        "Occupations Code § 1101.803",
+        "Occupations Code § 1101.652(a)(4)",
+        "Occupations Code § 1101.652(a-1)(2)",
+      ],
+      feedbackCorrect:
+        "Three things travel together here. The retention duty is the broker's and it names substantive communications with parties, so where the messages physically live is a practical problem rather than a legal answer. The complaint reaches the broker by rule, which is why brokers write policies and why you follow them. And two disciplinary grounds sit alongside the missing file: § 1101.652(a-1)(2) reaches a failure or refusal to produce records for inspection, and § 1101.652(a)(4) reaches a failure to provide, within a reasonable time, information the Commission requests in connection with a complaint — a licence is more often lost for ignoring the letter than for the original conduct.",
+      feedbackIncorrect:
+        "Ask who the rule addresses. Section 535.2 is written to the broker throughout, and subsection (h) requires the broker to maintain the eight categories \"in a format that is readily available to the Commission\" — a category of record does not fall outside the rule because it lived on an agent's telephone. Substantive communications with parties are expressly listed and the medium is irrelevant. And the four years run FROM closing, termination or end of the transaction, not to them. Review module-09.md, Unit: Broker Responsibility (Relationships between Brokers and Agents, §535.2), and module-10.md, Unit: TRELA and Rules of the Commission (Ethics).",
+      remediation: "module-09.md#unit-broker-responsibility-relationships-between-brokers-and-agents-5352",
+    },
+    {
+      id: "SC5-T6",
+      type: "selection",
+      prompt:
+        "Delia points at the manual's Agency page — \"Red River Brokerage complies with all TREC disclosure requirements\" — and says the firm's policy was adequate and Kip simply departed from it. What is the correct assessment?",
+      choices: [
+        "The sentence is not a policy. 22 TAC § 535.2(i) requires a broker who sponsors sales agents to maintain, on a current basis, written policies and procedures on the subjects the rule lists, and a policy's work begins where the rule stops: who delivers the notice when two of the firm's agents are in contact with the same buyer, in which channel it goes when first contact arrives by text, where the sent copy is filed so the broker can retrieve it without the agent, and at what point in an appointment the written agreement is presented. On these facts every one of those questions was left to Kip, and the file shows what he decided.",
+        "The sentence is an adequate policy. The rule requires written policies and procedures without prescribing their content, so a statement committing the firm to compliance satisfies it, and the defect is entirely Kip's.",
+        "The sentence is inadequate, but the defect is immaterial, because a brokerage policy is a business document and no Commission rule requires one to exist.",
+        "The sentence is inadequate, and the cure is to adopt the Commission's model brokerage policy manual, which 22 TAC § 535.2 adopts by reference for firms that sponsor sales agents.",
+      ],
+      correctChoice: 0,
+      points: 3,
+      judgement:
+        "Whether the student can say what a written policy is for — answering the questions the rule leaves open — rather than treating a statement of intent to comply as compliance, and without inventing a Commission form that does not exist.",
+      unitCodes: ["T08U2"],
+      teaches: ["t08u2-s1", "t08u2-s2"],
+      sources: ["22 TAC § 535.2(i)", "22 TAC § 535.2", "22 TAC § 531.20", "Occupations Code § 1101.558(b-1)"],
+      feedbackCorrect:
+        "The law sets a floor: it says what must happen, not how a firm makes it happen the same way every time. That is the policy's job, and the absence of one is the commonest reason a firm's deliveries are inconsistent. Note what the last option invents — no Commission model policy manual is adopted by reference, and the structure of a manual is a business decision no source read for this course prescribes. What the rule prescribes is that written policies exist, be maintained on a current basis, and cover the listed subjects.",
+      feedbackIncorrect:
+        "A policy that says the firm complies with the rules has made no decision. Test it by asking what it would have told Kip to do at the moment the first text arrived about a specific house: which channel to move to, what to send, who sends it when a colleague is also in contact with the buyer, and where the copy goes. None of those has an answer in the sentence on the page. And do not reach for a Commission form to cure it; none exists for a policy manual. Review module-08.md, Unit: Understanding a Brokerage Company's Policy.",
+      remediation: "module-08.md#unit-understanding-a-brokerage-companys-policy",
+    },
+    {
+      id: "SC5-T7",
+      type: "short-answer",
+      prompt:
+        "Write the memorandum to Delia. Set out what the firm does now, in what order, and answer the buyers' email — or say why you are not answering it.",
+      rubric: [
+        "Does not answer the buyers' questions about getting out of the purchase or about suing anybody, and refers them to their own attorney, identifying 22 TAC § 537.11(b) as forbidding a licence holder to give legal advice.",
+        "States that the firm's own response to the Commission is a matter for the broker with the firm's legal counsel, and that Occupations Code § 1101.652(a)(4) makes a failure to provide requested information within a reasonable time an independent ground for discipline.",
+        "Identifies the missing § 1101.555 written advice and states what § 1101.806(d) does to the commission on the sale, without opining on whether the firm can nonetheless keep the money.",
+        "States that the file is added to and never altered — nothing removed, corrected in place or re-dated — and identifies § 1101.652(a-1)(2) and 22 TAC § 535.2(h) as the reasons.",
+        "Identifies at least two corrections that can be made now rather than argued about later, such as reconstructing what can be reconstructed of the missing communications from other sources, putting the appointment defect in writing to both parties, or fixing the policy manual and the delivery routine that produced the late notice.",
+        "Names 22 TAC § 535.2 and Occupations Code § 1101.803 as the reasons the broker is told immediately and in full, rather than after the position is tidied.",
+        "Notes that Occupations Code § 1101.702(b) puts efforts to correct the violation among the factors that set the amount of an administrative penalty, so prompt correction is relevant to the outcome and not merely decent.",
+      ],
+      points: 6,
+      judgement:
+        "Whether the student can produce a defensible first response to a file that has gone wrong: correct what can be corrected, preserve what must be preserved, tell the person who is answerable, and hand both legal questions — the buyers' remedies and the firm's exposure — to the people whose questions they are.",
+      unitCodes: ["T12U5", "T12U3"],
+      teaches: ["t12u5-s1", "t12u5-s2", "t12u3-s1", "t12u3-s2"],
+      sources: [
+        "22 TAC § 537.11(b)",
+        "22 TAC § 535.2",
+        "22 TAC § 535.2(h)",
+        "22 TAC § 535.156",
+        "Occupations Code § 1101.555",
+        "Occupations Code § 1101.806(d)",
+        "Occupations Code § 1101.652(a)(4)",
+        "Occupations Code § 1101.652(a-1)(2)",
+        "Occupations Code § 1101.702(b)",
+        "Occupations Code § 1101.803",
+      ],
+      referral: true,
+      referralNote:
+        "Whether the buyers may rescind and whom they may sue are legal questions belonging to their own attorney; how the firm answers the Commission is a question for the broker with the firm's counsel. A delegated supervisor who answers either has given legal advice and has spoken for the broker without authority to do so.",
+      feedbackCorrect:
+        "This is the part of risk management that is almost never taught and the part you will actually need. There is no held Texas source prescribing a self-correction procedure, and none is invented here; what the held sources supply is a set of obligations that together describe the only defensible response. Tell the broker immediately. Correct the record in writing and toward everyone who relied on it. Add to the file and never alter it. Answer the Commission. And do not offer a legal conclusion about your own firm's mistake to the people harmed by it — that is exactly the moment they should be talking to a lawyer, whom you may not discourage them from employing.",
+      feedbackIncorrect:
+        "Sort the memorandum into three piles before you write it. Things to do now: tell Delia in full, preserve and add to the file, reconstruct what can be reconstructed, fix the routine that produced the late notice. Things that are somebody else's: whether the buyers can rescind, whom they might sue, and how the firm answers the Commission. Things to state without deciding: that no § 1101.555 advisory is in the file and what § 1101.806(d) says about the commission, leaving whether the firm can keep the money to counsel. The commonest failure here is a memorandum that answers the buyers' email in a friendly and legally confident paragraph. Review module-12.md, Unit: Risk Management, and Unit: A Practical Guide to Everyday Practice.",
+      remediation: "module-12.md#unit-risk-management",
+    },
+  ],
+  passingScore: 0.7,
+  criticalCriteria: [
+    "Does not answer the buyers' questions about getting out of the purchase or about suing anybody, and refers them to their own attorney, identifying 22 TAC § 537.11(b) as forbidding a licence holder to give legal advice.",
+    "States that the file is added to and never altered — nothing removed, corrected in place or re-dated — and identifies § 1101.652(a-1)(2) and 22 TAC § 535.2(h) as the reasons.",
+    "Names 22 TAC § 535.2 and Occupations Code § 1101.803 as the reasons the broker is told immediately and in full, rather than after the position is tidied.",
+  ],
+  remediation: {
+    onFailure:
+      "A student who does not reach the points to pass, or who misses any critical element, is returned to the screens below with the instructor's written rationale for each task answered wrongly, and works the capstone again. Because the capstone is integrative, the remediation is routed by the task missed rather than as a single block: a sequence failure sends the student back to the buyer-side screens, an appointment failure to the intermediary screens, and a records or response failure to the supervision screens.",
+    revisit: ["t05u6-s1", "t12u2-s1", "t06u3-s1", "t03u3-s1", "t09u5-s1", "t10u3-s1", "t08u2-s1", "t12u5-s1"],
+    reattemptPermitted: true,
+  },
+  optionalReflection: {
+    prompt:
+      "Optional and never graded: nothing in this file was done by a dishonest person. Pick the single habit that would have prevented the most of it, and say when in your week you would have to perform it. Nothing here is scored and nothing is unlocked by it.",
+    required: false,
+    graded: false,
+    affectsScore: false,
+  },
+  instructorReview: {
+    required: true,
+    reason:
+      "Task SC5-T7 is graded against a rubric that includes a required refusal to answer the buyers' legal questions and a required instruction not to alter the file, and 22 TAC § 535.65(g)(2)(D) makes a qualified instructor responsible for providing the answers and the rationale for the grading of course work. Because a student may reach a passing point total while writing a reassuring answer to the buyers, the instructor confirms all three critical elements before the capstone is recorded as passed.",
+  },
+});
+
+/* ══════════════════════════════════════════════════════════════════════════════════════════════
+   Exports and the set-level invariants
+   ══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+export const SCENARIOS = Object.freeze([SC1, SC2, SC3, SC4, SC5]);
+
+export const SCENARIO_COUNT = SCENARIOS.length;
+
+export const TOPIC_SCENARIOS = Object.freeze(SCENARIOS.filter((item) => item.placement.timeAttribution === "TOPIC"));
+
+export const COURSE_LEVEL_SCENARIOS = Object.freeze(SCENARIOS.filter((item) => item.placement.timeAttribution === "COURSE_LEVEL"));
+
+export const TOTAL_TASKS = SCENARIOS.reduce((sum, item) => sum + item.tasks.length, 0);
+
+export const TOTAL_MINUTES = SCENARIOS.reduce((sum, item) => sum + item.minutes, 0);
+
+/**
+ * What the scenario set actually assesses. Returns the distinct topics and units the five scenarios
+ * reach, each scenario's placement and time attribution, the task mix, the referral moments, and the
+ * required screens the set depends on — the figures a coverage matrix or a submission exhibit needs
+ * without re-deriving them from the scenario bodies.
+ */
+export function scenarioCoverage() {
+  const topics = new Set();
+  const units = new Set();
+  const screens = new Set();
+  const taskTypes = { selection: 0, computation: 0, "short-answer": 0 };
+  let referralTasks = 0;
+
+  for (const item of SCENARIOS) {
+    for (const topicCode of item.assessesTopics) topics.add(topicCode);
+    for (const unitCode of item.assessesUnits) units.add(unitCode);
+    for (const task of item.tasks) {
+      taskTypes[task.type] += 1;
+      if (task.referral === true) referralTasks += 1;
+      for (const screenId of task.teaches) screens.add(screenId);
+    }
+  }
+
+  return Object.freeze({
+    scenarioCount: SCENARIO_COUNT,
+    minimumRequired: ASSESSMENT_REQUIREMENTS.minScenarioExercises,
+    creditHours: ASSESSMENT_REQUIREMENTS.creditHours,
+    topicScenarios: TOPIC_SCENARIOS.length,
+    courseLevelScenarios: COURSE_LEVEL_SCENARIOS.length,
+    totalTasks: TOTAL_TASKS,
+    totalMinutes: TOTAL_MINUTES,
+    taskTypes: Object.freeze({ ...taskTypes }),
+    referralTasks,
+    topics: Object.freeze(TOPIC_ORDER.filter((code) => topics.has(code))),
+    topicsNotAssessed: Object.freeze(TOPIC_ORDER.filter((code) => !topics.has(code))),
+    units: Object.freeze(ALL_UNITS.map((unit) => unit.code).filter((code) => units.has(code))),
+    requiredScreensReliedOn: Object.freeze([...screens].sort()),
+    placements: Object.freeze(
+      SCENARIOS.map((item) =>
+        Object.freeze({
+          id: item.id,
+          title: item.title,
+          afterTopic: item.placement.afterTopic,
+          timeAttribution: item.placement.timeAttribution,
+          attributedToTopic: item.placement.attributedToTopic,
+          minutes: item.minutes,
+          unlockRequires: item.placement.unlockRequires,
+          assessesTopics: item.assessesTopics,
+          assessesUnits: item.assessesUnits,
+          tasks: item.tasks.length,
+          taskTypes: Object.freeze(
+            item.tasks.reduce((counts, task) => ({ ...counts, [task.type]: (counts[task.type] ?? 0) + 1 }), {}),
+          ),
+          totalPoints: item.totalPoints,
+          pointsToPass: item.pointsToPass,
+          criticalCriteria: item.passingCriteria.criticalCriteria.length,
+          referralTasks: item.referralTasks,
+          instructorReviewRequired: item.instructorReview.required,
+        }),
+      ),
+    ),
+  });
+}
+
+/* ── 1. The floor from § 535.62(b)(7)(B), compared rather than asserted ─────────────────────────── */
+{
+  const key = "minScenarioExercises";
+  if (!(key in ASSESSMENT_REQUIREMENTS)) {
+    throw new Error(
+      `law-of-agency-scenarios: ASSESSMENT_REQUIREMENTS has no key ${JSON.stringify(key)} — the rule lock must state it; this file will not assume a value`,
+    );
+  }
+  if (SCENARIO_COUNT < ASSESSMENT_REQUIREMENTS[key]) {
+    throw new Error(
+      `law-of-agency-scenarios: ${SCENARIO_COUNT} scenarios against the § 535.62(b)(7)(B) floor of ${ASSESSMENT_REQUIREMENTS[key]} for a ${ASSESSMENT_REQUIREMENTS.creditHours}-hour course`,
+    );
+  }
+}
+
+/* ── 2. The minutes reconcile with the budget, topic by topic and at course level ───────────────
+   This is the invariant that keeps the capstone honest. If someone later re-attributes it to T12,
+   or adds a sixth scenario without budgeting it, one of these throws. */
+{
+  for (const budget of BUDGET) {
+    const placed = TOPIC_SCENARIOS.filter((item) => item.placement.attributedToTopic === budget.topicCode);
+    if (placed.length !== budget.scenarios) {
+      throw new Error(
+        `law-of-agency-scenarios: ${budget.topicCode} budgets ${budget.scenarios} scenario(s) but ${placed.length} are attributed to it`,
+      );
+    }
+    const minutes = placed.reduce((sum, item) => sum + item.minutes, 0);
+    if (minutes !== budget.scenarioMinutes) {
+      throw new Error(
+        `law-of-agency-scenarios: ${budget.topicCode} budgets ${budget.scenarioMinutes} scenario minutes but the authored scenarios spend ${minutes}`,
+      );
+    }
+  }
+  if (COURSE_LEVEL_SCENARIOS.length !== COURSE_LEVEL.capstoneScenarios) {
+    throw new Error(
+      `law-of-agency-scenarios: the time budget records ${COURSE_LEVEL.capstoneScenarios} course-level scenario(s) and ${COURSE_LEVEL_SCENARIOS.length} are authored`,
+    );
+  }
+  const capstoneMinutes = COURSE_LEVEL_SCENARIOS.reduce((sum, item) => sum + item.minutes, 0);
+  if (capstoneMinutes !== COURSE_LEVEL.minutes) {
+    throw new Error(
+      `law-of-agency-scenarios: the capstone spends ${capstoneMinutes} minutes against COURSE_LEVEL.minutes of ${COURSE_LEVEL.minutes}`,
+    );
+  }
+  if (TOTAL_MINUTES !== BUDGET.reduce((sum, b) => sum + b.scenarioMinutes, 0) + COURSE_LEVEL.minutes) {
+    throw new Error("law-of-agency-scenarios: the set's minutes do not reconcile with the topic budgets plus the course-level allowance");
+  }
+  for (const item of SCENARIOS) {
+    if (item.minutes !== RATES.activityMinutes.scenario) {
+      throw new Error(`law-of-agency-scenarios ${item.id}: a scenario is allowed ${RATES.activityMinutes.scenario} minutes by the provider time model`);
+    }
+  }
+}
+
+/* ── 3. Distribution. The set must sit at materially different points in the course ─────────────── */
+{
+  const placements = SCENARIOS.map((item) => item.placement.afterTopic);
+  if (new Set(placements).size !== placements.length) {
+    throw new Error("law-of-agency-scenarios: two scenarios are placed after the same topic; the set must be distributed across the course");
+  }
+  const atTheEnd = placements.filter((code) => code === FINAL_TOPIC).length;
+  if (atTheEnd > 1) throw new Error("law-of-agency-scenarios: more than one scenario is placed after the final topic");
+  const earliestIndex = Math.min(...placements.map((code) => TOPIC_ORDER.indexOf(code)));
+  if (earliestIndex > Math.floor(TOPIC_ORDER.length / 2)) {
+    throw new Error("law-of-agency-scenarios: the earliest scenario sits past the midpoint of the course; the set is back-loaded");
+  }
+  for (const item of SCENARIOS) {
+    const afterIndex = TOPIC_ORDER.indexOf(item.placement.afterTopic);
+    for (const required of item.placement.unlockRequires) {
+      if (TOPIC_ORDER.indexOf(required) > afterIndex) {
+        throw new Error(`law-of-agency-scenarios ${item.id}: unlockRequires names ${required}, which the student has not reached at the placement point`);
+      }
+    }
+  }
+}
+
+/* ── 4. The capstone is integrative, not the twelfth topic's exercise ───────────────────────────── */
+{
+  for (const item of COURSE_LEVEL_SCENARIOS) {
+    if (item.assessesTopics.length < 4) {
+      throw new Error(
+        `law-of-agency-scenarios ${item.id}: a course-level scenario draws on the whole course; it assesses ${item.assessesTopics.length} topic(s)`,
+      );
+    }
+    if (item.assessesTopics.length === 1 && item.assessesTopics[0] === item.placement.afterTopic) {
+      throw new Error(`law-of-agency-scenarios ${item.id}: a course-level scenario that assesses only the topic it sits behind is that topic's exercise`);
+    }
+    if (item.placement.unlockRequires.length !== TOPIC_ORDER.length) {
+      throw new Error(`law-of-agency-scenarios ${item.id}: the capstone unlocks only after every topic is complete`);
+    }
+  }
+}
+
+/* ── 5. Every task type is represented, so the set cannot degrade into one format ───────────────── */
+{
+  const coverage = scenarioCoverage();
+  for (const [type, count] of Object.entries(coverage.taskTypes)) {
+    if (count === 0) throw new Error(`law-of-agency-scenarios: no task of type ${type} in the set`);
+  }
+  if (coverage.referralTasks < SCENARIO_COUNT) {
+    throw new Error("law-of-agency-scenarios: the set must credit referral at least once in every scenario");
+  }
+}
+
+/* ── 6. Nothing in the set touches an optional-reference block ──────────────────────────────────── */
+{
+  const optionalScreens = new Set();
+  for (const [screenId, screen] of SCREEN_INDEX) {
+    if (!screen.required || screen.noAssessmentMayDependOnThis) optionalScreens.add(screenId);
+  }
+  for (const item of SCENARIOS) {
+    for (const task of item.tasks) {
+      for (const screenId of task.teaches) {
+        if (optionalScreens.has(screenId)) {
+          throw new Error(`law-of-agency-scenarios ${task.id}: depends on optional-reference screen ${screenId}`);
+        }
+      }
+    }
+    for (const screenId of item.remediation.revisit) {
+      if (optionalScreens.has(screenId)) {
+        throw new Error(`law-of-agency-scenarios ${item.id}: remediation sends a student to optional-reference screen ${screenId}`);
+      }
+    }
+  }
+  if (optionalScreens.size === 0) {
+    throw new Error("law-of-agency-scenarios: the block maps carry no optional-reference block, so this check is not doing anything — verify the maps before removing it");
+  }
+}
+
+/* ── 7. The length ban and the approval ban, applied once more to the whole frozen set ──────────── */
+assertNoBannedText("law-of-agency-scenarios (set)", SCENARIOS);
+
+/* ── 8. Task ids are unique across the set and points are positive integrals of the whole ───────── */
+{
+  const ids = SCENARIOS.flatMap((item) => item.tasks.map((task) => task.id));
+  if (new Set(ids).size !== ids.length) throw new Error("law-of-agency-scenarios: duplicate task id across the set");
+  for (const item of SCENARIOS) {
+    if (item.pointsToPass <= 0 || item.pointsToPass > item.totalPoints) {
+      throw new Error(`law-of-agency-scenarios ${item.id}: pointsToPass ${item.pointsToPass} is not inside 0..${item.totalPoints}`);
+    }
+    const highest = Math.max(...item.tasks.map((task) => task.points));
+    if (item.totalPoints - highest < item.pointsToPass) {
+      throw new Error(
+        `law-of-agency-scenarios ${item.id}: a student could fail the single highest-value task and still be unable to pass; that makes one task a hidden gate rather than a graded item`,
+      );
+    }
+  }
+}
+
+/* ── 9. The guards are proved, not merely declared ──────────────────────────────────────────────
+   A check whose only failure mode is silence is not a check. These four probes prove that the
+   length ban, the reveal gate, the approval scan and its negation-awareness actually fire, so that
+   invariant 7 passing means something rather than meaning the patterns never match anything. */
+{
+  const fires = (label, probe) => {
+    try {
+      assertNoBannedText("self-test", probe);
+    } catch {
+      return true;
+    }
+    throw new Error(`law-of-agency-scenarios: the ${label} guard did not fire on a probe designed to trip it`);
+  };
+  fires("length-phrase", { prompt: "Answer in at least 150 words." });
+  fires("length-phrase", { rubric: ["States the position in at least three sentences."] });
+  fires("reveal-gate", { prompt: "Type your answer to reveal the rationale." });
+  fires("approval", { context: "This is a TREC-approved course." });
+  /* And the negation-aware half: the required disclaimer must survive the same scan. */
+  assertNoBannedText("self-test", { context: "This is not a TREC-approved course and no Texas credit is offered for it." });
+  /* A length-shaped key is caught by name as well as by phrase. */
+  try {
+    assertNoLengthKeys("self-test", { minWords: 200 });
+    throw new Error("law-of-agency-scenarios: the length-key guard did not fire on a probe designed to trip it");
+  } catch (error) {
+    if (!/length requirement key/.test(error.message)) throw error;
+  }
+}
+
+export default Object.freeze({
+  REGULATORY_BASIS,
+  SCENARIOS,
+  SCENARIO_COUNT,
+  TOPIC_SCENARIOS,
+  COURSE_LEVEL_SCENARIOS,
+  TOTAL_TASKS,
+  TOTAL_MINUTES,
+  scenarioCoverage,
 });
