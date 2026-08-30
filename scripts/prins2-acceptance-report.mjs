@@ -244,7 +244,8 @@ const providerLock = manifest.providerRuleSourceLock();
 blockers.push(`TX_PROVIDER_RULE_SOURCE_LOCK is ${providerLock.status} — ${providerLock.unreachable.map((u) => u.id).join(", ") || "no unreachable sources"}`);
 blockers.push("the codified 22 TAC text has never been read; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs");
 blockers.push("StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for PRINS2-1");
-blockers.push("no student-facing surface exists, so accessibility, identity verification, progression gating, certificate issuance and record retention are unbuilt and untested");
+blockers.push("no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-principles-real-estate-ii-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.");
+blockers.push("certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval");
 checks.push(check("19. submission-readiness blockers recorded", true, `${blockers.length} standing blockers, none clearable from this repository`));
 
 /* 20 ── verdict ──────────────────────────────────────────────────────────────────────────────

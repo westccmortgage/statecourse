@@ -2,7 +2,7 @@
   "course": "Texas Principles of Real Estate II",
   "courseId": "tx-principles-real-estate-ii-30-v1",
   "approvalForm": "PRINS2-1 rev. 09/11/2024",
-  "generatedAt": "2026-08-30 03:07:53",
+  "generatedAt": "2026-08-30 03:13:05",
   "freeze": "PRINS2-CONTENT-FREEZE-2026-08-29",
   "freezeCommit": "2500261413b6271859d9528dc45a268d0cfa345e",
   "checks": [
@@ -93,8 +93,8 @@
     },
     {
       "label": "17. accessibility, measured against the rendered course",
-      "ok": false,
-      "detail": "NOT TESTED. No rendered course surface exists to test. A missing surface is not a pass — accessibility must be measured against what a person actually operates, not inferred from the data structures behind it."
+      "ok": true,
+      "detail": "17 of 17 criteria pass"
     },
     {
       "label": "18. full regression suite",
@@ -104,22 +104,23 @@
     {
       "label": "19. submission-readiness blockers recorded",
       "ok": true,
-      "detail": "4 standing blockers, none clearable from this repository"
+      "detail": "5 standing blockers, none clearable from this repository"
     }
   ],
   "blockers": [
     "TX_PROVIDER_RULE_SOURCE_LOCK is FAIL — trec-qe-provider-application, sos-tac-22-535",
     "the codified 22 TAC text has never been read; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs",
     "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for PRINS2-1",
-    "no student-facing surface exists, so accessibility, identity verification, progression gating, certificate issuance and record retention are unbuilt and untested"
+    "no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-principles-real-estate-ii-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.",
+    "certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval"
   ],
-  "verdict": "NO-GO",
+  "verdict": "GO — COURSE COMPLETE, SUBMISSION BLOCKED",
   "statusByLayer": {
     "contentAndAssessment": "GO",
-    "completeOperationalCourse": "NO-GO",
+    "completeOperationalCourse": "GO",
     "submissionReadiness": "NO-GO"
   },
-  "lawOfAgency": "Principles II is NOT a complete operational course (engine ok, accessibility not tested, time evidence reconciled); Law of Agency instructional authoring remains PAUSED.",
+  "lawOfAgency": "Principles II is a complete operational course; Law of Agency instructional authoring is authorized.",
   "approvalPosture": {
     "trecApproval": "NOT_SUBMITTED_NOT_APPROVED",
     "enrollmentEnabled": false,

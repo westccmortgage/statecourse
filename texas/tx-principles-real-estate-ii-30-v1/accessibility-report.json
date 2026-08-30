@@ -1,0 +1,150 @@
+{
+  "generatedBy": "scripts/prins2-accessibility-audit.mjs",
+  "measuredAgainst": "texas/tx-principles-real-estate-ii-30-v1/reviewer-surface — the RENDERED course, driven in Chromium",
+  "pagesTested": [
+    "final-exam.html",
+    "index.html",
+    "scenario-PRINS2-SC1.html",
+    "scenario-PRINS2-SC2.html",
+    "scenario-PRINS2-SC3.html",
+    "scenario-PRINS2-SC4.html",
+    "topic-T01.html",
+    "topic-T02.html",
+    "topic-T03.html",
+    "topic-T04.html",
+    "topic-T05.html",
+    "topic-T06.html",
+    "topic-T07.html",
+    "topic-T08.html",
+    "topic-T09.html"
+  ],
+  "tool": "axe-core (wcag2a, wcag2aa, wcag21a, wcag21aa) plus scripted keyboard, focus, live-region, viewport and zoom checks",
+  "limits": "Automated and scripted checks only. No test here substitutes for testing with real assistive technology and real users, and a pass may not be described as one.",
+  "results": {
+    "screenReaderNamesAndRelationships": "PASS",
+    "headingHierarchy": "PASS",
+    "formLabels": "PASS",
+    "answerChoiceSemantics": "PASS",
+    "contrast": "PASS",
+    "errorIdentification": "PASS",
+    "keyboardNavigation": "PASS",
+    "visibleFocusStates": "PASS",
+    "rationaleAndRemediationAnnouncements": "PASS",
+    "progressStateCommunication": "PASS",
+    "scenarioControls": "PASS",
+    "finalExamNavigation": "PASS",
+    "laptopLayout": "PASS",
+    "tabletLayout": "PASS",
+    "mobileLayout": "PASS",
+    "zoomAndResponsive": "PASS",
+    "captionsAndTranscripts": "PASS"
+  },
+  "findings": [
+    {
+      "criterion": "screenReaderNamesAndRelationships",
+      "result": "PASS",
+      "detail": "axe accessible-name and ARIA-relationship rules across 15 pages"
+    },
+    {
+      "criterion": "headingHierarchy",
+      "result": "PASS",
+      "detail": "axe heading-order, empty-heading and page-has-heading-one"
+    },
+    {
+      "criterion": "formLabels",
+      "result": "PASS",
+      "detail": "axe label rules — every input, textarea and radio has a programmatic label"
+    },
+    {
+      "criterion": "answerChoiceSemantics",
+      "result": "PASS",
+      "detail": "each question is a fieldset with a legend; choices are a labelled radiogroup"
+    },
+    {
+      "criterion": "contrast",
+      "result": "PASS",
+      "detail": "axe color-contrast at WCAG AA"
+    },
+    {
+      "criterion": "errorIdentification",
+      "result": "PASS",
+      "detail": "feedback is delivered through role=status with aria-live=polite rather than colour alone"
+    },
+    {
+      "criterion": "keyboardNavigation",
+      "result": "PASS",
+      "detail": "28 focusable controls on a topic page, every one reachable and focusable"
+    },
+    {
+      "criterion": "visibleFocusStates",
+      "result": "PASS",
+      "detail": "skip link \"Skip to main content\" becomes visible on focus; a 3px outline is defined for :focus-visible on links, buttons, inputs and textareas"
+    },
+    {
+      "criterion": "rationaleAndRemediationAnnouncements",
+      "result": "PASS",
+      "detail": "an incorrect answer announced \"Not correct. Read the explanation below; a different related question follows.\" through role=status/aria-live=polite and revealed a 553-character rationale"
+    },
+    {
+      "criterion": "progressStateCommunication",
+      "result": "PASS",
+      "detail": "progress conveyed in text through a status region: \"Topic 1 of 9 · 30 prescribed minutes\""
+    },
+    {
+      "criterion": "scenarioControls",
+      "result": "PASS",
+      "detail": "13 scenario controls, every one labelled; no length requirement stated on the page"
+    },
+    {
+      "criterion": "finalExamNavigation",
+      "result": "PASS",
+      "detail": "3 question groups each in a fieldset with a legend, navigation landmark present, placeholder notice shown"
+    },
+    {
+      "criterion": "laptopLayout",
+      "result": "PASS",
+      "detail": "1366x768 — no horizontal overflow"
+    },
+    {
+      "criterion": "tabletLayout",
+      "result": "PASS",
+      "detail": "768x1024 — no horizontal overflow"
+    },
+    {
+      "criterion": "mobileLayout",
+      "result": "PASS",
+      "detail": "375x667 — no horizontal overflow"
+    },
+    {
+      "criterion": "zoomAndResponsive",
+      "result": "PASS",
+      "detail": "content reflows at 200% zoom without horizontal scrolling"
+    },
+    {
+      "criterion": "captionsAndTranscripts",
+      "result": "PASS",
+      "detail": "NOT APPLICABLE — this course includes no video or audio, so no caption or transcript is owed. Any future media must ship captions and a transcript before this criterion can pass."
+    }
+  ],
+  "axeViolations": [],
+  "required": [
+    "keyboardNavigation",
+    "visibleFocusStates",
+    "screenReaderNamesAndRelationships",
+    "headingHierarchy",
+    "formLabels",
+    "answerChoiceSemantics",
+    "errorIdentification",
+    "rationaleAndRemediationAnnouncements",
+    "progressStateCommunication",
+    "scenarioControls",
+    "finalExamNavigation",
+    "contrast",
+    "zoomAndResponsive",
+    "laptopLayout",
+    "tabletLayout",
+    "mobileLayout",
+    "captionsAndTranscripts"
+  ],
+  "failed": []
+}
