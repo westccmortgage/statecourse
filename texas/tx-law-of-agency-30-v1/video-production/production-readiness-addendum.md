@@ -1,5 +1,32 @@
 # Production-readiness addendum — the three Law of Agency videos
 
+> ## SUPERSEDED — REVIEW HISTORY ONLY. NOT AN OPERATIONAL DEPENDENCY.
+>
+> **Every correction recorded below has been consolidated into the canonical files**, which are
+> `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v2** and the three production files in
+> this directory. A renderer works from those; **nothing a render depends on exists only here**, and
+> `scripts/validate-loa-video-packages.mjs` **check 7** diffs this file's corrections against the
+> canonical files and fails if any of them is missing there.
+>
+> This file is kept because it is the review record — it is how the defects were found, what was
+> considered, and what was rejected. It is hashed by
+> `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` in that character, as history rather than as instruction.
+>
+> **Two things below are now out of date and are corrected in the canonical files, not here:**
+>
+> 1. The reasoning in *"Why this is a separate file"* described the deadlock that made this file
+>    necessary — the curriculum freeze hashed the video plan directly, so correcting a video broke a
+>    curriculum freeze. **That deadlock has been removed.** The curriculum freeze now hashes
+>    `video-plan-freeze.json`, a pointer the video freeze owns, and the plan itself is hashed by the
+>    video freeze. See plan §12.
+> 2. The freeze ids named below (`LOA-CONTENT-FREEZE-2026-08-30-v2`) were current when this file was
+>    written. The current ids are **`LOA-CONTENT-FREEZE-2026-08-30-v4`** and
+>    **`LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2`**.
+>
+> The rest of this file is left exactly as it was written, including its account of plan v1's
+> defects. Plan v1 — sha256 `7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403` — is
+> **SUPERSEDED**.
+
 **Date:** 2026-08-30 · **Supplements:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md`
 **Status of all three videos: NOT RENDERED, NOT DISPLAYED, NOT ACTIVE.**
 

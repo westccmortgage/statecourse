@@ -286,6 +286,18 @@ H's head moved 588 → 592** (588 fell inside `limited to no more than 14 days.`
 corrected values are the ones in that table and the ones anyone rebuilding the crops must use. Every
 remaining boundary was re-checked for straddling and is clean.
 
+**A third crop defect was found by the validator, after the corrections above, and is corrected in
+the same table: the x window `x1 = 592` → `x1 = 600`.** Every earlier draft gave one x window for
+every band, `x0 = 20, x1 = 592`, described as "the full text column". It is not. The page's footer
+line — `Regulated by the Texas Real Estate Commission Information available at www.trec.texas.gov
+IABS 1-2` — runs to **x 599.2**, so a crop stopping at 592 clipped it, and what it clipped included
+**the form number itself**. Band H is the frame on which Video 1 reads the foot of the page, so the
+loss would have been on screen. The band window now runs to 600; `iabs-full.png` takes the whole
+612-point media box, which is what "whole page" always meant. The composed scale factor moves with it
+(0.7255 → 0.7155) and the band pixel heights in §5.1 are recomputed. **This one was not in the
+addendum** — it was found by `scripts/validate-loa-video-packages.mjs` check 4b, which now tests every
+printed line inside a band against that band's own x window on every run.
+
 **Highlights are post-production**, burned in at pixel coordinates measured on the delivered render's
 own frames, using the series tool `california/video-production/post-highlights.py`: brick-red outline
 boxes and navy vector margin labels. Each production file carries its highlight targets in PDF-point
@@ -462,12 +474,12 @@ or a moment — it adds no proposition the reading lacks.
 
 LOA-1 prescribes 1,500 minutes for this course and `config/texas/law-of-agency-time-budget.mjs`
 apportions every one of them across activity minutes and reading minutes, topic by topic. **The
-≈ 9 minutes of optional video in this plan sit outside that budget entirely.** They are not counted
-toward the 1,500, they do not appear in the time budget, and no figure in the time budget was reduced
-to make room for them. T02U5 keeps its 20 prescribed minutes, T05U3 its 30, and T06U3 its 30, all
-spent on reading and activity minutes exactly as budgeted before this plan existed. A student who
-watches all three videos spends about nine minutes more than the course requires; a student who
-watches none has completed the same 1,500 minutes.
+≈ 9 minutes 53 seconds of optional video in this plan sit outside that budget entirely.** They are not
+counted toward the 1,500, they do not appear in the time budget, and no figure in the time budget was
+reduced to make room for them. T02U5 keeps its 20 prescribed minutes, T05U3 its 30, and T06U3 its 30,
+all spent on reading and activity minutes exactly as budgeted before this plan existed. A student who
+watches all three videos spends about ten minutes more than the course requires; a student who watches
+none has completed the same 1,500 minutes.
 
 ---
 
@@ -507,8 +519,23 @@ The three videos share one asset build. Do it once.
    per-video highlights JSON, and run `california/video-production/post-highlights.py`.
 6. **Re-encode** to the series bitrate profile; **build the VTT** from the final render length;
    **extract the poster** from the frame each production file names.
-7. **Only then** add each production file's `videos: [...]` entry to the LOA block map — which itself
-   must exist by that point.
+7. **Only then** attach each production file's media entry to the LOA block map — through the
+   generator's `screenMedia` hook, which must exist by that point (§10.3). **Do not hand-edit a
+   generated block map**; its own header forbids it, and a hand edit is erased by the next
+   regeneration.
+
+Before step 1 and again after step 6, run:
+
+```
+node scripts/validate-loa-video-packages.mjs      # eight checks over the canonical package
+node scripts/freeze-loa-video-plan.mjs            # verify LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2
+```
+
+The validator refuses to pass if narration, transcript, captions and prompt have drifted apart, if any
+duration stops deriving from the caption timeline, if any crop or highlight rectangle cuts printed
+form language, if any of the 50 form strings stops verifying against the held PDF, or if any
+correction exists only in the review addendum. The freeze script refuses to write over a failing
+validator.
 
 ---
 
@@ -533,14 +560,154 @@ These are recorded, not resolved. Two of them touch files this plan is not permi
    apparent inconsistency. It is not an inconsistency of law — nothing the videos say contradicts the
    module — but the module's sentence should be revisited when the quotation review releases it.
 
-3. **The Law of Agency block map does not exist.** There is no `config/texas/law-of-agency-module-*-blocks.mjs`.
-   Placements in this plan are therefore expressed as module + unit + the curriculum content range the
-   screen will carry, with screen ids reserved against the Principles I convention. They are exact and
-   unambiguous, but they cannot be verified against a live screen until the block map is authored.
+3. **The Texas block-map generator has no `screenMedia` hook, and that is now the blocking item.**
+   *(This item replaces v1's item 3, "the Law of Agency block map does not exist" — that one is
+   **RESOLVED**: all twelve maps exist and every placement in §5 is confirmed against them.)*
+   California attaches its videos through `scripts/lib/generate-ca-block-maps.mjs`'s
+   `spec.screenMedia` mechanism, which merges a hand-authored media spec onto a generated screen by id
+   and refuses to generate if the id is unknown. `scripts/lib/generate-tx-block-maps.mjs` has no
+   equivalent, so there is today **no supported route** to attach a video to a Texas screen except
+   hand-editing a generated file whose header forbids it. **Do not hand-edit a generated course
+   file.** That hook is a prerequisite of activation. It is named here and specified — with the test
+   list it must ship with — in the header of `scripts/lib/generate-tx-block-maps.mjs`, where it will
+   be built. It is not built here.
 
-4. **Render-time coordinates cannot be produced without a render.** Highlight boxes must be measured
+4. **The Law of Agency retrieval bank does not exist.** Every block map `-s3` screen names a
+   `questionId` for a bank that has not been authored. Each production file's §3 records an authoring
+   condition on its unit's retrieval item, naming the propositions the item must avoid because the
+   video states them and naming better targets from the module's prose. Those conditions are the
+   mechanism that keeps assessment separation real rather than nominal, and only whoever authors that
+   bank can honour them.
+
+5. **Render-time coordinates cannot be produced without a render.** Highlight boxes must be measured
    on the delivered frames. This plan supplies every target in the held document's own coordinate
    space, measured with `pdfplumber`, which is as far as it is possible to go before the MP4 exists.
+   Nothing has been rendered, so no frame has been pixel-diffed against the held page either. That
+   check is a release gate, not a formality.
 
-5. **Caption timings and poster frames likewise depend on a render that does not exist.** Both are
+6. **Caption timings and poster frames likewise depend on a render that does not exist.** Both are
    specified and both are labelled provisional or not-yet-built. Neither was fabricated.
+
+---
+
+## 11. Plan v2 revision log — every correction consolidated, and where it landed
+
+Plan v1 (sha256 `7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403`) is **SUPERSEDED**.
+Its defects were found during a source-fidelity pass and were first recorded in
+`video-production/production-readiness-addendum.md`. **That addendum is review history and is no
+longer an operational dependency: everything a renderer needs is in this plan and the three production
+files.** `scripts/validate-loa-video-packages.mjs` check 7 diffs the addendum's corrections against the
+canonical files and fails if any of them exists only there.
+
+### Narration repairs — nine places where narration read the form but had drifted from its printed wording
+
+Each was repaired in **all four representations together** — the scene narration (§6 of the production
+file), the HeyGen production prompt (§7), the caption cue text (§8 and the on-disk `.vtt`) and the
+clean transcript (§9) — and the durations recomputed from the repaired caption timeline.
+
+| # | Video · Scene | The qualifier that was missing | Now reads |
+|---|---|---|---|
+| 1 | 1 · Scene 1 | the form's recipients and its own verb | "Texas law requires **all** real estate license holders to give **the following information** about brokerage services **to prospective buyers, tenants, sellers and landlords**." |
+| 2 | 1 · Scene 4 | the three client bullets, compressed to noun phrases | read as printed, including "**including the broker's own interests**" and "present any offer to or counter-offer from the client" |
+| 3 | 1 · Scene 6 | `property` and `in` | "the broker becomes the **property** owner's agent … usually **in** a written listing to sell or property management agreement" |
+| 4 | 1 · Scene 7 | the dropped subject, and a demonstrative the form does not print | "**the broker becomes the buyer or tenant's agent** by agreeing to represent the buyer, usually through a written representation agreement" · "**fees** are not set by law and are fully negotiable" |
+| 5 | 2 · Scene 3 | the form's own relative clause and both triggers | "A license holder **who performs** brokerage activity … **before showing any residential property to the buyer or if no residential property will be shown, before presenting an offer on behalf of the buyer**." |
+| 6 | 2 · Scene 4 | the four conditions' objects and one statutory qualifier | condition 1 now carries "**either orally or in writing**"; conditions 2, 3 and 4 now name "the buyer or tenant" as the form does |
+| 7 | 2 · Scene 5 | the code the section belongs to | "…required by section 1101.563 **of the Texas Occupations Code**." |
+| 8 | 3 · Scene 4 | the bullet's closing object | "…and carry out the instructions of each party **to the transaction**." |
+| 9 | 3 · Scene 6 | **the statutory exception**, plus two qualifiers | "and any confidential information **or any other information** that a party **specifically** instructs the broker in writing not to disclose, **unless required to do so by law**." |
+
+**Repair 9 is the most consequential of the set.** The earlier line dropped *unless required to do so
+by law* from a confidentiality rule **while the highlight box around that sub-bullet was showing the
+student that very exception on the page** — narration and image contradicting each other on a point of
+law. The narration now reads the provision whole.
+
+A **tenth** repair, against the held statute rather than the form, is recorded in
+`intermediary-brokerage.md` §14 and consolidated on the same terms: Video 3 Scene 2 now reads
+§ 1101.561(b) as enacted — "a broker must agree to act as an intermediary **under this subchapter** if
+the broker agrees to **represent in a transaction** a buyer or tenant and a seller or landlord". The
+count of *nine* is the count of places narration was reading **the form**; this one was reading the
+statute. Both counts are stated rather than merged, because a reviewer checking either number should
+find it.
+
+### Coordinate corrections — six
+
+Two band-crop boundaries and four highlight rectangles. All six are itemised with their before and
+after in §4 above, and are carried in the production files' §5.1 (crops) and §6 (highlights).
+
+| # | Kind | Correction |
+|---|---|---|
+| 1 | Crop | band G foot 594 → **592** — 594 fell inside the printed `LICENSE HOLDER CONTACT INFORMATION:` line |
+| 2 | Crop | band H head 588 → **592** — 588 fell inside `limited to no more than 14 days.` |
+| 3 | Highlight | Video 1 Scene 4 — `x ≈ 300–481.8` began inside the word `person`; now `x 237.7–481.8` |
+| 4 | Highlight | Video 1 Scene 9 — one box over two whole lines swept in the block label and `Please acknowledge receipt…`; now two word-exact rectangles |
+| 5 | Highlight | Video 2 Scene 3 — one box cut off the sentence's opening words and swept in `Even if a written agreement is not required…`; now three word-exact rectangles, the last around `Code.` |
+| 6 | Highlight | Video 2 Scene 4 — condition 3's box ran to y 547.1 and swallowed the standalone printed `and`; now stops at y 536.6, and that `and` gets its own box in the closing "all four" moment |
+
+A seventh coordinate correction — the crop x window `x1 = 592` → **`x1 = 600`**, which was clipping
+the page footer and the form number with it — was found **after** the addendum was written, by
+`scripts/validate-loa-video-packages.mjs` check 4b. It is recorded in §4 above and in
+`iabs-1-2-document-overview.md` §5.1, with the recomputed composed scale factor and band heights. It
+is listed here because the *six* below is the addendum's count and this correction post-dates it.
+
+An eighth coordinate repair belongs to the addendum's own pass and is recorded in `intermediary-brokerage.md`
+§14: Video 3 Scene 3's inner cue on `in conspicuous bold or underlined print` was estimated at
+`x ≈ 26.4–260`, which marked only the phrase's second half and swept in five following words; the
+phrase straddles a line break, so it is now one cue in two word-exact rectangles. It is listed in §4
+above with the other five; the *six* count is the addendum's own, kept so the two documents can be
+compared line for line.
+
+### The duration inconsistency
+
+Video 1's v1 scene table totalled **3:01** while Video 1's own caption block ran to **3:17** — two
+figures for one video, asserted side by side. Fixed at the root: every scene duration and every video
+duration in this plan and in the three production files is now **derived** from that video's caption
+cue timeline, matched scene-to-cue by narration text, and re-derived on every validator run. See §3.
+
+### Everything else consolidated into the canonical files
+
+| Correction | Landed in |
+|---|---|
+| Durations ≈ 3:01 / 2:53 / 3:10 → ≈ **3:30 / 3:03 / 3:20**, total ≈ **9:53** | this plan §2, §3, §7; each production file's §6 scene table and §11 registry entry |
+| Placements confirmed against the live block maps | this plan §5; each production file's §3 |
+| Retrieval-screen separation confirmed from the generated screen shape | this plan §5; validator check 8 |
+| Caption `.vtt` files exist on disk, cue text final, timings provisional | this plan §6; each production file's §8 |
+| Crop band boundaries G and H | this plan §4; `iabs-1-2-document-overview.md` §5.1 |
+| Crop x window 592 → 600 (found by the validator, later than the addendum) | this plan §4; `iabs-1-2-document-overview.md` §5.1, and the restated rows in Videos 2 and 3 |
+| Highlight rectangles, five corrections | this plan §4; each production file's §6 |
+| Poster specification — a frame of a render that does not exist, never composed by hand | each production file's §10; this plan §6 |
+| 50 form strings verified verbatim against the held PDF, 0 mismatches | validator check 6, which re-runs the verification rather than restating its result |
+| Four-layer status, no layer borrowing another's | this plan's header and §6 |
+| `screenMedia` hook named as the blocking item, with its test list | this plan §10.3; `scripts/lib/generate-tx-block-maps.mjs` header |
+
+---
+
+## 12. Why this plan has its own freeze
+
+A video plan is not curriculum, and correcting a video should never require breaking a curriculum
+freeze. Until plan v2 it did: `scripts/freeze-loa-curriculum.mjs` hashed
+`video-instruction-plan.md` directly, so any edit to the plan — including one that only made it more
+accurate — reported drift against `LOA-CONTENT-FREEZE-2026-08-30-v3`. That deadlock is why the
+corrections above spent a pass in an unhashed addendum instead of in this file.
+
+The structure now is one level of indirection:
+
+```
+scripts/freeze-loa-video-plan.mjs
+  └─ writes texas/tx-law-of-agency-30-v1/video-plan-freeze.json
+       id LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2
+       hashes: this plan · the three production files · the three caption .vtt files ·
+               the held IABS 1-2 PDF · the source inventory · the three block maps ·
+               the validator · the review addendum
+
+scripts/freeze-loa-curriculum.mjs
+  └─ writes texas/tx-law-of-agency-30-v1/content-freeze.json
+       id LOA-CONTENT-FREEZE-2026-08-30-v4
+       hashes: the twelve modules · the source register · … · and
+               video-plan-freeze.json  ← the pointer, not the plan
+```
+
+The curriculum freeze still pins the video state exactly — a change to any video artifact changes the
+video freeze, which changes the hash the curriculum freeze holds. What it no longer does is force a
+curriculum-freeze break for a video correction: the video freeze absorbs that, and the curriculum
+freeze follows the pointer. Each artifact owns its own domain.

@@ -2,7 +2,16 @@
 
 **Series:** StateCourse *Document Overview*. Course: `tx-law-of-agency-30-v1` (Texas Law of Agency, 30 hours).
 **Asset stem:** `tx-iabs-1-2-document-overview`
-**Status:** SCRIPT COMPLETE / PROMPT COMPLETE / **NOT RENDERED — NOT DISPLAYED.** See §12.
+**Status — four layers, and no layer borrows another's status:**
+editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` ·
+rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **PENDING** ·
+course placement activation **NOT ACTIVE**. See §12. This package is not "production-ready" and that
+phrase is not used of it.
+**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v2**, which supersedes plan v1
+(sha256 `7ca723…`). **Freeze:** `texas/tx-law-of-agency-30-v1/video-plan-freeze.json`, written by
+`scripts/freeze-loa-video-plan.mjs`; validated by `scripts/validate-loa-video-packages.mjs`.
+`video-production/production-readiness-addendum.md` is **review history only** and is not an
+operational dependency — nothing a renderer needs exists only there.
 
 ---
 
@@ -139,21 +148,21 @@ upload, by rendering the held page at high resolution and cropping on section bo
 holds a still.
 
 Render the single page with pdfium at **scale 4** (288 dpi → 2448 × 3168 px). Crop the bands below,
-given in PDF points on the page's own coordinate system (origin top-left, page 612 × 792 pt); the
-y-values were measured with `pdfplumber.extract_text_lines()` against the held file, not estimated.
-Each crop takes the full text column, `x0 = 20`, `x1 = 592`.
+given in PDF points on the page's own coordinate system (origin top-left, page 612 × 792 pt); every
+boundary was measured with `pdfplumber` against the held file, not estimated. The x window is stated
+per asset because the page's footer runs wider than its body.
 
-| Asset | Band | y-top | y-bottom | Contains — nothing is cut mid-heading |
-|---|---|---|---|---|
-| `iabs-full.png` | FULL | 0 | 792 | Whole page |
-| `iabs-band-a.png` | A | 12 | 74 | Revision stamp, title, the two-line "Texas law requires…" statement |
-| `iabs-band-b.png` | B | 73 | 114 | TYPES OF REAL ESTATE LICENSE HOLDERS + both bullets |
-| `iabs-band-c.png` | C | 112 | 175 | A BROKER'S MINIMUM DUTIES REQUIRED BY LAW + all four bullets |
-| `iabs-band-d.png` | D | 172 | 255 | WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS, whole paragraph |
-| `iabs-band-e.png` | E | 252 | 370 | A LICENSE HOLDER CAN REPRESENT A PARTY… + AS AGENT FOR OWNER + AS AGENT FOR BUYER/TENANT |
-| `iabs-band-f.png` | F | 368 | 492 | AS AGENT FOR BOTH - INTERMEDIARY, heading through the last sub-bullet |
-| `iabs-band-g.png` | G | 490 | 592 | A LICENSE HOLDER CAN SHOW PROPERTY… + four bullets + the 14-day paragraph |
-| `iabs-band-h.png` | H | 592 | 791 | LICENSE HOLDER CONTACT INFORMATION, the four contact rows, initials/date line, footer |
+| Asset | Band | x-left | x-right | y-top | y-bottom | Contains — nothing is cut mid-heading |
+|---|---|---|---|---|---|---|
+| `iabs-full.png` | FULL | 0 | 612 | 0 | 792 | Whole page, full media box |
+| `iabs-band-a.png` | A | 20 | 600 | 12 | 74 | Revision stamp, title, the two-line "Texas law requires…" statement |
+| `iabs-band-b.png` | B | 20 | 600 | 73 | 114 | TYPES OF REAL ESTATE LICENSE HOLDERS + both bullets |
+| `iabs-band-c.png` | C | 20 | 600 | 112 | 175 | A BROKER'S MINIMUM DUTIES REQUIRED BY LAW + all four bullets |
+| `iabs-band-d.png` | D | 20 | 600 | 172 | 255 | WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS, whole paragraph |
+| `iabs-band-e.png` | E | 20 | 600 | 252 | 370 | A LICENSE HOLDER CAN REPRESENT A PARTY… + AS AGENT FOR OWNER + AS AGENT FOR BUYER/TENANT |
+| `iabs-band-f.png` | F | 20 | 600 | 368 | 492 | AS AGENT FOR BOTH - INTERMEDIARY, heading through the last sub-bullet |
+| `iabs-band-g.png` | G | 20 | 600 | 490 | 592 | A LICENSE HOLDER CAN SHOW PROPERTY… + four bullets + the 14-day paragraph |
+| `iabs-band-h.png` | H | 20 | 600 | 592 | 791 | LICENSE HOLDER CONTACT INFORMATION, the four contact rows, initials/date line, footer |
 
 **Every cut lands in interline whitespace — verified, not assumed.** Each y boundary above was
 checked against `pdfplumber.extract_text_lines()` on the held page: no printed line straddles any
@@ -164,12 +173,24 @@ provided…`, which spans y 593.2–603.1) and band H's head moved 588 → **592
 `limited to no more than 14 days.`, which spans y 579.0–589.0). Anyone rebuilding these crops must
 re-run that straddle check rather than trusting the numbers.
 
-**Composition to 1920 × 1080.** Scale each band to 1660 px wide (factor 0.7255 from the 2288 px crop)
-and centre it on a warm-ivory 1920 × 1080 ground. Resulting band heights: A 180, B 119, C 183,
-D 241, E 342, F 360, G 296, H 578 px — every band therefore sits **fully inside the frame** with
-ivory margin above, below and on both sides. That margin is where highlight labels go; no label ever
-crosses document text. Effective resolution on the delivered frame is ~209 dpi, so the form's
-10-point body text renders at roughly 29 px line height and is comfortably legible at 1080p.
+**The x window was wrong too, and is corrected here: `x1 = 592` → `x1 = 600`.** Every earlier draft
+of this table gave one x window, `x0 = 20, x1 = 592`, described as "the full text column". It is not:
+the page's footer line — `Regulated by the Texas Real Estate Commission Information available at
+www.trec.texas.gov IABS 1-2` — runs to **x 599.2**, so a crop stopping at 592 clipped it, and what it
+clipped included **the form number itself**. Band H is the frame on which Video 1 reads the foot of
+the page, so the loss would have been on screen. The band window now runs to 600, and `iabs-full.png`
+takes the whole 612-point media box rather than a text column, which is what "whole page" always
+meant and what its composed width already implied.
+`scripts/validate-loa-video-packages.mjs` check 4 found this, and now re-checks every printed line
+against its band's window on every run.
+
+**Composition to 1920 × 1080.** Each band crop is 580 pt wide, which is 2320 px at scale 4. Scale it
+to 1660 px wide (factor **0.7155**) and centre it on a warm-ivory 1920 × 1080 ground. Resulting band
+heights: A 177, B 117, C 180, D 238, E 338, F 355, G 292, H 570 px — every band therefore sits
+**fully inside the frame** with ivory margin above, below and on both sides. That margin is where
+highlight labels go; no label ever crosses document text. Effective resolution on the delivered frame
+is ~206 dpi, so the form's 10-point body text renders at roughly 29 px line height and is comfortably
+legible at 1080p.
 
 `iabs-full.png` is composed to fit by height (1080 px tall page, 835 px wide, centred) for the
 establishing hold only; it is never the frame on which a provision is read aloud.
@@ -185,9 +206,17 @@ The nine composed 1920 × 1080 PNGs above. HeyGen draws nothing, generates nothi
 
 ## 6. Scene-by-scene structure
 
-Durations are computed from word count at 150 words per minute, the delivery rate of the existing
-series. **They are estimates.** Measured durations replace them after the render arrives, and the
-caption file is rebuilt from the measured render, not from this table.
+**Durations in this table are DERIVED, not asserted.** Each is computed from this video's caption
+file, `captions/tx-tx-iabs-1-2-document-overview.provisional.vtt`: a scene's duration is the end of its last cue minus
+the start of its first, and the scene is matched to its cues by comparing this file's scene narration
+against the cue text. Nothing here is a second, independent statement of a length that is also stated
+somewhere else — there is one timeline, and this is a view of it.
+`scripts/validate-loa-video-packages.mjs` check 3 re-derives every row and fails on disagreement.
+
+The cue timings themselves are **provisional**, computed at 150 words per minute with a 1.4-second
+readability floor, so every figure below is provisional too. **None is a measurement.** They are
+replaced after the render arrives, when the caption file is rebuilt from the delivered audio and this
+table is re-derived from it.
 
 | # | Visual | Duration |
 |---|---|---|
@@ -837,11 +866,12 @@ below is **not** pasted into the generated file. It is attached the way Californ
 Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
-generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet. Adding it
-is a prerequisite of activation. It is recorded as open item 3 in
-`video-production/production-readiness-addendum.md` §8 — not in the video instruction plan, which is
-a hashed artifact of the curriculum freeze and was left byte-identical by this pass. Nothing here
-edits any of those files.
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet, so there
+is today **no supported route** to attach a video to a Texas screen. **Do not hand-edit a generated
+course file** — its own header forbids it and the next regeneration erases the edit. Adding the hook
+is a prerequisite of activation. It is recorded as open item 3 of the video instruction plan §10, and
+the tests it must ship with are listed in the header of `scripts/lib/generate-tx-block-maps.mjs`,
+where it will be built. Nothing here edits any of those files.
 
 ```js
 // NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.

@@ -2,7 +2,16 @@
 
 **Series:** StateCourse *Document Overview*. Course: `tx-law-of-agency-30-v1` (Texas Law of Agency, 30 hours).
 **Asset stem:** `tx-intermediary-brokerage`
-**Status:** SCRIPT COMPLETE / PROMPT COMPLETE / **NOT RENDERED — NOT DISPLAYED.** See §12.
+**Status — four layers, and no layer borrows another's status:**
+editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` ·
+rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **PENDING** ·
+course placement activation **NOT ACTIVE**. See §12. This package is not "production-ready" and that
+phrase is not used of it.
+**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v2**, which supersedes plan v1
+(sha256 `7ca723…`). **Freeze:** `texas/tx-law-of-agency-30-v1/video-plan-freeze.json`, written by
+`scripts/freeze-loa-video-plan.mjs`; validated by `scripts/validate-loa-video-packages.mjs`.
+`video-production/production-readiness-addendum.md` is **review history only** and is not an
+operational dependency — nothing a renderer needs exists only there.
 
 ---
 
@@ -137,13 +146,15 @@ permitted source of document pixels. Never recreated, re-typeset, re-flowed, fil
 Built by the same deterministic script as Videos 1 and 2 (see `iabs-1-2-document-overview.md` §5.1).
 This video consumes one band:
 
-| Asset | Band | y-top | y-bottom | Contains |
-|---|---|---|---|---|
-| `iabs-band-f.png` | F | 368 | 492 | `AS AGENT FOR BOTH - INTERMEDIARY:` heading, the written-consent paragraph, and all three bullets with their three sub-bullets |
+| Asset | Band | x-left | x-right | y-top | y-bottom | Contains |
+|---|---|---|---|---|---|---|
+| `iabs-band-f.png` | F | 20 | 600 | 368 | 492 | `AS AGENT FOR BOTH - INTERMEDIARY:` heading, the written-consent paragraph, and all three bullets with their three sub-bullets |
 
-Band F is 124 pt tall, composing to 360 px on the 1920 × 1080 ivory ground — the entire intermediary
-block sits inside one frame with margin above, below and on both sides. No heading is cropped and no
-highlighted provision runs off frame at any point.
+Band F is 124 pt tall and 580 pt wide, composing to 355 px on the 1920 × 1080 ivory ground — the
+entire intermediary block sits inside one frame with margin above, below and on both sides. No
+heading is cropped and no highlighted provision runs off frame at any point. The band x window was
+corrected in `iabs-1-2-document-overview.md` §5.1 from `x1 = 592` to **`x1 = 600`**, because the
+page's footer runs to x 599.2 and the narrower window clipped it.
 
 **Deliberate division of one document across three videos.** Video 1 walks the page as a document and
 explicitly hands band F forward without teaching it. Video 2 teaches bands D and G. This video teaches
@@ -171,8 +182,17 @@ HeyGen draws nothing, generates nothing, and moves nothing.
 
 ## 6. Scene-by-scene structure
 
-Durations computed from word count at 150 wpm. **Estimates.** Measured durations replace them after
-the render arrives.
+**Durations in this table are DERIVED, not asserted.** Each is computed from this video's caption
+file, `captions/tx-tx-intermediary-brokerage.provisional.vtt`: a scene's duration is the end of its last cue minus
+the start of its first, and the scene is matched to its cues by comparing this file's scene narration
+against the cue text. Nothing here is a second, independent statement of a length that is also stated
+somewhere else — there is one timeline, and this is a view of it.
+`scripts/validate-loa-video-packages.mjs` check 3 re-derives every row and fails on disagreement.
+
+The cue timings themselves are **provisional**, computed at 150 words per minute with a 1.4-second
+readability floor, so every figure below is provisional too. **None is a measurement.** They are
+replaced after the render arrives, when the caption file is rebuilt from the delivered audio and this
+table is re-derived from it.
 
 | # | Visual | Duration |
 |---|---|---|
@@ -720,11 +740,12 @@ below is **not** pasted into the generated file. It is attached the way Californ
 Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
-generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet. Adding it
-is a prerequisite of activation. It is recorded as open item 3 in
-`video-production/production-readiness-addendum.md` §8 — not in the video instruction plan, which is
-a hashed artifact of the curriculum freeze and was left byte-identical by this pass. Nothing here
-edits any of those files.
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet, so there
+is today **no supported route** to attach a video to a Texas screen. **Do not hand-edit a generated
+course file** — its own header forbids it and the next regeneration erases the edit. Adding the hook
+is a prerequisite of activation. It is recorded as open item 3 of the video instruction plan §10, and
+the tests it must ship with are listed in the header of `scripts/lib/generate-tx-block-maps.mjs`,
+where it will be built. Nothing here edits any of those files.
 
 ```js
 // NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.

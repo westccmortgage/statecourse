@@ -2,7 +2,16 @@
 
 **Series:** StateCourse *Document Overview*. Course: `tx-law-of-agency-30-v1` (Texas Law of Agency, 30 hours).
 **Asset stem:** `tx-representation-or-showing-only-2026`
-**Status:** SCRIPT COMPLETE / PROMPT COMPLETE / **NOT RENDERED — NOT DISPLAYED.** See §12.
+**Status — four layers, and no layer borrows another's status:**
+editorial and legal package **READY** at `LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2` ·
+rendered MP4 / VTT / poster **PENDING** · `screenMedia` integration support **PENDING** ·
+course placement activation **NOT ACTIVE**. See §12. This package is not "production-ready" and that
+phrase is not used of it.
+**Plan:** `texas/tx-law-of-agency-30-v1/video-instruction-plan.md` **v2**, which supersedes plan v1
+(sha256 `7ca723…`). **Freeze:** `texas/tx-law-of-agency-30-v1/video-plan-freeze.json`, written by
+`scripts/freeze-loa-video-plan.mjs`; validated by `scripts/validate-loa-video-packages.mjs`.
+`video-production/production-readiness-addendum.md` is **review history only** and is not an
+operational dependency — nothing a renderer needs exists only there.
 
 ---
 
@@ -130,16 +139,18 @@ Built by the same deterministic script as Video 1 (see
 `iabs-1-2-document-overview.md` §5.1 — pdfium at scale 4, crop on section boundaries in PDF points,
 compose to 1920 × 1080 on warm ivory with margin for labels). This video consumes two of the nine:
 
-| Asset | Band | y-top | y-bottom | Contains |
-|---|---|---|---|---|
-| `iabs-band-d.png` | D | 172 | 255 | `WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS:` and its whole paragraph |
-| `iabs-band-g.png` | G | 490 | 592 | `A LICENSE HOLDER CAN SHOW PROPERTY TO A BUYER/TENANT WITHOUT REPRESENTING THE BUYER/TENANT IF:`, its four bullets, and the closing 14-day paragraph |
+| Asset | Band | x-left | x-right | y-top | y-bottom | Contains |
+|---|---|---|---|---|---|---|
+| `iabs-band-d.png` | D | 20 | 600 | 172 | 255 | `WRITTEN AGREEMENTS ARE REQUIRED IN CERTAIN SITUATIONS:` and its whole paragraph |
+| `iabs-band-g.png` | G | 20 | 600 | 490 | 592 | `A LICENSE HOLDER CAN SHOW PROPERTY TO A BUYER/TENANT WITHOUT REPRESENTING THE BUYER/TENANT IF:`, its four bullets, and the closing 14-day paragraph |
 
-Both bands fit fully inside the 1920 × 1080 frame (241 px and 296 px tall at the composed scale), so
+Both bands fit fully inside the 1920 × 1080 frame (238 px and 292 px tall at the composed scale), so
 no heading is ever cropped and no highlighted provision ever runs off frame. Band G's foot was
 corrected from 594 to **592** during the straddle check described in `iabs-1-2-document-overview.md`
 §5.1: 594 fell inside the printed line `LICENSE HOLDER CONTACT INFORMATION: This notice is being
-provided…`. Every other boundary was confirmed to land in interline whitespace.
+provided…`. The band x window was corrected there too, from `x1 = 592` to **`x1 = 600`**, because the
+page's footer runs to x 599.2 and the narrower window clipped it. Every other boundary was confirmed
+to land in interline whitespace.
 
 **Deliberate reuse across three videos.** Videos 1, 2 and 3 all draw on the same held one-page form,
 each taking a different block for a different job — exactly as the Loan Estimate series took three
@@ -169,8 +180,17 @@ HeyGen draws nothing, generates nothing, and moves nothing.
 
 ## 6. Scene-by-scene structure
 
-Durations computed from word count at 150 wpm, the delivery rate of the existing series.
-**Estimates.** Measured durations replace them after the render arrives.
+**Durations in this table are DERIVED, not asserted.** Each is computed from this video's caption
+file, `captions/tx-tx-representation-or-showing-only-2026.provisional.vtt`: a scene's duration is the end of its last cue minus
+the start of its first, and the scene is matched to its cues by comparing this file's scene narration
+against the cue text. Nothing here is a second, independent statement of a length that is also stated
+somewhere else — there is one timeline, and this is a view of it.
+`scripts/validate-loa-video-packages.mjs` check 3 re-derives every row and fails on disagreement.
+
+The cue timings themselves are **provisional**, computed at 150 words per minute with a 1.4-second
+readability floor, so every figure below is provisional too. **None is a measurement.** They are
+replaced after the render arrives, when the caption file is rebuilt from the delivered audio and this
+table is re-derived from it.
 
 | # | Visual | Duration |
 |---|---|---|
@@ -718,11 +738,12 @@ below is **not** pasted into the generated file. It is attached the way Californ
 Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` spec keyed by screen id,
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
-generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet. Adding it
-is a prerequisite of activation. It is recorded as open item 3 in
-`video-production/production-readiness-addendum.md` §8 — not in the video instruction plan, which is
-a hashed artifact of the curriculum freeze and was left byte-identical by this pass. Nothing here
-edits any of those files.
+generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet, so there
+is today **no supported route** to attach a video to a Texas screen. **Do not hand-edit a generated
+course file** — its own header forbids it and the next regeneration erases the edit. Adding the hook
+is a prerequisite of activation. It is recorded as open item 3 of the video instruction plan §10, and
+the tests it must ship with are listed in the header of `scripts/lib/generate-tx-block-maps.mjs`,
+where it will be built. Nothing here edits any of those files.
 
 ```js
 // NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
