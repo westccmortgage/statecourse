@@ -57,7 +57,7 @@ const time = await import("../config/texas/principles-ii-course.mjs");
 const timeReport = tryRun("node", ["scripts/report-prins2-time-evidence.mjs", "--json"]);
 const measured = timeReport.ok ? JSON.parse(timeReport.out) : null;
 checks.push(check("2. final word count", Boolean(measured) && measured.drift.length === 0,
-  measured ? `${measured.measured.totalWords.toLocaleString()} words across 9 modules${measured.drift.length ? ` — DRIFT: ${measured.drift.join("; ")}` : " (no drift from the course record)"}` : "time-evidence script failed"));
+  measured ? `${measured.corpus.totalWords.toLocaleString()} words across 9 modules${measured.drift.length ? ` — DRIFT: ${measured.drift.join("; ")}` : " (no drift from the course record)"}` : "time-evidence script failed"));
 
 /* 3 ── nine-topic and 44-unit coverage ──────────────────────────────────────────────────────── */
 const form = await import("../config/texas/principles-ii-course-form.mjs");
@@ -169,14 +169,68 @@ try { trace = JSON.parse(fs.readFileSync(path.join(HOME, "traceability.json"), "
 checks.push(check("15. assessment-to-instruction traceability", traceRun.ok && Boolean(trace),
   trace ? `${trace.totals.items} items mapped to unit, screen and sources; ${trace.totals.unitsAssessed} of ${trace.totals.unitsTotal} units assessed${trace.totals.unitsUnassessed.length ? ` (unassessed: ${trace.totals.unitsUnassessed.join(", ")})` : ""}` : "crosswalk did not complete"));
 
-/* 16 ── identity and progression ────────────────────────────────────────────────────────────── */
-const course = time.COURSE;
-checks.push(check("16. identity and progression controls", course.enrollmentEnabled === false && course.finalExaminationAdministrable === false,
-  `enrollment ${course.enrollmentEnabled ? "ENABLED" : "disabled"}, examination ${course.finalExaminationAdministrable ? "ADMINISTRABLE" : "not administrable"} — identity verification and progression gating are unbuilt because nothing may be administered before approval`));
+/* 16 ── identity and progression ──────────────────────────────────────────────────────────────
+   A DISABLED SWITCH IS NOT A WORKING ENGINE. The previous version of this check passed when
+   enrollment was off and the examination was not administrable. That proves an unapproved course
+   cannot accidentally operate — a real and necessary safety control — but it proves nothing about
+   whether the course engine works. The two are independent claims, and conflating them let a
+   course with NO delivery engine at all report an operational pass.
 
-/* 17 ── accessibility ───────────────────────────────────────────────────────────────────────── */
-checks.push(check("17. accessibility", false,
-  "NOT ASSESSED. No student-facing surface exists for this course, so there is nothing to test for keyboard navigation, screen-reader labelling or contrast. This is an honest gap, not a pass."));
+   Point 16 now requires demonstrated behaviour in a reviewer-only, non-credit environment: an
+   independent enrollment record, identity verification, module completion, topic gating,
+   correct-answer progression, incorrect-answer rationale, replacement delivery, scenario passing,
+   instructor support, final-exam access only after coursework, version rotation, 70% unweighted
+   scoring, first failure and remediation, a different version on the subsequent attempt, the
+   90-day limit, second-failure retake, completion status, certificate eligibility, course
+   evaluation, and an auditable attempt record. The safety control is asserted SEPARATELY, so
+   turning enrollment on could never be mistaken for progress. */
+const course = time.COURSE;
+const REQUIRED_ENGINE_BEHAVIOURS = [
+  "independentEnrollmentRecord", "identityVerification", "moduleCompletion", "topicGating",
+  "correctAnswerProgression", "incorrectAnswerRationale", "replacementQuestionDelivery",
+  "scenarioPassing", "instructorSupportPathway", "finalExamAccessAfterCoursework",
+  "examVersionRotation", "unweightedSeventyPercentScoring", "firstFailedAttempt",
+  "remediationAfterFirstFailure", "differentVersionOnSubsequentAttempt", "ninetyDayLimit",
+  "secondFailureRetake", "completionStatus", "certificateEligibility", "courseEvaluation",
+  "auditableAttemptRecord",
+];
+let engineEvidence = null;
+try {
+  engineEvidence = JSON.parse(fs.readFileSync(path.join(root, "texas/tx-principles-real-estate-ii-30-v1/engine-workflow-evidence.json"), "utf8"));
+} catch { engineEvidence = null; }
+const demonstrated = engineEvidence?.behaviours ?? {};
+const missingBehaviours = REQUIRED_ENGINE_BEHAVIOURS.filter((b) => demonstrated[b] !== "PASS");
+checks.push(check("16. course engine workflow, demonstrated in a reviewer environment", missingBehaviours.length === 0,
+  engineEvidence
+    ? `${REQUIRED_ENGINE_BEHAVIOURS.length - missingBehaviours.length} of ${REQUIRED_ENGINE_BEHAVIOURS.length} behaviours demonstrated${missingBehaviours.length ? `; not demonstrated: ${missingBehaviours.join(", ")}` : ""}`
+    : `NOT BUILT. No reviewer/test course surface exists, so none of the ${REQUIRED_ENGINE_BEHAVIOURS.length} required engine behaviours has been exercised. Disabled enrollment is a safety control, not evidence that the engine works.`));
+
+/* The safety control, asserted on its own so it can never stand in for the engine check. */
+checks.push(check("16a. production enrollment remains disabled (safety control, not an operational pass)",
+  course.enrollmentEnabled === false && course.finalExaminationAdministrable === false && course.creditReportingEnabled === false,
+  `enrollment ${course.enrollmentEnabled ? "ENABLED" : "disabled"}, examination ${course.finalExaminationAdministrable ? "ADMINISTRABLE" : "not administrable"}, credit reporting ${course.creditReportingEnabled ? "ENABLED" : "disabled"}`));
+
+/* 17 ── accessibility ────────────────────────────────────────────────────────────────────────
+   Measured against the RENDERED course, never inferred from data structures. A missing surface
+   cannot produce a pass: if there is nothing to render, accessibility is untested, and untested
+   is a failure rather than a nil return. */
+const A11Y_REQUIRED = [
+  "keyboardNavigation", "visibleFocusStates", "screenReaderNamesAndRelationships",
+  "headingHierarchy", "formLabels", "answerChoiceSemantics", "errorIdentification",
+  "rationaleAndRemediationAnnouncements", "progressStateCommunication", "scenarioControls",
+  "finalExamNavigation", "contrast", "zoomAndResponsive", "laptopLayout", "tabletLayout",
+  "mobileLayout", "captionsAndTranscripts",
+];
+let a11y = null;
+try {
+  a11y = JSON.parse(fs.readFileSync(path.join(root, "texas/tx-principles-real-estate-ii-30-v1/accessibility-report.json"), "utf8"));
+} catch { a11y = null; }
+const a11yResults = a11y?.results ?? {};
+const a11yMissing = A11Y_REQUIRED.filter((k) => a11yResults[k] !== "PASS" && a11yResults[k] !== "NOT_APPLICABLE");
+checks.push(check("17. accessibility, measured against the rendered course", Boolean(a11y) && a11yMissing.length === 0,
+  a11y
+    ? `${A11Y_REQUIRED.length - a11yMissing.length} of ${A11Y_REQUIRED.length} criteria pass${a11yMissing.length ? `; outstanding: ${a11yMissing.join(", ")}` : ""}`
+    : "NOT TESTED. No rendered course surface exists to test. A missing surface is not a pass — accessibility must be measured against what a person actually operates, not inferred from the data structures behind it."));
 
 /* 18 ── regression suite ────────────────────────────────────────────────────────────────────── */
 const testRun = tryRun("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)]);
@@ -193,13 +247,44 @@ blockers.push("StateCourse holds no TREC qualifying-education provider approval,
 blockers.push("no student-facing surface exists, so accessibility, identity verification, progression gating, certificate issuance and record retention are unbuilt and untested");
 checks.push(check("19. submission-readiness blockers recorded", true, `${blockers.length} standing blockers, none clearable from this repository`));
 
-/* 20 ── verdict ─────────────────────────────────────────────────────────────────────────────── */
+/* 20 ── verdict ──────────────────────────────────────────────────────────────────────────────
+   THREE VERDICTS, AND ONLY ONE OF THEM AUTHORIZES THE NEXT COURSE.
+ *
+ * The previous logic let "GO WITH RECORDED GAPS" pass whenever the content and assessment points
+ * were green, regardless of what else failed — and it then used that verdict to authorize Law of
+ * Agency. That let two genuinely unbuilt layers, the course engine and accessibility, sit behind a
+ * verdict whose name contained the word GO. A gap that has been recorded is still a gap.
+ *
+ * So the verdict is now split from the authorization:
+ *   CONTENT AND ASSESSMENT: GO      the curriculum and its instruments are complete and validated
+ *   COMPLETE OPERATIONAL COURSE     requires the engine, accessibility and time reconciliation too
+ *   SUBMISSION READINESS            requires everything above PLUS the standing blockers cleared,
+ *                                   none of which can be cleared from this repository
+ * and only a complete-course PASS authorizes the next course's instructional authoring. */
 const failed = checks.filter((c) => !c.ok);
-const contentComplete = checks.filter((c) => /^(1|2|3|4|5|6|7|9|10|11|18)\./.test(c.label)).every((c) => c.ok);
-const assessmentComplete = checks.filter((c) => /^(12|13|14|15)\./.test(c.label)).every((c) => c.ok);
-const verdict = failed.length === 0 ? "GO"
-  : (contentComplete && assessmentComplete) ? "GO WITH RECORDED GAPS"
-    : "NO-GO";
+const group = (re) => checks.filter((c) => re.test(c.label));
+const allOk = (list) => list.length > 0 && list.every((c) => c.ok);
+
+const contentComplete = allOk(group(/^(1|2|3|4|5|6|7|8|9|10|11)\./));
+const assessmentComplete = allOk(group(/^(12|13|14|15)\./));
+const engineComplete = allOk(group(/^16\./));
+const accessibilityComplete = allOk(group(/^17\./));
+/* Time evidence counts as reconciled only when required time meets the prescribed floor AND the
+   corpus segments are provably disjoint — the second condition is what stops a double count from
+   passing as evidence, which is exactly how the superseded 2,791-minute figure arose. */
+const timeReconciled = Boolean(measured?.requiredLearnerTime?.meetsPrescribed)
+  && measured?.corpus?.segmentsAreDisjoint === true
+  && (measured?.drift?.length ?? 1) === 0;
+const regressionGreen = allOk(group(/^18\./));
+
+const contentAndAssessment = contentComplete && assessmentComplete && regressionGreen ? "GO" : "NO-GO";
+const operationalCourse = contentAndAssessment === "GO" && engineComplete && accessibilityComplete && timeReconciled ? "GO" : "NO-GO";
+/* Submission readiness additionally needs the standing blockers cleared. They are recorded as
+   uncleafable from here, so this is NO-GO by construction until a human resolves them. */
+const submissionReadiness = operationalCourse === "GO" && blockers.length === 0 ? "GO" : "NO-GO";
+const verdict = operationalCourse === "GO"
+  ? (submissionReadiness === "GO" ? "GO" : "GO — COURSE COMPLETE, SUBMISSION BLOCKED")
+  : "NO-GO";
 
 const report = {
   course: "Texas Principles of Real Estate II",
@@ -211,9 +296,16 @@ const report = {
   checks,
   blockers,
   verdict,
-  lawOfAgency: verdict === "GO" || verdict === "GO WITH RECORDED GAPS"
-    ? "Principles II is internally complete; Law of Agency instructional authoring may resume."
-    : "Principles II is not complete; Law of Agency instructional authoring remains paused.",
+  statusByLayer: {
+    contentAndAssessment,
+    completeOperationalCourse: operationalCourse,
+    submissionReadiness,
+  },
+  /* ONLY a complete operational course authorizes the next one. Content completeness is not
+     enough, and a verdict containing the word GO is not enough either. */
+  lawOfAgency: operationalCourse === "GO"
+    ? "Principles II is a complete operational course; Law of Agency instructional authoring is authorized."
+    : `Principles II is NOT a complete operational course (engine ${engineComplete ? "ok" : "not demonstrated"}, accessibility ${accessibilityComplete ? "ok" : "not tested"}, time evidence ${timeReconciled ? "reconciled" : "unreconciled"}); Law of Agency instructional authoring remains PAUSED.`,
   approvalPosture: {
     trecApproval: course.trecApprovalStatus,
     enrollmentEnabled: course.enrollmentEnabled,

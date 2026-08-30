@@ -2,7 +2,7 @@
   "course": "Texas Principles of Real Estate II",
   "courseId": "tx-principles-real-estate-ii-30-v1",
   "approvalForm": "PRINS2-1 rev. 09/11/2024",
-  "generatedAt": "2026-08-29 23:49:18",
+  "generatedAt": "2026-08-30 00:33:00",
   "freeze": "PRINS2-CONTENT-FREEZE-2026-08-29",
   "freezeCommit": "2500261413b6271859d9528dc45a268d0cfa345e",
   "checks": [
@@ -44,7 +44,7 @@
     {
       "label": "8. corrected-claim log",
       "ok": true,
-      "detail": "6 correction commits recorded in git history"
+      "detail": "7 correction commits recorded in git history"
     },
     {
       "label": "9. primary quiz count",
@@ -82,14 +82,19 @@
       "detail": "245 items mapped to unit, screen and sources; 44 of 44 units assessed"
     },
     {
-      "label": "16. identity and progression controls",
-      "ok": true,
-      "detail": "enrollment disabled, examination not administrable — identity verification and progression gating are unbuilt because nothing may be administered before approval"
+      "label": "16. course engine workflow, demonstrated in a reviewer environment",
+      "ok": false,
+      "detail": "NOT BUILT. No reviewer/test course surface exists, so none of the 21 required engine behaviours has been exercised. Disabled enrollment is a safety control, not evidence that the engine works."
     },
     {
-      "label": "17. accessibility",
+      "label": "16a. production enrollment remains disabled (safety control, not an operational pass)",
+      "ok": true,
+      "detail": "enrollment disabled, examination not administrable, credit reporting disabled"
+    },
+    {
+      "label": "17. accessibility, measured against the rendered course",
       "ok": false,
-      "detail": "NOT ASSESSED. No student-facing surface exists for this course, so there is nothing to test for keyboard navigation, screen-reader labelling or contrast. This is an honest gap, not a pass."
+      "detail": "NOT TESTED. No rendered course surface exists to test. A missing surface is not a pass — accessibility must be measured against what a person actually operates, not inferred from the data structures behind it."
     },
     {
       "label": "18. full regression suite",
@@ -108,8 +113,13 @@
     "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for PRINS2-1",
     "no student-facing surface exists, so accessibility, identity verification, progression gating, certificate issuance and record retention are unbuilt and untested"
   ],
-  "verdict": "GO WITH RECORDED GAPS",
-  "lawOfAgency": "Principles II is internally complete; Law of Agency instructional authoring may resume.",
+  "verdict": "NO-GO",
+  "statusByLayer": {
+    "contentAndAssessment": "GO",
+    "completeOperationalCourse": "NO-GO",
+    "submissionReadiness": "NO-GO"
+  },
+  "lawOfAgency": "Principles II is NOT a complete operational course (engine not demonstrated, accessibility not tested, time evidence reconciled); Law of Agency instructional authoring remains PAUSED.",
   "approvalPosture": {
     "trecApproval": "NOT_SUBMITTED_NOT_APPROVED",
     "enrollmentEnabled": false,
