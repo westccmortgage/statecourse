@@ -147,13 +147,22 @@ ${block.screens.map((screen, index) => renderScreen(block.id, screen, index)).jo
       ],
     },` : "";
 
-  const body = `/**
+  /* The generated file's own header. A course that is not Principles of Real Estate I supplies its
+     own through course.generatedHeader(nn) — the block comment, without a trailing newline — so
+     that a generated artifact names the course it actually describes, the script that regenerates
+     it, and where its objectives came from. Omitting it keeps the original header byte for byte,
+     which is what lets Principles I and II regenerate unchanged. */
+  const header = course.generatedHeader
+    ? course.generatedHeader(nn)
+    : `/**
  * GENERATED FILE — Texas Principles of Real Estate I, Module ${nn} learning-block map.
  * Derived from the frozen module's own headings by scripts/generate-tx-principles-block-maps.mjs.
  * Learning objectives come from config/texas/principles-i-course.mjs's UNIT_OBJECTIVES (already
  * hand-authored, traced to read statute sections); the retrieval bank lives in
  * config/texas/principles-i-block-retrieval.mjs. Do not edit by hand — regenerate.
- */
+ */`;
+
+  const body = `${header}
 
 const RANGE = (from, to) => Object.freeze({ from, to });
 
