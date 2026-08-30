@@ -600,3 +600,126 @@ test("no examination text reaches any served tree", () => {
   for (const dir of served) walk(dir);
   assert.deepEqual(offenders, [], `examination modules referenced from a served tree: ${offenders.join(", ")}`);
 });
+
+/* ── the engine, and the artifacts the acceptance report reads ───────────────────────────────── */
+
+const engine = await import("../config/texas-law-of-agency-engine.mjs");
+
+test("production enrollment is refused, and a reviewer enrollment is non-credit on its face", () => {
+  assert.throws(() => engine.openEnrollment({ learnerId: "student" }), /production enrollment is disabled/);
+  const record = engine.openEnrollment({ learnerId: "reviewer", mode: engine.MODE.REVIEWER });
+  assert.equal(record.courseId, "tx-law-of-agency-30-v1");
+  assert.equal(record.mode, "REVIEWER");
+  assert.equal(record.creditEligible, false);
+  assert.equal(record.trecApproval, "NOT_SUBMITTED_NOT_APPROVED");
+});
+
+test("a topic will not open out of order, and will not open at all before identity is verified", () => {
+  let record = engine.openEnrollment({ learnerId: "reviewer", mode: engine.MODE.REVIEWER });
+  assert.equal(engine.canOpenTopic(record, "T01").allowed, false, "unverified identity should refuse T01");
+  record = engine.verifyIdentity(record, { method: "reviewer attestation" });
+  assert.equal(engine.canOpenTopic(record, "T01").allowed, true);
+  assert.equal(engine.canOpenTopic(record, "T02").allowed, false, "T02 should refuse while T01 is incomplete");
+  assert.equal(engine.canOpenTopic(record, "T99").allowed, false);
+});
+
+test("a certificate is refused even when every in-engine condition is met", () => {
+  const record = engine.openEnrollment({ learnerId: "reviewer", mode: engine.MODE.REVIEWER });
+  const eligibility = engine.certificateEligibility(record);
+  assert.equal(eligibility.eligibleForCertificate, false);
+  assert.equal(eligibility.creditEligible, false);
+  assert.equal(eligibility.trecApprovalHeld, false);
+  assert.throws(() => engine.issueCertificate(record), /certificate issuance is disabled/);
+});
+
+test("a misconception check is recorded, counts as no assessment, and gates no topic", async () => {
+  const { MISCONCEPTION_CHECKS } = await import("../config/texas/law-of-agency-misconception-checks.mjs");
+  const { TOPIC_QUIZZES, replacementFor } = await import("../config/texas/law-of-agency-question-bank.mjs");
+  const withCheck = MISCONCEPTION_CHECKS[0].topicCode;
+  assert.equal(MISCONCEPTION_CHECKS.every((c) => c.countsAsAssessment === false), true);
+
+  /* Clear the topic that carries a check WITHOUT answering the check, and complete it anyway. */
+  let record = engine.openEnrollment({ learnerId: "skip", mode: engine.MODE.REVIEWER });
+  record = engine.verifyIdentity(record, { method: "reviewer attestation" });
+  for (const topic of TOPICS.map((t) => t.code)) {
+    for (const item of TOPIC_QUIZZES[topic]) {
+      record = engine.answerQuizItem(record, { topicCode: topic, itemId: item.id, choiceIndex: item.correctChoice });
+    }
+    record = engine.completeTopic(record, { topicCode: topic });
+    if (topic === withCheck) {
+      assert.equal(record.completedTopics.includes(topic), true, `${topic} should complete with no misconception check answered`);
+    }
+  }
+  assert.equal(record.completedTopics.length, TOPICS.length);
+  assert.equal(engine.auditRecord(record).misconceptionChecks.length, 0);
+  void replacementFor;
+});
+
+test("a wrong answer returns the rationale and serves a different question, and the primary is never re-served", async () => {
+  const { TOPIC_QUIZZES, replacementFor } = await import("../config/texas/law-of-agency-question-bank.mjs");
+  let record = engine.openEnrollment({ learnerId: "miss", mode: engine.MODE.REVIEWER });
+  record = engine.verifyIdentity(record, { method: "reviewer attestation" });
+  const item = TOPIC_QUIZZES.T01[0];
+  const wrong = (item.correctChoice + 1) % item.choices.length;
+  record = engine.answerQuizItem(record, { topicCode: "T01", itemId: item.id, choiceIndex: wrong });
+  assert.equal(record.lastFeedback.correct, false);
+  assert.ok(record.lastFeedback.rationale.length > 40, "a wrong answer must return a rationale");
+  assert.equal(record.lastFeedback.nextQuestionId, replacementFor(item.id).id);
+  assert.notEqual(record.lastFeedback.nextQuestionId, item.id, "the replacement must be a different question");
+
+  /* Wrong again: the replacement stays served, and the original is not brought back. */
+  const replacement = replacementFor(item.id);
+  const wrongAgain = (replacement.correctChoice + 1) % replacement.choices.length;
+  record = engine.answerQuizItem(record, { topicCode: "T01", itemId: item.id, choiceIndex: wrongAgain });
+  assert.equal(record.lastFeedback.nextQuestionId, replacement.id);
+  record = engine.answerQuizItem(record, { topicCode: "T01", itemId: item.id, choiceIndex: replacement.correctChoice });
+  assert.equal(record.lastFeedback.correct, true);
+  assert.equal(engine.topicQuizComplete(record, "T01"), TOPIC_QUIZZES.T01.length === 1);
+});
+
+test("the acceptance artifacts exist and record what they claim", () => {
+  const read = (name) => JSON.parse(fs.readFileSync(path.join(HOME, name), "utf8"));
+
+  const trace = read("traceability.json");
+  assert.equal(trace.totals.unitsAssessed, ALL_UNITS.length);
+  assert.equal(trace.totals.unitsExamined, ALL_UNITS.length);
+  /* The crosswalk must carry nothing answer-bearing. */
+  const traceKeys = new Set(trace.rows.flatMap((r) => Object.keys(r)));
+  for (const forbidden of ["prompt", "choices", "options", "correctChoice", "rationale"]) {
+    assert.equal(traceKeys.has(forbidden), false, `traceability.json must not carry ${forbidden}`);
+  }
+
+  const evidence = read("engine-workflow-evidence.json");
+  assert.equal(evidence.missing.length, 0, `engine behaviours not demonstrated: ${evidence.missing.join(", ")}`);
+  assert.equal(evidence.productionEnrollmentRefused, true);
+  assert.equal(evidence.behaviours.optionalMaterialNeverBlocksProgress, "PASS");
+
+  const a11y = read("accessibility-report.json");
+  assert.equal(a11y.failed.length, 0, `accessibility criteria outstanding: ${a11y.failed.join(", ")}`);
+  assert.equal(a11y.results.newChecksCanFail, "PASS", "the new criteria must be shown capable of failing");
+
+  const acceptance = read("acceptance-report.json");
+  assert.equal(acceptance.failed.length, 0, `acceptance checks failing: ${acceptance.failed.join(", ")}`);
+  assert.equal(acceptance.verdicts.completeOperationalCourse, "GO");
+  /* Submission readiness must stay NO-GO while any standing blocker is recorded. */
+  assert.equal(acceptance.verdicts.submissionReadiness, "NO-GO");
+  assert.ok(acceptance.blockers.length > 0, "the standing blockers must be recorded, not cleared");
+});
+
+test("the freeze, the audit and the acceptance report agree about what an unmatched quotation is", async () => {
+  /* The bug this guards: the freeze composed unmatched quotations from three lists and the
+     acceptance report from one, so one saw 0 stale dispositions and the other 100. Both call the
+     same helper now, and this asserts the helper actually reads all three. */
+  const { unmatchedFrom } = await import("../scripts/lib/tx-claim-audit.mjs");
+  const audit = JSON.parse(fs.readFileSync(path.join(HOME, "claim-audit.json"), "utf8"));
+  const composed = unmatchedFrom(audit);
+  const attributionReviews = (audit.quoteFindings || []).filter((q) => q.status === "ATTRIBUTION_REVIEW");
+  assert.ok(composed.length >= audit.quoteFailures.length, "the composition must include the outright failures");
+  assert.ok(composed.length > audit.quoteFailures.length, "the composition must reach beyond quoteFailures alone");
+  for (const source of [audit.quoteFailures, attributionReviews, audit.quoteTruncations || []]) {
+    for (const quotation of source) {
+      assert.ok(composed.some((q) => q.id === quotation.id), `${quotation.id} is missing from the composed set`);
+    }
+  }
+  assert.equal(new Set(composed.map((q) => q.id)).size, composed.length, "the composition must not duplicate an id");
+});
