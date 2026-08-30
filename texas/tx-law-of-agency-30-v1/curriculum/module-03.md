@@ -460,9 +460,11 @@ recovery of economic damages, and if the trier of fact finds the conduct was com
 **knowingly**, mental anguish damages plus up to **three times** economic damages, and if committed
 **intentionally**, mental anguish damages plus up to three times the sum of mental anguish and
 economic damages. Section 17.45(9) defines "knowingly" as "actual awareness, at the time of the act
-or practice complained of, of the falsity, deception, or unfairness of the act or practice." And
-§ 17.565 requires suit within two years of the act or of discovery in the exercise of reasonable
-diligence, extendable by 180 days in the circumstances that section describes.
+or practice complained of, of the falsity, deception, or unfairness of the act or practice," adding
+that "actual awareness may be inferred where objective manifestations indicate that a person acted
+with actual awareness." And § 17.565 requires suit within two years of the act or of discovery in
+the exercise of reasonable diligence, extendable by 180 days in the circumstances that section
+describes.
 
 ### Applied exercise: The roof in Lubbock
 

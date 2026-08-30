@@ -84,7 +84,26 @@
     }
   ],
   "requiredMinutes": 1530.8,
-  "requiredSeconds": 91850,
+  "layers": {
+    "topicInstruction": {
+      "seconds": 90650,
+      "minutes": 1510.8,
+      "prescribedSeconds": 90000,
+      "prescribedMinutes": 1500,
+      "varianceMinutes": 10.8,
+      "note": "Official LOA-1 topic time, T01-T12. Each topic allocation is a topic-specific minimum; no topic's surplus may cure another's shortfall."
+    },
+    "courseLevelCapstone": {
+      "seconds": 1200,
+      "minutes": 20,
+      "note": "Required, but attributed to no topic. Not used to satisfy any topic's allocation."
+    },
+    "grandRequired": {
+      "seconds": 91850,
+      "minutes": 1530.8,
+      "note": "Layer 1 plus layer 2. The segment table equals this figure, not the topic total."
+    }
+  },
   "topicsBelowAllocation": [],
   "varianceMinutes": 30.8,
   "meetsPrescribed": true,

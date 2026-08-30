@@ -473,9 +473,9 @@ market analyses"; and "sponsorship agreements between the broker and sponsored s
 Three details students lose. The four years run from the triggers the rule names as they apply —
 closing, termination of the contract, or end of the transaction — not from the date the file was
 opened, so a listing that expires unsold in September 2026 starts its four years then.
-"Substantive communications with parties to the transaction" includes texts and emails. And the
-last category means the written agreement § 201.072(1)(D) demands is itself a record the broker
-must keep for four years.
+"[S]ubstantive communications with parties to the transaction" includes texts and emails. And
+the last category means the written agreement § 201.072(1)(D) demands is itself a record the
+broker must keep for four years.
 
 **(i) Written policies and procedures.** "A broker who sponsors sales agents or is a designated
 broker for a business entity shall maintain, on a current basis, written policies and procedures

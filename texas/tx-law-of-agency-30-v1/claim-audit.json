@@ -5,14 +5,14 @@
   "curriculumHashes": {
     "module-01.md": "61d10c5dd2a2e7f09eb772c2e169658c62884836b70dcd2b6d5af75b6b0d6473",
     "module-02.md": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20",
-    "module-03.md": "5449072c6177f09e7904a469942ef5965f6ddd6525a6d84cb3fa4b833b4d585c",
+    "module-03.md": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec",
     "module-04.md": "af0ce454d4c9174ccf0d771324ea583acc55ecb0aa0b0eb9fe93232e118a1b14",
     "module-05.md": "0f12def8e2f3c7177d7e23769e3c573788af3d693ede79d086b23c73802cf297",
     "module-06.md": "521bbc3088a5df49cb7f0c50736f178cb3239bc7a8dc40b8f9284dee007eef11",
     "module-07.md": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25",
     "module-08.md": "9bb132b7b79fb05862e3a87865a8ac292b2ad27e9ad9ccc5d43ebb01653bc8ef",
-    "module-09.md": "be2c3bebc1f3cf307c84e073bc5939f2f1d05fa11dce45a3721e86f3adbffc77",
-    "module-10.md": "544bf9a4dfdf980a3176267fdb5e8d0ebb558d0e56c88ceb8270958f16560e52",
+    "module-09.md": "453538cccfff62f1bee20d0da8cabb46decd3e5961351eff25b4fbf65b4effef",
+    "module-10.md": "8ab97a3ce61210b7225260bedd88be7890964e83e9abde944031b58feb485eae",
     "module-11.md": "f9b8656f276fcfd8c7be5e1904f81c480a04e831b7bd17419bc9e7178a7818ed",
     "module-12.md": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566"
   },
@@ -22,10 +22,10 @@
       "MECHANICAL_PASS": 1969,
       "IDENTIFIED_NOT_TAUGHT": 1
     },
-    "quotesChecked": 945,
+    "quotesChecked": 946,
     "quotesFailed": 27,
     "quotesUnattributable": 323,
-    "quotesPassed": 785,
+    "quotesPassed": 786,
     "quotesPassedOutsideSection": 64,
     "quotesAttributionReview": 69,
     "quotesTruncationReview": 33
@@ -1642,7 +1642,7 @@
       "quote": "The giving of gifts as an inducement for prospective clients does not violate this section or §1101.652(b)(14) of the Act, but license holders when procuring prospects must otherwise comply with the p"
     },
     {
-      "id": "c2bdc0f6d0ee",
+      "id": "e98d8ba4d8ed",
       "module": "module-10",
       "status": "ATTRIBUTION_REVIEW",
       "candidateSections": [
@@ -1654,7 +1654,7 @@
       "attributedTo": "texas/trec-sources/trec-rules/535.149.txt",
       "matchedAs": "exact",
       "note": "verbatim in a held source, but not in any source cited within 320 characters of it; the quotation is real and the nearest citation is the thing to check",
-      "quote": "the acts described in the Texas Business and Commerce Code §17.46, done in a manner defined in that section."
+      "quote": "include, but are not limited to the acts described in the Texas Business and Commerce Code §17.46, done in a manner defined in that section."
     },
     {
       "id": "08642cab58d1",
@@ -2155,7 +2155,7 @@
       "quote": "a misrepresentation or a concealment of a material fact."
     },
     {
-      "id": "ca76299ecc04",
+      "id": "4f8b60c2917d",
       "module": "module-03",
       "status": "TRUNCATION_REVIEW",
       "classification": "TRUNCATED_REVIEW",
@@ -2168,7 +2168,7 @@
       "attributedTo": "texas/trec-sources/statutes/BC.17.htm",
       "sourceContinuesWith": "giving rise to the consumer's claim or, in an action brought under subdivision(2) of subs",
       "note": "the quoted words are verbatim, but the quotation closes before the source's sentence does; check that no operative qualifier was dropped",
-      "quote": "actual awareness, at the time of the act or practice complained of, of the falsity, deception, or unfairness of the act or practice."
+      "quote": "actual awareness, at the time of the act or practice complained of, of the falsity, deception, or unfairness of the act or practice,"
     },
     {
       "id": "167b46b80544",
@@ -26325,7 +26325,7 @@
       "sourceHeld": true,
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
-      "courseText": "652(b)(14) and (b)(15): it defines the elements of a lottery, provides that \"The giving of gifts as an inducement for prospective clients does not violate this section or §1101.",
+      "courseText": "652(b)(14) and (b)(15): it defines the elements of a lottery, states that \"The giving of gifts as an inducement for prospective clients does not violate this section or §1101.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null
@@ -26357,7 +26357,7 @@
       "sourceHeld": true,
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
-      "courseText": "20 of this title,\" and ties deceptive practices to \"the acts described in the Texas Business and Commerce Code §17.",
+      "courseText": "20 of this title,\" and provides that deceptive practices \"include, but are not limited to the acts described in the Texas Business and Commerce Code §17.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null

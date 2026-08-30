@@ -183,21 +183,44 @@ const byTopic = modules.map((m) => {
 });
 
 /* The course total IS the sum of the topic rows. Nothing here recomputes it independently. */
-/* Topic rows first, then the course-level capstone added once. Every topic must clear its own LOA-1
-   allocation from its own row; the capstone may not be used to cover a topic-level shortfall. */
+/* THREE LAYERS, REPORTED SEPARATELY AND NEVER CONFLATED.
+   An earlier version of this report printed "segment total 1530.8 = topic-row total 1530.8". The
+   arithmetic behind it was right — the variable it called the topic-row total already included the
+   capstone — but the SENTENCE was false: the topic rows sum to about 1,510.8 and the remaining 20
+   minutes are course-level. A label that misdescribes what a number counts is as much a defect as a
+   wrong number, and it is the more dangerous of the two because the figure looks checkable.
+
+     LAYER 1  official LOA-1 topic time, T01-T12, each topic at or above its own allocation
+     LAYER 2  course-level required time, outside the topic table, attributed to no topic
+     LAYER 3  grand required time = layer 1 + layer 2, which the segment table must equal */
 const topicSecondsTotal = byTopic.reduce((s2, t) => s2 + t.requiredSeconds, 0);
-const courseLevelSeconds = COURSE_LEVEL.minutes * 60;
-const requiredSecondsTotal = topicSecondsTotal + courseLevelSeconds;
+const prescribedTopicSeconds = byTopic.reduce((s2, t) => s2 + SEC(t.prescribedMinutes), 0);
+const courseLevelSeconds = SEC(COURSE_LEVEL.minutes);
+const grandRequiredSeconds = topicSecondsTotal + courseLevelSeconds;
+const requiredSecondsTotal = grandRequiredSeconds;
 const topicsBelowAllocation = byTopic.filter((t) => !t.meetsAllocation);
 
 /* One authoritative total, in seconds, equal to the sum of the topic rows. */
 const requiredMinutes = mm(requiredSecondsTotal);
 const variance = mm(requiredSecondsTotal - SEC(FORM.totalMinutes));
-/* The segment table must describe the same course as the topic table. If they disagree, one of them
-   is wrong and the script says so rather than printing both. */
-if (Math.abs(requiredSegmentSeconds - requiredSecondsTotal) > 1) {
-  throw new Error(`time evidence: segment total ${mm(requiredSegmentSeconds)} min does not equal the sum of the topic rows ${mm(requiredSecondsTotal)} min`);
+/* Four assertions, each checking one thing, in exact seconds. */
+const near = (x, y) => Math.abs(x - y) <= 1;
+if (!near(byTopic.reduce((s2, t) => s2 + t.requiredSeconds, 0), topicSecondsTotal)) {
+  throw new Error("time evidence: the topic rows do not sum to the topic total");
 }
+if (!near(topicSecondsTotal + courseLevelSeconds, grandRequiredSeconds)) {
+  throw new Error("time evidence: topic total plus course-level total does not equal the grand total");
+}
+if (!near(requiredSegmentSeconds, grandRequiredSeconds)) {
+  throw new Error(`time evidence: segment total ${mm(requiredSegmentSeconds)} min does not equal the GRAND total ${mm(grandRequiredSeconds)} min`);
+}
+if (topicsBelowAllocation.length) {
+  console.error(`time evidence: ${topicsBelowAllocation.length} topic(s) below their own LOA-1 allocation — ${topicsBelowAllocation.map((t) => t.topicCode).join(", ")}`);
+}
+if (grandRequiredSeconds < SEC(FORM.totalMinutes)) {
+  throw new Error(`time evidence: grand required ${mm(grandRequiredSeconds)} min is below the prescribed ${FORM.totalMinutes}`);
+}
+
 const report = {
   generatedBy: "scripts/report-loa-time-evidence.mjs",
   generatedFor: "Texas Law of Agency",
@@ -216,7 +239,16 @@ const report = {
     note: "Quizzes and scenarios are budgeted but not yet authored. Their minutes are a plan, not a measurement, and are marked measured:false." },
   required: REQUIRED,
   requiredMinutes,
-  requiredSeconds: Math.round(requiredSecondsTotal),
+  layers: {
+    topicInstruction: { seconds: Math.round(topicSecondsTotal), minutes: mm(topicSecondsTotal),
+      prescribedSeconds: prescribedTopicSeconds, prescribedMinutes: mm(prescribedTopicSeconds),
+      varianceMinutes: mm(topicSecondsTotal - prescribedTopicSeconds),
+      note: "Official LOA-1 topic time, T01-T12. Each topic allocation is a topic-specific minimum; no topic's surplus may cure another's shortfall." },
+    courseLevelCapstone: { seconds: Math.round(courseLevelSeconds), minutes: mm(courseLevelSeconds),
+      note: "Required, but attributed to no topic. Not used to satisfy any topic's allocation." },
+    grandRequired: { seconds: Math.round(grandRequiredSeconds), minutes: mm(grandRequiredSeconds),
+      note: "Layer 1 plus layer 2. The segment table equals this figure, not the topic total." },
+  },
   topicsBelowAllocation: topicsBelowAllocation.map((t) => ({ topicCode: t.topicCode, prescribedMinutes: t.prescribedMinutes, requiredMinutes: t.requiredMinutes, shortfallMinutes: mm(SEC(t.prescribedMinutes) - t.requiredSeconds) })),
   varianceMinutes: variance,
   meetsPrescribed: requiredSecondsTotal >= SEC(FORM.totalMinutes),
@@ -243,7 +275,11 @@ else {
   console.log("\nBY TOPIC");
   console.log("  topic  prescribed  reading  activity  required  variance");
   for (const t of byTopic) console.log(`  ${t.topicCode}   ${p(t.prescribedMinutes, 8)}  ${p(t.readingMinutes, 7)}  ${p(t.activityMinutes, 8)}  ${p(t.requiredMinutes, 8)}  ${p(t.varianceMinutes >= 0 ? "+" + t.varianceMinutes : t.varianceMinutes, 8)}`);
-  console.log(`\n  segment total ${mm(requiredSegmentSeconds)} min = topic-row total ${mm(requiredSecondsTotal)} min`);
+  console.log("\n— THE THREE LAYERS, IN EXACT SECONDS —");
+  console.log(`  LAYER 1  official LOA-1 topic time, T01-T12   ${Math.round(topicSecondsTotal).toLocaleString()} s = ${mm(topicSecondsTotal)} min   against ${mm(prescribedTopicSeconds)} prescribed   (${mm(topicSecondsTotal - prescribedTopicSeconds) >= 0 ? "+" : ""}${mm(topicSecondsTotal - prescribedTopicSeconds)})`);
+  console.log(`  LAYER 2  course-level capstone, no topic      ${Math.round(courseLevelSeconds).toLocaleString()} s = ${mm(courseLevelSeconds)} min`);
+  console.log(`  LAYER 3  grand required = layer 1 + layer 2   ${Math.round(grandRequiredSeconds).toLocaleString()} s = ${mm(grandRequiredSeconds)} min   against ${FORM.totalMinutes} prescribed   (${mm(grandRequiredSeconds - SEC(FORM.totalMinutes)) >= 0 ? "+" : ""}${mm(grandRequiredSeconds - SEC(FORM.totalMinutes))})`);
+  console.log(`           segment table totals ${mm(requiredSegmentSeconds)} min, which equals LAYER 3 and NOT the topic total`);
   if (topicsBelowAllocation.length) {
     console.log(`\n  TOPICS BELOW THEIR LOA-1 ALLOCATION (each allocation is a topic-specific minimum):`);
     for (const t of topicsBelowAllocation) console.log(`    ${t.topicCode}  ${t.requiredMinutes} min against ${t.prescribedMinutes} prescribed — short ${mm(SEC(t.prescribedMinutes) - t.requiredSeconds)} min`);

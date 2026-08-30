@@ -602,12 +602,12 @@ was made." The rule goes further: "neither a written contractual provision discl
 representations nor the Texas Rules of Evidence Rule 1004, the parol evidence rule, shall prevent
 the Commission from considering oral promises made by a license holder." Read that twice. The merger
 clause in your contract does not protect you in a Commission proceeding. What you said at the
-kitchen table is evidence. Section 535.149 does the same work for § 1101.652(b)(14) and (b)(15): it defines the elements of a
-lottery, provides that "The giving of gifts as an inducement for prospective clients does not
-violate this section or §1101.652(b)(14) of the Act, but license holders when procuring prospects
-must otherwise comply with the provisions of §535.20 of this title," and ties deceptive practices to
-"the acts described in the Texas Business and Commerce Code §17.46, done in a manner defined in that
-section."
+kitchen table is evidence. Section 535.149 does the same work for § 1101.652(b)(14) and (b)(15):
+it defines the elements of a lottery, states that "The giving of gifts as an inducement for
+prospective clients does not violate this section or §1101.652(b)(14) of the Act, but license
+holders when procuring prospects must otherwise comply with the provisions of §535.20 of this
+title," and provides that deceptive practices "include, but are not limited to the acts described
+in the Texas Business and Commerce Code §17.46, done in a manner defined in that section."
 
 **The unauthorized practice of law.** Section 1101.654(a) is one of the few places TRELA says the
 Commission "shall" — not "may" — act. It provides that the Commission "shall suspend or revoke the
