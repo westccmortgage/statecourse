@@ -13,18 +13,18 @@
     "module-08.md": "9bb132b7b79fb05862e3a87865a8ac292b2ad27e9ad9ccc5d43ebb01653bc8ef",
     "module-09.md": "be2c3bebc1f3cf307c84e073bc5939f2f1d05fa11dce45a3721e86f3adbffc77",
     "module-10.md": "544bf9a4dfdf980a3176267fdb5e8d0ebb558d0e56c88ceb8270958f16560e52",
-    "module-11.md": "3d0c7d1000c30ac900fddd0c240018344106406b95b617fad37a3311728edb55",
+    "module-11.md": "34f764415efc48181f5c9613f48a5074c989560c30f97c84f2d5f11007f1f588",
     "module-12.md": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566"
   },
   "totals": {
-    "citations": 2039,
+    "citations": 2038,
     "byStatus": {
-      "MECHANICAL_PASS": 2038,
+      "MECHANICAL_PASS": 2037,
       "IDENTIFIED_NOT_TAUGHT": 1
     },
-    "quotesChecked": 959,
-    "quotesFailed": 31,
-    "quotesUnattributable": 325,
+    "quotesChecked": 957,
+    "quotesFailed": 29,
+    "quotesUnattributable": 326,
     "quotesPassed": 793,
     "quotesPassedOutsideSection": 62,
     "quotesAttributionReview": 73,
@@ -360,32 +360,6 @@
       "quote": "falsely representing with intent to deceive."
     },
     {
-      "id": "e1b8432ac5d8",
-      "module": "module-11",
-      "status": "QUOTE_NOT_IN_CORPUS",
-      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
-      "candidateSections": [
-        "17.45"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "* — no completed purchase is needed, so a buyer who walks away because of what you said is still a consumer. *"
-    },
-    {
-      "id": "8b4f8f691897",
-      "module": "module-11",
-      "status": "QUOTE_NOT_IN_CORPUS",
-      "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
-      "candidateSections": [
-        "17.45"
-      ],
-      "classification": "NO_MATCH",
-      "matchedPrefixChars": 0,
-      "sourceContinuesWith": null,
-      "quote": "* — your leasing practice sits inside the Act. *"
-    },
-    {
       "id": "33db94725cd7",
       "module": "module-11",
       "status": "QUOTE_NOT_IN_CORPUS",
@@ -451,7 +425,7 @@
       "quote": "was fully repaired in 2019 with a transferable lifetime warranty."
     },
     {
-      "id": "46cdf55c3a33",
+      "id": "4169e987f383",
       "module": "module-11",
       "status": "QUOTE_NOT_IN_CORPUS",
       "note": "not found in any source held under texas/trec-sources/, at section, file or corpus level",
@@ -461,7 +435,7 @@
       "classification": "NO_MATCH",
       "matchedPrefixChars": 0,
       "sourceContinuesWith": null,
-      "quote": "In my opinion this neighbourhood has held its value well"
+      "quote": "I think the roof looks to be in good shape"
     }
   ],
   "quoteFindings": [
@@ -30183,7 +30157,7 @@
       "sourceHeld": true,
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
-      "courseText": "*\"Any goods or services\"* — § 17.",
+      "courseText": "45(1) defines \"Goods\" as \"tangible chattels or real property purchased or leased for use,\" so real property is expressly a good, and § 17.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null
@@ -30199,29 +30173,13 @@
       "sourceHeld": true,
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
-      "courseText": "45(1) defines \"Goods\" as \"tangible chattels or real property purchased or leased for use,\" so real property is expressly a good, and § 17.",
+      "courseText": "* A \"business consumer,\" defined at § 17.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null
     },
     {
       "claimId": "module-11-C1722",
-      "module": "module-11",
-      "unit": "Deceptive Trade Practices and Consumer Protection",
-      "citation": "Business & Commerce Code § 17.45",
-      "kind": "texas",
-      "section": "17.45",
-      "sourceFile": "texas/trec-sources/statutes/BC.17.htm",
-      "sourceHeld": true,
-      "sectionPresent": true,
-      "status": "MECHANICAL_PASS",
-      "courseText": "*The $25 million exclusion* — a \"business consumer,\" defined at § 17.",
-      "substantiveStatus": "PENDING_REVIEW",
-      "reviewerNote": "",
-      "correctionCommit": null
-    },
-    {
-      "claimId": "module-11-C1723",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.46",
@@ -30237,7 +30195,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1724",
+      "claimId": "module-11-C1723",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.46",
@@ -30253,7 +30211,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1725",
+      "claimId": "module-11-C1724",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.45",
@@ -30264,6 +30222,22 @@
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
       "courseText": "And it applies to the act of \"any person,\" which § 17.",
+      "substantiveStatus": "PENDING_REVIEW",
+      "reviewerNote": "",
+      "correctionCommit": null
+    },
+    {
+      "claimId": "module-11-C1725",
+      "module": "module-11",
+      "unit": "Deceptive Trade Practices and Consumer Protection",
+      "citation": "Business & Commerce Code § 17.46",
+      "kind": "texas",
+      "section": "17.46",
+      "sourceFile": "texas/trec-sources/statutes/BC.17.htm",
+      "sourceHeld": true,
+      "sectionPresent": true,
+      "status": "MECHANICAL_PASS",
+      "courseText": "*§ 17.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null
@@ -30368,22 +30342,6 @@
       "claimId": "module-11-C1732",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
-      "citation": "Business & Commerce Code § 17.46",
-      "kind": "texas",
-      "section": "17.46",
-      "sourceFile": "texas/trec-sources/statutes/BC.17.htm",
-      "sourceHeld": true,
-      "sectionPresent": true,
-      "status": "MECHANICAL_PASS",
-      "courseText": "*§ 17.",
-      "substantiveStatus": "PENDING_REVIEW",
-      "reviewerNote": "",
-      "correctionCommit": null
-    },
-    {
-      "claimId": "module-11-C1733",
-      "module": "module-11",
-      "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Occupations Code § 1101.652",
       "kind": "texas",
       "section": "1101.652",
@@ -30397,7 +30355,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1734",
+      "claimId": "module-11-C1733",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.50",
@@ -30413,7 +30371,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1735",
+      "claimId": "module-11-C1734",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.505",
@@ -30429,7 +30387,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1736",
+      "claimId": "module-11-C1735",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.506",
@@ -30445,7 +30403,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1737",
+      "claimId": "module-11-C1736",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.46",
@@ -30461,7 +30419,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1738",
+      "claimId": "module-11-C1737",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.45",
@@ -30477,7 +30435,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1739",
+      "claimId": "module-11-C1738",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.50",
@@ -30493,7 +30451,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1740",
+      "claimId": "module-11-C1739",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.506",
@@ -30509,7 +30467,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1741",
+      "claimId": "module-11-C1740",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.506",
@@ -30525,7 +30483,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1742",
+      "claimId": "module-11-C1741",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.505",
@@ -30541,7 +30499,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1743",
+      "claimId": "module-11-C1742",
       "module": "module-11",
       "unit": "Deceptive Trade Practices and Consumer Protection",
       "citation": "Business & Commerce Code § 17.506",
@@ -30557,7 +30515,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1744",
+      "claimId": "module-11-C1743",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.50",
@@ -30573,7 +30531,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1745",
+      "claimId": "module-11-C1744",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.50",
@@ -30589,7 +30547,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1746",
+      "claimId": "module-11-C1745",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.45",
@@ -30605,7 +30563,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1747",
+      "claimId": "module-11-C1746",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.45",
@@ -30621,7 +30579,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1748",
+      "claimId": "module-11-C1747",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.45",
@@ -30637,7 +30595,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1749",
+      "claimId": "module-11-C1748",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.45",
@@ -30653,7 +30611,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1750",
+      "claimId": "module-11-C1749",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.50",
@@ -30669,7 +30627,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1751",
+      "claimId": "module-11-C1750",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.50",
@@ -30685,7 +30643,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1752",
+      "claimId": "module-11-C1751",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.50",
@@ -30701,7 +30659,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1753",
+      "claimId": "module-11-C1752",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.46",
@@ -30717,7 +30675,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1754",
+      "claimId": "module-11-C1753",
       "module": "module-11",
       "unit": "Damages",
       "citation": "Business & Commerce Code § 17.50",
@@ -30733,7 +30691,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1755",
+      "claimId": "module-11-C1754",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -30749,7 +30707,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1756",
+      "claimId": "module-11-C1755",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.45",
@@ -30765,7 +30723,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1757",
+      "claimId": "module-11-C1756",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -30781,7 +30739,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1758",
+      "claimId": "module-11-C1757",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -30797,7 +30755,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1759",
+      "claimId": "module-11-C1758",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.46",
@@ -30813,7 +30771,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1760",
+      "claimId": "module-11-C1759",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -30829,7 +30787,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1761",
+      "claimId": "module-11-C1760",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -30845,7 +30803,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1762",
+      "claimId": "module-11-C1761",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -30861,7 +30819,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1763",
+      "claimId": "module-11-C1762",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.505",
@@ -30877,7 +30835,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1764",
+      "claimId": "module-11-C1763",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.506",
@@ -30893,7 +30851,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1765",
+      "claimId": "module-11-C1764",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.506",
@@ -30909,7 +30867,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1766",
+      "claimId": "module-11-C1765",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.506",
@@ -30925,7 +30883,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1767",
+      "claimId": "module-11-C1766",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.565",
@@ -30941,7 +30899,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1768",
+      "claimId": "module-11-C1767",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Civil Practice and Remedies Code § 16.004",
@@ -30957,7 +30915,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1769",
+      "claimId": "module-11-C1768",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.565",
@@ -30973,7 +30931,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1770",
+      "claimId": "module-11-C1769",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Occupations Code § 1101.805",
@@ -30989,7 +30947,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1771",
+      "claimId": "module-11-C1770",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.506",
@@ -31005,7 +30963,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1772",
+      "claimId": "module-11-C1771",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -31021,7 +30979,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1773",
+      "claimId": "module-11-C1772",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.49",
@@ -31037,7 +30995,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1774",
+      "claimId": "module-11-C1773",
       "module": "module-11",
       "unit": "Defenses",
       "citation": "Business & Commerce Code § 17.45",
@@ -31053,7 +31011,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1775",
+      "claimId": "module-11-C1774",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.50",
@@ -31069,7 +31027,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1776",
+      "claimId": "module-11-C1775",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31085,7 +31043,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1777",
+      "claimId": "module-11-C1776",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code §17.46",
@@ -31101,7 +31059,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1778",
+      "claimId": "module-11-C1777",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.46",
@@ -31117,7 +31075,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1779",
+      "claimId": "module-11-C1778",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.45",
@@ -31133,7 +31091,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1780",
+      "claimId": "module-11-C1779",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31149,7 +31107,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1781",
+      "claimId": "module-11-C1780",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31165,7 +31123,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1782",
+      "claimId": "module-11-C1781",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.606",
@@ -31181,7 +31139,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1783",
+      "claimId": "module-11-C1782",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.607",
@@ -31197,7 +31155,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1784",
+      "claimId": "module-11-C1783",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.610",
@@ -31213,7 +31171,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1785",
+      "claimId": "module-11-C1784",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.615",
@@ -31229,7 +31187,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1786",
+      "claimId": "module-11-C1785",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.506",
@@ -31245,7 +31203,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1787",
+      "claimId": "module-11-C1786",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.805",
@@ -31261,7 +31219,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1788",
+      "claimId": "module-11-C1787",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.49",
@@ -31277,7 +31235,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1789",
+      "claimId": "module-11-C1788",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.45",
@@ -31293,7 +31251,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1790",
+      "claimId": "module-11-C1789",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31309,7 +31267,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1791",
+      "claimId": "module-11-C1790",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31325,7 +31283,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1792",
+      "claimId": "module-11-C1791",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31341,7 +31299,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1793",
+      "claimId": "module-11-C1792",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code §§ 17.41",
@@ -31357,7 +31315,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1794",
+      "claimId": "module-11-C1793",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.45",
@@ -31373,7 +31331,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1795",
+      "claimId": "module-11-C1794",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.45",
@@ -31389,7 +31347,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1796",
+      "claimId": "module-11-C1795",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.45",
@@ -31405,7 +31363,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1797",
+      "claimId": "module-11-C1796",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.50",
@@ -31421,7 +31379,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1798",
+      "claimId": "module-11-C1797",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.50",
@@ -31437,7 +31395,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1799",
+      "claimId": "module-11-C1798",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.50",
@@ -31453,7 +31411,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1800",
+      "claimId": "module-11-C1799",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.506",
@@ -31469,7 +31427,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1801",
+      "claimId": "module-11-C1800",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.46",
@@ -31485,7 +31443,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1802",
+      "claimId": "module-11-C1801",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.45",
@@ -31501,7 +31459,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1803",
+      "claimId": "module-11-C1802",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.49",
@@ -31517,7 +31475,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1804",
+      "claimId": "module-11-C1803",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.506",
@@ -31533,7 +31491,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1805",
+      "claimId": "module-11-C1804",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Civil Practice and Remedies Code § 16.004",
@@ -31549,7 +31507,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1806",
+      "claimId": "module-11-C1805",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.42",
@@ -31565,7 +31523,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1807",
+      "claimId": "module-11-C1806",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31581,7 +31539,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1808",
+      "claimId": "module-11-C1807",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code §17.46",
@@ -31597,7 +31555,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1809",
+      "claimId": "module-11-C1808",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.602",
@@ -31613,7 +31571,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1810",
+      "claimId": "module-11-C1809",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.652",
@@ -31629,7 +31587,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1811",
+      "claimId": "module-11-C1810",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.605",
@@ -31645,7 +31603,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1812",
+      "claimId": "module-11-C1811",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.606",
@@ -31661,7 +31619,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1813",
+      "claimId": "module-11-C1812",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.607",
@@ -31677,7 +31635,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1814",
+      "claimId": "module-11-C1813",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.655",
@@ -31693,7 +31651,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1815",
+      "claimId": "module-11-C1814",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.44",
@@ -31709,7 +31667,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1816",
+      "claimId": "module-11-C1815",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Civil Practice and Remedies Code § 16.004",
@@ -31725,7 +31683,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1817",
+      "claimId": "module-11-C1816",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.601",
@@ -31741,7 +31699,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1818",
+      "claimId": "module-11-C1817",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.602",
@@ -31757,7 +31715,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1819",
+      "claimId": "module-11-C1818",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.601",
@@ -31768,6 +31726,22 @@
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
       "courseText": "Explain what § 1101.",
+      "substantiveStatus": "PENDING_REVIEW",
+      "reviewerNote": "",
+      "correctionCommit": null
+    },
+    {
+      "claimId": "module-11-C1819",
+      "module": "module-11",
+      "unit": "Ethical and Legal Concerns",
+      "citation": "Occupations Code § 1101.610",
+      "kind": "texas",
+      "section": "1101.610",
+      "sourceFile": "texas/trec-sources/statutes/OC.1101.htm",
+      "sourceHeld": true,
+      "sectionPresent": true,
+      "status": "MECHANICAL_PASS",
+      "courseText": "Apply § 1101.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null
@@ -31799,7 +31773,7 @@
       "sourceHeld": true,
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
-      "courseText": "Apply § 1101.",
+      "courseText": "610(a) and § 1101.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null
@@ -31815,29 +31789,13 @@
       "sourceHeld": true,
       "sectionPresent": true,
       "status": "MECHANICAL_PASS",
-      "courseText": "610(a) and § 1101.",
-      "substantiveStatus": "PENDING_REVIEW",
-      "reviewerNote": "",
-      "correctionCommit": null
-    },
-    {
-      "claimId": "module-11-C1823",
-      "module": "module-11",
-      "unit": "Ethical and Legal Concerns",
-      "citation": "Occupations Code § 1101.610",
-      "kind": "texas",
-      "section": "1101.610",
-      "sourceFile": "texas/trec-sources/statutes/OC.1101.htm",
-      "sourceHeld": true,
-      "sectionPresent": true,
-      "status": "MECHANICAL_PASS",
       "courseText": "610(b) and state the maximum total the account may pay across both claims, and what § 1101.",
       "substantiveStatus": "PENDING_REVIEW",
       "reviewerNote": "",
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1824",
+      "claimId": "module-11-C1823",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.605",
@@ -31853,7 +31811,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1825",
+      "claimId": "module-11-C1824",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Business & Commerce Code § 17.565",
@@ -31869,7 +31827,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1826",
+      "claimId": "module-11-C1825",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.612",
@@ -31885,7 +31843,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1827",
+      "claimId": "module-11-C1826",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.655",
@@ -31901,7 +31859,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-11-C1828",
+      "claimId": "module-11-C1827",
       "module": "module-11",
       "unit": "Ethical and Legal Concerns",
       "citation": "Occupations Code § 1101.655",
@@ -31917,7 +31875,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1829",
+      "claimId": "module-12-C1828",
       "module": "module-12",
       "unit": "(front matter)",
       "citation": "22 TAC § 535.17",
@@ -31933,7 +31891,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1830",
+      "claimId": "module-12-C1829",
       "module": "module-12",
       "unit": "(front matter)",
       "citation": "22 TAC §§ 535.154",
@@ -31949,7 +31907,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1831",
+      "claimId": "module-12-C1830",
       "module": "module-12",
       "unit": "(front matter)",
       "citation": "22 TAC § 537.11",
@@ -31965,7 +31923,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1832",
+      "claimId": "module-12-C1831",
       "module": "module-12",
       "unit": "(front matter)",
       "citation": "22 TAC § 535.144",
@@ -31981,7 +31939,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1833",
+      "claimId": "module-12-C1832",
       "module": "module-12",
       "unit": "(front matter)",
       "citation": "22 TAC § 535.21",
@@ -31997,7 +31955,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1834",
+      "claimId": "module-12-C1833",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 531.20",
@@ -32013,7 +31971,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1835",
+      "claimId": "module-12-C1834",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 531.18",
@@ -32029,7 +31987,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1836",
+      "claimId": "module-12-C1835",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.17",
@@ -32045,7 +32003,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1837",
+      "claimId": "module-12-C1836",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.2",
@@ -32061,7 +32019,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1838",
+      "claimId": "module-12-C1837",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.16",
@@ -32077,7 +32035,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1839",
+      "claimId": "module-12-C1838",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.2",
@@ -32093,7 +32051,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1840",
+      "claimId": "module-12-C1839",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.16",
@@ -32109,7 +32067,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1841",
+      "claimId": "module-12-C1840",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.155",
@@ -32125,7 +32083,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1842",
+      "claimId": "module-12-C1841",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.156",
@@ -32141,7 +32099,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1843",
+      "claimId": "module-12-C1842",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.146",
@@ -32157,7 +32115,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1844",
+      "claimId": "module-12-C1843",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.3",
@@ -32173,7 +32131,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1845",
+      "claimId": "module-12-C1844",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.17",
@@ -32189,7 +32147,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1846",
+      "claimId": "module-12-C1845",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "22 TAC § 535.16",
@@ -32205,7 +32163,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1847",
+      "claimId": "module-12-C1846",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "22 TAC § 531.20",
@@ -32221,7 +32179,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1848",
+      "claimId": "module-12-C1847",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "22 TAC § 535.146",
@@ -32237,7 +32195,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1849",
+      "claimId": "module-12-C1848",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.157",
@@ -32253,7 +32211,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1850",
+      "claimId": "module-12-C1849",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.2",
@@ -32269,7 +32227,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1851",
+      "claimId": "module-12-C1850",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.156",
@@ -32285,7 +32243,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1852",
+      "claimId": "module-12-C1851",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 537.11",
@@ -32301,7 +32259,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1853",
+      "claimId": "module-12-C1852",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.3",
@@ -32317,7 +32275,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1854",
+      "claimId": "module-12-C1853",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.2",
@@ -32333,7 +32291,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1855",
+      "claimId": "module-12-C1854",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.146",
@@ -32349,7 +32307,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1856",
+      "claimId": "module-12-C1855",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.144",
@@ -32365,7 +32323,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1857",
+      "claimId": "module-12-C1856",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.145",
@@ -32381,7 +32339,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1858",
+      "claimId": "module-12-C1857",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.2",
@@ -32397,7 +32355,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1859",
+      "claimId": "module-12-C1858",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 537.11",
@@ -32413,7 +32371,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1860",
+      "claimId": "module-12-C1859",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 531.4",
@@ -32429,7 +32387,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1861",
+      "claimId": "module-12-C1860",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.2",
@@ -32445,7 +32403,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1862",
+      "claimId": "module-12-C1861",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 531.2",
@@ -32461,7 +32419,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1863",
+      "claimId": "module-12-C1862",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 531.3",
@@ -32477,7 +32435,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1864",
+      "claimId": "module-12-C1863",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 535.2",
@@ -32493,7 +32451,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1865",
+      "claimId": "module-12-C1864",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 537.11",
@@ -32509,7 +32467,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1866",
+      "claimId": "module-12-C1865",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "22 TAC § 537.11",
@@ -32525,7 +32483,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1867",
+      "claimId": "module-12-C1866",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.144",
@@ -32541,7 +32499,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1868",
+      "claimId": "module-12-C1867",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.155",
@@ -32557,7 +32515,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1869",
+      "claimId": "module-12-C1868",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.147",
@@ -32573,7 +32531,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1870",
+      "claimId": "module-12-C1869",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.155",
@@ -32589,7 +32547,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1871",
+      "claimId": "module-12-C1870",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.20",
@@ -32605,7 +32563,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1872",
+      "claimId": "module-12-C1871",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.148",
@@ -32621,7 +32579,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1873",
+      "claimId": "module-12-C1872",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.2",
@@ -32637,7 +32595,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1874",
+      "claimId": "module-12-C1873",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.4",
@@ -32653,7 +32611,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1875",
+      "claimId": "module-12-C1874",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.144",
@@ -32669,7 +32627,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1876",
+      "claimId": "module-12-C1875",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.144",
@@ -32685,7 +32643,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1877",
+      "claimId": "module-12-C1876",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.16",
@@ -32701,7 +32659,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1878",
+      "claimId": "module-12-C1877",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.20",
@@ -32717,7 +32675,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1879",
+      "claimId": "module-12-C1878",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "22 TAC § 535.144",
@@ -32733,7 +32691,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1880",
+      "claimId": "module-12-C1879",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.141",
@@ -32749,7 +32707,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1881",
+      "claimId": "module-12-C1880",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC §§ 535.154",
@@ -32765,7 +32723,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1882",
+      "claimId": "module-12-C1881",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.146",
@@ -32781,7 +32739,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1883",
+      "claimId": "module-12-C1882",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC §§ 535.147",
@@ -32797,7 +32755,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1884",
+      "claimId": "module-12-C1883",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.153",
@@ -32813,7 +32771,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1885",
+      "claimId": "module-12-C1884",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 531.19",
@@ -32829,7 +32787,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1886",
+      "claimId": "module-12-C1885",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.141",
@@ -32845,7 +32803,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1887",
+      "claimId": "module-12-C1886",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.146",
@@ -32861,7 +32819,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1888",
+      "claimId": "module-12-C1887",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.2",
@@ -32877,7 +32835,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1889",
+      "claimId": "module-12-C1888",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 537.11",
@@ -32893,7 +32851,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1890",
+      "claimId": "module-12-C1889",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.146",
@@ -32909,7 +32867,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1891",
+      "claimId": "module-12-C1890",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 531.20",
@@ -32925,7 +32883,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1892",
+      "claimId": "module-12-C1891",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.17",
@@ -32941,7 +32899,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1893",
+      "claimId": "module-12-C1892",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.2",
@@ -32957,7 +32915,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1894",
+      "claimId": "module-12-C1893",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.155",
@@ -32973,7 +32931,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1895",
+      "claimId": "module-12-C1894",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.156",
@@ -32989,7 +32947,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1896",
+      "claimId": "module-12-C1895",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 537.11",
@@ -33005,7 +32963,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1897",
+      "claimId": "module-12-C1896",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.146",
@@ -33021,7 +32979,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1898",
+      "claimId": "module-12-C1897",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.157",
@@ -33037,7 +32995,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1899",
+      "claimId": "module-12-C1898",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.2",
@@ -33053,7 +33011,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1900",
+      "claimId": "module-12-C1899",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.154",
@@ -33069,7 +33027,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1901",
+      "claimId": "module-12-C1900",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.21",
@@ -33085,7 +33043,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1902",
+      "claimId": "module-12-C1901",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.144",
@@ -33101,7 +33059,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1903",
+      "claimId": "module-12-C1902",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.20",
@@ -33117,7 +33075,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1904",
+      "claimId": "module-12-C1903",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.148",
@@ -33133,7 +33091,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1905",
+      "claimId": "module-12-C1904",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.154",
@@ -33149,7 +33107,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1906",
+      "claimId": "module-12-C1905",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.21",
@@ -33165,7 +33123,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1907",
+      "claimId": "module-12-C1906",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.141",
@@ -33181,7 +33139,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1908",
+      "claimId": "module-12-C1907",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.17",
@@ -33197,7 +33155,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1909",
+      "claimId": "module-12-C1908",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC §§ 535.154",
@@ -33213,7 +33171,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1910",
+      "claimId": "module-12-C1909",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 537.11",
@@ -33229,7 +33187,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1911",
+      "claimId": "module-12-C1910",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.144",
@@ -33245,7 +33203,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1912",
+      "claimId": "module-12-C1911",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 535.21",
@@ -33261,7 +33219,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1913",
+      "claimId": "module-12-C1912",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "22 TAC § 531.20",
@@ -33277,7 +33235,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1914",
+      "claimId": "module-12-C1913",
       "module": "module-12",
       "unit": "(front matter)",
       "citation": "Occupations Code § 1101.555",
@@ -33293,7 +33251,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1915",
+      "claimId": "module-12-C1914",
       "module": "module-12",
       "unit": "(front matter)",
       "citation": "Occupations Code § 1101.552",
@@ -33309,7 +33267,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1916",
+      "claimId": "module-12-C1915",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.558",
@@ -33325,7 +33283,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1917",
+      "claimId": "module-12-C1916",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.558",
@@ -33341,7 +33299,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1918",
+      "claimId": "module-12-C1917",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.558",
@@ -33357,7 +33315,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1919",
+      "claimId": "module-12-C1918",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§ 531.20",
@@ -33373,7 +33331,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1920",
+      "claimId": "module-12-C1919",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§ 531.20",
@@ -33389,7 +33347,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1921",
+      "claimId": "module-12-C1920",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.002",
@@ -33405,7 +33363,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1922",
+      "claimId": "module-12-C1921",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§ 535.17",
@@ -33421,7 +33379,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1923",
+      "claimId": "module-12-C1922",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§ 535.17",
@@ -33437,7 +33395,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1924",
+      "claimId": "module-12-C1923",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§ 535.17",
@@ -33453,7 +33411,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1925",
+      "claimId": "module-12-C1924",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.652",
@@ -33469,7 +33427,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1926",
+      "claimId": "module-12-C1925",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.652",
@@ -33485,7 +33443,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1927",
+      "claimId": "module-12-C1926",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.155",
@@ -33501,7 +33459,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1928",
+      "claimId": "module-12-C1927",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.806",
@@ -33517,7 +33475,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1929",
+      "claimId": "module-12-C1928",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Business & Commerce Code § 26.01",
@@ -33533,7 +33491,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1930",
+      "claimId": "module-12-C1929",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Property Code § 5.008",
@@ -33549,7 +33507,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1931",
+      "claimId": "module-12-C1930",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Property Code § 5.008",
@@ -33565,7 +33523,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1932",
+      "claimId": "module-12-C1931",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.652",
@@ -33581,7 +33539,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1933",
+      "claimId": "module-12-C1932",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code §1101.652",
@@ -33597,7 +33555,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1934",
+      "claimId": "module-12-C1933",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§535.17",
@@ -33613,7 +33571,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1935",
+      "claimId": "module-12-C1934",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.652",
@@ -33629,7 +33587,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1936",
+      "claimId": "module-12-C1935",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.652",
@@ -33645,7 +33603,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1937",
+      "claimId": "module-12-C1936",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.652",
@@ -33661,7 +33619,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1938",
+      "claimId": "module-12-C1937",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.651",
@@ -33677,7 +33635,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1939",
+      "claimId": "module-12-C1938",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "Occupations Code § 1101.651",
@@ -33693,7 +33651,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1940",
+      "claimId": "module-12-C1939",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§ 535.17",
@@ -33709,7 +33667,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1941",
+      "claimId": "module-12-C1940",
       "module": "module-12",
       "unit": "The Broker Working for/with the Seller",
       "citation": "§ 535.16",
@@ -33725,7 +33683,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1942",
+      "claimId": "module-12-C1941",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.562",
@@ -33741,7 +33699,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1943",
+      "claimId": "module-12-C1942",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.563",
@@ -33757,7 +33715,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1944",
+      "claimId": "module-12-C1943",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.558",
@@ -33773,7 +33731,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1945",
+      "claimId": "module-12-C1944",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.558",
@@ -33789,7 +33747,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1946",
+      "claimId": "module-12-C1945",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.562",
@@ -33805,7 +33763,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1947",
+      "claimId": "module-12-C1946",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.563",
@@ -33821,7 +33779,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1948",
+      "claimId": "module-12-C1947",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.563",
@@ -33837,7 +33795,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1949",
+      "claimId": "module-12-C1948",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.561",
@@ -33853,7 +33811,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1950",
+      "claimId": "module-12-C1949",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.559",
@@ -33869,7 +33827,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1951",
+      "claimId": "module-12-C1950",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.558",
@@ -33885,7 +33843,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1952",
+      "claimId": "module-12-C1951",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.563",
@@ -33901,7 +33859,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1953",
+      "claimId": "module-12-C1952",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.558",
@@ -33917,7 +33875,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1954",
+      "claimId": "module-12-C1953",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.558",
@@ -33933,7 +33891,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1955",
+      "claimId": "module-12-C1954",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.558",
@@ -33949,7 +33907,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1956",
+      "claimId": "module-12-C1955",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.563",
@@ -33965,7 +33923,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1957",
+      "claimId": "module-12-C1956",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.555",
@@ -33981,7 +33939,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1958",
+      "claimId": "module-12-C1957",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "§ 537.11",
@@ -33997,7 +33955,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1959",
+      "claimId": "module-12-C1958",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.652",
@@ -34013,7 +33971,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1960",
+      "claimId": "module-12-C1959",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.155",
@@ -34029,7 +33987,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1961",
+      "claimId": "module-12-C1960",
       "module": "module-12",
       "unit": "The Broker Working for/with the Buyer",
       "citation": "Occupations Code § 1101.652",
@@ -34045,7 +34003,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1962",
+      "claimId": "module-12-C1961",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.806",
@@ -34061,7 +34019,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1963",
+      "claimId": "module-12-C1962",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.563",
@@ -34077,7 +34035,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1964",
+      "claimId": "module-12-C1963",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.559",
@@ -34093,7 +34051,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1965",
+      "claimId": "module-12-C1964",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.652",
@@ -34109,7 +34067,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1966",
+      "claimId": "module-12-C1965",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.555",
@@ -34125,7 +34083,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1967",
+      "claimId": "module-12-C1966",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.652",
@@ -34141,7 +34099,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1968",
+      "claimId": "module-12-C1967",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.204",
@@ -34157,7 +34115,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1969",
+      "claimId": "module-12-C1968",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Civil Practice and Remedies Code § 16.004",
@@ -34173,7 +34131,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1970",
+      "claimId": "module-12-C1969",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.652",
@@ -34189,7 +34147,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1971",
+      "claimId": "module-12-C1970",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "§ 537.11",
@@ -34205,7 +34163,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1972",
+      "claimId": "module-12-C1971",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.652",
@@ -34221,7 +34179,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1973",
+      "claimId": "module-12-C1972",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Occupations Code § 1101.652",
@@ -34237,7 +34195,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1974",
+      "claimId": "module-12-C1973",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "Property Code § 5.008",
@@ -34253,7 +34211,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1975",
+      "claimId": "module-12-C1974",
       "module": "module-12",
       "unit": "A Practical Guide to Everyday Practice",
       "citation": "§ 535.17",
@@ -34269,7 +34227,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1976",
+      "claimId": "module-12-C1975",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "Occupations Code §1101.652",
@@ -34285,7 +34243,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1977",
+      "claimId": "module-12-C1976",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "Occupations Code § 1101.652",
@@ -34301,7 +34259,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1978",
+      "claimId": "module-12-C1977",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "§ 535.144",
@@ -34317,7 +34275,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1979",
+      "claimId": "module-12-C1978",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "Occupations Code § 1101.652",
@@ -34333,7 +34291,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1980",
+      "claimId": "module-12-C1979",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "§§ 535.154",
@@ -34349,7 +34307,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1981",
+      "claimId": "module-12-C1980",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "Occupations Code § 1101.651",
@@ -34365,7 +34323,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1982",
+      "claimId": "module-12-C1981",
       "module": "module-12",
       "unit": "Other Considerations",
       "citation": "Occupations Code § 1101.651",
@@ -34381,7 +34339,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1983",
+      "claimId": "module-12-C1982",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.803",
@@ -34397,7 +34355,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1984",
+      "claimId": "module-12-C1983",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34413,7 +34371,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1985",
+      "claimId": "module-12-C1984",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34429,7 +34387,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1986",
+      "claimId": "module-12-C1985",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Property Code § 5.008",
@@ -34445,7 +34403,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1987",
+      "claimId": "module-12-C1986",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34461,7 +34419,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1988",
+      "claimId": "module-12-C1987",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34477,7 +34435,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1989",
+      "claimId": "module-12-C1988",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34493,7 +34451,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1990",
+      "claimId": "module-12-C1989",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.651",
@@ -34509,7 +34467,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1991",
+      "claimId": "module-12-C1990",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34525,7 +34483,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1992",
+      "claimId": "module-12-C1991",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34541,7 +34499,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1993",
+      "claimId": "module-12-C1992",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.563",
@@ -34557,7 +34515,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1994",
+      "claimId": "module-12-C1993",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34573,7 +34531,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1995",
+      "claimId": "module-12-C1994",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.702",
@@ -34589,7 +34547,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1996",
+      "claimId": "module-12-C1995",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.702",
@@ -34605,7 +34563,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1997",
+      "claimId": "module-12-C1996",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.759",
@@ -34621,7 +34579,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1998",
+      "claimId": "module-12-C1997",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.751",
@@ -34637,7 +34595,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C1999",
+      "claimId": "module-12-C1998",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.756",
@@ -34653,7 +34611,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2000",
+      "claimId": "module-12-C1999",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code §§ 1101.601",
@@ -34669,7 +34627,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2001",
+      "claimId": "module-12-C2000",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Business & Commerce Code § 17.50",
@@ -34685,7 +34643,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2002",
+      "claimId": "module-12-C2001",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.805",
@@ -34701,7 +34659,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2003",
+      "claimId": "module-12-C2002",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Civil Practice and Remedies Code § 16.004",
@@ -34717,7 +34675,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2004",
+      "claimId": "module-12-C2003",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.803",
@@ -34733,7 +34691,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2005",
+      "claimId": "module-12-C2004",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.702",
@@ -34749,7 +34707,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2006",
+      "claimId": "module-12-C2005",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34765,7 +34723,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2007",
+      "claimId": "module-12-C2006",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.558",
@@ -34781,7 +34739,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2008",
+      "claimId": "module-12-C2007",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -34797,7 +34755,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2009",
+      "claimId": "module-12-C2008",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.806",
@@ -34813,7 +34771,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2010",
+      "claimId": "module-12-C2009",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Property Code § 5.008",
@@ -34829,7 +34787,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2011",
+      "claimId": "module-12-C2010",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Property Code § 5.008",
@@ -34845,7 +34803,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2012",
+      "claimId": "module-12-C2011",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.563",
@@ -34861,7 +34819,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2013",
+      "claimId": "module-12-C2012",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.563",
@@ -34877,7 +34835,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2014",
+      "claimId": "module-12-C2013",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.562",
@@ -34893,7 +34851,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2015",
+      "claimId": "module-12-C2014",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.555",
@@ -34909,7 +34867,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2016",
+      "claimId": "module-12-C2015",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.806",
@@ -34925,7 +34883,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2017",
+      "claimId": "module-12-C2016",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.654",
@@ -34941,7 +34899,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2018",
+      "claimId": "module-12-C2017",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "§ 535.2",
@@ -34957,7 +34915,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2019",
+      "claimId": "module-12-C2018",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.204",
@@ -34973,7 +34931,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2020",
+      "claimId": "module-12-C2019",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Civil Practice and Remedies Code § 16.004",
@@ -34989,7 +34947,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2021",
+      "claimId": "module-12-C2020",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.552",
@@ -35005,7 +34963,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2022",
+      "claimId": "module-12-C2021",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.651",
@@ -35021,7 +34979,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2023",
+      "claimId": "module-12-C2022",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.552",
@@ -35037,7 +34995,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2024",
+      "claimId": "module-12-C2023",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.204",
@@ -35053,7 +35011,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2025",
+      "claimId": "module-12-C2024",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.652",
@@ -35069,7 +35027,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2026",
+      "claimId": "module-12-C2025",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.805",
@@ -35085,7 +35043,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2027",
+      "claimId": "module-12-C2026",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.555",
@@ -35101,7 +35059,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2028",
+      "claimId": "module-12-C2027",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.806",
@@ -35117,7 +35075,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2029",
+      "claimId": "module-12-C2028",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.552",
@@ -35133,7 +35091,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2030",
+      "claimId": "module-12-C2029",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.558",
@@ -35149,7 +35107,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2031",
+      "claimId": "module-12-C2030",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.563",
@@ -35165,7 +35123,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2032",
+      "claimId": "module-12-C2031",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.558",
@@ -35181,7 +35139,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2033",
+      "claimId": "module-12-C2032",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.563",
@@ -35197,7 +35155,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2034",
+      "claimId": "module-12-C2033",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.562",
@@ -35213,7 +35171,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2035",
+      "claimId": "module-12-C2034",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.562",
@@ -35229,7 +35187,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2036",
+      "claimId": "module-12-C2035",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.561",
@@ -35245,7 +35203,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2037",
+      "claimId": "module-12-C2036",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.559",
@@ -35261,7 +35219,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2038",
+      "claimId": "module-12-C2037",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.555",
@@ -35277,7 +35235,7 @@
       "correctionCommit": null
     },
     {
-      "claimId": "module-12-C2039",
+      "claimId": "module-12-C2038",
       "module": "module-12",
       "unit": "Risk Management",
       "citation": "Occupations Code § 1101.806",

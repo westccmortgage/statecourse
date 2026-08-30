@@ -194,16 +194,23 @@ by purchase or lease, any goods or services, except that the term does not inclu
 consumer that has assets of $25 million or more, or that is owned or controlled by a corporation or
 entity with assets of $25 million or more."
 
-Every clause does work. *"Seeks or acquires"* — no completed purchase is needed, so a buyer who walks
-away because of what you said is still a consumer. *"By purchase or lease"* — your leasing practice
-sits inside the Act. *"Any goods or services"* — § 17.45(1) defines "Goods" as "tangible chattels or
-real property purchased or leased for use," so real property is expressly a good, and § 17.45(2)
-defines "Services" as "work, labor, or service purchased or leased for use, including services
-furnished in connection with the sale or repair of goods," so brokerage is a service. *The $25
-million exclusion* — a "business consumer," defined at § 17.45(10) as "an individual, partnership, or
-corporation who seeks or acquires by purchase or lease, any goods or services for commercial or
-business use," loses consumer status at $25 million in assets, or when "owned or controlled by a
-corporation or entity with assets of $25 million or more." An asset test, not a revenue test.
+Every clause does work.
+
+*"Seeks or acquires."* No completed purchase is needed, so a buyer who walks away because of what you
+said is still a consumer.
+
+*"By purchase or lease."* Your leasing and property-management practice sits inside the Act.
+
+*"Any goods or services."* Section 17.45(1) defines "Goods" as "tangible chattels or real property
+purchased or leased for use," so real property is expressly a good, and § 17.45(2) defines "Services"
+as "work, labor, or service purchased or leased for use, including services furnished in connection
+with the sale or repair of goods," so brokerage is a service.
+
+*The $25 million exclusion.* A "business consumer," defined at § 17.45(10) as "an individual,
+partnership, or corporation who seeks or acquires by purchase or lease, any goods or services for
+commercial or business use," loses consumer status at $25 million in assets, or when "owned or
+controlled by a corporation or entity with assets of $25 million or more." An asset test, not a
+revenue test.
 
 Now the point students most often miss. **Read the definition again and find the word "privity." It
 is not there.** Section 17.45(4) asks who sought or acquired goods or services, not from whom, and it
@@ -520,7 +527,8 @@ advice, judgment, or opinion."* Four conditions in one clause: *express*, so a c
 implication is outside it; a *misrepresentation*, so a true statement is outside it; about a
 *material fact*; and a statement that *cannot be characterized as advice, judgment, or opinion* —
 which is why experienced license holders speak as they do. "In my opinion this neighbourhood has held
-its value well" is opinion; "This house is 2,900 square feet" is a fact. A court reads the substance,
+its value well" is opinion. "This house is 2,900 square feet" is a fact. "I think the roof looks to be
+in good shape" is judgment. "The roof was replaced in 2021" is a fact. A court reads the substance,
 so dressing a hard factual claim in the words "I think" will not convert it into an opinion.
 
 *Carve-out (2): "a failure to disclose information in violation of Section 17.46(b)(24)."* Silence.
