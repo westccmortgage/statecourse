@@ -38,8 +38,8 @@ orally or in writing at first contact with another party or with the other party
 communication with a party about a proposed transaction regarding specific real property; and 22 TAC
 § 531.20 adopts the IABS form, TREC No. IABS 1-2, and prescribes how a completed notice may be
 provided. Module 02 teaches § 1101.558 and § 531.20 in full, including the three exceptions in
-§ 1101.558(c), the enumerated delivery methods and the constraints on reproducing the form; the text
-of TREC No. IABS 1-2 itself was not held for this course. Module 05 teaches the 2026 buyer-agreement
+§ 1101.558(c), the enumerated delivery methods and the constraints on reproducing the form. TREC No.
+IABS 1-2 is held for this course, but its text is not taught; § 531.20, the rule that adopts it, is. Module 05 teaches the 2026 buyer-agreement
 sections that interlock with those exceptions, and Module 10 teaches the disciplinary grounds,
 including § 1101.652(b), which reaches a license holder who "fails to make clear to all parties to a
 real estate transaction the party for whom the license holder is acting." What belongs to *this*

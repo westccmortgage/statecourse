@@ -830,9 +830,10 @@ you will see — they do not touch the website-link duty in the Commission's rul
 **The rule: 22 TAC § 531.20.** The Commission's IABS rule opens by adopting the form: "The
 Commission adopts by reference the Information About Brokerage Services Notice, TREC No. IABS 1-2
 (IABS Notice). The IABS Notice is published by and available from the Texas Real Estate Commission,
-P.O. Box 12188, Austin, Texas 78711-2188, www.trec.texas.gov." **The IABS Notice form itself was not
-held for this course**, so this module does not reproduce or paraphrase the language printed on the
-form; what it teaches is the rule and the statute that govern its use.
+P.O. Box 12188, Austin, Texas 78711-2188, www.trec.texas.gov." **The IABS Notice form itself is held for
+this course, but its text is not taught here**, so this module does not reproduce or paraphrase the
+language printed on the form; what it teaches is § 531.20, the rule that adopts the form, and the
+statute that governs its use.
 
 Subsection (b) imposes two duties. Under (b)(1), each license holder shall provide "a link to a
 completed IABS Notice in a readily noticeable place on the homepage of each business website,
@@ -885,7 +886,7 @@ place of business and linked from the homepage of each business website under th
 two-font-size structure as the IABS link. **Module 08 teaches § 531.18.** For this unit the point is
 only that it is a different form: it carries a display-in-the-office requirement the IABS rule does
 not, it is not delivered at first substantive communication, and it means two links on your
-homepage, not one. The Consumer Protection Notice form itself was not held for this course either.
+homepage, not one. The Consumer Protection Notice form itself was not held for this course.
 
 **How the 2026 changes wire into all of this.** Section 1101.562(b), which you met in Unit 3, routes
 a non-representation showing through this unit's two duties: before showing property without

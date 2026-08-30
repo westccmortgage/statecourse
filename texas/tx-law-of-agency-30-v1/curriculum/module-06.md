@@ -524,9 +524,10 @@ restraint. It does not prescribe a form. It does not set a deadline expressed in
 the broker "provides" the notice, and since subsection (b) makes it a condition of a valid appointment,
 the sound reading is that it must be given for the appointment to be effective. It does not require the
 parties to sign the notice, or to consent again at the moment of appointment — the consent was obtained
-earlier under § 1101.559. And it does not require the notice to explain the appointee's duties. The
-Commission's promulgated forms are not held for this course, and this module therefore does not describe
-any particular form's contents. What is held is the statute, and the statute requires written notice of
+earlier under § 1101.559. And it does not require the notice to explain the appointee's duties. The only
+Commission-promulgated form held for this course is the IABS notice, TREC No. IABS 1-2, whose text this
+course does not teach; no appointment form is held, and this module therefore does not describe any
+particular form's contents. What is held is the statute, and the statute requires written notice of
 the appointment to everyone in the transaction.
 
 **What the appointment actually buys: subsection (c).** "A license holder appointed under this section
@@ -769,9 +770,10 @@ transaction; or (2) another license holder who represents another party to the t
 contact. Not first offer, not first showing — first contact. Section 1101.558(b-1) then requires the
 written notice, in at least a 10-point font, at first substantive communication about specific real
 property, and 22 TAC § 531.20 adopts the Information About Brokerage Services Notice, TREC No. IABS 1-2,
-and prescribes how it is delivered. Module 02 owns the IABS. The published text of TREC No. IABS 1-2
-itself was not held for this course, so this module describes what the statute and the rule require of
-the notice and does not quote the form.
+and prescribes how it is delivered. Module 02 owns the IABS. The form itself, TREC No. IABS 1-2,
+is held for this course, but its text is not taught: Module 02 teaches 22 TAC § 531.20, the rule that
+adopts it. This module describes what the statute and the rule require of the notice and does not quote
+the form.
 
 Two features of that gate belong here. First, § 1101.558(b-1)(1)
 requires the notice to describe "the ways in which a broker can represent a party to a real estate
@@ -1003,8 +1005,9 @@ separate violation, the broker liable alongside you under § 1101.803, and § 11
 discipline "does not relieve the person from civil or criminal liability." Module 10 teaches
 § 1101.652 and the whole of the 22 TAC § 535.191 schedule.
 
-Two things were looked for and not found, and you should know it. The published text of the Information
-About Brokerage Services notice, TREC No. IABS 1-2, was not held for this course; this module teaches
-what § 1101.558(b-1) and 22 TAC § 531.20 require of that notice and does not quote the form. And no Texas
+Two limits on what is taught here, and you should know both. The Information About Brokerage Services
+notice, TREC No. IABS 1-2, is held for this course, but its text is not taught; this module teaches what
+§ 1101.558(b-1) and 22 TAC § 531.20 — the adopting rule, taught in Module 02 — require of that notice,
+and does not quote the form. And no Texas
 appellate decision construing § 1101.561(a) was held; the module therefore reads the supersession clause
 narrowly, as displacing other law in favour of Subchapter L and doing nothing more.
