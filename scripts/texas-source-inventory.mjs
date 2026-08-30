@@ -95,11 +95,11 @@ function buildInventory() {
    passing score are all derived from them in config/texas/trec-rules-source-lock.mjs. Occupations
    Code chs. 1101 and 1103 are NOT substitutes for those administrative rules. */
 const CONTROLLING = [
-  { path: "texas/trec-sources/trec-rules/535.55.txt", why: "sales agent qualifying-education requirement" },
-  { path: "texas/trec-sources/trec-rules/535.62.txt", why: "course approval; (b)(7) fixes every assessment count this course builds to" },
-  { path: "texas/trec-sources/trec-rules/535.63.txt", why: "instructor qualification" },
-  { path: "texas/trec-sources/trec-rules/535.64.txt", why: "adopts PRINS 2-1 by reference, making the outline transcription a compliance artifact" },
-  { path: "texas/trec-sources/trec-rules/535.65.txt", why: "provider operations: 70% unweighted passing score, version rotation, identity validation, retake rule, completion record" },
+  { path: "texas/trec-sources/trec-rules/535.55.txt", why: "sales agent qualifying-education requirement, and the rule that fixes Law of Agency at 30 credit hours — the multiplicand in every per-hour assessment count" },
+  { path: "texas/trec-sources/trec-rules/535.62.txt", why: "course approval; (b)(7) fixes the topic-quiz and scenario counts and the distance-education gating, and (b)(8) fixes every final-examination count, for Principles II and Law of Agency alike" },
+  { path: "texas/trec-sources/trec-rules/535.63.txt", why: "instructor qualification — a condition of course approval and of § 535.65(g)(2)(D), which makes a qualified instructor responsible for the rationale behind grading" },
+  { path: "texas/trec-sources/trec-rules/535.64.txt", why: "adopts PRINS 1-1, PRINS 2-1 and LOA-1 by reference, making each outline transcription a compliance artifact and fixing the topics every examination version must cover" },
+  { path: "texas/trec-sources/trec-rules/535.65.txt", why: "provider operations: 70% unweighted passing score, version rotation, examination confidentiality, identity validation, the 90-day subsequent-examination rules, four-year record retention and the completion record" },
   { path: "texas/trec-sources/PRINS2-1.pdf", why: "the Principles II course approval form itself" },
   { path: "texas/trec-sources/statutes/OC.1101.htm", why: "TRELA — the substantive law of topics T06 and T07" },
   { path: "texas/trec-sources/statutes/OC.1103.htm", why: "appraiser licensing — topic T03" },

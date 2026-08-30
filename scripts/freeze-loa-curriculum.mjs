@@ -54,6 +54,24 @@ const BREAK_HISTORY = Object.freeze([
       "node --test tests/*.test.mjs — assessment-dependency and block-coverage suites",
     ]),
   }),
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v2",
+    on: "2026-08-30",
+    module: "NONE — no curriculum file changed, and all twelve module hashes are byte-identical to the ones this freeze already carried.",
+    change:
+      "config/texas/law-of-agency-statute-sources.mjs, which this freeze hashes as the 'source register', gained the five 22 TAC rules that govern the course as a course rather than its law: §§ 535.62, 535.63 and 535.65 were registered for the first time, and §§ 535.55 and 535.64 were rewritten from one-line records to subsection-level ones. Registered sources 51 -> 55 (the fifth addition is the Secretary of State's Texas Register capture, at tier contextual, which is where the subsection lettering of §§ 535.62 and 535.65 is read from). Unit coverage is untouched at 57/57 because none of these rules is cited by any unit: they control artefacts, and the artefact each subsection controls is named on its record and inverted into ASSESSMENT_AND_DELIVERY_CONTROLS.",
+    reason:
+      "Assessment authoring starts now. The register deliberately omitted §§ 535.62, 535.63 and 535.65 while there was no assessment engine, instructor dossier or delivery-control artefact for them to be controlling over; carrying that omission into the assessment build would mean an acceptance package that leaves out the rules governing its own examinations, passing score, retakes, proctoring and record retention.",
+    foundBy: "the assessment-rule registration pass, working from the register's own note instructing that the three rules be added when an LOA assessment or provider artefact is built",
+    whyTheFreezeIdIsNOTBumped:
+      "The freeze exists so that no CURRICULUM WORDING changes silently. Nothing in the curriculum changed: the twelve module hashes are identical, the claim audit, time evidence and quotation reconcile are unchanged, and the LOA-1 outline, misconception checks, time budget and quotation ledger all hash the same. What changed is the evidence layer's own completeness, in a direction that only adds sourced records, and the diff of content-freeze.json states it in one line: registeredSourcesVerified 51/51 -> 55/55. Bumping the id would also strand the twelve block-map files, which name the freeze in prose.",
+    auditsReRun: Object.freeze([
+      "node scripts/texas-source-inventory.mjs — exit 0; 55/55 law-of-agency sources verified against disk, every controlling source present",
+      "node --test tests/*.test.mjs — 1007 tests, 0 failures",
+      "register load-time invariants — every hash recomputed from disk, the five rules cross-checked against config/texas/trec-rules-source-lock.mjs, the Texas Register capture cross-checked against regulatory-manifest.mjs, and every artefact a rule is registered as controlling either exists on disk or is marked planned:",
+      "unit coverage 57/57 held, 0 uncovered, 0 controlling gaps",
+    ]),
+  }),
 ]);
 
 const sha = (p) => crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");
@@ -71,7 +89,9 @@ if (coverage.held.length !== 57 || coverage.uncovered.length !== 0) {
   failures.push(`unit coverage is ${coverage.held.length} held / ${coverage.uncovered.length} uncovered, not 57 / 0`);
 }
 const validation = sourceValidation();
-if ((validation.mismatches || []).length !== 0) failures.push(`${validation.mismatches.length} source hash mismatches`);
+/* sourceValidation() reports hash mismatches as `hashMismatches`. This gate read `mismatches`,
+   which is always undefined, so it could never fire; corrected 2026-08-30. */
+if (validation.hashMismatches.length !== 0) failures.push(`${validation.hashMismatches.length} source hash mismatches`);
 
 const unmatched = (() => {
   const all = [...audit.quoteFailures, ...(audit.quoteFindings || []).filter((q) => q.status === "ATTRIBUTION_REVIEW"), ...(audit.quoteTruncations || [])];

@@ -82,8 +82,27 @@ written notice of appointment and to whom; the three lettered exceptions in § 1
 scope limit in § 1101.560(c) ("during negotiations", "to the party to whom the license holder is
 appointed"); what § 1101.561(a) does and does not displace.
 
-**The LOA block map does not exist yet.** The screen id is a reservation against the established
-convention, not a live reference.
+**The block map now exists, and the placement is confirmed against it — not merely reserved.**
+`config/texas/law-of-agency-module-6-blocks.mjs` was authored after this production file was drafted,
+by `scripts/generate-tx-law-of-agency-block-maps.mjs` from the frozen module's own headings. Its
+block `t06u3` (code `T06U3`, title "Representation of More Than One Party in a Transaction") carries exactly the three screens this file
+predicted, with exactly the content ranges it predicted:
+
+| Screen | Type | Title | Content range |
+|---|---|---|---|
+| `t06u3-s1` | instruction | Representation of More Than One Party in a Transaction | `RANGE("## Unit: Representation of More Than One Party in a Transaction", "### Statute reading exercise: The mechanics of appointment")` |
+| `t06u3-s2` | practice | Statute reading exercise: The mechanics of appointment | begins at `### Statute reading exercise: The mechanics of appointment` |
+| `t06u3-s3` | retrieval | Retrieval check | `questionId: "t06u3-q1"` |
+
+The video attaches to **`t06u3-s1`**, the instruction screen, and plays at the foot of it. Read
+against the block map, "the screen it follows" is therefore precise: it follows nothing inside the
+unit — it is the last element of `t06u3-s1`, after that screen's whole content range, and the screen
+it precedes is `t06u3-s2`.
+
+**Nothing is wired.** That block map is a generated file, this production file does not edit it, and
+no `screenMedia` entry for this video exists anywhere. The map's own header records that the Law of
+Agency retrieval bank does not exist yet either, so no block in it is deliverable to a student today.
+See §11 for the registry entry, written and commented **NOT ACTIVE**.
 
 ---
 
@@ -685,7 +704,7 @@ Everything the video says is in that prose. Nothing was removed from the prose t
 
 **Optional video time is not counted toward LOA-1's required 1,500 minutes.** T06U3's 30 prescribed
 minutes are spent on reading and activity minutes under `config/texas/law-of-agency-time-budget.mjs`.
-This video's ≈ 3 minutes are additional and unbudgeted; adding it changes no figure in that file, and
+This video's ≈ 3 minutes 20 seconds are additional and unbudgeted; adding it changes no figure in that file, and
 no figure was reduced to make room for it.
 
 **Registry entry — WRITTEN, AND COMMENTED *NOT ACTIVE*.** Recorded so the wiring is unambiguous
@@ -702,8 +721,10 @@ Loan Estimate and Promissory Note videos — as a hand-authored `screenMedia` sp
 which the generator merges onto the screen it names and which refuses to generate if the screen id
 does not exist (`scripts/lib/generate-ca-block-maps.mjs`, the `spec.screenMedia` block). The Texas
 generator core, `scripts/lib/generate-tx-block-maps.mjs`, does **not** carry that hook yet. Adding it
-is a prerequisite of activation and is recorded in §10 of the plan as an open item. Nothing here
-edits either file.
+is a prerequisite of activation. It is recorded as open item 3 in
+`video-production/production-readiness-addendum.md` §8 — not in the video instruction plan, which is
+a hashed artifact of the curriculum freeze and was left byte-identical by this pass. Nothing here
+edits any of those files.
 
 ```js
 // NOT ACTIVE — DO NOT ADD. This is a record of the intended wiring, not the wiring.
@@ -769,8 +790,14 @@ measurement.
 
 ## 13. Accessibility checklist
 
+- [x] An English caption file exists on disk as real, well-formed WebVTT — `video-production/captions/tx-intermediary-brokerage.provisional.vtt` — with final cue text and a `NOTE` block
+      declaring its timings provisional. It is held outside `public/statecourse/media/` so it
+      cannot be served before a render exists.
 - [ ] Captions delivered as a separate synchronized track (`.vtt`), **not burned into the image**
-- [ ] Caption timings rebuilt from the delivered render, not carried over from §8's provisional set
+- [ ] Caption timings rebuilt from the delivered render's own audio, not carried over from §8's
+      provisional set — this is a release gate, not a nicety
+- [ ] Caption language declared `en`; the player's track is added with `srclang="en"` and a
+      visible label, and the captions toggle is keyboard reachable
 - [ ] Captions positioned clear of the region under discussion; they sit in the lower ivory margin and
       never over highlighted text or over a diagram panel's labels
 - [ ] Clean transcript (§9) published as text on the same screen
@@ -791,3 +818,100 @@ measurement.
 - [ ] Video optional and non-blocking: no progress gate, no completion requirement, no assessment
       depends on having watched it
 - [ ] No quiz question, answer, or answer recap inside the video
+- [ ] Retrieval lives on a later screen, never inside the video, and no highlight is on screen when
+      the student is asked to retrieve — every video ends on the avatar with no document and no panel
+- [ ] Nothing in the video, its captions, its poster, its transcript or its screen states or implies
+      TREC approval, endorsement, review or licensure of the video, the course or StateCourse
+
+---
+
+## 14. Source-fidelity verification log
+
+Every string this video puts on screen or reads aloud from the held form was checked against
+`texas/trec-sources/forms/IABS-1-2.pdf` itself before it was written here — not against memory, not
+against Module 06, and not against any secondary description of the form. Method: the single page
+was opened with `pdfplumber`, its text lines and words extracted with their bounding boxes, the two
+ligature glyphs the file encodes as `(cid:415)` (ti) and `(cid:425)` (tt) mapped back to their
+letters, curly quotation marks folded to straight, whitespace collapsed — and each candidate string
+tested for verbatim containment in the result. Statutory strings were checked the same way against
+`texas/trec-sources/statutes/OC.1101.htm`.
+
+**Result across the three-video set: 50 form strings verified verbatim, 0 mismatches**, plus the
+statutory checks listed below. The held file's sha256 is
+`5056930b66d237a7a4376db0c43f833929600f0b6e5ce6e42a417da824ef6b20`, matching
+`texas/trec-sources/source-inventory.json`.
+
+### Voicing conventions — the only permitted departures from the printed characters
+
+Narration reads the page aloud, so four things are voiced rather than spelled. Each is a rendering of
+the print, never a change to it, and nothing else is permitted:
+
+1. **A printed slash is voiced "or".** `buyer/tenant` is read "buyer or tenant".
+2. **Printed ALL-CAPS emphasis is voiced in ordinary case.** `A BROKER is responsible…` is read "A
+   broker is responsible…".
+3. **Parentheses around an apposition are voiced without the brackets.** `to each party (owner and
+   buyer)` is read "to each party, owner and buyer".
+4. **A statute's numbered subdivisions are voiced in order, joined by the statute's own conjunction.**
+   § 1101.561(b)'s "(1) a buyer or tenant; and (2) a seller or landlord" is read "a buyer or tenant
+   and a seller or landlord".
+
+Applying those four rules and nothing else, **every fragment of narration that reads the form or the
+statute is character-for-character the source text.** A reviewer can hold the page beside the
+transcript and check it.
+
+### Repairs made during this verification
+
+The verification found nine places where narration was reading the form but had drifted from its
+printed wording. All nine were repaired in the script, the prompt, the captions and the transcript
+together, and the scene durations recomputed. They are listed here because a reviewer comparing an
+earlier draft will see the difference:
+
+| # | Scene | Was | Now — the source's wording |
+|---|---|---|---|
+| 1 | 2 | "a broker must agree to act as an intermediary if the broker agrees to represent both a buyer or tenant and a seller or landlord" | § 1101.561(b) as enacted: "a broker must agree to act as an intermediary **under this subchapter** if the broker agrees to **represent in a transaction** a buyer or tenant and a seller or landlord" |
+| 2 | 4 | bullet two ended "…carry out the instructions of each party." | "…and carry out the instructions of each party **to the transaction**." |
+| 3 | 6 | sub-bullet three read "and any confidential information a party instructs the broker in writing not to disclose." | "and any confidential information **or any other information** that a party **specifically** instructs the broker in writing not to disclose, **unless required to do so by law**." |
+
+Repair 3 is the most consequential of the nine made across the set. The earlier line dropped a
+statutory exception — *unless required to do so by law* — from a confidentiality rule, while the
+highlight box around that sub-bullet showed the student the exception on the page. The narration now
+reads the provision whole.
+
+Scenes 1, 3, 5 and 7 needed no repair.
+
+**Statutory checks for this video, all against the held `OC.1101.htm`:** the words *dual agent* and
+*dual agency* appear **zero** times in Chapter 1101 (the phrase *dual capacity* appears once, in
+§ 1101.652(b)(16), and means something else — taught in Module 06's prose, not here);
+§ 1101.559(a)'s two written-consent requirements; § 1101.559(c)'s "act fairly and impartially";
+§ 1101.560(a)–(c), including (b)'s "only if" and (c)'s "during negotiations, to the party to whom
+the license holder is appointed"; § 1101.561(b)'s "must"; and § 1101.651(d), which binds "A broker
+and any broker or sales agent appointed under Section 1101.560", and whose (d)(3)(C) exception reads
+"the information materially relates to the condition of the property". Scene 7's closing judgment
+point rests on that last clause and quotes its sense, not a paraphrase of it.
+
+### Coordinate verification
+
+Every highlight target in §6 is now the measured bounding box of the printed line, lines, or words it
+names — not an estimate. Sub-line targets are given as word-exact rectangles, and a provision that
+straddles a line break is drawn as one cue in two or three rectangles rather than as one loose box.
+Band boundaries were checked for straddling: no printed line crosses any crop edge.
+
+One highlight target was wrong and is corrected in §6: Scene 3's inner cue on
+`in conspicuous bold or underlined print` was given as `x ≈ 26.4–260, y 392.9–403.2`. That phrase
+straddles a line break on the printed page, so the estimate marked only its second half and swept in
+five words that follow it. It is now one cue in two word-exact rectangles —
+`x 487.7–582.5, y 382.9–392.8` and `x 26.4–95.1, y 393.2–403.2` — bounding the phrase and nothing
+else.
+
+Scene 6's fourth cue is confirmed as deliberately covering **both** printed lines of sub-bullet three
+(y 466.8–487.1), so the exception clause `disclose, unless required to do so by law.` is inside the
+box the narration is reading. Band F's boundaries were checked for straddling and are clean.
+
+### What was NOT verified, and cannot be here
+
+- **Highlight pixel coordinates.** Page-point space is as far as it is possible to go before a render
+  exists. The conversion to render pixels is measured on the delivered frames.
+- **Caption timings.** Provisional, computed at 150 wpm. Rebuilt from the render's audio.
+- **The rendered frames themselves.** Nothing has been rendered, so no frame has been pixel-diffed
+  against the held page. That check is step 3 of the post-render pipeline and it is a gate, not a
+  formality.

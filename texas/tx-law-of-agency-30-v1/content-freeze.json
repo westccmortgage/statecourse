@@ -21,6 +21,21 @@
         "quotation reconcile — 126 unmatched, 0 undispositioned, 0 defects, 0 orphaned, 0 resurfaced",
         "node --test tests/*.test.mjs — assessment-dependency and block-coverage suites"
       ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v2",
+      "on": "2026-08-30",
+      "module": "NONE — no curriculum file changed, and all twelve module hashes are byte-identical to the ones this freeze already carried.",
+      "change": "config/texas/law-of-agency-statute-sources.mjs, which this freeze hashes as the 'source register', gained the five 22 TAC rules that govern the course as a course rather than its law: §§ 535.62, 535.63 and 535.65 were registered for the first time, and §§ 535.55 and 535.64 were rewritten from one-line records to subsection-level ones. Registered sources 51 -> 55 (the fifth addition is the Secretary of State's Texas Register capture, at tier contextual, which is where the subsection lettering of §§ 535.62 and 535.65 is read from). Unit coverage is untouched at 57/57 because none of these rules is cited by any unit: they control artefacts, and the artefact each subsection controls is named on its record and inverted into ASSESSMENT_AND_DELIVERY_CONTROLS.",
+      "reason": "Assessment authoring starts now. The register deliberately omitted §§ 535.62, 535.63 and 535.65 while there was no assessment engine, instructor dossier or delivery-control artefact for them to be controlling over; carrying that omission into the assessment build would mean an acceptance package that leaves out the rules governing its own examinations, passing score, retakes, proctoring and record retention.",
+      "foundBy": "the assessment-rule registration pass, working from the register's own note instructing that the three rules be added when an LOA assessment or provider artefact is built",
+      "whyTheFreezeIdIsNOTBumped": "The freeze exists so that no CURRICULUM WORDING changes silently. Nothing in the curriculum changed: the twelve module hashes are identical, the claim audit, time evidence and quotation reconcile are unchanged, and the LOA-1 outline, misconception checks, time budget and quotation ledger all hash the same. What changed is the evidence layer's own completeness, in a direction that only adds sourced records, and the diff of content-freeze.json states it in one line: registeredSourcesVerified 51/51 -> 55/55. Bumping the id would also strand the twelve block-map files, which name the freeze in prose.",
+      "auditsReRun": [
+        "node scripts/texas-source-inventory.mjs — exit 0; 55/55 law-of-agency sources verified against disk, every controlling source present",
+        "node --test tests/*.test.mjs — 1007 tests, 0 failures",
+        "register load-time invariants — every hash recomputed from disk, the five rules cross-checked against config/texas/trec-rules-source-lock.mjs, the Texas Register capture cross-checked against regulatory-manifest.mjs, and every artefact a rule is registered as controlling either exists on disk or is marked planned:",
+        "unit coverage 57/57 held, 0 uncovered, 0 controlling gaps"
+      ]
     }
   ],
   "generatedBy": "scripts/freeze-loa-curriculum.mjs",
@@ -137,7 +152,7 @@
     "resurfacedDispositions": 0,
     "retiredDispositions": 28,
     "sourcingDefects": 0,
-    "registeredSourcesVerified": "51/51",
+    "registeredSourcesVerified": "55/55",
     "misconceptionChecks": 7,
     "scenariosPlanned": 5,
     "quizItemsPlanned": 58
@@ -248,8 +263,8 @@
     },
     "source register": {
       "path": "config/texas/law-of-agency-statute-sources.mjs",
-      "sha256": "aad1c7311812c259c24d9b78cbb9146c0160d9d3bc760dc396f024e566a873f5",
-      "bytes": 176225
+      "sha256": "11d11b4f88278244684fa908a905bc06336dacb4570f620bee783a4f91b14b41",
+      "bytes": 227006
     },
     "quotation-disposition ledger": {
       "path": "config/texas/quotation-dispositions.mjs",

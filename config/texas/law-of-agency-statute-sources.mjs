@@ -1,6 +1,6 @@
 /**
- * Texas statutes, federal law, TREC rules, the adopted IABS form and TREC guidance for the Law of
- * Agency (LOA-1, 30 hours) — the read register.
+ * Texas statutes, federal law, TREC rules, the adopted IABS form, TREC guidance and the Secretary
+ * of State's Texas Register capture for the Law of Agency (LOA-1, 30 hours) — the read register.
  *
  * THE RULE THIS FILE ENFORCES BY ITS SHAPE: HELD IS NOT READ, AND READ IS NOT RELIED ON. Every
  * source below is a document on disk. Its sha256 and byte count are recomputed from that file by
@@ -9,25 +9,35 @@
  * establishes.
  *
  * A CHAPTER CAN SIT ON DISK FULLY HASHED AND CONTRIBUTE NOTHING. texas/trec-sources holds 146 files.
- * This register names 51 of them, and the other 95 are ABSENT from it entirely rather than listed
+ * This register names 55 of them, and the other 91 are ABSENT from it entirely rather than listed
  * for completeness: the other five course approval forms, the Texas Constitution file, Occupations
  * Code ch. 1103, Property Code chs. 11, 12, 13, 21, 41, 51, 53, 91, 92, 111 and 202, Estates Code
  * chs. 111, 112, 201, 203 and 251, Business and Commerce Code ch. 9, Business Organizations Code
  * ch. 200, Family Code ch. 3, Finance Code ch. 343, Government Code chs. 4001 and 4005, Health and
  * Safety Code ch. 361, Insurance Code ch. 2501, Local Government Code chs. 211, 212 and 232, Natural
- * Resources Code ch. 21, Penal Code ch. 32, Tax Code chs. 11 and 32, Water Code ch. 11, the Texas
- * Register capture, every RESPA, TILA, ECOA, HMDA, CRA, bank-holding and environmental federal file,
+ * Resources Code ch. 21, Penal Code ch. 32, Tax Code chs. 11 and 32, Water Code ch. 11, every
+ * RESPA, TILA, ECOA, HMDA, CRA, bank-holding and environmental federal file,
  * 26 U.S.C. §§ 1445 and 860A, and the Fair Housing Act sections this course does not cite —
  * 42 U.S.C. §§ 3601, 3605, 3607, 3610, 3611 and 3617. They were read for other Texas courses, or for
  * none; they were not read for this one, so they are not registered for it.
  *
- * THREE RULES ARE HELD AND DELIBERATELY NOT REGISTERED HERE: 22 TAC §§ 535.62, 535.63 and 535.65.
- * They are course-approval, instructor-qualification and provider-operations rules, and this course
- * has no assessment engine, no instructor dossier and no delivery-control artefact yet for them to
- * be controlling over. §§ 535.55 and 535.64 ARE registered, because the 30-hour Law of Agency
- * requirement and the adoption of LOA-1 by reference bear on what exists today. When an LOA
- * assessment or provider artefact is built, the other three belong here and this note is the
- * instruction to add them.
+ * THE THREE RULES THIS REGISTER USED TO OMIT ARE NOW REGISTERED, AND THE REASON THEY WERE OMITTED
+ * IS THE REASON THEY ARE HERE. Until 2026-08-30 this file held 22 TAC §§ 535.62, 535.63 and 535.65
+ * on disk and deliberately left them out, because the course had no assessment engine, no instructor
+ * dossier and no delivery-control artefact for them to be controlling OVER. Assessment authoring
+ * begins now, so the omission would become the opposite of what it was: an acceptance package that
+ * leaves out the rules governing its own examinations. All five course-governing rules —
+ * §§ 535.55, 535.62, 535.63, 535.64 and 535.65 — are registered below as CONTROLLING, at subsection
+ * granularity, with the artefact each subsection controls named on the record and inverted into
+ * ASSESSMENT_AND_DELIVERY_CONTROLS. §§ 535.55 and 535.64 were already registered and have been
+ * rewritten to the same granularity rather than left as one-line records.
+ *
+ * THEY CONTROL ARTEFACTS, NOT UNITS, AND THAT IS RECORDED AS A DIFFERENCE RATHER THAN GLOSSED.
+ * No LOA-1 unit teaches any of the five, so each carries an empty reliedOnByUnits and a populated
+ * reliedOnByArtifacts; unit coverage is unchanged by their arrival at 57/57. Occupations Code
+ * ch. 1101 is not a substitute for any of them: § 1101.151 confers the rulemaking power and
+ * §§ 1101.301 and 1101.358 require qualifying education, and none of them states a single one of
+ * the assessment or delivery requirements these rules impose.
  *
  * WHERE THE UNIT ATTRIBUTIONS COME FROM, AND WHY THEY WERE NOT GUESSED. `primaryUnits` and
  * `pointerUnits` in every read record below are DERIVED, not asserted. The derivation is
@@ -55,16 +65,19 @@
  * SOURCE TIERS. Every registered source carries a `tier`:
  *   "controlling"  — binding law or rule whose operative text supplies a proposition the course
  *                    teaches as law, or on which the course's compliance logic depends. Every Texas
- *                    chapter, every federal section and all 34 administrative rules below.
+ *                    chapter, every federal section and all 37 administrative rules below.
  *   "guidance"     — official explanatory material published by the regulator that is not itself
  *                    binding. OFFICIAL EXPLANATORY GUIDANCE MAY EXPLAIN CONTROLLING LAW BUT MAY NOT
  *                    REPLACE IT, and this register enforces that rather than merely saying it: a
  *                    load-time invariant below rejects any unit whose only support is guidance or
  *                    contextual. Two sources: TREC's 2026 buyer/tenant representation article and
  *                    TREC's contracts listing page.
- *   "contextual"   — read and used for background, framing or naming, with no operative rule taken.
- *                    No LOA source currently sits in this tier; the tier is kept because the
- *                    invariant that guidance cannot carry a unit alone has to be able to name it.
+ *   "contextual"   — read and used for background, framing, naming, or for LOCATING a provision
+ *                    within a rule, with no operative rule taken from it as adopted text. One
+ *                    source: the Secretary of State's Texas Register of 22 May 2026, which is where
+ *                    the subsection lettering of §§ 535.62 and 535.65 is read from and which carries
+ *                    the 2026 amendment to § 535.65(j) as PROPOSED. Nothing is built on it as though
+ *                    it were the codified rule, and no unit may rest on it.
  *   "identified-not-taught" — a source this course HOLDS and IDENTIFIES but takes no proposition
  *                    from. One source: the adopted IABS 1-2 form. See its entry for why it is
  *                    registered at all rather than left out.
@@ -573,8 +586,9 @@ const US42_3606 = federal({
  * environment — texas-sos.appianportalsgov.com serves a JavaScript shell to a non-browser client
  * and the legacy texreg reader redirects to it — so every entry carries codifiedTextCompared:
  * false, exactly as config/texas/trec-rules-source-lock.mjs does for the five rules it holds.
- * Two of the sections below, §§ 535.55 and 535.64, ARE in that lock; a load-time invariant checks
- * that this register's hash, byte count and local path for them agree with the lock's.
+ * Five of the sections below — §§ 535.55, 535.62, 535.63, 535.64 and 535.65 — ARE in that lock; a
+ * load-time invariant checks that this register's hash, byte count and local path for each of them
+ * agree with the lock's, so two registers can never carry different hashes for one file.
  * ──────────────────────────────────────────────────────────────────────────────────────────────── */
 
 const TAC_531_1 = trecRule({
@@ -1080,6 +1094,40 @@ const TAC_537_11 = trecRule({
   ],
 });
 
+/* ────────────────────────────────────────────────────────────────────────────────────────────────
+ * THE FIVE RULES THAT GOVERN THIS COURSE AS A COURSE, RATHER THAN ITS LAW.
+ *
+ * §§ 535.55, 535.62, 535.63, 535.64 and 535.65 teach nothing to a student and no LOA-1 unit cites
+ * them. They govern the COURSE: what it must contain, how it must be assessed, who may teach it,
+ * how it must be delivered, and what must be kept afterwards. Until assessment authoring began,
+ * three of them (§§ 535.62, 535.63 and 535.65) were held on disk and deliberately left out of this
+ * register, because there was no assessment engine, instructor dossier or delivery-control artefact
+ * for them to be controlling OVER. Assessment authoring starts now, so leaving them out would mean
+ * an acceptance package that omits the rules governing its own examinations. They are registered
+ * here, at subsection granularity, with the artefact each subsection controls named on the record.
+ *
+ * OCCUPATIONS CODE ch. 1101 IS NOT A SUBSTITUTE FOR ANY OF THEM. § 1101.151 confers the rulemaking
+ * power and §§ 1101.301 and 1101.358 require qualifying education; none of them states a single
+ * assessment or delivery requirement below. Where a behaviour of this course is governed by a rule
+ * in 22 TAC, the rule is cited. The chapter is the enabling statute, not the operative requirement.
+ *
+ * THE SUBSECTION LETTERING, AND WHAT IT RESTS ON. TREC's Rules page prints no subsection letters —
+ * it renders the structure as indentation. For §§ 535.62 and 535.65 the lettering below is not
+ * inferred from that indentation: the Secretary of State's Texas Register of 22 May 2026 publishes
+ * both sections in full WITH their lettering (TRD-202601975), that file is held at
+ * texas/trec-sources/texas-register/, and on 2026-08-30 the two copies were diffed paragraph by
+ * paragraph and are identical word for word except in the paragraphs the 2026 proposal amends
+ * (§ 535.62(i)(2) and § 535.65(j)). config/texas/trec-rules-source-lock.mjs records that comparison
+ * as SUBSECTION_IDENTIFIER_SOURCE. For §§ 535.55, 535.63 and 535.64 no Secretary of State copy is
+ * held, so their lettering is a reading of the TREC page's nesting corroborated by the rules' own
+ * internal cross-references, and every such record says so in its own words.
+ *
+ * NONE OF THIS IS THE CODIFIED TEXT. The Secretary of State's adopted 22 TAC still could not be
+ * opened from this environment, every entry below carries codifiedTextCompared: false, and
+ * TX_PROVIDER_RULE_SOURCE_LOCK continues to FAIL. A Texas Register publication of a PROPOSAL is a
+ * higher-tier document than TREC's convenience copy and it is still not the adopted rule.
+ * ──────────────────────────────────────────────────────────────────────────────────────────────── */
+
 const TAC_535_55 = trecRule({
   section: "22 TAC §535.55",
   heading: "Education and Sponsorship Requirements for a Sales Agent License",
@@ -1088,11 +1136,188 @@ const TAC_535_55 = trecRule({
   sha256: "d5a8a6b9a97051109563e919f4cdf8d5b1615100e0c9a5dae44b96b30ce11204", bytes: 1205, retrievedOn: "2026-08-29",
   tier: "controlling",
   tierReason:
-    "Controlling for COMPLIANCE rather than curriculum: no unit teaches it and none needs to, but the course could not be built without it. reliedOnByUnits is therefore empty and reliedOnByArtifacts names what actually depends on it.",
+    "Controlling for COMPLIANCE rather than curriculum: no unit teaches it and none needs to, but the course could not be built without it. It is also the rule that fixes THIRTY credit hours for Law of Agency, and every per-hour assessment count this course is built to — 60 questions per examination version, a 120-question bank, three scenario exercises — is that number multiplied by a rate in § 535.62(b)(7)-(8). reliedOnByUnits is therefore empty and reliedOnByArtifacts names what actually depends on it.",
   codifiedTextCompared: false,
-  reliedOnByArtifacts: ["config/texas/regulatory-manifest.mjs PROGRAMS", "config/texas/law-of-agency-time-budget.mjs"],
+  subsectionIdentifierBasis: "held-page-nesting",
+  reliedOnByArtifacts: [
+    "config/texas/regulatory-manifest.mjs PROGRAMS",
+    "config/texas/law-of-agency-time-budget.mjs",
+    "config/texas/trec-rules-source-lock.mjs ASSESSMENT_REQUIREMENTS.creditHours",
+  ],
   sectionsRead: [
-    Object.freeze({ section: "535.55", ownedByTopics: null, primaryUnits: [], pointerUnits: [], note: "COMPLIANCE, NOT CURRICULUM. Subsection (a) requires 180 hours of qualifying real estate courses for an initial sales agent licence and names '30 hours of Law of Agency' among them. That sentence is the reason this course exists; no unit teaches it and none needs to. Registered so the register states where the 30-hour requirement comes from rather than leaving it to be assumed." }),
+    Object.freeze({
+      section: "535.55(a)",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/trec-rules-source-lock.mjs ASSESSMENT_REQUIREMENTS.creditHours", "config/texas/law-of-agency-time-budget.mjs"],
+      note: "COMPLIANCE, NOT CURRICULUM. 180 hours of qualifying real estate courses for an initial sales agent licence: 60 hours of Principles of Real Estate, 30 of Law of Agency, 30 of Law of Contracts, 30 of Promulgated Contracts Forms and 30 of Real Estate Finance. The second item is why this course exists AND why it is a 30-hour course, which is the multiplicand in every per-credit-hour assessment count. The held page prints the list without paragraph numbers, so that item is identified by its position in the (a) list rather than cited as (a)(2). WHAT THIS RULE DOES NOT FIX: the length of a credit hour. Neither this rule nor §§ 535.62-535.65 defines it. LOA-1 prescribes 1,500 minutes for the 30 hours, which is the form's own 50-minute hour, and the words-per-minute rates in the time budget are StateCourse methodology labelled as such.",
+    }),
+    Object.freeze({
+      section: "535.55(b)",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/regulatory-manifest.mjs PROGRAMS"],
+      note: "COMPLIANCE, NOT CURRICULUM. An additional 90 classroom hours in qualifying courses, including the 30-hour real estate brokerage course, by the expiration of the initial licensing period. Registered because it is part of the pathway the manifest states; nothing in this course's assessment or delivery turns on it.",
+    }),
+    Object.freeze({
+      section: "535.55(c)",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: [],
+      note: "COMPLIANCE, NOT CURRICULUM. An inactive sales agent licence issues on satisfaction of the education and examination requirements, and an inactive sales agent may not practise until sponsored by an active Texas broker. Read and recorded; no LOA-1 unit cites it and no artefact depends on it.",
+    }),
+  ],
+});
+
+const TAC_535_62 = trecRule({
+  section: "22 TAC §535.62",
+  heading: "Approval of Qualifying Courses",
+  url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+  localCopy: "texas/trec-sources/trec-rules/535.62.txt",
+  sha256: "3a17a31f4c8e5acb1add6ba71ad8f061f34bc64bfaef9f98eedd8737a170b2f0", bytes: 11383, retrievedOn: "2026-08-29",
+  tier: "controlling",
+  tierReason:
+    "CONTROLLING FOR THE ASSESSMENT DESIGN, which is a use, not a mention. No LOA-1 unit teaches this rule and none needs to; every assessment number the course is built to comes from it and from nowhere else. Occupations Code ch. 1101 contains none of these figures, so citing the chapter here instead of the rule would be a false statement of where the requirement comes from.",
+  codifiedTextCompared: false,
+  subsectionIdentifierBasis: "sos-published-proposed-text",
+  reliedOnByArtifacts: [
+    "config/texas/law-of-agency-course-form.mjs",
+    "config/texas/law-of-agency-time-budget.mjs",
+    "config/texas/law-of-agency-statute-sources.mjs unitCoverage()",
+    "texas/tx-law-of-agency-30-v1/time-evidence.json",
+    "planned:loa-topic-quizzes",
+    "planned:loa-scenarios",
+    "planned:loa-final-exam-versions",
+    "planned:loa-final-exam-bank",
+    "planned:loa-progression-gate",
+    "planned:loa-replacement-questions",
+  ],
+  sectionsRead: [
+    Object.freeze({
+      section: "535.62(b)(1)-(2)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/law-of-agency-course-form.mjs", "config/texas/law-of-agency-statute-sources.mjs unitCoverage()"],
+      note: "A course must cover all topics and units for the course subject required by the Act, Chapter 1102 and this chapter, and cover all units within the prescribed topic. THE ARTEFACT IT CONTROLS: the LOA-1 transcription and the 57-unit coverage measure in this file. It is why unitCoverage() is measured against every unit of the adopted form and why a unit may be excused only by being named in NO_STATUTE_REQUIRED with a reason.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(3)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/law-of-agency-time-budget.mjs", "texas/tx-law-of-agency-30-v1/time-evidence.json"],
+      note: "A course must contain sufficient content to satisfy the number of hours for which credit is requested, as evidenced by (A) word count studies, (B) samples of student time studies, or (C) other methods acceptable to the Commission. THE ARTEFACT IT CONTROLS: the three-layer time evidence report. The rule permits the evidence to take any of three forms and does not prescribe a rate; the words-per-minute rates in the time budget are StateCourse methodology and the file labels them PROVIDER_METHODOLOGY.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(4)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/law-of-agency-time-budget.mjs"],
+      note: "The course will be scheduled for the full clock hours of time for which credit is awarded and presented in full hourly units. THE BEHAVIOUR IT CONTROLS: the course is scheduled for the whole of LOA-1's 1,500 prescribed minutes; a student may not be credited with 30 hours for less scheduled time.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(5)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/distance-delivery-controls.md"],
+      note: "No daily course segment may exceed 12 hours. THE BEHAVIOUR IT CONTROLS: the pacing limit any delivery schedule must enforce. § 535.65(g)(1)(B)(iv) states the same cap again for classroom delivery.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(6)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/distance-delivery-controls.md"],
+      note: "A course will be delivered by (A) classroom delivery, (B) distance education delivery, or (C) a combination in which at least 50% is classroom. THE BEHAVIOUR IT CONTROLS: the delivery method this course declares. It is authored for distance education delivery, which is what makes (b)(7)(C) below binding on it rather than optional.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(7)(A)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-topic-quizzes", "config/texas/law-of-agency-time-budget.mjs"],
+      note: "TOPIC QUIZZES, WITH AT LEAST THREE QUESTIONS RELATED TO THE SUBJECT MATTER IN EACH COURSE TOPIC. THE ARTEFACT IT CONTROLS: the topic quiz bank, not yet authored. The floor is per COURSE TOPIC — for LOA-1's twelve topics, 36 items — and the planned load in config/texas/law-of-agency-time-budget.mjs is 58 items with no topic below three (T07 and T08 sit exactly at the floor with three each). ASSESSMENT_REQUIREMENTS.minQuestionsPerTopicQuiz is this sentence.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(7)(B)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-scenarios", "config/texas/law-of-agency-time-budget.mjs"],
+      note: "AT LEAST ONE SCENARIO-BASED LEARNING EXERCISE PER EVERY INCREMENT OF 10 CREDIT HOURS OR LESS. THE ARTEFACT IT CONTROLS: the scenario set, not yet authored. Thirty credit hours gives a floor of three; the time budget plans five (four topic scenarios plus one course-level capstone). ASSESSMENT_REQUIREMENTS.minScenarioExercises is ceil(30/10) and the arithmetic is recorded in the rule lock rather than assumed.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(7)(C)(i)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-progression-gate"],
+      note: "FOR DISTANCE EDUCATION DELIVERY: prevent the student from moving from one topic to the next until the student answers all topic quiz questions correctly and receives a passing grade on the scenario-based learning exercises. THE BEHAVIOUR IT CONTROLS: topic-to-topic progression gating. Note what it requires — ALL quiz questions answered CORRECTLY, not a percentage — which is why the topic quiz and the final examination are governed by different standards and may not share a pass rule.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(7)(C)(ii)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-replacement-questions"],
+      note: "FOR QUIZ QUESTIONS ANSWERED INCORRECTLY: present the rationale behind the correct answer and ask a subsequent related quiz question that will count toward passing the topic if answered correctly. THE ARTEFACT IT CONTROLS: the replacement-question layer of the topic quiz bank, which is why the quiz bank cannot be a flat list of items — every item needs a rationale and at least one related successor. The formative misconception checks in config/texas/law-of-agency-misconception-checks.mjs are a StateCourse instrument and are NOT this requirement.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(8)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-final-exam-versions"],
+      note: "AT LEAST FOUR VERSIONS OF A FINAL EXAMINATION. THE ARTEFACT IT CONTROLS: the examination forms, not yet built. ASSESSMENT_REQUIREMENTS.minExamVersions is this sentence. § 535.65(h)(4) requires those versions to be ROTATED throughout the approval period, so building four and serving one would not comply.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(8)(A)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-final-exam-versions", "config/texas/law-of-agency-course-form.mjs"],
+      note: "EACH VERSION MUST COVER EACH TOPIC REQUIRED BY THE ACT OR RULES FOR THE SPECIFIC COURSE. THE BEHAVIOUR IT CONTROLS: the per-version blueprint. 'Each topic required by the Rules' resolves, for this course, through § 535.64(a) to LOA-1's twelve topics — so every one of the four versions must carry items from all twelve, and a version that omits a topic is non-compliant however well it scores.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(8)(B)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-final-exam-bank", "planned:loa-final-exam-versions"],
+      note: "NO VERSION MAY CONTAIN ANY TRUE/FALSE QUESTIONS. THE BEHAVIOUR IT CONTROLS: permitted item types in the final examination bank. ASSESSMENT_REQUIREMENTS.trueFalsePermitted is false because of this sentence. The prohibition is stated for the examination; extending it to the formative quiz bank is a StateCourse choice and is recorded as one in the rule lock.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(8)(C)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-final-exam-versions"],
+      note: "NO VERSION MAY REPEAT MORE THAN ONE THIRD OF THE QUESTIONS FROM OTHER VERSIONS. THE BEHAVIOUR IT CONTROLS: overlap between the four forms. ASSESSMENT_REQUIREMENTS.maxCrossVersionOverlapFraction is the rule's one third. WHAT THE RULE DOES NOT SETTLE: whether the cap is measured pairwise or against the union of all other versions — the union reading is much stricter. Whichever a build adopts is a StateCourse interpretation and must be labelled as one; the rule lock records the ambiguity rather than resolving it.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(8)(D)(i)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-final-exam-versions"],
+      note: "FOR ALL QUALIFYING COURSES OTHER THAN A REAL ESTATE MATH COURSE: at least two questions per credit course hour in each version. THE NUMBER IT CONTROLS: 30 x 2 = 60 questions per version. ASSESSMENT_REQUIREMENTS.minQuestionsPerExamVersion.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(8)(D)(ii)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-final-exam-bank"],
+      note: "FOR ALL QUALIFYING COURSES OTHER THAN A REAL ESTATE MATH COURSE: the examination draws from a question bank of at least four questions per credit course hour. THE NUMBER IT CONTROLS: 30 x 4 = 120 bank items. ASSESSMENT_REQUIREMENTS.minExamBankQuestions. The bank floor is a floor: four 60-question versions capped at one-third overlap need substantially more than 120 distinct items if the cap is read against the union of the other versions.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(8)(E)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: [],
+      note: "NOT APPLICABLE, AND REGISTERED FOR THAT REASON. Real estate math courses take 20 questions from a bank of 40. Law of Agency is not a real estate math course, so the governing figures are (D)'s 60 and 120. Recorded so that the numbers this course builds to are visibly the result of choosing between two stated alternatives rather than an unexplained pair of figures.",
+    }),
+    Object.freeze({
+      section: "535.62(g)(1)-(2)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/trec-rules-source-lock.mjs SUBMISSION_READINESS"],
+      note: "A qualifying provider shall not offer qualifying education courses until it has received WRITTEN NOTICE OF APPROVAL from the Commission, and a qualifying course expires four years from approval. THE BEHAVIOUR IT CONTROLS: enrolment. StateCourse holds no such notice, which is why SUBMISSION_READINESS keeps enrollmentPermitted and texasCreditAvailable false in code rather than in prose.",
+    }),
+    Object.freeze({
+      section: "535.62(b)(7) and (b)(8) — the rule's own cross-reference discrepancy",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: [],
+      note: "RECORDED BECAUSE IT AFFECTS HOW THIS COURSE CITES ITS OWN REQUIREMENTS. § 535.65(h)(4) requires rotation of 'all versions of the examination required by § 535.62(b)(7)', but in both held copies the four-versions requirement is (b)(8); (b)(7) is the comprehension-assessment paragraph. § 535.65(i)(2) cites (b)(8) for the same examination. Both held copies — TREC's and the Secretary of State's — carry the discrepancy in identical words, so it is the rule's, not a transcription artefact. This register cites each requirement by the number it carries in the held text and does not decide which the Commission intends; the codified text, which would settle it, has not been read.",
+    }),
+  ],
+});
+
+const TAC_535_63 = trecRule({
+  section: "22 TAC §535.63",
+  heading: "Qualifications for Instructors of Qualifying Courses",
+  url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+  localCopy: "texas/trec-sources/trec-rules/535.63.txt",
+  sha256: "ac9a7c94371acffc8938f43203d7d18ec74f0c75e53bba992b8a4e8777c686a4", bytes: 1368, retrievedOn: "2026-08-29",
+  tier: "controlling",
+  tierReason:
+    "CONTROLLING FOR THE INSTRUCTOR DOSSIER. Instructor qualification is a condition of course approval under § 535.62 and of lawful operation under § 535.65(b)(1); no LOA-1 unit teaches it. It is registered now because the course must name a qualified instructor before an examination can be graded — § 535.65(g)(2)(D) makes a qualified instructor responsible for the answers and rationale behind the grading of the course work.",
+  codifiedTextCompared: false,
+  subsectionIdentifierBasis: "held-page-nesting",
+  reliedOnByArtifacts: ["texas/submission/instructor-qualification-dossier-checklist.md", "planned:loa-instructor-dossier"],
+  sectionsRead: [
+    Object.freeze({
+      section: "535.63(a)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/instructor-qualification-dossier-checklist.md"],
+      note: "A provider must ensure that an instructor who teaches real estate, easement or right-of-way, or real estate inspection qualifying courses is COMPETENT IN THE SUBJECT MATTER to be taught and HAS THE ABILITY TO TEACH EFFECTIVELY. THE ARTEFACT IT CONTROLS: the qualification determination the dossier records. The duty is the provider's; the rule creates no Commission-issued instructor credential and this project does not claim one.",
+    }),
+    Object.freeze({
+      section: "535.63(b)(1)-(3)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/instructor-qualification-dossier-checklist.md", "planned:loa-instructor-dossier"],
+      note: "THE THREE ROUTES, one of which a named instructor must satisfy: (1) a college degree in the subject area to be taught and three years of experience in teaching or training; (2) five years of active experience as a licence holder — broker for Real Estate Brokerage and Broker Responsibility courses — and three years of experience in teaching or training; or (3) the equivalent of (b)(1) or (2) as determined by the provider after considering professional experience, research, authorship or other significant endeavours. The lettering is fixed by the rule's own words, which refer to 'the equivalent of subsection (b)(1) or (2) of this section'. THE ARTEFACT IT CONTROLS: the dossier's three routes, which the checklist currently marks UNVERIFIED on the basis that the rule could not be read. It can now be read: the held file is the text above.",
+    }),
+    Object.freeze({
+      section: "535.63(c)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: [],
+      note: "NOT APPLICABLE. Texas Standards of Practice and Inspector Legal and Ethics courses require five years of active Texas professional inspector licensure plus 200 inspections or three years of teaching or sponsoring experience. Law of Agency is not an inspector course. Registered so the scope of (b) is visible: (b) applies 'except as provided by subsection (c)', and (c) does not reach this course.",
+    }),
+    Object.freeze({
+      section: "535.63 — what this rule does NOT contain",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: [],
+      note: "THE GUEST-INSTRUCTOR 10% CAP IS NOT IN THIS RULE. The held § 535.63 does not mention guest instructors at all; the cap is § 535.65(b)(5) and is registered there. config/texas/trec-rules-source-lock.mjs carried it under § 535.63 until 2026-08-30 and now carries it under § 535.65(b)(5). Recorded rather than silently corrected, because a citation that does not survive opening the file is the defect this register exists to catch.",
+    }),
   ],
 });
 
@@ -1104,11 +1329,185 @@ const TAC_535_64 = trecRule({
   sha256: "6e126cb931287ad9ce965f5d7889ff09d9fc44253e147fb1b5ca515ba08bf94f", bytes: 3225, retrievedOn: "2026-08-29",
   tier: "controlling",
   tierReason:
-    "Controlling for COMPLIANCE rather than curriculum: no unit teaches it and none needs to, but the course could not be built without it. reliedOnByUnits is therefore empty and reliedOnByArtifacts names what actually depends on it.",
+    "Controlling for COMPLIANCE rather than curriculum: no unit teaches it and none needs to, but the course could not be built without it. It is the rule that adopts LOA-1 BY REFERENCE, which makes it the authority for the entire outline — and, through § 535.62(b)(8)(A), the rule that fixes which topics every final examination version must cover. reliedOnByUnits is therefore empty and reliedOnByArtifacts names what actually depends on it.",
   codifiedTextCompared: false,
-  reliedOnByArtifacts: ["config/texas/law-of-agency-course-form.mjs", "config/texas/law-of-agency-statute-sources.mjs unitCoverage()"],
+  subsectionIdentifierBasis: "held-page-nesting",
+  reliedOnByArtifacts: [
+    "config/texas/law-of-agency-course-form.mjs",
+    "config/texas/law-of-agency-statute-sources.mjs unitCoverage()",
+    "planned:loa-final-exam-versions",
+  ],
   sectionsRead: [
-    Object.freeze({ section: "535.64", ownedByTopics: null, primaryUnits: [], pointerUnits: [], note: "COMPLIANCE, NOT CURRICULUM. Subsection (a) adopts each qualifying course approval form BY REFERENCE, including the Law of Agency form. That adoption is what makes the transcription in config/texas/law-of-agency-course-form.mjs a compliance artefact rather than an editorial choice, and it is why this register measures coverage against LOA-1's 12 topics and 57 units and not against a structure of the course's own devising. No unit teaches it; Occupations Code § 1101.301 confers the power but adopts nothing." }),
+    Object.freeze({
+      section: "535.64(a), third item in the mandatory list",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/law-of-agency-course-form.mjs", "config/texas/law-of-agency-statute-sources.mjs unitCoverage()", "planned:loa-final-exam-versions"],
+      note: "COMPLIANCE, NOT CURRICULUM. 'Law of Agency shall contain the topics and units outlined in the LOA-1, Qualifying Real Estate Course Approval Form, Law of Agency, hereby adopted by reference.' THE ARTEFACTS IT CONTROLS: the LOA-1 transcription, which is a compliance artefact and not an editorial choice because of this sentence; the 12-topic, 57-unit coverage measure this register reports; and — through § 535.62(b)(8)(A), which requires each examination version to cover 'each topic required by the Act or Rules for the specific course' — the topic list every final examination version must cover. The held page prints the mandatory courses without paragraph numbers, so Law of Agency is identified by its position in the (a) list. Occupations Code § 1101.301 confers the power and adopts nothing.",
+    }),
+    Object.freeze({
+      section: "535.64(a), remaining mandatory courses",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/regulatory-manifest.mjs PROGRAMS"],
+      note: "COMPLIANCE, NOT CURRICULUM. PRINS 1-1, PRINS 2-1, LOC-0, PCF-0 and REF-0 are adopted by reference on the same terms, as is REB-1 for a broker's licence. Registered so that this course's outline is visibly one instance of a general adoption rather than a special arrangement.",
+    }),
+    Object.freeze({
+      section: "535.64(c)",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: [],
+      note: "All forms adopted by the section are available from the Commission at www.trec.texas.gov. The LOA-1 PDF this project transcribes was obtained there and is held at texas/trec-sources/LOA-1.pdf.",
+    }),
+  ],
+});
+
+const TAC_535_65 = trecRule({
+  section: "22 TAC §535.65",
+  heading: "Responsibilities and Operations of Providers of Qualifying Courses",
+  url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+  localCopy: "texas/trec-sources/trec-rules/535.65.txt",
+  sha256: "fbaeedb3904d6bac666948d58a523a3762ac639617d44df7db2cbbf79b2c65e7", bytes: 16135, retrievedOn: "2026-08-29",
+  tier: "controlling",
+  tierReason:
+    "CONTROLLING FOR DELIVERY AND FOR EXAMINATION ADMINISTRATION. No LOA-1 unit teaches it. It fixes the passing score, the rotation duty, examination confidentiality, the conditions of administration, the subsequent-examination rules, the completion record and the four-year retention term — none of which appears anywhere in Occupations Code ch. 1101 or ch. 1103.",
+  codifiedTextCompared: false,
+  subsectionIdentifierBasis: "sos-published-proposed-text",
+  reliedOnByArtifacts: [
+    "texas/submission/distance-delivery-controls.md",
+    "texas/submission/pre-enrollment-agreement.md",
+    "texas/submission/instructor-qualification-dossier-checklist.md",
+    "config/texas/law-of-agency-time-budget.mjs",
+    "planned:loa-exam-engine",
+    "planned:loa-final-exam-bank",
+    "planned:loa-identity-verification",
+    "planned:loa-completion-record",
+    "planned:loa-student-records",
+  ],
+  sectionsRead: [
+    Object.freeze({
+      section: "535.65(a)(1)(A)-(I)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/distance-delivery-controls.md", "planned:loa-identity-verification"],
+      note: "THE NINE PROVIDER RESPONSIBILITIES: (A) administration of each course, including compliance with any prescribed period of time for required course topics; (B) maintaining student attendance records and pre-enrollment agreements; (C) verifying instructor qualification, performance and attendance; (D) PROPER EXAMINATION ADMINISTRATION; (E) VALIDATION OF STUDENT IDENTITY ACCEPTABLE TO THE COMMISSION; (F) maintaining student course completion records; (G) advertising compliance; (H) no recruiting or soliciting during course presentation; (I) staff reasonably available for public inquiry. THE ARTEFACT IT CONTROLS: the delivery-control matrix, which cites (a)(1) subsection by subsection. (A) is also the provision that makes LOA-1's per-topic minutes an operating obligation and not merely a design input.",
+    }),
+    Object.freeze({
+      section: "535.65(b)(1) and (b)(5)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/instructor-qualification-dossier-checklist.md", "planned:loa-instructor-dossier"],
+      note: "(b)(1): a provider must use an instructor currently qualified under § 535.63 to teach the specified course. (b)(5): a provider MAY use a guest instructor who does not meet those qualifications provided that person instructs for NO MORE THAN 10% OF THE TOTAL COURSE TIME — for a 30-hour course, 3 hours. THE ARTEFACT IT CONTROLS: the instructor dossier and any use of a guest presenter in recorded instruction. This is where the 10% cap lives; it is not in § 535.63.",
+    }),
+    Object.freeze({
+      section: "535.65(d)(1)(D)-(G)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/pre-enrollment-agreement.md"],
+      note: "THE ASSESSMENT-RELEVANT CONTENTS OF THE PRE-ENROLLMENT AGREEMENT: (D) the attendance requirements; (E) acceptable makeup procedures including time limits and fees; (F) the procedure and fees, IF APPLICABLE, associated with EXAM PROCTORING; (G) the procedure and fees for any permitted makeup final examination or re-examination, including time limits. THE ARTEFACT IT CONTROLS: the pre-enrollment agreement. NOTE WHAT (F) DOES AND DOES NOT DO: it requires proctoring arrangements to be DISCLOSED if there are any; it does not require a proctor. No held provision requires a human proctor for a distance-education final examination.",
+    }),
+    Object.freeze({
+      section: "535.65(f)(1)-(2)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/distance-delivery-controls.md"],
+      note: "Before the course starts the provider must give each student copies of, or online access to, the course materials, and must keep them current and accurate as provided under § 535.62. THE BEHAVIOUR IT CONTROLS: when the twelve modules must be available to an enrolled student, and the duty to revise them when the law they teach changes.",
+    }),
+    Object.freeze({
+      section: "535.65(g)(1)(B)-(D)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/distance-delivery-controls.md"],
+      note: "CLASSROOM DELIVERY, recorded for scope rather than for use: identity verified at sign-up and each meeting; the student present for the hours credited; a 10-minute break per hour at least every two hours; no daily segment over 12 hours; a MONITOR in addition to the instructor where a classroom course delivered through technology has more than 20 registered students; and the makeup rules — two-thirds attendance to be eligible, staff approval, completion by the 90th day, automatic drop below two-thirds. This course is authored for distance delivery, so (g)(2) governs it; (g)(1) is registered so that the absence of a proctor or monitor requirement for distance delivery is visibly a reading of the rule rather than an omission.",
+    }),
+    Object.freeze({
+      section: "535.65(g)(2)(A)-(D)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/distance-delivery-controls.md", "planned:loa-identity-verification", "planned:loa-progression-gate"],
+      note: "DISTANCE EDUCATION DELIVERY — the four things the provider must ensure: (A) the student taking all topics and completing all quizzes and exercises is the student receiving credit, THROUGH A STUDENT IDENTITY VERIFICATION PROCESS ACCEPTABLE TO THE COMMISSION; (B) a qualified instructor is available to answer questions or assist in a timely manner; (C) the student has completed all instructional modules and attended any required live instruction; (D) A QUALIFIED INSTRUCTOR IS RESPONSIBLE FOR PROVIDING ANSWERS AND RATIONALE FOR THE GRADING OF THE COURSE WORK. THE ARTEFACTS THEY CONTROL: identity verification, the completion gate, and the rule that automated grading does not remove a named responsible instructor — which is why § 535.63 had to be registered before assessment authoring, not after.",
+    }),
+    Object.freeze({
+      section: "535.65(g)(3)-(5)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/law-of-agency-time-budget.mjs", "texas/tx-law-of-agency-30-v1/time-evidence.json"],
+      note: "A provider need not present topics in the order outlined on the approval form; the periods of time prescribed to each UNIT of a topic are RECOMMENDATIONS and may be altered to meet students' needs; but ALL UNITS MUST BE PRESENTED WITHIN THE PRESCRIBED TOPIC. THE ARTEFACT IT CONTROLS: the time budget. This is the provision that makes LOA-1's TOPIC subtotals binding and its UNIT minutes advisory, which is exactly how the budget treats them — and it is also why a surplus in one topic may not cure a shortfall in another.",
+    }),
+    Object.freeze({
+      section: "535.65(h)(1)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-exam-engine", "config/texas/trec-rules-source-lock.mjs SUBMISSION_READINESS"],
+      note: "The final examination must be given IN THE MANNER SUBMITTED TO AND APPROVED BY THE COMMISSION. THE BEHAVIOUR IT CONTROLS: administration. There is no approved manner for this course, because there is no approval, so no examination may be administered — which is why the examination work now beginning is a BUILD and not a launch.",
+    }),
+    Object.freeze({
+      section: "535.65(h)(2)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-final-exam-bank", "planned:loa-topic-quizzes"],
+      note: "FINAL EXAMINATION QUESTIONS MUST BE KEPT CONFIDENTIAL AND BE SIGNIFICANTLY DIFFERENT FROM ANY QUIZ QUESTIONS AND EXERCISES USED IN THE COURSE. THE ARTEFACT IT CONTROLS: the boundary between the formative bank and the examination bank. No topic quiz item, misconception check or scenario may be promoted into the final examination, and no answer key may be published. 'Significantly different' is not quantified by the rule; any numeric similarity threshold a build adopts is a StateCourse policy choice and may not be presented as regulator-derived.",
+    }),
+    Object.freeze({
+      section: "535.65(h)(3)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-exam-engine", "planned:loa-progression-gate"],
+      note: "A provider shall not permit a student to VIEW OR TAKE a final examination before the completion of regular course work and any makeup sessions. THE BEHAVIOUR IT CONTROLS: examination eligibility. Combined with § 535.62(b)(7)(C)(i), the examination cannot be reached until every topic quiz is answered correctly and every scenario passed.",
+    }),
+    Object.freeze({
+      section: "535.65(h)(4)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-exam-engine", "planned:loa-final-exam-versions"],
+      note: "TWO REQUIREMENTS IN ONE SENTENCE: rotate all versions of the examination throughout the approval period in a manner acceptable to the Commission, AND require an UNWEIGHTED PASSING SCORE OF 70%. THE VALUES THEY CONTROL: ASSESSMENT_REQUIREMENTS.passingScorePercent = 70 and passingScoreWeighting = 'unweighted' — every item counts once, so a scorer that weights items is not permitted even though a blueprint that weights topics in item SELECTION is unaffected. The sentence's cross-reference to § 535.62(b)(7) is discussed in the § 535.62 record above.",
+    }),
+    Object.freeze({
+      section: "535.65(h)(5)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-identity-verification", "planned:loa-exam-engine"],
+      note: "A provider must administer the examination UNDER CONDITIONS THAT ENSURE THE STUDENT TAKING THE EXAMINATION IS THE STUDENT WHO REGISTERED FOR AND TOOK THE COURSE. THE BEHAVIOUR IT CONTROLS: what the examination session must establish. This is the closest the held rules come to a proctoring requirement and it is not one: it fixes the OUTCOME (identity assurance) and leaves the method to the provider, subject to (g)(2)(A)'s 'acceptable to the Commission'. Any proctoring decision this project makes is a provider choice to be disclosed under (d)(1)(F), not a rule requirement.",
+    }),
+    Object.freeze({
+      section: "535.65(h)(6) and (i)(1)-(4)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-exam-engine"],
+      note: "THE SUBSEQUENT EXAMINATION, in four operative parts: (i)(1) a subsequent final examination may be permitted ONLY AFTER the student has completed additional course work prescribed by the provider; (i)(2) it must be completed NO LATER THAN THE 90TH DAY after the date the original class concludes, must be A DIFFERENT VERSION of the original, and must comply with § 535.62(b)(8) and subsection (h) — so the second attempt is held to the same 60-question, topic-covering, no-true-false, 70%-unweighted standard as the first; (i)(3) failure to complete it in time drops the student from the course with no credit; (i)(4) with (h)(6), a student who fails a second time may not be given credit and must RETAKE THE COURSE and the examination. THE BEHAVIOUR IT CONTROLS: attempt accounting, version assignment on retake, the 90-day clock and the remediation gate. The CONTENT of the prescribed additional course work is left to the provider and is a StateCourse design choice.",
+    }),
+    Object.freeze({
+      section: "535.65(j) — as held", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-completion-record"],
+      note: "COURSE COMPLETION CERTIFICATE as the TREC-published text has it: on successful completion the provider shall issue a certificate carrying (A) the provider's name and approval number; (B) the instructor's name; (C) the course title; (D) course numbers; (E) the number of classroom credit hours; (F) the course delivery method; (G) the dates the student began and completed the course; and (H) the printed name and signature of an official of the provider on record with the Commission. The provider may withhold it until the student's financial obligations are met and must maintain security against forgery.",
+    }),
+    Object.freeze({
+      section: "535.65(j) — as amended, adopted and not yet read",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-completion-record"],
+      note: "THE ONE PLACE WHERE THE TWO HELD COPIES DIFFER, AND IT IS A DELIVERY REQUIREMENT OF THIS COURSE. The Secretary of State's 22 May 2026 publication of the proposal renames the subsection 'Course completion records' and replaces issuing a certificate to the student with SUBMITTING completion records TO THE COMMISSION using a process acceptable to it, NOT SOONER THAN THE NUMBER OF COURSE CREDIT HOURS HAS PASSED and NOT LATER THAN THE 10TH CALENDAR DAY after the date the course is completed; the record carries the student's name in place of the instructor's; and for qualifying courses completed ON OR AFTER 1 OCTOBER 2026 it must carry the student's Commission-issued licence number or, if none has issued, the application number, in place of the provider official's printed name and signature. TREC's own rule record gives adoption on 2026-08-10 and an effective date of 2026-08-31. THE TEXT HELD IS THE TEXT AS PROPOSED: the adoption notice publishes in the Texas Register issue of 28 August 2026, which returns 403 and has not been read. The 'not sooner than the number of course credit hours has passed' clause is the only held provision that imposes a MINIMUM ELAPSED TIME on a student's course, and it does so on the submission rather than on the student; it is recorded here so that an assessment build does not treat completion as instantaneous. See GAPS 'loa-535-65-j-adopted-text-not-read'.",
+    }),
+    Object.freeze({
+      section: "535.65(k)(1)-(5)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["texas/submission/distance-delivery-controls.md"],
+      note: "INSTRUCTOR AND COURSE EVALUATIONS: every student gets the form or a link to it, completable any time after course completion; the instructor may not be present or involved; the provider must use ALL of the questions from the Commission-approved evaluation form IN THE SAME ORDER and may only add its own questions after them; management comments are kept with the records; the forms are produced for inspection on request. THE BEHAVIOUR IT CONTROLS: the post-completion evaluation step, which is part of course delivery and not an optional courtesy. The Commission's approved evaluation form is not held.",
+    }),
+    Object.freeze({
+      section: "535.65(l)(1)", ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["planned:loa-student-records", "planned:loa-completion-record"],
+      note: "RECORD RETENTION: a provider shall maintain records of each student enrolled in a course FOR A MINIMUM OF FOUR YEARS following completion of the course, INCLUDING course and instructor evaluations and student enrollment agreements. THE VALUE IT CONTROLS: ASSESSMENT_REQUIREMENTS.studentRecordRetentionYears = 4. The rule itself states the term; it is not derived from the four-year provider approval period or from the fee schedule, and any note in this repository that derived it from those was reasoning from the wrong document. (l)(4) adds that records may be kept electronically provided they are in a common format, legible and easily printed or viewed without special software.",
+    }),
+  ],
+});
+
+/* ────────────────────────────────────────────────────────────────────────────────────────────────
+ * THE SECRETARY OF STATE'S OWN PUBLICATION — the highest-tier Texas source this project has opened,
+ * and still not the adopted text.
+ * ──────────────────────────────────────────────────────────────────────────────────────────────── */
+
+const SOS_TEXAS_REGISTER_2026_05_22 = register({
+  id: "sos-texas-register-2026-05-22",
+  citation: "Texas Register, issue of 22 May 2026 — Title 22 Examining Boards, Proposed Rules (TRD-202601975)",
+  title: "Texas Register, 22 May 2026 — TREC's proposed amendments to 22 TAC §§ 535.62 and 535.65",
+  jurisdiction: "texas",
+  authority: "Texas Secretary of State",
+  publisher: "Texas Secretary of State",
+  sourceLayer: "sos.texas.gov texreg archive",
+  url: "https://www.sos.texas.gov/texreg/archive/May222026/Proposed%20Rules/22.EXAMINING%20BOARDS.html",
+  localCopy: "texas/trec-sources/texas-register/2026-05-22-title22-proposed-rules.html",
+  sha256: "6c5c97f0c283133b306913198d6c86dacf553de1ac03de31017ea93bda62063b", bytes: 172495, retrievedOn: "2026-08-27",
+  tier: "contextual",
+  codifiedTextCompared: false,
+  tierReason:
+    "REGISTERED FOR EXACTLY TWO USES, AND NOT AS LAW. (1) It publishes §§ 535.62 and 535.65 in full WITH their subsection lettering, which TREC's own Rules page does not print; on 2026-08-30 the two copies were diffed paragraph by paragraph and are identical word for word except at § 535.62(i)(2) and § 535.65(j), so the lettering this register cites for those two rules is READ rather than inferred. (2) It carries the 2026 amendment to § 535.65(j) as PROPOSED, which TREC's rule record says was adopted on 2026-08-10 and takes effect on 2026-08-31. It is CONTEXTUAL and not controlling because a published proposal is not the adopted rule: the adoption notice publishes in the issue of 28 August 2026, which returns 403 and has not been read. No unit rests on it, no artefact implements the amendment, and it does nothing to clear TX_PROVIDER_RULE_SOURCE_LOCK.",
+  reliedOnByArtifacts: [
+    "config/texas/trec-rules-source-lock.mjs SUBSECTION_IDENTIFIER_SOURCE",
+    "config/texas/law-of-agency-statute-sources.mjs TREC_RULE_SOURCES",
+  ],
+  sectionsRead: [
+    Object.freeze({
+      section: "§§ 535.62 and 535.65 as proposed — the subsection lettering",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: ["config/texas/trec-rules-source-lock.mjs SUBSECTION_IDENTIFIER_SOURCE"],
+      note: "The proposal reproduces both rules with (a), (b)(7)(A), (b)(8)(D)(i) and the rest printed. The comparison against the TREC-published copies held at texas/trec-sources/trec-rules/ was mechanical — both reduced to ordered paragraphs, whitespace normalised, diffed — and returned 86 paragraphs each for § 535.62 and 132 against 127 for § 535.65, with the only differences at § 535.62(i)(2) and § 535.65(j). That is what allows the § 535.62 and § 535.65 records above to carry subsectionIdentifierBasis: 'sos-published-proposed-text' while §§ 535.55, 535.63 and 535.64 carry 'held-page-nesting'.",
+    }),
+    Object.freeze({
+      section: "§ 535.65(j) as proposed",
+      ownedByTopics: null, primaryUnits: [], pointerUnits: [],
+      controls: [],
+      note: "The completion-record amendment, recorded in the § 535.65 entry above and NOT implemented anywhere: submission of course completion records to the Commission not sooner than the number of course credit hours has passed and not later than the 10th calendar day after completion; the student's name in place of the instructor's; and the student's licence or application number for qualifying courses completed on or after 1 October 2026. Held as PROPOSED text. Nothing may be built as though this were the codified rule, and the gap 'loa-535-65-j-adopted-text-not-read' says so in the gap ledger.",
+    }),
   ],
 });
 
@@ -1202,7 +1601,7 @@ export const TREC_RULE_SOURCES = Object.freeze([
   TAC_531_1, TAC_531_2, TAC_531_3, TAC_531_4, TAC_531_18, TAC_531_19, TAC_531_20,
   TAC_535_1, TAC_535_2, TAC_535_3, TAC_535_4, TAC_535_5,
   TAC_535_16, TAC_535_17, TAC_535_20, TAC_535_21, TAC_535_35,
-  TAC_535_55, TAC_535_64,
+  TAC_535_55, TAC_535_62, TAC_535_63, TAC_535_64, TAC_535_65,
   TAC_535_131, TAC_535_141, TAC_535_144, TAC_535_145, TAC_535_146, TAC_535_147, TAC_535_148, TAC_535_149,
   TAC_535_153, TAC_535_154, TAC_535_155, TAC_535_156, TAC_535_157, TAC_535_191,
   TAC_537_11,
@@ -1214,12 +1613,16 @@ export const ADOPTED_INSTRUMENTS = Object.freeze([IABS_1_2]);
 /** Regulator-published explanatory material. */
 export const GUIDANCE_SOURCES = Object.freeze([TREC_BUYER_REP_ARTICLE, TREC_CONTRACTS_PAGE]);
 
+/** The Secretary of State's own publication — held, hashed, and not the adopted text. */
+export const SECRETARY_OF_STATE_SOURCES = Object.freeze([SOS_TEXAS_REGISTER_2026_05_22]);
+
 export const ALL_SOURCES = Object.freeze([
   ...STATUTE_CHAPTERS,
   ...FEDERAL_SOURCES,
   ...TREC_RULE_SOURCES,
   ...ADOPTED_INSTRUMENTS,
   ...GUIDANCE_SOURCES,
+  ...SECRETARY_OF_STATE_SOURCES,
 ]);
 
 /**
@@ -1351,9 +1754,21 @@ export const GAPS = Object.freeze([
     affectedUnits: ["T06U1"],
   }),
   Object.freeze({
+    id: "loa-535-65-j-adopted-text-not-read",
+    gapTier: "identified-not-taught",
+    gap: "22 TAC § 535.65(j) — the course completion record — was amended in 2026, and the ADOPTED text has not been read. TREC's own rule record gives adoption on 2026-08-10 and an effective date of 2026-08-31; the text held for it is the text AS PROPOSED in the Secretary of State's Texas Register of 22 May 2026, because the adoption notice publishes in the issue of 28 August 2026, which returns 403. This is the single place where the two held copies of § 535.65 disagree, and it matters for delivery: as proposed, the provider must SUBMIT completion records to the Commission not sooner than the number of course credit hours has passed and not later than the 10th calendar day after completion, must carry the student's name rather than the instructor's, and must carry the student's licence or application number for courses completed on or after 1 October 2026. Both readings are registered against § 535.65(j) above and neither is implemented; no completion record exists for this course. Reading the adopted text is a HUMAN item — see texas/submission/human-export-list.md.",
+    affectedUnits: [],
+  }),
+  Object.freeze({
+    id: "commission-evaluation-form-not-held",
+    gapTier: "identified-not-taught",
+    gap: "22 TAC § 535.65(k)(3) requires a provider evaluating an instructor or course to use ALL of the questions from the evaluation form APPROVED BY THE COMMISSION, in the same order as listed on that form, adding any of its own only after them. The Commission's approved evaluation form is not held for this course, so the questions it prescribes are named as a requirement and not reproduced. No evaluation instrument may be built as if its wording were known.",
+    affectedUnits: [],
+  }),
+  Object.freeze({
     id: "codified-22-tac-text-not-read",
     gapTier: "identified-not-taught",
-    gap: "All 34 administrative rules registered above are the section text TREC publishes on its own consolidated Rules page. The Secretary of State's CODIFIED 22 TAC text could not be opened from this environment: texas-sos.appianportalsgov.com serves a JavaScript shell to a non-browser client and the legacy texreg reader redirects to it. Every rule entry carries codifiedTextCompared: false. The regulator's own published statement of its rules is evidence, and it is not the adopted text; nothing here may be cited to a student as the Secretary of State's codified rule, and the provider-rule lock in config/texas/regulatory-manifest.mjs continues to FAIL on this ground rather than being reinterpreted around it.",
+    gap: "All 37 administrative rules registered above are the section text TREC publishes on its own consolidated Rules page. For two of them, §§ 535.62 and 535.65, a higher-tier copy has also been opened — the Secretary of State's Texas Register of 22 May 2026 publishes the proposal in full with its subsection lettering — but that is the text AS PROPOSED and not the adopted rule either. The Secretary of State's CODIFIED 22 TAC text could not be opened from this environment: texas-sos.appianportalsgov.com serves a JavaScript shell to a non-browser client and the legacy texreg reader redirects to it. Every rule entry carries codifiedTextCompared: false. The regulator's own published statement of its rules is evidence, and it is not the adopted text; nothing here may be cited to a student as the Secretary of State's codified rule, and the provider-rule lock in config/texas/regulatory-manifest.mjs continues to FAIL on this ground rather than being reinterpreted around it.",
     affectedUnits: [],
   }),
   Object.freeze({
@@ -1374,6 +1789,42 @@ export const SECTIONS_READ = Object.freeze(
       Object.freeze({ ...section, sourceId: entry.id, jurisdiction: entry.jurisdiction, tier: entry.tier, citation: entry.citation }),
     ),
   ),
+);
+
+/**
+ * THE COURSE-GOVERNING LAYER, INVERTED: artefact -> the rule subsections that control it.
+ *
+ * SECTIONS_READ above answers "what did this rule govern?". This answers the question an assessment
+ * author actually asks — "what governs the thing I am about to build?" — and it is derived from the
+ * same records rather than written twice: every entry comes from a `controls` list on a registered
+ * read record, so a control cannot be claimed here without a rule subsection behind it.
+ *
+ * An artefact id is either a REPOSITORY PATH, in which case the file must exist on disk and a
+ * load-time invariant below checks that it does, or it begins with "planned:", which says in one
+ * word that the artefact does not exist yet. Assessment authoring starts now; most of the exam-side
+ * ids are planned, and none of them may be described as built until the id becomes a path.
+ */
+export const ASSESSMENT_AND_DELIVERY_CONTROLS = Object.freeze(
+  (() => {
+    const byArtifact = new Map();
+    for (const entry of ALL_SOURCES) {
+      for (const section of entry.sectionsRead) {
+        for (const artifact of section.controls ?? []) {
+          if (!byArtifact.has(artifact)) byArtifact.set(artifact, []);
+          byArtifact.get(artifact).push(Object.freeze({ rule: entry.citation, subsection: section.section, requirement: section.note }));
+        }
+      }
+    }
+    return [...byArtifact.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([artifact, controlledBy]) =>
+        Object.freeze({
+          artifact,
+          exists: !artifact.startsWith("planned:"),
+          controlledBy: Object.freeze(controlledBy),
+        }),
+      );
+  })(),
 );
 
 /** Every LOA-1 unit either has a source read for it or is named as needing none. */
@@ -1434,6 +1885,16 @@ export function unitCoverage(allUnitCodes = LOA_UNITS) {
     }
   }
 
+  /* 4b. The Secretary of State capture is also carried by the regulatory manifest. Same file, same
+        hash, or one of the two is wrong. */
+  for (const entry of SECRETARY_OF_STATE_SOURCES) {
+    const manifest = REGULATORY_SOURCES.find((source) => source.id === entry.id);
+    if (!manifest) throw new Error(`law-of-agency-statute-sources: '${entry.id}' is not in regulatory-manifest SOURCES`);
+    if (manifest.localCopy !== entry.localCopy || manifest.sha256 !== entry.sha256 || (manifest.bytes && manifest.bytes !== entry.bytes)) {
+      throw new Error(`law-of-agency-statute-sources: ${entry.id} disagrees with regulatory-manifest (manifest ${manifest.localCopy}/${manifest.sha256}/${manifest.bytes})`);
+    }
+  }
+
   /* 5. Coverage. Every LOA-1 unit is sourced or excused, and no unit rests on guidance alone —
         official explanatory guidance may explain controlling law but may not replace it. */
   const coverage = unitCoverage();
@@ -1452,6 +1913,27 @@ export function unitCoverage(allUnitCodes = LOA_UNITS) {
     throw new Error(
       `law-of-agency-statute-sources: unit(s) supported only by non-controlling sources: ${guidanceOnly.join(", ")}. ` +
         "Official explanatory guidance may explain controlling law; it may not replace it.",
+    );
+  }
+
+  /* 7. Every artefact a rule is registered as controlling is either a file that exists on disk or
+        is explicitly marked "planned:". A control record pointing at nothing is a claim, not a
+        record — and an artefact quietly renamed out from under a rule is exactly the drift this
+        register is supposed to catch. */
+  const danglingControls = [];
+  for (const record of ASSESSMENT_AND_DELIVERY_CONTROLS) {
+    if (!record.exists) continue;
+    const [file] = record.artifact.split(" ");
+    try {
+      statSync(join(REPO_ROOT, file));
+    } catch {
+      danglingControls.push(record.artifact);
+    }
+  }
+  if (danglingControls.length) {
+    throw new Error(
+      `law-of-agency-statute-sources: rule(s) registered as controlling artefact(s) that do not exist: ${danglingControls.join(", ")}. ` +
+        'Correct the path, or mark the artefact "planned:" if it has not been built yet.',
     );
   }
 
@@ -1555,10 +2037,12 @@ export default Object.freeze({
   TREC_RULE_SOURCES,
   ADOPTED_INSTRUMENTS,
   GUIDANCE_SOURCES,
+  SECRETARY_OF_STATE_SOURCES,
   ALL_SOURCES,
   NO_STATUTE_REQUIRED,
   GAPS,
   SECTIONS_READ,
+  ASSESSMENT_AND_DELIVERY_CONTROLS,
   unitCoverage,
   sourceValidation,
   lawOfAgencySourceLock,
