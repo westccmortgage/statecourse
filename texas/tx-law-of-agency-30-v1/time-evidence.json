@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 126016,
+    "proseWords": 126025,
     "statuteReadingExercises": 23,
     "appliedExercises": 36,
     "moduleRecaps": 12,
     "exerciseWords": 16529,
-    "recapWords": 13523,
-    "totalWords": 156068
+    "recapWords": 13531,
+    "totalWords": 156085
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,7 +28,7 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "126,016 words at 140 wpm",
+      "basis": "126,025 words at 140 wpm",
       "minutes": 900,
       "measured": true
     },
@@ -93,7 +93,7 @@
     },
     {
       "segment": "mastery review",
-      "basis": "126,016 words at 60 wpm",
+      "basis": "126,025 words at 60 wpm",
       "minutes": 2100,
       "reason": "an upper bound on diligent study, never required time"
     },
@@ -131,15 +131,15 @@
       "topic": "Basic Agency Relationships, Disclosure and Duties to the Client",
       "units": 5,
       "prescribedMinutes": 125,
-      "sha256": "9eb3ffaa6f578e97419b0aad03aa57863258f76a96a39bac7a151cd587a61a87",
-      "totalWords": 13106,
+      "sha256": "38fd0edc97035833bf46cb700d8de7b0a681481e419572e62d0ac0a9120d3266",
+      "totalWords": 13114,
       "proseWords": 10528,
       "statuteReadingExercise": 2,
       "appliedExercise": 4,
       "moduleRecap": 1,
       "optionalReference": 0,
       "exerciseWords": 1606,
-      "recapWords": 972,
+      "recapWords": 980,
       "optionalReferenceWords": 0,
       "readingMinutes": 75,
       "activityMinutes": 79,
@@ -152,9 +152,9 @@
       "topic": "Duties and Disclosures to Third Parties",
       "units": 6,
       "prescribedMinutes": 125,
-      "sha256": "882eed864bd4b564a83a44b695f00cadcc66c16f17f1c30880738af74e9ed955",
-      "totalWords": 13414,
-      "proseWords": 10711,
+      "sha256": "d2cc230964dab799cebdd1212b6e7704faa4ffb16176dbf87e3cbef65b840ceb",
+      "totalWords": 13423,
+      "proseWords": 10720,
       "statuteReadingExercise": 2,
       "appliedExercise": 3,
       "moduleRecap": 1,
