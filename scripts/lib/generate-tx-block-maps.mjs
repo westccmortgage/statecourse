@@ -37,6 +37,8 @@ export function parseModule(markdown, unitCodesInOrder) {
     if (unit) { marks.push({ kind: "unit", heading: line.trim(), lineIndex: index, title: unit[1].trim() }); return; }
     const recap = line.match(/^### Module recap\s*$/);
     if (recap) { marks.push({ kind: "recap", heading: line.trim(), lineIndex: index, title: "Module recap" }); return; }
+    const optional = line.match(/^## Optional reference: (.+)$/);
+    if (optional) { marks.push({ kind: "optional", heading: line.trim(), lineIndex: index, title: optional[1].trim() }); return; }
     const exercise = line.match(/^### (Statute reading exercise|Applied exercise): (.+)$/);
     if (exercise) { marks.push({ kind: "exercise", heading: line.trim(), lineIndex: index, title: `${exercise[1]}: ${exercise[2].trim()}` }); return; }
   });
@@ -46,14 +48,21 @@ export function parseModule(markdown, unitCodesInOrder) {
     throw new Error(`module: found ${units.length} "## Unit:" headings, expected ${unitCodesInOrder.length} (${unitCodesInOrder.join(",")})`);
   }
   const recapMark = marks.find((m) => m.kind === "recap");
-  if (!recapMark) throw new Error("module: no \"## Module recap\" heading found");
+  if (!recapMark) throw new Error("module: no \"### Module recap\" heading found");
+  /* A module may close with one "## Optional reference:" section. It is not required work: the
+     student may skip it, no assessment item may depend on it, and its minutes are excluded from
+     required time. It becomes its own trailing block with required:false rather than being folded
+     into the recap — and the recap's range has to STOP at it, or the recap screen would silently
+     carry optional material as required review. */
+  const optionalMark = marks.find((m) => m.kind === "optional");
 
   const blocks = [];
   units.forEach((unitMark, index) => {
     const code = unitCodesInOrder[index];
     const nextBoundary = units[index + 1] ?? recapMark;
     const exercisesInRange = marks.filter(
-      (m) => m.kind === "exercise" && m.lineIndex > unitMark.lineIndex && m.lineIndex < nextBoundary.lineIndex,
+      (m) => m.kind === "exercise" && m.lineIndex > unitMark.lineIndex && m.lineIndex < nextBoundary.lineIndex
+        && (!optionalMark || m.lineIndex < optionalMark.lineIndex),
     );
     const screens = [];
     const instructionTo = exercisesInRange.length ? exercisesInRange[0].heading : nextBoundary.heading;
@@ -71,7 +80,7 @@ export function parseModule(markdown, unitCodesInOrder) {
     blocks.push({ id: code.toLowerCase(), code, title: unitMark.title, screens });
   });
 
-  return { blocks, recapMark };
+  return { blocks, recapMark, optionalMark };
 }
 
 /**
@@ -88,7 +97,7 @@ export function generateModuleBlocks(course, moduleNumber) {
   const nn = String(moduleNumber).padStart(2, "0");
   const lessonPath = `${course.curriculumDir}/module-${nn}.md`;
   const markdown = fs.readFileSync(lessonPath, "utf8");
-  const { blocks, recapMark } = parseModule(markdown, course.unitCodes);
+  const { blocks, recapMark, optionalMark } = parseModule(markdown, course.unitCodes);
 
   for (const block of blocks) {
     const objective = course.unitObjectives[block.code];
@@ -118,9 +127,25 @@ ${block.screens.map((screen, index) => renderScreen(block.id, screen, index)).jo
       id: ${q(recapBlockId)}, sequence: ${blocks.length + 1}, required: true,
       title: "Module recap",
       screens: [
-        { id: ${q(`${recapBlockId}-s1`)}, sequence: 1, type: "review", title: "Module recap", content: RANGE(${q(recapMark.heading)}, "$") },
+        { id: ${q(`${recapBlockId}-s1`)}, sequence: 1, type: "review", title: "Module recap", content: RANGE(${q(recapMark.heading)}, ${q(optionalMark ? optionalMark.heading : "$")}) },
       ],
     },`;
+
+  /* required:false is load-bearing, not decorative. The engine must not gate progression on this
+     block, no quiz or examination item may be traced to it, and the time evidence counts its words
+     under optional rather than required. */
+  const optionalBlockId = `t${moduleNumber}-optional`;
+  const optionalBlock = optionalMark ? `
+    {
+      id: ${q(optionalBlockId)}, sequence: ${blocks.length + 2}, required: false, optional: true,
+      title: ${q(optionalMark.title)},
+      nonBlocking: true,
+      excludedFromRequiredTime: true,
+      noAssessmentMayDependOnThis: true,
+      screens: [
+        { id: ${q(`${optionalBlockId}-s1`)}, sequence: 1, type: "optional-reference", title: ${q(optionalMark.title)}, content: RANGE(${q(optionalMark.heading)}, "$") },
+      ],
+    },` : "";
 
   const body = `/**
  * GENERATED FILE — Texas Principles of Real Estate I, Module ${nn} learning-block map.
@@ -139,7 +164,7 @@ export const MODULE_${moduleNumber}_BLOCKS = Object.freeze({
   contentPath: ${q(`/content/texas/${course.courseId}/module-${nn}.md`)},
   blocks: [
 ${rendered}
-${recapBlock}
+${recapBlock}${optionalBlock}
   ],
 });
 
