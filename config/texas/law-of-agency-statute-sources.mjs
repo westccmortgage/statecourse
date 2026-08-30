@@ -6,15 +6,28 @@
  * source below is a document on disk. Its sha256 and byte count are recomputed from that file by
  * sourceValidation(), never transcribed from another artefact. Inside each source, `sectionsRead`
  * lists the sections the twelve modules actually opened, each with a note stating what that section
- * establishes. A chapter can sit on disk fully hashed and contribute nothing: chapters held for
- * this repository that no LOA module cites — Occupations Code ch. 1103, Property Code chs. 11, 12,
- * 13, 21, 41, 51, 53, 91, 92, 111 and 202, Estates Code chs. 111/112/201/203/251, Family Code ch. 3,
- * Business Organizations Code ch. 200, Finance Code ch. 343, Government Code chs. 4001 and 4005,
- * Health and Safety Code ch. 361, Insurance Code ch. 2501, Local Government Code chs. 211, 212 and
- * 232, Natural Resources Code ch. 21, Penal Code ch. 32, Tax Code chs. 11 and 32, Water Code ch. 11,
- * the Texas Constitution file, and every federal RESPA, TILA, ECOA, CRA and environmental file —
- * are ABSENT from this register entirely. They were not read for this course, so they are not
- * registered for it.
+ * establishes.
+ *
+ * A CHAPTER CAN SIT ON DISK FULLY HASHED AND CONTRIBUTE NOTHING. texas/trec-sources holds 146 files.
+ * This register names 51 of them, and the other 95 are ABSENT from it entirely rather than listed
+ * for completeness: the other five course approval forms, the Texas Constitution file, Occupations
+ * Code ch. 1103, Property Code chs. 11, 12, 13, 21, 41, 51, 53, 91, 92, 111 and 202, Estates Code
+ * chs. 111, 112, 201, 203 and 251, Business and Commerce Code ch. 9, Business Organizations Code
+ * ch. 200, Family Code ch. 3, Finance Code ch. 343, Government Code chs. 4001 and 4005, Health and
+ * Safety Code ch. 361, Insurance Code ch. 2501, Local Government Code chs. 211, 212 and 232, Natural
+ * Resources Code ch. 21, Penal Code ch. 32, Tax Code chs. 11 and 32, Water Code ch. 11, the Texas
+ * Register capture, every RESPA, TILA, ECOA, HMDA, CRA, bank-holding and environmental federal file,
+ * 26 U.S.C. §§ 1445 and 860A, and the Fair Housing Act sections this course does not cite —
+ * 42 U.S.C. §§ 3601, 3605, 3607, 3610, 3611 and 3617. They were read for other Texas courses, or for
+ * none; they were not read for this one, so they are not registered for it.
+ *
+ * THREE RULES ARE HELD AND DELIBERATELY NOT REGISTERED HERE: 22 TAC §§ 535.62, 535.63 and 535.65.
+ * They are course-approval, instructor-qualification and provider-operations rules, and this course
+ * has no assessment engine, no instructor dossier and no delivery-control artefact yet for them to
+ * be controlling over. §§ 535.55 and 535.64 ARE registered, because the 30-hour Law of Agency
+ * requirement and the adoption of LOA-1 by reference bear on what exists today. When an LOA
+ * assessment or provider artefact is built, the other three belong here and this note is the
+ * instruction to add them.
  *
  * WHERE THE UNIT ATTRIBUTIONS COME FROM, AND WHY THEY WERE NOT GUESSED. `primaryUnits` and
  * `pointerUnits` in every read record below are DERIVED, not asserted. The derivation is
@@ -22,7 +35,8 @@
  * — which carries one row per citation occurrence in the twelve curriculum modules, each row naming
  * the module, the section cited and the held file the section resolves to. Each citation is
  * attributed to the unit whose `## Unit:` heading precedes it in the module, and the module's topic
- * is the topic that module teaches. 2,217 citation rows resolved to the 46 files registered below.
+ * is the topic that module teaches. 2,217 citation rows resolved to 46 distinct held files, and
+ * every one of those 46 is registered below.
  * A citation that falls before any unit heading belongs to the module's front matter and is recorded
  * as `citedInTopicFrontMatter` at source level rather than being pushed onto a unit that did not
  * make it.
