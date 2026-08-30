@@ -995,8 +995,9 @@ buyer before you show anything, non-exclusive and no more than fourteen days if 
 you step outside, § 1101.652(b)(7) and (b)(8) are waiting, at $500 to $3,000 per violation per day under
 22 TAC § 535.191, with the intermediary provisions themselves — § 1101.558, § 1101.559(a) and (c),
 § 1101.560, § 1101.561(b) and § 1101.651 — in the $1,000 to $5,000 band, each day capable of being a
-separate violation, the broker liable alongside you under § 1101.803, and § 1101.801 confirming that discipline "does not relieve the person from civil or criminal
-liability." Module 10 teaches § 1101.652 and the whole of the 22 TAC § 535.191 schedule.
+separate violation, the broker liable alongside you under § 1101.803, and § 1101.801 confirming that
+discipline "does not relieve the person from civil or criminal liability." Module 10 teaches
+§ 1101.652 and the whole of the 22 TAC § 535.191 schedule.
 
 Two things were looked for and not found, and you should know it. The published text of the Information
 About Brokerage Services notice, TREC No. IABS 1-2, was not held for this course; this module teaches
