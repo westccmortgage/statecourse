@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 114723,
+    "proseWords": 110726,
     "statuteReadingExercises": 21,
-    "appliedExercises": 33,
+    "appliedExercises": 31,
     "moduleRecaps": 12,
-    "exerciseWords": 15133,
-    "recapWords": 13324,
-    "totalWords": 145946
+    "exerciseWords": 14575,
+    "recapWords": 13299,
+    "totalWords": 141577
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,8 +28,8 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "114,723 words at 140 wpm",
-      "minutes": 819,
+      "basis": "110,726 words at 140 wpm",
+      "minutes": 791,
       "measured": true
     },
     {
@@ -40,8 +40,8 @@
     },
     {
       "segment": "worked examples (applied exercises)",
-      "basis": "33 exercises x 10 min",
-      "minutes": 330,
+      "basis": "31 exercises x 10 min",
+      "minutes": 310,
       "measured": true
     },
     {
@@ -63,8 +63,8 @@
       "measured": false
     }
   ],
-  "requiredMinutes": 1657,
-  "varianceMinutes": 157,
+  "requiredMinutes": 1609,
+  "varianceMinutes": 109,
   "meetsPrescribed": true,
   "conditional": [
     {
@@ -87,14 +87,14 @@
     },
     {
       "segment": "optional reference material",
-      "basis": "2,766 words moved out of required prose, at 140 wpm",
-      "minutes": 20,
+      "basis": "2,977 words moved out of required prose, at 140 wpm",
+      "minutes": 21,
       "reason": "sourced depth beyond what the topic's units require; in the course, not required to complete it"
     },
     {
       "segment": "mastery review",
-      "basis": "114,723 words at 60 wpm",
-      "minutes": 1912,
+      "basis": "110,726 words at 60 wpm",
+      "minutes": 1845,
       "reason": "an upper bound on diligent study, never required time"
     },
     {
@@ -152,9 +152,9 @@
       "topic": "Duties and Disclosures to Third Parties",
       "units": 6,
       "prescribedMinutes": 125,
-      "sha256": "9cfbdcecddfbc367b10c94c57b9a2db83544db3c48bca1ff2cc649e400ee6d5d",
-      "totalWords": 12643,
-      "proseWords": 8999,
+      "sha256": "92ddd9ba10d5d985bd6092868bf7620011a0b00afb2c2d125da0e2943817439c",
+      "totalWords": 12216,
+      "proseWords": 8572,
       "statuteReadingExercise": 1,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -162,10 +162,10 @@
       "exerciseWords": 940,
       "recapWords": 1187,
       "optionalReferenceWords": 1517,
-      "readingMinutes": 64,
+      "readingMinutes": 61,
       "activityMinutes": 69,
-      "requiredMinutes": 133,
-      "varianceMinutes": 8
+      "requiredMinutes": 130,
+      "varianceMinutes": 5
     },
     {
       "file": "module-04.md",
@@ -278,9 +278,9 @@
       "topic": "Employment Issues",
       "units": 6,
       "prescribedMinutes": 120,
-      "sha256": "b26bbc6e589abadc64ea061aa0ed197e8936b323d6b8fe994e92da612ad342b8",
-      "totalWords": 12846,
-      "proseWords": 10261,
+      "sha256": "bf12714c153bbc87c61a1dfe07974a832a4ae51ca9ed2b3d718abc0f132a7db7",
+      "totalWords": 10665,
+      "proseWords": 8080,
       "statuteReadingExercise": 1,
       "appliedExercise": 2,
       "moduleRecap": 1,
@@ -288,10 +288,10 @@
       "exerciseWords": 905,
       "recapWords": 1367,
       "optionalReferenceWords": 313,
-      "readingMinutes": 73,
+      "readingMinutes": 58,
       "activityMinutes": 69,
-      "requiredMinutes": 142,
-      "varianceMinutes": 22
+      "requiredMinutes": 127,
+      "varianceMinutes": 7
     },
     {
       "file": "module-10.md",
@@ -320,20 +320,20 @@
       "topic": "Deceptive Trade Practices and Consumer Protection Act",
       "units": 5,
       "prescribedMinutes": 140,
-      "sha256": "0534612e9f8d504890e442abf764e86efb263cf7f4f1097c4042ec49ad01c2e8",
-      "totalWords": 14456,
-      "proseWords": 11213,
+      "sha256": "115a95e267ab53cff75c679e496bed9ce90b9be2e3223c2a64b5de82a37b0393",
+      "totalWords": 13069,
+      "proseWords": 9991,
       "statuteReadingExercise": 2,
       "appliedExercise": 3,
       "moduleRecap": 1,
       "optionalReference": 1,
       "exerciseWords": 1423,
-      "recapWords": 1522,
-      "optionalReferenceWords": 298,
-      "readingMinutes": 80,
+      "recapWords": 1497,
+      "optionalReferenceWords": 158,
+      "readingMinutes": 71,
       "activityMinutes": 89,
-      "requiredMinutes": 169,
-      "varianceMinutes": 29
+      "requiredMinutes": 160,
+      "varianceMinutes": 20
     },
     {
       "file": "module-12.md",
@@ -341,20 +341,20 @@
       "topic": "Implementation and Presentation",
       "units": 5,
       "prescribedMinutes": 140,
-      "sha256": "96fa4193ec616ff6eab03c350ae7d6debdbb86170b1950fb6c36ec04541ec347",
-      "totalWords": 13919,
-      "proseWords": 11101,
+      "sha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566",
+      "totalWords": 13545,
+      "proseWords": 10934,
       "statuteReadingExercise": 2,
-      "appliedExercise": 4,
+      "appliedExercise": 2,
       "moduleRecap": 1,
-      "optionalReference": 0,
-      "exerciseWords": 1613,
+      "optionalReference": 1,
+      "exerciseWords": 1055,
       "recapWords": 1205,
-      "optionalReferenceWords": 0,
-      "readingMinutes": 79,
-      "activityMinutes": 79,
-      "requiredMinutes": 158,
-      "varianceMinutes": 18
+      "optionalReferenceWords": 351,
+      "readingMinutes": 78,
+      "activityMinutes": 59,
+      "requiredMinutes": 137,
+      "varianceMinutes": -3
     }
   ]
 }
