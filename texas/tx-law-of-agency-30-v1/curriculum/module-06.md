@@ -15,7 +15,8 @@ does not require, and precisely which duties the intermediary's duties supersede
 to decide what an intermediary and an appointed license holder may and may not disclose, including the
 three exceptions written into subdivision (3); carry out an appointment under § 1101.560 — identify who
 may appoint, who may be appointed, the two conditions the statute imposes, the written notice the
-broker owes the parties, and what an appointed license holder may do that the intermediary may not; and distinguish an intermediary arrangement entered into deliberately from unintended dual
+broker owes the parties, and what an appointed license holder may do that the intermediary may not;
+and distinguish an intermediary arrangement entered into deliberately from unintended dual
 representation, naming the specific behaviours that produce the latter and the disciplinary exposure it
 carries.
 
@@ -337,7 +338,8 @@ lid on a defect. If the seller tells you the foundation was underpinned twice an
 walked off, that information materially relates to the condition of the property and subdivision (3)
 does not permit you to withhold it. Independently, § 1101.652(b)(3) and (b)(4) reach a license holder
 who makes a material misrepresentation to a potential buyer about a known significant defect, or fails
-to disclose one; Module 10 teaches § 1101.652. Confidentiality in Texas protects negotiating position. It has never
+to disclose one; Module 10 teaches § 1101.652. Confidentiality in Texas protects negotiating
+position. It has never
 protected physical facts about the house.
 
 Subdivision (4) — "treat a party to a transaction dishonestly" — is short and total. There is no
@@ -698,7 +700,8 @@ represents both landlord and tenant still requires written intermediary consent 
 two clients but one client and yourself. Section 1101.557(c)(1) provides that "a license holder who has
 the authority to bind a party to a lease or sale under a power of attorney or a property management
 agreement is also a party to the lease or sale." If you hold that authority, you are not merely the
-agent; you are on the other side of the table. Rule 535.144 governs the related situation and is taught in Module 12: a license holder dealing on her
+agent; you are on the other side of the table. Rule 535.144 governs the related situation and is
+taught in Module 12: a license holder dealing on her
 own account, or for a spouse, parent or child, a business entity she owns more than ten percent of, or a
 trust she serves as trustee or benefits from, "is obligated to disclose in writing that he or she is a
 licensed real estate broker or sales agent acting on his or her own behalf" in the contract of sale or
@@ -829,7 +832,8 @@ client's interests and that the license holder's position be clear to all partie
 *Disclosing your client's motivation.* "They've already moved to Georgetown." "They need to close by the
 fifteenth." "They've had it on the market a while." Each sentence hands the other side leverage. If you
 are your seller's agent, Rule 535.156 requires you to put her interest above your own and owe her a duty
-of fidelity, and you have done the opposite. If you are an intermediary or an appointed agent, § 1101.651(d)(1) and (3) forbid it — and the only exits are a
+of fidelity, and you have done the opposite. If you are an intermediary or an appointed agent, §
+1101.651(d)(1) and (3) forbid it — and the only exits are a
 separate writing from that party, a legal requirement or court order, or information that materially
 relates to the condition of the property. A moving date is none of those.
 
