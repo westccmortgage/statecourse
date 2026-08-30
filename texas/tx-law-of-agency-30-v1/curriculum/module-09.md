@@ -11,9 +11,9 @@ licensed Texas agent's service is excluded from "employment," and identify the c
 independent contractor agreement must carry to satisfy them; describe what Labor Code chapter 21
 prohibits, who counts as an "employer" and an "employee" under § 21.002, and where the chapter
 stops at the edge of a genuine independent contractor relationship; explain why the broker, not
-the sales agent, is the person the client employs under § 1101.557(a); determine from
-22 TAC §§ 535.4, 535.5, 535.20 and 535.147 which tasks an unlicensed personal assistant may perform and who
-may lawfully pay the assistant; apply every subsection of 22 TAC § 535.2 to a working brokerage;
+the sales agent, is the person the client employs under § 1101.557(a); determine from 22 TAC
+§§ 535.4, 535.5, 535.20 and 535.147 which tasks an unlicensed personal assistant may perform and
+who may lawfully pay the assistant; apply every subsection of 22 TAC § 535.2 to a working brokerage;
 and route every dollar of compensation correctly under 22 TAC § 535.3, § 1101.651(b), § 535.147
 and § 535.148, including compensation earned before a change of sponsorship.
 
@@ -96,15 +96,15 @@ Paragraph (2) does the same for an instructor of a person licensed or seeking a 
 broker or salesperson, on two conditions: the individual "instructs in an educational program or
 course approved by the Texas Real Estate Commission," and the written contract carries the same
 federal-tax-purposes provision. It has no output-based pay condition, so an instructor may be paid
-by the classroom hour and still fall outside "employment.""
+by the classroom hour and still fall outside "employment."
 
 **What § 201.072 conspicuously does not require.** Nothing in the four conditions requires that
 the agent be free from the broker's control, set their own hours, or be free to accept or reject
 assignments. That absence is not an oversight: neighbouring exclusions in the same subchapter do
-turn on control — § 201.070 requires that the individual "determines the method of performing the
-service," § 201.073 that the individual "may accept or reject a job from the delivery service."
-The Legislature knew how to make freedom from control a condition of an exclusion; in § 201.072 it
-chose not to. That resolves the tension you meet in Unit 5: a broker may supervise as closely as
+condition the exclusion on control. Section 201.070 requires, among other factors, that the
+individual "determines the method of performing the service," and § 201.073 that the individual
+"may accept or reject a job from the delivery service." The Legislature knew how to make freedom
+from control a condition of an exclusion; in § 201.072 it chose not to. That resolves the tension you meet in Unit 5: a broker may supervise as closely as
 the Commission's rules require without endangering the exclusion.
 
 **The federal side.** For federal tax purposes the governing provision is 26 U.S.C. § 3508,
@@ -130,7 +130,7 @@ respect to such services for Federal tax purposes."
 
 One well-drafted agreement satisfies both statutes, because they are one drafting pattern rather
 than two regimes. Its statutory core is short: the parties by name; a statement that the
-individual holds a Texas licence and will perform activity described by Occupations Code
+individual holds a Texas licence and will perform activity described by Occupations Code 
 § 1101.002; compensation measured by production rather than hours; and an express provision that the
 individual will not be treated as an employee with respect to the services for federal tax
 purposes.
@@ -341,7 +341,7 @@ doing only clerical work is not caught. Section 535.147(b) confirms it from the 
 unlicensed person may share in the income earned by a business entity licensed as a broker or
 exempted from the licensing requirements under the Act if the person engages in no acts for which
 a license is required and does not lead the public to believe that the person is in the real
-estate brokerage business.""
+estate brokerage business."
 
 Rule 22 TAC § 535.3 constrains the sales agent, and this is the provision agents forget when they
 hire their own assistant. Its second sentence: "A sales agent may not pay a commission or other
@@ -422,7 +422,7 @@ agent's, which is the whole reason this unit exists.
 the broker and must comply with §535.146 of this chapter (relating to Maintaining Trust Money)."
 Rule 535.146 is taught in Module 07; the two sentences of it that bear on this relationship are "A
 sales agent shall not maintain a trust account. Any trust money received by a sales agent must be
-immediately delivered to the sales agent's sponsoring broker.""
+immediately delivered to the sales agent's sponsoring broker."
 
 **(d) Property management.** "A broker is responsible for any property management activity by the
 broker's sponsored sales agent that requires a real estate license." Property management is where
@@ -497,11 +497,11 @@ not limited to property management trust accounts, and other funds received from
 maintained by the broker with appropriate controls in compliance with §535.146"; and that
 "[r]ecords are properly maintained pursuant to subsection (h) of this section."
 
-Two of those deserve a second look. Competence "in the geographic market area where the sales
-agent represents clients" is written into the rule. And the first-three-times requirement is the
-most concrete supervision obligation in it: not "encourage," not "make available," but "the broker
-must require" coaching, for each *type* of activity — first three listings, first three buyer
-representations, first three leases, counted separately.
+Two of those deserve a second look. Section 535.2(i) writes competence "in the geographic market
+area where the sales agent represents clients" into the rule itself. And the first-three-times
+requirement is the most concrete supervision obligation in it: not "encourage," not "make
+available," but "the broker must require" coaching, for each *type* of activity — first three
+listings, first three buyer representations, first three leases, counted separately.
 
 **(j) and (k) The response clocks.** "In addition to the requirements of §535.157 of this chapter
 (relating to Obligation to Respond Timely), a broker or supervisor delegated under subsection (e)
@@ -516,8 +516,8 @@ address of that agent's *sponsoring broker*.
 designated broker is the person responsible for the broker responsibilities under this section."
 The corporate form does not diffuse the responsibility; it rests on the human being Occupations
 Code § 1101.355(a) requires a business entity to designate. And then the final subsection, which
-this unit began with: "This section is not meant to create or require an
-employer/employee relationship between a broker and a sponsored sales agent."
+this unit began with: "This section is not meant to create or require an employer/employee
+relationship between a broker and a sponsored sales agent."
 
 ### Statute reading exercise: Auditing a brokerage against § 535.2
 
@@ -621,7 +621,7 @@ commissions with a foreign broker"; "Only Texas license holders may handle negot
 conducted within Texas"; and a resident of a foreign country or territory that does not license
 brokers "is considered to be licensed as a foreign broker for the purposes of §1101.651 of the
 Act, if the person practices as a real estate broker in compliance with the law of the foreign
-country or territory.""
+country or territory."
 
 ### Applied exercise: Following the money on a Denton closing
 

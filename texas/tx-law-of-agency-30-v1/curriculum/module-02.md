@@ -222,7 +222,7 @@ Two held provisions show you where the implied-authority boundary is drawn in Te
 money: trust money a broker accepts is held in a fiduciary capacity and must go to the broker's
 designated trust account or to an authorised escrow agent, a sales agent may not maintain a trust
 account, and trust money a sales agent receives must be delivered immediately to the sponsoring
-broker (22 TAC § 535.146(b); Modules 07 and 09 teach § 535.146). Being authorised to sell the house
+broker (22 TAC § 535.146(b); Module 07 teaches § 535.146). Being authorised to sell the house
 does not carry with it authority to hold the earnest money. Second, on binding the principal: §
 1101.557(c)(1) says that for purposes of that section, "a license holder who has the authority to
 bind a party to a lease or sale under a power of attorney or
@@ -644,7 +644,7 @@ holding of it, the bar on a sales agent maintaining a trust account, the deposit
 close of business of the second working day after receipt, and what counts as prima facie evidence
 of commingling — and 22
 TAC § 535.2(c) makes the broker responsible for the proper handling of trust funds placed with the
-broker. **Modules 07 and 09 teach § 535.146; Module 09 teaches § 535.2.** For your purposes as a
+broker. **Module 07 teaches § 535.146; Module 09 teaches § 535.2.** For your purposes as a
 sales agent the operative sentence is the one you already met in Unit 2: you do not hold trust
 money, you deliver it to your broker immediately.
 
