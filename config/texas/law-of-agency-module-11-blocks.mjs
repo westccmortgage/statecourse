@@ -41,7 +41,7 @@ export const MODULE_11_BLOCKS = Object.freeze({
       id: "t11u3", sequence: 3, required: true,
       code: "T11U3",
       title: "Damages",
-      learningObjective: "Compute a DTPA award under § 17.50(b)(1) at each of its three tiers — economic damages alone; a knowing finding, which adds mental anguish and up to three times economic damages; and an intentional finding, which multiplies mental anguish and economic damages together — and add the court costs and attorney's fees § 17.50(d) makes mandatory for a prevailing consumer.",
+      learningObjective: "Compute a DTPA award under § 17.50(b)(1) at each of its three tiers — economic damages alone; a knowing finding, which adds mental anguish and up to three times economic damages; and an intentional finding, which multiplies mental anguish and economic damages together — add the court costs and attorney's fees § 17.50(d) makes mandatory for a prevailing consumer, keep those fees, costs and prejudgment interest out of the multiplier base as § 17.50(e) requires, and state the fee award § 17.50(c) directs to the defendant on a court finding that the action was groundless or brought in bad faith.",
       screens: [
         { id: "t11u3-s1", sequence: 1, type: "instruction", title: "Damages", content: RANGE("## Unit: Damages", "### Applied exercise: Computing the exposure in Mansfield") },
         { id: "t11u3-s2", sequence: 2, type: "practice", title: "Applied exercise: Computing the exposure in Mansfield", content: RANGE("### Applied exercise: Computing the exposure in Mansfield", "## Unit: Defenses") },
@@ -63,7 +63,7 @@ export const MODULE_11_BLOCKS = Object.freeze({
       id: "t11u5", sequence: 5, required: true,
       code: "T11U5",
       title: "Ethical and Legal Concerns",
-      learningObjective: "Connect civil DTPA exposure to the licence and to the consumer's backstop: identify the § 1101.652 grounds that reach the same conduct on an administrative record with no consumer, no reliance and no dollar of loss, explain how 22 TAC § 535.149 gives § 1101.652(b)(15) its content by adopting the § 17.46 acts, and state the operation and exact caps of the Real Estate Recovery Trust Account under §§ 1101.601, 1101.602, 1101.605(a), 1101.610 and 1101.613(b).",
+      learningObjective: "Connect civil DTPA exposure to the licence and to the consumer's backstop: identify the § 1101.652 grounds that reach the same conduct on an administrative record with no consumer, no reliance and no dollar of loss, explain how 22 TAC § 535.149 gives § 1101.652(b)(15) its content by adopting the § 17.46 acts, state the operation and exact caps of the Real Estate Recovery Trust Account under §§ 1101.601, 1101.602, 1101.605(a), 1101.610 and 1101.613(b), and state what a payment from the account does to the license holder — subrogation under § 1101.612(a), revocation under § 1101.655(a) where the account is not repaid before the 31st day after notice, and ineligibility for a licence under § 1101.655(c) until the amount is repaid in full with interest.",
       screens: [
         { id: "t11u5-s1", sequence: 1, type: "instruction", title: "Ethical and Legal Concerns", content: RANGE("## Unit: Ethical and Legal Concerns", "### Module recap") },
         { id: "t11u5-s2", sequence: 2, type: "retrieval", title: "Retrieval check", questionId: "t11u5-q1" },

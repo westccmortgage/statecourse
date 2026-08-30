@@ -72,7 +72,7 @@ export const MODULE_3_BLOCKS = Object.freeze({
       id: "t03u6", sequence: 6, required: true,
       code: "T03U6",
       title: "Stigmatized Properties",
-      learningObjective: "State exactly what Occupations Code § 1101.556 and Property Code § 5.008(c) relieve — inquiry, disclosure and release, for a prior or current occupant's AIDS or HIV status and for a death by natural causes, suicide or accident unrelated to the condition of the property — identify what falls outside that relief, including homicide and a death caused by the property's condition, and explain why relief from a duty to disclose is not permission to answer falsely.",
+      learningObjective: "State exactly what Occupations Code § 1101.556 and Property Code § 5.008(c) relieve — inquiry, disclosure and release, for a prior or current occupant's AIDS or HIV status and for a death by natural causes, suicide or accident unrelated to the condition of the property — identify what falls outside that relief, including homicide and a death caused by the property's condition, separate the relief from a duty those two sections give from the civil and criminal immunity § 1101.802 supplies for the AIDS or HIV limb alone, with no parallel immunity for deaths, and explain why relief from a duty to disclose is not permission to answer falsely and why 22 TAC § 531.19 independently bars inquiring about, responding to or disclosing an occupant's disability.",
       screens: [
         { id: "t03u6-s1", sequence: 1, type: "instruction", title: "Stigmatized Properties", content: RANGE("## Unit: Stigmatized Properties", "### Module recap") },
         { id: "t03u6-s2", sequence: 2, type: "retrieval", title: "Retrieval check", questionId: "t03u6-q1" },
