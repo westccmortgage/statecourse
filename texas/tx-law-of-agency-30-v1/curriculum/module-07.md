@@ -30,9 +30,8 @@ Module 10.
 ## Unit: How and When Agency is Created
 
 Almost every disciplinary case and almost every lawsuit begins with a disagreement about one
-question: *whose agent were you?* Duties attach to a relationship. If you cannot say precisely when
-the relationship began, you cannot say when the duties began, and you cannot defend yourself against
-a claim that they began earlier than you thought.
+question: *whose agent were you?* Duties attach to a relationship, so if you cannot say precisely
+when the relationship began, you cannot say when the duties began.
 
 Occupations Code § 1101.557(a) fixes the moment: "A broker who represents a party in a real estate
 transaction or who lists real estate for sale under an exclusive agreement for a party is that
@@ -49,11 +48,10 @@ the client is the brokerage's client and you are the instrument through which th
 That is not a technicality you can ignore when the relationship ends, as the second unit shows.
 
 The conduct that can pull you into an agency is the list of brokerage acts in § 1101.002(1)(A) and
-the definition of showing in 22 TAC § 535.4(c), taught in Module 01. Notice only how low the
-thresholds sit: the statute reaches a person who "negotiates or attempts to negotiate" a listing,
-sale or lease, who "aids or offers or attempts to aid in locating or obtaining real estate," and who
-"procures or assists in procuring a prospect." It catches the beginning of the conduct, not its
-completion. Opening a lockbox is a regulated act.
+the definition of showing in 22 TAC § 535.4(c), both taught in Module 01. Notice only how low the
+thresholds sit — the statute reaches a person who "attempts to negotiate" a listing, sale or lease
+and one who "offers or attempts to aid in locating" real estate. It catches the beginning of the
+conduct, not its completion. Opening a lockbox is a regulated act.
 
 ### Creation by written agreement — and where Texas now compels the writing
 
@@ -67,27 +65,24 @@ any act of brokerage, not the important ones. And "before" — before the showin
 table. If a buyer texts you on a Saturday morning in Frisco asking to see a house at two o'clock, the
 agreement is signed before two o'clock or you do not open the door.
 
-Module 05 teaches § 1101.563 in full: its own definition of "residential real property," the terms
-subsection (c) requires the agreement to state, the separate-agreement rule in subsection (d), and
-the fourteen-day and non-exclusivity limits subsection (e) places on showing-only agreements. Three
-consequences belong to creation. On residential buyer-side work, Texas has largely replaced the
-question *when did an agency arise* with the question *was there a writing before the showing*. The
-required contents include the agreement's termination date, so a creation statute now carries a
-termination term — consistent with § 1101.652(b)(12), which makes it a disciplinary ground to fail
-"to specify a definite termination date that is not subject to prior notice" in a contract for
-services requiring a licence, other than a contract to perform property management services. And
-§ 1101.652(b)(34), effective January 1, 2026, makes the failure to enter into the § 1101.563
-agreement its own ground for discipline.
+Module 05 teaches § 1101.563 in full — its definition of "residential real property," the terms
+subsection (c) requires, the separate-agreement rule in (d), and the fourteen-day and
+non-exclusivity limits in (e). Two consequences belong to creation. On residential buyer-side work
+Texas has largely replaced the question *when did an agency arise* with the question *was there a
+writing before the showing*; and § 1101.652(b)(34), effective the same date, makes the missing
+agreement its own ground for discipline. Note also that the required contents include the
+agreement's termination date, so a creation statute now carries a termination term — the point the
+second unit picks up.
 
 Section 1101.562, added by the same 2025 act and also taught in Module 05, lets a broker show
-property to a party without representing that party — but only if the broker has not agreed with the
-party, "either orally or in writing," to represent the party, is not otherwise acting as the party's
-agent at the time of the showing, gives no "opinions or advice regarding the real property or real
-estate transactions in general," and performs no other act of real estate brokerage for the party;
-subsection (c) permits the broker to confirm information about "the size, price, and terms" of the
-property. The creation point is how fragile that status is. You may say the house is 2,140 square
-feet and listed at $389,000. Say instead that the price looks soft and the buyer should offer
-$375,000, and you have given advice, lost the safe harbour, and performed brokerage for that buyer.
+property without representing the party — but only if the broker has not agreed with the party
+"either orally or in writing" to represent them, is not otherwise acting as their agent, gives no
+"opinions or advice regarding the real property or real estate transactions in general," and
+performs no other act of brokerage for them; subsection (c) permits confirming "the size, price, and
+terms" of the property. The creation point is how fragile that status is. You may say the house is
+2,140 square feet and listed at $389,000. Say instead that the price looks soft and the buyer should
+offer $375,000, and you have given advice, lost the safe harbour, and performed brokerage for that
+buyer.
 
 One further Texas writing creates a status rather than merely recording one: § 1101.559 permits a
 broker to act as an intermediary only on written consent from each party stating the source of any
@@ -130,10 +125,10 @@ commission agreement to be in writing, the honest answer names both provisions a
 straight: § 1101.806(c) for the sale or purchase of real estate generally, § 26.01(b)(7) for
 commissions on the mineral interests it lists.
 
-Three writings, three questions, three different failures. Section 1101.563 answers *may I act*, and
-failing it is a disciplinary count. Section 1101.806(c) answers *may I sue for the fee*, and failing
-it loses the suit. Section 26.01 answers *is the promise enforceable at all*, and failing it means
-there was never an enforceable promise. A file can satisfy one and fail another.
+Three writings, three questions, three different failures: § 1101.563 answers *may I act*, and
+failing it is a disciplinary count; § 1101.806(c) answers *may I sue for the fee*, and failing it
+loses the suit; § 26.01 answers *is the promise enforceable at all*. A file can satisfy one and fail
+another.
 
 ### Creation without a signature: the common-law routes and why you must not rely on them
 
@@ -152,11 +147,9 @@ thing with real consequences. Section 1101.562(a)(2) separately requires that th
 otherwise acting as the party's agent at the time of showing the real property," a condition that
 would be redundant if agency could arise only by agreement. 22 TAC § 531.2 attaches fiduciary status
 to a license holder "while acting as an agent for another" — the trigger is acting, not signing. And
-22 TAC § 535.145, taught in Module 11, provides that for purposes of § 1101.652(b)(5) a "false
-promise" "includes both oral and written promises," and that neither a written contractual provision
-disclaiming oral representations nor the parol evidence rule will prevent the Commission from
-considering oral promises made by a license holder; an integration clause in your paperwork does not
-erase what you said out loud.
+under 22 TAC § 535.145, taught in Module 11, a "false promise" for purposes of § 1101.652(b)(5)
+"includes both oral and written promises," and neither a contractual disclaimer of oral
+representations nor the parol evidence rule stops the Commission considering what you said out loud.
 
 So the honest teaching is this. Do not think of the non-written routes as *strategies*. Think of them
 as *hazards*. Under § 1101.806(c) you cannot sue for a commission on an agency you created by conduct,
@@ -168,20 +161,17 @@ worst of both worlds: full fiduciary exposure, no enforceable fee, and a discipl
 
 Module 02 teaches the disclosure steps that keep the record clean — the representation disclosure at
 first contact under § 1101.558(b), and the written notice at the first substantive communication
-under § 1101.558(b-1), in the form 22 TAC § 531.20 adopts by reference as the Information About
-Brokerage Services Notice, TREC No. IABS 1-2. **The text of the IABS notice itself was not held for
-this course, so this module does not quote it.**
-
-Two applications belong here rather than there. First, the exemption in § 1101.558(c)(3) for a
-communication at a property "held open for any prospective buyer or tenant" excuses the *notice* at an
-open house. It does not excuse the § 1101.563 writing when the property is residential and you are
-showing it to an unrepresented prospective buyer, and it does not excuse § 1101.652(b)(7), which
-reaches a license holder who "fails to make clear to all parties to a real estate transaction the
-party for whom the license holder is acting." Second, be careful about creating an agency on top of
-somebody else's: § 1101.652(b)(22) reaches negotiating or attempting to negotiate with a party you
-know is bound by an outstanding written contract granting exclusive agency to another broker, while
-22 TAC § 535.153 confirms that you may still solicit the *future* listing. You may ask for the next
-listing; you may not transact the present one.
+under § 1101.558(b-1), in the form 22 TAC § 531.20 adopts as the Information About Brokerage Services
+Notice, TREC No. IABS 1-2. **The text of the IABS notice itself was not held for this course, so this
+module does not quote it.** Two applications belong here rather than there. The exemption in
+§ 1101.558(c)(3) for a communication at a property "held open for any prospective buyer or tenant"
+excuses the *notice* at an open house; it does not excuse the § 1101.563 writing when the property is
+residential and the prospective buyer is unrepresented, and it does not excuse § 1101.652(b)(7),
+which reaches a license holder who "fails to make clear to all parties to a real estate transaction
+the party for whom the license holder is acting." And do not create an agency on top of somebody
+else's: § 1101.652(b)(22) reaches negotiating with a party you know is bound by an outstanding
+written exclusive agency to another broker, while 22 TAC § 535.153 confirms you may still solicit the
+*future* listing. Ask for the next listing; do not transact the present one.
 
 ### Statute reading exercise: The two 2026 sections, read side by side
 
