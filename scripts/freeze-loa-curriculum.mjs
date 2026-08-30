@@ -28,7 +28,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v2";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v3";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -36,6 +36,22 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v2";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v2",
+    on: "2026-08-30",
+    module: "NONE — no curriculum file changed and all twelve module hashes are byte-identical",
+    change: "The source register grew from 51 to 55 registered sources when 22 TAC 535.55, 535.62, 535.63, 535.64 and 535.65 were registered as the controlling assessment and delivery authority, plus the Texas Register capture that supplies their subsection lettering.",
+    reason: "A freeze artifact that hashes the source register changes when that register changes. The agent that made the change re-took the freeze under the SAME id, reasoning that no curriculum wording moved. That reasoning is half right and the conclusion is wrong: an id that denotes two different byte-states is not an identifier, and anyone verifying against v2 could not tell which of the two they held. The distinction between a curriculum change and an evidence change is real and is recorded here — it is why this entry names no module — but the answer to it is a version bump carrying that distinction, not a silent re-take.",
+    foundBy: "reviewing the agent's own report, which disclosed the re-take rather than hiding it",
+    classOfDefect: "provenance — nothing was mis-stated, but the artifact's identity had stopped being unique",
+    auditsReRun: Object.freeze([
+      "node scripts/texas-source-inventory.mjs — 55 registered sources resolve, every controlling source present",
+      "node scripts/check-loa-module-structure.mjs — 57/57 units, no structural failures",
+      "node scripts/audit-loa-claims.mjs — unchanged, the twelve modules are byte-identical",
+      "node scripts/report-loa-time-evidence.mjs — unchanged for the same reason",
+      "node --test tests/*.test.mjs",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30",
     on: "2026-08-30",
