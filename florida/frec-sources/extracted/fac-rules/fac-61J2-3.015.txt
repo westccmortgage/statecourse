@@ -1,0 +1,90 @@
+SOURCE: https://www.flrules.org/gateway/readFile.asp?sid=0&tid=26750386&type=1&file=61J2-3.015.doc
+PUBLISHER: Florida Department of State, Division of Library and Information Services (flrules.org) — official publisher of the Florida Administrative Code
+RULE: 61J2-3.015 F.A.C.
+CHAPTER: 
+EFFECTIVE: 2/9/2023
+RETRIEVED: 2026-08-30
+LOCAL COPY: florida/frec-sources/fac/fac-61J2-3.015.doc
+SHA256: 5e01d7f599b3e70f902604891f6a2f48a2f6a9e34b18ab893e16d03c88fb327e
+EXTRACTION: strings(1) over the Word 97 stream; LibreOffice could not load the file.
+----------------------------------------------------------------------
+61J2-3.015 Notices of Satisfactory Course Completion.
+(1) Applicants for initial licensure as a broker or sales associate must provide the course completion certificate at the individual
+s scheduled examination as proof that they have satisfactorily completed the applicable Commission prescribed course.
+(2) An application for renewal or reactivation of an existing status as a broker, broker-sales associate, sales associate or instructor shall contain an affirmation by the individual of having satisfactorily completed the applicable Commission prescribed, conducted or approved course(s). Each licensee and instructor permitholder shall retain the course completion certificate as proof of successful completion of continuing education or pre-or post-license education requirements for at least 5 years following completion of the course. Failing to provide evidence of compliance with continuing education or post-license education requirements or the furnishing of false or misleading information regarding compliance with said requirements shall be grounds for disciplinary action against the licensee or instructor.
+(3) Commission approved equivalent courses offered by accredited Florida universities, colleges, community colleges and area technical centers shall provide students with the applicable course completion certificate (notice) described below. The course completion certificate for these equivalent courses must contain the college equivalent course identifying number.
+(4) All requests for equivalency for credit courses taken at universities, colleges and community colleges outside of Florida must be accompanied by an official transcript. An official transcript contains the seal of the institution and the signature of the registrar.
+(5) The course completion certificate must be completely filled out by the institution, school or sponsor certifying successful course completion and must be typed, printed in ink or delivered electronically to the student.
+(6) The course completion certificates shall contain the following information for the type of course being completed.
+(a) Pre-licensing Course for Sales Associate.
+Name of School
+School License Number
+Address of School
+Course Title: Course I
+Course Number
+Start Date
+Finish Date
+Exam Date
+Student Name
+Student Address
+Authorized Signature for the School
+(b) Pre-licensing Course for Broker.
+Name of School
+School License Number
+Address of School
+Course Title: Course II
+Course Number
+Start Date
+Finish Date
+Exam Date
+Sales Associate License Number
+Student Name
+Student Address
+Authorized Signature for the School
+(c) Broker and Sales Associate Continuing Education and Reactivation Education.
+Name of School
+School/Provider License Number
+Address of School
+Course Title
+Course Number
+Course Hours
+Start Date
+Finish Date
+License Number
+Student Name
+Student Address
+Authorized Signature for the School
+(d) Post-licensing Education for Broker and Sales Associate.
+Name of School
+School/Provider License Number
+Address of School
+Course Title
+Course Number
+Course Hours
+Start Date
+Finish Date
+License Number
+Student Name
+Student Address
+Authorized Signature for the School
+(e) Instructor Continuing Education.
+Name of School
+School/Provider License Number
+Address of School
+Course Title
+Course Number
+Course Hours
+Start Date
+Finish Date
+Permit Number
+Student Name
+Student Address
+Authorized Signature for the School
+(f) Each course completion certificate shall contain the following information:
+The student named in this certificate has completed the referenced course in accordance with the requirements of the Florida Real Estate Commission. The original course completion certificate is to be given to the student and a copy retained by the school for a minimum of five (5) years following the date the course was completed.
+(7) The school may retain the copy of the course completion certificate in any electronic or digital format readily retrivable.
+Rulemaking Authority 455.2123, 475.05 FS. Law Implemented 455.2123, 475.04, 475.17, 475.182, 475.183, 475.451 FS. History
+New 1-1-80, Amended 8-24-80, 9-16-84, Formerly 21V-3.15, Amended 10-13-88, 12-29-91, 6-7-92, 6-28-93, Formerly 21V-3.015, Amended 9-11-94, 12-30-97, 1-18-00, 10-15-00, 11-16-09, 10-13-10, 12-16-12, 12-14-20, 2-9-23.
+61J2-3
+Normal
+61J2-3
