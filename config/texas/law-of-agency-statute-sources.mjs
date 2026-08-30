@@ -1904,8 +1904,13 @@ export const GAPS = Object.freeze([
   Object.freeze({
     id: "iabs-1-2-form-text-held-after-authoring",
     gapTier: "identified-not-taught",
-    gap: "RECORDED AS RESOLVED-AS-TO-HOLDING, AND NOT AS TO TEACHING. Eight units state that the text of TREC No. IABS 1-2 'was not held for this course', which was true when the modules were written; the PDF has since been acquired and is registered above at tier identified-not-taught, hashed and verified. Nothing in the curriculum was changed on the strength of it and nothing may be: the units still teach the notice through 22 TAC § 531.20 and Occupations Code § 1101.558(b-1), which is the correct authority in any event. The gap that remains is the one that always mattered — no unit takes a proposition from the form's own text.",
-    affectedUnits: ["T01U3", "T02U5", "T03U1", "T04U5", "T05U6", "T06U5", "T07U1", "T08U1"],
+    gap: "RECORDED AS RESOLVED-AS-TO-HOLDING, AND NOT AS TO TEACHING. FOUR units state that the text of TREC No. IABS 1-2 is held but not taught, which was true when the modules were written; this entry said EIGHT and named four units that make no such statement, and the count and the list are corrected here against the frozen text rather than left as a number nobody re-derived; the PDF has since been acquired and is registered above at tier identified-not-taught, hashed and verified. Nothing in the curriculum was changed on the strength of it and nothing may be: the units still teach the notice through 22 TAC § 531.20 and Occupations Code § 1101.558(b-1), which is the correct authority in any event. The gap that remains is the one that always mattered — no unit takes a proposition from the form's own text.",
+    /* Corrected 2026-08-30, and the correction is the point of the entry below: the four units that
+       actually carry the statement, verified against the frozen text rather than counted from
+       memory. T01U3, T03U1, T04U5 and T05U6 were listed here and do not make the statement — they
+       teach the notice through 22 TAC § 531.20 and § 1101.558(b-1) and say nothing about the form's
+       own text, which is exactly the posture this gap says is correct. */
+    affectedUnits: ["T02U5", "T06U5", "T07U1", "T08U1"],
   }),
   Object.freeze({
     id: "property-code-ch-27-not-held",

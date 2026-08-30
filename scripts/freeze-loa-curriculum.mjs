@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v5";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v6";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -126,6 +126,26 @@ const BREAK_HISTORY = Object.freeze([
       "node --test tests/*.test.mjs — 1007 tests, 0 failures",
       "register load-time invariants — every hash recomputed from disk, the five rules cross-checked against config/texas/trec-rules-source-lock.mjs, the Texas Register capture cross-checked against regulatory-manifest.mjs, and every artefact a rule is registered as controlling either exists on disk or is marked planned:",
       "unit coverage 57/57 held, 0 uncovered, 0 controlling gaps",
+    ]),
+  }),
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v5",
+    on: "2026-08-30",
+    module: "NONE — no curriculum file changed, and all twelve module hashes are byte-identical to the ones v5 carried.",
+    change:
+      "config/texas/law-of-agency-statute-sources.mjs, which this freeze hashes as the 'source register', carried a GAPS entry that overstated its own reach. The iabs-1-2-form-text-held-after-authoring gap said EIGHT units state that the text of TREC No. IABS 1-2 is held but not taught, and listed T01U3, T02U5, T03U1, T04U5, T05U6, T06U5, T07U1 and T08U1. Re-derived against the frozen text, FOUR units make that statement: T02U5, T06U5, T07U1 and T08U1. The other four discuss the notice and teach it through 22 TAC § 531.20 and Occupations Code § 1101.558(b-1) without saying anything about the form's own text, which is the posture the gap itself describes as correct. The count and the list are corrected; the gap's substance is unchanged, and no curriculum wording moved.",
+    reason:
+      "A gap record is a claim about the curriculum, and this one was a claim the curriculum did not support. Eight was not a number anybody had re-derived; four is, and the entry now says so in its own text so that a reader is not left comparing a corrected list against a remembered count.",
+    foundBy:
+      "the GAPS[].affectedUnits reconciliation deferred during the source-register re-derivation: each gap's affected units were checked for a not-held statement in that unit's own frozen text, and this was the single mismatch out of twenty gaps.",
+    whyTheFreezeIdISBumped:
+      "The register is one of the artifacts this freeze hashes, so its bytes changed and the id must change with them: an id that denotes two byte-states is not an identifier. The v2 break declined to bump for a register change that only ADDED sourced records, on the reasoning that the evidence layer had grown rather than that a recorded claim had been wrong. This one is different in kind - a recorded claim was inaccurate and is being corrected - and a correction is exactly what a version is for.",
+    auditsReRun: Object.freeze([
+      "node scripts/audit-loa-claims.mjs - 1,975 citations, 1,974 mechanical pass, 1 identified-not-taught, 0 unresolved (unchanged)",
+      "node scripts/report-loa-time-evidence.mjs - layers 1512.4 / 20 / 1532.4, every topic at or above its allocation (unchanged)",
+      "node scripts/report-loa-traceability.mjs - 286 items, 57/57 units assessed and examined",
+      "node scripts/loa-acceptance-report.mjs - 26 checks, complete operational course GO, submission readiness NO-GO",
+      "node --test tests/*.test.mjs - 0 failures",
     ]),
   }),
 ]);

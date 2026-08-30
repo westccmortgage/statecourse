@@ -723,3 +723,54 @@ test("the freeze, the audit and the acceptance report agree about what an unmatc
   }
   assert.equal(new Set(composed.map((q) => q.id)).size, composed.length, "the composition must not duplicate an id");
 });
+
+test("every gap's affected units actually carry a not-held statement in their own frozen text", async () => {
+  /* A gap record is a claim ABOUT THE CURRICULUM, and one of them was a claim the curriculum did
+     not support: the IABS-form gap said eight units state the form's text is held but not taught and
+     named four that say no such thing. Re-derived here rather than counted, so the next overstated
+     list fails instead of sitting in a register nobody re-reads. */
+  const { GAPS } = await import("../config/texas/law-of-agency-statute-sources.mjs");
+  const slug = (s) => s.toLowerCase().replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
+  const traceByUnit = new Map(UNIT_TRACE.map((t) => [t.code, t]));
+  const bodyByUnit = new Map();
+  for (const trace of UNIT_TRACE) {
+    const md = moduleText(trace.file);
+    for (const part of md.split(/^## /m)) {
+      if (!part.startsWith("Unit: ")) continue;
+      const title = part.split("\n")[0].slice(6).trim();
+      if (slug(title) === slug(trace.unit)) bodyByUnit.set(trace.code, part);
+    }
+  }
+  const NOT_HELD = /not held|was not held|were not held|not taught here|is not taught|does not state|not read for this course|not stated here/i;
+  const offenders = [];
+  for (const gap of GAPS) {
+    for (const unit of gap.affectedUnits ?? []) {
+      assert.ok(traceByUnit.has(unit), `gap ${gap.id} names ${unit}, which is not an LOA-1 unit`);
+      const body = bodyByUnit.get(unit);
+      assert.ok(body, `gap ${gap.id} names ${unit}, whose unit text could not be located`);
+      if (!NOT_HELD.test(body)) offenders.push(`${gap.id} -> ${unit}`);
+    }
+  }
+  assert.deepEqual(offenders, [],
+    `these gaps name units whose own text makes no not-held statement: ${offenders.join(", ")}`);
+});
+
+test("the IABS-form gap names exactly the units that make its statement", async () => {
+  const { GAPS } = await import("../config/texas/law-of-agency-statute-sources.mjs");
+  const gap = GAPS.find((g) => g.id === "iabs-1-2-form-text-held-after-authoring");
+  assert.ok(gap, "the IABS-form gap must remain recorded");
+  const slug = (s) => s.toLowerCase().replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
+  const IABS_NOT_TAUGHT = /(IABS[^.]{0,80}|TREC No\. IABS 1-2[^.]{0,80})(not held|not taught)/i;
+  const stating = [];
+  for (const trace of UNIT_TRACE) {
+    const md = moduleText(trace.file);
+    for (const part of md.split(/^## /m)) {
+      if (!part.startsWith("Unit: ")) continue;
+      const title = part.split("\n")[0].slice(6).trim();
+      if (slug(title) !== slug(trace.unit)) continue;
+      if (IABS_NOT_TAUGHT.test(part)) stating.push(trace.code);
+    }
+  }
+  assert.deepEqual([...gap.affectedUnits].sort(), stating.sort(),
+    `the gap names ${gap.affectedUnits.join(", ")} and the frozen text states it in ${stating.join(", ")}`);
+});
