@@ -12,13 +12,13 @@
   "disjointness": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file.",
   "measuredComponents": {
     "modules": 12,
-    "proseWords": 107750,
+    "proseWords": 107765,
     "statuteReadingExercises": 21,
     "appliedExercises": 31,
     "moduleRecaps": 12,
     "exerciseWords": 14575,
     "recapWords": 13299,
-    "totalWords": 138587
+    "totalWords": 138602
   },
   "plannedNotBuilt": {
     "quizItems": 58,
@@ -28,7 +28,7 @@
   "required": [
     {
       "segment": "required instructional prose",
-      "basis": "107,750 words at 140 wpm",
+      "basis": "107,765 words at 140 wpm",
       "minutes": 770,
       "measured": true
     },
@@ -93,7 +93,7 @@
     },
     {
       "segment": "mastery review",
-      "basis": "107,750 words at 60 wpm",
+      "basis": "107,765 words at 60 wpm",
       "minutes": 1796,
       "reason": "an upper bound on diligent study, never required time"
     },
@@ -131,9 +131,9 @@
       "topic": "Basic Agency Relationships, Disclosure and Duties to the Client",
       "units": 5,
       "prescribedMinutes": 125,
-      "sha256": "5717bf23725cf9ff9341b89a89aff15c3565366a2eb4f1da042cb440f66dd62b",
-      "totalWords": 13125,
-      "proseWords": 10539,
+      "sha256": "46b3b6d2752b7eca886fa4887d5127709740c5d565c56b01768701a3dd599118",
+      "totalWords": 13121,
+      "proseWords": 10535,
       "statuteReadingExercise": 2,
       "appliedExercise": 4,
       "moduleRecap": 1,
@@ -320,9 +320,9 @@
       "topic": "Deceptive Trade Practices and Consumer Protection Act",
       "units": 5,
       "prescribedMinutes": 140,
-      "sha256": "3d0c7d1000c30ac900fddd0c240018344106406b95b617fad37a3311728edb55",
-      "totalWords": 11630,
-      "proseWords": 8569,
+      "sha256": "34f764415efc48181f5c9613f48a5074c989560c30f97c84f2d5f11007f1f588",
+      "totalWords": 11649,
+      "proseWords": 8588,
       "statuteReadingExercise": 2,
       "appliedExercise": 3,
       "moduleRecap": 1,
