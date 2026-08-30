@@ -1,0 +1,283 @@
+{
+  "freezeId": "LOA-CONTENT-FREEZE-2026-08-30",
+  "courseId": "tx-law-of-agency-30-v1",
+  "approvalForm": "LOA-1 rev 09/11/2024",
+  "frozenOn": "2026-08-30",
+  "generatedBy": "scripts/freeze-loa-curriculum.mjs",
+  "afterFreeze": "No curriculum wording may change silently. An instructional repair found during assessment authoring must break the freeze explicitly, name the module and the reason, re-run the time, source, quotation, structural and assessment-dependency audits, and create a new freeze version with new hashes.",
+  "evidence": {
+    "unitsCovered": "57/57",
+    "unitsExcused": 0,
+    "unitsUncovered": 0,
+    "layer1TopicInstructionMinutes": 1512.2,
+    "layer2CourseLevelCapstoneMinutes": 20,
+    "layer3GrandRequiredMinutes": 1532.2,
+    "prescribedMinutes": 1500,
+    "everyTopicMeetsItsAllocation": true,
+    "topicVariances": [
+      {
+        "topicCode": "T01",
+        "prescribed": 130,
+        "required": 132.7,
+        "variance": 2.7
+      },
+      {
+        "topicCode": "T02",
+        "prescribed": 125,
+        "required": 127.6,
+        "variance": 2.6
+      },
+      {
+        "topicCode": "T03",
+        "prescribed": 125,
+        "required": 125.5,
+        "variance": 0.5
+      },
+      {
+        "topicCode": "T04",
+        "prescribed": 120,
+        "required": 120.2,
+        "variance": 0.2
+      },
+      {
+        "topicCode": "T05",
+        "prescribed": 150,
+        "required": 151.4,
+        "variance": 1.4
+      },
+      {
+        "topicCode": "T06",
+        "prescribed": 165,
+        "required": 165.9,
+        "variance": 0.9
+      },
+      {
+        "topicCode": "T07",
+        "prescribed": 85,
+        "required": 85.5,
+        "variance": 0.5
+      },
+      {
+        "topicCode": "T08",
+        "prescribed": 45,
+        "required": 45.9,
+        "variance": 0.9
+      },
+      {
+        "topicCode": "T09",
+        "prescribed": 120,
+        "required": 120.5,
+        "variance": 0.5
+      },
+      {
+        "topicCode": "T10",
+        "prescribed": 155,
+        "required": 155.3,
+        "variance": 0.3
+      },
+      {
+        "topicCode": "T11",
+        "prescribed": 140,
+        "required": 141.7,
+        "variance": 1.6
+      },
+      {
+        "topicCode": "T12",
+        "prescribed": 140,
+        "required": 140.1,
+        "variance": 0.1
+      }
+    ],
+    "citations": 1975,
+    "mechanicalPass": 1974,
+    "identifiedNotTaught": [
+      {
+        "claimId": "module-10-C1468",
+        "module": "module-10",
+        "unit": "Federal and State Law Relating to Conduct",
+        "passage": "the closing sentence of the fair-housing exemptions passage in T10U2, which tells the student where the held subchapter stops",
+        "citation": "Property Code § 301.045",
+        "source": "texas/trec-sources/statutes/PR.301.htm",
+        "sourceHeld": true,
+        "sectionPresentInSource": false,
+        "status": "IDENTIFIED_NOT_TAUGHT",
+        "whyItCannotReceiveAMechanicalPass": "The mechanical check asks whether a cited section is present in the held source. This section is not present, because Subchapter C of Property Code ch. 301 as held runs from 301.041 to 301.044 and stops. A check that verifies presence cannot pass a citation to something absent, and it should not: the correct outcome is to surface it for review, which is what happened.",
+        "humanReviewedDisposition": "NOT A DEFECT. The citation appears once, inside a sentence whose whole purpose is to tell the student that this section was not held and is not taught. No proposition is asserted from it, no rule is stated on its authority, and no assessment item can reference it.",
+        "howItGotIntoTheCourse": "My authoring brief for module 10 listed the Texas exemptions as sections 301.041 through 301.045. That range was mine and it was wrong. The author checked the held statute, found the subchapter ends at 301.044, and recorded the discrepancy in the module rather than quietly writing to the range I had given. That is the behaviour the sourcing rule is for.",
+        "evidenceItIsNotASourcingOrLegalDefect": [
+          "The held source texas/trec-sources/statutes/PR.301.htm contains Sec. 301.041 CERTAIN SALES AND RENTALS EXEMPTED, Sec. 301.042 RELIGIOUS ORGANIZATION, PRIVATE CLUB, AND APPRAISAL EXEMPTION, Sec. 301.043 HOUSING FOR ELDERLY EXEMPTED and Sec. 301.044 EFFECT ON OTHER LAW, and no Sec. 301.045.",
+          "All four exemptions that do exist are taught in T10U2 in required prose.",
+          "The course text reads: 'Subchapter C of the chapter as held runs from 301.041 to 301.044 and stops there. A 301.045 was not held for this course and is not taught here; the four exemptions above are the whole of the subchapter as read.'",
+          "The claim carries status IDENTIFIED_NOT_TAUGHT, the classification the audit gives a citation the course itself disclaims, and it is counted in the denominator rather than excluded from it."
+        ]
+      }
+    ],
+    "undispositionedQuotations": 0,
+    "orphanedDispositions": 0,
+    "resurfacedDispositions": 0,
+    "retiredDispositions": 28,
+    "sourcingDefects": 0,
+    "registeredSourcesVerified": "51/51",
+    "misconceptionChecks": 7,
+    "scenariosPlanned": 5,
+    "quizItemsPlanned": 58
+  },
+  "modules": [
+    {
+      "topicCode": "T01",
+      "topic": "Agency Concepts",
+      "units": 4,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-01.md",
+      "sha256": "61d10c5dd2a2e7f09eb772c2e169658c62884836b70dcd2b6d5af75b6b0d6473",
+      "bytes": 73218
+    },
+    {
+      "topicCode": "T02",
+      "topic": "Basic Agency Relationships, Disclosure and Duties to the Client",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-02.md",
+      "sha256": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20",
+      "bytes": 70357
+    },
+    {
+      "topicCode": "T03",
+      "topic": "Duties and Disclosures to Third Parties",
+      "units": 6,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-03.md",
+      "sha256": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec",
+      "bytes": 70595
+    },
+    {
+      "topicCode": "T04",
+      "topic": "Seller Agency",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-04.md",
+      "sha256": "af0ce454d4c9174ccf0d771324ea583acc55ecb0aa0b0eb9fe93232e118a1b14",
+      "bytes": 65238
+    },
+    {
+      "topicCode": "T05",
+      "topic": "Buyer Agency",
+      "units": 6,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-05.md",
+      "sha256": "0f12def8e2f3c7177d7e23769e3c573788af3d693ede79d086b23c73802cf297",
+      "bytes": 79836
+    },
+    {
+      "topicCode": "T06",
+      "topic": "Representing More Than One Party in a Transaction: Intermediary Brokerage",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-06.md",
+      "sha256": "521bbc3088a5df49cb7f0c50736f178cb3239bc7a8dc40b8f9284dee007eef11",
+      "bytes": 80070
+    },
+    {
+      "topicCode": "T07",
+      "topic": "Creation and Termination of Agency",
+      "units": 3,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-07.md",
+      "sha256": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25",
+      "bytes": 53082
+    },
+    {
+      "topicCode": "T08",
+      "topic": "Clarifying Agency Relationships",
+      "units": 2,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-08.md",
+      "sha256": "9bb132b7b79fb05862e3a87865a8ac292b2ad27e9ad9ccc5d43ebb01653bc8ef",
+      "bytes": 17578
+    },
+    {
+      "topicCode": "T09",
+      "topic": "Employment Issues",
+      "units": 6,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-09.md",
+      "sha256": "453538cccfff62f1bee20d0da8cabb46decd3e5961351eff25b4fbf65b4effef",
+      "bytes": 60765
+    },
+    {
+      "topicCode": "T10",
+      "topic": "Agency, Ethics and the Law",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-10.md",
+      "sha256": "7804116e88e22399e93f4593889970eb07d89245c2ad44b8050a019662ede802",
+      "bytes": 101025
+    },
+    {
+      "topicCode": "T11",
+      "topic": "Deceptive Trade Practices and Consumer Protection Act",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+      "sha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+      "bytes": 73436
+    },
+    {
+      "topicCode": "T12",
+      "topic": "Implementation and Presentation",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-12.md",
+      "sha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566",
+      "bytes": 80660
+    }
+  ],
+  "artifacts": {
+    "LOA-1 outline and 57-unit map": {
+      "path": "config/texas/law-of-agency-course-form.mjs",
+      "sha256": "12e5f4faffb7d5611dee2ac3b2e497bfaa8452f2d7c63233d0d165b5a37e9758",
+      "bytes": 12284
+    },
+    "source register": {
+      "path": "config/texas/law-of-agency-statute-sources.mjs",
+      "sha256": "aad1c7311812c259c24d9b78cbb9146c0160d9d3bc760dc396f024e566a873f5",
+      "bytes": 176225
+    },
+    "quotation-disposition ledger": {
+      "path": "config/texas/quotation-dispositions.mjs",
+      "sha256": "182afe03326eff86cb07874b0f7f99da55dcb2ee8423749d401b8b13556a6124",
+      "bytes": 70108
+    },
+    "claim-audit evidence": {
+      "path": "texas/tx-law-of-agency-30-v1/claim-audit.json",
+      "sha256": "8bdbac03fcd63d058c139f350b3d58346c6edd561862b7fc7f3da9ef27b268a8",
+      "bytes": 1270669
+    },
+    "three-layer time report": {
+      "path": "texas/tx-law-of-agency-30-v1/time-evidence.json",
+      "sha256": "88f18c27474526435c8f1961ff92dfb79cb873d730b650fc13c5b6ec876732dc",
+      "bytes": 15614
+    },
+    "formative misconception checks": {
+      "path": "config/texas/law-of-agency-misconception-checks.mjs",
+      "sha256": "8c06367891d002759d6b91ade21f65efd29e81f7e4d66a816ebdc53798dd4296",
+      "bytes": 16502
+    },
+    "time budget": {
+      "path": "config/texas/law-of-agency-time-budget.mjs",
+      "sha256": "369793369d96912020c648bb7e47f93eb2943e8d7c802205222d6c5d597d2137",
+      "bytes": 12652
+    },
+    "structural evidence (generator)": {
+      "path": "scripts/check-loa-module-structure.mjs",
+      "sha256": "544db7fe3923a0195448e8cab0d10543d7da8ef812883ec29a73560b14f0c966",
+      "bytes": 9485
+    },
+    "salvage audit": {
+      "path": "texas/tx-law-of-agency-30-v1/salvage-audit.json",
+      "sha256": "3a366211b5659253b697e17832d67f51863a719fe736419fa87bb9de7103e826",
+      "bytes": 7220
+    },
+    "video instruction plan": {
+      "path": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
+      "sha256": "7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403",
+      "bytes": 29239
+    }
+  },
+  "reproduce": [
+    "node scripts/check-loa-module-structure.mjs",
+    "node scripts/audit-loa-claims.mjs",
+    "node scripts/report-loa-time-evidence.mjs",
+    "node scripts/texas-source-inventory.mjs",
+    "node scripts/freeze-loa-curriculum.mjs"
+  ],
+  "notApproved": "StateCourse holds no TREC approval for this course or as a qualifying education provider. Enrollment is disabled, no Texas credit is offered, and nothing in this artifact may be read as a claim of approval."
+}

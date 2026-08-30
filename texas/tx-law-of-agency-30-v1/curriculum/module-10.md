@@ -366,8 +366,9 @@ provisions; and § 301.044(b) provides that "This chapter does not affect a requ
 nondiscrimination in any other state or federal law." Note the same architecture as the federal Act,
 and the same practical conclusion: the owner-seller exemptions evaporate the instant a license
 holder is engaged. The seller who says *it's my house, I can sell to whoever I want* is describing
-an exemption that your listing agreement destroys. A section numbered § 301.045 was not held for
-this course and is not taught here.
+an exemption that your listing agreement destroys. Subchapter C of the chapter as held runs from
+§ 301.041 to § 301.044 and stops there. A § 301.045 was not held for this course and is not taught
+here; the four exemptions above are the whole of the subchapter as read.
 
 **Who enforces Texas fair housing.** The chapter's powers were transferred: § 301.0015 provides that
 the powers and duties exercised by the Commission on Human Rights under the chapter are transferred
