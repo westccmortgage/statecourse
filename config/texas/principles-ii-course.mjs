@@ -21,10 +21,11 @@
  * it. Nothing in this file may be read as a claim of approval.
  *
  * THE TIME MODEL IS THE PROVIDER'S, NOT THE REGULATOR'S. PRINS2-1 prescribes 1,500 minutes across
- * nine topics and labels that 30 hours, which is the form's own 50-minute credit hour. The word
- * counts and activity minutes below are StateCourse's documented methodology for showing that the
- * authored course actually occupies that time. They are evidence offered in support of the hours
- * claim; they are not a figure any Texas rule states, and they are labelled as such.
+ * nine topics and labels that 30 hours, which is the form's own 50-minute credit hour. That figure
+ * is a FLOOR the Commission allocates, not a ceiling. The word counts and activity minutes below
+ * are StateCourse's documented methodology for showing the authored course occupies at least that
+ * time. They are evidence offered in support of the hours claim; no Texas rule states a
+ * words-per-minute figure, and they are labelled as such wherever they appear.
  */
 
 import { FORM, TOPICS, ALL_UNITS } from "./principles-ii-course-form.mjs";
@@ -74,7 +75,7 @@ export const MODULES = Object.freeze(
  */
 export const TIME_MODEL = Object.freeze({
   label: "PROVIDER_METHODOLOGY",
-  note: "StateCourse LLC's documented instructional-time model for mastery study of statute-based course text. Not a regulator figure. The mastery rate is the effective pace of a student reading dense legal instructional text once at a typical long-form pace and then re-reading, taking notes and cross-referencing the quoted statutes as the exercises require. Identical to the model used for Principles of Real Estate I, so the two courses' hour claims rest on the same stated basis.",
+  note: "StateCourse LLC's documented instructional-time model for statute-based course text. Not a regulator figure. REQUIRED time reads teaching prose once at the first-pass rate; exercise and recap prose is paid for by its activity allowance and is NOT also read at that rate, which is what keeps the two from double-counting. The mastery rate is the effective pace of a student reading dense legal instructional text once at a typical long-form pace and then re-reading, taking notes and cross-referencing the quoted statutes as the exercises require. Identical to the model used for Principles of Real Estate I, so the two courses' hour claims rest on the same stated basis.",
   firstPassWordsPerMinute: 140,
   masteryStudyWordsPerMinute: 60,
   activityMinutes: Object.freeze({
@@ -84,32 +85,63 @@ export const TIME_MODEL = Object.freeze({
     scenario: 20,
     moduleRecap: 5,
   }),
-  /* Measured at the freeze. Asserted by tests/texas-principles-ii.test.mjs against the live files. */
+  /* A replacement question is served only after an incorrect answer. Requiring every student to
+     have seen every replacement would overstate required time; assuming none would understate it.
+     One third is an assumption, stated here rather than buried in an arithmetic step. */
+  replacementSeenFraction: 1 / 3,
+  /* Measured at the freeze, segmented so nothing is counted twice. Asserted by
+     tests/texas-principles-ii.test.mjs against the live files, and itemised by
+     scripts/report-prins2-time-evidence.mjs, which fails if the segments stop being disjoint. */
   frozenMeasurements: Object.freeze({
     totalWords: 131152,
+    teachingProseWords: 116196,
+    exerciseWords: 9357,
+    recapWords: 5599,
     statuteReadingExercises: 16,
     appliedExercises: 28,
     moduleRecaps: 9,
     topicQuizPrimaries: 44,
     topicQuizReplacements: 44,
+    scenarios: 4,
   }),
 });
 
-/** Minutes the authored course occupies under the model above, for the credit-hour evidence. */
+/**
+ * REQUIRED learner time. Reading is computed over TEACHING PROSE ONLY.
+ *
+ * An earlier version read the whole corpus and then added fixed allowances for the exercises and
+ * recaps whose prose sits inside that corpus, counting 14,956 words — 11.4% of the course — twice.
+ * It also used the mastery-study rate, which is a re-reading pace, and reported the result as the
+ * time the course requires. That produced 2,791 minutes against a 1,500-minute outline with no
+ * explanation of the difference. Both faults are corrected here, and
+ * scripts/report-prins2-time-evidence.mjs itemises the whole calculation and asserts the corpus
+ * segments are disjoint, so the double count cannot return unnoticed.
+ *
+ * PRESCRIBED IS A FLOOR. PRINS2-1's 1,500 minutes is the minimum the Commission allocates across
+ * the nine topics. A course occupying somewhat more is not out of compliance; one occupying less
+ * would be.
+ */
 export function instructionalMinutes(measurements = TIME_MODEL.frozenMeasurements) {
   const a = TIME_MODEL.activityMinutes;
-  const reading = measurements.totalWords / TIME_MODEL.masteryStudyWordsPerMinute;
+  const prose = measurements.teachingProseWords ?? measurements.totalWords;
+  const reading = prose / TIME_MODEL.firstPassWordsPerMinute;
   const activities =
     measurements.statuteReadingExercises * a.statuteReadingExercise +
     measurements.appliedExercises * a.appliedExercise +
     measurements.moduleRecaps * a.moduleRecap +
-    measurements.topicQuizPrimaries * a.quizItem;
+    measurements.topicQuizPrimaries * a.quizItem +
+    Math.round((measurements.topicQuizReplacements ?? 0) * TIME_MODEL.replacementSeenFraction * a.quizItem) +
+    (measurements.scenarios ?? 0) * a.scenario;
+  const totalMinutes = Math.round(reading + activities);
   return Object.freeze({
     readingMinutes: Math.round(reading),
     activityMinutes: activities,
-    totalMinutes: Math.round(reading + activities),
+    totalMinutes,
     prescribedMinutes: FORM.totalMinutes,
-    meetsPrescribed: Math.round(reading + activities) >= FORM.totalMinutes,
+    meetsPrescribed: totalMinutes >= FORM.totalMinutes,
+    varianceMinutes: totalMinutes - FORM.totalMinutes,
+    /* The upper bound a thorough student may take. Reported separately and never as required time. */
+    masteryStudyUpperBoundMinutes: Math.round(prose / TIME_MODEL.masteryStudyWordsPerMinute + activities),
   });
 }
 
