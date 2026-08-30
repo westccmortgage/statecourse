@@ -120,17 +120,17 @@ relative's. On known material defects a Texas license holder has no right to sta
 a rent house in your own name does not put you outside TRELA.
 
 What this module does teach in full is the Commission rule that gives § 1101.652(b)(5) its reach.
-Rule 22 TAC § 535.145 provides that for purposes of that subdivision the term false promise "includes
-both oral and written promises." The rule continues:
-"The fact that a written agreement between the parties to a real estate transaction does not recite
-a promise made by a real estate license holder to one of the parties or that a person did not
-detrimentally rely on the false promise will not prevent the Commission from determining that a
-false promise was made." So the Commission does not need reliance. And the rule closes the last
-escape hatch: "In determining whether this section has been violated, neither a written contractual
-provision disclaiming oral representations nor the Texas Rules of Evidence Rule 1004, the parol
-evidence rule, shall prevent the Commission from considering oral promises made by a license
-holder." The merger clause in the contract does not protect you in front of TREC. What you said in
-the car on the way to the property is evidence.
+Rule 22 TAC § 535.145 provides that for purposes of that subdivision the term false promise
+"includes both oral and written promises." The rule continues: "The fact that a written agreement
+between the parties to a real estate transaction does not recite a promise made by a real estate
+license holder to one of the parties or that a person did not detrimentally rely on the false
+promise will not prevent the Commission from determining that a false promise was made." So the
+Commission does not need reliance. And the rule closes the last escape hatch: "In determining
+whether this section has been violated, neither a written contractual provision disclaiming oral
+representations nor the Texas Rules of Evidence Rule 1004, the parol evidence rule, shall prevent
+the Commission from considering oral promises made by a license holder." The merger clause in the
+contract does not protect you in front of TREC. What you said in the car on the way to the property
+is evidence.
 
 **Who bears a misrepresentation, § 1101.805.** Occupations Code § 1101.805 allocates responsibility
 for a misrepresentation or concealment between a party and a license holder; Module 03 teaches it.
@@ -296,8 +296,8 @@ terms, "subject to action by the consumer protection division under Sections 17.
 and 17.61 of this code." That is the Attorney General's consumer protection division, not a private
 plaintiff.
 
-This is genuinely good news for you. It means that to know your civil exposure under subdivision
-(1), you need to know a finite list. So let us walk it.
+This is genuinely good news for you: to know your civil exposure under subdivision (1), you need to
+know a finite list.
 
 **The laundry list, applied to real estate.** Section 17.46(b) opens by providing that, "Except as
 provided in Subsection (d) of this section," the term false, misleading, or deceptive acts or
@@ -539,9 +539,8 @@ not include exemplary damages or damages for physical pain and mental anguish, l
 disfigurement, physical impairment, or loss of companionship and society." Two halves. The inclusive
 half is broad: compensatory damages for pecuniary loss, expressly including repair and replacement
 costs. The exclusive half is a list of things that are *not* economic damages, and the item you must
-notice is mental anguish. Mental anguish is not economic damages. It is a separate category that the
-statute makes available only in a specific circumstance, which is the whole point of the next
-paragraph.
+notice is mental anguish. Mental anguish is not economic damages. It is a separate category, and
+§ 17.50(b)(1) makes it available only in a specific circumstance.
 
 **Section 17.50(b)(1) is the damages engine.** It provides that in a suit filed under the section,
 "each consumer who prevails may obtain: (1) the amount of economic damages found by the trier of
@@ -1008,11 +1007,12 @@ tracks operate independently of the civil suit, and understanding that independe
 heart of this module.
 
 **Two proceedings, two standards, one set of facts.** A DTPA judgment does not revoke your license:
-§ 17.50(b)(4), under Damages above, bars a civil court from revoking the license of a judgment debtor
-regulated by a state agency that holds revocation authority, and TREC holds it. So the civil court
-takes money and TREC takes licenses, and each does its own work on its own record. A license holder who settles a DTPA claim quietly for
-$18,000 has resolved nothing with the Commission. A license holder whom TREC declines to discipline
-is not thereby cleared in a civil suit. The two proceedings do not bind each other.
+§ 17.50(b)(4), under Damages above, bars a civil court from revoking the license of a judgment
+debtor regulated by a state agency that holds revocation authority, and TREC holds it. So the civil
+court takes money and TREC takes licenses, and each does its own work on its own record. A license
+holder who settles a DTPA claim quietly for $18,000 has resolved nothing with the Commission. A
+license holder whom TREC declines to discipline is not thereby cleared in a civil suit. The two
+proceedings do not bind each other.
 
 **The disciplinary grounds that track DTPA exposure.** Occupations Code § 1101.652 is taught in
 Module 10, which walks the grounds and the disciplinary process. What belongs here is the overlap:
@@ -1055,11 +1055,6 @@ of the public. The buyer across the table from you, represented by another broke
 nothing and owed by you no fiduciary duty, is still owed accurate information under § 535.156. That
 rule and § 17.45(4)'s privity-free definition of consumer are the same idea expressed in two
 regulatory languages.
-
-Rule 22 TAC § 535.145, studied in Unit 1, does the same work for promises: oral promises count, the
-absence of the promise from the written agreement does not matter, detrimental reliance is not
-required for the Commission to find a violation, and neither a merger clause nor the parol evidence
-rule keeps your oral statements out of the Commission's consideration.
 
 **The Real Estate Recovery Trust Account: the consumer's backstop.** Suppose a consumer wins.
 Suppose the license holder has no assets, no insurance, and no intention of paying. Subchapter M of

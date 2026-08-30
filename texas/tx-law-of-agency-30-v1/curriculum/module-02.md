@@ -91,9 +91,9 @@ and the 2026 amendments make the separation explicit: § 1101.563(c) requires a 
 with a residential buyer to state the license holder's representation status and the broker's
 compensation as two separate items, and to disclose in conspicuous language that compensation is not
 set by law and is fully negotiable. **Module 05 teaches § 1101.563 in full.** If who pays determined
-who was represented, the statute would not need two separate line items. It does. A seller may agree to contribute to a buyer's broker's
-fee without that broker becoming the seller's agent, and a listing broker does not become the
-buyer's agent by sharing a commission.
+who was represented, the statute would not need two separate line items. It does. A seller may agree
+to contribute to a buyer's broker's fee without that broker becoming the seller's agent, and a
+listing broker does not become the buyer's agent by sharing a commission.
 
 It is not the same as having a licence. A licence is permission from the State to perform the acts
 listed in § 1101.002(1) for compensation. Agency is a relationship with a particular person. You can
@@ -222,9 +222,10 @@ Two held provisions show you where the implied-authority boundary is drawn in Te
 money: trust money a broker accepts is held in a fiduciary capacity and must go to the broker's
 designated trust account or to an authorised escrow agent, a sales agent may not maintain a trust
 account, and trust money a sales agent receives must be delivered immediately to the sponsoring
-broker (22 TAC § 535.146(b); Modules 07 and 09 teach § 535.146). Being authorised to sell the house does not carry with it authority to hold the earnest
-money. Second, on binding the principal: § 1101.557(c)(1) says that for purposes of that section, "a
-license holder who has the authority to bind a party to a lease or sale under a power of attorney or
+broker (22 TAC § 535.146(b); Modules 07 and 09 teach § 535.146). Being authorised to sell the house
+does not carry with it authority to hold the earnest money. Second, on binding the principal: §
+1101.557(c)(1) says that for purposes of that section, "a license holder who has the authority to
+bind a party to a lease or sale under a power of attorney or
 a property management agreement is also a party to the lease or sale." The Legislature had to name
 the two instruments that confer binding authority. That tells you an ordinary listing or buyer
 representation agreement does not confer it. You negotiate; your client signs.
@@ -512,8 +513,9 @@ within two calendar days, and get the offer in front of your seller.
 confidentiality, accounting, and reasonable care and diligence — is the standard industry teaching
 frame, and this course uses it because you will meet it everywhere. **It is not a statutory list**;
 a Texas source enumerating six duties under those names was not held for this course. What Texas has
-is a set of rules and statutes that, taken together, impose every one of them. What follows gives you the frame and then
-the Texas text that actually does the work. Learn the text. The frame is only a filing system.
+is a set of rules and statutes that, taken together, impose every one of them. What follows gives
+you the frame and then the Texas text that actually does the work. Learn the text. The frame is
+only a filing system.
 
 **Loyalty.** The rule of fidelity, 22 TAC § 531.2, says a license holder acting as an agent for
 another is a fiduciary, that special obligations are imposed when such fiduciary relationships are
@@ -614,8 +616,9 @@ positively protects.
 disclosure of confidential information, or of information a party has instructed the broker or sales
 agent in writing not to disclose, subject to three exceptions — a separate writing from the party, a
 disclosure required by the chapter or by court order, and information that materially relates to the
-condition of the property. **Module 06 teaches § 1101.651(d).** Combine it with § 531.2's demand that the license holder "be faithful
-and observant to trust placed in the license holder" and § 535.156's statement that the license
+condition of the property. **Module 06 teaches § 1101.651(d).** Combine it with § 531.2's demand
+that the license holder "be faithful and observant to trust placed in the license holder" and §
+535.156's statement that the license
 holder "represents only the principal and owes a duty of fidelity to such principal," and the
 working rule for any agency, not only the intermediary, is: your client's negotiating position,
 motivation, financial capacity and timetable are not yours to give away; property condition never
@@ -637,8 +640,9 @@ title company or in a custodial, trust or escrow account at an authorised bankin
 (b)(31), disbursing from such an account before the transaction is completed or terminated.
 
 The mechanics are in 22 TAC § 535.146 — the definition of trust money, the broker's fiduciary
-holding of it, the bar on a sales agent maintaining a trust account, the close-of-business-of-the-
-second-working-day deposit deadline, and what counts as prima facie evidence of commingling — and 22
+holding of it, the bar on a sales agent maintaining a trust account, the deposit deadline set at the
+close of business of the second working day after receipt, and what counts as prima facie evidence
+of commingling — and 22
 TAC § 535.2(c) makes the broker responsible for the proper handling of trust funds placed with the
 broker. **Modules 07 and 09 teach § 535.146; Module 09 teaches § 535.2.** For your purposes as a
 sales agent the operative sentence is the one you already met in Unit 2: you do not hold trust

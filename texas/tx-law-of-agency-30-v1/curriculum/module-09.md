@@ -13,7 +13,7 @@ describe what Labor Code chapter 21 prohibits, who counts as an "employer" and a
 § 21.002, and state honestly where chapter 21 stops at the edge of a genuine independent
 contractor relationship; explain why the broker — not the sales agent — is the person the client
 employs under § 1101.557(a), and separate that sense of "employment" from labour-law employment;
-determine, from 22 TAC §§ 535.4, 535.5, 535.20, 535.131 and 535.147, exactly which tasks an
+determine, from 22 TAC §§ 535.4, 535.5, 535.20 and 535.147, exactly which tasks an
 unlicensed personal assistant may perform, which are prohibited, and who may lawfully pay the
 assistant; apply every subsection of 22 TAC § 535.2 to a working brokerage, including the written
 scope notice, the delegation and Commission-notice mechanics, the four-year records list and the
@@ -1273,6 +1273,7 @@ Americans with Disabilities Act themselves, and judicial decisions applying Labo
 to real estate sales agents **were not held** for this course. Where those sources would have
 settled a question, this module said so rather than guessing. Occupations Code §§ 1101.555 and
 1101.563 are a different matter: they were held, they are cited here only for the effect
-§ 1101.806(d) and § 1101.652(b)(34) give them, and they are taught in Modules 12 and 05. That habit — knowing which of your beliefs rests on an authority you have
-actually read — is the most valuable thing you can carry out of a law of agency course into a
-career where other people's money is in your hands.
+§ 1101.806(d) and § 1101.652(b)(34) give them, and they are taught in Modules 12 and 05. That
+habit — knowing which of your beliefs rests on an authority you have actually read — is the most
+valuable thing you can carry out of a law of agency course into a career where other people's
+money is in your hands.

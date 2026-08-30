@@ -46,10 +46,10 @@ estate licence and you are dealing with a member of the public.
 in Module 02 and read as an ethical whole in Module 10, states the primary duty and then attaches a
 proviso that reaches everyone else: "that the primary duty of the license holder is to represent the
 interests of the client, and the license holder's position, in this respect, should be clear to all
-parties concerned in a real estate transaction; **that, however, the license holder, in performing
-duties to the client, shall treat other parties to a transaction fairly**." That proviso is where
-this module starts. Texas did not put fairness to the other side in a footnote; it put it inside the
-definition of fidelity.
+parties concerned in a real estate transaction; that, however, the license holder, in performing
+duties to the client, shall treat other parties to a transaction fairly." That proviso — *shall
+treat other parties to a transaction fairly* — is where this module starts. Texas did not put
+fairness to the other side in a footnote; it put it inside the definition of fidelity.
 
 **The catalogue.** Assembled in one place, here is every non-fiduciary duty a Texas source actually
 imposes — because students routinely believe the list is either much shorter than it is (nothing but
@@ -580,7 +580,7 @@ in writing to everyone who received it. Correction is the act that satisfies the
 
 **The DTPA, and where to find the rest.** Module 11 covers the Deceptive Trade Practices Act in
 depth, including the § 17.46(b) laundry list; this module touches it only to frame your exposure to
-a non-client, and the exercise below needs four of its provisions. Section 17.50(a) permits a
+a non-client, and the exercise below turns on several of its provisions. Section 17.50(a) permits a
 consumer to maintain an action where a listed false, misleading or deceptive act "relied on by a
 consumer to the consumer's detriment" is a producing cause of economic damages or damages for mental
 anguish. Section 17.50(b)(1) permits recovery of economic damages, and if the trier of fact finds

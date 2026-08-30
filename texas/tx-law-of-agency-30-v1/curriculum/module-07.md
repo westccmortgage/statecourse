@@ -7,158 +7,92 @@ approval form places under *Creation and Termination of Agency*, whose scope not
 an agent's authority."*
 
 **Learning objectives.** After completing this module you will be able to: identify the moment a
-Texas agency relationship comes into existence and state which writings Texas law now requires before
-you may act, distinguishing the writing that creates the relationship under Occupations Code
-§ 1101.563 from the writing that lets you sue for a fee under § 1101.806(c) and the writings the
-statute of frauds demands under Business & Commerce Code § 26.01; describe the conduct that creates an
-agency you did not intend and name the specific acts § 1101.562 forbids a non-representing broker to
-perform; list the events that end an agency, explain which of them end the agent's authority
-immediately and without notice, and apply Occupations Code § 1101.367 and 22 TAC § 535.2 to the end of
-a sales agent's sponsorship; and state, from the held sources, which duties continue after the
-relationship ends — confidentiality under § 1101.651(d), the accounting duty for trust money under
-22 TAC § 535.146, the compensation rules of § 1101.651(b) and 22 TAC § 535.3, and the four-year record
-retention requirement of 22 TAC § 535.2.
+Texas agency relationship comes into existence; separate the three writing requirements Texas law
+imposes and say which question each answers — Occupations Code § 1101.563 (may I act),
+§ 1101.806(c) (may I sue for the fee), and Business & Commerce Code § 26.01 (is the promise
+enforceable at all); explain why an agency created by conduct is a hazard rather than a technique;
+list the events that end an agency and say which of them end the agent's authority immediately and
+without notice; apply Occupations Code § 1101.367 to the end of a sales agent's sponsorship; and
+state, from the held sources, which duties continue after the relationship ends — in particular the
+accounting duty for trust money under 22 TAC § 535.146.
 
 **Every legal statement in this module comes from a source that was read for this course.** Where a
 statement is practice rather than law, the module says so and cites nothing for it.
 
+**Where the underlying rules are taught.** This module is about beginnings and endings, and it
+applies authorities that other modules teach in full. Those are cited here, not re-taught: the
+fiduciary Canons and the IABS notice in Module 02; § 1101.806 in Module 04; the 2026
+buyer-representation scheme of §§ 1101.562 and 1101.563 in Module 05; the intermediary machinery of
+§§ 1101.559–.561 and § 1101.651(d) in Module 06; broker responsibility and record retention under
+22 TAC § 535.2 and the compensation rules of § 1101.651(a)–(c) in Module 09; and § 1101.652 in
+Module 10.
+
 ## Unit: How and When Agency is Created
 
-Almost every disciplinary case and almost every lawsuit you will ever hear about begins with a
-disagreement about a single question: *whose agent were you?* The consumer says you were theirs. You
-say you were only being helpful. A hearing officer, or a jury in Bexar County, then decides. That is
-why this unit comes before the unit on fiduciary duty in every serious agency course. Duties attach to
-a relationship. If you cannot say precisely when the relationship began, you cannot say when the
-duties began, and you cannot defend yourself against a claim that they began earlier than you thought.
+Almost every disciplinary case and almost every lawsuit begins with a disagreement about one
+question: *whose agent were you?* Duties attach to a relationship. If you cannot say precisely when
+the relationship began, you cannot say when the duties began, and you cannot defend yourself against
+a claim that they began earlier than you thought.
 
-Start with the statutory sentence that does the most work. Occupations Code § 1101.557(a) provides:
-"A broker who represents a party in a real estate transaction or who lists real estate for sale under
-an exclusive agreement for a party is that party's agent." Read that slowly. It contains two
-independent triggers joined by "or." The second trigger is the comfortable one — an exclusive listing
-agreement, signed, dated, sitting in the file. The first trigger is the dangerous one. It does not
-say that a broker
-becomes an agent only by signing a written representation agreement. It says a broker "who represents
-a party." Representation, in that first clause, is a description of what you are actually doing, not a
-description of the paperwork you have collected.
+Occupations Code § 1101.557(a) fixes the moment: "A broker who represents a party in a real estate
+transaction or who lists real estate for sale under an exclusive agreement for a party is that
+party's agent." Two independent triggers, joined by "or." The second is the comfortable one — an
+exclusive listing, signed and sitting in the file. The first is the dangerous one: it describes what
+you are actually doing, and it contains no signature requirement at all. Module 02 teaches
+§ 1101.557; what matters for creation is that one of its two triggers can be pulled without paperwork.
 
-**The broker is the agent; the sales agent acts for the broker.** Before going further, fix the
-architecture. Chapter 1101 licenses brokers and sales agents, and § 1101.351(c) provides that "[a]
-licensed sales agent may not engage or attempt to engage in real estate brokerage unless the sales
-agent is sponsored by a licensed broker and is acting for that broker." The Commission's broker
-responsibility rule, 22 TAC § 535.2, says the same thing from the brokerage side: "Listings and other
-agreements for real estate brokerage services must be solicited and accepted in a broker's name." So
-when a seller in Amarillo signs a listing, the agency created runs to the *broker*. You, the sponsored
-sales agent, are the instrument through which the broker performs. That is not a technicality you can
-ignore when the relationship ends, because — as you will see in the third unit — the sponsorship
-chain determines who may pay you and for how long.
+The agency runs to the *broker*, not to you. Section 1101.351(c) bars a sales agent from engaging or
+attempting to engage in brokerage "unless the sales agent is sponsored by a licensed broker and is
+acting for that broker," and 22 TAC § 535.2 requires that listings and other agreements for brokerage
+services "be solicited and accepted in a broker's name." When a seller in Amarillo signs a listing,
+the client is the brokerage's client and you are the instrument through which the brokerage performs.
+That is not a technicality you can ignore when the relationship ends, as the second unit shows.
 
-**What counts as an act of brokerage.** The conduct that can drag you into an agency relationship is
-defined in § 1101.002(1)(A), which says "Broker" "means a person who, in exchange for a commission or
-other valuable consideration or with the expectation of receiving a commission or other valuable
-consideration, performs for another person one of the following acts," and then lists twelve. Three of
-them are the ones that catch new license holders. Clause (iii) covers a person who "negotiates or
-attempts to negotiate the listing, sale, exchange, purchase, or lease of real estate." Clause (vii)
-covers a person who "aids or offers or attempts to aid in locating or obtaining real estate for
-purchase or lease." Clause (viii) covers a person who "procures or assists in procuring a prospect to
-effect the sale, exchange, or lease of real estate." Notice how low those thresholds sit. *Attempts to
-negotiate.* *Offers or attempts to aid in locating.* The statute is written to catch the beginning of
-the conduct, not its completion. The Commission's rule 22 TAC § 535.4(c) reinforces the point for the
-single most common activity in your first year: to "show" a property, the rule says, "includes causing
-or permitting the property to be viewed by a prospective buyer or tenant, unlocking or providing
-access onto or into a property for a prospective buyer or tenant, and hosting an open house at the
-property." Opening a lockbox is a regulated act.
+The conduct that can pull you into an agency is the list of brokerage acts in § 1101.002(1)(A) and
+the definition of showing in 22 TAC § 535.4(c), taught in Module 01. Notice only how low the
+thresholds sit: the statute reaches a person who "negotiates or attempts to negotiate" a listing,
+sale or lease, who "aids or offers or attempts to aid in locating or obtaining real estate," and who
+"procures or assists in procuring a prospect." It catches the beginning of the conduct, not its
+completion. Opening a lockbox is a regulated act.
 
 ### Creation by written agreement — and where Texas now compels the writing
 
-Texas has moved decisively toward the written agreement as the ordinary instrument of creation. As of
-January 1, 2026, Occupations Code § 1101.563, added by Acts 2025, 89th Leg., R.S., Ch. 1172 (S.B.
-1968), Sec. 10, does something Texas law had never done before: it forbids you to work with a
-residential buyer at all until there is a signed writing. Subsection (b) provides that "[a] license
-holder who performs any act of real estate brokerage for a prospective buyer of residential real
-property must enter into a written agreement with the prospective buyer before: (1) showing any
-residential real property to the prospective buyer; or (2) if no residential real property will be
-shown, presenting an offer to purchase residential real property on behalf of the prospective buyer."
+Texas has moved decisively toward the written agreement as the ordinary instrument of creation. Since
+January 1, 2026, § 1101.563(b) has required a license holder who performs "any act of real estate
+brokerage for a prospective buyer of residential real property" to "enter into a written agreement
+with the prospective buyer before: (1) showing any residential real property to the prospective
+buyer; or (2) if no residential real property will be shown, presenting an offer to purchase
+residential real property on behalf of the prospective buyer." Two words carry the freight. "Any" —
+any act of brokerage, not the important ones. And "before" — before the showing, not at the closing
+table. If a buyer texts you on a Saturday morning in Frisco asking to see a house at two o'clock, the
+agreement is signed before two o'clock or you do not open the door.
 
-Two words in that subsection carry the freight. "Any" — any act of real estate brokerage, not the
-important ones. And "before" — before the showing, not at the closing table, not that evening when you
-get back to the office. If a buyer texts you on a Saturday morning in Frisco asking to see a house at
-two o'clock, the agreement is signed before two o'clock or you do not open the door.
+Module 05 teaches § 1101.563 in full: its own definition of "residential real property," the terms
+subsection (c) requires the agreement to state, the separate-agreement rule in subsection (d), and
+the fourteen-day and non-exclusivity limits subsection (e) places on showing-only agreements. Three
+consequences belong to creation. On residential buyer-side work, Texas has largely replaced the
+question *when did an agency arise* with the question *was there a writing before the showing*. The
+required contents include the agreement's termination date, so a creation statute now carries a
+termination term — consistent with § 1101.652(b)(12), which makes it a disciplinary ground to fail
+"to specify a definite termination date that is not subject to prior notice" in a contract for
+services requiring a licence, other than a contract to perform property management services. And
+§ 1101.652(b)(34), effective January 1, 2026, makes the failure to enter into the § 1101.563
+agreement its own ground for discipline.
 
-The statute defines its own scope. Section 1101.563(a) provides that "residential real property"
-means "(1) a single-family house; (2) a duplex, triplex, or quadraplex; or (3) a unit in a multiunit
-residential structure in which title to an individual unit is transferred to the owner of the unit
-under a condominium or cooperative system." That is the whole definition. A 200-acre ranch outside
-Gonzales is not on that list. A retail strip center in Pasadena is not on that list. Neither is a
-tenant of any kind — § 1101.563 speaks only of a "prospective buyer." TREC's own explanatory article
-on the 2026 changes, which this course holds as guidance rather than as law, states the same boundary:
-"The written agreement requirement does not apply to commercial purchasers or residential/commercial
-tenants." Guidance is not authority, and you should be able to reach that conclusion from the
-statutory text alone — but it is useful confirmation that you have read the definition correctly.
+Section 1101.562, added by the same 2025 act and also taught in Module 05, lets a broker show
+property to a party without representing that party — but only if the broker has not agreed with the
+party, "either orally or in writing," to represent the party, is not otherwise acting as the party's
+agent at the time of the showing, gives no "opinions or advice regarding the real property or real
+estate transactions in general," and performs no other act of real estate brokerage for the party;
+subsection (c) permits the broker to confirm information about "the size, price, and terms" of the
+property. The creation point is how fragile that status is. You may say the house is 2,140 square
+feet and listed at $389,000. Say instead that the price looks soft and the buyer should offer
+$375,000, and you have given advice, lost the safe harbour, and performed brokerage for that buyer.
 
-Section 1101.563(c) tells you what the agreement must contain. It "must: (1) state: (A) the services
-to be provided by the license holder; (B) the termination date of the agreement; (C) whether the
-agreement is exclusive or non-exclusive," and, as applicable, whether the license holder "represents
-the prospective buyer as the buyer's agent" or "does not represent the prospective buyer as the
-buyer's agent if the only act of real estate brokerage being performed is showing real property," and
-"(E) the amount or rate of compensation the broker will receive and how this amount will be
-determined"; and it must "(2) disclose in conspicuous language that broker compensation is not set by
-law and is fully negotiable."
-
-Every one of those elements is a creation term, and subparagraph (B) is a termination term sitting
-inside a creation statute. That is deliberate. Texas has long refused to let brokerage agreements run
-forever: § 1101.652(b)(12) makes it a ground for discipline if a license holder, while engaged in real
-estate brokerage, "fails to specify a definite termination date that is not subject to prior notice in
-a contract, other than a contract to perform property management services, in which the license holder
-agrees to perform services for which a license is required under this chapter." Read the qualifier,
-because students skip it every time. The date must be *definite*, and it must *not be subject to prior
-notice* — meaning a clause providing that the agreement continues until either party gives
-thirty days' notice does not satisfy the section. And the section carves out property management
-contracts, which
-may run open-ended. An agreement that expires on December 31, 2026 is definite. One that expires
-ninety days after either
-party notifies the other is not.
-
-**The showing-only agreement.** Section 1101.563 works alongside § 1101.562, added by the same 2025
-act. Section 1101.562(a) permits a broker to "show real property available for sale or lease to a
-party without representing the party" if the broker meets four conditions: the broker "has not agreed
-with the party, either orally or in writing, to represent the party"; "is not otherwise acting as the
-party's agent at the time of showing the real property"; "does not provide to the party opinions or
-advice regarding the real property or real estate transactions in general"; and "does not perform any
-other act of real estate brokerage for the party." Subsection (c) then grants one narrow permission:
-notwithstanding the third and fourth conditions, a broker showing property under the section "may
-confirm information to a party regarding the size, price, and terms of the real property available for
-sale or lease."
-
-Live inside that boundary and you will feel how tight it is. You may say the house is 2,140 square
-feet, that it is listed at $389,000, and that the seller is asking for a leaseback through the end of
-the month. You may not say it is a good buy, that the price looks soft, that the neighborhood is
-appreciating, or that the buyer should offer $375,000. Those are opinions and advice — and under
-§ 1101.562(a)(3) the prohibition is not limited to this property; it extends to "real estate
-transactions in general." One sentence of coaching in the driveway converts a non-representation
-showing into brokerage performed for the buyer.
-
-When the property is residential, the showing-only arrangement still needs a writing, and § 1101.563
-puts two hard limits on it. Subsection (e) provides that a written agreement for showing real property
-under § 1101.562 may not "(1) be an exclusive agreement with the license holder; or (2) state a
-termination date more than fourteen days from the date the agreement is entered into." Work the
-arithmetic once so you never guess: an agreement entered into on Tuesday, March 3 may state a
-termination date no later than March 17. March 18 is a violation. And subsection (d) requires that a
-license holder who signs a showing-only agreement "shall enter into a separate agreement with the
-prospective buyer if additional real estate brokerage acts are to be provided after showing the real
-property." You do not amend the showing agreement into a representation agreement in the car. You sign
-a second document.
-
-**The intermediary consent as an act of creation.** One more Texas writing creates a status rather
-than merely recording one. Section 1101.559(a) permits a broker to act as an intermediary "if: (1) the
-broker obtains written consent from each party for the broker to act as an intermediary in the
-transaction; and (2) the written consent of the parties states the source of any expected compensation
-to the broker." Both conditions, both parties, in writing, before the broker occupies that role.
-Section 1101.559(b) allows the listing agreement or the buyer representation agreement itself to
-supply that consent, provided the written agreement specifies "in conspicuous bold or underlined
-print" the conduct prohibited under § 1101.651(d). The intermediary status is powerful — § 1101.561(a)
-says "[t]he duties of a license holder acting as an intermediary under this subchapter supersede the
-duties of a license holder established under any other law, including common law" — and Texas
-therefore refuses to let it arise by accident. It arises only from a writing that meets § 1101.559.
+One further Texas writing creates a status rather than merely recording one: § 1101.559 permits a
+broker to act as an intermediary only on written consent from each party stating the source of any
+expected compensation to the broker. Intermediary status never arises by accident; it arises from
+that writing. Module 06 teaches the machinery.
 
 ### The writings that make a promise enforceable — a different question
 
@@ -174,18 +108,9 @@ brought or by a person authorized by that party to sign the document." That is t
 of frauds, and it lives in the License Act, not in the Business & Commerce Code. Notice exactly who
 must have signed: "the party against whom the action is brought." Your own signature proves nothing. A
 seller in Waco who shakes your hand, tells three neighbors you have the listing, and then sells to
-his brother-in-law has given you nothing you can sue on, because he never signed. Subsection (b) adds
-a licensure gate: a person "may not maintain an action to collect compensation for an act as a broker
-or sales agent that is performed in this state unless the person alleges and proves that the person
-was: (1) a license holder at the time the act was commenced; or (2) an attorney licensed in any
-state." And subsection (a) tells you where the section does *not* reach — it does not "apply to an
-agreement to share compensation among license holders," so a co-brokerage split lives under different
-rules. Subsection (d) supplies a separate forfeiture: a license holder who fails to advise a buyer as
-§ 1101.555 requires "may not receive payment of or recover any commission agreed to be paid on the
-sale." Section 1101.555 requires that, when an offer to purchase real estate in this state is signed,
-a license holder shall advise each buyer in writing that the buyer should "have the abstract covering
-the real estate that is the subject of the contract examined by an attorney chosen by the buyer" or
-"be provided with or obtain a title insurance policy."
+his brother-in-law has given you nothing you can sue on, because he never signed. The rest of
+§ 1101.806 — the licensure gate in subsection (b), the carve-out in (a) for agreements to share
+compensation among license holders, and the forfeiture in (d) — is taught in Module 04.
 
 Then there is the general statute of frauds. Business & Commerce Code § 26.01(a) provides that "[a]
 promise or agreement described in Subsection (b) of this section is not enforceable unless the promise
@@ -193,7 +118,8 @@ or agreement, or a memorandum of it, is (1) in writing; and (2) signed by the pe
 with the promise or agreement or by someone lawfully authorized to sign for him." Subsection (b)
 applies that rule to, among other things, "a contract for the sale of real estate," "a lease of real
 estate for a term longer than one year," and "an agreement which is not to be performed within one
-year from the date of making the agreement."
+year from the date of making the agreement." The last of those has teeth for listings: a fifteen-month
+exclusive right to sell agreed orally in Midland is unenforceable on its face.
 
 Now read § 26.01(b)(7) with care, because this is where courses routinely misstate Texas law.
 Subdivision (7) covers "a promise or agreement to pay a commission for the sale or purchase of: (A) an
@@ -204,11 +130,10 @@ commission agreement to be in writing, the honest answer names both provisions a
 straight: § 1101.806(c) for the sale or purchase of real estate generally, § 26.01(b)(7) for
 commissions on the mineral interests it lists.
 
-The practical consequence of § 26.01(b)(6) deserves a moment. An agreement "not to be performed within
-one year from the date of making the agreement" must be written and signed. So a fifteen-month
-exclusive right to sell agreed orally in Midland is unenforceable on its face, and a listing you
-negotiate in October to run from January through the following December is on the wrong side of that
-line unless it is signed.
+Three writings, three questions, three different failures. Section 1101.563 answers *may I act*, and
+failing it is a disciplinary count. Section 1101.806(c) answers *may I sue for the fee*, and failing
+it loses the suit. Section 26.01 answers *is the promise enforceable at all*, and failing it means
+there was never an enforceable promise. A file can satisfy one and fail another.
 
 ### Creation without a signature: the common-law routes and why you must not rely on them
 
@@ -217,82 +142,46 @@ appointment — commonly grouped as express agreement, agency implied from condu
 agency by estoppel. **This course does not hold a Texas source that states the elements of
 ratification or of agency by estoppel; those common-law elements were not held and are not taught
 here as law.** What this course *does* hold is a set of Texas provisions that show the Legislature and
-the Commission plainly contemplating agency that arises without a signature, and those provisions are
-enough to keep you out of trouble.
+the Commission plainly contemplating agency that arises without a signature.
 
-Look again at § 1101.557(a): a broker "who represents a party" is that party's agent. The sentence has
-no signature requirement. Look at § 1101.562(a)(1), which conditions non-representation showings on
-the broker not having "agreed with the party, either orally or in writing, to represent the party."
-The Legislature wrote "orally or in writing" because it knows an oral agreement to represent someone
-is a real thing with real consequences — it disqualifies you from the safe harbour instantly. Look at
-§ 1101.562(a)(2), which separately requires that the broker "is not otherwise acting as the party's
-agent at the time of showing the real property." That condition would be redundant if agency could
-only ever arise by agreement; the statute is guarding against agency arising from conduct.
-
-Now add the Commission's rules. 22 TAC § 531.2 states flatly: "A license holder, while acting as an
-agent for another, is a fiduciary." The trigger is "acting as an agent," not the act of signing.
-And 22 TAC § 535.145 removes the escape hatch a licensee usually reaches for. For purposes of
-§ 1101.652(b)(5), the rule provides, "false promise" "includes both oral and written promises," and it
-continues: "The fact that a written agreement between the parties to a real estate transaction does
-not recite a promise made by a real estate license holder to one of the parties or that a person did
-not detrimentally rely on the false promise will not prevent the Commission from determining that a
-false promise was made." The rule then says that in determining whether it has been violated, "neither
-a written contractual provision disclaiming oral representations nor the Texas Rules of Evidence Rule
-1004, the parol evidence rule, shall prevent the Commission from considering oral promises made by a
-license holder." Translated: in a TREC proceeding, an integration clause in your paperwork does not
+Section 1101.557(a) makes a broker "who represents a party" that party's agent, with no signature
+requirement in the sentence. Section 1101.562(a)(1) conditions non-representation showings on the
+broker not having "agreed with the party, either orally or in writing, to represent the party" — the
+Legislature wrote "orally or in writing" because an oral agreement to represent someone is a real
+thing with real consequences. Section 1101.562(a)(2) separately requires that the broker "is not
+otherwise acting as the party's agent at the time of showing the real property," a condition that
+would be redundant if agency could arise only by agreement. 22 TAC § 531.2 attaches fiduciary status
+to a license holder "while acting as an agent for another" — the trigger is acting, not signing. And
+22 TAC § 535.145, taught in Module 11, provides that for purposes of § 1101.652(b)(5) a "false
+promise" "includes both oral and written promises," and that neither a written contractual provision
+disclaiming oral representations nor the parol evidence rule will prevent the Commission from
+considering oral promises made by a license holder; an integration clause in your paperwork does not
 erase what you said out loud.
 
 So the honest teaching is this. Do not think of the non-written routes as *strategies*. Think of them
 as *hazards*. Under § 1101.806(c) you cannot sue for a commission on an agency you created by conduct,
-because there is no signed promise from the party you would be suing. Under § 1101.652(b)(34), added
-effective January 1, 2026, failing to enter into the written agreement § 1101.563 requires is itself a
-ground for discipline. An accidentally created agency is therefore the worst of both worlds: full
-fiduciary exposure under § 531.2 and § 535.156, no enforceable fee, and a disciplinary count.
+because there is no signed promise from the party you would be suing. Under § 1101.652(b)(34) the
+missing § 1101.563 agreement is itself a ground for discipline. An accidentally created agency is the
+worst of both worlds: full fiduciary exposure, no enforceable fee, and a disciplinary count.
 
 ### What not to do, concretely
 
-The Legislature has already told you the disclosure steps that keep the record clean, and they are
-cheap. Section 1101.558(b) requires that "[a] license holder who represents a party in a proposed real
-estate transaction shall disclose, orally or in writing, that representation at the time of the
-license holder's first contact with" another party to the transaction or another license holder who
-represents another party. Section 1101.558(b-1) then requires that "[a]t the time of a license
-holder's first substantive communication with a party relating to a proposed transaction regarding
-specific real property, the license holder shall provide to the party written notice in at least a
-10-point font" that describes the ways a broker can represent a party "including as an intermediary,"
-describes the basic duties owed to a represented party, describes the basic obligations owed to a
-party the broker does not represent, and gives the name, license number and contact information for
-the license holder and the license holder's supervisor and broker, if applicable. Section
-1101.558(b-2) directs the Commission to prescribe the text of that notice by rule, and 22 TAC
-§ 531.20(a) adopts the Information About Brokerage Services Notice, TREC No. IABS 1-2, by reference.
-**The text of the IABS notice itself was not held for this course, so this module does not quote it.**
-Rule 531.20 does supply the delivery mechanics: the completed notice may be provided "by personal
-delivery by the license holder," "by first class mail or overnight common carrier delivery service,"
-"in the body of an email," or as an attachment or link in an email with a specific reference to the
-notice in the body, and "[t]he link to a completed IABS Notice may not be in a footnote or signature
-block in an email."
+Module 02 teaches the disclosure steps that keep the record clean — the representation disclosure at
+first contact under § 1101.558(b), and the written notice at the first substantive communication
+under § 1101.558(b-1), in the form 22 TAC § 531.20 adopts by reference as the Information About
+Brokerage Services Notice, TREC No. IABS 1-2. **The text of the IABS notice itself was not held for
+this course, so this module does not quote it.**
 
-Section 1101.558(c) lists three situations where the § 1101.558(b-1) notice is not required: where
-"the proposed transaction is for a residential lease for less than one year and a sale is not being
-considered"; where "the license holder meets with a party who the license holder knows is represented
-by another license holder"; and where "the communication occurs at a property that is held open for
-any prospective buyer or tenant and the communication concerns that property." Read that third
-exemption narrowly. It exempts you from the *notice* at an open house. It does not exempt you from
-§ 1101.563 if the property is residential and you are showing it to an unrepresented prospective
-buyer, and it does not exempt you from § 1101.652(b)(7), which reaches a license holder who "fails to
-make clear to all parties to a real estate transaction the party for whom the license holder is
-acting."
-
-Finally, be careful about creating an agency on top of somebody else's. Section 1101.652(b)(22)
-reaches a license holder who "negotiates or attempts to negotiate the sale, exchange, or lease of real
-property with an owner, landlord, buyer, or tenant with knowledge that that person is a party to an
-outstanding written contract that grants exclusive agency to another broker in connection with the
-transaction." The Commission's rule 22 TAC § 535.153 draws the line for you: a license holder may not
-attempt to negotiate a transaction in property under exclusive listing with another broker, but "the
-Act does not prohibit a license holder from soliciting a listing from the owner while the owner's
-property is subject to an exclusive listing with another broker." You may ask for the *future*
-business. You may not transact the *present* one. And § 1101.557(b)(1) forbids a broker who represents
-a party to "instruct another broker to directly or indirectly violate" that subdivision — you cannot do
-through a colleague what you may not do yourself.
+Two applications belong here rather than there. First, the exemption in § 1101.558(c)(3) for a
+communication at a property "held open for any prospective buyer or tenant" excuses the *notice* at an
+open house. It does not excuse the § 1101.563 writing when the property is residential and you are
+showing it to an unrepresented prospective buyer, and it does not excuse § 1101.652(b)(7), which
+reaches a license holder who "fails to make clear to all parties to a real estate transaction the
+party for whom the license holder is acting." Second, be careful about creating an agency on top of
+somebody else's: § 1101.652(b)(22) reaches negotiating or attempting to negotiate with a party you
+know is bound by an outstanding written contract granting exclusive agency to another broker, while
+22 TAC § 535.153 confirms that you may still solicit the *future* listing. You may ask for the next
+listing; you may not transact the present one.
 
 ### Statute reading exercise: The two 2026 sections, read side by side
 
@@ -357,58 +246,57 @@ distinction is good for — and the reason it is worth carrying — is that it e
 verify in the held sources: repeatedly, Texas ends the *authority* the moment a triggering fact
 occurs, and then handles the money separately.
 
-The clearest held example is a sales agent's sponsorship, discussed below. The clearest everyday
-example is the difference between § 1101.652(b)(12), which forces every brokerage service contract
-other than property management to carry "a definite termination date that is not subject to prior
-notice," and § 1101.806(c), which lets a broker sue on a signed commission promise after the
-authority under that contract has expired. The contract's authority ends on the date. The signed
-promise is still a signed promise.
+The clearest held example is a sales agent's sponsorship, below. The clearest everyday example is the
+difference between § 1101.652(b)(12), which forces every brokerage service contract other than
+property management to carry "a definite termination date that is not subject to prior notice," and
+§ 1101.806(c), which lets a broker sue on a signed commission promise after the authority under that
+contract has expired. The contract's authority ends on the date. The signed promise is still a signed
+promise.
 
 ### Completion of the purpose
 
 The ordinary and happy way an agency ends is that it does what it was created to do. The listing
 broker sells the house; the transaction closes; there is nothing further to perform. Chapter 1101 does
 not announce this as a rule, because it does not need to — a contract to accomplish a thing is
-discharged when the thing is accomplished. But the held sources do show you the Commission thinking in
-those terms. 22 TAC § 535.2 requires records to be kept "for at least four years from the date of
-closing, termination of the contract, or end of a real estate transaction," treating closing, contract
-termination and the end of the transaction as three distinct ending events. Section 1101.652(b)(31)
-makes it a violation to disburse money from a trust or escrow account "before the completion or
-termination of the real estate transaction" — again, completion and termination as alternatives.
+discharged when the thing is accomplished. But the held sources show the Commission thinking in those
+terms. 22 TAC § 535.2 measures record retention from "the date of closing, termination of the
+contract, or end of a real estate transaction," treating closing, contract termination and the end of
+the transaction as three distinct ending events; § 1101.652(b)(31) makes it a violation to disburse
+money from a trust or escrow account "before the completion or termination of the real estate
+transaction" — again, completion and termination as alternatives.
 
 One frequent misunderstanding: the acceptance of an offer does not end a listing. It fixes the
-transaction that is being performed under it. Rule 22 TAC § 535.156(a) is exact about the one duty
-acceptance can switch off, and only by writing: a license holder must convey to the principal all
-known information affecting the decision whether to make, accept or reject offers, "however, if the
-principal has agreed in writing that offers are not to be submitted after the principal has entered
-into a contract to buy, sell, rent, or lease a property, the license holder shall have no duty to
-submit offers to the principal after the principal has accepted an offer." Absent that written
-agreement, back-up offers keep coming to you and you keep delivering them.
+transaction that is being performed under it. Rule 22 TAC § 535.156(a), taught in Module 02, is exact
+about the one duty acceptance can switch off, and only by writing: the license holder has no duty to
+submit offers after the principal has accepted one only "if the principal has agreed in writing that
+offers are not to be submitted after the principal has entered into a contract to buy, sell, rent, or
+lease a property." Absent that written agreement, back-up offers keep coming to you and you keep
+delivering them.
 
 ### Expiration of the stated term
 
 Because § 1101.652(b)(12) requires a definite termination date in almost every brokerage service
-contract, expiration is the second-most common ending. When the date passes, the authority to act
-under that agreement is gone. You are not the seller's agent on the day after the listing expires. If
-you show that property the next week, you are showing it without authority, and if the seller's
-neighbor asks you about it, you have no principal in that transaction at all.
+contract, expiration is the second-most common ending. Read the qualifier, because students skip it
+every time. The date must be *definite*, and it must *not be subject to prior notice* — so a clause
+providing that the agreement continues until either party gives thirty days' notice does not satisfy
+the section. And the section carves out "a contract to perform property management services," which
+may run open-ended. An agreement that expires on December 31, 2026 is definite. One that expires
+ninety days after either party notifies the other is not. A property management agreement may run
+without a definite termination date; a listing may not.
+
+When the date passes, the authority to act under that agreement is gone. You are not the seller's
+agent on the day after the listing expires. If you show that property the next week, you are showing
+it without authority, and if the seller's neighbor asks you about it, you have no principal in that
+transaction at all.
 
 Practise the arithmetic on a real agreement. A Lubbock listing signed on February 1, 2026, with a
 stated termination date of July 31, 2026, at a total compensation of six percent on a home that would
 sell for $240,000, is an authority that runs 181 days and a fee of $14,400 if the sale closes within
 it. On August 1 the authority is gone and the $14,400 is gone with it — unless the agreement contains
-a protection or override clause, which is a contractual survival term this module takes up in the
-third unit. Notice how naturally students slide from the listing having expired to the commission
-having been
-lost. Those are two separate questions governed by two separate instruments: the termination date governs
+a protection or override clause, which is a contractual survival term the third unit takes up. Notice
+how naturally students slide from the listing having expired to the commission having been lost. Those
+are two separate questions governed by two separate instruments: the termination date governs
 authority; the signed writing governs the fee under § 1101.806(c).
-
-Be careful with an evergreen or notice-based expiry. A term providing that the agreement continues
-until either party gives thirty days' written notice is exactly what § 1101.652(b)(12) prohibits,
-because that
-termination date is "subject to prior notice." The one exception the statute itself states is "a
-contract to perform property management services." A property management agreement may run without a
-definite termination date; a listing may not.
 
 ### Mutual agreement
 
@@ -443,13 +331,11 @@ duty sit in the same four-year window. A relationship you ended in March 2026 ca
 duty petition in February 2030.
 
 Third, renouncing badly is a regulatory problem, not only a contractual one. A license holder who
-abandons a client mid-transaction is exposed under § 1101.652(b)(1), which reaches conduct that is
-negligent or incompetent while engaged in real estate brokerage, and § 1101.652(b)(2), which reaches
-conduct "that is dishonest or in bad faith or that demonstrates untrustworthiness." And 22 TAC
-§ 535.157 does not stop applying because you have decided to withdraw: "A broker or sales agent must
-respond to his or her principal, a broker or sales agent representing another party to a real estate
-transaction, or an unrepresented party to a real estate transaction within two calendar days." Silence
-is not a method of resignation.
+abandons a client mid-transaction is exposed under § 1101.652(b)(1), which reaches negligence or
+incompetency in brokerage, and § 1101.652(b)(2), which reaches conduct "that is dishonest or in bad
+faith or that demonstrates untrustworthiness." And the two-calendar-day response obligation in 22 TAC
+§ 535.157 does not stop applying because you have decided to withdraw. Silence is not a method of
+resignation.
 
 ### Death or incapacity of a party
 
@@ -492,32 +378,27 @@ broker and for counsel, not for your judgment in the field.
 ### Destruction of the subject property
 
 If the four-plex in Beaumont that you listed burns to the foundation, there is nothing left to sell in
-the condition the agreement described. **A Texas statute or Commission rule stating
-that destruction of the subject matter terminates an agency was not held for this course**, and this
-module does not manufacture one.
-What the held sources do tell you is what your obligations look like the morning after the fire.
-Rule 22 TAC § 535.156(c) imposes "an affirmative duty to keep the principal informed at all times of
-significant information applicable to the transaction or transactions in which the license holder is
-acting as agent for the principal," and § 535.2 says a broker "owes the highest fiduciary obligation
-to the principal and is obliged to convey to the principal all information known to the agent which
-may affect the principal's decision unless prohibited by other law." A total loss is significant
-information. Section 1101.652(b)(3) and (b)(4) make it a disciplinary matter to misrepresent to a
-potential buyer a significant defect known to the license holder, or to fail to disclose such a defect
-to a potential buyer. Whatever happens to the agency, the property's condition does not become
-somebody else's problem.
+the condition the agreement described. **A Texas statute or Commission rule stating that destruction
+of the subject matter terminates an agency was not held for this course**, and this module does not
+manufacture one. What the held sources do tell you is what your obligations look like the morning
+after the fire. Rule 22 TAC § 535.156(c) imposes "an affirmative duty to keep the principal informed
+at all times of significant information applicable to the transaction or transactions in which the
+license holder is acting as agent for the principal," and a total loss is significant information.
+Section 1101.652(b)(3) and (b)(4) continue to make it a disciplinary matter to misrepresent to a
+potential buyer a significant defect known to the license holder, or to fail to disclose one. Whatever
+happens to the agency, the property's condition does not become somebody else's problem.
 
 ### Bankruptcy
 
 **Chapter 1101 does not state that a party's bankruptcy terminates an agency, and no held source in
 this course does; that rule was not held and is not taught here as Texas law.** The only place
-bankruptcy appears in the held chapter is § 1101.602 and following, concerning the Real Estate
-Recovery Trust Account: § 1101.606(c) addresses an aggrieved person "precluded by action of a
-bankruptcy court from executing a judgment or perfecting a judgment lien," and requires that person to
-verify to the Commission a good faith effort to protect the judgment from being discharged. That is a
-recovery-fund provision, not an agency-termination provision. If a seller files, the practical reality
-is that the property becomes subject to a federal proceeding and the person who signed your listing
-may no longer control it — but the governing law is federal bankruptcy law, which this course does not
-hold, and the correct professional response is to escalate to your broker.
+bankruptcy appears in the held chapter is the Real Estate Recovery Trust Account subchapter —
+§ 1101.606(c) addresses an aggrieved person "precluded by action of a bankruptcy court from executing
+a judgment or perfecting a judgment lien." That is a recovery-fund provision, not an
+agency-termination provision. If a seller files, the practical reality is that the property becomes
+subject to a federal proceeding and the person who signed your listing may no longer control it — but
+the governing law is federal bankruptcy law, which this course does not hold, and the correct
+professional response is to escalate to your broker.
 
 ### Termination of the sales agent's sponsorship
 
@@ -555,37 +436,27 @@ for inactive status." Thirty days' written notice, running backward from the app
 broker on inactive status, under § 1101.366(d), "may not perform any activity regulated under this
 chapter" and "must pay renewal fees."
 
-**Delegated supervision ends the same way — in writing, on the record.** 22 TAC § 535.2 requires that
-a broker notify a sponsored sales agent in writing of the scope of the sales agent's authorized
-activities, and provides that "[u]nless such scope is limited or revoked in writing, a broker is
-responsible for the authorized acts of the broker's sales agents, but the broker is not required to
-supervise the sales agents directly." Read the qualifier: the *only* way to shrink a sales agent's
-authority is in writing. An oral instruction not to handle commercial leases leaves the broker
-responsible for commercial leases. The rule continues that a broker "may delegate to another license
-holder the responsibility to assist in administering compliance with the Act and Rules, but the broker
-may not relinquish overall responsibility for the supervision of license holders sponsored by the
-broker," that "[a]ny such delegation must be in writing," that the broker must give the Commission the
-name of each delegated supervisor within 30 days of a delegation that has lasted or is anticipated to
-last more than three consecutive months, and that "[t]he broker shall notify the Commission in the
-same manner within 30 days after the delegation of a supervisor has ended." Delegation is a written
-act with a reporting duty at both ends; ending it is not a conversation in the break room.
+**Delegated supervision ends the same way — in writing, on the record.** Broker responsibility is
+Module 09's subject; the endings inside it belong here. Under 22 TAC § 535.2 the scope of a sponsored
+sales agent's authorized activities can be limited or revoked only *in writing*, so an oral
+instruction not to handle commercial leases leaves the broker responsible for commercial leases; a
+delegation of supervisory responsibility must itself be in writing; and the broker must notify the
+Commission within 30 days after a reportable delegation ends, just as at its start. Ending a
+delegation is not a conversation in the break room.
 
 ### Suspension or revocation of the license
 
-A license the Commission suspends stops functioning as authority. 22 TAC § 535.141(g) provides that
-"[a] person whose license has been suspended may not during the period of any suspension perform,
-attempt to perform, or advertise to perform any act for which a license is required by the Act or
-Commission rules." Subsection (h) then requires written notice not later than the third day before the
-suspension takes effect, and the list of recipients tracks every relationship the suspension will
-break: a sales agent notifies the sponsoring broker; a broker notifies sponsored sales agents and any
-business entity for which the person is designated broker; a person with a contractual obligation to
-perform licensed services notifies "all other parties to the contract that the services cannot be
-performed during the suspension"; a sales agent directly involved in a transaction as agent notifies
-"all other parties, including principals and other brokers"; and — the provision to remember — "if the
-person holds money in trust in any transaction in which the person is acting as a broker, remit such
-money in accordance with the instructions of the principals." Even here, where the authority is being
-taken away by the regulator, the trust money must be dealt with. That is the bridge into the final
-unit.
+A license the Commission suspends stops functioning as authority. 22 TAC § 535.141(g), taught in
+Module 10, provides that a person whose license has been suspended "may not during the period of any
+suspension perform, attempt to perform, or advertise to perform any act for which a license is
+required by the Act or Commission rules." Subsection (h) requires written notice not later than the
+third day before the suspension takes effect, and its list of recipients tracks every relationship the
+suspension will break — sponsoring broker, sponsored sales agents, other parties to a contract for
+licensed services, and the principals and brokers in any transaction the person is working. The
+provision to remember is the last: if the person "holds money in trust in any transaction in which the
+person is acting as a broker," the person must "remit such money in accordance with the instructions
+of the principals." Even where the regulator is taking the authority away, the trust money must be
+dealt with. That is the bridge into the final unit.
 
 ### Applied exercise: Leaving Delgado & Finch
 
@@ -612,55 +483,38 @@ a different property.
 ## Unit: Duties of Agency that Survive Termination
 
 The most expensive mistake in this module is the assumption that a closed file means the duties are
-over. They are not, and the held sources tell you exactly which ones continue. Three
-survive as matters of law — confidentiality, accounting for trust money, and record retention — and
-one survives because you wrote it into a contract, namely the protection or override period. A fifth,
-your exposure to suit, survives on the limitations clock in Civil Practice & Remedies Code
-§ 16.004(a): four years for "debt" and four years for "breach of fiduciary duty," running from the day
-the cause of action accrues.
+over. They are not, and the held sources tell you exactly which ones continue. Three survive as
+matters of law — confidentiality, accounting for trust money, and record retention — and one survives
+because you wrote it into a contract, namely the protection or override period. A fifth, your exposure
+to suit, survives on the limitations clock in Civil Practice & Remedies Code § 16.004(a): four years
+for "debt" and four years for "breach of fiduciary duty," running from the day the cause of action
+accrues.
 
 ### Confidentiality
 
 Begin with the exact scope of what Texas law holds. The one held provision that squarely prohibits
 disclosure of a client's confidential information is Occupations Code § 1101.651(d), and it is
-addressed to a specific role. Subsection (d) provides that a broker, and any broker or sales agent
-appointed under § 1101.560 "who acts as an intermediary under Subchapter L," may not do five
-things. The first two are the price disclosures: such a person may not "disclose to the buyer or
-tenant that the seller or landlord will accept a price less than the asking price, unless otherwise
-instructed in a separate writing by the seller or landlord," and may not "disclose to the seller or
-landlord that the buyer or tenant will pay a price greater than the price submitted in a written offer
-to the seller or landlord, unless otherwise instructed in a separate writing by the buyer or tenant."
-Quote those qualifiers whenever you state the rule. The consent that lifts the prohibition must be
-*separate* and it must be *in writing*; a line buried in the representation agreement and an oral
-blessing to go ahead and tell them are both insufficient.
+addressed to a specific role — a broker, and any broker or sales agent appointed under § 1101.560,
+"who acts as an intermediary under Subchapter L." Module 06 teaches that subsection with the
+intermediary machinery it belongs to, including the two price-disclosure prohibitions in (d)(1) and
+(d)(2), each of which is lifted only by a *separate* written instruction from the party concerned.
 
-The third prohibition is the general one. The intermediary may not "disclose any confidential
-information or any information a party specifically instructs the broker or sales agent in writing not
-to disclose, unless: (A) the broker or sales agent is otherwise instructed in a separate writing by
-the respective party; (B) the broker or sales agent is required to disclose the information by this
-chapter or a court order; or (C) the information materially relates to the condition of the property."
-Those three exceptions are the whole of it, and exception (C) is the one that saves careers and ends
-them. Confidentiality never covers the condition of the house. If the client told you in confidence
-that the slab has moved twice, that is information that "materially relates to the condition of the
-property," and § 1101.651(d)(3)(C) removes it from the protection — reinforced by § 1101.652(b)(4),
-which reaches a license holder who "fails to disclose to a potential buyer a defect described by
-Subdivision (3) that is known to the license holder," Subdivision (3) being a significant defect,
-"including a latent structural defect," known to the license holder "that would be a significant
-factor to a reasonable and prudent buyer in making a decision to purchase real property." The
-prohibitions of subsection (d) close with two catch-alls: the intermediary may not "treat a party to a
-transaction dishonestly" and may not "violate this chapter."
+What matters after termination is subdivision (d)(3) and its exceptions, so read them whole. The
+intermediary may not "disclose any confidential information or any information a party specifically
+instructs the broker or sales agent in writing not to disclose, unless: (A) the broker or sales agent
+is otherwise instructed in a separate writing by the respective party; (B) the broker or sales agent
+is required to disclose the information by this chapter or a court order; or (C) the information
+materially relates to the condition of the property." Those three exceptions are the whole of it, and
+(C) is the one that saves careers and ends them: confidentiality never covers the condition of the
+house. If the client told you in confidence that the slab has moved twice, § 1101.651(d)(3)(C) removes
+that from the protection, and § 1101.652(b)(4) independently reaches a license holder who fails to
+disclose a known significant defect to a potential buyer.
 
 Outside the intermediary role, the confidentiality obligation in the held sources rests on the
-fiduciary standard rather than on a specific non-disclosure statute. 22 TAC § 531.2 provides that a
-license holder acting as an agent for another is a fiduciary, and that the special obligations imposed
-demand "that the license holder be faithful and observant to trust placed in the license holder, and
-be scrupulous and meticulous in performing the license holder's functions," and "that the license
-holder place no personal interest above that of the client." 22 TAC § 535.156(b) adds that the license
-holder "must put the interest of the license holder's principal above the license holder's own
-interest" and that a license holder "must deal honestly and fairly with all parties; however, the
-license holder represents only the principal and owes a duty of fidelity to such principal." Using a
-former client's negotiating limits to advantage a new client, or yourself, is placing an interest
-above the former client's.
+fiduciary standard rather than on a specific non-disclosure statute — 22 TAC § 531.2 and § 535.156(b),
+taught in Module 02, which require the license holder to place no personal interest above the
+client's. Using a former client's negotiating limits to advantage a new client, or yourself, is
+placing an interest above the former client's.
 
 Now the honest limit, and state it exactly this way in an exam answer. **No held source in this course
 fixes a duration for the duty of confidentiality after an agency terminates. A period was not held.**
@@ -668,28 +522,24 @@ Section 1101.651(d) states no expiry. Rule 531.2 states no expiry. Rule 535.156 
 number you have heard — one year, two years, forever — does not come from a source held for this
 course, and you should not repeat it as Texas law. What you can say with authority is this:
 § 1101.651(d)(3) permits disclosure in exactly three circumstances, none of which is the passage of
-time; the only listed routes out of the prohibition are a separate written instruction from the party,
-a legal requirement to disclose under Chapter 1101 or a court order, and information that materially
-relates to the condition of the property. Absent one of those, the safe and defensible professional
-position — practice, not statute — is that you do not disclose, and that if a former client's
-information becomes relevant in a new transaction, you take the question to your broker before you
-open your mouth.
+time. Absent one of those, the safe and defensible professional position — practice, not statute — is
+that you do not disclose, and that if a former client's information becomes relevant in a new
+transaction, you take the question to your broker before you open your mouth.
 
-One more piece of confidentiality that survives is § 1101.556, which relieves you of an obligation
-rather than imposing one: a license holder is not required to inquire about, disclose, or release
-information relating to whether a previous or current occupant had or may have had AIDS, an
-HIV-related illness or HIV infection, or whether "a death occurred on a property by natural causes,
-suicide, or accident unrelated to the condition of the property." Section 1101.802 backs that with a
-liability shield on the HIV question. Those provisions do not expire with the listing either.
+One more piece of confidentiality survives termination by relieving you of an obligation rather than
+imposing one: § 1101.556, taught in Module 03, under which a license holder is not required to
+inquire about, disclose, or release information about whether a previous or current occupant had or
+may have had AIDS, an HIV-related illness or HIV infection, or whether a death occurred on the
+property by natural causes, suicide, or accident unrelated to the property's condition. That provision
+does not expire with the listing either.
 
 ### The accounting duty for trust money
 
 Money is where the claim that the deal is over gets tested, and 22 TAC § 535.146 is the rule that
-tests them.
-Start with its definition, which is broader than most licensees expect: "Trust money" means "client's
-money, earnest money, rent, unearned fees, security deposits, or any money held on behalf of another
-person." Unearned fees and security deposits are in that list. So is any money at all held on behalf
-of another person.
+tests it. Start with its definition, which is broader than most licensees expect: "Trust money" means
+"client's money, earnest money, rent, unearned fees, security deposits, or any money held on behalf of
+another person." Unearned fees and security deposits are in that list. So is any money at all held on
+behalf of another person.
 
 Section 535.146(b)(1) states the character of the holding: "Any trust money accepted by a broker is
 held in a fiduciary capacity and must be maintained in a designated trust account maintained by the
@@ -698,17 +548,17 @@ principals of the transaction." Subsection (b)(2) is absolute for sales agents: 
 not maintain a trust account. Any trust money received by a sales agent must be immediately delivered
 to the sales agent's sponsoring broker." Subsection (b)(3) sets the deposit deadline: unless the
 principals expressly agree in writing on a different time, trust money the broker receives must be
-deposited or delivered to an authorized escrow agent within a reasonable time, "which the Commission
-has determined to be not later than the close of business of the second working day after the date the
-broker receives the trust money."
+deposited in a trust account or delivered to an authorized escrow agent within a reasonable time,
+"which the Commission has determined to be not later than the close of business of the second working
+day after the date the broker receives the trust money."
 
 Those are duties during the relationship. Here is what continues after it. Section 535.146(c)(6)
 requires that the broker "retain a documentary record of each deposit or withdrawal from the trust
 account and provide an accounting to each beneficiary of trust money at least monthly if there has
 been any activity in the account." Read the trigger: activity, not an open transaction. A terminated
 listing whose earnest money is still sitting in the account and moves for any reason generates an
-accounting to the beneficiary that month. Section 535.146(c)(5) governs the broker's own money:
-"If a broker acquires ownership of trust money held in a trust account, including entitlement to
+accounting to the beneficiary that month. Section 535.146(c)(5) governs the broker's own money: "If a
+broker acquires ownership of trust money held in a trust account, including entitlement to
 compensation, such money must be removed from the trust account not later the 30th day after the date
 the broker acquires ownership of the money." That is a survival duty in the sharpest sense — the
 transaction is over, the broker has earned the fee, and the rule now runs a clock against the broker,
@@ -733,20 +583,17 @@ reasonably determine to which party or parties the trust money should be paid, t
 trust money into the registry of a court and interplead the parties." Interpleader is permissive, not
 mandatory, and it is what a careful broker does instead of guessing between two angry parties.
 
-The statute stands behind the rule. Section 1101.652(b)(9) reaches a license holder who "fails within
-a reasonable time to properly account for or remit money that is received by the license holder and
-that belongs to another person"; (b)(10) reaches one who "commingles money that belongs to another
-person with the license holder's own money"; (b)(30) requires deposit within a reasonable time in
-trust with an authorized Texas title company or in a custodial, trust or escrow account in an
-authorized banking institution; and (b)(31) prohibits disbursing that money "before the completion or
-termination of the real estate transaction." Note that (b)(31) is phrased around the transaction's
-completion or termination — the trust obligation is defined by the transaction's life, not the
-agency's.
+The statute stands behind the rule: § 1101.652(b)(9), (b)(10), (b)(30) and (b)(31) reach, in turn, a
+failure to account for or remit another person's money within a reasonable time, commingling,
+depositing outside an authorized trust or escrow arrangement, and disbursing "before the completion or
+termination of the real estate transaction." Note the phrasing of the last one — the trust obligation
+is defined by the *transaction's* life, not the agency's.
 
-Finally, § 535.146(e): "A broker must maintain all documentation regarding a trust account for four
-years from the date the document is received or created by the broker." Four years, per document,
-from receipt or creation — a different measuring point from the general records rule discussed below,
-and worth keeping separate in your head.
+Finally, § 535.146(e) — subsection (e), the rule's own "Records" subsection, not (f): "A broker must
+maintain all documentation regarding a trust account for four years from the date the document is
+received or created by the broker." Four years, per document, from receipt or creation. That is a
+different measuring point from the general brokerage records rule below, and the two are worth keeping
+separate in your head.
 
 ### Contractual survival: protection and override periods
 
@@ -755,75 +602,41 @@ representation agreement providing that if the property is sold within a stated 
 the agreement ends to a person the broker introduced during the term, compensation is still owed.
 **The held sources for this course do not prescribe protection-period language, a maximum length, or a
 naming requirement; those terms were not held and this module does not state any.** What the held
-sources do tell you is the framework that makes such a clause enforceable or worthless.
+sources do tell you is the framework that makes such a clause enforceable or worthless. First, it must
+be in the signed writing, because § 1101.806(c) allows an action to recover a commission only on a
+promise or memorandum "in writing and signed by the party against whom the action is brought"; a
+protection period agreed to orally when the seller asked you to stop marketing is not a promise you
+can sue on. Second, the clause is measured from the definite termination date § 1101.652(b)(12)
+requires; a period running from an indefinite date is not measurable. Third, the paperwork proving the
+claim is exactly what 22 TAC § 535.2 already obliges the broker to keep — "commission agreements such
+as listing agreements, buyer representation agreements, or other written agreements relied upon to
+claim compensation."
 
-First, it must be in the signed writing. Section 1101.806(c) allows an action to recover a commission
-only where "the promise or agreement on which the action is based, or a memorandum, is in writing and
-signed by the party against whom the action is brought or by a person authorized by that party to sign
-the document." A protection period agreed to orally when the seller asked you to stop marketing is not
-a promise you can sue on. Second, the clause is subject to § 1101.652(b)(12): the underlying contract
-must state "a definite termination date that is not subject to prior notice." A protection period
-measured from that definite date is measurable; one measured from an indefinite date is not. Third,
-the paperwork proving the claim is exactly what 22 TAC § 535.2 already obliges the broker to keep —
-"commission agreements such as listing agreements, buyer representation agreements, or other written
-agreements relied upon to claim compensation" — which is why the retention rule and the protection
-period belong in the same discussion.
-
-**Compensation across a change of sponsorship survives too, and Texas says so expressly.** Section
+**Compensation across a change of sponsorship survives too, and Texas says so expressly.** Module 09
+teaches the compensation rules; the survival clause inside them is this module's business. Section
 1101.651(b) provides: "A sales agent may not accept compensation for a real estate transaction from a
 person other than the broker that is sponsoring the sales agent or was sponsoring the sales agent when
-the sales agent earned the compensation." That final clause is a survival rule written into a
-prohibition. The general bar is that a sales agent takes compensation only from the sponsoring broker;
-the clause "or was sponsoring the sales agent when the sales agent earned the compensation" preserves
-the former broker's ability to pay for work done while you were there. The Commission's rule agrees:
-22 TAC § 535.3 provides that "[a] sales agent may not receive a commission or other valuable
-consideration except with the written consent of the sales agent's sponsoring broker or the broker who
-sponsored the sales agent when the sales agent became entitled to the commission or other valuable
-consideration," and adds that a sales agent "may not pay a commission or other valuable consideration
-to another person except with the written consent of the sales agent's sponsoring broker."
-
-Two things follow. You may be paid by a former sponsoring broker for compensation you earned while
-sponsored there — but not by the client, not by a title company as a direct payee, and not by the
-other side's broker. And § 1101.651(c) still binds you in the other direction: "A sales agent may not
-pay a commission to a person except through the broker that is sponsoring the sales agent at that
-time." Section 1101.651(a) closes the circle on the broker's side, forbidding a licensed broker to pay
-a commission to or otherwise compensate a person "directly or indirectly for performing an act of a
-broker" unless that person is a license holder or "a real estate broker licensed in another state who
-does not conduct in this state any of the negotiations for which the commission or other compensation
-is paid." Rule 22 TAC § 535.2 requires the sponsoring broker's written policies to ensure that "[a]ny
-and all compensation paid to a sponsored sales agent for acts or services subject to the Act is paid
-by, through, or with the written consent of the sponsoring broker."
+the sales agent earned the compensation." The general bar is that a sales agent takes compensation
+only from the sponsoring broker; the final clause — "or was sponsoring the sales agent when the sales
+agent earned the compensation" — preserves the former broker's ability to pay for work done while you
+were there. 22 TAC § 535.3 says the same in terms of written consent, from the sponsoring broker or
+from "the broker who sponsored the sales agent when the sales agent became entitled to the commission
+or other valuable consideration." So a fee earned at your old brokerage may still reach you — through
+that brokerage, and through no one else. Not from the client, not from the title company as a direct
+payee, and not from the other side's broker.
 
 ### Records — and the documents that belong to the client
 
-22 TAC § 535.2 states the retention rule and it is the number to memorise. Except for records
-destroyed by an "Act of God" such as a natural disaster or fire not intentionally caused by the
-broker, the broker must, at a minimum, maintain the listed records "in a format that is readily
-available to the Commission for at least four years from the date of closing, termination of the
-contract, or end of a real estate transaction." Three measuring points, whichever applies. A closing
-on February 10, 2026 starts a clock that runs to February 10, 2030; a listing that terminates without
-a sale on August 31, 2026 starts its own clock to August 31, 2030.
-
-The list of records is specific: disclosures; "commission agreements such as listing agreements, buyer
-representation agreements, or other written agreements relied upon to claim compensation"; substantive
-communications with parties to the transaction; offers, contracts, and related addenda; receipts and
-disbursements of compensation for services subject to the Act; property management contracts;
-appraisals, broker price opinions, and comparative market analyses; and "sponsorship agreements
-between the broker and sponsored sales agents." Notice the third and the last. *Substantive
-communications* means the text messages and emails, not just the signed forms — and a sales agent who
-leaves a brokerage and wipes a phone has destroyed the broker's records. *Sponsorship agreements* are
-on the list, which means the paperwork of the relationship you just ended is itself a four-year
-record.
-
-Retention duties have an enforcement edge. Section 1101.652(a-1)(2) reaches a license holder who
-"fails or refuses to produce on request, within a reasonable time, for inspection by the commission or
-a commission representative, a document, book, or record that is in the license holder's possession
-and relates to a real estate transaction conducted by the license holder," and § 1101.652(a)(4)
-reaches one who fails to provide, within a reasonable time, information the Commission requests
-relating to a complaint. Rule 22 TAC § 535.157 sets the two-calendar-day response obligation, and
-§ 535.2 requires a broker or delegated supervisor to respond to sponsored sales agents within two
-calendar days and to deliver Commission mail and correspondence to sponsored sales agents within three
-calendar days after receipt.
+Record retention is taught in Module 09 with the rest of broker responsibility. The number to carry
+out of this module is the measuring point: 22 TAC § 535.2 requires the listed brokerage records to be
+kept "for at least four years from the date of closing, termination of the contract, or end of a real
+estate transaction." Three measuring points, whichever applies — so a listing that terminates without
+a sale on August 31, 2026 starts its own four-year clock to August 31, 2030 even though nothing
+closed. Two entries on that list matter particularly at the end of a relationship. *Substantive
+communications with parties to the transaction* means the text messages and emails, not just the
+signed forms, so a sales agent who leaves a brokerage and wipes a phone has destroyed the broker's
+records. And *sponsorship agreements between the broker and sponsored sales agents* are themselves on
+the list — the paperwork of the relationship you just ended is a four-year record.
 
 Keeping records is not the same as keeping the client's property. Section 1101.652(a)(5) reaches a
 license holder who "fails to surrender to the owner, without just cause, a document or instrument that
@@ -831,10 +644,9 @@ is requested by the owner and that is in the license holder's possession," and �
 reaches one who "fails or refuses to provide, on request, a copy of a document relating to a real
 estate transaction to a person who signed the document." Both survive termination on their face:
 neither is limited to a live agency. When a former seller asks for the survey she gave you, you return
-it and keep a copy for the file. Refusing to hand back an owner's document because you are in a dispute
-about a fee is precisely the conduct § 1101.652(a)(5) describes, and being owed money is unlikely
-to be the
-"just cause" the statute contemplates.
+it and keep a copy for the file. Refusing to hand back an owner's document because you are in a
+dispute about a fee is precisely the conduct § 1101.652(a)(5) describes, and being owed money is
+unlikely to be the "just cause" the statute contemplates.
 
 ### Statute reading exercise: What § 1101.651(d) does and does not say
 
@@ -878,41 +690,33 @@ listing broker on a list price of $335,000.
 
 ### Module recap
 
-This module turned on one idea: agency in Texas is a state of affairs with a beginning, an end, and a
-tail. The beginning is fixed by Occupations Code § 1101.557(a), under which "[a] broker who represents
-a party in a real estate transaction or who lists real estate for sale under an exclusive agreement
-for a party is that party's agent" — two triggers, one of which needs no signature at all. Since
-January 1, 2026, Texas has closed most of the gap on the residential buyer side: § 1101.563(b)
-requires a written agreement before showing any residential real property to a prospective buyer or,
-if none will be shown, before presenting an offer on the buyer's behalf, and § 1101.652(b)(34) makes
-the failure a disciplinary ground. Section 1101.563(a) confines "residential real property" to a
-single-family house, a duplex, triplex or quadraplex, and a condominium or cooperative unit;
-§ 1101.563(c) fixes the five things the agreement must state plus the conspicuous disclosure that
-broker compensation is not set by law and is fully negotiable; and § 1101.563(e) caps a showing-only
-agreement at fourteen days and forbids it to be exclusive.
+Agency in Texas is a state of affairs with a beginning, an end, and a tail. The beginning is fixed by
+Occupations Code § 1101.557(a): a broker "who represents a party in a real estate transaction or who
+lists real estate for sale under an exclusive agreement for a party is that party's agent" — two
+triggers, one of which needs no signature at all. Since January 1, 2026, § 1101.563(b) has required a
+written agreement before showing any residential real property to a prospective buyer or, if none will
+be shown, before presenting an offer on the buyer's behalf; the section itself is taught in Module 05,
+and § 1101.652(b)(34) makes the failure a disciplinary ground.
 
 Keep the three writing rules separate, because they answer three different questions. Section 1101.563
 answers *may I act*. Section 1101.806(c) answers *may I sue for the fee*, and it demands a writing
-signed by "the party against whom the action is brought." Business & Commerce Code § 26.01 answers
-*is this promise enforceable at all*, reaching a contract for the sale of real estate, a lease longer
-than one year, an agreement not to be performed within one year, and — a point courses get wrong —
+signed by "the party against whom the action is brought." Business & Commerce Code § 26.01 answers *is
+this promise enforceable at all*, reaching a contract for the sale of real estate, a lease longer than
+one year, an agreement not to be performed within one year, and — a point courses get wrong —
 commissions on oil and gas leases, royalties, minerals and mineral interests under § 26.01(b)(7), not
-ordinary real estate commissions. Section 1101.559 adds a fourth writing that creates a status: written
-consent from each party stating the source of any expected compensation, before a broker may act as
-intermediary.
+ordinary real estate commissions. Section 1101.559 adds a fourth writing that creates a status:
+written consent from each party stating the source of any expected compensation, before a broker may
+act as intermediary.
 
-Agency you did not intend is a hazard, not a technique. Section 1101.562 lets you show property
-without representing the party only if you have not agreed to represent them "either orally or in
-writing," are not otherwise acting as their agent, give no "opinions or advice regarding the real
-property or real estate transactions in general," and perform no other act of brokerage — with the
-single carve-out in § 1101.562(c) permitting you to confirm "the size, price, and terms" of the
-property. 22 TAC § 531.2 attaches fiduciary status to "acting as an agent," not to signing, and 22 TAC
-§ 535.145 tells you that neither a disclaimer of oral representations nor the parol evidence rule will
-stop the Commission from considering what you said out loud. The common-law elements of ratification
-and of agency by estoppel were not held for this course and were not taught here as Texas law.
+Agency you did not intend is a hazard, not a technique: § 1101.562 tolerates a showing without
+representation only inside four conditions, 22 TAC § 531.2 attaches fiduciary status to "acting as an
+agent" rather than to signing, and 22 TAC § 535.145 tells you that neither a disclaimer of oral
+representations nor the parol evidence rule will stop the Commission from considering what you said
+out loud. **The common-law elements of ratification and of agency by estoppel were not held for this
+course and were not taught here as Texas law.**
 
 Termination comes in a predictable set: completion of the purpose; expiration of the definite
-termination date that § 1101.652(b)(12) requires in every brokerage service contract except property
+termination date § 1101.652(b)(12) requires in every brokerage service contract except property
 management; mutual agreement; revocation by the principal; renunciation by the agent; death, where
 Estates Code § 101.001 vests the estate immediately in devisees or heirs so that the person who signed
 no longer owns the property; destruction of the subject property; bankruptcy; suspension or revocation
@@ -921,36 +725,37 @@ sales agent's sponsorship. Section 1101.367(a) requires the terminating party to
 both the other party and the Commission "immediately," whereupon the license goes inactive, and
 § 1101.351(c) then bars the sales agent from engaging or attempting to engage in brokerage. Section
 1101.366(c) gives the mirror rule for a broker going inactive: written notice to each sponsored sales
-agent before the 30th day preceding the application. The Texas authority for a rule that bankruptcy or
-destruction of the property terminates an agency was not held, and the common-law power-versus-right
-distinction and the measure of damages for wrongful revocation or renunciation were not held either.
+agent before the 30th day preceding the application.
 
-Three duties survive as law. Confidentiality: § 1101.651(d)(3) forbids an intermediary to disclose
-confidential information or information a party instructed be withheld in writing, unless separately
-instructed in writing by that party, unless required to disclose by Chapter 1101 or a court order, or
-unless "the information materially relates to the condition of the property" — and, backing that,
-§ 1101.652(b)(4) makes failure to disclose a known significant defect to a potential buyer its own
-violation. **No held source fixes a duration for post-termination confidentiality; a period was not
-held.** Trust money: 22 TAC § 535.146 defines trust money to include client's money, earnest money,
-rent, unearned fees, security deposits and any money held on behalf of another person; requires
-deposit not later than the close of business of the second working day after receipt; requires an
-accounting to each beneficiary at least monthly if there has been activity; requires the broker to
-remove money the broker comes to own, including earned compensation, not later than the 30th day
-after acquiring ownership; requires payment on a written demand not later than the 30th day after the
-demand; permits interpleader where the broker cannot reasonably determine entitlement; and requires
-trust account documentation to be kept four years from receipt or creation. Records: 22 TAC § 535.2
-requires eight listed categories — disclosures, commission agreements, substantive communications,
-offers and contracts and addenda, receipts and disbursements of compensation, property management
-contracts, appraisals and price opinions, and sponsorship agreements — to be kept at least four years
-from closing, termination of the contract, or end of the transaction.
+**Four things were not held and are not stated here as Texas law: any authority that bankruptcy
+terminates an agency; any authority that destruction of the subject property terminates an agency;
+the common-law power-versus-right distinction, including the agency coupled with an interest; and the
+measure of damages for wrongful revocation or renunciation. The Texas durable power of attorney
+statute, and any rule about whether an agency survives a principal's incapacity, were not held
+either.**
+
+Three duties survive as law. Confidentiality: § 1101.651(d)(3) forbids disclosure of confidential
+information or information a party instructed be withheld in writing, unless separately instructed in
+writing by that party, unless required to disclose by Chapter 1101 or a court order, or unless "the
+information materially relates to the condition of the property." **No held source fixes a duration
+for post-termination confidentiality; a period was not held.** Trust money: 22 TAC § 535.146 defines
+trust money to include client's money, earnest money, rent, unearned fees, security deposits and any
+money held on behalf of another person; requires deposit not later than the close of business of the
+second working day after receipt; requires an accounting to each beneficiary at least monthly if there
+has been activity; requires the broker to remove money the broker comes to own, including earned
+compensation, not later than the 30th day after acquiring ownership; requires payment on a written
+demand not later than the 30th day after the demand; permits interpleader where the broker cannot
+reasonably determine entitlement; and, in subsection (e), requires trust account documentation to be
+kept four years from receipt or creation. Records: 22 TAC § 535.2 requires the listed brokerage
+records to be kept at least four years from closing, termination of the contract, or end of the
+transaction.
 
 Two more survivals round it out. Compensation: § 1101.651(b) lets a sales agent accept compensation
 from "the broker that is sponsoring the sales agent or was sponsoring the sales agent when the sales
-agent earned the compensation," and 22 TAC § 535.3 says the same in terms of the sponsoring broker's
-written consent — so a fee earned at your old brokerage may still be paid through that brokerage, and
-through no one else. Liability: Civil Practice & Remedies Code § 16.004(a) gives four years from
-accrual for "debt" and for "breach of fiduciary duty," which is the real answer to a licensee who asks
-how long an old file can come back. Add § 1101.652(a)(5) and (b)(28), which require you to surrender
-an owner's documents on request and to give a signer a copy of a document, and the picture is
-complete: the authority ends on a date, and the obligations of the relationship keep running long
-after it.
+agent earned the compensation," and 22 TAC § 535.3 says the same in terms of written consent — so a
+fee earned at your old brokerage may still be paid through that brokerage, and through no one else.
+**The held sources prescribe no protection-period language, maximum length or naming requirement;
+those terms were not held.** Liability: Civil Practice & Remedies Code § 16.004(a) gives four years
+from accrual for "debt" and for "breach of fiduciary duty," which is the real answer to a licensee who
+asks how long an old file can come back. The authority ends on a date; the obligations of the
+relationship keep running long after it.
