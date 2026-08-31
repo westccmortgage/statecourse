@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 
 import { FORM, TOPICS, ALL_UNITS } from "../config/texas/law-of-contracts-course-form.mjs";
 import { RATES, BUDGET, TOTALS } from "../config/texas/law-of-contracts-time-budget.mjs";
+import { FORM_READS, READ_METHOD, validateFormReads } from "../config/texas/law-of-contracts-form-read-register.mjs";
 import { FORMS as CURRENT_TREC_FORMS } from "../config/texas/pcf-current-forms-inventory.mjs";
 import { RULES, ASSESSMENT_REQUIREMENTS, SUBMISSION_READINESS } from "../config/texas/trec-rules-source-lock.mjs";
 
@@ -43,6 +44,34 @@ test("all current TREC contract-form PDFs are held and hash to the acquisition c
     assert.equal(bytes.subarray(0, 5).toString("ascii"), "%PDF-");
     assert.equal(bytes.length, form.bytes);
     assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), form.sha256);
+  }
+});
+
+test("eight priority forms have page-level reads rather than holdings-only claims", () => {
+  const validation = validateFormReads();
+  assert.deepEqual(validation, {
+    status: "PASS",
+    readForms: 8,
+    verifiedFiles: 8,
+    pagesRead: 25,
+    heldFormsNotYetRead: 34,
+    problems: [],
+  });
+  assert.match(READ_METHOD.textLayer, /Complete text extracted page by page/);
+  assert.match(READ_METHOD.visual, /Every page rendered/);
+  assert.match(READ_METHOD.authorityLimit, /may not replace governing statutes/);
+});
+
+test("the form-read register covers each page in order and does not claim curriculum reliance", () => {
+  const unitCodes = new Set(ALL_UNITS.map((unit) => unit.code));
+  assert.deepEqual(FORM_READS.map((record) => record.formId), ["20-19", "39-11", "40-11", "26-8", "41-3", "45-2", "55-1", "38-8"]);
+  for (const record of FORM_READS) {
+    assert.equal(record.status, "FORM_TEXT_READ");
+    assert.deepEqual(record.pagesRead.map((entry) => entry.number), Array.from({ length: record.pageCount }, (_, index) => index + 1));
+    assert.ok(record.authoringScope.length > 80);
+    assert.ok(record.candidateUnits.length > 0);
+    assert.ok(record.candidateUnits.every((unit) => unitCodes.has(unit)));
+    assert.equal(Object.hasOwn(record, "reliedOnByUnits"), false, `${record.formId} must not claim reliance before curriculum exists`);
   }
 });
 
