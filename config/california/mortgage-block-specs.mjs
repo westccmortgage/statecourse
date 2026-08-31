@@ -34,7 +34,7 @@ export const MORTGAGE_BLOCK_SPECS = {
       "a2-b3-s1": {
         videos: [
           {
-            src: "/media/promissory-note-overview.mp4",
+            src: "https://statecourse.com/media/promissory-note-overview.mp4",
             poster: "/media/promissory-note-overview-poster.webp",
             captions: "/media/promissory-note-overview.vtt",
             label: "Video: The Promissory Note (document overview)",
@@ -189,7 +189,7 @@ export const MORTGAGE_BLOCK_SPECS = {
       "a9-b1-s2": {
         videos: [
           {
-            src: "/media/document-overview-loan-estimate-page-1.mp4",
+            src: "https://statecourse.com/media/document-overview-loan-estimate-page-1.mp4",
             poster: "/media/document-overview-loan-estimate-page-1-poster.webp",
             captions: "/media/document-overview-loan-estimate-page-1.vtt",
             label: "Video: Loan Estimate — Page 1 (document overview)",

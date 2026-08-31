@@ -62,6 +62,10 @@ const courses = Object.fromEntries([
     versions:{ regulatory:"va-salesperson-regulatory-draft-v1", refund:"va-salesperson-refund-pending-review-v1", cancellation:"va-salesperson-cancellation-pending-review-v1" },
   }),
   configuredCourse({
+    id:"mi-salesperson-prelicensure-40-v1", state:"MI", name:"Michigan Principles of Real Estate — 40 Hours", env:"MI_SALESPERSON_40",
+    versions:{ regulatory:"mi-salesperson-regulatory-draft-v1", refund:"mi-salesperson-refund-pending-review-v1", cancellation:"mi-salesperson-cancellation-pending-review-v1" },
+  }),
+  configuredCourse({
     id:"wi-salesperson", state:"WI", name:"Wisconsin Salesperson Pre-License — 72 Hours", env:"WI_SALESPERSON",
     versions:{ regulatory:"wi-salesperson-regulatory-draft-v1", refund:"wi-salesperson-refund-pending-review-v1", cancellation:"wi-salesperson-cancellation-pending-review-v1" },
   }),
@@ -213,4 +217,3 @@ export function evaluateCheckoutEligibility(course, mode) {
   }
   return { allowed: true, qaOnly: true };
 }
-
