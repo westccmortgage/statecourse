@@ -351,7 +351,7 @@ export const RULES = Object.freeze([
         subsection: "535.64(a)",
         identifierBasis: NEST,
         text: "Law of Contracts (LOC-0), Promulgated Contract Forms (PCF-0) and Real Estate Finance (REF-0) are likewise adopted by reference, as is Real Estate Brokerage (REB-1) for a broker's licence.",
-        reliedOnBy: ["config/texas/regulatory-manifest.mjs PROGRAMS"],
+        reliedOnBy: ["config/texas/regulatory-manifest.mjs PROGRAMS", "config/texas/law-of-contracts-course-form.mjs"],
       },
       {
         id: "535-64-forms-available-from-commission",
