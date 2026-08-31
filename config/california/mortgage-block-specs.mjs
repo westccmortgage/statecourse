@@ -196,14 +196,14 @@ export const MORTGAGE_BLOCK_SPECS = {
             duration: "1:59",
           },
           {
-            src: "/media/document-overview-loan-estimate-page-2.mp4",
+            src: "https://statecourse.com/media/document-overview-loan-estimate-page-2.mp4",
             poster: "/media/document-overview-loan-estimate-page-2-poster.webp",
             captions: "/media/document-overview-loan-estimate-page-2.vtt",
             label: "Video: Loan Estimate — Page 2 (closing cost details)",
             duration: "2:49",
           },
           {
-            src: "/media/document-overview-loan-estimate-page-3.mp4",
+            src: "https://statecourse.com/media/document-overview-loan-estimate-page-3.mp4",
             poster: "/media/document-overview-loan-estimate-page-3-poster.webp",
             captions: "/media/document-overview-loan-estimate-page-3.vtt",
             label: "Video: Loan Estimate — Page 3 (comparisons and signature)",

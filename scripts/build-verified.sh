@@ -41,7 +41,11 @@ rm -f \
   "${SITES_PROJECT_ROOT}/dist/media/document-overview-loan-estimate-page-1.mp4" \
   "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/document-overview-loan-estimate-page-1.mp4" \
   "${SITES_PROJECT_ROOT}/dist/media/promissory-note-overview.mp4" \
-  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/promissory-note-overview.mp4"
+  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/promissory-note-overview.mp4" \
+  "${SITES_PROJECT_ROOT}/dist/media/document-overview-loan-estimate-page-2.mp4" \
+  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/document-overview-loan-estimate-page-2.mp4" \
+  "${SITES_PROJECT_ROOT}/dist/media/document-overview-loan-estimate-page-3.mp4" \
+  "${SITES_PROJECT_ROOT}/dist/client/statecourse/media/document-overview-loan-estimate-page-3.mp4"
 
 oversize_file="$(find "${SITES_PROJECT_ROOT}/dist" -type f -size +25M -print -quit)"
 if [[ -n "${oversize_file}" ]]; then
