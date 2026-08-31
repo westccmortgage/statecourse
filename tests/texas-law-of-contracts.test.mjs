@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 
 import { FORM, TOPICS, ALL_UNITS } from "../config/texas/law-of-contracts-course-form.mjs";
 import { RATES, BUDGET, TOTALS } from "../config/texas/law-of-contracts-time-budget.mjs";
+import { FORMS as CURRENT_TREC_FORMS } from "../config/texas/pcf-current-forms-inventory.mjs";
 import { RULES, ASSESSMENT_REQUIREMENTS, SUBMISSION_READINESS } from "../config/texas/trec-rules-source-lock.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -21,6 +22,28 @@ test("LOC-0 source identity is pinned to the official PDF that was visually read
   assert.equal(FORM.revision, "06/20/2016");
   assert.equal(FORM.issuer, "Texas Real Estate Commission");
   assert.equal(FORM.pages, 3);
+});
+
+test("all current TREC contract-form PDFs are held and hash to the acquisition catalog", () => {
+  const catalogPath = path.join(root, "texas/tx-law-of-contracts-30-v1/sources/forms/catalog.json");
+  const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
+  assert.equal(catalog.formCount, CURRENT_TREC_FORMS.length);
+  assert.equal(catalog.forms.length, CURRENT_TREC_FORMS.length);
+  assert.deepEqual(catalog.forms.map((form) => form.formId), CURRENT_TREC_FORMS.map((form) => form.formId));
+  assert.match(catalog.status, /Holding a PDF is not reading it/);
+  assert.equal(catalog.totalBytes, catalog.forms.reduce((sum, form) => sum + form.bytes, 0));
+
+  for (const [index, form] of catalog.forms.entries()) {
+    const inventory = CURRENT_TREC_FORMS[index];
+    assert.equal(form.name, inventory.name);
+    assert.equal(form.effectiveDate, inventory.effectiveDate);
+    assert.match(form.formPageUrl, /^https:\/\/www\.trec\.texas\.gov\/forms\//);
+    assert.match(form.pdfUrl, /^https:\/\/www\.trec\.texas\.gov\/sites\/default\/files\/pdf-forms\//);
+    const bytes = fs.readFileSync(path.join(root, form.localCopy));
+    assert.equal(bytes.subarray(0, 5).toString("ascii"), "%PDF-");
+    assert.equal(bytes.length, form.bytes);
+    assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), form.sha256);
+  }
 });
 
 test("LOC-0 transcription reconciles every printed subtotal to 1,500 minutes", () => {
