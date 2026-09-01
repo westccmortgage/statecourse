@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 import { FORM, TOPICS, ALL_UNITS } from "../config/texas/law-of-contracts-course-form.mjs";
 import { RATES, BUDGET, TOTALS } from "../config/texas/law-of-contracts-time-budget.mjs";
 import { FORM_READS, READ_METHOD, validateFormReads } from "../config/texas/law-of-contracts-form-read-register.mjs";
+import { READ_SCOPE, STATUTE_READS, validateStatuteReads } from "../config/texas/law-of-contracts-statute-read-register.mjs";
 import { FORMS as CURRENT_TREC_FORMS } from "../config/texas/pcf-current-forms-inventory.mjs";
 import { RULES, ASSESSMENT_REQUIREMENTS, SUBMISSION_READINESS } from "../config/texas/trec-rules-source-lock.mjs";
 
@@ -58,12 +59,41 @@ test("nine missing Texas chapters are now held course-locally without mutating t
   for (const source of catalog.sources) {
     assert.equal(source.publisher, "Texas Legislative Council");
     assert.equal(source.sourceLayer, "tcss.legis.texas.gov static resources");
-    assert.equal(source.heldStatus, "HELD_NOT_YET_LOC_READ");
+    assert.equal(source.heldStatus, "HELD");
     assert.match(source.url, /^https:\/\/tcss\.legis\.texas\.gov\/resources\/[A-Z]+\/htm\/[A-Z]+\.\d+\.htm$/);
     const bytes = fs.readFileSync(path.join(root, source.localCopy));
     assert.match(bytes.subarray(0, 80).toString("utf8"), /<html\b/i);
     assert.equal(bytes.length, source.bytes);
     assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), source.sha256);
+  }
+});
+
+test("all nine course-local chapters now have verified section-level reads", () => {
+  assert.deepEqual(validateStatuteReads(), {
+    status: "PASS",
+    heldSources: 9,
+    readSources: 9,
+    verifiedFiles: 9,
+    sectionsRead: 45,
+    candidateUnits: 21,
+    problems: [],
+  });
+  assert.match(READ_SCOPE.method, /complete official HTML text/i);
+  assert.match(READ_SCOPE.authorityLimit, /only the proposition in its note/i);
+  assert.match(READ_SCOPE.authoringStatus, /No Law of Contracts curriculum/i);
+});
+
+test("statute reads identify candidate units but make no premature curriculum-reliance claim", () => {
+  const unitCodes = new Set(ALL_UNITS.map((unit) => unit.code));
+  assert.deepEqual(STATUTE_READS.map((source) => source.id), ["bc-3", "bc-322", "pr-24", "pr-81", "pr-82", "pr-221", "oc-1102", "fi-156", "fi-157"]);
+  for (const source of STATUTE_READS) {
+    assert.equal(source.status, "SECTION_TEXT_READ");
+    assert.equal(Object.hasOwn(source, "reliedOnByUnits"), false, `${source.id} must not claim reliance before curriculum exists`);
+    assert.ok(source.sectionsRead.length > 0);
+    for (const section of source.sectionsRead) {
+      assert.ok(section.note.length >= 80);
+      assert.ok(section.candidateUnits.every((unit) => unitCodes.has(unit)));
+    }
   }
 });
 

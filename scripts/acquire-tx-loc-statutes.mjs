@@ -65,7 +65,7 @@ async function fetchChapter(chapter) {
     localCopy: `texas/tx-law-of-contracts-30-v1/sources/statutes/${filename}`,
     sha256: sha256(bytes),
     bytes: bytes.length,
-    heldStatus: "HELD_NOT_YET_LOC_READ",
+    heldStatus: "HELD",
     responseTitle: title,
     content: bytes,
   });

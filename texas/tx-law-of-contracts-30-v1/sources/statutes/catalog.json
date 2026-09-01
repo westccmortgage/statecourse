@@ -17,7 +17,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/BC.3.htm",
       "sha256": "60da925ae7c36516abba2e53d81490d05621866b0afa8b698c3a0382f01ab33e",
       "bytes": 177182,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "BUSINESS AND COMMERCE CODE CHAPTER 3. NEGOTIABLE INSTRUMENTS"
     },
     {
@@ -32,7 +32,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/BC.322.htm",
       "sha256": "2706aeaeb3ffdd72f2a61249ddd68e2eb77c8f323b8fbe217f4d3bc990381e3e",
       "bytes": 41039,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "BUSINESS AND COMMERCE CODE CHAPTER 322. UNIFORM ELECTRONIC TRANSACTIONS ACT"
     },
     {
@@ -47,7 +47,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/PR.24.htm",
       "sha256": "ea334f441d758ba68079b8fe1aa6641e87a9cd1dca2e6d8c1a86d0bffd346c8c",
       "bytes": 77880,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "PROPERTY CODE CHAPTER 24. FORCIBLE ENTRY AND DETAINER"
     },
     {
@@ -62,7 +62,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/PR.81.htm",
       "sha256": "503814dce15e6f917d813e4c5b5bb56974d6903c7a818651abfa4fd33401ef2c",
       "bytes": 32847,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "PROPERTY CODE CHAPTER 81. CONDOMINIUMS CREATED BEFORE ADOPTION OF UNIFORM CONDOMINIUM ACT"
     },
     {
@@ -77,7 +77,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/PR.82.htm",
       "sha256": "f35f2259a667bf2e05120868ab66a56e9f6c5797f7aea7eb98964a438751ebe8",
       "bytes": 192937,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "PROPERTY CODE CHAPTER 82. UNIFORM CONDOMINIUM ACT"
     },
     {
@@ -92,7 +92,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/PR.221.htm",
       "sha256": "93042dd57caed9295d90a654fd7c0aafa0584d024c7e3cb24c2a98abb716781d",
       "bytes": 181226,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "PROPERTY CODE CHAPTER 221. TEXAS TIMESHARE ACT"
     },
     {
@@ -107,7 +107,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/OC.1102.htm",
       "sha256": "c9445624ffe5415032b4ab06306b729bba2f7cdf3c49b6b76a5cc3f611cc5c2c",
       "bytes": 62480,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "OCCUPATIONS CODE CHAPTER 1102. REAL ESTATE INSPECTORS"
     },
     {
@@ -122,7 +122,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/FI.156.htm",
       "sha256": "f876be128019cd8034a9ae987466eca92a8f5f518b15e282b0a948e2adb090ec",
       "bytes": 162816,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "FINANCE CODE CHAPTER 156. RESIDENTIAL MORTGAGE LOAN COMPANIES"
     },
     {
@@ -137,7 +137,7 @@
       "localCopy": "texas/tx-law-of-contracts-30-v1/sources/statutes/FI.157.htm",
       "sha256": "b7db41f4e0e2e92c195de74ebb60a8454ac411bb2ed2df77f6c2baa2d4bc9661",
       "bytes": 115827,
-      "heldStatus": "HELD_NOT_YET_LOC_READ",
+      "heldStatus": "HELD",
       "responseTitle": "FINANCE CODE CHAPTER 157. MORTGAGE BANKERS AND RESIDENTIAL MORTGAGE LOAN ORIGINATORS"
     }
   ]
