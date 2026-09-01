@@ -1,0 +1,522 @@
+<!-- function myopen(url) { window.open(url,'windowName'); } //-->
+<!-- function MM_reloadPage(init) { //reloads the window if Nav4 resized if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) { document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }} else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload(); } MM_reloadPage(true); //-->
+Statutes & Constitution :View Statutes : Online Sunshine
+window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-21KKHEC1NN', { cookie_flags: 'max-age=7200;secure;samesite=none' });
+Skip to Menu
+|
+Skip to Main Content
+August 31, 2026
+Search Statutes:
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+Search Terms:
+Home
+Senate
+House
+Citator
+Statutes, Constitution,
+& Laws of Florida
+Florida Statutes
+Search & Browse Download
+Search Statutes
+Search Tips
+Florida Constitution
+Laws of Florida
+Legislative & Executive Branch Lobbyists
+Information Center
+Joint Legislative Committees &
+Other Entities
+Joint Administrative Procedures Committee (JAPC)
+Joint Committee on Public Counsel Oversight(JCPO)
+Joint Legislative Auditing Committee (JLAC)
+Joint Legislative Budget Commission (JLBC)
+Joint Select Committee on Collective Bargaining (JSCB)
+Office of Program Policy Analysis & Government Accountability (OPPAGA)
+Auditor General
+Commission on Ethics
+Economic and Demographic Research (EDR)
+Florida Historic Capitol
+Florida Government Efficiency Task Force
+Legislative Employment
+Legistore
+Links
+Select Year:
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+The Florida Statutes
+<!-- .PartTOC { padding-left : 30px; } .ChapterTOC { padding-left : 30px; } -->
+The 2026 Florida Statutes
+Title XV
+HOMESTEAD AND EXEMPTIONS
+Chapter 222
+METHOD OF SETTING APART HOMESTEAD AND EXEMPTIONS
+View Entire Chapter
+CHAPTER 222
+TITLE XV
+HOMESTEAD AND EXEMPTIONS
+CHAPTER 222
+METHOD OF SETTING APART HOMESTEAD AND EXEMPTIONS
+222.01
+Designation of homestead by owner before levy.
+222.02
+Designation of homestead after levy.
+222.03
+Survey at instance of dissatisfied creditor.
+222.04
+Sale after survey.
+222.05
+Setting apart leasehold.
+222.061
+Method of exempting personal property; inventory.
+222.07
+Defendant’s rights of selection.
+222.08
+Jurisdiction to set apart homestead and exemption.
+222.09
+Injunction to prevent sale.
+222.10
+Jurisdiction to subject property claimed to be exempt.
+222.11
+Exemption of wages from garnishment.
+222.13
+Life insurance policies; disposition of proceeds.
+222.14
+Exemption of cash surrender value of life insurance policies and annuity contracts from legal process.
+222.15
+Wages or reemployment assistance or unemployment compensation payments due deceased employee may be paid spouse or certain relatives.
+222.16
+Wages or reemployment assistance or unemployment compensation payments so paid not subject to administration.
+222.17
+Manifesting and evidencing domicile in Florida.
+222.18
+Exempting disability income benefits from legal processes.
+222.20
+Nonavailability of federal bankruptcy exemptions.
+222.201
+Availability of federal bankruptcy exemptions.
+222.21
+Exemption of pension money and certain tax-exempt funds or accounts from legal processes.
+222.22
+Exemption of assets in qualified tuition programs, medical savings accounts, Coverdell education savings accounts, and hurricane savings accounts from legal process.
+222.25
+Other individual property of natural persons exempt from legal process.
+222.26
+Additional exemptions from legal process concerning medical debt.
+222.29
+No exemption for fraudulent transfers.
+222.30
+Fraudulent asset conversions.
+222.01
+Designation of homestead by owner before levy.
+—
+(1)
+Whenever any natural person residing in this state desires to avail himself or herself of the benefit of the provisions of the constitution and laws exempting property as a homestead from forced sale under any process of law, he or she may make a statement, in writing, containing a description of the real property, mobile home, or modular home claimed to be exempt and declaring that the real property, mobile home, or modular home is the homestead of the party in whose behalf such claim is being made. Such statement shall be signed by the person making it and shall be recorded in the circuit court.
+(2)
+When a certified copy of a judgment has been filed in the public records of a county pursuant to chapter 55, a person who is entitled to the benefit of the provisions of the State Constitution exempting real property as homestead and who has a contract to sell or a commitment from a lender for a mortgage on the homestead may file a notice of homestead in the public records of the county in which the homestead property is located in substantially the following form:
+NOTICE OF HOMESTEAD
+To:
+(Name and address of judgment creditor as shown on recorded judgment and name and address of any other person shown in the recorded judgment to receive a copy of the Notice of Homestead.)
+You are notified that the undersigned claims as homestead exempt from levy and execution under Section 4, Article X of the State Constitution, the following described property:
+(Legal description)
+The undersigned certifies, under oath, that he or she has applied for and received the homestead tax exemption as to the above-described property, that
+is the tax identification parcel number of this property, and that the undersigned has resided on this property continuously and uninterruptedly from
+(date)
+to the date of this Notice of Homestead. Further, the undersigned will either convey or mortgage the above-described property pursuant to the following:
+(Describe the contract of sale or loan commitment by date, names of parties, date of anticipated closing, and amount. The name, address, and telephone number of the person conducting the anticipated closing must be set forth.)
+The undersigned also certifies, under oath, that the judgment lien filed by you on
+(date)
+and recorded in Official Records Book
+, Page
+, of the Public Records of
+County, Florida, does not constitute a valid lien on the described property.
+YOU ARE FURTHER NOTIFIED, PURSUANT TO SECTION 222.01 ET SEQ., FLORIDA STATUTES, THAT WITHIN 45 DAYS AFTER THE MAILING OF THIS NOTICE YOU MUST FILE AN ACTION IN THE CIRCUIT COURT OF
+COUNTY, FLORIDA, FOR A DECLARATORY JUDGMENT TO DETERMINE THE CONSTITUTIONAL HOMESTEAD STATUS OF THE SUBJECT PROPERTY OR TO FORECLOSE YOUR JUDGMENT LIEN ON THE PROPERTY AND RECORD A LIS PENDENS IN THE PUBLIC RECORDS OF THE COUNTY WHERE THE HOMESTEAD IS LOCATED. YOUR FAILURE TO SO ACT WILL RESULT IN ANY BUYER OR LENDER, OR HIS OR HER SUCCESSORS AND ASSIGNS, UNDER THE ABOVE-DESCRIBED CONTRACT OF SALE OR LOAN COMMITMENT TO TAKE FREE AND CLEAR OF ANY JUDGMENT LIEN YOU MAY HAVE ON THE PROPERTY.
+This
+day of
+, 2
+.
+(Signature of Owner)
+(Printed Name of Owner)
+(Owner’s Address)
+Sworn to and subscribed before me by
+who is personally known to me or produced
+as identification, this
+day of
+, 2
+.
+Notary Public
+(3)
+The clerk shall mail a copy of the notice of homestead to the judgment lienor, by certified mail, return receipt requested, at the address shown in the most recent recorded judgment or accompanying affidavit, and to any other person designated in the most recent recorded judgment or accompanying affidavit to receive the notice of homestead, and shall certify to such service on the face of such notice and record the notice. Notwithstanding the use of certified mail, return receipt requested, service shall be deemed complete upon mailing.
+(4)
+A lien pursuant to chapter 55 of any lienor upon whom such notice is served, who fails to institute an action for a declaratory judgment to determine the constitutional homestead status of the property described in the notice of homestead or to file an action to foreclose the judgment lien, together with the filing of a lis pendens in the public records of the county in which the homestead is located, within 45 days after service of such notice shall be deemed as not attaching to the property by virtue of its status as homestead property as to the interest of any buyer or lender, or his or her successors or assigns, who takes under the contract of sale or loan commitment described above within 180 days after the filing in the public records of the notice of homestead. This subsection shall not act to prohibit a lien from attaching to the real property described in the notice of homestead at such time as the property loses its homestead status.
+(5)
+As provided in s. 4, Art. X of the State Constitution, this subsection shall not apply to:
+(a)
+Liens and judgments for the payment of taxes and assessments on real property.
+(b)
+Liens and judgments for obligations contracted for the purchase of real property.
+(c)
+Liens and judgments for labor, services, or materials furnished to repair or improve real property.
+(d)
+Liens and judgments for other obligations contracted for house, field, or other labor performed on real property.
+History.
+—
+s. 1, ch. 1715, 1869; RS 1998; GS 2520; RGS 3875; CGL 5782; s. 20, ch. 73-334; s. 2, ch. 77-299; s. 1, ch. 83-40; s. 1195, ch. 95-147; s. 25, ch. 2000-258; s. 17, ch. 2005-241.
+222.02
+Designation of homestead after levy.
+—
+Whenever a levy is made upon the lands, tenements, mobile home, or modular home of such person whose homestead has not been set apart and selected, such person, or the person’s agent or attorney, may in writing notify the officer making such levy, by notice under oath made before any officer of this state duly authorized to administer oaths, at any time before the day appointed for the sale thereof, of what such person regards as his or her homestead, with a description thereof; and the remainder only shall be subject to sale under such levy.
+History.
+—
+s. 2, ch. 1715, 1869; RS 1999; GS 2521; RGS 3876; CGL 5783; s. 3, ch. 77-299; s. 2, ch. 83-40; s. 1196, ch. 95-147.
+222.03
+Survey at instance of dissatisfied creditor.
+—
+If the creditor in any execution or process sought to be levied is dissatisfied with the quantity of land selected and set apart, and shall himself or herself, or by his or her agent or attorney, notify the officer levying, the officer shall at the creditor’s request cause the same to be surveyed, and when the homestead is not within the corporate limits of any town or city, the person claiming said exemption shall have the right to set apart that portion of land belonging to him or her which includes the residence, or not, at the person’s option, and if the first tract or parcel does not contain 160 acres, the said officer shall set apart the remainder from any other tract or tracts claimed by the debtor, but in every case taking all the land lying contiguous until the whole quantity of 160 acres is made up. The person claiming the exemption shall not be forced to take as his or her homestead any tract or portion of a tract, if any defect exists in the title, except at the person’s option. The expense of such survey shall be chargeable on the execution as costs; but if it shall appear that the person claiming such exemption does not own more than 160 acres in the state, the expenses of said survey shall be paid by the person directing the same to be made.
+History.
+—
+s. 3, ch. 1715, 1869; s. 1, ch. 1944, 1873; RS 2000; GS 2522; RGS 3877; CGL 5784; s. 1197, ch. 95-147.
+222.04
+Sale after survey.
+—
+After such survey has been made, the officer making the levy may sell the property levied upon not included in such property set off in such manner.
+History.
+—
+s. 4, ch. 1715, 1869; RS 2001; GS 2523; RGS 3878; CGL 5785.
+222.05
+Setting apart leasehold.
+—
+Any person owning and occupying any dwelling house, including a mobile home used as a residence, or modular home, on land not his or her own which he or she may lawfully possess, by lease or otherwise, and claiming such house, mobile home, or modular home as his or her homestead, shall be entitled to the exemption of such house, mobile home, or modular home from levy and sale as aforesaid.
+History.
+—
+s. 5, ch. 1715, 1869; RS 2002; GS 2524; RGS 3879; CGL 5786; s. 1, ch. 77-299; s. 1198, ch. 95-147.
+222.061
+Method of exempting personal property; inventory.
+—
+(1)
+When a levy is made by writ of execution, writ of attachment, or writ of garnishment upon personal property which is allowed by law or by the State Constitution to be exempt from levy and sale, the debtor may claim such personal property to be exempt from sale by making, within 15 days after the date of the levy, an inventory of his or her personal property. The inventory shall show the fair market valuation of the property listed and shall have an affidavit attached certifying that the inventory contains a correct list of all personal property owned by the debtor in this state and that the value shown is the fair market value of the property. The debtor shall designate the property listed in the schedule which he or she claims to be exempt from levy and sale.
+(2)
+The original inventory and affidavit shall be filed with the court which issued the writ. The debtor, by mail or hand delivery, shall promptly serve one copy on the judgment creditor and furnish one copy to the sheriff who executed the writ. If the creditor desires to object to the inventory, he or she shall file an objection with the court which issued the writ within 5 days after service of the inventory, or he or she shall be deemed to admit the inventory as true. If the creditor does not file an objection, the clerk of the court shall immediately send the case file to the court issuing the writ, and the court shall promptly issue an order exempting the items claimed. Such order shall be sent by the court to the sheriff directing him or her to promptly redeliver to the debtor any exempt property under the levy and to sell any nonexempt property under the levy according to law.
+(3)
+If the creditor files an objection, he or she shall promptly serve, by mail or hand delivery, one copy on the debtor and furnish one copy to the sheriff who executed the writ. Upon the filing of an objection, the clerk shall immediately send the case file to the court issuing the writ, and the court shall automatically schedule a prompt evidentiary hearing to determine the validity of the objection and shall enter its order therein describing the exempt and nonexempt property. Upon its issuance, the order shall be sent by the court to the sheriff directing him or her to promptly redeliver to the debtor any exempt property under the levy and to sell the nonexempt property under the levy according to law.
+(4)
+The court shall appoint a disinterested appraiser to assist in its evidentiary hearing unless the debtor and creditor mutually waive the appointment of such appraiser. The appraiser shall take and file an oath that he or she will faithfully appraise the property at its fair market value and that he or she will file a signed and sworn appraisal with the court as required by law. Notice of the time and place of the inspection of the property for the purpose of its appraisal shall be given by the appraiser to the debtor, creditor, and sheriff, at least 24 hours before the inspection is made. The appraiser shall be entitled to a reasonable fee as determined by the court for his or her services. The appraiser’s fee shall be taxed as costs, but no costs shall be assessed against the debtor for the proceedings under this section if the debtor prevails on his or her claim of exemption. The court may require the creditor to deposit a cash bond, a surety bond, or other security, conditioned on the creditor’s obligation to pay reasonable appraisal expenses, not to exceed $100.
+(5)
+During the pendency of proceedings under this section, the sheriff shall safeguard the property seized under the writ, and the creditor shall deposit sufficient moneys with the sheriff to pay the cost of such safeguarding until the property is sold or redelivered to the debtor. When the sheriff receives a copy of a court order identifying which property has been declared exempt and which property has been declared not exempt and ordering the sale of the property not exempt from levy, he or she shall sell the property.
+(6)
+The party who successfully maintains his or her claim at the time of the evidentiary hearing may be entitled to reasonable attorney’s fees and shall be entitled to costs. The costs shall include, but not be limited to, appraisal fees, storage fees, and such other costs incurred as a result of the levy.
+(7)
+No inventory or schedule to exempt personal property from sale shall be accepted prior to a levy on the property.
+History.
+—
+s. 5, ch. 85-272; s. 61, ch. 87-224; s. 1199, ch. 95-147.
+222.07
+Defendant’s rights of selection.
+—
+Upon the completion of the inventory the person entitled to the exemption, or the person’s agent or attorney, may select from such an inventory an amount of property not exceeding, according to such appraisal, the amount of value exempted; but if the person so entitled, or the person’s agent or attorney, does not appear and make such selection, the officer shall make the selection for him or her, and the property not so selected as exempt may be sold.
+History.
+—
+s. 8, ch. 1715, 1869; RS 2004; GS 2526; RGS 3881; CGL 5788; s. 1200, ch. 95-147.
+222.08
+Jurisdiction to set apart homestead and exemption.
+—
+The circuit courts have equity jurisdiction to order and decree the setting apart of homesteads and of exemptions of personal property from forced sales.
+History.
+—
+s. 2, ch. 3246, 1881; RS 2005; GS 2527; RGS 3882; CGL 5789.
+222.09
+Injunction to prevent sale.
+—
+The circuit courts have equity jurisdiction to enjoin the sale of all property, real and personal, that is exempt from forced sale.
+History.
+—
+s. 1, ch. 3246, 1881; RS 2006; GS 2528; RGS 3883; CGL 5790.
+222.10
+Jurisdiction to subject property claimed to be exempt.
+—
+The circuit courts have equity jurisdiction upon bill filed by a creditor or other person interested in enforcing any unsatisfied judgment or decree, to determine whether any property, real or personal, claimed to be exempt, is so exempt, and in case it be not exempt, the court shall, by its decree subject it, or so much thereof as may be necessary, to the satisfaction of said judgment or decree and may enjoin the sheriff or other officer from setting apart as exempt property, real or personal, which is not exempt, and may annul all exemptions made and set apart by the sheriff or other officer.
+History.
+—
+s. 3, ch. 3246, 1881; RS 2007; GS 2529; RGS 3884; CGL 5791.
+222.11
+Exemption of wages from garnishment.
+—
+(1)
+As used in this section, the term:
+(a)
+“Earnings” includes compensation paid or payable, in money of a sum certain, for personal services or labor whether denominated as wages, salary, commission, or bonus.
+(b)
+“Disposable earnings” means that part of the earnings of any head of family remaining after the deduction from those earnings of any amounts required by law to be withheld.
+(c)
+“Head of family” includes any natural person who is providing more than one-half of the support for a child or other dependent.
+(2)(a)
+All of the disposable earnings of a head of family whose disposable earnings are less than or equal to $750 a week are exempt from attachment or garnishment.
+(b)
+Disposable earnings of a head of a family, which are greater than $750 a week, may not be attached or garnished unless such person has agreed otherwise in writing. The agreement to waive the protection provided by this paragraph must:
+1.
+Be written in the same language as the contract or agreement to which the waiver relates;
+2.
+Be contained in a separate document attached to the contract or agreement; and
+3.
+Be in substantially the following form in at least 14-point type:
+IF YOU PROVIDE MORE THAN ONE-HALF OF THE SUPPORT FOR A CHILD OR OTHER DEPENDENT, ALL OR PART OF YOUR INCOME IS EXEMPT FROM GARNISHMENT UNDER FLORIDA LAW. YOU CAN WAIVE THIS PROTECTION ONLY BY SIGNING THIS DOCUMENT. BY SIGNING BELOW, YOU AGREE TO WAIVE THE PROTECTION FROM GARNISHMENT.
+(Consumer’s Signature)
+(Date Signed)
+I have fully explained this document to the consumer.
+(Creditor’s Signature)
+(Date Signed)
+The amount attached or garnished may not exceed the amount allowed under the Consumer Credit Protection Act, 15 U.S.C. s. 1673.
+(c)
+Disposable earnings of a person other than a head of family may not be attached or garnished in excess of the amount allowed under the Consumer Credit Protection Act, 15 U.S.C. s. 1673.
+(3)
+Earnings that are exempt under subsection (2) and are credited or deposited in any financial institution are exempt from attachment or garnishment for 6 months after the earnings are received by the financial institution if the funds can be traced and properly identified as earnings. Commingling of earnings with other funds does not by itself defeat the ability of a head of family to trace earnings.
+History.
+—
+s. 1, ch. 2065, 1875; RS 2008; GS 2530; RGS 3885; CGL 5792; s. 1, ch. 81-301; s. 6, ch. 85-272; s. 2, ch. 93-256; s. 1, ch. 2010-97.
+222.13
+Life insurance policies; disposition of proceeds.
+—
+(1)
+Whenever any person residing in the state shall die leaving insurance on his or her life, the said insurance shall inure exclusively to the benefit of the person for whose use and benefit such insurance is designated in the policy, and the proceeds thereof shall be exempt from the claims of creditors of the insured unless the insurance policy or a valid assignment thereof provides otherwise. Notwithstanding the foregoing, whenever the insurance, by designation or otherwise, is payable to the insured or to the insured’s estate or to his or her executors, administrators, or assigns, the insurance proceeds shall become a part of the insured’s estate for all purposes and shall be administered by the personal representative of the estate of the insured in accordance with the probate laws of the state in like manner as other assets of the insured’s estate.
+(2)
+Payments as herein directed shall, in every such case, discharge the insurer from any further liability under the policy, and the insurer shall in no event be responsible for, or be required to see to, the application of such payments.
+History.
+—
+s. 1, ch. 1864, 1872; RS 2347; s. 1, ch. 4555, 1897; s. 1, ch. 5165, 1903; GS 3154; RGS 4977; CGL 7065; s. 1, ch. 29861, 1955; s. 1, ch. 59-333; s. 1, ch. 63-230; s. 1, ch. 70-376; s. 51, ch. 71-355; s. 1202, ch. 95-147.
+222.14
+Exemption of cash surrender value of life insurance policies and annuity contracts from legal process.
+—
+The cash surrender values of life insurance policies issued upon the lives of citizens or residents of the state and the proceeds of annuity contracts issued to citizens or residents of the state, upon whatever form, shall not in any case be liable to attachment, garnishment or legal process in favor of any creditor of the person whose life is so insured or of any creditor of the person who is the beneficiary of such annuity contract, unless the insurance policy or annuity contract was effected for the benefit of such creditor.
+History.
+—
+s. 1, ch. 10154, 1925; CGL 7066; s. 1, ch. 78-76.
+222.15
+Wages or reemployment assistance or unemployment compensation payments due deceased employee may be paid spouse or certain relatives.
+—
+(1)
+It is lawful for any employer, in case of the death of an employee, to pay to the wife or husband, and in case there is no wife or husband, then to the child or children, provided the child or children are over the age of 18 years, and in case there is no child or children, then to the father or mother, any wages or travel expenses that may be due such employee at the time of his or her death.
+(2)
+It is also lawful for the Department of Commerce, in case of death of any unemployed individual, to pay to those persons referred to in subsection (1) any reemployment assistance or unemployment compensation payments that may be due to the individual at the time of his or her death.
+History.
+—
+s. 1, ch. 7366, 1917; RGS 4979; CGL 7068; s. 1, ch. 20407, 1941; s. 1, ch. 63-165; ss. 17, 35, ch. 69-106; s. 1, ch. 73-283; s. 10, ch. 79-7; s. 5, ch. 83-174; s. 1203, ch. 95-147; s. 7, ch. 2003-36; s. 96, ch. 2011-142; s. 52, ch. 2012-30; s. 61, ch. 2024-6.
+222.16
+Wages or reemployment assistance or unemployment compensation payments so paid not subject to administration.
+—
+Any wages, travel expenses, or reemployment assistance or unemployment compensation payments so paid under the authority of s. 222.15 shall not be considered as assets of the estate and subject to administration; provided, however, that the travel expenses so exempted from administration shall not exceed the sum of $300.
+History.
+—
+s. 2, ch. 7366, 1917; RGS 4980; CGL 7069; s. 2, ch. 20407, 1941; s. 2, ch. 63-165; s. 53, ch. 2012-30.
+222.17
+Manifesting and evidencing domicile in Florida.
+—
+(1)
+Any person who shall have established a domicile in this state may manifest and evidence the same by filing in the office of the clerk of the circuit court for the county in which the said person shall reside, a sworn statement showing that he or she resides in and maintains a place of abode in that county which he or she recognizes and intends to maintain as his or her permanent home.
+(2)
+Any person who shall have established a domicile in the State of Florida, but who shall maintain another place or places of abode in some other state or states, may manifest and evidence his or her domicile in this state by filing in the office of the clerk of the circuit court for the county in which he or she resides, a sworn statement that his or her place of abode in Florida constitutes his or her predominant and principal home, and that he or she intends to continue it permanently as such.
+(3)
+Such sworn statement shall contain, in addition to the foregoing, a declaration that the person making the same is, at the time of making such statement, a bona fide resident of the state, and shall set forth therein his or her place of residence within the state, the city, county and state wherein he or she formerly resided, and the place or places, if any, where he or she maintains another or other place or places of abode.
+(4)
+Any person who shall have been or who shall be domiciled in a state other than the State of Florida, and who has or who may have a place of abode within the State of Florida, or who has or may do or perform other acts within the State of Florida, which independently of the actual intention of such person respecting his or her domicile might be taken to indicate that such person is or may intend to be or become domiciled in the State of Florida, and if such person desires to maintain or continue his or her domicile in such state other than the State of Florida, the person may manifest and evidence his or her permanent domicile and intention to permanently maintain and continue his or her domicile in such state other than the State of Florida, by filing in the office of the clerk of the circuit court in any county in the State of Florida in which the person may have a place of abode or in which the person may have done or performed such acts which independently may indicate that he or she is or may intend to be or become domiciled in the State of Florida, a sworn statement that the person’s domicile is in such state other than the State of Florida, as the case may be, naming such state where he or she is domiciled and stating that he or she intends to permanently continue and maintain his or her domicile in such other state so named in said sworn statement. Such sworn statement shall also contain a declaration that the person making the same is at the time of the making of such statement a bona fide resident of such state other than the State of Florida, and shall set forth therein his or her place of abode within the State of Florida, if any. Such sworn statement may contain such other and further facts with reference to any acts done or performed by such person which such person desires or intends not to be construed as evidencing any intention to establish his or her domicile within the State of Florida.
+(5)
+The sworn statement permitted by this section shall be signed under oath before an official authorized to take affidavits. Upon the filing of such declaration with the clerk of the circuit court, it shall be the duty of the clerk in whose office such declaration is filed to record the same in a book to be provided for that purpose. For the performance of the duties herein prescribed, the clerk of the circuit court shall collect a service charge for each declaration as provided in s. 28.24.
+(6)
+It shall be the duty of the Department of Legal Affairs to prescribe a form for the declaration herein provided for, and to furnish the same to the several clerks of the circuit courts of the state.
+(7)
+Nothing herein shall be construed to repeal or abrogate other existing methods of proving and evidencing domicile except as herein specifically provided.
+History.
+—
+ss. 1, 2, 3, 4, 5, 6, ch. 20412, 1941; s. 1, ch. 26896, 1951; ss. 11, 35, ch. 69-106; s. 15, ch. 70-134; s. 1204, ch. 95-147.
+222.18
+Exempting disability income benefits from legal processes.
+—
+Disability income benefits under any policy or contract of life, health, accident, or other insurance of whatever form, shall not in any case be liable to attachment, garnishment, or legal process in the state, in favor of any creditor or creditors of the recipient of such disability income benefits, unless such policy or contract of insurance was effected for the benefit of such creditor or creditors.
+History.
+—
+s. 1, ch. 20741, 1941.
+222.20
+Nonavailability of federal bankruptcy exemptions.
+—
+In accordance with the provision of s. 522(b) of the Bankruptcy Code of 1978 (11 U.S.C. s. 522(b)), residents of this state shall not be entitled to the federal exemptions provided in s. 522(d) of the Bankruptcy Code of 1978 (11 U.S.C. s. 522(d)). Nothing herein shall affect the exemptions given to residents of this state by the State Constitution and the Florida Statutes.
+History.
+—
+s. 1, ch. 79-363.
+222.201
+Availability of federal bankruptcy exemptions.
+—
+(1)
+Notwithstanding s. 222.20, an individual debtor under the federal Bankruptcy Reform Act of 1978 may exempt, in addition to any other exemptions allowed under state law, any property listed in subsection (d)(10) of s. 522 of that act.
+(2)
+The provisions of this section apply to any bankruptcy action that is filed on or after October 1, 1987.
+History.
+—
+s. 2, ch. 87-375.
+222.21
+Exemption of pension money and certain tax-exempt funds or accounts from legal processes.
+—
+(1)
+Money received by any debtor as pensioner of the United States within 3 months next preceding the issuing of an execution, attachment, or garnishment process may not be applied to the payment of the debts of the pensioner when it is made to appear by the affidavit of the debtor or otherwise that the pension money is necessary for the maintenance of the debtor’s support or a family supported wholly or in part by the pension money. The filing of the affidavit by the debtor, or the making of such proof by the debtor, is prima facie evidence; and it is the duty of the court in which the proceeding is pending to release all pension moneys held by such attachment or garnishment process, immediately, upon the filing of such affidavit or the making of such proof.
+(2)(a)
+Except as provided in paragraph (d), any money or other assets payable to an owner, a participant, or a beneficiary from, or any interest of any owner, participant, or beneficiary in, a fund or account is exempt from all claims of creditors of the owner, beneficiary, or participant if the fund or account is:
+1.
+Maintained in accordance with a master plan, volume submitter plan, prototype plan, or any other plan or governing instrument that has been preapproved by the Internal Revenue Service as exempt from taxation under s. 401(a), s. 403(a), s. 403(b), s. 408, s. 408A, s. 409, s. 414, s. 457(b), or s. 501(a) of the Internal Revenue Code of 1986, as amended, unless it has been subsequently determined that the plan or governing instrument is not exempt from taxation in a proceeding that has become final and nonappealable;
+2.
+Maintained in accordance with a plan or governing instrument that has been determined by the Internal Revenue Service to be exempt from taxation under s. 401(a), s. 403(a), s. 403(b), s. 408, s. 408A, s. 409, s. 414, s. 457(b), or s. 501(a) of the Internal Revenue Code of 1986, as amended, unless it has been subsequently determined that the plan or governing instrument is not exempt from taxation in a proceeding that has become final and nonappealable; or
+3.
+Not maintained in accordance with a plan or governing instrument described in subparagraph 1. or subparagraph 2. if the person claiming exemption under this paragraph proves by a preponderance of the evidence that the fund or account is maintained in accordance with a plan or governing instrument that:
+a.
+Is in substantial compliance with the applicable requirements for tax exemption under s. 401(a), s. 403(a), s. 403(b), s. 408, s. 408A, s. 409, s. 414, s. 457(b), or s. 501(a) of the Internal Revenue Code of 1986, as amended; or
+b.
+Would have been in substantial compliance with the applicable requirements for tax exemption under s. 401(a), s. 403(a), s. 403(b), s. 408, s. 408A, s. 409, s. 414, s. 457(b), or s. 501(a) of the Internal Revenue Code of 1986, as amended, but for the negligent or wrongful conduct of a person or persons other than the person who is claiming the exemption under this section.
+(b)
+It is not necessary that a fund or account that is described in paragraph (a) be maintained in accordance with a plan or governing instrument that is covered by any part of the Employee Retirement Income Security Act for money or assets payable from or any interest in that fund or account to be exempt from claims of creditors under that paragraph.
+(c)
+Any money or other assets or any interest in any fund or account that is exempt from claims of creditors of the owner, beneficiary, or participant under paragraph (a) does not cease to be exempt after the owner’s death by reason of a direct transfer or eligible rollover that is excluded from gross income under the Internal Revenue Code of 1986, including, but not limited to, a direct transfer or eligible rollover to an inherited individual retirement account as defined in s. 408(d)(3) of the Internal Revenue Code of 1986, as amended. An interest in any fund or account awarded or received in a transfer incident to divorce described in s. 408(d)(6) of the Internal Revenue Code of 1986, as amended, is exempt upon the interest being awarded or received and continues to be exempt thereafter. This paragraph is intended to clarify existing law, is remedial in nature, and shall have retroactive application to all inherited individual retirement accounts and to each transfer incident to divorce without regard to the date an account was created or the transfer was made.
+(d)
+Any fund or account described in paragraph (a) is not exempt from the claims of an alternate payee under a qualified domestic relations order or from the claims of a surviving spouse pursuant to an order determining the amount of elective share and contribution as provided in part II of chapter 732. However, the interest of any alternate payee under a qualified domestic relations order is exempt from all claims of any creditor, other than the Department of Revenue, of the alternate payee. As used in this paragraph, the terms “alternate payee” and “qualified domestic relations order” have the meanings ascribed to them in s. 414(p) of the Internal Revenue Code of 1986.
+(e)
+This subsection applies to any proceeding that is filed on or after the effective date of this act.
+History.
+—
+s. 1, ch. 87-375; s. 1, ch. 98-159; s. 25, ch. 99-8; s. 5, ch. 2005-82; s. 1, ch. 2005-101; s. 1, ch. 2007-74; s. 1, ch. 2011-84; s. 1, ch. 2022-167.
+222.22
+Exemption of assets in qualified tuition programs, medical savings accounts, Coverdell education savings accounts, and hurricane savings accounts from legal process.
+—
+(1)
+Moneys paid into or out of, the assets of, and the income of any validly existing qualified tuition program authorized by s. 529 of the Internal Revenue Code of 1986, as amended, including, but not limited to, the Florida Prepaid College Trust Fund advance payment contracts under s. 1009.98 and Florida Prepaid College Trust Fund participation agreements under s. 1009.981, are not liable to attachment, levy, garnishment, or legal process in the state in favor of any creditor of or claimant against any program participant, purchaser, owner or contributor, or program beneficiary.
+(2)
+Moneys paid into or out of, the assets of, and the income of a health savings account or medical savings account authorized under ss. 220 and 223 of the Internal Revenue Code of 1986, as amended, are not liable to attachment, levy, garnishment, or legal process in this state in favor of any creditor of or claimant against any account participant, purchaser, owner or contributor, or account beneficiary.
+(3)
+Moneys paid into or out of, the assets of, and the income of any Coverdell education savings account, also known as an educational IRA, established or existing in accordance with s. 530 of the Internal Revenue Code of 1986, as amended, are not liable to attachment, levy, garnishment, or legal process in this state in favor of any creditor of or claimant against any account participant, purchaser, owner or contributor, or account beneficiary.
+(4)(a)
+Moneys paid into or out of, the assets of, and the income of any hurricane savings account established by an insurance policyholder for residential property in this state equal to twice the deductible sum of such insurance to cover an insurance deductible or other uninsured portion of the risks of loss from a hurricane, rising flood waters, or other catastrophic windstorm event are not liable to attachment, levy, garnishment, or legal process in this state in favor of any creditor of or claimant against any account participant, purchaser, owner or contributor, or account beneficiary.
+(b)
+As used in this subsection, the term “hurricane savings account” means an account established by the owner of residential real estate in this state, which meets the requirements of homestead exemption under s. 4, Art. X of the State Constitution, who specifies that the purpose of the account is to cover the amount of insurance deductibles and other uninsured portions of risks of loss from hurricanes, rising flood waters, or other catastrophic windstorm events.
+(c)
+This subsection shall take effect only when the Federal Government provides tax-exempt or tax-deferred status to a hurricane savings account, disaster savings account, or other similar account created to cover an insurance deductible or other uninsured portion of the risks of loss from a hurricane, rising flood waters, or other catastrophic windstorm event.
+(5)
+Except as provided in s. 1009.986(7), as it relates to any validly existing qualified ABLE program authorized by s. 529A of the Internal Revenue Code, including, but not limited to, the Florida ABLE program participation agreements under s. 1009.986, moneys paid into or out of such a program, and the income and assets of such a program, are not liable to attachment, levy, garnishment, or legal process in this state in favor of any creditor of or claimant against any designated beneficiary or other program participant.
+History.
+—
+s. 2, ch. 88-313; s. 2, ch. 89-296; s. 5, ch. 91-429; s. 2, ch. 98-159; s. 50, ch. 98-421; s. 2, ch. 99-220; s. 926, ch. 2002-387; s. 2, ch. 2005-101; s. 3, ch. 2015-56.
+222.25
+Other individual property of natural persons exempt from legal process.
+—
+The following property is exempt from attachment, garnishment, or other legal process:
+(1)
+A debtor’s interest, not to exceed $5,000 in value, in a single motor vehicle as defined in s. 320.01(1).
+(2)
+A debtor’s interest in any professionally prescribed health aids for the debtor or a dependent of the debtor.
+(3)
+A debtor’s interest in a refund or a credit received or to be received, or the traceable deposits in a financial institution of a debtor’s interest in a refund or credit, pursuant to s. 32 of the Internal Revenue Code of 1986, as amended. This exemption does not apply to a debt owed for child support or spousal support.
+(4)
+A debtor’s interest in personal property, not to exceed $4,000, if the debtor does not claim or receive the benefits of a homestead exemption under s. 4, Art. X of the State Constitution. This exemption does not apply to a debt owed for child support or spousal support.
+History.
+—
+s. 3, ch. 93-256; s. 1, ch. 2001-129; s. 1, ch. 2007-185; s. 43, ch. 2008-4; s. 1, ch. 2024-110.
+222.26
+Additional exemptions from legal process concerning medical debt.
+—
+If a debt is owed for medical services provided by a facility licensed under chapter 395, the following property is exempt from attachment, garnishment, or other legal process in an action on such debt:
+(1)
+A debtor’s interest, not to exceed $10,000 in value, in a single motor vehicle as defined in s. 320.01(1).
+(2)
+A debtor’s interest in personal property, not to exceed $10,000 in value, if the debtor does not claim or receive the benefits of a homestead exemption under s. 4, Art. X of the State Constitution.
+History.
+—
+s. 2, ch. 2024-183.
+222.29
+No exemption for fraudulent transfers.
+—
+An exemption from attachment, garnishment, or legal process provided by this chapter is not effective if it results from a fraudulent transfer or conveyance as provided in chapter 726.
+History.
+—
+s. 4, ch. 93-256.
+222.30
+Fraudulent asset conversions.
+—
+(1)
+As used in this section, “conversion” means every mode, direct or indirect, absolute or conditional, of changing or disposing of an asset, such that the products or proceeds of the asset become immune or exempt by law from claims of creditors of the debtor and the products or proceeds of the asset remain property of the debtor. The definitions of chapter 726 apply to this section unless the application of a definition would be unreasonable.
+(2)
+Any conversion by a debtor of an asset that results in the proceeds of the asset becoming exempt by law from the claims of a creditor of the debtor is a fraudulent asset conversion as to the creditor, whether the creditor’s claim to the asset arose before or after the conversion of the asset, if the debtor made the conversion with the intent to hinder, delay, or defraud the creditor.
+(3)
+In an action for relief against a fraudulent asset conversion, a creditor may obtain:
+(a)
+Avoidance of the fraudulent asset conversion to the extent necessary to satisfy the creditor’s claim.
+(b)
+An attachment or other provisional remedy against the asset converted in accordance with applicable law.
+(c)
+Subject to applicable principles of equity and in accordance with applicable rules of civil procedure:
+1.
+An injunction against further conversion by the debtor of the asset or of other property.
+2.
+Any other relief the circumstances may require.
+(4)
+If a creditor has obtained a judgment on a claim against the debtor, the creditor, if the court so orders, may levy execution on the asset converted or its proceeds.
+(5)
+A cause of action with respect to a fraudulent asset conversion is extinguished unless an action is brought within 4 years after the fraudulent asset conversion was made.
+(6)
+If an asset is converted and the converted asset is subsequently transferred to a third party, the provisions of chapter 726 apply to the transfer to the third party.
+History.
+—
+s. 5, ch. 93-256.
+Copyright © 1995-2026 The Florida Legislature •
+Privacy Statement
+•
+Contact Us

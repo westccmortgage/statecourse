@@ -3,9 +3,39 @@
   "reproduceWith": "node scripts/florida-source-inventory.mjs",
   "regenerateWith": "node scripts/florida-source-inventory.mjs --write",
   "note": "Every file held under florida/frec-sources, walked recursively. Hashes are recomputed from disk; nothing here is transcribed by hand or carried over from another state's register.",
-  "fileCount": 168,
-  "totalBytes": 14630623,
+  "fileCount": 197,
+  "totalBytes": 19975265,
   "files": [
+    {
+      "path": "florida/frec-sources/cfpb/cfpb-closing-disclosure-specimen.pdf",
+      "sha256": "f0979fd83afb89dc2b35686a74805cad7009a6172f65835874bd21eafdf95e4c",
+      "bytes": 62429
+    },
+    {
+      "path": "florida/frec-sources/cfpb/cfpb-closing-disclosure.html",
+      "sha256": "93c98a2e178fa8a3f006e06cbef38a82e2587430939c3e01b691af0333891447",
+      "bytes": 214861
+    },
+    {
+      "path": "florida/frec-sources/cfpb/cfpb-forms-samples.html",
+      "sha256": "bc53eed55c0b50ee0ca404622219d1c25a733f851d0c2fd52bbb42a628782a79",
+      "bytes": 161270
+    },
+    {
+      "path": "florida/frec-sources/cfpb/closing-disclosure-H25A-blank.pdf",
+      "sha256": "2d80d1746fa50a6292da1367a5367e80f1637f16c8d839509c80d833c0d027fe",
+      "bytes": 204692
+    },
+    {
+      "path": "florida/frec-sources/cfpb/closing-disclosure-H25B-completed.pdf",
+      "sha256": "606a93c8baaca815439822df5cf8c78cbb2dcf6cc4af5aa291a459c7917e4173",
+      "bytes": 94194
+    },
+    {
+      "path": "florida/frec-sources/cfpb/reg-z-appendix-h.html",
+      "sha256": "b3dfbb2b945fb52c2e950a6db302aa901aafe511ce78c2d35e83a4af46ac779e",
+      "bytes": 347581
+    },
     {
       "path": "florida/frec-sources/dbpr/dbpr-frec-education.html",
       "sha256": "d246dc05be77ccccf152f5e898c1a834191f7b15c363013802ba0a537409040c",
@@ -97,6 +127,36 @@
       "bytes": 15113
     },
     {
+      "path": "florida/frec-sources/dbpr/testing/RE_instructor_cibs.pdf",
+      "sha256": "ab39d310c1c7d4f2eca0c329227fc65458336e3872e95fc88d4bfc72506c3284",
+      "bytes": 365943
+    },
+    {
+      "path": "florida/frec-sources/dor/2026NALexempt.pdf",
+      "sha256": "1d8018f99e2faff25ad2f3ebdf6d407cf7c6f88627318bd93bb00138a086e4e9",
+      "bytes": 570507
+    },
+    {
+      "path": "florida/frec-sources/dor/cpi_homestead_exemption.pdf",
+      "sha256": "b55e7993ff02074e2ea846eb469abaa282a34fcba2472c5bf4358df77ce9549a",
+      "bytes": 119092
+    },
+    {
+      "path": "florida/frec-sources/extracted/cfpb/cfpb-closing-disclosure-specimen.txt",
+      "sha256": "6c205ddc8ed35462127e6ecb78cb174ff25858802420aa0eda79afcdfbb87707",
+      "bytes": 14462
+    },
+    {
+      "path": "florida/frec-sources/extracted/cfpb/closing-disclosure-H25A-blank.txt",
+      "sha256": "d255b1465ea5d2cc12476611673320fec7880cc2a4bc8f05948fbb36ae5c6706",
+      "bytes": 37676
+    },
+    {
+      "path": "florida/frec-sources/extracted/cfpb/closing-disclosure-H25B-completed.txt",
+      "sha256": "7a88b7b65a26d54d40a20250bce427ab6984ece8d8a353111225a78c3d251d41",
+      "bytes": 15420
+    },
+    {
       "path": "florida/frec-sources/extracted/dbpr-education/DBPR_RE_19_Provider_Approval.txt",
       "sha256": "ae1531b3bfcf9e4ce8be07ec2b1ecc7d95be87aa6d59c9fda26203d3b7f96fcb",
       "bytes": 7671
@@ -172,6 +232,21 @@
       "bytes": 1343
     },
     {
+      "path": "florida/frec-sources/extracted/dbpr-testing/RE_instructor_cibs.txt",
+      "sha256": "13daf40bd3095878ab078499ff40792ce1bc148816f540db0de6458f05826986",
+      "bytes": 42892
+    },
+    {
+      "path": "florida/frec-sources/extracted/dor/2026NALexempt.txt",
+      "sha256": "4303f14d062cf19da51f49254b38490c41dd1b9c0cb340a196be61f2359ab46a",
+      "bytes": 6077
+    },
+    {
+      "path": "florida/frec-sources/extracted/dor/cpi_homestead_exemption.txt",
+      "sha256": "b6ca31bbbf2f37e5146246e15c5d13c279f567551584abd6ac5dae765f8a3a36",
+      "bytes": 1215
+    },
+    {
       "path": "florida/frec-sources/extracted/fac-61J2-3.008.txt",
       "sha256": "9fc2477cb309d7316f1bc71476b22cfc00db6a8ce8bb5a2306e41b23eb3ccead",
       "bytes": 14801
@@ -220,6 +295,16 @@
       "path": "florida/frec-sources/extracted/fac-rules/fac-61J2-3.015.txt",
       "sha256": "38dc8e9628b4c6dd6e6f5ee3e0f5967f112939bccd5d2ee42282d345d0d7cb62",
       "bytes": 4915
+    },
+    {
+      "path": "florida/frec-sources/extracted/florida-constitution/fl-constitution-article-vii.txt",
+      "sha256": "3790e268353584110af429b674821d0c27c969f9aed115320783af5f9e9d7a1e",
+      "bytes": 52662
+    },
+    {
+      "path": "florida/frec-sources/extracted/florida-constitution/fl-constitution-article-x.txt",
+      "sha256": "4820f19c384d8b9c9aa372fd9dc7649ba143e4b4adffed871a67cdd5fcd2ea55",
+      "bytes": 62993
     },
     {
       "path": "florida/frec-sources/extracted/frec-course-1-syllabus.txt",
@@ -742,6 +827,21 @@
       "bytes": 9458
     },
     {
+      "path": "florida/frec-sources/extracted/fs-chapter-193.txt",
+      "sha256": "ba661193410cd041872080c71b5b0ea1086641845d983d88898852d419ec2be3",
+      "bytes": 211649
+    },
+    {
+      "path": "florida/frec-sources/extracted/fs-chapter-196.txt",
+      "sha256": "6bf92e088e6be559b6b841a20b2e0f6633f320f01f391a198b252a6bb7f52bb3",
+      "bytes": 263586
+    },
+    {
+      "path": "florida/frec-sources/extracted/fs-chapter-222.txt",
+      "sha256": "ca206bc86befcab667732c893ec15261837d2cc01112d08048b918a97c6dd590",
+      "bytes": 44244
+    },
+    {
       "path": "florida/frec-sources/extracted/fs-chapter-455.txt",
       "sha256": "177fe989b7dc2607532cd9da78f754f7c75624580b1e01f0e2d5220b7b6d9361",
       "bytes": 170459
@@ -750,6 +850,16 @@
       "path": "florida/frec-sources/extracted/fs-chapter-475.txt",
       "sha256": "f3cbcb7c5098066bb31aa355c54df0ecbda0597661deebae26ca3539498ccdf4",
       "bytes": 286803
+    },
+    {
+      "path": "florida/frec-sources/extracted/fs-chapter-732.txt",
+      "sha256": "ea3d02381b8079d74ee9e8f0caedbecaf3023de8194205823a609d3b9db5a556",
+      "bytes": 153998
+    },
+    {
+      "path": "florida/frec-sources/extracted/pearson/091001-instructor-candidate-fact-sheet.txt",
+      "sha256": "0e994b8c4176743882034c7baee9cfb75ed1b4a9e5833c7647af97e6dd93cc34",
+      "bytes": 3975
     },
     {
       "path": "florida/frec-sources/extracted/syllabus-reconciliation.json",
@@ -837,6 +947,36 @@
       "bytes": 10277379
     },
     {
+      "path": "florida/frec-sources/pearson/091001-instructor-candidate-fact-sheet.pdf",
+      "sha256": "2fa8e56926b48854756c9348c85ffa74556c6a782dd39856e8142bb09b9de4cc",
+      "bytes": 439644
+    },
+    {
+      "path": "florida/frec-sources/pearson/fl-real-estate.html",
+      "sha256": "52d5230a384c143e86daf84cc1f849e14db8305c1d0cef30960b52fa77b70acb",
+      "bytes": 141707
+    },
+    {
+      "path": "florida/frec-sources/statutes/fl-constitution.html",
+      "sha256": "530387fd319276b5bbe4709e53b0cb8eaeadb7e86f4df7ef38da173b5d68b3f1",
+      "bytes": 602247
+    },
+    {
+      "path": "florida/frec-sources/statutes/fs-chapter-193.html",
+      "sha256": "6a2e23fa238572df99f0bbd6392b3814eed2dd2a0363fd07937d941ed36ed0bd",
+      "bytes": 325915
+    },
+    {
+      "path": "florida/frec-sources/statutes/fs-chapter-196.html",
+      "sha256": "26aa348ec51854f1c466beca345ed2f83dde9a150f8285943eac290e9008b54a",
+      "bytes": 401008
+    },
+    {
+      "path": "florida/frec-sources/statutes/fs-chapter-222.html",
+      "sha256": "79795592c01f42476a1ecea26f4092032f1e87080b113b1eac02aa36215444e1",
+      "bytes": 85651
+    },
+    {
       "path": "florida/frec-sources/statutes/fs-chapter-455.html",
       "sha256": "f350124863bbdedbce5a4d42b3d4a3a504d37410f461b61c0669854e68c4afff",
       "bytes": 266928
@@ -845,6 +985,11 @@
       "path": "florida/frec-sources/statutes/fs-chapter-475.html",
       "sha256": "2f51cfa1180c00209103fdeb74450c5796febe9725ea7968f696441aed2c1938",
       "bytes": 454172
+    },
+    {
+      "path": "florida/frec-sources/statutes/fs-chapter-732.html",
+      "sha256": "7142e27d71d4e895ae59a876092841d391eda957a0bfd18f1259634c9890dced",
+      "bytes": 297052
     }
   ]
 }

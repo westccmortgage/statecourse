@@ -1,35 +1,39 @@
 # Florida — session handoff
 
-**Read this before touching anything.** Written 30 August 2026 at the close of Phase 0 v2.
+**Read this before touching anything.** Updated 31 August 2026 after the authorized course build.
 
 | | |
 |---|---|
-| **Branch** | `claude/florida-frec-phase0-klhwu5` |
-| **Head** | `d6e63d8` — pushed, working tree clean |
+| **Branch** | `relay-florida` |
+| **Head** | see `git rev-parse HEAD`; current course-build commit is recorded in git |
 | **Based on** | `b38c81a`; **deliberately not rebased** — see §2 |
-| **Phase** | 0 complete (v2 accepted the corrections; v1 was rejected) |
-| **Curriculum authoring** | **NOT AUTHORIZED. Has not begun.** |
+| **Phase** | Phase 0 v2 complete; authorized course-development layer built |
+| **Curriculum authoring** | **AUTHORIZED 31 Aug 2026. Nineteen sections and assessment slice built.** |
 
 ---
 
 ## 1. Where things actually stand
 
-Phase 0 is done. Nothing is built, nothing is held, nothing is filed.
+Phase 0 is done and the course-development layer now exists. Nothing is filed or approved.
 
-- **31 sources** read and hashed — 168 files, 14.0 MB under `florida/frec-sources/`.
-- **77 material claims**, each naming what relies on it.
-- **14 recorded conflicts**, none resolved by guessing.
+- **48 sources** read and hashed — 197 files under `florida/frec-sources/`.
+- **98 material claims**, each naming what relies on it.
+- **16 recorded conflicts**, none resolved by guessing.
 - **19 syllabus sections, 180 learning objectives**, each page-referenced; `verify()` clean.
-- **53 Florida tests**, all passing. Source lock **LOCKED**.
-- **Zero test regressions** against a built `origin/main`.
+- **19 curriculum files, 3,000 designed instruction minutes, 180 periodic application items and 19 secure final-item drafts.**
+- **68 Florida tests**, all passing. Source lock **LOCKED**.
+- **Repository-wide direct run:** 1,021/1,055 pass; all 34 failures are outside the Florida build.
+  A clean built-main comparison was not reproducible in this worktree because the bootstrap requires
+  Linux `flock` and the host did not have enough free disk for a local dependency install.
 
 Run these four before believing anything above:
 
 ```bash
-node scripts/florida-source-lock.mjs            # LOCKED, 31/31 URLs reachable
-node scripts/florida-source-inventory.mjs       # 168 files, 16/16 controlling present
-node --test tests/florida-foundation.test.mjs   # 53/53
-bash scripts/florida-regression-baseline.sh     # no regression vs built main
+node scripts/florida-source-lock.mjs            # LOCKED, 48 sources
+node scripts/florida-source-inventory.mjs       # 197 files, 30 controlling present
+node scripts/build-florida-course.mjs           # deterministic 19-section build
+node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs # 68/68
+bash scripts/florida-regression-baseline.sh     # requires the repository's build dependencies
 ```
 
 ---
@@ -122,7 +126,7 @@ see §5.
 
 | File | What it holds |
 |---|---|
-| `regulatory-manifest.mjs` | 31 sources with authority class, 77 claims, 14 conflicts, forbidden claims, `SCHOOL` record |
+| `regulatory-manifest.mjs` | 48 sources with authority class, 98 claims, 16 conflicts, forbidden claims, `SCHOOL` record |
 | `frec-course-i-syllabus.mjs` | 19 sections, 180 page-referenced objectives, `verify()` gate |
 | `course-i-requirements.mjs` | time architecture, completion, retention, approval lifecycle, exemptions |
 | `assessment-architecture.mjs` | the three tiers + `DRAFT_QUESTION_TO_DBPR` |
@@ -130,11 +134,15 @@ see §5.
 | `dbpr-application-package.mjs` | 8 forms, 6 guidance docs, the 2-vs-5 conflict |
 | `distance-delivery-matrix.mjs` | 18 dimensions: required / policy / engine / open |
 | `video-instruction-plan.mjs` | 7 candidates, 8 rejected, production rules, activation gate |
+| `course-i-curriculum.mjs` | all 19 sections, 180 objectives, provider-designed 3,000-minute allocation and substantive core lessons |
+| `periodic-assessment-bank.mjs` | 180 objective-mapped formative application prompts with rubrics |
+| `secure-final-bank-draft.mjs` | truthful 19-item development slice; no usable final form |
+| `distance-course-engine.mjs` | identity, progression, event, records, continuity and final-release controls |
 
 ### Scripts
 
 `florida-source-lock.mjs` · `florida-source-inventory.mjs` · `florida-fetch-fac-rules.py` ·
-`florida-regression-baseline.sh`
+`florida-regression-baseline.sh` · `build-florida-course.mjs`
 
 ### Documents
 
@@ -179,13 +187,16 @@ non-blocking without making the stated hours untrue.
 
 ## 6. What blocks progress, and who can unblock it
 
-**Nine of fourteen open items need something outside this repository.**
+The former instructor-exam logistics gap and both source-acquisition gaps are closed. Permit,
+approval, regulator-answer and human-study gates remain.
 
 ### Do these first — they are external and everything waits on them
 
-1. **Identify the instructor examination.** Where it is administered, content outline, fee, candidate
-   booklet. Not published anywhere on DBPR's site. **Call the Division of Real Estate,
-   850.487.1395.** This is the single highest-value action available.
+1. **Follow the instructor route.** File RE 3 transaction 1010 with fingerprints and $62.75, obtain
+   authorization, then take the physical Pearson exam: closed book, 100 equal-weight MCQs, 3.5
+   hours, pass 75. The current Pearson portal uses 888-204-6289 and online scheduling. The $36.75
+   exam fee appears only on a still-linked 2017 sheet and is not represented as current until live
+   checkout confirms it.
 2. **Send the DBPR letter.** Fully drafted at `assessment-architecture.mjs` →
    `DRAFT_QUESTION_TO_DBPR`. Four questions: item count, "instruction hour", form count (2 vs 5),
    RE 19 for schools. Add the two carried separately: absence measurement in a distance course, and
@@ -195,12 +206,16 @@ Then, in order: pass the exam → **DBPR RE 3** basis `[1010]` + fingerprints + 
 permit → **DBPR RE 5** citing that permit + $109.00 → school permit → **DBPR RE 6** to register the
 instructor → **DBPR RE 18** for the course ($0 for schools).
 
-### Can be done inside the repo right now
+### Closed inside the repository
 
-3. **Acquire the CFPB Closing Disclosure specimen** (blocks video FL-V06). Hash it, add to sources.
-   **No AI-recreated government forms** — if it cannot be obtained, drop the candidate.
-4. **Acquire Florida homestead provisions** — Ch. 196 and Art. VII, Fla. Const. (blocks FL-V07).
-   Neither is in the held set; Phase 0 covered Chs. 475 and 455 and Rule Ch. 61J2 only.
+3. **Complete CFPB Closing Disclosure package acquired and visually/content validated.** The exact
+   older specimen printed in the February 2025 FREC instructor CIB is preserved for exam prep, and
+   the current forms hub, Regulation Z Appendix H, H-25(A) blank model form and H-25(B) completed
+   sample are held for instruction. FL-V06 is no longer source-blocked; production remains inactive.
+4. **Florida homestead controlling package acquired, extracted, hashed and marker-locked.** Articles
+   VII and X; Chapters 193, 196, 222 and 732; and two DOR 2026 documents are held. The 2026 first
+   exemption remains $25,000; the indexed additional non-school exemption is $26,411. FL-V07 is no
+   longer source-blocked; production remains inactive.
 
 ### Needs an owner decision, not Florida's
 
@@ -211,26 +226,29 @@ instructor → **DBPR RE 18** for the course ($0 for schools).
 
 ---
 
-## 7. When curriculum authoring is authorized
+## 7. Authorized curriculum build — current state
 
-**It is not authorized by this report.** The technical preconditions are met; the authorization is
-the owner's.
+Authorization was given on 31 August. Steps 1 and 2 are now concrete: all 19 sections exist in
+syllabus order, all 180 objectives map to canonical curriculum pages, and the provider-designed
+allocations total 3,000 minutes. A 180-item periodic bank and 19-item secure final-development slice
+exist. The Florida-specific engine, identity, records, continuity and submission artifacts exist.
 
-When it comes, the order is fixed and the steps **cannot** run in parallel:
+Remaining order:
 
-1. **Curriculum written and paginated**, section by section, in syllabus order.
-2. **Per-section hour allocations** computed from that material alone.
-3. **Objective time study** run against the course *without* video.
-4. **Examination authored** against paginated pages.
-5. **Video candidates re-tested** against the finished sections.
+1. **Independent legal/content review and expansion of authored lessons.** Current layer is a
+   complete architecture and substantive draft, not yet a regulator-ready textbook.
+2. **Objective time study** with representative learners, without video.
+3. **Complete the secure bank** (at least 81 more reviewed items for one 100-item form), lock final
+   pagination, assemble forms and run duplication/cognitive-level audits.
+4. **Re-test video candidates** against the reviewed course.
 
 **The constraint that forces this order:** answer keys must cite the page numbers each question and
 correct answer rest on. An item cannot cite a page that does not exist. Any plan running curriculum
 and examination in parallel produces an answer key that cannot be completed.
 
-The conditional tests in `tests/florida-foundation.test.mjs` are vacuous today and become binding
-the moment a file appears in `florida/fl-sales-associate-course-i-63-v1/curriculum/` — syllabus
-order, learning objectives per section, no examination leakage, no forbidden claims, no enrolment.
+The formerly conditional tests are now binding because curriculum exists; all pass. The additional
+course-build suite locks time, objectives, page map, assessment slice, engine controls and NO-GO
+release state.
 
 ---
 

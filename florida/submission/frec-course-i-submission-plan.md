@@ -78,15 +78,18 @@ Tallahassee, FL 32399-0783. RE 18 goes to the same street address, zip **32399-0
 
 ---
 
-## 3. The one genuine gap on the eligibility path
+## 3. Instructor examination path — logistics resolved
 
-**The instructor examination itself.** DBPR RE 3 offers "Real Estate Instructor Exam [1010]" as a
-qualification basis without saying where the examination is administered, what it covers, what it
-costs, or whether a candidate information booklet exists. Neither the forms-and-publications page
-nor the education page carries instructor-examination candidate materials.
+The official DBPR Candidate Information Booklet effective February 2025 is held at
+`florida/frec-sources/dbpr/testing/RE_instructor_cibs.pdf`. Pearson administers the computer-based
+exam at a physical test center after DBPR authorization. It is closed book, 100 equally weighted
+multiple-choice questions, 3.5 hours, with 75 points required. The current Pearson portal supports
+online scheduling or 888-204-6289 and requires cancellation/rescheduling two full calendar days in
+advance.
 
-This is a telephone call to the Division of Real Estate (Customer Contact Center, 850.487.1395), not
-a research task, and it is the **first** thing to do because everything else waits on it.
+The current fee is the remaining narrow gap. A 2017 sheet still linked from the current portal says
+$36.75, but the 2025 CIB warns fees changed; do not represent $36.75 as current without checkout
+confirmation.
 
 ---
 
@@ -100,7 +103,7 @@ Six, drafted in full in `config/florida/assessment-architecture.mjs` as `DRAFT_Q
 3. **Form count** — the rule and the checklist say two; RE 18 says five. Which?
 4. **RE 19** — must a permitted school filing Course I also file it?
 5. **Absence in a distance course** — how is the 8-classroom-hour ceiling measured with no class?
-6. **Instructor examination logistics** — as above.
+6. **Current instructor examination checkout fee** — logistics and content are otherwise resolved.
 
 Plus, not on the drafted letter but worth asking: whether a distance-only school with no Florida
 classroom has any "additional location" to declare under Rule 61J2-17.013's one-permit-per-location
@@ -110,19 +113,21 @@ construction.
 
 ## 5. The stages, in order
 
-### Stage 1 — identify the instructor examination
-Owner: **human**. Everything waits on this. See §3.
+### Stage 1 — apply for examination authorization
+Owner: **human**. File DBPR RE 3 under transaction [1010] with fingerprints and the $62.75
+application fee; DBPR authorization precedes Pearson scheduling.
 
 ### Stage 2 — put the written questions
 Owner: **human**, letter drafted. Can run in parallel with Stage 1.
 
 ### Stage 3 — pass the instructor examination
-Owner: **human**.
+Owner: **human**. Physical Pearson test center; closed book; 100 multiple-choice questions; 210
+minutes; pass 75.
 
 ### Stage 4 — instructor permit
-File **DBPR RE 3** under basis **[1010]**, with electronic fingerprints and $62.75. The other two
-bases require a Florida broker's licence and are closed on current facts. Owner: human, then
-**regulator**.
+After Stage 3, DBPR completes the instructor-permit transaction already opened with **DBPR RE 3**.
+The other two qualification bases require a Florida broker's licence and are closed on current
+facts. Owner: **regulator**.
 
 ### Stage 5 — school permit
 File **DBPR RE 5**, checking "Holder of a Florida Instructor's License" and giving the permit number
@@ -130,11 +135,14 @@ from Stage 4, with $109.00. Note the form's own rider: if the permitholder also 
 meet the school-instructor requirements — which, on this route, they already do, because the
 instructor permit *is* that requirement. Owner: human, then **regulator**.
 
+RE 5 requests a physical street address. Acceptance of an out-of-state-only physical address for a
+distance-only school is not established by the held authorities and must not be assumed.
+
 The Department may require fingerprints processed through the FBI and "shall make such investigation
 ... as it may deem necessary" (s. 475.451(2)). Not optional on the applicant's say-so.
 
 ### Stage 6 — register the instructor to the school
-**DBPR RE 6**, "Add/Terminate – Instructor". This is what makes the instructor "registered with such
+**DBPR RE 6**, "Add/Terminate – Instructor" ($0). This is what makes the instructor "registered with such
 school" for Rule 61J2-3.008(5)(b), which is what lets the course publish the contact block the rule
 requires. Owner: human.
 

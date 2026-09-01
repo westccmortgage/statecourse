@@ -100,6 +100,39 @@ if (OFFLINE) {
   }
   if (unreachable.length > 0) fail("source-urls", `primary sources unreachable or moved:\n    ${unreachable.join("\n    ")}`);
   else pass("source-urls", `${SOURCES.length} authority URLs reachable`);
+
+  /* A 200 is not enough: Phase 0 v1 received one for a missing DBPR URL whose body was the
+     Elevator Safety site. Sources with contentValidation therefore have their bodies inspected,
+     not merely their status codes. PDF bodies are checked for PDF magic here and against an
+     extracted text copy below; HTML bodies must contain every identifying marker and none of the
+     known soft-404 markers. */
+  const invalidBodies = [];
+  for (const entry of SOURCES.filter((s) => s.contentValidation)) {
+    try {
+      const body = execFileSync(
+        "curl",
+        ["-sS", "-A", BROWSER_UA, "-L", "--max-time", "30", entry.url],
+        { maxBuffer: 20 * 1024 * 1024 },
+      );
+      const rule = entry.contentValidation;
+      if (rule.magic && !body.subarray(0, rule.magic.length).equals(Buffer.from(rule.magic))) {
+        invalidBodies.push(`${entry.id}: body does not begin ${JSON.stringify(rule.magic)}`);
+      }
+      if (rule.mediaType === "text/html") {
+        const text = body.toString("utf8");
+        for (const marker of rule.requiredMarkers ?? []) {
+          if (!text.includes(marker)) invalidBodies.push(`${entry.id}: identifying marker missing: ${JSON.stringify(marker)}`);
+        }
+        for (const marker of rule.rejectsMarkers ?? []) {
+          if (text.includes(marker)) invalidBodies.push(`${entry.id}: soft-404/wrong-content marker present: ${JSON.stringify(marker)}`);
+        }
+      }
+    } catch (error) {
+      invalidBodies.push(`${entry.id}: content fetch failed: ${error.message.split("\n")[0]}`);
+    }
+  }
+  if (invalidBodies.length > 0) fail("source-content", `source bodies failed identity validation:\n    ${invalidBodies.join("\n    ")}`);
+  else pass("source-content", `${SOURCES.filter((s) => s.contentValidation).length} marker-locked source bodies identify themselves correctly`);
 }
 
 /* ── 2. the documents on disk are the documents recorded ──────────────────────────────────────
@@ -107,6 +140,7 @@ if (OFFLINE) {
    merely untested. A changed hash is drift, not failure — see the docstring. */
 {
   const missing = [];
+  const invalidContent = [];
   for (const entry of SOURCES) {
     if (!entry.localCopy) continue;
     if (!exists(entry.localCopy)) { missing.push(`${entry.id}: ${entry.localCopy} is recorded in the manifest and is not on disk`); continue; }
@@ -122,9 +156,27 @@ if (OFFLINE) {
     } else if (entry.bytes && buf.length !== entry.bytes) {
       drift.push({ id: entry.id, localCopy: entry.localCopy, recorded: `${entry.bytes} bytes`, actual: `${buf.length} bytes`, claimsToReRead: entry.materialClaims.map((c) => c.claim) });
     }
+    const rule = entry.contentValidation;
+    if (rule?.magic && !buf.subarray(0, rule.magic.length).equals(Buffer.from(rule.magic))) {
+      invalidContent.push(`${entry.id}: held copy does not begin ${JSON.stringify(rule.magic)}`);
+    }
+    if (rule?.localTextCopy) {
+      if (!exists(rule.localTextCopy)) invalidContent.push(`${entry.id}: validation text missing: ${rule.localTextCopy}`);
+      else {
+        const text = read(rule.localTextCopy);
+        for (const marker of rule.requiredMarkers ?? []) {
+          if (!text.includes(marker)) invalidContent.push(`${entry.id}: held text marker missing: ${JSON.stringify(marker)}`);
+        }
+        for (const marker of rule.rejectsMarkers ?? []) {
+          if (text.includes(marker)) invalidContent.push(`${entry.id}: held text contains wrong-content marker: ${JSON.stringify(marker)}`);
+        }
+      }
+    }
   }
   if (missing.length > 0) fail("held-copies", `held copies missing:\n    ${missing.join("\n    ")}`);
   else pass("held-copies", `${SOURCES.filter((s) => s.localCopy).length} held copies present`);
+  if (invalidContent.length > 0) fail("held-content", `held copies failed semantic validation:\n    ${invalidContent.join("\n    ")}`);
+  else pass("held-content", `${SOURCES.filter((s) => s.contentValidation).length} marker-locked held copies contain the expected documents`);
 }
 
 /* ── 3. every reading is inside the verification window ───────────────────────────────────────── */

@@ -120,6 +120,20 @@ const CONTROLLING = [
   { path: "florida/frec-sources/dbpr/forms/DBPR_RE_6_School_Change_of_Status_Transactions.pdf", why: "third corroboration of the statutory alternative, and the instrument that registers an instructor to a school" },
   { path: "florida/frec-sources/fac/fac-61-35.027.doc", why: "the rule that adopts every DBPR RE form by reference, making the form numbers traceable rather than remembered" },
   { path: "florida/frec-sources/extracted/syllabus-reconciliation.json", why: "the record of what OCR said, what the text layer says, and how the five disagreements resolved — without it the 180 is an assertion" },
+  { path: "florida/frec-sources/statutes/fl-constitution.html", why: "Article VII sections 4 and 6 are the controlling constitutional source for homestead assessment limitations and exemptions" },
+  { path: "florida/frec-sources/statutes/fs-chapter-196.html", why: "Chapter 196 implements the homestead exemption and governs qualification, application and abandonment" },
+  { path: "florida/frec-sources/cfpb/cfpb-closing-disclosure-specimen.pdf", why: "the genuine federal specimen used to teach Course I objectives 14.9 and 14.10 without recreating a government form" },
+  { path: "florida/frec-sources/cfpb/cfpb-closing-disclosure.html", why: "the CFPB page that links the held specimen and proves its official provenance" },
+  { path: "florida/frec-sources/cfpb/reg-z-appendix-h.html", why: "the codified federal appendix that identifies H-25(A) and H-25(B) and establishes their model/sample roles" },
+  { path: "florida/frec-sources/cfpb/closing-disclosure-H25A-blank.pdf", why: "the current official blank Closing Disclosure model form used for form-structure instruction" },
+  { path: "florida/frec-sources/cfpb/closing-disclosure-H25B-completed.pdf", why: "the current official completed fixed-rate Closing Disclosure sample used for worked application" },
+  { path: "florida/frec-sources/dbpr/testing/RE_instructor_cibs.pdf", why: "the effective-February-2025 official booklet that resolves the instructor examination's administrator, format, duration, score and content outline" },
+  { path: "florida/frec-sources/pearson/fl-real-estate.html", why: "the current scheduling portal confirming physical-center delivery, the live phone number and the two-full-calendar-day cancellation rule" },
+  { path: "florida/frec-sources/statutes/fs-chapter-193.html", why: "section 193.155 implements Save Our Homes assessment limits and portability" },
+  { path: "florida/frec-sources/statutes/fs-chapter-222.html", why: "the statutory procedure implementing constitutional homestead forced-sale exemptions" },
+  { path: "florida/frec-sources/statutes/fs-chapter-732.html", why: "section 732.4015 implements constitutional restrictions on devise of homestead" },
+  { path: "florida/frec-sources/dor/2026NALexempt.pdf", why: "the official current 2026 roll source for the $25,000 all-levy slice and $26,411 indexed non-school slice" },
+  { path: "florida/frec-sources/dor/cpi_homestead_exemption.pdf", why: "the official January 2026 CPI adjustment source independently fixing the additional exemption at $26,411" },
 ];
 
 /** The Florida registers whose named sources must all resolve. Loaded defensively: a register that

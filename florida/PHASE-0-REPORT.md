@@ -4,7 +4,9 @@
 **Branch:** `claude/florida-frec-phase0-klhwu5` (based on `b38c81a`; not rebased — see §11)
 **Supersedes:** Phase 0 v1, which was rejected.
 
-**Curriculum authoring remains NOT AUTHORIZED and has not begun.**
+**Post-Phase-0 update, 31 Aug 2026:** curriculum authoring was authorized and the 19-section
+course-development layer is built. This report remains the Phase 0 acceptance record; its former
+authorization and source-acquisition blockers are superseded by the current `florida/HANDOFF.md`.
 
 ---
 
@@ -38,19 +40,21 @@ see that 126 was a judgement rather than a rule. **Corrected in §8.**
 
 ### 1. Source acquisition — **GO**
 
-31 sources, all read and hashed; 168 files, 14.6 MB under `florida/frec-sources/`.
+48 sources, all read and hashed; 197 files under `florida/frec-sources/` after the post-Phase-0
+source acquisitions.
 
 Added in v2: Rule 61-35.027 F.A.C. (which adopts every DBPR RE form by reference), eight DBPR RE
 application forms, six DBPR guidance documents including the FREC Distance Education Checklist, and
 the Department's text-layer copy of the Course I syllabus.
 
-Every source now carries an **authority class** — STATUTE, RULE, INCORPORATED, FORM, GUIDANCE,
-NAVIGATION — with the resolution order stated. v1 treated all sources as interchangeable, which is
+Every source now carries an **authority class** — CONSTITUTION, STATUTE, RULE, INCORPORATED, FORM,
+GUIDANCE, NAVIGATION — with the resolution order stated. v1 treated all sources as interchangeable, which is
 how a form-level document came to outrank a statute.
 
-`node scripts/florida-source-inventory.mjs` → tracked inventory matches disk; 16/16 controlling
-sources present; 31/31 manifest sources and 2/2 syllabus copies resolve.
-`node scripts/florida-source-lock.mjs` → **LOCKED**, all 31 URLs reachable.
+`node scripts/florida-source-inventory.mjs` → tracked inventory matches disk; 30/30 controlling
+sources present; 48/48 manifest sources and 2/2 syllabus copies resolve.
+`node scripts/florida-source-lock.mjs` → **LOCKED**, all 48 URLs reachable and all 17
+marker-locked remote and held bodies identify the intended documents.
 
 ### 2. Syllabus verification — **GO**
 
@@ -104,10 +108,11 @@ functionally, not by ownership; RE 6 exists to transfer the permit between peopl
 Three statutory routes; route (c), the Commission-approved examination, requires no broker licence
 and is open. Routes (a) and (b) require a Florida broker's licence and are closed on current facts.
 
-**The one genuine gap:** the examination's administrator, content outline, fee and candidate
-materials are not published on either the forms or education page. This is a telephone call to the
-Division of Real Estate (850.487.1395), not a research task — and it is the first thing to do,
-because everything else waits on it.
+**The former logistics gap is closed.** DBPR's official Candidate Information Booklet effective
+February 2025 identifies Pearson as administrator and specifies a physical test center, closed-book
+100-question multiple-choice examination, 3.5 hours and a 75-point passing score. RE 3 authorization
+precedes scheduling. The current fee remains unverified: $36.75 appears only on a still-linked 2017
+fact sheet, so it is historical/current-linked rather than a current checkout quote.
 
 ### 5. School application readiness — **NOT READY, fully mapped**
 
@@ -203,9 +208,12 @@ is held, presenter/document balance, captions/transcript/poster requirements, th
 retrieval activity, and production status. **Eight rejected candidates** with reasons and better
 instruments.
 
-Two candidates are **blocked on source acquisition** (FL-V06 needs the real CFPB Closing Disclosure;
-FL-V07 needs Ch. 196 / Art. VII homestead provisions) and are marked so rather than approximated —
-no AI-recreated government forms.
+The two source blockers are closed. FL-V06 holds the exact older CFPB specimen linked by the
+February 2025 FREC instructor CIB, plus the current CFPB forms hub, Regulation Z Appendix H,
+H-25(A) blank model form and H-25(B) completed sample. FL-V07 holds Articles VII and X, Chapters
+193, 196, 222 and 732, and two DOR 2026 sources confirming the $25,000 first slice and the indexed
+$26,411 additional non-school slice. All are hashed, inventoried and content-marker validated.
+Video remains pending and outside instructional time.
 
 **Video sits outside the instructional-hour budget**, which is what keeps it optional and
 non-blocking without making the stated hours untrue.
@@ -233,7 +241,7 @@ Reproduce: `bash scripts/florida-regression-baseline.sh`. Evidence:
 is deliberately **not** rebased — isolation forbids merging Texas work. The comparison above is
 against the *current* main, Texas commits included, and still finds no regression.
 
-### 12. Curriculum-authoring authorization — **NO-GO**
+### 12. Curriculum-authoring authorization — **AUTHORIZED AFTER PHASE 0**
 
 Four of the five preconditions are met. One is not.
 
@@ -245,9 +253,10 @@ Four of the five preconditions are met. One is not.
 | Source-locked delivery requirements | **MET** — 18-dimension matrix, lock LOCKED |
 | No unexplained test regression | **MET** — 0 introduced; the 19 are explained and pre-existing |
 
-**So why NO-GO?** Because none of those is the binding constraint. Curriculum authoring is not
-authorized by this report; it is authorized by the owner. What Phase 0 can say is that the
-*technical* preconditions are now satisfied and the remaining blockers are external.
+The owner authorized curriculum authoring on 31 August 2026. All 19 sections, 180 objective-level
+periodic assessments, the 3,000-minute design, Florida engine controls, submission artifacts and a
+19-item secure final-development slice now exist. Regulator submission and launch remain NO-GO for
+the objective study, independent review, complete secure forms, permits and approval.
 
 ---
 
@@ -255,8 +264,8 @@ authorized by this report; it is authorized by the owner. What Phase 0 can say i
 
 | # | Missing fact or artifact | Inside the repo? | Needs | Next concrete action |
 |---|---|---|---|---|
-| 1 | Instructor examination logistics — where, what, cost, candidate booklet | **No** | Regulator response | Call the Division of Real Estate, 850.487.1395 |
-| 2 | Instructor examination passed | **No** | Examination | Sit it once §1 is answered |
+| 1 | Instructor examination logistics | **Closed except current checkout fee** | Official CIB/Pearson | Use held 2025 CIB; verify fee at live checkout |
+| 2 | Instructor examination passed | **No** | RE 3 authorization + examination | File RE 3, then sit Pearson exam |
 | 3 | Instructor permit | **No** | Application + regulator | File DBPR RE 3, basis [1010], fingerprints, $62.75 |
 | 4 | School permit | **No** | Application + regulator | File DBPR RE 5 citing the instructor permit, $109.00 |
 | 5 | Item count — 100, 120 or 126 | **No** | Regulator response | Send `DRAFT_QUESTION_TO_DBPR` |
@@ -264,13 +273,14 @@ authorized by this report; it is authorized by the owner. What Phase 0 can say i
 | 7 | Whether a school must file RE 19 | **No** | Regulator response | Same letter, question 4 |
 | 8 | Absence measurement in a distance course | **No** | Regulator response | Add to the letter |
 | 9 | Pre-licence hardship definition | **No** | Regulator response | Add to the letter |
-| 10 | CFPB Closing Disclosure specimen (FL-V06) | **Yes** | Acquisition | Download from CFPB, hash, add to sources |
-| 11 | Florida homestead provisions (FL-V07) | **Yes** | Acquisition | Acquire Ch. 196 / Art. VII, hash, add to sources |
+| 10 | CFPB Closing Disclosure specimen (FL-V06) | **Closed** | — | CIB-linked specimen plus current Appendix H/H-25(A)/H-25(B) package held and validated |
+| 11 | Florida homestead provisions (FL-V07) | **Closed** | — | Constitutional/statutory package plus current DOR 2026 adjustment sources held and validated |
 | 12 | `sync-california-pdf-downloads.mjs` missing | **Yes**, but not Florida's | Owner decision | California/Texas owner restores or removes the line |
 | 13 | Shared-file changes (7 proposals) | **Yes** | Coordination | Apply when Texas is at a safe point |
-| 14 | Objective time study | **Yes** | Curriculum first | After authoring; measures the course without video |
+| 14 | Objective time study | **Yes** | Representative participants | Run the checked-in protocol against the frozen course without video |
 
-**Nine of fourteen require something outside this repository.** Items 10, 11 and 13 can be done now.
+The exact current blocker set is maintained in `florida/HANDOFF.md`; this historical count is no
+longer used after three Phase 0 gaps were closed.
 
 ---
 
@@ -291,9 +301,14 @@ non-Florida file is left modified.
 
 ## Verification
 
+Current Florida-specific verification is below. The built-main 19=19 comparison in §11 is the
+historical Phase 0 evidence; it could not be rerun in the current worktree because the dependency
+bootstrap requires Linux `flock` and this host did not have enough free disk for a local install.
+The direct repository-wide test run completed 1,021/1,055; its 34 failures were outside Florida.
+
 ```
-node scripts/florida-source-lock.mjs            → LOCKED, 31/31 URLs reachable
-node scripts/florida-source-inventory.mjs       → 168 files, 16/16 controlling present
-node --test tests/florida-foundation.test.mjs   → 53/53 pass
-bash scripts/florida-regression-baseline.sh     → 19 = 19, no regression
+node scripts/florida-source-lock.mjs            → LOCKED, 48/48 URLs and 17/17 marker validations
+node scripts/florida-source-inventory.mjs       → 197 files, 30/30 controlling present
+node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs → 68/68 pass
+node --test tests/*.test.mjs                    → 1,021/1,055 pass; 34 non-Florida failures
 ```

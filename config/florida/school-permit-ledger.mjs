@@ -155,7 +155,7 @@ export const ELIGIBILITY_MATRIX = Object.freeze([
       "Have passed an instructor's examination approved by the Commission. On DBPR RE 5 this is captured as 'Holder of a Florida Instructor's License' with the instructor permit number.",
     status: STATUS.AVAILABLE,
     stateCoursePosition:
-      "APPEARS AVAILABLE and is not yet taken. It is subject to satisfying the general qualifications for practice in s. 475.17(1), passing the Commission-approved instructor examination, obtaining the instructor permit, filing DBPR RE 5, and the Department issuing the school permit. Nothing about it is held, and nobody is asserted to be eligible.",
+      "APPEARS AVAILABLE and is not yet taken. The current DBPR Candidate Information Booklet identifies Pearson as the administrator and specifies the exam. The route remains subject to DBPR authorization, satisfying the general qualifications for practice in s. 475.17(1), passing the examination, obtaining the instructor permit, filing DBPR RE 5, and the Department issuing the school permit. Nothing about it is held, and nobody is asserted to be eligible.",
     owner: OWNER.HUMAN,
   }),
   Object.freeze({
@@ -208,7 +208,7 @@ export const ELIGIBILITY_MATRIX = Object.freeze([
     requirement: "n/a",
     status: STATUS.NOT_HELD,
     stateCoursePosition:
-      "In order: identify the FREC-approved instructor examination and its candidate materials; sit and pass it; file DBPR RE 3 with fingerprints and fee; receive the instructor permit; file DBPR RE 5 naming the instructor permit as the qualification basis; receive the school permit; register the instructor to the school on DBPR RE 6; then file DBPR RE 18 for FREC Course I with the course materials, timed outline, learning objectives and end-of-course examinations.",
+      "In order: file DBPR RE 3 under transaction 1010 with fingerprints and the $62.75 application fee; receive DBPR authorization; schedule and pass the Pearson-administered instructor exam; receive the instructor permit; file DBPR RE 5 naming that permit as the qualification basis with $109; receive the school permit; register the instructor to the school on DBPR RE 6 ($0 for Add/Terminate – Instructor); then file DBPR RE 18 ($0 per course and delivery method) with the course materials, timed outline, learning objectives and end-of-course examinations. RE 5 asks for a physical street address; acceptance of an out-of-state-only address remains unconfirmed and is not assumed.",
     owner: OWNER.HUMAN,
   }),
 ]);
@@ -246,6 +246,41 @@ export const INSTRUCTOR_PERMIT_ROUTES = Object.freeze([
   }),
 ]);
 
+export const INSTRUCTOR_EXAM = Object.freeze({
+  source: "DBPR Real Estate Instructor Examination Candidate Information Booklet, effective February 2025",
+  administrator: "Pearson VUE / Pearson Professional Assessments",
+  delivery: "computer based at a physical Pearson test center",
+  prerequisite: "DBPR approval/authorization after filing the instructor application; the candidate identification number is used to reserve",
+  closedBook: true,
+  itemCount: 100,
+  itemType: "multiple choice, four options",
+  equallyWeighted: true,
+  allottedMinutes: 210,
+  passingPoints: 75,
+  schedulingPhone: "888-204-6289",
+  schedulingOnline: true,
+  cancellationNotice: "two full calendar days under the current Pearson portal",
+  currentFeeVerified: false,
+  legacyLinkedFee: 36.75,
+  legacyLinkedFeeAsOf: "2017 fact sheet still linked by the current portal; do not quote as current without checkout confirmation",
+  contentWeights: Object.freeze({
+    brokerageBusiness: 44,
+    valuation: 10,
+    listingAndSelling: 6,
+    contracts: 7,
+    financing: 6,
+    closingTransactions: 15,
+    federalIncomeTax: 2,
+    investment: 5,
+    zoningAndPlanning: null,
+    environmentalIssues: 1,
+    propertyManagement: 1,
+    realEstateMarket: 3,
+  }),
+  outlineAmbiguity:
+    "Zoning and Planning is printed as content area IX without a percentage. The other eleven printed percentages total 100; no 0% is inferred.",
+});
+
 export const INSTRUCTOR_PERMIT_MAINTENANCE = Object.freeze({
   cite: "s. 475.451(2)(b)3, Fla. Stat.; Rules 61J2-17.016 and 61J2-3.011, F.A.C.",
   renewalCycle: "biennial, on the schedule in Rule 61-6.001, F.A.C.",
@@ -268,29 +303,29 @@ export const DESIGNATION_ANALYSIS = Object.freeze({
 
 /* ── outstanding deliverables ─────────────────────────────────────────────────────────────────
    Now verified against the actual applications, which the first version could not do. */
-const item = (record) => Object.freeze({ verifiedAgainstApplication: true, held: false, ...record });
+const item = (record) => Object.freeze({ verifiedAgainstApplication: true, held: false, draftHeld: false, ...record });
 
 export const DELIVERABLES = Object.freeze([
-  item({ id: "instructor-exam-passed", section: "Instructor", owner: OWNER.HUMAN, cite: "s. 475.451(2)(b)1.c., Fla. Stat.", title: "Pass the Commission-approved real estate instructor examination", verifiedAgainstApplication: false, note: "The examination's administrator, content outline, fee and candidate materials were not located on the Department's education or forms pages. Open item." }),
+  item({ id: "instructor-exam-passed", section: "Instructor", owner: OWNER.HUMAN, cite: "s. 475.451(2)(b)1.c., Fla. Stat.; DBPR Instructor CIB effective Feb. 2025", title: "After RE 3 authorization, pass the Pearson-administered 100-question closed-book instructor exam at 75% within 3.5 hours", note: "Administrator, location, format, content outline, duration and passing score are verified. Current checkout fee remains unverified; $36.75 appears only on a 2017 fact sheet still linked from the current portal." }),
   item({ id: "re3-filed", section: "Instructor", owner: OWNER.HUMAN, cite: "DBPR RE 3", title: "File DBPR RE 3 under basis [1010] with electronic fingerprints and the $62.75 fee" }),
   item({ id: "instructor-permit-issued", section: "Instructor", owner: OWNER.REGULATOR, cite: "s. 475.451(2)(b), Fla. Stat.", title: "Instructor permit issued by the Department" }),
   item({ id: "re5-filed", section: "School", owner: OWNER.HUMAN, cite: "DBPR RE 5", title: "File DBPR RE 5 naming the instructor permit number as the method of qualification, with the $109.00 fee" }),
   item({ id: "school-permit-issued", section: "School", owner: OWNER.REGULATOR, cite: "s. 475.451(1), Fla. Stat.", title: "School permit issued by the Department" }),
   item({ id: "re6-instructor-registered", section: "School", owner: OWNER.HUMAN, cite: "DBPR RE 6", title: "Register the permitted instructor to the school via DBPR RE 6 (Add/Terminate – Instructor)" }),
-  item({ id: "course-timed-outline", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.1", title: "Course timed outline specifying subjects, major topics and subtopics" }),
-  item({ id: "learning-objectives-3-per-hour", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.2; FREC Distance Education Checklist", title: "Learning objectives at three per hour" }),
-  item({ id: "course-materials", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.3", title: "Course materials including an explanation of the delivery method" }),
+  item({ id: "course-timed-outline", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.1", title: "Course timed outline specifying subjects, major topics and subtopics", draftHeld: true }),
+  item({ id: "learning-objectives-3-per-hour", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.2; FREC Distance Education Checklist", title: "Learning objectives at three per hour", draftHeld: true }),
+  item({ id: "course-materials", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.3", title: "Course materials including an explanation of the delivery method", draftHeld: true, note: "All 19 sections and the delivery explanation exist; independent legal/content review and time-study revision remain before this can be marked submission-held." }),
   item({ id: "course-access-for-review", section: "Course", owner: OWNER.BUILD, cite: "Rule 61J2-3.008(4)(b), F.A.C.", title: "Access to the course in the format in which it will be offered to students" }),
   item({ id: "examination-forms", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.6; Rule 61J2-3.008(4)(d)", title: "End-of-course examination forms — five per the current application, two per the rule floor and the checklist" }),
   item({ id: "answer-keys-page-referenced", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.7", title: "An answer key per form, referencing the page numbers each question and correct answer rest on" }),
-  item({ id: "objective-time-study", section: "Course", owner: OWNER.BUILD, cite: "Rule 61J2-3.008(4)(b)3.e, F.A.C.", title: "Objective study evidencing the stated hours are the actual hours" }),
-  item({ id: "identity-verification-policy", section: "Course", owner: OWNER.BUILD, cite: "Rule 61J2-3.008(4)(b)3.c, F.A.C.", title: "Identity verification at enrolment, during participation, and at completion" }),
-  item({ id: "continuity-plan", section: "Course", owner: OWNER.BUILD, cite: "Rule 61J2-3.008(4)(b)3.b, F.A.C.", title: "Alternative plans for uninterrupted learner services on primary system failure" }),
+  item({ id: "objective-time-study", section: "Course", owner: OWNER.BUILD, cite: "Rule 61J2-3.008(4)(b)3.e, F.A.C.", title: "Objective study evidencing the stated hours are the actual hours", draftHeld: true, note: "Protocol held; participant observations not collected, so the deliverable is not held." }),
+  item({ id: "identity-verification-policy", section: "Course", owner: OWNER.BUILD, cite: "Rule 61J2-3.008(4)(b)3.c, F.A.C.", title: "Identity verification at enrolment, during participation, and at completion", draftHeld: true }),
+  item({ id: "continuity-plan", section: "Course", owner: OWNER.BUILD, cite: "Rule 61J2-3.008(4)(b)3.b, F.A.C.", title: "Alternative plans for uninterrupted learner services on primary system failure", draftHeld: true }),
   item({ id: "re18-filed", section: "Course", owner: OWNER.HUMAN, cite: "DBPR RE 18", title: "File DBPR RE 18 — NEW, Sales Associate Pre-Licensure, Distance — $0 for a permitted school" }),
   item({ id: "re19-question", section: "Course", owner: OWNER.REGULATOR, cite: "DBPR RE 18 Section V.4", title: "Confirm whether a permitted school filing Course I must also file DBPR RE 19", verifiedAgainstApplication: false }),
-  item({ id: "records-retention-3yr", section: "Operating", owner: OWNER.BUILD, cite: "s. 475.451(8), Fla. Stat.", title: "Three-year retention of rosters, attendance, examination copies and answer sheets" }),
-  item({ id: "certificate-retention-5yr", section: "Operating", owner: OWNER.BUILD, cite: "Rule 61J2-3.015(6)(f), F.A.C.", title: "Five-year retention of each course completion certificate" }),
-  item({ id: "anti-recruiting-statement", section: "Operating", owner: OWNER.BUILD, cite: "Rule 61J2-17.015(2), F.A.C.", title: "The Commission's anti-recruiting statement posted and read at course start" }),
+  item({ id: "records-retention-3yr", section: "Operating", owner: OWNER.BUILD, cite: "s. 475.451(8), Fla. Stat.", title: "Three-year retention of rosters, attendance, examination copies and answer sheets", draftHeld: true }),
+  item({ id: "certificate-retention-5yr", section: "Operating", owner: OWNER.BUILD, cite: "Rule 61J2-3.015(6)(f), F.A.C.", title: "Five-year retention of each course completion certificate", draftHeld: true }),
+  item({ id: "anti-recruiting-statement", section: "Operating", owner: OWNER.BUILD, cite: "Rule 61J2-17.015(2), F.A.C.", title: "The Commission's anti-recruiting statement posted and read at course start", draftHeld: true }),
   item({ id: "advertising-evidence", section: "Operating", owner: OWNER.BUILD, cite: "s. 475.4511(2), Fla. Stat.", title: "Every publicity claim rests on relevant facts supported by evidence establishing their truth" }),
 ]);
 
@@ -307,6 +342,7 @@ export function floridaReadiness() {
     deliverables: DELIVERABLES.length,
     outstanding: outstanding.length,
     heldCount: DELIVERABLES.length - outstanding.length,
+    draftHeldCount: DELIVERABLES.filter((d) => d.draftHeld).length,
     lawfulRouteToSchoolPermitExists: availableRoutes.some((r) => r.row === 2),
     lawfulRouteToInstructorPermitExists: availableRoutes.some((r) => r.row === 3),
     anyPersonAssertedEligible: APPLICANT.eligibilityAsserted,
@@ -330,6 +366,7 @@ export default Object.freeze({
   APPLICANT,
   ELIGIBILITY_MATRIX,
   INSTRUCTOR_PERMIT_ROUTES,
+  INSTRUCTOR_EXAM,
   INSTRUCTOR_PERMIT_MAINTENANCE,
   DESIGNATION_ANALYSIS,
   DELIVERABLES,

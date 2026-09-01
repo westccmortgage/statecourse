@@ -216,13 +216,12 @@ export const CANDIDATES = Object.freeze([
     whyVideoBeatsText:
       "Objective 14.10 is expressly a demonstration objective — 'demonstrate ability to read and check'. Reading a real multi-page form for errors is a scanning skill: knowing where to look, and what the relationship between two distant figures should be. That is watchable and hard to write down.",
     estimatedMinutes: 10,
-    requiredSource: "The CFPB Closing Disclosure form (TRID). A real, current specimen is required.",
-    sourceHeld: false,
-    sourceAcquisitionNote:
-      "NOT held. Must be obtained from the Consumer Financial Protection Bureau's own publication before this video can be planned further. No recreation of the form is permitted — Rule: no AI-recreated government forms. If the specimen cannot be obtained, this candidate is dropped rather than approximated.",
+    requiredSource: "The genuine five-page CFPB Closing Disclosure specimen linked from the Bureau's official explainer.",
+    sourceHeld: true,
+    sourceLocalCopy: "florida/frec-sources/cfpb/cfpb-closing-disclosure-specimen.pdf",
     presenterDocumentBalance: "Document-led. Static frames of the real form; crops and highlights produced deterministically in post-production. Captions positioned so they never obscure the field under discussion.",
     postVideoActivity: "Application: find the two seeded inconsistencies in a supplied specimen. Next screen.",
-    productionStatus: "blocked on source acquisition",
+    productionStatus: "source acquired; production not started",
   }),
 
   candidate({
@@ -238,12 +237,11 @@ export const CANDIDATES = Object.freeze([
       "Florida homestead is a sequence of exemptions applied to different slices of assessed value, and different exemptions apply to different taxing authorities. The arithmetic is not hard; the ORDER and the per-authority applicability are where students go wrong. Watching the value step down slice by slice is the explanation.",
     estimatedMinutes: 8,
     requiredSource: "Florida homestead exemption provisions. Current figures must be verified against primary authority at scripting time.",
-    sourceHeld: false,
-    sourceAcquisitionNote:
-      "NOT held. Homestead exemption amounts and the Save Our Homes assessment cap sit in Ch. 196 and Art. VII, Fla. Const., neither of which is in the held source set — the Phase 0 acquisition covered Chs. 475 and 455 and Rule Ch. 61J2. Must be acquired and hashed before scripting.",
+    sourceHeld: true,
+    sourceLocalCopy: "florida/frec-sources/statutes/fl-constitution.html; florida/frec-sources/statutes/fs-chapter-196.html",
     presenterDocumentBalance: "Worked calculation on screen with voice-over.",
     postVideoActivity: "Calculation: compute tax on a parcel with and without homestead. Next screen.",
-    productionStatus: "blocked on source acquisition",
+    productionStatus: "sources acquired; production not started",
   }),
 ]);
 
