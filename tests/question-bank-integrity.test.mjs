@@ -183,6 +183,8 @@ test("the project's authored item count is what the state builds add up to", () 
      warns about, and is why that bank exports its flat views as functions.
      2026-08-31: 2656 + 6 — Law of Contracts Topic 01 added one primary item for each of its six
      LOC-0 units. Its six successor questions remain nested and conditional, matching the Principles
-     I/II formative convention rather than appearing as duplicate top-level exports. */
-  assert.equal(total, 2662, `the banks now hold ${total} items, not 2662; update this figure deliberately when a bank changes`);
+     I/II formative convention rather than appearing as duplicate top-level exports.
+     2026-08-31: 2662 + 8 — Law of Contracts Topic 02 added one primary item for each of its eight
+     LOC-0 units; its eight distinct successors also remain nested and conditional. */
+  assert.equal(total, 2670, `the banks now hold ${total} items, not 2670; update this figure deliberately when a bank changes`);
 });

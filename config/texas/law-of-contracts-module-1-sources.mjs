@@ -56,18 +56,18 @@ export const MODULE_1_SOURCES = Object.freeze([
     localCopy: "texas/trec-sources/statutes/OC.1101.htm",
     sectionsRead: [
       read("1101.001", ["T01U1", "T01U2"], "The statutory short title is The Real Estate License Act; this is the source for the course's use of the abbreviation TRELA."),
-      read("1101.002", ["T01U1", "T01U2"], "Defines broker through the consideration-or-expectation threshold and enumerated acts; defines Commission, license holder, real estate, residential rental locator, and sales agent."),
-      read("1101.004", ["T01U1", "T01U2"], "Defines when a person is engaged in real estate brokerage and states three activities that do not alone create brokerage status."),
-      read("1101.151", ["T01U1", "T01U2", "T01U5"], "Requires the Commission to administer Chapters 1101 and 1102 and authorizes it to adopt and enforce necessary rules and establish conduct and ethics standards."),
-      read("1101.155", ["T01U1", "T01U2", "T01U3", "T01U4", "T01U5"], "Authorizes Commission rules requiring forms prepared by the Broker-Lawyer Committee, preserves owner-prepared and owner-required attorney forms, and states required listing-form provisions."),
+      read("1101.002", ["T01U1"], "Defines broker through the consideration-or-expectation threshold and enumerated acts; defines Commission, license holder, real estate, residential rental locator, and sales agent."),
+      read("1101.004", ["T01U1"], "Defines when a person is engaged in real estate brokerage and states three activities that do not alone create brokerage status."),
+      read("1101.151", ["T01U1", "T01U2"], "Requires the Commission to administer Chapters 1101 and 1102 and authorizes it to adopt and enforce necessary rules and establish conduct and ethics standards."),
+      read("1101.155", ["T01U1", "T01U2", "T01U3", "T01U4"], "Authorizes Commission rules requiring forms prepared by the Broker-Lawyer Committee, preserves owner-prepared and owner-required attorney forms, and states required listing-form provisions."),
       read("1101.251", ["T01U4"], "Defines the committee in the subchapter as the Texas Real Estate Broker-Lawyer Committee."),
       read("1101.252", ["T01U4"], "Creates a thirteen-member committee: six Commission appointees, six State Bar appointees, and one public member appointed by the governor."),
       read("1101.253", ["T01U4"], "Provides staggered six-year committee terms, holdover service, and appointment to fill an unexpired vacancy."),
-      read("1101.254", ["T01U4", "T01U5"], "Directs the committee to draft and revise standardizable forms to expedite transactions and minimize controversy, with safeguards adequate to protect principals."),
+      read("1101.254", ["T01U4"], "Directs the committee to draft and revise standardizable forms to expedite transactions and minimize controversy, with safeguards adequate to protect principals."),
       read("1101.301", ["T01U2"], "Authorizes Commission standards for approval of qualifying programs and courses, directs the Commission to determine whether a course satisfies the governing chapters, and requires instructor qualifications for an application."),
       read("1101.351", ["T01U1", "T01U2"], "Generally bars acting or representing oneself as a broker, sales agent, or residential rental locator without the chapter's license and requires a sales agent to be sponsored and act for the broker."),
       read("1101.652", ["T01U2", "T01U5"], "States disciplinary grounds, including subsection (a-1)(3) for failing to use a Commission-required contract form and subsection (b) conduct rules relevant to transaction documents."),
-      read("1101.654", ["T01U2", "T01U3", "T01U5", "T01U6"], "Requires suspension or revocation for specified unauthorized legal drafting or advice by a non-attorney license holder and states the statutory safe harbor for completing specified forms incidentally to brokerage."),
+      read("1101.654", ["T01U2", "T01U3", "T01U5"], "Requires suspension or revocation for specified unauthorized legal drafting or advice by a non-attorney license holder and states the statutory safe harbor for completing specified forms incidentally to brokerage."),
     ],
   }),
   source({
@@ -99,7 +99,7 @@ export const MODULE_1_SOURCES = Object.freeze([
     url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
     localCopy: "texas/trec-sources/trec-rules/537.11.txt",
     sectionsRead: [
-      read("537.11", ["T01U1", "T01U2", "T01U3", "T01U5", "T01U6"], "Read in full: mandatory-form rule and four exceptions; requirements where no mandatory form exists; eight unauthorized-practice prohibitions; permitted explanations and written-instruction changes; attorney-referral, binding-instrument, availability, and reproduction provisions."),
+      read("537.11", ["T01U1", "T01U2", "T01U3", "T01U5"], "Read in full: mandatory-form rule and four exceptions; requirements where no mandatory form exists; eight unauthorized-practice prohibitions; permitted explanations and written-instruction changes; attorney-referral, binding-instrument, availability, and reproduction provisions."),
     ],
   }),
   source({
@@ -125,7 +125,7 @@ export const MODULE_1_SOURCE_GAPS = Object.freeze([
     id: "sos-tac-22-537-11",
     tier: "controlling",
     status: "UNREAD_EXTERNAL_SOURCE",
-    affectedUnits: Object.freeze(["T01U1", "T01U2", "T01U3", "T01U5", "T01U6"]),
+    affectedUnits: Object.freeze(["T01U1", "T01U2", "T01U3", "T01U5"]),
     note: "The Secretary of State's codified 22 TAC § 537.11 could not be opened from this environment. The course identifies the held TREC reproduction every time it relies on the rule and does not claim a codified-text comparison.",
   }),
 ]);
@@ -151,6 +151,7 @@ export const MODULE_1_UNIT_SOURCE_REQUIREMENTS = Object.freeze({
     requirement("loc-form-20-19", "pages 1-12", "Form 20-19"),
   ]),
   T01U2: Object.freeze([
+    requirement("loc-oc-1101", "1101.001", "1101.001"),
     requirement("loc-oc-1101", "1101.151", "1101.151"),
     requirement("loc-oc-1101", "1101.155", "1101.155"),
     requirement("loc-oc-1101", "1101.301", "1101.301"),
@@ -179,12 +180,10 @@ export const MODULE_1_UNIT_SOURCE_REQUIREMENTS = Object.freeze({
     requirement("loc-form-20-19", "pages 1-12", "Form 20-19"),
   ]),
   T01U6: Object.freeze([
-    requirement("loc-oc-1101", "1101.654", "1101.654"),
     requirement("loc-bc-17", "17.45", "17.45"),
     requirement("loc-bc-17", "17.46", "17.46"),
     requirement("loc-bc-17", "17.49", "17.49"),
     requirement("loc-bc-17", "17.50", "17.50"),
-    requirement("loc-tac-537-11", "537.11", "537.11"),
   ]),
 });
 
@@ -221,6 +220,52 @@ export const MODULE_1_CLAIM_NEEDLES = Object.freeze({
   ]),
 });
 
+/** These checks bind high-risk source propositions to the authored unit, not merely to held bytes. */
+export const MODULE_1_AUTHORED_CLAIM_CHECKS = Object.freeze([
+  Object.freeze({
+    sourceId: "loc-oc-1101",
+    section: "1101.252",
+    unit: "T01U4",
+    authoredNeedles: Object.freeze(["thirteen members", "six appointed by the Commission", "one public member appointed by the governor"]),
+  }),
+  Object.freeze({
+    sourceId: "loc-oc-1101",
+    section: "1101.652",
+    unit: "T01U2",
+    authoredNeedles: Object.freeze(["fails to use a contract form required by the Commission", "requested copy of a transaction document"]),
+  }),
+  Object.freeze({
+    sourceId: "loc-oc-1101",
+    section: "1101.652",
+    unit: "T01U5",
+    authoredNeedles: Object.freeze(["on request", "signed copy of a document relating to a transaction"]),
+  }),
+  Object.freeze({
+    sourceId: "loc-oc-1101",
+    section: "1101.654",
+    unit: "T01U3",
+    authoredNeedles: Object.freeze(["requires suspension or revocation", "three form categories", "does not authorize the license holder to advise whether the resulting language is legally sufficient"]),
+  }),
+  Object.freeze({
+    sourceId: "loc-bc-17",
+    section: "17.49",
+    unit: "T01U6",
+    authoredNeedles: Object.freeze(["three exceptions", "more than $100,000", "more than $500,000", "does not involve the consumer's residence"]),
+  }),
+  Object.freeze({
+    sourceId: "loc-bc-17",
+    section: "17.50",
+    unit: "T01U6",
+    authoredNeedles: Object.freeze(["producing cause", "detrimental reliance", "not calculate a litigation recovery"]),
+  }),
+  Object.freeze({
+    sourceId: "loc-tac-537-11",
+    section: "537.11",
+    unit: "T01U3",
+    authoredNeedles: Object.freeze(["may not practice law", "change specifically instructed in writing", "advise principals to consult an attorney"]),
+  }),
+]);
+
 const normalizeSourceText = (text) =>
   text
     .replace(/<[^>]*>/gu, " ")
@@ -247,6 +292,7 @@ export function validateModule1Sources() {
   let verifiedFiles = 0;
   let readSections = 0;
   const coveredUnits = new Set();
+  const sourceEdges = new Set();
   const sourceById = new Map(MODULE_1_SOURCES.map((record) => [record.id, record]));
   const moduleText = readFileSync(join(REPO_ROOT, MODULE_PATH), "utf8");
   const topic = TOPICS.find((entry) => entry.code === "T01");
@@ -256,7 +302,10 @@ export function validateModule1Sources() {
     const heading = `## Unit: ${unit.unit}`;
     const start = moduleText.indexOf(heading);
     const next = topic.units[index + 1];
-    const end = next ? moduleText.indexOf(`## Unit: ${next.unit}`) : moduleText.length;
+    const cumulativeCheck = moduleText.indexOf("### Misconception check", start);
+    const recap = moduleText.indexOf("### Module recap", start);
+    const lastUnitEnd = Math.min(...[cumulativeCheck, recap].filter((offset) => offset >= 0));
+    const end = next ? moduleText.indexOf(`## Unit: ${next.unit}`) : lastUnitEnd;
     if (start < 0 || end < start) problems.push(`${unit.code}: authored unit heading is missing or out of order`);
     else unitTextByCode.set(unit.code, moduleText.slice(start, end));
   }
@@ -275,6 +324,7 @@ export function validateModule1Sources() {
       if (entry.note.length < 80) problems.push(`${record.id} ${entry.section}: read note is too short`);
       for (const unit of entry.reliedOnByUnits) {
         coveredUnits.add(unit);
+        sourceEdges.add(`${record.id}:${entry.section}:${unit}`);
         if (!allowedUnits.has(unit)) problems.push(`${record.id} ${entry.section}: non-Topic-01 unit ${unit}`);
       }
       if (record.sourceLayer === "tcss.legis.texas.gov static resources") {
@@ -312,6 +362,7 @@ export function validateModule1Sources() {
     problems.push(`Topic 01 unit coverage is incomplete: ${expectedCoverage.filter((unit) => !coveredUnits.has(unit)).join(", ")}`);
   }
 
+  const requirementEdges = new Set();
   for (const [unit, requirements] of Object.entries(MODULE_1_UNIT_SOURCE_REQUIREMENTS)) {
     const unitText = unitTextByCode.get(unit) ?? "";
     const actualMarkers = new Set([...unitText.matchAll(/\b(?:1101|17|537)\.\d+\b/gu)].map((match) => match[0]));
@@ -321,6 +372,7 @@ export function validateModule1Sources() {
       problems.push(`${unit}: authored citation set ${[...actualMarkers].sort().join(", ")} differs from trace ${[...expectedMarkers].sort().join(", ")}`);
     }
     for (const required of requirements) {
+      requirementEdges.add(`${required.sourceId}:${required.section}:${unit}`);
       const record = sourceById.get(required.sourceId);
       const entry = record?.sectionsRead.find((candidate) => candidate.section === required.section);
       if (!entry?.reliedOnByUnits.includes(unit)) {
@@ -329,6 +381,23 @@ export function validateModule1Sources() {
       if (!unitText.includes(required.marker)) {
         problems.push(`${unit}: expected authored citation marker ${required.marker} is absent`);
       }
+    }
+  }
+
+  if (JSON.stringify([...sourceEdges].sort()) !== JSON.stringify([...requirementEdges].sort())) {
+    problems.push("source→unit edges and authored citation requirements are not exactly bidirectional");
+  }
+
+  for (const check of MODULE_1_AUTHORED_CLAIM_CHECKS) {
+    const sourceRecord = sourceById.get(check.sourceId);
+    const sourceRead = sourceRecord?.sectionsRead.find((entry) => entry.section === check.section);
+    if (!sourceRead?.reliedOnByUnits.includes(check.unit)) {
+      problems.push(`${check.unit}: authored claim check is outside ${check.sourceId} ${check.section} reliance`);
+      continue;
+    }
+    const authored = (unitTextByCode.get(check.unit) ?? "").toLowerCase();
+    for (const needle of check.authoredNeedles) {
+      if (!authored.includes(needle.toLowerCase())) problems.push(`${check.unit}: authored claim needle is absent: ${needle}`);
     }
   }
 
@@ -351,5 +420,6 @@ export default Object.freeze({
   MODULE_1_SOURCE_GAPS,
   MODULE_1_UNIT_SOURCE_REQUIREMENTS,
   MODULE_1_CLAIM_NEEDLES,
+  MODULE_1_AUTHORED_CLAIM_CHECKS,
   validateModule1Sources,
 });

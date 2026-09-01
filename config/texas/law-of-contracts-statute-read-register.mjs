@@ -26,7 +26,7 @@ export const READ_SCOPE = Object.freeze({
   authorityLimit:
     "A section-level read supports only the proposition in its note. It does not establish the content of an unread section, decide a common-law question, replace another controlling source, or create curriculum reliance.",
   authoringStatus:
-    "CANDIDATE_READS_ONLY: no authored unit currently relies on these nine course-local chapter reads. Candidate units remain planning labels and no approval, enrollment, or Texas credit is claimed.",
+    "CANDIDATE_REGISTER_ONLY: this reusable register makes no curriculum-reliance claim. A course-specific source layer may separately establish exact unit reliance; candidate units remain planning labels and no approval, enrollment, or Texas credit is claimed.",
 });
 
 const s = (section, candidateUnits, note) =>

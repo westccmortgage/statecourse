@@ -4,7 +4,7 @@
 
 **LOC-0 allocation:** 155 minutes.
 **Units:** Key Terms; Texas Real Estate License Act; Unauthorized Practice of Law; The Broker-Lawyer Committee; Use of Promulgated Contract Forms; Deceptive Trade Practices Consumer Protection Act (DTPA).
-**Authoring checkpoint:** Topic 01 only. This is not a claim that the remaining ten topics, the final examination, the provider application, or the course submission are complete.
+**Module scope:** This file authors Topic 01; Topic 02 has a separate authored checkpoint. This is not a claim that the remaining nine topics, the final examination, the provider application, or the course submission are complete.
 **Authority notice:** Statutory propositions in this module come from the held Texas Legislative Council chapter files. The administrative-rule propositions come from TREC's published reproduction of 22 TAC § 537.11. The Secretary of State's codified text could not be compared, so this module identifies that source limitation instead of hiding it.
 
 ### Learning objectives
@@ -91,7 +91,7 @@ Do not move on until you can state the difference between **what a person is**, 
 
 ## Unit: Texas Real Estate License Act
 
-TRELA is Occupations Code chapter 1101. The chapter does much more than regulate contracts. It creates and empowers the Commission, establishes licensing requirements, defines brokerage, regulates agency and compensation, provides recovery-account mechanisms, lists disciplinary grounds, and authorizes civil, administrative, and criminal enforcement. In this course, TRELA matters because it supplies the statutory frame around a license holder's use of private contracts.
+Tex. Occupations Code § 1101.001 gives chapter 1101 the short title “The Real Estate License Act,” or TRELA. This module does not claim a chapter-wide read. Its held section reads are narrower: they cover the brokerage vocabulary, licensing entry gate, Commission administration and form authority, Broker-Lawyer Committee, qualifying-course approval, specified disciplinary grounds, and unauthorized-practice boundary actually used below. In this course, those exact provisions supply the statutory frame around a license holder's use of private contracts.
 
 ### Statute, rule, and contract operate on different subjects
 

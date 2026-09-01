@@ -1,4 +1,4 @@
-/** Topic-quiz checkpoint for Texas Law of Contracts Topic 01. Formative only; not a final exam. */
+/** Authored Texas Law of Contracts topic quizzes. Formative only; not a final exam. */
 
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -6,9 +6,10 @@ import { fileURLToPath } from "node:url";
 
 import { TOPICS } from "./law-of-contracts-course-form.mjs";
 import { MODULE_1_SOURCES } from "./law-of-contracts-module-1-sources.mjs";
+import { MODULE_2_SOURCES, MODULE_2_PROVIDER_METHODS } from "./law-of-contracts-module-2-sources.mjs";
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const MODULE_PATH = "texas/tx-law-of-contracts-30-v1/curriculum/module-01.md";
+const CURRICULUM_DIR = "texas/tx-law-of-contracts-30-v1/curriculum";
 
 const slug = (heading) =>
   heading
@@ -20,30 +21,39 @@ const slug = (heading) =>
     .replace(/^-|-$/gu, "");
 
 const item = (record) => {
-  const sourceRefs = Object.freeze(record.sourceRefs.map((entry) => Object.freeze(entry)));
-  const source = sourceRefs.map((entry) => entry.sourceId).join("; ");
-  const section = sourceRefs.map((entry) => entry.section).join("; ");
-  const shared = Object.freeze({
+  const module = record.module ?? "module-01";
+  const traced = (contentAnchor, refs) => {
+    const sourceRefs = Object.freeze(refs.map((entry) => Object.freeze(entry)));
+    return Object.freeze({
+      module,
+      contentAnchor,
+      remediation: `${module}.md#${slug(contentAnchor)}`,
+      sourceRefs,
+      source: sourceRefs.map((entry) => entry.sourceId).join("; "),
+      section: sourceRefs.map((entry) => entry.section).join("; "),
+    });
+  };
+  const primaryTrace = traced(record.contentAnchor, record.sourceRefs);
+  const replacementTrace = traced(
+    record.replacement.contentAnchor ?? record.contentAnchor,
+    record.replacement.sourceRefs ?? record.sourceRefs,
+  );
+  const { replacement, ...primary } = record;
+  return Object.freeze({
+    ...primary,
     unit: record.unit,
     tests: record.unit,
-    module: "module-01",
-    contentAnchor: record.contentAnchor,
-    remediation: `module-01.md#${slug(record.contentAnchor)}`,
-    sourceRefs,
-    source,
-    section,
-  });
-  return Object.freeze({
-    ...record,
-    ...shared,
+    ...primaryTrace,
     correctChoice: 0,
     choices: Object.freeze(record.choices),
     replacement: Object.freeze({
-      ...record.replacement,
-      ...shared,
+      ...replacement,
+      unit: record.unit,
+      tests: record.unit,
+      ...replacementTrace,
       id: `${record.id}-R`,
       correctChoice: 0,
-      choices: Object.freeze(record.replacement.choices),
+      choices: Object.freeze(replacement.choices),
     }),
   });
 };
@@ -145,6 +155,7 @@ export const TOPIC_1_QUIZ = Object.freeze([
     sourceRefs: [
       { sourceId: "loc-oc-1101", section: "1101.251" },
       { sourceId: "loc-oc-1101", section: "1101.252" },
+      { sourceId: "loc-oc-1101", section: "1101.253" },
       { sourceId: "loc-oc-1101", section: "1101.254" },
       { sourceId: "loc-oc-1101", section: "1101.155" },
     ],
@@ -158,6 +169,10 @@ export const TOPIC_1_QUIZ = Object.freeze([
     ],
     rationale: "Occupations Code §§ 1101.251–1101.254 establish the committee, membership, terms, and drafting mission. Section 1101.155 addresses Commission authority over required forms. Drafting and adoption are related but distinct acts.",
     replacement: {
+      sourceRefs: [
+        { sourceId: "loc-oc-1101", section: "1101.254" },
+        { sourceId: "loc-oc-1101", section: "1101.155" },
+      ],
       judgement: "Reject the inference that a committee draft is already a mandatory Commission form.",
       prompt: "Why does a Broker-Lawyer Committee draft not automatically become a mandatory form the day it is written?",
       choices: [
@@ -184,6 +199,7 @@ export const TOPIC_1_QUIZ = Object.freeze([
     ],
     rationale: "Absence of a mandatory form does not authorize improvisation. The held reproduction supplies detailed alternative-form conditions and also recognizes committee-prepared forms approved for voluntary use.",
     replacement: {
+      contentAnchor: "### Never use a blank in place of an approved addendum",
       judgement: "Use the mandatory addendum instead of substituting an informational entry.",
       prompt: "A current mandatory addendum exists for a financing condition, but an agent prefers one sentence in special provisions. What is the primary compliance defect?",
       choices: [
@@ -200,6 +216,7 @@ export const TOPIC_1_QUIZ = Object.freeze([
     unit: "T01U6",
     contentAnchor: "### Gate three: test the broker exemption and its exceptions",
     sourceRefs: [
+      { sourceId: "loc-bc-17", section: "17.45" },
       { sourceId: "loc-bc-17", section: "17.46" },
       { sourceId: "loc-bc-17", section: "17.49" },
       { sourceId: "loc-bc-17", section: "17.50" },
@@ -214,6 +231,11 @@ export const TOPIC_1_QUIZ = Object.freeze([
     ],
     rationale: "Section 17.49(i) has express exceptions for material factual misrepresentation, prohibited nondisclosure, and unconscionability. A private laundry-list claim also requires the applicable § 17.50 elements; remedies are tiered rather than automatic.",
     replacement: {
+      contentAnchor: "### Gate two: identify actionable conduct",
+      sourceRefs: [
+        { sourceId: "loc-bc-17", section: "17.45" },
+        { sourceId: "loc-bc-17", section: "17.50" },
+      ],
       judgement: "Require an actionable statutory category and causal facts rather than economic disappointment alone.",
       prompt: "A consumer dislikes a negotiated price after market values fall but identifies no representation, warranty, unconscionable conduct, or Insurance Code act. What is missing from the Topic 01 DTPA analysis?",
       choices: [
@@ -227,9 +249,277 @@ export const TOPIC_1_QUIZ = Object.freeze([
   }),
 ]);
 
-const moduleText = readFileSync(join(REPO_ROOT, MODULE_PATH), "utf8");
-const topic1Units = TOPICS.find((topic) => topic.code === "T01").units;
-const sourceById = new Map(MODULE_1_SOURCES.map((sourceRecord) => [sourceRecord.id, sourceRecord]));
+export const TOPIC_2_QUIZ = Object.freeze([
+  item({
+    id: "LOC-T02-Q01",
+    module: "module-02",
+    unit: "T02U1",
+    contentAnchor: "### The estate conveyed is a legal question",
+    sourceRefs: [
+      { sourceId: "loc2-pr-5", section: "5.001" },
+      { sourceId: "loc2-pr-5", section: "5.041" },
+    ],
+    judgement: "Apply the fee-simple presumption without treating it as a cure for title or divided interests.",
+    prompt: "A deed conveys land without old words of inheritance, while a prior recorded instrument appears to reserve a future interest. Which analysis best follows the held Texas sources?",
+    choices: [
+      "Apply the fee-simple presumption to the estate conveyed unless limited, but investigate the recorded future interest because the presumption does not erase another valid interest.",
+      "Declare the deed void because it omits the phrase and his heirs forever.",
+      "Ignore every prior instrument because a fee-simple presumption guarantees unencumbered title.",
+      "Treat the buyer's signed sales contract as immediate delivery of the deeded estate.",
+    ],
+    rationale: "Property Code § 5.001 supplies a presumption about the quantum of the estate conveyed; it is not a title guarantee. Section 5.041 confirms that a future freehold or inheritance estate can be conveyed during life, so the earlier instrument cannot be ignored.",
+    replacement: {
+      contentAnchor: "### Property, interests, and instruments",
+      sourceRefs: [{ sourceId: "loc2-oc-1101", section: "1101.002" }],
+      judgement: "Separate a scoped statutory definition of real estate from the physical parcel and security interest.",
+      prompt: "Why is the licensing chapter's definition of real estate not a universal answer to every title and financing question?",
+      choices: [
+        "It is scoped to Chapter 1101, includes interests such as leaseholds, and excludes an interest given as security for the performance of an obligation, so other decisions require their own sources.",
+        "It defines only buildings and never reaches an interest in land.",
+        "It automatically controls every tax, title, zoning, and private-contract definition.",
+        "It makes a survey and a deed legally interchangeable documents.",
+      ],
+      rationale: "A statutory definition must be read within its stated scope. The licensing definition demonstrates interest-based analysis but does not decide the estate held, the validity of title, or the rules governing a security instrument.",
+    },
+  }),
+  item({
+    id: "LOC-T02-Q02",
+    module: "module-02",
+    unit: "T02U2",
+    contentAnchor: "### Improvements and accessories are transaction categories",
+    sourceRefs: [
+      { sourceId: "loc2-oc-1101", section: "1101.002" },
+      { sourceId: "loc2-form-20-19", section: "page 1" },
+    ],
+    judgement: "Reconcile a form's property allocation with ownership evidence and the precise interest being brokered.",
+    prompt: "A resale form includes installed solar equipment, but the seller discloses a third-party solar lease. What is the strongest property-classification response?",
+    choices: [
+      "Treat form inclusion and transferable ownership as separate questions, obtain the lease and transfer facts, and escalate any conflict rather than promising that inclusion conveys third-party equipment.",
+      "Assume every visible improvement is owned free and clear by the seller.",
+      "Delete the equipment from the property paragraph without the principal's instruction.",
+      "Tell the buyer the street address automatically includes every item located there.",
+    ],
+    rationale: "The form allocates listed improvements and accessories between the parties, while the licensing definition concerns an interest in real property. Neither source proves that a seller owns a third party's equipment or can transfer it without satisfying the lease.",
+    replacement: {
+      contentAnchor: "### Reading a property paragraph without inventing facts",
+      judgement: "Use the legal description and form allocation without treating a street address as complete evidence.",
+      prompt: "Which sequence best handles a listing identified only by a street address and the phrase everything stays?",
+      choices: [
+        "Verify the legal description, read the current property paragraph and exclusions, compare observations and third-party documents, and flag inconsistencies before promising the transfer.",
+        "Use the address as the legal description because postal delivery proves the boundaries.",
+        "Assume everything on the premises is real property owned by the seller.",
+        "Draft a broad warranty that cures any missing title or lease information.",
+      ],
+      rationale: "The instrument's categories and the exact interest are only part of the evidence. A sound workflow reconciles description, allocation, observation, ownership, and competing claims instead of converting a party's slogan into a legal conclusion.",
+    },
+  }),
+  item({
+    id: "LOC-T02-Q03",
+    module: "module-02",
+    unit: "T02U3",
+    contentAnchor: "### Article 9 supplies a bounded fixture rule",
+    sourceRefs: [
+      { sourceId: "loc2-bc-9", section: "9.334" },
+      { sourceId: "loc2-form-20-19", section: "page 1" },
+    ],
+    judgement: "Keep contract allocation, ownership, and secured-priority analysis distinct for a possible fixture.",
+    prompt: "A financed generator is connected through a transfer switch and listed as an included accessory. Which conclusion is supported by Topic 02?",
+    choices: [
+      "The form allocation, physical connection, ownership documents, and any secured claim must be reviewed separately; inclusion alone does not prove title free of a fixture security interest.",
+      "Connection by wire automatically extinguishes every creditor's interest.",
+      "Article 9 says every attached item is ordinary building material and can never be financed.",
+      "The buyer owns the generator immediately when the listing is published.",
+    ],
+    rationale: "Section 9.334 recognizes goods that are or become fixtures and supplies priority rules, while the form allocates identified items in the sale. Neither physical connection nor a contract list alone resolves ownership and a third-party security claim.",
+    replacement: {
+      contentAnchor: "### A five-question item screen",
+      sourceRefs: [{ sourceId: "loc2-bc-9", section: "9.334" }],
+      judgement: "Refuse to extend Article 9's ordinary-building-material rule into a universal fixture slogan.",
+      prompt: "Which statement correctly limits the held fixture statute's treatment of drywall incorporated into a building?",
+      choices: [
+        "Article 9 does not create a security interest in ordinary building materials after incorporation, but that rule does not answer every construction, lien, title, or contract question.",
+        "Drywall always remains separately removable personal property after installation.",
+        "The statute proves the seller owns every material used by a contractor.",
+        "The statute eliminates all other real-property and construction law.",
+      ],
+      rationale: "The held section expressly excludes an Article 9 security interest in ordinary building materials incorporated into an improvement. The course confines that proposition to its source and does not turn it into a universal ownership rule.",
+    },
+  }),
+  item({
+    id: "LOC-T02-Q04",
+    module: "module-02",
+    unit: "T02U4",
+    contentAnchor: "### The characteristics worksheet",
+    sourceRefs: [{ sourceId: "loc2-provider-property-characteristics", section: "provider framework" }],
+    judgement: "Convert a provider taxonomy into evidence requests rather than value or safety promises.",
+    prompt: "A buyer likes a hillside parcel near a proposed road, and the agent says its uniqueness guarantees appreciation. What is the correct use of the Topic 02 framework?",
+    choices: [
+      "Record location, physical vulnerability, parcel-specific facts, and surrounding investment as diligence prompts, then obtain evidence without promising value or safety.",
+      "Guarantee appreciation because every parcel is unique and land is finite.",
+      "Treat the proposed road as completed because a public map mentions it.",
+      "Replace inspection and appraisal with the label indestructible land.",
+    ],
+    rationale: "The StateCourse taxonomy is disclosed provider methodology. It organizes neutral questions about location, durability, uniqueness, scarcity, investment, and preference; it does not produce an appraisal, engineering finding, or forecast.",
+    replacement: {
+      contentAnchor: "### Economic observation: location preference is contextual",
+      judgement: "Translate a subjective neighborhood request into objective client criteria under the disclosed provider method.",
+      prompt: "A client asks for the best neighborhood for families like us. Which response follows the StateCourse provider framework?",
+      choices: [
+        "Ask the client to define objective property and location criteria, provide neutral sources consistently, and avoid demographic judgments.",
+        "Select areas by protected-class composition but do not write the reason down.",
+        "Promise that one school attendance zone will never change.",
+        "Use coded neighborhood labels because they are not explicit demographic statistics.",
+      ],
+      rationale: "Area preference is contextual. Objective client-selected criteria and consistent neutral resources provide useful service without turning a provider concept into a demographic judgment; the separate fair-housing unit supplies the legal rules.",
+    },
+  }),
+  item({
+    id: "LOC-T02-Q05",
+    module: "module-02",
+    unit: "T02U5",
+    contentAnchor: "### Concurrent ownership: share and survivorship are different questions",
+    sourceRefs: [
+      { sourceId: "loc2-es-101", section: "101.002" },
+      { sourceId: "loc2-es-111", section: "111.001" },
+    ],
+    judgement: "Require a written survivorship agreement instead of inferring survivorship from joint title.",
+    prompt: "A deed names two unmarried owners, and one says the survivor automatically receives the other's share. Which Texas-source response is strongest?",
+    choices: [
+      "Joint ownership alone does not create survivorship under the held default; locate and review a qualifying written survivorship agreement before asserting that result.",
+      "Two names on any deed always create automatic survivorship in Texas.",
+      "The sales agent may add survivorship language to a new deed without attorney review.",
+      "The surviving owner receives the share only if both owners contributed equal cash.",
+    ],
+    rationale: "Estates Code § 101.002 rejects automatic survivorship as the default, and § 111.001 permits joint owners to agree in writing while barring inference from joint ownership alone. The actual instrument and qualified review are required.",
+    replacement: {
+      contentAnchor: "### Trust ownership requires identifying the trust relationship",
+      sourceRefs: [
+        { sourceId: "loc2-pr-111", section: "111.003" },
+        { sourceId: "loc2-pr-111", section: "111.004" },
+      ],
+      judgement: "Distinguish an express trust from a deed of trust and identify the title-holding fiduciary role.",
+      prompt: "Why may a deed of trust securing a loan not be treated as the same ownership structure as an express trust for beneficiaries?",
+      choices: [
+        "The Trust Code definition excludes a deed of trust or other security instrument, while an express trust places title with a person who has equitable duties for a beneficiary or purpose.",
+        "Every document containing the word trust creates identical beneficiary ownership.",
+        "A beneficiary always signs a deed personally even when a trustee holds title.",
+        "A mortgage transfers fee-simple ownership to every lender employee.",
+      ],
+      rationale: "Property Code §§ 111.003 and 111.004 separate security instruments from an express fiduciary relationship. The transaction must identify who holds title, the capacity used, and the authority supplied by the actual trust documents.",
+    },
+  }),
+  item({
+    id: "LOC-T02-Q06",
+    module: "module-02",
+    unit: "T02U6",
+    contentAnchor: "### LLC ownership illustrates entity-asset separation",
+    sourceRefs: [
+      { sourceId: "loc2-bo-1", section: "1.002" },
+      { sourceId: "loc2-bo-2", section: "2.101" },
+      { sourceId: "loc2-bo-101", section: "101.106" },
+    ],
+    judgement: "Name the entity owner and verify the human signer's authority instead of substituting a member personally.",
+    prompt: "The deed names Oak Trail LLC, whose sole member wants to sign the resale contract only in her individual name. What is the correct first response?",
+    choices: [
+      "Keep the entity and member distinct, verify the entity's title and the member's authority and capacity, and follow title or counsel requirements for execution.",
+      "Name the member individually because sole membership transfers every company asset to her.",
+      "Assume any employee can bind the LLC because entities have general property powers.",
+      "Sell the membership interest on the residential form as though it were the deeded parcel.",
+    ],
+    rationale: "An LLC has power to own and convey property, but § 101.106 classifies membership as personal property and denies a member an interest in specific company property. Authority and execution must be proved separately.",
+    replacement: {
+      contentAnchor: "### Partnership property follows statutory acquisition rules",
+      sourceRefs: [
+        { sourceId: "loc2-bo-152", section: "152.101" },
+        { sourceId: "loc2-bo-152", section: "152.102" },
+      ],
+      judgement: "Classify partnership property from the acquisition instrument and statutory presumptions rather than use alone.",
+      prompt: "Partners use a warehouse for partnership business, but the deed names them individually without partner capacity and no partnership funds were used. What should the license holder do?",
+      choices: [
+        "Obtain the deed and partnership evidence and route the classification to qualified review because use alone does not override the statutory acquisition presumptions.",
+        "Declare the partnership owner solely because the business operates there.",
+        "Declare each spouse an owner because partnership property belongs directly to partners and spouses.",
+        "Rewrite the deed description in special provisions to create partnership title.",
+      ],
+      rationale: "Sections 152.101 and 152.102 separate partnership assets from partners and classify property from the acquisition name, disclosed capacity, and funds. Business use is relevant context but not the statutory ownership shortcut.",
+    },
+  }),
+  item({
+    id: "LOC-T02-Q07",
+    module: "module-02",
+    unit: "T02U7",
+    contentAnchor: "### Condominiums: the creating instrument and date control",
+    sourceRefs: [
+      { sourceId: "loc2-pr-81", section: "81.0011" },
+      { sourceId: "loc2-pr-81", section: "81.101" },
+      { sourceId: "loc2-pr-82", section: "82.002" },
+      { sourceId: "loc2-pr-82", section: "82.051" },
+    ],
+    judgement: "Use the applicable creating-instrument date and instrument type to identify the condominium regime.",
+    prompt: "A multi-unit building is marketed as condos, but no recorded creating instrument has been produced. What must be established before relying on that label?",
+    choices: [
+      "Identify the applicable date and recorded creating instrument: a Chapter 81 master deed, master lease, or declaration, or a Chapter 82 declaration; marketing and separate occupancy do not create the regime.",
+      "Assume a condominium exists whenever unit doors have different numbers.",
+      "Use Chapter 82 only if every resident signed the listing agreement.",
+      "Treat each occupant as a fee-simple lot owner without reading a legal description.",
+    ],
+    rationale: "Chapter 81 permits creation through a recorded master deed, master lease, or declaration, while § 82.051 requires a recorded declaration for a Chapter 82 condominium. The applicable date and creating instrument—not marketing—control the starting analysis.",
+    replacement: {
+      contentAnchor: "### Timeshares: recurring use plus nonwaivable consumer protections",
+      sourceRefs: [
+        { sourceId: "loc2-pr-221", section: "221.002" },
+        { sourceId: "loc2-pr-221", section: "221.041" },
+      ],
+      judgement: "Calculate the timeshare cancellation period from the later triggering event and preserve its nonwaivable status.",
+      prompt: "A purchaser signs a timeshare contract Monday and receives the disclosure statement Wednesday. Which timing instruction is accurate?",
+      choices: [
+        "Measure the statutory period from the later delivery event and do not treat the purchaser's contract waiver as effective; preserve the actual receipt evidence.",
+        "Start only from the sales presentation even if no contract or disclosure was delivered.",
+        "Allow the developer to shorten the period orally when the price is discounted.",
+        "Apply an ordinary residential option-period assumption instead of the Timeshare Act.",
+      ],
+      rationale: "Section 221.041 uses the later of signing and receiving the contract or receipt of the disclosure statement and makes the cancellation right nonwaivable. Exact event dates matter more than an imprecise day-count slogan.",
+    },
+  }),
+  item({
+    id: "LOC-T02-Q08",
+    module: "module-02",
+    unit: "T02U8",
+    contentAnchor: "### Fair housing governs conduct and communication",
+    sourceRefs: [
+      { sourceId: "loc2-pr-301", section: "301.021" },
+      { sourceId: "loc2-pr-301", section: "301.022" },
+      { sourceId: "loc2-usc-42-3604", section: "3604" },
+    ],
+    judgement: "Apply fair-housing rules to advertising and service before a final sale or rental decision occurs.",
+    prompt: "A brokerage targets a dwelling advertisement to exclude users identified as men and writes ideal for women. What is the best Topic 02 response?",
+    choices: [
+      "Stop and review both the message and audience selection under federal, Texas, and any applicable local fair-housing rules; advertising can be unlawful before anyone is denied housing.",
+      "Keep the targeting because fair housing applies only after a signed offer is rejected.",
+      "Keep the phrase ideal for women but remove the audience filter because only targeting settings matter.",
+      "Publish the ad if the owner verbally accepts responsibility for it.",
+    ],
+    rationale: "Texas § 301.022 and federal § 3604 reach discriminatory housing statements or advertisements, while the broader sale and rental provisions also regulate availability and terms. An owner instruction does not erase a license holder's obligations.",
+    replacement: {
+      contentAnchor: "### A layered-use analysis",
+      sourceRefs: [
+        { sourceId: "loc2-lg-211", section: "211.003" },
+        { sourceId: "loc2-pr-202", section: "202.001" },
+        { sourceId: "loc2-pr-202", section: "202.006" },
+      ],
+      judgement: "Run municipal and recorded private restrictions as independent permission layers.",
+      prompt: "The zoning map appears to allow a home office, but an association email says recorded restrictions may prohibit customer visits. What conclusion is justified?",
+      choices: [
+        "Verify the ordinance and site approvals and separately obtain the recorded dedicatory instruments; one public permission does not override a private restriction or prove its enforceability.",
+        "Municipal zoning automatically cancels every recorded covenant.",
+        "The association email alone proves the complete restriction and every amendment.",
+        "A listing agent may promise the use because staff said it is probably acceptable.",
+      ],
+      rationale: "Municipal authority and recorded private instruments are distinct layers. Sections 202.001 and 202.006 direct attention to the actual filed instruments, while the zoning statute authorizes municipal regulation rather than answering a parcel-specific use question.",
+    },
+  }),
+]);
+
 const tokens = (text) => new Set(text.toLowerCase().match(/[a-z0-9§]+/gu) ?? []);
 const similarity = (left, right) => {
   const a = tokens(left);
@@ -238,34 +528,74 @@ const similarity = (left, right) => {
   return intersection / new Set([...a, ...b]).size;
 };
 
-if (TOPIC_1_QUIZ.length !== topic1Units.length) throw new Error("LOC Topic 01 bank must carry one primary per LOC-0 unit");
-if (new Set(TOPIC_1_QUIZ.map((entry) => entry.unit)).size !== topic1Units.length) throw new Error("LOC Topic 01 bank repeats or omits a unit");
-if (new Set(TOPIC_1_QUIZ.flatMap((entry) => [entry.id, entry.replacement.id])).size !== TOPIC_1_QUIZ.length * 2) {
-  throw new Error("LOC Topic 01 bank contains duplicate primary or replacement ids");
-}
+const validateTopicQuiz = ({ quiz, topicCode, module, sources, providerMethods = [] }) => {
+  const topic = TOPICS.find((entry) => entry.code === topicCode);
+  const moduleText = readFileSync(join(REPO_ROOT, CURRICULUM_DIR, `${module}.md`), "utf8");
+  const sourceById = new Map(sources.map((sourceRecord) => [sourceRecord.id, sourceRecord]));
+  for (const method of providerMethods) {
+    sourceById.set(
+      method.id,
+      Object.freeze({
+        id: method.id,
+        sectionsRead: Object.freeze([
+          Object.freeze({ section: "provider framework", reliedOnByUnits: method.affectedUnits }),
+        ]),
+      }),
+    );
+  }
 
-for (const quizItem of TOPIC_1_QUIZ) {
-  const unit = topic1Units.find((entry) => entry.code === quizItem.unit);
-  const unitStart = moduleText.indexOf(`## Unit: ${unit?.unit}`);
-  const nextUnit = topic1Units[topic1Units.indexOf(unit) + 1];
-  const unitEnd = nextUnit ? moduleText.indexOf(`## Unit: ${nextUnit.unit}`) : moduleText.length;
-  const unitText = unitStart < 0 ? "" : moduleText.slice(unitStart, unitEnd);
+  if (quiz.length !== topic.units.length) throw new Error(`LOC ${topicCode} bank must carry one primary per LOC-0 unit`);
+  if (JSON.stringify(quiz.map((entry) => entry.unit)) !== JSON.stringify(topic.units.map((entry) => entry.code))) {
+    throw new Error(`LOC ${topicCode} bank repeats, omits, or reorders a unit`);
+  }
+  if (new Set(quiz.flatMap((entry) => [entry.id, entry.replacement.id])).size !== quiz.length * 2) {
+    throw new Error(`LOC ${topicCode} bank contains duplicate primary or replacement ids`);
+  }
 
-  for (const candidate of [quizItem, quizItem.replacement]) {
-    if (candidate.correctChoice !== 0) throw new Error(`${candidate.id}: correct answer must be authored first`);
-    if (candidate.choices.length !== 4 || new Set(candidate.choices).size !== 4) throw new Error(`${candidate.id}: exactly four unique choices required`);
-    if (candidate.rationale.length < 100) throw new Error(`${candidate.id}: rationale is too short`);
-    if (!candidate.judgement || !candidate.remediation) throw new Error(`${candidate.id}: judgement or remediation trace is absent`);
-    if (!unitText.includes(candidate.contentAnchor)) throw new Error(`${candidate.id}: content anchor is absent from its required unit`);
-    if (candidate.remediation !== `module-01.md#${slug(candidate.contentAnchor)}`) throw new Error(`${candidate.id}: remediation anchor is not resolvable`);
-    for (const ref of candidate.sourceRefs) {
-      const sourceRecord = sourceById.get(ref.sourceId);
-      const readRecord = sourceRecord?.sectionsRead.find((entry) => entry.section === ref.section);
-      if (!readRecord?.reliedOnByUnits.includes(candidate.unit)) throw new Error(`${candidate.id}: ${ref.sourceId} ${ref.section} is outside its unit trace`);
+  for (const quizItem of quiz) {
+    const unit = topic.units.find((entry) => entry.code === quizItem.unit);
+    const unitIndex = topic.units.indexOf(unit);
+    const unitStart = moduleText.indexOf(`## Unit: ${unit?.unit}`);
+    const nextUnit = topic.units[unitIndex + 1];
+    const recapStart = moduleText.indexOf("### Module recap", unitStart);
+    const unitEnd = nextUnit ? moduleText.indexOf(`## Unit: ${nextUnit.unit}`) : recapStart;
+    const unitText = unitStart < 0 || unitEnd < unitStart ? "" : moduleText.slice(unitStart, unitEnd);
+
+    for (const candidate of [quizItem, quizItem.replacement]) {
+      if (candidate.correctChoice !== 0) throw new Error(`${candidate.id}: correct answer must be authored first`);
+      if (candidate.module !== module || candidate.unit !== quizItem.unit || candidate.tests !== quizItem.unit) {
+        throw new Error(`${candidate.id}: module, unit, or tested-unit trace differs from its primary record`);
+      }
+      if (candidate.choices.length !== 4 || new Set(candidate.choices).size !== 4) throw new Error(`${candidate.id}: exactly four unique choices required`);
+      if (candidate.rationale.length < 100) throw new Error(`${candidate.id}: rationale is too short`);
+      if (!candidate.judgement || !candidate.remediation || !candidate.sourceRefs.length) throw new Error(`${candidate.id}: judgement, remediation, or source trace is absent`);
+      if (!unitText.includes(candidate.contentAnchor)) throw new Error(`${candidate.id}: content anchor is absent from its required unit`);
+      if (candidate.remediation !== `${module}.md#${slug(candidate.contentAnchor)}`) throw new Error(`${candidate.id}: remediation anchor is not resolvable`);
+      if (candidate.source !== candidate.sourceRefs.map((entry) => entry.sourceId).join("; ")) throw new Error(`${candidate.id}: flattened source trace differs from source refs`);
+      if (candidate.section !== candidate.sourceRefs.map((entry) => entry.section).join("; ")) throw new Error(`${candidate.id}: flattened section trace differs from source refs`);
+      for (const ref of candidate.sourceRefs) {
+        const sourceRecord = sourceById.get(ref.sourceId);
+        const readRecord = sourceRecord?.sectionsRead.find((entry) => entry.section === ref.section);
+        if (!readRecord?.reliedOnByUnits.includes(candidate.unit)) throw new Error(`${candidate.id}: ${ref.sourceId} ${ref.section} is outside its unit trace`);
+      }
     }
+    if (quizItem.prompt === quizItem.replacement.prompt || quizItem.judgement === quizItem.replacement.judgement) {
+      throw new Error(`${quizItem.id}: replacement repeats the primary prompt or judgement`);
+    }
+    if (similarity(quizItem.prompt, quizItem.replacement.prompt) >= 0.6) throw new Error(`${quizItem.id}: replacement prompt is too similar to primary`);
   }
-  if (quizItem.prompt === quizItem.replacement.prompt || quizItem.judgement === quizItem.replacement.judgement) {
-    throw new Error(`${quizItem.id}: replacement repeats the primary prompt or judgement`);
-  }
-  if (similarity(quizItem.prompt, quizItem.replacement.prompt) >= 0.6) throw new Error(`${quizItem.id}: replacement prompt is too similar to primary`);
+};
+
+validateTopicQuiz({ quiz: TOPIC_1_QUIZ, topicCode: "T01", module: "module-01", sources: MODULE_1_SOURCES });
+validateTopicQuiz({
+  quiz: TOPIC_2_QUIZ,
+  topicCode: "T02",
+  module: "module-02",
+  sources: MODULE_2_SOURCES,
+  providerMethods: MODULE_2_PROVIDER_METHODS,
+});
+
+const allItems = [...TOPIC_1_QUIZ, ...TOPIC_2_QUIZ];
+if (new Set(allItems.flatMap((entry) => [entry.id, entry.replacement.id])).size !== allItems.length * 2) {
+  throw new Error("LOC authored topic banks share a primary or replacement id");
 }

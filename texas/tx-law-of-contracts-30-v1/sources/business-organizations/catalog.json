@@ -1,0 +1,69 @@
+{
+  "generatedBy": "scripts/acquire-tx-loc-business-organization-sources.mjs --write",
+  "retrievedOn": "2026-08-31",
+  "status": "OFFICIAL TEXAS LEGISLATIVE COUNCIL CHAPTER COPIES HELD. Holding a chapter is not reading a section; Topic 02 reliance requires its section-level source record.",
+  "sourceCount": 4,
+  "totalBytes": 528252,
+  "sources": [
+    {
+      "id": "bo-1",
+      "code": "BO",
+      "codeName": "Business Organizations Code",
+      "chapter": "1",
+      "title": "Definitions and Other General Provisions",
+      "publisher": "Texas Legislative Council",
+      "sourceLayer": "tcss.legis.texas.gov static resources",
+      "url": "https://tcss.legis.texas.gov/resources/BO/htm/BO.1.htm",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/business-organizations/BO.1.htm",
+      "sha256": "d4e5a88dd40769581f8fb903419518a0199b25d35170667fd00f3b04f1b206c5",
+      "bytes": 76538,
+      "heldStatus": "HELD",
+      "responseTitle": "BUSINESS ORGANIZATIONS CODE CHAPTER 1. DEFINITIONS AND OTHER GENERAL PROVISIONS"
+    },
+    {
+      "id": "bo-2",
+      "code": "BO",
+      "codeName": "Business Organizations Code",
+      "chapter": "2",
+      "title": "Purposes and Power of Domestic Entity",
+      "publisher": "Texas Legislative Council",
+      "sourceLayer": "tcss.legis.texas.gov static resources",
+      "url": "https://tcss.legis.texas.gov/resources/BO/htm/BO.2.htm",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/business-organizations/BO.2.htm",
+      "sha256": "1943f3dabe74020e5370a2b6cccd5bc6e59c42ce157243a0b20e26d6a16c2c4e",
+      "bytes": 40609,
+      "heldStatus": "HELD",
+      "responseTitle": "BUSINESS ORGANIZATIONS CODE CHAPTER 2. PURPOSES AND POWER OF DOMESTIC ENTITY"
+    },
+    {
+      "id": "bo-101",
+      "code": "BO",
+      "codeName": "Business Organizations Code",
+      "chapter": "101",
+      "title": "Limited Liability Companies",
+      "publisher": "Texas Legislative Council",
+      "sourceLayer": "tcss.legis.texas.gov static resources",
+      "url": "https://tcss.legis.texas.gov/resources/BO/htm/BO.101.htm",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/business-organizations/BO.101.htm",
+      "sha256": "e009a395de52e557f5d2c4d9a8a417ae0abc1b10d20312bbbb7a3ab75813ca01",
+      "bytes": 254996,
+      "heldStatus": "HELD",
+      "responseTitle": "BUSINESS ORGANIZATIONS CODE CHAPTER 101. LIMITED LIABILITY COMPANIES"
+    },
+    {
+      "id": "bo-152",
+      "code": "BO",
+      "codeName": "Business Organizations Code",
+      "chapter": "152",
+      "title": "General Partnerships",
+      "publisher": "Texas Legislative Council",
+      "sourceLayer": "tcss.legis.texas.gov static resources",
+      "url": "https://tcss.legis.texas.gov/resources/BO/htm/BO.152.htm",
+      "localCopy": "texas/tx-law-of-contracts-30-v1/sources/business-organizations/BO.152.htm",
+      "sha256": "50094319ddce526a2b0dda31cd10aa3d35caa2b2facc19429f0a779d7ab9b0f2",
+      "bytes": 156109,
+      "heldStatus": "HELD",
+      "responseTitle": "BUSINESS ORGANIZATIONS CODE CHAPTER 152. GENERAL PARTNERSHIPS"
+    }
+  ]
+}

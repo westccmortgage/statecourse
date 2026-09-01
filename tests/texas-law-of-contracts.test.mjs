@@ -16,11 +16,25 @@ import {
   MODULE_1_SOURCE_GAPS,
   MODULE_1_UNIT_SOURCE_REQUIREMENTS,
   MODULE_1_CLAIM_NEEDLES,
+  MODULE_1_AUTHORED_CLAIM_CHECKS,
   validateModule1Sources,
 } from "../config/texas/law-of-contracts-module-1-sources.mjs";
+import {
+  MODULE_2_SOURCES,
+  MODULE_2_PROVIDER_METHODS,
+  MODULE_2_SOURCE_GAPS,
+  MODULE_2_UNIT_SOURCE_REQUIREMENTS,
+  MODULE_2_CLAIM_CHECKS,
+  validateModule2Sources,
+} from "../config/texas/law-of-contracts-module-2-sources.mjs";
 import { COURSE, MODULES, UNIT_OBJECTIVES, UNIT_TRACE } from "../config/texas/law-of-contracts-course.mjs";
-import { TOPIC_1_QUIZ } from "../config/texas/law-of-contracts-question-bank.mjs";
-import { AUTHORING_EVIDENCE, validateAuthoringEvidence } from "../config/texas/law-of-contracts-authoring-evidence.mjs";
+import { TOPIC_1_QUIZ, TOPIC_2_QUIZ } from "../config/texas/law-of-contracts-question-bank.mjs";
+import {
+  AUTHORING_EVIDENCE,
+  MODULE_2_AUTHORING_EVIDENCE,
+  validateAuthoringEvidence,
+  validateModule2AuthoringEvidence,
+} from "../config/texas/law-of-contracts-authoring-evidence.mjs";
 import { FORMS as CURRENT_TREC_FORMS } from "../config/texas/pcf-current-forms-inventory.mjs";
 import { RULES, ASSESSMENT_REQUIREMENTS, SUBMISSION_READINESS } from "../config/texas/trec-rules-source-lock.mjs";
 
@@ -78,6 +92,38 @@ test("nine missing Texas chapters are now held course-locally without mutating t
   }
 });
 
+test("four Topic 02 business-organization chapters are acquired from official Texas static resources", () => {
+  const catalogPath = path.join(root, "texas/tx-law-of-contracts-30-v1/sources/business-organizations/catalog.json");
+  const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
+  assert.equal(catalog.retrievedOn, "2026-08-31");
+  assert.equal(catalog.sourceCount, 4);
+  assert.equal(catalog.totalBytes, 528252);
+  assert.deepEqual(catalog.sources.map((source) => source.id), ["bo-1", "bo-2", "bo-101", "bo-152"]);
+  assert.deepEqual(catalog.sources.map((source) => source.bytes), [76538, 40609, 254996, 156109]);
+  assert.deepEqual(catalog.sources.map((source) => source.sha256), [
+    "d4e5a88dd40769581f8fb903419518a0199b25d35170667fd00f3b04f1b206c5",
+    "1943f3dabe74020e5370a2b6cccd5bc6e59c42ce157243a0b20e26d6a16c2c4e",
+    "e009a395de52e557f5d2c4d9a8a417ae0abc1b10d20312bbbb7a3ab75813ca01",
+    "50094319ddce526a2b0dda31cd10aa3d35caa2b2facc19429f0a779d7ab9b0f2",
+  ]);
+  assert.match(catalog.status, /Holding a chapter is not reading a section/);
+  assert.deepEqual(catalog.sources.map((source) => source.title), [
+    "Definitions and Other General Provisions",
+    "Purposes and Power of Domestic Entity",
+    "Limited Liability Companies",
+    "General Partnerships",
+  ]);
+  for (const source of catalog.sources) {
+    assert.equal(source.publisher, "Texas Legislative Council");
+    assert.equal(source.sourceLayer, "tcss.legis.texas.gov static resources");
+    assert.match(source.url, /^https:\/\/tcss\.legis\.texas\.gov\/resources\/BO\/htm\/BO\.(?:1|2|101|152)\.htm$/u);
+    const bytes = fs.readFileSync(path.join(root, source.localCopy));
+    assert.equal(bytes.length, source.bytes);
+    assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), source.sha256);
+    assert.match(bytes.subarray(0, 80).toString("utf8"), /<html\b/i);
+  }
+});
+
 test("all nine course-local chapters now have verified section-level reads", () => {
   assert.deepEqual(validateStatuteReads(), {
     status: "PASS",
@@ -90,7 +136,8 @@ test("all nine course-local chapters now have verified section-level reads", () 
   });
   assert.match(READ_SCOPE.method, /complete official HTML text/i);
   assert.match(READ_SCOPE.authorityLimit, /only the proposition in its note/i);
-  assert.match(READ_SCOPE.authoringStatus, /no authored unit currently relies on these nine/i);
+  assert.match(READ_SCOPE.authoringStatus, /reusable register makes no curriculum-reliance claim/i);
+  assert.match(READ_SCOPE.authoringStatus, /course-specific source layer may separately establish exact unit reliance/i);
 });
 
 test("statute reads identify candidate units but make no premature curriculum-reliance claim", () => {
@@ -216,6 +263,7 @@ test("Topic 01 source trace verifies exact held bytes, cited sections, form page
   assert.deepEqual(MODULE_1_SOURCES.map((source) => source.id), ["loc-oc-1101", "loc-bc-17", "loc-tac-537-11", "loc-form-20-19"]);
   assert.deepEqual(Object.keys(MODULE_1_UNIT_SOURCE_REQUIREMENTS), TOPICS[0].units.map((unit) => unit.code));
   assert.ok(Object.keys(MODULE_1_CLAIM_NEEDLES).length >= 6);
+  assert.ok(MODULE_1_AUTHORED_CLAIM_CHECKS.length >= 7);
   assert.deepEqual(MODULE_1_SOURCE_GAPS.map((gap) => gap.id), ["sos-tac-22-537-11"]);
   assert.equal(MODULE_1_SOURCE_GAPS[0].status, "UNREAD_EXTERNAL_SOURCE");
   assert.match(MODULE_1_SOURCE_GAPS[0].note, /Secretary of State.*does not claim a codified-text comparison/is);
@@ -227,7 +275,39 @@ test("Topic 01 source trace verifies exact held bytes, cited sections, form page
   assert.equal(form.sha256, "3f458518e9e01fc9c84cab420dcd0ce9793113c4b356ed5caf7a2fb1bdef2ca5");
 });
 
-test("incremental course record marks only Topic 01 authored and keeps every operational gate closed", () => {
+test("Topic 02 source trace is bidirectional, claim-checked, and explicit about provider methodology", () => {
+  assert.deepEqual(validateModule2Sources(), {
+    status: "PASS",
+    sources: 21,
+    verifiedFiles: 21,
+    readSections: 31,
+    coveredOfficialSourceUnits: 7,
+    providerMethodUnits: 1,
+    disclosedScopeLimits: 4,
+    problems: [],
+  });
+  assert.equal(MODULE_2_SOURCES.length, 21);
+  assert.deepEqual(Object.keys(MODULE_2_UNIT_SOURCE_REQUIREMENTS), TOPICS[1].units.map((unit) => unit.code));
+  assert.equal(MODULE_2_UNIT_SOURCE_REQUIREMENTS.T02U4.length, 0);
+  assert.deepEqual(MODULE_2_PROVIDER_METHODS.map((method) => method.id), ["loc2-provider-property-characteristics"]);
+  assert.ok(MODULE_2_CLAIM_CHECKS.length >= 8);
+  assert.deepEqual(MODULE_2_SOURCE_GAPS.map((gap) => gap.id), [
+    "loc2-general-fixture-case-law-not-held",
+    "loc2-characteristics-provider-taxonomy",
+    "loc2-cooperative-housing-regime-not-held",
+    "loc2-townhouse-label-not-title-estate",
+  ]);
+  assert.ok(MODULE_2_SOURCE_GAPS.every((gap) => /SCOPE_NARROWED|DISCLOSED_PROVIDER_METHOD/u.test(gap.status)));
+
+  const form = MODULE_2_SOURCES.find((source) => source.id === "loc2-form-20-19");
+  assert.equal(form.sectionsRead[0].section, "page 1");
+  assert.deepEqual(form.reliedOnByUnits, ["T02U2", "T02U3"]);
+  const federal = MODULE_2_SOURCES.find((source) => source.id === "loc2-usc-42-3604");
+  assert.equal(federal.currentThrough, "2026-07-12");
+  assert.equal(federal.sha256, "1c35aca0cc53d430dcb4b100669730aff179d589b7d208593552b6c61a3fee9b");
+});
+
+test("incremental course record marks only Topics 01 and 02 authored and keeps every operational gate closed", () => {
   assert.equal(COURSE.buildStatus, "IN_REPO_AUTHORING_IN_PROGRESS");
   assert.equal(COURSE.curriculumComplete, false);
   assert.equal(COURSE.contentFreeze, null);
@@ -241,12 +321,17 @@ test("incremental course record marks only Topic 01 authored and keeps every ope
 
   assert.equal(MODULES.length, 11);
   assert.equal(UNIT_TRACE.length, 80);
-  assert.equal(Object.keys(UNIT_OBJECTIVES).length, 6);
+  assert.equal(Object.keys(UNIT_OBJECTIVES).length, 14);
   const topic1 = UNIT_TRACE.filter((trace) => trace.topicCode === "T01");
-  const future = UNIT_TRACE.filter((trace) => trace.topicCode !== "T01");
+  const topic2 = UNIT_TRACE.filter((trace) => trace.topicCode === "T02");
+  const future = UNIT_TRACE.filter((trace) => trace.topicCode !== "T01" && trace.topicCode !== "T02");
   assert.equal(topic1.length, 6);
+  assert.equal(topic2.length, 8);
   assert.ok(topic1.every((trace) => trace.authored && trace.sourceReady && trace.objective && trace.sources.length));
-  assert.ok(future.every((trace) => !trace.authored && !trace.sourceReady && trace.objective === null && trace.sources.length === 0 && trace.sourceGaps.length === 0));
+  assert.ok(topic2.every((trace) => trace.authored && trace.sourceReady && trace.objective && (trace.sources.length || trace.providerMethods.length)));
+  assert.deepEqual(topic2.find((trace) => trace.code === "T02U4").sources, []);
+  assert.deepEqual(topic2.find((trace) => trace.code === "T02U4").providerMethods.map((method) => method.id), ["loc2-provider-property-characteristics"]);
+  assert.ok(future.every((trace) => !trace.authored && !trace.sourceReady && trace.objective === null && trace.sources.length === 0 && trace.sourceGaps.length === 0 && trace.providerMethods.length === 0));
 
   const affected = new Set(MODULE_1_SOURCE_GAPS[0].affectedUnits);
   for (const trace of topic1) {
@@ -264,14 +349,19 @@ test("incremental course record marks only Topic 01 authored and keeps every ope
 test("authored Topic 01 partitions prose and activities and clears its own 155-minute allocation", () => {
   const validation = validateAuthoringEvidence();
   assert.equal(validation.status, "PASS");
-  assert.equal(validation.totalWords, 11277);
-  assert.equal(validation.proseWords, 9036);
+  assert.equal(validation.totalWords, 11301);
+  assert.equal(validation.proseWords, 9060);
   assert.equal(validation.activityWords, 2241);
   assert.equal(validation.totalWords, validation.proseWords + validation.activityWords);
   assert.ok(validation.measuredRequiredMinutes >= validation.prescribedMinutes);
   assert.equal(AUTHORING_EVIDENCE.minimumProseWords, 8540);
   assert.equal(AUTHORING_EVIDENCE.activityMinutes, 94);
   assert.deepEqual(AUTHORING_EVIDENCE.unitHeadings, TOPICS[0].units.map((unit) => unit.unit));
+  assert.deepEqual(AUTHORING_EVIDENCE.unitEvidence.map((unit) => unit.code), TOPICS[0].units.map((unit) => unit.code));
+  assert.ok(AUTHORING_EVIDENCE.unitEvidence.every((unit) => unit.primaryQuizItems === 1 && unit.proseWords > 0));
+  assert.equal(AUTHORING_EVIDENCE.sharedActivityMinutes, 8);
+  assert.deepEqual(AUTHORING_EVIDENCE.sharedActivitySegments.map((segment) => segment.type), ["misconceptionCheck", "moduleRecap"]);
+  assert.match(AUTHORING_EVIDENCE.unitTimePolicy, /unit minutes are suggested and may be altered/i);
   assert.deepEqual(AUTHORING_EVIDENCE.counts, {
     statuteReadingExercises: 2,
     appliedExercises: 3,
@@ -283,6 +373,40 @@ test("authored Topic 01 partitions prose and activities and clears its own 155-m
   });
   assert.match(AUTHORING_EVIDENCE.sha256, /^[a-f0-9]{64}$/u);
   assert.match(AUTHORING_EVIDENCE.conditionalReplacementPolicy, /not counted toward the required 155-minute path/i);
+});
+
+test("authored Topic 02 partitions prose and activities and clears its own 115-minute allocation", () => {
+  const validation = validateModule2AuthoringEvidence();
+  assert.deepEqual(validation, {
+    status: "PASS",
+    module: "module-02",
+    totalWords: 10951,
+    proseWords: 10142,
+    activityWords: 809,
+    measuredRequiredMinutes: 125.44285714285714,
+    prescribedMinutes: 115,
+    activitySegments: 4,
+    problems: [],
+  });
+  assert.equal(MODULE_2_AUTHORING_EVIDENCE.minimumProseWords, 8680);
+  assert.equal(MODULE_2_AUTHORING_EVIDENCE.activityMinutes, 53);
+  assert.deepEqual(MODULE_2_AUTHORING_EVIDENCE.unitHeadings, TOPICS[1].units.map((unit) => unit.unit));
+  assert.deepEqual(MODULE_2_AUTHORING_EVIDENCE.unitEvidence.map((unit) => unit.code), TOPICS[1].units.map((unit) => unit.code));
+  assert.deepEqual(MODULE_2_AUTHORING_EVIDENCE.unitEvidence.map((unit) => unit.suggestedMinutes), TOPICS[1].units.map((unit) => unit.minutes));
+  assert.ok(MODULE_2_AUTHORING_EVIDENCE.unitEvidence.every((unit) => unit.primaryQuizItems === 1 && unit.proseWords > 0));
+  assert.equal(MODULE_2_AUTHORING_EVIDENCE.sharedActivityMinutes, 5);
+  assert.match(MODULE_2_AUTHORING_EVIDENCE.unitTimePolicy, /topic subtotal is the enforced minimum/i);
+  assert.deepEqual(MODULE_2_AUTHORING_EVIDENCE.counts, {
+    statuteReadingExercises: 1,
+    appliedExercises: 2,
+    scenarios: 0,
+    misconceptionChecks: 0,
+    moduleRecaps: 1,
+    quizItems: 8,
+    conditionalReplacementItems: 8,
+  });
+  assert.match(MODULE_2_AUTHORING_EVIDENCE.sha256, /^[a-f0-9]{64}$/u);
+  assert.match(MODULE_2_AUTHORING_EVIDENCE.conditionalReplacementPolicy, /not counted toward the required 115-minute path/i);
 });
 
 test("Topic 01 formative bank has one traced primary and one distinct successor per LOC-0 unit", () => {
@@ -301,22 +425,48 @@ test("Topic 01 formative bank has one traced primary and one distinct successor 
     assert.notEqual(item.judgement, item.replacement.judgement);
     assert.ok(moduleText.includes(item.contentAnchor));
     assert.match(item.remediation, /^module-01\.md#[a-z0-9-]+$/u);
-    assert.deepEqual(item.sourceRefs, item.replacement.sourceRefs);
     assert.ok(item.sourceRefs.length > 0);
+    assert.ok(item.replacement.sourceRefs.length > 0);
+    assert.ok(moduleText.includes(item.replacement.contentAnchor));
+    assert.match(item.replacement.remediation, /^module-01\.md#[a-z0-9-]+$/u);
   }
 
   const bankText = fs.readFileSync(path.join(root, "config/texas/law-of-contracts-question-bank.mjs"), "utf8");
   assert.doesNotMatch(bankText, /finalExaminationExists:\s*true|final examination is ready|TREC[- ]approved/iu);
 });
 
+test("Topic 02 formative bank has one traced primary and one distinct successor per LOC-0 unit", () => {
+  const moduleText = fs.readFileSync(path.join(root, MODULE_2_AUTHORING_EVIDENCE.path), "utf8");
+  assert.equal(TOPIC_2_QUIZ.length, 8);
+  assert.deepEqual(TOPIC_2_QUIZ.map((item) => item.unit), TOPICS[1].units.map((unit) => unit.code));
+  assert.equal(new Set(TOPIC_2_QUIZ.flatMap((item) => [item.id, item.replacement.id])).size, 16);
+  assert.equal(new Set(TOPIC_2_QUIZ.flatMap((item) => [item.prompt, item.replacement.prompt])).size, 16);
+
+  for (const item of TOPIC_2_QUIZ) {
+    for (const candidate of [item, item.replacement]) {
+      assert.equal(candidate.correctChoice, 0);
+      assert.equal(candidate.module, "module-02");
+      assert.equal(candidate.unit, item.unit);
+      assert.ok(candidate.sourceRefs.length > 0);
+      assert.ok(moduleText.includes(candidate.contentAnchor));
+      assert.match(candidate.remediation, /^module-02\.md#[a-z0-9-]+$/u);
+      assert.equal(candidate.choices.length, 4);
+    }
+    assert.notEqual(item.judgement, item.replacement.judgement);
+    assert.notEqual(item.prompt, item.replacement.prompt);
+  }
+});
+
 test("build status separates unfinished repository work from external submission blockers", () => {
   const status = fs.readFileSync(path.join(root, "texas/tx-law-of-contracts-30-v1/BUILD-STATUS.md"), "utf8");
-  assert.match(status, /1 of 11 LOC-0 topics and 6 of 80 LOC-0 units are authored/);
+  assert.match(status, /2 of 11 LOC-0 topics and 14 of 80 LOC-0 units are authored/);
   assert.match(status, new RegExp(`${AUTHORING_EVIDENCE.totalWords.toLocaleString("en-US")} total words`));
   assert.match(status, new RegExp(`${AUTHORING_EVIDENCE.proseWords.toLocaleString("en-US")} teaching-prose words`));
+  assert.match(status, new RegExp(`${MODULE_2_AUTHORING_EVIDENCE.totalWords.toLocaleString("en-US")} total words`));
+  assert.match(status, new RegExp(`${MODULE_2_AUTHORING_EVIDENCE.proseWords.toLocaleString("en-US")} teaching-prose words`));
   assert.match(status, /Remaining work inside the repository/);
   assert.match(status, /External submission blockers/);
   assert.match(status, /not submitted, not approved, not enrollable/i);
-  assert.match(status, /remaining 10 topics and 74 units/);
+  assert.match(status, /remaining 9 topics and 66 units/);
   assert.doesNotMatch(status, /course is complete|TREC[- ]approved/iu);
 });
