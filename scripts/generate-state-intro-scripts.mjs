@@ -236,8 +236,13 @@ function toMarkdown({ state, stateCourses, status, segments, blocked, missing })
     out.push("");
   } else {
     out.push("> **No approval claimed.** This script states plainly that nothing here is approved and");
-    out.push("> that no credit is earned. Do not soften that language when recording. RE 303:");
-    out.push("> offerings *\"may not be promoted as being DRE-approved until actual approval is issued.\"*");
+    if (state.state_code === "MI") {
+      out.push("> that no credit is earned. Do not soften that language when recording. Michigan PSS/BPL");
+      out.push("> authorization and approval must be recorded before any availability or credit claim.");
+    } else {
+      out.push("> that no credit is earned. Do not soften that language when recording. RE 303:");
+      out.push("> offerings *\"may not be promoted as being DRE-approved until actual approval is issued.\"*");
+    }
     out.push("");
   }
 
@@ -273,13 +278,22 @@ function toMarkdown({ state, stateCourses, status, segments, blocked, missing })
 
   out.push("## Recording notes");
   out.push("");
-  out.push("- **Captions are required.** A WebVTT caption file must accompany the video. RE 303 notes the");
-  out.push("  ADA obligation to offer courses and examinations accessibly, and this is the cheapest place");
-  out.push("  to meet it.");
+  if (state.state_code === "MI") {
+    out.push("- **Captions are required by StateCourse's accessibility control.** A WebVTT caption file must accompany the video.");
+  } else {
+    out.push("- **Captions are required.** A WebVTT caption file must accompany the video. RE 303 notes the");
+    out.push("  ADA obligation to offer courses and examinations accessibly, and this is the cheapest place");
+    out.push("  to meet it.");
+  }
   out.push("- **A transcript must be published** alongside the video on the page.");
   out.push("- **Do not add claims while recording.** Anything not in this script is not in the data.");
-  out.push("- **Do not state or imply a completion time** shorter than the hours above. Regulation 3004(c)");
-  out.push("  prohibits advertising that implies a course can be completed in less time than its approved hours.");
+  if (state.state_code === "MI") {
+    out.push("- **Do not state or imply a shorter completion time.** Michigan requires all 40 approved hours;");
+    out.push("  false or unsupported course claims are barred, and noneducational solicitation earns no credit.");
+  } else {
+    out.push("- **Do not state or imply a completion time** shorter than the hours above. Regulation 3004(c)");
+    out.push("  prohibits advertising that implies a course can be completed in less time than its approved hours.");
+  }
   out.push("- **Re-record when the status changes.** Regenerate these scripts after any registry change and");
   out.push("  compare; a changed script means the recorded video is now inaccurate.");
   out.push("");

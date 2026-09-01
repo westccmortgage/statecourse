@@ -1,8 +1,8 @@
-# Principles of Real Estate - Module 05
+# Principles of Real Estate - Michigan Salesperson Prelicensure — Module 05
 
 ## Agency, the service provision agreement, and disclosure
 
-**Course version:** 1.0 submission draft
+**Course version:** 1.0-submission-draft
 **Module time:** 4 clock hours (240 instructional minutes)
 **Regulatory status:** Not approved. No Michigan prelicensure credit is available for this course.
 
@@ -24,7 +24,7 @@ By the end of this module the student will be able to:
 | Guided reading: agency, the service provision agreement, and duties | 75 | Sections 1-2 recorded as viewed |
 | Guided reading: disclosure, and the forms of representation | 70 | Sections 3-4 recorded as viewed |
 | Guided reading: material facts, conflicts, and advertising | 65 | Sections 5-6 recorded as viewed |
-| Applied exercise: an agency and disclosure memorandum | 20 | Written response submitted |
+| Applied exercise: agency/disclosure memorandum + confirmation | 20 | Written response and applied-confirmation result recorded |
 | Scored engagement check | 10 | Five items submitted |
 | **Total** | **240** | **One of ten modules of instruction** |
 
@@ -318,11 +318,11 @@ A licensee posts a listing on social media using only her personal brand name an
 
 ## Required applied exercise
 
-Prepare a one-page agency and disclosure memorandum for the scenario supplied with this module. Identify every party and what each is owed; state when the agency disclosure had to be given and what evidence you would have that it was; identify every material fact known to you and how you would disclose it; identify each conflict of interest and the written step it requires; and state what you would escalate to your broker. The instructor version carries the scoring rubric.
+Prepare a one-page agency and disclosure memorandum for the scenario supplied with this module. Identify every party and what each is owed; state when the agency disclosure had to be given and what evidence you would have that it was; identify every material fact known to you and how you would disclose it; identify each conflict of interest and the written step it requires; and state what you would escalate to your broker. The approved instructor scores it under the common 10-point applied-memo rubric; 8/10 with no zero on legal accuracy or professional boundaries is satisfactory, and a needs-revision result receives feedback and must be resubmitted.
 
 ## Knowledge check and remediation
 
-Complete the five-item engagement check. The mastery threshold is 80 percent. An unsuccessful attempt opens remediation with an alternate explanation, a second worked scenario, and a different item, which must be answered correctly before the module completes — R 339.22157(2)(f).
+After submitting the memo, complete the one-item applied confirmation check at 100 percent, then the five-item engagement check at 80 percent. A missed confirmation returns you to the relevant instruction. An unsuccessful engagement attempt opens remediation with an alternate explanation, a second worked scenario, and a separately authored five-item set. The module cannot complete until the memo is satisfactory, the confirmation is correct, and the student reaches the StateCourse 80 percent threshold on any remediation set — R 339.22157(2)(f).
 
 ## Module completion
 

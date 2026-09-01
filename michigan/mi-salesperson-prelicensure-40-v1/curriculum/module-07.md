@@ -1,8 +1,8 @@
-# Principles of Real Estate - Module 07
+# Principles of Real Estate - Michigan Salesperson Prelicensure — Module 07
 
 ## Civil rights law and equal opportunity in housing
 
-**Course version:** 1.0 submission draft
+**Course version:** 1.0-submission-draft
 **Module time:** 4 clock hours (240 instructional minutes)
 **Statutory status:** These four clock hours are the instruction on civil rights law and equal opportunity in housing required by MCL 339.2504. No other module's time is counted toward this requirement.
 **Regulatory status:** Not approved. No Michigan prelicensure credit is available for this course.
@@ -25,7 +25,7 @@ By the end of this module the student will be able to:
 | Guided reading: the federal Act and Michigan's statutes | 75 | Sections 1-2 recorded as viewed |
 | Guided reading: prohibited practices and accommodation | 70 | Sections 3-4 recorded as viewed |
 | Guided reading: advertising, enforcement, and daily practice | 65 | Sections 5-6 recorded as viewed |
-| Applied exercise: a fair housing review memorandum | 20 | Written response submitted |
+| Applied exercise: fair-housing memorandum + confirmation | 20 | Written response and applied-confirmation result recorded |
 | Scored engagement check | 10 | Five items submitted |
 | **Total** | **240** | **The four clock hours required by MCL 339.2504** |
 
@@ -359,11 +359,11 @@ A licensee has shown a couple eleven properties, all in the same three subdivisi
 
 ## Required applied exercise
 
-Prepare a one-page fair housing review memorandum for the file supplied with this module. Identify every protected characteristic engaged and the statute that supplies it; identify each instruction, advertisement, or practice that raises a problem and say precisely why; state what you would refuse and how you would record the refusal; rewrite the advertising copy so that it describes the property; and state the objective criteria you would record for the buyer search. The instructor version carries the scoring rubric.
+Prepare a one-page fair housing review memorandum for the file supplied with this module. Identify every protected characteristic engaged and the statute that supplies it; identify each instruction, advertisement, or practice that raises a problem and say precisely why; state what you would refuse and how you would record the refusal; rewrite the advertising copy so that it describes the property; and state the objective criteria you would record for the buyer search. The approved instructor scores it under the common 10-point applied-memo rubric; 8/10 with no zero on legal accuracy or professional boundaries is satisfactory, and a needs-revision result receives feedback and must be resubmitted.
 
 ## Knowledge check and remediation
 
-Complete the five-item engagement check. The mastery threshold is 80 percent. An unsuccessful attempt opens remediation with an alternate explanation, a second worked scenario, and a different item, which must be answered correctly before the module completes — R 339.22157(2)(f).
+After submitting the memo, complete the one-item applied confirmation check at 100 percent, then the five-item engagement check at 80 percent. A missed confirmation returns you to the relevant instruction. An unsuccessful engagement attempt opens remediation with an alternate explanation, a second worked scenario, and a separately authored five-item set. The module cannot complete until the memo is satisfactory, the confirmation is correct, and the student reaches the StateCourse 80 percent threshold on any remediation set — R 339.22157(2)(f).
 
 ## Module completion
 

@@ -12,7 +12,7 @@ const accountSignIn = document.querySelector("#accountSignIn");
 const publicCourses = [
   {id:"va-salesperson",state:"VA",stateName:"Virginia",name:"Principles & Practices of Real Estate",hours:60,status:"In Development / Preparing Submission",regulator:"Virginia Real Estate Board"},
   {id:"me-sales-agent",state:"ME",stateName:"Maine",name:"Maine Real Estate Sales Agent Pre-License",hours:55,status:"In Development",regulator:"Maine Real Estate Commission"},
-  {id:"mi-salesperson-prelicensure-40-v1",state:"MI",stateName:"Michigan",name:"Michigan Principles of Real Estate",hours:40,status:"In Development / Preparing Submission",regulator:"Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing"},
+  {id:"mi-salesperson-prelicensure-40-v1",state:"MI",stateName:"Michigan",name:"Principles of Real Estate - Michigan Salesperson Prelicensure",hours:40,status:"In Development / Preparing Submission",regulator:"Michigan LARA Bureau of Professional Licensing and Michigan LEO Post Secondary Schools"},
   {id:"ca-real-estate-principles-45",state:"CA",stateName:"California",name:"Real Estate Principles",hours:45,status:"In Development",regulator:"California Department of Real Estate"},
   {id:"ca-real-estate-practice-45",state:"CA",stateName:"California",name:"Real Estate Practice",hours:45,status:"In Development",regulator:"California Department of Real Estate"},
   {id:"ca-mortgage-loan-brokering-lending-45",state:"CA",stateName:"California",name:"Mortgage Loan Brokering and Lending",hours:45,status:"In Development",regulator:"California Department of Real Estate"},

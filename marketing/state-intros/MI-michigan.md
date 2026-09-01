@@ -1,7 +1,7 @@
 # Michigan — introductory video script
 
 **Jurisdiction:** Michigan (MI)
-**Regulator:** Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing
+**Regulator:** Michigan LARA Bureau of Professional Licensing and Michigan LEO Post Secondary Schools
 **Public status:** In Development
 **Status treatment:** `in_development`
 **Target length:** approximately 85 seconds
@@ -12,8 +12,8 @@
 > data it is supposed to reflect. Change the registry, then regenerate.
 
 > **No approval claimed.** This script states plainly that nothing here is approved and
-> that no credit is earned. Do not soften that language when recording. RE 303:
-> offerings *"may not be promoted as being DRE-approved until actual approval is issued."*
+> that no credit is earned. Do not soften that language when recording. Michigan PSS/BPL
+> authorization and approval must be recorded before any availability or credit claim.
 
 ## Script
 
@@ -24,7 +24,7 @@
 
 ### requirement — ~30s
 
-> Real estate licensing in Michigan is regulated by the Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing.
+> Real estate licensing in Michigan is regulated by the Michigan LARA Bureau of Professional Licensing and Michigan LEO Post Secondary Schools.
 > The pre-license education requirement is 40 hours. That is the requirement as we record it; the regulator's own published requirements always control, and you should confirm them directly.
 > Approved courses may be delivered by: Distance (online), Non-distance (classroom).
 > Courses must be approved by the regulator before they count toward the requirement. A course that is not approved earns nothing, however good it is.
@@ -33,8 +33,8 @@
 ### status — ~25s
 
 > StateCourse is building courses for Michigan, and they are not approved yet.
-> We are developing one course for Michigan: Principles of Real Estate.
-> These courses have not been approved by the Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing. You cannot enroll in them, and they do not currently earn credit toward any licensing requirement.
+> We are developing one course for Michigan: Principles of Real Estate - Michigan Salesperson Prelicensure.
+> These courses have not been approved by the Michigan LARA Bureau of Professional Licensing and Michigan LEO Post Secondary Schools. You cannot enroll in them, and they do not currently earn credit toward any licensing requirement.
 > We will say so here, plainly, when that changes.
 
 ### close — ~12s
@@ -59,17 +59,15 @@
 
 | Course | Hours | Approval status | Enrollment |
 | --- | ---: | --- | --- |
-| Principles of Real Estate | 40 | In Development / Preparing Submission | Disabled |
+| Principles of Real Estate - Michigan Salesperson Prelicensure | 40 | In Development / Preparing Submission | Disabled |
 
 ## Recording notes
 
-- **Captions are required.** A WebVTT caption file must accompany the video. RE 303 notes the
-  ADA obligation to offer courses and examinations accessibly, and this is the cheapest place
-  to meet it.
+- **Captions are required by StateCourse's accessibility control.** A WebVTT caption file must accompany the video.
 - **A transcript must be published** alongside the video on the page.
 - **Do not add claims while recording.** Anything not in this script is not in the data.
-- **Do not state or imply a completion time** shorter than the hours above. Regulation 3004(c)
-  prohibits advertising that implies a course can be completed in less time than its approved hours.
+- **Do not state or imply a shorter completion time.** Michigan requires all 40 approved hours;
+  false or unsupported course claims are barred, and noneducational solicitation earns no credit.
 - **Re-record when the status changes.** Regenerate these scripts after any registry change and
   compare; a changed script means the recorded video is now inaccurate.
 

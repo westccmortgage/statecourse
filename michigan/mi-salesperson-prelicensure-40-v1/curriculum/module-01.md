@@ -1,8 +1,8 @@
-# Principles of Real Estate - Module 01
+# Principles of Real Estate - Michigan Salesperson Prelicensure — Module 01
 
 ## Michigan license law, the Occupational Code, and the regulated activity
 
-**Course version:** 1.0 submission draft
+**Course version:** 1.0-submission-draft
 **Module time:** 4 clock hours (240 instructional minutes)
 **Regulatory status:** Not approved. No Michigan prelicensure credit is available for this course.
 
@@ -24,7 +24,7 @@ By the end of this module the student will be able to:
 | Guided reading: the regulated activity and the licence structure | 75 | Sections 1-2 recorded as viewed |
 | Guided reading: exemptions and the Department's jurisdiction | 70 | Sections 3-4 recorded as viewed |
 | Guided reading: sources of law and the boundary with legal practice | 65 | Sections 5-6 recorded as viewed |
-| Applied exercise: a licensing determination memorandum | 20 | Written response submitted |
+| Applied exercise: licensing memorandum + confirmation | 20 | Written response and applied-confirmation result recorded |
 | Scored engagement check | 10 | Five items submitted |
 | **Total** | **240** | **One of ten modules of instruction** |
 
@@ -517,11 +517,11 @@ The licensing analysis in this module is rarely the hard part of a real transact
 
 ## Required applied exercise
 
-Prepare a one-page licensing determination memorandum on the scenario presented with this module. State whether a Michigan real estate licence is required for each described activity and identify the element of the statutory definition that decides it; identify any exemption that might apply and why it does or does not; name the facts you would still need and how you would obtain them; state what you would escalate to your broker and what you would refer to a lawyer; and state what you would put in the file. The instructor version carries the scoring rubric.
+Prepare a one-page licensing determination memorandum on the scenario presented with this module. State whether a Michigan real estate licence is required for each described activity and identify the element of the statutory definition that decides it; identify any exemption that might apply and why it does or does not; name the facts you would still need and how you would obtain them; state what you would escalate to your broker and what you would refer to a lawyer; and state what you would put in the file. The approved instructor scores it under the common 10-point applied-memo rubric; 8/10 with no zero on legal accuracy or professional boundaries is satisfactory, and a needs-revision result receives feedback and must be resubmitted.
 
 ## Knowledge check and remediation
 
-Complete the five-item engagement check for this module. The mastery threshold is 80 percent — four of five. An unsuccessful attempt opens remediation: an alternate explanation of the same concepts, a second worked scenario, and a different item covering the same ground. The module cannot be completed until the remediation item is answered correctly, which is what R 339.22157(2)(f) requires — the module repeats until the content is understood. The 80 percent threshold is a StateCourse instructional standard, not a figure prescribed by Michigan.
+After submitting the memo, complete the one-item applied confirmation check at 100 percent, then the five-item engagement check at 80 percent — four of five. A missed confirmation returns you to the relevant instruction. An unsuccessful engagement attempt opens remediation: an alternate explanation, a second worked scenario, and a separately authored five-item set on the same concepts. The module cannot be completed until the memo is satisfactory, the confirmation is correct, and the student reaches 80 percent on any remediation set, which is how this course implements R 339.22157(2)(f). All thresholds are StateCourse instructional standards, not figures prescribed by Michigan.
 
 ## Module completion
 

@@ -1,8 +1,8 @@
-# Principles of Real Estate - Module 08
+# Principles of Real Estate - Michigan Salesperson Prelicensure — Module 08
 
 ## Real estate finance and settlement law
 
-**Course version:** 1.0 submission draft
+**Course version:** 1.0-submission-draft
 **Module time:** 4 clock hours (240 instructional minutes)
 **Regulatory status:** Not approved. No Michigan prelicensure credit is available for this course.
 
@@ -24,7 +24,7 @@ By the end of this module the student will be able to:
 | Guided reading: the instruments and the loan types | 75 | Sections 1-2 recorded as viewed |
 | Guided reading: the arithmetic and Michigan foreclosure | 70 | Sections 3-4 recorded as viewed |
 | Guided reading: federal settlement and lending law | 65 | Sections 5-6 recorded as viewed |
-| Applied exercise: a financing review memorandum | 20 | Written response submitted |
+| Applied exercise: financing memorandum + confirmation | 20 | Written response and applied-confirmation result recorded |
 | Scored engagement check | 10 | Five items submitted |
 | **Total** | **240** | **One of ten modules of instruction** |
 
@@ -351,11 +351,11 @@ A buyer asks the licensee to write the purchase agreement at $315,000 with a $15
 
 ## Required applied exercise
 
-Prepare a one-page financing review memorandum for the transaction supplied with this module. Compute the loan amount, LTV, points, first-month interest, and both qualifying ratios; identify the loan type and every property consequence it carries; identify each federal timing rule that constrains the closing date; identify any payment, credit, or side arrangement that raises a RESPA or fraud question and state what you would do about it; and state what you would refer to the lender and what to counsel. The instructor version carries the scoring rubric.
+Prepare a one-page financing review memorandum for the transaction supplied with this module. Compute the loan amount, LTV, points, first-month interest, and both qualifying ratios; identify the loan type and every property consequence it carries; identify each federal timing rule that constrains the closing date; identify any payment, credit, or side arrangement that raises a RESPA or fraud question and state what you would do about it; and state what you would refer to the lender and what to counsel. The approved instructor scores it under the common 10-point applied-memo rubric; 8/10 with no zero on legal accuracy or professional boundaries is satisfactory, and a needs-revision result receives feedback and must be resubmitted.
 
 ## Knowledge check and remediation
 
-Complete the five-item engagement check. The mastery threshold is 80 percent. An unsuccessful attempt opens remediation with an alternate explanation, a second worked scenario, and a different item, which must be answered correctly before the module completes — R 339.22157(2)(f).
+After submitting the memo, complete the one-item applied confirmation check at 100 percent, then the five-item engagement check at 80 percent. A missed confirmation returns you to the relevant instruction. An unsuccessful engagement attempt opens remediation with an alternate explanation, a second worked scenario, and a separately authored five-item set. The module cannot complete until the memo is satisfactory, the confirmation is correct, and the student reaches the StateCourse 80 percent threshold on any remediation set — R 339.22157(2)(f).
 
 ## Module completion
 
