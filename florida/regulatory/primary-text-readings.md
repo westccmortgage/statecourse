@@ -36,8 +36,9 @@ places where the Department's own documents disagree with each other.
 
 The item-count question remains open; the current RE 18 closes the historical form-count and RE 19
 questions. Nothing downstream may resurrect a superseded answer. The remaining questions and safe
-pending behaviour are in `config/florida/assessment-architecture.mjs`, and the send-ready inquiry is
-in `florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md`.
+pending behaviour are in `config/florida/assessment-architecture.mjs`. The owner sent them by scope
+in two messages on 1 September 2026; exact transport metadata is in
+`florida/submission/regulator-inquiries/transmission-log.md`.
 
 ### 1. How many items must the end-of-course examination contain?
 

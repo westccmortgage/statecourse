@@ -1,4 +1,8 @@
-# Pearson/DBPR instructor-exam logistics inquiry - ready to send
+# Pearson/DBPR instructor-exam logistics inquiry - staged, not sent
+
+**Status as of 2026-09-01:** **NOT SENT.** The two recorded owner transmissions went to DBPR
+Education and did not go to Pearson. Send this separately when a Pearson routing channel or
+candidate authorization is available.
 
 **Route:** Florida Real Estate Instructor Examination after DBPR RE 3 transaction 1010 authorization.
 

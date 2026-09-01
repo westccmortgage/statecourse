@@ -9,7 +9,7 @@
 
 | Stage | Filing or event | Current state | Release condition |
 |---:|---|---|---|
-| 1 | Written DBPR/FREC pre-filing clarification | Owner authorized; draft ready | Send through an owner-controlled DBPR/email channel; no protected applicant data included |
+| 1 | Written DBPR/FREC pre-filing clarification | **SENT 2026-09-01 as two owner-controlled messages** | Await responses; preserve Gmail thread IDs in the transmission log |
 | 2 | DBPR RE 3, transaction 1010 | Owner-action NO-GO | Owner completes protected data, background answers, declaration and $62.75 payment |
 | 3 | Registered Livescan after RE 3 filing | Human-only | RE 3 filed; owner personally completes fingerprints and pays vendor fee |
 | 4 | DBPR exam authorization and Pearson instructor examination | External/human | DBPR authorization; current Pearson fee/test center confirmed; owner sits physical exam |
@@ -29,8 +29,9 @@
 | `02-owner-action-and-form-data-checklist.md` | Exact protected data, decisions, signatures and payments the repository cannot supply | Ready |
 | `03-current-re18-form-control.md` | Prevents filing the superseded five-exam form | Ready; recheck at signature time |
 | `04-course-submission-manifest.md` | Current RE 18 attachment map and honest course-readiness state | Ready as control ledger |
-| `regulator-inquiries/dbpr-frec-prefiling-inquiry.md` | School, route, item-count, location, reporting and review questions | Ready to send |
-| `regulator-inquiries/pearson-instructor-exam-inquiry.md` | Current fee/test-center and instructor-candidate prerequisite questions | Ready to send |
+| `regulator-inquiries/dbpr-frec-prefiling-inquiry.md` | Combined drafting record for school, route, item-count, location, reporting and review questions | Sent by scope in two messages; awaiting responses |
+| `regulator-inquiries/transmission-log.md` | Exact sender, Reply-To, recipients, date and Gmail message/thread IDs | Current sent record |
+| `regulator-inquiries/pearson-instructor-exam-inquiry.md` | Current fee/test-center and instructor-candidate prerequisite questions | Ready but **not sent** |
 | `fl-sales-associate-course-i-63-v1/submission/curriculum-review-and-expansion-ledger.md` | Mandatory order and section-by-section authoring gate | Ready; expansion in progress |
 | Current official RE 18 | Official form for later signature after school permit | Held; intentionally not prefilled with guessed address/permit/signature data |
 

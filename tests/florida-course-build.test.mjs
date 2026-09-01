@@ -182,6 +182,7 @@ test("filing-control package locks the current form, human sequence, and honest 
     "florida/submission/04-course-submission-manifest.md",
     "florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md",
     "florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md",
+    "florida/submission/regulator-inquiries/transmission-log.md",
     `${COURSE}/submission/curriculum-review-and-expansion-ledger.md`,
   ];
   for (const file of filingFiles) assert.ok(fs.existsSync(path.join(ROOT, file)), file);
@@ -203,4 +204,13 @@ test("filing-control package locks the current form, human sequence, and honest 
   const cieMemo = read("florida/submission/01-regulatory-route-and-cie-memo.md");
   assert.match(cieMemo, /course approval alone is insufficient/i);
   assert.match(cieMemo, /expected to be the institution-level approval/i);
+
+  const transmission = read("florida/submission/regulator-inquiries/transmission-log.md");
+  assert.match(transmission, /westccmortgage@gmail\.com/);
+  assert.match(transmission, /Reply-To[\s\S]*info@statecourse\.com/);
+  assert.match(transmission, /DREEducation@myfloridalicense\.com/);
+  assert.match(transmission, /Giuvanna\.Corona@myfloridalicense\.com/);
+  assert.match(transmission, /1a05dda4f56a8d19/);
+  assert.match(transmission, /1a05de8775c72589/);
+  assert.match(read("florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md"), /NOT SENT/);
 });

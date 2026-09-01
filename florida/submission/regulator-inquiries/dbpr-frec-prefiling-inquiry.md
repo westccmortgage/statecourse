@@ -1,4 +1,9 @@
-# DBPR/FREC pre-filing inquiry - ready to send
+# DBPR/FREC pre-filing inquiry - transmitted by scope
+
+**Status:** Sent by the owner on 2026-09-01 as two separate messages: course/current-RE-18 and
+instructor/RE-3/RE-5. Exact sender, Reply-To, recipients and Gmail message/thread IDs are preserved
+in `transmission-log.md`. This file retains the combined drafting record; the transmission log, not
+this combined layout, is the authoritative transport record.
 
 **To:** Florida Real Estate Commission / Division of Real Estate through the official DBPR contact channel
 **Subject:** Pre-filing clarification - distance FREC Course I school, instructor and course application

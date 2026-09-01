@@ -279,10 +279,10 @@ the objective study, independent review, complete secure forms, permits and appr
 | 2 | Instructor examination passed | **No** | RE 3 authorization + examination | File RE 3, then sit Pearson exam |
 | 3 | Instructor permit | **No** | Application + regulator | File DBPR RE 3, basis [1010], fingerprints, $62.75 |
 | 4 | School permit | **No** | Application + regulator | File DBPR RE 5 citing the instructor permit, $109.00 |
-| 5 | Item count — 100, 120 or 126 | **No** | Written DBPR response | Send the staged prefiling inquiry; build 126 per form meanwhile |
+| 5 | Item count — 100, 120 or 126 | **No** | Written DBPR response | Inquiry sent 1 Sep 2026; await thread `1a05dda4f56a8d19`; build 126 per form meanwhile |
 | 6 | Examination form count | **Closed** | Current linked RE 18 | Build two distance pre/post-license forms |
 | 7 | Whether a school must file RE 19 | **Closed** | Current linked RE 18 | Do not include RE 19; it is provider-only |
-| 8 | Async treatment of the 8-hour absence language | **No** | Written DBPR response | Require all syllabus sessions meanwhile |
+| 8 | Async treatment of the 8-hour absence language | **No** | Written DBPR response | Inquiry sent; require all syllabus sessions while awaiting response |
 | 9 | Pre-licence hardship definition | **No** | Regulator response | Retain as a separately labelled interpretation issue |
 | 10 | CFPB Closing Disclosure specimen (FL-V06) | **Closed** | — | CIB-linked specimen plus current Appendix H/H-25(A)/H-25(B) package held and validated |
 | 11 | Florida homestead provisions (FL-V07) | **Closed** | — | Constitutional/statutory package plus current DOR 2026 adjustment sources held and validated |

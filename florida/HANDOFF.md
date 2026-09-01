@@ -22,6 +22,7 @@ Phase 0 is done and the course-development layer now exists. Nothing is filed or
 - **19 syllabus sections, 180 learning objectives**, each page-referenced; `verify()` clean.
 - **19 curriculum files, 3,000 designed instruction minutes, 180 periodic application items and 19 secure final-item drafts.**
 - **Two 126-item form blueprints: 252 secure slots, all 180 objectives covered, 233 slots still unwritten.**
+- **Two owner-controlled DBPR inquiries sent 1 Sep 2026**; exact Gmail IDs are in the transmission log. Responses remain pending.
 - **77 Florida tests**, all passing. Source lock **LOCKED**.
 - **Repository-wide direct run:** 1,021/1,055 pass; all 34 failures are outside the Florida build.
   A clean built-main comparison was not reproducible in this worktree because the bootstrap requires
@@ -206,10 +207,10 @@ approval, regulator-answer and human-study gates remain.
    hours, pass 75. The current Pearson portal uses 888-204-6289 and online scheduling. The $36.75
    exam fee appears only on a still-linked 2017 sheet and is not represented as current until live
    checkout confirms it.
-2. **Send the DBPR/FREC letter.** Fully drafted in both `assessment-architecture.mjs` and
-   `submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md`. It covers item count/hour,
-   instructor-exam route acceptance, distance-only address/RE 9, asynchronous absence treatment,
-   online notices, pre-license reporting, current-form identity and review cadence.
+2. **Await and process the two DBPR responses.** The owner sent the course/current-RE-18 inquiry
+   (`1a05dda4f56a8d19`) and the instructor/RE-3/RE-5 inquiry (`1a05de8775c72589`) on 1 September
+   2026. Exact routing is in `submission/regulator-inquiries/transmission-log.md`. Do not send a
+   duplicate while those threads are open. The separate Pearson logistics inquiry remains unsent.
 
 Controlled order: **DBPR RE 3** basis `[1010]` + $62.75 → Livescan → DBPR authorization → physical
 Pearson exam → DBPR-issued instructor number → **DBPR RE 5** citing that permit + $109.00 → school
