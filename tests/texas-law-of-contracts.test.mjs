@@ -47,6 +47,26 @@ test("all current TREC contract-form PDFs are held and hash to the acquisition c
   }
 });
 
+test("nine missing Texas chapters are now held course-locally without mutating the LOA source inventory", () => {
+  const catalogPath = path.join(root, "texas/tx-law-of-contracts-30-v1/sources/statutes/catalog.json");
+  const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
+  assert.equal(catalog.sourceCount, 9);
+  assert.deepEqual(catalog.sources.map((source) => source.id), ["bc-3", "bc-322", "pr-24", "pr-81", "pr-82", "pr-221", "oc-1102", "fi-156", "fi-157"]);
+  assert.match(catalog.status, /Holding a chapter is not reading a section/);
+  assert.equal(catalog.totalBytes, catalog.sources.reduce((sum, source) => sum + source.bytes, 0));
+
+  for (const source of catalog.sources) {
+    assert.equal(source.publisher, "Texas Legislative Council");
+    assert.equal(source.sourceLayer, "tcss.legis.texas.gov static resources");
+    assert.equal(source.heldStatus, "HELD_NOT_YET_LOC_READ");
+    assert.match(source.url, /^https:\/\/tcss\.legis\.texas\.gov\/resources\/[A-Z]+\/htm\/[A-Z]+\.\d+\.htm$/);
+    const bytes = fs.readFileSync(path.join(root, source.localCopy));
+    assert.match(bytes.subarray(0, 80).toString("utf8"), /<html\b/i);
+    assert.equal(bytes.length, source.bytes);
+    assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), source.sha256);
+  }
+});
+
 test("eight priority forms have page-level reads rather than holdings-only claims", () => {
   const validation = validateFormReads();
   assert.deepEqual(validation, {
