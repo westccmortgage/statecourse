@@ -1,0 +1,157 @@
+/**
+ * CA-BLOCK rollout — the registry of every assignment with block delivery.
+ *
+ * The pilot registry lived inside the engine and was deliberately one entry long; the owner
+ * approved the rollout on 2026-08-28, and this module is now the single place an assignment's
+ * block delivery is registered. Assignment 1 keeps its hand-authored pilot definition; 2–15 are
+ * generated from the frozen lessons' own headings (scripts/generate-mortgage-block-maps.mjs) with
+ * hand-authored objectives, problem maps (mortgage-block-specs.mjs) and retrieval banks
+ * (mortgage-retrieval-banks.mjs). Assignments are registered ONLY as their banks are authored —
+ * an entry with a missing or incomplete bank refuses to load, so a half-built assignment can
+ * never reach a student.
+ */
+
+import { A1_BLOCKS, A1_RETRIEVAL_BANK, A1_SPACED_RETRIEVAL } from "./mortgage-a1-blocks.mjs";
+import { A2_BLOCKS } from "./mortgage-a2-blocks.mjs";
+import { A3_BLOCKS } from "./mortgage-a3-blocks.mjs";
+import { A4_BLOCKS } from "./mortgage-a4-blocks.mjs";
+import { A5_BLOCKS } from "./mortgage-a5-blocks.mjs";
+import { A6_BLOCKS } from "./mortgage-a6-blocks.mjs";
+import { A7_BLOCKS } from "./mortgage-a7-blocks.mjs";
+import { A8_BLOCKS } from "./mortgage-a8-blocks.mjs";
+import { A9_BLOCKS } from "./mortgage-a9-blocks.mjs";
+import { A10_BLOCKS } from "./mortgage-a10-blocks.mjs";
+import { A11_BLOCKS } from "./mortgage-a11-blocks.mjs";
+import { A12_BLOCKS } from "./mortgage-a12-blocks.mjs";
+import { A13_BLOCKS } from "./mortgage-a13-blocks.mjs";
+import { A14_BLOCKS } from "./mortgage-a14-blocks.mjs";
+import { A15_BLOCKS } from "./mortgage-a15-blocks.mjs";
+import { MORTGAGE_RETRIEVAL_BANKS } from "./mortgage-retrieval-banks.mjs";
+import { A1_BLOCKS as PRINCIPLES_A1_BLOCKS } from "./principles-a1-blocks.mjs";
+import { A2_BLOCKS as PRINCIPLES_A2_BLOCKS } from "./principles-a2-blocks.mjs";
+import { A3_BLOCKS as PRINCIPLES_A3_BLOCKS } from "./principles-a3-blocks.mjs";
+import { A4_BLOCKS as PRINCIPLES_A4_BLOCKS } from "./principles-a4-blocks.mjs";
+import { A5_BLOCKS as PRINCIPLES_A5_BLOCKS } from "./principles-a5-blocks.mjs";
+import { A6_BLOCKS as PRINCIPLES_A6_BLOCKS } from "./principles-a6-blocks.mjs";
+import { A7_BLOCKS as PRINCIPLES_A7_BLOCKS } from "./principles-a7-blocks.mjs";
+import { A8_BLOCKS as PRINCIPLES_A8_BLOCKS } from "./principles-a8-blocks.mjs";
+import { A9_BLOCKS as PRINCIPLES_A9_BLOCKS } from "./principles-a9-blocks.mjs";
+import { A10_BLOCKS as PRINCIPLES_A10_BLOCKS } from "./principles-a10-blocks.mjs";
+import { A11_BLOCKS as PRINCIPLES_A11_BLOCKS } from "./principles-a11-blocks.mjs";
+import { A12_BLOCKS as PRINCIPLES_A12_BLOCKS } from "./principles-a12-blocks.mjs";
+import { A13_BLOCKS as PRINCIPLES_A13_BLOCKS } from "./principles-a13-blocks.mjs";
+import { A14_BLOCKS as PRINCIPLES_A14_BLOCKS } from "./principles-a14-blocks.mjs";
+import { A15_BLOCKS as PRINCIPLES_A15_BLOCKS } from "./principles-a15-blocks.mjs";
+import { PRINCIPLES_RETRIEVAL_BANKS } from "./principles-retrieval-banks.mjs";
+import { A1_BLOCKS as PRACTICE_A1_BLOCKS } from "./practice-a1-blocks.mjs";
+import { A2_BLOCKS as PRACTICE_A2_BLOCKS } from "./practice-a2-blocks.mjs";
+import { A3_BLOCKS as PRACTICE_A3_BLOCKS } from "./practice-a3-blocks.mjs";
+import { A4_BLOCKS as PRACTICE_A4_BLOCKS } from "./practice-a4-blocks.mjs";
+import { A5_BLOCKS as PRACTICE_A5_BLOCKS } from "./practice-a5-blocks.mjs";
+import { A6_BLOCKS as PRACTICE_A6_BLOCKS } from "./practice-a6-blocks.mjs";
+import { A7_BLOCKS as PRACTICE_A7_BLOCKS } from "./practice-a7-blocks.mjs";
+import { A8_BLOCKS as PRACTICE_A8_BLOCKS } from "./practice-a8-blocks.mjs";
+import { A9_BLOCKS as PRACTICE_A9_BLOCKS } from "./practice-a9-blocks.mjs";
+import { A10_BLOCKS as PRACTICE_A10_BLOCKS } from "./practice-a10-blocks.mjs";
+import { A11_BLOCKS as PRACTICE_A11_BLOCKS } from "./practice-a11-blocks.mjs";
+import { A12_BLOCKS as PRACTICE_A12_BLOCKS } from "./practice-a12-blocks.mjs";
+import { A13_BLOCKS as PRACTICE_A13_BLOCKS } from "./practice-a13-blocks.mjs";
+import { A14_BLOCKS as PRACTICE_A14_BLOCKS } from "./practice-a14-blocks.mjs";
+import { A15_BLOCKS as PRACTICE_A15_BLOCKS } from "./practice-a15-blocks.mjs";
+import { PRACTICE_RETRIEVAL_BANKS } from "./practice-retrieval-banks.mjs";
+
+/* Principles and Practice are registered incrementally, exactly like the Mortgage rollout: an
+   assignment joins BLOCK_DELIVERIES only once its retrieval bank is authored and this file is
+   updated to import it. A half-built assignment can never reach a student. */
+export const BLOCK_DELIVERIES = Object.freeze([
+  A1_BLOCKS,
+  A2_BLOCKS,
+  A3_BLOCKS,
+  A4_BLOCKS,
+  A5_BLOCKS,
+  A6_BLOCKS,
+  A7_BLOCKS,
+  A8_BLOCKS,
+  A9_BLOCKS,
+  A10_BLOCKS,
+  A11_BLOCKS,
+  A12_BLOCKS,
+  A13_BLOCKS,
+  A14_BLOCKS,
+  A15_BLOCKS,
+  PRINCIPLES_A1_BLOCKS,
+  PRINCIPLES_A2_BLOCKS,
+  PRINCIPLES_A3_BLOCKS,
+  PRINCIPLES_A4_BLOCKS,
+  PRINCIPLES_A5_BLOCKS,
+  PRINCIPLES_A6_BLOCKS,
+  PRINCIPLES_A7_BLOCKS,
+  PRINCIPLES_A8_BLOCKS,
+  PRINCIPLES_A9_BLOCKS,
+  PRINCIPLES_A10_BLOCKS,
+  PRINCIPLES_A11_BLOCKS,
+  PRINCIPLES_A12_BLOCKS,
+  PRINCIPLES_A13_BLOCKS,
+  PRINCIPLES_A14_BLOCKS,
+  PRINCIPLES_A15_BLOCKS,
+  PRACTICE_A1_BLOCKS,
+  PRACTICE_A2_BLOCKS,
+  PRACTICE_A3_BLOCKS,
+  PRACTICE_A4_BLOCKS,
+  PRACTICE_A5_BLOCKS,
+  PRACTICE_A6_BLOCKS,
+  PRACTICE_A7_BLOCKS,
+  PRACTICE_A8_BLOCKS,
+  PRACTICE_A9_BLOCKS,
+  PRACTICE_A10_BLOCKS,
+  PRACTICE_A11_BLOCKS,
+  PRACTICE_A12_BLOCKS,
+  PRACTICE_A13_BLOCKS,
+  PRACTICE_A14_BLOCKS,
+  PRACTICE_A15_BLOCKS,
+]);
+
+export const RETRIEVAL_BANKS = Object.freeze({ ...A1_RETRIEVAL_BANK, ...MORTGAGE_RETRIEVAL_BANKS, ...PRINCIPLES_RETRIEVAL_BANKS, ...PRACTICE_RETRIEVAL_BANKS });
+
+/* Spaced retrieval stays a built capability with an empty schedule, exactly as in the pilot. */
+export const SPACED_RETRIEVAL = Object.freeze([...A1_SPACED_RETRIEVAL]);
+
+/* ── Load-time invariants: a registration is complete or it does not load. ─────────────── */
+
+const seenAssignments = new Set();
+for (const delivery of BLOCK_DELIVERIES) {
+  const key = `${delivery.courseId}:${delivery.assignmentId}`;
+  if (seenAssignments.has(key)) throw new Error(`block registry: ${key} registered twice`);
+  seenAssignments.add(key);
+  for (const block of delivery.blocks) {
+    if (block.regulatoryMastery) {
+      if (!/-b7$/.test(block.id)) throw new Error(`block registry: regulatory-mastery block ${block.id} must be the -b7 synthesis block (the database guard keys on it)`);
+      continue;
+    }
+    const retrieval = block.screens.filter((screen) => screen.type === "retrieval");
+    if (retrieval.length !== 1) throw new Error(`block registry: ${block.id} needs exactly one retrieval screen`);
+    const primaryId = retrieval[0].questionId;
+    const primary = RETRIEVAL_BANKS[primaryId];
+    if (!primary || primary.role !== "primary" || primary.blockId !== block.id) {
+      throw new Error(`block registry: ${block.id} lacks its primary retrieval item ${primaryId}`);
+    }
+    const replacement = RETRIEVAL_BANKS[primary.replacementId];
+    if (!replacement || replacement.role !== "replacement" || replacement.blockId !== block.id || replacement.concept !== primary.concept) {
+      throw new Error(`block registry: ${block.id} lacks a same-concept replacement for ${primaryId}`);
+    }
+    const screenIds = new Set(block.screens.map((screen) => screen.id));
+    for (const item of [primary, replacement]) {
+      if (!screenIds.has(item.remediationScreen)) {
+        throw new Error(`block registry: ${block.id} remediation screen ${item.remediationScreen} does not exist`);
+      }
+      if (item.correctChoice !== 0) throw new Error(`block registry: ${item.blockId} item must author the correct answer first`);
+      if (item.choices.length !== 4) throw new Error(`block registry: ${item.blockId} item must offer four choices`);
+    }
+  }
+}
+for (const [questionId, item] of Object.entries(RETRIEVAL_BANKS)) {
+  const owner = BLOCK_DELIVERIES.find((delivery) => delivery.blocks.some((block) => block.id === item.blockId));
+  if (!owner) throw new Error(`block registry: bank item ${questionId} names unregistered block ${item.blockId}`);
+}
+
+export default Object.freeze({ BLOCK_DELIVERIES, RETRIEVAL_BANKS, SPACED_RETRIEVAL });

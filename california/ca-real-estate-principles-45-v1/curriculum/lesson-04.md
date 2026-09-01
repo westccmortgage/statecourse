@@ -2,290 +2,911 @@
 
 ## Land description, measurement, and boundaries
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 submission draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze metes and bounds using verified facts, current authority, and a documented professional workflow.
-- Analyze government survey system using verified facts, current authority, and a documented professional workflow.
-- Analyze lot and block descriptions using verified facts, current authority, and a documented professional workflow.
-- Analyze recorded maps and assessor parcels using verified facts, current authority, and a documented professional workflow.
-- Analyze survey and boundary evidence using verified facts, current authority, and a documented professional workflow.
-- Analyze area and linear measurement using verified facts, current authority, and a documented professional workflow.
+- Explain why a street address is not a legal description and identify the three systems California uses.
+- Read a metes and bounds description and identify the elements that make it close.
+- Locate a parcel within the government survey system and compute acreage from a sectional description.
+- Distinguish a recorded map description from an assessor's parcel number and explain why the two are not interchangeable.
+- Distinguish record boundaries from occupied boundaries, and identify what a survey does that a title policy does not.
+- Perform the area, linear, and volume calculations a licensee actually needs, and state the sources a measurement should carry.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: legal descriptions and metes and bounds | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: the survey system, recorded maps, and parcel numbers | 50 | Sections 3-4 viewed |
+| Guided reading: boundary evidence and measurement | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. metes and bounds
+## 1. Metes and bounds
 
-### 1.1 Concept and purpose
+### 1.1 Why a legal description is required
 
-metes and bounds is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Land description, measurement, and boundaries, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+A deed must describe the land well enough to identify it. **A street address does not.**
 
-### 1.2 Essential elements
+Addresses are assigned administratively, change, are duplicated across jurisdictions, and describe a building rather than a parcel. A parcel with no building has no address. A parcel split into two has one address and two parcels. None of that identifies land in a way a court or a title insurer can rely on.
 
-The essential elements of metes and bounds are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A **legal description** identifies the parcel itself, permanently, in a way that can be located on the ground. California uses three systems, and a single description may combine them.
 
-### 1.3 Roles and duties
+| System | Typical use |
+|---|---|
+| **Metes and bounds** | Irregular parcels, rural land, older descriptions, boundary calls |
+| **Government survey (rectangular)** | Rural and undeveloped land, large parcels |
+| **Lot, block, and tract (recorded map)** | Subdivided land — most residential property |
 
-Responsibility for metes and bounds may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 1.2 What metes and bounds does
 
-### 1.4 Workflow
+Metes and bounds describes a parcel by tracing its perimeter. **Metes** are distances; **bounds** are directions and boundaries.
 
-A defensible workflow for metes and bounds starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+The description starts at a defined point, runs a series of courses, and returns to where it began. If it does not return, it does not describe a closed parcel, and the description is defective.
 
-### 1.5 Documents and evidence
+### 1.3 The elements
 
-Documents connected with metes and bounds must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Point of beginning.** A defined, locatable starting point. Historically tied to a physical monument; modern practice ties it to a surveyed reference such as a section corner or a point on a recorded map.
 
-### 1.6 Quantitative and factual analysis
+**Courses.** Each leg of the perimeter, stated as a direction and a distance — "North 45 degrees East, 150 feet."
 
-Where metes and bounds involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+**Monuments.** Physical or recorded reference points a call may run to — an iron pipe, a section corner, the centerline of a road, a watercourse.
 
-### 1.7 California law and professional boundary
+**Closure.** The requirement that the described perimeter return to the point of beginning.
 
-California law controls the licensed activity associated with metes and bounds; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 1.4 Reading a bearing
 
-### 1.8 Consumer protection and fair access
+Bearings are stated as a deviation from north or south, toward east or west.
 
-Consumer protection requires that metes and bounds be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+> **North 45 degrees East** means: start facing north, rotate 45 degrees toward the east.
+>
+> **South 30 degrees West** means: start facing south, rotate 30 degrees toward the west.
 
-### 1.9 Applied scenario
+A bearing always begins with N or S and ends with E or W, with an angle between 0 and 90 degrees in between. A description reading "East 45 degrees North" is not a bearing, and a licensee who encounters one is looking at a transcription error worth flagging.
 
-Scenario: during land description, measurement, and boundaries, the file raises a question about metes and bounds. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Angles are subdivided into **minutes** (60 to a degree) and **seconds** (60 to a minute). "N 12°30'15" E" is a bearing of 12 degrees, 30 minutes, 15 seconds east of north.
 
-### 1.10 Decision checklist
+### 1.5 A worked description
 
-Before treating metes and bounds as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+> Beginning at the northeast corner of Section 14, Township 3 North, Range 2 West, San Bernardino Base and Meridian;
+> thence South 00°00'00" East, 660.00 feet;
+> thence North 90°00'00" West, 660.00 feet;
+> thence North 00°00'00" West, 660.00 feet;
+> thence North 90°00'00" East, 660.00 feet to the point of beginning.
 
-## 2. government survey system
+Read it as a walk. From the section corner, go 660 feet due south, 660 feet due west, 660 feet due north, and 660 feet due east — arriving back at the start. The parcel is 660 by 660 feet.
 
-### 2.1 Concept and purpose
+**Area:** 660 × 660 = 435,600 square feet ÷ 43,560 = **10 acres.**
 
-government survey system is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Land description, measurement, and boundaries, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+Note what made it readable: the point of beginning was tied to the survey system, every course had a direction and a distance, and it closed.
 
-### 2.2 Essential elements
+### 1.6 Monuments and the order of priority
 
-The essential elements of government survey system are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Where the elements of a description conflict — the call says 150 feet but the monument is at 148 — the law applies an order of priority. In general terms, **natural monuments** are given the greatest weight, then **artificial monuments**, then references to recorded maps, then courses and distances, then area.
 
-### 2.3 Roles and duties
+The reasoning is that a physical or recorded reference is less likely to be mistranscribed than a number, and more likely to reflect what the parties actually intended to convey.
 
-Responsibility for government survey system may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**For a licensee this is recognition, not application.** A conflict between a call and a monument is a boundary question for a surveyor and, if it is contested, for counsel.
 
-### 2.4 Workflow
+### 1.8 Reading a metes and bounds description aloud
 
-A defensible workflow for government survey system starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Section 1.2 gave the elements. This section is the drill: taking a real description apart, clause by clause, until the shape is visible.
 
-### 2.5 Documents and evidence
+> *"Beginning at the northeast corner of Section 14, Township 3 North, Range 2 West, San Bernardino Base and Meridian; thence South 00°14'30" East along the east line of said Section 14 a distance of 660.00 feet to the TRUE POINT OF BEGINNING; thence South 89°45'30" West a distance of 330.00 feet; thence South 00°14'30" East a distance of 264.00 feet; thence North 89°45'30" East a distance of 330.00 feet to the east line of said Section 14; thence North 00°14'30" West along said east line 264.00 feet to the TRUE POINT OF BEGINNING."*
 
-Documents connected with government survey system must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Take it in five moves.**
 
-### 2.6 Quantitative and factual analysis
+**The commencement point is not the point of beginning.** The description starts at a monument that can be found — the northeast corner of a surveyed section — and then *travels* to the parcel. **"Beginning at" is the reference monument; "TRUE POINT OF BEGINNING" is the parcel's corner.** Confusing the two shifts the entire parcel 660 feet north, and this is the most common misreading of a metes and bounds description.
 
-Where government survey system involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+**Each call has three parts: a bearing, a distance, and often a monument.** *"South 00°14'30" East … 660.00 feet to the TRUE POINT OF BEGINNING."* Bearing, distance, destination.
 
-### 2.7 California law and professional boundary
+**Bearings are read from north or south, never from east or west.** *South 89°45'30" West* means: face south, rotate 89°45'30" toward the west. Because that is almost 90°, the line runs very nearly due west. **A bearing beginning with E or W is not a bearing** — it is a misreading.
 
-California law controls the licensed activity associated with government survey system; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**Convert the minutes and seconds when comparing bearings.** 60 seconds to a minute, 60 minutes to a degree. S 00°14'30" E is 14.5 minutes east of due south — 0.242°, essentially a north-south line.
 
-### 2.8 Consumer protection and fair access
+**A description that returns to its point of beginning closes.** Walk it: south 660 to the true point; west 330; south 264; east 330 back to the section line; north 264 to the start. **It closes**, and the shape is a rectangle 330 feet east-west by 264 feet north-south.
 
-Consumer protection requires that government survey system be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+Area: 330 × 264 = **87,120 sq ft** = 87,120 ÷ 43,560 = **exactly 2.00 acres**.
 
-### 2.9 Applied scenario
+### 1.9 What to do when the description does not close
 
-Scenario: during land description, measurement, and boundaries, the file raises a question about government survey system. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+A description that does not return to its point of beginning has an error, and errors of closure are common in older deeds.
 
-### 2.10 Decision checklist
+**Where they come from.** Transcription errors when a deed was retyped; a call omitted entirely; a bearing reversed (East written for West); a distance misread from a surveyor's field notes; and — in genuinely old descriptions — reference to monuments that no longer exist, such as *"thence along the fence line"* or *"to the oak tree."*
 
-Before treating government survey system as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**The order of priority when calls conflict** is a rule of construction a licensee should know exists, even though applying it is a surveyor's and a lawyer's work. In general terms, **natural monuments** outrank **artificial monuments**, which outrank **courses and distances**, which outrank **area**. The reason is evidentiary: a river is harder to move than a number is to mistype.
 
-## 3. lot and block descriptions
+**What this means at a practical level:** a description that says *"330.00 feet to the east line of said Section 14"* and a measurement that finds the section line at 331.4 feet is resolved in favour of **the section line**, not the 330.00. The monument controls the distance.
 
-### 3.1 Concept and purpose
+**What a licensee does.**
 
-lot and block descriptions is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Land description, measurement, and boundaries, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**Do not attempt to resolve it.** A boundary discrepancy is a surveyor's measurement question and a lawyer's title question, and a licensee's opinion about which call controls is worth nothing and may be relied on.
 
-### 3.2 Essential elements
+**Do notice it and route it.** A description that will not close, a fence that does not match a plat, a neighbour's structure that appears to cross a line, a preliminary report exception referring to a boundary agreement — each is a signal, and each is visible without any technical skill.
 
-The essential elements of lot and block descriptions are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**Do recommend a survey where the answer matters.** Vacant land, an intended addition, a fence dispute, an unusual lot shape, a rural parcel described by metes and bounds rather than by lot and block. **A survey costs a fraction of a boundary lawsuit**, and the recommendation should be made in writing so that the buyer's decision either way is recorded.
 
-### 3.3 Roles and duties
+**A worked signal.**
 
-Responsibility for lot and block descriptions may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+> A rural five-acre parcel is described by metes and bounds. The preliminary report notes: *"The legal description contained herein may not describe a legal parcel."* The listing has been on the market twice before and cancelled both times.
 
-### 3.4 Workflow
+**That exception is the title company saying, in its own careful language, that the parcel may never have been lawfully created.** Assignment 06 Section 3.9 explains how that happens — a division that did not follow the Subdivision Map Act. **The two cancelled listings are the market's evidence that other buyers' lenders reached the same conclusion.** A licensee who reads the preliminary report knows on day one what two previous agents apparently discovered in escrow.
 
-A defensible workflow for lot and block descriptions starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 1.10 Checkpoint
 
-### 3.5 Documents and evidence
+You should be able to read a bearing correctly, identify the elements of a metes and bounds description, and say what closure means.
 
-Documents connected with lot and block descriptions must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+## 2. Government survey system
 
-### 3.6 Quantitative and factual analysis
+### 2.1 What it is
 
-Where lot and block descriptions involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+The rectangular survey system — also called the government survey or the Public Land Survey System — divides land into a grid measured from established reference lines.
 
-### 3.7 California law and professional boundary
+California uses three base and meridian systems: **Humboldt**, **Mount Diablo**, and **San Bernardino**. A description must state which, because the grid coordinates repeat under each.
 
-California law controls the licensed activity associated with lot and block descriptions; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 2.2 The framework
 
-### 3.8 Consumer protection and fair access
+| Line | What it does |
+|---|---|
+| **Base line** | Runs east–west; the reference for measuring north and south |
+| **Principal meridian** | Runs north–south; the reference for measuring east and west |
+| **Township lines** | Run east–west, parallel to the base line, every 6 miles |
+| **Range lines** | Run north–south, parallel to the meridian, every 6 miles |
 
-Consumer protection requires that lot and block descriptions be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**Townships** are numbered north or south of the base line. **Ranges** are numbered east or west of the meridian. Their intersection identifies a six-mile square, also called a township.
 
-### 3.9 Applied scenario
+> **T3N, R2W, SBB&M** means: the township three tiers north of the San Bernardino base line, in the range two tiers west of the San Bernardino meridian.
 
-Scenario: during land description, measurement, and boundaries, the file raises a question about lot and block descriptions. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 2.3 The numbers to know
 
-### 3.10 Decision checklist
+| Unit | Size |
+|---|---|
+| Township | 6 miles × 6 miles = 36 square miles |
+| Sections per township | **36** |
+| Section | 1 mile × 1 mile = 640 acres |
+| Half section | 320 acres |
+| Quarter section | 160 acres |
+| Quarter of a quarter | 40 acres |
+| Acre | 43,560 square feet |
+| Mile | 5,280 feet |
 
-Before treating lot and block descriptions as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**Section numbering.** Sections are numbered 1 through 36 beginning in the **northeast** corner, running **west** across the top row, then dropping down and reversing direction — a serpentine or boustrophedon pattern. Section 1 is the northeast corner; Section 6 is the northwest; Section 31 is the southwest; Section 36 is the southeast.
 
-## 4. recorded maps and assessor parcels
+### 2.4 Reading a sectional description
 
-### 4.1 Concept and purpose
+Sectional descriptions are read **backwards** — from the right, working left. Each division cuts the previous one.
 
-recorded maps and assessor parcels is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Land description, measurement, and boundaries, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+> **The NE¼ of the SW¼ of Section 14**
+>
+> Start with Section 14 (640 acres). Take the southwest quarter: 160 acres. Take the northeast quarter of that: **40 acres.**
 
-### 4.2 Essential elements
+**The shortcut:** divide 640 by the denominators.
 
-The essential elements of recorded maps and assessor parcels are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+> NE¼ of SW¼ → 640 ÷ 4 ÷ 4 = **40 acres.**
+>
+> S½ of NW¼ of SE¼ → 640 ÷ 2 ÷ 4 ÷ 4 = **20 acres.**
+>
+> N½ of NE¼ → 640 ÷ 2 ÷ 4 = **80 acres.**
 
-### 4.3 Roles and duties
+Where a description joins two parcels with "and," compute each and add:
 
-Responsibility for recorded maps and assessor parcels may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+> The NE¼ of the SW¼ **and** the N½ of the SE¼ of Section 14
+> = 40 acres + (640 ÷ 2 ÷ 4 = 80 acres) = **120 acres.**
 
-### 4.4 Workflow
+### 2.5 Why sections are not exactly 640 acres
 
-A defensible workflow for recorded maps and assessor parcels starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Range lines converge as they run north, because the earth is curved. To keep townships approximately square, the system introduces **correction lines** and **guide meridians** at intervals, and the resulting adjustments fall on particular sections.
 
-### 4.5 Documents and evidence
+The practical consequences: sections along the north and west edges of a township frequently contain **government lots** — irregular parcels of odd acreage described by lot number rather than by fractional call — and a section is a nominal 640 acres rather than a guaranteed one.
 
-Documents connected with recorded maps and assessor parcels must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+A licensee encountering "Government Lot 3" in a description is looking at a real parcel with a real acreage that must be read from the survey, not computed from fractions.
 
-### 4.6 Quantitative and factual analysis
+### 2.6 Checkpoint
 
-Where recorded maps and assessor parcels involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+You should be able to compute acreage from a sectional description, state how sections are numbered, and explain why a government lot exists.
 
-### 4.7 California law and professional boundary
+## 3. Lot and block descriptions
 
-California law controls the licensed activity associated with recorded maps and assessor parcels; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 3.1 The system most residential property uses
 
-### 4.8 Consumer protection and fair access
+Where land has been subdivided, a **subdivision map** is recorded showing lots, blocks, streets, and easements. Once recorded, each parcel can be described by reference to it:
 
-Consumer protection requires that recorded maps and assessor parcels be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+> **Lot 14, Block 3, of Tract No. 28471, in the City of Burbank, County of Los Angeles, State of California, as per map recorded in Book 812, Pages 44 through 47, of Maps, in the Office of the County Recorder of said County.**
 
-### 4.9 Applied scenario
+The description is short because the map carries the detail. Every dimension, bearing, easement, and dedication shown on the recorded map is incorporated by the reference.
 
-Scenario: during land description, measurement, and boundaries, the file raises a question about recorded maps and assessor parcels. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 3.2 Why the recording reference matters
 
-### 4.10 Decision checklist
+The book and page citation is not decoration. It identifies **which** map, in a county that has recorded thousands, and it is what makes the description locatable.
 
-Before treating recorded maps and assessor parcels as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+A description reading "Lot 14, Block 3, Tract 28471" without the recording reference is incomplete, and a licensee copying a legal description from one document to another must copy it **exactly and completely** — including the recording reference, the county, and any "except" or "together with" language.
 
-## 5. survey and boundary evidence
+### 3.3 "Except" and "together with"
 
-### 5.1 Concept and purpose
+Legal descriptions frequently carry additions and subtractions:
 
-survey and boundary evidence is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Land description, measurement, and boundaries, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+**"Except the westerly 20 feet thereof"** — the parcel is the lot minus that strip. Someone else owns or has taken it.
 
-### 5.2 Essential elements
+**"Together with an easement for ingress and egress over…"** — the parcel comes with a right over other land, which may be essential to its use.
 
-The essential elements of survey and boundary evidence are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+A licensee who drops either phrase while copying has described a different parcel. On a landlocked lot, dropping the "together with" removes the access.
 
-### 5.3 Roles and duties
+### 3.4 The Subdivision Map Act and the Subdivided Lands Law, in outline
 
-Responsibility for survey and boundary evidence may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+Two bodies of California law govern subdivided land, and they do different things.
 
-### 5.4 Workflow
+**The Subdivision Map Act** is the local land use mechanism. It governs the creation of parcels — the map process, the conditions a local agency may impose, dedications, and improvements. It answers whether a parcel may lawfully be created and sold.
 
-A defensible workflow for survey and boundary evidence starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+**The Subdivided Lands Law** is a consumer protection mechanism administered by the Department of Real Estate. It addresses the sale of subdivided interests, requiring a public report before offering certain subdivided property for sale.
 
-### 5.5 Documents and evidence
+The practical point for a licensee: **an unlawfully created parcel is a real problem**, and "the seller says it was split years ago" is not evidence that it was lawfully split. Where a parcel's creation is in question, that is a matter for the local agency, title, and counsel.
 
-Documents connected with survey and boundary evidence must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 3.5 Checkpoint
 
-### 5.6 Quantitative and factual analysis
+You should be able to identify the elements of a lot and block description and explain what "together with" adds.
 
-Where survey and boundary evidence involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+## 4. Recorded maps and assessor parcels
 
-### 5.7 California law and professional boundary
+### 4.1 The distinction that causes real errors
 
-California law controls the licensed activity associated with survey and boundary evidence; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+An **assessor's parcel number** is an administrative identifier a county assigns for taxation. A **legal description** identifies the land in law.
 
-### 5.8 Consumer protection and fair access
+> **An APN is not a legal description and must not be used as one in a conveyance.**
 
-Consumer protection requires that survey and boundary evidence be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+The reasons are practical:
 
-### 5.9 Applied scenario
+- **APNs are assigned for the assessor's convenience** and are changed, split, and combined as assessment practice requires.
+- **One APN may cover more than one legal parcel**, and one legal parcel may carry more than one APN.
+- **An APN is not a promise that a lawful parcel exists.** The assessor taxes what is there; the assessor does not adjudicate whether it was lawfully created.
 
-Scenario: during land description, measurement, and boundaries, the file raises a question about survey and boundary evidence. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+That last point is the expensive one. A seller pointing to a separate tax bill as proof that a parcel is separately saleable has produced evidence of an assessment practice, not of a lawful split.
 
-### 5.10 Decision checklist
+### 4.2 What the assessor's records are good for
 
-Before treating survey and boundary evidence as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+They are genuinely useful within their limits: identifying the parcel for research, locating it on a parcel map, finding the assessed value and tax history, and finding characteristics such as year built and recorded square footage.
 
-## 6. area and linear measurement
+**With the source stated.** A licensee using assessor square footage in marketing states it as assessor data — "1,840 sq ft (per assessor; buyer to verify)" — rather than presenting it as measured fact. The assessor, the listing service, an appraisal, and an actual measurement routinely produce four different figures for one house.
 
-### 6.1 Concept and purpose
+### 4.3 Where descriptions are actually found
 
-area and linear measurement is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Land description, measurement, and boundaries, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+| Source | What it gives |
+|---|---|
+| **The recorded deed** | The operative legal description as conveyed |
+| **The preliminary report** | The description title would insure, plus exceptions |
+| **The recorded subdivision or parcel map** | Dimensions, bearings, easements, dedications |
+| **A survey** | The boundaries located on the ground |
+| **The assessor's records** | Administrative identification and characteristics |
 
-### 6.2 Essential elements
+**The deed and the preliminary report are the operative sources.** The others are research and support.
 
-The essential elements of area and linear measurement are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 4.4 The licensee's practice
 
-### 6.3 Roles and duties
+1. **Obtain the legal description from a recorded document**, not from a prior listing.
+2. **Copy it exactly and completely**, including recording references and any except or together-with language.
+3. **Reconcile the description, the APN, and the map** — if they do not agree, stop and route it to title.
+4. **Never substitute an address or an APN for a legal description** in a document intended to convey.
+5. **State sources for every measurement** used in marketing.
 
-Responsibility for area and linear measurement may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 4.5 A worked description problem
 
-### 6.4 Workflow
+> **A licensee is preparing a listing for a rural parcel. He has three documents.**
+>
+> - **The deed**, describing the property by metes and bounds, running from a monument and closing back to it.
+> - **The assessor's parcel map**, showing a parcel with an assessor's parcel number and an area of "4.7 AC."
+> - **The seller's statement** that "it's about five acres, and the fence line is the property line."
+>
+> **The listing service form asks for lot size, and it asks for the legal description.**
+>
+> **What each document is and is not.**
+>
+> **The deed's description is the legal description.** It is what conveys, and it is what belongs on the listing and in the agreement. Section 4.1's distinction governs.
+>
+> **The assessor's parcel number is not a legal description.** Section 4.2 explains what the assessor's records are for — taxation — and their boundaries and areas are maintained for that purpose. **An APN identifies a tax parcel and does not describe the land conveyed.** Using it as the legal description is the error Section 4.1 names, and it is common because it is convenient.
+>
+> **"4.7 AC" on the assessor's map is an assessor's figure.** It may be accurate; it is not authoritative for what the deed conveys.
+>
+> **The seller's "about five acres" is a recollection.** Lesson 03 of the practice course establishes what happens when a licensee repeats a number from a client's memory: **it becomes the licensee's representation.**
+>
+> **"The fence line is the property line" is Section 5.1's problem exactly** — the difference between the boundary of record and the boundary in use, and it is the sentence that precedes most boundary disputes.
+>
+> **What the licensee does.**
+>
+> **The legal description comes from the deed**, transcribed exactly, not paraphrased and not replaced with the APN.
+>
+> **The area is stated with its source.** "Assessor's records show 4.7 acres" is defensible. "5 acres" is not, and "approximately 5 acres" is the same representation with a hedge in front of it.
+>
+> **The fence statement goes into the disclosure conversation**, and the licensee recommends a survey — Section 5.6 — in writing, because a seller who volunteers that the fence and the line differ has disclosed a known condition affecting what the buyer is acquiring.
+>
+> **The licensee does not** locate the boundary, interpret the metes and bounds description, opine on whether the fence has legal significance, or reconcile the deed's area against the assessor's. **Section 5.5 forbids each of those**, and the last one is the most tempting because it looks like arithmetic.
+>
+> **The result.** A listing whose description is the deed's, whose area is attributed, and whose file contains a written survey recommendation with a date. **Three sentences of work, and it removes the two representations most likely to produce a claim on a rural parcel.**
 
-A defensible workflow for area and linear measurement starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 4.6 Checkpoint
 
-### 6.5 Documents and evidence
+You should be able to explain why a separate tax bill does not establish a separately saleable parcel, and list the operative sources of a legal description.
 
-Documents connected with area and linear measurement must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+## 5. Survey and boundary evidence
 
-### 6.6 Quantitative and factual analysis
+### 5.1 Two different boundaries
 
-Where area and linear measurement involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Almost every boundary dispute reduces to a single distinction:
 
-### 6.7 California law and professional boundary
+> **The record boundary is where the documents say the line is. The occupied boundary is where people have been behaving as though it is.**
 
-California law controls the licensed activity associated with area and linear measurement; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+They frequently differ, and the difference is invisible until someone builds, sells, or measures.
 
-### 6.8 Consumer protection and fair access
+### 5.2 What a survey does
 
-Consumer protection requires that area and linear measurement be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+A survey locates the record boundaries **on the ground**, using the description, the recorded maps, and physical evidence, and shows where improvements sit relative to them.
 
-### 6.9 Applied scenario
+A survey is what answers: is the fence on the line? Does the neighbor's driveway cross? Is the addition inside the setback? Where exactly does the easement run?
 
-Scenario: during land description, measurement, and boundaries, the file raises a question about area and linear measurement. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+### 5.3 What a title policy does not do
 
-### 6.10 Decision checklist
+This is among the most useful things a licensee can explain to a buyer.
 
-Before treating area and linear measurement as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**A preliminary report and a title policy address record title** — what the records show about ownership and encumbrances. **They are not surveys.** A standard policy typically **excepts** matters that a survey would disclose, which means precisely that the policy does not insure against them.
+
+> A buyer asks whether the fence is on the property line, and the agent says the title report "came back clean."
+>
+> That answer is wrong. The report addresses record title, and boundary location is exactly the category the standard policy excepts. **Nothing in the report speaks to where the fence is.**
+
+The professional answer: the report does not address that, a survey does, and here is how to get one before the contingency expires.
+
+### 5.4 Common boundary problems
+
+| Problem | What it is |
+|---|---|
+| **Encroachment** | An improvement extending onto another's land — a fence, eave, driveway, wall, or building |
+| **Overlapping descriptions** | Two descriptions covering the same ground, usually from historic conveyances |
+| **Gaps** | A strip described in neither adjoining parcel |
+| **Fence-line discrepancy** | The fence is not on the record line, sometimes by decades of custom |
+| **Ambiguous or defective description** | A description that does not close, or whose calls conflict |
+
+### 5.5 What the licensee must not do
+
+Boundary questions are legal questions, and the doctrines that resolve them — adverse possession, agreed boundaries, prescriptive rights, acquiescence — carry requirements and consequences a licensee cannot assess.
+
+**Must not:** state where the boundary is; characterize an encroachment as minor or as no problem; predict whether a neighbor has a claim; advise a seller to move a fence to resolve it; or tell a buyer that long-standing use "means it's theirs now."
+
+**Must:** disclose what is observed; recommend a survey where the facts call for one; recommend counsel where a claim may exist; document the recommendation and the client's response; and ensure it happens **before the contingency expires.**
+
+### 5.6 When to recommend a survey
+
+The recurring triggers:
+
+- The buyer intends to build, fence, or improve near a boundary.
+- A fence, driveway, or structure appears close to or across a line.
+- The description is metes and bounds, old, or complex.
+- The property is rural, unimproved, or irregular.
+- The preliminary report shows easements whose location matters to the buyer's plans.
+- The buyer or seller says anything about a disagreement with a neighbor.
+- Acreage matters to the price.
+
+That last one deserves emphasis. Where a buyer is paying by the acre, the acreage in the listing is a factual claim requiring a source — and the source is a survey or a recorded map, not the assessor and not the prior listing.
+
+### 5.8 The evidence a boundary rests on, ranked
+
+Section 5.3 introduced surveys. When boundary evidence conflicts — and in older parcels it usually does — courts and surveyors work through it in a settled order, and knowing the order tells a licensee how seriously to take a discrepancy.
+
+| Rank | Evidence | Why it ranks there |
+|---|---|---|
+| 1 | **Natural monuments** — a river, a rock outcrop, a ridge | Hardest to move, hardest to mistake |
+| 2 | **Artificial monuments** — a survey pin, a monumented corner, a wall built as a boundary | Placed deliberately to mark the line |
+| 3 | **Adjoining boundaries** — the calls of neighbouring parcels | The surrounding fabric must fit together |
+| 4 | **Courses (bearings)** | Recorded numbers, subject to transcription error |
+| 5 | **Distances** | The same, and more often mistyped |
+| 6 | **Area** | A computed result, not a measurement |
+
+**The practical consequence:** a description reading *"330.00 feet to the east line of said Section 14"* where the section line is actually at 331.4 feet is resolved in favour of **the section line**. The monument controls the distance, and the parcel is 331.4 feet deep.
+
+**And area ranks last for a reason worth stating.** A deed reciting "containing 2.00 acres, more or less" does not make the parcel two acres. **The area is what the boundaries produce**, not a boundary in itself, and "more or less" is the drafter saying so.
+
+### 5.9 Fences, and the thing everyone assumes
+
+**A fence is not a boundary.** It is an artificial monument only if it was placed as a boundary monument, and most fences were placed where it was convenient to place them.
+
+**The three situations a licensee meets.**
+
+**The fence is inside the line.** The owner has been using less than they own. Usually harmless, occasionally not — if the neighbour has used the strip openly for long enough, an adverse possession or prescriptive easement question exists. Assignment 09 Section 6.10 notes that California's adverse possession doctrine additionally requires the claimant to have **paid the taxes**, which is why most such claims fail on land that is separately assessed.
+
+**The fence is outside the line.** The owner has been using the neighbour's land. **This is the one that becomes a problem at sale**, when a survey reveals that the pool, the shed, or the driveway apron sits on the neighbour.
+
+**Both owners have relied on the fence for decades.** There may be an agreed-boundary situation, which is a doctrine with elements and a body of law behind it. **It is not something a licensee reasons about.**
+
+**What a licensee does in all three cases.** Notice; disclose what is known; **recommend a survey in writing**; and route the legal question. What a licensee must never say is *"the fence is the line"* — the sentence is wrong as a general matter and it is the sentence buyers most often report having been told.
+
+**A worked signal.**
+
+> A buyer walks a property with the listing agent. A detached garage sits within about two feet of what appears to be the side property line, and the neighbour's newer fence runs behind it. The preliminary report contains the standard exception for matters an accurate survey would disclose.
+
+**Three ordinary possibilities and one expensive one.** The garage may be inside the line; it may encroach; the fence may be inside the neighbour's line; or the garage may encroach and have done so long enough that a doctrine applies.
+
+**The buyer's exposure is not theoretical.** A garage encroaching on a neighbour is a title problem, an insurance problem and potentially a demolition problem, and **the standard policy's survey exception means the title insurer has expressly declined to cover it.**
+
+**The action is a survey, ordered in the first days of the contingency period**, and the recommendation goes in writing so that a buyer who declines it has declined it knowingly.
+
+### 5.10 Checkpoint
+
+You should be able to explain the difference between record and occupied boundaries, state what a title policy does not cover, and list the triggers for recommending a survey.
+
+## 6. Area and linear measurement
+
+### 6.1 The constants
+
+| Constant | Value |
+|---|---|
+| Acre | **43,560 square feet** |
+| Mile | **5,280 feet** |
+| Section | 1 mile square = 640 acres |
+| Square yard | 9 square feet |
+| Cubic yard | 27 cubic feet |
+| Front foot | One foot of frontage, measured along the street |
+
+### 6.2 Area formulas
+
+| Shape | Formula |
+|---|---|
+| Rectangle | length × width |
+| Triangle | ½ × base × height |
+| Trapezoid | ½ × (base₁ + base₂) × height |
+| Circle | π × radius² |
+
+**Irregular parcels are handled by decomposition:** divide the shape into rectangles and triangles, compute each, and add.
+
+### 6.3 Worked problems
+
+> **A lot measures 120 feet by 200 feet. How many acres?**
+>
+> 120 × 200 = 24,000 sq ft. 24,000 ÷ 43,560 = **0.551 acres.**
+
+> **A parcel is a rectangle 300 × 400 feet with a triangular extension whose base is 300 feet and height 100 feet.**
+>
+> Rectangle: 300 × 400 = 120,000 sq ft.
+> Triangle: ½ × 300 × 100 = 15,000 sq ft.
+> Total: 135,000 sq ft ÷ 43,560 = **3.10 acres.**
+
+> **A 5-acre rectangular parcel has 400 feet of road frontage. How deep is it?**
+>
+> 5 × 43,560 = 217,800 sq ft. 217,800 ÷ 400 = **544.5 feet.**
+
+> **Land sells for $12,000 per acre. What is a 130 × 250 foot lot worth?**
+>
+> 130 × 250 = 32,500 sq ft ÷ 43,560 = 0.746 acres × $12,000 = **$8,957.**
+
+> **A driveway is 60 feet long, 12 feet wide, and 4 inches thick. How many cubic yards of concrete?**
+>
+> 4 inches = 0.333 feet. 60 × 12 × 0.333 = 240 cubic feet ÷ 27 = **8.9 cubic yards.**
+
+### 6.4 The unit errors that produce wrong answers
+
+Most measurement errors are not arithmetic. They are unit errors, and three account for most of them:
+
+1. **Mixing feet and inches without converting.** Four inches is 0.333 feet, not 4.
+2. **Confusing linear and square measure.** A 100-foot lot line is not 100 square feet.
+3. **Converting to acres in the wrong direction.** Square feet ÷ 43,560 = acres; acres × 43,560 = square feet.
+
+**The reasonableness check catches all three.** A residential lot of 0.55 acres is plausible; one of 550 acres is not. Before reporting a number, ask whether it is the right order of magnitude for what is being measured.
+
+### 6.5 Measuring improvements, and the square footage problem
+
+Square footage is the most litigated number in residential practice, because buyers price on it and sources disagree.
+
+**Sound practice:**
+
+- **State the figure with its source** — "1,840 sq ft (per assessor)."
+- **Where sources conflict, say so** and invite the buyer to verify.
+- **Do not include areas the local convention excludes** — garages, unfinished basements, and unpermitted conversions are commonly excluded, and including them inflates the figure.
+- **Never present an unpermitted conversion as living area** without disclosing its status.
+
+A licensee who writes "1,840 sq ft (per assessor; buyer to verify)" has given the buyer better information than one who writes "1,840 sq ft" — and is in a materially better position if the figure turns out to be wrong.
+
+### 6.6 What a measurement must carry
+
+Every measurement a licensee reports should carry three things: **the number, the unit, and the source.** A number without a source is an assertion; a number with a source is information the buyer can evaluate and verify.
+
+### 6.7 Where measurement errors reach the client
+
+Section 6.4 covers unit errors and Section 6.5 covers the square footage problem. This section connects the arithmetic to the consequence, because a principles course can make measurement feel like an exam topic when it is a liability topic.
+
+| The measurement | How the error reaches the client |
+|---|---|
+| **Living area** | Stated in the listing, relied on by buyers, used in price-per-square-foot comparisons, and **relied on by the appraiser's grid.** An overstatement inflates the comparison in both directions — this property and every property later compared to it. |
+| **Lot size** | Determines what can be built, whether a division is conceivable, and what setbacks permit. **A buyer purchasing for a specific use is buying the dimension, not the house.** |
+| **Frontage** | Access, and in some settings value directly. |
+| **Acreage** | On rural parcels, frequently the price basis itself. **A five percent error is five percent of the purchase price.** |
+| **Room dimensions** | Whether furniture fits, which sounds trivial and is the complaint that arrives in week one. |
+| **Ceiling height and volume** | Where a use, a conversion, or a code requirement depends on it. |
+
+**The three rules that prevent all of it:**
+
+1. **Give the source with every number.** "Per assessor," "per builder's plans," "per the prior listing," "measured by [name] on [date]." **A number without a source is the licensee's own statement**, whatever its origin.
+2. **Do not convert between sources.** Taking an assessor's acreage and restating it in square feet, or a builder's plan area and adjusting it for what was added, produces a number no source stands behind.
+3. **Distinguish what is included.** Section 6.5's point. **Whether a converted garage, an enclosed patio, a basement, or an accessory structure counts as living area is a definitional question with a real answer**, and different sources answer it differently — which is why two accurate figures can disagree by hundreds of square feet.
+
+**The arithmetic in Section 6.3 is worth practicing for a reason beyond the examination.** A licensee who can compute area, convert units, and check a figure against its dimensions **will notice when a source is wrong** — and a listing whose stated area does not reconcile with its own stated dimensions is a listing with a defect that nobody caught because nobody multiplied.
+
+> **The professional standard here is unusually simple:** report, attribute, and refuse to improve. **The number you were given, from the source you were given it by, with the source named.** Every measurement claim that has ever produced a complaint was an improvement on one of those three.
+
+### 6.8 Why the measurement topics belong in a licensing course
+
+A principles course teaches area formulas and section arithmetic, and students reasonably ask why a licensee needs them when a listing service supplies the numbers.
+
+**Four reasons, in ascending order of importance.**
+
+**One: the numbers supplied are frequently wrong.** A listing service field is populated by a person, from a source, sometimes by carrying forward what the last listing said. **A licensee who can check a stated area against its own stated dimensions will catch errors that otherwise propagate** — into the next listing, into a comparable grid, and into an appraisal.
+
+**Two: units are where errors hide.** Section 6.4's unit errors are not exam artifacts. **Acres and square feet, front feet and lineal feet, dimensions in feet and inches** — a conversion performed casually produces an answer wrong by a factor, and a factor-of-ten error looks obviously wrong on paper and entirely plausible on a form.
+
+**Three: the arithmetic underlies the analysis.** Price per square foot, adjustment amounts, lot coverage, buildable area, and yield all rest on measurement. **A licensee who cannot compute them cannot check them**, which means he cannot tell whether an analysis handed to him is sound.
+
+**Four, and most important: a stated measurement is a representation.** Section 6.6 establishes what a measurement must carry. **The number goes into a listing, a buyer relies on it, and it is the licensee's statement unless it was attributed to a source.** This is the reason the topic sits in a licensing course rather than in a technical one — **the arithmetic is the small part, and the discipline of sourcing, attributing, and refusing to improve is the large part.**
+
+**The three-part rule, restated as a working practice:**
+
+1. **Report the number from a source**, and name the source.
+2. **Check it against itself** where you can — dimensions against area, area against acreage, unit against unit. **An internal inconsistency is a signal that one of the inputs is wrong.**
+3. **Do not reconcile sources.** Where the assessor says one thing and the plans say another, **report both with their sources** rather than producing a third number that no source stands behind.
+
+> **The failure this prevents is not an arithmetic failure.** It is a licensee who repeated a number, was believed, and turned out to be the only person who had ever asserted it. **Section 5.5's prohibition and this section's arithmetic are the same subject:** the licensee's job is to convey what is known, from where it is known, and to be visibly absent from the parts he is not qualified to determine.
+
+### 6.10 Area problems a licensee actually meets
+
+Section 6.1 gave the conversions. This section works the problems that arise in practice, where the shape is irregular and the figures come from three documents that disagree.
+
+**The five conversions, and the two that get reversed.**
+
+| Conversion | Figure |
+|---|---|
+| 1 acre | **43,560 square feet** |
+| 1 square mile (section) | 640 acres |
+| 1 township | 36 sections, 6 miles square |
+| 1 linear mile | 5,280 feet |
+| 1 front foot | one foot of frontage on the street, whatever the depth |
+
+**The two that get reversed** are square feet to acres and acres to square feet. To go from square feet **to** acres, **divide** by 43,560. To go from acres **to** square feet, **multiply**. A candidate who multiplies when they should divide produces an answer roughly 1,900,000,000 times too large and does not notice, because the number has no intuitive size.
+
+**Worked problem — the irregular lot.**
+
+> A corner lot is a rectangle 120 feet deep and 90 feet wide, with a triangular corner cut off for a street radius. The cut removes a right triangle with legs of 18 feet and 18 feet. What is the lot area in square feet, and in acres?
+
+Rectangle: 120 × 90 = **10,800 sq ft**.
+Triangle removed: ½ × 18 × 18 = **162 sq ft**.
+Net: 10,800 − 162 = **10,638 sq ft**.
+In acres: 10,638 ÷ 43,560 = **0.2442 acres**.
+
+**Worked problem — the split parcel.**
+
+> An owner holds the SE¼ of the NW¼ of Section 22, and the N½ of the SW¼ of the NE¼ of the same section. How many acres?
+
+Work each from the section's 640 acres, dividing by four for each quarter and by two for each half, right to left:
+
+- SE¼ of NW¼ → 640 ÷ 4 ÷ 4 = **40 acres**
+- N½ of SW¼ of NE¼ → 640 ÷ 4 ÷ 4 ÷ 2 = **20 acres**
+
+Total **60 acres**. **The reading direction is the whole trick**: the description narrows from right to left, so the arithmetic runs the same way.
+
+**Worked problem — front feet and price.**
+
+> A commercial strip sells for $2,400 per front foot. A parcel has 145 feet of frontage and a depth of 210 feet. What is the price, and what is the price per square foot?
+
+Price: 145 × $2,400 = **$348,000**.
+Area: 145 × 210 = 30,450 sq ft.
+Per square foot: $348,000 ÷ 30,450 = **$11.43**.
+
+**Note what front-foot pricing ignores.** Depth. Two parcels with identical frontage and depths of 100 and 300 feet cost the same under front-foot pricing and are not the same property. **Front-foot pricing is a convention of a particular market**, and a licensee who quotes it should know that it is a convention rather than a measure of the land.
+
+### 6.11 When three documents give three different sizes
+
+This is the ordinary case, not the exception, and it is worth knowing before a client asks.
+
+> A single-family property's size appears as: **1,842 square feet** on the county assessor's record; **1,914 square feet** in the multiple listing service; **1,780 square feet** on the appraisal; and **1,900+ square feet** in the seller's own description.
+
+**They are measuring different things, and none of them is necessarily wrong.**
+
+| Source | What it usually measures | Why it differs |
+|---|---|---|
+| **Assessor** | The size on record for taxation, often from a permit file decades old | Permitted additions may never have been re-recorded; unpermitted ones certainly were not |
+| **Appraiser** | Gross living area, measured from exterior dimensions to a published standard, excluding garages and usually excluding below-grade space | The **standard** is what makes this figure comparable to other appraisals |
+| **Listing service** | Whatever the input agent entered, from whatever source | The least controlled figure of the four |
+| **Seller** | Recollection, a floor plan, or a builder's brochure | Frequently includes converted space |
+
+**What a licensee must and must not do.**
+
+**Do not state a square footage as fact.** A licensee who says "it's 1,900 square feet" has made a representation about a measurement they did not take, and the difference between 1,780 and 1,914 is 7 per cent of the property.
+
+**Do state the source with the figure.** *"The assessor's record shows 1,842 square feet; the appraisal measured 1,780."* Attribution converts a representation into a report, and it lets the buyer decide which source to rely on.
+
+**Do tell a buyer who cares to have it measured.** For a buyer whose decision turns on size — a price-per-square-foot analysis, a room that must fit a particular use — the answer is an independent measurement, not a better citation.
+
+**Do notice when the gap points at something else.** A 130-square-foot discrepancy is usually a measurement standard. A 400-square-foot discrepancy is usually a converted garage, an enclosed patio, or an addition, and **each of those raises a permit question that is larger than the square footage question.** Assignment 06 Section 3.4 explains why an unpermitted addition is a problem that survives the sale.
+
+### 6.12 Checkpoint
+
+You should be able to compute acreage and value from lot dimensions, convert between units correctly, apply a reasonableness check, and state a square footage figure the way a professional states it.
+
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Legal description** | A description identifying the parcel itself, permanently and locatably. **A street address is not one.** |
+| **Metes and bounds** | Description by tracing the perimeter — metes are distances, bounds are directions and boundaries. |
+| **Point of beginning** | The defined, locatable starting point of a metes and bounds description, to which the description must return. |
+| **Course** | One leg of a perimeter, stated as a direction and a distance. |
+| **Monument** | A physical or recorded reference point a call may run to. |
+| **Closure** | The requirement that the perimeter return to the point of beginning. A description that does not close is defective. |
+| **Bearing** | A direction stated as a deviation from north or south toward east or west — N 45° E, S 30° W. Always N or S first, E or W last, 0–90° between. |
+| **Order of priority** | Where description elements conflict: natural monuments, then artificial monuments, then recorded maps, then courses and distances, then area. Recognition for a licensee; application for a surveyor. |
+| **Base line and principal meridian** | The east–west and north–south reference lines of the rectangular survey. California uses Humboldt, Mount Diablo, and San Bernardino. |
+| **Township** | A 6-mile square containing **36 sections**, identified by tiers north or south of a base line and ranges east or west of a meridian. |
+| **Section** | One mile square, a nominal **640 acres**. Numbered 1–36 beginning in the northeast corner and running serpentine. |
+| **Reading backwards** | How a sectional description is computed — from the right, each division cutting the previous one. The shortcut is 640 divided by the denominators. |
+| **Correction lines and guide meridians** | Adjustments introduced because range lines converge northward, producing irregular sections. |
+| **Government lot** | An irregular parcel of odd acreage described by lot number rather than fractional call, read from the survey rather than computed. |
+| **Lot, block, and tract** | Description by reference to a recorded subdivision map, which carries the dimensions, easements, and dedications. |
+| **Recording reference** | The book and page identifying **which** recorded map. Not decoration — it is what makes the description locatable. |
+| **Except / together with** | Language subtracting from or adding to a described parcel. Dropping either while copying describes a different parcel — and on a landlocked lot, dropping the "together with" removes the access. |
+| **Subdivision Map Act** | The local land use mechanism governing the lawful creation of parcels. |
+| **Subdivided Lands Law** | The DRE-administered consumer protection mechanism governing the sale of subdivided interests, including the public report requirement. |
+| **Assessor's parcel number** | An administrative identifier for taxation. **Not a legal description**, not a promise that a lawful parcel exists, and not necessarily one-to-one with legal parcels. |
+| **Record boundary** | Where the documents say the line is. |
+| **Occupied boundary** | Where people have been behaving as though it is. |
+| **Survey** | The location of record boundaries on the ground, showing where improvements sit relative to them. |
+| **Survey exception** | The standard title policy's exception for matters a survey would disclose — meaning the policy does **not** insure boundary location. |
+| **Encroachment** | An improvement extending onto another's land. |
+| **Front foot** | One foot of frontage measured along the street. |
+| **Source-stated measurement** | The professional form of a reported figure: the number, the unit, and where it came from. |
+
+## Practice problems
+
+### Problem 1
+
+A licensee prepares a deed describing the property as "1428 Elm Street, Burbank, California,
+APN 2445-018-032."
+
+**Identify both defects.**
+
+> **Solution.** **Neither element is a legal description**, and a deed must describe the land well
+> enough to identify it.
+>
+> **The address** is assigned administratively, changes, is duplicated across jurisdictions, and
+> describes a **building** rather than a parcel. A parcel with no building has no address; a parcel
+> split in two has one address and two parcels.
+>
+> **The APN is an assessor's administrative identifier for taxation**, changed, split, and combined as
+> assessment practice requires. One APN may cover more than one legal parcel and one legal parcel may
+> carry more than one APN. Critically, **an APN is not a promise that a lawful parcel exists** — the
+> assessor taxes what is there and does not adjudicate whether it was lawfully created.
+>
+> **The correct practice:** take the description from a recorded document — the deed or the preliminary
+> report — copy it exactly and completely including the recording reference and any except or
+> together-with language, and reconcile the description, the APN, and the map. Where they disagree,
+> stop and route it to title.
+
+### Problem 2
+
+Read this description and compute the area:
+
+> Beginning at the northeast corner of Section 14, T3N, R2W, SBB&M; thence South 00°00'00" East,
+> 660.00 feet; thence North 90°00'00" West, 660.00 feet; thence North 00°00'00" West, 660.00 feet;
+> thence North 90°00'00" East, 660.00 feet to the point of beginning.
+
+**Then say what would make it defective.**
+
+> **Solution.** Read it as a walk: from the section corner, 660 feet due south, 660 feet due west, 660
+> feet due north, 660 feet due east — back to the start.
+>
+> **660 × 660 = 435,600 sq ft ÷ 43,560 = 10 acres.**
+>
+> What makes it sound: the **point of beginning is tied to the survey system** rather than to a
+> perishable physical object, every course carries **both a direction and a distance**, and it
+> **closes.**
+>
+> **A description that does not return to the point of beginning does not describe a closed parcel**
+> and is defective. Two other defects worth flagging: a bearing written as "East 45 degrees North,"
+> which is not a bearing at all and signals a transcription error, and a call that conflicts with a
+> monument — which is a boundary question for a surveyor rather than something a licensee resolves.
+
+### Problem 3
+
+Compute the acreage of each: (a) the NE¼ of the SW¼ of Section 22; (b) the S½ of the NW¼ of the SE¼;
+(c) the NE¼ of the SW¼ **and** the N½ of the SE¼ of Section 14.
+
+**Then state where Section 6 sits in its township and why some sections are not 640 acres.**
+
+> **Solution.** Read backwards, dividing 640 by the denominators.
+>
+> (a) 640 ÷ 4 ÷ 4 = **40 acres.**
+> (b) 640 ÷ 2 ÷ 4 ÷ 4 = **20 acres.**
+> (c) 40 acres + (640 ÷ 2 ÷ 4 = 80 acres) = **120 acres.**
+>
+> **Sections are numbered 1 through 36 beginning in the northeast corner**, running west across the top
+> row, then dropping and reversing. So **Section 6 is the northwest corner** — with Section 1 northeast,
+> 31 southwest, and 36 southeast.
+>
+> **Sections are a nominal 640 acres, not a guaranteed one.** Range lines converge as they run north
+> because the earth is curved, so **correction lines and guide meridians** are introduced to keep
+> townships approximately square. The resulting irregularity falls on the north and west edges, which
+> is where **government lots** appear — irregular parcels of odd acreage described by lot number, whose
+> acreage must be read from the survey rather than computed from fractions.
+
+### Problem 4
+
+A licensee copying a legal description from a prior listing omits "EXCEPT the westerly 20 feet
+thereof" and "TOGETHER WITH an easement for ingress and egress over Lot 15." The lot has no other
+street access.
+
+**What has been described?**
+
+> **Solution.** **A different parcel**, in two directions at once — and the second omission is the one
+> that destroys the property.
+>
+> **Dropping the "except"** describes a parcel 20 feet wider than the seller owns. Someone else owns or
+> has taken that strip.
+>
+> **Dropping the "together with" removes the access.** The lot is landlocked, and the easement over Lot
+> 15 is what makes it usable. A description without it conveys land no one can reach.
+>
+> **What transfers:** a legal description is copied **exactly and completely** from a recorded document
+> — including the recording reference, the county, and every except and together-with clause. Copying
+> from a prior listing is not sourcing; it is repeating someone else's transcription.
+
+### Problem 5
+
+A seller offers a rear portion of his lot as a separate building site. He produces a separate tax bill
+and an APN for it and says it "was split years ago."
+
+**Assess the evidence.**
+
+> **Solution.** **A separate tax bill is evidence of an assessment practice, not of a lawful split.**
+> The assessor taxes what is there and does not adjudicate whether a parcel was lawfully created. This
+> is the most expensive misunderstanding an APN produces.
+>
+> Two bodies of California law bear on it, doing different things. **The Subdivision Map Act** is the
+> local land use mechanism governing the creation of parcels — the map process, conditions, dedications,
+> and improvements — and it answers whether a parcel may lawfully be created and sold. **The Subdivided
+> Lands Law** is the DRE-administered consumer protection mechanism governing the sale of subdivided
+> interests, including the public report requirement.
+>
+> **"The seller says it was split years ago" is not evidence that it was lawfully split.** Where a
+> parcel's creation is in question, the matter goes to the local agency, to title, and to counsel — and
+> it goes there **before** the property is marketed as a separate building site, because marketing it as
+> one is a factual claim about entitlement.
+
+### Problem 6
+
+A buyer asks whether the neighbor's fence is on the property line. The agent replies that the title
+report "came back clean" and that the fence has been there thirty years so "it's basically the line
+now anyway."
+
+**Correct both statements.**
+
+> **Solution.** **Both are wrong, and the second is worse.**
+>
+> **A preliminary report and a title policy address record title** — what the records show about
+> ownership and encumbrances. **They are not surveys**, and the standard policy typically **excepts**
+> matters a survey would disclose. Boundary location is precisely the excepted category, so **nothing
+> in the report speaks to where the fence is.** "Clean" answers a question the buyer did not ask.
+>
+> **The thirty-year comment is a legal conclusion the licensee cannot make.** The doctrines that could
+> matter here — adverse possession, agreed boundaries, prescriptive rights, acquiescence — carry
+> requirements and consequences a licensee cannot assess, and stating that long use "means it's theirs
+> now" invites reliance on an opinion that may be exactly backwards.
+>
+> **The right answer:** "The title report doesn't address that — it covers record title, and boundary
+> location is specifically excepted. What answers it is a survey, and here's how to get one before your
+> contingency expires. If it turns out the fence isn't on the line, that's a question for an attorney."
+>
+> **The distinction underneath it:** the **record boundary** is where the documents say the line is; the
+> **occupied boundary** is where people have been behaving as though it is. They frequently differ, and
+> the difference is invisible until someone builds, sells, or measures.
+
+### Problem 7
+
+Compute: (a) a 120 × 200 foot lot in acres; (b) the value of a 130 × 250 foot lot at $12,000 per acre;
+(c) the depth of a 5-acre rectangular parcel with 400 feet of frontage; (d) cubic yards of concrete for
+a driveway 60 feet long, 12 feet wide, 4 inches thick.
+
+**Then name the three unit errors that produce most wrong answers.**
+
+> **Solution.** (a) 120 × 200 = 24,000 sq ft ÷ 43,560 = **0.551 acres.**
+> (b) 130 × 250 = 32,500 sq ft ÷ 43,560 = 0.746 acres × $12,000 = **$8,957.**
+> (c) 5 × 43,560 = 217,800 sq ft ÷ 400 = **544.5 feet.**
+> (d) 4 in = 0.333 ft; 60 × 12 × 0.333 = 240 cu ft ÷ 27 = **8.9 cubic yards.**
+>
+> **The three errors:** mixing feet and inches without converting — four inches is 0.333 feet, not 4,
+> which in (d) would have produced 106 cubic yards; confusing linear with square measure — a 100-foot
+> lot line is not 100 square feet; and converting acres in the wrong direction — square feet ÷ 43,560 =
+> acres, acres × 43,560 = square feet.
+>
+> **The reasonableness check catches all three.** A residential lot of 0.55 acres is plausible; 550
+> acres is not. Ask whether the answer is the right order of magnitude before reporting it.
+
+### Problem 8
+
+A listing sheet reads "2,340 sq ft." The assessor shows 1,840, an appraisal from 2019 shows 1,910, and
+the difference is a permitted-status-unknown garage conversion the seller counts as living area. The
+buyer is paying by the square foot.
+
+**What is wrong, and how should the figure be stated?**
+
+> **Solution.** **Three things, and the buyer is pricing on all of them.**
+>
+> **The figure has no source and conflicts with two that exist.** Square footage is the most litigated
+> number in residential practice precisely because the assessor, the listing service, an appraisal, and
+> an actual measurement routinely produce different figures for one house.
+>
+> **The conversion is being included without disclosure of its status.** Areas the local convention
+> excludes — garages, unfinished basements, unpermitted conversions — inflate the figure when included,
+> and presenting an unpermitted conversion as living area is a factual claim about both area and
+> entitlement.
+>
+> **How to state it:** "1,840 sq ft (per assessor; buyer to verify). Approximately 500 additional sq ft
+> of converted garage space; permit status unverified — buyer to investigate with the city." Where
+> sources conflict, say so and invite verification.
+>
+> **And because the buyer is paying by the square foot, the number is a material term** — which also
+> makes this a survey and permit-research trigger rather than a marketing question.
+>
+> **What transfers:** every measurement a licensee reports carries **the number, the unit, and the
+> source.** A number without a source is an assertion; a number with a source is information the buyer
+> can evaluate.
+
+## Chapter summary
+
+**A street address is not a legal description.** Addresses are administrative, change, duplicate, and
+describe buildings; legal descriptions identify parcels permanently and locatably.
+
+**Metes and bounds traces a perimeter** from a defined point of beginning, through courses of direction
+and distance, back to the start. A description that does not close is defective, and where calls
+conflict with monuments the priority order governs — recognition for the licensee, application for the
+surveyor.
+
+**Bearings read N or S first, E or W last**, with an angle between.
+
+**The rectangular survey grids land from a base line and principal meridian.** Thirty-six sections to a
+township, 640 nominal acres to a section, sections numbered serpentine from the northeast. Sectional
+descriptions are read backwards, and 640 divided by the denominators gives the acreage.
+
+**Convergence produces correction lines, irregular sections, and government lots**, whose acreage is
+read rather than computed.
+
+**Most residential property is described by lot, block, and tract**, with the recorded map carrying the
+detail and the recording reference identifying which map. Copy descriptions exactly, including every
+except and together-with clause.
+
+**The Subdivision Map Act governs lawful creation; the Subdivided Lands Law governs sale.** A seller's
+recollection is not evidence of a lawful split.
+
+**An APN is not a legal description**, is not one-to-one with legal parcels, and is not evidence that a
+lawful parcel exists.
+
+**Record boundaries and occupied boundaries frequently differ**, and a title policy does not insure the
+difference — the standard policy excepts what a survey would disclose. Never state where a boundary is,
+never characterize an encroachment, and never tell a buyer that long use has settled it.
+
+**Recommend a survey** where the buyer will build near a line, where improvements appear close to one,
+where the description is old or complex, where the property is rural or irregular, where easement
+location matters, where anyone mentions a neighbor disagreement, or where acreage drives the price.
+
+**Know the constants, decompose irregular shapes, and check reasonableness.** Most measurement errors
+are unit errors, not arithmetic.
+
+**Every reported measurement carries a number, a unit, and a source** — and square footage carries its
+source most of all.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. Identify the description system in use and any defect in the description as given, state which sources you would obtain and in what order, perform and show any area or value calculation the scenario requires with its units, identify whether a survey is warranted and state the trigger, state what you would disclose and how you would source each measurement used in marketing, and identify what you would refer to a surveyor, to title, or to counsel and by what deadline. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.

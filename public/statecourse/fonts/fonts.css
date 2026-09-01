@@ -1,0 +1,5 @@
+/* Self-hosted webfonts (SIL Open Font License): Playfair Display + Inter, latin subsets,
+   variable-weight files fetched from Google Fonts and served from this origin — the site CSP
+   allows only self-hosted assets. Referenced relative to this file's directory. */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url(Inter-var-latin.woff2) format('woff2'); }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400 900; font-display: swap; src: url(PlayfairDisplay-var-latin.woff2) format('woff2'); }

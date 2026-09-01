@@ -1,0 +1,187 @@
+{
+  "generatedBy": "scripts/loa-accessibility-audit.mjs",
+  "measuredAgainst": "texas/tx-law-of-agency-30-v1/reviewer-surface — the RENDERED course, driven in Chromium",
+  "pagesTested": [
+    "final-exam.html",
+    "index.html",
+    "scenario-LOA-SC1.html",
+    "scenario-LOA-SC2.html",
+    "scenario-LOA-SC3.html",
+    "scenario-LOA-SC4.html",
+    "scenario-LOA-SC5.html",
+    "topic-T01.html",
+    "topic-T02.html",
+    "topic-T03.html",
+    "topic-T04.html",
+    "topic-T05.html",
+    "topic-T06.html",
+    "topic-T07.html",
+    "topic-T08.html",
+    "topic-T09.html",
+    "topic-T10.html",
+    "topic-T11.html",
+    "topic-T12.html"
+  ],
+  "tool": "axe-core (wcag2a, wcag2aa, wcag21a, wcag21aa) plus scripted keyboard, focus, live-region, viewport and zoom checks",
+  "limits": "Automated and scripted checks only. No test here substitutes for testing with real assistive technology and real users, and a pass may not be described as one.",
+  "results": {
+    "screenReaderNamesAndRelationships": "PASS",
+    "headingHierarchy": "PASS",
+    "formLabels": "PASS",
+    "answerChoiceSemantics": "PASS",
+    "contrast": "PASS",
+    "errorIdentification": "PASS",
+    "keyboardNavigation": "PASS",
+    "visibleFocusStates": "PASS",
+    "rationaleAndRemediationAnnouncements": "PASS",
+    "progressStateCommunication": "PASS",
+    "scenarioControls": "PASS",
+    "finalExamNavigation": "PASS",
+    "laptopLayout": "PASS",
+    "tabletLayout": "PASS",
+    "mobileLayout": "PASS",
+    "zoomAndResponsive": "PASS",
+    "captionsAndTranscripts": "PASS",
+    "everyControlHasAFunction": "PASS",
+    "optionalMaterialNeverBlocks": "PASS",
+    "noMinimumTypedLength": "PASS",
+    "newChecksCanFail": "PASS"
+  },
+  "findings": [
+    {
+      "criterion": "screenReaderNamesAndRelationships",
+      "result": "PASS",
+      "detail": "axe accessible-name and ARIA-relationship rules across 19 pages"
+    },
+    {
+      "criterion": "headingHierarchy",
+      "result": "PASS",
+      "detail": "axe heading-order, empty-heading and page-has-heading-one"
+    },
+    {
+      "criterion": "formLabels",
+      "result": "PASS",
+      "detail": "axe label rules — every input, textarea and radio has a programmatic label"
+    },
+    {
+      "criterion": "answerChoiceSemantics",
+      "result": "PASS",
+      "detail": "each question is a fieldset with a legend; choices are a labelled radiogroup"
+    },
+    {
+      "criterion": "contrast",
+      "result": "PASS",
+      "detail": "axe color-contrast at WCAG AA"
+    },
+    {
+      "criterion": "errorIdentification",
+      "result": "PASS",
+      "detail": "feedback is delivered through role=status with aria-live=polite rather than colour alone"
+    },
+    {
+      "criterion": "keyboardNavigation",
+      "result": "PASS",
+      "detail": "33 focusable controls on a topic page, every one reachable and focusable"
+    },
+    {
+      "criterion": "visibleFocusStates",
+      "result": "PASS",
+      "detail": "skip link \"Skip to main content\" becomes visible on focus; a 3px outline is defined for :focus-visible on links, buttons, inputs and textareas"
+    },
+    {
+      "criterion": "rationaleAndRemediationAnnouncements",
+      "result": "PASS",
+      "detail": "an incorrect answer announced \"Not correct. Read the explanation below; a different related question follows.\" through role=status/aria-live=polite and revealed a 631-character rationale"
+    },
+    {
+      "criterion": "progressStateCommunication",
+      "result": "PASS",
+      "detail": "progress conveyed in text through a status region: \"Topic 1 of 12 · 130 prescribed minutes\""
+    },
+    {
+      "criterion": "scenarioControls",
+      "result": "PASS",
+      "detail": "19 scenario controls, every one labelled; no length requirement stated on the page"
+    },
+    {
+      "criterion": "finalExamNavigation",
+      "result": "PASS",
+      "detail": "3 question groups each in a fieldset with a legend, navigation landmark present, placeholder notice shown"
+    },
+    {
+      "criterion": "laptopLayout",
+      "result": "PASS",
+      "detail": "1366x768 — no horizontal overflow"
+    },
+    {
+      "criterion": "tabletLayout",
+      "result": "PASS",
+      "detail": "768x1024 — no horizontal overflow"
+    },
+    {
+      "criterion": "mobileLayout",
+      "result": "PASS",
+      "detail": "375x667 — no horizontal overflow"
+    },
+    {
+      "criterion": "zoomAndResponsive",
+      "result": "PASS",
+      "detail": "content reflows at 200% zoom without horizontal scrolling"
+    },
+    {
+      "criterion": "captionsAndTranscripts",
+      "result": "PASS",
+      "detail": "NOT APPLICABLE — this course includes no video or audio, so no caption or transcript is owed. Any future media must ship captions and a transcript before this criterion can pass."
+    },
+    {
+      "criterion": "everyControlHasAFunction",
+      "result": "PASS",
+      "detail": "every button, link and input across 19 pages is driven by a handler or has a destination; no decorative badge, icon or seal element is rendered"
+    },
+    {
+      "criterion": "optionalMaterialNeverBlocks",
+      "result": "PASS",
+      "detail": "2 optional region(s) on topic-T02.html, each stating \"not required\"; Next has a destination; nothing inside an optional region is required or disabled; 0 media elements, so no video gates anything"
+    },
+    {
+      "criterion": "noMinimumTypedLength",
+      "result": "PASS",
+      "detail": "the explanation was revealed by selecting a choice and pressing one button with nothing typed; 0 inputs carry a minlength attribute; no page states a word or character minimum"
+    },
+    {
+      "criterion": "newChecksCanFail",
+      "result": "PASS",
+      "detail": "against deliberately broken markup: everyControlHasAFunction found 3 offenders, optionalMaterialNeverBlocks returned false, noMinimumTypedLength returned false — each the opposite of a pass"
+    }
+  ],
+  "axeViolations": [],
+  "negativeControls": {
+    "everyControlHasAFunction": 3,
+    "optionalMaterialNeverBlocks": false,
+    "noMinimumTypedLength": false
+  },
+  "required": [
+    "keyboardNavigation",
+    "visibleFocusStates",
+    "screenReaderNamesAndRelationships",
+    "headingHierarchy",
+    "formLabels",
+    "answerChoiceSemantics",
+    "errorIdentification",
+    "rationaleAndRemediationAnnouncements",
+    "progressStateCommunication",
+    "scenarioControls",
+    "finalExamNavigation",
+    "contrast",
+    "zoomAndResponsive",
+    "laptopLayout",
+    "tabletLayout",
+    "mobileLayout",
+    "captionsAndTranscripts",
+    "everyControlHasAFunction",
+    "optionalMaterialNeverBlocks",
+    "noMinimumTypedLength",
+    "newChecksCanFail"
+  ],
+  "failed": []
+}

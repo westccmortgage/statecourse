@@ -1,0 +1,162 @@
+{
+  "course": "Texas Law of Agency",
+  "courseId": "tx-law-of-agency-30-v1",
+  "approvalForm": "LOA-1 rev. 09/11/2024",
+  "contentFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v6",
+  "generatedBy": "scripts/loa-acceptance-report.mjs",
+  "generatedAt": "2026-08-30T23:41:54.703Z",
+  "confidentiality": "Counts, hashes, percentages and behaviour outcomes only. No item text, choice, key or rationale from the secure bank appears in this report.",
+  "verdicts": {
+    "contentAndAssessment": "GO",
+    "completeOperationalCourse": "GO",
+    "submissionReadiness": "NO-GO",
+    "overall": "GO — COURSE COMPLETE, SUBMISSION BLOCKED"
+  },
+  "checks": [
+    {
+      "label": "1. frozen curriculum",
+      "ok": true,
+      "detail": "LOA-CONTENT-FREEZE-2026-08-30-v6; all 12 hashed artifacts match the freeze"
+    },
+    {
+      "label": "2. video plan frozen, and the curriculum freeze points at the freeze rather than the plan",
+      "ok": true,
+      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 over 0 artifacts, superseding no prior freeze; package validator passes"
+    },
+    {
+      "label": "3. twelve-topic and 57-unit coverage",
+      "ok": true,
+      "detail": "12 topics, 57 units; every module carries exactly its topic's unit count"
+    },
+    {
+      "label": "4. 1,500-minute outline reconciliation",
+      "ok": true,
+      "detail": "topic subtotals reconcile and total 1500 against the form's printed 1500 (30h at 50min)"
+    },
+    {
+      "label": "5. required time meets the prescribed floor, topic by topic",
+      "ok": true,
+      "detail": "layer 1 topic instruction 1512.4 min against 1500 prescribed; layer 2 course-level capstone 20 min, attributed to no topic; layer 3 grand required 1532.4 min. Every topic meets its own allocation: true. no topic below its allocation"
+    },
+    {
+      "label": "5a. corpus segments are provably disjoint",
+      "ok": true,
+      "detail": "Every word of every module is counted in exactly one segment. Exercise and recap prose is excluded from the reading segment and paid for by its activity allowance instead; the script throws if the segments do not sum to the whole file."
+    },
+    {
+      "label": "6. block and screen coverage",
+      "ok": true,
+      "detail": "76 blocks, 177 screens; ranges tile every module exactly — no gaps, overlaps or missing headings"
+    },
+    {
+      "label": "7. claim-to-source audit",
+      "ok": true,
+      "detail": "1975 citations — 1974 pass, 1 identified-not-taught, 0 unresolved"
+    },
+    {
+      "label": "8. unmatched quotations all reviewed, none a sourcing defect, no stale disposition",
+      "ok": true,
+      "detail": "126 unmatched quotations, all reviewed — 3 source held but not machine readable, 24 invented dialogue, 69 attributed at paragraph scope, 27 verified in cited section, 3 verified elsewhere in cited source"
+    },
+    {
+      "label": "8a. the audit's coverage limit is stated, not hidden",
+      "ok": true,
+      "detail": "the claim auditor's Texas-code pattern is anchored on the section symbol at scripts/lib/tx-claim-audit.mjs, so 457 prose-form citations in this curriculum are outside its 1975-citation sample. Every mechanical-pass figure in point 7 describes symbol-anchored citations only. Tracked as its own task; it is a shared engine and fixing it alters hashed ledgers for Principles II as well."
+    },
+    {
+      "label": "9. source register complete",
+      "ok": true,
+      "detail": "58 sources, 229 sections recorded as read, 20 recorded gaps"
+    },
+    {
+      "label": "10. primary quiz count",
+      "ok": true,
+      "detail": "58 primaries across 12 topics; every topic at or above the rule's 3"
+    },
+    {
+      "label": "11. replacement-question count",
+      "ok": true,
+      "detail": "58 replacements — one per primary, each a different fact pattern on the same proposition"
+    },
+    {
+      "label": "12. misconception checks are formative and gate nothing",
+      "ok": true,
+      "detail": "7 checks across 7 topics; every one countsAsAssessment=false"
+    },
+    {
+      "label": "13. scenario count and distribution",
+      "ok": true,
+      "detail": "5 scenarios, 31 tasks, placed after T03, T06, T09, T11, T12 (rule minimum 3)"
+    },
+    {
+      "label": "14. final-bank size and unit coverage",
+      "ok": true,
+      "detail": "132 items against the rule's minimum of 120; 57 of 57 units carry at least one examination item"
+    },
+    {
+      "label": "15. four exam versions, every topic on every version",
+      "ok": true,
+      "detail": "A:60 B:60 C:60 D:60 against 60 per version; every version covers all 12 topics"
+    },
+    {
+      "label": "16. pairwise overlap under the one-third cap",
+      "ok": true,
+      "detail": "A-B 30%, A-C 30%, A-D 30%, B-C 30%, B-D 30%, C-D 30% against a 33.33% cap; 24 items on one version, 108 on two, 0 unused"
+    },
+    {
+      "label": "17. the 70% unweighted boundary is exact",
+      "ok": true,
+      "detail": "42 of 60 passes and 41 does not; the comparison is on raw counts, not a rounded percentage"
+    },
+    {
+      "label": "18. examination items are significantly different from the quizzes and exercises",
+      "ok": true,
+      "detail": "16 of 16 checks pass; Jaccard >= 0.70: 0 item(s)"
+    },
+    {
+      "label": "19. assessment-to-instruction traceability",
+      "ok": true,
+      "detail": "286 items mapped to unit, screen, objective, tested judgment and sources; 57 of 57 units assessed and 57 examined"
+    },
+    {
+      "label": "20. course engine workflow, demonstrated in a reviewer environment",
+      "ok": true,
+      "detail": "23 of 23 behaviours demonstrated"
+    },
+    {
+      "label": "20a. production enrollment remains disabled (safety control, not an operational pass)",
+      "ok": true,
+      "detail": "enrollment disabled, examination not administrable (BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES), credit reporting disabled, certificates disabled"
+    },
+    {
+      "label": "21. accessibility, measured against the rendered course",
+      "ok": true,
+      "detail": "21 of 21 criteria pass"
+    },
+    {
+      "label": "22. the confidential bank reaches no served tree",
+      "ok": true,
+      "detail": "no file under public/ or dist/ references the examination bank or the version file; the reviewer surface renders placeholder items only"
+    },
+    {
+      "label": "23. full regression suite",
+      "ok": true,
+      "detail": "1032 passing, 0 failing"
+    },
+    {
+      "label": "24. submission-readiness blockers recorded",
+      "ok": true,
+      "detail": "7 standing blockers, none clearable from this repository"
+    }
+  ],
+  "failed": [],
+  "blockers": [
+    "TX_PROVIDER_RULE_SOURCE_LOCK is FAIL — trec-qe-provider-application, sos-tac-22-535",
+    "the codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs",
+    "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1",
+    "no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-law-of-agency-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.",
+    "no video has been produced. The video plan is frozen and validated, and the transcripts are the primary artifact; every proposition a segment would state is stated in the module text, so no student is dependent on an unproduced video — but the segments themselves are unbuilt.",
+    "the claim auditor is anchored on the section symbol and cannot see prose-form citations; the mechanical-pass figures describe symbol-anchored citations only, and correcting the shared engine will alter hashed ledgers for Principles II as well as this course",
+    "certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval"
+  ]
+}

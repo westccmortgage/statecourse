@@ -41,3 +41,38 @@ next-env.d.ts
 /.sites-runtime/
 /outputs/
 /work/
+
+# scratch drafts from parallel content-authoring agents (merged into config/ then deleted)
+/california/video-production/.ca-block-drafts/
+/.prins2-drafts/
+
+# Generated at build time by scripts/generate-national-platform.mjs, which writes the
+# 51 jurisdiction hubs, the California course routes, and the core service routes into
+# public/statecourse/ before site/build.sh copies public/ into dist/. They are build
+# output, not source: every build recreates them, and committing them would guarantee
+# drift from the generator that produces them.
+#
+# The six hand-built state course pages under real-estate/*/pre-license/ remain tracked.
+# .gitignore does not untrack files, so those are unaffected by the patterns below.
+# See docs/california/phase-1-audit.md, Finding 5, for the unresolved question of the
+# generator overwriting those committed pages on every build.
+/public/statecourse/blog/
+/public/statecourse/continuing-education/
+/public/statecourse/courses/
+/public/statecourse/exam-prep/
+/public/statecourse/get-licensed/
+/public/statecourse/my-statecourse/
+/public/statecourse/resources/
+/public/statecourse/state-requirements/
+/public/statecourse/real-estate/*/index.html
+# Program segments vary by state - "pre-license", "qualifying", and others - so this
+# matches any program directory under a jurisdiction rather than naming each one.
+/public/statecourse/real-estate/*/*/
+
+# Local-only export destination for scripts/export-california-source-temp.mjs.
+# Never inside public/ or dist/ — see tests/no-answer-key-published.test.mjs
+.local-export/
+
+# Print-ready course volumes: 13 MB of generated PDFs, rebuilt by
+# scripts/build-california-print-volume.mjs. The HTML is tracked; the PDFs are not.
+california/print/*.pdf

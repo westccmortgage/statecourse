@@ -1,4 +1,9 @@
-import { getPracticeAssessment } from "./california-practice-assessments.mjs";
+import practiceBank from "./california/practice-question-bank.mjs";
+import principlesBank from "./california/principles-question-bank.mjs";
+import mortgageBank from "./california/mortgage-question-bank.mjs";
+import principlesFinal from "./california/principles-final-exam-bank.mjs";
+import practiceFinal from "./california/practice-final-exam-bank.mjs";
+import mortgageFinal from "./california/mortgage-final-exam-bank.mjs";
 
 const COURSE_DEFINITIONS = {
   "ca-real-estate-principles-45": {
@@ -66,20 +71,30 @@ const COURSE_DEFINITIONS = {
   }
 };
 
-const CHOICES = [
-  "Verify the governing facts and current authority, document the analysis, and escalate questions beyond the licensee's scope.",
-  "Rely on customary practice when the file is incomplete because speed is the controlling consideration.",
-  "Treat a verbal assurance as a substitute for required disclosure, consent, or documentary evidence.",
-  "Choose the result that benefits the licensee and correct the record only if a consumer later objects."
-];
+const QUESTION_BANKS = {
+  "ca-real-estate-principles-45": principlesBank,
+  "ca-real-estate-practice-45": practiceBank,
+  "ca-mortgage-loan-brokering-lending-45": mortgageBank
+};
 
-function rotateChoices(correctIndex) {
-  const ordered = [];
-  for (let index = 0; index < CHOICES.length; index += 1) {
-    ordered.push(CHOICES[(index - correctIndex + CHOICES.length) % CHOICES.length]);
-  }
-  return ordered;
-}
+/* An applied exercise is a single decision on one transaction file, so it is scored
+   whole. The engagement check and its remediation alternate are five-item quizzes
+   against the 80% lesson mastery threshold the lesson plan states. */
+const PASSING_PERCENT = { applied: 100, engagement: 80, remediation: 80 };
+
+/* RE 303 p.4 and database/004_california_prelicense.sql both fix the final examination
+   at two forms of 100 questions, 60% to pass, one retake on different questions. The
+   banks live outside `public/` and site/build.sh fails the build if a file matching
+   /final-exam-bank|answer-key/ reaches `dist`. */
+const FINAL_EXAM_BANKS = {
+  "ca-real-estate-principles-45": principlesFinal,
+  "ca-real-estate-practice-45": practiceFinal,
+  "ca-mortgage-loan-brokering-lending-45": mortgageFinal
+};
+const FINAL_PASSING_PERCENT = 60;
+const FINAL_QUESTION_COUNT = 100;
+const FINAL_EXAM_MINUTES = 180;
+export const CALIFORNIA_FINAL_EXAM_FORMS = Object.freeze(["A", "B"]);
 
 export function getCaliforniaCourse(courseId) {
   const course = COURSE_DEFINITIONS[courseId];
@@ -94,7 +109,11 @@ export function getCaliforniaCourse(courseId) {
     assignmentCount: 15,
     expectedMinutesPerAssignment: 180,
     minimumElapsedHours: 420,
-    finalPassingPercent: 60,
+    finalPassingPercent: FINAL_PASSING_PERCENT,
+    finalQuestionCount: FINAL_QUESTION_COUNT,
+    finalExamMinutes: FINAL_EXAM_MINUTES,
+    finalExamOpenBook: false,
+    finalExamProctored: true,
     maxFinalAttempts: 2,
     approvalStatus: "Submission draft — not yet approved",
     subjects: [...course.subjects],
@@ -109,50 +128,178 @@ export function getCaliforniaCourse(courseId) {
   };
 }
 
+/* Items are authored with the correct answer written first, which keeps the banks
+   readable and reviewable. Presenting them that way would hand every student the
+   answer key, so each item's choices are permuted deterministically from its id: the
+   order is stable across requests and across sessions, which the audit trail requires
+   because a recorded selected_choice must keep meaning the same option forever. */
+function hashKey(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function permuteChoices(choices, correctChoice, key) {
+  const order = choices.map((_, index) => index);
+  let seed = hashKey(key) || 1;
+  for (let index = order.length - 1; index > 0; index -= 1) {
+    seed = (Math.imul(seed, 48271) + 11) >>> 0;
+    const swap = seed % (index + 1);
+    [order[index], order[swap]] = [order[swap], order[index]];
+  }
+  return { choices: order.map((index) => choices[index]), correctChoice: order.indexOf(correctChoice) };
+}
+
 export function getCaliforniaAssessment(courseId, assignmentId, kind = "engagement") {
   const course = getCaliforniaCourse(courseId);
   const assignment = course?.assignments.find((item) => item.id === assignmentId);
-  if (!course || !assignment) return null;
-  if (courseId === "ca-real-estate-practice-45") {
-    const curated = getPracticeAssessment(assignment.sequence, kind);
-    if (curated) return { id: assignment.id + "-" + kind, ...curated };
-  }
-  const correctIndex = kind === "remediation"
-    ? (assignment.sequence + 1) % CHOICES.length
-    : assignment.sequence % CHOICES.length;
-  const choices = rotateChoices(correctIndex);
-  const correctChoice = choices.findIndex((choice) => choice === CHOICES[0]);
-  if (kind === "applied") {
-    return {
-      id: assignment.id + "-applied",
-      prompt: "A California transaction file presents an unresolved issue involving " + assignment.title.toLowerCase() + ". Which response best protects the consumer and the integrity of the file?",
-      choices,
-      correctChoice,
-      rationale: "A compliant professional verifies facts and current authority, documents the decision path, and obtains broker or specialist guidance when the issue exceeds the licensee's role."
-    };
-  }
-  if (kind === "remediation") {
-    return {
-      id: assignment.id + "-remediation",
-      prompt: "After reviewing a second scenario involving " + assignment.title.toLowerCase() + ", which action should occur before an irreversible deadline or consumer decision?",
-      choices,
-      correctChoice,
-      rationale: "Verification, documentation, and appropriate escalation must occur before the professional treats a disputed or incomplete issue as resolved."
-    };
-  }
+  const lesson = QUESTION_BANKS[courseId]?.assignments?.[assignmentId];
+  if (!course || !assignment || !lesson) return null;
+  const authored = kind === "applied" ? [lesson.applied] : lesson[kind];
+  if (!Array.isArray(authored) || !authored.length || authored.some((item) => !item)) return null;
   return {
-    id: assignment.id + "-engagement",
-    prompt: "Which professional control is most important when applying this assignment's material on " + assignment.title.toLowerCase() + "?",
-    choices,
-    correctChoice,
-    rationale: "The course uses a fact–authority–application–record workflow. Custom, speed, or self-interest cannot replace verified authority and a reconstructable record."
+    id: `${assignmentId}-${kind}`,
+    kind,
+    assignmentId,
+    passingPercent: PASSING_PERCENT[kind],
+    items: authored.map((item, index) => {
+      const id = `${assignmentId}-${kind}-${String(index + 1).padStart(2, "0")}`;
+      const presented = permuteChoices(item.choices, item.correctChoice, `${courseId}:${id}`);
+      return { id, prompt: item.prompt, choices: presented.choices, correctChoice: presented.correctChoice, rationale: item.rationale };
+    })
   };
 }
 
+/* The final examination is served through the same shape as a lesson assessment, so
+   `publicAssessment` strips the answer key and `scoreCaliforniaAssessment` grades it by
+   the same code path the tests already cover. `form` selects the attempt: A is the first
+   examination, B the single retake, and RE 303 requires the retake to use different
+   questions. `source` stays on the server object for the instructor answer key and is
+   dropped by `publicAssessment` before anything reaches a browser. */
+export function getCaliforniaFinalExam(courseId, form = "A") {
+  const course = getCaliforniaCourse(courseId);
+  const authored = FINAL_EXAM_BANKS[courseId]?.forms?.[form];
+  if (!course || !Array.isArray(authored) || authored.length !== FINAL_QUESTION_COUNT) return null;
+  return {
+    id: `${courseId}-final-${form}`,
+    kind: "final",
+    form,
+    assignmentId: null,
+    passingPercent: FINAL_PASSING_PERCENT,
+    minutes: FINAL_EXAM_MINUTES,
+    items: authored.map((item, index) => {
+      const id = `final-${form}-${String(index + 1).padStart(3, "0")}`;
+      const presented = permuteChoices(item.choices, item.correctChoice, `${courseId}:${id}`);
+      return {
+        id,
+        prompt: item.prompt,
+        choices: presented.choices,
+        correctChoice: presented.correctChoice,
+        rationale: item.rationale,
+        source: item.source,
+        crossReferences: item.crossReferences ?? []
+      };
+    })
+  };
+}
+
+/* Which form a given attempt uses. Attempt 1 is Form A; the single permitted retake is
+   Form B. Anything beyond `maxFinalAttempts` has no form, which is the point. */
+export function californiaFinalExamForm(attemptNumber) {
+  return CALIFORNIA_FINAL_EXAM_FORMS[Number(attemptNumber) - 1] ?? null;
+}
+
+/* The student payload must never carry an answer key. Stripping happens per item so
+   that adding a field to an item cannot accidentally leak it to the browser. */
 export function publicAssessment(assessment) {
   if (!assessment) return null;
-  const { correctChoice: _hidden, rationale: _hiddenRationale, ...safe } = assessment;
-  return safe;
+  return {
+    id: assessment.id,
+    kind: assessment.kind,
+    assignmentId: assessment.assignmentId,
+    passingPercent: assessment.passingPercent,
+    /* Present only on a final examination. The form letter and the time limit are not
+       secrets — the student is told both — but the answer key, the rationale, and the
+       answer-key source reference are stripped with every other unlisted field. */
+    ...(assessment.form ? { form: assessment.form } : {}),
+    ...(assessment.minutes ? { minutes: assessment.minutes } : {}),
+    items: assessment.items.map((item) => ({ id: item.id, prompt: item.prompt, choices: [...item.choices] }))
+  };
+}
+
+/* Scoring lives here rather than in the request handler so that the student path, the
+   reviewer path, and the tests all grade identically. `answers` is positional: one
+   choice index per item, in item order. */
+export function scoreCaliforniaAssessment(assessment, answers) {
+  if (!assessment) return null;
+  if (!Array.isArray(answers) || answers.length !== assessment.items.length) return null;
+  const results = [];
+  for (const [index, item] of assessment.items.entries()) {
+    /* Number(null), Number(""), Number(false) and Number([]) are all 0, so a coerced
+       read would silently record choice 0 — a selection the student never made — into a
+       permanent selected_choice. Accept a real number, or a string of digits from a form
+       post, and nothing else. */
+    const raw = answers[index];
+    const selectedChoice = typeof raw === "number"
+      ? raw
+      : (typeof raw === "string" && /^\d+$/.test(raw.trim()) ? Number(raw.trim()) : Number.NaN);
+    if (!Number.isInteger(selectedChoice) || selectedChoice < 0 || selectedChoice >= item.choices.length) return null;
+    const correct = selectedChoice === item.correctChoice;
+    results.push({ itemId: item.id, selectedChoice, correct, rationale: item.rationale });
+  }
+  const correctCount = results.filter((result) => result.correct).length;
+  const percent = Math.round((correctCount / results.length) * 100);
+  return { results, correctCount, total: results.length, percent, passed: percent >= assessment.passingPercent };
+}
+
+/* Final examinations are scored separately from lesson assessments for two reasons. An
+   unanswered item must count as incorrect rather than reject the submission, because a
+   timed examination auto-submits whatever the student has when the clock stops; and the
+   result carries no rationale at any point, because RE 303 forbids furnishing the final
+   examination to the student and a per-item explanation is the examination.
+
+   `answers` is positional, one entry per item in the order the items were presented.
+   null, undefined, and an empty string all mean "not answered". Anything else that is
+   not a valid choice index is a malformed submission and returns null, so a client bug
+   cannot silently score a student zero. */
+export function scoreCaliforniaFinalExam(exam, answers) {
+  if (!exam || exam.kind !== "final") return null;
+  if (!Array.isArray(answers) || answers.length !== exam.items.length) return null;
+  const results = [];
+  for (const [index, item] of exam.items.entries()) {
+    const raw = answers[index];
+    const unanswered = raw === null || raw === undefined || raw === "";
+    /* Same coercion trap as the lesson path: false, [] and " " all coerce to 0. A booked
+       final examination answer must be a number or a string of digits, or nothing. */
+    const selectedChoice = unanswered
+      ? null
+      : (typeof raw === "number"
+        ? raw
+        : (typeof raw === "string" && /^\d+$/.test(raw.trim()) ? Number(raw.trim()) : Number.NaN));
+    if (!unanswered && (!Number.isInteger(selectedChoice) || selectedChoice < 0 || selectedChoice >= item.choices.length)) {
+      return null;
+    }
+    results.push({
+      itemId: item.id,
+      itemPosition: index + 1,
+      selectedChoice,
+      correct: selectedChoice === item.correctChoice
+    });
+  }
+  const correctCount = results.filter((result) => result.correct).length;
+  const answeredCount = results.filter((result) => result.selectedChoice !== null).length;
+  const percent = Math.round((correctCount / results.length) * 100);
+  return {
+    results,
+    correctCount,
+    answeredCount,
+    total: results.length,
+    percent,
+    passed: percent >= exam.passingPercent
+  };
 }
 
 export const CALIFORNIA_COURSE_IDS = Object.freeze(Object.keys(COURSE_DEFINITIONS));

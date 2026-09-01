@@ -1,6 +1,6 @@
 const contentRoot = document.body.dataset.contentRoot || "content/curriculum/";
 const courseId = document.body.dataset.courseId || "va-salesperson-principles-v1";
-const curriculumFiles = ["hours-01-15.md", "hours-16-30.md", "hours-31-45.md", "hours-46-60.md"].map((file) => `${contentRoot}${file}`);
+const curriculumFiles = Array.from({ length: 15 }, (_, index) => `${contentRoot}module-${String(index + 1).padStart(2, "0")}.md`);
 const storageKeys = { reviewed: `statecourse:${courseId}:reviewer-previewed-hours`, lastHour: `statecourse:${courseId}:last-hour` };
 const moduleTitles = ["Foundations of practice", "Ownership and interests", "Land use and title", "Brokerage relationships", "Contracts and agreements", "Finance fundamentals", "Mortgage lending", "Valuation and mathematics", "Listing practice", "Buyer representation", "Transaction management", "Settlement and closing", "Fair housing and disclosure", "Virginia law integration", "Professional readiness"];
 const state = { hours: [], selected: 1, reviewed: new Set(), query: "", mode: "reviewer", reviewerBypass: true, complianceCreditEligible: false, completedHours: [], currentHour: 1, context: null, sessionId: null, lastInteractionAt: Date.now(), heartbeatTimer: null, sectionTimers: new Map(), feedback: "" };
@@ -26,9 +26,40 @@ function formatMarkdown(value = "") {
 }
 function getSection(chunk, title) { const marker = `### ${title}`; const start = chunk.indexOf(marker); if (start === -1) return ""; const remainder = chunk.slice(start + marker.length); const nextHeading = remainder.search(/\n###\s/); return (nextHeading === -1 ? remainder : remainder.slice(0, nextHeading)).trim(); }
 function parseHours(markdown) {
+  /* Each file is one Course Day: module-level metadata followed by four hours. The hour
+     bodies carry the instruction; the objectives, timed sequence and source note are stated
+     once for the Course Day, so every hour in the file inherits them rather than each hour
+     repeating them. */
+  const moduleObjectives = getSection(markdown, "Learning objectives");
+  const moduleSequence = getSection(markdown, "Timed sequence");
+  const moduleSource = markdown.match(/^## Instructor source note[^\n]*$/m)
+    ? markdown.slice(markdown.search(/^## Instructor source note[^\n]*$/m)).replace(/^##[^\n]*\n/, "").trim()
+    : "";
+  const moduleMapping = markdown.match(/\*\*Required subjects covered:\*\*\s*([\s\S]*?)\n\*\*/)?.[1]?.trim() ?? "Course integration";
+
   const pattern = /^## Hour\s+(\d{2})\s+—\s+(.+)$/gm;
   const matches = [...markdown.matchAll(pattern)];
-  return matches.map((match, index) => { const chunk = markdown.slice(match.index ?? 0, matches[index + 1]?.index ?? markdown.length); return { number: Number(match[1]), title: match[2].trim(), mapping: chunk.match(/\*\*Required subject mapping:\*\*\s*(.+)/)?.[1]?.trim() ?? "Course integration", objectives: getSection(chunk, "Learning objectives"), content: getSection(chunk, "Instructional content"), sequence: getSection(chunk, "50-minute instructional sequence"), check: getSection(chunk, "Scored engagement check"), remediation: getSection(chunk, "Remediation"), source: getSection(chunk, "Instructor source note"), searchText: chunk.toLowerCase() }; });
+  return matches.map((match, index) => {
+    const chunk = markdown.slice(match.index ?? 0, matches[index + 1]?.index ?? markdown.length);
+    /* The engagement check is a subsection of the hour, so it has to be cut out of the body
+       before the body is shown — otherwise the expected answer is published alongside the
+       question. */
+    const checkStart = chunk.search(/^### Hour \d{2} engagement check/m);
+    const body = (checkStart === -1 ? chunk : chunk.slice(0, checkStart)).replace(/^##[^\n]*\n/, "").trim();
+    const check = checkStart === -1 ? "" : chunk.slice(checkStart).replace(/^###[^\n]*\n/, "").split(/^---$/m)[0].trim();
+    return {
+      number: Number(match[1]),
+      title: match[2].trim(),
+      mapping: moduleMapping,
+      objectives: moduleObjectives,
+      content: body,
+      sequence: moduleSequence,
+      check,
+      remediation: "",
+      source: moduleSource,
+      searchText: chunk.toLowerCase()
+    };
+  });
 }
 function questionOnly(check = "") { return check.match(/\*\*Question:\*\*\s*([\s\S]*?)(?=\n\n\*\*Expected answer|$)/i)?.[1]?.trim() || "Secure engagement item is being prepared."; }
 function reviewerFallbackContext(hour = 1) {

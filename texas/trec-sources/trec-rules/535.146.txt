@@ -1,0 +1,33 @@
+§535.146 Maintaining Trust Money
+Definitions. In this section:
+"Trust money" means client's money, earnest money, rent, unearned fees, security deposits, or any money held on behalf of another person.
+"Trust account" means an account managed by one party for the benefit of another in a banking institution authorized to do business in Texas.
+Acceptance of Trust Money.
+Any trust money accepted by a broker is held in a fiduciary capacity and must be maintained in a designated trust account maintained by the broker or delivered to an escrow agent authorized in Texas in accordance with the agreement of the principals of the transaction.
+A sales agent shall not maintain a trust account. Any trust money received by a sales agent must be immediately delivered to the sales agent's sponsoring broker.
+Unless a different time to deposit trust money is expressly agreed upon in writing by the principals to the transaction, any trust money received by the broker must be deposited in a trust account or delivered to an authorized escrow agent within a reasonable time, which the Commission has determined to be not later than the close of business of the second working day after the date the broker receives the trust money.
+The broker shall not:
+commingle trust money with the broker's personal money or other non-trust money; or
+deposit or maintain trust money in a personal account or any kind of business account.
+The following is prima facie evidence of commingling trust money with the broker's own money:
+placing trust money in a broker's personal or operating account; or
+paying operating expenses or making withdrawals from a trust account for any purpose other than proper disbursement of trust money.
+Trust account requirements.
+The trust account must be clearly identified as a trust account;
+The broker may, but is not required to, maintain separate trust accounts for each client or type of trust money maintained by the broker, such as earnest money deposits or security deposits received for the management of rental property.
+If trust money held by a broker is deposited in an interest bearing account:
+the money must be available for disbursal at the appropriate time; and
+unless otherwise provided for by an agreement signed by the party depositing the money with the broker, any interest earned on the money must be distributed to any parties to whom the money is disbursed.
+A broker may deposit and maintain a reasonable amount of money in the trust account to cover bank service fees, including fees charged for insufficient funds. Detailed records must be kept for any funds deposited under this exception.
+If a broker acquires ownership of trust money held in a trust account, including entitlement to compensation, such money must be removed from the trust account not later the 30th day after the date the broker acquires ownership of the money.
+The broker must retain a documentary record of each deposit or withdrawal from the trust account and provide an accounting to each beneficiary of trust money at least monthly if there has been any activity in the account.
+A broker may only authorize another license holder to withdraw or transfer money from any trust account but the broker remains responsible and accountable for all trust money received by that broker and all deposits to or disbursements from the trust account.
+If a broker deposits trust money in the form of a check in a trust account and the check is dishonored by the financial institution on which it was drawn, the broker shall immediately notify all parties to the transaction in writing.
+Disbursement of trust money.
+A broker may only disburse money from the broker's trust account in accordance with the agreement under which the money was received.
+If any or all of the parties to a real estate transaction make a written demand for payment of trust money, the broker must pay the trust money to the party or parties entitled to the money within a reasonable time, which the Commission has determined to be not later than the 30th day after the date the demand is made.
+If by a subsequent written agreement, all parties to a real estate transaction authorize the broker maintaining trust money to disburse the trust money in a manner not in accordance with the agreement under which the money was received, the broker must pay the trust money to the party or parties entitled to the money under the subsequent written agreement within a reasonable time, which the Commission has determined to be not later than the 30th day after the date the broker receives the subsequent written agreement.
+The broker must immediately notify all parties in writing of any disbursement of trust money under subsections (d)(2) or (3).
+If the broker cannot reasonably determine to which party or parties the trust money should be paid, the broker may pay the trust money into the registry of a court and interplead the parties.
+Records. A broker must maintain all documentation regarding a trust account for four years from the date the document is received or created by the broker.
+return to top

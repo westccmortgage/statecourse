@@ -7,23 +7,35 @@
     <meta name="theme-color" content="#172b3d" />
     <title>My StateCourse | Student Portal</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="student-portal.css" />
+    <link rel="stylesheet" href="student-portal.css?v=20260818-personalized" />
   </head>
   <body>
     <a class="skip-link" href="#portal-main">Skip to courses</a>
     <header class="portal-header">
-      <a class="brand" href="../"><span aria-hidden="true">SC</span><strong>StateCourse</strong><small>Student Portal</small></a>
-      <nav><a href="../">Course finder</a><button id="signOut" type="button">Sign out</button></nav>
+      <a class="brand" href="../"><span aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><strong>StateCourse</strong><small>Student Portal</small></a>
+      <nav><a href="../">Course finder</a><span class="student-account-name" id="studentAccountName" hidden></span><button id="signOut" type="button">Sign out</button></nav>
     </header>
 
     <main id="portal-main">
       <section class="portal-intro">
-        <div><p class="eyebrow">My StateCourse</p><h1 id="studentGreeting">Your courses</h1><p>Return to an active course, review completed education, or retrieve available records.</p></div>
+        <div><p class="eyebrow">My StateCourse</p><h1 id="studentGreeting">Welcome back.</h1><p>Your courses, progress, payments, certificates, and licensing records are organized here.</p></div>
         <dl class="portal-summary">
           <div><dt>Active</dt><dd id="activeCount">—</dd></div>
           <div><dt>Completed</dt><dd id="completedCount">—</dd></div>
           <div><dt>Certificates</dt><dd id="certificateCount">—</dd></div>
         </dl>
+      </section>
+
+      <section class="profile-completion" id="profileCompletion" hidden aria-labelledby="profileCompletionTitle">
+        <div><p class="eyebrow">Complete your student profile</p><h2 id="profileCompletionTitle">What should we call you?</h2><p>Add your name once so your StateCourse account and future education records are clearly identified.</p></div>
+        <form id="profileNameForm">
+          <label for="profileFirstName">First name</label>
+          <input id="profileFirstName" name="firstName" autocomplete="given-name" required maxlength="100" />
+          <label for="profileLastName">Last name</label>
+          <input id="profileLastName" name="lastName" autocomplete="family-name" required maxlength="100" />
+          <button type="submit">Save my name</button>
+          <p class="profile-form-message" id="profileFormMessage" aria-live="polite"></p>
+        </form>
       </section>
 
       <p class="portal-message" id="portalMessage" aria-live="polite">Loading your student record…</p>
@@ -46,12 +58,12 @@
       <section class="empty-state" id="emptyState" hidden>
         <p class="eyebrow">No enrollments</p>
         <h2>Your purchased courses will appear here.</h2>
-        <p>After a verified payment webhook creates an enrollment, only that purchased course will be added to this account.</p>
+        <p>After an eligible checkout creates an enrollment, only that purchased course will be added to this account.</p>
         <a href="../">Find a state course →</a>
       </section>
     </main>
 
     <footer><span>StateCourse student records are course- and version-specific.</span><small>Portal visits do not count as instructional time.</small></footer>
-    <script src="student-portal.js" defer></script>
+    <script src="student-portal.js?v=20260818-personalized" defer></script>
   </body>
 </html>

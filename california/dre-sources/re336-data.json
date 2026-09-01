@@ -1,0 +1,45 @@
+{
+  "_note": "Input for scripts/fill-re336.mjs. The DRE applicant is StateCourse LLC, a California domestic limited liability company formed 18 August 2026, Secretary of State file number B20260376786. sponsorId stays empty until DRE assigns one; it must never be invented. The Wyoming entity 'state course LLC' is NOT the DRE applicant and is retained for a separate future purpose.",
+  "provider": {
+    "legalName": "StateCourse LLC",
+    "sponsorId": "",
+    "street": "407 N Pacific Coast Highway, Unit 1028",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "zip": "90277",
+    "principalOfficeStreet": "150 E Olive Avenue, Suite 112",
+    "principalOfficeCity": "Burbank",
+    "principalOfficeState": "CA",
+    "principalOfficeZip": "91502",
+    "website": "https://statecourse.com",
+    "formationState": "CA",
+    "formationDate": "2026-08-18",
+    "californiaEntityNumber": "B20260376786",
+    "californiaRegistrationStatus": "California domestic LLC, Articles of Organization filed and stamped by the California Secretary of State",
+    "californiaRegistrationDate": "2026-08-18"
+  },
+  "primaryContact": {
+    "name": "Kanevsky, Anatoliy",
+    "declarantName": "Anatoliy Kanevsky",
+    "title": "Founder / CEO",
+    "city": "Redondo Beach",
+    "state": "California"
+  },
+  "instructor": {
+    "name": "Kanevsky, Anatoliy",
+    "licenseNumber": "01385024",
+    "heldCaliforniaLicense": true,
+    "approvalStatus": "Instructor approval pending DRE review. Not a DRE-approved instructor."
+  },
+  "courses": [
+    "Real Estate Principles",
+    "Real Estate Practice",
+    "Mortgage Loan Brokering and Lending"
+  ],
+  "_retainedEntity": {
+    "legalName": "state course LLC",
+    "formationState": "WY",
+    "formationDate": "2026-08-16",
+    "role": "Not the DRE applicant. Retained for a separate future purpose."
+  }
+}

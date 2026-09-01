@@ -1,0 +1,8 @@
+[
+  {
+    "comment": "Highlight 4 — J. Total Closing Costs (coords measured on the 2026-08-29 render's full-page hold; re-measure on the final clean render before use)",
+    "start": 110.0, "end": 124.0,
+    "box": {"x": 962, "y": 571, "w": 364, "h": 67},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["4 — J. Total Closing", "Costs"], "x": 1420, "y": 566}
+  }
+]

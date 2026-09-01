@@ -102,6 +102,11 @@
   status = 200
 
 [[redirects]]
+  from = "/student/register"
+  to = "/student/register/index.html"
+  status = 200
+
+[[redirects]]
   from = "/student/course"
   to = "/student-course.html"
   status = 200
@@ -117,6 +122,11 @@
   status = 200
 
 [[redirects]]
+  from = "/api/student/register"
+  to = "/.netlify/functions/student-register"
+  status = 200
+
+[[redirects]]
   from = "/api/student/portal"
   to = "/.netlify/functions/student-portal"
   status = 200
@@ -124,6 +134,11 @@
 [[redirects]]
   from = "/api/student/course"
   to = "/.netlify/functions/student-course"
+  status = 200
+
+[[redirects]]
+  from = "/api/student/blocks"
+  to = "/.netlify/functions/student-blocks"
   status = 200
 
 [[redirects]]
@@ -154,6 +169,11 @@
 [[redirects]]
   from = "/api/admin/refunds"
   to = "/.netlify/functions/request-refund"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/refund-exceptions"
+  to = "/.netlify/functions/admin-refund-exceptions"
   status = 200
 
 [[redirects]]

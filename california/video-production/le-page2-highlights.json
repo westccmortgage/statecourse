@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "1 - A. Origination Charges = $16,132 (Points $1,665 / Broker Fee $12,872 / Lender Fee $1,595)",
+    "start": 50.0, "end": 67.0,
+    "box": {"x": 286, "y": 74, "w": 1568, "h": 283},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["1 — A. Origination", "Charges"], "x": 286, "y": 387}
+  },
+  {
+    "comment": "2 - B. Services You Cannot Shop For = $891 (5 rows incl. Tax Service)",
+    "start": 68.0, "end": 86.0,
+    "box": {"x": 252, "y": 304, "w": 1638, "h": 450},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["2 — B. Services You", "Cannot Shop For"], "x": 252, "y": 784}
+  },
+  {
+    "comment": "3 - C. Services You Can Shop For = $6,083 (4 Title rows)",
+    "start": 86.0, "end": 105.0,
+    "box": {"x": 252, "y": 277, "w": 1637, "h": 387},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["3 — C. Services You", "Can Shop For"], "x": 252, "y": 694}
+  },
+  {
+    "comment": "4 - J. Total Closing Costs = $34,156 with Lender Credits line",
+    "start": 106.0, "end": 123.0,
+    "box": {"x": 15, "y": 455, "w": 1781, "h": 358},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["4 — J. Total Closing", "Costs"], "x": 15, "y": 843}
+  },
+  {
+    "comment": "5a - Calculating Cash to Close, table as a whole",
+    "start": 123.0, "end": 134.0,
+    "box": {"x": 159, "y": 8, "w": 1501, "h": 793},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["5 — Calculating Cash", "to Close"], "x": 159, "y": 831}
+  },
+  {
+    "comment": "5b - Calculating Cash to Close, final line only = $202,036",
+    "start": 134.0, "end": 146.0,
+    "box": {"x": 162, "y": 705, "w": 1486, "h": 96},
+    "label": {"header": "SECTION IDENTIFICATION", "lines": ["5 — Estimated Cash", "to Close"], "x": 162, "y": 831}
+  }
+]

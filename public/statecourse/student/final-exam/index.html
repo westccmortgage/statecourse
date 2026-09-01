@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Final Examination | StateCourse Student Portal</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/student/student-portal.css">
+  <link rel="stylesheet" href="/student/final-exam/final-exam.css">
+  <script src="/student/final-exam/final-exam.js" defer></script>
+</head>
+<body class="exam-body">
+  <a class="skip-link" href="#examMain">Skip to the examination</a>
+  <header class="exam-header">
+    <a class="portal-brand" href="/student/"><span aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><strong>StateCourse</strong><small>California final examination</small></a>
+    <div id="examClock" class="exam-clock" hidden>
+      <span>Time remaining</span>
+      <strong id="clockReadout">—</strong>
+      <small id="clockNote">Your answers are saved as you go.</small>
+    </div>
+  </header>
+
+  <div id="examMessage" class="exam-message" role="status">Opening your examination record…</div>
+
+  <main id="examMain" tabindex="-1">
+    <!-- Before the examination: what California requires, and what is still outstanding. -->
+    <section id="examGate" class="exam-gate" hidden>
+      <p class="eyebrow">California DRE correspondence course</p>
+      <h1 id="gateTitle">Final examination</h1>
+      <p id="gateCourse" class="gate-course"></p>
+
+      <div class="exam-facts">
+        <div><dt>Questions</dt><dd id="factQuestions">—</dd></div>
+        <div><dt>Passing score</dt><dd id="factPassing">—</dd></div>
+        <div><dt>Time limit</dt><dd id="factTime">—</dd></div>
+        <div><dt>Attempts</dt><dd id="factAttempts">—</dd></div>
+      </div>
+
+      <section id="gateBlocked" class="gate-panel" hidden>
+        <h2>What California still requires</h2>
+        <p class="panel-lede">The examination opens when every requirement below is met. Each one comes from the Department's rules for correspondence courses, not from StateCourse.</p>
+        <ul id="requirementList" class="requirement-list"></ul>
+      </section>
+
+      <section id="gateReady" class="gate-panel ready" hidden>
+        <h2>You are eligible to sit the examination</h2>
+        <p class="panel-lede">Once you begin, the clock runs continuously and does not pause. Answers are saved as you make them, so closing the page does not lose your work — but it does not stop the time either.</p>
+        <ul class="rule-list">
+          <li>The examination is administered under a proctor who has verified your photo identification.</li>
+          <li>It is closed book. No notes, no course materials, and no other person may assist you.</li>
+          <li>Questions and answers are never released, before or after the examination.</li>
+        </ul>
+        <button id="startExam" type="button" class="primary-action">Begin the examination</button>
+        <p id="startMessage" class="action-message" role="status"></p>
+      </section>
+
+      <section id="gateHistory" class="gate-panel history" hidden>
+        <h2>Your attempts</h2>
+        <ol id="attemptList" class="attempt-list"></ol>
+      </section>
+
+      <p class="gate-back"><a href="/student/">← Back to My StateCourse</a></p>
+    </section>
+
+    <!-- During the examination. -->
+    <section id="examRoom" class="exam-room" hidden>
+      <div class="exam-status">
+        <p class="eyebrow">Attempt <span id="roomAttempt">1</span> · Form <span id="roomForm">A</span></p>
+        <p id="roomAnswered" class="answered-count">0 of 100 answered</p>
+      </div>
+
+      <article class="question-card">
+        <p class="question-number">Question <span id="questionNumber">1</span> of <span id="questionTotal">100</span></p>
+        <h2 id="questionPrompt" class="question-prompt"></h2>
+        <form id="choiceForm" class="choice-form"></form>
+      </article>
+
+      <nav class="question-nav" aria-label="Examination navigation">
+        <button id="prevQuestion" type="button">← Previous</button>
+        <button id="gridToggle" type="button" aria-expanded="false" aria-controls="questionGrid">All questions</button>
+        <button id="nextQuestion" type="button">Next →</button>
+      </nav>
+
+      <div id="questionGrid" class="question-grid" hidden aria-label="Jump to a question"></div>
+
+      <section class="exam-submit">
+        <p id="submitSummary" class="submit-summary"></p>
+        <button id="submitExam" type="button" class="primary-action">Submit the examination</button>
+        <p id="submitMessage" class="action-message" role="status"></p>
+      </section>
+    </section>
+
+    <!-- After the examination. -->
+    <section id="examResult" class="exam-result" hidden>
+      <p class="eyebrow">Result recorded</p>
+      <h1 id="resultHeading">Examination submitted</h1>
+      <p id="resultScore" class="result-score"></p>
+      <p id="resultMessage" class="result-message"></p>
+      <p class="result-note">Individual questions and answers are not released. California does not permit the final examination to be furnished to students.</p>
+      <p class="gate-back"><a href="/student/">← Back to My StateCourse</a></p>
+    </section>
+  </main>
+
+  <!-- Printing is refused rather than silently producing a copy of the paper. -->
+  <div class="print-block" aria-hidden="true">
+    <p>The StateCourse final examination cannot be printed.</p>
+  </div>
+</body>
+</html>

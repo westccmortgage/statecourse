@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_regulatory_review": "2026-08-17",
+  "last_regulatory_review": "2026-08-16",
   "courses": [
     {
       "course_id": "wi-salesperson-prelicense-v1",
@@ -362,161 +362,60 @@
       "enrollment_enabled": false,
       "route": "/real-estate/arizona/pre-license/salesperson/",
       "regulator": "Arizona Department of Real Estate",
-      "delivery": "Asynchronous distance delivery proposed under ADRE SPS 2025.01; approval pending",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
       "modules": [
         {
-          "id": "AZ90-N01",
-          "title": "Property fundamentals and ownership",
-          "hours": 9,
-          "layer": "national_core",
-          "units": "01-09"
+          "id": "AZ90-01",
+          "title": "Property, ownership, and land use",
+          "hours": 8
         },
         {
-          "id": "AZ90-N02",
-          "title": "Land, legal descriptions and public controls",
-          "hours": 6,
-          "layer": "national_core",
-          "units": "10-15"
+          "id": "AZ90-02",
+          "title": "Real estate law and professional scope",
+          "hours": 8
         },
         {
-          "id": "AZ90-N03",
-          "title": "Agency and brokerage principles",
-          "hours": 7,
-          "layer": "national_core",
-          "units": "16-22"
+          "id": "AZ90-03",
+          "title": "Brokerage relationships and agency",
+          "hours": 9
         },
         {
-          "id": "AZ90-N04",
+          "id": "AZ90-04",
           "title": "Contracts and transaction documents",
-          "hours": 10,
-          "layer": "national_core",
-          "units": "23-32"
+          "hours": 14
         },
         {
-          "id": "AZ90-N05",
-          "title": "Real estate finance and calculations",
-          "hours": 9,
-          "layer": "national_core",
-          "units": "33-41"
+          "id": "AZ90-05",
+          "title": "Title and transfer",
+          "hours": 8
         },
         {
-          "id": "AZ90-N06",
-          "title": "Valuation and investment fundamentals",
-          "hours": 7,
-          "layer": "national_core",
-          "units": "42-48"
+          "id": "AZ90-06",
+          "title": "Financing and calculations",
+          "hours": 10
         },
         {
-          "id": "AZ90-N07",
-          "title": "Title, transfer and closing",
-          "hours": 6,
-          "layer": "national_core",
-          "units": "49-54"
+          "id": "AZ90-07",
+          "title": "Valuation and investment",
+          "hours": 8
         },
         {
-          "id": "AZ90-N08",
+          "id": "AZ90-08",
           "title": "Leasing and property management",
-          "hours": 5,
-          "layer": "national_core",
-          "units": "55-59"
+          "hours": 7
         },
         {
-          "id": "AZ90-N09",
-          "title": "Federal fair housing and professional practice",
-          "hours": 4,
-          "layer": "national_core",
-          "units": "60-63"
+          "id": "AZ90-09",
+          "title": "Fair housing, disclosures, and risk",
+          "hours": 8
         },
         {
-          "id": "AZ90-A01",
-          "title": "Arizona regulatory framework",
-          "hours": 4,
-          "layer": "arizona_specific",
-          "units": "64-67",
-          "adre_sections": "1.1-1.5"
-        },
-        {
-          "id": "AZ90-A02",
-          "title": "Arizona consumer protection laws",
-          "hours": 2,
-          "layer": "arizona_specific",
-          "units": "68-69",
-          "adre_sections": "2.1-2.4"
-        },
-        {
-          "id": "AZ90-A03",
-          "title": "Advertising",
-          "hours": 2,
-          "layer": "arizona_specific",
-          "units": "70-71",
-          "adre_sections": "3.1-3.4"
-        },
-        {
-          "id": "AZ90-A04",
-          "title": "Arizona agency",
-          "hours": 2,
-          "layer": "arizona_specific",
-          "units": "72-73",
-          "adre_sections": "4.1-4.4"
-        },
-        {
-          "id": "AZ90-A05",
-          "title": "Licensee duties and obligations",
-          "hours": 3,
-          "layer": "arizona_specific",
-          "units": "74-76",
-          "adre_sections": "5.1-5.7"
-        },
-        {
-          "id": "AZ90-A06",
-          "title": "Licensee competencies and duties",
-          "hours": 4,
-          "layer": "arizona_specific",
-          "units": "77-80",
-          "adre_sections": "6.1-6.3.5"
-        },
-        {
-          "id": "AZ90-A07",
-          "title": "Reasonable skill and care",
-          "hours": 2,
-          "layer": "arizona_specific",
-          "units": "81-82",
-          "adre_sections": "7.1-7.3"
-        },
-        {
-          "id": "AZ90-A08",
-          "title": "Contracts",
-          "hours": 3,
-          "layer": "arizona_specific",
-          "units": "83-85",
-          "adre_sections": "8.1-8.2.5"
-        },
-        {
-          "id": "AZ90-A09",
-          "title": "Critical business services",
-          "hours": 2,
-          "layer": "arizona_specific",
-          "units": "86-87",
-          "adre_sections": "9.1-9.3"
-        },
-        {
-          "id": "AZ90-A10",
-          "title": "Ownership and encumbrances",
-          "hours": 2,
-          "layer": "arizona_specific",
-          "units": "88-89",
-          "adre_sections": "10.1-10.5"
-        },
-        {
-          "id": "AZ90-A11",
-          "title": "Foreclosure, short sale and deed in lieu",
-          "hours": 1,
-          "layer": "arizona_specific",
-          "units": "90",
-          "adre_sections": "11.1-11.2"
+          "id": "AZ90-10",
+          "title": "Arizona-specific law, forms, and integrated practice",
+          "hours": 10
         }
       ],
-      "public_notice": "Development: verified regulatory matrix and 90-hour blueprint (63 National Core + 27 Arizona-specific). Student manuscripts and assessment bank remain in development. Not approved; enrollment, payment, credit, and certificates are unavailable."
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
     },
     {
       "course_id": "az-contract-writing-6-v1",
@@ -572,7 +471,7 @@
       "enrollment_enabled": false,
       "route": "/real-estate/washington/pre-license/fundamentals/",
       "regulator": "Washington State Department of Licensing",
-      "delivery": "Asynchronous distance delivery proposed under WAC 308-124H-830 through -845; DOL or qualifying ARELLO acceptance pending",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
       "modules": [
         {
           "id": "WAF-01",
@@ -615,7 +514,7 @@
           "hours": 6
         }
       ],
-      "public_notice": "Development: verified Washington controls and 60-unit blueprint complete. Student manuscripts and the unique secure 180-question final remain in development. Not approved; enrollment, payment, credit, and certificates are unavailable."
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
     },
     {
       "course_id": "wa-real-estate-practices-30-v1",
@@ -629,7 +528,7 @@
       "enrollment_enabled": false,
       "route": "/real-estate/washington/pre-license/practices/",
       "regulator": "Washington State Department of Licensing",
-      "delivery": "Asynchronous distance delivery proposed under WAC 308-124H-830 through -845; DOL or qualifying ARELLO acceptance pending",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
       "modules": [
         {
           "id": "WAP-01",
@@ -653,16 +552,16 @@
         },
         {
           "id": "WAP-05",
-          "title": "Finance, escrow and closing",
+          "title": "Finance, escrow, and closing",
           "hours": 4
         },
         {
           "id": "WAP-06",
-          "title": "Fair housing, property management and risk",
+          "title": "Fair housing, property management, and risk",
           "hours": 3
         }
       ],
-      "public_notice": "Development: verified Washington controls and 30-unit blueprint complete. Student manuscripts and the unique secure 90-question final remain in development. Not approved; enrollment, payment, credit, and certificates are unavailable."
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
     },
     {
       "course_id": "pa-real-estate-fundamentals-30-v1",
@@ -676,50 +575,50 @@
       "enrollment_enabled": false,
       "route": "/real-estate/pennsylvania/pre-license/fundamentals/",
       "regulator": "Pennsylvania Real Estate Commission",
-      "delivery": "Asynchronous distance delivery proposed under 49 Pa. Code § 35.358; ARELLO/IDECC or other Commission-accepted method approval pending",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
       "modules": [
         {
           "id": "PAF-01",
-          "title": "Land, real estate and property",
-          "hours": 3
+          "title": "Real estate law and legal concepts",
+          "hours": 6
         },
         {
           "id": "PAF-02",
-          "title": "Public and private controls; environmental issues",
-          "hours": 3
+          "title": "Interests, ownership, and legal descriptions",
+          "hours": 5
         },
         {
           "id": "PAF-03",
-          "title": "Legal descriptions and interests in real estate",
-          "hours": 4
-        },
-        {
-          "id": "PAF-04",
-          "title": "Forms of ownership",
+          "title": "Land use and environmental controls",
           "hours": 3
         },
         {
+          "id": "PAF-04",
+          "title": "Valuation",
+          "hours": 4
+        },
+        {
           "id": "PAF-05",
-          "title": "Transfer of title and title records",
+          "title": "Finance",
           "hours": 5
         },
         {
           "id": "PAF-06",
-          "title": "Principles of contract law",
+          "title": "Transfer and title",
           "hours": 3
         },
         {
           "id": "PAF-07",
-          "title": "Principles of financing",
-          "hours": 4
+          "title": "Contract foundations",
+          "hours": 2
         },
         {
           "id": "PAF-08",
-          "title": "Pennsylvania license law, rules and regulation",
-          "hours": 5
+          "title": "Fair housing and real estate math",
+          "hours": 2
         }
       ],
-      "public_notice": "Development: verified Pennsylvania controls and 30-unit Commission-outline blueprint complete. Student manuscripts and the unique secure proctored final remain in development. Not approved; enrollment, payment, credit and transcripts are unavailable."
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
     },
     {
       "course_id": "pa-real-estate-practice-45-v1",
@@ -733,55 +632,60 @@
       "enrollment_enabled": false,
       "route": "/real-estate/pennsylvania/pre-license/practice/",
       "regulator": "Pennsylvania Real Estate Commission",
-      "delivery": "Asynchronous distance delivery proposed under 49 Pa. Code § 35.358; ARELLO/IDECC or other Commission-accepted method approval pending",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
       "modules": [
         {
           "id": "PAP-01",
-          "title": "The real estate business",
-          "hours": 4
+          "title": "Pennsylvania license law and brokerage",
+          "hours": 6
         },
         {
           "id": "PAP-02",
-          "title": "Law, ethics and consumer protection",
-          "hours": 5
-        },
-        {
-          "id": "PAP-03",
           "title": "Agency and consumer relationships",
           "hours": 6
         },
         {
+          "id": "PAP-03",
+          "title": "Listing practice",
+          "hours": 5
+        },
+        {
           "id": "PAP-04",
-          "title": "Homeownership and listing practice",
-          "hours": 6
+          "title": "Buyer practice",
+          "hours": 5
         },
         {
           "id": "PAP-05",
-          "title": "Buyer practice and risk reduction",
-          "hours": 5
-        },
-        {
-          "id": "PAP-06",
-          "title": "Agreement of sale and escrow",
+          "title": "Pennsylvania contracts and forms",
           "hours": 7
         },
         {
+          "id": "PAP-06",
+          "title": "Financing practice",
+          "hours": 4
+        },
+        {
           "id": "PAP-07",
-          "title": "Residential financing",
-          "hours": 5
+          "title": "Closing and title practice",
+          "hours": 4
         },
         {
           "id": "PAP-08",
-          "title": "Valuation and appraisal",
+          "title": "Leasing and property management",
           "hours": 3
         },
         {
           "id": "PAP-09",
-          "title": "Closing the residential transaction",
-          "hours": 4
+          "title": "Fair housing and consumer protection",
+          "hours": 3
+        },
+        {
+          "id": "PAP-10",
+          "title": "Professional conduct and integrated practice",
+          "hours": 2
         }
       ],
-      "public_notice": "Development: verified Pennsylvania controls and 45-unit Commission-outline blueprint complete. Student manuscripts and the unique secure proctored final remain in development. Not approved; enrollment, payment, credit and transcripts are unavailable."
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
     },
     {
       "course_id": "nc-broker-prelicensing-75-v1",
@@ -795,110 +699,85 @@
       "enrollment_enabled": false,
       "route": "/real-estate/north-carolina/pre-license/broker/",
       "regulator": "North Carolina Real Estate Commission",
-      "delivery": "Self-paced distance proposed; separate NCREC delivery-method approval required",
+      "delivery": "Online distance delivery proposed; regulator approval pending",
       "modules": [
         {
           "id": "NCB-01",
-          "title": "North Carolina licensure",
-          "hours": 2,
-          "recommended_hours": 2,
-          "type": "instruction"
+          "title": "License law and brokerage regulation",
+          "hours": 5
         },
         {
           "id": "NCB-02",
-          "title": "Basic real estate concepts",
-          "hours": 1,
-          "recommended_hours": 1,
-          "type": "instruction"
+          "title": "Property concepts and ownership",
+          "hours": 5
         },
         {
           "id": "NCB-03",
-          "title": "Property characteristics, description, and use",
-          "hours": 4,
-          "recommended_hours": 4,
-          "type": "instruction"
+          "title": "Title, legal descriptions, and transfer",
+          "hours": 5
         },
         {
           "id": "NCB-04",
-          "title": "Property ownership types and transfers",
-          "hours": 6,
-          "recommended_hours": 6,
-          "type": "instruction"
+          "title": "Land use and environmental matters",
+          "hours": 5
         },
         {
           "id": "NCB-05",
-          "title": "Property disclosures and environmental issues",
-          "hours": 6,
-          "recommended_hours": 6,
-          "type": "instruction"
+          "title": "Brokerage relationships and agency",
+          "hours": 5
         },
         {
           "id": "NCB-06",
-          "title": "Property taxation and insurance",
-          "hours": 4,
-          "recommended_hours": 4,
-          "type": "instruction"
+          "title": "Contract law",
+          "hours": 5
         },
         {
           "id": "NCB-07",
-          "title": "Agency and brokerage relationships",
-          "hours": 13,
-          "recommended_hours": 13,
-          "type": "instruction"
+          "title": "North Carolina sales contracts and forms",
+          "hours": 5
         },
         {
           "id": "NCB-08",
-          "title": "Contracts and closing",
-          "hours": 18,
-          "recommended_hours": 18,
-          "type": "instruction"
+          "title": "Real estate finance",
+          "hours": 5
         },
         {
           "id": "NCB-09",
-          "title": "Real estate financing and settlement",
-          "hours": 7,
-          "recommended_hours": 7,
-          "type": "instruction"
+          "title": "Valuation and brokerage pricing",
+          "hours": 5
         },
         {
           "id": "NCB-10",
-          "title": "Real property valuation and appraisal",
-          "hours": 6,
-          "recommended_hours": 6,
-          "type": "instruction"
+          "title": "Real estate calculations",
+          "hours": 5
         },
         {
           "id": "NCB-11",
-          "title": "Fair housing and anti-discrimination",
-          "hours": 2,
-          "recommended_hours": 1.5,
-          "type": "instruction"
+          "title": "Fair housing and consumer protection",
+          "hours": 5
         },
         {
           "id": "NCB-12",
-          "title": "Landlord, tenant, and property management",
-          "hours": 3,
-          "recommended_hours": 3.5,
-          "type": "instruction"
+          "title": "Leasing and property management",
+          "hours": 5
         },
         {
           "id": "NCB-13",
-          "title": "Proctored end-of-course examination",
-          "hours": 3,
-          "recommended_hours": 3,
-          "type": "exam"
+          "title": "Construction, insurance, and property condition",
+          "hours": 5
+        },
+        {
+          "id": "NCB-14",
+          "title": "Closing, settlement, and taxation",
+          "hours": 5
+        },
+        {
+          "id": "NCB-15",
+          "title": "Integrated North Carolina brokerage practice",
+          "hours": 5
         }
       ],
-      "public_notice": "Development: verified North Carolina controls and a 75-hour syllabus blueprint are complete. Student manuscripts, formative items, secure final, time study, approved instructor and accepted self-paced delivery remain release gates. Not approved; enrollment, payment and credit are unavailable.",
-      "regulatory_summary": {
-        "subject_hours": 72,
-        "proctored_final_hours": 3,
-        "passing_percent": 75,
-        "completion_days": 180,
-        "records_years": 3,
-        "completion_report_days": 7,
-        "monthly_summary_due_day": 5
-      }
+      "public_notice": "Course framework in development. Not approved; enrollment, payment, regulatory study time, credit, and certificates are unavailable."
     },
     {
       "course_id": "co-real-estate-law-practice-48-v1",

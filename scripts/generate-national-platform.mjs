@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { deriveJurisdictionRecord, JURISDICTION_APPROVAL_LABELS } from "../config/jurisdiction-record.mjs";
+import { PROVIDER_FACTS, VERIFICATION_PROCEDURES } from "../config/approval-verification.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicRoot = path.join(root, "public/statecourse");
@@ -8,6 +10,7 @@ const registry = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/state-re
 const catalog = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/course-catalog.json"), "utf8"));
 const catalogCourses = catalog.categories.flatMap((category) => category.programs ?? []).flatMap((program) => program.courses ?? []);
 const studentPortalUrl = "https://statecourse.com/student/sign-in/";
+const studentRegisterUrl = "https://statecourse.com/student/register/";
 
 const dc = {
   state_name: "District of Columbia",
@@ -28,8 +31,27 @@ const states = [...registry.states, ...(registry.states.some((state) => state.st
 
 const esc = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 const slugify = (name) => name.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replaceAll(/^-|-$/g, "");
+// Six state course pages are hand-authored and tracked in git. They carry
+// state-specific academic detail this generator does not model, and an earlier
+// run silently replaced them with the generic template. The generator now
+// refuses to overwrite them; delete the file first if a route is meant to
+// return to generated output.
+const handBuiltRoutes = new Set([
+  "real-estate/virginia/pre-license/principles-and-practices/index.html",
+  "real-estate/maine/pre-license/sales-agent/index.html",
+  "real-estate/wisconsin/pre-license/salesperson/index.html",
+  "real-estate/missouri/pre-license/salesperson-pre-exam/index.html",
+  "real-estate/missouri/pre-license/real-estate-practice/index.html",
+  "real-estate/oklahoma/pre-license/basic/index.html",
+]);
+const preserved = [];
+
 const write = (relativePath, content) => {
   const target = path.join(publicRoot, relativePath);
+  if (handBuiltRoutes.has(relativePath) && fs.existsSync(target)) {
+    preserved.push(relativePath);
+    return;
+  }
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, content);
 };
@@ -45,15 +67,15 @@ function header(prefix, active = "") {
     ["Blog", "blog/", "blog"],
   ];
   const links = nav.map(([label, href, key]) => `<a href="${prefix}${href}"${active === key ? ' aria-current="page"' : ""}>${label}</a>`).join("");
-  return `<a class="skip-link" href="#main-content">Skip to main content</a><header class="national-header"><div class="header-shell"><a class="national-brand" href="${prefix}" aria-label="StateCourse home"><span class="brand-mark" aria-hidden="true">SC</span><span><strong>StateCourse</strong><small>Professional Licensing Education</small></span></a><nav class="desktop-nav" aria-label="Primary navigation">${links}</nav><div class="header-actions"><a class="account-link" href="${studentPortalUrl}">My Courses</a><a class="state-button" href="${prefix}get-licensed/">Choose Your State</a></div><details class="mobile-menu"><summary aria-label="Open navigation">Menu</summary><nav>${links}<a href="${studentPortalUrl}">My Courses</a></nav></details></div></header>`;
+  return `<a class="skip-link" href="#main-content">Skip to main content</a><header class="national-header"><div class="header-shell"><a class="national-brand" href="${prefix}" aria-label="StateCourse home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><nav class="desktop-nav" aria-label="Primary navigation">${links}</nav><div class="header-actions"><a class="account-link" href="${studentRegisterUrl}">Create Account</a><a class="account-link" href="${studentPortalUrl}">My Courses</a><a class="state-button" href="${prefix}get-licensed/">Choose Your State</a></div><details class="mobile-menu"><summary aria-label="Open navigation">Menu</summary><nav>${links}<a href="${studentRegisterUrl}">Create Account</a><a href="${studentPortalUrl}">My Courses</a></nav></details></div></header>`;
 }
 
 function footer(prefix) {
-  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark">SC</span><span><strong>StateCourse</strong><small>Professional Licensing Education</small></span></a><p>Real estate licensing, state by state.</p></div><nav aria-label="Footer navigation"><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a><a href="${studentPortalUrl}">My Courses</a></nav><p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p></div></footer>`;
+  return `<footer class="national-footer"><div class="footer-shell"><div><a class="national-brand inverse" href="${prefix}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span><span><strong>StateCourse</strong><small>National Academy</small></span></a><p>Real estate licensing, state by state.</p></div><nav aria-label="Footer navigation"><a href="${prefix}get-licensed/">Get Licensed</a><a href="${prefix}state-requirements/">State Requirements</a><a href="${prefix}courses/">Courses</a><a href="${prefix}resources/">Resources</a><a href="${prefix}approvals/">Approval Verification</a><a href="${studentPortalUrl}">My Courses</a></nav><p class="footer-disclosure">Programs shown as In Development are not approved enrollment offers and cannot award regulatory credit.</p></div></footer>`;
 }
 
 function document({ title, description, prefix = "../", active = "", body, scripts = "" }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#10283a"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="${esc(description)}"/><meta name="theme-color" content="#08102b"/><title>${esc(title)} | StateCourse</title><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="${prefix}national.css?v=20260829-service"/></head><body>${header(prefix, active)}<main id="main-content">${body}</main>${footer(prefix)}${scripts}</body></html>`;
 }
 
 function pageHero(overline, title, lede, state = false) {
@@ -75,18 +97,156 @@ const courseCards = catalogCourses.map((course) => `<article class="content-card
 const coursesBody = `${pageHero("National course catalog", "Regulated education, grouped by state.", "Every course has its own jurisdiction, version, instructor, approval record, delivery rules, examinations, disclosures, and enrollment gate.")}<section class="page-body"><p class="notice"><strong>Enrollment remains closed.</strong> Every listed qualifying-education product is currently in development and cannot award regulatory credit.</p><div class="content-grid" style="margin-top:34px">${courseCards}</div></section>`;
 write("courses/index.html", document({ title: "Course Catalog", description: "StateCourse real estate licensing education catalog.", body: coursesBody }));
 
+/* Each card links only where a real destination exists: a card with no href renders as plain
+   informational copy rather than borrowing a generic link to look useful. The blog's topics
+   carry no links until posts exist — the Development status box says so plainly. */
 const simplePages = [
-  ["continuing-education", "renew", "Renew / Continuing Education", "Stay licensed with the right state requirements.", "Renewal cycles, mandatory subjects, reporting, certificates, and approved offerings remain state-specific. No CE product will be represented as available until its separate approval is recorded.", [["Renewal cycle", "See your state deadline and education window."], ["Mandatory subjects", "Keep required topics distinct from elective education."], ["Permanent records", "Retrieve eligible completion certificates from your account."]]],
-  ["resources", "resources", "Resources", "Practical licensing guidance before you purchase anything.", "Use state checklists, vocabulary, real estate math, financing guides, exam-day guidance, application steps, and regulator-linked updates.", [["State licensing checklists", "Understand education, examination, application, and background requirements."], ["Sample lessons", "Review StateCourse’s text-first digital textbook approach."], ["Real estate math", "Practice prorations, commissions, financing, valuation, and investment calculations."]]],
-  ["blog", "blog", "StateCourse Journal", "Clear reporting on licensing and professional practice.", "Editorial state guides, exam preparation, regulatory updates, continuing education, finance, and career topics—each with an author, review date, and official sources when regulatory facts are discussed.", [["State Guides", "How to understand the licensing path in a specific jurisdiction."], ["Exam Preparation", "What candidates should expect and how to study responsibly."], ["Regulatory Updates", "Material changes reviewed against official regulator sources."]]],
+  ["resources", "resources", "Resources", "Practical licensing guidance before you purchase anything.", "Use state checklists, vocabulary, real estate math, financing guides, exam-day guidance, application steps, and regulator-linked updates.", [
+    ["State licensing checklists", "Understand education, examination, application, and background requirements.", "../state-requirements/", "Browse state requirements →"],
+    ["Sample lessons", "Review StateCourse’s block-based lessons: focused learning blocks with visuals, practice, and mastery checks.", "../student/course-preview/", "Open a sample California lesson →"],
+    ["Real estate math", "Practice prorations, commissions, financing, valuation, and investment calculations.", null, null],
+  ]],
+  ["blog", "blog", "StateCourse Journal", "Clear reporting on licensing and professional practice.", "Editorial state guides, exam preparation, regulatory updates, continuing education, finance, and career topics—each with an author, review date, and official sources when regulatory facts are discussed.", [
+    ["State Guides", "How to understand the licensing path in a specific jurisdiction.", null, null],
+    ["Exam Preparation", "What candidates should expect and how to study responsibly.", null, null],
+    ["Regulatory Updates", "Material changes reviewed against official regulator sources.", null, null],
+  ]],
 ];
 for (const [route, active, overline, title, lede, cards] of simplePages) {
-  const body = `${pageHero(overline, title, lede)}<section class="page-body"><div class="content-grid">${cards.map(([heading, copy], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p><a href="../state-requirements/">Start with your state →</a></article>`).join("")}</div><div class="source-box"><h2>Development status</h2><p>This national service area is being built inside the shared StateCourse platform. Regulated products remain unavailable until their individual approvals are recorded.</p></div></section>`;
+  const body = `${pageHero(overline, title, lede)}<section class="page-body"><div class="content-grid">${cards.map(([heading, copy, href, label], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p>${href ? `<a href="${href}">${esc(label)}</a>` : ""}</article>`).join("")}</div><div class="source-box"><h2>Development status</h2><p>This national service area is being built inside the shared StateCourse platform. Regulated products remain unavailable until their individual approvals are recorded.</p></div></section>`;
   write(`${route}/index.html`, document({ title: overline, description: lede, active, body }));
 }
 
-const examPrepBody = `${pageHero("California salesperson examination", "Free California practice exam.", "Answer 30 original StateCourse questions mapped to the California DRE salesperson examination domains. Receive an immediate score, domain-level results, explanations, and a focused study plan.")}<section class="page-body exam-prep-shell"><div class="exam-disclosure"><strong>Practice only.</strong><span>These are original StateCourse study questions, not California DRE examination questions. This diagnostic does not award course credit and never affects regulated LMS progress.</span></div><section class="exam-start" id="examStart"><div><p class="overline">California diagnostic</p><h2>30 questions · seven official DRE content domains</h2><p>The actual California salesperson examination contains 150 multiple-choice questions, allows three hours, and requires at least 70% correct. This shorter diagnostic uses the same published subject categories and approximate weighting.</p><dl class="exam-facts"><div><dt>Questions</dt><dd>30</dd></div><div><dt>Suggested pace</dt><dd>36 minutes</dd></div><div><dt>Target score</dt><dd>70%</dd></div></dl></div><button id="startPracticeExam" type="button">Start free practice exam <span aria-hidden="true">→</span></button></section><section id="practiceExam" class="practice-exam" hidden aria-live="polite"><header class="exam-toolbar"><div><p class="overline">Free California practice</p><h2 id="examProgressHeading">Question 1 of 30</h2></div><div class="exam-meter" aria-hidden="true"><span id="examProgressBar"></span></div><button id="exitPracticeExam" type="button">Exit diagnostic</button></header><article id="questionCard" class="question-card"></article><nav class="exam-navigation" aria-label="Practice examination navigation"><button id="previousPracticeQuestion" type="button">← Previous</button><button id="nextPracticeQuestion" type="button">Next →</button></nav></section><section id="examResults" class="exam-results" hidden tabindex="-1"></section><div class="source-box"><h2>Official basis</h2><p>Domain names and approximate weighting follow the California DRE salesperson examination content outline. Actual examination questions are confidential and are not reproduced here.</p><p><a href="https://www.dre.ca.gov/examinees/SalesExamContent.html" target="_blank" rel="noopener">California DRE salesperson examination content ↗</a> · <a href="https://www.dre.ca.gov/Examinees/TakingExam.html" target="_blank" rel="noopener">Official examination format and passing score ↗</a></p></div></section>`;
-write("exam-prep/index.html", document({ title: "California Free Practice Exam", description: "Free 30-question California real estate salesperson practice diagnostic with explanations and domain results.", active: "exam", body: examPrepBody, scripts: '<script src="../california-practice-exam.js" defer></script>' }));
+/* Exam Prep and Renew / CE are the two destinations the homepage finder sends people
+   to with ?state=XX. They used to be generic template pages that ignored the state
+   entirely and promised products in the future tense — "Try representative practice
+   questions" linked to a page with no questions on it. Each now answers for the
+   selected jurisdiction and states plainly what StateCourse offers there today.
+
+   The availability sentence is derived from the catalog category, so it cannot drift
+   from what actually exists, and it uses the same approval/enrollment coupling as the
+   state pages: a course counts as available only with an approval number AND an
+   enabled enrollment flag. */
+/* Approval verification.
+ *
+ * California Regulation 3004(b) requires advertising for an approved course to carry
+ * the Department's course approval number, and RE 303 is explicit that a course "may
+ * not be promoted as being DRE-approved until actual approval is issued". Those two
+ * rules need one surface: a page that shows the approval record when it exists, shows
+ * its absence plainly when it does not, and in both cases walks the reader into the
+ * regulator's own database to check.
+ *
+ * The competing schools publish, at most, a sponsor number in a footer. Not one of them
+ * shows a reader how to verify it. That is the difference this page is for, and it is
+ * only worth anything while every word on it is true — so the approval rows are derived
+ * from the catalog through the same coupling the state pages use, and no jurisdiction
+ * gets a verification procedure that has not been read from the regulator's own site.
+ */
+const approvalRows = registry.states.map((state) => {
+  const stateCourses = catalogCourses.filter((course) => course.state_id === state.state_code);
+  const record = deriveJurisdictionRecord(stateCourses);
+  const procedure = VERIFICATION_PROCEDURES[state.state_code] ?? null;
+  return { state, record, procedure, stateCourses };
+}).filter((row) => row.stateCourses.length || row.procedure);
+
+const approvalDetail = approvalRows.map(({ state, record, procedure }) => {
+  const approvals = record.approvalState === "approved"
+    ? `<ul class="approval-numbers">${record.approvedCourses.map((entry) => `<li><strong>${esc(entry.courseTitle)}</strong><span>Course approval number ${esc(entry.approvalNumber)}</span></li>`).join("")}</ul>`
+    : `<p class="approval-absent"><strong>No approval record.</strong> ${esc(state.state_name)} has not issued StateCourse a course approval number, so no StateCourse course may be described as approved in this jurisdiction, and none is offered for enrollment here.</p>`;
+  const steps = procedure
+    ? `<div class="verify-steps"><p class="overline">Verify with ${esc(procedure.regulator)}</p><ol>${procedure.steps.map((step) => `<li>${esc(step)}</li>`).join("")}</ol><p class="verify-note">${esc(procedure.note)}</p><p><a class="cta-secondary" href="${esc(procedure.lookupUrl)}" target="_blank" rel="noopener">${esc(procedure.lookupLabel)} ↗</a></p><p class="verify-reviewed">Verification procedure read from the regulator's own site on ${esc(procedure.reviewedOn)}.</p></div>`
+    : `<p class="verify-note">A step-by-step verification procedure is published here once ${esc(state.state_name)} issues a record to check it against. Until then, ${state.regulator_url ? `use the regulator directly: <a href="${esc(state.regulator_url)}" target="_blank" rel="noopener">${esc(state.regulator_name)} ↗</a>` : esc(state.regulator_name)}.</p>`;
+  return `<section class="approval-block"><h2>${esc(state.state_name)}</h2><p class="approval-regulator">${esc(state.regulator_name)}</p>${approvals}${steps}</section>`;
+}).join("");
+
+const approvalsBody = `${pageHero("Regulatory approval", "Check us in the regulator's own records.", "Every claim StateCourse makes about approval can be verified in a public state database, without taking our word for any of it. Where no approval exists, this page says so.")}<section class="page-body">
+  <div class="notice"><strong>Current status:</strong> ${esc(PROVIDER_FACTS.applicationStatus)} No StateCourse course carries a course approval number in any jurisdiction, and enrollment in regulated education is closed everywhere.</div>
+  <div class="state-summary">
+    <aside class="state-record"><p class="overline">The provider</p><dl>
+      <div><dt>Legal entity</dt><dd>${esc(PROVIDER_FACTS.legalName)}</dd></div>
+      <div><dt>Formed in</dt><dd>${esc(PROVIDER_FACTS.formationState)}</dd></div>
+      <div><dt>Registration</dt><dd>${esc(PROVIDER_FACTS.registrationStatus)}</dd></div>
+      <div><dt>Address</dt><dd>${esc(PROVIDER_FACTS.address)}</dd></div>
+      <div><dt>Principal</dt><dd>${esc(PROVIDER_FACTS.principal)}</dd></div>
+      <div><dt>Licence</dt><dd>${esc(PROVIDER_FACTS.principalLicense)}</dd></div>
+      <div><dt>Sponsor number</dt><dd>${PROVIDER_FACTS.sponsorNumber ? esc(PROVIDER_FACTS.sponsorNumber) : "Not yet issued"}</dd></div>
+    </dl></aside>
+    <div>
+      <p class="overline">Two different things, often confused</p>
+      <p><strong>Provider or sponsor approval</strong> says a regulator has accepted the school. <strong>Course approval</strong> says a regulator has accepted one specific course, and it is what makes education count toward a licence. A school can hold the first and still not be approved for the course you are about to buy.</p>
+      <p>California puts this beyond argument: Regulation 3004(b) requires advertising for an approved course to carry the Department's course approval number, and RE 303 states that an offering may not be promoted as DRE-approved until actual approval is issued. When StateCourse holds an approval, its number appears here and on the course itself. Until then, this page shows its absence.</p>
+      <p class="cta-note">Nothing on this page is an offer of enrollment, and creating a StateCourse account does not enroll you, start study time, or create regulatory credit.</p>
+    </div>
+  </div>
+  ${approvalDetail}
+  <div class="source-box"><h2>How to read any school's approval claim</h2><p>Ask for the course approval number, not the school's. Look it up yourself in the state's public database rather than on the school's own page. Check that the record is current — approvals expire. And check that the record covers the exact course you intend to take, because approval of one course extends to no other. Compare jurisdictions on the <a href="../state-requirements/">State Requirements</a> directory.</p></div>
+</section>`;
+write("approvals/index.html", document({ title: "Approval Verification", description: "Verify StateCourse regulatory approvals directly in each state regulator's public records.", active: "approvals", body: approvalsBody }));
+
+const serviceAreas = [
+  {
+    route: "exam-prep",
+    active: "exam",
+    service: "exam",
+    categoryId: "exam-prep",
+    overline: "Exam Preparation",
+    title: "Prepare for the examination—separately from regulatory credit.",
+    lede: "Choose your jurisdiction to see who administers the license, what education must come first, and exactly what StateCourse offers there today.",
+    product: "exam preparation",
+    cards: [
+      ["Education comes first", "Every jurisdiction requires its own pre-license education before the licensing examination. Confirm those hours before spending anything on preparation.", "../state-requirements/", "See required hours by state →"],
+      ["Regulator rules control the exam", "Examination content, scoring, scheduling, and retake rules come from the regulator and its examination provider, not from a course provider.", "../state-requirements/", "Find your regulator's official source →"],
+      ["Course finals stay closed", "StateCourse final examinations are secure regulatory instruments. They are never published, previewed, or reused as practice material.", "../student/course-preview/", "See how StateCourse lessons teach instead →"],
+    ],
+    sourceHeading: "What this page does not claim",
+    sourceCopy: "StateCourse does not publish examination questions, pass rates, or vendor procedures for any jurisdiction. Regulated course final examinations are administered only inside an approved course and are never furnished to students as study material.",
+  },
+  {
+    route: "continuing-education",
+    active: "renew",
+    service: "renew",
+    categoryId: "continuing-education",
+    overline: "Renew / Continuing Education",
+    title: "Stay licensed with the right state requirements.",
+    lede: "Choose your jurisdiction to see its regulator, what StateCourse offers there today, and where the controlling renewal instructions live.",
+    product: "continuing education",
+    cards: [
+      ["Renewal is jurisdiction-specific", "Cycles, deadlines, mandatory subjects, and accepted delivery methods differ by state and are set by the regulator.", "../state-requirements/", "Find your state's regulator →"],
+      ["Approval is per course", "A continuing-education course must carry its own approval record in its own jurisdiction. Approval of any other StateCourse program does not extend to it.", "../approvals/", "Check StateCourse approval records →"],
+      ["Records stay with your account", "Completion records and eligible certificates always point to the exact approved course and version completed.", "../student/", "Open your student account →"],
+    ],
+    sourceHeading: "What this page does not claim",
+    sourceCopy: "StateCourse has not published verified renewal cycles, continuing-education hour requirements, or mandatory subjects for any jurisdiction. Nothing on this page substitutes for the regulator's current renewal instructions.",
+  },
+];
+
+for (const area of serviceAreas) {
+  const category = catalog.categories.find((entry) => entry.category_id === area.categoryId);
+  const areaCourses = (category?.programs ?? []).flatMap((program) => program.courses ?? []);
+  const areaRecord = deriveJurisdictionRecord(areaCourses);
+  const availability = !areaRecord.hasCourseRecord
+    ? `StateCourse does not offer ${area.product} in any jurisdiction yet. No course record exists, so nothing on this page is an offer, and no enrollment, credit, or certificate is available here.`
+    : areaRecord.enrollmentOpen
+      ? `StateCourse ${area.product} is open only where an approval record and an enabled enrollment are both recorded: ${areaRecord.approvedCourses.filter((entry) => entry.enrollmentEnabled).map((entry) => entry.courseTitle).join(", ")}.`
+      : `StateCourse has ${areaCourses.length} ${area.product} course record${areaCourses.length === 1 ? "" : "s"} in development. Enrollment stays closed until each one's own approval is recorded.`;
+  const cards = area.cards.map(([heading, copy, href, label], index) => `<article class="content-card"><p class="overline">${String(index + 1).padStart(2, "0")}</p><h2>${esc(heading)}</h2><p>${esc(copy)}</p>${href ? `<a href="${href}">${esc(label)}</a>` : ""}</article>`).join("");
+  const body = `${pageHero(area.overline, area.title, area.lede)}<section class="page-body" data-service="${esc(area.service)}">
+    <div class="notice"><strong>Availability:</strong> ${esc(availability)}</div>
+    <div class="page-tools"><label>Jurisdiction<select id="serviceStateSelect"><option value="">Choose your state</option></select></label></div>
+    <div class="state-summary">
+      <aside class="state-record"><p class="overline" id="serviceRecordTitle">Jurisdiction record</p><dl id="serviceRecord"><div><dt>Selected state</dt><dd>None selected</dd></div></dl></aside>
+      <div>
+        <p class="overline">Where the answer actually comes from</p>
+        <p id="serviceMessage">Choose a jurisdiction above to see its regulator and the education already verified for it. Requirements are published here only after official-source review.</p>
+        <div class="cta-actions" id="serviceLinks"></div>
+        <p class="cta-note">Selecting a state here does not create an account, an enrollment, study time, or regulatory credit.</p>
+      </div>
+    </div>
+    <div class="content-grid" style="margin-top:34px">${cards}</div>
+    <div class="source-box"><h2>${esc(area.sourceHeading)}</h2><p>${esc(area.sourceCopy)} Compare every jurisdiction on the <a href="../state-requirements/">State Requirements</a> directory.</p></div>
+  </section>`;
+  write(`${area.route}/index.html`, document({ title: area.overline, description: area.lede, active: area.active, body, scripts: '<script src="../service-area.js" defer></script>' }));
+}
 
 write("my-statecourse/index.html", document({ title: "My StateCourse", description: "Return to your StateCourse licensing path and courses.", body: `${pageHero("Returning student", "Continue where you left off.", "Sign in to view active courses, progress, assessments, instructor support, payments, and certificates tied to your exact course version.")}<section class="page-body"><div class="content-grid"><article class="content-card"><p class="overline">My Licensing Path</p><h2>See the next required action</h2><p>Your education, exam preparation, application milestones, and renewal path remain organized in one account.</p><a href="${studentPortalUrl}">Student sign in →</a></article><article class="content-card"><p class="overline">My Courses</p><h2>Return to active education</h2><p>Continue only the courses connected to your verified enrollment record.</p><a href="${studentPortalUrl}">Open course dashboard →</a></article><article class="content-card"><p class="overline">Records</p><h2>Preserve completed education</h2><p>Eligible certificates always point to the exact approved course and version completed.</p><a href="${studentPortalUrl}">View my records →</a></article></div></section>` }));
 
@@ -102,9 +262,88 @@ for (const state of states) {
   const prefix = "../../../";
   const stateCourses = catalogCourses.filter((course) => course.state_id === state.state_code);
   const courseRows = stateCourses.length ? stateCourses.map((course) => `<article class="course-row"><div><h3>${esc(course.course_title)}</h3><p>${esc(course.required_hours)} hours · ${esc(course.delivery_method)}</p></div><span>${esc(course.approval_status)}</span><a href="${relativeRoute(prefix, course.route)}">Review record →</a></article>`).join("") : `<p class="notice">StateCourse education is not yet available in this jurisdiction. The licensing guide and official-source research will remain available as development continues.</p>`;
+
+  /* Both lines come from config/jurisdiction-record.mjs, which reads the catalog's
+     approval and enrollment fields and holds the approval/enrollment safety coupling. */
+  const jurisdiction = deriveJurisdictionRecord(stateCourses);
+  const courseApprovalLine = jurisdiction.approvalState === "approved"
+    ? jurisdiction.approvedCourses.map((entry) => `${esc(entry.courseTitle)}: ${esc(entry.approvalNumber)}`).join("<br/>")
+    : JURISDICTION_APPROVAL_LABELS[jurisdiction.approvalState];
+  const enrollmentLine = jurisdiction.enrollmentLine;
   const official = state.regulator_url ? `<a href="${esc(state.regulator_url)}" target="_blank" rel="noopener">Open the regulator’s official website ↗</a>` : "Official regulator identification and source review are pending.";
-  const body = `${pageHero(`${state.state_code} · ${state.public_status}`, `${state.state_name} Real Estate Licensing`, `Regulator: ${state.regulator_name}. Review the state path, current education research, and StateCourse availability before taking the next step.`, true)}<section class="page-body"><div class="state-summary"><aside class="state-record"><p class="overline">Jurisdiction record</p><dl><div><dt>Entry education</dt><dd>${state.prelicense_hours ? `${esc(state.prelicense_hours)} hours` : "Pending verification"}</dd></div><div><dt>Online delivery</dt><dd>${state.asynchronous_online_allowed === true ? "Allowed subject to approval" : state.asynchronous_online_allowed === false ? "Not allowed" : "Pending verification"}</dd></div><div><dt>StateCourse status</dt><dd>${esc(state.public_status)}</dd></div><div><dt>Course approval</dt><dd>${stateCourses.length ? "Not yet approved" : "No course record"}</dd></div><div><dt>Enrollment</dt><dd>Closed</dd></div></dl></aside><div><p class="overline">Your licensing path</p><ol class="license-path">${genericPath.map(([heading, copy]) => `<li><h3>${esc(heading)}</h3><p>${esc(copy)}</p></li>`).join("")}</ol></div></div><section class="course-list"><p class="overline">StateCourse programs</p><h2>${stateCourses.length ? `Programs currently in development for ${esc(state.state_name)}.` : "No approved StateCourse program yet."}</h2>${courseRows}</section><div class="source-box"><h2>Official source and verification</h2><p>${official}<br/>Last internal regulatory review: ${esc(registry.last_regulatory_review)}. StateCourse status is independent from regulator approval.</p></div></section>`;
+  const registerHref = `${studentRegisterUrl}?state=${encodeURIComponent(state.state_code)}`;
+  const signInHref = `${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}`;
+  const ctaPanel = (heading, copy, primaryLabel, primaryHref, note) => `<section class="state-cta"><div><p class="overline">Next step</p><h2>${heading}</h2><p>${copy}</p><p class="cta-note">${note}</p></div><div class="cta-actions"><a class="cta-button" href="${primaryHref}">${primaryLabel}</a><a class="cta-secondary" href="${signInHref}">Already have an account? Sign in</a></div></section>`;
+  const accountAction = stateCourses.length
+    ? ctaPanel(
+        `Create your free ${esc(state.state_name)} account.`,
+        `Set up your student account to follow the ${esc(state.state_name)} course records, see the required disclosures, and be ready to enroll the day approval is recorded. Creating an account is free and takes about a minute.`,
+        "Create Free Account →",
+        registerHref,
+        "Creating an account does not enroll you, start study time, award credit, or issue a certificate. Enrollment stays closed until the regulator approval record is entered.")
+    : ctaPanel(
+        `Track ${esc(state.state_name)} licensing with a free account.`,
+        `StateCourse education is not yet available in ${esc(state.state_name)}. Create a free account to keep your licensing research in one place, or compare the verified requirements for this jurisdiction first.`,
+        "Create Free Account →",
+        registerHref,
+        "Creating an account does not enroll you in any course and does not create regulatory credit. No StateCourse program is offered in this jurisdiction yet.");
+  const closingAction = stateCourses.length
+    ? ctaPanel(
+        "Ready to continue?",
+        `Your account is where course records, required disclosures, enrollment, progress, and certificates live. Create it now and you will not have to repeat any of this when ${esc(state.state_name)} approval is recorded.`,
+        "Create Free Account →",
+        registerHref,
+        "Account creation and public previews are separate from enrollment, study time, course credit, and certificates.")
+    : `<section class="state-cta"><div><p class="overline">Next step</p><h2>Compare requirements across states.</h2><p>See verified entry education, delivery rules, and regulator information for every jurisdiction while ${esc(state.state_name)} remains in development.</p><p class="cta-note">Requirement research is informational and is not a substitute for the regulator's official published requirements.</p></div><div class="cta-actions"><a class="cta-button" href="${prefix}state-requirements/">Compare State Requirements →</a><a class="cta-secondary" href="${registerHref}">Create a free account</a></div></section>`;
+  const body = `${pageHero(`${state.state_code} · ${state.public_status}`, `${state.state_name} Real Estate Licensing`, `Regulator: ${state.regulator_name}. Review the state path, current education research, and StateCourse availability before taking the next step.`, true)}<section class="page-body">${accountAction}<div class="state-summary"><aside class="state-record"><p class="overline">Jurisdiction record</p><dl><div><dt>Required education</dt><dd>${state.prelicense_hours ? `${esc(state.prelicense_hours)} hours` : "Pending verification"}</dd></div><div><dt>Examination</dt><dd>${esc(state.final_exam_rules ?? "Pending official-source research")}</dd></div><div><dt>Delivery format</dt><dd>${state.allowed_delivery_methods?.length ? esc(state.allowed_delivery_methods.join(" · ")) : state.asynchronous_online_allowed === true ? "Online delivery allowed subject to approval" : state.asynchronous_online_allowed === false ? "Online delivery not allowed" : "Pending verification"}</dd></div><div><dt>StateCourse status</dt><dd>${esc(state.public_status)}</dd></div><div><dt>Course approval</dt><dd>${courseApprovalLine}</dd></div><div><dt>Course availability</dt><dd>${esc(enrollmentLine)}</dd></div><div><dt>Last regulatory review</dt><dd>${esc(registry.last_regulatory_review)}</dd></div></dl></aside><div><p class="overline">Your licensing path</p><ol class="license-path">${genericPath.map(([heading, copy]) => `<li><h3>${esc(heading)}</h3><p>${esc(copy)}</p></li>`).join("")}</ol></div></div><section class="course-list"><p class="overline">StateCourse programs</p><h2>${stateCourses.length ? `Programs currently in development for ${esc(state.state_name)}.` : "No approved StateCourse program yet."}</h2>${courseRows}</section><div class="source-box"><h2>Official source and verification</h2><p>${official}<br/>Last internal regulatory review: ${esc(registry.last_regulatory_review)}. StateCourse status is independent from regulator approval. <a href="${prefix}approvals/">Check our approval record in the regulator's own database →</a></p></div>${closingAction}</section>`;
   write(`real-estate/${slugify(state.state_name)}/index.html`, document({ title: `${state.state_name} Real Estate Licensing`, description: `${state.state_name} real estate licensing requirements and StateCourse program status.`, prefix, body }));
 }
 
+for (const course of catalogCourses) {
+  const routeParts = String(course.route).split("/").filter(Boolean);
+  const prefix = "../".repeat(routeParts.length);
+  const registerUrl = `${studentRegisterUrl}?course=${encodeURIComponent(course.course_id)}&return_to=${encodeURIComponent(`/enroll/?course=${course.course_id}`)}`;
+  const preview = course.state_id === "CA" ? `<a href="${prefix}student/course-preview/?course=${encodeURIComponent(course.course_id)}">Preview Course Library →</a>` : "";
+  const body = `${pageHero(`${course.state_id} · ${course.approval_status}`, course.course_title, `${course.required_hours}-hour ${course.program_type} course record.`, true)}
+    <section class="page-body">
+      <div class="notice"><strong>Regulatory status:</strong> This course is in development and cannot accept a credit-eligible enrollment until the regulator approval record is entered and enrollment is enabled.</div>
+      <div class="state-summary">
+        <aside class="state-record"><p class="overline">Course record</p><dl>
+          <div><dt>Required hours</dt><dd>${esc(course.required_hours)}</dd></div>
+          <div><dt>Delivery</dt><dd>${esc(course.delivery_method)}</dd></div>
+          <div><dt>Course version</dt><dd>${esc(course.course_version)}</dd></div>
+          <div><dt>Approval status</dt><dd>${esc(course.approval_status)}</dd></div>
+          <div><dt>Approval number</dt><dd>${esc(course.approval_number || "Pending")}</dd></div>
+        </dl></aside>
+        <div><p class="overline">Enrollment path</p><ol class="license-path">
+          <li><h3>Create or sign in to your StateCourse account</h3><p>Your student identity and course records remain separate from marketing and preview activity.</p></li>
+          <li><h3>Review required disclosures</h3><p>The current state, course, refund, cancellation, and regulatory acknowledgment versions are recorded before checkout.</p></li>
+          <li><h3>Complete Stripe Checkout</h3><p>Payment is processed by Stripe. Enrollment is created only after a verified paid webhook.</p></li>
+          <li><h3>Open the purchased course</h3><p>Only the exact purchased course and version appear in the student cabinet.</p></li>
+        </ol></div>
+      </div>
+      <div class="content-grid">
+        <article class="content-card"><p class="overline">Student account</p><h2>Continue to enrollment</h2><p>Create your account first. Checkout remains independently controlled by course approval and environment settings.</p><a href="${registerUrl}">Create Account →</a></article>
+        <article class="content-card"><p class="overline">Course review</p><h2>Inspect the course structure</h2><p>Review instructional organization without creating progress or regulatory credit.</p>${preview || `<a href="${prefix}courses/">Return to Course Catalog →</a>`}</article>
+        <article class="content-card"><p class="overline">Returning student</p><h2>Resume from your cabinet</h2><p>Sign in to view purchased courses, progress, records, and certificates.</p><a href="${studentPortalUrl}?return_to=${encodeURIComponent("/student/")}">Student Sign In →</a></article>
+      </div>
+      <div class="source-box"><h2>Regulatory separation</h2><p>Account creation and public previews do not create enrollment, start study time, award course credit, or issue a certificate.</p></div>
+    </section>`;
+  write(`${routeParts.join("/")}/index.html`, document({ title: course.course_title, description: `${course.course_title} course record and enrollment path.`, prefix, body }));
+}
+
+const californiaCourses = catalogCourses.filter((course) => course.state_id === "CA");
+if (californiaCourses.length) {
+  const prefix = "../../../";
+  const cards = californiaCourses.map((course) => `<article class="content-card"><p class="overline">45-hour correspondence course</p><h2>${esc(course.course_title)}</h2><p>${esc(course.approval_status)} · Course version ${esc(course.course_version)}</p><a href="${prefix}${String(course.route).replace(/^\//,"")}">Review Course Record →</a></article>`).join("");
+  const body = `${pageHero("California salesperson education", "California 135-Hour Course Path", "Review the three separate 45-hour StateCourse correspondence-course records and continue through one account and enrollment system.", true)}
+    <section class="page-body">
+      <div class="notice"><strong>Approval gate:</strong> Each California course remains a separate regulatory record. Credit-eligible enrollment and live payment stay closed until its California DRE approval is recorded.</div>
+      <div class="content-grid">${cards}</div>
+      <div class="source-box"><h2>Continue with StateCourse</h2><p>Create your student account to continue through course selection, required disclosures, checkout, enrollment, the student cabinet, and permanent records. <a href="${studentRegisterUrl}?state=CA">Create Account →</a></p></div>
+    </section>`;
+  write("real-estate/california/pre-license/index.html", document({ title:"California Pre-License Courses", description:"California StateCourse 135-hour salesperson education path.", prefix, body }));
+}
+
 console.log(`Generated national platform: ${states.length} jurisdiction hubs, ${catalogCourses.length} course records, and core service routes.`);
+if (preserved.length) console.log(`Preserved ${preserved.length} hand-authored course pages: ${preserved.join(", ")}`);

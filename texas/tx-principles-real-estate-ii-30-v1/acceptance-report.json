@@ -1,0 +1,130 @@
+{
+  "course": "Texas Principles of Real Estate II",
+  "courseId": "tx-principles-real-estate-ii-30-v1",
+  "approvalForm": "PRINS2-1 rev. 09/11/2024",
+  "generatedAt": "2026-08-30 15:35:38",
+  "freeze": "PRINS2-CONTENT-FREEZE-2026-08-29",
+  "freezeCommit": "2500261413b6271859d9528dc45a268d0cfa345e",
+  "checks": [
+    {
+      "label": "1. frozen curriculum commit",
+      "ok": true,
+      "detail": "PRINS2-CONTENT-FREEZE-2026-08-29 at 2500261413; all 9 module hashes match the freeze"
+    },
+    {
+      "label": "2. final word count",
+      "ok": true,
+      "detail": "131,152 words across 9 modules (no drift from the course record)"
+    },
+    {
+      "label": "3. nine-topic and 44-unit coverage",
+      "ok": true,
+      "detail": "9 topics, 44 units; every module carries exactly its topic's unit count"
+    },
+    {
+      "label": "4. 1,500-minute outline reconciliation",
+      "ok": true,
+      "detail": "topic subtotals reconcile and total 1500 against the form's printed 1500 (30h at 50min)"
+    },
+    {
+      "label": "5. block and screen coverage",
+      "ok": true,
+      "detail": "53 blocks, 141 screens; ranges tile every module exactly — no gaps, overlaps or missing headings"
+    },
+    {
+      "label": "6. claim-to-source audit",
+      "ok": true,
+      "detail": "1284 citations — 1281 pass, 3 identified-not-taught, 0 unresolved"
+    },
+    {
+      "label": "7. unsupported claims and unmatched quotations",
+      "ok": true,
+      "detail": "0 unsupported citations; 8 unmatched quotations, all reviewed — 1 bracketed alteration, 2 form field label not contiguous, 1 punctuation deviation, 3 invented dialogue, 1 ellipsis elides cross reference"
+    },
+    {
+      "label": "8. corrected-claim log",
+      "ok": true,
+      "detail": "8 correction commits recorded in git history"
+    },
+    {
+      "label": "9. primary quiz count",
+      "ok": true,
+      "detail": "44 primaries across 9 topics; every topic at or above the rule's 3"
+    },
+    {
+      "label": "10. replacement-question count",
+      "ok": true,
+      "detail": "44 replacements — one per primary, each a different scenario on the same proposition"
+    },
+    {
+      "label": "11. scenario count and distribution",
+      "ok": true,
+      "detail": "4 scenarios, 25 tasks, placed after T03, T05, T07, T09 (rule minimum 3)"
+    },
+    {
+      "label": "12. final-bank size",
+      "ok": true,
+      "detail": "132 items against the rule's minimum of 120"
+    },
+    {
+      "label": "13. four exam-version sizes",
+      "ok": true,
+      "detail": "A:60 B:60 C:60 D:60"
+    },
+    {
+      "label": "14. pairwise overlap",
+      "ok": true,
+      "detail": "A/B 30.0%, A/C 30.0%, A/D 30.0%, B/C 30.0%, B/D 30.0%, C/D 30.0% against a 33.3% cap"
+    },
+    {
+      "label": "15. assessment-to-instruction traceability",
+      "ok": true,
+      "detail": "245 items mapped to unit, screen and sources; 44 of 44 units assessed"
+    },
+    {
+      "label": "16. course engine workflow, demonstrated in a reviewer environment",
+      "ok": true,
+      "detail": "21 of 21 behaviours demonstrated"
+    },
+    {
+      "label": "16a. production enrollment remains disabled (safety control, not an operational pass)",
+      "ok": true,
+      "detail": "enrollment disabled, examination not administrable, credit reporting disabled"
+    },
+    {
+      "label": "17. accessibility, measured against the rendered course",
+      "ok": true,
+      "detail": "17 of 17 criteria pass"
+    },
+    {
+      "label": "18. full regression suite",
+      "ok": true,
+      "detail": "993 passing, 0 failing"
+    },
+    {
+      "label": "19. submission-readiness blockers recorded",
+      "ok": true,
+      "detail": "5 standing blockers, none clearable from this repository"
+    }
+  ],
+  "blockers": [
+    "TX_PROVIDER_RULE_SOURCE_LOCK is FAIL — trec-qe-provider-application, sos-tac-22-535",
+    "the codified 22 TAC text has never been read; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs",
+    "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for PRINS2-1",
+    "no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-principles-real-estate-ii-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.",
+    "certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval"
+  ],
+  "verdict": "GO — COURSE COMPLETE, SUBMISSION BLOCKED",
+  "statusByLayer": {
+    "contentAndAssessment": "GO",
+    "completeOperationalCourse": "GO",
+    "submissionReadiness": "NO-GO"
+  },
+  "lawOfAgency": "Principles II is a complete operational course; Law of Agency instructional authoring is authorized.",
+  "approvalPosture": {
+    "trecApproval": "NOT_SUBMITTED_NOT_APPROVED",
+    "enrollmentEnabled": false,
+    "creditAvailable": false,
+    "note": "Internal completeness is not submission readiness and is not approval. No Texas qualifying credit is offered by this build."
+  }
+}

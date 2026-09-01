@@ -2,6 +2,15 @@
 
 Production remains disabled until every item below is completed and recorded.
 
+**For the commands and exact variable names, see `docs/payments/stripe-runbook.md`.** This
+file is the sign-off list; the runbook is how you get there. Two scripts back it:
+
+    node scripts/stripe-setup.mjs --dry-run      # what would be created, no key needed
+    node scripts/stripe-preflight.mjs            # what would happen if someone bought now
+
+Preflight exits non-zero on any problem and prints, per course, the reason a purchase would
+be blocked. Run it before and after every change to a payments variable.
+
 ## Business and Stripe
 
 - StateCourse LLC bank account and settlement details are active.

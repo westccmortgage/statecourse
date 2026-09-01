@@ -1,0 +1,700 @@
+<title>Thirteen States, Audited</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root {
+  --ground: #F5F7F6;
+  --surface: #FFFFFF;
+  --surface-sunk: #ECF0EF;
+  --ink: #13181A;
+  --muted: #59666A;
+  --faint: #7C888B;
+  --accent: #1D5E5C;
+  --accent-soft: #E2EDEB;
+  --rule: #DCE3E2;
+  --rule-strong: #C2CDCB;
+  --open: #8A6206;
+  --open-soft: #F6ECD6;
+  --verified: #2C6942;
+  --verified-soft: #E0EFE4;
+  --shadow: 0 1px 2px rgba(19, 24, 26, .05), 0 8px 24px -18px rgba(19, 24, 26, .35);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0E1213;
+    --surface: #161C1D;
+    --surface-sunk: #121819;
+    --ink: #E6EBEA;
+    --muted: #8FA0A1;
+    --faint: #748385;
+    --accent: #6FB6B0;
+    --accent-soft: #17302F;
+    --rule: #232C2E;
+    --rule-strong: #33403F;
+    --open: #DCAE47;
+    --open-soft: #2E2413;
+    --verified: #7FC195;
+    --verified-soft: #16291C;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -20px rgba(0, 0, 0, .8);
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0E1213;
+  --surface: #161C1D;
+  --surface-sunk: #121819;
+  --ink: #E6EBEA;
+  --muted: #8FA0A1;
+  --faint: #748385;
+  --accent: #6FB6B0;
+  --accent-soft: #17302F;
+  --rule: #232C2E;
+  --rule-strong: #33403F;
+  --open: #DCAE47;
+  --open-soft: #2E2413;
+  --verified: #7FC195;
+  --verified-soft: #16291C;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -20px rgba(0, 0, 0, .8);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Public Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16.5px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page { max-width: 1180px; margin: 0 auto; padding: 0 24px 96px; }
+
+/* ── masthead ─────────────────────────────────────────── */
+.masthead {
+  padding: 72px 0 34px;
+  border-bottom: 2px solid var(--ink);
+  display: grid;
+  gap: 22px;
+}
+.stamp {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 11.5px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  align-items: baseline;
+}
+.stamp span::before { content: "·"; margin-right: 18px; color: var(--rule-strong); }
+.stamp span:first-child::before { content: none; margin: 0; }
+h1 {
+  font-family: Newsreader, ui-serif, Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(2.6rem, 6vw, 4.1rem);
+  line-height: 1.02;
+  letter-spacing: -.021em;
+  margin: 0;
+  text-wrap: balance;
+}
+h1 em { font-style: italic; color: var(--accent); }
+.dek {
+  max-width: 60ch;
+  font-size: 1.075rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* the standing disclaimer — the single most important line on the page */
+.notapproved {
+  margin: 30px 0 0;
+  padding: 15px 20px;
+  border: 1px solid var(--rule-strong);
+  border-left: 4px solid var(--open);
+  background: var(--open-soft);
+  color: var(--ink);
+  border-radius: 3px;
+  font-size: .95rem;
+}
+.notapproved strong {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .82rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--open);
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* ── shell ────────────────────────────────────────────── */
+.shell { display: block; }
+@media (min-width: 1080px) {
+  .shell {
+    display: grid;
+    grid-template-columns: 196px minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+  }
+}
+nav.toc { display: none; }
+@media (min-width: 1080px) {
+  nav.toc {
+    display: block;
+    position: sticky;
+    top: 34px;
+    padding-top: 58px;
+    font-size: .845rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  nav.toc a {
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    gap: 4px;
+    padding: 5px 6px 5px 0;
+    color: var(--muted);
+    text-decoration: none;
+    border-radius: 3px;
+    line-height: 1.35;
+  }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc a b {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: .78rem;
+    color: var(--faint);
+  }
+}
+
+main { min-width: 0; }
+
+section { padding-top: 58px; scroll-margin-top: 20px; }
+
+h2 {
+  font-family: Newsreader, ui-serif, Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(1.65rem, 3.1vw, 2.15rem);
+  line-height: 1.14;
+  letter-spacing: -.014em;
+  margin: 0 0 6px;
+  text-wrap: balance;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: baseline;
+}
+h2 b {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: .78rem;
+  color: var(--accent);
+  letter-spacing: .08em;
+  transform: translateY(-2px);
+}
+h3 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: -.005em;
+  margin: 34px 0 8px;
+}
+p { max-width: 68ch; margin: 0 0 15px; }
+p.lede { font-size: 1.06rem; color: var(--muted); max-width: 66ch; margin-bottom: 22px; }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+em.q { font-style: italic; color: var(--ink); }
+code, .mono {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: .855em;
+}
+code {
+  background: var(--surface-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: .07em .34em;
+}
+ul.plain { max-width: 68ch; margin: 0 0 15px; padding-left: 1.15rem; }
+ul.plain li { margin-bottom: 7px; }
+
+/* ── data bands ───────────────────────────────────────── */
+.band {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  margin: 22px 0 26px;
+  overflow: hidden;
+}
+.band-head {
+  padding: 13px 18px;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.band-head h4 {
+  margin: 0;
+  font-size: .82rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.band-head p { margin: 0; font-size: .84rem; color: var(--faint); max-width: none; }
+.scroller { overflow-x: auto; }
+
+table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+th, td {
+  padding: 9px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+thead th {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: .715rem;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+  color: var(--faint);
+  white-space: nowrap;
+  background: var(--surface-sunk);
+}
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", monospace; white-space: nowrap; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr.total td {
+  border-top: 2px solid var(--rule-strong);
+  font-weight: 600;
+  background: var(--surface-sunk);
+}
+td.state { white-space: nowrap; font-weight: 500; }
+td.state i {
+  font-style: normal;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .74rem;
+  color: var(--faint);
+  margin-left: 7px;
+  letter-spacing: .05em;
+}
+.tick { color: var(--verified); font-weight: 600; }
+
+/* ── findings ─────────────────────────────────────────── */
+.finding {
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: 20px 22px 8px;
+  margin: 20px 0;
+  box-shadow: var(--shadow);
+}
+.finding-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.finding-head .id {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .78rem;
+  color: var(--faint);
+  letter-spacing: .06em;
+}
+.finding-head h3 { margin: 0; flex: 1 1 260px; font-size: 1.06rem; }
+.chip {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+.chip.fixed { color: var(--accent); background: var(--accent-soft); }
+.chip.verified { color: var(--verified); background: var(--verified-soft); }
+.chip.open { color: var(--open); background: var(--open-soft); }
+.finding p:last-child { margin-bottom: 15px; }
+
+/* ── rules ────────────────────────────────────────────── */
+ol.rules { counter-reset: r; list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+ol.rules li {
+  counter-increment: r;
+  background: var(--surface);
+  padding: 14px 20px 14px 52px;
+  position: relative;
+  font-size: .95rem;
+}
+ol.rules li::before {
+  content: counter(r, decimal-leading-zero);
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .74rem;
+  color: var(--accent);
+  letter-spacing: .04em;
+}
+
+/* ── reviewer questions ───────────────────────────────── */
+.asks { display: grid; gap: 14px; margin: 22px 0 6px; }
+@media (min-width: 780px) { .asks { grid-template-columns: repeat(3, 1fr); } }
+.ask {
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+.ask h4 {
+  margin: 0 0 8px;
+  font-family: Newsreader, ui-serif, Georgia, serif;
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+}
+.ask p { font-size: .9rem; color: var(--muted); margin: 0; max-width: none; }
+
+blockquote {
+  margin: 16px 0;
+  padding: 2px 0 2px 20px;
+  border-left: 2px solid var(--accent);
+  color: var(--ink);
+  font-family: Newsreader, ui-serif, Georgia, serif;
+  font-size: 1.06rem;
+  font-style: italic;
+  max-width: 62ch;
+}
+
+footer {
+  margin-top: 70px;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+  font-size: .855rem;
+  color: var(--faint);
+}
+footer p { max-width: 68ch; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+html { scroll-behavior: smooth; }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="stamp">
+      <span>StateCourse</span>
+      <span>Qualifying education</span>
+      <span>21 August 2026</span>
+    </div>
+    <h1>Thirteen states, <em>audited</em></h1>
+    <p class="dek">Every state carrying a StateCourse qualifying-education build, checked for arithmetic, structure, internal consistency, and — the thing that actually went wrong — regulatory claims with no source behind them.</p>
+    <div class="notapproved">
+      <strong>Standing status</strong>
+      Every course in this report is <strong style="display:inline;font-size:inherit;letter-spacing:0;text-transform:none;color:inherit">not approved</strong>. No state credit is available anywhere, in any jurisdiction, for any course described here.
+    </div>
+  </header>
+
+  <div class="shell">
+
+    <nav class="toc" aria-label="Report sections">
+      <ol>
+        <li><a href="#s1"><b>01</b><span>What exists</span></a></li>
+        <li><a href="#s2"><b>02</b><span>What was checked</span></a></li>
+        <li><a href="#s3"><b>03</b><span>Findings</span></a></li>
+        <li><a href="#s4"><b>04</b><span>The largest open item</span></a></li>
+        <li><a href="#s5"><b>05</b><span>Standing rules</span></a></li>
+        <li><a href="#s6"><b>06</b><span>What the reviewer is asked</span></a></li>
+      </ol>
+    </nav>
+
+    <main>
+
+      <section id="s1">
+        <h2><b>01</b><span>What exists</span></h2>
+        <p class="lede">Thirteen jurisdictions, twenty-four separate course records. Each course is its own regulatory object with its own hours, certificate and approval path — not a shared curriculum wearing thirteen labels.</p>
+
+        <div class="band">
+          <div class="band-head">
+            <h4>Build inventory</h4>
+            <p>Instructional words exclude question banks and regulatory readings.</p>
+          </div>
+          <div class="scroller">
+            <table>
+              <thead>
+                <tr>
+                  <th>State</th>
+                  <th class="n">Courses</th>
+                  <th class="n">Hours</th>
+                  <th class="n">Modules</th>
+                  <th class="n">Words</th>
+                  <th class="n">Items</th>
+                  <th class="n">Engine</th>
+                  <th class="n">Tests</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="state">Alaska<i>AK</i></td><td class="n">1</td><td class="n">40</td><td class="n">8</td><td class="n">42,468</td><td class="n">88</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Arizona<i>AZ</i></td><td class="n">2</td><td class="n">90 + 6</td><td class="n">15</td><td class="n">30,475</td><td class="n">165</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">California<i>CA</i></td><td class="n">3</td><td class="n">135</td><td class="n">45</td><td class="n">386,565</td><td class="n">495</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Colorado<i>CO</i></td><td class="n">6</td><td class="n">168</td><td class="n">29</td><td class="n">89,573</td><td class="n">319</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Maine<i>ME</i></td><td class="n">1</td><td class="n">55</td><td class="n">9</td><td class="n">46,724</td><td class="n">99</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Michigan<i>MI</i></td><td class="n">1</td><td class="n">40</td><td class="n">10</td><td class="n">45,575</td><td class="n">110</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Missouri<i>MO</i></td><td class="n">2</td><td class="n">48 + 24</td><td class="n">15</td><td class="n">48,455</td><td class="n">165</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">North Carolina<i>NC</i></td><td class="n">1</td><td class="n">75</td><td class="n">16</td><td class="n">53,737</td><td class="n">176</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Oklahoma<i>OK</i></td><td class="n">1</td><td class="n">90</td><td class="n">16</td><td class="n">48,156</td><td class="n">176</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Pennsylvania<i>PA</i></td><td class="n">2</td><td class="n">30 + 45</td><td class="n">15</td><td class="n">33,487</td><td class="n">165</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Virginia<i>VA</i></td><td class="n">1</td><td class="n">60</td><td class="n">15</td><td class="n">69,203</td><td class="n">165</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Washington<i>WA</i></td><td class="n">2</td><td class="n">60 + 30</td><td class="n">18</td><td class="n">36,440</td><td class="n">198</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr><td class="state">Wisconsin<i>WI</i></td><td class="n">1</td><td class="n">72</td><td class="n">13</td><td class="n">53,622</td><td class="n">143</td><td class="n tick">✓</td><td class="n tick">✓</td></tr>
+                <tr class="total"><td class="state">Total</td><td class="n">24</td><td class="n">—</td><td class="n">224</td><td class="n">984,480</td><td class="n">2,464</td><td class="n">13</td><td class="n">13</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p>652 tests run; 651 pass. The single failure is <code>tests/rendered-html.test.mjs</code>, which imports <code>dist/server/index.js</code> — a Cloudflare worker artifact the site build does not produce. It predates this work and touches no course content.</p>
+      </section>
+
+      <section id="s2">
+        <h2><b>02</b><span>What was checked, and what it found</span></h2>
+
+        <h3>Hours</h3>
+        <p>Every course's module hours were summed from the module files and compared against the engine constant and the public registry figure. All twenty-four agree. Three differences turned out to be deliberate, and were confirmed rather than flagged:</p>
+        <ul class="plain">
+          <li><strong>Arizona is 96, not 90.</strong> A.R.S. § 32-2124(B) requires ninety hours and § 32-2124(L) requires six more <em>after</em> completing them. Two course records, two certificates; the registry's 90 is the (B) figure only.</li>
+          <li><strong>North Carolina's examination sits inside the 75.</strong> 72 instructional hours plus a three-hour end-of-course examination. Every other state here puts the examination outside the required hours, so the engine throws if that arithmetic drifts either way.</li>
+          <li><strong>Maine's 55 is 3,000 instructional minutes plus 300 assessment minutes.</strong> The Commission fixes both, and the assessment share is checked against the Commission's own ceiling at import.</li>
+        </ul>
+        <p>Each state also keeps its regulator's own unit of account rather than a project standard — Alaska counts <em class="q">contact hours</em> of at least 50 minutes, Missouri counts <em class="q">clock hours</em> of 60 minutes containing at least 50 of instruction, Michigan counts 240 instructional minutes per four-hour module, California counts instructional minutes. No state's unit is converted into another's anywhere in the build.</p>
+
+        <h3>Question banks</h3>
+        <p>All 24 banks and 2,464 items were walked: no duplicate prompt inside any bank, no item with fewer than three choices, no repeated or empty choice, no missing rationale, and no answer authored anywhere but index 0. Fifteen prompts sat below the character floor Arizona's bank already met, and were rewritten.</p>
+
+        <h3>Approval language</h3>
+        <p>All 224 module files carry an explicit regulatory-status line stating the course is not approved and no credit is available. A sweep for affirmative approval claims returned fourteen hits, every one of them instructional content <em>about</em> approval — lender approval, course approval rules, plat approval — and none claiming this course is approved.</p>
+
+        <h3>Cross-state contamination</h3>
+        <p>Every string in every registry entry and catalog course record was matched against the distinctive citation forms and agency names of all thirteen jurisdictions. One state was carrying another's regulator.</p>
+      </section>
+
+      <section id="s3">
+        <h2><b>03</b><span>Findings</span></h2>
+        <p class="lede">Nine findings. Six fixed, one verified against the regulator's own page, one that this audit itself got wrong and corrected — and one, found last and left open, that is larger than any of them.</p>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.1</span>
+            <h3>Arizona's public record carried manufactured regulatory content</h3>
+            <span class="chip fixed">Fixed</span>
+          </div>
+          <p>Three claims in the Arizona registry and catalog entries had no source behind them, and they were live on four generated pages: the national requirements table, the course catalog, the Arizona jurisdiction hub, and the Arizona salesperson course page.</p>
+
+          <div class="band">
+            <div class="band-head"><h4>Claim by claim</h4></div>
+            <div class="scroller">
+              <table>
+                <thead><tr><th>As published</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td class="mono">“SPS 2025.01 controls”</td><td><strong>Wrong state.</strong> SPS is Wisconsin's Department of Safety and Professional Services. Nothing in Arizona law is numbered that way.</td></tr>
+                  <tr><td class="mono">“2:1 bank ratio”</td><td><strong>Invented.</strong> ADRE states no item-bank ratio.</td></tr>
+                  <tr><td class="mono">“not on a student-supplied device”</td><td><strong>Invented</strong> — and it displaced the rule that is real.</td></tr>
+                  <tr><td class="mono">“75% passing”</td><td><strong>Correct</strong> — A.A.C. R4-28-401(A)(1). Now cited.</td></tr>
+                  <tr><td class="mono">“final outside instructional hours”</td><td><strong>Correct in substance</strong> — R4-28-404 excludes examination time from credit hours where the examination is used for overall evaluation. Now cited.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p>The device rule is the worst of the three, because the statute states a proctoring requirement that the invented one crowded out:</p>
+          <blockquote>The applicant must complete a proctored examination on the live classroom course or the distance learning course IN PERSON.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">A.R.S. § 32-2124(B)</span></blockquote>
+          <p>Arizona's asynchronous-delivery flag moved from <code>true</code> to <code>null</code>. Nothing read establishes asynchronous delivery: § 32-2124(B) names in-person or synchronous remote segments, and R4-28-404 caps third-party recorded material at 20 percent of instructional time. The public requirements table now reads “Pending verification” for Arizona rather than “Yes”.</p>
+          <p><strong>A guard now exists.</strong> A test asserts that no state's registry or catalog record cites another jurisdiction's statute, rule or agency, and refuses the two manufactured claims by shape rather than by wording. Its scope stops at the regulatory record on purpose: curriculum modules compare jurisdictions deliberately — the Arizona duties module records that Arizona is a fiduciary state where Washington's statute calls its duties <em class="q">“statutory duties and not fiduciary duties”</em> and Oklahoma abrogated them — and that contrast is the lesson.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.2</span>
+            <h3>Fifteen bank prompts tested recall rather than reasoning</h3>
+            <span class="chip fixed">Fixed</span>
+          </div>
+          <p>Arizona's test enforced a floor on prompt length; no other state's did, so the rule never reached them. Fifteen bare definition prompts — <em class="q">“What is commingling?”</em>, <em class="q">“What is a variance?”</em>, <em class="q">“Which lien is voluntary?”</em> — were rewritten to ask what the student must work out, keeping the same answer. One structural standard now applies to all 24 banks, so a rule adopted in one state reaches the rest.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.3</span>
+            <h3>Four states' catalog courses were not claimed by their own registry entry</h3>
+            <span class="chip fixed">Fixed</span>
+          </div>
+          <p>Alaska, Maine, Michigan and Virginia each had a catalog course whose state registry entry carried no course list at all. The linkage is now asserted in both directions.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.4</span>
+            <h3>Colorado's REC-33 references were untraced</h3>
+            <span class="chip verified">Verified</span>
+          </div>
+          <p>REC-33 appeared in Colorado's registry entry without a primary source behind it. It is confirmed from the Division's own Broker Application Instruction Guide, which states that an applicant must <em class="q">“complete 168 course work and obtain proof of completion, (REC-33 certificate(s)) from your course provider”</em>, and that <em class="q">“Exam results are good for one year from the date of each portion's passing score.”</em> The page names PSI as the current exam vendor and states no passing score, item count, time limit or fee — and none is imported.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.5</span>
+            <h3>Colorado's asynchronous delivery claim was not supported</h3>
+            <span class="chip fixed">Corrected</span>
+          </div>
+          <p>Colorado's record asserted “DPOS-approved asynchronous/distance delivery”. What the Commission's Practical Applications outline actually says is that <em class="q">“Courses taught online must meet the requirements set forth in the Online Course Approval Checklist created by the Division of Real Estate.”</em> That checklist was searched for again and is still not obtained; the form the Division does publish — the Real Estate Broker Live Online Virtual Classroom Checklist, Rev. 2025-05 — is continuing-education-scoped by its own terms and is not the same document. Colorado's delivery entry now names the unobtained checklist.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.6</span>
+            <h3>One state does not state what it did not read</h3>
+            <span class="chip open">Corrected, then open</span>
+          </div>
+          <p><strong>This finding was reported wrongly in the first pass.</strong> The audit matched the literal phrase “not read”, and so missed Maine's heading — <em class="q">what has not been read from primary text</em> — and Virginia's — <em class="q">what is not yet read from primary text</em>. Both sections existed. Reported as “Maine and Virginia have neither”, which was false.</p>
+          <p>Twelve of the thirteen states state their boundary. Eight head it <em class="q">what was NOT read, and is therefore stated nowhere in this build</em>; Alaska and Michigan head it <em class="q">open questions that must be answered before filing</em>. California was the only state with no source register at all. <strong>It now has one</strong>, and writing it produced finding 3.9 — which is larger than the missing register was.</p>
+          <p><strong>Checking the two states this finding wrongly accused turned up two real defects instead.</strong></p>
+          <p><strong>Virginia's boundary section contradicted itself.</strong> It listed §§ 54.1-2131 through 54.1-2135, Title 55.1 Chapters 7 and 12, and Title 36 Chapter 5.1 as <em>not yet read</em> — and the section immediately below it opened <em class="q">“The sections listed as ‘not yet read' above were read the same day.”</em> A reviewer working from that list would have been told the build was silent on material it teaches from primary text.</p>
+          <p><strong>In both states the primary text was read but never recorded.</strong> Maine's §§ 13067-A, 13178, 13179, 13197, 13271, 13274, 13277, 13279 and 13280, and Virginia's §§ 54.1-2101.1, 54.1-2133, 54.1-2134, 54.1-2135, 54.1-2139 and 18VAC135-20-155, -240, -260 and -335, were all fetched during the build, and both curricula are written correctly from them — Virginia already taught <em class="q">ordinary care</em> rather than reasonable care, the 90-day property management default, and the ten-day board production rule. Only the reading files never caught up. Both are now recorded, and both boundary sections rewritten to the standard the other states meet.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.7</span>
+            <h3>Virginia flattened the one asymmetry in Article 3</h3>
+            <span class="chip fixed">Fixed</span>
+          </div>
+          <p>Module 06 said §§ 54.1-2133 and 54.1-2134 <em class="q">“carry the same duty architecture into leasing.”</em> They do not, in the one respect that changes what a licensee does first:</p>
+          <blockquote>Enter into a brokerage agreement with the prospective tenant PRIOR TO SHOWING PROPERTY to such prospective tenant.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">§ 54.1-2134 A 1</span></blockquote>
+          <p>Virginia imposes that requirement on tenant representation exactly as § 54.1-2132 A 1 imposes it on buyer representation, and imposes it on <strong>neither</strong> § 54.1-2133 (landlord) <strong>nor</strong> § 54.1-2135 (management). On the tenant and buyer side the agreement comes before the showing; on the landlord and owner side it does not.</p>
+          <p>A second leasing duty had no coverage at all: <strong>§ 54.1-2133 B's lead-free pipe disclosure</strong>, which carries a federal definition by citation — 42 U.S.C. § 300g-6 — and must be made in writing.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.8</span>
+            <h3>Maine deferred a statute to rules that the statute itself decides</h3>
+            <span class="chip fixed">Fixed</span>
+          </div>
+          <p>The trust-account hour routed the whole of § 13178 to the Commission's rules. The statute fixes five things itself — a federally insured account held for the sole purpose of client money; the account, the withdrawal orders and every cheque naming the agency and identified as a real estate trust account; freedom from trustee process except for the depositors themselves; and the fee rule:</p>
+          <blockquote>… shall withdraw from the accounts all fees due within 30 days after but not until consummation or termination of the transaction when the designated broker makes or causes to be made a full accounting to the broker's principal.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">32 M.R.S. § 13178</span></blockquote>
+          <p>What the statute genuinely delegates now stands separately, so the refusals that remain are the real ones: the trust-account cushion, the deposit timing, the record retention period, the relationship-form fields, and every sanction figure — all in Chapter 360 or in 10 M.R.S. § 8003, neither read.</p>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="id">3.9</span>
+            <h3>California's 386,565 words carry no citation to California law</h3>
+            <span class="chip open">Open</span>
+          </div>
+          <p><strong>Writing California's source register produced the most significant finding of this audit.</strong> The build is three 45-hour courses — Principles, Practice, and Mortgage Loan Brokering and Lending — across 45 lesson assignments, the largest in the project by a wide margin. <strong>Not one of those 45 lessons cites a California statutory or regulatory section.</strong> A sweep of every four- and five-digit number in the whole California curriculum returns calendar years and arithmetic, and nothing else.</p>
+
+          <p><strong>On the approval side the build is fully traceable.</strong> Every structural constant rests on primary regulatory text obtained from the Department:</p>
+          <div class="band">
+            <div class="band-head"><h4>Structure, and the text it comes from</h4></div>
+            <div class="scroller">
+              <table>
+                <thead><tr><th>Requirement</th><th>Source</th></tr></thead>
+                <tbody>
+                  <tr><td>15 separate lesson assignments; 45 periods of not less than 50 minutes</td><td class="mono">Reg. § 3000(a)(1), via RE 307</td></tr>
+                  <tr><td>Final of not less than 100 questions; 60 percent to pass</td><td class="mono">RE 303</td></tr>
+                  <tr><td>One retake, on different questions; failure means retaking the course</td><td class="mono">RE 303</td></tr>
+                  <tr><td>Proctor designated by the school, unrelated to the candidate; exam never furnished to the student</td><td class="mono">Reg. § 3000(a)(2)(B); RE 303</td></tr>
+                  <tr><td>2½ weeks minimum, measured from access to passed final; two courses in five weeks, across schools; one year to complete</td><td class="mono">RE 303 pp. 3–4</td></tr>
+                  <tr><td>Certificate within 15 days, with the Department's listed fields</td><td class="mono">Reg. § 3000(a)(6); Handbook</td></tr>
+                  <tr><td>Instructor floor: bachelor's plus two years, or associate plus six</td><td class="mono">RE 336</td></tr>
+                  <tr><td>SB 1495 implicit bias and participatory fair housing — practice course only</td><td class="mono">Course Provider Handbook</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p><strong>On the substantive side it rests on nothing that was read.</strong> The instruction on agency, trust funds, disclosure, finance, fair housing and licence law is written without a citation to the California law it describes, because <strong>the Business and Professions Code was not read in its own text — none of it</strong> — and neither were the Commissioner's Regulations beyond §§ 3000, 3002 and 3003, the Civil Code, FEHA, the Unruh Act, or California's finance and lending statutes. That last omission is the sharpest: <strong>one of the three courses is Mortgage Loan Brokering and Lending.</strong></p>
+
+          <p><strong>Nothing has been manufactured.</strong> No California statutory figure appears anywhere. Where a retention period is discussed at all, a firm that <em class="q">“discards loan files three years after closing, on the shortest period it could find”</em> is presented as the error, not the rule. California states no retention period because the Department states none — its record rule is open-ended:</p>
+          <blockquote>… as long as the school is in business, the school must furnish a certificate to the student upon request.<br><span class="mono" style="font-style:normal;font-size:.72rem;letter-spacing:.06em;color:var(--faint)">Course Provider Handbook, Rev. 01/2026</span></blockquote>
+
+          <p><strong>What it means for the review.</strong> Every other state can be checked citation by citation against a quoted provision. California cannot. The question to put to a California reviewer is therefore not <em>is the citation right</em> but <strong>is the statement of California law correct</strong> — and the register says so in those words. Closing the gap means reading the Business and Professions Code and the Commissioner's Regulations directly and citing them through the curriculum; until then no California module states a section number, and none may be added without the reading behind it.</p>
+        </article>
+      </section>
+
+      <section id="s4">
+        <h2><b>04</b><span>The largest open item</span></h2>
+        <p class="lede">In most of these states the regulator prescribes course content this project does not have. The relevant statutes and rules were read; the outlines they point to were not obtainable. No amount of internal work closes this.</p>
+
+        <div class="band">
+          <div class="band-head"><h4>Prescribed content, by state</h4></div>
+          <div class="scroller">
+            <table>
+              <thead><tr><th>State</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td class="state">Arizona<i>AZ</i></td><td><strong>Not obtained.</strong> R4-28-401(D) says the Department will provide its prescribed prelicensure content on request, and § 32-2124(B) requires a course to follow it. There is also no Department outline for the 27-hour Arizona-specific course.</td></tr>
+                <tr><td class="state">Pennsylvania<i>PA</i></td><td><strong>Not obtained.</strong> The Commission's content outlines for <em>Real Estate Fundamentals</em> and <em>Real Estate Practice</em>.</td></tr>
+                <tr><td class="state">Washington<i>WA</i></td><td><strong>Not obtained.</strong> WAC 308-124A-800, the prescribed core curriculum, and 308-124A-802, the prescribed Washington content.</td></tr>
+                <tr><td class="state">Missouri<i>MO</i></td><td><strong>Not obtained.</strong> The testing service's detailed content outline, which 20 CSR 2250-6.060(1) requires the 48-hour course to be developed from.</td></tr>
+                <tr><td class="state">Colorado<i>CO</i></td><td><strong>Obtained.</strong> The Commission publishes its own qualifying-education outlines, and the six courses are built on them. The Online Course Approval Checklist and the Current Legal Issues provider material remain unobtained.</td></tr>
+                <tr><td class="state">North Carolina<i>NC</i></td><td><strong>Obtained.</strong> The Commission's Prelicensing Syllabus, extracted in full.</td></tr>
+                <tr><td class="state">Oklahoma<i>OK</i></td><td><strong>Read but deliberately not reproduced</strong>, per 605:10-3-1(a)(2).</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p>Every state's readings file lists the rest of what it did not read — disclosure forms, trust-account statutes, disciplinary provisions, landlord-tenant acts, fair housing statutes, transfer tax rates. In each case the build states no rule from those sources at all rather than guessing at one. That silence is deliberate, and should be read as a finding rather than an omission.</p>
+      </section>
+
+      <section id="s5">
+        <h2><b>05</b><span>Standing rules</span></h2>
+        <p class="lede">Not aspirational. Each of these is enforced by a test, or by an import-time invariant that throws.</p>
+        <ol class="rules">
+          <li>No course, page or record claims approval, and no enrollment opens, until an approval record exists. Payment status never determines completion, examination eligibility, credit or a certificate.</li>
+          <li>No rule, fee, form version, passing score, proctor requirement or retention period appears anywhere unless a source states it. Where a source is silent, the record says the source is silent.</li>
+          <li>Answer keys never leave the server. Each state engine strips the correct choice and the rationale before an item is delivered, and a test asserts no key reaches the published site.</li>
+          <li>Marketing material and portal browsing never count as instructional time.</li>
+          <li>Reviewer activity never contaminates student records.</li>
+          <li>Completion and audit records are never silently edited.</li>
+          <li>Where a StateCourse standard fills a regulator's silence — Alaska's eight-hour daily cap is the clearest case — the record labels it a provider standard and forbids describing it as a state requirement.</li>
+        </ol>
+      </section>
+
+      <section id="s6">
+        <h2><b>06</b><span>What the reviewer is asked</span></h2>
+        <p class="lede">The build can check arithmetic, structure and internal consistency. It cannot check whether the law is stated correctly. That is what the review is for.</p>
+
+        <div class="asks">
+          <div class="ask">
+            <h4>Is anything here wrong as a matter of this state's law?</h4>
+            <p>Each state's readings file quotes the primary text it relied on, so a disagreement can be traced to a specific quotation rather than argued in the abstract.</p>
+          </div>
+          <div class="ask">
+            <h4>Is anything stated that the cited source does not actually say?</h4>
+            <p>This is the failure mode finding 3.1 is an instance of, and the one a reviewer catches that no test can.</p>
+          </div>
+          <div class="ask">
+            <h4>Is anything missing that the state requires and this build is silent about?</h4>
+            <p>Section 4 and each state's own “what was NOT read” section are the place to start.</p>
+          </div>
+        </div>
+
+        <p style="margin-top:26px">Reviewers should receive, per state: the readings file under <code>&lt;state&gt;/regulatory/</code>, the curriculum modules under <code>&lt;state&gt;/&lt;course&gt;/curriculum/</code>, and the course engine under <code>config/</code>, which states the arithmetic and the completion gates in one place.</p>
+      </section>
+
+      <footer>
+        <p>StateCourse national build audit, 21 August 2026. Figures in section 1 were measured from the repository at the time of writing, not estimated. Every course described here is in development and not approved; nothing in this report should be read as a statement that any state has approved any course.</p>
+      </footer>
+
+    </main>
+  </div>
+</div>

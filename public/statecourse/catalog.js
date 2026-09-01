@@ -31,7 +31,7 @@ function render() {
 
   summary.textContent = `${filtered.length} of ${registry.length} jurisdictions shown`;
   directory.innerHTML = filtered.map((state) => {
-    const activeCodes = ["VA", "ME", "WI", "MO", "OK", "AZ", "WA", "PA", "NC", "CO", "CA"];
+    const activeCodes = ["VA", "ME", "WI", "MO", "OK", "AZ", "WA", "PA", "NC", "CO", "CA", "MI"];
     const active = activeCodes.includes(state.state_code);
     const programs = {
       VA: "Real Estate Salesperson Pre-License · 60 hours",
@@ -45,6 +45,7 @@ function render() {
       NC: "Broker Prelicensing · 75 hours",
       CO: "Six qualifying courses · 168 hours total",
       CA: "Principles + Practice + Mortgage Lending · three 45h approvals",
+      MI: "Real Estate Salesperson Pre-License · 40 hours",
     };
     const program = programs[state.state_code] || "Coming Soon / Not Yet Available";
     return `<article class="state-directory-card" id="state-${state.state_code.toLowerCase()}">

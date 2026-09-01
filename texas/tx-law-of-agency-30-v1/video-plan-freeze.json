@@ -1,0 +1,349 @@
+{
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
+  "courseId": "tx-law-of-agency-30-v1",
+  "frozenOn": "2026-08-30",
+  "generatedBy": "scripts/freeze-loa-video-plan.mjs",
+  "what": "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
+  "status": {
+    "editorialAndLegalPackage": "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
+    "renderedAssets": "PENDING — no MP4, no shipping .vtt, no -poster.webp, no band PNGs, no diagram panels. Nothing has been rendered.",
+    "screenMediaIntegrationSupport": "PENDING — scripts/lib/generate-tx-block-maps.mjs has no screenMedia hook, so there is no supported route to attach a video to a Texas screen. The tests the hook must ship with are recorded in that file's header.",
+    "coursePlacementActivation": "NOT ACTIVE — no block map references any of these videos, and no student-facing surface carries a player, poster, badge, duration, play button or transcript link.",
+    "doNotSay": "'production-ready'. It collapses four layers into one and three of them are not ready."
+  },
+  "supersedes": {
+    "artifact": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
+    "version": "plan v1",
+    "sha256": "7ca7234853320ad96275c9a6c7e69a16e0a2ec2b63b6de2fd7ed62ed7f88e403",
+    "bytes": 29239,
+    "hashedBy": "LOA-CONTENT-FREEZE-2026-08-30-v3, as the artifact 'video instruction plan'",
+    "status": "SUPERSEDED",
+    "whySuperseded": "v1 was correct when written and wrong in four particulars by the time it was frozen: it gave three durations that its own caption blocks contradicted, it said the Law of Agency block maps did not exist when they did, it said the caption files existed only inside the production files when they were on disk, and it described the screen ids as reservations when every one of them had been confirmed against a live generated screen. None of that was discoverable from the file itself, which is the point of recording it here.",
+    "whereItsCorrectionsWere": "texas/tx-law-of-agency-30-v1/video-production/production-readiness-addendum.md, which is retained as review history and hashed below in that character. It is not an operational dependency: validator check 7 diffs its corrections against the canonical files and fails if any exists only there."
+  },
+  "consolidatedCorrections": [
+    {
+      "id": "NARRATION-1..9",
+      "class": "legal wording — narration reading the held form had drifted from its printed text",
+      "count": 9,
+      "landedIn": "all four representations of each affected scene: §6 narration, §7 HeyGen prompt, §8 caption cue text and the on-disk .vtt, §9 clean transcript",
+      "detail": [
+        "V1 S1 — restored 'all real estate license holders', 'the following information', and the recipient list 'to prospective buyers, tenants, sellers and landlords'.",
+        "V1 S4 — the three client-duty bullets had been compressed to noun phrases; read as printed, including 'including the broker's own interests'.",
+        "V1 S6 — restored 'property' owner and the printed 'usually in a written listing to sell or property management agreement'.",
+        "V1 S7 — restored the dropped subject ('the broker becomes the buyer or tenant's agent'), and removed a demonstrative the form does not print ('those fees' -> 'fees').",
+        "V2 S3 — restored 'who performs' and both statutory triggers, 'before showing any residential property to the buyer or if no residential property will be shown, before presenting an offer on behalf of the buyer'.",
+        "V2 S4 — the four conditions had lost their objects; condition 1 had lost 'either orally or in writing', which is the whole trap the unit teaches.",
+        "V2 S5 — restored 'of the Texas Occupations Code' after section 1101.563.",
+        "V3 S4 — restored 'to the transaction' at the close of the appointment bullet.",
+        "V3 S6 — restored 'or any other information', 'specifically', and the statutory exception 'unless required to do so by law'."
+      ],
+      "mostConsequential": "V3 S6. The earlier narration dropped 'unless required to do so by law' from a confidentiality rule WHILE THE HIGHLIGHT BOX AROUND THAT SUB-BULLET WAS SHOWING THE STUDENT THAT VERY EXCEPTION ON THE PAGE. Narration and image contradicted each other on a point of law. This is the defect class that justifies checks 1 and 2 existing at all.",
+      "preventedBy": "validator checks 1 and 2 — the four representations are re-derived and compared, and each repaired qualifier is tested by name in all four"
+    },
+    {
+      "id": "NARRATION-10",
+      "class": "legal wording — narration reading the held statute had drifted from its enacted text",
+      "count": 1,
+      "landedIn": "V3 S2, all four representations",
+      "detail": [
+        "Restored § 1101.561(b) as enacted: 'a broker must agree to act as an intermediary under this subchapter if the broker agrees to represent in a transaction a buyer or tenant and a seller or landlord'."
+      ],
+      "note": "Counted separately from the nine. The nine are places narration was reading THE FORM; this one was reading the statute. Both counts are stated rather than merged so that a reviewer checking either figure finds it.",
+      "preventedBy": "validator check 2, entry R10"
+    },
+    {
+      "id": "COORD-1..2",
+      "class": "crop geometry — a band edge cut a printed line in half",
+      "count": 2,
+      "landedIn": "iabs-1-2-document-overview.md §5.1, and the restated rows in Videos 2 and 3",
+      "detail": [
+        "Band G foot 594 -> 592. 594 fell inside the printed line 'LICENSE HOLDER CONTACT INFORMATION: This notice is being provided...' (y 593.2-603.1).",
+        "Band H head 588 -> 592. 588 fell inside 'limited to no more than 14 days.' (y 579.0-589.0)."
+      ],
+      "preventedBy": "validator check 4a — every printed line is tested against every band edge"
+    },
+    {
+      "id": "COORD-3..6",
+      "class": "highlight geometry — a rectangle cut a printed word, or swept in text the narration was not reading",
+      "count": 4,
+      "landedIn": "§6 of the production files named",
+      "detail": [
+        "V1 S4 — the parenthetical box at 'x ~300-481.8' began inside the word 'person'; now the measured x 237.7-481.8.",
+        "V1 S9 — one box over two whole printed lines swept in the block label and the unrelated 'Please acknowledge receipt...' sentence; now two word-exact rectangles bounding only the narrated sentence.",
+        "V2 S3 — one box cut off the sentence's opening words and swept in the unrelated 'Even if a written agreement is not required...' sentence; now three word-exact rectangles, the last around the single word 'Code.'",
+        "V2 S4 — condition 3's box ran to y 547.1 and swallowed the conjunction 'and' that the form prints on a line of its own, marking two things at once; now stops at y 536.6, and that printed 'and' gets its own box in the closing 'all four' moment where the narration talks about it."
+      ],
+      "preventedBy": "validator check 5 — no rectangle may cut a printed word, bound nothing, or remain stated as an estimate"
+    },
+    {
+      "id": "COORD-7",
+      "class": "highlight geometry — a target that straddles a line break drawn as one loose box",
+      "count": 1,
+      "landedIn": "intermediary-brokerage.md §6, Scene 3",
+      "detail": [
+        "V3 S3 — the inner cue on 'in conspicuous bold or underlined print' was estimated at 'x ~26.4-260', which marked only the phrase's second half and swept in five following words. The phrase straddles a line break, so it is now one cue in two word-exact rectangles: x 487.7-582.5 y 382.9-392.8 and x 26.4-95.1 y 393.2-403.2."
+      ],
+      "preventedBy": "validator check 5"
+    },
+    {
+      "id": "COORD-8",
+      "class": "crop geometry — the x window clipped the page footer, and the form number with it",
+      "count": 1,
+      "foundBy": "scripts/validate-loa-video-packages.mjs check 4b, at this freeze — NOT in the review addendum, which predates it",
+      "landedIn": "iabs-1-2-document-overview.md §5.1, with the recomputed composed scale factor and band heights; restated rows in Videos 2 and 3; video-instruction-plan.md §4 and §11",
+      "detail": [
+        "Every draft gave one x window for every band, x0 = 20, x1 = 592, described as 'the full text column'. The page's footer line 'Regulated by the Texas Real Estate Commission Information available at www.trec.texas.gov IABS 1-2' runs to x 599.2, so a crop stopping at 592 clipped it — including the form number. Band H is the frame on which Video 1 reads the foot of the page.",
+        "Band window is now x0 = 20, x1 = 600; iabs-full.png takes the whole 612-point media box. Composed scale factor 0.7255 -> 0.7155; band heights recomputed to A 177, B 117, C 180, D 238, E 338, F 355, G 292, H 570 px; effective resolution ~206 dpi."
+      ],
+      "preventedBy": "validator check 4b — every printed line inside a band is tested against that band's own x window"
+    },
+    {
+      "id": "DURATION-1",
+      "class": "metadata — a duration asserted beside a caption timeline that contradicted it",
+      "count": 1,
+      "landedIn": "video-instruction-plan.md §2, §3, §7; §6 scene table and §11 registry entry of each production file",
+      "detail": [
+        "Plan v1 gave Video 1 a scene table totalling 3:01 while Video 1's own caption block ran to 3:17. Two figures for one video, asserted side by side.",
+        "Fixed at the root rather than by correcting the instance: every scene duration and every video duration is now DERIVED from that video's caption cue timeline, with the scene matched to its cues by comparing narration against cue text. There is one timeline and the tables are a view of it.",
+        "Durations after derivation: 3:30 / 3:03 / 3:20, total 9:53. Plan v1 said 3:01 / 2:53 / 3:10, total 9:04. The rise is the nine narration repairs restoring full printed wording, which takes longer to say.",
+        "All of it remains PROVISIONAL: the cue timings are computed at 150 wpm with a 1.4-second readability floor, not measured from audio, because no render exists. No student- or reviewer-facing surface states a duration for any of these videos."
+      ],
+      "preventedBy": "validator check 3 — every scene duration and every total is re-derived from the caption file and compared"
+    },
+    {
+      "id": "PLACEMENT-1",
+      "class": "status — the plan understated what had been verified",
+      "count": 1,
+      "landedIn": "video-instruction-plan.md §5, §10; §3 of each production file",
+      "detail": [
+        "Plan v1 said no law-of-agency-module-*-blocks.mjs existed and the screen ids were reservations. All twelve maps exist, generated from the frozen modules' own headings, and t02u5-s1, t05u3-s1 and t06u3-s1 exist with the type, title and content range the plan predicted.",
+        "The retrieval separation is now derived rather than asserted: each unit's -s3 screen is generated as a retrieval screen carrying a questionId and NO content range and NO media field, two screens after the instruction screen the video attaches to."
+      ],
+      "preventedBy": "validator check 8 — the block maps are read and the screen shapes re-derived"
+    },
+    {
+      "id": "CAPTIONS-1",
+      "class": "status — the caption files existed on disk and the plan did not say so",
+      "count": 1,
+      "landedIn": "video-instruction-plan.md §6; §8 of each production file",
+      "detail": [
+        "Three well-formed WebVTT files exist at video-production/captions/, 39 + 33 + 34 cues, each byte-identical to the vtt block in its production file's §8, each opening with a NOTE declaring the timings provisional.",
+        "They are deliberately NOT at public/statecourse/media/ and their names carry '.provisional'. A caption file sitting at its shipping path with invented timings is the kind of thing that gets shipped by accident."
+      ],
+      "preventedBy": "validator check 1 — the embedded and on-disk caption files are compared cue for cue"
+    }
+  ],
+  "videos": [
+    {
+      "n": 1,
+      "title": "IABS 1-2 Document Overview",
+      "stem": "tx-iabs-1-2-document-overview",
+      "unit": "T02U5",
+      "screen": "t02u5-s1",
+      "retrievalScreen": "t02u5-s3",
+      "derivedDuration": "3:30",
+      "scenes": 10,
+      "cues": 39
+    },
+    {
+      "n": 2,
+      "title": "Representation or Showing Only: the 2026 decision",
+      "stem": "tx-representation-or-showing-only-2026",
+      "unit": "T05U3",
+      "screen": "t05u3-s1",
+      "retrievalScreen": "t05u3-s3",
+      "derivedDuration": "3:03",
+      "scenes": 7,
+      "cues": 33
+    },
+    {
+      "n": 3,
+      "title": "Texas Intermediary Brokerage",
+      "stem": "tx-intermediary-brokerage",
+      "unit": "T06U3",
+      "screen": "t06u3-s1",
+      "retrievalScreen": "t06u3-s3",
+      "derivedDuration": "3:20",
+      "scenes": 7,
+      "cues": 34
+    }
+  ],
+  "validation": {
+    "ranAt": "freeze time — this artifact is not written if any check fails",
+    "command": "node scripts/validate-loa-video-packages.mjs",
+    "checks": [
+      {
+        "n": 1,
+        "title": "narration, transcript, captions and production prompt carry the same operative wording",
+        "pass": true,
+        "notFullyMechanised": null
+      },
+      {
+        "n": 2,
+        "title": "every repaired legal qualifier appears in all four representations, by name",
+        "pass": true,
+        "notFullyMechanised": null
+      },
+      {
+        "n": 3,
+        "title": "every scene duration derives from the caption timeline rather than being asserted alongside it",
+        "pass": true,
+        "notFullyMechanised": "The cue timings these durations derive from are themselves PROVISIONAL — computed at 150 wpm, not measured from audio, because no render exists. This check proves the figures are derived from one timeline and cannot drift apart; it cannot prove the timeline is true to a render that has not been made."
+      },
+      {
+        "n": 4,
+        "title": "every crop keeps the complete official field or form language in frame",
+        "pass": true,
+        "notFullyMechanised": "Verified in PDF-point space against the held page's own text lines. It cannot verify the RENDERED frame: no PNG has been built and no frame has been pixel-diffed against the page. That diff is a release gate."
+      },
+      {
+        "n": 5,
+        "title": "every highlight targets only the named concept",
+        "pass": true,
+        "notFullyMechanised": "Geometry only. That a rectangle bounds whole printed words, and bounds nothing outside itself, is mechanical. That the words it bounds are THE CONCEPT THE NARRATION NAMES — and not a neighbouring provision that happens to be word-aligned — is a reading judgment this script does not make. Each rectangle's intended target is named in prose beside it in §6, and that pairing is what a human reviewer checks."
+      },
+      {
+        "n": 6,
+        "title": "all 50 form strings still verify against the held IABS-1-2.pdf",
+        "pass": true,
+        "notFullyMechanised": null
+      },
+      {
+        "n": 7,
+        "title": "no correction exists only in the addendum",
+        "pass": true,
+        "notFullyMechanised": "The enumeration of what the addendum records is authored, not derived: this script cannot read the addendum's prose and discover a correction nobody listed. It proves that every LISTED correction is present canonically, and that the addendum declares itself non-operational. Adding a correction to the addendum without adding it here would evade the check — which is why corrections belong in the canonical files first."
+      },
+      {
+        "n": 8,
+        "title": "the canonical v2 package is sufficient to render without consulting superseded files",
+        "pass": true,
+        "notFullyMechanised": "Sufficiency is tested as the presence of every ingredient a render needs and the absence of any pointer to a superseded file. Whether the prose in those sections is good enough to render FROM is an editorial judgment; whether it renders correctly is answerable only after a render."
+      }
+    ],
+    "checksPassing": "8/8",
+    "partial": [
+      3,
+      4,
+      5,
+      7,
+      8
+    ]
+  },
+  "assessmentSeparation": {
+    "confirmed": true,
+    "derivedFrom": "the generated block maps themselves, re-read on every validator run",
+    "statement": "Retrieval happens on a separate screen. Each video attaches to its unit's -s1 instruction screen; the unit's practice screen -s2 follows; the retrieval check is -s3, which the generator emits as { id, sequence, type: 'retrieval', title, questionId } with NO content range and NO media field of any kind. When the student reaches the retrieval screen the video, the highlighted form and the five visible answers are no longer displayed — they belong to -s1, two screens behind.",
+    "placements": [
+      {
+        "video": 1,
+        "instruction": "t02u5-s1",
+        "practice": "t02u5-s2",
+        "retrieval": "t02u5-s3"
+      },
+      {
+        "video": 2,
+        "instruction": "t05u3-s1",
+        "practice": "t05u3-s2",
+        "retrieval": "t05u3-s3"
+      },
+      {
+        "video": 3,
+        "instruction": "t06u3-s1",
+        "practice": "t06u3-s2",
+        "retrieval": "t06u3-s3"
+      }
+    ],
+    "alsoTrue": "No video contains a quiz question, a self-test, a poll, an answer or an answer recap. No answer is revealed immediately before a retrieval check. Every video ends on the avatar with no document and no panel on screen, so no highlight is up when the student is asked to retrieve."
+  },
+  "afterFreeze": "No video wording, coordinate or duration may change silently. A correction found later must break THIS freeze explicitly, name the artifact and the reason, re-run the validator, and create a new video-freeze version with new hashes. It does not require a curriculum-freeze break: the curriculum freeze follows this artifact's hash. Re-taking this freeze under the same id is forbidden — an id denoting two byte-states is not an identifier.",
+  "artifacts": {
+    "video instruction plan (v2, canonical)": {
+      "path": "texas/tx-law-of-agency-30-v1/video-instruction-plan.md",
+      "sha256": "9ab965af55829b91b5633bbf16c81aa80f2fd203c370b9cf409c56372217cf9b",
+      "bytes": 53236
+    },
+    "production file — video 1 IABS 1-2 Document Overview": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/iabs-1-2-document-overview.md",
+      "sha256": "fe4992e1e7a7f88d301019fe9d563e7d40787da873fbab4cf4bdfcd04fc503d4",
+      "bytes": 60249
+    },
+    "production file — video 2 Representation or Showing Only": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/representation-or-showing-only-2026.md",
+      "sha256": "2eb8e27a7f185929053f7a0747f89050e55bc89517a3e1024ef887e5472c443e",
+      "bytes": 54185
+    },
+    "production file — video 3 Texas Intermediary Brokerage": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/intermediary-brokerage.md",
+      "sha256": "43911503834a5a72870ec249b5e892527b311424ed17070c09d82131054560dc",
+      "bytes": 54780
+    },
+    "captions — video 1 (provisional timings)": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/captions/tx-iabs-1-2-document-overview.provisional.vtt",
+      "sha256": "9dcf5fe7ad1b6bcc0f25a2c7f5330f0bfc481be2df4d3717ac73690bd6e60123",
+      "bytes": 4897
+    },
+    "captions — video 2 (provisional timings)": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/captions/tx-representation-or-showing-only-2026.provisional.vtt",
+      "sha256": "2faa42d530643d1e1897210b3d9dbc787142bd1b50417de95bd8d4d667f9816d",
+      "bytes": 4324
+    },
+    "captions — video 3 (provisional timings)": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/captions/tx-intermediary-brokerage.provisional.vtt",
+      "sha256": "552d5baf6c103c355ada7533fc65e6b1af726f782ae66a58d3b357389cf6721e",
+      "bytes": 4597
+    },
+    "held form IABS 1-2 (the only permitted source of document pixels)": {
+      "path": "texas/trec-sources/forms/IABS-1-2.pdf",
+      "sha256": "5056930b66d237a7a4376db0c43f833929600f0b6e5ce6e42a417da824ef6b20",
+      "bytes": 1491257
+    },
+    "held statute OC.1101 (the source of every statutory quotation)": {
+      "path": "texas/trec-sources/statutes/OC.1101.htm",
+      "sha256": "8c40aa399cf717901540150ae6acaf3d847305f7fefcf7dd7ec4c3068a418858",
+      "bytes": 308708
+    },
+    "source inventory": {
+      "path": "texas/trec-sources/source-inventory.json",
+      "sha256": "df1f2aa5d8eed31dd26c46a3184dc090771825867399ab331d35404878855f69",
+      "bytes": 26256
+    },
+    "block map — module 2 (t02u5-s1)": {
+      "path": "config/texas/law-of-agency-module-2-blocks.mjs",
+      "sha256": "74ebde6a453393d17e421baad034dbacb0143942e117891fcc0ccde7d7c05edc",
+      "bytes": 7653
+    },
+    "block map — module 5 (t05u3-s1)": {
+      "path": "config/texas/law-of-agency-module-5-blocks.mjs",
+      "sha256": "a1d1c607fa24cd3cf516524c4b82a9b33251944b7c1916a8edbda456b3436694",
+      "bytes": 8344
+    },
+    "block map — module 6 (t06u3-s1)": {
+      "path": "config/texas/law-of-agency-module-6-blocks.mjs",
+      "sha256": "c9648bd867efc33dd119250966c2ed0c4301cf8c2341a1697a0e7271da7674bc",
+      "bytes": 7459
+    },
+    "validator": {
+      "path": "scripts/validate-loa-video-packages.mjs",
+      "sha256": "a48deb1dae702284a0498cdd4519c0991370abe6963df1706e33046e85219b85",
+      "bytes": 46717
+    },
+    "block-map generator core (where the screenMedia hook will be built)": {
+      "path": "scripts/lib/generate-tx-block-maps.mjs",
+      "sha256": "fc81e0fb9051dfc8a3006bd6aa33a2ae183f0940b8a98439289a9aa13dfe0d96",
+      "bytes": 14634
+    },
+    "review addendum (SUPERSEDED — review history, not an operational dependency)": {
+      "path": "texas/tx-law-of-agency-30-v1/video-production/production-readiness-addendum.md",
+      "sha256": "cc8f0bf9cb40fa7acaa803ec564be2eb8d37cce843d046eaf2c2bcb4bd8a69e3",
+      "bytes": 21162
+    }
+  },
+  "reproduce": [
+    "node scripts/validate-loa-video-packages.mjs",
+    "node scripts/freeze-loa-video-plan.mjs",
+    "node scripts/freeze-loa-curriculum.mjs"
+  ],
+  "notApproved": "StateCourse holds no TREC approval for this course or as a qualifying education provider. Nothing in these videos, their captions, their posters, their transcripts, their production files or this artifact states or implies that the videos, the course, or StateCourse is approved, endorsed, reviewed or licensed by the Texas Real Estate Commission. The form shown is the Commission's; the instruction wrapped around it is StateCourse's."
+}

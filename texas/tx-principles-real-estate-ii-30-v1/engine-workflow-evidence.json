@@ -1,0 +1,162 @@
+{
+  "generatedBy": "scripts/prins2-reviewer-workflow.mjs",
+  "course": "tx-principles-real-estate-ii-30-v1",
+  "mode": "REVIEWER — non-credit, not student-facing, no TREC approval held",
+  "note": "Point 16 asks whether the engine works, not whether it is switched off. These behaviours were exercised against the real engine; the refusals were attempted deliberately, because a gate that never refuses is not a gate.",
+  "productionEnrollmentRefused": true,
+  "behaviours": {
+    "independentEnrollmentRecord": "PASS",
+    "identityVerification": "PASS",
+    "topicGating": "PASS",
+    "moduleCompletion": "PASS",
+    "correctAnswerProgression": "PASS",
+    "incorrectAnswerRationale": "PASS",
+    "replacementQuestionDelivery": "PASS",
+    "scenarioPassing": "PASS",
+    "instructorSupportPathway": "PASS",
+    "finalExamAccessAfterCoursework": "PASS",
+    "unweightedSeventyPercentScoring": "PASS",
+    "courseEvaluation": "PASS",
+    "completionStatus": "PASS",
+    "certificateEligibility": "PASS",
+    "auditableAttemptRecord": "PASS",
+    "firstFailedAttempt": "PASS",
+    "remediationAfterFirstFailure": "PASS",
+    "differentVersionOnSubsequentAttempt": "PASS",
+    "examVersionRotation": "PASS",
+    "ninetyDayLimit": "PASS",
+    "secondFailureRetake": "PASS"
+  },
+  "observations": [
+    {
+      "behaviour": "independentEnrollmentRecord",
+      "result": "PASS",
+      "detail": "enrollment record for tx-principles-real-estate-ii-30-v1 only, creditEligible=false, mode=REVIEWER"
+    },
+    {
+      "behaviour": "identityVerification",
+      "result": "PASS",
+      "detail": "answering refused before verification; verified by \"reviewer attestation (non-credit); no Commission-accepted method is claimed\""
+    },
+    {
+      "behaviour": "topicGating",
+      "result": "PASS",
+      "detail": "T02 refused while T01 incomplete (\"earlier topics incomplete: T01\"); all 9 topics completed in order"
+    },
+    {
+      "behaviour": "moduleCompletion",
+      "result": "PASS",
+      "detail": "9 of 9 topics recorded complete"
+    },
+    {
+      "behaviour": "correctAnswerProgression",
+      "result": "PASS",
+      "detail": "a topic completes only when every quiz item in it is satisfied"
+    },
+    {
+      "behaviour": "incorrectAnswerRationale",
+      "result": "PASS",
+      "detail": "rationale returned on a wrong answer (553 chars)"
+    },
+    {
+      "behaviour": "replacementQuestionDelivery",
+      "result": "PASS",
+      "detail": "a wrong answer served the replacement T01Q1R, a different question, which then counted toward passing"
+    },
+    {
+      "behaviour": "scenarioPassing",
+      "result": "PASS",
+      "detail": "all 4 required scenarios passed; a locked scenario refused before its topics were complete"
+    },
+    {
+      "behaviour": "instructorSupportPathway",
+      "result": "PASS",
+      "detail": "a question was raised and answered; elapsed time is recorded and no timeliness standard is claimed"
+    },
+    {
+      "behaviour": "finalExamAccessAfterCoursework",
+      "result": "PASS",
+      "detail": "the examination refused to open before coursework was complete, and opened after"
+    },
+    {
+      "behaviour": "unweightedSeventyPercentScoring",
+      "result": "PASS",
+      "detail": "60 of 60 scored 100% against the 70% unweighted pass mark"
+    },
+    {
+      "behaviour": "courseEvaluation",
+      "result": "PASS",
+      "detail": "course and instructor evaluation recorded"
+    },
+    {
+      "behaviour": "completionStatus",
+      "result": "PASS",
+      "detail": "completion status COMPLETED_NO_CREDIT_PENDING_APPROVAL — completed, and explicitly without credit"
+    },
+    {
+      "behaviour": "certificateEligibility",
+      "result": "PASS",
+      "detail": "every in-engine condition met, and issuance still refused: no TREC approval is held"
+    },
+    {
+      "behaviour": "auditableAttemptRecord",
+      "result": "PASS",
+      "detail": "66 audited events, 45 quiz attempts, 1 examination attempt, retention 4 years"
+    },
+    {
+      "behaviour": "firstFailedAttempt",
+      "result": "PASS",
+      "detail": "30 of 60 = 50% on version B — failed, status REMEDIATION_REQUIRED"
+    },
+    {
+      "behaviour": "remediationAfterFirstFailure",
+      "result": "PASS",
+      "detail": "a subsequent examination refused until the prescribed additional coursework was completed"
+    },
+    {
+      "behaviour": "differentVersionOnSubsequentAttempt",
+      "result": "PASS",
+      "detail": "first attempt version B, subsequent version A — a different version, as 535.65(i) requires"
+    },
+    {
+      "behaviour": "examVersionRotation",
+      "result": "PASS",
+      "detail": "versions B then A; 42 of 60 = 70% passes at the 70% mark"
+    },
+    {
+      "behaviour": "ninetyDayLimit",
+      "result": "PASS",
+      "detail": "a subsequent attempt opened 95 days after coursework was refused against the 90-day limit"
+    },
+    {
+      "behaviour": "secondFailureRetake",
+      "result": "PASS",
+      "detail": "two failures recorded, status RETAKE_REQUIRED_SECOND_FAILURE, a third attempt refused — the student must retake the course"
+    }
+  ],
+  "required": [
+    "independentEnrollmentRecord",
+    "identityVerification",
+    "moduleCompletion",
+    "topicGating",
+    "correctAnswerProgression",
+    "incorrectAnswerRationale",
+    "replacementQuestionDelivery",
+    "scenarioPassing",
+    "instructorSupportPathway",
+    "finalExamAccessAfterCoursework",
+    "examVersionRotation",
+    "unweightedSeventyPercentScoring",
+    "firstFailedAttempt",
+    "remediationAfterFirstFailure",
+    "differentVersionOnSubsequentAttempt",
+    "ninetyDayLimit",
+    "secondFailureRetake",
+    "completionStatus",
+    "certificateEligibility",
+    "courseEvaluation",
+    "auditableAttemptRecord"
+  ],
+  "missing": [],
+  "confidentiality": "No item text, choice text, correct-choice index or secure item id appears in this file. Only scores, version letters and behaviour outcomes are recorded."
+}

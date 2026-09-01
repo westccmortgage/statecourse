@@ -6,27 +6,79 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta name="theme-color" content="#172b3d" />
     <title>Student Sign In | StateCourse</title>
+    <meta name="description" content="Sign in to My StateCourse to continue your licensing path, courses, progress, and certificates." />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../student-portal.css" />
+    <link rel="stylesheet" href="../student-portal.css?v=20260818-signin" />
   </head>
-  <body>
-    <header class="portal-header"><a class="brand" href="../../"><span aria-hidden="true">SC</span><strong>StateCourse</strong><small>Student Portal</small></a><nav><a href="../../">Course finder</a></nav></header>
-    <main class="signin-main">
-      <section class="signin-panel" aria-labelledby="signin-title">
-        <p class="eyebrow">Returning student</p>
-        <h1 id="signin-title">Continue your course</h1>
-        <p>Sign in with the account connected to your StateCourse enrollment.</p>
-        <form id="studentSignIn">
-          <label><span>Email address</span><input id="email" name="email" type="email" autocomplete="username" required /></label>
-          <label><span>Password</span><input id="password" name="password" type="password" autocomplete="current-password" minlength="8" required /></label>
-          <button type="submit">Student sign in</button>
-        </form>
-        <p class="signin-message" id="signinMessage" aria-live="polite"></p>
-        <div class="signin-note"><strong>New student?</strong><span>Your account will be tied to the email used for enrollment. Course access is created only after a verified payment webhook.</span></div>
-        <a class="back-link" href="../../">← Return to course finder</a>
+  <body class="registration-page signin-page">
+    <a class="skip-link" href="#signin-form">Skip to sign-in form</a>
+
+    <header class="portal-header registration-header">
+      <a class="brand" href="../../" aria-label="StateCourse home">
+        <span aria-hidden="true"><svg viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 40 8v14c0 12-7.5 20-18 24C11.5 42 4 34 4 22V8Z"/><g stroke-width="1.6" stroke-linecap="round"><path d="M13 16.5h18M14.5 15 22 10.5 29.5 15M15.5 19v11M22 19v11M28.5 19v11M13 32.5h18"/></g></svg></span>
+        <strong>StateCourse</strong>
+        <small>National Academy</small>
+      </a>
+      <nav aria-label="Account navigation">
+        <a href="../../get-licensed/">Course Finder</a>
+        <a href="../register/" id="headerCreateAccount">Create Account</a>
+      </nav>
+    </header>
+
+    <main class="registration-main signin-main-redesign" id="signin-form">
+      <section class="registration-shell signin-shell" aria-labelledby="signin-title">
+        <header class="registration-intro">
+          <p class="eyebrow">My StateCourse</p>
+          <h1 id="signin-title">Welcome back to StateCourse</h1>
+          <p>Sign in to continue your licensing path, courses, progress, and certificates.</p>
+        </header>
+
+        <div class="registration-card signin-card">
+          <form id="studentSignIn" novalidate>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="username" spellcheck="false" autocapitalize="none" aria-describedby="emailError" required />
+              <p class="field-error" id="emailError" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="password">Password</label>
+              <div class="password-input">
+                <input id="password" name="password" type="password" autocomplete="current-password" aria-describedby="passwordError" required />
+                <button class="password-toggle" type="button" aria-controls="password" aria-pressed="false">Show</button>
+              </div>
+              <p class="field-error" id="passwordError" aria-live="polite"></p>
+            </div>
+
+            <button class="create-account-button signin-button" type="submit">Sign In to My StateCourse</button>
+          </form>
+
+          <p class="signin-message" id="signinMessage" role="status" aria-live="polite"></p>
+
+          <div class="new-account-section">
+            <p><strong>New to StateCourse?</strong></p>
+            <p>Create an account to save your licensing path and continue to eligible course selection.</p>
+            <a class="secondary-account-link" id="createAccountLink" href="../register/">Create Your Account</a>
+          </div>
+        </div>
+
+        <aside class="signin-assurance" aria-label="Student account information">
+          <strong>One account for your complete licensing path.</strong>
+          <span>Return to active courses, review completed education, access available certificates, and keep future licensing steps organized.</span>
+        </aside>
       </section>
     </main>
-    <footer><span>StateCourse secure student access</span><small>Passwords are not stored by StateCourse.</small></footer>
-    <script src="student-signin.js" defer></script>
+
+    <footer class="registration-footer">
+      <span>StateCourse — Professional Licensing Education</span>
+      <nav aria-label="Legal and support">
+        <a href="../../privacy/">Privacy</a>
+        <a href="../../terms/">Terms</a>
+        <a href="mailto:support@statecourse.com">Contact</a>
+        <a href="../../accessibility/">Accessibility</a>
+      </nav>
+    </footer>
+
+    <script src="student-signin.js?v=20260818-signin" defer></script>
   </body>
 </html>

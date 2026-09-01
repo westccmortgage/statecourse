@@ -2,290 +2,764 @@
 
 ## Application, borrower information, and qualification
 
-**Course version:** 1.0 development draft  
-**Assignment time:** 180 instructional minutes  
+**Course version:** 1.0 submission draft
+**Assignment time:** 180 instructional minutes
 **Regulatory status:** Not approved; no California credit is available.
 
 ## Learning objectives
 
-- Analyze loan application workflow using verified facts, current authority, and a documented professional workflow.
-- Analyze income asset and liability information using verified facts, current authority, and a documented professional workflow.
-- Analyze credit history and capacity using verified facts, current authority, and a documented professional workflow.
-- Analyze occupancy and property purpose using verified facts, current authority, and a documented professional workflow.
-- Analyze debt-to-income analysis using verified facts, current authority, and a documented professional workflow.
-- Analyze adverse information and accurate records using verified facts, current authority, and a documented professional workflow.
+- Describe the application workflow, identify what constitutes an application, and explain what taking one triggers.
+- Collect and document income, asset, and liability information accurately, and identify what must be verified rather than accepted.
+- Explain how credit history and capacity are assessed and what a licensee may and may not say about credit.
+- Apply the occupancy and property purpose determination and recognize the patterns that contradict a stated purpose.
+- Compute debt-to-income ratios correctly and explain what they measure without stating thresholds as rules.
+- Handle adverse information honestly, and build an application record that is accurate and reconstructable.
 
 ## Timed sequence
 
 | Activity | Minutes | Evidence |
 |---|---:|---|
-| Guided reading: concepts and elements | 55 | Sections 1-2 viewed and notes saved |
-| Guided reading: roles, workflow, and documents | 50 | Sections 3-5 viewed |
-| Guided reading: analysis, California boundary, and consumer protection | 45 | Sections 6-8 viewed |
-| Applied scenario and decision checklist | 20 | Written response submitted |
+| Guided reading: the application workflow and borrower information | 55 | Sections 1-2 viewed and notes saved |
+| Guided reading: credit, capacity, occupancy, and purpose | 50 | Sections 3-4 viewed |
+| Guided reading: debt-to-income analysis and record accuracy | 45 | Sections 5-6 viewed |
+| Applied scenario and decision memorandum | 20 | Written response submitted |
 | Lesson assessment | 10 | Five scored items submitted |
 | **Total** | **180** | **One of 15 separate lesson assignments** |
 
-## 1. loan application workflow
+## 1. Loan application workflow
 
-### 1.1 Concept and purpose
+### 1.1 The sequence
 
-loan application workflow is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Application, borrower information, and qualification, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+| Stage | What happens |
+|---|---|
+| **Inquiry** | The consumer contacts the firm; general information is exchanged |
+| **Prequalification** | An informal assessment on stated information |
+| **Preapproval** | A lender review of supporting information, subject to conditions |
+| **Application** | The formal submission that triggers disclosure obligations |
+| **Processing** | Documents collected, third-party reports ordered, the file assembled |
+| **Underwriting** | The credit decision, with conditions |
+| **Approval or denial** | The decision, with adverse action requirements where applicable |
+| **Closing and funding** | Lessons 09 through 11 |
 
-### 1.2 Essential elements
+### 1.2 The three levels of assessment
 
-The essential elements of loan application workflow are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Borrowers, sellers, and new licensees conflate these constantly, and the distinctions are practical rather than academic.
 
-### 1.3 Roles and duties
+| | Basis | What it establishes | What it does not |
+|---|---|---|---|
+| **Prequalification** | Largely stated information | A rough borrowing range | Verification of anything |
+| **Preapproval** | Lender review of supporting information | A likely amount, subject to conditions | **A commitment to lend** |
+| **Loan commitment** | Underwriting complete | Substantially more certainty | Immunity from changed circumstances |
 
-Responsibility for loan application workflow may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**None guarantees funding.** All remain contingent on the property, the appraisal, and the borrower's circumstances holding through funding.
 
-### 1.4 Workflow
+**A licensee who tells a borrower he is "approved" when a preapproval was issued has misdescribed the file's status**, and the borrower will make an offer on that description.
 
-A defensible workflow for loan application workflow starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+### 1.3 What constitutes an application
 
-### 1.5 Documents and evidence
+This is the operative compliance question in the section, because **taking an application triggers obligations** — disclosure delivery timing, adverse action requirements, and the MLO endorsement requirement itself.
 
-Documents connected with loan application workflow must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Under the federal framework, an application is generally understood to exist when the creditor has received the information it needs to evaluate the request — conventionally described as **six items**: the consumer's name, income, Social Security number to obtain a credit report, the property address, an estimate of the property's value, and the loan amount sought.
 
-### 1.6 Quantitative and factual analysis
+**Two consequences licensees must understand:**
 
-Where loan application workflow involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+1. **An application can exist before anyone completes a form.** Collecting the six items in a conversation and an email exchange can constitute an application, and the disclosure clock does not wait for a signature.
+2. **Structuring to avoid the trigger is a compliance problem, not a technique.** Deliberately withholding a request for one of the items in order to delay disclosures is exactly the conduct the definition was written against.
 
-### 1.7 California law and professional boundary
+**Whether a particular set of facts constitutes an application is a compliance question** the firm must answer with a written policy, not one an originator resolves case by case.
 
-California law controls the licensed activity associated with loan application workflow; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+### 1.4 What taking an application triggers
 
-### 1.8 Consumer protection and fair access
+- **Disclosure delivery within defined periods**, developed in Lessons 07 and 09.
+- **Adverse action obligations** if the request is denied, developed in Lesson 06.
+- **Record retention** for the application and the file.
+- **Government monitoring information collection** where applicable, developed in Lesson 07.
+- **The MLO endorsement requirement**, since taking a residential mortgage loan application for compensation is what the endorsement covers.
 
-Consumer protection requires that loan application workflow be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 1.5 The uniform application
 
-### 1.9 Applied scenario
+Residential applications are generally taken on a standardized form capturing borrower information, employment, income, assets, liabilities, the property, the loan, declarations, and demographic information.
 
-Scenario: during application, borrower information, and qualification, the file raises a question about loan application workflow. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+**Three disciplines about completing it:**
 
-### 1.10 Decision checklist
+**Every item is answered.** A blank is ambiguous, and an ambiguous application is one nobody can later show was accurate.
 
-Before treating loan application workflow as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**The borrower's information is the borrower's statement.** A licensee who fills in an answer the borrower did not give has misattributed a representation the lender will rely on.
 
-## 2. income asset and liability information
+**Estimates are identified as estimates.** A value estimate and a documented value are different things, and a file that does not distinguish them cannot be reconstructed.
 
-### 2.1 Concept and purpose
+### 1.6 Withdrawal and incomplete applications
 
-income asset and liability information is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Application, borrower information, and qualification, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+An application may be withdrawn by the borrower or may become **incomplete** where requested information is not supplied. Each carries its own treatment under the adverse action framework, and **recording which occurred, when, and on what communication is what makes the treatment defensible.**
 
-### 2.2 Essential elements
+**An application quietly abandoned and never dispositioned is a file with a gap in it**, and it is the kind an examiner samples.
 
-The essential elements of income asset and liability information are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+### 1.7 Checkpoint
 
-### 2.3 Roles and duties
+You should be able to distinguish the three assessment levels, state what constitutes an application and what it triggers, and explain why structuring to avoid the trigger is a problem.
 
-Responsibility for income asset and liability information may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+## 2. Income, asset, and liability information
 
-### 2.4 Workflow
+### 2.1 The three categories
 
-A defensible workflow for income asset and liability information starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+| Category | What it establishes |
+|---|---|
+| **Income** | Capacity to repay |
+| **Assets** | Funds to close, reserves, and the source of both |
+| **Liabilities** | Existing obligations competing with the new payment |
 
-### 2.5 Documents and evidence
+**Each is verified rather than accepted**, and the verification is what distinguishes an application from a conversation.
 
-Documents connected with income asset and liability information must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 2.2 Income
 
-### 2.6 Quantitative and factual analysis
+**What is generally documented:** wage and salary income; self-employment income; bonus, commission, and overtime; retirement and Social Security; rental income; investment income; and other recurring receipts.
 
-Where income asset and liability information involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+**The recurring analytical questions:**
 
-### 2.7 California law and professional boundary
+**Is it stable?** Income that has recently begun, or that fluctuates, is assessed differently from steady salary. The lender's concern is whether it will continue.
 
-California law controls the licensed activity associated with income asset and liability information; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**Is it continuing?** Income with a known end — a contract, a benefit with a termination date, a temporary assignment — is treated differently.
 
-### 2.8 Consumer protection and fair access
+**Is it documented?** Stated income that cannot be documented is not income for underwriting purposes, whatever its reality.
 
-Consumer protection requires that income asset and liability information be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**Is it gross or net?** Ratios use **gross** income, and a borrower who reports take-home pay has given a different number than the one the analysis needs.
 
-### 2.9 Applied scenario
+### 2.3 Self-employment and variable income
 
-Scenario: during application, borrower information, and qualification, the file raises a question about income asset and liability information. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+The area where files most often go wrong, and where an originator's care matters most.
 
-### 2.10 Decision checklist
+**Self-employment income** is typically established from tax returns and business documentation over a period, with adjustments — which means the figure the borrower thinks of as his income and the figure underwriting uses can differ substantially, in either direction.
 
-Before treating income asset and liability information as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+**Commission and bonus income** is generally averaged over a period, and a borrower whose commission fell this year cannot be assessed on last year's figure alone.
 
-## 3. credit history and capacity
+**Rental income** is generally established from leases and tax returns, with a vacancy factor applied — so a borrower quoting gross rents is quoting a number that will be reduced.
 
-### 3.1 Concept and purpose
+> **A licensee who quotes a borrower a qualifying amount based on the borrower's own description of his self-employment income, without documentation, has set an expectation the file may not support.** The honest position is that the figure is preliminary until the documents are reviewed.
 
-credit history and capacity is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Application, borrower information, and qualification, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 2.4 Assets
 
-### 3.2 Essential elements
+**What is documented:** deposit accounts, investment accounts, retirement accounts, proceeds from a sale, gift funds, and business funds where permitted.
 
-The essential elements of credit history and capacity are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**Two questions attach to every asset:**
 
-### 3.3 Roles and duties
+**Is it there?** Documented by statements, generally covering a period rather than a single day.
 
-Responsibility for credit history and capacity may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**Where did it come from?** This is **sourcing**, and it is what a large recent deposit triggers.
 
-### 3.4 Workflow
+### 2.5 Large deposits and sourcing
 
-A defensible workflow for credit history and capacity starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+A deposit inconsistent with the borrower's documented income requires explanation, and the reason is substantive rather than bureaucratic.
 
-### 3.5 Documents and evidence
+> **An undisclosed loan deposited as though it were savings is a hidden obligation that undermines the entire capacity analysis.** The ratios computed on the borrower's documented debts would be wrong.
 
-Documents connected with credit history and capacity must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Legitimate sources are documented and accepted:** a sale, a bonus, a tax refund, a transfer between the borrower's own accounts, a documented gift.
 
-### 3.6 Quantitative and factual analysis
+**A gift and a loan are treated differently**, which is why a gift generally requires documentation that it is a gift with no repayment expected.
 
-Where credit history and capacity involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+**What a licensee must never do:** advise a borrower to deposit funds earlier so they "season," to break a deposit into smaller amounts, or to characterize a loan as a gift. **Each is a suggestion to defeat the verification**, and the last is a misrepresentation to the lender.
 
-### 3.7 California law and professional boundary
+### 2.6 Liabilities
 
-California law controls the licensed activity associated with credit history and capacity; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**What is captured:** installment debts, revolving accounts, other mortgages, student loans, alimony and child support, and obligations that will survive closing.
 
-### 3.8 Consumer protection and fair access
+**The recurring issues:**
 
-Consumer protection requires that credit history and capacity be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**Debts not on the credit report.** A private loan, a family obligation, an obligation guaranteed for someone else. **The borrower is asked, and the answer belongs on the application.**
 
-### 3.9 Applied scenario
+**Debts being paid by someone else.** A car loan a business pays, an obligation a former spouse was ordered to pay. **The treatment is an underwriting question**, and the documentation requirement is real.
 
-Scenario: during application, borrower information, and qualification, the file raises a question about credit history and capacity. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+**Debts about to be incurred.** A borrower planning to finance furniture or a vehicle before closing is planning to change the analysis, and Section 5 addresses it.
 
-### 3.10 Decision checklist
+**Contingent liabilities.** A co-signed obligation is an obligation, whatever the arrangement between the parties.
 
-Before treating credit history and capacity as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 2.7 What a licensee does with the information
 
-## 4. occupancy and property purpose
+**Collects it accurately**, records what the borrower said, and identifies what has been documented and what has not.
 
-### 4.1 Concept and purpose
+**Does not** decide what qualifies, compute what the underwriter will accept, tell a borrower which debts "won't count," or omit something because it seems immaterial.
 
-occupancy and property purpose is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Application, borrower information, and qualification, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+> **The application is a set of representations the lender relies on in pricing risk. Completeness is not a courtesy to the underwriter; it is the accuracy of the representation.**
 
-### 4.2 Essential elements
+### 2.8 Checkpoint
 
-The essential elements of occupancy and property purpose are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+You should be able to name what is verified in each category, explain why a large deposit requires sourcing, and state what a licensee must never suggest about deposits.
 
-### 4.3 Roles and duties
+## 3. Credit history and capacity
 
-Responsibility for occupancy and property purpose may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+### 3.1 What credit information does
 
-### 4.4 Workflow
+Credit history supports an assessment of the borrower's **willingness and demonstrated ability** to repay obligations. It sits alongside capacity — the income-and-obligations analysis of Section 5 — and collateral.
 
-A defensible workflow for occupancy and property purpose starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+The conventional framing is the **three C's**: **credit, capacity, and collateral.** Some add **capital** — the borrower's own funds in the transaction — and **conditions**, the economic and transactional context.
 
-### 4.5 Documents and evidence
+### 3.2 What a credit report contains
 
-Documents connected with occupancy and property purpose must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+Identifying information; accounts with balances, payment history, and status; public record and collection information where reported; and inquiries.
 
-### 4.6 Quantitative and factual analysis
+**Three things a licensee should understand about the data:**
 
-Where occupancy and property purpose involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+**It can be wrong.** Errors occur, and the borrower has rights to dispute them under the framework Lesson 07 develops.
 
-### 4.7 California law and professional boundary
+**It is a snapshot.** A report pulled today reflects what was reported through a date, and lenders commonly **re-check before funding.**
 
-California law controls the licensed activity associated with occupancy and property purpose; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**Inquiries are visible.** A borrower shopping with several lenders will show several inquiries, and the treatment of multiple mortgage inquiries within a window is a scoring question rather than a licensee's to explain in detail.
 
-### 4.8 Consumer protection and fair access
+### 3.3 Permissible purpose and authorization
 
-Consumer protection requires that occupancy and property purpose be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+A consumer report may be obtained only for a **permissible purpose**, and in this context that means the borrower's transaction.
 
-### 4.9 Applied scenario
+**Two disciplines:**
 
-Scenario: during application, borrower information, and qualification, the file raises a question about occupancy and property purpose. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+**Obtain and document authorization.** Pulling a report without one is a problem regardless of intention.
 
-### 4.10 Decision checklist
+**Do not pull a report for a purpose other than the transaction.** Curiosity, a favor, or evaluating someone who is not an applicant are not permissible purposes.
 
-Before treating occupancy and property purpose as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 3.4 What a licensee may and may not say about credit
 
-## 5. debt-to-income analysis
+**May:** explain what a credit report contains and that lenders use it; explain that scores exist and are produced by models; explain that the borrower has rights to obtain and dispute report information; and tell the borrower what the report actually shows.
 
-### 5.1 Concept and purpose
+**May not:** predict a score; tell a borrower what score he "needs," which states a threshold as a rule; promise that a particular action will raise a score; advise on repairing or disputing specific items as a strategy; or tell a borrower to close or open accounts to improve his position.
 
-debt-to-income analysis is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Application, borrower information, and qualification, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+> **The last two are where originators most often exceed the line**, because the advice feels helpful and the borrower is asking for it. Credit counseling is a distinct service, and telling a borrower to dispute accurate information is telling him to file a false dispute.
 
-### 5.2 Essential elements
+### 3.5 Adverse credit information
 
-The essential elements of debt-to-income analysis are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+Late payments, collections, charge-offs, judgments, foreclosures, short sales, and bankruptcies each carry their own treatment, and **waiting periods and requirements vary by program.**
 
-### 5.3 Roles and duties
+**The originator's job with adverse information is to surface it early and document the explanation.** A borrower with a five-year-old bankruptcy has a file that can be assembled; the same borrower whose bankruptcy surfaces at underwriting has a file that stalls.
 
-Responsibility for debt-to-income analysis may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**The letter of explanation** is a standard mechanism: the borrower explains the circumstance in his own words. **It is the borrower's statement**, and a licensee who drafts it for him has authored a representation the borrower will sign.
 
-### 5.4 Workflow
+### 3.6 Capacity, briefly
 
-A defensible workflow for debt-to-income analysis starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+Capacity is the income-and-obligations analysis of Section 5, and it interacts with credit: strong credit does not cure inadequate capacity, and strong capacity does not cure a pattern of nonpayment.
 
-### 5.5 Documents and evidence
+**Compensating factors** — reserves, a low loan-to-value, a long tenure, a modest payment increase — may support a file that is weak on one dimension. **Whether they do is an underwriting determination**, and a licensee who tells a borrower his reserves "will make up for" a credit issue has made it.
 
-Documents connected with debt-to-income analysis must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+### 3.7 Checkpoint
 
-### 5.6 Quantitative and factual analysis
+You should be able to state what a credit report contains and its limits, explain permissible purpose, and identify what a licensee may not say about credit.
 
-Where debt-to-income analysis involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+## 4. Occupancy and property purpose
 
-### 5.7 California law and professional boundary
+### 4.1 Why the determination carries so much
 
-California law controls the licensed activity associated with debt-to-income analysis; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**Occupancy — owner-occupied, second home, or investment — affects pricing, program eligibility, and which consumer protections apply.**
 
-### 5.8 Consumer protection and fair access
+> **It is therefore a material fact the lender relies on, and misstating it is loan fraud.**
 
-Consumer protection requires that debt-to-income analysis be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+**Property purpose** — consumer versus business — determines which body of requirements attaches, as Lesson 04 developed.
 
-### 5.9 Applied scenario
+### 4.2 The determination is factual
 
-Scenario: during application, borrower information, and qualification, the file raises a question about debt-to-income analysis. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+Occupancy is not a box the borrower selects. It is a fact about what will happen, and the application asks the borrower to represent it.
 
-### 5.10 Decision checklist
+**What supports the representation:** the borrower's current residence and its disposition; the distance to employment; the property's configuration; the presence or absence of leases; the borrower's stated plans and their plausibility; and, on a refinance, how the property has actually been used.
 
-Before treating debt-to-income analysis as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+### 4.3 The patterns that contradict a stated occupancy
 
-## 6. adverse information and accurate records
+| Pattern | What it suggests |
+|---|---|
+| A "primary residence" the borrower will not move into | Occupancy misrepresentation |
+| A second home in the same city as the primary residence | Investment property described otherwise |
+| A lease on the subject property dated **before** the application | The file contains its own contradiction |
+| A borrower who cannot describe the property's location relative to his work | A straw or absentee arrangement |
+| Multiple simultaneous "primary residence" applications | Coordinated misrepresentation |
+| Rental income from the subject property on the borrower's tax returns, on an owner-occupied refinance | The stated use is contradicted by the borrower's own filings |
+| A borrower who asks what occupancy "gets the best rate" | Selection by pricing rather than by fact |
 
-### 6.1 Concept and purpose
+**The lease and the tax return are different in kind from the others.** They are not ambiguities to be resolved by asking — **the file contains the evidence contradicting a material representation**, and the response is escalation rather than a judgment call.
 
-adverse information and accurate records is studied as an operating concept, not as a vocabulary label. The learner identifies the legal or transactional purpose of the concept, the people whose rights may be affected, and the point in a California real estate matter when the concept becomes important. In Application, borrower information, and qualification, the correct professional response begins by separating verified facts from assumptions. A licensee should avoid promising a legal result, use the approved or authorized process, and preserve enough evidence for a broker, instructor, regulator, or later reviewer to reconstruct the decision.
+### 4.4 The request an originator will receive
 
-### 6.2 Essential elements
+> A borrower says: "Can we put it down as owner-occupied? The rate is better and I can afford either payment anyway."
 
-The essential elements of adverse information and accurate records are the parties, property or obligation involved, the source of authority, required disclosures or documents, relevant timing, and the consequence of noncompliance. Students should ask what must exist, who must act, when action must occur, and what record proves completion. A label alone is insufficient. The same phrase can produce different results when ownership, occupancy, agency, loan purpose, or written consent changes. The lesson therefore uses a structured issue-fact-rule-application-conclusion method and requires the learner to identify missing facts before choosing a response.
+**The answer is no, and the reasoning must be stated because the borrower's framing is the wrong one.**
 
-### 6.3 Roles and duties
+**Affordability is beside the point.** The misstatement is not about whether he will pay. It is about **obtaining terms on a false representation of the risk the lender is pricing.**
 
-Responsibility for adverse information and accurate records may be divided among the principal, broker, salesperson, lender, escrow holder, title company, appraiser, property manager, attorney, public agency, or other specialist. A real estate professional must know the boundary of the license and the limits of delegated authority. The professional explains process accurately, makes required disclosures, follows supervision, and refers questions requiring legal, tax, engineering, appraisal, or other licensed judgment. Students practice naming the responsible party and documenting the referral instead of silently assuming another participant will perform the task.
+**Decline plainly, explain why, and record the loan as it actually is.** And note that the request itself belongs on the report-promptly list — not because the borrower is necessarily dishonest, but because the file now has a known pressure point on it.
 
-### 6.4 Workflow
+### 4.5 Legitimate changes of intent
 
-A defensible workflow for adverse information and accurate records starts with intake and identity, continues through fact collection and document review, and ends with confirmation, communication, and retention. The learner creates a chronology: when the issue was discovered, what source was consulted, what was disclosed, who received it, what decision followed, and how that decision was confirmed. Checklists support consistency but do not replace judgment. If facts conflict, the workflow pauses at the conflict; the student is trained to obtain clarification and broker or professional guidance before an irreversible deadline passes.
+A borrower's plans can genuinely change: a job relocation, a family change, a property that turns out not to work.
 
-### 6.5 Documents and evidence
+**A change of intent after closing is not fraud. A misrepresentation at application is.** The distinction is what the borrower intended **when he made the representation**, and the file should record the facts as they stood then.
 
-Documents connected with adverse information and accurate records must be read for content, not merely collected. Names, dates, property descriptions, signatures, amounts, attachments, delivery evidence, and version identifiers should reconcile across the file. Students distinguish a draft, an executed instrument, a disclosure acknowledgment, a receipt, and independent evidence. Electronic records require the same integrity as paper records. The course model preserves the submitted version, timestamp, actor, and any later amendment so that correction does not erase history. Missing or inconsistent evidence becomes a visible exception requiring resolution.
+**Where intent changes during the transaction, the application is corrected and the lender told.** A licensee who learns before closing that the borrower will not occupy and says nothing has adopted the misstatement.
 
-### 6.6 Quantitative and factual analysis
+### 4.6 Property type and use
 
-Where adverse information and accurate records involves money, time, area, ratios, or comparisons, the student states the known values, selects the correct unit, shows the calculation, and tests whether the result is reasonable. Where the issue is qualitative, the student creates the same discipline by distinguishing direct evidence, reported information, professional opinion, and inference. A correct number built on an unsupported assumption is not a compliant conclusion. The applied exercise requires a written explanation that another person could reproduce and a note identifying any fact that still requires verification.
+Beyond occupancy, the property's **type and use** drive eligibility and pricing: single-family, condominium, planned development, two-to-four units, manufactured housing, mixed use, and unique or non-conforming properties.
 
-### 6.7 California law and professional boundary
+**Two recurring issues:**
 
-California law controls the licensed activity associated with adverse information and accurate records; however, course discussion is education rather than legal advice for a particular transaction. Statutes, Commissioner's Regulations, DRE forms and publications, contract language, and broker policy perform different functions. Students are trained to identify which source is controlling and to check the current version before action. When an answer depends on facts or authority outside the licensee's competence, the compliant response is disclosure, supervision, and referral - not improvisation or concealment.
+**Condominium and planned development eligibility** depends on project characteristics — owner-occupancy ratios, budget and reserves, litigation, and concentration — and **a project can be ineligible even where the borrower is strong.**
 
-### 6.8 Consumer protection and fair access
+**Unpermitted space and conversions** affect value, insurability, and program eligibility. **A licensee who lets unpermitted square footage enter the file as living area has introduced an inaccuracy** that flows into the appraisal and the loan amount.
 
-Consumer protection requires that adverse information and accurate records be handled consistently, honestly, and without discrimination. The professional avoids steering, selective service, unsupported urgency, hidden conflicts, and explanations that obscure material costs or risks. Equal service does not mean ignoring disability-related accommodation or other legally relevant needs. Students compare treatment across similarly situated consumers, identify where discretion can introduce bias, and build objective criteria and written records. A consumer should be able to understand the material choice and the source of the professional's recommendation.
+### 4.7 Checkpoint
 
-### 6.9 Applied scenario
+You should be able to explain why occupancy is material, recognize the contradiction patterns, respond correctly to the request, and distinguish a change of intent from a misrepresentation.
 
-Scenario: during application, borrower information, and qualification, the file raises a question about adverse information and accurate records. One participant asks the licensee to proceed immediately and promises that a missing item will be corrected later. The learner must resist speed as a substitute for verification. The correct analysis identifies the missing fact, the affected party, the deadline, the source to consult, and the record to preserve. The student then drafts a neutral communication that describes what is known, what remains unresolved, and the next authorized step without accusing a party or predicting a legal outcome.
+## 5. Debt-to-income analysis
 
-### 6.10 Decision checklist
+### 5.1 The two ratios
 
-Before treating adverse information and accurate records as resolved, the student checks: identity and authority; complete and consistent facts; current governing source; required disclosure or consent; timing; objective calculation when applicable; delivery and receipt; broker or specialist escalation; and retention of the final record. If any item is absent, the issue remains open. Completion in the learning platform therefore requires both the instructional segment and the applied assignment. The checklist is a risk-control tool and a study aid, but the learner must still explain why each item matters in the particular scenario.
+| Ratio | Formula |
+|---|---|
+| **Front-end (housing)** | Housing expense ÷ **gross** monthly income |
+| **Back-end (total debt)** | Total monthly obligations ÷ **gross** monthly income |
+
+**Housing expense** conventionally means **PITI** — principal, interest, taxes, and insurance — plus association dues and mortgage insurance where applicable.
+
+**Total obligations** add the other recurring monthly debts.
+
+### 5.2 A worked computation
+
+> **Gross monthly income $9,000.**
+> Proposed PITI $2,520 (P&I $1,880, taxes $410, hazard $110, mortgage insurance $120); association dues $0.
+> Car payment $480; student loan $300; credit card minimums $120.
+>
+> **Front-end:** 2,520 ÷ 9,000 = **28.0%**
+> **Back-end:** (2,520 + 480 + 300 + 120) ÷ 9,000 = 3,420 ÷ 9,000 = **38.0%**
+
+### 5.3 The errors that produce wrong ratios
+
+1. **Using net income.** Ratios use **gross**. A borrower reporting take-home pay produces a ratio that is wrong in the borrower's favor.
+2. **Quoting P&I instead of PITI.** Omitting taxes, insurance, and mortgage insurance understates the housing ratio substantially — and in California **the tax line is most often understated**, because a buyer's taxes reset on the change in ownership rather than tracking the seller's bill.
+3. **Omitting association dues** on a condominium or planned development.
+4. **Omitting debts** that will survive closing.
+5. **Using a payoff assumption** that has not been arranged.
+6. **Averaging variable income incorrectly**, or using a peak year.
+
+> **Reasonableness check:** a 28% front-end on a $9,000 income implies a housing payment near $2,520. If the computed ratio implies a payment that does not resemble the loan being discussed, something is wrong.
+
+### 5.4 Thresholds
+
+**Thresholds vary by program, by compensating factors, and over time.**
+
+> **A licensee computes and explains the ratios, and never states a threshold as a rule.**
+
+Telling a borrower he "qualifies easily because 38% is under the 43% limit" does two things wrong at once: it states a threshold as a fixed rule, and it makes an **underwriting determination** the licensee is not authorized to make. A borrower who hears it writes an offer.
+
+### 5.5 Residual income and the limits of ratios
+
+Some programs consider **residual income** — what remains after housing, debts, and living expenses — which can produce a different assessment for a borrower with a high income and a high ratio, or the reverse.
+
+**Ratios are a screen, not a judgment.** They do not capture household size, geographic cost differences, income stability, or reserves. Underwriting considers more, which is why a file that "passes the ratios" can still be declined and one that does not can still be approved with compensating factors.
+
+### 5.6 What changes a ratio after application
+
+The events that jeopardize an approval, which **belong in a written note to the borrower at application** rather than being discovered later:
+
+| Borrower action | Effect |
+|---|---|
+| Opening new credit, financing furniture or a vehicle | Changes the debt-to-income analysis the approval rested on |
+| Changing or leaving a job | Employment is a condition; a change may end the approval |
+| Large unexplained deposits | Requires sourcing; may look like undisclosed borrowed funds |
+| Moving money between accounts | Complicates asset verification |
+| Paying off debt with funds needed to close | Reduces verified cash to close |
+| Missing a payment on any obligation | Affects credit at the re-check |
+| Co-signing for someone else | Adds a contingent liability |
+
+> **A short written note at application — do not open credit, change jobs, or move large sums without telling us first — prevents more failed transactions than any other single communication an originator sends.**
+
+### 5.7 The three numbers
+
+**What the borrower can borrow** — the lender's number.
+**What cash is available** — down payment, closing costs, reserves, moving costs, and the immediate costs of occupancy. Borrowers routinely plan to the down payment and forget the rest.
+**What the borrower is willing to pay monthly** — frequently lower than the first, and **the number that should drive the search.**
+
+**Where they conflict, the conflict is the conversation** — held early and deliberately, rather than discovered at the closing table.
+
+### 5.8 Checkpoint
+
+You should be able to compute both ratios, name the six errors that produce wrong ones, and state why a licensee never quotes a threshold.
+
+## 6. Adverse information and accurate records
+
+### 6.1 The standard
+
+> **The application is a set of representations the lender relies on in pricing risk. Its accuracy is not a courtesy to the underwriter — it is the representation itself.**
+
+Everything in this section follows from that.
+
+### 6.2 What must never happen to an application
+
+- **Altering a date, an amount, or an answer** the borrower gave.
+- **Omitting a debt, an obligation, or a property** the borrower disclosed.
+- **Recording income that has not been represented and cannot be documented.**
+- **Characterizing a loan as a gift**, or a business-purpose loan as consumer, or the reverse, to fit a product.
+- **Completing an item the borrower did not answer**, in the borrower's voice.
+- **Drafting a letter of explanation** and presenting it as the borrower's statement.
+- **Backdating anything.**
+
+**These are misrepresentations to a lender**, and most of them are committed in a moment of helpfulness on a file that "would qualify anyway."
+
+### 6.3 The instruction an originator will receive
+
+> A manager says: move the job change date earlier so the employment history reads better, and leave off the small consumer debt — it will not affect the ratios anyway.
+
+**Refuse. Do not transmit the file. Escalate to the responsible broker.**
+
+**Two justifications will be offered and neither works.** That the ratios would pass anyway — if that were true the alteration was unnecessary, and it was still made. And that the manager directed it — **following an improper instruction and documenting that it came from someone else does not transfer responsibility for the act. It documents that you knew.**
+
+### 6.4 Handling adverse information
+
+**Surface it early.** A bankruptcy, a foreclosure, a collection, a gap in employment, a recent job change, a debt not on the report — each is easier to address at application than at underwriting.
+
+**Document the explanation in the borrower's words**, dated.
+
+**Never characterize the outcome.** "That won't be a problem" is an underwriting conclusion, and a borrower who hears it stops looking at alternatives.
+
+**Never advise concealment.** A borrower who asks whether he has to mention something is asking a question with one answer.
+
+### 6.5 Corrections
+
+Where an error is discovered — by anyone, at any stage — it is **corrected immediately, in writing, to everyone who received the original**, and before anyone acts on it if that is still possible.
+
+**The instinct to wait and see whether it matters is the instinct that converts a mistake into a misrepresentation.** An error you know about and leave uncorrected is no longer an error.
+
+**Corrections are made visibly**, with the original preserved and the change attributable. **A record that can be silently altered is not a record.**
+
+### 6.6 What the file must contain
+
+- The application as taken, with the date, and every subsequent version.
+- What the borrower stated and what has been **documented**, distinguished.
+- Every document collected, with its source and date.
+- The credit authorization.
+- Explanations of adverse information, in the borrower's words, dated.
+- The disclosures delivered — what, to whom, when, by what method, with evidence.
+- Every communication material to a term or a decision.
+- Corrections issued, with the originals retained.
+- Anything the originator declined to do, and the escalation.
+
+### 6.7 The test
+
+> **Reconstructability: could a person who was not there determine what the borrower represented, what was documented, what was disclosed and when, and on what basis the file moved forward?**
+
+**A file that passes that test survives an examination even where it contains a problem. A file that does not fails even where it contains none**, because nobody can show what happened.
+
+### 6.8 Checkpoint
+
+You should be able to list what must never happen to an application, state the correct response to an improper instruction, and describe what the file must contain.
+
+## Key terms
+
+| Term | Definition |
+| --- | --- |
+| **Prequalification** | An informal assessment on stated information. Verifies nothing. |
+| **Preapproval** | A lender review of supporting information, subject to conditions. **Not a commitment to lend.** |
+| **Loan commitment** | Underwriting complete. More certainty, not immunity from changed circumstances. |
+| **Application (the six items)** | Name, income, Social Security number, property address, an estimate of value, and the loan amount sought. **Can exist before any form is completed.** |
+| **Structuring to avoid the trigger** | Deliberately withholding a request for one item to delay disclosures. The conduct the definition was written against. |
+| **What an application triggers** | Disclosure timing, adverse action obligations, retention, monitoring information collection, and the MLO endorsement requirement. |
+| **Incomplete versus withdrawn** | Different dispositions with different treatment. Record which occurred, when, and on what communication. |
+| **Gross income** | What ratios use. A borrower reporting take-home pay has given a different number. |
+| **Stability and continuance** | Whether income has a track record and whether it will continue. The two analytical questions applied to every income source. |
+| **Sourcing** | Documenting where funds came from. What a large deposit inconsistent with documented income triggers. |
+| **Undisclosed loan** | Funds deposited as though savings. **A hidden obligation that undermines the entire capacity analysis.** |
+| **Gift versus loan** | Treated differently. A gift generally requires documentation that no repayment is expected. |
+| **Contingent liability** | A co-signed obligation is an obligation, whatever the arrangement between the parties. |
+| **Three C's** | Credit, capacity, collateral — with capital and conditions sometimes added. |
+| **Permissible purpose** | The only basis on which a consumer report may be obtained. Authorization is obtained and documented. |
+| **Letter of explanation** | The borrower's statement in his own words. **A licensee who drafts it has authored a representation the borrower will sign.** |
+| **Compensating factors** | Strengths that may support a weak dimension. **Whether they do is an underwriting determination.** |
+| **Occupancy** | Owner-occupied, second home, or investment. A **material fact the lender relies on**; misstating it is fraud regardless of affordability. |
+| **File-contradicts-itself pattern** | A lease dated before the application, or rental income on the tax returns for an owner-occupied refinance. **Escalation, not a judgment call.** |
+| **Change of intent** | A genuine change after closing is not fraud; a misrepresentation at application is. Where intent changes during the transaction, the application is corrected and the lender told. |
+| **Project eligibility** | Condominium and planned development characteristics — occupancy ratios, budget and reserves, litigation, concentration — that can make a project ineligible even for a strong borrower. |
+| **PITI** | Principal, interest, taxes, insurance — plus dues and mortgage insurance. **What the housing ratio uses**, not P&I. |
+| **Front-end / back-end ratio** | Housing ÷ gross income; total obligations ÷ gross income. |
+| **Residual income** | What remains after housing, debts, and living expenses. Considered by some programs, and a reminder that ratios are a screen rather than a judgment. |
+| **The start-of-file warning** | The written note about credit, employment, and moving funds. Prevents more failed transactions than any other single communication. |
+| **The three numbers** | What he can borrow, what cash exists, and what he is willing to pay monthly — the third being the one that should drive the search. |
+| **Correction obligation** | Immediately, in writing, to everyone who received the original, before reliance. Made visibly, with the original preserved. |
+| **Reconstructability** | Could a person who was not there determine what was represented, documented, disclosed, and decided. |
+
+## Practice problems
+
+### Problem 1
+
+An originator has, over two emails and a phone call, obtained a prospect's name, income, Social
+Security number, property address, an estimate of value, and the requested loan amount. He has not sent
+a form. His manager says the disclosure clock does not start "until she signs the application," and
+suggests holding off on asking for the property address on future files "so we get more time."
+
+**Assess both.**
+
+> **Solution.** **An application likely already exists**, and no form was needed. Under the federal
+> framework an application is generally understood to exist when the creditor has the information needed
+> to evaluate the request — conventionally the **six items**, all of which he has. **The disclosure clock
+> does not wait for a signature.**
+>
+> **The manager's suggestion is worse than a misunderstanding.** Deliberately withholding a request for
+> one of the items in order to delay disclosures is **structuring to avoid the trigger** — exactly the
+> conduct the definition was written against, and a compliance problem rather than a technique.
+>
+> **Taking an application triggers more than disclosure timing:** adverse action obligations if the
+> request is denied, record retention, government monitoring information collection where applicable,
+> and **the MLO endorsement requirement itself.**
+>
+> **Whether a particular set of facts constitutes an application is a compliance question** the firm must
+> answer with a written policy — not one an originator resolves case by case, and certainly not one a
+> manager resolves by adjusting what gets asked.
+
+### Problem 2
+
+A borrower shows a preapproval letter and tells his agent he is "approved." The originator confirms it.
+The letter states no income or asset documentation was reviewed, lists six outstanding conditions, and
+expires in nine days.
+
+**Correct the description and state what the letter establishes.**
+
+> **Solution.** **A preapproval is not an approval, and neither is a commitment to fund.**
+>
+> **Prequalification** rests on largely stated information and establishes a rough range while
+> **verifying nothing.** **Preapproval** is a lender review of supporting information establishing a
+> likely amount **subject to conditions** — **not a commitment to lend.** A **loan commitment** follows
+> completed underwriting and provides substantially more certainty, and still not immunity from changed
+> circumstances.
+>
+> **None guarantees funding.** All remain contingent on the property, the appraisal, and the borrower's
+> circumstances holding through funding.
+>
+> **This particular letter establishes very little.** Nothing was documented, six conditions remain, and
+> it expires in nine days — and the seller's agent will read it exactly that way.
+>
+> **A licensee who tells a borrower he is "approved" has misdescribed the file's status**, and the
+> borrower will write an offer on that description.
+
+### Problem 3
+
+A self-employed borrower says his income is "about $18,000 a month." His returns show substantially
+less after adjustments. He also has $52,000 that appeared in his checking account three weeks ago. His
+brother lent it to him for the down payment, and he asks whether he should have deposited it sooner "so
+it seasons," or split it into smaller amounts.
+
+**Address the income and every part of the deposit question.**
+
+> **Solution.** **On income: the figure is preliminary until the documents are reviewed, and the
+> originator should have said so before quoting anything.** Self-employment income is typically
+> established from tax returns and business documentation over a period, **with adjustments** — which
+> means the number the borrower thinks of as his income and the number underwriting uses can differ
+> substantially, in either direction. Quoting a qualifying amount from the borrower's own description
+> sets an expectation the file may not support.
+>
+> **On the deposit: it must be sourced, and the source is the problem.** A deposit inconsistent with
+> documented income triggers sourcing for a substantive reason — **an undisclosed loan deposited as
+> though it were savings is a hidden obligation that undermines the entire capacity analysis**, because
+> the ratios computed on his documented debts would be wrong.
+>
+> **A gift and a loan are treated differently.** This is a loan from his brother, and it is a liability.
+>
+> **Both suggestions must be declined plainly.** Advising him to deposit funds earlier so they "season,"
+> or to break a deposit into smaller amounts, is **advising him to defeat the verification** — and
+> characterizing the loan as a gift would be a misrepresentation to the lender. The correct path is to
+> disclose the loan, document its terms, and let underwriting treat it as what it is.
+
+### Problem 4
+
+A borrower asks his originator what credit score he needs, whether disputing three accurate late
+payments would help, whether closing two old cards would raise his score, and whether his $80,000 in
+reserves will "make up for" the collection on his report.
+
+**Answer each.**
+
+> **Solution.** **All four are outside the line, and the originator should say so rather than guessing
+> helpfully.**
+>
+> **"What score do I need" states a threshold as a rule.** Requirements vary by program, by compensating
+> factors, and over time. A licensee explains that scores exist and are produced by models — and does
+> not predict one or name a number the borrower will rely on.
+>
+> **Disputing accurate information is filing a false dispute.** Advising it is not a service. What a
+> licensee may do is explain that the borrower has rights to obtain and dispute report information, and
+> tell him what the report actually shows.
+>
+> **Closing accounts is credit strategy advice.** Promising that a particular action will raise a score
+> is a prediction about a model, and credit counseling is a distinct service.
+>
+> **The reserves question asks for an underwriting determination.** **Compensating factors** — reserves,
+> a low loan-to-value, long tenure, a modest payment increase — may support a file weak on one dimension,
+> **but whether they do is underwriting's call.** Telling him his reserves will make up for the
+> collection makes it for them, and he will stop considering alternatives.
+>
+> **What the originator does instead:** surface the collection now, get the explanation in the
+> borrower's own words and dated, and let underwriting decide. **Early is cheap; at underwriting it
+> stalls the file.**
+
+### Problem 5
+
+A borrower says: "Can we put it down as owner-occupied? The rate's better and I can afford either
+payment anyway." The subject property is a rental in a city three hours from his job, his tax returns
+show rental income from it, and there is a lease in the file dated a month before the application.
+
+**Respond, and identify what is different in kind here.**
+
+> **Solution.** **The answer is no, and his framing is the wrong one.**
+>
+> **Affordability is beside the point.** Occupancy affects pricing, program eligibility, and which
+> consumer protections apply, which makes it **a material fact the lender relies on.** The misstatement
+> is not about whether he will pay — it is about **obtaining terms on a false representation of the risk
+> the lender is pricing.** That is loan fraud.
+>
+> **Decline plainly, explain why, and record the loan as it actually is.** The request itself belongs on
+> the report-promptly list — not because he is necessarily dishonest, but because the file now has a
+> known pressure point on it.
+>
+> **The lease and the tax returns are different in kind from the rest.** The distance from his job and
+> the "rate's better" framing are facts to weigh. **The lease dated before the application and the rental
+> income on his own filings are not ambiguities to resolve by asking — the file contains the evidence
+> contradicting a material representation.** The response is **escalation**, not a judgment call about
+> whether it matters.
+>
+> Worth distinguishing: **a genuine change of intent after closing is not fraud; a misrepresentation at
+> application is.** And where intent changes during the transaction, the application is corrected and the
+> lender told — a licensee who learns before closing that the borrower will not occupy and says nothing
+> has **adopted the misstatement.**
+
+### Problem 6
+
+Compute both ratios. Gross monthly income $9,000. P&I $1,880; property taxes $410; hazard $110;
+mortgage insurance $120; condominium dues $340. Car $480; student loan $300; card minimums $120. The
+originator computed a 21% front-end using P&I only, quoted the seller's current property tax figure,
+and told the borrower he "qualifies easily, well under the 43% limit."
+
+**Compute correctly and identify every error.**
+
+> **Solution.** **Housing expense is PITI plus dues and mortgage insurance:** 1,880 + 410 + 110 + 120 +
+> 340 = **$2,860.**
+>
+> **Front-end:** 2,860 ÷ 9,000 = **31.8%** — not 21%.
+> **Back-end:** (2,860 + 480 + 300 + 120) ÷ 9,000 = 3,760 ÷ 9,000 = **41.8%.**
+>
+> **Three errors.** **Quoting P&I instead of PITI** understated the housing ratio by nearly eleven
+> points. **Omitting the condominium dues** compounded it. And **the California property tax figure is
+> the one most often understated**, because a buyer's taxes reset on the change in ownership rather than
+> tracking the seller's bill — so $410 may itself be low, and the estimate belongs with the county
+> assessor.
+>
+> **The qualifying statement is a fourth error and the most consequential.** It **states a threshold as a
+> fixed rule** and makes an **underwriting determination** the licensee is not authorized to make.
+> Thresholds vary by program, by compensating factors, and over time — and a borrower who hears
+> "qualifies easily" writes an offer.
+>
+> **Reasonableness check:** a 21% front-end on $9,000 implies a housing payment near $1,890, which does
+> not resemble the loan being discussed. That mismatch should have caught the error before the borrower
+> did.
+
+### Problem 7
+
+Three weeks into processing, a borrower finances $9,000 of furniture, moves $22,000 between accounts,
+pays off his car with part of his down payment funds, and co-signs a lease for his daughter. The
+originator learns all of it the week before closing.
+
+**Assess each and state what should have happened at application.**
+
+> **Solution.** **All five attack the file the approval rested on, and one of them is a liability the
+> borrower would not have thought to mention.**
+>
+> **Financing furniture** changes the debt-to-income analysis. **Moving $22,000 between accounts**
+> complicates asset verification and may require sourcing. **Paying off the car with closing funds**
+> solves one ratio by breaking another — it reduces verified cash to close. **Co-signing** adds a
+> **contingent liability**, and a co-signed obligation is an obligation whatever the arrangement between
+> the parties.
+>
+> Underlying all of it: an approval rests on the file **as underwritten**, and lenders commonly
+> **re-check credit and employment before funding.** A credit report is a snapshot through a date.
+>
+> **What should have happened at application is a short written note:** *do not open credit, change
+> jobs, or move large sums without telling us first.* Also on that list: leaving a job and missing a
+> payment on any obligation.
+>
+> **That single communication prevents more failed transactions than any other an originator sends** —
+> and sent at application it costs nothing, while learned the week before closing it costs the closing.
+
+### Problem 8
+
+A branch manager tells an originator to move a job-change date three months earlier "so the employment
+history reads better," to leave off a $2,300 consumer debt that "won't affect the ratios anyway," and
+to write the letter of explanation for the borrower's old collection "since you know what underwriting
+wants to hear."
+
+**Respond to each, and state what does not protect him.**
+
+> **Solution.** **Refuse all three, do not transmit the file, and escalate above the manager.**
+>
+> **Altering a date is changing a fact**, not tidying. **The application is a set of representations the
+> lender relies on in pricing risk**, and its accuracy is not a courtesy to the underwriter — it is the
+> representation itself.
+>
+> **Omitting the debt is a misrepresentation**, and the size does not matter. Note the self-defeating
+> justification: if the ratios would pass anyway, **the omission was unnecessary — and it was still
+> made.**
+>
+> **Drafting the letter of explanation is authoring a representation the borrower will sign.** It is
+> **the borrower's statement, in his own words, dated.** Writing what underwriting "wants to hear" is
+> composing testimony.
+>
+> **What does not protect him:** doing any of it and documenting that the manager directed it.
+> **Following an improper instruction and documenting that it came from someone else does not transfer
+> responsibility for the act. It documents that you knew.**
+>
+> **What the file should show instead:** the application as taken with its date and every subsequent
+> version; what the borrower stated and what was **documented**, distinguished; the credit authorization;
+> the explanation in the borrower's words; the disclosures delivered with evidence; corrections issued
+> with originals retained; and **what he declined to do, and the escalation.**
+
+## Chapter summary
+
+**Prequalification verifies nothing, preapproval is not a commitment, and no level guarantees funding.**
+
+**An application exists when the six items are in hand** — before any form is signed — and it triggers
+disclosure timing, adverse action obligations, retention, monitoring collection, and the endorsement
+requirement. **Structuring to avoid the trigger is a compliance problem, not a technique.**
+
+**Income is tested for stability, continuance, and documentation, and ratios use gross.** Self-employment
+and variable income routinely differ from what the borrower believes, so nothing is quoted as final
+before the documents are read.
+
+**Every asset raises two questions: is it there, and where did it come from.** An undisclosed loan
+deposited as savings is a hidden obligation that undermines the whole analysis, and **advising a borrower
+to season, split, or recharacterize funds is advising him to defeat the verification.**
+
+**Liabilities include what the report does not show** — private loans, obligations others pay, and
+co-signed debts.
+
+**Credit is one of three C's, the report can be wrong and is a snapshot, and a report may be pulled only
+for a permissible purpose with documented authorization.**
+
+**Never predict a score, name a required score, advise disputing accurate items, or promise that
+reserves will offset a weakness** — the last is an underwriting determination.
+
+**Surface adverse information early and document the explanation in the borrower's own words.**
+
+**Occupancy is a material fact and misstating it is fraud regardless of affordability.** Learn the
+contradiction patterns, and treat a file containing its own evidence against a representation as an
+escalation.
+
+**A change of intent is not a misrepresentation — but where intent changes during the transaction, the
+application is corrected and the lender told.**
+
+**Compute both ratios on PITI plus dues, using gross income**, and never state a threshold as a rule.
+Ratios are a screen, not a judgment.
+
+**Send the written warning at application** about credit, employment, and moving funds.
+
+**The application's accuracy is the representation.** Alter nothing, omit nothing, author nothing in the
+borrower's voice, correct immediately and visibly — and build a file a person who was not there could
+reconstruct.
 
 ## Required applied assignment
 
-Prepare a one-page file memorandum for the applied scenario. Identify the issue, controlling source category, missing facts, affected parties, required action, deadline, communication, escalation, and retained evidence. The instructor version contains a scoring rubric.
+Prepare a one-page file memorandum for the applied scenario presented with this assignment. State whether an application exists on the facts given and what that triggers, identify every item of income, asset, and liability information and state what must be documented rather than accepted, identify any deposit requiring sourcing and what you would ask, state the occupancy and purpose determination and the facts it rests on, identify anything in the file that contradicts a representation and what you would do about it, compute both ratios showing your components, identify every statement you would decline to make and why, draft the written warning you would send at application, and list what the file must contain for the application to be reconstructable. The instructor version contains the scoring rubric.
 
 ## Knowledge check and remediation
 
-Complete the five-item lesson quiz in the secure LMS. An incorrect response opens targeted remediation: an alternate explanation, a parallel example, and a new item on the same concept. The 80% lesson mastery threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
+Complete the five-item lesson quiz in the secure learning platform. The lesson mastery threshold is 80 percent — four of the five items. An unsuccessful attempt opens targeted remediation: an alternate explanation of the concepts, a second worked scenario, and a different five-item set covering the same concepts. The 80 percent threshold is a StateCourse instructional policy proposed for DRE review; it is not represented as a DRE-mandated score.
 
 ## Assignment completion
 
-Completion requires all instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.
+Completion requires all six instructional segments, the applied memorandum, the quiz submission, and any triggered remediation. Assignment completion does not waive the separate final examination, minimum elapsed-time, identity, proctor, or approval requirements.

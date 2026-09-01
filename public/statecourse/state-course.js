@@ -9,22 +9,16 @@ const escapeHtml = (value = "") => String(value)
   .replaceAll("'", "&#039;");
 
 function renderCourse(course) {
-  const setText = (selector, value) => {
-    const node = document.querySelector(selector);
-    if (node) node.textContent = value;
-  };
   document.querySelectorAll("[data-hours]").forEach((node) => { node.textContent = `${course.required_hours} hours`; });
   document.querySelectorAll("[data-course-title]").forEach((node) => { node.textContent = course.title; });
-  setText("[data-regulator]", course.regulator);
-  setText("[data-delivery]", course.delivery);
-  setText("[data-module-count]", `${course.modules.length} modules`);
-  const moduleList = document.querySelector("[data-module-list]");
-  if (!moduleList) return;
-  moduleList.innerHTML = course.modules.map((module, index) => `
+  document.querySelector("[data-regulator]").textContent = course.regulator;
+  document.querySelector("[data-delivery]").textContent = course.delivery;
+  document.querySelector("[data-module-count]").textContent = `${course.modules.length} modules`;
+  document.querySelector("[data-module-list]").innerHTML = course.modules.map((module, index) => `
     <article class="framework-module">
       <span>${String(index + 1).padStart(2, "0")}</span>
       <div><p>${escapeHtml(module.id)}</p><h3>${escapeHtml(module.title)}</h3></div>
-      <div class="framework-module-action"><strong>${escapeHtml(module.hours)} ${module.hours === 1 ? "hour" : "hours"}</strong><a href="/student/course-preview/?course_id=${encodeURIComponent(course.course_id)}&assignment=${index + 1}">Read lesson preview →</a></div>
+      <strong>${escapeHtml(module.hours)} ${module.hours === 1 ? "hour" : "hours"}</strong>
     </article>`).join("");
 }
 

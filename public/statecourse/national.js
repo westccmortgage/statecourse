@@ -138,8 +138,12 @@ function initializeIntroVideo() {
 function updateGoalOptions(intent) {
   const options = {
     licensed: [["first-license", "First real estate license"], ["broker", "Broker education"], ["requirements", "Understand requirements"]],
-    exam: [["exam-prep", "State licensing exam preparation"], ["free-practice", "Free practice questions"], ["exam-rules", "Understand the state exam"]],
-    renew: [["ce", "Continuing education"], ["renewal-rules", "Understand renewal requirements"], ["certificates", "Find my certificates"]],
+    /* Two of these options used to name products that exist in no jurisdiction — a
+       practice-question bank and a certificate lookup — and neither destination page
+       could honour them. Each option now describes something the destination can
+       actually answer for the selected state. */
+    exam: [["exam-rules", "Understand my state's examination"], ["exam-education", "See the education required before the exam"], ["exam-availability", "Check StateCourse exam preparation availability"]],
+    renew: [["renewal-rules", "Understand my state's renewal requirements"], ["ce-availability", "Check StateCourse continuing-education availability"], ["ce-regulator", "Find the regulator's renewal instructions"]],
   };
   goalSelect.innerHTML = options[intent].map(([value, label]) => `<option value="${value}">${label}</option>`).join("");
 }
@@ -149,7 +153,7 @@ async function loadStates() {
     const response = await fetch(new URL("data/state-registry.json", platformRoot));
     if (!response.ok) throw new Error("State registry unavailable");
     const { states } = await response.json();
-    const jurisdictions = [...states, { state_name: "District of Columbia", state_code: "DC" }].sort((a, b) => a.state_name.localeCompare(b.state_name));
+    const jurisdictions = [...states].sort((a, b) => a.state_name.localeCompare(b.state_name));
     stateSelect.insertAdjacentHTML("beforeend", jurisdictions.map((state) => `<option value="${state.state_code}" data-slug="${slugify(state.state_name)}">${state.state_name}</option>`).join(""));
   } catch (error) {
     console.error(error);

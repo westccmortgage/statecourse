@@ -1,0 +1,4 @@
+StateCourse California student course engine
+Deployment trigger: 2026-08-17T08:12:00Z
+Courses: ca-real-estate-principles-45, ca-real-estate-practice-45, ca-mortgage-loan-brokering-lending-45
+Status: QA non-credit; DRE approval pending

@@ -1,0 +1,385 @@
+{
+  "freezeId": "LOA-CONTENT-FREEZE-2026-08-30-v6",
+  "courseId": "tx-law-of-agency-30-v1",
+  "approvalForm": "LOA-1 rev 09/11/2024",
+  "frozenOn": "2026-08-30",
+  "breakHistory": [
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v4",
+      "on": "2026-08-30",
+      "module": "NONE — all twelve module hashes are byte-identical",
+      "change": "The source register was re-derived against the current claim audit with corrected block attribution. 314 unit-level attributions moved across 127 sections, twelve sections were newly registered, 23 read-but-no-longer-cited sections were marked, and registered sources went 55 -> 58.",
+      "reason": "The register's unit map had been derived from a 2,217-row claim audit while the audit on disk held 1,975 — it described a curriculum the reduction passes had already changed. Separately, the attribution rule assigned each citation to the nearest preceding unit heading, and both the module recap and the optional reference section sit AFTER the last unit heading, so every module's final unit was absorbing them: 449 recap and 117 optional-reference citations landing on units that do not teach them.",
+      "foundBy": "the block-map objective review, which noticed 1101.804 attributed to a unit whose module contains zero occurrences of it",
+      "classOfDefect": "evidence — no curriculum wording changed and no legal claim was mis-stated, but the register's account of which unit relies on which source was wrong",
+      "auditsReRun": [
+        "node scripts/texas-source-inventory.mjs — 58/58 sources verified against disk",
+        "unit coverage — 57/57 held, 0 excused, 0 uncovered, every unit still carrying controlling and not merely guidance support",
+        "no unit sourced only through optional-reference material, and no section supported only by recap or only by optional citations",
+        "node --test tests/*.test.mjs"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v3",
+      "on": "2026-08-30",
+      "module": "NONE — no curriculum file changed and all twelve module hashes are byte-identical to the ones v3 carried. Nothing under texas/tx-law-of-agency-30-v1/curriculum/ was opened for writing.",
+      "change": "This freeze stopped hashing the video instruction plan directly and started hashing the video freeze artifact instead. The artifact entry 'video instruction plan' (texas/tx-law-of-agency-30-v1/video-instruction-plan.md) is replaced by 'video plan freeze' (texas/tx-law-of-agency-30-v1/video-plan-freeze.json), written by the new scripts/freeze-loa-video-plan.mjs under the id LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2. That video freeze hashes the plan, the three production files, the three caption .vtt files, the held IABS 1-2 form and OC.1101 statute, the source inventory, the three block maps the videos name, the new validator, and the block-map generator core. Two artifacts also gained content at the same moment: the video plan itself was corrected to plan v2 (nine narration repairs, one statutory repair, seven coordinate corrections and one duration inconsistency, all previously stranded in an unhashed addendum), and the addendum was marked SUPERSEDED review history.",
+      "reason": "The structural cause of a deadlock, removed. A video plan is not curriculum, and correcting a video should never require breaking a curriculum freeze — but while this freeze hashed the plan directly, it did. That is not hypothetical: an earlier pass found real defects in the three video packages (the worst dropped 'unless required to do so by law' from a confidentiality rule while the highlight box was showing the student that very exception), edited the plan to record them, saw this freeze report drift, correctly reversed the edit byte for byte, and parked the corrections in an unhashed addendum. The result was a hashed canonical plan carrying known defects and an unhashed file carrying the fixes — fine as review history, not acceptable as a production package, because a renderer consulting the canonical files would have reproduced the defects. Indirection fixes the cause: the curriculum freeze still pins the video state exactly, because any change to any video artifact changes the video freeze and therefore this hash, but it pins it through a stable pointer that the video freeze owns.",
+      "whyTheFreezeIdIS_Bumped": "Because the artifact changed. content-freeze.json's artifacts map loses one key and gains another, with a different path and a different hash. Re-taking under v3 would make an id denote two byte-states, and an id that denotes two byte-states is not an identifier — anyone verifying against v3 could not tell which of the two they held. That reasoning has already been applied once in this history, to the v2 -> v3 bump, and it applies here for the same reason and with less room for argument, since this time the artifacts map itself is structurally different.",
+      "curriculumUnchanged": "All twelve module sha256 values are identical to v3's. So are the LOA-1 outline, the source register, the quotation ledger, the claim audit, the time evidence, the misconception checks, the time budget, the structural generator and the salvage audit. The only difference between the v3 and v4 artifacts is the video entry and the freeze id.",
+      "foundBy": "the consolidation pass, reading the addendum's own account of why it existed",
+      "classOfDefect": "structural — the freeze boundary was drawn in the wrong place, so a correct edit to a video could not land",
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs — 8/8 checks pass; 5 are partial by nature and say so in their own output",
+        "node scripts/freeze-loa-video-plan.mjs --write — LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2, 16 artifacts",
+        "node scripts/texas-source-inventory.mjs — 55 registered sources resolve",
+        "node scripts/check-loa-module-structure.mjs — 57/57 units, no structural failures",
+        "node scripts/audit-loa-claims.mjs — unchanged, the twelve modules are byte-identical",
+        "node scripts/report-loa-time-evidence.mjs — unchanged for the same reason",
+        "node --test tests/*.test.mjs"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v2",
+      "on": "2026-08-30",
+      "module": "NONE — no curriculum file changed and all twelve module hashes are byte-identical",
+      "change": "The source register grew from 51 to 55 registered sources when 22 TAC 535.55, 535.62, 535.63, 535.64 and 535.65 were registered as the controlling assessment and delivery authority, plus the Texas Register capture that supplies their subsection lettering.",
+      "reason": "A freeze artifact that hashes the source register changes when that register changes. The agent that made the change re-took the freeze under the SAME id, reasoning that no curriculum wording moved. That reasoning is half right and the conclusion is wrong: an id that denotes two different byte-states is not an identifier, and anyone verifying against v2 could not tell which of the two they held. The distinction between a curriculum change and an evidence change is real and is recorded here — it is why this entry names no module — but the answer to it is a version bump carrying that distinction, not a silent re-take.",
+      "foundBy": "reviewing the agent's own report, which disclosed the re-take rather than hiding it",
+      "classOfDefect": "provenance — nothing was mis-stated, but the artifact's identity had stopped being unique",
+      "auditsReRun": [
+        "node scripts/texas-source-inventory.mjs — 55 registered sources resolve, every controlling source present",
+        "node scripts/check-loa-module-structure.mjs — 57/57 units, no structural failures",
+        "node scripts/audit-loa-claims.mjs — unchanged, the twelve modules are byte-identical",
+        "node scripts/report-loa-time-evidence.mjs — unchanged for the same reason",
+        "node --test tests/*.test.mjs"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30",
+      "on": "2026-08-30",
+      "module": "module-04.md (T04 Seller Agency)",
+      "change": "22 TAC § 535.2(g) -> § 535.2(f), two occurrences, for the rule that listings and other agreements for real estate brokerage services must be solicited and accepted in a broker's name.",
+      "reason": "The subsection letter was wrong. The held rule file prints no subsection letters, so they are derived by ordinal position; that derivation is anchored by the rule's own internal cross-references to 'subsection (e)' for delegation and 'subsection (h)' for records, and it puts the listings rule at (f) and the sponsored agent's advertising compliance at (g). Modules 01, 02 and 09 all cite (f); module 04 was the outlier. A student looking up § 535.2(g) would have found the advertising rule.",
+      "foundBy": "the block-map author, reading all twelve modules to write the 57 unit objectives",
+      "whyTheMechanicalAuditMissedIt": "The claim auditor resolves '22 TAC § 535.2' to its held file and verifies the section is present. It does not verify a subsection letter, because the held file carries none. This is a known coverage limit of the tool, not a lapse in its operation, and it is why a human-scale read of the corpus still finds things enumeration cannot.",
+      "classOfDefect": "citation-only — the quoted text is verbatim and the proposition is correct; only the subsection identifier was wrong. Nothing downstream mis-taught a rule.",
+      "auditsReRun": [
+        "node scripts/check-loa-module-structure.mjs — 57/57 units, no structural failures",
+        "node scripts/audit-loa-claims.mjs — 1,974 of 1,975 MECHANICAL_PASS, the one identified-not-taught unchanged",
+        "node scripts/report-loa-time-evidence.mjs — layer 1 1512.4, layer 2 20.0, layer 3 1532.4, every topic at or above its allocation",
+        "node scripts/texas-source-inventory.mjs — every registered source resolves",
+        "quotation reconcile — 126 unmatched, 0 undispositioned, 0 defects, 0 orphaned, 0 resurfaced",
+        "node --test tests/*.test.mjs — assessment-dependency and block-coverage suites"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v2",
+      "on": "2026-08-30",
+      "module": "NONE — no curriculum file changed, and all twelve module hashes are byte-identical to the ones this freeze already carried.",
+      "change": "config/texas/law-of-agency-statute-sources.mjs, which this freeze hashes as the 'source register', gained the five 22 TAC rules that govern the course as a course rather than its law: §§ 535.62, 535.63 and 535.65 were registered for the first time, and §§ 535.55 and 535.64 were rewritten from one-line records to subsection-level ones. Registered sources 51 -> 55 (the fifth addition is the Secretary of State's Texas Register capture, at tier contextual, which is where the subsection lettering of §§ 535.62 and 535.65 is read from). Unit coverage is untouched at 57/57 because none of these rules is cited by any unit: they control artefacts, and the artefact each subsection controls is named on its record and inverted into ASSESSMENT_AND_DELIVERY_CONTROLS.",
+      "reason": "Assessment authoring starts now. The register deliberately omitted §§ 535.62, 535.63 and 535.65 while there was no assessment engine, instructor dossier or delivery-control artefact for them to be controlling over; carrying that omission into the assessment build would mean an acceptance package that leaves out the rules governing its own examinations, passing score, retakes, proctoring and record retention.",
+      "foundBy": "the assessment-rule registration pass, working from the register's own note instructing that the three rules be added when an LOA assessment or provider artefact is built",
+      "whyTheFreezeIdIsNOTBumped": "The freeze exists so that no CURRICULUM WORDING changes silently. Nothing in the curriculum changed: the twelve module hashes are identical, the claim audit, time evidence and quotation reconcile are unchanged, and the LOA-1 outline, misconception checks, time budget and quotation ledger all hash the same. What changed is the evidence layer's own completeness, in a direction that only adds sourced records, and the diff of content-freeze.json states it in one line: registeredSourcesVerified 51/51 -> 55/55. Bumping the id would also strand the twelve block-map files, which name the freeze in prose.",
+      "auditsReRun": [
+        "node scripts/texas-source-inventory.mjs — exit 0; 55/55 law-of-agency sources verified against disk, every controlling source present",
+        "node --test tests/*.test.mjs — 1007 tests, 0 failures",
+        "register load-time invariants — every hash recomputed from disk, the five rules cross-checked against config/texas/trec-rules-source-lock.mjs, the Texas Register capture cross-checked against regulatory-manifest.mjs, and every artefact a rule is registered as controlling either exists on disk or is marked planned:",
+        "unit coverage 57/57 held, 0 uncovered, 0 controlling gaps"
+      ]
+    },
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v5",
+      "on": "2026-08-30",
+      "module": "NONE — no curriculum file changed, and all twelve module hashes are byte-identical to the ones v5 carried.",
+      "change": "config/texas/law-of-agency-statute-sources.mjs, which this freeze hashes as the 'source register', carried a GAPS entry that overstated its own reach. The iabs-1-2-form-text-held-after-authoring gap said EIGHT units state that the text of TREC No. IABS 1-2 is held but not taught, and listed T01U3, T02U5, T03U1, T04U5, T05U6, T06U5, T07U1 and T08U1. Re-derived against the frozen text, FOUR units make that statement: T02U5, T06U5, T07U1 and T08U1. The other four discuss the notice and teach it through 22 TAC § 531.20 and Occupations Code § 1101.558(b-1) without saying anything about the form's own text, which is the posture the gap itself describes as correct. The count and the list are corrected; the gap's substance is unchanged, and no curriculum wording moved.",
+      "reason": "A gap record is a claim about the curriculum, and this one was a claim the curriculum did not support. Eight was not a number anybody had re-derived; four is, and the entry now says so in its own text so that a reader is not left comparing a corrected list against a remembered count.",
+      "foundBy": "the GAPS[].affectedUnits reconciliation deferred during the source-register re-derivation: each gap's affected units were checked for a not-held statement in that unit's own frozen text, and this was the single mismatch out of twenty gaps.",
+      "whyTheFreezeIdISBumped": "The register is one of the artifacts this freeze hashes, so its bytes changed and the id must change with them: an id that denotes two byte-states is not an identifier. The v2 break declined to bump for a register change that only ADDED sourced records, on the reasoning that the evidence layer had grown rather than that a recorded claim had been wrong. This one is different in kind - a recorded claim was inaccurate and is being corrected - and a correction is exactly what a version is for.",
+      "auditsReRun": [
+        "node scripts/audit-loa-claims.mjs - 1,975 citations, 1,974 mechanical pass, 1 identified-not-taught, 0 unresolved (unchanged)",
+        "node scripts/report-loa-time-evidence.mjs - layers 1512.4 / 20 / 1532.4, every topic at or above its allocation (unchanged)",
+        "node scripts/report-loa-traceability.mjs - 286 items, 57/57 units assessed and examined",
+        "node scripts/loa-acceptance-report.mjs - 26 checks, complete operational course GO, submission readiness NO-GO",
+        "node --test tests/*.test.mjs - 0 failures"
+      ]
+    }
+  ],
+  "generatedBy": "scripts/freeze-loa-curriculum.mjs",
+  "afterFreeze": "No curriculum wording may change silently. An instructional repair found during assessment authoring must break the freeze explicitly, name the module and the reason, re-run the time, source, quotation, structural and assessment-dependency audits, and create a new freeze version with new hashes.",
+  "evidence": {
+    "unitsCovered": "57/57",
+    "unitsExcused": 0,
+    "unitsUncovered": 0,
+    "layer1TopicInstructionMinutes": 1512.4,
+    "layer2CourseLevelCapstoneMinutes": 20,
+    "layer3GrandRequiredMinutes": 1532.4,
+    "prescribedMinutes": 1500,
+    "everyTopicMeetsItsAllocation": true,
+    "topicVariances": [
+      {
+        "topicCode": "T01",
+        "prescribed": 130,
+        "required": 132.7,
+        "variance": 2.7
+      },
+      {
+        "topicCode": "T02",
+        "prescribed": 125,
+        "required": 127.6,
+        "variance": 2.6
+      },
+      {
+        "topicCode": "T03",
+        "prescribed": 125,
+        "required": 125.5,
+        "variance": 0.5
+      },
+      {
+        "topicCode": "T04",
+        "prescribed": 120,
+        "required": 120.2,
+        "variance": 0.2
+      },
+      {
+        "topicCode": "T05",
+        "prescribed": 150,
+        "required": 151.4,
+        "variance": 1.4
+      },
+      {
+        "topicCode": "T06",
+        "prescribed": 165,
+        "required": 165.9,
+        "variance": 0.9
+      },
+      {
+        "topicCode": "T07",
+        "prescribed": 85,
+        "required": 85.5,
+        "variance": 0.5
+      },
+      {
+        "topicCode": "T08",
+        "prescribed": 45,
+        "required": 45.9,
+        "variance": 0.9
+      },
+      {
+        "topicCode": "T09",
+        "prescribed": 120,
+        "required": 120.5,
+        "variance": 0.5
+      },
+      {
+        "topicCode": "T10",
+        "prescribed": 155,
+        "required": 155.5,
+        "variance": 0.5
+      },
+      {
+        "topicCode": "T11",
+        "prescribed": 140,
+        "required": 141.7,
+        "variance": 1.6
+      },
+      {
+        "topicCode": "T12",
+        "prescribed": 140,
+        "required": 140.1,
+        "variance": 0.1
+      }
+    ],
+    "citations": 1975,
+    "mechanicalPass": 1974,
+    "identifiedNotTaught": [
+      {
+        "claimId": "module-10-C1468",
+        "module": "module-10",
+        "unit": "Federal and State Law Relating to Conduct",
+        "passage": "the closing sentence of the fair-housing exemptions passage in T10U2, which tells the student where the held subchapter stops",
+        "citation": "Property Code § 301.045",
+        "source": "texas/trec-sources/statutes/PR.301.htm",
+        "sourceHeld": true,
+        "sectionPresentInSource": false,
+        "status": "IDENTIFIED_NOT_TAUGHT",
+        "whyItCannotReceiveAMechanicalPass": "The mechanical check asks whether a cited section is present in the held source. This section is not present, because Subchapter C of Property Code ch. 301 as held runs from 301.041 to 301.044 and stops. A check that verifies presence cannot pass a citation to something absent, and it should not: the correct outcome is to surface it for review, which is what happened.",
+        "humanReviewedDisposition": "NOT A DEFECT. The citation appears once, inside a sentence whose whole purpose is to tell the student that this section was not held and is not taught. No proposition is asserted from it, no rule is stated on its authority, and no assessment item can reference it.",
+        "howItGotIntoTheCourse": "My authoring brief for module 10 listed the Texas exemptions as sections 301.041 through 301.045. That range was mine and it was wrong. The author checked the held statute, found the subchapter ends at 301.044, and recorded the discrepancy in the module rather than quietly writing to the range I had given. That is the behaviour the sourcing rule is for.",
+        "evidenceItIsNotASourcingOrLegalDefect": [
+          "The held source texas/trec-sources/statutes/PR.301.htm contains Sec. 301.041 CERTAIN SALES AND RENTALS EXEMPTED, Sec. 301.042 RELIGIOUS ORGANIZATION, PRIVATE CLUB, AND APPRAISAL EXEMPTION, Sec. 301.043 HOUSING FOR ELDERLY EXEMPTED and Sec. 301.044 EFFECT ON OTHER LAW, and no Sec. 301.045.",
+          "All four exemptions that do exist are taught in T10U2 in required prose.",
+          "The course text reads: 'Subchapter C of the chapter as held runs from 301.041 to 301.044 and stops there. A 301.045 was not held for this course and is not taught here; the four exemptions above are the whole of the subchapter as read.'",
+          "The claim carries status IDENTIFIED_NOT_TAUGHT, the classification the audit gives a citation the course itself disclaims, and it is counted in the denominator rather than excluded from it."
+        ]
+      }
+    ],
+    "undispositionedQuotations": 0,
+    "orphanedDispositions": 0,
+    "resurfacedDispositions": 0,
+    "retiredDispositions": 28,
+    "sourcingDefects": 0,
+    "registeredSourcesVerified": "58/58",
+    "misconceptionChecks": 7,
+    "scenariosPlanned": 5,
+    "quizItemsPlanned": 58
+  },
+  "modules": [
+    {
+      "topicCode": "T01",
+      "topic": "Agency Concepts",
+      "units": 4,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-01.md",
+      "sha256": "61d10c5dd2a2e7f09eb772c2e169658c62884836b70dcd2b6d5af75b6b0d6473",
+      "bytes": 73218
+    },
+    {
+      "topicCode": "T02",
+      "topic": "Basic Agency Relationships, Disclosure and Duties to the Client",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-02.md",
+      "sha256": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20",
+      "bytes": 70357
+    },
+    {
+      "topicCode": "T03",
+      "topic": "Duties and Disclosures to Third Parties",
+      "units": 6,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-03.md",
+      "sha256": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec",
+      "bytes": 70595
+    },
+    {
+      "topicCode": "T04",
+      "topic": "Seller Agency",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-04.md",
+      "sha256": "422b6438d341984b9b707eb2af6c54d1f9e137b61c7f9a63d6109e89a2738b59",
+      "bytes": 65238
+    },
+    {
+      "topicCode": "T05",
+      "topic": "Buyer Agency",
+      "units": 6,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-05.md",
+      "sha256": "0f12def8e2f3c7177d7e23769e3c573788af3d693ede79d086b23c73802cf297",
+      "bytes": 79836
+    },
+    {
+      "topicCode": "T06",
+      "topic": "Representing More Than One Party in a Transaction: Intermediary Brokerage",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-06.md",
+      "sha256": "521bbc3088a5df49cb7f0c50736f178cb3239bc7a8dc40b8f9284dee007eef11",
+      "bytes": 80070
+    },
+    {
+      "topicCode": "T07",
+      "topic": "Creation and Termination of Agency",
+      "units": 3,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-07.md",
+      "sha256": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25",
+      "bytes": 53082
+    },
+    {
+      "topicCode": "T08",
+      "topic": "Clarifying Agency Relationships",
+      "units": 2,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-08.md",
+      "sha256": "9bb132b7b79fb05862e3a87865a8ac292b2ad27e9ad9ccc5d43ebb01653bc8ef",
+      "bytes": 17578
+    },
+    {
+      "topicCode": "T09",
+      "topic": "Employment Issues",
+      "units": 6,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-09.md",
+      "sha256": "453538cccfff62f1bee20d0da8cabb46decd3e5961351eff25b4fbf65b4effef",
+      "bytes": 60765
+    },
+    {
+      "topicCode": "T10",
+      "topic": "Agency, Ethics and the Law",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-10.md",
+      "sha256": "7804116e88e22399e93f4593889970eb07d89245c2ad44b8050a019662ede802",
+      "bytes": 101025
+    },
+    {
+      "topicCode": "T11",
+      "topic": "Deceptive Trade Practices and Consumer Protection Act",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+      "sha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+      "bytes": 73436
+    },
+    {
+      "topicCode": "T12",
+      "topic": "Implementation and Presentation",
+      "units": 5,
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-12.md",
+      "sha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566",
+      "bytes": 80660
+    }
+  ],
+  "artifacts": {
+    "LOA-1 outline and 57-unit map": {
+      "path": "config/texas/law-of-agency-course-form.mjs",
+      "sha256": "12e5f4faffb7d5611dee2ac3b2e497bfaa8452f2d7c63233d0d165b5a37e9758",
+      "bytes": 12284
+    },
+    "source register": {
+      "path": "config/texas/law-of-agency-statute-sources.mjs",
+      "sha256": "a041e11a6bfe2e06599161ed669df6d4151ce5294fa603c4db0f62f8ffca7ebf",
+      "bytes": 258403
+    },
+    "quotation-disposition ledger": {
+      "path": "config/texas/quotation-dispositions.mjs",
+      "sha256": "182afe03326eff86cb07874b0f7f99da55dcb2ee8423749d401b8b13556a6124",
+      "bytes": 70108
+    },
+    "claim-audit evidence": {
+      "path": "texas/tx-law-of-agency-30-v1/claim-audit.json",
+      "sha256": "9575ae117fe2f468d2dd738b7a70103b60714bef5b4c11533d4c5b0969e4b71a",
+      "bytes": 1270669
+    },
+    "three-layer time report": {
+      "path": "texas/tx-law-of-agency-30-v1/time-evidence.json",
+      "sha256": "e561484de708f551d2272e6bf236f96ce67635e4eab5f20db8f887521284cf0d",
+      "bytes": 15613
+    },
+    "formative misconception checks": {
+      "path": "config/texas/law-of-agency-misconception-checks.mjs",
+      "sha256": "8c06367891d002759d6b91ade21f65efd29e81f7e4d66a816ebdc53798dd4296",
+      "bytes": 16502
+    },
+    "time budget": {
+      "path": "config/texas/law-of-agency-time-budget.mjs",
+      "sha256": "369793369d96912020c648bb7e47f93eb2943e8d7c802205222d6c5d597d2137",
+      "bytes": 12652
+    },
+    "structural evidence (generator)": {
+      "path": "scripts/check-loa-module-structure.mjs",
+      "sha256": "544db7fe3923a0195448e8cab0d10543d7da8ef812883ec29a73560b14f0c966",
+      "bytes": 9485
+    },
+    "salvage audit": {
+      "path": "texas/tx-law-of-agency-30-v1/salvage-audit.json",
+      "sha256": "3a366211b5659253b697e17832d67f51863a719fe736419fa87bb9de7103e826",
+      "bytes": 7220
+    },
+    "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 — hashes the plan and every render dependency)": {
+      "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
+      "sha256": "bc287901fc2d63b781130d443cd5892e78c1ed64b19106a4fa5d995bf820cd26",
+      "bytes": 23170
+    }
+  },
+  "reproduce": [
+    "node scripts/check-loa-module-structure.mjs",
+    "node scripts/audit-loa-claims.mjs",
+    "node scripts/report-loa-time-evidence.mjs",
+    "node scripts/texas-source-inventory.mjs",
+    "node scripts/freeze-loa-curriculum.mjs"
+  ],
+  "notApproved": "StateCourse holds no TREC approval for this course or as a qualifying education provider. Enrollment is disabled, no Texas credit is offered, and nothing in this artifact may be read as a claim of approval."
+}
