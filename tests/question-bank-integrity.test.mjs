@@ -58,7 +58,7 @@ const banks = await Promise.all(
 );
 
 test("every question bank in the project is found and carries items", () => {
-  assert.equal(bankFiles.length, 27, `expected 27 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
+  assert.equal(bankFiles.length, 28, `expected 28 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
   for (const bank of banks) {
     assert.ok(bank.items.length > 0, `${bank.file} yielded no items — its shape changed and this walk no longer reaches them`);
   }
@@ -180,6 +180,9 @@ test("the project's authored item count is what the state builds add up to", () 
      replacements as their own map to check that every primary has the successor question 22 TAC
      § 535.62(b)(7)(C)(ii) requires. They are 116 distinct objects with 116 distinct prompts, so the
      walk is counting items rather than copies — which is the failure this file's flat-view note
-     warns about, and is why that bank exports its flat views as functions. */
-  assert.equal(total, 2656, `the banks now hold ${total} items, not 2656; update this figure deliberately when a bank changes`);
+     warns about, and is why that bank exports its flat views as functions.
+     2026-08-31: 2656 + 6 — Law of Contracts Topic 01 added one primary item for each of its six
+     LOC-0 units. Its six successor questions remain nested and conditional, matching the Principles
+     I/II formative convention rather than appearing as duplicate top-level exports. */
+  assert.equal(total, 2662, `the banks now hold ${total} items, not 2662; update this figure deliberately when a bank changes`);
 });

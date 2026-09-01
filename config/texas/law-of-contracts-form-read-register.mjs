@@ -10,8 +10,8 @@
  * description of what the instrument says and how its paragraphs connect. They do not make a form
  * a statute, decide a common-law issue, or clear a proposition supplied by a statute, rule, case,
  * federal programme, lender requirement, or local practice. `candidateUnits` identifies where a
- * read form may be used during authoring; it is not a claim that any curriculum already relies on
- * it.
+ * read form may be used during authoring; it is not itself a curriculum-reliance claim. A
+ * course-specific source layer must name the exact unit and read scope before reliance exists.
  */
 
 import { createHash } from "node:crypto";

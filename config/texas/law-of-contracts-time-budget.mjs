@@ -33,7 +33,7 @@ export const RATES = Object.freeze({
  * contract, financing, and closing; none borrows another topic's prescribed time.
  */
 const PLAN = Object.freeze({
-  T01: Object.freeze({ statuteReadingExercises: 2, appliedExercises: 2, scenarios: 1, misconceptionChecks: 1 }),
+  T01: Object.freeze({ statuteReadingExercises: 2, appliedExercises: 3, scenarios: 1, misconceptionChecks: 1 }),
   T02: Object.freeze({ statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0, misconceptionChecks: 0 }),
   T03: Object.freeze({ statuteReadingExercises: 1, appliedExercises: 1, scenarios: 0, misconceptionChecks: 0 }),
   T04: Object.freeze({ statuteReadingExercises: 1, appliedExercises: 2, scenarios: 0, misconceptionChecks: 1 }),

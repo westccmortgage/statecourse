@@ -11,6 +11,16 @@ import { FORM, TOPICS, ALL_UNITS } from "../config/texas/law-of-contracts-course
 import { RATES, BUDGET, TOTALS } from "../config/texas/law-of-contracts-time-budget.mjs";
 import { FORM_READS, READ_METHOD, validateFormReads } from "../config/texas/law-of-contracts-form-read-register.mjs";
 import { READ_SCOPE, STATUTE_READS, validateStatuteReads } from "../config/texas/law-of-contracts-statute-read-register.mjs";
+import {
+  MODULE_1_SOURCES,
+  MODULE_1_SOURCE_GAPS,
+  MODULE_1_UNIT_SOURCE_REQUIREMENTS,
+  MODULE_1_CLAIM_NEEDLES,
+  validateModule1Sources,
+} from "../config/texas/law-of-contracts-module-1-sources.mjs";
+import { COURSE, MODULES, UNIT_OBJECTIVES, UNIT_TRACE } from "../config/texas/law-of-contracts-course.mjs";
+import { TOPIC_1_QUIZ } from "../config/texas/law-of-contracts-question-bank.mjs";
+import { AUTHORING_EVIDENCE, validateAuthoringEvidence } from "../config/texas/law-of-contracts-authoring-evidence.mjs";
 import { FORMS as CURRENT_TREC_FORMS } from "../config/texas/pcf-current-forms-inventory.mjs";
 import { RULES, ASSESSMENT_REQUIREMENTS, SUBMISSION_READINESS } from "../config/texas/trec-rules-source-lock.mjs";
 
@@ -80,7 +90,7 @@ test("all nine course-local chapters now have verified section-level reads", () 
   });
   assert.match(READ_SCOPE.method, /complete official HTML text/i);
   assert.match(READ_SCOPE.authorityLimit, /only the proposition in its note/i);
-  assert.match(READ_SCOPE.authoringStatus, /No Law of Contracts curriculum/i);
+  assert.match(READ_SCOPE.authoringStatus, /no authored unit currently relies on these nine/i);
 });
 
 test("statute reads identify candidate units but make no premature curriculum-reliance claim", () => {
@@ -112,7 +122,7 @@ test("eight priority forms have page-level reads rather than holdings-only claim
   assert.match(READ_METHOD.authorityLimit, /may not replace governing statutes/);
 });
 
-test("the form-read register covers each page in order and does not claim curriculum reliance", () => {
+test("the reusable form-read register stays candidate-only while course-specific trace claims reliance", () => {
   const unitCodes = new Set(ALL_UNITS.map((unit) => unit.code));
   assert.deepEqual(FORM_READS.map((record) => record.formId), ["20-19", "39-11", "40-11", "26-8", "41-3", "45-2", "55-1", "38-8"]);
   for (const record of FORM_READS) {
@@ -121,8 +131,10 @@ test("the form-read register covers each page in order and does not claim curric
     assert.ok(record.authoringScope.length > 80);
     assert.ok(record.candidateUnits.length > 0);
     assert.ok(record.candidateUnits.every((unit) => unitCodes.has(unit)));
-    assert.equal(Object.hasOwn(record, "reliedOnByUnits"), false, `${record.formId} must not claim reliance before curriculum exists`);
+    assert.equal(Object.hasOwn(record, "reliedOnByUnits"), false, `${record.formId} reliance belongs in the course-specific source layer`);
   }
+  const topic1Form = MODULE_1_SOURCES.find((source) => source.id === "loc-form-20-19");
+  assert.deepEqual(topic1Form.reliedOnByUnits, ["T01U1", "T01U2", "T01U5"]);
 });
 
 test("LOC-0 transcription reconciles every printed subtotal to 1,500 minutes", () => {
@@ -189,4 +201,122 @@ test("all time-conversion rates are labelled StateCourse methodology", () => {
   assert.equal(FORM.minutesPerCreditHourStatus, "FORM_DERIVED_PENDING_TAC_CONFIRMATION");
   assert.equal(TOTALS.minimumProseWords, TOTALS.readingMinutes * RATES.firstPassWordsPerMinute);
   assert.ok(TOTALS.conditionalReplacementMinutes > 0);
+});
+
+test("Topic 01 source trace verifies exact held bytes, cited sections, form pages, and disclosed gap", () => {
+  assert.deepEqual(validateModule1Sources(), {
+    status: "PASS",
+    sources: 4,
+    verifiedFiles: 4,
+    readSections: 19,
+    coveredUnits: 6,
+    codifiedRuleComparisonGaps: 1,
+    problems: [],
+  });
+  assert.deepEqual(MODULE_1_SOURCES.map((source) => source.id), ["loc-oc-1101", "loc-bc-17", "loc-tac-537-11", "loc-form-20-19"]);
+  assert.deepEqual(Object.keys(MODULE_1_UNIT_SOURCE_REQUIREMENTS), TOPICS[0].units.map((unit) => unit.code));
+  assert.ok(Object.keys(MODULE_1_CLAIM_NEEDLES).length >= 6);
+  assert.deepEqual(MODULE_1_SOURCE_GAPS.map((gap) => gap.id), ["sos-tac-22-537-11"]);
+  assert.equal(MODULE_1_SOURCE_GAPS[0].status, "UNREAD_EXTERNAL_SOURCE");
+  assert.match(MODULE_1_SOURCE_GAPS[0].note, /Secretary of State.*does not claim a codified-text comparison/is);
+
+  const form = MODULE_1_SOURCES.find((source) => source.id === "loc-form-20-19");
+  assert.equal(form.title, "One to Four Family Residential Contract (Resale)");
+  assert.equal(form.effectiveDate, "2026-07-01");
+  assert.equal(form.sectionsRead[0].section, "pages 1-12");
+  assert.equal(form.sha256, "3f458518e9e01fc9c84cab420dcd0ce9793113c4b356ed5caf7a2fb1bdef2ca5");
+});
+
+test("incremental course record marks only Topic 01 authored and keeps every operational gate closed", () => {
+  assert.equal(COURSE.buildStatus, "IN_REPO_AUTHORING_IN_PROGRESS");
+  assert.equal(COURSE.curriculumComplete, false);
+  assert.equal(COURSE.contentFreeze, null);
+  assert.equal(COURSE.trecApprovalStatus, "NOT_SUBMITTED_NOT_APPROVED");
+  assert.equal(COURSE.submissionReady, false);
+  assert.equal(COURSE.finalExaminationExists, false);
+  assert.equal(COURSE.finalExaminationAdministrable, false);
+  for (const gate of ["enrollmentEnabled", "paymentEnabled", "creditReportingEnabled", "certificateIssuanceEnabled"]) {
+    assert.equal(COURSE[gate], false, `${gate} must remain disabled`);
+  }
+
+  assert.equal(MODULES.length, 11);
+  assert.equal(UNIT_TRACE.length, 80);
+  assert.equal(Object.keys(UNIT_OBJECTIVES).length, 6);
+  const topic1 = UNIT_TRACE.filter((trace) => trace.topicCode === "T01");
+  const future = UNIT_TRACE.filter((trace) => trace.topicCode !== "T01");
+  assert.equal(topic1.length, 6);
+  assert.ok(topic1.every((trace) => trace.authored && trace.sourceReady && trace.objective && trace.sources.length));
+  assert.ok(future.every((trace) => !trace.authored && !trace.sourceReady && trace.objective === null && trace.sources.length === 0 && trace.sourceGaps.length === 0));
+
+  const affected = new Set(MODULE_1_SOURCE_GAPS[0].affectedUnits);
+  for (const trace of topic1) {
+    const rule = trace.sources.find((source) => source.sourceId === "loc-tac-537-11");
+    if (affected.has(trace.code)) {
+      assert.equal(rule.sourceLayer, "TREC consolidated rules reproduction");
+      assert.equal(rule.codifiedTextCompared, false);
+      assert.deepEqual(trace.sourceGaps.map((gap) => gap.id), ["sos-tac-22-537-11"]);
+    } else {
+      assert.equal(trace.sourceGaps.length, 0);
+    }
+  }
+});
+
+test("authored Topic 01 partitions prose and activities and clears its own 155-minute allocation", () => {
+  const validation = validateAuthoringEvidence();
+  assert.equal(validation.status, "PASS");
+  assert.equal(validation.totalWords, 11277);
+  assert.equal(validation.proseWords, 9036);
+  assert.equal(validation.activityWords, 2241);
+  assert.equal(validation.totalWords, validation.proseWords + validation.activityWords);
+  assert.ok(validation.measuredRequiredMinutes >= validation.prescribedMinutes);
+  assert.equal(AUTHORING_EVIDENCE.minimumProseWords, 8540);
+  assert.equal(AUTHORING_EVIDENCE.activityMinutes, 94);
+  assert.deepEqual(AUTHORING_EVIDENCE.unitHeadings, TOPICS[0].units.map((unit) => unit.unit));
+  assert.deepEqual(AUTHORING_EVIDENCE.counts, {
+    statuteReadingExercises: 2,
+    appliedExercises: 3,
+    scenarios: 1,
+    misconceptionChecks: 1,
+    moduleRecaps: 1,
+    quizItems: 6,
+    conditionalReplacementItems: 6,
+  });
+  assert.match(AUTHORING_EVIDENCE.sha256, /^[a-f0-9]{64}$/u);
+  assert.match(AUTHORING_EVIDENCE.conditionalReplacementPolicy, /not counted toward the required 155-minute path/i);
+});
+
+test("Topic 01 formative bank has one traced primary and one distinct successor per LOC-0 unit", () => {
+  const moduleText = fs.readFileSync(path.join(root, AUTHORING_EVIDENCE.path), "utf8");
+  assert.equal(TOPIC_1_QUIZ.length, 6);
+  assert.deepEqual(TOPIC_1_QUIZ.map((item) => item.unit), TOPICS[0].units.map((unit) => unit.code));
+  assert.equal(new Set(TOPIC_1_QUIZ.flatMap((item) => [item.id, item.replacement.id])).size, 12);
+  assert.equal(new Set(TOPIC_1_QUIZ.flatMap((item) => [item.prompt, item.replacement.prompt])).size, 12);
+
+  for (const item of TOPIC_1_QUIZ) {
+    assert.equal(item.correctChoice, 0);
+    assert.equal(item.replacement.correctChoice, 0);
+    assert.equal(item.module, "module-01");
+    assert.equal(item.replacement.module, "module-01");
+    assert.equal(item.replacement.unit, item.unit);
+    assert.notEqual(item.judgement, item.replacement.judgement);
+    assert.ok(moduleText.includes(item.contentAnchor));
+    assert.match(item.remediation, /^module-01\.md#[a-z0-9-]+$/u);
+    assert.deepEqual(item.sourceRefs, item.replacement.sourceRefs);
+    assert.ok(item.sourceRefs.length > 0);
+  }
+
+  const bankText = fs.readFileSync(path.join(root, "config/texas/law-of-contracts-question-bank.mjs"), "utf8");
+  assert.doesNotMatch(bankText, /finalExaminationExists:\s*true|final examination is ready|TREC[- ]approved/iu);
+});
+
+test("build status separates unfinished repository work from external submission blockers", () => {
+  const status = fs.readFileSync(path.join(root, "texas/tx-law-of-contracts-30-v1/BUILD-STATUS.md"), "utf8");
+  assert.match(status, /1 of 11 LOC-0 topics and 6 of 80 LOC-0 units are authored/);
+  assert.match(status, new RegExp(`${AUTHORING_EVIDENCE.totalWords.toLocaleString("en-US")} total words`));
+  assert.match(status, new RegExp(`${AUTHORING_EVIDENCE.proseWords.toLocaleString("en-US")} teaching-prose words`));
+  assert.match(status, /Remaining work inside the repository/);
+  assert.match(status, /External submission blockers/);
+  assert.match(status, /not submitted, not approved, not enrollable/i);
+  assert.match(status, /remaining 10 topics and 74 units/);
+  assert.doesNotMatch(status, /course is complete|TREC[- ]approved/iu);
 });
