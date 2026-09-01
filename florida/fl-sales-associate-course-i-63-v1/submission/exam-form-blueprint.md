@@ -2,9 +2,11 @@
 
 **Architecture GO; bank content and form assembly NO-GO. No examination or answer key is generated.**
 
-StateCourse's conservative preparation policy is five forms of 126 items while the conflicts over
-100 versus 126 items and two versus five forms await a written DBPR answer. Those values remain
-provider policy, not Florida minima. The confirmed rule floor remains 100 items and two forms.
+The current DBPR Education-page-linked RE 18 requires **two** examination forms for distance
+pre/post-license education. The legacy RE 18 that asked for five across all distance courses is
+superseded and forbidden for filing. Item count remains unresolved on the face of the rule: 100,
+120 and 126 are identified readings. StateCourse therefore builds 126 items per form pending a
+written DBPR answer; 126 is provider policy, not a Florida minimum.
 
 ## Fixed form design
 
@@ -12,14 +14,11 @@ provider policy, not Florida minima. The confirmed rule floor remains 100 items 
 |---|---:|---:|---:|---:|---|---|---|
 | A | 126 | 89 (70.6%) | 25 (19.8%) | 12 (9.5%) | not generated | not generated | disabled |
 | B | 126 | 89 (70.6%) | 25 (19.8%) | 12 (9.5%) | not generated | not generated | disabled |
-| C | 126 | 89 (70.6%) | 25 (19.8%) | 12 (9.5%) | not generated | not generated | disabled |
-| D | 126 | 89 (70.6%) | 25 (19.8%) | 12 (9.5%) | not generated | not generated | disabled |
-| E | 126 | 89 (70.6%) | 25 (19.8%) | 12 (9.5%) | not generated | not generated | disabled |
 
-The 630 secure slots have unique identifiers and target zero cross-form question reuse. Zero is a
+The 252 secure slots have unique identifiers and target zero cross-form question reuse. Zero is a
 StateCourse design target; Florida's confirmed ceiling is 15%. Each slot fixes a syllabus section,
 objective, curriculum page, required cognitive level, four-choice requirement and authoring rule.
-The form order is interleaved and does not follow course order. Across the five forms every one of
+The form order is interleaved and does not follow course order. Across the two forms every one of
 the 180 incorporated objectives is represented; no objective repeats within a form.
 
 ## Section allocation per form
@@ -30,11 +29,11 @@ to total exactly 126: **5, 8, 5, 7, 6, 6, 7, 6, 6, 7, 8, 6, 7, 7, 4, 11, 6, 6, 8
 
 ## Truthful completion state
 
-- planned secure slots: **630**;
+- planned secure slots: **252**;
 - existing application-level drafts assigned to one slot each: **19**;
-- unwritten slots: **611**;
-- additional items needed to reach one 100-item regulatory-floor form: **81**;
-- additional items needed to reach one 126-item policy form: **107**;
+- unwritten slots: **233**;
+- if DBPR confirms 100 items per form, planned slots retired: **52**;
+- if DBPR confirms 100 items per form, remaining authoring across both forms: **181**;
 - assembled forms ready: **0**;
 - independent legal/content review: **not complete**;
 - final pagination lock: **not complete**.

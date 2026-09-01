@@ -62,7 +62,7 @@
  * in a config file is how a false claim reaches a page, so there are none to promote.
  */
 
-export const MANIFEST_VERSION = "FL-MANIFEST-2026-08-31-v2";
+export const MANIFEST_VERSION = "FL-MANIFEST-2026-09-01-v3";
 
 /* How long a reading stays good before the lock demands it be taken again. Florida's education
    rules are amended often — 61J2-3.008 has been amended twenty-three times and three of the rules
@@ -161,6 +161,26 @@ export const SOURCES = Object.freeze([
         reliedOnBy: Object.freeze(["config/florida/regulatory-manifest.mjs"]) },
     ]),
     conflicts: Object.freeze([
+    ]),
+  }),
+  source({
+    id: "FS-1005.06",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
+    citation: "s. 1005.06(1)(b), Fla. Stat. (2026)",
+    title: "Institutions not under the jurisdiction or purview of the Commission for Independent Education",
+    publisher: "Florida Legislature, Online Sunshine",
+    url: "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=1000-1099/1005/Sections/1005.06.html",
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    localCopy: "florida/frec-sources/statutes/fs-1005.06.html",
+    sha256: "0d5c66c8f1f1cf83cba1adc58e045241dc1a191eae3ae7db460670e1648a537a",
+    bytes: 28138,
+    materialClaims: Object.freeze([
+      { claim: "CIE exemption under subsection (1)(b) attaches when another state agency licenses or approves the institution's establishment and operation; approval of only a program or course is expressly insufficient",
+        reliedOnBy: Object.freeze(["florida/submission/01-regulatory-route-and-cie-memo.md"]) },
+    ]),
+    conflicts: Object.freeze([
+      "A DBPR school permit under s. 475.451 is expected to be the institution-level approval on which the exemption rests; RE 18 course approval alone is not. Retain and verify the school permit before relying on the exemption.",
     ]),
   }),
   source({
@@ -486,6 +506,34 @@ export const SOURCES = Object.freeze([
     ]),
   }),
   source({
+    id: "FAR-2026-52-138-RE18-PROPOSAL",
+    citation: "Florida Administrative Register Vol. 52, No. 138 (July 17, 2026), pp. 3080-81",
+    title: "Proposed amendment to Rule 61-35.027 adopting revised RE 18 as Ref-19807",
+    publisher: "Florida Department of State",
+    url: "https://flrules.org/Faw/FAWDocuments/FAWVOLUMEFOLDERS2026/52138/52138doc.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    localCopy: "florida/frec-sources/fac/FAR-2026-52-138.pdf",
+    sha256: "d1268dd77897f65d5aaa991e53f215ad1f02ae67d3de60ffe1282deadeff7c16",
+    bytes: 392132,
+    contentValidation: Object.freeze({
+      mediaType: "application/pdf",
+      magic: "%PDF-",
+      pageCount: 16,
+      localTextCopy: "florida/frec-sources/extracted/FAR-2026-52-138-relevant.txt",
+      requiredMarkers: Object.freeze(["61-35.027", "Ref-19807", "June 2026", "Giuvanna.Corona@myfloridalicense.com"]),
+      rejectsMarkers: Object.freeze(["Page not found", "Elevator Safety"]),
+    }),
+    materialClaims: Object.freeze([
+      { claim: "the July 17, 2026 notice proposes amending Rule 61-35.027 to adopt revised RE 18 effective June 2026 as Ref-19807",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs", "florida/submission/00-filing-index.md"]) },
+    ]),
+    conflicts: Object.freeze([
+      "The amendment appears proposed rather than final in the verified rule page, while DBPR already links the revised form. That is why current-form identity is a mandatory signature-time gate.",
+    ]),
+  }),
+  source({
     id: "DBPR-RE-3",
     citation: "DBPR RE 3, incorporated by Rule 61-35.027, F.A.C.",
     title: "Application for Real Estate Instructor Permit (effective November 2015)",
@@ -572,8 +620,42 @@ export const SOURCES = Object.freeze([
   }),
   source({
     id: "DBPR-RE-18",
-    citation: "DBPR RE 18, incorporated by Rule 61-35.027, F.A.C.",
-    title: "Education Course Approval Application",
+    citation: "DBPR RE 18, current Education-page-linked June 2026 revision; incorporation amendment proposed for Rule 61-35.027, F.A.C.",
+    title: "Education Course Approval Application — current published revision",
+    publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_-_FREC_18_Education_Course_Approval_Application.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_18_Education_Course_Approval_Application_CURRENT.pdf",
+    sha256: "4a49f87f367a9cd979f192f17e2efcc058ffa90974b126e67bb457621b5f079a",
+    bytes: 360093,
+    contentValidation: Object.freeze({
+      mediaType: "application/pdf",
+      magic: "%PDF-",
+      pageCount: 6,
+      localTextCopy: "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_18_Education_Course_Approval_Application_CURRENT.txt",
+      requiredMarkers: Object.freeze(["Education Course Approval Application", "Two end of course examinations", "distance pre-licensing", "DBPR RE-19 (for Providers Only)"]),
+      rejectsMarkers: Object.freeze(["Elevator Safety", "Page not found"]),
+    }),
+    materialClaims: Object.freeze([
+      { claim: "Section III 'Type of Education' carries 'Sales Associate Pre-Licensure' as an explicit option, so this form governs FREC Course I approval notwithstanding the 'Continuing Education' wording in its running header",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs", "florida/submission/frec-course-i-submission-plan.md"]) },
+      { claim: "Section III delivery mechanisms are Classroom, Distance, Live stream, Correspondence (continuing education only), and Other; Section IV application types are NEW, RENEWAL and UPDATE",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+      { claim: "Section V requires a timed outline, learning objectives at THREE PER HOUR, course materials with delivery explanation, TWO end-of-course examinations for distance pre/post-license courses, and a page-referenced answer key per form; RE 19 and RE 20 are expressly for Providers Only",
+        reliedOnBy: Object.freeze(["config/florida/assessment-architecture.mjs", "config/florida/dbpr-application-package.mjs", "config/florida/school-permit-ledger.mjs"]) },
+      { claim: "the course application fee is $80 per initial application and $80 per renewal for PROVIDERS, and $0 for schools",
+        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
+    ]),
+    conflicts: Object.freeze([
+      "The revised form is currently linked by DBPR, while the July 17, 2026 Rule 61-35.027 notice describes adoption of Ref-19807 as proposed. Re-download and confirm operative form identity immediately before signature and filing.",
+    ]),
+  }),
+  source({
+    id: "DBPR-RE-18-LEGACY-DO-NOT-FILE",
+    citation: "Legacy DBPR RE 18 retained as superseded evidence",
+    title: "Education Course Approval Application — legacy form, forbidden for filing",
     publisher: "Florida Department of Business and Professional Regulation, Florida Real Estate Commission",
     url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_18_FRECEduCourseAppr.pdf",
     authorityClass: AUTHORITY_CLASS.FORM,
@@ -582,19 +664,9 @@ export const SOURCES = Object.freeze([
     localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_18_FRECEduCourseAppr.pdf",
     sha256: "efa5cf453ce7b445b20ff84c6384d794386d432b8db8f64a6dd9a6e542b65846",
     bytes: 71667,
-    materialClaims: Object.freeze([
-      { claim: "Section III 'Type of Education' carries 'Sales Associate Pre-Licensure' as an explicit option, so this form governs FREC Course I approval notwithstanding the 'Continuing Education' wording in its running header",
-        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs", "florida/submission/frec-course-i-submission-plan.md"]) },
-      { claim: "Section III delivery mechanisms are Classroom, Distance, Live stream, Correspondence (continuing education only), and Other; Section IV application types are NEW, RENEWAL and UPDATE",
-        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
-      { claim: "Section V requires of all initial course approvals: a course timed outline; learning objectives at THREE PER HOUR; course materials with an explanation of delivery method; form DBPR RE 19; instructor information on DBPR RE 20 with a resume (for Providers Only); FIVE end of course examinations for distance education courses only; and an answer key per form referencing the page numbers each question and correct answer rest on",
-        reliedOnBy: Object.freeze(["config/florida/assessment-architecture.mjs", "config/florida/dbpr-application-package.mjs", "config/florida/school-permit-ledger.mjs"]) },
-      { claim: "the course application fee is $80 per initial application and $80 per renewal for PROVIDERS, and $0 for schools",
-        reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
-    ]),
+    materialClaims: Object.freeze([]),
     conflicts: Object.freeze([
-      "Section V requires FIVE end-of-course examinations for distance education courses. Rule 61J2-3.008(4)(d) requires 'at least 2 forms', and the FREC Distance Education Checklist (rev. 06/2018) likewise lists 'Two end of course examinations'. The Department's own documents disagree with each other by three complete examination forms. StateCourse plans to five, which satisfies all three, and records that as provider policy rather than as a regulatory minimum. Carried to DBPR as a written question.",
-      "Section V item 4 lists form DBPR RE 19 among the attachments for ALL initial course approvals, while item 5 immediately below is marked 'for Providers Only' and the Distance Education Checklist states elsewhere that licensed real estate schools need not fulfil the provider-only requirements. Whether a permitted school must file RE 19 is unresolved.",
+      "This legacy form asks for five examinations for all distance courses and fails to mark RE 19 provider-only. The current DBPR Education-page-linked revision corrects both points. Never fill, sign, submit or use this legacy copy to plan Course I.",
     ]),
   }),
   source({
@@ -612,7 +684,7 @@ export const SOURCES = Object.freeze([
     materialClaims: Object.freeze([
     ]),
     conflicts: Object.freeze([
-      "Held because DBPR RE 18 names it. Approved CE provider is a different status from permitted real estate school, and whether a school filing Course I must also file this is an open question. Nothing in this build relies on it.",
+      "Held for route separation. The current DBPR Education-page-linked RE 18 marks RE 19 '(for Providers Only)'; a permitted school filing Course I does not include it.",
     ]),
   }),
   source({
@@ -698,7 +770,7 @@ export const SOURCES = Object.freeze([
         reliedOnBy: Object.freeze(["config/florida/assessment-architecture.mjs"]) },
     ]),
     conflicts: Object.freeze([
-      "Says TWO end-of-course examinations where the current DBPR RE 18 says FIVE. See the conflict recorded against DBPR-RE-18.",
+      "No current conflict: the checklist's TWO examinations now agrees with the current DBPR RE 18 for distance pre/post-license courses.",
     ]),
   }),
   source({

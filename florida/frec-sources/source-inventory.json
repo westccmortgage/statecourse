@@ -3,8 +3,8 @@
   "reproduceWith": "node scripts/florida-source-inventory.mjs",
   "regenerateWith": "node scripts/florida-source-inventory.mjs --write",
   "note": "Every file held under florida/frec-sources, walked recursively. Hashes are recomputed from disk; nothing here is transcribed by hand or carried over from another state's register.",
-  "fileCount": 197,
-  "totalBytes": 19975265,
+  "fileCount": 202,
+  "totalBytes": 20796605,
   "files": [
     {
       "path": "florida/frec-sources/cfpb/cfpb-closing-disclosure-specimen.pdf",
@@ -90,6 +90,11 @@
       "path": "florida/frec-sources/dbpr/forms/DBPR_RE_14_Multiple_Permit_Request_Instructor.pdf",
       "sha256": "a04d1a7056407e900805c8d710a43db0b8ea562af0a38420186940e8dc076dc8",
       "bytes": 41994
+    },
+    {
+      "path": "florida/frec-sources/dbpr/forms/DBPR_RE_18_Education_Course_Approval_Application_CURRENT.pdf",
+      "sha256": "4a49f87f367a9cd979f192f17e2efcc058ffa90974b126e67bb457621b5f079a",
+      "bytes": 360093
     },
     {
       "path": "florida/frec-sources/dbpr/forms/DBPR_RE_18_FRECEduCourseAppr.pdf",
@@ -197,6 +202,11 @@
       "bytes": 5967
     },
     {
+      "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_18_Education_Course_Approval_Application_CURRENT.txt",
+      "sha256": "9af9adf1a2a374c702e013b961880e4b4fb562b35ab9148594efba9c28445fe6",
+      "bytes": 32519
+    },
+    {
       "path": "florida/frec-sources/extracted/dbpr-forms/DBPR_RE_18_FRECEduCourseAppr.txt",
       "sha256": "70553f7fb27996f445f69d9894c5b40dcff8f9cf5fa2ac09bc73006f823a9cff",
       "bytes": 11320
@@ -295,6 +305,11 @@
       "path": "florida/frec-sources/extracted/fac-rules/fac-61J2-3.015.txt",
       "sha256": "38dc8e9628b4c6dd6e6f5ee3e0f5967f112939bccd5d2ee42282d345d0d7cb62",
       "bytes": 4915
+    },
+    {
+      "path": "florida/frec-sources/extracted/FAR-2026-52-138-relevant.txt",
+      "sha256": "b45bf8f5c32d298734294595d56c62a087eb9949bf7f055e81026b7b41ddd8a8",
+      "bytes": 8458
     },
     {
       "path": "florida/frec-sources/extracted/florida-constitution/fl-constitution-article-vii.txt",
@@ -942,6 +957,11 @@
       "bytes": 26624
     },
     {
+      "path": "florida/frec-sources/fac/FAR-2026-52-138.pdf",
+      "sha256": "d1268dd77897f65d5aaa991e53f215ad1f02ae67d3de60ffe1282deadeff7c16",
+      "bytes": 392132
+    },
+    {
       "path": "florida/frec-sources/fac/ref-14599-frec-course-1-eff-010123.pdf",
       "sha256": "0f15c68748c8839602b0782fe788f9fdb5dbdf3c256a7baade95e1ede067ab47",
       "bytes": 10277379
@@ -960,6 +980,11 @@
       "path": "florida/frec-sources/statutes/fl-constitution.html",
       "sha256": "530387fd319276b5bbe4709e53b0cb8eaeadb7e86f4df7ef38da173b5d68b3f1",
       "bytes": 602247
+    },
+    {
+      "path": "florida/frec-sources/statutes/fs-1005.06.html",
+      "sha256": "0d5c66c8f1f1cf83cba1adc58e045241dc1a191eae3ae7db460670e1648a537a",
+      "bytes": 28138
     },
     {
       "path": "florida/frec-sources/statutes/fs-chapter-193.html",

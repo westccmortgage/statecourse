@@ -1,5 +1,6 @@
 /**
- * Secure end-course item-development bank. Authoring slice only: 19 of at least 100 required items.
+ * Secure end-course item-development bank. Authoring slice only: 19 drafts against a two-form,
+ * 252-slot plan. The item-count rule remains open; the filing-safe plan uses 126 items per form.
  * Nothing here constitutes a usable form, and the engine keeps the final disabled.
  */
 const item = (record) => Object.freeze({
@@ -33,11 +34,16 @@ export const SECURE_FINAL_DRAFT_ITEMS = Object.freeze([
 
 export const BANK_STATUS = Object.freeze({
   draftedItems: SECURE_FINAL_DRAFT_ITEMS.length,
-  minimumRegulatoryFormItems: 100,
+  candidate100FormItems: 100,
   stateCoursePlannedFormItems: 126,
+  currentRequiredForms: 2,
+  currentPlannedSlots: 252,
+  remainingAuthoringSlots: 233,
+  slotsRetiredIf100ItemsConfirmed: 52,
+  remainingAuthoringSlotsIf100ItemsConfirmed: 181,
   complete: false,
   usableFormGenerated: false,
-  blockers: Object.freeze(["at least 81 additional independently reviewed items", "final pagination lock", "cross-form assembly and duplication audit", "independent legal/content review"]),
+  blockers: Object.freeze(["233 additional independently reviewed slots across two forms", "final pagination lock", "cross-form assembly and duplication audit", "independent legal/content review"]),
 });
 
 export default Object.freeze({ SECURE_FINAL_DRAFT_ITEMS, BANK_STATUS });

@@ -1,6 +1,6 @@
 # Florida Course I — secure end-course item-development slice
 
-**Confidential authoring artifact. Not a usable examination form.** 19 application-level items are drafted against the paginated curriculum map; at least 100 are required for one regulatory-minimum form and StateCourse presently plans 126. Every item requires independent review before form assembly.
+**Confidential authoring artifact. Not a usable examination form.** 19 application-level items are drafted against the paginated curriculum map. The current filing plan requires 2 forms of 126 items (252 slots) pending DBPR's item-count answer; 233 slots remain. Every item requires independent review before form assembly.
 
 ## 1. FL-FD-001
 
@@ -270,7 +270,7 @@ D. Building moratorium
 
 ## Completion blockers
 
-- at least 81 additional independently reviewed items
+- 233 additional independently reviewed slots across two forms
 - final pagination lock
 - cross-form assembly and duplication audit
 - independent legal/content review

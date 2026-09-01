@@ -62,7 +62,7 @@ fs.writeFileSync(path.join(assessmentDir, "periodic-assessment-bank.md"), bank);
 
 const pageByObjective = new Map(pageMap.map((p) => [p.objective, p.curriculumPage]));
 const secureDraft = `# Florida Course I — secure end-course item-development slice\n\n` +
-  `**Confidential authoring artifact. Not a usable examination form.** ${BANK_STATUS.draftedItems} application-level items are drafted against the paginated curriculum map; at least ${BANK_STATUS.minimumRegulatoryFormItems} are required for one regulatory-minimum form and StateCourse presently plans ${BANK_STATUS.stateCoursePlannedFormItems}. Every item requires independent review before form assembly.\n\n` +
+  `**Confidential authoring artifact. Not a usable examination form.** ${BANK_STATUS.draftedItems} application-level items are drafted against the paginated curriculum map. The current filing plan requires ${BANK_STATUS.currentRequiredForms} forms of ${BANK_STATUS.stateCoursePlannedFormItems} items (${BANK_STATUS.currentPlannedSlots} slots) pending DBPR's item-count answer; ${BANK_STATUS.remainingAuthoringSlots} slots remain. Every item requires independent review before form assembly.\n\n` +
   SECURE_FINAL_DRAFT_ITEMS.map((q, i) => {
     const p = pageByObjective.get(q.objective);
     return `## ${i + 1}. ${q.id}\n\n${q.stem}\n\n${q.choices.map((c, j) => `${String.fromCharCode(65 + j)}. ${c}`).join("\n")}\n\n**Key:** ${String.fromCharCode(65 + q.correctIndex)}  \n**Rationale:** ${q.rationale}  \n**Curriculum support:** objective ${q.objective}, curriculum page ${p}  \n**Level/status:** ${q.level}; ${q.status}\n`;

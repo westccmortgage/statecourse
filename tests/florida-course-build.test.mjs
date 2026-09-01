@@ -70,6 +70,10 @@ test("secure final bank is a truthful incomplete development slice", () => {
   assert.equal(SECURE_FINAL_DRAFT_ITEMS.length, 19);
   assert.equal(BANK_STATUS.complete, false);
   assert.equal(BANK_STATUS.usableFormGenerated, false);
+  assert.equal(BANK_STATUS.currentRequiredForms, 2);
+  assert.equal(BANK_STATUS.currentPlannedSlots, 252);
+  assert.equal(BANK_STATUS.remainingAuthoringSlots, 233);
+  assert.equal(BANK_STATUS.remainingAuthoringSlotsIf100ItemsConfirmed, 181);
   assert.equal(new Set(SECURE_FINAL_DRAFT_ITEMS.map((q) => q.section)).size, 19);
   for (const q of SECURE_FINAL_DRAFT_ITEMS) {
     assert.equal(q.level, "application");
@@ -167,4 +171,36 @@ test("reviewer submission package exists and refuses unsupported readiness", () 
   ]) assert.ok(fs.existsSync(path.join(ROOT, COURSE, "submission", file)), file);
   assert.match(read(`${COURSE}/submission/objective-time-study-protocol.md`), /participant observations not yet collected/i);
   assert.match(read(`${COURSE}/submission/end-course-assessment-build-status.md`), /NO-GO for form assembly/);
+});
+
+test("filing-control package locks the current form, human sequence, and honest authoring volume", () => {
+  const filingFiles = [
+    "florida/submission/00-filing-index.md",
+    "florida/submission/01-regulatory-route-and-cie-memo.md",
+    "florida/submission/02-owner-action-and-form-data-checklist.md",
+    "florida/submission/03-current-re18-form-control.md",
+    "florida/submission/04-course-submission-manifest.md",
+    "florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md",
+    "florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md",
+    `${COURSE}/submission/curriculum-review-and-expansion-ledger.md`,
+  ];
+  for (const file of filingFiles) assert.ok(fs.existsSync(path.join(ROOT, file)), file);
+
+  const index = read("florida/submission/00-filing-index.md");
+  assert.match(index, /RE 3 filing[\s\S]*Livescan/i);
+  assert.match(index, /Two secure examinations/);
+  assert.match(index, /233 authoring slots remain/);
+
+  const formControl = read("florida/submission/03-current-re18-form-control.md");
+  assert.match(formControl, /two forms for distance pre\/post-license/i);
+  assert.match(formControl, /Superseded source - never file/i);
+
+  const courseManifest = read("florida/submission/04-course-submission-manifest.md");
+  assert.match(courseManifest, /233 additional slots/);
+  assert.match(courseManifest, /181 remain/);
+  assert.match(courseManifest, /Exam authoring is not allowed to overtake pagination/);
+
+  const cieMemo = read("florida/submission/01-regulatory-route-and-cie-memo.md");
+  assert.match(cieMemo, /course approval alone is insufficient/i);
+  assert.match(cieMemo, /expected to be the institution-level approval/i);
 });

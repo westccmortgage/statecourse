@@ -1,6 +1,6 @@
 # Florida — session handoff
 
-**Read this before touching anything.** Updated 31 August 2026 after the authorized course build.
+**Read this before touching anything.** Updated 1 September 2026 after the current RE 18 filing correction.
 
 | | |
 |---|---|
@@ -16,13 +16,13 @@
 
 Phase 0 is done and the course-development layer now exists. Nothing is filed or approved.
 
-- **48 sources** read and hashed — 197 files under `florida/frec-sources/`.
-- **98 material claims**, each naming what relies on it.
-- **16 recorded conflicts**, none resolved by guessing.
+- **51 sources** read and hashed — 202 files under `florida/frec-sources/`.
+- **100 material claims**, each naming what relies on it.
+- **18 recorded conflicts**, none resolved by guessing.
 - **19 syllabus sections, 180 learning objectives**, each page-referenced; `verify()` clean.
 - **19 curriculum files, 3,000 designed instruction minutes, 180 periodic application items and 19 secure final-item drafts.**
-- **Five 126-item form blueprints: 630 secure slots, all 180 objectives covered, 611 slots still unwritten.**
-- **76 Florida tests**, all passing. Source lock **LOCKED**.
+- **Two 126-item form blueprints: 252 secure slots, all 180 objectives covered, 233 slots still unwritten.**
+- **77 Florida tests**, all passing. Source lock **LOCKED**.
 - **Repository-wide direct run:** 1,021/1,055 pass; all 34 failures are outside the Florida build.
   A clean built-main comparison was not reproducible in this worktree because the bootstrap requires
   Linux `flock` and the host did not have enough free disk for a local dependency install.
@@ -30,11 +30,11 @@ Phase 0 is done and the course-development layer now exists. Nothing is filed or
 Run these four before believing anything above:
 
 ```bash
-node scripts/florida-source-lock.mjs            # LOCKED, 48 sources
-node scripts/florida-source-inventory.mjs       # 197 files, 30 controlling present
+node scripts/florida-source-lock.mjs            # LOCKED, 51 URLs / 19 marker validations
+node scripts/florida-source-inventory.mjs       # 202 files, 32 controlling present
 node scripts/build-florida-course.mjs           # deterministic 19-section build
-node scripts/florida-exam-blueprint.mjs         # 5 x 126 slots; content remains NO-GO
-node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs tests/florida-exam-blueprint.test.mjs # 76/76
+node scripts/florida-exam-blueprint.mjs         # 2 x 126 slots; content remains NO-GO
+node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs tests/florida-exam-blueprint.test.mjs # 77/77
 bash scripts/florida-regression-baseline.sh     # requires the repository's build dependencies
 ```
 
@@ -53,7 +53,9 @@ bash scripts/florida-regression-baseline.sh     # requires the repository's buil
   written up in `docs/florida/shared-file-change-proposals.md` and **none is applied**.
 - **Do not claim DBPR/FREC approval.** Nothing is held.
 - **Do not enable Florida enrolment.**
-- **Do not publish or submit anything externally.**
+- **Do not file an application, sign for the owner or claim approval.** Prefiling regulator
+  correspondence is authorized, but must omit SSN/background details and be sent through an
+  owner-controlled channel because Florida correspondence may become a public record.
 
 **One trap:** running the test suite rewrites
 `california/submission/02_Real_Estate_Practice/07-sb1495-traceability.md` as a side effect of the
@@ -128,18 +130,18 @@ see §5.
 
 | File | What it holds |
 |---|---|
-| `regulatory-manifest.mjs` | 48 sources with authority class, 98 claims, 16 conflicts, forbidden claims, `SCHOOL` record |
+| `regulatory-manifest.mjs` | 51 sources with authority class, material claims/conflicts, forbidden claims, `SCHOOL` record |
 | `frec-course-i-syllabus.mjs` | 19 sections, 180 page-referenced objectives, `verify()` gate |
 | `course-i-requirements.mjs` | time architecture, completion, retention, approval lifecycle, exemptions |
 | `assessment-architecture.mjs` | the three tiers + `DRAFT_QUESTION_TO_DBPR` |
 | `school-permit-ledger.mjs` | 7-row eligibility matrix, controlling texts quoted, 21 deliverables |
-| `dbpr-application-package.mjs` | 8 forms, 6 guidance docs, the 2-vs-5 conflict |
+| `dbpr-application-package.mjs` | 8 forms, 6 guidance docs, current RE 18 resolution and legacy-form blacklist |
 | `distance-delivery-matrix.mjs` | 18 dimensions: required / policy / engine / open |
 | `video-instruction-plan.mjs` | 7 candidates, 8 rejected, production rules, activation gate |
 | `course-i-curriculum.mjs` | all 19 sections, 180 objectives, provider-designed 3,000-minute allocation and substantive core lessons |
 | `periodic-assessment-bank.mjs` | 180 objective-mapped formative application prompts with rubrics |
 | `secure-final-bank-draft.mjs` | truthful 19-item development slice; no usable final form |
-| `secure-final-form-blueprint.mjs` | five 126-item form maps; 630 page-referenced authoring slots; release disabled |
+| `secure-final-form-blueprint.mjs` | two 126-item form maps; 252 page-referenced authoring slots; release disabled |
 | `distance-course-engine.mjs` | identity, progression, event, records, continuity and final-release controls |
 
 ### Scripts
@@ -165,16 +167,20 @@ Rule 61J2-3.008(4)(b)3.e makes any allocation something StateCourse must prove b
 
 **Assessment — three tiers, never mixed:**
 
-- `REGULATORY_MINIMUM_CONFIRMED` — 20 values, each quoted and cited. **70% pass. 100 items. 2 forms.**
-- `STATECOURSE_CONSERVATIVE_POLICY` — **126 items, 5 forms**, both `isNotARegulatoryMinimum: true`,
-  both `configurable`, each stating its cost.
-- `OPEN_DBPR_QUESTIONS` — 6, with readings and pending behaviour.
+- `REGULATORY_MINIMUM_CONFIRMED` — values the authorities establish without interpretation: **70% pass and 2 forms**, plus the cognitive, timing, security and retake controls. The item text remains open at **100/120/126**.
+- `ITEM_COUNT_QUESTION` — the open 100/120/126 readings, with 126 per form as the safe filing build.
+- `STATECOURSE_CONSERVATIVE_POLICY` — **126 items per form and 2 forms**. The item count is a
+  provider filing choice pending written confirmation; the current-form count is not configurable.
+- `OPEN_DBPR_QUESTIONS` — 9, with readings and safe pending behaviour.
 
-**Why 100 is confirmed:** the *broker* sentence in the same paragraph settles it. The Broker course
-is 72 hours, so "2 per instruction hour" is ≥144 against a stated floor of **95**. In both sentences
-the flat number sits well below the per-hour figure; if the multiplier governed, both would be dead
-letters. "Or" offers an alternative basis. **The 1.8-minute rule does not disambiguate** — it is a
-ceiling on time, not an equality, and 150 minutes fits every candidate count.
+**Why 100 is a strong reading but not a filing fact:** the broker parallel supports reading “or” as
+an alternative, but that remains interpretation while the package itself asks DBPR which count
+governs. Filing-safe posture is 126 items per form until DBPR answers. **The 1.8-minute rule does not
+disambiguate** — it is a ceiling on time, not an equality, and 150 minutes fits every candidate.
+
+**Form count is now resolved.** The current DBPR Education-page-linked June 2026 RE 18 requires two
+forms for distance pre/post-license courses and five only for distance continuing education. It
+also marks RE 19 and RE 20 provider-only. The legacy RE 18 is retained but forbidden for filing.
 
 **Proctoring: NOT REQUIRED and NOT PROHIBITED.** §475.17(2)(a)2 removes an obligation; it does not
 impose a ban. **Never cite §455.2123** for this — that is continuing education.
@@ -195,19 +201,20 @@ approval, regulator-answer and human-study gates remain.
 
 ### Do these first — they are external and everything waits on them
 
-1. **Follow the instructor route.** File RE 3 transaction 1010 with fingerprints and $62.75, obtain
-   authorization, then take the physical Pearson exam: closed book, 100 equal-weight MCQs, 3.5
+1. **Follow the instructor route.** File RE 3 transaction 1010 with $62.75, complete Livescan after
+   filing, obtain authorization, then take the physical Pearson exam: closed book, 100 equal-weight MCQs, 3.5
    hours, pass 75. The current Pearson portal uses 888-204-6289 and online scheduling. The $36.75
    exam fee appears only on a still-linked 2017 sheet and is not represented as current until live
    checkout confirms it.
-2. **Send the DBPR letter.** Fully drafted at `assessment-architecture.mjs` →
-   `DRAFT_QUESTION_TO_DBPR`. Four questions: item count, "instruction hour", form count (2 vs 5),
-   RE 19 for schools. Add the two carried separately: absence measurement in a distance course, and
-   the pre-licence hardship definition.
+2. **Send the DBPR/FREC letter.** Fully drafted in both `assessment-architecture.mjs` and
+   `submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md`. It covers item count/hour,
+   instructor-exam route acceptance, distance-only address/RE 9, asynchronous absence treatment,
+   online notices, pre-license reporting, current-form identity and review cadence.
 
-Then, in order: pass the exam → **DBPR RE 3** basis `[1010]` + fingerprints + $62.75 → instructor
-permit → **DBPR RE 5** citing that permit + $109.00 → school permit → **DBPR RE 6** to register the
-instructor → **DBPR RE 18** for the course ($0 for schools).
+Controlled order: **DBPR RE 3** basis `[1010]` + $62.75 → Livescan → DBPR authorization → physical
+Pearson exam → DBPR-issued instructor number → **DBPR RE 5** citing that permit + $109.00 → school
+permit → **DBPR RE 6** to register/activate the instructor → complete course/two forms/current
+**DBPR RE 18** for the course ($0 for schools) → FREC review.
 
 ### Closed inside the repository
 
@@ -241,9 +248,9 @@ Remaining order:
 1. **Independent legal/content review and expansion of authored lessons.** Current layer is a
    complete architecture and substantive draft, not yet a regulator-ready textbook.
 2. **Objective time study** with representative learners, without video.
-3. **Complete the secure bank** against the fixed five-form blueprint: 611 slots remain unwritten
-   (81 more reaches one 100-item floor form; 107 more reaches one 126-item policy form). Lock final
-   pagination, assemble forms and run duplication/cognitive-level audits.
+3. **Complete the secure bank** against the current two-form blueprint: 233 slots remain unwritten.
+   If DBPR confirms 100 items per form, 52 planned slots retire and 181 remain across both forms.
+   Lock final pagination, assemble forms and run duplication/cognitive-level audits.
 4. **Re-test video candidates** against the reviewed course.
 
 **The constraint that forces this order:** answer keys must cite the page numbers each question and

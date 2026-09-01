@@ -38,9 +38,9 @@ import test from "node:test";
 import MANIFEST, { AUTHORITY_CLASS, FORBIDDEN_CLAIMS, SCHOOL, SOURCES, REACHABILITY } from "../config/florida/regulatory-manifest.mjs";
 import SYLLABUS, { SECTIONS, SYLLABUS_REFERENCE } from "../config/florida/frec-course-i-syllabus.mjs";
 import REQUIREMENTS, { ASSESSMENT, COMPLETION, DISTANCE_DELIVERY, PERIODIC_ASSESSMENT, TIME } from "../config/florida/course-i-requirements.mjs";
-import ARCH, { OPEN_DBPR_QUESTIONS, PROCTORING, REGULATORY_MINIMUM_CONFIRMED, STATECOURSE_CONSERVATIVE_POLICY, TIER } from "../config/florida/assessment-architecture.mjs";
+import ARCH, { ITEM_COUNT_QUESTION, OPEN_DBPR_QUESTIONS, PROCTORING, REGULATORY_MINIMUM_CONFIRMED, STATECOURSE_CONSERVATIVE_POLICY, TIER } from "../config/florida/assessment-architecture.mjs";
 import LEDGER, { ELIGIBILITY_MATRIX, INSTRUCTOR_PERMIT_ROUTES, floridaReadiness } from "../config/florida/school-permit-ledger.mjs";
-import PACKAGE, { EXAMINATION_FORM_COUNT_CONFLICT, FORMS } from "../config/florida/dbpr-application-package.mjs";
+import PACKAGE, { EXAMINATION_FORM_COUNT_RESOLUTION, FORMS } from "../config/florida/dbpr-application-package.mjs";
 import MATRIX, { DELIVERY_MATRIX } from "../config/florida/distance-delivery-matrix.mjs";
 import VIDEO, { CANDIDATES, REJECTED } from "../config/florida/video-instruction-plan.mjs";
 
@@ -257,15 +257,20 @@ test("RE 18 governs Course I despite its misleading running header", () => {
   assert.ok(re18.deliveryMechanismsOnForm.includes("Distance"));
   assert.ok(re18.initialApprovalAttachments.some((a) => /[Tt]hree per hour/.test(a)),
     "the three-objectives-per-hour requirement must be recorded");
+  assert.match(re18.localCopy, /CURRENT\.pdf$/);
+  assert.ok(re18.initialApprovalAttachments.some((a) => /Two end of course examinations/.test(a)));
+  assert.equal(PACKAGE.formById("RE-19").appliesToStateCourse, false);
 });
 
-test("the two-versus-five examination conflict is recorded, not averaged away", () => {
-  const c = EXAMINATION_FORM_COUNT_CONFLICT;
+test("the current RE 18 resolves two forms for distance pre-license and blacklists the legacy form", () => {
+  const c = EXAMINATION_FORM_COUNT_RESOLUTION;
   assert.equal(c.ruleMinimum, 2);
   assert.equal(c.checklistSays, 2);
-  assert.equal(c.applicationSays, 5);
-  assert.equal(c.openQuestion, true);
-  assert.match(c.stateCourseposture, /provider policy/i);
+  assert.equal(c.currentApplicationSaysForPrePostLicense, 2);
+  assert.equal(c.currentApplicationSaysForContinuingEducation, 5);
+  assert.equal(c.legacyUseForFiling, false);
+  assert.equal(c.openQuestion, false);
+  assert.match(c.stateCourseposture, /Build and file two forms/i);
 });
 
 /* ── assessment: three tiers, never mixed ────────────────────────────────────────────────────── */
@@ -278,37 +283,38 @@ test("every confirmed assessment value carries the CONFIRMED tier and a citation
   }
 });
 
-test("100 items is the confirmed regulatory minimum and 126 is provider policy", () => {
-  assert.equal(REGULATORY_MINIMUM_CONFIRMED.minimumItems.value, 100);
-  assert.equal(REGULATORY_MINIMUM_CONFIRMED.minimumItems.tier, TIER.CONFIRMED);
-
+test("the item-count text remains open and 126 is conservative provider policy", () => {
+  assert.deepEqual(ITEM_COUNT_QUESTION.candidates, [100, 120, 126]);
+  assert.equal(ITEM_COUNT_QUESTION.tier, TIER.OPEN);
+  assert.equal(ITEM_COUNT_QUESTION.settled, false);
   assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.value, 126);
   assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.tier, TIER.POLICY);
   assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.isNotARegulatoryMinimum, true,
     "126 must never be presented as something Florida requires");
-  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.regulatoryMinimumIs, 100);
+  assert.deepEqual(STATECOURSE_CONSERVATIVE_POLICY.itemCount.regulatoryTextCandidates, [100, 120, 126]);
   assert.equal(STATECOURSE_CONSERVATIVE_POLICY.itemCount.configurable, true,
     "the engine must stay configurable until DBPR answers");
   assert.ok(STATECOURSE_CONSERVATIVE_POLICY.itemCount.costOfThisChoice,
     "a conservative choice with a cost must state the cost");
 
   assert.equal(ASSESSMENT.plannedItemCountIsProviderPolicy, true);
-  assert.equal(ASSESSMENT.regulatoryMinimumItems, 100);
+  assert.equal(ASSESSMENT.regulatoryMinimumItems, null);
+  assert.equal(ASSESSMENT.itemCountSettled, false);
 });
 
-test("five examination forms is provider policy over a rule floor of two", () => {
+test("two examination forms matches the rule and current RE 18", () => {
   assert.equal(REGULATORY_MINIMUM_CONFIRMED.minimumFormCount.value, 2);
-  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.value, 5);
-  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.isNotARegulatoryMinimum, true);
-  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.configurable, true);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.value, 2);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.isNotARegulatoryMinimum, false);
+  assert.equal(STATECOURSE_CONSERVATIVE_POLICY.formCount.configurable, false);
 });
 
 test("the examination fits its time ceiling at both the planned count and the minimum", () => {
   const C = ARCH.COMPUTED;
   assert.equal(C.allottedMinutes, 150);
   assert.ok(C.withinTimeCeilingAsPlanned, `${C.plannedItems} items in 150 minutes must sit under 1.8 min/item`);
-  assert.ok(C.withinTimeCeilingAtMinimum);
-  assert.ok(C.minutesPerItemAsPlanned < C.minutesPerItemAtRegulatoryMinimum,
+  assert.ok(C.withinTimeCeilingAt100ItemCandidate);
+  assert.ok(C.minutesPerItemAsPlanned < C.minutesPerItemAt100ItemCandidate,
     "the conservative choice is measurably tighter on students, and the numbers must show it");
 });
 
@@ -334,7 +340,7 @@ test("the open DBPR questions are carried with readings and a drafted letter", (
     assert.ok(q.question && q.pendingBehaviour, `${q.id} must state the question and what is done pending an answer`);
   }
   const ids = OPEN_DBPR_QUESTIONS.map((q) => q.id);
-  for (const id of ["itemCountBasis", "formCount", "instructionHourDefinition", "re19ForSchools"]) {
+  for (const id of ["itemCountBasis", "instructionHourDefinition", "schoolPermitExamRouteAcceptance", "currentRe18Identity"]) {
     assert.ok(ids.includes(id), `${id} must stay open`);
   }
   assert.ok(ARCH.DRAFT_QUESTION_TO_DBPR.length > 800, "the letter must be drafted, not described");

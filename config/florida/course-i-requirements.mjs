@@ -77,14 +77,14 @@ export const TIME = Object.freeze({
      delivery therefore buys no discount on time; it is the same 3,150 minutes. */
   distanceHourEqualsClassroomHour: true,
 
-  /* s. 475.17(2)(a)1, Fla. Stat.: a notice of satisfactory completion "shall not be issued if the
-     student has absences in excess of 8 classroom hours". Rule 61J2-3.008(4)(a) states the same
-     ceiling as a condition of administering the examination. In an asynchronous course there is no
-     absence to count in the classroom sense; what stands in its place is elapsed instructional time
-     actually delivered, which is why the timed-instruction control matters here and is not merely a
-     nicety. How FREC measures absence in a distance course is an open question carried to it. */
+  /* s. 475.17(2)(a)1, Fla. Stat. carries an eight-classroom-hour absence ceiling. It is not a
+     permission for an asynchronous learner to omit eight hours: Rule 61J2-3.008(4)(b)3.i separately
+     bars the final until every syllabus session is satisfactorily completed. StateCourse therefore
+     requires 100% session completion and asks only how DBPR wants the classroom-language measured
+     or reported for asynchronous delivery. */
   maximumAbsenceHours: 8,
   absenceMeasurementInDistanceCourseSettled: false,
+  allSyllabusSessionsRequired: true,
 
   /* Rule 61J2-3.008(4)(b)3.d: the submission must include a detailed course time-line, and the
      school must make that timeline available to students BEFORE they enrol. Not after payment. */
@@ -116,7 +116,9 @@ const POLICY = ASSESSMENT_ARCHITECTURE.STATECOURSE_CONSERVATIVE_POLICY;
 export const ASSESSMENT = Object.freeze({
   /* confirmed by primary authority */
   passingScorePercent: CONFIRMED.passingScorePercent.value,
-  regulatoryMinimumItems: CONFIRMED.minimumItems.value,
+  regulatoryMinimumItems: null,
+  itemCountCandidates: ASSESSMENT_ARCHITECTURE.ITEM_COUNT_QUESTION.candidates,
+  itemCountSettled: ASSESSMENT_ARCHITECTURE.ITEM_COUNT_QUESTION.settled,
   regulatoryMinimumFormCount: CONFIRMED.minimumFormCount.value,
   maximumCrossFormDuplicationPercent: CONFIRMED.maximumCrossFormDuplicationPercent.value,
   minimumApplicationLevelPercent: CONFIRMED.minimumApplicationLevelPercent.value,
@@ -146,7 +148,7 @@ export const ASSESSMENT = Object.freeze({
   plannedItemCount: POLICY.itemCount.value,
   plannedItemCountIsProviderPolicy: true,
   plannedFormCount: POLICY.formCount.value,
-  plannedFormCountIsProviderPolicy: true,
+  plannedFormCountIsProviderPolicy: false,
   allottedMinutes: POLICY.allottedMinutes.value,
 
   /* computed */
@@ -307,15 +309,15 @@ export const OPEN_QUESTIONS = Object.freeze([
      place to answer them. */
   Object.freeze({
     id: "see-assessment-architecture",
-    question: "Six examination and application questions are carried in config/florida/assessment-architecture.mjs — itemCountBasis, formCount, instructionHourDefinition, absenceInDistanceCourse, re19ForSchools, instructorExaminationLogistics.",
-    cite: "Rule 61J2-3.008(4)(d), F.A.C. and DBPR RE 18",
+    question: "The live school, instructor, item-count, location, asynchronous-delivery, reporting, form-identity and review-cycle questions are carried in config/florida/assessment-architecture.mjs.",
+    cite: "Rule 61J2-3.008(4)(d), F.A.C.; current Education-page-linked DBPR RE 18",
     plannedPending: "see OPEN_DBPR_QUESTIONS and DRAFT_QUESTION_TO_DBPR",
   }),
   Object.freeze({
     id: "absence-in-a-distance-course",
     question: "How is the 8-classroom-hour absence ceiling measured in an asynchronous distance course, where there is no class to be absent from?",
     cite: "s. 475.17(2)(a)1, Fla. Stat.; Rule 61J2-3.008(4)(a), F.A.C.",
-    plannedPending: "track delivered instructional time per student and treat undelivered time as the analogue of absence",
+    plannedPending: "require satisfactory completion of every syllabus session; ask only how DBPR wants the separate eight-hour language measured or reported asynchronously",
   }),
   Object.freeze({
     id: "pre-licence-hardship",
@@ -328,12 +330,6 @@ export const OPEN_QUESTIONS = Object.freeze([
     question: "Rule 61J2-17.015(2) requires the anti-recruiting statement to be posted 'in every classroom and administrative area' and read at the beginning of each course, and Rule 61J2-3.008(4)(b)3.g requires instructor availability to be 'posted in a prominent location'. What satisfies posting and reading for a school with no physical classroom?",
     cite: "Rules 61J2-17.015(2) and 61J2-3.008(4)(b)3.g, F.A.C.",
     plannedPending: "surface both at course start and in a persistent, reachable place in the course itself, not in a footer",
-  }),
-  Object.freeze({
-    id: "school-permit-application-form",
-    question: "Which DBPR form applies for a real estate school permit and an instructor permit, and what does each require? Neither could be identified from the Department's own site from this environment.",
-    cite: "s. 475.451(1)-(2), Fla. Stat.",
-    plannedPending: "no form number is recorded anywhere in this build",
   }),
 ]);
 

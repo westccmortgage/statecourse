@@ -1,8 +1,8 @@
 /**
  * Florida Course I secure end-course examination blueprint.
  *
- * This module plans the five 126-item forms StateCourse has chosen to prepare while DBPR's
- * two-versus-five form conflict and the 100-versus-126 item question remain open. It does not
+ * This module plans the two 126-item forms required by the current DBPR RE 18 for distance
+ * pre/post-license education while the 100-versus-120/126 item question remains open. It does not
  * manufacture examination content and it does not make an incomplete bank look complete.
  *
  * The blueprint deliberately targets zero question reuse between forms. Florida permits no more
@@ -13,12 +13,13 @@
 
 import { SECTION_PLANS } from "./course-i-curriculum.mjs";
 import {
+  ITEM_COUNT_QUESTION,
   REGULATORY_MINIMUM_CONFIRMED,
   STATECOURSE_CONSERVATIVE_POLICY,
 } from "./assessment-architecture.mjs";
 import { SECURE_FINAL_DRAFT_ITEMS } from "./secure-final-bank-draft.mjs";
 
-const FORM_NAMES = Object.freeze(["A", "B", "C", "D", "E"]);
+const FORM_NAMES = Object.freeze(["A", "B"]);
 const SECTION_ORDER = Object.freeze([14, 4, 18, 2, 11, 7, 16, 5, 13, 1, 9, 17, 3, 12, 6, 19, 8, 15, 10]);
 const TARGETS = Object.freeze({ application: 89, comprehension: 25, knowledge: 12 });
 
@@ -43,6 +44,7 @@ const objectivesBySection = new Map(SECTION_PLANS.map((section) => [
   section.number,
   objectiveRecords.filter((objective) => objective.section === section.number),
 ]));
+const draftsByObjective = new Map(SECURE_FINAL_DRAFT_ITEMS.map((item) => [item.objective, item]));
 
 /** Hamilton allocation preserves the syllabus's objective proportions and sums exactly to 126. */
 function allocateItemsBySection(itemCount) {
@@ -86,10 +88,27 @@ const authoringDirection = Object.freeze({
   knowledge: "Test a specific fact, term, method, rule, date, formula, or name that the assigned curriculum page expressly teaches.",
 });
 
+const selectionPlan = new Map(SECTION_ITEM_ALLOCATION.map(({ section, items: target }) => {
+  const objectives = objectivesBySection.get(section);
+  const formA = objectives.slice(0, target);
+  const draft = SECURE_FINAL_DRAFT_ITEMS.find((item) => item.section === section);
+  const draftObjective = objectives.find((objective) => objective.objective === draft?.objective);
+  if (draftObjective && !formA.some((objective) => objective.objective === draftObjective.objective)) {
+    formA[formA.length - 1] = draftObjective;
+  }
+  const absentFromA = objectives.filter((objective) => !formA.some((selected) => selected.objective === objective.objective));
+  const formB = [...absentFromA];
+  for (const objective of objectives) {
+    if (formB.length === target) break;
+    if (!formB.some((selected) => selected.objective === objective.objective)) formB.push(objective);
+  }
+  return [section, Object.freeze([Object.freeze(formA), Object.freeze(formB)])];
+}));
+
 function selectedObjectives(sectionNumber, target, formIndex) {
-  const objectives = objectivesBySection.get(sectionNumber);
-  const offset = (formIndex * target) % objectives.length;
-  return Array.from({ length: target }, (_, index) => objectives[(offset + index) % objectives.length]);
+  const selected = selectionPlan.get(sectionNumber)?.[formIndex];
+  if (!selected || selected.length !== target) throw new Error(`selection plan missing for section ${sectionNumber}, form ${formIndex}`);
+  return [...selected];
 }
 
 function interleavedObjectives(formIndex) {
@@ -114,13 +133,19 @@ function interleavedObjectives(formIndex) {
   return ordered;
 }
 
-const draftsByObjective = new Map(SECURE_FINAL_DRAFT_ITEMS.map((item) => [item.objective, item]));
 const assignedDrafts = new Set();
 
 export const FORM_BLUEPRINTS = Object.freeze(FORM_NAMES.map((form, formIndex) => {
   const objectives = interleavedObjectives(formIndex);
+  const levels = objectives.map((_, index) => cognitiveLevelAt(index));
+  for (let index = 0; index < objectives.length; index += 1) {
+    if (!draftsByObjective.has(objectives[index].objective) || levels[index] === "application") continue;
+    const swap = objectives.findIndex((objective, candidate) =>
+      levels[candidate] === "application" && !draftsByObjective.has(objective.objective));
+    if (swap >= 0) [levels[index], levels[swap]] = [levels[swap], levels[index]];
+  }
   const slots = objectives.map((objective, index) => {
-    const level = cognitiveLevelAt(index);
+    const level = levels[index];
     const draft = draftsByObjective.get(objective.objective);
     const useDraft = draft && level === "application" && !assignedDrafts.has(draft.id);
     if (useDraft) assignedDrafts.add(draft.id);
@@ -146,7 +171,7 @@ export const FORM_BLUEPRINTS = Object.freeze(FORM_NAMES.map((form, formIndex) =>
   return Object.freeze({
     form,
     policyItemCount: STATECOURSE_CONSERVATIVE_POLICY.itemCount.value,
-    regulatoryMinimumItems: REGULATORY_MINIMUM_CONFIRMED.minimumItems.value,
+    itemCountCandidates: ITEM_COUNT_QUESTION.candidates,
     allottedMinutes: STATECOURSE_CONSERVATIVE_POLICY.allottedMinutes.value,
     answerKeyId: `FL-COURSE-I-FORM-${form}-KEY`,
     answerKeyGenerated: false,
@@ -167,14 +192,8 @@ export const BLUEPRINT_STATUS = Object.freeze({
   draftedItemsAvailable: SECURE_FINAL_DRAFT_ITEMS.length,
   draftedSlotsAssigned: draftedSlots.length,
   remainingAuthoringSlots: allSlots.length - draftedSlots.length,
-  additionalItemsForOneRegulatoryMinimumForm: Math.max(
-    0,
-    REGULATORY_MINIMUM_CONFIRMED.minimumItems.value - SECURE_FINAL_DRAFT_ITEMS.length,
-  ),
-  additionalItemsForOnePolicyForm: Math.max(
-    0,
-    STATECOURSE_CONSERVATIVE_POLICY.itemCount.value - SECURE_FINAL_DRAFT_ITEMS.length,
-  ),
+  slotsRetiredIf100ItemsConfirmed: allSlots.length - (FORM_BLUEPRINTS.length * 100),
+  remainingAuthoringSlotsIf100ItemsConfirmed: (FORM_BLUEPRINTS.length * 100) - draftedSlots.length,
   bankContentComplete: false,
   formsReadyForAssembly: 0,
   crossFormDuplicationTargetPercent: 0,

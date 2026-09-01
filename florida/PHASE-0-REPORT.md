@@ -1,12 +1,15 @@
-# Florida Phase 0 v2 — acceptance report
+# Florida Phase 0 v2 — acceptance report with filing-package update
 
 **Product:** Florida Sales Associate Pre-License Course — FREC Course I
-**Branch:** `claude/florida-frec-phase0-klhwu5` (based on `b38c81a`; not rebased — see §11)
+**Branch:** `relay-florida` (the Florida line remains isolated; not rebased — see §11)
 **Supersedes:** Phase 0 v1, which was rejected.
 
-**Post-Phase-0 update, 31 Aug 2026:** curriculum authoring was authorized and the 19-section
-course-development layer is built. This report remains the Phase 0 acceptance record; its former
-authorization and source-acquisition blockers are superseded by the current `florida/HANDOFF.md`.
+**Post-Phase-0 update, 1 Sep 2026:** curriculum authoring was authorized and the 19-section
+course-development layer is built. The current DBPR Education-page-linked RE 18, effective June
+2026, supersedes the legacy application for planning and filing. It requires two end-of-course
+examinations for distance pre/post-licensing and labels RE 19 and RE 20 provider-only. This report
+remains the Phase 0 acceptance record; current execution controls are in `florida/HANDOFF.md` and
+`florida/submission/00-filing-index.md`.
 
 ---
 
@@ -40,7 +43,7 @@ see that 126 was a judgement rather than a rule. **Corrected in §8.**
 
 ### 1. Source acquisition — **GO**
 
-48 sources, all read and hashed; 197 files under `florida/frec-sources/` after the post-Phase-0
+51 sources, all read and hashed; 202 files under `florida/frec-sources/` after the post-Phase-0
 source acquisitions.
 
 Added in v2: Rule 61-35.027 F.A.C. (which adopts every DBPR RE form by reference), eight DBPR RE
@@ -51,9 +54,9 @@ Every source now carries an **authority class** — CONSTITUTION, STATUTE, RULE,
 GUIDANCE, NAVIGATION — with the resolution order stated. v1 treated all sources as interchangeable, which is
 how a form-level document came to outrank a statute.
 
-`node scripts/florida-source-inventory.mjs` → tracked inventory matches disk; 30/30 controlling
-sources present; 48/48 manifest sources and 2/2 syllabus copies resolve.
-`node scripts/florida-source-lock.mjs` → **LOCKED**, all 48 URLs reachable and all 17
+`node scripts/florida-source-inventory.mjs` → tracked inventory matches disk; 32/32 controlling
+sources present; 51/51 manifest sources and 2/2 syllabus copies resolve.
+`node scripts/florida-source-lock.mjs` → **LOCKED**, all 51 URLs reachable and all 19
 marker-locked remote and held bodies identify the intended documents.
 
 ### 2. Syllabus verification — **GO**
@@ -124,19 +127,21 @@ All forms obtained, hashed and read. Adopted by Rule 61-35.027, F.A.C.
 | DBPR RE 5 | Application for School Permit | May 2019 | $109.00 |
 | DBPR RE 6 | School Change of Status Transactions | — | — |
 | DBPR RE 9 | Application for Additional School Location | Jun 2015 | $50.00 |
-| DBPR RE 18 | Education Course Approval Application | — | $0 for schools |
-| DBPR RE 19 | FREC CE Provider Approval Application | — | — |
-| DBPR RE 20 | FREC Request for Instructor Evaluation | — | — |
+| DBPR RE 18 | Education Course Approval Application | Jun 2026 | $0 for schools |
+| DBPR RE 19 | FREC CE Provider Approval Application | — | provider-only; not a school attachment |
+| DBPR RE 20 | FREC Request for Instructor Evaluation | — | provider-only; not a school attachment |
 
 21 deliverables, 0 held, 19 of 21 now verified against the actual applications.
 
 ### 6. Course-submission readiness — **NOT READY, requirements known**
 
-**RE 18 governs Course I** despite its "Continuing Education" running header: Section III carries
-"Sales Associate Pre-Licensure" and "Distance". Section V initial-approval attachments: timed
-outline; learning objectives three per hour; course materials with delivery-method explanation;
-RE 19 (open question); RE 20 (providers only); **five** end-of-course examinations for distance
-courses; page-referenced answer keys. Plus, from the rule, **access to the course in the format
+**The current DBPR Education-page-linked RE 18 governs Course I.** Section III carries "Sales
+Associate Pre-Licensure" and "Distance". Section V initial-approval attachments for a permitted
+school are: timed outline; learning objectives three per hour; course materials with
+delivery-method explanation; **two** end-of-course examinations for distance pre/post-licensing;
+and page-referenced answer keys. RE 19 and RE 20 are expressly provider-only. The legacy RE 18 that
+asked for five examinations across distance education is held solely for audit and is blacklisted
+for filing. Plus, from the rule, the school must provide **access to the course in the format
 students receive**.
 
 **Ordering constraint:** answer keys must cite page numbers, so the examination cannot be authored
@@ -157,31 +162,37 @@ minute hours)".
 
 `config/florida/assessment-architecture.mjs` separates:
 
-- **`REGULATORY_MINIMUM_CONFIRMED`** — 20 values, each with citation and quote. Pass mark **70%**;
-  **100 items**; **2 forms**; 15% cross-form cap; ≥70% application / ≤10% knowledge; 4 choices;
+- **`REGULATORY_MINIMUM_CONFIRMED`** — the values settled by controlling text, each with citation
+  and quote. Pass mark **70%**; **2 forms**; 15% cross-form cap; ≥70% application / ≤10% knowledge; 4 choices;
   1.8 min/item ceiling; page-referenced unique answer keys; order must not follow course order; no
   hint/back/retry; all sessions before the examination; 30-day wait, one retake per year, different
   form each time.
-- **`STATECOURSE_CONSERVATIVE_POLICY`** — **126 items** and **5 forms**, both flagged
-  `isNotARegulatoryMinimum: true`, both `configurable`, each stating its cost.
-- **`OPEN_DBPR_QUESTIONS`** — six, with readings and pending behaviour, plus a fully drafted letter.
+- **`ITEM_COUNT_QUESTION`** — the unresolved **100 / 120 / 126** readings, with 126 as the filing
+  position pending written DBPR confirmation.
+- **`STATECOURSE_CONSERVATIVE_POLICY`** — **126 items per form** and the current-form-required
+  **2 forms**. The count remains configurable; the form count does not.
+- **`OPEN_DBPR_QUESTIONS`** — nine operational questions with safe pending behaviour, plus a fully
+  drafted letter.
 
-**Why 100 is the confirmed minimum.** The broker sentence in the same paragraph settles it, and v1
-missed it: the Broker course is 72 hours, so "2 items per instruction hour" is ≥144 against a stated
-floor of **95**. In both sentences the flat number sits well below the per-hour number. If the
-multiplier governed, both flat numbers would be dead letters. "Or" offers an alternative basis.
+**Why 100 remains a plausible but unconfirmed reading.** The broker sentence supports treating
+"or" as an alternative basis: the Broker course is 72 hours, so "2 items per instruction hour" is
+≥144 against a stated floor of 95. But the legal text still supports competing operational readings
+for Course I. The package therefore does not call 100 settled and plans 126 per form until DBPR
+answers in writing.
 
 **Why the 1.8-minute rule does not disambiguate.** It is a ceiling on time, not an equality. 150
 minutes sits under it for 100 (180), 120 (216) and 126 (226.8) alike.
 
-**126 stays as policy** — 1.19 min/item against 1.50 at the minimum, a real cost to students,
-recorded so that confirming 100 is a config change and not an archaeology exercise.
+**126 stays as filing policy** — 1.19 min/item against 1.50 at the 100-item candidate, a real cost
+to students, recorded so that a written DBPR answer can be implemented as a controlled config
+change.
 
 **Proctoring: NOT REQUIRED and NOT PROHIBITED.** s. 475.17(2)(a)2 removes an obligation; it does not
 impose a ban. Do not cite s. 455.2123 — that is continuing education.
 
-**A conflict inside DBPR's own package:** the rule and the checklist say **two** examination forms;
-RE 18 says **five**. Recorded, not averaged.
+**Form count is now closed:** the current Education-page-linked RE 18 says two forms for distance
+pre/post-licensing and five only for distance continuing education. The old five-form RE 18 must
+not be used.
 
 ### 9. Distance-delivery architecture — **GO**
 
@@ -248,7 +259,7 @@ Four of the five preconditions are met. One is not.
 | Precondition | Status |
 |---|---|
 | Zero unresolved syllabus transcription errors | **MET** — 180 verified, page-referenced, 5 OCR discrepancies resolved |
-| A defensible examination design | **MET** — three tiers, 100 confirmed, 126 as labelled policy, configurable |
+| A defensible examination design | **MET** — two forms; 126 items per form pending a written answer on 100/120/126 |
 | Complete current form and permit mapping | **MET** — 7 forms + 6 guidance documents held and read |
 | Source-locked delivery requirements | **MET** — 18-dimension matrix, lock LOCKED |
 | No unexplained test regression | **MET** — 0 introduced; the 19 are explained and pre-existing |
@@ -268,11 +279,11 @@ the objective study, independent review, complete secure forms, permits and appr
 | 2 | Instructor examination passed | **No** | RE 3 authorization + examination | File RE 3, then sit Pearson exam |
 | 3 | Instructor permit | **No** | Application + regulator | File DBPR RE 3, basis [1010], fingerprints, $62.75 |
 | 4 | School permit | **No** | Application + regulator | File DBPR RE 5 citing the instructor permit, $109.00 |
-| 5 | Item count — 100, 120 or 126 | **No** | Regulator response | Send `DRAFT_QUESTION_TO_DBPR` |
-| 6 | Examination form count — 2 or 5 | **No** | Regulator response | Same letter, question 3 |
-| 7 | Whether a school must file RE 19 | **No** | Regulator response | Same letter, question 4 |
-| 8 | Absence measurement in a distance course | **No** | Regulator response | Add to the letter |
-| 9 | Pre-licence hardship definition | **No** | Regulator response | Add to the letter |
+| 5 | Item count — 100, 120 or 126 | **No** | Written DBPR response | Send the staged prefiling inquiry; build 126 per form meanwhile |
+| 6 | Examination form count | **Closed** | Current linked RE 18 | Build two distance pre/post-license forms |
+| 7 | Whether a school must file RE 19 | **Closed** | Current linked RE 18 | Do not include RE 19; it is provider-only |
+| 8 | Async treatment of the 8-hour absence language | **No** | Written DBPR response | Require all syllabus sessions meanwhile |
+| 9 | Pre-licence hardship definition | **No** | Regulator response | Retain as a separately labelled interpretation issue |
 | 10 | CFPB Closing Disclosure specimen (FL-V06) | **Closed** | — | CIB-linked specimen plus current Appendix H/H-25(A)/H-25(B) package held and validated |
 | 11 | Florida homestead provisions (FL-V07) | **Closed** | — | Constitutional/statutory package plus current DOR 2026 adjustment sources held and validated |
 | 12 | `sync-california-pdf-downloads.mjs` missing | **Yes**, but not Florida's | Owner decision | California/Texas owner restores or removes the line |
@@ -307,8 +318,8 @@ bootstrap requires Linux `flock` and this host did not have enough free disk for
 The direct repository-wide test run completed 1,021/1,055; its 34 failures were outside Florida.
 
 ```
-node scripts/florida-source-lock.mjs            → LOCKED, 48/48 URLs and 17/17 marker validations
-node scripts/florida-source-inventory.mjs       → 197 files, 30/30 controlling present
-node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs → 68/68 pass
+node scripts/florida-source-lock.mjs            → LOCKED, 51/51 URLs and 19/19 marker validations
+node scripts/florida-source-inventory.mjs       → 202 files, 32/32 controlling present
+node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs tests/florida-exam-blueprint.test.mjs → 77/77 pass
 node --test tests/*.test.mjs                    → 1,021/1,055 pass; 34 non-Florida failures
 ```

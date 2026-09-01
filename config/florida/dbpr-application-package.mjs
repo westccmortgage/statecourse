@@ -27,12 +27,13 @@
  *                                    alternative the statute expressly grants.
  *
  * That ordering matters twice in this file. It is why DBPR RE 5's two qualification checkboxes are
- * treated as CORROBORATION of s. 475.451(2)(a) rather than as its source. And it is why the
- * five-examination requirement on DBPR RE 18 is recorded as an administrative requirement sitting
- * above a rule minimum of two, rather than as a discovery that the rule "really means" five.
+ * treated as CORROBORATION of s. 475.451(2)(a) rather than as its source. And it is why the legacy
+ * RE 18's five-examination language is retained as superseded evidence, never promoted over the
+ * rule or the current two-form pre/post-license application.
  *
- * WHERE THE DEPARTMENT'S OWN DOCUMENTS DISAGREE WITH EACH OTHER. They do, in one place that matters
- * for the build, and it is recorded rather than averaged away. See EXAMINATION_FORM_COUNT_CONFLICT.
+ * CURRENT-FORM CONTROL. DBPR's Education page now links a revised RE 18 that separates distance
+ * pre/post-license courses (two examination forms) from distance continuing education (five). The
+ * older URL is retained as superseded evidence and must never be used for filing.
  */
 
 const form = (record) => Object.freeze({ obtained: true, ...record });
@@ -45,7 +46,9 @@ export const FORMS_ADOPTED_BY = Object.freeze({
   title: "Real Estate Forms",
   effectiveDate: "2017-10-30",
   localCopy: "florida/frec-sources/fac/fac-61-35.027.doc",
-  note: "Each form below carries, in its own header, the line 'Incorporated by Rule: 61-35.027'.",
+  pendingAmendment:
+    "Florida Administrative Register Vol. 52 No. 138 (2026-07-17), pp. 3080-81, proposes adopting revised RE 18 effective June 2026 as Ref-19807. DBPR already links that revised form. Confirm final rule/form identity immediately before filing.",
+  note: "Each form carries the incorporation line. The current Education-page-linked RE 18 governs package design while adoption monitoring remains a signature-time gate.",
 });
 
 export const FORMS = Object.freeze([
@@ -145,10 +148,11 @@ export const FORMS = Object.freeze([
     number: "DBPR RE 18",
     titleOnForm: "Education Course Approval Application",
     headerTitle: "DBPR RE 18 FREC Continuing Education Course Approval Application",
+    effective: "June 2026 — current Education-page-linked revision; adoption monitoring required",
     pages: 6,
     fee: "$80 per initial application and $80 per renewal for PROVIDERS; $0 for schools",
-    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_18_FRECEduCourseAppr.pdf",
-    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_18_FRECEduCourseAppr.pdf",
+    localCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_18_Education_Course_Approval_Application_CURRENT.pdf",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_-_FREC_18_Education_Course_Approval_Application.pdf",
     governs: "course approval, including FREC Course I",
     /* The header says "Continuing Education Course Approval Application" and the body title says
        "Education Course Approval Application". The header is the misleading one: Section III's
@@ -173,9 +177,9 @@ export const FORMS = Object.freeze([
       "Course timed outline specifying subjects, major topics, and subtopics",
       "Learning Objectives — three per hour",
       "Course materials including explanation of delivery method",
-      "Education Provider Approval Application form DBPR RE 19",
+      "Education Provider Approval Application form DBPR RE 19 (for Providers Only)",
       "Instructor Information (for Providers Only): DBPR RE 20 per instructor, plus a resume",
-      "Five end of course examinations (for distance education courses only), multiple choice with 4 answer choices per question",
+      "Two end of course examinations (for distance pre-licensing and post-licensing education courses only), multiple choice with 4 answer choices per question",
       "Answer keys (for distance education courses only), referencing the page numbers on which each question and correct answer is based",
     ]),
     renewalAttachments: Object.freeze([
@@ -192,13 +196,9 @@ export const FORMS = Object.freeze([
     localCopy: "florida/frec-sources/dbpr/education/DBPR_RE_19_Provider_Approval.pdf",
     url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_19_FREC_Continuing_Education_Provider_Approval_Application.pdf",
     governs: "approval as a continuing education PROVIDER, which is a different status from a permitted school",
-    /* RE 18's attachment list names RE 19 without a "Providers Only" qualifier, while the very next
-       line carries one. A permitted real estate school is not the same thing as an approved CE
-       provider, and the distance-education checklist says elsewhere that RE 20 and the fee are for
-       "approved providers only, licensed real estate schools do not need to fulfill this
-       requirement". Whether a permitted school filing Course I must also file RE 19 is therefore
-       genuinely unclear on the face of the documents, and is an open question rather than a guess. */
-    appliesToStateCourse: null,
+    appliesToStateCourse: false,
+    applicationBasis:
+      "The current Education-page-linked RE 18 marks RE 19 '(for Providers Only)'. StateCourse's Course I filing route is as a permitted school, not a CE provider.",
   }),
 
   form({
@@ -243,7 +243,7 @@ export const GUIDANCE = Object.freeze([
       "'All courses must be based on the FREC I syllabus.'",
       "'Timeline justifying the hours requested on your application. (50 minute hours)'",
       "'Learning objectives (3-per hour)'",
-      "'Two end of course examinations (multiple choice) and answer keys reflecting the page number where the answers can be found.'",
+      "'Two end of course examinations (multiple choice) and answer keys reflecting the page number where the answers can be found.' This now agrees with the current RE 18 for distance pre/post-license courses.",
       "Repeats the Rule 61J2-3.008(4)(b)3 distance criteria, including identity verification, the objective time study, the examination time control, the prohibition on hint/back/retry, and the student certification statement.",
     ]),
   }),
@@ -297,22 +297,25 @@ export const GUIDANCE = Object.freeze([
   }),
 ]);
 
-/* ── the disagreement inside the Department's own package ─────────────────────────────────────
-   Recorded here rather than resolved, because resolving it by picking a number is exactly the move
-   this project does not make. */
-export const EXAMINATION_FORM_COUNT_CONFLICT = Object.freeze({
+/* ── the former disagreement is resolved by the current published form ─────────────────────── */
+export const EXAMINATION_FORM_COUNT_RESOLUTION = Object.freeze({
   id: "examination-form-count",
   ruleMinimum: 2,
   ruleCite: "Rule 61J2-3.008(4)(d), F.A.C. — 'The school shall develop at least 2 forms of the end-of-course examination'",
   checklistSays: 2,
   checklistCite: "FREC Distance Education Checklist (rev. 06/2018) — 'Two end of course examinations (multiple choice) and answer keys'",
-  applicationSays: 5,
-  applicationCite: "DBPR RE 18, Section V — 'Five end of course examinations (for distance education courses only)'",
+  currentApplicationSaysForPrePostLicense: 2,
+  currentApplicationSaysForContinuingEducation: 5,
+  applicationCite:
+    "Current Education-page-linked DBPR RE 18, Section V.7 — 'Two end of course examinations (for distance pre-licensing and post-licensing education courses only)'",
+  legacyApplicationSays: 5,
+  legacyLocalCopy: "florida/frec-sources/dbpr/forms/DBPR_RE_18_FRECEduCourseAppr.pdf",
+  legacyUseForFiling: false,
   analysis:
-    "The rule sets a floor of two and the checklist restates it. The current application form asks for five, for distance education specifically, which is what StateCourse would be filing. Two readings are defensible: that RE 18 states an administrative submission requirement the Department is entitled to set above the rule floor, or that RE 18 carries an error. Nothing in the package resolves it, and the difference is three complete examination forms of build work.",
+    "The rule, checklist and current published application now agree on two forms for distance pre/post-license education. Five applies only to distance continuing education. The legacy form caused the former conflict and is retained only to prevent accidental reuse.",
   stateCourseposture:
-    "Build to five. Five satisfies the rule floor, the checklist, and the application at once, and 'at least 2' permits more. Recorded as provider policy driven by an administrative requirement, NOT as a regulatory minimum.",
-  openQuestion: true,
+    "Build and file two forms. Re-download the Education-page-linked form immediately before signature and fail the filing if its identity or requirements differ.",
+  openQuestion: false,
 });
 
 export function formById(id) {
@@ -323,6 +326,6 @@ export default Object.freeze({
   FORMS_ADOPTED_BY,
   FORMS,
   GUIDANCE,
-  EXAMINATION_FORM_COUNT_CONFLICT,
+  EXAMINATION_FORM_COUNT_RESOLUTION,
   formById,
 });

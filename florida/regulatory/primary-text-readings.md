@@ -11,6 +11,13 @@ turned out to say. Read dates are the dates the document was fetched and hashed;
 > reported in v1 as unobtainable — was located, downloaded and read. The syllabus transcription was
 > also rebuilt from the Department's text-layer copy rather than OCR.
 
+> **Filing-package update, 1 September 2026.** DBPR now links a revised six-page RE 18, effective
+> June 2026, from its Education page. That revision resolves two historical disagreements below:
+> distance pre/post-licensing uses two final forms, while five applies only to distance continuing
+> education; RE 19 and RE 20 are expressly provider-only. The legacy September-2017 form is retained
+> as audit evidence but is blacklisted for filing. Rule 61-35.027 amendment monitoring remains open,
+> so the Education-page-linked form must be rechecked at signature and submission.
+
 **All of it was readable.** That is worth stating at the top because it is the single biggest
 difference between Florida and Texas in this repository. Texas's two highest authorities could not
 be opened at all — the Secretary of State moved the Administrative Code into a JavaScript portal and
@@ -18,18 +25,19 @@ be opened at all — the Secretary of State moved the Administrative Code into a
 manifest exists largely to record what could not be read. Florida's Legislature serves Chapter 475
 as static HTML, and the Department of State serves every 61J2 rule and every document those rules
 incorporate by reference, and the Division of Real Estate serves every application form and
-checklist. **Thirty-one sources, thirty-one read.**
+checklist. **Fifty-one registered sources, fifty-one read.**
 
 Which means the interesting findings here are not silences. They are disagreements — including two
 places where the Department's own documents disagree with each other.
 
 ---
 
-## The disagreements
+## The disagreements and their current disposition
 
-Recorded rather than resolved. Each is a written question for DBPR/FREC before anything is
-submitted, and nothing downstream may treat any of them as settled. The drafted letter is in
-`config/florida/assessment-architecture.mjs` as `DRAFT_QUESTION_TO_DBPR`.
+The item-count question remains open; the current RE 18 closes the historical form-count and RE 19
+questions. Nothing downstream may resurrect a superseded answer. The remaining questions and safe
+pending behaviour are in `config/florida/assessment-architecture.mjs`, and the send-ready inquiry is
+in `florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md`.
 
 ### 1. How many items must the end-of-course examination contain?
 
@@ -48,21 +56,23 @@ not. It is a **ceiling on time allowed** — "must not exceed the equivalent of 
 the ceiling for all three counts (100 items allows 180, 120 allows 216, 126 allows 226.8). Every
 reading passes, so the ceiling disambiguates nothing.
 
-**What the broker sentence tells us — missed in v1.** Two sentences earlier the same paragraph says
+**What the broker sentence suggests — missed in v1.** Two sentences earlier the same paragraph says
 the *broker* examination "shall contain at least 95 items ... or 2 items per instruction hour." The
 Broker course is 72 hours, so the per-hour figure is at least 144 against a stated floor of 95. In
 both sentences the flat number sits well below the per-hour number. If the multiplier governed, both
 flat numbers would be dead letters. The natural reading is that "or" offers the school an
 **alternative basis**, and a school meeting either has met the requirement.
 
-**So 100 is the confirmed regulatory minimum**, and it is labelled that way in
-`config/florida/assessment-architecture.mjs` under `REGULATORY_MINIMUM_CONFIRMED`.
+That makes 100 a strong reading, but not a sufficiently risk-free conclusion for a filing package.
+The same text still admits 120 and 126 operational readings, and DBPR has not answered the question
+in writing. `config/florida/assessment-architecture.mjs` therefore keeps the count in
+`ITEM_COUNT_QUESTION`, not in `REGULATORY_MINIMUM_CONFIRMED`.
 
-**126 is StateCourse provider policy, not law.** v1 wrote 126 into a config as though Florida
-required it. It is now `STATECOURSE_CONSERVATIVE_POLICY`, configurable, and carries its own cost:
-150 minutes across 126 items is 1.19 minutes per item against 1.50 at the 100-item minimum. Both sit
-under the ceiling; the conservative choice is measurably tighter on students. If DBPR confirms 100,
-the engine should drop to 100.
+**126 is StateCourse filing policy, not a settled legal minimum.** It is now
+`STATECOURSE_CONSERVATIVE_POLICY`, configurable, and carries its own cost: 150 minutes across 126
+items is 1.19 minutes per item against 1.50 at the 100-item candidate. Both sit under the ceiling;
+the conservative choice is measurably tighter on students. A written DBPR answer can lower the
+count through a controlled config change.
 
 ### 2. A rule cross-reference that does not resolve — *corrected in v2*
 
@@ -352,26 +362,26 @@ expire after 2 years.
 
 ---
 
-### 4. Two end-of-course examinations, or five?
+### 4. Two end-of-course examinations — historical conflict closed
 
-The Department's own documents disagree, by three complete examination forms.
+The old application disagreed with the rule and checklist. The current Education-page-linked RE 18
+now distinguishes course types and closes the issue for Course I.
 
 | Document | Says |
 |---|---|
 | Rule 61J2-3.008(4)(d), F.A.C. | "The school shall develop **at least 2 forms**" |
 | FREC Distance Education Checklist (rev. 06/2018) | "**Two** end of course examinations (multiple choice) and answer keys" |
-| DBPR RE 18, Section V (current) | "**Five** end of course examinations (for distance education courses only)" |
+| Legacy RE 18, Section V — **do not file** | "**Five** end of course examinations (for distance education courses only)" |
+| Current RE 18, effective Jun 2026 | **Two** for distance pre/post-licensing; five only for distance continuing education |
 
-StateCourse plans to five, which satisfies all three at once — recorded as provider policy driven by
-an administrative requirement, not as a regulatory minimum.
+StateCourse builds two 126-item forms. The two-form requirement is settled by the controlling rule
+and the current application; only the per-form item count remains open.
 
-### 5. Must a permitted school also file DBPR RE 19?
+### 5. Must a permitted school also file DBPR RE 19? — closed
 
-RE 18 Section V lists "Education Provider Approval Application form DBPR-RE-19" among the attachments
-for *all* initial course approvals, while the very next line is marked "for Providers Only", and the
-Distance Education Checklist states elsewhere that RE 20 and the course fee are "a requirement for
-approved providers only, licensed real estate schools do not need to fulfill this requirement". An
-approved CE provider is not the same status as a permitted real estate school. Unresolved.
+The current RE 18 expressly labels both RE 19 and RE 20 "for Providers Only." StateCourse is filing
+Course I as a permitted school, not as a continuing-education provider, so neither form belongs in
+the school submission package. The legacy ambiguity must not be carried forward.
 
 ---
 
@@ -388,9 +398,9 @@ rule rather than to memory.
 | DBPR RE 5 | Application for School Permit | May 2019 | $109.00 |
 | DBPR RE 6 | School Change of Status Transactions | — | — |
 | DBPR RE 9 | Application for Additional School Location | Jun 2015 | $50.00 to open |
-| DBPR RE 18 | Education Course Approval Application | — | $0 for schools |
-| DBPR RE 19 | FREC Continuing Education Provider Approval Application | — | — |
-| DBPR RE 20 | FREC Request for Instructor Evaluation | — | — |
+| DBPR RE 18 | Education Course Approval Application | Jun 2026 | $0 for schools |
+| DBPR RE 19 | FREC Continuing Education Provider Approval Application | — | provider-only; excluded here |
+| DBPR RE 20 | FREC Request for Instructor Evaluation | — | provider-only; excluded here |
 
 ### The permitholder question, corrected
 
@@ -423,25 +433,28 @@ Basis [1010] requires no broker licence at all. And DBPR's own *Real Estate Scho
 Requirements* sheet lists the same three routes, the third being "Pass an Instructor Examination
 approved by the FREC."
 
-**The consequence.** There is a lawful route for StateCourse and it does not require anyone to hold
-a Florida broker's licence: pass the Commission-approved instructor examination → DBPR RE 3 under
-basis [1010] → instructor permit → DBPR RE 5 naming that permit → school permit. Nothing along it
-has been done, and no person is asserted to be eligible — eligibility is the Department's
-determination on an application. The seven-row status matrix is in
+**The consequence.** There is a statutory and form-supported route for StateCourse that does not
+require a Florida broker's licence: file DBPR RE 3 under basis [1010] → complete Livescan after
+filing → receive DBPR examination authorization → pass the Commission-approved instructor
+examination at a Pearson physical test center → DBPR issues the instructor number → file DBPR RE 5
+→ school permit → register/activate the instructor through RE 6. Because current rule wording may
+create operational rejection risk, DBPR acceptance of the route is a high-priority written
+confirmation, not a guarantee. Nothing along it has been done, and no person is asserted eligible.
+The status matrix is in
 `config/florida/school-permit-ledger.mjs`.
 
 ### What RE 18 requires for an initial Course I approval
 
-Section III carries **"Sales Associate Pre-Licensure"** and **"Distance"**, so RE 18 governs Course I
-despite the "Continuing Education" wording in its running header. Section V, initial approvals:
+Section III carries **"Sales Associate Pre-Licensure"** and **"Distance"**, so the current RE 18
+governs Course I. Section V, initial approvals:
 
 1. Course timed outline — subjects, major topics, subtopics
 2. **Learning objectives — three per hour**
 3. Course materials including explanation of delivery method
-4. Education Provider Approval Application DBPR RE 19 *(see disagreement 5)*
-5. Instructor information on DBPR RE 20 with a resume *(Providers Only)*
-6. **Five end of course examinations** *(distance education only)* *(see disagreement 4)*
-7. Answer keys *(distance only)* referencing the page numbers each question and answer rest on
+4. Education Provider Approval Application DBPR RE 19 *(Providers Only — excluded for this school)*
+5. Instructor information on DBPR RE 20 with a resume *(Providers Only — excluded for this school)*
+7. **Two end-of-course examinations** *(distance pre/post-licensing)*
+8. Answer keys referencing the page numbers each question and answer rest on
 
 The three-objectives-per-hour requirement is worth pausing on: 3 × 60 instruction hours = **180**,
 which is exactly the number of learning objectives the Commission's own syllabus carries. The
@@ -450,7 +463,7 @@ alone.
 
 ---
 
-## What could not be obtained
+## Remaining acquisition and operational gaps
 
 Recorded because a gap nobody wrote down is a gap the next reader assumes was checked.
 
@@ -461,12 +474,11 @@ and concluded the Department published no forms. That URL is a **soft-404** — 
 shells. *A 200 is not evidence that the page you asked for exists.* Both the wrong page and the
 right ones are now held, so the next reader can see the trap.
 
-**The instructor examination itself.** DBPR RE 3 offers "Real Estate Instructor Exam [1010]" as a
-qualification basis without saying where the examination is taken, what it covers, what it costs, or
-whether a candidate information booklet exists. Neither the forms-and-publications page nor the
-education page carries instructor-examination candidate materials. This is the one genuine gap
-remaining on the eligibility path, and it is a telephone call to the Division of Real Estate rather
-than a research task.
+**The instructor examination fee and candidate-specific scheduling.** The current DBPR Candidate
+Information Booklet is now held. It confirms a closed-book, 100-question, 3.5-hour physical Pearson
+test-center examination with a 75-point passing score after DBPR authorization. The current live fee
+and the candidate's available test center remain external; the staged Pearson inquiry requests
+both. A 2017 amount must not be presented as current.
 
 **A verification path through DBPR's own records.** The Department's public licensee search at
 `myfloridalicense.com/wl11.asp` timed out on every attempt from this environment. No numbered walk

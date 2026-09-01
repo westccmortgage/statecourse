@@ -16,18 +16,18 @@ import {
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const allSlots = FORM_BLUEPRINTS.flatMap((form) => form.slots);
 
-test("the five-form secure blueprint verifies as a blueprint, not as a completed bank", () => {
+test("the current two-form secure blueprint verifies as a blueprint, not as a completed bank", () => {
   assert.deepEqual(verifyExamBlueprint(), { ok: true, failures: [] });
   assert.equal(BLUEPRINT_STATUS.blueprintComplete, true);
   assert.equal(BLUEPRINT_STATUS.bankContentComplete, false);
   assert.equal(BLUEPRINT_STATUS.formsReadyForAssembly, 0);
 });
 
-test("five policy forms carry 126 unique secure slots each", () => {
-  assert.equal(FORM_BLUEPRINTS.length, 5);
-  assert.equal(allSlots.length, 630);
-  assert.equal(new Set(allSlots.map((slot) => slot.slotId)).size, 630);
-  assert.equal(new Set(allSlots.map((slot) => slot.plannedItemId)).size, 630);
+test("two current-form-required forms carry 126 unique secure slots each", () => {
+  assert.equal(FORM_BLUEPRINTS.length, 2);
+  assert.equal(allSlots.length, 252);
+  assert.equal(new Set(allSlots.map((slot) => slot.slotId)).size, 252);
+  assert.equal(new Set(allSlots.map((slot) => slot.plannedItemId)).size, 252);
   for (const form of FORM_BLUEPRINTS) assert.equal(form.slots.length, 126);
 });
 
@@ -69,9 +69,9 @@ test("the nineteen existing drafts occupy one application slot each", () => {
   assert.equal(drafted.length, 19);
   assert.deepEqual(new Set(drafted.map((slot) => slot.draftItemId)), new Set(SECURE_FINAL_DRAFT_ITEMS.map((item) => item.id)));
   for (const slot of drafted) assert.equal(slot.cognitiveLevel, "application");
-  assert.equal(BLUEPRINT_STATUS.remainingAuthoringSlots, 611);
-  assert.equal(BLUEPRINT_STATUS.additionalItemsForOneRegulatoryMinimumForm, 81);
-  assert.equal(BLUEPRINT_STATUS.additionalItemsForOnePolicyForm, 107);
+  assert.equal(BLUEPRINT_STATUS.remainingAuthoringSlots, 233);
+  assert.equal(BLUEPRINT_STATUS.slotsRetiredIf100ItemsConfirmed, 52);
+  assert.equal(BLUEPRINT_STATUS.remainingAuthoringSlotsIf100ItemsConfirmed, 181);
 });
 
 test("no incomplete student form, key, release, or unsupported readiness is generated", () => {
@@ -82,6 +82,6 @@ test("no incomplete student form, key, release, or unsupported readiness is gene
   }
   const document = fs.readFileSync(path.join(ROOT, "florida/fl-sales-associate-course-i-63-v1/submission/exam-form-blueprint.md"), "utf8");
   assert.match(document, /NO-GO/);
-  assert.match(document, /611/);
+  assert.match(document, /233/);
   assert.doesNotMatch(document, /Correct answer:/i);
 });

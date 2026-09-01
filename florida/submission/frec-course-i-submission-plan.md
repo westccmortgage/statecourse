@@ -69,9 +69,9 @@ header states that incorporation. Held under `florida/frec-sources/dbpr/forms/` 
 | **DBPR RE 5** | Application for School Permit | May 2019 | $109.00 | Stage 5 |
 | **DBPR RE 6** | School Change of Status Transactions | — | — | Stage 6 — registers the instructor to the school |
 | **DBPR RE 9** | Application for Additional School Location | Jun 2015 | $50.00 | probably N/A — open question |
-| **DBPR RE 18** | Education Course Approval Application | — | **$0 for schools** | Stage 7 |
-| **DBPR RE 19** | FREC Continuing Education Provider Approval Application | — | — | open question |
-| **DBPR RE 20** | FREC Request for Instructor Evaluation | — | — | "approved providers only" per DBPR |
+| **DBPR RE 18** | Education Course Approval Application | Jun 2026 | **$0 for schools** | Stage 7; use only the current Education-page-linked revision |
+| **DBPR RE 19** | FREC Continuing Education Provider Approval Application | — | — | provider-only; not a permitted-school attachment |
+| **DBPR RE 20** | FREC Request for Instructor Evaluation | — | — | provider-only; not a permitted-school attachment |
 
 All applications go to: Department of Business and Professional Regulation, 2601 Blair Stone Road,
 Tallahassee, FL 32399-0783. RE 18 goes to the same street address, zip **32399-0750**.
@@ -95,27 +95,36 @@ confirmation.
 
 ## 4. Written questions to DBPR/FREC
 
-Six, drafted in full in `config/florida/assessment-architecture.mjs` as `DRAFT_QUESTION_TO_DBPR` and
-`OPEN_DBPR_QUESTIONS`. In short:
+The complete staged inquiry is at
+`florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md`; the machine-readable issue
+set and safe pending behaviour are in `config/florida/assessment-architecture.mjs`. It asks DBPR to
+confirm:
 
-1. **Item count** — "at least 100 items, or 2 items per instruction hour": 100, 120 or 126?
-2. **"Instruction hour"** — the 60 instruction hours, or all 63?
-3. **Form count** — the rule and the checklist say two; RE 18 says five. Which?
-4. **RE 19** — must a permitted school filing Course I also file it?
-5. **Absence in a distance course** — how is the 8-classroom-hour ceiling measured with no class?
-6. **Current instructor examination checkout fee** — logistics and content are otherwise resolved.
+1. whether the Course I final may use 100 items or must apply two items per instruction hour over
+   60 or 63 hours; StateCourse builds 126 per form while waiting;
+2. whether an instructor permit issued through RE 3 [1010] qualifies its holder to serve as the
+   RE 5 school permitholder despite the current rule wording;
+3. whether the named out-of-state address may be the sole distance-school location and whether
+   RE 9 is implicated;
+4. how the eight-classroom-hour absence language applies asynchronously when all syllabus sessions
+   must independently be completed;
+5. which online controls satisfy the anti-recruiting notice and permitted-instructor availability;
+6. how prelicense completions and rosters are reported;
+7. whether the Education-page-linked June-2026 RE 18 is the operative form while amendment of Rule
+   61-35.027 proceeds; and
+8. the completeness-review, Education Agenda and deficiency/resubmission cycle.
 
-Plus, not on the drafted letter but worth asking: whether a distance-only school with no Florida
-classroom has any "additional location" to declare under Rule 61J2-17.013's one-permit-per-location
-construction.
+Pearson receives a separate logistics inquiry for the current fee, the physical test center and the
+generic completion-certificate language in the CIB. Never include SSN or background details in an
+informal inquiry; Florida correspondence may be a public record.
 
 ---
 
 ## 5. The stages, in order
 
 ### Stage 1 — apply for examination authorization
-Owner: **human**. File DBPR RE 3 under transaction [1010] with fingerprints and the $62.75
-application fee; DBPR authorization precedes Pearson scheduling.
+Owner: **human**. File DBPR RE 3 under transaction [1010] with the $62.75 application fee, then
+complete Livescan immediately after filing. DBPR authorization precedes Pearson scheduling.
 
 ### Stage 2 — put the written questions
 Owner: **human**, letter drafted. Can run in parallel with Stage 1.
@@ -135,8 +144,10 @@ from Stage 4, with $109.00. Note the form's own rider: if the permitholder also 
 meet the school-instructor requirements — which, on this route, they already do, because the
 instructor permit *is* that requirement. Owner: human, then **regulator**.
 
-RE 5 requests a physical street address. Acceptance of an out-of-state-only physical address for a
-distance-only school is not established by the held authorities and must not be assumed.
+RE 5 requests a physical street address. DBPR's current registry includes approved distance Course I
+schools at out-of-state addresses, so a Florida classroom is not categorically required. The named
+StateCourse address, RE 9 treatment, foreign-entity qualification, registered agent and any DBA
+still require an owner/counsel decision and written operational confirmation.
 
 The Department may require fingerprints processed through the FBI and "shall make such investigation
 ... as it may deem necessary" (s. 475.451(2)). Not optional on the applicant's say-so.
@@ -150,17 +161,21 @@ requires. Owner: human.
 File **DBPR RE 18**: Section III "Sales Associate Pre-Licensure" + "Distance", Section IV "NEW",
 $0 for a permitted school.
 
-Section V attachments for an initial approval:
+Section V attachments for an initial approval by a permitted school:
 
 | # | Attachment | Owner |
 |---|---|---|
 | 1 | Course timed outline — subjects, major topics, subtopics | build |
 | 2 | **Learning objectives, three per hour** (3 × 60 = 180) | build |
 | 3 | Course materials with an explanation of delivery method | build |
-| 4 | DBPR RE 19 — *see open question 4* | — |
-| 5 | DBPR RE 20 per instructor + resume — *"Providers Only"* | — |
-| 6 | **Five** end-of-course examinations, distance only — *see open question 3* | build |
-| 7 | An answer key per form, referencing the page numbers each question and answer rest on | build |
+| 4 | DBPR RE 19 | excluded — **Providers Only** |
+| 5 | DBPR RE 20 per instructor + resume | excluded — **Providers Only** |
+| 7 | **Two** end-of-course examinations for distance pre/post-licensing | build after pagination |
+| 8 | An answer key per form, referencing the page numbers each question and answer rest on | build after pagination |
+
+Before signature and again immediately before submission, retrieve the RE 18 linked from DBPR's
+Education page and compare its identity to the held June-2026 copy. The legacy September-2017 form
+is blacklisted and must never be filled or filed.
 
 Plus, from Rule 61J2-3.008(4)(b): **a copy of the course, and access to the course, in the format in
 which it will be offered to the student.** Not a PDF — a working reviewer account against the real

@@ -29,18 +29,14 @@
  *     2 points each, which shall cover closing statements or escrow accounts, or 2 items per
  *     instruction hour."
  *
- * THE BROKER SENTENCE IS WHAT SETTLES THE READING, AND IT WAS MISSED THE FIRST TIME. The Broker
+ * THE BROKER SENTENCE SUPPORTS ONE READING, BUT DOES NOT SETTLE IT FOR FILING. The Broker
  * course is 72 hours, so "2 items per instruction hour" is at least 144 — against a stated floor of
  * 95. The Course I numbers run the same way: 100 stated, 120 or 126 by the multiplier. In BOTH
- * sentences the flat number is well below the per-hour number. If the rule meant the per-hour figure
- * to govern, the flat numbers would be dead letters in both places, which is not how a rule that
- * troubles to state them twice should be read. The natural reading is that "or" offers the school
- * an ALTERNATIVE basis, and a school that meets either has met the requirement.
- *
- * On that reading 100 items IS the regulatory minimum for Course I, and it is confirmed rather than
- * inferred: it is the number the rule states, in a sentence whose structure the broker parallel
- * explains. 126 is therefore NOT a regulatory minimum. It is what StateCourse might choose in order
- * to be immune to the other reading — a provider policy, and it is labelled as one.
+ * sentences the flat number is well below the per-hour number. That is a strong argument that "or"
+ * offers alternative bases, but it remains an interpretation. The repository also carries the
+ * contrary 120- and 126-item readings, so calling 100 "confirmed" while asking DBPR which count
+ * governs is internally inconsistent. Filing posture is therefore 126 items per form pending a
+ * written answer. That is a conservative provider choice, not a Florida minimum.
  */
 
 export const TIER = Object.freeze({
@@ -60,12 +56,6 @@ export const REGULATORY_MINIMUM_CONFIRMED = Object.freeze({
     value: 70,
     cite: "Rule 61J2-3.008(4)(a), F.A.C.",
     quote: "A grade of 70% or higher on the Commission-prescribed end-of-course examination constitutes satisfactory course completion.",
-  }),
-  minimumItems: c({
-    value: 100,
-    cite: RULE,
-    quote: "The sales associate end-of-course examinations shall contain at least 100 items, or 2 items per instruction hour.",
-    note: "The stated floor, read as an independently sufficient alternative — see the module docstring and the broker parallel.",
   }),
   minimumFormCount: c({
     value: 2,
@@ -162,6 +152,21 @@ export const REGULATORY_MINIMUM_CONFIRMED = Object.freeze({
   }),
 });
 
+/** The text is confirmed; which alternative supplies the operative item count is not. */
+export const ITEM_COUNT_QUESTION = o({
+  id: "itemCountBasis",
+  cite: RULE,
+  quote: "The sales associate end-of-course examinations shall contain at least 100 items, or 2 items per instruction hour.",
+  question:
+    "For Course I, does the quoted alternative require at least 100 items, 120 items based on 60 instruction hours, or 126 items based on all 63 course hours?",
+  candidates: Object.freeze([100, 120, 126]),
+  settled: false,
+  filingPosition: 126,
+  reason:
+    "100 is supported by the disjunctive text and broker parallel, but that is an interpretive conclusion. Build 126 until DBPR answers in writing so every identified reading is satisfied.",
+  pendingBehaviour: "Build 126 items per form, label the count as provider policy, and keep it configurable only after a written DBPR answer.",
+});
+
 /* ── proctoring: not required, and NOT prohibited ─────────────────────────────────────────────
    Asked and answered precisely, because "not required" and "prohibited" are different facts and the
    difference decides whether a proctoring feature may ever be built. */
@@ -206,21 +211,21 @@ export const STATECOURSE_CONSERVATIVE_POLICY = Object.freeze({
     rationale:
       "126 is 2 items per each of the 63 hours, the largest figure any reading of the item sentence produces. Choosing it makes the examination compliant on every reading at once, including the one StateCourse does not think is right.",
     isNotARegulatoryMinimum: true,
-    regulatoryMinimumIs: 100,
+    regulatoryTextCandidates: Object.freeze([100, 120, 126]),
     costOfThisChoice:
-      "150 minutes across 126 items is 1.19 minutes per item, against 1.50 at the 100-item minimum. Both sit under the 1.8 ceiling, but the conservative choice is measurably harder on students. If DBPR confirms 100, the engine should drop to 100 and give students the extra 21 seconds per item.",
+      "150 minutes across 126 items is 1.19 minutes per item, against 1.50 at the 100-item candidate. Both sit under the 1.8 ceiling, but the conservative choice is measurably harder on students. If DBPR confirms 100, the engine should drop to 100 and give students the extra 21 seconds per item.",
     revisitWhen: "DBPR or FREC answers OPEN_DBPR_QUESTIONS.itemCountBasis in writing.",
   }),
   formCount: p({
-    value: 5,
-    configurable: true,
+    value: 2,
+    configurable: false,
     configKey: "FL_COURSE_I_EXAM_FORM_COUNT",
     rationale:
-      "The rule floor is 2 and the FREC Distance Education Checklist also says two. The current DBPR RE 18 application asks for five end-of-course examinations for distance education courses specifically, which is what StateCourse would file. Five satisfies all three documents.",
-    isNotARegulatoryMinimum: true,
+      "Rule 61J2-3.008(4)(d), the distance checklist, and the current DBPR Education-page-linked RE 18 all require two forms for distance pre-licensing. The legacy RE 18 URL that asked for five across all distance courses is retained only as superseded evidence and is forbidden for filing.",
+    isNotARegulatoryMinimum: false,
     regulatoryMinimumIs: 2,
-    costOfThisChoice: "Three additional complete examination forms, each needing its own unique page-referenced answer key and each held to the 15% cross-form duplication cap.",
-    revisitWhen: "DBPR answers OPEN_DBPR_QUESTIONS.formCount in writing.",
+    costOfThisChoice: "Two complete 126-item forms pending DBPR's item-count answer: 252 secure slots and unique page-referenced keys.",
+    revisitWhen: "Immediately before filing, re-confirm that the Education-page-linked RE 18 remains the operative form.",
   }),
   allottedMinutes: p({
     value: 150,
@@ -234,25 +239,7 @@ export const STATECOURSE_CONSERVATIVE_POLICY = Object.freeze({
 
 /* ── tier 3: what is genuinely unresolved ─────────────────────────────────────────────────────── */
 export const OPEN_DBPR_QUESTIONS = Object.freeze([
-  o({
-    id: "itemCountBasis",
-    question:
-      'Rule 61J2-3.008(4)(d) provides that "[t]he sales associate end-of-course examinations shall contain at least 100 items, or 2 items per instruction hour." For a 63-hour Course I comprising 60 instruction hours and a 3-hour end-of-course examination, does the Commission read the requirement as (a) at least 100 items, (b) at least 2 items per instruction hour applied to the 60 instruction hours, being 120 items, or (c) at least 2 items per hour applied to all 63 hours, being 126 items?',
-    readings: Object.freeze([
-      Object.freeze({ label: "at least 100 items, the stated floor as an independently sufficient alternative", items: 100, stateCourseView: "the better reading — see the broker parallel in the same paragraph" }),
-      Object.freeze({ label: "2 items per instruction hour over 60 instruction hours", items: 120 }),
-      Object.freeze({ label: "2 items per hour over all 63 hours", items: 126 }),
-    ]),
-    whyTheTimeCeilingDoesNotResolveIt:
-      "The 1.8 minutes per item limit is a ceiling on duration, not an equality. The examination's 150 minutes sits under the ceiling for all three counts — 100 permits 180 minutes, 120 permits 216, 126 permits 226.8 — so every reading passes and the ceiling distinguishes nothing.",
-    pendingBehaviour: "Build to 126 items, labelled as provider policy, engine configurable.",
-  }),
-  o({
-    id: "formCount",
-    question:
-      "Rule 61J2-3.008(4)(d) requires at least 2 forms of the end-of-course examination, and the FREC Distance Education Checklist (rev. 06/2018) likewise lists 'Two end of course examinations'. DBPR RE 18, Section V, requires 'Five end of course examinations (for distance education courses only)'. For a distance-education FREC Course I submitted by a permitted real estate school, how many forms must accompany the application?",
-    pendingBehaviour: "Build five forms, labelled as provider policy driven by the application requirement.",
-  }),
+  ITEM_COUNT_QUESTION,
   o({
     id: "instructionHourDefinition",
     question:
@@ -263,20 +250,39 @@ export const OPEN_DBPR_QUESTIONS = Object.freeze([
     id: "absenceInDistanceCourse",
     question:
       "Section 475.17(2)(a)1 bars issuing a notice of satisfactory completion where a student has absences in excess of 8 classroom hours, and Rule 61J2-3.008(4)(a) conditions administering the examination on the same ceiling. How is that ceiling measured in an asynchronous distance course, in which there is no scheduled class session to be absent from?",
-    pendingBehaviour: "Track delivered instructional time per student; treat undelivered required time as the analogue of absence; do not issue a certificate where more than 8 hours of required instruction is undelivered.",
+    pendingBehaviour: "Require satisfactory completion of every syllabus session before final unlock. Ask only how DBPR wants the separate 8-classroom-hour language described or reported for asynchronous delivery; it never authorizes omitted instruction.",
   }),
   o({
-    id: "re19ForSchools",
+    id: "schoolPermitExamRouteAcceptance",
     question:
-      "DBPR RE 18, Section V, lists 'Education Provider Approval Application form DBPR-RE-19' among the attachments for all initial course approvals, while the following line is marked 'for Providers Only' and the FREC Distance Education Checklist states elsewhere that DBPR RE 20 and the course fee are required of approved providers only and that 'licensed real estate schools do not need to fulfill this requirement'. Must a permitted real estate school filing a FREC Course I approval also file DBPR RE 19?",
-    pendingBehaviour: "Not filed; question carried.",
+      "Does an instructor permit issued through DBPR RE 3 transaction [1010] qualify its holder to serve as the school permitholder on DBPR RE 5 today, notwithstanding the inconsistent cross-reference and wording in Rule 61J2-17.011(2)?",
+    pendingBehaviour: "Treat the statutory and form route as available but not guaranteed; do not pay exam/fingerprint costs in reliance on an unqualified promise of acceptance.",
   }),
   o({
-    id: "instructorExaminationLogistics",
+    id: "distanceOnlySchoolLocation",
     question:
-      "Where is the Commission-approved real estate instructor examination administered, what is its content outline and fee, and is a candidate information booklet published for it?",
-    note: "Neither the Department's forms-and-publications page nor its education page carries instructor examination candidate materials. DBPR RE 3 offers 'Real Estate Instructor Exam [1010]' as a qualification basis without saying where the examination is taken.",
-    pendingBehaviour: "No assumption recorded anywhere in the build.",
+      "For a distance-only school with no Florida classroom, may the California physical business address be the sole school location on RE 5, and is RE 9 unnecessary unless a separate instructional or administrative location is added?",
+    pendingBehaviour: "Carry the proposed California address only as proposed; do not execute RE 5 or RE 9 until DBPR confirms the location treatment and the owner resolves Florida entity qualification.",
+  }),
+  o({
+    id: "onlinePostingAndAvailability",
+    question: "What online controls satisfy the Rule 61J2-17.015 anti-recruiting posting/reading requirement and the Rule 61J2-3.008(4)(b)3.g prominent instructor-availability posting requirement?",
+    pendingBehaviour: "Use a mandatory acknowledged opening display plus a persistent course compliance panel; recheck Rule 61J2-17.015 before any launch after its 2026-12-31 sunset date.",
+  }),
+  o({
+    id: "prelicenseCompletionReporting",
+    question: "Must a permitted school electronically report Course I rosters or completions, and if so through which portal, fields, cadence, and correction process?",
+    pendingBehaviour: "Retain complete exportable records but do not invent a reporting transaction or claim that CE reporting instructions govern pre-license records.",
+  }),
+  o({
+    id: "currentRe18Identity",
+    question: "Please confirm that the operative RE 18 is the June 2026 form currently linked on DBPR's Education page while the corresponding Rule 61-35.027 amendment remains in the rulemaking process.",
+    pendingBehaviour: "Use the current linked form for package design, blacklist the legacy URL, and re-download/compare the form immediately before signature and filing.",
+  }),
+  o({
+    id: "reviewCadence",
+    question: "What completeness cutoff, deficiency cycle, and FREC Education Agenda process applies to a new distance Course I application?",
+    pendingBehaviour: "Do not promise a meeting date or approval timeline; submission remains gated on a complete course, exams, keys and reviewer environment.",
   }),
 ]);
 
@@ -285,19 +291,27 @@ export const OPEN_DBPR_QUESTIONS = Object.freeze([
    task, and so that what was asked is on the record next to what was assumed pending the answer. */
 export const DRAFT_QUESTION_TO_DBPR = `To: Florida Real Estate Commission, Division of Real Estate, Department of Business and Professional Regulation
 
-Subject: Request for clarification — FREC Course I end-of-course examination requirements, Rule 61J2-3.008(4)(d), F.A.C.
+Subject: Pre-filing clarification — distance FREC Course I school, instructor and course application
 
-We are preparing a FREC Course I (sales associate pre-licensure) distance education course for submission by a real estate school permitted under s. 475.451, Fla. Stat. Four points in the current requirements admit of more than one reading, and we would rather build to the Commission's reading than to ours.
+StateCourse LLC is preparing, but is not yet offering, a FREC Course I sales-associate pre-licensure distance course. StateCourse is not currently permitted as a Florida real estate school and holds no Florida instructor or course approval. Before the owner incurs the instructor-examination and school-permit costs and before we freeze the course, please clarify the following.
 
 1. Item count. Rule 61J2-3.008(4)(d) provides that "[t]he sales associate end-of-course examinations shall contain at least 100 items, or 2 items per instruction hour." For a 63-hour Course I comprising 60 hours of instruction and a 3-hour end-of-course examination, does the Commission read this as requiring (a) at least 100 items, (b) at least 120 items, being 2 per instruction hour over 60 instruction hours, or (c) at least 126 items, being 2 per hour over all 63 hours? We note the 1.8 minute per item limit in the same paragraph does not distinguish among these, since it caps duration rather than fixing a count.
 
 2. Meaning of "instruction hour". Relatedly, does "instruction hour" in that paragraph refer to the 60 hours of instruction identified in the FREC Course I syllabus, or to all 63 hours, which the rule and s. 475.17(2)(a)1 define as inclusive of examination?
 
-3. Number of examination forms. Rule 61J2-3.008(4)(d) requires "at least 2 forms", and the FREC Distance Education Checklist (rev. 06/2018) lists "Two end of course examinations". DBPR RE 18, Section V, requires "Five end of course examinations (for distance education courses only)". For a distance education Course I submitted by a permitted school, how many forms should accompany the application?
+3. Instructor-exam route to the school permit. Section 475.451(2)(a), Florida Statutes, and current RE 5 provide a school-permitholder route through a Florida instructor permit. Does an instructor permit issued through RE 3 transaction [1010] qualify its holder for RE 5 today, notwithstanding the inconsistent cross-reference and wording in Rule 61J2-17.011(2)?
 
-4. Provider approval application. DBPR RE 18, Section V, lists form DBPR RE 19 among the attachments for all initial course approvals, while the adjacent instructor-information item is marked "for Providers Only" and the Distance Education Checklist states that licensed real estate schools need not fulfil the provider-only requirements. Must a permitted real estate school filing a Course I approval also file DBPR RE 19?
+4. Distance-only location. May a California physical business address be the sole RE 5 school location for an online-only school with no Florida classroom, and is RE 9 unnecessary unless another location is later added?
 
-We are not currently permitted and are not offering any Florida course. We ask so that the application we eventually file is correct on its face.`;
+5. Asynchronous absence treatment. Rule 61J2-3.008(4)(b)3.i independently requires satisfactory completion of all syllabus sessions before the final. With that 100% completion control in place, how should the separate eight-classroom-hour absence language be measured or described for asynchronous delivery?
+
+6. Online notices and instructor availability. Does a mandatory acknowledged opening display plus a persistent course compliance panel satisfy the anti-recruiting statement and prominent instructor-availability requirements for an online school?
+
+7. Pre-license reporting. Must a permitted school electronically report Course I rosters or completions? If yes, through which portal, fields, cadence and correction process?
+
+8. Current form and review cycle. Please confirm that the June 2026 RE 18 currently linked from DBPR's Education page is the operative form pending completion of the Rule 61-35.027 amendment, and advise the completeness cutoff, deficiency cycle and FREC Education Agenda process for a new distance Course I.
+
+The current linked RE 18 appears to resolve two former ambiguities: it requires two exam forms for distance pre/post-license courses and marks RE 19 and RE 20 as provider-only. We plan on that basis unless instructed otherwise. Please do not place SSN, background or other protected applicant details in the response; this inquiry contains none.`;
 
 /* ── the arithmetic, computed from the tiers rather than restated ─────────────────────────────── */
 const ITEMS = STATECOURSE_CONSERVATIVE_POLICY.itemCount.value;
@@ -306,12 +320,12 @@ const CEILING = REGULATORY_MINIMUM_CONFIRMED.maximumMinutesPerItem.value;
 
 export const COMPUTED = Object.freeze({
   plannedItems: ITEMS,
-  regulatoryMinimumItems: REGULATORY_MINIMUM_CONFIRMED.minimumItems.value,
+  itemCountCandidates: ITEM_COUNT_QUESTION.candidates,
   allottedMinutes: MINUTES,
   minutesPerItemAsPlanned: MINUTES / ITEMS,
-  minutesPerItemAtRegulatoryMinimum: MINUTES / REGULATORY_MINIMUM_CONFIRMED.minimumItems.value,
+  minutesPerItemAt100ItemCandidate: MINUTES / 100,
   withinTimeCeilingAsPlanned: MINUTES <= CEILING * ITEMS,
-  withinTimeCeilingAtMinimum: MINUTES <= CEILING * REGULATORY_MINIMUM_CONFIRMED.minimumItems.value,
+  withinTimeCeilingAt100ItemCandidate: MINUTES <= CEILING * 100,
   maximumPermittedMinutesAsPlanned: CEILING * ITEMS,
   applicationLevelItemsAsPlanned: Math.ceil(ITEMS * REGULATORY_MINIMUM_CONFIRMED.minimumApplicationLevelPercent.value / 100),
   maximumKnowledgeLevelItemsAsPlanned: Math.floor(ITEMS * REGULATORY_MINIMUM_CONFIRMED.maximumKnowledgeLevelPercent.value / 100),
@@ -321,6 +335,7 @@ export const COMPUTED = Object.freeze({
 export default Object.freeze({
   TIER,
   REGULATORY_MINIMUM_CONFIRMED,
+  ITEM_COUNT_QUESTION,
   PROCTORING,
   CONFIDENTIALITY,
   STATECOURSE_CONSERVATIVE_POLICY,
