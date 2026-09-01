@@ -1,7 +1,7 @@
 # Michigan Prelicensure Course — Summary of Topics and Hours
 
 **Attachment for R 339.22141(1)(e):** a summary of topics completed for the prelicensure course, including the number of hours allocated to each topic.
-**Course:** Principles of Real Estate — Michigan Salesperson Prelicensure
+**Course:** Principles of Real Estate - Michigan Salesperson Prelicensure
 **Approved hours sought:** 40 clock hours
 **Delivery:** Distance (online), asynchronous
 **Prepared:** August 19, 2026
@@ -44,9 +44,9 @@ Each module is structured the same way, which is the structured learning method 
 
 1. **Objectives** — what the student will be able to do.
 2. **Six instructional sections**, each ending in a checkpoint that has to be answered before the section is recorded as viewed.
-3. **An applied exercise** — a Michigan transaction problem worked against the module's own material, which is the in-module performance assessment under R 339.22157(2)(e).
-4. **A scored engagement check.**
-5. **Remediation** — a failed engagement check returns the student to an alternate explanation of the same concept and an alternate item, and the module cannot be completed until it is answered correctly. This is R 339.22157(2)(f): the module repeats until the content is understood.
+3. **A written applied exercise** — a Michigan transaction memorandum reviewed by the approved instructor under a common 10-point rubric; satisfactory requires 8/10 with no zero on legal accuracy or professional boundaries.
+4. **A one-item applied confirmation check** at 100% and a **five-item engagement check** at 80%.
+5. **Remediation** — a written memo marked needs revision receives feedback and is resubmitted; a missed applied confirmation returns the student to the relevant instruction; and a failed engagement check returns the student to an alternate explanation and separately authored five-item set. The module remains incomplete until every applicable requirement passes. This is R 339.22157(2)(f): the module repeats until the content is understood.
 
 ## Time, and what a clock hour means here
 

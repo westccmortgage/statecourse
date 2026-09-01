@@ -195,14 +195,14 @@ test("no state's record states a bank ratio or a device rule without its source"
  * on purpose rather than by oversight.
  *
  * The states do not share one heading. Eight use "what was NOT read"; Alaska
- * and Michigan use "open questions that must be answered before filing"; Maine
+ * and Michigan historically used "open questions that must be answered before filing"; Maine
  * used "what has not been read" and Virginia "what is not yet read" until both
  * were rewritten. An audit pass that matched only one spelling reported Maine
  * and Virginia as having no boundary section when both did — hence the
  * alternatives below, and hence matching on the HEADING rather than on prose
  * anywhere in the file.
  */
-const BOUNDARY_HEADING = /^#{2,3} .*(what (was|is|has) not|not (yet |been )?read|NOT obtained|open questions)/im;
+const BOUNDARY_HEADING = /^#{2,3} .*(what (was|is|has) not|not (yet |been )?read|NOT obtained|open questions|source boundary|filing questions)/im;
 
 const BUILT_STATE_DIRECTORIES = [
   "alaska",

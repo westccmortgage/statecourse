@@ -6,16 +6,30 @@ const root = new URL("../", import.meta.url);
 const read = (relative) => readFile(new URL(relative, root), "utf8");
 
 test("Michigan is visible in production while approval and enrollment remain closed", async () => {
-  const [catalogUi, enrollmentUi, coursePage] = await Promise.all([
+  const [catalogUi, enrollmentUi, statePage, coursePage] = await Promise.all([
     read("public/statecourse/catalog.js"),
     read("public/statecourse/enrollment.js"),
+    read("public/statecourse/real-estate/michigan/index.html"),
     read("public/statecourse/real-estate/michigan/pre-license/principles-of-real-estate/index.html"),
   ]);
 
   assert.match(catalogUi, /MI: "Real Estate Salesperson Pre-License · 40 hours"/);
   assert.match(enrollmentUi, /mi-salesperson-prelicensure-40-v1/);
-  assert.match(coursePage, /Michigan Principles of Real Estate/);
-  assert.match(coursePage, /cannot accept a credit-eligible enrollment/i);
+  assert.match(enrollmentUi, /Principles of Real Estate - Michigan Salesperson Prelicensure/);
+  assert.match(enrollmentUi, /Michigan LARA Bureau of Professional Licensing and Michigan LEO Post Secondary Schools/);
+  assert.match(coursePage, /Principles of Real Estate - Michigan Salesperson Prelicensure/);
+  assert.match(coursePage, /Enrollment, study time, credit, and certificates remain unavailable/i);
+  assert.match(coursePage, /StateCourse LLC/);
+  assert.match(coursePage, /407 N Pacific Coast Highway, Unit 1028/);
+  assert.match(coursePage, /PSS school licensure\/program approval and LARA BPL course\/instructor approval are pending/);
+  assert.match(coursePage, /No account is needed/);
+  assert.match(statePage, /No account is needed/);
+  assert.match(coursePage, /development and regulatory-status record\. Enrollment is unavailable\./);
+  assert.doesNotMatch(coursePage, /course record and enrollment path/i);
+  assert.doesNotMatch(coursePage, /student\/register\/\?(?:state=MI|course=mi-salesperson)|Create (?:a )?Free Account|account can track/i);
+  assert.doesNotMatch(statePage, /student\/register\/\?state=MI|Create (?:a )?Free Account|follow the Michigan course record/i);
+  assert.doesNotMatch(coursePage, /return_to=(?:%2F|\/)enroll/i);
+  assert.doesNotMatch(coursePage, /Complete Stripe Checkout|Open the purchased course|Continue to enrollment/);
   assert.doesNotMatch(coursePage, /Michigan[- ]approved|Approved by Michigan|Enroll Now/i);
 });
 

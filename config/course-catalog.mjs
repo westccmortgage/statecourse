@@ -62,7 +62,7 @@ const courses = Object.fromEntries([
     versions:{ regulatory:"va-salesperson-regulatory-draft-v1", refund:"va-salesperson-refund-pending-review-v1", cancellation:"va-salesperson-cancellation-pending-review-v1" },
   }),
   configuredCourse({
-    id:"mi-salesperson-prelicensure-40-v1", state:"MI", name:"Michigan Principles of Real Estate — 40 Hours", env:"MI_SALESPERSON_40",
+    id:"mi-salesperson-prelicensure-40-v1", state:"MI", name:"Principles of Real Estate - Michigan Salesperson Prelicensure", env:"MI_SALESPERSON_40",
     versions:{ regulatory:"mi-salesperson-regulatory-draft-v1", refund:"mi-salesperson-refund-pending-review-v1", cancellation:"mi-salesperson-cancellation-pending-review-v1" },
   }),
   configuredCourse({

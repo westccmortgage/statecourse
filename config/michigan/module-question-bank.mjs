@@ -4,10 +4,13 @@
  * R 339.22157(2)(e) requires "a method of assessment of the student's performance
  * during each module of instruction", and (f) requires "a remediation for any student
  * who is deficient in the assessment to repeat the module until the student understands
- * the course content material". This file is both.
+ * the course content material". This file implements only the machine-scored
+ * confirmation/engagement/remediation portion. The separately filed written-memorandum
+ * submission/versioning and instructor rubric/feedback/resubmission workflow is a
+ * prefiling operational gate and is not implemented here.
  *
  * Each module carries:
- *   applied      — one scenario item assessing performance inside the module
+ *   applied      — one scenario confirmation item inside the module
  *   engagement   — five scored items
  *   remediation  — five alternate items on the same concepts, served after a failed
  *                  engagement check, alongside the alternate explanation
@@ -16,7 +19,7 @@
  * permutes choices deterministically per item id before delivery, so what a student sees
  * is not ordered by correctness and a recorded selection keeps its meaning permanently.
  *
- * Course version 1.0 submission draft — not approved. No Michigan credit is available.
+ * Course version 1.0-submission-draft — not approved. No Michigan credit is available.
  */
 
 const modules = {

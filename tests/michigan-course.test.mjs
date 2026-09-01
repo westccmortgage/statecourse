@@ -17,6 +17,7 @@ const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), "u
 const curriculumDir = path.join(root, "michigan/mi-salesperson-prelicensure-40-v1/curriculum");
 const courseConfig = JSON.parse(read("config/courses/michigan-salesperson-v1.json"));
 const registry = JSON.parse(read("public/statecourse/data/state-registry.json"));
+const catalog = JSON.parse(read("public/statecourse/data/course-catalog.json"));
 const michigan = registry.states.find((state) => state.state_code === "MI");
 
 test("the course is forty clock hours in ten modules", () => {
@@ -170,8 +171,9 @@ test("nothing claims Michigan approval, credit, or an examination Michigan does 
   assert.equal(courseConfig.approval_number, null);
   assert.equal(courseConfig.enrollment_enabled, false);
   assert.equal(courseConfig.completion_rules.final_exam_required_by_state, false);
+  assert.equal(courseConfig.completion_rules.final_exam_offered_by_provider, false);
   assert.equal(courseConfig.completion_rules.proctoring_required_by_state, false);
-  assert.match(courseConfig._completion_rules_notes.final_exam_required_by_state, /no Michigan document may describe it as a state requirement/);
+  assert.match(courseConfig._completion_rules_notes.final_exam_required_by_state, /no Michigan document may describe a final examination as a state requirement/i);
 
   for (const moduleId of MICHIGAN_MODULE_IDS) {
     const text = read(`michigan/mi-salesperson-prelicensure-40-v1/curriculum/${moduleId}.md`);
@@ -183,10 +185,29 @@ test("nothing claims Michigan approval, credit, or an examination Michigan does 
 test("the course records what Michigan actually requires of records and reporting", () => {
   assert.equal(courseConfig.completion_rules.student_record_retention, "permanent");
   assert.equal(courseConfig.completion_rules.completion_reporting_business_days, 5);
-  assert.equal(courseConfig.completion_rules.course_approval_term_days, 365);
+  assert.equal(courseConfig.completion_rules.identity_verification_before_completion_report, true);
+  assert.equal(courseConfig.completion_rules.course_approval_term, "one_calendar_year_from_approval");
+  assert.equal(courseConfig.completion_rules.renewal_filing_days_before_expiration, 60);
+  assert.equal("course_approval_term_days" in courseConfig.completion_rules, false, "a 365-day surrogate drifts across leap years");
   assert.match(michigan.record_retention_period, /[Pp]ermanent/);
   assert.match(michigan.reporting_requirements, /5 business days/);
   assert.match(michigan.certificate_rules, /approval number of the school/);
+});
+
+test("identity independently blocks both the certificate and every completion report", () => {
+  assert.equal(courseConfig.completion_rules.identity_verification_before_certificate, true);
+  assert.equal(courseConfig.completion_rules.identity_verification_before_completion_report, true);
+  for (const relative of [
+    "michigan/submission/00-filing-index.md",
+    "michigan/submission/course-approval-package.md",
+    "michigan/submission/pss/equipment-platform-list.md",
+    "michigan/submission/bpl/syllabus.md",
+    "michigan/submission/bpl/enrollment-application.md",
+    "michigan/submission/bpl/reviewer-access-and-materials-manifest.md",
+  ]) {
+    const text = read(relative);
+    assert.match(text, /completion report|report\/export|reported student|reported or exported/i, `${relative} omits the reporting identity gate`);
+  }
 });
 
 test("the source register uses the current rule numbering and says why", () => {
@@ -196,6 +217,7 @@ test("the source register uses the current rule numbering and says why", () => {
   assert.match(register, /renumbered and largely rescinded effective June 4, 2025/);
   assert.match(register, /R 339\.22141/);
   assert.match(register, /R 339\.22157/);
+  assert.match(register, /R 339\.22159/);
   /* The register may name a rescinded number only while saying that it is rescinded, or
      while identifying the document that was read. What it may not do is cite one as the
      authority for a requirement, so each sentence containing such a number is checked
@@ -238,11 +260,11 @@ test("the submission package answers every element of R 339.22157(2)", () => {
 
 test("the package states what is a StateCourse standard rather than a Michigan rule", () => {
   const pkg = read("michigan/submission/course-approval-package.md");
-  assert.match(pkg, /80 percent threshold is a StateCourse instructional standard, not a Michigan requirement/);
+  assert.match(pkg, /thresholds are StateCourse instructional standards, not Michigan requirements/);
   assert.match(pkg, /Michigan prescribes none/);
   assert.match(pkg, /does not describe proctoring as a Michigan requirement/);
-  /* And it must not claim an approval anywhere. */
-  assert.match(pkg, /No StateCourse course is approved in any jurisdiction/);
+  /* And it must not claim Michigan approval. */
+  assert.match(pkg, /No StateCourse Michigan course or proprietary-school application has been approved or filed/);
   assert.doesNotMatch(pkg, /is approved by the Michigan Department/);
 });
 
@@ -250,13 +272,344 @@ test("no certificate can be produced before an approval number exists", () => {
   const pkg = read("michigan/submission/course-approval-package.md");
   /* The school's approval number is one of the five fields R 339.22141(1)(f) requires on
      the certificate, so a certificate before approval is a certificate that lies. */
-  assert.match(pkg, /No certificate can be issued before the Department assigns an approval number/);
-  assert.match(pkg, /refuses to produce a certificate while the approval number is absent/);
+  assert.match(pkg, /No certificate can be issued before the Department assigns the required approval identifier/);
+  assert.match(pkg, /refuse issuance while any identifier BPL confirms is required remains absent/);
 });
 
-test("the open items are recorded rather than assumed away", () => {
+test("the two-regulator filing dependencies are recorded rather than assumed away", () => {
   const pkg = read("michigan/submission/course-approval-package.md");
-  for (const item of [/Proprietary Schools Act/, /instructor route/i, /program coordinator/i, /ARELLO or equivalence/i, /one-year approval term/i]) {
+  for (const item of [/PSS proprietary-school licence/i, /instructor approval/i, /program coordinator/i, /ARELLO or equivalence/i, /one-year approval term/i]) {
     assert.match(pkg, item);
   }
+  assert.doesNotMatch(pkg, /Whether StateCourse is a proprietary school.*open question/is);
+});
+
+test("PSS applicability is resolved from official Michigan sources", () => {
+  const [register, baseline, screening] = [
+    read("michigan/regulatory/official-sources.md"),
+    read("michigan/regulatory/compliance-baseline.md"),
+    read("docs/states/online-delivery-screening.md"),
+  ];
+  for (const text of [register, baseline, screening]) {
+    assert.match(text, /non-degree/i);
+    assert.match(text, /no Michigan physical presence|no physical presence in Michigan/i);
+    assert.match(text, /must (also )?(hold|be licensed)|licen[cs]e.*required|required.*licen[cs]e/i);
+    assert.doesNotMatch(text, /Whether StateCourse is a proprietary school.*(open|legal question)/is);
+  }
+  assert.match(register, /Specialized Licensing Requirements/);
+  assert.match(register, /MiPSS Proprietary Schools License User Guide/);
+  assert.match(register, /R 390\.564/);
+  assert.match(michigan.ARELLO_status, /R 339\.22157/);
+  assert.doesNotMatch(michigan.ARELLO_status, /Rule 626/);
+});
+
+test("the Michigan filing packet contains distinct PSS, BPL, and instructor artifacts", () => {
+  const required = [
+    "michigan/submission/00-filing-index.md",
+    "michigan/submission/01-mipss-school-program-datasheet.md",
+    "michigan/submission/02-pss-upload-manifest.md",
+    "michigan/submission/pss/position-descriptions.md",
+    "michigan/submission/pss/personnel-entries-and-evidence-checklist.md",
+    "michigan/submission/pss/equipment-platform-list.md",
+    "michigan/submission/pss/surety-bond-checklist.md",
+    "michigan/submission/pss/student-contract-and-catalog-controls.md",
+    "michigan/submission/pss/student-complaint-policy.md",
+    "michigan/submission/pss/student-catalog-draft.md",
+    "michigan/submission/pss/enrollment-agreement-draft.md",
+    "michigan/submission/pss/records-retention-and-closure-plan.md",
+    "michigan/submission/pss/recruitment-location-and-surety-controls.md",
+    "michigan/submission/pss/student-support-capacity-plan.md",
+    "michigan/submission/bpl/syllabus.md",
+    "michigan/submission/bpl/certificate-specimen.md",
+    "michigan/submission/bpl/asynchronous-attestation.md",
+    "michigan/submission/bpl/enrollment-application.md",
+    "michigan/submission/bpl/hardware-software-plan.md",
+    "michigan/submission/bpl/non-arello-equivalence.md",
+    "michigan/submission/bpl/assessment-manifest.md",
+    "michigan/submission/bpl/applied-memo-rubric.md",
+    "michigan/submission/bpl/reviewer-access-and-materials-manifest.md",
+    "michigan/submission/instructor/qualification-dossier.md",
+    "michigan/submission/instructor/responsibilities-statement.md",
+    "michigan/submission/regulator-inquiries/PSS-prefiling-inquiry.md",
+    "michigan/submission/regulator-inquiries/BPL-prefiling-inquiry.md",
+    "michigan/submission/generated/Prelicensure-Course-Approval-Application-DRAFT-UNSIGNED.pdf",
+  ];
+  for (const relative of required) {
+    const full = path.join(root, relative);
+    assert.ok(fs.existsSync(full), `${relative} is missing`);
+    assert.ok(fs.statSync(full).size > 0, `${relative} is empty`);
+  }
+});
+
+test("the canonical Michigan course title and proposed instructor do not drift", () => {
+  const title = "Principles of Real Estate - Michigan Salesperson Prelicensure";
+  const publicCourse = catalog.categories
+    .flatMap((category) => category.programs ?? [])
+    .flatMap((program) => program.courses ?? [])
+    .find((course) => course.course_id === "mi-salesperson-prelicensure-40-v1");
+  assert.equal(courseConfig.title, title);
+  assert.equal(publicCourse.course_title, title);
+  assert.equal(publicCourse.instructor_id, "anatoliy-kanevsky-candidate");
+  for (const relative of [
+    "michigan/submission/course-approval-package.md",
+    "michigan/submission/bpl/syllabus.md",
+    "michigan/submission/bpl/enrollment-application.md",
+    "michigan/submission/instructor/qualification-dossier.md",
+  ]) {
+    assert.match(read(relative), new RegExp(title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
+
+test("the Michigan course version is one controlled value across filing surfaces", () => {
+  const expected = "1.0-submission-draft";
+  const course = getMichiganCourse();
+  const publicCourse = catalog.categories
+    .flatMap((category) => category.programs ?? [])
+    .flatMap((program) => program.courses ?? [])
+    .find((entry) => entry.course_id === "mi-salesperson-prelicensure-40-v1");
+  assert.equal(courseConfig.course_version, expected);
+  assert.equal(course.version, expected);
+  assert.equal(publicCourse.course_version, expected);
+  assert.match(read("michigan/submission/bpl/assessment-manifest.md"), new RegExp(expected));
+  assert.match(read("michigan/submission/pss/student-catalog-draft.md"), new RegExp(expected));
+  assert.match(read("michigan/submission/pss/enrollment-agreement-draft.md"), new RegExp(expected));
+  for (const moduleId of MICHIGAN_MODULE_IDS) {
+    const text = read(`michigan/mi-salesperson-prelicensure-40-v1/curriculum/${moduleId}.md`);
+    assert.match(text, /\*\*Course version:\*\* 1\.0-submission-draft/);
+    assert.match(text, /^# Principles of Real Estate - Michigan Salesperson Prelicensure — Module \d{2}$/m);
+  }
+});
+
+test("R 339.22159 keeps every noneducational solicitation outside credited hours", () => {
+  assert.equal(courseConfig.completion_rules.noneducational_solicitation_during_credited_hours_prohibited, true);
+  const register = read("michigan/regulatory/official-sources.md");
+  const baseline = read("michigan/regulatory/compliance-baseline.md");
+  const pkg = read("michigan/submission/course-approval-package.md");
+  for (const text of [register, baseline, pkg]) {
+    assert.match(text, /R 339\.22159/);
+    assert.match(text, /noneducational|non-educational/i);
+  }
+  const creditedContent = MICHIGAN_MODULE_IDS
+    .map((moduleId) => read(`michigan/mi-salesperson-prelicensure-40-v1/curriculum/${moduleId}.md`))
+    .join("\n");
+  assert.doesNotMatch(
+    creditedContent,
+    /Complete Licensing Path|Create (?:a )?Free Account|Upgrade (?:Your )?Account|Enroll Now|membership offer|employment opportunity|recruiting opportunity/i,
+    "a marketing, account, employment, membership, or recruiting solicitation entered credited course content"
+  );
+});
+
+test("the Michigan advertising script contains no imported California filing rule", () => {
+  const intro = read("marketing/state-intros/MI-michigan.md");
+  assert.doesNotMatch(intro, /RE 303|Regulation 3004|DRE-approved/i);
+  assert.match(intro, /Michigan PSS\/BPL/);
+  assert.match(intro, /noneducational solicitation earns no credit/i);
+});
+
+test("the assessment manifest reconciles to the secure 110-item bank without exposing keys", () => {
+  const manifest = read("michigan/submission/bpl/assessment-manifest.md");
+  assert.match(manifest, /\*\*110\*\*/);
+  assert.match(manifest, /\*\*10\*\*.*\*\*50\*\*.*\*\*50\*\*/s);
+  assert.match(manifest, /contains neither prompts nor answer keys/i);
+  assert.doesNotMatch(manifest, /correctChoice|rationale:/);
+});
+
+test("written memos and machine-scored confirmations are distinct and jointly gate every module", () => {
+  assert.equal(courseConfig.completion_rules.applied_memo_submission_required, true);
+  assert.equal(courseConfig.completion_rules.applied_memo_instructor_review_required, true);
+  assert.equal(courseConfig.completion_rules.applied_memo_passing_points, 8);
+  assert.equal(courseConfig.completion_rules.applied_memo_total_points, 10);
+  assert.equal(courseConfig.completion_rules.applied_confirmation_item_required, true);
+  assert.equal(courseConfig.completion_rules.applied_confirmation_item_passing_percent, 100);
+  const rubric = read("michigan/submission/bpl/applied-memo-rubric.md");
+  assert.match(rubric, /BPL-approved instructor only/i);
+  assert.match(rubric, /8 of 10 points/i);
+  assert.match(rubric, /needs-revision result keeps the module incomplete/i);
+  const manifest = read("michigan/submission/bpl/assessment-manifest.md");
+  assert.match(manifest, /Written performance assessment.*separate from the 110-item bank/is);
+  assert.match(manifest, /10 written submissions/i);
+  for (const moduleId of MICHIGAN_MODULE_IDS) {
+    const text = read(`michigan/mi-salesperson-prelicensure-40-v1/curriculum/${moduleId}.md`);
+    assert.match(text, /common 10-point applied-memo rubric/i, `${moduleId} omits the memo rubric`);
+    assert.match(text, /one-item applied confirmation check at 100 percent/i, `${moduleId} omits the confirmation item`);
+    assert.match(text, /\| Applied exercise: .* \+ confirmation \| 20 \| Written response and applied-confirmation result recorded \|/, `${moduleId} assigns no clock time/evidence to confirmation`);
+  }
+  const equipment = read("michigan/submission/pss/equipment-platform-list.md");
+  assert.match(equipment, /Written-memo review service/);
+  assert.match(equipment, /To implement and acceptance-test before PSS filing/);
+  const capacity = read("michigan/submission/pss/student-support-capacity-plan.md");
+  assert.match(capacity, /pending memorandum review/i);
+  assert.match(capacity, /oldest pending memo/i);
+});
+
+test("PSS personnel, records, location, surety, and recruitment controls are explicit", () => {
+  const personnel = read("michigan/submission/pss/personnel-entries-and-evidence-checklist.md");
+  const records = read("michigan/submission/pss/records-retention-and-closure-plan.md");
+  const controls = read("michigan/submission/pss/recruitment-location-and-surety-controls.md");
+  const surety = read("michigan/submission/pss/surety-bond-checklist.md");
+  assert.match(personnel, /administrative, supervisory, and instructional/i);
+  assert.match(personnel, /Department-form/i);
+  assert.match(records, /at least three years/i);
+  assert.match(records, /Grades and transcripts.*perpetually/is);
+  assert.match(records, /transfers records to the Board|transfer.*Board/is);
+  assert.match(controls, /prior notice/i);
+  assert.match(controls, /blind advertisement|help-wanted/i);
+  assert.match(controls, /does not induce a person to leave another educational institution/i);
+  assert.match(controls, /student who is enrolled in another school.*paid that other school a deposit.*change/is);
+  assert.match(surety, /stop enrollment immediately/i);
+  assert.match(surety, /replacement surety/i);
+  assert.match(read("michigan/submission/pss/student-contract-and-catalog-controls.md"), /all parties agree to the modification in writing/i);
+  assert.match(read("michigan/submission/pss/student-catalog-draft.md"), /all parties agree to the modification in writing/i);
+  assert.match(read("michigan/submission/pss/enrollment-agreement-draft.md"), /all parties agree to the modification in writing/i);
+  assert.match(records, /last attendance, withdrawal, cancellation, or termination/i);
+});
+
+test("the Michigan support promise has a load cap and enrollment pause", () => {
+  const capacity = read("michigan/submission/pss/student-support-capacity-plan.md");
+  const inquiry = read("michigan/submission/regulator-inquiries/PSS-prefiling-inquiry.md");
+  assert.match(capacity, /25 concurrently active Michigan students per BPL-approved(?: and PSS-acceptable)? instructor/i);
+  assert.match(capacity, /26th active student is refused or wait-listed/i);
+  assert.match(capacity, /Enrollment pauses earlier/i);
+  assert.match(capacity, /another instructor.*approved by BPL/is);
+  assert.match(inquiry, /student-to-instructor load/i);
+});
+
+test("catalog and agreement carry the complete controlled complaint procedure", () => {
+  for (const relative of [
+    "michigan/submission/pss/student-catalog-draft.md",
+    "michigan/submission/pss/enrollment-agreement-draft.md",
+  ]) {
+    const text = read(relative);
+    assert.match(text, /MI-COMPLAINT-1\.0-submission-draft/);
+    assert.match(text, /three business days/i);
+    assert.match(text, /ten business days/i);
+    assert.match(text, /directly to PSS|contact PSS at any time|file directly with PSS at any time/i);
+    assert.match(text, /without.*retaliat|will not.*retaliat|protected against.*retaliat/is);
+  }
+});
+
+test("the package refund calculation covers both Complete Licensing Path allocations", () => {
+  for (const relative of [
+    "michigan/submission/pss/student-contract-and-catalog-controls.md",
+    "michigan/submission/pss/student-catalog-draft.md",
+    "michigan/submission/pss/enrollment-agreement-draft.md",
+  ]) {
+    const text = read(relative);
+    assert.match(text, /same unearned percentage/i);
+    assert.match(text, /\$199 qualifying-course allocation and the \$100 noncredit allocation/i);
+    assert.match(text, /whether or not a noncredit feature was opened/i);
+    assert.match(text, /ordinary student-withdrawal policy pays no refund after more than 60% refund-calculation completion or certificate issuance/i);
+    assert.match(text, /validated active instructional minutes completed divided by 2,400 required minutes/i);
+    assert.match(text, /600 validated instructional minutes equals 25%/i);
+    assert.match(text, /written eligibility decision and calculation within three business days/i);
+    assert.match(text, /within 10 business days after the effective cancellation or withdrawal date/i);
+  }
+});
+
+test("active students are protected when authorization, approval, instructor authority, or surety lapses", () => {
+  for (const relative of [
+    "michigan/submission/pss/student-contract-and-catalog-controls.md",
+    "michigan/submission/pss/student-catalog-draft.md",
+    "michigan/submission/pss/enrollment-agreement-draft.md",
+    "michigan/submission/pss/recruitment-location-and-surety-controls.md",
+  ]) {
+    const text = read(relative);
+    assert.match(text, /school authorization.*program approval.*course approval.*instructor approval.*surety/is);
+    assert.match(text, /(?:suspend|cannot continue).*credited instruction.*completion.*certificates.*completion reports\/exports/is);
+    assert.match(text, /restoration or teach-out/i);
+    assert.match(text, /ordinary 60%\/certificate cutoff does not|without applying the ordinary 60%\/certificate cutoff/i);
+    assert.match(text, /complaint.*bond.*rights remain intact/is);
+  }
+});
+
+test("the application and agreement retain every separate regulatory acknowledgment", () => {
+  for (const relative of [
+    "michigan/submission/bpl/enrollment-application.md",
+    "michigan/submission/pss/enrollment-agreement-draft.md",
+  ]) {
+    const text = read(relative);
+    assert.match(text, /checkbox\/initials|separately initials/i);
+    assert.match(text, /36 months before the licence application/i);
+    assert.match(text, /completion of 100%/i);
+    assert.match(text, /maintains(?: and reports)?(?: the)? records Michigan requires|maintains.*student record.*reports/is);
+    assert.match(text, /(?:educational|education).*not legal.*lending.*appraisal.*tax.*brokerage advice/is);
+    assert.match(text, /controlled disclosure version.*date\/time/is);
+  }
+});
+
+test("catalog and agreement define objective school-initiated termination and refund treatment", () => {
+  for (const relative of [
+    "michigan/submission/pss/student-contract-and-catalog-controls.md",
+    "michigan/submission/pss/student-catalog-draft.md",
+    "michigan/submission/pss/enrollment-agreement-draft.md",
+  ]) {
+    const text = read(relative);
+    assert.match(text, /documented identity fraud or credential sharing/i);
+    assert.match(text, /at least five business days to respond/i);
+    assert.match(text, /appeal in writing to the programme coordinator/i);
+    assert.match(text, /no discretionary dismissal/i);
+    assert.match(text, /same refund calculation and payment deadline as a student withdrawal/i);
+    assert.match(text, /does not create automatic tuition forfeiture/i);
+  }
+});
+
+test("the assessment annex does not collide with attachment 4", () => {
+  const pkg = read("michigan/submission/course-approval-package.md");
+  assert.match(pkg, /Attachment 4 is the separate asynchronous-attestation form/);
+  assert.doesNotMatch(pkg, /assessments?.*supplied at Attachment 4/i);
+});
+
+test("the official BPL PDF carries exact controlled draft values and leaves agency/signature fields blank", () => {
+  const relative = "michigan/submission/generated/Prelicensure-Course-Approval-Application-DRAFT-UNSIGNED.pdf";
+  const raw = fs.readFileSync(path.join(root, relative)).toString("latin1");
+  const fieldObject = (name) => {
+    const marker = `/T (${name})`;
+    const start = raw.indexOf(marker);
+    assert.notEqual(start, -1, `${name} is missing from the official PDF`);
+    const end = raw.indexOf("endobj", start);
+    assert.notEqual(end, -1, `${name} PDF object is unterminated`);
+    return raw.slice(start, end);
+  };
+  assert.match(fieldObject("Course Name"), /\/V \(Principles of Real Estate \\055 Michigan Salesperson Prelicensure\)/);
+  assert.match(fieldObject("Real Estate School Name"), /\/V \(StateCourse LLC\)/);
+  assert.match(fieldObject("AddressRow1"), /\/V \(407 N Pacific Coast Highway\\054 Unit 1028\\054 Redondo Beach\\054 CA 90277\)/);
+  assert.doesNotMatch(fieldObject("AddressRow1"), /Hwy/);
+  assert.doesNotMatch(fieldObject("MI Proprietary School Number"), /\/V\s/);
+  assert.doesNotMatch(fieldObject("Date"), /\/V\s/);
+  assert.doesNotMatch(fieldObject("Signature of Coordinator"), /\/V\s/);
+});
+
+test("the PSS route is required but not guessed, and pre-filing readiness is explicit", () => {
+  const [index, inquiry, advertising, equipment] = [
+    read("michigan/submission/00-filing-index.md"),
+    read("michigan/submission/regulator-inquiries/PSS-prefiling-inquiry.md"),
+    read("michigan/submission/pss/proposed-advertising-record.md"),
+    read("michigan/submission/pss/equipment-platform-list.md"),
+  ];
+  assert.match(index, /exact MiPSS application category.*await/i);
+  assert.match(index, /pre-PSS-filing gates/i);
+  assert.match(inquiry, /Proprietary School.*Out-of-State Distance Education Provider/is);
+  assert.match(inquiry, /temporary permit/i);
+  assert.match(advertising, /every public StateCourse website page/i);
+  assert.match(equipment, /To implement and acceptance-test before PSS filing/);
+});
+
+test("the syllabus carries complete coordinator and instructor contact fields", () => {
+  const syllabus = read("michigan/submission/bpl/syllabus.md");
+  assert.match(syllabus, /Coordinator address and telephone.*407 N Pacific Coast Highway.*\(310\) 686-5053/);
+  assert.match(syllabus, /Instructor address and telephone.*407 N Pacific Coast Highway.*\(310\) 686-5053/);
+  assert.match(syllabus, /Shared email.*info@statecourse\.com/);
+});
+
+test("Michigan's August 31 source control and both regulators flow into public data", () => {
+  const publicCourse = catalog.categories
+    .flatMap((category) => category.programs ?? [])
+    .flatMap((program) => program.courses ?? [])
+    .find((course) => course.course_id === "mi-salesperson-prelicensure-40-v1");
+  assert.equal(courseConfig.source_control_date, "2026-08-31");
+  assert.equal(michigan.last_regulatory_review, "2026-08-31");
+  assert.match(michigan.secondary_regulator_url, /michigan\.gov\/leo\/bureaus-agencies\/wd\/pss/);
+  assert.match(publicCourse.regulator, /Bureau of Professional Licensing/);
+  assert.match(publicCourse.regulator, /Post Secondary Schools/);
+  assert.equal(courseConfig.completion_rules.final_exam_offered_by_provider, false);
 });

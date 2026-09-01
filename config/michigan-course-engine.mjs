@@ -7,10 +7,13 @@
  *   (b) individual modules of instruction        -> MODULES, ten of them
  *   (c) a learning objective for each module     -> objectives, and the union test below
  *   (d) a structured learning method             -> six sections, checkpoint per section
- *   (e) assessment during each module            -> applied and engagement, in-module
- *   (f) remediation repeating the module         -> remediation, required before completion
+ *   (e) machine-scored assessment portion        -> confirmation and engagement, in-module
+ *   (f) machine-scored remediation portion       -> remediation, required before completion
  *
- * The sixth, prior departmental approval, is not something code can supply.
+ * The separately filed written-memorandum submission/versioning and instructor
+ * rubric/feedback/resubmission workflow is not implemented in this module. It remains a
+ * prefiling operational gate. The sixth requirement, prior departmental approval, is
+ * likewise not something code can supply.
  *
  * Two Michigan rules shape the completion logic and differ from California's:
  * attendance must be total rather than time-weighted (R 339.22152(1)), and distance
@@ -18,7 +21,7 @@
  * is complete only when every one of its requirements is met, and the course is complete
  * only when all ten modules are — there is no partial-hours arithmetic.
  *
- * Course version 1.0 submission draft — not approved. No Michigan credit is available.
+ * Course version 1.0-submission-draft — not approved. No Michigan credit is available.
  */
 
 import MODULE_BANK from "./michigan/module-question-bank.mjs";
@@ -94,7 +97,7 @@ export function getMichiganCourse(courseId = COURSE_ID) {
   if (courseId !== COURSE_ID) return null;
   return Object.freeze({
     courseId: COURSE_ID,
-    title: "Principles of Real Estate — Michigan Salesperson Prelicensure",
+    title: "Principles of Real Estate - Michigan Salesperson Prelicensure",
     version: "1.0-submission-draft",
     state: "MI",
     regulator: "Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing",

@@ -1,8 +1,8 @@
-# Principles of Real Estate - Module 02
+# Principles of Real Estate - Michigan Salesperson Prelicensure — Module 02
 
 ## Property, ownership, and interests in real estate
 
-**Course version:** 1.0 submission draft
+**Course version:** 1.0-submission-draft
 **Module time:** 4 clock hours (240 instructional minutes)
 **Regulatory status:** Not approved. No Michigan prelicensure credit is available for this course.
 
@@ -24,7 +24,7 @@ By the end of this module the student will be able to:
 | Guided reading: real and personal property, fixtures | 75 | Sections 1-2 recorded as viewed |
 | Guided reading: estates and concurrent ownership | 70 | Sections 3-4 recorded as viewed |
 | Guided reading: Michigan ownership structures in practice | 65 | Sections 5-6 recorded as viewed |
-| Applied exercise: an ownership and fixtures memorandum | 20 | Written response submitted |
+| Applied exercise: ownership/fixtures memorandum + confirmation | 20 | Written response and applied-confirmation result recorded |
 | Scored engagement check | 10 | Five items submitted |
 | **Total** | **240** | **One of ten modules of instruction** |
 
@@ -326,11 +326,11 @@ A listing describes a parcel as "150 feet of private lake frontage." The seller 
 
 ## Required applied exercise
 
-Prepare a one-page ownership and fixtures memorandum for the property described with this module. Identify the form of ownership and what it requires for a valid conveyance; list every item you would expressly include or exclude and say why; identify each right or limitation that travels with the land and how you verified it; state which questions you would refer and to whom; and state what you would place in the file and when. The instructor version carries the scoring rubric.
+Prepare a one-page ownership and fixtures memorandum for the property described with this module. Identify the form of ownership and what it requires for a valid conveyance; list every item you would expressly include or exclude and say why; identify each right or limitation that travels with the land and how you verified it; state which questions you would refer and to whom; and state what you would place in the file and when. The approved instructor scores it under the common 10-point applied-memo rubric; 8/10 with no zero on legal accuracy or professional boundaries is satisfactory, and a needs-revision result receives feedback and must be resubmitted.
 
 ## Knowledge check and remediation
 
-Complete the five-item engagement check for this module. The mastery threshold is 80 percent. An unsuccessful attempt opens remediation: an alternate explanation, a second worked scenario, and a different item on the same concepts, which must be answered correctly before the module can be completed — R 339.22157(2)(f). The threshold is a StateCourse standard, not a Michigan requirement.
+After submitting the memo, complete the one-item applied confirmation check at 100 percent, then the five-item engagement check at 80 percent. A missed confirmation returns you to the relevant instruction. An unsuccessful engagement attempt opens remediation: an alternate explanation, a second worked scenario, and a separately authored five-item set on the same concepts. The module cannot complete until the memo is satisfactory, the confirmation is correct, and the student reaches 80 percent on any remediation set — R 339.22157(2)(f). All thresholds are StateCourse standards, not Michigan requirements.
 
 ## Module completion
 

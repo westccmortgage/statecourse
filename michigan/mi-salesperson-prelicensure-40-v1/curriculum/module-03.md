@@ -1,8 +1,8 @@
-# Principles of Real Estate - Module 03
+# Principles of Real Estate - Michigan Salesperson Prelicensure — Module 03
 
 ## Legal descriptions, transfer of title, and recording in Michigan
 
-**Course version:** 1.0 submission draft
+**Course version:** 1.0-submission-draft
 **Module time:** 4 clock hours (240 instructional minutes)
 **Regulatory status:** Not approved. No Michigan prelicensure credit is available for this course.
 
@@ -24,7 +24,7 @@ By the end of this module the student will be able to:
 | Guided reading: legal descriptions and the Michigan survey | 75 | Sections 1-2 recorded as viewed |
 | Guided reading: deeds and valid transfer | 70 | Sections 3-4 recorded as viewed |
 | Guided reading: recording, priority, and title insurance | 65 | Sections 5-6 recorded as viewed |
-| Applied exercise: a title and description review memorandum | 20 | Written response submitted |
+| Applied exercise: title/description memorandum + confirmation | 20 | Written response and applied-confirmation result recorded |
 | Scored engagement check | 10 | Five items submitted |
 | **Total** | **240** | **One of ten modules of instruction** |
 
@@ -323,11 +323,11 @@ Schedule B-II lists "an easement for ingress and egress in favour of the adjoini
 
 ## Required applied exercise
 
-Prepare a one-page title and description review memorandum for the commitment supplied with this module. State which description system is used and verify the parcel it describes; list every Schedule B-I requirement and who must satisfy it; list every Schedule B-II exception and say which ones you would bring to the client's attention and why; identify what you would refer to the title company and what to counsel; and state the contingency date each item must be resolved by. The instructor version carries the scoring rubric.
+Prepare a one-page title and description review memorandum for the commitment supplied with this module. State which description system is used and verify the parcel it describes; list every Schedule B-I requirement and who must satisfy it; list every Schedule B-II exception and say which ones you would bring to the client's attention and why; identify what you would refer to the title company and what to counsel; and state the contingency date each item must be resolved by. The approved instructor scores it under the common 10-point applied-memo rubric; 8/10 with no zero on legal accuracy or professional boundaries is satisfactory, and a needs-revision result receives feedback and must be resubmitted.
 
 ## Knowledge check and remediation
 
-Complete the five-item engagement check. The mastery threshold is 80 percent. An unsuccessful attempt opens remediation with an alternate explanation, a second worked scenario, and a different item, which must be answered correctly before the module completes — R 339.22157(2)(f).
+After submitting the memo, complete the one-item applied confirmation check at 100 percent, then the five-item engagement check at 80 percent. A missed confirmation returns you to the relevant instruction. An unsuccessful engagement attempt opens remediation with an alternate explanation, a second worked scenario, and a separately authored five-item set. The module cannot complete until the memo is satisfactory, the confirmation is correct, and the student reaches the StateCourse 80 percent threshold on any remediation set — R 339.22157(2)(f).
 
 ## Module completion
 
