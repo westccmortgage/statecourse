@@ -40,3 +40,18 @@ test("Sites resolves generated StateCourse directory routes through their index 
   assert.match(worker, /env\.ASSETS\.fetch/);
   assert.match(worker, /assetResponse\.status !== 404/);
 });
+
+test("Sites keeps account actions on the canonical operational student portal", async () => {
+  const [generator, studentRoute, signInRoute, registerRoute] = await Promise.all([
+    read("scripts/generate-national-platform.mjs"),
+    read("app/student/page.tsx"),
+    read("app/student/sign-in/page.tsx"),
+    read("app/student/register/page.tsx"),
+  ]);
+
+  assert.match(generator, /const studentPortalUrl = "https:\/\/statecourse\.com\/student\/sign-in\/"/);
+  assert.match(generator, /const studentRegisterUrl = "https:\/\/statecourse\.com\/student\/register\/"/);
+  assert.match(studentRoute, /redirect\("https:\/\/statecourse\.com\/student\/sign-in\/"\)/);
+  assert.match(signInRoute, /redirect\("https:\/\/statecourse\.com\/student\/sign-in\/"\)/);
+  assert.match(registerRoute, /redirect\("https:\/\/statecourse\.com\/student\/register\/"\)/);
+});

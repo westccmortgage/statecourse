@@ -50,6 +50,18 @@ test("national homepage does not lead with Virginia", async () => {
   assert.match(homepage, /State by State/);
   assert.match(homepage, /id="licensing-finder"/);
   assert.match(homepage, /My Courses/);
+  assert.match(homepage, /href="https:\/\/statecourse\.com\/student\/sign-in\/"/);
+  assert.match(homepage, /href="https:\/\/statecourse\.com\/student\/register\/"/);
+  assert.doesNotMatch(homepage, /href="student\/(?:register\/|sign-in\/)?"/);
+});
+
+test("generated national pages use the canonical operational student portal", async () => {
+  for (const route of ["get-licensed/index.html", "my-statecourse/index.html", "real-estate/california/index.html"]) {
+    const html = await read(route);
+    assert.match(html, /https:\/\/statecourse\.com\/student\/sign-in\//);
+    assert.match(html, /https:\/\/statecourse\.com\/student\/register\//);
+    assert.doesNotMatch(html, /href="(?:\.\.\/)+student\//);
+  }
 });
 
 test("state course routes expose state-specific academic records", async () => {
