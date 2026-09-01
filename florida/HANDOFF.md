@@ -21,7 +21,8 @@ Phase 0 is done and the course-development layer now exists. Nothing is filed or
 - **16 recorded conflicts**, none resolved by guessing.
 - **19 syllabus sections, 180 learning objectives**, each page-referenced; `verify()` clean.
 - **19 curriculum files, 3,000 designed instruction minutes, 180 periodic application items and 19 secure final-item drafts.**
-- **68 Florida tests**, all passing. Source lock **LOCKED**.
+- **Five 126-item form blueprints: 630 secure slots, all 180 objectives covered, 611 slots still unwritten.**
+- **76 Florida tests**, all passing. Source lock **LOCKED**.
 - **Repository-wide direct run:** 1,021/1,055 pass; all 34 failures are outside the Florida build.
   A clean built-main comparison was not reproducible in this worktree because the bootstrap requires
   Linux `flock` and the host did not have enough free disk for a local dependency install.
@@ -32,7 +33,8 @@ Run these four before believing anything above:
 node scripts/florida-source-lock.mjs            # LOCKED, 48 sources
 node scripts/florida-source-inventory.mjs       # 197 files, 30 controlling present
 node scripts/build-florida-course.mjs           # deterministic 19-section build
-node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs # 68/68
+node scripts/florida-exam-blueprint.mjs         # 5 x 126 slots; content remains NO-GO
+node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs tests/florida-exam-blueprint.test.mjs # 76/76
 bash scripts/florida-regression-baseline.sh     # requires the repository's build dependencies
 ```
 
@@ -137,6 +139,7 @@ see §5.
 | `course-i-curriculum.mjs` | all 19 sections, 180 objectives, provider-designed 3,000-minute allocation and substantive core lessons |
 | `periodic-assessment-bank.mjs` | 180 objective-mapped formative application prompts with rubrics |
 | `secure-final-bank-draft.mjs` | truthful 19-item development slice; no usable final form |
+| `secure-final-form-blueprint.mjs` | five 126-item form maps; 630 page-referenced authoring slots; release disabled |
 | `distance-course-engine.mjs` | identity, progression, event, records, continuity and final-release controls |
 
 ### Scripts
@@ -238,7 +241,8 @@ Remaining order:
 1. **Independent legal/content review and expansion of authored lessons.** Current layer is a
    complete architecture and substantive draft, not yet a regulator-ready textbook.
 2. **Objective time study** with representative learners, without video.
-3. **Complete the secure bank** (at least 81 more reviewed items for one 100-item form), lock final
+3. **Complete the secure bank** against the fixed five-form blueprint: 611 slots remain unwritten
+   (81 more reaches one 100-item floor form; 107 more reaches one 126-item policy form). Lock final
    pagination, assemble forms and run duplication/cognitive-level audits.
 4. **Re-test video candidates** against the reviewed course.
 

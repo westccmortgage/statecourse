@@ -162,7 +162,8 @@ test("current official instructor CIB resolves the former logistics gap", () => 
 test("reviewer submission package exists and refuses unsupported readiness", () => {
   for (const file of [
     "timed-course-outline.md", "delivery-method-and-controls.md", "objective-time-study-protocol.md",
-    "records-identity-attendance-sop.md", "end-course-assessment-build-status.md", "completion-certificate-template.md",
+    "records-identity-attendance-sop.md", "end-course-assessment-build-status.md", "exam-form-blueprint.md",
+    "completion-certificate-template.md",
   ]) assert.ok(fs.existsSync(path.join(ROOT, COURSE, "submission", file)), file);
   assert.match(read(`${COURSE}/submission/objective-time-study-protocol.md`), /participant observations not yet collected/i);
   assert.match(read(`${COURSE}/submission/end-course-assessment-build-status.md`), /NO-GO for form assembly/);
