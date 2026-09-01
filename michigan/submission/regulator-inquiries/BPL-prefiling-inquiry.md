@@ -1,7 +1,13 @@
-# Draft BPL Prefiling Inquiry — Not Sent
+# BPL Prefiling Inquiry — Sent 2026-09-01
 
 **To:** BPLHelp@michigan.gov<br>
+**From:** westccmortgage@gmail.com<br>
+**Reply-To:** info@statecourse.com<br>
+**Sent:** 2026-09-01<br>
+**Gmail message/thread ID:** `1a05da60b7e3db2b`<br>
 **Subject:** StateCourse LLC — distance prelicensure course/instructor filing questions
+
+This file records the inquiry sent on the date above. It does not record a regulator response, acceptance, authorization, or approval.
 
 StateCourse LLC is preparing a new 40-clock-hour, entirely asynchronous Michigan salesperson prelicensure course titled **Principles of Real Estate - Michigan Salesperson Prelicensure**. Enrollment remains closed. We are also preparing the separate LEO Post Secondary Schools school/program application.
 

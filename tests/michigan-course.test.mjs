@@ -199,6 +199,7 @@ test("identity independently blocks both the certificate and every completion re
   assert.equal(courseConfig.completion_rules.identity_verification_before_completion_report, true);
   for (const relative of [
     "michigan/submission/00-filing-index.md",
+    "michigan/submission/operational-gate-acceptance.md",
     "michigan/submission/course-approval-package.md",
     "michigan/submission/pss/equipment-platform-list.md",
     "michigan/submission/bpl/syllabus.md",
@@ -436,7 +437,7 @@ test("written memos and machine-scored confirmations are distinct and jointly ga
   }
   const equipment = read("michigan/submission/pss/equipment-platform-list.md");
   assert.match(equipment, /Written-memo review service/);
-  assert.match(equipment, /To implement and acceptance-test before PSS filing/);
+  assert.match(equipment, /Pre-activation implementation.*repository tests complete.*deployment/is);
   const capacity = read("michigan/submission/pss/student-support-capacity-plan.md");
   assert.match(capacity, /pending memorandum review/i);
   assert.match(capacity, /oldest pending memo/i);
@@ -591,7 +592,7 @@ test("the PSS route is required but not guessed, and pre-filing readiness is exp
   assert.match(inquiry, /Proprietary School.*Out-of-State Distance Education Provider/is);
   assert.match(inquiry, /temporary permit/i);
   assert.match(advertising, /every public StateCourse website page/i);
-  assert.match(equipment, /To implement and acceptance-test before PSS filing/);
+  assert.match(equipment, /pre-activation implementation.*not been deployed.*activated/is);
 });
 
 test("the syllabus carries complete coordinator and instructor contact fields", () => {

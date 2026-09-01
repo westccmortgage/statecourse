@@ -1,7 +1,13 @@
-# Draft PSS Prefiling Inquiry — Not Sent
+# PSS Prefiling Inquiry — Sent 2026-09-01
 
 **To:** PSS@michigan.gov<br>
+**From:** westccmortgage@gmail.com<br>
+**Reply-To:** info@statecourse.com<br>
+**Sent:** 2026-09-01<br>
+**Gmail message/thread ID:** `1a05da0d0be621df`<br>
 **Subject:** StateCourse LLC — out-of-state non-degree distance school / real-estate prelicensure filing sequence
+
+This file records the inquiry sent on the date above. It does not record a regulator response, acceptance, authorization, or approval.
 
 StateCourse LLC is a California LLC preparing to offer one entirely asynchronous, non-degree 40-clock-hour Michigan real-estate salesperson prelicensure program. The school has no Michigan physical presence and will not enroll Michigan students until every required authorization, approval, and operational gate is active.
 
