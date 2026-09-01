@@ -8,6 +8,25 @@
   "effective_date": null,
   "expiration_date": null,
   "enrollment_enabled": false,
+  "operational_activation_status": "preactivation_only",
+  "operational_authority": {
+    "school": { "status": "pending", "identifier": null, "effectiveAt": null, "expiresAt": null },
+    "program": { "status": "pending", "identifier": null, "effectiveAt": null, "expiresAt": null },
+    "course": { "status": "pending", "identifier": null, "effectiveAt": null, "expiresAt": null },
+    "instructor": { "status": "pending", "identifier": null, "subjectId": null, "effectiveAt": null, "expiresAt": null },
+    "surety": { "status": "pending", "identifier": null, "effectiveAt": null, "expiresAt": null }
+  },
+  "certificate_configuration": {
+    "identifier_requirements_confirmed": false,
+    "pssSchoolNumber": null,
+    "bplSponsorNumber": null,
+    "bplCourseNumber": null
+  },
+  "reporting_configuration": {
+    "requirements_confirmed": false,
+    "channel": null,
+    "format": null
+  },
   "required_hours": 40,
   "module_count": 10,
   "clock_hours_per_module": 4,

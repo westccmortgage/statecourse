@@ -17,6 +17,8 @@ Michigan is a two-regulator filing. PSS licensure is required; the exact MiPSS a
 
 The BPL form asks for a Michigan proprietary-school number while MiPSS asks for secondary-agency approval. The prefiling questions request the agencies' exact sequencing. No package waits idle for the answer: both are assembled in parallel.
 
+The controlled PSS and BPL prefiling inquiries were sent on 2026-09-01; the sent records and Gmail message/thread IDs are preserved in `regulator-inquiries/`. No agency response, acceptance, authorization, or approval has been received or inferred.
+
 ## Controlled identity
 
 | Item | Filing value |
@@ -78,6 +80,7 @@ The legal name is fixed. Before filing or ordering the bond, PSS must confirm wh
 | Reviewer access/materials | `bpl/reviewer-access-and-materials-manifest.md` | Prepared; credentials generated only for the reviewer |
 | Instructor dossier | `instructor/qualification-dossier.md` | Prepared; signed résumé/supporting exhibits remain |
 | Instructor duties statement | `instructor/responsibilities-statement.md` | Prepared; signature remains |
+| Operational-gate implementation record | `operational-gate-acceptance.md` | Pre-activation implementation and repository tests complete; deployment, agency configuration, reviewer UI, incident/capacity acceptance remain |
 
 ## Pre-filing operational gate
 
@@ -95,7 +98,9 @@ If PSS confirms the proprietary-school document route, its guide requires the sc
 10. Acceptance-test PSS operating kill switches: no enrollment without continuous surety; if school/program/course/instructor authority or surety lapses, suspend active-student credited instruction, completion, certificates, and reporting, then follow only agency-approved restoration/teach-out or the regulator-loss cancellation/refund path; prior notice before a location change; compliant recruiting/advertising; three-year operational records; perpetual grades/transcripts; transcript service; and Board transfer on closure.
 11. Acceptance-test the initial Michigan support-capacity cap, one-business-day instructor response evidence, automatic enrollment pause, and approved-instructor expansion rule.
 
-StateCourse is not filing-ready until this gate and the agency-routing questions are closed. Most implementation and acceptance evidence can be completed in the repository without the owner.
+The first implementation slice for items 1, 2, 5, 6, and the core authorization/surety refusals in item 10 is now versioned in the repository. The report builder for item 3 is implemented but intentionally cannot generate until BPL's format/channel answer is recorded. This is not production acceptance: the exact remaining evidence and blockers are controlled in `operational-gate-acceptance.md`.
+
+StateCourse is not filing-ready until the remaining gate, deployed acceptance evidence, and agency-routing questions are closed. Most implementation and acceptance evidence can be completed in the repository without the owner.
 
 ## External actions that cannot be completed in source control
 
