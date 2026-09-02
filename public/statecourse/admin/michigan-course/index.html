@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#172536" />
+    <title>Michigan Instructor Review | StateCourse</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="michigan-course.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to review queue</a>
+    <header class="admin-header">
+      <a class="brand" href="../">
+        <span aria-hidden="true">SC</span>
+        <strong>StateCourse</strong>
+        <small>Michigan Operations</small>
+      </a>
+      <nav aria-label="Michigan operations">
+        <a href="../michigan-review/">Read-only evidence</a>
+        <a href="../">Regulatory cockpit</a>
+      </nav>
+    </header>
+    <div class="draft-banner" role="note">
+      Pre-activation implementation. No Michigan approval, authority, enrollment, or production acceptance is represented.
+    </div>
+    <main id="main" class="shell">
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">Instructor workflow</p>
+          <h1>Written-memorandum review queue</h1>
+          <p>Only the current named instructor account bound on the server can record the five-criterion rubric. The browser cannot choose a reviewer identity.</p>
+        </div>
+        <aside class="session-card" aria-labelledby="staffSessionHeading">
+          <p class="eyebrow">Protected access</p>
+          <h2 id="staffSessionHeading">Named staff session</h2>
+          <p id="sessionState">Checking the signed-in account and Michigan role binding…</p>
+          <div class="session-actions">
+            <a id="signInLink" class="button-link" href="/student/sign-in/?return_to=%2Fadmin%2Fmichigan-course%2F">Sign in</a>
+            <button id="signOut" class="secondary-button" type="button" hidden>Sign out</button>
+          </div>
+          <small>Shared administrator tokens are not accepted. Staff provisioning remains a deployment blocker.</small>
+        </aside>
+      </section>
+      <p id="queueMessage" class="message" role="status" aria-live="polite" tabindex="-1">
+        Checking protected Michigan records…
+      </p>
+      <section id="capacity" class="capacity" aria-label="Capacity status" hidden></section>
+      <div id="workArea" class="work-area" hidden>
+        <section class="queue" aria-labelledby="queueHeading">
+          <div class="section-heading">
+            <p class="eyebrow">Oldest first</p>
+            <h2 id="queueHeading">Pending reviews</h2>
+          </div>
+          <div id="queueRecords"></div>
+        </section>
+        <section id="reviewPanel" class="review-panel" tabindex="-1" aria-live="polite">
+          <p class="empty-copy">Choose a pending memorandum to review.</p>
+        </section>
+      </div>
+    </main>
+    <script src="michigan-course.js" defer></script>
+  </body>
+</html>

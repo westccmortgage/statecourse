@@ -15,7 +15,7 @@ values(
   'mi-salesperson-prelicensure-40-v1','MI',
   'Principles of Real Estate - Michigan Salesperson Prelicensure',
   'real_estate_prelicense','submission_draft',false,
-  '1.0-submission-draft','/student/course/'
+  '1.0-submission-draft','/student/michigan-course/'
 )
 on conflict(id) do update set
   state=excluded.state,
@@ -448,7 +448,7 @@ begin
   if new.course_id <> 'mi-salesperson-prelicensure-40-v1' then return new; end if;
   insert into student_portal_state(enrollment_id,student_id,course_id,course_version,resume_path)
   values(new.id,new.student_id,new.course_id,new.course_version,
-    '/student/course/?enrollment_id='||new.id::text)
+    '/student/michigan-course/?enrollment_id='||new.id::text)
   on conflict(enrollment_id) do nothing;
   insert into lms_compliance_state(enrollment_id,required_study_seconds,credited_study_seconds)
   values(new.id,144000,0)
@@ -1319,11 +1319,60 @@ revoke all on michigan_authority_events,michigan_runtime_configuration_events,
   michigan_applied_memo_versions,michigan_applied_memo_reviews,
   michigan_identity_verification_events,michigan_asynchronous_attestation_events,
   michigan_completion_reports,michigan_completion_certificates
-from anon,authenticated;
+from public,anon,authenticated;
+
+revoke all on michigan_current_authority,michigan_current_runtime_configuration,
+  michigan_current_identity_verification,michigan_current_asynchronous_attestation
+from public,anon,authenticated;
 
 grant select on michigan_applied_memo_versions,michigan_applied_memo_reviews,
   michigan_identity_verification_events,michigan_asynchronous_attestation_events,
   michigan_completion_reports,michigan_completion_certificates
-to authenticated;
+to service_role;
+
+grant select on michigan_current_authority,michigan_current_runtime_configuration,
+  michigan_current_identity_verification,michigan_current_asynchronous_attestation
+to service_role;
+
+-- SECURITY DEFINER functions otherwise inherit EXECUTE for PUBLIC. Browser roles may
+-- not call these functions or read Michigan evidence tables directly; every read,
+-- mutation, and status RPC is called by a server function after it binds the
+-- authenticated human to the requested enrollment or staff role.
+revoke execute on function michigan_authority_summary(text,text,timestamptz) from public,anon,authenticated;
+revoke execute on function michigan_require_active_authority(text,text) from public,anon,authenticated;
+revoke execute on function michigan_refuse_record_mutation() from public,anon,authenticated;
+revoke execute on function initialize_michigan_enrollment() from public,anon,authenticated;
+revoke execute on function initialize_michigan_enrollment_records() from public,anon,authenticated;
+revoke execute on function michigan_credited_time_guard() from public,anon,authenticated;
+revoke execute on function michigan_instruction_evidence_guard() from public,anon,authenticated;
+revoke execute on function michigan_assignment_completion_guard() from public,anon,authenticated;
+revoke execute on function michigan_direct_memo_submission_guard() from public,anon,authenticated;
+revoke execute on function michigan_direct_memo_review_guard() from public,anon,authenticated;
+revoke execute on function michigan_direct_attestation_guard() from public,anon,authenticated;
+revoke execute on function michigan_direct_certificate_guard() from public,anon,authenticated;
+revoke execute on function michigan_direct_report_guard() from public,anon,authenticated;
+revoke execute on function michigan_direct_completion_guard() from public,anon,authenticated;
+revoke execute on function submit_michigan_applied_memo(uuid,uuid,text,text) from public,anon,authenticated;
+revoke execute on function review_michigan_applied_memo(uuid,uuid,jsonb,jsonb) from public,anon,authenticated;
+revoke execute on function record_michigan_identity_verification(uuid,uuid,text,text,text,text,uuid) from public,anon,authenticated;
+revoke execute on function sign_michigan_asynchronous_attestation(uuid,uuid,text,text,integer,text) from public,anon,authenticated;
+revoke execute on function michigan_operational_status(uuid) from public,anon,authenticated;
+revoke execute on function record_michigan_completion(uuid) from public,anon,authenticated;
+revoke execute on function issue_michigan_completion_certificate(uuid) from public,anon,authenticated;
+revoke execute on function build_michigan_completion_report(uuid) from public,anon,authenticated;
+revoke execute on function record_michigan_authority_event(text,text,text,uuid,timestamptz,timestamptz,jsonb,uuid) from public,anon,authenticated;
+revoke execute on function record_michigan_runtime_configuration(boolean,text,text,text,boolean,text,text,jsonb,uuid) from public,anon,authenticated;
+
+grant execute on function michigan_authority_summary(text,text,timestamptz) to service_role;
+grant execute on function submit_michigan_applied_memo(uuid,uuid,text,text) to service_role;
+grant execute on function review_michigan_applied_memo(uuid,uuid,jsonb,jsonb) to service_role;
+grant execute on function record_michigan_identity_verification(uuid,uuid,text,text,text,text,uuid) to service_role;
+grant execute on function sign_michigan_asynchronous_attestation(uuid,uuid,text,text,integer,text) to service_role;
+grant execute on function michigan_operational_status(uuid) to service_role;
+grant execute on function record_michigan_completion(uuid) to service_role;
+grant execute on function issue_michigan_completion_certificate(uuid) to service_role;
+grant execute on function build_michigan_completion_report(uuid) to service_role;
+grant execute on function record_michigan_authority_event(text,text,text,uuid,timestamptz,timestamptz,jsonb,uuid) to service_role;
+grant execute on function record_michigan_runtime_configuration(boolean,text,text,text,boolean,text,text,jsonb,uuid) to service_role;
 
 commit;

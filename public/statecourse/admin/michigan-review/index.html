@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#172536" />
+    <title>Michigan Read-only Evidence | StateCourse</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../michigan-course/michigan-course.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to evidence</a>
+    <header class="admin-header">
+      <a class="brand" href="../">
+        <span aria-hidden="true">SC</span>
+        <strong>StateCourse</strong>
+        <small>Michigan Evidence</small>
+      </a>
+      <nav aria-label="Michigan operations">
+        <a href="../michigan-course/">Instructor queue</a>
+        <a href="../">Regulatory cockpit</a>
+      </nav>
+    </header>
+    <div class="draft-banner" role="note">
+      Read-only pre-activation evidence. This view cannot submit, score, complete, certify, report, approve, or enroll.
+    </div>
+    <main id="main" class="shell">
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">Reviewer mode</p>
+          <h1>Michigan course evidence</h1>
+          <p>Inspect versioned records and refusal state without creating student credit or changing any record.</p>
+        </div>
+        <aside class="session-card" aria-labelledby="reviewSessionHeading">
+          <p class="eyebrow">Protected access</p>
+          <h2 id="reviewSessionHeading">Named review session</h2>
+          <p id="sessionState">Use a server-bound instructor, administrator, or time-limited regulator-review account.</p>
+          <div class="session-actions">
+            <a id="signInLink" class="button-link" href="/student/sign-in/?return_to=%2Fadmin%2Fmichigan-review%2F">Sign in</a>
+            <button id="signOut" class="secondary-button" type="button" hidden>Sign out</button>
+          </div>
+          <small>No shared review token is stored in this browser.</small>
+        </aside>
+      </section>
+      <form id="evidenceLookup" class="lookup-form">
+        <div>
+          <label for="enrollmentId">Acceptance enrollment UUID</label>
+          <input id="enrollmentId" inputmode="text" autocomplete="off" required pattern="[0-9a-fA-F-]{36}" aria-describedby="enrollmentHelp" />
+          <small id="enrollmentHelp">Use the UUID from the controlled acceptance-test enrollment record.</small>
+        </div>
+        <button type="submit">Open read-only evidence</button>
+      </form>
+      <p id="evidenceMessage" class="message" role="status" aria-live="polite" tabindex="-1">
+        Sign in with a named review account, then enter the protected acceptance record identifier.
+      </p>
+      <section id="evidence" class="evidence-shell" aria-label="Michigan course evidence" hidden></section>
+    </main>
+    <script src="michigan-review.js" defer></script>
+  </body>
+</html>

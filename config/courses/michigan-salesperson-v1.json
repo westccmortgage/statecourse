@@ -27,6 +27,16 @@
     "channel": null,
     "format": null
   },
+  "operational_policy": {
+    "status": "draft",
+    "activeStudentCap": 25,
+    "reviewSlaBusinessDays": 1,
+    "instructorAvailable": false,
+    "waitlistEnabled": false,
+    "calendarConfirmedThrough": null,
+    "closedDates": [],
+    "basis": "StateCourse provider proposal pending PSS review; not a Michigan-prescribed ratio"
+  },
   "required_hours": 40,
   "module_count": 10,
   "clock_hours_per_module": 4,
