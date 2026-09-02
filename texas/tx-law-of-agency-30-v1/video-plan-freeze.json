@@ -1,9 +1,13 @@
 {
-  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
+  "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3",
   "courseId": "tx-law-of-agency-30-v1",
-  "frozenOn": "2026-08-30",
+  "frozenOn": "2026-09-02",
   "generatedBy": "scripts/freeze-loa-video-plan.mjs",
   "what": "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
+  "supersedesFreeze": {
+    "freezeId": "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
+    "reason": "The repository-wide Texas source inventory grew when current provider-application and final-adoption sources were added. None of those files is consulted by a video render. Version 3 removes that inventory from the render boundary while continuing to hash the held IABS form, the held statute, every production artifact, the three target block maps, and both validating generators directly. All video wording, timings, coordinates, captions, and source pixels remain unchanged."
+  },
   "status": {
     "editorialAndLegalPackage": "READY — at this freeze and not before it. Script, HeyGen prompt, storyboard and scene table, clean transcript, caption cue text, crop coordinates, highlight coordinates, duration metadata and poster specification are complete, source-verified and internally consistent.",
     "renderedAssets": "PENDING — no MP4, no shipping .vtt, no -poster.webp, no band PNGs, no diagram panels. Nothing has been rendered.",
@@ -303,11 +307,6 @@
       "path": "texas/trec-sources/statutes/OC.1101.htm",
       "sha256": "8c40aa399cf717901540150ae6acaf3d847305f7fefcf7dd7ec4c3068a418858",
       "bytes": 308708
-    },
-    "source inventory": {
-      "path": "texas/trec-sources/source-inventory.json",
-      "sha256": "df1f2aa5d8eed31dd26c46a3184dc090771825867399ab331d35404878855f69",
-      "bytes": 26256
     },
     "block map — module 2 (t02u5-s1)": {
       "path": "config/texas/law-of-agency-module-2-blocks.mjs",

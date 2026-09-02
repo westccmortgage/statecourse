@@ -97,8 +97,8 @@ test("every form examines every PRINS1-1 topic", () => {
 /* ── administration stays blocked, and honestly labelled ─────────────────────────────── */
 
 test("administration parameters are provider proposals and the gate refuses to administer", () => {
-  assert.equal(ADMINISTRATION.label, "PROVIDER_PROPOSED_PENDING_TAC_CONFIRMATION");
-  assert.equal(ADMINISTRATION.examReady, "BLOCKED_TX_PROVIDER_RULE_SOURCE_LOCK");
+  assert.equal(ADMINISTRATION.label, "PROVIDER_PROPOSED_PENDING_TREC_ACCEPTANCE");
+  assert.equal(ADMINISTRATION.examReady, "BLOCKED_TREC_COURSE_APPROVAL");
   assert.throws(() => assertExamAdministrationAllowed(), /texas_final_exam_not_administrable/);
   const formsSource = read("config/texas/principles-i-final-exam-forms.mjs");
   assert.doesNotMatch(formsSource, /TREC (requires|mandates|approved)/i);

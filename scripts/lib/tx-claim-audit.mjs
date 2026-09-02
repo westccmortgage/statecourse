@@ -273,6 +273,12 @@ export function runClaimAudit(course) {
       }
     };
     walk(SOURCE_DIR);
+    /* Corpus-wide matching is a fallback for quotations whose nearby citation did not resolve.
+       Prefer operative legal text over general web pages that happen to repeat the same words.
+       Otherwise adding an unrelated provider article can silently re-attribute an unchanged
+       curriculum quotation merely because `articles/` sorts before `trec-rules/`. */
+    const sourcePriority = (rel) => rel.startsWith("articles/") ? 1 : 0;
+    corpusIndex.sort((a, b) => sourcePriority(a.rel) - sourcePriority(b.rel) || a.rel.localeCompare(b.rel));
     return corpusIndex;
   }
 

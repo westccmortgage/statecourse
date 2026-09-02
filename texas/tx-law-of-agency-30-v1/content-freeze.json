@@ -1,9 +1,25 @@
 {
-  "freezeId": "LOA-CONTENT-FREEZE-2026-08-30-v6",
+  "freezeId": "LOA-CONTENT-FREEZE-2026-09-02-v7",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev 09/11/2024",
-  "frozenOn": "2026-08-30",
+  "frozenOn": "2026-09-02",
   "breakHistory": [
+    {
+      "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v6",
+      "on": "2026-09-02",
+      "module": "NONE — all twelve curriculum module hashes remain byte-identical",
+      "change": "The evidence layer now records the final adopted 2026 amendments to 22 TAC §§ 535.62 and 535.65 and the current TREC provider/course filing sources. The source register changed accordingly. The video pointer advanced to LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3, which removes the repository-wide source inventory from the render boundary because provider-filing sources are not render dependencies; the held IABS form and held statute remain hashed directly.",
+      "reason": "Texas filing preparation required current, effective authority and current application instructions. Because the source register and the pinned video-freeze artifact changed, retaining the v6 identifier would make one identifier denote two byte-states. No curriculum wording changed.",
+      "foundBy": "the 2026-09-02 provider-filing readiness pass",
+      "classOfDefect": "provenance and authority freshness — no curriculum or assessment claim changed",
+      "auditsReRun": [
+        "node scripts/validate-loa-video-packages.mjs",
+        "node scripts/freeze-loa-video-plan.mjs",
+        "node scripts/freeze-loa-curriculum.mjs",
+        "node scripts/texas-source-inventory.mjs",
+        "node --test tests/*.test.mjs"
+      ]
+    },
     {
       "brokeFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v4",
       "on": "2026-08-30",
@@ -219,7 +235,7 @@
     "resurfacedDispositions": 0,
     "retiredDispositions": 28,
     "sourcingDefects": 0,
-    "registeredSourcesVerified": "58/58",
+    "registeredSourcesVerified": "59/59",
     "misconceptionChecks": 7,
     "scenariosPlanned": 5,
     "quizItemsPlanned": 58
@@ -330,8 +346,8 @@
     },
     "source register": {
       "path": "config/texas/law-of-agency-statute-sources.mjs",
-      "sha256": "a041e11a6bfe2e06599161ed669df6d4151ce5294fa603c4db0f62f8ffca7ebf",
-      "bytes": 258403
+      "sha256": "0eab4beaf1893be4b1b01e3bf637bbea2e14b0336eb52fa0d93efee553ebc86c",
+      "bytes": 256657
     },
     "quotation-disposition ledger": {
       "path": "config/texas/quotation-dispositions.mjs",
@@ -368,10 +384,10 @@
       "sha256": "3a366211b5659253b697e17832d67f51863a719fe736419fa87bb9de7103e826",
       "bytes": 7220
     },
-    "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 — hashes the plan and every render dependency)": {
+    "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3 — hashes the plan and every render dependency)": {
       "path": "texas/tx-law-of-agency-30-v1/video-plan-freeze.json",
-      "sha256": "bc287901fc2d63b781130d443cd5892e78c1ed64b19106a4fa5d995bf820cd26",
-      "bytes": 23170
+      "sha256": "ba7cf33fa45201369810526dbd83beffb85be890798931edefa803900c35b4ae",
+      "bytes": 23552
     }
   },
   "reproduce": [

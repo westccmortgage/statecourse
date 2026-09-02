@@ -29,7 +29,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HOME = path.join(root, "texas/tx-law-of-agency-30-v1");
 const OUT = path.join(HOME, "content-freeze.json");
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v6";
+const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-09-02-v7";
 
 /**
  * FREEZE HISTORY. A freeze that is broken and silently re-taken teaches nothing. Every break is
@@ -37,6 +37,24 @@ const FREEZE_ID = "LOA-CONTENT-FREEZE-2026-08-30-v6";
  * than requiring someone to reconstruct it from git.
  */
 const BREAK_HISTORY = Object.freeze([
+  Object.freeze({
+    brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v6",
+    on: "2026-09-02",
+    module: "NONE — all twelve curriculum module hashes remain byte-identical",
+    change:
+      "The evidence layer now records the final adopted 2026 amendments to 22 TAC §§ 535.62 and 535.65 and the current TREC provider/course filing sources. The source register changed accordingly. The video pointer advanced to LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3, which removes the repository-wide source inventory from the render boundary because provider-filing sources are not render dependencies; the held IABS form and held statute remain hashed directly.",
+    reason:
+      "Texas filing preparation required current, effective authority and current application instructions. Because the source register and the pinned video-freeze artifact changed, retaining the v6 identifier would make one identifier denote two byte-states. No curriculum wording changed.",
+    foundBy: "the 2026-09-02 provider-filing readiness pass",
+    classOfDefect: "provenance and authority freshness — no curriculum or assessment claim changed",
+    auditsReRun: Object.freeze([
+      "node scripts/validate-loa-video-packages.mjs",
+      "node scripts/freeze-loa-video-plan.mjs",
+      "node scripts/freeze-loa-curriculum.mjs",
+      "node scripts/texas-source-inventory.mjs",
+      "node --test tests/*.test.mjs",
+    ]),
+  }),
   Object.freeze({
     brokeFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v4",
     on: "2026-08-30",
@@ -236,7 +254,7 @@ const artifacts = {
      the validator. One level of indirection: the video state is still pinned exactly — any change to
      any video artifact changes video-plan-freeze.json, which changes this hash — but a video
      correction is now absorbed by a video freeze instead of forcing a curriculum-freeze break. */
-  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
+  "video plan freeze (LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3 — hashes the plan and every render dependency)": hashOf(path.join(HOME, "video-plan-freeze.json")),
 };
 
 if (failures.length) {
@@ -249,7 +267,7 @@ const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
   approvalForm: `${FORM.formNumber} rev ${FORM.revision}`,
-  frozenOn: "2026-08-30",
+  frozenOn: "2026-09-02",
   breakHistory: BREAK_HISTORY,
   generatedBy: "scripts/freeze-loa-curriculum.mjs",
   afterFreeze: "No curriculum wording may change silently. An instructional repair found during assessment authoring must break the freeze explicitly, name the module and the reason, re-run the time, source, quotation, structural and assessment-dependency audits, and create a new freeze version with new hashes.",

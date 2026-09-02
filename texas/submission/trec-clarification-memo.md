@@ -1,6 +1,6 @@
 # Questions for the Texas Real Estate Commission
 
-**Prepared:** 2026-08-27
+**Prepared:** 2026-08-27; updated 2026-09-02
 **From:** StateCourse — prospective qualifying education provider, distance education only
 **Status of every question below: REGULATOR CLARIFICATION. None is answered by inference.**
 
@@ -16,8 +16,12 @@ by saying that no Texas rule or statute could be obtained. That was too broad an
 
 - **Texas statutes are held.** Twenty-five chapters and four federal sources, retrieved from the
   Texas Legislative Council's static layer and the federal publishers.
-- **§§ 535.62 and 535.65 are held as proposed text**, from the Secretary of State's Texas Register of
-  22 May 2026. Both were adopted 10 August 2026 and take effect 31 August 2026.
+- **Final adopted §§535.62 and 535.65 are held**, from the Secretary of State's 28 August 2026 Texas
+  Register. Both have been effective since 31 August 2026.
+- **Proctoring and closed-book are resolved.** The 2025 adoption removed the blanket requirements;
+  StateCourse selects no human proctor and no proctoring fee while preserving identity assurance.
+- **The 10-minute inactivity treatment is resolved as provider policy.** It is retained from TREC's
+  still-published 2023 distance checklist without being described as a current rule requirement.
 - **§ 535.65(a)(4) answers most of question 4 below**, and the answer is recorded there.
 
 **What remains genuinely unobtainable here** is the codified current text of eight administrative
@@ -28,12 +32,14 @@ at `texas/submission/human-export-list.md`.
 
 **The questions below are what is still genuinely open.**
 
-## 1. Delivery of the original surety bond when the application is filed online
+## 1. Filing channel and delivery of the original surety bond
 
-TREC's provider page asks for an **original $20,000 bond bearing an original or raised seal**. The
-application link resolves to the REALM/Accela portal, so the filing is online.
+TREC's provider page asks for an **original $20,000 bond bearing an original or raised seal** and
+labels the process “Apply by Mail.” The application link resolves to the REALM portal, and the
+current REALM FAQ says education-provider applications are managed online.
 
-**Question.** How must a new applicant deliver the original bond? Specifically:
+**Question.** For the QE Provider Initial Application effective 09/03/2025, must a new applicant
+submit through REALM or by mail, and how must the original bond be delivered? Specifically:
 
 - Is a scan uploaded in REALM sufficient to complete the filing?
 - Must the original paper bond also be delivered to the Commission, and if so to what address and by
@@ -72,8 +78,8 @@ acceptable where an account number would otherwise be disclosed?
 
 ## 4. May a commercial service be the designated Texas resident?
 
-**Partly answered by the rule, and the answer narrows the question.** § 535.65(a)(4), as proposed in
-the Texas Register of 22 May 2026:
+**Partly answered by the rule, and the answer narrows the question.** Final adopted
+§ 535.65(a)(4), published in the Texas Register on 28 August 2026 and effective 31 August 2026:
 
 > *"If a provider approved by the Commission does not maintain a fixed office in Texas for the
 > duration of the provider's approval to offer courses, the provider shall designate a resident of
@@ -98,35 +104,21 @@ the requirement, or must a copy reside on media in Texas?
 
 ---
 
-## 6. Proctoring, and the difference between a rule and a provider policy
+## 6. Closed — proctoring
 
-Historical Commission guidance and older distance-course checklists required proctored, closed-book
-qualifying-course examinations. Later rulemaking is understood to have removed the blanket
-requirement.
-
-**Question.** Does the current REALM distance qualifying-course application impose any examination
-proctoring requirement beyond the identity-assurance and examination-administration requirements of
-§ 535.65?
-
-**Why it matters to this provider.** StateCourse will not describe a voluntary proctoring choice as a
-Commission mandate. If proctoring is a provider policy, it will be labelled a provider policy, its
-procedure and any fee disclosed in the enrolment agreement, and the method represented in the
-application. If the Commission requires it, the build follows the Commission. **What the build will
-not do is assert either without the Commission's own current text.**
+The final 2025 adoption says the blanket qualifying-course proctoring requirement was removed and,
+as a result, closed-book examinations are no longer required. StateCourse's application therefore
+proposes no human proctor and no proctoring fee, while retaining the identity-assurance and
+exam-administration controls required by §535.65. Reopen only if the current course application asks
+for a course-specific approved method inconsistent with this design.
 
 ---
 
-## 7. Inactivity timeout for asynchronous qualifying courses
+## 7. Closed as provider policy — inactivity timeout
 
-An older checklist is understood to have specified a **10-minute** inactivity timeout.
-
-**Question.** Does the current REALM distance qualifying-course application require a specific
-inactivity timeout value for asynchronous qualifying courses?
-
-**Why it is not inferred.** If StateCourse adopts a 10-minute timeout, it will be recorded as
-**provider policy** unless a current authority requires it. A conservative provider choice presented
-as a Commission requirement is a misstatement of the Commission's rules, which is the failure mode
-this project treats most seriously.
+TREC's 04/10/2023 distance-course checklist, still linked from the current course page, says to log
+the student out or stop the course timer after **10 minutes** of inactivity. StateCourse adopts that
+value as conservative provider policy and does not claim it is contained in the current rule.
 
 ---
 
@@ -146,5 +138,5 @@ report the difference rather than reconcile it silently.
 
 ---
 
-**No question in this memo has been answered by inference, and no answer to any of them appears
-anywhere else in this build.**
+**Open questions in this memo remain questions. Closed items are supported by the final adoption or
+are explicitly labelled provider policy.**

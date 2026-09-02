@@ -1,6 +1,6 @@
 # Human export list — the only Texas sources a person still has to fetch
 
-**Prepared:** 2026-08-27
+**Prepared:** 2026-08-27; updated 2026-09-02
 **Scope: eight administrative rules. Nothing else.**
 
 Everything else Texas needs has been retrieved automatically. Twenty-five statutory chapters and
@@ -15,13 +15,12 @@ the legacy reader at `texreg.sos.state.tx.us` returns "This Site Has Moved" for 
 headless Chromium cannot reach any host from this build environment, so there is no automated
 fallback. Everything attempted is recorded in `config/texas/regulatory-manifest.mjs`.
 
-**Two of the ten rules are already partly covered** and are not on this list:
+**Two of the ten rules are fully covered by a final adopted publication** and are not on this list:
 
-- **§ 535.62** and **§ 535.65** — the text as proposed is held, from the Secretary of State's Texas
-  Register of 22 May 2026 (`texas/trec-sources/texas-register/`). Both were adopted 10 August 2026
-  and take effect 31 August 2026. **The adoption notice publishes in the Texas Register issue of
-  28 August 2026**, which is a static file this build can fetch itself the day it appears — so these
-  two need no human at all, only the date.
+- **§535.62** and **§535.65** — final adopted text is held from the Secretary of State's 28 August
+  2026 Texas Register at
+  `texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html`. Both have been effective
+  since 31 August 2026. No human export is needed for them.
 
 ## What to export
 
@@ -46,9 +45,9 @@ rule as HTML print or PDF — **either is acceptable**.
 for each rule — if the portal prints an "as of" or "current through" line, keep it in the export.
 
 **§ 535.61 and § 535.63 are the two that matter most.** § 535.61 carries the provider approval
-standards, the surety bond and the financial ratios this build currently records as unverified;
-§ 535.63 carries the instructor qualification routes the dossier checklist is written against. The
-other six can follow later without blocking anything.
+standards and financial ratios; the current TREC provider page separately confirms the $20,000 bond
+and $10,000 reserve. §535.63 carries the instructor qualification routes the dossier checklist is
+written against. The other six can follow later without blocking anything.
 
 ## What these unblock, and what they do not
 

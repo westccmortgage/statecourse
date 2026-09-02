@@ -219,7 +219,7 @@ test("Law of Agency claims no approval and enables nothing downstream of content
      checked only one of them. */
   assert.equal(COURSE.finalExaminationExists, true);
   assert.equal(COURSE.finalExaminationAdministrable, false);
-  assert.equal(COURSE.finalExaminationStatus, "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES");
+  assert.equal(COURSE.finalExaminationStatus, "BUILT_NOT_ADMINISTRABLE_PENDING_TREC_APPROVAL");
   assert.match(FREEZE.notApproved, /holds no TREC approval/i);
 });
 
@@ -291,7 +291,7 @@ test("the curriculum freeze pins the video state through the video freeze, not t
 
 test("the video freeze names itself, supersedes plan v1 by hash, and still hashes every render dependency", () => {
   assert.match(VIDEO_FREEZE.freezeId, /^LOA-VIDEO-PLAN-FREEZE-\d{4}-\d{2}-\d{2}(-v\d+)?$/, "a re-freeze must bump its version rather than reusing an id");
-  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2");
+  assert.equal(VIDEO_FREEZE.freezeId, "LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3");
   assert.equal(VIDEO_FREEZE.courseId, "tx-law-of-agency-30-v1");
 
   /* The superseded plan is identified by hash, not by adjective. */
@@ -568,10 +568,10 @@ test("examination items are substantially different from every quiz, replacement
 
 test("assembling four versions is not authority to administer one", () => {
   assert.equal(examForms.EXAM_READY.status, "BLOCKED");
-  assert.equal(examForms.EXAM_READY.blockedBy, "TX_PROVIDER_RULE_SOURCE_LOCK");
+  assert.equal(examForms.EXAM_READY.blockedBy, "TREC_WRITTEN_COURSE_APPROVAL");
   assert.equal(examForms.EXAM_READY.trecApprovalHeld, false);
   assert.equal(examForms.EXAM_READY.texasCreditAvailable, false);
-  assert.equal(examForms.ADMINISTRATION.label, "PROVIDER_PROPOSED_PENDING_TAC_CONFIRMATION");
+  assert.equal(examForms.ADMINISTRATION.label, "PROVIDER_PROPOSED_PENDING_TREC_ACCEPTANCE");
   assert.equal(examForms.ROTATION.requirementStatus, "RULE_REQUIRED");
   assert.equal(examForms.ROTATION.cadenceStatus, "PROVIDER_PROPOSED_PENDING_COMMISSION_ACCEPTANCE");
   assert.equal(examForms.SUBSEQUENT_ATTEMPT.mustBeADifferentVersion, true);

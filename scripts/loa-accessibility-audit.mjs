@@ -32,12 +32,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL, fileURLToPath } from "node:url";
-import { chromium } from "playwright-core";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SURFACE = path.join(root, "texas/tx-law-of-agency-30-v1/reviewer-surface");
 const OUT = path.join(root, "texas/tx-law-of-agency-30-v1/accessibility-report.json");
-const AXE = fs.readFileSync(path.join(root, "node_modules/axe-core/axe.min.js"), "utf8");
+const playwrightEntry = process.env.STATECOURSE_PLAYWRIGHT_CORE || "playwright-core";
+const { chromium } = await import(path.isAbsolute(playwrightEntry) ? pathToFileURL(playwrightEntry).href : playwrightEntry);
+const axePath = process.env.STATECOURSE_AXE_PATH || path.join(root, "node_modules/axe-core/axe.min.js");
+const AXE = fs.readFileSync(axePath, "utf8");
 
 const results = {};
 const findings = [];
@@ -46,7 +48,14 @@ const record = (key, ok, detail) => { results[key] = ok ? "PASS" : "FAIL"; findi
 const PAGES = fs.readdirSync(SURFACE).filter((f) => f.endsWith(".html")).sort();
 const url = (f) => pathToFileURL(path.join(SURFACE, f)).href;
 
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium", args: ["--no-sandbox"] });
+const browserCandidates = [
+  process.env.CHROMIUM_EXECUTABLE_PATH,
+  "/opt/pw-browsers/chromium",
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+].filter(Boolean);
+const browserExecutable = browserCandidates.find((candidate) => fs.existsSync(candidate));
+if (!browserExecutable) throw new Error("No Chromium executable found; set CHROMIUM_EXECUTABLE_PATH");
+const browser = await chromium.launch({ executablePath: browserExecutable, args: ["--no-sandbox"] });
 const context = await browser.newContext();
 const page = await context.newPage();
 

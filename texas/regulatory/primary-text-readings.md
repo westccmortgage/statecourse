@@ -1,6 +1,7 @@
 # Texas — primary text read directly
 
-Recorded 2026-08-27. Updated 2026-08-28 at the close of TX-1A: the reads that authorised the Principles I content build are recorded in the amended section 1 below.
+Recorded 2026-08-27. Updated 2026-09-02 after the final adopted §§535.62 and 535.65, the current
+provider instructions and the current course instructions were retrieved and read.
 
 This file says what was read, what it says, and — the part that matters most for a reviewer — **what
 could not be read, and is therefore stated nowhere in this build.**
@@ -39,14 +40,14 @@ State's 2026 publication. **They exist.** TREC's own rule records state, for bot
 | Emergency adopted | NO | NO |
 | SoS record | `recordId=465426` | `recordId=465427` |
 
-**Why the scan missed them, stated plainly.** An adoption filed on 10 August publishes in the Texas
-Register about three weeks later — the issue of **28 August 2026**, which returns 403 because it is
-not yet published. The scan covered issues through 21 August and was accurate about what it covered.
-**The error was in the sentence, not the search: "not found in the issues I read" was reported as
-"does not appear."**
+**Why the first scan missed them, stated plainly.** The scan was performed before the 28 August
+issue was available and covered issues only through 21 August. The final publication has now been
+retrieved, held and hashed at
+`texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html`.
 
-Both are recorded as **`adopted_pending_effective`**. Today is 27 August 2026; they are not current
-law for four more days, and nothing here describes them as effective.
+Both rules are recorded as **`current_effective`**. They were published 28 August 2026 and have
+been effective since 31 August 2026. The adoption says the only changes from the proposal were
+non-substantive reference-language changes to §535.62(b)(6)(C) and §535.65(g)(5).
 
 ### What that leaves genuinely unreachable
 
@@ -122,9 +123,10 @@ whole structure is transcribed with invariants in `config/texas/prins1-course-fo
 refuses to load if any topic's units do not sum to the form's printed subtotal.
 
 **One arithmetical fact, and its limit.** 1500 minutes labelled 30 hours is a **50-minute credit
-hour**. That is the form's own arithmetic and is recorded as such. **It is not a rule citation** —
-the rule that fixes the credit-hour length is in 22 TAC, which could not be read — so the convention
-is carried as `FORM_DERIVED_UNVERIFIED_AGAINST_RULE`.
+hour**. That is the form's own arithmetic and is recorded as such. **It is not a rule citation.** The
+final adopted text of §§ 535.62 and 535.65 was read and does not define the length of a credit hour;
+the remaining relevant codified Chapter 535 text is not readable from this environment. The
+convention therefore remains `FORM_DERIVED_PENDING_TAC_CONFIRMATION`.
 
 ### The fee schedule — TREC, effective 15 December 2025
 
@@ -214,13 +216,14 @@ was the unit written. The verifiable artifacts:
 ## 2. What was consulted and is NOT authority
 
 **The TREC consolidated rules page** at `trec.texas.gov/agency-information/rules-and-laws/trec-rules`
-reproduces Chapter 535 in full and was read for navigation — to learn which sections exist and
-roughly what each covers.
+reproduces Chapter 535 in full and was read as the regulator's current convenience copy for the
+remaining sections whose live Secretary of State export could not be obtained.
 
 **It is a convenience copy published by the regulated agency, not the Secretary of State's adopted
-text, and no rule, figure, deadline, requirement or definition in this build is taken from it.** The
-manifest records it with reachability `READ_NOT_AUTHORITY`, and the source lock fails if any material
-claim is ever attached to it.
+text.** Course and packet design may use it as agency evidence with that caveat, but it cannot clear
+the controlling-source lock. The manifest records the page itself with reachability
+`READ_NOT_AUTHORITY`; extracted section copies and their exact design uses are recorded separately
+in `config/texas/trec-rules-source-lock.mjs`.
 
 ---
 
@@ -228,12 +231,10 @@ claim is ever attached to it.
 
 - **The codified current text of 22 TAC §§ 535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67
   and 535.101.** Eight rules, listed for export at `texas/submission/human-export-list.md`. Until
-  they are read this build states no provider approval standard, no instructor qualification route,
-  no course content requirement, no fee rule and no retention period as a Texas requirement.
+  they are read this build treats the TREC-published reproduction as design evidence rather than
+  the controlling Secretary of State copy.
   **§ 535.61 and § 535.63 are the two that matter most** — the financial standards and the
   instructor routes.
-- **The adopted text of §§ 535.62 and 535.65.** The proposed text is held; the adoption notice
-  publishes 28 August 2026.
 - **The Qualifying Education Provider Application's own field list, attachment list and fee
   calculation**, which sit behind the REALM/Accela login.
 - **The current REALM distance qualifying-course application**, and any inactivity timeout,
@@ -254,8 +255,10 @@ different work and different people clear them.**
   primary source on disk or a recorded reason for needing none. Principles of Real Estate I can be
   written against sources rather than recall. **It has now been written — TX-1A, 2026-08-28 — under
   the read-before-write protocol, with its own separate claim-traceability gate.**
-- **`TX_PROVIDER_RULE_SOURCE_LOCK: FAIL`** — eight codified rules and the provider application
-  remain unread. The provider submission cannot be prepared against them.
+- **`TX_PROVIDER_RULE_SOURCE_LOCK: FAIL`** — eight live codified sections and the provider
+  application's own field list remain unread. The provider packet can be prepared against the
+  current TREC page, its published checklist and final §§535.62/535.65, but final portal
+  reconciliation remains blocked.
 - **`TX_REGULATORY_SOURCE_LOCK: FAIL`** — the aggregate, which passes only when both do.
 
 **Splitting them is the point.** Merged into one status, a provider-portal login barrier read as a

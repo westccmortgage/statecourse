@@ -49,7 +49,7 @@ export const COURSE = Object.freeze({
   approvalForm: FORM.formNumber,
   approvalFormRevision: FORM.revision,
   curriculumDir: "texas/tx-law-of-agency-30-v1/curriculum",
-  contentFreeze: "LOA-CONTENT-FREEZE-2026-08-30-v6",
+  contentFreeze: "LOA-CONTENT-FREEZE-2026-09-02-v7",
   enrollmentEnabled: false,
   paymentEnabled: false,
   creditReportingEnabled: false,
@@ -61,7 +61,7 @@ export const COURSE = Object.freeze({
      separate facts and this record keeps them separate rather than collapsing them into one flag. */
   finalExaminationExists: true,
   finalExaminationAdministrable: false,
-  finalExaminationStatus: "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES",
+  finalExaminationStatus: "BUILT_NOT_ADMINISTRABLE_PENDING_TREC_APPROVAL",
   trecApprovalStatus: "NOT_SUBMITTED_NOT_APPROVED",
 });
 
@@ -222,7 +222,7 @@ if (COURSE.enrollmentEnabled || COURSE.paymentEnabled || COURSE.creditReportingE
 if (COURSE.finalExaminationAdministrable) {
   throw new Error("law-of-agency-course: no examination is administrable while the codified 22 TAC provider rules remain unread");
 }
-if (COURSE.finalExaminationExists && COURSE.finalExaminationStatus !== "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES") {
+if (COURSE.finalExaminationExists && COURSE.finalExaminationStatus !== "BUILT_NOT_ADMINISTRABLE_PENDING_TREC_APPROVAL") {
   throw new Error("law-of-agency-course: an examination that exists but cannot be administered must say so in its status");
 }
 

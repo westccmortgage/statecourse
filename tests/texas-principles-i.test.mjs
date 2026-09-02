@@ -160,7 +160,7 @@ test("the time model is labelled as the provider's methodology, never as a regul
   assert.match(reconciliation, /RECONCILES/);
 });
 
-test("the 50-minute credit hour stays FORM_DERIVED_PENDING_TAC_CONFIRMATION until § 535.65 is read", () => {
+test("the 50-minute credit hour stays FORM_DERIVED_PENDING_TAC_CONFIRMATION until the remaining relevant TAC is read", () => {
   assert.equal(PRINS1.FORM.minutesPerCreditHourStatus, "FORM_DERIVED_PENDING_TAC_CONFIRMATION");
   assert.match(read("texas/tx-principles-real-estate-i-30-v1/submission/timed-course-outline.md"), /FORM_DERIVED_PENDING_TAC_CONFIRMATION/);
 });
@@ -184,7 +184,7 @@ test("nothing downstream of content is enabled on the course record", () => {
   /* TX-1B built the examination, so it exists — but it is not administrable until the codified
      22 TAC provider rules are read and the administration parameters confirmed. */
   assert.equal(course.finalExaminationExists, true);
-  assert.equal(course.finalExaminationStatus, "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES");
+  assert.equal(course.finalExaminationStatus, "BUILT_NOT_ADMINISTRABLE_PENDING_TREC_APPROVAL");
   assert.equal(course.trecApprovalStatus, "NOT_SUBMITTED_NOT_APPROVED");
 });
 

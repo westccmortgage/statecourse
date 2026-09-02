@@ -41,12 +41,11 @@
  *     final course examination.
  *
  * ── WHAT IS STILL BLOCKED ───────────────────────────────────────────────────────────────────────
- * The Secretary of State's codified 22 TAC text remains unread; these two rule files are TREC's own
- * published reproduction, classified TIER 4 by config/texas/trec-rules-source-lock.mjs, and
- * TX_PROVIDER_RULE_SOURCE_LOCK still FAILS. EXAM_READY below is therefore BLOCKED: no student may
- * be served an attempt, the administration parameters that are NOT fixed by the rule text (timing,
- * proctoring mechanics, identity-validation method, rotation cadence) are PROVIDER PROPOSALS, and
- * nothing here may be described as TREC-approved. No Texas qualifying credit is available.
+ * Final adopted §§535.62 and 535.65 are held and effective. EXAM_READY below is still BLOCKED:
+ * no student may be served an attempt until TREC issues written course approval. Administration
+ * parameters not fixed by the final rules (timing and identity-validation method) remain provider
+ * proposals for TREC acceptance. Nothing here may be described as TREC-approved, and no Texas
+ * qualifying credit is available.
  *
  * ── THE VERSION DESIGN, AND WHY THE OVERLAP IS WHAT IT IS ───────────────────────────────────────
  * The bank deals its 132 topic-ordered items into 22 cells of six by cell(i) = (3i mod 22) + 1.
@@ -196,10 +195,10 @@ export const SUBSEQUENT_ATTEMPT = Object.freeze({
 /* ── Administration parameters the rule text does not fix. Proposals, labelled as such. ───── */
 
 export const ADMINISTRATION = Object.freeze({
-  label: "PROVIDER_PROPOSED_PENDING_TAC_CONFIRMATION",
-  examReady: "BLOCKED_TX_PROVIDER_RULE_SOURCE_LOCK",
+  label: "PROVIDER_PROPOSED_PENDING_TREC_ACCEPTANCE",
+  examReady: "BLOCKED_TREC_COURSE_APPROVAL",
   note:
-    "The codified 22 TAC text has not been read and TX_PROVIDER_RULE_SOURCE_LOCK still FAILS, so no examination may be administered. The figures below are StateCourse LLC proposals for the parameters the read rule text does not itself fix; none is a TREC requirement and none may be presented as one. The parameters the rule DOES fix — four versions, at least 60 questions per version, a bank of at least 120, no true/false items, no more than one-third overlap, a 70% unweighted passing score, rotation of all versions, and a different version for the subsequent attempt — are recorded above under their own sections and are not proposals.",
+    "Final adopted §§535.62 and 535.65 are held and effective. The figures below are StateCourse LLC proposals for parameters the final rules do not fix; none is a TREC requirement. No examination may be administered until written course approval accepts the delivery and identity design. The parameters the rule DOES fix — four versions, at least 60 questions per version, a bank of at least 120, no true/false items, no more than one-third overlap, a 70% unweighted passing score, rotation of all versions, and a different version for the subsequent attempt — are recorded above under their own sections and are not proposals.",
   proposedTimeLimitMinutes: 120,
   proposedIdentityValidation:
     "Identity verified at the start of the attempt by the same process used at enrollment, with the verification record retained with the attempt — offered against § 535.65(a)(1)(E) and § 535.65(h)(5), whose acceptable methods are for the Commission to accept.",
@@ -211,7 +210,7 @@ export const ADMINISTRATION = Object.freeze({
 
 export const EXAM_READY = Object.freeze({
   status: "BLOCKED",
-  blockedBy: "TX_PROVIDER_RULE_SOURCE_LOCK",
+  blockedBy: "TREC_WRITTEN_COURSE_APPROVAL",
   trecApprovalHeld: SUBMISSION_READINESS.trecApprovalHeld,
   texasCreditAvailable: SUBMISSION_READINESS.texasCreditAvailable,
   note: "Assembling four compliant versions is not authority to administer one. No student may be served an attempt while this status is BLOCKED.",

@@ -8,11 +8,10 @@
  * any entry is outstanding — whether or not a check exists for it.
  *
  * WHAT THIS LEDGER IS BUILT FROM, AND WHAT IT IS NOT BUILT FROM. It is built from the fee schedule,
- * from TREC's published provider page, and from the Texas work order of 2026-08-27. It is NOT built
- * from the application itself: TREC's Qualifying Education Provider Application link redirects to an
- * Accela portal login, so the application's own field list and attachment list could not be read.
- * Every entry therefore carries `verifiedAgainstApplication: false`, and the ledger reports itself
- * as INCOMPLETE. It is a floor, not a list.
+ * TREC's current provider page, the checklist linked from that page, and the final adopted
+ * §§535.62/535.65. It is NOT yet reconciled field-by-field to the effective 09/03/2025 application:
+ * the public application route redirects to REALM login while the page still says Apply by Mail.
+ * Every entry therefore carries `verifiedAgainstApplication: false`. It is a filing floor.
  *
  * OWNERS.
  *   build     — this repository can produce it.
@@ -26,13 +25,13 @@ const item = (record) => Object.freeze({ verifiedAgainstApplication: false, evid
 
 export const DELIVERABLES = Object.freeze([
   /* ── entity and ownership ── */
-  item({ id: "entity-legal-name", section: "Entity", owner: OWNER.HUMAN, title: "Exact legal name of the StateCourse entity as formed", note: "Read from the company's own formation documents. Not to be assumed or inferred from the brand name." }),
-  item({ id: "entity-jurisdiction", section: "Entity", owner: OWNER.HUMAN, title: "Jurisdiction of formation" }),
-  item({ id: "entity-formation-documents", section: "Entity", owner: OWNER.HUMAN, title: "Formation documents as filed and stamped" }),
+  item({ id: "entity-legal-name", section: "Entity", owner: OWNER.BUILD, title: "Exact legal name of the StateCourse entity as formed", evidence: [{ path: "california/submission/00_administrative/A2-entity-documentation.md", mustContain: ["StateCourse LLC", "B20260376786"] }] }),
+  item({ id: "entity-jurisdiction", section: "Entity", owner: OWNER.BUILD, title: "Jurisdiction of formation", evidence: [{ path: "california/submission/00_administrative/A2-entity-documentation.md", mustContain: ["California domestic limited liability company"] }] }),
+  item({ id: "entity-formation-documents", section: "Entity", owner: OWNER.BUILD, title: "Formation documents as filed and stamped", evidence: [{ path: "california/dre-sources/ca-articles-of-organization-B20260376786.pdf" }] }),
   item({ id: "entity-ein", section: "Entity", owner: OWNER.HUMAN, title: "IRS EIN confirmation letter", note: "Private. The number itself is never committed to this repository." }),
-  item({ id: "entity-assumed-name", section: "Entity", owner: OWNER.HUMAN, title: "Assumed-name certificate, if the provider trades under a name other than its legal name" }),
-  item({ id: "entity-texas-registration", section: "Entity", owner: OWNER.HUMAN, title: "Texas foreign-entity registration or Certificate of Fact, if required", note: "Whether it is required is a REGULATOR question for a distance-only provider with no Texas office." }),
-  item({ id: "entity-principals", section: "Entity", owner: OWNER.HUMAN, title: "All owners and principals at the ownership threshold, with a Principal Information Form for each owner holding at least 10% interest", note: "The 10% threshold and the $20,000 bond are stated in the Texas Register of 22 May 2026, as proposed text." }),
+  item({ id: "entity-assumed-name", section: "Entity", owner: OWNER.BUILD, title: "No assumed name is used in the filing", evidence: [{ path: "texas/submission/provider-application/01-prefill-facts.md", mustContain: ["Assumed name used for this filing", "none; applicant uses its legal name"] }] }),
+  item({ id: "entity-texas-registration", section: "Entity", owner: OWNER.HUMAN, title: "Texas foreign-LLC registration and a Certificate of Fact dated no more than 30 days before TREC filing", note: "The TREC checklist expressly asks an LLC chartered in another state for the Certificate of Fact." }),
+  item({ id: "entity-principals", section: "Entity", owner: OWNER.HUMAN, title: "All owners and principals at the ownership threshold, with a Principal Information Form for each owner holding at least 10% interest", note: "The threshold appears in the current provider-rule materials; actual ownership percentages and signed forms remain private." }),
   item({ id: "entity-principal-forms", section: "Entity", owner: OWNER.HUMAN, title: "Principal Information Form for each principal" }),
   item({ id: "entity-background-forms", section: "Entity", owner: OWNER.HUMAN, title: "Background History Form for each person the application requires one from" }),
   item({ id: "entity-officers", section: "Entity", owner: OWNER.HUMAN, title: "Board, managers and officers as filed" }),
@@ -41,7 +40,7 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "entity-records-manager", section: "Entity", owner: OWNER.HUMAN, title: "Records Manager designated" }),
 
   /* ── Texas presence, for a provider that will have no Texas classroom ── */
-  item({ id: "texas-attorney-in-fact", section: "Texas presence", owner: OWNER.HUMAN, title: "Texas-resident attorney-in-fact who accepts service of process AND acts as custodian of Texas records", note: "§ 535.65(a)(4) as proposed puts both duties on the SAME designated resident where the provider keeps no fixed Texas office, and requires a power-of-attorney filed with the Commission in an acceptable form. Whether a commercial service may be that resident is still a REGULATOR question." }),
+  item({ id: "texas-attorney-in-fact", section: "Texas presence", owner: OWNER.HUMAN, title: "Texas-resident attorney-in-fact who accepts service of process AND acts as custodian of Texas records", note: "Final adopted § 535.65(a)(4), effective 2026-08-31, puts both duties on the SAME designated resident where the provider keeps no fixed Texas office, and requires a power-of-attorney filed with the Commission in an acceptable form. Whether a commercial service may be that resident is still a REGULATOR question." }),
   item({ id: "texas-power-of-attorney", section: "Texas presence", owner: OWNER.HUMAN, title: "Power of Attorney executed in a form acceptable to TREC" }),
   item({ id: "texas-records-custodian", section: "Texas presence", owner: OWNER.HUMAN, title: "Texas records custodian identified and consenting" }),
   item({ id: "texas-records-location", section: "Texas presence", owner: OWNER.REGULATOR, title: "Which provider records must be maintained in Texas when the LMS and the records are electronic", note: "TREC clarification question 5." }),
@@ -51,7 +50,7 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "fin-income-statement", section: "Financial", owner: OWNER.HUMAN, title: "Current income statement prepared in accordance with GAAP" }),
   item({ id: "fin-balance-sheet", section: "Financial", owner: OWNER.HUMAN, title: "Current balance sheet prepared in accordance with GAAP" }),
   item({ id: "fin-operating-budget", section: "Financial", owner: OWNER.HUMAN, title: "First-year operating budget" }),
-  item({ id: "fin-market-survey", section: "Financial", owner: OWNER.HUMAN, title: "First-year enrollment market survey" }),
+  item({ id: "fin-market-survey", section: "Financial", owner: OWNER.BUILD, title: "First-year enrollment market survey", evidence: [{ path: "texas/submission/provider-application/09-first-year-market-survey.md", mustContain: ["100 unique students", "600 course enrollments", "29,980"] }] }),
   item({ id: "fin-operating-account", section: "Financial", owner: OWNER.HUMAN, title: "Evidence of an operating bank account" }),
   item({ id: "fin-reserve-account", section: "Financial", owner: OWNER.HUMAN, title: "Evidence of a reserve account holding at least $10,000", note: "Nothing in this build says the reserve is restricted, TREC-controlled, or required to sit in a Texas bank. No source read here says any of that." }),
   item({ id: "fin-surety-bond", section: "Financial", owner: OWNER.HUMAN, title: "Original $20,000 surety bond with original or raised seal" }),
@@ -61,7 +60,7 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "fin-ratio-calculator", section: "Financial", owner: OWNER.BUILD, title: "Internal prima facie financial-ratio calculator", evidence: [{ path: "lib/texas-financial-readiness.mjs", mustContain: ["PLANNING_ONLY", "debtToEquity"] }] }),
 
   /* ── application mechanics ── */
-  item({ id: "realm-account", section: "Application", owner: OWNER.HUMAN, title: "REALM/Accela account opened so the application and its field list can be read" , note: "Until this exists the ledger cannot be completed against the application, and the source lock cannot pass." }),
+  item({ id: "realm-account", section: "Application", owner: OWNER.HUMAN, title: "REALM account opened and the effective 09/03/2025 provider application reconciled", note: "Current pages conflict between Apply by Mail and online processing. Use texas/submission/provider-application/07-filing-channel-control.md and do not file twice." }),
   item({ id: "app-fee-provider", section: "Application", owner: OWNER.HUMAN, title: "Provider application fee paid — $400 plus $12 Texas Online Fee" }),
   item({ id: "app-fee-courses", section: "Application", owner: OWNER.HUMAN, title: "Course application fees paid — $950 per 30-hour distance course as computed from the schedule" }),
   item({ id: "app-fee-reconciliation", section: "Application", owner: OWNER.REGULATOR, title: "Reconcile the computed fee against REALM's own calculation", note: "REALM controls. A difference is reported, not reconciled silently." }),
@@ -74,7 +73,7 @@ export const DELIVERABLES = Object.freeze([
   item({
     id: "source-tac-535", section: "Sources", owner: OWNER.HUMAN,
     title: "Codified text of 22 TAC §§ 535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 and 535.101 exported from the Secretary of State portal",
-    note: "Eight rules, not ten: §§ 535.62 and 535.65 are held as proposed text from the Texas Register and their adoption notice publishes 28 August 2026. See texas/submission/human-export-list.md.",
+    note: "Eight live-TAC sections remain. Final adopted §§535.62 and 535.65 are held from the 28 August 2026 Texas Register. See texas/submission/human-export-list.md.",
     evidence: [{ path: "texas/submission/human-export-list.md", mustContain: ["535.61", "535.63"] }],
   }),
   item({
@@ -94,8 +93,8 @@ export const DELIVERABLES = Object.freeze([
   }),
   item({
     id: "source-535-adoption-notice", section: "Sources", owner: OWNER.BUILD,
-    title: "Texas Register adoption notice for §§ 535.62 and 535.65, publishing 28 August 2026",
-    note: "A static file this build can fetch itself the day it appears. Not a human item.",
+    title: "Texas Register final adopted text for §§535.62 and 535.65, published 28 August 2026",
+    evidence: [{ path: "texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html" }],
   }),
 
   /* ── what this repository has already produced ── */
@@ -103,13 +102,13 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "prins1-structure", section: "Course", owner: OWNER.BUILD, title: "PRINS1-1 topic, unit and minute structure transcribed with invariants", evidence: [{ path: "config/texas/prins1-course-form.mjs", mustContain: ["totalMinutes", "1500"] }] }),
   item({ id: "six-course-records", section: "Course", owner: OWNER.BUILD, title: "Six separate disabled course records, never one 180-hour course", evidence: [{ path: "config/texas/regulatory-manifest.mjs", mustContain: ["modelledAsSingleCourse: false"] }] }),
   item({ id: "trec-memo", section: "Application", owner: OWNER.BUILD, title: "TREC clarification memo listing only what current authority does not resolve", evidence: [{ path: "texas/submission/trec-clarification-memo.md", mustContain: ["REGULATOR CLARIFICATION"] }] }),
-  item({ id: "source-register", section: "Sources", owner: OWNER.BUILD, title: "Texas source register recording what was read and what could not be", evidence: [{ path: "texas/regulatory/primary-text-readings.md", mustContain: ["UNREACHABLE"] }] }),
+  item({ id: "source-register", section: "Sources", owner: OWNER.BUILD, title: "Texas source register recording what was read and what could not be", evidence: [{ path: "texas/regulatory/primary-text-readings.md", mustContain: ["could not be read", "What that leaves genuinely unreachable"] }] }),
 
-  /* ── course content, blocked at the source ── */
+  /* ── course content ── */
   item({ id: "prins1-content", section: "Course", owner: OWNER.BUILD, title: "Principles of Real Estate I instructional text, 1500 minutes across 9 topics and 46 units", note: "Built in TX-1A (2026-08-28) under the read-before-write protocol; the TX-0 source blocker was resolved by TX-0.1's tcss.legis.texas.gov correction.", evidence: [{ path: "texas/tx-principles-real-estate-i-30-v1/curriculum/module-01.md", mustContain: ["## Unit:"] }, { path: "texas/tx-principles-real-estate-i-30-v1/curriculum/module-09.md", mustContain: ["## Unit:"] }, { path: "texas/tx-principles-real-estate-i-30-v1/submission/time-reconciliation.md", mustContain: ["RECONCILES"] }] }),
   item({ id: "prins1-quizzes", section: "Course", owner: OWNER.BUILD, title: "At least three topic-quiz questions for each of the nine topics", note: "Built in TX-1A: 32 primary items with rationale, remediation anchor and replacement question; formative only.", evidence: [{ path: "config/texas/principles-i-question-bank.mjs", mustContain: ["TOPIC_QUIZZES", "remediation"] }] }),
   item({ id: "prins1-scenarios", section: "Course", owner: OWNER.BUILD, title: "At least three scenario-based learning exercises", note: "Built in TX-1A: three scenarios with facts, tasks, model analysis, passing standard and remediation.", evidence: [{ path: "config/texas/principles-i-question-bank.mjs", mustContain: ["SCENARIOS", "modelAnalysis"] }] }),
-  item({ id: "prins1-exam-bank", section: "Course", owner: OWNER.BUILD, title: "120-item secure bank and four 60-item final versions with pairwise overlap no greater than one third", note: "NOT AUTHORIZED: TX-1B work. The content it will consume is inventoried in texas/submission/tx1b-exam-build-input-manifest.md." }),
+  item({ id: "prins1-exam-bank", section: "Course", owner: OWNER.BUILD, title: "120-item secure bank and four 60-item final versions with pairwise overlap no greater than one third", note: "Owner-authorized TX-1B build completed 2026-08-28; the secure bank is excluded from student-served output.", evidence: [{ path: "config/texas/principles-i-final-exam-bank.mjs", mustContain: ["FINAL_EXAM_BANK", "authorized TX-1B"] }, { path: "config/texas/principles-i-final-exam-forms.mjs", mustContain: ["Form A", "questionsPerForm: 60"] }] }),
 ]);
 
 export const SECTIONS = Object.freeze([...new Set(DELIVERABLES.map((entry) => entry.section))]);
@@ -117,7 +116,7 @@ export const SECTIONS = Object.freeze([...new Set(DELIVERABLES.map((entry) => en
 export const LEDGER_STATUS = Object.freeze({
   completeAgainstApplication: DELIVERABLES.every((entry) => entry.verifiedAgainstApplication),
   note:
-    "INCOMPLETE. Built from the fee schedule, TREC's provider page and the work order. Not built from the application itself, which is behind a REALM/Accela login. Treat as a floor.",
+    "INCOMPLETE AGAINST THE LOGIN-GATED FORM. Built from the fee schedule, TREC's current provider page, its linked checklist and final adopted §§535.62/535.65. Reconcile once in REALM or after TREC confirms the mail channel.",
 });
 
 export default Object.freeze({ OWNER, DELIVERABLES, SECTIONS, LEDGER_STATUS });

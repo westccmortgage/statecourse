@@ -12,13 +12,9 @@
  * form carries 60 items, and any two forms overlap in exactly 20 (one-third) — a balanced design
  * the invariants below verify rather than assume, along with every form covering all nine topics.
  *
- * ADMINISTRATION IS PROPOSED, NOT SET. Every constant in ADMINISTRATION is a StateCourse LLC
- * proposal labelled PROVIDER_PROPOSED_PENDING_TAC_CONFIRMATION: exam-administration requirements
- * (proctoring, identity validation acceptable to the Commission, timing) live in the codified
- * 22 TAC provider rules (§ 535.65 as adopted effective 2026-08-31) that await human export, and
- * TX_PROVIDER_RULE_SOURCE_LOCK is FAIL until they are read. EXAM_READY therefore stays BLOCKED,
- * the engine refuses to administer, and none of these figures may be described anywhere as a TREC
- * requirement.
+ * ADMINISTRATION IS PROPOSED, NOT APPROVED. Final adopted §§535.62 and 535.65 are held and
+ * effective. Every provider-selected parameter below remains subject to TREC acceptance in the
+ * course approval. EXAM_READY therefore stays BLOCKED until written course approval exists.
  */
 
 import { FINAL_EXAM_BANK, FORMS_FULL, FORM_PACKETS } from "./principles-i-final-exam-bank.mjs";
@@ -39,9 +35,9 @@ export const FORMS = Object.freeze(
 );
 
 export const ADMINISTRATION = Object.freeze({
-  label: "PROVIDER_PROPOSED_PENDING_TAC_CONFIRMATION",
-  note: "StateCourse LLC proposals for exam administration, held for confirmation or correction against the codified 22 TAC provider rules once exported and read. None of these figures is a TREC requirement, and no examination may be administered while EXAM_READY is BLOCKED.",
-  examReady: "BLOCKED_TX_PROVIDER_RULE_SOURCE_LOCK",
+  label: "PROVIDER_PROPOSED_PENDING_TREC_ACCEPTANCE",
+  note: "StateCourse LLC proposals for exam administration under final adopted §§535.62 and 535.65. Provider-selected parameters remain subject to written TREC course approval; no examination may be administered while EXAM_READY is BLOCKED.",
+  examReady: "BLOCKED_TREC_COURSE_APPROVAL",
   questionsPerForm: 60,
   proposedTimeLimitMinutes: 120,
   proposedPassingPercent: 70,

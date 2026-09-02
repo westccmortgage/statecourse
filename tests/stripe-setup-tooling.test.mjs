@@ -134,7 +134,13 @@ test("no Stripe key, price, or account identifier is committed anywhere in the r
       if (entry.isDirectory()) { walk(full); continue; }
       if (!/\.(mjs|js|ts|json|md|sql|html|css|sh|yml|yaml|txt)$/.test(entry.name)) continue;
       if (full.endsWith(path.join("tests", "stripe-setup-tooling.test.mjs"))) continue;
-      const text = fs.readFileSync(full, "utf8");
+      let text = fs.readFileSync(full, "utf8");
+      /* The Texas Secretary of State's official Form 304 instructions print 12-3456789 as a
+         specimen format, not as StateCourse's tax identifier. Keep the held source byte-exact and
+         remove only that named public specimen from this secret scan. */
+      if (path.relative(root, full) === "texas/trec-sources/articles/tx-sos-form-304-instructions-2026-09-02.html") {
+        text = text.replace(/\b12-3456789\b/g, "");
+      }
       for (const { name, re } of patterns) {
         if (re.test(text)) offenders.push(`${path.relative(root, full)}: ${name}`);
       }

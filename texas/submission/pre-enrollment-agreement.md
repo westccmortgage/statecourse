@@ -1,6 +1,6 @@
 # Texas pre-enrollment agreement — source of record
 
-**Version:** `TX-ENROLLMENT-DRAFT-2026-08-30-v1`
+**Version:** `TX-ENROLLMENT-DRAFT-2026-09-02-v2`
 **Status:** DRAFT. Not published, not presented to any student, not filed with TREC.
 
 **This file is the single source.** The enrollment UI, the Terms, the student acceptance record, the
@@ -8,20 +8,12 @@ Stripe checkout metadata, the refund record and the submission specimen all read
 string and this text. One source is the whole point: a refund computed from one document and
 disclosed from another is how a provider ends up running a policy it never disclosed.
 
-**What changed at v1.** Three items in this file said a rule "was not read" when the rule had since
-been read. § 535.65 is now held at `texas/trec-sources/trec-rules/535.65.txt` with a recorded hash,
-and §§ 5 and 7 below quote it instead of carrying figures from the work order. A fourth item stated
-the twelve-hour rule as a daily credit cap; the held text makes it a limit on the length of a course
-segment, and §3 now says so. The standing limit is unchanged and is narrower than the caveats it
-replaces: what was read is TREC's own published reproduction, classified TIER 4, and the Secretary of
-State's codified 22 TAC text remains unread.
-
-**Two things are deliberately blank, and neither is a defect.** The **tuition** and the **refund
-formula** are business decisions. They are not invented here, and the version above stays at `v0`
-until a person sets them.
-
-**Everything marked ⚠ is unverified against Texas rule text**, because 22 TAC could not be opened
-from the build environment. See `texas/regulatory/primary-text-readings.md`.
+**What changed at v2.** The Secretary of State's final adopted §§535.62 and 535.65 are now held from
+the 28 August 2026 Texas Register and have been effective since 31 August. The old proposal-only
+caveat is removed. This draft also adopts a conservative 10-minute inactivity control as
+**StateCourse policy**, resolves the exam policy to no human proctor and no proctoring fee, and adds
+recommended commercial terms so the filing is reviewable as a whole. The owner must approve the
+commercial terms before signature.
 
 ---
 
@@ -29,7 +21,7 @@ from the build environment. See `texas/regulatory/primary-text-readings.md`.
 
 | | |
 |---|---|
-| Provider | StateCourse *(exact legal name pending — read from the formation documents, not assumed)* |
+| Provider | **StateCourse LLC** |
 | Provider approval number | **none — the provider is not approved** |
 | Course | one of the six 30-hour Texas qualifying courses, named individually |
 | Course approval number | **none — the course is not approved** |
@@ -44,15 +36,19 @@ from the build environment. See `texas/regulatory/primary-text-readings.md`.
 
 | | |
 |---|---|
-| Tuition | **NOT SET — business decision** |
-| Every additional fee, itemised | **NOT SET** — and where a fee exists it is named and priced here, never disclosed only at checkout |
-| Required materials, and whether their cost is included | **NOT SET** |
-| Proctoring fee | only if StateCourse adopts proctoring; see §6 |
+| Single 30-hour course tuition | **$119 proposed** |
+| Six-course / 180-hour package tuition | **$499 proposed**; checkout must allocate the price across the six separately approved courses |
+| Required digital materials | included in tuition |
+| Additional fees | none |
+| Proctoring fee | none; StateCourse does not require a human proctor |
 
 ## 3. Attendance, completion and time
 
 - Completion requires every topic, every required topic-quiz question answered correctly, every
   scenario exercise completed, and a passing final examination score.
+- The system logs the student out or stops instructional-time credit after **10 minutes of
+  inactivity**. This is a conservative **StateCourse policy** taken from TREC's still-published 2023
+  distance-course checklist; it is not described as a current rule requirement.
 - **Instructional time is accounted per unit** against the minute figures printed on the TREC course
   approval form for that course: 1,500 minutes across 9 topics and 46 units for Principles of Real
   Estate I (PRINS1-1), 1,500 across 9 topics and 44 units for Principles of Real Estate II
@@ -67,24 +63,31 @@ from the build environment. See `texas/regulatory/primary-text-readings.md`.
   hour at least every two hours. Both are constraints on how a segment is *scheduled*. Neither, on
   the held text, caps the credit a self-paced distance student may claim in a day, and this document
   will not restate a scheduling rule as a student-facing cap.
-- ⚠ Whether the current REALM distance-course application imposes any separate daily limit is
-  unresolved and belongs with the TREC clarification memo.
-- Makeup procedure and time limits: **NOT SET** pending the rule.
+- The initial access term is **12 months from purchase**, subject to any shorter course-expiration
+  date required by an approval. Because the course is asynchronous there are no missed class
+  meetings to make up; interrupted work resumes at the last verified completion point at no fee.
 
 ## 4. Refund, withdrawal and dismissal
 
-- Refund policy: **NOT SET — business decision.** When set, the same formula computes the Stripe
-  refund, the local refund record, the disclosed policy and the specimen.
-- Voluntary withdrawal: treatment **NOT SET**.
-- Dismissal by the provider: grounds and treatment **NOT SET**.
+- A student may cancel for a full refund within **three calendar days after purchase** if the student
+  has completed less than 10% of the purchased course and has not viewed a final examination.
+- If StateCourse cancels a course or cannot provide an approved purchased course, StateCourse issues
+  a full refund for that course.
+- After the three-day cancellation period, or after 10% course completion, tuition for that course
+  is non-refundable. For a six-course package, the checkout record allocates **$83.17** to each of
+  the first five courses and **$83.15** to the sixth, totalling $499.00, and applies this test
+  separately to each course.
+- Approved refunds return to the original payment method within **10 business days**.
+- Voluntary withdrawal ends access but does not change the refund formula above.
+- StateCourse may dismiss a student for identity fraud, assessment misconduct, account sharing,
+  threats or material violation of the enrollment agreement. A dismissal does not earn credit and
+  does not create a refund beyond the formula above.
 
 ## 5. Examination
 
-*§ 535.65 has since been read and is held at `texas/trec-sources/trec-rules/535.65.txt` with a
-recorded hash. What follows is quoted from that text rather than carried from the work order. The
-standing limit is unchanged and narrower than the old caveat: the file is TREC's own published
-reproduction, classified TIER 4 by `config/texas/trec-rules-source-lock.mjs`, and the Secretary of
-State's codified 22 TAC text remains unread. `TX_PROVIDER_RULE_SOURCE_LOCK` still FAILS.*
+*The final adopted §535.65 is held from the Secretary of State's 28 August 2026 Texas Register.
+`TX_PROVIDER_RULE_SOURCE_LOCK` still fails only on the remaining live-TAC sections and the
+login-gated current application, not on §§535.62 or 535.65.*
 
 - Passing score **70%**, unweighted, and this is the rule's own figure: § 535.65(h)(4) requires a
   provider to rotate all versions of the examination required by § 535.62(b)(7) throughout the
@@ -108,19 +111,16 @@ State's codified 22 TAC text remains unread. `TX_PROVIDER_RULE_SOURCE_LOCK` stil
   course."* Items and keys are never published, the student never sees the key, and no build emits an
   item, a choice, a key or a rationale into any served tree.
 - ⚠ **No examination may be administered.** Building four compliant versions is not authority to
-  serve one. `EXAM_READY` is `BLOCKED` on `TX_PROVIDER_RULE_SOURCE_LOCK`, and no student may sit an
-  attempt while it is.
+  serve one. `EXAM_READY` remains `BLOCKED` until written TREC course approval exists, and no
+  student may sit an attempt while it is blocked.
 
-## 6. Proctoring — provider policy, or nothing
+## 6. Proctoring
 
-**StateCourse will not describe a proctoring choice of its own as a TREC mandate.**
-
-- If StateCourse adopts proctoring, this section states the method, the procedure, the identification
-  required and the fee, **labelled provider policy**, and the method is represented in the course
-  application.
-- If StateCourse does not adopt it, this section says so.
-- **Neither is written yet**, because whether the current REALM distance-course application imposes
-  any proctoring requirement is question 6 of the TREC clarification memo.
+**StateCourse does not require a human proctor and charges no proctoring fee.** The 2025 amendments
+to §535.65 removed the blanket qualifying-course proctoring and closed-book requirements. Identity
+assurance, examination confidentiality and administration in the exact manner approved by TREC
+remain mandatory. If TREC approves a different method for a particular course, this agreement is
+versioned and reaccepted before that method is used.
 
 ## 7. Identity
 
@@ -132,18 +132,19 @@ that *"the student taking all topics of the course and completing all quizzes an
 student receiving credit for the course through a student identity verification process acceptable
 to the Commission."*
 
-⚠ **What the rule does not do is name an acceptable method**, and this document will not invent one
+**What the rule does not do is name an acceptable method**, and this document will not invent one
 and present it as the rule's. The method StateCourse proposes — verification at the start of an
 attempt by the same process used at enrollment, with the verification record retained alongside the
 attempt — is recorded as `proposedIdentityValidation` in
 `config/texas/law-of-agency-final-exam-forms.mjs` and is labelled
-`PROVIDER_PROPOSED_PENDING_TAC_CONFIRMATION`. Whether it is acceptable is the Commission's to say.
+`PROVIDER_PROPOSED_PENDING_TREC_ACCEPTANCE`. Whether it is acceptable is the Commission's to say.
 
 ## 8. Criminal history
 
-The agreement carries a notice that a criminal history may affect eligibility for a licence and that
-an applicant may request a **Fitness Determination** from TREC before or during the course. ⚠ The
-notice's required wording, if any, was not read.
+Criminal history may affect eligibility for a licence. A student may request a **Fitness
+Determination** from TREC before applying for a licence. Course enrollment or completion is not a
+finding that the student satisfies TREC's honesty, trustworthiness, integrity or criminal-history
+requirements.
 
 ## 9. Signature and acceptance
 

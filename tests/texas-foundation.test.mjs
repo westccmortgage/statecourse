@@ -182,15 +182,15 @@ test("the filing arithmetic is computed from the published schedule", () => {
   assert.equal(MANIFEST.FEES.scheduleEffective, "2025-12-15");
 });
 
-test("provider and course approval terms are tracked, and the unread ones say so", () => {
+test("provider and course approval terms are tracked against the current published sources", () => {
   assert.equal(MANIFEST.PROVIDER_TERM.providerApprovalYears, 4);
   assert.ok(MANIFEST.PROVIDER_TERM.providerApprovalYearsSource, "the four-year term is asserted with no source");
   assert.equal(MANIFEST.PROVIDER_TERM.courseApprovalYears, null, "a course approval term is claimed and 22 TAC was not read");
   assert.match(MANIFEST.PROVIDER_TERM.courseApprovalYearsStatus, /UNVERIFIED/);
-  /* The bond is now sourced — as PROPOSED text, which the status has to say. The reserve is not. */
-  assert.match(MANIFEST.PROVIDER_TERM.bondAmountStatus, /as proposed/i, "the bond amount claims more than the source gives");
-  assert.doesNotMatch(MANIFEST.PROVIDER_TERM.bondAmountStatus, /^VERIFIED\.?$/, "the bond amount is stated as fully verified");
-  assert.match(MANIFEST.PROVIDER_TERM.reserveAmountStatus, /UNVERIFIED/);
+  assert.match(MANIFEST.PROVIDER_TERM.bondAmountStatus, /VERIFIED/i);
+  assert.match(MANIFEST.PROVIDER_TERM.bondAmountStatus, /current provider page|published provider checklist/i);
+  assert.match(MANIFEST.PROVIDER_TERM.reserveAmountStatus, /VERIFIED/i);
+  assert.match(MANIFEST.PROVIDER_TERM.reserveAmountStatus, /current provider page|published provider checklist/i);
 });
 
 test("the financial calculator is planning evidence and can never report readiness", () => {
@@ -223,7 +223,7 @@ test("no Texas record states blanket mandatory proctoring or a closed-book rule 
   ];
   for (const pattern of mandates) assert.doesNotMatch(texts, pattern, `a stale mandate matching ${pattern} is stated`);
   /* And the subject IS addressed rather than silently dropped. */
-  assert.match(read("texas/submission/pre-enrollment-agreement.md"), /provider policy/i);
+  assert.match(read("texas/submission/pre-enrollment-agreement.md"), /StateCourse policy|provider policy/i);
 });
 
 /* ── the public page ─────────────────────────────────────────────────────────────────────── */
@@ -249,13 +249,15 @@ test("the provider ledger reports itself incomplete against an application nobod
   for (const owner of ["build", "human", "regulator"]) assert.ok(owners.has(owner), `no ${owner} deliverable exists`);
 });
 
-test("the clarification memo asks only what the sources do not answer, and answers nothing", () => {
+test("the clarification memo distinguishes open regulator questions from closed sourced decisions", () => {
   const memo = read("texas/submission/trec-clarification-memo.md");
   assert.match(memo, /REGULATOR CLARIFICATION/);
   for (const subject of [/surety bond/i, /reserve account/i, /registered[- ]agent/i, /records custodian/i, /proctoring/i, /inactivity timeout/i]) {
     assert.match(memo, subject, `the memo omits ${subject}`);
   }
-  assert.match(memo, /has been answered by inference/i);
+  assert.match(memo, /None is answered by inference/i);
+  assert.match(memo, /Open questions in this memo remain questions/i);
+  assert.match(memo, /Closed items are supported by the final adoption/i);
 });
 
 /* ── conditional: binding the moment Principles I content appears ────────────────────────── */
@@ -399,17 +401,16 @@ test("§§ 535.62 and 535.65 are adopted 10 August 2026 and effective 31 August 
   assert.match(register, /10 August 2026/);
 });
 
-test("an adopted rule that is not yet in force is neither current nor missing", () => {
-  /* The whole point of the status. Before 31 August 2026 these are adopted_pending_effective; a
-     record calling them "current" would overstate, and one omitting them would understate. */
+test("the final adopted course-rule source is current after its effective date", () => {
   for (const id of ["trec-rule-535-62", "trec-rule-535-65"]) {
     const entry = MANIFEST.SOURCES.find((s) => s.id === id);
-    assert.equal(entry.status, "adopted_pending_effective", `${id} status`);
-    assert.notEqual(entry.status, "current", `${id} is described as current before its effective date`);
+    assert.equal(entry.status, "current_effective", `${id} status`);
+    assert.equal(entry.localCopy, "texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html");
+    assert.match(entry.sha256, /^[a-f0-9]{64}$/);
   }
-  const asOf = new Date("2026-08-27T00:00:00Z");
+  const asOf = new Date("2026-09-02T00:00:00Z");
   const effective = new Date("2026-08-31T00:00:00Z");
-  assert.ok(asOf < effective, "the fixture date is no longer before the effective date — revisit this test");
+  assert.ok(asOf >= effective, "the final adopted source is not yet effective");
 });
 
 test("the TREC courtesy mirror cannot satisfy the official rule lock on its own", () => {

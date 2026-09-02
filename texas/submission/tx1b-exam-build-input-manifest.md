@@ -44,7 +44,7 @@ course, or examination.
   (see `texas/submission/human-export-list.md`); exam administration requirements live in those
   rules, so EXAM_READY stays BLOCKED regardless of content quality.
 - The 50-minute credit hour and all exam-administration parameters carry
-  FORM_DERIVED_PENDING_TAC_CONFIRMATION until § 535.65's codified text is read.
+  FORM_DERIVED_PENDING_TAC_CONFIRMATION until the remaining relevant codified Chapter 535 text is read. The final adopted text of §§ 535.62 and 535.65 does not define the length of a credit hour.
 
 ## Non-negotiables carried forward
 

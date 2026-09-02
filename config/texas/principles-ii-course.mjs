@@ -46,7 +46,7 @@ export const COURSE = Object.freeze({
   certificateIssuanceEnabled: false,
   finalExaminationExists: true,
   finalExaminationAdministrable: false,
-  finalExaminationStatus: "BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES",
+  finalExaminationStatus: "BUILT_NOT_ADMINISTRABLE_PENDING_TREC_APPROVAL",
   trecApprovalStatus: "NOT_SUBMITTED_NOT_APPROVED",
 });
 

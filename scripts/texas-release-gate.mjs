@@ -174,7 +174,7 @@ check("content", 14, "each topic carries at least three quiz items with remediat
   }
   require_(SCENARIOS.length >= 3, `${SCENARIOS.length} scenario(s), minimum 3`);
   const total = Object.values(TOPIC_QUIZZES).reduce((n, items) => n + items.length, 0);
-  return `${total} primary quiz items across 9 topics, ${SCENARIOS.length} scenarios — formative only; no final exam exists`;
+  return `${total} primary quiz items across 9 topics, ${SCENARIOS.length} scenarios — formative instruments are separate from the secure final-exam bank`;
 });
 
 check("content", 15, "the time-evidence documents exist and were generated from the live study", () => {
@@ -212,8 +212,8 @@ check("delivery", 30, "the distance-delivery controls are sourced, not merely wr
 });
 
 check("delivery", 31, "the controls the Commission itself names are represented", () => {
-  /* § 535.65(a)(1) as proposed, from the Secretary of State's Texas Register. Held, so it can be
-     required here even while the codified text is not. */
+  /* Final adopted § 535.65(a)(1), from the Secretary of State's 28 August 2026 Texas Register.
+     Held, so it can be required here even while the remaining live TAC sections are not. */
   const body = read("texas/submission/distance-delivery-controls.md");
   require_(body, "the distance-delivery specification does not exist");
   for (const duty of ["identity", "attendance", "examination", "completion record"]) {

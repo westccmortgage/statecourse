@@ -38,7 +38,7 @@ const PROD = path.join(HOME, "video-production");
 const OUT = path.join(HOME, "video-plan-freeze.json");
 
 const COURSE_ID = "tx-law-of-agency-30-v1";
-const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2";
+const FREEZE_ID = "LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3";
 
 /**
  * The byte-state this freeze supersedes. Plan v1 was hashed by
@@ -222,8 +222,6 @@ const artifacts = {
      rectangle and every one of the fifty verified strings has to be re-measured. */
   "held form IABS 1-2 (the only permitted source of document pixels)": hashOf(path.join(root, "texas/trec-sources/forms/IABS-1-2.pdf")),
   "held statute OC.1101 (the source of every statutory quotation)": hashOf(path.join(root, "texas/trec-sources/statutes/OC.1101.htm")),
-  "source inventory": hashOf(path.join(root, "texas/trec-sources/source-inventory.json")),
-
   /* The screens the videos name. A regenerated map that moved a screen id would silently unplace
      three videos, so the maps are hashed even though this freeze does not own them. */
   "block map — module 2 (t02u5-s1)": hashOf(path.join(root, "config/texas/law-of-agency-module-2-blocks.mjs")),
@@ -247,9 +245,14 @@ const VIDEOS = Object.freeze([
 const freeze = {
   freezeId: FREEZE_ID,
   courseId: COURSE_ID,
-  frozenOn: "2026-08-30",
+  frozenOn: "2026-09-02",
   generatedBy: "scripts/freeze-loa-video-plan.mjs",
   what: "The video instruction plan and every artifact a render of the three Law of Agency videos depends on. This freeze is what scripts/freeze-loa-curriculum.mjs hashes in place of the plan itself, so that correcting a video does not require breaking a curriculum freeze.",
+  supersedesFreeze: Object.freeze({
+    freezeId: "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2",
+    reason:
+      "The repository-wide Texas source inventory grew when current provider-application and final-adoption sources were added. None of those files is consulted by a video render. Version 3 removes that inventory from the render boundary while continuing to hash the held IABS form, the held statute, every production artifact, the three target block maps, and both validating generators directly. All video wording, timings, coordinates, captions, and source pixels remain unchanged.",
+  }),
 
   /* No layer may borrow another's status. */
   status: {

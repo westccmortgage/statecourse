@@ -8,12 +8,10 @@
  * config/texas/statute-sources.mjs. The formative bank (principles-i-question-bank.mjs) defined the
  * difficulty register and style; per the manifest, no formative item is promoted verbatim.
  *
- * WHAT REMAINS BLOCKED. Building the bank does not open an examination. Exam ADMINISTRATION
- * parameters (proctoring, identity validation, timing) live in the codified 22 TAC provider rules
- * (§ 535.65 as adopted effective 2026-08-31), which await human export; until
- * TX_PROVIDER_RULE_SOURCE_LOCK passes, EXAM_READY stays BLOCKED and no student may be served an
- * attempt. The administration constants in principles-i-final-exam-forms.mjs are PROVIDER
- * PROPOSALS pending that confirmation, and the engine refuses administration while blocked.
+ * WHAT REMAINS BLOCKED. Building the bank does not open an examination. Final adopted §§535.62
+ * and 535.65 are held and effective, but the proposed identity method and exam administration must
+ * still be accepted in a written TREC course approval. The engine refuses administration until that
+ * approval exists.
  *
  * SECURITY. This file is an answer key. It lives in config/, outside every student-served tree;
  * the site build refuses a dist that contains any file matching final-exam-bank or any

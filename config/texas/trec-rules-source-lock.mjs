@@ -4,9 +4,10 @@
  *
  * WHY THIS FILE EXISTS, AND WHAT IT DOES NOT CLAIM. The Texas Secretary of State's Appian TAC
  * portal serves only a JavaScript shell to a non-browser client and the legacy texreg reader
- * redirects to it; both were re-tested on 2026-08-29 and both still fail. So the SECRETARY OF
- * STATE'S CODIFIED TEXT of 22 TAC ch. 535 remains unread, and TX_PROVIDER_RULE_SOURCE_LOCK in
- * regulatory-manifest.mjs still FAILS. That gate is not weakened, bypassed, or reinterpreted here.
+ * redirects to it; both were re-tested on 2026-08-29 and both still fail. The final adopted text
+ * of §§535.62 and 535.65 is now held from the Secretary of State's 28 August 2026 Texas Register,
+ * while the live TAC remains unread for the other provider sections. TX_PROVIDER_RULE_SOURCE_LOCK
+ * therefore still FAILS; the gate is not weakened, bypassed, or reinterpreted here.
  *
  * What this file adds is the thing that gate's failure was wrongly being used to excuse: leaving
  * the provider-rule layer ENTIRELY unsourced. TREC publishes the consolidated Chapter 535 text on
@@ -17,10 +18,9 @@
  * course against it is strictly better than designing a course against nothing.
  *
  * THE DISCIPLINE THIS FILE KEEPS. Every provision below is stored as extracted text on disk, with a
- * hash, so a later re-read is a diff rather than a memory. Every entry is labelled with its tier and
- * with the fact that the codified text has not been compared against it. Nothing in this file may be
- * cited to a student as "the rule says", and nothing here may be used to assert submission
- * readiness — see SUBMISSION_READINESS below, which states the opposite in code.
+ * hash, so a later re-read is a diff rather than a memory. §§535.62 and 535.65 use the final adopted
+ * Texas Register text; §§535.55, 535.63 and 535.64 retain the regulator-copy caveat. Nothing here
+ * may be used to assert approval or submission readiness — see SUBMISSION_READINESS below.
  *
  * WHAT THE FIVE SECTIONS GOVERN. §535.55 is the sales-agent education requirement the six courses
  * exist to satisfy, and the rule that fixes Law of Agency at 30 credit hours — which is the
@@ -54,7 +54,7 @@ export const SOURCE = Object.freeze({
   tier: "TIER 4 — the regulator's own published reproduction. NOT the Secretary of State's adopted text.",
   codifiedTextCompared: false,
   codifiedTextStatus:
-    "UNREAD — texas-sos.appianportalsgov.com serves a JS shell and texreg.sos.state.tx.us redirects to it; both re-tested 2026-08-29 and both still fail from this environment.",
+    "PARTIAL — final adopted Texas Register text is held for §§535.62 and 535.65; the live TAC portal remains unread for §§535.55, 535.63 and 535.64.",
 });
 
 /**
@@ -63,14 +63,12 @@ export const SOURCE = Object.freeze({
  * TREC's Rules page renders paragraph structure as INDENTATION and prints no subsection letters.
  * Citing a rule as "§535.62(b)(8)(D)(i)" off a page that never prints "(D)(i)" would be an
  * assertion dressed as a citation. It is not necessary here, because a HIGHER-tier copy of two of
- * these five sections has actually been opened from this environment: the Secretary of State's own
- * Texas Register of 22 May 2026 publishes the §535.62 / §535.65 proposal (TRD-202601975) in full,
- * WITH its lettering, and that file is held at texas/trec-sources/texas-register/.
+ * these five sections has been opened: the Secretary of State's 28 August 2026 Texas Register
+ * republishes the final adopted §§535.62 and 535.65 in full, WITH their lettering.
  *
- * On 2026-08-30 the two copies were compared paragraph by paragraph, normalised for whitespace.
- * They are identical word for word except in the paragraphs the 2026 proposal amends. So the
- * lettering below is READ, not inferred, for §535.62 and §535.65 — with the single exception of
- * §535.65(j), where the two copies say different things and both readings are recorded.
+ * The adoption notice says the Commission made only non-substantive reference-language changes to
+ * §535.62(b)(6)(C) and §535.65(g)(5). The final text closes the former proposal-only gap, including
+ * the rewritten completion-record subsection §535.65(j).
  *
  * For §§535.55, 535.63 and 535.64 no Secretary of State copy is held. Their lettering is this
  * file's reading of the TREC page's nesting, corroborated only by the rules' own internal
@@ -80,22 +78,22 @@ export const SOURCE = Object.freeze({
 export const SUBSECTION_IDENTIFIER_SOURCE = Object.freeze({
   appliesTo: Object.freeze(["22 TAC §535.62", "22 TAC §535.65"]),
   authority: "Texas Secretary of State",
-  title: "Texas Register, 22 May 2026 — Title 22 Examining Boards, Proposed Rules (TRD-202601975)",
-  url: "https://www.sos.texas.gov/texreg/archive/May222026/Proposed%20Rules/22.EXAMINING%20BOARDS.html",
-  localCopy: "texas/trec-sources/texas-register/2026-05-22-title22-proposed-rules.html",
-  sha256: "6c5c97f0c283133b306913198d6c86dacf553de1ac03de31017ea93bda62063b",
-  bytes: 172495,
-  readOn: "2026-08-27",
-  comparedOn: "2026-08-30",
-  tier: "TIER 3 — the Secretary of State's own publication, and the highest-ranked Texas source this project has opened. It carries the text AS PROPOSED, not the codified adopted text.",
+  title: "Texas Register, 28 August 2026 — Title 22 Examining Boards, Adopted Rules (TRD-202602955)",
+  url: "https://www.sos.state.tx.us/texreg/archive/August282026/Adopted%20Rules/22.EXAMINING%20BOARDS.html",
+  localCopy: "texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html",
+  sha256: "2a1d3fa727f592ce4f5066d322f446484528c3aaf36e7e2cc464abccddb74ace",
+  bytes: 200345,
+  readOn: "2026-09-02",
+  comparedOn: "2026-09-02",
+  tier: "TIER 3 — the Secretary of State's final adopted publication; current from 31 August 2026.",
   method:
-    "Both copies were reduced to an ordered list of paragraphs with whitespace normalised, and diffed. §535.62: 86 paragraphs each, identical except (i)(2). §535.65: TREC 132 paragraphs against 127 in the proposal, identical except (j), which the proposal rewrites.",
+    "Read from the final adopted publication, which republishes both sections in full and states that only non-substantive reference-language changes were made to §535.62(b)(6)(C) and §535.65(g)(5).",
   differences: Object.freeze([
-    "§535.62(i)(2) — the proposal replaces 'a course completion certificate' with 'a transcript or other course completion record'. Exempt-provider preapproval; no assessment or delivery behaviour of this course turns on it.",
-    "§535.65(j) — the proposal renames 'Course completion certificate' to 'Course completion records', replaces issuing a certificate to the student with SUBMITTING completion records to the Commission not sooner than the number of course credit hours has passed and not later than the 10th calendar day after completion, replaces the instructor's name with the student's name, and requires, for qualifying courses completed on or after 1 October 2026, the student's Commission-issued licence number or, failing that, application number in place of the provider official's printed name and signature.",
+    "§535.62(b)(6)(C) and §535.65(g)(5) contain non-substantive reference-language changes from the proposal.",
+    "§535.65(j) is final: providers submit completion records through a Commission-acceptable process, no sooner than the course-credit-hour period has passed and no later than ten calendar days after completion; completions on or after 1 October 2026 carry the student's licence or application number.",
   ]),
   whatItDoesNotEstablish:
-    "It is the PROPOSED text. TREC's own rule record gives adoption on 2026-08-10 and an effective date of 2026-08-31, and the adoption notice publishes in the Texas Register issue of 28 August 2026, which returns 403 and has not been read. Nothing here may be described as the codified adopted rule, and TX_PROVIDER_RULE_SOURCE_LOCK still FAILS.",
+    "It does not supply the live codified text of §§535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 or 535.101, and it is not evidence of TREC approval of StateCourse.",
 });
 
 /**
@@ -116,8 +114,8 @@ export const CROSS_REFERENCE_OBSERVATIONS = Object.freeze([
 
 const rule = (record) => Object.freeze({ ...record, provisions: Object.freeze(record.provisions.map((p) => Object.freeze(p))) });
 
-/** Default: lettering read from the Secretary of State's published proposal (see above). */
-const SOS = "sos-published-proposed-text";
+/** Default for §§535.62 and 535.65: lettering and text read from the final adopted publication. */
+const SOS = "sos-published-adopted-text-2026-08-28";
 /** Lettering read off the indentation of TREC's own page, corroborated by internal cross-references. */
 const NEST = "held-page-nesting";
 
@@ -161,7 +159,7 @@ export const RULES = Object.freeze([
     sha256: "3a17a31f4c8e5acb1add6ba71ad8f061f34bc64bfaef9f98eedd8737a170b2f0",
     bytes: 11383,
     governs:
-      "Course approval, and — in subsections (b)(7) and (b)(8) — every assessment number this project builds to. The lettering is the Secretary of State's, read from the 22 May 2026 Texas Register proposal and verified identical to the TREC-published text held here except at (i)(2).",
+      "Course approval, and — in subsections (b)(7) and (b)(8) — every assessment number this project builds to. The lettering and current text are read from the Secretary of State's final 28 August 2026 Texas Register adoption.",
     provisions: [
       {
         id: "535-62-topic-coverage",
@@ -369,7 +367,7 @@ export const RULES = Object.freeze([
     sha256: "fbaeedb3904d6bac666948d58a523a3762ac639617d44df7db2cbbf79b2c65e7",
     bytes: 16135,
     governs:
-      "Provider operations: examination administration, confidentiality, passing score, version rotation, identity validation, the subsequent-examination rules, record retention and the course completion record. The lettering is the Secretary of State's, read from the 22 May 2026 Texas Register proposal and verified identical to the TREC-published text held here except at (j).",
+      "Provider operations: examination administration, confidentiality, passing score, version rotation, identity validation, the subsequent-examination rules, record retention and the course completion record. The lettering and current text are read from the Secretary of State's final 28 August 2026 Texas Register adoption.",
     provisions: [
       {
         id: "535-65-provider-responsibilities",
@@ -484,17 +482,17 @@ export const RULES = Object.freeze([
         reliedOnBy: ["deliverable:prins2-exam-engine", "ASSESSMENT_REQUIREMENTS.examAttemptsBeforeCourseRetake"],
       },
       {
-        id: "535-65-completion-certificate-fields",
+        id: "535-65-historical-completion-certificate-fields",
         subsection: "535.65(j)",
-        identifierBasis: SOS,
-        text: "AS HELD IN THE TREC-PUBLISHED TEXT: upon successful completion of a qualifying course a provider shall issue a course completion certificate including (A) the provider's name and approval number, (B) the instructor's name, (C) the course title, (D) course numbers, (E) the number of classroom credit hours, (F) the course delivery method, (G) the dates the student began and completed the course, and (H) the printed name and signature of an official of the provider on record with the Commission.",
-        reliedOnBy: ["deliverable:prins2-certificate"],
+        identifierBasis: "historical-trec-copy-superseded-2026-08-31",
+        text: "HISTORICAL ONLY: the older TREC-published copy required a course completion certificate issued to the student. It was superseded by the final adopted §535.65(j) effective 31 August 2026 and may not drive a new completion workflow.",
+        reliedOnBy: [],
       },
       {
         id: "535-65-completion-record-amendment",
         subsection: "535.65(j)",
         identifierBasis: SOS,
-        text: "AS PROPOSED IN THE 22 MAY 2026 TEXAS REGISTER, and per TREC's rule record ADOPTED 2026-08-10 EFFECTIVE 2026-08-31 — the adopted text itself has NOT been read: the subsection is renamed 'Course completion records'; the provider must SUBMIT completion records to the Commission using a process acceptable to the Commission not sooner than the number of course credit hours has passed and not later than the 10th calendar day after the date a course is completed; the record carries the student's name rather than the instructor's; and for qualifying courses completed on or after 1 October 2026 it must carry the student's Commission-issued licence number or, if none has issued, the student's application number.",
+        text: "FINAL ADOPTED TEXT, effective 31 August 2026: the subsection is named 'Course completion records'; the provider must submit completion records to the Commission using a process acceptable to the Commission not sooner than the number of course credit hours has passed and not later than the 10th calendar day after a course is completed; the record carries the student's name; and for qualifying courses completed on or after 1 October 2026 it must carry the student's Commission-issued licence number or, if none has issued, the student's application number.",
         reliedOnBy: ["deliverable:tx-completion-record"],
       },
       {
@@ -702,7 +700,8 @@ export function trecRulesSourceLock() {
     provisionsHeld: RULES.reduce((total, entry) => total + entry.provisions.length, 0),
     missing: Object.freeze(missing.map((entry) => entry.section)),
     codifiedTextRead: false,
-    doesNotSatisfy: "TX_PROVIDER_RULE_SOURCE_LOCK",
+    finalAdoptedTextHeldFor: Object.freeze(["22 TAC §535.62", "22 TAC §535.65"]),
+    doesNotSatisfy: "TX_PROVIDER_RULE_SOURCE_LOCK because the remaining live TAC sections and current application fields are still unresolved",
   });
 }
 
@@ -715,10 +714,11 @@ export const SUBMISSION_READINESS = Object.freeze({
   providerApprovalNumber: null,
   courseApprovalNumber: null,
   codifiedTacTextRead: false,
+  finalAdoptedTexasRegisterTextHeldFor: Object.freeze(["22 TAC §535.62", "22 TAC §535.65"]),
   enrollmentPermitted: false,
   texasCreditAvailable: false,
   note:
-    "The Secretary of State's codified 22 TAC text remains unread and the provider application could not be opened; TX_PROVIDER_RULE_SOURCE_LOCK still FAILS. Nothing in this project may be described as TREC-approved, and no Texas qualifying credit may be offered, unless and until written TREC approval exists.",
+    "Final adopted Texas Register text is held for §§535.62 and 535.65, but the remaining live TAC sections and the current provider application fields are unresolved; TX_PROVIDER_RULE_SOURCE_LOCK still FAILS. Nothing in this project may be described as TREC-approved, and no Texas qualifying credit may be offered unless and until written TREC approval exists.",
 });
 
 if (SUBMISSION_READINESS.trecApprovalHeld || SUBMISSION_READINESS.texasCreditAvailable) {

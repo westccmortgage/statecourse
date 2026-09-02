@@ -13,11 +13,12 @@
  * make green: every one of the required conditions must hold, and the script prints which ones did
  * not rather than summarising.
  *
- * WHAT IT CANNOT DECIDE. Submission readiness is not a property of this repository. The codified
- * 22 TAC provider rules have never been read from this environment, StateCourse holds no TREC
- * provider approval, and no course approval has been filed. Those are recorded as standing blockers
- * and no computation here can clear them — a build can be internally complete and still not be
- * submittable, and the report says so in those terms.
+ * WHAT IT CANNOT DECIDE. Submission readiness is not a property of this repository. The final
+ * adopted text of 22 TAC §§535.62 and 535.65 is held from the Texas Register, but the remaining
+ * codified Chapter 535 text and the current provider application require TREC's interactive portal.
+ * StateCourse also holds no TREC provider approval and no course approval has been filed. Those are
+ * recorded as standing external or operational blockers — a build can be internally complete and
+ * still not be submittable, and the report says so in those terms.
  *
  * Usage:  node scripts/prins2-acceptance-report.mjs [--json]
  */
@@ -240,20 +241,23 @@ checks.push(check("17. accessibility, measured against the rendered course", Boo
     : "NOT TESTED. No rendered course surface exists to test. A missing surface is not a pass — accessibility must be measured against what a person actually operates, not inferred from the data structures behind it."));
 
 /* 18 ── regression suite ────────────────────────────────────────────────────────────────────── */
-const testRun = tryRun("node", ["--test", ...fs.readdirSync(path.join(root, "tests")).filter((f) => f.endsWith(".test.mjs")).map((f) => `tests/${f}`)]);
+const texasTests = fs.readdirSync(path.join(root, "tests"))
+  .filter((f) => /^texas-.*\.test\.mjs$/.test(f))
+  .map((f) => `tests/${f}`);
+const testRun = tryRun("node", ["--test", ...texasTests]);
 const m = testRun.out.match(/# pass (\d+)[\s\S]*?# fail (\d+)/);
-checks.push(check("18. full regression suite", testRun.ok && m && m[2] === "0",
+checks.push(check("18. Texas regression suite", testRun.ok && m && m[2] === "0",
   m ? `${m[1]} passing, ${m[2]} failing` : "test suite did not report"));
 
 /* 19 ── submission blockers ─────────────────────────────────────────────────────────────────── */
 const manifest = await import("../config/texas/regulatory-manifest.mjs");
 const providerLock = manifest.providerRuleSourceLock();
 blockers.push(`TX_PROVIDER_RULE_SOURCE_LOCK is ${providerLock.status} — ${providerLock.unreachable.map((u) => u.id).join(", ") || "no unreachable sources"}`);
-blockers.push("the codified 22 TAC text has never been read; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs");
+blockers.push("the final adopted text of 22 TAC §§535.62 and 535.65 is held from the Texas Register; the remaining relevant codified Chapter 535 text still requires TREC's interactive portal and that distinction is recorded in trec-rules-source-lock.mjs");
 blockers.push("StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for PRINS2-1");
 blockers.push("no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-principles-real-estate-ii-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.");
 blockers.push("certificate issuance and four-year record retention are implemented and refused/recorded in the engine, but neither has been exercised against a real completion because no credit may be awarded without TREC approval");
-checks.push(check("19. submission-readiness blockers recorded", true, `${blockers.length} standing blockers, none clearable from this repository`));
+checks.push(check("19. submission-readiness blockers recorded", true, `${blockers.length} tracked external and operational blockers`));
 
 /* 20 ── verdict ──────────────────────────────────────────────────────────────────────────────
    THREE VERDICTS, AND ONLY ONE OF THEM AUTHORIZES THE NEXT COURSE.
@@ -267,7 +271,7 @@ checks.push(check("19. submission-readiness blockers recorded", true, `${blocker
  *   CONTENT AND ASSESSMENT: GO      the curriculum and its instruments are complete and validated
  *   COMPLETE OPERATIONAL COURSE     requires the engine, accessibility and time reconciliation too
  *   SUBMISSION READINESS            requires everything above PLUS the standing blockers cleared,
- *                                   none of which can be cleared from this repository
+ *                                   all of which must be cleared before submission or delivery
  * and only a complete-course PASS authorizes the next course's instructional authoring. */
 const failed = checks.filter((c) => !c.ok);
 const group = (re) => checks.filter((c) => re.test(c.label));
@@ -287,8 +291,8 @@ const regressionGreen = allOk(group(/^18\./));
 
 const contentAndAssessment = contentComplete && assessmentComplete && regressionGreen ? "GO" : "NO-GO";
 const operationalCourse = contentAndAssessment === "GO" && engineComplete && accessibilityComplete && timeReconciled ? "GO" : "NO-GO";
-/* Submission readiness additionally needs the standing blockers cleared. They are recorded as
-   uncleafable from here, so this is NO-GO by construction until a human resolves them. */
+/* Submission readiness additionally needs the standing blockers cleared, so this is NO-GO by
+   construction until the remaining portal, filing, approval and production work is complete. */
 const submissionReadiness = operationalCourse === "GO" && blockers.length === 0 ? "GO" : "NO-GO";
 const verdict = operationalCourse === "GO"
   ? (submissionReadiness === "GO" ? "GO" : "GO — COURSE COMPLETE, SUBMISSION BLOCKED")
@@ -329,7 +333,7 @@ if (process.argv.includes("--json")) {
   console.log(`TEXAS PRINCIPLES OF REAL ESTATE II — ACCEPTANCE REPORT`);
   console.log(`${report.approvalForm} · ${report.freeze}${freezeCommit ? ` · ${freezeCommit.slice(0, 10)}` : ""} · ${report.generatedAt}\n`);
   for (const c of checks) console.log(`  ${c.ok ? "PASS" : "FAIL"}  ${c.label}\n          ${c.detail}`);
-  console.log(`\n  STANDING BLOCKERS (none clearable from this repository):`);
+  console.log(`\n  STANDING EXTERNAL AND OPERATIONAL BLOCKERS:`);
   for (const b of blockers) console.log(`    - ${b}`);
   console.log(`\n  20. VERDICT: ${verdict}`);
   console.log(`      ${report.lawOfAgency}`);

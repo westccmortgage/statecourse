@@ -32,14 +32,10 @@ lettering. The (a) / (b)(1)–(3) / (c) structure used below is this project's r
 excepts "subsection (c) of this section", and its third route is "the equivalent of subsection
 (b)(1) or (2) of this section".
 
-The § 535.65 letters cited further down rest on something different and weaker. They are read from
-the Secretary of State's Texas Register of 22 May 2026, held at
-`texas/trec-sources/texas-register/2026-05-22-title22-proposed-rules.html`, which prints § 535.65
-with its lettering — but publishes it **as proposed**, which is why that capture is registered at
-CONTEXTUAL tier and not as controlling. The proposal and TREC's published copy were diffed paragraph
-by paragraph on 2026-08-30 and are identical word for word except at § 535.65(j), so for every
-§ 535.65 provision cited here the *text* is TREC's and the *letter* is the Secretary of State's
-proposal.
+The §535.65 letters cited further down now rest on the Secretary of State's final adoption. The
+28 August 2026 Texas Register is held at
+`texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html` and republishes §535.65 in
+full, effective 31 August 2026. The live TAC caveat remains only for §535.63.
 
 ---
 
@@ -96,8 +92,7 @@ these registers exist to catch.
 
 ## The § 535.65 provisions a dossier also has to satisfy
 
-*Text from TREC's published copy at `texas/trec-sources/trec-rules/535.65.txt`; lettering from the
-22 May 2026 Texas Register proposal, as explained above; codified text not compared.*
+*Text and lettering from the Secretary of State's final 28 August 2026 adoption.*
 
 - **§ 535.65(b)(1)** — a provider must use an instructor *currently qualified under § 535.63* to
   teach **the specified course**. This is what makes item 12 below a required field rather than an

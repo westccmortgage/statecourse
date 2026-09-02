@@ -1,7 +1,34 @@
 # Texas Law of Agency — handoff
 
-**Written:** 2026-08-31 · **Head:** `63ae6e7` on `main`, pushed · **Tree:** clean
-**Freeze:** `LOA-CONTENT-FREEZE-2026-08-30-v6` · **Tests:** 1,032 passing, 0 failing
+**Updated:** 2026-09-02 · **Branch:** `relay-texas`
+**Freeze:** `LOA-CONTENT-FREEZE-2026-09-02-v7` · **Texas tests:** 179 passing, 0 failing
+
+## 0. September 2 filing-readiness update
+
+The final adopted text of §§ 535.62 and 535.65 is now held from the Secretary of State's 28 August
+2026 Texas Register and has been effective since 31 August 2026. The course no longer carries the
+obsolete blanket-proctoring or closed-book statement. The current record says exactly what the
+adopted rule says: identity assurance and an approved examination administration method are
+required; a human proctor is neither asserted as required nor prohibited.
+
+The provider filing package is assembled at `texas/submission/provider-application/`:
+
+- `00-package-index.md` controls the package.
+- `01-prefill-facts.md` separates known entity facts from private owner inputs.
+- `02-owner-input-and-private-docs.md` is the owner document list.
+- `03-financial-package-spec.md` defines the GAAP statements, budget, operating account and reserve evidence.
+- `04-foreign-registration-runbook.md` covers Texas foreign-LLC registration and the fresh Certificate of Fact.
+- `05-bond-procurement-spec.md` specifies the original $20,000 surety bond.
+- `06-filing-ready-checklist.md` is the submission checklist.
+- `07-filing-channel-control.md` records the unresolved REALM-versus-mail conflict.
+- `08-instructor-determination-draft.md` is the course-specific instructor qualification draft.
+- `09-first-year-market-survey.md` documents the 100-student / 600-enrollment first-year plan against 29,980 official first attempts in the two-year TREC reporting window.
+
+`node scripts/texas-release-gate.mjs` now reports **zero build-owned provider deliverables
+outstanding**. Principles I content, examination and distance-delivery gates are all **GRANTED**;
+`TX_PRINCIPLES_I_SUBMISSION_READY` is **GRANTED**. The provider application remains blocked by 23
+human-controlled items and three regulator-controlled answers. Production remains deliberately
+disabled until written provider and course approvals exist.
 
 ---
 
@@ -14,7 +41,7 @@ computes three separate verdicts and does not let a green one stand in for a red
 |---|---|
 | content and assessment | **GO** |
 | complete operational course | **GO** |
-| submission readiness | **NO-GO** — seven standing blockers, none clearable from this repository |
+| submission readiness | **NO-GO** — seven tracked external and operational blockers |
 
 `node scripts/loa-acceptance-report.mjs` recomputes all of it from the artifacts on disk. Nothing in
 the report is transcribed, so it cannot describe a build that no longer exists.
@@ -58,7 +85,7 @@ about the content had changed.
 **Three submission-document caveats were false and one claim was wrong.**
 `texas/submission/pre-enrollment-agreement.md` said "§ 535.65 was not read" long after that section
 was read and hashed, and stated the twelve-hour rule as a cap on daily credit when the held text
-makes it a limit on the length of a course *segment*. Corrected at v1, with the version bumped at all
+makes it a limit on the length of a course *segment*. Corrected at v2, with the version bumped at all
 three readers (the document, `payment-contract.mjs`'s `POLICY_SOURCE`, the state registry) and a test
 asserting they agree.
 
@@ -82,11 +109,11 @@ asserting they agree.
 
 ## 4. The seven standing blockers
 
-None is clearable from this repository. They are recomputed into
+They are recomputed into
 `texas/tx-law-of-agency-30-v1/acceptance-report.json` on every run.
 
-1. `TX_PROVIDER_RULE_SOURCE_LOCK` is FAIL — `trec-qe-provider-application`, `sos-tac-22-535` unreachable.
-2. The codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy, TIER 4.
+1. The current provider application is behind a REALM/Accela login and has not yet been reconciled field by field.
+2. The final adopted §§ 535.62 and 535.65 are held from the Secretary of State. The remaining current codified rules named in `human-export-list.md` still require a portal export.
 3. StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1.
 4. No student-facing surface exists. Engine and accessibility are demonstrated against a reviewer-only, non-credit surface that is not served, not linked and carries noindex. Testing with real assistive technology and real users is outstanding.
 5. No video has been produced. The plan is frozen and validated and the transcripts are the primary artifact, so no student depends on an unproduced segment — but the segments are unbuilt.
@@ -97,9 +124,25 @@ None is clearable from this repository. They are recomputed into
 
 ## 5. What to do next
 
-**The mission sequence** is: Principles I ✔ → Principles II ✔ → **Law of Agency ✔** → Law of
-Contracts → Promulgated Contract Forms → Real Estate Finance. Complete and validate one course
-before starting the next.
+**Provider filing is now the first priority.** Do not spend the next session authoring another
+course while the application packet is waiting for owner-controlled documents.
+
+1. Open or sign into REALM and export the effective provider application so its fields and filing
+   channel can be reconciled against `07-filing-channel-control.md`.
+2. Register StateCourse LLC as a Texas foreign LLC, appoint the Texas registered agent, and obtain a
+   Certificate of Fact dated no more than 30 days before the TREC filing.
+3. Supply the EIN confirmation, ownership/principal details, background disclosures, authorised
+   signers, and designate the operations and records managers.
+4. Appoint the Texas-resident attorney-in-fact/records custodian and execute the TREC-acceptable
+   power of attorney.
+5. Produce the GAAP income statement and balance sheet, first-year budget, operating-account proof,
+   and evidence of at least $10,000 in the reserve account.
+6. Obtain the original $20,000 surety bond with original or raised seal.
+7. Reconcile the fee shown by REALM, pay the $400 provider fee plus the displayed online charge, and
+   submit. Course applications follow provider approval; Principles I is already submission-ready.
+
+The longer course-build sequence remains: Principles I ✔ → Principles II ✔ → Law of Agency ✔ → Law
+of Contracts → Promulgated Contract Forms → Real Estate Finance.
 
 ### Next course: Law of Contracts
 
@@ -136,7 +179,7 @@ accessibility criteria and two engine behaviours the Principles II ones do not.
 ## 6. Commands worth knowing
 
 ```
-node scripts/freeze-loa-curriculum.mjs --verify     # freeze intact?
+node scripts/freeze-loa-curriculum.mjs              # freeze intact?
 node scripts/freeze-loa-curriculum.mjs --write      # re-take (bump FREEZE_ID + break entry first)
 node scripts/validate-loa-assessments.mjs           # 16 assessment checks
 node scripts/report-loa-time-evidence.mjs           # three-layer time, exact seconds
@@ -145,7 +188,7 @@ node scripts/build-loa-reviewer-surface.mjs         # 19 pages
 node scripts/loa-accessibility-audit.mjs            # 21 criteria, drives Chromium
 node scripts/loa-reviewer-workflow.mjs              # 23 engine behaviours
 node scripts/loa-acceptance-report.mjs              # the verdict
-node --test tests/*.test.mjs                        # 1,032 tests
+node --test tests/texas-*.test.mjs                  # 179 Texas tests
 ```
 
 `npm test` runs `npm run build` first and currently fails on a `MODULE_NOT_FOUND` in the build step;

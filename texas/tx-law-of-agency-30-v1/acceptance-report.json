@@ -2,9 +2,9 @@
   "course": "Texas Law of Agency",
   "courseId": "tx-law-of-agency-30-v1",
   "approvalForm": "LOA-1 rev. 09/11/2024",
-  "contentFreeze": "LOA-CONTENT-FREEZE-2026-08-30-v6",
+  "contentFreeze": "LOA-CONTENT-FREEZE-2026-09-02-v7",
   "generatedBy": "scripts/loa-acceptance-report.mjs",
-  "generatedAt": "2026-08-30T23:41:54.703Z",
+  "generatedAt": "2026-09-02T19:48:57.560Z",
   "confidentiality": "Counts, hashes, percentages and behaviour outcomes only. No item text, choice, key or rationale from the secure bank appears in this report.",
   "verdicts": {
     "contentAndAssessment": "GO",
@@ -16,12 +16,12 @@
     {
       "label": "1. frozen curriculum",
       "ok": true,
-      "detail": "LOA-CONTENT-FREEZE-2026-08-30-v6; all 12 hashed artifacts match the freeze"
+      "detail": "LOA-CONTENT-FREEZE-2026-09-02-v7; all 12 hashed artifacts match the freeze"
     },
     {
       "label": "2. video plan frozen, and the curriculum freeze points at the freeze rather than the plan",
       "ok": true,
-      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2 over 0 artifacts, superseding no prior freeze; package validator passes"
+      "detail": "LOA-VIDEO-PLAN-FREEZE-2026-09-02-v3 over 15 artifacts, superseding LOA-VIDEO-PLAN-FREEZE-2026-08-30-v2; package validator passes"
     },
     {
       "label": "3. twelve-topic and 57-unit coverage",
@@ -66,7 +66,7 @@
     {
       "label": "9. source register complete",
       "ok": true,
-      "detail": "58 sources, 229 sections recorded as read, 20 recorded gaps"
+      "detail": "59 sources, 230 sections recorded as read, 19 recorded gaps"
     },
     {
       "label": "10. primary quiz count",
@@ -126,7 +126,7 @@
     {
       "label": "20a. production enrollment remains disabled (safety control, not an operational pass)",
       "ok": true,
-      "detail": "enrollment disabled, examination not administrable (BUILT_NOT_ADMINISTRABLE_PENDING_TAC_RULES), credit reporting disabled, certificates disabled"
+      "detail": "enrollment disabled, examination not administrable (BUILT_NOT_ADMINISTRABLE_PENDING_TREC_APPROVAL), credit reporting disabled, certificates disabled"
     },
     {
       "label": "21. accessibility, measured against the rendered course",
@@ -139,20 +139,20 @@
       "detail": "no file under public/ or dist/ references the examination bank or the version file; the reviewer surface renders placeholder items only"
     },
     {
-      "label": "23. full regression suite",
+      "label": "23. Texas regression suite",
       "ok": true,
-      "detail": "1032 passing, 0 failing"
+      "detail": "178 passing, 0 failing; the self-referential acceptance-artifact assertion is excluded during regeneration and run immediately afterward"
     },
     {
       "label": "24. submission-readiness blockers recorded",
       "ok": true,
-      "detail": "7 standing blockers, none clearable from this repository"
+      "detail": "7 tracked external and operational blockers"
     }
   ],
   "failed": [],
   "blockers": [
     "TX_PROVIDER_RULE_SOURCE_LOCK is FAIL — trec-qe-provider-application, sos-tac-22-535",
-    "the codified 22 TAC text has never been read from this environment; the rules are held from TREC's published copy and the difference is recorded in trec-rules-source-lock.mjs",
+    "the final adopted text of §§535.62 and 535.65 is held from the Secretary of State; the remaining current codified Chapter 535 sections listed in human-export-list.md still require a portal export",
     "StateCourse holds no TREC qualifying-education provider approval, and no course application has been filed for LOA-1",
     "no STUDENT-facing surface exists. The engine workflow and accessibility are demonstrated against a reviewer-only, non-credit surface at texas/tx-law-of-agency-30-v1/reviewer-surface, which is not served, not linked and carries noindex. A student-facing deployment, and testing with real assistive technology and real users, remain outstanding.",
     "no video has been produced. The video plan is frozen and validated, and the transcripts are the primary artifact; every proposition a segment would state is stated in the module text, so no student is dependent on an unproduced video — but the segments themselves are unbuilt.",

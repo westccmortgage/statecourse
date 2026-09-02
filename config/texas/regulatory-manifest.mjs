@@ -38,7 +38,7 @@
  * with that status so that a reader can see it was consulted and see what it was not used for.
  */
 
-export const MANIFEST_VERSION = "TX-MANIFEST-2026-08-30-v4";
+export const MANIFEST_VERSION = "TX-MANIFEST-2026-09-02-v5";
 
 /* How long a reading stays good before the lock demands it be taken again. */
 export const VERIFICATION_MAX_AGE_DAYS = 90;
@@ -78,7 +78,7 @@ export const SOURCES = Object.freeze([
     localCopy: "texas/trec-sources/PRINS1-1.pdf",
     sha256: "1ec0a549dac17854cb7a90308368e8b07a1ced25c9e69d7ef6f4c93a0adaf42c",
     bytes: 1204141,
-    readOn: "2026-08-24",
+    readOn: "2026-09-02",
     status: "current",
     reachability: REACHABILITY.READ,
     precedence: "Course approval form adopted by rule — authority tier 4 of the Texas source hierarchy.",
@@ -113,7 +113,7 @@ export const SOURCES = Object.freeze([
     localCopy: "texas/trec-sources/PRINS2-1.pdf",
     sha256: "732242abd59613a08e631276760b5520747c57fb281c272c0415b2292bbfcc5e",
     bytes: 1233801,
-    readOn: "2026-08-24",
+    readOn: "2026-09-02",
     status: "current",
     reachability: REACHABILITY.READ,
     precedence: "Course approval form adopted by rule.",
@@ -129,7 +129,7 @@ export const SOURCES = Object.freeze([
     localCopy: "texas/trec-sources/LOA-1.pdf",
     sha256: "3fb2206dc9408a80ed7a736d87b43336f8eadf90f75f1540b666640f57344705",
     bytes: 1380818,
-    readOn: "2026-08-24",
+    readOn: "2026-09-02",
     status: "current",
     reachability: REACHABILITY.READ,
     precedence: "Course approval form adopted by rule.",
@@ -236,7 +236,176 @@ export const SOURCES = Object.freeze([
     ],
   }),
 
-  /* ── the provider application: exists, cannot be read from here ── */
+  /* ── current public provider instructions and published checklists ── */
+  source({
+    id: "trec-qe-provider-page-2026-09-02",
+    authority: "Texas Real Estate Commission",
+    title: "Become a Qualifying Education Provider",
+    documentNumber: null,
+    revision: "captured 2026-09-02",
+    url: "https://www.trec.texas.gov/become-licensed/qualifying-education-provider",
+    localCopy: "texas/trec-sources/articles/trec-qe-provider-page-2026-09-02.html",
+    sha256: "1aac968f45ebf59bbe087485fae37ed8c0120c436d9ffca7434b67cf1fd60ab1",
+    bytes: 88643,
+    readOn: "2026-09-02",
+    status: "current_public_instructions",
+    reachability: REACHABILITY.READ,
+    precedence: "Current agency filing instructions and attachment checklist; subordinate to the rules and the application itself.",
+    materialClaims: [
+      { id: "provider-page-financials", claim: "The current page requires GAAP income statement and balance sheet, first-year budget, first-year enrollment market survey, an operating account with sufficient funds, and a reserve account with at least $10,000.", reliedOnBy: ["config/texas/provider-ledger.mjs"] },
+      { id: "provider-page-bond", claim: "The current page requires an original $20,000 bond with raised or original seal, payable to TREC.", reliedOnBy: ["config/texas/provider-ledger.mjs"] },
+      { id: "provider-page-agreement", claim: "The current page lists the required pre-enrollment agreement subjects and says proctoring procedure and fees are included only if applicable.", reliedOnBy: ["texas/submission/pre-enrollment-agreement.md"] },
+      { id: "provider-page-mail-heading", claim: "The current page displays 'Apply by Mail', although its application link redirects to REALM and the current REALM FAQ says provider applications are managed online.", reliedOnBy: ["texas/submission/provider-application/07-filing-channel-control.md"] },
+    ],
+  }),
+  source({
+    id: "trec-qe-provider-checklist-2023-04-10",
+    authority: "Texas Real Estate Commission",
+    title: "QE Provider Application Checklist — Initial",
+    documentNumber: null,
+    revision: "04/10/2023",
+    url: "https://www.trec.texas.gov/sites/default/files/QE%20Provider%20-%20Initial%20Provider%20Application%20Checklist%2004.10.23.pdf",
+    localCopy: "texas/trec-sources/forms/QE-provider-initial-checklist-2023-04-10.pdf",
+    sha256: "a6aaf9e5c7c23a107f46d1c8513c6306411be7fd13beb29f0e709046b02873d7",
+    bytes: 989812,
+    readOn: "2026-09-02",
+    status: "published_checklist_older_than_current_application",
+    reachability: REACHABILITY.READ,
+    precedence: "Agency checklist still linked from the current provider page; use for packet completeness, but resolve any conflict in favor of newer rules and the effective 09/03/2025 application.",
+    materialClaims: [
+      { id: "provider-checklist-foreign-llc", claim: "The checklist asks an out-of-state corporation or LLC for a Certificate of Fact and asks an out-of-state applicant for a notarized Power of Attorney.", reliedOnBy: ["texas/submission/provider-application/04-foreign-registration-runbook.md"] },
+      { id: "provider-checklist-signatures", claim: "The certification requires owner and Operations Manager names and signatures.", reliedOnBy: ["texas/submission/provider-application/06-filing-ready-checklist.md"] },
+    ],
+  }),
+  source({
+    id: "trec-qe-distance-checklist-2023-04-10",
+    authority: "Texas Real Estate Commission",
+    title: "Qualifying Real Estate DE Course Application Checklist",
+    documentNumber: null,
+    revision: "04/10/2023",
+    url: "https://www.trec.texas.gov/sites/default/files/QE%20Provider%20-%20QE%20RE%20DE%20Course%20Application%20Checklist%2004.10.23.pdf",
+    localCopy: "texas/trec-sources/forms/QE-distance-course-checklist-2023-04-10.pdf",
+    sha256: "259a3770dbe6bb6e5b68516894ea5e7575666f476a0eba33b8e59a6c10c2ccb3",
+    bytes: 1017642,
+    readOn: "2026-09-02",
+    status: "published_checklist_partly_superseded",
+    reachability: REACHABILITY.READ,
+    precedence: "Agency checklist still linked from the current course page. Its 10-minute inactivity line remains useful as conservative provider design; its proctored/closed-book lines were superseded by the 2025 adopted rule removing those blanket requirements.",
+    materialClaims: [
+      { id: "distance-checklist-inactivity", claim: "The published checklist says to log the student out or stop the course timer after 10 minutes of inactivity.", reliedOnBy: ["texas/submission/distance-delivery-controls.md"] },
+      { id: "distance-checklist-course-package", claim: "The checklist calls for access instructions, exact topic pages/timestamps, instructor manual, at least 1,500 minutes, topic quizzes, scenarios, four 60-item forms from a 120-item bank, identity controls, evaluation, completion record and instructor interaction.", reliedOnBy: ["texas/submission/provider-application/00-package-index.md"] },
+    ],
+    conflicts: [
+      { id: "distance-checklist-proctoring-superseded", question: "The 2023 checklist says final exams are proctored and closed-book.", resolution: "SUPERSEDED for blanket application by the 2025 adopted amendments to §535.65, effective 3 September 2025, which removed the general proctoring and closed-book requirements while retaining identity assurance and approved exam administration." },
+    ],
+  }),
+  source({
+    id: "trec-qe-course-page-2026-09-02",
+    authority: "Texas Real Estate Commission",
+    title: "Apply to Offer Real Estate QE Courses",
+    revision: "captured 2026-09-02",
+    url: "https://www.trec.texas.gov/apply-offer-real-estate-qe-courses",
+    localCopy: "texas/trec-sources/articles/trec-qe-course-page-2026-09-02.html",
+    sha256: "cae787de83ec8fdd43771264b664a2df77085d611be04f17dfec4d5e5bc67abe",
+    bytes: 70121,
+    readOn: "2026-09-02",
+    status: "current_public_instructions",
+    reachability: REACHABILITY.READ,
+    precedence: "Current agency course-submission instructions.",
+    materialClaims: [{ id: "separate-course-applications", claim: "An approved QE provider submits a separate application for each proposed course and may not offer a course before receiving its approval letter.", reliedOnBy: ["texas/submission/provider-application/00-package-index.md"] }],
+  }),
+  source({
+    id: "trec-licensing-forms-2026-09-02",
+    authority: "Texas Real Estate Commission",
+    title: "Licensing Forms",
+    revision: "captured 2026-09-02",
+    url: "https://www.trec.texas.gov/licensing-forms",
+    localCopy: "texas/trec-sources/articles/trec-licensing-forms-page-2026-09-02.html",
+    sha256: "c06c0bd65869fa8164a848f70e32b7d8d2fa5a7455498529ac2ab39e5dff55fd",
+    bytes: 263560,
+    readOn: "2026-09-02",
+    status: "current_forms_index",
+    reachability: REACHABILITY.READ,
+    precedence: "Current agency forms index.",
+    materialClaims: [{ id: "provider-form-effective-date", claim: "The Qualifying Education Provider Initial Application is listed with effective date 09/03/2025.", reliedOnBy: ["texas/submission/provider-application/07-filing-channel-control.md"] }],
+  }),
+  source({
+    id: "trec-realm-faq-2026-09-02",
+    authority: "Texas Real Estate Commission",
+    title: "REALM Portal Updates and FAQs",
+    revision: "captured 2026-09-02",
+    url: "https://www.trec.texas.gov/node/2799",
+    localCopy: "texas/trec-sources/articles/trec-realm-faq-2026-09-02.html",
+    sha256: "e017d8707dbab3325838a4908fd22ce5b1311654b64b4aa3bf4577dae14e4219",
+    bytes: 91102,
+    readOn: "2026-09-02",
+    status: "current_public_guidance",
+    reachability: REACHABILITY.READ,
+    precedence: "Current agency portal guidance; it does not override a rule or application field.",
+    materialClaims: [{ id: "provider-applications-online", claim: "TREC says provider and course applications are processed and managed online, supporting documents are uploaded in REALM, and a 3% Texas Online Fee applies to provider and course applications beginning 15 December 2025.", reliedOnBy: ["texas/submission/provider-application/07-filing-channel-control.md", "FEES"] }],
+  }),
+  source({
+    id: "tx-sos-foreign-llc-2026-09-02",
+    authority: "Texas Secretary of State",
+    title: "Form 304 instructions — Application for Registration of a Foreign Limited Liability Company",
+    revision: "captured 2026-09-02",
+    url: "https://www.sos.state.tx.us/corp/instructions/304.shtml",
+    localCopy: "texas/trec-sources/articles/tx-sos-form-304-instructions-2026-09-02.html",
+    sha256: "170652b6a2cefd7775666d5e05dd9dcd726f74852c2fd8c8f6697b81f2a4187b",
+    bytes: 33225,
+    readOn: "2026-09-02",
+    status: "current_public_instructions",
+    reachability: REACHABILITY.READ,
+    precedence: "Official entity-registration instructions.",
+    materialClaims: [{ id: "form-304-fee-agent", claim: "A foreign LLC files Form 304 for $750 and appoints a consenting registered agent with a Texas street address; card payments carry a 2.7% convenience fee.", reliedOnBy: ["texas/submission/provider-application/04-foreign-registration-runbook.md"] }],
+  }),
+  source({
+    id: "tx-sos-certificate-of-fact-2026-09-02",
+    authority: "Texas Secretary of State",
+    title: "Copies and Certificates — Certificate of Fact, Status",
+    revision: "captured 2026-09-02",
+    url: "https://www.sos.state.tx.us/corp/instructions-for-copies.shtml",
+    localCopy: "texas/trec-sources/articles/tx-sos-certificate-of-fact-instructions-2026-09-02.html",
+    sha256: "10008a24663c997ecd0106fab9cf35d1ce8af96922eb137a809b93d4d46a231c",
+    bytes: 27372,
+    readOn: "2026-09-02",
+    status: "current_public_instructions",
+    reachability: REACHABILITY.READ,
+    precedence: "Official certificate-ordering instructions.",
+    materialClaims: [{ id: "certificate-of-fact-fee", claim: "A Certificate of Fact — Status is official evidence of existence or authority to transact business in Texas and costs $15.", reliedOnBy: ["texas/submission/provider-application/04-foreign-registration-runbook.md"] }],
+  }),
+  source({
+    id: "trec-provider-pass-rates-page-2026-09-02",
+    authority: "Texas Real Estate Commission",
+    title: "Provider Exam Passage Rates for Sales Agents and Brokers",
+    revision: "captured 2026-09-02",
+    url: "https://www.trec.texas.gov/education/education-provider-exam-passage-rates-sales-agents-and-brokers",
+    localCopy: "texas/trec-sources/articles/trec-provider-exam-passage-rates-2026-09-02.html",
+    sha256: "242c8020aa7372cfc415e370a21d2b052118d59c6aadef604da4170c35794b2f",
+    bytes: 153691,
+    readOn: "2026-09-02",
+    status: "current_public_page_at_capture",
+    reachability: REACHABILITY.READ,
+    precedence: "Official TREC display page for the separately captured performance dataset.",
+    materialClaims: [],
+  }),
+  source({
+    id: "trec-provider-pass-rates-2026-09-02",
+    authority: "Texas Real Estate Commission",
+    title: "Provider Exam Passage Rates for Sales Agents and Brokers — data",
+    revision: "12/1/2023 through 11/30/2025; captured 2026-09-02",
+    url: "https://www.trec.texas.gov/sites/default/files/json/PassRatesRei.json",
+    localCopy: "texas/trec-sources/articles/trec-provider-exam-passage-rates-data-2026-09-02.json",
+    sha256: "a6280d059945426dee0318ea44a1e6a13021492bfc0d2d8362f83bbd740465cf",
+    bytes: 8708,
+    readOn: "2026-09-02",
+    status: "current_dataset_at_capture",
+    reachability: REACHABILITY.READ,
+    precedence: "Official TREC performance dataset; used as a market proxy, not as an enrollment count.",
+    materialClaims: [{ id: "market-exam-count", claim: "The dataset reports 29,980 sales-agent first-attempt examinations attributed to providers during the two-year reporting window.", reliedOnBy: ["texas/submission/provider-application/09-first-year-market-survey.md"] }],
+  }),
+
+  /* ── the provider application: current route is login-gated and the filing channel conflicts ── */
   source({
     id: "trec-qe-provider-application",
     authority: "Texas Real Estate Commission",
@@ -252,9 +421,9 @@ export const SOURCES = Object.freeze([
     precedence: "Current TREC application — authority tier 5.",
     materialClaims: [
       {
-        id: "provider-application-is-online",
+        id: "provider-application-channel-conflict",
         claim:
-          "The link TREC publishes for the Qualifying Education Provider Application does not serve a PDF. It redirects to TREC's Accela portal login (/TREC/Login.aspx and /TREC/CommunityView/account/new). The application is filed online, in an account.",
+          "TREC's current provider page says 'Apply by Mail', while the published Qualifying Education Provider Application link redirects to the REALM login and TREC's current REALM FAQ says provider and course applications are processed and managed online. The exact filing channel must be confirmed before dispatch.",
         reliedOnBy: ["conflict:apply-by-mail", "deliverable:tx-realm-account"],
       },
     ],
@@ -263,7 +432,7 @@ export const SOURCES = Object.freeze([
         id: "application-field-list-unknown",
         question: "The application's own field list, attachment list and fee calculation cannot be read without a REALM account.",
         resolution:
-          "OPEN — HUMAN. The ledger in config/texas/provider-ledger.mjs is therefore built from the rules and the fee schedule and is explicitly marked incomplete against the application itself.",
+          "OPEN — HUMAN AT FILING. The repository now holds TREC's current provider page, forms listing and 2023 provider checklist; the exact 2025 application fields remain behind REALM login and the mail/online conflict must be resolved in the portal or with TREC before dispatch.",
       },
     ],
   }),
@@ -280,7 +449,7 @@ export const SOURCES = Object.freeze([
     localCopy: null,
     sha256: null,
     readOn: null,
-    attemptedOn: "2026-08-24",
+    attemptedOn: "2026-09-02",
     status: "current",
     reachability: REACHABILITY.UNREACHABLE_JS_ONLY,
     precedence: "TIER 1 — the highest authority in the Texas source hierarchy, and it could not be opened.",
@@ -289,9 +458,9 @@ export const SOURCES = Object.freeze([
       {
         id: "tac-unreachable",
         question:
-          "§§ 535.55, 535.60 to 535.67 and 535.101 could not be read. The legacy Secretary of State rule reader returns a 'This Site Has Moved' page for every rule; the replacement is an Appian single-page application that serves only a JavaScript shell to a non-browser client; and headless Chromium cannot reach any host from this environment.",
+          "The live codified text of §§535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 and 535.101 could not be read. The replacement Secretary of State TAC service exposes a JavaScript application rather than a stable section export. Final adopted text of §§535.62 and 535.65 is separately held from the Texas Register.",
         resolution:
-          "LOCK FAILURE for the CODIFIED CURRENT TEXT, which remains unread. The proposed text of §§ 535.62 and 535.65 was afterwards obtained from the Secretary of State's Texas Register of 22 May 2026 and is held; the adoption notice publishes 28 August 2026. What is still missing is the codified text of §§ 535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 and 535.101. Retrieval is a HUMAN item — see texas/submission/human-export-list.md.",
+          "LOCK FAILURE for the remaining CODIFIED CURRENT TEXT. Final adopted text of §§535.62 and 535.65 is held from the Secretary of State's 28 August 2026 Texas Register. What is still missing from the live TAC is §§535.55, 535.60, 535.61, 535.63, 535.64, 535.66, 535.67 and 535.101. Retrieval is a HUMAN item — see texas/submission/human-export-list.md.",
       },
     ],
   }),
@@ -450,7 +619,7 @@ export const SOURCES = Object.freeze([
     ],
   }),
 
-  /* ── searched and not found ── */
+  /* ── Texas Register publication history ── */
   source({
     id: "sos-texas-register-2026",
     authority: "Texas Secretary of State",
@@ -460,7 +629,7 @@ export const SOURCES = Object.freeze([
     url: "https://www.sos.texas.gov/texreg/pdf/backview/",
     localCopy: null,
     sha256: null,
-    readOn: "2026-08-24",
+    readOn: "2026-09-02",
     status: "current",
     reachability: REACHABILITY.READ,
     precedence: "TIER 3 — final adopted rules and orders published by the Secretary of State. Reachable as static PDFs and HTML, unlike the TAC itself.",
@@ -468,7 +637,7 @@ export const SOURCES = Object.freeze([
       {
         id: "register-scan-window",
         claim:
-          "The 2026 Texas Register adopted-rules sections are reachable as static PDFs and HTML. Issues through 21 August 2026 were scanned; the 28 August 2026 issue returns 403 and is not yet published.",
+          "The 2026 Texas Register adopted-rules sections are reachable as static HTML. The 28 August 2026 issue is held and republishes the final adopted text of §§535.62 and 535.65.",
         reliedOnBy: ["conflict:august-2026-amendments"],
       },
     ],
@@ -478,12 +647,12 @@ export const SOURCES = Object.freeze([
         question:
           "The TX-0 report concluded that no adopted amendment to § 535.62 or § 535.65 appears in the Secretary of State's 2026 publication.",
         resolution:
-          "CORRECTED 2026-08-27. The conclusion was wrong. Both were adopted 10 August 2026, effective 31 August 2026, and TREC's own rule records carry the dates and the Secretary of State record ids. An adoption filed on 10 August publishes in the Register about three weeks later — the 28 August issue, which returns 403 because it is not yet published. The scan was accurate about what it covered and the CONCLUSION drawn from it was too strong: 'not found in the issues I read' was reported as 'does not appear'.",
+          "CLOSED 2026-09-02. Both were adopted 10 August 2026, effective 31 August 2026, and the final text is held from the Secretary of State's 28 August issue. The earlier scan was accurate about what it covered and the conclusion drawn from it was too strong.",
       },
     ],
   }),
 
-  /* ── the two 2026 amendments: adopted, not yet effective ── */
+  /* ── the two 2026 amendments: adopted and effective ── */
   source({
     id: "trec-rule-535-62",
     authority: "Texas Real Estate Commission (rule record); Texas Secretary of State (controlling text)",
@@ -496,15 +665,14 @@ export const SOURCES = Object.freeze([
     url: "https://www.trec.texas.gov/22-tac-%C2%A753562-approval-qualifying-courses",
     sosRecordUrl: "https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TEXAS_REGISTER_SUMMARY&recordId=465426",
     sosRecordId: "465426",
-    localCopy: null,
-    sha256: null,
-    readOn: "2026-08-27",
-    /* Today is 2026-08-27. The amendment is adopted and takes effect in four days. It is neither
-       "current" nor "not found", and calling it either would be wrong in a different direction. */
-    status: "adopted_pending_effective",
+    localCopy: "texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html",
+    sha256: "2a1d3fa727f592ce4f5066d322f446484528c3aaf36e7e2cc464abccddb74ace",
+    bytes: 200345,
+    readOn: "2026-09-02",
+    status: "current_effective",
     reachability: REACHABILITY.READ,
     precedence:
-      "The dates and the record id come from TREC's own rule record. The CONTROLLING TEXT is the Secretary of State's, which is not reachable from here — so the amendment's dates are recorded and its text is not.",
+      "The dates and record id come from TREC's rule record; the final adopted text is held from the Secretary of State's 28 August 2026 Texas Register and is effective 31 August 2026.",
     materialClaims: [
       {
         id: "535-62-adoption-dates",
@@ -531,12 +699,13 @@ export const SOURCES = Object.freeze([
     url: "https://www.trec.texas.gov/22-tac-%C2%A753565-responsibilities-and-operations-providers-qualifying-courses",
     sosRecordUrl: "https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TEXAS_REGISTER_SUMMARY&recordId=465427",
     sosRecordId: "465427",
-    localCopy: null,
-    sha256: null,
-    readOn: "2026-08-27",
-    status: "adopted_pending_effective",
+    localCopy: "texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html",
+    sha256: "2a1d3fa727f592ce4f5066d322f446484528c3aaf36e7e2cc464abccddb74ace",
+    bytes: 200345,
+    readOn: "2026-09-02",
+    status: "current_effective",
     reachability: REACHABILITY.READ,
-    precedence: "Dates from TREC's rule record; controlling text is the Secretary of State's and is not reachable from here.",
+    precedence: "Dates from TREC's rule record; final adopted text held from the Secretary of State's 28 August 2026 Texas Register.",
     materialClaims: [
       {
         id: "535-65-adoption-dates",
@@ -556,7 +725,7 @@ export const SOURCES = Object.freeze([
         question:
           "TREC's § 535.65 rule record renders a field reading 'Rule Withdrawn: 1'. The § 535.62 record renders no such field. A rule cannot be both adopted with an effective date and withdrawn, so the flag means something else — a withdrawn earlier proposal, or a display artefact of the agency's content system.",
         resolution:
-          "UNRESOLVED. The dates are recorded as TREC states them and the flag is recorded as an open question to be settled against the Secretary of State record 465427. Nothing in this build depends on the answer.",
+          "CLOSED 2026-09-02. The Secretary of State's final adoption republishes §535.65 in full under TRD-202602955, effective 31 August 2026. The old page flag does not alter the adopted rule.",
       },
     ],
   }),
@@ -577,7 +746,7 @@ export const SOURCES = Object.freeze([
     status: "proposed_text_as_published",
     reachability: REACHABILITY.READ,
     precedence:
-      "TIER 3 — the Secretary of State's own publication, and the highest-ranked Texas source this project has actually opened. It carries the PROPOSED text of §§ 535.62 and 535.65 in full, not the adopted text; the adoption notice publishes in the issue of 28 August 2026, which returns 403 because it is not yet published.",
+      "TIER 3 historical rulemaking record. It carries the proposed text; the final adopted text is now held separately from the 28 August 2026 issue.",
     materialClaims: [
       {
         id: "535-65-a-4-attorney-in-fact",
@@ -614,8 +783,48 @@ export const SOURCES = Object.freeze([
         id: "proposed-not-adopted-text",
         question: "The text held is the text AS PROPOSED. Adopted text can differ from proposed text.",
         resolution:
-          "OPEN and dated. The adoption notice publishes 28 August 2026. Until it is read, every claim above is labelled 'as proposed' in the record itself and nothing states it as the codified current rule.",
+          "CLOSED 2026-09-02. The final adoption is held below and confirms the proposal with only non-substantive reference-language changes to §535.62(b)(6)(C) and §535.65(g)(5).",
       },
+    ],
+  }),
+
+  source({
+    id: "sos-texas-register-2025-08-29-proctoring-removal",
+    authority: "Texas Secretary of State",
+    title: "Texas Register, 29 August 2025 — adopted amendments removing blanket QE exam proctoring and closed-book requirements",
+    documentNumber: "TRD-202502890",
+    revision: "issue of 29 August 2025",
+    effectiveDate: "2025-09-03",
+    url: "https://www.sos.state.tx.us/texreg/archive/August292025/Adopted%20Rules/22.EXAMINING%20BOARDS.html",
+    localCopy: null,
+    sha256: null,
+    readOn: "2026-09-02",
+    status: "final_adopted_effective_official_page_403_to_direct_capture",
+    reachability: REACHABILITY.READ,
+    precedence: "TIER 3 — final Texas Register adoption; official page was read through the indexed official-source record but refused direct archival capture with HTTP 403.",
+    materialClaims: [
+      { id: "qe-proctoring-removed", claim: "The amendments to §535.65 removed the general requirement for a qualifying-course examination to be proctored and, as a result, closed-book examinations are no longer required; identity assurance remains required.", reliedOnBy: ["texas/submission/pre-enrollment-agreement.md", "texas/submission/distance-delivery-controls.md"] },
+    ],
+  }),
+
+  source({
+    id: "sos-texas-register-2026-08-28-adopted",
+    authority: "Texas Secretary of State",
+    title: "Texas Register, 28 August 2026 — Title 22 Examining Boards, Adopted Rules",
+    documentNumber: "TRD-202602955",
+    revision: "issue of 28 August 2026",
+    effectiveDate: "2026-08-31",
+    url: "https://www.sos.state.tx.us/texreg/archive/August282026/Adopted%20Rules/22.EXAMINING%20BOARDS.html",
+    localCopy: "texas/trec-sources/texas-register/2026-08-28-title22-adopted-rules.html",
+    sha256: "2a1d3fa727f592ce4f5066d322f446484528c3aaf36e7e2cc464abccddb74ace",
+    bytes: 200345,
+    readOn: "2026-09-02",
+    status: "final_adopted_effective",
+    reachability: REACHABILITY.READ,
+    precedence: "TIER 3 — the Secretary of State's final adopted publication, republishing §§535.62 and 535.65 in full.",
+    materialClaims: [
+      { id: "2026-adoption-scope", claim: "TREC adopted amendments to §§535.62 and 535.65 with only non-substantive reference-language changes to §535.62(b)(6)(C) and §535.65(g)(5); effective 31 August 2026.", reliedOnBy: ["config/texas/trec-rules-source-lock.mjs", "gate:TX_PROVIDER_RULE_SOURCE_LOCK"] },
+      { id: "2026-completion-record-final", claim: "Final §535.65(j) requires submission of course completion records through a Commission-acceptable process no sooner than the number of course credit hours has passed and no later than ten calendar days after completion; for courses completed on or after 1 October 2026 the record includes the student's licence number or application number.", reliedOnBy: ["deliverable:tx-completion-record", "texas/submission/distance-delivery-controls.md"] },
     ],
   }),
 
@@ -1607,9 +1816,9 @@ export const PROVIDER_TERM = Object.freeze({
   renewalWindowDays: null,
   renewalWindowStatus: "UNVERIFIED — 22 TAC unreachable.",
   bondAmount: 20000,
-  bondAmountStatus: "VERIFIED as proposed text — the Texas Register of 22 May 2026 states a $20,000 surety bond among the financial documents § 535.61 requires. The codified current text has still not been read.",
+  bondAmountStatus: "VERIFIED on TREC's current provider page and published provider checklist: original $20,000 bond with original or raised seal, payable to TREC.",
   reserveAmount: 10000,
-  reserveAmountStatus: "UNVERIFIED — same.",
+  reserveAmountStatus: "VERIFIED on TREC's current provider page and published provider checklist: reserve account with at least $10,000.",
 });
 
 /* ── three locks, split by PURPOSE ────────────────────────────────────────────────────────────
@@ -1624,7 +1833,7 @@ export const PROVIDER_TERM = Object.freeze({
  */
 
 /** Provider, course, instructor, fee, bond, reserve, Texas presence, completion reporting. */
-const PROVIDER_RULE_SOURCE_IDS = ["sos-tac-22-535", "trec-qe-provider-application", "trec-fee-schedule", "trec-rule-535-62", "trec-rule-535-65", "sos-texas-register-2026-05-22"];
+const PROVIDER_RULE_SOURCE_IDS = ["sos-tac-22-535", "trec-qe-provider-application", "trec-fee-schedule", "trec-rule-535-62", "trec-rule-535-65", "sos-texas-register-2026-08-28-adopted", "trec-qe-provider-page-2026-09-02", "trec-qe-provider-checklist-2023-04-10"];
 
 /** PRINS1-1 and the substantive law Principles I is taught from. */
 const PRINCIPLES_I_SOURCE_IDS = ["trec-prins1-1"];
