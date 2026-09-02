@@ -304,14 +304,14 @@ export const EXEMPTIONS = Object.freeze([
    Kept here, next to the requirements, rather than in a document that gets read once. Each is a
    written question for FREC and none may be treated as settled by any downstream consumer. */
 export const OPEN_QUESTIONS = Object.freeze([
-  /* The examination questions live in assessment-architecture.mjs as OPEN_DBPR_QUESTIONS, together
-     with the readings and the drafted letter. Referenced rather than restated so there is one
-     place to answer them. */
+  /* The examination questions live in assessment-architecture.mjs as OPEN_DBPR_QUESTIONS. Its
+     DRAFT_QUESTION_TO_DBPR export is a historical combined transmission record, not a resendable
+     current-route letter. Referenced rather than restated so there is one place to answer them. */
   Object.freeze({
     id: "see-assessment-architecture",
-    question: "The live school, instructor, item-count, location, asynchronous-delivery, reporting, form-identity and review-cycle questions are carried in config/florida/assessment-architecture.mjs.",
+    question: "The still-open school, item-count, location, asynchronous-delivery, reporting, form-identity and review-cycle questions, plus the unselected instructor-exam fallback question, are carried in config/florida/assessment-architecture.mjs.",
     cite: "Rule 61J2-3.008(4)(d), F.A.C.; current Education-page-linked DBPR RE 18",
-    plannedPending: "see OPEN_DBPR_QUESTIONS and DRAFT_QUESTION_TO_DBPR",
+    plannedPending: "see OPEN_DBPR_QUESTIONS; use DRAFT_QUESTION_TO_DBPR only as a historical transmission record",
   }),
   Object.freeze({
     id: "absence-in-a-distance-course",

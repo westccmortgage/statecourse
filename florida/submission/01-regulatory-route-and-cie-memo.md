@@ -1,43 +1,86 @@
-# Florida regulatory route and CIE boundary memo
+# Florida broker-first regulatory route and CIE boundary memo
 
-## Conclusion
+## Selected route
 
-StateCourse must proceed as a DBPR-permitted proprietary real estate school under section 475.451, Florida Statutes, using a permitted instructor and a separately approved Course I. The available owner route is to apply through DBPR RE 3 transaction 1010, complete Livescan after filing, receive exam authorization, personally pass the Pearson-administered instructor examination, obtain the instructor permit, obtain the school permit on RE 5, add/activate the instructor on RE 6, and only then submit the complete course on the current RE 18.
+The owner selected a route under which Anatoliy Kanevsky personally becomes a Florida real estate broker. The controlling sequence is:
 
-The statutory and current-form route is real, but operational acceptance is not promised. Section 475.451(2)(a) allows a broker-license route or the Commission-approved instructor-examination route, and current RE 5 accepts a Florida instructor permit number. Rule 61J2-17.011(2) contains an inconsistent cross-reference and wording. Written confirmation is therefore requested before the owner incurs avoidable fingerprint/exam costs.
+1. receive and inspect California DRE RE 293 certified license history;
+2. attach current official California statutes/rules defining the broker license's scope;
+3. file DBPR RE 2 **Broker License by Endorsement `[2501/1047]`** and then complete fingerprints;
+4. obtain DBPR/FREC's substantial-equivalence/sufficiency determination and exam authorization;
+5. inspect the DBPR authorization notice, then pass the assigned examination (expected: Florida Real Estate Laws and Rules);
+6. verify the issued Florida broker license and status;
+7. file RE 3 **Specific Degree & Broker's License `[1030]`** with DBPR-accepted certified Finance degree evidence;
+8. file RE 5 using the Florida broker basis, RE 6 to register the instructor, and current RE 18 for Course I.
 
-## Commission for Independent Education
+Nothing has been filed with Florida, and no license, permit, equivalency finding or course approval is claimed. The owner reports submitting RE 293 to California DRE on 2026-09-01; the issued history is not held. User/repository facts indicate an active California broker license since 2009, so the five-year duration threshold appears satisfied, but the certified record and DBPR decision control.
 
-Section 1005.06(1)(b), Florida Statutes, exempts an institution when another Florida agency licenses or approves the institution's establishment and operation. The 2026 text expressly says approval of only a program or course is insufficient.
+## Why endorsement `[2501/1047]` is selected
 
-Filing position:
+DBPR's live **Broker Initial Application Endorsement** checklist requires proof that the applicant held a current and valid broker license for at least five years in another U.S. jurisdiction and that the license is active now or was active within the last two years. It requires a current certified history, Pearson examination and fingerprints after application. RE 2 also directs an endorsement applicant to attach statutes/rules defining the current license's scope.
 
-- a DBPR **school permit** under section 475.451 is expected to be the institution-level approval supporting the CIE exemption;
-- RE 18 **course approval alone is insufficient**;
-- StateCourse must retain and verify the RE 5 school permit before relying on the exemption;
-- the package does not claim a blanket exemption before the school permit exists.
+The live endorsement checklist and RE 2's page-one endorsement-specific checklist do **not** list the 72-hour Florida broker pre-license course; the live checklist links the Florida Real Estate Law Candidate Information Booklet. RE 2's later generic instructions, however, say every broker applicant must complete the 72-hour course and pass the broker exam. The official form is internally inconsistent as applied to endorsement, and the linked CIB describes nonresident licensure under section 475.180 without expressly naming transaction `[1047]`. Accordingly:
 
-## Foreign entity, name and location
+- selected transaction: endorsement `[2501/1047]`;
+- expected examination, subject to the authorization notice or written DBPR confirmation: Florida Real Estate Laws and Rules, 40 questions, 90 minutes, pass 30/40 (75);
+- no 72-hour certificate is submitted or purchased preemptively, but DBPR's written transaction-specific direction controls the unresolved generic-instruction conflict;
+- current Pearson fee remains live/uncertain;
+- Larson's currently advertised $99 endorsement-prep course is optional, carries zero DBPR credit hours and is not a licensing prerequisite.
 
-DBPR's course registry contains approved distance schools with non-Florida addresses, so a Florida physical classroom is not categorically required. That does not decide StateCourse's facts. Before RE 5, the owner and counsel must decide whether StateCourse LLC must foreign-qualify in Florida, appoint a registered agent, and register any fictitious school name. Current out-of-state comparator schools are foreign-qualified in Sunbiz; this is practical evidence, not a legal holding about StateCourse.
+California is not a mutual-recognition state, but that does not defeat the separate 2026 endorsement transaction. Mutual Recognition `[1013]` is not selected.
 
-Conservative business gate:
+## Substantial equivalence and statutory review
 
-1. decide whether to foreign-qualify StateCourse LLC before RE 5;
-2. if yes, budget the current $125 base LLC foreign-registration charge, excluding optional copies/status and registered-agent service;
-3. decide whether the filing/public name is `StateCourse LLC` or a registered fictitious name;
-4. obtain DBPR confirmation that the chosen California physical address may be the sole distance-school location and whether RE 9 is unnecessary.
+The five-year threshold does not compel approval. DBPR/FREC determines whether the California basis license is substantially equivalent or otherwise sufficient. The filing packet therefore includes a current certified history and current official California scope provisions, indexed in `06-california-broker-scope-appendix.md`.
 
-No guessed address or DBA is placed in a perjury-signed form.
+Section 455.213(15), Florida Statutes, requires a finding on substantial equivalence/sufficiency before an endorsement denial. If DBPR/FREC finds the basis license not substantially equivalent or otherwise insufficient and there is no other denial ground, the applicant has **seven business days after notice** to request secretary review. The secretary has seven business days after receiving the request; if the secretary disagrees, the application must be approved unless another denial ground exists. This is a short review right, not a guarantee.
 
-## Approval and launch boundary
+## Certified-history timing
 
-Course materials may be developed now. They may not be offered for Florida credit until the school permit and course approval are issued and the instructor is properly registered with the school. The current Rule 61J2-17.015 anti-recruiting notice is implemented as a launch gate but must be rechecked if launch occurs after its December 31, 2026 sunset date.
+The live endorsement checklist says the history must be `current`; it does not state a number of days. The held broker requirements material applies a not-over-30-days rule to out-of-state history. The filing plan therefore uses **30 days as a conservative document-age control** but does not attribute that numerical requirement to the live endorsement checklist. A stale or incomplete RE 293 is replaced, not rationalized.
+
+## Florida broker license status
+
+Section 475.451(2)(a) and RE 5 expressly permit a school permitholder to hold a Florida broker license that is active or voluntarily inactive. RE 3 `[1030]`, however, says `valid broker's license in this state` without expressly resolving status. The package does not import RE 5's status language into RE 3. DBPR confirmation or the correct activation transaction is required before RE 3 relies on inactive status.
+
+## Instructor route `[1030]`
+
+Section 475.451(2)(b)1.a. covers a person holding a bachelor's degree in a business-related subject such as finance, or equivalent, plus a valid Florida broker license. RE 3 administers it as **Specific Degree & Broker's License `[1030]`**.
+
+The Finance and Credit degree is facially related to `finance`, but DBPR decides whether the foreign institution, degree and evidence qualify. RE 3 asks for a certified official transcript to determine equivalency. Current real-estate materials do not publish a definitive foreign-evaluator list, evaluation type, translation standard or direct-delivery protocol. Obtain DBPR direction before purchasing a particular evaluation.
+
+If DBPR accepts the Florida broker license and degree evidence under `[1030]`, Anatoliy does not take a separate instructor examination. RE 3 `[1010]` remains a lawful but unselected fallback and cannot silently replace `[1030]` after a deficiency.
+
+## Explicit fallback, not current work
+
+If endorsement `[1047]` is finally denied after any timely section 455.213(15) review, the owner may deliberately select RE 2 **Out of State Experience `[2501/1012]`**. That route generally requires the 72-hour Florida broker pre-license course from an approved school—the Finance degree is not a four-year-or-higher real-estate-degree exemption—and the full 100-question, 3.5-hour Florida broker examination. It is not the selected route and should not be purchased or scheduled now.
+
+## School, course and CIE boundary
+
+StateCourse proceeds as a DBPR-permitted proprietary real estate school under section 475.451, using a permitted instructor and separately approved Course I. RE 5 will use Anatoliy's issued Florida broker license as the school-permitholder qualification. Because he intends to teach, the instructor permit and RE 6 registration must exist before instruction.
+
+Course materials may be developed now but not offered for Florida credit until school permit, instructor relationship, course approval and production/reporting gates are proven.
+
+Section 1005.06(1)(b), Florida Statutes, exempts an institution when another Florida agency licenses or approves the institution's establishment and operation; course-only approval is insufficient. Filing position:
+
+- the RE 5 school permit is expected to be the institution-level basis;
+- RE 18 course approval alone is insufficient;
+- no blanket CIE exemption is claimed before RE 5 issues.
+
+The conservative entity path remains Florida foreign qualification before RE 5, pending the online-only location/entity answer. This does not block personal RE 2 endorsement.
 
 ## Official source anchors
 
+- [DBPR endorsement checklist `[2501/1047]`](https://www.myfloridalicense.com/CheckListDetail.asp?XACT_DEFN_ID=19229&clientCode=2501&xactCode=1047)
+- [DBPR RE 2](https://www2.myfloridalicense.com/re/documents/DBPR_RE_2_Broker_Application.pdf)
+- [Section 455.213(15), Florida Statutes](https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0455/Sections/0455.213.html)
+- [Section 455.2135, Florida Statutes](https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0455/Sections/0455.2135.html)
+- [Florida Real Estate Law Candidate Information Booklet](https://www2.myfloridalicense.com/servop/testing/documents/RE_law_cibs.pdf)
+- [California DRE RE 293](https://www.dre.ca.gov/files/pdf/forms/re293.pdf)
+- [California DRE 2026 Real Estate Law](https://www.dre.ca.gov/Publications/RealEstateLaw.html)
+- [California DRE 2026 statutes PDF](https://www.dre.ca.gov/files/pdf/relaw/relaw.pdf) and [regulations PDF](https://www.dre.ca.gov/files/pdf/relaw/regs.pdf)
 - [Section 475.451, Florida Statutes](https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0475/Sections/0475.451.html)
+- [DBPR RE 3 `[1030]` checklist](https://www.myfloridalicense.com/CheckListDetail.asp?SID=&XACT_DEFN_ID=303&clientCode=2505&xactCode=1030)
+- [DBPR RE 3](https://www2.myfloridalicense.com/re/documents/DBPR_RE_3_Instructor_Permit.pdf), [RE 5](https://www2.myfloridalicense.com/re/documents/DBPR_RE_5_School_Permit.pdf), [RE 6](https://www2.myfloridalicense.com/re/documents/DBPR_RE_6_School_Change_of_Status_Transactions.pdf), and [current RE 18](https://www2.myfloridalicense.com/re/documents/DBPR_RE_-_FREC_18_Education_Course_Approval_Application.pdf)
 - [Section 1005.06, Florida Statutes](https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=1000-1099/1005/Sections/1005.06.html)
-- [DBPR RE 3](https://www2.myfloridalicense.com/re/documents/DBPR_RE_3_Instructor_Permit.pdf), [DBPR RE 5](https://www2.myfloridalicense.com/re/documents/DBPR_RE_5_School_Permit.pdf), [DBPR RE 6](https://www2.myfloridalicense.com/re/documents/DBPR_RE_6_School_Change_of_Status_Transactions.pdf), and [current DBPR RE 18](https://www2.myfloridalicense.com/re/documents/DBPR_RE_-_FREC_18_Education_Course_Approval_Application.pdf)
-- DBPR out-of-state distance-course examples: [Moseley Real Estate Schools](https://www.myfloridalicense.com/CECPI.asp?BoardCde=25&CourseCde=0016795) and [The CE Shop](https://www.myfloridalicense.com/CECPI.asp?BoardCde=25&CourseCde=0027529)
-- [Official Sunbiz LLC fee schedule](https://dos.fl.gov/sunbiz/forms/fees/llc-fees/)
+- [Larson endorsement prep — optional vendor source](https://www.larsoned.com/realestate/licensing/florida-real-estate-endorsement-exam-prep-course-online-instructor-led/)

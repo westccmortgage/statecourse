@@ -39,7 +39,7 @@ import MANIFEST, { AUTHORITY_CLASS, FORBIDDEN_CLAIMS, SCHOOL, SOURCES, REACHABIL
 import SYLLABUS, { SECTIONS, SYLLABUS_REFERENCE } from "../config/florida/frec-course-i-syllabus.mjs";
 import REQUIREMENTS, { ASSESSMENT, COMPLETION, DISTANCE_DELIVERY, PERIODIC_ASSESSMENT, TIME } from "../config/florida/course-i-requirements.mjs";
 import ARCH, { ITEM_COUNT_QUESTION, OPEN_DBPR_QUESTIONS, PROCTORING, REGULATORY_MINIMUM_CONFIRMED, STATECOURSE_CONSERVATIVE_POLICY, TIER } from "../config/florida/assessment-architecture.mjs";
-import LEDGER, { ELIGIBILITY_MATRIX, INSTRUCTOR_PERMIT_ROUTES, floridaReadiness } from "../config/florida/school-permit-ledger.mjs";
+import LEDGER, { ELIGIBILITY_MATRIX, INSTRUCTOR_PERMIT_ROUTES, SELECTED_BROKER_ROUTE, ENDORSEMENT_LAW_EXAM, floridaReadiness } from "../config/florida/school-permit-ledger.mjs";
 import PACKAGE, { EXAMINATION_FORM_COUNT_RESOLUTION, FORMS } from "../config/florida/dbpr-application-package.mjs";
 import MATRIX, { DELIVERY_MATRIX } from "../config/florida/distance-delivery-matrix.mjs";
 import VIDEO, { CANDIDATES, REJECTED } from "../config/florida/video-instruction-plan.mjs";
@@ -173,6 +173,7 @@ test("there is no blocking gate, and nobody is asserted eligible", () => {
   assert.equal(SCHOOL.lawfulRouteToSchoolPermitExists, true);
   assert.equal(SCHOOL.lawfulRouteToInstructorPermitExists, true);
   assert.equal(SCHOOL.routeTaken, false);
+  assert.match(SCHOOL.selectedPersonalRoute, /2501\/1047/);
   assert.equal(SCHOOL.anyPersonAssertedEligible, false, "eligibility is the Department's determination, not this repository's");
   assert.equal(LEDGER.APPLICANT.eligibilityAsserted, false);
   assert.equal(LEDGER.APPLICANT.approvalAsserted, false);
@@ -182,9 +183,13 @@ test("the eligibility matrix carries all seven rows with honest statuses", () =>
   assert.equal(ELIGIBILITY_MATRIX.length, 7);
   assert.deepEqual(ELIGIBILITY_MATRIX.map((r) => r.row), [1, 2, 3, 4, 5, 6, 7]);
   const byRow = Object.fromEntries(ELIGIBILITY_MATRIX.map((r) => [r.row, r]));
-  assert.match(byRow[1].status, /^NOT MET/, "the broker route is genuinely closed on these facts");
-  assert.match(byRow[2].status, /^AVAILABLE/, "the examination route to the school permit is open");
-  assert.match(byRow[3].status, /^AVAILABLE/, "the examination route to the instructor permit is open");
+  assert.match(byRow[1].status, /^AVAILABLE/, "the selected broker-endorsement route exists but is not held");
+  assert.equal(byRow[1].selectedRoute, true);
+  assert.match(byRow[1].stateCoursePosition, /No approval or present eligibility is asserted/);
+  assert.match(byRow[2].status, /^AVAILABLE/, "the examination route remains a lawful fallback");
+  assert.equal(byRow[2].selectedRoute, false);
+  assert.match(byRow[3].status, /^AVAILABLE/, "the selected degree-plus-broker instructor route exists sequentially");
+  assert.equal(byRow[3].selectedRoute, true);
   assert.match(byRow[4].status, /^NOT HELD/);
   assert.match(byRow[5].status, /^CONDITIONAL/, "the teaching permitholder requirement applies only in a stated case");
   for (const r of ELIGIBILITY_MATRIX) {
@@ -192,14 +197,50 @@ test("the eligibility matrix carries all seven rows with honest statuses", () =>
   }
 });
 
-test("the instructor examination route requires no broker licence and is open", () => {
+test("the broker endorsement route is selected while the generic RE 2 conflict stays explicit", () => {
+  assert.equal(SELECTED_BROKER_ROUTE.selected, true);
+  assert.equal(SELECTED_BROKER_ROUTE.transactionCode, "2501/1047");
+  assert.equal(SELECTED_BROKER_ROUTE.certifiedHistoryHeld, false);
+  assert.equal(SELECTED_BROKER_ROUTE.scopeLawAttachmentRequired, true);
+  assert.equal(SELECTED_BROKER_ROUTE.requiredCourseOnPublishedChecklist, false);
+  assert.equal(SELECTED_BROKER_ROUTE.genericRe2InstructionsConflict, true);
+  assert.equal(SELECTED_BROKER_ROUTE.courseRequirementWrittenConfirmationPending, true);
+  assert.match(SELECTED_BROKER_ROUTE.requiredCourseFinding, /generic instructions/i);
+  assert.equal(SELECTED_BROKER_ROUTE.equivalencyApprovalAsserted, false);
+  assert.equal(SELECTED_BROKER_ROUTE.fallback.transactionCode, "2501/1012");
+  assert.equal(SELECTED_BROKER_ROUTE.fallback.selected, false);
+  assert.match(SELECTED_BROKER_ROUTE.fallback.activationCondition, /Final endorsement denial/);
+
+  assert.equal(ENDORSEMENT_LAW_EXAM.selected, true);
+  assert.equal(ENDORSEMENT_LAW_EXAM.assignmentConfirmedForTransaction, false);
+  assert.match(ENDORSEMENT_LAW_EXAM.assignmentStatus, /expected/i);
+  assert.match(ENDORSEMENT_LAW_EXAM.assignmentStatus, /475\.180/);
+  assert.equal(ENDORSEMENT_LAW_EXAM.closedBook, true);
+  assert.equal(ENDORSEMENT_LAW_EXAM.itemCount, 40);
+  assert.equal(ENDORSEMENT_LAW_EXAM.allottedMinutes, 90);
+  assert.equal(ENDORSEMENT_LAW_EXAM.passingCorrect, 30);
+  assert.equal(ENDORSEMENT_LAW_EXAM.passingPercent, 75);
+  assert.equal(ENDORSEMENT_LAW_EXAM.currentFeeVerified, false);
+  assert.equal(ENDORSEMENT_LAW_EXAM.optionalPrep.advertisedPrice, 99);
+  assert.equal(ENDORSEMENT_LAW_EXAM.optionalPrep.requiredByFrec, false);
+});
+
+test("the degree-plus-broker instructor route is selected and the exam route remains fallback", () => {
   const exam = INSTRUCTOR_PERMIT_ROUTES.find((r) => r.id === "instructor-examination");
   assert.equal(exam.requiresFloridaBrokerLicence, false);
   assert.equal(exam.openToStateCourse, true);
   assert.equal(exam.formCode, "1010", "DBPR RE 3 Section I basis code");
-  const closed = INSTRUCTOR_PERMIT_ROUTES.filter((r) => r.requiresFloridaBrokerLicence);
-  assert.equal(closed.length, 2);
-  for (const r of closed) assert.equal(r.openToStateCourse, false);
+  assert.equal(exam.selected, false);
+
+  const selected = INSTRUCTOR_PERMIT_ROUTES.find((r) => r.formCode === "1030");
+  assert.equal(selected.selected, true);
+  assert.equal(selected.openToStateCourse, true);
+  assert.equal(selected.currentlySatisfied, false);
+  assert.match(selected.unresolved, /foreign Finance degree/);
+
+  const extensive = INSTRUCTOR_PERMIT_ROUTES.find((r) => r.formCode === "1040");
+  assert.equal(extensive.selected, false);
+  assert.equal(extensive.openToStateCourse, false);
 });
 
 test("the school may designate someone other than its principal as permitholder", () => {
@@ -211,6 +252,8 @@ test("the school may designate someone other than its principal as permitholder"
 test("readiness reports NOT READY for accurate reasons", () => {
   const r = floridaReadiness();
   assert.equal(r.status, "NOT READY");
+  assert.equal(r.selectedBrokerRoute, "2501/1047");
+  assert.equal(r.selectedInstructorRoute, "1030");
   assert.equal(r.lawfulRouteToSchoolPermitExists, true);
   assert.equal(r.anyPersonAssertedEligible, false);
   assert.equal(r.anyApprovalAsserted, false);
@@ -333,7 +376,7 @@ test("the confidentiality requirement is derived from rules rather than asserted
   assert.ok(ARCH.CONFIDENTIALITY.retentionInteraction, "confidential is not the same as undocumented");
 });
 
-test("the open DBPR questions are carried with readings and a drafted letter", () => {
+test("open DBPR questions remain live while the combined letter is locked as historical", () => {
   assert.ok(OPEN_DBPR_QUESTIONS.length >= 6);
   for (const q of OPEN_DBPR_QUESTIONS) {
     assert.equal(q.tier, TIER.OPEN);
@@ -343,7 +386,11 @@ test("the open DBPR questions are carried with readings and a drafted letter", (
   for (const id of ["itemCountBasis", "instructionHourDefinition", "schoolPermitExamRouteAcceptance", "currentRe18Identity"]) {
     assert.ok(ids.includes(id), `${id} must stay open`);
   }
-  assert.ok(ARCH.DRAFT_QUESTION_TO_DBPR.length > 800, "the letter must be drafted, not described");
+  const fallback = OPEN_DBPR_QUESTIONS.find((q) => q.id === "schoolPermitExamRouteAcceptance");
+  assert.match(fallback.routeRole, /historical.*unselected/i);
+  assert.match(fallback.pendingBehaviour, /Do not act/i);
+  assert.ok(ARCH.DRAFT_QUESTION_TO_DBPR.length > 800, "the historical combined record must retain its substantive text");
+  assert.match(ARCH.DRAFT_QUESTION_TO_DBPR, /HISTORICAL[\s\S]*not as a current action/i);
   assert.match(ARCH.DRAFT_QUESTION_TO_DBPR, /at least 100 items, or 2 items per instruction hour/);
   assert.match(ARCH.DRAFT_QUESTION_TO_DBPR, /not currently permitted/, "the letter must not imply a status StateCourse lacks");
 });
@@ -496,6 +543,10 @@ test("Florida law itself supplies the forbidden-claim list", () => {
     assert.ok(ids.includes(id));
   }
   for (const claim of FORBIDDEN_CLAIMS) assert.match(claim.why, /475\.|61J2-/);
+  const permitClaim = FORBIDDEN_CLAIMS.find((c) => c.id === "permit-as-endorsement");
+  assert.match("issuance of a permit is an endorsement", permitClaim.pattern);
+  assert.doesNotMatch("Broker License by Endorsement", permitClaim.pattern,
+    "the statutory publicity guard must not outlaw the official licensure transaction name");
 });
 
 /* ── the sources ─────────────────────────────────────────────────────────────────────────────── */
@@ -509,6 +560,10 @@ test("every source is classified by the kind of authority it is", () => {
   }
   assert.ok(SOURCES.some((s) => s.authorityClass === AUTHORITY_CLASS.STATUTE));
   assert.ok(SOURCES.some((s) => s.authorityClass === AUTHORITY_CLASS.FORM));
+  assert.ok(SOURCES.some((s) => s.authorityClass === AUTHORITY_CLASS.VENDOR));
+  for (const s of SOURCES.filter((x) => !x.localCopy && x.contentValidation?.mediaType === "application/pdf")) {
+    assert.match(s.remoteSha256 ?? "", /^[a-f0-9]{64}$/, `${s.id} remote PDF must be identity-locked by hash`);
+  }
 });
 
 test("nothing rests on a source held only for navigation", () => {

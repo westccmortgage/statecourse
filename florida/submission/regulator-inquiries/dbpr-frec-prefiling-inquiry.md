@@ -1,5 +1,12 @@
 # DBPR/FREC pre-filing inquiry - transmitted by scope
 
+> **Historical transport record; part of the route content is now fallback only.** The course/RE 18
+> questions remain live. The RE 3 `[1010]` instructor-exam and exam-route RE 5 questions were sent
+> before the owner selected the Florida-broker route and must not be treated as next steps. The
+> selected personal sequence is RE 2 endorsement `[2501/1047]`, the DBPR-assigned exam (expected
+> from the linked CIB to be the 40-question Florida Laws and Rules exam), and RE 3 `[1030]` after
+> broker issuance. The original sent wording is preserved below.
+
 **Status:** Sent by the owner on 2026-09-01 as two separate messages: course/current-RE-18 and
 instructor/RE-3/RE-5. Exact sender, Reply-To, recipients and Gmail message/thread IDs are preserved
 in `transmission-log.md`. This file retains the combined drafting record; the transmission log, not

@@ -1,64 +1,66 @@
-# Florida FREC Course I - filing control index
+# Florida FREC Course I — filing control index
 
 **Prepared:** 2026-09-01
 **Applicant:** StateCourse LLC
 **Branch:** `relay-florida`
-**Status:** administrative package in active preparation; instructor, school and course filings are **NO-GO** until the gates below close. Nothing is filed or approved, and Florida enrollment remains disabled.
+**Status:** administrative package in preparation under the owner-selected **broker-by-endorsement route**. California DRE RE 293 was reportedly sent on 2026-09-01; the certified result is not yet held. Nothing is filed with Florida or approved, and enrollment remains disabled.
 
-## The controlled sequence
+## Controlled sequence
 
 | Stage | Filing or event | Current state | Release condition |
 |---:|---|---|---|
-| 1 | Written DBPR/FREC pre-filing clarification | **SENT 2026-09-01 as three owner-authorized messages** | Await responses; preserve Gmail thread IDs in the transmission log |
-| 2 | DBPR RE 3, transaction 1010 | Owner-action NO-GO | Owner completes protected data, background answers, declaration and $62.75 payment |
-| 3 | Registered Livescan after RE 3 filing | Human-only | RE 3 filed; owner personally completes fingerprints and pays vendor fee |
-| 4 | DBPR exam authorization and Pearson instructor examination | External/human | DBPR authorization; current Pearson fee/test center confirmed; owner sits physical exam |
-| 5 | Instructor permit number issued | Regulator | Pearson transmits passing result and DBPR issues the credential |
-| 6 | DBPR RE 5 school permit | Owner-action NO-GO | Instructor number; entity/DBA/location decisions; protected data; signature; $109 |
-| 7 | DBPR RE 6 add/activate instructor | Owner-action NO-GO | School and instructor permits issued; school permitholder signs; $0 transaction |
-| 8 | Course and operational evidence freeze | Build NO-GO | Full 3,000-minute course, content/legal review, final pagination, objective study and working reviewer account |
-| 9 | Two secure examinations and page-referenced keys | Build NO-GO | Two reviewed 126-item forms pending DBPR count answer; 233 authoring slots remain |
-| 10 | Current DBPR RE 18 and FREC review | Filing NO-GO | Current-form gate, school permit number, complete attachments, permitholder declaration/signature |
-| 11 | Enrollment and completion certificates | Launch NO-GO | Written course approval plus all permit, expiration, reporting and engine gates verified |
+| 1 | California DRE RE 293 certified history | **REQUESTED; not held** | Inspect broker type, initial exam, status, discipline, ≥5-year duration, active-now/within-2-years facts and valid months; satisfy conservative 30-day filing control |
+| 2 | California broker-scope statutes/rules | Build in progress | Fresh official DRE 2026 pages indexed by `06-california-broker-scope-appendix.md` |
+| 3 | DBPR RE 2 Endorsement `[2501/1047]` | Owner-action NO-GO | Current history + scope packet + protected facts/background records + declaration + live $70 fee |
+| 4 | Registered fingerprints | Human-only | RE 2 filed first; owner completes DBPR/FDLE process and retains TCN/receipt |
+| 5 | DBPR substantial-equivalence review | Regulator | California basis license found substantially equivalent or otherwise sufficient; deficiencies cured; section 455.213(15) review window protected if adverse |
+| 6 | DBPR-assigned examination | External/human | Inspect authorization; expected Laws and Rules format is closed-book 40 questions / 90 minutes / 30 correct; schedule only the examination DBPR assigns |
+| 7 | Florida broker license | Regulator | Verify number, dates and exact status; RE 5 accepts active/voluntarily inactive, RE 3 status treatment separately confirmed |
+| 8 | DBPR RE 3 `[1030]` | Owner-action NO-GO | Florida broker license + DBPR-accepted certified Finance transcript/equivalency packet + $62.75 + fingerprint treatment |
+| 9 | Instructor permit | Regulator | DBPR accepts broker/degree basis; no instructor exam on accepted `[1030]` |
+| 10 | DBPR RE 5 school permit | Owner-action NO-GO | Credentials, entity/DBA/location decisions, protected data, signature, $109 |
+| 11 | DBPR RE 6 add instructor | Owner-action NO-GO | School/instructor permits, permitholder signature; $0 |
+| 12 | Course/operational freeze | Build NO-GO | Full 3,000-minute course, review, pagination, objective study and production-equivalent controls |
+| 13 | Two examinations and page-referenced keys | Build NO-GO | Two reviewed forms; current conservative count 126 pending written DBPR answer |
+| 14 | Current RE 18 / FREC review | Filing NO-GO | Current-form check, issued school permit, full attachments and declaration |
+| 15 | Florida enrollment | Launch NO-GO | All licenses, permits, course approval, reporting and engine gates proven |
+
+## Route control
+
+The selected RE 2 transaction is **Broker License by Endorsement `[2501/1047]`**. The live checklist and RE 2's page-one endorsement-specific checklist do not list a 72-hour course, and the live checklist links the Florida Real Estate Law CIB. But RE 2's later generic instructions say every broker applicant must complete the 72-hour course and pass the broker exam. That internal official-document conflict remains open.
+
+Do not buy the 72-hour course before DBPR gives transaction-specific written direction. File and track endorsement `[1047]` on its specific checklist; inspect the authorization notice before scheduling. The expected exam is the 40-question Laws and Rules exam, but neither the checklist text nor that CIB expressly labels it `[1047]`. Out of State Experience `[2501/1012]` plus the 72-hour course/full broker exam remains a deliberate fallback after final endorsement denial and any timely review. RE 3 Instructor Exam `[1010]` is also fallback only; the selected instructor transaction after broker issuance is Specific Degree & Broker's License `[1030]`.
 
 ## Filing artifacts
 
 | Artifact | Purpose | Status |
 |---|---|---|
-| `01-regulatory-route-and-cie-memo.md` | DBPR school/instructor/course route and CIE boundary | Ready for owner/counsel review |
-| `02-owner-action-and-form-data-checklist.md` | Exact protected data, decisions, signatures and payments the repository cannot supply | Ready |
-| `03-current-re18-form-control.md` | Prevents filing the superseded five-exam form | Ready; recheck at signature time |
-| `04-course-submission-manifest.md` | Current RE 18 attachment map and honest course-readiness state | Ready as control ledger |
-| `05-anatoliy-filing-runbook.md` | Personalized end-to-end filing order, owner-only actions, known costs and launch gate | Ready; live fees/forms rechecked at each transaction |
-| `regulator-inquiries/dbpr-frec-prefiling-inquiry.md` | Combined drafting record for school, route, item-count, location, reporting and review questions | Sent by scope in two messages; awaiting responses |
-| `regulator-inquiries/transmission-log.md` | Exact sender, Reply-To, recipients, date and Gmail message/thread IDs | Current sent record |
-| `regulator-inquiries/pearson-instructor-exam-inquiry.md` | Current fee/test-center and exam-route/RE 5 questions | **Sent to DBPR BET**; awaiting response; no direct Pearson duplicate |
-| `fl-sales-associate-course-i-63-v1/submission/curriculum-review-and-expansion-ledger.md` | Mandatory order and section-by-section authoring gate | Ready; expansion in progress |
-| Current official RE 18 | Official form for later signature after school permit | Held; intentionally not prefilled with guessed address/permit/signature data |
+| `01-regulatory-route-and-cie-memo.md` | Endorsement route, equivalency review, instructor/school/CIE boundary | Ready for owner/counsel review |
+| `02-owner-action-and-form-data-checklist.md` | Protected data, evidence, decisions, signatures and payments | Ready |
+| `03-current-re18-form-control.md` | Prevents filing superseded five-exam RE 18 | Ready; recheck at signature |
+| `04-course-submission-manifest.md` | Current RE 18 attachment map and readiness | Ready as control ledger |
+| `05-anatoliy-filing-runbook.md` | Personalized end-to-end sequence and budget | Ready; live facts rechecked at each transaction |
+| `06-california-broker-scope-appendix.md` | Filing cover/index for official California scope statutes/rules | Ready for fresh official pages and filing identifiers |
+| `regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md` | Focused unresolved endorsement/course/exam/degree/status/fingerprint questions | Sent de-identified 2026-09-01; awaiting response |
+| `regulator-inquiries/dbpr-frec-prefiling-inquiry.md` | Prior school/course/form questions | Sent by scope; awaiting responses |
+| `regulator-inquiries/transmission-log.md` | Exact correspondence record | Current |
+| `regulator-inquiries/pearson-instructor-exam-inquiry.md` | Prior `[1010]` research | Sent before broker selection; fallback only |
+| Current official RE 18 | Later signature after school permit | Held; not prefilled with guessed facts |
 
-## Current-form evidence
+## Controlled conclusions
 
-DBPR's current Education page links a revised six-page RE 18. Section V separates:
+**Appears threshold-eligible, not approved:** user/repository facts indicate active California broker licensure since 2009, but the issued RE 293 must prove the checklist facts and DBPR/FREC must approve substantial equivalence/sufficiency.
 
-- **two** end-of-course examinations for distance pre/post-license education;
-- **five** only for distance continuing education;
-- RE 19 and RE 20 as **Providers Only**.
+**History freshness:** the live endorsement checklist says `current` but no numerical window. StateCourse uses a conservative ≤30-day filing control from held broker requirements material.
 
-The earlier `DBPR_RE_18_FRECEduCourseAppr.pdf` is retained solely as superseded evidence and is prohibited for filing. Florida Administrative Register Vol. 52, No. 138 (July 17, 2026), pp. 3080-81 describes a proposed Rule 61-35.027 amendment adopting revised RE 18 as Ref-19807. The current DBPR-linked form controls package design, but its identity must be rechecked immediately before signature.
+**Course/exam conflict:** endorsement-specific materials omit the course and link the official CIB, whose Laws and Rules format is closed book, 40 questions, 90 minutes, pass 30/40 (75). Generic RE 2 instructions point to the course/full exam. Obtain written DBPR confirmation and follow the authorization notice. Current Pearson fee is live/uncertain. Larson's current $99 endorsement prep is optional and non-credit; defer any purchase until the assigned exam is known.
 
-## What is ready, draft, and externally blocked
+**Degree:** RE 3 `[1030]` requires a valid Florida broker license plus certified official business-related degree evidence. Finance is listed, but the foreign-degree evaluator/evaluation/translation/direct-send protocol and inactive-broker treatment remain unresolved DBPR questions.
 
-**Verified requirement:** the statutory/form pathway exists; RE 3 precedes Livescan and exam authorization; current RE 18 requires two pre-license forms; all syllabus sessions must be completed; final keys cite stable course pages.
+**Known DBPR application charges:** $241.75 (`RE 2 $70 + RE 3 $62.75 + RE 5 $109`), excluding fingerprints, Pearson, records/evaluation, optional prep and entity costs.
 
-**Provider decision:** build 126 items on each of two forms pending a written answer to the rule's 100/120/126 ambiguity; use a mandatory acknowledged opening notice plus persistent compliance panel; no enrollment before approvals.
+## Official routing and privacy
 
-**External/human blocker:** route acceptance despite Rule 61J2-17.011's defect, protected RE 3/RE 5 facts, fingerprints, personal examination, entity/location decision, permit issuance, objective study participants, permitholder signature and FREC decision.
-
-## Official routing
-
-- School/course/form questions: DBPR Customer Contact Center, 850-487-1395, and the official contact channel.
-- Proposed-rule contact: Giuvanna Corona, Executive Director, Division of Real Estate, contact published in the July 17, 2026 FAR notice.
-- Exam-content administration: `REInstructors@myfloridalicense.com` only for examination matters.
-- Pearson scheduling/current fee/test-center: 888-204-6289.
-
-Florida correspondence can become a public record. Never place SSN, birth date, background documents, fingerprint identifiers or payment data in an informal inquiry.
+- DBPR Customer Contact Center: 850-487-1395 / official contact form.
+- Pearson scheduling/current fee: 888-204-6289 / official Florida Real Estate page.
+- Florida correspondence can become public record. Never place SSN, birth date, background documents, fingerprint identifiers or payment data in informal correspondence or source control.

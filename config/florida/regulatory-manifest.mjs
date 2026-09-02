@@ -2,8 +2,9 @@
  * Florida — regulatory manifest.
  *
  * WHAT THIS FILE IS FOR. Every regulated fact this Florida build rests on is written down here
- * once, with the authority it came from, the copy of that authority held on disk, and the hash of
- * that copy. Nothing downstream is allowed to assert a regulated fact that does not appear here.
+ * once, with the authority it came from and, where a local copy is held, the path and hash of that
+ * copy. Current remote-only authorities are revalidated online by the source lock. Nothing
+ * downstream is allowed to assert a regulated fact that does not appear here.
  * That is the whole mechanism: a document that reads well reads well whether or not it is true, so
  * the check cannot be "does this sound right" — it has to be "is this claim in the manifest, and
  * does the manifest's source still say it".
@@ -62,7 +63,7 @@
  * in a config file is how a false claim reaches a page, so there are none to promote.
  */
 
-export const MANIFEST_VERSION = "FL-MANIFEST-2026-09-01-v3";
+export const MANIFEST_VERSION = "FL-MANIFEST-2026-09-01-v6";
 
 /* How long a reading stays good before the lock demands it be taken again. Florida's education
    rules are amended often — 61J2-3.008 has been amended twenty-three times and three of the rules
@@ -72,7 +73,8 @@ export const MANIFEST_VERSION = "FL-MANIFEST-2026-09-01-v3";
 export const VERIFICATION_MAX_AGE_DAYS = 90;
 
 export const REACHABILITY = Object.freeze({
-  /* Opened, read, and held on disk. */
+  /* Opened and read. A localCopy+hash is recorded when held; otherwise the online source-lock URL
+     stage must revalidate the live authority. */
   READ: "READ",
   /* The publisher serves only a JavaScript shell to a non-browser client. */
   UNREACHABLE_JS_ONLY: "UNREACHABLE_JS_ONLY",
@@ -101,7 +103,9 @@ export const REACHABILITY = Object.freeze({
      GUIDANCE      — a DBPR checklist or information sheet. Same weight as a form, and useful
                      precisely because it says what a reviewer will look for.
      NAVIGATION    — a Department web page held to show where a document came from. Nothing rests
-                     on it. */
+                     on it.
+     VENDOR        — a commercial page, never regulatory authority; may support only dated product
+                     terms and must be rechecked before purchase. */
 export const AUTHORITY_CLASS = Object.freeze({
   CONSTITUTION: "CONSTITUTION",
   STATUTE: "STATUTE",
@@ -110,6 +114,7 @@ export const AUTHORITY_CLASS = Object.freeze({
   FORM: "FORM",
   GUIDANCE: "GUIDANCE",
   NAVIGATION: "NAVIGATION",
+  VENDOR: "VENDOR",
 });
 
 const source = (record) =>
@@ -1303,6 +1308,159 @@ export const SOURCES = Object.freeze([
     ]),
     conflicts: Object.freeze([]),
   }),
+  source({
+    id: "FS-455-213",
+    citation: "s. 455.213(15), Fla. Stat. (2026)",
+    title: "General licensing provisions — endorsement finding and secretary review",
+    publisher: "Florida Legislature, Online Sunshine",
+    url: "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0455/Sections/0455.213.html",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    contentValidation: Object.freeze({ mediaType: "text/html", requiredMarkers: Object.freeze(["455.213", "substantially equivalent", "7 business days"]), rejectsMarkers: Object.freeze(["Elevator Safety"]) }),
+    materialClaims: [
+      { claim: "Before an endorsement denial, the board/department must find whether the other-jurisdiction basis license is substantially equivalent or otherwise sufficient", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+      { claim: "If the equivalency finding is adverse and there is no other denial ground, the applicant may request secretary review within seven business days after notice; the secretary has seven business days to review", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ],
+  }),
+  source({
+    id: "FS-455-2135",
+    citation: "s. 455.2135, Fla. Stat. (2026)",
+    title: "Interstate mobility",
+    publisher: "Florida Legislature, Online Sunshine",
+    url: "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0455/Sections/0455.2135.html",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    contentValidation: Object.freeze({ mediaType: "text/html", requiredMarkers: Object.freeze(["455.2135", "at least 5 years", "jurisprudential examination"]), rejectsMarkers: Object.freeze(["Elevator Safety"]) }),
+    materialClaims: [
+      { claim: "The interstate-mobility endorsement statute uses a five-year basis-license threshold and permits a Florida-specific continuing-education course or a jurisprudential examination established by the board or department", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+      { claim: "Section 455.2135 independently requires fingerprints when the profession's practice act requires them", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs"]) },
+    ],
+  }),
+  source({
+    id: "DBPR-RE2-ENDORSEMENT-CHECKLIST",
+    citation: "DBPR Broker Initial Application Endorsement (RE 2) checklist [2501/1047]",
+    title: "Broker Initial Application Endorsement (RE 2)",
+    publisher: "Florida Department of Business and Professional Regulation",
+    url: "https://www.myfloridalicense.com/CheckListDetail.asp?XACT_DEFN_ID=19229&clientCode=2501&xactCode=1047",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    contentValidation: Object.freeze({ mediaType: "text/html", requiredMarkers: Object.freeze(["Broker Initial Application Endorsement", "at least 5 years", "Pearson Vue"]), rejectsMarkers: Object.freeze(["Elevator Safety"]) }),
+    materialClaims: [
+      { claim: "Endorsement threshold: current and valid broker license held at least five years in another U.S. jurisdiction, active now or active within the last two years", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/00-filing-index.md"]) },
+      { claim: "The endorsement checklist requires a current certified history, a Pearson examination and fingerprints immediately after application; it does not list a 72-hour broker pre-license course and links the Florida Real Estate Law CIB without naming the examination in its own text", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ],
+  }),
+  source({
+    id: "DBPR-RE2-BROKER-APPLICATION",
+    citation: "DBPR RE 2 Broker Application (effective June 2015)",
+    title: "Broker License Application",
+    publisher: "Florida Department of Business and Professional Regulation",
+    url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_2_Broker_Application.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    remoteSha256: "2d29bd72009b468530c264ff4be9dca12b6909741579b2474b54adb6a411324f",
+    contentValidation: Object.freeze({ mediaType: "application/pdf", magic: "%PDF-" }),
+    materialClaims: [
+      { claim: "RE 2 offers Broker License by Endorsement [2501/1047] and states a $70 application fee", reliedOnBy: Object.freeze(["florida/submission/05-anatoliy-filing-runbook.md"]) },
+      { claim: "Endorsement applicants attach current certified license history plus statutes/rules defining the current license's scope", reliedOnBy: Object.freeze(["florida/submission/06-california-broker-scope-appendix.md"]) },
+      { claim: "RE 2's application-specific checklist limits course-certificate presentation to upgrade and out-of-state-experience applicants, but its later generic instructions say every broker applicant must complete the 72-hour course and pass the broker exam; the form is internally inconsistent for endorsement applicants", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ],
+  }),
+  source({
+    id: "DBPR-REAL-ESTATE-LAW-CIB",
+    citation: "DBPR Candidate Information Booklet — Florida Real Estate Law examination",
+    title: "Florida Real Estate Law Candidate Information Booklet",
+    publisher: "Florida Department of Business and Professional Regulation",
+    url: "https://www2.myfloridalicense.com/servop/testing/documents/RE_law_cibs.pdf",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    remoteSha256: "2361ba47a17036c8a9dc7b1c11eaa937cdfceb26d25067b3c46af9513610061b",
+    contentValidation: Object.freeze({ mediaType: "application/pdf", magic: "%PDF-" }),
+    materialClaims: [
+      { claim: "The Florida Laws and Rules examination is closed book, contains 40 questions, allows 90 minutes and is passed with 30 correct (75); the CIB describes nonresident licensure under s. 475.180 and does not expressly label the examination as transaction [2501/1047]", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ],
+  }),
+  source({
+    id: "CA-DRE-RE293",
+    citation: "California DRE RE 293, Certified License History Request",
+    title: "Certified License History Request",
+    publisher: "California Department of Real Estate",
+    url: "https://www.dre.ca.gov/files/pdf/forms/re293.pdf",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    remoteSha256: "354781fa95ff30ee416c737a817132b83fcf8bc99a9d0f27d801db60fd76a05d",
+    contentValidation: Object.freeze({ mediaType: "application/pdf", magic: "%PDF-" }),
+    materialClaims: [
+      { claim: "RE 293 is California's request form for a certified license history for another state", reliedOnBy: Object.freeze(["florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ],
+  }),
+  source({
+    id: "CA-DRE-2026-REAL-ESTATE-LAW",
+    citation: "California DRE 2026 Real Estate Law — Business and Professions Code",
+    title: "Real Estate Law, Subdivided Lands Law, and Vacation Ownership and Time-Share Act of 2004",
+    publisher: "California Department of Real Estate",
+    url: "https://www.dre.ca.gov/files/pdf/relaw/relaw.pdf",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    remoteSha256: "d5501d22faab3807776b849d4779d588190ce9379bb1e2eb1585a48ae146358e",
+    contentValidation: Object.freeze({ mediaType: "application/pdf", magic: "%PDF-" }),
+    materialClaims: [
+      { claim: "California Business and Professions Code sections 10130, 10131, 10131.1 through 10131.4, 10131.45 and 10131.6 define the core and extended scope of California real estate broker activity", reliedOnBy: Object.freeze(["florida/submission/06-california-broker-scope-appendix.md"]) },
+      { claim: "Section 10177(h) imposes reasonable-supervision responsibility on a broker licensee", reliedOnBy: Object.freeze(["florida/submission/06-california-broker-scope-appendix.md"]) },
+    ],
+  }),
+  source({
+    id: "CA-DRE-2026-COMMISSIONER-REGULATIONS",
+    citation: "California DRE 2026 Regulations of the Real Estate Commissioner, §§2725–2726",
+    title: "Regulations of the Real Estate Commissioner",
+    publisher: "California Department of Real Estate",
+    url: "https://www.dre.ca.gov/files/pdf/relaw/regs.pdf",
+    authorityClass: AUTHORITY_CLASS.RULE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    remoteSha256: "79d6b457bf5f7782613d13a48068600bf6399a9660a10caed0c4496586523792",
+    contentValidation: Object.freeze({ mediaType: "application/pdf", magic: "%PDF-" }),
+    materialClaims: [
+      { claim: "Commissioner's Regulation 2725 specifies a responsible broker's supervision systems, and Regulation 2726 requires a written broker-salesperson relationship agreement", reliedOnBy: Object.freeze(["florida/submission/06-california-broker-scope-appendix.md"]) },
+    ],
+  }),
+  source({
+    id: "DBPR-FINGERPRINTING",
+    citation: "DBPR Fingerprinting page and FAQ (read 2026-09-01)",
+    title: "Fingerprinting",
+    publisher: "Florida Department of Business and Professional Regulation",
+    url: "https://www2.myfloridalicense.com/fingerprinting/",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    contentValidation: Object.freeze({ mediaType: "text/html", requiredMarkers: Object.freeze(["Real Estate Sales and Brokers", "FL920010Z", "12 months"]), rejectsMarkers: Object.freeze(["Elevator Safety"]) }),
+    materialClaims: [
+      { claim: "The current DBPR page directs applicants to submit fingerprints immediately after the license application and lists ORI FL920010Z for Real Estate Sales and Brokers", reliedOnBy: Object.freeze(["florida/submission/02-owner-action-and-form-data-checklist.md", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+      { claim: "For out-of-state applicants, the current DBPR page directs use of an FDLE-listed provider marked hard-card-scanning capable", reliedOnBy: Object.freeze(["florida/submission/05-anatoliy-filing-runbook.md"]) },
+      { claim: "The current DBPR FAQ says DBPR retains results for 12 months while FDLE retains prints for 180 days; fingerprint reuse for a later RE 3 transaction remains a separate question", reliedOnBy: Object.freeze(["florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ],
+  }),
+  source({
+    id: "LARSON-ENDORSEMENT-PREP",
+    citation: "Larson Educational Services endorsement exam-prep product page (read 2026-09-01)",
+    title: "Endorsement Exam Prep Course (Online Instructor-Led)",
+    publisher: "Larson Educational Services",
+    url: "https://www.larsoned.com/realestate/licensing/florida-real-estate-endorsement-exam-prep-course-online-instructor-led/",
+    authorityClass: AUTHORITY_CLASS.VENDOR,
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-01",
+    contentValidation: Object.freeze({ mediaType: "text/html", requiredMarkers: Object.freeze(["DBPR Credit hours", "$99 (includes physical workbook)", "course is optional"]), rejectsMarkers: Object.freeze([]) }),
+    materialClaims: [
+      { claim: "On the read date Larson advertised optional endorsement-exam prep at $99, zero DBPR credit hours and one-year access; these are volatile commercial terms and not regulatory requirements", reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/HANDOFF.md", "florida/PHASE-0-REPORT.md", "florida/regulatory/primary-text-readings.md", "florida/submission/00-filing-index.md", "florida/submission/01-regulatory-route-and-cie-memo.md", "florida/submission/02-owner-action-and-form-data-checklist.md", "florida/submission/05-anatoliy-filing-runbook.md", "florida/submission/frec-course-i-submission-plan.md"]) },
+    ],
+  }),
 ]);
 
 /* ── the programme ────────────────────────────────────────────────────────────────────────────
@@ -1372,9 +1530,10 @@ export const SCHOOL = Object.freeze({
   lawfulRouteToSchoolPermitExists: true,
   lawfulRouteToInstructorPermitExists: true,
   routeTaken: false,
+  selectedPersonalRoute: "DBPR RE 2 Broker License by Endorsement [2501/1047], then DBPR RE 3 Specific Degree & Broker's License [1030]",
   anyPersonAssertedEligible: false,
   routeSummary:
-    "Pass the Commission-approved instructor examination, file DBPR RE 3 under basis [1010], obtain the instructor permit, then file DBPR RE 5 naming that permit as the method of qualification. The Florida broker-licence route remains open to anyone who holds one.",
+    "Receive and inspect current California DRE RE 293; attach official California broker-scope statutes/rules; file DBPR RE 2 endorsement [2501/1047] and fingerprints; obtain DBPR/FREC's equivalency decision; verify the authorization notice's exact exam and course-document conditions, then pass the assigned exam (expected Laws and Rules: 40 questions); receive the Florida broker license; then file DBPR RE 3 [1030] on the Finance-degree-plus-broker basis and RE 5 on the Florida-broker basis. RE 2 [1012]/72-hour/full broker exam and RE 3 [1010] are unselected fallbacks only unless DBPR gives transaction-specific written direction otherwise.",
 });
 
 /* ── claims this build may never make ─────────────────────────────────────────────────────────
@@ -1397,7 +1556,7 @@ export const FORBIDDEN_CLAIMS = Object.freeze([
     why: "s. 475.451(3), Fla. Stat.; Rule 61J2-17.013, F.A.C." }),
   Object.freeze({ id: "pass-or-refund", pattern: /\b(pass\s+or\s+(your\s+)?money\s+back|money[- ]back\s+(if|unless)[^.]{0,40}\b(pass|fail))/i,
     why: "Rule 61J2-17.013, F.A.C. construes a pass-or-refund promise as a prohibited guarantee" }),
-  Object.freeze({ id: "permit-as-endorsement", pattern: /\b(permit|approval|licen[cs]e)\b[^.]{0,50}\b(endorse|endorsement|recommend|recommendation)\b/i,
+  Object.freeze({ id: "permit-as-endorsement", pattern: /\b(permit|approval)\b[^.]{0,50}\b(endorse|endorsement|recommend|recommendation)\b/i,
     why: "s. 475.451(3), Fla. Stat." }),
   Object.freeze({ id: "employment-promise", pattern: /\b(guarantee|promise)[^.]{0,40}\b(job|employment|placement)\b/i,
     why: "s. 475.4511(3), Fla. Stat." }),

@@ -1,20 +1,55 @@
-# FREC Course I — submission plan
+# FREC Course I — broker-first submission plan
 
-**Phase 0 v2.** This plan replaces the v1 version, which was wrong about the most important thing in
-it. v1 reported that a Florida broker's licence was mandatory for the school permitholder and that
-no StateCourse individual could sign an application. That is not what the law says, and it is not
-what DBPR's own forms do. See §1.
+**Current owner decision, 1 September 2026:** Anatoliy Kanevsky will personally become a Florida
+broker first. The RE 3 `[1010]` instructor-examination route remains legally available but is an
+unselected fallback, not the StateCourse plan.
 
-Nothing has been submitted, no application has been started, and no Florida credential is held.
+The owner reports that California DRE RE 293 was sent to DRE on 1 September 2026. The certified
+history is not yet held or inspected. Nothing has been submitted to Florida, no application has
+been started there, and no Florida credential is held.
 `config/florida/school-permit-ledger.mjs` carries the machine-checked version;
 `config/florida/dbpr-application-package.mjs` carries the forms;
 `florida/regulatory/primary-text-readings.md` carries the readings.
 
 ---
 
-## 1. The eligibility question, corrected
+## 1. The selected personal route
 
-**There is a lawful route, and it does not require anyone to hold a Florida broker's licence.**
+The selected sequence is: current California certified license history + official California
+broker-scope statutes/rules → DBPR RE 2 Broker License by Endorsement `[2501/1047]` → fingerprints
+→ DBPR/FREC substantial-equivalence review → verify and pass the DBPR-assigned examination
+(expected: Florida Real Estate Laws and Rules) →
+Florida broker license → DBPR RE 3 Specific Degree & Broker's License `[1030]` → RE 5 → RE 6 →
+current RE 18.
+
+The live endorsement checklist requires a current and valid broker license held for at least five
+years in another U.S. jurisdiction and active now or within the last two years. Repository/user
+facts indicate an active California broker license since 2009, so Anatoliy appears to clear that
+duration threshold, but RE 293 must prove it and DBPR/FREC controls equivalency. RE 2 also requires
+the statutes/rules defining the California license's scope; `06-california-broker-scope-appendix.md`
+indexes the official filing packet.
+
+California is not a mutual-recognition state, but endorsement `[1047]` is a separate 2026 route.
+The live endorsement checklist and RE 2's page-one endorsement-specific checklist do not list a
+72-hour broker pre-license course, while RE 2's later generic instructions say every broker
+applicant must complete the course and pass the broker exam. That official conflict is open. Do not
+buy the course now; use the specific `[1047]` filing path, preserve DBPR's written response and
+authorization notice, and activate Out of State Experience `[1012]` only after final endorsement
+denial, any timely review and a deliberate owner decision.
+
+The live endorsement checklist calls the history `current`; it does not state a numerical window.
+StateCourse uses a conservative 30-day filing control from held broker requirements material,
+without attributing that number to the live endorsement checklist.
+
+After Florida issues the broker license, StateCourse selects RE 3 `[1030]`. That route requires a
+valid Florida broker license and a bachelor's degree in real estate, finance, accounting, business
+administration or equivalent. The degree appears relevant to `finance`, but only DBPR may determine
+whether the foreign degree, institution, transcript and supporting equivalency evidence qualify.
+
+### The statutory alternative remains, but it is not selected
+
+The earlier legal correction remains true: Florida law does not make a broker license the only
+possible school-permitholder route.
 
 Section 475.451(2)(a), Fla. Stat.:
 
@@ -42,54 +77,69 @@ resolve at all — that section is about revoking a licence issued by mistake.
 - **DBPR RE 3, Section I:** "**Real Estate Instructor Exam [1010]**" alongside the two degree-plus-
   broker bases.
 
-**What this plan does not say.** It does not say Anatoliy is eligible, or approved. It says a
-statutory examination route appears available, subject to satisfying the general qualifications in
-s. 475.17(1), passing the Commission-approved instructor examination, filing the application, and
-the Department issuing the permit. Every one of those is outstanding. Eligibility is a determination
-the Department makes.
+**What this plan does not say.** It does not say Anatoliy is eligible or approved under either
+route. The examination route remains available as law and research, but the owner chose to become a
+Florida broker. Eligibility, degree equivalency, license status, permits and course approval are all
+Department determinations.
 
-**And there is a second route.** Nothing ties the permitholder to ownership. Section 475.451(2)(a)
+Nothing ties the permitholder to ownership. Section 475.451(2)(a)
 defines the permitholder functionally as "the individual who is responsible for directing the
 overall operation", RE 5 collects the permitholder and the company separately, and RE 6 exists to
 transfer a permit from one person to another. StateCourse may instead engage a qualified individual
-— a Florida broker, or an existing instructor permitholder — as school permitholder. That is a real
-role with real duties, not a name on a form.
+— a Florida broker, or an existing instructor permitholder — as school permitholder. That remains
+an organizational contingency, not the selected personal route. The role carries real duties.
 
 ---
 
 ## 2. The forms, verified
 
-Every DBPR RE form is adopted by **Rule 61-35.027, F.A.C., "Real Estate Forms"**, and each form's
-header states that incorporation. Held under `florida/frec-sources/dbpr/forms/` and
-`.../dbpr/education/`, hashed in the source inventory.
+Every listed DBPR RE form is adopted by **Rule 61-35.027, F.A.C., "Real Estate Forms"**, and each
+form's header states that incorporation. RE 3, RE 5, RE 6, RE 9 and the education forms are held and
+hashed under `florida/frec-sources/`; the selected-route RE 2 is currently read and identity-checked
+online but not held locally.
 
 | Form | Title on the form | Effective | Fee | Role here |
 |---|---|---|---|---|
-| **DBPR RE 3** | Application for Real Estate Instructor Permit | Nov 2015 | $62.75 | Stage 4 |
-| **DBPR RE 5** | Application for School Permit | May 2019 | $109.00 | Stage 5 |
-| **DBPR RE 6** | School Change of Status Transactions | — | — | Stage 6 — registers the instructor to the school |
+| **DBPR RE 2** | Broker License | Jun 2015 | $70.00 | Broker License by Endorsement `[2501/1047]`; history + scope packet |
+| **DBPR RE 3** | Application for Real Estate Instructor Permit | Nov 2015 | $62.75 | Specific Degree & Broker's License `[1030]` after broker issuance |
+| **DBPR RE 5** | Application for School Permit | May 2019 | $109.00 | School permit using Florida broker qualification |
+| **DBPR RE 6** | School Change of Status Transactions | — | — | Registers the instructor to the school |
 | **DBPR RE 9** | Application for Additional School Location | Jun 2015 | $50.00 | probably N/A — open question |
-| **DBPR RE 18** | Education Course Approval Application | Jun 2026 | **$0 for schools** | Stage 7; use only the current Education-page-linked revision |
+| **DBPR RE 18** | Education Course Approval Application | Jun 2026 | **$0 for schools** | Stage 9; use only the current Education-page-linked revision |
 | **DBPR RE 19** | FREC Continuing Education Provider Approval Application | — | — | provider-only; not a permitted-school attachment |
 | **DBPR RE 20** | FREC Request for Instructor Evaluation | — | — | provider-only; not a permitted-school attachment |
 
-All applications go to: Department of Business and Professional Regulation, 2601 Blair Stone Road,
+The held forms print: Department of Business and Professional Regulation, 2601 Blair Stone Road,
 Tallahassee, FL 32399-0783. RE 18 goes to the same street address, zip **32399-0750**.
 
 ---
 
-## 3. Instructor examination path — logistics resolved
+## 3. Endorsement examination and instructor qualification
 
-The official DBPR Candidate Information Booklet effective February 2025 is held at
-`florida/frec-sources/dbpr/testing/RE_instructor_cibs.pdf`. Pearson administers the computer-based
-exam at a physical test center after DBPR authorization. It is closed book, 100 equally weighted
-multiple-choice questions, 3.5 hours, with 75 points required. The current Pearson portal supports
-online scheduling or 888-204-6289 and requires cancellation/rescheduling two full calendar days in
-advance.
+The endorsement checklist links the official Florida Real Estate Law Candidate Information
+Booklet but does not name the exam. The CIB describes a closed-book Florida Laws and Rules
+examination for nonresident licensure under section 475.180: **40 questions, 90 minutes, pass
+30/40 (75)**. Section 455.2135(1)(f) permits a Florida-specific course or jurisprudential exam for
+interstate mobility. Together these make the 40-question exam the expected assignment, but the CIB
+does not expressly label it `[1047]`. Inspect the DBPR authorization before scheduling or buying
+prep. The live vendor fee remains unverified. Larson currently advertises optional $99, zero-credit
+endorsement prep; it is not licensing education.
 
-The current fee is the remaining narrow gap. A 2017 sheet still linked from the current portal says
-$36.75, but the 2025 CIB warns fees changed; do not represent $36.75 as current without checkout
-confirmation.
+The five-year threshold is not an approval guarantee. Under s. 455.213(15), Fla. Stat., DBPR/FREC
+must make an equivalency/sufficiency finding before an endorsement denial. If the finding is
+adverse and no other denial ground exists, the applicant has seven business days after notice to
+request secretary review; the secretary then has seven business days to review it. The short window
+must be calendared immediately.
+
+The Florida broker license may issue inactive if the owner does not activate it through the proper
+broker transaction. RE 5 expressly accepts an active or voluntarily inactive broker for the school
+permit. RE 3 `[1030]` says `valid broker's license in this state` without expressly resolving status,
+so StateCourse must confirm whether the issued inactive status satisfies `[1030]` before relying on
+it.
+
+If DBPR accepts the Florida broker license and certified Finance degree evidence under `[1030]`, no
+separate instructor examination is required. The previously researched instructor exam is retained
+solely as the `[1010]` fallback.
 
 ---
 
@@ -103,7 +153,8 @@ confirm:
 1. whether the Course I final may use 100 items or must apply two items per instruction hour over
    60 or 63 hours; StateCourse builds 126 per form while waiting;
 2. whether an instructor permit issued through RE 3 [1010] qualifies its holder to serve as the
-   RE 5 school permitholder despite the current rule wording;
+   RE 5 school permitholder despite the current rule wording — retained as fallback research, not
+   the selected route;
 3. whether the named out-of-state address may be the sole distance-school location and whether
    RE 9 is implicated;
 4. how the eight-classroom-hour absence language applies asynchronously when all syllabus sessions
@@ -114,39 +165,75 @@ confirm:
    61-35.027 proceeds; and
 8. the completeness-review, Education Agenda and deficiency/resubmission cycle.
 
-Pearson receives a separate logistics inquiry for the current fee, the physical test center and the
-generic completion-certificate language in the CIB. Never include SSN or background details in an
-informal inquiry; Florida correspondence may be a public record.
+The broker-first route adds focused questions sent in de-identified form and held in
+`regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md`: history age/direct delivery;
+initial California scope packet; confirmation of the 40-question exam and no 72-hour course;
+accepted foreign-degree evaluator/evaluation/translation/direct-delivery protocol; inactive-broker
+status for `[1030]`; and fingerprint reuse. It was sent on 1 September 2026 and is awaiting a
+response. Never include SSN or background
+details in an informal inquiry; Florida correspondence may be a public record.
 
 ---
 
 ## 5. The stages, in order
 
-### Stage 1 — apply for examination authorization
-Owner: **human**. File DBPR RE 3 under transaction [1010] with the $62.75 application fee, then
-complete Livescan immediately after filing. DBPR authorization precedes Pearson scheduling.
+### Stage 1 — obtain and inspect California DRE RE 293
 
-### Stage 2 — put the written questions
-Owner: **human**, completed 1 September 2026 as three owner-authorized DBPR messages. Course/current
-RE 18: Gmail thread `1a05dda4f56a8d19`; instructor/RE 3/RE 5: Gmail thread
-`1a05de8775c72589`; instructor-examination operations through DBPR BET: Gmail thread
-`1a05df1b7346867f`. Await responses and do not duplicate any open thread. No direct Pearson message
-was sent; contact Pearson only if DBPR directs it or after candidate authorization.
+Owner: **human/external**. The request was reportedly sent on 1 September 2026. Verify broker type,
+initial exam, first-license/expiration dates, current status, discipline, at least five years as a
+current and valid broker, active now or within two years, valid months, and certification. Apply the
+conservative 30-day filing control. Cure an incomplete or stale history before filing.
 
-### Stage 3 — pass the instructor examination
-Owner: **human**. Physical Pearson test center; closed book; 100 multiple-choice questions; 210
-minutes; pass 75.
+### Stage 2 — assemble the California scope attachment
 
-### Stage 4 — instructor permit
-After Stage 3, DBPR completes the instructor-permit transaction already opened with **DBPR RE 3**.
-The other two qualification bases require a Florida broker's licence and are closed on current
-facts. Owner: **regulator**.
+Owner: **build**, then human filing. Use `06-california-broker-scope-appendix.md` and attach fresh
+official 2026 California DRE pages for the complete broker-definition extensions and principal
+supervision rule. The official text, not StateCourse's summary, goes to DBPR. No equivalency is
+claimed.
 
-### Stage 5 — school permit
-File **DBPR RE 5**, checking "Holder of a Florida Instructor's License" and giving the permit number
-from Stage 4, with $109.00. Note the form's own rider: if the permitholder also teaches, they must
-meet the school-instructor requirements — which, on this route, they already do, because the
-instructor permit *is* that requirement. Owner: human, then **regulator**.
+### Stage 3 — file endorsement and fingerprints
+
+Owner: **human**. File **DBPR RE 2 Broker License by Endorsement `[2501/1047]`** with the current
+history and scope packet. The current form states $70. Complete fingerprints immediately after
+filing and retain the TCN/receipt. Do not select `[1012]`, `[1013]` or `[1014]`.
+
+### Stage 4 — equivalency review and DBPR-assigned exam
+
+Owner: **regulator**, then human. Cure any comparison deficiency and preserve the s. 455.213(15)
+review deadline if an adverse finding issues. Inspect the authorization before scheduling. If DBPR
+assigns the expected Laws and Rules exam, its format is closed book; 40 questions; 90 minutes; pass
+30/40. If it names another exam or course condition, pause for written clarification. Confirm the
+live fee at checkout. A $99 Larson endorsement-prep product is optional, zero-credit vendor prep;
+defer purchase until the assignment is known.
+
+### Stage 5 — receive and verify the Florida broker license
+
+Owner: **regulator**, then human verification. Record the broker number, dates and exact status.
+RE 5 accepts active or voluntarily inactive. Before relying on the initial inactive status for RE 3
+`[1030]`, get DBPR confirmation that it is a `valid broker's license` for that transaction or use the
+proper activation transaction if required.
+
+### Stage 6 — instructor permit by degree and broker license
+
+Owner: **human**, then regulator. File **DBPR RE 3 `[1030]` — Specific Degree & Broker's License**
+with the Florida broker number, certified official Finance and Credit transcript, DBPR-directed
+foreign-degree equivalency/translation evidence, protected application facts and $62.75. Confirm
+whether the RE 2 fingerprint result can be reused. If DBPR accepts `[1030]`, no instructor exam is
+required. RE 3 `[1010]` remains fallback only.
+
+### Fallback after final endorsement denial only
+
+Do not purchase the 72-hour course now. If endorsement `[1047]` is finally denied after any timely
+review and the owner
+deliberately authorizes a new route, RE 2 Out of State Experience `[1012]` generally requires the
+72-hour course—the Finance degree is not a four-year real-estate-degree exemption—and the full
+100-question, 3.5-hour broker examination. Those are not selected-route steps.
+
+### Stage 7 — school permit
+
+File **DBPR RE 5**, checking the Florida broker method and giving the issued broker number, with
+$109.00. The form's rider still controls: because the same permitholder will teach, the issued
+instructor permit must also exist. Owner: human, then **regulator**.
 
 RE 5 requests a physical street address. DBPR's current registry includes approved distance Course I
 schools at out-of-state addresses, so a Florida classroom is not categorically required. The named
@@ -156,12 +243,12 @@ still require an owner/counsel decision and written operational confirmation.
 The Department may require fingerprints processed through the FBI and "shall make such investigation
 ... as it may deem necessary" (s. 475.451(2)). Not optional on the applicant's say-so.
 
-### Stage 6 — register the instructor to the school
+### Stage 8 — register the instructor to the school
 **DBPR RE 6**, "Add/Terminate – Instructor" ($0). This is what makes the instructor "registered with such
 school" for Rule 61J2-3.008(5)(b), which is what lets the course publish the contact block the rule
 requires. Owner: human.
 
-### Stage 7 — course approval
+### Stage 9 — course approval
 File **DBPR RE 18**: Section III "Sales Associate Pre-Licensure" + "Distance", Section IV "NEW",
 $0 for a permitted school.
 

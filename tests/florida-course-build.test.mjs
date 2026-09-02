@@ -8,7 +8,7 @@ import { COURSE_STATUS, SECTION_PLANS, TOTALS, verifyCurriculumPlan } from "../c
 import { MODULE_MASTERY_POLICY, PERIODIC_ASSESSMENTS } from "../config/florida/periodic-assessment-bank.mjs";
 import { BANK_STATUS, SECURE_FINAL_DRAFT_ITEMS } from "../config/florida/secure-final-bank-draft.mjs";
 import { CONTINUITY_PLAN, IDENTITY_STAGES, PROGRESSION, RECORDS, releaseFailures } from "../config/florida/distance-course-engine.mjs";
-import { INSTRUCTOR_EXAM } from "../config/florida/school-permit-ledger.mjs";
+import { ENDORSEMENT_LAW_EXAM, INSTRUCTOR_EXAM } from "../config/florida/school-permit-ledger.mjs";
 import { CANDIDATES, TOTALS as VIDEO_TOTALS } from "../config/florida/video-instruction-plan.mjs";
 import { sourceById } from "../config/florida/regulatory-manifest.mjs";
 
@@ -151,7 +151,8 @@ test("Closing Disclosure instruction locks current federal forms and the CIB-lin
   assert.match(section, /201311 CFPB specimen/);
 });
 
-test("current official instructor CIB resolves the former logistics gap", () => {
+test("current official instructor CIB remains accurate fallback research", () => {
+  assert.equal(INSTRUCTOR_EXAM.selected, false);
   assert.equal(INSTRUCTOR_EXAM.administrator, "Pearson VUE / Pearson Professional Assessments");
   assert.match(INSTRUCTOR_EXAM.delivery, /physical Pearson test center/);
   assert.equal(INSTRUCTOR_EXAM.closedBook, true);
@@ -161,6 +162,17 @@ test("current official instructor CIB resolves the former logistics gap", () => 
   assert.equal(INSTRUCTOR_EXAM.currentFeeVerified, false);
   assert.equal(INSTRUCTOR_EXAM.contentWeights.zoningAndPlanning, null);
   assert.match(INSTRUCTOR_EXAM.outlineAmbiguity, /no 0% is inferred/);
+});
+
+test("selected endorsement route records the expected shorter exam without pretending assignment", () => {
+  assert.equal(ENDORSEMENT_LAW_EXAM.selected, true);
+  assert.equal(ENDORSEMENT_LAW_EXAM.assignmentConfirmedForTransaction, false);
+  assert.match(ENDORSEMENT_LAW_EXAM.assignmentStatus, /expected/i);
+  assert.match(ENDORSEMENT_LAW_EXAM.assignmentStatus, /authorization notice/i);
+  assert.equal(ENDORSEMENT_LAW_EXAM.itemCount, 40);
+  assert.equal(ENDORSEMENT_LAW_EXAM.allottedMinutes, 90);
+  assert.equal(ENDORSEMENT_LAW_EXAM.passingCorrect, 30);
+  assert.equal(ENDORSEMENT_LAW_EXAM.optionalPrep.requiredByFrec, false);
 });
 
 test("reviewer submission package exists and refuses unsupported readiness", () => {
@@ -180,6 +192,9 @@ test("filing-control package locks the current form, human sequence, and honest 
     "florida/submission/02-owner-action-and-form-data-checklist.md",
     "florida/submission/03-current-re18-form-control.md",
     "florida/submission/04-course-submission-manifest.md",
+    "florida/submission/05-anatoliy-filing-runbook.md",
+    "florida/submission/06-california-broker-scope-appendix.md",
+    "florida/submission/regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md",
     "florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md",
     "florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md",
     "florida/submission/regulator-inquiries/transmission-log.md",
@@ -188,9 +203,12 @@ test("filing-control package locks the current form, human sequence, and honest 
   for (const file of filingFiles) assert.ok(fs.existsSync(path.join(ROOT, file)), file);
 
   const index = read("florida/submission/00-filing-index.md");
-  assert.match(index, /RE 3 filing[\s\S]*Livescan/i);
-  assert.match(index, /Two secure examinations/);
-  assert.match(index, /233 authoring slots remain/);
+  assert.match(index, /Broker License by Endorsement `\[2501\/1047\]`/);
+  assert.match(index, /RE 2 filed first[\s\S]*DBPR-assigned examination/i);
+  assert.match(index, /expected exam/i);
+  assert.match(index, /expressly labels? it `\[1047\]`/i);
+  assert.match(index, /Out of State Experience `\[2501\/1012\]`[\s\S]*fallback/i);
+  assert.match(index, /Specific Degree & Broker's License `\[1030\]`/);
 
   const formControl = read("florida/submission/03-current-re18-form-control.md");
   assert.match(formControl, /two forms for distance pre\/post-license/i);
@@ -203,7 +221,7 @@ test("filing-control package locks the current form, human sequence, and honest 
 
   const cieMemo = read("florida/submission/01-regulatory-route-and-cie-memo.md");
   assert.match(cieMemo, /course approval alone is insufficient/i);
-  assert.match(cieMemo, /expected to be the institution-level approval/i);
+  assert.match(cieMemo, /RE 5 school permit is expected to be the institution-level basis/i);
 
   const transmission = read("florida/submission/regulator-inquiries/transmission-log.md");
   assert.match(transmission, /westccmortgage@gmail\.com/);
@@ -212,5 +230,12 @@ test("filing-control package locks the current form, human sequence, and honest 
   assert.match(transmission, /Giuvanna\.Corona@myfloridalicense\.com/);
   assert.match(transmission, /1a05dda4f56a8d19/);
   assert.match(transmission, /1a05de8775c72589/);
-  assert.match(read("florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md"), /NOT SENT/);
+  assert.match(transmission, /1a0608df533b3e4f/);
+  assert.match(transmission, /No message was sent directly to Pearson/);
+  const endorsementInquiry = read("florida/submission/regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md");
+  assert.match(endorsementInquiry, /SENT 2026-09-01/);
+  assert.match(endorsementInquiry, /No application has been submitted, and no eligibility or approval is assumed/);
+  const historicalExamInquiry = read("florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md");
+  assert.match(historicalExamInquiry, /Historical\/fallback record only/);
+  assert.match(historicalExamInquiry, /SENT TO DBPR BET; NOT SENT DIRECTLY TO PEARSON/);
 });

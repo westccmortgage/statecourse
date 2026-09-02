@@ -103,8 +103,9 @@ if (OFFLINE) {
 
   /* A 200 is not enough: Phase 0 v1 received one for a missing DBPR URL whose body was the
      Elevator Safety site. Sources with contentValidation therefore have their bodies inspected,
-     not merely their status codes. PDF bodies are checked for PDF magic here and against an
-     extracted text copy below; HTML bodies must contain every identifying marker and none of the
+     not merely their status codes. PDF bodies are checked for PDF magic and, for current
+     remote-only records, an exact remote hash; held PDFs are also checked against their recorded
+     copies/extracted text below. HTML bodies must contain every identifying marker and none of the
      known soft-404 markers. */
   const invalidBodies = [];
   for (const entry of SOURCES.filter((s) => s.contentValidation)) {
@@ -117,6 +118,9 @@ if (OFFLINE) {
       const rule = entry.contentValidation;
       if (rule.magic && !body.subarray(0, rule.magic.length).equals(Buffer.from(rule.magic))) {
         invalidBodies.push(`${entry.id}: body does not begin ${JSON.stringify(rule.magic)}`);
+      }
+      if (entry.remoteSha256 && sha256(body) !== entry.remoteSha256) {
+        invalidBodies.push(`${entry.id}: remote body hash changed from ${entry.remoteSha256} to ${sha256(body)}`);
       }
       if (rule.mediaType === "text/html") {
         const text = body.toString("utf8");
@@ -132,7 +136,7 @@ if (OFFLINE) {
     }
   }
   if (invalidBodies.length > 0) fail("source-content", `source bodies failed identity validation:\n    ${invalidBodies.join("\n    ")}`);
-  else pass("source-content", `${SOURCES.filter((s) => s.contentValidation).length} marker-locked source bodies identify themselves correctly`);
+  else pass("source-content", `${SOURCES.filter((s) => s.contentValidation).length} source bodies passed configured identity validation`);
 }
 
 /* ── 2. the documents on disk are the documents recorded ──────────────────────────────────────
@@ -176,7 +180,11 @@ if (OFFLINE) {
   if (missing.length > 0) fail("held-copies", `held copies missing:\n    ${missing.join("\n    ")}`);
   else pass("held-copies", `${SOURCES.filter((s) => s.localCopy).length} held copies present`);
   if (invalidContent.length > 0) fail("held-content", `held copies failed semantic validation:\n    ${invalidContent.join("\n    ")}`);
-  else pass("held-content", `${SOURCES.filter((s) => s.contentValidation).length} marker-locked held copies contain the expected documents`);
+  else {
+    const heldRules = SOURCES.filter((s) => s.localCopy && s.contentValidation).length;
+    const remoteRules = SOURCES.filter((s) => !s.localCopy && s.contentValidation).length;
+    pass("held-content", `${heldRules} marker-locked held copies contain the expected documents; ${remoteRules} remote-only validation rule(s) require the online URL stage`);
+  }
 }
 
 /* ── 3. every reading is inside the verification window ───────────────────────────────────────── */

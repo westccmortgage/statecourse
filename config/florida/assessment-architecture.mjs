@@ -256,7 +256,8 @@ export const OPEN_DBPR_QUESTIONS = Object.freeze([
     id: "schoolPermitExamRouteAcceptance",
     question:
       "Does an instructor permit issued through DBPR RE 3 transaction [1010] qualify its holder to serve as the school permitholder on DBPR RE 5 today, notwithstanding the inconsistent cross-reference and wording in Rule 61J2-17.011(2)?",
-    pendingBehaviour: "Treat the statutory and form route as available but not guaranteed; do not pay exam/fingerprint costs in reliance on an unqualified promise of acceptance.",
+    routeRole: "historical open question for the unselected RE 3 [1010] fallback",
+    pendingBehaviour: "Do not act or incur [1010] exam costs on this question while the broker-endorsement then [1030] route remains selected. Preserve the statutory/form research only as a deliberately activated fallback.",
   }),
   o({
     id: "distanceOnlySchoolLocation",
@@ -286,20 +287,23 @@ export const OPEN_DBPR_QUESTIONS = Object.freeze([
   }),
 ]);
 
-/* ── the written question to send ─────────────────────────────────────────────────────────────
-   Drafted here rather than described, so that sending it is a copy-and-paste rather than a writing
-   task, and so that what was asked is on the record next to what was assumed pending the answer. */
-export const DRAFT_QUESTION_TO_DBPR = `To: Florida Real Estate Commission, Division of Real Estate, Department of Business and Professional Regulation
+/* ── historical combined inquiry record ───────────────────────────────────────────────────────
+   The substantive course questions remain open, but this combined draft was split and partially
+   transmitted before the owner selected the broker route. It is preserved for audit, not resend.
+   Exact transport records and current route labels live in florida/submission/regulator-inquiries. */
+export const DRAFT_QUESTION_TO_DBPR = `HISTORICAL COMBINED DRAFT — PARTIALLY TRANSMITTED BEFORE THE OWNER SELECTED THE BROKER ROUTE. Question 3 is now fallback research only; preserve it as a sent-message record, not as a current action. See florida/submission/regulator-inquiries/transmission-log.md.
+
+To: Florida Real Estate Commission, Division of Real Estate, Department of Business and Professional Regulation
 
 Subject: Pre-filing clarification — distance FREC Course I school, instructor and course application
 
-StateCourse LLC is preparing, but is not yet offering, a FREC Course I sales-associate pre-licensure distance course. StateCourse is not currently permitted as a Florida real estate school and holds no Florida instructor or course approval. Before the owner incurs the instructor-examination and school-permit costs and before we freeze the course, please clarify the following.
+StateCourse LLC is preparing, but is not yet offering, a FREC Course I sales-associate pre-licensure distance course. StateCourse is not currently permitted as a Florida real estate school and holds no Florida instructor or course approval. Before the owner incurs licensing and school-permit costs and before we freeze the course, please clarify the following.
 
 1. Item count. Rule 61J2-3.008(4)(d) provides that "[t]he sales associate end-of-course examinations shall contain at least 100 items, or 2 items per instruction hour." For a 63-hour Course I comprising 60 hours of instruction and a 3-hour end-of-course examination, does the Commission read this as requiring (a) at least 100 items, (b) at least 120 items, being 2 per instruction hour over 60 instruction hours, or (c) at least 126 items, being 2 per hour over all 63 hours? We note the 1.8 minute per item limit in the same paragraph does not distinguish among these, since it caps duration rather than fixing a count.
 
 2. Meaning of "instruction hour". Relatedly, does "instruction hour" in that paragraph refer to the 60 hours of instruction identified in the FREC Course I syllabus, or to all 63 hours, which the rule and s. 475.17(2)(a)1 define as inclusive of examination?
 
-3. Instructor-exam route to the school permit. Section 475.451(2)(a), Florida Statutes, and current RE 5 provide a school-permitholder route through a Florida instructor permit. Does an instructor permit issued through RE 3 transaction [1010] qualify its holder for RE 5 today, notwithstanding the inconsistent cross-reference and wording in Rule 61J2-17.011(2)?
+3. Historical fallback only — instructor-exam route to the school permit. Section 475.451(2)(a), Florida Statutes, and current RE 5 provide a school-permitholder route through a Florida instructor permit. Does an instructor permit issued through RE 3 transaction [1010] qualify its holder for RE 5 today, notwithstanding the inconsistent cross-reference and wording in Rule 61J2-17.011(2)? This question does not alter the selected broker-endorsement then RE 3 [1030] route.
 
 4. Distance-only location. May a California physical business address be the sole RE 5 school location for an online-only school with no Florida classroom, and is RE 9 unnecessary unless another location is later added?
 

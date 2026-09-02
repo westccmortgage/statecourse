@@ -1,8 +1,9 @@
 # Florida — primary text readings
 
-Every Florida authority this build rests on, what was read, where the copy is held, and what it
-turned out to say. Read dates are the dates the document was fetched and hashed; the hashes are in
-`florida/frec-sources/source-inventory.json` and the claims taken from each source are in
+Every Florida authority this build rests on, what was read, whether a local copy is held, and what
+it turned out to say. For held sources, read dates are the dates the document was fetched and hashed
+and hashes are in `florida/frec-sources/source-inventory.json`. Current remote-only authorities are
+revalidated by the online source lock. Claims taken from every source are in
 `config/florida/regulatory-manifest.mjs`.
 
 > **Phase 0 v2.** This document was revised after the first Phase 0 report was rejected. Two things
@@ -25,7 +26,8 @@ be opened at all — the Secretary of State moved the Administrative Code into a
 manifest exists largely to record what could not be read. Florida's Legislature serves Chapter 475
 as static HTML, and the Department of State serves every 61J2 rule and every document those rules
 incorporate by reference, and the Division of Real Estate serves every application form and
-checklist. **Fifty-one registered sources, fifty-one read.**
+checklist. **Sixty-one manifest authorities read: fifty-one held and hashed, ten current
+remote-only authorities validated online.**
 
 Which means the interesting findings here are not silences. They are disagreements — including two
 places where the Department's own documents disagree with each other.
@@ -395,6 +397,7 @@ rule rather than to memory.
 
 | Form | Title on the form | Effective | Fee |
 |---|---|---|---|
+| DBPR RE 2 | Broker License | Jun 2015 | $70.00 |
 | DBPR RE 3 | Application for Real Estate Instructor Permit | Nov 2015 | $62.75 |
 | DBPR RE 5 | Application for School Permit | May 2019 | $109.00 |
 | DBPR RE 6 | School Change of Status Transactions | — | — |
@@ -402,6 +405,30 @@ rule rather than to memory.
 | DBPR RE 18 | Education Course Approval Application | Jun 2026 | $0 for schools |
 | DBPR RE 19 | FREC Continuing Education Provider Approval Application | — | provider-only; excluded here |
 | DBPR RE 20 | FREC Request for Instructor Evaluation | — | provider-only; excluded here |
+
+### Selected broker endorsement route
+
+The owner selected the route in which Anatoliy personally becomes a Florida broker. The current
+DBPR checklist is **Broker Initial Application Endorsement (RE 2) `[2501/1047]`**. It requires a
+current and valid broker license held for at least five years in another U.S. jurisdiction, active
+now or within the last two years; a current certified history; Pearson examination; and fingerprints
+immediately after the application. RE 2 separately requires copies of statutes/rules defining the
+scope of the basis license.
+
+The live endorsement checklist and RE 2's page-one endorsement-specific checklist do not list the
+72-hour broker pre-license course, and the live checklist links the official Florida Real Estate Law
+Candidate Information Booklet. But RE 2's later generic instructions say every broker applicant
+must complete the 72-hour course and pass the broker exam. That is an unresolved internal conflict
+in the official form. The linked CIB specifies a closed-book **40-question, 90-minute** Laws and
+Rules examination, passed with **30/40 (75)**, but describes nonresident licensure under section
+475.180 and does not expressly label the exam `[1047]`. Treat the Laws and Rules format as expected,
+verify the DBPR authorization or written response, and do not buy the 72-hour course preemptively.
+
+Repository/user facts indicate active California broker licensure since 2009, so the five-year
+threshold appears satisfied, but the issued RE 293 and DBPR/FREC's substantial-equivalence decision
+control. Section 455.213(15), Florida Statutes, requires that finding before denial and gives a
+seven-business-day secretary-review request window after an adverse equivalency finding when no
+other denial ground exists. That is a review right, not an approval guarantee.
 
 ### The permitholder question, corrected
 
@@ -434,14 +461,14 @@ Basis [1010] requires no broker licence at all. And DBPR's own *Real Estate Scho
 Requirements* sheet lists the same three routes, the third being "Pass an Instructor Examination
 approved by the FREC."
 
-**The consequence.** There is a statutory and form-supported route for StateCourse that does not
-require a Florida broker's licence: file DBPR RE 3 under basis [1010] → complete Livescan after
-filing → receive DBPR examination authorization → pass the Commission-approved instructor
-examination at a Pearson physical test center → DBPR issues the instructor number → file DBPR RE 5
-→ school permit → register/activate the instructor through RE 6. Because current rule wording may
-create operational rejection risk, DBPR acceptance of the route is a high-priority written
-confirmation, not a guarantee. Nothing along it has been done, and no person is asserted eligible.
-The status matrix is in
+**The consequence.** Both statutory branches exist, but the owner's selected branch is now the
+Florida-broker branch: endorsement `[1047]` → DBPR-assigned exam (expected Laws and Rules) → issued Florida broker license →
+RE 3 `[1030]` on the Finance-degree/broker basis → RE 5 on the broker basis → RE 6. If DBPR accepts
+the foreign degree and broker status under `[1030]`, no instructor examination is required.
+
+RE 3 `[1010]` remains a lawful, unselected fallback only. The prior Pearson/DBPR correspondence
+about that exam remains historical research and must not be read as the chosen route. Nothing along
+either route has been approved, and no person is asserted eligible. The status matrix is in
 `config/florida/school-permit-ledger.mjs`.
 
 ### What RE 18 requires for an initial Course I approval
@@ -475,13 +502,19 @@ and concluded the Department published no forms. That URL is a **soft-404** — 
 shells. *A 200 is not evidence that the page you asked for exists.* Both the wrong page and the
 right ones are now held, so the next reader can see the trap.
 
-**The instructor examination fee and candidate-specific scheduling.** The current DBPR Candidate
-Information Booklet is now held. It confirms a closed-book, 100-question, 3.5-hour physical Pearson
-test-center examination with a 75-point passing score after DBPR authorization. The current live fee
-and the candidate's available test center remain external. An owner-authorized inquiry was sent to
-DBPR's published Real Estate Instructor examination mailbox on 1 September 2026 (Gmail thread
-`1a05df1b7346867f`); a direct Pearson duplicate is deferred. A 2017 amount must not be presented as
-current.
+**Selected endorsement exam fee and candidate-specific scheduling.** The current official Law
+Candidate Information Booklet gives a physical Pearson center, closed book, 40 questions, 90
+minutes and pass 30/40 for its Laws and Rules examination. The endorsement checklist links it, but
+does not name the exam, and the CIB cites section 475.180 rather than transaction `[1047]`.
+Accordingly, DBPR's authorization must confirm the assignment before scheduling. The current live
+fee and candidate's available center remain external. Larson currently advertises a $99 optional,
+non-credit endorsement prep product; defer purchase until the assigned exam is known.
+
+**Foreign-degree protocol and RE 3 broker status.** RE 3 `[1030]` calls for a certified official
+transcript, but the current real-estate materials do not publish a definitive evaluator list,
+evaluation type, translation/direct-send rules, or whether voluntarily inactive status satisfies
+its `valid broker's license` language. Those are unresolved DBPR questions. The earlier instructor
+exam inquiry (Gmail thread `1a05df1b7346867f`) predates the broker selection and is fallback research.
 
 **A verification path through DBPR's own records.** The Department's public licensee search at
 `myfloridalicense.com/wl11.asp` timed out on every attempt from this environment. No numbered walk

@@ -11,6 +11,13 @@ examinations for distance pre/post-licensing and labels RE 19 and RE 20 provider
 remains the Phase 0 acceptance record; current execution controls are in `florida/HANDOFF.md` and
 `florida/submission/00-filing-index.md`.
 
+**Route correction, 1 Sep 2026:** the owner selected the personal Florida-broker route. Current
+execution is RE 2 Broker License by Endorsement `[2501/1047]`, followed by the DBPR-assigned exam
+(expected from the linked CIB to be the 40-question Florida Laws and Rules exam), then RE 3 Specific
+Degree & Broker's License `[1030]`. RE 2 `[1012]` with the 72-hour course/full broker exam and RE 3
+`[1010]` are fallbacks only. The generic RE 2 course/exam text conflicts with its endorsement-
+specific checklist, so the authorization/written DBPR response must be inspected before spending.
+
 ---
 
 ## What was wrong in v1
@@ -43,21 +50,23 @@ see that 126 was a judgement rather than a rule. **Corrected in §8.**
 
 ### 1. Source acquisition — **GO**
 
-51 sources, all read and hashed; 202 files under `florida/frec-sources/` after the post-Phase-0
-source acquisitions.
+61 manifest authorities read: 51 held and hashed plus 10 current remote-only authorities validated
+by the online lock; 202 files under `florida/frec-sources/` after the post-Phase-0 source
+acquisitions.
 
 Added in v2: Rule 61-35.027 F.A.C. (which adopts every DBPR RE form by reference), eight DBPR RE
 application forms, six DBPR guidance documents including the FREC Distance Education Checklist, and
 the Department's text-layer copy of the Course I syllabus.
 
 Every source now carries an **authority class** — CONSTITUTION, STATUTE, RULE, INCORPORATED, FORM,
-GUIDANCE, NAVIGATION — with the resolution order stated. v1 treated all sources as interchangeable, which is
+GUIDANCE, NAVIGATION or VENDOR — with the resolution order stated. VENDOR supports only dated
+commercial terms, never regulatory requirements. v1 treated all sources as interchangeable, which is
 how a form-level document came to outrank a statute.
 
 `node scripts/florida-source-inventory.mjs` → tracked inventory matches disk; 32/32 controlling
-sources present; 51/51 manifest sources and 2/2 syllabus copies resolve.
-`node scripts/florida-source-lock.mjs` → **LOCKED**, all 51 URLs reachable and all 19
-marker-locked remote and held bodies identify the intended documents.
+sources present; 51/51 local-copy manifest sources and 2/2 syllabus copies resolve.
+`node scripts/florida-source-lock.mjs` → **LOCKED**, all 61 URLs reachable and all 29 configured
+body-identity validations passed across remote and held sources.
 
 ### 2. Syllabus verification — **GO**
 
@@ -88,13 +97,13 @@ There is **no blocking gate**. v1's was an artifact of the misreading.
 
 | # | Route / requirement | Status |
 |---|---|---|
-| 1 | Florida broker-licence route | **NOT MET** — principal holds CA licence 01385024 only |
-| 2 | FREC-approved instructor-examination route | **AVAILABLE** — open, untaken |
-| 3 | Instructor permit | **AVAILABLE** — via RE 3 basis [1010], no broker licence needed |
+| 1 | Florida broker-licence route | **SELECTED / NOT HELD** — RE 2 endorsement `[1047]`; CA facts appear to meet the duration threshold, subject to RE 293 and DBPR equivalency |
+| 2 | FREC-approved instructor-examination route | **AVAILABLE FALLBACK** — open, unselected |
+| 3 | Instructor permit | **SELECTED AFTER BROKER** — RE 3 `[1030]`, Finance degree + Florida broker; foreign-degree treatment unresolved |
 | 4 | School permit | **NOT HELD** — obtainable once 2 or 1 is satisfied |
-| 5 | Permitholder who personally teaches | **CONDITIONAL** — collapses into row 3 on the exam route |
+| 5 | Permitholder who personally teaches | **CONDITIONAL** — selected plan also obtains instructor permit before teaching |
 | 6 | What StateCourse holds | **NOTHING** — no licence, exam, permit, approval or application |
-| 7 | What remains pending | exam → RE 3 → permit → RE 5 → permit → RE 6 → RE 18 |
+| 7 | What remains pending | RE 293/scope packet → RE 2 `[1047]` → fingerprints/equivalency → law exam → broker → RE 3 `[1030]` → RE 5 → RE 6 → RE 18 |
 
 Corroborated by three DBPR instruments: **RE 5** ("Holding a license as a Florida Broker ... **or**
 Holder of a Florida Instructor's License"), **RE 6** ("... or; **Passing the Instructors Exam**"),
@@ -106,23 +115,36 @@ application. `APPLICANT.eligibilityAsserted` is `false` and a test enforces it.
 **The school may also designate someone else.** Section 475.451(2)(a) defines the permitholder
 functionally, not by ownership; RE 6 exists to transfer the permit between people.
 
-### 4. Instructor eligibility — **GO on the law, one gap**
+### 4. Broker/instructor path — **legally available, credentials NOT HELD**
 
-Three statutory routes; route (c), the Commission-approved examination, requires no broker licence
-and is open. Routes (a) and (b) require a Florida broker's licence and are closed on current facts.
+The selected RE 2 endorsement checklist requires an out-of-state broker license held at least five
+years, active now or within the last two years; current certified history; scope statutes/rules;
+fingerprints; DBPR approval; and a Pearson examination. Repository/user facts indicate active CA
+broker licensure since 2009, but RE 293 and DBPR/FREC's equivalency decision control.
 
-**The former logistics gap is closed.** DBPR's official Candidate Information Booklet effective
-February 2025 identifies Pearson as administrator and specifies a physical test center, closed-book
-100-question multiple-choice examination, 3.5 hours and a 75-point passing score. RE 3 authorization
-precedes scheduling. The current fee remains unverified: $36.75 appears only on a still-linked 2017
-fact sheet, so it is historical/current-linked rather than a current checkout quote.
+No 72-hour course appears on the live endorsement checklist or the form's page-one endorsement-
+specific checklist, but RE 2's later generic instructions say every broker applicant must complete
+the course and pass the broker exam. The linked Law CIB describes a physical Pearson center,
+closed-book 40-question Laws and Rules exam, 90 minutes, pass 30/40, for nonresident licensure under
+section 475.180; it does not expressly label that exam `[1047]`. The expected assignment and
+course omission therefore remain subject to DBPR's authorization or written confirmation. The
+current Pearson fee is unverified. Larson's $99 endorsement prep is optional and non-credit;
+purchase is deferred until the assigned exam is known.
+
+After broker issuance, selected instructor route `[1030]` requires a valid Florida broker license
+and a certified official business-related degree transcript. Finance is listed, but DBPR must decide
+foreign-degree equivalency and acceptable broker status. If accepted, no instructor examination is
+required. `[1010]` remains fallback research only.
 
 ### 5. School application readiness — **NOT READY, fully mapped**
 
-All forms obtained, hashed and read. Adopted by Rule 61-35.027, F.A.C.
+All listed forms were read and identity-validated. The school/course forms are held and hashed; the
+selected-route RE 2 is currently online-validated and not yet a held local copy. Adopted by Rule
+61-35.027, F.A.C.
 
 | Form | Title | Effective | Fee |
 |---|---|---|---|
+| DBPR RE 2 | Broker License | Jun 2015 | $70.00 |
 | DBPR RE 3 | Application for Real Estate Instructor Permit | Nov 2015 | $62.75 |
 | DBPR RE 5 | Application for School Permit | May 2019 | $109.00 |
 | DBPR RE 6 | School Change of Status Transactions | — | — |
@@ -131,7 +153,7 @@ All forms obtained, hashed and read. Adopted by Rule 61-35.027, F.A.C.
 | DBPR RE 19 | FREC CE Provider Approval Application | — | provider-only; not a school attachment |
 | DBPR RE 20 | FREC Request for Instructor Evaluation | — | provider-only; not a school attachment |
 
-21 deliverables, 0 held, 19 of 21 now verified against the actual applications.
+29 deliverables, 0 held, 27 of 29 now verified against the actual applications.
 
 ### 6. Course-submission readiness — **NOT READY, requirements known**
 
@@ -171,8 +193,8 @@ minute hours)".
   position pending written DBPR confirmation.
 - **`STATECOURSE_CONSERVATIVE_POLICY`** — **126 items per form** and the current-form-required
   **2 forms**. The count remains configurable; the form count does not.
-- **`OPEN_DBPR_QUESTIONS`** — nine operational questions with safe pending behaviour, plus a fully
-  drafted letter.
+- **`OPEN_DBPR_QUESTIONS`** — nine operational questions with safe pending behaviour. The exported
+  combined letter is a historical transmission record, not a current resend instruction.
 
 **Why 100 remains a plausible but unconfirmed reading.** The broker sentence supports treating
 "or" as an alternative basis: the Broker course is 72 hours, so "2 items per instruction hour" is
@@ -275,20 +297,21 @@ the objective study, independent review, complete secure forms, permits and appr
 
 | # | Missing fact or artifact | Inside the repo? | Needs | Next concrete action |
 |---|---|---|---|---|
-| 1 | Instructor examination logistics | **Closed except current checkout fee** | Official CIB/Pearson | Use held 2025 CIB; verify fee at live checkout |
-| 2 | Instructor examination passed | **No** | RE 3 authorization + examination | File RE 3, then sit Pearson exam |
-| 3 | Instructor permit | **No** | Application + regulator | File DBPR RE 3, basis [1010], fingerprints, $62.75 |
-| 4 | School permit | **No** | Application + regulator | File DBPR RE 5 citing the instructor permit, $109.00 |
-| 5 | Item count — 100, 120 or 126 | **No** | Written DBPR response | Inquiry sent 1 Sep 2026; await thread `1a05dda4f56a8d19`; build 126 per form meanwhile |
-| 6 | Examination form count | **Closed** | Current linked RE 18 | Build two distance pre/post-license forms |
-| 7 | Whether a school must file RE 19 | **Closed** | Current linked RE 18 | Do not include RE 19; it is provider-only |
-| 8 | Async treatment of the 8-hour absence language | **No** | Written DBPR response | Inquiry sent; require all syllabus sessions while awaiting response |
-| 9 | Pre-licence hardship definition | **No** | Regulator response | Retain as a separately labelled interpretation issue |
-| 10 | CFPB Closing Disclosure specimen (FL-V06) | **Closed** | — | CIB-linked specimen plus current Appendix H/H-25(A)/H-25(B) package held and validated |
-| 11 | Florida homestead provisions (FL-V07) | **Closed** | — | Constitutional/statutory package plus current DOR 2026 adjustment sources held and validated |
-| 12 | `sync-california-pdf-downloads.mjs` missing | **Yes**, but not Florida's | Owner decision | California/Texas owner restores or removes the line |
-| 13 | Shared-file changes (7 proposals) | **Yes** | Coordination | Apply when Texas is at a safe point |
-| 14 | Objective time study | **Yes** | Representative participants | Run the checked-in protocol against the frozen course without video |
+| 1 | Issued current RE 293 | **No** | California DRE | Inspect immediately on receipt; apply conservative 30-day filing control |
+| 2 | California scope packet | **Partly** | Build + filing owner | Attach fresh official 2026 DRE statutory/regulatory pages indexed by appendix 06 |
+| 3 | Endorsement application/equivalency | **No** | Owner + DBPR/FREC | File RE 2 `[1047]` with $70, then fingerprints; cure deficiencies |
+| 4 | Adverse-equivalency review, if needed | **Conditional** | Owner/counsel | Request secretary review within 7 business days under s. 455.213(15) |
+| 5 | Assigned exam / broker license | **No** | DBPR authorization + owner | Inspect exact exam/course conditions; if expected Laws and Rules, pass 40 questions / 90 minutes / 30 correct; verify issued status and live fee |
+| 6 | Foreign Finance degree protocol | **No** | Written DBPR direction | Confirm evaluator/type/translation/direct-send and RE 3 inactive-status treatment |
+| 7 | Instructor permit | **No** | Owner + regulator | File RE 3 `[1030]` with $62.75 after broker/degree gates; confirm fingerprints |
+| 8 | School permit | **No** | Owner + regulator | File RE 5 on Florida-broker basis with $109 after entity/location gate |
+| 9 | Item count — 100, 120 or 126 | **No** | Written DBPR response | Await sent inquiry; build 126 per form meanwhile |
+| 10 | Examination form count | **Closed** | Current linked RE 18 | Build two distance pre/post-license forms |
+| 11 | Whether a school must file RE 19 | **Closed** | Current linked RE 18 | Exclude; provider-only |
+| 12 | Async treatment of 8-hour language | **No** | Written DBPR response | Require all syllabus sessions pending answer |
+| 13 | CFPB/homestead source packages | **Closed** | — | Held and validated |
+| 14 | Shared build/integration issues | **Outside Florida** | Owner/coordination | Preserve isolation; use recorded proposals |
+| 15 | Objective time study | **Yes** | Representative participants | Run checked-in protocol against frozen course without video |
 
 The exact current blocker set is maintained in `florida/HANDOFF.md`; this historical count is no
 longer used after three Phase 0 gaps were closed.
@@ -301,7 +324,8 @@ No file under `texas/`, `config/texas/`, `tests/texas-*` or `scripts/*texas*` wa
 moved or renamed. No Texas work merged; the branch is not rebased onto the 13 new Texas commits on
 `main`. No shared production registry edited — seven proposals recorded in
 `docs/florida/shared-file-change-proposals.md`, none applied. No DBPR/FREC approval claimed. Florida
-enrolment disabled. Nothing published or submitted externally.
+enrolment disabled. No application or course package was published or filed; only the four recorded
+prefiling inquiries were sent externally.
 
 One tracked California file, `california/submission/02_Real_Estate_Practice/07-sb1495-traceability.md`,
 is rewritten by the test suite as a side effect of the broken build. It is reverted after every run
@@ -318,8 +342,8 @@ bootstrap requires Linux `flock` and this host did not have enough free disk for
 The direct repository-wide test run completed 1,021/1,055; its 34 failures were outside Florida.
 
 ```
-node scripts/florida-source-lock.mjs            → LOCKED, 51/51 URLs and 19/19 marker validations
+node scripts/florida-source-lock.mjs            → LOCKED, 61/61 URLs and 29/29 body-identity validations
 node scripts/florida-source-inventory.mjs       → 202 files, 32/32 controlling present
-node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs tests/florida-exam-blueprint.test.mjs → 77/77 pass
+node --test tests/florida-foundation.test.mjs tests/florida-course-build.test.mjs tests/florida-exam-blueprint.test.mjs → 79/79 pass
 node --test tests/*.test.mjs                    → 1,021/1,055 pass; 34 non-Florida failures
 ```

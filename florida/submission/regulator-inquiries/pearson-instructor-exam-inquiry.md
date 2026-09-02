@@ -1,12 +1,20 @@
 # DBPR/BET instructor-exam logistics inquiry - sent
 
+> **Historical/fallback record only (route changed 2026-09-01).** This inquiry was sent before the
+> owner selected the Florida-broker route. RE 3 `[1010]` and its 100-question instructor exam are
+> not current steps. The selected sequence is RE 2 broker endorsement `[2501/1047]`, the 40-question
+> Florida Laws and Rules exam, and then RE 3 Specific Degree & Broker's License `[1030]`. Preserve
+> the sent-message facts below, but do not act on this file unless the owner deliberately activates
+> the instructor-exam fallback.
+
 **Status as of 2026-09-01:** **SENT TO DBPR BET; NOT SENT DIRECTLY TO PEARSON.** The owner-authorized
 message went to DBPR's published Real Estate Instructor examination mailbox,
 `REInstructors@myfloridalicense.com`, from `westccmortgage@gmail.com` with Reply-To
 `info@statecourse.com`. Gmail message/thread ID: `1a05df1b7346867f`. Await the response and do not
 send a duplicate. Contact Pearson directly only if DBPR directs it or after candidate authorization.
 
-**Route:** Florida Real Estate Instructor Examination after DBPR RE 3 transaction 1010 authorization.
+**Route when sent:** Florida Real Estate Instructor Examination after DBPR RE 3 transaction 1010
+authorization. **Current role:** unselected fallback research only.
 
 The sent inquiry asks DBPR/BET to confirm:
 
