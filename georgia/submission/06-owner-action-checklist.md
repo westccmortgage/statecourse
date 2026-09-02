@@ -6,7 +6,7 @@
 
 - [ ] Confirm legal state of residence for the Georgia filing.
 - [ ] Confirm the complete list of every jurisdiction that has ever issued you a real-estate license.
-- [ ] Send the two de-identified regulator inquiries from the approved business contact.
+- [x] Send the GREC and GNPEC regulator inquiries from the approved business contact — sent 2026-09-02; responses pending.
 - [ ] Confirm whether any criminal, consent-order, license-discipline, or pending-investigation answer may be yes; do not place details in Git.
 - [ ] Identify documentary evidence for education, transactions, teaching, and course development.
 

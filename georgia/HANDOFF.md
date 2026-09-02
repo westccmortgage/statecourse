@@ -26,8 +26,8 @@
 
 - GREC comparability/issuance decision for the California broker license.
 - Owner-supplied certifications from every real-estate licensing jurisdiction, current law-enforcement background report/FBI escalation if triggered, lawful-presence evidence, disclosures, signature, and payment.
-- GREC answer on instructor prerequisite equivalence and evidence scoring.
-- GNPEC written exemption/authorization classification.
+- GREC written response to the prefiling inquiry sent 2026-09-02, including broker comparability, instructor prerequisite equivalence, evidence scoring, fee conflicts, and course-method questions.
+- GNPEC written response to the safer fallback email sent 2026-09-02 after its official web form returned `Access denied`, including the correct accessible filing route and exemption/authorization classification.
 - Current school form and fee confirmation.
 - Written GREC direction on asynchronous methodology, proctoring, passing score, separate exam day, identity/e-signature, pilot evidence, vendor onboarding, reporting, and completion evidence.
 

@@ -1,5 +1,7 @@
 # GREC prefiling inquiry — draft, de-identified
 
+**Status:** Sent 2026-09-02 to `grecmail@grec.state.ga.us`, copied to `Education@grec.state.ga.us`. Sender identity remains in the authorized mailbox rather than Git. Awaiting written response.
+
 **To:** Georgia Real Estate Commission, Education / Licensing staff
 
 **Subject:** Written prefiling guidance — reciprocal broker, instructor, school, and self-paced 75-hour course

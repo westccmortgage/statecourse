@@ -2,6 +2,8 @@
 
 <!-- material-claims: ga-gnpec-statutory-exemption ga-gnpec-exemption-process ga-gnpec-exemption-fee -->
 
+**Status:** The official Exemption Inquiry page returned `Access denied` in both the in-app browser and the user's Chrome on 2026-09-02. A safer email version containing no personal name, home address, or license number was sent the same day to `info@gnpec.ga.gov`; it requested the correct accessible filing route and answers to the classification, sequence, fee, evidence, bond, audit, and recurring-filing questions. Awaiting written response.
+
 **To:** Georgia Nonpublic Postsecondary Education Commission
 
 **Subject:** Written classification request — out-of-state real-estate school under Georgia agency oversight
