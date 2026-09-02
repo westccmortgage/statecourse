@@ -1,6 +1,6 @@
 # GREC prefiling inquiry — draft, de-identified
 
-**Status:** Sent 2026-09-02 to `grecmail@grec.state.ga.us`, copied to `Education@grec.state.ga.us`. Sender identity remains in the authorized mailbox rather than Git. Awaiting written response.
+**Status:** Sent 2026-09-02 to `grecmail@grec.state.ga.us`, copied to `Education@grec.state.ga.us`. GREC's Education mailbox acknowledged receipt automatically the same day and directed all education correspondence to `education@grec.state.ga.us`; no substantive answer has arrived. Sender identity remains in the authorized mailbox rather than Git. Awaiting written response without duplicate outreach.
 
 **To:** Georgia Real Estate Commission, Education / Licensing staff
 

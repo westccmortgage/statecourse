@@ -13,7 +13,7 @@
 
 1. Georgia is the next state after Florida because both the market and the owner's personal broker route are attractive.
 2. The selected first personal filing is a **$170 inactive Georgia Broker reciprocity application** based on the California broker license, subject to GREC review.
-3. Legal Florida residence—not a Florida MLO license—activates the Georgia Law and Practice exam fork.
+3. The owner confirmed on 2026-09-02 that California has been the legal residence since 1994 and that California is the only jurisdiction ever to issue the owner a real-estate license. On those owner-attested facts, the planning path is ordinary non-Florida reciprocity with one California certification. Reconfirm at signing; legal Florida residence—not a Florida MLO license—would activate the Georgia Law and Practice exam fork.
 4. A Georgia broker license does not confer instructor approval. Instructor, school, course, and GNPEC are distinct gates.
 5. The separate June 2024 65-point instructor workbook is guidance, not an approval formula. The 53–55 estimate is reproducible only from unverified assumptions (15 license + 0 teaching + 3–5 degree + 35 experience); the two required courses are prerequisites, not points.
 6. GREC must approve the computer-based method before curriculum development. Do not copy an existing state's course engine and call it Georgia compliant.
@@ -26,7 +26,7 @@
 
 - GREC comparability/issuance decision for the California broker license.
 - Owner-supplied certifications from every real-estate licensing jurisdiction, current law-enforcement background report/FBI escalation if triggered, lawful-presence evidence, disclosures, signature, and payment.
-- GREC written response to the prefiling inquiry sent 2026-09-02, including broker comparability, instructor prerequisite equivalence, evidence scoring, fee conflicts, and course-method questions.
+- GREC substantive written response to the prefiling inquiry sent 2026-09-02, including broker comparability, instructor prerequisite equivalence, evidence scoring, fee conflicts, and course-method questions. The Education mailbox acknowledged receipt automatically the same day and directed education correspondence to `education@grec.state.ga.us`; that receipt is not a decision and does not clear a gate.
 - GNPEC written response to the safer fallback email sent 2026-09-02 after its official web form returned `Access denied`, including the correct accessible filing route and exemption/authorization classification.
 - Current school form and fee confirmation.
 - Written GREC direction on asynchronous methodology, proctoring, passing score, separate exam day, identity/e-signature, pilot evidence, vendor onboarding, reporting, and completion evidence.

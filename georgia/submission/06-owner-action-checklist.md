@@ -4,8 +4,8 @@
 
 ## Do now
 
-- [ ] Confirm legal state of residence for the Georgia filing.
-- [ ] Confirm the complete list of every jurisdiction that has ever issued you a real-estate license.
+- [x] Confirm legal state of residence for the Georgia filing — owner confirmed California legal residence since 1994 on 2026-09-02; reconfirm at signing.
+- [x] Confirm the complete list of every jurisdiction that has ever issued you a real-estate license — owner confirmed California only on 2026-09-02; reconcile against the final application before signing.
 - [x] Send the GREC and GNPEC regulator inquiries from the approved business contact — sent 2026-09-02; responses pending.
 - [ ] Confirm whether any criminal, consent-order, license-discipline, or pending-investigation answer may be yes; do not place details in Git.
 - [ ] Identify documentary evidence for education, transactions, teaching, and course development.

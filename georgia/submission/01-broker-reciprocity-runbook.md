@@ -8,17 +8,19 @@
 
 **Regulator decision required:** yes. No license is promised.
 
+**Owner facts confirmed 2026-09-02:** California legal resident since 1994; no real-estate license has ever been issued by a jurisdiction other than California. These are owner attestations, not regulator findings, and must be reconfirmed on the signed application.
+
 ## Before ordering expiring documents
 
-1. Confirm the owner's legal state of residence on the application date.
-2. If it is Florida, stop this runbook and use the Georgia Law and Practice supplement-exam path after confirming the current PSI fee.
-3. Build a complete list of every jurisdiction that has ever/currently licensed the owner in real estate. Rule 520-1-.04(3)(g) requires a certification from **each** licensing jurisdiction; this is not an open policy question.
+1. Reconfirm California legal residence on the application date. The owner confirmed California legal residence since 1994 on 2026-09-02.
+2. If residence changes to Florida before filing, stop this runbook and use the Georgia Law and Practice supplement-exam path after confirming the current PSI fee.
+3. Reconcile the final application against the owner's 2026-09-02 confirmation that California is the only jurisdiction that has ever/currently licensed the owner in real estate. On that confirmed record, Rule 520-1-.04(3)(g) calls for one certification, from California; any later-discovered jurisdiction must be added.
 4. Confirm the California broker license is current, in good standing, not lapsed/expired, and originally obtained through a state-administered real-estate examination.
 5. Ask GREC only about operational delivery/format if a jurisdiction cannot produce all required elements or offers certified electronic data.
 
 ## Assemble in this order
 
-1. Order an original certification issued within the prior 12 months from **every real-estate licensing jurisdiction**. Each certification must show the qualifying examination, satisfaction of that jurisdiction's prelicense and continuing-education requirements, current good standing, and no disciplinary action. If the jurisdiction sends certified data electronically, retain GREC's acceptance instruction.
+1. Order an original California certification issued within the prior 12 months. It must show the qualifying examination, satisfaction of California's prelicense and continuing-education requirements, current good standing, and no disciplinary action. If California transmits certified data electronically, retain GREC's acceptance instruction. Add another certification only if the final owner reconciliation identifies another real-estate licensing jurisdiction.
 2. Obtain the current GREC reciprocal form directly from GREC and confirm it still says revision 02/2025 and $170.
 3. Complete the form with **Broker** and **Inactive** selected. Leave firm/qualifying-broker/affiliation paths out of the first filing.
 4. Complete the lawful-presence form and obtain notarization plus an accepted secure/verifiable identity document.
