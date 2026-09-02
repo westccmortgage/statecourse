@@ -612,6 +612,58 @@ test("every Michigan SECURITY DEFINER function has an exact-signature browser-ro
   assert.match(migration016, /grant execute on function michigan_business_deadline\(timestamptz,integer,date,jsonb\) to service_role;/);
 });
 
+test("the post-015 privilege delta hardens databases that already ran earlier migrations", () => {
+  const migration015 = read("database/015_michigan_operational_gates.sql");
+  const migration016 = read("database/016_michigan_review_capacity.sql");
+  const migration017 = read("database/017_michigan_rpc_privilege_hardening.sql");
+  const definerSignatures = [...new Set([
+    ...securityDefinerSignatures(migration015),
+    ...securityDefinerSignatures(migration016),
+  ])];
+
+  for (const signature of [...definerSignatures, "michigan_refuse_record_mutation()"]) {
+    const escaped = signature.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    assert.match(
+      migration017,
+      new RegExp(`revoke execute on function ${escaped} from public,anon,authenticated;`, "i"),
+      `migration 017 does not harden the already-created ${signature}`,
+    );
+  }
+
+  const expectedServerCallable = [
+    "michigan_authority_summary(text,text,timestamptz)",
+    "submit_michigan_applied_memo(uuid,uuid,text,text)",
+    "review_michigan_applied_memo(uuid,uuid,jsonb,jsonb)",
+    "record_michigan_identity_verification(uuid,uuid,text,text,text,text,uuid)",
+    "sign_michigan_asynchronous_attestation(uuid,uuid,text,text,integer,text)",
+    "michigan_operational_status(uuid)",
+    "record_michigan_completion(uuid)",
+    "issue_michigan_completion_certificate(uuid)",
+    "build_michigan_completion_report(uuid)",
+    "record_michigan_authority_event(text,text,text,uuid,timestamptz,timestamptz,jsonb,uuid)",
+    "record_michigan_runtime_configuration(boolean,text,text,text,boolean,text,text,jsonb,uuid)",
+    "michigan_capacity_status(timestamptz)",
+    "michigan_business_deadline(timestamptz,integer,date,jsonb)",
+    "join_michigan_waitlist(uuid,text)",
+    "record_michigan_operational_policy(text,integer,integer,boolean,boolean,date,jsonb,jsonb,uuid)",
+  ];
+  const grants = [...migration017.matchAll(
+    /grant execute on function\s+([^\s]+)\s+to\s+([^;]+);/gi,
+  )];
+  assert.deepEqual(
+    grants.map(([, signature]) => signature).sort(),
+    expectedServerCallable.sort(),
+  );
+  for (const [, , role] of grants) assert.equal(role.trim().toLowerCase(), "service_role");
+
+  assert.match(migration017, /^begin;/m);
+  assert.match(migration017, /^commit;/m);
+  assert.match(migration017, /revoke all on michigan_authority_events,[\s\S]*from public,anon,authenticated;/);
+  assert.match(migration017, /revoke all on michigan_current_operational_policy,[\s\S]*from public,anon,authenticated;/);
+  const executableStatements = migration017.replace(/--.*$/gm, "");
+  assert.doesNotMatch(executableStatements, /\b(?:insert|update|delete|create|drop|alter)\b/i);
+});
+
 test("Michigan operational pages use named sessions and contain no shared-token workflow", () => {
   const files = [
     read("public/statecourse/admin/michigan-course/index.html"),
