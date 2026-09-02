@@ -21,6 +21,12 @@ function encode(value) {
   return encodeURIComponent(String(value));
 }
 
+function rejectBrowserActorIdentity(input) {
+  for (const field of ["studentId", "student_id", "authUserId", "auth_user_id"]) {
+    if (Object.hasOwn(input, field)) fail("browser_actor_identity_not_accepted");
+  }
+}
+
 async function michiganRpc(name, args) {
   try {
     return await rpc(name, args);
@@ -46,11 +52,17 @@ async function contextFor(studentId, enrollmentId) {
 }
 
 async function memoSummary(enrollmentId) {
-  const versions = await dbRequest(
-    `michigan_applied_memo_versions?enrollment_id=eq.${encode(enrollmentId)}`
-      + "&select=id,module_id,submission_version,content_sha256,submitted_at"
-      + "&order=module_id.asc,submission_version.asc",
-  );
+  const [versions, queue] = await Promise.all([
+    dbRequest(
+      `michigan_applied_memo_versions?enrollment_id=eq.${encode(enrollmentId)}`
+        + "&select=id,module_id,submission_version,response_text,content_sha256,submitted_at"
+        + "&order=module_id.asc,submission_version.asc",
+    ),
+    dbRequest(
+      `michigan_memo_review_queue?enrollment_id=eq.${encode(enrollmentId)}`
+        + "&select=submission_id,review_due_at,sla_state",
+    ),
+  ]);
   const ids = (versions || []).map((version) => version.id).filter((id) => UUID.test(id));
   const reviews = ids.length
     ? await dbRequest(
@@ -60,30 +72,61 @@ async function memoSummary(enrollmentId) {
     )
     : [];
   const reviewBySubmission = new Map((reviews || []).map((review) => [review.submission_id, review]));
+  const queueBySubmission = new Map((queue || []).map((item) => [item.submission_id, item]));
   return (versions || []).map((version) => ({
     moduleId: version.module_id,
     version: version.submission_version,
+    responseText: version.response_text,
     contentDigest: version.content_sha256,
     submittedAt: version.submitted_at,
     review: reviewBySubmission.get(version.id) || null,
+    reviewDueAt: queueBySubmission.get(version.id)?.review_due_at || null,
+    slaState: queueBySubmission.get(version.id)?.sla_state || null,
   }));
 }
 
+async function progressSummary(enrollmentId) {
+  const [modules, identity, attestation] = await Promise.all([
+    dbRequest(
+      `lms_assignment_state?enrollment_id=eq.${encode(enrollmentId)}`
+        + "&select=assignment_id,status,viewed_sections,active_seconds,applied_exercise_complete,engagement_check_complete,remediation_status,completed_at"
+        + "&order=assignment_id.asc",
+    ),
+    dbRequest(
+      `michigan_current_identity_verification?enrollment_id=eq.${encode(enrollmentId)}`
+        + "&select=verification_status,legal_name,verification_method,recorded_at&limit=1",
+    ),
+    dbRequest(
+      `michigan_current_asynchronous_attestation?enrollment_id=eq.${encode(enrollmentId)}`
+        + "&select=attestation_status,statement_version,signed_legal_name,clock_hours,recorded_at&limit=1",
+    ),
+  ]);
+  return { modules: modules || [], identity: identity?.[0] || null, attestation: attestation?.[0] || null };
+}
+
 export const handler = async (event) => {
+  let cookies = [];
   try {
     const auth = await requireStudentSession(event);
-    const cookies = auth.refreshedSession ? sessionCookies(auth.refreshedSession) : [];
+    cookies = auth.refreshedSession ? sessionCookies(auth.refreshedSession) : [];
+    let input = {};
+    if (event.httpMethod === "POST") {
+      requireSameOrigin(event);
+      input = parseJson(event);
+      rejectBrowserActorIdentity(input);
+    }
     const enrollmentId = String(
       event.queryStringParameters?.enrollment_id
-        || (event.httpMethod === "POST" ? parseJson(event).enrollmentId : "")
+        || input.enrollmentId
         || "",
     );
     const enrollment = await contextFor(auth.student.id, enrollmentId);
 
     if (event.httpMethod === "GET") {
-      const [status, memos] = await Promise.all([
+      const [status, memos, progress] = await Promise.all([
         michiganRpc("michigan_operational_status", { p_enrollment_id: enrollment.id }),
         memoSummary(enrollment.id),
+        progressSummary(enrollment.id),
       ]);
       return sessionResponse(200, {
         enrollment: {
@@ -95,12 +138,12 @@ export const handler = async (event) => {
         },
         status,
         memos,
+        ...progress,
+        approvalClaim: false,
       }, cookies);
     }
 
     if (event.httpMethod !== "POST") fail("method_not_allowed", 405);
-    requireSameOrigin(event);
-    const input = parseJson(event);
     const eventType = String(input.eventType || "");
 
     if (eventType === "submit_memo") {
@@ -157,6 +200,6 @@ export const handler = async (event) => {
     if (status >= 500) console.error("Michigan student course endpoint error", error?.message);
     return sessionResponse(status, {
       error: status >= 500 ? "michigan_course_unavailable" : error.message,
-    });
+    }, cookies);
   }
 };

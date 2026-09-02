@@ -117,6 +117,26 @@
   status = 200
 
 [[redirects]]
+  from = "/student/michigan-course"
+  to = "/student/michigan-course/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/student/michigan-course/"
+  to = "/student/michigan-course/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/michigan-course"
+  to = "/admin/michigan-course/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/michigan-review"
+  to = "/admin/michigan-review/index.html"
+  status = 200
+
+[[redirects]]
   from = "/api/student/session"
   to = "/.netlify/functions/student-session"
   status = 200
@@ -134,6 +154,11 @@
 [[redirects]]
   from = "/api/student/course"
   to = "/.netlify/functions/student-course"
+  status = 200
+
+[[redirects]]
+  from = "/api/student/michigan-course"
+  to = "/.netlify/functions/student-michigan-course"
   status = 200
 
 [[redirects]]
@@ -179,4 +204,9 @@
 [[redirects]]
   from = "/api/admin/compliance/missouri-completion-times"
   to = "/.netlify/functions/admin-missouri-completion-report"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/michigan-course"
+  to = "/.netlify/functions/admin-michigan-course"
   status = 200

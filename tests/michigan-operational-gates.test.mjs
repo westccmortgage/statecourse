@@ -17,7 +17,9 @@ import {
   evaluateMichiganCertificateGate,
   evaluateMichiganCourseCompletion,
   evaluateMichiganModuleGate,
+  evaluateMichiganReviewCapacity,
   evaluateMichiganReportGate,
+  michiganProviderBusinessDeadline,
   recordMichiganAttestation,
   recordMichiganIdentity,
   reviewMichiganMemo,
@@ -28,6 +30,20 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), "utf8");
 const fixedClock = () => new Date("2026-09-01T16:00:00.000Z");
 const reviewerId = "instructor-fixture-001";
+
+function securityDefinerSignatures(body) {
+  return [...body.matchAll(
+    /create or replace function\s+([a-z0-9_]+)\s*\(([\s\S]*?)\)\s*returns\s+([\s\S]*?)\s+as\s+\$\$/gi,
+  )]
+    .filter(([, , , attributes]) => /security\s+definer/i.test(attributes))
+    .map(([, name, parameters]) => {
+      const parameterTypes = parameters.split(",")
+        .map((parameter) => parameter.trim())
+        .filter(Boolean)
+        .map((parameter) => parameter.split(/\s+/)[1]);
+      return `${name}(${parameterTypes.join(",")})`;
+    });
+}
 
 function activeAuthority(overrides = {}) {
   return Object.fromEntries(MICHIGAN_AUTHORITY_KINDS.map((kind) => [kind, {
@@ -161,6 +177,74 @@ test("one authority decision kills enrollment, credited instruction, completion,
     ["surety_authority_expired"],
     "authority is inactive at, not after, its expiration instant",
   );
+});
+
+test("the provider business calendar skips weekends and recorded closed dates", () => {
+  assert.equal(
+    michiganProviderBusinessDeadline("2026-09-04T16:00:00.000Z", {
+      businessDays: 1,
+      closedDates: ["2026-09-07"],
+      calendarConfirmedThrough: "2026-09-30",
+    }),
+    "2026-09-08T16:00:00.000Z",
+  );
+  assert.throws(
+    () => michiganProviderBusinessDeadline("2026-09-04T16:00:00.000Z", {
+      businessDays: 1,
+      closedDates: ["2026-09-07"],
+      calendarConfirmedThrough: "2026-09-07",
+    }),
+    /michigan_business_calendar_unconfirmed/,
+  );
+});
+
+test("capacity, review SLA, checkout, enrollment, and the no-charge wait list use one decision", () => {
+  const policy = {
+    status: "active",
+    activeStudentCap: 25,
+    reviewSlaBusinessDays: 1,
+    instructorAvailable: true,
+    waitlistEnabled: true,
+    calendarConfirmedThrough: "2026-09-30",
+    closedDates: [],
+  };
+  const ready = {
+    courseApproved: true,
+    courseVersionApproved: true,
+    enrollmentEnabled: true,
+    authority: activeAuthority(),
+    activeStudents: 24,
+    pendingReviews: [],
+    policy,
+  };
+  assert.deepEqual(
+    evaluateMichiganReviewCapacity(ready, { clock: fixedClock }).reasons,
+    [],
+  );
+  assert.equal(evaluateMichiganReviewCapacity(ready, { clock: fixedClock }).checkoutAllowed, true);
+
+  const atCapacity = evaluateMichiganReviewCapacity({ ...ready, activeStudents: 25 }, { clock: fixedClock });
+  assert.equal(atCapacity.checkoutAllowed, false);
+  assert.equal(atCapacity.enrollmentAllowed, false);
+  assert.equal(atCapacity.waitlistAllowed, true);
+  assert.equal(atCapacity.waitlistChargeAllowed, false);
+  assert.deepEqual(atCapacity.reasons, ["active_student_capacity_reached"]);
+
+  const overdue = evaluateMichiganReviewCapacity({
+    ...ready,
+    pendingReviews: [{ submittedAt: "2026-08-31T15:00:00.000Z", dueAt: "2026-09-01T15:59:59.000Z" }],
+  }, { clock: fixedClock });
+  assert.equal(overdue.checkoutAllowed, false);
+  assert.equal(overdue.waitlistAllowed, true);
+  assert.deepEqual(overdue.reasons, ["memo_review_sla_missed"]);
+
+  const unapprovedVersion = evaluateMichiganReviewCapacity({
+    ...ready,
+    courseVersionApproved: false,
+  }, { clock: fixedClock });
+  assert.equal(unapprovedVersion.checkoutAllowed, false);
+  assert.equal(unapprovedVersion.waitlistAllowed, false);
+  assert.ok(unapprovedVersion.reasons.includes("course_version_not_approved"));
 });
 
 test("memo submission is append-only and cannot route around an authority lapse", () => {
@@ -458,12 +542,90 @@ test("student and admin server paths expose only the gated RPC workflow", () => 
   assert.match(student, /sign_michigan_asynchronous_attestation/);
   assert.match(student, /retainedSignatureRecord/);
   assert.doesNotMatch(student, /correctChoice|answer_key|approval_number/);
-  assert.match(admin, /requireAdmin/);
+  assert.match(admin, /requireStudentSession/);
+  assert.match(admin, /michigan_current_staff_actor_bindings/);
+  assert.match(admin, /browser_actor_identity_not_accepted/);
+  assert.doesNotMatch(admin, /requireAdmin|STATECOURSE_ADMIN_API_TOKEN/);
   assert.match(admin, /review_michigan_applied_memo/);
   assert.match(admin, /record_michigan_identity_verification/);
   assert.match(admin, /record_michigan_authority_event/);
   assert.match(admin, /issue_michigan_completion_certificate/);
   assert.match(admin, /build_michigan_completion_report/);
+});
+
+test("every Michigan SECURITY DEFINER function has an exact-signature browser-role revoke", () => {
+  const migration015 = read("database/015_michigan_operational_gates.sql");
+  const migration016 = read("database/016_michigan_review_capacity.sql");
+  const signatures015 = [
+    "michigan_authority_summary(text,text,timestamptz)",
+    "michigan_require_active_authority(text,text)",
+    "initialize_michigan_enrollment()",
+    "initialize_michigan_enrollment_records()",
+    "michigan_credited_time_guard()",
+    "michigan_instruction_evidence_guard()",
+    "michigan_assignment_completion_guard()",
+    "michigan_direct_memo_submission_guard()",
+    "michigan_direct_memo_review_guard()",
+    "michigan_direct_attestation_guard()",
+    "submit_michigan_applied_memo(uuid,uuid,text,text)",
+    "review_michigan_applied_memo(uuid,uuid,jsonb,jsonb)",
+    "record_michigan_identity_verification(uuid,uuid,text,text,text,text,uuid)",
+    "sign_michigan_asynchronous_attestation(uuid,uuid,text,text,integer,text)",
+    "michigan_operational_status(uuid)",
+    "michigan_direct_certificate_guard()",
+    "michigan_direct_report_guard()",
+    "record_michigan_completion(uuid)",
+    "issue_michigan_completion_certificate(uuid)",
+    "build_michigan_completion_report(uuid)",
+    "michigan_direct_completion_guard()",
+    "record_michigan_authority_event(text,text,text,uuid,timestamptz,timestamptz,jsonb,uuid)",
+    "record_michigan_runtime_configuration(boolean,text,text,text,boolean,text,text,jsonb,uuid)",
+  ];
+  const signatures016 = [
+    "michigan_business_deadline(timestamptz,integer,date,jsonb)",
+    "michigan_capacity_status(timestamptz)",
+    "michigan_checkout_capacity_guard()",
+    "initialize_michigan_enrollment()",
+    "join_michigan_waitlist(uuid,text)",
+    "record_michigan_operational_policy(text,integer,integer,boolean,boolean,date,jsonb,jsonb,uuid)",
+  ];
+  for (const [body, signatures] of [[migration015, signatures015], [migration016, signatures016]]) {
+    assert.deepEqual(
+      securityDefinerSignatures(body).sort(),
+      [...signatures].sort(),
+      "the exact-signature revoke inventory must cover every SECURITY DEFINER declaration",
+    );
+    for (const signature of signatures) {
+      const escaped = signature.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      assert.match(
+        body,
+        new RegExp(`revoke execute on function ${escaped} from public,anon,authenticated;`, "i"),
+        `missing exact browser-role revoke for ${signature}`,
+      );
+    }
+    for (const grant of body.matchAll(/grant execute on function\s+[^;]+\s+to\s+([^;]+);/gi)) {
+      assert.equal(grant[1].trim().toLowerCase(), "service_role");
+    }
+  }
+  assert.match(migration015, /revoke all on michigan_current_authority,[\s\S]*from public,anon,authenticated;/);
+  assert.match(migration016, /revoke all on michigan_current_operational_policy,[\s\S]*from public,anon,authenticated;/);
+  assert.match(migration016, /grant execute on function michigan_business_deadline\(timestamptz,integer,date,jsonb\) to service_role;/);
+});
+
+test("Michigan operational pages use named sessions and contain no shared-token workflow", () => {
+  const files = [
+    read("public/statecourse/admin/michigan-course/index.html"),
+    read("public/statecourse/admin/michigan-course/michigan-course.js"),
+    read("public/statecourse/admin/michigan-review/index.html"),
+    read("public/statecourse/admin/michigan-review/michigan-review.js"),
+  ];
+  const combined = files.join("\n");
+  assert.match(combined, /Named staff session|Named review session/);
+  assert.match(combined, /credentials:\s*"same-origin"/);
+  assert.match(combined, /\/student\/sign-in\//);
+  assert.doesNotMatch(combined, /Administrator token|Protected review token|sessionStorage|statecourse:admin-api-token/);
+  assert.doesNotMatch(combined, /authorization\s*:/i);
+  assert.doesNotMatch(combined, /style=/i, "the production CSP rejects inline style attributes");
 });
 
 test("both regulator inquiries preserve the sent record without implying a response", () => {
