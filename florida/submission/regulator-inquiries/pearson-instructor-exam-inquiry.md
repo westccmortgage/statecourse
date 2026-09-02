@@ -1,18 +1,28 @@
-# Pearson/DBPR instructor-exam logistics inquiry - staged, not sent
+# DBPR/BET instructor-exam logistics inquiry - sent
 
-**Status as of 2026-09-01:** **NOT SENT.** The two recorded owner transmissions went to DBPR
-Education and did not go to Pearson. Send this separately when a Pearson routing channel or
-candidate authorization is available.
+**Status as of 2026-09-01:** **SENT TO DBPR BET; NOT SENT DIRECTLY TO PEARSON.** The owner-authorized
+message went to DBPR's published Real Estate Instructor examination mailbox,
+`REInstructors@myfloridalicense.com`, from `westccmortgage@gmail.com` with Reply-To
+`info@statecourse.com`. Gmail message/thread ID: `1a05df1b7346867f`. Await the response and do not
+send a duplicate. Contact Pearson directly only if DBPR directs it or after candidate authorization.
 
 **Route:** Florida Real Estate Instructor Examination after DBPR RE 3 transaction 1010 authorization.
 
-Please confirm for a newly authorized Florida Real Estate Instructor Examination candidate:
+The sent inquiry asks DBPR/BET to confirm:
 
-1. the current Pearson examination fee;
-2. the nearest currently authorized physical test centers to the candidate's California address and the earliest scheduling options;
-3. current accepted identification and arrival requirements;
-4. whether the candidate booklet's general instruction to present a pre-license course-completion certificate applies to an instructor-examination candidate, given that section 475.451 and DBPR RE 3 do not state that prerequisite.
+1. whether Pearson VUE remains the vendor after DBPR authorization;
+2. whether delivery is physical-test-center only or online proctoring is available;
+3. the current examination fee separate from the $62.75 DBPR application fee;
+4. the controlling current candidate handbook/content outline;
+5. the current item count, testing time and passing score;
+6. whether the issued exam-route instructor permit qualifies its holder to serve as the RE 5 school
+   permitholder without a Florida broker license, with RE 6 used to register the instructor; and
+7. addition of `info@statecourse.com` to the Real Estate Instructor email distribution list.
 
-Known and not being re-asked: the current official booklet describes a closed-book, 100-question, equal-weight multiple-choice examination, 3.5 hours, with 75 points required. DBPR authorization precedes Pearson scheduling.
+The current official February 2025 booklet independently describes a closed-book, 100-question,
+equal-weight multiple-choice examination, 3.5 hours, with 75 points required. DBPR authorization
+precedes Pearson scheduling, and Pearson's current Florida page states that all Florida DBPR
+real-estate/appraiser candidates test at physical test centers. The reply is requested to close the
+operational record and current-fee gap, not to override those held sources.
 
 No SSN, birth date, background record or fingerprint identifier should be sent in an informal email.

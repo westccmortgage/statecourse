@@ -127,9 +127,11 @@ Owner: **human**. File DBPR RE 3 under transaction [1010] with the $62.75 applic
 complete Livescan immediately after filing. DBPR authorization precedes Pearson scheduling.
 
 ### Stage 2 — put the written questions
-Owner: **human**, completed 1 September 2026 as two owner-controlled DBPR messages. Course/current
+Owner: **human**, completed 1 September 2026 as three owner-authorized DBPR messages. Course/current
 RE 18: Gmail thread `1a05dda4f56a8d19`; instructor/RE 3/RE 5: Gmail thread
-`1a05de8775c72589`. Await responses; do not duplicate. The Pearson logistics inquiry remains unsent.
+`1a05de8775c72589`; instructor-examination operations through DBPR BET: Gmail thread
+`1a05df1b7346867f`. Await responses and do not duplicate any open thread. No direct Pearson message
+was sent; contact Pearson only if DBPR directs it or after candidate authorization.
 
 ### Stage 3 — pass the instructor examination
 Owner: **human**. Physical Pearson test center; closed book; 100 multiple-choice questions; 210

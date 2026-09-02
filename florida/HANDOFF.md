@@ -207,10 +207,12 @@ approval, regulator-answer and human-study gates remain.
    hours, pass 75. The current Pearson portal uses 888-204-6289 and online scheduling. The $36.75
    exam fee appears only on a still-linked 2017 sheet and is not represented as current until live
    checkout confirms it.
-2. **Await and process the two DBPR responses.** The owner sent the course/current-RE-18 inquiry
+2. **Await and process the three DBPR responses.** The owner sent the course/current-RE-18 inquiry
    (`1a05dda4f56a8d19`) and the instructor/RE-3/RE-5 inquiry (`1a05de8775c72589`) on 1 September
-   2026. Exact routing is in `submission/regulator-inquiries/transmission-log.md`. Do not send a
-   duplicate while those threads are open. The separate Pearson logistics inquiry remains unsent.
+   2026, followed by the DBPR BET instructor-examination operations inquiry
+   (`1a05df1b7346867f`). Exact routing is in `submission/regulator-inquiries/transmission-log.md`.
+   Do not send a duplicate while those threads are open. No direct Pearson message was sent; that
+   channel is deferred unless DBPR directs it or candidate authorization has issued.
 
 Controlled order: **DBPR RE 3** basis `[1010]` + $62.75 → Livescan → DBPR authorization → physical
 Pearson exam → DBPR-issued instructor number → **DBPR RE 5** citing that permit + $109.00 → school

@@ -478,8 +478,10 @@ right ones are now held, so the next reader can see the trap.
 **The instructor examination fee and candidate-specific scheduling.** The current DBPR Candidate
 Information Booklet is now held. It confirms a closed-book, 100-question, 3.5-hour physical Pearson
 test-center examination with a 75-point passing score after DBPR authorization. The current live fee
-and the candidate's available test center remain external; the staged Pearson inquiry requests
-both. A 2017 amount must not be presented as current.
+and the candidate's available test center remain external. An owner-authorized inquiry was sent to
+DBPR's published Real Estate Instructor examination mailbox on 1 September 2026 (Gmail thread
+`1a05df1b7346867f`); a direct Pearson duplicate is deferred. A 2017 amount must not be presented as
+current.
 
 **A verification path through DBPR's own records.** The Department's public licensee search at
 `myfloridalicense.com/wl11.asp` timed out on every attempt from this environment. No numbered walk
