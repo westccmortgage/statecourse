@@ -29,6 +29,7 @@
 | `02-owner-action-and-form-data-checklist.md` | Exact protected data, decisions, signatures and payments the repository cannot supply | Ready |
 | `03-current-re18-form-control.md` | Prevents filing the superseded five-exam form | Ready; recheck at signature time |
 | `04-course-submission-manifest.md` | Current RE 18 attachment map and honest course-readiness state | Ready as control ledger |
+| `05-anatoliy-filing-runbook.md` | Personalized end-to-end filing order, owner-only actions, known costs and launch gate | Ready; live fees/forms rechecked at each transaction |
 | `regulator-inquiries/dbpr-frec-prefiling-inquiry.md` | Combined drafting record for school, route, item-count, location, reporting and review questions | Sent by scope in two messages; awaiting responses |
 | `regulator-inquiries/transmission-log.md` | Exact sender, Reply-To, recipients, date and Gmail message/thread IDs | Current sent record |
 | `regulator-inquiries/pearson-instructor-exam-inquiry.md` | Current fee/test-center and exam-route/RE 5 questions | **Sent to DBPR BET**; awaiting response; no direct Pearson duplicate |

@@ -2,6 +2,8 @@
 
 These are the items automation cannot truthfully invent, certify, purchase or perform. They are staged once so the owner is not asked repeatedly.
 
+For the complete dependency order, exact controlled entity facts, known costs and launch boundary, use `05-anatoliy-filing-runbook.md`. This file is the compact data checklist; the runbook is the execution control.
+
 ## DBPR RE 3 - instructor examination route [1010]
 
 Owner supplies or confirms privately in the official filing channel:
