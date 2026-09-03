@@ -99,8 +99,10 @@ Current controlled entity facts:
 
 The mandatory Florida fee is currently $125: $100 filing plus $25 registered-agent designation.
 The filing also needs a Florida registered agent and a California Certificate of Status dated no
-more than 90 days before Florida receives it. The California certificate currently costs $5.
-Optional Florida copies/status and private registered-agent service are additional.
+more than 90 days before Florida receives it. The California certificate was obtained and verified
+on 2026-09-03: StateCourse LLC is active, entity `B20260376786`, certificate `495921637`. Florida
+must receive it by 2026-12-02; use 2026-11-30 as the internal filing target. Optional Florida
+copies/status and private registered-agent service are additional.
 
 **Registered agent selected 2026-09-03:** Northwest Registered Agent LLC, 7901 4th St N, STE 300,
 St. Petersburg, FL 33702; service term shown through 2027-09-03. The Northwest confirmation screen
@@ -108,6 +110,11 @@ labels the company `statecourse`. Verify in the account that this is only an int
 the appointment applies to legal entity `StateCourse LLC`; obtain Northwest's exact acceptance or
 filing instructions before submitting CR2E027. The screenshot itself is not retained because it
 also contains an unrelated financial image.
+
+**Prepared draft:** `output/pdf/florida/StateCourse-LLC-CR2E027-prefill-DRAFT.pdf` is the official
+interactive four-page form with 30 controls populated and the $125 option selected. It is visibly
+watermarked and cannot be filed yet. The private FEIN, Northwest acceptance, Anatoliy signature and
+final clean regeneration remain.
 
 ### A7. File DBPR RE 5 on the instructor-permit basis
 
@@ -182,7 +189,7 @@ Maintain one encrypted folder containing:
 | RE 6 | $0 on held form | recheck before filing |
 | RE 2 `[1047]` | $70.00 | separate personal broker track |
 | Fingerprints | live amount | likely applies to each transaction unless DBPR confirms reuse |
-| California Certificate of Status | $5.00 | order when the foreign-LLC packet is ready; must be no more than 90 days old at Florida receipt |
+| California Certificate of Status | $5.00 | obtained 2026-09-03; verified active; Florida receipt deadline 2026-12-02; internal filing target 2026-11-30 |
 | Florida foreign LLC | $125.00 mandatory state fee | selected conservative filing route before RE 5; registered-agent service extra |
 | Florida LLC annual report | $138.75 annually | first due the following calendar year; current $400 late fee after May 1 |
 
@@ -196,7 +203,9 @@ Known school-path DBPR application fees total **$171.75** before fingerprints an
 - [ ] Study for the instructor examination while DBPR processes the application.
 - [x] Select a Florida registered agent — Northwest service active 2026-09-03 through 2027-09-03.
 - [ ] Confirm Northwest's appointment under exact legal name `StateCourse LLC` and download its invoice/agent-acceptance instructions.
-- [ ] Order the fresh $5 California Certificate of Status and file the $125 foreign-LLC qualification packet.
+- [x] Obtain and verify the fresh $5 California Certificate of Status — issued 2026-09-03; active; entity `B20260376786`.
+- [x] Generate and validate the official interactive CR2E027 prefill draft — 30 controls populated; protected fields/signatures left open.
+- [ ] Enter the FEIN privately, obtain Northwest acceptance, sign and file the clean $125 foreign-LLC qualification packet by the 2026-11-30 internal target.
 - [ ] When RE 293 arrives, send it to the StateCourse work thread for inspection and continue Track B.
 - [ ] Do not enroll a Florida student or represent approval before written permits and course approval exist.
 

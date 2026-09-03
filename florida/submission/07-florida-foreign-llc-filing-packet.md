@@ -1,12 +1,20 @@
 # StateCourse LLC — Florida foreign-LLC qualification packet
 
 **Prepared:** 2026-09-03  
-**Status:** Northwest registered-agent service active; ready for the fresh California certificate,
-agent-acceptance document, final public-field review and signature; **foreign qualification not filed**
+**Status:** Northwest registered-agent service active; California Certificate of Status held and
+verified; official CR2E027 prefill draft generated; ready for Northwest acceptance/exact-name
+confirmation, private FEIN entry, final public-field review and signatures; **foreign qualification
+not filed**
 
 **Evidence boundary:** an owner-supplied Northwest confirmation screenshot was reviewed on
 2026-09-03 but is not copied into this repository because the same screenshot contains an unrelated
 financial image. Only the nonfinancial registered-agent facts below are recorded.
+
+The owner-supplied California Certificate of Status was reviewed on 2026-09-03. The source
+certificate is not copied into this public repository. Its controlled verification record is:
+`StateCourse LLC`; California entity `B20260376786`; active; issued 2026-09-03; certificate
+`495921637`; source SHA-256
+`47aa1eb3c4d03a6d69f99d7671314543d05a10f9600c793935a19d256c7a1027`.
 
 ## Filing decision
 
@@ -65,10 +73,19 @@ Official sources:
 | Service term shown | 09/03/2026–09/03/2027 |
 | Registered-agent acceptance | **NOT YET HELD — download Northwest's filing instructions or signed acceptance before submitting CR2E027** |
 | Manager/member/authorized person | Anatoliy Kanevsky; use only an address accurate for this public filing |
-| Certificate of existence/status | **MISSING — order only when the packet is ready; Florida receipt must be within 90 days** |
+| Certificate of existence/status | **HELD AND VERIFIED** — California Certificate of Status issued 2026-09-03; StateCourse LLC active; entity `B20260376786`; Florida receipt must be no later than 2026-12-02 to stay within 90 days; internal filing target 2026-11-30 |
 | Authorized-person signature | **MISSING — Anatoliy signs after final review** |
 | Required Florida fee | $125 |
 | Optional Florida certificate/certified copy | Do not select by default |
+
+## Prepared form artifact
+
+`output/pdf/florida/StateCourse-LLC-CR2E027-prefill-DRAFT.pdf` is the four-page official CR2E027
+with 30 controls prefilled and the $125 filing option selected. It remains interactive. The
+alternate-name, FEIN and pre-registration Florida-business-date fields remain blank; Northwest's
+registered-agent acceptance and Anatoliy's authorized-person signature remain unsigned. Every page
+is visibly marked **DRAFT — DO NOT FILE**. Regenerate a clean final only after the missing facts and
+signatures are controlled; do not submit the watermarked draft.
 
 ## Registered-agent confirmation gate
 
@@ -87,10 +104,13 @@ does not create another school location and does not trigger RE 9.
 1. Confirm `StateCourse LLC` remains distinguishable in the live Sunbiz search.
 2. Confirm Northwest's appointment is linked to legal entity `StateCourse LLC`, then obtain its
    exact filing/acceptance instructions. The account label `statecourse` is not the legal filing name.
-3. Order the $5 California Certificate of Status directly from bizfile Online.
-4. Review every public field, especially addresses, FEI treatment and the pre-registration-business
+3. Attach the verified 2026-09-03 California Certificate of Status. Florida must receive it no
+   later than 2026-12-02; use 2026-11-30 as the internal filing deadline.
+4. Enter the FEIN privately from the IRS record if applicable and review every public field,
+   especially addresses and the pre-registration-business
    date statement.
-5. File the foreign-LLC application with the $125 mandatory fees.
+5. Obtain Northwest's registered-agent acceptance and Anatoliy's authorized-person signature,
+   regenerate the clean final, and file it with the $125 mandatory fees.
 6. Save the byte-complete application, California certificate, payment receipt, acknowledgment,
    Florida document number and effective date outside the public repository where appropriate.
 7. Calendar the first Florida annual report for the following calendar year. The current fee is

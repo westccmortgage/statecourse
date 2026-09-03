@@ -1,6 +1,6 @@
 # Florida — session handoff
 
-**Read this before touching anything.** Updated 2 September 2026 after DBPR confirmed the independent instructor-permit school route.
+**Read this before touching anything.** Updated 3 September 2026 after DBPR confirmed the independent instructor-permit school route and the Florida entity packet advanced.
 
 | | |
 |---|---|
@@ -225,10 +225,13 @@ non-blocking without making the stated hours untrue.
    StateCourse relies on it for RE 5.
 5. **Qualify StateCourse LLC as a Florida foreign LLC.** The selected conservative route is recorded
    in `07-florida-foreign-llc-filing-packet.md`. Northwest Registered Agent LLC service is active
-   2026-09-03 through 2027-09-03. Confirm that the appointment applies to exact legal name
-   `StateCourse LLC` because its screen shows the shorter `statecourse` label; then obtain its
-   acceptance instructions, a California Certificate of Status no more than 90 days old, and file
-   CR2E027 with the $125 mandatory state fee. This removes the RE 5 corporate-record mismatch
+   2026-09-03 through 2027-09-03. The California Certificate of Status was obtained and verified
+   2026-09-03 (active; entity `B20260376786`), and the interactive official CR2E027 prefill is at
+   `output/pdf/florida/StateCourse-LLC-CR2E027-prefill-DRAFT.pdf`. It has 30 populated controls but
+   is deliberately watermarked. Confirm that Northwest's appointment applies to exact legal name
+   `StateCourse LLC`, obtain its acceptance, enter the FEIN privately, have Anatoliy sign, regenerate
+   a clean final and file with the $125 fee by the 2026-11-30 internal target. The certificate's
+   outside 90-day receipt date is 2026-12-02. This removes the RE 5 corporate-record mismatch
    without creating a Florida classroom.
 6. **File RE 5 on the instructor-permit basis with $109.** Use the actual California physical
    business address. No Florida classroom is required solely for distance delivery; a

@@ -13,7 +13,7 @@
 | School 2 | DBPR RE 3 Instructor Exam `[1010]` | Owner-action; may proceed while School 1 answer is pending | Current form, protected facts, $62.75, electronic fingerprints and declaration |
 | School 3 | Instructor examination | External/human | DBPR authorization; Pearson appointment; closed book, 100 questions, 3.5 hours, pass 75 |
 | School 4 | Instructor permit | Regulator | Passed examination and DBPR issuance; the permit must exist before relying on it for RE 5 |
-| School 5 | Florida foreign-LLC qualification | Northwest agent active; filing still owner-action | Confirm appointment under exact legal name `StateCourse LLC`; obtain Northwest acceptance instructions and ≤90-day California Certificate of Status; file CR2E027 with $125; use exact accepted Sunbiz record on RE 5 |
+| School 5 | Florida foreign-LLC qualification | Northwest agent active; 2026-09-03 California Certificate of Status verified; interactive CR2E027 prefill draft ready; filing still owner-action | Confirm Northwest appointment under exact legal name `StateCourse LLC`; obtain agent acceptance; enter FEIN privately; sign and file CR2E027 with $125 by the 2026-11-30 internal target; use exact accepted Sunbiz record on RE 5 |
 | School 6 | DBPR RE 5 school permit | Owner-action NO-GO | Issued instructor permit number, actual California physical business address, protected data, signature and $109 |
 | School 7 | DBPR RE 6, if required to add the instructor | Owner-action NO-GO | Issued school and instructor permits; permitholder signature; $0 |
 | Broker 1 | California DRE RE 293 certified history | **REQUESTED; not held** | Inspect endorsement duration/status facts and conservative 30-day filing control |
@@ -42,7 +42,8 @@ One narrow school-path conflict remains: the RE 3 `[1010]` checklist does not re
 | `04-course-submission-manifest.md` | Current RE 18 attachment map and readiness | Ready as control ledger |
 | `05-anatoliy-filing-runbook.md` | Personalized end-to-end sequence and budget | Ready; live facts rechecked at each transaction |
 | `06-california-broker-scope-appendix.md` | Filing cover/index for official California scope statutes/rules | Ready for fresh official pages and filing identifiers |
-| `07-florida-foreign-llc-filing-packet.md` | CR2E027 field map, Northwest agent facts, source basis, fees, dependencies and filing-day controls | Agent selected; ready except exact-name/acceptance check, fresh California certificate and signatures/payment |
+| `07-florida-foreign-llc-filing-packet.md` | CR2E027 field map, Northwest agent facts, source basis, fees, dependencies and filing-day controls | Agent and fresh certificate held; watermarked prefill ready; exact-name/acceptance, private FEIN, signatures and payment remain |
+| `output/pdf/florida/StateCourse-LLC-CR2E027-prefill-DRAFT.pdf` | Interactive four-page official CR2E027 prefill for controlled finalization | Draft only; 30 controls populated and visually verified; do not file while watermark remains |
 | `regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md` | Focused unresolved endorsement/course/exam/degree/status/fingerprint questions | Sent de-identified 2026-09-01; awaiting response |
 | `regulator-inquiries/dbpr-frec-prefiling-inquiry.md` | Prior school/course/form questions | Instructor/school portion answered 2026-09-02; course questions remain open |
 | `regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md` | DBPR's written instructor, school, address and RE 9 answers | Held as owner-supplied correspondence record |

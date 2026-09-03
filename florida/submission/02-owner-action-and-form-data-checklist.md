@@ -105,9 +105,13 @@ This route is no longer on the school critical path because `[1010]` is selected
 Before RE 5, follow `07-florida-foreign-llc-filing-packet.md`. Northwest Registered Agent LLC is
 selected for 09/03/2026–09/03/2027 at 7901 4th St N, STE 300, St. Petersburg, FL 33702. Confirm its
 appointment under the exact legal name `StateCourse LLC`—the confirmation screen currently shows
-the shorter account label `statecourse`—and obtain its acceptance instructions. Then order a
-California Certificate of Status no more than 90 days before Florida receives it and qualify
-StateCourse LLC using CR2E027 and the $125 mandatory state fee. This is the selected
+the shorter account label `statecourse`—and obtain its acceptance instructions. The California
+Certificate of Status is now held and verified: active StateCourse LLC, entity `B20260376786`,
+issued 2026-09-03. Florida must receive it no later than 2026-12-02; the controlled internal filing
+target is 2026-11-30. The interactive watermarked CR2E027 prefill is at
+`output/pdf/florida/StateCourse-LLC-CR2E027-prefill-DRAFT.pdf`. Enter the FEIN privately, obtain
+Northwest's acceptance and Anatoliy's signature, regenerate the unwatermarked final and qualify
+StateCourse LLC with the $125 mandatory state fee. This is the selected
 conservative route because RE 5 requires the company name as registered with the Florida Division
 of Corporations. It is not a claim that Chapter 605's interstate-commerce exclusion never applies.
 

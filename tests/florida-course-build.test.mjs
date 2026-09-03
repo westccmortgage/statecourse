@@ -201,6 +201,7 @@ test("filing-control package locks the current form, human sequence, and honest 
     "florida/submission/regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md",
     "florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md",
     "florida/submission/regulator-inquiries/transmission-log.md",
+    "output/pdf/florida/StateCourse-LLC-CR2E027-prefill-DRAFT.pdf",
     `${COURSE}/submission/curriculum-review-and-expansion-ledger.md`,
   ];
   for (const file of filingFiles) assert.ok(fs.existsSync(path.join(ROOT, file)), file);
@@ -224,6 +225,9 @@ test("filing-control package locks the current form, human sequence, and honest 
   assert.match(foreignLlcPacket, /7901 4th St N, STE 300/);
   assert.match(foreignLlcPacket, /statecourse[\s\S]*not the legal filing name/i);
   assert.match(foreignLlcPacket, /screenshot[\s\S]*not copied into this repository/i);
+  assert.match(foreignLlcPacket, /HELD AND VERIFIED[\s\S]*issued 2026-09-03/i);
+  assert.match(foreignLlcPacket, /2026-12-02[\s\S]*2026-11-30/i);
+  assert.match(foreignLlcPacket, /DRAFT — DO NOT FILE/i);
 
   const formControl = read("florida/submission/03-current-re18-form-control.md");
   assert.match(formControl, /two forms for distance pre\/post-license/i);
