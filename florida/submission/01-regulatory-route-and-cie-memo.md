@@ -1,17 +1,19 @@
-# Florida broker-first regulatory route and CIE boundary memo
+# Florida dual-track regulatory route and CIE boundary memo
 
-## Selected route
+## Selected routes
 
-The owner selected a route under which Anatoliy Kanevsky personally becomes a Florida real estate broker. The controlling sequence is:
+The owner continues a route under which Anatoliy Kanevsky personally becomes a Florida real estate broker. DBPR's written response of 2 September 2026 establishes that this personal objective does not have to precede the school route. The two sequences are:
+
+**School launch:** RE 3 Instructor Exam `[1010]` → fingerprints and DBPR authorization → instructor examination → issued instructor permit → Florida entity treatment → RE 5 on the instructor-permit basis → any required RE 6 step → RE 18.
+
+**Personal broker:**
 
 1. receive and inspect California DRE RE 293 certified license history;
 2. attach current official California statutes/rules defining the broker license's scope;
 3. file DBPR RE 2 **Broker License by Endorsement `[2501/1047]`** and then complete fingerprints;
 4. obtain DBPR/FREC's substantial-equivalence/sufficiency determination and exam authorization;
 5. inspect the DBPR authorization notice, then pass the assigned examination (expected: Florida Real Estate Laws and Rules);
-6. verify the issued Florida broker license and status;
-7. file RE 3 **Specific Degree & Broker's License `[1030]`** with DBPR-accepted certified Finance degree evidence;
-8. file RE 5 using the Florida broker basis, RE 6 to register the instructor, and current RE 18 for Course I.
+6. verify and record the issued Florida broker license and its exact status.
 
 Nothing has been filed with Florida, and no license, permit, equivalency finding or course approval is claimed. The owner reports submitting RE 293 to California DRE on 2026-09-01; the issued history is not held. User/repository facts indicate an active California broker license since 2009, so the five-year duration threshold appears satisfied, but the certified record and DBPR decision control.
 
@@ -43,13 +45,13 @@ The live endorsement checklist says the history must be `current`; it does not s
 
 Section 475.451(2)(a) and RE 5 expressly permit a school permitholder to hold a Florida broker license that is active or voluntarily inactive. RE 3 `[1030]`, however, says `valid broker's license in this state` without expressly resolving status. The package does not import RE 5's status language into RE 3. DBPR confirmation or the correct activation transaction is required before RE 3 relies on inactive status.
 
-## Instructor route `[1030]`
+## School instructor route `[1010]`
 
-Section 475.451(2)(b)1.a. covers a person holding a bachelor's degree in a business-related subject such as finance, or equivalent, plus a valid Florida broker license. RE 3 administers it as **Specific Degree & Broker's License `[1030]`**.
+Section 475.451(2)(b)1.c. permits an instructor applicant to qualify by passing a Commission-approved instructor examination. RE 3 administers it as **Real Estate Instructor Exam `[1010]`**.
 
-The Finance and Credit degree is facially related to `finance`, but DBPR decides whether the foreign institution, degree and evidence qualify. RE 3 asks for a certified official transcript to determine equivalency. Current real-estate materials do not publish a definitive foreign-evaluator list, evaluation type, translation standard or direct-delivery protocol. Obtain DBPR direction before purchasing a particular evaluation.
+DBPR confirmed that no Florida broker license is required for this route and that the issued instructor permit may qualify the RE 5 school permitholder. The permit must issue before RE 5 relies on it.
 
-If DBPR accepts the Florida broker license and degree evidence under `[1030]`, Anatoliy does not take a separate instructor examination. RE 3 `[1010]` remains a lawful but unselected fallback and cannot silently replace `[1030]` after a deficiency.
+The official examination is closed book, 100 questions, 3.5 hours and requires 75 points. One document conflict remains: RE 3 lists no prelicensing-course certificate, but the current Instructor CIB's generic “What to Bring” section asks for one. Obtain a written answer before test-center admission; do not infer a course prerequisite.
 
 ## Explicit fallback, not current work
 
@@ -57,7 +59,7 @@ If endorsement `[1047]` is finally denied after any timely section 455.213(15) r
 
 ## School, course and CIE boundary
 
-StateCourse proceeds as a DBPR-permitted proprietary real estate school under section 475.451, using a permitted instructor and separately approved Course I. RE 5 will use Anatoliy's issued Florida broker license as the school-permitholder qualification. Because he intends to teach, the instructor permit and RE 6 registration must exist before instruction.
+StateCourse proceeds as a DBPR-permitted proprietary real estate school under section 475.451, using a permitted instructor and separately approved Course I. RE 5 will use Anatoliy's issued instructor permit as the school-permitholder qualification. Any required RE 6 registration must exist before instruction.
 
 Course materials may be developed now but not offered for Florida credit until school permit, instructor relationship, course approval and production/reporting gates are proven.
 
@@ -67,7 +69,7 @@ Section 1005.06(1)(b), Florida Statutes, exempts an institution when another Flo
 - RE 18 course approval alone is insufficient;
 - no blanket CIE exemption is claimed before RE 5 issues.
 
-The conservative entity path remains Florida foreign qualification before RE 5, pending the online-only location/entity answer. This does not block personal RE 2 endorsement.
+DBPR confirmed that the actual California physical business address may be used for a distance-only school and that a registered-agent-only address does not require RE 9. DBPR referred the foreign-LLC question to the Florida Division of Corporations; complete whatever corporate treatment it requires before RE 5 so the application matches that record. This does not block personal RE 2 endorsement.
 
 ## Official source anchors
 

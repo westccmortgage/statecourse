@@ -2,7 +2,25 @@
 
 These are facts and acts automation cannot truthfully invent, certify, purchase or perform. Use `05-anatoliy-filing-runbook.md` for dependencies and costs.
 
-**Selected route:** Anatoliy becomes a Florida broker through RE 2 **Broker License by Endorsement `[2501/1047]`**, then uses the issued Florida broker license plus his Finance degree for RE 3 `[1030]`. RE 2 out-of-state experience `[1012]` and RE 3 instructor exam `[1010]` are fallbacks, not the selected route.
+**Selected routes:** for the school, RE 3 **Instructor Exam `[1010]`** followed by the issued instructor permit and RE 5 on that permit; for Anatoliy personally, RE 2 **Broker License by Endorsement `[2501/1047]`** in parallel. DBPR confirmed on 2026-09-02 that the broker license is not required solely for the instructor-permit school route.
+
+## DBPR RE 3 — Instructor Exam `[1010]`
+
+Before filing, obtain a focused written answer on the conflict between RE 3 (no prelicensing certificate listed) and the February 2025 Instructor CIB's generic instruction to bring a prelicensing completion certificate.
+
+Owner supplies/confirms privately:
+
+- legal name exactly as shown on Social Security records;
+- SSN, birth date, gender, physical residence and mailing addresses;
+- phone/email, every current/prior license and every former name/alias;
+- truthful background answers and every required supporting record;
+- **Real Estate Instructor Exam `[1010]`** selection;
+- high-school diploma/equivalency fact;
+- electronic fingerprints and retained TCN/receipt;
+- declaration, signature/date and **$62.75** current form fee;
+- filed copy, receipt, transaction number and every DBPR/Pearson notice.
+
+After authorization, schedule the physical Pearson exam: closed book, 100 multiple-choice questions, 3.5 hours, 75 points to pass. A passing score is not the permit; record the issued permit before RE 5.
 
 ## California DRE RE 293 — current certified history
 
@@ -37,7 +55,7 @@ Do not select `[1012]`, `[1013]` or `[1014]`. No 72-hour certificate appears on 
 
 ## Fingerprints
 
-Complete the registered process immediately **after** RE 2. Confirm the current profession/ORI with the provider; DBPR currently lists `FL920010Z` for Real Estate Sales and Brokers. Retain TCN/receipt privately and monitor for re-roll or record requests.
+Complete the registered process for each filed transaction as DBPR directs. Confirm the current profession/ORI with the provider; DBPR currently lists `FL920010Z` for Real Estate Sales and Brokers. Retain TCN/receipt privately and monitor for re-roll or record requests. Do not assume RE 2 and RE 3 reuse without written confirmation.
 
 ## DBPR equivalency decision
 
@@ -65,7 +83,7 @@ The 40-question format is expected, not yet transaction-confirmed: the endorseme
 - RE 3 `[1030]` says `valid Florida broker license` without expressly resolving status; confirm before relying on inactive status.
 - Separately verify post-license education and renewal obligations after issuance.
 
-## Degree evidence and RE 3 `[1030]`
+## Optional later degree evidence and RE 3 `[1030]`
 
 Prepare:
 
@@ -77,11 +95,11 @@ Prepare:
 
 The subject appears facially aligned with `finance`, but DBPR decides equivalency. Current real-estate materials do not publish a definitive foreign-degree protocol.
 
-File only after broker and degree gates close. Select `[1030]`; supply the issued Florida broker number/status, transcript/equivalency package, protected data and supporting records; sign/date; pay **$62.75**; and confirm fingerprint reuse or a new capture. If DBPR accepts `[1030]`, no separate instructor exam is required. `[1010]` remains fallback only.
+This route is no longer on the school critical path because `[1010]` is selected. After broker issuance, `[1030]` may remain useful as an additional qualification basis, but it must not delay the current RE 3 examination filing.
 
 ## RE 5, RE 6 and RE 18
 
-For RE 5, after the credential and entity/location gates close, owner confirms the Florida-broker qualification, issued number, StateCourse LLC name/ownership, final location/mail/contact facts, any foreign-qualification/DBA evidence, declaration/signature/date and **$109**.
+For RE 5, after the instructor permit and entity gates close, owner selects the Florida-instructor-permit qualification, enters the issued permit number, confirms StateCourse LLC name/ownership, uses the actual California physical business address, provides any required foreign-qualification/DBA evidence, signs/dates and pays **$109**. A registered-agent-only address does not require RE 9; only a later actual additional school location does.
 
 After the school and instructor permits issue, file RE 6 to add the instructor; current fee $0. Re-download current RE 18 before signature and file Course I only after the course, two examinations, page-cited keys and operational evidence are complete. Current RE 18 states $0 for schools.
 

@@ -11,12 +11,13 @@ examinations for distance pre/post-licensing and labels RE 19 and RE 20 provider
 remains the Phase 0 acceptance record; current execution controls are in `florida/HANDOFF.md` and
 `florida/submission/00-filing-index.md`.
 
-**Route correction, 1 Sep 2026:** the owner selected the personal Florida-broker route. Current
-execution is RE 2 Broker License by Endorsement `[2501/1047]`, followed by the DBPR-assigned exam
-(expected from the linked CIB to be the 40-question Florida Laws and Rules exam), then RE 3 Specific
-Degree & Broker's License `[1030]`. RE 2 `[1012]` with the 72-hour course/full broker exam and RE 3
-`[1010]` are fallbacks only. The generic RE 2 course/exam text conflicts with its endorsement-
-specific checklist, so the authorization/written DBPR response must be inspected before spending.
+**Route update, 2 Sep 2026:** DBPR confirmed in writing that the school need not wait for a Florida
+broker license. StateCourse now uses RE 3 Instructor Exam `[1010]` → issued instructor permit →
+RE 5 on the instructor-permit basis as the school-launch track. The owner separately continues RE 2
+Broker License by Endorsement `[2501/1047]` as a personal objective. The instructor permit must
+issue before RE 5 relies on it. The school may use its actual California physical business address;
+a registered-agent-only address does not require RE 9. The foreign-LLC question belongs to the
+Florida Division of Corporations.
 
 ---
 
@@ -131,10 +132,10 @@ course omission therefore remain subject to DBPR's authorization or written conf
 current Pearson fee is unverified. Larson's $99 endorsement prep is optional and non-credit;
 purchase is deferred until the assigned exam is known.
 
-After broker issuance, selected instructor route `[1030]` requires a valid Florida broker license
-and a certified official business-related degree transcript. Finance is listed, but DBPR must decide
-foreign-degree equivalency and acceptable broker status. If accepted, no instructor examination is
-required. `[1010]` remains fallback research only.
+The selected school route is now `[1010]`: current published exam format is 100 questions, 3.5
+hours, closed book, pass 75. One narrow conflict remains: RE 3 does not list a prelicensing-course
+certificate, but the Instructor CIB's generic “What to Bring” section asks for one. Obtain written
+DBPR/Pearson clarification before test-center admission; do not infer a course prerequisite.
 
 ### 5. School application readiness — **NOT READY, fully mapped**
 

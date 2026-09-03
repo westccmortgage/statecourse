@@ -3,11 +3,11 @@
 This is the exact transport record for the four owner-authorized Florida inquiries. The message
 bodies were separated by subject area rather than sent as one combined letter.
 
-**Route note added 2026-09-01:** messages 2 and 3 were sent before the owner selected the personal
-Florida-broker route. Their RE 3 `[1010]` content is now fallback research only; it is not the
-selected route and the historical send record is intentionally unchanged. The selected route is
-RE 2 endorsement `[2501/1047]`, Florida Laws and Rules exam, then RE 3 `[1030]`. A focused
-endorsement/degree inquiry was sent in de-identified form and is awaiting a response.
+**Route note updated 2026-09-02:** DBPR answered message 2 and confirmed that RE 3 `[1010]` may lead
+to an instructor permit without a Florida broker license and that the issued permit may be used on
+RE 5. StateCourse therefore selected `[1010]` for the school-launch track while continuing RE 2
+endorsement `[2501/1047]` separately for the owner's personal Florida broker objective. The focused
+endorsement/degree inquiry remains open.
 
 ## 1. Course, current RE 18, and filing questions
 
@@ -37,7 +37,7 @@ endorsement/degree inquiry was sent in de-identified form and is awaiting a resp
 | Scope | RE 3 transaction 1010, instructor route, RE 5 school permit, with a request to route the inquiry internally as needed |
 | Gmail message ID | `1a05de8775c72589` |
 | Gmail thread ID | `1a05de8775c72589` |
-| Current state | Awaiting regulator response; route content now fallback research only |
+| Current state | **ANSWER RECEIVED 2026-09-02** at `info@statecourse.com`; school-launch route selected. Response recorded in `dbpr-instructor-school-response-2026-09-02.md` |
 
 ## 3. Instructor-examination operations
 
@@ -52,7 +52,7 @@ endorsement/degree inquiry was sent in de-identified form and is awaiting a resp
 | Scope | RE 3 transaction 1010; Pearson scheduling/delivery; current separate exam fee; current CIB, length, time and passing score; exam-route eligibility for RE 5; request to add `info@statecourse.com` to the instructor distribution list |
 | Gmail message ID | `1a05df1b7346867f` |
 | Gmail thread ID | `1a05df1b7346867f` |
-| Current state | Awaiting Bureau of Education & Testing response; route content now fallback research only |
+| Current state | Awaiting Bureau of Education & Testing response; now relevant to the selected `[1010]` school-launch route |
 
 ## 4. Broker endorsement and later degree documentation
 

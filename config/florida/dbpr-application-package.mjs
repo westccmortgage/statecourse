@@ -140,7 +140,7 @@ export const FORMS = Object.freeze([
     url: "https://www2.myfloridalicense.com/re/documents/DBPR_RE_9_Additional_School_Location.pdf",
     governs: "the one-permit-per-location construction in Rule 61J2-17.013, F.A.C.",
     relevanceToStateCourse:
-      "Probably none, and deliberately not assumed either way. StateCourse would operate no Florida classroom. Whether a distance-only school has any 'additional location' to declare is an open question for DBPR; the form is held so the question can be asked against the actual instrument.",
+      "Not required for the proposed registered-agent-only address. DBPR confirmed in writing on 2 September 2026 that a registered-agent address is not an additional school location when no school operations or instruction occur there. RE 9 becomes relevant only if StateCourse later establishes or operates from an actual additional physical school location.",
   }),
 
   form({

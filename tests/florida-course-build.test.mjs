@@ -151,14 +151,15 @@ test("Closing Disclosure instruction locks current federal forms and the CIB-lin
   assert.match(section, /201311 CFPB specimen/);
 });
 
-test("current official instructor CIB remains accurate fallback research", () => {
-  assert.equal(INSTRUCTOR_EXAM.selected, false);
+test("current official instructor CIB controls the selected school-launch exam route", () => {
+  assert.equal(INSTRUCTOR_EXAM.selected, true);
   assert.equal(INSTRUCTOR_EXAM.administrator, "Pearson VUE / Pearson Professional Assessments");
   assert.match(INSTRUCTOR_EXAM.delivery, /physical Pearson test center/);
   assert.equal(INSTRUCTOR_EXAM.closedBook, true);
   assert.equal(INSTRUCTOR_EXAM.itemCount, 100);
   assert.equal(INSTRUCTOR_EXAM.allottedMinutes, 210);
   assert.equal(INSTRUCTOR_EXAM.passingPoints, 75);
+  assert.match(INSTRUCTOR_EXAM.prelicensingCertificateConflict, /RE 3.*require no prelicensing course certificate/i);
   assert.equal(INSTRUCTOR_EXAM.currentFeeVerified, false);
   assert.equal(INSTRUCTOR_EXAM.contentWeights.zoningAndPlanning, null);
   assert.match(INSTRUCTOR_EXAM.outlineAmbiguity, /no 0% is inferred/);
@@ -196,6 +197,7 @@ test("filing-control package locks the current form, human sequence, and honest 
     "florida/submission/06-california-broker-scope-appendix.md",
     "florida/submission/regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md",
     "florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md",
+    "florida/submission/regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md",
     "florida/submission/regulator-inquiries/pearson-instructor-exam-inquiry.md",
     "florida/submission/regulator-inquiries/transmission-log.md",
     `${COURSE}/submission/curriculum-review-and-expansion-ledger.md`,
@@ -203,12 +205,14 @@ test("filing-control package locks the current form, human sequence, and honest 
   for (const file of filingFiles) assert.ok(fs.existsSync(path.join(ROOT, file)), file);
 
   const index = read("florida/submission/00-filing-index.md");
-  assert.match(index, /Broker License by Endorsement `\[2501\/1047\]`/);
-  assert.match(index, /RE 2 filed first[\s\S]*DBPR-assigned examination/i);
-  assert.match(index, /expected exam/i);
-  assert.match(index, /expressly labels? it `\[1047\]`/i);
+  assert.match(index, /two tracks now run in parallel/i);
+  assert.match(index, /RE 3 Instructor Exam `\[1010\]`/);
+  assert.match(index, /no Florida broker license is required solely for the school/i);
+  assert.match(index, /closed book, 100 questions, 3\.5 hours, pass 75/i);
+  assert.match(index, /RE 2 endorsement `\[2501\/1047\]`/);
   assert.match(index, /Out of State Experience `\[2501\/1012\]`[\s\S]*fallback/i);
-  assert.match(index, /Specific Degree & Broker's License `\[1030\]`/);
+  assert.match(index, /actual California physical business address/i);
+  assert.match(index, /registered-agent-only address does not require RE 9/i);
 
   const formControl = read("florida/submission/03-current-re18-form-control.md");
   assert.match(formControl, /two forms for distance pre\/post-license/i);

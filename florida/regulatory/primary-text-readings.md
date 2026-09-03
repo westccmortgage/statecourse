@@ -461,14 +461,16 @@ Basis [1010] requires no broker licence at all. And DBPR's own *Real Estate Scho
 Requirements* sheet lists the same three routes, the third being "Pass an Instructor Examination
 approved by the FREC."
 
-**The consequence.** Both statutory branches exist, but the owner's selected branch is now the
-Florida-broker branch: endorsement `[1047]` → DBPR-assigned exam (expected Laws and Rules) → issued Florida broker license →
-RE 3 `[1030]` on the Finance-degree/broker basis → RE 5 on the broker basis → RE 6. If DBPR accepts
-the foreign degree and broker status under `[1030]`, no instructor examination is required.
+**The consequence, confirmed in writing 2 September 2026.** Both statutory branches exist. DBPR
+confirmed that an individual need not hold a Florida broker license to qualify through RE 3
+`[1010]`; after passing the required examination and receiving the instructor permit, the individual
+may use that permit to qualify as the RE 5 school permitholder. The permit must issue before RE 5
+relies on it. The correspondence record is
+`florida/submission/regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md`.
 
-RE 3 `[1010]` remains a lawful, unselected fallback only. The prior Pearson/DBPR correspondence
-about that exam remains historical research and must not be read as the chosen route. Nothing along
-either route has been approved, and no person is asserted eligible. The status matrix is in
+StateCourse therefore selected `[1010]` for the school-launch track while the owner separately
+continues RE 2 endorsement `[1047]` for the personal Florida broker objective. Nothing along either
+track has been approved, and no person is asserted eligible. The status matrix is in
 `config/florida/school-permit-ledger.mjs`.
 
 ### What RE 18 requires for an initial Course I approval
@@ -510,11 +512,11 @@ Accordingly, DBPR's authorization must confirm the assignment before scheduling.
 fee and candidate's available center remain external. Larson currently advertises a $99 optional,
 non-credit endorsement prep product; defer purchase until the assigned exam is known.
 
-**Foreign-degree protocol and RE 3 broker status.** RE 3 `[1030]` calls for a certified official
-transcript, but the current real-estate materials do not publish a definitive evaluator list,
-evaluation type, translation/direct-send rules, or whether voluntarily inactive status satisfies
-its `valid broker's license` language. Those are unresolved DBPR questions. The earlier instructor
-exam inquiry (Gmail thread `1a05df1b7346867f`) predates the broker selection and is fallback research.
+**Instructor-exam admission document conflict.** RE 3 `[1010]` does not list a prelicensing-course
+completion certificate, but the February 2025 Instructor CIB's generic “What to Bring” section asks
+for one. Obtain written DBPR/Pearson clarification before test-center admission; no 63-hour or
+72-hour prerequisite is inferred from that sentence. The earlier instructor-exam inquiry (Gmail
+thread `1a05df1b7346867f`) is now relevant to the selected school-launch route.
 
 **A verification path through DBPR's own records.** The Department's public licensee search at
 `myfloridalicense.com/wl11.asp` timed out on every attempt from this environment. No numbered walk

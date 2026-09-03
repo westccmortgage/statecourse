@@ -620,7 +620,8 @@ export const SOURCES = Object.freeze([
         reliedOnBy: Object.freeze(["config/florida/dbpr-application-package.mjs"]) },
     ]),
     conflicts: Object.freeze([
-      "Held so that the question can be asked against the actual instrument: whether a distance-only school with no Florida classroom has any 'additional location' to declare under Rule 61J2-17.013's one-permit-per-location construction is unresolved.",
+      /* Closed by DBPR's 2 September 2026 direct response for StateCourse's proposed facts: a
+         registered-agent-only address is not an additional school location. */
     ]),
   }),
   source({
@@ -1129,9 +1130,12 @@ export const SOURCES = Object.freeze([
         reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/HANDOFF.md"]) },
       { claim: "candidates must bring two forms of signature identification, one government-issued; permitted calculators are described; cancellation must occur at least two days before the appointment",
         reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/HANDOFF.md"]) },
+      { claim: "the generic What to Bring section tells candidates to bring a Certificate of Pre-licensing Education Completion even though the RE 3 [1010] checklist does not list one",
+        reliedOnBy: Object.freeze(["config/florida/school-permit-ledger.mjs", "florida/submission/05-anatoliy-filing-runbook.md"]) },
     ]),
     conflicts: Object.freeze([
       "The outline labels Zoning and Planning as content area IX but prints no percentage for it; the other eleven printed percentages total 100. The build records the omission and does not invent 0%.",
+      "The generic What to Bring section requests a prelicensing education completion certificate, but RE 3 [1010]'s checklist and examination qualification route do not. Written DBPR/Pearson clarification is required before test-center admission; no course prerequisite is inferred.",
     ]),
   }),
   source({
@@ -1530,10 +1534,11 @@ export const SCHOOL = Object.freeze({
   lawfulRouteToSchoolPermitExists: true,
   lawfulRouteToInstructorPermitExists: true,
   routeTaken: false,
-  selectedPersonalRoute: "DBPR RE 2 Broker License by Endorsement [2501/1047], then DBPR RE 3 Specific Degree & Broker's License [1030]",
+  selectedPersonalRoute: "DBPR RE 2 Broker License by Endorsement [2501/1047] — pursued in parallel and not a prerequisite to the school route",
+  selectedSchoolLaunchRoute: "DBPR RE 3 Real Estate Instructor Exam [1010], then issued instructor permit and DBPR RE 5 on the instructor-permit basis",
   anyPersonAssertedEligible: false,
   routeSummary:
-    "Receive and inspect current California DRE RE 293; attach official California broker-scope statutes/rules; file DBPR RE 2 endorsement [2501/1047] and fingerprints; obtain DBPR/FREC's equivalency decision; verify the authorization notice's exact exam and course-document conditions, then pass the assigned exam (expected Laws and Rules: 40 questions); receive the Florida broker license; then file DBPR RE 3 [1030] on the Finance-degree-plus-broker basis and RE 5 on the Florida-broker basis. RE 2 [1012]/72-hour/full broker exam and RE 3 [1010] are unselected fallbacks only unless DBPR gives transaction-specific written direction otherwise.",
+    "Run two tracks in parallel. For the school, clarify the Instructor CIB's prelicensing-certificate inconsistency, file DBPR RE 3 [1010] with fingerprints, pass the instructor examination, receive the instructor permit, resolve StateCourse LLC's Florida Division of Corporations treatment, and file RE 5 on the instructor-permit basis using the actual California physical business address; a registered-agent-only address does not require RE 9. Separately, receive and inspect DRE RE 293 and pursue RE 2 endorsement [2501/1047] for Anatoliy's personal Florida broker objective. No enrollment begins before school and course approvals.",
 });
 
 /* ── claims this build may never make ─────────────────────────────────────────────────────────

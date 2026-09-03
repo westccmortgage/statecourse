@@ -1,6 +1,6 @@
 # Florida — session handoff
 
-**Read this before touching anything.** Updated 1 September 2026 after the owner selected the Florida broker-by-endorsement route.
+**Read this before touching anything.** Updated 2 September 2026 after DBPR confirmed the independent instructor-permit school route.
 
 | | |
 |---|---|
@@ -16,19 +16,21 @@
 
 Phase 0 is done and the course-development layer now exists. Nothing is filed or approved.
 
-**Selected personal route:** current California history + California scope laws → DBPR RE 2 Broker
-License by Endorsement `[2501/1047]` → fingerprints → DBPR/FREC equivalency review → DBPR-assigned
-exam (expected from the linked CIB to be the 40-question Florida Laws and Rules exam) → Florida broker license → RE 3 Specific Degree & Broker's License
-`[1030]` → RE 5 → RE 6 → current RE 18. Out-of-state experience `[1012]`/72-hour course/full
-broker exam and instructor exam `[1010]` are fallbacks only.
+**Two selected tracks run in parallel.** School launch: DBPR RE 3 Instructor Exam `[1010]` →
+instructor examination → issued instructor permit → Florida entity treatment → RE 5 on the
+instructor-permit basis → any required RE 6 step → current RE 18. Personal broker objective:
+current California history + California scope laws → DBPR RE 2 endorsement `[2501/1047]` →
+fingerprints → equivalency review → DBPR-assigned examination → Florida broker license. DBPR's
+2 September written response establishes that the broker track is not a prerequisite to the school
+track. Nothing is filed or approved.
 
 - **61 manifest authorities** read — 51 held/hashed and 10 current remote-only; 202 files under `florida/frec-sources/`.
-- **118 material claims**, each naming what relies on it.
+- **119 material claims**, each naming what relies on it.
 - **18 recorded conflicts**, none resolved by guessing.
 - **19 syllabus sections, 180 learning objectives**, each page-referenced; `verify()` clean.
 - **19 curriculum files, 3,000 designed instruction minutes, 180 periodic application items and 19 secure final-item drafts.**
 - **Two 126-item form blueprints: 252 secure slots, all 180 objectives covered, 233 slots still unwritten.**
-- **Four owner-controlled DBPR inquiries sent 1 Sep 2026**; two `[1010]` threads are now fallback research, and the focused endorsement inquiry was de-identified. Exact Gmail IDs are in the transmission log. Responses remain pending.
+- **Four owner-controlled DBPR inquiries sent 1 Sep 2026.** The instructor/school thread was answered 2 Sep; the course, instructor-exam operations and endorsement threads remain open. Exact transport records are in the transmission log.
 - **79 Florida tests**, all passing. Source lock **LOCKED**.
 - **Repository-wide direct run:** 1,021/1,055 pass; all 34 failures are outside the Florida build.
   A clean built-main comparison was not reproducible in this worktree because the bootstrap requires
@@ -206,43 +208,39 @@ non-blocking without making the stated hours untrue.
 
 ## 6. What blocks progress, and who can unblock it
 
-### Selected broker route — do these in order
+### School launch — do these without waiting for RE 293
 
-1. **Receive and inspect California DRE RE 293.** The owner reports it was sent on 1 September
-   2026. It must prove broker type, initial exam, current status, discipline, five or more years as
-   a current and valid broker, active now or within the last two years, and valid months. The live
-   checklist says `current`; use the conservative 30-day filing control from held requirements.
-2. **Complete the California scope packet now.** `submission/06-california-broker-scope-appendix.md`
-   indexes fresh official 2026 DRE pages covering the broker definitions/extensions and principal
-   supervision rule. Submit official pages, not only the StateCourse summary.
-3. **File DBPR RE 2 endorsement `[2501/1047]` with $70, then fingerprints.** The five-year threshold
-   appears satisfied from user/repository facts (active CA broker since 2009), but the history and
-   DBPR/FREC equivalency decision control. No approval is claimed.
-4. **Protect the endorsement review right.** Section 455.213(15), Florida Statutes, gives seven
-   business days after notice to request secretary review of an adverse equivalency/sufficiency
-   finding when no other denial ground exists. It is not an approval guarantee.
-5. **After DBPR authorization, inspect and pass the assigned exam.** The live endorsement checklist
-   links the CIB but does not name the exam; the CIB's 40-question, 90-minute, 30/40 Laws and Rules
-   format cites section 475.180 rather than `[1047]`. Treat it as expected, not transaction-confirmed.
-   The generic RE 2 instructions also conflict with the endorsement-specific checklist by stating
-   that every broker applicant needs the 72-hour course/full exam. Do not spend until the
-   authorization or written DBPR response resolves the transaction-specific treatment. Current fee
-   is live/uncertain; Larson's $99 product is optional, zero-credit prep.
-6. **After broker issuance, file RE 3 `[1030]`.** Use the valid Florida broker license plus a
-   certified official Finance transcript and DBPR-directed foreign-equivalency/translation package.
-   The exact evaluator/type/direct-send rules and inactive-broker status treatment are unresolved.
-   If `[1030]` is accepted, no instructor exam is required.
-7. **Then RE 5 → RE 6 → current RE 18.** RE 5 expressly accepts active or voluntarily inactive
-   broker status; do not assume that language also resolves RE 3. Known DBPR application charges in
-   the selected chain are $241.75 before variable costs.
+1. **Clarify the Instructor CIB certificate sentence.** RE 3 `[1010]` does not list a prelicensing
+   certificate, but the February 2025 CIB's generic “What to Bring” section does. Send the focused
+   follow-up from `info@statecourse.com`; do not invent a 63-hour or 72-hour prerequisite.
+2. **File RE 3 Instructor Exam `[1010]` with $62.75 and fingerprints.** Retain the filed copy,
+   receipt, TCN and authorization. This transaction does not use RE 293, a Florida broker license or
+   a degree packet.
+3. **Pass the instructor examination after authorization.** Current official format: physical
+   Pearson center, closed book, 100 questions, 3.5 hours, 75 points to pass. Verify the live fee.
+4. **Receive the instructor permit.** A passing score is not the permit; the permit must issue before
+   StateCourse relies on it for RE 5.
+5. **Resolve StateCourse LLC's Florida corporate treatment.** DBPR directed the foreign-LLC question
+   to the Division of Corporations. Complete any required registration so RE 5 matches that record.
+6. **File RE 5 on the instructor-permit basis with $109.** Use the actual California physical
+   business address. No Florida classroom is required solely for distance delivery; a
+   registered-agent-only address does not require RE 9.
+7. **Complete any required RE 6 step, then current RE 18.** School and course approval are separate.
+   No Course I offering begins before all applicable approvals.
 
-**Do not buy the 72-hour broker course now.** It and the full 100-question, 3.5-hour broker exam
-belong to fallback RE 2 Out of State Experience `[1012]` after a final endorsement denial, any
-timely review and deliberate owner choice; separately preserve any transaction-specific written
-instruction DBPR gives on `[1047]`. The previously researched instructor-exam route `[1010]` is also fallback
-only. Existing DBPR correspondence about `[1010]` remains historical research; exact IDs are in
-`submission/regulator-inquiries/transmission-log.md`. A focused, de-identified endorsement/degree
-inquiry was sent on 1 September 2026 and is awaiting a response; do not duplicate it.
+### Personal broker objective — continue in parallel
+
+1. Receive and inspect California DRE RE 293 and complete the California scope packet.
+2. File RE 2 endorsement `[2501/1047]` with $70 and fingerprints.
+3. Protect the section 455.213(15) review window if an adverse equivalency finding is the only
+   proposed denial ground.
+4. Inspect the authorization and pass only the exam DBPR assigns. Laws and Rules — 40 questions,
+   90 minutes, 30 correct — is expected but not yet transaction-confirmed.
+5. Record the issued Florida broker number and exact status.
+
+**Do not buy the 72-hour broker course now.** It remains part of the deliberate `[1012]` fallback,
+not the current endorsement or school-launch plan. The focused endorsement inquiry sent 1 September
+remains open; do not duplicate it.
 
 ### Closed inside the repository
 

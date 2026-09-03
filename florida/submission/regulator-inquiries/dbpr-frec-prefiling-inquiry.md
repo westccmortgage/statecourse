@@ -1,16 +1,16 @@
 # DBPR/FREC pre-filing inquiry - transmitted by scope
 
-> **Historical transport record; part of the route content is now fallback only.** The course/RE 18
-> questions remain live. The RE 3 `[1010]` instructor-exam and exam-route RE 5 questions were sent
-> before the owner selected the Florida-broker route and must not be treated as next steps. The
-> selected personal sequence is RE 2 endorsement `[2501/1047]`, the DBPR-assigned exam (expected
-> from the linked CIB to be the 40-question Florida Laws and Rules exam), and RE 3 `[1030]` after
-> broker issuance. The original sent wording is preserved below.
+> **Historical transport record; partially answered.** The course/RE 18 questions remain live.
+> DBPR answered the RE 3 `[1010]`, RE 5, distance-only address and RE 9 questions on 2 September
+> 2026. `[1010]` is now the selected school-launch route, running in parallel with the owner's
+> personal RE 2 endorsement `[2501/1047]` track. The original sent wording is preserved below; the
+> answer is recorded in `dbpr-instructor-school-response-2026-09-02.md`.
 
 **Status:** Sent by the owner on 2026-09-01 as two separate messages: course/current-RE-18 and
-instructor/RE-3/RE-5. Exact sender, Reply-To, recipients and Gmail message/thread IDs are preserved
-in `transmission-log.md`. This file retains the combined drafting record; the transmission log, not
-this combined layout, is the authoritative transport record.
+instructor/RE-3/RE-5. The second message was answered 2026-09-02; the first remains open. Exact
+sender, Reply-To, recipients and Gmail message/thread IDs are preserved in `transmission-log.md`.
+This file retains the combined drafting record; the transmission log, not this combined layout, is
+the authoritative transport record.
 
 **To:** Florida Real Estate Commission / Division of Real Estate through the official DBPR contact channel
 **Subject:** Pre-filing clarification - distance FREC Course I school, instructor and course application

@@ -56,11 +56,11 @@
  *   DBPR RE 3 (Instructor Permit), Section I — three qualification bases, the first being
  *       "Real Estate Instructor Exam [1010]", which requires no broker licence at all.
  *
- * CURRENT OWNER SELECTION. The legal examination alternative remains true, but it is not the
- * selected personal route. Anatoliy selected Florida broker licensure first: RE 2 endorsement
- * [2501/1047], the examination DBPR assigns (expected to be Florida Laws and Rules), then RE 3
- * [1030] on the degree-plus-Florida-broker basis. This file does not assert endorsement
- * eligibility, equivalency, examination assignment or approval.
+ * CURRENT OWNER SELECTION. Anatoliy still pursues Florida broker licensure personally through RE 2
+ * endorsement [2501/1047]. DBPR's 2 September 2026 written response makes that personal objective
+ * independent from the school's critical path: StateCourse can pursue RE 3 [1010], the instructor
+ * examination and an instructor permit now, then use that permit on RE 5. The two tracks therefore
+ * run in parallel. This file does not assert eligibility, examination admission or approval.
  *
  * AUTHORITY CLASSIFICATION USED THROUGHOUT:
  *   STATUTE   — controlling.
@@ -207,8 +207,9 @@ export const ELIGIBILITY_MATRIX = Object.freeze([
     requirement: "Hold a licence as a Florida broker, either active or voluntarily inactive.",
     status: STATUS.AVAILABLE,
     selectedRoute: true,
+    routeRole: "selected parallel personal-broker track; not a prerequisite to the school filing",
     stateCoursePosition:
-      "SELECTED, NOT HELD. Apply first for a Florida broker license through RE 2 endorsement [2501/1047]. Repository/user facts report active California broker licensure since 2009 and therefore appear to meet the five-year duration threshold, but RE 293 is not held and DBPR/FREC must determine substantial equivalence or sufficiency. The resulting Florida license, active or voluntarily inactive, would satisfy this RE 5 branch. No approval or present eligibility is asserted.",
+      "SELECTED PERSONAL TRACK, NOT HELD. Apply for a Florida broker license through RE 2 endorsement [2501/1047] when RE 293 arrives. Repository/user facts report active California broker licensure since 2009 and therefore appear to meet the five-year duration threshold, but DBPR/FREC must determine substantial equivalence or sufficiency. DBPR confirmed in writing on 2 September 2026 that this broker license is not required solely to qualify for the school permit when the instructor-permit branch is used. No approval or present eligibility is asserted.",
     owner: OWNER.HUMAN,
   }),
   Object.freeze({
@@ -218,9 +219,10 @@ export const ELIGIBILITY_MATRIX = Object.freeze([
     requirement:
       "Have passed an instructor's examination approved by the Commission. On DBPR RE 5 this is captured as 'Holder of a Florida Instructor's License' with the instructor permit number.",
     status: STATUS.AVAILABLE,
-    selectedRoute: false,
+    selectedRoute: true,
+    routeRole: "selected school-launch track, running in parallel with personal broker endorsement",
     stateCoursePosition:
-      "LAWFUL BUT UNSELECTED FALLBACK. The prior instructor-exam research remains available if the owner later changes route deliberately. Nothing along it is held, and nobody is asserted eligible.",
+      "SELECTED SCHOOL-LAUNCH TRACK, NOT HELD. DBPR confirmed in writing on 2 September 2026 that an individual need not hold a Florida broker license if the individual otherwise qualifies through RE 3 [1010], passes the required examination and receives the instructor permit; the issued permit may then be used on RE 5. Nothing along this route is held, and nobody is asserted eligible.",
     owner: OWNER.HUMAN,
   }),
   Object.freeze({
@@ -232,7 +234,7 @@ export const ELIGIBILITY_MATRIX = Object.freeze([
     status: STATUS.AVAILABLE,
     selectedRoute: true,
     stateCoursePosition:
-      "SELECTED AFTER BROKER ISSUANCE: route (a), administered by RE 3 [1030], using a valid Florida broker license plus the certified official Finance degree/equivalency package. Finance is facially listed, but foreign-degree protocol and acceptable broker status remain DBPR determinations. If accepted, no instructor examination is required. Route (c) [1010] remains fallback only. No permit is held.",
+      "SELECTED FOR SCHOOL LAUNCH: route (c), administered by RE 3 [1010], followed by the instructor examination and issuance of the permit. Personal broker endorsement continues separately; after broker issuance, [1030] remains a possible alternative basis but is not on the school critical path. The current CIB's request for a prelicensing completion certificate conflicts with the RE 3 checklist and must be clarified before test-center admission. No permit is held.",
     owner: OWNER.HUMAN,
   }),
   Object.freeze({
@@ -254,7 +256,7 @@ export const ELIGIBILITY_MATRIX = Object.freeze([
       "“A school permitholder must also meet the requirements of a school instructor if actively engaged in teaching.” DBPR RE 5 states it as: “If permit holder is also teaching, the applicant must meet requirements of school instructor.”",
     status: STATUS.CONDITIONAL,
     stateCoursePosition:
-      "The selected plan obtains the RE 3 [1030] instructor permit before teaching, even though RE 5 itself will use the Florida broker-license qualification. No instruction begins before the permit and RE 6 registration exist.",
+      "The selected school-launch plan obtains the RE 3 [1010] instructor permit before filing RE 5 on the instructor-permit basis and before teaching. No instruction begins before the permit and any required school/instructor registration exist.",
     owner: OWNER.HUMAN,
   }),
   Object.freeze({
@@ -274,7 +276,7 @@ export const ELIGIBILITY_MATRIX = Object.freeze([
     requirement: "n/a",
     status: STATUS.NOT_HELD,
     stateCoursePosition:
-      "In order: receive/inspect current DRE RE 293; attach the official California broker-scope packet; file DBPR RE 2 endorsement [2501/1047] with $70; submit fingerprints; clear DBPR/FREC equivalency review; verify the authorization notice names the expected Laws and Rules exam and resolves the generic RE 2 course/exam conflict, then pass the assigned examination; receive and verify the Florida broker license; file RE 3 [1030] with the DBPR-accepted certified Finance degree/equivalency package and $62.75; receive the instructor permit; file RE 5 on the Florida-broker basis with $109; receive the school permit; add the instructor on RE 6; then file current RE 18 with the completed course, two examination forms and page-referenced keys. The 72-hour course/full broker exam [1012] and instructor exam [1010] are fallback only unless DBPR gives transaction-specific written direction otherwise.",
+      "Run two tracks in parallel. School: clarify the CIB certificate inconsistency; file RE 3 Instructor Exam [1010] with $62.75 and fingerprints; obtain authorization; pass the 100-question, 3.5-hour examination at 75; receive the instructor permit; resolve Florida foreign-LLC treatment with the Division of Corporations; file RE 5 on the instructor-permit basis with $109 using the real California physical address; use no RE 9 for a registered-agent-only address; complete any required RE 6 step; then file current RE 18. Personal broker: receive/inspect RE 293; file RE 2 endorsement [2501/1047], fingerprints and the assigned examination. Neither track authorizes enrollment before all school and course approvals.",
     owner: OWNER.HUMAN,
   }),
 ]);
@@ -289,8 +291,8 @@ export const INSTRUCTOR_PERMIT_ROUTES = Object.freeze([
     requirement: "Pass an instructor's examination approved by the Commission.",
     requiresFloridaBrokerLicence: false,
     openToStateCourse: true,
-    selected: false,
-    routeRole: "unselected fallback",
+    selected: true,
+    routeRole: "selected school-launch route in parallel with personal broker endorsement",
   }),
   Object.freeze({
     id: "degree-business-related",
@@ -300,7 +302,8 @@ export const INSTRUCTOR_PERMIT_ROUTES = Object.freeze([
     requirement: "A bachelor's degree in a business-related subject and a valid Florida broker's licence.",
     requiresFloridaBrokerLicence: true,
     openToStateCourse: true,
-    selected: true,
+    selected: false,
+    routeRole: "optional post-broker alternative; not on the school critical path",
     currentlySatisfied: false,
     unresolved:
       "Florida broker license not yet issued; DBPR must accept the foreign Finance degree/equivalency evidence and broker status.",
@@ -320,8 +323,8 @@ export const INSTRUCTOR_PERMIT_ROUTES = Object.freeze([
 ]);
 
 export const INSTRUCTOR_EXAM = Object.freeze({
-  selected: false,
-  routeRole: "unselected RE 3 [1010] fallback research",
+  selected: true,
+  routeRole: "selected RE 3 [1010] school-launch route",
   source: "DBPR Real Estate Instructor Examination Candidate Information Booklet, effective February 2025",
   administrator: "Pearson VUE / Pearson Professional Assessments",
   delivery: "computer based at a physical Pearson test center",
@@ -332,6 +335,8 @@ export const INSTRUCTOR_EXAM = Object.freeze({
   equallyWeighted: true,
   allottedMinutes: 210,
   passingPoints: 75,
+  prelicensingCertificateConflict:
+    "The RE 3 [1010] checklist and qualification section require no prelicensing course certificate, but the February 2025 Instructor CIB's generic What to Bring section tells candidates to bring one. Obtain written DBPR/Pearson clarification before test-center admission; do not invent a course prerequisite.",
   schedulingPhone: "888-204-6289",
   schedulingOnline: true,
   cancellationNotice: "two full calendar days under the current Pearson portal",
@@ -371,7 +376,7 @@ export const DESIGNATION_ANALYSIS = Object.freeze({
   reasoning:
     "Section 475.451(2)(a) defines the school permitholder functionally — “the individual who is responsible for directing the overall operation of a proprietary real estate school” — and imposes qualifications on that individual, not on the entity's owners. DBPR RE 5 collects the permitholder's personal details in Section I and the company's details separately under SCHOOL INFORMATION, which is the Department administering the same separation. DBPR RE 6 provides a Change of School Permit Holder transaction expressly to “transfer the school permit from one person to another”, which would be incoherent if the permitholder had to be an owner.",
   practicalEffect:
-    "StateCourse selected qualifying its own principal through Florida broker endorsement and then using that Florida broker license for RE 5. A qualified third party or the statutory instructor-exam branch remains an organizational fallback, not the current personal route. Nothing is yet held.",
+    "StateCourse selected RE 3 [1010] and the instructor-permit branch for the school launch while Anatoliy separately continues the personal broker-endorsement track. DBPR confirmed in writing on 2 September 2026 that the instructor permit may qualify its holder as RE 5 permitholder without an additional Florida broker license. Nothing is yet held.",
   constraint:
     "The permitholder is responsible for directing the overall operation of the school, so this is a real role with real duties under Rules 61J2-17.015 and 61J2-3.008(3)(b), not a name on a form.",
 });
@@ -388,10 +393,12 @@ export const DELIVERABLES = Object.freeze([
   item({ id: "endorsement-equivalency-approved", section: "Broker", owner: OWNER.REGULATOR, cite: "s. 455.213(15), Fla. Stat.", title: "DBPR/FREC finds the California basis license substantially equivalent or otherwise sufficient", note: "If an adverse equivalency finding is the only denial ground, protect the 7-business-day secretary-review request deadline. No outcome is asserted." }),
   item({ id: "endorsement-law-exam-passed", section: "Broker", owner: OWNER.HUMAN, cite: "DBPR endorsement checklist; s. 455.2135(1)(f); DBPR Florida Real Estate Law CIB", title: "Verify the authorization notice's assigned examination, then pass it; expected Laws and Rules format is 40 questions, 90 minutes, 30 correct", note: "The checklist links the CIB but does not name the exam, and the CIB cites s. 475.180 rather than [1047]. Current Pearson fee is unverified. Optional Larson $99 prep is non-credit and not required." }),
   item({ id: "florida-broker-license-issued", section: "Broker", owner: OWNER.REGULATOR, cite: "DBPR RE 2; s. 475.451(2)(a), Fla. Stat.", title: "Florida broker license issued; verify number, dates and exact status" }),
-  item({ id: "degree-equivalency-protocol", section: "Instructor", owner: OWNER.REGULATOR, cite: "DBPR RE 3 [1030]", title: "Confirm foreign Finance degree evaluator, evaluation type, translation/direct-send protocol and accepted broker status" }),
-  item({ id: "re3-filed", section: "Instructor", owner: OWNER.HUMAN, cite: "DBPR RE 3", title: "File RE 3 Specific Degree & Broker's License [1030] with $62.75 and the accepted certified transcript/equivalency package", note: "If [1030] is accepted, no instructor examination is required. Fingerprint reuse remains unconfirmed." }),
+  item({ id: "re3-certificate-conflict-clarified", section: "Instructor", owner: OWNER.REGULATOR, cite: "DBPR RE 3 [1010]; February 2025 Instructor CIB", title: "Clarify whether an exam-route candidate must bring any prelicensing course completion certificate", note: "RE 3 does not list one; the CIB's generic What to Bring section does. Do not convert that conflict into an invented prerequisite." }),
+  item({ id: "re3-filed", section: "Instructor", owner: OWNER.HUMAN, cite: "DBPR RE 3 [1010]", title: "File RE 3 Real Estate Instructor Exam [1010] with $62.75 and electronic fingerprints", note: "Apply on the examination basis; no Florida broker license or degree packet is used for this transaction." }),
+  item({ id: "instructor-exam-passed", section: "Instructor", owner: OWNER.HUMAN, cite: "February 2025 Instructor CIB", title: "After DBPR authorization, pass the closed-book 100-question instructor examination within 3.5 hours with at least 75 points" }),
   item({ id: "instructor-permit-issued", section: "Instructor", owner: OWNER.REGULATOR, cite: "s. 475.451(2)(b), Fla. Stat.", title: "Instructor permit issued by the Department" }),
-  item({ id: "re5-filed", section: "School", owner: OWNER.HUMAN, cite: "DBPR RE 5", title: "File DBPR RE 5 on the Florida-broker qualification with the issued broker number and $109 fee" }),
+  item({ id: "fl-entity-treatment-resolved", section: "School", owner: OWNER.HUMAN, cite: "DBPR correspondence dated 2026-09-02; Florida Division of Corporations", title: "Confirm and complete any Florida foreign-LLC registration required for StateCourse LLC before RE 5", note: "DBPR did not decide corporate registration; RE 5 business information must match the Division of Corporations record." }),
+  item({ id: "re5-filed", section: "School", owner: OWNER.HUMAN, cite: "DBPR RE 5; DBPR correspondence dated 2026-09-02", title: "After instructor permit issuance, file DBPR RE 5 on the Florida-instructor-permit qualification with the permit number and $109 fee", note: "Use the actual California physical business address. A registered-agent-only address does not require RE 9." }),
   item({ id: "school-permit-issued", section: "School", owner: OWNER.REGULATOR, cite: "s. 475.451(1), Fla. Stat.", title: "School permit issued by the Department" }),
   item({ id: "re6-instructor-registered", section: "School", owner: OWNER.HUMAN, cite: "DBPR RE 6", title: "Register the permitted instructor to the school via DBPR RE 6 (Add/Terminate – Instructor)" }),
   item({ id: "course-timed-outline", section: "Course", owner: OWNER.BUILD, cite: "DBPR RE 18 Section V.1", title: "Course timed outline specifying subjects, major topics and subtopics", draftHeld: true }),
@@ -427,7 +434,7 @@ export function floridaReadiness() {
     heldCount: DELIVERABLES.length - outstanding.length,
     draftHeldCount: DELIVERABLES.filter((d) => d.draftHeld).length,
     selectedBrokerRoute: SELECTED_BROKER_ROUTE.transactionCode,
-    selectedInstructorRoute: "1030",
+    selectedInstructorRoute: "1010",
     lawfulRouteToSchoolPermitExists: availableRoutes.some((r) => r.row === 1 || r.row === 2),
     lawfulRouteToInstructorPermitExists: availableRoutes.some((r) => r.row === 3),
     anyPersonAssertedEligible: APPLICANT.eligibilityAsserted,
@@ -440,7 +447,7 @@ export function floridaReadiness() {
       regulator: outstanding.filter((d) => d.owner === OWNER.REGULATOR).length,
     }),
     reason:
-      "The selected broker-endorsement then degree-plus-broker route exists, but the certified history, equivalency decision, examination, licenses, permits and approvals are not held. No person is asserted eligible and no approval is asserted.",
+      "Two selected tracks now run in parallel: RE 3 [1010] for the school launch and RE 2 [2501/1047] for Anatoliy's personal Florida broker objective. The applications, examinations, licenses, permits and approvals are not held. No person is asserted eligible and no approval is asserted.",
   });
 }
 

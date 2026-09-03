@@ -237,6 +237,22 @@ export const STATECOURSE_CONSERVATIVE_POLICY = Object.freeze({
   }),
 });
 
+/* ── written regulator answers received 2 September 2026 ─────────────────────────────────────── */
+export const RESOLVED_DBPR_QUESTIONS = Object.freeze([
+  Object.freeze({
+    id: "schoolPermitExamRouteAcceptance",
+    source: "florida/submission/regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md",
+    resolution:
+      "After an individual qualifies through RE 3 [1010], passes the required examination and is issued an instructor permit, that permit may be used to qualify the individual as the RE 5 school permitholder; no additional Florida broker license is required solely for that purpose.",
+  }),
+  Object.freeze({
+    id: "distanceOnlySchoolLocation",
+    source: "florida/submission/regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md",
+    resolution:
+      "A distance-only school needs no Florida classroom solely because delivery is online. RE 5 should carry the actual California physical business address. A registered-agent-only address is not an additional school location and does not alone require RE 9.",
+  }),
+]);
+
 /* ── tier 3: what is genuinely unresolved ─────────────────────────────────────────────────────── */
 export const OPEN_DBPR_QUESTIONS = Object.freeze([
   ITEM_COUNT_QUESTION,
@@ -251,19 +267,6 @@ export const OPEN_DBPR_QUESTIONS = Object.freeze([
     question:
       "Section 475.17(2)(a)1 bars issuing a notice of satisfactory completion where a student has absences in excess of 8 classroom hours, and Rule 61J2-3.008(4)(a) conditions administering the examination on the same ceiling. How is that ceiling measured in an asynchronous distance course, in which there is no scheduled class session to be absent from?",
     pendingBehaviour: "Require satisfactory completion of every syllabus session before final unlock. Ask only how DBPR wants the separate 8-classroom-hour language described or reported for asynchronous delivery; it never authorizes omitted instruction.",
-  }),
-  o({
-    id: "schoolPermitExamRouteAcceptance",
-    question:
-      "Does an instructor permit issued through DBPR RE 3 transaction [1010] qualify its holder to serve as the school permitholder on DBPR RE 5 today, notwithstanding the inconsistent cross-reference and wording in Rule 61J2-17.011(2)?",
-    routeRole: "historical open question for the unselected RE 3 [1010] fallback",
-    pendingBehaviour: "Do not act or incur [1010] exam costs on this question while the broker-endorsement then [1030] route remains selected. Preserve the statutory/form research only as a deliberately activated fallback.",
-  }),
-  o({
-    id: "distanceOnlySchoolLocation",
-    question:
-      "For a distance-only school with no Florida classroom, may the California physical business address be the sole school location on RE 5, and is RE 9 unnecessary unless a separate instructional or administrative location is added?",
-    pendingBehaviour: "Carry the proposed California address only as proposed; do not execute RE 5 or RE 9 until DBPR confirms the location treatment and the owner resolves Florida entity qualification.",
   }),
   o({
     id: "onlinePostingAndAvailability",
@@ -289,9 +292,10 @@ export const OPEN_DBPR_QUESTIONS = Object.freeze([
 
 /* ── historical combined inquiry record ───────────────────────────────────────────────────────
    The substantive course questions remain open, but this combined draft was split and partially
-   transmitted before the owner selected the broker route. It is preserved for audit, not resend.
+   transmitted before the owner selected parallel broker and school-launch tracks. Questions 3 and
+   4 were answered by DBPR on 2 September 2026. It is preserved for audit, not resend.
    Exact transport records and current route labels live in florida/submission/regulator-inquiries. */
-export const DRAFT_QUESTION_TO_DBPR = `HISTORICAL COMBINED DRAFT — PARTIALLY TRANSMITTED BEFORE THE OWNER SELECTED THE BROKER ROUTE. Question 3 is now fallback research only; preserve it as a sent-message record, not as a current action. See florida/submission/regulator-inquiries/transmission-log.md.
+export const DRAFT_QUESTION_TO_DBPR = `HISTORICAL COMBINED DRAFT — PARTIALLY TRANSMITTED. Questions 3 and 4 were answered by DBPR on 2 September 2026; preserve this as a sent-message record, not as a current action. See florida/submission/regulator-inquiries/transmission-log.md.
 
 To: Florida Real Estate Commission, Division of Real Estate, Department of Business and Professional Regulation
 
@@ -344,6 +348,7 @@ export default Object.freeze({
   CONFIDENTIALITY,
   STATECOURSE_CONSERVATIVE_POLICY,
   OPEN_DBPR_QUESTIONS,
+  RESOLVED_DBPR_QUESTIONS,
   DRAFT_QUESTION_TO_DBPR,
   COMPUTED,
 });
