@@ -51,7 +51,7 @@ see that 126 was a judgement rather than a rule. **Corrected in §8.**
 
 ### 1. Source acquisition — **GO**
 
-61 manifest authorities read: 51 held and hashed plus 10 current remote-only authorities validated
+66 manifest authorities read: 51 held and hashed plus 15 current remote-only authorities validated
 by the online lock; 202 files under `florida/frec-sources/` after the post-Phase-0 source
 acquisitions.
 

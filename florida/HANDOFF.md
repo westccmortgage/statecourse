@@ -24,9 +24,9 @@ fingerprints → equivalency review → DBPR-assigned examination → Florida br
 2 September written response establishes that the broker track is not a prerequisite to the school
 track. Nothing is filed or approved.
 
-- **61 manifest authorities** read — 51 held/hashed and 10 current remote-only; 202 files under `florida/frec-sources/`.
-- **119 material claims**, each naming what relies on it.
-- **18 recorded conflicts**, none resolved by guessing.
+- **66 manifest authorities** read — 51 held/hashed and 15 current remote-only; 202 files under `florida/frec-sources/`.
+- **128 material claims**, each naming what relies on it.
+- **19 recorded conflicts**, none resolved by guessing.
 - **19 syllabus sections, 180 learning objectives**, each page-referenced; `verify()` clean.
 - **19 curriculum files, 3,000 designed instruction minutes, 180 periodic application items and 19 secure final-item drafts.**
 - **Two 126-item form blueprints: 252 secure slots, all 180 objectives covered, 233 slots still unwritten.**
@@ -140,7 +140,7 @@ see §5.
 
 | File | What it holds |
 |---|---|
-| `regulatory-manifest.mjs` | 61 authorities (51 held/hashed, 10 current remote-only) with authority class, material claims/conflicts, forbidden claims, `SCHOOL` record |
+| `regulatory-manifest.mjs` | 66 authorities (51 held/hashed, 15 current remote-only) with authority class, material claims/conflicts, forbidden claims, `SCHOOL` record |
 | `frec-course-i-syllabus.mjs` | 19 sections, 180 page-referenced objectives, `verify()` gate |
 | `course-i-requirements.mjs` | time architecture, completion, retention, approval lifecycle, exemptions |
 | `assessment-architecture.mjs` | the three tiers + historical combined `DRAFT_QUESTION_TO_DBPR` record; do not resend it |
@@ -165,6 +165,7 @@ see §5.
 `florida/regulatory/primary-text-readings.md` · `florida/submission/frec-course-i-submission-plan.md` ·
 `florida/submission/05-anatoliy-filing-runbook.md` ·
 `florida/submission/06-california-broker-scope-appendix.md` ·
+`florida/submission/07-florida-foreign-llc-filing-packet.md` ·
 `florida/fl-sales-associate-course-i-63-v1/video-instruction-plan.md` ·
 `docs/florida/shared-file-change-proposals.md` · `docs/florida/regression-baseline.md`
 
@@ -211,8 +212,9 @@ non-blocking without making the stated hours untrue.
 ### School launch — do these without waiting for RE 293
 
 1. **Clarify the Instructor CIB certificate sentence.** RE 3 `[1010]` does not list a prelicensing
-   certificate, but the February 2025 CIB's generic “What to Bring” section does. Send the focused
-   follow-up from `info@statecourse.com`; do not invent a 63-hour or 72-hour prerequisite.
+   certificate, but the February 2025 CIB's generic “What to Bring” section does. The focused
+   follow-up was sent 3 September 2026 and is awaiting answer; do not send a duplicate or invent a
+   63-hour or 72-hour prerequisite.
 2. **File RE 3 Instructor Exam `[1010]` with $62.75 and fingerprints.** Retain the filed copy,
    receipt, TCN and authorization. This transaction does not use RE 293, a Florida broker license or
    a degree packet.
@@ -220,8 +222,11 @@ non-blocking without making the stated hours untrue.
    Pearson center, closed book, 100 questions, 3.5 hours, 75 points to pass. Verify the live fee.
 4. **Receive the instructor permit.** A passing score is not the permit; the permit must issue before
    StateCourse relies on it for RE 5.
-5. **Resolve StateCourse LLC's Florida corporate treatment.** DBPR directed the foreign-LLC question
-   to the Division of Corporations. Complete any required registration so RE 5 matches that record.
+5. **Qualify StateCourse LLC as a Florida foreign LLC.** The selected conservative route is recorded
+   in `07-florida-foreign-llc-filing-packet.md`: select a Florida registered agent, obtain a
+   California Certificate of Status no more than 90 days old, and file CR2E027 with the $125
+   mandatory state fee. This removes the RE 5 corporate-record mismatch without creating a Florida
+   classroom.
 6. **File RE 5 on the instructor-permit basis with $109.** Use the actual California physical
    business address. No Florida classroom is required solely for distance delivery; a
    registered-agent-only address does not require RE 9.

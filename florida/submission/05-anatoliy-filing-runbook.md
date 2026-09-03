@@ -17,15 +17,16 @@ Nothing has been filed or approved. Florida enrollment, payment, credit and cert
 
 ## Track A — fastest school route
 
-### A1. Close the one remaining instructor-exam inconsistency
+### A1. Close the one remaining instructor-exam inconsistency — sent, awaiting answer
 
 RE 3's checklist and qualification section do not require a prelicensing-course completion certificate for transaction `[1010]`. The February 2025 Instructor Candidate Information Booklet nevertheless tells candidates in its generic “What to Bring” section to bring one.
 
-Reply from `info@statecourse.com` to the DBPR thread with this focused question:
+The focused follow-up was sent on 3 September 2026. Preserve the written answer and the exact
+DBPR/Pearson authorization notice. The question sent was:
 
 > For an RE 3 applicant qualifying solely through the Real Estate Instructor Exam route `[1010]`, is any Florida prelicensing-course completion certificate required before scheduling or for admission to the instructor examination? The current RE 3 checklist does not list one, but the February 2025 Instructor Candidate Information Booklet's “What to Bring” section mentions a Certificate of Pre-licensing Education Completion.
 
-Do not infer a 63-hour or 72-hour course prerequisite. Preserve the written answer and the exact DBPR/Pearson authorization notice.
+Do not infer a 63-hour or 72-hour course prerequisite while the answer is pending.
 
 ### A2. File DBPR RE 3 — Instructor Exam `[1010]`
 
@@ -71,9 +72,13 @@ After a passing result and DBPR issuance, record the permit number, issue date, 
 
 DBPR expressly instructed that the instructor permit must be **issued before** it is used to qualify the school permitholder on RE 5.
 
-### A6. Resolve StateCourse LLC's Florida entity treatment
+### A6. Qualify StateCourse LLC as a Florida foreign LLC
 
-DBPR did not decide whether the California LLC must obtain a Florida foreign-LLC certificate of authority. Ask the Florida Division of Corporations and complete any required filing before RE 5.
+Use the conservative selected filing route in `07-florida-foreign-llc-filing-packet.md`. Section
+605.0905 contains limited Chapter 605 exclusions, but it does not decide regulation under other
+Florida law; current RE 5 requires the company name as registered with the Florida Division of
+Corporations. Qualifying the existing California LLC before RE 5 removes the mismatch without
+creating a Florida classroom.
 
 Whichever treatment the Division requires, the business information on RE 5 must match the Division of Corporations record.
 
@@ -90,7 +95,10 @@ Current controlled entity facts:
 | School name | `StateCourse LLC`; no Florida DBA unless deliberately adopted |
 | Contact | Anatoliy Kanevsky; info@statecourse.com; (310) 686-5053 |
 
-If foreign qualification is required, current planning figures are $100 filing plus $25 registered-agent designation, before optional copies/status and private registered-agent service. Recheck live amounts and certificate-of-existence freshness before filing.
+The mandatory Florida fee is currently $125: $100 filing plus $25 registered-agent designation.
+The filing also needs a Florida registered agent and a California Certificate of Status dated no
+more than 90 days before Florida receives it. The California certificate currently costs $5.
+Optional Florida copies/status and private registered-agent service are additional.
 
 ### A7. File DBPR RE 5 on the instructor-permit basis
 
@@ -165,17 +173,19 @@ Maintain one encrypted folder containing:
 | RE 6 | $0 on held form | recheck before filing |
 | RE 2 `[1047]` | $70.00 | separate personal broker track |
 | Fingerprints | live amount | likely applies to each transaction unless DBPR confirms reuse |
-| Florida foreign LLC | planning figure $125 | only if Division of Corporations requires/owner elects it; recheck live amount |
+| California Certificate of Status | $5.00 | order when the foreign-LLC packet is ready; must be no more than 90 days old at Florida receipt |
+| Florida foreign LLC | $125.00 mandatory state fee | selected conservative filing route before RE 5; registered-agent service extra |
+| Florida LLC annual report | $138.75 annually | first due the following calendar year; current $400 late fee after May 1 |
 
 Known school-path DBPR application fees total **$171.75** before fingerprints and Pearson. RE 2 adds **$70** on the separate broker track.
 
 ## Owner's next actions
 
-- [ ] Send the one-sentence A1 clarification from `info@statecourse.com` in the existing DBPR thread.
+- [x] Send the focused A1 clarification in the existing DBPR thread — sent 2026-09-03; awaiting answer.
 - [ ] Assemble the private RE 3 `[1010]` packet and review the current form line by line.
 - [ ] Sign/pay/file RE 3 and complete fingerprints after the A1 answer confirms test-center document treatment.
 - [ ] Study for the instructor examination while DBPR processes the application.
-- [ ] Ask the Florida Division of Corporations whether StateCourse LLC must qualify as a foreign LLC and complete the required corporate step.
+- [ ] Select a Florida registered agent, then order the fresh $5 California Certificate of Status and file the $125 foreign-LLC qualification packet.
 - [ ] When RE 293 arrives, send it to the StateCourse work thread for inspection and continue Track B.
 - [ ] Do not enroll a Florida student or represent approval before written permits and course approval exist.
 

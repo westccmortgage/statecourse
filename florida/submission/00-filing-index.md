@@ -1,6 +1,6 @@
 # Florida FREC Course I — filing control index
 
-**Prepared:** 2026-09-01; route updated 2026-09-02 from DBPR's written response
+**Prepared:** 2026-09-01; route updated 2026-09-02 from DBPR's written response; corporate packet updated 2026-09-03
 **Applicant:** StateCourse LLC
 **Branch:** `relay-florida`
 **Status:** two tracks now run in parallel. The school-launch track is **RE 3 Instructor Exam `[1010]` → instructor permit → RE 5 on the instructor-permit basis**. The owner's personal-broker track remains **RE 2 endorsement `[2501/1047]`** and waits for California DRE RE 293. Nothing is filed with Florida or approved, and enrollment remains disabled.
@@ -9,11 +9,11 @@
 
 | Track | Filing or event | Current state | Release condition |
 |---|---|---|---|
-| School 1 | Resolve Instructor CIB certificate inconsistency | **Focused follow-up required** | DBPR/Pearson confirms whether a `[1010]` candidate must bring any prelicensing completion certificate; RE 3 itself does not list one |
+| School 1 | Resolve Instructor CIB certificate inconsistency | **FOLLOW-UP SENT 2026-09-03; awaiting answer** | DBPR/Pearson confirms whether a `[1010]` candidate must bring any prelicensing completion certificate; RE 3 itself does not list one |
 | School 2 | DBPR RE 3 Instructor Exam `[1010]` | Owner-action NO-GO | Current form, protected facts, $62.75, electronic fingerprints and declaration |
 | School 3 | Instructor examination | External/human | DBPR authorization; Pearson appointment; closed book, 100 questions, 3.5 hours, pass 75 |
 | School 4 | Instructor permit | Regulator | Passed examination and DBPR issuance; the permit must exist before relying on it for RE 5 |
-| School 5 | Florida entity treatment | Owner/external | Florida Division of Corporations confirms/completes any foreign-LLC registration; business information matches its record |
+| School 5 | Florida foreign-LLC qualification | Owner-action | Select Florida registered agent; obtain ≤90-day California Certificate of Status; file CR2E027 with $125; use exact accepted Sunbiz record on RE 5 |
 | School 6 | DBPR RE 5 school permit | Owner-action NO-GO | Issued instructor permit number, actual California physical business address, protected data, signature and $109 |
 | School 7 | DBPR RE 6, if required to add the instructor | Owner-action NO-GO | Issued school and instructor permits; permitholder signature; $0 |
 | Broker 1 | California DRE RE 293 certified history | **REQUESTED; not held** | Inspect endorsement duration/status facts and conservative 30-day filing control |
@@ -42,6 +42,7 @@ One narrow school-path conflict remains: the RE 3 `[1010]` checklist does not re
 | `04-course-submission-manifest.md` | Current RE 18 attachment map and readiness | Ready as control ledger |
 | `05-anatoliy-filing-runbook.md` | Personalized end-to-end sequence and budget | Ready; live facts rechecked at each transaction |
 | `06-california-broker-scope-appendix.md` | Filing cover/index for official California scope statutes/rules | Ready for fresh official pages and filing identifiers |
+| `07-florida-foreign-llc-filing-packet.md` | CR2E027 field map, source basis, fees, dependencies and filing-day controls | Ready except registered agent, fresh California certificate and signatures/payment |
 | `regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md` | Focused unresolved endorsement/course/exam/degree/status/fingerprint questions | Sent de-identified 2026-09-01; awaiting response |
 | `regulator-inquiries/dbpr-frec-prefiling-inquiry.md` | Prior school/course/form questions | Instructor/school portion answered 2026-09-02; course questions remain open |
 | `regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md` | DBPR's written instructor, school, address and RE 9 answers | Held as owner-supplied correspondence record |

@@ -195,6 +195,7 @@ test("filing-control package locks the current form, human sequence, and honest 
     "florida/submission/04-course-submission-manifest.md",
     "florida/submission/05-anatoliy-filing-runbook.md",
     "florida/submission/06-california-broker-scope-appendix.md",
+    "florida/submission/07-florida-foreign-llc-filing-packet.md",
     "florida/submission/regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md",
     "florida/submission/regulator-inquiries/dbpr-frec-prefiling-inquiry.md",
     "florida/submission/regulator-inquiries/dbpr-instructor-school-response-2026-09-02.md",
@@ -213,6 +214,12 @@ test("filing-control package locks the current form, human sequence, and honest 
   assert.match(index, /Out of State Experience `\[2501\/1012\]`[\s\S]*fallback/i);
   assert.match(index, /actual California physical business address/i);
   assert.match(index, /registered-agent-only address does not require RE 9/i);
+  assert.match(index, /foreign-LLC qualification/i);
+
+  const foreignLlcPacket = read("florida/submission/07-florida-foreign-llc-filing-packet.md");
+  assert.match(foreignLlcPacket, /\$125 mandatory Florida filing total/i);
+  assert.match(foreignLlcPacket, /no\s+more\s+than\s+90\s+days/i);
+  assert.match(foreignLlcPacket, /does\s+not\s+create\s+a\s+Florida classroom/i);
 
   const formControl = read("florida/submission/03-current-re18-form-control.md");
   assert.match(formControl, /two forms for distance pre\/post-license/i);
@@ -235,6 +242,8 @@ test("filing-control package locks the current form, human sequence, and honest 
   assert.match(transmission, /1a05dda4f56a8d19/);
   assert.match(transmission, /1a05de8775c72589/);
   assert.match(transmission, /1a0608df533b3e4f/);
+  assert.match(transmission, /prelicensing-certificate clarification/i);
+  assert.match(transmission, /Awaiting DBPR response; do not send a duplicate/i);
   assert.match(transmission, /No message was sent directly to Pearson/);
   const endorsementInquiry = read("florida/submission/regulator-inquiries/dbpr-broker-endorsement-and-degree-inquiry.md");
   assert.match(endorsementInquiry, /SENT 2026-09-01/);

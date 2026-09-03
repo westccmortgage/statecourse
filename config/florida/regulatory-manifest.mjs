@@ -63,7 +63,7 @@
  * in a config file is how a false claim reaches a page, so there are none to promote.
  */
 
-export const MANIFEST_VERSION = "FL-MANIFEST-2026-09-01-v6";
+export const MANIFEST_VERSION = "FL-MANIFEST-2026-09-03-v7";
 
 /* How long a reading stays good before the lock demands it be taken again. Florida's education
    rules are amended often — 61J2-3.008 has been amended twenty-three times and three of the rules
@@ -187,6 +187,91 @@ export const SOURCES = Object.freeze([
     conflicts: Object.freeze([
       "A DBPR school permit under s. 475.451 is expected to be the institution-level approval on which the exemption rests; RE 18 course approval alone is not. Retain and verify the school permit before relying on the exemption.",
     ]),
+  }),
+  source({
+    id: "FS-605.0902",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
+    citation: "s. 605.0902, Fla. Stat. (2026)",
+    title: "Application for certificate of authority",
+    publisher: "Florida Legislature, Online Sunshine",
+    url: "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0902.html",
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-03",
+    materialClaims: Object.freeze([
+      { claim: "a foreign LLC transacting business in Florida must obtain a certificate of authority, and its application identifies the entity, jurisdiction, offices, Florida registered agent and a person authorized to manage it",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md", "config/florida/school-permit-ledger.mjs"]) },
+      { claim: "the foreign-LLC application must be accompanied by a certificate of existence or similar official record dated no more than 90 days before delivery to the Department",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ]),
+    conflicts: Object.freeze([]),
+  }),
+  source({
+    id: "FS-605.0905",
+    authorityClass: AUTHORITY_CLASS.STATUTE,
+    citation: "s. 605.0905, Fla. Stat. (2026)",
+    title: "Activities not constituting transacting business",
+    publisher: "Florida Legislature, Online Sunshine",
+    url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0905.html",
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-03",
+    materialClaims: Object.freeze([
+      { claim: "the nonexhaustive activities that do not constitute transacting business for s. 605.0902 include transacting business in interstate commerce",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md"]) },
+      { claim: "the s. 605.0905 exclusions do not determine contacts or activities that subject a foreign LLC to regulation under Florida law other than Chapter 605",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md", "florida/submission/02-owner-action-and-form-data-checklist.md"]) },
+    ]),
+    conflicts: Object.freeze([
+      "Section 605.0905 may exclude StateCourse's interstate online activity from Chapter 605's certificate-of-authority trigger, but subsection (4) does not resolve Chapter 475 school regulation and RE 5 requires the school name as registered with the Division of Corporations. StateCourse therefore selects foreign qualification as a conservative filing action without asserting that the statutory exception is unavailable.",
+    ]),
+  }),
+  source({
+    id: "SUNBIZ-FOREIGN-LLC-FORM",
+    authorityClass: AUTHORITY_CLASS.FORM,
+    citation: "Florida Department of State form CR2E027",
+    title: "Application by Foreign Limited Liability Company for Authorization to Transact Business in Florida",
+    publisher: "Florida Department of State, Division of Corporations",
+    url: "https://form.sunbiz.org/pdf/cr2e027.pdf",
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-03",
+    materialClaims: Object.freeze([
+      { claim: "CR2E027 requires a Florida street address and signed acceptance for the registered agent, a certificate of existence no more than 90 days old, management information and an authorized-person signature",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+      { claim: "the form warns that a foreign LLC must file an annual report each year to remain active, with the first report due in the following year between January 1 and May 1",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md"]) },
+    ]),
+    conflicts: Object.freeze([]),
+  }),
+  source({
+    id: "SUNBIZ-LLC-FEES",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    citation: "Florida Division of Corporations, LLC fee schedule (read 2026-09-03)",
+    title: "Limited Liability Company Fees",
+    publisher: "Florida Department of State, Division of Corporations",
+    url: "https://dos.fl.gov/sunbiz/forms/fees/llc-fees/",
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-03",
+    materialClaims: Object.freeze([
+      { claim: "the mandatory new Florida or foreign LLC state charges total $125: $100 filing fee plus $25 registered-agent fee",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+      { claim: "the current LLC annual-report fee is $138.75 and the after-May-1 total is $538.75, a $400 increase",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ]),
+    conflicts: Object.freeze([]),
+  }),
+  source({
+    id: "CA-SOS-CERTIFICATE-STATUS-FEE",
+    authorityClass: AUTHORITY_CLASS.GUIDANCE,
+    citation: "California Secretary of State, Business Entities Records Order Form, rev. 03/2026",
+    title: "Business Entities Records — Order Form and Instructions",
+    publisher: "California Secretary of State",
+    url: "https://bpd.cdn.sos.ca.gov/pdf/be-records-requests.pdf",
+    reachability: REACHABILITY.READ,
+    readOn: "2026-09-03",
+    materialClaims: Object.freeze([
+      { claim: "a California Certificate of Status currently costs $5; the Secretary of State also makes certificates available through bizfile Online",
+        reliedOnBy: Object.freeze(["florida/submission/07-florida-foreign-llc-filing-packet.md", "florida/submission/05-anatoliy-filing-runbook.md"]) },
+    ]),
+    conflicts: Object.freeze([]),
   }),
   source({
     id: "FS-455",

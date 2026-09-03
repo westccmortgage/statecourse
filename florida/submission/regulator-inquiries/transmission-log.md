@@ -1,6 +1,6 @@
 # Florida regulator inquiry transmission log
 
-This is the exact transport record for the four owner-authorized Florida inquiries. The message
+This is the transport record for the five owner-authorized Florida inquiries. The message
 bodies were separated by subject area rather than sent as one combined letter.
 
 **Route note updated 2026-09-02:** DBPR answered message 2 and confirmed that RE 3 `[1010]` may lead
@@ -74,10 +74,23 @@ endorsement/degree inquiry remains open.
 | Gmail thread ID | `1a0608df533b3e4f` |
 | Current state | Awaiting regulator response; do not send a duplicate |
 
+## 5. RE 3 `[1010]` prelicensing-certificate clarification
+
+| Field | Recorded value |
+|---|---|
+| Status | **SENT** |
+| Date | 2026-09-03 |
+| To | `DREEducation@myfloridalicense.com` |
+| Subject | RE 3 `[1010]` — prelicensing certificate clarification |
+| Scope | Whether an applicant qualifying solely through `[1010]` must provide a Florida prelicensing completion certificate before scheduling or at Pearson admission, despite RE 3 not listing one |
+| Transport evidence | The in-app mail artifact is marked sent; the resulting sender address and provider message/thread IDs were not exposed to this repository session |
+| Privacy treatment | No SSN, birth date, fingerprint identifier, payment data or background record included |
+| Current state | Awaiting DBPR response; do not send a duplicate |
+
 ## Boundary
 
 No message was sent directly to Pearson. The instructor-examination inquiry was instead sent to DBPR's
 published Real Estate Instructor examination mailbox. A direct Pearson inquiry is deferred unless
 DBPR directs it or the candidate receives authorization; it must not duplicate the open BET thread.
 No application, protected applicant data, applicant signature, fee, fingerprint record or approval
-claim was transmitted by these four inquiries.
+claim was transmitted by these five inquiries.

@@ -99,7 +99,13 @@ This route is no longer on the school critical path because `[1010]` is selected
 
 ## RE 5, RE 6 and RE 18
 
-For RE 5, after the instructor permit and entity gates close, owner selects the Florida-instructor-permit qualification, enters the issued permit number, confirms StateCourse LLC name/ownership, uses the actual California physical business address, provides any required foreign-qualification/DBA evidence, signs/dates and pays **$109**. A registered-agent-only address does not require RE 9; only a later actual additional school location does.
+Before RE 5, follow `07-florida-foreign-llc-filing-packet.md`: select a real Florida registered
+agent, order a California Certificate of Status no more than 90 days before Florida receives it,
+and qualify StateCourse LLC using CR2E027 and the $125 mandatory state fee. This is the selected
+conservative route because RE 5 requires the company name as registered with the Florida Division
+of Corporations. It is not a claim that Chapter 605's interstate-commerce exclusion never applies.
+
+For RE 5, after the instructor permit and entity gates close, owner selects the Florida-instructor-permit qualification, enters the issued permit number, confirms StateCourse LLC name/ownership exactly against Sunbiz, uses the actual California physical business address, provides the foreign-qualification evidence, signs/dates and pays **$109**. A registered-agent-only address does not require RE 9; only a later actual additional school location does.
 
 After the school and instructor permits issue, file RE 6 to add the instructor; current fee $0. Re-download current RE 18 before signature and file Course I only after the course, two examinations, page-cited keys and operational evidence are complete. Current RE 18 states $0 for schools.
 
