@@ -1,7 +1,12 @@
 # StateCourse LLC — Florida foreign-LLC qualification packet
 
 **Prepared:** 2026-09-03  
-**Status:** ready for the missing registered-agent and signature inputs; **not filed**
+**Status:** Northwest registered-agent service active; ready for the fresh California certificate,
+agent-acceptance document, final public-field review and signature; **foreign qualification not filed**
+
+**Evidence boundary:** an owner-supplied Northwest confirmation screenshot was reviewed on
+2026-09-03 but is not copied into this repository because the same screenshot contains an unrelated
+financial image. Only the nonfinancial registered-agent facts below are recorded.
 
 ## Filing decision
 
@@ -54,21 +59,25 @@ Official sources:
 | Date first transacted business in Florida | Leave blank if no Florida business occurred before qualification and the live filing permits a blank; otherwise obtain filing-office direction rather than inventing a date |
 | Principal office | 150 E Olive Avenue, Suite 112, Burbank, CA 91502 |
 | Mailing address | 407 N Pacific Coast Highway, Unit 1028, Redondo Beach, CA 90277 |
-| Florida registered agent | **MISSING — owner selects agent/service** |
-| Florida registered office | **MISSING — supplied by registered agent; no P.O. box** |
-| Registered-agent acceptance | **MISSING — agent signs** |
+| Florida registered agent | `Northwest Registered Agent LLC` |
+| Florida registered office | 7901 4th St N, STE 300, St. Petersburg, FL 33702 |
+| Northwest authorized individual shown | Taylor Newman |
+| Service term shown | 09/03/2026–09/03/2027 |
+| Registered-agent acceptance | **NOT YET HELD — download Northwest's filing instructions or signed acceptance before submitting CR2E027** |
 | Manager/member/authorized person | Anatoliy Kanevsky; use only an address accurate for this public filing |
 | Certificate of existence/status | **MISSING — order only when the packet is ready; Florida receipt must be within 90 days** |
 | Authorized-person signature | **MISSING — Anatoliy signs after final review** |
 | Required Florida fee | $125 |
 | Optional Florida certificate/certified copy | Do not select by default |
 
-## Registered-agent selection gate
+## Registered-agent confirmation gate
 
-Do not invent a Florida address or name StateCourse's California agent as the Florida agent unless
-that person actually maintains a qualifying Florida registered office and accepts the appointment.
-Select a real Florida registered-agent service or another legally eligible agent, obtain its exact
-filing name/address and acceptance process, and verify the renewal price before checkout.
+Northwest Registered Agent LLC is selected and the service term is active. Its confirmation screen
+shows the internal Company Name as `statecourse`, not `StateCourse LLC`. This may be only an account
+or order label, but it must not silently replace the legal entity name. Before filing, confirm that
+Northwest's agent appointment applies to the California entity **StateCourse LLC**, and use the
+exact legal name on CR2E027 and later RE 5. Download the invoice and any Northwest state-filing or
+registered-agent-acceptance instructions into the private filing packet.
 
 The agent's address is used only for registered-agent purposes. DBPR has confirmed that this alone
 does not create another school location and does not trigger RE 9.
@@ -76,7 +85,8 @@ does not create another school location and does not trigger RE 9.
 ## Filing-day procedure
 
 1. Confirm `StateCourse LLC` remains distinguishable in the live Sunbiz search.
-2. Select the Florida registered agent and obtain the exact public filing data and acceptance.
+2. Confirm Northwest's appointment is linked to legal entity `StateCourse LLC`, then obtain its
+   exact filing/acceptance instructions. The account label `statecourse` is not the legal filing name.
 3. Order the $5 California Certificate of Status directly from bizfile Online.
 4. Review every public field, especially addresses, FEI treatment and the pre-registration-business
    date statement.

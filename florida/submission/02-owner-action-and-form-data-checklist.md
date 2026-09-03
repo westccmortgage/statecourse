@@ -102,9 +102,12 @@ This route is no longer on the school critical path because `[1010]` is selected
 
 ## RE 5, RE 6 and RE 18
 
-Before RE 5, follow `07-florida-foreign-llc-filing-packet.md`: select a real Florida registered
-agent, order a California Certificate of Status no more than 90 days before Florida receives it,
-and qualify StateCourse LLC using CR2E027 and the $125 mandatory state fee. This is the selected
+Before RE 5, follow `07-florida-foreign-llc-filing-packet.md`. Northwest Registered Agent LLC is
+selected for 09/03/2026–09/03/2027 at 7901 4th St N, STE 300, St. Petersburg, FL 33702. Confirm its
+appointment under the exact legal name `StateCourse LLC`—the confirmation screen currently shows
+the shorter account label `statecourse`—and obtain its acceptance instructions. Then order a
+California Certificate of Status no more than 90 days before Florida receives it and qualify
+StateCourse LLC using CR2E027 and the $125 mandatory state fee. This is the selected
 conservative route because RE 5 requires the company name as registered with the Florida Division
 of Corporations. It is not a claim that Chapter 605's interstate-commerce exclusion never applies.
 

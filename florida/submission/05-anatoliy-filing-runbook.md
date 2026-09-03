@@ -102,6 +102,13 @@ The filing also needs a Florida registered agent and a California Certificate of
 more than 90 days before Florida receives it. The California certificate currently costs $5.
 Optional Florida copies/status and private registered-agent service are additional.
 
+**Registered agent selected 2026-09-03:** Northwest Registered Agent LLC, 7901 4th St N, STE 300,
+St. Petersburg, FL 33702; service term shown through 2027-09-03. The Northwest confirmation screen
+labels the company `statecourse`. Verify in the account that this is only an internal label and that
+the appointment applies to legal entity `StateCourse LLC`; obtain Northwest's exact acceptance or
+filing instructions before submitting CR2E027. The screenshot itself is not retained because it
+also contains an unrelated financial image.
+
 ### A7. File DBPR RE 5 on the instructor-permit basis
 
 After A5 and A6:
@@ -187,7 +194,9 @@ Known school-path DBPR application fees total **$171.75** before fingerprints an
 - [ ] Assemble the private RE 3 `[1010]` packet and review the current form line by line.
 - [ ] Sign/pay/file RE 3 and complete fingerprints while A1 is pending; do not rely on test-center admission until the answer and authorization documents are inspected.
 - [ ] Study for the instructor examination while DBPR processes the application.
-- [ ] Select a Florida registered agent, then order the fresh $5 California Certificate of Status and file the $125 foreign-LLC qualification packet.
+- [x] Select a Florida registered agent — Northwest service active 2026-09-03 through 2027-09-03.
+- [ ] Confirm Northwest's appointment under exact legal name `StateCourse LLC` and download its invoice/agent-acceptance instructions.
+- [ ] Order the fresh $5 California Certificate of Status and file the $125 foreign-LLC qualification packet.
 - [ ] When RE 293 arrives, send it to the StateCourse work thread for inspection and continue Track B.
 - [ ] Do not enroll a Florida student or represent approval before written permits and course approval exist.
 

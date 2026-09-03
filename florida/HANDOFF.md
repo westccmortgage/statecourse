@@ -224,10 +224,12 @@ non-blocking without making the stated hours untrue.
 4. **Receive the instructor permit.** A passing score is not the permit; the permit must issue before
    StateCourse relies on it for RE 5.
 5. **Qualify StateCourse LLC as a Florida foreign LLC.** The selected conservative route is recorded
-   in `07-florida-foreign-llc-filing-packet.md`: select a Florida registered agent, obtain a
-   California Certificate of Status no more than 90 days old, and file CR2E027 with the $125
-   mandatory state fee. This removes the RE 5 corporate-record mismatch without creating a Florida
-   classroom.
+   in `07-florida-foreign-llc-filing-packet.md`. Northwest Registered Agent LLC service is active
+   2026-09-03 through 2027-09-03. Confirm that the appointment applies to exact legal name
+   `StateCourse LLC` because its screen shows the shorter `statecourse` label; then obtain its
+   acceptance instructions, a California Certificate of Status no more than 90 days old, and file
+   CR2E027 with the $125 mandatory state fee. This removes the RE 5 corporate-record mismatch
+   without creating a Florida classroom.
 6. **File RE 5 on the instructor-permit basis with $109.** Use the actual California physical
    business address. No Florida classroom is required solely for distance delivery; a
    registered-agent-only address does not require RE 9.

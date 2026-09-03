@@ -220,6 +220,10 @@ test("filing-control package locks the current form, human sequence, and honest 
   assert.match(foreignLlcPacket, /\$125 mandatory Florida filing total/i);
   assert.match(foreignLlcPacket, /no\s+more\s+than\s+90\s+days/i);
   assert.match(foreignLlcPacket, /does\s+not\s+create\s+a\s+Florida classroom/i);
+  assert.match(foreignLlcPacket, /Northwest Registered Agent LLC/);
+  assert.match(foreignLlcPacket, /7901 4th St N, STE 300/);
+  assert.match(foreignLlcPacket, /statecourse[\s\S]*not the legal filing name/i);
+  assert.match(foreignLlcPacket, /screenshot[\s\S]*not copied into this repository/i);
 
   const formControl = read("florida/submission/03-current-re18-form-control.md");
   assert.match(formControl, /two forms for distance pre\/post-license/i);
