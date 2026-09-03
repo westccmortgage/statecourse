@@ -6,7 +6,10 @@ These are facts and acts automation cannot truthfully invent, certify, purchase 
 
 ## DBPR RE 3 — Instructor Exam `[1010]`
 
-Before filing, obtain a focused written answer on the conflict between RE 3 (no prelicensing certificate listed) and the February 2025 Instructor CIB's generic instruction to bring a prelicensing completion certificate.
+Before relying on test-center admission, obtain a focused written answer on the conflict between RE
+3 (no prelicensing certificate listed) and the February 2025 Instructor CIB's generic instruction to
+bring a prelicensing completion certificate. Preparation and filing of RE 3 `[1010]` may proceed
+under its current checklist while the answer is pending.
 
 Owner supplies/confirms privately:
 

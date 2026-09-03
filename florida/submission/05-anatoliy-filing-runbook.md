@@ -26,7 +26,9 @@ DBPR/Pearson authorization notice. The question sent was:
 
 > For an RE 3 applicant qualifying solely through the Real Estate Instructor Exam route `[1010]`, is any Florida prelicensing-course completion certificate required before scheduling or for admission to the instructor examination? The current RE 3 checklist does not list one, but the February 2025 Instructor Candidate Information Booklet's “What to Bring” section mentions a Certificate of Pre-licensing Education Completion.
 
-Do not infer a 63-hour or 72-hour course prerequisite while the answer is pending.
+Do not infer a 63-hour or 72-hour course prerequisite while the answer is pending. This question
+controls test-center document treatment; it does not stop preparation or filing of the current RE 3
+`[1010]` application, whose own checklist does not list that certificate.
 
 ### A2. File DBPR RE 3 — Instructor Exam `[1010]`
 
@@ -183,7 +185,7 @@ Known school-path DBPR application fees total **$171.75** before fingerprints an
 
 - [x] Send the focused A1 clarification in the existing DBPR thread — sent 2026-09-03; awaiting answer.
 - [ ] Assemble the private RE 3 `[1010]` packet and review the current form line by line.
-- [ ] Sign/pay/file RE 3 and complete fingerprints after the A1 answer confirms test-center document treatment.
+- [ ] Sign/pay/file RE 3 and complete fingerprints while A1 is pending; do not rely on test-center admission until the answer and authorization documents are inspected.
 - [ ] Study for the instructor examination while DBPR processes the application.
 - [ ] Select a Florida registered agent, then order the fresh $5 California Certificate of Status and file the $125 foreign-LLC qualification packet.
 - [ ] When RE 293 arrives, send it to the StateCourse work thread for inspection and continue Track B.

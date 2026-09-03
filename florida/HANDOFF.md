@@ -214,7 +214,8 @@ non-blocking without making the stated hours untrue.
 1. **Clarify the Instructor CIB certificate sentence.** RE 3 `[1010]` does not list a prelicensing
    certificate, but the February 2025 CIB's generic “What to Bring” section does. The focused
    follow-up was sent 3 September 2026 and is awaiting answer; do not send a duplicate or invent a
-   63-hour or 72-hour prerequisite.
+   63-hour or 72-hour prerequisite. RE 3 preparation and filing may proceed while the answer is
+   pending; test-center document reliance may not.
 2. **File RE 3 Instructor Exam `[1010]` with $62.75 and fingerprints.** Retain the filed copy,
    receipt, TCN and authorization. This transaction does not use RE 293, a Florida broker license or
    a degree packet.

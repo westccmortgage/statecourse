@@ -10,7 +10,7 @@
 | Track | Filing or event | Current state | Release condition |
 |---|---|---|---|
 | School 1 | Resolve Instructor CIB certificate inconsistency | **FOLLOW-UP SENT 2026-09-03; awaiting answer** | DBPR/Pearson confirms whether a `[1010]` candidate must bring any prelicensing completion certificate; RE 3 itself does not list one |
-| School 2 | DBPR RE 3 Instructor Exam `[1010]` | Owner-action NO-GO | Current form, protected facts, $62.75, electronic fingerprints and declaration |
+| School 2 | DBPR RE 3 Instructor Exam `[1010]` | Owner-action; may proceed while School 1 answer is pending | Current form, protected facts, $62.75, electronic fingerprints and declaration |
 | School 3 | Instructor examination | External/human | DBPR authorization; Pearson appointment; closed book, 100 questions, 3.5 hours, pass 75 |
 | School 4 | Instructor permit | Regulator | Passed examination and DBPR issuance; the permit must exist before relying on it for RE 5 |
 | School 5 | Florida foreign-LLC qualification | Owner-action | Select Florida registered agent; obtain ≤90-day California Certificate of Status; file CR2E027 with $125; use exact accepted Sunbiz record on RE 5 |
