@@ -56,14 +56,11 @@
  * COMPLETION CONDITION IN THEIR OWN RIGHT, so northCarolinaCreditedHours gates on all three and
  * reports which one is blocking.
  *
- * WHAT WAS NOT READ. NCGS Chapter 93A and 21 NCAC 58 were NOT OBTAINED — the hosts carrying the North
- * Carolina General Statutes and Administrative Code are outside this environment's egress allowlist.
- * Neither were Form 2-T and its addenda, the WWREA Disclosure, RPOADS (REC 4.22), MOG (REC 4.25), the
- * Residential Square Footage Guidelines, the URAR, the CFPB sample LE and BCD, the HUD-1 and ALTA
- * statements, NCGS Chapters 41A, 42, 42A, 43, 45A, 47B, 47C, 47E, 47F and 160D, or the NC Uniform
- * Residential Building Code. Every rule citation in this file is the SYLLABUS'S citation, reproduced
- * so a reader knows where to go — not a claim that the cited text was read. UNREAD_SOURCES carries the
- * list into the payload so it travels with the course rather than living only in a comment.
+ * PHASE 0 SUPERSEDES THE ORIGINAL SOURCE LIMITATION. Current Chapter 93A and the controlling 21 NCAC
+ * 58A/58H rules were inspected on 2026-09-04 and are traced in the regulatory manifest. Official PDF
+ * bytes could not be retained for hash/render/OCR comparison, so filing is still blocked. Current
+ * forms, copyrighted practice documents, Required Activity artifacts and the regulator-format time
+ * ledger also remain open dependencies. OPEN_SOURCE_DEPENDENCIES carries only those live gaps.
  *
  * Course version 1.0 submission draft — NOT APPROVED. No North Carolina prelicensing credit is
  * available, and this course may not be delivered for credit until the Commission approves it and the
@@ -71,6 +68,7 @@
  */
 
 import MODULE_BANK from "./north-carolina/module-question-bank.mjs";
+import { NC_BLOCKERS, NC_CONTROL_DATE, NC_MANIFEST_VERSION } from "./north-carolina/regulatory-manifest.mjs";
 
 const COURSE_ID = "nc-broker-prelicensing-75-v1";
 
@@ -176,11 +174,8 @@ const REQUIRED_ACTIVITIES = Object.freeze([
   { section: "XVI", moduleId: "module-16", activity: "Provide an example using the Direct Capitalization Formula with the CAP rate given. There will be no calculations using a GRM.", status: "delivered" }
 ].map((item) => Object.freeze(item)));
 
-/* Named so the gap list travels with the course rather than living only in a comment. Nothing in this
-   build states a rule, figure, deadline, exemption or form provision from any of these. */
-const UNREAD_SOURCES = Object.freeze([
-  "NCGS Chapter 93A (Real Estate License Law), including 93A-6, 93A-12 and Article 4 (Timeshare Act)",
-  "21 NCAC 58A, 58B and 58H in their own text — every rule citation here is the Syllabus's citation",
+/* Live source/material dependencies after the 2026-09-04 official-statute/rule Phase 0 pass. */
+const OPEN_SOURCE_DEPENDENCIES = Object.freeze([
   "NCAR/NCBA Offer to Purchase and Contract Standard Form 2-T, its Guidelines, and all standard addenda",
   "Working With Real Estate Agents Disclosure and the accompanying Questions & Answers brochure",
   "Residential Property and Owners' Association Disclosure Statement (REC 4.22)",
@@ -188,15 +183,27 @@ const UNREAD_SOURCES = Object.freeze([
   "NCREC Residential Square Footage Guidelines",
   "Uniform Residential Appraisal Report (URAR) and any completed sample appraisal",
   "CFPB sample Loan Estimate and Borrower Closing Disclosure; the HUD-1 and ALTA settlement statements",
-  "NCGS Chapters 41A, 42, 42A, 43, 45A, 47B, 47C, 47E, 47F and 160D",
-  "NCGS 22-2, 25-9-313, 39-50, 42-14.2, 47-18, 47-20.6, 75-1.1, 105-164.3, 105-273, 136-102.6, 143-139.1, 143-143.9 and 14-395.1",
-  "The North Carolina excise tax and property tax statutes",
+  "Course-by-course reconciliation against NCGS Chapters 41A, 42, 42A, 43, 45A, 47B, 47C, 47E, 47F and 160D",
+  "Course-by-course reconciliation against the individual statutes cited in Syllabus Sections III-XVI, including current excise and property-tax text",
   "The North Carolina Uniform Residential Building Code",
   "TILA and Regulation Z; RESPA and Regulation X; the TRID rule; ECOA; FCRA; the Dodd-Frank Act",
   "FHA, VA and USDA program handbooks; Fannie Mae, Freddie Mac and Ginnie Mae seller/servicer guides",
   "USPAP, FIRREA, and any North Carolina Appraisal Board statute or rule",
   "The federal Fair Housing Act and EPA lead-based paint regulations in their own text"
 ]);
+
+const TIMING_EVIDENCE = Object.freeze({
+  requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 60,
+  commissionReadingRateWordsPerMinute: 225,
+  curriculumBaselineWords: 51568,
+  curriculumBaselineMinutes: Number((51568 / 225).toFixed(2)),
+  measuredOn: "2026-09-04",
+  mediaDurationLedgerMinutes: 0,
+  regulatorFormatOutlineComplete: false,
+  validated: false,
+  ruleCitation: "21 NCAC 58H .0401(c)(6) and (f)(2)",
+  note: "Planned module-hour labels do not prove distance-delivery time. The current text is far below 72 instructional hours."
+});
 
 /* ---- Import-time invariants ---- */
 
@@ -414,8 +421,16 @@ export function getNorthCarolinaCourse(courseId = COURSE_ID) {
       inModuleApplied: Object.freeze({ percent: APPLIED_PASSING_PERCENT, examination: "in-module applied scenario", rule: null, isCommissionFigure: false })
     }),
     courseValidityYears: COURSE_VALIDITY_YEARS,
-    unreadSources: UNREAD_SOURCES,
-    approvalStatus: "Not approved. No North Carolina prelicensing credit is available for this course. It may not be delivered for credit until the Commission approves it and the outstanding Required Activities recorded in requiredActivities are satisfied."
+    sourceManifest: Object.freeze({ version: NC_MANIFEST_VERSION, controlDate: NC_CONTROL_DATE }),
+    openSourceDependencies: OPEN_SOURCE_DEPENDENCIES,
+    /* Backwards-compatible field name; contents are now the post-Phase-0 open dependencies. */
+    unreadSources: OPEN_SOURCE_DEPENDENCIES,
+    timingEvidence: TIMING_EVIDENCE,
+    regulatoryBlockers: NC_BLOCKERS,
+    enrollmentStatus: "closed",
+    paymentStatus: "disabled",
+    creditAvailability: "none",
+    approvalStatus: "Not approved. No North Carolina prelicensing credit is available for this course. It may not be offered, advertised, delivered for credit, or enrolled until all provider, course, instructor, source, timing, proctoring, and operational gates are satisfied."
   });
 }
 
@@ -498,7 +513,11 @@ export function northCarolinaCreditedHours(moduleStates = [], options = {}) {
     finalExamPercent = null,
     attendanceMet = false,
     requiredActivitiesCompleted = null,
-    approvalNumber = null
+    approvalNumber = null,
+    providerCertificationNumber = null,
+    instructorApprovalNumber = null,
+    timingEvidenceValidated = false,
+    finalExamSecurityValidated = false
   } = options;
 
   const completed = new Set(
@@ -533,7 +552,12 @@ export function northCarolinaCreditedHours(moduleStates = [], options = {}) {
     endOfCourseExamPassed: finalPassed,
     endOfCoursePassingPercent: END_OF_COURSE_PASSING_PERCENT,
     courseComplete,
-    certificateEligible: courseComplete && Boolean(approvalNumber),
+    certificateEligible: courseComplete
+      && Boolean(providerCertificationNumber)
+      && Boolean(approvalNumber)
+      && Boolean(instructorApprovalNumber)
+      && Boolean(timingEvidenceValidated)
+      && Boolean(finalExamSecurityValidated),
     certificateBlockedBy: (() => {
       if (!allModulesComplete) {
         return `${credited.length} of ${MODULES.length} sections complete (${creditedHours} of ${REQUIRED_INSTRUCTIONAL_HOURS} instructional hours).`;
@@ -551,8 +575,20 @@ export function northCarolinaCreditedHours(moduleStates = [], options = {}) {
           ? "Completion condition 3 is not met: the end-of-course examination has not been taken. It must be comprehensive, closed-book and proctored."
           : `Completion condition 3 is not met: the end-of-course examination was scored at ${finalExamPercent} percent, below the ${END_OF_COURSE_PASSING_PERCENT} percent minimum under Commission Rule 58H .0207.`;
       }
+      if (!providerCertificationNumber) {
+        return "No North Carolina Real Estate Commission education-provider certification is recorded.";
+      }
       if (!approvalNumber) {
         return "No North Carolina Real Estate Commission course approval is recorded, so there is no approved course of study to certify.";
+      }
+      if (!instructorApprovalNumber) {
+        return "No North Carolina Real Estate Commission instructor approval is recorded for the delivering instructor.";
+      }
+      if (!timingEvidenceValidated) {
+        return "The self-paced distance course has not demonstrated its required time under 21 NCAC 58H .0401 at 225 words per minute plus actual media duration.";
+      }
+      if (!finalExamSecurityValidated) {
+        return "The comprehensive final-examination bank and identity/no-material proctoring workflow have not been validated.";
       }
       return null;
     })()
@@ -602,7 +638,9 @@ export const NORTH_CAROLINA_MODULE_IDS = Object.freeze(MODULES.map((item) => ite
 export const NORTH_CAROLINA_MODULES = MODULES;
 export const NORTH_CAROLINA_REQUIRED_ACTIVITIES = REQUIRED_ACTIVITIES;
 export const NORTH_CAROLINA_INSTRUCTIONAL_LEVELS = INSTRUCTIONAL_LEVELS;
-export const NORTH_CAROLINA_UNREAD_SOURCES = UNREAD_SOURCES;
+export const NORTH_CAROLINA_OPEN_SOURCE_DEPENDENCIES = OPEN_SOURCE_DEPENDENCIES;
+export const NORTH_CAROLINA_UNREAD_SOURCES = OPEN_SOURCE_DEPENDENCIES;
+export const NORTH_CAROLINA_TIMING_EVIDENCE = TIMING_EVIDENCE;
 export const NORTH_CAROLINA_END_OF_COURSE_PASSING_PERCENT = END_OF_COURSE_PASSING_PERCENT;
 export const NORTH_CAROLINA_REQUIRED_TOTAL_HOURS = REQUIRED_TOTAL_HOURS;
 export const NORTH_CAROLINA_REQUIRED_INSTRUCTIONAL_HOURS = REQUIRED_INSTRUCTIONAL_HOURS;

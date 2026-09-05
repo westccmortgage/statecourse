@@ -1,5 +1,11 @@
 # North Carolina — primary text readings
 
+> **2026-09-04 Phase 0 supersession notice.** The current official Chapter 93A and controlling 21
+> NCAC 58A/58H rules have now been inspected and are traced claim-by-claim in
+> `config/north-carolina/regulatory-manifest.mjs`. Statements below saying those authorities were not
+> obtained describe the original 2026-08-20 curriculum-authoring pass, not the present regulatory
+> status. The OAH PDF bytes still need filing-date download, hash, render and OCR/text comparison.
+
 **Read on 2026-08-20** from the North Carolina Real Estate Commission's own *North Carolina Real
 Estate Prelicensing Course Syllabus (Student Version)*, **March 2024 Edition, Amended May 2026**,
 obtained from `ncrec.gov` — 108 pages. Everything below was read from that operative text.
@@ -210,7 +216,9 @@ including but not limited to:
 
 The Syllabus also names the **North Carolina Real Estate Manual** ("Manual") as a major resource.
 
-**None of items 1 through 7, nor the Manual, was obtained or read for this project.** See the gap list.
+The standalone LLCR publication, Manual and form/publication resources in this list remain open
+course-material dependencies. The statutes and current rule text were inspected separately during
+Phase 0; they are not a substitute for the required student publications or licensed forms.
 
 ## Instructor conduct — Commission Rule 58H .0304, as quoted in the Syllabus
 
@@ -314,20 +322,18 @@ subagent to a prospective buyer; **58A .0108** for retention.
 
 ---
 
-## What was NOT read, and is therefore stated nowhere in this build
+## Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
 longer than any other state's in this project, because the Commission's syllabus is a map to source
 documents rather than a substitute for them.**
 
-- **21 NCAC Chapter 58, Subchapters A and H, in their own text.** The Syllabus quotes Rules 58H
-  .0205(a), 58H .0207, 58H .0304 and 58H .0404, and cites 58A .0104 and 58A .0108, and **those quoted
-  passages are reproduced above because they were read as quoted**. **The rules' own full text was not
-  obtained** — `reports.oah.state.nc.us` and `ncrules.state.nc.us` are outside this environment's
-  network egress allowlist. No requirement from any un-quoted portion of Chapter 58 appears in this
-  build.
-- **NCGS Chapter 93A, the Real Estate License Law**, in its own text. Cited throughout the Syllabus and
-  **not read**. No duty, prohibition, ground for discipline or penalty from it is stated.
+- **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
+  text for the controlling applicant, provider, instructor, course, distance, reporting, records and
+  renewal rules. This does not cure the original module prose: each module still needs a topic-level
+  reconciliation, and the official PDF bytes still need a filing-date integrity lock.
+- **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
+  Article 3. Topic-level curriculum reconciliation remains open.
 - **North Carolina Real Estate License Law and Commission Rules (LLCR)**, including the Comments.
 - **Real Estate Licensing in North Carolina (RELINC).**
 - **The North Carolina Real Estate Manual.**
@@ -358,8 +364,8 @@ documents rather than a substitute for them.**
 - The Syllabus read is the **March 2024 Edition, Amended May 2026**. The Commission amends it, and
   Rule 58H .0205(a) independently requires course materials to **cover current** North Carolina laws,
   rules and practices.
-- **The Syllabus is re-read in full at submission**, and the gap list above must be closed — in
-  particular Chapter 93A, 21 NCAC 58A and 58H, and Form 2-T — before any submission is made.
+- **The Syllabus and every controlling source are re-read at submission.** The form/publication gaps,
+  topic-level statutory/rule reconciliation and PDF byte-integrity lock must be closed before filing.
 - **Pre-approval is required for each type of course delivery**, and StateCourse's self-paced distance
   delivery is its own approval.
 
