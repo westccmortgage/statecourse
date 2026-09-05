@@ -3,8 +3,8 @@
  *
  * ONE ENGINE, TWO COURSES, because RCW 18.85.101(1)(c) names two: instruction "must include courses as
  * prescribed by the director including FUNDAMENTALS, which shall include THREE HOURS OF INSTRUCTION ON FAIR
- * HOUSING AND CONSUMER PROTECTION ISSUES, and PRACTICES." It fixes 90 hours and ALLOCATES THEM TO NEITHER
- * COURSE.
+ * HOUSING AND CONSUMER PROTECTION ISSUES, and PRACTICES." The current DOL prescribed curricula allocate
+ * 60 clock hours to Fundamentals (Rev. 5/2022) and 30 to Practices (effective 03-18-2009).
  *
  * WASHINGTON LICENSES A BROKER, NOT A SALESPERSON. RCW 18.86.010(3): "'Broker' means broker, managing
  * broker, and designated broker, collectively." The payload uses Washington's own words.
@@ -32,19 +32,16 @@
  * completed WITHIN TWO YEARS BEFORE APPLYING FOR THE BROKER'S LICENSE EXAMINATION." Not the licence
  * application, not the licence issue. washingtonEducationValidity computes it against that anchor.
  *
- * ATTENDANCE. WAC 308-124H-820 states no attendance standard, and this project did not obtain WAC 308-124's
- * own rules. The engine therefore asserts NO attendance percentage: attendanceMet is a provider input.
+ * ATTENDANCE. The reviewed prelicensing and distance rules do not state an attendance percentage. The engine
+ * therefore asserts NO attendance percentage: attendanceMet is a provider input.
  * (The distance-education criteria in WAC 308-124H-840 require the provider to show HOW it knows a student
  * completed the required clock hours, and require BOTH the school and the student to certify it in
  * writing — recorded in DISTANCE_EDUCATION_CRITERIA rather than converted into a number.)
  *
- * WHAT WAS NOT READ. RCW 18.85.101, RCW 18.86 in full, and WAC 308-124H §§ 810, 820, 830, 835, 840, 845 and
- * 855 were read on 2026-08-20. NOT obtained: THE DEPARTMENT'S PRESCRIBED COURSE CURRICULUM, which WAC
- * 308-124H-810 requires an approved school to use; WAC 308-124A-800 and -802; the remainder of RCW 18.85
- * including RCW 18.85.011 and 18.85.361; WAC 308-124 and its trust account, advertising and retention
- * rules; the full text of the RCW 18.86.120 pamphlet; RCW 64.06; RCW 59.18; RCW 49.60 and the federal Fair
- * Housing Act; RCW 82.45; RCW 61.24; ARELLO's standards; USPAP; and TILA, RESPA, TRID and ECOA.
- * UNREAD_SOURCES carries the list into the payload.
+ * SOURCE BASELINE. The current DOL prescribed curricula, education forms, reciprocity guidance, fee schedule,
+ * Chapters 308-124A and 308-124H WAC, and controlling statutes were reverified on 2026-09-04. Remaining
+ * curriculum-level sources not yet incorporated are carried in UNREAD_SOURCES; see the regulatory manifest
+ * for URL, authority class, retrieval date, pinpoint, evidence and PDF byte locks.
  *
  * Course version 1.0 submission draft — NOT APPROVED. No Washington clock hours are available.
  */
@@ -167,23 +164,22 @@ const UNWAIVABLE_DUTIES = Object.freeze([
 ]);
 
 const SUBMISSION_GATES = Object.freeze([
-  { id: "department-prescribed-curriculum", rule: "WAC 308-124H-810", requirement: "An approved school offering mandated real estate training must utilize the most recent course curriculum prescribed by the department.", satisfied: false, blockedBy: "The Department of Licensing's prescribed curriculum for Real Estate Fundamentals and Real Estate Practices has not been obtained. The curriculum here is written from RCW 18.85.101, RCW 18.86 and WAC 308-124H and must be conformed before submission." },
-  { id: "course-hour-allocation", rule: "RCW 18.85.101(1)(c)", requirement: "The allocation of the statutory 90 hours between the two named courses.", satisfied: false, blockedBy: "The statute names fundamentals and practices and allocates hours to neither. The 60/30 split delivered here is a StateCourse proposal requiring Department confirmation." },
-  { id: "fair-housing-curriculum", rule: "WAC 308-124H-820(12) and (13)", requirement: "A course offering the prescribed Washington real estate fair housing curriculum must meet WAC 308-124A-802, and only primary providers may teach it.", satisfied: false, blockedBy: "WAC 308-124A-802 and the Department's prescribed fair housing curriculum have not been obtained, and no primary provider status is held. The statutory three-hour block delivered here must be conformed to them." },
-  { id: "core-curriculum", rule: "WAC 308-124H-820(12)", requirement: "A course offering the prescribed core curriculum must meet WAC 308-124A-800.", satisfied: false, blockedBy: "WAC 308-124A-800 has not been obtained." },
+  { id: "department-prescribed-curriculum", rule: "WAC 308-124H-810; DOL Fundamentals Rev. 5/2022; DOL Practices effective 03-18-2009", requirement: "Use the most recent department-prescribed curricula and trace every required topic and objective to submitted materials.", satisfied: false, blockedBy: "Both current prescribed curricula are obtained and byte-locked, but the existing modules have not passed objective-level traceability. Practices has material gaps in business skills, valuation, negotiation, purchase agreements, finance/closing and math." },
+  { id: "course-hour-allocation", rule: "DOL prescribed curricula", requirement: "Deliver the prescribed 60-hour Real Estate Fundamentals and 30-hour Real Estate Practices courses.", satisfied: true },
+  { id: "fair-housing-curriculum", rule: "RCW 18.85.101(1)(c); DOL Fundamentals Rev. 5/2022", requirement: "Include three hours of fair housing and consumer-protection instruction within Fundamentals and align it to the prescribed Fundamentals objectives.", satisfied: false, blockedBy: "The build allocates three hours inside Fundamentals, but objective-level conformity to the current prescribed Fundamentals fair-housing section has not been signed off. No claim is made that this prelicense block is the separate WAC 308-124A-802 continuing-education course." },
+  { id: "core-curriculum", rule: "WAC 308-124H-820(12)", requirement: "Do not claim that these two prelicense courses contain the separate prescribed CORE curriculum.", satisfied: true },
   { id: "course-approval", rule: "WAC 308-124H-805 and -820", requirement: "Department approval of the course for clock hours, including director-approved textbook or instructional materials kept accurate and current.", satisfied: false, blockedBy: "No Department course approval is recorded and no course identification number has been issued." },
   { id: "school-approval", rule: "WAC 308-124H-880", requirement: "Department approval of the school and the school administrator.", satisfied: false, blockedBy: "No Department school approval is recorded and no school identification number has been issued." },
   { id: "instructor-approval", rule: "WAC 308-124H-820(6) and -945", requirement: "An instructor approved to teach the topic area, available to respond to specific questions on an immediate or reasonably delayed basis.", satisfied: false, blockedBy: "No Washington-approved instructor is engaged for this build." },
   { id: "distance-delivery-approval", rule: "WAC 308-124H-840 and -845", requirement: "Approval of the distance education delivery method, or ARELLO certification with a clock hour enforcement mechanism in place.", satisfied: false, blockedBy: "No delivery method application has been submitted and no ARELLO certification is held. Four of the nine WAC 308-124H-840 criteria are unsatisfied." },
   { id: "comprehensive-examinations", rule: "WAC 308-124H-820(8)", requirement: "A comprehensive examination and answer key of no fewer than three questions per clock hour with a minimum of 90 questions, and a passing course grade of at least 70 percent, for each course of 30 clock hours or more.", satisfied: false, blockedBy: "The comprehensive examinations required by rule — at least 180 items for Fundamentals and at least 90 for Practices — have not been authored. The in-module banks are not those examinations." },
-  { id: "pamphlet-text", rule: "RCW 18.86.030(1)(f) and 18.86.120", requirement: "Provision of the pamphlet in the form prescribed by RCW 18.86.120, with acknowledgment of receipt.", satisfied: false, blockedBy: "The full text of the RCW 18.86.120 pamphlet has not been transcribed and is reproduced nowhere in this build." }
+  { id: "pamphlet-text", rule: "RCW 18.86.030(1)(f) and 18.86.120", requirement: "Provision of the pamphlet in the form prescribed by RCW 18.86.120, with acknowledgment of receipt.", satisfied: false, blockedBy: "The current prescribed pamphlet text has not yet been incorporated as a controlled course artifact." },
+  { id: "pvs-determination", rule: "RCW 28C.10.030; Washington Workforce Board current guidance", requirement: "Obtain a written Private Vocational School applicability determination before enrollment.", satisfied: false, blockedBy: "No blanket real-estate-school exemption was located and no written Workforce Board determination exists." },
+  { id: "entity-and-ubi", rule: "RE-623-121 (R/12/25); WAC 308-124H-890", requirement: "Provide the legal entity record and 16-digit UBI/Business ID/Location ID accepted by DOL.", satisfied: false, blockedBy: "DOL has not confirmed whether the California distance-only LLC must foreign-register in Washington or which UBI record to submit." }
 ].map((item) => Object.freeze(item)));
 
 const UNREAD_SOURCES = Object.freeze([
-  "The Department of Licensing's prescribed course curriculum for Real Estate Fundamentals and Real Estate Practices — WAC 308-124H-810 requires an approved school to use it",
-  "WAC 308-124A-800 (prescribed core curriculum) and WAC 308-124A-802 (prescribed Washington real estate fair housing curriculum)",
-  "The remainder of RCW 18.85 in its own text, including RCW 18.85.011 (definitions, including broker's price opinion), 18.85.041, 18.85.141 and 18.85.361",
-  "WAC 308-124, 308-124A, 308-124B, 308-124C, 308-124D and 308-124E — Washington's trust account, advertising and record-retention rules",
+  "Objective-level primary-authority readings needed to support every learning objective in the two current DOL prescribed curricula",
   "The full text of the RCW 18.86.120 pamphlet",
   "RCW 64.06 and the Washington seller disclosure statement",
   "RCW 59.18, the Residential Landlord-Tenant Act, and the unlawful detainer statutes",
@@ -408,7 +404,7 @@ export function getWashingtonCourse(courseId) {
     ]),
     /* What this school decided. */
     stateCourseDecisions: Object.freeze([
-      `The 60/30 split of the statutory ${REQUIRED_TOTAL_HOURS} hours between the two named courses. RCW 18.85.101(1)(c) names both and allocates hours to neither, so the split requires Department confirmation.`,
+      `The module-level allocation of the DOL-prescribed ${COURSES["wa-real-estate-fundamentals-60-v1"].hours}/${COURSES["wa-real-estate-practices-30-v1"].hours} hours. DOL fixes each course total; StateCourse decides how those hours are distributed across modules.`,
       `Delivering the statutory ${STATUTORY_FAIR_HOUSING_HOURS}-hour fair housing and consumer protection block as its own auditable module rather than distributing it, so a reviewer can verify it in one place.`,
       "The grouping of RCW 18.85, RCW 18.86 and WAC 308-124H into eighteen modules.",
       `The ${ENGAGEMENT_PASSING_PERCENT} percent in-module engagement threshold and the ${APPLIED_PASSING_PERCENT} percent applied threshold. Neither RCW 18.85.101 nor WAC 308-124H prescribes an in-module assessment or an in-module score.`
@@ -421,7 +417,7 @@ export function getWashingtonCourse(courseId) {
     educationValidityYears: EDUCATION_VALIDITY_YEARS,
     minimumAge: MINIMUM_AGE,
     highSchoolDiplomaRequired: HIGH_SCHOOL_DIPLOMA_REQUIRED,
-    approvalStatus: "Not approved. No Washington clock hours are available for this course. WAC 308-124H-805 requires course approval, WAC 308-124H-880 requires school and school administrator approval, WAC 308-124H-840 requires distance delivery method approval, and WAC 308-124H-810 requires use of the Department's prescribed curriculum. None is held."
+    approvalStatus: "Not approved. No Washington clock hours are available for this course. Current prescribed curricula have been obtained, but school, course, instructor and distance-method approvals are not held and objective-level curriculum conformity is incomplete."
   });
 }
 
@@ -437,9 +433,9 @@ export function getWashingtonProgram() {
     statutoryFairHousingHours: STATUTORY_FAIR_HOUSING_HOURS,
     minutesPerClockHour: MINUTES_PER_CLOCK_HOUR,
     instructionMinutes: deliveredHours * MINUTES_PER_CLOCK_HOUR,
-    hourAllocationIsStateCourseDecision: true,
+    hourAllocationIsStateCourseDecision: false,
     totalRequiredExaminationItems: COURSE_IDS.reduce((sum, id) => sum + requiredExaminationItems(COURSES[id].hours), 0),
-    note: `RCW 18.85.101(1)(c) requires ${REQUIRED_TOTAL_HOURS} hours and names fundamentals and practices without allocating hours to either. This build delivers exactly ${REQUIRED_TOTAL_HOURS}, split 60/30 as a StateCourse proposal requiring Department confirmation, with the statutory ${STATUTORY_FAIR_HOUSING_HOURS}-hour fair housing and consumer protection block inside Fundamentals as its own auditable module.`,
+    note: `RCW 18.85.101(1)(c) requires ${REQUIRED_TOTAL_HOURS} hours; the current DOL prescribed curricula fix ${COURSES["wa-real-estate-fundamentals-60-v1"].hours} hours for Fundamentals and ${COURSES["wa-real-estate-practices-30-v1"].hours} hours for Practices. The statutory ${STATUTORY_FAIR_HOUSING_HOURS}-hour fair housing and consumer-protection block remains inside Fundamentals.`,
     submissionGates: SUBMISSION_GATES,
     unreadSources: UNREAD_SOURCES,
     approvalStatus: "Not approved. No Washington clock hours are available."

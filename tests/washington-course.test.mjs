@@ -90,16 +90,15 @@ test("each course's module hours sum to the course total", () => {
   }
 });
 
-test("the 60/30 split is recorded as a StateCourse decision, not a statutory requirement", () => {
+test("the 60/30 split is fixed by the current DOL prescribed curricula", () => {
   const program = getWashingtonProgram();
-  assert.equal(program.hourAllocationIsStateCourseDecision, true);
-  assert.match(program.note, /without allocating hours to either/i);
-  assert.match(program.note, /StateCourse proposal requiring Department confirmation/i);
+  assert.equal(program.hourAllocationIsStateCourseDecision, false);
+  assert.match(program.note, /DOL prescribed curricula fix 60 hours/i);
   const gate = WASHINGTON_SUBMISSION_GATES.find((g) => g.id === "course-hour-allocation");
   assert.ok(gate);
-  assert.equal(gate.satisfied, false);
+  assert.equal(gate.satisfied, true);
   const course = getWashingtonCourse(FUNDAMENTALS);
-  assert.ok(course.stateCourseDecisions.some((line) => /60\/30 split/.test(line)));
+  assert.ok(course.stateCourseDecisions.some((line) => /module-level allocation/.test(line)));
 });
 
 test("both courses are recorded as named by the statute", () => {
@@ -267,7 +266,7 @@ test("the distance education criteria are recorded and every unsatisfied one say
   assert.match(joined, /individual remediation/i);
 });
 
-test("every submission gate is unsatisfied here and says what blocks it", () => {
+test("every unsatisfied submission gate says what blocks it", () => {
   assert.ok(WASHINGTON_SUBMISSION_GATES.length >= 8);
   for (const gate of WASHINGTON_SUBMISSION_GATES) {
     if (!gate.satisfied) assert.ok(gate.blockedBy && gate.blockedBy.length > 20, gate.id);
@@ -276,7 +275,7 @@ test("every submission gate is unsatisfied here and says what blocks it", () => 
   const curriculum = WASHINGTON_SUBMISSION_GATES.find((g) => g.id === "department-prescribed-curriculum");
   assert.equal(curriculum.satisfied, false);
   assert.match(curriculum.rule, /308-124H-810/);
-  assert.match(curriculum.requirement, /most recent course curriculum prescribed by the department/i);
+  assert.match(curriculum.requirement, /most recent department-prescribed curricula/i);
   const exams = WASHINGTON_SUBMISSION_GATES.find((g) => g.id === "comprehensive-examinations");
   assert.equal(exams.satisfied, false);
   assert.match(exams.blockedBy, /180 items for Fundamentals/);
@@ -571,11 +570,11 @@ test("RCW 18.86.100 and 18.86.090 are stated in Module WA-P-03", () => {
 
 /* ---- What was NOT read ---- */
 
-test("the readings file names what was not obtained and the engine carries the same list", () => {
+test("the readings file names remaining source gaps and the engine carries them", () => {
   assert.match(readings, /NOT obtained|not read/i);
-  assert.ok(WASHINGTON_UNREAD_SOURCES.length >= 12);
+  assert.ok(WASHINGTON_UNREAD_SOURCES.length >= 10);
   const joined = WASHINGTON_UNREAD_SOURCES.join(" | ");
-  for (const source of ["prescribed course curriculum", "308-124A-802", "18.85.361", "WAC 308-124", "18.86.120 pamphlet", "RCW 64.06", "RCW 59.18", "RCW 49.60", "RCW 82.45", "ARELLO"]) {
+  for (const source of ["Objective-level", "18.86.120 pamphlet", "RCW 64.06", "RCW 59.18", "RCW 49.60", "RCW 82.45", "ARELLO"]) {
     assert.ok(joined.includes(source), `unread list does not name ${source}`);
   }
 });

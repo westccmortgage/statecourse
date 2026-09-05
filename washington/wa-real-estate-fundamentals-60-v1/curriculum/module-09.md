@@ -29,12 +29,14 @@
 > *"**only primary providers shall be approved to teach the prescribed core curriculum and Washington real
 > estate fair housing**."*
 >
-> **WAC 308-124A-802 was NOT obtained by this project**, and neither was the **Department's prescribed
-> curriculum** for this block. **The Washington Law Against Discrimination (RCW 49.60) and the federal Fair
-> Housing Act were NOT read in their own text.**
+> **WAC 308-124A-802 and DOL's current Fundamentals curriculum were reviewed in Phase 0 on 2026-09-04.**
+> Section 802 governs the separately named Washington real estate fair-housing curriculum; this module is the
+> three-hour block inside prelicense Fundamentals. StateCourse does not assume the two are interchangeable.
+> **The Washington Law Against Discrimination (RCW 49.60) and the federal Fair Housing Act were NOT read in
+> their own text for this inherited draft.**
 >
 > **Accordingly this module states NO protected class list, NO exemption, NO complaint deadline, NO penalty
-> and NO enforcement procedure from any of them.** It teaches the **structure** of fair housing law and the
+> and NO enforcement procedure from those unread texts.** It teaches the **structure** of fair housing law and the
 > **conduct** that violates it, and it routes every figure. **Obtaining WAC 308-124A-802, the Department's
 > prescribed curriculum, RCW 49.60 and the federal Act — and conforming this block to them — is a submission
 > gate.**
@@ -259,13 +261,14 @@ limiting clause.**
 **§§ 18.86.010(11), 18.86.030(1) and (2), 18.86.040(1)(c) and 18.86.050(1)(c)**, were read on 2026-08-20 and
 are transcribed above. **WAC 308-124H-820(12) and (13)** were read and are quoted in the submission gate.
 
-**NOT obtained, and therefore the source of NOTHING in this module:** **WAC 308-124A-802**, the prescribed
-Washington real estate fair housing curriculum; the **Department of Licensing's prescribed curriculum** for
-this block; the **Washington Law Against Discrimination, RCW 49.60**; the **federal Fair Housing Act** and its
+**Reviewed in Phase 0 but not yet mapped objective-by-objective into this inherited module:**
+**WAC 308-124A-802** and DOL's prescribed Fundamentals curriculum. **Not read in their own text for this
+draft, and therefore the source of nothing in it:** the **Washington Law Against Discrimination, RCW 49.60**;
+the **federal Fair Housing Act** and its
 implementing regulations; every **local Washington antidiscrimination ordinance**; **ECOA**; the federal
 **assistance animal** guidance; and **WAC 308-124**, including Washington's advertising rules.
 
 **NO protected class list, exemption, complaint deadline, filing period, penalty, damages figure, enforcement
 procedure, verification standard or advertising rule is stated anywhere in this module.** Every one of them is
-routed to its source, and **conforming this block to WAC 308-124A-802 and the Department's prescribed
-curriculum is a submission gate for this course.**
+routed to its source, and **conforming this block to the DOL-prescribed Fundamentals objectives is a
+submission gate for this course.** The separate WAC 308-124A-802 curriculum is not claimed as this block.
