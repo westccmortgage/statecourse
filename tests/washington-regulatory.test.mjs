@@ -20,6 +20,7 @@ test("every Washington controlling claim has complete provenance and a certainty
     assert.ok(claim.evidence.length > 40);
     assert.ok(claim.claim.length > 40);
     assert.ok(claim.reliedOnBy.length > 0);
+    for (const sourceId of claim.supportingSourceIds ?? []) assert.ok(washingtonSource(sourceId), `${claim.id}: ${sourceId}`);
   }
 });
 
