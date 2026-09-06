@@ -1,13 +1,13 @@
 # North Carolina handoff
 
-**Branch:** `relay-north-carolina`  
-**Phase:** Phase 0 regulatory baseline and pre-filing package  
-**Control date:** 2026-09-04  
-**Provider:** Not certified  
-**Course:** Not approved  
-**Instructor:** Not approved  
-**Enrollment:** closed  
-**Payment:** disabled  
+**Branch:** `relay-north-carolina`
+**Phase:** Phase 0 regulatory baseline and pre-filing package
+**Control date:** 2026-09-06
+**Provider:** Not certified
+**Course:** Not approved
+**Instructor:** Not approved
+**Enrollment:** closed
+**Payment:** disabled
 **North Carolina credit:** none
 
 ## What is complete
@@ -35,9 +35,9 @@ artifact promises that result.
 
 The broker application requires a Commission-designated criminal records report obtained within six
 months, not a fingerprint step in the controlling rule; the current application fee is $105. The
-April 2025 official handbook described a $50 Pearson single-section fee and 180-day eligibility, but
-the fee must be checked live. The State section has 60 scored items plus five pretest items in that
-official outline.
+April 2026 official handbook was downloaded from Pearson: printed page 19 / PDF page 21 gives a $53
+single-section exam fee ($63 for both) and 180-day eligibility. The prior April 2025/$50 citation was
+stale. The State section has 60 scored items plus five pretest items; recheck the booking charge.
 
 ## Instructor answer
 
@@ -51,9 +51,12 @@ the record; equivalency therefore needs NCREC preclearance.
 ## The decisive build discovery
 
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
-duration. The sixteen curriculum files contain 51,568 audit-tokenized words: about 229.19 minutes or
-3.82 hours. Even adding every word in the question-bank source produces only a deliberately generous
-5.36-hour ceiling. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
+duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
+minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
+previously reported 4,320. The sixteen curriculum files contain 51,568 audit-tokenized words, or at
+most 229.19 minutes/3.82 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 321.75-minute ceiling including code. Neither is validated
+student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
 
@@ -61,7 +64,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Filing-date PDF byte/hash/render/OCR lock absent |
+| NC-B01 | StateCourse | Partial PDF capture: 2/21 source entries retained and reviewed; 19 entries unavailable; source status INCOMPLETE |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -84,10 +87,13 @@ requires its own foreign-entity consent to service and asks for an NC SOS ID if 
 
 ## Next fixed order
 
-1. Send the preclearance request and obtain the NCREC comparable-status/equivalency answers.
+1. Await the NCREC comparable-status/equivalency answers. Inquiry was sent to educ@ncrec.gov on
+   September 6, 2026 at 04:16:45 PDT, subject “StateCourse — NC comparable broker status and instructor
+   qualification”; Gmail message ID `1a0766f5c826402a`. No reply recorded at this handoff; do not duplicate.
 2. Obtain college transcripts and certified California license history.
 3. Resolve/file NC foreign qualification if required and designate entity/education-director facts.
-4. Capture/hash/render/OCR-check official filing-date sources and lawfully obtain required forms.
+4. Complete authentic PDF capture and relevant-page/text review; use OCR only when digital text is
+   missing or disputed. L-09 is retained but still needs factual completion/signature when applicable.
 5. Expand/reconcile the curriculum and build a regulator-format timing ledger.
 6. Build/test secure final exam, proctoring, complete distance LMS, reports, storage and reviewer access.
 7. Finalize/sign PPD and provider packet; submit provider application.
@@ -99,7 +105,17 @@ Run:
 ```text
 node scripts/north-carolina-source-lock.mjs --json
 node --test tests/north-carolina-course.test.mjs tests/north-carolina-phase0.test.mjs
+node --test tests/north-carolina-source-integrity.test.mjs
+node scripts/north-carolina-source-lock.mjs --require-source-capture
 ```
 
-The structural source lock is intended to pass while filing remains **NO-GO**. A green test suite is
-not regulator approval.
+Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
+records exact failures and does not turn search-index text into downloaded evidence. Current PDFs:
+2 retained of 19 unique URLs, representing 2 of 21 source entries; the shared Chapter 58 compilation
+supports three entries. Scripts verify actual bytes and content identity and reject a wrong PDF,
+soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review. No push made.
+
+PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
+The strict `--require-source-capture` command intentionally exits 1 while sources are incomplete;
+the normal command checks structure and reports source failures without claiming a lock. These are
+offline as-of-capture checks; re-fetch before filing. Current focused tests: 77/77 passing.

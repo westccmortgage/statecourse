@@ -57,8 +57,8 @@
  * reports which one is blocking.
  *
  * PHASE 0 SUPERSEDES THE ORIGINAL SOURCE LIMITATION. Current Chapter 93A and the controlling 21 NCAC
- * 58A/58H rules were inspected on 2026-09-04 and are traced in the regulatory manifest. Official PDF
- * bytes could not be retained for hash/render/OCR comparison, so filing is still blocked. Current
+ * 58A/58H rules were inspected on 2026-09-04 and are traced in the regulatory manifest. The 2026-09-06
+ * capture log distinguishes retained handbook/form PDFs from inaccessible rule/syllabus PDFs. Current
  * forms, copyrighted practice documents, Required Activity artifacts and the regulator-format time
  * ledger also remain open dependencies. OPEN_SOURCE_DEPENDENCIES carries only those live gaps.
  *
@@ -193,16 +193,17 @@ const OPEN_SOURCE_DEPENDENCIES = Object.freeze([
 ]);
 
 const TIMING_EVIDENCE = Object.freeze({
-  requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 60,
+  instructionalMinutesPerHour: 50,
+  requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 50,
   commissionReadingRateWordsPerMinute: 225,
   curriculumBaselineWords: 51568,
   curriculumBaselineMinutes: Number((51568 / 225).toFixed(2)),
-  measuredOn: "2026-09-04",
+  measuredOn: "2026-09-06",
   mediaDurationLedgerMinutes: 0,
   regulatorFormatOutlineComplete: false,
   validated: false,
-  ruleCitation: "21 NCAC 58H .0401(c)(6) and (f)(2)",
-  note: "Planned module-hour labels do not prove distance-delivery time. The current text is far below 72 instructional hours."
+  ruleCitation: "21 NCAC 58H .0101(7); .0401(c)(6) and (f)(2)",
+  note: "Source-word counts include nonstudent text and are upper-bound audit signals only. Seventy-two non-exam instructional hours require 3600 instructional minutes; breaks and final-exam allocation have separate ledgers. No student-visible time is validated."
 });
 
 /* ---- Import-time invariants ---- */

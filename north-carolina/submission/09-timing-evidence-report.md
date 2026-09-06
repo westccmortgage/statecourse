@@ -1,22 +1,27 @@
 # Rule 58H .0401 timing evidence — failing baseline
 
-**Measured:** 2026-09-04  
-**Rule:** distance-course outline must demonstrate minimum hours at 225 words per minute plus actual
-audio/video duration.  
-**Target used:** 72 non-exam instructional hours = 4,320 minutes; final examination = 3 hours inside
-the 75-hour course total.
+**Measured:** 2026-09-06
+**Rule:** 58H .0101(7) defines an instructional hour as 50 minutes of instruction and 10 minutes of
+break. Rule .0401(c)(6), (f)(2) measures distance-course content at 225 words per minute plus actual
+audio/video duration.
+**Corrected target:** 72 non-exam instructional hours = 3,600 actual instructional minutes. The
+syllabus assigns three further hours to the final examination inside the 75-hour course total.
+The examination and break allocation must have separate ledgers; breaks cannot be counted as text
+or media instruction. The previous 4,320-minute target incorrectly treated every hour as 60 minutes
+of instruction. Official .0101 indexed text was rechecked September 6; direct OAH PDF capture failed.
 
 ## Baseline
 
-| Repository measure | Words | Minutes at 225 wpm | Hours |
+| Repository measure | Words | Minutes at 225 wpm | 60-minute elapsed hours |
 |---|---:|---:|---:|
 | sixteen curriculum Markdown files, audit tokenizer | 51,568 | 229.19 | 3.82 |
 | curriculum plus entire question-bank source file (deliberately generous ceiling) | 72,393 | 321.75 | 5.36 |
-| reading-only words needed for 72 hours | 972,000 | 4,320 | 72.00 |
+| reading-only words for 72 instructional hours | 810,000 | 3,600 | 60.00 |
 
-The audit tokenizer counts word-like Unicode tokens and excludes Markdown punctuation. The generous
-ceiling includes JavaScript syntax/metadata and is therefore not valid student-visible
-time. There is no duration-controlled audio/video ledger. The current course is at most a small
+The audit tokenizer counts word-like Unicode tokens and excludes Markdown punctuation. Both totals
+include nonstudent material: the curriculum includes author notes and the larger count also includes
+JavaScript syntax/metadata. Both are upper-bound audit signals, not valid student-visible instruction.
+There is no duration-controlled audio/video ledger. The current course is at most a small
 fraction of the required instruction and must not be submitted or advertised as 75 hours.
 
 ## Required unit ledger
@@ -31,5 +36,5 @@ download time, homework, exams other than the three-hour final, navigation, tech
 unsupported “seat time” are not used to manufacture hours.
 
 Run `node scripts/north-carolina-source-lock.mjs --json` to recalculate the repository signal. The
-validator intentionally reports `timing.demonstrated: false`; a future true value is still not a
-substitute for the regulator-format ledger and full-course review.
+validator reports `timing.demonstrated: false`. Increasing raw source words can never change this
+to true. A completed student-visible unit/media ledger and full-course review are required first.

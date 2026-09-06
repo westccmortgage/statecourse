@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { inspectPdfEvidence, sha256 } from '../scripts/lib/north-carolina-source-integrity.mjs';
+const source = {id:'NC-RULE-58H-.0401',url:'https://reports.oah.state.nc.us/example.pdf'};
+const bytes = Buffer.from('%PDF-1.7\nfixture');
+const render = Buffer.from('render fixture');
+const entry = {sourceIds:[source.id],requestedUrl:source.url,finalUrl:source.url,httpStatus:200,contentType:'application/pdf',snapshotPath:'fixture.pdf',sha256:sha256(bytes),pdfPages:1,attemptedAt:'2026-09-06T12:00:00Z',pdfReview:{status:'REVIEWED',reviewedPdfSha256:sha256(bytes),title:'Rule 21 NCAC 58H .0401',revisionObservation:'Reviewed history note',pages:[{number:1,renderPath:'render.png',sha256:sha256(render)}]}};
+const materials = {bytes,pageText:['21 NCAC 58H .0401 APPROVAL OF A REAL ESTATE EDUCATION COURSE'],renderBytes:{'render.png':render}};
+test('complete consistent evidence passes as-of capture, not as approval',()=>assert.equal(inspectPdfEvidence(source,entry,materials).status,'VERIFIED_AS_OF_CAPTURE'));
+test('wrong PDF cannot pass merely with an updated byte hash',()=>{const wrong=Buffer.from('%PDF-1.7\nother');const result=inspectPdfEvidence(source,{...entry,sha256:sha256(wrong)},{...materials,bytes:wrong,pageText:['Elevator Safety']});assert.equal(result.byteVerified,false);assert.ok(result.errors.some(e=>e.includes('identity')));});
+test('HTTP 200 soft-404 rejects HTML even when extension says PDF',()=>assert.equal(inspectPdfEvidence(source,{...entry,contentType:'text/html'},{...materials,bytes:Buffer.from('<html>Not Found</html>')}).byteVerified,false));
+test('missing snapshot cannot pass stored metadata',()=>assert.equal(inspectPdfEvidence(source,entry,{...materials,bytes:null}).byteVerified,false));
+test('modified snapshot fails stale hash',()=>assert.ok(inspectPdfEvidence(source,{...entry,sha256:'0'.repeat(64)},materials).errors.some(e=>e.includes('SHA-256'))));
+test('redirect to another host is refused',()=>assert.equal(inspectPdfEvidence(source,{...entry,finalUrl:'https://example.org/other.pdf'},materials).byteVerified,false));
+test('capture without render/title/revision review remains unreviewed',()=>assert.equal(inspectPdfEvidence(source,{...entry,pdfReview:null},materials).status,'CAPTURED_UNREVIEWED'));
+test('stale or missing render fails review',()=>assert.equal(inspectPdfEvidence(source,entry,{...materials,renderBytes:{}}).reviewVerified,false));
+test('future filing cannot reuse old snapshot as fresh',()=>assert.equal(inspectPdfEvidence(source,entry,{...materials,today:'2026-09-07'}).reviewVerified,false));
+test('same-title old RELINC edition fails current revision identity',()=>{const guide={id:'NC-GUIDE-RELINC-2026',url:source.url};const result=inspectPdfEvidence(guide,{...entry,sourceIds:[guide.id]},{...materials,pageText:['Real Estate Licensing in North Carolina April 2025']});assert.equal(result.byteVerified,false);assert.ok(result.errors.some(e=>e.includes('identity')));});

@@ -4,7 +4,8 @@
 > NCAC 58A/58H rules have now been inspected and are traced claim-by-claim in
 > `config/north-carolina/regulatory-manifest.mjs`. Statements below saying those authorities were not
 > obtained describe the original 2026-08-20 curriculum-authoring pass, not the present regulatory
-> status. The OAH PDF bytes still need filing-date download, hash, render and OCR/text comparison.
+> status. The OAH PDF bytes still need filing-date download, hash and relevant-page/digital-text review;
+> OCR is needed only if the text layer is missing or disputed.
 
 **Read on 2026-08-20** from the North Carolina Real Estate Commission's own *North Carolina Real
 Estate Prelicensing Course Syllabus (Student Version)*, **March 2024 Edition, Amended May 2026**,

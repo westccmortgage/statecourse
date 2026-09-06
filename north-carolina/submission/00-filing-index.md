@@ -24,11 +24,13 @@ approved; enrollment closed; no NC credit available.
 5. **Receive provider certification and number.** Only then populate the course application with
    the provider number. Record issue/expiry dates and conditions.
 6. **Complete the course build.** Close all Required Activity/source gaps, expand student-visible
-   instructional content to demonstrate 72 non-exam hours at 225 words/minute plus media, build the
+   instructional content to demonstrate 72 non-exam instructional hours (3,600 actual minutes under
+   .0101(7)) at 225 words/minute plus media, with separate breaks/exam ledgers, build the
    secure comprehensive final, implement proctoring and reviewer access, and verify all distance
    controls in production.
 7. **Refresh sources.** Capture the exact current statutes/rules/forms/syllabus, hash every retained
-   file, compare PDF text layer/OCR/render, and run the source-lock validator. Reconcile any changed
+   file, compare relevant rendered pages against digital text (OCR only if missing/disputed), and
+   run the source-lock validator. Reconcile any changed
    form or rule before signing.
 8. **Submit the course application.** Use the live REC 7.33 workflow at the
    [official portal](https://educprovider.ncrec.gov/EducationCourseApplication/Index). Attach the full
@@ -56,7 +58,7 @@ approved; enrollment closed; no NC credit available.
 | pre/post course renewal | $25/course | 21 NCAC 58H .0416(c)(1) |
 | CE elective renewal | $50/course | 21 NCAC 58H .0416(c)(2) |
 | postlicense/CE completion remittance | $10/licensee/course | G.S. 93A-4(a2); 93A-38.5(e) |
-| Pearson State section | verify live | April 2025 handbook said $50; not frozen for 2026 |
+| Pearson State section | $53 published; recheck booking | April 2026 RELINC printed p. 19 / PDF21, captured September 6 |
 | original course review | verify live | inspect REC 7.33 portal at filing |
 
 This table excludes vendor criminal-report, proctoring, platform, registered-agent, legal, and

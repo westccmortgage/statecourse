@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
-**Control date:** 2026-09-04  
-**Manifest:** `NC-PHASE0-2026-09-04-v1`  
+**Control date:** 2026-09-06
+**Manifest:** `NC-PHASE0-2026-09-06-v2`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -36,14 +36,23 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 
 ## Verification limitations and conflict resolution
 
-The direct OAH PDF requests timed out in the research environment. Official titles, rule numbers,
-history notes, and content anchors were inspected through the indexed official text, but PDF bytes
-were not retained. No SHA-256, page rendering, or OCR-to-text-layer comparison is claimed. `NC-B01`
-keeps filing blocked until that capture is done from a network that can download the files.
+The September 6 capture attempted 19 unique PDF URLs representing 21 source entries. Sixteen OAH
+URLs timed out and the NCREC syllabus returned HTTP 403. Two PDFs were retained and identity/hash
+checked: April 2026 RELINC (36 pages) and L-09 (3 pages, revised July 2017). Cover/fee pages of RELINC
+and all L-09 pages were visually checked against digital text. OCR is unnecessary for these clear
+digital text layers. `captures/2026-09-06/capture-log.json` preserves requests, final URL where a
+response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
+to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
 
-The April 2025 RELINC handbook displays a $100 broker application fee; Rule 58A .0302, effective
-2026-04-01, sets $105. The rule controls. The handbook's Pearson single-section charge is therefore
-treated as a filing-time check rather than frozen fact.
+The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
+Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees
+on printed page 19 (PDF21). These are current published fees; booking charges and availability
+still need the live booking workflow. The previous $50 single-section claim was stale.
+
+Current official indexed .0101(7), .0302, .0401 and 58A .0511 were rechecked September 6. The correct
+conversion is 50 instruction minutes per course hour; the 72-hour non-exam allocation is 3,600
+actual instruction minutes. Broker equivalency and instructor experience remain pending the
+individual NCREC decision. Indexed text is not represented as a retained PDF.
 
 The August 19, 2026 license-count page has an indexed-label inconsistency. Detailed categories are
 the reliable arithmetic: 77,507 active full + 4,080 active provisional = **81,587 active individual

@@ -1,6 +1,6 @@
 # Anatoliy Kanevsky — North Carolina broker and instructor path
 
-**Prepared:** 2026-09-04  
+**Updated:** 2026-09-06
 **Known facts:** California resident since 1994; California real estate Broker license 01385024,
 first licensed in 2009 and reported current through 2029; no real estate license in another state.
 Current/good-standing status must still be documented in the NC application.
@@ -41,11 +41,11 @@ NCREC. Obtain it in writing before relying on the route for instructor eligibili
 6. Submit the application and **$105** fee. Select the other-jurisdiction/State-section election only
    if the live form describes it consistently with Rule .0511.
 7. When NCREC accepts the application, it ordinarily emails an exam-eligibility notice. The April
-   2025 official handbook describes a 180-calendar-day window and 2-3-day notice timing; treat those
+   2026 official handbook describes a 180-calendar-day window and 2-3-day notice timing; treat those
    as workflow guidance and recheck the current notice.
-8. Book only the NC State section with Pearson VUE. The April 2025 official outline has 60 scored
-   State items plus five pretest items. Recheck the live single-section fee; the handbook's $50 figure
-   was not independently frozen for September 2026.
+8. Book only the NC State section with Pearson VUE. The April 2026 official outline has 60 scored
+   State items plus five pretest items. The current published single-section fee is $53 (printed
+   p. 19 / PDF p. 21, downloaded and visually checked September 6). Recheck the booking charge.
 9. Pass and wait for NCREC's status determination. Do not represent nonprovisional status until it
    appears in the Commission record.
 10. Keep the NC license current. Renewal is $50 under the rule effective April 1, 2026. Active status

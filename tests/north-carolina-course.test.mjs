@@ -440,7 +440,8 @@ test("Phase 0 supersedes the original statute/rule gap while carrying live cours
 test("planned module labels do not masquerade as validated self-paced timing", () => {
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.validated, false);
   assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.commissionReadingRateWordsPerMinute, 225);
-  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes, 4320);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.instructionalMinutesPerHour, 50);
+  assert.equal(NORTH_CAROLINA_TIMING_EVIDENCE.requiredInstructionalMinutes, 3600);
   assert.ok(NORTH_CAROLINA_TIMING_EVIDENCE.curriculumBaselineMinutes < 300);
   assert.equal(getNorthCarolinaCourse().enrollmentStatus, "closed");
   assert.equal(getNorthCarolinaCourse().paymentStatus, "disabled");
