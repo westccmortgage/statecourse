@@ -89,7 +89,15 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .finder-fields select { width: 100%; min-height: 50px; padding: 0 42px 0 13px; background: #fff; border: 1px solid #cfcabf; border-radius: 4px; color: var(--ink); }
 .finder-fields button { grid-column: 1/-1; display: flex; justify-content: space-between; align-items: center; min-height: 52px; padding: 0 20px; border: 0; border-radius: 4px; background: var(--gold); color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; }
 .finder-fields button:hover { background: var(--brick-dark); }
-.finder-message { min-height: 22px; margin: -10px 26px 16px; color: var(--gold-deep); font-size: 12px; }
+.finder-status-guide { display: flex; flex-wrap: wrap; gap: 8px; margin: -8px 26px 16px; }
+.status-key { display: inline-flex; align-items: center; min-height: 28px; padding: 4px 9px; border: 1px solid currentColor; border-radius: 999px; font-size: 11px; font-weight: 700; line-height: 1.35; }
+.status-key::before { width: 8px; height: 8px; margin-right: 7px; border-radius: 50%; background: currentColor; content: ""; }
+.status-available { color: var(--green); background: #edf7f4; }
+.status-development { color: var(--gold-deep); background: #fff8e7; }
+.status-coming { color: #69747c; background: #f0f1f2; }
+.finder-message { min-height: 22px; margin: 0 26px 16px; color: var(--muted); font-size: 12px; }
+.finder-message[data-access="available"] { color: var(--green); font-weight: 700; }
+.finder-message[data-access="development"] { color: var(--gold-deep); font-weight: 700; }
 
 /* ── introduction film ───────────────────────────────────────────────────────────────────── */
 .intro-film { background: var(--stone); border-bottom: 1px solid var(--rule); }
@@ -325,6 +333,8 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
   .intent-tabs span { padding: 13px 15px; }
   .finder-fields { grid-template-columns: 1fr; padding: 18px; }
   .finder-fields button { grid-column: auto; }
+  .finder-status-guide { margin: -2px 18px 14px; }
+  .finder-message { margin: 0 18px 16px; }
   .credibility-band { grid-template-columns: 1fr; margin: 0; padding: 0; border-left: 0; border-right: 0; border-radius: 0; }
   .credibility-band div { border-right: 0; border-bottom: 1px solid var(--rule); }
   .institution-section, .page-body { padding: 62px 18px; }

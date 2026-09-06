@@ -22,6 +22,32 @@ let videoPlayTracked = false;
 
 const slugify = (name) => name.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replaceAll(/^-|-$/g, "");
 
+const STATE_ACCESS = Object.freeze({
+  available: {
+    optionLabel: "Available",
+    message: (state) => `${state.state_name}: Available. Review the current approved offering and enrollment status.`,
+  },
+  development: {
+    optionLabel: "In development · Free practice",
+    message: (state) => `${state.state_name}: In development — free practice access only. No payment, enrollment, licensing credit, or certificate.`,
+  },
+  coming: {
+    optionLabel: "Coming soon",
+    message: (state) => `${state.state_name}: Coming soon. This state is listed for visibility but is not open yet.`,
+  },
+});
+
+function classifyStateAccess(state, catalogStateCodes) {
+  if (state.public_status === "Approved") return "available";
+  if (catalogStateCodes.has(state.state_code)) return "development";
+  return "coming";
+}
+
+function setFinderMessage(text, access = "") {
+  message.textContent = text;
+  message.dataset.access = access;
+}
+
 function trackMarketingVideo(action,detail={}) {
   const payload = {
     event: `statecourse_intro_${action}`,
@@ -150,16 +176,45 @@ function updateGoalOptions(intent) {
 
 async function loadStates() {
   try {
-    const response = await fetch(new URL("data/state-registry.json", platformRoot));
-    if (!response.ok) throw new Error("State registry unavailable");
-    const { states } = await response.json();
+    const [registryResponse, catalogResponse] = await Promise.all([
+      fetch(new URL("data/state-registry.json", platformRoot)),
+      fetch(new URL("data/course-catalog.json", platformRoot)),
+    ]);
+    if (!registryResponse.ok || !catalogResponse.ok) throw new Error("State availability unavailable");
+    const { states } = await registryResponse.json();
+    const catalog = await catalogResponse.json();
+    const catalogStateCodes = new Set(
+      (catalog.categories || [])
+        .flatMap((category) => category.programs || [])
+        .flatMap((program) => (program.courses || []).map((course) => course.state_id || program.state_code))
+    );
     const jurisdictions = [...states].sort((a, b) => a.state_name.localeCompare(b.state_name));
-    stateSelect.insertAdjacentHTML("beforeend", jurisdictions.map((state) => `<option value="${state.state_code}" data-slug="${slugify(state.state_name)}">${state.state_name}</option>`).join(""));
+    for (const state of jurisdictions) {
+      const access = classifyStateAccess(state, catalogStateCodes);
+      const option = document.createElement("option");
+      option.value = state.state_code;
+      option.dataset.slug = slugify(state.state_name);
+      option.dataset.stateName = state.state_name;
+      option.dataset.access = access;
+      option.textContent = `${state.state_name} — ${STATE_ACCESS[access].optionLabel}`;
+      option.disabled = access === "coming";
+      stateSelect.append(option);
+    }
   } catch (error) {
     console.error(error);
-    message.textContent = "State selection is temporarily unavailable. Please use State Requirements.";
+    setFinderMessage("State selection is temporarily unavailable. Please use State Requirements.");
   }
 }
+
+stateSelect?.addEventListener("change", () => {
+  const selected = stateSelect.selectedOptions[0];
+  const access = selected?.dataset.access;
+  if (!selected?.value || !STATE_ACCESS[access]) {
+    setFinderMessage("Choose an Available or In development state. Coming soon states are listed but cannot be selected.");
+    return;
+  }
+  setFinderMessage(STATE_ACCESS[access].message({ state_name: selected.dataset.stateName }), access);
+});
 
 document.querySelectorAll('input[name="intent"]').forEach((radio) => radio.addEventListener("change", () => updateGoalOptions(radio.value)));
 
@@ -167,7 +222,7 @@ finder?.addEventListener("submit", (event) => {
   event.preventDefault();
   const selected = stateSelect.selectedOptions[0];
   if (!selected?.value) {
-    message.textContent = "Choose a state to continue.";
+    setFinderMessage("Choose an Available or In development state to continue.");
     stateSelect.focus();
     return;
   }
