@@ -1,0 +1,18 @@
+# Workforce Board jurisdiction review
+
+Reviewed2026-09-06 against [WAC490-105-030](https://app.leg.wa.gov/WAC/default.aspx?cite=490-105-030), [RCW28C.10.030](https://app.leg.wa.gov/RCW/default.aspx?cite=28C.10.030) and the [current Workforce Board school-opening guidance](https://wtb.wa.gov/private-career-schools/open-private-career-school/).
+
+The earlier Phase0 statement “StateCourse must obtain a written Workforce Board determination before enrollment” overstates the source as a universal statutory requirement. Correct classification: unresolved applicability to this school's concrete operations; a written response is the chosen way to resolve that factual/legal question, not a blanket filing imposed on every California online school.
+
+WAC490-105-030 expressly defines an out-of-state school to include a school outside Washington offering distance education that solicits, recruits and enrolls Washington students. Its physical-presence definition extends beyond a classroom: it includes a Washington mailing address, equipment/records, agents/administrators, direct advertising and marketing to Washington residents, and Washington field placements. Therefore a California office and no Washington classroom do not, by themselves, establish nonjurisdiction. Conversely, absence of a blanket real-estate-school exemption in RCW28C.10.030 does not prove that every out-of-state online school requires a PVS license.
+
+Current Board guidance says vocational programs longer than three days charging tuition *may* require licensing, directs providers to send its self-test, and places orientation/application after staff determine licensing is required. Its currently linked [License Determination Questionnaire](https://wtb.wa.gov/wp-content/uploads/2024/02/PVSA-License-Determination-Questionnaire-2024.pdf), Section 3 on page 3, asks about presence, targeted local advertising, Washington field placements, and intended Washington enrollment. It expressly states that an out-of-state online-only school intending Washington enrollment may need licensing. The possible-exemption instruction calls for NO to all four questions, including intended Washington enrollment; it does not establish a blanket exemption for a California school selling online education to Washington residents. Record actual facts and await the agency's answer before treating applicability as settled. Do not invent fees, surety or filing steps before that determination.
+
+The linked PDF bears November 22, 2023 on page 1 and January 2024 on pages 2–3. It prints an older hannah.bartlett email, while the current live Board page directs the self-test to hannah.mae@wtb.wa.gov. Use the current-page contact (the inquiry already did), and preserve the form's revision/contact discrepancy in the record. An updated questionnaire/process answer is already requested.
+
+Correspondence already sent, verified by the coordinating agent's mailbox audit:
+
+- 2026-09-06 04:19:04 PDT, ReEducation@dol.wa.gov, “StateCourse — Washington online school and instructor prefiling questions”, message id 1a076717c74d374e: California instructor competency, UBI, concurrent applications, proctoring.
+- 2026-09-06 04:19:26 PDT, hannah.mae@wtb.wa.gov, “StateCourse — licensing determination process for California online real estate school”, message id 1a07671d48b460c7: physical presence/direct marketing and questionnaire process.
+
+No substantive reply was recorded in that audit. The next step is to process replies and complete any requested factual questionnaire; do not send duplicate inquiries. DOL school/course/instructor/distance approvals remain independently required.

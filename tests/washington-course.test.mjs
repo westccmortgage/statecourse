@@ -73,7 +73,7 @@ const allText = WASHINGTON_COURSE_IDS
 
 /* ---- The statutory 90 hours, and the split ---- */
 
-test("the two courses deliver exactly the statutory 90 hours", () => {
+test("the two course metadata allocations total the planned statutory 90 hours, without proving delivery", () => {
   assert.equal(WASHINGTON_REQUIRED_TOTAL_HOURS, 90);
   const program = getWashingtonProgram();
   assert.equal(program.deliveredHours, 90);
@@ -113,7 +113,7 @@ test("both courses are recorded as named by the statute", () => {
 
 /* ---- The statutory fair housing block ---- */
 
-test("the statutory three-hour fair housing block exists, is 3.0 hours, and sits inside Fundamentals", () => {
+test("Fundamentals allocates a planned three-hour fair housing block without proving actual instruction time", () => {
   assert.equal(WASHINGTON_STATUTORY_FAIR_HOUSING_HOURS, 3);
   const fundamentals = getWashingtonCourse(FUNDAMENTALS);
   assert.equal(fundamentals.carriesStatutoryFairHousingBlock, true);

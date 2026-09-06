@@ -2,12 +2,12 @@
 
 ## State
 
-- Branch: `relay-washington`
+- Branch: `relay-washington`; local-only work, no push in this continuation
 - Phase 0: **complete on 2026-09-04**
 - Submission readiness: **NO-GO**
 - Enrollment/payment/credit/certificates: **closed**
 - School/course/instructor/distance approvals: **none claimed or recorded**
-- Curriculum authoring after this audit: **not begun**
+- Objective-level audit: **complete 2026-09-06**; substantive curriculum rewrite not begun
 
 Run `node scripts/washington-phase0-report.mjs` for the current inventory/gates and
 `node scripts/washington-source-lock.mjs` for live source/content/hash validation.
@@ -21,8 +21,11 @@ Run `node scripts/washington-phase0-report.mjs` for the current inventory/gates 
 3. **A California Broker may request Managing Broker reciprocity, but DOL decides equivalence.** Same-or-
    lesser level is current guidance; WAC 308-124A-720 requires same or greater capacity. Never call the
    Managing Broker result automatic.
-4. **Education approval is not a PVS exemption.** No blanket real-estate-school exemption was found in RCW
-   28C.10.030. Get a written Workforce Board determination before enrollment.
+4. **A California office does not settle PVS applicability.** WAC 490-105-030 includes direct Washington
+   advertising/marketing in physical presence. The current Board questionnaire also asks about planned
+   Washington-resident enrollment and requires No to all four Section 3 questions for its possible-exemption
+   indication. Our planned enrollment prevents relying on that indication. Applicability remains unresolved;
+   the factual inquiry was already sent. See `regulatory/pvs-jurisdiction-review.md`.
 
 ## User-specific routes
 
@@ -44,7 +47,7 @@ enforcement.
 
 ## Internal blockers
 
-- objective-level traceability to every prescribed Fundamentals and Practices objective;
+- delivery evidence against the completed objective-level source inventory;
 - substantive reconstruction of Practices and targeted Fundamentals remediation;
 - 180-item Fundamentals final and 90-item Practices final with keys and source pinpoints;
 - active-instruction/clock-hour evidence;
@@ -58,14 +61,14 @@ enforcement.
 - DOL written answer on California license evidence for instructor subject competency;
 - instructor-technique proof;
 - DOL answer on foreign California LLC and required 16-digit UBI;
-- Workforce Board PVS applicability determination;
+- unresolved Workforce Board PVS applicability for actual outreach/presence facts (inquiry already sent);
 - DOL school, instructor, two course and distance-method approvals/identifiers.
 
 ## Fixed sources and forms
 
 Machine record: `config/washington/regulatory-manifest.mjs`. It stores authority class, exact official URL,
-effective/revision status, retrieval date, pinpoint, evidence and claim classification. Six PDFs are SHA-256
-pinned: both curricula plus school, instructor, course and distance forms. Live lock checks document type,
+effective/revision status, retrieval date, pinpoint, evidence and claim classification. Seven PDFs are SHA-256
+pinned: both curricula plus school, instructor, course, distance and PVS-questionnaire forms. Live lock checks document type,
 content marker, soft-404 text and byte drift, not merely HTTP 200.
 
 Forms/current revision: school RE-623-121 R/12/25; instructor RE-623-125 R/8/23; course RE-623-137 R/10/25;
@@ -74,9 +77,13 @@ costs. The DOL planning figure is 45 days per original application, not an appro
 
 ## Next build order
 
-1. Send and archive the two written regulator requests in `submission/regulator-questions.md`.
-2. Build objective IDs and two source-to-module/time/assessment matrices.
-3. Rewrite Practices, then remediate Fundamentals.
+1. Process replies to the two regulator requests sent2026-09-06; do not resend them.
+2. Use `regulatory/objective-matrix.json` and the two readable objective matrices. Fundamentals has173
+   printed records:161 detailed substantive mandatory outcomes,10 introduction rollups, one extra printed
+   fragment in Career8–9, and one optional instructor-resource record. Practices has109 mandatory outcomes.
+   Partial/missing lesson counts: Fundamentals115/47; Practices53/56. No objective claims fully covered.
+3. Execute WA-B1 (Practices Business/Agency/Listing,46 objectives, proposed550 minutes) and WA-B2
+   (Fundamentals Fair Housing/License Law, proposed450 minutes). See `regulatory/objective-build-plan.md`.
 4. Paginate/freeze instructional materials.
 5. Author finals and keys against final page pinpoints.
 6. Implement/test distance and records controls.
@@ -85,3 +92,6 @@ costs. The DOL planning figure is 45 days per original application, not an appro
 Do not author answer-key page citations before the curriculum is paginated. Do not freeze, publish or open
 enrollment merely because Phase 0 is complete.
 
+Objective validation: `node scripts/washington-objective-map.mjs` and
+`node --test tests/washington-objective-map.test.mjs`. The preserved source PDF hashes were refreshed on
+2026-09-06;3,000/1,500 minutes are proposed active-instruction allocations, never verified elapsed delivery.

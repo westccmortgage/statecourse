@@ -1,6 +1,7 @@
 # Washington Phase 0 status
 
-Verified: 2026-09-04. Regulator: Washington State Department of Licensing (DOL). Separate possible
+Baseline verified: 2026-09-04; objective audit, PDF bytes and PVS jurisdiction review refreshed 2026-09-06.
+Regulator: Washington State Department of Licensing (DOL). Separate possible
 regulator: Washington Workforce Training and Education Coordinating Board (Workforce Board).
 
 ## Determinations
@@ -10,7 +11,7 @@ regulator: Washington Workforce Training and Education Coordinating Board (Workf
 | Personal license | CONDITIONAL GO | A currently active California broker may request the same or a lesser Washington level. Apply for Managing Broker reciprocity first; DOL must decide whether California is the same or greater capacity. |
 | Reciprocity education | GO | If DOL accepts same/greater capacity and good standing now or within six months, only the Washington-law exam is required; the 90-hour prelicense education is not the reciprocity route. |
 | Instructor | CONDITIONAL GO | The form's subject-competency option based on three years of active licensure within the last five years appears available, but DOL must confirm California licensure evidence. Instructional-technique qualification remains separately required. |
-| School | PREPARATION GO / FILING NO-GO | Current RE-623-121 package mapped. UBI/foreign-LLC treatment and PVS applicability need written answers. |
+| School | PREPARATION GO / FILING NO-GO | Current RE-623-121 package mapped. UBI/foreign-LLC treatment awaits DOL reply. PVS applicability depends on actual presence/outreach facts, including direct Washington marketing; no universal written-determination requirement is asserted. Both inquiries were sent 2026-09-06. |
 | Courses | NO-GO | Current 60h Fundamentals and 30h Practices curricula obtained and byte-locked. Existing modules are not objective-level conforming, and complete 180/90 final exams do not exist. |
 | Distance delivery | NO-GO | Narrative is mapped to all eight current form questions. Clock-hour enforcement, inactivity shutdown, identity proof, dual certification and approved-instructor operations are not complete. |
 | Enrollment / credit | CLOSED | No school, course, instructor, or delivery approval is recorded. No Washington credit or completion certificate may be offered. |
@@ -45,4 +46,3 @@ endorsement, and a $304 firm application. Do not buy that license solely to file
 
 Every controlling statement above maps to a source, authority class, revision/effective date, retrieval
 date, pinpoint and evidence in `config/washington/regulatory-manifest.mjs`.
-

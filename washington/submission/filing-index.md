@@ -6,7 +6,8 @@ source lock because DOL may replace a PDF at the same URL.
 ## Recommended order
 
 1. **Regulator answers.** Obtain DOL writing on (a) California license evidence for instructor subject
-   competency, and (b) foreign California LLC/UBI treatment. Obtain Workforce Board PVS determination.
+   competency, and (b) foreign California LLC/UBI treatment. Both inquiries were sent2026-09-06. Resolve
+   Workforce Board applicability using actual presence/outreach facts; do not assume a universal PVS filing.
 2. **Personal license, independently.** Official CA DRE history → reciprocity exam approval at Managing
    Broker level → $210 Washington-law exam → fingerprints → DOL notice → $330 license application.
 3. **Instructor readiness.** Complete one WAC 308-124H-960 instructional-technique route and assemble cover
@@ -39,4 +40,3 @@ Legal entity address/contact, Washington-accepted UBI, school administrator empl
 answers, signature/date, payment, instructor-training proof, detailed recent real-estate employment evidence,
 and the official DRE history. Do not place SSN, identity documents, payment data or sensitive background
 answers in this repository.
-

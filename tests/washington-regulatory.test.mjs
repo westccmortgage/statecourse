@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -51,6 +52,17 @@ test("all source readings are fresh and staleness cannot be hidden", () => {
   assert.deepEqual(staleWashingtonSources(), []);
   const future = new Date(Date.now() + (MAX_VERIFICATION_AGE_DAYS + 60) * 86_400_000);
   assert.equal(staleWashingtonSources(future).length, SOURCES.length);
+});
+
+test("PVS questionnaire is byte pinned and intended Washington enrollment stays unresolved", () => {
+  const source = washingtonSource("wa-wtb-pvs-questionnaire");
+  const bytes = fs.readFileSync(path.join(ROOT, "washington/regulatory/source-evidence/pvs-questionnaire.pdf"));
+  assert.equal(bytes.subarray(0, 5).toString(), "%PDF-");
+  assert.equal(createHash("sha256").update(bytes).digest("hex"), source.sha256);
+  const claim = washingtonClaim("wa-pvs-status");
+  assert.ok(claim.supportingSourceIds.includes(source.id));
+  assert.equal(claim.classification, "needs-regulator-confirmation");
+  assert.match(claim.claim, /Planned Washington-resident enrollment prevents relying/);
 });
 
 test("offline lock skips network and does not describe a live URL check as passed", () => {

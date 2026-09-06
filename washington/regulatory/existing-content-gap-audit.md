@@ -1,12 +1,14 @@
 # Existing 90-hour draft — prescribed-curriculum gap audit
 
-Audit date: 2026-09-04. Outcome: **NO-GO for submission**.
+Audit refreshed: 2026-09-06. Outcome: **NO-GO for submission**. Complete objective records and precise next
+build batches now live in `objective-matrix.json`, both `*-objective-matrix.md` files and `objective-build-plan.md`.
 
 ## Fundamentals — 60 hours
 
-The inherited 12-module draft has the correct total and broad subject coverage, including a discrete
-three-hour fair-housing/consumer-protection module. It is not yet mapped objective-by-objective to all 12
-pages of the DOL Rev. 5/2022 document. Areas needing explicit evidence include career/business planning,
+The inherited 12-module draft has hour labels totaling60, including a label allocating three hours to
+fair-housing/consumer-protection; those labels do not demonstrate actual instruction time. It is now mapped
+objective-by-objective to all12 pages of the DOL Rev.5/2022 document. The audit located115 partial records
+and47 missing records (plus10 introductory rollups and one optional resource record). Areas needing explicit evidence include career/business planning,
 brokerage terms and relationships, listing procedures, the selling process, escrow/settlement details and
 every agency/resource/terminology objective. Existing topic similarity is not proof of conformity.
 
@@ -33,5 +35,4 @@ Those are material gaps, not editorial cleanup. Do not submit the present Practi
 - Complete independent duplicate/fact-pattern/citation/accessibility reviews.
 - Implement and test distance controls before describing them as operating.
 
-No curriculum freeze is authorized by Phase 0.
-
+No curriculum freeze is supported by this evidence.

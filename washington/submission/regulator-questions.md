@@ -1,6 +1,8 @@
 # Washington prefiling questions
 
-These are the only Phase 0 questions that need regulator answers before the filing route can be finalized.
+The two inquiries were sent2026-09-06 and await substantive answers; this is an archive of the questions,
+not a send queue. DOL message id1a076717c74d374e; Workforce message id1a07671d48b460c7. See the correspondence
+and jurisdiction review in `../regulatory/pvs-jurisdiction-review.md`.
 
 ## DOL Real Estate Education
 
@@ -25,7 +27,7 @@ question into a requirement or an exemption.
 
 StateCourse LLC is a California LLC proposing a paid, self-paced, 90-clock-hour Washington real-estate
 prelicensing program for the public, delivered entirely online from California, with no Washington classroom.
-Request a written determination whether Chapter 28C.10 RCW requires a Washington Private Vocational School
+The sent request asks about the determination process and questionnaire, citing the physical-presence/
+direct-marketing definition in WAC490-105-030. Resolve whether Chapter28C.10 RCW requires a Private Vocational School
 license, registration, surety, catalog/enrollment-agreement approval or other filing. Include the Board's
 current self-test and the DOL education-approval plan. Ask it to cite any exemption relied upon.
-

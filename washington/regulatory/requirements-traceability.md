@@ -22,7 +22,7 @@ means no filing or enrollment decision may rely on it until the agency answers i
 | Five-year student/publication records | WAC 308-124H-895(4), -935 | Confirmed | records policy outline | Policy prepared; system proof pending |
 | Independent proctor | WAC 308-124H-820(8), -840 and current forms | Interpretation | exam administration note | No express requirement located; silence is not a guarantee |
 | Foreign LLC and 16-digit UBI | RE-623-121 p.2; WAC 308-124H-890 | Regulator confirmation | DOL inquiry | Do not guess or file placeholder |
-| Private Vocational School applicability | RCW 28C.10.030; Workforce Board current guidance | Regulator confirmation | Workforce Board request | Written determination required before enrollment |
+| Private Vocational School applicability | RCW28C.10.030; WAC490-105-030; Workforce Board guidance | Regulator confirmation | Request sent2026-09-06 | Resolve actual physical-presence/direct-marketing facts; universal written-determination prerequisite withdrawn |
 | Education school versus brokerage firm | RE-623-121; DOL firm page | Confirmed | phase-0 status | Separate regimes |
 
 ## Source quality controls
@@ -35,4 +35,3 @@ means no filing or enrollment decision may rely on it until the agency answers i
   school 3, instructor 4, course 3, distance 2. The visible titles and revision labels matched the text
   extraction. No OCR-only conflict was found in the reviewed title/revision/hour fields.
 - `--offline` never reports a live URL check as passed.
-
