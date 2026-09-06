@@ -1,5 +1,5 @@
 {
-  "snapshotId": "IL-PHASE0-REQUIREMENTS-2026-09-04-v1",
+  "snapshotId": "IL-PHASE0-REQUIREMENTS-2026-09-06-v2",
   "jurisdiction": "Illinois",
   "statusVocabulary": {
     "confirmed": "Directly controlled by a current primary authority.",
@@ -153,13 +153,13 @@
     {
       "id": "IL-INS-002",
       "topic": "instructor expertise",
-      "status": "confirmed",
+      "status": "needs_regulator_confirmation",
       "claim": "One expertise route is holding an active broker or managing-broker license for the immediately preceding two years.",
       "authorityClass": "administrative_rule",
-      "sourceIds": ["IL-RULE-1450", "IL-INSTRUCTOR-REQ", "CA-DRE-USER-LICENSE"],
-      "pinpoint": "68 Ill. Adm. Code 1450.1115(a)(2)(A); instructor requirements p. 1",
-      "evidenceParaphrase": "The rule does not textually limit this route to an Illinois license; the user's California public record shows an active broker license held far longer than two years.",
-      "implementation": "Submit the certified California history and a resume showing current broker practice; IDFPR retains application approval authority."
+      "sourceIds": ["IL-ACT-1", "IL-RULE-1450", "IL-INSTRUCTOR-REQ", "CA-DRE-USER-LICENSE"],
+      "pinpoint": "225 ILCS 454/1-10 License/Licensee; 68 Ill. Adm. Code 1450.100 and 1450.1115(a)(2)(A),(D)",
+      "evidenceParaphrase": "The general two-year route is confirmed, but Act definitions imported by 1450.100 tie license/licensure to IDFPR under the Act. CA eligibility cannot be inferred from silence. Professional background and experience is a separate route under (D), subject to review.",
+      "implementation": "Await the substantive answer to the September 6 inquiry; prepare certified CA history and documented experience for route (D) review if (A) is unavailable. Do not describe CA as automatically or likely qualifying."
     },
     {
       "id": "IL-INS-003",
@@ -209,11 +209,11 @@
       "id": "IL-PROV-001",
       "topic": "provider prerequisite",
       "status": "confirmed",
-      "claim": "StateCourse LLC must obtain Illinois authority to transact business before IDFPR may license it as an education provider.",
+      "claim": "An IDFPR education-provider application must include Illinois SOS authorization to conduct or transact business; StateCourse LLC should prepare foreign-LLC admission for this filing requirement.",
       "authorityClass": "administrative_rule",
       "sourceIds": ["IL-RULE-1450", "IL-FORM-PROVIDER", "IL-SOS-FOREIGN-LLC", "IL-SOS-FORM-LLC455"],
       "pinpoint": "68 Ill. Adm. Code 1450.1100(a)(5); Form 505-0767 p. 2 item 5(b); LLC-45.5",
-      "evidenceParaphrase": "The provider filing must include filed Illinois authority and the formation-state articles.",
+      "evidenceParaphrase": "Section 1450.1100(a)(5) expressly requires SOS authorization for education-provider applicants. This is an IDFPR filing requirement, not a general finding that every California-only online activity constitutes transacting business under corporate law.",
       "implementation": "File LLC-45.5 first, using an Illinois registered agent; attach the filed admission and California Articles to IDFPR."
     },
     {
@@ -253,7 +253,7 @@
       "id": "IL-PROV-005",
       "topic": "seven-course portfolio",
       "status": "confirmed",
-      "claim": "An education provider offering pre-license courses must provide the full seven-course pre/post portfolio before it may provide core CE or a 30-hour endorsement course.",
+      "claim": "An education provider offering pre-license courses must provide the full seven-course pre/post portfolio under 1450.1105(b)-(d); subsection (e) also requires this portfolio before core CE or a 30-hour endorsement course.",
       "authorityClass": "administrative_rule",
       "sourceIds": ["IL-RULE-1450", "IL-FORM-PROVIDER", "IL-FORM-COURSE"],
       "pinpoint": "68 Ill. Adm. Code 1450.1105(b)-(e); Form 505-0767 p. 5; Form 505-0645 p. 2",
@@ -341,11 +341,11 @@
       "id": "IL-COURSE-003",
       "topic": "online distance controls",
       "status": "confirmed",
-      "claim": "To use the final-exam waiver for online distance prelicense or CE, the provider must record responses, enforce 75% comprehension, use no more than 250 questions per course, randomize retries, verify identity at the beginning and end, and retain those records five years.",
+      "claim": "To use the final-exam waiver for online distance prelicense or CE, the provider must record responses, enforce 75% comprehension, require no more than 250 questions per course, randomize retries, verify identity at the beginning and end, and retain those records five years.",
       "authorityClass": "administrative_rule",
       "sourceIds": ["IL-RULE-1450"],
       "pinpoint": "68 Ill. Adm. Code 1450.1175(a), (d)(1)-(4)",
-      "evidenceParaphrase": "The waiver does not apply to the 45-hour postlicense exams.",
+      "evidenceParaphrase": "The waiver does not apply to the 45-hour postlicense exams. The 250 limit concerns required questions in one course within the waiver provision; it is not an item-bank-size cap, a per-exam allowance, or a universal cap on every delivery method. No separate waiver application is specified; demonstrate compliance and supply evidence when requested.",
       "implementation": "LMS release gate must separately enforce comprehension, identity, timestamps, randomized remediation, retention, and required postlicense finals."
     },
     {
@@ -407,10 +407,10 @@
       "id": "IL-MKT-001",
       "topic": "market size",
       "status": "confirmed",
-      "claim": "IDFPR's February 2026 statistics reported 59,006 active brokers and 13,898 active managing brokers, 72,904 combined; FY2024 reported 4,212 broker applications and 3,972 broker licenses granted.",
+      "claim": "IDFPR's February 2026 statistics reported 59,006 active brokers and 13,898 active managing brokers, 72,904 combined; the 2024 Annual Disciplinary Report recorded 4,212 broker applicants and 3,972 broker licenses granted.",
       "authorityClass": "agency_data",
       "sourceIds": ["IL-DATA-BOARD-202603", "IL-DATA-FY2024"],
-      "pinpoint": "2026-03-12 Board minutes p. 2; FY2024 Annual Disciplinary Report p. 85",
+      "pinpoint": "2026-03-12 Board minutes p. 2; 2024 Annual Disciplinary Report p. 85 (calendar-year applicants footnote)",
       "evidenceParaphrase": "These are official dated snapshots, not a current real-time count and not a same-cohort conversion funnel.",
       "implementation": "Use only with the reporting dates and cohort caveat; do not project revenue from them without price and acquisition assumptions."
     }

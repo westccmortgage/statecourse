@@ -30,3 +30,4 @@ Select **Online Distance — Learning Management System (LMS)** and provide admi
 
 Application approval remains course- and delivery-specific. A complete upload is not permission to enroll students.
 
+September 6 clarification: the 250 limit in the table means **required questions in one course** under 1450.1175(d)(1), not total bank size or questions per exam. The rule describes qualifying conditions for the final-exam exemption and evidence on request; it specifies no separate waiver application. Postlicense finals remain required; proctoring is not added solely by importing home-study rules into online-distance courses. See the source foundation audit for detailed scope.

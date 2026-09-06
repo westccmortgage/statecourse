@@ -1,6 +1,6 @@
 # Questions for IDFPR Real Estate Education
 
-Send only after confirming the current recipient on Form 505-0767. Do not include SSN, tax ID or confidential history.
+Status September 6, 2026: a revised inquiry was already sent at 04:19:18 PDT to FPR.RealEstateEducation@illinois.gov, cc FPR.RealEstate@illinois.gov, with subject "StateCourse — Illinois instructor eligibility and seven-course filing sequence". Sent message ID 1a07671b572fda05; automatic receipt ID 1a07672a0949cf54 at 04:19:36. No substantive response received. Do not send a duplicate. The sent inquiry also addresses Act definitions and possible professional-background route 1450.1115(a)(2)(D); the draft below is retained only as prior working context.
 
 Subject: StateCourse LLC — Illinois education provider, instructor, and endorsement filing sequence
 
@@ -14,4 +14,3 @@ Subject: StateCourse LLC — Illinois education provider, instructor, and endors
 > We are not currently offering Illinois credit and will not enroll students until all required provider, instructor, course, and delivery approvals are issued and verified.
 
 Record the complete written response, sender, date and attachments in the source intake process. A telephone answer is useful for routing but should not overwrite the source lock without written confirmation.
-

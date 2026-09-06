@@ -1,6 +1,6 @@
 # Illinois StateCourse workstream
 
-Status: **Phase 0 regulatory baseline complete; no Illinois approval; enrollment closed.**
+Status: **Phase 0 v2 audit and seven-course structural foundation complete; substantive teaching-source mapping and full materials remain open; no Illinois approval; enrollment closed.**
 
 This directory separates three projects that must not be confused:
 
@@ -21,4 +21,3 @@ The new endorsement route has been available since January 1, 2026. The evidence
 - Operational launch gates: `submission/05-operational-gates.md`
 
 Nothing in this directory authorizes a sale, enrollment, Illinois credit, course-completion certificate, Uniform Real Estate Transcript, or representation that StateCourse or any course is approved, endorsed, recommended, or accredited by Illinois.
-

@@ -1,14 +1,14 @@
 # Illinois handoff
 
-Prepared September 4, 2026.
+Updated September 6, 2026 after an independent source and portfolio audit.
 
 ## State
 
 | Item | Status |
 |---|---|
 | Branch | `relay-illinois` |
-| Phase 0 | **Complete v1** |
-| Regulatory source lock | `IL-PHASE0-SOURCE-LOCK-2026-09-04-v1` |
+| Phase 0 | **v2 course-level architecture complete; detailed topic/objective/source mapping remains incomplete** |
+| Regulatory source lock | `IL-PHASE0-SOURCE-LOCK-2026-09-06-v2` |
 | Full curriculum authoring | Not begun; deliberately deferred until baseline |
 | StateCourse Illinois provider approval | **Not applied / not approved** |
 | Illinois course approvals | **None** |
@@ -21,10 +21,10 @@ Prepared September 4, 2026.
 2. Anatoliy's current public California Broker record supports preparing an Illinois **Broker endorsement** application: active/good-standing official certification, 30-hour approved Broker endorsement course/URET, Illinois-specific law exam, nonresident consent, Form 505-0347 and $150.
 3. An approved Broker application without a Sponsor Card is issued inactive. Active status requires Illinois sponsorship.
 4. Managing Broker is not established. Illinois requires a managing-broker license or equivalent and two immediately preceding years of active managing practice. California Broker authority does not itself decide Illinois equivalence.
-5. Pre-license instructor requires a 75% exam, one expertise route, approved 12-hour training and $150 portal application. The active-broker-for-two-years route text is consistent with Anatoliy's CA record, but IDFPR makes the issuance decision.
-6. StateCourse must obtain Illinois foreign-LLC authority, an education-provider license, a virtual-office license/registration, active Illinois instructor, and course licenses.
-7. A provider offering endorsement must provide all seven required pre/post courses. The seven are the two Broker prelicense courses, three Broker post-license courses, and two Managing Broker prelicense courses.
-8. The clean online architecture is **Online Distance LMS**, not Home Study/Correspondence. Rule 1450.1175 requires recorded responses, 75% comprehension, no more than 250 questions per course, randomized retries, start/end identity verification and five-year retention.
+5. Pre-license instructor requires a 75% exam, one expertise route, approved12-hour training and$150 portal application. **CA applicability under 1450.1115(a)(2)(A) is unresolved:**1450.100 imports Act 1-10's Illinois license/licensure definitions. The professional-background route(D) is also submitted for IDFPR review; no eligibility claim follows from the omission of Illinois in(A).
+6. The IDFPR provider filing expressly requires Illinois SOS authorization under 1450.1100(a)(5), as well as provider, virtual-office, instructor and course credentials. Prepare foreign-LLC admission for that requirement; this is not a blanket corporate-law conclusion about every California-only online activity.
+7. A provider offering prelicense must supply all seven pre/post courses under 1450.1105(b)-(d); subsection(e) also gates endorsement/core CE. The seven are two Broker prelicense, three Broker postlicense, and two Managing Broker prelicense courses, totaling165 credit hours. First StateCourse product: **75-hour Broker package**; personal30h endorsement is separate.
+8. Online Distance LMS is the planned delivery. To qualify for the1450.1175 final exemption: recorded responses,75% comprehension, no more than250 **required questions per course**, randomized retries, start/end identity and five-year retention. The cap is not bank size or per-exam. The rule specifies evidence on request, not a separate waiver application.
 9. Each of the three 15-hour post-license courses has its own 50-question exam at a minimum 75%; the online-distance final-exam waiver does not apply to them.
 10. Provider/course/instructor licenses expire June 30 of odd-numbered years. Completion reporting is due by the 15th of the following month; records are retained at least five years.
 
@@ -53,10 +53,10 @@ The known government filing subtotal for foreign LLC + provider + virtual office
 1. Does IDFPR classify California Broker as Illinois Managing Broker equivalent, and what evidence proves two immediate years of managing practice?
 2. May a new provider file the seven mandatory course applications and optional endorsement course simultaneously?
 3. What exact current form/ePay selection attaches the $200 education-provider virtual-office application to Form 505-0767?
-4. Will a certified California DRE history alone satisfy the instructor expertise route, or does IDFPR want additional practice evidence?
+4. Is the CA credential accepted under 1450.1115(a)(2)(A) despite imported Act definitions, or should IDFPR assess documented professional background under(D)? What evidence is required?
 5. What is the current PSI instructor-exam fee and exact scheduling product? The June 2026 booklet does not clearly list that fee.
 
-The safe build does not need answers 1 or 5 to start portfolio architecture. Answers 2-4 affect submission sequencing and evidence.
+The September 6 inquiry on definitions, professional-background alternative, MB equivalence and seven-plus-endorsement sequencing was already sent at 04:19:18 PDT. Sent ID 1a07671b572fda05; automatic receipt ID 1a07672a0949cf54. No substantive answer. Do not send a duplicate. Architecture work can continue; applicant-specific eligibility and filing sequence remain unresolved.
 
 ## External blockers
 
@@ -83,7 +83,7 @@ The safe build does not need answers 1 or 5 to start portfolio architecture. Ans
 ### StateCourse build team
 
 1. Get written answers using `submission/06-regulator-questions.md`.
-2. Freeze the complete source set for the 75h, 45h, and 45h managing-broker curricula before authoring.
+2. All five mandatory curriculum PDFs now have captured byte/text hashes, including the formerly missing45h Managing Broker outline. Next finish **detailed topic-level primary-source mapping** and current-law overlays before teaching assertions are frozen. See `curriculum/source-foundation-audit.md` and `config/illinois/course-portfolio.json`.
 3. Build all seven mandatory courses with page/screen traceability, timed outlines, activities, required finals and answer keys.
 4. Implement and test the Online Distance LMS evidence model, regulator portal, five-year retention and monthly completion export.
 5. Insert the issued instructor credential; assemble one immutable package per course.
@@ -103,12 +103,19 @@ Run:
 
 `node --test tests/illinois-phase0.test.mjs`
 
-The verifier fails if source IDs are missing, soft-404/title/content validation flags are absent, requirement statuses are uncontrolled, required artifacts disappear, sensitive identifier patterns are committed, an unqualified StateCourse approval claim appears, or enrollment stops failing closed.
+The verifier now recomputes actual source and extracted-text SHA-256 values, checks document-specific content markers, verifies seven-course165-hour arithmetic and postlicense final policies, and checks requirement/source references. Legacy review flags alone do not constitute a byte lock. Act 1 and Part 1450 returned HTTP403 to byte capture; they were inspected through official web text and remain explicitly un-hashed locally.
 
 Results at handoff:
 
-- Illinois verifier: **PASS** — 19 locked sources, 37 requirements (33 confirmed, 1 interpretation, 3 regulator-confirmation), 20 controlled files, enrollment blocked.
-- Illinois tests: **11/11 PASS**.
+- Illinois verifier September 6: **PASS** —21 source entries,10 byte-verified captures,37 requirements (32 confirmed,1 interpretation,4 regulator-confirmation), seven-course165-hour map; enrollment blocked. Counts include course-level architecture, not completed teaching materials.
+- Illinois tests September 6: **15/15 PASS**, including the actual verifier's rejection of tampered bytes, a soft-404, missing bytes and an unapproved redirect, plus portfolio arithmetic. No need rerun unrelated whole-repository tests for this documentation/source-only audit.
 - Full repository test command: **1050/1087 pass; 37 fail outside the Illinois files**. The failures include absent generated public/dist artifacts, absent `node_modules` mutation workspace, and pre-existing Arizona/Missouri date assertions. They were not repaired in this isolated state workstream.
 - Repository build: **not runnable in this clone**; `npm run build` exits 69 because `vinext` is unavailable and directs the operator to complete `npm run install:ci` first. No dependency install or shared build-script change was made.
 - The full suite rewrote `california/submission/02_Real_Estate_Practice/07-sb1495-traceability.md` as a side effect. That file was restored immediately. Never commit that side effect from the Illinois branch.
+
+## v2 current-law corrections
+
+- CurrentPart1450 includes July 13, 2026 amendment to 1450.770; course teaching needs updated written brokerage-agreement rules. Education1105/1175 retain July 7, 2025 notes.
+- MB outline's old transition footnote is not authority for current delivery; use1450.1105(d). HUD-1 topic requires current TRID applicability treatment. Postlicense p.11 oral buyer-agreement topic cannot override current law.
+- The 2024 Annual Disciplinary Report real-estate table refers to calendar-year applicants. PriorFY2024 wording was unsupported; preserved source ID is historical only.
+- This pass commits locally only. No Illinois remote branch or production publication is claimed.

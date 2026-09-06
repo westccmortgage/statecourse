@@ -21,7 +21,7 @@ This is the human review layer for `config/illinois/requirements.json`. “Confi
 | Requirement | Status | Authority and pinpoint | StateCourse decision |
 |---|---|---|---|
 | Division exam, minimum 75% | Confirmed | Rule 1450.1115(a)(1) | Retain score report. |
-| One expertise route; active broker/MB for immediately preceding 2 years qualifies | Confirmed | Rule 1450.1115(a)(2)(A) | CA public record supports the route; submit certified history and practice resume. |
+| Two-year active broker/MB expertise route; CA applicability | Rule confirmed; applicant applicability unresolved | Rules 1450.100 and 1450.1115(a)(2)(A),(D); Act 1-10 | Act definitions prevent assuming CA qualifies under (A); IDFPR is also asked to evaluate professional background under (D). |
 | Approved 12-hour program: 6 development + 6 content | Confirmed | Rule 1450.1115(a)(3) | Use a provider on IDFPR's live approved list. |
 | Initial application $150, filed online | Confirmed | Rule 1450.130(f)(4); official instructor requirements p. 1 | User signs and supplies confidential data in portal. |
 | License can cover pre/post/core/elective/management CE unless restricted | Confirmed | Rule 1450.1115(b)-(c) | Course packet waits for the actual license number and any restriction. |
@@ -36,7 +36,7 @@ This is the human review layer for `config/illinois/requirements.json`. “Confi
 | Provider application $1,050 | Confirmed | Rule 1450.130(f)(1); Form 505-0767 p. 2 | No fee until packet passes preflight. |
 | Each pre/post course $150 | Confirmed | Rule 1450.130(f)(7), (11); Form 505-0645 p. 2 | Separate payment/reference and email per course. |
 | Education-provider virtual office $200 initial | Confirmed | Rule 1450.130(f)(16) | Budget and confirm the exact application/payment entry with IDFPR. |
-| Full seven-course portfolio before endorsement/core CE | Confirmed | Rule 1450.1105(b)-(e); provider form p. 5 | Build all seven; endorsement is an eighth optional course. |
+| Full seven-course portfolio for pre-license provider; also prerequisite to endorsement/core CE | Confirmed | Rule 1450.1105(b)-(e); provider form p. 5 | First product is the 75h Broker package, supported by all seven required courses; endorsement is an eighth optional course. |
 | Seven plus endorsement in one first filing | Needs confirmation | Same sources do not specify sequence | Ask IDFPR before paying the optional course fee. |
 | One course application per course; timed outline excludes exam time | Confirmed | Rule 1450.1105(a); Form 505-0645 p. 2 | Separate versioned package per course. |
 | Instructor must already hold active Illinois instructor license | Confirmed | Rule 1450.1100(c)(2); forms 505-0767 and 505-0645 | Hard pre-submission gate. |
@@ -51,7 +51,7 @@ This is the human review layer for `config/illinois/requirements.json`. “Confi
 | 75h ordinary Broker = 60 Topics + 15 Applied | Confirmed | 225 ILCS 454/5-27; Rule 1450.1105(b); curriculum p. 1 | Two separate course licenses. |
 | 15h Applied limited to classroom/live webinar/online distance | Confirmed | same | Use Online Distance LMS, never noninteractive home study. |
 | 45h post = three 15h courses; each 50-question exam at 75% | Confirmed | Rules 1450.410(a), 1450.1105(c) | Three separate courses and finals. |
-| Online-distance exam waiver controls | Confirmed | Rule 1450.1175(d) | Responses, 75% comprehension, ≤250 questions/course, randomized retry, start/end identity, five-year retention. |
+| Online-distance exam waiver controls | Confirmed | Rule 1450.1175(d) | Responses, 75% comprehension, ≤250 required questions per course, randomized retry, start/end identity, five-year retention. Cap is not a bank-size or per-exam limit. |
 | Home-study in-person versus remote proctor text | Unresolved conflict | Act 30-15(i)(6); Rules 1450.1105(h), 1450.1155; provider form p. 3 | Avoid Home Study. Written IDFPR decision required before offering it. |
 | Broker endorsement = 10h licensing + 10h practice + 10h disclosures | Confirmed | mandatory curriculum pp. 1-2 | Credit 1,500 instruction minutes; 300 break minutes are not instruction. |
 | MB endorsement = recommended 8/8/8/6 split | Confirmed | mandatory curriculum pp. 1-3 | Maintain a separate MB course. |

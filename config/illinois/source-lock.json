@@ -1,6 +1,8 @@
 {
   "jurisdiction": "Illinois",
-  "snapshotId": "IL-PHASE0-SOURCE-LOCK-2026-09-04-v1",
+  "snapshotId": "IL-PHASE0-SOURCE-LOCK-2026-09-06-v2",
+  "auditedOn": "2026-09-06",
+  "evidenceManifest": "config/illinois/source-evidence.json",
   "retrievedOn": "2026-09-04",
   "authorityOrder": [
     "Illinois statute",
@@ -12,6 +14,30 @@
   ],
   "controlPolicy": "No secondary source controls a requirement. A source is locked only after its publisher, title, expected content, revision or effective date when stated, and relevant pinpoint were checked. A successful fetch alone is not proof against a soft-404.",
   "sources": [
+    {
+      "id": "IL-ACT-1",
+      "authorityClass": "statute",
+      "title": "Real Estate License Act of 2000 — Article 1 definitions",
+      "publisher": "Illinois General Assembly",
+      "url": "https://www.ilga.gov/legislation/ILCS/details?ActID=1364&ActName=Real+Estate+License+Act+of+2000.&ChapAct=225+ILCS+454%2F&Chapter=&ChapterID=24&MajorTopic=&Print=True&SeqEnd=450000&SeqStart=100000",
+      "effectiveOrRevisionDate": "Section 1-10 source note through P.A. 103-1039 effective 2025-01-01",
+      "retrievedOn": "2026-09-06",
+      "pinpoints": ["225 ILCS 454/1-10: License, Licensee, Managing broker; scope qualification unless context otherwise requires"],
+      "evidence": "License is a privilege conferred by IDFPR under the Act; licensee means a person licensed under this Act. Rule 1450.100 imports Act definitions. CA instructor eligibility cannot be inferred from silence in 1450.1115(a)(2)(A).",
+      "validation": {"titleMatched": true, "expectedContentMatched": true, "soft404Rejected": true}
+    },
+    {
+      "id": "IL-CURR-45MB",
+      "authorityClass": "mandatory_agency_curriculum",
+      "title": "45 Hour Managing Broker Pre-License Courses",
+      "publisher": "IDFPR Division of Real Estate",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/dre/45hrbrokermanagementprelicensecourse.pdf",
+      "effectiveOrRevisionDate": "No revision date printed; linked as current by IDFPR on 2026-09-06",
+      "retrievedOn": "2026-09-06",
+      "pinpoints": ["PDF p. 1: 30h topics split 8+10+12; 15h applied management and supervision; legacy transition footnote"],
+      "evidence": "One-page two-column outline controls the missing managing-broker portfolio foundation. Historical transition footnote and HUD-1 terminology require current rule/statute cross-check; they are not copied as current universal requirements.",
+      "validation": {"titleMatched": true, "expectedContentMatched": true, "soft404Rejected": true, "pageCount": 1, "visualCrossCheck": true}
+    },
     {
       "id": "IL-DRE-HUB",
       "authorityClass": "agency_index",
@@ -42,7 +68,7 @@
       "title": "68 Ill. Adm. Code Part 1450 — Real Estate License Act of 2000",
       "publisher": "Illinois General Assembly, Joint Committee on Administrative Rules",
       "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=06801450",
-      "effectiveOrRevisionDate": "relevant endorsement and education provisions amended at 49 Ill. Reg. 9512, effective 2025-07-07",
+      "effectiveOrRevisionDate": "compilation through 50 Ill. Reg. 10875 effective 2026-07-13; 1450.770 updated 2026-07-13; 1105 and 1175 retain 2025-07-07 section notes; 1115 retains 2021-02-23",
       "retrievedOn": "2026-09-04",
       "pinpoints": ["§1450.100", "§1450.130", "§1450.400", "§1450.410", "§1450.460", "§1450.570", "§1450.1100", "§1450.1105", "§1450.1110", "§1450.1115", "§1450.1125", "§1450.1135", "§1450.1155", "§1450.1175", "§1450.1180"],
       "evidence": "The current rule text controls fees, endorsement evidence, provider and instructor licensing, approved delivery, course portfolio, exams, records, reporting, renewals, and online participation controls.",
@@ -195,13 +221,13 @@
     {
       "id": "IL-DATA-FY2024",
       "authorityClass": "agency_report",
-      "title": "IDFPR Annual Disciplinary Report — Fiscal Year 2024",
+      "title": "IDFPR 2024 Annual Disciplinary Report",
       "publisher": "Illinois Department of Financial and Professional Regulation",
       "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/ar/may-2025-pa-100-0286.pdf",
-      "effectiveOrRevisionDate": "published May 2025; reporting period FY2024",
+      "effectiveOrRevisionDate": "published May 2025; 2024 report; real-estate table footnote refers to calendar year",
       "retrievedOn": "2026-09-04",
       "pinpoints": ["PDF p. 85, real estate applications and licenses granted", "PDF p. 86, education provider and instructor applications"],
-      "evidence": "FY2024 reported 4,212 broker applications and 3,972 licenses granted, 449 managing-broker applications and 421 granted, and 8 education-provider applications with 6 granted; applications and decisions need not be the same cohort.",
+      "evidence": "The 2024 report records 4,212 broker applicants and 3,972 licenses granted, 449 managing-broker applicants and 421 granted, and 8 education-provider applicants with 6 granted; applications and decisions need not be the same cohort. Historical ID IL-DATA-FY2024 retained for compatibility, not as a fiscal-year claim.",
       "validation": {"httpStatusObserved": null, "titleMatched": true, "expectedContentMatched": true, "soft404Rejected": true, "pageCount": null, "pdfTextLayer": "relevant pages extracted and figures reconciled by category", "visualCrossCheck": false}
     },
     {

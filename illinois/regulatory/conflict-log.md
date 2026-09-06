@@ -42,3 +42,14 @@
 - **Resolution:** they are not treated as superseded merely because of age; IDFPR still links them as the current mandatory curricula on September 4, 2026.
 - **Operational effect:** lock both the document revision date and retrieval date; recheck the hub immediately before submission.
 
+## C-07 — instructor expertise definitions
+
+V1 incorrectly relied on the omission of Illinois in1450.1115(a)(2)(A). Act 1-10 defines license/licensure under IDFPR, and 1450.100 imports those definitions. CA eligibility under(A) is unresolved. IDFPR was asked September 6 to assess this and the alternative professional-background route(D); an automatic receipt is not a decision.
+
+## C-08 — legacy teaching outlines and 2026 law
+
+The current hub-linked MB outline retains a transition-course footnote and HUD-1 terminology; the postlicense outline retains an oral buyer-agreement topic. Current1450.770 was amended July 13, 2026. Structural topic/hours coverage is retained, while teaching statements must be updated from current law, with a CFPB/TRID applicability overlay. Detailed substantive-source mapping remains incomplete.
+
+## C-09 — 250-question scope and report-year label
+
+1450.1175(d)(1) caps required questions in one course for the online final-exemption model; it does not cap the item bank or allow250 per exam. The 2024 Annual Disciplinary Report table refers to calendar-year applicants; v1's FY2024 label was not supported. Source ID IL-DATA-FY2024 remains only as a stable identifier.

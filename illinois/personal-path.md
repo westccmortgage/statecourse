@@ -28,7 +28,7 @@ Date of birth, SSN/ITIN, tax/child-support answers, criminal/administrative hist
 
 ## Instructor license — parallel path
 
-The user's active California Broker record is strong evidence for the rule's two-year active-broker expertise route. IDFPR still decides the application.
+The user's California Broker experience supports an expertise submission, but eligibility under Rule 1450.1115(a)(2)(A) is **unresolved**. Section 1450.100 imports the Act's definitions: "license" is conferred by IDFPR under this Act and "licensee" means someone licensed under this Act. The clause's omission of the word Illinois does not establish acceptance of a California credential. Ask IDFPR to evaluate the documented professional background under (a)(2)(D) if (A) is unavailable. This question was sent September 6; only an automatic receipt has arrived.
 
 1. Pick an instructor-training program from IDFPR's **current approved list**.
 2. Complete the 12-hour program: six hours of instructor development and six hours of pre-license-course content.

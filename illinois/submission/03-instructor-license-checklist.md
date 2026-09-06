@@ -2,7 +2,9 @@
 
 ## Can Anatoliy qualify?
 
-**Likely through the active-broker expertise route, but only IDFPR can issue the license.** Rule 1450.1115(a)(2)(A) requires an active broker or managing-broker license for the immediately preceding two years. It does not say “Illinois” in that clause. The official California record shows an active Broker license since 2009. Submit official certification and a resume; do not replace IDFPR's decision with our interpretation.
+**Applicant-specific eligibility remains unresolved.** Rule 1450.1115(a)(2)(A) requires an active broker or managing-broker license for the immediately preceding two years, but 1450.100 imports the Act's Illinois "license" and "licensee" definitions. Omission of "Illinois" in the clause is not proof that CA licensure satisfies it. Submit certified California history and a detailed experience resume for IDFPR's review, including the alternative professional-background route in (a)(2)(D). Do not describe (A) as likely or confirmed for this applicant.
+
+The September 6 inquiry already asks IDFPR about this distinction. An automatic receipt is recorded; no substantive decision has been received. The general exam, training and fee requirements below are confirmed independently of the unresolved expertise determination.
 
 ## Required evidence
 
@@ -23,4 +25,3 @@
 ## After issuance
 
 Only after verification may StateCourse place the license number on course applications or represent Anatoliy as an Illinois-licensed instructor. Renewal is June 30 in odd-numbered years; the evidence path is teaching one qualifying course during the term or completing the 12-hour program again.
-
