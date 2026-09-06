@@ -323,7 +323,9 @@ subagent to a prospective buyer; **58A .0108** for retention.
 
 ---
 
-## Original curriculum gaps — current Phase 0 disposition
+## Source boundary — what has not been read
+
+### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
 longer than any other state's in this project, because the Commission's syllabus is a map to source
