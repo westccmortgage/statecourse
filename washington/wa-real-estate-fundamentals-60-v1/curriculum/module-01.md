@@ -16,17 +16,18 @@
 > course uses Washington's words throughout, and a student who mentally substitutes "salesperson" will
 > misread half the statute.
 >
-> **2. The statute fixes 90 hours and two courses, and allocates hours to neither.** RCW 18.85.101(1)(c)
+> **2. The statute fixes 90 hours and two courses; current DOL curricula fix 60/30.** RCW 18.85.101(1)(c)
 > requires *"90 hours of instruction in real estate,"* and provides that instruction *"must include
 > courses **as prescribed by the director** including **fundamentals**, which shall include **three hours
-> of instruction on fair housing and consumer protection issues**, and **practices**."* **The 60/30 split
-> delivered here is a StateCourse proposal requiring Department confirmation.**
+> of instruction on fair housing and consumer protection issues**, and **practices**."* DOL's current
+> prescribed documents require **60 hours of Fundamentals** (Rev. 5/2022) and **30 hours of Practices**
+> (effective 03-18-2009). StateCourse decides only the module-level allocation within those totals.
 >
-> **3. The Department prescribes the curriculum, and this project does not have it.** WAC
+> **3. The Department prescribes the curriculum, and both current documents are now controlled.** WAC
 > 308-124H-810 requires an approved school to *"**utilize the most recent course curriculum prescribed by
-> the department**."* **The Department's prescribed curriculum has NOT been obtained.** Everything here is
-> written from **RCW 18.85, RCW 18.86 and WAC 308-124H**, read on 2026-08-20. **Conforming it is a
-> submission gate.**
+> the department**."* Both DOL PDFs were obtained and byte-locked on 2026-09-04. The inherited modules were
+> originally written from **RCW 18.85, RCW 18.86 and WAC 308-124H** and have not yet passed objective-level
+> mapping to those DOL documents. **Conforming them remains a submission gate.**
 >
 > **4. This course will carry a large examination, and the size is set by rule.** WAC
 > 308-124H-820(8): courses of 30 clock hours or more must include a comprehensive examination of **no

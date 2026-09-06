@@ -1,6 +1,14 @@
 # Washington — primary text readings
 
-**Read on 2026-08-20** from the Washington State Legislature's official sites at `app.leg.wa.gov`:
+> **Phase 0 correction — reverified 2026-09-04.** The earlier version of this file incorrectly said
+> the Department's prescribed curricula had not been obtained and treated 60/30 hours as a StateCourse
+> proposal. Current DOL primary documents are now byte-locked: **Real Estate Fundamentals, 60 Clock
+> Hours, Rev. 5/2022**, and **Real Estate Practices, 30 Clock Hours, effective 03-18-2009**. Those
+> documents—not StateCourse—fix the course totals. The existing modules remain **NO-GO for submission**
+> until objective-level traceability and gap remediation are complete. See `regulatory/phase-0-status.md`
+> and `config/washington/regulatory-manifest.mjs` for the controlling current record.
+
+**Initially read on 2026-08-20** from the Washington State Legislature's official sites at `app.leg.wa.gov`:
 
 - **RCW 18.85** — Real Estate Brokers and Managing Brokers
 - **RCW 18.86** — Real Estate Brokerage Relationships, **in full**
@@ -45,8 +53,8 @@ document says so by name.
 - **A course examination, approved by the director, for EACH course.**
 - **18 years of age**, and a **high school diploma or its equivalent.**
 
-**Not fixed by the statute this project read:** **how the 90 hours divide between fundamentals and
-practices.** The statute names both courses and allocates hours to neither.
+**Not fixed by the statute itself:** how the 90 hours divide. **Fixed by the current DOL prescribed
+curricula:** 60 hours Fundamentals and 30 hours Practices.
 
 **WAC 308-124H-810 supplies the missing piece by reference, not by number:**
 
@@ -58,12 +66,11 @@ practices.** The statute names both courses and allocates hours to neither.
 > management; (6) Real estate practices; (7) Advanced real estate practices; and (8) Washington real
 > estate fair housing.**"*
 
-**THE DEPARTMENT PRESCRIBES THE CURRICULUM, AND THIS PROJECT HAS NOT OBTAINED IT.** Accordingly this
-build:
+**THE DEPARTMENT PRESCRIBES THE CURRICULUM, AND THIS PROJECT HAS NOW OBTAINED BOTH CURRENT DOCUMENTS.**
+Accordingly this build:
 
 - delivers **90 hours**, exactly as RCW 18.85.101(1)(c) requires;
-- splits them **60 hours Real Estate Fundamentals / 30 hours Real Estate Practices** as a **StateCourse
-  proposal requiring Department confirmation**, not as a statutory requirement;
+- uses the DOL-prescribed **60 hours Real Estate Fundamentals / 30 hours Real Estate Practices** totals;
 - carries the **three-hour fair housing and consumer protection block inside Fundamentals** as its own
   auditable module, so a reviewer can see it; and
 - records that **the whole curriculum must be conformed to the Department's prescribed curriculum before
@@ -178,8 +185,9 @@ be *real estate*, and a tool is only in scope when it is being used on a real es
 > **(14)** *Providers offering core curriculum within a course exceeding three clock hours must **clearly
 > indicate in the application where the core curriculum elements are met.***
 
-**WAC 308-124A-800 and WAC 308-124A-802 were NOT obtained by this project.** Nothing in this build states
-any requirement of either.
+**WAC 308-124A-800 and WAC 308-124A-802 were reviewed during the 2026-09-04 Phase 0.** They govern the
+separate prescribed CORE and Washington real-estate fair-housing continuing-education curricula. This
+build does not claim that the three-hour prelicense block inside Fundamentals is that separate course.
 
 ---
 
