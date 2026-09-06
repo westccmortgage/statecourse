@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
@@ -220,13 +221,29 @@ const BUILT_STATE_DIRECTORIES = [
   "wisconsin",
 ];
 
+const boundaryCarriers = (dir) =>
+  fs
+    .readdirSync(dir, { withFileTypes: true })
+    .filter((entry) => entry.isFile())
+    .map((entry) => entry.name)
+    .filter((file) => BOUNDARY_HEADING.test(fs.readFileSync(path.join(dir, file), "utf8")));
+
+test("source-boundary scans ignore evidence subdirectories", (t) => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "statecourse-boundary-"));
+  t.after(() => fs.rmSync(fixture, { recursive: true, force: true }));
+
+  fs.writeFileSync(path.join(fixture, "record.md"), "## Source boundary\nReviewed sources are recorded here.\n");
+  fs.mkdirSync(path.join(fixture, "source-evidence"));
+  fs.writeFileSync(path.join(fixture, "source-evidence", "capture.txt"), "supporting evidence\n");
+
+  assert.deepEqual(boundaryCarriers(fixture), ["record.md"]);
+});
+
 test("every built state's regulatory record states its own source boundary", () => {
   for (const state of BUILT_STATE_DIRECTORIES) {
     const dir = path.join(root, state, "regulatory");
     assert.ok(fs.existsSync(dir), `${state} has no regulatory directory`);
-    const carriers = fs
-      .readdirSync(dir)
-      .filter((file) => BOUNDARY_HEADING.test(fs.readFileSync(path.join(dir, file), "utf8")));
+    const carriers = boundaryCarriers(dir);
     assert.ok(
       carriers.length > 0,
       `${state} states no source boundary — a reviewer cannot tell what the build is silent about on purpose`,
