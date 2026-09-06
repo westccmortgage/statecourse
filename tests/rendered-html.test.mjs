@@ -5,15 +5,15 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 
 /*
- * The deployed artifact.
+ * The Netlify deployment artifact.
  *
  * WHAT THIS FILE USED TO BE. It imported `dist/server/index.js` and asserted the response
  * carried `<meta name="codex-preview" content="development">`. That is a marker from the
  * vinext starter template this repository was scaffolded from — `worker/index.ts`,
  * `vite.config.ts`, `next.config.ts` and `app/` are all still that scaffold. None of it is
- * deployed: netlify.toml builds `bash site/build.sh` and publishes `dist`, the scaffold's
- * dependencies are not installed, and `dist/server/index.js` has never existed. The test
- * therefore failed on every run and had done so for as long as it existed.
+ * deployed by Netlify: netlify.toml builds `bash site/build.sh` and publishes `dist`, while
+ * the Sites target is built and validated separately. The test therefore failed on every
+ * Netlify-only run and had done so for as long as it existed.
  *
  * It could only have been made to pass by installing Next and vinext and building an
  * application this project does not have and does not ship. Reviving a template to satisfy a
@@ -25,8 +25,8 @@ import { fileURLToPath } from "node:url";
  * is checkable: the rewrite targets exist, the functions the API routes point at exist, and
  * the pages satisfy the Content-Security-Policy the same file sets on them.
  *
- * The scaffold is left in place. It is dead rather than wrong, removing it is a separate
- * decision, and this file records what it is so nobody mistakes it for live code.
+ * The Sites runtime is intentionally separate. This file records that boundary so a Sites
+ * build is never mistaken for the artifact Netlify publishes.
  */
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -130,21 +130,14 @@ test("every page is a complete document with a title", () => {
 });
 
 /*
- * The scaffold this file used to test. Recorded rather than removed, so that a future reader
- * finding worker/index.ts does not conclude the project runs a Cloudflare Worker, and so that
- * if the scaffold is ever revived this test says what has to be revived with it.
+ * Netlify and Sites have separate build contracts. A Sites worker may exist, but Netlify must
+ * continue to build the static artifact that its redirects and functions expect.
  */
-test("the vinext scaffold is dead code, and nothing deployed depends on it", () => {
-  const scaffold = ["worker/index.ts", "vite.config.ts", "next.config.ts"].filter((file) =>
-    fs.existsSync(path.join(root, file)),
-  );
-  if (scaffold.length === 0) return; /* someone removed it deliberately; nothing to check */
-
-  /* It is not what Netlify builds. */
+test("the Netlify artifact does not depend on the Sites runtime", () => {
   assert.equal(/command = "bash site\/build\.sh"/.test(netlifyToml), true);
   assert.equal(/vinext|next build|wrangler deploy/.test(netlifyToml), false, "netlify.toml now builds the scaffold");
 
-  /* And site/build.sh does not produce the worker entry the scaffold's own validator wants. */
+  /* site/build.sh must remain independently deployable without a Sites Worker. */
   const buildScript = fs.readFileSync(path.join(root, "site/build.sh"), "utf8");
   assert.equal(
     /dist\/server\/index\.js/.test(buildScript),

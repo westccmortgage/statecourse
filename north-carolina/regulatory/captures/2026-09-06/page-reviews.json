@@ -1,0 +1,27 @@
+{
+  "NC-GUIDE-RELINC-2026": {
+    "status": "REVIEWED",
+    "reviewedOn": "2026-09-06",
+    "reviewedPdfSha256": "bd367e286af12537c2c311eb688746b51c132679bb7ed2c9e81cbb5dcc2a25d4",
+    "title": "Real Estate Licensing in North Carolina",
+    "revisionObservation": "Cover and printed page 19 say April 2026; PDF has 36 pages. Rendered fee page matches digital text: $105 application, $53 one section, $63 both; 180-day eligibility. Other pages extracted for content, not all visually reviewed.",
+    "ocrStatus": "NOT_NEEDED_DIGITAL_TEXT_MATCHES_REVIEWED_RENDERS",
+    "pages": [
+      {"number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-06/relinc-title-01.png", "sha256": "9ead269cd68ef2ffbfd3580a23a364598e3ca02b8927771db1c54ceb3dd6d856"},
+      {"number": 21, "renderPath": "north-carolina/regulatory/captures/2026-09-06/relinc-fee-21.png", "sha256": "e3ef4991a978fdf30e411d25cd152592f70f549164604b0d8f614ab2dcc5ce1e"}
+    ]
+  },
+  "NC-FORM-SOS-L09": {
+    "status": "REVIEWED",
+    "reviewedOn": "2026-09-06",
+    "reviewedPdfSha256": "0edbf25603a6a0829824672875bbe96c27299fe3a24b2e56a9b70ec48a7b0857",
+    "title": "Application for Certificate of Authority for a Limited Liability Company (Form L-09)",
+    "revisionObservation": "All three PDF pages visually match digital text; footers Revised July 2017. Page 3 confirms $250 fee, authenticated Certificate of Existence less than six months old, and no photocopy of certification. Blank official form preserved.",
+    "ocrStatus": "NOT_NEEDED_DIGITAL_TEXT_MATCHES_REVIEWED_RENDERS",
+    "pages": [
+      {"number": 1, "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-1.png", "sha256": "61e0880a69712fc4276cb87453d79dd55be6987316897164b971afbbff8c9819"},
+      {"number": 2, "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-2.png", "sha256": "afe71521041765f52b6ed557976aa0ecd43274545f64f8a6bbc1d05795e0a1da"},
+      {"number": 3, "renderPath": "north-carolina/regulatory/captures/2026-09-06/l09-review-3.png", "sha256": "61acc21e31906343383cb0abb4c23f233aee1cbc4a2beec18ec13fe591ef94b8"}
+    ]
+  }
+}
