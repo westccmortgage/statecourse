@@ -25,6 +25,8 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 |---|---|---|---|
 | Personal application | 21 NCAC 58A .0301-.0302 | application data, six-month criminal report, $105 | [OAH .0301](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0301.pdf), [OAH .0302](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0302.pdf) |
 | Out-of-state license route | 21 NCAC 58A .0511 | (b)(1)-(2) | [OAH .0511](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0511.pdf) |
+| Broker supervision | 21 NCAC 58A .0506 | (a)-(e) | [OAH .0506](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0506.pdf) |
+| Brokerage compensation | 21 NCAC 58A .0109, .0120 | .0109(a)-(i); .0120(b) | [OAH .0109](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0109.pdf), [OAH .0120](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0120.pdf) |
 | Provider certification | G.S. 93A-34; 21 NCAC 58H .0202 | online certification; filing fields; $200/location | [Article 3](https://www3.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_93A/Article_3.html), [OAH .0202](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0202.pdf) |
 | Education director | 21 NCAC 58H .0203 | (a), (e)-(h) | [OAH .0203](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0203.pdf) |
 | Student disclosure | 21 NCAC 58H .0204 | (a)-(c) | [OAH .0204](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0204.pdf) |
@@ -43,6 +45,11 @@ and all L-09 pages were visually checked against digital text. OCR is unnecessar
 digital text layers. `captures/2026-09-06/capture-log.json` preserves requests, final URL where a
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
 to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
+
+On September 7, Module NC-02 added the current official standalone-rule endpoints for 58A .0109,
+.0120, and .0506. They were inspected through the official index but were not part of the September 6
+byte-capture attempt. The expanded ledger therefore contains 24 PDF source entries across 22 unique
+URLs, of which two currently have retained and reviewed bytes.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

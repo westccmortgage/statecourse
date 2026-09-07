@@ -336,6 +336,59 @@ test("every module file exists, carries its section, its Level and its examinati
   }
 });
 
+test("Module NC-01 teaches the current official licensing workflow rather than historical source excuses", () => {
+  const one = readModule("module-01");
+  for (const required of [
+    /at least 18 years old/i,
+    /75-hour North Carolina Broker Prelicensing Course/i,
+    /three years preceding the license application/i,
+    /six months before the application is filed/i,
+    /180-calendar-day examination eligibility period/i,
+    /National \| 80 \| 5/,
+    /State \| 60 \| 5/,
+    /\$105/,
+    /\$53/,
+    /90 instructional hours.*within 18 months/is,
+    /June 10/,
+    /June 30/,
+    /does not authorize the practice of law/i
+  ]) assert.match(one, required);
+
+  assert.match(one, /Commission determines comparable status/i);
+  assert.match(one, /waive the NC State section.*provisional broker status/is);
+  assert.match(one, /G\.S\. 93A-4/);
+  assert.match(one, /21 NCAC 58A \.0511/);
+  assert.match(one, /RELINC/);
+  for (const stale of [
+    /This course states no age requirement/i,
+    /This course states no postlicensing hour requirement/i,
+    /Neither was obtained for this project/i,
+    /governing statute and rules were not read/i
+  ]) assert.doesNotMatch(one, stale);
+});
+
+test("Module NC-02 teaches current supervision and compensation controls", () => {
+  const two = readModule("module-02");
+  for (const required of [
+    /Rule 58A \.0506/,
+    /30 days of the date shown on the form/i,
+    /10 days after termination/i,
+    /Rule 58A \.0110/,
+    /two years of brokerage experience.*previous five years/is,
+    /12-hour BIC Course/i,
+    /Rule 58A \.0109/,
+    /does not set commission rates or arbitrate private fee and split disputes/i,
+    /Rule 58A \.0120\(b\)/,
+    /current BIC or the person who served as BIC at the time of the transaction/i
+  ]) assert.match(two, required);
+
+  for (const stale of [
+    /This course states no BIC eligibility requirement/i,
+    /Commission Rules 58A \.0109.*none obtained/is,
+    /this course states no compensation rule/i
+  ]) assert.doesNotMatch(two, stale);
+});
+
 test("no module claims approval or offers credit", () => {
   assert.doesNotMatch(allModules, /\bState Approved\b/i);
   assert.doesNotMatch(allModules, /\bEnroll Now\b/i);
@@ -447,11 +500,11 @@ test("planned module labels do not masquerade as validated self-paced timing", (
   assert.equal(getNorthCarolinaCourse().paymentStatus, "disabled");
 });
 
-test("every module names what it did not read in its own instructor source note", () => {
+test("every module carries an instructor source note and an explicit source boundary", () => {
   for (const module of NORTH_CAROLINA_MODULES) {
     const text = readModule(module.id);
     assert.match(text, /Instructor source note/i, module.id);
-    assert.match(text, /[Nn]ot (read|obtained)/, `${module.id} does not name any gap`);
+    assert.match(text, /([Nn]ot (read|obtained)|dependency|limitation)/, `${module.id} does not name its source boundary`);
   }
 });
 
@@ -463,9 +516,9 @@ test("no module reproduces or paraphrases Form 2-T, which was never obtained", (
   assert.doesNotMatch(allModules, /Form 2-T,? [Pp]aragraph \d/);
 });
 
-test("no item's authored answer or rationale states a figure from a source this project did not read", () => {
-  /* Every quantified phrase in an authored correct answer or rationale must be one of the figures the
-     Syllabus itself states. A new number appearing here means somebody sourced it from elsewhere. */
+test("every period in an authored answer or rationale is on the reviewed-source allowlist", () => {
+  /* This allowlist includes figures from the prescribed Syllabus and the current official sources
+     identified in the relevant module source notes. A new period requires a source-note update. */
   const permitted = [
     /\b3[- ](business[- ])?years?\b/i, /\bthree[- ]years?\b/i, /\b7[- ]day\b/i, /\bseven[- ]day\b/i,
     /\b20 years?\b/i, /\btwenty years?\b/i, /\b7 years?\b/i, /\bseven years?\b/i,
@@ -473,9 +526,10 @@ test("no item's authored answer or rationale states a figure from a source this 
     /\b3 banking days?\b/i, /\bthree banking days?\b/i, /\b3 business days?\b/i, /\bthree business days?\b/i,
     /\b120 days?\b/i, /\b5 (separated )?times?\b/i, /\bfive (separated )?times?\b/i,
     /\b5 years?\b/i, /\bfive years?\b/i, /\b30-?year\b/i, /\b33 ?- ?38 years?\b/i,
-    /\b3 ?- ?5 years?\b/i, /\b10-day\b/i, /\bten-day\b/i, /\b60 minutes?\b/i, /\b30-day\b/i, /\b360-day\b/i, /\b365-day\b/i,
+    /\b3 ?- ?5 years?\b/i, /\b10-day\b/i, /\b10 days?\b/i, /\bten-day\b/i, /\b60 minutes?\b/i, /\b30-day\b/i, /\b360-day\b/i, /\b365-day\b/i,
     /\b30 days?\b/i, /\b3[- ]day\b/i, /\bthree[- ]day\b/i, /\b3\.0 hours?\b/i,
-    /\b(eight|8) months?\b/i, /\b(sixteen|16) days?\b/i, /\b(one|1) month\b/i, /\b(nine|9) months?\b/i
+    /\b(eight|8) months?\b/i, /\b(sixteen|16) days?\b/i, /\b(one|1) month\b/i, /\b(nine|9) months?\b/i,
+    /\b(six|6) months?\b/i, /\b18 months?\b/i, /\b180[- ](calendar[- ])?days?\b/i, /\b(two|2) years?\b/i
   ];
   const quantified = /\b(\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|sixty|ninety|hundred|hundred and twenty)[\s-]+(business\s+|banking\s+|calendar\s+)?(days?|years?|months?|weeks?)\b/gi;
   for (const id of NORTH_CAROLINA_MODULE_IDS) {
@@ -487,7 +541,7 @@ test("no item's authored answer or rationale states a figure from a source this 
         const normalised = match.replace(/-/g, " ");
         assert.ok(
           permitted.some((pattern) => pattern.test(match) || pattern.test(normalised)),
-          `${id} states a period the Syllabus does not: "${match}" in "${item.prompt}"`
+          `${id} states an unapproved period: "${match}" in "${item.prompt}"`
         );
       }
     }

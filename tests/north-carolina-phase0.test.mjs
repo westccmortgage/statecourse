@@ -94,7 +94,7 @@ test("distance plan requires orientation, persistent navigation, sequential asse
 
 test("timing report fails the present course instead of trusting planned-hour labels", () => {
   const report = read("north-carolina/submission/09-timing-evidence-report.md");
-  assert.match(report, /51,568/);
+  assert.match(report, /53,372/);
   assert.match(report, /810,000/);
   assert.match(report, /must not be submitted or advertised as 75 hours/i);
   const timing = getNorthCarolinaCourse().timingEvidence;

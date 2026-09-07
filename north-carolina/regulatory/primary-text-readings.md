@@ -323,7 +323,7 @@ subagent to a prospective buyer; **58A .0108** for retention.
 
 ---
 
-## Source boundary — what has not been read
+## Source boundary — current disposition
 
 ### Original curriculum gaps — current Phase 0 disposition
 
@@ -333,12 +333,16 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. This does not cure the original module prose: each module still needs a topic-level
-  reconciliation, and the official PDF bytes still need a filing-date integrity lock.
+  renewal rules. Modules NC-01 and NC-02 were reconciled on 2026-09-07 to their applicable applicant,
+  other-jurisdiction, supervision, BIC, and compensation rules. The remaining modules still need
+  topic-level reconciliation, and the official PDF bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
-  Article 3. Topic-level curriculum reconciliation remains open.
+  Article 3. Module NC-01 was reconciled to § 93A-4 on 2026-09-07; the other topic-level curriculum
+  reconciliations remain open.
 - **North Carolina Real Estate License Law and Commission Rules (LLCR)**, including the Comments.
-- **Real Estate Licensing in North Carolina (RELINC).**
+- **Real Estate Licensing in North Carolina (RELINC):** the April 2026 official PDF was captured,
+  text-extracted, and used to reconcile Module NC-01 on 2026-09-07. Its live identity and fees must
+  still be rechecked before filing and enrollment.
 - **The North Carolina Real Estate Manual.**
 - **The Working with Real Estate Agents (WWREA) Disclosure form itself**, and the **Questions & Answers
   on: Working with Real Estate Agents.** Their existence, their trigger and their retention period ARE

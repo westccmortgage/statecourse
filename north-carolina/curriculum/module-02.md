@@ -9,9 +9,10 @@ substantial depth**, using examples, **and requires students to complete practic
 demonstrating both understanding and the ability to apply the knowledge **to common fact situations
 that will be encountered in real estate practice**.
 **Licence examination weight:** **State Exam Category — 4 items.**
-**Instructional hours:** **2.0**, allocated within the Commission's recommended 13.0 hours for the
-Agency subject area.
-**Course version:** 1.0 submission draft
+**Recommended allocation:** **2.0 instructional hours**, within the Commission's recommended 13.0
+hours for the Agency subject area. This label is not timing proof; student-visible time belongs in
+the final unit ledger.
+**Course version:** 1.1 development draft
 **Regulatory status:** Development. Not approved. No North Carolina prelicensing credit is available.
 
 > **Instructor Note, from the Syllabus:** *"This Section is not discussed in the LLCR but must be
@@ -45,6 +46,27 @@ rather than a formality of registration.
 
 Statutory and rule references the Syllabus names: **NCGS 93A-2(b)** and **Commission Rule 58A .0506**.
 
+The current official text of Rule 58A .0506 makes the control operational:
+
+- the provisional broker may engage in or hold themself out as engaging in licensed activity only
+  while the license is active and the broker is supervised by the BIC of the affiliated firm or
+  office;
+- ordinarily the PB has one supervising BIC; the narrow exception permits no more than two BICs of
+  two affiliated firms sharing the same physical location and acting as co-listing or co-selling
+  agents, with both carrying full supervision responsibility;
+- the PB and BIC submit the Commission's License Activation and Broker Affiliation form;
+- upon submission, the PB may work under supervision, but if written Commission acknowledgment is
+  not received within **30 days of the date shown on the form**, the PB must stop licensed activity
+  pending acknowledgment; and
+- when the supervisory relationship ends, both PB and BIC notify the Commission in writing no later
+  than **10 days after termination**.
+
+The rule defines supervision by its purpose: the BIC must supervise in a manner that assures the PB
+performs licensed acts in accordance with the License Law and Commission rules. It does not create a
+universal “BIC must be physically present” test, nor does a promise to be available by telephone by
+itself prove adequate supervision. The work, the PB's competence, risk, review, and actual compliance
+all matter.
+
 ### A.2 Broker-in-charge — *Level 1 for this subtopic*
 
 *The Commission drops this subtopic to Level 1: review and discuss the basic facts; in-depth
@@ -57,14 +79,17 @@ office.
 Statutory and rule references the Syllabus names: **NCGS 93A-2(a1)** and **93A-4.2**, and **Commission
 Rule 58A .0110(g)(1, 3, 4, 5, 6, 7 and 10)**.
 
-**This course states no BIC eligibility requirement, no designation procedure and no enumerated BIC
-duty**, because NCGS 93A and 21 NCAC 58A were not read from primary text for this project. **Read Rule
-58A .0110 and the LLCR.** As a provisional broker, the identity and the duties of your BIC are the two
-most consequential facts about your working life.
+Current Rule 58A .0110 ordinarily requires one designated BIC for a firm's principal office and one
+for each branch. To obtain BIC Eligible status, a broker must be active and meet the rule's experience
+route — generally at least two years of brokerage experience equivalent to 40 hours per week within
+the previous five years, or the stated North Carolina-attorney alternative — and complete the
+12-hour BIC Course in the permitted window: no earlier than one year before application and no later
+than 120 days after it.
 
-**What a student must carry out of A.2** is the structural fact: **you will be supervised, by a named
-person, whose responsibilities for your conduct are set by rule** — and you should read that rule
-rather than rely on a summary of it.
+The designated BIC's duties include assuring affiliated brokers' license/status compliance,
+supervising provisional brokers, responsibility for office advertising, trust accounts and
+transaction records, and compliance with agency-agreement and disclosure requirements. The precise
+current rule controls; a firm cannot reduce these duties by contract.
 
 ---
 
@@ -128,6 +153,24 @@ claim takes it to their broker-in-charge and to counsel. What a licensee must be
 
 ### B.3 Sharing the listing broker's compensation
 
+Before tracing payment through a firm, apply Rule 58A .0109:
+
+- a licensee may not take more than nominal value from a vendor or supplier for an expenditure made
+  for the principal without the principal's written consent;
+- compensation for a service recommended, procured, or arranged for a party requires full and timely
+  disclosure to that party;
+- in a sales transaction, compensation from the broker's principal must be provided for in the
+  written agency contract;
+- compensation from another person requires full and timely disclosure to the principal; an oral
+  disclosure must be confirmed in writing before the principal makes or accepts an offer;
+- the disclosure identifies the compensation or consideration, its value, and who will or may pay it;
+  and
+- the Commission does not set commission rates or arbitrate private fee and split disputes.
+
+Rule .0109 also prohibits sharing compensation with an unlicensed person or entity for an act
+performed in North Carolina that requires a license, except for the rule's narrow vacation-rental
+travel-agent provision. That exception has its own conditions and is not a general referral-fee rule.
+
 **The in-house sale** — where the same firm is on both sides:
 
 - **How the earned brokerage fee is split** is settled between the parties and the firm.
@@ -138,10 +181,11 @@ claim takes it to their broker-in-charge and to counsel. What a licensee must be
 - **Affiliated "full" brokers must be compensated by their supervising broker-in-charge** —
   **Commission Rule 58A .0120(b)**.
 
-**Those last two are the ones a new licensee must know cold.** Money does not move from a seller, a
-buyer or a cooperating firm to you. **It moves to your BIC, and from your BIC to you.** That is true
-whether you are provisional or a full broker, and the two separate authorities the Syllabus cites make
-clear it is not a matter of firm policy.
+**Those last two are the ones a new licensee must know cold.** Rule 58A .0120(b) says an affiliated
+broker may not be paid a commission or referral fee directly by anyone other than the broker's current
+BIC or the person who served as BIC at the time of the transaction. That applies to an affiliated
+broker whether provisional or nonprovisional. The rule is about lawful payment flow; the affiliation
+agreement and other applicable law determine whether and how much is owed.
 
 **The co-brokered sale** — where two firms are involved:
 
@@ -233,12 +277,13 @@ Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
 ## Instructor source note for Module NC-02
 
 Drawn from **Section II** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
-May 2026, read on 2026-08-20 and recorded in `north-carolina/regulatory/primary-text-readings.md`. The
+May 2026, read on 2026-08-20 and recorded in `north-carolina/regulatory/primary-text-readings.md`. On
+2026-09-07, the module was reconciled to the current official OAH text of **21 NCAC 58A .0109,
+.0110, .0120, and .0506**, and to the April 2026 RELINC guide. The
 six non-closing entitlement situations, the in-house and co-brokered sharing rules, the out-of-state
 co-brokerage conditions and the expired-licence Instructor Note are **transcribed from the Syllabus.**
 
-**Not read, and therefore stated nowhere in this module:** **NCGS 93A-2(a1), 93A-2(b), 93A-4.2,
-93A-6(a)(5) and 93A-6(a)(9)**; **Commission Rules 58A .0109, 58A .0110, 58A .0120 and 58A .0506** — all
-named by the Syllabus and none obtained in its own text; the **LLCR**; and **RELINC**. No
-broker-in-charge eligibility requirement, designation procedure or enumerated duty is stated, and no
-postlicensing hour requirement or deadline is stated.
+The official OAH PDF endpoints were readable through the official indexed source but retained bytes
+remain a filing-integrity dependency. The module does not independently resolve common-law procuring
+cause or a private contractual fee dispute; those fact-specific legal questions go to the BIC and
+qualified counsel. Commission rates are not stated because compensation is negotiable.

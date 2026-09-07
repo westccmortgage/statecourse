@@ -1,8 +1,8 @@
 # North Carolina handoff
 
-**Branch:** `relay-north-carolina`
-**Phase:** Phase 0 regulatory baseline and pre-filing package
-**Control date:** 2026-09-06
+**Branch:** `north-carolina-completion-20260907`
+**Phase:** Phase 0 baseline complete; curriculum correction and completion in progress
+**Control date:** 2026-09-07
 **Provider:** Not certified
 **Course:** Not approved
 **Instructor:** Not approved
@@ -11,6 +11,15 @@
 **North Carolina credit:** none
 
 ## What is complete
+
+- Module NC-01 was fully reconciled on September 7 against G.S. 93A-4, the current indexed applicant
+  rules, Rule 58A .0511, the April 2026 RELINC guide, and the amended May 2026 syllabus. The former
+  statements that age, examination, postlicensing, and renewal rules had not been read were removed.
+  Its eleven assessment items now test the actual licensing workflow and preserve the Commission's
+  case-specific comparable-status decision for an out-of-jurisdiction licensee.
+- Module NC-02 was reconciled against current Rules 58A .0109, .0110, .0120, and .0506. It now teaches
+  the activation/acknowledgment stop, termination notice, actual BIC duties and eligibility, lawful
+  compensation flow, and disclosure rules instead of using “route to the Commission” as the answer.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
@@ -53,9 +62,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 51,568 audit-tokenized words, or at
-most 229.19 minutes/3.82 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 321.75-minute ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 53,372 audit-tokenized words, or at
+most 237.21 minutes/3.95 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 327.75-minute ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -64,7 +73,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 2/21 source entries retained and reviewed; 19 entries unavailable; source status INCOMPLETE |
+| NC-B01 | StateCourse | Partial PDF capture: 2/24 PDF source entries retained and reviewed; 22 remain unavailable or uncaptured; source status INCOMPLETE |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -110,12 +119,13 @@ node scripts/north-carolina-source-lock.mjs --require-source-capture
 ```
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
-records exact failures and does not turn search-index text into downloaded evidence. Current PDFs:
-2 retained of 19 unique URLs, representing 2 of 21 source entries; the shared Chapter 58 compilation
-supports three entries. Scripts verify actual bytes and content identity and reject a wrong PDF,
+records exact failures and does not turn search-index text into downloaded evidence. The expanded
+ledger contains 24 PDF source entries across 22 unique URLs; 2 entries have retained, reviewed bytes.
+Three current Module NC-02 rule sources were added after the September 6 capture and are therefore
+explicitly uncaptured. Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review. No push made.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
 The strict `--require-source-capture` command intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
-offline as-of-capture checks; re-fetch before filing. Current focused tests: 77/77 passing.
+offline as-of-capture checks; re-fetch before filing. Current focused tests: 79/79 passing.
