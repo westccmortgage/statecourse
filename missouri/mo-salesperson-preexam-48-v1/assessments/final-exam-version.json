@@ -1,0 +1,12 @@
+{
+  "courseId": "mo-salesperson-preexam-48-v1",
+  "version": "2026-09-06-substantive-replacement-v1",
+  "authoredContentSha256": "27bd703ba0fba5cc37dd73cd00a2bf689b98c6d7dbb11d85e1bf01f6cc3c7bb5",
+  "renderedBankSha256": "b1c0e31366b1de3d5b26367c0ea56d36688be09c6ea3215b85350724a90d34b6",
+  "forms": 2,
+  "questionsPerForm": 50,
+  "approved": false,
+  "instructorSigned": false,
+  "public": false,
+  "blueprintBasis": "Provider-designed weights covering all nine authored modules; not a claim of PSI examination-weight equivalence."
+}

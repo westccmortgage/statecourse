@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "version": "OK-FINAL-2026-09-06-v3",
+  "reviewed": "2026-09-06",
+  "reviewStatus": {
+    "authoringComplete": true,
+    "regulatorApproved": false,
+    "smeSignoff": false,
+    "psychometricValidation": false,
+    "authorizedForAdministration": false
+  },
+  "supersedes": "Generic 300-item generated final bank and v2 distractor-length cue; all 300 IDs, correct answers and course approval/release controls are unchanged by v3",
+  "sourceHashes": [
+    {
+      "path": "config/oklahoma/final-exam-bank.mjs",
+      "sha256": "26ed4a76918325c97f7bd3666999f94ce7c405a88e62101324a2d9376bbd071a"
+    },
+    {
+      "path": "config/oklahoma/final-exam/items-01-06.mjs",
+      "sha256": "0f0db042bd0c96616ece18fd46d7cb66043bcb0115bdf9c23000642ef06a5cbd"
+    },
+    {
+      "path": "config/oklahoma/final-exam/items-07-11.mjs",
+      "sha256": "26eca43d5f1cdcc13770032b5939b3a8947d2892d03bff8b72cb540d86c0e7de"
+    },
+    {
+      "path": "config/oklahoma/final-exam/items-12-16.mjs",
+      "sha256": "9cb32fa0969cc9a789ea91cdfbf4296555e084546dc63bc542de46eeadfaa40f"
+    },
+    {
+      "path": "config/oklahoma/final-exam/items-17-22.mjs",
+      "sha256": "873e9d79da5cecbbf1962a919010dd98989421b30467e6c1809f19bfa225b5fc"
+    },
+    {
+      "path": "config/oklahoma/module-question-bank.mjs",
+      "sha256": "eb0e1d48bffb0742d1171928d0f72545a9a7c66cbf152f645c043712811f023a"
+    },
+    {
+      "path": "oklahoma/curriculum/module-01.md",
+      "sha256": "819fbdd53680e7cf5d46b72277a3ddbe43d28b13a9bec249908c490175e95009"
+    },
+    {
+      "path": "oklahoma/curriculum/module-02.md",
+      "sha256": "9b2c29847555c9f82dc4d74b538fd5a9fd9c50ce91c2e03d8645cb3d1c6bceb6"
+    },
+    {
+      "path": "oklahoma/curriculum/module-03.md",
+      "sha256": "71f0c063b9caac20c0dd9b3ce79c96704ce2b432d952918864f489908a54810f"
+    },
+    {
+      "path": "oklahoma/curriculum/module-04.md",
+      "sha256": "4d97f99babcd761c2121a1ef4df671472be0c965b1b51ff89b47f349dce3e241"
+    },
+    {
+      "path": "oklahoma/curriculum/module-05.md",
+      "sha256": "91b12aa80f179f3b702f8aa30d12e18d4b28a8bca81fd66791751f5a88d34dc3"
+    },
+    {
+      "path": "oklahoma/curriculum/module-06.md",
+      "sha256": "05df09b709ffa9d7675676f54280a7f4c2a4cc810208914cf157a30a7e7bde47"
+    },
+    {
+      "path": "oklahoma/curriculum/module-07.md",
+      "sha256": "4f554b2a62dc1e6be5979685ab4ac0fb6ee73bca71a7ecfbaaeb131563b1f688"
+    },
+    {
+      "path": "oklahoma/curriculum/module-08.md",
+      "sha256": "431b1bf85f30974ba0448d111b48aaef959e8925827f59b436aa724b677d6103"
+    },
+    {
+      "path": "oklahoma/curriculum/module-09.md",
+      "sha256": "87deaa60c11dbbff075814a057dd7bff92766975f966de8af7cf740d1b4ad113"
+    },
+    {
+      "path": "oklahoma/curriculum/module-10.md",
+      "sha256": "fabe1674c32f29643c6dd2f0f23f8fa737d1a7da3430c6d8c23dfaf7f4349d55"
+    },
+    {
+      "path": "oklahoma/curriculum/module-11.md",
+      "sha256": "4fda1f7ca31b9c715f169b5d2f27702fc91375bb92355462e6668c2727cda3b9"
+    },
+    {
+      "path": "oklahoma/curriculum/module-12.md",
+      "sha256": "881f526ead1c80929e2ea28834c8db23d705e64419a4a32d98efdcc9cb7e19ae"
+    },
+    {
+      "path": "oklahoma/curriculum/module-13.md",
+      "sha256": "cb84ab20f782f50e4a98bf580e93b73c715734f45b6ce84bb9c88b7f6d484f21"
+    },
+    {
+      "path": "oklahoma/curriculum/module-14.md",
+      "sha256": "b7d6c94c4cd78e9f110ef00e06d10d503d6de01d11a3d4a6f5aab0ba3d29e3a7"
+    },
+    {
+      "path": "oklahoma/curriculum/module-15.md",
+      "sha256": "6736c711125e3ef0d83dc0813b6da3608a16503570b932ed83d78c1eb4051662"
+    },
+    {
+      "path": "oklahoma/curriculum/module-16.md",
+      "sha256": "94efaaa3a7299c98d7f2f02596164ac33e988fa0e59be75a2604d563bb72c8e0"
+    },
+    {
+      "path": "oklahoma/curriculum/assessment-source-supplement.md",
+      "sha256": "a65ca22074161f9979a7dfaa18bdda396caf7c21656ff026e2e59b7cc7fb3dd8"
+    },
+    {
+      "path": "scripts/build-oklahoma-final-exam.mjs",
+      "sha256": "eacd7bacfca4e19db66f4ba2b4bc45c9a752b26532f4eeb8539fe2d367c9358d"
+    }
+  ],
+  "renderedBankSha256": "acfd1c2dbf33469ce7f83a9b029ec3aa386738824894bdbaf727bd28cd18b612",
+  "primarySources": [
+    {
+      "id": "OREC",
+      "title": "OREC License Code and Rules, as of November 1, 2025",
+      "url": "https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Downloaded with normal TLS; edition, text and byte hash verified",
+      "sha256": "a5766871ca274ad2de31e53f3884ae05f0c0554ac648a947219389911d56b36a",
+      "pdfPages": 109,
+      "edition": "As of November 1, 2025"
+    },
+    {
+      "id": "T15",
+      "title": "Oklahoma Legislature, Title 15 — Contracts",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os15.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "T60",
+      "title": "Oklahoma Legislature, Title 60 — Property",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os60.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "T41",
+      "title": "Oklahoma Legislature, Title 41 — Landlord and Tenant",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os41.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "FORM",
+      "title": "OREC Residential Sale, January 1, 2026",
+      "url": "https://oklahoma.gov/content/dam/ok/en/orec/documents/contracts-and-forms-page/2026-contract-forms/2026%20Residential%20Sale.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Downloaded with normal TLS; edition, text and byte hash verified",
+      "sha256": "97ba5efd1dfd9ee924c38abb959e06bf00802d85f67f0f9945c8ee4faa467272",
+      "pdfPages": 8,
+      "edition": "January 1, 2026",
+      "pagination": "One disclosure acknowledgment page plus seven printed Residential Sale pages"
+    },
+    {
+      "id": "HUD",
+      "title": "HUD — Fair Housing Act overview",
+      "url": "https://www.hud.gov/helping-americans/fair-housing-act-overview",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "FHACT",
+      "title": "U.S. Code (2024), Title 42, Chapter 45 — Fair Housing",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/pdf/USCODE-2024-title42-chap45.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "2024 U.S. Code chapter text read through web tool; normal-TLS HTTP 200 PDF verified after replacing a broken HUD link; no retained-file byte lock",
+      "edition": "2024 U.S. Code, Title 42, Chapter 45",
+      "sha256": null
+    },
+    {
+      "id": "ACCOM",
+      "title": "HUD/DOJ — Reasonable Accommodations",
+      "url": "https://www.hud.gov/sites/documents/huddojstatement.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "LEAD",
+      "title": "EPA — Real Estate Disclosures About Potential Lead Hazards",
+      "url": "https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "RADON",
+      "title": "EPA — Home Buyer’s and Seller’s Guide to Radon",
+      "url": "https://www.epa.gov/sites/default/files/2015-05/documents/hmbuygud.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "ASBESTOS",
+      "title": "EPA — Protect Your Family from Exposures to Asbestos",
+      "url": "https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "FLOOD",
+      "title": "FEMA NFIP — Flood Zones and Maps",
+      "url": "https://www.floodsmart.gov/flood-zones-and-maps/what-is-my-flood-zone",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "CD",
+      "title": "Regulation Z, 12 CFR 1026.19",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "CONV",
+      "title": "CFPB — What is a conventional loan?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-conventional-loan-en-117/",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "FHA",
+      "title": "CFPB — What is an FHA loan?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-fha-loan-en-112/",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "VA",
+      "title": "CFPB — What is a VA loan?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-va-loan-en-113/",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "POINTS",
+      "title": "CFPB — Lender credits and points",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "AMORT",
+      "title": "CFPB — How paying down a mortgage works",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "IRS",
+      "title": "IRS Publication 527 — Residential Rental Property",
+      "url": "https://www.irs.gov/publications/p527",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "FTC",
+      "title": "FTC — Complying with the Telemarketing Sales Rule",
+      "url": "https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "DOJ",
+      "title": "DOJ — United States v. Atlanta Real Estate Board, horizontal price fixing",
+      "url": "https://www.justice.gov/atr/case/us-v-atlanta-real-estate-board",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "FBI",
+      "title": "FBI — Business Email Compromise",
+      "url": "https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    },
+    {
+      "id": "SURVEY",
+      "title": "Oklahoma Corporation Commission — Royalty Owners Booklet, land survey explanation",
+      "url": "https://oklahoma.gov/content/dam/ok/en/occ/documents/og/pubasst/Royalty-Owners-Booklet-112020.pdf",
+      "verifiedOn": "2026-09-06",
+      "verification": "Official primary text read through web tool; no downloaded-file byte lock",
+      "sha256": null
+    }
+  ],
+  "limitation": "Titles 15/41/60 text was read on the Legislature website. Direct download failed local TLS certificate verification; no bypass and no fabricated PDF hash. This is a scoped source review, not a legal opinion or regulator approval."
+}

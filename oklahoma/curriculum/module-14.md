@@ -381,3 +381,58 @@ were read; **§§ 858-301.1 and 858-4000.1**; **the Residential Property Conditi
 Oklahoma real estate appraisal law; the Sherman Act, RESPA, TILA, the TCPA and CAN-SPAM in their own text;
 and Oklahoma's trust and escrow account provisions. The federal material is stated at the level of
 principle from the general body of pre-license knowledge.
+
+<!-- OK-SOURCE-SUPPLEMENT:START -->
+
+## Supplemental source review — 2026-09-06
+
+This required reading clarifies the existing topics; no additional clock-hour credit or regulator approval is claimed.
+
+### authority
+
+Related module 14, §78.2. OREC's authority under 59 O.S. 858-208 includes licensing discipline and
+approval of qualifying educational entities, courses and instructors. Its availability of application
+forms is not an approval decision. A provisional sales associate must satisfy the specified post-license
+requirement; the category is not an independent broker license. Under 858-363, associates perform acts
+through the broker's name and supervision. Inactive status is not authority to continue licensed acts.
+Apply the statutory categories rather than assuming that payment or finishing a course confers a
+license. Required pre-enrollment notices in OAC 605:10-5-1(m) concern specified criminal-history and
+immigration-status eligibility review; do not promise eligibility or ask students to conceal issues.
+
+Sources: [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+### wholesaling
+
+Related module 14 and the license-code study area. Under 59 O.S. 858-301, public marketing and
+advertising of an equitable interest in a contract to purchase real property fall within the license
+requirement. Relabeling the activity does not remove that statutory language. Section **858-314(C)**
+gives the homeowner a two-business-day cancellation right without penalty for a covered wholesaler
+contract. Related written disclosures and prohibited conduct in that section must also be considered.
+Do not cite 858-312.1 for this cancellation right: that is a different provision concerning suspended
+or revoked licensees. The assessment tests the specified public-marketing activity and covered
+contract, not a claim that every private contractual assignment is identical.
+
+Sources: [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf).
+
+### conflicts
+
+Related module 14, §80.2 and module 03. A broker serving both parties must provide the written notice
+required by 59 O.S. 858-355.1(D). Section 858-312(3), not (6), makes failure to comply with the Broker
+Relationships Act a disciplinary ground. Section (6) concerns accounting and remittance. Payment alone
+does not establish a brokerage relationship under 858-359(A). The Oklahoma Broker Relationships Act
+abrogates common-law agency duties within its scope (858-360), but permits additional agreed services
+that do not displace statutory duties. The word "agent" as a trade description does not recreate a
+different common-law regime (858-361).
+
+Confidential information under 858-353(A)(4) includes specified price/financing flexibility, motivation
+and designated information; the statutory exceptions include written consent, legal requirement and
+information becoming public from a source other than the firm. Do not call every physical defect
+confidential or disclose negotiations just because a transaction ended. Both-side service does not
+permit a broker to sacrifice honesty, accounting or timely communication. Fees can be separately
+negotiated under 858-359(D); competing firms cannot agree on a common fee floor. An independent firm's
+own fee policy is not, by itself, an agreement among competitors. Sources include the current OREC
+Code and the DOJ's primary horizontal-price-fixing enforcement record.
+
+Sources: [OREC License Code and Rules, as of November 1, 2025](https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf); [DOJ — United States v. Atlanta Real Estate Board, horizontal price fixing](https://www.justice.gov/atr/case/us-v-atlanta-real-estate-board).
+
+<!-- OK-SOURCE-SUPPLEMENT:END -->

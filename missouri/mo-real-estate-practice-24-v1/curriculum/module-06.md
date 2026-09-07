@@ -49,16 +49,22 @@ supply one.
 **Acceptance** must be unqualified and **communicated in the manner the offer requires.** Signature and
 delivery are different events and may fall on different days.
 
-### 22.2 The date everything runs from
+### 22.2 Match each deadline to its contractual trigger
 
-**Every deadline in the contract runs from the moment the contract is formed** — and on most forms that
-is the date acceptance is delivered, not the date the last party signed.
+**Use the formation or effective date where the particular provision makes it the starting point.**
+Signature, delivery, and receipt are different events. Other deadlines may start on receipt of a
+title document, delivery of a notice, another defined event, or a fixed calendar date. Do not assume
+that every deadline shares the same anchor or that every form defines formation identically.
 
-**The discipline:** on the day acceptance is delivered, **write the date in the place the contract
-provides, and compute every deadline from it that same day**, into the file and into your calendar.
+**The discipline:** record acceptance as the contract directs, then enter each deadline in the file
+and calendar with its clause, trigger, counting rule, cut-off time, permitted delivery method, and
+recipient. Track later trigger events and amendments when they occur. If a hypothetical clause allows
+five days after receipt of the title commitment, use documented receipt and that clause's counting
+rules; a separately stated closing date remains its own calendar entry.
 
-A deadline miscounted from the wrong anchor shifts every subsequent date, and it is among the most
-common and most avoidable failures in residential practice.
+A deadline calculated from the wrong event can impair the client's rights. Have the designated broker
+review uncertain calculations and route disputed legal interpretation to counsel. This lesson's
+hypothetical counting period is not a statewide Missouri form requirement.
 
 ### 22.3 The § 339.780.7 obligation, applied
 

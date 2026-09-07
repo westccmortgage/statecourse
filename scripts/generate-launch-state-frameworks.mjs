@@ -1,3 +1,6 @@
+import { renderWisconsinFinalExamBank } from "../config/wisconsin/final-exam-bank.mjs";
+import { renderMissouriSecureFinalBank } from "../config/missouri/secure-final-bank.mjs";
+import { renderOklahomaFinalExamBank } from "../config/oklahoma/final-exam-bank.mjs";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -389,17 +392,30 @@ The generated secure bank is a complete structural draft and must pass legal cit
 }
 
 function questionBank(course) {
-  const count = course.final.forms * course.final.questions;
-  const topics = course.modules.flatMap(mod=>mod.topics.map(topic=>({module:mod,topic})));
-  const out = [`# ${course.title} — Secure Final Examination Bank`, "", "**CONFIDENTIAL — DO NOT PUBLISH IN THE STUDENT BUILD**", "", `Draft forms: ${course.final.forms}; ${course.final.questions} items each; ${count} items total. Regulatory/SME/psychometric validation is a release gate.`, ""];
-  for (let i=0;i<count;i++) {
-    const form = Math.floor(i/course.final.questions)+1;
-    const n = i%course.final.questions+1;
-    const {module,topic}=topics[i%topics.length];
-    const variant = Math.floor(i/topics.length)+1;
-    out.push(`## Form ${String.fromCharCode(64+form)} · Item ${String(n).padStart(3,"0")}`, "", `**Objective:** ${module.id} — ${topic}`, "", `A ${course.state} entry-level transaction presents a question about ${topic.toLowerCase()} (scenario variant ${variant}). Which response best follows the approved-course method?`, "", `A. Rely on a customary practice from another state without checking the current ${course.state} authority.`, `B. Identify the material facts, check the controlling ${course.state} source or approved form, act within the licensee's role, document the result, and refer unresolved legal or technical issues.`, `C. Treat payment or course completion as authority to give legal, tax, lending, appraisal, inspection, or surveying advice.`, `D. Omit the issue from the record unless the transaction fails.`, "", `**Key:** B`, "", `**Rationale:** The course method requires source control, verified facts, role limits, documentation and appropriate referral. The distractors bypass state authority, exceed scope, or suppress an audit-relevant issue.`, "");
+  // Protected banks are authored and versioned separately. Never regenerate generic
+  // count-only placeholders or silently overwrite their content/blueprint identity.
+  let result;
+  switch (course.courseId) {
+    case "wi-salesperson-prelicense-v1":
+      result = renderWisconsinFinalExamBank();
+      break;
+    case "mo-salesperson-preexam-48-v1":
+    case "mo-real-estate-practice-24-v1":
+      result = renderMissouriSecureFinalBank(course.courseId);
+      break;
+    case "ok-basic-prelicense-90-v1":
+      result = renderOklahomaFinalExamBank();
+      break;
+    default:
+      throw new Error(`No authored protected-final renderer for ${course.courseId}`);
   }
-  return out.join("\n");
+  if (typeof result !== "string" || /scenario variant|approved-course method|The course method requires source control/i.test(result)) {
+    throw new Error(`Invalid or placeholder protected final for ${course.courseId}`);
+  }
+  const expected = course.final.forms * course.final.questions;
+  const actual = (result.match(/^## Form [A-Z] · Item \d{3}$/gm) || []).length;
+  if (actual !== expected) throw new Error(`Protected final count mismatch for ${course.courseId}: ${actual}/${expected}`);
+  return result;
 }
 
 function quizBank(course) {

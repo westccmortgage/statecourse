@@ -75,14 +75,20 @@ seven, and a licensee who works from the federal list alone will eventually be w
 - **Coercing, intimidating, threatening or interfering** with a person exercising a fair housing
   right — or **retaliating** against someone who has asserted one or assisted another to.
 
-### 40.3 The exemptions, and why they change nothing for you
+### 40.3 Narrow exemptions are not blanket permission to discriminate
 
-The Act contains narrow exemptions — for certain single-family sales by an owner without a broker and
-without discriminatory advertising, and for owner-occupied dwellings of up to four units.
+[42 USC 3603(b)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section3603&num=0&edition=prelim)
+contains separate, narrow exceptions. The single-family owner exception in subsection (b)(1) has
+multiple conditions, including restrictions on using broker or agent sales/rental services. Subsection
+(b)(2) separately addresses qualifying owner-occupied dwellings with living quarters for no more than
+four families. Its text does not repeat the broker-use condition from subsection (b)(1).
 
-**Every one of them is lost the moment a licensee is involved.** They also do not apply to race under
-the 1866 Act, and they do not permit discriminatory advertising in any case. A licensee should know
-the exemptions exist and should never expect to operate inside one.
+**Do not teach that broker involvement automatically eliminates every exemption, or that an exemption
+authorizes discrimination generally.** Section 3603(b) preserves the prohibition on discriminatory
+advertising in 3604(c); other federal civil-rights protections, applicable state and local law, and
+the licensee's professional duties still require separate analysis. Do not implement a discriminatory
+owner instruction on the strength of an assumed exception. Escalate any claimed exemption to the
+designated broker and qualified counsel.
 
 ### 40.4 Enforcement
 

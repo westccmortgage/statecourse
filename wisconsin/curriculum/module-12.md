@@ -166,7 +166,7 @@ minutes and the assessment history.
 
 ## Hour 69 — Environmental concerns
 
-### 69.1 The eleven topics — REEB 25.033(18)
+### 69.1 The ten current topics — REEB 25.033(18)
 
 The rule requires instruction on **radon**, **asbestos**, **lead-based paint**, **toxic waste**,
 **underground storage tanks under ch. ATCP 93**, **floodplains under s. 87.30 Stats. and ss. NR 116.01
@@ -234,9 +234,7 @@ who **knows the question exists, discloses what the firm actually knows, and rou
 office or professional who answers it — in writing, with the contingency deadline stated.**
 
 **§ 452.133(1)(c)** requires timely **written** disclosure of material adverse facts the firm knows and
-the party cannot discover through reasonably vigilant observation. **REEB 24.07(3)** requires action on
-information **suggesting** an adverse material fact. And **§ 452.133(2)(am)** and **REEB 24.03** together
-mean that a licensee who characterises a condition has stepped outside their competence.
+the party does not know or cannot discover through reasonably vigilant observation, subject to the statutory disclosure exception. **REEB 24.07(3) was repealed on March 1, 2026.** Apply the continuing inspection, disclosure, and inconsistency duties under 24.07(1), (2), and (6), and reasonable care and competence under 452.133(1)(b) and 24.03. Do not infer a technical environmental diagnosis from an unexplained observation or exceed the licensee's actual competence.
 
 ### Module WI-12 engagement check
 
@@ -274,8 +272,7 @@ dwelling on the parcel.
 **flood insurance** availability from an insurance professional.
 
 **And what I disclose:** whatever the firm actually knows, **in writing**, under **§ 452.133(1)(c)** —
-and I act on the rusted tank and the wet area as information **suggesting** adverse material facts under
-**REEB 24.07(3)** rather than treating the seller's account of them as an answer.
+and I record and investigate the tank and wet-area observations under the current care, inspection, and competence duties. The observations are not a license to invent a diagnosis. The former 24.07(3) is repealed; disclose established facts and material inconsistencies under the provisions that remain operative.
 
 ---
 
@@ -300,3 +297,5 @@ where to call, not a statement of any jurisdictional rule.
 
 Federal lead-based paint requirements, the NFIP, and the Renovation, Repair and Painting rule are
 federal and are stated at the level of the well-settled requirement.
+
+> Legal-source update, 2026-09-06: the targeted current-rule corrections below supersede the earlier “not read” statements for those provisions. See `wisconsin/regulatory/legal-source-review-2026-09-06.md`. This is not regulator approval or an instructor sign-off.

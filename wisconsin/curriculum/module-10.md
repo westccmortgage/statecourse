@@ -30,7 +30,7 @@ By the end of this module the student will be able to:
 | 59 | Advertising: REEB 24.04 and § 452.136 | Section completed |
 | 60 | Written proposals: REEB 24.12 and 24.13; disclosure of compensation and interest | Section completed |
 | 61 | Consumer protection: REEB 24.07 in its five parts | Section completed |
-| 62 | § 452.23 investigations; civil liability; ch. 709 seller disclosure | Module engagement check |
+| 62 | § 452.23 licensee disclosures and inspections; civil liability; ch. 709 seller disclosure | Module engagement check |
 | **Total** | **7 clock hours** | |
 
 ---
@@ -180,11 +180,9 @@ writing**.
 
 ### 58.3 Tie-in arrangements — REEB 24.075
 
-REEB 25.033(13)(b)1.b. The rule addresses **tie-in arrangements** — conditioning one thing on another.
+**REEB 24.075** prohibits a licensee from conditioning the sale of real estate owned by the licensee or controlled by an option, as described in the rule, on the buyer purchasing other real estate or listing the buyer's real estate with the licensee. The rule has specific builder-related provisions; read them before applying an exception.
 
-The federal antitrust analogue is **tying**, from Module WI-02 Hour 12.3: conditioning the availability
-of one service on the purchase of another. Wisconsin addresses it as a conduct rule as well, which means
-a licensee can face a Board matter without any antitrust proceeding.
+Do not describe every commercial tie or package as automatically prohibited by this particular rule. Federal antitrust tying analysis and this Wisconsin real-estate conduct rule are related subjects with different elements.
 
 ### 58.4 Agreements in writing — REEB 24.08
 
@@ -206,14 +204,7 @@ conditions.
 
 ### 58.6 Net listings — REEB 24.10
 
-REEB 25.033(13)(b)1.e. A **net listing** is an arrangement under which the seller receives a fixed sum
-and the firm keeps everything above it. The rule addresses them, and the reason is structural: a net
-listing puts the firm's interest **directly against** the client's, which cannot be reconciled with
-**§ 452.133(2)(a)**'s duty to place the client's interests ahead of the firm's.
-
-A salesperson never takes one without the supervising broker.
-
----
+A **net listing** is an arrangement in which the seller receives a fixed sum and the firm keeps the excess as its compensation. **REEB 24.10 strictly prohibits net listings.** It is not merely a matter to take to the supervising broker for consent, and the seller's proposal or informed agreement does not remove the prohibition. Use a lawful negotiated compensation arrangement instead.
 
 ## Hour 59 — Advertising
 
@@ -367,71 +358,33 @@ primary text for this project. What it teaches is **what each provision is about
 
 ### 61.2 What the six provisions do, and how they relate to the statute
 
-**§ 452.133(1)(c)** is the statutory duty: **timely disclose in writing all material adverse facts that
-the firm knows and that the party does not know or cannot discover through reasonably vigilant
-observation**, unless disclosure is prohibited by law. It is owed to **every party**.
+**Wis. Stat. 452.133(1)(c)** and **REEB 24.07(2)** require timely written disclosure of known material adverse facts to parties who do not know or cannot discover them through reasonably vigilant observation, unless disclosure is prohibited by law. Apply the actual statutory wording rather than replacing it with a narrower “both conditions” test.
 
-**REEB 24.07(1)(a) and (1)(b)** address the **investigation side**: what a licensee does about
-**inspections**, and what **inquiry a listing firm makes**. The distinction matters because the statutory
-duty is triggered by what the firm **knows** — and the rule addresses what the firm is expected to **ask
-and observe**.
+**REEB 24.07(1)(a)–(d)** supplies the licensee-inspection framework: a reasonably competent and diligent inspection of accessible structures and immediate surroundings; before listing execution, inspection plus seller inquiry with a written response requested; and the other licensee's inspection before making a written proposal, subject to access and the party's instruction to submit before access. In that last case inspect promptly afterward if access is provided. The rule excludes specified invasive, obstructed, or hazardous activity, including moving furniture, opening panels, operating equipment, and entering hazardous areas. It does not turn a licensee into an engineer or home inspector.
 
-**REEB 24.07(2)** addresses the **disclosure of material adverse facts** themselves.
+**REEB 24.07(3) was repealed effective March 1, 2026 by CR 25-077.** Its former stand-alone “material suggesting adverse material facts” rule must not be taught as operative law. REEB 25.033(14)(d) still contains a reference to that repealed paragraph: preserve the curricular topic and explain this stale cross-reference, but use current operative duties for conduct.
 
-**REEB 24.07(3)** addresses **material suggesting adverse material facts** — information that does not
-itself establish a defect but points toward one. This is the provision that turns a stain, a smell, a
-patched wall or a neighbour's remark into something a licensee must do something about.
+**REEB 24.07(4)** requires timely written disclosure to the financing institution or other secured lender if the licensee knows the parties have not disclosed their entire agreement to that lender. It is not a blanket statement that every side agreement is forbidden.
 
-**REEB 24.07(4)** addresses **side agreements** — arrangements outside the written contract, which lenders
-and other parties are entitled to know about and which are a common vehicle for misrepresentation.
-
-**REEB 24.07(5)** addresses **reliance upon third parties** — when a licensee may rely on what an
-inspector, a contractor, a municipality or the seller has said, and what that reliance does and does not
-do to the licensee's own duty.
+**REEB 24.07(5)** allows reliance on a qualified third party's written property-condition report if copies are given timely to all parties. **(6)** separately requires timely written disclosure of a material inconsistency between the licensee's inspection and the seller's or third party's information. **(7)** prohibits knowingly giving false property information to parties or another licensee.
 
 ### 61.3 The practical method
 
-For any condition or piece of information a licensee encounters:
+Distinguish observed information from an unsupported diagnosis. If the firm knows a material adverse fact, apply 452.133(1)(c) and 24.07(2). If an inspection reveals a material inconsistency with a seller's or qualified third party's statement, apply 24.07(6). If the cause or significance is uncertain, apply reasonable skill and care and the competence rules, describe observations accurately, and obtain appropriate inspection or assistance rather than certifying a technical conclusion.
 
-**Is it a material adverse fact the firm knows?** If yes, **§ 452.133(1)(c)** requires **timely written**
-disclosure to **every party** who does not know it and cannot reasonably discover it. Not orally, not at
-closing, and not only to the client.
+**The repeal of 24.07(3) does not repeal the other inspection, honesty, care, competence, and disclosure duties.** A stain alone does not automatically prove a structural defect; uncertainty is also not permission to ignore a known fact or materially contradictory evidence. Track the agreed investigation and notice deadlines without inventing an additional statutory deadline.
 
-**Does it merely suggest one?** Then **REEB 24.07(3)** is engaged, and the licensee must act on the
-suggestion rather than ignore it.
-
-**Is it a matter for inspection or inquiry?** **REEB 24.07(1)** and the referral: a **home inspector**, a
-**well or septic evaluator**, a **radon tester**, the **county zoning office**, the **DNR**, or the
-**municipality** — named, in writing, with the contingency deadline stated.
-
-**Is it a side agreement?** **REEB 24.07(4)**, and it goes into the written contract or it does not
-happen.
-
-**Am I relying on someone else?** **REEB 24.07(5)**, and the reliance is recorded — who said it, when,
-and in what form.
-
-**And never diagnose.** "It's just condensation", "that crack is cosmetic", "the well is fine" are
-opinions outside the licence and, if wrong, are misrepresentations.
-
----
+For a lender side-agreement issue, disclose the known omission timely in writing as required by 24.07(4). For reliance under (5), obtain the qualified third party's written report and give copies to all parties in a timely manner.
 
 ## Hour 62 — Investigations, liability, and the seller's disclosure
 
-### 62.1 Investigations and inspections under § 452.23 — REEB 25.033(14)(g)
+### 62.1 Disclosures and inspections by licensees under § 452.23 — REEB 25.033(14)(g)
 
-**§ 452.23** gives the Board and the department authority to investigate and inspect, and **§ 452.14**
-provides for investigation and discipline of licensees — the Board may act on its own motion or on
-credible information that a licensee has violated ch. 452 or a rule, may hold hearings and make
-findings, may commence disciplinary proceedings, and **shall notify a firm in writing of disciplinary
-orders against a licensee associated with it.**
+**Wis. Stat. 452.23 is “Disclosures and inspections by brokers and salespersons.”** It is not a grant of the Department's power to investigate licensees. It prohibits disclosures that constitute the specified unlawful discrimination, addresses information a licensee need not disclose under its stated conditions, and addresses qualified third-party reports.
 
-**This course states no procedure, sanction, or penalty from either section**, which have not been read
-in full for this project.
+Under **452.23(2)(b)**, a qualifying written third-party report provided to the person can remove the need for duplicate disclosure of information already disclosed there. Under **(3)** the licensee must disclose known facts that contradict such a report. Under **(4)** the licensee must exercise the care expected of a reasonably prudent person with the knowledge, skills, and training required for licensure. The statute's other exceptions and conditions must be checked in current text before being applied.
 
-What a licensee does when a complaint or an inquiry arrives: **notify the supervising broker
-immediately; preserve every record and change nothing; do not contact a complainant to argue; respond
-within the time given; and obtain counsel.** Altering a record is a far graver matter than the original
-complaint.
+Board investigation and discipline are separate matters, including the applicable provisions of **452.14**. Preserve records and obtain appropriate advice for a real complaint; do not misidentify 452.23 as the disciplinary-investigation authority.
 
 ### 62.2 Civil liability for misrepresentation — REEB 25.033(14)(h)
 
@@ -479,17 +432,7 @@ neighbouring garage from the listing photographs. Work through everything.
 
 **Expected answer.**
 
-**The basement is a material adverse fact the firm now knows.** The seller's statement that the sump
-runs in spring, together with the efflorescence and the dehumidifier, is knowledge — and a buyer cannot
-discover a spring water problem by reasonably vigilant observation at a summer showing.
-**§ 452.133(1)(c)** requires the firm to **timely disclose it in writing** to **every party**, not only
-to a party who asks. The seller's "not aware" on the ch. 709 report does not discharge my duty; the
-report is the seller's statement and this is the firm's.
-
-**The efflorescence and dehumidifier are also material suggesting an adverse material fact** —
-**REEB 24.07(3)** — and I must act on the suggestion rather than ignore it: the property goes on the
-investigation list, and the buyer is directed to an inspector, in writing, with the contingency
-deadline stated. **I do not diagnose it.**
+**The observations call for careful inquiry, not a fabricated diagnosis.** Efflorescence, a running dehumidifier, and a statement that a sump operates in spring do not by themselves prove that the basement floods or establish the cause. Record the actual observations and seller statements, seek competent inspection, and avoid saying either that flooding is proved or that the property is defect-free. Disclose known material adverse facts under 452.133(1)(c) and 24.07(2), and materially inconsistent information under 24.07(6), where their conditions are met. The former 24.07(3) provision is repealed; it is not a current independent basis for the answer.
 
 **When the buyer's agent asks me directly**, I answer honestly — **§ 452.133(1)(a)** — and in writing,
 and I do not soften it. If the seller instructs me not to, that instruction is not one I may follow:
@@ -565,23 +508,9 @@ words** and show against them.
 
 ### E10.3 Material adverse facts: a working method
 
-**§ 452.133(1)(c)** has three elements and each is a question:
+The current statutory test in 452.133(1)(c) concerns a material adverse fact the firm knows and that the party does not know **or** cannot discover through reasonably vigilant observation, unless disclosure is prohibited by law. Do not silently rewrite the statute's connector or assume that any visible clue resolves all hidden aspects of a known condition.
 
-**Is it material and adverse?** Not "would the buyer like to know" but the defined class the statute and
-**REEB 24.07** address.
-
-**Does the firm know it?** Actual knowledge, including what the associated licensee learned in the course
-of the firm's business — from the seller, from an inspector, from a neighbour, from observation.
-
-**Can the party discover it through reasonably vigilant observation?** A sagging roofline, yes. A basement
-that floods in spring, seen in August, no. A failed drain tile, no. Water staining that has been painted
-over, no.
-
-If all three are satisfied: **timely, in writing, to every party who does not know it.** Not orally. Not
-at closing. Not only to the client.
-
-And where the information merely **suggests** an adverse material fact — **REEB 24.07(3)** — the licensee
-acts on the suggestion: route it, name the professional, and record the routing.
+Classify the actual fact, the firm's knowledge, the recipient's information, and the required form and timing of disclosure. Distinguish that analysis from an uncertain observation that requires reasonable care and competent follow-up. REEB 24.07(3) was repealed on March 1, 2026; current 24.07(1), (2), (5), and (6), and 24.03 continue to govern their respective issues.
 
 ### E10.4 What a complaint file looks like
 
@@ -615,18 +544,12 @@ confirm the effective date and the final text before any delivery on or after it
 **REEB 25.033(13)(b)2 and (13)(b)4 intro. were amended by CR 23-075**, Register August 2024 No. 824,
 effective 9-1-24. Hours 59.1 and 60.2 say so.
 
-**Ch. REEB 24 has not been read from primary text for this project, and no text of any REEB 24 section is
-quoted or paraphrased here.** Hours 58, 60 and 61 name each cited section — **24.03, 24.04, 24.05,
-24.07(1) through (5), 24.075, 24.08, 24.09, 24.10, 24.12 and 24.13** — state its subject as the Board's
-own rule titles give it, relate it to the statutory duty in § 452.133 that has been read, and instruct
-the student to read the chapter. **An instructor supplementing this module with rule text must obtain
-ch. REEB 24 and date the reading.**
+The targeted REEB 24 provisions were read from current primary text on 2026-09-06. This update corrects the repealed paragraph, the inspection exceptions, reliance conditions, the net-listing prohibition, and the limited scope of the tie-in rule. See the dated source review.
 
 **Wisconsin's protected-class list under s. 106.50 is deliberately not printed.** Hour 57.3 names the
 section and the administering agency, states that Wisconsin's list is broader than the federal seven,
 notes that local ordinances may protect further classes, and instructs the licensee to read the current
-list directly. **s. 106.50 has not been read for this project**, and any instructor supplementing this
-hour with the list must read it and date the reading.
+list directly. Sections 106.50(1m)(h), (2), (2m), and the displayed (2r) text were read on 2026-09-06; no claim is made that every exemption or enforcement provision was exhaustively reviewed.
 
 **Deliberately not stated, for want of a primary reading:** any requirement, deadline, exemption or item
 from **ch. 709**; the procedures, sanctions and penalties in **§§ 452.14 and 452.23**; **s. 452.12(3)**,
@@ -635,3 +558,5 @@ from **ch. 709**; the procedures, sanctions and penalties in **§§ 452.14 and 4
 Federal statements — the Fair Housing Act's seven classes, the Civil Rights Act of 1866 and *Jones v.
 Alfred H. Mayer Co.*, the accommodation and modification framework, the ADA's scope, Do Not Call,
 CAN-SPAM and the TCPA — are federal law and are stated at the level of the well-settled requirement.
+
+> Legal-source update, 2026-09-06: the targeted current-rule corrections below supersede the earlier “not read” statements for those provisions. See `wisconsin/regulatory/legal-source-review-2026-09-06.md`. This is not regulator approval or an instructor sign-off.

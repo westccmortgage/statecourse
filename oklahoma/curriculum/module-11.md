@@ -423,3 +423,30 @@ their implementing regulations in their own text. **That Oklahoma foreclosure is
 stated as a structural fact of Oklahoma practice, and every specific consequence of it is routed to
 counsel. Every dollar figure in this module is an invented arithmetic illustration and is not Oklahoma
 market or rate data.**
+
+<!-- OK-SOURCE-SUPPLEMENT:START -->
+
+## Supplemental source review — 2026-09-06
+
+This required reading clarifies the existing topics; no additional clock-hour credit or regulator approval is claimed.
+
+### finance
+
+Related module 11, §63.1. A conventional mortgage is not insured or guaranteed by a federal housing
+program. This does not mean every conventional loan has identical down-payment, insurance or credit
+rules. FHA insures eligible mortgages and VA guarantees a portion of eligible loans; neither label
+eliminates lender underwriting or guarantees approval. Eligibility is not the same as affordability.
+
+For the stated hypothetical, loan-to-value equals loan divided by value, and a payment-to-income ratio
+equals the specified monthly housing payment divided by gross monthly income. Use the value and
+cost definitions provided; do not invent a universal qualification threshold. A discount point is one
+percent of the loan amount. Compare upfront points with the quoted periodic savings and expected
+holding period; a simple break-even calculation excludes time value and future refinance risk unless
+the question includes them. Interest is calculated on the applicable outstanding principal, while
+principal reduction builds equity. Mortgage insurance protects the lender from a covered loss; it is
+not a homeowner warranty or a promise to forgive borrower debt. Sources: CFPB conventional, FHA, VA,
+points and amortization explainers listed in the source manifest.
+
+Sources: [CFPB — What is a conventional loan?](https://www.consumerfinance.gov/ask-cfpb/what-is-a-conventional-loan-en-117/); [CFPB — What is an FHA loan?](https://www.consumerfinance.gov/ask-cfpb/what-is-an-fha-loan-en-112/); [CFPB — What is a VA loan?](https://www.consumerfinance.gov/ask-cfpb/what-is-a-va-loan-en-113/); [CFPB — Lender credits and points](https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/); [CFPB — How paying down a mortgage works](https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/).
+
+<!-- OK-SOURCE-SUPPLEMENT:END -->

@@ -146,23 +146,18 @@ be enforced by DATCP and can support a private action, **independently of** anyt
 Examining Board does; and its requirements apply to a residential rental whether or not a licensee is
 involved.
 
-**ATCP 134 has not been read from primary text for this project, and this course states no requirement,
-deadline, amount or form from it.** What follows is what each cited section governs and what a licensee
+The targeted ATCP 134.07–.09 provisions were read on 2026-09-06. No comprehensive review of every deposit rule, exemption, or remedy is claimed. What follows is what each cited section governs and what a licensee
 must therefore do.
 
 ### 65.2 The three sections the rule names
 
-**ATCP 134.02 — definitions.** The section that decides **what the rule applies to** and what its terms
-mean. Scope questions — whether a particular arrangement is a residential tenancy within the rule — are
-answered here first.
+The curriculum specifically names **ATCP 134.02 (definitions), 134.06 (security deposits), and 134.09 (prohibited practices)**. Those topics remain part of this hour. Identify the applicable defined terms under .02 and consult .06 for the actual deposit deductions, accounting, and return requirements; no unverified return period is supplied here.
 
-**ATCP 134.06 — security deposits.** The section governing **the handling and return of security
-deposits**, including what may be withheld, what accounting the tenant is entitled to, and the timing.
-Security deposit disputes are the single most common residential rental complaint, and the rule is
-prescriptive.
+**ATCP 134.07 — Promises to repair (additional applied instruction).** A repair promise must specify the completion date or time period. Promises made before the initial rental agreement must be in writing. The rule addresses timely notice of delays due to causes beyond the landlord's control; it is not permission to promise a repair without a completion commitment.
 
-**ATCP 134.09 — prohibited practices.** The section listing practices a landlord may not engage in. It
-is the operative list a property manager measures their own conduct against.
+**ATCP 134.08 — Prohibited rental-agreement provisions.** The section identifies provisions that make a rental agreement void. Read the actual text and applicable law before advising on a disputed clause; an owner cannot use a private form to contract around every tenant protection.
+
+**ATCP 134.09 — Prohibited practices.** Among its restrictions, paragraph (7) forbids self-help eviction outside the judicial eviction process. A manager does not remove doors, lock out a tenant, or use other self-help measures in lieu of that process. The section also addresses entry, automatic renewal, retaliation, and late fees; this lesson does not replace review of the exact provision for a real dispute.
 
 ### 65.3 What ATCP 134 requires a licensee to do
 
@@ -223,14 +218,13 @@ sides; **indemnification**; **handling of the owner's funds and of tenant deposi
 **§ 452.133(1)(f)** requires the firm to **safeguard trust funds and other property held**, as required
 by rules under **s. 452.13(5)**, and **ch. REEB 18** governs trust accounts — Module WI-13.
 
-Three rules a manager follows without exception:
+Safeguarding and accounting principles, applied with the actual REEB 18 exceptions:
 
 **One owner's money is never used for another owner's property.** A pooled trust account may be
 permitted; a **pooled ledger** is not. Every owner and every deposit has its own running balance, and
 sufficiency is measured against the **sum of the ledgers**, not against the bank balance.
 
-**Security deposits are the tenant's money held in trust**, not the owner's income, and they are not
-available to fund operations.
+**Security deposits are not automatically earned owner income.** REEB 18.031(4) concerns a licensee who has an ownership interest in the rental property: those deposits go in a real-estate trust account or an owner account provided for in the lease. Separately, paragraph (5)(b) permits direct deposit of rental application deposits, rents, and security deposits payable to one or more owners into the owner account; disbursements by the firm or associated licensee need the owner's written authorization. Those conditions do not authorize deposit in the firm's operating account. See Module WI-13 for the distinction.
 
 **Reconcile monthly** — bank statement to book balance to the sum of the individual ledgers — and retain
 the reconciliation. A reconciliation that has never been performed is what an audit finds.
@@ -327,8 +321,7 @@ recorded in `wisconsin/regulatory/primary-text-readings.md`: **REEB 25.033(15)(a
 **(16)(a) through (e)**; and **§ 452.133(1)(a), (1)(b), (1)(c) and (1)(f)**, **§ 452.135(2)(a)**, and
 **§ 452.136**.
 
-**Ch. ATCP 134 has not been read from primary text for this project, and no requirement, deadline,
-amount or form from it is stated.** Hour 65 names **ATCP 134.02, 134.06 and 134.09** as REEB
+The targeted ATCP 134.07–.09 primary-text review of 2026-09-06 supersedes the original unread-source limitation for those provisions. Hour 65 names **ATCP 134.02, 134.06 and 134.09** as REEB
 25.033(15)(h) requires, states what each governs from its own rule title, explains why the rule matters
 independently of the Board, and instructs the student to read the current text. **An instructor
 supplementing this hour with a deposit figure or a deadline must obtain ch. ATCP 134 and date the
@@ -341,3 +334,5 @@ requirements, which Module WI-13 names; and **s. 452.13(5)**.
 **That the seven § 452.133(1) duties are owed to tenants as parties** is stated deliberately and
 twice — at 66.1 and at 66.6 — because property managers commonly assume the tenant is owed nothing, and
 in Wisconsin the tenant is a party to whom the firm provides brokerage services.
+
+> Legal-source update, 2026-09-06: the targeted current-rule corrections below supersede the earlier “not read” statements for those provisions. See `wisconsin/regulatory/legal-source-review-2026-09-06.md`. This is not regulator approval or an instructor sign-off.
