@@ -504,6 +504,29 @@ test("Module NC-06 restores the deed activity and reconciles ownership, leases, 
   assert.doesNotMatch(fifteen, /All service providers must \*\*file a Notice to Lien Agent/i);
 });
 
+test("Module NC-07 delivers all contract and agency activities and uses current North Carolina boundaries", () => {
+  const seven = readModule("module-07");
+  for (const required of [
+    /G\.S\. 66-315 says UETA does not require electronic records or signatures/i,
+    /may not be denied effect solely because/i,
+    /G\.S\. 22-2.*writing and signed by the party to be charged/is,
+    /Recording is not a Statute-of-Frauds formation requirement/i,
+    /select or complete a preprinted form/i,
+    /broker from another firm is not automatically the seller's subagent/i,
+    /Required Activity evidence — void and voidable fact-pattern lab/i,
+    /Required Activity evidence — contract termination versus offer termination/i,
+    /Required Activity evidence — six agency-duty scenarios/i,
+    /Required Activity evidence — termination and surviving-duty lab/i
+  ]) assert.match(seven, required);
+  assert.doesNotMatch(seven, /Electronic signatures are binding on contract parties/i);
+  assert.doesNotMatch(seven, /Must be in writing and recorded generally per the Statute of Frauds/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "VII");
+  assert.equal(activities.length, 4);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
+  assert.match(BANK["module-07"].engagement[0].choices[0], /competent parties.*mutual assent.*consideration.*lawful objective/i);
+  assert.doesNotMatch(BANK["module-07"].engagement[0].choices[0], /writing|recording|notari/i);
+});
+
 test("the two contract-structure facts a broker cannot get wrong are stated in Module NC-11", () => {
   const eleven = readModule("module-11");
   assert.match(eleven, /NO FINANCING OR APPRAISAL CONTINGENCIES/i);

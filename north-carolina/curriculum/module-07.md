@@ -84,9 +84,13 @@ on receipt.
 - **Electronic methods** — email, text or fax **unless prohibited by the terms of the offer**, and
   **effective upon receipt by the offeror's communication equipment or computer.**
 
-**Note the asymmetry the Commission has just described.** Mailed acceptance: effective on **dispatch**.
-Electronic acceptance: effective on **receipt by the equipment**. They are different rules and the
-examination tests the difference.
+**Current North Carolina UETA check.** G.S. 66-325 defines when an electronic record is sent and
+received. Unless the parties reasonably agree otherwise, receipt occurs when a processable record
+enters the recipient's designated or used information-processing system from which it can be
+retrieved. An individual need not yet know of the receipt, subject to the statute's additional
+consumer-transaction readability protection. That rule identifies electronic delivery; other law and
+the offer still determine whether that delivery creates acceptance. The Syllabus contrasts this with
+its common-law Mailbox Rule: a qualifying mailed acceptance is effective on dispatch.
 
 ### B.3 Counteroffer
 
@@ -118,7 +122,10 @@ The Commission's four cases, each with its consequence:
 
 **Only one of the four is void, and it is the one where a court has already adjudicated the
 incompetence.** Everything else in the capacity list is voidable. That single distinction is worth
-memorising exactly as the Commission states it.
+memorising exactly as the Commission states it. Current G.S. 48A-2 independently confirms the age
+line: a North Carolina minor is a person who has not reached 18. The void/voidable classifications in
+this section remain the Commission's prescribed national-contract instruction, not a broker's license
+to adjudicate a person's capacity.
 
 ### B.7 Lawful objective of the contract
 
@@ -154,9 +161,28 @@ Examples; **voidable by the injured party.**
 
 Examples; **voidable by the injured party.**
 
-**Notice the pattern across C.1 to C.4: every one of them produces a VOIDABLE contract at the election
-of the injured party, not a void one.** Combined with B.6, the only void case in the whole of Section
-VII's consent material is the court-adjudicated incompetent.
+**Notice the prescribed classification across C.1 to C.4:** each fact pattern may make the agreement
+voidable at the election of the affected party rather than automatically void. A court-adjudicated
+incompetent is the distinct void case in the capacity table.
+
+### C.5 Required Activity evidence — void and voidable fact-pattern lab
+
+For each row, the student must identify the defect, classify the result under the Syllabus, name the
+party who may avoid a voidable agreement, and state which fact still needs legal confirmation.
+
+| Scenario | Prescribed classification and analysis |
+|---|---|
+| A 17-year-old signs as buyer | **Voidable**, not automatically void; minority is the capacity issue. |
+| A seller previously adjudicated incompetent signs personally despite the existing court order | **Void** under the Syllabus capacity table; route authority and guardianship issues to counsel. |
+| A party who has not been adjudicated cannot understand the transaction because of a mental condition | Potentially **voidable**; capacity is fact- and evidence-dependent. |
+| A heavily intoxicated party cannot understand the agreement | Potentially **voidable** by that party; ordinary regret is not incapacity. |
+| Both parties reasonably use the wrong parcel number for the material parcel they intended to sell | Potentially **voidable for mutual material mistake**; a unilateral careless assumption is different. |
+| A seller intentionally lies that a failed septic permit was approved to induce the buyer to sign | Potentially **voidable by the deceived buyer for fraud**, with other remedies possible. |
+| A person signs only because another threatens immediate unlawful harm | Potentially **voidable by the injured party for duress**. |
+| A caregiver exploits a vulnerable owner's dependence to obtain a below-market sale | Potentially **voidable by the influenced party for undue influence**. |
+
+These examples teach issue recognition. The broker preserves evidence, makes required disclosures, and
+routes rescission, enforceability and capacity conclusions to counsel.
 
 ---
 
@@ -164,8 +190,13 @@ VII's consent material is the court-adjudicated incompetent.
 
 ### D.1 Uniform Electronic Transaction Act (UETA)
 
-- **Applicable to real estate transactions.**
-- **Electronic signatures are binding on contract parties.**
+- G.S. 66-315 says UETA does **not require** electronic records or signatures and applies only when
+  each party has agreed to transact electronically; agreement may be shown by context and conduct.
+- G.S. 66-317 says a record, signature, or contract may not be denied effect **solely** because it is
+  electronic, and a compliant electronic record/signature can satisfy another law's writing/signature
+  requirement. Other applicable law still decides the legal consequence.
+- G.S. 66-325 supplies the send/receipt mechanics summarized in B.2. “Electronic” is not a shortcut
+  around assent, capacity, lawful purpose, the agreed method, or another substantive rule.
 
 ### D.2 Termination or discharge of contracts
 
@@ -185,6 +216,25 @@ VII's consent material is the court-adjudicated incompetent.
 
 **That Instructor Note is a frequent misunderstanding and worth saying to clients plainly: a death
 between contract and closing does not cancel the contract.**
+
+### D.2.a Required Activity evidence — contract termination versus offer termination
+
+| Event | Contract result |
+|---|---|
+| Buyer pays, seller conveys, and both complete every promised obligation | Discharge by **full performance**. |
+| One party materially refuses a required performance | Potential discharge/remedies for **material breach**, subject to the agreement and counsel. |
+| Both sides sign a release ending their remaining obligations | Discharge by **subsequent mutual agreement/release**. |
+| All affected parties agree to substitute a new obligor and release the original one | **Novation**; unlike assignment, the agreed release matters. |
+| The parties sign a valid amendment changing a remaining obligation | The **subsequent modifying agreement** controls the changed obligation. |
+| A disputed payment is accepted under an agreed settlement of the claim | Potential **accord and satisfaction**. |
+| Both parties agree to cancel before completion | **Cancellation by agreement**, subject to its terms. |
+| The specific subject property is destroyed before performance and the governing law excuses it | Potential **impossibility of the thing to be done**; a promisor's financial inability is different. |
+| A controlling court order or law makes performance unavailable | Potential discharge by **operation of law**. |
+
+An **offer** is different because no contract yet exists. A rejection or counteroffer can terminate the
+offer; a revocation ordinarily must reach the offeree; an offer may lapse at its stated time; and the
+Syllabus's Mailbox Rule concerns a qualifying mailed **acceptance**, not termination of an offer or
+contract. Students must not use a contract remedy label to explain why an unaccepted offer ended.
 
 ### D.3 Assignment of contracts
 
@@ -213,13 +263,21 @@ contract, the assignor will remain secondarily liable** for performance of contr
 
 ### E.2 Contract creation, and the prohibition on drafting
 
-**Instructor Note, transcribed:**
+**Instructor Note, transcribed, followed by the current North Carolina boundary:**
 
 > *"**Brokers are prohibited from drafting legal documents for others; this is seen as illegal practice
 > of law in most states.** Consumers should be encouraged to seek legal assistance if standard forms do
 > not fit their needs."*
 
-- **The Statute of Frauds in most states requires contracts to be in writing to be enforceable.**
+- G.S. 84-2.1 defines preparation of deeds, mortgages and legal advice as practicing law. Its narrow
+  broker exception permits a Chapter 93A licensee, while acting as agent and following Commission
+  rules, to **select or complete a preprinted form**. It does not permit the broker to prepare a custom
+  contract or deed for another person. G.S. 93A-6(a)(11) makes unauthorized legal service a disciplinary
+  ground.
+- **North Carolina Statute of Frauds, G.S. 22-2:** a contract to sell or convey land or an interest in
+  it is void unless the contract or a memorandum is in writing and signed by the party to be charged or
+  an authorized signer. The same section reaches mineral leases of any duration and other land leases
+  exceeding three years from formation.
 - **Offer and acceptance** by traditional methods and by **electronic means** — e-mail, DocuSign.
 
 ### E.3 Submitting offers — five stated rules
@@ -273,7 +331,9 @@ Transcribed, because each is examinable and each is a daily practice rule:
 - **Optionor** and **optionee**.
 - **Two types of consideration should be definitely and separately stated:** the **option fee**,
   **generally non-refundable**, and the **purchase price**.
-- **Must be in writing and recorded generally per the Statute of Frauds.**
+- Because an option concerns an interest in land, G.S. 22-2 requires the signed writing or memorandum.
+  **Recording is not a Statute-of-Frauds formation requirement.** Whether and how to record an option
+  to protect it against later interests is a separate title/priority question for the attorney.
 - **Time being of the essence in regard to the date to exercise the option.**
 - Residential leases may include an option to purchase. **Instructor Note, transcribed:** *"No standard
   form exists for a residential lease with option to purchase, and **a broker must not suggest that
@@ -304,6 +364,11 @@ Transcribed, because each is examinable and each is a daily practice rule:
 **Learn the concept, because it is on the National examination. Never practise it, because North
 Carolina does not permit it.** North Carolina is an agency state: a broker working with a party is
 either their agent or is dealing with them as a customer. There is no neutral middle status.
+
+Current Commission guidance confirms the boundary: there is no default representation and no status
+in which a person performs brokerage services for neither party. Representation requires the
+consumer's express consent. A broker may deal with an unrepresented person as a customer, but that is
+not authority to provide the customer brokerage services as a neutral transaction broker.
 
 *(This is the direct opposite of Oklahoma, where the statute abolished agency and made the neutral
 broker the norm. A licensee moving between states cannot carry either assumption across.)*
@@ -381,6 +446,12 @@ Commission calls careless conduct here **"illegal undisclosed dual agency."**
 - **Commercial tenants may or may not be represented; any representation agreement should be in writing
   prior to an offer to rent.**
 
+Do not extend the in-firm rule into a false outside-firm default. Commission guidance states that a
+broker from another firm is **not automatically** the seller's subagent: seller subagency requires the
+seller's written authorization, disclosure to the buyer, and the broker's actual compliance with the
+agency rules. Without express authorization to represent the buyer or seller, the outside broker may
+not simply provide brokerage services while calling the role “neutral.”
+
 ### G.8 The agent's duties to the principal *(Level 3)*
 
 > **Required Activity — prescribed by the Commission:** *"Use real world examples to illustrate each
@@ -403,7 +474,20 @@ The Commission's six:
 6. **Skill, care and diligence.**
 
 **Duty 3 is the one that separates North Carolina from a passive-disclosure state.** It is an
-**affirmative duty to DISCOVER** — not merely to pass on what you happen to learn.
+**affirmative duty to make reasonable, objective inquiry into material transaction facts** — not merely
+to pass on what you happen to learn. It is not authority to collect or use protected-class information,
+invade privacy, or turn a customer's confidential remark into discriminatory advice.
+
+### G.8.a Required Activity evidence — six agency-duty scenarios
+
+| Duty | Real-world application |
+|---|---|
+| **Obedience** | The seller directs a lawful showing window; the agent follows it. A direction to conceal a material defect is unlawful and must be refused. |
+| **Loyalty** | Before acquiring the client's property or taking an adverse role, the agent discloses the conflict and obtains the legally required consent or declines. |
+| **Disclosure** | The agent verifies and promptly communicates a discovered encroachment or financing fact material to the principal's decision. |
+| **Confidentiality** | The buyer's maximum price is not volunteered to the seller; a superseding duty to disclose a material fact is analyzed separately. |
+| **Accounting/safeguarding** | Earnest money is handled only under the governing trust-account instructions, never deposited into the broker's operating account. |
+| **Skill, care and diligence** | The agent tracks deadlines, uses the correct authorized form, investigates visible warning signs, and refers legal or technical conclusions. |
 
 ### G.9 Termination of the agency relationship
 
@@ -429,6 +513,23 @@ The Commission's six:
 **Instructor Note, transcribed:** *"**Duty of confidentiality may be expected to continue as long as the
 agent has no duty to disclose to a new client.**"*
 
+### G.9.a Required Activity evidence — termination and surviving-duty lab
+
+| Event | Agency analysis |
+|---|---|
+| The listed property closes | The purpose is **accomplished**; record and pending-obligation duties still follow their own rules. |
+| The definite listing term ends without renewal | The agency **expires**. |
+| Client and firm sign a termination agreement | The agency ends by **mutual agreement**, subject to surviving terms. |
+| A party materially breaches the agency agreement | The relationship may end for **breach** and may leave a damages question. |
+| The property is destroyed or condemned | The subject may be unavailable; apply **destruction/condemnation** and the agreement. |
+| Principal or agent dies or loses capacity | The Syllabus identifies **death or incapacity** as a termination event; entity and pending-transaction facts still require counsel. |
+| A legal prohibition or court order ends the authority | Termination by **operation of law**. |
+
+Three after-termination tests follow. First, an **express promise or implied obligation** may survive.
+Second, a **pending transaction** may preserve performance and compensation questions after the agency
+term. Third, **self-dealing** does not become permissible because the relationship ended. Confidential
+information also remains protected unless a superseding duty requires disclosure.
+
 ### G.10 Liabilities and consequences of an agent's breach *(Level 3)*
 
 - **Disciplinary action by the regulatory agency against the agent.**
@@ -441,13 +542,13 @@ principal's behalf: their exposure can follow from your conduct.
 
 ---
 
-## Required Activities in this section — all four must be completed
+## Required Activities in this section — all four delivered in this draft
 
-1. **Real world examples of each way a contract may be declared void or voidable.** *(C)*
+1. **Real world examples of each way a contract may be declared void or voidable.** *(C.5)*
 2. **Real world examples of each way a contract is terminated**, highlighting that **termination of a
-   contract differs from termination of an offer.** *(D.2)*
-3. **Real world examples illustrating each of the six agent's duties.** *(G.8)*
-4. **Examples of agency terminations and of the exceptions to duties ending.** *(G.9)*
+   contract differs from termination of an offer.** *(D.2.a)*
+3. **Real world examples illustrating each of the six agent's duties.** *(G.8.a)*
+4. **Examples of agency terminations and of the exceptions to duties ending.** *(G.9.a)*
 
 ## Module NC-07 engagement check
 
@@ -466,9 +567,14 @@ void/voidable capacity table, the concurrent-offer rules, the automatic-subagenc
 affirmative duty to discover, and the statement that **facilitator/transactional brokerage is not
 allowed in North Carolina.**
 
-**Not read, and therefore stated nowhere in this module:** **NCGS Chapter 93A**; **21 NCAC Chapter 58**
-in its own text; **North Carolina's Statute of Frauds**; the **Uniform Electronic Transaction Act** as
-adopted in North Carolina; and **NC REALTORS® Offer to Purchase and Contract Standard Form 2-T** and
-every other standard form — **no provision, deadline or contingency structure of any form is
-reproduced, described or paraphrased.** Section XI, Contracts & Closing in NC, is where the Syllabus
-takes up Form 2-T in detail, and that module records the same gap as a submission gate.
+**Current primary text read on 2026-09-07:** G.S. **22-2** (land-sale and lease writing rule), Chapter
+66 Article 40 §§ **66-315, -317 and -325** (electronic consent, recognition and receipt), G.S.
+**84-2.1** and **93A-6(a)(11)** (practice-of-law boundary), and G.S. **48A-2** (minor under 18). Current
+Commission agency guidance was also read for express representation, no neutral transaction-broker
+role, and the in-firm/outside-firm subagency distinction.
+
+**Still not read in current controlling text for this module:** the complete **21 NCAC 58A .0104** PDF
+and the full current **North Carolina Real Estate Manual**. **NC REALTORS® Offer to Purchase and
+Contract Standard Form 2-T** and every other standard form remain unobtained; no provision, deadline or
+contingency structure of any form is reproduced, described or paraphrased. Section XI, Contracts &
+Closing in NC, records that separate submission gate.

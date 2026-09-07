@@ -52,6 +52,11 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Mechanics' liens | G.S. Chapter 44A §§ 44A-10 through -13 | lien-agent designation/notice, relation-back, perfection, filing and enforcement | [Chapter 44A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_44A.html) |
 | Recording, intestacy and adverse possession | G.S. 47-18; Chapters 29 and 1 | recording priority, succession framework, 7/20-year periods | [§47-18](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_47/GS_47-18.html), [Chapter 29](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_29.html), [Chapter 1](https://www.ncleg.gov/enactedlegislation/statutes/html/bychapter/chapter_1.html) |
 | Condominium purchaser protection | G.S. Chapter 47C Article 4 | public-offering cancellation and ordinary resale statement | [Article 4](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_47C/Article_4.html) |
+| Land-contract writing rule | G.S. 22-2 | signed writing/memorandum; covered land interests and leases | [§22-2](https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_22/gs_22-2.html) |
+| Electronic transactions | G.S. Chapter 66 Article 40 | party consent, recognition, sending and receipt | [Article 40](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_66/Article_40.html) |
+| Broker legal-practice boundary | G.S. 84-2.1; 93A-6(a)(11) | narrow preprinted-form exception; custom drafting/legal advice prohibited | [§84-2.1](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_84/GS_84-2.1.html), [§93A-6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-6.html) |
+| Minor age | G.S. 48A-2 | under 18 | [§48A-2](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_48A/GS_48A-2.html) |
+| Representation and seller subagency | NCREC current official Bulletin page | express consent; no neutral default; outside-firm subagency conditions | [NCREC Bulletin](https://bulletins.ncrec.gov/getting-agency-representation-correct-clarifying-the-practice-of-seller-subagency/?share=print) |
 
 ## Verification limitations and conflict resolution
 

@@ -407,6 +407,29 @@ entireties “cannot be waived” shorthand hid statutory termination routes; an
 the seven-day trigger instead of the public-offering-statement transaction. Modules NC-06 and NC-15 and
 their assessments now carry the current distinctions.
 
+## Module NC-07 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 22-2:** a land-sale or land-interest contract, or memorandum, must be written and signed by
+  the party to be charged; mineral leases and other leases exceeding three years have the section's
+  stated coverage. Recording is not part of this writing condition.
+- **Chapter 66 Article 40 §§66-315, -317 and -325:** electronic participation requires party agreement;
+  an electronic record, signature, or contract is not denied effect solely for electronic form; and
+  technical sending/receipt rules do not replace substantive contract law.
+- **G.S. 84-2.1 and 93A-6(a)(11):** a broker acting as agent under Commission rules may select or
+  complete a preprinted form. Preparing a custom contract/deed or giving legal advice for another is
+  outside that narrow exception and is a disciplinary boundary.
+- **G.S. 48A-2:** a North Carolina minor is a person under 18. The Syllabus supplies the separate
+  void/voidable teaching classification.
+- **Current official NCREC representation guidance:** representation has no neutral default and
+  requires express consent. The listing firm's affiliated brokers act within the firm's seller agency,
+  but a broker from another firm does not become a seller subagent automatically.
+
+This review found three structural defects: the engine omitted two of Section VII's four Required
+Activities; the lesson named all four as complete without delivering worked evidence; and the option
+section incorrectly made recording part of the Statute of Frauds. Module NC-07 now includes four
+scenario labs with stable evidence paths and separates electronic consent/receipt, signed writing,
+recording priority, and the broker's narrow preprinted-form authority.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -419,7 +442,7 @@ documents rather than a substitute for them.**
   other-jurisdiction, supervision, BIC, and compensation rules. The remaining modules still need
   topic-level reconciliation, and the official PDF bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
-  93A-6 and Article 3. Modules NC-01 and NC-05 were reconciled to §§ 93A-4 and 93A-6 respectively on
+  93A-6 and Article 3. Modules NC-01, NC-05 and NC-07 were reconciled to their applicable provisions on
   2026-09-07; the other topic-level curriculum reconciliations remain open.
 - **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,
   listing, lien, payment, excise-tax and annual levy provisions were reconciled on 2026-09-07. The
