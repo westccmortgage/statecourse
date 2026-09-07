@@ -31,7 +31,8 @@ FHA loan programs*, *USDA Rural Development*, and *Seller Financing*.
 
 1. Define the basic finance vocabulary the Commission lists, including the two meanings of a discount point.
 2. Distinguish a mortgage from a deed of trust, and state which North Carolina uses.
-3. State the foreclosure methods and the North Carolina statutory redemption period.
+3. State the foreclosure methods and distinguish North Carolina's 10-day **upset-bid** window from a
+   post-sale statutory right of redemption.
 4. **Handle a sale of mortgaged property — cash sale, assumption, subject-to, and short sale.** *(Level 2)*
 5. **Distinguish conventional, FHA, VA and USDA loans by their defining features.** *(Level 2)*
 6. Classify loans by repayment term and by purpose.
@@ -50,15 +51,17 @@ FHA loan programs*, *USDA Rural Development*, and *Seller Financing*.
 The Commission lists these by name: **principal and interest; amortization; debt service; PITI; equity;
 usury; discount points; yield; loan value; loan-to-value ratio.**
 
-On **discount points** the Syllabus states two figures itself, and both are examinable:
+On **discount points** the Syllabus states two figures itself, and both are examinable in the
+Commission's calculation model:
 
 > **1 point = 1% of the mortgage loan amount for the borrower**
 > **1 point = 1/8 % yield for the investor**
 
-Read them together. A point is a *charge* measured against the loan amount when you look at it from the
-borrower's side, and a *yield adjustment* when you look at it from the lender's or investor's side. The
-same payment does two different jobs depending on which end of the transaction you stand at. A student
-who memorises only the first figure cannot answer a yield question.
+Read them together, but do not turn the second line into a market promise. **One point is exactly one
+percent of the loan amount as a charge.** The one-eighth-percent yield relationship is the Syllabus's
+expressly assigned **rule of thumb** for examination calculations; actual pricing and investor yield
+depend on rate, term, prepayment and market conditions. Use the shortcut only when the question or
+Syllabus model calls for it.
 
 **PITI** is the four-part housing payment — principal, interest, taxes, insurance. It matters later, in
 qualifying: the ratios in Part G are computed on the *housing expense*, which is PITI, not on principal
@@ -107,7 +110,8 @@ Here the Commission writes a note that is unusually pointed, transcribed in full
 > to give a deed of trust to get a mortgage loan'). **Brokers are expected to know the difference and the
 > technical difference between a mortgage and a deed of trust.**"*
 
-The Commission's own comparison:
+The Commission's own classroom comparison follows. It is a useful taxonomy, not a substitute for the
+security instrument and the governing foreclosure statute:
 
 | | **Mortgage** | **Deed of trust** — *"Commonly used in NC"* |
 |---|---|---|
@@ -117,9 +121,10 @@ The Commission's own comparison:
 | Foreclosure | **Judicial** | **Power of sale (non-judicial)** |
 
 Two columns, four rows, and the practical consequence sits in the last row. Because North Carolina
-commonly uses the **deed of trust**, the ordinary North Carolina foreclosure is a **power of sale**
-foreclosure conducted by the **trustee** — a third party who holds title for the benefit of the lender —
-rather than a lawsuit. The extra party is what makes the shortcut possible.
+commonly uses the **deed of trust**, a power-of-sale foreclosure is common. The authority is not created
+merely by adding a third party: it comes from an express power of sale in the instrument and the
+procedures in **G.S. Chapter 45, Article 2A**. A trustee or mortgagee exercising that power must follow
+the statute; judicial foreclosure remains a distinct court process.
 
 The Commission adds: **"A mortgage or deed of trust is a form of contract."** It asks for the
 **essential elements** and the **obligations of the borrower and the lender.**
@@ -149,18 +154,31 @@ foreclose.**
 
 - **Proper notice of foreclosure**
 - **Foreclosure sale at public auction**
-- **A 10-day statutory redemption period in NC**
+- **A 10-day period after the reported sale or latest upset bid**
 - **Disbursement of sale proceeds**
-- **Unsatisfied creditors may appeal to court for a deficiency judgment**
+- **A creditor may pursue a deficiency only where the obligation and governing law permit it**
 
 And a North Carolina limit, transcribed:
 
 > *"In NC, **seller financing is prohibited from using deficiency judgments** to recover deficit."*
 
-The **10-day statutory redemption period** and the **seller-financing deficiency prohibition** are the
-two North Carolina-specific figures in this part, and both come from the Syllabus's own text. This
-project has **not** read the North Carolina foreclosure statutes themselves; see the instructor source
-note. Nothing beyond what the Syllabus states is asserted here.
+### Current-law reconciliation: upset bids, not statutory redemption
+
+The current statute corrects the first label. **G.S. 45-21.27** creates a 10-day window in which another
+person may file a qualifying **upset bid** after the report of sale or latest notice of upset bid; every
+new upset bid starts another 10-day window. Under **G.S. 45-21.29A**, if no timely upset bid is filed,
+the parties' rights become fixed without a separate confirmation order. The North Carolina Judicial
+Branch describes the same process as an upset-bid period. Those sources do **not** call it a 10-day
+statutory redemption period, so the stale Syllabus label must not be taught as current law.
+
+The deficiency shortcut also needs precision. **G.S. 45-21.38** bars a deficiency on a qualifying
+seller purchase-money obligation when the evidence of debt shows on its face that it is for the balance
+of the real-estate purchase price. **G.S. 45-21.38A** separately bars deficiencies for defined
+nontraditional and rate-spread home loans secured by an occupied principal dwelling, subject to its
+definitions and exclusions. Where **G.S. 45-21.36** applies after a creditor buys at a power-of-sale
+foreclosure, the borrower may prove fair value as a defense or offset. None of that means every
+unsatisfied creditor simply "appeals" for a deficiency. A live foreclosure or deficiency question goes
+to North Carolina counsel.
 
 ### A.3 Sale of mortgaged property *(Level 2 except as noted)*
 
@@ -229,7 +247,7 @@ keep it.
 
 ### B.2 FHA-insured
 
-- Operated by the **Federal Housing Authority (FHA)** under **HUD**.
+- Administered by the **Federal Housing Administration (FHA)**, part of **HUD**.
 - **"FHA does not build housing or lend money for housing purchases."**
 - **"FHA insures FHA-approved lenders against loss if borrowers default; similar to PMI."**
 
@@ -252,9 +270,14 @@ listed:
 mortgages, adjustable rate mortgages — are **Level 1**, and the Commission's note limits the demand
 exactly: **"It is only necessary to be aware that other FHA programs exist."**
 
+**Current-program boundary.** FHA insures loans made by approved lenders; it does not make the ordinary
+Section 203(b) purchase loan. Eligibility, mortgage-insurance treatment, property standards and the
+applicable loan limit depend on the current version of HUD Handbook 4000.1, the property and the lender's
+underwriting. The list above is the Commission's exam taxonomy, not a promise that a borrower qualifies.
+
 ### B.3 VA-guaranteed
 
-- Operated by the **Department of Veterans Administration.**
+- Administered by the **U.S. Department of Veterans Affairs (VA).**
 - **"VA does not build housing and only directly funds loans for housing for Native American veterans
   living on Federal trust land."**
 - **"VA guarantees (or backs) VA-approved lenders against loss if borrowers default."**
@@ -273,33 +296,46 @@ General characteristics, as listed:
 - **Funding fee**
 - **Certificate of reasonable value (CRV)**
 - **No prepayment penalty**
-- **"All VA loans are assumable for qualified owner-occupants"**
+- **Assumption is possible for an approved, creditworthy transferee, subject to the governing VA and
+  loan-servicer process**
 
-And the trap, transcribed:
+The Syllabus prints this warning:
 
 > *"**A VA release of liability does not release the original borrower from liability to the lender**;
 > lender must provide a **separate release** for original borrower to be fully absolved of all
 > responsibility for an assumed VA loan."*
 
-Two releases, two different parties releasing. The VA's release is the VA's; the lender's release is the
-lender's; only the second one gets the veteran off the debt. Note how this parallels the FHA line above —
-*"original borrower may remain secondarily liable."* Assumption does not automatically release anyone.
+**Current-program correction.** Do not teach that quoted sentence as a universal current rule. For a VA
+loan committed on or after **March 1, 1988**, the transferee must obtain the holder's or VA's prior
+approval and the veteran must obtain the required release from liability before closing. Current VA
+servicing guidance says approval, with exceptions, releases the veteran from future liability to VA; the
+governing regulation separately says the holder may also release the veteran from liability on the loan
+when the stated conditions are met. Older loans and special approvals follow different rules. A release
+from personal liability is also different from restoration of the veteran's entitlement. The servicer
+and VA must resolve every applicable release and the entitlement issue before a veteran relies on them.
 
 Notice also what is *the same* in FHA and VA and worth learning as a pair: **the lender sets the interest
-rate, not the agency**; **no prepayment penalty**; **owner occupancy required**; **assumable.** And what
-differs: FHA **insures**, VA **guarantees**; FHA has a **maximum loan amount**, VA has **none**; FHA
-charges **MIP**, VA charges a **funding fee**.
+rate, not the agency**; **no prepayment penalty**; and the programs generally require intended occupancy
+for the original purchase borrower. Both permit assumptions only under their current program rules. FHA
+**insures**; VA **guarantees**; FHA charges **MIP** and VA generally charges a **funding fee** unless an
+exemption applies. VA's statement that a veteran with full entitlement has no county loan limit does not
+mean unlimited borrowing: the lender still underwrites the borrower and the property, and the guaranty
+calculation still matters.
 
 ### B.4 USDA Rural Development *(Level 1 — this subtopic)*
 
-Operated through the **Rural Housing Service of the US Department of Agriculture**, providing **both
-direct and guaranteed single-family housing loans.** Characteristics listed: **longer than normal
-repayment period (e.g., 33–38 years); 100% financing, no down payment; subsidized interest rates;
-qualifying requirements.**
+Operated through the **Rural Housing Service of the U.S. Department of Agriculture**, providing **both
+direct and guaranteed single-family housing loans.** Keep the two programs separate. The **Section 502
+Direct** program may offer payment assistance, ordinarily uses a 33-year term and may use 38 years for a
+very-low-income applicant who cannot afford a 33-year term; no down payment is typically required. The
+**guaranteed** program is a lender-originated program with its own current handbook, term, income,
+property and underwriting rules. The Syllabus's combined list — **33–38 years, 100% financing/no down
+payment, subsidized interest rates and qualifying requirements** — must not be read as if every feature
+applies identically to both programs.
 
 The Commission directs: *"Contact the NC state office at https://www.rd.usda.gov/nc to obtain loan and
-area office information."* **This project has not retrieved that office's materials**, and states no
-eligibility figure, income limit or area designation from them.
+area office information."* Current income limits, eligible areas and lender/program terms must be checked
+on the USDA site for the specific applicant and property; none is inferred from this overview.
 
 ### B.5 Seller financing *(Level 1 — this subtopic)*
 
@@ -372,11 +408,16 @@ associations, credit unions, etc.); mortgage banking companies; mortgage brokers
 
 **General concepts and operation:** **purpose; loan pooling; mortgage-backed securities.**
 
-**The government-sponsored enterprises (GSE):**
+**The secondary-market participants named by the Commission:**
 
 - **Federal National Mortgage Association (FNMA — Fannie Mae)**
 - **Government National Mortgage Association (GNMA — Ginnie Mae)**
 - **Federal Home Loan Mortgage Corporation (FHLMC — Freddie Mac)**
+
+**Current classification correction.** Fannie Mae and Freddie Mac are the two housing government-
+sponsored enterprises regulated by FHFA. **Ginnie Mae is not a GSE**; it is a wholly owned U.S.
+government corporation within HUD that guarantees eligible mortgage-backed securities. All three
+support mortgage liquidity, but they do so under different legal structures.
 
 The primary market is where a loan is *made*. The secondary market is where a loan already made is
 *bought*. The link between them is conforming standards from B.1: a lender writes to those standards
@@ -418,12 +459,18 @@ And the rule that governs their use, transcribed:
 
 > **"A buyer must qualify on both the income and the debt ratios."**
 
-Both, not either. A buyer who passes the housing ratio and fails the debt ratio does not qualify. These
-percentages are **the Commission's figures**, transcribed from its Syllabus — this project has not read
-any lender guideline, agency handbook or underwriting manual, and states no figure from one.
+Both, not either, **inside a Syllabus calculation problem that gives or invokes these ratios**. A buyer
+who passes the housing ratio and fails the debt ratio fails that classroom model. The percentages are
+the Commission's exam figures, not universal live underwriting limits. A real lender applies the current
+program guide, automated-underwriting findings, residual-income or compensating-factor rules and its own
+lawful overlays. A broker may calculate an estimate but may not tell a consumer that these figures alone
+approve or deny the loan.
 
-**b. Property analysis.** **Title opinion and title insurance**; **"appraisal assigned randomly through
-an appraisal management company."** The Commission's note:
+**b. Property analysis.** **Title opinion and title insurance**; and an independent appraisal or other
+permitted valuation. The Syllabus says **"appraisal assigned randomly through an appraisal management
+company."** Treat that as one possible workflow, not a universal legal requirement. Current Regulation Z
+requires valuation independence and prohibits coercion, bribery and material misrepresentation; it does
+not require every creditor to use an AMC or random assignment. The Commission's note:
 
 > **"Loan value will be calculated on the contract sales price or the appraised value, whichever is lower."**
 
@@ -435,7 +482,9 @@ contingency in the standard contract.**
 mortgage insurance.**
 
 **d. Loan commitment and closing.** **Lender's letter of commitment**; **"loan principal disbursed at
-settlement; 'loan closing'."**
+settlement; 'loan closing'."** For a North Carolina purchase, do not equate signing with recordation or
+authorized disbursement. Chapter 45A governs receipt of required funds and documents, recordation and the
+conditions for disbursement; the closing attorney or settlement agent confirms the live status.
 
 ---
 
@@ -459,8 +508,10 @@ That paragraph explains why one form now does two statutes' work.
 (TILSRA)** and the **Disclosure Improvement Act**; its rules are known as **Regulation Z**; it is
 **administered by the CFPB.**
 
-**Applicability** — it applies to those who advertise or extend loans that **involve a finance charge**
-or **are payable in more than 4 installments.** The Commission also asks for **exemptions.**
+**Applicability.** Regulation Z applies to consumer credit offered or extended regularly when the credit
+is subject to a finance charge or is payable by written agreement in more than four installments, subject
+to the regulation's definitions, thresholds and exemptions. Advertising provisions can reach anyone who
+advertises covered credit, including a broker who repeats credit terms.
 
 **Disclosure of credit information to borrowers:** the **loan estimate (LE)**; **delivery of preliminary
 and final LE**; and *"significant change will probably require a new LE and a possible closing delay."*
@@ -491,16 +542,17 @@ And the practical instruction, transcribed:
 
 ### H.2 and H.3 Fair Credit Reporting Act and ECOA
 
-The Commission lists **Fair Credit Reporting Act (implemented under Regulation B)** and **Equal Credit
-Opportunity Act (ECOA implemented under Regulation V)**, and under ECOA asks for **purpose** and
-**protected classes.**
+The Syllabus reverses the two implementing-regulation labels. The current pairing is:
 
-**Instructor note on this pair.** The Syllabus's parenthetical regulation letters are transcribed above
-exactly as printed. **This project has not read Regulation B or Regulation V**, and this module therefore
-states nothing about either regulation's content beyond the Commission's own listing. **Instructors
-should verify the regulation pairing against the current CFPB text before teaching it**, and should note
-that the ECOA protected classes are not the same list as the Fair Housing Act protected classes taught in
-Module NC-09 — a student who assumes they are identical will answer wrongly.
+- **Equal Credit Opportunity Act (ECOA) → Regulation B, 12 C.F.R. part 1002.** Regulation B bars a
+  creditor from discriminating in any aspect of a credit transaction on the prohibited bases stated in
+  the rule, and § 1002.9 governs notice of action taken and specific reasons for adverse action.
+- **Fair Credit Reporting Act (FCRA) → Regulation V, 12 C.F.R. part 1022.** Regulation V implements
+  specified FCRA duties involving consumer-report information.
+
+The ECOA/Regulation B list is not identical to the Fair Housing Act list taught in Module NC-09. Keep
+housing discrimination and credit discrimination analytically separate, even when one transaction may
+implicate both.
 
 ---
 
@@ -517,13 +569,16 @@ Module NC-09 — a student who assumes they are identical will answer wrongly.
 **Major requirements and consumer protections:**
 
 - **Special information booklet.**
-- **Loan estimate (LE)** — *formerly known as Good Faith Estimate (GFE)*. *"Disclosure of settlement
-  charges must be provided by loan originators to borrowers **within 3 business days following loan
-  application**."* *"Lender can only collect a fee for a credit report from the applicant prior to
-  issuance of the LE."*
-- **Possible borrower credit for "Yield Spread Premiums" paid to mortgage brokers.**
-- **Buyer Closing Disclosure (BCD)** — *"must be used by settlement agents in all transactions subject to
-  TRID."*
+- **Loan Estimate (LE)** — for a covered transaction, the creditor generally must deliver or place it in
+  the mail no later than the third business day after application. Before the consumer receives the LE
+  and indicates an intent to proceed, the creditor or other person generally may not impose a fee other
+  than a bona fide and reasonable credit-report fee.
+- **Lender credits.** The Syllabus's older "yield spread premium" shorthand is not a permission to pay
+  for referrals. A lender credit shown on the LE or CD is part of the disclosed pricing; it does not
+  override RESPA's anti-kickback rule or loan-originator-compensation restrictions.
+- **Closing Disclosure (CD).** The **creditor is responsible** for ensuring the consumer receives the CD
+  on time and with the required content. A settlement agent may provide it, but using an agent does not
+  transfer the creditor's legal responsibility.
 - **The kickback prohibition**, transcribed:
 
 > *"RESPA **prohibits the payment of a kickback or referral fee to any settlement service provider for
@@ -535,9 +590,12 @@ Module NC-09 — a student who assumes they are identical will answer wrongly.
 > arrangements (CBA)** that provide real estate services (e.g., brokerage, mortgage loan, legal services,
 > home inspections, etc.) under a one-stop shopping approach."*
 
-That is a bright line and it is worth stating plainly: **broker to broker, yes; broker to or from any
-other settlement service provider, no.** An inspector who sends a gift card for referrals has put the
-broker in violation of a federal statute, and the broker's acceptance is the violation.
+That shorthand also needs a boundary. Regulation X contains an exception for cooperative brokerage and
+referral arrangements **between real estate agents and brokers**, but it does not legalize a payment for
+referring a consumer to a lender, attorney, appraiser, inspector or other settlement-service provider.
+Compensation must be for actual services performed or fit a stated exception; a label cannot convert a
+referral payment into lawful compensation. An affiliated-business arrangement has disclosure, no-
+required-use and return-on-ownership conditions under § 1024.15; it is not a blanket exemption.
 
 - **Regulates reserve (impound or escrow) accounts.**
 - **Loan servicing information.**
@@ -549,12 +607,18 @@ the borrower will incur."*
 
 **Tolerance limits for changes to settlement charges** — the Commission lists **three categories**:
 **no tolerance**, **10% tolerance**, **unlimited tolerance**. *"Lender must credit borrower for excess
-charges over the permissible limits."* And:
+charges over the permissible limits."* Use Regulation Z's actual category and changed-circumstance rules
+for a live file. A revised LE is not available merely because a cost increased.
 
-> *"If new information requires that a new LE be issued, there is a **mandatory 3-day waiting period
-> before closing can occur**."*
->
-> *"**Brokers are expected to be aware of timing of the three business day disclosure delivery.**"*
+The timing rules must be kept separate:
+
+- initial LE: deliver or mail no later than the third business day after application;
+- before consummation: the consumer must receive the initial LE no later than seven business days before
+  consummation;
+- revised LE: when permitted, provide it within three business days after receiving enough information
+  to establish the reason for revision, and ensure receipt no later than four business days before
+  consummation; a creditor may not provide a revised LE on or after the CD is provided; and
+- **a revised LE does not itself start a new three-business-day waiting period.**
 
 ### I.6 The Borrower Closing Disclosure
 
@@ -563,15 +627,17 @@ compare to information on the sales contract and the LE."* It **includes toleran
 chief disclosures required by TILA.** The Commission asks for **delivery requirements** and for
 **"changes that require a new BCD and a new 3 business day waiting period before settlement."**
 
+The creditor must ensure that the consumer receives the CD no later than three business days before
+consummation. Only three post-disclosure changes restart that waiting period: the disclosed APR becomes
+inaccurate beyond the applicable tolerance, the loan product changes, or a prepayment penalty is added.
+Other changes may require a corrected CD, but do not automatically restart the wait.
+
 **I.7 Penalties.**
 
-**Instructor note on timing.** Three separate three-day periods appear in this section and in Module
-NC-11, and they are not the same rule: the **LE must issue within 3 business days after application**;
-a **re-issued LE starts a 3-day wait before closing**; and the **BCD must be delivered at least 3 business
-days before consummation**, with certain changes restarting that wait. **This project has not read
-Regulation Z or Regulation X**, and every one of these statements is transcribed from the Syllabus. A
-broker facing a live deadline reads the current regulation, or asks the lender, and does not rely on a
-course summary.
+**Instructor note on timing.** Regulation Z § 1026.19 is now the authority for the timing summary above.
+Do not collapse the initial three-business-day LE deadline, the seven-business-day pre-consummation
+minimum, the revised-LE delivery limits and the three-business-day CD waiting period into one rule. A
+broker facing a live deadline confirms receipt dates and changes with the creditor and closing attorney.
 
 ---
 
@@ -618,17 +684,17 @@ if the seller is credited, someone is debited the same amount.
 **Items commonly prorated**, as listed:
 
 - **Real estate taxes**
-  - **When taxes have not been paid prior to settlement** — *closing prior to the tax due date in August*;
-    *closing after the tax due date in August*
+  - **When taxes have not been paid prior to settlement** — closing before or after the statutory due date
   - **When taxes have been paid prior to settlement**
 - **Homeowners' association dues**
 - **Rents (on rented properties being sold)**
 
-*Instructor note.* The Syllabus states an **August** tax due date for North Carolina and this module
-transcribes it. **This project has not read the North Carolina property tax statutes**, and states no
-listing date, lien date, discount date or delinquency date from them. The proration exercises delivered
-with this module use the **360-day/30-day method**, are worked from figures given inside each problem,
-and take **the seller as owning the date of settlement** — all three because the Commission says so above.
+*Current-law correction.* The Syllabus's August date is not current law. Under **G.S. 105-360**, North
+Carolina property taxes are due **September 1** of the tax year, may be paid at face amount before
+**January 6**, and accrue statutory interest on or after January 6. A settlement proration is still
+computed from the contract, the actual tax bill and the chosen day-count convention; the statutory due
+date does not decide which party owns the settlement date. The exercises here use the given figures and
+the Commission's 360-day/30-day examination convention.
 
 ---
 
@@ -644,22 +710,32 @@ and take **the seller as owning the date of settlement** — all three because t
    Syllabus. It is placed here because every calculation it names is mortgage finance, which is this
    section's subject.)*
 
-2. **Review a completed sample LE form to teach this topic.** **← OUTSTANDING.** The Commission states
-   examples are *"available on CFPB website."* **This project has not retrieved the CFPB sample forms.**
-   **Submission gate.**
+2. **Review a completed sample LE form to teach this topic. — DELIVERED.** The retained CFPB fixed-rate
+   purchase sample is at `regulatory/captures/2026-09-07/module-12-forms/cfpb-loan-estimate-fixed-rate-sample.pdf`.
+   Use the completed form pages after the CFPB cover page: page 1 for loan terms, projected payments and
+   costs at closing; page 2 for loan costs, other costs and calculating cash to close; page 3 for the
+   comparison table, other considerations and contacts. Have the student identify the note rate and APR,
+   rate-lock status, estimated closing costs, cash to close and whether taxes/insurance are escrowed.
 
-3. **Review a completed sample BCD form to teach this topic.** **← OUTSTANDING**, same source, same gate.
+3. **Review a completed sample CD form to teach this topic. — DELIVERED.** The retained CFPB fixed-rate
+   purchase sample is at `regulatory/captures/2026-09-07/module-12-forms/cfpb-closing-disclosure-fixed-rate-sample.pdf`.
+   Review completed form pages 1–5: final loan terms and projected payments; closing-cost detail and
+   paid-by columns; calculating cash to close and transaction summaries; additional loan/escrow
+   disclosures; and loan calculations, contact information and confirmation of receipt. Compare it to the
+   LE as an estimate-to-final exercise; do not infer a tolerance violation without the file's changed-
+   circumstance and provider-selection facts.
 
-4. **Show examples of both a HUD-1 and an ALTA settlement statement.** **← OUTSTANDING.** **Neither form
-   has been obtained by this project.** **Submission gate.**
+4. **Show examples of both a HUD-1 and an ALTA settlement statement. — DELIVERED.** The CFPB historical
+   comparison PDF at `regulatory/captures/2026-09-07/module-12-forms/cfpb-final-til-hud1-comparison.pdf`
+   contains the completed HUD-1 on pages 3–5. Use page 3 for the borrower/seller summaries, page 4 for
+   settlement-charge line groups, and page 5 for the comparison and loan terms. The blank ALTA Combined
+   Settlement Statement at `regulatory/captures/2026-09-07/module-12-forms/alta-settlement-statement-combined.pdf`
+   shows seller debit/credit and buyer debit/credit columns across its three pages. Explain that the HUD-1
+   is a historical/non-TRID teaching form and that an ALTA statement may supplement transaction
+   accounting; neither replaces the required CD for a covered current consumer mortgage.
 
-**Three of this section's four Required Activities are outstanding**, and all three are outstanding for
-the same reason: they require the instructor to put a completed real form in front of the student, and no
-such form has been obtained. **No document in this build reproduces, describes or paraphrases any line,
-box, section number or entry of an LE, a BCD, a HUD-1 or an ALTA settlement statement.** What this module
-teaches is the **concepts** the Commission lists — debit, credit, proration, double entry, the two
-proration methods, who owns the settlement date — which can be taught and examined without the forms, and
-which is what Part J's own note says the licence examination will actually ask.
+**All four Section XII Required Activities are now delivered.** The four retained PDFs, extracted text,
+SHA-256 hashes and page-by-page visual-review record are held together in the dated capture directory.
 
 ## Module NC-12 engagement check
 
@@ -680,18 +756,15 @@ Drawn from **Section XII** of the Commission's Prelicensing Course Syllabus, Mar
 May 2026, read on 2026-08-20. Every Instructor Note, Required Activity, percentage and structural
 statement above is **transcribed from the Syllabus.**
 
-**Not read in their own text, and therefore not the source of any statement in this module:** the
-**Truth-in-Lending Act** and **Regulation Z**; the **Real Estate Settlement Procedures Act** and
-**Regulation X**; the **TRID rule**; the **Fair Credit Reporting Act**; the **Equal Credit Opportunity
-Act** and its implementing regulation; the **Dodd-Frank Act**; **FHA, VA and USDA program handbooks and
-guidelines**; **Fannie Mae, Freddie Mac and Ginnie Mae seller/servicer guides**; the **CFPB sample LE and
-BCD**; the **HUD-1** and **ALTA settlement statement** forms; **NCGS Chapter 93A** and **21 NCAC 58**;
-**NCGS Chapter 45** (mortgages and deeds of trust) and the **North Carolina foreclosure statutes**; and
-the **North Carolina property tax statutes**.
+Current-law reconciliation additionally uses **G.S. Chapter 45, Article 2A**; **G.S. 45-21.27,
+45-21.29A, 45-21.36, 45-21.38 and 45-21.38A**; **G.S. 105-360**; **Regulation Z §§ 1026.19, .24 and .42**;
+**Regulation X §§ 1024.14 and .15**; **Regulations B and V**; current official HUD, VA, USDA, FHFA and
+Ginnie Mae program pages; and the official CFPB and ALTA form repositories. The Dodd-Frank Act and the
+complete agency seller/servicer and underwriting handbooks were not read in full and are not used to
+state a live eligibility result.
 
-**The 1% / 1-8% discount point figures, the 28/36, 31/43 and 43 percent qualifying ratios, the 10-day NC
-statutory redemption period, the 3-business-day disclosure timings, the August tax due date and the
-seller-owns-settlement-date rule are all transcribed from the Commission's Syllabus.** No loan limit,
-MIP or funding fee rate, index value, tolerance dollar figure, penalty amount or tax date is stated from
-any unread source. Where a live deadline or a current program figure is needed, the module routes to the
-lender, the settlement agent, or the current regulation — never to this text.
+The 1% point charge, the 1/8-percent yield **rule of thumb**, the 28/36, 31/43 and 43 percent classroom
+ratios and seller-owns-settlement-date convention remain identified as Syllabus/examination inputs. The
+stale labels for a statutory redemption period, an August tax due date, reversed Regulations B/V, an
+automatic revised-LE waiting period and Ginnie Mae as a GSE are expressly corrected rather than repeated
+as current law.

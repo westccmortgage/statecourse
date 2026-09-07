@@ -569,6 +569,37 @@ The EMD and possession Required Activities now have stable worked evidence. The 
 Guidelines and addenda themselves remain unavailable, so the Commission-prescribed paragraph review
 is still a filing gate and no proprietary form text is reconstructed.
 
+## Module NC-12 reconciliation — current primary text read 2026-09-07
+
+Section XII was checked against current state and federal primary sources and official program/form
+repositories:
+
+- **G.S. Chapter 45 Article 2A and Judicial Branch guidance:** the ten-day post-sale mechanism is an
+  upset-bid window, not a general statutory right of redemption. G.S. 45-21.36, -21.38 and -21.38A
+  supply distinct fair-value and anti-deficiency rules instead of an “appeal for deficiency” shortcut.
+- **G.S. 105-360:** taxes are due September 1, payable at face before January 6 and interest-bearing on
+  or after January 6. The Syllabus's August date is not taught as current law.
+- **Regulation Z §1026.19:** initial LE, revised LE and CD clocks are separate; a revised LE does not by
+  itself create a new three-business-day closing wait. Only the three listed CD changes restart it, and
+  the creditor remains responsible even if a settlement agent provides the CD.
+- **Regulation Z §§1026.24 and .42:** current advertising and valuation-independence rules replace the
+  broad advertising and universal random-AMC shortcuts.
+- **Regulation X §§1024.14-.15:** the anti-kickback rule, actual-services/cooperative-brokerage
+  exceptions and affiliated-business conditions replace the categorical “broker to broker, yes” rule.
+- **Regulations B and V:** Regulation B implements ECOA and Regulation V implements specified FCRA
+  duties. The Syllabus reverses these labels.
+- **Current HUD, VA, USDA, FHFA and Ginnie Mae pages:** the course corrects agency names, separates VA
+  assumption liability from entitlement, separates USDA direct from guaranteed features, labels the
+  syllabus ratios as classroom inputs, and identifies Ginnie Mae as a government corporation rather
+  than a GSE.
+- **CFPB and ALTA form repositories:** completed LE, CD and historical HUD-1 samples plus the ALTA
+  combined statement are retained and all eighteen PDF pages are visually reviewed against digital text.
+  These close the three formerly outstanding Section XII document activities.
+
+Complete federal statutes, all agency underwriting/seller-servicer guides and transaction-specific
+lender rules were not read in full. Module NC-12 does not use its overview to promise loan eligibility,
+approve a borrower, or decide a live tolerance/referral/assumption issue.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -577,7 +608,7 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-11 were reconciled on 2026-09-07 to their applicable
+  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-12 were reconciled on 2026-09-07 to their applicable
   applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery,
   records, offer-form, trust-money and closing rules. The remaining modules still need topic-level reconciliation, and the official PDF
   bytes still need a filing-date integrity lock.
@@ -588,8 +619,8 @@ documents rather than a substitute for them.**
   reconciliations remain open.
 - **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,
   listing, lien, payment, excise-tax and annual levy provisions were reconciled on 2026-09-07. The
-  remaining tax statutes identified by other syllabus sections and all local rates still require
-  topic-level review.
+  Module NC-12 proration section now also uses the current G.S. 105-360 due/payment dates. Remaining tax
+  provisions identified by other sections and all local rates still require topic-level review.
 - **North Carolina Real Estate License Law and Commission Rules (LLCR)**, including the Comments.
 - **Real Estate Licensing in North Carolina (RELINC):** the April 2026 official PDF was captured,
   text-extracted, and used to reconcile Module NC-01 on 2026-09-07. Its live identity and fees must

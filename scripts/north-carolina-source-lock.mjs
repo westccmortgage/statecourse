@@ -30,10 +30,17 @@ const allowedHosts = new Set([
   "training.fema.gov",
   "www.consumerfinance.gov",
   "www.fdic.gov",
+  "www.nccourts.gov",
   "www.deq.nc.gov",
   "epi.dph.ncdhhs.gov",
   "www.ncbar.gov",
-  "www.ncrealtors.org"
+  "www.ncrealtors.org",
+  "www.benefits.va.gov",
+  "benefits.va.gov",
+  "www.rd.usda.gov",
+  "www.fhfa.gov",
+  "www.ginniemae.gov",
+  "www.alta.org"
 ]);
 const requiredDocs = [
   "north-carolina/regulatory/official-sources.md",
@@ -50,6 +57,7 @@ const requiredDocs = [
   "north-carolina/submission/08-recordkeeping-reporting-sop.md",
   "north-carolina/submission/09-timing-evidence-report.md",
   "north-carolina/submission/10-product-roadmap.md",
+  "north-carolina/submission/11-module-12-correction-audit.md",
   "north-carolina/submission/course-completion-certificate-specimen.md",
   "north-carolina/HANDOFF.md"
 ];

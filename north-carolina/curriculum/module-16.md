@@ -162,10 +162,12 @@ payment reduces principal, and the new balance follows.
 
 **D.6 says "using given income and debt ratios."** The ratios are supplied in the problem. Module NC-12
 transcribes the Commission's own figures — **28/36 conventional, 31/43 FHA, 43 VA** — and the rule that
-**a buyer must qualify on both ratios**, which is where most errors occur.
+**a buyer must qualify on both ratios** inside that Syllabus model, which is where most calculation errors
+occur. Those figures do not announce live loan eligibility; a real creditor applies current program and
+underwriting rules.
 
 **D.8's "rule of thumb"** is the relationship Module NC-12 transcribes from the Syllabus: **1 point = 1/8
-percent yield for the investor.**
+percent yield for the investor.** It is an examination shortcut, not a guaranteed market-price result.
 
 ## E. Settlement and closing costs
 

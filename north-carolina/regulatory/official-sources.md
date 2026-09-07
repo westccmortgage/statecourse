@@ -87,6 +87,18 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | North Carolina broker discrimination rules | 21 NCAC 58A .0120(d), .1601 | protected-basis brokerage conduct and State Fair Housing Act violation | [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
 | Affiliated and out-of-state compensation | G.S. 93A-9; 21 NCAC 58A .0120(b), .1808; NCREC guidance | BIC payer, no-entry referral condition, separate limited-commercial route | [§93A-9](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-9.html), [2024 guidance](https://bulletins.ncrec.gov/can-i-get-paid/), [foreign-broker guidance](https://bulletins.ncrec.gov/compensation-issues-how-to-handle-them/) |
 | License Law and Rules Comments | NCREC LLCR | syllabus-directed trust-account comments, current bytes unavailable | [Official LLCR route](https://www.ncrec.gov/pdfs/licensing/licenselawcomments.pdf) |
+| Power-of-sale foreclosure and deficiencies | G.S. Chapter 45 Article 2A; Judicial Branch guidance | upset bids, finality, fair-value defense and anti-deficiency rules | [Article 2A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_45/Article_2A.html), [Judicial Branch](https://www.nccourts.gov/help-topics/housing/foreclosures) |
+| Loan Estimate and Closing Disclosure timing | 12 C.F.R. §1026.19 | initial/revised LE timing, CD receipt, creditor responsibility and restart triggers | [CFPB Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/19/) |
+| Credit advertising and valuation independence | 12 C.F.R. §§1026.24, .42 | trigger terms and independent-valuation boundary | [CFPB Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/) |
+| Settlement-service referrals and affiliated businesses | 12 C.F.R. §§1024.14-.15 | kickbacks, unearned splits, actual services, brokerage exception and ABA conditions | [CFPB Regulation X](https://www.consumerfinance.gov/rules-policy/regulations/1024/) |
+| ECOA and FCRA implementing regulations | Regulations B and V | ECOA credit protections/action notices; specified FCRA duties | [Regulation B](https://www.consumerfinance.gov/rules-policy/regulations/1002/), [Regulation V](https://www.consumerfinance.gov/rules-policy/regulations/1022/) |
+| FHA current-policy boundary | HUD Handbook 4000.1 | current FHA single-family policy source | [HUD handbook page](https://www.hud.gov/hud-partners/single-family-handbook-4000-1) |
+| VA assumptions, liability and entitlement | VA Home Loan program | pre/post-March 1, 1988 assumption boundary; liability release separate from entitlement | [VA assumptions](https://www.benefits.va.gov/homeloans/resources_payments.asp), [entitlement and limits](https://benefits.va.gov/HOMELOANS/purchaseco_loan_limits.asp) |
+| USDA Section 502 Direct | USDA Rural Development | payment assistance, 33/38-year distinction and typical no-down-payment feature | [USDA program page](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans) |
+| Fannie/Freddie and Ginnie classification | FHFA; Ginnie Mae | Enterprises/GSEs versus wholly owned government corporation/MBS guarantor | [FHFA](https://www.fhfa.gov/about/fannie-mae-freddie-mac), [Ginnie Mae](https://www.ginniemae.gov/about_us/who_we_are/Pages/our_history.aspx) |
+| Completed LE/CD samples | CFPB official forms repository | fixed-rate completed samples used in Section XII | [CFPB forms and samples](https://www.consumerfinance.gov/compliance/compliance-resources/mortgage-resources/tila-respa-integrated-disclosures/forms-samples/) |
+| Completed historical HUD-1 | CFPB official comparison | completed HUD-1 teaching artifact, not a current covered-TRID substitute | [CFPB comparison](https://www.consumerfinance.gov/know-before-you-owe/compare/) |
+| ALTA combined settlement statement | ALTA publisher | supplemental seller/buyer debit-credit model | [ALTA settlement statements](https://www.alta.org/policies-and-standards/policy-forms/settlement-statements) |
 
 ## Verification limitations and conflict resolution
 
@@ -160,6 +172,15 @@ and Closing, separated prompt offer presentation from the three-day executed-doc
 corrected creditor/settlement-agent roles and the parcel-edge flood shortcut, and delivered worked
 earnest-money and possession activities. Current Form 2-T, the Guidelines and addenda remain an
 unmet paragraph-review gate because the member-restricted documents were not obtained.
+
+Module NC-12 was reconciled on September 7 to current Chapter 45 foreclosure statutes, G.S. 105-360,
+Regulations Z, X, B and V, and current official FHA, VA, USDA, FHFA and Ginnie Mae materials. That pass
+corrected the stale statutory-redemption and August-tax-date labels, reversed Regulation B/V pairing,
+automatic revised-LE waiting-period rule, universal AMC/random-assignment statement, categorical
+broker-to-broker referral shorthand, VA release-of-liability trap, combined USDA-program features and
+Ginnie-as-GSE classification. CFPB completed LE/CD/HUD-1 samples and the ALTA combined statement are
+retained with hashes, extracted text and visual review of all eighteen PDF pages; all four Section XII
+Required Activities are now delivered.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

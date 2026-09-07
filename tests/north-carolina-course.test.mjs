@@ -638,6 +638,30 @@ test("Module NC-11 reconciles current contract, closing and transaction-practice
   assert.match(bank.engagement[2].choices[0], /source-specific definitions/i);
 });
 
+test("Module NC-12 corrects financing law and delivers the official form reviews", () => {
+  const twelve = readModule("module-12");
+  for (const required of [
+    /upset-bid window/i,
+    /Federal Housing Administration/i,
+    /U\.S\. Department of Veterans Affairs/i,
+    /Ginnie Mae is not a GSE/i,
+    /ECOA.*Regulation B/is,
+    /FCRA.*Regulation V/is,
+    /revised LE does not itself start a new three-business-day waiting period/i,
+    /taxes are due September 1/i,
+    /All four Section XII Required Activities are now delivered/i
+  ]) assert.match(twelve, required);
+  assert.doesNotMatch(twelve, /re-issued LE starts a 3-day wait before closing/i);
+  assert.doesNotMatch(twelve, /Federal Housing Authority \(FHA\)/i);
+  assert.doesNotMatch(twelve, /Department of Veterans Administration/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "XII");
+  assert.equal(activities.length, 4);
+  assert.deepEqual(activities.map((activity) => activity.status), ["delivered", "delivered", "delivered", "delivered"]);
+  const bank = BANK["module-12"];
+  assert.match(bank.engagement[3].choices[0], /revised LE does not itself restart/i);
+  assert.match(bank.remediation[3].choices[0], /holder\/VA approval/i);
+});
+
 test("the material fact rules that run against intuition are stated in Modules NC-10 and NC-15", () => {
   const ten = readModule("module-10");
   const fifteen = readModule("module-15");
@@ -794,12 +818,32 @@ test("every Required Activity names a real module and every outstanding one says
   }
 });
 
-test("the Required Activities that depend on unobtained forms are recorded as outstanding, not delivered", () => {
+test("the Required Activities that still depend on unobtained forms are recorded as outstanding, not delivered", () => {
   const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
-  for (const needle of ["Form 2-T", "RPOADS", "Square Footage Guidelines", "Uniform Residential Appraisal Report", "sample Loan Estimate", "HUD-1"]) {
+  for (const needle of ["Form 2-T", "RPOADS", "Square Footage Guidelines", "Uniform Residential Appraisal Report"]) {
     const activity = byText(needle);
     assert.ok(activity, `no Required Activity mentions ${needle}`);
     assert.equal(activity.status, "outstanding", `${needle} is recorded as delivered but the artefact was never obtained`);
+  }
+});
+
+test("Module NC-12 form activities are delivered only with retained all-page review evidence", () => {
+  const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
+  for (const needle of ["sample Loan Estimate", "sample Borrower Closing Disclosure", "HUD-1"]) {
+    const activity = byText(needle);
+    assert.ok(activity, `no Required Activity mentions ${needle}`);
+    assert.equal(activity.status, "delivered", needle);
+    assert.match(activity.evidencePath, /module-12\.md/);
+  }
+  const reviewUrl = new URL("../north-carolina/regulatory/captures/2026-09-07/module-12-forms/page-reviews.json", import.meta.url);
+  assert.ok(existsSync(reviewUrl));
+  const review = JSON.parse(readFileSync(reviewUrl, "utf8"));
+  assert.equal(review.artifacts.length, 4);
+  assert.equal(review.artifacts.reduce((sum, artifact) => sum + artifact.pages.length, 0), 18);
+  for (const artifact of review.artifacts) {
+    assert.equal(artifact.pageCount, artifact.pages.length, artifact.id);
+    assert.match(artifact.pdfSha256, /^[a-f0-9]{64}$/);
+    for (const page of artifact.pages) assert.match(page.sha256, /^[a-f0-9]{64}$/);
   }
 });
 

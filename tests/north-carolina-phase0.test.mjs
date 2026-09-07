@@ -9,9 +9,9 @@ const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
   assert.equal(NC_CONTROL_DATE, "2026-09-07");
-  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v10");
-  assert.equal(NC_SOURCES.length, 114);
-  assert.equal(NC_CLAIMS.length, 67);
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v11");
+  assert.equal(NC_SOURCES.length, 129);
+  assert.equal(NC_CLAIMS.length, 76);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
 });
 
@@ -20,6 +20,15 @@ test("Module NC-11 current-law claims resolve to the added primary authorities",
     assert.ok(northCarolinaSourceById(id), id);
   }
   for (const id of ["NC-C60", "NC-C61", "NC-C62", "NC-C63", "NC-C64", "NC-C65", "NC-C66", "NC-C67"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
+});
+
+test("Module NC-12 current-law and form claims resolve to the added authorities", () => {
+  for (const id of ["NC-STAT-45-ARTICLE2A", "NC-COURTS-FORECLOSURE", "FED-CFPB-REGZ-ADVERTISING-VALUATION", "FED-CFPB-REGX-REFERRALS", "FED-CFPB-REGB", "FED-CFPB-REGV", "FED-HUD-FHA-HANDBOOK", "FED-VA-ASSUMPTION", "FED-VA-ENTITLEMENT-LIMITS", "FED-USDA-SFH-DIRECT", "FED-FHFA-ENTERPRISES", "FED-GINNIE-ROLE", "FED-CFPB-TRID-FORMS", "FED-CFPB-HUD1-COMPARE", "ALTA-SETTLEMENT-STATEMENTS"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C68", "NC-C69", "NC-C70", "NC-C71", "NC-C72", "NC-C73", "NC-C74", "NC-C75", "NC-C76"]) {
     assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
   }
 });
@@ -103,14 +112,14 @@ test("distance plan requires orientation, persistent navigation, sequential asse
 
 test("timing report fails the present course instead of trusting planned-hour labels", () => {
   const report = read("north-carolina/submission/09-timing-evidence-report.md");
-  assert.match(report, /64,191/);
+  assert.match(report, /65,198/);
   assert.match(report, /810,000/);
   assert.match(report, /must not be submitted or advertised as 75 hours/i);
   const timing = getNorthCarolinaCourse().timingEvidence;
   assert.equal(timing.validated, false);
   assert.equal(timing.commissionReadingRateWordsPerMinute, 225);
-  assert.equal(timing.curriculumBaselineWords, 64191);
-  assert.equal(timing.curriculumBaselineMinutes, 285.29);
+  assert.equal(timing.curriculumBaselineWords, 65198);
+  assert.equal(timing.curriculumBaselineMinutes, 289.77);
 });
 
 test("certificate gate now requires every provider-level approval and operational proof", () => {

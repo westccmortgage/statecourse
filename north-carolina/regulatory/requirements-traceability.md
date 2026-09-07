@@ -65,6 +65,15 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | owner disclosure and independent broker duty | G.S. Chapter 47E; 58A .0114; 93A-6 | NC-C65 | Module NC-11 inspection/disclosure boundary | statute reconciled; current Commission form still missing |
 | current Form 2-T/addenda identity and revision | NC REALTORS® 2026 index/change summary | NC-C66 | Module NC-11 release gate | member-restricted form text not obtained; paragraph review outstanding |
 | septic-permit bedroom advertising | NCREC guidance; G.S. 93A-6 | NC-C67 | Module NC-11 due-diligence section | permit limit and missing-record disclosure reconciled |
+| foreclosure upset-bid and deficiency boundaries | G.S. 45-21.27, -21.29A, -21.36, -21.38, -21.38A | NC-C68 | Module NC-12 foreclosure section | redemption/appeal shortcuts replaced with current law |
+| property-tax due/payment dates | G.S. 105-360(a) | NC-C69 | Module NC-12 settlement; Module NC-16 prorations | August date corrected to September 1/January 6 sequence |
+| ECOA/FCRA implementing regulations | 12 C.F.R. parts 1002 and 1022 | NC-C70 | Module NC-12 federal law | Regulation B/V reversal corrected |
+| LE/CD timing and responsibility | 12 C.F.R. §1026.19(e)-(f) | NC-C71 | Module NC-12 TRID and form labs | initial/revised/CD clocks and restart triggers separated |
+| settlement-service referral compensation | 12 C.F.R. §§1024.14-.15 | NC-C72 | Module NC-12 RESPA | kickback rule, actual services, brokerage exception and ABA conditions separated |
+| valuation independence | 12 C.F.R. §1026.42 | NC-C73 | Module NC-12 underwriting | AMC/random assignment no longer stated as universal law |
+| current federal loan-program boundaries | HUD, VA and USDA official current pages | NC-C74 | Module NC-12 program comparison | agency names, VA assumption and USDA direct/guaranteed distinctions reconciled |
+| secondary-market entity classification | FHFA and Ginnie Mae official pages | NC-C75 | Module NC-12 secondary market | Fannie/Freddie GSEs distinguished from Ginnie government corporation |
+| LE/CD/HUD-1/ALTA Required Activities | CFPB and ALTA official repositories; local page reviews | NC-C76 | Module NC-12 Required Activities | four authentic artifacts retained; eighteen pages reviewed |
 
 ## Release rule
 
