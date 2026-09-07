@@ -151,9 +151,10 @@ const REQUIRED_ACTIVITIES = Object.freeze([
   { section: "VIII", moduleId: "module-08", activity: "Assign math practice problems, and assign practice problems.", status: "delivered", evidencePath: "north-carolina/curriculum/module-08.md#f3a-required-activity-evidence--calculation-set" },
   { section: "VIII", moduleId: "module-08", activity: "Discuss factors that may and may not be considered due to Fair Housing.", status: "delivered", evidencePath: "north-carolina/curriculum/module-08.md#h1a-required-activity-evidence--tenant-screening-decision-matrix" },
   { section: "VIII", moduleId: "module-08", activity: "Clarify the characteristics that make the three listing types different.", status: "delivered", evidencePath: "north-carolina/curriculum/module-08.md#f4a-required-activity-evidence--distinguish-the-three-listing-types" },
-  { section: "IX", moduleId: "module-09", activity: "Discuss factors that may and may not be considered due to Fair Housing, and various ways brokerage fees are determined.", status: "delivered" },
-  { section: "IX", moduleId: "module-09", activity: "Provide examples of each type of discrimination.", status: "delivered" },
-  { section: "IX", moduleId: "module-09", activity: "Compare and contrast duties owed to clients vs. third parties.", status: "delivered" },
+  { section: "IX", moduleId: "module-09", activity: "Discuss factors that may and may not be considered due to Fair Housing.", status: "delivered", evidencePath: "north-carolina/curriculum/module-09.md#b4a-required-activity-evidence--neutral-tenant-screening-matrix" },
+  { section: "IX", moduleId: "module-09", activity: "Discuss various ways brokerage fees are determined.", status: "delivered", evidencePath: "north-carolina/curriculum/module-09.md#b6a-required-activity-evidence--compensation-method-lab" },
+  { section: "IX", moduleId: "module-09", activity: "Provide examples of each type of discrimination.", status: "delivered", evidencePath: "north-carolina/curriculum/module-09.md#c2a-required-activity-evidence--discrimination-examples" },
+  { section: "IX", moduleId: "module-09", activity: "Compare and contrast duties owed to clients vs. third parties.", status: "delivered", evidencePath: "north-carolina/curriculum/module-09.md#d1a-required-activity-evidence--client-versus-third-party-duties" },
   { section: "X", moduleId: "module-10", activity: "Compare and contrast duties owed to clients vs. third parties.", status: "delivered" },
   { section: "XI", moduleId: "module-11", activity: "Provide Form 2-T, the Guidelines for Completing the Offer to Purchase and Contract Form, and the commonly used standard addenda, and conduct a detailed paragraph-by-paragraph review.", status: "outstanding", blockedBy: "Form 2-T, the Guidelines and the standard addenda have not been obtained by this project. No document in this build reproduces, describes or paraphrases any provision of them." },
   { section: "XI", moduleId: "module-11", activity: "Use various scenarios to explore initial and additional earnest money deposit handling and escrow delivery timing.", status: "outstanding", blockedBy: "Commission Rule 58A .0116 has not been obtained by this project, so no escrow deadline is stated." },
@@ -194,15 +195,15 @@ const OPEN_SOURCE_DEPENDENCIES = Object.freeze([
   "TILA and Regulation Z; RESPA and Regulation X; the TRID rule; ECOA; FCRA; the Dodd-Frank Act",
   "FHA, VA and USDA program handbooks; Fannie Mae, Freddie Mac and Ginnie Mae seller/servicer guides",
   "USPAP, FIRREA, and any North Carolina Appraisal Board statute or rule",
-  "The federal Fair Housing Act; Module NC-05's lead-disclosure regulation is now reconciled to current primary text"
+  "North Carolina Fair Housing Act, TCPA/FCC implementation, and the remaining Module NC-09 common-law and policy-form sources; federal Fair Housing, HUD, ADA, FTC and DOJ authorities are reconciled"
 ]);
 
 const TIMING_EVIDENCE = Object.freeze({
   instructionalMinutesPerHour: 50,
   requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 50,
   commissionReadingRateWordsPerMinute: 225,
-  curriculumBaselineWords: 59421,
-  curriculumBaselineMinutes: Number((59421 / 225).toFixed(2)),
+  curriculumBaselineWords: 61415,
+  curriculumBaselineMinutes: Number((61415 / 225).toFixed(2)),
   measuredOn: "2026-09-07",
   mediaDurationLedgerMinutes: 0,
   regulatorFormatOutlineComplete: false,

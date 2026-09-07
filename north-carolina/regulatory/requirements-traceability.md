@@ -40,6 +40,15 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | executed-document delivery | 58A .0106 | NC-C40 | Module NC-08; assessment bank | three-day rule reconciled |
 | transaction records and disclosure retention | 58A .0108 | NC-C40 | Module NC-08; records questions | later-event three-year rule reconciled |
 | compensation consent/disclosure; no fixed rate | 58A .0109 | NC-C41 | Module NC-08 calculation set | current rule reconciled |
+| federal protected classes, practices and narrow exemptions | 42 U.S.C. §§3603-3607 | NC-C43 | Module NC-09 examples and screening matrix | current statute reconciled |
+| covered-multifamily accessibility; accommodation/modification | 42 U.S.C. §3604(f) | NC-C44 | Module NC-09 design scenarios | elevator/ground-floor distinction reconciled |
+| fair-housing complaint/action periods and civil/criminal split | 42 U.S.C. §§3610, 3613, 3617, 3631 | NC-C45 | Module NC-09 enforcement section | current statute reconciled |
+| race-equal property rights | 42 U.S.C. §1982 | NC-C46 | Module NC-09 | current statute reconciled |
+| equal neighborhood information; withdrawn HUD guidance | HUD 2026 letter; 2025 withdrawal notice | NC-C47 | Module NC-09 neighborhood/screening labs | current HUD posture reconciled; PDF bytes uncaptured |
+| customer-facing office accessibility | ADA Title III | NC-C48 | Module NC-09 office scenarios | current federal boundary reconciled |
+| National and entity-specific Do Not Call controls | FTC TSR | NC-C49 | Module NC-09 decision drill | current FTC periods/process reconciled |
+| independent fee setting and competitor restraints | Sherman Act; DOJ guidance | NC-C50 | Module NC-09 compensation/antitrust scenarios | current federal boundary reconciled |
+| brokerage advertising identity and consent | 58A .0105 | NC-C51 | Module NC-09 social-ad item | current rule reconciled; PDF bytes uncaptured |
 
 ## Release rule
 

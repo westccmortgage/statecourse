@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v7`
+**Manifest:** `NC-PHASE0-2026-09-07-v8`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -60,6 +60,13 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Agency agreements and disclosure | 21 NCAC 58A .0104 | (a)-(o), especially (a), (c)-(f), (i)-(n) | [OAH .0104](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0104.pdf) |
 | Delivery and transaction records | 21 NCAC 58A .0106, .0108 | .0106(a)-(c); .0108(a)-(d) | [OAH .0106](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0106.pdf), [OAH .0108](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0108.pdf) |
 | WWREA implementation | NCREC official guidance | review, firm-offered roles, receipt signature, refusal handling | [NCREC WWREA Update](https://bulletins.ncrec.gov/working-with-real-estate-agents-disclosure-update/) |
+| Federal fair housing | 42 U.S.C. Chapter 45 | §§3603-3607, 3610, 3613, 3617, 3631 | [Official U.S. Code](https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title42%2Fchapter45), [HUD current overview](https://www.hud.gov/helping-americans/fair-housing-act-overview) |
+| Race-equal property rights | 42 U.S.C. §1982 | entire section | [Official U.S. Code](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title42-section1982) |
+| Current HUD neighborhood and withdrawn-guidance posture | HUD | April 24, 2026 letter pp. 1-7; September 17, 2025 notice pp. 1-4 | [Neighborhood information letter](https://www.hud.gov/sites/default/files/hudclips/documents/AS-Trainor%27s-DCL-on-Neighborhood-Crime-Data-and-School-Quality.pdf), [withdrawal notice](https://www.hud.gov/sites/dfiles/Main/documents/Notice-of-Withdrawal-of-Guidance-Documents.pdf) |
+| Public-facing real-estate-office accessibility | ADA Title III | 42 U.S.C. §§12181-12182 and DOJ office examples | [DOJ ADA law and guidance](https://www.ada.gov/law-and-regs/ada/) |
+| Do Not Call and telemarketing | FTC Telemarketing Sales Rule | Registry, entity opt-out, 18-month/3-month relationships, 31-day process, calling window | [FTC compliance guide](https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule) |
+| Competition and brokerage fee independence | Sherman Act; DOJ guidance | price fixing, bid rigging, customer/market allocation | [DOJ Antitrust Laws](https://www.justice.gov/atr/antitrust-laws-and-you) |
+| North Carolina brokerage advertising | 21 NCAC 58A .0105 | BIC consent, firm identity, owner consent, no blind ads | [OAH .0105](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0105.pdf) |
 
 ## Verification limitations and conflict resolution
 
@@ -74,7 +81,7 @@ to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains
 On September 7, Modules NC-02 and NC-05 added current official standalone-rule endpoints for 58A
 .0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
 publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
-contains 29 PDF source entries across 27 unique URLs. Two retain byte-valid September 6 snapshots, but
+contains 32 PDF source entries across 30 unique URLs. Two retain byte-valid September 6 snapshots, but
 their page reviews are stale against the September 7 control date; the current reviewed count is zero.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
@@ -104,6 +111,15 @@ separated in-firm dual agency from outside-firm seller subagency, restored the r
 document-delivery deadlines, and added evidence for first substantial contact, client/customer duties,
 three listing types, calculations and fair-housing screening. The current WWREA disclosure form itself
 remains uncaptured and therefore remains a submission gate.
+
+Module NC-09 was reconciled on September 7 to current federal Fair Housing statutes, §1982, HUD's
+current neighborhood-information and withdrawn-guidance posture, ADA Title III, the FTC's current
+Do Not Call guidance, DOJ antitrust guidance and Rule 58A .0105. The review corrected the covered-
+multifamily design rule, enforcement forums and periods, the civil/criminal distinction, the obsolete
+blanket rule against giving school or crime information, the seller-specific Do Not Call exceptions,
+automatic seller subagency, fraud terminology and overbroad vicarious-liability and insurance claims.
+Four prescribed activities now have stable worked-evidence paths. The two HUD PDFs and Rule .0105 PDF
+were publisher-read but remain uncaptured and unreviewed as local filing evidence.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

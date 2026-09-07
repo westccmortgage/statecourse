@@ -551,6 +551,39 @@ test("Module NC-08 delivers every non-form agency activity and uses current Rule
   assert.match(activities.find((activity) => activity.status === "outstanding").blockedBy, /WWREA disclosure form/i);
 });
 
+test("Module NC-09 delivers all practice activities and reconciles current fair-housing and solicitation rules", () => {
+  const nine = readModule("module-09");
+  for (const required of [
+    /Required Activity evidence — neutral tenant-screening matrix/i,
+    /Required Activity evidence — compensation-method lab/i,
+    /Required Activity evidence — discrimination examples/i,
+    /Required Activity evidence — client versus third-party duties/i,
+    /first occupancy after March 13, 1991/i,
+    /all units in a building with four or more units and one or more elevators/i,
+    /ground-floor units/i,
+    /HUD administrative complaint.*one year/is,
+    /private civil action.*state or federal court.*two years/is,
+    /HUD withdrew its 2022 criminal-record guidance/i,
+    /April 24, 2026 letter/i,
+    /Registry data downloaded no more than 31 days/i,
+    /18 months after a qualifying transaction/i,
+    /three months after the consumer's inquiry/i,
+    /Fraud requires intentional deception/i
+  ]) assert.match(nine, required);
+  assert.doesNotMatch(nine, /all brokers affiliated with the firm\s+automatically becoming subagents/i);
+  assert.doesNotMatch(nine, /All buildings with four or more residential units constructed\s+after March 13, 1991 must allow access/i);
+  assert.doesNotMatch(nine, /Office of Fair Housing and Equal Opportunity \(OFHEO\)/i);
+  assert.doesNotMatch(nine, /Enforcement by private lawsuit in federal court ONLY/i);
+  assert.doesNotMatch(nine, /Fraud is intentional or negligent misrepresentation/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "IX");
+  assert.equal(activities.length, 4);
+  assert.equal(activities.every((activity) => activity.status === "delivered" && activity.evidencePath), true);
+  assert.match(BANK["module-09"].engagement[2].choices[0], /reliable school information equally and consistently/i);
+  assert.match(BANK["module-09"].remediation[0].choices[0], /Open, exclusive agency, and exclusive right to sell/i);
+  assert.match(BANK["module-09"].remediation[1].choices[0], /former firm's relationship is not yours/i);
+  assert.match(BANK["module-09"].remediation[4].choices[0], /Rule 58A \.0105/i);
+});
+
 test("the two contract-structure facts a broker cannot get wrong are stated in Module NC-11", () => {
   const eleven = readModule("module-11");
   assert.match(eleven, /NO FINANCING OR APPRAISAL CONTINGENCIES/i);

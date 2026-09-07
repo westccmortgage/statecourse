@@ -458,6 +458,52 @@ section incorrectly made recording part of the Statute of Frauds. Module NC-07 n
 scenario labs with stable evidence paths and separates electronic consent/receipt, signed writing,
 recording priority, and the broker's narrow preprinted-form authority.
 
+## Module NC-09 reconciliation — current primary text read 2026-09-07
+
+- **42 U.S.C. §§3603-3607:** the federal protected bases and prohibited practices are stated from the
+  current statute. The single-family-owner and owner-occupied-building provisions are narrow; broker
+  involvement defeats the stated single-family exception, and discriminatory advertising remains
+  prohibited. Religious-organization, private-club and older-person-housing provisions have their own
+  statutory conditions rather than a general exemption.
+- **42 U.S.C. §3604(f):** reasonable modification, reasonable accommodation and covered-multifamily
+  design are separate duties. The design rule applies to first occupancy after March 13, 1991: all
+  dwelling units in a four-plus-unit elevator building, and ground-floor units in other covered
+  four-plus-unit buildings.
+- **42 U.S.C. §§3610, 3613, 3617 and 3631:** a HUD administrative complaint generally uses a one-year
+  occurrence-or-termination period; a private state or federal action generally uses two years with
+  qualifying administrative time excluded. Civil interference under §3617 and criminal conduct under
+  §3631 have different elements; a course cannot turn every violation into a criminal offense.
+- **42 U.S.C. §1982:** the section protects race-equal rights to inherit, purchase, lease, sell, hold
+  and convey real and personal property. The course does not import Fair Housing Act exemptions or a
+  federal-court-only shortcut into that right.
+- **HUD's April 24, 2026 neighborhood-information letter:** the Fair Housing Act does not itself forbid
+  a real-estate professional from providing school-quality or crime information. The lawful process is
+  equal, consistent, source-identified treatment; intentional protected-class steering remains
+  prohibited.
+- **HUD's September 17, 2025 withdrawal notice and current overview:** the identified 2022 criminal-
+  record and 2024 digital-advertising guidance is withdrawn and is not taught as authoritative. The
+  controlling statute still prohibits intentional protected-class discrimination and pretext.
+- **ADA Title III:** a customer-facing sales, rental or service office is a public accommodation. A
+  geographically separate employees-only administrative facility is not automatically the same Title
+  III category, although commercial-facility and employment rules may separately apply.
+- **FTC Telemarketing Sales Rule guidance:** established-business-relationship periods are seller-
+  specific—18 months after a qualifying transaction and three months after an inquiry/application.
+  An entity-specific opt-out overrides that relationship; Registry safe-harbor process uses data no
+  more than 31 days old; the ordinary calling window is 8 a.m. to 9 p.m. local time. Prerecorded calls
+  and automated calls/texts require separate consent analysis.
+- **DOJ antitrust guidance:** competitors set fees independently. Price fixing, bid rigging and customer
+  or market allocation are prohibited; a trade-association setting provides no safe harbor.
+- **Rule 58A .0105:** a broker advertises brokerage services with BIC consent and the affiliated firm's
+  identity, obtains the owner's written consent before advertising another's property, and avoids a
+  blind ad by identifying the broker or firm.
+
+This review also removed three unsupported shortcuts from the syllabus-derived prose: brokers in a
+listing firm do not thereby make an outside-firm broker an automatic seller subagent; fraud is not
+negligent misrepresentation; and neither vicarious liability nor insurance coverage can be stated as
+automatic without the relationship, conduct and policy terms. Four prescribed Module NC-09 activities
+now have worked evidence. The TCPA/FCC rules, North Carolina Fair Housing Act, common-law tort elements,
+NAR Code and actual insurance forms remain explicit source limitations.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -466,13 +512,15 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01, NC-02, and NC-08 were reconciled on 2026-09-07 to their applicable
-  applicant, other-jurisdiction, supervision, BIC, compensation, agency, document-delivery and records
-  rules. The remaining modules still need topic-level reconciliation, and the official PDF bytes still
-  need a filing-date integrity lock.
+  renewal rules. Modules NC-01, NC-02, NC-08 and NC-09 were reconciled on 2026-09-07 to their applicable
+  applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery
+  and records rules. The remaining modules still need topic-level reconciliation, and the official PDF
+  bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
   93A-6 and Article 3. Modules NC-01, NC-05 and NC-07 were reconciled to their applicable provisions on
-  2026-09-07; the other topic-level curriculum reconciliations remain open.
+  2026-09-07. Module NC-09 was separately reconciled to current federal fair-housing, civil-rights,
+  accessibility, telemarketing and antitrust authorities; the other topic-level reconciliations remain
+  open.
 - **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,
   listing, lien, payment, excise-tax and annual levy provisions were reconciled on 2026-09-07. The
   remaining tax statutes identified by other syllabus sections and all local rates still require
