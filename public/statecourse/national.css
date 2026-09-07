@@ -99,6 +99,34 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .finder-message[data-access="available"] { color: var(--green); font-weight: 700; }
 .finder-message[data-access="development"] { color: var(--gold-deep); font-weight: 700; }
 
+/* ── free practice reader ───────────────────────────────────────────────────────────────── */
+.practice-layout { display: grid; grid-template-columns: minmax(230px,.34fr) minmax(0,1fr); gap: 32px; align-items: start; margin-top: 28px; }
+.practice-controls { position: sticky; top: 104px; display: grid; gap: 14px; padding: 24px; background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--gold); border-radius: 0 0 var(--radius) var(--radius); }
+.practice-controls label { color: var(--navy); font-size: 14px; font-weight: 700; }
+.practice-controls select { width: 100%; min-height: 50px; padding: 0 40px 0 13px; border: 1px solid #cfcabf; border-radius: 4px; background: #fff; color: var(--ink); }
+.practice-controls > p { margin: 0; color: var(--muted); font-size: 13px; }
+.practice-controls dl { margin: 4px 0; }
+.practice-controls dl div { display: grid; gap: 3px; padding: 10px 0; border-top: 1px solid var(--rule); }
+.practice-controls dt { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.practice-controls dd { margin: 0; color: var(--navy); font-size: 14px; font-weight: 600; }
+.practice-reader { min-width: 0; padding: 30px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: 0 14px 40px rgba(8,16,43,.06); }
+.practice-reader > h2 { margin-bottom: 8px; font-size: clamp(28px,3vw,40px); }
+.practice-message { color: var(--muted); font-size: 14px; }
+.practice-section-nav { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; margin: 24px 0; padding: 12px 0; border-block: 1px solid var(--rule); }
+.practice-section-nav button { min-height: 44px; padding: 8px 13px; border: 1px solid var(--gold); border-radius: 4px; background: #fff; color: var(--gold-deep); cursor: pointer; font-weight: 700; }
+.practice-section-nav button:disabled { opacity: .45; cursor: not-allowed; }
+.practice-section-nav span { color: var(--muted); font-size: 13px; text-align: center; }
+.practice-content { scroll-margin-top: 104px; }
+.practice-content h2 { color: var(--navy); font-size: clamp(24px,2.5vw,34px); }
+.practice-content h3 { margin-top: 28px; color: var(--navy); font-size: 21px; }
+.practice-content p, .practice-content li { line-height: 1.75; }
+.practice-content ul, .practice-content ol { padding-left: 24px; }
+.practice-content .callout { margin: 22px 0; padding: 18px 20px; border-left: 4px solid var(--gold); background: #faf7ef; }
+.practice-content .callout-label { display: block; margin-bottom: 6px; color: var(--gold-deep); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.practice-content table { width: 100%; border-collapse: collapse; }
+.practice-content th, .practice-content td { padding: 10px 12px; border: 1px solid var(--rule); text-align: left; vertical-align: top; }
+.practice-content th { background: var(--navy); color: #fff; }
+
 /* ── introduction film ───────────────────────────────────────────────────────────────────── */
 .intro-film { background: var(--stone); border-bottom: 1px solid var(--rule); }
 .intro-film-shell { display: grid; grid-template-columns: minmax(250px,.42fr) minmax(0,1fr); gap: 56px; align-items: center; max-width: var(--max); margin: auto; padding: 56px 28px; }
@@ -335,6 +363,11 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
   .finder-fields button { grid-column: auto; }
   .finder-status-guide { margin: -2px 18px 14px; }
   .finder-message { margin: 0 18px 16px; }
+  .practice-layout { grid-template-columns: 1fr; }
+  .practice-controls { position: static; }
+  .practice-reader { padding: 22px 18px; }
+  .practice-section-nav { grid-template-columns: 1fr 1fr; }
+  .practice-section-nav span { grid-column: 1/-1; grid-row: 1; }
   .credibility-band { grid-template-columns: 1fr; margin: 0; padding: 0; border-left: 0; border-right: 0; border-radius: 0; }
   .credibility-band div { border-right: 0; border-bottom: 1px solid var(--rule); }
   .institution-section, .page-body { padding: 62px 18px; }

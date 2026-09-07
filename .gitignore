@@ -60,6 +60,7 @@ next-env.d.ts
 /public/statecourse/continuing-education/
 /public/statecourse/courses/
 /public/statecourse/exam-prep/
+/public/statecourse/free-practice/
 /public/statecourse/get-licensed/
 /public/statecourse/my-statecourse/
 /public/statecourse/resources/
@@ -68,6 +69,7 @@ next-env.d.ts
 # Program segments vary by state - "pre-license", "qualifying", and others - so this
 # matches any program directory under a jurisdiction rather than naming each one.
 /public/statecourse/real-estate/*/*/
+/public/statecourse/data/free-practice-catalog.json
 
 # Local-only export destination for scripts/export-california-source-temp.mjs.
 # Never inside public/ or dist/ — see tests/no-answer-key-published.test.mjs

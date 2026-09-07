@@ -23,7 +23,7 @@ test("Michigan is visible in production while approval and enrollment remain clo
   assert.match(coursePage, /407 N Pacific Coast Highway, Unit 1028/);
   assert.match(coursePage, /PSS school licensure\/program approval and LARA BPL course\/instructor approval are pending/);
   assert.match(coursePage, /No account is needed/);
-  assert.match(statePage, /No account is needed/);
+  assert.match(statePage, /No account or payment is required/);
   assert.match(coursePage, /development and regulatory-status record\. Enrollment is unavailable\./);
   assert.doesNotMatch(coursePage, /course record and enrollment path/i);
   assert.doesNotMatch(coursePage, /student\/register\/\?(?:state=MI|course=mi-salesperson)|Create (?:a )?Free Account|account can track/i);
