@@ -131,7 +131,7 @@ cannot be transferred.
 
 **Required Activity, transcribed: "Provide examples of how each affects value."** Delivered in this
 module's worked material, and the examples are drawn from concepts already taught in this course —
-Module NC-04's zoning and land-use controls for government controls, Module NC-04's environmental
+Module NC-03's zoning and land-use controls for government controls, Module NC-05's environmental
 material for environmental conditions — so students see the connection rather than a fresh list.
 
 ### B.5 Basic economic principles of value *(Level 2 — this subtopic)*

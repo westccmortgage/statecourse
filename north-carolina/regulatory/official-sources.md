@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v3`
+**Manifest:** `NC-PHASE0-2026-09-07-v4`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -41,6 +41,12 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Principal-residence gain exclusion | 26 U.S.C. §121 | (a), (b)(1)-(3) | [Official U.S. Code](https://uscode.house.gov/view.xhtml?req=(title:26%20section:121%20edition:prelim)) |
 | Flood probability | FEMA | one-percent annual-chance definition | [FEMA glossary](https://training.fema.gov/is/course/glossary.aspx) |
 | C.L.U.E. report | CFPB | one free report every 12 months | [CFPB company listing](https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/comprehensive-loss-underwriting-exchange/) |
+| Broker material-fact duty | G.S. 93A-6(a)(1); 21 NCAC 58A .0114(c) | disciplinary ground; separate broker duty | [§93A-6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-6.html), [OAH .0114](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0114.pdf) |
+| Federal lead disclosure | 42 U.S.C. §4852d; 40 CFR part 745 subpart F | coverage, sequence, buyer opportunity, agent duty, retention | [U.S. Code](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title42-section4852d), [eCFR](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-F), [HUD/EPA fact sheet](https://www.hud.gov/sites/dfiles/HH/documents/Lead_Based_Paint_Disclosure_Rule_FactSheet.pdf) |
+| North Carolina lead-work program | G.S. Chapter 130A Article 19A; §130A-22(b3) | certification, permits, no universal work mandate, current state penalty ceiling | [Article 19A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_130A/Article_19A.html), [§130A-22](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_130A/GS_130A-22.html) |
+| Radon and asbestos | EPA; NC DHHS | current mitigation recommendation, condition/disturbance risk, accredited-professional route | [EPA radon](https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean), [EPA asbestos](https://www.epa.gov/asbestos/what-are-health-risks-if-i-have-asbestos-my-home-building-apartment-or-school), [NC DHHS asbestos](https://epi.dph.ncdhhs.gov/asbestos/ahmp.html) |
+| CERCLA and environmental inquiry | EPA | current-owner exposure, landowner protections, AAI before acquisition | [Liability protections](https://www.epa.gov/enforcement/superfund-landowner-liability-protections), [All Appropriate Inquiries](https://www.epa.gov/brownfields/brownfields-all-appropriate-inquiries) |
+| Air, water and underground tanks | EPA; NC DEQ | federal frameworks and fact-specific state tank route | [Clean Air Act](https://www.epa.gov/laws-regulations/summary-clean-air-act), [Clean Water Act](https://www.epa.gov/laws-regulations/summary-clean-water-act), [NC DEQ UST rule](https://www.deq.nc.gov/waste-management/dwm/ust/law-rules-memos/15a-ncac-2n) |
 
 ## Verification limitations and conflict resolution
 
@@ -52,16 +58,25 @@ digital text layers. `captures/2026-09-06/capture-log.json` preserves requests, 
 response arrived, content type, status, hashes and exact failures; `page-reviews.json` binds review
 to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains open.
 
-On September 7, Module NC-02 added the current official standalone-rule endpoints for 58A .0109,
-.0120, and .0506. They were inspected through the official index but were not part of the September 6
-byte-capture attempt. The expanded ledger therefore contains 24 PDF source entries across 22 unique
-URLs, of which two currently have retained and reviewed bytes.
+On September 7, Modules NC-02 and NC-05 added current official standalone-rule endpoints for 58A
+.0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
+publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
+contains 26 PDF source entries across 24 unique URLs. Two retain byte-valid September 6 snapshots, but
+their page reviews are stale against the September 7 control date; the current reviewed count is zero.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year
 horizontal-adjustment mechanism was repealed effective July 1, 2009. The course now teaches current
 G.S. 105-286's octennial baseline and mandatory/optional advancement rules and flags the stale syllabus
 sentence for the Commission reviewer rather than repeating it as law.
+
+Module NC-05 was reconciled on September 7 to current state material-fact law, federal lead-disclosure
+law, state lead-work statutes, and EPA/NC agency environmental guidance. That review corrected three
+material defects: the disclosure rule became effective in 1996 rather than 1992; EPA's radon
+recommendation applies at 4 pCi/L or more rather than only above 4; and North Carolina currently uses
+accreditation terminology for covered asbestos professionals. It also quarantines the Syllabus's stale
+$750 state and $32,500 federal lead-penalty figures. The current NCAR Form 2A9-T remains unobtained, so
+the Commission's specific Required Activity is still outstanding.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

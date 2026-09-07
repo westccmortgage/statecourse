@@ -137,7 +137,7 @@ const REQUIRED_ACTIVITIES = Object.freeze([
   { section: "III", moduleId: "module-03", activity: "Provide a copy of an approved subdivision plat map.", status: "outstanding", blockedBy: "No rights-safe approved North Carolina subdivision plat map has been obtained by this project." },
   { section: "III", moduleId: "module-03", activity: "Provide a copy of a residential property survey.", status: "outstanding", blockedBy: "No rights-safe licensed residential property survey has been obtained by this project." },
   { section: "III", moduleId: "module-03", activity: "Provide examples of each zoning concept.", status: "delivered", evidencePath: "north-carolina/curriculum/module-03.md#required-zoning-examples" },
-  { section: "V", moduleId: "module-05", activity: "Review the Lead-Based Paint or Lead-Based Paint Hazard disclosure.", status: "outstanding", blockedBy: "The federal lead-based paint disclosure form has not been obtained by this project." },
+  { section: "V", moduleId: "module-05", activity: "Review the Lead-Based Paint or Lead-Based Paint Hazard disclosure.", status: "outstanding", blockedBy: "The Commission-prescribed current NCAR Form 2A9-T has not been obtained; the federal HUD/EPA form and rules do not substitute for that specific Required Activity." },
   { section: "VI", moduleId: "module-06", activity: "Provide real world examples of each type of estate, and explain real world use of each type of lease.", status: "delivered" },
   { section: "VI", moduleId: "module-06", activity: "Provide real world examples of each way real property is transferred, voluntarily and involuntarily.", status: "delivered" },
   { section: "VI", moduleId: "module-06", activity: "Provide an assessment to determine whether the student can differentiate the deed types.", status: "delivered" },
@@ -191,15 +191,15 @@ const OPEN_SOURCE_DEPENDENCIES = Object.freeze([
   "TILA and Regulation Z; RESPA and Regulation X; the TRID rule; ECOA; FCRA; the Dodd-Frank Act",
   "FHA, VA and USDA program handbooks; Fannie Mae, Freddie Mac and Ginnie Mae seller/servicer guides",
   "USPAP, FIRREA, and any North Carolina Appraisal Board statute or rule",
-  "The federal Fair Housing Act and EPA lead-based paint regulations in their own text"
+  "The federal Fair Housing Act; Module NC-05's lead-disclosure regulation is now reconciled to current primary text"
 ]);
 
 const TIMING_EVIDENCE = Object.freeze({
   instructionalMinutesPerHour: 50,
   requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 50,
   commissionReadingRateWordsPerMinute: 225,
-  curriculumBaselineWords: 54253,
-  curriculumBaselineMinutes: Number((54253 / 225).toFixed(2)),
+  curriculumBaselineWords: 55174,
+  curriculumBaselineMinutes: Number((55174 / 225).toFixed(2)),
   measuredOn: "2026-09-07",
   mediaDurationLedgerMinutes: 0,
   regulatorFormatOutlineComplete: false,

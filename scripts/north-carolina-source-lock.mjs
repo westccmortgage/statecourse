@@ -21,8 +21,13 @@ const allowedHosts = new Set([
   "www.pearsonvue.com",
   "www.sosnc.gov",
   "uscode.house.gov",
+  "www.ecfr.gov",
+  "www.epa.gov",
+  "www.hud.gov",
   "training.fema.gov",
-  "www.consumerfinance.gov"
+  "www.consumerfinance.gov",
+  "www.deq.nc.gov",
+  "epi.dph.ncdhhs.gov"
 ]);
 const requiredDocs = [
   "north-carolina/regulatory/official-sources.md",

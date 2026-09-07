@@ -347,6 +347,35 @@ subagent to a prospective buyer; **58A .0108** for retention.
 This reconciliation does not supply local tax rates, insurance policy coverage, local transfer-tax
 rules or the remaining federal deduction/exchange provisions. Those remain explicit dependencies.
 
+## Module NC-05 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 93A-6(a)(1) and 21 NCAC 58A .0114(c):** material misrepresentation or omission is a
+  disciplinary ground; for Chapter 47E property, the broker's material-fact duty is separate from the
+  owner's disclosure statement.
+- **42 U.S.C. §4852d and 40 CFR part 745 subpart F:** covered target-housing transactions require the
+  lead pamphlet, known information and available reports before contractual obligation; buyers receive
+  a ten-day inspection opportunity unless changed or waived in writing; the contract carries the
+  prescribed acknowledgments; seller/lessor agents ensure compliance; records are retained three years.
+  The rule imposes no blanket duty to test or reduce lead.
+- **G.S. Chapter 130A Article 19A and §130A-22(b3):** North Carolina certification and permit controls
+  for specified lead work are separate from transaction disclosure. Current state law sets a $5,000
+  per-continuing-day ceiling for covered Article 19A violations, superseding the Syllabus's stale $750
+  state figure. The stale $32,500 federal figure is not repeated as current law.
+- **EPA radon guidance:** fix at 4 pCi/L or more; consider fixing from 2 to below 4; there is no known
+  safe exposure level.
+- **EPA and NC DHHS asbestos guidance:** intact, undisturbed material is unlikely to present a health
+  risk; disturbance can release fibers. North Carolina describes accredited professionals and
+  project-specific permits, not a universal “licensed contractor” rule for every residence.
+- **EPA CERCLA and All Appropriate Inquiries guidance:** current owners may face cleanup exposure, but
+  statutory landowner protections exist and depend on pre-acquisition inquiry and continuing
+  obligations. A Phase I assessment is neither a guarantee nor broker work.
+- **EPA Clean Air Act and Clean Water Act summaries; NC DEQ UST rule/program:** identify the agency
+  framework and preserve professional referral for equipment, discharge, wetlands, tank classification,
+  ownership change and cleanup questions.
+
+The current NCAR Form 2A9-T remains unobtained. The federal statute, regulation and HUD/EPA form do not
+substitute for the Commission's specific Required Activity.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -359,8 +388,8 @@ documents rather than a substitute for them.**
   other-jurisdiction, supervision, BIC, and compensation rules. The remaining modules still need
   topic-level reconciliation, and the official PDF bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
-  Article 3. Module NC-01 was reconciled to § 93A-4 on 2026-09-07; the other topic-level curriculum
-  reconciliations remain open.
+  93A-6 and Article 3. Modules NC-01 and NC-05 were reconciled to §§ 93A-4 and 93A-6 respectively on
+  2026-09-07; the other topic-level curriculum reconciliations remain open.
 - **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,
   listing, lien, payment, excise-tax and annual levy provisions were reconciled on 2026-09-07. The
   remaining tax statutes identified by other syllabus sections and all local rates still require
@@ -383,9 +412,10 @@ documents rather than a substitute for them.**
 - **The Residential Property and Owners' Association Disclosure Statement (RPOADS)**, the **Tenant
   Security Deposit Act**, the **Vacation Rental Act**, the **Connor Act**, the **Marketable Title Act**,
   the **Timeshare Act**, the **Unfair and Deceptive Trade Practices Act**, and North Carolina's
-  **statute of frauds**, **onsite septic**, **street disclosure**, **subdivision** and **lead-based
-  paint** provisions — all named in Sections XIV and XV. **Every one is named by the Syllabus and none
-  was read.** No requirement, deadline, form, exemption or figure from any of them appears.
+  **statute of frauds**, **onsite septic**, **street disclosure** and **subdivision** provisions — all
+  named in Sections XIV and XV. Except for the current lead-based-paint provisions now reconciled in
+  Module NC-05, these sources remain unread. No requirement, deadline, form, exemption or figure from
+  an unread source is treated as current law.
 - **The full text of Sections II through VII and IX through XVI of the Syllabus** was extracted and is
   available, but this readings file transcribes in full only the front matter, the hour table, the
   section and item table, the Instructional Levels, the completion standards and Section VIII. The

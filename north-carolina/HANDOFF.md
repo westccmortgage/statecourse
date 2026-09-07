@@ -20,6 +20,15 @@
 - Module NC-02 was reconciled against current Rules 58A .0109, .0110, .0120, and .0506. It now teaches
   the activation/acknowledgment stop, termination notice, actual BIC duties and eligibility, lawful
   compensation flow, and disclosure rules instead of using “route to the Commission” as the answer.
+- Module NC-03 now contains the missing required zoning examples and visual exercises, reconciled
+  ownership, recording, easement and land-use law, and assessment items that actually test those
+  activities.
+- Module NC-04 now uses the current North Carolina property-tax schedule and excise-tax statute,
+  removes the obsolete fourth-year adjustment, and separates federal tax, flood and C.L.U.E. issues
+  from state-law conclusions.
+- Module NC-05 now separates the broker's independent material-fact duty from the owner disclosure
+  form, uses the current federal lead, radon, asbestos, CERCLA, Clean Air Act and Clean Water Act
+  authorities, and retains NCAR Form 2A9-T as an honest unresolved Required Activity.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
@@ -62,9 +71,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 54,253 audit-tokenized words, or at
-most 241.12 minutes/4.02 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 331.77-minute ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 55,174 audit-tokenized words, or at
+most 245.22 minutes/4.09 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 336.02-minute ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -73,7 +82,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 2/24 PDF source entries retain byte-valid September 6 snapshots, but none has a current September 7 page review; 22 remain unavailable or uncaptured; source status INCOMPLETE |
+| NC-B01 | StateCourse | Partial PDF capture: 2/26 PDF source entries retain byte-valid September 6 snapshots, but none has a current September 7 page review; 24 remain unavailable or uncaptured; source status INCOMPLETE |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -120,7 +129,7 @@ node scripts/north-carolina-source-lock.mjs --require-source-capture
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
 records exact failures and does not turn search-index text into downloaded evidence. The expanded
-ledger contains 24 PDF source entries across 22 unique URLs; 2 entries retain byte-valid snapshots,
+ledger contains 26 PDF source entries across 24 unique URLs; 2 entries retain byte-valid snapshots,
 but their page reviews are stale against the September 7 control date.
 Three current Module NC-02 rule sources were added after the September 6 capture and are therefore
 explicitly uncaptured. Scripts verify actual bytes and content identity and reject a wrong PDF,
@@ -131,5 +140,5 @@ The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`
 Carolina work continues on the same remote branch. The strict `--require-source-capture` command
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
-offline as-of-capture checks; re-fetch before filing. Current focused tests: 83/83 passing; complete
-repository build and test suite: 1,291/1,291 passing.
+offline as-of-capture checks; re-fetch before filing. Current focused tests: 84/84 passing; complete
+repository build and test suite: 1,292/1,292 passing.

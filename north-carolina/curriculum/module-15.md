@@ -735,12 +735,20 @@ obtained; no requirement, deadline or procedure is stated here.**
 - **Purpose**
 - **Renovation**
 - **Certification requirement**
-- ***"NC fines for violations up to $750 per day and up to $32,500 per day under EPA sanctions"***
-- ***"Owner-occupied do-it-yourself renovations are exempt from certification requirement"***
+- The Syllabus prints **$750 per day** for North Carolina and **$32,500 per day** under EPA sanctions.
+  **Do not use those figures as current law.** Current G.S. 130A-22(b3) allows up to **$5,000 for each
+  day** a covered Article 19A violation continues and says that penalty does not apply to a person who
+  is not required to be certified. Federal penalties require a current rule-and-inflation check for the
+  precise violation; this module does not substitute the stale syllabus figure.
+- The Syllabus also states that owner-occupied do-it-yourself renovations are exempt from the
+  certification requirement. Apply the current statute and rules to the specific work rather than
+  converting that line into a universal exemption.
 
-Both figures are the Commission's, transcribed. Module NC-04 covered the federal lead-based paint
-disclosure requirement; this is the **North Carolina renovation certification** program, which is a
-different thing — disclosure is about selling, LHMP is about **doing the work.**
+Current G.S. 130A-453.02 explains the distinction. Article 19A requires certification for specified
+inspection, risk-assessment and abatement work and a permit for abatement, but it does not itself
+require inspection, risk assessment or abatement in every transaction. Module NC-05 covers the
+separate federal transaction-disclosure rule. Disclosure is about information and procedure in a
+covered sale or lease; LHMP is about **who may perform covered work and under what controls.**
 
 ---
 
@@ -791,7 +799,9 @@ Fair Housing Act** and **EPA lead-based paint regulations**.
 **7-day new condominium rescission**; **20-year and 7-year adverse possession**; the **3-year Statute of
 Frauds lease rule**; **1 year** for both fair housing enforcement routes; **5 separated times over 5
 years** for a timeshare; **treble damages** under NCGS 75-1.1; **R-13 walls, R-30 ceilings, R-19 floors**;
-the **$40,000** mechanics' lien threshold, the **120-day** filing window and **first-day** priority; **2
-persons per permitted bedroom**; and **$750 per day** state and **$32,500 per day** EPA lead-paint fines.
+the **$40,000** mechanics' lien threshold, the **120-day** filing window and **first-day** priority; and
+**2 persons per permitted bedroom**. The Syllabus's **$750 per day** state and **$32,500 per day** EPA
+lead-paint figures are retained only as a documented curriculum conflict; current G.S. 130A-22(b3)
+supplies the state ceiling described above, and no stale federal amount is taught as current law.
 **No other number appears in this module**, and no deadline, fee, exemption or penalty is stated from any
 source this project has not read.

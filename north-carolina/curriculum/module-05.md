@@ -71,6 +71,17 @@ municipality.
 
 **All of them. To all transactional parties.** Not only to a client, and not only on request.
 
+That Syllabus instruction now has a current-law anchor. **G.S. 93A-6(a)(1)** makes willful or negligent
+misrepresentation or omission of a material fact a disciplinary ground. For residential property
+subject to Chapter 47E, **21 NCAC 58A .0114(c)** separately requires a broker representing an owner or
+purchaser to disclose to the purchaser material facts the broker knows or reasonably should know. The
+owner's disclosure statement does **not** replace the broker's duty. The rule defines a material fact by
+whether a reasonable person would recognize it as relevant to the purchase decision and whether
+suppression could reasonably change that decision.
+
+Keep the two layers separate: the **broker's independent license-law duty** and the **owner's statutory
+disclosure statement** are not the same duty and do not always have the same coverage or options.
+
 ### A.3 Liability for cleanup
 
 **Transcribed:** *"**Owner of a property with hazardous waste may be liable for cleanup, even if caused
@@ -131,14 +142,27 @@ obligation it is.
 > in this build reproduces, describes or paraphrases it.** Obtaining the current form and conducting
 > this review is a **submission gate** for this module.
 
-**The facts the Syllabus states:**
+**Current federal framework.** Congress enacted the Residential Lead-Based Paint Hazard Reduction Act
+in 1992. The disclosure regulation did **not** take effect in 1992: 40 CFR 745.102 phased it in during
+1996. The rule applies to covered sales and leases of **target housing**, generally housing constructed
+before 1978. The definition excludes zero-bedroom dwellings and housing for older persons or persons
+with disabilities unless a child under six resides or is expected to reside there. Section 745.101 also
+excludes foreclosure sales, qualifying lead-free leases, short leases of 100 days or less with no renewal
+or extension, and specified renewals with no new information. Apply the exact rule to the transaction;
+do not turn “pre-1978” into an absolute without checking the exclusions.
 
-- **Residential use of lead-based paint banned in 1978; disclosure required by federal law since
-  1992.**
-- **Sources of lead.**
-- **Serious health risk of lead poisoning.**
-- **Federal Residential Lead-Based Paint Hazard Reduction Act of 1992**, and updated **HUD and EPA
-  rules** — `www.epa.gov/lead`.
+Before the purchaser or lessee is obligated under a covered contract, the seller or lessor must provide
+the EPA-approved pamphlet, disclose known lead-based paint and known hazards, and provide available
+records and reports. A covered purchaser must receive a **10-day opportunity** for a risk assessment or
+inspection unless the parties agree in writing to a different period; the purchaser may waive the
+opportunity in writing. The sales contract and covered lease carry the required warning,
+acknowledgments, certifications, signatures and dates. Sellers and their agents retain the completed
+sales attachment for at least **three years from completion of the sale**; lessors and their agents retain
+the lease disclosure record for at least **three years from commencement of the lease term**.
+
+The regulation expressly says the disclosure rule creates **no positive obligation to test or reduce**
+lead. It requires disclosure of what is known, available records, the required pamphlet and opportunity,
+not a promise that a building is lead-free.
 
 **And the broker's own duty, transcribed — this is the tested point:**
 
@@ -146,37 +170,51 @@ obligation it is.
 > — informing seller/lessor of their obligations under these rules; **either ensure that seller/lessor
 > has performed all activities required by the rules OR broker must personally ensure compliance**."*
 
-**Read that.** The duty is not to watch someone else comply. It is either to **ensure the seller has
-complied**, or **to comply personally**. There is no third option in which the broker is a bystander.
+**Read that.** Current 40 CFR 745.115 confirms the same structure: a seller's or lessor's agent must
+inform the principal of the obligations and either ensure the principal performs every required activity
+or personally ensure compliance. If the agent performs that notice duty, the agent is not liable for a
+seller's or lessor's lead information that was not disclosed to the agent. That protection does not excuse
+the other compliance steps.
 
-The requirement **applies to target housing**, and **enforcement and penalties** attach.
-
-**Instructor Note, transcribed:** *"**No federal law requires the owner to test** for the presence of
-lead or lead-based paint."*
-
-Disclosure of what is **known**, and the opportunity for the buyer to investigate — **not** a testing
-mandate.
+**North Carolina work rules are a separate system.** Chapter 130A, Article 19A requires certification
+for specified inspection, risk-assessment and abatement work in target housing and child-occupied
+facilities, and a permit for abatement. G.S. 130A-453.02(b) also says the Article does **not** itself
+require inspection, risk assessment or abatement in every situation. Current G.S. 130A-22(b3), not the
+older figure in the Syllabus, allows up to **$5,000 for each day a covered Article 19A violation
+continues** and excludes a person not required to be certified. Do not quote the Syllabus's stale $750
+state or $32,500 federal figures as current law.
 
 ### B.2 Asbestos *(Level 1)*
 
 - **Friable** — the operative concept.
 - **Serious health risk** for various respiratory diseases and for **lung and stomach cancer**.
-- **Remediation:** a **costly removal process requiring a state-licensed asbestos abatement contractor
-  and sealed areas**; or **encapsulation**.
+- **Response choices can include management in place, repair, encapsulation or removal**, depending on
+  condition, disturbance and governing requirements.
 
 **Instructor Note, transcribed:** *"The **mere presence of asbestos is not a health hazard unless it is
 friable**."*
 
-Which is why intact material is often best left undisturbed and why **renovation plans on an older
-house are the trigger**, not the material's existence.
+Current EPA guidance is more precise: material in good condition and left undisturbed is **unlikely** to
+present a health risk; risk arises when damage or disturbance releases fibers that can be inhaled.
+Renovation, demolition, sanding, cutting or other disturbance can change the risk. A broker does not
+sample or decide the response. Route the consumer to a trained asbestos professional.
+
+North Carolina uses **accreditation**, not the blanket phrase “state-licensed asbestos abatement
+contractor.” The DHHS Asbestos Hazard Management Program accredits people performing covered
+inspection, design and removal work and issues permits for regulated removal projects. Coverage,
+thresholds, residence exceptions and county-specific rules are fact-dependent, so do not promise that
+every residential job needs the same permit or personnel.
 
 ### B.3 Radon *(Level 1)*
 
 - **A health risk as one of the leading causes of lung cancer.**
-- **Radon presence over the EPA's actionable level of 4.0 picocuries is a material fact.**
+- The Syllabus treats the actionable-level condition as a material fact. Current EPA guidance says to
+  fix a home at **4 pCi/L or more** and to consider fixing between **2 and below 4 pCi/L** because there
+  is no known safe exposure level.
 
-**That is a stated figure and it is stated here because the Syllabus states it: 4.0 picocuries.** Above
-it, presence is **a material fact**.
+The exact unit is **picocuries per liter of air (pCi/L)**. Do not say “over 4.0”; EPA's recommendation
+includes a result of exactly 4.0. A broker reports the result, date and source and routes testing and
+mitigation questions to a qualified radon professional.
 
 **Instructor Note, transcribed:** *"Do-it-yourself radon tests are available; **professional testing is
 generally more accurate**."*
@@ -201,20 +239,30 @@ Module NC-04 established is a financing question.
 **CERCLA** — the **Comprehensive Environmental Response, Compensation, and Liability Act**:
 
 - **also known as the Superfund**;
-- **identifies hazardous waste sites for clean up**;
-- **Environmental Site Assessments (Phase I and Phase II studies) and Impact Studies.**
+- supports investigation and cleanup of hazardous-substance sites and can impose strict, retroactive,
+  and in some circumstances joint-and-several liability on responsible parties, including a current owner
+  or operator;
+- also contains landowner protections for qualifying bona fide prospective purchasers, contiguous
+  property owners and innocent landowners. Protection is not automatic. EPA identifies **All Appropriate
+  Inquiries before acquisition** and continuing obligations as elements of the applicable defenses.
+
+A Phase I Environmental Site Assessment may be used to perform All Appropriate Inquiries under current
+EPA-recognized standards. It is not a guarantee that no contamination exists and it is not a broker's
+inspection. Whether a Phase II investigation is warranted is an environmental professional's conclusion.
 
 **The Clean Air Act:**
 
 - **establishes and enforces air quality standards**;
-- **affects property owners and businesses that own or repair appliances using refrigerants**, such as
-  air conditioners and refrigerators.
+- includes separate programs for ozone-depleting substances and refrigerants. Do not infer an appliance
+  owner's exact duty without checking the current equipment, substance and service rule.
 
 **The Clean Water Act:**
 
 - **regulates pollutant discharges into water**;
 - **sets water quality standards**;
-- **protects wetlands.**
+- can regulate discharges of dredged or fill material to jurisdictional waters, including some wetlands.
+  Whether a feature is jurisdictional and whether a permit or exception applies are legal and technical
+  questions, not conclusions a broker should make from appearance alone.
 
 ---
 
@@ -224,6 +272,11 @@ Module NC-04 established is a financing question.
 broker in this section — **discover the reason for a radon mitigation system**, **disclose known current
 or abandoned USTs**, and **ensure lead disclosure compliance personally if the seller has not** — and
 beyond those, **a licensee assesses no environmental condition.**
+
+For an underground tank, separate the broker's disclosure duty from tank regulation. NC DEQ applies
+different rules to regulated commercial systems and some non-regulated farm or residential systems;
+ownership-change, release and closure obligations depend on the system and facts. Disclose what is
+known and route status, records, testing and cleanup to DEQ and qualified professionals.
 
 Testing is by a qualified tester. Remediation is by a qualified contractor, and for asbestos by a
 **state-licensed abatement contractor**. Interpretation of a result is not a licensee's work, and
@@ -251,15 +304,14 @@ Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
 ## Instructor source note for Module NC-05
 
 Drawn from **Section V** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
-May 2026, read on 2026-08-20. The land-use advisory requirements, the material-fact rule for
-environmental hazards, the UST disclosure duty, the radon mitigation discovery obligation, the "as is"
-note, the broker's lead compliance duty, the 1978 and 1992 dates, the 4.0 picocurie actionable level and
-the friability note are all **transcribed from the Syllabus**.
+May 2026, read on 2026-08-20, and reconciled on 2026-09-07 to G.S. 93A-6(a)(1), current 21 NCAC 58A
+.0114(c), 42 U.S.C. §4852d, 40 CFR part 745 subpart F, HUD/EPA lead guidance, G.S. Chapter 130A
+Article 19A and §130A-22(b3), and current EPA, NC DHHS and NC DEQ guidance for radon, asbestos,
+CERCLA, All Appropriate Inquiries, air, water and underground tanks.
 
-**Not read, and therefore stated nowhere in this module:** **NCAR Form 2A9-T** — a Required Activity and
-a submission gate; the **Residential Lead-Based Paint Hazard Reduction Act of 1992** and the HUD and EPA
-rules in their own text; **CERCLA**, the **Clean Air Act** and the **Clean Water Act** in their own
-text; **NCGS Chapter 93A**; and North Carolina's own environmental and underground storage tank
-provisions. **No penalty amount, remediation standard, testing protocol, exemption or deadline from any
-of them is stated.** North Carolina's Residential Property and Owners' Association Disclosure Statement
-is taken up in Module NC-15, where the same gap is recorded.
+**Still not obtained:** **NCAR Form 2A9-T** — the Commission's specific Required Activity and a
+submission gate. This module does not reproduce or imply review of that proprietary form. The official
+HUD/EPA federal disclosure form and rules establish federal content but do not substitute for the
+Commission-prescribed review of the current North Carolina association form. North Carolina's current
+Residential Property and Owners' Association Disclosure Statement is taken up in Module NC-15 and
+remains a separate required-source dependency.

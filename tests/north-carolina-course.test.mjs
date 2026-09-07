@@ -440,6 +440,26 @@ test("Module NC-04 corrects the obsolete fourth-year adjustment and teaches curr
   assert.doesNotMatch(JSON.stringify(BANK["module-04"]), /statute setting it was not obtained|states no North Carolina excise tax rate/i);
 });
 
+test("Module NC-05 reconciles environmental instruction to current state and federal sources", () => {
+  const five = readModule("module-05");
+  const fifteen = readModule("module-15");
+  for (const required of [
+    /broker's independent license-law duty/i,
+    /phased it in during 1996/i,
+    /10-day opportunity/i,
+    /agree in writing to a different period/i,
+    /waive the opportunity in writing/i,
+    /three years from completion of the sale/i,
+    /no positive obligation to test or reduce/i,
+    /4 pCi\/L or more/i,
+    /All Appropriate Inquiries before acquisition/i,
+    /accreditation.*not the blanket phrase.*state-licensed/is
+  ]) assert.match(five, required);
+  assert.match(fifteen, /current G\.S\. 130A-22\(b3\).*\$5,000/is);
+  assert.doesNotMatch(JSON.stringify(BANK["module-05"]), /EPA regulations and guidance documents were not obtained|fines run up to \$750|\$32,500 per day under EPA sanctions/i);
+  assert.match(NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.moduleId === "module-05").blockedBy, /NCAR Form 2A9-T/);
+});
+
 test("no module claims approval or offers credit", () => {
   assert.doesNotMatch(allModules, /\bState Approved\b/i);
   assert.doesNotMatch(allModules, /\bEnroll Now\b/i);

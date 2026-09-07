@@ -14,14 +14,15 @@ of instruction. Official .0101 indexed text was rechecked September 6; direct OA
 
 | Repository measure | Words | Minutes at 225 wpm | 60-minute elapsed hours |
 |---|---:|---:|---:|
-| sixteen curriculum Markdown files, audit tokenizer | 54,253 | 241.12 | 4.02 |
-| curriculum plus entire question-bank source file (deliberately generous ceiling) | 74,648 | 331.77 | 5.53 |
+| sixteen curriculum Markdown files, audit tokenizer | 55,174 | 245.22 | 4.09 |
+| curriculum plus entire question-bank source file (deliberately generous ceiling) | 75,605 | 336.02 | 5.60 |
 | reading-only words for 72 instructional hours | 810,000 | 3,600 | 60.00 |
 
-The September 7 increase reflects the official-source rewrite of Modules NC-01 through NC-04, their
-assessments, three Module NC-03 visual exhibits, the required zoning examples, and the corrected
-property-tax, excise-tax, federal tax, flood and C.L.U.E. instruction; it is substantive correction,
-not time padding. The audit tokenizer counts word-like Unicode tokens
+The September 7 increase reflects the official-source rewrite of Modules NC-01 through NC-05, their
+assessments, three Module NC-03 visual exhibits, the required zoning examples, the corrected
+property-tax, excise-tax, federal tax, flood and C.L.U.E. instruction, and the current federal and
+North Carolina environmental-disclosure rules. A related stale penalty statement in Module NC-15
+was also corrected. This is substantive correction, not time padding. The audit tokenizer counts word-like Unicode tokens
 and excludes Markdown punctuation. Both totals include nonstudent material: the curriculum includes author notes and the larger count also includes
 JavaScript syntax/metadata. Both are upper-bound audit signals, not valid student-visible instruction.
 There is no duration-controlled audio/video ledger. The current course is at most a small
