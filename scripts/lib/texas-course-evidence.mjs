@@ -92,6 +92,33 @@ function instrumentIds(instruments, label, seen) {
   return instruments.length;
 }
 
+/** A count of three cases all placed at the end is not a case during each ten-hour span.
+ * Credit positions use the official outline allocation, not unobserved wall-clock claims.
+ * Modeled elapsed positions are reported separately so surplus instruction stays visible.
+ */
+export function inspectTexasScenarioSpacing({ form, rows, capstones = 0 }) {
+  if (!(form.courseHours > 0) || !(form.totalMinutes > 0)) throw new Error("Invalid official course duration");
+  let prescribedMinutes = 0, modeledMinutes = 0, lastCreditHour = 0;
+  const checkpoints = [];
+  for (const row of rows) {
+    prescribedMinutes += row.prescribedMinutes;
+    modeledMinutes += row.modeledMinutes;
+    if (row.scenarios > 0) {
+      const creditHour = prescribedMinutes / form.totalMinutes * form.courseHours;
+      checkpoints.push({ afterTopic: row.topicCode, count: row.scenarios, outlineCreditHour: creditHour,
+        outlineGapHours: creditHour - lastCreditHour, modeledEndMinutes: Number(modeledMinutes.toFixed(2)) });
+      lastCreditHour = creditHour;
+    }
+  }
+  const tailGapHours = form.courseHours - lastCreditHour;
+  if (capstones > 0) checkpoints.push({ afterTopic: "COURSE", count: capstones, outlineCreditHour: form.courseHours,
+    outlineGapHours: tailGapHours, modeledEndMinutes: Number((modeledMinutes + capstones * TEXAS_TIME_RATES.scenario).toFixed(2)) });
+  const gaps = [...checkpoints.map(point => point.outlineGapHours), tailGapHours];
+  return { pass: checkpoints.length > 0 && gaps.every(gap => gap >= 0 && gap <= 10 + 1e-9),
+    checkpoints, tailGapHours, maximumGapHours: Math.max(...gaps),
+    basis: "Official outline credit-hour placement; modeled positions are estimates, not measured learner time" };
+}
+
 export function buildTexasTimeEvidence({ form, topics, chapters, assessments, courseScenarios = [] }) {
   const r = TEXAS_TIME_RATES;
   const seen = new Set();
@@ -126,13 +153,14 @@ export function buildTexasTimeEvidence({ form, topics, chapters, assessments, co
   if (prescribed !== form.totalMinutes) throw new Error("Outline topic minutes do not match the official total");
   const scenarioCount = capstones + rows.reduce((sum, row) => sum + row.scenarios, 0);
   const timeModelPass = rows.every(row => row.meetsTopicTimeModel);
-  const assessmentCountPass = rows.every(row => row.meetsMinimumQuizCount) && scenarioCount >= Math.ceil(form.courseHours / 10);
+  const scenarioSpacing = inspectTexasScenarioSpacing({ form, rows, capstones });
+  const assessmentCountPass = rows.every(row => row.meetsMinimumQuizCount) && scenarioCount >= Math.ceil(form.courseHours / 10) && scenarioSpacing.pass;
   return {
     schemaVersion: 1, generatedBy: "scripts/lib/texas-course-evidence.mjs", form: form.formNumber,
     status: timeModelPass && assessmentCountPass ? "PROVIDER_ESTIMATE_MEETS_OUTLINE_NOT_APPROVAL" : "INCOMPLETE",
     rateBasis: { ...r, status: "PROVIDER_PLANNING_ASSUMPTIONS_NOT_OBSERVED_STUDENT_TIME", timeStudyPerformed: false },
     accounting: "Instruction, exercises, recap, optional content, references and metadata are disjoint. Only actual authored primary instruments count. Every topic must independently meet its outline allocation.",
-    rows, scenarioCount, capstones, topicSeconds, courseLevelSeconds,
+    rows, scenarioCount, scenarioSpacing, capstones, topicSeconds, courseLevelSeconds,
     grandSeconds: topicSeconds + courseLevelSeconds,
     topicMinutes: minutes(topicSeconds), courseLevelMinutes: minutes(courseLevelSeconds),
     grandMinutes: minutes(topicSeconds + courseLevelSeconds), prescribedMinutes: prescribed,

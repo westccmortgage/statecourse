@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { inspectTexasChapter, buildTexasTimeEvidence } from "../scripts/lib/texas-course-evidence.mjs";
+import { inspectTexasChapter, buildTexasTimeEvidence, inspectTexasScenarioSpacing } from "../scripts/lib/texas-course-evidence.mjs";
 
 const chapter = `# Module 01
 Not timed front matter.
@@ -68,4 +68,19 @@ test("same instrument counted twice or an empty planned shell refuses reporting"
   assert.throws(() => buildTexasTimeEvidence(args), /duplicate instrument/);
   args.courseScenarios = [{ id: "shell" }];
   assert.throws(() => buildTexasTimeEvidence(args), /authored prompt/);
+});
+
+test("scenario quantity cannot conceal a gap exceeding ten outline credit hours", () => {
+  const form = { totalMinutes: 1500, courseHours: 30 };
+  const rows = [1, 2, 3, 4, 5, 6].map(i => ({ topicCode: `T0${i}`, prescribedMinutes: 250, modeledMinutes: 280, scenarios: 0 }));
+  rows[5].scenarios = 3;
+  assert.equal(inspectTexasScenarioSpacing({ form, rows }).pass, false);
+  rows[5].scenarios = 1; rows[1].scenarios = 1; rows[3].scenarios = 1;
+  const spaced = inspectTexasScenarioSpacing({ form, rows });
+  assert.equal(spaced.pass, true);
+  assert.equal(spaced.maximumGapHours, 10);
+  assert.equal(spaced.checkpoints[0].modeledEndMinutes, 560);
+  assert.equal(spaced.checkpoints[0].outlineCreditHour, 10);
+  rows[3].scenarios = 0;
+  assert.equal(inspectTexasScenarioSpacing({ form, rows }).pass, false);
 });

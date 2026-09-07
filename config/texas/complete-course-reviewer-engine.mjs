@@ -4,6 +4,7 @@
  * It must never be imported by a public practice bundle: the definition includes protected keys.
  * Production enrollment, payment, final administration and certificates are deliberately absent.
  */
+import { prepareTexasFinal } from "./complete-course-exam-delivery.mjs";
 const copy = record => structuredClone(record);
 const nonempty = value => typeof value === "string" && value.trim().length > 0;
 const instant = value => {
@@ -20,6 +21,7 @@ export function createTexasReviewerEngine(definition) {
   const units = new Map(topics.flatMap(topic => topic.units.map(unit => [unit.code, topic.code])));
   const finalById = new Map(bank.map(item => [item.id, item]));
   const versionIds = Object.keys(forms);
+  const delivery = new Map(versionIds.map(version => [version, prepareTexasFinal({ bank, itemIds: forms[version], version, freeze })]));
   const scenarioTopic = scenario => scenario.afterTopic ?? scenario.placement?.afterTopic;
   const courseLevel = scenario => scenario.courseLevel === true || scenario.placement?.timeAttribution === "COURSE_LEVEL";
   const unitOf = item => item.tests ?? item.unitCode ?? item.unit;
@@ -120,7 +122,7 @@ export function createTexasReviewerEngine(definition) {
         passed = response === task.correctChoice;
       } else if (task.type === "computation") {
         if (typeof response !== "number" || !Number.isFinite(response)) fail("computation requires a finite number");
-        const answer = task.answer ?? task.correctValue;
+        const answer = task.answer ?? task.correctValue ?? task.expected;
         const tolerance = task.tolerance ?? 0;
         if (!Number.isFinite(answer) || !Number.isFinite(tolerance) || tolerance < 0) fail("invalid authored computation rubric");
         passed = Math.abs(response - answer) <= tolerance;
@@ -189,16 +191,24 @@ export function createTexasReviewerEngine(definition) {
       attempt.submittedAt = next.at; attempt.expired = true; next.status = "DROPPED_NO_CREDIT";
       return event(next, "subsequent-final.expired");
     }
-    const itemIds = forms[attempt.version];
-    if (!answers || Object.keys(answers).length !== itemIds.length || itemIds.some(id => !chosen(answers[id], finalById.get(id)?.choices ?? []))) fail("answer every final item with a valid choice");
-    const missed = itemIds.filter(id => answers[id] !== finalById.get(id).correctChoice);
-    attempt.submittedAt = next.at; attempt.correct = itemIds.length - missed.length; attempt.total = itemIds.length;
-    attempt.passed = attempt.correct * 100 >= itemIds.length * 70;
+    let result;
+    try { result = delivery.get(attempt.version).grade(answers); }
+    catch { fail("answer every final item with a valid choice"); }
+    const { missed } = result;
+    attempt.submittedAt = next.at; attempt.correct = result.correct; attempt.total = result.total;
+    attempt.passed = attempt.correct * 100 >= result.total * 70;
     next.status = attempt.passed ? "PASSED_NON_CREDIT" : attempt.number === 2 ? "RETAKE_REQUIRED" : "REMEDIATION_REQUIRED";
     if (!attempt.passed && attempt.number === 1) {
       next.remediation = { prescribedUnits: [...new Set(missed.map(id => unitOf(finalById.get(id))))], completedUnits: [] };
     }
     return event(next, "final.submitted", { number: attempt.number, correct: attempt.correct, total: attempt.total, passed: attempt.passed, creditEligible: false });
+  }
+  function getFinalQuestions(record) {
+    const next = guard(record, record.at);
+    identity(next);
+    const attempt = next.finalAttempts.at(-1);
+    if (next.status !== "FINAL_OPEN" || !attempt || attempt.submittedAt) fail("no open final attempt");
+    return copy(delivery.get(attempt.version).questions);
   }
   function completeRemediationUnit(record, { unitCode, evidenceRef, replacementAnswers, at }) {
     const next = guard(record, at);
@@ -220,6 +230,6 @@ export function createTexasReviewerEngine(definition) {
         total: attempt.total ?? null, passed: attempt.passed ?? false, expired: attempt.expired ?? false })) };
   }
   return Object.freeze({ openReviewer, recordIdentityCheck, readUnit, answerQuiz, reviewMisconception, gradeScenario,
-    completeTopic, completeCoursework, openFinalAttempt, submitFinal, completeRemediationUnit, publicAudit,
+    completeTopic, completeCoursework, openFinalAttempt, getFinalQuestions, submitFinal, completeRemediationUnit, publicAudit,
     openEnrollment: blocked, takePayment: blocked, issueCertificate: blocked, reportCredit: blocked });
 }

@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createTexasReviewerEngine } from "../config/texas/complete-course-reviewer-engine.mjs";
+import { prepareTexasFinal } from "../config/texas/complete-course-exam-delivery.mjs";
 
 const at = "2026-09-07T12:00:00.000Z";
 const choices = ["Correct", "Wrong one", "Wrong two", "Wrong three"];
@@ -39,7 +40,12 @@ function ready(engine) {
   return engine.completeCoursework(state, { at });
 }
 function finalAnswers(definition, state, correct = 60) {
-  return Object.fromEntries(definition.forms[state.finalAttempts.at(-1).version].map((id, index) => [id, index < correct ? 0 : 1]));
+  const version = state.finalAttempts.at(-1).version;
+  const view = prepareTexasFinal({ bank: definition.bank, itemIds: definition.forms[version], version, freeze: definition.freeze });
+  return Object.fromEntries(view.questions.map((item, index) => {
+    const correctIndex = item.choices.indexOf("Correct");
+    return [item.id, index < correct ? correctIndex : (correctIndex + 1) % 4];
+  }));
 }
 function firstFailure(engine, definition) {
   let state = engine.openFinalAttempt(ready(engine), { at });

@@ -58,7 +58,7 @@ const banks = await Promise.all(
 );
 
 test("every question bank in the project is found and carries items", () => {
-  assert.equal(bankFiles.length, 27, `expected 27 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
+  assert.equal(bankFiles.length, 28, `expected 28 question banks, found ${bankFiles.length}: ${bankFiles.join(", ")}`);
   for (const bank of banks) {
     assert.ok(bank.items.length > 0, `${bank.file} yielded no items — its shape changed and this walk no longer reaches them`);
   }
@@ -181,5 +181,6 @@ test("the project's authored item count is what the state builds add up to", () 
      § 535.62(b)(7)(C)(ii) requires. They are 116 distinct objects with 116 distinct prompts, so the
      walk is counting items rather than copies — which is the failure this file's flat-view note
      warns about, and is why that bank exports its flat views as functions. */
-  assert.equal(total, 2656, `the banks now hold ${total} items, not 2656; update this figure deliberately when a bank changes`);
+  // 2026-09-07: PCF adds 65 primaries and 65 distinct related replacements; aliases are functions.
+  assert.equal(total, 2786, `the banks now hold ${total} items, not 2786; update this figure deliberately when a bank changes`);
 });
