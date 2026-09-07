@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v8`
+**Manifest:** `NC-PHASE0-2026-09-07-v10`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -11,11 +11,14 @@ verification state for every source used in Phase 0.
 
 ## Authority order
 
-1. North Carolina General Statutes.
+1. North Carolina General Statutes and enacted session laws.
 2. Current North Carolina Administrative Code text published by OAH.
-3. NCREC prescribed syllabus and current application portal/form.
-4. NCREC guidance, used only to establish currency or explain a workflow.
-5. NCREC market data, used only for market sizing.
+3. Controlling federal statutes and regulations for federal topics.
+4. North Carolina State Bar authorized-practice authority for the lawyer/nonlawyer boundary.
+5. NCREC prescribed syllabus and current application portal/form.
+6. NCREC guidance, used only to establish currency or explain a workflow.
+7. Rights-holder form indexes, used only to establish form identity, revision and access status.
+8. NCREC market data, used only for market sizing.
 
 No commercial school, law-firm summary, aggregator, or search snippet is controlling authority.
 
@@ -71,6 +74,14 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Underground-storage-tank responsibility | G.S. Chapter 143 Article 21A | §§143-215.94A, 143-215.94E | [Article 21A](https://www.ncleg.gov/EnactedLegislation/Statutes/html/byarticle/chapter_143/article_21a.html) |
 | Trust money and accounting | G.S. 93A-6(g), 93A-12; 21 NCAC 58A .0110, .0116-.0118, .1808 | deposit, custody, dispute, records, association funds and limited-nonresident delivery | [§93A-6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-6.html), [§93A-12](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-12.html), [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
 | Broker drafting boundary | G.S. 93A-4(e), 93A-6(a)(11), 84-2.1; 21 NCAC 58A .0111 | party-directed preprinted forms versus independent drafting/advice | [§84-2.1](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_84/GS_84-2.1.html), [OAH .0111](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0111.pdf) |
+| Broker-provided offer form | 21 NCAC 58A .0112; S.L. 2025-52 §4 | 18 required subjects; specified compensation provision permitted; liability disclaimer prohibited | [OAH .0112](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0112.pdf), [Session Law 2025-52](https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2025-52.html) |
+| Good-funds closing vocabulary and disbursement | G.S. Chapter 45A | §§45A-3(5), (14), 45A-4 | [Chapter 45A](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_45A.html) |
+| Owner residential disclosures | G.S. Chapter 47E; 58A .0114 | coverage, statements, timing, cancellation and separate broker duty | [Chapter 47E](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_47E.html), [OAH .0114](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0114.pdf) |
+| Residential closing legal services | G.S. 10B-134.25; State Bar AP AO 2002-1 | lawyer supervision, legal/ministerial boundary, party selection | [§10B-134.25](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_10B/GS_10B-134.25.html), [State Bar opinion](https://www.ncbar.gov/for-lawyers/ethics-and-governing-rules/ethics-opinions/opinions/authorized-practice-advisory-opinion-2002-1/) |
+| Closing Disclosure | 12 C.F.R. §1026.19(f) | creditor responsibility, three-business-day receipt and restart triggers | [CFPB Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/19/) |
+| Flood mandatory purchase | interagency FDPA guidance | building/mobile-home location, not parcel edge alone | [FDIC examination manual](https://www.fdic.gov/consumer-compliance-examination-manual/v-6-flood-disaster-protection-act) |
+| Current joint forms | NC REALTORS® rights-holder index and 2026 change summary | current identity/revision risk; member-restricted form text remains uncaptured | [Forms Library](https://www.ncrealtors.org/legal-ethics/forms-contracts/document-library/?_forms_and_contracts=joint-forms), [2026 changes](https://www.ncrealtors.org/question/summary-of-2026-changes-to-nc-realtors-residential-forms/) |
+| Septic-permit advertising | NCREC guidance; G.S. 93A-6(a)(1) | permitted bedrooms and known record limitations | [NCREC guidance](https://bulletins.ncrec.gov/septic-permits-a-refresher/) |
 | Competing-offer disclosure | 21 NCAC 58A .0115; NCREC guidance | offeror authority for price/terms; seller direction for existence message | [OAH .0115](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0115.pdf), [2025 guidance](https://bulletins.ncrec.gov/navigating-multiple-offers/) |
 | Material-fact boundaries | G.S. 39-50; NCREC polybutylene guidance | statutory stigma exclusions, truthfulness and known/probable pipe defects | [G.S. Chapter 39 Article 9](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_39/Article_9.html), [2025 guidance](https://bulletins.ncrec.gov/polybutylene-pipes-is-the-mere-presence-material/) |
 | North Carolina broker discrimination rules | 21 NCAC 58A .0120(d), .1601 | protected-basis brokerage conduct and State Fair Housing Act violation | [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
@@ -91,7 +102,8 @@ On September 7, Modules NC-02 and NC-05 added current official standalone-rule e
 .0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
 publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
 later expanded again during the Module NC-10 pass to include Rules .0111 and .0115-.0118, .1601 and
-.1808 plus the LLCR route. It now contains 40 PDF source entries across 38 unique URLs. Two September 6
+.1808 plus the LLCR route, and the Module NC-11 pass added Rule .0112. It now contains 41 PDF source
+entries across 39 unique URLs. Two September 6
 snapshots are retained, but validation requires the configured PDF interpreter and their page reviews
 are stale against the September 7 control date; the current reviewed count is zero.
 
@@ -139,6 +151,15 @@ blanket present-landowner UST-liability claim, an overbroad drafting rule, a gen
 association trust-account statement, the BIC payer shortcut, and the attribution of all offer-
 disclosure propositions to Rule .0115. The LLCR Comments, full State Fair Housing Act pass and the
 Interstate Land Sales topic remain explicit filing gates.
+
+Module NC-11 was reconciled on September 7 to current Rule 58A .0112 and Session Law 2025-52,
+Chapters 45A and 47E, the residential-closing attorney authorities, Regulation Z, interagency flood
+guidance, current rights-holder form indexes and Commission septic guidance. The pass corrected the
+obsolete 19-item/two-prohibition rule account, separated statutory from form vocabulary for Settlement
+and Closing, separated prompt offer presentation from the three-day executed-document delivery rule,
+corrected creditor/settlement-agent roles and the parcel-edge flood shortcut, and delivered worked
+earnest-money and possession activities. Current Form 2-T, the Guidelines and addenda remain an
+unmet paragraph-review gate because the member-restricted documents were not obtained.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

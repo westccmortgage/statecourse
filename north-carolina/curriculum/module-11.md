@@ -40,12 +40,14 @@ Commission's recommended 18.0 hours for the Contracts and Closing subject area.
 1. State the general rules for interpreting contracts.
 2. State the prohibition on drafting and what a broker may lawfully do with a preprinted form.
 3. State where standardized forms come from and which forms the Commission itself authors.
-4. State the two provisions Commission Rule 58A .0112(b) prohibits in a broker-provided form.
+4. Reconcile the current 18-item Rule 58A .0112(a) list and the 2025 compensation amendment with the
+   older 19-item/two-prohibition syllabus wording.
 5. **Explain the North Carolina due diligence model and why it differs from a contingency model.**
    *(Level 3)*
 6. Distinguish the Due Diligence Fee from the Earnest Money Deposit.
 7. Distinguish Settlement from Closing.
-8. **Apply the 3-day offer delivery rule and the offer-disclosure rules.** *(Level 3)*
+8. **Separate prompt offer presentation from Rule .0106's three-day executed-instrument delivery and
+   apply the offer-disclosure rules.** *(Level 3)*
 9. Describe the settlement agent's role and what a broker provides them.
 10. Work through the buyer's due diligence process and the pre-closing matters.
 11. State the broker's settlement statement responsibility.
@@ -66,16 +68,22 @@ Six, transcribed:
 - **The writer of ambiguous language will be held liable for the confusion; the court generally rules in
   favour of the party that did NOT draft the confusing language.**
 
-**The last two together explain why a broker must not write into a form.** Handwriting overrides the
-preprinted text, and ambiguity is construed against whoever wrote it — so an improvised sentence both
-outranks the professionally drafted form and is read against the person who added it.
+**The last two together explain why a broker must not independently improvise legal language.** Rule
+58A .0111 allows a broker to complete a compliant preprinted form when a party authorizes or directs
+the broker to do so, and it allows a party-directed change to be marked on the form. It does not let the
+broker decide what legal language the party needs, rewrite the form in advance, or interpret its legal
+effect. Route unique language and legal-effect questions to a North Carolina attorney.
 
 ### A.2 Drafting by brokers is prohibited
 
 NCGS 93A-6(a)(11); Commission Rule 58A .0111; NCGS 84-2.1.
 
-- **Drafting constitutes unauthorized practice of law.**
-- **"Brokers are legally permitted to 'fill in the blanks' of preprinted forms."**
+- **Preparing a legal instrument or giving legal advice for another person is unauthorized practice of
+  law unless a statutory exception applies.**
+- **Rule 58A .0111 permits a broker-agent to complete a preprinted offer, option, sales-contract or lease
+  form when authorized or directed by the parties.** The broker may record a party-directed change on
+  the form, but may not alter the preprinted form before presentation or independently compose the
+  change.
 - **Instructor Note:** *"Have an attorney draft any unique contract language."*
 
 ### A.3 Sources of standardized sales contract forms
@@ -97,27 +105,48 @@ does not control:**
 > - ***Residential Property and Owners' Association Disclosure Statement (RPOADS)***
 > - ***Mineral and Oil and Gas Mandatory Disclosure Statement (MOG)***"
 
-**Three Commission forms. Everything else in a North Carolina residential file comes from NC REALTORS®
-and the North Carolina Bar Association.** *(None of the three Commission forms was obtained for this
-project; each is recorded as a gap.)*
+**Those are the three Commission-authored forms identified by the syllabus.** Do not infer that every
+other document in every residential file comes from one publisher; lenders, settlement counsel,
+inspectors, insurers, associations and public agencies may supply other transaction documents. The
+standard offer and addenda assigned here are joint NC REALTORS®/North Carolina Bar Association forms.
+None of the three Commission-authored forms has been retained and reviewed in this project.
 
 ---
 
 ## B. The Offer to Purchase and Contract *(Level 3)*
 
-### B.1 Requirements for preprinted sales contract forms provided by a broker — Rule 58A .0112
+### B.1 Current requirements for a broker-provided preprinted sales form — Rule 58A .0112
 
-- **The form must include 19 items/issues required by rule.** **Instructor Note:** *"Students do NOT
-  need to know the actual 19 items for the exam."*
-- **Prohibited provisions — Rule 58A .0112(b):**
-  1. **Brokerage compensation.**
-  2. **Liability disclaimer of the broker.**
-- **Prohibition against a broker including prohibited provisions or drafting contract language, EVEN AT
-  THE INSTRUCTION OF A CLIENT.**
+The May 2026 syllabus still says the rule contains **19** required items and prohibits both brokerage
+compensation and a broker-liability disclaimer. The current controlling sources no longer say that:
 
-**The two prohibited provisions are worth understanding rather than memorising.** A broker's
-compensation is not the buyer's and seller's business to settle in their purchase contract, and a broker
-may not insert a clause disclaiming their own liability into the parties' agreement.
+- **Rule 58A .0112(a) now contains 18 numbered items, not 19.** They cover party/property identity,
+  personal property, price/payment, financing or assumption terms if used, earnest money, assessments,
+  closing/possession, signatures and dates, title/conveyance, prorations, expenses, inspection/repairs,
+  condition at closing, brokerage identity/agency, and other disclosures required by law. The syllabus
+  says students need not memorize the list, but the provider must teach the current rule rather than
+  preserve the obsolete count.
+- **Session Law 2025-52 directed the Commission to allow** a broker-agent to use a preprinted offer or
+  sales contract containing a provision for commission or compensation, including forfeiture of
+  earnest money, to a broker or firm. Current Rule .0112(b)(1) now says the broker **may** use such a
+  preprinted form.
+- **Rule .0112(b)(2) still prohibits** a preprinted provision attempting to disclaim a broker's
+  liability for the broker's representations in the transaction.
+- This change does **not** authorize independent broker drafting. Rule .0111 still controls completion
+  and party-directed changes; legal drafting and advice go to counsel.
+
+#### B.1a Level 3 evidence — current-rule reconciliation
+
+| Source presented | Student classification | Operational result |
+|---|---|---|
+| syllabus says 19 items | older prescribed-course wording | flag the discrepancy; do not teach 19 as current rule text |
+| current Rule .0112(a) numbers 1-18 | controlling administrative rule | use 18 for compliance review |
+| syllabus says compensation provision prohibited | superseded syllabus statement | do not use as the current answer |
+| Session Law 2025-52 and current Rule .0112(b)(1) say `may use` | controlling current law/rule | a compliant preprinted compensation provision is permitted |
+| Rule .0112(b)(2) bars a broker-liability disclaimer | controlling current rule | reject the form/provision and route correction to counsel |
+
+**Student output:** identify the source, effective sequence and action for each row. A statement that
+the current rule still prohibits two provisions fails the exercise.
 
 ### B.2 Proper use of the OPC form
 
@@ -147,8 +176,10 @@ rule says ambiguity is construed against the person who created it.
 
 ### B.4 The structural facts about the North Carolina contract
 
-**This is what a student must understand about how the North Carolina residential contract works. Every
-statement here is the Syllabus's own; none is a description of the form's text.**
+**This is the syllabus's account of the residential contract model.** It is not a substitute for the
+required review of the current form itself. The current 2026 Form 2-T and Form 2G downloads are listed
+by NC REALTORS® but require member access; this repository has not lawfully obtained and page-reviewed
+those files.
 
 #### Defined terms
 
@@ -219,25 +250,42 @@ differently. **The DDF is paid for the due diligence right; the EMD is a deposit
 > 58A .0116(b)(3-4)** regarding following Buyer's instructions for delivery to and the timing of deposit
 > by the Escrow Agent."*
 >
-> **Worked activity:** classify the payee, instrument and offer status before starting the clock.
-> Ordinary trust money with no exception is deposited within three **banking** days after receipt.
-> Non-currency EMD received with a pending offer is deposited no later than three days after acceptance.
-> A check payable to the seller for an option or due diligence fee, or to the designated escrow agent,
-> is delivered or returned under the buyer's instructions and may not be retained beyond three business
-> days after contract acceptance. A provisional broker delivers money upon receipt to the affiliated
-> broker. Record receipt, acceptance, buyer instruction, delivery and deposit separately.
+> **Worked activity:** classify the payee, instrument, recipient's license status and offer status before
+> starting any clock.
+>
+> | Scenario | Rule .0116 result | Evidence to record |
+> |---|---|---|
+> | active broker receives ordinary trust money; no exception applies | deposit in a qualifying trust/escrow account no later than three **banking** days after receipt | amount, form, receipt time, account and deposit time |
+> | provisional broker receives any trust money | deliver it **upon receipt** to the affiliated broker | receipt and handoff times |
+> | non-currency initial EMD accompanies a pending offer | deposit no later than three days after acceptance; the agreement states the acceptance date | offer status, acceptance date and deposit time |
+> | non-currency additional EMD is received after the contract is already effective | the pending-offer exception does not fit; apply the ordinary three-banking-day baseline unless another exception does | contract status, receipt and deposit times |
+> | negotiable instrument is payable to seller for option/DDF or to designated escrow agent | safeguard it; follow the buyer's delivery/return instruction; do not retain it more than three business days after contract acceptance | payee, buyer instruction, acceptance and delivery/return times |
+>
+> Contractual deadlines for initial or additional EMD are separate from the broker-custody rules above.
+> The unavailable current Form 2-T and Form 2G must be reviewed before teaching their contractual due
+> dates. Do not manufacture a form deadline from Rule .0116.
 
 **Disputed EMD** — NCGS 93A-12; Rule 58A .0116(d). Module NC-10.
 
-#### Settlement is not Closing
+#### Settlement and Closing — identify which source owns the vocabulary
 
 **Instructor Note, transcribed:** *"**The settlement meeting and closing do not always happen on the same
 day**, especially if settlement occurs late in the day."*
 
-**Two separate defined events**, and a licensee who uses the words interchangeably will mislead a client
-about when they get keys. **Instructor Note on possession:** *"If possession date is critical to Buyer,
-**Settlement should be scheduled so that there is sufficient time for Closing to occur before desired
-possession date**."*
+The syllabus uses **Settlement** and **Closing** as two separate capitalized contract concepts and warns
+that possession should not be promised before the later event contemplated by the form. The current
+form must supply the exact contractual definitions; it has not been obtained here.
+
+Do not cite the Good Funds Settlement Act as if it used those terms the same way. **G.S. 45A-3 has its
+own statutory vocabulary:** it defines *Closing* as the agreed execution and delivery of the documents
+needed to consummate the transaction, and *Settlement* as the time the settlement agent has received
+the executed deed, security instrument, other loan documents and required funds. **G.S. 45A-4 then
+separately requires recordation and generally bars disbursement of other closing funds until required
+documents are recorded and collected-funds conditions are met.**
+
+**Broker practice rule:** name the source whenever using either term. Do not promise possession,
+recordation or disbursement from the label alone; verify the current contract, counsel's status report,
+the funds and the land records.
 
 #### Other structural notes the Syllabus states
 
@@ -288,21 +336,39 @@ affect the parties' legal rights.**"*
 > happens if the transaction does not close**. Remind brokers to **encourage their clients to consult an
 > attorney** about risks/implications of possession before/after closing."*
 >
-> **This activity must be completed.** Module NC-04 E.2 supplies the insurance half: the **Unoccupied
-> Building Exclusion**, the need to **keep insurance in place until recordation/closing**, and the risk
-> that **failure to have proper coverage may leave the property uninsured for some period.**
+#### B.5a Required Activity evidence — possession away from Closing
 
-**None of the eight addenda was obtained for this project and none is described.**
+The activity is a risk-classification exercise, not permission to draft an occupancy agreement:
+
+| Timing | Possible advantage | Risks that must be surfaced | If the sale never closes |
+|---|---|---|---|
+| buyer enters before the form-defined Closing | move or repair schedule may start earlier | buyer has possession before title; casualty, liability, property-condition, lender, utility and insurance responsibilities may not align | the buyer may have to leave and disputes may arise over damage, improvements, payment, personal property and restoration |
+| seller remains after the form-defined Closing | seller gains moving time and buyer may preserve the transaction schedule | buyer owns while seller occupies; coverage, liability, keys/access, damage, utilities, payment/security and holdover must be addressed | this row applies only if title transferred; failure to surrender possession becomes a fact-specific legal enforcement issue |
+
+For either row, the broker identifies the risks, confirms insurer and lender requirements, recommends
+separate legal advice, and uses only the current authorized standard addendum or attorney-drafted
+agreement. The broker does not promise that an ordinary homeowner policy covers the arrangement and
+does not draft eviction, holdover, indemnity, repair or default language. The actual Forms 2A7-T and
+2A8-T remain required-review artifacts.
+
+**None of the eight syllabus-named addenda was obtained for this project and none is described.** The
+current forms library also shows 2026 revisions and additional forms beyond that eight-item syllabus
+list, so the filing review must reconcile the syllabus with the then-current library rather than assume
+the list is exhaustive.
 
 ---
 
 ## C. Sales Contract Procedures *(Level 3)*
 
-### C.1 Submitting offers
+### C.1 Presenting an offer and delivering the executed instrument are separate duties
 
-- **All offers — including multiple offers and back-up offers — must be presented within 3 DAYS of the
-  broker's receipt of the executed offer** — Rule 58A .0106(a) — **even if the Property is already under
-  contract.**
+- Present every offer promptly, including multiple and backup offers and an offer received while the
+  property is under contract; do not rank, filter or hold it while negotiating compensation.
+- **Rule 58A .0106(a) is an instrument-delivery rule:** each broker delivers a copy of the executed offer
+  or other covered transaction document to that broker's own customer or client within three days after
+  receipt. An oral summary does not satisfy delivery of the written instrument.
+- Record receipt, presentation and document-delivery timestamps separately. “Present within three
+  days” collapses two duties and is not the rule text.
 
 ### C.2 Disclosure of an offer and its terms
 
@@ -320,23 +386,38 @@ affect the parties' legal rights.**"*
 
 - **Retain ALL offers, even if rejected, amended, or replaced** — Rule 58A .0108.
 
-### C.4 Delivery of a contract copy to all contract parties is required — Rule 58A .0106
+### C.4 Rule .0106 delivery runs to the broker's customer or client
+
+The rule does not say that one broker must deliver a copy to every party in the transaction. Each
+broker keeps evidence that the broker timely delivered the executed document to the customer or client
+served by that broker and supplied the firm file as separately required by Rule .0108.
 
 ---
 
 ## D. NC Closing Procedures
 
-### D.1 The settlement agent
+### D.1 Settlement agent, closing lawyer and party choice
 
-- **Selected by the buyer, to represent the buyer and the buyer's lender**; **may provide limited
-  services to the seller**, e.g. preparing the deed.
-- **The seller may elect to have their own attorney; more common in commercial transactions.**
+The syllabus describes the common pattern of a buyer-selected lawyer representing the buyer and lender
+and performing limited work for the seller. Treat that as a pattern, not a universal agency rule.
+
+- North Carolina State Bar Authorized Practice Advisory Opinion 2002-1 says a lawyer must provide the
+  legal services in a residential closing; a nonlawyer may perform only identified ministerial tasks
+  without legal judgment.
+- The lawyer must be selected by the party receiving the legal services. A broker may recommend or,
+  with actual authority, engage counsel, but should not silently choose counsel for a party.
+- A lawyer may sometimes represent more than one party only after the lawyer performs the required
+  conflict analysis and obtains the necessary consent. A broker does not decide that ethics question.
+- G.S. 10B-134.25 confirms that a North Carolina lawyer supervises the residential real estate closing
+  and performs the legal services that constitute practice of law.
 
 **Provide information to the settlement agent as soon as possible** — the Syllabus lists eight items:
 
 1. **A copy of the sales contract with all addenda and/or amendments.**
 2. **Contact information for all parties.**
-3. **Have the parties provide their social security numbers.**
+3. **Have the parties provide any required taxpayer-identification information directly to the
+   settlement professional through the professional's secure channel; the broker should not collect or
+   transmit it casually.**
 4. **Contact information for the buyer's lender.**
 5. **The seller's lender information for loan payoff.**
 6. **A copy of any survey.**
@@ -354,8 +435,11 @@ financing after the DDP is a buyer's breach.**
 
 - **The lender will usually require adequate homeowner insurance coverage in effect as of the day of
   closing.**
-- **A flood elevation certificate and flood insurance are usually required by the lender if ANY PART of
-  the financed property is in a FEMA special flood hazard zone.**
+- **The lender makes the flood-hazard determination.** The federal mandatory-purchase rule focuses on a
+  loan secured by an insurable **building or mobile home** located in a Special Flood Hazard Area; it is
+  not correctly stated as an automatic requirement merely because any edge of the parcel crosses the
+  map boundary. An elevation certificate may be relevant to rating or underwriting but is not a
+  universal requirement for every mapped parcel.
 - **Instructor Note, transcribed:** *"It is **extremely important** for the buyer and seller to have
   appropriate insurance coverage **when the closing is delayed, when the buyer will occupy the property
   before closing, or when the seller will occupy the property after closing.** Failure to have proper
@@ -364,6 +448,12 @@ financing after the DDP is a buyer's breach.**
 **Property inspections.** **Instructor Note:** *"Buyer should be advised to perform their own inspections
 **instead of only relying on the information in the Residential Property and Owners' Association
 Disclosure Statement**."*
+
+**Chapter 47E boundary:** for a covered transaction, the owner supplies the prescribed residential
+property and owners'-association disclosures no later than the buyer's offer, subject to the statute's
+coverage, exceptions and cancellation provisions. That owner-form process does not replace the
+broker's independent duty under Rule .0114 and G.S. 93A-6 to disclose material facts the broker knows
+or reasonably should know. The current Commission forms themselves remain required artifacts.
 
 - **Wood-destroying insect (termite) inspection.**
 - **Property inspection usually performed by qualified professionals** — **"as soon as possible to allow
@@ -410,11 +500,16 @@ undeveloped property; public or private status of subdivision streets; school as
 - **Clearing of title defects by the seller, if needed.**
 - **The loan closing package provided to the settlement agent by the buyer's lender.**
 - **Brokers perform an advance review of the settlement statement, if available.**
-- **Per the TRID rule, the lender must provide the Borrower's Closing Disclosure to the borrower at least
-  3 business days before** consummation.
+- **Under 12 C.F.R. § 1026.19(f), the creditor must ensure the consumer receives the Closing Disclosure
+  at least three business days before consummation.** A settlement agent may provide it for the creditor,
+  but the creditor remains responsible. Most later corrections do not restart the waiting period; an
+  inaccurate APR, inaccurate loan-product information or an added prepayment penalty does.
 
-*(And Module NC-10 B.6: **the broker must review the settlement statement for accuracy and notify all
-parties of any errors** — NCGS 93A-6(a)(14).)*
+**Broker control:** review transaction figures within the broker's competence, promptly route a
+suspected error to the client and the professional responsible for the affected figure, and document
+the correction. G.S. 93A-6(a)(14) directly disciplines failure to deliver a detailed and accurate
+closing statement to the broker's own client; it does not make the broker the creditor, settlement
+agent or closing lawyer.
 
 ---
 
@@ -423,9 +518,10 @@ parties of any errors** — NCGS 93A-6(a)(14).)*
 1. **Provide Form 2-T, the Guidelines, and the commonly used standard addenda to students, and conduct a
    detailed paragraph-by-paragraph review.** **← OUTSTANDING. Submission gate.**
 2. **Scenarios exploring initial and additional EMD handling and escrow delivery timing**, applying
-   Commission Rule 58A .0116(b)(3)–(4). **← Rule not obtained; submission gate.**
+   Commission Rule 58A .0116(b)(3)–(4). **← DELIVERED at B.4; current form deadlines remain gated.**
 3. **Discuss the advantages and disadvantages of possession at a time other than Closing**, addressing
-   insurance and what happens if the transaction does not close.
+   insurance and what happens if the transaction does not close. **← DELIVERED at B.5a; the current
+   standard addenda remain gated.**
 
 ## Module NC-11 engagement check
 
@@ -434,10 +530,11 @@ applied threshold are **StateCourse standards**; the **75 percent** end-of-cours
 Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
 
 **No item in this module tests the text of Form 2-T or of any addendum**, because this project has not
-read them. Items test the structural facts the Syllabus itself states — the due diligence model, the
-absence of financing and appraisal contingencies, DDF versus EMD, Settlement versus Closing, the
-addendum conflict rule, the 3-day delivery rule, the offer-disclosure rules, and the septic advertising
-rule.
+read them. Items test the structural facts the syllabus states and the current-law corrections above —
+the due diligence model, DDF versus EMD, source-specific Settlement/Closing vocabulary, Rule .0112's
+current 18-item/compensation treatment, the addendum conflict exceptions, the split
+presentation/delivery duties, the offer-disclosure rules, the closing-lawyer boundary, TRID and the
+septic advertising rule.
 
 ---
 
@@ -454,7 +551,9 @@ Commission-authored forms — the **WWREA Disclosure**, the **RPOADS**, and the 
 Mandatory Disclosure Statement (MOG)**. Current primary-text reconciliation has read **NCGS 93A-6**,
 **NCGS 84-2.1**, the applicable **NCGS Chapter 44A** lien-agent provisions, and Commission Rules
 **58A .0106 and .0108**; this module uses their narrow practice-of-law, delivery and retention rules.
-Current primary text now also includes **G.S. 93A-12** and Rules **58A .0111, .0115 and .0116**; the
-deposit/handling activity and competing-offer distinction above use that text. **Still not read for this
-module's full topic pass:** G.S. Chapter 47E; Rule .0112; and TRID / Regulation Z. No uncited standard-
-form provision, contract deadline or penalty is stated.
+Current primary text now also includes **G.S. 93A-12, Chapters 45A and 47E, G.S. 10B-134.25, Session
+Law 2025-52, Rules 58A .0111, .0112, .0115 and .0116, 12 C.F.R. § 1026.19(f), and North Carolina State
+Bar Authorized Practice Advisory Opinion 2002-1**. The EMD activity, current offer-form rule,
+presentation/delivery split, closing vocabulary, lawyer boundary, disclosure timing and Closing
+Disclosure treatment use those sources. FEMA/FDIC materials correct the parcel-edge flood-insurance
+shortcut. No uncited standard-form provision, contract deadline or penalty is stated.

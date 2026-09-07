@@ -9,10 +9,19 @@ const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
   assert.equal(NC_CONTROL_DATE, "2026-09-07");
-  assert.match(NC_MANIFEST_VERSION, /^NC-PHASE0-2026-09-07-v\d+$/);
-  assert.ok(NC_SOURCES.length >= 25);
-  assert.ok(NC_CLAIMS.length >= 20);
+  assert.equal(NC_MANIFEST_VERSION, "NC-PHASE0-2026-09-07-v10");
+  assert.equal(NC_SOURCES.length, 114);
+  assert.equal(NC_CLAIMS.length, 67);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
+});
+
+test("Module NC-11 current-law claims resolve to the added primary authorities", () => {
+  for (const id of ["NC-STAT-SL-2025-52", "NC-RULE-58A-.0112", "NC-STAT-45A", "NC-STAT-47E", "NC-STAT-10B-134.25", "NC-BAR-CLOSING-2002-1", "FED-CFPB-REGZ-1026.19", "FED-FDIC-FLOOD-MPR", "NC-NCR-FORMS-LIBRARY-2026", "NC-GUIDANCE-SEPTIC"]) {
+    assert.ok(northCarolinaSourceById(id), id);
+  }
+  for (const id of ["NC-C60", "NC-C61", "NC-C62", "NC-C63", "NC-C64", "NC-C65", "NC-C66", "NC-C67"]) {
+    assert.ok(NC_CLAIMS.some((claim) => claim.id === id), id);
+  }
 });
 
 test("every source carries required provenance and verification fields", () => {
@@ -94,14 +103,14 @@ test("distance plan requires orientation, persistent navigation, sequential asse
 
 test("timing report fails the present course instead of trusting planned-hour labels", () => {
   const report = read("north-carolina/submission/09-timing-evidence-report.md");
-  assert.match(report, /62,907/);
+  assert.match(report, /64,191/);
   assert.match(report, /810,000/);
   assert.match(report, /must not be submitted or advertised as 75 hours/i);
   const timing = getNorthCarolinaCourse().timingEvidence;
   assert.equal(timing.validated, false);
   assert.equal(timing.commissionReadingRateWordsPerMinute, 225);
-  assert.equal(timing.curriculumBaselineWords, 62907);
-  assert.equal(timing.curriculumBaselineMinutes, 279.59);
+  assert.equal(timing.curriculumBaselineWords, 64191);
+  assert.equal(timing.curriculumBaselineMinutes, 285.29);
 });
 
 test("certificate gate now requires every provider-level approval and operational proof", () => {

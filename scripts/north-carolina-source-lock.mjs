@@ -29,8 +29,11 @@ const allowedHosts = new Set([
   "www.justice.gov",
   "training.fema.gov",
   "www.consumerfinance.gov",
+  "www.fdic.gov",
   "www.deq.nc.gov",
-  "epi.dph.ncdhhs.gov"
+  "epi.dph.ncdhhs.gov",
+  "www.ncbar.gov",
+  "www.ncrealtors.org"
 ]);
 const requiredDocs = [
   "north-carolina/regulatory/official-sources.md",

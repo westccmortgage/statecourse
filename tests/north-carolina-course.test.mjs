@@ -613,12 +613,29 @@ test("Module NC-10 reconciles current brokerage-practice law and supplies audita
   assert.match(bank.remediation[2].choices[0], /offeror's express authority/i);
 });
 
-test("the two contract-structure facts a broker cannot get wrong are stated in Module NC-11", () => {
+test("Module NC-11 reconciles current contract, closing and transaction-practice authorities", () => {
   const eleven = readModule("module-11");
   assert.match(eleven, /NO FINANCING OR APPRAISAL CONTINGENCIES/i);
   assert.match(eleven, /[Dd]ue [Dd]iligence/);
-  assert.match(eleven, /Settlement/);
-  assert.match(eleven, /Closing/);
+  assert.match(eleven, /Rule 58A \.0112\(a\) now contains 18 numbered items/i);
+  assert.match(eleven, /Session Law 2025-52/);
+  assert.match(eleven, /broker may.*use such a preprinted form/is);
+  assert.match(eleven, /liability for the broker's representations/i);
+  assert.match(eleven, /G\.S\. 45A-3 has its own statutory vocabulary/i);
+  assert.match(eleven, /G\.S\. 45A-4 then separately requires recordation/i);
+  assert.match(eleven, /B\.5a Required Activity evidence — possession away from Closing/i);
+  assert.match(eleven, /creditor must ensure the consumer receives the Closing Disclosure/i);
+  assert.match(eleven, /building or mobile home.*Special Flood Hazard Area/is);
+  assert.match(eleven, /Presenting an offer and delivering the executed instrument are separate duties/i);
+  assert.doesNotMatch(eleven, /Rule 58A \.0112\(b\).*1\. \*\*Brokerage compensation/is);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "XI");
+  assert.equal(activities.length, 3);
+  assert.deepEqual(activities.map((activity) => activity.status), ["outstanding", "delivered", "delivered"]);
+  assert.match(activities[2].evidencePath, /module-11\.md#b5a/i);
+  const bank = BANK["module-11"];
+  assert.equal(1 + bank.engagement.length + bank.remediation.length, 11);
+  assert.match(bank.remediation[0].choices[0], /current Rule \.0112 allows a preprinted broker-compensation provision/i);
+  assert.match(bank.engagement[2].choices[0], /source-specific definitions/i);
 });
 
 test("the material fact rules that run against intuition are stated in Modules NC-10 and NC-15", () => {

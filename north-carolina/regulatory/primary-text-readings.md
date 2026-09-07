@@ -537,6 +537,38 @@ The module now contains four worked Level 3 evidence paths plus the prescribed c
 party comparison. Remaining filing gates are the current LLCR Comments, full state fair-housing pass,
 the Interstate Land Sales topic, and authentic local PDF capture/review.
 
+## Module NC-11 reconciliation — current primary text read 2026-09-07
+
+Section XI was checked against the current official text and rights-holder index instead of treating
+the May 2026 syllabus as the last word where later law controls:
+
+- **Session Law 2025-52 §4 and current Rule 58A .0112:** the current rule has 18 numbered required
+  subjects and allows the specified preprinted commission/compensation provision. The rule still bars
+  an attempted disclaimer of broker liability for the broker's representations. This supersedes the
+  syllabus's older 19-item/two-prohibition wording.
+- **Rule 58A .0111:** a broker-agent may complete a compliant preprinted form under party direction,
+  but may not independently draft legal language or pre-alter the form.
+- **G.S. Chapter 45A:** its definitions of Closing and Settlement are statutory and source-specific;
+  §45A-4 separately controls recordation and general disbursement. They are not represented as the
+  unseen current form's capitalized definitions.
+- **G.S. Chapter 47E and Rule 58A .0114:** the covered owner supplies the prescribed disclosures under
+  the statute's timing/cancellation scheme, while the broker retains an independent material-fact duty.
+- **G.S. 10B-134.25 and State Bar AP AO 2002-1:** a North Carolina lawyer supervises the residential
+  closing and performs legal work; nonlawyer tasks are ministerial and the recipient of legal services
+  selects counsel.
+- **12 C.F.R. §1026.19(f):** the creditor remains responsible for timely Closing Disclosure receipt
+  even if the settlement agent provides it; only the listed APR, loan-product and prepayment-penalty
+  changes restart the waiting period.
+- **Federal interagency flood guidance:** mandatory purchase follows the building or mobile home in an
+  SFHA, not merely an edge of the lot; lender and map determinations remain transaction-specific.
+- **Current NC REALTORS® form index/change summary and NCREC septic guidance:** the 2026 form set has
+  changed and remains member-restricted, while advertised bedrooms must not exceed the available septic
+  permit and known permit-record gaps must be disclosed.
+
+The EMD and possession Required Activities now have stable worked evidence. The current Form 2-T,
+Guidelines and addenda themselves remain unavailable, so the Commission-prescribed paragraph review
+is still a filing gate and no proprietary form text is reconstructed.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -545,12 +577,12 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-10 were reconciled on 2026-09-07 to their applicable
-  applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery
-  and records rules. The remaining modules still need topic-level reconciliation, and the official PDF
+  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-11 were reconciled on 2026-09-07 to their applicable
+  applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery,
+  records, offer-form, trust-money and closing rules. The remaining modules still need topic-level reconciliation, and the official PDF
   bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
-  93A-6 and Article 3. Modules NC-01, NC-05, NC-07 and NC-10 were reconciled to their applicable
+  93A-6 and Article 3. Modules NC-01, NC-05, NC-07, NC-10 and NC-11 were reconciled to their applicable
   provisions on 2026-09-07. Module NC-09 was separately reconciled to current federal fair-housing,
   civil-rights, accessibility, telemarketing and antitrust authorities; the other topic-level
   reconciliations remain open.
@@ -568,17 +600,19 @@ documents rather than a substitute for them.**
   were inspected for Module NC-08, but the disclosure form still requires authentic local bytes and
   page review before filing. No proprietary layout is reproduced.
 - **NC REALTORS® Offer to Purchase and Contract — Standard Form 2-T**, and every other standard form.
-  The Syllabus devotes Section XI to the Offer to Purchase and Contract. **This project has not read
-  Form 2-T and no document in this build reproduces, describes or paraphrases any provision of it.**
+  The Syllabus devotes Section XI to the Offer to Purchase and Contract. **The current 2026 rights-holder
+  index and change summary were read, but this project has not read the member-restricted Form 2-T and
+  no document in this build reproduces, describes or paraphrases any provision of it.**
   This is a submission gate: a course covering Section XI must be reconciled against the current form.
 - **Residential Square Footage Guidelines**, cited in Section XV. No measurement standard from it is
   stated.
 - **The Real Estate Agent Safety Guide.**
-- **The Residential Property and Owners' Association Disclosure Statement (RPOADS)**, the **Tenant
-  Security Deposit Act**, the **Vacation Rental Act**, the **Marketable Title Act**,
-  the **Timeshare Act**, the **Unfair and Deceptive Trade Practices Act**, and North Carolina's
-  **statute of frauds**, **onsite septic**, **street disclosure** and **subdivision** provisions — all
-  named in Sections XIV and XV. These sources remain unread. The Connor Act, cited co-ownership,
+- **The Residential Property and Owners' Association Disclosure Statement (RPOADS)** itself remains
+  uncaptured; Chapter 47E's coverage, timing and cancellation framework and Rule .0114's separate
+  broker duty are now reconciled. The **Tenant Security Deposit Act**, **Vacation Rental Act**,
+  **Marketable Title Act**, **Timeshare Act**, **Unfair and Deceptive Trade Practices Act**, and North
+  Carolina **street-disclosure** and **subdivision** provisions remain unread. The statute of frauds and
+  NCREC septic-advertising guidance are now reconciled. The Connor Act, cited co-ownership,
   periodic-tenancy notice, condominium purchaser-protection, mechanics'-lien, intestacy and adverse-
   possession provisions are now reconciled in Module NC-06. No requirement, deadline, form, exemption
   or figure from an unread source is treated as current law.

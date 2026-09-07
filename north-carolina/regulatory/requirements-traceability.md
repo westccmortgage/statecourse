@@ -57,6 +57,14 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | polybutylene and statutory stigma boundaries | G.S. 39-50; NCREC September 2025 guidance | NC-C57 | Module NC-10 material-fact lab | current statute/guidance reconciled |
 | state broker discrimination controls | 58A .0120(d), .1601; G.S. 93A-6(a)(10) | NC-C58 | Module NC-10 discrimination section | rule layer reconciled; full state-act pass pending |
 | affiliated and out-of-state broker compensation | G.S. 93A-9; 58A .0120(b), .1808; NCREC guidance | NC-C59 | Module NC-10 compensation lab | payer/status/entry routes separated |
+| current broker-provided offer-form requirements | S.L. 2025-52 §4; 58A .0112(a)-(b) | NC-C60 | Module NC-11 current-rule reconciliation | 18 items; compensation permitted; liability disclaimer still barred |
+| statutory Settlement/Closing and good-funds controls | G.S. 45A-3, -4 | NC-C61 | Module NC-11 source-vocabulary table | statute/form terms separated; recordation/disbursement stated separately |
+| residential-closing lawyer and nonlawyer boundary | G.S. 10B-134.25; State Bar AP AO 2002-1 | NC-C62 | Module NC-11 closing section | lawyer supervision, ministerial limit and party selection reconciled |
+| Closing Disclosure responsibility and timing | 12 C.F.R. §1026.19(f) | NC-C63 | Module NC-11 pre-closing section | creditor responsibility, receipt deadline and three restart triggers reconciled |
+| flood mandatory-purchase trigger | FDIC interagency FDPA guidance; FEMA | NC-C64 | Module NC-11 insurance section | building/mobile-home test replaces parcel-edge shortcut |
+| owner disclosure and independent broker duty | G.S. Chapter 47E; 58A .0114; 93A-6 | NC-C65 | Module NC-11 inspection/disclosure boundary | statute reconciled; current Commission form still missing |
+| current Form 2-T/addenda identity and revision | NC REALTORS® 2026 index/change summary | NC-C66 | Module NC-11 release gate | member-restricted form text not obtained; paragraph review outstanding |
+| septic-permit bedroom advertising | NCREC guidance; G.S. 93A-6 | NC-C67 | Module NC-11 due-diligence section | permit limit and missing-record disclosure reconciled |
 
 ## Release rule
 
