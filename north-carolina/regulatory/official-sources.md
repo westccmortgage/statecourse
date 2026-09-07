@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
-**Control date:** 2026-09-06
-**Manifest:** `NC-PHASE0-2026-09-06-v2`
+**Control date:** 2026-09-07
+**Manifest:** `NC-PHASE0-2026-09-07-v3`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -35,6 +35,12 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Course approval/time | 21 NCAC 58H .0401 | (a)-(f), especially (c)(6) and (f)(2) | [OAH .0401](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0401.pdf) |
 | Distance design | 21 NCAC 58H .0415 | (a)-(c) | [OAH .0415](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20h/21%20ncac%2058h%20.0415.pdf) |
 | Prescribed curriculum | NCREC syllabus | March 2024, amended May 2026, 108 pages | [Official syllabus](https://www.ncrec.gov/Forms/Education/Prelicense_Course_Syllabus.pdf) |
+| Property-tax base and exemptions | G.S. 105-274, 105-283-.287 | true/use value; reappraisal cycle and advancement | [Article 12](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_105/Article_12.html), [§105-286](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-286.html) |
+| Property-tax dates and liens | G.S. 105-307, 105-355-.360; 159-13 | listing, lien, priority, levy, due date and interest | [§105-307](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-307.html), [Article 26](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_105/Article_26.html), [§159-13](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_159/GS_159-13.html) |
+| Conveyance excise tax | G.S. 105-228.30 | transferor; $1/$500 or fraction; consideration/value | [§105-228.30](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-228.30.html) |
+| Principal-residence gain exclusion | 26 U.S.C. §121 | (a), (b)(1)-(3) | [Official U.S. Code](https://uscode.house.gov/view.xhtml?req=(title:26%20section:121%20edition:prelim)) |
+| Flood probability | FEMA | one-percent annual-chance definition | [FEMA glossary](https://training.fema.gov/is/course/glossary.aspx) |
+| C.L.U.E. report | CFPB | one free report every 12 months | [CFPB company listing](https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/comprehensive-loss-underwriting-exchange/) |
 
 ## Verification limitations and conflict resolution
 
@@ -50,6 +56,12 @@ On September 7, Module NC-02 added the current official standalone-rule endpoint
 .0120, and .0506. They were inspected through the official index but were not part of the September 6
 byte-capture attempt. The expanded ledger therefore contains 24 PDF source entries across 22 unique
 URLs, of which two currently have retained and reviewed bytes.
+
+Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
+26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year
+horizontal-adjustment mechanism was repealed effective July 1, 2009. The course now teaches current
+G.S. 105-286's octennial baseline and mandatory/optional advancement rules and flags the stale syllabus
+sentence for the Commission reviewer rather than repeating it as law.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

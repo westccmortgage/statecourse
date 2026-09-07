@@ -325,6 +325,28 @@ subagent to a prospective buyer; **58A .0108** for retention.
 
 ## Source boundary — current disposition
 
+## Module NC-04 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 105-274:** property in North Carolina is subject to taxation unless excluded or exempted by
+  statewide law or the Constitution.
+- **G.S. 105-283 and 105-284:** true value means market value; assessment generally uses true value or
+  qualifying use value.
+- **G.S. 105-286:** the baseline reappraisal cycle is eight years, with mandatory and optional
+  advancement. Subsections (b) and (c), which formerly supported fourth-year horizontal adjustments,
+  were repealed effective July 1, 2009. The current statute controls over the stale syllabus sentence.
+- **G.S. 105-307, 105-355, 105-356 and 105-360:** ordinary listing period, lien attachment and priority,
+  September 1 due date, payment at face amount before January 6, and interest thereafter.
+- **G.S. 159-13:** the budget ordinance that levies local property tax is adopted not later than July 1.
+- **G.S. 105-228.30(a):** the transferor pays before recording; the rate is $1 per $500 or fractional
+  part of consideration or value conveyed.
+- **26 U.S.C. §121(a), (b)(1)-(3):** current exclusion maxima, ownership/use test and prior-use limit;
+  the course preserves tax-professional referral for all eligibility and calculation questions.
+- **FEMA and CFPB:** the one-percent annual-chance flood definition and the current one-free-C.L.U.E.-
+  report-per-12-months procedure.
+
+This reconciliation does not supply local tax rates, insurance policy coverage, local transfer-tax
+rules or the remaining federal deduction/exchange provisions. Those remain explicit dependencies.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -339,6 +361,10 @@ documents rather than a substitute for them.**
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
   Article 3. Module NC-01 was reconciled to § 93A-4 on 2026-09-07; the other topic-level curriculum
   reconciliations remain open.
+- **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,
+  listing, lien, payment, excise-tax and annual levy provisions were reconciled on 2026-09-07. The
+  remaining tax statutes identified by other syllabus sections and all local rates still require
+  topic-level review.
 - **North Carolina Real Estate License Law and Commission Rules (LLCR)**, including the Comments.
 - **Real Estate Licensing in North Carolina (RELINC):** the April 2026 official PDF was captured,
   text-extracted, and used to reconcile Module NC-01 on 2026-09-07. Its live identity and fees must

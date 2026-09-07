@@ -10,9 +10,10 @@ practice**. **Tax Calculations, Excise Tax Calculations, the Broker's Responsibi
 Taxation of Capital Gain are Level 3**; the insurance definitions, package insurance, coinsurance and
 most of Federal Income Taxation are **Level 1**.
 **Licence examination weight:** **State Exam Category — 4 items.**
-**Instructional hours:** **4.0**, matching the Commission's recommended emphasis for Taxation &
-Insurance.
-**Course version:** 1.0 submission draft
+**Recommended allocation:** **4.0 instructional hours**, matching the Commission's recommended
+emphasis for Taxation & Insurance. This allocation is a plan, not proof of self-paced seat time;
+measured text/media time is reported separately.
+**Course version:** 1.1 development draft
 **Regulatory status:** Development. Not approved. No North Carolina prelicensing credit is available.
 
 ## Learning objectives
@@ -41,8 +42,10 @@ value rather than as a flat amount.
 
 ### A.2 Tax rate and calculations
 
-**The North Carolina real property tax rate is set annually by the municipality** — for example the
-county and the town or city.
+**North Carolina county and municipal property-tax rates are adopted annually by their governing
+boards.** G.S. 159-13 requires the budget ordinance that levies the tax to be adopted not later than
+July 1. A parcel inside municipal limits is generally subject to the applicable county levy and the
+applicable city or town levy; the live assessor and adopted budget ordinances supply the actual rates.
 
 **Instructor Note, transcribed:** *"A property located within a city or town limit in NC will be
 **subject to both county and city/town taxes**."*
@@ -85,20 +88,30 @@ City: 2,840 × 0.4425 = **$1,256.70**
 
 **Converting.** Rate per $100 × 10 = mills. Mills ÷ 10 = rate per $100. ($1.50 × 10 = 15 mills.)
 
-### A.4 All real property in North Carolina is subject to taxation
+### A.4 Property subject to taxation — G.S. 105-274
 
-Stated by the Syllabus as a topic in its own right. Exemptions exist and are a matter for the taxing
-authority; **this course states none**, because the governing statutes were not read for this project.
+The current statute starts with the general rule that property within North Carolina is subject to
+taxation **unless** a statewide statute or the Constitution excludes or exempts it. That final clause is
+part of the rule: a broker must not turn the general rule into “there are no exemptions.” Eligibility
+for a specific exclusion, exemption or use-value program goes to the assessor or a qualified adviser.
 
 ### A.5 Appraisal and assessment
 
-**The NC Machinery Act regulates taxation in North Carolina.**
+**The NC Machinery Act regulates property taxation in North Carolina.**
 
 - **Assessed value of real property for property taxation purposes in NC must be, with few exceptions,
   its market value or "…its true value in money" at the time of assessment.**
 - **State authority to tax is delegated to local municipalities** — county, city, town.
-- **Octennial Reappraisal: NC real property must be reassessed every 8 years.**
-- **Horizontal reappraisal by a municipality is possible in the 4th year.**
+- **Octennial baseline: each county must reappraise real property every 8 years.**
+- **The cycle can be advanced.** G.S. 105-286 requires advancement for a county with population of at
+  least 75,000 when the statute's sales-assessment ratio trigger is crossed, and permits a county to
+  adopt an earlier or more frequent cycle.
+
+> **Current-law correction:** an older syllabus statement that a fourth-year horizontal reappraisal is
+> possible is no longer current. The General Assembly repealed subsections 105-286(b) and (c) effective
+> July 1, 2009. Do not teach a fourth-year horizontal adjustment as current law. The present statute's
+> mandatory- and optional-advancement rules control, and the syllabus conflict must be flagged for the
+> Commission reviewer.
 
 **In other states**, the assessed value for taxation may be **less than market value** — such as 50
 percent of market value.
@@ -118,10 +131,10 @@ Five dates, transcribed:
 | Date | Event |
 |---|---|
 | **January 1** | **The tax lien attaches to the property.** |
-| **January 31** | **Taxable real and personal property listing deadline.** |
-| **July 1** | **The annual tax rate must be set by municipalities.** |
+| **January 31** | **Ordinary listing period ends.** G.S. 105-307 permits specified general and individual extensions. |
+| **July 1** | **Latest date for the governing board to adopt the budget ordinance that levies property taxes.** |
 | **September 1** | **The annual tax bill is due and payable.** |
-| **January 5 of the next year** | **Last day to pay the current tax bill without late penalty.** |
+| **January 5 of the next year** | **Last day to pay at face amount; interest applies to payment on or after January 6.** |
 
 **Instructor Note on 1 January, transcribed:** *"Real property tax liens attach to the property on the
 1st day of the listing period, **even though the tax is not due until later in the year**."*
@@ -138,7 +151,7 @@ year's still has until 5 January and the new year's attached on 1 January.
 two current tax liens, and the licensee's job is to notice that and get it in front of the closing
 attorney early.
 
-### A.7 Special priority of real property tax liens — NCGS 105-356
+### A.7 Special priority of real property tax liens — G.S. 105-356
 
 **Instructor Note, transcribed:** *"Real property tax liens are **superior to all other liens, charges,
 assessments, rights and claims regardless of when acquired**."*
@@ -147,16 +160,17 @@ assessments, rights and claims regardless of when acquired**."*
 
 ---
 
-## B. NC Excise Tax — NCGS 105-228.30
+## B. NC Excise Tax — G.S. 105-228.30
 
 ### B.1 Key concepts
 
-- **Paid by the grantor in NC** — but **may vary in other states**.
+- **G.S. 105-228.30 requires the transferor to pay the tax to the register of deeds before recording
+  the conveyance.**
 - **Formerly called revenue stamps or deed transfer tax.**
 
 ### B.2 The rate
 
-**$1.00 on each $500 (or portion thereof) of the total sales price.**
+**$1.00 on each $500 (or fractional part) of the consideration or value of the interest conveyed.**
 
 ### B.3 Calculations *(Level 3 — this subtopic)*
 
@@ -174,6 +188,24 @@ portion thereof**, so round **up** to **575**. 575 × $1.00 = **$575.00.**
 
 **Never round down and never carry cents.** A price $1 above a multiple of $500 adds a whole dollar of
 excise tax.
+
+#### Required four-scenario practice
+
+Use the statutory base stated in each problem. City/county location and financing facts may be
+irrelevant to the State excise-tax calculation, which is exactly why the Commission requires varied
+facts.
+
+| Scenario | Given consideration or value | Other facts | Excise tax |
+|---|---:|---|---:|
+| Inside city limits | $284,000 | Municipal property-tax rate also supplied | $568 |
+| County only | $310,000 | No municipal property-tax rate | $620 |
+| Odd amount | $287,300 | No other adjustment | $575 |
+| Concession and financing | $400,000 | $10,000 seller credit; $320,000 loan; instrument still states $400,000 consideration/value | $800 |
+
+The final scenario does not establish how an unstated or disputed concession affects taxable
+consideration. If the instrument, closing instructions and transaction figures do not establish the
+statutory base consistently, the broker sends the question to the closing attorney and register of
+deeds rather than inventing a number.
 
 ### B.4 Local transfer tax
 
@@ -218,7 +250,8 @@ owner-occupied residence, has coverage that may not respond.
 
 ## D. Flood Insurance
 
-- **A separate policy; not included in a standard homeowner policy.**
+- **Flood coverage is generally obtained separately; a broker must never promise coverage from the
+  label of a homeowner policy. Read the actual policy with the insurer.**
 - **The National Flood Insurance Program is administered by FEMA and delivered through private
   insurance companies.**
 - Its **purpose**, and **designated or special FEMA flood hazard zones**.
@@ -242,7 +275,8 @@ proposition.
 - **Comprehensive Loss Underwriting Exchange (C.L.U.E.)** — the claims database insurers consult.
 
 **Instructor Note, transcribed:** *"Consumers are entitled to a **free copy of their C.L.U.E. report**
-per the **Fair Credit Reporting Act**."*
+per the **Fair Credit Reporting Act**."* The CFPB's current company listing makes the operational rule
+more precise: LexisNexis C.L.U.E. provides one free report every 12 months on request.
 
 The consequence a buyer needs: **a property's claims history can affect whether and at what price it can
 be insured**, independently of its condition today — and insurability is a financing question, because a
@@ -296,13 +330,12 @@ responding, and whose agent never raised it.
 
 **That is the purpose of everything in Part F: recognition and referral. Nothing else.**
 
-### F.1 Common income tax deductions for owners of personal residences
+### F.1 Potential federal income-tax deductions for owners of personal residences
 
-- **Real property taxes** — principal and second homes.
-- **Loan expenses** — principal and second homes, including:
-  - **mortgage interest**, which **includes regular interest payments plus any late payment charges or
-    prepayment penalty**; and
-  - **loan discount points paid as prepaid interest at the time of loan origination**.
+The syllabus identifies real property taxes, mortgage interest and some points as concepts students
+must recognize. It does **not** make them automatically deductible. Itemization, acquisition date,
+debt purpose, dollar limits, property use and current federal law all matter. A broker identifies a
+possible tax question and refers it; the broker does not calculate or promise a deduction.
 
 ### F.2 Taxation of capital gain on sale of a principal residence *(Level 3 — this subtopic)*
 
@@ -317,18 +350,18 @@ topic**."*
 - **Amount realized.**
 - **Gain** and **loss.**
 
-**Rules for taxation of capital gain:**
+**Current 26 U.S.C. §121 recognition rules:**
 
-- **Tax-free limits**, stated separately for **a married couple filing jointly** and for **a single
-  person or a married couple filing singly**.
-- **Restrictions:**
-  - **Must have been the primary residence for 2 of the last 5 years.**
-  - **The exclusion is allowed only once every 2 years.**
+- The general maximum exclusion is **$250,000**; qualifying spouses filing jointly may receive a
+  **$500,000** maximum under the joint-return requirements.
+- During the five-year period ending on the sale, the taxpayer generally must have **owned and used**
+  the property as a principal residence for periods aggregating at least two years.
+- The general exclusion is unavailable when the taxpayer used the exclusion for another sale during
+  the two-year period ending on the current sale.
 
-**This course states no dollar exclusion amount**, because the federal provision was not read from
-primary text for this project and the Syllabus states the limits as categories rather than figures. **The
-two restrictions above are stated because the Syllabus states them.** Every figure goes to a qualified
-tax accountant or attorney — which is precisely what Part F's Instructor Note directs.
+Those are recognition rules, not a tax opinion. Section 121 contains additional joint-return rules,
+partial-exclusion provisions, nonqualified-use treatment and other exceptions. Every taxpayer's
+eligibility and amount go to a qualified tax accountant or attorney.
 
 ### F.3 Special tax treatment for some residential transactions
 
@@ -363,13 +396,14 @@ Commission's, under Commission Rule 58H .0207 as the Syllabus quotes it.
 ## Instructor source note for Module NC-04
 
 Drawn from **Section IV** of the Commission's Prelicensing Course Syllabus, March 2024 Edition amended
-May 2026, read on 2026-08-20. The tax timetable, the octennial reappraisal, the lien priority rule, the
-excise tax rate and rounding rule, the 100-year flood plain note, the C.L.U.E. note, the five broker
-insurance responsibilities and the capital gain restrictions are **transcribed from the Syllabus**.
+May 2026, read on 2026-08-20. Reconciled on 2026-09-07 against current official G.S. 105-274,
+105-283 through 105-287, 105-307, 105-355, 105-356, 105-360, 105-228.30 and 159-13; current 26 U.S.C.
+§121; FEMA's one-percent-annual-chance definition; and the CFPB's C.L.U.E. listing. The current statute
+supersedes the syllabus's obsolete fourth-year-horizontal-adjustment sentence.
 
-**Not read, and therefore stated nowhere in this module:** **the NC Machinery Act**; **NCGS 105-356**
-and **NCGS 105-228.30** in their own text; the **Internal Revenue Code** and every dollar figure in it;
-the **Fair Credit Reporting Act**; the **National Flood Insurance Act**; and any county's local transfer
-tax. **Every tax rate used in a worked calculation above is invented for arithmetic and is not a North
-Carolina rate for any jurisdiction.** No exemption, exclusion amount, deduction limit or local transfer
-tax rate is stated.
+**Not read, and therefore not stated as a rule in this module:** the full federal mortgage-interest,
+property-tax, points, installment-sale, home-office or §1031 provisions; the text of the Fair Credit
+Reporting Act and National Flood Insurance Act; any insurance policy form; and any county's local
+transfer tax. **Every county or municipal rate used in a worked calculation is invented for arithmetic
+and is not a North Carolina rate for any jurisdiction.** No local exemption, deduction limit, insurance
+coverage term or local transfer-tax rate is stated.

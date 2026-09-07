@@ -8,7 +8,22 @@ import { inspectStoredPdfEvidence } from './lib/north-carolina-source-integrity.
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const jsonMode = process.argv.includes("--json");
 const requireCapture = process.argv.includes('--require-source-capture');
-const allowedHosts = new Set(["www.ncleg.gov", "www3.ncleg.gov", "library.ncleg.gov", "reports.oah.state.nc.us", "www.ncrec.gov", "educprovider.ncrec.gov", "eservices.ncrec.gov", "ncrecblog.com", "bulletins.ncrec.gov", "www.pearsonvue.com", "www.sosnc.gov"]);
+const allowedHosts = new Set([
+  "www.ncleg.gov",
+  "www3.ncleg.gov",
+  "library.ncleg.gov",
+  "reports.oah.state.nc.us",
+  "www.ncrec.gov",
+  "educprovider.ncrec.gov",
+  "eservices.ncrec.gov",
+  "ncrecblog.com",
+  "bulletins.ncrec.gov",
+  "www.pearsonvue.com",
+  "www.sosnc.gov",
+  "uscode.house.gov",
+  "training.fema.gov",
+  "www.consumerfinance.gov"
+]);
 const requiredDocs = [
   "north-carolina/regulatory/official-sources.md",
   "north-carolina/regulatory/personal-broker-path.md",

@@ -8,8 +8,8 @@ import { NC_BLOCKERS, NC_CLAIMS, NC_CONTROL_DATE, NC_MANIFEST_VERSION, NC_SOURCE
 const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf8");
 
 test("manifest has a dated stable identity and only allowed claim statuses", () => {
-  assert.equal(NC_CONTROL_DATE, "2026-09-06");
-  assert.match(NC_MANIFEST_VERSION, /^NC-PHASE0-2026-09-06-v\d+$/);
+  assert.equal(NC_CONTROL_DATE, "2026-09-07");
+  assert.match(NC_MANIFEST_VERSION, /^NC-PHASE0-2026-09-07-v\d+$/);
   assert.ok(NC_SOURCES.length >= 25);
   assert.ok(NC_CLAIMS.length >= 20);
   for (const claim of NC_CLAIMS) assert.ok(["confirmed", "interpretation", "needs-regulator-confirmation"].includes(claim.status), claim.id);
@@ -94,13 +94,13 @@ test("distance plan requires orientation, persistent navigation, sequential asse
 
 test("timing report fails the present course instead of trusting planned-hour labels", () => {
   const report = read("north-carolina/submission/09-timing-evidence-report.md");
-  assert.match(report, /53,850/);
+  assert.match(report, /54,253/);
   assert.match(report, /810,000/);
   assert.match(report, /must not be submitted or advertised as 75 hours/i);
   const timing = getNorthCarolinaCourse().timingEvidence;
   assert.equal(timing.validated, false);
   assert.equal(timing.commissionReadingRateWordsPerMinute, 225);
-  assert.ok(timing.curriculumBaselineMinutes < 240 + 1);
+  assert.ok(timing.curriculumBaselineMinutes < 242);
 });
 
 test("certificate gate now requires every provider-level approval and operational proof", () => {

@@ -420,6 +420,26 @@ test("Module NC-03 gives every prescribed zoning concept an example without clai
   assert.match(three, /do not state that any particular North Carolina ordinance allows the result/i);
 });
 
+test("Module NC-04 corrects the obsolete fourth-year adjustment and teaches current tax statutes", () => {
+  const four = readModule("module-04");
+  for (const required of [
+    /G\.S\. 105-286 requires advancement/i,
+    /repealed subsections 105-286\(b\) and \(c\).*July 1, 2009/is,
+    /G\.S\. 105-228\.30 requires the transferor/i,
+    /\$1(?:\.00)? (?:on|for) each \$500.*fractional part/i,
+    /consideration or value of the interest conveyed/i,
+    /one free report every 12 months/i,
+    /general maximum exclusion is \$250,000/i,
+    /\$500,000.*joint-return requirements/is
+  ]) assert.match(four, required);
+  assert.doesNotMatch(four, /Horizontal reappraisal by a municipality is possible in the 4th year/i);
+
+  const exciseActivity = NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.startsWith("Calculate excise tax"));
+  assert.equal(exciseActivity.status, "delivered");
+  assert.match(exciseActivity.evidencePath, /module-04/);
+  assert.doesNotMatch(JSON.stringify(BANK["module-04"]), /statute setting it was not obtained|states no North Carolina excise tax rate/i);
+});
+
 test("no module claims approval or offers credit", () => {
   assert.doesNotMatch(allModules, /\bState Approved\b/i);
   assert.doesNotMatch(allModules, /\bEnroll Now\b/i);

@@ -62,9 +62,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 53,850 audit-tokenized words, or at
-most 239.33 minutes/3.99 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 329.97-minute ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 54,253 audit-tokenized words, or at
+most 241.12 minutes/4.02 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 331.77-minute ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -73,7 +73,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 2/24 PDF source entries retained and reviewed; 22 remain unavailable or uncaptured; source status INCOMPLETE |
+| NC-B01 | StateCourse | Partial PDF capture: 2/24 PDF source entries retain byte-valid September 6 snapshots, but none has a current September 7 page review; 22 remain unavailable or uncaptured; source status INCOMPLETE |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -120,7 +120,8 @@ node scripts/north-carolina-source-lock.mjs --require-source-capture
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
 records exact failures and does not turn search-index text into downloaded evidence. The expanded
-ledger contains 24 PDF source entries across 22 unique URLs; 2 entries have retained, reviewed bytes.
+ledger contains 24 PDF source entries across 22 unique URLs; 2 entries retain byte-valid snapshots,
+but their page reviews are stale against the September 7 control date.
 Three current Module NC-02 rule sources were added after the September 6 capture and are therefore
 explicitly uncaptured. Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review.
@@ -130,5 +131,5 @@ The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`
 Carolina work continues on the same remote branch. The strict `--require-source-capture` command
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
-offline as-of-capture checks; re-fetch before filing. Current focused tests: 82/82 passing; complete
-repository build and test suite: 1,290/1,290 passing.
+offline as-of-capture checks; re-fetch before filing. Current focused tests: 83/83 passing; complete
+repository build and test suite: 1,291/1,291 passing.
