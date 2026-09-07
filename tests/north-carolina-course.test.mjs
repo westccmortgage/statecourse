@@ -584,6 +584,35 @@ test("Module NC-09 delivers all practice activities and reconciles current fair-
   assert.match(BANK["module-09"].remediation[4].choices[0], /Rule 58A \.0105/i);
 });
 
+test("Module NC-10 reconciles current brokerage-practice law and supplies auditable Level 3 work", () => {
+  const ten = readModule("module-10");
+  for (const required of [
+    /G\.S\. 160D-702/i,
+    /references to repealed or superseded.*Chapter 160D/is,
+    /ownership of the land does not automatically answer who owns or operates the tank/i,
+    /three banking days after receipt/i,
+    /property owners' association account separation/i,
+    /current BIC.*served as BIC at the time of the transaction/is,
+    /offering party.*express authority/is,
+    /seller authority for the existence message/i,
+    /Required Activity evidence — client versus third-party disclosure/i,
+    /Level 3 evidence — land-use verification lab/i,
+    /Level 3 evidence — offer presentation and delivery clock/i,
+    /Level 3 evidence — material-fact classification lab/i,
+    /Level 3 evidence — compensation routing lab/i
+  ]) assert.match(ten, required);
+  assert.doesNotMatch(ten, /Drafting of sales contracts by brokers is prohibited.*93A-6\(a\)\(12\)/is);
+  assert.doesNotMatch(ten, /current landowner is responsible for the cleanup of an underground storage tank/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "X");
+  assert.equal(activities.length, 1);
+  assert.equal(activities[0].status, "delivered");
+  assert.match(activities[0].evidencePath, /module-10\.md#b0a/i);
+  const bank = BANK["module-10"];
+  assert.equal(1 + bank.engagement.length + bank.remediation.length, 11);
+  assert.match(bank.engagement.at(-1).choices[0], /three banking days/i);
+  assert.match(bank.remediation[2].choices[0], /offeror's express authority/i);
+});
+
 test("the two contract-structure facts a broker cannot get wrong are stated in Module NC-11", () => {
   const eleven = readModule("module-11");
   assert.match(eleven, /NO FINANCING OR APPRAISAL CONTINGENCIES/i);

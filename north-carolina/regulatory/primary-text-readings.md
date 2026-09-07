@@ -504,6 +504,39 @@ automatic without the relationship, conduct and policy terms. Four prescribed Mo
 now have worked evidence. The TCPA/FCC rules, North Carolina Fair Housing Act, common-law tort elements,
 NAR Code and actual insurance forms remain explicit source limitations.
 
+## Module NC-10 reconciliation — current primary text read 2026-09-07
+
+- **G.S. 160D-111(c) and 160D-702:** current Chapter 160D supplies local zoning authority and redirects
+  references to superseded Chapter 153A/160A planning provisions. The broker verifies the current local
+  map, ordinance and approval instead of treating the syllabus's former citations as current law.
+- **G.S. 143-215.94A and .94E:** tank owner, operator, facility and landowner are distinct. Release-
+  response duties, landowner protections and fund-treatment routes are conditional; ownership of the
+  land alone does not prove automatic cleanup liability.
+- **G.S. 93A-6(g), 93A-12 and Rules 58A .0110, .0116-.0118, .1808:** ordinary trust money uses a three-
+  banking-day deposit baseline with enumerated exceptions. The current rules separately govern BIC
+  responsibility, interest, disputes, settlement-agent transfer, safeguarding, accounting and property-
+  owners'-association funds. The LLCR Comments remain unavailable and are not simulated.
+- **G.S. 93A-4(e), 93A-6(a)(11), 84-2.1 and Rule 58A .0111:** a broker-agent may complete specified
+  preprinted forms under party direction but may not independently prepare a custom legal instrument
+  or give legal advice. The prior text both cited the wrong disciplinary subsection and compressed the
+  rule into an unsafe “fill in blanks” slogan.
+- **Rule 58A .0115 and July 2025 Commission guidance:** the rule bars price or material-term disclosure
+  to a competitor without the offering party's express authority. Separate guidance says existence of
+  multiple offers is not material and is seller-directed; disclosure must be fair, equal and honest.
+- **G.S. 39-50 and September 2025 Commission guidance:** specified stigma facts are not material solely
+  on the statutory grounds, but knowing false answers remain prohibited. Mere polybutylene presence is
+  not automatically material; known leakage, damage or probable defect is.
+- **Rules 58A .0120(d) and .1601:** discriminatory brokerage/promotion is prohibited across seven named
+  bases and a State Fair Housing Act violation is improper conduct. The full state Act remains for the
+  Module NC-15 pass.
+- **G.S. 93A-9, Rule .0120(b) and Commission compensation guidance:** affiliated-broker payment, an
+  out-of-state-only referral and the Limited Nonresident Commercial Broker route are distinct. License
+  status when services were performed remains decisive; later payment does not cure unlicensed work.
+
+The module now contains four worked Level 3 evidence paths plus the prescribed client-versus-third-
+party comparison. Remaining filing gates are the current LLCR Comments, full state fair-housing pass,
+the Interstate Land Sales topic, and authentic local PDF capture/review.
+
 ### Original curriculum gaps — current Phase 0 disposition
 
 Named explicitly, because an unnamed gap becomes an invented fact. **The North Carolina gap list is
@@ -512,15 +545,15 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01, NC-02, NC-08 and NC-09 were reconciled on 2026-09-07 to their applicable
+  renewal rules. Modules NC-01, NC-02, and NC-08 through NC-10 were reconciled on 2026-09-07 to their applicable
   applicant, other-jurisdiction, supervision, BIC, compensation, agency, advertising, document-delivery
   and records rules. The remaining modules still need topic-level reconciliation, and the official PDF
   bytes still need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
-  93A-6 and Article 3. Modules NC-01, NC-05 and NC-07 were reconciled to their applicable provisions on
-  2026-09-07. Module NC-09 was separately reconciled to current federal fair-housing, civil-rights,
-  accessibility, telemarketing and antitrust authorities; the other topic-level reconciliations remain
-  open.
+  93A-6 and Article 3. Modules NC-01, NC-05, NC-07 and NC-10 were reconciled to their applicable
+  provisions on 2026-09-07. Module NC-09 was separately reconciled to current federal fair-housing,
+  civil-rights, accessibility, telemarketing and antitrust authorities; the other topic-level
+  reconciliations remain open.
 - **NCGS Chapter 105 and G.S. 159-13:** Module NC-04's current appraisal, assessment, reappraisal,
   listing, lien, payment, excise-tax and annual levy provisions were reconciled on 2026-09-07. The
   remaining tax statutes identified by other syllabus sections and all local rates still require

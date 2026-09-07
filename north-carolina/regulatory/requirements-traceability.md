@@ -49,6 +49,14 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | National and entity-specific Do Not Call controls | FTC TSR | NC-C49 | Module NC-09 decision drill | current FTC periods/process reconciled |
 | independent fee setting and competitor restraints | Sherman Act; DOJ guidance | NC-C50 | Module NC-09 compensation/antitrust scenarios | current federal boundary reconciled |
 | brokerage advertising identity and consent | 58A .0105 | NC-C51 | Module NC-09 social-ad item | current rule reconciled; PDF bytes uncaptured |
+| current local zoning authority and superseded citations | G.S. 160D-111(c), 160D-702 | NC-C52 | Module NC-10 land-use lab | current statute reconciled |
+| UST owner/operator/landowner distinctions | G.S. 143-215.94A, .94E | NC-C53 | Module NC-10 environmental section | automatic-owner-liability shortcut removed |
+| trust-money deposit, custody and accounting | G.S. 93A-6(g), 93A-12; 58A .0110, .0116-.0118, .1808 | NC-C54 | Module NC-10 trust section and assessment | current rules reconciled; LLCR Comments uncaptured |
+| broker preprinted-form and legal-drafting boundary | G.S. 93A-4(e), 93A-6(a)(11), 84-2.1; 58A .0111 | NC-C55 | Module NC-10 legal-practice section | current statute/rule reconciled |
+| competing-offer price/terms and existence disclosure | 58A .0115; NCREC July 2025 guidance | NC-C56 | Module NC-10 offer scenarios | separate offeror/seller authority gates reconciled |
+| polybutylene and statutory stigma boundaries | G.S. 39-50; NCREC September 2025 guidance | NC-C57 | Module NC-10 material-fact lab | current statute/guidance reconciled |
+| state broker discrimination controls | 58A .0120(d), .1601; G.S. 93A-6(a)(10) | NC-C58 | Module NC-10 discrimination section | rule layer reconciled; full state-act pass pending |
+| affiliated and out-of-state broker compensation | G.S. 93A-9; 58A .0120(b), .1808; NCREC guidance | NC-C59 | Module NC-10 compensation lab | payer/status/entry routes separated |
 
 ## Release rule
 

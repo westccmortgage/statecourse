@@ -219,9 +219,13 @@ differently. **The DDF is paid for the due diligence right; the EMD is a deposit
 > 58A .0116(b)(3-4)** regarding following Buyer's instructions for delivery to and the timing of deposit
 > by the Escrow Agent."*
 >
-> **This activity must be completed.** **This course states no deposit deadline or escrow timing rule**,
-> because Rule 58A .0116 was not obtained in its own text — see Module NC-10 A.6. Obtaining it is a
-> submission gate.
+> **Worked activity:** classify the payee, instrument and offer status before starting the clock.
+> Ordinary trust money with no exception is deposited within three **banking** days after receipt.
+> Non-currency EMD received with a pending offer is deposited no later than three days after acceptance.
+> A check payable to the seller for an option or due diligence fee, or to the designated escrow agent,
+> is delivered or returned under the buyer's instructions and may not be retained beyond three business
+> days after contract acceptance. A provisional broker delivers money upon receipt to the affiliated
+> broker. Record receipt, acceptance, buyer instruction, delivery and deposit separately.
 
 **Disputed EMD** — NCGS 93A-12; Rule 58A .0116(d). Module NC-10.
 
@@ -302,11 +306,13 @@ affect the parties' legal rights.**"*
 
 ### C.2 Disclosure of an offer and its terms
 
-- **The existence of other offers is NOT a material fact.**
-- **The broker needs the SELLER'S authority to share the existence of other offers and/or terms that
-  might be acceptable to the Seller.**
-- **The broker is prohibited from sharing material terms of an offer — "shopping an offer" — WITHOUT THE
-  EXPRESS PERMISSION OF THE OFFEROR** — Rule 58A .0115.
+- Current Commission guidance says **the existence of multiple offers is not a material fact** and need
+  not be volunteered. The listing broker follows the seller's direction about announcing their
+  existence and communicates fairly, equally and honestly if authorized.
+- **Rule 58A .0115 separately** prohibits sharing an offering party's **price or other material offer
+  terms** with a competing party without the **express authority of the offering party**.
+- Seller consent to announce multiple offers does not authorize disclosure of a competing buyer's
+  price, due diligence fee, escalation language, closing date or another material term.
 
 *(Module NC-10 B.5 states the same three rules. They appear in both sections of the Syllabus.)*
 
@@ -448,6 +454,7 @@ Commission-authored forms — the **WWREA Disclosure**, the **RPOADS**, and the 
 Mandatory Disclosure Statement (MOG)**. Current primary-text reconciliation has read **NCGS 93A-6**,
 **NCGS 84-2.1**, the applicable **NCGS Chapter 44A** lien-agent provisions, and Commission Rules
 **58A .0106 and .0108**; this module uses their narrow practice-of-law, delivery and retention rules.
-**Still not read for this module's full topic pass:** NCGS 93A-12; NCGS 47E; Commission Rules .0111,
-.0112, .0115 and .0116; and TRID / Regulation Z. No uncited deposit deadline, escrow timing rule, form
-provision, contract deadline or penalty is stated.
+Current primary text now also includes **G.S. 93A-12** and Rules **58A .0111, .0115 and .0116**; the
+deposit/handling activity and competing-offer distinction above use that text. **Still not read for this
+module's full topic pass:** G.S. Chapter 47E; Rule .0112; and TRID / Regulation Z. No uncited standard-
+form provision, contract deadline or penalty is stated.

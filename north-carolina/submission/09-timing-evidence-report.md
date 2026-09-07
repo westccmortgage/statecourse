@@ -14,17 +14,19 @@ of instruction. Official .0101 indexed text was rechecked September 6; direct OA
 
 | Repository measure | Words | Minutes at 225 wpm | 60-minute elapsed hours |
 |---|---:|---:|---:|
-| sixteen curriculum Markdown files, audit tokenizer | 61,415 | 272.96 | 4.55 |
-| curriculum plus entire question-bank source file (deliberately generous ceiling) | 81,915 | 364.07 | 6.07 |
+| sixteen curriculum Markdown files, audit tokenizer | 62,907 | 279.59 | 4.66 |
+| curriculum plus entire question-bank source file (deliberately generous ceiling) | 83,455 | 370.91 | 6.18 |
 | reading-only words for 72 instructional hours | 810,000 | 3,600 | 60.00 |
 
-The September 7 increase reflects the official-source rewrite of Modules NC-01 through NC-09, their
+The September 7 increase reflects the official-source rewrite of Modules NC-01 through NC-10, their
 assessments, three Module NC-03 visual exhibits, the required zoning examples, the corrected
 property-tax, excise-tax, federal tax, flood and C.L.U.E. instruction, and the current federal and
 North Carolina environmental-disclosure rules, and the current ownership, lease, lien, condominium,
 recording, intestacy and adverse-possession rules, and the current contract, electronic-transaction,
 legal-practice, agency-representation, WWREA, agency-agreement, document-delivery, records, federal
-fair-housing, disability-access, telemarketing, antitrust and North Carolina advertising boundaries.
+fair-housing, disability-access, telemarketing, antitrust and North Carolina advertising boundaries,
+plus current zoning, underground-tank, trust-money, legal-drafting, offer-disclosure, material-fact,
+state-discrimination and compensation controls.
 Related stale statements in Module NC-15 were also
 corrected. This is substantive correction, not time padding. The audit tokenizer counts word-like Unicode tokens
 and excludes Markdown punctuation. Both totals include nonstudent material: the curriculum includes author notes and the larger count also includes

@@ -8,7 +8,7 @@ const normalize = value => value.toLowerCase().replace(/\s+/g, ' ').trim();
 export function identityMarkers(source) {
   const match = source.id.match(/^NC-RULE-(58[A-Z])-([.\d-]+)$/);
   if (match) return match[2].split('-').map(number => `21 NCAC ${match[1]} ${number}`);
-  return ({ 'NC-SYLLABUS-PRE-2026': ['Broker Prelicensing Course', 'SYLLABUS', 'May 2026'], 'NC-GUIDE-RELINC-2026': ['Real Estate Licensing in North Carolina', 'April 2026'], 'NC-FORM-SOS-L09': ['APPLICATION FOR CERTIFICATE OF AUTHORITY', 'LIMITED LIABILITY COMPANY', 'L-09', 'Revised July 2017'] })[source.id] || [];
+  return ({ 'NC-SYLLABUS-PRE-2026': ['Broker Prelicensing Course', 'SYLLABUS', 'May 2026'], 'NC-GUIDE-RELINC-2026': ['Real Estate Licensing in North Carolina', 'April 2026'], 'NC-FORM-SOS-L09': ['APPLICATION FOR CERTIFICATE OF AUTHORITY', 'LIMITED LIABILITY COMPANY', 'L-09', 'Revised July 2017'], 'NC-LLCR-CURRENT': ['North Carolina Real Estate License Law', 'Commission Rules', 'Comments'] })[source.id] || [];
 }
 export function inspectPdfEvidence(source, entry, { bytes, pageText, today = '2026-09-06', renderBytes = {} } = {}) {
   const errors = [];

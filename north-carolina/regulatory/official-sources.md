@@ -67,6 +67,15 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Do Not Call and telemarketing | FTC Telemarketing Sales Rule | Registry, entity opt-out, 18-month/3-month relationships, 31-day process, calling window | [FTC compliance guide](https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule) |
 | Competition and brokerage fee independence | Sherman Act; DOJ guidance | price fixing, bid rigging, customer/market allocation | [DOJ Antitrust Laws](https://www.justice.gov/atr/antitrust-laws-and-you) |
 | North Carolina brokerage advertising | 21 NCAC 58A .0105 | BIC consent, firm identity, owner consent, no blind ads | [OAH .0105](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0105.pdf) |
+| Current zoning authority | G.S. Chapter 160D | §§160D-111(c), 160D-702 | [Chapter 160D](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByChapter/Chapter_160D.html) |
+| Underground-storage-tank responsibility | G.S. Chapter 143 Article 21A | §§143-215.94A, 143-215.94E | [Article 21A](https://www.ncleg.gov/EnactedLegislation/Statutes/html/byarticle/chapter_143/article_21a.html) |
+| Trust money and accounting | G.S. 93A-6(g), 93A-12; 21 NCAC 58A .0110, .0116-.0118, .1808 | deposit, custody, dispute, records, association funds and limited-nonresident delivery | [§93A-6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-6.html), [§93A-12](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-12.html), [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
+| Broker drafting boundary | G.S. 93A-4(e), 93A-6(a)(11), 84-2.1; 21 NCAC 58A .0111 | party-directed preprinted forms versus independent drafting/advice | [§84-2.1](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_84/GS_84-2.1.html), [OAH .0111](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0111.pdf) |
+| Competing-offer disclosure | 21 NCAC 58A .0115; NCREC guidance | offeror authority for price/terms; seller direction for existence message | [OAH .0115](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0115.pdf), [2025 guidance](https://bulletins.ncrec.gov/navigating-multiple-offers/) |
+| Material-fact boundaries | G.S. 39-50; NCREC polybutylene guidance | statutory stigma exclusions, truthfulness and known/probable pipe defects | [G.S. Chapter 39 Article 9](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_39/Article_9.html), [2025 guidance](https://bulletins.ncrec.gov/polybutylene-pipes-is-the-mere-presence-material/) |
+| North Carolina broker discrimination rules | 21 NCAC 58A .0120(d), .1601 | protected-basis brokerage conduct and State Fair Housing Act violation | [OAH Chapter 58](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/chapter%2058%20rules.pdf) |
+| Affiliated and out-of-state compensation | G.S. 93A-9; 21 NCAC 58A .0120(b), .1808; NCREC guidance | BIC payer, no-entry referral condition, separate limited-commercial route | [§93A-9](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-9.html), [2024 guidance](https://bulletins.ncrec.gov/can-i-get-paid/), [foreign-broker guidance](https://bulletins.ncrec.gov/compensation-issues-how-to-handle-them/) |
+| License Law and Rules Comments | NCREC LLCR | syllabus-directed trust-account comments, current bytes unavailable | [Official LLCR route](https://www.ncrec.gov/pdfs/licensing/licenselawcomments.pdf) |
 
 ## Verification limitations and conflict resolution
 
@@ -81,8 +90,10 @@ to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains
 On September 7, Modules NC-02 and NC-05 added current official standalone-rule endpoints for 58A
 .0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
 publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
-contains 32 PDF source entries across 30 unique URLs. Two retain byte-valid September 6 snapshots, but
-their page reviews are stale against the September 7 control date; the current reviewed count is zero.
+later expanded again during the Module NC-10 pass to include Rules .0111 and .0115-.0118, .1601 and
+.1808 plus the LLCR route. It now contains 40 PDF source entries across 38 unique URLs. Two September 6
+snapshots are retained, but validation requires the configured PDF interpreter and their page reviews
+are stale against the September 7 control date; the current reviewed count is zero.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
 26 U.S.C. §121, FEMA and CFPB guidance. That review found a real syllabus conflict: the fourth-year
@@ -120,6 +131,14 @@ blanket rule against giving school or crime information, the seller-specific Do 
 automatic seller subagency, fraud terminology and overbroad vicarious-liability and insurance claims.
 Four prescribed activities now have stable worked-evidence paths. The two HUD PDFs and Rule .0105 PDF
 were publisher-read but remain uncaptured and unreviewed as local filing evidence.
+
+Module NC-10 was reconciled on September 7 to current Chapter 160D zoning authority, the state UST
+statute, G.S. 93A-4/6/9/12/13, G.S. 39-50 and 84-2.1, Rules 58A .0105-.0111, .0115-.0118, .0120,
+.1601 and .1808, and current Commission guidance. The pass corrected obsolete zoning citations, a
+blanket present-landowner UST-liability claim, an overbroad drafting rule, a generic property-owner-
+association trust-account statement, the BIC payer shortcut, and the attribution of all offer-
+disclosure propositions to Rule .0115. The LLCR Comments, full State Fair Housing Act pass and the
+Interstate Land Sales topic remain explicit filing gates.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees
