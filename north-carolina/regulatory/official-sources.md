@@ -1,7 +1,7 @@
 # North Carolina official-source ledger
 
 **Control date:** 2026-09-07
-**Manifest:** `NC-PHASE0-2026-09-07-v5`
+**Manifest:** `NC-PHASE0-2026-09-07-v7`
 **Regulatory status:** Not approved. Enrollment and credit delivery are closed.
 
 The machine-readable controlling record is
@@ -57,6 +57,9 @@ No commercial school, law-firm summary, aggregator, or search snippet is control
 | Broker legal-practice boundary | G.S. 84-2.1; 93A-6(a)(11) | narrow preprinted-form exception; custom drafting/legal advice prohibited | [§84-2.1](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_84/GS_84-2.1.html), [§93A-6](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93A/GS_93A-6.html) |
 | Minor age | G.S. 48A-2 | under 18 | [§48A-2](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_48A/GS_48A-2.html) |
 | Representation and seller subagency | NCREC current official Bulletin page | express consent; no neutral default; outside-firm subagency conditions | [NCREC Bulletin](https://bulletins.ncrec.gov/getting-agency-representation-correct-clarifying-the-practice-of-seller-subagency/?share=print) |
+| Agency agreements and disclosure | 21 NCAC 58A .0104 | (a)-(o), especially (a), (c)-(f), (i)-(n) | [OAH .0104](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0104.pdf) |
+| Delivery and transaction records | 21 NCAC 58A .0106, .0108 | .0106(a)-(c); .0108(a)-(d) | [OAH .0106](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0106.pdf), [OAH .0108](https://reports.oah.state.nc.us/ncac/title%2021%20-%20occupational%20licensing%20boards%20and%20commissions/chapter%2058%20-%20real%20estate%20commission/subchapter%20a/21%20ncac%2058a%20.0108.pdf) |
+| WWREA implementation | NCREC official guidance | review, firm-offered roles, receipt signature, refusal handling | [NCREC WWREA Update](https://bulletins.ncrec.gov/working-with-real-estate-agents-disclosure-update/) |
 
 ## Verification limitations and conflict resolution
 
@@ -71,7 +74,7 @@ to the PDF and render hashes. Sources remain **INCOMPLETE** and `NC-B01` remains
 On September 7, Modules NC-02 and NC-05 added current official standalone-rule endpoints for 58A
 .0109, .0114, .0120, and .0506, plus the HUD/EPA lead fact sheet. They were inspected through official
 publisher pages but were not part of the September 6 byte-capture attempt. The expanded ledger therefore
-contains 26 PDF source entries across 24 unique URLs. Two retain byte-valid September 6 snapshots, but
+contains 29 PDF source entries across 27 unique URLs. Two retain byte-valid September 6 snapshots, but
 their page reviews are stale against the September 7 control date; the current reviewed count is zero.
 
 Module NC-04 was reconciled on September 7 to current official property-tax and excise-tax statutes,
@@ -94,6 +97,13 @@ deed-type Required Activity and corrected three misleading shortcuts: equal inte
 for an expressly unequal joint tenancy; tenancy by the entirety has statutory lifetime termination
 routes; and Chapter 47C's seven-day cancellation trigger is the public-offering-statement transaction,
 not physical “newness” by itself.
+
+Module NC-08 was reconciled on September 7 to current Rules 58A .0104, .0106, .0108 and .0109 and
+current Commission WWREA guidance. The review corrected the blanket “oral buyer agency” shortcut,
+separated in-firm dual agency from outside-firm seller subagency, restored the rule's exact writing and
+document-delivery deadlines, and added evidence for first substantial contact, client/customer duties,
+three listing types, calculations and fair-housing screening. The current WWREA disclosure form itself
+remains uncaptured and therefore remains a submission gate.
 
 The live RELINC replaced April 2025 at the same Pearson URL. Its April 2026 edition now agrees with
 Rule 58A .0302 on $105 application and publishes $53 single-section / $63 comprehensive exam fees

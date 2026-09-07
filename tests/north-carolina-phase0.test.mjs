@@ -94,14 +94,14 @@ test("distance plan requires orientation, persistent navigation, sequential asse
 
 test("timing report fails the present course instead of trusting planned-hour labels", () => {
   const report = read("north-carolina/submission/09-timing-evidence-report.md");
-  assert.match(report, /57,677/);
+  assert.match(report, /59,421/);
   assert.match(report, /810,000/);
   assert.match(report, /must not be submitted or advertised as 75 hours/i);
   const timing = getNorthCarolinaCourse().timingEvidence;
   assert.equal(timing.validated, false);
   assert.equal(timing.commissionReadingRateWordsPerMinute, 225);
-  assert.equal(timing.curriculumBaselineWords, 57677);
-  assert.equal(timing.curriculumBaselineMinutes, 256.34);
+  assert.equal(timing.curriculumBaselineWords, 59421);
+  assert.equal(timing.curriculumBaselineMinutes, 264.09);
 });
 
 test("certificate gate now requires every provider-level approval and operational proof", () => {

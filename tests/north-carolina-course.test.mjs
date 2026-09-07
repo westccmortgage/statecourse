@@ -527,6 +527,30 @@ test("Module NC-07 delivers all contract and agency activities and uses current 
   assert.doesNotMatch(BANK["module-07"].engagement[0].choices[0], /writing|recording|notari/i);
 });
 
+test("Module NC-08 delivers every non-form agency activity and uses current Rule 58A boundaries", () => {
+  const eight = readModule("module-08");
+  for (const required of [
+    /Required Activity evidence — first-substantial-contact lab/i,
+    /Required Activity evidence — client\/customer duty lab/i,
+    /Required Activity evidence — calculation set/i,
+    /Required Activity evidence — distinguish the three listing types/i,
+    /Required Activity evidence — tenant-screening decision matrix/i,
+    /binds the buyer for a period or restricts the buyer's right to work with another agent/i,
+    /properly perfected claim may relate back to first furnishing/i,
+    /signature acknowledges receipt and does not itself create agency/i,
+    /hypothetical negotiated/i
+  ]) assert.match(eight, required);
+  assert.doesNotMatch(eight, /nothing a consumer tells you is confidential/i);
+  assert.doesNotMatch(eight, /all brokers affiliated\s+with a firm automatically become subagents of any principal-client/i);
+  assert.doesNotMatch(eight, /mechanic's lien is effective from the first day/i);
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((activity) => activity.section === "VIII");
+  assert.equal(activities.length, 6);
+  assert.equal(activities.filter((activity) => activity.status === "delivered").length, 5);
+  assert.equal(activities.filter((activity) => activity.status === "delivered").every((activity) => activity.evidencePath), true);
+  assert.equal(activities.filter((activity) => activity.status === "outstanding").length, 1);
+  assert.match(activities.find((activity) => activity.status === "outstanding").blockedBy, /WWREA disclosure form/i);
+});
+
 test("the two contract-structure facts a broker cannot get wrong are stated in Module NC-11", () => {
   const eleven = readModule("module-11");
   assert.match(eleven, /NO FINANCING OR APPRAISAL CONTINGENCIES/i);
@@ -646,7 +670,7 @@ test("every period in an authored answer or rationale is on the reviewed-source 
     /\b120 days?\b/i, /\b5 (separated )?times?\b/i, /\bfive (separated )?times?\b/i,
     /\b5 years?\b/i, /\bfive years?\b/i, /\b30-?year\b/i, /\b33 ?- ?38 years?\b/i,
     /\b3 ?- ?5 years?\b/i, /\b10-day\b/i, /\b10 days?\b/i, /\bten-day\b/i, /\b60 minutes?\b/i, /\b30-day\b/i, /\b360-day\b/i, /\b365-day\b/i,
-    /\b30 days?\b/i, /\b3[- ]day\b/i, /\bthree[- ]day\b/i, /\b3\.0 hours?\b/i,
+    /\b30 days?\b/i, /\b3[- ]days?\b/i, /\bthree[- ]days?\b/i, /\b3\.0 hours?\b/i,
     /\b(eight|8) months?\b/i, /\b(sixteen|16) days?\b/i, /\b(one|1) month\b/i, /\b(nine|9) months?\b/i,
     /\b(six|6) months?\b/i, /\b18 months?\b/i, /\b180[- ](calendar[- ])?days?\b/i, /\b(two|2) years?\b/i
   ];

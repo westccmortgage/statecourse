@@ -42,11 +42,11 @@ The three sources the Commission names:
 3. **Disclosure of Agency Relationships in Residential and Commercial Sales** — **NCGS 93A-6(a)(4) and
    (6); Commission Rule 58A .0104(c)–(i), (m), (o) and (p)**.
 
-**This course states no provision of NCGS 93A or 21 NCAC 58A in its own text**, because neither was
-obtained for this project — the North Carolina rules hosts are outside this environment's network
-egress allowlist. **Everything below is what the Commission's own Syllabus states**, with its citations
-preserved so a student can read the source. **Read the LLCR.** It is free from the Commission and it is
-the operative text.
+This module is now reconciled to the current General Assembly text of **G.S. 93A-6** and to the
+official OAH indexed text of **21 NCAC 58A .0104, .0106, .0108, and .0109**. The Commission's syllabus
+still controls prescribed scope and instructional level. The current OAH PDF bytes and the current
+WWREA disclosure form still require local capture and page-level review before filing; an indexed rule
+is not represented as a byte-verified submission exhibit.
 
 ---
 
@@ -61,9 +61,11 @@ Transcribed from the Syllabus:
 2. **"To introduce the consumer to available agency options."**
 
 **Purpose 1 is the one consumers get wrong and licensees let them.** Before there is an agency
-relationship, **nothing a consumer tells you is confidential.** A prospective buyer chatting at an open
-house about the maximum they would pay has told a seller's subagent, and the disclosure exists to make
-sure they knew that before they spoke.
+relationship, the consumer does not receive **agency confidentiality from that broker**. A prospective
+buyer who tells the seller's agent the maximum they would pay cannot assume the statement will be kept
+from the seller. That is why the broker should pause the conversation before seeking or receiving
+confidential transaction information. This is an agency rule; it is not a claim that every other
+privacy or data-protection duty disappears.
 
 ### B.2 The Working with Real Estate Agents (WWREA) Disclosure — Commission Rule 58A .0104(c)
 
@@ -91,6 +93,24 @@ sure they knew that before they spoke.
 > **This activity must be completed.** Work each of those four settings and state, with reasons, the
 > point at which first substantial contact occurred and what the broker was then required to do.
 
+### B.2a Required Activity evidence — first-substantial-contact lab
+
+Classify the trigger, then state the broker's next action. The test is the **substance** of the contact:
+the consumer or broker begins to act as though agency exists and the consumer begins to disclose
+personal or confidential information. A greeting or request for public property information alone is
+not automatically first substantial contact.
+
+| Setting | Trigger analysis | Required response |
+|---|---|---|
+| In-person open house at the firm's listing | The visitor starts to disclose a maximum price and financing limit. This is first substantial contact because confidential bargaining information is beginning to flow to a broker whose firm represents the seller. | Interrupt before more is disclosed; provide the WWREA, add the broker's name and license number, review it, and determine whether the broker will act for buyer or seller. |
+| Telephone inquiry | A seller moves from asking about services to explaining the private reason a fast sale is needed. First substantial contact has occurred. | If providing the publication during the call is impractical, explain agency immediately, transmit it at the earliest opportunity and no later than three days after the contact, then review it at the earliest practicable opportunity. |
+| Email or social-media message | A buyer sends only a property address and asks for the showing time: no agency-like conduct or confidential information yet. The follow-up message gives a ceiling price and asks the broker to negotiate: first substantial contact occurs then. | Do not treat all electronic contact as an automatic three-day exception. If it is impractical to provide the publication at the trigger, transmit it at the earliest opportunity and within three days, and complete the review at the earliest practicable opportunity. |
+| Office consultation | Before asking about urgency, price limits, motivation, or other confidential facts, the broker explains that agency disclosure must be reviewed first. | Provide and review the WWREA before asking the confidential question; identify the agency options the firm actually offers. |
+
+**Evidence check:** for each row, the learner records (1) the exact trigger sentence, (2) whom the firm
+currently represents, (3) whether immediate delivery was practical, (4) the delivery deadline, and
+(5) when the review occurred. A mere email attachment or signature link earns no completion credit.
+
 **Mandatory review of the disclosure form — and what does NOT satisfy it. Transcribed:**
 
 > **"Inclusion of the WWREA Disclosure form in a broker's email signature or sending by an electronic
@@ -112,9 +132,16 @@ generates a record you keep for three years.
 Agents** — *"a companion piece for the WWREA Disclosure that brokers should strongly consider giving
 consumers to provide more detail on agency options."*
 
-**This project has not obtained the WWREA Disclosure form or the Questions & Answers publication, and
-no document in this build reproduces, describes or paraphrases either.** Obtaining the current form
-from the Commission is a **submission gate** for this module.
+Current NCREC guidance confirms that the WWREA disclosure is a one-page, double-sided document with a
+seller side and a buyer side. The broker marks the relationship types the **firm offers**; the
+consumer's signature acknowledges receipt and does not itself create agency. If a consumer refuses to
+sign, the broker still provides the disclosure and documents the refusal. The Commission's public
+**Questions & Answers on: Working With Real Estate Agents** page is a companion explanation, not a
+replacement for the required review.
+
+The project has located and read the Commission guidance and public Q&A route, but it has **not retained
+and page-reviewed the current WWREA disclosure form as a submission artifact**. That form remains a
+filing gate; this course does not reproduce its proprietary layout.
 
 ### B.3 Additional agency disclosure requirements *(Level 2)*
 
@@ -139,19 +166,22 @@ Five, with the Commission's citations:
 - **The inherent potential conflict of interest centres around the agent's common law duty to disclose
   all material facts to their principal.** Two principals with opposed interests cannot both receive
   that.
-- **Intentional, disclosed dual agency requires the informed, WRITTEN consent of BOTH principals** —
-  with **oral agreement permitted in certain situations** — NCGS 93A-6(a)(4) and Rule 58A .0104(d).
+- **Intentional, disclosed dual agency requires authority from BOTH principals.** Rule .0104(d)
+  requires written authority when the relationship is formed, except that a buyer or tenant who may
+  lawfully begin without a written agreement must reduce dual-agency authority to writing no later
+  than the time one represented party makes an offer.
 - **Unintentional, undisclosed dual agency is PROHIBITED.**
 
-**Recall from Module NC-07 why undisclosed dual agency happens by accident:** all brokers affiliated
-with a firm **automatically** become subagents of any principal-client of the firm. So the moment your
-firm lists a property, every agent in it is on the seller's side — and an agent who then starts acting
-for a buyer on that property has created dual agency whether or not anyone said so.
+**Recall from Module NC-07 why undisclosed dual agency happens by accident:** an agency agreement is
+with the firm, and affiliated brokers acting for that firm carry the firm's representation. If that
+same firm then undertakes to represent a buyer for its seller-client's property, the **firm** represents
+both sides and is a dual agent. This in-firm rule does not turn a broker from another firm into an
+automatic seller subagent.
 
 ### C.2 Limiting the dual agent's duties by contract
 
 - **Limiting disclosure of certain information to principals.**
-- **Limiting the duties of loyalty and skill, care, and diligence.**
+- **Limiting the dual agent's ability to advocate where the principals' interests conflict.**
 - **"Effectually eliminates agent's role as an advocate for either client."**
 
 That last phrase is what a consumer must understand before consenting: **in dual agency, nobody is
@@ -177,7 +207,9 @@ advocating for you.**
 
 1. **Dual agency is NOT eliminated; it is merely a form of dual agency.**
 2. **Only possible for in-house dual agency sales situations.**
-3. **Mandatory WRITTEN approval of both seller and buyer NO LATER THAN the making of the 1st offer.**
+3. **Prior express approval by both clients is required; written authority is due at formation unless
+   the narrow buyer/tenant timing exception in Rule .0104(d) applies, and never later than the first
+   offer by a represented party.**
 4. **Individual designated dual agents act only as agent for the principal for whom they are
    designated**, similar to an exclusive listing agent or buyer agent.
 5. **A comprehensive written company policy on the practice of designated dual agency is recommended.**
@@ -279,6 +311,27 @@ principal**. To a customer, everything material **relating to the property**.
 **And the affirmative duty to DISCOVER runs to everyone.** North Carolina does not permit a broker to
 be a passive conduit for whatever the seller happened to mention.
 
+### D.3 Required Activity evidence — client/customer duty lab
+
+For each fact, first identify the broker's principal; then decide who must receive the information.
+
+1. **Roof leak in the listed property.** It is a property-related material fact. The listing broker
+   must advise the seller-client and disclose it to prospective buyers; a direction to conceal it is
+   not a lawful instruction.
+2. **Buyer privately says they would pay $25,000 more.** The buyer's agent protects that bargaining
+   information and uses it for the buyer's benefit. A seller's agent receiving the same statement does
+   not owe buyer-agency confidentiality and must advance the seller-client's interests without making
+   a misrepresentation.
+3. **Seller's urgent relocation motive.** It may be material to the seller-client's negotiating
+   position but is not a physical property fact owed to an unrepresented buyer merely because the
+   buyer asks.
+4. **False occupancy statement proposed for the lender.** Honesty is owed in dealings with all parties.
+   The broker must not submit or assist a false statement even if the client requests it.
+
+**Completion record:** the learner submits a four-row matrix naming the client, customer, property
+fact, confidential fact, required disclosure, prohibited disclosure, and controlling duty for each
+scenario. The instructor checks the reasoning, not merely the final label.
+
 ---
 
 ## E. General Requirements for Agency Contracts — NCGS 93A-13; Rule 58A .0104(a)
@@ -293,20 +346,26 @@ should **wait for that existing agency agreement to be terminated or expire**."*
 >
 > **Instructor Note: "Oral listing agreements and property management agreements are UNLAWFUL in NC."**
 
-### E.2 Requirements for a written agency agreement — four, plus one exception
+### E.2 Requirements for a written agency agreement — rule text reconciled
 
-**a.** **Have a definite expiration date.**
+**a.** **Cover a definite period of time and terminate without prior notice when that period expires.**
+The landlord-procurement/rent-collection agreement described in Rule .0104(a) may allow automatic
+renewal if the landlord may terminate with notice at the end of a contract period or renewal.
 **b.** **Contain the anti-discriminatory language prescribed by rule in a clear, conspicuous manner** —
 Rule 58A .0104(b).
 **c.** **Be signed by all parties.**
-**d.** **Include the listing broker's individual licence number.**
+**d.** **Include the broker's licence number.** Any early-termination penalty must be clear and
+conspicuous.
 
-**e. Exception:** **non-exclusive BUYER or TENANT agency contracts can be ORAL for an unspecified
-period of time IF reduced to writing PRIOR TO the 1st offer.**
+**Buyer/tenant timing rule:** the agreement must be express and written and signed no later than the
+time one party makes an offer. But if the agreement binds the buyer/tenant for a period or restricts
+the right to work with other agents or without an agent, it must be written and signed **from
+formation**. A broker may not continue representation after the rule requires a writing.
 
 **Note precisely where the exception runs.** Owner-side agreements — listings and property management —
-must be written from the outset, always. Only **non-exclusive buyer or tenant** agency may begin
-orally, and only if reduced to writing before the first offer.
+must be written from the outset. A buyer/tenant relationship may begin expressly without a writing
+only while it neither binds the consumer for a period nor restricts the consumer's freedom to work
+with others, and it must be written no later than the offer deadline.
 
 ---
 
@@ -341,9 +400,9 @@ Advise the seller to gather:
 
 **And four further inquiries the Commission specifies:**
 
-- **Inquire about construction/alteration/repair to uncover possible mechanic's liens and the need for
-  permits.** *(Module NC-06: a mechanic's lien is effective from the first day services or materials
-  were provided.)*
+- **Inquire about construction/alteration/repair to uncover possible mechanics' lien claims and the
+  need for permits.** *(Module NC-06: a properly perfected claim may relate back to first furnishing;
+  a notice to the lien agent is not itself perfection.)*
 - **Inquire about septic system capacity/permit, if the property has an onsite septic system.**
 - **Discuss the marketing plan.**
 - **Review documents and information obtained from the seller.**
@@ -363,7 +422,8 @@ Advise the seller to gather:
 - **Calculate net profit/loss to the seller on the sale.**
 - **Review with the seller all factors that should be considered.**
 
-*Worked — net to seller.* A seller must net **$92,000** after paying a **6%** brokerage fee, a loan
+*Worked — net to seller.* A seller must net **$92,000** after paying a **hypothetical negotiated 6%**
+brokerage fee, a loan
 payoff of **$186,400**, and other seller costs of **$3,150**.
 
 Required before the fee: 92,000 + 186,400 + 3,150 = **$281,550**.
@@ -375,10 +435,43 @@ Sale price = 281,550 ÷ 0.94 = **$299,521.28**, so **$299,600** rounded to a wor
 **Divide by (1 − rate). Do not multiply by (1 + rate)** — that is the error the Commission is warning
 about, and it gets the answer wrong every time.
 
+#### F.3a Required Activity evidence — calculation set
+
+The percentages below are invented for practice. They are **not customary, recommended, or set by the
+Commission, an MLS, or an association**; actual brokerage compensation is negotiated.
+
+1. A property sells for **$410,000**. Hypothetical negotiated brokerage compensation is **5%**, the
+   payoff is **$248,600**, and other seller debits are **$4,900**. Calculate net proceeds.
+2. A seller needs **$135,000** after a **4.5%** hypothetical negotiated fee, a **$276,500** payoff, and
+   **$6,250** in other debits. Calculate the minimum price before rounding.
+3. The owner bought for **$318,000**, paid **$6,400** buyer-side acquisition costs, later paid
+   **$21,500** for improvements, and nets **$382,750** at resale. Calculate arithmetic gain for this
+   exercise; do not label it taxable gain.
+4. A proposed **$525,000** price produces a hypothetical **$21,000** brokerage charge, a **$301,250**
+   payoff, and **$8,875** other seller debits. What is the net and what percentage of price is the
+   brokerage charge?
+
+**Answer key:** (1) $136,000. (2) ($135,000 + $276,500 + $6,250) ÷ 0.955 = **$437,434.55**. (3)
+$382,750 − $318,000 − $6,400 − $21,500 = **$36,850**. (4) net **$193,875**; brokerage charge **4%**.
+Each submission must show the setup and a reverse check.
+
 ### F.4 Complete the listing contract form
 
 **Instructor Note, transcribed:** *"**Listing price must be determined BEFORE seller signs listing
 contract.**"*
+
+#### F.4a Required Activity evidence — distinguish the three listing types
+
+| Listing type | Exclusivity | When the listing firm ordinarily earns under the described structure |
+|---|---|---|
+| Exclusive right to sell | One listing firm has the right for the stated term. | A sale during the term ordinarily triggers the agreed compensation regardless of who locates the buyer, subject to the actual contract. |
+| Exclusive agency | One listing firm is engaged, but the contract preserves the owner's stated right to sell without owing that firm. | The firm ordinarily earns when it or another broker is the procuring cause; the owner-sale exception depends on the agreement. |
+| Open listing | The owner may engage multiple firms and may also sell directly. | The broker who is the procuring cause ordinarily earns the agreed compensation; an owner-direct sale may produce none. |
+
+**Scenario check:** Seller signs an exclusive-agency agreement with Firm A, then personally locates and
+contracts with the buyer without broker procurement. The learner must explain why the result differs
+from an exclusive-right-to-sell agreement and why the actual signed wording controls. Then change the
+facts so Firm B produced the buyer under an open listing and identify the procuring-cause issue.
 
 ### F.5 Comply with the Residential Lead-Based Paint Hazard Reduction Act, if applicable
 
@@ -394,14 +487,15 @@ Module NC-05, including the broker's own compliance duty.
 
 **Working with buyers as a SELLER SUBAGENT**, or **as a BUYER AGENT**.
 
-**Temporary oral buyer agency — five conditions, all of which must hold:**
+**Buyer-agency writing decision:**
 
-1. **Must be nonexclusive.**
-2. **May not bind the buyer for any specific period of time.**
-3. **All terms of the written agency agreement must be addressed in the oral agreement.**
-4. **If the oral agreement is limited to a specific brokerage company or for a specific time period,
-   the agency must be reduced to a written agreement IMMEDIATELY.**
-5. **Must be reduced to writing NO LATER THAN the time an offer to purchase is made by ANY party.**
+1. The representation must be **express**; consumer silence does not create it.
+2. If it binds the buyer for a period or restricts the buyer's right to work with another agent or
+   without an agent, it must be written and signed **when formed**.
+3. Otherwise, it may begin without a writing, but every required term should be agreed rather than
+   assumed.
+4. It must be reduced to a signed writing no later than the time either party makes an offer.
+5. The broker may not continue representation after the rule requires the signed writing.
 
 Then: **exclusive versus nonexclusive written agreement**; **the option of limiting the duration of an
 exclusive agreement**; **the option of limiting an exclusive agreement to specific properties.**
@@ -409,12 +503,14 @@ exclusive agreement**; **the option of limiting an exclusive agreement to specif
 **Working with an unrepresented seller (FSBO) as a buyer agent — three steps:**
 
 1. **Provide and review the WWREA Disclosure.**
-2. **Obtain a written agreement signed by the seller.**
+2. If compensation or cooperation is sought from the seller, **obtain the appropriate written
+   compensation/cooperation agreement**; do not convert it into a seller-agency agreement.
 3. **Refrain from actions that might be interpreted as the broker representing the seller.**
 
-**Step 3 is where undisclosed dual agency is created by accident.** Helping a FSBO seller with their
-paperwork, advising them on price, or holding their open house looks like representation, and looking
-like it is enough.
+**Step 3 is where undisclosed dual agency is created by accident.** A buyer agent who advises the FSBO
+seller on price or legal terms, drafts custom language, or otherwise undertakes to advance the seller's
+interests may create a representation conflict and may also cross the legal-practice boundary. A
+written fee agreement alone does not make the seller a client.
 
 ### G.2 The remaining steps
 
@@ -452,6 +548,29 @@ managers'.**"*
 >
 > **This activity must be completed**, and Module NC-09 supplies the fair housing framework it applies.
 
+#### H.1a Required Activity evidence — tenant-screening decision matrix
+
+The manager applies the owner's **written, legitimate, transaction-relevant criteria consistently**
+and routes disability/accommodation and criminal-record edge cases to the BIC or counsel. A third-party
+screening product does not transfer the housing provider's fair-housing responsibility.
+
+| Proposed factor | May be considered? | Required safeguard |
+|---|---|---|
+| Verified income or ability to pay | Generally yes | Use the same documented standard for similarly situated applicants; account for lawful income sources and accommodation/program rules. |
+| Credit history | Generally yes | Use accurate, relevant information consistently; follow consumer-report notice/dispute duties and do not use it as a proxy for a protected class. |
+| Prior rental-payment or lease-performance history | Generally yes | Verify comparable facts and apply the same look-back and evidence standard. Do not count disability-related facts without considering a required reasonable accommodation. |
+| Race, color, religion, sex, national origin, familial status, or disability | No | Never rank, steer, discourage, vary terms, or deny because of a protected characteristic. |
+| Presence of children | No as a disqualifier | Apply lawful occupancy standards without treating familial status less favorably. |
+| Disability or nature/severity of disability | Not as a screening factor | Ask only for information permitted to evaluate a requested accommodation when the need is not obvious; keep the inquiry limited. |
+| Arrest alone or a blanket exclusion for any criminal history | High-risk; do not use as an automatic rule | Criminal history is not itself a federal protected class, but a broad or inconsistently applied policy can create fair-housing liability. Use current counsel-approved criteria tied to a legitimate safety/property interest and current law. |
+
+**Scenarios:** (1) Two applicants have the same verified income and credit profile; the manager demands
+extra proof only from the applicant with children — prohibited unequal treatment. (2) A neutral credit
+standard flags an error; the manager follows the consumer-report dispute/adverse-action process rather
+than improvising. (3) A disability-related rental-history issue accompanies an accommodation request;
+the manager pauses the ordinary screen and uses the established accommodation workflow. (4) A blanket
+“any arrest ever” denial is rejected and escalated for current legal review.
+
 ### H.2 Typical provisions of property management contracts
 
 **Instructor Note, transcribed:** *"Per Commission Rule 58A .0104(a), **all property management
@@ -477,15 +596,21 @@ are taken up in Module NC-14, where the gap in this project's reading is recorde
 
 ---
 
-## Required Activities in this section — all four must be completed
+## Required artifacts and activities in this section
+
+The current WWREA disclosure and companion Q&A must be available to the student and reviewer. The
+Commission guidance/Q&A route has been located, but the disclosure form has not yet passed local
+capture and page review; that source artifact remains **outstanding**. The five learner activities are:
 
 1. **Examples of when first substantial contact occurs** — in person, by phone, by electronic means such
    as email or social media, and at open houses. *(B.2)*
 2. **Compare and contrast duties owed to clients versus third parties**, with emphasis on the difference
    in the disclosure standard. *(D)*
-3. **Math practice problems** on listing price, net to seller and net profit/loss — *"students
-   traditionally have difficulty with this on the license exam."* *(F.3)*
-4. **Discuss factors that may or may not be considered due to Fair Housing Act criteria**, e.g. credit
+3. **Clarify the characteristics of exclusive-right-to-sell, exclusive-agency, and open listings.**
+   *(F.4a)*
+4. **Math practice problems** on listing price, net to seller and net profit/loss — *"students
+   traditionally have difficulty with this on the license exam."* *(F.3a)*
+5. **Discuss factors that may or may not be considered due to Fair Housing Act criteria**, e.g. credit
    reports and criminal records. *(H.1)*
 
 ## Module NC-08 engagement check
@@ -503,12 +628,14 @@ May 2026, read on 2026-08-20 and transcribed in `north-carolina/regulatory/prima
 Every Instructor Note, Required Activity, rule citation and numbered requirement above is **transcribed
 from the Syllabus.**
 
-**Not read, and therefore stated nowhere in this module in its own text:** **NCGS 93A**, including
-93A-6(a)(1), (2), (3), (4), (6), (7), (8), (10), (12), (13) and (14), and **93A-13**; **21 NCAC 58A**,
-including Rules .0104, .0106, .0108 and .0109 — the citations are the Syllabus's and the rules
-themselves were not obtained. **Also not obtained:** the **WWREA Disclosure form**; the **Questions &
-Answers on: Working with Real Estate Agents**; **NC REALTORS® Standard Form 2-T**; the **Residential
-Square Footage Guidelines**; the **LLCR**; and **RELINC**. **No field, wording or layout of any form is
-described**, and no measurement standard, notice period or fee figure from any unread source is stated.
-Obtaining the WWREA form and Form 2-T is a **submission gate** for this module. The worked net-to-seller
-figures are invented for arithmetic.
+Current official General Assembly text for **G.S. 93A-6** and current official OAH indexed text for
+**Rules .0104, .0106, .0108 and .0109** were read on 2026-09-07. Current NCREC WWREA guidance and the
+Commission's public Q&A route were also inspected. Rule .0104 establishes agreement/disclosure timing,
+dual/designated agency and protected information; .0106 supplies the three-day delivery rule; .0108
+supplies transaction-record retention; and .0109 governs brokerage compensation disclosure.
+
+**Still not retained and page-reviewed for filing:** the current **WWREA Disclosure form**; **NC
+REALTORS® Standard Form 2-T**; and the **Residential Square Footage Guidelines**. The current LLCR and
+RELINC are already separately identified in the source ledger. No proprietary form wording or layout
+is reproduced. Obtaining/reviewing the WWREA form and Form 2-T remains a submission gate. All
+net-to-seller percentages are invented for arithmetic and do not suggest a customary fee.

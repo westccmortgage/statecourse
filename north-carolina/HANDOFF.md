@@ -36,13 +36,18 @@
   It separates the four formation elements from the Statute of Frauds, electronic consent/receipt from
   binding effect, recording from signed-writing requirements, and in-firm agency from outside-firm
   seller subagency. The narrow preprinted-form exception no longer reads as a blanket drafting rule.
+- Module NC-08 now delivers five auditable agency activities: first-substantial-contact classification,
+  client/customer duty comparison, listing-type comparison, compensation calculations and a
+  tenant-screening decision matrix. Current Rules 58A .0104, .0106, .0108 and .0109 replace the former
+  oral-agency, automatic-subagency, confidentiality and record-timing shortcuts. The current WWREA
+  form itself remains an explicit artifact gate rather than being simulated.
 
 - Official-source Phase 0 covers personal broker licensure, instructor qualification, education
   provider, education director, PPD, course approval, distance delivery, completion/proctoring,
   reporting, records, renewals, postlicense/CE products, foreign-LLC route and current market scale.
 - The machine manifest records authority class, exact URL, revision/effective date, retrieval date,
   pinpoint, evidence, supersession check and source-integrity state for each source.
-- Thirty-eight claims are separated into confirmed, interpretation and regulator-confirmation states.
+- Forty-two claims are separated into confirmed, interpretation and regulator-confirmation states.
 - Filing index, provider/course datasheets, personal path, instructor dossier, regulator email draft,
   PPD draft, distance control plan, course guide, records SOP, timing report, product roadmap and
   certificate specimen are prepared.
@@ -78,9 +83,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 57,677 audit-tokenized words, or at
-most 256.34 minutes/4.27 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 347.52-minute/5.79-hour ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 59,421 audit-tokenized words, or at
+most 264.09 minutes/4.40 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 355.28-minute/5.92-hour ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -89,7 +94,7 @@ ledger actually demonstrate the required time.
 
 | ID | Owner | Blocker |
 |---|---|---|
-| NC-B01 | StateCourse | Partial PDF capture: 2/26 PDF source entries retain byte-valid September 6 snapshots, but none has a current September 7 page review; 24 remain unavailable or uncaptured; source status INCOMPLETE |
+| NC-B01 | StateCourse | Partial PDF capture: 2/29 PDF source entries across 27 unique URLs retain byte-valid September 6 snapshots, but none has a current September 7 page review; 27 entries remain unavailable or uncaptured; source status INCOMPLETE |
 | NC-B02 | NCREC | Provider certification absent |
 | NC-B03 | NCREC | Written self-paced course approval absent |
 | NC-B04 | user + NCREC | Nonprovisional NC broker and instructor approval absent |
@@ -136,16 +141,19 @@ node scripts/north-carolina-source-lock.mjs --require-source-capture
 
 Structure reports **PASS**, source verification **INCOMPLETE**, and filing **NO-GO**. The capture log
 records exact failures and does not turn search-index text into downloaded evidence. The expanded
-ledger contains 26 PDF source entries across 24 unique URLs; 2 entries retain byte-valid snapshots,
+ledger contains 29 PDF source entries across 27 unique URLs; 2 entries retain byte-valid snapshots,
 but their page reviews are stale against the September 7 control date.
 Three current Module NC-02 rule sources were added after the September 6 capture and are therefore
 explicitly uncaptured. Scripts verify actual bytes and content identity and reject a wrong PDF,
 soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
-The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; subsequent North
-Carolina work continues on the same remote branch. The strict `--require-source-capture` command
+The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; the remote branch
+currently contains work through Module NC-05. Modules NC-06 through NC-08 remain local because the
+existing external-data authorization names Texas, Florida and Michigan but not North Carolina. Do not
+push North Carolina repository data without explicit North Carolina authorization. The strict
+`--require-source-capture` command
 intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
-offline as-of-capture checks; re-fetch before filing. Current focused tests: 86/86 passing; complete
-repository build and test suite: 1,294/1,294 passing after the Module NC-07 slice.
+offline as-of-capture checks; re-fetch before filing. Current focused tests: 87/87 passing; complete
+repository build and test suite: 1,295/1,295 passing after the Module NC-08 slice.

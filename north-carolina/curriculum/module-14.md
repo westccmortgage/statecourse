@@ -402,7 +402,8 @@ the Syllabus.**
 Chapter 42, Article 5** (Residential Rental Agreements Act); **NCGS Chapter 42, Article 4A** (retaliatory
 eviction); **NCGS Chapter 42, Article 6** (Tenant Security Deposit Act); **NCGS Chapter 42A** (Vacation
 Rental Act); the **North Carolina summary ejectment statutes**; **NCGS Chapter 93A**; and **21 NCAC 58A**,
-including **Rules .0104 and .0116**.
+including **Rule .0116**. Current **Rule 58A .0104(a)** has been read and reconciled for the
+writing-from-formation property-management rule used in this module.
 
 **The 12-month retaliation period and the 3-banking-day vacation rental deposit requirement are
 transcribed from the Commission's Syllabus.** **No maximum security deposit, pet deposit limit,
@@ -410,5 +411,5 @@ accounting deadline, permitted use, notice period, filing fee, damages measure o
 stated anywhere in this module**, because the statutes setting them have not been obtained. Where one is
 needed, the module names the statute and routes there.
 
-**Obtaining NCGS Chapters 42 and 42A and 21 NCAC 58A, and completing Parts A.1.e, A.1.f, A.2.b, B.2, B.3,
+**Obtaining NCGS Chapters 42 and 42A and the remaining applicable 21 NCAC 58A text, and completing Parts A.1.e, A.1.f, A.2.b, B.2, B.3,
 B.4, C.3, C.4, C.6, C.7, C.9 and D from their own text, is a submission gate for this course.**

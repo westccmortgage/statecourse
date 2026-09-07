@@ -387,10 +387,12 @@ methamphetamine declarations, the haunted-property and occupant-death declaratio
 discover-and-disclose rules, the drafting prohibition including its "even at the instruction of a client"
 clause, and the three offer-disclosure rules.
 
-**Not read, and therefore stated nowhere in this module in its own text:** **NCGS Chapter 93A**,
-including 93A-4(e), 93A-6, 93A-12, 93A-45(c) and 93A-13; **NCGS 84-2.1**; **NCGS 153A and 160A**; **NCGS
-143-215.94A**; **21 NCAC 58A**, including Rules .0105, .0106, .0108, .0109, .0110, .0111, .0115, .0116,
-.0117, .0118, .0120, .1601 and .1808; the **Interstate Land Sales Full Disclosure Act**; and the
-**LLCR**, which the Commission itself directs students to for trust accounts and cites at pages 99–102.
-**No deposit deadline, trust account threshold, record retention period, advertising requirement or
-penalty is stated.** Obtaining the LLCR is a **submission gate** for this module.
+Current primary-text reconciliation has now read **NCGS 93A-6**, **NCGS 84-2.1**, and Commission Rules
+**58A .0106, .0108 and .0109**. Their narrow delivery, retention, practice-of-law and compensation rules
+are used only where this module or its question bank says so. **Still not read for this module's full
+topic pass:** NCGS 93A-4(e), 93A-12, 93A-45(c) and 93A-13; NCGS 153A and 160A; NCGS 143-215.94A;
+Commission Rules .0105, .0110, .0111, .0115, .0116, .0117, .0118, .0120, .1601 and .1808; the
+Interstate Land Sales Full Disclosure Act; and the **LLCR**, which the Commission itself directs
+students to for trust accounts and cites at pages 99–102. No uncited deposit deadline, trust-account
+threshold, advertising rule or penalty is supplied. Obtaining and reviewing the LLCR remains a
+**submission gate** for this module.

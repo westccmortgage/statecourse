@@ -321,6 +321,34 @@ Statutory and rule references named: **NCGS 93A**; **NCGS 93A-6(a)(4) and (6)**;
 .0104(c)–(i), (m), (o) and (p)**; **58A .0104(e)** for disclosure of agency status by a seller agent or
 subagent to a prospective buyer; **58A .0108** for retention.
 
+### Module NC-08 reconciliation — current primary text read 2026-09-07
+
+- **Rule 58A .0104(a):** owner-side brokerage agreements are written and signed from formation.
+  Buyer/tenant representation must be express and written no later than an offer; an agreement that
+  binds for a period or restricts the consumer's right to work with others or without an agent is
+  written from formation. Written agreements have a definite period, broker license number, expiration
+  mechanism, conspicuous early-termination penalty if any, and the prescribed anti-discrimination
+  provision.
+- **Rule 58A .0104(c):** first substantial contact is tied to agency-like conduct and the beginning of
+  personal/confidential disclosure. The telephone/electronic three-day transmission procedure applies
+  where immediate provision is impractical; review follows at the earliest practicable opportunity.
+- **Rule 58A .0104(d)-(n):** seller/buyer disclosures, dual-agency authority, designated-agent
+  eligibility, protected information and identification timing are distinct requirements. A firm that
+  represents more than one party is a dual agent; designated agency does not eliminate the firm's dual
+  status.
+- **Rule 58A .0106:** executed agency and transaction instruments generally go to the customer/client
+  within three days; the rule has a narrow owner-authorized lease/rental exception and a five-day
+  response when that owner requests a copy.
+- **Rule 58A .0108:** transaction records are retained three years from the later applicable event;
+  disclosure documents are included, and affiliated brokers deliver listed instruments to their firm
+  within three days.
+- **Rule 58A .0109:** compensation, incentives, rebates and other valuable consideration use the
+  rule's consent/disclosure structure. The rule fixes no customary rate.
+- **Current NCREC WWREA guidance:** delivery alone is not review; checked boxes identify relationship
+  types offered by the firm; signature acknowledges receipt rather than creating agency; refusal is
+  documented; and the Q&A is a companion resource. The current disclosure form itself has not yet been
+  retained and page-reviewed for the filing package.
+
 ---
 
 ## Source boundary — current disposition
@@ -438,9 +466,10 @@ documents rather than a substitute for them.**
 
 - **21 NCAC Chapter 58, Subchapters A and H:** Phase 0 inspected the current official indexed OAH
   text for the controlling applicant, provider, instructor, course, distance, reporting, records and
-  renewal rules. Modules NC-01 and NC-02 were reconciled on 2026-09-07 to their applicable applicant,
-  other-jurisdiction, supervision, BIC, and compensation rules. The remaining modules still need
-  topic-level reconciliation, and the official PDF bytes still need a filing-date integrity lock.
+  renewal rules. Modules NC-01, NC-02, and NC-08 were reconciled on 2026-09-07 to their applicable
+  applicant, other-jurisdiction, supervision, BIC, compensation, agency, document-delivery and records
+  rules. The remaining modules still need topic-level reconciliation, and the official PDF bytes still
+  need a filing-date integrity lock.
 - **NCGS Chapter 93A:** Phase 0 inspected the current official General Assembly text for §§ 93A-4 and
   93A-6 and Article 3. Modules NC-01, NC-05 and NC-07 were reconciled to their applicable provisions on
   2026-09-07; the other topic-level curriculum reconciliations remain open.
@@ -453,9 +482,10 @@ documents rather than a substitute for them.**
   text-extracted, and used to reconcile Module NC-01 on 2026-09-07. Its live identity and fees must
   still be rechecked before filing and enrollment.
 - **The North Carolina Real Estate Manual.**
-- **The Working with Real Estate Agents (WWREA) Disclosure form itself**, and the **Questions & Answers
-  on: Working with Real Estate Agents.** Their existence, their trigger and their retention period ARE
-  stated because the Syllabus states them; **no field, wording or layout of either is described.**
+- **The Working with Real Estate Agents (WWREA) Disclosure form itself** remains uncaptured. Current
+  Commission guidance and the public **Questions & Answers on: Working with Real Estate Agents** route
+  were inspected for Module NC-08, but the disclosure form still requires authentic local bytes and
+  page review before filing. No proprietary layout is reproduced.
 - **NC REALTORS® Offer to Purchase and Contract — Standard Form 2-T**, and every other standard form.
   The Syllabus devotes Section XI to the Offer to Purchase and Contract. **This project has not read
   Form 2-T and no document in this build reproduces, describes or paraphrases any provision of it.**

@@ -34,6 +34,12 @@ Claim IDs resolve to `config/north-carolina/regulatory-manifest.mjs`.
 | criminal report, not identified fingerprinting | 58A .0301(b)(2) | NC-C16 | personal path | order at filing |
 | $105 original application | 58A .0302(a) | NC-C18 | personal path | confirmed |
 | CE product constraints | G.S. 93A-38.5; 58H .0403-.0404 | NC-C20 | product roadmap | confirmed |
+| owner and buyer/tenant agency agreement timing | 58A .0104(a) | NC-C39 | Module NC-08; assessment bank | current rule reconciled |
+| WWREA at first substantial contact and actual review | 58A .0104(c); NCREC WWREA guidance | NC-C39, NC-C42 | Module NC-08 lab | delivered; current form artifact still missing |
+| dual/designated-dual authority and confidentiality limits | 58A .0104(d), (i)-(n) | NC-C39 | Module NC-08 scenarios | current rule reconciled |
+| executed-document delivery | 58A .0106 | NC-C40 | Module NC-08; assessment bank | three-day rule reconciled |
+| transaction records and disclosure retention | 58A .0108 | NC-C40 | Module NC-08; records questions | later-event three-year rule reconciled |
+| compensation consent/disclosure; no fixed rate | 58A .0109 | NC-C41 | Module NC-08 calculation set | current rule reconciled |
 
 ## Release rule
 

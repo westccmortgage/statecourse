@@ -445,7 +445,9 @@ May 2026, read on 2026-08-20. Every Instructor Note, Required Activity and struc
 Offer to Purchase and Contract Standard Form 2-T**; the **Guidelines for Completing the Offer to Purchase
 and Contract Form**; and **all eight standard addenda** named at B.5. **Also not obtained:** the three
 Commission-authored forms — the **WWREA Disclosure**, the **RPOADS**, and the **Mineral and Oil and Gas
-Mandatory Disclosure Statement (MOG)**. **Also not read in their own text:** **NCGS Chapter 93A**,
-including 93A-6(a)(11), (14) and 93A-12; **NCGS 84-2.1**; **NCGS 44A-8 and 44A-11.1**; **NCGS 47E**; and
-**21 NCAC 58A**, including Rules .0106, .0108, .0111, .0112, .0115 and .0116; and **TRID / Regulation Z**.
-**No deposit deadline, escrow timing rule, form provision, contract deadline or penalty is stated.**
+Mandatory Disclosure Statement (MOG)**. Current primary-text reconciliation has read **NCGS 93A-6**,
+**NCGS 84-2.1**, the applicable **NCGS Chapter 44A** lien-agent provisions, and Commission Rules
+**58A .0106 and .0108**; this module uses their narrow practice-of-law, delivery and retention rules.
+**Still not read for this module's full topic pass:** NCGS 93A-12; NCGS 47E; Commission Rules .0111,
+.0112, .0115 and .0116; and TRID / Regulation Z. No uncited deposit deadline, escrow timing rule, form
+provision, contract deadline or penalty is stated.
