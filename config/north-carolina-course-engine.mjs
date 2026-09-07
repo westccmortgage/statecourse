@@ -131,10 +131,12 @@ const MODULES = Object.freeze([
    them is one of the THREE course completion conditions, so an outstanding activity is a submission
    gate and not a nice-to-have. Each outstanding one names the artefact this project did not obtain. */
 const REQUIRED_ACTIVITIES = Object.freeze([
-  { section: "III", moduleId: "module-03", activity: "Use pictures to help students recognize items that might be fixtures.", status: "delivered" },
-  { section: "III", moduleId: "module-03", activity: "Provide a deed and a survey that illustrate description methods, and a visual illustration of an accompanying description.", status: "delivered" },
-  { section: "III", moduleId: "module-03", activity: "Provide a copy of an approved subdivision plat map and a residential property survey.", status: "outstanding", blockedBy: "No North Carolina plat map or residential survey has been obtained by this project." },
-  { section: "III", moduleId: "module-03", activity: "Provide examples of each zoning classification.", status: "delivered" },
+  { section: "III", moduleId: "module-03", activity: "Use pictures to help students recognize items that might be fixtures.", status: "delivered", evidencePath: "public/statecourse/media/nc-fixture-decision-lab.svg" },
+  { section: "III", moduleId: "module-03", activity: "Provide a deed and a survey that illustrate description by metes and bounds.", status: "outstanding", blockedBy: "A clearly labelled teaching facsimile is prepared, but a rights-safe deed and licensed survey acceptable for Commission review have not been obtained." },
+  { section: "III", moduleId: "module-03", activity: "Provide a visual illustration of an accompanying government survey description.", status: "delivered", evidencePath: "public/statecourse/media/nc-government-survey-grid.svg" },
+  { section: "III", moduleId: "module-03", activity: "Provide a copy of an approved subdivision plat map.", status: "outstanding", blockedBy: "No rights-safe approved North Carolina subdivision plat map has been obtained by this project." },
+  { section: "III", moduleId: "module-03", activity: "Provide a copy of a residential property survey.", status: "outstanding", blockedBy: "No rights-safe licensed residential property survey has been obtained by this project." },
+  { section: "III", moduleId: "module-03", activity: "Provide examples of each zoning concept.", status: "delivered", evidencePath: "north-carolina/curriculum/module-03.md#required-zoning-examples" },
   { section: "V", moduleId: "module-05", activity: "Review the Lead-Based Paint or Lead-Based Paint Hazard disclosure.", status: "outstanding", blockedBy: "The federal lead-based paint disclosure form has not been obtained by this project." },
   { section: "VI", moduleId: "module-06", activity: "Provide real world examples of each type of estate, and explain real world use of each type of lease.", status: "delivered" },
   { section: "VI", moduleId: "module-06", activity: "Provide real world examples of each way real property is transferred, voluntarily and involuntarily.", status: "delivered" },
@@ -196,8 +198,8 @@ const TIMING_EVIDENCE = Object.freeze({
   instructionalMinutesPerHour: 50,
   requiredInstructionalMinutes: REQUIRED_INSTRUCTIONAL_HOURS * 50,
   commissionReadingRateWordsPerMinute: 225,
-  curriculumBaselineWords: 53372,
-  curriculumBaselineMinutes: Number((53372 / 225).toFixed(2)),
+  curriculumBaselineWords: 53850,
+  curriculumBaselineMinutes: Number((53850 / 225).toFixed(2)),
   measuredOn: "2026-09-07",
   mediaDurationLedgerMinutes: 0,
   regulatorFormatOutlineComplete: false,

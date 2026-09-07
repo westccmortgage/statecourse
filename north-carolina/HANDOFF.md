@@ -62,9 +62,9 @@ the record; equivalency therefore needs NCREC preclearance.
 Rule 58H .0401 measures self-paced course time at 225 words per minute plus actual audio/video
 duration. Rule .0101(7) defines an instructional hour as 50 instructional minutes plus 10 break
 minutes, so the 72-hour non-exam syllabus allocation is 3,600 actual instructional minutes, not the
-previously reported 4,320. The sixteen curriculum files contain 53,372 audit-tokenized words, or at
-most 237.21 minutes/3.95 elapsed hours; they include nonstudent author notes. Adding the entire
-question-bank source gives a generous 327.75-minute ceiling including code. Neither is validated
+previously reported 4,320. The sixteen curriculum files contain 53,850 audit-tokenized words, or at
+most 239.33 minutes/3.99 elapsed hours; they include nonstudent author notes. Adding the entire
+question-bank source gives a generous 329.97-minute ceiling including code. Neither is validated
 student time. There is no media ledger. Planned “72-hour” module labels prove nothing. The course
 must not be submitted or advertised as 75 hours until its student-visible content and unit/media
 ledger actually demonstrate the required time.
@@ -123,9 +123,12 @@ records exact failures and does not turn search-index text into downloaded evide
 ledger contains 24 PDF source entries across 22 unique URLs; 2 entries have retained, reviewed bytes.
 Three current Module NC-02 rule sources were added after the September 6 capture and are therefore
 explicitly uncaptured. Scripts verify actual bytes and content identity and reject a wrong PDF,
-soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review. No push made.
+soft-404, missing snapshot, stale hash, foreign redirect, and missing/stale page review.
 
 PDF extraction needs Python with `pypdf`; set `NC_PYTHON` to that interpreter when it is not `python3`.
-The strict `--require-source-capture` command intentionally exits 1 while sources are incomplete;
+The branch was first pushed at commit `748a8bbde4adcaa39ba325c8fb6235bfd6887d50`; subsequent North
+Carolina work continues on the same remote branch. The strict `--require-source-capture` command
+intentionally exits 1 while sources are incomplete;
 the normal command checks structure and reports source failures without claiming a lock. These are
-offline as-of-capture checks; re-fetch before filing. Current focused tests: 79/79 passing.
+offline as-of-capture checks; re-fetch before filing. Current focused tests: 82/82 passing; complete
+repository build and test suite: 1,290/1,290 passing.

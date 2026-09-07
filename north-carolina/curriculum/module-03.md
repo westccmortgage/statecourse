@@ -8,9 +8,10 @@ instructors are **REQUIRED to comply**.* Several subtopics carry their own Level
 **Fixtures is Level 3**, and Property Ownership and Interests, Encumbrances, Legal Descriptions, Zoning
 concepts, Subdivision regulation and Private controls are **Level 2**.
 **Licence examination weight:** **National Exam Category — 9 items.**
-**Instructional hours:** **5.0**, matching the Commission's recommended 1.0 hour for Basic Real Estate
-Concepts plus 4.0 for Property Characteristics, Description & Use.
-**Course version:** 1.0 submission draft
+**Recommended allocation:** **5.0 instructional hours**, matching the Commission's recommended 1.0
+hour for Basic Real Estate Concepts plus 4.0 for Property Characteristics, Description & Use. This
+allocation is a plan, not proof of self-paced seat time; measured text/media time is reported separately.
+**Course version:** 1.1 development draft
 **Regulatory status:** Development. Not approved. No North Carolina prelicensing credit is available.
 
 ## Learning objectives
@@ -121,6 +122,13 @@ is the formulation this course teaches because it is the Commission's.
 > a portable dishwasher connected to the sink; custom storm windows cut for these openings; a swing set
 > anchored in concrete; an above-ground pool; a tenant's walk-in cooler; a propane tank on a lease.
 
+![Eight fixture-dispute illustrations for the Total Circumstances Test](/media/nc-fixture-decision-lab.svg)
+
+**Student activity.** For every pictured item, record four separate observations — intent, relationship,
+method of annexation and adaptation — before predicting the result. A label such as “bolted” or “tenant”
+does not decide the question by itself. The prediction must use **all four** Commission criteria, and the
+transaction documents should expressly settle what conveys whenever the parties can do so.
+
 #### Trade fixtures
 
 Items a **tenant** attaches for the conduct of their **business**. They remain the tenant's personal
@@ -193,6 +201,13 @@ and why a buyer who orders title work but no survey has looked for only one of t
 > **Required Activity — prescribed by the Commission:** *"Provide a deed and a survey that illustrate
 > description by metes and bounds."*
 
+The following StateCourse exhibit is a **fictional teaching facsimile**, not a recorded deed, title
+instrument or licensed survey. It shows how deed calls correspond to a plotted boundary, but it does
+not yet close the Commission activity: a rights-safe deed and survey acceptable for regulatory review
+remain an open course-material dependency.
+
+![Fictional deed calls beside a matching metes-and-bounds plot](/media/nc-metes-bounds-training-exhibit.svg)
+
 **Government (rectangular) survey system** *(Level 1 — this subtopic)* — **"Primary method for states
 other than the original 13 colonies."** Division into squares based on the intersection of **prime
 meridian lines** running north/south and **base lines** running east/west; **townships**; **sections**.
@@ -206,6 +221,13 @@ examined on its principles, and **no rectangular-survey calculations appear on t
 
 > **Required Activity — prescribed by the Commission:** *"Provide a visual illustration of an
 > accompanying government survey description."*
+
+![Government rectangular survey hierarchy from township to quarter-quarter section](/media/nc-government-survey-grid.svg)
+
+**Reading the illustration.** Begin with the township created by principal meridian and base-line
+references, locate the numbered section, then subdivide the section into quarters and quarter-quarters.
+The diagram teaches the hierarchy only. Consistent with the Commission note, the activity requires no
+acreage calculation.
 
 **Reference to recorded plat (lot and block).**
 
@@ -272,6 +294,25 @@ nonconforming use can continue** after transfer of ownership or destruction of i
 **Overlay district. Historic preservation zoning. Aesthetic zoning. Spot zoning. Cluster zoning.
 Buffer zone.**
 
+#### Required zoning examples
+
+These examples identify the concepts; they do **not** state that any particular North Carolina ordinance
+allows the result. The current city or county ordinance and the responsible planning office control.
+
+| Concept | Illustrative example |
+|---|---|
+| Nonconforming use | A neighborhood grocery lawfully operating before the area was rezoned residential continues only to the extent the current ordinance permits. |
+| Illegal use | A warehouse begins operating in a residential district after the restriction already applies and without required approval. |
+| Zoning amendment | A local government changes a corridor from an industrial classification to a mixed-use classification through its legislative process. |
+| Variance | An unusually shaped lot owner asks the board of adjustment for relief from a dimensional setback requirement. |
+| Special-use or conditional-use permit | A daycare is a listed conditional use and may operate only after the designated board applies the ordinance's conditions. |
+| Overlay district | A flood-hazard overlay adds requirements to property that retains its underlying residential classification. |
+| Historic preservation zoning | Exterior work in a designated historic district is reviewed under preservation standards in addition to base zoning. |
+| Aesthetic zoning | A sign or facade is reviewed against locally adopted appearance standards. |
+| Spot zoning | One small parcel receives materially different treatment from surrounding parcels; whether that action is lawful is a legal and fact-specific question. |
+| Cluster zoning | Homes are grouped more closely on one part of a tract while another part remains common open space, as the ordinance permits. |
+| Buffer zone | A required landscaped strip separates a commercial use from adjoining residences. |
+
 #### Urban and regional use planning
 
 **Instructor Note:** these exist *"to assure orderly and systematic development of land use."*
@@ -315,16 +356,16 @@ a particular matter, **the more restrictive of the two will control**."*
 
 ---
 
-## Required Activities in this section — all five must be completed
+## Required Activities in this section — all six must be completed
 
-1. Total Circumstances Test with pictures, predicting a judge's ruling. *(B.3)*
-2. A deed and a survey illustrating metes and bounds. *(C.1)*
-3. A visual illustration of a government survey description. *(C.1)*
-4. An approved subdivision plat map. *(C.1)*
-5. A residential property survey showing setbacks, utility easements and ideally an encroachment. *(C.2)*
-6. Examples of each listed zoning concept. *(D.1)*
-
-*(Six, on a count of the Syllabus's own "Required Activity" markers in this section.)*
+1. Total Circumstances Test with pictures, predicting a judge's ruling. *(B.3 — delivered above)*
+2. A deed and a survey illustrating metes and bounds. *(C.1 — teaching facsimile prepared; authentic
+   rights-safe source still outstanding)*
+3. A visual illustration of a government survey description. *(C.1 — delivered above)*
+4. An approved subdivision plat map. *(C.1 — outstanding)*
+5. A residential property survey showing setbacks, utility easements and ideally an encroachment.
+   *(C.2 — outstanding)*
+6. Examples of each listed zoning concept. *(D.1 — delivered above)*
 
 ## Module NC-03 engagement check
 
@@ -340,9 +381,11 @@ Drawn from **Section III** of the Commission's Prelicensing Course Syllabus, Mar
 May 2026, read on 2026-08-20. Every Instructor Note and Required Activity above is **transcribed from
 the Syllabus.**
 
-**Not read, and therefore stated nowhere in this module:** **NCGS Chapter 93A**; **21 NCAC Chapter 58**
-in its own text; the **Interstate Land Sales Full Disclosure Act**; North Carolina's subdivision,
-easement and survey statutes; and any municipal zoning ordinance. No lot threshold, exemption, setback
-standard, plat requirement or prescriptive period is stated. Where this module reaches one of those, it
-names the question and routes it — and on boundaries, improvements and easement locations the routing
-is the Commission's own: **to a licensed surveyor or civil engineer.**
+The provisions of **NCGS Chapter 93A** and **21 NCAC Chapter 58** used in Modules NC-01 and NC-02 were
+read from current official text. No additional provision from them supplies the property-law rules in
+this module. **Not read, and therefore stated nowhere in this module:** the **Interstate Land Sales Full
+Disclosure Act**; North Carolina's subdivision, easement and survey statutes; and any municipal zoning
+ordinance. No lot threshold, exemption, setback standard, plat requirement or prescriptive period is
+stated. Where this module reaches one of those, it names the question and routes it — and on boundaries,
+improvements and easement locations the routing is the Commission's own: **to a licensed surveyor or
+civil engineer.**

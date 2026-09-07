@@ -14,12 +14,13 @@ of instruction. Official .0101 indexed text was rechecked September 6; direct OA
 
 | Repository measure | Words | Minutes at 225 wpm | 60-minute elapsed hours |
 |---|---:|---:|---:|
-| sixteen curriculum Markdown files, audit tokenizer | 53,372 | 237.21 | 3.95 |
-| curriculum plus entire question-bank source file (deliberately generous ceiling) | 73,744 | 327.75 | 5.46 |
+| sixteen curriculum Markdown files, audit tokenizer | 53,850 | 239.33 | 3.99 |
+| curriculum plus entire question-bank source file (deliberately generous ceiling) | 74,243 | 329.97 | 5.50 |
 | reading-only words for 72 instructional hours | 810,000 | 3,600 | 60.00 |
 
-The September 7 increase reflects the official-source rewrite of Modules NC-01 and NC-02 and their assessments;
-it is substantive correction, not time padding. The audit tokenizer counts word-like Unicode tokens
+The September 7 increase reflects the official-source rewrite of Modules NC-01 through NC-03, their
+assessments, three Module NC-03 visual exhibits and the required zoning examples; it is substantive
+correction, not time padding. The audit tokenizer counts word-like Unicode tokens
 and excludes Markdown punctuation. Both totals include nonstudent material: the curriculum includes author notes and the larger count also includes
 JavaScript syntax/metadata. Both are upper-bound audit signals, not valid student-visible instruction.
 There is no duration-controlled audio/video ledger. The current course is at most a small

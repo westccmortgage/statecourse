@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Government rectangular survey hierarchy</title>
+  <desc id="desc">A principal meridian and base line lead to a township, a highlighted section, and quarter subdivisions.</desc>
+  <rect width="1200" height="820" fill="#f6f1e8"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#0b1739">Government survey: read the hierarchy</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="20" fill="#42506a">National-exam concept illustration — this system is not used for North Carolina legal descriptions.</text>
+  <line x1="90" y1="185" x2="455" y2="185" stroke="#c39a3b" stroke-width="7"/>
+  <line x1="270" y1="135" x2="270" y2="500" stroke="#4d2a86" stroke-width="7"/>
+  <text x="105" y="165" font-family="Arial" font-size="18" fill="#0b1739">Base line (east–west)</text>
+  <text x="285" y="150" font-family="Arial" font-size="18" fill="#0b1739">Principal meridian</text>
+  <rect x="150" y="240" width="240" height="240" fill="#fff" stroke="#0b1739" stroke-width="4"/>
+  <g stroke="#94a0b5" stroke-width="2"><path d="M190 240v240M230 240v240M270 240v240M310 240v240M350 240v240M150 280h240M150 320h240M150 360h240M150 400h240M150 440h240"/></g>
+  <rect x="270" y="360" width="40" height="40" fill="#d6b35d" stroke="#0b1739" stroke-width="3"/>
+  <text x="270" y="535" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#0b1739">Township</text>
+  <text x="270" y="565" text-anchor="middle" font-family="Arial" font-size="18" fill="#42506a">36 numbered sections</text>
+  <path d="M410 380h110" stroke="#0b1739" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="555" y="240" width="240" height="240" fill="#fff" stroke="#0b1739" stroke-width="4"/>
+  <path d="M675 240v240M555 360h240" stroke="#0b1739" stroke-width="4"/>
+  <rect x="675" y="240" width="120" height="120" fill="#d6b35d"/>
+  <text x="735" y="306" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#0b1739">NE ¼</text>
+  <text x="675" y="535" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#0b1739">One section</text>
+  <text x="675" y="565" text-anchor="middle" font-family="Arial" font-size="18" fill="#42506a">divide into quarters</text>
+  <path d="M815 300h105" stroke="#0b1739" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="950" y="240" width="190" height="190" fill="#d6b35d" stroke="#0b1739" stroke-width="4"/>
+  <path d="M1045 240v190M950 335h190" stroke="#0b1739" stroke-width="4"/>
+  <rect x="1045" y="240" width="95" height="95" fill="#4d2a86"/>
+  <text x="1092" y="295" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#fff">NE ¼</text>
+  <text x="1045" y="485" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#0b1739">Selected quarter</text>
+  <text x="1045" y="515" text-anchor="middle" font-family="Arial" font-size="18" fill="#42506a">divide again</text>
+  <rect x="75" y="630" width="1050" height="115" rx="18" fill="#0b1739"/>
+  <text x="600" y="680" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#fff">Example reading order</text>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial" font-size="21" fill="#fff">Meridian + base line → township → section → quarter → quarter-quarter</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0b1739"/></marker></defs>
+</svg>

@@ -14,7 +14,7 @@
 
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 
 import BANK from "../config/north-carolina/module-question-bank.mjs";
 import {
@@ -389,6 +389,37 @@ test("Module NC-02 teaches current supervision and compensation controls", () =>
   ]) assert.doesNotMatch(two, stale);
 });
 
+test("Module NC-03 uses the prescribed four-part fixture test and supplies the delivered activity evidence", () => {
+  const three = readModule("module-03");
+  for (const criterion of [
+    /Intent of the annexor/i,
+    /Relationship of the annexor to the property/i,
+    /Method of annexation/i,
+    /Adaptation to the real estate/i
+  ]) assert.match(three, criterion);
+  assert.match(three, /all four.*must be present/is);
+  assert.match(BANK["module-03"].engagement[0].choices[0], /All four stated criteria/i);
+
+  const activities = NORTH_CAROLINA_REQUIRED_ACTIVITIES.filter((a) => a.section === "III");
+  assert.equal(activities.length, 6);
+  const delivered = activities.filter((a) => a.status === "delivered");
+  assert.equal(delivered.length, 3);
+  for (const activity of delivered) assert.ok(activity.evidencePath, `no evidence path: ${activity.activity}`);
+  for (const asset of ["nc-fixture-decision-lab.svg", "nc-government-survey-grid.svg", "nc-metes-bounds-training-exhibit.svg"]) {
+    assert.equal(existsSync(new URL(`../public/statecourse/media/${asset}`, import.meta.url)), true, asset);
+    assert.match(three, new RegExp(`/media/${asset.replaceAll(".", "\\.")}`));
+  }
+});
+
+test("Module NC-03 gives every prescribed zoning concept an example without claiming a statewide code", () => {
+  const three = readModule("module-03");
+  for (const concept of [
+    "Nonconforming use", "Illegal use", "Zoning amendment", "Variance", "Special-use or conditional-use permit",
+    "Overlay district", "Historic preservation zoning", "Aesthetic zoning", "Spot zoning", "Cluster zoning", "Buffer zone"
+  ]) assert.match(three, new RegExp(`\\| ${concept.replace("-", "[-‑]")} \\|`, "i"));
+  assert.match(three, /do not state that any particular North Carolina ordinance allows the result/i);
+});
+
 test("no module claims approval or offers credit", () => {
   assert.doesNotMatch(allModules, /\bState Approved\b/i);
   assert.doesNotMatch(allModules, /\bEnroll Now\b/i);
@@ -578,6 +609,15 @@ test("the Required Activities that depend on unobtained forms are recorded as ou
     const activity = byText(needle);
     assert.ok(activity, `no Required Activity mentions ${needle}`);
     assert.equal(activity.status, "outstanding", `${needle} is recorded as delivered but the artefact was never obtained`);
+  }
+});
+
+test("unobtained North Carolina property exhibits are not recorded as delivered", () => {
+  const byText = (needle) => NORTH_CAROLINA_REQUIRED_ACTIVITIES.find((a) => a.activity.includes(needle));
+  for (const needle of ["deed and a survey", "approved subdivision plat map", "residential property survey"]) {
+    const activity = byText(needle);
+    assert.ok(activity, `no Required Activity mentions ${needle}`);
+    assert.equal(activity.status, "outstanding", `${needle} is recorded as delivered without an acceptable exhibit`);
   }
 });
 
