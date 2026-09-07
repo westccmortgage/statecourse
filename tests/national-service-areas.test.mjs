@@ -8,6 +8,7 @@ import { deriveJurisdictionRecord } from "../config/jurisdiction-record.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicRoot = path.join(root, "public/statecourse");
 const catalog = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/course-catalog.json"), "utf8"));
+const practiceCatalog = JSON.parse(fs.readFileSync(path.join(publicRoot, "data/free-practice-catalog.json"), "utf8"));
 const read = (relativePath) => fs.readFileSync(path.join(publicRoot, relativePath), "utf8");
 
 const areas = [
@@ -23,11 +24,16 @@ for (const area of areas) {
     assert.match(html, new RegExp(`data-service="${area.service}"`));
     assert.match(html, /<select id="serviceStateSelect">/);
     assert.match(html, /<dl id="serviceRecord">/);
-    assert.match(html, /<script src="\.\.\/service-area\.js" defer><\/script>/);
+    assert.match(html, /<script src="\.\.\/service-area\.js(?:\?[^\"]+)?" defer><\/script>/);
   });
 
   test(`${area.route} states availability from the catalog, not from copy`, () => {
     const html = read(`${area.route}/index.html`);
+    if (area.service === "exam") {
+      assert.match(html, new RegExp(`available for ${practiceCatalog.samples.length} states currently in development`));
+      assert.match(html, /not licensing-exam questions/i);
+      return;
+    }
     const category = catalog.categories.find((entry) => entry.category_id === area.categoryId);
     assert.ok(category, `catalog has no ${area.categoryId} category`);
     const areaCourses = (category.programs ?? []).flatMap((program) => program.courses ?? []);
@@ -46,20 +52,19 @@ for (const area of areas) {
 
   test(`${area.route} promises no product that does not exist`, () => {
     const html = read(`${area.route}/index.html`);
-    for (const promise of [
-      /representative practice questions/i,
-      /free practice/i,
-      /try .{0,20}practice/i,
-      /retrieve eligible completion certificates/i,
-    ]) {
+    const impossiblePromises = area.service === "exam"
+      ? [/representative licensing-exam questions/i, /retrieve eligible completion certificates/i]
+      : [/representative practice questions/i, /free practice/i, /try .{0,20}practice/i, /retrieve eligible completion certificates/i];
+    for (const promise of impossiblePromises) {
       assert.doesNotMatch(html, promise, `${area.route} still promises an unbuilt product`);
     }
+    if (area.service === "exam") assert.match(html, /href="\.\.\/free-practice\/"/);
   });
 }
 
 test("the exam-prep page never offers regulated final-exam material as study material", () => {
   const html = read("exam-prep/index.html");
-  assert.match(html, /never published, previewed, or reused as practice material/);
+  assert.match(html, /Protected course final examinations and their answer keys.*never used as public practice material/i);
   assert.match(html, /does not publish examination questions/);
 });
 

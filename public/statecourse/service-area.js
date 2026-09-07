@@ -30,7 +30,7 @@ const fieldSets = {
   exam: (state) => [
     ["Regulator", escapeHtml(state.regulator_name)],
     ["Required pre-license education", state.prelicense_hours ? `${escapeHtml(state.prelicense_hours)} hours before the licensing examination` : "Pending verification"],
-    ["StateCourse exam preparation", "Not offered"],
+    ["StateCourse free practice", practiceStates.has(state.state_code) ? "Free lesson and formative-practice preview" : "Coming soon"],
     ["StateCourse education status", escapeHtml(state.public_status)],
   ],
   renew: (state) => [
@@ -42,11 +42,12 @@ const fieldSets = {
 };
 
 const followUp = {
-  exam: "The licensing examination is administered under the regulator's own candidate rules. StateCourse has not published examination content, vendor, scoring, or scheduling information for this jurisdiction, so use the regulator's current candidate information.",
+  exam: "StateCourse practice uses formative lesson material, not protected course finals or licensing-exam questions. The licensing examination remains controlled by the regulator and its examination provider.",
   renew: "Renewal deadlines, mandatory subjects, and accepted continuing education are set by the regulator and are not yet recorded here for this jurisdiction. Use the regulator's current renewal instructions.",
 };
 
 let jurisdictions = [];
+let practiceStates = new Set();
 
 function renderState(stateCode) {
   const state = jurisdictions.find((entry) => entry.state_code === stateCode);
@@ -68,7 +69,10 @@ function renderState(stateCode) {
     const official = state.regulator_url
       ? `<a class="cta-button" href="${escapeHtml(state.regulator_url)}" target="_blank" rel="noopener">Open the ${escapeHtml(state.state_name)} regulator ↗</a>`
       : "";
-    links.innerHTML = `${official}<a class="cta-secondary" href="${platformRoot.href}real-estate/${slugify(state.state_name)}/">See the ${escapeHtml(state.state_name)} licensing path</a>`;
+    const practice = service === "exam" && practiceStates.has(state.state_code)
+      ? `<a class="cta-button" href="${platformRoot.href}free-practice/?state=${encodeURIComponent(state.state_code)}">Start free ${escapeHtml(state.state_name)} practice →</a>`
+      : "";
+    links.innerHTML = `${practice}${official}<a class="cta-secondary" href="${platformRoot.href}real-estate/${slugify(state.state_name)}/">See the ${escapeHtml(state.state_name)} licensing path</a>`;
   }
 }
 
@@ -80,9 +84,14 @@ function selectedFromUrl() {
 async function loadJurisdictions() {
   if (!stateSelect) return;
   try {
-    const response = await fetch(new URL("data/state-registry.json", platformRoot));
-    if (!response.ok) throw new Error("State registry unavailable");
-    const { states } = await response.json();
+    const [registryResponse, practiceResponse] = await Promise.all([
+      fetch(new URL("data/state-registry.json", platformRoot)),
+      fetch(new URL("data/free-practice-catalog.json", platformRoot)),
+    ]);
+    if (!registryResponse.ok || !practiceResponse.ok) throw new Error("State registry unavailable");
+    const { states } = await registryResponse.json();
+    const practiceCatalog = await practiceResponse.json();
+    practiceStates = new Set((practiceCatalog.samples || []).map((sample) => sample.state_code));
     jurisdictions = [...states].sort((a, b) => a.state_name.localeCompare(b.state_name));
     stateSelect.insertAdjacentHTML("beforeend", jurisdictions
       .map((state) => `<option value="${escapeHtml(state.state_code)}">${escapeHtml(state.state_name)}</option>`)
