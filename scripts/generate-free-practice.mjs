@@ -3,6 +3,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
 import { PRACTICE_SOURCES } from '../config/free-practice-sources.mjs';
+import { loadTexasPracticeActivities } from './lib/free-practice-activities.mjs';
 
 const digest = text => createHash('sha256').update(text).digest('hex');
 
@@ -26,7 +27,7 @@ export async function buildFreePractice({root,states,catalogCourses,write}) {
     const files = fs.readdirSync(dir).filter(f => /^(?:module|lesson)-\d+\.md$/.test(f)).sort();
     if (!files.length) throw new Error(`No student lessons: ${source.courseId}`);
     const bank = await import(pathToFileURL(path.join(root,source.bankPath)).href);
-    const groups = bank.default?.sections
+    const groups = source.bankExports ? bank.TOPIC_QUIZZES : bank.default?.sections
       ? Object.fromEntries(bank.default.sections.map((s,i) => [`module-${String(i+1).padStart(2,'0')}`,s.items]))
       : bank.default?.assignments ?? bank.default ?? bank.TOPIC_QUIZZES;
     const collected = [];
@@ -53,10 +54,11 @@ export async function buildFreePractice({root,states,catalogCourses,write}) {
       return {id:`${source.courseId}:${item.id ?? index+1}`,lesson_id:lessonId,prompt:item.prompt,choices:[...item.choices],solution:item.correctChoice,explanation:item.rationale,sources:item.sources ?? []};
     }).filter(Boolean);
     if (!questions.length) throw new Error(`No formative questions: ${source.courseId}`);
+    const activities = source.scenarioPath ? await loadTexasPracticeActivities({root,courseId:source.courseId,lessonIds:lessons.map(l=>l.id)}) : [];
     const practice_url = `free-practice/courses/${course.course_id}.json`;
-    const payload = {course_id:course.course_id,course_title:course.course_title,state_code:state.state_code,state_name:state.state_name,coverage:source.coverage,lessons,questions};
+    const payload = {course_id:course.course_id,course_title:course.course_title,state_code:state.state_code,state_name:state.state_name,coverage:source.coverage,lessons,questions,activities};
     write(practice_url,JSON.stringify(payload,null,2)+'\n');
-    samples.push({state_code:state.state_code,state_name:state.state_name,course_id:course.course_id,course_title:course.course_title,public_status:state.public_status,content_url:lessons[0].content_url,practice_url,lesson_count:lessons.length,question_count:questions.length,coverage:source.coverage,revision:digest(JSON.stringify(payload)).slice(0,16)});
+    samples.push({state_code:state.state_code,state_name:state.state_name,course_id:course.course_id,course_title:course.course_title,public_status:state.public_status,content_url:lessons[0].content_url,practice_url,lesson_count:lessons.length,question_count:questions.length,activity_count:activities.length,activity_task_count:activities.reduce((n,a)=>n+a.tasks.length,0),coverage:source.coverage,revision:digest(JSON.stringify(payload)).slice(0,16)});
   }
   const manifest = {schema_version:'2.0',generated_from:['state-registry.json','course-catalog.json','explicit student curriculum and formative exercise allowlist'],disclosure:'Free preview and formative practice only. No enrollment, regulated study time, licensing credit, certificate, or access to a course final examination is created.',samples};
   write('data/free-practice-catalog.json',JSON.stringify(manifest,null,2)+'\n');

@@ -1,0 +1,900 @@
+{
+  "ownershipBasis": "Project-owned Texas Principles I, Principles II, and Law of Agency instruction explicitly adapted as requested; exact source segments and source-file hashes below.",
+  "sourceRoot": "/Users/anatoliykanevsky/Documents/Codex/statecourse-defect-fixes",
+  "sourceFiles": [
+    {
+      "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-06.md",
+      "bytes": 108022,
+      "sha256": "2009d6a10e2c7fcec11cacc370349ec7d349e47b6beb9d31e9d7825fc3237cef"
+    },
+    {
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-12.md",
+      "bytes": 80660,
+      "sha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566"
+    },
+    {
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+      "bytes": 73436,
+      "sha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-02.md",
+      "bytes": 11620,
+      "sha256": "6c47104c5c430fabb1ac6fb8e233a8ce140a28ec353643275f5fb6da94e249fc"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-04.md",
+      "bytes": 21585,
+      "sha256": "e949752737821c7d943ad33be6b21b98d7c9e90fe6c299dc5f215ed63a0d5603"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-01.md",
+      "bytes": 22078,
+      "sha256": "bb613561b9bfdee52d0f7cf6cc599521cf607c6f30a6e982dc1df8641c575fde"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-05.md",
+      "bytes": 43013,
+      "sha256": "52f32b58793fec7076056cda9812527e13c79a2cfe83554e2f00919cd83b1573"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-05.md",
+      "bytes": 78487,
+      "sha256": "ad18b5be028089e445461b1e033abf8cef21d146d7a58ea1a5a25ea00598c2b0"
+    },
+    {
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-07.md",
+      "bytes": 53082,
+      "sha256": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "bytes": 41544,
+      "sha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b"
+    },
+    {
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-02.md",
+      "bytes": 70357,
+      "sha256": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20"
+    },
+    {
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-04.md",
+      "bytes": 65238,
+      "sha256": "422b6438d341984b9b707eb2af6c54d1f9e137b61c7f9a63d6109e89a2738b59"
+    },
+    {
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-05.md",
+      "bytes": 79836,
+      "sha256": "0f12def8e2f3c7177d7e23769e3c573788af3d693ede79d086b23c73802cf297"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-04.md",
+      "bytes": 57558,
+      "sha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-06.md",
+      "bytes": 41959,
+      "sha256": "d12591d95c90f54c83ef7bcde9d7c6e1e8f63fa70dbaaf872bf3841bcb722396"
+    },
+    {
+      "path": "texas/tx-law-of-agency-30-v1/curriculum/module-03.md",
+      "bytes": 70595,
+      "sha256": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "bytes": 195667,
+      "sha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+      "bytes": 45890,
+      "sha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "bytes": 49394,
+      "sha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f"
+    },
+    {
+      "path": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-09.md",
+      "bytes": 45362,
+      "sha256": "63f91778e96dcbc4e937410a8129fc11c6a2e49ca3279b17d16239bff586d99b"
+    }
+  ],
+  "adaptations": [
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-06.md",
+      "sourceSha256": "2009d6a10e2c7fcec11cacc370349ec7d349e47b6beb9d31e9d7825fc3237cef",
+      "startMarker": "## Unit: Basic Provisions of the Texas Real Estate License Act",
+      "endMarker": "### Statute reading exercise: The twelve acts of a broker",
+      "adaptation": "The Act’s definitions, consumer protection, and scope",
+      "selectedWords": 1909,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U2",
+      "targetLine": 30
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-06.md",
+      "sourceSha256": "2009d6a10e2c7fcec11cacc370349ec7d349e47b6beb9d31e9d7825fc3237cef",
+      "startMarker": "**Subchapter L — Practice by License Holder",
+      "endMarker": "**Subchapter M — Real Estate Recovery Trust Account",
+      "adaptation": "Practice duties that arise while a contract is negotiated",
+      "selectedWords": 1095,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U2",
+      "targetLine": 166
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-06.md",
+      "sourceSha256": "2009d6a10e2c7fcec11cacc370349ec7d349e47b6beb9d31e9d7825fc3237cef",
+      "startMarker": "## Unit: The Purpose of Licensing Laws - What a License Holder Can and Cannot Do",
+      "endMarker": "### Applied exercise: Does this activity need a license?",
+      "adaptation": "The affirmative brokerage license and its professional boundaries",
+      "selectedWords": 1847,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U3",
+      "targetLine": 259
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-06.md",
+      "sourceSha256": "2009d6a10e2c7fcec11cacc370349ec7d349e47b6beb9d31e9d7825fc3237cef",
+      "startMarker": "**Subchapter F — Texas Real Estate Broker-Lawyer Committee",
+      "endMarker": "**Subchapter G — Approval of Real Estate Educational Programs",
+      "adaptation": "Who drafts, who adopts, and why standardized safeguards matter",
+      "selectedWords": 220,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U4",
+      "targetLine": 403
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-12.md",
+      "sourceSha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566",
+      "startMarker": "**Writing the offer: the § 537.11 boundary.",
+      "endMarker": "**What you may not do while filling it in.",
+      "adaptation": "Choosing the authorized form and preserving the published format",
+      "selectedWords": 580,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U5",
+      "targetLine": 437
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-12.md",
+      "sourceSha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566",
+      "startMarker": "**What you may not do while filling it in.",
+      "endMarker": "## Unit: A Practical Guide to Everyday Practice",
+      "adaptation": "Authorized completion, prohibited drafting, and specific written instructions",
+      "selectedWords": 1175,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U5",
+      "targetLine": 481
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+      "sourceSha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+      "startMarker": "## Unit: Deceptive Trade Practices and Consumer Protection",
+      "endMarker": "### Applied exercise: The square footage in Round Rock",
+      "adaptation": "Consumer status and the specific misleading practices relevant to contracts",
+      "selectedWords": 2231,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U6",
+      "targetLine": 602
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+      "sourceSha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+      "startMarker": "**The exemptions in § 17.49, beginning with the one written for you.",
+      "endMarker": "**The notice prerequisite as a defensive tool",
+      "adaptation": "The brokerage and transaction exemptions require their stated conditions",
+      "selectedWords": 773,
+      "target": "curriculum/module-01.md",
+      "targetUnit": "T01U6",
+      "targetLine": 778
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-02.md",
+      "sourceSha256": "6c47104c5c430fabb1ac6fb8e233a8ce140a28ec353643275f5fb6da94e249fc",
+      "startMarker": "## Unit: Land, Real Estate and Real Property",
+      "endMarker": "## Unit: Personal Property",
+      "adaptation": "The land, improvements, and bundle of rights",
+      "selectedWords": 519,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U2",
+      "targetLine": 24
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-04.md",
+      "sourceSha256": "e949752737821c7d943ad33be6b21b98d7c9e90fe6c299dc5f215ed63a0d5603",
+      "startMarker": "## Unit: Methods of Describing Real Estate in Texas",
+      "endMarker": "## Unit: Surveying",
+      "adaptation": "Identifying the land the contract concerns",
+      "selectedWords": 1435,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U2",
+      "targetLine": 68
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-02.md",
+      "sourceSha256": "6c47104c5c430fabb1ac6fb8e233a8ce140a28ec353643275f5fb6da94e249fc",
+      "startMarker": "## Unit: Personal Property",
+      "endMarker": "### Module recap",
+      "adaptation": "Fixtures, trade fixtures, severance, and competing security interests",
+      "selectedWords": 708,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U3",
+      "targetLine": 176
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-01.md",
+      "sourceSha256": "bb613561b9bfdee52d0f7cf6cc599521cf607c6f30a6e982dc1df8641c575fde",
+      "startMarker": "## Unit: The Real Estate Market - Characteristics of Real Estate",
+      "endMarker": "## Unit: Real Estate Law",
+      "adaptation": "How immobility, uniqueness, and investment affect negotiation",
+      "selectedWords": 497,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U4",
+      "targetLine": 244
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-05.md",
+      "sourceSha256": "52f32b58793fec7076056cda9812527e13c79a2cfe83554e2f00919cd83b1573",
+      "startMarker": "## Unit: Forms of Ownership",
+      "endMarker": "## Unit: Business and Home",
+      "adaptation": "Severalty, undivided shares, partition, and survivorship",
+      "selectedWords": 675,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U5",
+      "targetLine": 298
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-05.md",
+      "sourceSha256": "52f32b58793fec7076056cda9812527e13c79a2cfe83554e2f00919cd83b1573",
+      "startMarker": "## Unit: Co-Ownership",
+      "endMarker": "## Unit: Trusts",
+      "adaptation": "Marital classification, proof, and signature questions",
+      "selectedWords": 537,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U5",
+      "targetLine": 351
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-05.md",
+      "sourceSha256": "52f32b58793fec7076056cda9812527e13c79a2cfe83554e2f00919cd83b1573",
+      "startMarker": "## Unit: Business and Home",
+      "endMarker": "## Unit: Co-Ownership",
+      "adaptation": "Entity ownership and evidence of a human signer’s authority",
+      "selectedWords": 529,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U6",
+      "targetLine": 403
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-05.md",
+      "sourceSha256": "52f32b58793fec7076056cda9812527e13c79a2cfe83554e2f00919cd83b1573",
+      "startMarker": "## Unit: Trusts",
+      "endMarker": "## Unit: Investing in Real Estate",
+      "adaptation": "Trustees, beneficiaries, and the authority to convey",
+      "selectedWords": 591,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U6",
+      "targetLine": 446
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-05.md",
+      "sourceSha256": "ad18b5be028089e445461b1e033abf8cef21d146d7a58ea1a5a25ea00598c2b0",
+      "startMarker": "## Unit: Land-Use Controls",
+      "endMarker": "## Unit: Public Ownership",
+      "adaptation": "Public land-use regulation and recorded private restrictions",
+      "selectedWords": 3581,
+      "target": "curriculum/module-02.md",
+      "targetUnit": "T02U8",
+      "targetLine": 515
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-07.md",
+      "sourceSha256": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25",
+      "startMarker": "### The writings that make a promise enforceable — a different question",
+      "endMarker": "### Creation without a signature: the common-law routes and why you must not rely on them",
+      "adaptation": "Three different writing rules answer three different questions",
+      "selectedWords": 567,
+      "target": "curriculum/module-03.md",
+      "targetUnit": "T03U2",
+      "targetLine": 54
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "sourceSha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+      "startMarker": "## Unit: Historical Background",
+      "endMarker": "## Unit: Estates in Land",
+      "adaptation": "The estate vocabulary and the continuing limits on private ownership",
+      "selectedWords": 545,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U1",
+      "targetLine": 12
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-05.md",
+      "sourceSha256": "ad18b5be028089e445461b1e033abf8cef21d146d7a58ea1a5a25ea00598c2b0",
+      "startMarker": "## Unit: Public Ownership",
+      "endMarker": "## Unit: Environmental Protection Legislation",
+      "adaptation": "Acquisition, dedication, and public interests in land and water",
+      "selectedWords": 1513,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U2",
+      "targetLine": 62
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "sourceSha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+      "startMarker": "## Unit: Estates in Land",
+      "endMarker": "### Applied exercise: what estate did the seller actually own?",
+      "adaptation": "Freehold, defeasible, life, and leasehold interests",
+      "selectedWords": 1006,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U3",
+      "targetLine": 94
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "sourceSha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+      "startMarker": "## Unit: Encumbrances",
+      "endMarker": "### Applied exercise: the mowed strip and the gravel drive",
+      "adaptation": "Liens and nonmonetary burdens are different problems",
+      "selectedWords": 571,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U4",
+      "targetLine": 183
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "sourceSha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+      "startMarker": "## Unit: Liens other than Taxes",
+      "endMarker": "## Unit: Water Rights",
+      "adaptation": "Voluntary and statutory liens and their consequences for a conveyance",
+      "selectedWords": 665,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U4",
+      "targetLine": 231
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "sourceSha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+      "startMarker": "## Unit: Water Rights",
+      "endMarker": "## Unit: Residence as a Homestead",
+      "adaptation": "State water, groundwater, and drainage questions",
+      "selectedWords": 513,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U5",
+      "targetLine": 294
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-05.md",
+      "sourceSha256": "ad18b5be028089e445461b1e033abf8cef21d146d7a58ea1a5a25ea00598c2b0",
+      "startMarker": "## Unit: Environmental Protection Legislation",
+      "endMarker": "### Module recap",
+      "adaptation": "Environmental vocabulary, lead disclosure, Texas condition notices, and professional investigation",
+      "selectedWords": 5735,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U7",
+      "targetLine": 367
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "sourceSha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+      "startMarker": "## Unit: Residence as a Homestead",
+      "endMarker": "**Doctrine two: the residence homestead tax exemption.",
+      "adaptation": "Protection, qualifying liens, acreage, and proceeds",
+      "selectedWords": 1004,
+      "target": "curriculum/module-04.md",
+      "targetUnit": "T04U8",
+      "targetLine": 427
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+      "sourceSha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+      "startMarker": "## Unit: Fraud versus Misrepresentation",
+      "endMarker": "### Statute reading exercise: The two states of mind in § 17.45",
+      "adaptation": "Consent, accuracy, culpability, and the different legal consequences of a false statement",
+      "selectedWords": 1701,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U2",
+      "targetLine": 28
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-07.md",
+      "sourceSha256": "56df2f1bf63bcf9ff277f227f16936fb5d555f424314923f0041d835446ccd25",
+      "startMarker": "## Unit: How Agency is Terminated",
+      "endMarker": "## Unit: Duties of Agency that Survive Termination",
+      "adaptation": "Termination of a service relationship and the obligations that do not disappear with authority",
+      "selectedWords": 2856,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U3",
+      "targetLine": 166
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-02.md",
+      "sourceSha256": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20",
+      "startMarker": "## Unit: Authority of Agent",
+      "endMarker": "## Unit: Classifications of Agency",
+      "adaptation": "Authority to act must match the transaction and the document",
+      "selectedWords": 1321,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U4",
+      "targetLine": 403
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-04.md",
+      "sourceSha256": "422b6438d341984b9b707eb2af6c54d1f9e137b61c7f9a63d6109e89a2738b59",
+      "startMarker": "## Unit: Listing Agreements",
+      "endMarker": "## Unit: Exclusive Seller Agency",
+      "adaptation": "Listing obligations, compensation structures, authority, and required term discipline",
+      "selectedWords": 3918,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U5",
+      "targetLine": 512
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-05.md",
+      "sourceSha256": "0f12def8e2f3c7177d7e23769e3c573788af3d693ede79d086b23c73802cf297",
+      "startMarker": "## Unit: Buyer Representation Agreement",
+      "endMarker": "## Unit: Deciding to Represent the Buyer",
+      "adaptation": "The current residential agreement requirement and its required contents",
+      "selectedWords": 2457,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U6",
+      "targetLine": 820
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-04.md",
+      "sourceSha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115",
+      "startMarker": "## Unit: Leasing Real Estate",
+      "endMarker": "## Unit: Common Lease Provisions",
+      "adaptation": "Residential and commercial leasing relationships and transaction intake",
+      "selectedWords": 1060,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U7",
+      "targetLine": 1025
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-04.md",
+      "sourceSha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115",
+      "startMarker": "## Unit: Leasehold Estates",
+      "endMarker": "## Unit: Leasing Real Estate",
+      "adaptation": "Term, periodic, at-will, and holdover relationships",
+      "selectedWords": 1332,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U8",
+      "targetLine": 1051
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-04.md",
+      "sourceSha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115",
+      "startMarker": "## Unit: Common Lease Provisions",
+      "endMarker": "## Unit: Texas Landlord & Tenant Statutes",
+      "adaptation": "Reading the lease as a system of possession, payment, and maintenance obligations",
+      "selectedWords": 1298,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U9",
+      "targetLine": 1081
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-04.md",
+      "sourceSha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115",
+      "startMarker": "## Unit: Texas Landlord & Tenant Statutes",
+      "endMarker": "## Unit: Types of Leases",
+      "adaptation": "Statutory duties that shape residential lease terms and administration",
+      "selectedWords": 3225,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U9",
+      "targetLine": 1111
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-04.md",
+      "sourceSha256": "7d7bad5856d295e577d06e763fc440ec76894245e90f46a7839bb9fbc8328115",
+      "startMarker": "## Unit: Types of Leases",
+      "endMarker": "### Module recap",
+      "adaptation": "Gross, net, percentage, ground, and specialized lease structures",
+      "selectedWords": 1113,
+      "target": "curriculum/module-05.md",
+      "targetUnit": "T05U10",
+      "targetLine": 1167
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-06.md",
+      "sourceSha256": "d12591d95c90f54c83ef7bcde9d7c6e1e8f63fa70dbaaf872bf3841bcb722396",
+      "startMarker": "**2. Offer and acceptance (mutual assent).",
+      "endMarker": "### Applied exercise: the counteroffer chain",
+      "adaptation": "Offers, counteroffers, communication, and the effective-date record",
+      "selectedWords": 377,
+      "target": "curriculum/module-06.md",
+      "targetUnit": "T06U1",
+      "targetLine": 12
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-03.md",
+      "sourceSha256": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec",
+      "startMarker": "## Unit: Section 5.008 of the Texas Property Code (Seller's Disclosure)",
+      "endMarker": "## Unit: Stigmatized Properties",
+      "adaptation": "Seller knowledge, statutory scope, delivery, and the late-notice consequence",
+      "selectedWords": 1303,
+      "target": "curriculum/module-06.md",
+      "targetUnit": "T06U4",
+      "targetLine": 96
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-02.md",
+      "sourceSha256": "f49e12b34904f16478da4257fa35e5a428206a37198268a827821cfed4b49d20",
+      "startMarker": "## Unit: Information About Brokerage Services - Disclosure of Representation",
+      "endMarker": "### Module recap",
+      "adaptation": "Representation disclosure and the written brokerage-services notice",
+      "selectedWords": 2024,
+      "target": "curriculum/module-06.md",
+      "targetUnit": "T06U4",
+      "targetLine": 206
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-11.md",
+      "sourceSha256": "48fe73851d61473d15392ddec45d0aa8b31ef1d9506aef739aa63d39472c29c7",
+      "startMarker": "## Unit: Damages",
+      "endMarker": "### Applied exercise: Computing the exposure in Mansfield",
+      "adaptation": "Economic loss, mental anguish, statutory multipliers, and why remedies require their own proof",
+      "selectedWords": 1225,
+      "target": "curriculum/module-06.md",
+      "targetUnit": "T06U9",
+      "targetLine": 442
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Application for Credit",
+      "endMarker": "## Unit: Payment Plans",
+      "adaptation": "What the lender investigates and why a preliminary approval is conditional",
+      "selectedWords": 2413,
+      "target": "curriculum/module-07.md",
+      "targetUnit": "T07U1",
+      "targetLine": 20
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-04.md",
+      "sourceSha256": "e949752737821c7d943ad33be6b21b98d7c9e90fe6c299dc5f215ed63a0d5603",
+      "startMarker": "## Unit: Surveying",
+      "endMarker": "### Module recap",
+      "adaptation": "Survey evidence, boundaries, and the investigation that feeds a contract decision",
+      "selectedWords": 837,
+      "target": "curriculum/module-07.md",
+      "targetUnit": "T07U1",
+      "targetLine": 82
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-03.md",
+      "sourceSha256": "29213ff6ac2370e121695b5c2640500ec459774c9e3e82294533d9cda7a701ec",
+      "startMarker": "## Unit: Avoiding Disclosure and Misrepresentation Problems",
+      "endMarker": "## Unit: Section 5.008 of the Texas Property Code (Seller's Disclosure)",
+      "adaptation": "Accurate supporting information and the danger of treating disclosure as a guarantee",
+      "selectedWords": 2134,
+      "target": "curriculum/module-07.md",
+      "targetUnit": "T07U3",
+      "targetLine": 209
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+      "sourceSha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065",
+      "startMarker": "**Mortgage theory, and why Texas's instrument fits its law.",
+      "endMarker": "### Applied exercise: the timeline against the calendar",
+      "adaptation": "Lien theory and the place of the Texas deed of trust",
+      "selectedWords": 179,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U1",
+      "targetLine": 12
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+      "sourceSha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065",
+      "startMarker": "**Secondary market connection, closed loop.",
+      "endMarker": "## Unit: FIRPTA Affidavit",
+      "adaptation": "Debt ownership, servicing, collateral, and personal liability",
+      "selectedWords": 440,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U2",
+      "targetLine": 37
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+      "sourceSha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065",
+      "startMarker": "## Unit: Real Estate Lien Note",
+      "endMarker": "### Applied exercise: reading a note's business terms",
+      "adaptation": "The note and its repayment arithmetic",
+      "selectedWords": 653,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U3",
+      "targetLine": 81
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Payment Plans",
+      "endMarker": "## Unit: Conventional, FHA & VA Loans",
+      "adaptation": "Fully amortizing, interest-only, balloon, adjustable, and negative-amortization structures",
+      "selectedWords": 1798,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U3",
+      "targetLine": 133
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+      "sourceSha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065",
+      "startMarker": "## Unit: Deed of Trust",
+      "endMarker": "### Applied exercise: the seller who is four payments behind",
+      "adaptation": "The instrument, the parties, and collateral-protection covenants",
+      "selectedWords": 765,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U4",
+      "targetLine": 229
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Other Financing Techniques",
+      "endMarker": "## Unit: Financing Legislation",
+      "adaptation": "Seller credit, residential executory contracts, assignments, and buydown structures",
+      "selectedWords": 4482,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U5",
+      "targetLine": 298
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+      "sourceSha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065",
+      "startMarker": "**Default and foreclosure: the statutory skeleton.",
+      "endMarker": "### Statute reading exercise: pricing the deficiency fight",
+      "adaptation": "Notice, sale, lien priority, and deficiency analysis under Chapter 51",
+      "selectedWords": 1447,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U6",
+      "targetLine": 410
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-08.md",
+      "sourceSha256": "52a4c3a6b298f7b13ec9c0dfb7aec70548e64e3857ed78881a3e844e2fcb6065",
+      "startMarker": "**Alternatives short of foreclosure**",
+      "endMarker": "**Mortgage theory, and why Texas's instrument fits its law.",
+      "adaptation": "Different relief paths have different consequences",
+      "selectedWords": 106,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U6",
+      "targetLine": 519
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-03.md",
+      "sourceSha256": "68a69c48ea064f48650936ab042ec9a827a66e00be40b5e9400fa2efd55a1c5b",
+      "startMarker": "## Unit: Tax Liens",
+      "endMarker": "### Statute reading exercise: ranking against the tax lien",
+      "adaptation": "Annual attachment and the property-tax lien’s statutory priority",
+      "selectedWords": 556,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U7",
+      "targetLine": 540
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Sources of Real Estate Financing",
+      "endMarker": "## Unit: Mortgage Market",
+      "adaptation": "Depositories, mortgage lenders, brokers, private capital, and servicing",
+      "selectedWords": 2114,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U8",
+      "targetLine": 594
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Mortgage Market",
+      "endMarker": "## Unit: Application for Credit",
+      "adaptation": "Primary origination and secondary-market liquidity",
+      "selectedWords": 1185,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U8",
+      "targetLine": 642
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Conventional, FHA & VA Loans",
+      "endMarker": "## Unit: Texas Loan Programs",
+      "adaptation": "Conventional credit, federal insurance, and veteran guaranty structures",
+      "selectedWords": 1316,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U8",
+      "targetLine": 676
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Govt. Influence in Mortgage Lending",
+      "endMarker": "## Unit: Other Financing Techniques",
+      "adaptation": "Government, credit availability, and market mechanisms",
+      "selectedWords": 1291,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U8",
+      "targetLine": 728
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "## Unit: Financing Legislation",
+      "endMarker": "**The Real Estate Settlement Procedures Act.**",
+      "adaptation": "Truth in Lending, Regulation Z, high-cost and reverse-mortgage frameworks",
+      "selectedWords": 2780,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U9",
+      "targetLine": 778
+    },
+    {
+      "source": "texas/tx-principles-real-estate-ii-30-v1/curriculum/module-02.md",
+      "sourceSha256": "ef6dcb375c8cbfff77f27001563956f1d0cef80fa8b8fb1367d123aa6d8fb786",
+      "startMarker": "**The Real Estate Settlement Procedures Act.**",
+      "endMarker": "**The Equal Credit Opportunity Act.**",
+      "adaptation": "Settlement-service referrals, unearned fees, and integrated disclosure context",
+      "selectedWords": 2354,
+      "target": "curriculum/module-08.md",
+      "targetUnit": "T08U10",
+      "targetLine": 852
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Title",
+      "endMarker": "## Unit: Public Records, Recording & Acknowledgment",
+      "adaptation": "The chain of title and the limits of an ownership assertion",
+      "selectedWords": 860,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U1",
+      "targetLine": 12
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Estate Ownership",
+      "endMarker": "## Unit: Transfer of Decedent's Property",
+      "adaptation": "Ownership classification in the title review",
+      "selectedWords": 669,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U1",
+      "targetLine": 85
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Deeds",
+      "endMarker": "## Unit: Title",
+      "adaptation": "Written conveyance, deed forms, and warranty distinctions",
+      "selectedWords": 553,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U2",
+      "targetLine": 147
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Acquisitions & Transfers",
+      "endMarker": "## Unit: Estate Ownership",
+      "adaptation": "The different routes by which an interest changes hands",
+      "selectedWords": 306,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U2",
+      "targetLine": 193
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Voluntary Alienation",
+      "endMarker": "## Unit: Involuntary Alienation",
+      "adaptation": "A deliberate transfer still requires the correct instrument and authority",
+      "selectedWords": 338,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U2",
+      "targetLine": 221
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Involuntary Alienation",
+      "endMarker": "### Module recap",
+      "adaptation": "Foreclosure, condemnation, adverse possession, and statutory timing",
+      "selectedWords": 766,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U3",
+      "targetLine": 256
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Transfer of Decedent's Property",
+      "endMarker": "## Unit: Voluntary Alienation",
+      "adaptation": "Death, probate, intestacy, and the evidence needed for a sale",
+      "selectedWords": 517,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U4",
+      "targetLine": 326
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Public Records, Recording & Acknowledgment",
+      "endMarker": "## Unit: Evidence of Title",
+      "adaptation": "Recordability, acknowledgment, and the consequences of recording",
+      "selectedWords": 745,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U5",
+      "targetLine": 380
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-07.md",
+      "sourceSha256": "bc8dd955d8e2f1545d78a40d918c352a15494d8d9f71dd1b985255f4f00f380f",
+      "startMarker": "## Unit: Evidence of Title",
+      "endMarker": "## Unit: Acquisitions & Transfers",
+      "adaptation": "Abstracts, title commitments, owner and lender policies, and coverage limits",
+      "selectedWords": 531,
+      "target": "curriculum/module-09.md",
+      "targetUnit": "T09U6",
+      "targetLine": 452
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-09.md",
+      "sourceSha256": "63f91778e96dcbc4e937410a8129fc11c6a2e49ca3279b17d16239bff586d99b",
+      "startMarker": "## Unit: Pre-Closing Procedures/Closing the Transaction",
+      "endMarker": "## Unit: Conducting the Closing",
+      "adaptation": "The sequence from accepted agreement to closing readiness",
+      "selectedWords": 622,
+      "target": "curriculum/module-10.md",
+      "targetUnit": "T10U1",
+      "targetLine": 12
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-09.md",
+      "sourceSha256": "63f91778e96dcbc4e937410a8129fc11c6a2e49ca3279b17d16239bff586d99b",
+      "startMarker": "## Unit: RESPA/Uniform Settlement Statement",
+      "endMarker": "## Unit: Preparation of Closing Statements",
+      "adaptation": "Settlement disclosures and the distinction between older and current forms",
+      "selectedWords": 304,
+      "target": "curriculum/module-10.md",
+      "targetUnit": "T10U4",
+      "targetLine": 135
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-09.md",
+      "sourceSha256": "63f91778e96dcbc4e937410a8129fc11c6a2e49ca3279b17d16239bff586d99b",
+      "startMarker": "## Unit: Conducting the Closing",
+      "endMarker": "## Unit: RESPA/Uniform Settlement Statement",
+      "adaptation": "Participants, document review, funds, and the closing event",
+      "selectedWords": 903,
+      "target": "curriculum/module-10.md",
+      "targetUnit": "T10U7",
+      "targetLine": 227
+    },
+    {
+      "source": "texas/tx-principles-real-estate-i-30-v1/curriculum/module-09.md",
+      "sourceSha256": "63f91778e96dcbc4e937410a8129fc11c6a2e49ca3279b17d16239bff586d99b",
+      "startMarker": "## Unit: Preparation of Closing Statements",
+      "endMarker": "### Module recap",
+      "adaptation": "Debits, credits, taxes, rents, deposits, and transparent closing arithmetic",
+      "selectedWords": 1248,
+      "target": "curriculum/module-10.md",
+      "targetUnit": "T10U8",
+      "targetLine": 320
+    },
+    {
+      "source": "texas/tx-law-of-agency-30-v1/curriculum/module-12.md",
+      "sourceSha256": "5b692204fc257bba871248dd45f20fd98803cd5b98a6eeb1920d6ff7d5f5b566",
+      "startMarker": "## Unit: Risk Management",
+      "endMarker": "### Applied exercise: The earnest money that bounced",
+      "adaptation": "Recognizing recurring complaint patterns and responding to an error",
+      "selectedWords": 1522,
+      "target": "curriculum/module-11.md",
+      "targetUnit": "T11U2",
+      "targetLine": 48
+    }
+  ]
+}

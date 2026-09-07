@@ -1,0 +1,3311 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-09-07T12:19:32.843Z",
+  "courses": [
+    "law-of-contracts",
+    "promulgated-contract-forms",
+    "real-estate-finance"
+  ],
+  "inputSha256": "1d7955429a0d10ceaa47eba65d03eab14f4fbd37711c1a5a9be6a0426b548154",
+  "referenceCollection": "Resolved selected exports plus required Markdown; recursive static relative dependency hashes",
+  "inputs": [
+    {
+      "path": "config/texas/law-of-contracts-assessment-sources.mjs",
+      "sha256": "8b216d3004bfcc84db19964fb5c6b5a62d5e876a298ae513573b3f6ba36f1819"
+    },
+    {
+      "path": "config/texas/law-of-contracts-course-form.mjs",
+      "sha256": "bdd5b5c37146a94fa86b6b6031fca8a1a41702b34cbb352252b1b8ca7f7ba93a"
+    },
+    {
+      "path": "config/texas/law-of-contracts-course.mjs",
+      "sha256": "05a6858dd0328263ee186b203a356b345188ac8ce0852da661c28d4aed3d3f4c"
+    },
+    {
+      "path": "config/texas/law-of-contracts-final-exam-bank.mjs",
+      "sha256": "021f409937de14c874a4334c4a79b48f0b181063b30df224f21eb733940bf2ec"
+    },
+    {
+      "path": "config/texas/law-of-contracts-final-exam-forms.mjs",
+      "sha256": "19a7fdd2831b1609b7987d1ac68204826ecf4ba2bb70f5896ea76cd375e619cc"
+    },
+    {
+      "path": "config/texas/law-of-contracts-formative-01-04.mjs",
+      "sha256": "9bb1548cad091651eccf68a8d9f69261eb7ac48e0e97028c1e53e10749627fa7"
+    },
+    {
+      "path": "config/texas/law-of-contracts-formative-05-07.mjs",
+      "sha256": "c18a9b468b0ae600e55590f81bf721358bb0b2ce09848b5b04f7ae5f77e07432"
+    },
+    {
+      "path": "config/texas/law-of-contracts-formative-08-11.mjs",
+      "sha256": "4072c1f73e67f49da89bdf7410c6afe66d690faa29c9289b52b6ac3d16b3bdf5"
+    },
+    {
+      "path": "config/texas/law-of-contracts-learning-instruments.mjs",
+      "sha256": "31794a46431e3d832b55605cf251e006e597619b76d2a47f851ea731556aec8f"
+    },
+    {
+      "path": "config/texas/law-of-contracts-misconception-checks.mjs",
+      "sha256": "f1c83d19e0b319bd25cc110d140adf9e583e2f42f36ddd4c0ef09243a4ff66a9"
+    },
+    {
+      "path": "config/texas/law-of-contracts-question-bank.mjs",
+      "sha256": "226713cfdd3078e5af31f0612a3c3c52b2ca2be4ab630bc9cc1436e639db3130"
+    },
+    {
+      "path": "config/texas/law-of-contracts-scenarios.mjs",
+      "sha256": "1b4a0d99a5d2f9a08acd38c60fe7f4b699d7b1bf4107908f108bc13a74d747e2"
+    },
+    {
+      "path": "config/texas/promulgated-contract-forms-course-form.mjs",
+      "sha256": "c4ad6cf1ab658286ceddfe8e9f2251d311572f59b23df6a92db713d714b1c15d"
+    },
+    {
+      "path": "config/texas/promulgated-contract-forms-course.mjs",
+      "sha256": "27f4ddbab4584c535e13c6590cf3757a24feb0ddcc4514d291869b1441a3a228"
+    },
+    {
+      "path": "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+      "sha256": "a77db18aa786b7dbfb1419b0d00b44a05c2e8d6c07e5fa31213fa610087e1389"
+    },
+    {
+      "path": "config/texas/promulgated-contract-forms-final-exam-forms.mjs",
+      "sha256": "295090d54985f2a416bec287a83f458924c350b3924e22545e1f1e30ae55a88b"
+    },
+    {
+      "path": "config/texas/promulgated-contract-forms-question-bank.mjs",
+      "sha256": "e5bb75c34ca05f809701a020621d0c0aa580b721d4ee6e2b5b77ee57723ec526"
+    },
+    {
+      "path": "config/texas/promulgated-contract-forms-scenarios.mjs",
+      "sha256": "ea6ef24a5ddf65a2d5cd369172587c674e81b67f269f4195fccc734ca0b6a838"
+    },
+    {
+      "path": "config/texas/protected/law-of-contracts/final-01-03.mjs",
+      "sha256": "c7b57791ffc213103dbc27f2de4d9c95a16a4476de245a106c311d6b0c06ea17"
+    },
+    {
+      "path": "config/texas/protected/law-of-contracts/final-04-06.mjs",
+      "sha256": "349ad4a1ef0978f259db4adef214bf1f92ac5f629a7f3ad9c8486091f2fbf98b"
+    },
+    {
+      "path": "config/texas/protected/law-of-contracts/final-07-09.mjs",
+      "sha256": "f724285c0dc662bb932bc738db9591221083d0aede3d63283455aecfa75308bf"
+    },
+    {
+      "path": "config/texas/protected/law-of-contracts/final-10-11.mjs",
+      "sha256": "3b5d4c01f09a0d286a5b70573954ccf5e612c2e35854c648bbbb3f2fd3571f93"
+    },
+    {
+      "path": "config/texas/protected/law-of-contracts/law-of-contracts-final-bank.mjs",
+      "sha256": "969dbf047652ca8094a2373ea20f6ca7a0481f93e1520d7ebe488c8838aea857"
+    },
+    {
+      "path": "config/texas/real-estate-finance-assessment-sources.mjs",
+      "sha256": "ee2f8fe3d18d80c24244225b3c0d39680940630116ec2bcb67c06717c9b9c9e3"
+    },
+    {
+      "path": "config/texas/real-estate-finance-course-form.mjs",
+      "sha256": "43ffbfb7d2220d2fc7ada0488e7e7ee3a57d3b55b9c949fabdf9c10a90a445a5"
+    },
+    {
+      "path": "config/texas/real-estate-finance-course.mjs",
+      "sha256": "904d62d83060cb6f85610fc3e66af43d00833d9dc7b61a3315267f2ab08b6836"
+    },
+    {
+      "path": "config/texas/real-estate-finance-final-exam-bank.mjs",
+      "sha256": "2ffee27112d4a97658ca6daa7390c0f30536c671ba84c9dff0e2a290e77fa1aa"
+    },
+    {
+      "path": "config/texas/real-estate-finance-final-exam-forms.mjs",
+      "sha256": "0242563ff43d8949e4266c3a5bbf6e19283d43502f61bc540a702ee165e757b2"
+    },
+    {
+      "path": "config/texas/real-estate-finance-question-bank.mjs",
+      "sha256": "3b9d2ccf67e3d515233a1892042663c653f1df426f7f48464eacae6c5eb23914"
+    },
+    {
+      "path": "config/texas/real-estate-finance-scenarios.mjs",
+      "sha256": "5c6db39b9564d378048113edf431acfdbd63efbfd2be4eef58890e0148462eb0"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-01.md",
+      "sha256": "d1d175b76dfb9664bd72dae44da589ffe4de7f95ce46931e01ca2ddcc7288298"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-02.md",
+      "sha256": "f2dd6971b564de552f86e864952d9f6811673dd54a5a7db5078d407ce212d35c"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+      "sha256": "3f7ce25877d9373bb418279765dd6dd3840adc37dec92e479e424873950efa40"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md",
+      "sha256": "f5dc3fea3aa1a6e2625b98bd9eb66364de5d7d624530ade521b603e5dfb63f64"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md",
+      "sha256": "2080e241dc579a18d47cd44fc13aa30d505fc775ba1c6da44f6118f486bbd1cc"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-06.md",
+      "sha256": "fe1d3b46af52964d48d066e033db9e8cd3bec048dcd7110b6e8a7be7cfec4f41"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-07.md",
+      "sha256": "ad2f4934fb013e1f350c6ce25a603437fd4a39ff261d9d360b4c873bab9faff8"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md",
+      "sha256": "5f6417007f744a4e6ab33882e85335c8d4e2d95609c05b0954ce42392e0d1656"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-09.md",
+      "sha256": "4f1a6756e23ecd9bea1a7e55620579936a30a46c444b730892b4c23163993682"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-10.md",
+      "sha256": "a36c94ef22d8350c5ad030847844366ed46406fb5b141ca53f0e8d42c2429c6c"
+    },
+    {
+      "path": "texas/tx-law-of-contracts-30-v1/curriculum/module-11.md",
+      "sha256": "cd6b676c233211f0e7048075030803cbd7efa1408d9bb1d2225892b990346cb7"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-01.md",
+      "sha256": "12c84e8fcff552de9fa5d25bb25c3691551e174d55c1a77c3a9795f79dc39445"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-02.md",
+      "sha256": "27de6c73b56f4480305cea5c90cb33acc75648e7540b70377c68b5843958f9dc"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md",
+      "sha256": "03dcba8b2f9a529c68b35366e1e5f324db503c1be1288f9dcbf4e805f5ebec2b"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md",
+      "sha256": "e36b432476919bcef4ee4f52313423eedbb55c87710555408a4906121959ae48"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-05.md",
+      "sha256": "57665481c108d68e3e60d26afccf79a97af953fcb67683b07038618d8987ed0b"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md",
+      "sha256": "6b3fbc4f491f09d100a825cbbe8e1de2f689d77bbfbc2e9ccee299df9a020b36"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md",
+      "sha256": "df84eefb274d597c61249f18aed9dc166ef0277bba91d37254b61961fad23637"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-08.md",
+      "sha256": "53924ac7f6507e6cc43aa7332a2432f3c032a39fe3f8621932adef907f7fe6df"
+    },
+    {
+      "path": "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md",
+      "sha256": "b03017ac0116e69680b135d6195a7aa2b48ac275012fcee9a23181d0e3259b00"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-01.md",
+      "sha256": "f691525a9dc76b1c031914739ae751b58944ade3e8cd50258ab26e1a823569ff"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-02.md",
+      "sha256": "260494e356648b0d0e50a5dd932f5ceed05a7ed9f564ae965b7caf67dffbb0dc"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md",
+      "sha256": "b127b1afe850b038fafff2bee45408676d8abab61a40693e6d7b494b0bc57586"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md",
+      "sha256": "e5bdc0e08b5a0dd18c40e2db13e2ee746b2b54ad5a522603f267200617f7c426"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-05.md",
+      "sha256": "d0c6760c16c8dae570c076fd8b0ce0da7c58a2c0a91b820ba42d243e97bea612"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-06.md",
+      "sha256": "1e8b5d3160e061fdc47cce21bb517430c15e67c723d89e66bfd18b76ad494fae"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md",
+      "sha256": "f3307b5470ca2ce9bbcde5c4e693aab6a5392a67ec72258762e235c51b7c7fa5"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md",
+      "sha256": "cfc5709683403d617a248eb72b1e0b9328d2ee616404448af28f504a2cc524bd"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md",
+      "sha256": "1ef54fd06b79801ce23cf3e218a57ad883dd26d04b5d19c3e057776227939bf7"
+    },
+    {
+      "path": "texas/tx-real-estate-finance-30-v1/curriculum/module-10.md",
+      "sha256": "7d43ce2c10d39e93638225bc7da9ba260d00965a6a09f9a60c224a8016ced6d2"
+    }
+  ],
+  "urls": 173,
+  "passed": 173,
+  "failed": 0,
+  "results": [
+    {
+      "url": "https://entp.hud.gov/common/f17error-pop.cfm?message=TOTAL+CASE+RESCORED+AS+REFER%3B+MANUAL+UNDERWRITING+REQUIRED%3B+ZFHA+INVALID&program=F17EUC",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://entp.hud.gov/common/f17error-pop.cfm?message=TOTAL+CASE+RESCORED+AS+REFER%3B+MANUAL+UNDERWRITING+REQUIRED%3B+ZFHA+INVALID&program=F17EUC",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 4372,
+      "sha256": "f0c007af246f72a6115eb58c4678429d8c879d762d4b15a24aaeca887ee8998d",
+      "pdf": false,
+      "title": "Error Message Details",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://entp.hud.gov/sfohlp/f17uwbkhlp.cfm",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://entp.hud.gov/sfohlp/f17uwbkhlp.cfm",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 4091,
+      "sha256": "1765f26d87a2b1db240f7cb4b49f29c82df4859f6732dfba1e53940b935bad70",
+      "pdf": false,
+      "title": "Help - FHA Connection Single Family Origination",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://home.treasury.gov/about/bureaus",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-02.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://home.treasury.gov/about/bureaus",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 69775,
+      "sha256": "631e0994266f8fbfb8857cfba8190f0481b7d0f1d458bb1b533d20fce96d5325",
+      "pdf": false,
+      "title": "Bureaus | U.S. Department of the Treasury",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://ncua.gov/support-services/share-insurance-fund",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://ncua.gov/support-services/share-insurance-fund",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 50730,
+      "sha256": "967ef74f2a6702777ea3dd79cfa9d7a70620e389539224f4ede5aab19fbe3d52",
+      "pdf": false,
+      "title": "Share Insurance Fund Overview | NCUA",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://ofac.treasury.gov/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://ofac.treasury.gov/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 43307,
+      "sha256": "837a6c26540c9621f661bdfb3631030f1dc3aa7dae15191160ad9c9afcf5a7cd",
+      "pdf": false,
+      "title": "Home | Office of Foreign Assets Control",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://selling-guide.fanniemae.com/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://selling-guide.fanniemae.com/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 235763,
+      "sha256": "5d33839f358bf91f3d1697e13c1b9d26cdbd4691f9477ebc8a2b349f11810aab",
+      "pdf": false,
+      "title": "Selling Guide | Fannie Mae",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-4.3-04/personal-gifts",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://selling-guide.fanniemae.com/sel/b3-4.3-04/personal-gifts",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 247026,
+      "sha256": "df510d5e2160cfb79eb9bc7676152e632737b022b1b114b7b6973ca79b2a4a53",
+      "pdf": false,
+      "title": "Personal Gifts | Fannie Mae",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://sf.freddiemac.com/docs/pdf/fact-sheet/urla_instructions.pdf",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://sf.freddiemac.com/docs/pdf/fact-sheet/urla_instructions.pdf",
+      "contentType": "application/pdf",
+      "bytes": 510563,
+      "sha256": "30d549d5b8f5e18c889999eadc15dfc40420d758d89a90beecff93d3747c3690",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://sf.freddiemac.com/docs/pdf/forms/urla_borrower_information.pdf",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://sf.freddiemac.com/docs/pdf/forms/urla_borrower_information.pdf",
+      "contentType": "application/pdf",
+      "bytes": 442429,
+      "sha256": "1f0b618bc05ffa4333393010373012fb2cec390e2f56abd1e19a4ab30e5f6209",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://sf.freddiemac.com/faqs/uad-and-forms-redesign",
+      "files": [
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://sf.freddiemac.com/faqs/uad-and-forms-redesign",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 146143,
+      "sha256": "4ba5a89c7fd8d8fec40a737804be96fb64d2ddb747bd0df7b4dd3a245ec76d3a",
+      "pdf": false,
+      "title": "Uniform Appraisal Dataset (UAD) 3.6 FAQ - Freddie Mac Single-Family",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://sf.freddiemac.com/tools-learning/uniform-mortgage-data-program/ulad",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://sf.freddiemac.com/tools-learning/uniform-mortgage-data-program/ulad",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 119283,
+      "sha256": "2089cccf62a0fc9cdb7574c1b53d35f96479d857ab4cb364f4993a32a84dfb36",
+      "pdf": false,
+      "title": "Uniform Residential Loan Application - Freddie Mac Single-Family",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/BC/htm/BC.17.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-01.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [
+        "17.46"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/BC/htm/BC.17.htm",
+      "contentType": "text/html",
+      "bytes": 193909,
+      "sha256": "33fdf21e31dba579c3e95972f6c9fef82f1582f2b83a2d7d883d1b216cd54d1f",
+      "pdf": false,
+      "title": "BUSINESS AND COMMERCE CODE CHAPTER 17. DECEPTIVE TRADE PRACTICES",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/BC/htm/BC.26.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-06.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-01.md"
+      ],
+      "fragments": [
+        "26.01"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/BC/htm/BC.26.htm",
+      "contentType": "text/html",
+      "bytes": 9473,
+      "sha256": "e2c23d1a446796b7083157d2940094e660e14ca660670665ff5a801a8bd1a708",
+      "pdf": false,
+      "title": "BUSINESS AND COMMERCE CODE CHAPTER 26. STATUTE OF FRAUDS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/BC/htm/BC.322.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-06.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-01.md"
+      ],
+      "fragments": [
+        "322.007"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/BC/htm/BC.322.htm",
+      "contentType": "text/html",
+      "bytes": 41039,
+      "sha256": "2706aeaeb3ffdd72f2a61249ddd68e2eb77c8f323b8fbe217f4d3bc990381e3e",
+      "pdf": false,
+      "title": "BUSINESS AND COMMERCE CODE CHAPTER 322. UNIFORM ELECTRONIC TRANSACTIONS ACT",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/BO/htm/BO.101.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/BO/htm/BO.101.htm",
+      "contentType": "text/html",
+      "bytes": 254996,
+      "sha256": "e009a395de52e557f5d2c4d9a8a417ae0abc1b10d20312bbbb7a3ab75813ca01",
+      "pdf": false,
+      "title": "BUSINESS ORGANIZATIONS CODE CHAPTER 101. LIMITED LIABILITY COMPANIES",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/CN/htm/CN.1.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/CN/htm/CN.1.htm",
+      "contentType": "text/html",
+      "bytes": 45683,
+      "sha256": "842255b6cf6aaf3e6b533aad6e28a6998bd1a2b69eae0794932b89c3ff898126",
+      "pdf": false,
+      "title": "THE TEXAS CONSTITUTION ARTICLE 1. BILL OF RIGHTS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/CN/htm/CN.16.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-misconception-checks.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-06.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-10.md"
+      ],
+      "fragments": [
+        "16.50"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/CN/htm/CN.16.htm",
+      "contentType": "text/html",
+      "bytes": 145258,
+      "sha256": "a51da43bf4b28752dda38c01e8520601580603f00abf19449903ebd9c0af5d2e",
+      "pdf": false,
+      "title": "THE TEXAS CONSTITUTION ARTICLE 16. GENERAL PROVISIONS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/CP/htm/CP.16.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-06.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/CP/htm/CP.16.htm",
+      "contentType": "text/html",
+      "bytes": 89021,
+      "sha256": "cfefbe20090b0e909f368e0d8a95a86fef9c80733921408d170070cc56dd8e78",
+      "pdf": false,
+      "title": "CIVIL PRACTICE AND REMEDIES CODE CHAPTER 16. LIMITATIONS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.101.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-02.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/ES/htm/ES.101.htm",
+      "contentType": "text/html",
+      "bytes": 9174,
+      "sha256": "1d1417459c5fb129bc936e9f89e27db8cefd514bf3536fb1cf4b0231fafbc056",
+      "pdf": false,
+      "title": "ESTATES CODE CHAPTER 101. ESTATE ASSETS IN GENERAL",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/FA/htm/FA.3.htm",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-02.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/FA/htm/FA.3.htm",
+      "contentType": "text/html",
+      "bytes": 46081,
+      "sha256": "ed76712a7e9e25b7317ff745fce71af4bc9fe9923129c2d6e0c1a686539056d3",
+      "pdf": false,
+      "title": "FAMILY CODE CHAPTER 3. MARITAL PROPERTY RIGHTS AND LIABILITIES",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/FI/htm/FI.343.htm",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/FI/htm/FI.343.htm",
+      "contentType": "text/html",
+      "bytes": 32565,
+      "sha256": "94dee3bf7cdc8a41037310f5c138cabdfc21377240ebd251f29ef9be8f755e38",
+      "pdf": false,
+      "title": "FINANCE CODE CHAPTER 343. HOME LOANS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/NR/htm/NR.33.htm",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/NR/htm/NR.33.htm",
+      "contentType": "text/html",
+      "bytes": 209206,
+      "sha256": "7e696710e4cddb59d163ebda17a54f31e75deb4bcbbe1215e8e317bd70961b8c",
+      "pdf": false,
+      "title": "NATURAL RESOURCES CODE CHAPTER 33. MANAGEMENT OF COASTAL PUBLIC LAND",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/OC/htm/OC.1101.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-01.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-09.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-02.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [
+        "1101.252",
+        "1101.654"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/OC/htm/OC.1101.htm",
+      "contentType": "text/html",
+      "bytes": 308708,
+      "sha256": "8c40aa399cf717901540150ae6acaf3d847305f7fefcf7dd7ec4c3068a418858",
+      "pdf": false,
+      "title": "OCCUPATIONS CODE CHAPTER 1101. REAL ESTATE BROKERS AND SALES AGENTS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.12.htm",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [
+        "12.001"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.12.htm",
+      "contentType": "text/html",
+      "bytes": 85784,
+      "sha256": "6cea8bbf2f7e8cfc58b707166c4d3dcf284c0cb090c67266ebad4aeb44e7470d",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 12. RECORDING OF INSTRUMENTS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.13.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.13.htm",
+      "contentType": "text/html",
+      "bytes": 8123,
+      "sha256": "2cfe34903ef3dac768acfd4d4e64f2a095335b4db1648f51ddd8dab5d6c1ac65",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 13. EFFECTS OF RECORDING",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.202.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs"
+      ],
+      "fragments": [
+        "202.006"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.202.htm",
+      "contentType": "text/html",
+      "bytes": 56585,
+      "sha256": "4fa54052c8dda253ef9054508471df619fe680ce0306b0ce432de66b7de87df6",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 202. CONSTRUCTION AND ENFORCEMENT OF RESTRICTIVE COVENANTS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.207.htm",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [
+        "207.003"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.207.htm",
+      "contentType": "text/html",
+      "bytes": 22241,
+      "sha256": "c871948d52cae264a1cd4c76d9443b5325f54dbb6e4672ad2cfc23aa9471e3c5",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 207. DISCLOSURE OF INFORMATION BY PROPERTY OWNERS' ASSOCIATIONS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.221.htm",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-02.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.221.htm",
+      "contentType": "text/html",
+      "bytes": 181226,
+      "sha256": "93042dd57caed9295d90a654fd7c0aafa0584d024c7e3cb24c2a98abb716781d",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 221. TEXAS TIMESHARE ACT",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/pr/htm/pr.24.htm",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/pr/htm/pr.24.htm",
+      "contentType": "text/html",
+      "bytes": 77880,
+      "sha256": "ea334f441d758ba68079b8fe1aa6641e87a9cd1dca2e6d8c1a86d0bffd346c8c",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 24. FORCIBLE ENTRY AND DETAINER",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.301.htm",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.301.htm",
+      "contentType": "text/html",
+      "bytes": 71019,
+      "sha256": "925c6a1adcdf66c06b0088da4f7c714d6151cd3bafd436654cafc6c322151a3d",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 301. TEXAS FAIR HOUSING ACT",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.41.htm",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.41.htm",
+      "contentType": "text/html",
+      "bytes": 38782,
+      "sha256": "46b5db89c5f031683f17b92fe17167d64c0cf032f6843325d5232045cf8fa0f2",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 41. INTERESTS IN LAND",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.5.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-02.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-06.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-11.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-06.md"
+      ],
+      "fragments": [
+        "5.008"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.5.htm",
+      "contentType": "text/html",
+      "bytes": 273766,
+      "sha256": "8d2de95ab891d16cb19dd73f4ac8f46c2cb349f49b7ed6f59d9e5a98c80ca9d7",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 5. CONVEYANCES",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.51.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-06.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-10.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.51.htm",
+      "contentType": "text/html",
+      "bytes": 60209,
+      "sha256": "73590107b2418423a4b3af10c46cdd0638b0194581a3df65756566c6e196f921",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 51. PROVISIONS GENERALLY APPLICABLE TO LIENS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.82.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-02.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md"
+      ],
+      "fragments": [
+        "82.157"
+      ],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.82.htm",
+      "contentType": "text/html",
+      "bytes": 192937,
+      "sha256": "f35f2259a667bf2e05120868ab66a56e9f6c5797f7aea7eb98964a438751ebe8",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 82. UNIFORM CONDOMINIUM ACT",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.91.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.91.htm",
+      "contentType": "text/html",
+      "bytes": 7375,
+      "sha256": "f5255f1dd0558447a555725d4be1f15862f42ad31237ae27dc4efca6c8af69ce",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 91. PROVISIONS GENERALLY APPLICABLE TO LANDLORDS AND TENANTS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.92.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-misconception-checks.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/PR/htm/PR.92.htm",
+      "contentType": "text/html",
+      "bytes": 299561,
+      "sha256": "e4269dac3944639774c143e0d47b65b5bc12f5f3cb02a134f9abe67e05732df7",
+      "pdf": false,
+      "title": "PROPERTY CODE CHAPTER 92. RESIDENTIAL TENANCIES",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/TX/pdf/TX.32.pdf",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/TX/pdf/TX.32.pdf",
+      "contentType": "application/pdf",
+      "bytes": 161789,
+      "sha256": "64dfc7bfd8ea50bc0cbdecb3472a0d9cec1a02e650bbc5aee089a681781b75d1",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/WA/htm/WA.11.htm",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/WA/htm/WA.11.htm",
+      "contentType": "text/html",
+      "bytes": 424135,
+      "sha256": "24e3aca8e73bf7cad479fcb3dbc2a088e29fab2db235e9f00c66f1c059156a45",
+      "pdf": false,
+      "title": "WATER CODE CHAPTER 11. WATER RIGHTS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/WA/htm/WA.36.htm",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://tcss.legis.texas.gov/resources/WA/htm/WA.36.htm",
+      "contentType": "text/html",
+      "bytes": 412467,
+      "sha256": "ca87df31552458ecb49a7b1fc3bc434d7d303710e3989afe7f705be48912adc0",
+      "pdf": false,
+      "title": "WATER CODE CHAPTER 36. GROUNDWATER CONSERVATION DISTRICTS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title26-section860D",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title26-section860D",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 157198,
+      "sha256": "9ee9d2023e41611227a2152412bb57dd7db29de3c1d300eeeebc6e9ba3cacc07",
+      "pdf": false,
+      "title": "26 USC 860D: REMIC defined",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title31-section9101",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title31-section9101",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 192176,
+      "sha256": "95be8d4229289537efd1e0ec8247fd65dd248221e34f1a3369e5646614fa4011",
+      "pdf": false,
+      "title": "31 USC 9101: Definitions",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title5-section553",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title5-section553",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 156602,
+      "sha256": "6424b288e4ee8008581e7c580d3e5120f0b5d9b1df2e2e33f706676243e5090d",
+      "pdf": false,
+      "title": "5 USC 553: Rule making",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?path=/prelim@title26/subtitleA/chapter1/subchapterM/part4&edition=prelim",
+      "files": [
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://uscode.house.gov/view.xhtml?path=/prelim@title26/subtitleA/chapter1/subchapterM/part4&edition=prelim",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 268655,
+      "sha256": "99c8ddd5b9ff1dd175d6a71eb1ead6f7fbee690d54f1a8c39b8594d4004d8943",
+      "pdf": false,
+      "title": "26 USC Subtitle A, CHAPTER 1, Subchapter M, PART IV: REAL ESTATE MORTGAGE INVESTMENT CONDUITS",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=%28title%3A38+section%3A3709+edition%3Aprelim%29",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://uscode.house.gov/view.xhtml?req=%28title%3A38+section%3A3709+edition%3Aprelim%29",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 158907,
+      "sha256": "3645a8464e418aed3e30ca44b80071a5ff3ec6f2a4885a672bded8a9e6684f68",
+      "pdf": false,
+      "title": "38 USC 3709: Refinancing of housing loans",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section2607&num=0&edition=prelim",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section2607&num=0&edition=prelim",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 165410,
+      "sha256": "5b3226171e0bf5cf5800b3aaa46b95cbf3042e216c6b923e29cad3067cd3f384",
+      "pdf": false,
+      "title": "12 USC 2607: Prohibition against kickbacks and unearned fees",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section4852d&num=0&edition=prelim",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section4852d&num=0&edition=prelim",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 156936,
+      "sha256": "0c9e0134b2c7e0e8d8393f2f111c0e5104375afe505be322dcb3878125ce1a60",
+      "pdf": false,
+      "title": "42 USC 4852d: Disclosure of information concerning lead upon transfer of residential property",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://welcomehome.tdhca.texas.gov/programs",
+      "files": [
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://welcomehome.tdhca.texas.gov/programs",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 41749,
+      "sha256": "719449595b8eb113d6dcc484b94924f0b90d7680fe68173d629ba67e4f6bfe66",
+      "pdf": false,
+      "title": "Programs | The Texas Homebuyers Program",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.benefits.va.gov/HOMELOANS/documents/circulars/26_19_22.pdf",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.benefits.va.gov/HOMELOANS/documents/circulars/26_19_22.pdf",
+      "contentType": "application/pdf",
+      "bytes": 149441,
+      "sha256": "23acc522f05f84d23992b2ccd4790638c9cc3fce0500bf511ccf96c6d55a0536",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-mortgage-insurance-and-how-does-it-work-en-1953/",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/ask-cfpb/what-is-mortgage-insurance-and-how-does-it-work-en-1953/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 148545,
+      "sha256": "1a01068c6257321d65e0e9f22435dd3e197b069500519a67adb12edea578a609",
+      "pdf": false,
+      "title": "What is mortgage insurance and how does it work? | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 146001,
+      "sha256": "51aea6f08aaae35d2baec6067bb83ff0c3f2be8175e36d76d3b3e56befa97376",
+      "pdf": false,
+      "title": "What is private mortgage insurance? | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/when-can-i-remove-private-mortgage-insurance-pmi-from-my-loan-en-202/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/ask-cfpb/when-can-i-remove-private-mortgage-insurance-pmi-from-my-loan-en-202/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 148525,
+      "sha256": "60d90cb923e0de54654e0ebf448ccdae6a3526dc6206d6ff010ef3ae3dbe3e83",
+      "pdf": false,
+      "title": "When can I remove private mortgage insurance (PMI) from my loan? | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/owning-a-home/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-01.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/owning-a-home/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 152250,
+      "sha256": "b7bac392160f0bf3dd8fca5f19b2f623277555d2d7a7d50daf51206711ea4568",
+      "pdf": false,
+      "title": "Buying a house | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 216053,
+      "sha256": "23d37eff3393b63207abd8557baf88ecc38f6859f1c47814660d75501ff33044",
+      "pdf": false,
+      "title": "Closing disclosure explainer | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/owning-a-home/loan-estimate/",
+      "files": [
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/owning-a-home/loan-estimate/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 193444,
+      "sha256": "6555697bfc65a0bf78d18827d74793fcf152855658cd0cb55e09f3487a926319",
+      "pdf": false,
+      "title": "Loan estimate explainer | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/14/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1002/14/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 187356,
+      "sha256": "d47d98a827ef82df32532f82395be7c7f3b061946ad18e736464dfafc1bf332a",
+      "pdf": false,
+      "title": "§ 1002.14 Rules on providing appraisals and other valuations. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1002/4/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 171292,
+      "sha256": "452acd5807b0b0efc302f197669a2d244115554f2b78d25859b623ad73f24f05",
+      "pdf": false,
+      "title": "§ 1002.4 General rules. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1002/6/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 184936,
+      "sha256": "a27d7bc06c22fe0e2316d6d10f1df082b77e1786b73397b263783bf900fe9259",
+      "pdf": false,
+      "title": "§ 1002.6 Rules concerning evaluation of applications. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 197126,
+      "sha256": "70d131d3119c1ad42e0949f3e885dc4f7f21ab754398229f1816fc4dc4847e39",
+      "pdf": false,
+      "title": "§ 1002.9 Notifications. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-10.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1024/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 158299,
+      "sha256": "823ada41cea62e3c1cea7db5f3aa60cabc4d850b778db7ba0f4835b0c24faf28",
+      "pdf": false,
+      "title": "12 CFR Part 1024 - Real Estate Settlement Procedures Act (Regulation X) | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1024/14/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 163738,
+      "sha256": "1af79c253d92629be8350b36e94ab904f1a0c2432401fa27d96268a243d662ca",
+      "pdf": false,
+      "title": "§ 1024.14 Prohibition against kickbacks and unearned fees. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/15/",
+      "files": [
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1024/15/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 165494,
+      "sha256": "2133caf633631d825007e21e092ba29074958c160f5624ea4898f89d3a743541",
+      "pdf": false,
+      "title": "§ 1024.15 Affiliated business arrangements. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/33/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1024/33/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 172758,
+      "sha256": "096320feca1296b0a8b15dc3835dc98c55010b1e7a1ada8391e3184726a86da0",
+      "pdf": false,
+      "title": "§ 1024.33 Mortgage servicing transfers. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/41/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-10.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1024/41/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 309950,
+      "sha256": "f9b948ca6009344ed5edab033e2c5cef2248529144f783ef7c95c4acd34fc8dc",
+      "pdf": false,
+      "title": "§ 1024.41 Loss mitigation procedures. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 182649,
+      "sha256": "d19e015ce4a8add069cf26e7068e84d980158382250135353fae161396a12c6a",
+      "pdf": false,
+      "title": "12 CFR Part 1026 - Truth in Lending (Regulation Z) | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-10.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 521247,
+      "sha256": "3aed3b9773c5da264fa8264ec6ee05f6c58156179df66018b7e78eb8f6d452aa",
+      "pdf": false,
+      "title": "§ 1026.19 Certain mortgage and variable-rate transactions. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/32/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/32/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 362683,
+      "sha256": "3292487119a5bd584d67b43a6d36ad459e06669b08c10eeb183efa6026da45fc",
+      "pdf": false,
+      "title": "§ 1026.32 Requirements for high-cost mortgages. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/35/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/35/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 377085,
+      "sha256": "7088be88d5f8579724f914ccd067e7bd9a2ebe3e9efe0009333b8befcd2165c2",
+      "pdf": false,
+      "title": "§ 1026.35 Requirements for higher-priced mortgage loans. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+      "files": [
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 397692,
+      "sha256": "1ce0d08351c22d6a4e74ca39d1a273bbf79ff8e4298bfd87a2341bf080bde05a",
+      "pdf": false,
+      "title": "§ 1026.36 Prohibited acts or practices and certain requirements for credit secured by a dwelling. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/38/",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-misconception-checks.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/38/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 572738,
+      "sha256": "f0f90688e8dcf1be8288b6145869de33c3e515275c84dafcf54e18ac5c1dde02",
+      "pdf": false,
+      "title": "§ 1026.38 Content of disclosures for certain mortgage transactions (Closing Disclosure). | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/42/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 290199,
+      "sha256": "689095ea0fc33658beb5d42918ac7f13a3bfe86ac9f94cc0f0925b037e65aad8",
+      "pdf": false,
+      "title": "§ 1026.42 Valuation independence. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-06.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 667669,
+      "sha256": "5c27786f9c8b0e39f77e0ca99bb783372f8de0ffd226da367b4534e7891875a0",
+      "pdf": false,
+      "title": "§ 1026.43 Minimum standards for transactions secured by a dwelling. | Consumer Financial Protection Bureau",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-38/chapter-I/part-36/subpart-B/section-36.4340",
+      "files": [
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://unblock.federalregister.gov/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 10596,
+      "sha256": "3659be5115d18f838711bd0558757ce15b8ec0534ee6e314beda72454c6dbb75",
+      "pdf": false,
+      "title": "Federal Register :: Request Access",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards",
+      "files": [
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 73212,
+      "sha256": "e6a79dbb52c17058b11a2996ec802232cc11c48b94d324d2f44d93eb0fd88aa2",
+      "pdf": false,
+      "title": "Real Estate Disclosures about Potential Lead Hazards | US EPA",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.fca.gov/farmer-mac-oversight/about-farmer-mac",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.fca.gov/farmer-mac-oversight/about-farmer-mac",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 29352,
+      "sha256": "82472bb61ba2b31101698baaf54dbfc99cbfac4562e801669423f8d0063c598f",
+      "pdf": false,
+      "title": "About Farmer Mac | Farm Credit Administration",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.fdic.gov/resources/bankers/community-reinvestment-act",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.fdic.gov/banker-resource-center/community-reinvestment-act-cra",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 92601,
+      "sha256": "011aa16b1ce217f2de2ac32c98590e77d73edd7c546df03e213e8488a56843e0",
+      "pdf": false,
+      "title": "Community Reinvestment Act (CRA) | FDIC.gov",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-02.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 96908,
+      "sha256": "151cd8d25315e8427d23f9f0edb1d0ace57c2985761590563cf779e32b50ffdb",
+      "pdf": false,
+      "title": "Understanding Deposit Insurance | FDIC.gov",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.federalreserve.gov/aboutthefed/fedexplained/who-we-are.htm",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-02.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.federalreserve.gov/aboutthefed/fedexplained/who-we-are.htm",
+      "contentType": "text/html",
+      "bytes": 42266,
+      "sha256": "01404ce351ef65d18a0f690743afc684503987095e7e5f15d6b93921527a4693",
+      "pdf": false,
+      "title": "The Fed Explained - Who We Are",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/policytools.htm",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-01.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-02.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.federalreserve.gov/monetarypolicy/policytools.htm",
+      "contentType": "text/html",
+      "bytes": 79039,
+      "sha256": "f0c42042a6e03023cdc1b79e6d8f4c983421f850c6ccb7f2bd0ec3116f7a2f1c",
+      "pdf": false,
+      "title": "Federal Reserve Board - Policy Tools",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.fhfa.gov/about-fannie-mae-freddie-mac",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-01.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.fhfa.gov/about-fannie-mae-freddie-mac",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 79847,
+      "sha256": "8af8123edc1603280a32e3635e8678fddd714d70cd218d1ac701e4477dafecb8",
+      "pdf": false,
+      "title": "About Fannie Mae & Freddie Mac | FHFA",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.fhfa.gov/about/federal-home-loan-bank-system",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-02.md",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.fhfa.gov/about/federal-home-loan-bank-system",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 88192,
+      "sha256": "841ca04c11777a3f93663814a2cbac1df19f7e66d56b935c32b50394c58879af",
+      "pdf": false,
+      "title": "About the FHLBank System | FHFA",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.fsa.usda.gov/about-fsa/structure-organization/farm-loan-programs",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.fsa.usda.gov/about-fsa/structure-organization/farm-loan-programs",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 71392,
+      "sha256": "4bd73ba3096fbfebd116982eafc05b39e931929a942802fb5eb513c9bee05ef3",
+      "pdf": false,
+      "title": "Farm Loan Programs | Farm Service Agency",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.glo.texas.gov/veterans/loans-veterans",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.glo.texas.gov/veterans/loans-veterans",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 158161,
+      "sha256": "7af679219f2ca58d14d255db26cf2a470feebf73350e37db227032d2f42012f1",
+      "pdf": false,
+      "title": "Loans for Veterans | Texas General Land Office",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/helping-americans/fair-housing-act-overview",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/helping-americans/fair-housing-act-overview",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 153525,
+      "sha256": "72e73a14bf184af03ccf97f528b6a4367f1772edd3736f6c46094e6b3ed63c14",
+      "pdf": false,
+      "title": "Housing Discrimination Under the Fair Housing Act | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/helping-americans/Single-Family-Housing",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/helping-americans/Single-Family-Housing",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 156651,
+      "sha256": "399299dad204e8753b31e613bd90ebac0473a2d201add6153ace71b99565fed3",
+      "pdf": false,
+      "title": "Single Family Housing | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/hud-partners/single-family-about-housing-counseling",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/hud-partners/single-family-about-housing-counseling",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 157974,
+      "sha256": "16a6644979f3529722f5c2363311c51bb43eace6a831e429faea6a46b50a3f04",
+      "pdf": false,
+      "title": "About Housing Counseling | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/hud-partners/single-family-handbook-4000-1",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/hud-partners/single-family-handbook-4000-1",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 153764,
+      "sha256": "ab1da1b48b0e154029e28590f31948b602c645fd1b04bed82388d93ac7129082",
+      "pdf": false,
+      "title": "SFH Handbook 4000.1 | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/hud-partners/single-family-hecmhome",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/hud-partners/single-family-hecmhome",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 154491,
+      "sha256": "8ab9c0bd82067b5be377fa173165350478a603140726b9627cfb73a279226762",
+      "pdf": false,
+      "title": "HUD FHA Reverse Mortgage for Seniors (HECM) | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/sites/default/files/Housing/documents/40001-hsgh-Update-18.pdf",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/sites/default/files/Housing/documents/40001-hsgh-Update-18.pdf",
+      "contentType": "application/pdf",
+      "bytes": 14445636,
+      "sha256": "e1bca3432cf19e097b7f466dddb2837d8a3393d7fb1f6a711f0eaf818b313e02",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/sites/default/files/hudclips/documents/2026-06hsgml.pdf",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/2026-06hsgml.pdf",
+      "contentType": "application/pdf",
+      "bytes": 284431,
+      "sha256": "cecc39f97652edb1ad7aafac324e5ac3a0869920817977b645e48da9459f3370",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/sites/dfiles/CFO/documents/2026_CJ_Program_GNMA.pdf",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/sites/dfiles/CFO/documents/2026_CJ_Program_GNMA.pdf",
+      "contentType": "application/pdf",
+      "bytes": 312983,
+      "sha256": "38b0d15da670e713521e0dc6400064eb40ba353ea6d29f1e53b3068f813f52eb",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.hud.gov/sites/dfiles/OCHCO/documents/92564-CN.pdf",
+      "files": [
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.hud.gov/sites/dfiles/OCHCO/documents/92564-CN.pdf",
+      "contentType": "application/pdf",
+      "bytes": 280100,
+      "sha256": "98052db37cd8af47f32c117156175f856852b64c97659722327bdb7c0ecb2c1c",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 63842,
+      "sha256": "96ad6dcf4b4bdcec24983af6561ef5c6800c3add8cb1a621c2c491a5eba429a9",
+      "pdf": false,
+      "title": "Real Estate Investment Trusts (REITs) | Investor.gov",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p4681",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-10.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.irs.gov/publications/p4681",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 322735,
+      "sha256": "c6b9dd3ef6041fd493830e2e4985b6159f8a656e73e07eb16a30d1ccd5f72ceb",
+      "pdf": false,
+      "title": "Publication 4681 (2025), Canceled Debts, Foreclosures, Repossessions, and Abandonments | Internal Revenue Service",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p936",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.irs.gov/publications/p936",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 320573,
+      "sha256": "3bc750a88e688c29244ef1f0a3d3697ec0143c9800238458a0347bc0fca0f3d3",
+      "pdf": false,
+      "title": "Publication 936 (2025), Home Mortgage Interest Deduction | Internal Revenue Service",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.tdi.texas.gov/title/documents/form_t-07.pdf",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.tdi.texas.gov/title/documents/form_t-07.pdf",
+      "contentType": "application/pdf",
+      "bytes": 36666,
+      "sha256": "49bb3b39141cd9b22385f16e6c005f81f46e51aa65211dec67d2f3a3176b0930",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.tdi.texas.gov/title/documents/form-t-47-1.pdf",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.tdi.texas.gov/title/documents/form-t-47-1.pdf",
+      "contentType": "application/pdf",
+      "bytes": 124775,
+      "sha256": "5c821cfac45ff591686598ffb1625b465c212c6d50199643107adf5492a1336d",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.tdi.texas.gov/title/documents/formT-47.pdf",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.tdi.texas.gov/title/documents/formT-47.pdf",
+      "contentType": "application/pdf",
+      "bytes": 116467,
+      "sha256": "b68cbed207ab3466bfbbf89901c36f9217971abe5a79f8ceeedecdba0ac11423",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.tdi.texas.gov/title/index.html",
+      "files": [
+        "config/texas/real-estate-finance-question-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.tdi.texas.gov/title/index.html",
+      "contentType": "text/html",
+      "bytes": 38314,
+      "sha256": "2e42ce6e8c2724b24debd586c2344b67b754d26115887996bdbf461ebb2f7a7c",
+      "pdf": false,
+      "title": "Title insurance",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/agency-information/contracts",
+      "files": [
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-01.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-06.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-07.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-11.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/agency-information/contracts",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 107120,
+      "sha256": "6eaf6a11a2b4e2dd4ebeca2d7c78feee783725dac9d889ebb1736c82dd862ac6",
+      "pdf": false,
+      "title": "Contracts | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-misconception-checks.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-01.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-07.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-11.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-01.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-02.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 574303,
+      "sha256": "f8a31e053dab706334996b186916019763118baf6b93d5d0e5abdaf2d155773e",
+      "pdf": false,
+      "title": "TREC Rules | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-authorizing-hydrostatic-testing-0",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-authorizing-hydrostatic-testing-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142646,
+      "sha256": "6f9ec3fa10ef5b07b87d831001227703c0a65c6733562e6075ffaccc504ba2fa",
+      "pdf": false,
+      "title": "Addendum for Authorizing Hydrostatic Testing | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-back-contract",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-back-contract",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142746,
+      "sha256": "ad8b4b73747fa9a78dd4c9559be6f9c33988f0ead4497d0ddd4de6b6561fbd40",
+      "pdf": false,
+      "title": "Addendum for \"Back-Up\" Contract | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-coastal-area-property",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-coastal-area-property",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142676,
+      "sha256": "388a63716d86cad2ea387e11006e210feec31c19077ee3fd3f29730457892088",
+      "pdf": false,
+      "title": "Addendum for Coastal Area Property | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-property-located-seaward-gulf-intercoastal-waterway",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-property-located-seaward-gulf-intercoastal-waterway",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142795,
+      "sha256": "aa18a9a0e7c21909479ab1233b922e1ca1115e3e3615fc8c7073fe99d7fd6708",
+      "pdf": false,
+      "title": "Addendum for Property Located Seaward of the Gulf Intracoastal Waterway | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 143094,
+      "sha256": "0a0c431297f58c88366fc0db92f0f8c06c57a56b1bd82b68cb0c565ef3d994b4",
+      "pdf": false,
+      "title": "Addendum for Property Subject to Mandatory Membership in a Property Owners Association | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-release-liability-assumed-loan-andor-restoration-sellers-va-entitlement",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-release-liability-assumed-loan-andor-restoration-sellers-va-entitlement",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142915,
+      "sha256": "a809b4889e33d906929baec93236ad05a6bb1a6db5fa432e5408fb0181420311",
+      "pdf": false,
+      "title": "Addendum for Release of Liability on Assumed Loan and/or Restoration of Seller's VA Entitlement | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-reservation-oil-gas-and-other-minerals-0",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-reservation-oil-gas-and-other-minerals-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142759,
+      "sha256": "63a381c0e8843bd95e908bdeca058ec4cc4245e3a5c9b1e074616857aa12df37",
+      "pdf": false,
+      "title": "Addendum for Reservation of Oil, Gas, and Other Minerals | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-sale-other-property-buyer",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-sale-other-property-buyer",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142590,
+      "sha256": "3d17b5cc975c26d65e91b8a7a9fdbc0f6f74037bab5e8820895e8f45c13d5633",
+      "pdf": false,
+      "title": "Addendum for Sale of Other Property by Buyer | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/addendum-sellers-disclosure-information-lead-based-paint-and-lead-based-paint-hazards-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/addendum-sellers-disclosure-information-lead-based-paint-and-lead-based-paint-hazards-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 143131,
+      "sha256": "d41069c90386be934d6845dc97f69fdc397e122725fb686698add662d3c401af",
+      "pdf": false,
+      "title": "Addendum for Seller's Disclosure of Information on Lead-Based Paint and Lead-Based Paint Hazards as Required by Federal Law | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/amendment",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-07.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-01.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-05.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/amendment",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142515,
+      "sha256": "168c81ec70424afe5c7a02454a9d1be0822919f8c319428e9c2dcd4821000c3a",
+      "pdf": false,
+      "title": "Amendment to Contract | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/buyers-temporary-residential-lease",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/buyers-temporary-residential-lease",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142674,
+      "sha256": "e97df4262cbae949f8f88b95ba39b549b98ebf3e78cb43c7ab9d3755b059837c",
+      "pdf": false,
+      "title": "Buyer's Temporary Residential Lease | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/condominium-resale-certificate-0",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/condominium-resale-certificate-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142636,
+      "sha256": "063c44b474c5618dd2072d0b8b6b6ecc0ebccfa5de82a5a5b8d6ce167816d697",
+      "pdf": false,
+      "title": "Condominium Resale Certificate | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/disclosure-relationship-residential-service-company",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/disclosure-relationship-residential-service-company",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142847,
+      "sha256": "14bdd0b3b159d79326155b559239740e8a0593325927b4715ee4d95e10b0fce8",
+      "pdf": false,
+      "title": "Disclosure of Relationship with Residential Service Company | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/environmental-assessment-threatened-endangered-species-and-wetlands-addendum",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/environmental-assessment-threatened-endangered-species-and-wetlands-addendum",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142809,
+      "sha256": "7ff05e32a6a2d3dc9d580d336b11c6c95d35541b640c1416641909473ee1e9fe",
+      "pdf": false,
+      "title": "Environmental Assessment, Threatened of Endangered Species, and Wetlands Addendum | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/farm-and-ranch-contract-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/farm-and-ranch-contract-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142727,
+      "sha256": "0e450a9100857e93ea9b77c77e2d3307402dfc993419424669a9ebea6b2a29c8",
+      "pdf": false,
+      "title": "Farm and Ranch Contract | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/loan-assumption-addendum-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/loan-assumption-addendum-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142571,
+      "sha256": "c80865ce56285b6b5f1f2e3a8363060a83926fe6ca4ed3bf7294b4fbb28e7e9d",
+      "pdf": false,
+      "title": "Loan Assumption Addendum | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/new-home-contract-completed-construction-0",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/new-home-contract-completed-construction-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142723,
+      "sha256": "c61b055de8783bd0972bb62e7ccefdf68c97ae0378a5c4924372eaff061bf93a",
+      "pdf": false,
+      "title": "New Home Contract (Completed Construction) | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/new-home-contract-incomplete-construction-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/new-home-contract-incomplete-construction-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142710,
+      "sha256": "ead5698981a007992ae547c648e384ad87eef51392ccb1c1937ce5da759922cf",
+      "pdf": false,
+      "title": "New Home Contract (Incomplete Construction) | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/non-realty-items-addendum",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/non-realty-items-addendum",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142684,
+      "sha256": "e010944a9da840b2b8e8672cdcf180a16f119deea8219631f88d4372ade66ec5",
+      "pdf": false,
+      "title": "Non-Realty Items Addendum | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/notice-buyers-termination-contract",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/notice-buyers-termination-contract",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142679,
+      "sha256": "e3cb64d344e2ee3da6fdfc4441316cd2885e59c4315eb024cd3fcfeccae7428e",
+      "pdf": false,
+      "title": "Notice of Buyer's Termination of Contract | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/notice-prospective-buyer-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/notice-prospective-buyer-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142897,
+      "sha256": "d15922dc9c3903100144862414e7777ca241985cab536bfa1179081e26d3aba3",
+      "pdf": false,
+      "title": "Notice to Prospective Buyer | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-misconception-checks.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-01.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-05.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142866,
+      "sha256": "e2d73913402bc0550a7b483dd9a6cede9c5cb483d152fc53f4b53bfb1cf09061",
+      "pdf": false,
+      "title": "One to Four Family Residential Contract (Resale) | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/qualifying-real-estate-course-approval-form-real-estate-finance-30-hour-course",
+      "files": [
+        "config/texas/real-estate-finance-course-form.mjs",
+        "config/texas/real-estate-finance-course.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/qualifying-real-estate-course-approval-form-real-estate-finance-30-hour-course",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 74695,
+      "sha256": "041c8780a1fa7e85faf94373b51c1ed6bb94086fbe2364d5cddf4a64ff8370aa",
+      "pdf": false,
+      "title": "Qualifying Real Estate Course Approval Form (Real Estate Finance - 30 hour course) | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/residential-condominium-contract-resale-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/residential-condominium-contract-resale-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142807,
+      "sha256": "0bfe69750e52f2dc02eab7734bdfb16ec331fd6f029cd686179d8203f22270a9",
+      "pdf": false,
+      "title": "Residential Condominium Contract (Resale) | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/seller-financing-addendum-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/seller-financing-addendum-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142592,
+      "sha256": "d9b76acb20ca025a5418df490e511df4e2126a74d3b6998a23bf85c9658874b2",
+      "pdf": false,
+      "title": "Seller Financing Addendum | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/sellers-disclosure-notice",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/sellers-disclosure-notice",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 52181,
+      "sha256": "2bf4a477483d648e78116f9fa7fcdbee7138ca4b28e47a2c1826a2b50b971963",
+      "pdf": false,
+      "title": "Seller's Disclosure Notice | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/sellers-notice-buyer-removal-contingency-under-addendum-back-contract",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/sellers-notice-buyer-removal-contingency-under-addendum-back-contract",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142844,
+      "sha256": "35a3aec5039e35524c64d172838e010b5b0ddb27bd13eadb98f73532161598d9",
+      "pdf": false,
+      "title": "Seller's Notice to Buyer of Removal of Contingency Under Addendum for \"Back-Up\" Contract | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/sellers-temporary-residential-lease",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/sellers-temporary-residential-lease",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142675,
+      "sha256": "30e262a181555a6a71f53e01f9cd01703dadb826bcf188187a31d0ac36716485",
+      "pdf": false,
+      "title": "Seller's Temporary Residential Lease | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/short-sale-addendum-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/short-sale-addendum-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142582,
+      "sha256": "231d1282db1445d63785e4a69efadd1efd71e517bebf7a139c1223546d7a8e09",
+      "pdf": false,
+      "title": "Short Sale Addendum | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/subdivision-information-including-resale-certificate-property-subject-mandatory-membership",
+      "files": [
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-07.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/subdivision-information-including-resale-certificate-property-subject-mandatory-membership",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 143216,
+      "sha256": "e03bdeb39b2dd3ca7dad20dff8866276a56a25e0318fd5548771532897ee9d58",
+      "pdf": false,
+      "title": "Subdivision Information, Including Resale Certificate for Property Subject to Mandatory Membership in a Property Owners' Association | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/third-party-financing-addendum-0",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-misconception-checks.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-03.md",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-09.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/third-party-financing-addendum-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 52003,
+      "sha256": "80669098775f51bc54fe43518d276d4fd14724a6f78503b8a3dbbfb19248be81",
+      "pdf": false,
+      "title": "Third Party Financing Addendum | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/forms/unimproved-property-contract-0",
+      "files": [
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "texas/tx-promulgated-contract-forms-30-v1/curriculum/module-06.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/forms/unimproved-property-contract-0",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 142760,
+      "sha256": "d6cd7f818e350a1916ebc397266460fc21a5e4944ee9dd5bd08a7281eafd2d82",
+      "pdf": false,
+      "title": "Unimproved Property Contract | TREC",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/10-6.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/10-6.pdf",
+      "contentType": "application/pdf",
+      "bytes": 43880,
+      "sha256": "b90d16d6950c0f69b87a2c770a0c7947efcfea96f403350a8b71fc23cb8fe611",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/11-9.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/11-9.pdf",
+      "contentType": "application/pdf",
+      "bytes": 289220,
+      "sha256": "29a4cc70af94061655715bc19b389de0b1891112d621d481d3fe0d9cf10ea52c",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/12-3_0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/12-3_0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 148122,
+      "sha256": "7e688e66da7127e9940ab95faf252f30ffd5cf8ba59f732f8133220f412719ee",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/15-7.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/15-7.pdf",
+      "contentType": "application/pdf",
+      "bytes": 761930,
+      "sha256": "7b493c3ee665808eda55d36ac291ae8a469d0cb8be18d40c2bc981cacec61646",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/16-7.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/16-7.pdf",
+      "contentType": "application/pdf",
+      "bytes": 893512,
+      "sha256": "6692db491db42fde7b78652c49c3f152433cf5a9f3be41668e180ae772a7702f",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19_4.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19_4.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1687927,
+      "sha256": "3f458518e9e01fc9c84cab420dcd0ce9793113c4b356ed5caf7a2fb1bdef2ca5",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/23-20_3.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/23-20_3.pdf",
+      "contentType": "application/pdf",
+      "bytes": 2190998,
+      "sha256": "9a2fb73f06250f6d65d113bfcdc995bde0a5ea63711500b5b58b84b055f66fbd",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/24-20_0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/24-20_0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1348774,
+      "sha256": "b107369a87d37dd8c2881c98bd7c09ca5593141e5c924dbf4860ac1b25a37eb6",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/25-17_4.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/25-17_4.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1954519,
+      "sha256": "91f945fe6e4067a5277e4140c601ac3c79447dcc53cbf0222527b1c4eb5ef220",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/26-8_0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/26-8_0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 162465,
+      "sha256": "56ae8796d467552ca699178b0f3019d65a125fba84f1acf125f8fbc5d5de0399",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/28-2.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/28-2.pdf",
+      "contentType": "application/pdf",
+      "bytes": 100825,
+      "sha256": "dc2b0d3200d6d508f8de687225cbbcaadb1fb66f1b26f33ced4c1d04259016ff",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/30-18_0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/30-18_0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 843334,
+      "sha256": "52f61f800ccac58b8cb219d9ef1972bab5898801cda4cbc28ea84260a15ad1d8",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/32-5.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/32-5.pdf",
+      "contentType": "application/pdf",
+      "bytes": 411829,
+      "sha256": "b0566486b8458dbeb455e5dc4f909beb14a303681112096fc0b444f43495ad54",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/33-2.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/33-2.pdf",
+      "contentType": "application/pdf",
+      "bytes": 126566,
+      "sha256": "2520759ca3f9aca5997bcc0542cab5775a3ff4435e35d3b06dc54391e21330e6",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/34-4.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/34-4.pdf",
+      "contentType": "application/pdf",
+      "bytes": 186297,
+      "sha256": "83b2edf03b018d5e8f0740ed8021ccc1aec72f132d33c5e36b5d1a97963317b6",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/36-11.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/36-11.pdf",
+      "contentType": "application/pdf",
+      "bytes": 314912,
+      "sha256": "91c142475efc7b6be5b8d2b2b6d40ec30aed4d65b9981cb70bf94622e02be7eb",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/37-5.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/37-5.pdf",
+      "contentType": "application/pdf",
+      "bytes": 284431,
+      "sha256": "99100a945811f647721c5f89962c30fd4165a06cf7dba53d7f43a751ef31f679",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/38-8.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/38-8.pdf",
+      "contentType": "application/pdf",
+      "bytes": 381816,
+      "sha256": "bfb9629540c101a2c5b924b2d9a956f3bd0c5370b348b1428a106873f75bb3ef",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/40-11.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/40-11.pdf",
+      "contentType": "application/pdf",
+      "bytes": 521653,
+      "sha256": "98976d5b0d5f79aa775c7be641965c630578edd9c3fd69dec10532137f4cebe5",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/41-3_0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/41-3_0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 120205,
+      "sha256": "4d5874a3cb997686533cd095a92fd8da9b04fddb56e1acebc128658d833310f7",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/44-3.pdf",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs",
+        "config/texas/promulgated-contract-forms-question-bank.mjs",
+        "config/texas/promulgated-contract-forms-scenarios.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-04.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/44-3.pdf",
+      "contentType": "application/pdf",
+      "bytes": 123272,
+      "sha256": "482f0e058d103edd090dae5704984fa91d1a9741bc0eedc1839456dff9546f9e",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/45-2_1.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/45-2_1.pdf",
+      "contentType": "application/pdf",
+      "bytes": 80126,
+      "sha256": "957bdfcd8b91670731c826d8b0744e445b60a4804cbaee1ab926d40ed69da0ba",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/56-0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/56-0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 417001,
+      "sha256": "515bda0aa4b834e55b0fe894378e8ce200c9c3547c81fcb11bf1019107dbf868",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/57-0_0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/57-0_0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 417917,
+      "sha256": "b2ee8ec68ffc10e4856427004e9cc9f9787c9052f8a2fe7f6326c020ded21544",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/9-18_1.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/9-18_1.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1262627,
+      "sha256": "1019b1edb77ae7998fe19f941e62ec959a46b0b13e6af3bff9bd2ac452e8478c",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/LOC-0.pdf",
+      "files": [
+        "config/texas/law-of-contracts-course-form.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/LOC-0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 991862,
+      "sha256": "eaebc9d03a8131ca5cbba5457ad604fce5facf2610476b9fd79aa500467326d5",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/PCF-0.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-course-form.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/PCF-0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1040262,
+      "sha256": "6b87ca7dceb8d06f94ae46102823dede01edc3690c9e0944505a91f676704eec",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.trec.texas.gov/sites/default/files/pdf-forms/REF-0_0.pdf",
+      "files": [
+        "config/texas/real-estate-finance-course-form.mjs",
+        "config/texas/real-estate-finance-course.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.trec.texas.gov/sites/default/files/pdf-forms/REF-0_0.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1260112,
+      "sha256": "0ce0803148aff392bad39ba77d8c5f59e9668fd70455170f2bcf8c39d602f1f8",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.txcourts.gov/media/1436267/140552.pdf",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.txcourts.gov/media/1436267/140552.pdf",
+      "contentType": "application/pdf",
+      "bytes": 101028,
+      "sha256": "080de4357bacc77ba0c7309732b1ba379cb202e94a426d025ae71a4c89063777",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.txcourts.gov/media/1445957/180352.pdf",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-question-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-05.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.txcourts.gov/media/1445957/180352.pdf",
+      "contentType": "application/pdf",
+      "bytes": 137435,
+      "sha256": "1b4554598e54d62faffc62ed3811bcf19e57ada4461102f808365e49eee9fde2",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.txcourts.gov/media/1455637/210296pc.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.txcourts.gov/media/1455637/210296pc.pdf",
+      "contentType": "application/pdf",
+      "bytes": 138152,
+      "sha256": "d6c35a29d139925e01a1fabbfe367690ee9b0411207e3097679400467f037531",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.txcourts.gov/media/1458344/220481.pdf",
+      "files": [
+        "config/texas/promulgated-contract-forms-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.txcourts.gov/media/1458344/220481.pdf",
+      "contentType": "application/pdf",
+      "bytes": 235961,
+      "sha256": "33ae0833abb56949ba246d9ed4747c76aff934a21a80fc9b910075f9cbc6719a",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.txcourts.gov/media/819887/OpinionsFY2010.pdf",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs",
+        "config/texas/law-of-contracts-scenarios.mjs",
+        "texas/tx-law-of-contracts-30-v1/curriculum/module-03.md"
+      ],
+      "fragments": [
+        "page=311",
+        "page=315"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.txcourts.gov/media/819887/OpinionsFY2010.pdf",
+      "contentType": "application/pdf",
+      "bytes": 10298385,
+      "sha256": "9c1834c391bc93ae7b08d604bb5b4a1b2c68a29894429c414d8553fa65a561ae",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.txcourts.gov/media/819905/OpinionsFY2014.pdf",
+      "files": [
+        "config/texas/law-of-contracts-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.txcourts.gov/media/819905/OpinionsFY2014.pdf",
+      "contentType": "application/pdf",
+      "bytes": 10636786,
+      "sha256": "9129411d0462f78c0b40ac726c2653aa18ad1ad8d176fdefea0654f8a7e8370a",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/",
+      "contentType": "text/html",
+      "bytes": 73589,
+      "sha256": "c200ebcde962b38f4d9ef1b93894ad0473939e3cb1e2f54cc92c21ae05414dad",
+      "pdf": false,
+      "title": "VA Funding Fee And Loan Closing Costs | Veterans Affairs",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.va.gov/housing-assistance/home-loans/loan-types/",
+      "contentType": "text/html",
+      "bytes": 59734,
+      "sha256": "47dcddc22a0583eda4de14d1477305ebefac64b5384a2e81e4cb6071b158ff42",
+      "pdf": false,
+      "title": "VA Home Loan Types | Veterans Affairs",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/cash-out-loan/",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.va.gov/housing-assistance/home-loans/loan-types/cash-out-loan/",
+      "contentType": "text/html",
+      "bytes": 62372,
+      "sha256": "45e22fd3f3f15d6250bd68cfd76d66c72674d417769733c24aa624092d093b61",
+      "pdf": false,
+      "title": "Cash-Out Refinance Loan | Veterans Affairs",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/interest-rate-reduction-loan/",
+      "files": [
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.va.gov/housing-assistance/home-loans/loan-types/interest-rate-reduction-loan/",
+      "contentType": "text/html",
+      "bytes": 60824,
+      "sha256": "d428a158b104bf68b0bc251c946887c7812c89a8eab3093e59a025564b3dd091",
+      "pdf": false,
+      "title": "Interest Rate Reduction Refinance Loan | Veterans Affairs",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/native-american-direct-loan/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.va.gov/housing-assistance/home-loans/loan-types/native-american-direct-loan/",
+      "contentType": "text/html",
+      "bytes": 63819,
+      "sha256": "bf06d5d9f07209be575158a486ddb8b7d95d3fad2e4df5af884621daadde5f17",
+      "pdf": false,
+      "title": "Native American Direct Loan | Veterans Affairs",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/",
+      "files": [
+        "config/texas/real-estate-finance-final-exam-bank.mjs",
+        "config/texas/real-estate-finance-question-bank.mjs",
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/",
+      "contentType": "text/html",
+      "bytes": 62984,
+      "sha256": "15075019c69738aee8b66805b71b8857ffb22431d097d71c90dc9df648f5127c",
+      "pdf": false,
+      "title": "Purchase Loan | Veterans Affairs",
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    },
+    {
+      "url": "https://www2.texasattorneygeneral.gov/opinions/opinions/51paxton/op/2018/kp0183.pdf",
+      "files": [
+        "texas/tx-real-estate-finance-30-v1/curriculum/module-08.md"
+      ],
+      "fragments": [],
+      "status": 200,
+      "finalUrl": "https://www2.texasattorneygeneral.gov/opinions/opinions/51paxton/op/2018/kp0183.pdf",
+      "contentType": "application/pdf",
+      "bytes": 212155,
+      "sha256": "ff4bc2271bed082392297f37bac7ba2219f638bbb55ff5d48b314704a71c1199",
+      "pdf": true,
+      "title": null,
+      "transportAndBasicIdentityPass": true,
+      "issues": []
+    }
+  ],
+  "limitation": "Response identity and reachability are checked. This is not an independent legal interpretation, a complete claim-to-source audit, a finding that every form is effective, or proof of learner access in every browser."
+}

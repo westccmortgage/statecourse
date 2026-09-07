@@ -121,6 +121,16 @@ button, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .practice-sources, .practice-question-count { font-size: 14px; line-height: 1.6; }
 .practice-content { overflow-wrap: anywhere; }
 .practice-content table { display: block; max-width: 100%; overflow-x: auto; }
+.practice-case { margin: 28px 0; padding: 24px 0; border-top: 1px solid var(--rule); overflow-wrap: anywhere; }
+.practice-case-context, .practice-case-facts { font-size: 16px; line-height: 1.75; margin: 20px 0; }
+.practice-page .practice-case-task { margin: 28px 0; }
+.practice-case-task > label { display: block; margin-bottom: 8px; font-size: 16px; }
+.practice-case textarea, .practice-number { display: block; width: 100%; max-width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); color: var(--ink); font: inherit; }
+.practice-case textarea { resize: vertical; }
+.practice-case textarea:focus-visible, .practice-number:focus-visible { outline: 3px solid var(--gold-deep); outline-offset: 3px; }
+.practice-case button { min-height: 44px; margin: 8px 8px 8px 0; padding: 12px 16px; font: inherit; cursor: pointer; }
+.practice-case-summary { line-height: 1.7; padding: 16px 0; }
+.practice-case details > summary { cursor: pointer; padding: 12px 0; min-height: 44px; }
 @media (prefers-reduced-motion: reduce) { .practice-page * { scroll-behavior: auto !important; } }
 .practice-layout { display: grid; grid-template-columns: minmax(230px,.34fr) minmax(0,1fr); gap: 32px; align-items: start; margin-top: 28px; }
 .practice-controls { position: sticky; top: 104px; display: grid; gap: 14px; padding: 24px; background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--gold); border-radius: 0 0 var(--radius) var(--radius); }

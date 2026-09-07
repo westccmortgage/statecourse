@@ -14,7 +14,7 @@ const courseLevel = scenario => scenario.courseLevel === true || scenario.placem
 const placement = scenario => scenario.afterTopic ?? scenario.placement?.afterTopic;
 
 // Explicit inventory: add a course only after its complete artifacts exist. No silent missing-file skips.
-for (const slug of ["promulgated-contract-forms"]) {
+for (const slug of ["law-of-contracts", "promulgated-contract-forms", "real-estate-finance"]) {
   test(`${slug}: all actual units, every formative choice/replacement, every scenario and all four finals run non-credit`, async () => {
     const { definition, chapters, provenance } = await loadTexasReviewerCourse(slug);
     const engine = createTexasReviewerEngine(definition);

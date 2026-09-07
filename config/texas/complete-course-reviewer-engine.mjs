@@ -125,7 +125,8 @@ export function createTexasReviewerEngine(definition) {
         const answer = task.answer ?? task.correctValue ?? task.expected;
         const tolerance = task.tolerance ?? 0;
         if (!Number.isFinite(answer) || !Number.isFinite(tolerance) || tolerance < 0) fail("invalid authored computation rubric");
-        passed = Math.abs(response - answer) <= tolerance;
+        const roundoff = tolerance === 0 ? 0 : Number.EPSILON * Math.max(1, Math.abs(response), Math.abs(answer)) * 4;
+        passed = Math.abs(response - answer) <= tolerance + roundoff;
       } else if (task.type === "short-answer") {
         // A learner's text is not self-grading. This trusted internal review model requires a full
         // itemized rubric evaluation, actual response text and reviewer rationale; no bare "passed".

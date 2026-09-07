@@ -1,3 +1,4 @@
+import { TEXAS_FULL_PRACTICE_SOURCES } from '../scripts/lib/free-practice-activities.mjs';
 // Public practice publishes student curriculum and formative exercises only.
 // Each course is explicitly mapped; protected examinations are never source inputs.
 export const PRACTICE_SOURCES = [
@@ -30,6 +31,4 @@ export const PRACTICE_SOURCES = [
   ['WI','wi-salesperson','wisconsin/curriculum','wisconsin/module'],
 ].map(([stateCode,courseId,curriculumDir,bank]) => ({stateCode,courseId,curriculumDir,bankPath:`config/${bank}-question-bank.mjs`,coverage:'authored curriculum'}));
 
-for (const name of ['law-of-contracts','promulgated-contract-forms','real-estate-finance']) {
-  PRACTICE_SOURCES.push({stateCode:'TX',courseId:`tx-${name}-30`,curriculumDir:`texas/tx-${name}-30-v1/practice/curriculum`,bankPath:`config/texas/${name}-practice-bank.mjs`,coverage:'practice collection'});
-}
+PRACTICE_SOURCES.push(...TEXAS_FULL_PRACTICE_SOURCES);

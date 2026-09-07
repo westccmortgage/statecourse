@@ -8,7 +8,7 @@ export const FORM = Object.freeze({
   formNumber: "REF-0", revision: "06/20/2016",
   title: "Qualifying Real Estate Course Approval Form — Real Estate Finance (30 hour course)",
   issuer: "Texas Real Estate Commission",
-  url: "https://www.trec.texas.gov/sites/default/files/pdf-forms/REF-0.pdf",
+  url: "https://www.trec.texas.gov/sites/default/files/pdf-forms/REF-0_0.pdf",
   formPage: "https://www.trec.texas.gov/forms/qualifying-real-estate-course-approval-form-real-estate-finance-30-hour-course",
   localCopy: "texas/trec-sources/REF-0.pdf",
   sha256: "0ce0803148aff392bad39ba77d8c5f59e9668fd70455170f2bcf8c39d602f1f8",
