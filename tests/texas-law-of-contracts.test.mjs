@@ -95,16 +95,20 @@ test("the Financing Real Estate scope note is transcribed as printed, not correc
 
 /* ── the time budget ─────────────────────────────────────────────────────────────────────────── */
 
-test("the time budget spends exactly the minutes LOC-0 prescribes, topic by topic", () => {
+test("the time budget preserves every LOC-0 floor and explicitly records the added early scenario", () => {
   assert.equal(BUDGET.length, TOPICS.length);
   for (const row of BUDGET) {
     const topic = TOPICS.find((t) => t.code === row.topicCode);
     assert.ok(topic, `${row.topicCode} is not an LOC-0 topic`);
     assert.equal(row.prescribedMinutes, topic.subtotalMinutes);
-    assert.equal(row.activityMinutes + row.readingMinutes, topic.subtotalMinutes, `${row.topicCode} does not spend its own allocation`);
+    const added = row.topicCode === "T03" ? 20 : 0;
+    assert.equal(row.activityMinutes + row.readingMinutes, topic.subtotalMinutes + added, `${row.topicCode} must preserve its own floor and disclosed overrun`);
+    assert.equal(row.addedInstructionOverrunMinutes, added);
   }
   assert.equal(TOTALS.budgetedMinutes, FORM.totalMinutes);
-  assert.equal(TOTALS.activityMinutes + TOTALS.readingMinutes, FORM.totalMinutes);
+  assert.equal(TOTALS.activityMinutes + TOTALS.readingMinutes, FORM.totalMinutes + 20);
+  assert.equal(TOTALS.minimumProseWords, 111580, "Adding the early scenario must not lower original teaching-word floors");
+  assert.equal(TOTALS.addedInstructionOverrunMinutes, 20);
 });
 
 /**
@@ -126,7 +130,7 @@ test("the capstone scenario is counted at course level and charged to no topic",
   assert.equal(COURSE_LEVEL.minutes, RATES.activityMinutes.scenario);
   assert.equal(TOTALS.scenarios, TOTALS.topicScenarios + COURSE_LEVEL.capstoneScenarios);
   /* The course-level minutes are deliberately absent from the topic table's arithmetic. */
-  assert.equal(TOTALS.activityMinutes + TOTALS.readingMinutes, FORM.totalMinutes);
+  assert.equal(TOTALS.activityMinutes + TOTALS.readingMinutes, FORM.totalMinutes + TOTALS.addedInstructionOverrunMinutes);
 });
 
 test("the assessment plan covers every unit and meets the per-topic floors", () => {
@@ -145,7 +149,7 @@ test("the assessment plan covers every unit and meets the per-topic floors", () 
  */
 test("the time rates match the model the earlier Texas courses use", async () => {
   const loa = await import("../config/texas/law-of-agency-time-budget.mjs");
-  assert.equal(RATES.label, "PROVIDER_METHODOLOGY");
+  assert.equal(RATES.label, "PROVIDER_METHODOLOGY_NOT_OBSERVED_TIME");
   assert.equal(RATES.firstPassWordsPerMinute, loa.RATES.firstPassWordsPerMinute);
   assert.equal(RATES.masteryStudyWordsPerMinute, loa.RATES.masteryStudyWordsPerMinute);
   assert.equal(RATES.replacementSeenFraction, loa.RATES.replacementSeenFraction);

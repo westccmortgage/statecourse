@@ -1,0 +1,101 @@
+# Module 04: The Secondary Mortgage Market
+
+REF-0 topic T04 suggests 95 minutes. You will trace a mortgage from origination to an investor, identify the actual role of each major institution, and analyze how pooling redistributes cash flows and risks.
+
+## T04U1 — Major Participants in the Secondary Market
+
+The primary mortgage market is where a creditor extends credit to a borrower. The secondary market is where existing mortgage loans and mortgage-backed securities are bought and sold. A lender that sells loans can replenish funds for further originations. An investor acquires an asset whose performance depends on borrower payments, collateral, contractual guarantees, servicing, and market conditions. A loan sale is not a second loan made to the homeowner.
+
+Participants include originators, aggregators, guarantors, issuers, servicers, trustees, custodians, securities dealers, rating organizations where relevant, and investors. The same organization can occupy more than one role, but responsibility should be identified by the transaction documents. An issuer creates a security under the applicable structure; a guarantor promises specified performance; a servicer administers payments; a custodian holds required documents. None should be assumed to perform all the others' duties.
+
+Pooling permits investors to obtain exposure to many loans, but does not make risk vanish. Credit risk is the risk of loss from nonpayment. Interest-rate risk concerns changes in value as yields change. Prepayment risk occurs when principal comes back sooner than expected, often when borrowers refinance. Extension risk is the converse timing problem when expected prepayments slow. Liquidity risk concerns selling an asset when needed. A guarantee may address payment performance without protecting the security's resale price.
+
+Mortgage sale standards influence origination. A lender expecting to sell a loan must document compliance with the purchaser's eligibility, underwriting, delivery, and representation requirements. A loan that does not satisfy a particular purchaser's standards is not necessarily illegal; it may require another lawful investor or portfolio treatment. A “conforming” label refers to applicable enterprise purchase standards, including size and other requirements, and should not be used as a synonym for every conventional mortgage.
+
+Consider the originator's funding cycle. A mortgage banker might borrow against a warehouse line to fund several approved loans, then deliver eligible loans to an investor and use sale proceeds to repay the line. The ability to sell loans replenishes capacity, but it introduces delivery and pricing risk. If a loan fails the investor's requirements, the originator may need to retain it, correct a defect, find another purchaser, or address a contractual repurchase demand. Selling a loan is not an excuse for inaccurate underwriting. Representations, warranties, servicing obligations, and the sale agreement allocate continuing responsibilities.
+
+For the borrower, the relevant questions differ from the originator's profitability questions. Who currently receives payments? Where should an error or information request go? Did authenticated transfer notices identify the new owner or servicer? Did the transfer leave the contractual terms unchanged? The borrower normally does not select a new repayment rate each time the asset trades. A lender's sale price reflects market valuation of the existing contractual cash flows. It is not automatically a fee that the borrower owes at sale of the loan or a credit against the borrower's unpaid principal.
+
+Price and yield move in opposite directions for a fixed promised cash flow when other assumptions are held constant. A purchaser willing to pay more for the same payments accepts a lower yield; one requiring a higher yield generally pays less. A mortgage complicates that relationship because its cash flows are not perfectly fixed: borrowers can prepay, defaults can interrupt receipts, and servicing or guaranty arrangements affect timing and recovery. A security's coupon is not necessarily the investor's yield. Premium or discount price, amortization, prepayment timing, fees, and losses can change the result.
+
+### Applied exercise: A17 — Cash-flow map
+
+Map a $250,000 loan funded by Originator A, sold to Aggregator B, placed in a pool, and serviced by Servicer C. Show the original cash to the borrower/settlement, sale proceeds to A, and ongoing borrower payments through C to the structure's investors. Then explain who receives a hypothetical $20,000 principal prepayment and why an investor may dislike receiving principal sooner than expected.
+
+Feedback: the prepayment reduces the mortgage principal and is distributed according to the pool's rules. It is not additional interest profit. An investor may need to reinvest at a lower yield. Borrower payment instructions depend on authenticated servicing notices, not the investor's identity alone.
+
+## T04U2 — The Government Sponsored Enterprises (GSEs incl: FNMA, FHLMC, GNMA, FHLB, Farmer Mac)
+
+The official outline groups these names together. Their legal status and functions differ. Fannie Mae (FNMA) and Freddie Mac (FHLMC) are congressionally chartered enterprises that buy mortgages and support mortgage-backed securities. FHFA regulates them. They provide liquidity to originating lenders; a household ordinarily applies to a lender rather than obtaining its retail purchase loan directly from an enterprise.
+
+Ginnie Mae (GNMA) is a government corporation within HUD, not a GSE merely because REF-0 includes it under this heading. Its guaranty supports timely payment of principal and interest on eligible securities backed by federally insured or guaranteed mortgages, subject to the program's terms. Distinguish that securities guaranty from FHA insurance or VA's loan guaranty. Ginnie Mae's function is not to underwrite and make the consumer's individual mortgage or simply buy every FHA loan.
+
+The FHLBanks provide member liquidity through advances and related eligible programs. The member-owned system's funding role differs from enterprise mortgage purchases and Ginnie Mae's securities guaranty. Farmer Mac, the Federal Agricultural Mortgage Corporation, provides a secondary market for eligible agricultural real estate, rural housing, and rural cooperative credit under its statutory authority and oversight. USDA FSA's direct/guaranteed lending programs are another distinct part of agricultural finance.
+
+These distinctions matter when a consumer asks “Is my loan government-backed?” Determine exactly what is insured or guaranteed, by whom, to whose benefit, and subject to what conditions. A government connection does not mean the homeowner's debt is forgiven upon default. It does not guarantee appreciation or eliminate property-condition risk. Similarly, an investor should not infer that all agency-related securities have the same legal backing, price behavior, or risk allocation.
+
+Eligibility limits and program standards can change. Use the current program material and property location to determine an actual loan limit. This course deliberately does not provide an undated dollar cap to memorize. A loan larger than an applicable conforming limit may be called jumbo in market practice, but classification alone does not determine whether a particular lender will approve it.
+
+Use three separate boxes when describing government involvement: the borrower-level loan, the lender or issuer, and the investor security. FHA insurance or a VA guarantee addresses an eligible loan under its program. A Ginnie Mae guaranty concerns timely principal and interest to investors in eligible securities. The issuer assembles the eligible loans and has its own obligations. Moving a government label from one box to another can produce misleading claims, such as telling a borrower that the security guarantor makes the individual underwriting decision. Read the actual program relationship rather than treating every institution with “Federal” in its name as a retail lending office.
+
+The 2026 HUD congressional justification for Ginnie Mae explains that program's guaranty model and the role of approved issuers. Its budget requests and forecasts are not enacted borrower benefits and are not used as current loan limits in this course. The document is useful here because it clearly separates the institution's function from a lender's origination function. The same reading discipline applies elsewhere: a regulator's description of mission is not a consumer approval; a market liquidity program does not cancel the borrower's debt; and a statutory charter does not make every associated investment risk-free.
+
+FHLBank advances illustrate another route. A member institution obtains funding secured by eligible collateral under the system's requirements. That is not identical to selling the mortgage free of all continuing obligations. A sale transfers the asset according to its agreement; a collateralized advance creates a funding obligation supported by pledged assets. The economic consequences for the member's balance sheet, liquidity, and risk differ. FHFA also describes acquired-member-asset programs, so “FHLBanks only ever make advances” would be too broad. Identify the actual transaction rather than extrapolating one principal function into an absolute rule.
+
+### Applied exercise: A18 — Institution correction sheet
+
+Correct six file notes: “Fannie Mae is the closing agent”; “Freddie Mac deposits the buyer's down payment”; “Ginnie Mae is a private GSE”; “An FHLBank advance is a homeowner grant”; “Farmer Mac and FSA are the same organization”; “Government-backed means no borrower liability.” For each correction, supply a concrete transaction role and a primary source to verify it.
+
+Feedback: describe mortgage purchase/securitization roles for the enterprises, a securities guaranty for Ginnie Mae, member funding for FHLBanks, secondary agricultural-market activity for Farmer Mac, and direct/guaranteed program lending for FSA. The borrower remains obligated under the loan. If a role does not fit the actual transaction, ask for documents rather than assigning it by acronym.
+
+### Statute reading exercise: S04 — Government support comparison
+
+Read FHFA's enterprise explanation, FHFA's FHLBank description, and FCA's Farmer Mac explanation. Prepare a table comparing whom each serves, the asset or funding instrument involved, and the role of the originating lender. Add Ginnie Mae using its own current program description. Write one sentence identifying why “government” is insufficient to describe investor protection.
+
+Feedback: the table should compare functions, not simply expand acronyms. Confirm the specific guaranty and issuer rather than treating a federal charter as an identical guarantee across every entity.
+
+### Statute reading exercise: S14 — Institutional funding versus asset sale
+
+Read FHFA's [About the FHLBank System](https://www.fhfa.gov/about/federal-home-loan-bank-system), focusing on advances, acquired member assets, membership, and funding. Draw separate diagrams for a member receiving a collateralized advance and a member selling an eligible mortgage through an acquired-member-asset arrangement. Label the direction of cash, the asset or collateral involved, and the obligation that remains. Then read the Farm Credit Administration's [About Farmer Mac](https://www.fca.gov/farmer-mac-oversight/about-farmer-mac), focusing on its listed activities and eligible-loan categories. Identify two ways its activities can support lender liquidity and one reason a household should not treat either institution's mission page as its own approval letter.
+
+Feedback: the advance diagram includes the member's repayment obligation; the sale diagram depicts an asset transaction under its conditions. Farmer Mac's description includes purchases, financing backed by eligible obligations, securitization/guaranty activity, and standby commitments. Neither description makes every rural property or mortgage eligible. A complete submission states the page checked and distinguishes the institution's market function from the lender's file-level decision. Do not infer a federal guarantee of all FHLBank debt; the FHFA funding section explicitly distinguishes that issue.
+
+## T04U3 — Real Estate Mortgage Investment Conduits (REMICs)
+
+A REMIC is a federal tax-law structure for a qualifying pool of mortgage obligations, governed by Internal Revenue Code §§860A–860G and related rules. It is not another federal housing agency and does not create mortgage insurance. A qualifying structure can issue regular interests with specified cash-flow rights and a residual interest carrying different tax and economic consequences. REMIC tax treatment and the credit quality of underlying loans are separate questions.
+
+Tranching allocates cash flows among classes. In a simple sequential-pay example, principal is directed to Class A until it is retired, then to Class B; interest follows the governing documents. Real structures may be far more complex. Prioritizing one class's principal changes timing exposure among classes, but the total cash available still depends on the assets and any applicable support. Do not confuse payment priority with a guarantee against loss or a fixed market price.
+
+For a hypothetical pool receiving $300,000 scheduled principal and $700,000 prepayments this month, total principal available is $1 million before the structure's adjustments. If Class A has $600,000 outstanding and receives principal first, it can be retired with $600,000; the remaining $400,000 goes to the next entitled class. The $700,000 prepayment is a return of principal, not a windfall of interest income. Taxes and distribution rules require the actual offering documents and professional analysis.
+
+A cash-flow waterfall is a contractual order of allocation. It may direct available interest to specified classes, pay expenses, and allocate scheduled or unscheduled principal according to priority. That arrangement redistributes exposure; it does not create extra cash. A senior class can receive principal earlier while a subordinate class waits. A class protected against one timing pattern may still face other risks. In an actual offering, understand the assumptions, definitions, triggers, and payment priority rather than applying a generic diagram to every security.
+
+Prepayment risk is especially important when interest rates change. If many borrowers refinance, principal can return sooner than expected, leaving an investor to reinvest at then-available yields. If refinancing slows, a security can remain outstanding longer than expected. A purchaser who paid a premium may not recover that premium in the manner originally projected when principal returns quickly. An investor who expected rapid principal return can face a longer duration when prepayments slow. A guaranty of specified payments is not a guarantee of the investor's preferred reinvestment rate or a stable market resale price.
+
+The REMIC classification is a federal tax structure, not a synonym for an individual mortgage, a REIT, or a government guaranty. Section 860D addresses an election, regular and residual interests, asset requirements, and other conditions. Tax professionals and offering documents address the consequences for a particular structure and investor. At this course level, the essential finance skill is to separate tax classification from cash-flow design and credit support. A transaction can have elaborate allocation rules without satisfying a tax definition, and a qualifying tax vehicle can still expose its holders to investment risks.
+
+### Applied exercise: A19 — Waterfall and risk
+
+In a simplified sequential structure, A has $900,000 outstanding and B has $1.5 million. This month's principal cash is $650,000. Calculate each ending balance. Next month $500,000 principal arrives. Allocate it and calculate new balances. Then explain how slowing prepayments would affect B's expected principal-return timing.
+
+Feedback: after month one A is $250,000 and B remains $1.5 million. In month two A receives $250,000 and retires; B receives $250,000 and falls to $1.25 million. Slower prepayments can delay B's principal return. These allocations are based solely on the stated simplified waterfall, not a promise about any real security.
+
+### Statute reading exercise: S15 — REMIC classification and disclosure questions
+
+Read [26 U.S.C. §860D(a)–(b)](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title26-section860D). If the chapter viewer is unavailable, use the House Office of Law Revision Counsel's title 26, chapter 1, subchapter M, part IV navigation and record the exact version reached. Identify the election, interest classes, residual-class restriction, and asset-composition requirements. Do not calculate a tax liability. Next review this hypothetical sales pitch: “This pool owns mortgage loans, so it is automatically a REMIC, the government guarantees its market price, and every class is paid on the same schedule.” Prepare a claim-by-claim correction, naming what the statute supports and what would instead require offering documents or a separate guaranty source. Record any unavailable source as unavailable rather than treating the pitch as evidence.
+
+Feedback: owning mortgages alone does not satisfy all statutory conditions. The statute's tax definition does not establish equal payment schedules or a government guarantee of resale price. The offering's allocation provisions and any actual credit-support instrument require separate review. A source-based answer should identify the conditions in subsection (a) and the election provisions in subsection (b), then keep the unrelated investment promises out of the statutory conclusion.
+
+### Applied exercise: A74 — Principal allocation under changed prepayments
+
+Analyze a simplified two-class pool. Before the month, class A principal is $180,000 and class B principal $120,000. The stipulated waterfall pays all available principal to A until A is retired, then to B. Ignore interest, expenses, losses, taxes, and all other triggers. In the base month the pool receives $8,000 scheduled principal and $22,000 prepaid principal. In the fast-prepayment alternative it receives the same scheduled principal and $202,000 prepaid principal instead. Treat the alternatives separately, both starting from the original balances.
+
+For each alternative calculate total available principal, allocation to each class, and each ending balance. Explain whose expected principal timing changes most in the fast-prepayment case. Then evaluate an investor who paid $104 for each $100 of class A principal and expected gradual repayment: explain why return of principal at par is not the same as receiving the premium purchase price back. Finish with three questions for an actual offering document about fees, losses, and allocation triggers. This is cash-flow mechanics, not a valuation or tax recommendation.
+
+Feedback: base principal is $30,000, all to A; ending balances are A $150,000 and B $120,000. Fast-prepayment principal is $210,000: A receives $180,000 and retires, B receives $30,000 and ends at $90,000. Both classes receive principal earlier, with A fully retired under these assumptions. Repayment of contractual principal does not itself reimburse an investor's premium; yield depends on purchase price and timing as well as other cash flows. A real waterfall may differ materially from the stipulated sequential example.
+
+### Module recap
+
+Trace origination, ownership, servicing, insurance, guaranty, and investor cash flow without collapsing the roles. Complete the T04 quiz.
+
+Sources: [FHFA enterprises](https://www.fhfa.gov/about-fannie-mae-freddie-mac); [FHFA FHLBank System](https://www.fhfa.gov/about/federal-home-loan-bank-system); [FCA Farmer Mac](https://www.fca.gov/farmer-mac-oversight/about-farmer-mac); [HUD Ginnie Mae program explanation, pp.27-1–27-2](https://www.hud.gov/sites/dfiles/CFO/documents/2026_CJ_Program_GNMA.pdf); [26 U.S.C. §§860A–860G](https://uscode.house.gov/view.xhtml?path=/prelim@title26/subtitleA/chapter1/subchapterM/part4&edition=prelim).

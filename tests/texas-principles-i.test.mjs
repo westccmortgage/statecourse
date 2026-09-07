@@ -240,6 +240,7 @@ function mutatedConfig(name, file, transform) {
   const dir = path.join(SCRATCH, name);
   fs.mkdirSync(dir, { recursive: true });
   for (const entry of fs.readdirSync(path.join(ROOT, "config/texas"))) {
+    if (!fs.statSync(path.join(ROOT, "config/texas", entry)).isFile()) continue;
     let body = read(`config/texas/${entry}`);
     if (entry === file) body = transform(body);
     fs.writeFileSync(path.join(dir, entry), body);

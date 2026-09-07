@@ -1,0 +1,1187 @@
+{
+  "checkedAt": "2026-09-07T12:23:36.374Z",
+  "generatedBy": "scripts/inspect-texas-completion.mjs --json (assessment candidate details omitted)",
+  "results": [
+    {
+      "course": "Law of Contracts",
+      "status": "STRUCTURE_AND_PROVIDER_TIME_MODEL_PASS_REVIEW_STILL_REQUIRED",
+      "gatesClosed": true,
+      "objectiveFailures": [],
+      "time": {
+        "schemaVersion": 1,
+        "generatedBy": "scripts/lib/texas-course-evidence.mjs",
+        "form": "LOC-0",
+        "status": "PROVIDER_ESTIMATE_MEETS_OUTLINE_NOT_APPROVAL",
+        "rateBasis": {
+          "wordsPerMinute": 140,
+          "statuteReadingExercise": 12,
+          "appliedExercise": 10,
+          "quizItem": 2,
+          "misconceptionCheck": 3,
+          "scenario": 20,
+          "moduleRecap": 5,
+          "status": "PROVIDER_PLANNING_ASSUMPTIONS_NOT_OBSERVED_STUDENT_TIME",
+          "timeStudyPerformed": false
+        },
+        "accounting": "Instruction, exercises, recap, optional content, references and metadata are disjoint. Only actual authored primary instruments count. Every topic must independently meet its outline allocation.",
+        "rows": [
+          {
+            "topicCode": "T01",
+            "sha256": "d1d175b76dfb9664bd72dae44da589ffe4de7f95ce46931e01ca2ddcc7288298",
+            "prescribedMinutes": 155,
+            "wordsBySegment": {
+              "instruction": 12845,
+              "statuteReadingExercise": 285,
+              "appliedExercise": 310,
+              "recap": 76,
+              "optional": 0,
+              "metadata": 190,
+              "references": 0
+            },
+            "unitCount": 6
+          },
+          {
+            "topicCode": "T02",
+            "sha256": "f2dd6971b564de552f86e864952d9f6811673dd54a5a7db5078d407ce212d35c",
+            "prescribedMinutes": 115,
+            "wordsBySegment": {
+              "instruction": 11119,
+              "statuteReadingExercise": 117,
+              "appliedExercise": 218,
+              "recap": 67,
+              "optional": 0,
+              "metadata": 200,
+              "references": 0
+            },
+            "unitCount": 8
+          },
+          {
+            "topicCode": "T03",
+            "sha256": "3f7ce25877d9373bb418279765dd6dd3840adc37dec92e479e424873950efa40",
+            "prescribedMinutes": 75,
+            "wordsBySegment": {
+              "instruction": 5624,
+              "statuteReadingExercise": 125,
+              "appliedExercise": 129,
+              "recap": 59,
+              "optional": 0,
+              "metadata": 159,
+              "references": 0
+            },
+            "unitCount": 5
+          },
+          {
+            "topicCode": "T04",
+            "sha256": "f5dc3fea3aa1a6e2625b98bd9eb66364de5d7d624530ade521b603e5dfb63f64",
+            "prescribedMinutes": 120,
+            "wordsBySegment": {
+              "instruction": 13841,
+              "statuteReadingExercise": 103,
+              "appliedExercise": 208,
+              "recap": 56,
+              "optional": 0,
+              "metadata": 170,
+              "references": 0
+            },
+            "unitCount": 8
+          },
+          {
+            "topicCode": "T05",
+            "sha256": "2080e241dc579a18d47cd44fc13aa30d505fc775ba1c6da44f6118f486bbd1cc",
+            "prescribedMinutes": 275,
+            "wordsBySegment": {
+              "instruction": 24956,
+              "statuteReadingExercise": 205,
+              "appliedExercise": 309,
+              "recap": 61,
+              "optional": 0,
+              "metadata": 219,
+              "references": 0
+            },
+            "unitCount": 14
+          },
+          {
+            "topicCode": "T06",
+            "sha256": "fe1d3b46af52964d48d066e033db9e8cd3bec048dcd7110b6e8a7be7cfec4f41",
+            "prescribedMinutes": 135,
+            "wordsBySegment": {
+              "instruction": 8615,
+              "statuteReadingExercise": 112,
+              "appliedExercise": 200,
+              "recap": 60,
+              "optional": 0,
+              "metadata": 176,
+              "references": 0
+            },
+            "unitCount": 9
+          },
+          {
+            "topicCode": "T07",
+            "sha256": "ad2f4934fb013e1f350c6ce25a603437fd4a39ff261d9d360b4c873bab9faff8",
+            "prescribedMinutes": 105,
+            "wordsBySegment": {
+              "instruction": 8288,
+              "statuteReadingExercise": 117,
+              "appliedExercise": 217,
+              "recap": 57,
+              "optional": 0,
+              "metadata": 142,
+              "references": 0
+            },
+            "unitCount": 3
+          },
+          {
+            "topicCode": "T08",
+            "sha256": "5f6417007f744a4e6ab33882e85335c8d4e2d95609c05b0954ce42392e0d1656",
+            "prescribedMinutes": 235,
+            "wordsBySegment": {
+              "instruction": 24299,
+              "statuteReadingExercise": 200,
+              "appliedExercise": 268,
+              "recap": 52,
+              "optional": 0,
+              "metadata": 212,
+              "references": 0
+            },
+            "unitCount": 10
+          },
+          {
+            "topicCode": "T09",
+            "sha256": "4f1a6756e23ecd9bea1a7e55620579936a30a46c444b730892b4c23163993682",
+            "prescribedMinutes": 90,
+            "wordsBySegment": {
+              "instruction": 7278,
+              "statuteReadingExercise": 88,
+              "appliedExercise": 97,
+              "recap": 60,
+              "optional": 0,
+              "metadata": 157,
+              "references": 0
+            },
+            "unitCount": 6
+          },
+          {
+            "topicCode": "T10",
+            "sha256": "a36c94ef22d8350c5ad030847844366ed46406fb5b141ca53f0e8d42c2429c6c",
+            "prescribedMinutes": 135,
+            "wordsBySegment": {
+              "instruction": 8526,
+              "statuteReadingExercise": 102,
+              "appliedExercise": 200,
+              "recap": 53,
+              "optional": 0,
+              "metadata": 180,
+              "references": 0
+            },
+            "unitCount": 9
+          },
+          {
+            "topicCode": "T11",
+            "sha256": "cd6b676c233211f0e7048075030803cbd7efa1408d9bb1d2225892b990346cb7",
+            "prescribedMinutes": 60,
+            "wordsBySegment": {
+              "instruction": 3426,
+              "statuteReadingExercise": 112,
+              "appliedExercise": 216,
+              "recap": 71,
+              "optional": 0,
+              "metadata": 138,
+              "references": 0
+            },
+            "unitCount": 2
+          }
+        ],
+        "scenarioCount": 6,
+        "scenarioSpacing": {
+          "pass": true,
+          "checkpoints": [
+            {
+              "afterTopic": "T03",
+              "count": 1,
+              "outlineCreditHour": 6.9,
+              "outlineGapHours": 6.9,
+              "modeledEndMinutes": 388.34
+            },
+            {
+              "afterTopic": "T05",
+              "count": 1,
+              "outlineCreditHour": 14.8,
+              "outlineGapHours": 7.9,
+              "modeledEndMinutes": 831.46
+            },
+            {
+              "afterTopic": "T06",
+              "count": 1,
+              "outlineCreditHour": 17.5,
+              "outlineGapHours": 2.6999999999999993,
+              "modeledEndMinutes": 968
+            },
+            {
+              "afterTopic": "T08",
+              "count": 1,
+              "outlineCreditHour": 24.3,
+              "outlineGapHours": 6.800000000000001,
+              "modeledEndMinutes": 1348.76
+            },
+            {
+              "afterTopic": "T10",
+              "count": 1,
+              "outlineCreditHour": 28.799999999999997,
+              "outlineGapHours": 4.4999999999999964,
+              "modeledEndMinutes": 1575.65
+            },
+            {
+              "afterTopic": "COURSE",
+              "count": 1,
+              "outlineCreditHour": 30,
+              "outlineGapHours": 1.2000000000000028,
+              "modeledEndMinutes": 1663.12
+            }
+          ],
+          "tailGapHours": 1.2000000000000028,
+          "maximumGapHours": 7.9,
+          "basis": "Official outline credit-hour placement; modeled positions are estimates, not measured learner time"
+        },
+        "capstones": 1,
+        "topicSeconds": 98587.28571428571,
+        "courseLevelSeconds": 1200,
+        "grandSeconds": 99787.28571428571,
+        "topicMinutes": 1643.12,
+        "courseLevelMinutes": 20,
+        "grandMinutes": 1663.12,
+        "prescribedMinutes": 1500,
+        "timeModelPass": true,
+        "assessmentCountPass": true,
+        "excluded": [
+          "final examinations",
+          "conditional replacement questions",
+          "remediation and repeated attempts",
+          "optional videos",
+          "optional references",
+          "front matter and bibliographies"
+        ],
+        "legalConclusion": "None. This report neither grants credit nor establishes course or provider approval. Pilot timing and regulatory review remain separate."
+      },
+      "assessment": {
+        "schemaVersion": 1,
+        "pass": true,
+        "checks": [
+          {
+            "name": "unique nonempty item identities",
+            "pass": true,
+            "detail": {
+              "count": 294
+            }
+          },
+          {
+            "name": "all items have a prompt, four distinct choices, a valid key and rationale",
+            "pass": true,
+            "detail": {
+              "invalid": []
+            }
+          },
+          {
+            "name": "all items name an actual required unit and a pinpoint source",
+            "pass": true,
+            "detail": {
+              "invalid": []
+            }
+          },
+          {
+            "name": "no unknown assessment topic groups",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "every outline unit has primary retrieval practice",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "each topic meets the primary-quiz floor",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "quiz placement matches unit identity",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "every primary has exactly one distinct related replacement, with no orphans",
+            "pass": true,
+            "detail": {
+              "primaries": [],
+              "orphans": []
+            }
+          },
+          {
+            "name": "actual scenarios meet the minimum",
+            "pass": true,
+            "detail": {
+              "count": 6
+            }
+          },
+          {
+            "name": "scenarios have authored contexts, tasks and valid placement",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "scenario identities are unique",
+            "pass": true,
+            "detail": {
+              "count": 6
+            }
+          },
+          {
+            "name": "secure bank meets its own minimum",
+            "pass": true,
+            "detail": {
+              "count": 132,
+              "minimum": 120
+            }
+          },
+          {
+            "name": "enough different examination versions exist",
+            "pass": true,
+            "detail": {
+              "count": 4
+            }
+          },
+          {
+            "name": "every version has enough distinct known items and every topic",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "pairwise overlap stays within the source-locked cap",
+            "pass": true,
+            "detail": [
+              {
+                "pair": "A/B",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "A/C",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "A/D",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "B/C",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "B/D",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "C/D",
+                "count": 18,
+                "fraction": 0.3
+              }
+            ]
+          },
+          {
+            "name": "no final prompt is an exact formative prompt",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "secure prompts are not duplicate items with new identities",
+            "pass": true,
+            "detail": []
+          }
+        ],
+        "artifactSha256": "12b06735706f4cfdca36de840c4ba42d322d5800dc5f98445729c63fa883c02b",
+        "counts": {
+          "topics": 11,
+          "units": 80,
+          "primary": 81,
+          "replacement": 81,
+          "scenarios": 6,
+          "secureItems": 132,
+          "versions": 4
+        },
+        "limitation": "Structural checks and nearest-text candidates do not certify legal accuracy or semantic separation. Each final item still requires review against instruction and formative fact patterns; names and numbers alone do not create a different question."
+      },
+      "notEstablishedByThisAutomatedCheck": [
+        "independent legal accuracy of every claim",
+        "semantic separation of every protected examination item",
+        "observed learner timing",
+        "TREC provider or course approval"
+      ]
+    },
+    {
+      "course": "Promulgated Contract Forms",
+      "status": "STRUCTURE_AND_PROVIDER_TIME_MODEL_PASS_REVIEW_STILL_REQUIRED",
+      "gatesClosed": true,
+      "objectiveFailures": [],
+      "time": {
+        "schemaVersion": 1,
+        "generatedBy": "scripts/lib/texas-course-evidence.mjs",
+        "form": "PCF-0",
+        "status": "PROVIDER_ESTIMATE_MEETS_OUTLINE_NOT_APPROVAL",
+        "rateBasis": {
+          "wordsPerMinute": 140,
+          "statuteReadingExercise": 12,
+          "appliedExercise": 10,
+          "quizItem": 2,
+          "misconceptionCheck": 3,
+          "scenario": 20,
+          "moduleRecap": 5,
+          "status": "PROVIDER_PLANNING_ASSUMPTIONS_NOT_OBSERVED_STUDENT_TIME",
+          "timeStudyPerformed": false
+        },
+        "accounting": "Instruction, exercises, recap, optional content, references and metadata are disjoint. Only actual authored primary instruments count. Every topic must independently meet its outline allocation.",
+        "rows": [
+          {
+            "topicCode": "T01",
+            "sha256": "12c84e8fcff552de9fa5d25bb25c3691551e174d55c1a77c3a9795f79dc39445",
+            "prescribedMinutes": 155,
+            "wordsBySegment": {
+              "instruction": 1965,
+              "statuteReadingExercise": 438,
+              "appliedExercise": 2068,
+              "recap": 106,
+              "optional": 68,
+              "metadata": 200,
+              "references": 0
+            },
+            "unitCount": 9
+          },
+          {
+            "topicCode": "T02",
+            "sha256": "27de6c73b56f4480305cea5c90cb33acc75648e7540b70377c68b5843958f9dc",
+            "prescribedMinutes": 150,
+            "wordsBySegment": {
+              "instruction": 1692,
+              "statuteReadingExercise": 800,
+              "appliedExercise": 1614,
+              "recap": 88,
+              "optional": 0,
+              "metadata": 124,
+              "references": 0
+            },
+            "unitCount": 6
+          },
+          {
+            "topicCode": "T03",
+            "sha256": "03dcba8b2f9a529c68b35366e1e5f324db503c1be1288f9dcbf4e805f5ebec2b",
+            "prescribedMinutes": 155,
+            "wordsBySegment": {
+              "instruction": 1495,
+              "statuteReadingExercise": 630,
+              "appliedExercise": 2203,
+              "recap": 82,
+              "optional": 0,
+              "metadata": 162,
+              "references": 0
+            },
+            "unitCount": 6
+          },
+          {
+            "topicCode": "T04",
+            "sha256": "e36b432476919bcef4ee4f52313423eedbb55c87710555408a4906121959ae48",
+            "prescribedMinutes": 160,
+            "wordsBySegment": {
+              "instruction": 1687,
+              "statuteReadingExercise": 597,
+              "appliedExercise": 1800,
+              "recap": 75,
+              "optional": 0,
+              "metadata": 128,
+              "references": 0
+            },
+            "unitCount": 9
+          },
+          {
+            "topicCode": "T05",
+            "sha256": "57665481c108d68e3e60d26afccf79a97af953fcb67683b07038618d8987ed0b",
+            "prescribedMinutes": 220,
+            "wordsBySegment": {
+              "instruction": 1657,
+              "statuteReadingExercise": 565,
+              "appliedExercise": 2421,
+              "recap": 81,
+              "optional": 0,
+              "metadata": 132,
+              "references": 0
+            },
+            "unitCount": 9
+          },
+          {
+            "topicCode": "T06",
+            "sha256": "6b3fbc4f491f09d100a825cbbe8e1de2f689d77bbfbc2e9ccee299df9a020b36",
+            "prescribedMinutes": 205,
+            "wordsBySegment": {
+              "instruction": 1508,
+              "statuteReadingExercise": 1063,
+              "appliedExercise": 2052,
+              "recap": 75,
+              "optional": 0,
+              "metadata": 112,
+              "references": 0
+            },
+            "unitCount": 7
+          },
+          {
+            "topicCode": "T07",
+            "sha256": "df84eefb274d597c61249f18aed9dc166ef0277bba91d37254b61961fad23637",
+            "prescribedMinutes": 205,
+            "wordsBySegment": {
+              "instruction": 1855,
+              "statuteReadingExercise": 735,
+              "appliedExercise": 2309,
+              "recap": 79,
+              "optional": 0,
+              "metadata": 169,
+              "references": 0
+            },
+            "unitCount": 11
+          },
+          {
+            "topicCode": "T08",
+            "sha256": "53924ac7f6507e6cc43aa7332a2432f3c032a39fe3f8621932adef907f7fe6df",
+            "prescribedMinutes": 115,
+            "wordsBySegment": {
+              "instruction": 1320,
+              "statuteReadingExercise": 355,
+              "appliedExercise": 1387,
+              "recap": 89,
+              "optional": 0,
+              "metadata": 87,
+              "references": 0
+            },
+            "unitCount": 5
+          },
+          {
+            "topicCode": "T09",
+            "sha256": "b03017ac0116e69680b135d6195a7aa2b48ac275012fcee9a23181d0e3259b00",
+            "prescribedMinutes": 135,
+            "wordsBySegment": {
+              "instruction": 1025,
+              "statuteReadingExercise": 286,
+              "appliedExercise": 2039,
+              "recap": 81,
+              "optional": 0,
+              "metadata": 90,
+              "references": 0
+            },
+            "unitCount": 1
+          }
+        ],
+        "scenarioCount": 4,
+        "scenarioSpacing": {
+          "pass": true,
+          "checkpoints": [
+            {
+              "afterTopic": "T03",
+              "count": 1,
+              "outlineCreditHour": 9.2,
+              "outlineGapHours": 9.2,
+              "modeledEndMinutes": 501.81
+            },
+            {
+              "afterTopic": "T05",
+              "count": 1,
+              "outlineCreditHour": 16.8,
+              "outlineGapHours": 7.600000000000001,
+              "modeledEndMinutes": 883.7
+            },
+            {
+              "afterTopic": "T07",
+              "count": 1,
+              "outlineCreditHour": 25,
+              "outlineGapHours": 8.2,
+              "modeledEndMinutes": 1333.72
+            },
+            {
+              "afterTopic": "T09",
+              "count": 1,
+              "outlineCreditHour": 30,
+              "outlineGapHours": 5,
+              "modeledEndMinutes": 1592.47
+            }
+          ],
+          "tailGapHours": 0,
+          "maximumGapHours": 9.2,
+          "basis": "Official outline credit-hour placement; modeled positions are estimates, not measured learner time"
+        },
+        "capstones": 0,
+        "topicSeconds": 95547.42857142857,
+        "courseLevelSeconds": 0,
+        "grandSeconds": 95547.42857142857,
+        "topicMinutes": 1592.46,
+        "courseLevelMinutes": 0,
+        "grandMinutes": 1592.46,
+        "prescribedMinutes": 1500,
+        "timeModelPass": true,
+        "assessmentCountPass": true,
+        "excluded": [
+          "final examinations",
+          "conditional replacement questions",
+          "remediation and repeated attempts",
+          "optional videos",
+          "optional references",
+          "front matter and bibliographies"
+        ],
+        "legalConclusion": "None. This report neither grants credit nor establishes course or provider approval. Pilot timing and regulatory review remain separate."
+      },
+      "assessment": {
+        "schemaVersion": 1,
+        "pass": true,
+        "checks": [
+          {
+            "name": "unique nonempty item identities",
+            "pass": true,
+            "detail": {
+              "count": 262
+            }
+          },
+          {
+            "name": "all items have a prompt, four distinct choices, a valid key and rationale",
+            "pass": true,
+            "detail": {
+              "invalid": []
+            }
+          },
+          {
+            "name": "all items name an actual required unit and a pinpoint source",
+            "pass": true,
+            "detail": {
+              "invalid": []
+            }
+          },
+          {
+            "name": "no unknown assessment topic groups",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "every outline unit has primary retrieval practice",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "each topic meets the primary-quiz floor",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "quiz placement matches unit identity",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "every primary has exactly one distinct related replacement, with no orphans",
+            "pass": true,
+            "detail": {
+              "primaries": [],
+              "orphans": []
+            }
+          },
+          {
+            "name": "actual scenarios meet the minimum",
+            "pass": true,
+            "detail": {
+              "count": 4
+            }
+          },
+          {
+            "name": "scenarios have authored contexts, tasks and valid placement",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "scenario identities are unique",
+            "pass": true,
+            "detail": {
+              "count": 4
+            }
+          },
+          {
+            "name": "secure bank meets its own minimum",
+            "pass": true,
+            "detail": {
+              "count": 132,
+              "minimum": 120
+            }
+          },
+          {
+            "name": "enough different examination versions exist",
+            "pass": true,
+            "detail": {
+              "count": 4
+            }
+          },
+          {
+            "name": "every version has enough distinct known items and every topic",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "pairwise overlap stays within the source-locked cap",
+            "pass": true,
+            "detail": [
+              {
+                "pair": "A/B",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "A/C",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "A/D",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "B/C",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "B/D",
+                "count": 18,
+                "fraction": 0.3
+              },
+              {
+                "pair": "C/D",
+                "count": 18,
+                "fraction": 0.3
+              }
+            ]
+          },
+          {
+            "name": "no final prompt is an exact formative prompt",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "secure prompts are not duplicate items with new identities",
+            "pass": true,
+            "detail": []
+          }
+        ],
+        "artifactSha256": "3cb9f0c5918d2699fdc64437c91300a5dbe111fa196a7f8690b2298bc9759390",
+        "counts": {
+          "topics": 9,
+          "units": 63,
+          "primary": 65,
+          "replacement": 65,
+          "scenarios": 4,
+          "secureItems": 132,
+          "versions": 4
+        },
+        "limitation": "Structural checks and nearest-text candidates do not certify legal accuracy or semantic separation. Each final item still requires review against instruction and formative fact patterns; names and numbers alone do not create a different question."
+      },
+      "notEstablishedByThisAutomatedCheck": [
+        "independent legal accuracy of every claim",
+        "semantic separation of every protected examination item",
+        "observed learner timing",
+        "TREC provider or course approval"
+      ]
+    },
+    {
+      "course": "Real Estate Finance",
+      "status": "STRUCTURE_AND_PROVIDER_TIME_MODEL_PASS_REVIEW_STILL_REQUIRED",
+      "gatesClosed": true,
+      "objectiveFailures": [],
+      "time": {
+        "schemaVersion": 1,
+        "generatedBy": "scripts/lib/texas-course-evidence.mjs",
+        "form": "REF-0",
+        "status": "PROVIDER_ESTIMATE_MEETS_OUTLINE_NOT_APPROVAL",
+        "rateBasis": {
+          "wordsPerMinute": 140,
+          "statuteReadingExercise": 12,
+          "appliedExercise": 10,
+          "quizItem": 2,
+          "misconceptionCheck": 3,
+          "scenario": 20,
+          "moduleRecap": 5,
+          "status": "PROVIDER_PLANNING_ASSUMPTIONS_NOT_OBSERVED_STUDENT_TIME",
+          "timeStudyPerformed": false
+        },
+        "accounting": "Instruction, exercises, recap, optional content, references and metadata are disjoint. Only actual authored primary instruments count. Every topic must independently meet its outline allocation.",
+        "rows": [
+          {
+            "topicCode": "T01",
+            "sha256": "f691525a9dc76b1c031914739ae751b58944ade3e8cd50258ab26e1a823569ff",
+            "prescribedMinutes": 105,
+            "wordsBySegment": {
+              "instruction": 2527,
+              "statuteReadingExercise": 210,
+              "appliedExercise": 920,
+              "recap": 55,
+              "optional": 0,
+              "metadata": 106,
+              "references": 27
+            },
+            "unitCount": 5
+          },
+          {
+            "topicCode": "T02",
+            "sha256": "260494e356648b0d0e50a5dd932f5ceed05a7ed9f564ae965b7caf67dffbb0dc",
+            "prescribedMinutes": 100,
+            "wordsBySegment": {
+              "instruction": 1282,
+              "statuteReadingExercise": 313,
+              "appliedExercise": 687,
+              "recap": 33,
+              "optional": 0,
+              "metadata": 94,
+              "references": 15
+            },
+            "unitCount": 6
+          },
+          {
+            "topicCode": "T03",
+            "sha256": "b127b1afe850b038fafff2bee45408676d8abab61a40693e6d7b494b0bc57586",
+            "prescribedMinutes": 200,
+            "wordsBySegment": {
+              "instruction": 3239,
+              "statuteReadingExercise": 852,
+              "appliedExercise": 1326,
+              "recap": 27,
+              "optional": 0,
+              "metadata": 98,
+              "references": 25
+            },
+            "unitCount": 6
+          },
+          {
+            "topicCode": "T04",
+            "sha256": "e5bdc0e08b5a0dd18c40e2db13e2ee746b2b54ad5a522603f267200617f7c426",
+            "prescribedMinutes": 95,
+            "wordsBySegment": {
+              "instruction": 1677,
+              "statuteReadingExercise": 468,
+              "appliedExercise": 598,
+              "recap": 21,
+              "optional": 0,
+              "metadata": 73,
+              "references": 18
+            },
+            "unitCount": 3
+          },
+          {
+            "topicCode": "T05",
+            "sha256": "d0c6760c16c8dae570c076fd8b0ce0da7c58a2c0a91b820ba42d243e97bea612",
+            "prescribedMinutes": 110,
+            "wordsBySegment": {
+              "instruction": 1132,
+              "statuteReadingExercise": 0,
+              "appliedExercise": 2136,
+              "recap": 23,
+              "optional": 0,
+              "metadata": 102,
+              "references": 31
+            },
+            "unitCount": 9
+          },
+          {
+            "topicCode": "T06",
+            "sha256": "1e8b5d3160e061fdc47cce21bb517430c15e67c723d89e66bfd18b76ad494fae",
+            "prescribedMinutes": 170,
+            "wordsBySegment": {
+              "instruction": 2206,
+              "statuteReadingExercise": 575,
+              "appliedExercise": 1009,
+              "recap": 55,
+              "optional": 0,
+              "metadata": 117,
+              "references": 0
+            },
+            "unitCount": 8
+          },
+          {
+            "topicCode": "T07",
+            "sha256": "f3307b5470ca2ce9bbcde5c4e693aab6a5392a67ec72258762e235c51b7c7fa5",
+            "prescribedMinutes": 200,
+            "wordsBySegment": {
+              "instruction": 2977,
+              "statuteReadingExercise": 344,
+              "appliedExercise": 1894,
+              "recap": 18,
+              "optional": 0,
+              "metadata": 102,
+              "references": 19
+            },
+            "unitCount": 10
+          },
+          {
+            "topicCode": "T08",
+            "sha256": "cfc5709683403d617a248eb72b1e0b9328d2ee616404448af28f504a2cc524bd",
+            "prescribedMinutes": 215,
+            "wordsBySegment": {
+              "instruction": 2890,
+              "statuteReadingExercise": 552,
+              "appliedExercise": 2245,
+              "recap": 24,
+              "optional": 0,
+              "metadata": 132,
+              "references": 33
+            },
+            "unitCount": 10
+          },
+          {
+            "topicCode": "T09",
+            "sha256": "1ef54fd06b79801ce23cf3e218a57ad883dd26d04b5d19c3e057776227939bf7",
+            "prescribedMinutes": 220,
+            "wordsBySegment": {
+              "instruction": 2838,
+              "statuteReadingExercise": 460,
+              "appliedExercise": 2108,
+              "recap": 22,
+              "optional": 0,
+              "metadata": 129,
+              "references": 21
+            },
+            "unitCount": 12
+          },
+          {
+            "topicCode": "T10",
+            "sha256": "7d43ce2c10d39e93638225bc7da9ba260d00965a6a09f9a60c224a8016ced6d2",
+            "prescribedMinutes": 85,
+            "wordsBySegment": {
+              "instruction": 896,
+              "statuteReadingExercise": 85,
+              "appliedExercise": 571,
+              "recap": 31,
+              "optional": 0,
+              "metadata": 82,
+              "references": 24
+            },
+            "unitCount": 5
+          }
+        ],
+        "scenarioCount": 4,
+        "scenarioSpacing": {
+          "pass": true,
+          "checkpoints": [
+            {
+              "afterTopic": "T03",
+              "count": 1,
+              "outlineCreditHour": 8.100000000000001,
+              "outlineGapHours": 8.100000000000001,
+              "modeledEndMinutes": 405.35
+            },
+            {
+              "afterTopic": "T06",
+              "count": 1,
+              "outlineCreditHour": 15.600000000000001,
+              "outlineGapHours": 7.5,
+              "modeledEndMinutes": 800.18
+            },
+            {
+              "afterTopic": "T08",
+              "count": 1,
+              "outlineCreditHour": 23.9,
+              "outlineGapHours": 8.299999999999997,
+              "modeledEndMinutes": 1222.08
+            },
+            {
+              "afterTopic": "T10",
+              "count": 1,
+              "outlineCreditHour": 30,
+              "outlineGapHours": 6.100000000000001,
+              "modeledEndMinutes": 1540.75
+            }
+          ],
+          "tailGapHours": 0,
+          "maximumGapHours": 8.299999999999997,
+          "basis": "Official outline credit-hour placement; modeled positions are estimates, not measured learner time"
+        },
+        "capstones": 0,
+        "topicSeconds": 92444.57142857142,
+        "courseLevelSeconds": 0,
+        "grandSeconds": 92444.57142857142,
+        "topicMinutes": 1540.74,
+        "courseLevelMinutes": 0,
+        "grandMinutes": 1540.74,
+        "prescribedMinutes": 1500,
+        "timeModelPass": true,
+        "assessmentCountPass": true,
+        "excluded": [
+          "final examinations",
+          "conditional replacement questions",
+          "remediation and repeated attempts",
+          "optional videos",
+          "optional references",
+          "front matter and bibliographies"
+        ],
+        "legalConclusion": "None. This report neither grants credit nor establishes course or provider approval. Pilot timing and regulatory review remain separate."
+      },
+      "assessment": {
+        "schemaVersion": 1,
+        "pass": true,
+        "checks": [
+          {
+            "name": "unique nonempty item identities",
+            "pass": true,
+            "detail": {
+              "count": 296
+            }
+          },
+          {
+            "name": "all items have a prompt, four distinct choices, a valid key and rationale",
+            "pass": true,
+            "detail": {
+              "invalid": []
+            }
+          },
+          {
+            "name": "all items name an actual required unit and a pinpoint source",
+            "pass": true,
+            "detail": {
+              "invalid": []
+            }
+          },
+          {
+            "name": "no unknown assessment topic groups",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "every outline unit has primary retrieval practice",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "each topic meets the primary-quiz floor",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "quiz placement matches unit identity",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "every primary has exactly one distinct related replacement, with no orphans",
+            "pass": true,
+            "detail": {
+              "primaries": [],
+              "orphans": []
+            }
+          },
+          {
+            "name": "actual scenarios meet the minimum",
+            "pass": true,
+            "detail": {
+              "count": 4
+            }
+          },
+          {
+            "name": "scenarios have authored contexts, tasks and valid placement",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "scenario identities are unique",
+            "pass": true,
+            "detail": {
+              "count": 4
+            }
+          },
+          {
+            "name": "secure bank meets its own minimum",
+            "pass": true,
+            "detail": {
+              "count": 148,
+              "minimum": 120
+            }
+          },
+          {
+            "name": "enough different examination versions exist",
+            "pass": true,
+            "detail": {
+              "count": 4
+            }
+          },
+          {
+            "name": "every version has enough distinct known items and every topic",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "pairwise overlap stays within the source-locked cap",
+            "pass": true,
+            "detail": [
+              {
+                "pair": "A/B",
+                "count": 16,
+                "fraction": 0.26666666666666666
+              },
+              {
+                "pair": "A/C",
+                "count": 15,
+                "fraction": 0.25
+              },
+              {
+                "pair": "A/D",
+                "count": 15,
+                "fraction": 0.25
+              },
+              {
+                "pair": "B/C",
+                "count": 15,
+                "fraction": 0.25
+              },
+              {
+                "pair": "B/D",
+                "count": 15,
+                "fraction": 0.25
+              },
+              {
+                "pair": "C/D",
+                "count": 16,
+                "fraction": 0.26666666666666666
+              }
+            ]
+          },
+          {
+            "name": "no final prompt is an exact formative prompt",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "secure prompts are not duplicate items with new identities",
+            "pass": true,
+            "detail": []
+          }
+        ],
+        "artifactSha256": "eae9b7cfc94c918711498d63de1f9b24b25edb67b0ca358052fd25f16e4ba601",
+        "counts": {
+          "topics": 10,
+          "units": 74,
+          "primary": 74,
+          "replacement": 74,
+          "scenarios": 4,
+          "secureItems": 148,
+          "versions": 4
+        },
+        "limitation": "Structural checks and nearest-text candidates do not certify legal accuracy or semantic separation. Each final item still requires review against instruction and formative fact patterns; names and numbers alone do not create a different question."
+      },
+      "notEstablishedByThisAutomatedCheck": [
+        "independent legal accuracy of every claim",
+        "semantic separation of every protected examination item",
+        "observed learner timing",
+        "TREC provider or course approval"
+      ]
+    }
+  ]
+}

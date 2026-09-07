@@ -122,10 +122,11 @@ const freePracticeBody = `${pageHero("Free practice", "Practice with real StateC
         <span id="practiceSectionLabel"></span>
         <button id="practiceNext" type="button">Next →</button>
       </nav>
-      <div class="practice-mode" id="practiceMode" role="group" aria-label="Study mode" hidden><button type="button" id="practiceReadMode" aria-pressed="true">Read lesson</button><button type="button" id="practiceQuizMode" aria-pressed="false">Practice questions</button></div>
+      <div class="practice-mode" id="practiceMode" role="group" aria-label="Study mode" hidden><button type="button" id="practiceReadMode" aria-pressed="true">Read lesson</button><button type="button" id="practiceQuizMode" aria-pressed="false">Practice questions</button><button type="button" id="practiceActivitiesMode" aria-pressed="false" hidden>Casework</button></div>
       <p id="practiceProgress" role="status"></p>
       <div class="textbook-body practice-content" id="practiceContent" tabindex="-1"></div>
       <section id="practiceQuiz" aria-label="Practice questions" hidden></section>
+      <section id="practiceActivities" aria-label="Practice casework" hidden></section>
       <div class="practice-bottom-nav" id="practiceBottomNav" hidden><button type="button" id="practicePreviousLesson">← Previous lesson</button><button type="button" id="practiceNextLesson">Next lesson →</button></div>
     </article>
   </div>
